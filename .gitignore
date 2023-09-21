@@ -6,5 +6,6 @@
 /**/packages/
 /**/bin/
 /**/obj/
+_site
 /**/.vs
 .vscode/launch.json
