@@ -15,7 +15,7 @@ jobs:
     name: Build Job
     steps:
       - name: checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: true
       - name: Install DocFX
@@ -38,6 +38,7 @@ jobs:
   deploy_job:
     if: (github.event_name == 'push' && github.repository == 'SkylineCommunications/dataminer-docs-connectors')
     runs-on: ubuntu-latest
+    needs: build_job
     name: Deploy Job
     steps:
       - uses: actions/download-artifact@v3
