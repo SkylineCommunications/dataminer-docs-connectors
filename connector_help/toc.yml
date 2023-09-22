@@ -9123,6 +9123,8 @@
     topicUid: Connector_help_Teleste_AC3210_Manager
   - name: Teleste AC3210 Manager - Child
     topicUid: Connector_help_Teleste_AC3210_Manager_-_Child
+  - name: Teleste AC8000
+    topicUid: Connector_help_Teleste_AC8000
   - name: Teleste AC8000 SNMP
     topicUid: Connector_help_Teleste_AC8000_SNMP
   - name: Teleste AC8810
