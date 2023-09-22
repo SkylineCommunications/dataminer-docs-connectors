@@ -12,7 +12,7 @@ Typically, this connector is used together with the **NetInsight Nimbra Applicat
 
 **Important!!!**
 
-From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance. This means if you update the driver from the older version to 4.1.3.1, the DCF connections could be duplicated and remain in the driver. Please make sure to update the driver by using the latest *NetInsight Nimbra Package*. Please use the automation script *"DCF Clean Nimbra Connections* to clean up the obsolete DCF links after all elements are restarted, and then please restart the **NetInsight Nimbra Manager** to re-initialize the DCF links. 
+From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance. This means if you update the driver from the older version to 4.1.3.1, the DCF connections could be duplicated and remain in the driver. Please make sure to update the driver by using the latest *NetInsight Nimbra Package*. Please use the automation script *"DCF Clean Nimbra Connections* to clean up the obsolete DCF links after all elements are restarted, and then please restart the **NetInsight Nimbra Manager** to re-initialize the DCF links. Alternatively, you can also installed the automation script *"DCF Clean Nimbra Connections* mannually and execute it after updated to version 4.1.3.1.
 
 ## About
 
