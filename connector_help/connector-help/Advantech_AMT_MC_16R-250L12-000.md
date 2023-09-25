@@ -19,8 +19,8 @@ The monitoring and control panel is used for redundant high-power SSPBs, monitor
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+|------------------|-----------------------|
+| 1.0.0.x          | -                     |
 
 ## Installation and configuration
 
@@ -33,12 +33,15 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Direct connection:
+
   - **Baudrate**: 9600
   - **Databits**: 8
   - **Stopbits**: 1
   - **Parity**: None
   - **FlowControl**: FlowControl specified in the manual of the device.
+
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
 
