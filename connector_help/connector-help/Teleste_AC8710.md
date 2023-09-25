@@ -31,8 +31,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the AC8000 device.
-- **IP port**: The IP port of the AC8000 device.
+- **IP address/host**: The polling IP of the AC8710 device.
+- **IP port**: The IP port of the AC8710 device.
 
 ### Usage
 
