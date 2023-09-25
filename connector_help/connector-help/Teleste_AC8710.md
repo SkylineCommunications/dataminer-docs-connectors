@@ -4,17 +4,17 @@ uid: Connector_help_Teleste_AC8710
 
 # Teleste AC8710
 
-The AC8710 is a dual active output node and it is based on fixed receiver as well as modular return path transmitter.
+The AC8710 is a dual active output node, based on fixed receiver as well as modular return path transmitter.
+
+This connector uses a **serial** connection to poll data from the AC8710 device.
 
 ## About
-
-This connector uses **Serial** connection to poll data from the AC8710 device.
 
 ### Version Info
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main] | Initial version | No                  | Yes                     |
 
 ### Product Info
 
@@ -22,11 +22,12 @@ This connector uses **Serial** connection to poll data from the AC8710 device.
 |------------------|-----------------------------|
 | 1.0.0.x          | 2.9.2.r1.588                  |
 
-### Configuration
+## Configuration
 
-#### Connections
+### Connections
 
-Serial Connection – Main
+#### Serial Connection – Main
+
 This connector uses a serial connection and requires the following input during element creation:
 
 SERIAL CONNECTION:

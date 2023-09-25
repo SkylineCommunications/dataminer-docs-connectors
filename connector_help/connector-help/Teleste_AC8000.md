@@ -4,17 +4,17 @@ uid: Connector_help_Teleste_AC8000
 
 # Teleste AC8000
 
-The AC8000 is a dual active output node that can work alone or be operated parallel.
+The AC8000 is a dual active output node that can work alone or be operated in parallel.
+
+This connector uses a **serial** connection to poll data from the AC8000 device.
 
 ## About
-
-This connector uses **Serial** connection to poll data from the AC8000 device.
 
 ### Version Info
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 2.0.0.x [SLC Main] | Initial version | No                  | Yes                     |
 
 ### Product Info
 
@@ -22,11 +22,12 @@ This connector uses **Serial** connection to poll data from the AC8000 device.
 |------------------|-----------------------------|
 | 1.0.0.x          | 4.8.13                     |
 
-### Configuration
+## Configuration
 
-#### Connections
+### Connections
 
-Serial Connection – Main
+#### Serial Connection – Main
+
 This connector uses a serial connection and requires the following input during element creation:
 
 SERIAL CONNECTION:
