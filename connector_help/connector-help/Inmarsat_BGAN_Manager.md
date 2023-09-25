@@ -12,8 +12,8 @@ The Inmarsat BGAN Manager connector is used to monitor the BGAN network and exec
 
 | **Range**            | **Key Features**                          | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x | Poll Customers Poll Terminals and details | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Changed connector implementation to API v3 | \-           | \-                |
+| 1.0.0.x | Poll Customers Poll Terminals and details | -           | -                |
+| 1.1.0.x [SLC Main] | Changed connector implementation to API v3 | -           | -                |
 
 ### Product Info
 
@@ -25,8 +25,8 @@ The Inmarsat BGAN Manager connector is used to monitor the BGAN network and exec
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                      |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                      |
 
 ## Configuration
 
@@ -39,7 +39,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. (default: *443*)
+- **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
