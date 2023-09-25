@@ -12,8 +12,8 @@ The Inmarsat BGAN Manager connector is used to monitor the BGAN network and exec
 
 | **Range**            | **Key Features**                          | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x | Poll Customers Poll Terminals and details | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Changed connector implementation to API v3 | \-           | \-                |
+| 1.0.0.x | Poll Customers Poll Terminals and details | -           | -                |
+| 1.1.0.x [SLC Main] | Changed connector implementation to API v3 | -           | -                |
 
 ### Product Info
 
@@ -25,8 +25,8 @@ The Inmarsat BGAN Manager connector is used to monitor the BGAN network and exec
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                      |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                      |
 
 ## Configuration
 
@@ -39,7 +39,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. (default: *443*)
+- **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
@@ -60,7 +60,7 @@ There is no redundancy defined.
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use (1.0.1.x)
+## How to use (1.1.0.x)
 
 ### General
 
@@ -107,4 +107,4 @@ This page contains the Polling Manager table, which manages the polling of the A
 ## Notes
 
 - **1.0.0.x**: **Terminal detail data** is obtained **per terminal**. This means that in **larger networks** this set of operations will become **slower**. The larger the network, the longer it will take to obtain all the terminal data.
-- **1.0.1.x**: **Terminal data** is retrieved through a **single API call**.
+- **1.1.0.x**: **Terminal data** is retrieved through a **single API call**.
