@@ -19,10 +19,10 @@ Each test has its own page in the element. You can configure the **Interval Time
 
 ### Version Info
 
-| **Range** | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|-----------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version.                     | No                  | No                      |
-| 2.0.0.x   | Allows multiple devices per element. | No                  | No                      |
+| **Range**            | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
+|----------------------|--------------------------------------|---------------------|-------------------------|
+| 1.0.0.x [Obsolete]   | Initial version.                     | No                  | No                      |
+| 2.0.0.x [SLC Main]   | Allows multiple devices per element. | No                  | No                      |
 
 ### Product Info
 

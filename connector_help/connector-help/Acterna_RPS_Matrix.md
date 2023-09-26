@@ -34,12 +34,15 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Direct connection:
+
   - **Baudrate**: Baudrate specified in the manual of the device.
   - **Databits**: Databits specified in the manual of the device. This can only be set to *8*.
   - **Stopbits**: Stopbits specified in the manual of the device, by default *1*.
   - **Parity**: Parity specified in the manual of the device, by default *no*.
   - **FlowControl**: FlowControl specified in the manual of the device.
+
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device. (Range: 32 - 1.)
