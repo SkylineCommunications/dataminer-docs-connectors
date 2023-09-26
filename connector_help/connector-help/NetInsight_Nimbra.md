@@ -10,6 +10,10 @@ With this connector, you can monitor and control the different interfaces of a n
 
 Typically, this connector is used together with the **NetInsight Nimbra Application Manager** for the monitoring and controlling of the services between different Nimbra nodes.
 
+**Important - DCF update from version 4.1.3.1**
+
+From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance. If the driver was updated from the older version to 4.1.3.1, the DCF connections could be duplicated and remain in the driver. Please update the driver using the latest *NetInsight Nimbra Package*, and use the automation script *"DCF Clean Nimbra Connections* to clean up the obsolete DCF links after all elements are restarted. Alternatively, you can manually install the automation script *"DCF Clean Nimbra Connections*, and execute it after updating to version 4.1.3.1.
+
 ## About
 
 ### Version Info
@@ -24,7 +28,8 @@ Typically, this connector is used together with the **NetInsight Nimbra Applicat
 | 4.0.0.x \[Obsolete\] | 2.0.0.x \[Obsolete\]                                                  | Based on 3.0.1.x. Uses DCF.                                                                                                                                                                                   | Yes                 | Yes                     |
 | 4.1.0.x \[Obsolete\] | 2.0.1.x \[Obsolete\]                                                  | Based on 4.0.0.x. Improved number of rows retrieved with each SNMP call. Version change required because some devices are unable to handle the bigger load.                                                   | Yes                 | Yes                     |
 | 4.1.1.x              | 2.0.2.x \[SLC Main\]                                                  | Based on 4.1.0.x. Improved interface for third-party applications (e.g. SRM) **with breaking changes**. Validation on requests is no longer polling-based but is pushed to the manager from the node element. | Yes                 | Yes                     |
-| 4.1.2.x \[SLC Main\] | 2.0.2.x \[SLC Main\]                                                  | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters.                                                                                                                      | Yes                 | Yes                     |
+| 4.1.2.x              | 2.0.2.x \[SLC Main\]                                                  | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters.                                                                                                                      | Yes                 | Yes                     |
+| 4.1.3.x \[SLC Main\] | 2.0.2.x \[SLC Main\]                                                  | Based on 4.1.2.x. Modified DCF interfaces to use the DTM name as the unique identifier instead of the instance.                                                                                            | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -39,6 +44,7 @@ Typically, this connector is used together with the **NetInsight Nimbra Applicat
 | 4.1.0.x   | Gx 4.6-Gx 5.6          |
 | 4.1.1.x   | Gx 4.6-Gx 5.6          |
 | 4.1.2.x   | Gx 4.6-Gx 6.2.0.3      |
+| 4.1.3.x   | Gx 4.6-Gx 6.2.0.3      |
 
 ## Configuration
 

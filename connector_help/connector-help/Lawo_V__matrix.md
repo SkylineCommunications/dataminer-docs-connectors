@@ -21,7 +21,9 @@ From range 2.0.1.x onwards, the information is retrieved via **WebSocket** subsc
 | 1.0.0.x              | Initial version. **It is not advised to use this range, except in case it was agreed to use Ember+ instead of the vendor-advised method.** | No                  | Yes                     |
 | 1.1.0.x              | Ember 1.8 system support. Some parameters are no longer supported in this range.                                                           | No                  | Yes                     |
 | 2.0.0.x              | WebSocket implementation.                                                                                                                  | No                  | Yes                     |
-| 2.0.1.x \[SLC Main\] | DCF connections added.                                                                                                                     | Yes                 | Yes                     |
+| 2.0.1.x              | DCF connections added.                                                                                                                     | Yes                 | Yes                     |
+| 2.0.2.x              | Fixed Rx and Tx value.                                                                                                                     | Yes                 | Yes                     |
+| 2.0.3.x \[SLC Main\] | Fixed various bugs, splitted tables, and changed parameter type.                                                                           | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -31,6 +33,8 @@ From range 2.0.1.x onwards, the information is retrieved via **WebSocket** subsc
 | 1.1.0.x   | 1.8                    |
 | 2.0.0.x   | 1.10.598               |
 | 2.0.1.x   | 1.11.2600              |
+| 2.0.2.x   | 1.11.4064              |
+| 2.0.3.x   | 1.11.4085              |
 
 ### Exported Components
 
