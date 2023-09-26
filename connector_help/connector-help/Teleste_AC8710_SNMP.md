@@ -2,9 +2,9 @@
 uid: Connector_help_Teleste_AC8710_SNMP
 ---
 
-# Teleste AC7810 SNMP
+# Teleste AC8710 SNMP
 
-The AC8710 SNMP is a dual active output node with optical upstream segmentation. It offers a high output level (Umax 112 QAM/113.0 dBæV) and supports 1.2 GHz downstream and up to 204 MHz upstream frequencies.
+The AC8710 SNMP is a dual active output node with optical upstream segmentation. It offers a high output level (Umax 112 QAM/113.0 dBµV) and supports 1.2 GHz downstream and up to 204 MHz upstream frequencies.
 
 This connector uses an SNMP connection to poll data from the AC8710 device.
 
@@ -12,9 +12,9 @@ This connector uses an SNMP connection to poll data from the AC8710 device.
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features     | Based on     | System Impact     |
+|--------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This connector uses an SNMP connection to poll data from the AC8710 device.
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                  | **Exported Components** |
-|-----------|---------------------|-------------------------|--------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                                                     | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -51,10 +51,11 @@ SNMP Settings:
 
 The **Alarm Limits**, **Status**, and **Alarms** pages contain the most important parameters for monitoring.
 
-The **Forward Path** and **Forward Path Settings** pages contains settings related to the **optical receivers**.
+The **Forward Path** and **Forward Path Settings** pages contain settings related to the **optical receivers**.
 
-The **Return Path** and **Return Path Settings** pages contains settings related to the **return transmitters**.
+The **Return Path** and **Return Path Settings** pages contain settings related to the **return transmitters**.
 
 The **Transponder** page contains information and settings related to the transponder.
 
-Note: **Changing the** **communication settings** **or device groups** **on the** **Transponder** **page** may cause the element to go into **timeout** for a couple of seconds.
+> [!NOTE]
+> **Changing the communication settings or device groups on the Transponder page** may cause the element to go into **timeout** for a couple of seconds.
