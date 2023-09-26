@@ -4,15 +4,21 @@ uid: Connector_help_Inmarsat_BGAN_IBIS
 
 # Inmarsat BGAN IBIS
 
-The Inmarsat BGAN IBIS connector is used to monitor the BGAN network and execute small operations. The BGAN network is a satellite communications network that allows voice, video and data sessions on remote terminals.
+The Inmarsat BGAN IBIS connector is used to monitor the BGAN network and execute small operations. The BGAN network is a satellite communication network that allows voice, video, and data sessions on remote terminals.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial Version                           | -            | -                 |
+| Range              | Key Features    | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
+
+### Product Info
+
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
@@ -35,7 +41,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-The credentials must be filled in on the General page in order for any information to be polled. As long as this is not done, the element will not work. The credentials list is as follows:
+To make sure the connector can retrieve information, fill in the credentials on the **General** page:
 
 - Scope
 - Client ID
@@ -43,22 +49,18 @@ The credentials must be filled in on the General page in order for any informati
 
 The default scope, client ID, and secret can be found in the Rest API documentation. However, they will be configurable in the network.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use (1.0.0.x)
 
 ### General
 
-Credentials can be configured on this page, and a login can be enforced. There is also information on the current status of the authentication process.
+On this page, you can configure credentials (see [Initialization](#initialization)) and enforce a login. You can also check information on the current status of the authentication process.
 
 ### Terminal
 
-This page contains a Terminals table as well as buttons to subpages: Position and Messages.
+This page contains a Terminals table as well as buttons to the Position and Messages subpages.
 
 - The **Position** subpage displays the position information of the terminals.
-- The **Messages** subpage displays the Latest to Mobile Messages and Latest From Mobile Messages of the Terminals.
+- The **Messages** subpage displays the Latest to Mobile Messages and Latest From Mobile Messages of the terminals.
 
 ### Terminal Tree Control
 
