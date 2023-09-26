@@ -4,7 +4,7 @@ uid: Connector_help_Teleste_AC8810
 
 # Teleste AC8810
 
-The AC8810 is a dual active output node with optical upstream segmentation. It offers a high output level (Umax 112 QAM/113.0 dBæV) and supports 1.2 GHz downstream and up to 204 MHz upstream frequencies.
+The AC8810 is a dual active output node with optical upstream segmentation. It offers a high output level (Umax 112 QAM/113.0 dBµV) and supports 1.2 GHz downstream and up to 204 MHz upstream frequencies.
 
 This connector can be used to manually set up elements, or, when deployed with the [Teleste HDM100](xref:Connector_help_Teleste_HDM100) connector, it can be used by automatically created elements for AC8810 nodes connected to the controller.
 
@@ -12,9 +12,9 @@ This connector can be used to manually set up elements, or, when deployed with t
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features     | Based on     | System Impact     |
+|--------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This connector can be used to manually set up elements, or, when deployed with t
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                  | **Exported Components** |
-|-----------|---------------------|-------------------------|--------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Teleste HDM100](xref:Connector_help_Teleste_HDM100) | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components                                    | Exported Components |
+|---------|-----------------|---------------------|------------------------------------------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | [Teleste HDM100](xref:Connector_help_Teleste_HDM100) | -                   |
 
 ## Configuration
 
@@ -41,7 +41,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device. Default value is 2500.
+  - **IP port**: The IP port of the device. Default value is *2500*.
 
 ## How to Use
 
@@ -51,4 +51,5 @@ The **Alarm Limits**, **Status**, and **Alarms** pages contain the most importan
 
 The **Spectrum** and **Ingress** pages can be used to monitor and import real-time spectrum and ingress measurements that are being performed on the node.
 
-Note: **Changing the** **communication settings** **or device groups** **on the** **Transponder** **page** may cause the element to go into **timeout** for a couple of seconds.
+> [!NOTE]
+> **Changing the communication settings or device groups on the Transponder page** may cause the element to go into **timeout** for a couple of seconds.

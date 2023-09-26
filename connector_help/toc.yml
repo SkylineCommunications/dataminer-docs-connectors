@@ -9129,12 +9129,16 @@
     topicUid: Connector_help_Teleste_AC8000_SNMP
   - name: Teleste AC8710
     topicUid: Connector_help_Teleste_AC8710
+  - name: Teleste AC8710 SNMP
+    topicUid: Connector_help_Teleste_AC8710_SNMP
   - name: Teleste AC8810
     topicUid: Connector_help_Teleste_AC8810
   - name: Teleste AC8810 Manager
     topicUid: Connector_help_Teleste_AC8810_Manager
   - name: Teleste AC8810 Manager - Child
     topicUid: Connector_help_Teleste_AC8810_Manager_-_Child
+  - name: Teleste AC8810 SNMP
+    topicUid: Connector_help_Teleste_AC8810_SNMP
   - name: Teleste AC9000
     topicUid: Connector_help_Teleste_AC9000
   - name: Teleste Amplifier Collector
