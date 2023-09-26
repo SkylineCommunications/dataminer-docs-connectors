@@ -43,6 +43,7 @@ Typically, this connector is used together with the **NetInsight Nimbra Applicat
 | 4.1.0.x   | Gx 4.6-Gx 5.6          |
 | 4.1.1.x   | Gx 4.6-Gx 5.6          |
 | 4.1.2.x   | Gx 4.6-Gx 6.2.0.3      |
+| 4.1.3.x   | Gx 4.6-Gx 6.2.0.3      |
 
 ## Configuration
 

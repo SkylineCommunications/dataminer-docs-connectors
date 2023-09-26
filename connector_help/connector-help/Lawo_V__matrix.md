@@ -33,6 +33,8 @@ From range 2.0.1.x onwards, the information is retrieved via **WebSocket** subsc
 | 1.1.0.x   | 1.8                    |
 | 2.0.0.x   | 1.10.598               |
 | 2.0.1.x   | 1.11.2600              |
+| 2.0.2.x   | 1.11.4064              |
+| 2.0.3.x   | 1.11.4085              |
 
 ### Exported Components
 
