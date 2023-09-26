@@ -20,15 +20,15 @@ The Skyline EPM Platform PLM connector provides a streamlined and intuitive appr
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features    | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -70,11 +70,11 @@ In the PLM Overview table, you can create PLM items directly from the connector 
 
      - If you select *Once*, enter the date of the one-time PLM activity.
 
-     - If you select *Daily*, specify the interval: *Every \_\_ day(s)*.
+     - If you select *Daily*, specify the interval: *Every __ day(s)*.
 
-     - If you select *Weekly*, specify the interval: *Every \_\_ week(s)*. Also select the days of the week.
+     - If you select *Weekly*, specify the interval: *Every __ week(s)*. Also select the days of the week.
 
-     - If you select *Monthly*, specify the interval: *Every \_\_ month(s)*. Also specify which day of the month: *Day\_\_*.
+     - If you select *Monthly*, specify the interval: *Every __ month(s)*. Also specify which day of the month: *Day__*.
 
    - **Range of Recurrence**: Specify the range of dates in which the recurrence should apply.
 

@@ -14,15 +14,15 @@ The Splunk Enterprise connector focuses on monitoring jobs created based on save
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range            | Description     | DCF Integration     | Cassandra Compliant |
+|------------------|-----------------|---------------------|---------------------|
+| 1.0.0.x          | Initial version | No                  | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 6.6.0 (API)                 |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 6.6.0 (API)                |
 
 ## Installation and configuration
 
@@ -41,7 +41,7 @@ HTTP CONNECTION:
 
 ### Saved Search
 
-In order to retrieve job results configured in the Splunk platform for saved searches, these saved searches need to be configured manually in the connector. For this purpose, the **Saved Searches Table** provides the option to manually add saved searches. This can be done by right-clicking in the table and selecting **Add new**).
+In order to retrieve job results configured in the Splunk platform for saved searches, these saved searches need to be configured manually in the connector. For this purpose, the **Saved Searches Table** provides the option to manually add saved searches. You can do this by right-clicking in the table and selecting **Add new**.
 
 The following information needs to be specified when a new saved search is added:
 
@@ -49,13 +49,13 @@ The following information needs to be specified when a new saved search is added
 
 - **Result Type**: Since the results of saved searches don't have a specific format, the connector supports the following 5 format types:
 
-- **Type I**: One field retrieved (Type Integer)
+  - **Type I**: One field retrieved (Type Integer)
   - **Type II**: Two fields retrieved (Type String, Type Integer)
   - **Type III**: Two fields retrieved (Type Integer, Type Integer)
   - **Type IV**: Three fields retrieved (Type String, Type Integer, Type Integer)
   - **Type V**: Three fields retrieved (Type Integer, Type Integer, Type Integer)
 
-> Depending on the result type, the **Job Results Table** will be populated accordingly. An example for *Type I* and *Type II* can be found in the **Job Results** section below.
+Depending on the result type, the **Job Results Table** will be populated accordingly. An example for *Type I* and *Type II* can be found in the **Job Results** section below.
 
 Finally, a **Request Searches** button is also available, which allows you to poll the saved searches defined in the **Saved Searches Table** manually.
 
@@ -65,31 +65,129 @@ The **Job Results Table** will display the job results depending on the saved se
 
 The following is an example of a job result (Type I) with only one field:
 
-*\<?xml version='1.0' encoding='UTF-8'?\>* *\<results preview='0'\>* *\<meta\>* *\<fieldOrder\>* *\<field\>count(total_errors)\</field\>* *\</fieldOrder\>* *\</meta\>* *\<result offset='0'\>* *\<field k='count(total_errors)'\>* *\<value\>* *\<text\>240\</text\>* *\</value\>* *\</field\>* *\</result\>* *\</results\>*
+```xml
+<?xml version='1.0' encoding='UTF-8'?>
+<results preview='0'>
+ <meta>
+  <fieldOrder>
+   <field>count(total_errors)</field>
+  </fieldOrder>
+ </meta>
+ <result offset='0'>
+  <field k='count(total_errors)'>
+   <value>
+    <text>240</text>
+   </value>
+  </field>
+ </result>
+</results>
+```
 
 The job result will be displayed in the **Job Results Table** as follows:
 
-| **Display Key \[IDX\]** | **Saved Search ID**      | **Job ID Result**               | **Type** | **Field Integer I** | **Field Integer I Value** |
-|-------------------------|--------------------------|---------------------------------|----------|---------------------|---------------------------|
-| 1                       | INT_SAMS_TOTAL%20_ERRORS | scheduler\_\_admin_c2t5LWFwc... | Type I   | count(total_errors) | 240                       |
+| Display Key [IDX] | Saved Search ID          | Job ID Result                 | Type   | Field Integer I     | Field Integer I Value |
+|-------------------|--------------------------|-------------------------------|--------|---------------------|-----------------------|
+| 1                 | INT_SAMS_TOTAL%20_ERRORS | scheduler__admin_c2t5LWFwc... | Type I | count(total_errors) | 240                   |
 
-The folllowing is an example of a job result (Type II) with more than one field:
+The following is an example of a job result (Type II) with more than one field:
 
-*\<?xl version='1.0' encoding='UTF-8'?\>* *\<results preview='0'\>* *\<meta\>* *\<fieldOrder\>* *\<field groupby_rank="0"\>host\</field\>* *\<field\>count\</field\>* *\</fieldOrder\>* *\</meta\>* *\<result offset='0'\>* *\<field k='host'\>* *\<value\>\<text\>chiolsvolsp01\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>32\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='1'\>* *\<field k='host'\>* *\<value\>\<text\>chiolsvolsp02\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>30\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='2'\>* *\<field k='host'\>* *\<value\>\<text\>chiolsvolsp03\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>19\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='3'\>* *\<field k='host'\>* *\<value\>\<text\>chiolsvolsp04\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>22\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='4'\>* *\<field k='host'\>* *\<value\>\<text\>chiolsvolsp05\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>23\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='5'\>* *\<field k='host'\>* *\<value\>\<text\>chiolsvolsp06\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>29\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='6'\>* *\<field k='host'\>* *\<value\>\<text\>upapp6w0\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>11\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='7'\>* *\<field k='host'\>* *\<value\>\<text\>upapp6x0\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>8\</text\>\</value\>* *\</field\>* *\</result\>* *\<result offset='8'\>* *\<field k='host'\>* *\<value\>\<text\>upapp6y0\</text\>\</value\>* *\</field\>* *\<field k='count'\>* *\<value\>\<text\>8\</text\>\</value\>* *\</field\>* *\</result\>* *\</results\>*
+```xml
+<?xl version='1.0' encoding='UTF-8'?>
+<results preview='0'>
+<meta>
+<fieldOrder>
+<field groupby_rank="0">host</field>
+<field>count</field>
+</fieldOrder>
+</meta>
+ <result offset='0'>
+  <field k='host'>
+   <value><text>chiolsvolsp01</text></value>
+  </field>
+  <field k='count'>
+   <value><text>32</text></value>
+  </field>
+ </result>
+ <result offset='1'>
+  <field k='host'>
+   <value><text>chiolsvolsp02</text></value>
+  </field>
+  <field k='count'>
+   <value><text>30</text></value>
+  </field>
+ </result>
+ <result offset='2'>
+  <field k='host'>
+   <value><text>chiolsvolsp03</text></value>
+  </field>
+  <field k='count'>
+   <value><text>19</text></value>
+  </field>
+ </result>
+ <result offset='3'>
+  <field k='host'>
+   <value><text>chiolsvolsp04</text></value>
+  </field>
+  <field k='count'>
+   <value><text>22</text></value>
+  </field>
+ </result>
+ <result offset='4'>
+  <field k='host'>
+   <value><text>chiolsvolsp05</text></value>
+  </field>
+  <field k='count'>
+   <value><text>23</text></value>
+  </field>
+ </result>
+ <result offset='5'>
+  <field k='host'>
+   <value><text>chiolsvolsp06</text></value>
+  </field>
+  <field k='count'>
+   <value><text>29</text></value>
+  </field>
+ </result>
+ <result offset='6'>
+  <field k='host'>
+   <value><text>upapp6w0</text></value>
+  </field>
+  <field k='count'>
+   <value><text>11</text></value>
+  </field>
+ </result>
+ <result offset='7'>
+  <field k='host'>
+   <value><text>upapp6x0</text></value>
+  </field>
+  <field k='count'>
+   <value><text>8</text></value>
+  </field>
+ </result>
+ <result offset='8'>
+  <field k='host'>
+   <value><text>upapp6y0</text></value>
+  </field>
+  <field k='count'>
+   <value><text>8</text></value>
+  </field>
+ </result>
+</results>
+```
 
 The job result will be displayed in the **Job Results Table** as follows:
 
-| **Display Key \[IDX\]**     | **Saved Search ID** | **Job ID**                    | **Type** | **Field String 1** | **Field String 1 Value** | **Field Integer 1** | **Field Integer 1 Value** |
-|-----------------------------|---------------------|-------------------------------|----------|--------------------|--------------------------|---------------------|---------------------------|
-| 1/host/ chiolsvolsp01/count | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | chiolsvolsp01            | count               | 32                        |
-| 2/host/ chiolsvolsp02/count | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | chiolsvolsp02            | count               | 30                        |
-| 3/host/ chiolsvolsp03/count | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | chiolsvolsp03            | count               | 19                        |
-| 4/host/ chiolsvolsp04/count | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | chiolsvolsp04            | count               | 22                        |
-| 5/host/ chiolsvolsp05/count | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | chiolsvolsp05            | count               | 23                        |
-| 6/host/ chiolsvolsp06/count | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | chiolsvolsp06            | count               | 29                        |
-| 7/host/ upapp6w0/count      | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | upapp6w0                 | count               | 11                        |
-| 8/host/ upapp6x0/count      | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | upapp6x0                 | count               | 8                         |
-| 9/host/ upapp6y0/count      | sams_host_callback  | scheduler\_\_admin_c2t5LWFwcA | Type II  | host               | upapp6y0                 | count               | 8                         |
+| Display Key [IDX] | Saved Search ID | Job ID | Type | Field String I | Field String I Value | Field Integer 1 | Field Integer 1 Value |
+|--|--|--|--|--|--|--|--|
+| 1/host/ chiolsvolsp01/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | chiolsvolsp01 | count | 32 |
+| 2/host/ chiolsvolsp02/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | chiolsvolsp02 | count | 30 |
+| 3/host/ chiolsvolsp03/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | chiolsvolsp03 | count | 19 |
+| 4/host/ chiolsvolsp04/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | chiolsvolsp04 | count | 22 |
+| 5/host/ chiolsvolsp05/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | chiolsvolsp05 | count | 23 |
+| 6/host/ chiolsvolsp06/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | chiolsvolsp06 | count | 29 |
+| 7/host/ upapp6w0/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | upapp6w0 | count | 11 |
+| 8/host/ upapp6x0/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | upapp6x0 | count | 8 |
+| 9/host/ upapp6y0/count | sams_host_callback | scheduler__admin_c2t5LWFwcA | Type II | host | upapp6y0 | count | 8 |
 
 In order to limit the number of rows, the following two parameters are available:
 

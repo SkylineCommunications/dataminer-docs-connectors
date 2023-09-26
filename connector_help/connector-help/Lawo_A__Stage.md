@@ -2,31 +2,31 @@
 uid: Connector_help_Lawo_A__Stage
 ---
 
-# Lawo A\_\_Stage
+# Lawo A__Stage
 
-The Lawo A\_\_stage device is networked stage box that can be deployed as a gateway for mcý consoles, audio extension for the V\_\_matrix ecosystem, or standalone IP audio gateway.
+The Lawo A__stage device is networked stage box that can be deployed as a gateway for mc² consoles, audio extension for the V__matrix ecosystem, or standalone IP audio gateway.
 
-This connector uses **smart-serial Ember+** communication to poll data from the Lawo A\_\_Stage.
+This connector uses **smart-serial Ember+** communication to poll data from the Lawo A__Stage.
 
 ## About
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features    | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

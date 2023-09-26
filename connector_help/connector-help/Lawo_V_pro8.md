@@ -36,8 +36,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: \[The polling IP or hostname of the device.\]
-  - **IP port**: \[The IP port of the device. This is required.\]
+  - **IP address/host**: The polling IP or hostname of the device.
+  - **IP port**: The IP port of the device. This is required.
 
 ### Configuration
 
@@ -47,7 +47,9 @@ No additional configuration is necessary after creating the element.
 
 ### General
 
-Displays general information of the device: product code, serial number, software version, role, .... Additionaly there is also a button that allows an operator to reboot the device.
+Displays general information of the device: product code, serial number, software version, role, etc.
+
+There is also a button that allows an operator to reboot the device.
 
 ### Status
 
@@ -59,7 +61,7 @@ Contains tables with all inputs.
 
 ### Outputs
 
-Contains tables with all ouputs.
+Contains tables with all outputs.
 
 ### Video Matrix
 
@@ -97,6 +99,4 @@ Displays all preferences, such as the color schema that will be used on the fron
 
 ### Web Interface
 
-Displays the webinterface of the device. Note that the client machine has to be able to access the device, as otherwise it will no tbe possible to open the webinterface.
-
-## Notes
+Displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

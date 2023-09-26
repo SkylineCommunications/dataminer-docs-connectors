@@ -2,24 +2,24 @@
 uid: Connector_help_Lawo_A__UHD_Core
 ---
 
-# Lawo A\_\_UHD Core
+# Lawo A__UHD Core
 
-The A\_\_UHD Core is an audio engine for Lawo mcý audio production consoles. It is a network-based, software-defined IP DSP engine with:
+The A__UHD Core is an audio engine for Lawo mcý audio production consoles. It is a network-based, software-defined IP DSP engine with:
 
 - 1024 Lawo-grade DSP channels on 1RU (512 channels in 96 kHz mode)
 - IP network processor based on open standards (ST2110-30/-31, AES67, RAVENNA)
 - Full redundancy: SPS stream redundancy (ST2022-7) and hardware redundancy via hot-spare redundancy unit
 - Scalable DSP performance via flexible licensing system and possibility to share DSP resources among multiple consoles
 
-This connector uses **smart-serial Ember+** communication to poll data from the Lawo A\_\_UHD Core.
+This connector uses **smart-serial Ember+** communication to poll data from the Lawo A__UHD Core.
 
 ## About
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features    | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
@@ -29,9 +29,9 @@ This connector uses **smart-serial Ember+** communication to poll data from the 
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 

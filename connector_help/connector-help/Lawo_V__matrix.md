@@ -2,9 +2,9 @@
 uid: Connector_help_Lawo_V__matrix
 ---
 
-# Lawo V\_\_matrix
+# Lawo V_Matrix
 
-The Lawo V\_\_matrix is a software-defined IP core routing, processing, and multi-viewing platform.
+The Lawo V__matrix is a software-defined IP core routing, processing, and multi-viewing platform.
 
 In range 1.0.0.x and 1.1.0.x, the **Ember+** protocol is used to communicate with the device, which is a **smart-serial** way of communicating. The most important functions of the device are polled.
 
@@ -16,12 +16,14 @@ From range 2.0.1.x onwards, the information is retrieved via **WebSocket** subsc
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version. **It is not advised to use this range, except in case it was agreed to use Ember+ instead of the vendor-advised method.** | No                  | Yes                     |
-| 1.1.0.x              | Ember 1.8 system support. Some parameters are no longer supported in this range.                                                           | No                  | Yes                     |
-| 2.0.0.x              | WebSocket implementation.                                                                                                                  | No                  | Yes                     |
-| 2.0.1.x \[SLC Main\] | DCF connections added.                                                                                                                     | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. **It is not advised to use this range, except in case it was agreed to use Ember+ instead of the vendor-advised method.** | No | Yes |
+| 1.1.0.x | Ember 1.8 system support. Some parameters are no longer supported in this range. | No | Yes |
+| 2.0.0.x | WebSocket implementation. | No | Yes |
+| 2.0.1.x | DCF connections added. | Yes | Yes |
+| 2.0.2.x | Fixed Rx and Tx value. | Yes | Yes |
+| 2.0.3.x [SLC Main] | Fixed various bugs, split up tables, and changed parameter type. | Yes | Yes |
 
 ### Product Info
 
@@ -34,51 +36,37 @@ From range 2.0.1.x onwards, the information is retrieved via **WebSocket** subsc
 
 ### Exported Components
 
-| **Exported Connector**                                                                                  | **Description**    |
-|--------------------------------------------------------------------------------------------------------|--------------------|
-| [Lawo V\_\_matrix - IP Streaming](xref:Connector_help_Lawo_V__matrix_-_IP_Streaming)           | IP streaming.      |
-| [Lawo V\_\_matrix - Multiviewer Slave](xref:Connector_help_Lawo_V__matrix_-_Multiviewer_Slave) | Multiviewer slave. |
+| Exported Connector                                                                           | Description        |
+|----------------------------------------------------------------------------------------------|--------------------|
+| [Lawo V__matrix - IP Streaming](xref:Connector_help_Lawo_V__matrix_-_IP_Streaming)           | IP streaming.      |
+| [Lawo V__matrix - Multiviewer Slave](xref:Connector_help_Lawo_V__matrix_-_Multiviewer_Slave) | Multiviewer slave. |
 
 ## Configuration
 
-### Connections
+### Connections - range 1.1.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x/1.1.0.x</td>
-<td><h4 id="serial-main-connection">Serial Main Connection</h4>
-<p>This connector uses a smart-serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Interface connection:</li>
-<li><ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>IP port</strong>: The IP port of the device. This is required. The default value is <em>9000</em>, <strong></strong> the range is <em>0</em> <strong></strong> to <em>65535</em>.</li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x/2.0.1.x</td>
-<td><h4 id="http-main-connection">HTTP Main Connection</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination (default: <em>80</em>).</li>
-<li><strong>Device address</strong>: The bus address of the device. If the proxy server has to be bypassed, specify <em>BypassProxy</em>.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### Serial Main Connection
+
+This connector uses a smart-serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device. This is required. The default value is *9000*, the range is *0* to *65535*.
+
+### Connections - 2.0.0.x/2.0.1.x
+
+#### HTTP Main Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ## Usage
 
@@ -102,8 +90,8 @@ This page contains information about the RTP receiver of the device, such as **L
 
 - **RTP Sessions Table**: Contains information about the RTP sessions, such as Switch Type, Active Command, SDP A Command, etc.
 - **Audio Receiver Table**: Contains information about the audio receivers, such as Audio Receiver Mode, Audio Receiver State, Blocked By, etc.
-- **Video** **Receiver Table**: Contains information about the video receivers, such as Video Receiver Mode, Video Receiver State, Blocked By, etc.
-- **Packet Stream Pairs** **Table**: Contains information about the packet stream pairs, such as Primary Drift, Primary M Packets Received, Secondary Drift Resolution, etc.
+- **Video Receiver Table**: Contains information about the video receivers, such as Video Receiver Mode, Video Receiver State, Blocked By, etc.
+- **Packet Stream Pairs Table**: Contains information about the packet stream pairs, such as Primary Drift, Primary M Packets Received, Secondary Drift Resolution, etc.
 
 ### RTP Receiver (range 1.1.0.x)
 
@@ -111,7 +99,7 @@ This page contains information about the RTP receiver of the device, such as **L
 
 - **RTP Sessions Table**: Contains information about the RTP sessions, such as Switch Type, Active Command, SDP A Command, etc.
 - **Audio Receiver Table**: Contains information about the audio receivers, such as Audio Receiver State and Command Preparation Time.
-- **Video** **Receiver Table**: Contains information about the video receivers, such as Video Receiver State and Command Preparation Time.
+- **Video Receiver Table**: Contains information about the video receivers, such as Video Receiver State and Command Preparation Time.
 
 ### Video Transmitter Overview
 
@@ -131,7 +119,7 @@ This page also contains a page button that provides access to the **Video Transm
 
 ### I/O Ports
 
-This page contains information about the I/O ports of the device in the **Output IO Ports** **Table**, including the Name, SDI In Phase, SDI Phase Reset, etc.
+This page contains information about the I/O ports of the device in the **Output IO Ports Table**, including the Name, SDI In Phase, SDI Phase Reset, etc.
 
 ### Network Interfaces Overview
 
@@ -146,7 +134,7 @@ This page also contains a page button that provides access to the **Network Inte
 
 - **Network Interfaces Table**: Displays the **Name** of the network ports, the **Briefs**, the **Maximum Throughput**, etc.
 - **FPGA Statistics Table**: Displays statistics per lane, with each network interface linked to several lanes. This includes information such as Port Brief, Max. Throughput, TX Total Bytes, TX Packets per Second, etc.
-- **Network Aggregate Statistics** **Table**: Displays statistics per network port (totaling all lanes). This includes information such as Total RX Unicast Bytes, RX Unicast Gigabytes per Second, Total Multicast Bytes, etc.
+- **Network Aggregate Statistics Table**: Displays statistics per network port (totaling all lanes). This includes information such as Total RX Unicast Bytes, RX Unicast Gigabytes per Second, Total Multicast Bytes, etc.
 
 ### Time Flows (available since version 1.1.0.1)
 

@@ -4,7 +4,7 @@ uid: Connector_help_Lawo_V_Matrix_IP_Streaming
 
 # Lawo V_Matrix IP Streaming
 
-The V\_\_matrix vm_streaming virtual module is a versatile audio and video processing software application that provides routing, processing and glue functionality for the V\_\_matrix ecosystem when loaded on a C100 processing blade.
+The V__matrix vm_streaming virtual module is a versatile audio and video processing software application that provides routing, processing and glue functionality for the V__matrix ecosystem when loaded on a C100 processing blade.
 
 This connector monitors the main functionalities of the IP Streaming application.
 
@@ -12,9 +12,9 @@ This connector monitors the main functionalities of the IP Streaming application
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features    | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This connector monitors the main functionalities of the IP Streaming application
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 

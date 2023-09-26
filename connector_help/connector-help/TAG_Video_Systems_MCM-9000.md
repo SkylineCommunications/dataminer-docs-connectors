@@ -18,14 +18,14 @@ Range **1.1.5.x** of the connector is based on the 1.1.4.7 version. It changes t
 
 ### Product Info
 
-| **Range**                                           | **Supported Firmware**                    |
-|-----------------------------------------------------|-------------------------------------------|
-| 1.0.0.x 1.0.0.11 1.0.0.13-14 1.0.0.15-22 1.0.0.23\* | 2.3.3 2.4.6 2.5.2 2.5.3 2.5.4 2.6.7 4.1.1 |
-| 1.1.0.x 1.1.1.x                                     | 3.3.5 4.1.1 4.1.7 4.2.3                   |
-| 1.1.2.x                                             | 4.1.1 4.1.7 4.2.3 4.2.8 4.4.4 4.5.7       |
-| 1.1.3.x                                             | 4.1.1 4.1.7 4.2.3 4.2.8 4.4.4 4.5.7 5.2.3 |
-| 1.1.4.x \[SLC Main\]                                | 4.1.1 4.1.7 4.2.3 4.2.8 4.4.4 4.5.7 5.2.3 |
-| 1.1.5.x                                             | 4.1.1 4.1.7 4.2.3 4.2.8 4.4.4 4.5.7 5.2.3 |
+| Range                                                  | Supported Firmware                              |
+|--------------------------------------------------------|-------------------------------------------------|
+| 1.0.0.x, 1.0.0.11, 1.0.0.13-14, 1.0.0.15-22, 1.0.0.23* | 2.3.3, 2.4.6, 2.5.2, 2.5.3, 2.5.4, 2.6.7, 4.1.1 |
+| 1.1.0.x 1.1.1.x                                        | 3.3.5, 4.1.1, 4.1.7, 4.2.3                      |
+| 1.1.2.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7        |
+| 1.1.3.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
+| 1.1.4.x [SLC Main]                                     | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
+| 1.1.5.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
 
 Firmware versions 2.5.2 and higher support HTTP Live Streaming (HLS). A Visio file is available to display the mosaic stream in DataMiner.
 To display the HTTP Live Stream, VLC Media Player is required on the client computer.
@@ -101,7 +101,7 @@ This page displays the web interface of the device. However, note that the clien
 
 On this page, you can view all device and licensing parameters for the whole (stacked) system.
 
-The page also displays the **Number of Monitored Channels** and allows you to activate the option to **Automatically Remove Missing Services and PIDs.** There are also buttons available to trigger a **soft reset**, to **reboot** or **shut down** the device, or to **save the configuration**.
+The page also displays the **Number of Monitored Channels** and allows you to activate the option to **Automatically Remove Missing Services and PIDs**. There are also buttons available to trigger a **soft reset**, to **reboot** or **shut down** the device, or to **save the configuration**.
 
 ### Overview
 
@@ -131,7 +131,8 @@ On this page, the **Channel Events Overview** table displays all channel events.
 
 By right-clicking, you can acknowledge channel events.
 
-Note: From version 1.1.2.9 onwards, you can change the display key from "Name/Description" to "Name Description ExtraDescription".
+> [!NOTE]
+> From version 1.1.2.9 onwards, you can change the display key from "Name/Description" to "Name Description ExtraDescription".
 
 ### Scan Channels
 
@@ -159,7 +160,8 @@ You can configure any of the settings of the output stream on this page. Selecti
 
 Via the right-click menu in the **Encoder Configuration** table, you can **delete**, **enable**, or **disable** selected encoders.
 
-Note: A Visio file is available to display the mosaic stream in DataMiner. Manipulating the channel position is also possible from the Visual Overview.
+> [!NOTE]
+> A Visio file is available to display the mosaic stream in DataMiner. Manipulating the channel position is also possible from the Visual Overview.
 
 ### Layouts
 
@@ -169,7 +171,8 @@ On this page, you can manipulate the individual **layouts**. You can add or remo
 
 On this page, you can create and edit **Alarm Presets**. You can also import and export presets using .csv files.
 
-Note: From version 1.1.2.8 onwards, the export and import alarm presets functionality uses .xml files.
+> [!NOTE]
+> From version 1.1.2.8 onwards, the export and import alarm presets functionality uses .xml files.
 
 ### Web Interface
 
@@ -186,7 +189,7 @@ This page displays the different types of tally layouts. You can edit different 
 For this connector to be able to poll the device, the following files are required:
 
 - The file "SLSystem.Web.Helpers.dll" (renamed version of "System.Web.Helpers.dll") must be placed inside the ProtocolScripts folder.
-- The file "System.Web.Helpers.dll" must be placed in the folder *C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Web.Helpers\v4.0_1.0.0.0\_\_31bf3856ad364e35\\*.
+- The file "System.Web.Helpers.dll" must be placed in the folder `C:\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Web.Helpers\v4.0_1.0.0.0__31bf3856ad364e35\`.
 
 ## DataMiner Connectivity Framework
 

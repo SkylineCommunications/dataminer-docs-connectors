@@ -10,21 +10,25 @@ With this connector, you can monitor and control the different interfaces of a n
 
 Typically, this connector is used together with the **NetInsight Nimbra Application Manager** for the monitoring and controlling of the services between different Nimbra nodes.
 
+> [!IMPORTANT]
+> **From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance.** If the connector is updated from an older version to 4.1.3.1, the DCF connections could be duplicated and remain in the connector. Please update the connector using the latest *NetInsight Nimbra Package*, restart all elements using the connector, and then use the Automation script *DCF Clean Nimbra Connections* to clean up the obsolete DCF links. Alternatively, you can manually install the Automation script *DCF Clean Nimbra Connections* and execute it after updating to version 4.1.3.1.
+
 ## About
 
 ### Version Info
 
-| **Range**            | **Corresponding** **NetInsight Nimbra Application Manager** **Range** | **Description**                                                                                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | \-                                                                    | Initial version.                                                                                                                                                                                              | No                  | Yes                     |
-| 1.0.1.x \[Obsolete\] | \-                                                                    | New MIBs.                                                                                                                                                                                                     | No                  | Yes                     |
-| 2.0.0.x \[Obsolete\] | \-                                                                    | Branch version based on 1.0.1.x.                                                                                                                                                                              | No                  | Yes                     |
-| 3.0.0.x \[Obsolete\] | 1.0.0.x \[Obsolete\]                                                  | Branch version based on 2.0.0.x.                                                                                                                                                                              | No                  | Yes                     |
-| 3.0.1.x \[Obsolete\] | 1.0.1.x \[Obsolete\]                                                  | Based on 3.0.0.x. All bit rates in Mbps for consistency.                                                                                                                                                      | No                  | Yes                     |
-| 4.0.0.x \[Obsolete\] | 2.0.0.x \[Obsolete\]                                                  | Based on 3.0.1.x. Uses DCF.                                                                                                                                                                                   | Yes                 | Yes                     |
-| 4.1.0.x \[Obsolete\] | 2.0.1.x \[Obsolete\]                                                  | Based on 4.0.0.x. Improved number of rows retrieved with each SNMP call. Version change required because some devices are unable to handle the bigger load.                                                   | Yes                 | Yes                     |
-| 4.1.1.x              | 2.0.2.x \[SLC Main\]                                                  | Based on 4.1.0.x. Improved interface for third-party applications (e.g. SRM) **with breaking changes**. Validation on requests is no longer polling-based but is pushed to the manager from the node element. | Yes                 | Yes                     |
-| 4.1.2.x \[SLC Main\] | 2.0.2.x \[SLC Main\]                                                  | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters.                                                                                                                      | Yes                 | Yes                     |
+| Range | Corresponding NetInsight Nimbra Application Manager Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|--|
+| 1.0.0.x [Obsolete] | - | Initial version. | No | Yes |
+| 1.0.1.x [Obsolete] | - | New MIBs. | No | Yes |
+| 2.0.0.x [Obsolete] | - | Branch version based on 1.0.1.x. | No | Yes |
+| 3.0.0.x [Obsolete] | 1.0.0.x [Obsolete] | Branch version based on 2.0.0.x. | No | Yes |
+| 3.0.1.x [Obsolete] | 1.0.1.x [Obsolete] | Based on 3.0.0.x. All bit rates in Mbps for consistency. | No | Yes |
+| 4.0.0.x [Obsolete] | 2.0.0.x [Obsolete] | Based on 3.0.1.x. Uses DCF. | Yes | Yes |
+| 4.1.0.x [Obsolete] | 2.0.1.x [Obsolete] | Based on 4.0.0.x. Improved number of rows retrieved with each SNMP call. Version change required because some devices are unable to handle the bigger load. | Yes | Yes |
+| 4.1.1.x | 2.0.2.x [SLC Main] | Based on 4.1.0.x. Improved interface for third-party applications (e.g. SRM) **with breaking changes**. Validation on requests is no longer polling-based but is pushed to the manager from the node element. | Yes | Yes |
+| 4.1.2.x | 2.0.2.x [SLC Main] | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters. | Yes | Yes |
+| 4.1.3.x [SLC Main] | 2.0.2.x [SLC Main] | Based on 4.1.2.x. Modified DCF interfaces to use the DTM name as the unique identifier instead of the instance. | Yes | Yes |
 
 ### Product Info
 
@@ -63,7 +67,7 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use:
+## How to use
 
 The element created with this connector consists of the following data pages:
 
@@ -76,12 +80,12 @@ The element created with this connector consists of the following data pages:
 - **ITS JPEG 2000**: Displays the ITS JPEG 2000 table and contains a parameter that can be used to activate or deactivate polling.
 - **ITS Alarm Status**: Displays the ITS In Alarm Status and ITS Out Alarm Status tables.
 - **AIF Performance Monitoring**: Contains the AIF - Access Interfaces Monitoring table and allows you to activate or deactivate AIF Polling.
-- **DCH Performance Monitoring**: Contains the DCH ƒ?" DTM Channels Monitoring table and allows you to activate or deactivate DCH Polling.
+- **DCH Performance Monitoring**: Contains the DCH â€“ DTM Channels Monitoring table and allows you to activate or deactivate DCH Polling.
 - **DTM Interfaces and Links**: Displays the DTM Link Last Changed parameter and contains the DTM Interfaces and DTM Links tables.
 - **DTM Tx/Rx Statistics**: These pages display the DTM Interfaces - Tx and DTM Interfaces - Rx tables, respectively.
 - **DTM DPP-IP Interfaces**: Displays the DTM DPP-IP Last Changed parameter and contains the DPP-IP Interfaces table.
 - **DTM Alarms**: Displays the DTM Interfaces Alarm Status table.
-- **DTM TIF Performance Monitoring**: Displays the TIF ƒ?" Trunk Interfaces Monitoring table and allows you to activate or deactivate DTM TIF Polling.
+- **DTM TIF Performance Monitoring**: Displays the TIF â€“ Trunk Interfaces Monitoring table and allows you to activate or deactivate DTM TIF Polling.
 - **Eth Device and Interface**: Displays the Eth Devices Table and the Eth Interfaces and Alarms Table.
 - **Eth-Ets Table**: Displays the Eth-Ets Group Last Change parameter and the Eth-Ets Table.
 - **Eth-Ets RSTP and Queue Configuration**: Displays the Eth-Ets Group Last Change parameter, the Eth-Ets RSTP Table and the Eth-Ets If Queue Table.
