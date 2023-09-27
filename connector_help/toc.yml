@@ -4859,6 +4859,8 @@
 - name: Inmarsat
   topicUid: Connector_help_Inmarsat_BGAN_Manager
   items:
+  - name: Inmarsat BGAN IBIS
+    topicUid: Connector_help_Inmarsat_BGAN_IBIS
   - name: Inmarsat BGAN Manager
     topicUid: Connector_help_Inmarsat_BGAN_Manager
   - name: Inmarsat Gateway
