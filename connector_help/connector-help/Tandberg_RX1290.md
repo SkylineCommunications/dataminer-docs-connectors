@@ -12,9 +12,11 @@ This is an **SNMP** connector that is used to display the status of the differen
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 3.0.0.x          | New range to support DCF internal connections | Yes                 | Yes                     |
+| Range                | Description                                   | DCF Integration | Cassandra Compliant |
+|----------------------|-----------------------------------------------|-----------------|---------------------|
+| 1.1.0.x [Obsolete]   | Release version                               | No              | Yes                 |
+| 2.1.0.x [Obsolete]   | DVB subtitles support                         | No              | Yes                 |
+| 3.0.0.x [SLC Main]   | New range to support DCF internal connections | Yes             | Yes                 |
 
 ### Product Info
 
@@ -105,7 +107,7 @@ The following page buttons are available:
 
 - **PID Tables**: Displays parameters related to PIDs. The subpage contains 3 tables and an **Update Now** button, which can be used to immediately update the tables on this page:
 
-- **PID Table:** Contains information about the PIDs in the system, listing the **Type** for each one.
+  - **PID Table:** Contains information about the PIDs in the system, listing the **Type** for each one.
   - **DVB Subtitle Table**: Contains more information about the **DVB Subtitles**, such as the **DVB Sub Language**, the **DVB Sub Comp Page Id**, etc.
   - **Audio Table**: Lists the different **Audio PIDs** in the stream, the **Audio Language**, **Audio Format**, etc.
 
@@ -147,10 +149,10 @@ This page contains parameters related to redundancy parameters, such as **CA Det
 
 This page contains a link to the web page of the actual device.
 
-### Web Interface.
+### Web Interface
 
 This page shows the web page of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## Notes
 
-Due to the versatility of the equipment, not all parameters will be filled in. For example, if your device is only IP-based, the RF options will not be filled in.
+Because of the versatility of the equipment, not all parameters will be filled in. For example, if your device is only IP-based, the RF options will not be filled in.
