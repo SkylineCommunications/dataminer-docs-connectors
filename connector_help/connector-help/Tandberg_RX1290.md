@@ -12,9 +12,11 @@ This is an **SNMP** connector that is used to display the status of the differen
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 3.0.0.x          | New range to support DCF internal connections | Yes                 | Yes                     |
+| **Range**                          | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
+|------------------------------------|-----------------------------------------------|---------------------|-------------------------|
+| 1.1.0.x </br> \[Obsolete\]         | Release version                               | No                  | Yes                     |
+| ​2.1.0.x  </br> \[Obsolete\]        | ​DVB subtitles support                         | No                  | Yes                     |
+| 3.0.0.x </br> \[SLC Main\]         | New range to support DCF internal connections | Yes                 | Yes                     |
 
 ### Product Info
 
