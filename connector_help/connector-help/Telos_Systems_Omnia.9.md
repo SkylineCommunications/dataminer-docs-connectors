@@ -20,15 +20,13 @@ In connector range 1.0.1.1, an additional **HTTP** connection is used to read an
 |---------|-------------------------------------|
 | 1.0.0.x | Initial version                     |
 | 1.0.1.x | Added HTTP connection               |
-| 1.0.2.x | Connector updated with the new MIBs |
 
 ### Product Info
 
 | Range   | Supported Firmware Version |
 |---------|----------------------------|
 | 1.0.0.x | Unknown                    |
-| 1.0.1.x | 3.19.51                    |
-| 1.0.2.x | > 3.19.51                  |
+| 1.0.1.x | ≥ 3.19.51                    |
 
 ## Configuration
 
@@ -49,7 +47,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, i.e. *public*.
 - **Set community string**: The community string used when setting values on the device, i.e. *private*.
 
-#### HTTP Connection [range 1.0.2.1]
+#### HTTP Connection [range 1.0.1.x]
 
 This connector uses a secondary HTTP connection and requires the following input during element creation:
 
@@ -72,14 +70,14 @@ This page contains **input status** parameters.
 
 This page contains **preset** parameters (**Input**, **FM**, **HD**, **Stream**, **Studio**).
 
-### RDS [Range 1.0.2.1]
+### RDS [Range 1.0.1.x]
 
 This page contains **Radio Data System (RDS)** parameters (e.g. UECP, Radiotext).
 
-### FM Options [Range 1.0.2.1]
+### FM Options [Range 1.0.1.x]
 
 This page contains parameters for **FM Options**.
 
-### Web Interface [Range 1.0.2.1]
+### Web Interface [Range 1.0.1.x]
 
 This page provides access to the web interface of the device. The web interface is only accessible when the client machine has network access to the product.
