@@ -10,6 +10,28 @@ The **ETL Systems NGM-21** connector displays information related to the **ETL S
 
 This connector uses two interfaces to communicate with the NGM-21 device. The SNMP interface is used to retrieve information regarding the chassis temperature and the status of the fans, and the serial interface is used to execute the remaining commands.
 
+### Version Info
+
+| Range                  | Key Features | Based on | System Impact |
+|------------------------|------------------|--------------|-------------------|
+| 1.0.0.x | Initial version. | -           | -                |
+| 1.0.1.x [SLC Main]| Get labels and locks via Serial instead of via SNMP. | 1.0.0.8| None. The major change was requested due to the removal of unused table columns from the 'Output Settings' table                |
+
+### Product Info
+
+| Range | Supported Firmware |
+|-----------|------------------------|
+| 1.0.0.x   | Unknown                     |
+| 1.0.1.x   | Unknown                     |
+
+### System Info
+
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
+| 1.0.1.x   | No                  | Yes                     | -                    | -                      |
+
+
 ## Creation
 
 ### SNMP
