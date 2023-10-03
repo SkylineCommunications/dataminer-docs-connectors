@@ -63,4 +63,4 @@ The web interface is only accessible when the client machine has network access 
 When the credentials have been specified on the Communication page as detailed above, the element will execute a GET request using these credentials. If they are correct, the element will receive a token from the data source so that it can remain logged in and continue to execute calls for the **Home, Info, System, Host Names, Disks, Fans and Power Supllies**.
 
 ## Notes
-This driver also supports for now Dell PowerVault ME4024
+This driver also supports for now Dell PowerVault ME4024.
