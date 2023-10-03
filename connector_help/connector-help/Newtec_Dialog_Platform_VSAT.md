@@ -14,24 +14,28 @@ The connector uses the following APIs:
 
 - Newtec Dialog Restful Standard API (Central Dialog NMS): Configuration data of the Dialog system is retrieved using this API.
 - Newtec Dialog TSDB API (Hub Gateway Database): Statistics, metrics of terminals and Sat Networks are retrieved using the Time Series Database API.
+- Newtec Dialog underlying DMA Web Services API: Events of the entities within the Dialog system.
 
 ### Version Info
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x \[obsolete\] | Initial version  | \-           | \-                |
+| 1.0.1.x \[SLC Main\] | New Connection Added  | \-           | \-                |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.2.1                  |
+| 1.0.1.x   | 2.4.2                  |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
@@ -47,11 +51,21 @@ These are used to communicate with the Newtec Dialog Restful Standard API.
 - **IP port:** *80* (Default Connection 1) & *8086* (Default Connection 2 & 3)
 - **Device address**: *BypassProxy*
 
+### HTTP Connection 4
+
+This is used to communicate with the underlying Dialog DMA Web Services API
+
+- **IP address/host**: The hostname of the underlying Dialog DMA
+- **IP PORT:**  *443* (Default)
+- **Device address**: *ByPassProxy*
+
 ### Initialization
 
 On the **General** page, specify the **credentials** for user authentication of the REST API in order to collect data from the Dialog platform.
 
 On the **TSDB Polling** page, add the TSDBs that need to be polled to the **Database Configuration** table.
+
+On the **Polling Status** page, enable the Event Config Status parameter and setup polling interval and event cleanup timer to start retrieving events.
 
 In addition, two toggle buttons need to be enabled to poll both the dialog REST and TSDB API.
 
