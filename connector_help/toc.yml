@@ -2825,6 +2825,8 @@
     topicUid: Connector_help_Eaton_93PM_UPS
   - name: EATON 9PX UPS
     topicUid: Connector_help_EATON_9PX_UPS
+  - name: EATON ATS
+    topicUid: Connector_help_EATON_ATS
   - name: Eaton Blade UPS
     topicUid: Connector_help_Eaton_Blade_UPS
   - name: EATON ePDU G3

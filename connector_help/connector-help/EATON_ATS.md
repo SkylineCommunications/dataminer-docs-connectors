@@ -4,28 +4,29 @@ uid: Connector_help_EATON_ATS
 
 # EATON ATS
 
-The EATON ATS is a device that can automatically switch between two power sources to provide uninterrupted power to connected equipment. 
-It is designed for customers who want to add power redundancy to their networking equipment, such as switches and routers. .
+The EATON ATS is a device that can automatically switch between two power sources to provide uninterrupted power to connected equipment.
+
+It is typically used to add power redundancy to networking equipment, such as switches and routers.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact** |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware** |
-|-----------|------------------------|
-| 1.0.0.x   | 00.00.0012      |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 00.00.0012         |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components** |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -53,6 +54,6 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The element displays the available information of the device on the following pages: **General**, **Input**, **Output**, **Bypass**, **Alarms** and **Sensors**.
+The element displays the available information of the device on the following pages: **General**, **Input**, **Output**, **Bypass**, **Alarms**, and **Sensors**.
 
 On the **Polling page**, you can configure the polling of the parameters.
