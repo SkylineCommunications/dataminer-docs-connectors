@@ -18,10 +18,10 @@ The connector uses the following APIs:
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[obsolete\] | Initial version  | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | New Connection Added  | \-           | \-                |
+| Range              | Key Features         | Based on | System Impact |
+|--------------------|----------------------|----------|---------------|
+| 1.0.0.x [obsolete] | Initial version      | -        | -             |
+| 1.0.1.x [SLC Main] | New connection added | -        | -             |
 
 ### Product Info
 
@@ -34,29 +34,29 @@ The connector uses the following APIs:
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-This connector uses three HTTP connections and requires the following input during element creation.
+This connector uses several HTTP connections and requires the following input during element creation.
 
 #### HTTP Connection 1, 2 & 3
 
 These are used to communicate with the Newtec Dialog Restful Standard API.
 
 - **IP address/host**: The IP of the Newtec Central NMS.
-- **IP port:** *80* (Default Connection 1) & *8086* (Default Connection 2 & 3)
+- **IP port**: *80* (Default Connection 1) & *8086* (Default Connection 2 & 3)
 - **Device address**: *BypassProxy*
 
-### HTTP Connection 4
+### HTTP Connection 4 (added in range 1.0.1.x)
 
-This is used to communicate with the underlying Dialog DMA Web Services API
+This connection is used to communicate with the underlying Dialog DMA Web Services API.
 
-- **IP address/host**: The hostname of the underlying Dialog DMA
-- **IP PORT:**  *443* (Default)
+- **IP address/host**: The hostname of the underlying Dialog DMA.
+- **IP PORT**: By default *443*.
 - **Device address**: *ByPassProxy*
 
 ### Initialization
@@ -65,7 +65,7 @@ On the **General** page, specify the **credentials** for user authentication of 
 
 On the **TSDB Polling** page, add the TSDBs that need to be polled to the **Database Configuration** table.
 
-On the **Polling Status** page, enable the Event Config Status parameter and setup polling interval and event cleanup timer to start retrieving events.
+On the **Polling Status** page, enable the Event Config Status parameter and set up the polling interval and event cleanup timer to start retrieving events.
 
 In addition, two toggle buttons need to be enabled to poll both the dialog REST and TSDB API.
 
