@@ -14,7 +14,15 @@ The connector can receive traps to update the channel and system events in real 
 
 ### Version Info
 
-Range **1.1.5.x** of the connector is based on the 1.1.4.7 version. It changes the **protocol type from "asci" to "unicode"**.
+| Range                | Key Features           | Based on     | System Impact                         |
+|----------------------|------------------------|--------------|---------------------------------------|
+| 1.0.0.x \[Obsolete\] | Initial version        | \-           | \-                                    |
+| 1.1.0.x \[Obsolete\] |                        | \-           | \-                                    |
+| 1.1.1.x \[Obsolete\] |                        | \-           | \-                                    |
+| 1.1.2.x \[Obsolete\] |                        | \-           | \-                                    |
+| 1.1.3.x \[Obsolete\] |                        | \-           | \-                                    |
+| 1.1.4.x \[Obsolete\] |                        | \1.1.3.25    | \-                                    |
+| 1.1.5.x \[SLC Main\] | Add option for unicode | \1.1.4.17    | \All elements need to be re-created   |
 
 ### Product Info
 
@@ -24,11 +32,23 @@ Range **1.1.5.x** of the connector is based on the 1.1.4.7 version. It changes t
 | 1.1.0.x 1.1.1.x                                        | 3.3.5, 4.1.1, 4.1.7, 4.2.3                      |
 | 1.1.2.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7        |
 | 1.1.3.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
-| 1.1.4.x [SLC Main]                                     | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
+| 1.1.4.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
 | 1.1.5.x                                                | 4.1.1, 4.1.7, 4.2.3, 4.2.8, 4.4.4, 4.5.7, 5.2.3 |
 
 Firmware versions 2.5.2 and higher support HTTP Live Streaming (HLS). A Visio file is available to display the mosaic stream in DataMiner.
 To display the HTTP Live Stream, VLC Media Player is required on the client computer.
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.1.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.1.3.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.4.4.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.1.5.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
