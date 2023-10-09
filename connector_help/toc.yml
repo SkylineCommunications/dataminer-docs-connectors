@@ -2623,6 +2623,8 @@
     topicUid: Connector_help_Dell_M1000e_Collector
   - name: Dell MXL 10-40 GBE Switch
     topicUid: Connector_help_Dell_MXL_10-40_GBE_Switch
+  - name: Dell PowerVault ME5024
+    topicUid: Connector_help_Dell_PowerVault_ME5024
   - name: Dell VNX Series
     topicUid: Connector_help_Dell_VNX_Series
 - name: Delta Electronics
@@ -8054,6 +8056,8 @@
     topicUid: Connector_help_Sky_UK_Playout_Manager
   - name: Sky UK Prometheus AlertManager
     topicUid: Connector_help_Sky_UK_Prometheus_AlertManager
+  - name: Sky UK Receive System Auto Monitoring Workflow
+    topicUid: Connector_help_Sky_UK_Receive_System_Auto_Monitoring_Workflow
   - name: Sky UK Roving Pub Checker Workflow
     topicUid: Connector_help_Sky_UK_Roving_Pub_Checker_Workflow
   - name: Sky UK Server Manager
