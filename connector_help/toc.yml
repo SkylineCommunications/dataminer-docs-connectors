@@ -5956,8 +5956,8 @@
     topicUid: Connector_help_Motorola_APEX1000
   - name: Motorola CAP-1000
     topicUid: Connector_help_Motorola_CAP-1000
-  - name: Motorola DSR-4410
-    topicUid: Connector_help_Motorola_DSR-4410
+  - name: Motorola DSR-4410MD
+    topicUid: Connector_help_Motorola_DSR-4410MD
   - name: Motorola DSR-4460
     topicUid: Connector_help_Motorola_DSR-4460
   - name: Motorola DSR-6000
