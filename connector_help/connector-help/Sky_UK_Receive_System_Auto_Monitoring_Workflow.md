@@ -4,13 +4,11 @@ uid: Connector_help_Sky_UK_Receive_System_Auto_Monitoring_Workflow
 
 # Sky UK Receive System Auto Monitoring Workflow
 
-Connector automating the process of uplink flow monitoring.
+This is a transport stream analyzer connector that monitors multiple full uplink chains. The monitoring workflow is versatile and the connector allows for extensive configuration such as including/excluding chains, enabling/disabling monitoring, choosing a tuning IRD, log configuration, and so on.
+
+The key objective of the connector is to collect relevant data, tune the IRD, and cross-check the service list with the program list on the corresponding Sentry device. The whole process is being monitored, and the connector raises alarms in case any part of the chain is invalid.
 
 ## About
-
-Auto Monitoring is a transport stream analyzer driver which monitors multiple full uplink chains. The monitoring workflow is versatile and the driver allows for extensive configuration such as: including/excluding chains, enabling/disabling monitoring, choosing a tuning IRD, log configuration, and so on.
-
-The key objective of the driver is to collect relevant data, tune the IRD and cross check the service list with the program list on the corresponding Sentry device. The whole process is being monitored, where the driver raises alarms in case any part of the chain is invalid.
 
 ### Version Info
 
@@ -40,17 +38,16 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-Make sure to visit the **Configuration** page before using the element. The *Tuning IRD* and *Station* parameters need to be entered for the correct monitoring flow.
+Before you start using the element, go to the **Configuration** page and configure the **Tuning IRD** and **Station** parameters for the correct monitoring flow.
 
 ## How to use
 
-Make sure to follow the steps from the **Initialization** section on this page first. 
-All the monitoring data can be found in the *Monitoring* table at the top of the **General** page. Individual chains can be included/excluded from the monitoring. The table also provides insight in the current status of the monitoring for each chain.
+After you have correctly initialized the connector as described above, you will find all the monitoring data in the **Monitoring** table at the top of the **General** page. You can include or exclude individual chains from the monitoring. The table also provides insight in the current status of the monitoring for each chain.
 
-Key data for monitoring can be found in the **Output Stream Overview** table. You can verify the data which will be used to tune the IRD here.
+Key data for monitoring can be found in the **Output Stream Overview** table. You can verify the data that will be used to tune the IRD here.
 
 The alarm statuses for each chain can be found in the **Chain Monitoring Results** table. From there, you can easily find the root cause of the alarm.
 
-**Errors** page contains a table where all the issues related to the uplink flow occured. The operators can follow the proposed actions and acknowledge the issues.
+The **Errors** page contains a table with all the issues that have occurred related to the uplink flow. You can follow the proposed actions and acknowledge the issues.
 
-For DataMiner related issues (e.g. stopped elements, invalid naming convention, etc.), **Log** page has all the entries. User can also disable these logs as needed.
+For DataMiner-related issues (e.g. stopped elements, invalid naming convention, etc.), you will find information on the **Log** page. You can disable these logs if needed.
