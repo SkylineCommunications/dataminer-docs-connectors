@@ -32,7 +32,7 @@ This connector is used to interact with the ServiceNow Application used by Kordi
 
 #### HTTP
 
-This connector is a HTTP type connector. Besides the **IP Address** and **Port** needed to create the element, a couple of other Parameters should be filled in the element to allow authentication with the ServiceNow Application. Please see below [Initialization](###Initialization) page.
+This connector is a HTTP type connector. Besides the **IP Address** and **Port** needed to create the element, a couple of other Parameters should be filled in the element to allow authentication with the ServiceNow Application. Please see below [Initialization](#initialization) page.
 
 ### Initialization
 
@@ -54,12 +54,13 @@ Correlation Rules should be created in order to create/update/delete tickets bas
 
 ## How to use
 
-Besides the [Initialization](###Initialization) procedure, no other procedures are needed in order to get the Element running.
+Besides the [Initialization](#initialization) procedure, no other procedures are needed in order to get the Element running.
 
 ### Page Overview
 
 #### General
-In the **General** page a Statistics group can be found. That contains data related to the amount of incidents processed during the day and from the previous days. The idea is to have the possibility of tracking how many incidents were created per day as well as understanding behavior on a per-day basis. This page also contains a Logger table that has the POST request data sent and the response received from the ServiceNow Application. This can be helpful to understand message exchange and easily check any communication issues. This is saved directly to Elastic DB and is autocleared every 7 days.
+
+In the **General** page a Statistics group can be found. That contains data related to the amount of incidents processed during the day and from the previous days. The idea is to have the possibility of tracking how many incidents were created per day as well as understanding behavior on a per-day basis. This page also contains a Logger table that has the POST request data sent and the response received from the ServiceNow Application. This can be helpful to understand message exchange and easily check any communication issues. This is saved directly to Elastic DB and is auto-cleared every 7 days.
 
 #### Tickets
 
