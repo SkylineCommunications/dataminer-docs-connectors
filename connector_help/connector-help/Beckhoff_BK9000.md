@@ -10,9 +10,7 @@ The Beckhoff BK9000 is a virtual connector that is used to provide information a
 
 The connector provides an overview of the different modules and allows the user to edit module types. Via a virtual connection, the Beckhoff BK9000 provides other elements with position information. This includes the module type and start and stop position.
 
-### connector range 2.0.0
-
-This connector help describes the 2.0.0 range of the connector. In this range, it is possible to change the number of modules dynamically by using a table.
+This page describes the **2.0.0 range** of the connector. In this range, it is possible to change the number of modules dynamically by using a table.
 
 ## Installation and configuration
 

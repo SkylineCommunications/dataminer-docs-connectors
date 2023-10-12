@@ -12,24 +12,25 @@ The connector uses an **HTTPS connection** and communicates with the SNP Manager
 
 ### Version Info
 
-| **Range**                | **Key Features**                                                                                                                                                                                                                                                                        | **Based on** | **System Impact**                                                                                                          |
+| Range                | Key Features                                                                                                                                                                                                                                                                        | Based on | System Impact                                                                                                          |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[OBSOLETE\]     | Initial version.                                                                                                                                                                                                                                                                        | \-           | \-                                                                                                                         |
-| 1.0.1.x \[OBSOLETE\]     | Changed description and some columns, changed description of the SDI Outputs table, and changed discrete value on Control Link Bonding parameter r/w.                                                                                                                                   | 1.0.0.15     | Possible impact on alarms, trending, and Visio files related to PIDs 506, 1905 and 2105.                                   |
-| 1.0.2.x \[OBSOLETE\]     | Moved Proxy rows/items from table IP Video TX to a new table named Proxy IP Video TX. New polling architecture implemented.                                                                                                                                                             | 1.0.1.2      | Possible impact on alarms, trending, and Visio files related to PIDs 506, 1905 and 2105.                                   |
-| 1.0.3.x \[OBSOLETE\]     | Removed non-initialized parameters. Separated Selecting Stream and Channel parameters of table IP Audio RX into table of their own.                                                                                                                                                     | 1.0.2.8      | Possible impact on alarms, trending, and Visio files.                                                                      |
-| 1.0.4.x \[OBSOLETE\]     | Packet Time (PID 2024) update on a discrete value.                                                                                                                                                                                                                                      | 1.0.3.4      | Possible impact on alarms, trending, and Visio files related to the Packet Time parameter.                                 |
-| 1.0.5.x \[DISCONTINUED\] | SMM Web Socket connection. **Note**: This branch causes a memory leak in SLScripting.                                                                                                                                                                                                   | 1.0.4.2      | Possible impact on alarms, trending, and Visio files related to the Packet Time parameter and the element's configuration. |
-| 1.0.6.x                  | Ranges and units of the Color Corrector table updated to the latest API.                                                                                                                                                                                                                | 1.0.4.2      | Possible impact on alarms, trending and Visio files related to the Packet Time parameter and the element's configuration.  |
-| 1.0.7.x \[OBSOLETE\]     | Web socket implementation without serial connection.                                                                                                                                                                                                                                    | 1.0.6.3      | Possible impact on alarms, trending, and Visual Overview.                                                                  |
-| 1.0.8.x                  | SDI Interfaces table for Video Input and Video Output. API V2 Implementation (ACO feature).                                                                                                                                                                                             | 1.0.7.2      | Possible impact on alarms, trending, and Visual Overview.                                                                  |
-| 1.1.2.x \[OBSOLETE\]     | Updated current parameter names and discrete values to match the latest firmware. Old firmware is no longer supported.                                                                                                                                                                  | 1.1.0.2      | Possible impact on alarms, trending, and Visual Overview.                                                                  |
-| 1.1.3.x \[OBSOLETE\]     | Updated Active Alarms table instance to show all unique alarms.                                                                                                                                                                                                                         | \-           | \-                                                                                                                         |
-| 1.1.4.x \[OBSOLETE\]     | Adjusted connections to be compliant with DataMiner 10.2.7. Adjusted input channel selection in Output Audio Channel to display proper processor. Fixed typo in InputChannelSelect AAP dictionary that affected missing dropdown list items. Added display key to tables 4700 and 5500. | 1.1.3.1      | Possible impact on alarms, trending.                                                                                       |
-| 1.1.5.x                  | The Processing Audio and Output Audio Channel pages now only show the discrete values that apply to the relevant row.                                                                                                                                                                   | 1.1.4.2      | Possible impact on alarms, trending.                                                                                       |
-| 1.1.6.x \[OBSOLETE\]     | Variable parameters updated to reflect the latest API                                                                                                                                                                                                                                   | 1.1.5.3      | Possible impact on alarms, trending, and Visual Overview.                                                                  |
-| 1.1.7.x \[OBSOLETE\]     | The Frame Sync table has been turned into the Processing Personalities table, with reorganized columns and more configurable values, and it is now in the Processing Video section. Tables representing four personalities have been added on subpages of the Processing Video section. | 1.1.6.4      | Possible impact on alarms, trending, and Visual Overview                                                                   |
-| 1.1.8.x \[SLC MAIN\]     | Added tables for the personalities JPEG-XS Decoder, JPEG-XS Encoder, Remap, Master Control Light, and Asynchronous Transport.                                                                                                                                                           | 1.1.7.3      | Possible impact on alarms, trending, and Visual Overview                                                                   |
+| 1.0.0.x [OBSOLETE]     | Initial version. | -           | -                                                                                                                          |
+| 1.0.1.x [OBSOLETE]     | Changed description and some columns, changed description of the SDI Outputs table, and changed discrete value on Control Link Bonding parameter r/w. | 1.0.0.15 | Possible impact on alarms, trending, and Visio files related to PIDs 506, 1905, and 2105. |
+| 1.0.2.x [OBSOLETE]     | Moved Proxy rows/items from table IP Video TX to a new table named Proxy IP Video TX. New polling architecture implemented. | 1.0.1.2 | Possible impact on alarms, trending, and Visio files related to PIDs 506, 1905, and 2105. |
+| 1.0.3.x [OBSOLETE]     | Removed non-initialized parameters. Separated Selecting Stream and Channel parameters of table IP Audio RX into table of their own. | 1.0.2.8 | Possible impact on alarms, trending, and Visio files. |
+| 1.0.4.x [OBSOLETE]     | Packet Time (PID 2024) update on a discrete value. | 1.0.3.4 | Possible impact on alarms, trending, and Visio files related to the Packet Time parameter. |
+| 1.0.5.x [DISCONTINUED] | SMM Web Socket connection. **Note**: This branch causes a memory leak in SLScripting. | 1.0.4.2 | Possible impact on alarms, trending, and Visio files related to the Packet Time parameter and the element's configuration. |
+| 1.0.6.x [OBSOLETE]     | Ranges and units of the Color Corrector table updated to the latest API. | 1.0.4.2 | Possible impact on alarms, trending and Visio files related to the Packet Time parameter and the element's configuration.  |
+| 1.0.7.x [OBSOLETE]     | Web socket implementation without serial connection. | 1.0.6.3 | Possible impact on alarms, trending, and Visual Overview. |
+| 1.0.8.x [OBSOLETE]     | SDI Interfaces table for Video Input and Video Output. API V2 Implementation (ACO feature). | 1.0.7.2 | Possible impact on alarms, trending, and Visual Overview. |
+| 1.1.2.x [OBSOLETE]     | Updated current parameter names and discrete values to match the latest firmware. Old firmware is no longer supported. | 1.1.0.2 | Possible impact on alarms, trending, and Visual Overview. |
+| 1.1.3.x [OBSOLETE]     | Updated Active Alarms table instance to show all unique alarms. | - | - |
+| 1.1.4.x [OBSOLETE]     | Adjusted connections to be compliant with DataMiner 10.2.7. Adjusted input channel selection in Output Audio Channel to display proper processor. Fixed typo in InputChannelSelect AAP dictionary that affected missing dropdown list items. Added display key to tables 4700 and 5500. | 1.1.3.1 | Possible impact on alarms, trending. |
+| 1.1.5.x [OBSOLETE]     | The Processing Audio and Output Audio Channel pages now only show the discrete values that apply to the relevant row. | 1.1.4.2 | Possible impact on alarms, trending. |
+| 1.1.6.x [OBSOLETE]     | Variable parameters updated to reflect the latest API. | 1.1.5.3 | Possible impact on alarms, trending, and Visual Overview. |
+| 1.1.7.x [OBSOLETE]     | The Frame Sync table has been turned into the Processing Personalities table, with reorganized columns and more configurable values, and it is now in the Processing Video section. Tables representing four personalities have been added on subpages of the Processing Video section. | 1.1.6.4 | Possible impact on alarms, trending, and Visual Overview |
+| 1.1.8.x [OBSOLETE]     | Added tables for the personalities JPEG-XS Decoder, JPEG-XS Encoder, Remap, Master Control Light, and Asynchronous Transport. | 1.1.7.3 | Possible impact on alarms, trending, and Visual Overview |
+| 1.1.9.x [SLC MAIN]     | Added support for Dolby E decoding: Program name added to processor personalities. Verified as compliant with all SLC quality gates. | 1.1.8.12 | Possible impact on alarms, trending, and Visual Overview |
 
 ### Product Info
 
@@ -51,27 +52,29 @@ The connector uses an **HTTPS connection** and communicates with the SNP Manager
 | 1.1.6.x   | 2.1.2.20               |
 | 1.1.7.x   | 2.1.2.20               |
 | 1.1.8.x   | 2.1.2.20               |
+| 1.1.9.x   | 2.2                    |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.6.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.7.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.8.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.3.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.4.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.5.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.6.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.7.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.8.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.4.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.5.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.6.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.7.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.8.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.3.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.4.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.5.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.6.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.7.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.8.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.9.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -83,11 +86,11 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination. Make sure to add "https://" before the IP/host. For example, for IP "172.10.2.42", specify "https://172.10.2.42".
+- **IP address/host**: The polling IP or URL of the destination. Make sure to add "https://" before the IP/host. For example, for IP "172.10.2.42", specify "`https://172.10.2.42`".
 - **IP port**: The IP port of the destination (default: *9089*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-#### Serial IP Connection - SNP Connection \[REMOVED in 1.0.7.X\]
+#### Serial IP Connection - SNP Connection [REMOVED in 1.0.7.x]
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -106,7 +109,7 @@ WEB SOCKET CONNECTION:
 
 - Web Socket Interface:
 
-- **IP address/host**: wss://\[IP_ADDRESS\].
+  - **IP address/host**: `wss://[IP_ADDRESS]`.
   - **IP port**: The IP port of the destination (fixed value: *443*).
 
 ### Initialization
@@ -177,7 +180,7 @@ Note that it is advised that you do **not modify** the **BNC Direction** directl
 
 This page contains the IP Video RX and TX tables. However, it is better to use the **tree control** for navigation, since not all entries are actively used (based on the mode (IP/SDI) and configured destinations, different entries will be used).
 
-Each program has one dedicated row, with a display key in the following format: *SDNO Stream - Slot 1: Port 1: Video 1*
+Each program has one dedicated row, with a display key in the following format: `SDNO Stream - Slot 1: Port 1: Video 1`
 
 The **Video TX IP DSCP** and **Video IP TTL** can be configured here.
 
@@ -193,7 +196,7 @@ The **Audio TX IP DSCP**, **Audio IP TTL** and **Audio IP Packet Time** can be c
 
 This page contains the IP Ancillary RX and TX tables. However, it is better to use the **tree control** for navigation, since not all entries are actively used (based on the mode (IP/SDI) and configured destinations, different entries will be used).
 
-Each program has four dedicated ancillary data rows, with display keys in the following format: *1: SDNO Stream - Slot 1: Port 1: Data 1*
+Each program has four dedicated ancillary data rows, with display keys in the following format: `1: SDNO Stream - Slot 1: Port 1: Data 1`
 
 The **Ancillary TX IP DSCP** and **Ancillary IP TTL** can be configured here.
 
