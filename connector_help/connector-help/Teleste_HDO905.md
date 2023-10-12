@@ -4,7 +4,7 @@ uid: Connector_help_Teleste_HDO905
 
 # Teleste HDO905
 
-The HDO905 is a transmitter. The **Teleste HDO905** connector can be used to display and configure information of the related device.
+The HDO905 is a transmitter. The **Teleste HDO905** connector can be used to display and configure information of the related device. This device has 2 configurable inputs.
 
 ## About
 
@@ -29,6 +29,12 @@ SERIAL CONNECTION:
 - **IP address/host**: The polling IP of the HDO905 device.
 - **IP port**: The IP port of the HDO905 device.
 
-### Usage
+### How to Use
+
+HDO905 connector is structured by 3 pages (General, monitoring and adjustment page).
+
+All general details information about the device, you can see on **general** page. Also, setting device name is also supported on general page.
+**Monitoring** page contains two tables for both analog and discreet alarm limits. User can configure those two tables.
+**Adjustment** page contains all important parameters. There, user can adjust parameters related to transmitting signal. 
 
 The connector uses serial commands to request and push information to and from the node. This communication can be seen in the Stream Viewer.

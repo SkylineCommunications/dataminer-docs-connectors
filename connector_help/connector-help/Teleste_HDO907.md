@@ -29,6 +29,12 @@ SERIAL CONNECTION:
 - **IP address/host**: The polling IP of the HDO907 device.
 - **IP port**: The IP port of the HDO907 device.
 
-### Usage
+### How to Use
+
+HDO907 connector is structured by 3 pages (General, monitoring and adjustment page).
+
+All general details information about the device, you can see on general page. Also, setting device name is also supported on general page.
+Monitoring page contains two tables for both analog and discreet alarm limits. User can configure those two tables.
+Adjustment page is page were all more important parameters are located. There you can 
 
 The connector uses serial commands to request and push information to and from the node. This communication can be seen in the Stream Viewer.
