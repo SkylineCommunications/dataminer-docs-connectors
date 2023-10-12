@@ -1,10 +1,10 @@
 ---
-uid: filename_using_underscores
+uid: Connector_help_Kordia_ServiceNow_Ticket_Manager
 ---
 
 # Kordia ServiceNow Ticket Manager
 
-This connector is used to interact with the ServiceNow Application used by Kordia. It works with an Automation Script and Correlation Rules that use DataMiner alarming capabilities to create, update and delete incidents in their system according to specific business rules provided by Kordia.
+This connector is used to interact with the ServiceNow Application used by Kordia. It works with an Automation script and Correlation rules that use DataMiner alarm capabilities to create, update, and delete incidents in their system according to specific business rules provided by Kordia.
 
 ## About
 
@@ -30,46 +30,51 @@ This connector is used to interact with the ServiceNow Application used by Kordi
 
 ### Connections
 
-#### HTTP
+#### HTTP Connection – Main
 
-This connector is a HTTP type connector. Besides the **IP Address** and **Port** needed to create the element, a couple of other Parameters should be filled in the element to allow authentication with the ServiceNow Application. Please see below [Initialization](#initialization) page.
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
 
 ### Initialization
 
-In the **Config** page of the element you need to fill in the **Client ID**, **Client Secret** and **Refresh Token**. These will be used to establish authentication with the ServiceNow application and allow ticket updates afterwards. On top of that the Correlation Rule folder must be filled in. All correlation rules that can trigger Ticket updates should be under the same folder.
+When you have created the element, go to the the **Config** page and fill in the **Client ID**, **Client Secret**, and **Refresh Token**. These will be used to establish authentication with the ServiceNow application and allow ticket updates afterwards.
 
-### Redundancy
-
-No redundancy.
+In addition, you will need to fill in the **Correlation rule folder**. All Correlation rules that can trigger ticket updates must be in the same folder.
 
 ### Automation Scripts
 
-Even though no Automation Scripts are mandatory, in order to facilitate the solution an Automation Script named **KOR-Send-ServiceNow-Request** is used to send the Alarm data from the Correlation Rule to the element. Such Automation Script also contains an input parameter that will be used as Impact Description in the Ticket creation.
+While this is not mandatory, in order to facilitate the solution, an Automation Script named **KOR-Send-ServiceNow-Request** can be used to send the alarm data from the Correlation rule to the element.
+
+This Automation script contains an input parameter that will be used for the impact description in the ticket creation.
 
 ### Correlation rules
 
-Correlation Rules should be created in order to create/update/delete tickets based on DataMiner alarming. Taking into account Kordia's setup of Customers and Services being represented as DataMiner services, and the fact that each Customer may contain one or more Services, the Correlation rule should be created to monitor a DataMiner service representative of a Kordia Customer. An example can be found below.
+Correlation rules should be created in order to create, update, and delete tickets based on DataMiner alarms.
+
+Taking into account Kordia's setup of customers and services represented as DataMiner services, and keeping in mind the fact that each customer may have one or more services, the Correlation rule should be created to monitor a DataMiner service representative of a Kordia customer. An example can be found below.
 
 [ADD IMAGE HERE]
 
 ## How to use
 
-Besides the [Initialization](#initialization) procedure, no other procedures are needed in order to get the Element running.
+### General Page
 
-### Page Overview
+On this page, the **Statistics** section contains data related to the number of incidents processed during the current day and from the previous days. This makes it possible to track how many incidents were created per day as well as to understand behavior on a per-day basis.
 
-#### General
+This page also contains a logger table that has the POST request data sent and the response received from the ServiceNow application. This can be helpful for insight in the message exchange, so you can easily check any communication issues. This data is saved directly to the indexing database and is cleared automatically every 7 days.
 
-In the **General** page a Statistics group can be found. That contains data related to the amount of incidents processed during the day and from the previous days. The idea is to have the possibility of tracking how many incidents were created per day as well as understanding behavior on a per-day basis. This page also contains a Logger table that has the POST request data sent and the response received from the ServiceNow Application. This can be helpful to understand message exchange and easily check any communication issues. This is saved directly to Elastic DB and is auto-cleared every 7 days.
+### Tickets Page
 
-#### Tickets
-
-This page contains toggle buttons for Auto-Clear functionality of the Tickets table and also for the flapping functionality.
+On this page, the Tickets table displays information about the tickets that have been created by DataMiner based on the Correlation rules used with the connector.
 
 Flapping Window is used for cases where DataMiner alarms are flapping but incidents must not be closed if such flapping window has not passed. This reduces the number of false positives/negatives in the operation. This also helps us to calculate the correct Duration of an incident as it can be seen in the Tickets table.
 
-The Tickets table contains information of Tickets that have been created by DataMiner based on the Correlation Rules created.
+The page also contains toggle buttons for auto-clear functionality of the Tickets table and also for the flapping functionality.
 
-#### Config
+### Config Page
 
-Config page contains all the necessary parameters to establish Authentication with the ServiceNow Platform and other general configurations.
+This page contains all the necessary parameters to establish authentication with the ServiceNow Platform, as well as other general settings.
