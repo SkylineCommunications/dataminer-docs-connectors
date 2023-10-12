@@ -11,10 +11,10 @@ support, the DSR-4410MD can output a full transport multiplex with both MPEG-2 a
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \            | Initial version  | \-           | \-                |
-| 1.1.0.x \            | Firmware update  | \1.0.0.1     | \-                |
+| Range   | Key Features    | Based on | System Impact |
+|---------|-----------------|----------|---------------|
+| 1.0.0.x | Initial version | -        | -             |
+| 1.1.0.x | Firmware update | 1.0.0.1  | -             |
 
 ### Product Info
 
@@ -27,7 +27,7 @@ support, the DSR-4410MD can output a full transport multiplex with both MPEG-2 a
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -39,11 +39,11 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION - Main Connection:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
+- **IP address/host**: The polling IP or URL of the destination.
 - **Device address**: [Indicate if required or not. If it is, specify default value and range.]
 
 SNMP Settings:
 
-- **Port number**: [The port of the connected device, by default 161.]
-- **Get community string**: [The community string used when reading values from the device (default: public).]
-- **Set community string**: [The community string used when setting values on the device (default: private).]
+- **Port number**: The port of the connected device, by default 161.
+- **Get community string**: The community string used when reading values from the device (default: public).
+- **Set community string**: The community string used when setting values on the device (default: private).
