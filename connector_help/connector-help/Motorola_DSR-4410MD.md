@@ -40,10 +40,22 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION - Main Connection:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **Device address**: [Indicate if required or not. If it is, specify default value and range.]
+- **Device address**: Not required.
 
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default 161.
 - **Get community string**: The community string used when reading values from the device (default: public).
 - **Set community string**: The community string used when setting values on the device (default: private).
+
+## How to use
+
+SNMP protocol is used to get the data from the device. General information about the device can be found on the
+**General** page. In the event that the device needs to be restarted, the **Reset IRD** button can be used on the
+**General** page.
+
+The protocol also retrieves other relevant information from the device and displays it on the respective pages such as:
+**Audio & Video**, **Input Ports & Tuning**, **Channel & Signal**, **Diagnostics**, **Retune Monitoring** and
+**IP Connections**.
+
+Each of these pages contain configuration parameters to allow the user to change specific settings of the device.
