@@ -9642,6 +9642,11 @@
   items:
   - name: VeEX AT1600
     topicUid: Connector_help_VeEX_AT1600
+- name: Velocix
+  topicUid: Connector_help_Velocix_Origin_Platform
+  items:
+  - name: Velocix Origin Platform
+    topicUid: Connector_help_Velocix_Origin_Platform
 - name: Verimatrix
   topicUid: Connector_help_Verimatrix_CSM
   items:
