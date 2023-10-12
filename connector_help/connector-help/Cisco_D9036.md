@@ -23,12 +23,12 @@ Please note the following:
 
 ### Prerequisites
 
-The connector requires that Visual C++ 2008 (or 2010) Redistributional is installed. To verify this, go to: Control Panel \> Programs and Features.
+The connector requires that Visual C++ 2008 (or 2010) Redistributional is installed. To verify this, go to: Control Panel > Programs and Features.
 If this program has not been installed yet, you can download and install it from the following website: <http://www.microsoft.com/en-us/download/details.aspx?id=29>.
 
 ### Installing the protocol
 
-Fom version 1.0.0.10 onwards, you can install the connector along with the necessary DLLs by using a "**.dmprotocol**" package, which can be downloaded from the Update Center.
+From version 1.0.0.10 onwards, you can install the connector along with the necessary DLLs by using a "**.dmprotocol**" package, which can be downloaded from the Update Center.
 
 For older versions, however, the installation requires two steps:
 
@@ -62,8 +62,8 @@ To test the connection:
 
 1. Check on the **Overview** page if there are icons in the tree view.
 
-   - If yes -\> Test succeeded.
-   - If no -\> Test failed.
+   - If yes -> Test succeeded.
+   - If no -> Test failed.
 
 If the test failed, continue with the next step.
 
@@ -85,7 +85,7 @@ To verify the IIOP credentials:
 1. Go to the webpage of the DCM device and log on as Administrator.
 1. Open the page Security and select the tab OS Accounts. A list should appear with available OS accounts.
 1. Make a new user account or edit an existing one. It is advisable to use the username *guest* and password *guest* and to make sure the option IIOP is enabled.
-1. Go to the element card and click the **IIOP Login ...** button on the **Communication** page.
+1. Go to the element card and click the **IIOP Login** button on the **Communication** page.
 1. If you have an OS account with the username and password *guest*, you can set the **IIOP Use Credentials** to *No
 
    Otherwise, set this parameter to *Yes* and fill in the correct username and password.
@@ -108,7 +108,7 @@ In the folder "*C:\Skyline DataMiner\Files*":
 - omnithread34_vc10_rt.dll
 - D9036_1.1.0.X.dll
 
-  (Where X can be found in the [DataMiner Catalog](https://catalog.dataminer.services/)
+  (Where X can be found in the [DataMiner Catalog](https://catalog.dataminer.services/))
 
 If a file is missing, run the upgrade package again and check the DLLs. If the problem persists, contact Skyline in order to obtain the required DLLs.
 
@@ -132,7 +132,7 @@ The log file can be found in "*C:\Skyline DataMiner\Logging\\ElementName\].txt*"
 
 Once an element has been created, it is possible to fine-tune the behavior of the connector. Below, you can find a list of settings that have an impact on your system. Each setting is explained in more detail further in the document. It is important to have at least an idea of what each feature does and what the potential impact is.
 
-*Poll Manager*
+#### Poll Manager
 
 With the poll manager, you can enable or disable polling commands, as well as change the poll interval (within certain limits).
 By default, most commands are disabled, so you will almost certainly need to enable some commands.
@@ -169,7 +169,7 @@ The main structure is:
 1. Services
 1. Programs (/PIDs/Components)
 
-Corner Cases:
+Corner cases:
 
 The "Chassis" is represented as the "Main Board" and does not have any children.
 
@@ -224,7 +224,7 @@ Backups are usually stored on the local DataMiner agent. The default folder is t
 Important note:
 While you are taking a backup, all other polling is set on hold. Taking a backup should take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an Automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to only test this after the DCM is fully (re-)configured.
 
-**Backup Save Path**
+#### Backup Save Path
 
 Backups are saved in the folder/file defined by combining the **Backup/Restore Directory** and the **BS Backup Save Name**. This means you can leave the Backup/Restore Directory empty and fill in the complete path in the BS Backup Save Name parameter.
 
@@ -234,11 +234,11 @@ Alternatively, you can also:
 - set the BS Backup Save Name to *Backups\Full Backup.tgz*
 - set the BS Restore Path to *Backups/Approved/Full Backup.tgz*
 
-**Restore Save Path**
+#### Restore Save Path
 
 When a backup is restored, the full path of the file to restore is a combination of the **Backup/Restore Directory** and the **BS Restore Save Name**. This makes it possible to select a file without having to alter the filename used to take a backup.
 
-**Taking or restoring a backup**
+#### Taking or restoring a backup
 
 To take a backup:
 
@@ -257,7 +257,7 @@ Note:
 - You should always set **BS Backup Scope** and **BS Restore Scope** to *ALL*.
 - The maximum backup size is limited to 20MB, and the maximum duration before the backup should be received is 5 minutes. This is hard-coded in the connector. (The typical size of a backup is approx. 3MB.)
 
-### Manager \[From version 1.0.0.12 onwards\]
+### Manager [From version 1.0.0.12 onwards]
 
 This page contains a very important table: the **Poll Manager**. Via this table, polling for certain commands can be enabled or disabled and the poll interval can be set (within predefined limits). Most of the commands are directly linked with a table.
 
@@ -292,7 +292,7 @@ There are also some buttons to quickly change some settings:
 - **Disable All**: Disables all commands, except those that cannot be disabled.
 - **Enable All**: Enables all commands.
 
-### Driver Settings \[Removed in version 1.0.0.12\]
+### Driver Settings [Removed in version 1.0.0.12]
 
 This page contains parameters that are not (directly) related to the device.
 
@@ -322,23 +322,24 @@ For some tasks, viewing the data in table format is more convenient than using t
 
 The following tables are related to the **Service** tree on the web interface:
 
-- **Hardware:** *Boards ...* & *Ports ...*
-- **Transport Streams:** Input ... & Output ...
-- **Services:** *Input ...* & *Output ...*
-- **PID Components:** *Output ....*
-- **FEC:** *Encoder ...* & *Decoder ...*
-- **Backup:** *Service ...* & *Params ...*
+- **Hardware:** *Boards* & *Ports*
+- **Transport Streams:** Input & Output
+- **Services:** *Input* & *Output*
+- **PID Components:** *Output.*
+- **FEC:** *Encoder* & *Decoder*
+- **Backup:** *Service* & *Params*
 
 The following tables are related to the **Configuration** tab in the web interface:
 
-- **GBE Ports:** *Statistics ...* & *Settings ...*
-- **IP Settings:** *IP Params ...* & *Destinations ...*
+- **GBE Ports:** *Statistics* & *Settings*
+- **IP Settings:** *IP Params* & *Destinations*
 
 The following tables are related to the **VSE** tab in the web interface:
 
-- **VSE:** *Boards and Ports ...*, *Services* & *TS ...,* *Svc Components ...*
+- **VSE:** *Boards and Ports*, *Services* & *TS,* *Svc Components*
 
-- *App Objects ...*
+- *App Objects*
+
   This page contains a list of all application objects and a second table listing a mapping of the keys of the tables in the parameter and the XPath required to select the source of those parameters in an xml file. These tables should be considered background information, although they could be very important for advanced configuration in Automation scripts.
 
 - *All parameter schema tables in the second column:*
@@ -360,19 +361,19 @@ Examples could be:
 There are several reasons why these parameters are tucked away behind page buttons, the most notable being:
 
 - they could confuse customers who did not request the feature, as their purpose may be unclear.
-- they could cause a noticeable load on the system (CPU, Network, Memory, ...).
-- using the parameters could have side effects (Changes in naming keys, ...).
+- they could cause a noticeable load on the system (CPU, Network, Memory, etc..).
+- using the parameters could have side effects (Changes in naming keys, etc.).
 
 This is why these features are by default disabled. If a customer requested a particular feature, they must enable it in their system. However, customers are strongly advised not to enable features made for other customers.
 
 Notes:
 
 - Because these features are usually tightly integrated with other components (Visio, alarm filters, Automation scripts) changes to these features can only be requested by the customer who requested them. Other customers should not use them or rely on them. The requesting customer may at any point request additional changes that may not be backwards compatible, and no effort will be done to keep changes backwards compatible or to consider other customers using the feature even though they did not request it.
-- These features are not always fully documented in the connector help file. Customers who specifically requested a feature are expected to know what it does.
+- These features are not always fully documented in the connector documentation. Customers who specifically requested a feature are expected to know what it does.
 
 #### TV2 Norway
 
-**Feature: Alarm Summary** \[added in version 1.0.0.9\]: Extracts alarms from the active alarms table to get a summary of the worst active severity on Video Input Signal status and Embedded audio status. For this feature, it is assumed that there will be no more than 1 SDI board and that it has 8 inputs.
+**Feature: Alarm Summary** [added in version 1.0.0.9]: Extracts alarms from the active alarms table to get a summary of the worst active severity on Video Input Signal status and Embedded audio status. For this feature, it is assumed that there will be no more than 1 SDI board and that it has 8 inputs.
 
 ### Web Interface
 

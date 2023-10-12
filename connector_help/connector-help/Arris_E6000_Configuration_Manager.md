@@ -58,7 +58,7 @@ Each row matches a CMTS, and on each row 3 buttons are available that trigger an
 - **Refresh**: Refreshes the config files.
 - **Refresh**: Refreshes the firmware files.
 
-These operations are explained in detail in the Arris E6000 connector help, in the sections "Backup & Restore Config Page" and "Image Upgrade Page".
+These operations are explained in detail in the Arris E6000 connector documentation, in the sections "Backup & Restore Config Page" and "Image Upgrade Page".
 
 The following additional buttons also allow actions on this table:
 
@@ -92,7 +92,7 @@ For bulk operations on the elements of this table, several buttons are available
 - **Remove All**: Clears the table of all elements.
 - **Remove All From Queue**: Removes all the elements waiting to have the current operation executed. Note: Doing this only removes the elements from the queue of the bulk execution. Once the execution has started for an element, it cannot be stopped.
 
-These operations are explained in detail in the Arris E6000 connector help, in the sections "Backup & Restore Config Page" and "Upload & Upgrade Page".
+These operations are explained in detail in the Arris E6000 connector documentation, in the sections "Backup & Restore Config Page" and "Upload & Upgrade Page".
 
 **Current Operation Running** displays the operation that is running at the present moment. This can be Upload Firmware, Update Firmware, Commit, etc. or **None** if no operation is running at the moment.
 

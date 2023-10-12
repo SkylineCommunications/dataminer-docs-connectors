@@ -68,7 +68,7 @@ Overview of all swap actions, the number of history rows can be configured in **
 
 ### Configuration page
 
-This page contains all configurable data. More info about configuring the **Sites**, **Carries** and **Measurements** can be found below 'Installation and Configuration' of this connector help.
+This page contains all configurable data. For more info about configuring the **Sites**, **Carries**, and **Measurements**, see [Installation and Configuration](#installation-and-configuration).
 
 The **Enable Subscription** button defines if subscription should be enabled or not.
 
@@ -80,9 +80,9 @@ The **Enable Subscription** button defines if subscription should be enabled or 
 
 - Activating the **Maintenance (Config)** mode will prevent the automatic swapping of the uplink sites.
 
-- If the **Back to Nominal (Config)** is set to Window or Duration, the carrier will try to return towards it's nominal site. The nominal site is configured in the **Nominal Site (Config).**
+- If the **Back to Nominal (Config)** is set to Window or Duration, the carrier will try to return towards its nominal site. The nominal site is configured in the **Nominal Site (Config).**
 
-- Window: **Start Hour (Config)** and **Duration (Config)** defines the window size for returning to nominal site.
+  - Window: **Start Hour (Config)** and **Duration (Config)** defines the window size for returning to nominal site.
   - Duration: **Duration (Config)** defines the time to wait after the last swap was executed before returning to nominal site.
 
 Behind the **Elements** page button you can find all the supported elements from the DMS. This list is refreshed every hour, if necessary you can update the list manually by clicking the **Refresh** button.
@@ -91,4 +91,4 @@ Behind the **Elements** page button you can find all the supported elements from
 
 Custom Visio file is available.
 
-If no data is retrieved at startup, you can check the **Element Overview** table (configuration \> Elements). If this table doesn't contain all needed elements, you can use the **Refresh** button. This will retrieve all elements and subscribe them if necessary.
+If no data is retrieved at startup, you can check the **Element Overview** table (configuration > Elements). If this table does not contain all needed elements, you can use the **Refresh** button. This will retrieve all elements and subscribe them if necessary.
