@@ -28,7 +28,7 @@ The Axon ACP ERS10 supports multiple firmware versions for multiple card types.
 
 An overview of the supported card types can be found in the "Exported connectors" section.
 
-The implemented firmware versions for each supported card type are described in the connector help's "Supported firmware versions" section of the related card.
+The implemented firmware versions for each supported card type are described in the documentation for these cards.
 
 ### Exported Connectors
 
@@ -68,7 +68,7 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-- **Baudrate:** Baudrate specified in the manual of the device, e.g. *9600*.
+  - **Baudrate:** Baudrate specified in the manual of the device, e.g. *9600*.
   - **Databits:** Databits specified in the manual of the device, e.g. *7*.
   - **Stopbits:** Stopbits specified in the manual of the device, e.g. *1*.
   - **Parity:** Parity specified in the manual of the device, e.g. *No*.

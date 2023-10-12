@@ -129,7 +129,7 @@ You can **manually** schedule a test by adding it via the **Add Test page**:
 
    The input test parameters must have the following format: *param1:value1,param2:value2, ... ,paramN:valueN*
 
-Tests can also be **automatically** scheduled by an element with the **WitBe Robot Manager connector**. Refer to the connector help page of the WitBe Robot Manager for more information.
+Tests can also be **automatically** scheduled by an element with the **WitBe Robot Manager connector**. For more information, see [WitBe Robot Manager](xref:Connector_help_Witbe_Robot_Manager).
 
 ### Queued Tests table
 

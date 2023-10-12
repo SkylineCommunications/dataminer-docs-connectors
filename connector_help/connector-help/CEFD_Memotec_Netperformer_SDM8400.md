@@ -8,25 +8,27 @@ The Memotec Netperformer SDM8400 version is an SNMP connector intended to commun
 
 ## About
 
-A SNMP connection is used in order to successfully retrieve and configure the device's information.
+An SNMP connection is used in order to successfully retrieve and configure the device's information.
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-**SNMP Connection:**
+#### SNMP Connection - Main
 
-- **IP Address/host:** \[*The polling IP of the device.*\]
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-**SNMP Settings:**
+SNMP CONNECTION:
 
-- **Port Number:** \[*The port of the connection device (default: 161).*\]
-- **Get community string:** \[*The community string used when reading values from the device (default value is not overridden in the connector: public).*\]
-- **Set community string:** \[*The community string used when setting values on the device (*default value is not overridden in the connector: public*).*\]
+- **IP address/host**: The polling IP of the device.
 
-## Usage
+SNMP Settings:
 
-In this section of the connector help, some general info is available about the usage of the Memotec Netperformer connector.
+- **IP port**: The IP port of the device.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *public*).
+
+## How to Use
 
 ### Main Menu
 
@@ -36,16 +38,16 @@ Here is some general info about the unit.
 
 All the global parameters available for configuration are shown here. Also, the following pages are provided with extra settings:
 
-- **Extra...**
-- **Rackmount Chassis...**
+- **Extra**
+- **Rackmount Chassis**
 
 ### Configuration - Advanced
 
-All parameters which are redundancy related are available on the following pages:
+All redundancy-related parameters are available on the following subpages:
 
-- **Redundancy Criteria...**
-- **Redundancy Remote...**
-- **Redundancy Switch...**
+- **Redundancy Criteria**
+- **Redundancy Remote**
+- **Redundancy Switch**
 
 ### Configuration - Others
 
@@ -55,17 +57,17 @@ This page provides an overview of some general configurations of the Netperforme
 
 This page provides access to all the different configuration profiles available on the Netperformer unit for **IP Configuration**:
 
-- **BOOTP...**
-- **DNS...**
-- **Global IP...**
-- **NAT...**
-- **OSPF...**
-- **RADIUS...**
-- **SNMP...**
-- **Source-Static...**
-- **Static...**
-- **TimeP...**
-- **Interfaces...**
+- **BOOTP**
+- **DNS**
+- **Global IP**
+- **NAT**
+- **OSPF**
+- **RADIUS**
+- **SNMP**
+- **Source-Static**
+- **Static**
+- **TimeP**
+- **Interfaces**
 
 ### Configuration - Slots Link
 
@@ -101,11 +103,11 @@ The **Errors** page lets you have access to various types of errors.
 
 This page provides an overview of all various types of states:
 
-- **States LDC...**
-- **States Redundancy...**
-- **States Port Eth...**
-- **States Port CSL...**
-- **States Port 1-304...**
+- **States LDC**
+- **States Redundancy**
+- **States Port Eth**
+- **States Port CSL**
+- **States Port 1-304**
 
 ### Routing Table
 
@@ -113,4 +115,4 @@ The Netperformer Routing provides access to various Routing Table selections.
 
 ### Web Interface
 
-Use this page to have access to the **Web Interface** provided by the device's web server. Only in a LAN environment it is possible to have access to this page.
+Use this page to have access to the **Web Interface** provided by the device's web server. The web interface is only accessible when the client machine has network access to the product.
