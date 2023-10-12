@@ -6,15 +6,15 @@ uid: Connector_help_Teleste_HDO907
 
 The HDO907 is a transmitter. The **Teleste HDO907** connector can be used to display and configure information of the related device.
 
-## About
-
 A **serial** connection is used in order to successfully retrieve and configure the information of the device. There are also different possibilities available for **alarm monitoring** and **trending**.
+
+## About
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main] | Initial version | No                  | Yes                     |
+| Range              | Description     | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version | No              | Yes                 |
 
 ## Configuration
 
