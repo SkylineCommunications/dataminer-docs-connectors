@@ -12,7 +12,7 @@ Velocix Origin is a cloud-native software-defined storage platform for video str
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ Velocix Origin is a cloud-native software-defined storage platform for video str
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -44,7 +44,7 @@ HTTP CONNECTION:
 
 This connector uses credentials to be able to establish a session to the device.
 
-Credentials need to be provided on the **General** \> **Credentials** page.
+Credentials need to be provided on the **General** > **Credentials** page.
 
 ### Web Interface
 
@@ -56,7 +56,7 @@ This connector uses a "Poll Manager", which can be found on the Poll Manager pag
 
 The Poll Manager allows you to configure the object or partition polling speeds:
 
-- **Object Name** indicates the partition to be polled
+- **Object Name** indicates the partition to be polled.
 - **Poll State** indicates if the partition polling is enabled or disabled.
 - **Poll Frequency** indicates the frequency at which the partition will be polled.
 - **Last Polled** indicates the last time an attempt was made to poll this partition.
