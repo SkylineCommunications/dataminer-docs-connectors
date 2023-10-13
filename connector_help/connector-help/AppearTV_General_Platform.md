@@ -4,7 +4,7 @@ uid: Connector_help_AppearTV_General_Platform
 
 # AppearTV General Platform
 
-The **AppearTV General Platform** connector is used to monitor and control an AppearTV chassis that can contain several modules of different types.
+The **AppearTV General Platform** connector is used to monitor and control an AppearTV XC platform chassis, like the XC5000 chassis, which can contain several modules of different types.
 
 ## About
 
