@@ -47,36 +47,49 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-### Front Panel
+### General
 
-This page contains two page buttons:
+This page displays the Device Info as well ass Alarm status parameters.
 
-- The **Product Info** page button displays the firmware revision and the serial number of the device.
-- The **Security Panel** page button displays a block of access/administration parameters.
+### General Settings
 
-The page also contains a number of parameters, among others the **Tuner Settings**, which provide control over tuner and audio processing and the two RF antenna input settings.
+This page displays the following general device parameters: **Date**, **Time**, **Time Zone**, **Contrast**, **LED Brightness**, **Screen Saver**, **Panel Time** and **Home Screen**.
 
-### Output Settings
+### Channel Status
 
-This page displays two blocks of parameters: **GPO settings** and **Audio/MPX Output.** The general purpose output settings are applied through this page. In the Audio/MPX output section you can configure the Audio and MPX outputs. Function, type and pulse time for each of the GPOs can be set individually.
+This page displays the Channel Status table which cointains the following parameters: **RF Status**, **MPX Status**, **MPX Power Status**, **Pilot Status**, **RDS Status**, **Left Status**, **Right Status**, **L+R Status**, **RDS Group A Status** and **RDS Group B Status**.
 
-### Communication Settings
+### Channel Monitoring
 
-This page contains 12 page buttons with configuration options, namely **GSM Modem**, **UECP UDP**, **UECP TCP**, **Syslog**, **Streamer**, **Email**, **SNTP**, **FTP**, **HTTP**, **Application**, **SNMP** and **Ethernet**. It also displays a block with a parameter corresponding to each of the page buttons, with the enable/disable option for each of them.
+This page displays tables which contain the following parameters: **Frequency**, **RF** (level, average and peak maximum), **Multipath** (level, average and peak maximum), **MPX** (level, average and peak maximum), **MPX Power** (level, average and peak maximum), **Pilot** (level, average and peak maximum), **RDS** (level, average and peak maximum), **Left/Right** (level, average and peak maximum), **L+R** (level, average and peak maximum), **L-R, Temperature** (level, average and peak maximum), **Fan** (level, average and peak maximum), **RDS Group**, **RDS Lock**, **RDS PI**, **RDS PS**, **RDS RT**, **RDS TA**, **RDS TP**, **RDS Program**, **RDS PTY**, **RDS BER** and **Audio Stereo**.
+
+### Channel RDS AF Monitoring
+
+This page displays two tables which monitor RDS AF Frequency.
+
+### Tuner Settings
+
+The page provides control over tuner and audio processing and the two RF antenna input settings.
 
 ### Alarms Settings
 
-This page displays several **Alarms Triggers** for the following parameters: **RF**, **MPX**, **MPX Power**, **Left/Right Audio**, **RDS Group**, **Pilot**, **RDS Levels**, **Temperature** and **Fan**. In case a parameter exceeds the limits, the device will initiate the sending of an alarm notification via the selected communication path, which can be via **Email**, **SMS**, **SNMP Trap** or **GPO**.
+This page contains 6 page buttons with alarming options, namely **Left/Right Audio Settings**, **MPX Settings**, **RF Settings**, **Fand and Temp Settings**, **RDS Settings** and **Pilot Settings**.
 
-### Status Page
+Each page displays several **Alarms Triggers** for the following parameters: **Left/Right Audio**, **RF**, **MPX**, **MPX Power**, **RDS Group**, **Pilot**, **RDS Levels**, **Temperature** and **Fan**. In case a parameter exceeds the limits, the device will initiate the sending of an alarm notification via the selected communication path, which can be via **Email**, **SMS**, **SNMP Trap** or **GPO**.
 
-This page shows the **alarm status** of each parameter of the preset frequencies. A **Channel Status Table** is displayed, in which each entry matches with a channel that is being monitored.
+### Channel Settings
 
-### Logger Interface
+This page shows the **Alarms Triggers** for each channel in the **Channel Tables**.
 
-On this page, you can select and monitor up to 50 radio frequencies by applying the necessary settings. When adjustments are made, the device will monitor all of the selected frequencies at regular intervals. Every channel consists of group settings, which are used when monitoring and alerting. Measurement windows can be set for each of the alarms, including trigger and alarm release times.
+### Communication Settings
 
-### Monitoring
+This page contains 11 page buttons with configuration options, namely **HTTP**, **Application**, **SNMP Agent**, **Network**, **Syslog**, **Streamer**, **Email**, **FTP**, **GSM Modem**, **UECP UDP Server** and **UECP TCP Server**. It also displays a block with a parameter corresponding to each of the page buttons, with the enable/disable option for each of them.
 
-This page displays a table that contains the current channel that is being monitored. The following parameters are evaluated: **Frequency**, **RF** (level, average and peak maximum), **Multipath** (level, average and peak maximum), **MPX** (level, average and peak maximum), **MPX Power** (level, average and peak maximum), **Pilot** (level, average and peak maximum), **RDS** (level, average and peak maximum), **Left/Right** (level, average and peak maximum), **LPR** (level, average and peak maximum), **LMR, Temperature** (level, average and peak maximum), **Fan** (level, average and peak maximum), **RDS Group**, **RDS Lock**, **RDS PI**, **RDS PS**, **RDS RT**, **RDS TA**, **RDS Music speech**, **RDS TP**, **RDS PTY**, **RDS BER** and **Audio Stereo**.
+### Output Settings
+
+This page displays **GPO settings**. Each GPO has Function, type and pulse time parameters which can be set individually for each of the GPOs.
+
+### Security Panel
+
+This page displays a block of access/administration parameters.
 
