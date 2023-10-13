@@ -12,10 +12,11 @@ This connector allows you to monitor the **users, groups, and extenders**.
 
 ### Version Info
 
-| **Range**            | **Key Features**                   | **Based on** | **System Impact** |
-|----------------------|------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                    | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Improved Extender Info API polling | 1.0.0.4      | \-                |
+| **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
+|----------------------|--------------------------------------------------|--------------|-------------------|
+| 1.0.0.x \[Obsolete\] | Initial version                                  | \-           | \-                |
+| 1.0.1.x              | Improved Extender Info API polling               | 1.0.0.4      | \-                |
+| 1.0.2.x \[SLC Main\] | Several parameters changed from Double to String | 1.0.1.7      | \-                |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ This connector allows you to monitor the **users, groups, and extenders**.
 |-----------|------------------------|
 | 1.0.0.x   | 1.0.1                  |
 | 1.0.1.x   | 1.0.1                  |
+| 1.0.2.x   | 1.0.1                  |
 
 ### System Info
 
@@ -30,6 +32,7 @@ This connector allows you to monitor the **users, groups, and extenders**.
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
