@@ -4,7 +4,7 @@ uid: Connector_help_AppearTV_X20_Platform
 
 # AppearTV X20 Platform
 
-The AppearTV X20 Platform connector can be used to configure and display information from an AppearTV X Platform Chassis. This includes both X20 as well as X10 chassis versions.
+The AppearTV X20 Platform connector can be used to configure and display information from an AppearTV X Platform Chassis. This includes both X20 & X10 chassis versions.
 It allows manual creation of DVEs for **IP Switch**, **Dual IP**, **SDI IO, Encoder, Decoder, Transcoder, DVB**, and **Descrambler** cards connected to the slots of the device (see "Exported Connectors" table below).
 
 The connector uses an **HTTP** connection. This connection uses the MMI, IpGateway, XGER, ASI, and SDI APIs to retrieve information and to configure the device. The information transfer is performed using JSON.
