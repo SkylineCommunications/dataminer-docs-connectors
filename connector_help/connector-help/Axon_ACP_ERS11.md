@@ -25,7 +25,7 @@ This connector supports multiple firmware versions for multiple card types.
 
 An overview of the supported card types can be found in the "Exported connectors" section below.
 
-The implemented firmware versions for each supported card type are described in the "Supported firmware versions" sections of the connector help pages of these cards.
+The implemented firmware versions for each supported card type are described in the documentation for these cards.
 
 ### Exported connectors
 
@@ -66,16 +66,16 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-- **Baudrate:** Baudrate specified in the manual of the device, e.g. *9600*.
-  - **Databits:** Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits:** Stopbits specified in the manual of the device, e.g. *1*.
-  - **Parity:** Parity specified in the manual of the device, e.g. *No*.
-  - **FlowControl:** FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
+  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
+  - **Parity**: Parity specified in the manual of the device, e.g. *No*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
 
 - Interface connection:
 
-  - **IP address/host:** The polling IP of the device.
-  - **IP port:**\[The IP port of the device. Default value: *2071*.
+  - **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device. Default value: *2071*.
 
 ## Usage
 

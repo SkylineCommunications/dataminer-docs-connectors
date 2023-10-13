@@ -44,10 +44,6 @@ SERIAL CONNECTION:
 
 ## Usage
 
-In this section of the connector help, some general info is available about the usage of the Cybersense CYQ504 connector.
-
-### General
-
-Here you find the voltage on the 4 ports and general parameters about the device.
+On the **General** page, you can find the voltage on the 4 ports and general parameters about the device.
 
 There are also 2 buttons that can be used to reset the error led and to query the settings of the device.

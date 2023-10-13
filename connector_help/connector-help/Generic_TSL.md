@@ -69,9 +69,13 @@ To edit UMDs, you can either set individual cells, or edit the entire row on the
 To delete UMDs, use the context menu (by right-clicking in the table).
 
 - **Delete UMDs older than ...** will ask for the maximum age, which is the amount of time measured from the moment **OK** is clicked. All UMDs (even those with **Admin State** equal to *Up*) of which the **Last Update** value is before this maximum age are deleted.
+
   Example values: *10 seconds*, *10 minutes*, *10 hours*, *10 days*, *10 weeks* (these are suggested by DataMiner while you type).
+
   If only a number is entered, this is interpreted as a number of hours.
+
 - **Delete UMDs in Admin Down state** will delete all UMDs of which the **Admin State** is *Down*.
+
 - **Delete Selected UMDs** will delete all selected rows. Select multiple rows using the Shift or Ctrl key as usual in Windows.
 
 ### Create UMDs
@@ -93,7 +97,7 @@ The format is JSON and can be a single object or an array of objects containing 
 - **"Control"**: controlObject (dictionary), Default or current if null
   controlObject contains:
 
-- **"RHT"**: Byte (Range \[0-3\]), the right-hand tally
+  - **"RHT"**: Byte (Range \[0-3\]), the right-hand tally
   - **"LHT"**: Byte (Range \[0-3\]), the left-hand tally
   - **"TXT"**: Byte (Range \[0-3\]), the text tally
   - **"BRI"**: Byte (Range \[0-3\]), the brightness
@@ -112,7 +116,7 @@ Here are some examples of possible messages:
 
 ### Update UMD Row
 
-This is a subpage of the UMDs page. The parameters are filled in with the default values when no row has been selected. Refer to the section above ("To edit UMDs ...") in this connector help for more information about the usage of this page.
+This is a subpage of the UMDs page. The parameters are filled in with the default values when no row has been selected. For more information about the usage of this page, see [UMDs](#umds).
 
 ### UMD Automation
 

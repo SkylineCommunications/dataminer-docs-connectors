@@ -8,26 +8,29 @@ The Memotec Netperformer SDM9220-9230 version is an SNMP connector intended to c
 
 ## About
 
-This connector implements the available parameters present in the device's MIB. The connector layout is implemented as much as possible like the device's web interface. There are menus that are not 100% coincident.
+This connector implements the available parameters present in the device's MIB. The connector layout is implemented as much as possible like the device's web interface, although not all menus are exactly the same.
+
 A **SNMP** connection is used in order to successfully retrieve and configure the device's information.
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-**SNMP Connection:**
+#### SNMP Connection - Main
 
-- **IP Address/host:** \[*The polling IP of the device.*\]
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-**SNMP Settings:**
+SNMP CONNECTION:
 
-- **Port Number:** \[*The port of the connection device (default: 161).*\]
-- **Get community string:** \[*The community string used when reading values from the device (default value is not overridden in the connector: public).*\]
-- **Set community string:** \[*The community string used when setting values on the device (*default value is not overridden in the connector: private*).*\]
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **IP port**: The IP port of the device.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ## Usage
-
-In this section of the connector help, some general info is available about the usage of the Memotec NetPerformer connector.
 
 ### Main Menu
 
@@ -38,16 +41,16 @@ In this section of the connector help, some general info is available about the 
 
 All the global parameters available for configuration are shown here. Also, the following pages are provided with extra settings:
 
-- **Extra ...**
-- **Rackmount Chassis ...**
+- **Extra**
+- **Rackmount Chassis**
 
 ### Configuration - Advanced
 
-All parameters which are redundancy related are available on the following pages:
+All redundancy-related parameters are available on the following pages:
 
-- **Redundancy Criteria ...**
-- **Redundancy Remote ...**
-- **Redundancy Switch ...**
+- **Redundancy Criteria**
+- **Redundancy Remote**
+- **Redundancy Switch**
 
 ### Configuration - Others
 
@@ -57,17 +60,17 @@ This page provides an overview of some general configurations of the NetPerforme
 
 This page provides access to all the different configuration profiles available on the NetPerformer unit for **IP configuration**:
 
-- **BOOTP ...**
-- **DNS ...**
+- **BOOTP**
+- **DNS**
 - **Global IP...**
-- **NAT ...**
-- **OSPF ...**
-- **RADIUS ...**
-- **SNMP ...**
-- **Source-Static ...**
-- **Static ...**
-- **TimeP ...**
-- **Interfaces ...**
+- **NAT**
+- **OSPF**
+- **RADIUS**
+- **SNMP**
+- **Source-Static**
+- **Static**
+- **TimeP**
+- **Interfaces**
 
 ### Configuration - Slots Link
 
@@ -103,13 +106,13 @@ The **Errors** page lets you have access to various types of errors.
 
 This page provides an overview of all various types of states:
 
-- **States Redundancy ...**
-- **States Voice ...**
-- **States LDC ...**
-- **States System ...**
-- **States Port Eth ...**
-- **States Port CSL ...**
-- **States Port 1-304 ...**
+- **States Redundancy**
+- **States Voice**
+- **States LDC**
+- **States System**
+- **States Port Eth**
+- **States Port CSL**
+- **States Port 1-304**
 
 ### Routing Table
 
@@ -117,4 +120,4 @@ The NetPerformer Routing provides access to various **Routing Table** selections
 
 ### Web Interface
 
-Use this page to have access to the **Web Interface** provided by the device's web server. Only in a LAN environment it's possible to have access to this page.
+Use this page to have access to the **Web Interface** provided by the device's web server. The web interface is only accessible when the client machine has network access to the product.
