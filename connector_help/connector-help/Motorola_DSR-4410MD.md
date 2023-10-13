@@ -50,12 +50,10 @@ SNMP Settings:
 
 ## How to use
 
-SNMP protocol is used to get the data from the device. General information about the device can be found on the
-**General** page. In the event that the device needs to be restarted, the **Reset IRD** button can be used on the
-**General** page.
+The data is retrieved from the device using SNMP.
 
-The protocol also retrieves other relevant information from the device and displays it on the respective pages such as:
-**Audio & Video**, **Input Ports & Tuning**, **Channel & Signal**, **Diagnostics**, **Retune Monitoring** and
-**IP Connections**.
+On the **General** page of the element, you can find general information about the device. In the event that the device needs to be restarted, you can use the **Reset IRD** button on that same page.
 
-Each of these pages contain configuration parameters to allow the user to change specific settings of the device.
+The connector also retrieves other relevant information from the device and displays it on the respective pages, such as **Audio & Video**, **Input Ports & Tuning**, **Channel & Signal**, **Diagnostics**, **Retune Monitoring**, and **IP Connections**.
+
+Each of these pages contain configuration parameters that you can use to change specific settings of the device.
