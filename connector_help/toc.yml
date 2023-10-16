@@ -9267,6 +9267,10 @@
     topicUid: Connector_help_Teleste_DMM_HDO905
   - name: Teleste DMM HDO906
     topicUid: Connector_help_Teleste_DMM_HDO906
+  - name: Teleste HDO905
+    topicUid: Connector_help_Teleste_HDO905
+  - name: Teleste HDO907
+    topicUid: Connector_help_Teleste_HDO907
 - name: Telestream
   topicUid: Connector_help_Telestream_Inspect_2110
   items:
