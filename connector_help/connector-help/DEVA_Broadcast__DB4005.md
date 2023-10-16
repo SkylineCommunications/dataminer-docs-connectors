@@ -6,7 +6,7 @@ uid: Connector_help_DEVA_Broadcast__DB4005
 
 The **DB4005** is a third-generation digital FM radio modulation analyzer.
 
-The device is able to check FM channels. It contains a round-robin system that does not keep track of the status parameters. The time each channel should be measured by the round-robin engine is actively checked and adjusted on the device in order to know which channel is being monitored. Once the channel is known, the status parameters are polled and a table is built with status data for the channels.
+The device monitors FM channels with a round-robin system. It keeps track of which channel is currently being monitored in order to poll the status parameters for that channel and then fill in the status data in a table.
 
 ## About
 
@@ -61,7 +61,7 @@ This page displays the Channel Status table, which contains the following parame
 
 ### Channel Monitoring
 
-This page displays tables with the following parameters: **Frequency**, **RF** (level, average and peak maximum), **Multipath** (level, average and peak maximum), **MPX** (level, average and peak maximum), **MPX Power** (level, average and peak maximum), **Pilot** (level, average and peak maximum), **RDS** (level, average and peak maximum), **Left/Right** (level, average and peak maximum), **L+R** (level, average and peak maximum), **L-R, Temperature** (level, average and peak maximum), **Fan** (level, average and peak maximum), **RDS Group**, **RDS Lock**, **RDS PI**, **RDS PS**, **RDS RT**, **RDS TA**, **RDS TP**, **RDS Program**, **RDS PTY**, **RDS BER** and **Audio Stereo**.
+This page displays tables with the following parameters: **Frequency**, **RF** (*level*, *average*, *and peak maximum*), **Multipath** (*level*, *average*, *and peak maximum*), **MPX** (*level*, *average*, *and peak maximum*), **MPX Power** (*level*, *average*, *and peak maximum*), **Pilot** (*level*, *average*, *and peak maximum*), **RDS** (*level*, *average*, *and peak maximum*), **Left/Right** (*level*, *average*, *and peak maximum*), **L+R** (*level*, *average*, *and peak maximum*), **L-R, Temperature** (*level*, *average*, *and peak maximum*), **Fan** (*level*, *average*, *and peak maximum*), **RDS Group**, **RDS Lock**, **RDS PI**, **RDS PS**, **RDS RT**, **RDS TA**, **RDS TP**, **RDS Program**, **RDS PTY**, **RDS BER**, and **Audio Stereo**.
 
 ### Channel RDS AF Monitoring
 
@@ -83,7 +83,7 @@ This page shows the **alarm triggers** for each channel in the **channel tables*
 
 ### Communication Settings
 
-This page contains page buttons with configuration options: **HTTP**, **Application**, **SNMP Agent**, **Network**, **Syslog**, **Streamer**, **Email**, **FTP**, **GSM Modem**, **UECP UDP Server** and **UECP TCP Server**.
+This page contains page buttons with configuration options: **HTTP**, **Application**, **SNMP Agent**, **Network**, **Syslog**, **Streamer**, **Email**, **FTP**, **GSM Modem**, **UECP UDP Server**, and **UECP TCP Server**.
 
 For each of the page buttons, there is also a parameter that can be used to enable or disable them.
 
