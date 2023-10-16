@@ -2661,6 +2661,8 @@
 - name: DEVA Broadcast
   topicUid: Connector_help_DEVA_Broadcast_DB44
   items:
+  - name: DEVA Broadcast DB4005
+    topicUid: Connector_help_DEVA_Broadcast__DB4005
   - name: DEVA Broadcast DB44
     topicUid: Connector_help_DEVA_Broadcast_DB44
   - name: DEVA Broadcast DB45
