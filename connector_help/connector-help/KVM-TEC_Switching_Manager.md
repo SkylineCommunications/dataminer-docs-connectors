@@ -4,7 +4,7 @@ uid: Connector_help_KVM-TEC_Switching_Manager
 
 # KVM-TEC Switching Manager
 
-The **KVM Switching Manager** **software** is used to manage a KVM network. It allows up to 2000 endpoints as well as super-fast switching. A wide range of different sources (servers, operator workstations, PCs, surveillance cameras, video walls, etc.) can be connected. The entire system can be operated and controlled via a centralized management Network Environment.
+The **KVM Switching Manager software** is used to manage a KVM network. It allows up to 2000 endpoints as well as super-fast switching. A wide range of different sources (servers, operator workstations, PCs, surveillance cameras, video walls, etc.) can be connected. The entire system can be operated and controlled via a centralized management Network Environment.
 
 This connector allows you to monitor the **users, groups, and extenders**.
 
@@ -12,11 +12,11 @@ This connector allows you to monitor the **users, groups, and extenders**.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                  | \-           | \-                |
-| 1.0.1.x              | Improved Extender Info API polling               | 1.0.0.4      | \-                |
-| 1.0.2.x \[SLC Main\] | Several parameters changed from Double to String | 1.0.1.7      | \-                |
+| Range              | Key Features                                     | Based on | System Impact |
+|--------------------|--------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version                                  | -        | -             |
+| 1.0.1.x            | Improved Extender Info API polling               | 1.0.0.4  | -             |
+| 1.0.2.x [SLC Main] | Several parameters changed from Double to String | 1.0.1.7  | -             |
 
 ### Product Info
 
@@ -30,9 +30,9 @@ This connector allows you to monitor the **users, groups, and extenders**.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
