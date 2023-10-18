@@ -48,9 +48,7 @@ Even though no Automation Scripts are mandatory, in order to facilitate the solu
 
 ### Correlation rules
 
-Correlation Rules should be created in order to create/update/delete tickets based on DataMiner alarming. Taking into account Kordia's setup of Customers and Services being represented as DataMiner services, and the fact that each Customer may contain one or more Services, the Correlation rule should be created to monitor a DataMiner service representative of a Kordia Customer. An example can be found below.
-
-[ADD IMAGE HERE]
+Correlation Rules should be created in order to create/update/delete tickets based on DataMiner alarming. Taking into account Kordia's setup of Customers and Services being represented as DataMiner services, and the fact that each Customer may contain one or more Services, the Correlation rule should be created to monitor a DataMiner service representative of a Kordia Customer. 
 
 ## How to use
 
@@ -66,7 +64,7 @@ In the **General** page a Statistics group can be found. That contains data rela
 
 This page contains toggle buttons for Auto-Clear functionality of the Tickets table and also for the flapping functionality.
 
-Flapping Window is used for cases where DataMiner alarms are flapping but incidents must not be closed if such flapping window has not passed. This reduces the number of false positives/negatives in the operation. This also helps us to calculate the correct Duration of an incident as it can be seen in the Tickets table.
+Flapping Window is used for cases where DataMiner alarms are flapping but incidents must not be closed if such flapping window has not passed. A flapping incident is for example an alarmed interface that keeps switching between Up/Down in a short amount of time. This reduces the number of false positives/negatives in the operation and also helps us to calculate the correct Duration of an incident as it can be seen in the Tickets table.
 
 The Tickets table contains information of Tickets that have been created by DataMiner based on the Correlation Rules created.
 
