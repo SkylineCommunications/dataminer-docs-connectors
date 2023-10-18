@@ -5958,6 +5958,8 @@
     topicUid: Connector_help_Motorola_APEX1000
   - name: Motorola CAP-1000
     topicUid: Connector_help_Motorola_CAP-1000
+  - name: Motorola DSR-4410MD
+    topicUid: Connector_help_Motorola_DSR-4410MD
   - name: Motorola DSR-4460
     topicUid: Connector_help_Motorola_DSR-4460
   - name: Motorola DSR-6000
@@ -9265,6 +9267,10 @@
     topicUid: Connector_help_Teleste_DMM_HDO905
   - name: Teleste DMM HDO906
     topicUid: Connector_help_Teleste_DMM_HDO906
+  - name: Teleste HDO905
+    topicUid: Connector_help_Teleste_HDO905
+  - name: Teleste HDO907
+    topicUid: Connector_help_Teleste_HDO907
 - name: Telestream
   topicUid: Connector_help_Telestream_Inspect_2110
   items:
