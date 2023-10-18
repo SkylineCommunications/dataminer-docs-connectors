@@ -25,7 +25,7 @@ Notes:
 
 - In version 1.0.1.2, support was added to create DVEs for VS906 cards.
 - In version 2.0.0.1, DVE creation was separated to support different kinds of cards. At this point, DVE creation is supported for VS906 and VS909. The tables for each card type are adjusted to hide unused columns. The width of such columns is zero, so that they can still be opened from the header bar of the table.
-- From version 2.0.0.4 onwards, connector help pages are created for each DVE. Usage information for each DVE has been moved to those separate pages. The input and output configuration flow tables have been added.
+- From version 2.0.0.4 onwards, a documentation page is created for each DVE. Usage information for each DVE has been moved to those separate pages. The input and output configuration flow tables have been added.
 - In version 2.0.0.7, DCF and VS902 card support has been added
 - From version 2.0.1.1 onwards, changes to card configuration fields are applied in the pending configuration tables and automatically applied to the current configuration.
 

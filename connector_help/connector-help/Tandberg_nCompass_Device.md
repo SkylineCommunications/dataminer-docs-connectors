@@ -18,15 +18,15 @@ The Tandberg nCompass uses SNMP and serial communication to get information abou
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.1.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
-| 2.1.0.x   | \-                     |
-| 3.1.0.x   | \-                     |
-| 4.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.1.0.x   | -                      |
+| 2.0.0.x   | -                      |
+| 2.1.0.x   | -                      |
+| 3.1.0.x   | -                      |
+| 4.0.0.x   | -                      |
 | 4.0.1.x   | 5.x, 6.x and 8.x       |
 | 4.0.2.x   | 5.x, 6.x and 8.x       |
 
 ## How to Use
 
-Please refer to the [Tandberg nCompass](xref:Connector_help_Tandberg_nCompass) connector help for more information.
+See [Tandberg nCompass](xref:Connector_help_Tandberg_nCompass).
