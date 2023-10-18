@@ -16,7 +16,8 @@ USMS tickets are forwarded towards Ziggo USMS Ticket Gateway connector and IVR i
 
 | **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
 |------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| 1.0.0.x \[Obsolete\] | Initial version | No                  | No                     |
+| 1.0.1.x \[SLC Main\] | Fixed driver to be cassandra compliant | No                  | Yes                     |
 
 ## Installation and configuration
 
