@@ -4,11 +4,14 @@ uid: Connector_help_Elastic_ElasticSearch_Cluster_Monitor
 
 # Elastic ElasticSearch Cluster Monitor
 
-This connector can be used to monitor the health of an Elasticsearch cluster. It performs specific HTTP queries directly to one of the Elasticsearch nodes in the cluster.
+This connector can be used to monitor the health of an Elasticsearch or OpenSearch cluster. It performs specific HTTP queries directly to one of the nodes in the cluster.
+
+> [!NOTE]
+> Though its name only mentions Elasticsearch, this connector can also be used to monitor an OpenSearch cluster.
 
 ## About
 
-The HTTP queries performed by this connector are intended to retrieve metrics that provide information on the current health status of the Elasticsearch cluster.
+The HTTP queries performed by this connector are intended to retrieve metrics that provide information on the current health status of the OpenSearch or Elasticsearch cluster.
 
 The scope of these health metrics includes general cluster and node metrics and statistical information related to node indexing and systems (operating system, file system, Java Virtual Machine, etc.).
 
@@ -34,8 +37,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the Elasticsearch cluster.
-- **IP port**: The IP port of Elasticsearch, by default *9200*.
+- **IP address/host**: The polling IP of the cluster.
+- **IP port**: The IP port of OpenSearch or Elasticsearch, by default *9200*.
 
 ## Usage
 
