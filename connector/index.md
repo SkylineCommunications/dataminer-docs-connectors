@@ -1,5 +1,5 @@
 ---
-uid: index
+uid: connector_index
 ---
 
 ## DataMiner Connector Documentation

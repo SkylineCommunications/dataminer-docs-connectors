@@ -3,7 +3,7 @@
     "content": [
       {
         "files": [
-          "connector_help/**.md",
+          "connector/**.md",
           "**/toc.yml",
           "toc.yml",
           "*.md"

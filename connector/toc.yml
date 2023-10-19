@@ -1,5 +1,5 @@
 - name: DataMiner Connector Documentation
-  topicUid: index
+  topicUid: connector_index
 - name: 2WCOM
   topicUid: Connector_help_2WCOM_DAB-4c
   items:
