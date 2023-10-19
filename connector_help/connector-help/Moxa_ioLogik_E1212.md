@@ -6,27 +6,27 @@ uid: Connector_help_Moxa_ioLogik_E1212
 
 The Moxa ioLogik E1212 retrieves I/O data and supports application connectivity.
 
-This connector retrieves information from the device via SNMP. It displays basic information about the device, as well as the status of the existing DI channels. For each DI channel, some settings can also be configured
+This connector retrieves information from the device via SNMP. It displays basic information about the device, as well as the status of the existing DI channels. For each DI channel, some settings can also be configured.
 
 ## About
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features     | Based on    | System Impact    |
+|--------------------|------------------|-------------|------------------|
+| 1.0.0.x [SLC Main] | Initial version  | -           | -                |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
