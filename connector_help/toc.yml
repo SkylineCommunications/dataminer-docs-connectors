@@ -9253,6 +9253,8 @@
     topicUid: Connector_help_Teleste_HDO905
   - name: Teleste HDO907
     topicUid: Connector_help_Teleste_HDO907
+  - name: Teleste HDO908
+    topicUid: Connector_help_Teleste_HDO908
 - name: Telestream
   topicUid: Connector_help_Telestream_Inspect_2110
   items:
