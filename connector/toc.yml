@@ -1,5 +1,5 @@
-- name: DataMiner Connector Help
-  topicUid: index
+- name: DataMiner Connector Documentation
+  topicUid: connector_index
 - name: 2WCOM
   topicUid: Connector_help_2WCOM_DAB-4c
   items:
@@ -2623,6 +2623,8 @@
     topicUid: Connector_help_Dell_M1000e_Collector
   - name: Dell MXL 10-40 GBE Switch
     topicUid: Connector_help_Dell_MXL_10-40_GBE_Switch
+  - name: Dell PowerVault ME5024
+    topicUid: Connector_help_Dell_PowerVault_ME5024
   - name: Dell VNX Series
     topicUid: Connector_help_Dell_VNX_Series
 - name: Delta Electronics
@@ -2648,6 +2650,8 @@
     topicUid: Connector_help_DEV_7000_-_TX
   - name: DEV 8120
     topicUid: Connector_help_DEV_8120
+  - name: DEV 9110-1993
+    topicUid: Connector_help_DEV_9110_1993
   - name: DEV Switch Module
     topicUid: Connector_help_DEV_Switch_Module
   - name: DEV Switch SNMP
@@ -2659,6 +2663,8 @@
 - name: DEVA Broadcast
   topicUid: Connector_help_DEVA_Broadcast_DB44
   items:
+  - name: DEVA Broadcast DB4005
+    topicUid: Connector_help_DEVA_Broadcast__DB4005
   - name: DEVA Broadcast DB44
     topicUid: Connector_help_DEVA_Broadcast_DB44
   - name: DEVA Broadcast DB45
@@ -2825,6 +2831,8 @@
     topicUid: Connector_help_Eaton_93PM_UPS
   - name: EATON 9PX UPS
     topicUid: Connector_help_EATON_9PX_UPS
+  - name: EATON ATS
+    topicUid: Connector_help_EATON_ATS
   - name: Eaton Blade UPS
     topicUid: Connector_help_Eaton_Blade_UPS
   - name: EATON ePDU G3
@@ -4859,6 +4867,8 @@
 - name: Inmarsat
   topicUid: Connector_help_Inmarsat_BGAN_Manager
   items:
+  - name: Inmarsat BGAN IBIS
+    topicUid: Connector_help_Inmarsat_BGAN_IBIS
   - name: Inmarsat BGAN Manager
     topicUid: Connector_help_Inmarsat_BGAN_Manager
   - name: Inmarsat Gateway
@@ -5950,6 +5960,8 @@
     topicUid: Connector_help_Motorola_APEX1000
   - name: Motorola CAP-1000
     topicUid: Connector_help_Motorola_CAP-1000
+  - name: Motorola DSR-4410MD
+    topicUid: Connector_help_Motorola_DSR-4410MD
   - name: Motorola DSR-4460
     topicUid: Connector_help_Motorola_DSR-4460
   - name: Motorola DSR-6000
@@ -8050,6 +8062,8 @@
     topicUid: Connector_help_Sky_UK_Playout_Manager
   - name: Sky UK Prometheus AlertManager
     topicUid: Connector_help_Sky_UK_Prometheus_AlertManager
+  - name: Sky UK Receive System Auto Monitoring Workflow
+    topicUid: Connector_help_Sky_UK_Receive_System_Auto_Monitoring_Workflow
   - name: Sky UK Roving Pub Checker Workflow
     topicUid: Connector_help_Sky_UK_Roving_Pub_Checker_Workflow
   - name: Sky UK Server Manager
@@ -9013,6 +9027,8 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._GPON_Sapiens_Offload
   - name: Telefonia por Cable S.A de C.V. Sapiens Offload
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Sapiens_Offload
+  - name: Telefonia por Cable S.A de C.V. SPA CPE Indexer
+    topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
   - name: Telefonia por Cable S.A de C.V. Topology Aggregator
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Topology_Aggregator
 - name: Telefonica
@@ -9129,12 +9145,16 @@
     topicUid: Connector_help_Teleste_AC8000_SNMP
   - name: Teleste AC8710
     topicUid: Connector_help_Teleste_AC8710
+  - name: Teleste AC8710 SNMP
+    topicUid: Connector_help_Teleste_AC8710_SNMP
   - name: Teleste AC8810
     topicUid: Connector_help_Teleste_AC8810
   - name: Teleste AC8810 Manager
     topicUid: Connector_help_Teleste_AC8810_Manager
   - name: Teleste AC8810 Manager - Child
     topicUid: Connector_help_Teleste_AC8810_Manager_-_Child
+  - name: Teleste AC8810 SNMP
+    topicUid: Connector_help_Teleste_AC8810_SNMP
   - name: Teleste AC9000
     topicUid: Connector_help_Teleste_AC9000
   - name: Teleste Amplifier Collector
@@ -9634,6 +9654,11 @@
   items:
   - name: VeEX AT1600
     topicUid: Connector_help_VeEX_AT1600
+- name: Velocix
+  topicUid: Connector_help_Velocix_Origin_Platform
+  items:
+  - name: Velocix Origin Platform
+    topicUid: Connector_help_Velocix_Origin_Platform
 - name: Verimatrix
   topicUid: Connector_help_Verimatrix_CSM
   items:
