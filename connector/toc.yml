@@ -9183,8 +9183,18 @@
     topicUid: Connector_help_Teleste_DMM_DVO902_8
   - name: Teleste DMM DVP532
     topicUid: Connector_help_Teleste_DMM_DVP532
+  - name: Teleste DMM HDO903
+    topicUid: Connector_help_Teleste_DMM_HDO903
+  - name: Teleste DMM HDO905
+    topicUid: Connector_help_Teleste_DMM_HDO905
+  - name: Teleste DMM HDO906
+    topicUid: Connector_help_Teleste_DMM_HDO906
   - name: Teleste DMM HDP230
     topicUid: Connector_help_Teleste_DMM_HDP230
+  - name: Teleste DMM DVP332
+    topicUid: Connector_help_Teleste_DMM_DVP332
+  - name: Teleste DMM DVP432
+    topicUid: Connector_help_Teleste_DMM_DVP432
   - name: Teleste DVX002
     topicUid: Connector_help_Teleste_DVX002
   - name: Teleste EMS
@@ -9253,26 +9263,18 @@
     topicUid: Connector_help_Teleste_HDO611_TSEMP_DVX
   - name: Teleste HDO613 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO613_TSEMP_DVX
+  - name: Teleste HDO905
+    topicUid: Connector_help_Teleste_HDO905
+  - name: Teleste HDO907
+    topicUid: Connector_help_Teleste_HDO907
+  - name: Teleste HDO908
+    topicUid: Connector_help_Teleste_HDO908
   - name: Teleste HDP301 TSEMP DVX
     topicUid: Connector_help_Teleste_HDP301_TSEMP_DVX
   - name: Teleste Luminato
     topicUid: Connector_help_Teleste_Luminato
   - name: Teleste TRM HDO775
     topicUid: Connector_help_Teleste_TRM_HDO775
-  - name: Teleste DMM DVP332
-    topicUid: Connector_help_Teleste_DMM_DVP332
-  - name: Teleste DMM DVP432
-    topicUid: Connector_help_Teleste_DMM_DVP432
-  - name: Teleste DMM HDO903
-    topicUid: Connector_help_Teleste_DMM_HDO903
-  - name: Teleste DMM HDO905
-    topicUid: Connector_help_Teleste_DMM_HDO905
-  - name: Teleste DMM HDO906
-    topicUid: Connector_help_Teleste_DMM_HDO906
-  - name: Teleste HDO905
-    topicUid: Connector_help_Teleste_HDO905
-  - name: Teleste HDO907
-    topicUid: Connector_help_Teleste_HDO907
 - name: Telestream
   topicUid: Connector_help_Telestream_Inspect_2110
   items:
