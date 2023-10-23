@@ -120,6 +120,22 @@ This page displays the **Detailed Interface Info** table. In this table, the col
 
 The **Rx/Tx errors rate** can be retrieved within a defined **interval of time**.
 
+The **Interface Counter Telemetry Connection State** displays the current status of the **Interface Counter** telemetry session. The status will display **Connected** if the driver is currently listening to the telemetry session.
+
+### Telemetry Settings
+
+This page displays parameters used for configuring the telemetry settings to subscribe to the Mellanox **Interface Counter telemetry sessions**.
+
+The **TCP Listener IP Address** and **Data Source Port** indicate the IP address and port to create the TCP network client for listening to device telemetry data.
+
+The **Interface Polling Mode** is used to switch the polling mode between **SNMP** and **Telemetry** for the Detailed Interface Info table, Detailed Interface Info - RX table, and Detailed Interface Info - TX table.
+
+The **Interface Detail Debug** enables the debugging mode for telemetry. Once enabled, the driver will log incoming telemetry data in the element's logging.
+
+To start listening or subscribing to the Interface Counter telemetry session, you need to configure the client IP address and port on the Mellanox device before the element can receive the telemetry data.
+
+Next, configure the TCP Listener IP and Data Source Port parameters in the element. The values of both parameters are the same as what is configured in the Mellanox device. Then, switch the interface polling mode to Telemetry.
+
 ### Detailed Interface Info - RX
 
 This page displays the **Detailed Interface Info - Rx** table.
