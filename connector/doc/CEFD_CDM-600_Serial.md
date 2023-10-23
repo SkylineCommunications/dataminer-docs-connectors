@@ -13,14 +13,14 @@ For more information, refer to the following page: <http://www.comtechefdata.com
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                                   | **Based on** | **System Impact**                                 |
-|-----------|--------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x   | Initial version                                                                                                    | \-           | \-                                                |
-| 1.0.1.x   | \-                                                                                                                 | \-           | \-                                                |
-| 1.0.2.x   | \-                                                                                                                 | \-           | \-                                                |
-| 1.0.3.x   | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.34     | **Old trend data will be lost for these tables.** |
-| 2.0.0.x   | \-                                                                                                                 | \-           | \-                                                |
-| 3.0.0.x   | \-                                                                                                                 | \-           | \-                                                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | - | - | - |
+| 1.0.2.x | - | - | - |
+| 1.0.3.x | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.34 | **Old trend data will be lost for these tables.** |
+| 2.0.0.x | - | - | - |
+| 3.0.0.x | - | - | - |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ For more information, refer to the following page: <http://www.comtechefdata.com
 |-----------|------------------------|
 | 1.0.3.x   | HW 04.0, SW 1.5.7      |
 
-## Installation and configuration
+## Configuration
 
 ### Creation
 
@@ -64,7 +64,7 @@ On this page, the **Equipment ID** section displays the operational status for a
 
 Use this page to configure modem operating (Tx/Rx) parameters:
 
-- **Tx/Rx Interfaces and Framing**: The **Tx**/**Rx** **Interface Types** and **Framing Modes** have higher priority than other parameters. These parameters should be configured first, before you set any other parameters.
+- **Tx/Rx Interfaces and Framing**: The **Tx**/**Rx Interface Types** and **Framing Modes** have higher priority than other parameters. These parameters should be configured first, before you set any other parameters.
 - **Transmit/Receive**: The Tx/Rx operating parameters have lower priority and can be configured here.
 
 ### Config - Overhead
@@ -80,11 +80,11 @@ Use this page to configure the following overhead interfaces:
 
 Use this page to configure a number of the CDM-600's utility functions.
 
-- **Redundancy**: If the unit is part of a 1:1 redundant pair of modems and this unit is currently online, click **\[Force 1:1 Switch\]** to cause the unit to switch to standby.
+- **Redundancy**: If the unit is part of a 1:1 redundant pair of modems and this unit is currently online, click **[Force 1:1 Switch]** to cause the unit to switch to standby.
 
-- **Re-Center Buffer**: Click **\[Re-Center Buffer\]** to force the re-centering of the Plesiochronous/Doppler buffer.
+- **Re-Center Buffer**: Click **[Re-Center Buffer]** to force the re-centering of the Plesiochronous/Doppler buffer.
 
-- **Unit**: Use the drop-down menus provided in this section to configure **Unit** **Test Mode**, **Operating Mode, Unit Outdoor Communications & Rx IF Impedance**. The **Front Panel Lockout** is only functional for CDM-600L modems.
+- **Unit**: Use the drop-down menus provided in this section to configure **Unit Test Mode**, **Operating Mode, Unit Outdoor Communications & Rx IF Impedance**. The **Front Panel Lockout** is only functional for CDM-600L modems.
 
 - **Clocks**: Use the drop-down menus provided in this section to configure **Tx/Rx Clock Sources**, **Rx Buffer Size**, **Rx External Clock Type & Rx External Clock**. The **Modem Reference Clock** is only functional for CDM-600L modems.
 
@@ -92,13 +92,13 @@ Use this page to configure a number of the CDM-600's utility functions.
 
 - Date and Time:
 
-- **RTC Date**: Enter a date using MM/DD/YY format, where MM = month \[01 to 12\], DD = day \[01 to 31\], and YY = year \[00 to 99\].
-  - **RTC Time**: Enter a time using HH:MM:SS format, where HH = hour \[00 to 23\], MM = minutes \[00 to 59\], and SS = seconds \[00 to 59\].
+  - **RTC Date**: Enter a date using MM/DD/YY format, where MM = month [01 to 12], DD = day [01 to 31], and YY = year [00 to 99].
+  - **RTC Time**: Enter a time using HH:MM:SS format, where HH = hour [00 to 23], MM = minutes [00 to 59], and SS = seconds [00 to 59].
   - **Time Sync**: Parameters related to the time sync.
 
 - Warm-Up:
 
-- **Warm Up Delay:** Warm-up delay for internal frequency reference (OCXO). Set to *Disabled* (instantly on, no delay for OCXO to reach temperature) or *Enabled* (unit waits until OCXO reaches correct temperature).
+  - **Warm Up Delay:** Warm-up delay for internal frequency reference (OCXO). Set to *Disabled* (instantly on, no delay for OCXO to reach temperature) or *Enabled* (unit waits until OCXO reaches correct temperature).
   - **Warm Up Countdown**: The warm-up delay countdown in seconds remaining.
   - **Truncate Delay:** Used to truncate the warm-up delay period to *zero*, forcing the unit into "*instant-on*" mode.
 
@@ -128,15 +128,15 @@ Use this page to control the way faults, statistics, and alarm masking parameter
 
 - Events Log:
 
-- **Poll Event Table**: Enable or disable polling of the events table.
+  - **Poll Event Table**: Enable or disable polling of the events table.
   - **Events Overview**: Table listing all events that have occurred.
 
 - Statistics Log:
 
-- **Statistics Interval**: Define the interval at which the statistics are taken.
+  - **Statistics Interval**: Define the interval at which the statistics are taken.
   - **Statistics Overview**: Table showing the statistics.
 
-- **Alarm Masking**: Allows you to define a designated alarm as *Masked* or *Active***.**
+- **Alarm Masking**: Allows you to define a designated alarm as *Masked* or *Active*.
 
 ### FSK
 
@@ -149,5 +149,5 @@ This page provides access to the FSK functionality. It is used for the creation 
 
 This page allows you to **save** all parameter values to a CSV file. Afterwards, it is also possible to **load** that same file. This will set the parameters to the saved values.
 
-- By default, the saved file is stored in the following folder: *C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\\PROTOCOLNAME\].*
-- The default file name is *backup_ELEMENTNAME_datetime.*
+- By default, the saved file is stored in the following folder: `C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\PROTOCOLNAME\`.
+- The default file name is *backup_ELEMENTNAME_datetime*.
