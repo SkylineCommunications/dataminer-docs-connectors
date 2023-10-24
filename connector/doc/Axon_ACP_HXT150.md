@@ -14,7 +14,7 @@ The **Axon ACP HXT150** connector is used to configure and monitor the HXT150 Ax
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The **Axon ACP HXT150** connector is used to configure and monitor the HXT150 Ax
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -56,7 +56,8 @@ SMART SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (fixed value: *2071*).
   - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-Note: The configuration of the element can also be performed via the Axon ACP Frame Manager. The Frame Manager will auto-populate the elements in the system if the card connectors are available.
+> [!NOTE]
+> The configuration of the element can also be performed via the Axon ACP Frame Manager. The Frame Manager will auto-populate the elements in the system if the card connectors are available.
 
 ### Initialization
 
@@ -83,7 +84,7 @@ The element has the following data pages:
 - **GPI:** Contains parameters used to configure the GPI contacts and pools.
 - **Network:** Contains the **IP Configuration** and **Network Status** information.
 - **Status:** Contains status information of the card.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card**.**
+- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

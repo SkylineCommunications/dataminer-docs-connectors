@@ -12,7 +12,7 @@ The American Power Conversion (APC) NetBotz Rack Monitor 200 is a central hardwa
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The American Power Conversion (APC) NetBotz Rack Monitor 200 is a central hardwa
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 
@@ -63,7 +63,7 @@ The element created with this connector consists of the data pages described bel
 
 ### General Page
 
-This page contains information such as the **Device Name, Product Number, Device Firmware Version, Device Hardware Version, Date of Manufacture** and **Device Serial Number.** It also allows you to configure the **EMS Configuration Name.**
+This page contains information such as the **Device Name, Product Number, Device Firmware Version, Device Hardware Version, Date of Manufacture** and **Device Serial Number.** It also allows you to configure the **EMS Configuration Name**.
 
 ### Modules Page
 
@@ -83,7 +83,7 @@ This page displays information about the Environmental Management System, such a
 
 - **EMS Communication State**: The status of communication between the Agent and the device:
 
-- *Communication* means that communication is established.
+  - *Communication* means that communication is established.
   - *No Communication* means that communication has never been established.
   - *Communication Lost* means that communication was established but lost.
 
@@ -109,7 +109,7 @@ This page displays information about the Environmental Management System, such a
 
 - **Hardware Status**:
 
-- *No Error* indicates no error conditions have been detected in the EMS hardware.
+  - *No Error* indicates no error conditions have been detected in the EMS hardware.
   - *Current Limit Error* indicates a current limit error condition related to the Alink port
   - *Incorrect Hardware Plugged* indicates incorrect hardware is plugged into an EMS port.
   - *Limit and Incorrect Hardware Errors* indicates that both of the previously mentioned error conditions are present.
@@ -122,7 +122,7 @@ This page contains the Probe Configuration Table, which displays both status par
 
 - Configurable settings include:
 
-- **Probe Delta Temperature**
+  - **Probe Delta Temperature**
   - **Probe Delta Humidity**
   - **ST Incr. Temp. Variance**: Short-term increasing temperature variance used for rate of change alarms.
   - **ST Incr. Temp. Time**: Short-term increasing temperature time used for rate of change alarms.
@@ -139,7 +139,8 @@ This page contains the following tables:
 - **EMS Sensor Status:** Displays information on individual sensors, such as:
 
 - **Sensor State:** Displays *Sensor Faulted EMS* if there is a fault in the sensor, *Sensor OK EMS* if there is no fault and *Sensor Not Installed EMS* if the sensor is not installed.
-  - **Sensor Normal State:** Displays if the normal state of the sensor is *closed* or *open**.***
+
+  - **Sensor Normal State:** Displays if the normal state of the sensor is *closed* or *open*.
   - **Sensor Alarm Delay**
 
 - **EMS Sensor Control**: Allows you to control/reset individual sensors.
@@ -152,7 +153,9 @@ This page contains the following tables:
 
 - **Input Contact Configuration**: Allows you to configure the parameters **Input Contact Name** and **Input Normal State** for each probe and also displays the **Input Contact State** of each probe.
 - **Input Status**: Displays status information such as the **Input Name, Input Location, Input State, Input Analog Value, Input Alarm** and **Input Communication Status** for each probe.
+
   From version 1.0.0.4 onwards, the display key for this table can be configured as **MEM Input ID** (primary key) or the **Input Name**.
+
 - **Input Configuration**: Allows you to configure several parameters for each probe, such as **Input Type** (*Dry Contact*, *Digital*, *Analog mA*, *Analog Volts*), **Alarm Generation, MEM Input Normal State, Abnormal Severity** and **Number Calibration Points**. You can also configure each **Calibration Point.**
 
 ### Outputs Page
