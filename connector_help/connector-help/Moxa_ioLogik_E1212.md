@@ -55,5 +55,4 @@ The web interface is only accessible when the client machine has network access 
 The element consists of the following data pages:
 
 - **General**: Displays general parameters such as server model, system up time, and firmware version.
-- **Digital I/O**: On this page, you can find the **DI channel monitor table** and **DIO channel monitor table**. This table allows you to monitor all available DI and DO channels, as well as set specific parameters for each channel such as mode, filter, trigger and counter.
-This table also allows you to configure a custom name for each channel. Greyed out entries in this table are disabled and cannot be set.
+- **Digital I/O**: On this page, you can find the **DI channel monitor table** and **DIO channel monitor table**. **DI Channel monitor table** allows you to monitor all available digital input channels, whereas **DIO channel monitor table** allows you to monitor all available digital input/output channels. Both table allows you to set waveform related parameters for each channel such as mode, filter, trigger and counter, and also configure a custom name for each channel.
