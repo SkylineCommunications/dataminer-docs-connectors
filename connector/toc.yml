@@ -6157,35 +6157,6 @@
   items:
   - name: NBCS Roadkit Manager
     topicUid: Connector_help_NBCS_Roadkit_Manager
-- name: NBCU
-  topicUid: Connector_help_NBCU_Ad_Monitoring_Manifests
-  items:
-  - name: NBCU Ad Monitoring Manifests
-    topicUid: Connector_help_NBCU_Ad_Monitoring_Manifests
-  - name: NBCU CAG Incident Gateway
-    topicUid: Connector_help_NBCU_CAG_Incident_Gateway
-  - name: NBCU LEAP Collector
-    topicUid: Connector_help_NBCU_LEAP_Collector
-  - name: NBCU LEM Collector
-    topicUid: Connector_help_NBCU_LEM_Collector
-  - name: NBCU Manager
-    topicUid: Connector_help_NBCU_Manager
-  - name: NBCU Merlin Collector
-    topicUid: Connector_help_NBCU_Merlin_Collector
-  - name: NBCU Peacock Popup Event Collector
-    topicUid: Connector_help_NBCU_Peacock_Popup_Event_Collector
-  - name: NBCU Popup Event Manager APP
-    topicUid: Connector_help_NBCU_Popup_Event_Manager_APP
-  - name: NBCU SCTE Trap Collector
-    topicUid: Connector_help_NBCU_SCTE_Trap_Collector
-  - name: NBCU ServiceNow Prism
-    topicUid: Connector_help_NBCU_ServiceNow_Prism
-  - name: NBCU SkyPath Site Manager
-    topicUid: Connector_help_NBCU_SkyPath_Site_Manager
-  - name: NBCU VOD Manager APP
-    topicUid: Connector_help_NBCU_VOD_Manager_APP
-  - name: NBCU Witbe Maestro
-    topicUid: Connector_help_NBCU_Witbe_Maestro
 - name: ND Satcom
   topicUid: Connector_help_ND_Satcom_HPA_3412A
   items:
