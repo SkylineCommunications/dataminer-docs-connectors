@@ -38,7 +38,7 @@ GPIB CONNECTION:
 
 - Interface connection:
 
-  -**I/O API**: Choose between SICL or VISA
+  - **I/O API**: Choose between SICL or VISA
 
   - **Device address**: Specify the IP address and GPIB address. For example:
 
