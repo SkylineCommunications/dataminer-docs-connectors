@@ -11,7 +11,7 @@
       }
     ],
         "sitemap": {
-      "baseUrl": "https://docs.dataminer.services/connector/",
+      "baseUrl": "https://docs.dataminer.services",
       "changefreq": "hourly"
     },
   "resource": [
