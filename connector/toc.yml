@@ -6069,6 +6069,8 @@
     topicUid: Connector_help_Moxa_ioLogik_E1210
   - name: Moxa ioLogik E1211
     topicUid: Connector_help_Moxa_ioLogik_E1211
+  - name: Moxa ioLogik E1212
+    topicUid: Connector_help_Moxa_ioLogik_E1212
   - name: Moxa ioLogik E1214
     topicUid: Connector_help_Moxa_ioLogik_E1214
   - name: Moxa ioLogik E1240
