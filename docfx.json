@@ -10,6 +10,10 @@
         ]
       }
     ],
+        "sitemap": {
+      "baseUrl": "https://docs.dataminer.services/connector/",
+      "changefreq": "hourly"
+    },
   "resource": [
       {
         "files": [
