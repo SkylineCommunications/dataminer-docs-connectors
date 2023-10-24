@@ -15,7 +15,8 @@ This connector communicates with the data source through HTTP requests.
 | **Range**            | **Key Features**              | **Based on** | **System Impact**                                                              |
 |----------------------|-------------------------------|--------------|--------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version               | \-           | \-                                                                             |
-| 1.0.1.x \[SLC Main\] | Implemented IS07 subscription | 1.0.0.x      | Existing elements will need to be recreated to make use of the new connection. |
+| 1.0.1.x              | Implemented IS07 subscription | 1.0.0.x      | Existing elements will need to be recreated to make use of the new connection. |
+| 1.0.2.x \[SLC Main\] | Fixed subscription issues     | 1.0.1.5      | \                                                                              |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ This connector communicates with the data source through HTTP requests.
 |-----------|----------------------------------------------------------|
 | 1.0.0.x   | Node: 1.3 \| Connection: 1.1 \| Events: 1.1              |
 | 1.0.1.x   | Node: 1.3 \| Connection: 1.1 \| Events: 1.1 (WebSockets) |
+| 1.0.2.x   | Node: 1.3 \| Connection: 1.1 \| Events: 1.1 (WebSockets) |
 
 ### System Info
 
@@ -30,6 +32,7 @@ This connector communicates with the data source through HTTP requests.
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
 | 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
