@@ -23,9 +23,9 @@ This connector is divided into four sections:
 
 ### Version Info
 
-| **Range** | **Description**                                                         | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version. DCF integration featured from version 1.0.0.2 onwards. | Yes                 | Yes                     |
+| Range   | Description                                                             | DCF Integration | Cassandra Compliant |
+|---------|-------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version. DCF integration featured from version 1.0.0.2 onwards. | Yes             | Yes                 |
 
 ### Product Info
 
@@ -81,7 +81,7 @@ The total elapsed time since the unit has been produced is also included on this
 
 This page contains all the parameters that poll alarms read from the different components of the device. All the parameters are read-only, except for the **Fault Reset** button.
 
-As on the Amplifiers page, the parameters are grouped together logically. In addition, some alarms combine two alarms in one. For example, the **Wave Guide (WG) Switch** alarm and **WG connectivity** alarm are grouped into one alarm, with an output as follows: Alarm - No Alarm - Disconnected. The **Redundancy Switch-**related alarms are also gathered into one group called **Redundancy Switch**, and the three alarms are named as follows: **Short** - **Disconnect** - **Position Error**.
+Like on the Amplifiers page, the parameters are grouped together logically. In addition, some alarms combine two alarms in one. For example, the **Wave Guide (WG) Switch** alarm and **WG connectivity** alarm are grouped into one alarm, with an output as follows: Alarm - No Alarm - Disconnected. Alarms related to the redundancy switch are also gathered into one group called **Redundancy Switch**, and the three alarms are named as follows: **Short** - **Disconnect** - **Position Error**.
 
 ### Web Interface
 

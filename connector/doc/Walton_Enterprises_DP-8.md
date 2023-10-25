@@ -14,7 +14,7 @@ The DP-8 is a remote control unit that communicates with a Local Control Power D
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The DP-8 is a remote control unit that communicates with a Local Control Power D
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -40,7 +40,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  -**IP address/host**: The polling IP of the device.
+  - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device. Range: 0-31.
 

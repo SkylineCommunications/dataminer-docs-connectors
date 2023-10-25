@@ -12,7 +12,7 @@ This connector can be used with all APC Smart-UPS models. It makes it possible t
 
 ### Version Info
 
-| **Range** | **Description**              | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description              | DCF Integration | Cassandra Compliant |
 |------------------|------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, added traps | No                  | No                      |
 
@@ -57,7 +57,7 @@ This page displays electrical information from the UPS input and output
 
 ### Configuration
 
-This is the main page for the configuration of the device. Here, you can set the **Rated Output Voltage**, **High and Low Transfer Voltages**, and **Return delay** from battery, as well as other miscellaneous settigns. The page also provides access to **Management**, **Control**, **Test**, and **Sync Control** settings.
+This is the main page for the configuration of the device. Here, you can set the **Rated Output Voltage**, **High and Low Transfer Voltages**, and **Return delay** from battery, as well as other miscellaneous settings. The page also provides access to **Management**, **Control**, **Test**, and **Sync Control** settings.
 
 ### Alarms
 
@@ -67,8 +67,9 @@ This page displays all the available **alarms** reported by the device.
 
 This page displays the **Traps** table as well as the **Total Traps** parameter and the following buttons
 
-- **Refresh Table** - refreshes the number of total traps, and deletes traps if total number exceeds **Max Traps**, or age exceeds **Max Age**
-- **Clean Up Config... -** opens a pop up that contains **Trap Clean Up Method, Max Traps, Max Age Traps,** and **Trap Clean Up Amount**
+- **Refresh Table**: Refreshes the number of total traps, and deletes traps if total number exceeds **Max Traps**, or age exceeds **Max Age**
+
+- **Clean Up Config**: Opens a subpage that contains **Trap Clean Up Method, Max Traps, Max Age Traps,** and **Trap Clean Up Amount**
 
 ### Outlet Groups
 

@@ -6,17 +6,16 @@ uid: Connector_help_WAGO_Kontakttechnik_750
 
 The **WAGO Kontakttechnik 750** can be used to monitor the WAGO 750-x **PLC** and its connected modules.
 
-The communication towards the PLC is done using **modbus**. As such, there are some restrictions on what can be requested from the PLC.
-More details can be found in the notes below.
+The communication towards the PLC is done using **modbus**. As such, there are some restrictions on what can be requested from the PLC. More details can be found in the notes below.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                | **Based on** | **System Impact**                               |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                | \-           | \-                                              |
-| 2.0.0.x \[SLC Main\] | Modules are automatically detected (in case of 750-880 or 750-881). Reviewed protocol to make sure everything can be supported. | \-           | Element data and trend/alarm info will be lost. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 2.0.0.x [SLC Main] | Modules are automatically detected (in case of 750-880 or 750-881). Reviewed connector to make sure everything can be supported. | - | Element data and trend/alarm info will be lost. |
 
 ### Product Info
 
@@ -29,8 +28,8 @@ More details can be found in the notes below.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -44,7 +43,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  -**IP address/host**: The polling IP of the device.
+  - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port used for modbus communication, by default 502.
 
 ### Initialization
@@ -84,6 +83,6 @@ Also, in some cases, you can modify **the format of the display keys** (used in 
 
 ## Notes
 
-The WAGO Kontakttechnik 750-x controller **does not allow all values to be read or set via** **modbus**. Certain values can only be read out and manipulated by running a custom program on the PLC itself. To read out and set these values, **custom** **markers** can be used by the program running in the PLC. These markers can then be read out by the element in DataMiner. To read and set these, you can add an entry in the **Markers** table (in range **2.0.0.x**). Each entry in that table will be read out every 5 seconds.
+The WAGO Kontakttechnik 750-x controller **does not allow all values to be read or set via modbus**. Certain values can only be read out and manipulated by running a custom program on the PLC itself. To read out and set these values, **custom markers** can be used by the program running in the PLC. These markers can then be read out by the element in DataMiner. To read and set these, you can add an entry in the **Markers** table (in range **2.0.0.x**). Each entry in that table will be read out every 5 seconds.
 
 This connector is **not able to automatically retrieve the number of inputs/outputs of 750-8100 (PFC100) modules** because this type does not support the same API as the other module types. In this case, you can manually add the registers you want to poll to the **Markers** table. These values will be retrieved every five seconds.

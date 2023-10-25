@@ -14,7 +14,7 @@ This connector is used to control and monitor the HDO613 module using the DVX bu
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main] | Initial version | No                  | Yes                     |
 
 ### Product Info
 
@@ -34,7 +34,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  -**IP address/host**: The polling IP of the serial gateway connected to the DVX Bus, e.g. *10.11.12.13.*
+  - **IP address/host**: The polling IP of the serial gateway connected to the DVX Bus, e.g. *10.11.12.13.*
   - **IP port**: The port of the Local TCP connection used by the serial gateway, e.g. *4001.*
   - **Bus address**: The bus address of the connected device, in the format *X.Y* (where X = Rack Number, Y = Slot Number).
 
