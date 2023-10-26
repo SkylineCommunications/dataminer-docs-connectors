@@ -2,31 +2,29 @@
 uid: Connector_help_Agilis_AUC28
 ---
 
-# Connector documentation template
+# Agilis AUC28
 
-The AUC28 Wideband Series Converter is a high performance, low cost and reliable RF indoor subsystem which is designed to provide the function of 
-frequency conversion of 70MHz/140MHz (±18MHz) or 140MHz (±36MHz) IF signals to the L-Band signals (950 – 2150) MHz or (950 – 1850) MHz on the transmit 
-side and convert the L-Band signals (950 – 2150) MHz or (950 – 1850) MHz to 70MHz/140MHz (±18MHz) or 140MHz (±36MHz) IF signals on the receive side.
+The AUC28 wideband series converter is an RF indoor subsystem that provides frequency conversion of 70 MHz/140 MHz (±18 MHz) or 140 MHz (±36 MHz) IF signals to L-Band signals (950 – 2150 MHz or 950 – 1850 MHz) on the transmit side and conversion of L-Band signals (950 – 2150 MHz or 950 – 1850 MHz) to 70 MHz/140 MHz (±18 MHz) or 140 MHz (±36 MHz) IF signals on the receive side.
 
 ## About
 
 ### Version Info
 
-| Range            | Key Features | Based on | System Impact |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main] | Initial version. | -           | -                |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-| Range | Supported Firmware |
-|-----------|------------------------|
-| 1.0.0.x   | -                     |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -40,10 +38,10 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, in this case 9600.
-  - **Databits**: Databits specified in the manual of the device, default value 8.
-  - **Stopbits**: Stopbits specified in the manual of the device, default value 1.
-  - **Parity**: Parity specified in the manual of the device, default value No.
+  - **Baudrate**: Baudrate specified in the manual of the device, in this case *9600*.
+  - **Databits**: Databits specified in the manual of the device, default value *8*.
+  - **Stopbits**: Stopbits specified in the manual of the device, default value *1*.
+  - **Parity**: Parity specified in the manual of the device, default value *No*.
 
 - Interface connection:
 
@@ -53,16 +51,12 @@ SERIAL CONNECTION:
 
 ## How to use
 
-There are four pages presented in the driver where you can monitor or configure the parameters to the device. 
-General page contains information about AUC, BUC, Alarms and other general parameters related to the device.
-Voltage and Temperature page contains information about current voltage and temperature of output and SSPA. Enables users to set SSPA temperature.
-Equipment Status page shows all information available on the equipment.
-Frequency and Attenuation page contains current information on temperature and attenuation and allows users to set uplink and downlink frequency and attenuation.
+The element has several pages where you can monitor or configure the parameters of the device:
 
-### Interfaces
+- The **General** page contains information about AUC, BUC, Alarms, and other general parameters related to the device.
 
-This page provides all the information about available interfaces.
+- The **Voltage and Temperature** page contains information about the current voltage and temperature of output and SSPA. You can set the SSPA temperature here.
 
-## Notes
+- The **Equipment Status** page shows all information available on the equipment.
 
-[In this section, you can provide additional information about the connector that does not fit in the other sections. Remove this section if it does not contain any info.]
+- The **Frequency and Attenuation** page contains current information on temperature and attenuation and allows you to set the uplink and downlink frequency and attenuation.
