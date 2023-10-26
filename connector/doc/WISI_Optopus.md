@@ -81,7 +81,7 @@ A pair of keys must be provided to the WISI elements. By default they must be lo
 
 The key files should be created using **Putty Key Generator**. They must be of type *RSA,* using the *Open SSH* format and with *1040* bits (see "1" in the picture below). Save the public key from the panel by copying it to a file with the name provided in **RSA Public Key File Name.** Then export the private key to a file using the menu and save the file with the same name as **RSA Private Key File Name** (see "2" in the picture below). There is no need to set a **Key passphrase**.
 
-![Untitled.png](~/images/WISI_Optopus_Untitled.png)
+![Untitled.png](~/connector/images/WISI_Optopus_Untitled.png)
 
 Notes:
 

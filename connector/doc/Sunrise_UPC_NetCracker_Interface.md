@@ -39,7 +39,7 @@ This connector uses a virtual connection and does not require any configuration 
 
 Any incoming job is registered in the Message Log table where the primary key is the Job Message Correlation ID.
 
-![Capture2.JPG](~/images/Sunrise_UPC_NetCracker_Interface_Capture2.JPG)
+![Capture2.JPG](~/connector/images/Sunrise_UPC_NetCracker_Interface_Capture2.JPG)
 
 The possible values for the Type column are: Activate, Replace or Deactivate, whereas for the State column are: Error or OK.
 

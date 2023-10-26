@@ -78,7 +78,7 @@ The **web service** API is an XML interface over HTTP. DataMiner can send reques
 
 The connector combines data coming from several tables in ScheduAll. Below, you can find an overview of the different tables in ScheduAll:
 
-![ScheduAll Structure.png](~/images/ScheduAll_Manager_ScheduAll_Structure.png)
+![ScheduAll Structure.png](~/connector/images/ScheduAll_Manager_ScheduAll_Structure.png)
 
 ## Usage (range 2.0.0.x / 2.0.1.x)
 

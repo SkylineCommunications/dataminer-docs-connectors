@@ -144,7 +144,7 @@ To download a file:
 
 1. Click **Download**. The following pop-up message will be displayed:
 
-   ![Download.PNG](~/images/Astro_U158_Edge_QAM_Download.PNG)
+   ![Download.PNG](~/connector/images/Astro_U158_Edge_QAM_Download.PNG)
 
 1. Enter the name of the file and click OK. The file will be saved in the following location:
 
@@ -154,7 +154,7 @@ To upload a file:
 
 1. Click **Upload**. The following pop-up window will be displayed:
 
-   ![Upload.PNG](~/images/Astro_U158_Edge_QAM_Upload.PNG)
+   ![Upload.PNG](~/connector/images/Astro_U158_Edge_QAM_Upload.PNG)
 
 1. In this window, **Module Name** lists all the Astro elements of the same type in the system. **Upload File Name** lists all the files available in the Documents folder of the selected module.
 
@@ -164,7 +164,7 @@ To upload a file:
 
 The connector allows you to upload a firmware archive from the local disk of the DMA:
 
-![SoftwareUpdate.PNG](~/images/Astro_U158_Edge_QAM_SoftwareUpdate.PNG)
+![SoftwareUpdate.PNG](~/connector/images/Astro_U158_Edge_QAM_SoftwareUpdate.PNG)
 
 The **Firmware File** parameter is used to select which file to upload. The drop-down list contains all the files present in the following folder on the DMA: C:\Skyline DataMiner\Documents\\Protocol Name\>.
 

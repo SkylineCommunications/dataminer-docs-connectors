@@ -36,7 +36,7 @@ This connector uses a virtual connection and does not require any configuration 
 
 An incoming job is registered in the Job Events table where the primary key is the Job Message Correlation ID.
 
-![Capture.JPG](~/images/Sunrise_UPC_RPD_Jobs_Capture.JPG)
+![Capture.JPG](~/connector/images/Sunrise_UPC_RPD_Jobs_Capture.JPG)
 
 The possible values for the Type column are: Activate, Replace or Deactivate, whereas for the State column are: Executed or Cancelled.
 

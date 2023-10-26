@@ -87,19 +87,19 @@ This page displays general information on the Slack team to which the element is
 
 This page contains a table with all users that are part of the Slack team.
 
-![Users.jpg](~/images/Slack_Messaging_Users.jpg)
+![Users.jpg](~/connector/images/Slack_Messaging_Users.jpg)
 
 ### Conversations
 
 This page contains a table listing all possible conversations (public channels, private channels, instant messaging) that messages can be sent to. The "Send Message" column allows you to quickly send a message to a specific conversation. The last received message is shown in the "Last Message" column.
 
-![Conversations.jpg](~/images/Slack_Messaging_Conversations.jpg)
+![Conversations.jpg](~/connector/images/Slack_Messaging_Conversations.jpg)
 
 ### Automation Scripts
 
 This page contains a table with all existing Automation scripts in DataMiner that can be executed via commands in Slack.
 
-![Scripts.jpg](~/images/Slack_Messaging_Scripts.jpg)
+![Scripts.jpg](~/connector/images/Slack_Messaging_Scripts.jpg)
 
 To refresh the content of this table, use the **Refresh** button.
 
@@ -128,7 +128,7 @@ The number of days that messages should remain in the table can be customized.
 
 On this page, the **OAuth access token** that should be used to communicate with the Slack API must be configured. The page also contains some parameters that display the current status of the authentication.
 
-![authentication.jpg](~/images/Slack_Messaging_authentication.jpg)
+![authentication.jpg](~/connector/images/Slack_Messaging_authentication.jpg)
 
 ### Websocket
 
