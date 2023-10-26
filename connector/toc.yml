@@ -1,5 +1,5 @@
-- name: DataMiner Connector Help
-  topicUid: index
+- name: DataMiner Connector Documentation
+  topicUid: connector_index
 - name: 2WCOM
   topicUid: Connector_help_2WCOM_DAB-4c
   items:
@@ -254,6 +254,11 @@
     topicUid: Connector_help_Agilent_N1996A
   - name: Agilent N9320B
     topicUid: Connector_help_Agilent_N9320B
+- name: Agilis
+  topicUid: Connector_help_Agilis_AUC28
+  items:
+  - name: Agilis AUC28
+    topicUid: Connector_help_Agilis_AUC28
 - name: AJA
   topicUid: Connector_help_AJA_IPR-10G2-HDMI
   items:
@@ -2650,6 +2655,8 @@
     topicUid: Connector_help_DEV_7000_-_TX
   - name: DEV 8120
     topicUid: Connector_help_DEV_8120
+  - name: DEV 9110-1993
+    topicUid: Connector_help_DEV_9110_1993
   - name: DEV Switch Module
     topicUid: Connector_help_DEV_Switch_Module
   - name: DEV Switch SNMP
@@ -2661,6 +2668,8 @@
 - name: DEVA Broadcast
   topicUid: Connector_help_DEVA_Broadcast_DB44
   items:
+  - name: DEVA Broadcast DB4005
+    topicUid: Connector_help_DEVA_Broadcast__DB4005
   - name: DEVA Broadcast DB44
     topicUid: Connector_help_DEVA_Broadcast_DB44
   - name: DEVA Broadcast DB45
@@ -5958,6 +5967,8 @@
     topicUid: Connector_help_Motorola_APEX1000
   - name: Motorola CAP-1000
     topicUid: Connector_help_Motorola_CAP-1000
+  - name: Motorola DSR-4410MD
+    topicUid: Connector_help_Motorola_DSR-4410MD
   - name: Motorola DSR-4460
     topicUid: Connector_help_Motorola_DSR-4460
   - name: Motorola DSR-6000
@@ -6065,6 +6076,8 @@
     topicUid: Connector_help_Moxa_ioLogik_E1210
   - name: Moxa ioLogik E1211
     topicUid: Connector_help_Moxa_ioLogik_E1211
+  - name: Moxa ioLogik E1212
+    topicUid: Connector_help_Moxa_ioLogik_E1212
   - name: Moxa ioLogik E1214
     topicUid: Connector_help_Moxa_ioLogik_E1214
   - name: Moxa ioLogik E1240
@@ -6151,35 +6164,6 @@
   items:
   - name: NBCS Roadkit Manager
     topicUid: Connector_help_NBCS_Roadkit_Manager
-- name: NBCU
-  topicUid: Connector_help_NBCU_Ad_Monitoring_Manifests
-  items:
-  - name: NBCU Ad Monitoring Manifests
-    topicUid: Connector_help_NBCU_Ad_Monitoring_Manifests
-  - name: NBCU CAG Incident Gateway
-    topicUid: Connector_help_NBCU_CAG_Incident_Gateway
-  - name: NBCU LEAP Collector
-    topicUid: Connector_help_NBCU_LEAP_Collector
-  - name: NBCU LEM Collector
-    topicUid: Connector_help_NBCU_LEM_Collector
-  - name: NBCU Manager
-    topicUid: Connector_help_NBCU_Manager
-  - name: NBCU Merlin Collector
-    topicUid: Connector_help_NBCU_Merlin_Collector
-  - name: NBCU Peacock Popup Event Collector
-    topicUid: Connector_help_NBCU_Peacock_Popup_Event_Collector
-  - name: NBCU Popup Event Manager APP
-    topicUid: Connector_help_NBCU_Popup_Event_Manager_APP
-  - name: NBCU SCTE Trap Collector
-    topicUid: Connector_help_NBCU_SCTE_Trap_Collector
-  - name: NBCU ServiceNow Prism
-    topicUid: Connector_help_NBCU_ServiceNow_Prism
-  - name: NBCU SkyPath Site Manager
-    topicUid: Connector_help_NBCU_SkyPath_Site_Manager
-  - name: NBCU VOD Manager APP
-    topicUid: Connector_help_NBCU_VOD_Manager_APP
-  - name: NBCU Witbe Maestro
-    topicUid: Connector_help_NBCU_Witbe_Maestro
 - name: ND Satcom
   topicUid: Connector_help_ND_Satcom_HPA_3412A
   items:
@@ -9088,6 +9072,8 @@
     topicUid: Connector_help_Telenor_CMDB_Provisioning
   - name: Telenor Common Onboarding Instances
     topicUid: Connector_help_Telenor_Common_Onboarding_Instances
+  - name: Telenor Customer Validation Manager
+    topicUid: Connector_help_Telenor_Customer_Validation_Manager
   - name: Telenor EPG Channel
     topicUid: Connector_help_Telenor_EPG_Channel
   - name: Telenor EPG Manager
@@ -9179,8 +9165,18 @@
     topicUid: Connector_help_Teleste_DMM_DVO902_8
   - name: Teleste DMM DVP532
     topicUid: Connector_help_Teleste_DMM_DVP532
+  - name: Teleste DMM HDO903
+    topicUid: Connector_help_Teleste_DMM_HDO903
+  - name: Teleste DMM HDO905
+    topicUid: Connector_help_Teleste_DMM_HDO905
+  - name: Teleste DMM HDO906
+    topicUid: Connector_help_Teleste_DMM_HDO906
   - name: Teleste DMM HDP230
     topicUid: Connector_help_Teleste_DMM_HDP230
+  - name: Teleste DMM DVP332
+    topicUid: Connector_help_Teleste_DMM_DVP332
+  - name: Teleste DMM DVP432
+    topicUid: Connector_help_Teleste_DMM_DVP432
   - name: Teleste DVX002
     topicUid: Connector_help_Teleste_DVX002
   - name: Teleste EMS
@@ -9249,22 +9245,18 @@
     topicUid: Connector_help_Teleste_HDO611_TSEMP_DVX
   - name: Teleste HDO613 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO613_TSEMP_DVX
+  - name: Teleste HDO905
+    topicUid: Connector_help_Teleste_HDO905
+  - name: Teleste HDO907
+    topicUid: Connector_help_Teleste_HDO907
+  - name: Teleste HDO908
+    topicUid: Connector_help_Teleste_HDO908
   - name: Teleste HDP301 TSEMP DVX
     topicUid: Connector_help_Teleste_HDP301_TSEMP_DVX
   - name: Teleste Luminato
     topicUid: Connector_help_Teleste_Luminato
   - name: Teleste TRM HDO775
     topicUid: Connector_help_Teleste_TRM_HDO775
-  - name: Teleste DMM DVP332
-    topicUid: Connector_help_Teleste_DMM_DVP332
-  - name: Teleste DMM DVP432
-    topicUid: Connector_help_Teleste_DMM_DVP432
-  - name: Teleste DMM HDO903
-    topicUid: Connector_help_Teleste_DMM_HDO903
-  - name: Teleste DMM HDO905
-    topicUid: Connector_help_Teleste_DMM_HDO905
-  - name: Teleste DMM HDO906
-    topicUid: Connector_help_Teleste_DMM_HDO906
 - name: Telestream
   topicUid: Connector_help_Telestream_Inspect_2110
   items:
@@ -9644,6 +9636,11 @@
   items:
   - name: VeEX AT1600
     topicUid: Connector_help_VeEX_AT1600
+- name: Velocix
+  topicUid: Connector_help_Velocix_Origin_Platform
+  items:
+  - name: Velocix Origin Platform
+    topicUid: Connector_help_Velocix_Origin_Platform
 - name: Verimatrix
   topicUid: Connector_help_Verimatrix_CSM
   items:

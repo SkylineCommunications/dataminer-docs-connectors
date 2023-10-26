@@ -3,17 +3,21 @@
     "content": [
       {
         "files": [
-          "connector_help/**.md",
+          "connector/**.md",
           "**/toc.yml",
           "toc.yml",
           "*.md"
         ]
       }
     ],
+        "sitemap": {
+      "baseUrl": "https://docs.dataminer.services",
+      "changefreq": "hourly"
+    },
   "resource": [
       {
         "files": [
-          "images/**"
+          "connector/images/**"
         ]
       }
     ],
