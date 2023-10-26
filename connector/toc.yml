@@ -4710,6 +4710,8 @@
     topicUid: Connector_help_Imagine_Communications_Platinum_IP3
   - name: Imagine Communications Platinum Router
     topicUid: Connector_help_Imagine_Communications_Platinum_Router
+  - name: Imagine Communications Platinum Router VX CQ Router
+    topicUid: Connector_help_Imagine_Communications_Platinum_VX_CQ_Router
   - name: Imagine Communications SelenioFlex
     topicUid: Connector_help_Imagine_Communications_SelenioFlex
   - name: Imagine Communications Selenio 1UHD1
