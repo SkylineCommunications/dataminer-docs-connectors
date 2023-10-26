@@ -9074,6 +9074,8 @@
     topicUid: Connector_help_Telenor_Common_Onboarding_Instances
   - name: Telenor Customer Validation Manager
     topicUid: Connector_help_Telenor_Customer_Validation_Manager
+  - name: Telenor Customer Validation Mediator
+    topicUid: Connector_help_Telenor_Customer_Validation_Mediator
   - name: Telenor EPG Channel
     topicUid: Connector_help_Telenor_EPG_Channel
   - name: Telenor EPG Manager
