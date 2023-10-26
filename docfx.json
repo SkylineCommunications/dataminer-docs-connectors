@@ -17,7 +17,7 @@
   "resource": [
       {
         "files": [
-          "images/**"
+          "connector/images/**"
         ]
       }
     ],

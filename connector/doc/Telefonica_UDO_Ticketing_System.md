@@ -48,7 +48,7 @@ In order to use the **Telefonica UDO Ticketing System** connector, you must firs
 
 When the script has been imported, create a Correlation rule that will execute the Automation script whenever the Ineoquest iVMS generates or clears an alarm related to the video channels. The screenshot below illustrates how to do so.
 
-![Correlation.jpg](~/images/Telefonica_UDO_Ticketing_System_Correlation.jpg)
+![Correlation.jpg](~/connector/images/Telefonica_UDO_Ticketing_System_Correlation.jpg)
 
 For more information on the Correlation module, see [DataMiner Correlation](https://aka.dataminer.services/Correlation).
 
@@ -88,8 +88,8 @@ This range introduces a change to where the **CATV Channels** information comes 
 
 This range also introduces the possibility to choose elements that run the **Ineoquest iVMS ASM** connector. This means that the following change to the Correlation rule is needed:
 
-![Alarm filter configuration](~/images/Telefonica_UDO_Ticketing_System_Captura_de_pantalla_2021-10-19_174320.png)
+![Alarm filter configuration](~/connector/images/Telefonica_UDO_Ticketing_System_Captura_de_pantalla_2021-10-19_174320.png)
 
 You can also disable the Correlation rule that creates and closes the tickets, in order to do this manually instead. For this purpose, you need to save a **HyperLinks.xml** file in the *C:\Skyline DataMiner* folder and add the Automation script **Update Manual UDO Ticket** on the DMA. After that, you just have to right-click the corresponding alarm and select **Ticket UDO** \> **Create/Close UDO Ticket** as shown in the image below.
 
-![Ticket UDO menu](~/images/Telefonica_UDO_Ticketing_System_Captura_de_pantalla_2021-10-20_134522.png)
+![Ticket UDO menu](~/connector/images/Telefonica_UDO_Ticketing_System_Captura_de_pantalla_2021-10-20_134522.png)

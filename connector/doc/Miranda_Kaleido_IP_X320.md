@@ -112,7 +112,7 @@ The page also contains two page buttons:
 
   Note that the Transport Stream, Services, Teletext and Card health tables are filled via the imported Excel file, located in the folder indicated by the File Path parameter or in the element document folder. After these are filled in, the data is polled.
 
-  ![Example Excel Sheet Kaleido.png](~/images/Miranda_Kaleido_IP_X320_Example_Excel_Sheet_Kaleido.png)
+  ![Example Excel Sheet Kaleido.png](~/connector/images/Miranda_Kaleido_IP_X320_Example_Excel_Sheet_Kaleido.png)
 
 - **On-Air Services**: Opens a window where you can edit the on-air service times.
 

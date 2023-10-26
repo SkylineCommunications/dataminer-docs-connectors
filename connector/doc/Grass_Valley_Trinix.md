@@ -49,9 +49,9 @@ SERIAL CONNECTION:
 
 Before you create the element in DataMiner, you must configure an RCP client in the Encore system. To do this, you need to know the IP address of the DMA that will be communicating with the Encore controller. Until you configure the DataMiner server (DMA) as an RCP client, the Encore controller will refuse any attempts to connect, and this connector will fail. The Encore controller screen should look like the screenshots below.
 
-![Encore configuration.png](~/images/Grass_Valley_Trinix_Encore_configuration.png)
+![Encore configuration.png](~/connector/images/Grass_Valley_Trinix_Encore_configuration.png)
 
-![Encore configuration flags.png](~/images/Grass_Valley_Trinix_Encore_configuration_flags.png)
+![Encore configuration flags.png](~/connector/images/Grass_Valley_Trinix_Encore_configuration_flags.png)
 
 ## Usage
 

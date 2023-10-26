@@ -67,19 +67,19 @@ Here is an example command using the **AWS CLI** to create a stack with the name
 > --parameters **ParameterKey=InstanceType,ParameterValue=t2.micro ParameterKey=KeyName,ParameterValue=my-key-pair \\**
 > --capabilities **CAPABILITY_IAM CAPABILITY_NAMED_IAM**
 
-![createStack.JPG](~/images/Amazon_AWS_CloudFormation_createStack.JPG)
+![createStack.JPG](~/connector/images/Amazon_AWS_CloudFormation_createStack.JPG)
 
-![create stack.png](~/images/Amazon_AWS_CloudFormation_create_stack.png)
+![create stack.png](~/connector/images/Amazon_AWS_CloudFormation_create_stack.png)
 
 During the creation process, the **Status** column will contain the value *Create in Progress*. If the creation was successful, it will contain the value *Created*.
 
-![createStackProgress.JPG](~/images/Amazon_AWS_CloudFormation_createStackProgress.JPG)
+![createStackProgress.JPG](~/connector/images/Amazon_AWS_CloudFormation_createStackProgress.JPG)
 
 If an error happens during the creation of a stack, a pop-up window will display an error message. You can then find more details on the **Stack Errors page** and in the **element log file**.
 
-![createStackError.JPG](~/images/Amazon_AWS_CloudFormation_createStackError.JPG)
+![createStackError.JPG](~/connector/images/Amazon_AWS_CloudFormation_createStackError.JPG)
 
-![createStackErrorPage.JPG](~/images/Amazon_AWS_CloudFormation_createStackErrorPage.JPG)
+![createStackErrorPage.JPG](~/connector/images/Amazon_AWS_CloudFormation_createStackErrorPage.JPG)
 
 ### Deleting a Stack
 
@@ -91,9 +91,9 @@ The **Status** column will then display *Delete in Progress* until the stack is 
 
 After you create a stack, you can link it to DataMiner Stack Deployment by right-clicking the relevant row in the Stacks table and selecting **Link with Stack Deployment.** You will then be able to select the right deployment in a dialog box.
 
-![LinkStackDeploymentContextMenu.JPG](~/images/Amazon_AWS_CloudFormation_LinkStackDeploymentContextMenu.JPG)
+![LinkStackDeploymentContextMenu.JPG](~/connector/images/Amazon_AWS_CloudFormation_LinkStackDeploymentContextMenu.JPG)
 
-![LinkStackDeployment.JPG](~/images/Amazon_AWS_CloudFormation_LinkStackDeployment.JPG)
+![LinkStackDeployment.JPG](~/connector/images/Amazon_AWS_CloudFormation_LinkStackDeployment.JPG)
 
 ### Unlinking a Stack from Stack Deployment
 
@@ -103,7 +103,7 @@ To remove the link between a stack and a stack deployment, right-click the relev
 
 By default the element will hold 10 Stack Deployment entries. You can create, update, and delete entries via the right-click menu of the Stacks Deployment table. If you need to create many entries at the same time, use the **Create Stacks Deployments** button.
 
-![StacksDeployment.JPG](~/images/Amazon_AWS_CloudFormation_StacksDeployment.JPG)
+![StacksDeployment.JPG](~/connector/images/Amazon_AWS_CloudFormation_StacksDeployment.JPG)
 
 ### External Request - Create Stack
 
