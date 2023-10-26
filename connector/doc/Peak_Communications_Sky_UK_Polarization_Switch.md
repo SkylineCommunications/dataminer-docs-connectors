@@ -20,7 +20,7 @@ A serial connection is used in order to retrieve and configure the information o
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | -                  |
+| 1.0.0.x | Unknown            |
 
 ## Configuration
 
