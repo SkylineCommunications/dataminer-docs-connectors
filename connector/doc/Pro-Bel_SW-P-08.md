@@ -16,6 +16,8 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.1.x   | QVC Italy customer-specific branch (with hard-coded matrix labels). | \-           | \-                |
 | 1.0.2.x   | DCF implementation.                                                 | \-           | \-                |
 | 1.0.3.x   | Reviewed connector. Implemented latest Matrix Community Class.      | \-           | \-                |
+| 1.0.4.x   | Additional functionalities added.                                   | \-           | \-                |
+| 1.0.5.x   | Dual Controller Functionality implemented.                          | \-           | \-                |
 
 ### Product Info
 
@@ -25,6 +27,8 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.1.x   | \-                     |
 | 1.0.2.x   | \-                     |
 | 1.0.3.x   | \-                     |
+| 1.0.4.x   | \-                     |
+| 1.0.5.x   | \-                     |
 
 ### System Info
 
@@ -34,6 +38,8 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
 | 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.4.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.5.x   | Yes                 | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
@@ -58,7 +64,7 @@ SERIAL CONNECTION:
 
 ## Usage
 
-The element consists of the following pages: **Matrix** and **General**.
+The element consists of the following pages: **Matrix**, **General**, **Inputs/Outputs** and **Labels**.
 
 ### Matrix
 
@@ -75,3 +81,18 @@ This page contains the following parameters:
 - **Number of Wrong CRCs Received**: The number of wrong CRCs received on a message.
 - **Name Length**: The number of characters of a name.
 - **Refresh Names:** This button allows you to refresh the associated destination and source names.
+
+Starting from version 1.0.5.X, this page also includes a Subpage **Cluster**, which contains the **Dynamic Connections** table, and the **Active Connection** and **Dynamic Polling IP** parameters.
+
+### Inputs/Outputs
+
+This page contains the **Inputs** and **Outputs** tables, which contain information about the respective Inputs and Outputs.
+
+### Labels
+
+This page contains the **Matrix Labels** table, which contains label information.
+
+## Notes
+
+Range 1.0.5.X includes the implementation of Dual Controller functionality. Specifically, the main connection dynamically switches in case of a loss of the current connection with one of the devices in the cluster. This range is compatible from DataMiner **10.3.11.0 - 13456**.
+
