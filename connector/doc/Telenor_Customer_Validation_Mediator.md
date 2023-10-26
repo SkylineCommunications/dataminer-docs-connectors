@@ -1,5 +1,5 @@
 ---
-uid: Telenor_Customer_Validation_Mediator
+uid: Connector_help_Telenor_Customer_Validation_Mediator
 ---
 
 # Telenor Customer Validation Manager
