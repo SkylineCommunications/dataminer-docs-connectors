@@ -85,7 +85,7 @@ To configure the entire system properly, as a **DataMiner** **System Administrat
 
    **If the folder defined in the parameter does not exist, you will need to create it**.
 
-   ![Captura de pantalla 2021-10-19 174320.png](~/images/Skyline_ICMP_Platform_Manager_Captura_de_pantalla_2021-10-19_174320.png)
+   ![Captura de pantalla 2021-10-19 174320.png](~/connector/images/Skyline_ICMP_Platform_Manager_Captura_de_pantalla_2021-10-19_174320.png)
 
    Note that headers must be capitalized, and the file name should follow the format **DMAID_ElementID_ICMP**.
 

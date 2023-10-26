@@ -43,7 +43,7 @@ Due to the nature of this device, several packages need to be installed and conf
 
    You should see the following applications (the ones marked with a red box are the ones we will use):
 
-  ![TekVisa AppList.png](~/images/Tektronix_SignalVu_TekVisa_AppList.png)
+  ![TekVisa AppList.png](~/connector/images/Tektronix_SignalVu_TekVisa_AppList.png)
 
 ## Installation and configuration
 
@@ -55,7 +55,7 @@ For this system to be accessed from the DataMiner server, some configuration is 
 
    There you should see a GPIB interface under **Instruments**. It should be something like this:
 
-   ![01_Configuration.png](~/images/Tektronix_SignalVu_01_Configuration.png)
+   ![01_Configuration.png](~/connector/images/Tektronix_SignalVu_01_Configuration.png)
 
    If there is no GPIB present, go to the SignalVU User Manual and follow the Troubleshooting guide.
 
@@ -63,17 +63,17 @@ For this system to be accessed from the DataMiner server, some configuration is 
 
    This application does not run in a normal window. To see if it is running, go to the taskbar (near the clock) and right-click the TekVISA icon.
 
-   ![02_Configuration.png](~/images/Tektronix_SignalVu_02_Configuration.png)
+   ![02_Configuration.png](~/connector/images/Tektronix_SignalVu_02_Configuration.png)
 
 1. Click **Start VXI-11 Server** (option surrounded by the red square in the image above).
 
 1. Click **Server Properties** and ensure that both options are set to start when Windows starts, as illustrated below.
 
-   ![03_Configuration.png](~/images/Tektronix_SignalVu_03_Configuration.png)
+   ![03_Configuration.png](~/connector/images/Tektronix_SignalVu_03_Configuration.png)
 
 1. Hover the mouse over the TekVisa LAN Server icon to check if you see an IP address (the same as your computer).
 
-   ![04_Configuration.png](~/images/Tektronix_SignalVu_04_Configuration.png)
+   ![04_Configuration.png](~/connector/images/Tektronix_SignalVu_04_Configuration.png)
 
    This indicates that the server is ready to pass the packets to the SignalVU Virtual GPIB. You can find more technical information on the Tektronix home page or in the SignalVu User Manual.
 
@@ -85,23 +85,23 @@ On the DataMiner server, the National Instruments NiVISA package must be configu
 
 1. Open the NiMax application that was previously installed on the server.
 
-   ![04b_Configuration.png](~/images/Tektronix_SignalVu_04b_Configuration.png)
+   ![04b_Configuration.png](~/connector/images/Tektronix_SignalVu_04b_Configuration.png)
 
 1. In the tree view on the left, go to **Devices and Interfaces** \> **Network Devices**.
 
 1. Right-click Network Devices and select **Create New VISA TCP/IP Resource**.
 
-   ![05_Configuration.png](~/images/Tektronix_SignalVu_05_Configuration.png)
+   ![05_Configuration.png](~/connector/images/Tektronix_SignalVu_05_Configuration.png)
 
    A new window will open with several options.
 
 1. In the new window, select **Auto-Detect of LAN Instrument** and click **Next**.
 
-   ![06_Configuration.png](~/images/Tektronix_SignalVu_06_Configuration.png)
+   ![06_Configuration.png](~/connector/images/Tektronix_SignalVu_06_Configuration.png)
 
 1. Select **Select intrument(s) detected on local subnet**.
 
-   ![07_Configuration.png](~/images/Tektronix_SignalVu_07_Configuration.png)
+   ![07_Configuration.png](~/connector/images/Tektronix_SignalVu_07_Configuration.png)
 
 1. When all results are displayed in the box below, select the desired device.
 
@@ -111,7 +111,7 @@ On the DataMiner server, the National Instruments NiVISA package must be configu
 
    The options tree will be updated and a LAN device will be created.
 
-   ![09_Configuration.png](~/images/Tektronix_SignalVu_09_Configuration.png)
+   ![09_Configuration.png](~/connector/images/Tektronix_SignalVu_09_Configuration.png)
 
 1. Close the window.
 

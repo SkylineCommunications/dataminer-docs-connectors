@@ -254,6 +254,11 @@
     topicUid: Connector_help_Agilent_N1996A
   - name: Agilent N9320B
     topicUid: Connector_help_Agilent_N9320B
+- name: Agilis
+  topicUid: Connector_help_Agilis_AUC28
+  items:
+  - name: Agilis AUC28
+    topicUid: Connector_help_Agilis_AUC28
 - name: AJA
   topicUid: Connector_help_AJA_IPR-10G2-HDMI
   items:
@@ -5124,6 +5129,8 @@
     topicUid: Connector_help_Kordia_FMS_Manager
   - name: Kordia NPC Interface
     topicUid: Connector_help_Kordia_NPC_Interface
+  - name: Kordia ServiceNow Ticket Manager
+    topicUid: Connector_help_Kordia_ServiceNow_Ticket_Manager
 - name: KPN
   topicUid: Connector_help_KPN_Digitenne_Overview_Manager
   items:

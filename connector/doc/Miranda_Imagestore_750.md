@@ -123,4 +123,4 @@ From version 1.0.2.20 onwards, the connector can prevent a potential problem whe
 
 This is an example of what this should look like:
 
-![MirandaImagestore750.png](~/images/Miranda_Imagestore_750_MirandaImagestore750.png)
+![MirandaImagestore750.png](~/connector/images/Miranda_Imagestore_750_MirandaImagestore750.png)
