@@ -5129,6 +5129,8 @@
     topicUid: Connector_help_Kordia_FMS_Manager
   - name: Kordia NPC Interface
     topicUid: Connector_help_Kordia_NPC_Interface
+  - name: Kordia ServiceNow Ticket Manager
+    topicUid: Connector_help_Kordia_ServiceNow_Ticket_Manager
 - name: KPN
   topicUid: Connector_help_KPN_Digitenne_Overview_Manager
   items:
