@@ -22,6 +22,12 @@ A serial connection is used in order to retrieve and configure the information o
 |---------|--------------------|
 | 1.0.0.x | Unknown            |
 
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+
 ## Configuration
 
 ### Connections
