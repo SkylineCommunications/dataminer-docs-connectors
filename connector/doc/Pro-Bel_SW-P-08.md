@@ -17,7 +17,7 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.2.x   | DCF implementation.                                                 | \-           | \-                |
 | 1.0.3.x   | Reviewed connector. Implemented latest Matrix Community Class.      | \-           | \-                |
 | 1.0.4.x   | Additional functionalities added.                                   | \-           | \-                |
-| 1.0.5.x   | Dual Controller Functionality implemented.                          | \-           | \-                |
+| 1.0.5.x   | Dual Controller Functionality implemented.                          | \-           | Minimum Required Version 10.3.11.0 - 13456                |
 
 ### Product Info
 
@@ -82,7 +82,7 @@ This page contains the following parameters:
 - **Name Length**: The number of characters of a name.
 - **Refresh Names:** This button allows you to refresh the associated destination and source names.
 
-Starting from version 1.0.5.X, this page also includes a Subpage **Cluster**, which contains the **Dynamic Connections** table, and the **Active Connection** and **Dynamic Polling IP** parameters.
+Starting from range 1.0.5.X, this page also includes a Subpage **Cluster**, which contains the **Dynamic Connections** table, and the **Active Connection** and **Dynamic Polling IP** parameters.
 
 ### Inputs/Outputs
 
