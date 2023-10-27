@@ -6979,6 +6979,8 @@
     topicUid: Connector_help_Peak_Communications_RCU100_SNMP
   - name: Peak Communications RCUH200
     topicUid: Connector_help_Peak_Communications_RCUH200
+  - name: Peak Communications Sky UK Polarization Switch
+    topicUid: Connector_help_Peak_Communications_Sky_UK_Polarization_Switch
   - name: Peak Communications UPC7000 Series
     topicUid: Connector_help_Peak_Communications_UPC7000_Series
 - name: PEAK System
