@@ -46,7 +46,7 @@ SERIAL CONNECTION:
 
 ### System Setup
 
-![2016-06-03 13_14_11-CPI Comm Protocols.vsdx - Visio Standard.png](~/images/CPI_K4D72C_2016-06-03_13_14_11-CPI_Comm_Protocols.vsdx_-_Visio_Standard.png)
+![2016-06-03 13_14_11-CPI Comm Protocols.vsdx - Visio Standard.png](~/connector/images/CPI_K4D72C_2016-06-03_13_14_11-CPI_Comm_Protocols.vsdx_-_Visio_Standard.png)
 
 ## How to use
 

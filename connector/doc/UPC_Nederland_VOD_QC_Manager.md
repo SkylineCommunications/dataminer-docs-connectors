@@ -4,7 +4,7 @@ uid: Connector_help_UPC_Nederland_VOD_QC_Manager
 
 # UPC Nederland VOD QC Manager
 
-The **UPCN VOD QC Manager** is a **virtual** connector. It's used to manage the dataflow between the **UPCN VOD Workflow Manager** and the **Digimetrics Aurora.**
+The **UPCN VOD QC Manager** is a **virtual** connector. It is used to manage the dataflow between the **UPCN VOD Workflow Manager** and the **Digimetrics Aurora.**
 
 ## About
 
@@ -26,25 +26,25 @@ There are some extra **configurations** that need to be done before the connecto
 
 ### General
 
-On the **general** page the settings concerning the inter element communication are found.
+On the **General** page, the settings concerning the inter-element communication can be found.
 
-The **Application DMAid/Eid** parameter needs to be set with the **dma id** and **element id** of the **UPCN VOD Workflow Manager.** Otherwhise no assets will be received.
+The **Application DMAid/Eid** parameter needs to be set with the **DMA ID** and **element ID** of the **UPCN VOD Workflow Manager**. Otherwise no assets will be received.
 
-In the **Server** table it's possible to add **Aurora** servers. Before communication with these elements is started, the column **ST DMAid/Eid** needs to be filled in. Other settable columns are: server **Name, QC Type** and **Report Path**.
+In the **Server** table, you can add **Aurora** servers. Before communication with these elements is started, the column **ST DMAid/Eid** needs to be filled in. Other configurable columns contain the server **Name, QC Type** and **Report Path**.
 
 ### QCA
 
 The **QCA** page contains the following parameters:
 
-\-**Queue Time QC-A**: displays the current queue time, this parameter is used for the internal asset processing logic.
+- **Queue Time QC-A**: displays the current queue time, this parameter is used for the internal asset processing logic.
 
-\-**Queue Time for Extra QC-A**: is a settable parameter which defines how big the **Queue Time QC-A** should be before changing a **QC-B** server into a **QC-A** server.
+- **Queue Time for Extra QC-A**: is a settable parameter which defines how big the **Queue Time QC-A** should be before changing a **QC-B** server into a **QC-A** server.
 
-\-**Queue Time for Skipping**: is a settable parameter which defines how big the **Queue Time QC-A** should be before entirely skipping the asset.
+- **Queue Time for Skipping**: is a settable parameter which defines how big the **Queue Time QC-A** should be before entirely skipping the asset.
 
-\-**QCA Estimated Processing Time**: is a settable parameter which is needed to calculate the current **Queue Time QC-A**.
+- **QCA Estimated Processing Time**: is a settable parameter which is needed to calculate the current **Queue Time QC-A**.
 
-\-**Assets QC-A Table**: contains all the assets which are approved to be sent to the **Aurora QC-A** servers.
+- **Assets QC-A Table**: contains all the assets which are approved to be sent to the **Aurora QC-A** servers.
 
 ### QCB
 
@@ -52,6 +52,6 @@ This page will contain data concerning assets that are sent to a **QCB** server.
 
 ### Templates
 
-Each asset contains 6 content flags: **ADI, Movie, Poster, Box_Cover, Preview** and **Promo**. For every possible combination of these components (2<sup>6</sup>=64), there can be a template defined in the **Aurora** server. This page links the 6 components to a certain **Template**. It's needed to always have a template defined for the components in an incoming asset, otherwhise this asset will be skipped.
+Each asset contains 6 content flags: **ADI, Movie, Poster, Box_Cover, Preview** and **Promo**. For every possible combination of these components (2<sup>6</sup>=64), there can be a template defined in the **Aurora** server. This page links the 6 components to a certain **Template**. A template always has to be defined for the components in an incoming asset, otherwise this asset will be skipped.
 
-To define a template, just go to the correct combination of the 6 components, and select in the **TT Name** column a valid **Template.**
+To define a template, just go to the correct combination of the 6 components, and select in the **TT Name** column a valid **Template**.

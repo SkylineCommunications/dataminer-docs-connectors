@@ -36,7 +36,7 @@ SNMP CONNECTION:
 
 - **Device address**: Indicates the used port, e.g. *1*.
 
-- The bus address will be checked after startup and before the element polls the device. An **invalid bus address** will result in an error message in the system log.
+  - The bus address will be checked after startup and before the element polls the device. An **invalid bus address** will result in an error message in the system log.
   - You can change the bus address when editing the element. Note that this will result in a restart of the element.
 
 SNMP Settings:
@@ -64,7 +64,7 @@ Via page buttons, you can access the following subpages:
 
 - **Motor Configuration**: Contains settings that allow you to configure the motors, as well as fault vectors and speed settings, and information about the current NGC Serial Bus Condition.
 - **Configuration**: Contains antenna settings, including threshold and offset values, elevation and polarization limits, jog settings, etc.
-- **Bus Devices Configuration**: Contains parameters that allow you to enable or disable devices connected to the serial bus**.**
+- **Bus Devices Configuration**: Contains parameters that allow you to enable or disable devices connected to the serial bus.
 
 ### Receiver
 

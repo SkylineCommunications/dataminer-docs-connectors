@@ -40,7 +40,7 @@ This range allows you to select one of the following functionalities: **Concaten
 
 Note: It is possible to put a matrix virtualization on top of another matrix virtualization to **support multiple functionalities**.
 
-![Overview.png](~/images/Generic_Matrix_Virtualization_Overview.png)
+![Overview.png](~/connector/images/Generic_Matrix_Virtualization_Overview.png)
 
 To be able to build the matrix virtualization on top of matrix elements (which we will refer to as children) there has to be a **Status String** (which indicates the state of the matrix) available on these children.
 
@@ -88,7 +88,7 @@ The **Output CSV** file must have the following columns: '*Output;Label;Matrix;C
 
 The above can be visualized as follows:
 
-![Concat.png](~/images/Generic_Matrix_Virtualization_Concat.png)
+![Concat.png](~/connector/images/Generic_Matrix_Virtualization_Concat.png)
 
 ### Configuration of CSV files for Tie-Lines method
 
@@ -108,7 +108,7 @@ The **Tie-Line CSV** file must have the following columns: "*Tie-Line;Source (ma
 
 The above can be visualized as follows:
 
-![TIELines.png](~/images/Generic_Matrix_Virtualization_TIELines.png)
+![TIELines.png](~/connector/images/Generic_Matrix_Virtualization_TIELines.png)
 
 ### Configuration of CSV files for Dual Stream method
 
@@ -124,7 +124,7 @@ The **Output CSV** file has to have the following columns: '"*Output;Label;Matri
 
 The above can be visualized as follows:
 
-![DualStream.png](~/images/Generic_Matrix_Virtualization_DualStream.png)
+![DualStream.png](~/connector/images/Generic_Matrix_Virtualization_DualStream.png)
 
 ### Configuration of element connections
 

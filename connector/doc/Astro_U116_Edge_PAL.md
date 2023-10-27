@@ -146,7 +146,7 @@ This is how you can upload/download configuration files to the device:
 
 - To **download** a file, click *Download*. The following pop-up window will be displayed:
 
-  ![Download.PNG](~/images/Download.PNG)
+  ![Download.PNG](~/connector/images/Download.PNG)
 
   Enter the name of the file then click on `OK'. The file will be saved at this location:
 
@@ -154,7 +154,7 @@ This is how you can upload/download configuration files to the device:
 
 - To **upload** a file, click *Upload*. The following pop-up window will be displayed:
 
-  ![Upload.PNG](~/images/Upload.PNG)
+  ![Upload.PNG](~/connector/images/Upload.PNG)
 
   **Module Name** lists all the Astro elements of the same type in the system.
 
@@ -166,7 +166,7 @@ This is how you can upload/download configuration files to the device:
 
 The connector allows the user to upload a firmware archive from the local disk of the DMA:
 
-![SoftwareUpdate.PNG](~/images/Astro_U116_Edge_PAL_SoftwareUpdate.PNG)
+![SoftwareUpdate.PNG](~/connector/images/Astro_U116_Edge_PAL_SoftwareUpdate.PNG)
 
 The **Firmware File** parameter is used to select which file to upload. The dropdown lists all the files present in the DMA hard drive at the location: C:\Skyline DataMiner\Documents\\Protocol Name\>.
 

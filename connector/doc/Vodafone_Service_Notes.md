@@ -62,8 +62,8 @@ This connector has a Visio file available to allow more user-friendly interactio
 
 Visio icons reference:
 
-![notes.png](~/images/Vodafone_Service_Notes_notes.png) Opens the note visualizer.
+![notes.png](~/connector/images/Vodafone_Service_Notes_notes.png) Opens the note visualizer.
 
-![add.png](~/images/Vodafone_Service_Notes_add.png)Opens a dialog where you can specify the title and the note you want to add.
+![add.png](~/connector/images/Vodafone_Service_Notes_add.png)Opens a dialog where you can specify the title and the note you want to add.
 
-![edit.png](~/images/Vodafone_Service_Notes_edit.png)Opens a dialog where you can edit a title and content.
+![edit.png](~/connector/images/Vodafone_Service_Notes_edit.png)Opens a dialog where you can edit a title and content.

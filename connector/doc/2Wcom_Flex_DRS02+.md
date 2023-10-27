@@ -12,7 +12,7 @@ The **2Wcom Flex DSR02+** is an integrated receiver-decoder (IRD). This connecto
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ The **2Wcom Flex DSR02+** is an integrated receiver-decoder (IRD). This connecto
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | No                  | No                      | -                    | -                      |
 
 ## Configuration
 
@@ -42,7 +42,7 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device default: *public.*
-- **Set community string**: The community string used when setting values on the device default: *private*).
+- **Set community string**: The community string used when setting values on the device default: *private*.
 
 ### Initialization
 
@@ -62,7 +62,7 @@ The element consists of the data pages detailed below.
 
 ### General
 
-This page contains general parameters such as the **Hostname** and the general system information. In addition, three page buttons are available, which display more information about **SNTP**, **SNMP,** and **Service Info**.
+This page contains general parameters such as the **Hostname** and the general system information. In addition, three page buttons are available, which display more information about **SNTP**, **SNMP**, and **Service Info**.
 
 There is a button that allows you to restart the device (**Restart Device**) and a button to refresh the data (**Refresh**).
 
@@ -87,7 +87,7 @@ The page contains six page buttons, which display the following subpages:
 - **Tuner State**: Displays parameters such as RF Power Value, C/N Value, CFO Error Value, AGC, State, CE State, SYM Time State, Carrier State, FEC Locked State, Locked State, Puncture Rate, Viterbi/LDPC BER Value, and RS/BCH BER Value.
 - **Input Source**: Contains a table with information about the input source state.
 - **DTE State**: Contains a table with information about the DTE state.
-- **Audio State**: Contains a table with information about the audio state**.**
+- **Audio State**: Contains a table with information about the audio state.
 
 ### Events
 

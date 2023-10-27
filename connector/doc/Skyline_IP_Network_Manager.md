@@ -14,7 +14,7 @@ In order to use the IP Network Manager, you will need at least DataMiner version
 
 Initially, the application will not hold any devices to manage. It is therefore necessary to perform a discovery before you can start using the IP Network Manager. For this, you can use the **Discovery Wizard** of the application.
 
-![IPNetworkManager_Flow.png](~/images/Skyline_IP_Network_Manager_IPNetworkManager_Flow.png)
+![IPNetworkManager_Flow.png](~/connector/images/Skyline_IP_Network_Manager_IPNetworkManager_Flow.png)
 
 ## How to Use
 
@@ -28,7 +28,7 @@ The map page shows the network devices that the application is managing. An icon
 
 | Icon | Device Type |
 |--|--|
-| ![IPNetworkManager_IconServerLinked.png](~/images/Skyline_IP_Network_Manager_IPNetworkManager_IconServerLinked.png) | Server |
+| ![IPNetworkManager_IconServerLinked.png](~/connector/images/Skyline_IP_Network_Manager_IPNetworkManager_IconServerLinked.png) | Server |
 |  | Router |
 |  | Switch |
 |  | Unknown |

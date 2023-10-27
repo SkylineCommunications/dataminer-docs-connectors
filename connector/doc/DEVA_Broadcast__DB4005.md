@@ -20,7 +20,7 @@ The device monitors FM channels with a round-robin system. It keeps track of whi
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | -                      |
+| 1.0.0.x   | 2.1.2117 (2023/02/17)  |
 
 ## Configuration
 

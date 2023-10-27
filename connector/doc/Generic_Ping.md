@@ -47,7 +47,7 @@ The number of ping requests per poll cycle can be specified in the **Pings per C
 In the **Jitter** section of the table, you can configure the size (number of ping commands) and frequency intervals of ping bursts that will be used to measure jitter. There is also a separate **Jitter** **Admin Status** that can be used to enable or disable the measuring of jitter. This is because the measurement is done via a separate polling engine. In terms of configuration, jitter permits the modification of three key values that will modify the behavior of this separate polling engine. **Jitter Interval** and **Jitter Ping** **Interval** refer to the amount of time (in seconds and milliseconds respectively) that should pass between each burst of pings sent by the polling engine, as well as each individual ping in that burst. **Jitter Pings per Cycle** refers to the quantity of pings to be sent out as part of the jitter measurement.
 
 For example, the image below depicts a sequence of 3 ping bursts. The default settings use a **Jitter Interval** of 2 seconds, a **Jitter Ping Interval** of 15 milliseconds, and 4 **Jitter Pings per Cycle**.
-![ping sequence.jpg](~/images/Generic_Ping_ping_sequence.jpg)
+![ping sequence.jpg](~/connector/images/Generic_Ping_ping_sequence.jpg)
 To calculate the jitter, the polling engine sends out a burst of pings in accordance with the **Jitter Pings per Cycle** value. The latency value of these pings is stored in a buffer, and the delta between consecutive latency values is calculated. The table will then display the minimum and maximum of these delta values, as well as the average delta value, which will represent the measured jitter of the burst of pings.
 
 A key aspect of the jitter features is that the calculations can arrive at more or less precise measurements based on the input values. For example, if you want highly accurate information about the jitter in the communication with a device, you can configure the number of pings in a burst to be high and the intervals between each burst and its pings to be low. Alternatively, you can reduce the number of pings in a burst and raise the intervals to derive a less precise jitter measurement but not saturate a device with frequent communication.
@@ -95,7 +95,7 @@ The older available operations are:
 
   - Example (underlined values are mandatory for this operation):
 
-    ![Example](~/images/Generic_Ping_example.png)
+    ![Example](~/connector/images/Generic_Ping_example.png)
 
 - **EditConfigs**: This command can update the follow configuration:
 
@@ -117,4 +117,4 @@ The older available operations are:
 
     - Example (underlined values are mandatory for this operation; configuration values must be within the specific parameter's range):
 
-      ![Example](~/images/Generic_Ping_example2.png)
+      ![Example](~/connector/images/Generic_Ping_example2.png)

@@ -8,16 +8,16 @@ The **Arris APEX3000** is an ultra-dense, fully redundant, state-of-the-art chas
 
 ## About
 
-The **Arris** **APEX3000** provides up to 32 RF ports in a 4 RU chassis and supports up to 48 Annex B 6-MHz QAM channels per RF port for a maximum of 1536 QAM channels (384 QAM channels per RU). At maximum density, the power draw is sub 1 Watt/QAM. In Annex A mode (8 MHz channels) the APEX3000 supports up to 36 8-MHz QAM channels per RF port, for a maximum of 1152 QAM channels.
+The **Arris APEX3000** provides up to 32 RF ports in a 4 RU chassis and supports up to 48 Annex B 6-MHz QAM channels per RF port for a maximum of 1536 QAM channels (384 QAM channels per RU). At maximum density, the power draw is sub 1 Watt/QAM. In Annex A mode (8 MHz channels) the APEX3000 supports up to 36 8-MHz QAM channels per RF port, for a maximum of 1152 QAM channels.
 
-This connector requires a **large amount** **of polling** and will therefore use a **large amount of bandwidth**.
+This connector requires a **large amount of polling** and will therefore use a **large amount of bandwidth**.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                                                                                                                                                  | No                  | No                      |
-| 2.0.0.x          | Full protocol review based on version 1.0.0.7: - PIDs, names and descriptions of parameters are modified to align the connector with the guidelines. - Redundant connection name changed. - Layout revised and modified. - Naming is used instead of displayColumn. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | No |
+| 2.0.0.x | Full protocol review based on version 1.0.0.7: <br>- PIDs, names and descriptions of parameters are modified to align the connector with the guidelines. <br>- Redundant connection name changed. <br>- Layout revised and modified. <br>- Naming is used instead of displayColumn. | No | Yes |
 
 ### Product Info
 
@@ -26,7 +26,9 @@ This connector requires a **large amount** **of polling** and will therefore use
 | 1.0.0.x          | Unknown                     |
 | 2.0.0.x          | Unknown                     |
 
-## Installation and configuration
+## Configuration
+
+### Connections
 
 #### SNMP main connection
 
@@ -263,19 +265,19 @@ This page displays the **Host Ethernet Settings**, with the following page butto
 
 The page also displays the **Host Module Status Treeview**, which shows all **Host Modules** with their status.
 
-Additional parameters related to the **Host Module Redundancy** are also displayed in the second column of the page**.**
+Additional parameters related to the **Host Module Redundancy** are also displayed in the second column of the page.
 
 ### Gig E
 
 This page displays parameters related to the **GigE Interface Configuration**, **Global Settings** and **GigE Module Status.**
 
-The **Frame Statistics** page button displays the **Gigabit Ethernet** **Frame Counter statistics** information.
+The **Frame Statistics** page button displays the **Gigabit Ethernet Frame Counter statistics** information.
 
 ### RDS/CTE
 
 This page contains parameters related to **RDS** and **CTE Configuration**, and **RDS Status**.
 
-The **Service List** page button contains a table that provides a list of source IDs and provider IDs with additional descriptions**.**
+The **Service List** page button contains a table that provides a list of source IDs and provider IDs with additional descriptions.
 
 ### SDV
 
@@ -320,7 +322,7 @@ This page displays a tree view of all **ECMGs** in the device.
 It also contains the following page buttons:
 
 - **Host Configuration:** Contains a table of configuration parameters for the **ECMG Host** (IP and port).
-- **Super CAS** **Configuration:** Contains a table of configuration parameters for the Super CAS entity.
+- **Super CAS Configuration:** Contains a table of configuration parameters for the Super CAS entity.
 
 ### EIS
 
@@ -354,7 +356,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ### Polling Status toggle buttons
 
-Most of the above-mentioned pages contain a **\[Page Name\]** **Polling Status** toggle button. **Enabling** the toggle button will allow the information on that specific page to be polled. **Disable** the toggle button to stop polling parameters on that specific page.
+Most of the above-mentioned pages contain a **\[Page Name\] Polling Status** toggle button. **Enabling** the toggle button will allow the information on that specific page to be polled. **Disable** the toggle button to stop polling parameters on that specific page.
 
 ### Correct order of settings
 
