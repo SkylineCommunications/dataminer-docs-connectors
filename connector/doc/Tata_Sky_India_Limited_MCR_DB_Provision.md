@@ -13,7 +13,8 @@ This connector is designed to poll a database containing channel information, an
 | **Range**            | **Key Features**                                                              | **Based on** | **System Impact**                                                                                                                                                                                                                                                                   |
 |----------------------|-------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x \[obsolete\] | Generates/updates a DataMiner service with the retrieved channel information. | \-           | \-                                                                                                                                                                                                                                                                                  |
-| 1.0.1.x \[SLC Main\] | DataMiner services generation updated. Error table messages improved.         | 1.0.0.1      | \- Exception value on column (param 1011) was updated. Column was changed from string to int (param 1004), and low range was added. - Parameters 102/152, 103/153, 110/160 were moved to a subpage. - Page button parameter name got renumbered and renamed (parameter 153 -\> 50). |
+| 1.0.1.x \[Obsolete\] | DataMiner services generation updated. Error table messages improved.         | 1.0.0.1      | \- Exception value on column (param 1011) was updated. Column was changed from string to int (param 1004), and low range was added. - Parameters 102/152, 103/153, 110/160 were moved to a subpage. - Page button parameter name got renumbered and renamed (parameter 153 -\> 50). |
+| 1.0.2.x \[SLC Main\] | Harmonic NMX support as AVP for services                                      | 1.0.1.9      | \- Updated Services table interprete types from number to string for NCompassSystem column (PID 1005) and AVPModule (PID 1007). |
 
 ### Product Info
 
@@ -21,6 +22,7 @@ This connector is designed to poll a database containing channel information, an
 |-----------|------------------------|
 | 1.0.0.x   | N/A                    |
 | 1.0.1.x   | N/A                    |
+| 1.0.2.x   | N/A                    |
 
 ### System Info
 
@@ -28,6 +30,7 @@ This connector is designed to poll a database containing channel information, an
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
