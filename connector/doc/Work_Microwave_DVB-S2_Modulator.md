@@ -19,12 +19,14 @@ This connector is compatible with "FMB" software units (front panel firmware sta
 | **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
 |------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| 1.0.2.x          | Removes alarm mapping from traps | Yes                 | Yes                     |
 
 ### Product Info
 
 | **Range** | **Device Firmware Version**    |
 |------------------|--------------------------------|
 | 1.0.0.x          | Front Panel Firmware: FMB0x.yz |
+| 1.0.2.x          | Front Panel Firmware: FMB0x.yz |
 
 ## Installation and configuration
 
