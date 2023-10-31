@@ -41,4 +41,4 @@ The General page also contains the **Configuration Table**. In this table, you n
 - **System User**: The username that will be used to access the ONT or MAC data. Do not include the domain if the directory is remote. If the directory is local, set the value to *N/A*.
 - **Password**: The password that will be used along with the defined System User to access the ONT or MAC data. If the value is local, set the value to *N/A*.
 - **Front End Element**: The DMA ID/element ID of the corresponding front-end element.
-- **Front End IP**: The IP Address of the corresponding front-end server.
+- **Front End IP**: The IP address of the corresponding front-end server.
