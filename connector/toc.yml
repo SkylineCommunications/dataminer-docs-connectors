@@ -2933,6 +2933,8 @@
     topicUid: Connector_help_Electrosys_G011_FM_N+1_-_Main_Transmitter
   - name: Electrosys G011 FM N+1 - Reserve Transmitter
     topicUid: Connector_help_Electrosys_G011_FM_N+1_-_Reserve_Transmitter
+  - name: Electrosys TL6F5K
+    topicUid: Connector_help_Electrosys_TL6F5K
 - name: Elemental
   topicUid: Connector_help_Elemental_Conductor
   items:
