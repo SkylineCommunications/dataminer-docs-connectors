@@ -74,7 +74,7 @@ To create or remove items, use the right-click menus of the tables. Entities can
 
 When you create a new DAB monitor container, you can configure multiple sources in the source list by separating them with a comma, as shown in the following screenshot:
 
-![image](~/images/Paneda_DAB_Monitor_Orchestration_image.png)
+![image](~/connector/images/Paneda_DAB_Monitor_Orchestration_image.png)
 
 ### UDP Proxies Page
 

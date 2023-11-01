@@ -124,7 +124,7 @@ This page allows you to upload or download config files to or from the device. Y
 
 To download a file, click **Download**. The following pop-up window will be displayed:
 
-![Download.PNG](~/images/Astro_U125_Edge_FM_Download.PNG)
+![Download.PNG](~/connector/images/Astro_U125_Edge_FM_Download.PNG)
 
 Enter the name of the file and click OK.
 
@@ -134,7 +134,7 @@ The file will be saved in the following location: `C:\Skyline DataMiner\Document
 
 To download a file, click **Upload**. The following pop-up window will be displayed:
 
-![Upload.PNG](~/images/Astro_U125_Edge_FM_Upload.PNG)
+![Upload.PNG](~/connector/images/Astro_U125_Edge_FM_Upload.PNG)
 
 **Module Name** lists all the Astro elements of the same type in the system.
 
@@ -146,7 +146,7 @@ The file to be uploaded is in the following location: `C:\Skyline DataMiner\Docu
 
 The connector allows you to upload a firmware archive from the local disk of the DMA:
 
-![SoftwareUpdate.PNG](~/images/Astro_U125_Edge_FM_SoftwareUpdate.PNG)
+![SoftwareUpdate.PNG](~/connector/images/Astro_U125_Edge_FM_SoftwareUpdate.PNG)
 
 The **Firmware File** parameter is used to select which file to upload. The drop-down box lists all the files present on the DMA hard drive in the following location: *C:\Skyline DataMiner\Documents\\Protocol Name\>*.
 

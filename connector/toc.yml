@@ -254,6 +254,11 @@
     topicUid: Connector_help_Agilent_N1996A
   - name: Agilent N9320B
     topicUid: Connector_help_Agilent_N9320B
+- name: Agilis
+  topicUid: Connector_help_Agilis_AUC28
+  items:
+  - name: Agilis AUC28
+    topicUid: Connector_help_Agilis_AUC28
 - name: AJA
   topicUid: Connector_help_AJA_IPR-10G2-HDMI
   items:
@@ -2928,6 +2933,8 @@
     topicUid: Connector_help_Electrosys_G011_FM_N+1_-_Main_Transmitter
   - name: Electrosys G011 FM N+1 - Reserve Transmitter
     topicUid: Connector_help_Electrosys_G011_FM_N+1_-_Reserve_Transmitter
+  - name: Electrosys TL6F5K
+    topicUid: Connector_help_Electrosys_TL6F5K
 - name: Elemental
   topicUid: Connector_help_Elemental_Conductor
   items:
@@ -5124,6 +5131,8 @@
     topicUid: Connector_help_Kordia_FMS_Manager
   - name: Kordia NPC Interface
     topicUid: Connector_help_Kordia_NPC_Interface
+  - name: Kordia ServiceNow Ticket Manager
+    topicUid: Connector_help_Kordia_ServiceNow_Ticket_Manager
 - name: KPN
   topicUid: Connector_help_KPN_Digitenne_Overview_Manager
   items:
@@ -6069,6 +6078,8 @@
     topicUid: Connector_help_Moxa_ioLogik_E1210
   - name: Moxa ioLogik E1211
     topicUid: Connector_help_Moxa_ioLogik_E1211
+  - name: Moxa ioLogik E1212
+    topicUid: Connector_help_Moxa_ioLogik_E1212
   - name: Moxa ioLogik E1214
     topicUid: Connector_help_Moxa_ioLogik_E1214
   - name: Moxa ioLogik E1240
@@ -6155,35 +6166,6 @@
   items:
   - name: NBCS Roadkit Manager
     topicUid: Connector_help_NBCS_Roadkit_Manager
-- name: NBCU
-  topicUid: Connector_help_NBCU_Ad_Monitoring_Manifests
-  items:
-  - name: NBCU Ad Monitoring Manifests
-    topicUid: Connector_help_NBCU_Ad_Monitoring_Manifests
-  - name: NBCU CAG Incident Gateway
-    topicUid: Connector_help_NBCU_CAG_Incident_Gateway
-  - name: NBCU LEAP Collector
-    topicUid: Connector_help_NBCU_LEAP_Collector
-  - name: NBCU LEM Collector
-    topicUid: Connector_help_NBCU_LEM_Collector
-  - name: NBCU Manager
-    topicUid: Connector_help_NBCU_Manager
-  - name: NBCU Merlin Collector
-    topicUid: Connector_help_NBCU_Merlin_Collector
-  - name: NBCU Peacock Popup Event Collector
-    topicUid: Connector_help_NBCU_Peacock_Popup_Event_Collector
-  - name: NBCU Popup Event Manager APP
-    topicUid: Connector_help_NBCU_Popup_Event_Manager_APP
-  - name: NBCU SCTE Trap Collector
-    topicUid: Connector_help_NBCU_SCTE_Trap_Collector
-  - name: NBCU ServiceNow Prism
-    topicUid: Connector_help_NBCU_ServiceNow_Prism
-  - name: NBCU SkyPath Site Manager
-    topicUid: Connector_help_NBCU_SkyPath_Site_Manager
-  - name: NBCU VOD Manager APP
-    topicUid: Connector_help_NBCU_VOD_Manager_APP
-  - name: NBCU Witbe Maestro
-    topicUid: Connector_help_NBCU_Witbe_Maestro
 - name: ND Satcom
   topicUid: Connector_help_ND_Satcom_HPA_3412A
   items:
@@ -6999,6 +6981,8 @@
     topicUid: Connector_help_Peak_Communications_RCU100_SNMP
   - name: Peak Communications RCUH200
     topicUid: Connector_help_Peak_Communications_RCUH200
+  - name: Peak Communications Sky UK Polarization Switch
+    topicUid: Connector_help_Peak_Communications_Sky_UK_Polarization_Switch
   - name: Peak Communications UPC7000 Series
     topicUid: Connector_help_Peak_Communications_UPC7000_Series
 - name: PEAK System
@@ -9092,6 +9076,10 @@
     topicUid: Connector_help_Telenor_CMDB_Provisioning
   - name: Telenor Common Onboarding Instances
     topicUid: Connector_help_Telenor_Common_Onboarding_Instances
+  - name: Telenor Customer Validation Manager
+    topicUid: Connector_help_Telenor_Customer_Validation_Manager
+  - name: Telenor Customer Validation Mediator
+    topicUid: Connector_help_Telenor_Customer_Validation_Mediator
   - name: Telenor EPG Channel
     topicUid: Connector_help_Telenor_EPG_Channel
   - name: Telenor EPG Manager

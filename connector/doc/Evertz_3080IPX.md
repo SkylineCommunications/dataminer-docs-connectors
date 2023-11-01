@@ -87,7 +87,7 @@ If the correct license is available, you can enable **IGMP polling**, **Inband C
 
 This page (illustrated below) contains general information about the video switch, such as the **Product Name**, **Product Features Table**, **MAC Address of the Interfaces**, etc.
 
-![1. General.png](~/images/Evertz_3080IPX_Evertz_3080IPX_general.png)
+![1. General.png](~/connector/images/Evertz_3080IPX_Evertz_3080IPX_general.png)
 
 ### Port Page
 

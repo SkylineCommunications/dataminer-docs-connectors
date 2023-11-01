@@ -31,7 +31,7 @@ Please note the following:
 
 | Range | Supported Firmware |
 |--|--|
-| 1.0.0.x 1.0.2.x 1.0.3.x | Supported firmware depends on each command. To check the minimum version necessary to run a command, refer to the **Minimum Required FW** column on the **Manager** page. If this column has the value "any", there is no information in the document "DCM_IDL.pdf" about the minimum version to run that command, so it is assumed to be compatible with all firmware versions. E.g. Command **Get Boards** requires firmware 6.9 or later. ![versions3.JPG](~/images/CISCO_DCM_versions3.JPG) |
+| 1.0.0.x 1.0.2.x 1.0.3.x | Supported firmware depends on each command. To check the minimum version necessary to run a command, refer to the **Minimum Required FW** column on the **Manager** page. If this column has the value "any", there is no information in the document "DCM_IDL.pdf" about the minimum version to run that command, so it is assumed to be compatible with all firmware versions. E.g. Command **Get Boards** requires firmware 6.9 or later. ![versions3.JPG](~/connector/images/CISCO_DCM_versions3.JPG) |
 
 ## Configuration
 
@@ -348,7 +348,7 @@ To configure these, a parameter is available above the relevant table where you 
 
 For example:
 
-> ![naming2.JPG](~/images/CISCO_DCM_naming2.JPG)
+> ![naming2.JPG](~/connector/images/CISCO_DCM_naming2.JPG)
 >
 > In this example, the DisplayKey will be as follows: 'Board: (value of column 4 (User Name)) Type: (value of column 1 (Type))'.
 
@@ -356,14 +356,14 @@ To find the column identifiers, check the corresponding Naming Format tooltips.
 
 > Based on the previous example:
 >
-> ![naming4.JPG](~/images/CISCO_DCM_naming4.JPG)
+> ![naming4.JPG](~/connector/images/CISCO_DCM_naming4.JPG)
 
 Note:
 
 - Because of the complexity of **display keys** (based on multiple tables), the connector will not check if generated formats will produce unique values. **This needs to be ensured by the user**.
 - There is dependency between tables, so if for instance the display key of **Board Info Table (Version 2)** is changed, this will be reflected in all tables that depend on it. In the previous example, the **Input TS Table** display key will be as follows:
 
-> ![naming5.JPG](~/images/CISCO_DCM_naming5.JPG)
+> ![naming5.JPG](~/connector/images/CISCO_DCM_naming5.JPG)
 
 - By default, all custom naming will be configured with the same values that were hardcoded before version 1.0.0.83. **No historic data will be lost**.
 
