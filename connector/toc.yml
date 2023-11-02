@@ -3247,10 +3247,10 @@
     topicUid: Connector_help_Eutelsat_Data_Collector
   - name: Eutelsat FTVO Program Service
     topicUid: Connector_help_Eutelsat_FTVO_Program_Service
-  - name: Eutelsat Path Detection Service Protocol
-    topicUid: Connector_help_Eutelsat_Path_Detection_Service_Protocol
   - name: Eutelsat NLES
     topicUid: Connector_help_Eutelsat_NLES
+  - name: Eutelsat Path Detection Service Protocol
+    topicUid: Connector_help_Eutelsat_Path_Detection_Service_Protocol
   - name: Eutelsat Probe Service
     topicUid: Connector_help_Eutelsat_Probe_Service
   - name: Eutelsat Quantum Log Collector
