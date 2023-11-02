@@ -8656,6 +8656,11 @@
     topicUid: Connector_help_Standard_Information_Platform
   - name: Standard Switch Management
     topicUid: Connector_help_Standard_Switch_Management
+- name: Starlink
+  topicUid: Connector_help_Starlink_Telemetry_API
+  items:
+  - name: Starlink Telemetry API
+    topicUid: Connector_help_Starlink_Telemetry_API
 - name: Stratos
   topicUid: Connector_help_Stratos_AmosConnect_Connect_Monitoring
   items:
