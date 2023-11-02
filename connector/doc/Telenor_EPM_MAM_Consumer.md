@@ -14,9 +14,9 @@ To be aware of the collector elements available in the system, the connector wil
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range              | Key Features     | Based on     | System Impact     |
+|--------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,9 +26,9 @@ To be aware of the collector elements available in the system, the connector wil
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                     | **Exported Components** |
-|-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Collector](xref:Connector_help_Telenor_EPM_Collector) [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager) | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | [Telenor EPM Collector](xref:Connector_help_Telenor_EPM_Collector)<br>[Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager) | - |
 
 ## Configuration
 
@@ -42,7 +42,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  -**IP address/host**: The IP address is irrelevant because the connector uses multi-threaded serial communication. The field can be set to *127.0.0.1*.
+  - **IP address/host**: The IP address is irrelevant because the connector uses multi-threaded serial communication. The field can be set to *127.0.0.1*.
   - **IP port**: The port is irrelevant because the connector uses multi-threaded serial communication. The field can be set to the default value *8935*.
 
 ## How to Use

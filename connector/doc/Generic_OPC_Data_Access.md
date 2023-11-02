@@ -38,11 +38,11 @@ To set up DCOM correctly, make the following changes on the computer running the
   1. Open the **Security** tab.
   1. In **Launch and Activation Permissions**, select **Customize** and click **Edit**. This is necessary to grant permissions to users to start the OPC server. **Add** the same **user** (or **group**) as you created earlier. Use the **Check Names** button to check/select the correct user. Then make sure the Allow check boxes are checked for Local Launch, Remote Launch, Local Activation and Remote Activation:
 
-     ![Launch and Activation Permissions.png](~/images/Generic_OPC_Data_Access_Launch_and_Activation_Permissions.png)
+     ![Launch and Activation Permissions.png](~/connector/images/Generic_OPC_Data_Access_Launch_and_Activation_Permissions.png)
 
   1. In **Access Permissions**, select **Customize** and click **Edit**. This is necessary to grant permission to users/groups to make calls to the OPC server. **Add** the same **user** (or **group**) as you created earlier. Use the **Check Names** button to check/select the correct user. Then make sure the Allow check boxes are checked for Local Access and Remote Access:
 
-     ![Access Permission Permissions.png](~/images/Generic_OPC_Data_Access_Access_Permission_Permissions.png)
+     ![Access Permission Permissions.png](~/connector/images/Generic_OPC_Data_Access_Access_Permission_Permissions.png)
 
 - Configuring the **Application Identity**:
 
@@ -54,7 +54,7 @@ To set up DCOM correctly, make the following changes on the computer running the
 
       See the example below:
 
-      ![Identity Example.png](~/images/Generic_OPC_Data_Access_Identity_Example.png)
+      ![Identity Example.png](~/connector/images/Generic_OPC_Data_Access_Identity_Example.png)
 
 - Configuring the **System**:
 
@@ -62,16 +62,16 @@ To set up DCOM correctly, make the following changes on the computer running the
   1. Navigate to **Console Root \> Component Services \> Computers \> My Computer** and right-click **Properties**.
   1. In the **Default Properties** tab, select the option **Enable Distributed COM on this computer**:
 
-     ![Default Properties.png](~/images/Generic_OPC_Data_Access_Default_Properties.png)
+     ![Default Properties.png](~/connector/images/Generic_OPC_Data_Access_Default_Properties.png)
 
   1. In the **COM Security** tab, select all the buttons one by one, each time adding the user you created earlier. Again you can use the **Check Names** button.
   1. In **Access Permissions**, make sure all options are enabled, as illustrated below, for the created user and for the **ANONYMOUS LOGON user**.
 
-     ![Access Permission.png](~/images/Generic_OPC_Data_Access_Access_Permission.png)
+     ![Access Permission.png](~/connector/images/Generic_OPC_Data_Access_Access_Permission.png)
 
   1. In **Launch and Activation Permissions**, make sure all options are enabled, as illustrated below, for the created user and for the **ANONYMOUS LOGON user**.
 
-     ![Launch and Activation Permission.png](~/images/Generic_OPC_Data_Access_Launch_and_Activation_Permission.png)
+     ![Launch and Activation Permission.png](~/connector/images/Generic_OPC_Data_Access_Launch_and_Activation_Permission.png)
 
 Finally, you must validate the **firewall** on the client and server computer:
 
@@ -79,21 +79,21 @@ Finally, you must validate the **firewall** on the client and server computer:
 
   - Create an **inbound** exception that allows computers using **TCP** on **all ports.**
 
-    ![Client_OPCInbound.png](~/images/Generic_OPC_Data_Access_Client_OPCInbound.png)
+    ![Client_OPCInbound.png](~/connector/images/Generic_OPC_Data_Access_Client_OPCInbound.png)
 
   - Create an **outbound** exception that allows computers using **TCP** on **port** **135.** Note that this port number could be different.
 
-    ![Client_OPCOutbound.png](~/images/Generic_OPC_Data_Access_Client_OPCOutbound.png)
+    ![Client_OPCOutbound.png](~/connector/images/Generic_OPC_Data_Access_Client_OPCOutbound.png)
 
 - Server side:
 
   - Create **inbound** exceptions as illustrated below. This should normally be fine because **all ports** are allowed.
 
-    ![Server_OPCInbounds.png](~/images/Generic_OPC_Data_Access_Server_OPCInbounds.png)
+    ![Server_OPCInbounds.png](~/connector/images/Generic_OPC_Data_Access_Server_OPCInbounds.png)
 
   - Create an **outbound** exception that allows computers using **TCP** on **port** **135.** Note that this port number could be different.
 
-    ![Server_OPCOutbound.png](~/images/Generic_OPC_Data_Access_Server_OPCOutbound.png)
+    ![Server_OPCOutbound.png](~/connector/images/Generic_OPC_Data_Access_Server_OPCOutbound.png)
 
 ## Usage \[1.0.0.x\]
 

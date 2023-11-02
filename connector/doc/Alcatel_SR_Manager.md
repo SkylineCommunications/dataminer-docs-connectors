@@ -12,17 +12,17 @@ This connector can be used to control and monitor the services via **SNMPv2**. T
 
 ### Version Info
 
-| **Range** | **Description** | **Based on** | **System Impact** |
+| Range | Description | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x | Initial version. | \- | \- |
-| 2.0.0.x | Specific branch version with DCF support. | \- | \- |
-| 2.0.1.x | Specific branch version with display key changes. | \- | \- |
-| 2.0.2.x | Branch with Provision mode in interface filtering. Needs InterApp to work. **Minimum DataMiner version raised to 9.6.3.0 - 8092.** | 2.0.1.5 | \- |
-| 2.0.3.x | Improvements in accounting files - support for legacy devices (firmware versions 6.0.R8 - 11.0.R15) and implementation of SAP files. Improvements in bitrate calculation. Creation of new foreign keys. Creation of display key selectors for multiple tables. | 2.0.2.3 | \- |
-| 2.0.4.x (obsolete) | Improved Accounting Files logic and removed the Statistics Tables. Removed Interface Filtering. Changed multiple tables to use multipleGetBulk instead of SNMP Get method to improve performance. Added SAP Base and SAP Ingress/Egress Filtering. Added toggle button for TMNX Event and Event App tables. Changed the InterApp Message to filter interfaces. Data structure now supports JSON that can contain filtering for multiple tables. Column IDX change because of new column in tables 4100, 7300, 7400, 7450, 10100 and 10200 because of table filtering. Fixed DCF exposed table from 4400 to 4100. Added a parameter to change the default timeout of FTP connection. Support for SDP Accounting Files. Changed parameter 3404 and 3405 from Mb to Octet. Added toggle buttons for tables 7200, 10100 and 10200. Added cleanup feature for SAP ingress and egress tables. | 2.0.3.2 | \- |
+| 1.0.0.x | Initial version. | - | - |
+| 2.0.0.x | Specific branch version with DCF support. | - | - |
+| 2.0.1.x | Specific branch version with display key changes. | - | - |
+| 2.0.2.x | Branch with Provision mode in interface filtering. Needs InterApp to work. **Minimum DataMiner version raised to 9.6.3.0 - 8092.** | 2.0.1.5 | - |
+| 2.0.3.x | Improvements in accounting files - support for legacy devices (firmware versions 6.0.R8 - 11.0.R15) and implementation of SAP files. Improvements in bitrate calculation. Creation of new foreign keys. Creation of display key selectors for multiple tables. | 2.0.2.3 | - |
+| 2.0.4.x (obsolete) | Improved Accounting Files logic and removed the Statistics Tables. Removed Interface Filtering. Changed multiple tables to use multipleGetBulk instead of SNMP Get method to improve performance. Added SAP Base and SAP Ingress/Egress Filtering. Added toggle button for TMNX Event and Event App tables. Changed the InterApp Message to filter interfaces. Data structure now supports JSON that can contain filtering for multiple tables. Column IDX change because of new column in tables 4100, 7300, 7400, 7450, 10100 and 10200 because of table filtering. Fixed DCF exposed table from 4400 to 4100. Added a parameter to change the default timeout of FTP connection. Support for SDP Accounting Files. Changed parameter 3404 and 3405 from Mb to Octet. Added toggle buttons for tables 7200, 10100 and 10200. Added cleanup feature for SAP ingress and egress tables. | 2.0.3.2 | - |
 | 2.0.5.x (obsolete) | Improved bitrate calculation feature. | 2.0.4.3 | You will need to add *renci.sshnet.dll* to the folder *C:/Skyline DataMiner/Protocol Scripts*. |
-| 2.0.6.x (obsolete) | Added new columns to SAP Ingress QoS Queue Table. | 2.0.5.8 | \- |
-| 2.0.7.x \[SLC Main\] | Fixed case where Legacy General Statistics were poorly calculated. Implemented a fix for the 7210 SAS-X and SAS-R models when using SAP filtering. Updated bitrate calculation logic to handle cases where the element goes into timeout. Support for extra columns in BGP Tables. Added support for alternate accounting file source (VSFTP). Added table vRtrPimNgGrpSrcTable. Added TMNX tables. Added option to switch between Static Router and INET Static Router Data. SAP filter entries were not cleared when inter-app message had no interfaces. Polling Configuration table included. Fixed Polling Configuration table operation mode. Changed default SFTP connection timeout to avoid cases where the logic could be stuck. Fixed situation where SAP and SDP accounting file processing did not calculate rates. Updated Accounting File processing to reduce load on SLDataGateway. The polling of the tables in the TMNX debug page is disabled when the page is not visible. Added calculated time since last change columns to the interface, SAP Base, SDP Base, SDP Info, Service Base Info, and TMNX Ports tables. Bit rates are no longer set to 0 during the first polling cycle after startup. Included VPRN ID and Vrtr Name as a parameter in BGP Tables 10700 and 10900. Fixed situation where interface rates go to zero before going to N/A if the element goes into timeout but interface data is polled before. Added toggle button to enable timeout handling outside of standard procedure. Fixed issue with polling control logic. Default polling is now disabled for TMX VDO GRP tables. Fix calculation for Port Last Change parameters. Fixed a memory leak related to XmsSerializer usage. Fixed an exception with DateTime parsing. Fixed an exception in Stream Viewer with PortQueuesSumTable. Fixed an issue where polling table logic was stuck behind other groups, causing the table to be polled significantly slower then intended. Fixed an issue where rates were halved in the interface table. TMNX Debug tables are now disabled on startup if the collective toggle button (23010) is disabled. Polling for TMNS VDO GRP tables is now by default disabled because they can cause some devices to break temporarily. Added encryption key group tables. Exception value (N/A) is now shown when counters wrap for accounting files, because of edge cases that would be difficult to predict otherwise (device restart, counters reset, etc.). Interface Table Polling Interval and Polling Interval Overrun parameters added. Multiplied exception values to avoid issues with trending exception values with decimals. | 2.0.6.8 | \- |
+| 2.0.6.x (obsolete) | Added new columns to SAP Ingress QoS Queue Table. | 2.0.5.8 | - |
+| 2.0.7.x [SLC Main] | Fixed case where Legacy General Statistics were poorly calculated. Implemented a fix for the 7210 SAS-X and SAS-R models when using SAP filtering. Updated bitrate calculation logic to handle cases where the element goes into timeout. Support for extra columns in BGP Tables. Added support for alternate accounting file source (VSFTP). Added table vRtrPimNgGrpSrcTable. Added TMNX tables. Added option to switch between Static Router and INET Static Router Data. SAP filter entries were not cleared when inter-app message had no interfaces. Polling Configuration table included. Fixed Polling Configuration table operation mode. Changed default SFTP connection timeout to avoid cases where the logic could be stuck. Fixed situation where SAP and SDP accounting file processing did not calculate rates. Updated Accounting File processing to reduce load on SLDataGateway. The polling of the tables in the TMNX debug page is disabled when the page is not visible. Added calculated time since last change columns to the interface, SAP Base, SDP Base, SDP Info, Service Base Info, and TMNX Ports tables. Bit rates are no longer set to 0 during the first polling cycle after startup. Included VPRN ID and Vrtr Name as a parameter in BGP Tables 10700 and 10900. Fixed situation where interface rates go to zero before going to N/A if the element goes into timeout but interface data is polled before. Added toggle button to enable timeout handling outside of standard procedure. Fixed issue with polling control logic. Default polling is now disabled for TMX VDO GRP tables. Fix calculation for Port Last Change parameters. Fixed a memory leak related to XmsSerializer usage. Fixed an exception with DateTime parsing. Fixed an exception in Stream Viewer with PortQueuesSumTable. Fixed an issue where polling table logic was stuck behind other groups, causing the table to be polled significantly slower then intended. Fixed an issue where rates were halved in the interface table. TMNX Debug tables are now disabled on startup if the collective toggle button (23010) is disabled. Polling for TMNS VDO GRP tables is now by default disabled because they can cause some devices to break temporarily. Added encryption key group tables. Exception value (N/A) is now shown when counters wrap for accounting files, because of edge cases that would be difficult to predict otherwise (device restart, counters reset, etc.). Interface Table Polling Interval and Polling Interval Overrun parameters added. Multiplied exception values to avoid issues with trending exception values with decimals. | 2.0.6.8 | - |
 
 ## Configuration
 
@@ -211,7 +211,9 @@ This page contains the following buttons:
 - **SAA Accounting Files**: Opens a subpage with the statistics tables for the SAA accounting files.
 - **SAP Accounting Files**: Opens a subpage with the statistics tables for the SAP accounting files.
 - **FTP Configuration:** Opens a subpage where you can define the credentials to access the FTP server as well as the folder where the files should be found. Also contains status information on the connection.
+
   The URL specified on the FTP Configuration subpage must be the folder containing the XML files to be parsed.
+
   The XML files must have the following name structure: *act0202-**yyyymmdd-hhmmss**.xml.gz* (SAP) or *act5050-**yyyymmdd-hhmmss**.xml.gz* (SAA).
 
 ## Usage - range 2.0.7.x
@@ -263,7 +265,7 @@ To reduce the polling load further, instead of using hidden tables, the filtered
 The following subpages are available:
 
 - **Stats Egress:** Contains the SAP QoS queue egress statistics subtable, which retrieves QoS queues from SAPs currently populated in SAP Base Info.
-- **Stats Ingress:** Contains the SAP QoS queue ingress statistics subtable, which retrieves QoS queues from SAPs currently populated **in** **SAP Base Info**.
+- **Stats Ingress:** Contains the SAP QoS queue ingress statistics subtable, which retrieves QoS queues from SAPs currently populated **in SAP Base Info**.
 - **Queues**: Contains SAP ingress and egress policies queue information.
 - **SAP Counters**: Provides an overview of the basic SAP statistics.
 - **Forwarding Classes**: Contains mapping of forward class traffic into specified queues.
@@ -331,7 +333,7 @@ This page also has a **Debug Tables** toggle button, which is disabled by defaul
 
 This page displays various TMNX debug tables including **TMNX VDO Interface**, **TMNX Chassis**, and **TMNX Card.**
 
-This page is only available when the toggle button **Debug Tables** (on the TMNX VDO GRP page) is set to *Enabled***.**
+This page is only available when the toggle button **Debug Tables** (on the TMNX VDO GRP page) is set to *Enabled*.
 
 ### Virtual Interfaces
 
@@ -374,6 +376,7 @@ This page contains the following buttons:
 - **FTP Configuration:** Opens a subpage where you can find the following parameters:
 
 - The credentials to access the FTP server.
+
   - The folder where the files should be found. The XML files must have the following name structure: *act0202-**yyyymmdd-hhmmss**.xml.gz* (SAP), *act5050-**yyyymmdd-hhmmss**.xml.gz* (SAA), or *act0303-**yyyymmdd-hhmmss**.xml.gz* (SDP).
   - Status information on the connection. The URL specified on the FTP Configuration subpage must be the folder containing the XML files to be parsed.
   - The **LIST Directory Listing Format**, which can be set to *Alcatel SR Manager* or *VSFTP*. **Alcatel SR Manager** mode is for normal interaction with an actual device. **VSFTP** mode is for testing purposes, where accounting files can be acquired from a VSFTP server. The responses from an FTP LIST command are different.
@@ -430,5 +433,5 @@ Physical dynamic interfaces:
 
 - In case a **TMXN Port** is related to a certain **SAP Split Horizon Group** of a **service** and in case the service, port and SAP are up, an internal connection is created with the following properties:
 
-- **IsSHG** connection property of type **generic** with the value **True** or **False**, depending on whether the SAP Split Horizon Group is a Split Horizon Group.
+  - **IsSHG** connection property of type **generic** with the value **True** or **False**, depending on whether the SAP Split Horizon Group is a Split Horizon Group.
   - **VLAN** connection property of type **generic** with a value containing the ports **Vlan IDs**.

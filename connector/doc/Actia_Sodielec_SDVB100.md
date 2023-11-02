@@ -8,10 +8,10 @@ This connector allows you to monitor and control the Actia Sodielec SDVB100 devi
 
 ## About
 
-| **Range**            | **Key Features**                                                                   | **Based on** | **System Impact**                                                                                                                                                                                                                                                                          |
-|----------------------|------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version.                                                                   | \-           | \-                                                                                                                                                                                                                                                                                         |
-| 2.0.0.x \[SLC Main\] | Changed connector name to the correct name "Actia Sodielec" instead of "Sodielec". | 1.0.0.9      | Live Update will be broken. Elements will need to use the new connector, which means that existing configuration for monitoring, reports, filters, and Automation scripts may need to be modified. If you are using an "allowed connectors" license, your license may need to be adjusted. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [obsolete] | Initial version. | - | - |
+| 2.0.0.x [SLC Main] | Changed connector name to the correct name "Actia Sodielec" instead of "Sodielec". | 1.0.0.9 | Live Update will be broken. Elements will need to use the new connector, which means that existing configuration for monitoring, reports, filters, and Automation scripts may need to be modified. If you are using an "allowed connectors" license, your license may need to be adjusted. |
 
 ### Product Info
 
@@ -24,8 +24,8 @@ This connector allows you to monitor and control the Actia Sodielec SDVB100 devi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -59,15 +59,15 @@ This connector contains the following pages:
 - On the **Polling Settings** subpage of the General page, you can manage the polling that is done to the device. See "Polling Configuration" below for more info.
 - The **I/O MPEG-TS** page contains **ASI** monitoring and configuration parameters.
 - The **DVB Limits** page contains the **DVB Limits Table** and other DVB limits parameters
-- The **Services** page contains the **Services** and **PID** **Table**.
+- The **Services** page contains the **Services** and **PID Table**.
 - The **PCR Measurements** page includes the **PCR Table** with all the measurements.
-- The **ECM/EMM** page contains the **ECM Table** and **EMM Table.**
+- The **ECM/EMM** page contains the **ECM Table** and **EMM Table**.
 - The **Service Quality** page contains service quality configuration parameters and the **Measures Service Quality Table**.
 - The **Stamping** page and subpage contain the **Stamping Table** and the **Stamping Setup Table.**
 - The **Multiplex Composition** page contains monitoring parameters like Network Number, Bitrates, and Rates.
-- The **SFN** page includes **SFN Packet Bitrates** and SFN configuration parameters**.**
+- The **SFN** page includes **SFN Packet Bitrates** and SFN configuration parameters.
 - The **Measurement** page includes the **Measurement Table** with all available bitrates for the available entries.
-- The **TR101290** page contains the **Measures TR101290 Table.**
+- The **TR101290** page contains the **Measures TR101290 Table**.
 - The **Events** page contains the **Events Table**.
 - The **Alarms** page contains the **Alarms List Table** and the **Alarm V1 Table**. Any incoming alarm traps will be listed in the **Alarms List Table**.
 

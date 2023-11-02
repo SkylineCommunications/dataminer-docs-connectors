@@ -100,13 +100,13 @@ This page displays a tree view of the available **SCTE UPS Collectors** and the 
 
 For each selected **SCTE UPS Collector** element, basic identification data is displayed, as well as the DVEs that the **SCTE UPS Collector** has in its devices table.
 
-![ONENOTE_kCxlJ0OyV5.png](~/images/SCTE_UPS_Manager_ONENOTE_kCxlJ0OyV5.png)
+![ONENOTE_kCxlJ0OyV5.png](~/connector/images/SCTE_UPS_Manager_ONENOTE_kCxlJ0OyV5.png)
 
 ### Collectors
 
 This page displays the **Collector Table**, which contains the information of all the available SCTE UPS Collectors within the DataMiner System, such as the number of devices per collector and the corresponding thread information.
 
-![Collector Table.jpg](~/images/SCTE_UPS_Manager_Collector_Table.jpg)
+![Collector Table.jpg](~/connector/images/SCTE_UPS_Manager_Collector_Table.jpg)
 
 It is possible to modify the **Name** of the collector elements in this table.
 
@@ -114,7 +114,7 @@ It is possible to modify the **Name** of the collector elements in this table.
 
 This page contains the **Provisioned Devices** table, which displays the devices that are provisioned in the available SCTE UPS Collectors. In this table, you can modify the **Name** and the **IP Address** of the UPS devices.
 
-![New_Provisioned Devices.jpg](~/images/SCTE_UPS_Manager_New_Provisioned_Devices2.jpg)
+![New_Provisioned Devices.jpg](~/connector/images/SCTE_UPS_Manager_New_Provisioned_Devices2.jpg)
 
 Below the table, a **Deletion Prefix** can be defined. If the name of a UPS device has this prefix, it will be deleted when the **Delete Devices** button is pressed.
 
@@ -128,13 +128,13 @@ If a device has not been provisioned, the manager will determine if **Automatic 
 
 - If **Automatic Provisioning** is *Disabled*, an entry will be created in the **Detected Devices** table.
 
-  ![Detected devices.jpg](~/images/SCTE_UPS_Manager_Detected_devices.jpg)
+  ![Detected devices.jpg](~/connector/images/SCTE_UPS_Manager_Detected_devices.jpg)
 
   This table displays basic information about the detected device, such as the **System Name**, **System Location**, **Serial Number** and the reason why the device was not automatically provisioned (e.g. because Manual mode was active, like in the image above).
 
   You can manually provision the devices in this table by right-clicking a specific entry and selecting **Provision**. A pop-up window will then be displayed where you can fill in the basic information of the device. The **DMS View** and **Collector** must always be specified.
 
-  ![Provision Device.jpg](~/images/SCTE_UPS_Manager_Provision_Device.jpg)
+  ![Provision Device.jpg](~/connector/images/SCTE_UPS_Manager_Provision_Device.jpg)
 
   When you click **OK**, the manager will provision the device in the selected collector. If an error occurs during this process, the details will appear in the **Failure Description** of the corresponding entry in the table.
 
@@ -144,7 +144,7 @@ If a device has not been provisioned, the manager will determine if **Automatic 
 
 This page contains the **Traps** Table, which displays the received Cold and Warm Traps that have not been processed yet. These traps are processed with the help of multithreaded logic. The thread statistics can be found on the General page.
 
-![Traps.jpg](~/images/SCTE_UPS_Manager_Traps.jpg)
+![Traps.jpg](~/connector/images/SCTE_UPS_Manager_Traps.jpg)
 
 In order for a trap to be processed and removed from the table, the device must respond to SNMP requests.
 
@@ -154,11 +154,11 @@ The subpage **Auto Clear** is available via a page button on this page. On this 
 
 This page displays the **Alarm Template Table**, where you can configure the parameters that determine which alarm template must be assigned to the UPS devices that are **automatically provisioned**.
 
-![Alarm Table.jpg](~/images/SCTE_UPS_Manager_Alarm_Table.jpg)
+![Alarm Table.jpg](~/connector/images/SCTE_UPS_Manager_Alarm_Table.jpg)
 
 To create an entry in this table, right-click the table and select **Add**. In the pop-up window, you will be able to configure the alarm template parameters.
 
-![Alarm Template Config.jpg](~/images/SCTE_UPS_Manager_Alarm_Template_Config.jpg)
+![Alarm Template Config.jpg](~/connector/images/SCTE_UPS_Manager_Alarm_Template_Config.jpg)
 
 When you have specified the configuration parameters, click **Save**.
 
@@ -166,7 +166,7 @@ When you have specified the configuration parameters, click **Save**.
 
 This page contains the **Scheduled Test** table.
 
-![Scheduled Tests.jpg](~/images/SCTE_UPS_Manager_Scheduled_Tests.jpg)
+![Scheduled Tests.jpg](~/connector/images/SCTE_UPS_Manager_Scheduled_Tests.jpg)
 
 In this table, you can configure the tests that will be created in bulk in all the SCTE UPS Collector elements. To do so, follow the steps below.
 
@@ -210,7 +210,7 @@ In version **2.0.0.12** of the connector, the Scheduler module is integrated wit
 
 1. Click **OK**.
 
-   ![Create Test Manager.jpg](~/images/SCTE_UPS_Manager_Create_Test_Manager.jpg)
+   ![Create Test Manager.jpg](~/connector/images/SCTE_UPS_Manager_Create_Test_Manager.jpg)
 
 1. Once all the tests have been created, click **Update UPS Tests**. This will replicate the tests in all the available UPS elements. The following logic will be applied in order to avoid all tests getting executed at the same time:
 

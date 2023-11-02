@@ -30,7 +30,7 @@ In the sections below, you can find more information on the different data pages
 
 This page displays general information about the UPS, such as the **Name**, **Vendor**, **IP**, and **MAC**, as illustrated in the example below.
 
-![General.jpg](~/images/SCTE_UPS_General.jpg)
+![General.jpg](~/connector/images/SCTE_UPS_General.jpg)
 
 Some considerations regarding the parameters on this page:
 
@@ -61,7 +61,7 @@ This page displays relevant information regarding the UPS device, such as:
 
 The page also contains other parameters such as the **Input Voltage**, **Output Voltage**, and **Alarms**, as illustrated in the example below.
 
-![Main.jpg](~/images/SCTE_UPS_Main_2.jpg)
+![Main.jpg](~/connector/images/SCTE_UPS_Main_2.jpg)
 
 ### Batteries
 
@@ -69,7 +69,7 @@ This page displays all relevant information about the batteries of the UPS devic
 
 This page also contains the **Battery String Table** and the **Batteries Table**, as illustrated below.
 
-![Batteries DVE.jpg](~/images/SCTE_UPS_Batteries_DVE.jpg)
+![Batteries DVE.jpg](~/connector/images/SCTE_UPS_Batteries_DVE.jpg)
 
 The **Battery Age** parameter needs to be properly configured by the operator, as it is one of the key parameters to calculate the **Predicted Remaining Time**.
 
@@ -79,19 +79,19 @@ A page button provides access to the **Temperature Sensors** subpage, where you 
 
 This page displays relevant information regarding the output of the UPS device, such as the **Output Current** and the **Output Voltage**, as illustrated below.
 
-![Output DVE.jpg](~/images/SCTE_UPS_Output_DVE.jpg)
+![Output DVE.jpg](~/connector/images/SCTE_UPS_Output_DVE.jpg)
 
 ### Modem
 
 This page displays information about the modem transponder of the UPS device, such as the **SNR Quality**, and **Rx** and **Tx Power**.
 
-![Modem.jpg](~/images/SCTE_UPS_Modem.jpg)
+![Modem.jpg](~/connector/images/SCTE_UPS_Modem.jpg)
 
 ### Test
 
 This page displays a summary of the last result of the tests performed by this connector. It contains parameters such as the **Predicted Remaining Time**, **Battery Quality**, **Float State**, and **Battery Temperature Variation**, as illustrated below.
 
-![Test.jpg](~/images/SCTE_UPS_Test.jpg)
+![Test.jpg](~/connector/images/SCTE_UPS_Test.jpg)
 
 About the different kinds of tests:
 
@@ -125,7 +125,7 @@ To do so:
 1. Unless the test is to be executed *One Time*, define the **End Date**, which indicates until when the test will be valid.
 1. If you want to execute the scheduled test immediately, click the button **Start Test** in the row.
 
-  ![Schedule Tests.jpg](~/images/SCTE_UPS_Schedule_Tests.jpg)
+  ![Schedule Tests.jpg](~/connector/images/SCTE_UPS_Schedule_Tests.jpg)
 
 #### Create Test subpage (connector version \>= 1.0.2.21)
 
@@ -136,13 +136,13 @@ From version 1.0.2.21 of the connector onwards, UPS tests are integrated in the 
 1. Set the **Duration**, **Duration Unit**, and **Maximum Voltage Difference**. You can also define if the test must take into account the **Minimum Voltage Threshold** or the **Full Drain Minimum Voltage Threshold**. These are mutually exclusive, so only one can be selected.
 1. Click the **Add** button. An entry will be created in the Scheduled Test table.
 
-![New test.jpg](~/images/SCTE_UPS_New_test.jpg)
+![New test.jpg](~/connector/images/SCTE_UPS_New_test.jpg)
 
 #### History subpage
 
 The History subpage contains the **Battery History** table, which displays a summary of the results of the tests performed by this connector on the UPS device. Each entry in this table displays the **Status** of the test, the **Total Output**, the **Temperature**, and the **Capacity**.
 
-![History DVE.jpg](~/images/SCTE_UPS_History_DVE.jpg)
+![History DVE.jpg](~/connector/images/SCTE_UPS_History_DVE.jpg)
 
 ### Input Failure
 
@@ -151,7 +151,7 @@ This page displays the tables **Input Failure Registration** and **Input Failure
 - The **Input Failure Registration** table keeps track of the input failure occurrences of the device. The table indicates when each failure started and ended, as well as the failure duration and impact on the network. A UPS device loses contact with the network when the batteries are fully depleted during an AC failure.
 - The **Input Failure Registration Summary** table contains a monthly summary of the failures of the device. The values here are aggregated based on all the occurrences during the month.
 
-![Input Failure DVE.jpg](~/images/SCTE_UPS_Input_Failure_DVE.jpg)
+![Input Failure DVE.jpg](~/connector/images/SCTE_UPS_Input_Failure_DVE.jpg)
 
 ### Threshold Configuration
 
@@ -159,7 +159,7 @@ This page displays the Property Table, which contains the alarm threshold inform
 
 The alarm threshold data can be configured directly in the Property Table, or in bulk using the Export and Import functionality.
 
-![Threshold DVE.png](~/images/SCTE_UPS_Threshold_DVE.png)
+![Threshold DVE.png](~/connector/images/SCTE_UPS_Threshold_DVE.png)
 
 #### Exporting Threshold Parameters
 
@@ -175,7 +175,7 @@ To export the content of the **Property Table**:
 
    The file will be placed in the following directory: *C:\Skyline DataMiner\Documents\SCTE UPS Collector\Property*
 
-   ![Export Property DVE.jpg](~/images/SCTE_UPS_Export_Property_DVE.jpg)
+   ![Export Property DVE.jpg](~/connector/images/SCTE_UPS_Export_Property_DVE.jpg)
 
 #### Import Threshold Parameters
 
@@ -193,7 +193,7 @@ To update the content of the **Property Table** in bulk:
 
    The **Import Progress** bar will display the progress of the import, until it reaches 100. Once the import is done, you will also be able to see additional information, such as the number of **Errors** generated.
 
-  ![Import Property DVE.jpg](~/images/SCTE_UPS_Import_Property_DVE.jpg)
+  ![Import Property DVE.jpg](~/connector/images/SCTE_UPS_Import_Property_DVE.jpg)
 
 ### Web Interface
 

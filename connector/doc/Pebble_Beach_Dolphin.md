@@ -12,24 +12,27 @@ This connector communicates with the data source through HTTP requests.
 
 ### Version Info
 
-| **Range**            | **Key Features**              | **Based on** | **System Impact**                                                              |
-|----------------------|-------------------------------|--------------|--------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version               | \-           | \-                                                                             |
-| 1.0.1.x \[SLC Main\] | Implemented IS07 subscription | 1.0.0.x      | Existing elements will need to be recreated to make use of the new connection. |
+| Range              | Key Features                  | Based on | System Impact                                                                  |
+|--------------------|-------------------------------|----------|--------------------------------------------------------------------------------|
+| 1.0.0.x            | Initial version               | -        | -                                                                              |
+| 1.0.1.x            | Implemented IS07 subscription | 1.0.0.x  | Existing elements will need to be recreated to make use of the new connection. |
+| 1.0.2.x [SLC Main] | Fixed subscription issues     | 1.0.1.5  | -                                                                              |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                   |
+| Range     | Supported Firmware                                   |
 |-----------|----------------------------------------------------------|
 | 1.0.0.x   | Node: 1.3 \| Connection: 1.1 \| Events: 1.1              |
 | 1.0.1.x   | Node: 1.3 \| Connection: 1.1 \| Events: 1.1 (WebSockets) |
+| 1.0.2.x   | Node: 1.3 \| Connection: 1.1 \| Events: 1.1 (WebSockets) |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                    | -                      |
+| 1.0.1.x   | Yes                 | Yes                     | -                    | -                      |
+| 1.0.2.x   | Yes                 | Yes                     | -                    | -                      |
 
 ## Configuration
 
@@ -51,7 +54,7 @@ From range 1.0.1.x onwards, this connector also uses a WebSocket connection.
 
 WEBSOCKET CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination \[ws://IP\].
+- **IP address/host**: The polling IP or URL of the destination [ws://IP].
 - **IP port**: The IP port of the destination.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 

@@ -116,7 +116,7 @@ The page also contains two page buttons:
 > - **Output Service name:** Take this from the Kaleido configuration. If you cannot find this information, leave this the same as the Input Service Name.
 > - **Source Friendly Name**: Take this from the Stream Name. Replace each whitespace by a "+". Range 1.0.1.x only.
 >
-> ![2022-07-05 15_26_05-Clipboard.png](~/images/Miranda_Kaleido_IP_X310_2022-07-05_15_26_05-Clipboard.png)![Clipboard](~/images/Miranda_Kaleido_IP_X310_2022-07-05_15_26_05-Clipboard.png)
+> ![2022-07-05 15_26_05-Clipboard.png](~/connector/images/Miranda_Kaleido_IP_X310_2022-07-05_15_26_05-Clipboard.png)![Clipboard](~/connector/images/Miranda_Kaleido_IP_X310_2022-07-05_15_26_05-Clipboard.png)
 >
 > Finally, go to the **Alarm Table** page and enable the alarm table polling if necessary. By default, the connector should enable alarm monitoring for the necessary parameters.
 >

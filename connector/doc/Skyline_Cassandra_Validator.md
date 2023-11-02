@@ -102,7 +102,7 @@ This error is thrown if you specified a **local user** in the settings instead o
 
    *For example, for an internal Failover setup, this looks like this:
 
-   ![failover.png](~/images/Skyline_Cassandra_Validator_failover.png)
+   ![failover.png](~/connector/images/Skyline_Cassandra_Validator_failover.png)
 
 **NOTE**: Only do this if there is absolutely no other option, as it may degrade security. See also: <https://community.spiceworks.com/topic/2027703-how-to-use-invoke-command-with-remote-local-administrator-account>
 
@@ -124,7 +124,7 @@ Write-Output $r
 ```
 
 If this does not result in any problems, then you probably have no issues with the PowerShell commands. Otherwise, you may get an issue when sending the *Invoke-Command:
-![validator error.png](~/images/Skyline_Cassandra_Validator_validator_error.png)*
+![validator error.png](~/connector/images/Skyline_Cassandra_Validator_validator_error.png)*
 
 This error message simply means that the Windows Remote Management has not been configured on the remote or local server. Use the following command, followed by a "y":
 

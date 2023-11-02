@@ -72,4 +72,4 @@ To create or remove items, use the right-click menus of the tables. Entities can
 
 When you create a new mux, you can assign multiple network interfaces and static routes. To do so, separate the values with a comma (,) as shown in the following screenshot:
 
-![image](~/images/Paneda_Mux_Orchestration_image.png)
+![image](~/connector/images/Paneda_Mux_Orchestration_image.png)

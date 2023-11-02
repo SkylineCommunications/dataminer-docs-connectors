@@ -75,7 +75,7 @@ In this range, a virtual connection is used with HTTPS support via QAction. Data
 
 To set up the connection, enter the Kubernetes server address and a valid bearer token on the General page, as depicted below.
 
-![2019-03-08 13_14_47-Window.png](~/images/Kubernetes_Manager_2019-03-08_13_14_47-Window.png)
+![2019-03-08 13_14_47-Window.png](~/connector/images/Kubernetes_Manager_2019-03-08_13_14_47-Window.png)
 
 ### Creation (v1.2.1.x and v1.2.2.x)
 
@@ -91,7 +91,7 @@ HTTP CONNECTION:
 
 To set up the connection, enter a valid bearer token on the General page, as depicted below. If the token is valid, the Authorization State will change to "Authorized".
 
-![kubernetesManagerSetupV1.2.1.x.png](~/images/Kubernetes_Manager_kubernetesManagerSetupV1.2.1.x.png)
+![kubernetesManagerSetupV1.2.1.x.png](~/connector/images/Kubernetes_Manager_kubernetesManagerSetupV1.2.1.x.png)
 
 ### Web Interface (v1.0.0.x and v1.1.0.x)
 

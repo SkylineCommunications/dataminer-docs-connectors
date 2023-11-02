@@ -182,21 +182,21 @@ Kafka message example:
 
 Row configuration example:
 
-![Picture4.svg](~/images/Generic_KAFKA_Producer_Picture4.svg)
+![Picture4.svg](~/connector/images/Generic_KAFKA_Producer_Picture4.svg)
 
 Based on the current configuration of the highlighted row, the Send Data column cell is set to *Enabled*, meaning that the polling cycle for the parameter with ID 2 is activated. The parameter value is polled from the element "Service test" every minute (as determined by the Forwarding Time column) and the value is only forwarded to the topic if the value changes (as determined by the On Change column). The current value is different from the previous one.
 
 It is possible to add parameters from all the elements with the same protocol name.
 
-![row.svg](~/images/Generic_KAFKA_Producer_row.svg)
+![row.svg](~/connector/images/Generic_KAFKA_Producer_row.svg)
 
 When you right-click the Parameters Configuration table, the following options are available:
 
 - **Add New Row**: Adds a default row with each cell value set to N/A except the Forwarding Time (with default value 30s), On Change (with default value *If Value Changes*) and Send Data (with default value *Disabled*). To properly set up a row, make sure to define the fields starting from the left-hand side: DataMiner ID first, then Protocol Name, and so on. This is because when you select the DataMiner ID, the discrete options for the Protocol Name are updated with the existing protocols on that DMA. The same occurs when you select a new Protocol Name: the discrete options for the Element Name are also updated.
 
-  ![1.svg](~/images/Generic_KAFKA_Producer_svg1.png)
+  ![1.svg](~/connector/images/Generic_KAFKA_Producer_svg1.png)
 
-  ![2.svg](~/images/Generic_KAFKA_Producer_2.svg)
+  ![2.svg](~/connector/images/Generic_KAFKA_Producer_2.svg)
 
 - **Enable Selected Row(s)**: The Send Data value will be set to *Enabled*, meaning that the parameter value will be sent to the parameter's topic in a Kafka message.
 

@@ -14,7 +14,7 @@ The device supports remote environmental monitoring such as temperature, humidit
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,9 +26,7 @@ The device supports remote environmental monitoring such as temperature, humidit
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-
-
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -64,61 +62,65 @@ The web interface is only accessible when the client machine has network access 
 
 ### General Page
 
-On this page, you can find general system configurable informations like **Serial Number, Version, Build, Site Name, Product Name.**
+On this page, you can find configurable general system information such as **Serial Number, Version, Build, Site Name**, and **Product Name**.
 
-On this page you can also find Date configurable informations like **Device Date, Device Time** and the option if you want to enable the **Adjust for Daylight Savings.**
+There are also configurable time-related parameters such as **Device Date** and **Device Time** and the option to enable **Adjust for Daylight Savings**.
 
 ### Events Page
 
-On this page you can find **Event Sensor Points** table that organizes 4 basic attributes of points. A point is a particular sensor on an EventSensor (e.g., temperature, humidity, contact closure 2, relay 5, etc.). The 4 point attributes are its name, whether it's in its event state, the point's value as a number and its value as a string.
+On this page, you can find the **Event Sensor Points** table, which organizes four basic attributes of points. A point is a particular sensor on an event sensor (e.g. temperature, humidity, contact closure 2, relay 5, etc.). The four point attributes are its name, whether it is in its event state, the point's value as a number, and its value as a string.
 
-On this page you can also find all the sensors configuration pages regarding **Temperature**, **Humidity**, **Analog Input** and **Relay.**
+On this page you can also find page buttons to the sensor configuration pages regarding **Temperature**, **Humidity**, **Analog Input** and **Relay**.
 
-#### Temperature Configuration Sub-Page
+#### Temperature Configuration Subpage
 
-On this sub-page you can find the **Event Sensor Temperature Configuration,** this table organizes 3 basic attributes of temperature sensor points. The 3 point attributes organizes in this table are:
-1. The configuration item (e.g., enable, name, etc.).
-2. The Event Sensor on which this point resides.
-3. The Point Number (always 1 for temperature sensors).
+On this subpage, you can find the **Event Sensor Temperature Configuration**. This table displays three basic attributes of temperature sensor points:
 
-#### Humidity Configuration Sub-Page
+- The configuration item (e.g. enable, name, etc.).
+- The event sensor on which this point resides.
+- The point number (always 1 for temperature sensors).
 
-On this sub-page you can find the **Event Sensor Humidity Configuration,** this table organizes 3 basic attributes of humidity points. The 3 point attributes organizes in this table are:
-1. The configuration item (e.g., enable, name, etc.).
-2. The Event Sensor on which this point resides.
-3. The Point Number (always 1 for humidity sensors).
+#### Humidity Configuration Subpage
 
-#### Analog Input Configuration Sub-Page
+On this subpage, you can find the **Event Sensor Humidity Configuration**. This table displays three basic attributes of humidity points:
 
-On this sub-page you can find the **Event Sensor Analog Input Configuration Table,** this table organizes 3 basic of analog input points. The 3 point attributes organizes in this table are:
-1. The configuration item (e.g., enable, name, etc.).
-2. The Event Sensor on which this point resides.
-3. The Point Number.
+- The configuration item (e.g. enable, name, etc.).
+- The event sensor on which this point resides.
+- The point number (always 1 for humidity sensors).
 
-#### Relay Configuration Sub-Page
+#### Analog Input Configuration Subpage
 
-On this sub-page you can find the **Event Sensor Relay Configuration Table,** this table organizes 3 basic of Relay points. The 3 point attributes organizes in this table are:
-1. The configuration item (e.g., enable, name, etc.).
-2. The Event Sensor on which this point resides.
-3. The Point Number.
+On this subpage, you can find the **Event Sensor Analog Input Configuration Table**. This table displays three basic attributes of analog input points:
+
+- The configuration item (e.g. enable, name, etc.).
+- The event sensor on which this point resides.
+- The point number.
+
+#### Relay Configuration Subpage
+
+On this subpage, you can find the **Event Sensor Relay Configuration Table**. This table displays three basic attributes of relay points:
+
+- The configuration item (e.g., enable, name, etc.).
+- The event sensor on which this point resides.
+- The point number.
 
 ### Networking Page
 
-On this page you can find all the information regarding network information like **IP Address, Subnet Mask,** **Router Address, SNMP Read Community** string**, SNMP Write Community** string and **SNMP Trap Community** string**.**
+On this page you can find all the information regarding network information like **IP Address, Subnet Mask**, **Router Address**, **SNMP Read Community string**, **SNMP Write Community** string, and **SNMP Trap Community** string.
 
 ### Alerts Page
 
-On this page you have configurable Alert Settings.
+This page contains configurable alert settings.
 
-This page is divided in General Alert Settings that contains the **System Alert Actions** that defines the actions that occur when the system needs to alert the user, if the **PowerUp Alert** is enabled or not, if the **Return to Normal Alerts** are or not enabled and the **Individual Alert Repeat Frequency** in minutes**.**
+Under the General Alert Settings, you can find the **System Alert Actions**. These define the actions that occur when the system needs to alert the user. You can also configure if the **PowerUp Alert** is enabled, if **Return to Normal Alerts** is enabled, and what the **Individual Alert Repeat Frequency** should be (in minutes).
 
-This page also contains **Email Alerts** configuration where you can configure the **Email Server**, the **Email Domain**, if **SMTP Authentication** is enabled, the **Email Authentication Username,** the **Email Authentication Password.** You can also check wich Email adrresses are configured checking the **Email Addresses table.**
+This page also contains the **Email Alerts** configuration. Here you can configure the **Email Server**, the **Email Domain**, if **SMTP Authentication** is enabled, the **Email Authentication Username**, and the **Email Authentication Password.** You can also check which email addresses are configured, in the **Email Addresses table.**
 
-Also in this page we have **SNMP Alerts** configuration where you can check wich **SNMP Servers** are configured**.**
+Finally, there is also the **SNMP Alerts** configuration, where you can check which **SNMP Servers** are configured.
 
 ### Traps Page
 
-On this you can find **Traps table** with the received traps from the device (e.g. PowerUp Trap, Contact Trap, Temperature Trap, Humidity Trap and Test Trap).
+On this page, you can find **Traps table** with the received traps from the device (e.g. PowerUp Trap, Contact Trap, Temperature Trap, Humidity Trap, and Test Trap).
 
 ### Web Interface Page
 
