@@ -49,7 +49,7 @@ This page displays the **External Requests Overview** table, which contains the 
 On this page, you can configure different settings regarding SOAP and offload.
 
 #### SOAP CONFIG
-
+Note: When defining an Endpoint, if the value lacks "://", the connector uses IP address + Endpoint. To include IP, Port, and Endpoint, specify in the format: `IP address + ":" + Port + Endpoint`.
 - **Username** and **Password** for SOAP calls that will be sent to the Oracle MiddleWare. The **Password** is optional.
 - **Number of Retries** in case a SOAP call fails.
 - **IVR Clear Delay** on automatic deactivation requests.
