@@ -8,7 +8,7 @@ The purpose of this connector is to monitor Starlink devices through the Telemet
 
 Starlink is an internet service that uses a satellite constellation in a low Earth orbit to deliver broadband high-speed low-latency internet. Because Starlink satellites are in a low orbit, at about 550km from Earth, the round trip data time between the user and a satellite is significantly lower compared to internet services that make use of single geostationary satellites.
 
-The Starlink Telemetry API is a low-latency API for accessing the telemetry data from Starlink devices. It is designed for users that have their own data infrastructure to monitor Starlink devices remotely. The Telemetry API is a stateless API that will only respond with current telemetry data from the Starlink device.
+The Starlink Telemetry API is a low-latency API for accessing the telemetry data from Starlink devices. It is designed for users that have their own data infrastructure to monitor Starlink devices remotely. The Telemetry API is a stateless API that will only respond with current telemetry data.
 
 ## About
 
@@ -50,13 +50,10 @@ TCP/IP settings
 
 ### Initialization
 
-A newly created element will only start polling data when both **Client ID** and **Client Secret** are filled in on the **Login** page. 
+A newly created element will only start polling data when both **Client ID** and **Client Secret** are filled in on the **Login** page.
 
-In case no data is appearing on the element and the traffic inside the Stream Viewer seems minimal, verify if the **Authentication** parameter is indicating **Successful**. If it's indicating **Failed** it means that the Client ID or the Client Secret is not correct.
-
-The polling mechanism is triggered after a Client Secret value change. This means that a Client Secret value change is needed to trigger it after correcting an incorrect Client ID.
-
-No Telemetry will be polled by default. To enable telemetry polling, go to the **Accounts** table on the Accounts page and tick the toggle button of the relevant row(s) in the **Polling** column.
+> [!IMPORTANT]
+> No telemetry will be polled by default. To enable telemetry polling, go to the **Accounts** table on the **Accounts** page and tick the toggle button of the relevant row(s) in the **Polling** column.
 
 ### Redundancy
 
@@ -70,11 +67,12 @@ The web interface is only accessible when the client machine has network access 
 
 The connector uses JSON over HTTP to retrieve its data.
 
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show Groups 402-404 in the Stream Viewer.
+To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show groups 402-404 in the Stream Viewer.
 
-Keep in mind that it still can happen that the tables User Terminals, Alerts and Routers are empty while polling is enbaled for at least one account, the Authentication parameter is indicating Successful and the above mentioned groups are appearing in the Stream Viewer.
+If you only see group 402 in the Stream Viewer, we suggest to re-enter the Client ID and Client Secret and check the Authentication parameter.
 
-If you only see Group 402 in the Stream Viewer, we suggest to re-enter the Client ID and Client Secret and check the Authentication parameter.
+> [!NOTE]
+> Keep in mind that the tables User Terminals, Alerts and Routers can be empty while polling is enbaled for at least one account, the Authentication parameter is indicating Successful and groups 402-404 are appearing in the Stream Viewer.
 
 ### General Page
 
@@ -82,7 +80,7 @@ The General page contains the **User Terminals** table. This table shows the Sta
 
 ### Alerts Page
 
-Each row in the **Alerts** table represents an alert that comes from a user terminal. Alerts will persist for as long as they are active. They are triggered if the condition was met at least once the previous 15 seconds.
+Each row in the **Alerts** table represents an alert that comes from a user terminal. Alerts will persist for as long as they are active.
 
 ### Routers Page
 
@@ -90,10 +88,15 @@ Information related to routers is stored in the **Routers** table.
 
 ### Login Page
 
-The Login page contains the Client ID, the Client Secret and the Authentication field. When both Client ID and Client Secret are accepted by the API, the **Authentication** field will indicate **Successful** and data will start appearing in the element.
+The Login page contains the Client ID, the Client Secret and the Authentication field. When both Client ID and Client Secret are accepted by the API, the Authentication field will indicate Successful and data will start appearing in the element.
+
+In case no data is appearing in the element and the traffic inside the Stream Viewer seems minimal, please verify if the **Authentication** parameter is indicating Successful. If it's indicating **Failed** it means that the Client ID or the Client Secret is not correct.
+
+The polling mechanism is triggered after a Client Secret value change. This means that a Client Secret value change is required to trigger a new poll cycle after correcting an incorrect Client ID.
 
 ### Accounts Page
 
-All known accounts are listed in the **Accounts** table. Each row in this table contains a polling toggle button. No Telemetry will be polled by default. The toggle button of every row will indicate *Disabled*. You'll need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts and Routers.
+All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No Telemetry will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You'll need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts and Routers.
 
-Keep in mind that it can take some time before data is visible in the above mentioned tables after enabling the polling for one or more accounts. There is no trigger after changing one or more toggle buttons. Every timer cycle the connector checks for which accounts polling is enabled.
+> [!NOTE]
+> Keep in mind that it can take some time before data is visible in the above mentioned tables after enabling the polling for one or more accounts. There is no trigger after changing one or more toggle buttons. Every timer cycle the connector checks for which accounts polling is enabled.
