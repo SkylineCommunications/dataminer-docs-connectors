@@ -77,7 +77,8 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.6.x | \- Quick topology for GPON now contains Split Route, Split Distribution, and Split FAT. Generic Split level was removed. | \- | \- |
 | 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | \- | \- |
 | 1.0.8.x | Remote views removed from GPON CPE level (ONT). | \- | \- |
-| 1.0.9.x \[SLC Main\] | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | \- | \- |
+| 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | \- | \- |
+| 1.0.10.x \[SLC Main\] | Aligning tables to be ordered as it is on the overview page. | \- | \- |
 
 ### Product Info
 
@@ -93,6 +94,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x   | N/A                    |
 | 1.0.8.x   | N/A                    |
 | 1.0.9.x   | N/A                    |
+| 1.0.10.x   | N/A                    |
 
 ### System Info
 
@@ -108,6 +110,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.0.8.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.0.9.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.10.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
