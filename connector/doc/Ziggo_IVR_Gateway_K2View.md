@@ -78,28 +78,29 @@ The parameters **Max Amount of Incidents** and **Amount of Incidents to Offload*
 
   The number of remaining entries in the table is based on the formula **Max Amount of Incidents - Amount of Incidents to Offload**. As such, even if the table already contains more entries than the allowed maximum, the remaining entries after an offload will always be the same based on the configuration.
 
-The other parameters are used to configure when the offload check will be done, how the offload files will be stored and how long those files will be stored.
+The other parameters are used to configure when the offload check will be done, how the offload files will be stored, and how long those files will be stored.
 
-In the **Offload Path** folder, subfolders will be created on a daily basis with the name *yyyy_MM_dd*. These subfolders will contain offload CSV files with the structure *Offload\_\<Hour\>\_\<Timespan\>,* where *\<Hour\>* is the starting hour of the offload files and *\<Timespan\>* is the value from the parameter **Offload File Timespan**.
+In the **Offload Path** folder, subfolders will be created on a daily basis with the name *yyyy_MM_dd*. These subfolders will contain offload CSV files with the structure `Offload_<Hour>_<Timespan>`, where `<Hour>` is the starting hour of the offload files and `<Timespan>` is the value from the parameter **Offload File Timespan**.
 
 With the parameter **Offload File Local Storage Period**, you can configure how long the offloaded files will be stored in the local system. If you set this parameter to *Disabled*, there will be no cleanup of the local system.
 
-*LOG CONFIG*
+#### LOG CONFIG
 
-The **Log Config** section allows the user to configure some settings about the Logging:
+In the **Log Config** section, you can configure settings for the logging:
 
-- **Status**: Enable or disable the logging mechanism;
-- **Full Path**: Full directory where the log file will be stored, (including file name and extension). Preferably .txt or .csv extensions;
-- **Maximum Number of Entries**: This is a rolling log, i.e., when the maximum number of entries is reached, the older entries (from the top) are removed, and the newer ones are appended to the bottom of the file.
+- **Status**: Enable or disable the logging mechanism.
+- **Full Path**: Full directory where the log file will be stored, including file name and extension. Preferably .txt or .csv extensions.
+- **Maximum Number of Entries**: This is a rolling log. This means that when the maximum number of entries is reached, the older entries (from the top) are removed, and the newer ones are appended to the bottom of the file.
 
 #### IVR RULES
 
 Pressing the **IVR Rules** page button will open a window with a table where a set of rules are defined. These rules will be read by an Automation script. If they match the intended logic, the Automation script will cause the IVR Gateway to be triggered when the **IVR** column is set to **YES**.
 
-To create a rule, right-click and select **Add row.** You will then be able to fill in a number of options: **Event Tag \[IDX\]**, **Severity**, **Min Limit Customer**, **Max Limit Customer**, **Level** and **Group.** Rules will be considered correct if they follow the following logic:
+To create a rule, right-click and select **Add row.** You will then be able to fill in a number of options: **Event Tag \[IDX\]**, **Severity**, **Min Limit Customer**, **Max Limit Customer**, **Level**, and **Group.** Rules will be considered correct if they follow the following logic:
 
 - **IF** Event Tag [IDX] **AND** Severity **AND** Min Limit Customer **AND** Max Limit Customer **AND** Level
 
 The IVR Rules table has a column called **Priority**. This editable parameter allows you to select the priority for each rule entry. The table is sorted automatically from the highest priority (value 1) to the lowest (number of entries in table).
 
-- *IT IS NOT RECOMMENDED* to set multiple priorities simultaneously, as this may result in incorrect sorting. When a new rule is created, it will automatically receive the lowest priority and be placed at the bottom of the table.
+> [!NOTE]
+> We **do not recommend** setting multiple priorities simultaneously, as this may result in incorrect sorting. When a new rule is created, it will automatically receive the lowest priority and be placed at the bottom of the table.
