@@ -41,7 +41,7 @@ This connector uses an HTTP connection to be able to interact with the Telemetry
 HTTP CONNECTION:
 
 - **Type of port:** TCP/IP
-- **IP address/host**: The polling IP of the platform. The IP address/host field of the element wizard is currently ignored.
+- **IP address/host**: api.starlink.com
 
 TCP/IP settings
 
@@ -67,12 +67,14 @@ The web interface is only accessible when the client machine has network access 
 
 The connector uses JSON over HTTP to retrieve its data.
 
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show groups 402-404 in the Stream Viewer.
+To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show groups 700-702 in the Stream Viewer.
 
-If you only see group 402 in the Stream Viewer, we suggest to re-enter the Client ID and Client Secret and check the Authentication parameter.
+If you only see group 700 in the Stream Viewer, we suggest to check the Authentication parameter and re-enter the Client ID and Client Secret if the the authentication failed.
+
+If you only see groups 700 and 701 in the Stream Viewer, please check the Polling column of the Accounts table. Probably none of the toggle buttons will indicate Enabled.
 
 > [!NOTE]
-> Keep in mind that the tables User Terminals, Alerts and Routers can be empty while polling is enbaled for at least one account, the Authentication parameter is indicating Successful and groups 402-404 are appearing in the Stream Viewer.
+> Keep in mind that the tables User Terminals, Alerts and Routers can be empty while polling is enbaled for at least one account, the Authentication parameter is indicating Successful and groups 700-702 are appearing in the Stream Viewer.
 
 ### General Page
 
@@ -99,4 +101,4 @@ The polling mechanism is triggered after a Client Secret value change. This mean
 All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No Telemetry will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You'll need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts and Routers.
 
 > [!NOTE]
-> Keep in mind that it can take some time before data is visible in the above mentioned tables after enabling the polling for one or more accounts. There is no trigger after changing one or more toggle buttons. Every timer cycle the connector checks for which accounts polling is enabled.
+> Keep in mind that it can take some time before data is visible in tables User Terminals, Alerts and Routers after enabling the polling for one or more accounts. There is no trigger after changing one or more toggle buttons. Every timer cycle the connector checks for which accounts polling is enabled.
