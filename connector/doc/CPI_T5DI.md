@@ -14,13 +14,15 @@ This connector uses **serial** communication to manage the **CPI T5DI** device.
 
 | **Range** | **Description** |
 |------------------|-----------------|
-| 1.0.0.x          | Initial version |
+| 1.0.0.x \[SLC Main\]| Initial version. Based on the BCIP protocol |
+| 1.0.1.x          | Version based on the ACIP protocol <br />Less parameters are available using this range: range 1.0.0.x must be preferred when possible. |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | 01.00.15                    |
+| 1.0.1.x          | 01.00.15                   |
 
 ## Installation and configuration
 
