@@ -12,19 +12,28 @@ This sensor measures the power of a given frequency. It is possible to configure
 
 | **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
 |------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| 1.0.0.x \[SLC Main\]| Initial Version| No| True|
+| 1.0.1.x          |Version based on the VISA library<br />Less parameters are available using this range: range 1.0.0.x must be preferred when possible.| No| True|
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | Unknown                     |
+| 1.0.1.x          | Unknown                     |
 
-## Installation and configuration
+### System Info
+|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
+|---------|---------|---------|---------|---------|
+|1.0.0.x    |No       |Yes         |-         |   |
+|1.0.1.x    |No       |Yes         |-         |   |
 
-### Creation
+## Configuration
 
-#### Serial Main Connection
+### Connection
+
+#### 1.0.0.x
+##### Serial Main Connection
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -39,6 +48,20 @@ SERIAL CONNECTION:
 - Interface connection:
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
+
+#### 1.0.1.x
+##### Virtual Connection - Main
+This connector uses a virtual connection and does not require any input during element creation.
+
+### Initialization
+
+In range **1.0.1.x**, the dll *RsInstrument.dll* must be present in the ProtocolScripts folder.
+
+The IP address of the device must be set on the **General** page.
+
+### Redundancy
+
+There is no redundancy defined.
 
 ## Usage
 
