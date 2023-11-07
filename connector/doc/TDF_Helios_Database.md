@@ -30,9 +30,9 @@ Each Operator will have its own Exported component and will be able to provision
 
 | **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**        |
 |-----------|---------------------|-------------------------|-----------------------|--------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | TDF Helios Database - Operator |
-| 1.0.1.x   | No                  | Yes                     | \-                    | TDF Helios Database - Operator |
-| 1.0.2.x   | No                  | Yes                     | \-                    | TDF Helios Database - Operator |
+| 1.0.0.x   | No                  | Yes                     | \-                    | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.1.x   | No                  | Yes                     | \-                    | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.2.x   | No                  | Yes                     | \-                    | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 
 ## Configuration
 
