@@ -44,7 +44,7 @@ Start by the **Configuration** page, where the following parameters should be de
 - **GitHub API:** GitHub API Bearer Token, which should be defined in order to retrieve vulnerability details, which will be retrieved via HTTP calls to the [https://api.github.com](url)
 - **Logging Directory:** Directory path to store the logs related to the scans.
 
-The connector supports scan of projects belonging to the directories added to the **Repositories** table in order to detect vulnerable/outdated/deprecated dependencies, 
+The connector supports the scan of projects belonging to the directories added to the **Repositories** table in order to detect vulnerable/outdated/deprecated dependencies, 
 being the results displayed in the **Scan Results** page.
 
 It provides a **Control Center** that allows to configure which repositories are enabled for scanning, as well as other options such as: scheduler times, scan frequencies or execution information.
