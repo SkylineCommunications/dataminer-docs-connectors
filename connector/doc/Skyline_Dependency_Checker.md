@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Dependency_Checker
 
 # Skyline Dependency Checker
 
-This connector aims to scan either npm and NuGet projects for vulnerable/outdated/deprecated dependencies.
+This connector aims to scan npm and NuGet projects for vulnerable/outdated/deprecated dependencies.
 
 ## About
 
