@@ -38,7 +38,7 @@ There is no redundancy defined.
 
 ## How to use
 
-Start by the **Configuration page**, where the following parameters should be defined:
+Start by the **Configuration** page, where the following parameters should be defined:
 
 - **Npm Command File:** Directory path to the **'npm.cmd'** should be specified in order to allow npm audit scans of the projects present beloging to the defined repositories.
 - **GitHub API:** GitHub API Bearer Token, which should be defined in order to retrieve vulnerability details, which will be retrieved via HTTP calls to the [https://api.github.com](url)
