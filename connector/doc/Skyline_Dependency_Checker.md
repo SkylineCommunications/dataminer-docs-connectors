@@ -51,6 +51,8 @@ It provides a **Control Center** that allows to configure which repositories are
 
 A **Log Visualizer** is also present in order to facilitate the consult of the log files generated upon scaning.
 
+Finally, to facilitate the navigation, an **Overview** page is provided in order to have a chain of Repositories -> Projects -> Dependencies -> Vulnerabilities.
+
 ## Notes
 
 - The logging files are being overwritten upon a new scan of the same repository.
