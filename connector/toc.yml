@@ -8215,6 +8215,8 @@
     topicUid: Connector_help_Skyline_Resource_Discovery_Rules
   - name: Skyline SCTE Manager
     topicUid: Connector_help_Skyline_SCTE_Manager
+  - name: Skyline SecurityOnion Monitor
+    topicUid: Connector_help_Skyline_SecurityOnion_Monitor
   - name: Skyline Service Assurance
     topicUid: Connector_help_Skyline_Service_Assurance
   - name: Skyline Service Definition Basic
