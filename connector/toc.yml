@@ -6176,8 +6176,12 @@
   - name: ND Satcom SKYWAN
     topicUid: Connector_help_ND_Satcom_SKYWAN
 - name: NEC
-  topicUid: Connector_help_NEC_HPC-1358
+  topicUid: Connector_help_NEC_DTL-30
   items:
+  - name: NEC DTL-30
+    topicUid: Connector_help_NEC_DTL-30
+  - name: NEC DTU-70
+    topicUid: Connector_help_NEC_DTU-70
   - name: NEC HPC-1358
     topicUid: Connector_help_NEC_HPC-1358
   - name: NEC HPC-1358 - Main Transmitter
