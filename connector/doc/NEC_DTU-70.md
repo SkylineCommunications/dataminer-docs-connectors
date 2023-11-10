@@ -4,17 +4,15 @@ uid: Connector_help_NEC_DTU-70
 
 # NEC DTU-70
 
-The **DTU-70** is a Liquid-Cooled Digital UHF TV Transmitter
+The **DTU-70** is a liquid-cooled digital UHF TV transmitter. It incorporates a web server and SNMP agent, enabling monitoring and control of transmitter operations via a remote PC with a web browser, while also allowing an SNMP manager to monitor and control from a different location at the same time.
 
 ## About
-
-The **DTU-70** incorporates a web server and SNMP agent, enables the transmitter to be conducted to a local area network for monitoring and control of transmitter operations via a remote PC with a web browser. Whilst also allowing a SNMP manager to monitor and control from a different location at the same time. Thus, provide a cost-efficient maintenance, whilst the transmitter is in operation and without the requirement of expensive measurement equipment.
 
 ### Version Info
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -48,7 +46,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-This page displays the Status parameters, most notably the **TX Forward Power** and **TX Reflected Power**. This page also contains a page button to **System Information** subpage.
+This page displays the status parameters, most notably the **TX Forward Power** and **TX Reflected Power**. It also contains a page button to the **System Information** subpage.
 
 ### TX Overview
 
@@ -56,16 +54,16 @@ This page displays the alarm status parameters.
 
 ### PA Overview
 
-This page displays two tables: **PA Status Table**, **PA Alarms Table**.
+This page displays two tables: **PA Status Table** and **PA Alarms Table**.
 
-### PA Overview
+### DPA Overview
 
 This page displays two tables: **DPA Status Table** and **DPA Alarms Table**.
 
 ### Cooling
 
-This page displays the Cooling information and Cooling alarm status parameters.
+This page displays the cooling information and cooling alarm status parameters.
 
 ### Configuration
 
-This page primarily provides configuration for the **Exciter**, **Pump** and **Heat Exchanger**.
+On this page, you can configure the **exciter**, **pump**, and **heat exchanger**.
