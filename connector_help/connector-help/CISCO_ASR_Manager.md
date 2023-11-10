@@ -68,6 +68,16 @@ This page displays the **Detailed** **Interface Info** table.
 
 The page also contains a button that can be used to **Remove Unused Interfaces** from the **Detailed Interface Info** table.
 
+Via Measurement Configuration, you can enable or disable the polling of interface communication KPIs.
+
+**Enable All** button enables polling for all the interface communication KPIs.
+
+**Disable All** button disabled polling for all the interface communication KPIs.
+
+**Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and disables all with a *Down* or *Admin Down* operation state.
+
+**Keep and Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and disables all with a *Admin Down* operation state.
+
 ### Detailed Interface Info - Rx
 
 This page displays the **Detailed** **Interface Info - Rx** table.

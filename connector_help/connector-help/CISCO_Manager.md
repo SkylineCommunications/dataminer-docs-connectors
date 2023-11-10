@@ -133,6 +133,14 @@ The column **IF Counter Type** displays if the bitrates are calculated with 32-b
 
 Via **Measurement Configuration**, you can enable or disable the display and calculation of the interface communication KPIs. Range 2.1.x.x uses subtables, which limits the polling (disabled rows are not polled). Range 3.1.x.x uses "multiplegetbulk", because when some cells were empty, the complete interface table was empty when polled with range 2.1.x.x. Multiplegetbulk does not support subtables, so disabled rows will still be polled.
 
+**Enable All** button enables polling for all the interface communication KPIs.
+
+**Disable All** button disabled polling for all the interface communication KPIs.
+
+**Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and disables all with a *Down* or *Admin Down* operation state.
+
+**Keep and Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and disables all with a *Admin Down* operation state.
+
 In the **3.1.1.x** and **4.1.1.x** ranges, you can temporarily activate the **high-resolution measuring** option, which triggers polling, calculating and updating interface-related KPIs with a frequency of **approximately 1 second**.
 You can enable this option and define the active time in the **MCT- High Resolution Measuring** and **MCT- High Res Active Time** columns of the **Measurement Configuration Table**, respectively.
 
