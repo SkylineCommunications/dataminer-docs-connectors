@@ -16,7 +16,7 @@ This connector requires **DataMiner version 8.5.3** or higher.
 
 | **Range** | **Description**                                         | **DCF Integration** | **Cassandra Compliant** |
 |------------------|---------------------------------------------------------|---------------------|-------------------------|
-| 1.1.0.x          | Initial version.                                        | Yes                 | No                      |
+| 1.1.0.x          | Initial version.                                        | Yes                 | Yes                      |
 
 ### Product Info
 
