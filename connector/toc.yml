@@ -3829,8 +3829,10 @@
   - name: France Televisions InHouse
     topicUid: Connector_help_France_Televisions_InHouse
 - name: Fraunhofer
-  topicUid: Connector_help_Fraunhofer_DRM_Content_Server
+  topicUid: Connector_help_Fraunhofer_DAB_Content_Server
   items:
+  - name: Fraunhofer DAB Content Server
+    topicUid: Connector_help_Fraunhofer_DAB_Content_Server
   - name: Fraunhofer DRM Content Server
     topicUid: Connector_help_Fraunhofer_DRM_Content_Server
 - name: Fujitsu
