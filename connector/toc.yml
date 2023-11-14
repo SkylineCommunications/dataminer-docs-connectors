@@ -517,6 +517,8 @@
   items:
   - name: Apantac LE-20HD
     topicUid: Connector_help_Apantac_LE-20HD
+  - name: Apantac Tahoma T-Sharp
+    topicUid: Connector_help_Apantac_Tahoma_T-Sharp
 - name: APC
   topicUid: Connector_help_APC_ACRC103
   items:
