@@ -16,19 +16,19 @@ This connector requires **DataMiner version 8.5.3** or higher.
 
 | Range              | Key Features     | Based on | System Impact |
 |--------------------|------------------|----------|---------------|
-| 1.1.0.x [SLC Main] | Initial version. | -        | -             |
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.1.0.x | -                  |
+| 1.0.0.x | -                  |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
-| 1.1.0.x | Yes             | No                  | -                 | -                   |
+| 1.0.0.x | Yes             | Yes                  | -                 | -                   |
 
 ## Configuration
 
@@ -96,17 +96,9 @@ This page contains the destination channels table.
 
 This page contains the matrix.
 
-### Locks Page
-
-This page contains the  matrix locks table.
-
 ### Labels Page
 
 This page contains the  matrix labels table.
-
-### States Page
-
-This page contains the matrix states table.
 
 ## Notes
 
