@@ -10,10 +10,10 @@ The Vertiv Watchdog 100-PNPS is a self-contained environmental monitor with onbo
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                              | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \ | Monitoring support for temperature, air flow, dewpoint, CCAT, T3HD, THD, RPM and A2D sensors. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Added Write for Relay Control. | \-           | \-                |
+| Range              | Key Features                                                                                   | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Monitoring support for temperature, air flow, dewpoint, CCAT, T3HD, THD, RPM, and A2D sensors. | -        | -             |
+| 1.0.1.x [SLC Main] | Added write parameter for Relay Control.                                                       | -        | -             |
 
 ### Product Info
 
@@ -26,14 +26,14 @@ The Vertiv Watchdog 100-PNPS is a self-contained environmental monitor with onbo
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### SNMP Main Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -47,9 +47,8 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-- 
 
-#### HTTP Secondary Connection
+#### HTTP Connection - Secondary
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -60,14 +59,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-To make sure the connector can connect to the API, fill in the credentials on the **Configuration** subpage found under the General Page:
-
-- Username
-- Password
-
-### Initialization
-
-No extra configuration is needed.
+To make sure the connector can connect to the API, go to the **General** > **Configuration** page and fill in the **Username** and **Password**.
 
 ### Redundancy
 
@@ -83,12 +75,16 @@ At the top of the Visual Overview page for this connector, information about the
 
 Under Data, the following pages are available:
 
-- **General**: Contains general information about the device, such as the system name, location, contact, version, etc. Via a page button, you can change the **units** used for temperature values (§C/§F).
-	- **Configuration**: Contains setting to set Temperature units (Celsius or Fahrenheit), login Credentials used for the HTTP API and login validation button to check if credentials are valid.
+- **General**: Contains general information about the device, such as the system name, location, contact, version, etc. Via a page button, you can change the **units** used for temperature values (°C/°F).
+
+  - **Configuration**: Contains settings to set the temperature units (Celsius or Fahrenheit), login credentials used for the HTTP API, and a login validation button to check if the credentials are valid.
+
 - **Internal Sensors**: Displays the current internal sensor values, including temperature, dew points, humidity, and analog data.
+
 - **External sensors**: Contains a tree view that displays external sensor values for each selected sensor. The page button at the bottom of the page displays the tables this tree view is based on.
 
 ## Notes
 
 This connector is intended to be used with a custom Visio file.
-After any API call is sent, a logout is done after to prevent hogging the connection.
+
+After an API call is sent, a logout is done so that the connector does not hog the connection.
