@@ -8118,6 +8118,8 @@
     topicUid: Connector_help_Skyline_DataMiner_IT_Tools
   - name: Skyline DataMiner System
     topicUid: Connector_help_Skyline_DataMiner_System
+  - name: Skyline Dependency Checker
+    topicUid: Connector_help_Skyline_Dependency_Checker
   - name: Skyline DMP Replication
     topicUid: Connector_help_Skyline_DMP_Replication
   - name: Skyline DMP Replication Umbrella
