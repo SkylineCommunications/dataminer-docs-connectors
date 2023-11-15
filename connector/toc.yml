@@ -8909,6 +8909,8 @@
     topicUid: Connector_help_TDF_GE_TBOX
   - name: TDF Helios Database
     topicUid: Connector_help_TDF_Helios_Database
+  - name: TDF Helios Database - Operator
+    topicUid: Connector_help_TDF_Helios_Database_-_Operator
   - name: TDF Incident Ticketing
     topicUid: Connector_help_TDF_Incident_Ticketing
   - name: TDF Jbus PLC
