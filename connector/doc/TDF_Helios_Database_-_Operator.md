@@ -10,7 +10,7 @@ This connector is a child connector of the [TDF Helios Database](xref:Connector_
 
 The element using this connector is automatically created by the parent connector.
 
-Assuming everything was correctly assigned in the parent element, the only configuration needed is on the **Filters** page.On that page, you can define four types of filters: **Item de Catalogue**, **Site Code**, **Service Client Code**, and **PNO Code**. Note that all these fields are columns in the Queries tables of the parent element.
+Assuming everything was correctly assigned in the parent element, the only configuration needed is on the **Filters** page. On that page, you can define four types of filters: **Item de Catalogue**, **Site Code**, **Service Client Code**, and **PNO Code**. Note that all these fields are columns in the Queries tables of the parent element.
 
 To add a filter, fill in the **Register New Item** parameter for the specific type. Once you have added the filter, the item will appear in the respective **Registry** Table.
 

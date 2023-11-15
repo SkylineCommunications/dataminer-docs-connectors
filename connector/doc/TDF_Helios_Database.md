@@ -56,7 +56,7 @@ Aside from the **General** page, which contains the connection parameters mentio
 
 ### Queries
 
-On the **Sites**, **CAT**, **Point of Services**, and **Equipments** pages, you need to define the **"Query name" Query File Path**. This is the path to the file where the query is available. This file must contain the **partial query** from the **"from"** keyword onwards, including the "from" keyword itself (see example below). The initial part of the query is initialized by the connector itself. This part is fixed, and the columns of the tables depend directly on it.
+On the **Sites**, **CAT**, **Point of Services**, and **Equipments** pages, you need to define the **"Query name" Query File Path**. This is the path to the file where the query is available. This file must contain the **partial query** from the **"from"** keyword onwards, including the "from" keyword itself (see [example](#example-of-a-sites-query-file) below). The initial part of the query is initialized by the connector itself. This part is fixed, and the columns of the tables depend directly on it.
 
 After you have created the query file and configured the relevant Query File Path parameter, you can execute the query with the **Execute "Query Name" Query** button.
 
@@ -92,7 +92,7 @@ On the **Operators** page, you can use the right-click menu of the Operators tab
 
 ### Provisioning
 
-There are several general (i.e. common to all operators) provisioning configurations available on the **Provisioning** page.
+There are several general (i.e. common to all operators) provisioning settings available on the **Provisioning** page.
 
 In the **DMA Departments Allocation** table, which contains a row per DMA available in the DMS, you can define DMA allocation, which determines to which DMA the elements from several departments are going to be assigned.
 
@@ -100,7 +100,7 @@ In the **DMA Departments Allocation** table, which contains a row per DMA availa
 
 - To define which types of services (*All Services* or *Only Standard Services*) will be assigned to the DMA, you need to define the **Metropole Services Segmentation**.
 
-- The Elements Margin column is used to define the percentage of elements that will not be create to ensure that the number of elements in the license is not exceeded. TDF uses DMAs with a 500 or 1000 elements license.
+- The **Elements Margin** column is used to define the percentage of elements that will not be create to ensure that the maximum number of elements in the DataMiner license is not exceeded. TDF uses DMAs with a 500 or 1000 elements license.
 
 For each type of protocol to be assigned to the created elements, you can also configure generic settings in the **Element Settings** table.
 
@@ -108,4 +108,4 @@ The service templates that define how the services are going to be created are d
 
 ## Notes
 
-The table rows are updated with 1000 rows at the time. This limitation is in place in order to avoid a possible negative effect on DataMiner performance.
+The table rows are updated with 1000 rows at a time. This limitation is in place in order to avoid a possible negative effect on DataMiner performance.
