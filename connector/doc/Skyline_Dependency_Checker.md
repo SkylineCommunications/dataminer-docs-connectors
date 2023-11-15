@@ -4,21 +4,21 @@ uid: Connector_help_Skyline_Dependency_Checker
 
 # Skyline Dependency Checker
 
-This connector aims to scan npm and NuGet projects for vulnerable/outdated/deprecated dependencies.
+This connector can be used to scan NPM and NuGet projects for vulnerable, outdated, or deprecated dependencies.
 
 ## About
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |-         |-         |-         |
+| Range              | Features | Based on | System Impact |
+|--------------------|----------|----------|---------------|
+| 1.0.0.x [SLC Main] | -        | -        | -             |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |-   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -30,31 +30,23 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-Indicate if additional configuration of parameters is necessary in a newly created element.
+When you have created the element, go to the **Configuration** page and configure the following parameters:
 
-### Redundancy
-
-There is no redundancy defined.
+- **Npm Command File**: Specify the directory path to the **npm.cmd** file to allow NPM audit scans of the projects belonging to the defined repositories.
+- **GitHub API**: Specify the GitHub API Bearer token to retrieve vulnerability details, which will be retrieved via HTTP calls to <https://api.github.com>.
+- **Logging Directory**: Specify the directory where logs related to the scans should be stored.
 
 ## How to use
 
-Start by the **Configuration** page, where the following parameters should be defined:
+With this connector, you can scan projects in the directories added to the **Repositories** table in order to detect vulnerable, outdated, or deprecated dependencies. The results of a scan are displayed in the **Scan Results** page.
 
-- **Npm Command File:** Directory path to the **'npm.cmd'** should be specified in order to allow npm audit scans of the projects present beloging to the defined repositories.
-- **GitHub API:** GitHub API Bearer Token, which should be defined in order to retrieve vulnerability details, which will be retrieved via HTTP calls to the [https://api.github.com](url)
-- **Logging Directory:** Directory path to store the logs related to the scans.
+The connector provides a **Control Center** that allows you to configure which repositories are enabled for scanning. You can also configure scheduler times, scan frequencies, and execution information.
 
-The connector supports the scan of projects belonging to the directories added to the **Repositories** table in order to detect vulnerable/outdated/deprecated dependencies, 
-being the results displayed in the **Scan Results** page.
+A **Log Visualizer** is also present, so you can easily consult the log files generated upon scanning.
 
-It provides a **Control Center** that allows to configure which repositories are enabled for scanning, as well as other options such as: scheduler times, scan frequencies or execution information.
-
-A **Log Visualizer** is also present in order to facilitate the consult of the log files generated upon scaning.
-
-Finally, to facilitate the navigation, an **Overview** page is provided in order to have a chain of Repositories -> Projects -> Dependencies -> Vulnerabilities.
+Finally, you can use the **Overview** page to easily navigate from repositories to projects, to dependencies, and to vulnerabilities.
 
 ## Notes
 
-- The logging files are being overwritten upon a new scan of the same repository.
-- For large directories, the scan operation might take a considerable amount of time. 
-
+- The log files are overwritten when a new scan of the same repository happens.
+- For large directories, the scan operation may take a considerable amount of time.
