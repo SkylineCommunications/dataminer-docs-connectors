@@ -4,7 +4,7 @@ uid: Connector_help_Imagine_Communications_Platinum_VX_CQ_Router
 
 # Imagine Communications Platinum Router VX CQ Router
 
-This is an SNMP connector that is used to monitor and control the device **Imagine Communications Platinum VX CQ.**
+This is an SNMP connector that is used to monitor and control the device **Imagine Communications Platinum VX CQ**.
 
 A platinum router is a matrix that can switch different types of sources (audio/video). The matrix can also be divided into several "virtual" matrixes, which each create a new level.
 
@@ -28,7 +28,7 @@ This connector requires **DataMiner version 8.5.3** or higher.
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | Yes             | Yes                  | -                 | -                   |
+| 1.0.0.x | Yes             | Yes                 | -                 | -                   |
 
 ## Configuration
 

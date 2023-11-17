@@ -4,7 +4,7 @@ uid: Connector_help_Imagine_Communications_Platinum_Router
 
 # Imagine Communications Platinum Router
 
-This is a serial connector that is used to monitor and control the device **Imagine Communications Platinum Router.**
+This is a serial connector that is used to monitor and control the device **Imagine Communications Platinum Router**.
 
 A platinum router is a matrix that can switch different types of sources (audio/video). The matrix can also be divided into several "virtual" matrixes, which each create a new level.
 
@@ -78,6 +78,7 @@ On this page, you can view the status of the device matrix, and make changes to 
 ### Table View Page (version 1.1.0.3 onwards)
 
 On this page, you can view a table representation of the matrix, and you can also set a crosspoint or disconnect it.
+
 This is only available if the appropriate setting is configured on the **Configuration Page**.
 
 ### Configuration Page
@@ -98,6 +99,7 @@ On this page, you can view the status of the device matrix, and make changes to 
 ### Table View Page
 
 On this page, you can view a table representation of the matrix, and you can also set a crosspoint or disconnect it.
+
 This is only available if the appropriate setting is configured on the **Configuration Page**.
 
 ### Configuration Page
@@ -125,7 +127,7 @@ For inputs to be shown, you must enable the **Poll State** of the outputs on the
 
 - Once the element has been created, the connector shows the connected crosspoints on the configured level. You can change the connected input for an output by clicking the new input. The Platinum Router will then automatically disconnect the originally connected input in order to connect the new input. This means that the connector will not send a disconnect command. It is currently not possible to disconnect a connected input, so the connector will never send a disconnect command. All communication happens through the LRC (Logical Router Control) protocol, which also sends notifications when a change occurs, so that changes are updated in real time.
 - All sets are (currently) done ONLY on the level that is being monitored.
-- It is possible to hide some inputs and outputs from the matrix. To do so, go to the **Configuration** page and set the **Matrix Resize Method** to *Manual.* Then set the **Number of Inputs Visible** to the number you want to see. The same applies for the outputs. When you do this, only the first chosen number of inputs and outputs will be visible in the matrix.
+- It is possible to hide some inputs and outputs from the matrix. To do so, go to the **Configuration** page and set the **Matrix Resize Method** to *Manual*. Then set the **Number of Inputs Visible** to the number you want to see. The same applies for the outputs. When you do this, only the first chosen number of inputs and outputs will be visible in the matrix.
 - The maximum number of inputs and outputs is 640.
 - When you set the **Matrix Resize Method** to *Automatic*, the connector will query the dimensions of the matrix and show only the first N and M inputs and outputs.
 
