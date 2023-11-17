@@ -52,9 +52,9 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use (1.0.0.x)
 
-- The connector will work for both 1+1 and n+1 systems. As both of them are mutually exclusive from one another, only one system type will be polled and displayed at any time.
+- The connector will work for both 1+1 and N+1 systems. As these are mutually exclusive, only one system type will be polled and displayed at a time.
 
-- The **General** page allows the user to toggle **page visibility and polling** between 1+1 and n+1. It also displays common information between 1+1 and n+1 about the system.
+- On the **General** page, you can switch **page visibility and polling** between 1+1 and N+1. This page also displays general system information that applies to both 1+1 and N+1 systems.
 
 ### 1+1
 
@@ -64,7 +64,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### N+1
 
-- The **n+1 System Info** page displays information about the n+1 system such as the **Controller Status**, the **Switch State**, and the **Control State**. On the **n+1 Configuration** subpage, you can configure the **system parameters** and enable the **controller events**.
+- The **N+1 System Info** page displays information about the N+1 system such as the **Controller Status**, the **Switch State**, and the **Control State**. On the **N+1 Configuration** subpage, you can configure the **system parameters** and enable the **controller events**.
 
 - On the **Main Transmitter** page, you can see configurable general info on the main transmitters.
 
