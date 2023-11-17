@@ -19,7 +19,7 @@ The 2WCOM MPX-2ds connector's main purpose is to monitor these 2 channels of the
 
 |Range  |Supported Firmware  |
 |---------|---------|
-|1.0.0.x     |TBD         |
+|1.0.0.x     |1.24         |
 
 ### System Info
 
