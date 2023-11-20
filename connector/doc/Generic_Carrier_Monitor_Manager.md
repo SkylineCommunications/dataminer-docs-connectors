@@ -12,7 +12,7 @@ This connector can load measurement settings for carriers from a .csv file or da
 
 In the 2.x.x.x range of the connector, DVEs are created using the **Generic Carrier Monitor Manager Device** protocol, which contain the measurements per demodulator element.
 
-Current supported demodulator connectors are: Tandberg RX1290, Ericsson RX8330 and Newtec EL970.
+Current supported demodulator connectors are: Tandberg RX1290, Ericsson RX8330, Newtec EL970 and Newtec MCX7000.
 
 ### Version Info
 
