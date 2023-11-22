@@ -24,7 +24,7 @@ This is a DataMiner connector for the Nevion Virtuoso MI, a media server designe
 | 1.0.0.x   | 1.2.14                 |
 | 1.0.1.x   | 1.2.14                 |
 | 1.1.0.x   | 2.10.8                 |
-| 1.1.1.1   | 2.10.8                 |
+| 1.1.1.x   | 2.10.8                 |
 
 ### System Info
 
@@ -34,6 +34,7 @@ This is a DataMiner connector for the Nevion Virtuoso MI, a media server designe
 | 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
