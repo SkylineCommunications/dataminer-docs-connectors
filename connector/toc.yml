@@ -7956,6 +7956,11 @@
     topicUid: Connector_help_SES_S.A._TEMOS
   - name: SES S.A. TEMOS Probe
     topicUid: Connector_help_SES_S.A._TEMOS_Probe
+- name: Shelly
+  topicUid: Connector_help_Shelly_Bulb_RGBW
+  items:
+  - name: Shelly Bulb RGBW
+    topicUid: Connector_help_Shelly_Bulb_RGBW
 - name: SIAE
   topicUid: Connector_help_SIAE_Microwave_Trunklink
   items:
