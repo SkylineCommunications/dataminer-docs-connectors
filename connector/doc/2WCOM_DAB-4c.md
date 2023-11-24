@@ -16,7 +16,8 @@ This is a DataMiner connector for the 2WCOM DAB-4c, a converter device that can 
 | 1.1.0.x              | New firmware (V0.9)                                                                                     | 1.0.0.x      | \-                                                                                                                                                           |
 | 1.2.0.x              | New firmware (V2.0)                                                                                     | 1.1.0.x      | \-                                                                                                                                                           |
 | 1.2.1.x              | Various improvements                                                                                    | 1.2.0.x      | The description of the SNMP column and the column display order of the table has changed, which can affect existing visual overviews and Automation scripts. |
-| 1.2.2.x \[SLC Main\] | Multiple new tables and parameters have been added in the connector according to the newest MIB (V2.5). | 1.2.1.x      | Page names have been changed, which can affect existing visual overviews.                                                                                    |
+| 1.2.2.x              | Multiple new tables and parameters have been added in the connector according to the newest MIB (V2.5). | 1.2.1.x      | Page names have been changed, which can affect existing visual overviews.
+| 1.2.3.x \[SLC Main\] | Added Redundant polling with new SNMP second connection. Changed page layout                            | 1.2.2.2      | Some pages are removed and some newly added which can affect existing visual overviews. Existing elements need to be reconfigurerd for the new connection to be used.
 
 ### Product Info
 
@@ -27,6 +28,7 @@ This is a DataMiner connector for the 2WCOM DAB-4c, a converter device that can 
 | 1.2.0.x   | Firmware V2.0          |
 | 1.2.1.x   | Firmware V2.0          |
 | 1.2.2.x   | Firmware V2.3          |
+| 1.2.3.x   | Firmware V2.3          |
 
 ### System Info
 
@@ -37,12 +39,27 @@ This is a DataMiner connector for the 2WCOM DAB-4c, a converter device that can 
 | 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.2.1.x   | No                  | Yes                     | \-                    | \-                      |
 | 1.2.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.2.3.x   | No                  | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
 ### Connections
 
 #### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+
+SNMP Settings:
+
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+#### SNMP Redundant Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -154,3 +171,9 @@ It also contains page buttons to subpages where these alarms can be configured:
 ### Log
 
 This page displays the configuration of the built-in device system log.
+
+### For 1.2.3.X Range
+
+The **Converter Overview** page displays an overview of the available converters in the **Converter Overview** table for the EDI-to-ETI/EDI mode.
+The **EDI to ETI/EDI** page displays Input Sources, Source Assignment and ETI output data for the EDI-to-ETI/EDI mode.
+The **ETI to EDI** page displays Input Sources, Source Assignment and IP EDI output data for the ETI-to-EDI mode.
