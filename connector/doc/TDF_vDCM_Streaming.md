@@ -4,25 +4,27 @@ uid: Connector_help_TDF_vDCM_Streaming
 
 # TDF vDCM Streaming
 
-This connector enables TDF to activate, on user request, a stream from the device Synamedia Digital Content Manager.
+With this connector, TDF can activate a stream from the Synamedia Digital Content Manager when this is requested by the user.
+
 ## About
 
 ### Version Info
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -34,15 +36,15 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *443*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
-
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *443*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
 
-In order for the element to work, the csv files (Grille.csv  and vDCM.csv) used to load the element tables must be placed in the protocol documents folder "C:\Skyline DataMiner\Documents\TDF vDCM Streaming".
-The user needs to set the device credentials in the General page.
+For the element to work correctly, the files **Grille.csv** and **vDCM.csv**, which are used to load the element tables, must be placed in the protocol documents folder `C:\Skyline DataMiner\Documents\TDF vDCM Streaming`.
+
+In addition, on the **General** page, you need to specify the device credentials.
 
 ### Web Interface
 
@@ -50,5 +52,8 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The **General** page displays the credentials and the connection status of the element with the device. There is also a button to import the csv files.
-The **DTOM** page displays the list of departments and the possibility to stop the Stream  and in the **v DCM** page the user can start and stop a particular stream.
+The **General** page displays the credentials and the status of the connection with the device. There is also a button to import the CSV files (see [Initialization](#initialization)).
+
+The **DTOM** page displays a list of the departments. You can also stop the stream there.
+
+On the **v DCM** page, you can start and stop a particular stream.

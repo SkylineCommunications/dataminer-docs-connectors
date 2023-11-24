@@ -8911,6 +8911,8 @@
     topicUid: Connector_help_TDF_TBOX_Emetteur_Manager
   - name: TDF TNT Rights Management
     topicUid: Connector_help_TDF_TNT_Rights_Management
+  - name: TDF vDCM Streaming
+    topicUid: Connector_help_TDF_vDCM_Streaming
 - name: TDK-Lambda
   topicUid: Connector_help_TDK-Lambda_HFE_LAN
   items:
