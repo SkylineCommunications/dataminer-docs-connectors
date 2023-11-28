@@ -8207,6 +8207,8 @@
     topicUid: Connector_help_Skyline_Job_Manager
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline MDC Service Monitoring
+    topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch
     topicUid: Connector_help_Skyline_Mediation_1+1_redundancy_switch
   - name: Skyline Mediation IRD
