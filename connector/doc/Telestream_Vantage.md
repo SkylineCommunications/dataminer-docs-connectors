@@ -20,7 +20,8 @@ The connector also queries the Vantage SOAP interface for the various **servers*
 |----------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version               | No                  | Yes                     |
 | 1.0.1.x              | Implemented redundant pooling | No                  | Yes                     |
-| 1.0.2.x \[SLC Main\] | Added unicode option.         | No                  | Yes                     |
+| 1.0.2.x  | Added unicode option.         | No                  | Yes                     |
+| 1.0.3.x \[SLC Main\] | Added unicode option. Major logic refactor with performance improvements.         | No                  | Yes                     |
 
 ### Product Info
 
@@ -29,6 +30,7 @@ The connector also queries the Vantage SOAP interface for the various **servers*
 | 1.0.0.x          | Vantage 6.3                 |
 | 1.0.1.x          | Vantage 6.3                 |
 | 1.0.2.x          | Vantage 6.3                 |
+| 1.0.3.x          | Vantage 6.3                 |
 
 ## Installation and configuration
 
@@ -93,3 +95,13 @@ These filters limit the information shown on the other pages according to the se
 ### Web Interface
 
 This page displays the web interface of the device. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+
+### Request Queue and Tasks [1.0.3.x]
+
+This version features a queue that will hold the current requests to be done. It is important to mention that there is no priority ordering implemented. The requests are done by order of entry in the queue, so there is no priority given to set requests.
+
+To fill the request queue and process responses, independent tasks are used. Each task has a maximum lifetime of 15 minutes. 
+
+### Upgrade from 1.0.2.x to 1.0.3.x
+
+No major impact in upgrade, only changes in internal logic.
