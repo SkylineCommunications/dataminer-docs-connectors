@@ -12,21 +12,21 @@ This connector monitors the activity of the GatesAir Maxiva XTE MSC2 device.
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+| Range              | Key Features                     | Based on | System Impact |
+|--------------------|----------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version.                 | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -50,8 +50,48 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to use (1.0.0.x)
 
-The **General** page displays information about the system such as the **Controller Status**, the **Switch State**, and the **Control State**. On the **Configuration** subpage, you can configure the **system parameters** and enable the **controller events**.
+- The connector will work for both 1+1 and N+1 systems. As these are mutually exclusive, only one system type will be polled and displayed at a time.
 
-On the **Transmitter** page, you can check the current status of the **Alarm** parameters and the current values of transmission parameters like the **Frequency**, **Power**, and **VSWR**. On the **Events** and **Configuration** subpages, you can set the transmitter definition parameters.
+- On the **General** page, you can switch **page visibility and polling** between 1+1 and N+1. This page also displays general system information that applies to both 1+1 and N+1 systems.
+
+### 1+1
+
+- The **1+1 System Info** page displays information about the 1+1 system such as the **Controller Status**, the **Switch State**, and the **Control State**. On the **Configuration** subpage, you can configure the **system parameters** and enable the **controller events**.
+
+- On the **Transmitter A/B** page, you can check the current status of the **Alarm** parameters and the current values of transmission parameters like the **Frequency**, **Power**, and **VSWR**. On the **Events** and **Configuration** subpages, you can set the transmitter definition parameters.
+
+### N+1
+
+- The **N+1 System Info** page displays information about the N+1 system such as the **Controller Status**, the **Switch State**, and the **Control State**. On the **N+1 Configuration** subpage, you can configure the **system parameters** and enable the **controller events**.
+
+- On the **Main Transmitter** page, you can see configurable general info on the main transmitters.
+
+  - The **Main TX Status** subpage shows status information for the transmitters.
+
+  - The **Main TX Events** subpage allows you to enable/disable trap generation.
+
+  - The **Main TX Auto Restore** subpage contains configurable auto-restore parameters.
+
+- The **Reserve Transmitter** page shows status and measurement parameters for the reserve transmitter.
+
+  - The **Reserve TX Configuration** subpage allows you to set reserve TX parameters.
+
+  - The **Reserve TX Trap Events** subpage allows you to enable/disable trap generation.
+
+- The **Input Switch** page contains configurable input switch parameters.
+
+- The **Failed Verifications** page shows parameters related to tests conducted on the system.
+
+  - The **Auto Verify** subpage contains configurable auto-verification parameters.
+
+  - The **Auto Restore** subpage allows you to configure auto-restore settings.
+
+- The **DVB** page contains configurable DVB parameters. Its subpages contain configurable DVB parameters for Main TX, Reserve TX, TX A, and TX B.
+
+- The **DVB Events** page allows you to enable/disable trap generation. Its subpages contain configurable DVB trap generation parameters for Main TX, Reserve TX, TX A, and TX B.
+
+- The **DVB Event Priority** page allows you to set trap priority. Its subpages allow you to set DVB trap priority for Main TX, Reserve TX, TX A, and TX B.
+
+- The pages and subpages for **DAB** and **FM** are very similar to the DVB pages mentioned above.
