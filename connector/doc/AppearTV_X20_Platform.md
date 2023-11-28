@@ -6,7 +6,7 @@ uid: Connector_help_AppearTV_X20_Platform
 
 The AppearTV X20 Platform connector can be used to configure and display information from an AppearTV X Platform chassis. This includes both X20 and X10 chassis versions.
 
-On the American market, the same chassis is also offered by Sencore. Under the Sencore brand, it is offered with the following model names: **Sencore DMG-3200** (X10 Chassis), **Sencore DMG-4100**, and **Sencore DMG-4200** (X20 Chassis).
+On the US market, the same chassis is also offered by Sencore. Under the Sencore brand, it is offered with the following model names: **Sencore DMG-3200** (X10 Chassis), **Sencore DMG-4100**, and **Sencore DMG-4200** (X20 Chassis).
 
 It allows manual creation of DVEs for **IP Switch**, **Dual IP**, **SDI IO, Encoder, Decoder, Transcoder, DVB**, and **Descrambler** cards connected to the slots of the device (see "Exported Connectors" table below).
 
