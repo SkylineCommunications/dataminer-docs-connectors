@@ -4,27 +4,27 @@ uid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
 
 # Warner Bros Discovery Sports Transmission Orders
 
-The Warner Bros Discovery Sports Transmission Connector will be used to parse and display the Sports Transmission Orders pushed through the **Warner Bros Discovery Transmission Orders** User-defined API.
+The Warner Bros Discovery Sports Transmission Orders connector can be used to parse and display the sports transmission orders pushed through the **Warner Bros Discovery Transmission Orders** user-defined API.
 
 ## About
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Initial Version</li></ul>         |-         |-         |
+| Range              | Features        | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |10.1.0.0         |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 10.1.0.0           |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |Warner Bros Discovery Transmission Orders API Endpoint         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components                                      | Exported Components |
+|---------|-----------------|---------------------|--------------------------------------------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | Warner Bros Discovery Transmission Orders API Endpoint |                     |
 
 ## Configuration
 
@@ -34,27 +34,16 @@ The Warner Bros Discovery Sports Transmission Connector will be used to parse an
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra initialization is required.
-
-### Redundancy
-
-There is no redundancy defined.
-
-
 ## How to use
 
-This driver parses Transmission Orders Json requests received from the **Warner Bros Discovery Transmission Orders API Endpoint**, therefor no communication will be shown in the streamviewer.
+This connector parses transmission order JSON requests received from the Warner Bros Discovery Transmission Orders API Endpoint. No communication will therefore be shown in the Stream Viewer.
 
-This driver has a (hidden) DEBUG Page, this page can be displayed by executing a multiple set on the *Show Debug Page* parameter.
+This connector has a hidden **DEBUG** page. To display this page, execute a multiple set on the **Show Debug Page** parameter.
 
-### Examples
+A high-level overview of the transmission orders can be found on the **Transmission Orders page**.
 
-A high level Transmission Orders overview can be found on the **Transmission Orders Page**.
+Each transmission order can have one or multiple services. These are aggregated and displayed on the **Services page**.
 
-Each Transmission Order can have one or multiple services, these are aggregated and displayed on the **Services Page**.
+In case a service has facilities or audio, these will be displayed on the **Facilities** or **Audio's page**, respectively.
 
-In case a service has Facilities or Audio's, these will be displayed on the **Facilities** or **Audio's page** respectively.
-
-A treecontrol displaying these relations can be found on the **Overview Page**.
+On the **Overview Page**, you can find a tree control displaying these relations.
