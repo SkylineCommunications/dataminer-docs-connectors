@@ -38,6 +38,10 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
+### Initialization
+
+On the **Polling Settings** page, make sure to disable polling for parameters that are not necessary.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -46,7 +50,10 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-This page displays the status parameters, most notably the **TX Forward Power** and **TX Reflected Power**. It also contains a page button to the **System Information** subpage.
+This page displays the status parameters, most notably the **TX Forward Power** and **TX Reflected Power**. It also contains 2 subpages which can be accessed by clicking the following buttons:
+
+- **System Information:** Displays information such as as the **Sofware Version**, **Location** and **Station Code**, You can also find **Configuration Status** parameters on this page.
+- **Polling Settings:** This page displays polling settings for each page. All polling is enabled by default. However, It is strongly recommended that polling be enabled only for parameters that are essential.
 
 ### TX Overview
 
