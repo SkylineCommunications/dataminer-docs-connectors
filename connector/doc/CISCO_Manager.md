@@ -13,25 +13,26 @@ In addition to polling values, you can configure settings such as the ping funct
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                 | **Based on** | **System Impact**                                                                                                                                                                                                                                                                         |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2.1.0.x \[Obsolete\] | SNMPv1, display key Detailed Interface Info: "IF Custom Description".                                                                                                                                            | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 2.1.1.x \[Obsolete\] | SNMPv1, display key Detailed Interface Info: "IF Name:IF Custom Description".                                                                                                                                    | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 3.1.0.x \[Obsolete\] | SNMPv2, display key Detailed Interface Info: "IF Custom Description".                                                                                                                                            | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 3.1.1.x \[Obsolete\] | SNMPv2, display key Detailed Interface Info: "IF Name:IF Custom Description".                                                                                                                                    | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 4.1.1.x \[Obsolete\] | SNMPv3, display key Detailed Interface Info: "IF Name:IF Custom Description".                                                                                                                                    | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 5.1.1.x \[Obsolete\] | SNMPv2: Uses naming. For the display key, the user can choose between "IF Name:IF Custom Description" or "IF Custom Description". For a new element, the default display key is "IF Name:IF Custom Description". | \-           | It is possible to switch from a 3.x.x.x version to a 5.1.1.x version. The old display key format is automatically detected, but the PID of the tables Multicast Next Hop and Switch Info has changed, so keep this in mind when these tables are used in templates, Visual Overview, etc. |
-| 5.1.2.x \[Obsolete\] | SNMPv2: Replaces 5.1.1.x. This range fixes the IF Utilization Range that was off with 100 since version 5.1.1.78.                                                                                                | 5.1.1.83     | No element recreation needed; just be aware that trending/alarm monitoring on IF Utilization can show spikes between versions.                                                                                                                                                            |
-| 5.1.3.x \[Obsolete\] | SNMPv2: replaces 5.1.2.x. This range adds a new HTTP interface. This interface is hidden and does not require that the element is recreated.                                                                     | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 5.1.4.x \[Obsolete\] | Made Cassandra-compliant.                                                                                                                                                                                        | 5.1.3.12     | \-                                                                                                                                                                                                                                                                                        |
-| 5.1.5.x \[Obsolete\] | \- Improvements to IPSec logic. - Merge of all 5.1.X.X versions.                                                                                                                                                 | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 5.1.6.x \[Obsolete\] | Added extra connection for SysLog information.                                                                                                                                                                   | 5.1.5.1      | \-                                                                                                                                                                                                                                                                                        |
-| 5.1.7.x \[SLC Main\] | Added rate exceptions on device timeout/restart                                                                                                                                                                  | 5.1.6.19     | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly.                                                                                                       |
-| 6.1.1.x              | SNMPv3 version of 5.1.1.x.                                                                                                                                                                                       | \-           | \-                                                                                                                                                                                                                                                                                        |
-| 7.0.0.x \[Obsolete\] | SNMP2: temporary branch created based on 5.1.1.x to change the element type to "Management System".                                                                                                              | \-           | If you move to this branch, you will need to recreate the element.                                                                                                                                                                                                                        |
-| 8.0.0.x \[Obsolete\] | Customer-specific range. **Deprecated as of 2021.**                                                                                                                                                              | 5.1.3.12     | \-                                                                                                                                                                                                                                                                                        |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 2.1.0.x [Obsolete] | SNMPv1, display key Detailed Interface Info: "IF Custom Description". | - | - |
+| 2.1.1.x [Obsolete] | SNMPv1, display key Detailed Interface Info: "IF Name:IF Custom Description". | - | - |
+| 3.1.0.x [Obsolete] | SNMPv2, display key Detailed Interface Info: "IF Custom Description". | - | - |
+| 3.1.1.x [Obsolete] | SNMPv2, display key Detailed Interface Info: "IF Name:IF Custom Description". | - | - |
+| 4.1.1.x [Obsolete] | SNMPv3, display key Detailed Interface Info: "IF Name:IF Custom Description". | - | - |
+| 5.1.1.x [Obsolete] | SNMPv2: Uses naming. For the display key, the user can choose between "IF Name:IF Custom Description" or "IF Custom Description". For a new element, the default display key is "IF Name:IF Custom Description". | - | It is possible to switch from a 3.x.x.x version to a 5.1.1.x version. The old display key format is automatically detected, but the PID of the tables Multicast Next Hop and Switch Info has changed, so keep this in mind when these tables are used in templates, Visual Overview, etc. |
+| 5.1.2.x [Obsolete] | SNMPv2: Replaces 5.1.1.x. This range fixes the IF Utilization Range that was off with 100 since version 5.1.1.78. | 5.1.1.83 | No element recreation needed; just be aware that trending/alarm monitoring on IF Utilization can show spikes between versions. |
+| 5.1.3.x [Obsolete] | SNMPv2: replaces 5.1.2.x. This range adds a new HTTP interface. This interface is hidden and does not require that the element is recreated. | - | - |
+| 5.1.4.x [Obsolete] | Made Cassandra-compliant. | 5.1.3.12 | - |
+| 5.1.5.x [Obsolete] | -  Improvements to IPSec logic. - Merge of all 5.1.X.X versions. | - | - |
+| 5.1.6.x [Obsolete] | Added extra connection for SysLog information. | 5.1.5.1 | - |
+| 5.1.7.x [SLC Main] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly. |
+| 6.1.1.x | SNMPv3 version of 5.1.1.x. | - | - |
+| 7.0.0.x [Obsolete] | SNMP2: temporary branch created based on 5.1.1.x to change the element type to "Management System". | - | If you move to this branch, you will need to recreate the element. |
+| 8.0.0.x [Obsolete] | Customer-specific range. **Deprecated as of 2021.** | 5.1.3.12 | - |
 
-**The main version to use for new elements is 5.1.7.x.**
+> [!NOTE]
+> The main version to use for **new elements** is **5.1.7.x**.
 
 ## Configuration
 
@@ -88,8 +89,8 @@ You can do so on the **General** page via the **SNMP Polling** page button.
 
 Some tables are not accessible through SNMP, so an interface was added in order to make some data available for display.
 
-You cannot configure this interface during element creation; however, **you** **must** **configure the device's HTTP interface in the device CLI** in order for DataMiner to be able to access data via HTTP.
-You also have to go to the **HTTP Polling** subpage of the **General** page and set up the connection with CLI **username**, **password**, **privilege** **level**, and **operation** **mode**. The connector will start polling HTTP data when the username and password are configured and when any of the toggle buttons present on the HTTP Polling page are set to "Enable".
+You cannot configure this interface during element creation; however, **you must configure the device's HTTP interface in the device CLI** in order for DataMiner to be able to access data via HTTP.
+You also have to go to the **HTTP Polling** subpage of the **General** page and set up the connection with CLI **username**, **password**, **privilege level**, and **operation mode**. The connector will start polling HTTP data when the username and password are configured and when any of the toggle buttons present on the HTTP Polling page are set to "Enable".
 
 ### Enabling LITE Mode
 
@@ -108,7 +109,7 @@ On the General page, an overview of general device settings is displayed, e.g. *
 Multiple page buttons are also available that provide access to more specific information:
 
 - **Memory Details**: When enabled, memory information will be shown in the table. Polling can be enabled or disabled.
-- **TCP/UDP Stats**: When enabled, TCP/UDP information will be shown. Extra information can be found via the **UDP** **Listener Info** and **TCP Connection Table** page buttons. Polling can be enabled or disabled.
+- **TCP/UDP Stats**: When enabled, TCP/UDP information will be shown. Extra information can be found via the **UDP Listener Info** and **TCP Connection Table** page buttons. Polling can be enabled or disabled.
 - **ICMP Stats**: When enabled*,* ICMP information will be shown. Polling can be enabled or disabled.
 - **IP Stats**: When enabled, IP information will be shown. Polling can be enabled or disabled.
 - **Services**: Displays whether a service layer is active or not.
@@ -133,16 +134,15 @@ The column **IF Counter Type** displays if the bitrates are calculated with 32-b
 
 Via **Measurement Configuration**, you can enable or disable the display and calculation of the interface communication KPIs. Range 2.1.x.x uses subtables, which limits the polling (disabled rows are not polled). Range 3.1.x.x uses "multiplegetbulk", because when some cells were empty, the complete interface table was empty when polled with range 2.1.x.x. Multiplegetbulk does not support subtables, so disabled rows will still be polled.
 
-**Enable All** button enables polling for all the interface communication KPIs.
+- The **Enable All** button enables polling for all the interface communication KPIs.
 
-**Disable All** button disabled polling for all the interface communication KPIs.
+- The **Disable All** button disables polling for all the interface communication KPIs.
 
-**Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and disables all with a *Down* or *Admin Down* operation state.
+- The **Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and it disables all with a *Down* or *Admin Down* operation state.
 
-**Keep and Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and disables all with a *Admin Down* operation state.
+- The **Keep and Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and it disables all with an *Admin Down* operation state.
 
-In the **3.1.1.x** and **4.1.1.x** ranges, you can temporarily activate the **high-resolution measuring** option, which triggers polling, calculating and updating interface-related KPIs with a frequency of **approximately 1 second**.
-You can enable this option and define the active time in the **MCT- High Resolution Measuring** and **MCT- High Res Active Time** columns of the **Measurement Configuration Table**, respectively.
+In the **3.1.1.x** and **4.1.1.x** ranges, you can temporarily activate the **high-resolution measuring** option, which triggers polling, calculating and updating interface-related KPIs with a frequency of **approximately 1 second**. You can enable this option and define the active time in the **MCT- High Resolution Measuring** and **MCT- High Res Active Time** columns of the **Measurement Configuration Table**, respectively.
 
 More detailed information about the incoming and outgoing information can be found on the **Detailed Information Info - Rx** and **Detailed Information Info - Tx** pages.
 
