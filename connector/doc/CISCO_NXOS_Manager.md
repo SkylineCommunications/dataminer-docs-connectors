@@ -24,17 +24,24 @@ The **NX-OS** is an OpenConfig connector. TODO...
 
 ### Connections
 
-#### OpenConfig Connection
+#### HTTP Connection
 
-This connector uses a OpenConfig connection and requires configuring OpenConfig after element creation:
+This connector uses an HTTP connection and requires the following input during element creation:
 
-To configure OpenConfig, fill in these parameters on the **Element Settings** page:
+HTTP CONNECTION:
 
-- OpenConfig IP Address
-- Port
-- User Name
-- Password
-- Client Certificate (optional)
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: *80*
+- **Bus address**: *ByPassProxy*
+- **Timeout on a single command (ms)**: *45000* (avoids timeouts in slow responses)
+
+### Initialization
+
+#### Configuration of credentials for eAPI communication
+On the Element Settings Page, fill in the eAPI Settings and push Log In to establish the eAPI communication.
+
+#### Configuration of credentials for OpenConfig communication
+On the Element Settings Page, fill in the OpenConfig Settings and push Connect to establish the OpenConfig communication.
 
 ### Web Interface
 
