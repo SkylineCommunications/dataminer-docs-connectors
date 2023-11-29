@@ -8227,6 +8227,8 @@
     topicUid: Connector_help_Skyline_PTP
   - name: Skyline QA_DVE_Subtables
     topicUid: Connector_help_Skyline_QA_DVE_Subtables
+  - name: Skyline QAPortal
+    topicUid: Connector_help_Skyline_QAPortal
   - name: Skyline Regression Test Result Collector
     topicUid: Connector_help_Skyline_Regression_Test_Result_Collector
   - name: Skyline Resource Discovery Rules
