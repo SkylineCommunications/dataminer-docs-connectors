@@ -44,6 +44,6 @@ A high-level overview of the transmission orders can be found on the **Transmiss
 
 Each transmission order can have one or multiple services. These are aggregated and displayed on the **Services page**.
 
-In case a service has facilities or audio, these will be displayed on the **Facilities** or **Audio's page**, respectively.
+In case a service has facilities or audio, these will be displayed on the **Facilities** or **Audios page**, respectively.
 
 On the **Overview Page**, you can find a tree control displaying these relations.
