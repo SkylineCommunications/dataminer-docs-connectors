@@ -9982,6 +9982,11 @@
     topicUid: Connector_help_Walton_Enterprises_DP-8
   - name: Walton Enterprises DP-9
     topicUid: Connector_help_Walton_Enterprises_DP-9
+- name: Warner Bros Discovery Sports
+  topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
+  items:
+  - name: Warner Bros Discovery Sports Transmission Orders
+    topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
 - name: Wavestream
   topicUid: Connector_help_Wavestream_BUC_POB-KAN120-HW24
   items:
