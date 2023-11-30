@@ -10,18 +10,18 @@ The iPASOLINK VRx is used as microwave and optical transporter equipment. This c
 
 ### Version Info
 
-| **Range**            | **Description**          | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.         | No                  | Yes                     |
-| 1.0.1.x \[Obsolete\] | Metering stats overhaul. | No                  | Yes                     |
-| 1.0.2.x \[Obsolete\] | Upgraded to SNMPv2.      | No                  | Yes                     |
-| 1.0.3.x \[SLC Main\] | Fixed display keys    | No                  | Yes                     |
+| Range              | Description              | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.         | No              | Yes                 |
+| 1.0.1.x [Obsolete] | Metering stats overhaul. | No              | Yes                 |
+| 1.0.2.x [Obsolete] | Upgraded to SNMPv2.      | No              | Yes                 |
+| 1.0.3.x [SLC Main] | Fixed display keys.      | No              | Yes                 |
 
 ### Product Info
 
-| **Range**         | **Supported Firmware** |
-|-------------------|------------------------|
-| 1.0.0.x - 1.0.3.x | 04.01.14               |
+| Range             | Supported Firmware |
+|-------------------|--------------------|
+| 1.0.0.x - 1.0.3.x | 04.01.14           |
 
 ## Configuration
 
@@ -95,4 +95,4 @@ This page displays the web interface of the device. The client machine has to be
 
 ### Notes
 
-When table has display key with numbers separated with "/" it's following format: slot/port/path
+When a table has a display key with numbers separated with a forward slash ("/"), the following format is used: `slot/port/path`.
