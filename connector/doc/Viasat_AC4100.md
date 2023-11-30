@@ -12,7 +12,7 @@ This connector can be used to monitor and configure a Viasat AC4100 ACU (Antenna
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector can be used to monitor and configure a Viasat AC4100 ACU (Antenna
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -55,19 +55,22 @@ The web interface is only accessible when the client machine has network access 
 ## How to Use
 
 The **General** page displays general info about the device (System Model, Software Version, etc.).
+
 The **Positioning** page displays info about the current position of the ACU and the tracking configuration.
+
 All the alarms and warnings are displayed on the **Faults** page.
 
-This connector uses two communication methods with the ACU:
- - A **TCP** poll connection: the connector polls data from the ACU at a regular interval. Some set commands can also be sent towards the ACU.
- - A **UDP** push connection: the ACU pushes the data towards the DataMiner element at a regular interval. To keep this connection open, the connector sends a *Keep Alive* message towards the ACU at a regular interval (that interval can be configured using the **Keep Alive Period** parameter). Some set commands can also be sent towards the ACU.
+This connector uses **two communication methods** with the ACU:
 
- Here's a summary of how the different parameters are retrieved:
+- A **TCP** poll connection: The connector polls data from the ACU at a regular interval. Some set commands can also be sent towards the ACU.
+- A **UDP** push connection: The ACU pushes the data towards the DataMiner element at a regular interval. To keep this connection open, the connector sends a *Keep Alive* message towards the ACU at a regular interval (that interval can be configured using the **Keep Alive Period** parameter). Some set commands can also be sent towards the ACU.
 
- |Page|TCP poll| UDP push|
- |-|-|-|
- |General|-|All parameters|
- |Status|-|All parameters|
- |Positioning|<ul><li>Azimuth Mode</li><li>Elevation Mode</li><li>Azimuth Pedestal Stow</li><li>Elevation Pedestal Stow</li><li>Tilt Pedestal Stow</li><li>Azimuth Pedestal Mode</li><li>Elevation Pedestal Mode</li><li>Tilt Pedestal Mode</li><li>**All set commands**</li></ul>|All other parameters|
- |Faults|Alarms Table|Faults Table|
- |Interlock|Interlocks Table|-|
+Here is a summary of how the different parameters are retrieved:
+
+|Page|TCP poll| UDP push|
+|-|-|-|
+|General|-|All parameters|
+|Status|-|All parameters|
+|Positioning|- Azimuth Mode<br>- Elevation Mode<br>- Azimuth Pedestal Stow<br>- Elevation Pedestal Stow<br>- Tilt Pedestal Stow<br>- Azimuth Pedestal Mode<br>- Elevation Pedestal Mode<br>- Tilt Pedestal Mode<br>- **All set commands**|All other parameters|
+|Faults|Alarms Table|Faults Table|
+|Interlock|Interlocks Table|-|
