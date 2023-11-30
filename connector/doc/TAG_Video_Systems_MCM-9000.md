@@ -14,16 +14,16 @@ The connector can receive traps to update the channel and system events in real 
 
 ### Version Info
 
-| Range              | Key Features                                      | Based on     | System Impact                                         |
-|--------------------|---------------------------------------------------|--------------|-------------------------------------------------------|
-| 1.0.0.x [Obsolete] | Initial version.                                  | -            | -                                                     |
-| 1.1.0.x [Obsolete] |                                                   | -            | -                                                     |
-| 1.1.1.x [Obsolete] |                                                   | -            | -                                                     |
-| 1.1.2.x [Obsolete] |                                                   | -            | -                                                     |
-| 1.1.3.x [Obsolete] |                                                   | -            | -                                                     |
-| 1.1.4.x [Obsolete] |                                                   | 1.1.3.25     | -                                                     |
-| 1.1.5.x [Obsolete] | Add option for Unicode.                           | 1.1.4.17     | All elements need to be re-created.                   |
-| 1.1.6.x [SLC Main] | Change ChannelEventsTable AutoClear DefaultValue. | 1.1.5.6      | Only elements that are stuck, need to be re-created.  |
+| Range              | Key Features                                           | Based on | System Impact                                       |
+|--------------------|--------------------------------------------------------|----------|-----------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                       | -        | -                                                   |
+| 1.1.0.x [Obsolete] |                                                        | -        | -                                                   |
+| 1.1.1.x [Obsolete] |                                                        | -        | -                                                   |
+| 1.1.2.x [Obsolete] |                                                        | -        | -                                                   |
+| 1.1.3.x [Obsolete] |                                                        | -        | -                                                   |
+| 1.1.4.x [Obsolete] |                                                        | 1.1.3.25 | -                                                   |
+| 1.1.5.x [Obsolete] | Option for Unicode added.                              | 1.1.4.17 | All elements need to be re-created.                 |
+| 1.1.6.x [SLC Main] | Default value auto-clear Channel Events Table changed. | 1.1.5.6  | Only elements that are stuck need to be re-created. |
 
 ### Product Info
 
@@ -152,7 +152,7 @@ On this page, you can view all system events in the **System Events Overview** t
 
 On this page, the **Channel Events Overview** table displays all channel events. Buttons are available to clear old inactive events.
 
-There is also an option to auto-clear the table by a certain limit that can be chosen by the user. From version 1.1.6.X, the auto-clear option is activated by default.
+There is also an option to auto-clear the table depending on a limit that you can configure. From version 1.1.6.x onwards, this auto-clear option is activated by default.
 
 By right-clicking, you can acknowledge channel events.
 
