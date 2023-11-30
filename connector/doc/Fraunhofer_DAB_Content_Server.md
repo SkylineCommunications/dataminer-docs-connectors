@@ -4,14 +4,15 @@ uid: Connector_help_Fraunhofer_DAB_Content_Server
 
 # Fraunhofer DAB Content Server
 
-The Fraunhofer DAB ContentServer is a flexible and highly reliable professional broadcasting solution developed for the digital radio standard DAB (Digital Audio Broadcasting).
+The Fraunhofer DAB Content Server is a flexible and highly reliable professional broadcasting solution developed for the digital radio standard DAB (Digital Audio Broadcasting).
 
-It combines internal audio encoding, support for remote audio encoders, multimedia data management and multiplex generation. A convenient and user-friendly web interface enables configuration and system monitoring via remote access (ContentServer-as-a-Service concept).
+It combines internal audio encoding, support for remote audio encoders, multimedia data management, and multiplex generation. The web interface allows configuration and system monitoring via remote access (ContentServer-as-a-Service concept).
 
-The Fraunhofer DAB ContentServer is a complete headend system possessing triple functionality:
-  - Internal audio encoding and support for remote audio encoders
-  - Multimedia DataServer  
-  - DAB Ensemble/Service Multiplex Generator
+The Fraunhofer DAB Content Server is a complete headend system with triple functionality:
+
+- Internal audio encoding and support for remote audio encoders
+- Multimedia data server
+- DAB ensemble/service multiplex generator
 
 ## About
 
@@ -43,17 +44,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *443*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *byPassProxy*.]
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *443*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *byPassProxy*.
 
 ### Web Interface
 
@@ -61,13 +54,15 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-On the **General** page, you can find the overall status parameters for the contribution, content server and distrubution as well as the on-air multiplex. The page also contains some system actions such as:
-  - Restart The Transmission
-  - Stop The Transmission
-  - Halt the Content Server
-  - Clear SMART (restart monitor of connected drives)
-  - Gratuitous ARP (rediscover new IP on the network)
-  - Restart the Audio Encoders
+On the **General** page, you can find the overall status parameters for the contribution, content server, and distribution, as well as the on-air multiplex. The page also contains some system actions such as:
+
+- Restart the transmission
+- Stop the transmission
+- Halt the content server
+- Clear SMART (restart monitor of connected drives)
+- Gratuitous ARP (rediscover new IPs in the network)
+- Restart the audio encoders
 
 The **System Status** page contains the complete status overview of all items.
-The **Contribution**, **Content Server** and **Distribution** pages are a filtered set of the System Status table.
+
+The **Contribution**, **Content Server**, and **Distribution** pages contain a filtered set of the System Status table.
