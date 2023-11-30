@@ -6759,14 +6759,14 @@
 - name: ONATi
   topicUid: Connector_help_ONATi_Bandwidth_Aggregator
   items:
-  - name: ONATi Splunk Monitoring
-  topicUid: Connector_help_ONATi_Splunk_Monitoring
   - name: ONATi Bandwidth Aggregator
     topicUid: Connector_help_ONATi_Bandwidth_Aggregator
   - name: ONATi delair Etsiline 32
     topicUid: Connector_help_ONATi_delair_Etsiline_32
   - name: ONATi Keysight 87106B SP6T
     topicUid: Connector_help_ONATi_Keysight_87106B_SP6T
+  - name: ONATi Splunk Monitoring
+  topicUid: Connector_help_ONATi_Splunk_Monitoring
 - name: OneWeb
   topicUid: Connector_help_OneWeb_Antenna_Controller
   items:
