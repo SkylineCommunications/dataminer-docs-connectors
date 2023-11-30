@@ -30,7 +30,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to use
 
-On the **General** page, you need to provide basic information to enable the retrieval and storage of cable modem and ONT data. You also need to set up the **Export Directory** by specifying the local path where the output data will be stored.
+On the **General** page, you need to provide basic information to enable the retrieval and storage of cable modem and ONT data.
 
 The General page also contains the **Configuration Table**. In this table, you need to create a row (By selecting *Add row* in the right-click menu) for each **Type** and **Domain** from which the data must be collected. The following data must be filled in for each row:
 
@@ -41,3 +41,4 @@ The General page also contains the **Configuration Table**. In this table, you n
 - **System User**: The username that will be used to access the ONT or MAC data. Do not include the domain if the directory is remote. If the directory is local, set the value to *N/A*.
 - **Password**: The password that will be used along with the defined System User to access the ONT or MAC data. If the value is local, set the value to *N/A*.
 - **Front End Element**: The DMA ID/element ID of the corresponding front-end element.
+- **Front End IP**: The IP address of the corresponding front-end server.
