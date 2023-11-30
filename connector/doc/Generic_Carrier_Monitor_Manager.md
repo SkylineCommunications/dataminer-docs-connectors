@@ -4,7 +4,7 @@ uid: Connector_help_Generic_Carrier_Monitor_Manager
 
 # Generic Carrier Monitor Manager
 
-The **Generic Carrier Monitor Manager** automatically performs sets on demodulator elements and retrieves the measurements.
+The Generic Carrier Monitor Manager automatically performs sets on demodulator elements and retrieves the measurements.
 
 ## About
 
@@ -12,18 +12,18 @@ This connector can load measurement settings for carriers from a .csv file or da
 
 In the 2.x.x.x range of the connector, DVEs are created using the **Generic Carrier Monitor Manager Device** protocol, which contain the measurements per demodulator element.
 
-Current supported demodulator connectors are: Tandberg RX1290, Ericsson RX8330, Newtec EL970 and Newtec MCX7000.
+Current supported demodulator connectors are: Tandberg RX1290, Ericsson RX8330, Newtec EL970, and Newtec MCX7000.
 
 ### Version Info
 
-| **Range** | **Description**                 |
-|------------------|---------------------------------|
-| 1.0.0.x          | Initial version                 |
-| 2.0.0.x          | Import through DB, creates DVEs |
+| Range   | Description                     |
+|---------|---------------------------------|
+| 1.0.0.x | Initial version                 |
+| 2.0.0.x | Import through DB, creates DVEs |
 
 ### Exported connectors
 
-| **Exported Connector**                  | **Description**                 |
+| Exported Connector                     | Description                     |
 |----------------------------------------|---------------------------------|
 | Generic Carrier Monitor Manager Device | Only supported in range 2.0.0.x |
 
