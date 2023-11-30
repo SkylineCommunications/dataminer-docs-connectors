@@ -6759,6 +6759,8 @@
 - name: ONATi
   topicUid: Connector_help_ONATi_Bandwidth_Aggregator
   items:
+  - name: ONATi Splunk Monitoring
+  topicUid: Connector_help_ONATi_Splunk_Monitoring
   - name: ONATi Bandwidth Aggregator
     topicUid: Connector_help_ONATi_Bandwidth_Aggregator
   - name: ONATi delair Etsiline 32
