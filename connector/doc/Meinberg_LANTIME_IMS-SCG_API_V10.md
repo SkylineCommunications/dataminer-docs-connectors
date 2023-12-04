@@ -16,9 +16,9 @@ The **SCG** (Studio Clock Generator) generates various word clock or AES11 signa
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** |
-|-----------|------------------------|----------------------|
-| 1.0.0.x   | 7.06.x                 | 10.x.y               |
+| Range     | Supported Firmware     | **REST API Version** | **Supported Types**             |
+|-----------|------------------------|----------------------|---------------------------------|
+| 1.0.0.x   | 7.06.x<br>7.08.x       | 10.x.y<br>16.x.y     | SCG                             |
 
 ### System Info
 

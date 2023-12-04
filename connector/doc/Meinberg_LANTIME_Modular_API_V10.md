@@ -18,9 +18,9 @@ The **Meinberg LANTIME Modular** connector displays both status and configuratio
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** |
-|-----------|------------------------|----------------------|
-| 1.0.0.x   | 7.06.x                 | 10.x.y               |
+| Range     | Supported Firmware     | **REST API Version** | **Supported Types**                               |
+|-----------|------------------------|----------------------|---------------------------------------------------|
+| 1.0.0.x   | 7.06.x<br>7.08.x       | 10.x.y<br>16.x.y     | M500, M1000, M1000s, M2000s, M3000, M3000s, M4000 |
 
 ### System Info
 
