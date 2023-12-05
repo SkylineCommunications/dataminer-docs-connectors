@@ -21,7 +21,7 @@ In redundant operation, the two clocks and the changeover unit are monitored by 
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** | **Supported Types**             |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types**             |
 |-----------|------------------------|----------------------|---------------------------------|
 | 1.0.0.x   | 7.06.x<br>7.08.x       | 10.x.y<br>16.x.y     | REL1000                         |
 

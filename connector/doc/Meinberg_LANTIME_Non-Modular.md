@@ -19,10 +19,10 @@ The **Meinberg LANTIME Non-Modular** connector displays both status and configur
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** |
-|-----------|------------------------|----------------------|
-| 1.0.0.x   | 7.04.x                 | 8.x.y                |
-| 1.0.1.x   | 7.04.x                 | 8.x.y                |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types**          |
+|-----------|------------------------|----------------------|------------------------------|
+| 1.0.0.x   | 7.04.x                 | 8.x.y                | M100, M200, M300, M400, M600 |
+| 1.0.1.x   | 7.04.x                 | 8.x.y                | M100, M200, M300, M400, M600 |
 
 ### System Info
 

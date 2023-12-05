@@ -19,10 +19,10 @@ An electronically controlled switch (multiplexer) on the modular board allows th
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** |
-|-----------|------------------------|----------------------|
-| 1.0.0.x   | 7.04.x                 | 8.x.y                |
-| 1.0.1.x   | 7.04.x                 | 8.x.y                |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types** |
+|-----------|------------------------|----------------------|---------------------|
+| 1.0.0.x   | 7.04.x                 | 8.x.y                | BPE                 |
+| 1.0.1.x   | 7.04.x                 | 8.x.y                | BPE                 |
 
 ### System Info
 

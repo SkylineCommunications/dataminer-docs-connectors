@@ -20,7 +20,7 @@ The Meinberg **MRS** concept supports setting up a prioritized list of input sou
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** | **Supported Types**             |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types**             |
 |-----------|------------------------|----------------------|---------------------------------|
 | 1.0.0.x   | 7.06.x<br>7.08.x       | 10.x.y<br>16.x.y     | TCR180						  |
 

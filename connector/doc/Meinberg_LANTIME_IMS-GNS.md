@@ -17,10 +17,10 @@ The **GNS** is a central clock module for the Meinberg IMS platform. The multi G
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** | **Supported Types** |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types** |
 |-----------|------------------------|----------------------|---------------------|
-| 1.0.0.x   | 7.04.x                 | 8.x.y                | GNS181			  |
-| 1.0.1.x   | 7.04.x                 | 8.x.y                | GNS181			  |
+| 1.0.0.x   | 7.04.x                 | 8.x.y                | GNS181              |
+| 1.0.1.x   | 7.04.x                 | 8.x.y                | GNS181              |
 
 ### System Info
 

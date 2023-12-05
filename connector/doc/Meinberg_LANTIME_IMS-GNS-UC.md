@@ -21,10 +21,10 @@ The variety of inputs/outputs makes this receiver the first choice for a broad r
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** | **Supported Types**    |
-|-----------|------------------------|----------------------|------------------------|
-| 1.0.0.x   | 7.04.x                 | 8.x.y                | GNS181_UC              |
-| 1.0.1.x   | 7.04.x                 | 8.x.y                | GNS181_UC              |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types** |
+|-----------|------------------------|----------------------|---------------------|
+| 1.0.0.x   | 7.04.x                 | 8.x.y                | GNS181_UC           |
+| 1.0.1.x   | 7.04.x                 | 8.x.y                | GNS181_UC           |
 
 ### System Info
 

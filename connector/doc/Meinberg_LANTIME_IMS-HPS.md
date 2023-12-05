@@ -19,10 +19,10 @@ An NTP software service (NTPD) can also be started on the HPS board. This servic
 
 ### Product Info
 
-| Range     | Supported Firmware     | **REST API Version** |
-|-----------|------------------------|----------------------|
-| 1.0.0.x   | 7.04.x                 | 8.x.y                |
-| 1.0.1.x   | 7.04.x                 | 8.x.y                |
+| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types** |
+|-----------|------------------------|----------------------|---------------------|
+| 1.0.0.x   | 7.04.x                 | 8.x.y                | HPS100              |
+| 1.0.1.x   | 7.04.x                 | 8.x.y                | HPS100              |
 
 ### System Info
 
