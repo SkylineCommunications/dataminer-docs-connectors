@@ -10,14 +10,14 @@ This is a DataMiner connector for the 2WCOM DAB-4c, a converter device that can 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                        | **Based on** | **System Impact**                                                                                                                                            |
-|----------------------|---------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                         | \-           | \-                                                                                                                                                           |
-| 1.1.0.x              | New firmware (V0.9)                                                                                     | 1.0.0.x      | \-                                                                                                                                                           |
-| 1.2.0.x              | New firmware (V2.0)                                                                                     | 1.1.0.x      | \-                                                                                                                                                           |
-| 1.2.1.x              | Various improvements                                                                                    | 1.2.0.x      | The description of the SNMP column and the column display order of the table has changed, which can affect existing visual overviews and Automation scripts. |
-| 1.2.2.x              | Multiple new tables and parameters have been added in the connector according to the newest MIB (V2.5). | 1.2.1.x      | Page names have been changed, which can affect existing visual overviews.
-| 1.2.3.x \[SLC Main\] | Added Redundant polling with new SNMP second connection. Changed page layout                            | 1.2.2.2      | Some pages are removed and some newly added which can affect existing visual overviews. Existing elements need to be reconfigurerd for the new connection to be used.
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.1.0.x | New firmware (V0.9) | 1.0.0.x | - |
+| 1.2.0.x | New firmware (V2.0) | 1.1.0.x | - |
+| 1.2.1.x | Various improvements | 1.2.0.x | The description of the SNMP column and the column display order of the table has changed, which can affect existing visual overviews and Automation scripts. |
+| 1.2.2.x | Multiple new tables and parameters have been added in the connector according to the newest MIB (V2.5). | 1.2.1.x | Page names have been changed, which can affect existing visual overviews. |
+| 1.2.3.x [SLC Main] | Added redundant polling with new second SNMP connection. Changed page layout. | 1.2.2.2 | Some pages have been removed and some newly added, which can affect existing visual overviews. Existing elements need to be reconfigured for the new connection to be used. |
 
 ### Product Info
 
@@ -34,18 +34,18 @@ This is a DataMiner connector for the 2WCOM DAB-4c, a converter device that can 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.3.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.3.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### SNMP Main Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -59,7 +59,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-#### SNMP Redundant Connection
+#### SNMP Connection - Redundant
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -85,7 +85,15 @@ There is no redundancy defined.
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to use (1.2.3 range)
+
+The **Converter Overview** page displays an overview of the available converters in the **Converter Overview** table for the EDI-to-ETI/EDI mode.
+
+The **EDI to ETI/EDI** page displays input sources, source assignment, and ETI output data for the EDI-to-ETI/EDI mode.
+
+The **ETI to EDI** page displays input sources, source assignment, and IP EDI output data for the ETI-to-EDI mode.
+
+## How to use (earlier ranges)
 
 ### General
 
@@ -120,12 +128,12 @@ This page displays the state of the GPO interfaces and allows you to **Switch So
 
 ### Network
 
-This page contains the general configuration of the **CTRL**, **Data 1**, **Data 2** and **Ember** interfaces.
+This page contains the general configuration of the **CTRL**, **Data 1**, **Data 2**, and **Ember** interfaces.
 
 The page contains page buttons to the following subpages:
 
 - **LAN CTRL**: Contains the parameters related to the configuration of the CTRL interface.
-- **LAN**: Allows you to configure **LAN** **CTRL**, built-in device alarm monitoring conditions.
+- **LAN**: Allows you to configure **LAN CTRL** built-in device alarm monitoring conditions.
 - **Data 1**: Contains the parameters related to the configuration of the Data 1 interface.
 - **Data 2**: Contains the parameters related to the configuration of the Data 2 interface.
 
@@ -165,15 +173,9 @@ It also contains page buttons to subpages where these alarms can be configured:
 - **EDI Input 1**: Allows you to configure **EDI Input 1** built-in device alarm monitoring conditions for each **converter**.
 - **EDI Input 2**: Allows you to configure **EDI Input 2** built-in device alarm monitoring conditions for each **converter**.
 - **ETI Inputs**: Allows you to configure **ETI Input** built-in device alarm monitoring conditions for each **ETI Input**.
-- **Inputs**: Allows you to configure **Inputs** built-in device alarm monitoring conditions for each **Converter Input, EDI to EDI2 Input and ETI to EDI 2 Inputs**.
+- **Inputs**: Allows you to configure **Inputs** built-in device alarm monitoring conditions for each **Converter Input**, **EDI to EDI2 Input**, and **ETI to EDI 2 Input**.
 - **ETI Outputs**: Allows you to configure **ETI Output Error** built-in device alarm monitoring conditions for each **ETI output**.
 
 ### Log
 
 This page displays the configuration of the built-in device system log.
-
-### For 1.2.3.X Range
-
-The **Converter Overview** page displays an overview of the available converters in the **Converter Overview** table for the EDI-to-ETI/EDI mode.
-The **EDI to ETI/EDI** page displays Input Sources, Source Assignment and ETI output data for the EDI-to-ETI/EDI mode.
-The **ETI to EDI** page displays Input Sources, Source Assignment and IP EDI output data for the ETI-to-EDI mode.
