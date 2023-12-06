@@ -204,6 +204,7 @@ This page contains two tables, the **IGMP Interface** and **IGMP Cache Table**. 
 ### NBM
 
 This page contains the **NBM Interfaces Bandwidth** table.
+Bitrates may be slightly inaccurate due to rounding at the device. Bandwidth utilization could exceed 100% without dropped bytes indication. Consider this when configuring alarm templates.
 
 ### VTP VLAN
 
