@@ -50,10 +50,10 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-This page displays the status parameters, most notably the **TX Forward Power** and **TX Reflected Power**. It also contains 2 subpages which can be accessed by clicking the following buttons:
+This page displays the status parameters, most notably the **TX Forward Power** and **TX Reflected Power**. It also contains two subpages, which can be accessed by clicking the following buttons:
 
-- **System Information:** Displays information such as as the **Sofware Version**, **Location** and **Station Code**, You can also find **Configuration Status** parameters on this page.
-- **Polling Settings:** This page displays polling settings for each page. All polling is enabled by default. However, It is strongly recommended that polling be enabled only for parameters that are essential.
+- **System Information**: Displays information such as the **Software Version**, **Location**, and **Station Code**. You can also find **Configuration Status** parameters on this page.
+- **Polling Settings**: This page displays polling settings for each page. All polling is enabled by default. However, we strongly recommend only enabling polling for parameters that are essential.
 
 ### TX Overview
 
