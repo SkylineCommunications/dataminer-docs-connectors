@@ -18,6 +18,7 @@ This connector implements the SOAP interface specification for exchanging inform
 | 2.0.0.x          | Updated range   | No                  | Yes                     |
 | 2.1.0.x          | New firmware    | No                  | Yes                     |
 | 2.2.0.x          | New firmware    | No                  | Yes                     |
+| 2.2.1.x          | Update display keys   | No                  | Yes                     |
 
 ### Product Info
 
@@ -27,6 +28,7 @@ This connector implements the SOAP interface specification for exchanging inform
 | 2.0.0.x          | Unknown                     |
 | 2.1.0.x          | 6.x                         |
 | 2.2.0.x          | 7.x                         |
+| 2.2.1.x          | 7.x                         |
 
 ## Installation and configuration
 
