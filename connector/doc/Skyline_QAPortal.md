@@ -4,48 +4,73 @@ uid: Connector_help_Skyline_QAPortal
 
 # Skyline QAPortal
 
-The **Skyline QAPortal** connector allows you to manage **regression tests** and group them together and see the results in DataMiner. This will allow you to alarm and trend the results of your regression tests.
+The **Skyline QAPortal** connector allows you to manage **regression tests**, group them together, and see the results in DataMiner. This way, you can also enable alarm monitoring and trending of the results of your regression tests.
 
 ## About
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Manage regression tests</li><li>Run tests with different inputs</li></ul>         |<span style="color:grey">N/A</span>         |<span style="color:grey">N/A</span>         |
+| Range              | Features                                                       | Based on | System Impact |
+|--------------------|----------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - Manage regression tests<br>- Run tests with different inputs | -        | -             |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |<ul><li>[SLC-AS-SkylineQAPortalExampleTest](https://github.com/SkylineCommunications/SLC-AS-SkylineQAPortalExampleTest)</li></ul>         |<span style="color:grey">N/A</span>   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components                                                                                               | Exported Components |
+|---------|-----------------|---------------------|-----------------------------------------------------------------------------------------------------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | [SLC-AS-SkylineQAPortalExampleTest](https://github.com/SkylineCommunications/SLC-AS-SkylineQAPortalExampleTest) | -                   |
 
 ## Configuration
 
+### Connections
+
+This connector uses a virtual connection and does not require any input during element creation.
+
 ### Initialization
 
-There is an option to push the results to the **Skyline QA Portal**. This will provide visibility to your tests for **Skyline Communications**. In order to enable this you will need to have an mail server configured on your DMS, so the results can be mailed to the portal and you will need to configure the **API Key** and the **Client ID** on the **Settings** page. Then you can enable the option **Forward Results to Portal**. The API Key and Client ID will need to be provided by Skyline and needs to be kept **secret** to your organization.
+There is an option to push the results to the **Skyline QA Portal**. This will give **Skyline Communications** visibility on your tests. To enable this:
 
-## How to use
+1. Make sure you have a mail server configured on your DMS, so the results can be mailed to the portal
 
-The connector will automatically detect any regression tests available in your DMS. Regression tests are added in the form of an automation script. There is an example script [SLC-AS-SkylineQAPortalExampleTest](https://github.com/SkylineCommunications/SLC-AS-SkylineQAPortalExampleTest) available to get you started with regression tests. If the refression tests requires input parameters, then you can add them under the **Input Parameters** page. The connector is designed so you can add the same test multiple times with different inputs. This way you can make your regression test generic and reusable.
+1. Configure the **API Key** and the **Client ID** on the **Settings** page of the Skyline QAPortal element.
 
-### Adding a regression test
+1. Enable the option **Forward Results to Portal**.
 
-To add a regression test, go to the **General** page and use the **Context Menu** (right-click) on the **Regression Tests** table. If you just added a new regression test, it is possible that you need to use the **Refresh Tests** button to get them in the dropdown.
+The API Key and Client ID will need to be provided by Skyline and need to be kept **secret** to your organization.
 
-### Adding input parameters
+## How to Use
 
-If your regression test has input parameters, then you can use the **Input** column on the **Regression Tests** table to configure them. If you did not yet define any **Input Group** yet (empty dropdown), then you can create a new one by setting the **New...** option under the '...'. This will create a new group **Input Group** in the **Input Parameters** table. You will need to configure the **Value** in that table. There is also a **Context Menu** on that table that allows you to create or remove any **Input Groups**.
+The connector will automatically detect any regression tests available in your DMS. Regression tests are added in the form of an Automation script.
 
-### Grouping your tests
+If a regression test requires input parameters, you can add them on the **Input Parameters** page. The connector is designed so that you can add the same test multiple times with different input. This way, you can make your regression tests generic and reusable.
 
-There is a **Group** column on the **Regression Tests** table which will allow you to group a set of tests together that you want to execute at once. If there is an order in which the tests need to be executed, you can use the **Exec Order** column to define the order. The test with the lowest order will be executed first. If any tests in the same group have the same **Exec Order** then they will be executed at the same time.
+> [!TIP]
+> To get you started with regression tests, an example script is available: [SLC-AS-SkylineQAPortalExampleTest](https://github.com/SkylineCommunications/SLC-AS-SkylineQAPortalExampleTest).
 
-### Running your tests
+### Adding a Regression Test
 
-You can run the regression tests by using the **Run** button on the **Regression Tests** table or on the **Groups** table. Once the test(s) are finished you will find the results under the **Results Cases** and the **Results Performance** pages.
+To add a regression test, go to the **General** page, right-click the **Regression Tests** table, and select **Add new test**.
 
-## Known Regression Tests
+If you have just added a new regression test, you may need to use the **Refresh Tests** button to see it in the dropdown box.
+
+### Adding Input Parameters
+
+If your regression test has input parameters, configure these in the **Input** column of the **Regression Tests** table.
+
+If you have not yet define any **input group** (i.e. the dropdown is empty), create a new input group via **...** > **New**. This will create a new group **Input Group** in the **Input Parameters** table. You will need to configure the **value** in that table. You can also use the right-click menu of that table to create or remove input groups.
+
+### Grouping Your Tests
+
+To group a set of tests together so that you can execute them at once, use the **Group** column in the **Regression Tests** table.
+
+If the tests need to be executed in a specific order, use the **Exec Order** column to define the order. The test that is lowest in the order will be executed first. If any tests in the same group have the same position in the order, they will be executed at the same time.
+
+### Running Your Tests
+
+You can run the regression tests by using the **Run** button in the **Regression Tests** table or in the **Groups** table.
+
+Once the tests are finished, you will find the results on the **Results Cases** and the **Results Performance** pages.
+
+## Example Regression Tests
 
 - [SLC-AS-SkylineQAPortalExampleTest](https://github.com/SkylineCommunications/SLC-AS-SkylineQAPortalExampleTest)
