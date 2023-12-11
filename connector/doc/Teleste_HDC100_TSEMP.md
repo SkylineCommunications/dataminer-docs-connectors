@@ -22,6 +22,7 @@ The connector also provides different possibilities for **alarm monitoring** and
 | 3.1.0.x              | Updated to support new ESW                 | No                  | No                      |
 | 3.1.1.x              | Removed normalization                      | No                  | No                      |
 | 4.0.0.x \[SLC Main\] | Branched version                           | No                  | Yes                     |
+| 5.0.0.x              | Rework of 3.1.0.x                          | No                  | Yes                     |
 
 ### Product Info
 
@@ -33,6 +34,7 @@ The connector also provides different possibilities for **alarm monitoring** and
 | 3.1.0.x          | Unknown                     |
 | 3.1.1.x          | 1.\*                        |
 | 4.0.0.x          | C1.2, C1.5                  |
+| 5.0.0.x          | Unknown                     |
 
 ### Exported connectors
 
@@ -221,3 +223,46 @@ The **Configuration** page button provides access to a subpage with the followin
 ### HDO101 / HDO202 / HDO204 / HDO302 / HDO371 / HDO421 / HDO610 / HDO611 / HDO613 / HDO773/ HDO775 / HDO802 / HDO902 / HDO904 / HDO905 / HDO906 / HDP230 / HDO231 / HDO908 pages
 
 Each of these pages displays a table specific to the module in question, an **Analog Alarm Limits** table and a **Discrete Alarm Limits** table.
+
+## Usage (5.0.0.X)
+
+Teleste HDC100 5.0.0.X isn't creating DVE elements, but new elements that are using their own protocol depending on model of node itself.
+
+### General page
+
+This page displays the general parameters of the device, such as the Alias Name, Location and Contant informations, general hardware and software info and statistics such as uptime, total uptime, reset count and position.
+
+### Monitoring page
+
+This page contains two tables. One for Analog and other for Discrete alarm limits. Both tables are provided with details about each alarm information and set parameters for all read/write parameters for each alarm.
+
+### Module Overview page
+
+This is main page for all devices connected to controller. Page contains parameters for easier control over created elements and counter for sum of elements that are connected to controller as well as main table with all details about connected nodes.
+
+We can set automatical removal of all missing nodes, creation of elements with invalid submasks or creation of elements that aren't in config file.
+
+Also, this page contains two subpages, one for configuration and other for templates. Configuration page allows us to select specific .csv file that we want to use for configuration of our elements. 
+Path for our config files has to be:  **"C:\Skyline DataMiner\Documents\Teleste HDC100\"**
+
+Template page shows us alarm and trending templates for each supported protocol that is available on your DMS. **Note that for each protocol we can select one default alarm or trending tamplate.**
+
+### Interfaces page
+
+Interfaces page contains table of two rows for easier view of all informations regarding Ethernet and HDO bus. There we can see all informations regarding communications such ass IP address, net masks, gateway address, mastering mode, master address, poll timeout, packet timeout...
+
+**Note:** Set for some of cells aren't supported. Notification of not supported command can be seen in logging of an element.
+
+## List of supported protocols - 5.0.0.X
+
+- Teleste HDO202
+- Teleste HDO212
+- Teleste HDO230
+- Teleste HDO752
+- Teleste HDO775
+- Teleste HDO905
+- Teleste HDO907
+- Teleste HDO908 TSEMP
+
+### Detailed logging about polled modules
+Note that detailed module is enabled/disabled by parameter ID 5 on App level. By default, this **parameter is set to disabled**, but if you want to see more detailed logging about polled modules, set this parameter to enabled.
