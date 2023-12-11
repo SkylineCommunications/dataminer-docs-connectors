@@ -10,27 +10,27 @@ This is an **SNMP** connector that is used to monitor and configure the **CISCO 
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                 | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                | Yes                 | Yes                     |
-| 1.0.1.x \[Obsolete\] | Added "IF Translation Table".                                                                   | Yes                 | Yes                     |
-| 1.0.2.x \[Obsolete\] | Changed display key for interface detail tables.                                                | Yes                 | Yes                     |
-| 1.0.3.x \[Obsolete\] | Removed some parameters from the SSH page that were made irrelevant by the reworked SSH system. | Yes                 | Yes                     |
-| 1.0.4.x \[SLC Main\] | Changed the type of some PTP parameters from string to numeric text.                            | Yes                 | Yes                     |
-| 2.0.0.x \[Obsolete\] | DCF tables added.                                                                               | Yes                 | No                      |
-| 2.0.1.x              | Fixed Cassandra compliancy.                                                                     | Yes                 | Yes                     |
+| Range              | Description                                                                                     | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                                | Yes             | Yes                 |
+| 1.0.1.x [Obsolete] | Added "IF Translation Table".                                                                   | Yes             | Yes                 |
+| 1.0.2.x [Obsolete] | Changed display key for interface detail tables.                                                | Yes             | Yes                 |
+| 1.0.3.x [Obsolete] | Removed some parameters from the SSH page that were made irrelevant by the reworked SSH system. | Yes             | Yes                 |
+| 1.0.4.x [SLC Main] | Changed the type of some PTP parameters from string to numeric text.                            | Yes             | Yes                 |
+| 2.0.0.x [Obsolete] | DCF tables added.                                                                               | Yes             | No                  |
+| 2.0.1.x            | Fixed Cassandra compliancy.                                                                     | Yes             | Yes                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | Cisco IOS Cisco IOS XR |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
-| 2.0.0.x   | \-                     |
-| 2.0.1.x   | \-                     |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
+| 2.0.0.x   | -                      |
+| 2.0.1.x   | -                      |
 
 ## Configuration
 
@@ -64,17 +64,27 @@ You can also enable or disable the polling of some of the tables of the connecto
 
 ### Detailed Interface Info
 
-This page displays the **Detailed** **Interface Info** table.
+This page displays the **Detailed Interface Info** table.
 
 The page also contains a button that can be used to **Remove Unused Interfaces** from the **Detailed Interface Info** table.
 
+Via **Measurement Configuration**, you can enable or disable the polling of interface communication KPIs:
+
+- The **Enable All** button enables polling for all the interface communication KPIs.
+
+- The **Disable All** button disables polling for all the interface communication KPIs.
+
+- The **Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and it disables all with a *Down* or *Admin Down* operation state.
+
+- The **Keep and Enable Oper. Up** button enables polling for all interface communication KPIs with an *Up* operation state, and it disables all with an *Admin Down* operation state.
+
 ### Detailed Interface Info - Rx
 
-This page displays the **Detailed** **Interface Info - Rx** table.
+This page displays the **Detailed Interface Info - Rx** table.
 
 ### Detailed Interface Info - Tx
 
-This page displays the **Detailed** **Interface Info - Tx** table.
+This page displays the **Detailed Interface Info - Tx** table.
 
 ### PoE
 
@@ -130,7 +140,7 @@ This page displays the **Ent Sensor Value** table.
 
 ### VLAN Info
 
-This page displays the **VLAN** **Info** table.
+This page displays the **VLAN Info** table.
 
 ### PIM
 
@@ -142,7 +152,7 @@ This page displays the **ISIS** system-related information.
 
 ### EIGRP
 
-This page displays the **VPN**, **Traffic Statistics**, **Topology**, **Peer**, and **Interface** **(EIGRP)** table.
+This page displays the **VPN**, **Traffic Statistics**, **Topology**, **Peer**, and **Interface (EIGRP)** table.
 
 ### VRF
 

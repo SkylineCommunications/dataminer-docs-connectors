@@ -517,6 +517,8 @@
   items:
   - name: Apantac LE-20HD
     topicUid: Connector_help_Apantac_LE-20HD
+  - name: Apantac Tahoma T-Sharp
+    topicUid: Connector_help_Apantac_Tahoma_T-Sharp
 - name: APC
   topicUid: Connector_help_APC_ACRC103
   items:
@@ -2795,6 +2797,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA89-02
   - name: Double D Electronics DDA89-12
     topicUid: Connector_help_Double_D_Electronics_DDA89-12
+- name: Druid
+  topicUid: Connector_help_Druid_Raemis
+  items:
+  - name: Druid Raemis
+    topicUid: Connector_help_Druid_Raemis
 - name: DTAG
   topicUid: Connector_help_DTAG_Passive_Protocol
   items:
@@ -3829,8 +3836,10 @@
   - name: France Televisions InHouse
     topicUid: Connector_help_France_Televisions_InHouse
 - name: Fraunhofer
-  topicUid: Connector_help_Fraunhofer_DRM_Content_Server
+  topicUid: Connector_help_Fraunhofer_DAB_Content_Server
   items:
+  - name: Fraunhofer DAB Content Server
+    topicUid: Connector_help_Fraunhofer_DAB_Content_Server
   - name: Fraunhofer DRM Content Server
     topicUid: Connector_help_Fraunhofer_DRM_Content_Server
 - name: Fujitsu
@@ -4714,6 +4723,8 @@
     topicUid: Connector_help_Imagine_Communications_Platinum_IP3
   - name: Imagine Communications Platinum Router
     topicUid: Connector_help_Imagine_Communications_Platinum_Router
+  - name: Imagine Communications Platinum Router VX CQ Router
+    topicUid: Connector_help_Imagine_Communications_Platinum_VX_CQ_Router
   - name: Imagine Communications SelenioFlex
     topicUid: Connector_help_Imagine_Communications_SelenioFlex
   - name: Imagine Communications Selenio 1UHD1
@@ -5613,6 +5624,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_Non-Modular_API_V10
   - name: Meinberg LANTIME Non-Modular API V10 - SyncMon Node
     topicUid: Connector_help_Meinberg_LANTIME_Non-Modular_API_V10_-_SyncMon_Node
+  - name: Meinberg microSync
+    topicUid: Connector_help_Meinberg_microSync
   - name: Meinberg SCU-XPT
     topicUid: Connector_help_Meinberg_SCU-XPT
 - name: Mellanox Technologies
@@ -6989,6 +7002,8 @@
     topicUid: Connector_help_Peak_Communications_RCUH200
   - name: Peak Communications Sky UK Polarization Switch
     topicUid: Connector_help_Peak_Communications_Sky_UK_Polarization_Switch
+  - name: Peak Communications TLTH
+    topicUid: Connector_help_Peak_Communications_TLTH
   - name: Peak Communications UPC7000 Series
     topicUid: Connector_help_Peak_Communications_UPC7000_Series
 - name: PEAK System
@@ -7949,6 +7964,11 @@
     topicUid: Connector_help_SES_S.A._TEMOS
   - name: SES S.A. TEMOS Probe
     topicUid: Connector_help_SES_S.A._TEMOS_Probe
+- name: Shelly
+  topicUid: Connector_help_Shelly_Bulb_RGBW
+  items:
+  - name: Shelly Bulb RGBW
+    topicUid: Connector_help_Shelly_Bulb_RGBW
 - name: SIAE
   topicUid: Connector_help_SIAE_Microwave_Trunklink
   items:
@@ -8113,6 +8133,8 @@
     topicUid: Connector_help_Skyline_DataMiner_IT_Tools
   - name: Skyline DataMiner System
     topicUid: Connector_help_Skyline_DataMiner_System
+  - name: Skyline Dependency Checker
+    topicUid: Connector_help_Skyline_Dependency_Checker
   - name: Skyline DMP Replication
     topicUid: Connector_help_Skyline_DMP_Replication
   - name: Skyline DMP Replication Umbrella
@@ -8191,6 +8213,8 @@
     topicUid: Connector_help_Skyline_Job_Manager
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline MDC Service Monitoring
+    topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch
     topicUid: Connector_help_Skyline_Mediation_1+1_redundancy_switch
   - name: Skyline Mediation IRD
@@ -8648,6 +8672,11 @@
     topicUid: Connector_help_Standard_Information_Platform
   - name: Standard Switch Management
     topicUid: Connector_help_Standard_Switch_Management
+- name: Starlink
+  topicUid: Connector_help_Starlink_Telemetry_API
+  items:
+  - name: Starlink Telemetry API
+    topicUid: Connector_help_Starlink_Telemetry_API
 - name: Stratos
   topicUid: Connector_help_Stratos_AmosConnect_Connect_Monitoring
   items:
@@ -8899,6 +8928,8 @@
     topicUid: Connector_help_TDF_GE_TBOX
   - name: TDF Helios Database
     topicUid: Connector_help_TDF_Helios_Database
+  - name: TDF Helios Database - Operator
+    topicUid: Connector_help_TDF_Helios_Database_-_Operator
   - name: TDF Incident Ticketing
     topicUid: Connector_help_TDF_Incident_Ticketing
   - name: TDF Jbus PLC
@@ -8915,6 +8946,8 @@
     topicUid: Connector_help_TDF_TBOX_Emetteur_Manager
   - name: TDF TNT Rights Management
     topicUid: Connector_help_TDF_TNT_Rights_Management
+  - name: TDF vDCM Streaming
+    topicUid: Connector_help_TDF_vDCM_Streaming
 - name: TDK-Lambda
   topicUid: Connector_help_TDK-Lambda_HFE_LAN
   items:
@@ -9959,6 +9992,11 @@
     topicUid: Connector_help_Walton_Enterprises_DP-8
   - name: Walton Enterprises DP-9
     topicUid: Connector_help_Walton_Enterprises_DP-9
+- name: Warner Bros Discovery Sports
+  topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
+  items:
+  - name: Warner Bros Discovery Sports Transmission Orders
+    topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
 - name: Wavestream
   topicUid: Connector_help_Wavestream_BUC_POB-KAN120-HW24
   items:
