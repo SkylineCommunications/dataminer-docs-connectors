@@ -252,6 +252,8 @@
     topicUid: Connector_help_Agilent_L4490A
   - name: Agilent N1996A
     topicUid: Connector_help_Agilent_N1996A
+  - name: Agilent N9010A-526 EXA
+    topicUid: Connector_help_Agilent_N9010A-526_EXA
   - name: Agilent N9320B
     topicUid: Connector_help_Agilent_N9320B
 - name: Agilis
