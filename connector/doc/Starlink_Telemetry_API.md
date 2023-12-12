@@ -50,7 +50,7 @@ TCP/IP settings
 
 ### Initialization
 
-A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Login** page.
+A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Configuration** page.
 
 > [!IMPORTANT]
 > No telemetry will be polled by default. To enable telemetry polling, go to the **Accounts** table on the **Accounts** page, and use the toggle button of the relevant row(s) in the **Polling** column.
@@ -73,28 +73,35 @@ If you only see group 700 in the Stream Viewer, check the **Authentication** par
 
 If you only see groups 700 and 701 in the Stream Viewer, check the **Polling** column of the **Accounts** table, as probably none of the toggle buttons will be set to enabled.
 
+Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
+
 > [!NOTE]
 > Keep in mind that the tables User Terminals, Alerts, and Routers can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-702 are shown in the Stream Viewer.
 
-### General Page
+> [!TIP]
+> In case you notice that a large number of user terminals are not shown in the User Terminals table, restart the element. This will trigger a new access token request and a new poll cycle.
 
-The General page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which polling is enabled.
+### User Terminals Page
+
+The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which polling is enabled.
+
+The columns **Device ID** and **Account Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
+
+As the Telemetry API does not always return the user terminals consistently, the terminals that are no longer returned by the API will be kept in the table for one day at most. You will see a line in the element log file when one or more terminals are still in the table but were not returned by the API.
+
+Terminals that are no longer returned by the API for more than one day will be removed from the table. This action will also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
+
+You can assign a name to each user terminal in the **Device Name** column. These names will only be used by DataMiner and will not be communicated to the API. Keep in mind that a name will not be accepted if it contains invalid symbols.
 
 ### Alerts Page
 
-Each row in the **Alerts** table represents an alert that comes from a user terminal. Alerts will persist for as long as they are active.
+Each row in the **Alerts** table represents an alert that comes from a user terminal (not from a router). Alerts will persist for as long as they are active.
 
 ### Routers Page
 
 Information related to routers is stored in the **Routers** table.
 
-### Login Page
-
-The Login page contains the **Client ID**, the **Client Secret** and the **Authentication** field. When both Client ID and Client Secret are accepted by the API, the Authentication field will indicate *Successful*, and data will start appearing in the element.
-
-In case **no data** appears in the element and traffic inside the Stream Viewer seems minimal, check if the Authentication parameter indicates *Successful*. If it instead indicates *Failed*, this means that the Client ID or the Client Secret is not correct.
-
-The polling mechanism is triggered after a Client Secret value change. This means that a Client Secret value change is required to trigger a new poll cycle after an incorrect Client ID is corrected.
+The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 ### Accounts Page
 
@@ -102,3 +109,19 @@ All known accounts are listed in the Accounts table. Each row in this table cont
 
 > [!NOTE]
 > Keep in mind that after you enable polling for one or more accounts, it can take some time before data is visible in the tables User Terminals, Alerts, and Routers. There is no trigger after changing one or more toggle buttons. Every timer cycle, the connector checks for which accounts polling is enabled.
+
+### Configuration Page
+
+The Configuration page contains the **Client ID**, the **Client Secret**, and the **Authentication** field. When the specified client ID and client secret have both been accepted by the API, the Authentication field will indicate *Successful*, and the element will start to display data. The connector will update its access token every 15 minutes, just before it expires.
+
+In case the element **does not show any data**, and traffic inside the Stream Viewer seems minimal, check if the Authentication parameter indicates *Successful*. If it instead indicates *Failed*, most likely the client ID or the client secret is not correct.
+
+The polling mechanism is triggered after the value of the Client Secret parameter changes. This means that a Client Secret value change is required to trigger a new poll cycle after an incorrect Client ID is corrected.
+
+The Configuration page also contains two telemetry request configuration parameters:
+
+- **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~1000 records per request.
+- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~1000 ms.
+
+> [!NOTE]
+> Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
