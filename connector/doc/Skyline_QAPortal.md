@@ -36,7 +36,7 @@ There is an option to push the results to the **Skyline QA Portal**. This will g
 
 1. Enable the option **Forward Results to Portal**.
 
-The API Key and Client ID will need to be provided by Skyline. The Client ID defines your organization and the API Key is the secret that allows you to push results to our portal. This is why you need to keep these **secret** to your organization otherwise anyone can push results in your name.
+The API key and client ID will need to be provided by Skyline. The client ID defines your organization, and the API key is the secret that allows you to push results to the Skyline portal. Keep these **secret**, as otherwise anyone could push results in your name.
 
 ## How to Use
 
