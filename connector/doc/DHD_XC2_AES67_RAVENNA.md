@@ -24,7 +24,7 @@ This connector monitors the audio-over-IP streams sent and received by the AES67
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
 
 ## Configuration
 
