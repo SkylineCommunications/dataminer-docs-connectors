@@ -9296,6 +9296,8 @@
     topicUid: Connector_help_Teleste_HDO907
   - name: Teleste HDO908
     topicUid: Connector_help_Teleste_HDO908
+  - name: Teleste HDP230
+    topicUid: Connector_help_Teleste_HDP230
   - name: Teleste HDP301 TSEMP DVX
     topicUid: Connector_help_Teleste_HDP301_TSEMP_DVX
   - name: Teleste Luminato
