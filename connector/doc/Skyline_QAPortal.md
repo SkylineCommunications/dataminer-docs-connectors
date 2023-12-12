@@ -57,7 +57,22 @@ If you have just added a new regression test, you may need to use the **Refresh 
 
 If your regression test has input parameters, configure these in the **Input** column of the **Regression Tests** table.
 
-If you have not yet defined any **Input Group** (i.e. the dropdown is empty), create a new input group via **...** > **New**. This will create a new group **Input Group** in the **Input Parameters** table. You will need to configure the **value** in that table. You can also use the right-click menu of that table to create or remove input groups.
+If you have not yet defined any **input group** (i.e. the dropdown is empty), create a new input group:
+
+1. After you have clicked the pencil icon in the **Input** column of the **Regression Tests** table, click **...**.
+
+   ![Ellipsis icon](~/connector/images/Skyline_QAPortal_ellipsis_icon.png)
+
+1. Select **New** and click the green check mark icon.
+
+   This will create a new group **Input Group** in the **Input Parameters** table.
+
+1. Go to the **General** > **Input Parameters** page.
+
+1. Use the pencil icons in the **Value** column of the Input Parameters table to configure a value for the parameters in the group.
+
+   > [!NOTE]
+   > You can also use the right-click menu of the Input Parameters table to create or remove input groups.
 
 ### Grouping Your Tests
 
