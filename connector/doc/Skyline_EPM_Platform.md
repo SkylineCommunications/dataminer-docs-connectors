@@ -15,39 +15,61 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 - **DOCSIS Network**
 
   - Network
+
   - Market
+
   - Hub
+
   - CCAP Core
+
   - DS Line Cards - US Line Cards
+
   - DS Ports - US Ports
+
   - Node Segment
+
   - CM
 
 - **DOCSIS Service**
 
   - DOCSIS Network
+
   - DOCSIS Market
+
   - DOCSIS Hub
+
   - CCAP Core
-  - Service Group \[Fiber Node\]
+
+  - Service Group [Fiber Node]
+
   - DS Service Group - US Service Group
+
   - CM
 
 - **DOCSIS Passives**
 
   - Node
+
   - Amplifier
+
   - Tap
+
   - CM
 
 - **GPON Service**
 
   - GPON Network
+
   - GPON Market
+
   - GPON Hub
+
   - OLT
+
   - Slot
+
   - Port
+
   - ONT
 
 - **DOCSIS Quick**
@@ -66,18 +88,19 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x | Initial version. | \- | \- |
-| 1.0.1.x | Integration of PNM KPIs. | \- | \- |
-| 1.0.2.x | Decoupling and enhancements. | \- | \- |
-| 1.0.3.x | Remote view tables retrieve information from multiple source elements. | \- | \- |
-| 1.0.4.x | \- Partial table option enabled on several tables to improve loading time of the filter box for the EPM topology. - Parameter added that lets the user change the name of the Automation script that notifies the CCAPs/CM collector pairs of new data to be ingested. | \- | \- |
-| 1.0.5.x | \- New exceptions added for the correction of the default value for average percentage US and DS utilization. | \- | \- |
-| 1.0.6.x | \- Quick topology for GPON now contains Split Route, Split Distribution, and Split FAT. Generic Split level was removed. | \- | \- |
-| 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | \- | \- |
-| 1.0.8.x | Remote views removed from GPON CPE level (ONT). | \- | \- |
-| 1.0.9.x \[SLC Main\] | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | \- | \- |
+| 1.0.0.x | Initial version. | -  | -  |
+| 1.0.1.x | Integration of PNM KPIs. | -  | -  |
+| 1.0.2.x | Decoupling and enhancements. | -  | -  |
+| 1.0.3.x | Remote view tables retrieve information from multiple source elements. | -  | -  |
+| 1.0.4.x | - Partial table option enabled on several tables to improve loading time of the filter box for the EPM topology. <br>- Parameter added that lets the user change the name of the Automation script that notifies the CCAPs/CM collector pairs of new data to be ingested. | -  | -  |
+| 1.0.5.x | New exceptions added for the correction of the default value for average percentage US and DS utilization. | -  | -  |
+| 1.0.6.x | Quick topology for GPON now contains Split Route, Split Distribution, and Split FAT. Generic Split level was removed. | -  | -  |
+| 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | -  | -  |
+| 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
+| 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
+| 1.0.10.x [SLC Main] | Tables ordered in the same way as on the overview page. | -  | -  |
 
 ### Product Info
 
@@ -93,21 +116,23 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x   | N/A                    |
 | 1.0.8.x   | N/A                    |
 | 1.0.9.x   | N/A                    |
+| 1.0.10.x  | N/A                    |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.6.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.7.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.8.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.9.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.7.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.8.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.9.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.10.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

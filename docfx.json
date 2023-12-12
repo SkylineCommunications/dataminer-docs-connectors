@@ -10,14 +10,16 @@
         ]
       }
     ],
-        "sitemap": {
+    "sitemap": {
       "baseUrl": "https://docs.dataminer.services",
       "changefreq": "hourly"
     },
   "resource": [
       {
         "files": [
-          "connector/images/**"
+          "connector/images/**",
+          "staticwebapp.config.json",
+          "404.html"
         ]
       }
     ],

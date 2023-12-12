@@ -10,21 +10,24 @@ This DataMiner connector can be used to collect measurements using the CelPlan C
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range                | Key Features                   | Based on     | System Impact     |
+|----------------------|--------------------------------|--------------|-------------------|
+| 1.0.0.x              | Initial version                | -            | -                 |
+| 1.0.1.x [SLC Main]   | Support remote helper service  | 1.0.0.2      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | API version 1.3-07     |
+| 1.0.1.x   | API version 1.3-07     |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -51,6 +54,8 @@ However, this helper process needs to be installed separately. You can do so by 
 After you have created a new element with this connector, configure the **IP address of the device** on the **Configuration** page. On the same page, you can also configure whether GPS coordinates should be registered.
 
 On the pages related to the different technologies (GSM, UMTS, LTE, 5G), you can configure from which frequencies measurements should be collected, and you can also configure additional parameters related to each technology (see "How to use").
+
+Starting from range 1.0.1.x, it is also possible to run this helper process on a remote machine, for example because the calculations that are being done in the helper process could be very CPU intensive. After the solution is built, an installer package is created (*CellScannerServiceSetup.msi*). The Windows service that is needed on the remote machine can be installed using this installer. The IP address and port of the remote server hosting the helper service can be configured on the **Configuration** page of an element.
 
 ### Redundancy
 
