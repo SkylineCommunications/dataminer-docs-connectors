@@ -25,7 +25,7 @@ Please note the following:
 | 1.0.0.x              | Initial version, based on "SA DCM 2.0.0.36" connector.                          | Yes                 | Yes                     |
 | 1.0.1.x              | Added partial tables.                                                           | Yes                 | Yes                     |
 | 1.0.2.x              | Based on 1.0.0.104, but with partial tables.                                    | Yes                 | Yes                     |
-| 1.0.3.x \[SLC Main\] | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes                 | Yes                     |
+| 1.0.3.x [SLC Main]   | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes                 | Yes                     |
 
 ### Product Info
 

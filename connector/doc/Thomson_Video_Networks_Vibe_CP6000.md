@@ -22,7 +22,7 @@ From version 1.0.1.5 onwards, the **DataMiner Connectivity Framework** has been 
 | 1.0.1.x              | New feature: translated table for multicast IP address and port + fixed problem with Alarm Table.                           | Yes                 | Yes                     |
 | 1.0.2.x              | \- Changed layout. - Fixed linking between tables. - Alarm monitoring on PID bit rates returns a user-friendly description. | Yes                 | Yes                     |
 | 1.0.3.x              | Table display keys changed to avoid duplicate naming.                                                                       | Yes                 | Yes                     |
-| 1.0.4.x \[SLC Main\] | Reorganized the internal linking to accommodate the different functions that use the connector.                             | Yes                 | Yes                     |
+| 1.0.4.x [SLC Main]   | Reorganized the internal linking to accommodate the different functions that use the connector.                             | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -51,9 +51,9 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device, by default value *public*.
-- **Set community string:** The community string used when setting values on the device, by default value *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device, by default value *public*.
+- **Set community string**: The community string used when setting values on the device, by default value *private*.
 
 ## Usage
 

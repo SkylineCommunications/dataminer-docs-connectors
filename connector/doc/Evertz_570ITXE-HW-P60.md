@@ -19,7 +19,7 @@ The connector uses **SNMP** and **HTTP** to poll data from the Evertz 570ITXE-HW
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**               |
+| Range     | Device Firmware Version                   |
 |------------------|-------------------------------------------|
 | 1.0.0.x          | N: V303B20180202-764 S: V303B20180202-764 |
 | 1.0.1.x          | Build number: 1163                        |

@@ -17,7 +17,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 - **SNMP CONNECTION:**
 
   - **IP address/host**: The polling IP of the device.
-  - **Device Address:** A logical index, between *0* and *17*.
+  - **Device address**: A logical index, between *0* and *17*.
 
   **SNMP Settings:**
 

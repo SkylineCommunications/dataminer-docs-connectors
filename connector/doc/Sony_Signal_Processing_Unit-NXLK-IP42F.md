@@ -16,10 +16,10 @@ This connector is exported by the parent connector **Sony Signal Processing Unit
 
 ### Version Info
 
-| **Range**            | **Key Features**                   | **Based on** | **System Impact**         |
+| Range                | Key Features                       | Based On     | System Impact             |
 |----------------------|------------------------------------|--------------|---------------------------|
-| 1.0.0.x              | Initial version                    | \-           | \-                        |
-| 1.0.1.x \[SLC Main\] | New feature is for card IP50Y only | 1.0.0.14     | Button parameters renamed |
+| 1.0.0.x              | Initial version                    | -            | -                         |
+| 1.0.1.x [SLC Main]   | New feature is for card IP50Y only | 1.0.0.14     | Button parameters renamed |
 
 ### Product Info
 

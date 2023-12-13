@@ -12,13 +12,13 @@ The HD-492 iCap Closed Caption Encoder has iCap and Lexi access as well as moder
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**       |
+| Range     | Supported Firmware           |
 |-----------|------------------------------|
 | 1.0.0.x   | Build 3.1.1n, Firmware v1.52 |
 
@@ -26,7 +26,7 @@ The HD-492 iCap Closed Caption Encoder has iCap and Lexi access as well as moder
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

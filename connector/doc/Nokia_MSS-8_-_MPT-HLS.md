@@ -10,7 +10,7 @@ The Nokia Wavence family includes a range of Microwave Packet Transport (MPT) un
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ## Configuration
 

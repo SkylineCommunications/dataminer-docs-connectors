@@ -14,7 +14,7 @@ This SNMP connector is used to monitor the transmitter parameters with trap func
 
 | **Range** | **Key Features** | **Based on** | **System Impact**          |
 |-----------|------------------|--------------|----------------------------|
-| 1.0.0.x   | Initial version  | \-           | There is no system impact. |
+| 1.0.0.x   | Initial version  | -            | There is no system impact. |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This SNMP connector is used to monitor the transmitter parameters with trap func
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

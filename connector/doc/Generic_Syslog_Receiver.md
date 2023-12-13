@@ -16,28 +16,28 @@ The communication method used is **smart-serial**.
 
 | **Range**            | **Key Features**                                                                                                           | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                                            | \-           | \-                |
-| 1.0.1.x              | Partial attribute added to tables: Received Raw Messages and Message Table.                                                | \-           | \-                |
-| 1.0.2.x \[Obsolete\] | Updated sort on messages table. Added Partial attribute to messages table to display 100 rows per page.                    | \-           | \-                |
-| 1.0.3.x \[SLC Main\] | Maximum Messages Range updated to 10-10000. Partial attribute added or updated in Received Raw Messages and Message Table. | \-           | \-                |
+| 1.0.0.x              | Initial version                                                                                                            | -            | -                 |
+| 1.0.1.x              | Partial attribute added to tables: Received Raw Messages and Message Table.                                                | -            | -                 |
+| 1.0.2.x [Obsolete]     |Updated sort on messages table. Added Partial attribute to messages table to display 100 rows per page.                    | -            | -                 |
+| 1.0.3.x [SLC Main]   | Maximum Messages Range updated to 10-10000. Partial attribute added or updated in Received Raw Messages and Message Table. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

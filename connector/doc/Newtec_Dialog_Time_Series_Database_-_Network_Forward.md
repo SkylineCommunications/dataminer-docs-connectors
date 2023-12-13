@@ -14,7 +14,7 @@ In the main Newtec dialog element, you can indicate whether a DVE should be crea
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                      |
+| Range     | Supported Firmware                                          |
 |------------------|-------------------------------------------------------------|
 | 1.0.0.x          | Compatible with all Newtec Dialog versions of parent connector |
 

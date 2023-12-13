@@ -14,9 +14,9 @@ The connector polls information from the Tektronix SPG8000 via an SNMP connectio
 
 | **Range**            | **Key Features**                                                                                        | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                         | \-           | \-                |
-| 1.0.1.x              | Second connection for serial API polling                                                                | \-           | \-                |
-| 1.0.2.x \[SLC Main\] | Modified exports in PTP table. Some of the PTP parameters can now be exported as standalone parameters. | \-           | \-                |
+| 1.0.0.x              | Initial version                                                                                         | -            | -                 |
+| 1.0.1.x              | Second connection for serial API polling                                                                | -            | -                 |
+| 1.0.2.x [SLC Main]   | Modified exports in PTP table. Some of the PTP parameters can now be exported as standalone parameters. | -            | -                 |
 
 ### Product Info
 
@@ -28,11 +28,11 @@ The connector polls information from the Tektronix SPG8000 via an SNMP connectio
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**         |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components             |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                              |
-| 1.0.1.x   | No                  | Yes                     | \-                    | Tektronix SPG8000 PTP Interface |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | Tektronix SPG8000 PTP Interface |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                               |
+| 1.0.1.x   | No                  | Yes                     | -                     | Tektronix SPG8000 PTP Interface |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | Tektronix SPG8000 PTP Interface |
 
 ## Configuration
 

@@ -19,7 +19,7 @@ The information on tables and parameters is retrieved via **HTTP** and **serial*
 | 1.0.2.x              | Implemented SNMP traps.                                                                                                                                                                                       | Yes                 | Yes                     |
 | 1.0.3.x              | Added Disk Usage Table based on Linux SSH connection.                                                                                                                                                         | Yes                 | Yes                     |
 | 1.0.4.x              | Added control plane connection and functionality.                                                                                                                                                             | Yes                 | Yes                     |
-| 1.0.5.x \[SLC Main\] | Removed Tx columns from the Network Interface Rx table (49000) and Rx columns from the network Interface Tx table (59000). Added FK column to the 9000 table in the following tables: 11000, 49000 and 59000. | Yes                 | Yes                     |
+| 1.0.5.x [SLC Main]   | Removed Tx columns from the Network Interface Rx table (49000) and Rx columns from the network Interface Tx table (59000). Added FK column to the 9000 table in the following tables: 11000, 49000 and 59000. | Yes                 | Yes                     |
 
 ### Product Info
 

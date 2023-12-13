@@ -19,10 +19,10 @@ The database of the Service Overview Manager contains a service monitoring sched
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                    | **Based on** | **System Impact**                             |
-|----------------------|---------------------------------------------------------------------|--------------|-----------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                    | \-           | \-                                            |
-| 1.0.1.x \[SLC Main\] | Removed all BridgeTech references and functionality from the connector | 1.0.0.30     | All BridgeTech data tables have been removed. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | Removed all BridgeTech references and functionality from the connector | 1.0.0.30 | All BridgeTech data tables have been removed. |
 
 ## Configuration
 

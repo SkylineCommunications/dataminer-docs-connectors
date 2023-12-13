@@ -22,7 +22,7 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**     |
+| Range     | Device Firmware Version         |
 |------------------|---------------------------------|
 | 1.0.0.x          | Unknown                         |
 | 1.1.0.x          | Unknown                         |

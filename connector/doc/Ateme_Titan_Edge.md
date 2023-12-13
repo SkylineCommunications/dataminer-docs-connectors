@@ -10,10 +10,10 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                               | **Based on** | **System Impact** |
-|----------------------|------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                               | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4      | \-                |
+| Range              | Key Features                                                                                   | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                               | -        | -             |
+| 1.0.1.x [SLC Main] | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
 
 ### Product Info
 
@@ -24,46 +24,10 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 
 ### System Info
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-<td><strong>Linked Components</strong></td>
-<td><strong>Exported Components</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>No</td>
-<td>Yes</td>
-<td>-</td>
-<td><ul>
-<li>Ateme Titan Edge - Encoder</li>
-<li>Ateme Titan Edge - Decoder</li>
-<li>Ateme Titan Edge - Gateway</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>1.0.1.x</td>
-<td>No</td>
-<td>Yes</td>
-<td>-</td>
-<td><ul>
-<li>Ateme Titan Edge - Encoder</li>
-<li>Ateme Titan Edge - Decoder</li>
-<li>Ateme Titan Edge - Gateway</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>Ateme Titan Edge - Gateway |
+| 1.0.1.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
 
 ## Configuration
 

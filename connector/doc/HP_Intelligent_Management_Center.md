@@ -20,13 +20,13 @@ The following information must be provided during element creation:
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
 - **Port number**: The port of the connected device, by default *8080.*
-- **Bus Address:** This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy.*
+- **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy.*
 
 **SERIAL CONNECTION**:
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
 - **Port number**: The port of the connected device, by default *8080.*
-- **Bus Address:** This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy.*
+- **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy.*
 
 ## Usage
 

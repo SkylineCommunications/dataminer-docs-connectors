@@ -14,20 +14,20 @@ Some devices have huge tables, so in order to limit polling, polling can be disa
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                             | **Based on** | **System Impact**                                                                                                                                                                                                                                  |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version (SNMPv2).                                                                                                                                                    | \-           | \-                                                                                                                                                                                                                                                 |
-| 1.0.1.x \[Obsolete\] | SNMPv2 + SSH.                                                                                                                                                                | 1.0.0.27     | Unknown                                                                                                                                                                                                                                            |
-| 1.0.2.x \[Obsolete\] | SNMPv2 + SSH: Configurable polling rate and measured interfaces.                                                                                                             | 1.0.0.30     | Unknown                                                                                                                                                                                                                                            |
-| 1.0.3.x \[Obsolete\] | SNMPv3 + traps + SSH.                                                                                                                                                        | 1.0.0.30     | Unknown                                                                                                                                                                                                                                            |
-| 1.0.4.x              | SNMPv2 + SSH: Configurable polling rate and measured interfaces.                                                                                                             | 1.0.2.15     | Possible loss of alarm/trend information. Version range is now Cassandra-compliant.                                                                                                                                                                |
-| 1.0.5.x \[Obsolete\] | Implemented DCF (interfaces).                                                                                                                                                | 1.0.4.1      | Increased load on system.                                                                                                                                                                                                                          |
-| 1.0.6.x              | Display key and table fixes.                                                                                                                                                 | 1.0.5.3      | Possible loss of alarm/trend information for the Queued Interface Stats Table and the Digital Optical Monitoring Table.                                                                                                                            |
-| 1.0.7.x \[Obsolete\] | Bit rate calculations for iftable/ifxtable based on counters. Changed units from bps to Mbps on interface details table. Fixed display key on FC Output Queue stat.          | 1.0.6.3      | Trending affected by units change. The display key change for table FC Output Queue stat may affect DataMiner alarm filters, Automation scripts, Visio drawings, reports and web API.                                                              |
-| 1.0.8.x \[Obsolete\] | Added IF MTU column to Interface Stats table.                                                                                                                                | 1.0.7.2      | Possible loss of alarm/trend information on the Interface Stats table.                                                                                                                                                                             |
-| 1.0.9.x \[SLC Main\] | Added additional SNMP columns to Intermediate Systems Adjacencies (ISIS) table. Fixed issue on Interface Additional Objects table to resolve a conflict between bps and Bps. | 1.0.8.1      | Possible loss of alarm/trend information on the Intermediate Systems Adjacencies table. Filters, scripts, Visio drawings, reports, or API calls that refer to columns in the Interface Additional Objects table (PIDs 8003, 8006) may be affected. |
-| 2.0.0.x              | SNMPv3 + traps + SSH. Bitrate parameter units changed to Mbps.                                                                                                               | 1.0.3.21     |                                                                                                                                                                                                                                                    |
-| 3.0.0.x              | SNMPv3 + traps + SSH.                                                                                                                                                        | 1.0.3.24     | None.                                                                                                                                                                                                                                              |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version (SNMPv2). | - | - |
+| 1.0.1.x [Obsolete] | SNMPv2 + SSH. | 1.0.0.27 | Unknown |
+| 1.0.2.x [Obsolete] | SNMPv2 + SSH: Configurable polling rate and measured interfaces. | 1.0.0.30 | Unknown |
+| 1.0.3.x [Obsolete] | SNMPv3 + traps + SSH. | 1.0.0.30 | Unknown |
+| 1.0.4.x | SNMPv2 + SSH: Configurable polling rate and measured interfaces. | 1.0.2.15 | Possible loss of alarm/trend information. Version range is now Cassandra-compliant. |
+| 1.0.5.x [Obsolete] | Implemented DCF (interfaces). | 1.0.4.1 | Increased load on system. |
+| 1.0.6.x | Display key and table fixes. | 1.0.5.3 | Possible loss of alarm/trend information for the Queued Interface Stats Table and the Digital Optical Monitoring Table. |
+| 1.0.7.x [Obsolete] | Bit rate calculations for iftable/ifxtable based on counters. Changed units from bps to Mbps on interface details table. Fixed display key on FC Output Queue stat. | 1.0.6.3 | Trending affected by units change. The display key change for table FC Output Queue stat may affect DataMiner alarm filters, Automation scripts, Visio drawings, reports and web API. |
+| 1.0.8.x [Obsolete] | Added IF MTU column to Interface Stats table. | 1.0.7.2 | Possible loss of alarm/trend information on the Interface Stats table. |
+| 1.0.9.x [SLC Main] | Added additional SNMP columns to Intermediate Systems Adjacencies (ISIS) table. Fixed issue on Interface Additional Objects table to resolve a conflict between bps and Bps. | 1.0.8.1 | Possible loss of alarm/trend information on the Intermediate Systems Adjacencies table. Filters, scripts, Visio drawings, reports, or API calls that refer to columns in the Interface Additional Objects table (PIDs 8003, 8006) may be affected. |
+| 2.0.0.x | SNMPv3 + traps + SSH. Bitrate parameter units changed to Mbps. | 1.0.3.21 |  |
+| 3.0.0.x | SNMPv3 + traps + SSH. | 1.0.3.24 | None. |
 
 ### Product Info
 
@@ -50,18 +50,18 @@ Some devices have huge tables, so in order to limit polling, polling can be disa
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.2.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.3.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.6.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.7.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.8.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.9.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 3.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
+| 1.0.2.x   | No                  | No                      | -                     | -                       |
+| 1.0.3.x   | No                  | No                      | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.6.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.7.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.8.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.9.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
+| 3.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

@@ -35,9 +35,9 @@ A SNMP connection is used in order to successfully retrieve and configure the de
 
 **SNMP Settings**
 
-- **Port number:** The port of the connected device, by default *161.*
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
+- **Port number**: The port of the connected device, by default *161.*
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ## Usage
 

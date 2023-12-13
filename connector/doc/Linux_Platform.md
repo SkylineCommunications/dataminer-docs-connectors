@@ -12,11 +12,11 @@ With this connector, you can monitor Linux platforms with SSH or with SNMP.
 
 | **Range**            | **Key Features**                                                                                                                                                                | **Based on** | **System Impact**                                                                                                                                                            |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                                                | \-           | \-                                                                                                                                                                           |
-| 1.1.0.x              | Added version compatibility.                                                                                                                                                    | \-           | \-                                                                                                                                                                           |
-| 1.1.1.x              | Added SNMP connection.                                                                                                                                                          | \-           | \-                                                                                                                                                                           |
-| 2.0.0.x \[SLC Main\] | Changed the layout of the connector. The connector can now poll the data using SSH or SNMP. If one of the connections fails, it will use the other connection to poll the data. | \-           | After version 1.1.1.x, the connection type changes from serial to SNMP, which means that existing elements will need to be re-created when you update to the latest version. |
-| 2.0.1.x              | Added CLI Table.                                                                                                                                                                | \-           | CLI Table uses context menu with NuGet.                                                                                                                                      |
+| 1.0.0.x              | Initial version.                                                                                                                                                                | -            | -                                                                                                                                                                            |
+| 1.1.0.x              | Added version compatibility.                                                                                                                                                    | -            | -                                                                                                                                                                            |
+| 1.1.1.x              | Added SNMP connection.                                                                                                                                                          | -            | -                                                                                                                                                                            |
+| 2.0.0.x [SLC Main]   | Changed the layout of the connector. The connector can now poll the data using SSH or SNMP. If one of the connections fails, it will use the other connection to poll the data. | -            | After version 1.1.1.x, the connection type changes from serial to SNMP, which means that existing elements will need to be re-created when you update to the latest version. |
+| 2.0.1.x              | Added CLI Table.                                                                                                                                                                | -            | CLI Table uses context menu with NuGet.                                                                                                                                      |
 
 ### Product Info
 
@@ -32,11 +32,11 @@ With this connector, you can monitor Linux platforms with SSH or with SNMP.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

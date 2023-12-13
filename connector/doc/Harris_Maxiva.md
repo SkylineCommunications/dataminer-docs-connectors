@@ -12,11 +12,11 @@ The **Harris Maxiva** is a transmitter that powers over-the-air delivery across 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                      |
+| Range     | Supported Firmware                                          |
 |-----------|-------------------------------------------------------------|
 | 1.0.0.x   | 04.02.0011 (software version) 861-1161-073 B (software P/N) |
 
@@ -24,7 +24,7 @@ The **Harris Maxiva** is a transmitter that powers over-the-air delivery across 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

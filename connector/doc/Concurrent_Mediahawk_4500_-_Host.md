@@ -20,7 +20,7 @@ This connector is used to monitor **Concurrent Mediahawk 4500** video server dev
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**     |
+| Range     | Device Firmware Version         |
 |------------------|---------------------------------|
 | 1.0.0.x          | Unknown                         |
 | 1.1.0.x          | Unknown                         |

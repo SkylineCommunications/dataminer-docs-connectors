@@ -16,7 +16,7 @@ Each QAM may serve a different application, allowing a single device to concurre
 
 | **Range**     | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                           | No                  | No                      |
+| 1.0.0.x [SLC Main]   | Initial version                           | No                  | No                      |
 | 2.0.0.x              | Customer-specific version for Unity Media | No                  | Yes                     |
 
 ### Product Info
@@ -41,8 +41,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device.
-- **Get community string:** The community string used when reading values from the device, by default *public*.
-- **Set community string:** The community string used when setting values on the device, by default *private*.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage (Range 1.0.0.x)
 

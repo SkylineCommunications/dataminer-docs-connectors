@@ -14,10 +14,10 @@ This connector implements the parameters like in the previous **CEFD CDM-570 Ser
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
-| 1.0.0.x \[obsolete\] | Initial version | \- | \- |
-| 1.0.1.x \[obsolete\] | Added the Bus to the connector | 1.0.0.5 | Communication via Bus enabled. |
-| 1.0.2.x \[obsolete\] | Table FSK now uses naming instead of displayColumn to make the database for this table Cassandra-compliant. | 1.0.0.6 | Old trend data will be lost for this table. |
-| 1.0.3.x \[SLC Main\] | Serial single + Table FSK now uses naming instead of displayColumn to make the database for this table Cassandra-compliant. | 1.0.1.5 | Change type of communication + Old trend data will be lost for this table. |
+| 1.0.0.x [Obsolete]     |Initial version | - | - |
+| 1.0.1.x [Obsolete]     |Added the Bus to the connector | 1.0.0.5 | Communication via Bus enabled. |
+| 1.0.2.x [Obsolete]     |Table FSK now uses naming instead of displayColumn to make the database for this table Cassandra-compliant. | 1.0.0.6 | Old trend data will be lost for this table. |
+| 1.0.3.x [SLC Main]   | Serial single + Table FSK now uses naming instead of displayColumn to make the database for this table Cassandra-compliant. | 1.0.1.5 | Change type of communication + Old trend data will be lost for this table. |
 
 ### Product Info
 
@@ -30,12 +30,12 @@ This connector implements the parameters like in the previous **CEFD CDM-570 Ser
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                            |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                |
 |-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
-| 1.0.1.x   | No                  | No                      | \-                    | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
-| 1.0.2.x   | No                  | Yes                     | \-                    | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
-| 1.0.3.x   | No                  | Yes                     | \-                    | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
+| 1.0.0.x   | No                  | No                      | -                     | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
+| 1.0.1.x   | No                  | No                      | -                     | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
+| 1.0.2.x   | No                  | Yes                     | -                     | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
+| 1.0.3.x   | No                  | Yes                     | -                     | [CEFD CDM-570A Serial (FSK)](xref:Connector_help_CEFD_CDM-570A_Serial_(FSK)) |
 
 ## Configuration
 

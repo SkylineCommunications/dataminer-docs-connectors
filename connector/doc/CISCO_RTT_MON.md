@@ -14,7 +14,7 @@ This connector uses **SNMP** polling to communicate with the device.
 
 | **Range**    | **Description** | **DCF Integration** | **Cassandra Compliant** |
 |---------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x\[SLC Main\] | Initial Version | No                  | False                   |
+| 1.0.0.x[SLC Main]   | Initial Version | No                  | False                   |
 
 ### Product Info
 

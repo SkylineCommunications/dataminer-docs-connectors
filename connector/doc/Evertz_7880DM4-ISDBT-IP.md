@@ -12,11 +12,11 @@ An **SNMP** connection is used in order to successfully retrieve and configure t
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                            | \-           | \-                |
-| 1.0.1.x              | Changed the DVE and tree view distribution. | 1.0.0.3      | \-                |
-| 1.0.2.x \[SLC Main\] | Added HTTP connection.                      | 1.0.1.2      | \-                |
+| Range              | Key Features                                | Based on | System Impact |
+|--------------------|---------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                            | -        | -             |
+| 1.0.1.x            | Changed the DVE and tree view distribution. | 1.0.0.3  | -             |
+| 1.0.2.x [SLC Main] | Added HTTP connection.                      | 1.0.1.2  | -             |
 
 ### Product Info
 
@@ -28,11 +28,11 @@ An **SNMP** connection is used in order to successfully retrieve and configure t
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                          |
-|-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
-| 1.0.2.x   | No                  | Yes                     | \-                    | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
+| 1.0.1.x | No | Yes | - | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
+| 1.0.2.x | No | Yes | - | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
 
 ## Configuration
 

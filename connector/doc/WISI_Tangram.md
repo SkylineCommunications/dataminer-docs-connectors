@@ -20,7 +20,7 @@ This connector will export different connectors based on the retrieved data. A l
 |----------------------|----------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                               | No                  | No                      |
 | 1.0.1.x              | Added support for software version 2.3 (Module GT11).          | No                  | No                      |
-| 1.1.0.x \[SLC Main\] | Added HTTP connection for retrieving QAM outputs and services. | No                  | No                      |
+| 1.1.0.x [SLC Main]   | Added HTTP connection for retrieving QAM outputs and services. | No                  | No                      |
 
 ### Product Info
 
@@ -76,7 +76,7 @@ UDP/IP CONNECTION:
 
 - **Type of port**: The type of port (UDP).
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP Port:** The port of the connected device, by default *514*.
+- **IP port**: The port of the connected device, by default *514*.
 
 #### HTTP HTTP Connection Connection
 

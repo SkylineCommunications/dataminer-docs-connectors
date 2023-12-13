@@ -20,11 +20,11 @@ Further information can be found on the following website: <http://www.comtechef
 | 1.1.0.x              | Firmware change.                                                   | No                  | Yes                     |
 | 1.1.1.x              | Fixes requested by customer.                                       | No                  | Yes                     |
 | 1.2.0.x              | New MIB and new design document provided by customer.              | No                  | Yes                     |
-| 1.2.1.x \[SLC Main\] | New document provided by customer. Required removal of parameters. | No                  | Yes                     |
+| 1.2.1.x [SLC Main]   | New document provided by customer. Required removal of parameters. | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                     |
+| Range     | Device Firmware Version                                         |
 |------------------|-----------------------------------------------------------------|
 | 1.0.0.x          | Firmware: 6.3.0aD-201512032235E4-3.10.62-FX30 EN MIB: Rev 6.2.3 |
 | 1.1.0.x          | Firmware updated. taken from 1.0.0.3 MIB: REV 7.1               |

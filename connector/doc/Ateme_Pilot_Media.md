@@ -12,9 +12,9 @@ It uses schedule-aware prioritization of workflows to ensure service-level requi
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                   | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Regular updates for assets, recordings, and recorders. - Updates on request for asset metadata. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Regular updates for assets, recordings, and recorders. <br>- Updates on request for asset metadata. | - | - |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ It uses schedule-aware prioritization of workflows to ensure service-level requi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

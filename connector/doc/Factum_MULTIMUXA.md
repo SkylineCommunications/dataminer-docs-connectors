@@ -12,19 +12,19 @@ Factum MULTIMUXA is an encoding, multiplexing, and management system for digital
 
 | **Range**            | **Key Features**                                                   | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version: Controller, Encoder, Data Server and Multiplexer. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version: Controller, Encoder, Data Server and Multiplexer. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

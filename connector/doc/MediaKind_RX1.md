@@ -14,8 +14,8 @@ The MediaKind RX1 connector focuses on monitoring the configuration found in the
 
 | **Range**            | **Key Features**                                          | **Based on** | **System Impact**                                                       |
 |----------------------|-----------------------------------------------------------|--------------|-------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version (monitoring of configuration parameters). | \-           | \-                                                                      |
-| 1.0.1.x \[SLC Main\] | Configurable display key on Active Alarms.                | 1.0.0.3      | May affect visual overviews, Automation scripts, trending, alarms, etc. |
+| 1.0.0.x              | Initial version (monitoring of configuration parameters). | -            | -                                                                       |
+| 1.0.1.x [SLC Main]   | Configurable display key on Active Alarms.                | 1.0.0.3      | May affect visual overviews, Automation scripts, trending, alarms, etc. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The MediaKind RX1 connector focuses on monitoring the configuration found in the
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

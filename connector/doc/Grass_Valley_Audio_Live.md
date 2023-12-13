@@ -12,7 +12,7 @@ Audio Live is a multi-channel audio routing and processing solution for the IP d
 
 | **Range**            | **Key Features**                                          | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Audio channel shuffling Audio channel delay configuration | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Audio channel shuffling Audio channel delay configuration | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ Audio Live is a multi-channel audio routing and processing solution for the IP d
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

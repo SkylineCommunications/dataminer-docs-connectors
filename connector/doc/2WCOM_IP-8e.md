@@ -10,10 +10,10 @@ The 2WCOM IP-8e is a point-to-point or point-to-multipoint audio encoder using I
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                        | **Based on** | **System Impact**                                                                                                               |
-|----------------------|-----------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                                                        | \-           | \-                                                                                                                              |
-| 1.0.1.x              | \- DataMiner Connectivity Framework (DCF) integration added. - Redundant polling added. | 1.0.0.1      | \- DCF can cause an additional load on the system. - Existing elements need to be reconfigured to use the redundant connection. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version. | - | - |
+| 1.0.1.x | - DataMiner Connectivity Framework (DCF) integration added. <br>- Redundant polling added. | 1.0.0.1 | - DCF can cause an additional load on the system. <br>- Existing elements need to be reconfigured to use the redundant connection. |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ The 2WCOM IP-8e is a point-to-point or point-to-multipoint audio encoder using I
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

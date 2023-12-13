@@ -37,8 +37,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device.
-- **Get community string:** The community string used when reading values from the device.
-- **Set community string:** The community string used when setting values on the device
+- **Get community string**: The community string used when reading values from the device.
+- **Set community string**: The community string used when setting values on the device
 
 ## Usage
 

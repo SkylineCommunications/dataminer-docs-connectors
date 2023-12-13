@@ -14,11 +14,11 @@ An HTTP connection is used to retrieve information from and send information to 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**        |
+| Range     | Supported Firmware            |
 |-----------|-------------------------------|
 | 1.0.0.x   | SurveyorTS-1.03.00.313-121918 |
 
@@ -26,7 +26,7 @@ An HTTP connection is used to retrieve information from and send information to 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

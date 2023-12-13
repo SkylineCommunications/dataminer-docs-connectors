@@ -14,7 +14,7 @@ This connector displays the available chassis information. It uses an SNMP and H
 
 | **Range**            | **Key Features**                      | **Based on** | **System Impact** |
 |----------------------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | SNMPv2 connection HTTP API connection | \-           | \-                |
+| 1.0.0.x [SLC Main]   | SNMPv2 connection HTTP API connection | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector displays the available chassis information. It uses an SNMP and H
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

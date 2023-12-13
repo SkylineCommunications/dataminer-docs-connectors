@@ -10,17 +10,17 @@ The SES S.A. SSG Report connector gathers data from selected elements in a DMS a
 
 ### Version Info
 
-| **Range**            | **Key Features**                                           | **Based on** | **System Impact**         |
-|----------------------|------------------------------------------------------------|--------------|---------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                           | \-           | \-                        |
-| 1.0.1.x \[SLC Main\] | Added option to include/exclude parameters in/from report. | 1.0.0.1      | Requires new SSG reports. |
+| Range              | Key Features                                               | Based on | System Impact             |
+|--------------------|------------------------------------------------------------|----------|---------------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                           | -        | -                         |
+| 1.0.1.x [SLC Main] | Added option to include/exclude parameters in/from report. | 1.0.0.1  | Requires new SSG reports. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

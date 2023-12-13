@@ -10,13 +10,13 @@ The VLINK Virtual Matrix is a non-blocking, all-software multi-channel/multi-acc
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | Server version 6.2.5-52 |
 
@@ -24,7 +24,7 @@ The VLINK Virtual Matrix is a non-blocking, all-software multi-channel/multi-acc
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

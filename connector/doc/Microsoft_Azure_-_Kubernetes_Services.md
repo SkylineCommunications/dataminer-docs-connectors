@@ -12,19 +12,19 @@ Azure Kubernetes Service (AKS) is a managed container orchestration service, bas
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**      |
+| Range     | Supported Firmware          |
 |-----------|-----------------------------|
 | 1.0.0.x   | REST-API version 2018-01-01 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                   | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                       | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Microsoft Azure Cloud Platform](xref:Connector_help_Microsoft_Azure) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Microsoft Azure Cloud Platform](xref:Connector_help_Microsoft_Azure) | -                       |
 
 ## Configuration
 

@@ -14,8 +14,8 @@ A smart-serial single protocol is used, so that connections from different eleme
 
 | **Range**            | **Key Features**             | **Based on** | **System Impact** |
 |----------------------|------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version              | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | Initial smart-serial version | \-           | \-                |
+| 1.0.0.x              | Initial version              | -            | -                 |
+| 2.0.0.x [SLC Main]   | Initial smart-serial version | -            | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ A smart-serial single protocol is used, so that connections from different eleme
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -10,10 +10,10 @@ This connector is designed to poll a database containing channel information, an
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                              | **Based on** | **System Impact**                                                                                                                                                                                                                                                                   |
-|----------------------|-------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Generates/updates a DataMiner service with the retrieved channel information. | \-           | \-                                                                                                                                                                                                                                                                                  |
-| 1.0.1.x \[SLC Main\] | DataMiner services generation updated. Error table messages improved.         | 1.0.0.1      | \- Exception value on column (param 1011) was updated. Column was changed from string to int (param 1004), and low range was added. - Parameters 102/152, 103/153, 110/160 were moved to a subpage. - Page button parameter name got renumbered and renamed (parameter 153 -\> 50). |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Generates/updates a DataMiner service with the retrieved channel information. | - | - |
+| 1.0.1.x [SLC Main] | DataMiner services generation updated. Error table messages improved. | 1.0.0.1 | - Exception value on column (param 1011) was updated. Column was changed from string to int (param 1004), and low range was added. <br>- Parameters 102/152, 103/153, 110/160 were moved to a subpage. <br>- Page button parameter name got renumbered and renamed (parameter 153 -\> 50). |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector is designed to poll a database containing channel information, an
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,8 +12,8 @@ Similar to the **Sencore OmniHub 6-16**, the **OmniHub OHP6-EAS** polls data fro
 
 | **Range**            | **Key Features**                                          | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                          | \-           | \-                |
-| 1.1.0.x              | Changed from "SNMP" connection type to "HTTP" connection. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version.                                          | -            | -                 |
+| 1.1.0.x              | Changed from "SNMP" connection type to "HTTP" connection. | -            | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ Similar to the **Sencore OmniHub 6-16**, the **OmniHub OHP6-EAS** polls data fro
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

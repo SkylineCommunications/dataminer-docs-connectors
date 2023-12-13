@@ -8,9 +8,9 @@ Ensemble Designs Avenue 9455 monitors an Ensemble Frame, which contains only car
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -20,9 +20,9 @@ Ensemble Designs Avenue 9455 monitors an Ensemble Frame, which contains only car
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                  |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                      |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Ensemble Designs Avenue 9455 - Slot](xref:Connector_help_Ensemble_Designs_Avenue_9455_-_Slot) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [Ensemble Designs Avenue 9455 - Slot](xref:Connector_help_Ensemble_Designs_Avenue_9455_-_Slot) |
 
 ## Configuration
 

@@ -123,7 +123,7 @@ This connector uses a GPIB connection. Before starting element creation, you sho
 
 GPIB connection:
 
-- **Device Address:** This is the address you had to note down when the Visa Network creation process ended. It was displayed at the end of the wizard. The parameter inside NiMax is called **VISA Resource Name**.
+- **Device address**: This is the address you had to note down when the Visa Network creation process ended. It was displayed at the end of the wizard. The parameter inside NiMax is called **VISA Resource Name**.
 - **I/O API**: The I/O API to use for the GPIB connection. For better compatibility with the previous configuration, please select VISA.
 
 ## Usage

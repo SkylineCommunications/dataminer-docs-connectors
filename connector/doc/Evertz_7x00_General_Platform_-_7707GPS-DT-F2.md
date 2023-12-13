@@ -12,7 +12,7 @@ The 7707-GPS-DT-F2 is a low-latency, fully hot-swappable GPS card. This connecto
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ## Configuration
 

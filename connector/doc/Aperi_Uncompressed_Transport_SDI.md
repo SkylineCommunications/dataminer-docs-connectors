@@ -38,7 +38,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device.
-- **Bus Address:** The bus address used to access the desired card. Default: *BypassProxy*. If this is not properly set, no information is obtained.
+- **Bus address**: The bus address used to access the desired card. Default: *BypassProxy*. If this is not properly set, no information is obtained.
 
 ## Usage
 

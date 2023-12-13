@@ -12,7 +12,7 @@ The AC3000 is a broadband amplifier from Teleste.
 
 | **Range** | **Device Revision** |
 |------------------|---------------------|
-| 1.0.1.x          | \-                  |
+| 1.0.1.x          | -                   |
 
 ## Configuration
 

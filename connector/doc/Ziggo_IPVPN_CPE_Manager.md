@@ -16,10 +16,10 @@ As this is a virtual connector, no data traffic will be displayed in the Stream 
 
 ### Version Info
 
-| **Range**     | **Description**                                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                               | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Primary and Secondary BGP Peer parameters are now called BGP Neighbor 1 and 2. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | No | Yes |
+| 1.0.1.x [SLC Main] | Primary and Secondary BGP Peer parameters are now called BGP Neighbor 1 and 2. | No | Yes |
 
 ## Installation and configuration
 

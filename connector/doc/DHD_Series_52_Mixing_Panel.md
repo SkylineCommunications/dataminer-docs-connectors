@@ -12,19 +12,19 @@ This connector uses a serial connection to get the current audio routing configu
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                                   |
+| Range                | Key Features     | Based On     | System Impact                                                       |
 |----------------------|------------------|--------------|---------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version. | \-           | \-                                                                  |
-| 1.0.1.x \[Obsolete\] | New branch.      | 1.0.0.1      | Different layout; changed DK to I/O labels.                         |
-| 1.0.2.x \[Main\]     | New branch.      | \-           | Different layout; changed I/O tables PK. Matrix and router control. |
-| 2.0.0.x              | HTTP version.    | \-           | Different layout; different connection type.                        |
+| 1.0.0.x [Obsolete]     |Initial version. | -            | -                                                                   |
+| 1.0.1.x [Obsolete]     |New branch.      | 1.0.0.1      | Different layout; changed DK to I/O labels.                         |
+| 1.0.2.x \[Main\]     | New branch.      | -            | Different layout; changed I/O tables PK. Matrix and router control. |
+| 2.0.0.x              | HTTP version.    | -            | Different layout; different connection type.                        |
 
 ### Product Info
 
 | **Range**            | **Supported Firmware**                        |
 |----------------------|-----------------------------------------------|
-| 1.0.0.x \[Obsolete\] | 7.4.35.1                                      |
-| 1.0.1.x \[Obsolete\] | 7.4.35.1                                      |
+| 1.0.0.x [Obsolete]     |7.4.35.1                                      |
+| 1.0.1.x [Obsolete]     |7.4.35.1                                      |
 | 1.0.2.x \[Main\]     | 7.4.35.1                                      |
 | 2.0.0.x              | DHD Series51 imx6 Version : 1.1.9.0 - 01/2019 |
 
@@ -32,10 +32,10 @@ This connector uses a serial connection to get the current audio routing configu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

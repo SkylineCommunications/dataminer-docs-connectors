@@ -43,9 +43,9 @@ The Axon RRSX protocol can be used for different Axon cards. However, since the 
 
 **SNMP Settings:**
 
-- **Port Number:** The port of the connection device (default: *161*).
-- **Get community string:** The community string needed to read from the device. The default value is *public.*
-- **Set community string:** The community string needed to set to the device. The default value is *public*.
+- **Port number**: The port of the connection device (default: *161*).
+- **Get community string**: The community string needed to read from the device. The default value is *public.*
+- **Set community string**: The community string needed to set to the device. The default value is *public*.
 
 ## Usage
 

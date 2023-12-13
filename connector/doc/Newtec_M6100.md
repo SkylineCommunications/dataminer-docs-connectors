@@ -14,16 +14,16 @@ The transport stream analyzer makes it possible to monitor the incoming transpor
 
 | **Range**            | **Description**                                                     | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                     | \-           | \-                |
-| 1.0.1.x              | New range for Cassandra compliancy, changed displayColumn to naming | \-           | \-                |
-| 1.1.0.x              | New firmware                                                        | \-           | \-                |
-| 1.1.1.x \[SLC Main\] | Removed single parameter alarms.                                    | \-           | \-                |
+| 1.0.0.x              | Initial version                                                     | -            | -                 |
+| 1.0.1.x              | New range for Cassandra compliancy, changed displayColumn to naming | -            | -                 |
+| 1.1.0.x              | New firmware                                                        | -            | -                 |
+| 1.1.1.x [SLC Main]   | Removed single parameter alarms.                                    | -            | -                 |
 
 ### Product Info
 
 | **Range**       | **Supported Firmware** |
 |-----------------|------------------------|
-| 1.0.0.x 1.0.1.x | \-                     |
+| 1.0.0.x 1.0.1.x | -                      |
 | 1.1.0.x         | 2.5.3                  |
 | 1.1.1.x         | 2.5.3                  |
 
@@ -31,10 +31,10 @@ The transport stream analyzer makes it possible to monitor the incoming transpor
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | No                      | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | Yes                 | No                      | \-                    | \-                      |
-| 1.1.1.x   | Yes                 | No                      | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | No                      | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | No                      | -                     | -                       |
+| 1.1.1.x   | Yes                 | No                      | -                     | -                       |
 
 ## Configuration
 

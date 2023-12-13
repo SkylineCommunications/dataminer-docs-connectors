@@ -21,7 +21,7 @@ As an extra check to monitor the correct operation of the entire ticketing flow,
 
 | **Range**            | **Key Features**    | **Based on** | **System Impact** |
 |----------------------|---------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Monitor and control | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Monitor and control | -            | -                 |
 
 ### Product Info
 
@@ -33,7 +33,7 @@ As an extra check to monitor the correct operation of the entire ticketing flow,
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

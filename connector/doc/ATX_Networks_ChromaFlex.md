@@ -16,7 +16,7 @@ The application modules include the high-performance Chromadigm DWDM transmitter
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,9 +26,9 @@ The application modules include the high-performance Chromadigm DWDM transmitter
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                        |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \- ATX Networks ChromaFlex - DMTx <br>- ATX Networks ChromaFlex - QRRX |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - ATX Networks ChromaFlex - DMTx <br>- ATX Networks ChromaFlex - QRRX |
 
 ## Configuration
 

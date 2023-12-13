@@ -18,9 +18,9 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION:**
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13.*
-- **IP port:** The IP port of the device, 4757.
-- **Bus address:** The bus address of the device, not required.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP port**: The IP port of the device, 4757.
+- **Bus address**: The bus address of the device, not required.
 
 ## Usage
 

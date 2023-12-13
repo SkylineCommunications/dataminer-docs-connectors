@@ -12,7 +12,7 @@ uid: Connector_help_Dell_EMC_Unity
 
 | **Range**            | **Key Features**                           | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. Only includes monitoring. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. Only includes monitoring. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ uid: Connector_help_Dell_EMC_Unity
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
