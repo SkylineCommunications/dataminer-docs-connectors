@@ -20,21 +20,21 @@ The **modem outage check** consists of the following steps:
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version \[SLC Main\] | \-           | \-                |
+| 1.0.0.x   | Initial version [SLC Main]   | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

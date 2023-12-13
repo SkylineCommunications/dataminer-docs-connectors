@@ -12,9 +12,9 @@ This connector allows quick monitoring of the operation states of the device's c
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                     | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version: - Monitoring front panel information - Configuring switch positions | \-           | \-                |
+| Range              | Key Features                                                                                 | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version: <br>- Monitoring front panel information <br>- Configuring switch positions | -        | -             |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector allows quick monitoring of the operation states of the device's c
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

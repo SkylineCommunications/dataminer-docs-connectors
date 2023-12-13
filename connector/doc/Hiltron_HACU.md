@@ -10,27 +10,27 @@ The Hiltron HACU is a complete high-precision motorized satellite antenna contro
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                             | **Based on** | **System Impact**                                               |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                                                                                              | \-           | \-                                                              |
-| 1.0.1.x              | Connector review: spelling corrections, discrete updates, etc.                                                                                                                               | \-           | \-                                                              |
-| 1.0.2.x \[SLC Main\] | \- Added Power Supply Table and renamed existing table to "Heater Power Supply". - Improved reset functionality (reset alarms is now similar to the web interface) and improved positioning. | \-           | \- Change to parameter name and descriptions. - Layout changes. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | Connector review: spelling corrections, discrete updates, etc. | - | - |
+| 1.0.2.x [SLC Main] | - Added Power Supply Table and renamed existing table to "Heater Power Supply". <br>- Improved reset functionality (reset alarms is now similar to the web interface) and improved positioning. | - | - Change to parameter name and descriptions. <br>- Layout changes. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -42,7 +42,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
 
 SNMP Settings:
 

@@ -12,15 +12,15 @@ The connector can perform multiple ping requests at once. The IP addresses/hostn
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 3.1.2.x \[SLC Main\] | Based on 3.1.1.12. Jitter features of the Ping Table have been reworked to provide more accurate and detailed information and allow for a more intuitive user experience.                        | Yes                 | Yes                     |
-| 3.1.1.x \[Obsolete\] | Based on 3.1.0.19. Ping Table now uses naming instead of displayColumn to make the database for this table Cassandra-compliant. **Old trend data will be lost for this table.**                  | Yes                 | Yes                     |
-| 4.0.0.X \[Obsolete\] | Based on 3.1.0.18. Temporary removal of heatmaps.                                                                                                                                                | Yes                 | No                      |
-| 3.1.0.X \[Obsolete\] | Based on 2.1.0.8. Almost fully redeveloped: Dynamic tables and multi-threaded timers. Impact of going to this range from 2.x.x.x: Loss of all trend data, reconfigure all templates, Visio, etc. | Yes                 | No                      |
-| 2.1.0.X \[Obsolete\] | Based on 2.0.0.1. Static tables and no multithreading.                                                                                                                                           | No                  | No                      |
-| 2.0.0.X \[Obsolete\] | New development. Static tables, initial version (2).                                                                                                                                             | No                  | No                      |
-| 1.0.0.X \[Obsolete\] | Static tables, initial version.                                                                                                                                                                  | No                  | No                      |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 3.1.2.x [SLC Main] | Based on 3.1.1.12. Jitter features of the Ping Table have been reworked to provide more accurate and detailed information and allow for a more intuitive user experience. | Yes | Yes |
+| 3.1.1.x [Obsolete] | Based on 3.1.0.19. Ping Table now uses naming instead of displayColumn to make the database for this table Cassandra-compliant. **Old trend data will be lost for this table.** | Yes | Yes |
+| 4.0.0.X [Obsolete] | Based on 3.1.0.18. Temporary removal of heatmaps. | Yes | No |
+| 3.1.0.X [Obsolete] | Based on 2.1.0.8. Almost fully redeveloped: Dynamic tables and multi-threaded timers. Impact of going to this range from 2.x.x.x: Loss of all trend data, reconfigure all templates, Visio, etc. | Yes | No |
+| 2.1.0.X [Obsolete] | Based on 2.0.0.1. Static tables and no multithreading. | No | No |
+| 2.0.0.X [Obsolete] | New development. Static tables, initial version (2). | No | No |
+| 1.0.0.X [Obsolete] | Static tables, initial version. | No | No |
 
 ## Installation and configuration
 

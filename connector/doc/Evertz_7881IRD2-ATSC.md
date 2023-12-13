@@ -12,19 +12,19 @@ This connector allows you to manage the Evertz 7881IRD2-ATSC card. It communicat
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -38,7 +38,7 @@ SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination, by default *161*.
-- **Device Address:** The slot number of the card in the frame.
+- **Device address**: The slot number of the card in the frame.
 
 SNMP Settings:
 

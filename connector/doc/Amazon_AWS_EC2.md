@@ -14,12 +14,12 @@ Amazon EC2's simple web service allows you to easily obtain and configure capaci
 
 | **Range**            | **Key Features**                         | **Based on** | **System Impact**        |
 |----------------------|------------------------------------------|--------------|--------------------------|
-| 1.0.0.x              | Initial version.                         | \-           | \-                       |
-| 1.0.1.x \[SLC Main\] | Support for starting/stopping instances. | 1.0.0.3      | Removed HTTP connection. |
+| 1.0.0.x              | Initial version.                         | -            | -                        |
+| 1.0.1.x [SLC Main]   | Support for starting/stopping instances. | 1.0.0.3      | Removed HTTP connection. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                 |
+| Range     | Supported Firmware                     |
 |-----------|----------------------------------------|
 | 1.0.0.x   | AWS Service - Production service 2021. |
 | 1.0.1.x   | AWSSDK.EC2 3.7.113.5                   |
@@ -28,8 +28,8 @@ Amazon EC2's simple web service allows you to easily obtain and configure capaci
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

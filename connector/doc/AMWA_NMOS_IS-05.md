@@ -14,19 +14,19 @@ IS-05 is intended to be used in conjunction with an IS-04 NMOS Discovery & Regis
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

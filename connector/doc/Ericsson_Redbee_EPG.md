@@ -19,7 +19,7 @@ To construct the program guide, the information is extracted from XML files that
 | **Range**     | **Description**                            | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                            | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Recreation of element Impact: loss of data | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Recreation of element Impact: loss of data | No                  | Yes                     |
 
 ## 2. Installation and Configuration
 

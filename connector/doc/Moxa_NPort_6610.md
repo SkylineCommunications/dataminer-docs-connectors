@@ -14,11 +14,11 @@ This connector is intended to get and set information in the device via an eleme
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                     | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[obsolete\] | SNMPv1 support only.                                                 | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Removed time synchronization functionality.                          | \-           | \-                |
-| 2.0.0.x              | Branched from 1.0.0.x: customer-specific branch for NetVue Solution. | 1.0.0.x      | \-                |
+| Range              | Key Features                                                         | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | SNMPv1 support only.                                                 | -        | -             |
+| 1.0.1.x [SLC Main] | Removed time synchronization functionality.                          | -        | -             |
+| 2.0.0.x            | Branched from 1.0.0.x: customer-specific branch for NetVue Solution. | 1.0.0.x  | -             |
 
 ### Product Info
 
@@ -32,9 +32,9 @@ This connector is intended to get and set information in the device via an eleme
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

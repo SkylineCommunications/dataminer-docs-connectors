@@ -14,8 +14,8 @@ For all the equipment, KPIs are retrieved such as the device state, model, firmw
 
 | **Range**            | **Key Features**         | **Based On** | **System Impact**                                                                            |
 |----------------------|--------------------------|--------------|----------------------------------------------------------------------------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.         | \-           | Minimum required DataMiner version is **10.0.13.0 - 9857** due to internal licenses feature. |
-| 1.0.1.x              | Compatible with IDP 1.2. | 1.0.0.1      | \-                                                                                           |
+| 1.0.0.x [SLC Main]   | Initial version.         | -            | Minimum required DataMiner version is **10.0.13.0 - 9857** due to internal licenses feature. |
+| 1.0.1.x              | Compatible with IDP 1.2. | 1.0.0.1      | -                                                                                            |
 
 ### System Info
 

@@ -10,9 +10,9 @@ uid: Connector_help_BGC_Live_Ads
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ uid: Connector_help_BGC_Live_Ads
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

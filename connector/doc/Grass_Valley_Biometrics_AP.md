@@ -10,24 +10,24 @@ The Grass Valley Biometrics AP is part of GV's Media Assurance platform, using M
 
 ### Version Info
 
-| **Range**            | **Key Features**                    | **Based on** | **System Impact**                                                                                                                                                                                                                                  |
-|----------------------|-------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                     | \-           | \-                                                                                                                                                                                                                                                 |
-| 1.0.1.x \[SLC Main\] | Long string commands are supported. | 1.0.0.2      | The parameters are polled via one single command definition, which is initialized by a QAction. The other redundant command definitions and their building blocks (parameters) are removed. The data parameters of each connector page are untouched. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.1.x [SLC Main] | Long string commands are supported. | 1.0.0.2 | The parameters are polled via one single command definition, which is initialized by a QAction. The other redundant command definitions and their building blocks (parameters) are removed. The data parameters of each connector page are untouched. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                |
+| Range     | Supported Firmware                                                                    |
 |-----------|---------------------------------------------------------------------------------------|
 | 1.0.0.x   | 2.9.2.r1.588                                                                          |
-| 1.0.1.x   | 2.9.2.r1.588 Please note that the device must be able to provide the service LongStr. |
+| 1.0.1.x   | 2.9.2.r1.588 <br>Please note that the device must be able to provide the service LongStr. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,7 +12,7 @@ The Fortinet FortiManager protocol can be used to monitor the different devices 
 
 | **Range** | **Key Features**                                        | **Based on** | **System Impact** |
 |-----------|---------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version FORTINET-FORTIMANAGER-FORTIANALYZER-MIB | \-           | \-                |
+| 1.0.0.x   | Initial version FORTINET-FORTIMANAGER-FORTIANALYZER-MIB | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Fortinet FortiManager protocol can be used to monitor the different devices 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

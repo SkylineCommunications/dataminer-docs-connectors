@@ -13,7 +13,7 @@ This exported connector displays a PTP interface.
 | **Range**            | **Supported Firmware** |
 |----------------------|------------------------|
 | 1.0.1.x              | 3.0                    |
-| 1.0.2.x \[SLC Main\] | 3.0                    |
+| 1.0.2.x [SLC Main]   | 3.0                    |
 
 ## Configuration
 

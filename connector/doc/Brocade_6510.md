@@ -14,7 +14,7 @@ TheBrocade 6510 connector enables Skyline Communication DataMiner to communicate
 
 | **Range**     | **Description**                                               | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|---------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x \[SLC Main\] | Full connector review in order to comply with Skyline standards. | No                  | True                    |
+| 1.0.1.x [SLC Main]   | Full connector review in order to comply with Skyline standards. | No                  | True                    |
 
 ### Product Info
 
@@ -38,7 +38,7 @@ SNMP Settings:
 
 - **IP port**: The IP port of the device.
 - **Get Community String**: Provides read access to the device. default: public
-- **Set Community String:** Provides write access to the device. default: private
+- **Set community string**: Provides write access to the device. default: private
 
 ## Usage
 

@@ -12,11 +12,11 @@ DirectOut Prodigy is a connector that monitors **Prodigy.MC** (Modular Audio Con
 
 | **Range**            | **Key Features**                                    | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. Includes all available monitoring. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. Includes all available monitoring. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                            |
+| Range     | Supported Firmware                                |
 |-----------|---------------------------------------------------|
 | 1.0.0.x   | PRODIGY.MC, release version v2.3.5, rev. 98f99fb+ |
 
@@ -24,7 +24,7 @@ DirectOut Prodigy is a connector that monitors **Prodigy.MC** (Modular Audio Con
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

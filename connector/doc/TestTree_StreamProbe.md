@@ -12,7 +12,7 @@ The **TestTree StreamProbe** is an **MPEG-2 Monitoring** device. It is used to m
 
 | **Range**            | **Key Features**                                                        | **Based on**                       | **System Impact** |
 |----------------------|-------------------------------------------------------------------------|------------------------------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version **Automatic Removal Delay** - \[see Usage -\> General\] | 1.0.0.24 (AJIMI TSAFT Live driver) | \-                |
+| 1.0.0.x [SLC Main]   | Initial version **Automatic Removal Delay** - \[see Usage -\> General\] | 1.0.0.24 (AJIMI TSAFT Live driver) | -                 |
 
 ### Product Info
 

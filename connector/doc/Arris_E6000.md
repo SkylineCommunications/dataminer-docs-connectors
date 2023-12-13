@@ -18,7 +18,7 @@ Range **2.0.1.x** of the connector only uses one SNMPv3 connection to monitor th
 
 | **Range**            | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                 | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version.                 | No                  | Yes                     |
 | 2.0.0.x              | Supports a new firmware version. | No                  | Yes                     |
 | 2.0.1.x              | Based on 2.0.0.3. Uses SNMPv3.   | No                  | Yes                     |
 | 3.0.0.x              | Customer-specific version.       | No                  | Yes                     |

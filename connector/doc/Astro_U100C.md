@@ -36,9 +36,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The IP address of the Astro U100 Controller.
-- **IP port:** The port of the destination, by default *80*.
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy.* This is enabled by default.
+- **IP address/host**: The IP address of the Astro U100 Controller.
+- **IP port**: The port of the destination, by default *80*.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.* This is enabled by default.
 
 #### SNMP Trap Connection
 

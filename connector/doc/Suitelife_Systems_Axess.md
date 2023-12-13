@@ -12,21 +12,21 @@ The Suitelife Systems Axess connector polls status and analog tables from the Ax
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial connector   | \-           | \-                |
+| 1.0.0.x   | Initial connector   | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

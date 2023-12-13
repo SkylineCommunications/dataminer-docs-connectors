@@ -15,7 +15,7 @@ The information on tables and parameters is retrieved via **HTTP** communication
 | **Range**     | **Description**                | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.               | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Streamlined all Aperi connectors. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Streamlined all Aperi connectors. | No                  | Yes                     |
 
 ### Product Info
 

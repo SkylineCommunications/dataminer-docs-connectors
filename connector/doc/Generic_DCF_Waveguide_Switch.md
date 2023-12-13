@@ -136,13 +136,13 @@ Multiple ranges of the connector exist in parallel to support the different posi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.3.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.4.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.5.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.6.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.2.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.3.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.4.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.5.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.6.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

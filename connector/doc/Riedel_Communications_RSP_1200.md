@@ -12,12 +12,12 @@ This connector is used to communicate with an RSP 1200 smart panel. This panel h
 
 | **Range**            | **Key Features**                            | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                             | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | Fixed API. Integration with software panel. | 1.0.0.1      | \-                |
+| 1.0.0.x              | Initial version                             | -            | -                 |
+| 2.0.0.x [SLC Main]   | Fixed API. Integration with software panel. | 1.0.0.1      | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**            |
+| Range     | Supported Firmware                |
 |-----------|-----------------------------------|
 | 1.0.0.x   | Node API v1.3 Connection API v1.1 |
 | 2.0.0.x   | API v1.3                          |
@@ -26,8 +26,8 @@ This connector is used to communicate with an RSP 1200 smart panel. This panel h
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.X   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.X   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

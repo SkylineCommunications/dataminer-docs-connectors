@@ -10,36 +10,36 @@ The Convergent is a video router device that controls video input and output mat
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                             | **Based on**                 | **System Impact**                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                                                             | Miranda Nvision 9000 1.0.3.3 | \-                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| 1.0.1.x              | \- Device tables no longer showing wrong data. - Device matrix added. - Crosspoint update subscriptions.                                                                                     | 1.0.0.1                      | Existing elements will need to be recreated.                                                                                                                                                                                                                                                                                                                                                                                      |
-| 1.0.2.x              | \- DCF implemented.                                                                                                                                                                          | 1.0.1.7                      | DCF impact.                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| 1.0.3.x              | \- Matrix UI removed from element. - Matrix maximum size increased to 10000x10000. - Option to select special "ALL" level that shows aggregated view of all crosspoints across all levels.   |                              | None.                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| 1.0.4.x              | The primary key of the tables Device Sources (PID 3400) and Device Destinations (PID 3500) is now the ID of the Convergent device (External ID).                                             | 1.0.3.4                      | Loss of data: Changing the primary key of a table has a large impact, as all saved data references to the primary key will be lost. This includes element data (i.e. all columns that were saved) and alarm/trend data, since all these records refer to the primary key. Any components that rely on a specific primary key will also need to be adjusted. These could be dashboards, Automation scripts, visual overviews, etc. |
-| 1.0.5.x \[SLC Main\] | The connector no longer relies on DataMiner to establish the HTTP connection towards the device. Instead, the device sets up its own connection in order to speed up the communication flow. | 1.0.4.5                      | Existing elements will need to be recreated.                                                                                                                                                                                                                                                                                                                                                                                      |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | Miranda Nvision 9000 1.0.3.3 | - |
+| 1.0.1.x | - Device tables no longer showing wrong data. <br>- Device matrix added. <br>- Crosspoint update subscriptions. | 1.0.0.1 | Existing elements will need to be recreated. |
+| 1.0.2.x | - DCF implemented. | 1.0.1.7 | DCF impact. |
+| 1.0.3.x | - Matrix UI removed from element. <br>- Matrix maximum size increased to 10000x10000. <br>- Option to select special "ALL" level that shows aggregated view of all crosspoints across all levels. |  | None. |
+| 1.0.4.x | The primary key of the tables Device Sources (PID 3400) and Device Destinations (PID 3500) is now the ID of the Convergent device (External ID). | 1.0.3.4 | Loss of data: Changing the primary key of a table has a large impact, as all saved data references to the primary key will be lost. This includes element data (i.e. all columns that were saved) and alarm/trend data, since all these records refer to the primary key. Any components that rely on a specific primary key will also need to be adjusted. These could be dashboards, Automation scripts, visual overviews, etc. |
+| 1.0.5.x [SLC Main] | The connector no longer relies on DataMiner to establish the HTTP connection towards the device. Instead, the device sets up its own connection in order to speed up the communication flow. | 1.0.4.5 | Existing elements will need to be recreated. |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
-| 1.0.5.x   | \-                     |
+| Range     | Supported Firmware    |
+|-----------|-----------------------|
+| 1.0.0.x   | -                     |
+| 1.0.1.x   | -                     |
+| 1.0.2.x   | -                     |
+| 1.0.3.x   | -                     |
+| 1.0.4.x   | -                     |
+| 1.0.5.x   | -                     |
 
 ### System Info
 
-| **Range** | **Minimum DataMiner Version** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components** |
-|-----------|-------------------------------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | 10.0.0.5                      | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | 10.0.0.5                      | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | 10.0.0.5                      | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | 10.0.0.5                      | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | 10.0.0.5                      | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | 10.2.10.0                     | Yes                 | Yes                     | \-                    | \-                      |
+| Range   | Minimum DataMiner Version | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|---------------------------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | 10.0.0.5                  | No              | Yes                 | -                 | -                   |
+| 1.0.1.x | 10.0.0.5                  | No              | Yes                 | -                 | -                   |
+| 1.0.2.x | 10.0.0.5                  | Yes             | Yes                 | -                 | -                   |
+| 1.0.3.x | 10.0.0.5                  | Yes             | Yes                 | -                 | -                   |
+| 1.0.4.x | 10.0.0.5                  | Yes             | Yes                 | -                 | -                   |
+| 1.0.5.x | 10.2.10.0                 | Yes             | Yes                 | -                 | -                   |
 
 ## Configuration
 

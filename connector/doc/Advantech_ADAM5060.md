@@ -12,9 +12,9 @@ This connector allows you to monitor these channels. The connector uses serial c
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.1.0.x   | Initial version  | \-           | \-                |
+| 1.1.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This connector allows you to monitor these channels. The connector uses serial c
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.1.0.x   | No                  | Yes                     | -                    | -                      |
 
 ## Configuration
 

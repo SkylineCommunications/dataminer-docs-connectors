@@ -18,15 +18,15 @@ This connector uses a **TCP/IP** connection in order to retrieve and configure t
 | 1.0.1.x              | Redundancy for the SERIAL connection is available. The Serial Redundancy connection will need to be configured.         | No                  | Yes                     |
 | 2.0.0.x              | It is now possible to interact with the RRCS HTTP interface.                                                            | No                  | Yes                     |
 | 2.0.1.x              | Changes made to table structures and keys.                                                                              | No                  | Yes                     |
-| 2.0.2.x \[SLC Main\] | Addition of Unicode support.                                                                                            | No                  | Yes                     |
+| 2.0.2.x [SLC Main]   | Addition of Unicode support.                                                                                            | No                  | Yes                     |
 | 3.0.0.x              | Monitoring-only range based on range 2.0.0.x.                                                                           | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**            |
+| Range     | Supported Firmware                |
 |-----------|-----------------------------------|
-| 1.0.0.x   | \-                                |
-| 1.0.1.x   | \-                                |
+| 1.0.0.x   | -                                 |
+| 1.0.1.x   | -                                 |
 | 2.0.0.x   | RRCS Version: 6.90.RR5            |
 | 2.0.1.x   | RRCS Version: 6.90.RR5 and higher |
 | 2.0.2.x   | RRCS Version: 7.40.RR5 and higher |

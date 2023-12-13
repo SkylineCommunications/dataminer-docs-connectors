@@ -10,24 +10,24 @@ This connector interacts with the PlayBook API. It allows Health Check operation
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                   |
+| Range                | Key Features     | Based On     | System Impact                                       |
 |----------------------|------------------|--------------|-----------------------------------------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                                                  |
-| 1.0.1.x \[SLC Main\] | Initial version  | 1.0.0.14     | Element data is lost because of the Unicode option. |
+| 1.0.0.x              | Initial version  | -            | -                                                   |
+| 1.0.1.x [SLC Main]   | Initial version  | 1.0.0.14     | Element data is lost because of the Unicode option. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -50,7 +50,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: https://\[PlayBook address\]
+- **IP address/host**: `https://[PlayBook address]`
 - **IP port**: *443*
 - **Bus address**: *bypassproxy*
 

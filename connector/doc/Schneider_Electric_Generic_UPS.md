@@ -12,24 +12,24 @@ This connector retrieves and sets data via **SNMP**. If this is enabled on the d
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
-| 1.1.0.x   | \-               | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
+| 1.1.0.x   | -                | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | JB.GDENA8S300IC303     |
-| 1.1.0.x   | \-                     |
+| 1.1.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

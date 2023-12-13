@@ -18,7 +18,7 @@ Serial commands are used to set parameters on the device and information is retr
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**      |
+| Range     | Device Firmware Version          |
 |------------------|----------------------------------|
 | 1.0.0.x          | HW version 1.00, SW version 1.03 |
 

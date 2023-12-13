@@ -45,7 +45,7 @@ HTTP CONNECTION:
 
 TCP/IP settings
 
-- **IP port:** 443
+- **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
 
 ### Initialization

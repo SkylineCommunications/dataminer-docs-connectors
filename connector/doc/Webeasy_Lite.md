@@ -19,8 +19,8 @@ This connector also makes it possible to change certain settings for the Webeasy
 Before the element can retrieve the correct information from the airco unit, the element needs to be created. The following settings need to be filled in or verified:
 
 - **Type of port:** TCP/IP (already configured).
-- **IP address/host:** The IP address of the Webeasy Lite.
-- **IP Port:** The IP port used by the Webeasy Lite for TCP/IP communication
+- **IP address/host**: The IP address of the Webeasy Lite.
+- **IP port**: The IP port used by the Webeasy Lite for TCP/IP communication
 
 Once the element is created, the measurements and alarms will be polled every minute by default.
 

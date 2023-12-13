@@ -12,8 +12,8 @@ The connector uses an SNMP connection to communicate with the device and also pr
 
 | **Range**            | **Key Features**                                                           | **Based on** | **System Impact**                                                                                                                                                                                                                                                                          |
 |----------------------|----------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                           | \-           | \-                                                                                                                                                                                                                                                                                         |
-| 2.0.0.x \[SLC Main\] | Changed protocol name to the correct name "Digigram" instead of "Digiram". | 1.0.0.2      | Live Update will be broken. Elements will need to use the new connector, which means that existing configurations for monitoring, reports, filters, and Automation scripts may need to be modified. If you are using an "allowed protocols" license, your license may need to be adjusted. |
+| 1.0.0.x [Obsolete]     |Initial version.                                                           | -            | -                                                                                                                                                                                                                                                                                          |
+| 2.0.0.x [SLC Main]   | Changed protocol name to the correct name "Digigram" instead of "Digiram". | 1.0.0.2      | Live Update will be broken. Elements will need to use the new connector, which means that existing configurations for monitoring, reports, filters, and Automation scripts may need to be modified. If you are using an "allowed protocols" license, your license may need to be adjusted. |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ The connector uses an SNMP connection to communicate with the device and also pr
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

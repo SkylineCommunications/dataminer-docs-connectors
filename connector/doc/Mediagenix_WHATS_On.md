@@ -10,12 +10,12 @@ The function of this connector is to receive and display data from a Mediagenix 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                           | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                           | \-           | \-                |
-| 2.0.0.x \[Obsolete\] | \- Finnish Broadcasting Company branch - Communication through web service | \-           | \-                |
-| 2.0.1.x \[Obsolete\] | Support for Unicode characters added.                                      | 2.0.0.4      | \-                |
-| 2.0.2.x \[SLC Main\] | Communication through RabbitMQ.                                            | 2.0.1.7      | \-                |
+| Range              | Key Features                                                                  | Based on | System Impact |
+|--------------------|-------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                              | -        | -             |
+| 2.0.0.x [Obsolete] | - Finnish Broadcasting Company branch <br>- Communication through web service | -        | -             |
+| 2.0.1.x [Obsolete] | Support for Unicode characters added.                                         | 2.0.0.4  | -             |
+| 2.0.2.x [SLC Main] | Communication through RabbitMQ.                                               | 2.0.1.7  | -             |
 
 ### Product Info
 
@@ -27,7 +27,7 @@ The function of this connector is to receive and display data from a Mediagenix 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 2.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

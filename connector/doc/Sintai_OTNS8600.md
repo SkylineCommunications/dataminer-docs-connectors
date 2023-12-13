@@ -12,9 +12,9 @@ The Sintai OTNS8600 SNMP connector can be used to monitor the transmission power
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Monitoring of the optical line protection system. - Monitoring of the NCP Ethernet and fiber ports. - Monitoring of the OTDS Ethernet ports. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Monitoring of the optical line protection system. <br>- Monitoring of the NCP Ethernet and fiber ports. <br>- Monitoring of the OTDS Ethernet ports. | - | - |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The Sintai OTNS8600 SNMP connector can be used to monitor the transmission power
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

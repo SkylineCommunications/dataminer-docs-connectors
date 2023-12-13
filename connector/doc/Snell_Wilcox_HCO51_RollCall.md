@@ -12,11 +12,11 @@ The Snell Wilcox HCO51 protocol uses the RollCall community library package to c
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                    |
+| Range     | Supported Firmware                                        |
 |-----------|-----------------------------------------------------------|
 | 1.0.0.x   | Device Firmware 4.18.20 \| RollCall Library Version 3.0.9 |
 
@@ -24,7 +24,7 @@ The Snell Wilcox HCO51 protocol uses the RollCall community library package to c
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

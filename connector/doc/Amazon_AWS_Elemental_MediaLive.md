@@ -12,13 +12,13 @@ This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon Cl
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                 | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version containing Inputs Table, Channel Table and Channel Health Table. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version containing Inputs Table, Channel Table and Channel Health Table. | - | - |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                 |
+| Range     | Supported Firmware                     |
 |-----------|----------------------------------------|
 | 1.0.0.x   | AWS Service - Production service 2021. |
 
@@ -26,7 +26,7 @@ This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon Cl
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,7 +14,7 @@ This connector can be used to monitor and control the T-VIPS CP546 XML device. A
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ## Configuration
 
@@ -23,8 +23,8 @@ This connector can be used to monitor and control the T-VIPS CP546 XML device. A
 **SERIAL Connection:**
 
 - **Type of Port:** TCP/IP.
-- **IP Address/host:** The polling IP of the device.
-- **IP Port:** The port used for the TCP/IP connection, for instance *80.*
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The port used for the TCP/IP connection, for instance *80.*
 
 **TCP/IP Settings:**
 
@@ -32,13 +32,13 @@ This connector can be used to monitor and control the T-VIPS CP546 XML device. A
 
 **SNMP Connection:**
 
-- **IP Address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 **SNMP Settings:**
 
-- **Port Number:** The port of the connection device, by default *161.*
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
+- **Port number**: The port of the connection device, by default *161.*
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ### Web Interface
 

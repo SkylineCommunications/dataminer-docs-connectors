@@ -16,7 +16,7 @@ Polling happens at different intervals, as described in the "Usage" section belo
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 

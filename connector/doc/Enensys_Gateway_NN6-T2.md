@@ -12,10 +12,10 @@ This connector is mainly used to monitor the device, but also allows the configu
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                                                                                                                                   |
-|----------------------|------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                                                                                                                                                                  |
-| 1.0.1.x \[SLC Main\] | Connector review    | 1.0.0.1      | The entire connector was updated considering the newest DMA features. Furthermore, the vendor discontinued the main MIB and the connector suffered a considerable change. |
+| Range | Key Features | Based On | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x [SLC Main] | Connector review | 1.0.0.1 | The entire connector was updated considering the newest DMA features. Furthermore, the vendor discontinued the main MIB and the connector suffered a considerable change. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This connector is mainly used to monitor the device, but also allows the configu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

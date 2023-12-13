@@ -12,7 +12,7 @@ The Calrec Type R is a modular IP mixing system that uses standard network techn
 
 | **Range**            | **Key Features**                                        | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version with support for all Ember+ parameters. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version with support for all Ember+ parameters. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Calrec Type R is a modular IP mixing system that uses standard network techn
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

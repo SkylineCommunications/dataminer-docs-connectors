@@ -10,12 +10,12 @@ This connector supports the Miranda Kaleido IP X310. This is an IP video multivi
 
 ### Version Info
 
-| **Range**            | **Based on** | **Description**                                                                                             |
-|----------------------|--------------|-------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | \-           | Initial version.                                                                                            |
-| 1.0.1.x              | 1.0.0.4      | Different display key for virtual alarm table. Changes in import file and mandatory value in service table. |
-| 1.0.2.x \[Obsolete\] | 1.0.1.2      | Audio alarms were separated from the service table.                                                         |
-| 1.0.3.x \[SLC Main\] | 1.0.2.3      | Changes to Health Information Table to allow trending and alarm monitoring.                                 |
+| Range | Based on | Description |
+|--|--|--|
+| 1.0.0.x | - | Initial version. |
+| 1.0.1.x | 1.0.0.4 | Different display key for virtual alarm table. Changes in import file and mandatory value in service table. |
+| 1.0.2.x [Obsolete] | 1.0.1.2 | Audio alarms were separated from the service table. |
+| 1.0.3.x [SLC Main] | 1.0.2.3 | Changes to Health Information Table to allow trending and alarm monitoring. |
 
 ### Product Info
 
@@ -30,7 +30,7 @@ This connector supports the Miranda Kaleido IP X310. This is an IP video multivi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

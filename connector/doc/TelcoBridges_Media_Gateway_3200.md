@@ -16,12 +16,12 @@ The **TelcoBridges Media Gateway 3200** device is a **VoIP** gateway with uncomp
 
 **SNMP Connection**
 
-- **IP Address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 **SNMP Settings**
 
-- **Port Number:** The port of the connection device, by default: *161*.
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
+- **Port number**: The port of the connection device, by default: *161*.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
 
 ## Usage
 

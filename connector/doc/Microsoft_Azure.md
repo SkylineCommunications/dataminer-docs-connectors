@@ -14,19 +14,19 @@ This connector allows you to monitor relevant resource metrics available in Azur
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**      |
+| Range     | Supported Firmware          |
 |-----------|-----------------------------|
 | 1.0.0.x   | REST-API version 2018-01-01 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                               | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                   | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | See "Supported Resource Type Elements" table below. | \-                      |
+| 1.0.0.x   | No                  | Yes                     | See "Supported Resource Type Elements" table below. | -                       |
 
 ### Supported Resource Type Elements
 

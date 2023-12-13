@@ -10,13 +10,13 @@ This connector allows you to extract data from a DNS server through PowerShell c
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                   | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version: - Added Commands Configuration Table - Added A Records and feature to add A Record commands from context menu - Added PTR Records | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version: <br>- Added Commands Configuration Table <br>- Added A Records and feature to add A Record commands from context menu <br>- Added PTR Records | - | - |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**   |
+| Range     | Supported Firmware       |
 |-----------|--------------------------|
 | 1.0.0.x   | PowerShell 5.1 or higher |
 
@@ -24,7 +24,7 @@ This connector allows you to extract data from a DNS server through PowerShell c
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,13 +12,13 @@ This connector is designed to monitor the information of the Evertz 570XS decode
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

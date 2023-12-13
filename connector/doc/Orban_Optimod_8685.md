@@ -23,7 +23,7 @@ This connector uses the SNMP protocol to obtain and configure the data for the d
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 

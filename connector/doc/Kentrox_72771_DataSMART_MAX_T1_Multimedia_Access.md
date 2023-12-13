@@ -14,19 +14,19 @@ This connector was designed to work with the Kentrox model 72771 DataSMART MAX T
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
 | **Range**   | **Supported Firmware** |
 |-------------|------------------------|
-| 1.0.0.x1.31 | \-                     |
+| 1.0.0.x1.31 | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

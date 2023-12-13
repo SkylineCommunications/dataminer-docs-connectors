@@ -46,7 +46,7 @@ AWS Elemental MediaPackage is a just-in-time packaging and origination service t
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                 |
+| Range     | Supported Firmware                     |
 |-----------|----------------------------------------|
 | 1.0.0.x   | AWS Service - Production service 2021. |
 | 1.0.1.x   | AWS Service - Production service 2021  |
@@ -55,8 +55,8 @@ AWS Elemental MediaPackage is a just-in-time packaging and origination service t
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

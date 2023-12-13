@@ -19,7 +19,7 @@ In order to use this connector, it is necessary to also **configure the Magnum a
 |----------------------|--------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version    | No                  | Yes                     |
 | 2.0.0.x              | Customer-specific  | No                  | Yes                     |
-| 2.0.1.x \[SLC Main\] | Added external DCF | Yes                 | Yes                     |
+| 2.0.1.x [SLC Main]   | Added external DCF | Yes                 | Yes                     |
 
 ### Product Info
 

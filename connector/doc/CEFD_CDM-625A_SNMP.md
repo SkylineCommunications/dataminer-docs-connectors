@@ -15,11 +15,11 @@ The connector layout is designed to look similar to the web interface of the dev
 | **Range**     | **Description**      | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.     | No                  | No                      |
-| 1.0.1.x \[SLC Main\] | Cassandra compliant. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Cassandra compliant. | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                    |
+| Range     | Device Firmware Version                                                        |
 |------------------|--------------------------------------------------------------------------------|
 | 1.0.0.x 1.0.0.8  | Firmware version 1.2.4 (based on manuals of the device) Firmware version 1.4.2 |
 | 1.0.1.x          | Firmware version 1.2.4 (based on manuals of the device) Firmware version 1.4.2 |

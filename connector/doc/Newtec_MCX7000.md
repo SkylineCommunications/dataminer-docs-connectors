@@ -12,7 +12,7 @@ The Newtec MCX7000 is a DVB-S2X multi-carrier satellite gateway. This connector 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Newtec MCX7000 is a DVB-S2X multi-carrier satellite gateway. This connector 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

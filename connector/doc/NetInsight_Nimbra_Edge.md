@@ -14,11 +14,11 @@ The HTTP(S) REST API is used to retrieve data from Nimbra Edge.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                |
+| Range     | Supported Firmware                    |
 |-----------|---------------------------------------|
 | 1.0.0.x   | R3.9.0, 2022-02-18T14:18:05, 299fd87b |
 
@@ -26,7 +26,7 @@ The HTTP(S) REST API is used to retrieve data from Nimbra Edge.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

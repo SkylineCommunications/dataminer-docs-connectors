@@ -14,13 +14,13 @@ The connector retrieves and sets data via **SNMP**. If this is enabled on the de
 
 | **Range** | **Key Features**                                 | **Based on** | **System Impact** |
 |-----------|--------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.                                 | \-           | \-                |
-| 1.1.0.x   | Supports device software 01.V05.                 | \-           | \-                |
-| 1.1.1.x   | SNMP connection replaced with SNMPv2 connection. | \-           | \-                |
+| 1.0.0.x   | Initial version.                                 | -            | -                 |
+| 1.1.0.x   | Supports device software 01.V05.                 | -            | -                 |
+| 1.1.1.x   | SNMP connection replaced with SNMPv2 connection. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**              |
+| Range     | Supported Firmware                  |
 |-----------|-------------------------------------|
 | 1.0.0.x   | 01.004                              |
 | 1.1.0.x   | 01.V05 (MIB Revision 201806181005Z) |
@@ -30,9 +30,9 @@ The connector retrieves and sets data via **SNMP**. If this is enabled on the de
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -34,9 +34,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** [*http://api.met.no*](http://api.met.no/)
-- **IP port:** *80*
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy.*
+- **IP address/host**: [*http://api.met.no*](http://api.met.no/)
+- **IP port**: *80*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
 ### Configuration of the Summary Table
 

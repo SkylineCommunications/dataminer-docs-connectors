@@ -24,9 +24,9 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 
 **SNMP Settings:**
 
-- **Port Number:** The port of the connected device (default: *161*).
-- **Get community string:** The community string used when reading values form the device (default: *public*).
-- **Set community string:** the community string used when setting values on the device (default: *private*).
+- **Port number**: The port of the connected device (default: *161*).
+- **Get community string**: The community string used when reading values form the device (default: *public*).
+- **Set community string**: the community string used when setting values on the device (default: *private*).
 
 ## Usage
 

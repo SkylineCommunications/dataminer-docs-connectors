@@ -57,7 +57,7 @@ HTTP CONNECTION:
 
 TCP/IP Settings:
 
-- **IP port:** The port of the connected device, by default *7380*.
+- **IP port**: The port of the connected device, by default *7380*.
 - **Bus address**: By default *bypassproxy*.
 
 ## Usage
