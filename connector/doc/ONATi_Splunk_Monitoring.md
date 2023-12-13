@@ -4,29 +4,27 @@ uid: Connector_help_ONATi_Splunk_Monitoring
 
 # ONATi Splunk Monitoring
 
-Splunk Monitoring connector is responsible for periodical fetching and analyzing retrieved messages related to errors, failures, configuration changes and severe failures. 
-The driver utilizes the search module of the extensive Splunk platform REST API.
+The Splunk Monitoring connector can be used to periodically fetch and analyze messages related to errors, failures, configuration changes, and severe failures.
+
+The connector uses the search module of the extensive Splunk platform REST API.
 
 ## About
 
 ### Version Info
 
-
-|Range					|Features																										|Based on		|System Impact		|
-|-----------------------|---------------------------------------------------------------------------------------------------------------|---------------|-------------------|
-|1.0.0.x [SLC Main]     |<ul><li>Error and configuration change reporting</li><li>Critical and warning monitoring by host/IP</li></ul>  |-				|-					|
+| Range | Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Error and configuration change reporting.<br>- Critical and warning message monitoring by host/IP. | - | - |
 
 ### Product Info
 
-The following table is referencing the Splunk Enterprise firmware.
+The table below references the Splunk Enterprise firmware.
 
 |Range       |Supported Firmware      |
 |------------|------------------------|
 |1.0.0.x     | Up to 9.0.1            |
 
-
 ### System Info
-
 
 |Range      |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
 |-----------|-----------------|---------------------|-------------------|----------------------|
@@ -42,29 +40,30 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination. (default: *8089*)
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *8089*).
 
 ### Initialization
 
-Before using the connector, user needs valid credentials to connect to Splunk server. Filling in the _Username_ and _Password_ on the **General** page and clicking the _Login_ button will save the session key, later used for all the search requests. 
+When you have created the element, you will need to specify valid credentials to connect to the Splunk server. To do so, go to the **General** page, fill in the **Username** and **Password**, and click the **Login** button. This will save the session key, which will later be used for all the search requests.
 
-In order for the driver to poll tables correctly, for each table, the _search name_ parameters will need to be configured to the appropriate saved search names found in Splunk Enterprise portal or through Splunk API. These parameters are: 
-- Error Seach Name (**General** page)
-- Commits Search Name (**General** page)
-- Critical Host Stats Search Name (**Statistics** page)
-- Warning Host Stats Search Name (**Statistics** page)
+In order for the connector to poll tables correctly, for each table, the **search name** parameters also need to be set to the appropriate saved search names found in the Splunk Enterprise portal or through the Splunk API. These parameters are:
 
+- Error Search Name (General page)
+- Commits Search Name (General page)
+- Critical Host Stats Search Name (Statistics page)
+- Warning Host Stats Search Name (Statistics page)
 
 ## How to use
 
-Splunk Monitoring will poll predefined searches saved in Splunk Enterprise through their REST Splunk API. Two tables found on the **Errors** and **Commits** pages are _Errors_ and _Commits_, respectively. 
+The Splunk Monitoring connector will poll predefined searches saved in Splunk Enterprise through the REST Splunk API. On the **Errors** and **Commits** pages, it will display the corresponding tables.
 
-_Errors_ table displays all Splunk entries which contains words: _error_, _failed_ or _severe_ in a predefined past time slot. Error identifier, alongside with the IP of the host where the error occured, will uniquely identify an entry where a user can find the first and the lastest reporting of that error, number of times the error appeared, and a more verbose message related to the error, similar to the ones found in logs. 
+- The **Errors** table displays all Splunk entries that contain the words *error*, *failed*, or *severe* in a predefined past time slot. The error identifier, alongside with the IP of the host where the error occurred, will uniquely identify an entry. For each entry, you can find the first and the latest reporting of that error, the number of times the error appeared, and a more verbose message related to the error similar to the ones found in the logs.
 
-_Commits_ table works similarly, but instead of errors it reports configuration commits made to certain devices in the system.
+- The **Commits** table is similar, but instead of errors it reports configuration commits made to certain devices in the system.
 
-Another functionality of the driver is statistics. Splunk search will get all the host IPs and count the number of messages where words "critical" and "warning" have appeared over the course of a time slot defined in Splunk Enterprise saved search. Results will be saved in _Critical Hosts_ and _Warning Hosts_ tables found on the **Statistics** page.
+Another functionality of the connector is statistics. Splunk search will retrieve all the host IPs and count the number of messages containing the words "critical" or "warning" over the course of a time slot defined in the Splunk Enterprise saved search. Results will be saved in the **Critical Hosts** and **Warning Hosts** tables on the **Statistics** page.
+
 ## Notes
 
-All data from every table will be erased at around midnight local time.
+The data from each table is erased at around midnight local time.
