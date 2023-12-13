@@ -4979,6 +4979,11 @@
     topicUid: Connector_help_IRT_DVB-T2_TX
   - name: IRT DVB-T TX
     topicUid: Connector_help_IRT_DVB-T_TX
+- name: Itelco
+  topicUid: Connector_help_Itelco_DVB-T2_Modulator
+  items:
+  - name: Itelco DVB-T2 Modulator
+    topicUid: Connector_help_Itelco_DVB-T2_Modulator
 - name: Itelsis
   topicUid: Connector_help_Itelsis_Amplifier_ATVD2_100W
   items:
