@@ -12,24 +12,24 @@ This connector uses **SNMP** to retrieve and update data on the device. With thi
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                   | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                                                                                                                                   | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | \- Changed the column descriptions to match the current guidelines and use parentheses instead of square brackets. - Changed discretes to be consistent in the connector. - Updated measurements to the correct type. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | - Changed the column descriptions to match the current guidelines and use parentheses instead of square brackets. <br>- Changed discretes to be consistent in the connector. <br>- Updated measurements to the correct type. | - | - |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

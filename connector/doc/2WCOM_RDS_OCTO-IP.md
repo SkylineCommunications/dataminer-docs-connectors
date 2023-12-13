@@ -16,7 +16,7 @@ This device is capable of sending SNMP traps. Those traps are sent in case of sy
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | No                      |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
 
 ### Product Info
 

@@ -14,8 +14,8 @@ This SNMP connector is used to monitor and configure the **Nevion Virtuoso CP440
 
 | **Range**            | **Key Features**    | **Based on** | **System Impact** |
 |----------------------|---------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version     | \-           | \-                |
-| 1.0.1.x              | New HTTP connection | 1.0.0.2      | \-                |
+| 1.0.0.x [SLC Main]   | Initial version     | -            | -                 |
+| 1.0.1.x              | New HTTP connection | 1.0.0.2      | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This SNMP connector is used to monitor and configure the **Nevion Virtuoso CP440
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

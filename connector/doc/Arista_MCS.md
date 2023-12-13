@@ -14,19 +14,19 @@ Besides polling the API for monitoring devices and interfaces parameters, the Ar
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                           | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                               | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | -                       |
 
 ## Configuration
 

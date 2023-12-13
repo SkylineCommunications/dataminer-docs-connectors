@@ -14,11 +14,11 @@ This connector also exports several other connectors based on the information re
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                       | **Based on** | **System Impact** |
+| Range                | Key Features                                                                           | Based on     | System Impact     |
 |----------------------|----------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                        | \-           | \-                |
-| 1.0.1.x              | Fixed duplicate parameter description (PID 1905 and 3502)                              | 1.0.0.9      | \-                |
-| 1.0.2.x \[SLC Main\] | Changed MFVx Amplifier Table and DVE SFRX Optical Properties to standalone parameters. | 1.0.1.3      | \-                |
+| 1.0.0.x              | Initial version                                                                        | -            | -                 |
+| 1.0.1.x              | Fixed duplicate parameter description (PID 1905 and 3502)                              | 1.0.0.9      | -                |
+| 1.0.2.x [SLC Main] | Changed MFVx Amplifier Table and DVE SFRX Optical Properties to standalone parameters. | 1.0.1.3      | -                |
 
 ### Product Info
 
@@ -32,25 +32,25 @@ This connector also exports several other connectors based on the information re
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ### Exported Connectors
 
-| **Exported Connector**                                                                                      | **Description**                                   |
-|------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| [Arris CHP Max5000 - CHP-SMM-2](xref:Connector_help_Arris_CHP_Max5000_-_CHP-SMM-2)                 | SNMP-enabled controller card                      |
-| [Arris CHP Max5000 - CHP-CMM-1](xref:Connector_help_Arris_CHP_Max5000_-_CHP-CMM-1)                 | Basic controller card, no SNMP                    |
-| [Arris CHP Max5000 - CHP-PS-AC1-SW](xref:Connector_help_Arris_CHP_Max5000_-_CHP-PS-AC1-SW)         | Power supply                                      |
-| [Arris CHP Max5000 - CHP-DDFO](xref:Connector_help_Arris_CHP_Max5000_-_CHP-DDFO)                   | Transmission card                                 |
-| [Arris CHP Max5000 - CHP-2RRXF-30-S](xref:Connector_help_Arris_CHP_Max5000_-_CHP-2RRXF-30-S)       | Redundant/non-redundant dual return path receiver |
-| [Arris CHP Max5000 - CHP-4RRXF-30-L](xref:Connector_help_Arris_CHP_Max5000_-_CHP-4RRXF-30-L)       | Redundant/non-redundant quad return path receiver |
-| [Arris CHP Max5000 - CHP-FANS](xref:Connector_help_Arris_CHP_Max5000_-_CHP-FANS)                   | Fans information per chassis                      |
-| [Arris CHP Max5000 - CHP-D2RRX-85-XQ-S](xref:Connector_help_Arris_CHP_Max5000_-_CHP-D2RRX-85-XQ-S) | Optical receiver                                  |
-| [Arris CHP Max5000 - CHP-OPTSWITCH-2-L](xref:Connector_help_Arris_CHP_Max5000_-_CHP-OPTSWITCH-2-L) | Optical switch                                    |
-| [Arris CHP Max5000 - CHP-EDFA](xref:Connector_help_Arris_CHP_Max5000_-_CHP-EDFA)                   | Optical amplifier                                 |
-| [Arris CHP Max5000 - CHP-CW4](xref:Connector_help_Arris_CHP_Max5000_-_CHP-CW4)                     | Optical transmitter                               |
+| Exported Connector | Description |
+|--|--|
+| [Arris CHP Max5000 - CHP-SMM-2](xref:Connector_help_Arris_CHP_Max5000_-_CHP-SMM-2) | SNMP-enabled controller card |
+| [Arris CHP Max5000 - CHP-CMM-1](xref:Connector_help_Arris_CHP_Max5000_-_CHP-CMM-1) | Basic controller card, no SNMP |
+| [Arris CHP Max5000 - CHP-PS-AC1-SW](xref:Connector_help_Arris_CHP_Max5000_-_CHP-PS-AC1-SW) | Power supply |
+| [Arris CHP Max5000 - CHP-DDFO](xref:Connector_help_Arris_CHP_Max5000_-_CHP-DDFO) | Transmission card |
+| [Arris CHP Max5000 - CHP-2RRXF-30-S](xref:Connector_help_Arris_CHP_Max5000_-_CHP-2RRXF-30-S) | Redundant/non-redundant dual return path receiver |
+| [Arris CHP Max5000 - CHP-4RRXF-30-L](xref:Connector_help_Arris_CHP_Max5000_-_CHP-4RRXF-30-L) | Redundant/non-redundant quad return path receiver |
+| [Arris CHP Max5000 - CHP-FANS](xref:Connector_help_Arris_CHP_Max5000_-_CHP-FANS) | Fans information per chassis |
+| [Arris CHP Max5000 - CHP-D2RRX-85-XQ-S](xref:Connector_help_Arris_CHP_Max5000_-_CHP-D2RRX-85-XQ-S) | Optical receiver |
+| [Arris CHP Max5000 - CHP-OPTSWITCH-2-L](xref:Connector_help_Arris_CHP_Max5000_-_CHP-OPTSWITCH-2-L) | Optical switch |
+| [Arris CHP Max5000 - CHP-EDFA](xref:Connector_help_Arris_CHP_Max5000_-_CHP-EDFA) | Optical amplifier |
+| [Arris CHP Max5000 - CHP-CW4](xref:Connector_help_Arris_CHP_Max5000_-_CHP-CW4) | Optical transmitter |
 
 ## Configuration
 

@@ -16,11 +16,11 @@ In the main Newtec dialog element, you can indicate whether a DVE should be crea
 
 | **Range**            | **Description**               | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-------------------------------|---------------------|-------------------------|
-| 1.0.1.x \[SLC Main\] | DVE structure changed. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | DVE structure changed. | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                       |
+| Range     | Supported Firmware                                           |
 |------------------|--------------------------------------------------------------|
 | 1.0.1.x          | Compatible with all Newtec Dialog versions of parent connector. |
 

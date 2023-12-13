@@ -14,7 +14,7 @@ This connector retrieves status and configuration parameters through SNMP. It ca
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact** |
 |----------------------|------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Monitoring and control | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Monitoring and control | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector retrieves status and configuration parameters through SNMP. It ca
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

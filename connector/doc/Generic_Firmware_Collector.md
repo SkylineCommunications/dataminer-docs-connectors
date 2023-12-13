@@ -12,7 +12,7 @@ The Generic Firmware Collector connector gathers information related to the firm
 
 | **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Retrieves firmware version from connector elements. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Retrieves firmware version from connector elements. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Generic Firmware Collector connector gathers information related to the firm
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,7 +14,7 @@ The ViaLiteHD system comprises up to 13 rack-mounted cards and an SNMP card, all
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | No                      |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
 
 ### Product Info
 

@@ -12,7 +12,7 @@ This connector is used to validate JSON content received through HTTPS requests.
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact** |
 |----------------------|------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | HTTP Request Log Table | \-           | \-                |
+| 1.0.0.x [SLC Main]   | HTTP Request Log Table | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is used to validate JSON content received through HTTPS requests.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

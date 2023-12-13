@@ -19,13 +19,13 @@ The information is retrieved from the device using **SNMP**.
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
+| 1.0.0.x          | -                           |
 
 ## Installation and configuration
 

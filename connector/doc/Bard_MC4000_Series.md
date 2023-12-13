@@ -14,7 +14,7 @@ The **Bard MC4000 Series** connector monitors the temperatures and status of the
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | Yes                     |
 
 ### Product Info
 

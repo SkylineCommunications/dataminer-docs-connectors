@@ -14,7 +14,7 @@ This connector uses the CORBA protocol to communicate with the **Nokia OMS 1350*
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This connector uses the CORBA protocol to communicate with the **Nokia OMS 1350*
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \- [Nokia OMS 1350 - Node](xref:Connector_help_Nokia_OMS_1350_-_Node) - [Nokia OMS 1350 - 11DPM8](xref:Connector_help_Nokia_OMS_1350_-_11DPM8) - [Nokia OMS 1350 - 11QPA4](xref:Connector_help_Nokia_OMS_1350_-_11QPA4) - [Nokia OMS 1350 - 32EC2](xref:Connector_help_Nokia_OMS_1350_-_32EC2) - [Nokia OMS 1350 - AHPHG](xref:Connector_help_Nokia_OMS_1350_-_AHPHG) - [Nokia OMS 1350 - USRPNL](xref:Connector_help_Nokia_OMS_1350_-_USRPNL) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - [Nokia OMS 1350 - Node](xref:Connector_help_Nokia_OMS_1350_-_Node) <br>- [Nokia OMS 1350 - 11DPM8](xref:Connector_help_Nokia_OMS_1350_-_11DPM8) <br>- [Nokia OMS 1350 - 11QPA4](xref:Connector_help_Nokia_OMS_1350_-_11QPA4) <br>- [Nokia OMS 1350 - 32EC2](xref:Connector_help_Nokia_OMS_1350_-_32EC2) <br>- [Nokia OMS 1350 - AHPHG](xref:Connector_help_Nokia_OMS_1350_-_AHPHG) <br>- [Nokia OMS 1350 - USRPNL](xref:Connector_help_Nokia_OMS_1350_-_USRPNL) |
 
 ## Configuration
 

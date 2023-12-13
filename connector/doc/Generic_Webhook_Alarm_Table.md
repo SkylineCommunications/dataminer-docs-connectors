@@ -12,13 +12,13 @@ This connector shows received JSON objects in an Alarm Table. You can change the
 
 | **Range** | **Key Features**                                                                                                                                   | **Based on** | **System Impact** |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.1   | \- Inserting and modifying source URL. - Enabling/disabling automatic removal of rows in table. - Configuring rules for automatic removal of rows. | \-           | \-                |
+| 1.0.0.1   | \- Inserting and modifying source URL. - Enabling/disabling automatic removal of rows in table. - Configuring rules for automatic removal of rows. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.1   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.1   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

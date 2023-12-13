@@ -12,20 +12,20 @@ This connector uses **SNMP and HTTP** communication to monitor and change parame
 
 ### Version Info
 
-| **Range**     | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                     | No                  | Yes                     |
-| 1.0.1.x              | Added DCF integration.               | Yes                 | Yes                     |
-| 1.0.2.x              | Monitor Alarm Table with Naming.     | Yes                 | Yes                     |
-| 2.0.0.x              | Added HTTP connection.               | Yes                 | Yes                     |
-| 2.1.0.x \[Obsolete\] | New firmware based on 2.0.0.x.       | Yes                 | Yes                     |
-| 2.1.1.x \[SLC Main\] | Changes implemented to display keys. | Yes                 | Yes                     |
+| Range              | Description                          | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                     | No              | Yes                 |
+| 1.0.1.x            | Added DCF integration.               | Yes             | Yes                 |
+| 1.0.2.x            | Monitor Alarm Table with Naming.     | Yes             | Yes                 |
+| 2.0.0.x            | Added HTTP connection.               | Yes             | Yes                 |
+| 2.1.0.x [Obsolete] | New firmware based on 2.0.0.x.       | Yes             | Yes                 |
+| 2.1.1.x [SLC Main] | Changes implemented to display keys. | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.1.1.x          | 1.1.1 \[Build 4761\]        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 2.1.1.x | 1.1.1 [Build 4761]         |
 
 ## Installation and configuration
 

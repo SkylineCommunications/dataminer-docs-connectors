@@ -14,7 +14,7 @@ Ranges of the connector
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.1.x \[SLC Main\] | Initial version | Yes                 | False                   |
+| 1.0.1.x [SLC Main]   | Initial version | Yes                 | False                   |
 
 ### Product Info
 
@@ -27,7 +27,7 @@ Ranges of the connector
 The **Ericsson AVP-3000** connector has a **HTTP** Connection:
 
 - **Port:** 80
-- **Bus Address:** ByPassProxy (if it need to pass a proxy server)
+- **Bus address**: ByPassProxy (if it need to pass a proxy server)
 - **IP Address:** The IP of the Device
 
 ### Creation

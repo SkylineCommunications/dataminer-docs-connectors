@@ -22,7 +22,7 @@ The connector uses an SNMP connection to monitor **NetInsight Nimbra VA** device
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
+| 1.0.0.x          | -                           |
 | 1.1.0.x          | FX-VA200.10                 |
 | 1.2.0.x          | VA-12.1.0.0                 |
 

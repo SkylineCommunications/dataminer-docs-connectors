@@ -23,7 +23,7 @@ The **versioning** for the connector is specifically engineered to tie in with t
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                                   |
+| Range     | Device Firmware Version                                                                                                                       |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
 | 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware.                                       |

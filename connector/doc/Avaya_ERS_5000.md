@@ -12,7 +12,7 @@ The Avaya ERS 5000 is a high-performance stackable Ethernet routing switch. This
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Avaya ERS 5000 is a high-performance stackable Ethernet routing switch. This
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -41,8 +41,8 @@ SNMP Connection:
 SNMP Settings:
 
 - **Port** **number:** The port of the connected device, by default 161.
-- **Get community string:** The community string in order to read from the device.
-- **Set community string:** The community string in order to set to the device.
+- **Get community string**: The community string in order to read from the device.
+- **Set community string**: The community string in order to set to the device.
 
 ### Web Interface
 

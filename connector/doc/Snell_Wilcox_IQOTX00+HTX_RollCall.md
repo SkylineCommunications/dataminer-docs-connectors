@@ -12,11 +12,11 @@ This connector monitors the activity of the Snell Wilcox IQOTX00+HTX RollCall de
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**          |
+| Range     | Supported Firmware              |
 |-----------|---------------------------------|
 | 1.0.0.x   | 0003 - 5.0.5 (software version) |
 
@@ -24,7 +24,7 @@ This connector monitors the activity of the Snell Wilcox IQOTX00+HTX RollCall de
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

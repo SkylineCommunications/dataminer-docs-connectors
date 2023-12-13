@@ -12,19 +12,19 @@ This virtual connector is used to process CSV files exported by the Agama FireHo
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                     | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                         | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager) [Telenor EPM Collector](xref:Connector_help_Telenor_EPM_Collector) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager) [Telenor EPM Collector](xref:Connector_help_Telenor_EPM_Collector) | -                       |
 
 ## Configuration
 

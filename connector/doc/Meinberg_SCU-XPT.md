@@ -20,9 +20,9 @@ With this connector, you can monitor the status of satellite tracking with the *
 
 **SNMP Settings:**
 
-- **Port Number:** The port of the connection device, by default *161*.
-- **Get community string:** The community string required to read from the device. The default value is *public*.
-- **Set community string:** The community string required to set to the device. The default value is *rwpublic*.
+- **Port number**: The port of the connection device, by default *161*.
+- **Get community string**: The community string required to read from the device. The default value is *public*.
+- **Set community string**: The community string required to set to the device. The default value is *rwpublic*.
 
 ## Usage
 

@@ -10,11 +10,11 @@ The HTTP Rest API protocol connects to the Haivision Media Gateway to gather dev
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                        | **Based on** | **System Impact**                                                                                                                                                                                             |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                                                                                                                                                                                        | \-           | \-                                                                                                                                                                                                            |
-| 1.0.1.x              | Added support for all source and destination protocol types.                                                                                                                                                                                                            | 1.0.0.1      | Removed SRT from Sources and Destinations tables to improve compatibility with other protocol types. This can affect DataMiner filters, Automation scripts, Visio drawings, reports, dashboards, and web API. |
-| 1.0.2.x \[SLC Main\] | Complete revision of the connector: - Fix for session creation/deletion. - Added system metrics information. - Possibility to start/stop routes and destinations. - Possibility to add SRT/UDP/RTP/RTSP/RTMP routes. - Possibility to add SRT/UDP/RTP/HLS destinations. | 1.0.1.x      | \-                                                                                                                                                                                                            |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x | Added support for all source and destination protocol types. | 1.0.0.1 | Removed SRT from Sources and Destinations tables to improve compatibility with other protocol types. This can affect DataMiner filters, Automation scripts, Visio drawings, reports, dashboards, and web API. |
+| 1.0.2.x [SLC Main] | Complete revision of the connector: <br>- Fix for session creation/deletion. <br>- Added system metrics information. <br>- Possibility to start/stop routes and destinations. <br>- Possibility to add SRT/UDP/RTP/RTSP/RTMP routes. <br>- Possibility to add SRT/UDP/RTP/HLS destinations. | 1.0.1.x | - |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ The HTTP Rest API protocol connects to the Haivision Media Gateway to gather dev
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

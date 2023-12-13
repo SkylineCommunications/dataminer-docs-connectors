@@ -12,8 +12,8 @@ This connector allows you to control a Sony MKS-R4020 (hardware panel). The main
 
 | **Range**            | **Key Features**  | **Based on** | **System Impact** |
 |----------------------|-------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version   | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Added DCF support | 1.0.0.18     | \-                |
+| 1.0.0.x              | Initial version   | -            | -                 |
+| 1.0.1.x [SLC Main]   | Added DCF support | 1.0.0.18     | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector allows you to control a Sony MKS-R4020 (hardware panel). The main
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

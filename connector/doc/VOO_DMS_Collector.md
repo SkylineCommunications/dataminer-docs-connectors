@@ -161,9 +161,9 @@ When creating the DataMiner Element, you must specify the following properties:
 
 - **SNMP Connection:** This SNMP connection contains the settings which are needed for the communication between the DataMiner Element and the cluster from which you wish to receive the active alarms.
 
-  - **IP address/host:** The IP address of the **DataMiner Agent** you selected on the cluster that's responsible for the communication between clusters (e.g. "*10.12.0.158*").
+  - **IP address/host**: The IP address of the **DataMiner Agent** you selected on the cluster that's responsible for the communication between clusters (e.g. "*10.12.0.158*").
 
-  - **Device address:** The name of the **SNMP Manager**, which is configured on the cluster's DataMiner Agent that's responsible for the communication between clusters (e.g. "*Core Snmp Manager*").
+  - **Device address**: The name of the **SNMP Manager**, which is configured on the cluster's DataMiner Agent that's responsible for the communication between clusters (e.g. "*Core Snmp Manager*").
 
   - **More SNMP settings:** In the **Port number** text field, make sure you enter the SNMP Port number that you've configured on the cluster's DataMiner Agent which is responsible for the communication between clusters (e.g. "*461*").
 

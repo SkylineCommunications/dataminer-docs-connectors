@@ -15,21 +15,21 @@ This connector will export different connectors based on the retrieved data (see
 
 | **Range**            | **Key Features**  | **Based On** | **System Impact** |
 |----------------------|-------------------|--------------|-------------------|
-| 3.0.0.x              | Initial version   | \-           | \-                |
-| 3.1.0.x              | Branched solution | 3.0.0.7      | \-                |
-| 3.2.0.x              | Branched solution | 3.1.0.28     | \-                |
-| 3.3.0.x              | Branched solution | 3.2.0.10     | \-                |
-| 3.3.1.x              | Branched solution | 3.2.0.10     | \-                |
-| 3.4.0.x              | Branched solution | 3.3.0.14     | \-                |
-| 3.5.0.x              | Branched solution | 3.4.0.10     | \-                |
-| 3.5.1.x \[SLC Main\] | Branched solution | 3.4.0.10     | \-                |
+| 3.0.0.x              | Initial version   | -            | -                 |
+| 3.1.0.x              | Branched solution | 3.0.0.7      | -                 |
+| 3.2.0.x              | Branched solution | 3.1.0.28     | -                 |
+| 3.3.0.x              | Branched solution | 3.2.0.10     | -                 |
+| 3.3.1.x              | Branched solution | 3.2.0.10     | -                 |
+| 3.4.0.x              | Branched solution | 3.3.0.14     | -                 |
+| 3.5.0.x              | Branched solution | 3.4.0.10     | -                 |
+| 3.5.1.x [SLC Main]   | Branched solution | 3.4.0.10     | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
-| 3.0.0.x   | \-                      |
-| 3.1.0.x   | \-                      |
+| 3.0.0.x   | -                       |
+| 3.1.0.x   | -                       |
 | 3.2.0.x   | 3.16.0.6366             |
 | 3.3.0.x   | 3.16.0.6366 3.16.1.6737 |
 | 3.3.1.x   | 3.16.1.6737             |
@@ -39,11 +39,11 @@ This connector will export different connectors based on the retrieved data (see
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                         | **Exported Components**                               |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                             | Exported Components                                   |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------------------------|-------------------------------------------------------|
-| 3.0.0.x   | No                  | \-                      | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite                             |
-| 3.1.0.x   | No                  | \-                      | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite CEFD ViperSat - Power Strip |
-| 3.2.0.x   | No                  | \-                      | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite CEFD ViperSat - Power Strip |
+| 3.0.0.x   | No                  | -                       | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite                             |
+| 3.1.0.x   | No                  | -                       | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite CEFD ViperSat - Power Strip |
+| 3.2.0.x   | No                  | -                       | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite CEFD ViperSat - Power Strip |
 | 3.3.0.x   | No                  | Yes                     | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite                             |
 | 3.3.1.x   | No                  | Yes                     | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite                             |
 | 3.4.0.x   | No                  | Yes                     | SLAutomation SLElement: Visio SLProtocol: Data Distribution + Remote Notifies | CEFD ViperSat - Satellite                             |
@@ -60,9 +60,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
-- **IP port:** The IP port of the device, by default *5150*.
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy*.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device, by default *5150*.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ## How to Use
 

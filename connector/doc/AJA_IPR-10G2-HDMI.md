@@ -12,8 +12,8 @@ This connector allows you to monitor and control the IPR-10G2-HDMI mini-converte
 
 | **Range**            | **Key Features**                                                                             | **Based on** | **System Impact**                                                                                                                         |
 |----------------------|----------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                              | \-           | \-                                                                                                                                        |
-| 1.0.1.x \[SLC Main\] | Major range introduction to fix parameter types, descriptions, major validator remarks, etc. | 1.0.0.2      | Changes to PIDs/parameter types. Changes to saved parameters/primary keys. Changes to parameter descriptions and discrete display values. |
+| 1.0.0.x              | Initial version                                                                              | -            | -                                                                                                                                         |
+| 1.0.1.x [SLC Main]   | Major range introduction to fix parameter types, descriptions, major validator remarks, etc. | 1.0.0.2      | Changes to PIDs/parameter types. Changes to saved parameters/primary keys. Changes to parameter descriptions and discrete display values. |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector allows you to monitor and control the IPR-10G2-HDMI mini-converte
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

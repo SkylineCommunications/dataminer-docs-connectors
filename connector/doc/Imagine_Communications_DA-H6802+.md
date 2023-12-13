@@ -14,8 +14,8 @@ Serial commands are used to set parameters on the device and information is retr
 
 | **Range** | **Key Features**               | **Based on** | **System Impact** |
 |-----------|--------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                | \-           | \-                |
-| 1.1.0.x   | New firmware based on 1.0.0.x. | \-           | \-                |
+| 1.0.0.x   | Initial version                | -            | -                 |
+| 1.1.0.x   | New firmware based on 1.0.0.x. | -            | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ Serial commands are used to set parameters on the device and information is retr
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.1.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.1.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

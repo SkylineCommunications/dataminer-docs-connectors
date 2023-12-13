@@ -39,7 +39,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 - **IP address/host**: The polling IP of the device.
 - **Port**: The IP port of the device, by default *80.*
-- **Bus Address:** If a proxy server must be bypassed, specify *BypassProxy.*
+- **Bus address**: If a proxy server must be bypassed, specify *BypassProxy.*
 
 #### SNMP Secondary Connection \[version 2.0.0.x\]
 

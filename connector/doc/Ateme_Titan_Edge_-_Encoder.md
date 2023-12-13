@@ -10,10 +10,10 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 
 ### Version Info
 
-| **Range**            | **Key Features**            | **Based on** | **System Impact** |
-|----------------------|-----------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.            | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Implemented firmware 2.11.1 | 1.0.0.4      | \-                |
+| Range              | Key Features                | Based on | System Impact |
+|--------------------|-----------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.            | -        | -             |
+| 1.0.1.x [SLC Main] | Implemented firmware 2.11.1 | 1.0.0.4  | -             |
 
 ### Product Info
 
@@ -32,7 +32,7 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The element created with this connnector has the following data pages:
+The element created with this connector has the following data pages:
 
 - **General**: Displays information about the encoder status.
 - **Encoder Input**: Displays information about the video and audio inputs.

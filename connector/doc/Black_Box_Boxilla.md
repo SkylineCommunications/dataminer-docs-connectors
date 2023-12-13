@@ -12,22 +12,22 @@ This connector can be used to monitor and configure the Black Box Boxilla. This 
 
 | **Range**            | **Key Features**        | **Based on** | **System Impact** |
 |----------------------|-------------------------|--------------|-------------------|
-| 1.0.0.x \[OBSOLETE\] | POC. Pings the device.  | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | Initial implementation. | \-           | \-                |
+| 1.0.0.x [Obsolete]     |POC. Pings the device.  | -            | -                 |
+| 2.0.0.x [SLC Main]   | Initial implementation. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 2.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

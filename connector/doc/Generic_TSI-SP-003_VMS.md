@@ -10,9 +10,9 @@ This connector works with the standard TSI-SP-003 protocol for VMS systems (Vari
 
 ### Version Info
 
-| **Range**            | **Key Features**                                | **Based on** | **System Impact** |
+| Range                | Key Features                                    | Based on     | System Impact     |
 |----------------------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. Includes text frame, planning. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. Includes text frame, planning. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector works with the standard TSI-SP-003 protocol for VMS systems (Vari
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

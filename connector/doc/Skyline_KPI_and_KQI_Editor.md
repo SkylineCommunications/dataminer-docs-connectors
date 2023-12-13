@@ -14,15 +14,15 @@ Ultimately, the goal of the connector is to have an updated value of the **avera
 
 | **Range**            | **Key Features**        | **Based on** | **System Impact** |
 |----------------------|-------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.        | \-           | \-                |
-| 2.0.0.x              | Historical table added. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version.        | -            | -                 |
+| 2.0.0.x              | Historical table added. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

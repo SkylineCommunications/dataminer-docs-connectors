@@ -12,24 +12,24 @@ The connector supports matrices of sizes up to 256 inputs x 256 outputs.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                       | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                                        | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | New "Gains" page added. The input and output gains table have been moved to that page. | 1.0.0.x      | \-                |
+| Range              | Key Features                                                                           | Based on     | System Impact     |
+|--------------------|----------------------------------------------------------------------------------------|--------------|-------------------|
+| 1.0.0.x [Obsolete] | Initial version                                                                        | -            | -                 |
+| 1.0.1.x [SLC Main] | New "Gains" page added. The input and output gains table have been moved to that page. | 1.0.0.x      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,10 +12,10 @@ The 1.0.0.x range of this connector uses SNMP to poll information from the Viz E
 
 ### Version Info
 
-| **Range**            | **Key Features**                             | **Based on** | **System Impact**                                                                  |
-|----------------------|----------------------------------------------|--------------|------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version (SNMP)                       | \-           | \-                                                                                 |
-| 1.1.0.x \[SLC Main\] | \- Removed SNMP support - Added HTTP support | \-           | The data shown in this branch is not the same as the data shown in branch 1.0.0.x. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version (SNMP) | - | - |
+| 1.1.0.x [SLC Main] | - Removed SNMP support <br>- Added HTTP support | - | The data shown in this branch is not the same as the data shown in branch 1.0.0.x. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The 1.0.0.x range of this connector uses SNMP to poll information from the Viz E
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

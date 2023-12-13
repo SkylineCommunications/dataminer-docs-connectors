@@ -12,13 +12,13 @@ This connector uses an SNMP connection to show the status of the different param
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | \-           | \-                |
+| 1.0.0.x   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**            |
+| Range     | Supported Firmware                |
 |-----------|-----------------------------------|
 | 1.0.0.x   | CPU: e500 1v14 Modules: e501 1v11 |
 
@@ -26,7 +26,7 @@ This connector uses an SNMP connection to show the status of the different param
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

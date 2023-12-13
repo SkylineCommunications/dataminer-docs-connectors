@@ -14,9 +14,9 @@ The Eaton SC200 connector can be used to monitor and control an Eaton SC200 devi
 
 | **Range**            | **Key Features**                                                                            | **Based on** | **System Impact**                                                                                                                                                     |
 |----------------------|---------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                                             | N/A          | \-                                                                                                                                                                    |
-| 1.0.1.x \[Obsolete\] | \- Added trap receiver for OID 1.3.6.1.4.1.1918.2.13.20.\* - Changed decimals in parameters | 1.0.0.x      | \- Possible loss of external sets because of description changes in parameters 5003, 5103, 30044 and 30055. - Change in parameter Interprete type for parameter 3006. |
-| 2.0.0.x \[SLC Main\] | Connector rebranded                                                                         | 1.0.1.x      | \- Possible issue with case-sensitive code that uses the connector name                                                                                               |
+| 1.0.0.x [Obsolete]     |Initial version                                                                             | N/A          | -                                                                                                                                                                     |
+| 1.0.1.x [Obsolete]     |\- Added trap receiver for OID 1.3.6.1.4.1.1918.2.13.20.\* - Changed decimals in parameters | 1.0.0.x      | \- Possible loss of external sets because of description changes in parameters 5003, 5103, 30044 and 30055. - Change in parameter Interprete type for parameter 3006. |
+| 2.0.0.x [SLC Main]   | Connector rebranded                                                                         | 1.0.1.x      | \- Possible issue with case-sensitive code that uses the connector name                                                                                               |
 
 ### Product Info
 
@@ -29,8 +29,8 @@ The Eaton SC200 connector can be used to monitor and control an Eaton SC200 devi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -42,7 +42,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device, e.g. 10.11.12.13.
+- **IP address/host**: The polling IP of the device, e.g. 10.11.12.13.
 - **IP port**: The port of the connected device, by default 161
 
 SNMP Settings:

@@ -10,18 +10,18 @@ The **IneoQuest iVMS ASM** is a management system for OTT/multi-screen adaptive 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                            | **Based on** | **System Impact**                              |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------|
-| 1.2.0.x              | \- Uses API calls to retrieve info about the probes, assets, streams, and alarms. - Uses SNMP to receive traps.                                                                             | \-           | \- New firmware using new API                  |
-| 1.2.1.x              | \- A new API call is used to retrieve stream details. - The details are displayed as new columns in the Stream Monitoring Points table.                                                     | 1.2.0.2      | \-                                             |
-| 1.2.2.x              | \- Open Alarms table renamed to Alarm Log and new Open Alarms table added. - DVE functionality added to create an element for each probe on demand.                                         | 1.2.1.3      | \- User interface changes.                     |
-| 1.2.4.x \[SLC Main\] | Probe DVE removed. The following DVEs are created with this range: - IneoQuest iVMS ASM - Inspector Probe - IneoQuest iVMS ASM - Surveyor ABR Probe - IneoQuest iVMS ASM - IQDialogue Probe | 1.2.3.3      | \- User interface changes. - New DVE elements. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.2.0.x | - Uses API calls to retrieve info about the probes, assets, streams, and alarms. <br>- Uses SNMP to receive traps. | - | - New firmware using new API |
+| 1.2.1.x | - A new API call is used to retrieve stream details. <br>- The details are displayed as new columns in the Stream Monitoring Points table. | 1.2.0.2 | - |
+| 1.2.2.x | - Open Alarms table renamed to Alarm Log and new Open Alarms table added. <br>- DVE functionality added to create an element for each probe on demand. | 1.2.1.3 | - User interface changes. |
+| 1.2.4.x [SLC Main] | Probe DVE removed. The following DVEs are created with this range: <br>- IneoQuest iVMS ASM <br>- Inspector Probe <br>- IneoQuest iVMS ASM <br>- Surveyor ABR Probe <br>- IneoQuest iVMS ASM <br>- IQDialogue Probe | 1.2.3.3 | - User interface changes. <br>- New DVE elements. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 1.1.0.x   | 4.01.01.23             |
 | 1.2.0.x   | 5.06.00                |
 | 1.2.1.x   | 5.06.00                |
@@ -30,14 +30,14 @@ The **IneoQuest iVMS ASM** is a management system for OTT/multi-screen adaptive 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                              | **Exported Components**                                                                                                                                                                                                                                                                                                                           |
-|-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | IneoQuest iVMS ASM - Inspector Probe IneoQuest iVMS ASM - Surveyor ABR Probe IneoQuest iVMS ASM - IQDialogue Probe |                                                                                                                                                                                                                                                                                                                                                   |
-| 1.1.0.x   | No                  | Yes                     | IneoQuest iVMS ASM - Inspector Probe IneoQuest iVMS ASM - Surveyor ABR Probe IneoQuest iVMS ASM - IQDialogue Probe |                                                                                                                                                                                                                                                                                                                                                   |
-| 1.2.0.x   | No                  | Yes                     | \-                                                                                                                 | \-                                                                                                                                                                                                                                                                                                                                                |
-| 1.2.1.x   | No                  | Yes                     | \-                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                   |
-| 1.2.2.x   | No                  | Yes                     | \-                                                                                                                 | [IneoQuest iVMS ASM - Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_Probe)                                                                                                                                                                                                                                                              |
-| 1.2.4.x   | No                  | Yes                     | \-                                                                                                                 | \- [IneoQuest iVMS ASM - Inspector Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_Inspector_Probe) - [IneoQuest iVMS ASM - Surveyor ABR Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_Surveyor_ABR_Probe) - [IneoQuest iVMS ASM - IQDialogue Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_IQDialogue_Probe) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | IneoQuest iVMS ASM <br>- Inspector Probe IneoQuest iVMS ASM <br>- Surveyor ABR Probe IneoQuest iVMS ASM <br>- IQDialogue Probe |  |
+| 1.1.0.x | No | Yes | IneoQuest iVMS ASM <br>- Inspector Probe IneoQuest iVMS ASM <br>- Surveyor ABR Probe IneoQuest iVMS ASM <br>- IQDialogue Probe |  |
+| 1.2.0.x | No | Yes | - | - |
+| 1.2.1.x | No | Yes | - |  |
+| 1.2.2.x | No | Yes | - | [IneoQuest iVMS ASM - Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_Probe) |
+| 1.2.4.x | No | Yes | - | - [IneoQuest iVMS ASM - Inspector Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_Inspector_Probe) <br>- [IneoQuest iVMS ASM - Surveyor ABR Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_Surveyor_ABR_Probe) <br>- [IneoQuest iVMS ASM - IQDialogue Probe](xref:Connector_help_IneoQuest_iVMS_ASM_-_IQDialogue_Probe) |
 
 ## Configuration
 

@@ -12,13 +12,13 @@ This connector provides support for a management solution that aims to assure th
 
 | **Range**            | **Key Features**   | **Based on** | **System Impact** |
 |----------------------|--------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Service monitoring | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Service monitoring | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | \-                  | \-                      |                       |                         |
+| 1.0.0.x   | -                   | -                       |                       |                         |
 
 ## Configuration
 

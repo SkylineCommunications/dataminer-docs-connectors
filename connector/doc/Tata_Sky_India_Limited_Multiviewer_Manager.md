@@ -14,13 +14,13 @@ The multiviewer is responsible for the orchestration and displaying of the chann
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                              | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                  | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Automation script: TSK-AS-Multiviewer (Solution available on GitHub) Service Provision Element - Tata Sky India Limited MCR DC Provision Connector | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Automation script: TSK-AS-Multiviewer (Solution available on GitHub) Service Provision Element - Tata Sky India Limited MCR DC Provision Connector | -                       |
 
 ## Configuration
 

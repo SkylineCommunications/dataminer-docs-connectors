@@ -14,7 +14,7 @@ The following connector will be used in order to properly configure and monitor 
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | Yes                     |
 
 ### Product Info
 

@@ -12,22 +12,22 @@ This connector uses serial communication to allow monitoring of the Miteq RSU-B.
 
 | **Range**            | **Key Features**                                                                                          | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                                          | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | On these devices, the response starts by repeating the original command, followed by the normal response. | \-           | \-                |
+| 1.0.0.x              | Initial version.                                                                                          | -            | -                 |
+| 1.1.0.x [SLC Main]   | On these devices, the response starts by repeating the original command, followed by the normal response. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.1.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.1.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

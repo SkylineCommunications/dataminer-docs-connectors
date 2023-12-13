@@ -14,8 +14,8 @@ The purpose of this connector is to provide the capability to listen to printed 
 
 | **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version. Processes incoming serial alarms. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Fixed some parameter descriptions.                 | 1.0.0.x      | \-                |
+| 1.0.0.x [Obsolete]     |Initial version. Processes incoming serial alarms. | -            | -                 |
+| 1.0.1.x [SLC Main]   | Fixed some parameter descriptions.                 | 1.0.0.x      | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The purpose of this connector is to provide the capability to listen to printed 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

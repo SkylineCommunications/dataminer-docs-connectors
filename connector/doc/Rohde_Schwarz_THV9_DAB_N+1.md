@@ -14,7 +14,7 @@ This SNMP connector can be used to monitor and configure the Rohde Schwarz THV9 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This SNMP connector can be used to monitor and configure the Rohde Schwarz THV9 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                                    |
 |-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | **THV9 DAB N+1 - Transmitter**: In range 1.0.0.x, there are two transmitters. For each transmitter, a DVE is exported. |
+| 1.0.0.x   | No                  | Yes                     | -                     | **THV9 DAB N+1 - Transmitter**: In range 1.0.0.x, there are two transmitters. For each transmitter, a DVE is exported. |
 
 ## Configuration
 

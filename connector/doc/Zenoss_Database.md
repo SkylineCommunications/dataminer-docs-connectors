@@ -14,25 +14,25 @@ The connector will create **Zenoss Database - Element** DVEs based on the inform
 
 | **Range**            | **Key Features**        | **Based on** | **System Impact** |
 |----------------------|-------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial                 | \-           | \-                |
-| 2.0.0.x              | HTTP JSON; DVE version. | \-           | \-                |
-| 2.1.0.x \[SLC Main\] | Device components.      | \-           | \-                |
+| 1.0.0.x              | Initial                 | -            | -                 |
+| 2.0.0.x              | HTTP JSON; DVE version. | -            | -                 |
+| 2.1.0.x [SLC Main]   | Device components.      | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**       |
+| Range     | Supported Firmware           |
 |-----------|------------------------------|
-| 1.0.0.x   | \-                           |
+| 1.0.0.x   | -                            |
 | 2.0.0.x   | Zenoss 6.2.0 r138 Enterprise |
 | 2.1.0.x   | ZenossCore 5.3.3 r419        |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                          |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                              |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    |                                                                                  |
-| 2.0.0.x   | No                  | Yes                     | \-                    |                                                                                  |
-| 2.1.0.x   | No                  | Yes                     | \-                    | [Zenoss Database - Element](xref:Connector_help_Zenoss_Database_-_Element) |
+| 1.0.0.x   | No                  | No                      | -                     |                                                                                  |
+| 2.0.0.x   | No                  | Yes                     | -                     |                                                                                  |
+| 2.1.0.x   | No                  | Yes                     | -                     | [Zenoss Database - Element](xref:Connector_help_Zenoss_Database_-_Element) |
 
 ## Configuration
 

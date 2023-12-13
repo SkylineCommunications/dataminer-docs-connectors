@@ -16,7 +16,7 @@ This connector allows the monitoring and control of the Block Up Converter via s
 
 ### Product Info
 
-| **Range** | **Supported Firmware**      |
+| Range     | Supported Firmware          |
 |-----------|-----------------------------|
 | 1.0.0.x   | ACFIRM-M9-TX-V232-COD-01-00 |
 
@@ -24,7 +24,7 @@ This connector allows the monitoring and control of the Block Up Converter via s
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
