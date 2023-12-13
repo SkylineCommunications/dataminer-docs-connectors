@@ -19,7 +19,7 @@ The connector polls information from the **Ericsson SO-EM** (EMS) through the **
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                       |
+| Range     | Device Firmware Version                           |
 |------------------|---------------------------------------------------|
 | 1.0.0.x          | Performance Management System (PFM) version 18.3. |
 | 1.0.1.x          | Performance Management System (PFM) version 18.3. |

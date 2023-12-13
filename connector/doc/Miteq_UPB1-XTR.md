@@ -15,7 +15,7 @@ This connector uses SNMP to monitor and configure the Miteq UPB1-XTR.
 | **Range**     | **Description**                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                                                   | No                  | Yes                     |
-| 2.0.0.x \[SLC Main\] | **Impacting changes** when moving from another range to this one. Recreated version to match the UX of the Miteq DNB1-XTR 1.0.0.X | No                  | Yes                     |
+| 2.0.0.x [SLC Main]   | **Impacting changes** when moving from another range to this one. Recreated version to match the UX of the Miteq DNB1-XTR 1.0.0.X | No                  | Yes                     |
 
 ### Product Info
 
@@ -34,13 +34,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device, by default *public*.
-- **Set community string:** The community string used when setting values on the device, by default *private*.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage
 

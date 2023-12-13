@@ -12,7 +12,7 @@ This connector retrieves and monitors data from the device. The **Enensys InverT
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | SNMP connection  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | SNMP connection  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector retrieves and monitors data from the device. The **Enensys InverT
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

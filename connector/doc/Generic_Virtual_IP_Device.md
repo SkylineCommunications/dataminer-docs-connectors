@@ -14,7 +14,7 @@ The parameters that indicate the values of the IP addresses are used both for co
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ### Linked connectors
 

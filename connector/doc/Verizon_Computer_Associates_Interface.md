@@ -10,11 +10,11 @@ The Verizon Computer Associates Interface collects trending data from the collec
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | \- SLNet GetTrendMessage - SCP                     | \-           | \-                |
-| 1.0.1.x              | Data retrieval from central database implemented.  | 1.0.0.1      | \-                |
-| 1.0.2.x \[SLC Main\] | Data retrieval from CSV offload files implemented. | 1.0.1.6      | \-                |
+| Range              | Key Features                                       | Based on | System Impact |
+|--------------------|----------------------------------------------------|----------|---------------|
+| 1.0.0.x            | - SLNet GetTrendMessage <br>- SCP                  | -        | -             |
+| 1.0.1.x            | Data retrieval from central database implemented.  | 1.0.0.1  | -             |
+| 1.0.2.x [SLC Main] | Data retrieval from CSV offload files implemented. | 1.0.1.6  | -             |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ The Verizon Computer Associates Interface collects trending data from the collec
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

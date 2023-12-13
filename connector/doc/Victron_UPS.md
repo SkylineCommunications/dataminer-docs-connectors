@@ -22,8 +22,8 @@ The **Victron UPS** operates in the **SNMP** protocol and in the serial **Modbus
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
-| 1.0.1.x          | \-                          |
+| 1.0.0.x          | -                           |
+| 1.0.1.x          | -                           |
 | 2.0.0.x          | Modbus TCP                  |
 
 ## Installation and configuration

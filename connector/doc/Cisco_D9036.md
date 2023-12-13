@@ -43,7 +43,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**
 
-- **IP Address/host:** The polling IP address of the device you wish to poll.
+- **IP address/host**: The polling IP address of the device you wish to poll.
 - The other settings, such as Get/Set community string, retries and port number, are ignored by the connector.
 
 ### Troubleshooting New Elements

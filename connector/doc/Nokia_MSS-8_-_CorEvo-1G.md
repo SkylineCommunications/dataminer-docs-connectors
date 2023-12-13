@@ -10,7 +10,7 @@ The Nokia Wavence family includes encryption functionality based on an encryptio
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ## Configuration
 

@@ -12,25 +12,25 @@ The XRF4 is a non-blocking, high-density wideband RF router for signals from 40 
 
 | **Range**            | **Key Features**                 | **Based on** | **System Impact**                                                 |
 |----------------------|----------------------------------|--------------|-------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                 | \-           | \-                                                                |
+| 1.0.0.x [Obsolete]     |Initial version.                 | -            | -                                                                 |
 | 1.0.1.x              | Redundant polling.               | 1.0.0.1      | Connection setting.                                               |
-| 1.0.2.x \[SLC Main\] | Display discrete values changed. | 1.0.1.1      | Potentially affects alarms, Visual Overviews, Automation scripts. |
+| 1.0.2.x [SLC Main]   | Display discrete values changed. | 1.0.1.1      | Potentially affects alarms, Visual Overviews, Automation scripts. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.0                    |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

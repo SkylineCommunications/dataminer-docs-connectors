@@ -14,19 +14,19 @@ This SNMP connector contains different tables that allow the user to monitor and
 
 | **Range**            | **Key Features**                                           | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Monitoring. - Configuration of both inputs and outputs. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | \- Monitoring. - Configuration of both inputs and outputs. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

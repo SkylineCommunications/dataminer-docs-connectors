@@ -20,7 +20,7 @@ This connector displays information that is polled from the device with **SNMP**
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 1.3                         |
+| 1.0.0.x [SLC Main]   | 1.3                         |
 
 ## Installation and configuration
 

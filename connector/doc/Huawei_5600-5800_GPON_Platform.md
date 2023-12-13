@@ -12,8 +12,8 @@ The Huawei 5600-5800 GPON Platform connector uses an SNMP connection to communic
 
 | **Range** | **Key Features**                                                                   | **Based on** | **System Impact** |
 |-----------|------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | \- Initial version. - Compatibility with Skyline EPM Solution.                     | \-           | \-                |
-| 1.0.1.x   | Modified passive logic. Now it is compatible with routes, distributions, and FATs. | 1.0.0.6      | \-                |
+| 1.0.0.x   | \- Initial version. - Compatibility with Skyline EPM Solution.                     | -            | -                 |
+| 1.0.1.x   | Modified passive logic. Now it is compatible with routes, distributions, and FATs. | 1.0.0.6      | -                 |
 
 ### Product Info
 
@@ -24,10 +24,10 @@ The Huawei 5600-5800 GPON Platform connector uses an SNMP connection to communic
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                  | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                      | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | \-                      |
+| 1.0.0.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | -                       |
+| 1.0.1.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | -                       |
 
 ## Configuration
 

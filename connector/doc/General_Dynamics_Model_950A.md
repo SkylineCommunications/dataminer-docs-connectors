@@ -12,33 +12,33 @@ This connector includes basic commands for the system.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                     | **Based on** | **System Impact**                                                              |
-|----------------------|------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                     | \-           | \-                                                                             |
-| 1.0.1.x \[Obsolete\] | Additional commands added. Parameter descriptions changed.                                           | \-           | \-                                                                             |
-| 1.0.2.x              | RF parameters page removed, and parameters added to profile page.                                    | \-           | Visio files and dashboards linked to the RF page will no longer be compatible. |
-| 2.0.0.x              | **Complete review:** - Profiles - RF & config parameters - Point modes - Acquire modes - Track modes | \-           | \-                                                                             |
-| 2.0.1.x              | Command processing changed.                                                                          | \-           | \-                                                                             |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [Obsolete] | Additional commands added. Parameter descriptions changed. | - | - |
+| 1.0.2.x | RF parameters page removed, and parameters added to profile page. | - | Visio files and dashboards linked to the RF page will no longer be compatible. |
+| 2.0.0.x | **Complete review:** <br>- Profiles <br>- RF & config parameters <br>- Point modes <br>- Acquire modes <br>- Track modes | - | - |
+| 2.0.1.x | Command processing changed. | - | - |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**      |
-|-----------|----------------------------------|
-| 1.0.0.x   | N/A                              |
-| 1.0.1.x   | N/A                              |
-| 1.0.2.x   | N/A                              |
-| 2.0.0.x   | Model 950A.2.28d Model 950A 3.0+ |
-| 2.0.1.x   | N/A                              |
+| Range     | Device Firmware Version              |
+|-----------|--------------------------------------|
+| 1.0.0.x   | N/A                                  |
+| 1.0.1.x   | N/A                                  |
+| 1.0.2.x   | N/A                                  |
+| 2.0.0.x   | Model 950A.2.28d <br>Model 950A 3.0+ |
+| 2.0.1.x   | N/A                                  |
 
 ### Product Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

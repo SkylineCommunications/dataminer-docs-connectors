@@ -12,24 +12,24 @@ The connector monitors the instances, engines, models, and custom models. Among 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                              | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                                                                                                                                                                                                                               | \-           | \-                |
-| 1.0.1.x              | \- Added Recent Session Instances Table to the Instances page. - Adjustments to sets on the Instances table. - Reworked License Status functionality of the Languages table. - Added columns to Instances, Topic Model, and Languages tables. | 1.0.0.4      | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version | - | - |
+| 1.0.1.x | - Added Recent Session Instances Table to the Instances page. <br>- Adjustments to sets on the Instances table. <br>- Reworked License Status functionality of the Languages table. <br>- Added columns to Instances, Topic Model, and Languages tables. | 1.0.0.4 | - |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 1.0.1.x   | 10.0.10.0 - 9454       |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
+| 1.0.1.x   | No                  | Yes                     | -                    | -                      |
 
 ## Configuration
 
@@ -66,5 +66,5 @@ On the Instances page, you can perform the following actions:
 
 - Right-click menu options:
 
-- **Add:** Opens a window where you can specify the basic parameters to create a new instance.
+  - **Add:** Opens a window where you can specify the basic parameters to create a new instance.
   - **Delete:** Allows you to delete an instance.

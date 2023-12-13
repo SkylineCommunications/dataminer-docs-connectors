@@ -16,8 +16,8 @@ The connector has several pages with general information, alarms, power supply, 
 
 ### SNMP Connection
 
-- **IP address/host:** The polling IP of the device, e.g. *172.27.64.55*.
-- **Device address:** Not needed.
+- **IP address/host**: The polling IP of the device, e.g. *172.27.64.55*.
+- **Device address**: Not needed.
 
 ### SNMP Setting
 

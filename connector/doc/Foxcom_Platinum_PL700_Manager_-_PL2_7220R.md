@@ -12,19 +12,19 @@ This is a module for the Foxcom Platinum PL700 Manager. This module has 2 **rece
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.2.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.2.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.2.x   | \-                     |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     |
 |-----------|---------------------|-------------------------|-----------------------|
-| 1.0.2.x   | No                  | Yes                     | \-                    |
+| 1.0.2.x   | No                  | Yes                     | -                     |
 
 ## Configuration
 

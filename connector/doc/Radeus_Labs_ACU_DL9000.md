@@ -12,11 +12,11 @@ The 9000 ACU is compatible with industry-standard drive cabinet interfaces and l
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**        |
+| Range     | Supported Firmware            |
 |-----------|-------------------------------|
 | 1.0.0.x   | V9k-RC128 Database version 23 |
 
@@ -24,7 +24,7 @@ The 9000 ACU is compatible with industry-standard drive cabinet interfaces and l
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

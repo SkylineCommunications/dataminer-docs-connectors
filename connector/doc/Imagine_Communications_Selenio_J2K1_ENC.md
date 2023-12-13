@@ -29,7 +29,7 @@ Starting from version **3.0.0.1**, **DVEs** can be created for the 4 encoder cha
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                  |
+| Range     | Device Firmware Version                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.90.x         | 1.0.90                                                                                                                       |
 | 1.1.0.x          | 2.0.13                                                                                                                       |

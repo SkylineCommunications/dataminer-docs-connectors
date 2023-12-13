@@ -12,8 +12,8 @@ This connector implements the BBright UHD-Decode API. Communication happens via 
 
 | **Range**            | **Key Features**                                                                                                 | **Based on** | **System Impact**         |
 |----------------------|------------------------------------------------------------------------------------------------------------------|--------------|---------------------------|
-| 1.0.0.x              | Initial version.                                                                                                 | \-           | \-                        |
-| 1.1.0.x \[SLC Main\] | Added support for ASI interfaces. Changed implementation to accommodate latest firmware response format changes. | 1.0.0.x      | Not backwards compatible. |
+| 1.0.0.x              | Initial version.                                                                                                 | -            | -                         |
+| 1.1.0.x [SLC Main]   | Added support for ASI interfaces. Changed implementation to accommodate latest firmware response format changes. | 1.0.0.x      | Not backwards compatible. |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector implements the BBright UHD-Decode API. Communication happens via 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

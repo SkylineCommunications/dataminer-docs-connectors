@@ -12,12 +12,12 @@ This connector integrates with the Ooyala Flex platform. It uses the REST API to
 
 | **Range**            | **Key Features**                                                             | **Based on** | **System Impact**   |
 |----------------------|------------------------------------------------------------------------------|--------------|---------------------|
-| 1.0.0.x              | Initial version                                                              | \-           | \-                  |
-| 1.0.1.x \[SLC Main\] | Add smart-serial connection to listen for messages from the Ooyala platform. | 1.0.0.1      | Adds new connection |
+| 1.0.0.x              | Initial version                                                              | -            | -                   |
+| 1.0.1.x [SLC Main]   | Add smart-serial connection to listen for messages from the Ooyala platform. | 1.0.0.1      | Adds new connection |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**   |
+| Range     | Supported Firmware       |
 |-----------|--------------------------|
 | 1.0.0.x   | Ooyala Flex 7.1 REST API |
 | 1.0.1.x   | Ooyala Flex 7.1 REST API |
@@ -26,8 +26,8 @@ This connector integrates with the Ooyala Flex platform. It uses the REST API to
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

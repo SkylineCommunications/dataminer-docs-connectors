@@ -34,8 +34,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP.
-- **IP Port:** The IP port of the destination.
+- **IP address/host**: The polling IP.
+- **IP port**: The IP port of the destination.
 
 #### SNMP Secondary Connection
 
@@ -43,8 +43,8 @@ This connector uses an SNMP connection to gather interface information and requi
 
 SNMP CONNECTION
 
-- **IP address/host:** The IP of the SNMP connection.
-- **IP Port:** The IP port of the destination, by default *161*.
+- **IP address/host**: The IP of the SNMP connection.
+- **IP port**: The IP port of the destination, by default *161*.
 
 ## Usage (1.0.0.x)
 

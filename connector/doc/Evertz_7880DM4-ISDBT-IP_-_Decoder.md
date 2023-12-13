@@ -14,9 +14,9 @@ The Evertz 7880DM4-ISDBT-IP - Decoder connector uses **SNMP** to retrieve data f
 
 | **Range**            | **Key Features**                            | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                            | \-           | \-                |
-| 1.0.1.x              | Changed the DVE and tree view distribution. | \-           | \-                |
-| 1.0.2.x \[SLC Main\] | Added HTTP connection.                      | \-           | \-                |
+| 1.0.0.x [Obsolete]     |Initial version.                            | -            | -                 |
+| 1.0.1.x              | Changed the DVE and tree view distribution. | -            | -                 |
+| 1.0.2.x [SLC Main]   | Added HTTP connection.                      | -            | -                 |
 
 ### Product Info
 

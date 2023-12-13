@@ -12,19 +12,19 @@ The GENUS series is a set of modular chassis that can be fitted with a variety o
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                              |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                                                                                                                                                                                                                                                                                  |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | - ETL Systems Genus - CPU<br>- ETL Systems Genus - PSU<br>- ETL Systems Genus - Splitter-Combiner<br>- [ETL Systems Genus - 22544](xref:Connector_help_ETL_Systems_Genus_-_22544) |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | - ETL Systems Genus - CPU<br>- ETL Systems Genus - PSU<br>- ETL Systems Genus - Splitter-Combiner<br>- [ETL Systems Genus - 22544](xref:Connector_help_ETL_Systems_Genus_-_22544) |
 
 ## Configuration
 

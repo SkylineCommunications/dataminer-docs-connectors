@@ -18,7 +18,7 @@ Note: This connector will export different connectors based on the retrieved dat
 
 | **Range**     | **Description**                                                                                                                                           | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                                                                                                                          | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version.                                                                                                                                          | No                  | Yes                     |
 | 1.0.1.x              | Some parameters descriptions have been modified, which can cause the loss of alarms and trend data for these parameters.                                  | No                  | Yes                     |
 | 1.0.2.x              | Added support for HT35xxH & HT330xH.                                                                                                                      | No                  | Yes                     |
 | 1.0.3.x              | Fixed DVE creation for HT35xxH & HT330xH. Added AT Status Unsupported Cards table. Renamed HT330xH to HT33xxH. **Impact**: The element must be recreated. | No                  | Yes                     |

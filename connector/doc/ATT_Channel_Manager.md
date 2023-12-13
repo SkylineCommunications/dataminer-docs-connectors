@@ -49,7 +49,7 @@ The channel manager solution comes in the form of a single instance of a DataMin
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 3.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 3.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 
 

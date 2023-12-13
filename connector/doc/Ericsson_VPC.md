@@ -34,7 +34,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
-- **Bus Address:** The bus address of the device.\[default value: "*bypassproxy*"\]
+- **Bus address**: The bus address of the device.\[default value: "*bypassproxy*"\]
 
 ### Configuration
 

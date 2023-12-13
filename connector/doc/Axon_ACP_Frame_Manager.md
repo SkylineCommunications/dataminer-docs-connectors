@@ -16,11 +16,11 @@ This connector can create different elements based on the retrieved data. Whethe
 
 | **Range**            | **Description** | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                                                                          |
+| Range     | Supported Firmware                                                                                                                                                                              |
 |-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | **ERS118:** 0801, 0901, 1001, 1201, 1601, 1801, 1901, 2001, 2201,2301 **ERC108:** 1801,1901,2001,2101,2201 **ERC118:** 2001, 2201 **RRS08:** 1801, 3400, 3600 **RRS18:** 1801, 3100, 3400, 3600 |
 

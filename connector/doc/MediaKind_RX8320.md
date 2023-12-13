@@ -12,13 +12,13 @@ The MediaKind RX8320 is a very versatile piece of equipment. It comes in many di
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | \-           | \-                |
+| 1.0.0.x   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**     |
+| Range     | Supported Firmware         |
 |-----------|----------------------------|
 | 1.0.0.x   | SW Version 8.36.1 (Bank 1) |
 
@@ -26,7 +26,7 @@ The MediaKind RX8320 is a very versatile piece of equipment. It comes in many di
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

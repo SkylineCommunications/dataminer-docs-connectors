@@ -12,12 +12,12 @@ This connector is used to monitor an HP Synergy device via the HP OneView manage
 
 | **Range**            | **Key Features**         | **Based on** | **System Impact**                                   |
 |----------------------|--------------------------|--------------|-----------------------------------------------------|
-| 1.0.0.x              | Initial version          | \-           | \-                                                  |
-| 1.0.1.x \[SLC Main\] | Add support for Unicode. | 1.0.0.3      | Element must be recreated. Saved data will be lost. |
+| 1.0.0.x              | Initial version          | -            | -                                                   |
+| 1.0.1.x [SLC Main]   | Add support for Unicode. | 1.0.0.3      | Element must be recreated. Saved data will be lost. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**   |
+| Range     | Supported Firmware       |
 |-----------|--------------------------|
 | 1.0.0.x   | OneView API Version 1000 |
 | 1.0.1.x   | OneView API Version 1000 |
@@ -26,8 +26,8 @@ This connector is used to monitor an HP Synergy device via the HP OneView manage
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

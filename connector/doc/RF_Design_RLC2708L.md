@@ -36,14 +36,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device, e.g. 172.16.201.84.
-- **Device address:** Not used.
+- **IP address/host**: The polling IP of the device, e.g. 172.16.201.84.
+- **Device address**: Not used.
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default 161.
-- **Get community string:** The community string used when reading values from the device. The default value is public.
-- **Set community string:** The community string used when setting values on the device. The default value is private.
+- **Port number**: The port of the connected device, by default 161.
+- **Get community string**: The community string used when reading values from the device. The default value is public.
+- **Set community string**: The community string used when setting values on the device. The default value is private.
 - **Timeout of a single command (ms):** The timeout is used when the DMA does not receive a response from the device. The default value is 1500.
 
 ## Usage

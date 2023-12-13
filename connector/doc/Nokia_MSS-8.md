@@ -10,19 +10,19 @@ The Nokia Wavence **Microwave Service Switch** provides advanced Carrier Etherne
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                           |
-|-----------|---------------------|-------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \- [Nokia MSS-8 - CorEvo-1G](xref:Connector_help_Nokia_MSS-8_-_CorEvo-1G) - [Nokia MSS-8 - EASv2](xref:Connector_help_Nokia_MSS-8_-_EASv2) - [Nokia MSS-8 - MPT-HLS](xref:Connector_help_Nokia_MSS-8_-_MPT-HLS) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - [Nokia MSS-8 - CorEvo-1G](xref:Connector_help_Nokia_MSS-8_-_CorEvo-1G) <br>- [Nokia MSS-8 - EASv2](xref:Connector_help_Nokia_MSS-8_-_EASv2) <br>- [Nokia MSS-8 - MPT-HLS](xref:Connector_help_Nokia_MSS-8_-_MPT-HLS) |
 
 ## Configuration
 

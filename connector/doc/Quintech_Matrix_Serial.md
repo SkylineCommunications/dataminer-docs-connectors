@@ -14,7 +14,7 @@ This connector uses a serial connection to display information on a Quintech mat
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector uses a serial connection to display information on a Quintech mat
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -39,7 +39,7 @@ This connector uses a serial connection and requires the following input during 
 Serial CONNECTION:
 
 - **IP address/host**: The polling IP of the device, e.g. *172.19.19.30*.
-- **IP Port:** The polling IP port (default: *9100*).
+- **IP port**: The polling IP port (default: *9100*).
 - **Bus Address**: Default: *ff* (version 1.0.0.6).
 
 ## How to use

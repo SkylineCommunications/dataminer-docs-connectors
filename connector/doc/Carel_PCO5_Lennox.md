@@ -14,7 +14,7 @@ The connector communicates via a TCP/IP connection using the MODBUS RTU protocol
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The connector communicates via a TCP/IP connection using the MODBUS RTU protocol
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -40,7 +40,7 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Bus address:** between 0 and 255
+  - **Bus address**: between 0 and 255
   - **Baudrate**: Should match the settings on the pCO5 and application.
   - **Databits**: Should match the settings on the pCO5 and application.
   - **Stopbits**: Should match the settings on the pCO5 and application.

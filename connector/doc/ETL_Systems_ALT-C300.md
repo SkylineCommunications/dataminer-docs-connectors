@@ -15,11 +15,11 @@ Ranges of the connector
 | **Range**     | **Description**                                                                                   | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|---------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                                                  | Yes                 | Yes                     |
-| 1.0.1.x \[SLC main\] | Based on 1.0.0.3. Fixed validator error regarding table index using discreet as measurement type. | Yes                 | Yes                     |
+| 1.0.1.x [SLC Main]   | Based on 1.0.0.3. Fixed validator error regarding table index using discreet as measurement type. | Yes                 | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                         |
+| Range     | Device Firmware Version                             |
 |------------------|-----------------------------------------------------|
 | 1.0.1.x          | ETL Systems Ltd, ALTO Amplifier, e333 Version 04.31 |
 

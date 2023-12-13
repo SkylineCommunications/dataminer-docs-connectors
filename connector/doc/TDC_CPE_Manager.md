@@ -23,17 +23,17 @@ The **TDC CPE Manager** is part of a CPE setup and is responsible for aggregatin
 
 | **Range**                | **Key Features**                                        | **Based on** | **System Impact**             |
 |--------------------------|---------------------------------------------------------|--------------|-------------------------------|
-| 1.0.0.x **\[Obsolete\]** | Initial version                                         | \-           | \-                            |
-| 3.0.1.x **\[Obsolete\]** | New CPE integration                                     | 3.0.0.4      | \-                            |
+| 1.0.0.x **\[Obsolete\]** | Initial version                                         | -            | -                             |
+| 3.0.1.x **\[Obsolete\]** | New CPE integration                                     | 3.0.0.4      | -                             |
 | 3.0.2.x **\[SLC Main\]** | Added CpeConfigHelper to get and set CPE configuration. | 3.0.1.25     | Increased minimum DMA version |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                     | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                         | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                                        | \-                      |
-| 3.0.1.x   | No                  | Yes                     | \-                                        | \-                      |
-| 3.0.2.x   | No                  | Yes                     | TDC OLT CM Collector connector (view tables) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                                         | -                       |
+| 3.0.1.x   | No                  | Yes                     | -                                         | -                       |
+| 3.0.2.x   | No                  | Yes                     | TDC OLT CM Collector connector (view tables) | -                       |
 
 ## Installation and configuration
 

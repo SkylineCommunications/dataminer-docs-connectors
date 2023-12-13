@@ -12,19 +12,19 @@ This is a generic connector intended to monitor display devices using the TSL pr
 
 | **Range** | **Key Features**                                                                                        | **Based on** | **System Impact** |
 |-----------|---------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | \- Initial version. - Features: republish tallies, add publisher, add functions, and process CSV files. | \-           | \-                |
+| 1.0.0.x   | \- Initial version. - Features: republish tallies, add publisher, add functions, and process CSV files. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,22 +12,22 @@ The Generic Trap Forwarder is a generic connector that can be used to save all i
 
 | **Range**            | **Key Features**                                                                | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Adapted to show information of up to 30 bindings. Custom port to forward traps. | \-           | \-                |
+| 1.0.0.x [Obsolete]     |Initial version.                                                                | -            | -                 |
+| 1.0.1.x [SLC Main]   | Adapted to show information of up to 30 bindings. Custom port to forward traps. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

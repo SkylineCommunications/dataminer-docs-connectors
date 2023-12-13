@@ -17,7 +17,7 @@ This connector will read an FTP file containing the information regarding the bl
 **Serial Connection:**
 
 - **IP Address/host**: The polling IP of the device, e.g. *172.16.21.50*.
-- **IP Port:** The destination port, e.g. *21*.
+- **IP port**: The destination port, e.g. *21*.
 
 ## Usage
 

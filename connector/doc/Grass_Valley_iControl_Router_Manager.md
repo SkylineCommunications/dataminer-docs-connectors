@@ -14,11 +14,11 @@ The iControl Router Manager is a graphical user interface that provides advanced
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                |
+| Range     | Supported Firmware                    |
 |-----------|---------------------------------------|
 | 1.0.0.x   | iControl version 8.10 - REST API v1.0 |
 
@@ -26,7 +26,7 @@ The iControl Router Manager is a graphical user interface that provides advanced
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

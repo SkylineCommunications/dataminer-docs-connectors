@@ -10,9 +10,9 @@ The Eaton PDU connector is used to monitor the **Eaton Power Distribution Unit**
 
 ### Version Info
 
-| **Range**            | **Key Features**                                | **Based on** | **System Impact** |
+| Range                | Key Features                                    | Based on     | System Impact     |
 |----------------------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. Monitors the EATON PDU system. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. Monitors the EATON PDU system. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Eaton PDU connector is used to monitor the **Eaton Power Distribution Unit**
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

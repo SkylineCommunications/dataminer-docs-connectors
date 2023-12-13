@@ -21,8 +21,8 @@ This connector is exported by the parent connector **Sony PWS-110SC1**, from ver
 
 | **Range**            | **Key Features**                            | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                             | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | New features are only for DVEs of type XVS. | 1.0.0.24     | None              |
+| 1.0.0.x              | Initial version                             | -            | -                 |
+| 1.0.1.x [SLC Main]   | New features are only for DVEs of type XVS. | 1.0.0.24     | None              |
 
 ### Product Info
 

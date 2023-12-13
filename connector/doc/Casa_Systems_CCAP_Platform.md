@@ -12,34 +12,34 @@ The Casa Systems CCAP Platform is an SNMP connector that collects relevant data 
 
 | **Range**            | **Key Features**                          | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                          | \-           | \-                |
-| 1.0.1.x              | Modifications for compatibility with EPM. | \-           | \-                |
-| 1.0.2.x              | Compatibility with new EPM Solution.      | \-           | \-                |
-| 1.0.3.x              | Modifications to improve performance.     | \-           | \-                |
-| 1.0.4.x \[SLC Main\] | Updated the minimum DataMiner version.    | \-           | \-                |
-| 1.0.5.x              | Modifications to improve performance      | \-           | \-                |
+| 1.0.0.x              | Initial version.                          | -            | -                 |
+| 1.0.1.x              | Modifications for compatibility with EPM. | -            | -                 |
+| 1.0.2.x              | Compatibility with new EPM Solution.      | -            | -                 |
+| 1.0.3.x              | Modifications to improve performance.     | -            | -                 |
+| 1.0.4.x [SLC Main]   | Updated the minimum DataMiner version.    | -            | -                 |
+| 1.0.5.x              | Modifications to improve performance      | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
-| 1.0.5.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
+| 1.0.5.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.4.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.5.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
