@@ -8,8 +8,8 @@ The **Generic Network Services Monitor** connector is used to monitor different 
 
 With this connector, you can run tests on selected network protocols. The following network services are currently supported:
 
-- **In range 1.0.0.x:** Ping, FTP, SMTP, DNS, HTTP, Web Service, Database, TCP, RTSP, RTMP, TFTP, RADIUS, SFTP, Network Share, Multiple Network Share, NTP, and SSH.
-- **In range 2.0.0.x:** Ping, FTP, SMTP, DNS, HTTP, Web Service, Database, TCP, RTSP, RTMP, TFTP, SFTP, NTP, Network Share, and Multiple Network Share.
+- **In range 1.0.0.x**: Ping, FTP, SMTP, DNS, HTTP, Web Service, Database, TCP, RTSP, RTMP, TFTP, RADIUS, SFTP, Network Share, Multiple Network Share, NTP, and SSH.
+- **In range 2.0.0.x**: Ping, FTP, SMTP, DNS, HTTP, Web Service, Database, TCP, RTSP, RTMP, TFTP, SFTP, NTP, Network Share, and Multiple Network Share.
 
 The time between two consecutive tests is configurable. For all tests, the response time can be trended.
 
@@ -19,10 +19,10 @@ Each test has its own page in the element. You can configure the **Interval Time
 
 ### Version Info
 
-| **Range**            | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]   | Initial version.                     | No                  | No                      |
-| 2.0.0.x [SLC Main]   | Allows multiple devices per element. | No                  | No                      |
+| Range              | Description                          | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                     | No              | No                  |
+| 2.0.0.x [SLC Main] | Allows multiple devices per element. | No              | No                  |
 
 ### Product Info
 
@@ -123,13 +123,16 @@ This test provides file access, file transfer, and file management over a secure
 ### Web Service page
 
 This test will invoke a web service method with the provided input data.
-To define arrays in the input table, C# syntax should be used, e.g. '*new \[\] {"1", "2", "3"}*'.
+
+To define arrays in the input table, C# syntax should be used, e.g. `new [] {"1", "2", "3"}`.
+
 The different parts of the response object are displayed in the output table.
 
 In range 1.0.0.x, to configure this test, open the **Select Method** subpage and fill in the location of the WSDL file that describes the web service. Then select the service and method that must be executed.
-In range 2.0.0.x, the WSDL location, service and method is configured in the same row as the other settings for the web service test.
 
-The location of the WSDL file can be a URL or local file path. In both instances, it will be saved under C:\Skyline DataMiner\Documents\GNSM\.
+In range 2.0.0.x, the WSDL location, service, and method are configured in the same row as the other settings for the web service test.
+
+The location of the WSDL file can be a URL or local file path. In both instances, it will be saved in the folder `C:\Skyline DataMiner\Documents\GNSM\`.
 
 ### RADIUS page (range 1.0.0.x only)
 
