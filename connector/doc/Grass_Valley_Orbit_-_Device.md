@@ -10,7 +10,7 @@ This connector is exported by the parent connector [**Grass Valley Orbit**](xref
 
 ### Product Info
 
-| **Range** | **Supported Firmware**             |
+| Range     | Supported Firmware                 |
 |-----------|------------------------------------|
 | 1.0.0.x   | GV Orbit Alarm API (version 1.0.0) |
 

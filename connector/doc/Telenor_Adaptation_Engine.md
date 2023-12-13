@@ -12,7 +12,7 @@ This connector is intended to be used to communicate with an API responsible for
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Providers table. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Providers table. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is intended to be used to communicate with an API responsible for
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ### Connections
 

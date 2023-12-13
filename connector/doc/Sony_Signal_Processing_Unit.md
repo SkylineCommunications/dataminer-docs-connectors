@@ -12,11 +12,11 @@ The **Sony NXL-FR16** and **Sony NXL-FR318** are processing units (chassis), to 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                       | **Based on** | **System Impact**                                                                                                                                                                                               |
-|----------------------|--------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                       | \-           | \-                                                                                                                                                                                                              |
-| 1.0.1.x              | Support for monitoring of Sony 2110 Device Interfaces. | 1.0.0.14     | NMI logic made generic to support other types of interfaces. NMI table renamed to ipAvInterfaces. Columns of Device table referring to NMI now have more generic naming/description. Export rules were adapted. |
-| 1.0.2.x \[SLC Main\] | Added DCF support.                                     | 1.0.1.9      | \-                                                                                                                                                                                                              |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x | Support for monitoring of Sony 2110 Device Interfaces. | 1.0.0.14 | NMI logic made generic to support other types of interfaces. NMI table renamed to ipAvInterfaces. Columns of Device table referring to NMI now have more generic naming/description. Export rules were adapted. |
+| 1.0.2.x [SLC Main] | Added DCF support. | 1.0.1.9 | - |
 
 ### Product Info
 
@@ -28,11 +28,11 @@ The **Sony NXL-FR16** and **Sony NXL-FR318** are processing units (chassis), to 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                      |
-|-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Sony Signal Processing Unit - NXLK-IP41F Sony Signal Processing Unit - NXLK-IP42F Sony Signal Processing Unit - NXLK-IP40F Sony Signal Processing Unit - NXLK-IP50Y Sony Signal Processing Unit - NXLK-IP45F |
-| 1.0.1.x   | No                  | Yes                     | \-                    | Sony Signal Processing Unit - NXLK-IP41F Sony Signal Processing Unit - NXLK-IP42F Sony Signal Processing Unit - NXLK-IP40F Sony Signal Processing Unit - NXLK-IP50Y Sony Signal Processing Unit - NXLK-IP45F |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | Sony Signal Processing Unit - NXLK-IP41F Sony Signal Processing Unit - NXLK-IP42F Sony Signal Processing Unit - NXLK-IP40F Sony Signal Processing Unit - NXLK-IP50Y Sony Signal Processing Unit - NXLK-IP45F |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | Sony Signal Processing Unit - NXLK-IP41F <br>Sony Signal Processing Unit - NXLK-IP42F <br>Sony Signal Processing Unit - NXLK-IP40F <br>Sony Signal Processing Unit - NXLK-IP50Y <br>Sony Signal Processing Unit - NXLK-IP45F |
+| 1.0.1.x | No | Yes | - | Sony Signal Processing Unit - NXLK-IP41F <br>Sony Signal Processing Unit - NXLK-IP42F <br>Sony Signal Processing Unit - NXLK-IP40F <br>Sony Signal Processing Unit - NXLK-IP50Y <br>Sony Signal Processing Unit - NXLK-IP45F |
+| 1.0.2.x | Yes | Yes | - | Sony Signal Processing Unit - NXLK-IP41F <br>Sony Signal Processing Unit - NXLK-IP42F <br>Sony Signal Processing Unit - NXLK-IP40F <br>Sony Signal Processing Unit - NXLK-IP50Y <br>Sony Signal Processing Unit - NXLK-IP45F |
 
 ## Configuration
 

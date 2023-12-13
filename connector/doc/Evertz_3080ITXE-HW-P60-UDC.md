@@ -12,7 +12,7 @@ This encoder with 3G/HD/SD SDI or IP/ASI MPEG2/H264/J2K inputs can be used to bu
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This encoder with 3G/HD/SD SDI or IP/ASI MPEG2/H264/J2K inputs can be used to bu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -36,8 +36,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP or URL of the destination.
-- **IP port:** The IP port of the destination
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination
 
 SNMP Settings:
 

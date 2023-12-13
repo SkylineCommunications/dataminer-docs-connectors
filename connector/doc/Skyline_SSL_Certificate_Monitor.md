@@ -8,13 +8,13 @@ This connector allows you to monitor the status of SSL certificates of websites.
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                             |
+| Range     | Supported Firmware                                                                 |
 |-----------|------------------------------------------------------------------------------------|
 | 1.0.0.x   | Virtual Driver System.Security.Cryptography.X509Certificates .Net Framework v4.6.2 |
 
@@ -22,7 +22,7 @@ This connector allows you to monitor the status of SSL certificates of websites.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

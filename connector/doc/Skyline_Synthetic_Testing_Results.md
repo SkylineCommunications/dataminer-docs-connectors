@@ -12,19 +12,19 @@ This connector is used in the Synthetic Test Solution and is intended to be the 
 
 | **Range**            | **Key Features**                | **Based on**                               | **System Impact** |
 |----------------------|---------------------------------|--------------------------------------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Synthetic Testing Results table | Skyline Service Definition Basic (1.0.0.9) | \-                |
+| 1.0.0.x [SLC Main]   | Synthetic Testing Results table | Skyline Service Definition Basic (1.0.0.9) | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -15,7 +15,7 @@ This device uses the **SNMP** protocol for the communication with the device.
 | **Range**     | **Description**  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version  | No                  | Yes                     |
-| 1.1.0.x \[SLC Main\] | Firmware changes | No                  | Yes                     |
+| 1.1.0.x [SLC Main]   | Firmware changes | No                  | Yes                     |
 
 ### Product Info
 

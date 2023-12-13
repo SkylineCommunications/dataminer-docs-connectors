@@ -18,9 +18,9 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION:**
 
-- **IP Address/host:** The polling IP of the server you wish to poll with **WMI.**
-- **IP Port:** The IP port of the device - Not required.
-- **Bus Address:** The bus address of the device - Not required.
+- **IP address/host**: The polling IP of the server you wish to poll with **WMI.**
+- **IP port**: The IP port of the device - Not required.
+- **Bus address**: The bus address of the device - Not required.
 
 ## Usage
 

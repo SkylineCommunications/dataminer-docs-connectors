@@ -14,11 +14,11 @@ With this protocol, an LPOD or SPOD amplifier can be monitored and configured as
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
+| Range     | Device Firmware Version            |
 |------------------|------------------------------------|
 | 1.0.0.x          | Boot:1.1.1 Bulk1:1.4.0 Bulk2:1.4.0 |
 

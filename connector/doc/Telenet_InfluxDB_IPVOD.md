@@ -12,13 +12,13 @@ This connector can receive JSON responses from the InfluxData InfluxDB Collector
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                       | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                           | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | InfluxData InfluxDB Collector Supported Queries: - IPVOD Concurrent Sessions - IPVOD API Response Times - IPVOD API Error Response Counts - IPVOD SSM-TRAXIS Response Times | \-                      |
+| 1.0.0.x   | No                  | Yes                     | InfluxData InfluxDB Collector Supported Queries: - IPVOD Concurrent Sessions - IPVOD API Response Times - IPVOD API Error Response Counts - IPVOD SSM-TRAXIS Response Times | -                       |
 
 ## Configuration
 

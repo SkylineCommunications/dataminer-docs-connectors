@@ -58,7 +58,7 @@ SERIAL CONNECTION:
 
 PING SETTINGS:
 
-- **IP address/host:** The IP address used to ping the device's status. This is used to know if the device is actually in a timeout status.
+- **IP address/host**: The IP address used to ping the device's status. This is used to know if the device is actually in a timeout status.
 
 ### Configuration
 

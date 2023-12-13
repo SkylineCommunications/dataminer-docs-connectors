@@ -12,12 +12,12 @@ The Newtec 2280 connector uses a serial connection to monitor and configure the 
 
 | **Range**            | **Key Features**                        | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                         | \-           | \-                |
-| 1.0.3.x              | Software version 3                      | 1.0.0.x      | \-                |
-| 2.0.0.x              | Software version 2, software ID 6241    | 1.0.0.x      | \-                |
-| 2.2.4.x              | Software version 2.4, software ID 6241  | 2.0.0.x      | \-                |
-| 2.2.42.x             | Software version 2.42, software ID 6241 | 2.2.4.x      | \-                |
-| 2.6.1.x \[SLC Main\] | Software version 6.2, software ID 6279  | 2.2.42.x     | \-                |
+| 1.0.0.x              | Initial version                         | -            | -                 |
+| 1.0.3.x              | Software version 3                      | 1.0.0.x      | -                 |
+| 2.0.0.x              | Software version 2, software ID 6241    | 1.0.0.x      | -                 |
+| 2.2.4.x              | Software version 2.4, software ID 6241  | 2.0.0.x      | -                 |
+| 2.2.42.x             | Software version 2.42, software ID 6241 | 2.2.4.x      | -                 |
+| 2.6.1.x [SLC Main]   | Software version 6.2, software ID 6279  | 2.2.42.x     | -                 |
 
 ### Product Info
 
@@ -34,7 +34,7 @@ The Newtec 2280 connector uses a serial connection to monitor and configure the 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.6.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 2.6.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

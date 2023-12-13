@@ -19,11 +19,11 @@ There are multiple ways to monitor and configure the settings for the Arris CAP-
 | **Range**     | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-----------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial Version                               | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Added displaykey to the Alarms Overview Table | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Added displaykey to the Alarms Overview Table | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**         |
+| Range     | Device Firmware Version             |
 |------------------|-------------------------------------|
 | 1.0.0.x          | **v4.1** with **XML protocol 4.0**. |
 | 1.0.1.x          | **v4.1** with **XML protocol 4.0**. |

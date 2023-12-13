@@ -33,7 +33,7 @@ Each polling request (HTTP/SNMP) command is performed every 10 seconds.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                          |
+| Range     | Device Firmware Version                              |
 |------------------|------------------------------------------------------|
 | 1.0.0.x          | Software version 2.7.0.30234 Software version 2.12.6 |
 

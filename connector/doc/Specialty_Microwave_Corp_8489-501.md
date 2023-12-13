@@ -12,9 +12,9 @@ This connector allows for quick monitoring of front panel information and config
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                               | **Based on** | **System Impact** |
-|-----------|------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.1   | Initial version: - Monitoring of front panel information. - Configuration of switch positions. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.1 | Initial version: <br>- Monitoring of front panel information. <br>- Configuration of switch positions. | - | - |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector allows for quick monitoring of front panel information and config
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

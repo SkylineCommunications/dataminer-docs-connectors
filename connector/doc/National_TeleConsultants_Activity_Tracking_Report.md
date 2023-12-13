@@ -18,7 +18,7 @@ The connector uses SLNet calls to run an SQL query with configurable parameters 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**           |
+| Range     | Device Firmware Version               |
 |------------------|---------------------------------------|
 | 1.0.0.x          | DataMiner db schema for version 8.5.x |
 

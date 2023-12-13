@@ -14,9 +14,9 @@ The connector polls data from the device using SNMP. It supports different switc
 
 | **Range**            | **Description**                                                                                                                     | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                                                                                     | No                  | Yes                     |
-| 1.0.1.x \[Obsolete\] | Improved bitrate calculation                                                                                                        | No                  | Yes                     |
-| 1.0.2.x \[SLC Main\] | Added new table wwpLeosPortStatsTable, added button for removing error in interface table, and resolved high bandwidth utilization. | No                  | Yes                     |
+| 1.0.0.x [Obsolete]     |Initial version                                                                                                                     | No                  | Yes                     |
+| 1.0.1.x [Obsolete]     |Improved bitrate calculation                                                                                                        | No                  | Yes                     |
+| 1.0.2.x [SLC Main]   | Added new table wwpLeosPortStatsTable, added button for removing error in interface table, and resolved high bandwidth utilization. | No                  | Yes                     |
 
 ### Product Info
 

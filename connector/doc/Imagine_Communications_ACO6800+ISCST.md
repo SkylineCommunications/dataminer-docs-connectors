@@ -36,7 +36,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
   - **IP address/host**: The polling IP of the device.
-  - **Bus Address:** X.Y, where X = Frame Number and Y = slot number
+  - **Bus address**: X.Y, where X = Frame Number and Y = slot number
 
 #### Serial PortDev Connection
 

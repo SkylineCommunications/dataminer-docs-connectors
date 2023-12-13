@@ -12,11 +12,11 @@ This is an SNMP-based connector used to monitor and configure the Juniper Networ
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                       |
+| Range     | Supported Firmware                           |
 |-----------|----------------------------------------------|
 | 1.0.0.x   | JUNOS Base OS Software Suite \[18.3R2-S3.1\] |
 
@@ -24,7 +24,7 @@ This is an SNMP-based connector used to monitor and configure the Juniper Networ
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

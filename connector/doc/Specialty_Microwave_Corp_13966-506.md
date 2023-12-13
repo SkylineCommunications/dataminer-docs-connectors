@@ -20,7 +20,7 @@ The Specialty Microwave Corp connector allows for quick monitoring of front pane
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | Unknown                     |
+| 1.0.0.x [SLC Main]   | Unknown                     |
 
 ## Installation and configuration
 

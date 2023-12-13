@@ -12,15 +12,15 @@ This connector uses information from the Cisco DCNM and the Imagine Communicatio
 
 | **Range** | **Key Features**                         | **Based on** | **System Impact**                    |
 |-----------|------------------------------------------|--------------|--------------------------------------|
-| 1.0.0.x   | Initial version                          | \-           | \-                                   |
+| 1.0.0.x   | Initial version                          | -            | -                                    |
 | 1.0.1.x   | Support for multiple Cisco DCNM elements | 1.0.0.2      | Changed single parameter to a table. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

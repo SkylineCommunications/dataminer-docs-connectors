@@ -10,11 +10,11 @@ This connector can be used to monitor the Harmonic ProStream X. The ProStream X 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                         | **Based on** | **System Impact**                                                                                                                |
-|----------------------|----------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | \- Monitoring only.                                                                                      | \-           | \-                                                                                                                               |
-| 1.0.1.x \[SLC Main\] | \- Monitoring only. - Added logical output (transport streams) information and redesigned the connector. | 1.0.0.x      | Upgrading from 1.0.0.x will require adjustment of trend and alarm templates.                                                     |
-| 1.1.0.x              | \- API upgrade from v2 to v4. - Logical Input and Output redundancy settings are now settable.           | 1.0.1.x      | Upgrading from 1.0.0.x or 1.0.1.x will require adjustment of trend and alarm templates, and possibly also of Automation scripts. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | - Monitoring only. | - | - |
+| 1.0.1.x [SLC Main] | - Monitoring only. <br>- Added logical output (transport streams) information and redesigned the connector. | 1.0.0.x | Upgrading from 1.0.0.x will require adjustment of trend and alarm templates. |
+| 1.1.0.x | - API upgrade from v2 to v4. <br>- Logical Input and Output redundancy settings are now settable. | 1.0.1.x | Upgrading from 1.0.0.x or 1.0.1.x will require adjustment of trend and alarm templates, and possibly also of Automation scripts. |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ This connector can be used to monitor the Harmonic ProStream X. The ProStream X 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

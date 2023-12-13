@@ -49,23 +49,23 @@ The KPIs present in the topologies are the result of aggregation performed in th
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x | Initial version | \- | \- |
-| 1.0.1.x | Decoupling and enhancements. | \- | \- |
-| 1.0.2.x | Remote view tables retrieve information from multiple source elements. | \- | \- |
-| 1.0.3.x | Adjusted CM QAM US/DS CM COL view tables to match with the source and added a status parameter to the CM QAM US/DS tables. | \- | \- |
-| 1.0.4.x | \- Partial table option enabled on several tables to improve loading time of the filter box on EPM topology. - Parameter added that lets the user change the name of the Automation script that notifies the back-end element of new data to be ingested. | \- | \- |
-| 1.0.5.x \[SLC Main\] | New exceptions added for the correction of the default value for average percentage US and DS utilization. | \- | \- |
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | Decoupling and enhancements. | - | - |
+| 1.0.2.x | Remote view tables retrieve information from multiple source elements. | - | - |
+| 1.0.3.x | Adjusted CM QAM US/DS CM COL view tables to match with the source and added a status parameter to the CM QAM US/DS tables. | - | - |
+| 1.0.4.x | - Partial table option enabled on several tables to improve loading time of the filter box on EPM topology. <br>- Parameter added that lets the user change the name of the Automation script that notifies the back-end element of new data to be ingested. | - | - |
+| 1.0.5.x [SLC Main]   | New exceptions added for the correction of the default value for average percentage US and DS utilization. | - | - |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

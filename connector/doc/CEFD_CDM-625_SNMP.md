@@ -15,11 +15,11 @@ This connector uses SNMP to display information from the device and to set devic
 
 | **Range** | **Key Features**                                                                                                   | **Based on** | **System Impact**                                 |
 |-----------|--------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x   | Initial version                                                                                                    | \-           | \-                                                |
-| 1.0.1.x   | \-                                                                                                                 | \-           | \-                                                |
+| 1.0.0.x   | Initial version                                                                                                    | -            | -                                                 |
+| 1.0.1.x   | -                                                                                                                  | -            | -                                                 |
 | 1.0.2.x   | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.1.33     | **Old trend data will be lost for these tables.** |
-| 2.0.0.x   | \-                                                                                                                 | \-           | \-                                                |
-| 3.0.0.x   | \-                                                                                                                 | \-           | \-                                                |
+| 2.0.0.x   | -                                                                                                                  | -            | -                                                 |
+| 3.0.0.x   | -                                                                                                                  | -            | -                                                 |
 
 ## Installation and configuration
 

@@ -12,22 +12,22 @@ This connector allows you to monitor and configure the device 2WCOM NC06 via SNM
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
-| 1.0.1.x              | DVE support      | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.1.x              | DVE support      | -            | -                 |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| Range     | Supported Firmware    |
+|-----------|-----------------------|
+| 1.0.0.x   | -                     |
+| 1.0.1.x   | -                     |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                              |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | [2WCOM NC06 - Device](xref:Connector_help_2WCOM_NC06_-_Device) |
-| 1.0.1.x   | No                  | No                      | \-                    | [2WCOM NC06 - Device](xref:Connector_help_2WCOM_NC06_-_Device) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | No | - | [2WCOM NC06 - Device](xref:Connector_help_2WCOM_NC06_-_Device) |
+| 1.0.1.x | No | No | - | [2WCOM NC06 - Device](xref:Connector_help_2WCOM_NC06_-_Device) |
 
 ## Configuration
 

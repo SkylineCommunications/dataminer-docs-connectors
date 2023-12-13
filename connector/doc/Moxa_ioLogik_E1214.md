@@ -12,7 +12,7 @@ This connector allows you to monitor a configured Moxa ioLogik E1214 device via 
 
 | **Range** | **Key Features**                 | **Based on** | **System Impact** |
 |-----------|----------------------------------|--------------|-------------------|
-| 1.0.0.x   | Monitoring of DI and DO channels | \-           | \-                |
+| 1.0.0.x   | Monitoring of DI and DO channels | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector allows you to monitor a configured Moxa ioLogik E1214 device via 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

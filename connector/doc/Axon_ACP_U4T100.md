@@ -16,13 +16,13 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version \[SLC Main\] | \-           | \-                |
+| 1.0.0.x   | Initial version [SLC Main]   | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                           |
+| Range     | Supported Firmware                                               |
 |-----------|------------------------------------------------------------------|
 | 1.0.0.x   | 0406, 0914, 1017, 1320, 1321, 2028, 2230, 2435, 2436, 2536, 2738 |
 
@@ -30,7 +30,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

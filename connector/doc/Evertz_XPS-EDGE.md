@@ -30,11 +30,11 @@ XPS is Evertz' real-time high-quality and low-latency video streaming platform. 
 
 | **Range**            | **Key Features**               | **Based on** | **System Impact** |
 |----------------------|--------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Supports all 4K and 3G options | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Supports all 4K and 3G options | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                            |
+| Range     | Supported Firmware                                                |
 |-----------|-------------------------------------------------------------------|
 | 1.0.0.x   | **M:** V211B20220420-1499-F-2E2D **S:** V211B20220420-1499-F-2E2D |
 
@@ -42,7 +42,7 @@ XPS is Evertz' real-time high-quality and low-latency video streaming platform. 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

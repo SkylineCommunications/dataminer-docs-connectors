@@ -19,7 +19,7 @@ This connector monitors the Nevion Ventura VS103 chassis and supported cards thr
 | 2.0.0.x              | Altered DVE support so each card has a different DVE. Added VS909 card support. Added VS902 card support.                                                                                                                                                                     |
 | 2.0.1.x              | Merged configuration pending tables with current configuration tables. Implemented confirmation to immediately apply changes. DVE naming reviewed. **Because of changes, elements will have to be recreated to use this version. Older protocol versions should be deleted.** |
 | 2.0.2.x              | New firmware support                                                                                                                                                                                                                                                          |
-| 2.0.3.x \[SLC Main\] | **pollingRate** attribute and **MinimumRequiredVersion** tag introduced.                                                                                                                                                                                                      |
+| 2.0.3.x [SLC Main]   | **pollingRate** attribute and **MinimumRequiredVersion** tag introduced.                                                                                                                                                                                                      |
 
 Notes:
 

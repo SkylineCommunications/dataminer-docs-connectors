@@ -14,19 +14,19 @@ Via a test page, you can generate an example of the formatted request.
 
 | **Range**            | **Key Features**                                                                                       | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Ingest of Telenor PLM JSON request. Generation of a test ingest request of a single trunk (FiberLink). | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Ingest of Telenor PLM JSON request. Generation of a test ingest request of a single trunk (FiberLink). | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                           |
+| Range     | Supported Firmware                                               |
 |-----------|------------------------------------------------------------------|
 | 1.0.0.x   | PA version 1.2.1, SRM version 1.2.11, DataMiner version 10.1.2.0 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**      | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components          | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | See "Notes" section below. | \-                      |
+| 1.0.0.x   | No                  | Yes                     | See "Notes" section below. | -                       |
 
 ## Configuration
 

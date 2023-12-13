@@ -34,7 +34,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device.
-- **Bus Address:** By default *ByPassProxy*.
+- **Bus address**: By default *ByPassProxy*.
 
 #### SNMP Connection
 

@@ -12,9 +12,9 @@ This connector can be used to control the Magnum application. It allows DataMine
 
 | **Range**            | **Key Features**                                                                               | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                               | \-           | \-                |
-| 1.0.2.x              | Replaced IDX on Sources and Destinations. Duplicated global names are supported on the device. | \-           | \-                |
-| 1.0.3.x \[SLC Main\] | Use of API calls to reduce Quartz polling. Renamed Counter parameters.                         | \-           | \-                |
+| 1.0.0.x              | Initial version.                                                                               | -            | -                 |
+| 1.0.2.x              | Replaced IDX on Sources and Destinations. Duplicated global names are supported on the device. | -            | -                 |
+| 1.0.3.x [SLC Main]   | Use of API calls to reduce Quartz polling. Renamed Counter parameters.                         | -            | -                 |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ This connector can be used to control the Magnum application. It allows DataMine
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

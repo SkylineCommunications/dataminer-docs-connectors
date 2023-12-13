@@ -18,12 +18,12 @@ The connector shows all information in table format, the same way as it is store
 |----------------------|-------------------------------------------|---------------------|-------------------------|
 | 1.0.1.x              | Initial version.                          | No                  | Yes                     |
 | 1.0.2.x              | DVE integration.                          | No                  | Yes                     |
-| 1.1.0.x \[Obsolete\] | Removed parameters that were not working. | No                  | Yes                     |
-| 1.2.0.x \[SLC Main\] | New MIBs OIDs change; parameters removed. | No                  | Yes                     |
+| 1.1.0.x [Obsolete]     |Removed parameters that were not working. | No                  | Yes                     |
+| 1.2.0.x [SLC Main]   | New MIBs OIDs change; parameters removed. | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**          |
+| Range     | Supported Firmware              |
 |-----------|---------------------------------|
 | 1.0.2.x   | Unknown                         |
 | 1.1.0.x   | Unknown                         |

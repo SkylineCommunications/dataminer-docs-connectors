@@ -12,10 +12,10 @@ The connector uses **serial** communication with the device. It is possible to i
 
 ### Version Info
 
-| **Range** | **Key Features**                                      | **Based on** | **System Impact** |
+| Range     | Key Features                                          | Based on     | System Impact     |
 |-----------|-------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                       | \-           | \-                |
-| 1.1.1.x   | Translation value for linked parameter in Alarm table | \-           | \-                |
+| 1.0.0.x   | Initial version                                       | -            | -                 |
+| 1.1.1.x   | Translation value for linked parameter in Alarm table | -            | -                 |
 
 ### Product Info
 
@@ -26,10 +26,10 @@ The connector uses **serial** communication with the device. It is possible to i
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
+| 1.1.1.x   | No                  | Yes                     | -                    | -                      |
 
 ## Configuration
 

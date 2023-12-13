@@ -15,7 +15,7 @@ The **Norkring AS Power Logic** connector provides information on each different
 | **Range**     | **Description**              | **DCP Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version              | No                  | No                      |
-| 2.0.0.x \[SLC Main\] | Version 2 station monitoring | No                  | Yes                     |
+| 2.0.0.x [SLC Main]   | Version 2 station monitoring | No                  | Yes                     |
 
 ### Product Info
 

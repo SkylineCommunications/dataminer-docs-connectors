@@ -14,11 +14,11 @@ This connector uses the TVU Grid API to communicate with the TVU Networks VS3500
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**            |
+| Range     | Supported Firmware                |
 |-----------|-----------------------------------|
 | 1.0.0.x   | TVU Grid and Transceiver API v1.3 |
 
@@ -26,7 +26,7 @@ This connector uses the TVU Grid API to communicate with the TVU Networks VS3500
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

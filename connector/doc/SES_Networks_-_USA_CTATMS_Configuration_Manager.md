@@ -10,15 +10,15 @@ This connector is used as the engine of the SES CTATMS application.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                          | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version: - Import + validation of Excel file - Retrieves data from Harmonic Proview PVR7000 elements - Retrieves data from SED Decimator elements | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version: <br>- Import and validation of Excel file <br>- Retrieves data from Harmonic Proview PVR7000 elements <br>- Retrieves data from SED Decimator elements | - | - |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**          | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components              | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Visio file with application UI | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Visio file with application UI | -                       |
 
 ## Configuration
 

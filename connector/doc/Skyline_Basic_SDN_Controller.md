@@ -12,19 +12,19 @@ The Skyline Basic SDN Controller is a generic solution to control and configure 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                       |
+| Range     | Supported Firmware                                                           |
 |-----------|------------------------------------------------------------------------------|
 | 1.0.0.1   | Not applicable. This is a virtual connector that doesn't connect to any device. |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**            | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------|-------------------------|
-| 1.0.0.1   | No                  | Yes                     | See "Solution Components" below. | \-                      |
+| 1.0.0.1   | No                  | Yes                     | See "Solution Components" below. | -                       |
 
 ## Solution Components
 

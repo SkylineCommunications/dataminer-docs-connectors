@@ -12,17 +12,17 @@ It allows you to list, create, and delete the AWS CloudFormation stacks in DataM
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                    | **Based on** | **System Impact**                                               |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version                                                                                                                                                                                     | \-           | \-                                                              |
-| 1.0.1.x \[SLC Main\] | \- Connector has been completely reworked and no longer directly refers to DataMiner SRM functionalities. -Allows creation and deletion of stacks from the connector. - Communicates using AWS API. | \-           | Parameter description changes. New elements need to be created. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.1.x [SLC Main] | - Connector has been completely reworked and no longer directly refers to DataMiner SRM functionalities. <br>- Allows creation and deletion of stacks from the connector. <br>- Communicates using AWS API. | - | Parameter description changes. New elements need to be created. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -18,7 +18,7 @@ This connector uses **SNMP** to manage the Audemat Aztec FMB80 encoder.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                    |
+| Range     | Device Firmware Version                                        |
 |------------------|----------------------------------------------------------------|
 | 1.0.0.x          | Application Software Version RDS5002.8 System Version ECI2691L |
 

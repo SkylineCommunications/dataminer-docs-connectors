@@ -16,7 +16,7 @@ For each return technology (HRC, CPM), the return link is divided into one or mo
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                      |
+| Range     | Supported Firmware                                          |
 |------------------|-------------------------------------------------------------|
 | 1.0.0.x          | Compatible with all Newtec Dialog versions of parent connector |
 

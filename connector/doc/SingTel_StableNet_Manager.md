@@ -12,17 +12,17 @@ This connector can be used to export an Excel file with information for StableNe
 
 | **Range**            | **Key Features**                                                          | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                          | \-           | \-                |
-| 1.0.1.x              | Updated exception values on Downlink Frequency and Symbol Rate.           | 1.0.0.1      | \-                |
-| 1.0.2.x \[SLC Main\] | Updated Events table primary key to use job ID instead of auto-increment. | 1.0.1.8      | \-                |
+| 1.0.0.x              | Initial version.                                                          | -            | -                 |
+| 1.0.1.x              | Updated exception values on Downlink Frequency and Symbol Rate.           | 1.0.0.1      | -                 |
+| 1.0.2.x [SLC Main]   | Updated Events table primary key to use job ID instead of auto-increment. | 1.0.1.8      | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

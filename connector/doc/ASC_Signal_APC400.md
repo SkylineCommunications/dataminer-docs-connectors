@@ -20,7 +20,7 @@ This is an **SNMP** protocol that polls single and table parameters.
 
 ### Supported Firmware versions
 
-| **Range** | **Device Firmware Version**          |
+| Range     | Device Firmware Version              |
 |------------------|--------------------------------------|
 | 1.0.0.x          | RPI software version: ACS468K.C.3 03 |
 
