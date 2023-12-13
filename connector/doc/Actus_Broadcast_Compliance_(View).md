@@ -10,9 +10,9 @@ Actus View is a professional broadcast compliance recording and monitoring platf
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                    | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial support for Actus Rest API: - Exporting transport stream - Authenticating (scope: clipping) | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial support for Actus Rest API: - Exporting transport stream - Authenticating (scope: clipping) | - | - |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ Actus View is a professional broadcast compliance recording and monitoring platf
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                              | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                  | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Skyline.DataMiner.ActusInterAppAPI (NuGet package) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Skyline.DataMiner.ActusInterAppAPI (NuGet package) | -                       |
 
 ## Configuration
 

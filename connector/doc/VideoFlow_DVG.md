@@ -14,12 +14,12 @@ This connector allows you to monitor this device via an HTTP connection.
 
 | **Range** | **Key Features**                                                                                                                              | **Based on** | **System Impact**                                                                                              |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Initial version that has feature-parity with the DVP1000 connector. Supports different stream inputs and outputs, such as SRT, Zixi, and SDI. | \-           |                                                                                                                |
+| 1.0.0.x   | Initial version that has feature-parity with the DVP1000 connector. Supports different stream inputs and outputs, such as SRT, Zixi, and SDI. | -            |                                                                                                                |
 | 1.0.1.x   | Updated indexes.                                                                                                                              | 1.0.0.x      | Moving **from the 1.0.0.x to the 1.0.1.x range** will cause **loss of trend data**, since indexes are updated. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**           |
+| Range     | Supported Firmware               |
 |-----------|----------------------------------|
 | 1.0.0.x   | 1.40.1.1(R) Oct 17 2021 12:27:59 |
 
@@ -27,7 +27,7 @@ This connector allows you to monitor this device via an HTTP connection.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

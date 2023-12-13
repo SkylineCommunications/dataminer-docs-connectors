@@ -10,24 +10,24 @@ The Rohde & Schwarz NSU is a control console for transmitters. This connector al
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | \-           | \-                |
-| 2.0.0.x   | DVEs added.      | \-           | \-                |
+| 1.0.0.x   | Initial version. | -            | -                 |
+| 2.0.0.x   | DVEs added.      | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 2.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                        |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                            |
 |-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Yes                 | No                      | \-                    | \-                                                                                             |
-| 2.0.0.x   | Yes                 | Yes                     | \-                    | [Rohde Schwarz NSU - Transmitter](xref:Connector_help_Rohde_Schwarz_NSU_-_Transmitter) |
+| 1.0.0.x   | Yes                 | No                      | -                     | -                                                                                              |
+| 2.0.0.x   | Yes                 | Yes                     | -                     | [Rohde Schwarz NSU - Transmitter](xref:Connector_help_Rohde_Schwarz_NSU_-_Transmitter) |
 
 ## Configuration
 

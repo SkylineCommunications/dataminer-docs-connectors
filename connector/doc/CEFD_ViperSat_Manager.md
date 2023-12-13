@@ -8,9 +8,9 @@ uid: Connector_help_CEFD_ViperSat_Manager
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based On** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial Version  | \-           | \-                |
+| 1.0.0.x   | Initial Version  | -            | -                 |
 
 ### System Info
 

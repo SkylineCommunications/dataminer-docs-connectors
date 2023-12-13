@@ -16,16 +16,16 @@ The Huawei Manager retrieves data via **SNMP** and **SSH** from version 1.0.3.x 
 
 | **Range**            | **Key Features**                                                                              | **Based on** | **System Impact**                                                                                   |
 |----------------------|-----------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                               | \-           | \-                                                                                                  |
+| 1.0.0.x              | Initial version                                                                               | -            | -                                                                                                   |
 | 1.0.1.x              | Connector review. Removal of JScript QActions and tables as string parameter.                    | 1.0.0.14     | Unknown                                                                                             |
 | 1.0.2.x              | DCF integration.                                                                              | 1.0.1.1      | Unknown                                                                                             |
-| 1.0.3.x \[obsolete\] | Added SSH connection and PTP data.                                                            | 1.0.2.16     | Unknown                                                                                             |
-| 1.0.4.x \[obsolete\] | Changed PTP Interfaces table layout. Moved Port State column to the left, next to the "Name". | 1.0.3.5      | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
-| 1.0.5.x \[SLC Main\] | Optical module table was changed. Columns removed and Column order changed.                   | 1.0.4.14     | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
+| 1.0.3.x [Obsolete]     |Added SSH connection and PTP data.                                                            | 1.0.2.16     | Unknown                                                                                             |
+| 1.0.4.x [Obsolete]     |Changed PTP Interfaces table layout. Moved Port State column to the left, next to the "Name". | 1.0.3.5      | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
+| 1.0.5.x [SLC Main]   | Optical module table was changed. Columns removed and Column order changed.                   | 1.0.4.14     | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                         |
+| Range     | Supported Firmware                             |
 |-----------|------------------------------------------------|
 | 1.0.0.x   | 5.1                                            |
 | 1.0.1.x   | 5.1                                            |
@@ -38,12 +38,12 @@ The Huawei Manager retrieves data via **SNMP** and **SSH** from version 1.0.3.x 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.4.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.5.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

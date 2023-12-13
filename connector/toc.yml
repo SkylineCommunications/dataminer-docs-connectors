@@ -5530,8 +5530,6 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-ESI
   - name: Meinberg LANTIME IMS-ESI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-ESI_API_V10
-  - name: Meinberg LANTIME IMS-FDM
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-FDM
   - name: Meinberg LANTIME IMS-FDM API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-FDM_API_V10
   - name: Meinberg LANTIME IMS-GNM
@@ -5570,16 +5568,12 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI
   - name: Meinberg LANTIME IMS-MRI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10
-  - name: Meinberg LANTIME IMS-PIO
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO
   - name: Meinberg LANTIME IMS-PIO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10
   - name: Meinberg LANTIME IMS-PZF
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF
   - name: Meinberg LANTIME IMS-PZF API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF_API_V10
-  - name: Meinberg LANTIME IMS-REL
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-REL
   - name: Meinberg LANTIME IMS-REL API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-REL_API_V10
   - name: Meinberg LANTIME IMS-RSC
@@ -5594,12 +5588,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-TCR
   - name: Meinberg LANTIME IMS-TCR API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-TCR_API_V10
-  - name: Meinberg LANTIME IMS-VSG
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-VSG
   - name: Meinberg LANTIME IMS-VSG API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-VSG_API_V10
-  - name: Meinberg LANTIME IMS-VSI
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-VSI
   - name: Meinberg LANTIME IMS-VSI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-VSI_API_V10
   - name: Meinberg Lantime M300
@@ -6769,6 +6759,8 @@
     topicUid: Connector_help_ONATi_delair_Etsiline_32
   - name: ONATi Keysight 87106B SP6T
     topicUid: Connector_help_ONATi_Keysight_87106B_SP6T
+  - name: ONATi Splunk Monitoring
+  topicUid: Connector_help_ONATi_Splunk_Monitoring
 - name: OneWeb
   topicUid: Connector_help_OneWeb_Antenna_Controller
   items:
@@ -7002,6 +6994,8 @@
     topicUid: Connector_help_Peak_Communications_RCUH200
   - name: Peak Communications Sky UK Polarization Switch
     topicUid: Connector_help_Peak_Communications_Sky_UK_Polarization_Switch
+  - name: Peak Communications TLTH
+    topicUid: Connector_help_Peak_Communications_TLTH
   - name: Peak Communications UPC7000 Series
     topicUid: Connector_help_Peak_Communications_UPC7000_Series
 - name: PEAK System
@@ -8235,12 +8229,16 @@
     topicUid: Connector_help_Skyline_PTP
   - name: Skyline QA_DVE_Subtables
     topicUid: Connector_help_Skyline_QA_DVE_Subtables
+  - name: Skyline QAPortal
+    topicUid: Connector_help_Skyline_QAPortal
   - name: Skyline Regression Test Result Collector
     topicUid: Connector_help_Skyline_Regression_Test_Result_Collector
   - name: Skyline Resource Discovery Rules
     topicUid: Connector_help_Skyline_Resource_Discovery_Rules
   - name: Skyline SCTE Manager
     topicUid: Connector_help_Skyline_SCTE_Manager
+  - name: Skyline SecurityOnion Monitor
+    topicUid: Connector_help_Skyline_SecurityOnion_Monitor
   - name: Skyline Service Assurance
     topicUid: Connector_help_Skyline_Service_Assurance
   - name: Skyline Service Definition Basic

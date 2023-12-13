@@ -62,13 +62,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to re
 **SNMP CONNECTION:**
 
 - **IP address/host**: The IP of any MCM-9000 device in the stack.
-- **IP port:** The IP port of the destination, by default *162*.
+- **IP port**: The IP port of the destination, by default *162*.
 
 **HTTP CONNECTION:**
 
-- **IP address/host:** The polling IP or URL of any MCM-9000 device in the stack.
-- **IP port:** The IP port of the destination, by default *80*.
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy*.
+- **IP address/host**: The polling IP or URL of any MCM-9000 device in the stack.
+- **IP port**: The IP port of the destination, by default *80*.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Initialization
 

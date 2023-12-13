@@ -18,11 +18,11 @@ The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC*
 | 1.0.1.x              | Refactored version.                                                                                                                                                                                                                           | No                  | Yes                     |
 | 1.0.2.x              | Based on 1.0.1.11. Output Stream Column in Output Stream Table and Send Trap Column in Demod Fault Table have been updated to display the correct information for 7780DM-LB card. **Old trend and alarm data will be lost for these tables.** | No                  | Yes                     |
 | 1.0.4.x              | Based on 1.0.3.1.                                                                                                                                                                                                                             | No                  | Yes                     |
-| 1.0.5.x \[SLC Main\] | Based on 1.0.4.12.                                                                                                                                                                                                                            | No                  | Yes                     |
+| 1.0.5.x [SLC Main]   | Based on 1.0.4.12.                                                                                                                                                                                                                            | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**       |
+| Range     | Supported Firmware           |
 |-----------|------------------------------|
 | 1.0.0.x   | Unknown                      |
 | 1.0.1.x   | Unknown                      |
@@ -93,13 +93,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ## Usage
 

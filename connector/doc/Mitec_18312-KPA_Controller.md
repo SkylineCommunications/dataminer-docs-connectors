@@ -19,11 +19,11 @@ It performs manual or automatic switching to a backup high-power amplifier.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                               |
+| Range     | Supported Firmware                                   |
 |-----------|------------------------------------------------------|
 | 1.0.0.x   | Configuration Version: 1.00 Software Version: 2.23.1 |
 
@@ -31,7 +31,7 @@ It performs manual or automatic switching to a backup high-power amplifier.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -53,8 +53,8 @@ SERIAL CONNECTION:
 
 - Interface connection (applies when communicating over **serial gateway**, the serial settings will be applied in the gateway itself):
 
-  - **IP address/host:** The polling IP or URL of the destination gateway.
-  - **IP port:** The IP port of the destination gateway.
+  - **IP address/host**: The polling IP or URL of the destination gateway.
+  - **IP port**: The IP port of the destination gateway.
 
 ## How to use
 

@@ -12,19 +12,19 @@ This is an SNMP connector that is used to monitor and configure the SpacePath Co
 
 | **Range**           | **Key Features** | **Based on** | **System Impact** |
 |---------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SL Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x \[SL Main\] | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

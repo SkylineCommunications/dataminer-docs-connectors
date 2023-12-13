@@ -17,7 +17,7 @@ The SES S.A. CMCS connector monitors the inputs on this PLC through the Factoryt
 | **Range**     | **Description**                                | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                               | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Filters signals for specific listening groups. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Filters signals for specific listening groups. | No                  | Yes                     |
 
 ## Installation and configuration
 

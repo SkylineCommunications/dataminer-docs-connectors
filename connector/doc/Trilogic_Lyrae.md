@@ -14,8 +14,8 @@ This connector can be used to monitor the Trilogic Lyrae probe.
 
 | **Range**            | **Key Features**                                                                            | **Based on** | **System Impact**                                                                                                        |
 |----------------------|---------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version. Communication happens through port 8000.                                   | \-           | \-                                                                                                                       |
-| 1.1.0.x \[SLC Main\] | Communication now happens using the Lyrae REST API through the default HTTP port (port 80). | 1.0.0.2      | The description of parameters 2301 and 2302 has changed. All templates, scripts, and Visio drawings need to be reviewed. |
+| 1.0.0.x [Obsolete]     |Initial version. Communication happens through port 8000.                                   | -            | -                                                                                                                        |
+| 1.1.0.x [SLC Main]   | Communication now happens using the Lyrae REST API through the default HTTP port (port 80). | 1.0.0.2      | The description of parameters 2301 and 2302 has changed. All templates, scripts, and Visio drawings need to be reviewed. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This connector can be used to monitor the Trilogic Lyrae probe.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

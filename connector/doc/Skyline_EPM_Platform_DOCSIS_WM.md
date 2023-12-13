@@ -10,21 +10,21 @@ The Skyline EPM Platform DOCSIS WF is a configuration manager protocol that conv
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                           | **Based on** | **System Impact** |
-|-----------|--------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. Creates compatible CSV files for nodes, amplifiers, taps and subscribers. | \-           | \-                |
+| Range   | Key Features                                                                               | Based on | System Impact |
+|---------|--------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version. Creates compatible CSV files for nodes, amplifiers, taps and subscribers. | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                               | **Exported Components** |
-|-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- The *EPMBeToWm* and *WmToEPMBe* Automation scripts - Skyline EPM Platform DOCSIS | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - The *EPMBeToWm* and *WmToEPMBe* Automation scripts <br>- Skyline EPM Platform DOCSIS | - |
 
 ## Configuration
 

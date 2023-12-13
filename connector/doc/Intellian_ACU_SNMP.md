@@ -18,7 +18,7 @@ The protocol range 2.1.0.x is only compatible with the device firmware version 3
 |----------------------|--------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Old range.                                                         | No                  | Yes                     |
 | 2.0.0.x              | New range for firmware v3.14.                                      | No                  | Yes                     |
-| 2.1.0.x \[SLC MAIN\] | New range based on version 2.0.0.x. Major impacting changes added. | No                  | Yes                     |
+| 2.1.0.x [SLC Main]   | New range based on version 2.0.0.x. Major impacting changes added. | No                  | Yes                     |
 
 ### Product Info
 
@@ -39,13 +39,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP Connection:
 
 - **IP Address/host**: The polling IP of the device.
-- **Device address:** Not required.
+- **Device address**: Not required.
 
 SNMP Settings:
 
-- **Port Number:** The port of the connection device, by default *161*.
-- **Get community string:** The community string required to read from the device. The default value is *public.*
-- **Set community string:** The community string required to set to the device. The default value is *private*.
+- **Port number**: The port of the connection device, by default *161*.
+- **Get community string**: The community string required to read from the device. The default value is *public.*
+- **Set community string**: The community string required to set to the device. The default value is *private*.
 
 ## Usage
 

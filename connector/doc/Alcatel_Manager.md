@@ -12,7 +12,7 @@ The **Alcatel Manager controller** is mainly used as a platform to monitor relev
 
 | **Range**            | **Key Features**                            | **Based on** | **System Impact**                                                     |
 |----------------------|---------------------------------------------|--------------|-----------------------------------------------------------------------|
-| 1.0.1.x \[SLC Main\] | Overall update to match current guidelines. | 1.0.0.7      | Layout, internal logic, and PID changed, and many parameters deleted. |
+| 1.0.1.x [SLC Main]   | Overall update to match current guidelines. | 1.0.0.7      | Layout, internal logic, and PID changed, and many parameters deleted. |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The **Alcatel Manager controller** is mainly used as a platform to monitor relev
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

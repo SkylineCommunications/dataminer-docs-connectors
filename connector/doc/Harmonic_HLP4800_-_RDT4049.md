@@ -14,7 +14,7 @@ The connector is exported by the parent element **Harmonic HLP4800** if DVE crea
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                          |
+| Range     | Device Firmware Version                              |
 |------------------|------------------------------------------------------|
 | 1.0.1.x          | Module version: unknown Controller version: 4.1.0.24 |
 

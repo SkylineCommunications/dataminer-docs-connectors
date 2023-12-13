@@ -14,11 +14,11 @@ This connector uses a **serial** connection to gather data from the device. Crit
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                               |
+| Range     | Supported Firmware                                   |
 |-----------|------------------------------------------------------|
 | 1.0.0.x   | 3.6 (also supports firmware below 1.8 and above 1.9) |
 
@@ -26,7 +26,7 @@ This connector uses a **serial** connection to gather data from the device. Crit
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,21 +14,21 @@ Alarms cannot be retrieved on the analyzer devices themselves, but the Agama Ent
 
 ### Version Info
 
-| **Range**            | **Key Features**                   | **Based On** | **System Impact**                                                                                                 |
-|----------------------|------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                   | \-           | \-                                                                                                                |
-| 2.0.0.x              | Added SSH and SOAP.                | \-           | \-                                                                                                                |
-| 2.0.1.x              | Fixed OS release version.          | \-           | Custom reports and alarm templates need to be adjusted, because of a parameter type change from double to string. |
-| 2.1.0.x \[SLC Main\] | Added support for firmware v7.0.4. | 7.0.4        | Updated URL on HTTP Sessions; older firmware versions will not work with this range.                              |
+| Range | Key Features | Based On | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 2.0.0.x | Added SSH and SOAP. | - | - |
+| 2.0.1.x | Fixed OS release version. | - | Custom reports and alarm templates need to be adjusted, because of a parameter type change from double to string. |
+| 2.1.0.x [SLC Main] | Added support for firmware v7.0.4. | 7.0.4 | Updated URL on HTTP Sessions; older firmware versions will not work with this range. |
 
 ### System Info
 
-| **Range**            | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components** |
-|----------------------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x              | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x              | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x              | No                  | Yes                     | \-                    | \-                      |
-| 2.1.0.x \[SLC Main\] | No                  | Yes                     | \-                    | \-                      |
+| Range              | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--------------------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x            | No              | Yes                 | -                 | -                   |
+| 2.0.0.x            | No              | Yes                 | -                 | -                   |
+| 2.0.1.x            | No              | Yes                 | -                 | -                   |
+| 2.1.0.x [SLC Main] | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 

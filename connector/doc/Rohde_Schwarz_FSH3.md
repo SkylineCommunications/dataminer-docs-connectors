@@ -10,27 +10,27 @@ The Rohde Schwarz FSH3 is a remote spectrum analyzer. The frequency ranges from1
 
 ### Version Info
 
-| **Range**            | **Key Features**                                        | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                        | \-           | \-                |
-| 2.0.0.x \[Obsolete\] | \-                                                      | \-           |                   |
-| 2.1.0.x \[SLC Main\] | Logic review. No major changes were implemented. | 2.0.0.2      | Logic review.     |
+| Range              | Key Features                                     | Based on | System Impact |
+|--------------------|--------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                                 | -        | -             |
+| 2.0.0.x [Obsolete] | -                                                | -        |               |
+| 2.1.0.x [SLC Main] | Logic review. No major changes were implemented. | 2.0.0.2  | Logic review. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 2.0.0.x   | -                      |
 | 2.1.0.x   | V13.14                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | no                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | no                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

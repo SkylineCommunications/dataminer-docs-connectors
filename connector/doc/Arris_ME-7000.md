@@ -19,7 +19,7 @@ This connector (SNMP-based in range 1.0.0.x and HTTP-based in range 1.1.0.x) mon
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**    |
+| Range     | Device Firmware Version        |
 |------------------|--------------------------------|
 | 1.0.0.x          | me7k.1.0.0.42.150313 (CCBuild) |
 | 1.1.0.x          | me7k.2.2.0                     |

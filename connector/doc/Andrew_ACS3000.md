@@ -14,7 +14,7 @@ The **Andrew ACS3000** device is an Antenna Control Unit. It supports a wide ran
 
 | **Range**     | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                      | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version                      | No                  | Yes                     |
 | 2.0.0.x              | Changed port settings: Local IP Port | No                  | Yes                     |
 
 ## Installation and configuration

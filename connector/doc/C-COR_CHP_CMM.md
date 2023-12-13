@@ -12,7 +12,7 @@ This connector provides a monitoring interface for the **C-COR CHP CMM** module.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**      |
+| Range     | Device Firmware Version          |
 |------------------|----------------------------------|
 | 2.0.0.x          | Boot v002.003, Download v002.004 |
 

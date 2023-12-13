@@ -13,7 +13,7 @@ The Generic Resource connector allows you to combine alarm states of different e
 | **Range**     | **Description**                                                 | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-----------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.1              | Initial version                                                 | Yes                 | Yes                     |
-| 1.0.1.x \[SLC Main\] | Implementation of custom Input/Output table. Added DCF support. | Yes                 | Yes                     |
+| 1.0.1.x [SLC Main]   | Implementation of custom Input/Output table. Added DCF support. | Yes                 | Yes                     |
 
 ## Installation and configuration
 

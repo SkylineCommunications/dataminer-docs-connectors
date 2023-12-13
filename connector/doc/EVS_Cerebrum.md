@@ -14,8 +14,8 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 
 | **Range**            | **Key Features**                                      | **Based on** | **System Impact**                                                                         |
 |----------------------|-------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version                                       | \-           | \-                                                                                        |
-| 1.0.1.x              | New version because of invalid connector integration. | \-           | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
+| 1.0.0.x [Obsolete]     |Initial version                                       | -            | -                                                                                         |
+| 1.0.1.x              | New version because of invalid connector integration. | -            | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

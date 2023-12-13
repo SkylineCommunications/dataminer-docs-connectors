@@ -10,11 +10,11 @@ The Amphinicy Monica connector integrates a monitoring and control software suit
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                       | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version: - Instruments and parameter values - Active alarms                                                                    | \-           | \-                |
-| 1.0.1.x \[Obsolete\] | \- Update of the API request messages - Implementation of DVEs                                                                         | 1.0.0.x      | \-                |
-| 1.0.2.x \[SLC Main\] | \- Moved the Generic Instruments Details table to the Instruments Generic Details page. - Updated instrument parameter values parsing. | 1.0.0.x      | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version: <br>- Instruments and parameter values <br>- Active alarms | - | - |
+| 1.0.1.x [Obsolete] | - Update of the API request messages <br>- Implementation of DVEs | 1.0.0.x | - |
+| 1.0.2.x [SLC Main] | - Moved the Generic Instruments Details table to the Instruments Generic Details page. <br>- Updated instrument parameter values parsing. | 1.0.0.x | - |
 
 ### Product Info
 
@@ -26,11 +26,11 @@ The Amphinicy Monica connector integrates a monitoring and control software suit
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                              |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                                                                                                                   |
-| 1.0.1.x   | No                  | Yes                     | \-                    | [Amphinicy Technologies Monica - Instrument](xref:Connector_help_Amphinicy_Technologies_Monica_-_Instrument) |
-| 1.0.2.x   | No                  | Yes                     | \-                    | [Amphinicy Technologies Monica - Instrument](xref:Connector_help_Amphinicy_Technologies_Monica_-_Instrument) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.0.1.x | No | Yes | - | [Amphinicy Technologies Monica - Instrument](xref:Connector_help_Amphinicy_Technologies_Monica_-_Instrument) |
+| 1.0.2.x | No | Yes | - | [Amphinicy Technologies Monica - Instrument](xref:Connector_help_Amphinicy_Technologies_Monica_-_Instrument) |
 
 ## Configuration
 

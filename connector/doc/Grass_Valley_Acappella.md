@@ -33,7 +33,7 @@ This connector uses a serial connection and requires the following input during 
 Serial Connection:
 
 - **IP address/host**: The polling IP of the device *(172.20.19.106).*
-- **IP Port:** by default 12345
+- **IP port**: by default 12345
 
 ## Usage
 

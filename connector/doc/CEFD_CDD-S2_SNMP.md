@@ -14,8 +14,8 @@ The CEFD CDD-S2 connector is used to monitor and control a CEFD CDD-S2 device. T
 
 | **Range**            | **Key Features**                                                                                                    | **Based on** | **System Impact**                                 |
 |----------------------|---------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                     | \-           | \-                                                |
-| 1.0.1.x \[SLC Main\] | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.9      | **Old trend data will be lost for these tables.** |
+| 1.0.0.x              | Initial version                                                                                                     | -            | -                                                 |
+| 1.0.1.x [SLC Main]   | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.9      | **Old trend data will be lost for these tables.** |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The CEFD CDD-S2 connector is used to monitor and control a CEFD CDD-S2 device. T
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

@@ -14,8 +14,8 @@ The CEFD CRS-500 SNMP connector is designed to monitor and control a CEFD CRS -5
 
 | **Range**            | **Key Features**                                                                                                    | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                                     | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.1      | \-                |
+| 1.0.0.x              | Initial version                                                                                                     | -            | -                 |
+| 1.0.1.x [SLC Main]   | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.1      | -                 |
 
 
 
@@ -23,8 +23,8 @@ The CEFD CRS-500 SNMP connector is designed to monitor and control a CEFD CRS -5
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 
 

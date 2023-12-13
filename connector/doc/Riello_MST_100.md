@@ -16,7 +16,7 @@ The connector communicates with the device via **SNMP** to retrieve parameter va
 
 | **Range**     | **Description**  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version  | Yes                 | Yes                     |
 | 1.1.0.x              | Firmware upgrade | Yes                 | Yes                     |
 
 ### Product Info

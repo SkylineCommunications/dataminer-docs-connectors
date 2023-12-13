@@ -12,7 +12,7 @@ This is an SNMP connector for the Ericsson Fabrix VIDFX management system. It **
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ This is an SNMP connector for the Ericsson Fabrix VIDFX management system. It **
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                   |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                       |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Fabrix VIDFX Node](xref:Connector_help_Ericsson_Fabrix_VIDFX_Node) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [Fabrix VIDFX Node](xref:Connector_help_Ericsson_Fabrix_VIDFX_Node) |
 
 ## Configuration
 

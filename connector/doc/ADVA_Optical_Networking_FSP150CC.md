@@ -14,22 +14,22 @@ The current traps implemented in version 1.0.2.6 and above are LinkUp, LinkDown,
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                   | **Based on** | **System Impact**                                                                                                                                                                                                                                         |
-|----------------------|--------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                    | \-           |                                                                                                                                                                                                                                                           |
-| 1.0.2.x              | Support for SNMP polling from backup IP                                                                            | \-           |                                                                                                                                                                                                                                                           |
-| 2.0.0.x \[Obsolete\] | SNMPv3                                                                                                             | \-           |                                                                                                                                                                                                                                                           |
-| 2.0.1.x              | \- Table 42000 ethernetPBWanStatsTable adapted - Display key added - SNMP columns hidden - Retrieved columns added | 2.0.2.4      | \- Display key impact on iDMS filters, DMS Automation scripts, Visio files, DMS reports and DMS WebAPI usage. - Alarm and trending info removed from params 42002, 42003 and 42004. Trending and alarm monitoring now enabled for 42005, 42006 and 42007. |
-| 2.0.2.x \[Obsolete\] | DCF support added                                                                                                  | 2.0.1.1      |                                                                                                                                                                                                                                                           |
-| 2.0.3.x              | \- Discard rates added for Interfaces Table - Red/Yellow discard rates added to Ethernet Flow Policer Stats table  | 2.0.2.3      | Impact on custom reports or scripts calling Ethernet Flow Policer Statistics table indices directly.                                                                                                                                                      |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - |  |
+| 1.0.2.x | Support for SNMP polling from backup IP | - |  |
+| 2.0.0.x [Obsolete] | SNMPv3 | - |  |
+| 2.0.1.x | - Table 42000 ethernetPBWanStatsTable adapted <br>- Display key added <br>- SNMP columns hidden <br>- Retrieved columns added | 2.0.2.4 | - Display key impact on iDMS filters, DMS Automation scripts, Visio files, DMS reports and DMS WebAPI usage. <br>- Alarm and trending info removed from params 42002, 42003 and 42004. Trending and alarm monitoring now enabled for 42005, 42006 and 42007. |
+| 2.0.2.x [Obsolete] | DCF support added | 2.0.1.1 |  |
+| 2.0.3.x | - Discard rates added for Interfaces Table <br>- Red/Yellow discard rates added to Ethernet Flow Policer Stats table | 2.0.2.3 | Impact on custom reports or scripts calling Ethernet Flow Policer Statistics table indices directly. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                       |
+| Range     | Supported Firmware                           |
 |-----------|----------------------------------------------|
 | 1.0.0.x   | Backplane revision: 1.0                      |
 | 1.0.2.x   | Unconfirmed                                  |
-| 2.0.0.x   | Backplane revision: 1.04 \[to be confirmed\] |
+| 2.0.0.x   | Backplane revision: 1.04 [to be confirmed]   |
 | 2.0.1.x   | Same as 2.0.0.X                              |
 | 2.0.2.x   | Same as 2.0.1.X                              |
 | 2.0.3.x   | Same as 2.0.2.x                              |
@@ -38,12 +38,12 @@ The current traps implemented in version 1.0.2.6 and above are LinkUp, LinkDown,
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.3.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

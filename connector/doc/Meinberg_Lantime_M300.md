@@ -12,16 +12,16 @@ This SNMP connector is used to monitor and configure the **Meinberg Lantime M300
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.1.x              | Initial version | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | DCF integration | Yes                 | Yes                     |
+| Range              | Description     | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------|-----------------|---------------------|
+| 1.0.1.x            | Initial version | No              | Yes                 |
+| 1.0.1.x [SLC Main] | DCF integration | Yes             | Yes                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**          |
-|------------------|--------------------------------------|
-| 1.0.1.x          | 6.20.012 (see "Notes" section below) |
+| Range   | Device Firmware Version              |
+|---------|--------------------------------------|
+| 1.0.1.x | 6.20.012 (see "Notes" section below) |
 
 ## Installation and configuration
 
@@ -89,7 +89,7 @@ The page also contains one page button, which opens the **Trap Config** subpage,
 
 ### NTP Page
 
-On this page, you can configure and monitor the NTP settings of the device, such as **NTP Trusttime,** **Time Scale** and **PPS.**
+On this page, you can configure and monitor the NTP settings of the device, such as **NTP Trusttime**, **Time Scale** and **PPS.**
 
 The page also contains four page buttons with more NTP settings:
 

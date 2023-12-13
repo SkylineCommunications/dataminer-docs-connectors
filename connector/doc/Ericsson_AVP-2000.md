@@ -67,7 +67,7 @@ Range 3.0.0.x contains the most important or requested parameters and displays t
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
+| Range     | Device Firmware Version            |
 |------------------|------------------------------------|
 | 1.0.0.x          | Prior to 10.13.3.0.0               |
 | 2.0.0.x          | 10.13.3.0.0                        |
@@ -84,7 +84,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 - **IP address/host**: The polling IP of the device.
 - **Port**: The IP port of the device, by default *80.*
-- **Bus Address:** If a proxy server must be bypassed, specify *BypassProxy*.
+- **Bus address**: If a proxy server must be bypassed, specify *BypassProxy*.
 
 ## Usage range 2.0.0.x
 

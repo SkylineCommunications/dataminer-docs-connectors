@@ -10,27 +10,27 @@ The Kaleido X connector displays information related to the Kaleido X device. In
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact** |
-|----------------------|--------------------------------|--------------|-------------------|
-| 2.0.0.x \[Obsolete\] | Initial version                | \-           | \-                |
-| 2.0.1.x              | Customer-specific branch       | \-           | \-                |
-| 2.0.2.x \[SLC Main\] | Change to Discrete Audio Table | \-           | \-                |
+| Range              | Key Features                   | Based on | System Impact |
+|--------------------|--------------------------------|----------|---------------|
+| 2.0.0.x [Obsolete] | Initial version                | -        | -             |
+| 2.0.1.x            | Customer-specific branch       | -        | -             |
+| 2.0.2.x [SLC Main] | Change to Discrete Audio Table | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 2.0.0.x   | \-                     |
-| 2.0.1.x   | \-                     |
-| 2.0.2.x   | \-                     |
+| 2.0.0.x   | -                      |
+| 2.0.1.x   | -                      |
+| 2.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

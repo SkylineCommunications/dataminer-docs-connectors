@@ -12,24 +12,24 @@ Alarm information received through SNMP traps will also be processed and mapped 
 
 ### Version Info
 
-| **Range**            | **Key Features**                      | **Based on** | **System Impact**                                                                                                                                                                                                                                                 |
-|----------------------|---------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                       | \-           | \-                                                                                                                                                                                                                                                                |
-| 1.0.1.x \[SLC Main\] | DVE removal timer is now configurable | 1.0.0.8      | Parameter ID 116 is now configurable: - The displayed value can be used in Automation scripts to perform sets. DMS filters can be used with wildcards on the display value. - Layout changes have been implemented. - The alarm template may need to be adjusted. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x [SLC Main] | DVE removal timer is now configurable | 1.0.0.8 | Parameter ID 116 is now configurable: <br>- The displayed value can be used in Automation scripts to perform sets. DMS filters can be used with wildcards on the display value. <br>- Layout changes have been implemented. <br>- The alarm template may need to be adjusted. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

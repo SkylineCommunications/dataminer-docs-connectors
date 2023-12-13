@@ -10,7 +10,7 @@ The Gilat Satellite Networks TotalNMS - CPE connector is exported by the parent 
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | SkyEdge II-c NBI v5.5P2 |
 
@@ -18,7 +18,7 @@ The Gilat Satellite Networks TotalNMS - CPE connector is exported by the parent 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

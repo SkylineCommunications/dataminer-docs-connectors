@@ -14,19 +14,19 @@ This **enables the users to step away from the conductor** and only use this app
 
 | **Range**            | **Key Features**                         | **Based on** | **System Impact** |
 |----------------------|------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version: Conductor Cluster Table | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial Version: Conductor Cluster Table | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

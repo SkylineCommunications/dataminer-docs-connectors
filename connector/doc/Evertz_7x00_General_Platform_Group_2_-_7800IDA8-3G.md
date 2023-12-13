@@ -12,7 +12,7 @@ The 7800IDA8-3G reclocking distribution amplifier provides high-quality distribu
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                      |
+| Range     | Supported Firmware                          |
 |-----------|---------------------------------------------|
 | 1.0.4.x   | 2.7 build 40 - Card Name 7800IDA8-3G+IG+DMX |
 

@@ -10,9 +10,9 @@ The MRV Communications Chassis is a connector for an MRV chassis that houses MRV
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ The MRV Communications Chassis is a connector for an MRV chassis that houses MRV
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**   |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components       |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | MRV Communications Module |
+| 1.0.0.x   | No                  | No                      | -                     | MRV Communications Module |
 
 ## Configuration
 

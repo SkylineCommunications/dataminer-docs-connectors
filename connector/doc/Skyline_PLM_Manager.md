@@ -12,19 +12,19 @@ This manager connector will install the **DataMiner Object Model** application u
 
 | **Range**            | **Key Features**                                                                                                                                          | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Installation of PLM DOM application. Support for Standard Skyline PLM Approval. Support for configuration capabilities for a default PLM record creation. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Installation of PLM DOM application. Support for Standard Skyline PLM Approval. Support for configuration capabilities for a default PLM record creation. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                     |
+| Range     | Supported Firmware                                         |
 |-----------|------------------------------------------------------------|
 | 1.0.0.x   | PA version 1.2.1, SRM version 1.2.11, DMA version 10.1.2.0 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                             | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                 | Exported Components     |
 |-----------|---------------------|-------------------------|---------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | This connector is part of the Standard PLM solution. | \-                      |
+| 1.0.0.x   | No                  | Yes                     | This connector is part of the Standard PLM solution. | -                       |
 
 ## Configuration
 

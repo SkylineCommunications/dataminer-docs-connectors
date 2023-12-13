@@ -14,7 +14,7 @@ This **SNMP** connector is used to monitor and configure the **Rohde Schwarz TMU
 
 | **Range**            | **Key Features** | **Based on**                            | **System Impact** |
 |----------------------|------------------|-----------------------------------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | Rohde Schwarz TMU9 DVBT2, range 2.0.0.x | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | Rohde Schwarz TMU9 DVBT2, range 2.0.0.x | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This **SNMP** connector is used to monitor and configure the **Rohde Schwarz TMU
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**               |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                   |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Rohde Schwarz TMU9 DVBT - Transmitter |
+| 1.0.0.x   | No                  | Yes                     | -                     | Rohde Schwarz TMU9 DVBT - Transmitter |
 
 ## Configuration
 

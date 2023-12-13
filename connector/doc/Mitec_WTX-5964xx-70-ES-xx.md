@@ -33,7 +33,7 @@ This protocol uses serial communication to transmit commands and receive respons
 SERIAL CONNECTION
 
 - **IP Address/Host**: The polling IP of the device, e.g. *10.255.110.xx*.
-- **IP Port:** The device port location at the specified IP, e.g. *10.255.110.xx:15000*.
+- **IP port**: The device port location at the specified IP, e.g. *10.255.110.xx:15000*.
 
 ## Usage
 

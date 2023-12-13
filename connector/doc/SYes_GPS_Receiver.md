@@ -14,11 +14,11 @@ This device provides a high number of time and reference signals (10x5/10 MHz an
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**        |
+| Range     | Supported Firmware            |
 |-----------|-------------------------------|
 | 1.0.0.x   | Version: 3; Code: FW469180234 |
 
@@ -26,7 +26,7 @@ This device provides a high number of time and reference signals (10x5/10 MHz an
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

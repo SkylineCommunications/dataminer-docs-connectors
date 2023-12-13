@@ -24,7 +24,7 @@ This connector allows the capturing of **traps** of type "**No TS Lock"**. The i
 | 2.2.0.x              | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | No                  | Yes                     |
 | 3.0.0.x              | DCF functionality added.                                                                                                                         | Yes                 | Yes                     |
 | 3.0.1.x              | Specific version made for customer BeIn. Based on version 3.0.0.18, but uses discreets for AudioEmbedding as they were until 3.0.0.9.            | Yes                 | Yes                     |
-| 3.1.0.x \[SLC Main\] | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | Yes                 | Yes                     |
+| 3.1.0.x [SLC Main]   | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | Yes                 | Yes                     |
 
 ### Product Info
 

@@ -12,19 +12,19 @@ The connector can be provisioned via the import of CSV files with IP addresses a
 
 ### Version Info
 
-| **Range**     | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                  | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Updated spectrum analyzer tables | No                  | Yes                     |
+| Range              | Description                      | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version                  | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Updated spectrum analyzer tables | No              | Yes                 |
 
 ### Product Info
 
-The connector was tested with three different types of Teleste amplifiers, listed in the table below, and can also be used with other types of Teleste amplifiers that support the same MIBs.
+The connector has been tested with three different types of Teleste amplifiers, listed in the table below, and it can also be used with other types of Teleste amplifiers that support the same MIBs.
 
-| **Range** | **Device Firmware Version**                                                                               |
-|------------------|-----------------------------------------------------------------------------------------------------------|
-| 1.0.0.x          | Teleste AC3010 Teleste AC3210 Teleste ACE3 (Other types of Teleste amplifiers that support the same MIBs) |
-| 1.0.1.x          | Teleste AC3010 Teleste AC3210 Teleste ACE3 (Other types of Teleste amplifiers that support the same MIBs) |
+| Range   | Device Firmware Version                                                                                   |
+|---------|-----------------------------------------------------------------------------------------------------------|
+| 1.0.0.x | Teleste AC3010 Teleste AC3210 Teleste ACE3 (Other types of Teleste amplifiers that support the same MIBs) |
+| 1.0.1.x | Teleste AC3010 Teleste AC3210 Teleste ACE3 (Other types of Teleste amplifiers that support the same MIBs) |
 
 ## Installation and configuration
 
