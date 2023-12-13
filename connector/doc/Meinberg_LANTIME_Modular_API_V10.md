@@ -12,21 +12,21 @@ The **Meinberg LANTIME Modular** connector displays both status and configuratio
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based On** | **System Impact**                                                               |
+| Range                | Key Features     | Based On     | System Impact                                                                   |
 |----------------------|------------------|--------------|---------------------------------------------------------------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | Minimum required DataMiner version is **10.0.9.0 - 9385** due to dynamic units. |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | Minimum required DataMiner version is **10.0.9.0 - 9385** due to dynamic units. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware** | **REST API Version** | **Supported Types**                               |
+| Range     | Supported Firmware     | REST API Version     | Supported Types                                   |
 |-----------|------------------------|----------------------|---------------------------------------------------|
 | 1.0.0.x   | 7.06.x<br>7.08.x       | 10.x.y<br>16.x.y     | M500, M1000, M1000s, M2000s, M3000, M3000s, M4000 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | **Exported Components**                                                                                                                                   |
-|-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | DataMiner protocols:<br>- [Meinberg LANTIME IMS-BPE API V10](xref:Connector_help_Meinberg_LANTIME_IMS-BPE_API_V10)<br>- [Meinberg LANTIME IMS-CPE API V10](xref:Connector_help_Meinberg_LANTIME_IMS-CPE_API_V10)<br>- [Meinberg LANTIME IMS-ESI API V10](xref:Connector_help_Meinberg_LANTIME_IMS-ESI_API_V10)<br>- [Meinberg LANTIME IMS-FDM API V10](xref:Connector_help_Meinberg_LANTIME_IMS-FDM_API_V10)<br>- [Meinberg LANTIME IMS-GNM API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GNM_API_V10)<br>- [Meinberg LANTIME IMS-GNS API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GNS_API_V10)<br>- [Meinberg LANTIME IMS-GNS-UC API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GNS-UC_API_V10)<br>- [Meinberg LANTIME IMS-GPS API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GPS_API_V10)<br>- [Meinberg LANTIME IMS-HPS API V10](xref:Connector_help_Meinberg_LANTIME_IMS-HPS_API_V10)<br>- [Meinberg LANTIME IMS-LIU API V10](xref:Connector_help_Meinberg_LANTIME_IMS-LIU_API_V10)<br>- [Meinberg LANTIME IMS-LNO API V10](xref:Connector_help_Meinberg_LANTIME_IMS-LNO_API_V10)<br>- [Meinberg LANTIME IMS-MRI API V10](xref:Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10)<br>- [Meinberg LANTIME IMS-PIO API V10](xref:Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10)<br>- [Meinberg LANTIME IMS-PZF API V10](xref:Connector_help_Meinberg_LANTIME_IMS-PZF_API_V10)<br>- [Meinberg LANTIME IMS-REL API V10](xref:Connector_help_Meinberg_LANTIME_IMS-REL_API_V10)<br>- [Meinberg LANTIME IMS-RSC API V10](xref:Connector_help_Meinberg_LANTIME_IMS-RSC_API_V10)<br>- [Meinberg LANTIME IMS-SCG API V10](xref:Connector_help_Meinberg_LANTIME_IMS-SCG_API_V10)<br>- [Meinberg LANTIME IMS-TCR API V10](xref:Connector_help_Meinberg_LANTIME_IMS-TCR_API_V10)<br>- [Meinberg LANTIME IMS-VSG API V10](xref:Connector_help_Meinberg_LANTIME_IMS-VSG_API_V10)<br>- [Meinberg LANTIME IMS-VSI API V10](xref:Connector_help_Meinberg_LANTIME_IMS-VSI_API_V10) | DataMiner connector:<br>- [Meinberg LANTIME Modular API V10 - SyncMon Node](xref:Connector_help_Meinberg_LANTIME_Modular_API_V10_-_SyncMon_Node) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | DataMiner protocols:<br>- [Meinberg LANTIME IMS-BPE API V10](xref:Connector_help_Meinberg_LANTIME_IMS-BPE_API_V10)<br>- [Meinberg LANTIME IMS-CPE API V10](xref:Connector_help_Meinberg_LANTIME_IMS-CPE_API_V10)<br>- [Meinberg LANTIME IMS-ESI API V10](xref:Connector_help_Meinberg_LANTIME_IMS-ESI_API_V10)<br>- [Meinberg LANTIME IMS-FDM API V10](xref:Connector_help_Meinberg_LANTIME_IMS-FDM_API_V10)<br>- [Meinberg LANTIME IMS-GNM API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GNM_API_V10)<br>- [Meinberg LANTIME IMS-GNS API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GNS_API_V10)<br>- [Meinberg LANTIME IMS-GNS-UC API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GNS-UC_API_V10)<br>- [Meinberg LANTIME IMS-GPS API V10](xref:Connector_help_Meinberg_LANTIME_IMS-GPS_API_V10)<br>- [Meinberg LANTIME IMS-HPS API V10](xref:Connector_help_Meinberg_LANTIME_IMS-HPS_API_V10)<br>- [Meinberg LANTIME IMS-LIU API V10](xref:Connector_help_Meinberg_LANTIME_IMS-LIU_API_V10)<br>- [Meinberg LANTIME IMS-LNO API V10](xref:Connector_help_Meinberg_LANTIME_IMS-LNO_API_V10)<br>- [Meinberg LANTIME IMS-MRI API V10](xref:Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10)<br>- [Meinberg LANTIME IMS-PIO API V10](xref:Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10)<br>- [Meinberg LANTIME IMS-PZF API V10](xref:Connector_help_Meinberg_LANTIME_IMS-PZF_API_V10)<br>- [Meinberg LANTIME IMS-REL API V10](xref:Connector_help_Meinberg_LANTIME_IMS-REL_API_V10)<br>- [Meinberg LANTIME IMS-RSC API V10](xref:Connector_help_Meinberg_LANTIME_IMS-RSC_API_V10)<br>- [Meinberg LANTIME IMS-SCG API V10](xref:Connector_help_Meinberg_LANTIME_IMS-SCG_API_V10)<br>- [Meinberg LANTIME IMS-TCR API V10](xref:Connector_help_Meinberg_LANTIME_IMS-TCR_API_V10)<br>- [Meinberg LANTIME IMS-VSG API V10](xref:Connector_help_Meinberg_LANTIME_IMS-VSG_API_V10)<br>- [Meinberg LANTIME IMS-VSI API V10](xref:Connector_help_Meinberg_LANTIME_IMS-VSI_API_V10) | DataMiner connector:<br>- [Meinberg LANTIME Modular API V10 - SyncMon Node](xref:Connector_help_Meinberg_LANTIME_Modular_API_V10_-_SyncMon_Node) |
 
 ## Configuration
 
@@ -37,20 +37,22 @@ The **Meinberg LANTIME Modular** connector displays both status and configuratio
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP or URL of the destination.
-- **IP port:** The IP port of the destination.
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy*.
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Initialization
 
 #### REST API
 
 The HTTP communication uses a REST API, which needs to be enabled.
+
 On the device's web interface, make sure the **Enable REST API** option is selected under the **general settings** on the **System** page.
 
 #### HTTP Credentials
 
 The HTTP communication will not be up and running until the necessary HTTP credentials have been provided.
+
 On the **Credentials** page of the element, the **user name** and **password** must be configured.
 
 ### Web Interface
@@ -64,6 +66,7 @@ REST (Representational State Transfer) calls are used to retrieve the device inf
 ### HTTP Communication
 
 On the **HTTP Communication** page, you can track the HTTP sessions used for communicating with the device.
+
 This makes it possible to follow the communication flow and provides some useful statistics, e.g. request time, response time, time span (RTT), etc.
 
 - **HTTP Sessions State**: If you enable this setting, the active HTTP sessions will be tracked.

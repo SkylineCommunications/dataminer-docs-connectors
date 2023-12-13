@@ -5530,8 +5530,6 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-ESI
   - name: Meinberg LANTIME IMS-ESI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-ESI_API_V10
-  - name: Meinberg LANTIME IMS-FDM
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-FDM
   - name: Meinberg LANTIME IMS-FDM API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-FDM_API_V10
   - name: Meinberg LANTIME IMS-GNM
@@ -5570,16 +5568,12 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI
   - name: Meinberg LANTIME IMS-MRI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10
-  - name: Meinberg LANTIME IMS-PIO
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO
   - name: Meinberg LANTIME IMS-PIO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10
   - name: Meinberg LANTIME IMS-PZF
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF
   - name: Meinberg LANTIME IMS-PZF API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF_API_V10
-  - name: Meinberg LANTIME IMS-REL
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-REL
   - name: Meinberg LANTIME IMS-REL API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-REL_API_V10
   - name: Meinberg LANTIME IMS-RSC
@@ -5594,12 +5588,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-TCR
   - name: Meinberg LANTIME IMS-TCR API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-TCR_API_V10
-  - name: Meinberg LANTIME IMS-VSG
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-VSG
   - name: Meinberg LANTIME IMS-VSG API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-VSG_API_V10
-  - name: Meinberg LANTIME IMS-VSI
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-VSI
   - name: Meinberg LANTIME IMS-VSI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-VSI_API_V10
   - name: Meinberg Lantime M300
