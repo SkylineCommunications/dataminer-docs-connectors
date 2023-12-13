@@ -12,24 +12,24 @@ Incorporates three IP Interfaces that can be used for streaming and management.
 
 ### Version Info
 
-| **Range**          | **Key Features**                      | **Based on** | **System Impact**                             |
+| Range              | Key Features                          | Based on     | System Impact                                 |
 |--------------------|---------------------------------------|--------------|-----------------------------------------------|
-| 1.0.0.x            | Initial version                       | \-           | \-                                            |
-| 1.1.0 \[SLC Main\] | Implemented support for new firmware. | \-           | New implementation based on updated SNMP MIBs |
+| 1.0.0.x            | Initial version                       | -            | -                                             |
+| 1.1.0 [SLC Main]   | Implemented support for new firmware. | -            | New implementation based on updated SNMP MIBs |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**        |
+| Range     | Supported Firmware            |
 |-----------|-------------------------------|
-| 1.0.0.x   | \-                            |
+| 1.0.0.x   | -                             |
 | 1.1.0.x   | Software V3.2.0 Firmware V2.6 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

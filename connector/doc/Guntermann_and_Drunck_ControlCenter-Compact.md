@@ -18,7 +18,7 @@ The connector polls data from the device using SNMPv2.
 
 | **Range**     | **Description**         | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version         | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version         | No                  | Yes                     |
 | 1.0.1.x              | New connection (serial) | No                  | Yes                     |
 
 ### Product Info
@@ -53,8 +53,8 @@ This connector uses a serial connection and requires the following input during 
 
 Serial connection:
 
-- **IP address/host:** The polling IP of the device.
-- **Device address:** By default *5000*.
+- **IP address/host**: The polling IP of the device.
+- **Device address**: By default *5000*.
 - **Timeout of a single command (ms):** *15000*
 
 ## Usage

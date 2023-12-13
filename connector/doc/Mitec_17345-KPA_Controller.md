@@ -20,7 +20,7 @@ Serial communication is used to poll the information from the device.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                           |
+| Range     | Device Firmware Version                                                               |
 |------------------|---------------------------------------------------------------------------------------|
 | 1.0.0.x          | Compatible with software version 2.23 of the RSU Model 18687-01 (configuration 1.00). |
 

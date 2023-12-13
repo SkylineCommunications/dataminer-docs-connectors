@@ -12,27 +12,27 @@ This connector uses a **serial** connection to retrieve the connection state of 
 
 ### Version Info
 
-| **Range**            | **Key Features**              | **Based on** | **System Impact** |
+| Range                | Key Features                  | Based On     | System Impact     |
 |----------------------|-------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version               | \-           | \-                |
-| 1.0.1.x \[Obsolete\] | Redundant polling added       | \-           | \-                |
-| 1.0.2.x \[SLC Main\] | Various discrete values fixed | \-           | \-                |
+| 1.0.0.x              | Initial version               | -            | -                 |
+| 1.0.1.x [Obsolete]     |Redundant polling added       | -            | -                 |
+| 1.0.2.x [SLC Main]   | Various discrete values fixed | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -63,9 +63,9 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Settings:
 
-- **IP port:** The IP port of the device.
-- **Get community string:** The community string used when reading values from the device, by default *public*.
-- **Set community string:** The community string used when setting values on the device, by default *private*.
+- **IP port**: The IP port of the device.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## How to use
 

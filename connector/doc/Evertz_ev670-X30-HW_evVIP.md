@@ -12,8 +12,8 @@ This connector can be used to monitor and configure the Evertz ev670-X30-HW evVI
 
 | **Range**            | **Key Features**               | **Based on** | **System Impact**                                                                                              |
 |----------------------|--------------------------------|--------------|----------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial implementation.        | \-           | \-                                                                                                             |
-| 1.0.1.x \[SLC Main\] | Only allows SNMPv2 and SNMPv3. | 1.0.0.4      | Removes support for SNMPv1.                                                                                    |
+| 1.0.0.x              | Initial implementation.        | -            | -                                                                                                              |
+| 1.0.1.x [SLC Main]   | Only allows SNMPv2 and SNMPv3. | 1.0.0.4      | Removes support for SNMPv1.                                                                                    |
 | 1.1.1.x              | New firmware support.          | 1.0.2.2      | Various changes to parameter descriptions, discrete values, and layout.                                        |
 | 1.1.2.x              | Removed parameters.            | 1.1.1.1      | You may need to reconfigure filters, Automation scripts, visual overviews, reports, Web API applications, etc. |
 
@@ -21,19 +21,19 @@ This connector can be used to monitor and configure the Evertz ev670-X30-HW evVI
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.1.1.x   | \-                     |
-| 1.1.2.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.1.1.x   | -                      |
+| 1.1.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

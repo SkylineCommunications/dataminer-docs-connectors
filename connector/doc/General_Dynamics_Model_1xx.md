@@ -24,7 +24,7 @@ Monitoring and control of the Antenna control system for models in the 100 range
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

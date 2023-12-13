@@ -17,8 +17,8 @@ The Sony PWS-110SC1 is a Vision Mixer Controller to which different cards can be
 
 | **Range**            | **Key Features**                             | **Based on** | **System Impact**                                                                           |
 |----------------------|----------------------------------------------|--------------|---------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                             | \-           | \-                                                                                          |
-| 1.0.1.x \[SLC Main\] | Support for monitoring of Sony 2110 devices. | 1.0.0.24     | Pages renamed. NMI table renamed to IP IV Interface table. Columns of Device table renamed. |
+| 1.0.0.x              | Initial version.                             | -            | -                                                                                           |
+| 1.0.1.x [SLC Main]   | Support for monitoring of Sony 2110 devices. | 1.0.0.24     | Pages renamed. NMI table renamed to IP IV Interface table. Columns of Device table renamed. |
 
 ### Product Info
 

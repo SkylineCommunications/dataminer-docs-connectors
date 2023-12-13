@@ -6759,6 +6759,8 @@
     topicUid: Connector_help_ONATi_delair_Etsiline_32
   - name: ONATi Keysight 87106B SP6T
     topicUid: Connector_help_ONATi_Keysight_87106B_SP6T
+  - name: ONATi Splunk Monitoring
+  topicUid: Connector_help_ONATi_Splunk_Monitoring
 - name: OneWeb
   topicUid: Connector_help_OneWeb_Antenna_Controller
   items:
@@ -8235,6 +8237,8 @@
     topicUid: Connector_help_Skyline_Resource_Discovery_Rules
   - name: Skyline SCTE Manager
     topicUid: Connector_help_Skyline_SCTE_Manager
+  - name: Skyline SecurityOnion Monitor
+    topicUid: Connector_help_Skyline_SecurityOnion_Monitor
   - name: Skyline Service Assurance
     topicUid: Connector_help_Skyline_Service_Assurance
   - name: Skyline Service Definition Basic

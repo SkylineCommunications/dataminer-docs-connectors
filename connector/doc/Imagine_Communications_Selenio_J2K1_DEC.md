@@ -30,7 +30,7 @@ The connector has two different versions to support 2-channel and 4-channel deco
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                  |
+| Range     | Device Firmware Version                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.90.x         | 1.0.90                                                                                                                       |
 | 1.1.0.x          | 2.0.13                                                                                                                       |

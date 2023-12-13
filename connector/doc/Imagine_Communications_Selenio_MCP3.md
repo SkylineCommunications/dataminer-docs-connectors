@@ -15,12 +15,12 @@ The **Imagine Communications Selenio MCP3** connector can be used to monitor a S
 | 1.0.0.x                 | Initial version.                                                                                                                                                                                            | No                  | Yes                     |
 | 4.0.1.x                 | Updated to firmware 4.0.                                                                                                                                                                                    | No                  | Yes                     |
 | 4.1.0.x                 | Updated to firmware 5.0. Cross Connections, Module Association, Module Function, Module Interface, Module Output, Repository, Slot Upgrade, and VLAN pages are functional from this connector version onwards. | No                  | Yes                     |
-| \<10.0.0.x \[SLC Main\] | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports.                                                                                | No                  | Yes                     |
+| \<10.0.0.x [SLC Main]   | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports.                                                                                | No                  | Yes                     |
 | 10.0.0.x                | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                                                                                          | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                  |
+| Range     | Device Firmware Version                                                                                                      |
 |------------------|------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | 1.0                                                                                                                          |
 | 4.0.1.x          | 1.0                                                                                                                          |

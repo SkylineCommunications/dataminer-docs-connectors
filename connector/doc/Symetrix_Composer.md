@@ -16,7 +16,7 @@ of the system information.
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | True                    |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | True                    |
 
 ### Product Info
 

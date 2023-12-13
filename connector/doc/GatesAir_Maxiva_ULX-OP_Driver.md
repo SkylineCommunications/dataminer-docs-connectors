@@ -21,11 +21,11 @@ The equipment can be remotely controlled through SNMP protocol and a web GUI int
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                  |
+| Range     | Supported Firmware                                                                                      |
 |-----------|---------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Software Release: 5.4.5 \| Kernel Release: 1.0.0 \| Ramdisk Release: 1.0.4 \| Controller Release: 3.6.7 |
 
@@ -33,7 +33,7 @@ The equipment can be remotely controlled through SNMP protocol and a web GUI int
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

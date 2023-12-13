@@ -10,33 +10,33 @@ The CISCO CMTS CCAP Platform is an **SNMP** connector that collects relevant dat
 
 ### Version Info
 
-| **Range** | **Key Features**                      | **Based on** | **System Impact** |
+| Range     | Key Features                          | Based on     | System Impact     |
 |-----------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.                      | \-           | \-                |
-| 1.0.1.x   | \-                                    | \-           |                   |
-| 1.0.2.x   | Modifications to improve performance. | \-           | \-                |
-| 1.0.3.x   | Added parameters to CCAP tables.      | \-           | \-                |
-| 1.0.4.x   | Modifications to improve performance. | \-           | \-                |
+| 1.0.0.x   | Initial version.                      | -            | -                 |
+| 1.0.1.x   | -                                     | -            |                   |
+| 1.0.2.x   | Modifications to improve performance. | -            | -                 |
+| 1.0.3.x   | Added parameters to CCAP tables.      | -            | -                 |
+| 1.0.4.x   | Modifications to improve performance. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 12.2(33)SCJ1           |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

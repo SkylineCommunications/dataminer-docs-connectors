@@ -10,9 +10,9 @@ This connector establishes a connection with a **Linux server**. It analyzes **l
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                    | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- SSH connection. - Copies files from server to local machine. - Analyzes and extracts information from log files. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - SSH connection. <br>- Copies files from server to local machine. <br>- Analyzes and extracts information from log files. | - | - |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector establishes a connection with a **Linux server**. It analyzes **l
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

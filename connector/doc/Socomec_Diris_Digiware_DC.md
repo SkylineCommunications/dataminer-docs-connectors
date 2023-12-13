@@ -10,24 +10,24 @@ This connector will poll the Socomec Digiware DC. The Digiware DC is a meter wit
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                | **Based on** | **System Impact**              |
-|----------------------|-----------------------------------------------------------------------------------------------------------------|--------------|--------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial release (only supports I30-DC).                                                                         | \-           | \-                             |
-| 1.0.1.x \[SLC Main\] | \- Modules can now be given a custom name. - Display keys will now include the custom name given to the module. | 1.0.1.2      | Elements need to be recreated. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial release (only supports I30-DC). | - | - |
+| 1.0.1.x [SLC Main] | - Modules can now be given a custom name. <br>- Display keys will now include the custom name given to the module. | 1.0.1.2 | Elements need to be recreated. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                  |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Socomec Diris Digiware DC - I30 DC](xref:Connector_help_Socomec_Diris_Digiware_DC_-_I30_DC) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | [Socomec Diris Digiware DC - I30 DC](xref:Connector_help_Socomec_Diris_Digiware_DC_-_I30_DC) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | [Socomec Diris Digiware DC - I30 DC](xref:Connector_help_Socomec_Diris_Digiware_DC_-_I30_DC) |
+| 1.0.1.x | No | Yes | - | [Socomec Diris Digiware DC - I30 DC](xref:Connector_help_Socomec_Diris_Digiware_DC_-_I30_DC) |
 
 ## Configuration
 

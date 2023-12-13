@@ -39,7 +39,7 @@ The **Skyline Bookings Monitoring** is a virtual connector that allows **SRM Sol
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                   |
+| Range     | Supported Firmware                                                                                       |
 |-----------|----------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Connector meant to be installed with Skyline Booking Manager Connector (2.0.2.29) in SRM 1.2.14 or above |
 
@@ -47,7 +47,7 @@ The **Skyline Bookings Monitoring** is a virtual connector that allows **SRM Sol
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

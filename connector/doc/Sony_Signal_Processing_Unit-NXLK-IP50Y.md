@@ -18,8 +18,8 @@ This connector is exported by the parent connector **Sony Signal Processing Unit
 
 | **Range**            | **Key Features**                        | **Based on** | **System Impact**                            |
 |----------------------|-----------------------------------------|--------------|----------------------------------------------|
-| 1.0.0.x              | Initial version                         | \-           | \-                                           |
-| 1.0.1.x \[SLC Main\] | Support monitoring of Sony 2110 devices | 1.0.0.14     | \- Button parameters renamed - Pages renamed |
+| 1.0.0.x              | Initial version                         | -            | -                                            |
+| 1.0.1.x [SLC Main]   | Support monitoring of Sony 2110 devices | 1.0.0.14     | \- Button parameters renamed - Pages renamed |
 
 ### Product Info
 

@@ -12,19 +12,19 @@ The **Finnish Broadcasting Company Order Manager** is used for the **Media Servi
 
 | **Range**            | **Key Features**                                                                                          | **Based on** | **System Impact**                                    |
 |----------------------|-----------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                          | \-           | \-                                                   |
-| 1.0.1.x              | Improved prioritization of integration updates. Only handles updates with changed hash.                   | 1.0.0.9      | \-                                                   |
-| 1.0.2.x              | Initialization of integration updates handled in order manager instead of HandleIntegrationUpdate script. | 1.0.1.13     | \-                                                   |
-| 1.0.3.x \[SLC Main\] | Service configurations saved in logger table.                                                             | 1.0.2.5      | Previous service configurations no longer available. |
+| 1.0.0.x              | Initial version.                                                                                          | -            | -                                                    |
+| 1.0.1.x              | Improved prioritization of integration updates. Only handles updates with changed hash.                   | 1.0.0.9      | -                                                    |
+| 1.0.2.x              | Initialization of integration updates handled in order manager instead of HandleIntegrationUpdate script. | 1.0.1.13     | -                                                    |
+| 1.0.3.x [SLC Main]   | Service configurations saved in logger table.                                                             | 1.0.2.5      | Previous service configurations no longer available. |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                               | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                   | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | \-                      |
-| 1.0.1.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | \-                      |
-| 1.0.2.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | \-                      |
-| 1.0.3.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | -                       |
+| 1.0.1.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | -                       |
+| 1.0.2.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | -                       |
+| 1.0.3.x   | No                  | Yes                     | FinnishBroadcastingCompany Media Services scripts Integration protocols (see below) | -                       |
 
 ## Configuration
 

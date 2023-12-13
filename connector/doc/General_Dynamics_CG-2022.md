@@ -12,9 +12,9 @@ The General Dynamics CG-2022 connector is used to control and monitor this devic
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | No           | \-                |
+| 1.0.0.x   | Initial version  | No           | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The General Dynamics CG-2022 connector is used to control and monitor this devic
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

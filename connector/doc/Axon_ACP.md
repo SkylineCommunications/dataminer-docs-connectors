@@ -20,11 +20,11 @@ Depending on the used configuration within the connector related to the DataMine
 |----------------------|-----------------------------------|---------------------|-------------------------|
 | 1.0.1.x              | Branch version                    | No                  | Yes                     |
 | 1.0.2.x              | Change in export rules            | Yes                 | Yes                     |
-| 1.0.3.x \[SLC Main\] | Change in discrete display values | Yes                 | Yes                     |
+| 1.0.3.x [SLC Main]   | Change in discrete display values | Yes                 | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                       |
+| Range     | Supported Firmware                                                                                           |
 |-----------|--------------------------------------------------------------------------------------------------------------|
 | 1.0.1.x   | **ERS118**: 0801, 0901, 1001, 1801, 1901 **RRS08**: 1801, 3400, 3600 **RRS18**: 1801, 3400, 3600             |
 | 1.0.2.x   | **ERS118:** 0801, 0901, 1001, 1801, 1901, 2001 **RRS08:** 1801, 3400, 3600 **RRS18:** 1801, 3100, 3400, 3600 |

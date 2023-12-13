@@ -18,7 +18,7 @@ An HTTP connection is used to retrieve information from the software. Data is re
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**  |
+| Range     | Device Firmware Version      |
 |------------------|------------------------------|
 | 1.0.0.x          | Firmware: 3.8.22 API: 1.10.2 |
 

@@ -17,7 +17,7 @@ This connector will export different connectors based on the retrieved data. A l
 | **Range**     | **Description**     | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|---------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version     | No                  | No                      |
-| 1.0.1.x \[SLC Main\] | Cassandra compliant | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Cassandra compliant | No                  | Yes                     |
 
 ### Product Info
 

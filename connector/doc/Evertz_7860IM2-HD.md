@@ -22,7 +22,7 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 **SNMP Settings**:
 
 - **Port number**: the port of the connected device, default *161*
-- **Device address:** Is the card number of the card that will be used.
+- **Device address**: Is the card number of the card that will be used.
 - **Get community string**: the community string in order to read from the device. The default value is *public*.
 - **Set community string**: the community string in order to set to the device. The default value is *private.*
 

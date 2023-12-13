@@ -19,7 +19,7 @@ The 3.0.0.x range was created because of memory problems with the SNMP agent on 
 |----------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                    | Yes                 | Yes                     |
 | 3.0.0.x              | Initial version with HTTP          | Yes                 | Yes                     |
-| 3.0.1.x \[SLC Main\] | Changed Tally color label to State | Yes                 | Yes                     |
+| 3.0.1.x [SLC Main]   | Changed Tally color label to State | Yes                 | Yes                     |
 
 ### Product Info
 

@@ -15,7 +15,7 @@ The **Haivision Makito X Decoder** connector is used to monitor and control a de
 | **Range**            | **Description**            | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.           | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | New HTTP connection added. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | New HTTP connection added. | No                  | Yes                     |
 
 ### Product Info
 

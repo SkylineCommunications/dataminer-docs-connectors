@@ -14,7 +14,7 @@ This connector displays data related to the transmitter module. It is exported b
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 2.0.0.x   | \-                     |
+| 2.0.0.x   | -                      |
 
 ## Configuration
 

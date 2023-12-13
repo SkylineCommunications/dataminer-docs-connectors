@@ -12,8 +12,8 @@ With Reflex you can automate tasks with sensors, triggers and actions. Scripts c
 
 | **Range**            | **Key Features**                | **Based on** | **System Impact** |
 |----------------------|---------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Support for new firmware 2.1.0. | 1.0.0.2      | \-                |
+| 1.0.0.x              | Initial version.                | -            | -                 |
+| 1.1.0.x [SLC Main]   | Support for new firmware 2.1.0. | 1.0.0.2      | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ With Reflex you can automate tasks with sensors, triggers and actions. Scripts c
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

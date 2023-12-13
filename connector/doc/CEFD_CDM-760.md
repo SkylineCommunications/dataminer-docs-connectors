@@ -56,7 +56,7 @@ Ranges of the connector
 
 Supported firmware versions
 
-| **Range** | **Device Firmware Version**                   |
+| Range     | Device Firmware Version                       |
 |------------------|-----------------------------------------------|
 | 1.0.0.x          | 1.1.1                                         |
 | 1.1.0.x          | 1.5.71.2.2 - If Packet Processor is installed |

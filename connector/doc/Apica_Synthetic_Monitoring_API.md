@@ -10,9 +10,9 @@ The Apica Synthetic Monitoring API connector displays the available checks of th
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Apica Synthetic Monitoring API connector displays the available checks of th
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -36,7 +36,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The Apica monitoring API requires the URL <https://api-wpm2.apicasystem.com/v3/Checks>.
+- **IP address/host**: The Apica monitoring API requires the URL <https://api-wpm2.apicasystem.com/v3/Checks>.
 - **IP port**: The default port is 443.
 
 ### Initialization

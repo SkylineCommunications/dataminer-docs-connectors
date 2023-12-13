@@ -12,9 +12,9 @@ This connector uses **SNMP** to poll information from the device.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                               | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- General system parameters - Network Interface Table - Rectifier system data | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - General system parameters<br> - Network Interface Table<br> - Rectifier system data | - | - |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector uses **SNMP** to poll information from the device.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

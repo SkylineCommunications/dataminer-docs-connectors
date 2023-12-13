@@ -34,7 +34,7 @@ SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device, by default *5025*.
-- **Bus address:** The bus address of the device. This can be any number from *0* to *32*.
+- **Bus address**: The bus address of the device. This can be any number from *0* to *32*.
 
 ## Usage
 

@@ -14,11 +14,11 @@ Allows control and monitoring applications to find the resources on a network. R
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Websocket        |              |                   |
+| 1.0.0.x [SLC Main]   | Websocket        |              |                   |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**              |
+| Range     | Supported Firmware                  |
 |-----------|-------------------------------------|
 | 1.0.0.x   | Supports IS-04 Query API v1.2, v1.3 |
 

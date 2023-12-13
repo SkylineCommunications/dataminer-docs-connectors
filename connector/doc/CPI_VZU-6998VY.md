@@ -12,12 +12,12 @@ The CPI VZU-6998VY is a 750 W High-Power Amplifier (HPA). This connector uses se
 
 | **Range**            | **Key Features**                         | **Based on** | **System Impact** |
 |----------------------|------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                          | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Ranges changed for RF output parameters. | \-           | \-                |
+| 1.0.0.x              | Initial version                          | -            | -                 |
+| 1.1.0.x [SLC Main]   | Ranges changed for RF output parameters. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**     |
+| Range     | Supported Firmware         |
 |-----------|----------------------------|
 | 1.0.0.x   | 750WNC 0 02.00.06 01.00.39 |
 | 1.1.0.x   | 750WNC 0 02.00.06 01.00.39 |
@@ -26,8 +26,8 @@ The CPI VZU-6998VY is a 750 W High-Power Amplifier (HPA). This connector uses se
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

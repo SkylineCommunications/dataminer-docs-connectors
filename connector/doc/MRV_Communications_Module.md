@@ -10,7 +10,7 @@ This connector is exported by the MRV Communications Chassis connector and repre
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                           |
+| Range     | Supported Firmware                                               |
 |-----------|------------------------------------------------------------------|
 | 1.0.0.x   | 2081383-001R 2081546-004R 2081343-005R 2081152-012R 2081313-012R |
 
@@ -18,7 +18,7 @@ This connector is exported by the MRV Communications Chassis connector and repre
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

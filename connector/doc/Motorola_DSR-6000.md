@@ -16,7 +16,7 @@ After the DSR-6000 unit is properly configured, it is ready to receive authoriza
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ After the DSR-6000 unit is properly configured, it is ready to receive authoriza
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -40,13 +40,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device, by default *public*.
-- **Set community string:** The community string used when setting values on the device, by default *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 #### HTTP Connection
 
@@ -54,9 +54,9 @@ The connector uses an HTTP connection and requires the following input during el
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP or URL of the destination.
-- **IP port:** The IP port of the destination.
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy*.
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Initialization
 

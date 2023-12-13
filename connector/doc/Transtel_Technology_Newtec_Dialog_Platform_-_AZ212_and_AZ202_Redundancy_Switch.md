@@ -12,7 +12,7 @@ This connector is exported by the parent connector Transtel Technology Newtec Di
 
 | **Range**          | **Key Features** | **Based on** | **System Impact** |
 |--------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main | Initial version  | \-           | \-                |
+| 1.0.0.x \[SLC Main | Initial version  | -            | -                 |
 
 ### Product Info
 

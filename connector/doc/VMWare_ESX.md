@@ -14,8 +14,8 @@ The connector uses SNMPv1 to retrieve information from the device.
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact** |
 |----------------------|------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | DCF integration added. | \-           | \-                |
+| 1.0.0.x              | Initial version.       | -            | -                 |
+| 1.0.1.x [SLC Main]   | DCF integration added. | -            | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The connector uses SNMPv1 to retrieve information from the device.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -8,15 +8,15 @@ The ABR Profile Manager is a virtual connector that collects data from existing 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                | **Based on** | **System Impact** |
+| Range                | Key Features                                    | Based on     | System Impact     |
 |----------------------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Harmonic VOS profiles and services integration. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Harmonic VOS profiles and services integration. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

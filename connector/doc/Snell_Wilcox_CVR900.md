@@ -14,7 +14,7 @@ It also handles embedded, AES and analog audio. It can do aspect ratio conversio
 
 | **Range**            | **Key Features**                                                      | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version, enables monitoring and setting of device parameters. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version, enables monitoring and setting of device parameters. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ It also handles embedded, AES and analog audio. It can do aspect ratio conversio
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

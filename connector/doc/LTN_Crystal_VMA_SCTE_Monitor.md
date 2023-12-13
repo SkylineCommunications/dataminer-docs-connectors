@@ -12,15 +12,15 @@ Crystal VMA (Video Metadata Analyzer) is a diagnostic and monitoring probe used 
 
 | **Range**            | **Key Features**    | **Based on** | **System Impact**  |
 |----------------------|---------------------|--------------|--------------------|
-| 1.0.0.x              | Initial version     | \-           | \-                 |
-| 1.0.1.x \[SLC Main\] | Display SCTE Events | 1.0.0.5      | Hides logger table |
+| 1.0.0.x              | Initial version     | -            | -                  |
+| 1.0.1.x [SLC Main]   | Display SCTE Events | 1.0.0.5      | Hides logger table |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

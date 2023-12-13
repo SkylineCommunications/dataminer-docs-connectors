@@ -12,25 +12,25 @@ This connector communicates with the device using serial commands as described i
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                       | **Based on** | **System Impact** |
-|----------------------|------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                       | \-           | \-                |
-| 1.1.0.x              | Status command new response format.                                    | 1.0.0.2      | \-                |
-| 1.2.0.x \[SLC Main\] | Changed the structure of "Status" response because of firmware update. | 1.0.0.3      | \-                |
+| Range              | Key Features                                                           | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                       | -        | -             |
+| 1.1.0.x            | Status command new response format.                                    | 1.0.0.2  | -             |
+| 1.2.0.x [SLC Main] | Changed the structure of "Status" response because of firmware update. | 1.0.0.3  | -             |
 
 ### Product Info
 
-| **Range**            | **Supported Firmware**                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Main Boot Kernel Software Version: **01.00.00** Main Panel Software Version: **02.00.88** PS Controller Boot Kernel Software Version: **02.00.01** PS Controller Main Software Version: **02.00.53** BIPA Controller Boot Kernel Software Version: **02.00.01** BIPA Controller Main Program Software Version: **02.00.45** RF Controller Boot Kernel Software Version: **02.00.01** RF Controller Main Software Version: **02.00.33** CAN Communication Level Key: **01.00.73** |
-| 1.1.0.x              | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| 1.2.0.x \[SLC Main\] | Main Boot Kernel Software Version: **01.00.00** Main Panel Software Version: **02.01.96** PS Controller Boot Kernel Software Version: **02.00.05** PS Controller Main Software Version: **02.00.98** BIPA Controller Boot Kernel Software Version: **02.00.01** BIPA Controller Main Program Software Version: **02.00.87** RF Controller Boot Kernel Software Version: **02.00.05** RF Controller Main Software Version: **02.00.62** CAN Communication Level Key: **01.01.06** |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | Main Boot Kernel Software Version: **01.00.00** <br>Main Panel Software Version: **02.00.88** <br>PS Controller Boot Kernel Software Version: **02.00.01** <br>PS Controller Main Software Version: **02.00.53** <br>BIPA Controller Boot Kernel Software Version: **02.00.01** <br>BIPA Controller Main Program Software Version: **02.00.45** <br>RF Controller Boot Kernel Software Version: **02.00.01** <br>RF Controller Main Software Version: **02.00.33** <br>CAN Communication Level Key: **01.00.73** |
+| 1.1.0.x | - |
+| 1.2.0.x [SLC Main] | Main Boot Kernel Software Version: **01.00.00** <br>Main Panel Software Version: **02.01.96** <br>PS Controller Boot Kernel Software Version: **02.00.05** <br>PS Controller Main Software Version: **02.00.98** <br>BIPA Controller Boot Kernel Software Version: **02.00.01** <br>BIPA Controller Main Program Software Version: **02.00.87** <br>RF Controller Boot Kernel Software Version: **02.00.05** <br>RF Controller Main Software Version: **02.00.62** <br>CAN Communication Level Key: **01.01.06** |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.2.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.2.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

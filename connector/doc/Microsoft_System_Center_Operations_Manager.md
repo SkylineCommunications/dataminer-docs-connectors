@@ -13,19 +13,19 @@ Polling happens via the SCOM DLLs (SDK binaries).
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                                                             |
+| Range     | Supported Firmware                                                                                                                                                                 |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Microsoft.EnterpriseManagement.Core.dll - 7.5.7487.142 Microsoft.EnterpriseManagement.OperationsManager.dll - 7.2.12150.0 Microsoft.EnterpriseManagement.Runtime.dll - 7.2.11719.0 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                               |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                   |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Microsoft System Center Operations Manager - Category |
+| 1.0.0.x   | No                  | Yes                     | -                     | Microsoft System Center Operations Manager - Category |
 
 ## Configuration
 
