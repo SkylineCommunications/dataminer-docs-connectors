@@ -10,17 +10,17 @@ This connector is capable of collecting cable modem and ONT data defined in a Sk
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Gathers information from files created by Data Aggregator  | -            | -                 |
+| Range              | Key Features                                               | Based on | System Impact |
+|--------------------|------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                           | -        | -             |
+| 1.0.1.x [SLC Main] | Gathers information from files created by Data Aggregator. | -        | -             |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | No                     | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 
@@ -47,4 +47,6 @@ The General page also contains the **Configuration Table**. In this table, you m
 
 ## How to use - 1.0.1.X
 
-With this range of the driver, there is no setup required. The driver now uses files created by the Data Aggregator module within DataMiner. Once the Data Aggregator jobs are set up and running the driver will go to the directory and process the files. 
+With this range of the connector, no setup is required required. The connector uses files created by the DataMiner Data Aggregator module.
+
+Once the Data Aggregator jobs are set up and running, the connector will go to the directory and process the files.
