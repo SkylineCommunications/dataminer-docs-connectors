@@ -20,9 +20,9 @@ The connector retrieves and sets information on the device through HTTP and SNMP
 | 1.1.0.x              | Supports firmware 3.01.                                                                                                                  | No                  | Yes                     |
 | 1.2.0.x              | Supports firmware 3.75.                                                                                                                  | No                  | Yes                     |
 | 1.3.0.x              | Supports firmware 5.50 and possibility to switch between SS (Single-Stream) and MS (Multi-Stream) functionality depending on the device. | No                  | Yes                     |
-| 1.3.1.x \[Obsolete\] | Supports firmware 6.80.                                                                                                                  | No                  | Yes                     |
-| 1.4.0.x \[Obsolete\] | Supports firmware 6.52.                                                                                                                  | No                  | Yes                     |
-| 1.5.0.x \[SLC Main\] | Supports firmware 7.0. SNMP connection removed.                                                                                          | No                  | Yes                     |
+| 1.3.1.x [Obsolete]     |Supports firmware 6.80.                                                                                                                  | No                  | Yes                     |
+| 1.4.0.x [Obsolete]     |Supports firmware 6.52.                                                                                                                  | No                  | Yes                     |
+| 1.5.0.x [SLC Main]   | Supports firmware 7.0. SNMP connection removed.                                                                                          | No                  | Yes                     |
 
 ### Product Info
 

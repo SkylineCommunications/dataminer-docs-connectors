@@ -131,7 +131,7 @@ There are also page buttons that lead to the following subpages:
 - **IP Settings**: Contains a table with parameters such as **IP Address of Board, Board Subnet Mask**, etc.
 - **Output Channels**: Contains a table with parameters such as **Channel Number, Destination IP**, etc.
 - **Input Channels**: Contains a table with parameters such as **Destination Input UDP Port, RTP Input**, etc.
-- **IP Port:** This page contains parameters that refer to the **IP Port settings**, such as **IP Slot Number, IP Software Version**, etc.
+- **IP port**: This page contains parameters that refer to the **IP Port settings**, such as **IP Slot Number, IP Software Version**, etc.
 
 ### MUX Page
 

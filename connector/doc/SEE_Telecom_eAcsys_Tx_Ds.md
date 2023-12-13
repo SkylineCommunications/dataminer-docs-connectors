@@ -12,10 +12,10 @@ The SEE Telecom eAcsys Tx DS is a transmitter. This connector allows you to moni
 
 | **Range**            | **Key Features**                    | **Based on** | **System Impact** |
 |----------------------|-------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                    | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Release version.                    | 1.0.0.x      | \-                |
-| 2.1.0.x              | Revised layout, ranges, and timers. | 1.1.0.9      | \-                |
-| 3.0.0.x              | Custom version (VOO).               | 1.1.1.8      | \-                |
+| 1.0.0.x              | Initial version.                    | -            | -                 |
+| 1.1.0.x [SLC Main]   | Release version.                    | 1.0.0.x      | -                 |
+| 2.1.0.x              | Revised layout, ranges, and timers. | 1.1.0.9      | -                 |
+| 3.0.0.x              | Custom version (VOO).               | 1.1.1.8      | -                 |
 
 ### Product Info
 
@@ -30,10 +30,10 @@ The SEE Telecom eAcsys Tx DS is a transmitter. This connector allows you to moni
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -22,7 +22,7 @@ The main features offered by this solutions are network resiliency with greater 
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | Unknown                     |
+| 1.0.0.x [SLC Main]   | Unknown                     |
 
 ## Installation and configuration
 

@@ -12,13 +12,13 @@ This connector uses an HTTP connection to poll data from the MBC-7000 device. Th
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                  |
+| Range     | Supported Firmware                                                                                      |
 |-----------|---------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | V-2.0.6 (from version 1.0.0.11 of the connector onwards; previous supported firmware versions are unknown) |
 
@@ -26,7 +26,7 @@ This connector uses an HTTP connection to poll data from the MBC-7000 device. Th
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

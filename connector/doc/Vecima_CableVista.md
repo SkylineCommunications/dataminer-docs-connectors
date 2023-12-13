@@ -19,7 +19,7 @@ The connector also allows access to the **Web Interface** of the device.
 | **Range**    | **Description**                                                 | **DCF Integration** | **Cassandra Compliant** |
 |---------------------|-----------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x             | Initial Version                                                 | No                  | No                      |
-| 1.1.0.x\[SLC Main\] | Based on version 1.0.0.7 Support for RF Dual and Baseband Cards | No                  | No                      |
+| 1.1.0.x[SLC Main]   | Based on version 1.0.0.7 Support for RF Dual and Baseband Cards | No                  | No                      |
 
 ### Product Info
 

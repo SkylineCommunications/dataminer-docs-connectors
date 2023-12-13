@@ -12,7 +12,7 @@ The Huawei iMaster NCE provides centralized management, control, and analysis of
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ The Huawei iMaster NCE provides centralized management, control, and analysis of
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                    |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                        |
 |-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Huawei iMaster NCE - Network Element](xref:Connector_help_Huawei_iMaster_NCE_-_Network_Element) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [Huawei iMaster NCE - Network Element](xref:Connector_help_Huawei_iMaster_NCE_-_Network_Element) |
 
 ## Configuration
 

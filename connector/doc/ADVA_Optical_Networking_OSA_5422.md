@@ -12,8 +12,8 @@ The ADVA Optical Networking OSA 5422 is an SNMP-based synchronization device. Th
 
 | **Range**            | **Key Features**                                                    | **Based on** | **System Impact**                                                                                |
 |----------------------|---------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                    | \-           | \-                                                                                               |
-| 1.0.1.x \[SLC Main\] | Possibility added to enable/disable polling of specific parameters. | 1.0.0.1      | Discrete values have changed (remote gets/sets will no longer work on the old displayed values). |
+| 1.0.0.x              | Initial version.                                                    | -            | -                                                                                                |
+| 1.0.1.x [SLC Main]   | Possibility added to enable/disable polling of specific parameters. | 1.0.0.1      | Discrete values have changed (remote gets/sets will no longer work on the old displayed values). |
 
 ### Product Info
 
@@ -25,7 +25,7 @@ The ADVA Optical Networking OSA 5422 is an SNMP-based synchronization device. Th
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

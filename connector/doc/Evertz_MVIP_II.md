@@ -14,25 +14,25 @@ This connector retrieves all data using a single SNMP connection. SNMP traps can
 
 | **Range** | **Key Features**                                                     | **Based on** | **System Impact** |
 |-----------|----------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                                      | \-           | \-                |
-| 1.0.1.x   | \- Layout changed. - multipleGetBulk is now used.                    | \-           | \-                |
-| 1.0.2.x   | \- Added minimum required version. - Removed multipleGetBulk option. | \-           | \-                |
+| 1.0.0.x   | Initial version                                                      | -            | -                 |
+| 1.0.1.x   | \- Layout changed. - multipleGetBulk is now used.                    | -            | -                 |
+| 1.0.2.x   | \- Added minimum required version. - Removed multipleGetBulk option. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

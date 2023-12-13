@@ -19,7 +19,7 @@ The connector uses 2 connections. The main connection (*smart-serial*) implement
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**   |
+| Range     | Device Firmware Version       |
 |------------------|-------------------------------|
 | 1.0.0.x          | N/A                           |
 | 2.0.0.x          | Software: 2.43 Hardware: 2.03 |

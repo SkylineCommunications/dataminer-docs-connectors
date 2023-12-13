@@ -12,15 +12,15 @@ The tool will try to find a reference value for a selected parameter by finding 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                                                                                                                          | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Compare parameters across multiple elements running the same protocol. - Create multiple configurations with different parameters and/or elements. - Tree view to easily navigate all configurations. - Exact match comparison. - Comparison with percentage-based tolerance. - Filter rows to be compared using primary key and wildcards. - Element state indicator. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Compare parameters across multiple elements running the same protocol. <br>- Create multiple configurations with different parameters and/or elements. <br>- Tree view to easily navigate all configurations. <br>- Exact match comparison. <br>- Comparison with percentage-based tolerance. <br>- Filter rows to be compared using primary key and wildcards. <br>- Element state indicator. | - | - |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                           | **Exported Components** |
-|-----------|---------------------|-------------------------|-----------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Automation script: Generic Comparison Tool Configuration Wizard | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | Automation script: Generic Comparison Tool Configuration Wizard | - |
 
 ## Configuration
 

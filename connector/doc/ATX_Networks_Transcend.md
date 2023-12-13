@@ -12,7 +12,7 @@ This connector is intended for the monitoring of ATX's Transcend platform and it
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ This connector is intended for the monitoring of ATX's Transcend platform and it
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                    |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                        |
 |-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [ATX Networks Transcend - FRXC](xref:Connector_help_ATX_Networks_Transcend_-_FRXC) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [ATX Networks Transcend - FRXC](xref:Connector_help_ATX_Networks_Transcend_-_FRXC) |
 
 ## Configuration
 

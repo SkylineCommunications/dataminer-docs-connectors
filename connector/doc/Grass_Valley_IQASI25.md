@@ -12,7 +12,7 @@ This connector monitors the activity of the Grass Valley IQASI25 device, an ASI 
 
 | **Range**            | **Key Features** |
 |----------------------|------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  |
+| 1.0.0.x [SLC Main]   | Initial Version  |
 
 ### Product Info
 

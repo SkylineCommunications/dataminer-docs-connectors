@@ -14,10 +14,10 @@ The connector (periodically) collects information from the device and sets chang
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Naming applied  | No                  | Yes                     |
+| Range              | Description     | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Naming applied  | No              | Yes                 |
 
 ### Product Info
 

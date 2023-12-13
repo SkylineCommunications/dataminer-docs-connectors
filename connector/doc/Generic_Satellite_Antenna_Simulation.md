@@ -16,17 +16,17 @@ Several ACU protocols are supported by means of the **ACU Protocol Parameters** 
 
 | **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version, with DCF support for outputs      | \-           | \-                |
-| 1.0.1.x              | DCF integration and ACU subscription               | \-           | \-                |
-| 1.0.2.x \[SLC Main\] | Polarization page added and Service Chains removed | \-           | \-                |
+| 1.0.0.x              | Initial version, with DCF support for outputs      | -            | -                 |
+| 1.0.1.x              | DCF integration and ACU subscription               | -            | -                 |
+| 1.0.2.x [SLC Main]   | Polarization page added and Service Chains removed | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

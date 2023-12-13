@@ -20,7 +20,7 @@ This is an **SNMP**-based connector for the Video Clarity Real Time Monitoring S
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
+| 1.0.0.x          | -                           |
 
 ## Installation and configuration
 

@@ -14,17 +14,17 @@ The physical devices of the system are called CPE (Customer Peripheral Equipment
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | SkyEdge II-c NBI v5.5P2 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                            | **Exported Components**                                                                                          |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                | Exported Components                                                                                              |
 |-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | No                  | Yes                     | - [Generic Ping](xref:Connector_help_Generic_Ping) connector version 3.1.2.5 or higher (supported from version 1.0.0.2 of this connector onward) | [Gilat Satellite Networks TotalNMS - CPE](xref:Connector_help_Gilat_Satellite_Networks_TotalNMS_-_CPE) |
 
@@ -58,7 +58,7 @@ HTTP CONNECTION:
 
 TCP/IP settings
 
-- **IP port:** 443
+- **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
 
 ### Initialization

@@ -16,9 +16,9 @@ This connector exports several other connectors based on the information retriev
 
 | **Range**            | **Description**                                                                                       | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|-------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                      | Yes                 | Yes                     |
-| 1.0.1.x \[Obsolete\] | Support for Unicode. **Impact:** Element data and trend data need to be removed entirely.             | Yes                 | Yes                     |
-| 1.0.2.x \[SLC Main\] | Support for additional modules. **Impact:** Duplicate description of 2 parameters, very small impact. | Yes                 | Yes                     |
+| 1.0.0.x [Obsolete]     |Initial version.                                                                                      | Yes                 | Yes                     |
+| 1.0.1.x [Obsolete]     |Support for Unicode. **Impact:** Element data and trend data need to be removed entirely.             | Yes                 | Yes                     |
+| 1.0.2.x [SLC Main]   | Support for additional modules. **Impact:** Duplicate description of 2 parameters, very small impact. | Yes                 | Yes                     |
 
 ### Product Info
 

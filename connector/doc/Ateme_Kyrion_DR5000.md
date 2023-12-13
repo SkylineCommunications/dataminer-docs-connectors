@@ -14,13 +14,13 @@ This connector uses **SNMP** to allow the user to monitor the **Ateme Kyrion DR5
 
 | **Range**            | **Key Features**                                                     | **Based on** | **System Impact**                                                                                         |
 |----------------------|----------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                      | \-           | \-                                                                                                        |
-| 2.0.0.x              | Improved connector                                                      | 1.0.0.12     | \-                                                                                                        |
-| 3.0.0.x \[Obsolete\] | Full connector review                                                   | 2.0.0.10     | See "Notes" section below                                                                                 |
-| 3.0.1.x              | Changed descriptions and display keys                                | 3.0.0.24     | \-                                                                                                        |
-| 3.0.2.x \[Obsolete\] | Reviewed DCF implementation                                          | 3.0.0.28     | \-                                                                                                        |
-| 3.0.3.x \[Obsolete\] | Added missing SNMP parameters to Program Stream Table                | 3.0.2.2      | \-                                                                                                        |
-| 3.0.4.x \[SLC Main\] | Fixed IDX of "Audio Output - Decoding Status" table to unique value. | 3.0.3.3      | From version 3.0.4.2 onwards the connector include the changes made on versions from 3.0.0.29 till 3.0.0.37. |
+| 1.0.0.x              | Initial version                                                      | -            | -                                                                                                         |
+| 2.0.0.x              | Improved connector                                                      | 1.0.0.12     | -                                                                                                         |
+| 3.0.0.x [Obsolete]     |Full connector review                                                   | 2.0.0.10     | See "Notes" section below                                                                                 |
+| 3.0.1.x              | Changed descriptions and display keys                                | 3.0.0.24     | -                                                                                                         |
+| 3.0.2.x [Obsolete]     |Reviewed DCF implementation                                          | 3.0.0.28     | -                                                                                                         |
+| 3.0.3.x [Obsolete]     |Added missing SNMP parameters to Program Stream Table                | 3.0.2.2      | -                                                                                                         |
+| 3.0.4.x [SLC Main]   | Fixed IDX of "Audio Output - Decoding Status" table to unique value. | 3.0.3.3      | From version 3.0.4.2 onwards the connector include the changes made on versions from 3.0.0.29 till 3.0.0.37. |
 | 3.1.0.x              | New firmware; fixed validator errors                                 | 3.0.4.22     | Forward IP Streams Table: Parameter "IP Output" changed to "Type"                                         |
 
 ### Product Info
@@ -40,14 +40,14 @@ This connector uses **SNMP** to allow the user to monitor the **Ateme Kyrion DR5
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 3.0.0.x   | Yes                 | No                      | \-                    | \-                      |
-| 3.0.1.x   | Yes                 | No                      | \-                    | \-                      |
-| 3.0.2.x   | Yes                 | No                      | \-                    | \-                      |
-| 3.0.3.x   | Yes                 | No                      | \-                    | \-                      |
-| 3.0.4.x   | Yes                 | No                      | \-                    | \-                      |
-| 3.1.0.x   | Yes                 | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
+| 3.0.0.x   | Yes                 | No                      | -                     | -                       |
+| 3.0.1.x   | Yes                 | No                      | -                     | -                       |
+| 3.0.2.x   | Yes                 | No                      | -                     | -                       |
+| 3.0.3.x   | Yes                 | No                      | -                     | -                       |
+| 3.0.4.x   | Yes                 | No                      | -                     | -                       |
+| 3.1.0.x   | Yes                 | No                      | -                     | -                       |
 
 ## Installation and configuration
 

@@ -10,9 +10,9 @@ This is a mediation connector for redundancy switches. It links to parameters in
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -20,11 +20,11 @@ This is a mediation connector for redundancy switches. It links to parameters in
 |-----------|------------------------|
 | 1.0.0.x   | N/A                    |
 
-### Version Info
+### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                      | **Exported Components** |
-|-----------|---------------------|-------------------------|------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- Snell Wilcox IQHCO3193-1A - Snell Wilcox HCO51 RollCall | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components                                             | Exported Components |
+|---------|-----------------|---------------------|---------------------------------------------------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | - Snell Wilcox IQHCO3193-1A <br>- Snell Wilcox HCO51 RollCall | -                   |
 
 ## Creation
 

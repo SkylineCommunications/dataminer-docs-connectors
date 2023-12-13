@@ -12,13 +12,13 @@ This connector is responsible for updating the Incident ID property on alarms of
 
 | **Range**            | **Key Features**                                                                                                      | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Updates Incident ID property on alarms. Displays a log of the latest JSON messages received from the external system. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Updates Incident ID property on alarms. Displays a log of the latest JSON messages received from the external system. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

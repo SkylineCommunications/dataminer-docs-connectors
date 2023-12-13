@@ -58,7 +58,7 @@ You can find the following information on this page:
 
 - **Switch Output:** Shows which module is the current output of the device. Can be *"A"* or *"B".* A toggle switch allows you to switch the output.
 
-- **Device Address:** Shows the current address of the device, and allows you to change it. The valid range for the address is *1 - 15*.
+- **Device address**: Shows the current address of the device, and allows you to change it. The valid range for the address is *1 - 15*.
 
   > [!NOTE]
   > If you change the device address, you also have to change the **Bus Address** of the device in order for the connector to continue communication. You can do this by right-clicking the device in the Surveyor and selecting **Edit**. Then, under **More TCP/IP** **settings**, change the bus address to match the address you entered for the parameter. Communication will then be re-established.

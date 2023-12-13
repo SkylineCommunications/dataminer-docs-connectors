@@ -14,9 +14,9 @@ The 670 is a virtualized media processing platform that enables users to move a 
 
 | **Range**            | **Key Features**                                                 | **Based on** | **System Impact**                                             |
 |----------------------|------------------------------------------------------------------|--------------|---------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                 | \-           | \-                                                            |
-| 1.0.1.x \[Obsolete\] | Adds redundant polling.                                          | \-           | Adds interface for redundant polling.                         |
-| 1.0.2.x \[SLC Main\] | Subtable functionality in all tables to filter out unneeded rows | 1.0.1.2      | Trending, Visio drawings and alarm templates may be affected. |
+| 1.0.0.x [Obsolete]     |Initial version.                                                 | -            | -                                                             |
+| 1.0.1.x [Obsolete]     |Adds redundant polling.                                          | -            | Adds interface for redundant polling.                         |
+| 1.0.2.x [SLC Main]   | Subtable functionality in all tables to filter out unneeded rows | 1.0.1.2      | Trending, Visio drawings and alarm templates may be affected. |
 
 ### Product Info
 
@@ -24,15 +24,15 @@ The 670 is a virtualized media processing platform that enables users to move a 
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
 | 1.0.1.x   | 2.9.2.r1.588           |
-| 1.0.2.x   | \-                     |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

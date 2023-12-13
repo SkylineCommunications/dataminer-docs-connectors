@@ -15,8 +15,8 @@ This is a smart-serial connector that receives carrier, transponder and beacon s
 | **Range**     | **Description**                                                                                          | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                          | No                  | Yes                     |
-| 2.0.0.x \[SLC Main\] | Alarm presets. Communication with SES Channel Manager.                                                   | No                  | Yes                     |
-| 2.0.1.x \[Obsolete\] | Removed parameters that control the rows displayed based on the number or age. Added auto clear feature. | No                  | Yes                     |
+| 2.0.0.x [SLC Main]   | Alarm presets. Communication with SES Channel Manager.                                                   | No                  | Yes                     |
+| 2.0.1.x [Obsolete]     |Removed parameters that control the rows displayed based on the number or age. Added auto clear feature. | No                  | Yes                     |
 
 ### Product Info
 
@@ -36,10 +36,10 @@ This connector uses a smart-serial connection and requires the following input d
 
 Smart-Serial Connection:
 
-- **IP address/host:** The device IP.
+- **IP address/host**: The device IP.
 - **Port Type:** The default value is *UDP*.
-- **IP port:** The default value is *345*.
-- **Bus address:** The device IP that is being monitored.
+- **IP port**: The default value is *345*.
+- **Bus address**: The device IP that is being monitored.
 
 ## Usage
 

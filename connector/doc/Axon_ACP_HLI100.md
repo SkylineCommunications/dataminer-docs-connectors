@@ -14,7 +14,7 @@ The **Axon ACP HLI100** connector can be used to display and configure informati
 
 | **Range** | **Key Features**                                                     | **Based on** | **System Impact**                                                                                                             |
 |-----------|----------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.1   | Initial version                                                      | \-           | \-                                                                                                                            |
+| 1.0.0.1   | Initial version                                                      | -            | -                                                                                                                             |
 | 1.0.1.1   | Scheduling for logo presets added. Logo presets now shown in tables. | 1.0.0.1      | Single logo presets A and B are no longer shown as individual parameters. Trend and alarm information for these will be lost. |
 
 ### Product Info
@@ -28,8 +28,8 @@ The **Axon ACP HLI100** connector can be used to display and configure informati
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

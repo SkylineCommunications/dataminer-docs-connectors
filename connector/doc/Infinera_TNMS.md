@@ -12,7 +12,7 @@ The Infinera TNMS is a Transcend Network Management System (NMS) that can provid
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ The Infinera TNMS is a Transcend Network Management System (NMS) that can provid
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                            |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                |
 |-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Infinera TNMS - NE](xref:Connector_help_Infinera_TNMS_-_NE) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [Infinera TNMS - NE](xref:Connector_help_Infinera_TNMS_-_NE) |
 
 ## Configuration
 

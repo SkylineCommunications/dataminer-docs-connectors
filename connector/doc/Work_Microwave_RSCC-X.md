@@ -12,12 +12,12 @@ The RSCC-X is a redundancy switch from WORK Microwave used for redundant configu
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | New firmware     | 1.0.0.2      | \-                |
+| 1.0.0.x              | Initial version  | -            | -                 |
+| 1.1.0.x [SLC Main]   | New firmware     | 1.0.0.2      | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**     |
+| Range     | Supported Firmware         |
 |-----------|----------------------------|
 | 1.0.0.x   | RedSwi-RYA01.03-2018-12-04 |
 | 1.1.0.x   | RSCC-X-RS485               |
@@ -26,8 +26,8 @@ The RSCC-X is a redundancy switch from WORK Microwave used for redundant configu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

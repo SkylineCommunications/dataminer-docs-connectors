@@ -18,7 +18,7 @@ In version 2.1.2.29, an extra feature is introduced that allows the use of a POS
 |----------------------|------------------------------|---------------------|-------------------------|
 | 1.1.0.x              | Release version              | No                  | No                      |
 | 2.1.0.x              | Adjusts Float and Delta Test | No                  | No                      |
-| 2.1.2.x \[SLC Main\] | Introduces DDNS and Others   | No                  | Yes                     |
+| 2.1.2.x [SLC Main]   | Introduces DDNS and Others   | No                  | Yes                     |
 
 ## Installation and Configuration
 

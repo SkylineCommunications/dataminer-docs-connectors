@@ -10,7 +10,7 @@ The IFM is an Intermediate Frequency Modulator unit. This connector is generated
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                               |
+| Range     | Supported Firmware                                                   |
 |-----------|----------------------------------------------------------------------|
 | 1.01.x    | Kernel 2, CRT Software revision 10 Kernel 6, CRT Software revision 3 |
 

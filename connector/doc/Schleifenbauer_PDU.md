@@ -18,8 +18,8 @@ The connector polls data from the device using **SNMPv1**.
 
 | **Range**            | **Key Features**                                                                                                        | **Based on** | **System Impact**                                   |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                         | \-           | \-                                                  |
-| 1.1.0.x \[SLC Main\] | \- Added support for firmware version 270. - Added the tables Inputs Totals, Device Performance, and Reset Performance. | 1.0.0.2      | May not be compatible with older firmware versions. |
+| 1.0.0.x              | Initial version                                                                                                         | -            | -                                                   |
+| 1.1.0.x [SLC Main]   | \- Added support for firmware version 270. - Added the tables Inputs Totals, Device Performance, and Reset Performance. | 1.0.0.2      | May not be compatible with older firmware versions. |
 
 ### Product Info
 
@@ -32,8 +32,8 @@ The connector polls data from the device using **SNMPv1**.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

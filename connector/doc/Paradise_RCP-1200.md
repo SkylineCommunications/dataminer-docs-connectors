@@ -17,9 +17,9 @@ This protocol can be used to monitor and control any Paradise RCP-1200 device. A
 **SERIAL Connection:**
 
 - **Type of port:** The type of port of the connection, by default: *TCP/IP*.
-- **IP Address/host:** The polling IP of the device. For instance: *10.1.48.70*.
-- **IP Port:** The IP port of the connection device, by default: *4012*.
-- **Bus Address:** The source address of the device, within the range of **0-31**. For instance: *06*.
+- **IP address/host**: The polling IP of the device. For instance: *10.1.48.70*.
+- **IP port**: The IP port of the connection device, by default: *4012*.
+- **Bus address**: The source address of the device, within the range of **0-31**. For instance: *06*.
 
 ## Usage
 

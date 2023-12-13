@@ -12,22 +12,22 @@ This connector can be used to monitor faults in the Evertz Magnum controller. Th
 
 | **Range** | **Key Features**                                     | **Based on** | **System Impact** |
 |-----------|------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.                                     | \-           | \-                |
-| 1.0.1.x   | Fixed primary keys and added display keys to tables. | \-           | \-                |
+| 1.0.0.x   | Initial version.                                     | -            | -                 |
+| 1.0.1.x   | Fixed primary keys and added display keys to tables. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,15 +12,15 @@ This a serial connector that can be used to monitor and configure the MCL MXCVPC
 
 | **Range** | **Key Features**                              | **Based on** | **System Impact**                                                             |
 |-----------|-----------------------------------------------|--------------|-------------------------------------------------------------------------------|
-| 1.0.0.x   | Initial version. CSP command set.             | \-           | \-                                                                            |
+| 1.0.0.x   | Initial version. CSP command set.             | -            | -                                                                             |
 | 2.0.0.x   | New communication protocol. SABus command set | 1.0.0.5      | This range cannot be used on a device that only supports the CSP command set. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

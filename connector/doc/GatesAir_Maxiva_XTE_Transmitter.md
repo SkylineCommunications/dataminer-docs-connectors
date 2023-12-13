@@ -12,11 +12,11 @@ The **GatesAir Maxiva XTE Transmitter** is a transmitter that powers over-the-ai
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                    |
+| Range     | Supported Firmware                                        |
 |-----------|-----------------------------------------------------------|
 | 1.0.0.x   | A05 (release version) 1024 (application software version) |
 
@@ -24,7 +24,7 @@ The **GatesAir Maxiva XTE Transmitter** is a transmitter that powers over-the-ai
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
