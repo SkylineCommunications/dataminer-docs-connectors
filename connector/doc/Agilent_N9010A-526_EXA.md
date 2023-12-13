@@ -12,30 +12,31 @@ This connector interfaces with the spectrum analyzer and allows you to monitor t
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |Initial version (serial driver).|-         |-         |
-|1.1.0.x |Version based on the VISA library.|-         |-         |
+| Range              | Features                            | Based on | System Impact |
+|--------------------|-------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version (serial connector). | -        | -             |
+| 1.1.0.x            | Version based on the VISA library.  | -        | -             |
 
 ### Product Info
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |C.04.56        |
-|1.1.0.x     |C.04.56        |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | C.04.56            |
+| 1.1.0.x | C.04.56            |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
-|1.1.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 1.1.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
 ### Connections
 
 #### Serial Connection — Main — 1.0.0.x only
+
 This connector uses a serial connection and requires the following input during element creation:
 
 SERIAL CONNECTION:
@@ -43,7 +44,6 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-
   - **IP port**: The IP port of the device.
 
 #### Virtual Connection — Main — 1.1.0.x only
@@ -54,8 +54,16 @@ This connector uses a virtual connection and does not require any input during e
 
 No initialization is needed for range **1.0.0.x**.
 
-The range **1.1.0.x** requires that the VISA library is installed on the DataMiner Agent. The installer for the library can be downloaded from the [Rohde-Schwarz website](https://www.rohde-schwarz.com/us/driver-pages/remote-control/3-visa-and-tools_231388.html). The dll *RsInstrument.dll* must also be present in the ProtocolScripts folder. The IP address of the device must then be set on the **General** page.
+For the **1.1.0.x range**, several things are needed:
+
+1. Make sure the VISA library is installed on the DataMiner Agent.
+
+   You can download the installer for the library from the [Rohde-Schwarz website](https://www.rohde-schwarz.com/us/driver-pages/remote-control/3-visa-and-tools_231388.html).
+
+1. Make sure the DLL *RsInstrument.dll* is present in the *ProtocolScripts* folder.
+
+1. Set the IP address of the device on the **General** page of the element.
 
 ## How to use
 
-The spectrum can be observed on the **Spectrum** **Analyzer** page.
+You can observe the spectrum on the **Spectrum Analyzer** page.
