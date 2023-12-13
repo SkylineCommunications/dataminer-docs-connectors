@@ -14,22 +14,22 @@ The **Evertz EMX-FC** connector provides general information about the device an
 
 | **Range**            | **Key Features**                                 | **Based on** | **System Impact**                      |
 |----------------------|--------------------------------------------------|--------------|----------------------------------------|
-| 1.0.1.x \[Obsolete\] | Full connector QA changing IDs and parameter names. | 1.0.0.1      | \-                                     |
-| 1.0.2.x \[SLC Main\] | Adds redundant polling.                          | 1.0.1.2      | Added interface for redundant polling. |
+| 1.0.1.x [Obsolete]     |Full connector QA changing IDs and parameter names. | 1.0.0.1      | -                                      |
+| 1.0.2.x [SLC Main]   | Adds redundant polling.                          | 1.0.1.2      | Added interface for redundant polling. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

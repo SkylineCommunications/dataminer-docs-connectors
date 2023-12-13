@@ -14,25 +14,25 @@ The connector is used to monitor the audio and video input and to set the transi
 
 | **Range** | **Key Features**   | **Based on** | **System Impact** |
 |-----------|--------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version    | \-           | \-                |
-| 1.0.1.x   | Serial interface   | \-           | \-                |
-| 1.0.2.x   | DCF implementation | \-           | \-                |
+| 1.0.0.x   | Initial version    | -            | -                 |
+| 1.0.1.x   | Serial interface   | -            | -                 |
+| 1.0.2.x   | DCF implementation | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
+| 1.0.2.x   | Yes                 | No                      | -                     | -                       |
 
 ## Configuration
 

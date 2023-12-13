@@ -24,7 +24,7 @@ The **versioning** for the connector is specifically engineered to tie in with t
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                       |
+| Range     | Device Firmware Version                                                                                                           |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------|
 | 1.1.0.x          | 1.1. Also tested on version 2.0                                                                                                   |
 | \<10.0.0.x       | The **versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |

@@ -18,7 +18,7 @@ This connector allows you to manage the **CPI SSPA S5CI** via a serial connectio
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                        |
+| Range     | Device Firmware Version                            |
 |------------------|----------------------------------------------------|
 | 1.0.0.x          | 01.01.05 (Main Controller Kernel Software Version) |
 

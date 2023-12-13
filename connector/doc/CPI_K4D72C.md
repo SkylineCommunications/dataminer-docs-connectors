@@ -14,11 +14,11 @@ The protocol uses the CPI serial protocol in **ASCII mode** with STX/ETX bytes a
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Range     | Supported Firmware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 |-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | \- Front Panel Boot Kernel Software Version: *03.00.19* - Front Main Program Software Version: *03.01.85* - Power Supply Controller Boot Kernel Software Version: *03.00.03* - Power Supply Controller Main Program Software Version: *03.01.40* - RF Controller Boot Kernel Software Version: *03.00.03* - RF Controller Main Program Software Version: *03.01.46* - External Interface Controller Boot Kernel Software Version: *03.00.03* - External Interface Controller Main Program Software Version: *03.01.62* - CAN Communication Level Key Version: *03.01.31* |
 
@@ -26,7 +26,7 @@ The protocol uses the CPI serial protocol in **ASCII mode** with STX/ETX bytes a
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

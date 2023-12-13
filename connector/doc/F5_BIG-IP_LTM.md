@@ -18,7 +18,7 @@ The **F5 BIG-IP LTM** connector uses **SNMP** to retrieve status, configuration 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**   |
+| Range     | Device Firmware Version       |
 |------------------|-------------------------------|
 | 1.0.0.x          | Version 12.1.2 Build 0.93.249 |
 

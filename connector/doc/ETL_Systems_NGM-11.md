@@ -12,7 +12,7 @@ This connector is intended for use with ETL Systems NGM matrix devices. The ETL 
 
 | **Range**            | **Key Features**         | **Based on** | **System Impact** |
 |----------------------|--------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Matrix device management | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Matrix device management | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is intended for use with ETL Systems NGM matrix devices. The ETL 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

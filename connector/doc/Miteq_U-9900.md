@@ -38,7 +38,7 @@ This connector allows monitoring and control of the up converter.
 
 ### Product Info
 
-| **Range** | **Supported Firmware**      |
+| Range     | Supported Firmware          |
 |-----------|-----------------------------|
 | 1.0.0.x   | D172138V1.191 D179861V1.001 |
 
@@ -46,7 +46,7 @@ This connector allows monitoring and control of the up converter.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 
 

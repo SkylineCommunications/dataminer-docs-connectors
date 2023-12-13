@@ -20,7 +20,7 @@ The MX1 Developed Playout Engine connector uses SNMP communication to poll the d
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -30,35 +30,9 @@ The MX1 Developed Playout Engine connector uses SNMP communication to poll the d
 
 ### System Info
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-<td><strong>Linked Components</strong></td>
-<td><strong>Exported Components</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>No</td>
-<td>Yes</td>
-<td>-</td>
-<td><ul>
-<li>MX1 Developed Playout Engine - Playout</li>
-<li>MX1 Developed Playout Engine - Ingest</li>
-<li>MX1 Developed Playout Engine - TS Monitoring</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|-------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No | Yes| - |- MX1 Developed Playout Engine - Playout<br/>- MX1 Developed Playout Engine - Ingest<br/>- MX1 Developed Playout Engine - TS Monitoring |
 
 ## Configuration
 
@@ -85,6 +59,7 @@ Even though the connection settings above are required by DataMiner, the SNMP co
 ## How to use
 
 On the General page, you can add **new host entries** to the relevant type table by using the context menu available by right-clicking the table.
+
 When you add such a new entry, you will need to specify the host name and the DNS/host IP:port. By default, the polling of the added host will first be disabled.
 
 For each added host, a new **virtual element** (Playout, Ingest or TS Monitoring DVE, depending on the host type) will be created and the polled information will be exported.
@@ -94,6 +69,7 @@ The connector will try to execute a new polling cycle (each host type has an ind
 For the transport streams, you can find an overview of the available information via the tree control of the **TS Monitoring** page.
 
 The **Buffer Timeout** parameter at the top of the General page is used to restart the polling cycles of the hosts, in case these are interrupted because of an issue in DataMiner.
+
 The restart will be triggered if the time when the last successful try happened is longer ago than the amount of time defined in this parameter.
 
 ## Notes

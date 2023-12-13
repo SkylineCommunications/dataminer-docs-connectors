@@ -28,7 +28,7 @@ Backward compatibility is not guaranteed between different connector ranges.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**      |
+| Range     | Device Firmware Version          |
 |------------------|----------------------------------|
 | 1.0.0.x          | N/A                              |
 | 2.0.0.x          | Live API 2.3.0, System API 1.2.0 |

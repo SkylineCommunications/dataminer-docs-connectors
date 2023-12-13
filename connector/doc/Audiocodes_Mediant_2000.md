@@ -36,9 +36,9 @@ SNMP Connection:
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161.*
-- **Get community string:** The community string used when reading values from the device, default value *public*.
-- **Set community string:** The community string used when setting values on the device, default value *private*.
+- **Port number**: The port of the connected device, by default *161.*
+- **Get community string**: The community string used when reading values from the device, default value *public*.
+- **Set community string**: The community string used when setting values on the device, default value *private*.
 
 ## Usage
 

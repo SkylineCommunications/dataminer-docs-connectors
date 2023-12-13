@@ -12,7 +12,7 @@ This connector can be used to integrate the alarms from the ZTE ZMC monitoring p
 
 | **Range**            | **Key Features**                      | **Based on** | **System Impact** |
 |----------------------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Integrates active and cleared alarms. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Integrates active and cleared alarms. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector can be used to integrate the alarms from the ZTE ZMC monitoring p
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

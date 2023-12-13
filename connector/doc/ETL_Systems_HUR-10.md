@@ -14,7 +14,7 @@ This connector uses an SNMP connection to poll data from an ETL Systems HUR-10 d
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 | 1.0.1.x              | DCF support.     | 1.0.0.4      | DCF               |
 
 ### Product Info
@@ -28,8 +28,8 @@ This connector uses an SNMP connection to poll data from an ETL Systems HUR-10 d
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -59,7 +59,7 @@ All control and monitored parameters are available for access over the RollCall 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 
 

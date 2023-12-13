@@ -12,24 +12,24 @@ It is intended to be used with generic SNMP devices. SNMP is used to communicate
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                                                                                                                 | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | \- Implemented support for RS232 Port information. - Alarm monitoring and trending is now possible for all table parameters. - Tables now use naming to make the connector Cassandra-compliant. | 1.0.0.x      | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 2.0.0.x [SLC Main] | - Implemented support for RS232 Port information. <br>- Alarm monitoring and trending is now possible for all table parameters. <br>- Tables now use naming to make the connector Cassandra-compliant. | 1.0.0.x | - |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 2.0.0.x   | 1.2 build 15041515     |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

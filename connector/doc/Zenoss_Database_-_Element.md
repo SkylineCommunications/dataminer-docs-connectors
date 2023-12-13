@@ -14,7 +14,7 @@ The connector will create **Zenoss Database - Element** DVEs based on the inform
 
 | **Range**            | **Key Features**  | **Based on** | **System Impact** |
 |----------------------|-------------------|--------------|-------------------|
-| 2.1.0.x \[SLC Main\] | Device components | \-           | \-                |
+| 2.1.0.x [SLC Main]   | Device components | -            | -                 |
 
 ### Product Info
 

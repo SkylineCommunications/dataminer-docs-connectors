@@ -20,7 +20,7 @@ The chassis must include an **Evertz 7700-FC** card to be functional. Data about
 
 The connector should be compatible with all firmware versions. It has been tested with the following firmware versions (the version number is the value of the SNMP parameter 'Software Build'):
 
-| **Range** | **Device Firmware Version**               |
+| Range     | Device Firmware Version                   |
 |------------------|-------------------------------------------|
 | 1.0.0.x          | v3.07 Build 2 v4.02 Build 9 v4.02 Build15 |
 
@@ -62,13 +62,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection:**
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ## Usage
 

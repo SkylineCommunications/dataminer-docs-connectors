@@ -8,7 +8,7 @@ With this **serial** connector you can retrieve status information and update th
 
 ## About
 
-This connector uses a serial protocol developed by CPI. Two communication modes are available on the 2.25KW TWT amplifiers: **ASCII Based Serial Computer Interface Protocol** **(ACIP)** and **Binary Based Serial Computer Interface Protocol (BCIP)**. This protocol implements the **BCIP** mode, which gives more reliable and complete information.
+This connector uses a serial protocol developed by CPI. Two communication modes are available on the 2.25KW TWT amplifiers: **ASCII Based Serial Computer Interface Protocol (ACIP)** and **Binary Based Serial Computer Interface Protocol (BCIP)**. This protocol implements the **BCIP** mode, which gives more reliable and complete information.
 
 ### Version Info
 
@@ -18,9 +18,9 @@ This connector uses a serial protocol developed by CPI. Two communication modes 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x          | \- Front Panel Boot Kernel Software Version: *03.00.19* - Front Main Program Software Version: *01.00.80* - Power Supply Boot Kernel Software Version: *03.00.03* - Power Supply Main Program Software Version: *01.00.47* - RF Controller Boot Kernel Software Version: *03.00.03* - RF Controller Main Program Software Version: *01.00.33* - External Interface Boot Kernel Software Version: *03.00.03* - External Interface Main Program Software Version: *01.00.40* |
+| Range | Device Firmware Version |
+|--|--|
+| 1.0.0.x | - Front Panel Boot Kernel Software Version: *03.00.19* <br>- Front Main Program Software Version: *01.00.80* <br>- Power Supply Boot Kernel Software Version: *03.00.03* <br>- Power Supply Main Program Software Version: *01.00.47* <br>- RF Controller Boot Kernel Software Version: *03.00.03* <br>- RF Controller Main Program Software Version: *01.00.33* <br>- External Interface Boot Kernel Software Version: *03.00.03* <br>- External Interface Main Program Software Version: *01.00.40* |
 
 ## Installation and configuration
 
@@ -56,7 +56,7 @@ Specific information can be retrieved via multiple page buttons: **Trip Point**,
 
 This page contains the status parameters **Step Start 1/2 Fault**, **CAN Bus Comm Fault**, etc.
 
-Via page buttons, you can access more detailed information concerning the following aspects of the device: **Helix**, **Heater**, **Inhibit**, **EXT Controller**, **Power Supply**, **RF Controller**, **ETH**, **Px Controllers**, **Beacon,** **Low/High Alarms** and **SIM**.
+Via page buttons, you can access more detailed information concerning the following aspects of the device: **Helix**, **Heater**, **Inhibit**, **EXT Controller**, **Power Supply**, **RF Controller**, **ETH**, **Px Controllers**, **Beacon**, **Low/High Alarms** and **SIM**.
 
 ### Switch Controller Status
 

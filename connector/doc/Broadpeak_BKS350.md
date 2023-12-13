@@ -14,22 +14,22 @@ This connector allows the real-time monitoring of BKS350 general information, se
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact**                                                         |
 |----------------------|------------------------|--------------|---------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.       | \-           | \-                                                                        |
-| 1.0.1.x \[SLC Main\] | HTTP connection added. | \-           | Existing elements will need to be reconfigured to use the new connection. |
+| 1.0.0.x [Obsolete]     |Initial version.       | -            | -                                                                         |
+| 1.0.1.x [SLC Main]   | HTTP connection added. | -            | Existing elements will need to be reconfigured to use the new connection. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 1.0.1.x   | 03.07.09.10076         |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.01x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.01x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

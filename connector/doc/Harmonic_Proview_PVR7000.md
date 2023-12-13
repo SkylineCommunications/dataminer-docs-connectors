@@ -24,7 +24,7 @@ This connector can be used to control and monitor the Harmonic Proview PVR7000.
 | 4.2.0.x              | \- Serial connection replaced by HTTP (requires firmware v4.x.x.x). - Port changes due to device firmware: manual changes needed to element configuration. - Internal methods to compose the display keys (used in template filters and Alarm Console) changed, causing the loss of existing trend and alarm history, but increasing efficiency and enabling support for Cassandra. - Support added for the video and audio decoding information available on the device. | No                  | Yes                     |
 | 4.2.1.x              | Supports HTTP only. Alarm information is no longer retrieved via SNMP, but instead via HTTP.                                                                                                                                                                                                                                                                                                                                                                              | No                  | Yes                     |
 | 4.2.2.x              | Naming value change for table GbeSocketOutTable (PID 5500).                                                                                                                                                                                                                                                                                                                                                                                                               | No                  | Yes                     |
-| 4.2.3.x \[SLC Main\] | DCF connections added.                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Yes                 | Yes                     |
+| 4.2.3.x [SLC Main]   | DCF connections added.                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -71,9 +71,9 @@ SERIAL CONNECTION:
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13.*
-- **Port number:** The port of the connected device, by default *80*.
-- **Bus address:** If the proxy server has to be bypassed, by default *bypassproxy*.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **Port number**: The port of the connected device, by default *80*.
+- **Bus address**: If the proxy server has to be bypassed, by default *bypassproxy*.
 
 ## Usage
 

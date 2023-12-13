@@ -14,22 +14,22 @@ In the 1.0.0.x range, this connector uses a serial connection to communicate wit
 
 | **Range**            | **Key Features**                                        | **Based on** | **System Impact**                                                                         |
 |----------------------|---------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                        | \-           | \-                                                                                        |
-| 1.1.0.x \[SLC Main\] | Changed from a serial connection to an SNMP connection. | 1.0.0.3      | Existing elements need to be reconfigured before the new connection will be taken in use. |
+| 1.0.0.x              | Initial version.                                        | -            | -                                                                                         |
+| 1.1.0.x [SLC Main]   | Changed from a serial connection to an SNMP connection. | 1.0.0.3      | Existing elements need to be reconfigured before the new connection will be taken in use. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.1.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.1.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,7 +14,7 @@ The unit monitors the alarm from the Technetix RPS-UNI power supply and **contro
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ The unit monitors the alarm from the Technetix RPS-UNI power supply and **contro
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**     |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components         |
 |-----------|---------------------|-------------------------|-----------------------|-----------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Technetix UCC-321 - USC-122 |
+| 1.0.0.x   | No                  | Yes                     | -                     | Technetix UCC-321 - USC-122 |
 
 ## Configuration
 

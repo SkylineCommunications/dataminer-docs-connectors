@@ -14,7 +14,7 @@ The CHP CORWaver 4 module features Quad Density modular transmitter design, 40 t
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ The CHP CORWaver 4 module features Quad Density modular transmitter design, 40 t
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     |
 |-----------|---------------------|-------------------------|-----------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    |
+| 1.0.0.x   | No                  | Yes                     | -                     |
 
 ## Configuration
 

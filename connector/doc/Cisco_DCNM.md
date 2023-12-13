@@ -14,9 +14,9 @@ The **Cisco DCNM** monitors and displays the connections between the switches, m
 
 | **Range**            | **Key Features**                                                                                                                                                                       | **Based on** | **System Impact**                                  |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                                                                                                       | \-           | \-                                                 |
-| 1.0.1.x \[Obsolete\] | Fix for SLElement leak by fixing display keys: - RTP Flows - RTP Error History - RTP Packet Drop History - RTP Active Flows - RTP Switch Corrections - RTP Error Flows - Host Policies | 1.0.0.4      | Existing trend data will be lost for these tables. |
-| 1.0.2.x \[SLC main\] | Changed primary key for the following tables: - Active Flow Status - Inactive Flow Status - Sender Only Flow Status - Receiver Only Flow Status                                        | 1.0.1.4      | Existing alarm/trend data will be lost             |
+| 1.0.0.x [Obsolete]     |Initial version.                                                                                                                                                                       | -            | -                                                  |
+| 1.0.1.x [Obsolete]     |Fix for SLElement leak by fixing display keys: - RTP Flows - RTP Error History - RTP Packet Drop History - RTP Active Flows - RTP Switch Corrections - RTP Error Flows - Host Policies | 1.0.0.4      | Existing trend data will be lost for these tables. |
+| 1.0.2.x [SLC Main]   | Changed primary key for the following tables: - Active Flow Status - Inactive Flow Status - Sender Only Flow Status - Receiver Only Flow Status                                        | 1.0.1.4      | Existing alarm/trend data will be lost             |
 
 ### Product Info
 
@@ -30,9 +30,9 @@ The **Cisco DCNM** monitors and displays the connections between the switches, m
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

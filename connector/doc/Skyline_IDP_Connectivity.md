@@ -10,22 +10,22 @@ This connector is part of DataMiner IDP. It is used to manage DCF connections be
 
 ### Version Info
 
-| **Range**            | **Key Features**                                           | **Based on** | **System Impact**               |
-|----------------------|------------------------------------------------------------|--------------|---------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                           | \-           | \-                              |
-| 1.0.1.x \[SLC Main\] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6 | 1.0.0.x      | The DMS may need to be updated. |
+| Range              | Key Features                                               | Based on | System Impact                   |
+|--------------------|------------------------------------------------------------|----------|---------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                           | -        | -                               |
+| 1.0.1.x [SLC Main] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6 | 1.0.0.x  | The DMS may need to be updated. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

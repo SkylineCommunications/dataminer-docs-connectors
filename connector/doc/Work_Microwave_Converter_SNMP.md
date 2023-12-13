@@ -16,14 +16,14 @@ The connector allows the user to monitor the converter and to configure the syst
 | **Range**     | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                                                | No                  | Yes                     |
-| 1.1.0.x \[SLC Main\] | Added frequency and attenuation channel band parameters that will replace the existing ones. Changed snmpSet to snmpSetAndGet. | No                  | Yes                     |
+| 1.1.0.x [SLC Main]   | Added frequency and attenuation channel band parameters that will replace the existing ones. Changed snmpSet to snmpSetAndGet. | No                  | Yes                     |
 
 ### Product Info
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
 | 1.0.0.x              | Unknown                     |
-| 1.1.0.x \[SLC Main\] | XNA01.73                    |
+| 1.1.0.x [SLC Main]   | XNA01.73                    |
 
 ## Installation and configuration
 

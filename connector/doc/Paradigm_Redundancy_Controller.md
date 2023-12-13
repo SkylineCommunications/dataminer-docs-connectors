@@ -22,7 +22,7 @@ This connector uses a serial interface as described in the document Basic Operat
 
 **Serial Settings**
 
-- **Port number:** The port on the IP to Serial equipment
+- **Port number**: The port on the IP to Serial equipment
 
 Please note that according to the documentation, the serial configuration to be used should be as follows: **Baud rate**, 9600. **Data bits**, 8. **Stop bits** 1. **Parity**, none.
 

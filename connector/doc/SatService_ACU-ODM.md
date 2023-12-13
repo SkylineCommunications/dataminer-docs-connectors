@@ -10,9 +10,9 @@ The SatService ACU-ODM connector is used to monitor and configure the ACU-ODM An
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The SatService ACU-ODM connector is used to monitor and configure the ACU-ODM An
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

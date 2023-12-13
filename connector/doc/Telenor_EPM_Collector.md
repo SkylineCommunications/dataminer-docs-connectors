@@ -12,19 +12,19 @@ This connector is used to gather STB data coming from MAM events and Agama fireh
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                           |
+| Range     | Supported Firmware                                               |
 |-----------|------------------------------------------------------------------|
 | 1.0.0.x   | There are no known firmware versions that the connector depends on. |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                   | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                       | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Telenor EPM Agama Consumer Telenor EPM MAM Consumer Telenor EPM Manager | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Telenor EPM Agama Consumer Telenor EPM MAM Consumer Telenor EPM Manager | -                       |
 
 ## Configuration
 

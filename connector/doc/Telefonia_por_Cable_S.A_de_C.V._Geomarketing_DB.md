@@ -12,19 +12,19 @@ The Telefonica por Cable S.A de C.V. Geomarketing DB protocol can be used to ret
 
 | **Range** | **Key Features**                                                                                | **Based on** | **System Impact** |
 |-----------|-------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. Retrieves information related to the nodes, amplifiers, taps, and subscribers. | \-           | \-                |
+| 1.0.0.x   | Initial version. Retrieves information related to the nodes, amplifiers, taps, and subscribers. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Skyline EPM Platform  | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Skyline EPM Platform  | -                       |
 
 ## Configuration
 

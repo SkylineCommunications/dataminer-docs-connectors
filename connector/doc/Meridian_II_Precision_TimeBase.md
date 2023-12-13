@@ -10,7 +10,7 @@ The Meridian II Precision TimeBase is a modular, network-centric, time and frequ
 
 | **Range**            | **Key Features**                                                            | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Implemented SNMP parameters for meridianGPS sub-tree (1.3.6.1.4.1.13827.10) | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Implemented SNMP parameters for meridianGPS sub-tree (1.3.6.1.4.1.13827.10) | -            | -                 |
 
 ### Product Info
 
@@ -22,7 +22,7 @@ The Meridian II Precision TimeBase is a modular, network-centric, time and frequ
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

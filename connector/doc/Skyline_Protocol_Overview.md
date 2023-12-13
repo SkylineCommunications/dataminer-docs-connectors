@@ -24,7 +24,7 @@ With the **Skyline Protocol Overview** connector you can parse multiple protocol
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

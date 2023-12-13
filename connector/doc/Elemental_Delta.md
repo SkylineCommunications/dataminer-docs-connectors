@@ -14,7 +14,7 @@ This connector makes it possible to monitor and control an Elemental Delta platf
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | yes                     |
 
 ### Product Info
 

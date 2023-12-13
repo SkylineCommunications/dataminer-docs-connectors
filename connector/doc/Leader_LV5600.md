@@ -12,7 +12,7 @@ On this connector, the customer checks the information provided from the Leader 
 
 | **Range**            | **Key Features**             | **Based on** | **System Impact**    |
 |----------------------|------------------------------|--------------|----------------------|
-| 1.0.0.x \[SLC Main\] | Initial version              | \-           | \-                   |
+| 1.0.0.x [SLC Main]   | Initial version              | -            | -                    |
 | 1.1.0.x              | New Parameters and Discreets | 1.0.0.2      | Support Firmware 5.3 |
 
 ### Product Info
@@ -26,8 +26,8 @@ On this connector, the customer checks the information provided from the Leader 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

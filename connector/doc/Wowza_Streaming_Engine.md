@@ -8,9 +8,9 @@ Wowza Streaming Engine is customizable, scalable server software that powers rel
 
 ## About
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,7 +22,7 @@ Wowza Streaming Engine is customizable, scalable server software that powers rel
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

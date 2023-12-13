@@ -12,8 +12,8 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 
 | **Range**            | **Key Features**                                       | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5      | \-                |
+| 1.0.0.x              | Initial version.                                       | -            | -                 |
+| 1.0.1.x [SLC Main]   | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5      | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

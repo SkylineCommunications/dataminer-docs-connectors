@@ -16,7 +16,7 @@ Different possibilities for **alarm monitoring** and **trending** are available.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**           |
+| Range     | Device Firmware Version               |
 |------------------|---------------------------------------|
 | 10.0.0.x         | Compatible with all iDirect versions. |
 | 10.0.1.x         | Compatible with all iDirect versions. |

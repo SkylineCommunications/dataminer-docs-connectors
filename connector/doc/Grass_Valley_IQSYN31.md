@@ -12,13 +12,13 @@ The Grass Valley IQSYN31 protocol is able to retrieve, set, and monitor informat
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version \[SLC Main\] | \-           | \-                |
+| 1.0.0.x   | Initial version [SLC Main]   | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**           |
+| Range     | Supported Firmware               |
 |-----------|----------------------------------|
 | 1.0.0.x   | Device firmware version V5.18.14 |
 
@@ -26,7 +26,7 @@ The Grass Valley IQSYN31 protocol is able to retrieve, set, and monitor informat
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

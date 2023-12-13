@@ -25,9 +25,9 @@ This protocol can be used to monitor and control the **CEFD Xicom Generic Serial
 **TCP/IP Settings:**
 
 - **Type of port:** *TCP/IP.*
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13.*
-- **IP port:** The IP port of the device, e.g. *4001.*
-- **Bus address:** Range 64 to 255.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP port**: The IP port of the device, e.g. *4001.*
+- **Bus address**: Range 64 to 255.
 
 ## Usage
 

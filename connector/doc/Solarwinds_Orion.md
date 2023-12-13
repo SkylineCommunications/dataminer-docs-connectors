@@ -12,10 +12,10 @@ This connector will export a different connector based on retrieved data (see se
 
 ### Version Info
 
-| **Range**            | **Key Features**                      | **Based on** | **System Impact** |
-|----------------------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                       | \-           | \-                |
-| 1.0.1.x \[Main\]     | Partial tables, new request mechanism | \-           | \-                |
+| Range              | Key Features                          | Based on | System Impact |
+|--------------------|---------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version                       | -        | -             |
+| 1.0.1.x [SLC Main] | Partial tables, new request mechanism | -        | -             |
 
 ### Product Info
 
@@ -26,10 +26,10 @@ This connector will export a different connector based on retrieved data (see se
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Solarwinds Orion Node](xref:Connector_help_Solarwinds_Orion_Node) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | [Solarwinds Orion Node](xref:Connector_help_Solarwinds_Orion_Node) |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components                                                |
+|---------|-----------------|---------------------|-------------------|--------------------------------------------------------------------|
+| 1.0.0.x | No              | Yes                 | -                 | [Solarwinds Orion Node](xref:Connector_help_Solarwinds_Orion_Node) |
+| 1.0.1.x | No              | Yes                 | -                 | [Solarwinds Orion Node](xref:Connector_help_Solarwinds_Orion_Node) |
 
 ## Configuration
 

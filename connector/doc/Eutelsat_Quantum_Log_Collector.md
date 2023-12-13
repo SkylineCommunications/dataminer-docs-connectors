@@ -10,9 +10,9 @@ The **Eutelsat Quantum Log Collector** retrieves a log file from the Quantum Cal
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The **Eutelsat Quantum Log Collector** retrieves a log file from the Quantum Cal
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

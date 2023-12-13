@@ -14,10 +14,10 @@ The connector polls relevant information, statistics, and active faults from the
 
 | **Range**            | **Key Features**                        | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                         | \-           | \-                |
-| 2.0.0.x              | CISCO UCS XML Web API                   | \-           | \-                |
-| 2.0.1.x              | New firmware version                    | \-           | \-                |
-| 2.1.0.x              | New firmware version Web API connection | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version                         | -            | -                 |
+| 2.0.0.x              | CISCO UCS XML Web API                   | -            | -                 |
+| 2.0.1.x              | New firmware version                    | -            | -                 |
+| 2.1.0.x              | New firmware version Web API connection | -            | -                 |
 
 ### Product Info
 
@@ -32,10 +32,10 @@ The connector polls relevant information, statistics, and active faults from the
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

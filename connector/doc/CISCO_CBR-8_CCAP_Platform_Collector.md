@@ -12,8 +12,8 @@ The CBR-8 is designed to support distributed-access architectures, remote PHY, D
 
 | **Range**            | **Key Features**                                                                                      | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.1.x \[SLC Main\] | Modified mapping logic for US/DS interface controllers. Removed Service Group table and dependencies. | 1.0.0.x      | \-                |
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                      | \-           | \-                |
+| 1.0.1.x [SLC Main]   | Modified mapping logic for US/DS interface controllers. Removed Service Group table and dependencies. | 1.0.0.x      | -                 |
+| 1.0.0.x [Obsolete]     |Initial version.                                                                                      | -            | -                 |
 
 ### Product Info
 
@@ -25,7 +25,7 @@ The CBR-8 is designed to support distributed-access architectures, remote PHY, D
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

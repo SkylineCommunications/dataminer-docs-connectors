@@ -12,8 +12,8 @@ This connector is used to monitor and configure Aperi's APP-S22-12567 (SDI) modu
 
 | **Range**            | **Key Features**                                                 | **Based on** | **System Impact**                                                                                                                                                     |
 |----------------------|------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                  | \-           | \-                                                                                                                                                                    |
-| 1.0.0.x \[SLC Main\] | Changed parameter descriptions of parameters with 2010 and 2013. | 1.0.0.2      | All statistical data will be lost for parameters 2010 and 2013 when upgrading from the previous version. Visio drawings for the 1.0.0.x branch might be incompatible. |
+| 1.0.0.x [Obsolete]     |Initial version                                                  | -            | -                                                                                                                                                                     |
+| 1.0.0.x [SLC Main]   | Changed parameter descriptions of parameters with 2010 and 2013. | 1.0.0.2      | All statistical data will be lost for parameters 2010 and 2013 when upgrading from the previous version. Visio drawings for the 1.0.0.x branch might be incompatible. |
 
 ### Product Info
 
@@ -25,7 +25,7 @@ This connector is used to monitor and configure Aperi's APP-S22-12567 (SDI) modu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

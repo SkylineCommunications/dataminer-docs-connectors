@@ -14,7 +14,7 @@ The Varnish Cache Server connector will communicate via HTTP with the web applic
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Server cache.    | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Server cache.    | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The Varnish Cache Server connector will communicate via HTTP with the web applic
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

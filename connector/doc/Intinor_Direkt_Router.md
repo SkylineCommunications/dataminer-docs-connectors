@@ -12,9 +12,9 @@ This connector monitors a given router and is able to send new settings to the d
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                          | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version contains: - Network inputs - Video inputs - Video outputs | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version contains: <br>- Network inputs <br>- Video inputs <br>- Video outputs | - | - |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector monitors a given router and is able to send new settings to the d
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

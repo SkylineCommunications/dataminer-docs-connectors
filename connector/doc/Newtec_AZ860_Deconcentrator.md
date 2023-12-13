@@ -32,9 +32,9 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host:** The device IP.
-- **IP port:** The default value is *5933*.
-- **Bus address:** The default value is *100*, but a custom value can be specified.
+- **IP address/host**: The device IP.
+- **IP port**: The default value is *5933*.
+- **Bus address**: The default value is *100*, but a custom value can be specified.
 
 ### Configuration
 

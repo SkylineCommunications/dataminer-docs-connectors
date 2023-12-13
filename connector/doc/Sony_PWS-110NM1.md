@@ -14,9 +14,9 @@ The information on the device parameters is retrieved via **SNMP** communication
 
 | **Range**            | **Key Features**  | **Based on** | **System Impact** |
 |----------------------|-------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version   | \-           | \-                |
-| 1.0.1.x              | QA version        | 1.0.0.20     | \-                |
-| 1.0.2.x \[SLC Main\] | Added DCF support | 1.0.0.45     | \-                |
+| 1.0.0.x              | Initial version   | -            | -                 |
+| 1.0.1.x              | QA version        | 1.0.0.20     | -                 |
+| 1.0.2.x [SLC Main]   | Added DCF support | 1.0.0.45     | -                 |
 
 ### Product Info
 
@@ -29,9 +29,9 @@ The information on the device parameters is retrieved via **SNMP** communication
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

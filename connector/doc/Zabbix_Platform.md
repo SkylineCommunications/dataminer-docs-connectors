@@ -14,22 +14,22 @@ This HTTP connector connects to the Zabbix API to retrieve data from the Zabbix 
 
 | **Range**            | **Key Features**                        | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                        | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | API 4.0: new features were implemented. | \-           | \-                |
+| 1.0.0.x              | Initial version.                        | -            | -                 |
+| 1.1.0.x [SLC Main]   | API 4.0: new features were implemented. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 1.1.0.x   | 4.0                    |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                    |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                        |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------|
 | 1.0.0.x   | No                  | Yes                     |                       |                                                                            |
-| 1.1.0.x   | No                  | Yes                     | \-                    | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host) |
+| 1.1.0.x   | No                  | Yes                     | -                     | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host) |
 
 ## Configuration
 

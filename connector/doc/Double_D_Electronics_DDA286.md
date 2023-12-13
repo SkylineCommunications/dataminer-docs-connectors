@@ -14,7 +14,7 @@ This connector monitors the activity of **DDA286** Networkable Switching Control
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x \[SLC Main\] | Initial Version | No                  | False                   |
+| 2.0.0.x [SLC Main]   | Initial Version | No                  | False                   |
 
 ### Product Info
 

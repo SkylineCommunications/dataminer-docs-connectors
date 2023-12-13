@@ -22,11 +22,11 @@ This connector allows DataMiner to communicate with the Baton QC server and obta
 
 ### Product Info
 
-| **Range** | **Supported Firmware**   |
+| Range     | Supported Firmware       |
 |-----------|--------------------------|
 | 1.0.0.x   | 5.5.0 Enterprise Edition |
 | 1.1.0.x   | 6.4.0 Enterprise Edition |
-| 1.1.1.x   | \-                       |
+| 1.1.1.x   | -                        |
 
 ## Configuration
 

@@ -12,13 +12,13 @@ This DataMiner connector can be used to create generic source resources for SRM.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                           | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                               | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | This connector is to be used together with SRM. | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | This connector is to be used together with SRM. | -                       |
 
 ## Configuration
 

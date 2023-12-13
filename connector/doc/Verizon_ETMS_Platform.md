@@ -14,7 +14,7 @@ This connector interacts with the ETMS Platform via Apigee endpoints.
 
 | **Range**     | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                    | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version                    | No                  | Yes                     |
 | 1.1.0.x              | New proxy DLL integrated           | No                  | Yes                     |
 | 1.2.0.x              | Uses Apigee to interface with ETMS | No                  | Yes                     |
 

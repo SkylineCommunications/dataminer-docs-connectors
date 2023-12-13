@@ -12,8 +12,8 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 
 | **Range** | **Key Features**                                                                                         | **Based on** | **System Impact** |
 |-----------|----------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version Polling and Monitoring via Meraki API over HTTPS                                         | \-           | \-                |
-| 2.0.0.x   | Virtual connector captures and processes webhook notifications automatic clearing of cleared/expired alarms | \-           | \-                |
+| 1.0.0.x   | Initial version Polling and Monitoring via Meraki API over HTTPS                                         | -            | -                 |
+| 2.0.0.x   | Virtual connector captures and processes webhook notifications automatic clearing of cleared/expired alarms | -            | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration 1.0.0.X
 

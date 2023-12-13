@@ -14,7 +14,7 @@ This connector provides an overview of all the alarms on services. Services are 
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | No                      |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
 
 ## Installation and configuration
 

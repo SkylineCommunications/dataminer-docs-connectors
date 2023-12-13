@@ -12,7 +12,7 @@ The Service Problem Management API is used to manage service problems. Service p
 
 | **Range**            | **Key Features**                                                            | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. This is a customer-specific branch with custom attributes. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. This is a customer-specific branch with custom attributes. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Service Problem Management API is used to manage service problems. Service p
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

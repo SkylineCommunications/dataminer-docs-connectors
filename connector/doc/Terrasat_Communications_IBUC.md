@@ -10,19 +10,19 @@ The **Terrasat Communications IBUC** is a highly advanced intelligent BUC with s
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact**                                                                                                                                                                                                                                         |
-|----------------------|--------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                  | \-           | \-                                                                                                                                                                                                                                                        |
-| 2.0.0.x              | New connector range due to firmware version change  | 1.0.0.11     | \-                                                                                                                                                                                                                                                        |
-| 2.0.1.x \[obsolete\] | Mandatory changes due to firmware version change | 2.0.0.8      | The parameter descriptions "DC Voltage" (105) and "DC Current" (107) have been changed to "Supply Voltage" and "Supply Current". If these parameters are used in a script (GetParameter by name), make sure to update the referenced names in the script. |
-| 2.0.2.x \[SLC Main\] | Added DCF Support, RF In and RF Out              | 2.0.1.3      | \-                                                                                                                                                                                                                                                        |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 2.0.0.x | New connector range due to firmware version change | 1.0.0.11 | - |
+| 2.0.1.x [Obsolete] | Mandatory changes due to firmware version change | 2.0.0.8 | The parameter descriptions "DC Voltage" (105) and "DC Current" (107) have been changed to "Supply Voltage" and "Supply Current". If these parameters are used in a script (GetParameter by name), make sure to update the referenced names in the script. |
+| 2.0.2.x [SLC Main] | Added DCF Support, RF In and RF Out | 2.0.1.3 | - |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 2.0.0.x   | -                      |
 | 2.0.1.x   | FW IBR v5.19           |
 | 2.0.2.x   | FW IBR v5.19           |
 
@@ -30,10 +30,10 @@ The **Terrasat Communications IBUC** is a highly advanced intelligent BUC with s
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,7 +14,7 @@ The **GeoSync Microwave TLE** connector controls and monitors the slope and atte
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | Yes                     |
 
 ### Product Info
 
