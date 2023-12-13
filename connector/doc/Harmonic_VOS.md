@@ -4,11 +4,19 @@ uid: Connector_help_Harmonic_VOS
 
 # Harmonic VOS
 
-This connector retrieves monitoring information from the Harmonic VOS application, which runs on Amazon Web Services.
+This connector retrieves monitoring information from the Harmonic VOS and XOS application, which runs on Amazon Web Services.
 
 It allows you to monitor the services, sources, and destinations, as well as logs, notifications, and Origin Engine info.
 
 A Visio file is provided with the connector to group data and allow easy navigation.
+
+## Important
+If you do not have RF cards, please disable these routes in API Endpoint Status
+- /vos-api/platform-config/v1/systemInfo
+- /vos-api/platform-config/v1/networks
+- /vos-api/platform-config/v1/rfMonitorings
+- /vos-api/platform-config/v1/rfStatistics
+- /vos-api/platform-config/v1/rfSettings
 
 ## About
 
@@ -118,6 +126,10 @@ This page contains connection parameters related to the configuration of this co
 
 - Via **Authorization Code Grant**: In order to retrieve information from the API, the parameters **Username** and **Password** need to be set. (Initial method.)
 - Via **Client Credentials Grant**: You must first obtain and set the **Client ID** and **Client Secret**. You can do so by registering the app manually from the web UI. (This method is recommended by the vendor as the most secure.)
+
+### API Endpoint Status
+
+This page contains the API endpoint statuses, providing details on the number of times it has been executed, and the number of times it has errors. It also allows to disable and enable polling of the API paths.
 
 ## Notes
 
