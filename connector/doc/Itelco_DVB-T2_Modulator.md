@@ -10,15 +10,21 @@ This connector allows you to monitor and manage the Itelco DVB-T2 Modulator with
 
 ### Version Info
 
-| **Range**     | **Description**                                                                            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                           | No                  | Yes                     |
+| Range   | Key Features     | Based on | System Impact |
+|---------|------------------|----------|---------------|
+| 1.0.0.x | Initial version. | -        | -             |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | P3_1_02_358 build 1615742091 |
+| Range   | Supported Firmware           |
+|---------|------------------------------|
+| 1.0.0.x | P3_1_02_358 build 1615742091 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -38,6 +44,10 @@ SNMP settings:
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private.*
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## Usage
 
 ### General Page
@@ -46,21 +56,16 @@ This page displays general information and system information on the Itelco devi
 
 ### Tx
 
-This page displays Transmitter power and Exciter related parameters also allowing users to control the Exciter related parameters.
+This page displays parameters related to the transmitter power and the exciter. You can also control exciter-related parameters here.
 
 ### Tx Status
 
-This page displays the transmitter related status, It consists of the Exciter Status and RF Alarm table
+This page displays status information for the transmitter in the **Exciter Status** and **RF Alarm** table
 
 ### DVB-T
 
-This page displays the DVB-T2 related information. It consists of the Pre-corrector Nonlinear Monitor MER2 parameter.
+This page displays information related to DVB-T2, with the **Pre-corrector Nonlinear Monitor MER2** parameter.
 
 ### Alarm Configuration
 
-This page contains the Alarm Configuration Table. Allowing users to check and change settings for Alarm categories.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
+This page contains the Alarm Configuration Table. In this table, you can check and change settings for alarm categories.
