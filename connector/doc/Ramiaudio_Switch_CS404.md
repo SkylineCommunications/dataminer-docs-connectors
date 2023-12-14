@@ -20,7 +20,7 @@ The Ramiaudio Watchdog CS404 connector controls the inputs, listens for traps fr
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 4.2                         |
+| 1.0.0.x [SLC Main]   | 4.2                         |
 
 ## Installation and configuration
 

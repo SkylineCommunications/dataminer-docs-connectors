@@ -17,7 +17,7 @@ The connector acts as a **manager** for the Inmarsat Gateway. It manages the ter
 | **Range**     | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                  | No                  | Yes                     |
-| 1.1.0.x \[SLC MAIN\] | Made compatible with the new API | No                  | Yes                     |
+| 1.1.0.x [SLC Main]   | Made compatible with the new API | No                  | Yes                     |
 
 ## Configuration
 

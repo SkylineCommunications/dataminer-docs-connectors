@@ -14,7 +14,7 @@ The ComSonics QAM Marker generates a non-interfering marker signal that is inser
 
 | **Range**            | **Key Features**                                                        | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version, featuring monitoring and configuration of marker data. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version, featuring monitoring and configuration of marker data. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The ComSonics QAM Marker generates a non-interfering marker signal that is inser
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

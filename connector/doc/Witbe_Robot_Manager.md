@@ -29,55 +29,24 @@ The manager is accompanied by an Automation script that makes it easier for the 
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [Obsolete]</td>
-<td>initial version</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x [SLC Main]</td>
-<td>Use Maestro Public API</td>
-<td>1.0.0.12</td>
-<td><p>To make sure running tasks are handled correctly when you update to this version:</p>
-<ol>
-<li>Disable all carousels and stacks on the WitBe Robot Manager.</li>
-<li>Cancel and clear all queued tasks.</li>
-<li>Update the WitBe Robot Manager.</li>
-<li>Update the WitBe Robots.</li>
-<li>Enable carousels and stacks on the WitBe Robot Manager.</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.1.0.x [SLC Main] | Uses Maestro Public API | 1.0.0.12 | To make sure running tasks are handled correctly when you update to this version:<br>-Disable all carousels and stacks on the WitBe Robot Manager.<br>-Cancel and clear all queued tasks.<br>-Update the WitBe Robot Manager.<br>-Update the WitBe Robots.<br>-Enable carousels and stacks on the WitBe Robot Manager. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 1.1.0.x   | v6.2                   |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                                    | **Exported Components** |
-|-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- *WitBe Robot* connector - *Skyline SmartRec Application* connector - *Ericsson Redbee EPG* connector - *WitBe Manager Wizard* Automation script - *End of Program* Automation script                                                  | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \- *WitBe Robot* connector - *Skyline SmartRec Application* connector - *Ericsson Redbee EPG* connector - *WitBe Manager Wizard* Automation script - *End of Program* Automation script - *Schedule WitBe Maintenance* Automation script | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - *WitBe Robot* connector <br>- *Skyline SmartRec Application* connector <br>- *Ericsson Redbee EPG* connector <br>- *WitBe Manager Wizard* Automation script <br>- *End of Program* Automation script | - |
+| 1.1.0.x | No | Yes | - *WitBe Robot* connector <br>- *Skyline SmartRec Application* connector <br>- *Ericsson Redbee EPG* connector <br>- *WitBe Manager Wizard* Automation script <br>- *End of Program* Automation script <br>- *Schedule WitBe Maintenance* Automation script | - |
 
 ## Configuration
 

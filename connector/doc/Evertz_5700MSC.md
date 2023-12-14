@@ -12,11 +12,11 @@ This connector displays the status and controls of the generators and system inf
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                         | **Based on** | **System Impact** |
+| Range                | Key Features                                                                             | Based on     | System Impact     |
 |----------------------|------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                         | \-           | \-                |
-| 1.1.0.x              | Trap/Syslog Table implementation; various display key and parameter description changes. | \-           | \-                |
-| 1.1.1.x \[SLC Main\] | Changes to various display discrete values and position of columns.                      | \-           | \-                |
+| 1.0.0.x              | Initial version.                                                                         | -            | -                 |
+| 1.1.0.x              | Trap/Syslog Table implementation; various display key and parameter description changes. | -            | -                 |
+| 1.1.1.x [SLC Main]   | Changes to various display discrete values and position of columns.                      | -            | -                 |
 
 ### Product Info
 
@@ -30,9 +30,9 @@ This connector displays the status and controls of the generators and system inf
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -45,7 +45,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to co
 SNMP CONNECTION:
 
 - **IP address/host**: The IP of the Evertz device.
-- **IP port:** The IP port of the destination, by default *161*.
+- **IP port**: The IP port of the destination, by default *161*.
 
 ### Web Interface
 

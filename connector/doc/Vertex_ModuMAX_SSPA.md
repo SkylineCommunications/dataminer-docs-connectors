@@ -14,7 +14,7 @@ The connector uses SNMP communication to retrieve information related to the amp
 
 | **Range**            | **Key Features**                                                             | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Generates/updates a DataMiner service with the received channel information. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Generates/updates a DataMiner service with the received channel information. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The connector uses SNMP communication to retrieve information related to the amp
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -43,8 +43,8 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Get community string:** *public*
-- **Set community string:** *private*
+- **Get community string**: *public*
+- **Set community string**: *private*
 
 ### Initialization
 

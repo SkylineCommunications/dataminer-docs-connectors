@@ -14,15 +14,15 @@ The CEFD CDM-850 connector is used to monitor and control a CEFD CDM-850 device.
 
 | **Range**            | **Key Features**                                                                                                   | **Based on** | **System Impact**                                        |
 |----------------------|--------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                    | \-           | \-                                                       |
-| 1.0.1.x \[SLC Main\] | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.12     | **Old trend data will be lost for the modified tables.** |
+| 1.0.0.x              | Initial version                                                                                                    | -            | -                                                        |
+| 1.0.1.x [SLC Main]   | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.12     | **Old trend data will be lost for the modified tables.** |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | CEFD CDM-850 SNMP (FSK) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | CEFD CDM-850 SNMP (FSK) |
+| 1.0.0.x   | No                  | No                      | -                     | CEFD CDM-850 SNMP (FSK) |
+| 1.0.1.x   | No                  | Yes                     | -                     | CEFD CDM-850 SNMP (FSK) |
 
 ## Configuration
 

@@ -16,7 +16,7 @@ The **Arris ST-6000 Series** connector is used to catch a failover trap and inst
 |----------------------|-----------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                    | No                  | Yes                     |
 | 2.0.0.x              | Added buttons for individual failover elements.     | No                  | Yes                     |
-| 2.0.1.x \[SLC Main\] | Full connector review.                                 | No                  | Yes                     |
+| 2.0.1.x [SLC Main]   | Full connector review.                                 | No                  | Yes                     |
 | 2.1.0.x              | Adapted connector to work with firmware version 4.4.5. | No                  | Yes                     |
 
 ### Product Info

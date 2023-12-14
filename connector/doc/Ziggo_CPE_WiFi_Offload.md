@@ -14,7 +14,7 @@ The **Ziggo CPE WiFi Collector** elements on a DMA periodically generate CSV fil
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial range   | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial range   | No                  | Yes                     |
 
 ## Installation and configuration
 

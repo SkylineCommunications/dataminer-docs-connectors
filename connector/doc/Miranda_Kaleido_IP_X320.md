@@ -14,7 +14,7 @@ The Kaleido IP X320 is an IP Video Multiviewer that is used to monitor and view 
 
 | **Range**     | **Based on** | **Description** |
 |----------------------|--------------|-----------------|
-| 1.0.0.x \[SLC Main\] | \-           | Initial version |
+| 1.0.0.x [SLC Main]   | -            | Initial version |
 
 ## Installation and configuration
 

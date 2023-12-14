@@ -18,8 +18,8 @@ Every month a report is sent to a number of email addresses that are specified i
 
 | **Range**            | **Key Features**                                                                                                           | **Based on** | **System Impact**                |
 |----------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version                                                                                                            | \-           | \-                               |
-| 2.0.0.x \[SLC Main\] | Complete connector refactoring and implement Dynamic Table replacing the standalone parameters displayed in Port status page. | 1.0.0.18     | **Old trend data will be lost.** |
+| 1.0.0.x [Obsolete]     |Initial version                                                                                                            | -            | -                                |
+| 2.0.0.x [SLC Main]   | Complete connector refactoring and implement Dynamic Table replacing the standalone parameters displayed in Port status page. | 1.0.0.18     | **Old trend data will be lost.** |
 
 ### Product Info
 
@@ -32,8 +32,8 @@ Every month a report is sent to a number of email addresses that are specified i
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

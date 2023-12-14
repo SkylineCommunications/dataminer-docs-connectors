@@ -45,7 +45,17 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
+#### Connector Installation
+
+To be able to create and monitor new services with this connector, one or more service templates must be installed on the DataMiner System. Please verify that the service templates have been successfully installed with the connector package and are accessible through Cube.
+
+The Cube module **Service Templates** should contain at least the templates **VOS IPTV** and **VOS OTT**.
+
+#### Service Monitoring Initialization
+
 To configure new encoder elements that need to be included in the service monitoring:
+
+1. Create an element running the **Skyline MDC Service Monitoring** connector (if no element running this connector exists yet).
 
 1. Navigate to the **General** page.
 

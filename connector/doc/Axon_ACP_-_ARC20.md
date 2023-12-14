@@ -23,7 +23,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                    |
+| Range     | Device Firmware Version                        |
 |------------------|------------------------------------------------|
 | 1.0.2.x          | 2316, 2417, 2517, 2617, 2717, 3217, 3418, 3518 |
 | 1.0.3.x          | 2316, 2417, 2517, 2617, 2717, 3217, 3418, 3518 |

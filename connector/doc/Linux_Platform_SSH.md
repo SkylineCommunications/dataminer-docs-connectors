@@ -10,17 +10,17 @@ This connector can be used to monitor Linux Platforms with **SSH**.
 
 ### Version Info
 
-| **Range**            | **Description**                                                               | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version, continued as 2.0.0.x.                                        | No                  | No                      |
-| 1.0.1.x \[Obsolete\] | Added SNMP connection.                                                        | Yes                 | Yes                     |
-| 1.0.2.x \[SLC Main\] | Forced SNMPv2.                                                                | No                  | No                      |
-| 2.0.0.x              | Continuation of 1.0.0.x.                                                      | No                  | Yes                     |
-| 3.0.0.x              | To be used for a port different than 22. Minimum required DMA version: 9.6.0. | Yes                 | Yes                     |
+| Range              | Description                                                                   | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version, continued as 2.0.0.x.                                        | No              | No                  |
+| 1.0.1.x [Obsolete] | Added SNMP connection.                                                        | Yes             | Yes                 |
+| 1.0.2.x [SLC Main] | Forced SNMPv2.                                                                | No              | No                  |
+| 2.0.0.x            | Continuation of 1.0.0.x.                                                      | No              | Yes                 |
+| 3.0.0.x            | To be used for a port different than 22. Minimum required DMA version: 9.6.0. | Yes             | Yes                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**   |
+| Range     | Supported Firmware       |
 |-----------|--------------------------|
 | 1.0.0.x   | Slackware Kernel 3.10.17 |
 | 1.0.1.x   | Slackware Kernel 3.10.17 |
@@ -38,14 +38,14 @@ Starting from range **1.0.1.x**, an SNMP connection is used, which means that wh
 Only applicable from version **1.0.1.x** onwards.
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string in order to read from the device. The default value is *public*.
-- **Set community string:** The community string in order to set to the device. The default value is *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string in order to read from the device. The default value is *public*.
+- **Set community string**: The community string in order to set to the device. The default value is *private*.
 
 **SERIAL CONNECTION**:
 
-- **IP address/host:** The polling IP of the Linux Platform.
-- **IP port:** The IP port of the device, by default *22* (SSH).
+- **IP address/host**: The polling IP of the Linux Platform.
+- **IP port**: The IP port of the device, by default *22* (SSH).
 - **Local IP port:** The local IP port, by default *49155*.
 - **Timeout:** Command timeout value, by default *10000* ms.
 

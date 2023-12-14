@@ -12,11 +12,11 @@ This connector provides support to monitor EATON Supervisory Modules, which are 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | SNMP Monitoring  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | SNMP Monitoring  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                       |
+| Range     | Supported Firmware                                                                           |
 |-----------|----------------------------------------------------------------------------------------------|
 | 1.0.0.x   | SM45 Supervisory Module - ICP software version 2.04 - IOB software version 2.00 (and higher) |
 
@@ -24,7 +24,7 @@ This connector provides support to monitor EATON Supervisory Modules, which are 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

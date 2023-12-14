@@ -20,7 +20,7 @@ This connector is used to monitor and control the spectrum analyzer using the pr
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 3.0.12-3                    |
+| 1.0.0.x [SLC Main]   | 3.0.12-3                    |
 
 ## Configuration
 

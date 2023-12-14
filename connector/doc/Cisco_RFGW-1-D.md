@@ -62,7 +62,7 @@ The Cisco RFGW-1-D connector allows to monitor and control a Cisco RF Gateway 1 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                 |
+| Range     | Device Firmware Version                     |
 |------------------|---------------------------------------------|
 | 1.0.0.x          | 05.02.06                                    |
 | 1.0.1.x          | 05.02.06                                    |

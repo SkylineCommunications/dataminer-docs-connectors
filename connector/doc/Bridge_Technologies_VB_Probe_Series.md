@@ -14,7 +14,7 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 
 | **Range**                | **Key Features**                                                                                                                                                                                                                  | **Based on** | **System Impact**                                                                                                                                                                                     |
 |--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x                  | \- Monitoring of ETR-enabled **streams/services/PIDs**. - Monitoring of **ETR checks**. - Monitoring of **OTT channels** and **OTT profiles**. - Monitoring of the probe **alarms** with precise probe times match (history set). | \-           | \-                                                                                                                                                                                                    |
+| 1.0.0.x                  | \- Monitoring of ETR-enabled **streams/services/PIDs**. - Monitoring of **ETR checks**. - Monitoring of **OTT channels** and **OTT profiles**. - Monitoring of the probe **alarms** with precise probe times match (history set). | -            | -                                                                                                                                                                                                     |
 | 1.1.0.x                  | \- **Ethernet streams provisioning** from **Automation script**.                                                                                                                                                                  | 1.0.0.x      | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
 | **1.1.1.x \[SLC Main\]** | \- InterApp Messages available via NuGet package.                                                                                                                                                                                 | 1.1.0.x      | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code.                                    |
 
@@ -54,9 +54,9 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -15,7 +15,7 @@ To get more detailed information consult this website <http://www.comtechefdata.
 
 | **Range** | **Key Features**                                                                                                    | **Based on** | **System Impact**                                 |
 |-----------|---------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x   | Initial version                                                                                                     | \-           | \-                                                |
+| 1.0.0.x   | Initial version                                                                                                     | -            | -                                                 |
 | 1.0.1.x   |                                                                                                                     | 1.0.0.8      |                                                   |
 | 1.0.2.x   | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.1.3      | **Old trend data will be lost for these tables.** |
 
@@ -31,9 +31,9 @@ To get more detailed information consult this website <http://www.comtechefdata.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

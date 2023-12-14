@@ -10,13 +10,13 @@ The **IQH4B** enclosures offer industry-leading, high-density delivery of modula
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                             |
+| Range     | Supported Firmware                                 |
 |-----------|----------------------------------------------------|
 | 1.0.0.x   | Software Version: 5.38.25 Build Number: 0242106059 |
 
@@ -24,7 +24,7 @@ The **IQH4B** enclosures offer industry-leading, high-density delivery of modula
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

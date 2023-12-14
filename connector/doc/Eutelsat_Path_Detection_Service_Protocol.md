@@ -43,6 +43,11 @@ Go to the **General** page and specify the CGL TNM-7222-D Amethyst III and CISCO
 
 You can right-click the **DCM I/O Configuration** table to input information via the context menu.
 
+> [!NOTE]
+> When you add a new DCM element, make sure you indicate its associated path (TH1 or TH2).
+
 ## Usage
 
-Once you have correctly configured the elements that need to be monitored (see "Initialization"), the **DCM Active Input** table will closely monitor the active DCM input and the Amethyst active input. It will also calculate and display the currently active path, which could be TH1, TH2, or a Warning state.
+Once you have correctly configured the elements that need to be monitored (see "Initialization"), the **DCM I/O Configuration** table will closely monitor the active DCM input and the Amethyst active input. It will also calculate and display the currently active path, which could be TH1, TH2, or a warning state.
+
+A **Configuration Status** parameter will indicate whether the configuration is OK. An incorrect configuration can occur in the following cases: when a configuration is missing, or when the DCM paths do not align (e.g. there are more than two DCMs with the same defined path).

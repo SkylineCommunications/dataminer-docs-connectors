@@ -10,11 +10,11 @@ The ZTE ZXA10 C600 GPON Platform connector uses an SNMP connection from ZTE ZXA1
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                      | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | \- Initial version. - Compatibility with Skyline EPM Solution.                                                                                                                                        | \-           | \-                |
-| 1.0.1.x              | \- Compatibility with new version of the Skyline EPM Solution.                                                                                                                                        | \-           | \-                |
-| 1.0.2.x \[SLC Main\] | \- Split Table was removed and replaced with Split Route, Split Distribution, and Split FAT table. - OLT is no longer in charge of requesting KPI data from the external source (e.g. KAFKA streams). | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution. | - | - |
+| 1.0.1.x | - Compatibility with new version of the Skyline EPM Solution. | - | - |
+| 1.0.2.x [SLC Main] | - Split Table was removed and replaced with Split Route, Split Distribution, and Split FAT table. <br>- OLT is no longer in charge of requesting KPI data from the external source (e.g. KAFKA streams). | - | - |
 
 ### Product Info
 
@@ -26,11 +26,11 @@ The ZTE ZXA10 C600 GPON Platform connector uses an SNMP connection from ZTE ZXA1
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                  | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                      | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \- Skyline EPM Solution - Skyline EPM Platform GPON WM | \-                      |
+| 1.0.0.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
+| 1.0.1.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
+| 1.0.2.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
 
 ## Configuration
 

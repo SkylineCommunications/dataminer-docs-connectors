@@ -14,7 +14,7 @@ This connector displays information that is polled from the device with **SNMP**
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.1 \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.1 [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 

@@ -19,7 +19,7 @@ This connector was designed for use with the device **Adtec RD-71**. The connect
 | 1.0.2.x (Obsolete)                      | Applied conditional pages instead of DVEs.                                                                                       | No                  | Yes                     |
 | 1.0.3.x (based on 1.0.2.x)              | Fixed PK duplicate issue in the 2050 table.                                                                                      | No                  | Yes                     |
 | 1.0.4.x (based on 1.0.3.2)              | Added support for profiles by adding a new serial connection (Telnet). For more information, refer to the "Notes" section below. | No                  | Yes                     |
-| 1.1.0.1 (based on 1.0.3.2) \[SLC Main\] | Compatible with new firmware 2.02.21 and higher. Added reset/reboot buttons.                                                     | No                  | Yes                     |
+| 1.1.0.1 (based on 1.0.3.2) [SLC Main]   | Compatible with new firmware 2.02.21 and higher. Added reset/reboot buttons.                                                     | No                  | Yes                     |
 
 ### Product Info
 

@@ -14,7 +14,7 @@ This connector for the **TeamCast Neptune** displays the demodulator configurati
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -33,7 +33,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to co
 SNMP CONNECTION:
 
 - **IP address/host**: The IP of the TeamCast device.
-- **IP port:** The IP port of the destination, by default *161*.
+- **IP port**: The IP port of the destination, by default *161*.
 
 ## Usage
 

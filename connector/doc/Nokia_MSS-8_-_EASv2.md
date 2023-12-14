@@ -10,7 +10,7 @@ The Nokia Wavence family includes radio and Ethernet user interfaces performing 
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ## Configuration
 

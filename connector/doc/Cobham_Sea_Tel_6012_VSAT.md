@@ -17,9 +17,9 @@ This is a smart-serial connector. It uses the telnet protocol to retrieve the ne
 This connector uses a serial connection and requires the following input during element creation:
 **SERIAL CONNECTION:**
 
-- **IP address/host:** The polling IP of the device, e.g. *10.224.85.37.*
-- **IP port:** The IP port of the device, e.g. *2003.*
-- **Bus address:** The bus address of the device. Not required.
+- **IP address/host**: The polling IP of the device, e.g. *10.224.85.37.*
+- **IP port**: The IP port of the device, e.g. *2003.*
+- **Bus address**: The bus address of the device. Not required.
 
 ### Connection configuration
 

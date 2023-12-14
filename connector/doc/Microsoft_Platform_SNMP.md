@@ -15,11 +15,11 @@ On the Task Manager page, a button allows you to normalize alarms in order to se
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.1.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.1.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                         |
+| Range     | Device Firmware Version                                             |
 |------------------|---------------------------------------------------------------------|
 | 1.1.0.x          | All Windows and Windows Server versions with built-in SNMP service. |
 

@@ -16,9 +16,9 @@ This connector can be used to monitor the information related to a single probe 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     |
 |-----------|---------------------|-------------------------|-----------------------|
-| 1.2.2.x   | No                  | Yes                     | \-                    |
+| 1.2.2.x   | No                  | Yes                     | -                     |
 
 ## Configuration
 

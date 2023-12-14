@@ -12,7 +12,7 @@ The Gude Expert Power Control Net 24x is a 24-fold remote power switch for TCP/I
 
 | **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Initial version. - Supports GUDEADS-EPC24X-MIB. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | \- Initial version. - Supports GUDEADS-EPC24X-MIB. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Gude Expert Power Control Net 24x is a 24-fold remote power switch for TCP/I
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

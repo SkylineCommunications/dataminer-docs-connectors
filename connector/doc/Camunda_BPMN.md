@@ -13,7 +13,7 @@ The connector fetches and locks external tasks that can either be completed manu
 
 | **Range**            | **Key Features**         | **Based on** | **System Impact** |
 |----------------------|--------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | External task completion | \-           | \-                |
+| 1.0.0.x [SLC Main]   | External task completion | -            | -                 |
 
 ### Product Info
 
@@ -25,7 +25,7 @@ The connector fetches and locks external tasks that can either be completed manu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

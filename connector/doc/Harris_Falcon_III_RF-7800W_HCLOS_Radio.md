@@ -14,7 +14,7 @@ This connector is used to monitor the major parameters (inputs and outputs) of t
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | No                      |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
 
 ### Product Info
 

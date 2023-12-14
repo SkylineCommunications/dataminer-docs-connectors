@@ -19,7 +19,7 @@ This is a **serial** or **SNMP** connector used to monitor and control the **Mit
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                         |
+| Range     | Device Firmware Version                                             |
 |------------------|---------------------------------------------------------------------|
 | 1.0.0.x          | D205620V1.06 (System Controller), D206501V1.02 (Display Controller) |
 | 2.0.0.x          | 209768 v1.15 (System Controller), 209769 v1.03 (Display Controller) |

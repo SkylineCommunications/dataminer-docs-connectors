@@ -8,17 +8,17 @@ This connector is used to manage bookings. It interacts with the Jobs and SRM mo
 
 ### Version Info
 
-| **Range**            | **Key Features**              | **Based on** | **System Impact**   |
+| Range                | Key Features                  | Based On     | System Impact       |
 |----------------------|-------------------------------|--------------|---------------------|
-| 1.0.0.x              | Initial version.              | \-           | \-                  |
-| 1.0.1.x \[SLC Main\] | Confirm and Check In swapped. | 1.0.0.20     | Automation scripts. |
+| 1.0.0.x              | Initial version.              | -            | -                   |
+| 1.0.1.x [SLC Main]   | Confirm and Check In swapped. | 1.0.0.20     | Automation scripts. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

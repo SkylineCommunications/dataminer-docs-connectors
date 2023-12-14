@@ -10,27 +10,27 @@ The Techex MWCore connector is an HTTP-based connector that can be used to monit
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                        | **Based on** | **System Impact**                                                                    |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version (includes DCF integration).                                                                                                                                                                                             | \-           | \-                                                                                   |
-| 1.0.1.x \[obsolete\] | Reformat of the MWEdge stream keys.                                                                                                                                                                                                     | 1.0.0.2      | **Old trend and alarm data will be lost for Streams, Input Sources, and Outputs.**   |
-| 1.0.2.x \[obsolete\] | \- Single output/input is retrieved upon context menu operation instead of MwEdge polling. - MWEdges are retrieved separately instead of all at once. - Reverse foreign key relation between Streams Resources table and Streams table. | 1.0.1.19     | **Because NuGets are now used, the minimum DataMiner version is now 10.0.10.**       |
-| 1.0.3.x \[SLC Main\] | \- Statistics Connections table and "IP Connection - Statistics Interface" connection removed. - Columns added to the Servers Info table to enable the statistics interface for each server.                                            | 1.0.2.3      | **Existing elements need to be reconfigured to account for the connection changes.** |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version (includes DCF integration). | - | - |
+| 1.0.1.x [Obsolete] | Reformat of the MWEdge stream keys. | 1.0.0.2 | **Old trend and alarm data will be lost for Streams, Input Sources, and Outputs.** |
+| 1.0.2.x [Obsolete] | - Single output/input is retrieved upon context menu operation instead of MwEdge polling. <br>- MWEdges are retrieved separately instead of all at once. <br>- Reverse foreign key relation between Streams Resources table and Streams table. | 1.0.1.19 | **Because NuGets are now used, the minimum DataMiner version is now 10.0.10.** |
+| 1.0.3.x [SLC Main] | - Statistics Connections table and "IP Connection <br>- Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
 
 ### Product Info
 
-| **Range**                         | **Supported Firmware**                                                            |
-|-----------------------------------|-----------------------------------------------------------------------------------|
-| 1.0.0.x, 1.0.1.x,1.0.2.x, 1.0.3.x | **MWCore version:** 5.2.3 (Build 784), 5.2.4 \| **MWEdges version:** 1.9.2, 1.9.3 |
+| Range                             | Supported Firmware                             |
+|-----------------------------------|------------------------------------------------|
+| 1.0.0.x, 1.0.1.x,1.0.2.x, 1.0.3.x | **MWCore version:** 5.2.3 (Build 784), 5.2.4 \ | **MWEdges version:** 1.9.2, 1.9.3 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                      |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
+| 1.0.1.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
+| 1.0.2.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
+| 1.0.3.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
 
 ## Configuration
 
