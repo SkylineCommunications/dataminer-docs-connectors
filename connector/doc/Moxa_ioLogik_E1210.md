@@ -12,7 +12,7 @@ This connector allows you to monitor a configured Moxa ioLogik E1210 device via 
 
 | **Range** | **Key Features**                | **Based on** | **System Impact**              |
 |-----------|---------------------------------|--------------|--------------------------------|
-| 1.0.0.x   | Monitoring of DI channels       | \-           | \-                             |
+| 1.0.0.x   | Monitoring of DI channels       | -            | -                              |
 | 1.0.1.x   | Improved DI channel display key | 1.0.0.x      | Display keys have been updated |
 
 ### Product Info
@@ -26,8 +26,8 @@ This connector allows you to monitor a configured Moxa ioLogik E1210 device via 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,8 +12,8 @@ IBM Aspera provides a fast alternative to FTP server software for reliable and s
 
 | **Range**            | **Key Features**                                                       | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | File name column, file table display key changes, transfer loss table. | 1.0.0.3      | \-                |
+| 1.0.0.x              | Initial version.                                                       | -            | -                 |
+| 1.0.1.x [SLC Main]   | File name column, file table display key changes, transfer loss table. | 1.0.0.3      | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ IBM Aspera provides a fast alternative to FTP server software for reliable and s
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -10,25 +10,25 @@ This connector allows you to monitor and manage the Newtec MDM6000 equipment. Ba
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | New range.       | 1.0.0.15     | \-                |
-| 2.0.0.x              | Branch version.  | 1.0.0.x      | \-                |
+| 1.0.0.x              | Initial version. | -            | -                 |
+| 1.0.1.x [SLC Main]   | New range.       | 1.0.0.15     | -                 |
+| 2.0.0.x              | Branch version.  | 1.0.0.x      | -                 |
 
 ### Product Info
 
 | **Range**            | **Supported Firmware**          |
 |----------------------|---------------------------------|
 | 1.0.0.x              | MDM6000_1.3.0.46179 3.1.0.66732 |
-| 1.0.1.x \[SLC Main\] | MDM6000_1.3.0.46179 3.1.0.66732 |
+| 1.0.1.x [SLC Main]   | MDM6000_1.3.0.46179 3.1.0.66732 |
 | 2.0.0.x              | N/A                             |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

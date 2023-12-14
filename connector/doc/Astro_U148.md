@@ -12,14 +12,14 @@ This connector uses **HTTP** to monitor the device. It also uses an **SNMP** int
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                                                                         | **Based on** | **System Impact**                                                                                                                                                                                                                                                          |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                                                                                                                                                                                                                                                                          | \-           | \-                                                                                                                                                                                                                                                                         |
-| 1.0.1.x \[SLC Main\] | \- **Removed** the **Connection Method Login** option since it was causing issues when trying to set parameter values such as the Transponder Frequency. - **Added** the **Web Interface Entrance** parameter, the **Login Message** parameter (both located on the Login page), and logic to check each login response. | 1.0.0.24     | Connection Method (read parameter with ID 85 and write parameter with ID 86) has been removed. Impact: Alarm/trend templates and Visio drawings will need to be reviewed. All templates or Visio drawings that reference these removed parameters will need to be adapted. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.1.x [SLC Main] | - **Removed** the **Connection Method Login** option since it was causing issues when trying to set parameter values such as the Transponder Frequency. <br>- **Added** the **Web Interface Entrance** parameter, the **Login Message** parameter (both located on the Login page), and logic to check each login response. | 1.0.0.24 | Connection Method (read parameter with ID 85 and write parameter with ID 86) has been removed. Impact: Alarm/trend templates and Visio drawings will need to be reviewed. All templates or Visio drawings that reference these removed parameters will need to be adapted. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                            |
+| Range     | Supported Firmware                                |
 |-----------|---------------------------------------------------|
 | 1.0.0.x   | 5595 5799 5974 5987 6010 6420 6800 6810 6900 6910 |
 | 1.0.1.x   | 5595 5799 5974 5987 6010 6420 6800 6810 6900 6910 |
@@ -28,9 +28,9 @@ This connector uses **HTTP** to monitor the device. It also uses an **SNMP** int
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.0.8   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.0.8   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -46,7 +46,7 @@ HTTP Connection for Communication with U100C as Proxy
 
 - **IP address/host**: The IP address of the Astro U100 Controller.
 - **IP port**: The port of the destination, e.g. *80*.
-- **Bus address:** The IP address of the U148. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g. *ByPassProxy;10.11.12.13.*
+- **Bus address**: The IP address of the U148. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g. *ByPassProxy;10.11.12.13.*
 
 #### HTTP Connection for Direct Communication
 

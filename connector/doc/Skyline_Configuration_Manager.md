@@ -16,11 +16,11 @@ In range **2.0.0.x**, the configuration manager is mainly used for communication
 
 ### Version Info
 
-| **Range**     | **Description**                                             | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                            | No                  | Yes                     |
-| 2.0.0.x \[Obsolete\] | This range is intended to be integrated with DataMiner IDP. | No                  | Yes                     |
-| 2.0.1.x \[SLC Main\] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6  | No                  | Yes                     |
+| Range              | Description                                                 | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                            | No              | Yes                 |
+| 2.0.0.x [Obsolete] | This range is intended to be integrated with DataMiner IDP. | No              | Yes                 |
+| 2.0.1.x [SLC Main] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6  | No              | Yes                 |
 
 ## Configuration
 

@@ -14,7 +14,7 @@ The **GeoSync Microwave TRR-Ku2** connector controls and monitors the bands and 
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | Yes                     |
 
 ### Product Info
 

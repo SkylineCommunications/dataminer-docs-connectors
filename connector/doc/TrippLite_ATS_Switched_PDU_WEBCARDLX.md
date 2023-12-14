@@ -20,7 +20,7 @@ The TrippLite ATS Switched PDU WEBCARDLX connector allows for configuration and 
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 15.5.1                      |
+| 1.0.0.x [SLC Main]   | 15.5.1                      |
 
 ## Installation and configuration
 

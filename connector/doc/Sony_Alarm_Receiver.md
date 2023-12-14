@@ -10,9 +10,9 @@ The purpose of this connector is to aggregate alarms from Sony devices.
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on**                         | **System Impact** |
-|----------------------|------------------|--------------------------------------|-------------------|
-| 1.0.1.x \[SLC Main\] | Connector review    | \- Version 1.0.0.2 developed by Sony | \-                |
+| Range              | Key Features     | Based on                          | System Impact |
+|--------------------|------------------|-----------------------------------|---------------|
+| 1.0.1.x [SLC Main] | Connector review | Version 1.0.0.2 developed by Sony | -             |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The purpose of this connector is to aggregate alarms from Sony devices.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

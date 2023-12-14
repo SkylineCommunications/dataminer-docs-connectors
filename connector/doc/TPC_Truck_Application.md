@@ -16,7 +16,7 @@ The visual page of the element is the main page to be used for the application. 
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ## Installation and configuration
 

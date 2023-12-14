@@ -12,10 +12,10 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 
 ### Version Info
 
-| **Range**            | **Key Features**                                      | **Based on** | **System Impact**                                                                         |
-|----------------------|-------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version                                       | \-           | \-                                                                                        |
-| 1.0.1.x              | New version because of invalid connector integration. | \-           | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.1.x | New version because of invalid connector integration. | - | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -92,13 +92,21 @@ This page provides an overview of the **primary** and **secondary** server, and 
 
 This page provides an overview of statistics related to the WebSocket API.
 
+### Devices Page
+
+The following options are available in the right-click menu on this page:
+
+- **Refresh Sources**: Refreshes the source information of the selected device.
+- **Refresh Destinations**: Refreshes the destination information of the selected device.
+
 ### Sources Page
 
 The following options are available in the right-click menu on this page:
 
 - **Add To Category**: Adds the selection of sources to the specified category.
 - **Add Alternate Mnemonic**: Adds an alternate mnemonic to the source.
-- **Exclude:** Adds the selected sources to the source exclusion list. Any routes matching the source exclusions will not be shown in the routes table. You can for example use this if you do not want to show your "not connected" routes.
+- **Exclude**: Adds the selected sources to the source exclusion list. Any routes matching the source exclusions will not be shown in the routes table. You can for example use this if you do not want to show your "not connected" routes.
+- **Cleanup**: Removes all unavailable sources from the source-related tables.
 
 ### Source Associations
 
@@ -112,6 +120,7 @@ The following options are available in the right-click menu on this page:
 
 - **Add To Category**: Adds the selection of destinations to the specified category.
 - **Add Alternate Mnemonic**: Adds an alternate mnemonic to the destination.
+- **Cleanup**: Removes all unavailable destinations from the destination-related tables.
 
 ### Destination Associations
 

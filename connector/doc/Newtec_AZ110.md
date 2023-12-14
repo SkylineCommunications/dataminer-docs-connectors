@@ -12,12 +12,12 @@ The AZ110 is a satellite modulator used for broadcast contribution, DSNG and dis
 
 | **Range** | **Key Features**                        | **Based on** | **System Impact** |
 |-----------|-----------------------------------------|--------------|-------------------|
-| 1.6.55.x  | Software version 6.55, Software ID 6279 | \-           | \-                |
-| 1.7.02.x  | Software version 7.02, Software ID 6279 | \-           | \-                |
-| 1.8.31.x  | Software version 8.31, Software ID 6279 | \-           | \-                |
-| 2.2.30.x  | Software version 2.30, Software ID 6241 | \-           | \-                |
-| 3.2.47.x  | Software version 2.47, Software ID 6241 | \-           | \-                |
-| 3.2.56.x  | Software version 2.56, Software ID 6241 | \-           | \-                |
+| 1.6.55.x  | Software version 6.55, Software ID 6279 | -            | -                 |
+| 1.7.02.x  | Software version 7.02, Software ID 6279 | -            | -                 |
+| 1.8.31.x  | Software version 8.31, Software ID 6279 | -            | -                 |
+| 2.2.30.x  | Software version 2.30, Software ID 6241 | -            | -                 |
+| 3.2.47.x  | Software version 2.47, Software ID 6241 | -            | -                 |
+| 3.2.56.x  | Software version 2.56, Software ID 6241 | -            | -                 |
 
 ### Product Info
 
@@ -34,12 +34,12 @@ The AZ110 is a satellite modulator used for broadcast contribution, DSNG and dis
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.6.55.x  | No                  | Yes                     | \-                    | \-                      |
-| 1.7.02.x  | No                  | Yes                     | \-                    | \-                      |
-| 1.8.31.x  | No                  | Yes                     | \-                    | \-                      |
-| 2.2.30.x  | No                  | Yes                     | \-                    | \-                      |
-| 3.2.47.x  | No                  | Yes                     | \-                    | \-                      |
-| 3.2.56.x  | No                  | Yes                     | \-                    | \-                      |
+| 1.6.55.x  | No                  | Yes                     | -                     | -                       |
+| 1.7.02.x  | No                  | Yes                     | -                     | -                       |
+| 1.8.31.x  | No                  | Yes                     | -                     | -                       |
+| 2.2.30.x  | No                  | Yes                     | -                     | -                       |
+| 3.2.47.x  | No                  | Yes                     | -                     | -                       |
+| 3.2.56.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

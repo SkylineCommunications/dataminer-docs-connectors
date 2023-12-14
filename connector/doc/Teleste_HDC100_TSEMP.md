@@ -21,7 +21,7 @@ The connector also provides different possibilities for **alarm monitoring** and
 | 3.0.0.x              | DVE protocol name changed                  | No                  | No                      |
 | 3.1.0.x              | Updated to support new ESW                 | No                  | No                      |
 | 3.1.1.x              | Removed normalization                      | No                  | No                      |
-| 4.0.0.x \[SLC Main\] | Branched version                           | No                  | Yes                     |
+| 4.0.0.x [SLC Main]   | Branched version                           | No                  | Yes                     |
 
 ### Product Info
 

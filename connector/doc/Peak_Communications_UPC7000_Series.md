@@ -16,7 +16,7 @@ This connector uses serial commands to retrieve the data from the **Peak Communi
 |----------------------|--------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version    | No                  | Yes                     |
 | 1.0.1.x              | DCF implementation | Yes                 | Yes                     |
-| 1.0.2.x \[SLC Main\] | DCF update         | Yes                 | Yes                     |
+| 1.0.2.x [SLC Main]   | DCF update         | Yes                 | Yes                     |
 
 ### Product Info
 

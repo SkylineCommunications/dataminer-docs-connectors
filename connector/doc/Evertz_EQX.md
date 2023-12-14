@@ -23,10 +23,10 @@ Based on the type of card, different tables and parameters are available in the 
 
 | **Range**            | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                | Yes                 | No                      |
-| 2.0.0.x \[Obsolete\] | Yes                                                            | No                  |                         |
-| 2.0.1.x \[Obsolete\] | Yes                                                            | No                  |                         |
-| 3.0.0.x \[SLC Main\] | Stripped version with new firmware. Serial connection removed. | Yes                 | No                      |
+| 1.0.0.x [Obsolete]     |Initial version                                                | Yes                 | No                      |
+| 2.0.0.x [Obsolete]     |Yes                                                            | No                  |                         |
+| 2.0.1.x [Obsolete]     |Yes                                                            | No                  |                         |
+| 3.0.0.x [SLC Main]   | Stripped version with new firmware. Serial connection removed. | Yes                 | No                      |
 
 ## Configuration
 

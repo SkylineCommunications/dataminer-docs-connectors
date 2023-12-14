@@ -10,16 +10,16 @@ The Zixi Zen Master is a platform to monitor and control live video orchestratio
 
 ### Version Info
 
-| **Range**            | **Key Features**                                             | **Based on** | **System Impact**                                                  |
-|----------------------|--------------------------------------------------------------|--------------|--------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                             | \-           | \-                                                                 |
-| 1.0.1.x              | DCF interfaces enabled.                                      | 1.0.0.1      | DCF interfaces are now available for this cpnnector.               |
-| 1.1.0.x              | DCF interfaces enabled. Supports Zixi Zen API version 1.0.0. | 1.0.1.4      | Table modifications have been implemented to adapt to the new API. |
-| 1.1.1.x \[SLC Main\] | DCF interfaces enabled. Supports Zixi Zen API version 1.0.0. | 1.1.0.6      | General status parameters are now discrete strings.                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x | DCF interfaces enabled. | 1.0.0.1 | DCF interfaces are now available for this connector. |
+| 1.1.0.x | DCF interfaces enabled. Supports Zixi Zen API version 1.0.0. | 1.0.1.4 | Table modifications have been implemented to adapt to the new API. |
+| 1.1.1.x [SLC Main] | DCF interfaces enabled. Supports Zixi Zen API version 1.0.0. | 1.1.0.6 | General status parameters are now discrete strings. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**    |
+| Range     | Supported Firmware        |
 |-----------|---------------------------|
 | 1.0.0.x   | 2019 c Zixi LLC.          |
 | 1.0.1.x   | 2019 c Zixi LLC.          |
@@ -30,10 +30,10 @@ The Zixi Zen Master is a platform to monitor and control live video orchestratio
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -16,7 +16,7 @@ To do this, the connector uses a third-party tool (i.e. IPMItool, which can be f
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 

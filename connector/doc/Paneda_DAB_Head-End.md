@@ -15,13 +15,13 @@ The connector only displays the general data once, separately from the data that
 
 | **Range**            | **Key Features**                           | **Based on** | **System Impact**                                                                         |
 |----------------------|--------------------------------------------|--------------|-------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                           | \-           | \-                                                                                        |
+| 1.0.0.x              | Initial version.                           | -            | -                                                                                         |
 | 1.0.1.x              | Reorganization of the connector.           | 1.0.0.2      | Alarm and trend information lost. Table references lost. New element needs to be created. |
-| 1.0.2.x \[SLC Main\] | Added HTTP support for multiple providers. | 1.0.1.2      | Alarm and trend information lost. Table references lost. New element needs to be created. |
+| 1.0.2.x [SLC Main]   | Added HTTP support for multiple providers. | 1.0.1.2      | Alarm and trend information lost. Table references lost. New element needs to be created. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                       |
+| Range     | Supported Firmware                           |
 |-----------|----------------------------------------------|
 | 1.0.0.x   | paneda_repo_version-2019.02.01.793-1-x86_64  |
 | 1.0.1.x   | paneda_repo_version-2020.02.14.1160-1-x86_64 |
@@ -31,9 +31,9 @@ The connector only displays the general data once, separately from the data that
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

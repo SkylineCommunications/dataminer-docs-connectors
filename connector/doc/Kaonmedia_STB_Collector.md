@@ -21,8 +21,8 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **Type of port:** TCP/IP
-- **IP address/host:** [http://localhost](/)
-- **IP port:** Port used for communication. By default *80*, but we advise to change this to *+1024*.
+- **IP address/host**: [http://localhost](/)
+- **IP port**: Port used for communication. By default *80*, but we advise to change this to *+1024*.
 - **Bus address** *bypassproxy*
 
 ### Configuration

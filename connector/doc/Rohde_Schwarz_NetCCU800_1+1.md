@@ -14,7 +14,7 @@ This connector polls information about the **Rohde Schwarz NetCCU800 1+1** in ge
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x \[SLC Main\] | Connector review   | Yes                 | No                      |
+| 2.0.0.x [SLC Main]   | Connector review   | Yes                 | No                      |
 
 ### Product Info
 

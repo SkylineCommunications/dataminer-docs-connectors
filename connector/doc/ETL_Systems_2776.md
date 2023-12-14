@@ -14,7 +14,7 @@ This is an **SNMP** connector that can be used to poll the device for its curren
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ### Product Info
 

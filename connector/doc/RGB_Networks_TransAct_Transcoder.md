@@ -20,7 +20,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 **HTTP Connection**
 
-- **IP address/host:** The polling IP or URL of the destination, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13*.
 - **IP port**: The IP port of the destination.
 - **Bus address**: If the proxy server has to be bypassed, specify *byPassProxy* (enabled by default).
 

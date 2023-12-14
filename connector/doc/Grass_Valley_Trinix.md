@@ -12,8 +12,8 @@ This connector uses the serial-over-Ethernet **RCP router protocol** and is desi
 
 | **Range**            | **Key Features**          | **Based on** | **System Impact**                                |
 |----------------------|---------------------------|--------------|--------------------------------------------------|
-| 1.0.0.x              | Initial version.          | \-           | \-                                               |
-| 2.0.0.x \[SLC Main\] | Removed matrix parameters | 1.0.0.6      | Any logic linked with the matrix will be broken. |
+| 1.0.0.x              | Initial version.          | -            | -                                                |
+| 2.0.0.x [SLC Main]   | Removed matrix parameters | 1.0.0.6      | Any logic linked with the matrix will be broken. |
 
 ### Product Info
 
@@ -25,8 +25,8 @@ This connector uses the serial-over-Ethernet **RCP router protocol** and is desi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

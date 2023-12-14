@@ -26,7 +26,7 @@ For more information, refer to <https://store.emc.com/us/Product-Family/ISILON-P
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**    |
+| Range     | Device Firmware Version        |
 |------------------|--------------------------------|
 | 1.0.0.x          | B_7_2_0_061R (Cluster version) |
 | 1.0.1.x          | B_7_2_0_061R (Cluster version) |

@@ -10,10 +10,10 @@ This connector makes it possible to monitor an AVT Magic SDC EDI Converter with 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                     | **Based on** | **System Impact**                                                                                            |
-|----------------------|--------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                     | \-           | \-                                                                                                           |
-| 1.0.1.x \[SLC Main\] | \- Updated DCF version. - Changed type string to fit units. - Additional minor fixes | 1.0.0.4      | \- New DCF version increases the minimum DataMiner version. - Changing type of parameter affects versioning. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | - Updated DCF version. <br>- Changed type string to fit units. <br>- Additional minor fixes | 1.0.0.4 | - New DCF version increases the minimum DataMiner version. <br>- Changing type of parameter affects versioning. |
 
 ### Product Info
 
@@ -25,8 +25,8 @@ This connector makes it possible to monitor an AVT Magic SDC EDI Converter with 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

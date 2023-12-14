@@ -16,13 +16,13 @@ Alarm monitoring and trending can be activated on these parameters.
 
 | **Range**            | **Key Features**                            | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | License and Failover information are shown. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | License and Failover information are shown. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -19,7 +19,7 @@ A smart-serial connection is used to retrieve the data from the device.
 | **Range**     | **Description**    | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version    | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | DCF implementation | Yes                 | Yes                     |
+| 1.0.1.x [SLC Main]   | DCF implementation | Yes                 | Yes                     |
 
 ### Product Info
 

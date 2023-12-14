@@ -14,9 +14,9 @@ This connector uses SNMP to retrieve data from the device. Multiple UPS systems 
 
 | **Range**            | **Key Features**                                                                               | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                | \-           | \-                |
-| 1.0.1.x              | Connector review                                                                               | \-           | \-                |
-| 1.0.2.x \[SLC Main\] | Scheduled test capabilities Property table Edit bulk Property table Support new battery models | \-           | \-                |
+| 1.0.0.x              | Initial version                                                                                | -            | -                 |
+| 1.0.1.x              | Connector review                                                                               | -            | -                 |
+| 1.0.2.x [SLC Main]   | Scheduled test capabilities Property table Edit bulk Property table Support new battery models | -            | -                 |
 
 ### Product Info
 
@@ -28,11 +28,11 @@ This connector uses SNMP to retrieve data from the device. Multiple UPS systems 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                    |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                        |
 |-----------|---------------------|-------------------------|-----------------------|--------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [SCTE UPS](xref:Connector_help_SCTE_UPS) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | [SCTE UPS](xref:Connector_help_SCTE_UPS) |
-| 1.0.2.x   | No                  | Yes                     | \-                    | [SCTE UPS](xref:Connector_help_SCTE_UPS) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [SCTE UPS](xref:Connector_help_SCTE_UPS) |
+| 1.0.1.x   | No                  | Yes                     | -                     | [SCTE UPS](xref:Connector_help_SCTE_UPS) |
+| 1.0.2.x   | No                  | Yes                     | -                     | [SCTE UPS](xref:Connector_help_SCTE_UPS) |
 
 ## Configuration
 

@@ -12,12 +12,12 @@ This connector uses SNMP or HTTP communication in order to monitor a CISCO Firep
 
 | **Range**            | **Key Features**      | **Based on** | **System Impact** |
 |----------------------|-----------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | SNMP initial version. | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | HTTP initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | SNMP initial version. | -            | -                 |
+| 2.0.0.x [SLC Main]   | HTTP initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version** |
+| Range     | Device Firmware Version     |
 |-----------|-----------------------------|
 | 1.0.0.x   | N/A                         |
 | 2.0.0.x   | N/A                         |
@@ -26,8 +26,8 @@ This connector uses SNMP or HTTP communication in order to monitor a CISCO Firep
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

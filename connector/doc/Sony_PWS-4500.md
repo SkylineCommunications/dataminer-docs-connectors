@@ -14,9 +14,9 @@ The information on the parameters is retrieved via **SNMP** communication.
 
 | **Range**            | **Key Features**                             | **Based on** | **System Impact**                                                                                                                                                  |
 |----------------------|----------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                             | \-           | \-                                                                                                                                                                 |
+| 1.0.0.x              | Initial version.                             | -            | -                                                                                                                                                                  |
 | 1.0.1.x              | Support for monitoring of Sony 2110 devices. | 1.0.0.18     | Renamed NMI table to IP AV Interfaces table. Parameters related to NMI logic were renamed to a more generic name to provide support for other cards in the future. |
-| 1.0.2.x \[SLC Main\] | Added DCF support                            | 1.0.1.13     | \-                                                                                                                                                                 |
+| 1.0.2.x [SLC Main]   | Added DCF support                            | 1.0.1.13     | -                                                                                                                                                                  |
 
 ### Product Info
 
@@ -30,9 +30,9 @@ The information on the parameters is retrieved via **SNMP** communication.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

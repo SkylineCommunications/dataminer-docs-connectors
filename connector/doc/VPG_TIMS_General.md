@@ -19,7 +19,7 @@ This analyzer uses a combination of SNMP and HTML to pass the information relate
 | 2.1.0.x              | New OID 13130.6                           | No                  | No                      |
 | 3.1.0.x              | Changed the connector with a tree controller | No                  | No                      |
 | 3.1.1.x              | Changes for GlobeCast France              | no                  | Yes                     |
-| 3.2.1.x \[SLC Main\] | Old OID 13130.5                           | No                  | Yes                     |
+| 3.2.1.x [SLC Main]   | Old OID 13130.5                           | No                  | Yes                     |
 
 ### Product Info
 

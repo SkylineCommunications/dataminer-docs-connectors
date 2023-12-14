@@ -28,7 +28,7 @@ The information displayed in the connector is divided over seven pages:
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                 |
+| Range     | Device Firmware Version                                     |
 |------------------|-------------------------------------------------------------|
 | 1.0.0.x          | Unknown                                                     |
 | 2.0.0.x          | Unknown                                                     |

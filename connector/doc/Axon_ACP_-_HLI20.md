@@ -24,7 +24,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                |
+| Range     | Device Firmware Version                                    |
 |------------------|------------------------------------------------------------|
 | 1.0.2.x          | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
 | 1.0.3.x          | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |

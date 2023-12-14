@@ -12,9 +12,9 @@ The **Axon ACP HIX100** connector can be used to display and configure informati
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.1   | Initial version \[SLC Main\] | \-           | \-                |
+| 1.0.0.1   | Initial version [SLC Main]   | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The **Axon ACP HIX100** connector can be used to display and configure informati
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

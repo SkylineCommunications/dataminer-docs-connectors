@@ -16,7 +16,7 @@ The connector uses **SNMP** to retrieve data from the **redundancy switch**. It 
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | Yes                 | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 ### Product Info
 

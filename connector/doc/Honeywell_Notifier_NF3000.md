@@ -14,11 +14,11 @@ The connector collects data via a **smart-serial** connection. This way, in addi
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                   |
+| Range     | Device Firmware Version                                                       |
 |------------------|-------------------------------------------------------------------------------|
 | 1.0.0.x          | 7.5+ (4.3+ is likely to also be compatible, but this has not been tested yet) |
 

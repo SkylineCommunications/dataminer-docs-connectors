@@ -12,7 +12,7 @@ The Cobalt Digital HPF 9000 is an SNMP connector for a modular frame. This frame
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,7 +22,7 @@ The Cobalt Digital HPF 9000 is an SNMP connector for a modular frame. This frame
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                          |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                                              |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | No                  | Yes                     |                       | [Cobalt Digital HPF 9000 - Cobalt Digital 9001](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001) |
 
@@ -39,8 +39,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: 183
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 
 

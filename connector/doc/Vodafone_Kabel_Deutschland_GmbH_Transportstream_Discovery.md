@@ -12,13 +12,13 @@ The Vodafone Kabel Deutschland GmbH Transportstream Discovery connector is used 
 
 | **Range**            | **Key Features**                      | **Based on** | **System Impact** |
 |----------------------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version (CISCO DCM Discovery) | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version (CISCO DCM Discovery) | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,17 +14,17 @@ An **SNMP** connection is used to communicate with the system.
 
 | **Range**            | **Key Features**                                                   | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                   | \-           | \-                |
-| 1.0.1.x \[Obsolete\] | Initial version.                                                   | \-           | \-                |
-| 1.1.0.x              | Main version for 2.xx and 3.xx firmware versions.                  | \-           | \-                |
-| 1.2.0.x              | Main version for 1.xx firmware version. This version is read-only. | \-           | \-                |
+| 1.0.0.x [Obsolete]     |Initial version.                                                   | -            | -                 |
+| 1.0.1.x [Obsolete]     |Initial version.                                                   | -            | -                 |
+| 1.1.0.x              | Main version for 2.xx and 3.xx firmware versions.                  | -            | -                 |
+| 1.2.0.x              | Main version for 1.xx firmware version. This version is read-only. | -            | -                 |
 
 ### Product Info
 
 | **Range**            | **Supported Firmware** |
 |----------------------|------------------------|
-| 1.0.0.x \[Obsolete\] | 2.12                   |
-| 1.0.1.x \[Obsolete\] | 2.15                   |
+| 1.0.0.x [Obsolete]     |2.12                   |
+| 1.0.1.x [Obsolete]     |2.15                   |
 | 1.1.0.x              | 2.xx, 3.xx             |
 | 1.2.0.x              | 1.xx                   |
 
@@ -32,10 +32,10 @@ An **SNMP** connection is used to communicate with the system.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

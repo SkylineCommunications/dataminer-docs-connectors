@@ -14,8 +14,8 @@ The SAF Tehnika Integra-W SNMPv2/v3 connector controls and monitors this radio s
 
 | **Range**            | **Key Features**            | **Based on** | **System Impact** |
 |----------------------|-----------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version             | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Added serial/SSH connection | 1.0.0.6      | \-                |
+| 1.0.0.x              | Initial version             | -            | -                 |
+| 1.0.1.x [SLC Main]   | Added serial/SSH connection | 1.0.0.6      | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The SAF Tehnika Integra-W SNMPv2/v3 connector controls and monitors this radio s
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -16,8 +16,8 @@ Note: This connector **requires .Net Framework 4.0** or higher.
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact** |
 |----------------------|------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | HTTP connection added. | \-           | \-                |
+| 1.0.0.x              | Initial version.       | -            | -                 |
+| 1.0.1.x [SLC Main]   | HTTP connection added. | -            | -                 |
 
 ### Product Info
 
@@ -30,8 +30,8 @@ Note: This connector **requires .Net Framework 4.0** or higher.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,7 +12,7 @@ The AC3200 is an intelligent broadband amp from Teleste.
 
 | **Range** | **Device Revision** |
 |------------------|---------------------|
-| 1.0.1.x          | \-                  |
+| 1.0.1.x          | -                   |
 
 ## Configuration
 

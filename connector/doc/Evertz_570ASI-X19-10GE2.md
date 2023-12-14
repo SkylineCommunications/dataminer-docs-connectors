@@ -12,22 +12,22 @@ This connector allows you to manage the Evertz 570ASI-X19-10GE2 card. It communi
 
 | **Range**            | **Key Features**                                                                                                         | **Based on** | **System Impact**                                                                                                                               |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                          | \-           | \-                                                                                                                                              |
-| 1.0.1.x \[SLC Main\] | Added labels to display key with dropdown to select format, and changed display key column of DIN Inputs/Outputs tables. | 1.0.0.1      | DMS filters, Automation scripts, visual overviews, reports, and web API implementations referencing the changed display keys could be affected. |
+| 1.0.0.x              | Initial version                                                                                                          | -            | -                                                                                                                                               |
+| 1.0.1.x [SLC Main]   | Added labels to display key with dropdown to select format, and changed display key column of DIN Inputs/Outputs tables. | 1.0.0.1      | DMS filters, Automation scripts, visual overviews, reports, and web API implementations referencing the changed display keys could be affected. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,9 +12,9 @@ This is a standalone connector for the 7814UDX-2-HD card of the Evertz 7800 Gene
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                  | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Audio Control, Audio Down Mix, Dolby Decoder and Encoder, Presets | \-           | \-                |
+| Range              | Key Features                                                      | Based on     | System Impact     |
+|--------------------|-------------------------------------------------------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Audio Control, Audio Down Mix, Dolby Decoder and Encoder, Presets | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This is a standalone connector for the 7814UDX-2-HD card of the Evertz 7800 Gene
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

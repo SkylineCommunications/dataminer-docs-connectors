@@ -12,11 +12,11 @@ This connector is intended for the monitoring and management of UPS devices from
 
 | **Range**            | **Key Features**             | **Based on** | **System Impact**                                              |
 |----------------------|------------------------------|--------------|----------------------------------------------------------------|
-| 1.0.1.x \[SLC Main\] | Added Alarm Page and tables. | 1.0.0.5      | Changed display key to naming to make it Cassandra-compatible. |
+| 1.0.1.x [SLC Main]   | Added Alarm Page and tables. | 1.0.0.5      | Changed display key to naming to make it Cassandra-compatible. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                           |
+| Range     | Supported Firmware                               |
 |-----------|--------------------------------------------------|
 | 1.0.1.x   | Powerware 9100 - 1.30 Eaton 9PX 1000 - 1.18.4945 |
 
@@ -24,7 +24,7 @@ This connector is intended for the monitoring and management of UPS devices from
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,7 +12,7 @@ The MAGIC THipPro is an IP telephone hybrid system with 8 or 16 caller lines. Wi
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ The MAGIC THipPro is an IP telephone hybrid system with 8 or 16 caller lines. Wi
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     |
 |-----------|---------------------|-------------------------|-----------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    |
+| 1.0.0.x   | No                  | Yes                     | -                     |
 
 ## Configuration
 
