@@ -265,4 +265,4 @@ Interfaces page contains table of two rows for easier view of all informations r
 - Teleste HDO908 TSEMP
 
 ### Detailed logging about polled modules
-Note that detailed module is enabled/disabled by parameter ID 5 on App level. By default, this **parameter is set to disabled**, but if you want to see more detailed logging about polled modules, set this parameter to enabled.
+Note that detailed module is enabled/disabled by parameter **DebugLoggingState (ID 5)** on App level. By default, this **parameter is set to disabled**, but if you want to see more detailed logging about polled modules, set this parameter to enabled.
