@@ -12,9 +12,9 @@ The **TECSYS TS 9090** is a media encoder solution for audio and video. This con
 
 | **Range** | **Key Features**   | **Based on** | **System Impact** |
 |-----------|--------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.   | \-           | \-                |
-| 1.1.0.x   | New firmware.      | \-           | \-                |
-| 1.1.1.x   | DCF feature added. | 1.1.0.1      | \-                |
+| 1.0.0.x   | Initial version.   | -            | -                 |
+| 1.1.0.x   | New firmware.      | -            | -                 |
+| 1.1.1.x   | DCF feature added. | 1.1.0.1      | -                 |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ The **TECSYS TS 9090** is a media encoder solution for audio and video. This con
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

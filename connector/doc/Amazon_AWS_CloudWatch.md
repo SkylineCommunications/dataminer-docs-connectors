@@ -44,7 +44,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The monitoring AWS URL from the desired region. The URL should have the following structure: *monitoring.\<region\>.amazonaws.com*.
+- **IP address/host**: The monitoring AWS URL from the desired region. The URL should have the following structure: *monitoring.\<region\>.amazonaws.com*.
 - **IP port**: The IP port of the device.
 - **Bus address**: Specify *bypassproxy* if the proxy server has to be bypassed.
 
@@ -54,7 +54,7 @@ This connector uses a smart-serial connection and requires the following input d
 
 HTTP CONNECTION:
 
-- **IP address/host:** Any.
+- **IP address/host**: Any.
 - **IP port**: The IP port on which the connector will listen for SNS HTTP notifications.
 - **Bus address**: Specify *bypassproxy* if the proxy server has to be bypassed.
 

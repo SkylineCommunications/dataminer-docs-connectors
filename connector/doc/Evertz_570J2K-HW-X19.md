@@ -14,11 +14,11 @@ This connector uses SNMP to poll data from this device based on the encoder and 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                             |
+| Range     | Supported Firmware                                                                 |
 |-----------|------------------------------------------------------------------------------------|
 | 1.0.0.x   | \- Encoder: V1.0.0B20200826-1122-G-U9E-8A - Decoder: V1.0.0B20210325-1310-H-U9D-8A |
 
@@ -26,7 +26,7 @@ This connector uses SNMP to poll data from this device based on the encoder and 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

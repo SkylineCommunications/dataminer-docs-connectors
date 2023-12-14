@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to co
 SNMP CONNECTION:
 
 - **IP address/host**: The IP of the Trinix device.
-- **IP port:** The IP port of the destination, by default *161*.
+- **IP port**: The IP port of the destination, by default *161*.
 
 ## Usage
 

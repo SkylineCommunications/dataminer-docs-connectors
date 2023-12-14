@@ -12,7 +12,7 @@ This connector can be used to monitor the **main transmitter** of the device via
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                         |
+| Range     | Supported Firmware                             |
 |-----------|------------------------------------------------|
 | 1.0.0.x   | 02.03.0139 / 861-1151-162 S (Software Version) |
 

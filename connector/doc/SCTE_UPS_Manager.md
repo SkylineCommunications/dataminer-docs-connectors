@@ -14,7 +14,7 @@ It is also possible to group and analyze the traps that the DMA receives from th
 
 | **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------|--------------|-------------------|
-| 2.0.0.x \[SLC Main\] | Automatic and manual provisioning of UPS devices | \-           | \-                |
+| 2.0.0.x [SLC Main]   | Automatic and manual provisioning of UPS devices | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ It is also possible to group and analyze the traps that the DMA receives from th
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

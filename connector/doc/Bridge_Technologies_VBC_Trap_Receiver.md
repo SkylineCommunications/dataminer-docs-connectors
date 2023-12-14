@@ -12,9 +12,9 @@ The **VBC Trap Receiver** connector integrates the **VideoBRIDGE Controller (VBC
 
 | **Range**             | **Key Features**                                                                     | **Based on** | **System Impact**                              |
 |-----------------------|--------------------------------------------------------------------------------------|--------------|------------------------------------------------|
-| 1.0.0.x \[Obsolete\]  | Initial version.                                                                     | \-           | \-                                             |
+| 1.0.0.x \[Obsolete\]  | Initial version.                                                                     | -            | -                                              |
 | 1.0.1.x \[Obsolete\]  | Probe filtering added for traps aggregation.                                         | 1.0.0.3      | Page renamed.                                  |
-| 1.0.2..x \[SLC Main\] | HTTP connection added to support Bridge Technologies External Integration Interface. | 1.0.1.4      | New connection added to element configuration. |
+| 1.0.2..x [SLC Main]   | HTTP connection added to support Bridge Technologies External Integration Interface. | 1.0.1.4      | New connection added to element configuration. |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ The **VBC Trap Receiver** connector integrates the **VideoBRIDGE Controller (VBC
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

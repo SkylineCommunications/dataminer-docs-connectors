@@ -12,9 +12,9 @@ From DataMiner 10.0.3 onwards, you can also generate a button panel UI component
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                             | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Page system for button panel. Supported actions for buttons: - Page jump - DataMiner parameter get - DataMiner parameter set - DataMiner element alarm state | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Page system for button panel. <br>Supported actions for buttons: <br>- Page jump <br>- DataMiner parameter get <br>- DataMiner parameter set <br>- DataMiner element alarm state | - | - |
 
 ### Product Info
 
@@ -26,13 +26,13 @@ From DataMiner 10.0.3 onwards, you can also generate a button panel UI component
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 An element using this connector should be **created by a manager element** that runs the [Skyline Panel Manager](xref:Connector_help_Skyline_Panel_Manager) connector. This way, the manager can automatically provision the correct capabilities to the software panel, as well as make the link with the hardware, if desired.
 
-If you use a DataMiner dashboard, you can provision a CSS file on the **Layout** page. This CCS can be used to override the default looks of the panel UI if needed.
+If you use a DataMiner dashboard, you can provision a CSS file on the **Layout** page. This CSS can be used to override the default looks of the panel UI if needed.
 
 ## How to use
 

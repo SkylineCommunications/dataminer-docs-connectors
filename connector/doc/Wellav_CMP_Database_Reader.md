@@ -12,7 +12,7 @@ This connector retrieves the CMP data from a MySQL database.
 
 | **Range**            | **Key Features**               | **Based on** | **System Impact** |
 |----------------------|--------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | SQL requests using SLDatabase. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | SQL requests using SLDatabase. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector retrieves the CMP data from a MySQL database.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

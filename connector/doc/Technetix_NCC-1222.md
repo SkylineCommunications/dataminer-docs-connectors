@@ -16,10 +16,10 @@ Only one element can poll a device at a time. Polling one device with multiple e
 
 ### Version Info
 
-| **Range**     | **Description** |
-|----------------------|-----------------|
-| 1.0.0.x \[Obsolete\] | Initial version |
-| 1.0.1.x \[SLC Main\] | New DVE names   |
+| Range              | Description     |
+|--------------------|-----------------|
+| 1.0.0.x [Obsolete] | Initial version |
+| 1.0.1.x [SLC Main] | New DVE names   |
 
 ### Product Info
 
@@ -30,8 +30,8 @@ Only one element can poll a device at a time. Polling one device with multiple e
 
 ### Exported Connectors
 
-| **Exported Connector**                                                                  | **Description**     |
-|----------------------------------------------------------------------------------------|---------------------|
+| Exported Connector                                                               | Description         |
+|----------------------------------------------------------------------------------|---------------------|
 | [Technetix NCC-1222 - NCI-521](xref:Connector_help_Technetix_NCC-1222_-_NCI-521) | NarrowCast Inserter |
 | [Technetix NCC-1222 - NCI-321](xref:Connector_help_Technetix_NCC-1222_-_NCI-321) | NarrowCast Inserter |
 

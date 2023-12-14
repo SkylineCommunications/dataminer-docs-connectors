@@ -12,16 +12,16 @@ This connector allows you to monitor and control a Newtec AZ210 1+1 modulator re
 
 | **Range**            | **Key Features**                                            | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------------------------|--------------|-------------------|
-| 1.1.10.x             | Config ID: M1114; Software ID: 6369; Software Version: 1.10 | \-           | \-                |
-| 1.1.11.x             | Config ID: M1114; Software ID: 6369; Software Version: 1.11 | \-           | \-                |
-| 1.1.3.x \[SLC Main\] | Config ID: M1114; Software ID: 6369; Software Version: 1.03 | \-           | \-                |
-| 2.1.11.x             | Config ID: N0047; Software ID: 6369; Software Version: 1.11 | \-           | \-                |
-| 2.1.3.x              | Config ID: N0047; Software ID: 6369; Software Version: 1.03 | \-           | \-                |
-| 3.1.14.x             | Config ID: M1125; Software ID: 6369; Software Version: 1.14 | \-           | \-                |
+| 1.1.10.x             | Config ID: M1114; Software ID: 6369; Software Version: 1.10 | -            | -                 |
+| 1.1.11.x             | Config ID: M1114; Software ID: 6369; Software Version: 1.11 | -            | -                 |
+| 1.1.3.x [SLC Main]   | Config ID: M1114; Software ID: 6369; Software Version: 1.03 | -            | -                 |
+| 2.1.11.x             | Config ID: N0047; Software ID: 6369; Software Version: 1.11 | -            | -                 |
+| 2.1.3.x              | Config ID: N0047; Software ID: 6369; Software Version: 1.03 | -            | -                 |
+| 3.1.14.x             | Config ID: M1125; Software ID: 6369; Software Version: 1.14 | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**       |
+| Range     | Supported Firmware           |
 |-----------|------------------------------|
 | 1.1.10.x  | M1114, Id 6369, version 1.10 |
 | 1.1.11.x  | M1114, Id 6369, version 1.11 |
@@ -34,12 +34,12 @@ This connector allows you to monitor and control a Newtec AZ210 1+1 modulator re
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.1.10.x  | No                  | Yes                     | \-                    | \-                      |
-| 1.1.11.x  | No                  | Yes                     | \-                    | \-                      |
-| 1.1.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.1.11.x  | No                  | Yes                     | \-                    | \-                      |
-| 2.1.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.1.14.x  | No                  | Yes                     | \-                    | \-                      |
+| 1.1.10.x  | No                  | Yes                     | -                     | -                       |
+| 1.1.11.x  | No                  | Yes                     | -                     | -                       |
+| 1.1.3.x   | No                  | Yes                     | -                     | -                       |
+| 2.1.11.x  | No                  | Yes                     | -                     | -                       |
+| 2.1.3.x   | No                  | Yes                     | -                     | -                       |
+| 3.1.14.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

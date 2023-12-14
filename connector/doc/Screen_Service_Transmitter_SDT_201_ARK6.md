@@ -32,14 +32,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host:** The polling IP of the device.
-- **Device address:** Not required.
+- **IP address/host**: The polling IP of the device.
+- **Device address**: Not required.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device, by default e.g. *public*.
-- **Set community string:** The community string used when setting values on the device, by default e.g. *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device, by default e.g. *public*.
+- **Set community string**: The community string used when setting values on the device, by default e.g. *private*.
 
 ## Usage
 

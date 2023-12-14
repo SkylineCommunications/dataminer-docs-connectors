@@ -48,7 +48,7 @@ This connector allows the user to monitor the parameters, status and alarms of t
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

@@ -143,7 +143,7 @@ The creation of DVEs can be enabled or disabled in the main element. Different p
 | **Range**      | **Device Firmware Version**           |
 |-----------------------|---------------------------------------|
 | 10.0.0.x              | Compatible with all iDirect versions. |
-| 10.0.1.x \[SLC Main\] | Compatible with all iDirect versions. |
+| 10.0.1.x [SLC Main]   | Compatible with all iDirect versions. |
 | 10.0.2.x              | Compatible with all iDirect versions. |
 | 10.0.3.x              | Compatible with all iDirect versions. |
 | 10.0.4.x              | Compatible with all iDirect versions. |

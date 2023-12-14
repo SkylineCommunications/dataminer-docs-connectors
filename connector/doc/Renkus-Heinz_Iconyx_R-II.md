@@ -10,9 +10,9 @@ With this connector you can monitor the **Renkus-Heinz Iconyx R-II** loudspeaker
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ With this connector you can monitor the **Renkus-Heinz Iconyx R-II** loudspeaker
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -41,7 +41,7 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default 161.
+- **Port number**: The port of the connected device, by default 161.
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 

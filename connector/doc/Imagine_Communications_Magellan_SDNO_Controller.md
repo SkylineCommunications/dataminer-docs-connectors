@@ -12,12 +12,12 @@ Imagine Communications' Software-Defined Networking (SDN) framework is a hybrid 
 
 | **Range**            | **Key Features**                       | **Based on** | **System Impact**                                                                                                                       |
 |----------------------|----------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                       | \-           | This implementation is considered obsolete. Please use Imagine Communications LRC instead.                                              |
-| 2.0.0.x \[SLC Main\] | Support for REST API and LRC protocol. | \-           | This implementation uses the REST API as the main source of information and uses LRC for information not yet available on the REST API. |
+| 1.0.0.x [Obsolete]     |Initial version.                       | -            | This implementation is considered obsolete. Please use Imagine Communications LRC instead.                                              |
+| 2.0.0.x [SLC Main]   | Support for REST API and LRC protocol. | -            | This implementation uses the REST API as the main source of information and uses LRC for information not yet available on the REST API. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                  |
+| Range     | Supported Firmware                                      |
 |-----------|---------------------------------------------------------|
 | 1.0.0.x   | 2.9.2.r1.588                                            |
 | 2.0.0.x   | REST API SDNO Controller 3.6 Logical Router Control 1.5 |
@@ -26,8 +26,8 @@ Imagine Communications' Software-Defined Networking (SDN) framework is a hybrid 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

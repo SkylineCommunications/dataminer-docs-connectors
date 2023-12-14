@@ -15,17 +15,17 @@ On the Task Manager page, a button allows you to normalize alarms in order to se
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
-| 1.0.0.x \[obsolete\] | Microsoft WMI interface implementation. | Yes | Yes |
+| 1.0.0.x [Obsolete] |Microsoft WMI interface implementation. | Yes | Yes |
 | 1.1.0.x | Microsoft WMI interface implementation. | Yes | No |
-| 1.1.1.x \[move to 1.1.2.x\] | Branched from 1.1.0.89: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
-| 1.1.2.x \[obsolete\] | Branched from 1.1.1.x: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
-| 1.1.3.x \[SLC Main - Virtual Machine Environment\] | Branched from 1.1.0.97: Contains partitionedTrending database option. Difference between 1.1.3.x and 1.1.0.x branch will not be noticeable with Cassandra general database, only with MySQL general database. Version 1.1.3.5 merged with 1.1.0.106. | Yes | Yes |
+| 1.1.1.x [move to 1.1.2.x] | Branched from 1.1.0.89: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
+| 1.1.2.x [Obsolete] |Branched from 1.1.1.x: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
+| 1.1.3.x [SLC Main - Virtual Machine Environment] | Branched from 1.1.0.97: Contains partitionedTrending database option. Difference between 1.1.3.x and 1.1.0.x branch will not be noticeable with Cassandra general database, only with MySQL general database. Version 1.1.3.5 merged with 1.1.0.106. | Yes | Yes |
 | 1.2.0.x | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | Yes | Yes |
 | 2.1.0.x | Branched from 1.1.0.41: Network Interface table adjustments. | Yes | Yes |
 | 3.0.0.x | Branched from 1.1.0.71: Implemented a workaround for a WMI bug in the network adapter table. | Yes | Yes |
 | 4.0.0.x | Branched from 1.1.0.78: Customer-specific branch including functionality to see if the element is running on the active DMA (Failover) with specific security configuration settings in the elements. | Yes | Yes |
 | 5.0.0.x | Branched from 1.1.1.5: Temporary branch to be used as workaround for a problem with retrieving the service table via WMI calls. | Yes | Yes |
-| 6.0.0.x \[SLC Main - Physical Hardware Environment\] | Branched from 1.1.2.31: Microsoft WMI interface + interface for DELL-, HP- and Supermicro-specific SNMP parameters. | Yes | Yes |
+| 6.0.0.x [SLC Main - Physical Hardware Environment] | Branched from 1.1.2.31: Microsoft WMI interface + interface for DELL-, HP- and Supermicro-specific SNMP parameters. | Yes | Yes |
 
 ## Configuration
 

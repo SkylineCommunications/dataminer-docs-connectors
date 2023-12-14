@@ -12,7 +12,7 @@ The TNS546 is part of the Nevion nSure product line, which provides 24/7 monitor
 
 | **Range**            | **Key Features**                     | **Based on** | **System Impact** |
 |----------------------|--------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Serial and SNMP connection for traps | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Serial and SNMP connection for traps | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The TNS546 is part of the Nevion nSure product line, which provides 24/7 monitor
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

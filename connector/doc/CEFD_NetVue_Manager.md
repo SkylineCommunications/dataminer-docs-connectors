@@ -14,13 +14,13 @@ With this connector, the user can manually create one or multiple service areas.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                  | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                                                      | Exported Components     |
 |-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | CEFD NetVue HUB Gateway<br>CEFD NetVue Remote Gateway<br>[CEFD HTO SNMP](xref:Connector_help_CEFD_HTO_SNMP) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | CEFD NetVue HUB Gateway<br>CEFD NetVue Remote Gateway<br>[CEFD HTO SNMP](xref:Connector_help_CEFD_HTO_SNMP) | -                       |
 
 ## Configuration
 

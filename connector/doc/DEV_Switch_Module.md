@@ -14,13 +14,13 @@ The connector displays this information on two pages, one for each port of the m
 
 | **Range**            | **Key Features**                        | **Based on** | **System Impact**          |
 |----------------------|-----------------------------------------|--------------|----------------------------|
-| 1.0.0.x              | Initial version.                        | \-           |                            |
-| 2.0.0.x              | DVEs added.                             | 1.0.0.2      | \-                         |
-| 3.0.0.x \[SLC Main\] | Support added for two ports per module. | 2.0.0.5      | Will delete existing DVEs. |
+| 1.0.0.x              | Initial version.                        | -            |                            |
+| 2.0.0.x              | DVEs added.                             | 1.0.0.2      | -                          |
+| 3.0.0.x [SLC Main]   | Support added for two ports per module. | 2.0.0.5      | Will delete existing DVEs. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                      |
+| Range     | Supported Firmware                                          |
 |-----------|-------------------------------------------------------------|
 | 1.0.0.x   | Unknown                                                     |
 | 2.0.0.x   | Unknown                                                     |

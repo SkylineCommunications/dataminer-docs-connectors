@@ -14,13 +14,13 @@ The connector polls all parameters once after startup. After this, parameter upd
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | V5.7.9                      |
+| 1.0.0.x [SLC Main]   | V5.7.9                      |
 
 ## Installation and configuration
 

@@ -18,11 +18,11 @@ The different parameters from the device are displayed on multiple pages grouped
 |----------------------|----------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                                                               | No                  | Yes                     |
 | 1.0.1.x              | New range that adds new HTTP connection and creation of DVEs. Supports node redundancy. Supports new firmware. | No                  | Yes                     |
-| 1.0.2.x \[SLC Main\] | DCF integration implemented.                                                                                   | Yes                 | Yes                     |
+| 1.0.2.x [SLC Main]   | DCF integration implemented.                                                                                   | Yes                 | Yes                     |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**             |
+| Range     | Supported Firmware                 |
 |-----------|------------------------------------|
 | 1.0.0.x   | 3.0.3.0.628                        |
 | 1.0.1.x   | 3.4.1.0.329 (backwards compatible) |

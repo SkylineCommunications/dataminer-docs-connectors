@@ -12,14 +12,14 @@ The Harmonic Spectrum X connector is used to configure and monitor Harmonic prod
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                         | **Based on** | **System Impact**                                                |
-|----------------------|--------------------------------------------------------------------------|--------------|------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                         | \-           | \-                                                               |
-| 1.0.1.x \[SLC Main\] | Serial connection changed to smart-serial connection to support tallies. | 1.0.0.1      | Existing elements must be reconfigured to adjust the connection. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | Serial connection changed to smart-serial connection to support tallies. | 1.0.0.1 | Existing elements must be reconfigured to adjust the connection. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**        |
+| Range     | Supported Firmware            |
 |-----------|-------------------------------|
 | 1.0.0.x   | 1.18 (Oxtel protocol version) |
 | 1.0.1.x   | 1.18 (Oxtel protocol version) |
@@ -28,8 +28,8 @@ The Harmonic Spectrum X connector is used to configure and monitor Harmonic prod
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

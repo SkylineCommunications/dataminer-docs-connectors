@@ -14,7 +14,7 @@ This is a generic **virtual connector** designed to display passive devices on r
 
 | **Range** | **Description**              | **DCF Integration** | **Cassandra Compliant** |
 |-----------|------------------------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version \[SLC Main\] | No                  | Yes                     |
+| 1.0.0.x   | Initial version [SLC Main]   | No                  | Yes                     |
 
 ## ConfigurationCreation
 

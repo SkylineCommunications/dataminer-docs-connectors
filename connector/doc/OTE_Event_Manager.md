@@ -12,15 +12,15 @@ Note that this connector is **designed to be used together with the SRM Booking 
 
 ### Version Info
 
-| **Range** | **Key Features**                                  | **Based on** | **System Impact** |
-|-----------|---------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | \- Event creation and monitoring. - SRM bookings. | \-           | \-                |
+| Range   | Key Features                                         | Based on | System Impact |
+|---------|------------------------------------------------------|----------|---------------|
+| 1.0.0.x | - Event creation and monitoring. <br>- SRM bookings. | -        | -             |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

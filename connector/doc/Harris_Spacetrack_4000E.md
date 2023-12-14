@@ -14,11 +14,11 @@ The **Harris Spacetrack 4000E** connector is intended to communicate with this d
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**            |
+| Range     | Device Firmware Version                |
 |------------------|----------------------------------------|
 | 1.0.0.x          | Harris CapRock One Aug 1 2015 20:06:24 |
 

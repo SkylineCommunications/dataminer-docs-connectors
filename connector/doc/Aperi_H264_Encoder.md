@@ -12,16 +12,16 @@ Using the **HTTP API**, this connector both collects information from the device
 
 ### Version Info
 
-| **Range**            | **Key Features**                                               | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                               | \-           | \-                |
-| 1.0.1.x              | Streamlined all Aperi connectors.                              | \-           | \-                |
-| 1.0.2.x              | Transport stream statistics cleaned up.                        | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Support added for new parameters. Obsolete parameters removed. | \-           | \-                |
+| Range              | Key Features                                                   | Based on | System Impact |
+|--------------------|----------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                               | -        | -             |
+| 1.0.1.x            | Streamlined all Aperi connectors.                              | -        | -             |
+| 1.0.2.x            | Transport stream statistics cleaned up.                        | -        | -             |
+| 1.1.0.x [SLC Main] | Support added for new parameters. Obsolete parameters removed. | -        | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                  |
+| Range     | Supported Firmware                                                      |
 |-----------|-------------------------------------------------------------------------|
 | 1.0.0.x   | 2.0.20                                                                  |
 | 1.0.1.x   | 2.0.20                                                                  |
@@ -32,10 +32,10 @@ Using the **HTTP API**, this connector both collects information from the device
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

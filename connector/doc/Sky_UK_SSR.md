@@ -10,9 +10,9 @@ This connector can be used to obtain a list of "services" (e.g. TV shows, movies
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                         | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version **NOTE**: From version 1.0.0.5 onwards, the minimum required DataMiner version is 9.0.2. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version <br>**NOTE**: From version 1.0.0.5 onwards, the minimum required DataMiner version is 9.0.2. | - | - |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector can be used to obtain a list of "services" (e.g. TV shows, movies
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

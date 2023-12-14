@@ -10,17 +10,17 @@ This connector can be used to monitor a WorldCast Systems APT AoIP device.
 
 ### Version Info
 
-| **Range**            | **Key Features**                    | **Based on** | **System Impact**                               |
-|----------------------|-------------------------------------|--------------|-------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                     | \-           | \-                                              |
-| 1.0.1.x \[SLC Main\] | Removed Unit Temperature parameter. | 1.0.0.2      | Unit Temperature parameter no longer available. |
+| Range              | Key Features                        | Based on | System Impact                                   |
+|--------------------|-------------------------------------|----------|-------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version                     | -        | -                                               |
+| 1.0.1.x [SLC Main] | Removed Unit Temperature parameter. | 1.0.0.2  | Unit Temperature parameter no longer available. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -20,7 +20,7 @@ This **HTTP** connector is used to monitor and configure the **Interra Orion OTT
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 1.6.2                       |
+| 1.0.0.x [SLC Main]   | 1.6.2                       |
 
 ## Installation and configuration
 

@@ -14,13 +14,13 @@ The information on the parameters is retrieved via **SNMP** communication.
 
 | **Range**            | **Key Features**               | **Based on** | **System Impact** |
 |----------------------|--------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.               | \-           | \-                |
+| 1.0.0.x              | Initial version.               | -            | -                 |
 | 1.0.1.x              | Correction to discrete values. | 1.0.0.5      | External sets.    |
-| 1.0.2.x \[SLC Main\] | Added DCF support.             | 1.0.1.3      | \-                |
+| 1.0.2.x [SLC Main]   | Added DCF support.             | 1.0.1.3      | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | 2.01 (NMI-LSI-Firmware) |
 | 1.0.1.x   | 2.01 (NMI-LSI-Firmware) |
@@ -30,9 +30,9 @@ The information on the parameters is retrieved via **SNMP** communication.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

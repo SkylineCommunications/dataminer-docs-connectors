@@ -14,8 +14,8 @@ This connector uses a serial connection to communicate with this satellite modem
 
 | **Range**            | **Key Features**    | **Based on** | **System Impact** |
 |----------------------|---------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version     | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | HTTP implementation | 1.0.0.1      | \-                |
+| 1.0.0.x              | Initial version     | -            | -                 |
+| 2.0.0.x [SLC Main]   | HTTP implementation | 1.0.0.1      | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This connector uses a serial connection to communicate with this satellite modem
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

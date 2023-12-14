@@ -20,7 +20,7 @@ This connector is used to manage RF Design FlexLink K3 family switches.
 
 | **Range**     | **Device Firmware Version** |
 |----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | Unknown                     |
+| 1.0.0.x [SLC Main]   | Unknown                     |
 
 ## Installation and configuration
 

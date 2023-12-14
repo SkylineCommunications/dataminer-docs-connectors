@@ -14,19 +14,19 @@ To detect a channel, the connector compares the channels listed in a CSV file an
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                              | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                  | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Telenor EPG Channel](xref:Connector_help_Telenor_EPG_Channel) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Telenor EPG Channel](xref:Connector_help_Telenor_EPG_Channel) | -                       |
 
 ## Configuration
 

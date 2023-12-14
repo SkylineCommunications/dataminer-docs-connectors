@@ -44,8 +44,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
-- **IP port:** The IP port of the device.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
 
 ### Configuration of the device
 

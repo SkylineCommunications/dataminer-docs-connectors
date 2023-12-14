@@ -12,10 +12,10 @@ This connector is used to monitor and control NCI-321/DM NarrowCast inserters. T
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x \[Obsolete\] | MIB version 1.6             |
-| 1.0.1.x \[SLC Main\] | MIB version 1.6             |
+| Range              | Device Firmware Version |
+|--------------------|-------------------------|
+| 1.0.0.x [Obsolete] | MIB version 1.6         |
+| 1.0.1.x [SLC Main] | MIB version 1.6         |
 
 ## Installation and configuration
 

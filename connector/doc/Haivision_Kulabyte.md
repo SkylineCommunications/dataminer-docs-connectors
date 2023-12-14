@@ -36,9 +36,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP or URL of the destination.
-- **IP port:** The IP port of the destination.
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy.*
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
 Note: The 1.1.0.x version must use the path *https://\[polling IP\]:1080* as the path and port. The "*https://*" part must be typed into the **IP address/host** field in the element creation wizard.
 

@@ -10,17 +10,17 @@ This connector is used to aggregate routing data from Arista Manager elements. T
 
 ### Version Info
 
-| **Range** | **Key Features**                   | **Based on** | **System Impact** |
-|-----------|------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.                   | \-           | \-                |
-| 1.0.1.x   | Changes to the Routing Info table. | \-           | \-                |
+| Range   | Key Features                       | Based on | System Impact |
+|---------|------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version.                   | -        | -             |
+| 1.0.1.x | Changes to the Routing Info table. | -        | -             |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                          | **Exported Components** |
-|-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- AristaRoutingManagerScript: Automation script used to retrieve information from Arista Manager elements. - Arista Manager protocol (2.0.7.x): Contains routing information for this connector. | \-                      |
-| 1.0.1.x   | No                  | Yes                     | Same as the previous range.                                                                                                                                                                    | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - AristaRoutingManagerScript: Automation script used to retrieve information from Arista Manager elements. <br>- Arista Manager protocol (2.0.7.x): Contains routing information for this connector. | - |
+| 1.0.1.x | No | Yes | Same as the previous range. | - |
 
 ## Configuration
 

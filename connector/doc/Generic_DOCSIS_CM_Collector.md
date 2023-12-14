@@ -12,18 +12,18 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 
 | **Range**            | **Key Features**                                             | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                             | \-           | \-                |
-| 2.0.0.x              | TDC custom version.                                          | \-           | \-                |
-| 3.0.0.x              | EPM I-DOCSIS Solution version.                               | \-           | \-                |
-| 3.0.1.x              | Adjustment to the PNM logic, Channel Contextuality.          | \-           | \-                |
-| 3.0.2.x              | CCAP logic decoupled.                                        | \-           | \-                |
-| 3.0.3.x              | CM QAM DS/US logic adjusted for better aggregation accuracy. | \-           | \-                |
-| 3.0.4.x              | Added minimum DMA version for NuGet Packages.                | \-           | \-                |
-| 3.0.5.x              | Modifications to improve performance.                        | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version.                                             | -            | -                 |
+| 2.0.0.x              | TDC custom version.                                          | -            | -                 |
+| 3.0.0.x              | EPM I-DOCSIS Solution version.                               | -            | -                 |
+| 3.0.1.x              | Adjustment to the PNM logic, Channel Contextuality.          | -            | -                 |
+| 3.0.2.x              | CCAP logic decoupled.                                        | -            | -                 |
+| 3.0.3.x              | CM QAM DS/US logic adjusted for better aggregation accuracy. | -            | -                 |
+| 3.0.4.x              | Added minimum DMA version for NuGet Packages.                | -            | -                 |
+| 3.0.5.x              | Modifications to improve performance.                        | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**             |
+| Range     | Supported Firmware                 |
 |-----------|------------------------------------|
 | 1.0.0.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 | 2.0.0.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
@@ -38,14 +38,14 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.5.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

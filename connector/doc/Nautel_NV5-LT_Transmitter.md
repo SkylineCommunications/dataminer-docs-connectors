@@ -14,7 +14,7 @@ With this connector, the FM transmitter device can be monitored via **SNMP** com
 
 | **Range**     | **Description** |
 |----------------------|-----------------|
-| 1.0.0.x \[SLC Main\] | Initial version |
+| 1.0.0.x [SLC Main]   | Initial version |
 
 ### Product Info
 

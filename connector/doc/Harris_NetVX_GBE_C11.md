@@ -15,10 +15,10 @@ The **Harris NetVX GBE C11** is an overview of.
 The **Harris NetVX GBE C11** connector has an **SNMP** Connection:
 
 - **Port:** 161
-- **Bus Address:** The slot number of the **IP Streamer.**
+- **Bus address**: The slot number of the **IP Streamer.**
 - **IP Address:** The IP of the Device
-- **Get community string:** public
-- **Set community string:** private
+- **Get community string**: public
+- **Set community string**: private
 
 ## Usage
 

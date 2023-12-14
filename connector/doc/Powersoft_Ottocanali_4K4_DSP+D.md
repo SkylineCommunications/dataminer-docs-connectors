@@ -14,7 +14,7 @@ Protocol to monitor **Ottocanali 4K4** 8-channel power amplifiers, that uses a *
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | Yes                     |
 
 ### Product Info
 

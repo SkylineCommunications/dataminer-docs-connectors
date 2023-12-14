@@ -12,22 +12,22 @@ With the EC3 Networks - DDS connector, you can monitor the DDS status and visual
 
 | **Range**            | **Key Features**                                                        | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version. Includes proxy info, plugin info, and DDS status info. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | REST API implementation                                                 | 1.0.0.x      | New connection.   |
+| 1.0.0.x              | Initial version. Includes proxy info, plugin info, and DDS status info. | -            | -                 |
+| 1.0.1.x [SLC Main]   | REST API implementation                                                 | 1.0.0.x      | New connection.   |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

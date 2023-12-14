@@ -8,10 +8,10 @@ With this connector, you can monitor **Sumavision Enhanced Multimedia Router** d
 
 ## About
 
-| **Range** | **Key Features**  | **Based on** | **System Impact** |
-|-----------|-------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version   | \-           | \-                |
-| 1.1.0.x   | Reviewed version. | 1.0.0.5      |                   |
+| Range   | Key Features      | Based on | System Impact |
+|---------|-------------------|----------|---------------|
+| 1.0.0.x | Initial version   | -        | -             |
+| 1.1.0.x | Reviewed version. | 1.0.0.5  |               |
 
 ### Product Info
 
@@ -22,10 +22,10 @@ With this connector, you can monitor **Sumavision Enhanced Multimedia Router** d
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-|-----------|---------------------|-------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| 1.1.0.x   | No                  | Yes                     | \-                    | [Sumavision EMR - Sumavision C562](xref:Connector_help_Sumavision_EMR_-_Sumavision_C562) [Sumavision EMR - Sumavision C355](xref:Connector_help_Sumavision_EMR_-_Sumavision_C355) [Sumavision EMR - Sumavision C544](xref:Connector_help_Sumavision_EMR_-_Sumavision_C544) [Sumavision EMR - Sumavision C545](xref:Connector_help_Sumavision_EMR_-_Sumavision_C545) [Sumavision EMR - Sumavision C451E](xref:Connector_help_Sumavision_EMR_-_Sumavision_C451E) [Sumavision EMR - Sumavision C150A](xref:Connector_help_Sumavision_EMR_-_Sumavision_C150A) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.1.0.x | No | Yes | - | [Sumavision EMR - Sumavision C562](xref:Connector_help_Sumavision_EMR_-_Sumavision_C562) <br>[Sumavision EMR - Sumavision C355](xref:Connector_help_Sumavision_EMR_-_Sumavision_C355) <br>[Sumavision EMR - Sumavision C544](xref:Connector_help_Sumavision_EMR_-_Sumavision_C544) <br>[Sumavision EMR - Sumavision C545](xref:Connector_help_Sumavision_EMR_-_Sumavision_C545) <br>[Sumavision EMR - Sumavision C451E](xref:Connector_help_Sumavision_EMR_-_Sumavision_C451E) <br>[Sumavision EMR - Sumavision C150A](xref:Connector_help_Sumavision_EMR_-_Sumavision_C150A) |
 
 ## Configuration
 

@@ -14,8 +14,8 @@ This connector allows you to monitor and configure several aspects of the device
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | New firmware     | \-           | \-                |
+| 1.0.0.x              | Initial version  | -            | -                 |
+| 1.1.0.x [SLC Main]   | New firmware     | -            | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This connector allows you to monitor and configure several aspects of the device
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

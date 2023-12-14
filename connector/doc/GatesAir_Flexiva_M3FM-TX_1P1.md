@@ -14,19 +14,19 @@ This connector is used to monitor the GatesAir Flexiva M3FM-TX 1P1. It uses **SN
 
 | **Range**            | **Key Features**                           | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------|--------------|-------------------|
-| 1.0.1.x \[SLC Main\] | Polling on group changed from hour to min. | 1.0.1.3      | \-                |
+| 1.0.1.x [SLC Main]   | Polling on group changed from hour to min. | 1.0.1.3      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.1.x   | \-                     |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
