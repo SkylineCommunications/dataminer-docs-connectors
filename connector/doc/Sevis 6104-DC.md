@@ -20,7 +20,7 @@ This connector retrieves information from the device via SNMP. It displays basic
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | -                      |
+| 1.0.0.x   | 2.6.2-S08              |
 
 ### System Info
 
