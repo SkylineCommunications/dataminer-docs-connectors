@@ -44,4 +44,4 @@ SERIAL CONNECTION:
 
 ## How to use
 
-On the **General** data page, you can find the status of the first four ports with each 8 interfaces and some generic alarm flags.
+On the **General** data page, you can find the status of the first four ports with each of the 8 interfaces and several alarm flags.
