@@ -15,7 +15,9 @@ The MediaKind RX1 connector focuses on monitoring the configuration found in the
 | **Range**            | **Key Features**                                          | **Based on** | **System Impact**                                                       |
 |----------------------|-----------------------------------------------------------|--------------|-------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version (monitoring of configuration parameters). | -            | -                                                                       |
-| 1.0.1.x [SLC Main]   | Configurable display key on Active Alarms.                | 1.0.0.3      | May affect visual overviews, Automation scripts, trending, alarms, etc. |
+| 1.0.1.x   | Configurable display key on Active Alarms.                | 1.0.0.3      | May affect visual overviews, Automation scripts, trending, alarms, etc. |
+| 1.0.1.x [SLC Main]   | Update Decryption Table display key.<br>SDI Outputs table columns writable.<br>Video and Audio status columns.<br>Decoding service selection.               | 1.0.1.8      | May affect visual overviews, Automation scripts, alarms, etc. |
+
 
 ### Product Info
 
@@ -23,6 +25,7 @@ The MediaKind RX1 connector focuses on monitoring the configuration found in the
 |-----------|------------------------|
 | 1.0.0.x   | 11.0.4.0               |
 | 1.0.1.x   | 11.0.4.0               |
+| 1.0.2.x   | 11.0.4.0               |
 
 ### System Info
 
@@ -30,6 +33,7 @@ The MediaKind RX1 connector focuses on monitoring the configuration found in the
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
