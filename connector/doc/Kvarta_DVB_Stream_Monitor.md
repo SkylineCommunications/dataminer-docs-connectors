@@ -13,8 +13,9 @@ The DVB Stream Monitor is a solution for DVB-C and/or IPTV monitoring for unicas
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x | Initial version | - | - |
-| 1.1.0.x [Obsolete] | New firmware version with different enterprise OID. Some parameters were no longer available on the new MIB | 1.0.0.2 |  |
-| 1.1.1.x [SLC Main] | Removed EPG table and refresh mechanism. Improved buffering system. | 1.0.1.1 |  |
+| 1.1.0.x [Obsolete] | New firmware version with different enterprise OID. Some parameters were no longer available on the new MIB. | 1.0.0.2 |  |
+| 1.1.1.x | Removed EPG table and refresh mechanism. Improved buffering system. | 1.0.1.1 |  |
+| 1.1.2.x [SLC Main] | Introduced partial table option in the following tables: Service, PMT, SDT, NIT, AIT, Cable Delivery | 1.1.1.4 |  |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ The DVB Stream Monitor is a solution for DVB-C and/or IPTV monitoring for unicas
 | 1.0.0.x   | 1.65A                  |
 | 1.1.0.x   | 1.93A                  |
 | 1.1.1.x   | 1.93A                  |
+| 1.1.2.x   | 1.93A                  |
 
 ### System Info
 
@@ -56,7 +58,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element has the following data pages:
 
-- **General**: This page displays general information about the card: **Device Name**, **Device Model**, **Firmware Version**, **Device ID**, etc.
+- **General**: This page displays general information about the card: **Device Name**, **Device Model**, **Firmware Version**, **Device ID**, **Display Mode** (from version 1.1.2.3 onwards), etc.
 - **Authentication**: This page allows the user to input the **Username** and **Password** to authenticate into the device.
 - **IPTV**
 - **DVB-C:** This page contains a subpage with the **Tuner Settings**.
@@ -66,7 +68,7 @@ The element has the following data pages:
 - **PAT**
 - **PMT**
 - **SDT**
-- **EPG (**Removed on 1.1.1.x)
+- **EPG**(removed in range 1.1.1.x)
 - **NIT**
 - **EIT**
 - **CAT**
@@ -75,7 +77,7 @@ The element has the following data pages:
 - **TR 101 209**
 - **Service Statistics**
 - **Alarms Status**
-- **Alarms Configuration:** This page contains the following subpages**: RF Alarms**, **HLS Alarms** and **TR 101 290 Alarms**.
+- **Alarms Configuration**: This page contains the following subpages: **RF Alarms**, **HLS Alarms**, and **TR 101 290 Alarms**.
 - **Program Alarms**
 - **Logged Alarms**
 - **Configurations**
@@ -89,4 +91,8 @@ The element has the following data pages:
 - **Rx**
 - **Tx**
 
+### Display Modes
 
+- **Basic**: Only SNMP tables will be filled in.
+- **Intermediate**: Only SNMP tables and the Services, PAT, and NITTS Level tables will be filled in.
+- **Advanced**: All tables will be filled in.
