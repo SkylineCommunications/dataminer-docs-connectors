@@ -10,23 +10,24 @@ It allows you to monitor the services, sources, and destinations, as well as log
 
 A Visio file is provided with the connector to group data and allow easy navigation.
 
-## Important
-If you do not have RF cards, please disable these routes in API Endpoint Status
-- /vos-api/platform-config/v1/systemInfo
-- /vos-api/platform-config/v1/networks
-- /vos-api/platform-config/v1/rfMonitorings
-- /vos-api/platform-config/v1/rfStatistics
-- /vos-api/platform-config/v1/rfSettings
+> [!IMPORTANT]
+> If you do not have RF cards, please disable these routes on the API Endpoint Status page of the element:
+>
+> - /vos-api/platform-config/v1/systemInfo
+> - /vos-api/platform-config/v1/networks
+> - /vos-api/platform-config/v1/rfMonitorings
+> - /vos-api/platform-config/v1/rfStatistics
+> - /vos-api/platform-config/v1/rfSettings
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version. Most parameters are read-only, but you can configure the Service Control State. A Visio drawing is available. | No                  | Yes                     |
-| 1.1.0.x              | OAUTH2 authentication.                                                                                                         | No                  | Yes                     |
-| 1.1.1.x [SLC Main]   | Added new connection to improve polling rate.                                                                                  | No                  | Yes                     |
+| Range              | Description                                                                                                                    | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version. Most parameters are read-only, but you can configure the Service Control State. A Visio drawing is available. | No              | Yes                 |
+| 1.1.0.x            | OAUTH2 authentication.                                                                                                         | No              | Yes                 |
+| 1.1.1.x [SLC Main] | Added new connection to improve polling rate.                                                                                  | No              | Yes                 |
 
 ### Product Info
 
@@ -84,19 +85,19 @@ Via the **Add Destination** page button, you can access a subpage where you can 
 
 ### Profiles
 
-This page contains multiple tables with all **Multiscreen**, **IPTV** and **Destination** **Profiles**. However, we recommend using the Visio drawing instead of the element data on this page.
+This page contains multiple tables with all **Multiscreen**, **IPTV** and **Destination Profiles**. However, we recommend using the Visio drawing instead of the element data on this page.
 
-There is a **Multiscreen Video Profiles** **Table** linked to the **Multiscreen Profiles** and also an **Audio Profiles** table linked to both **Multiscreen** and **IPTV Profiles**.
+There is a **Multiscreen Video Profiles Table** linked to the **Multiscreen Profiles** and also an **Audio Profiles** table linked to both **Multiscreen** and **IPTV Profiles**.
 
 ### Cloud Links
 
-This page displays the **Cloud Link** **Table**. Each row in the table represents a cloud link, with the following information: **IP Address**, **Rank**, **Version**, **Uplink State**, etc.
+This page displays the **Cloud Link Table**. Each row in the table represents a cloud link, with the following information: **IP Address**, **Rank**, **Version**, **Uplink State**, etc.
 
 ### Nodes
 
 This page displays the Nodes table, which shows the **virtual PODs** from the **Kubernetes** table. Each row in the table represents a transcoding stream related to Harmonic VOS, with the **Host Name** (instance of the virtual POD) and the **CPU** and **Memory** usage.
 
-This page also displays a tree control that represents the relation between the data displayed in the connector and the **Kubernetes** **- Services** page of the device web interface. At the top level, the tree control displays the list of PODs. On the second level, for each virtual POD, the list of its services is displayed.
+This page also displays a tree control that represents the relation between the data displayed in the connector and the **Kubernetes - Services** page of the device web interface. At the top level, the tree control displays the list of PODs. On the second level, for each virtual POD, the list of its services is displayed.
 
 The number of virtual PODs could be the same as the number of services. You can find the number of nodes on the **Origin Engine** page.
 
@@ -129,7 +130,9 @@ This page contains connection parameters related to the configuration of this co
 
 ### API Endpoint Status
 
-This page contains the API endpoint statuses, providing details on the number of times it has been executed, and the number of times it has errors. It also allows to disable and enable polling of the API paths.
+This page contains API endpoint status information, including the number of times it has been executed, and the number of times it had errors.
+
+You can also disable or enable polling of the API paths here.
 
 ## Notes
 
