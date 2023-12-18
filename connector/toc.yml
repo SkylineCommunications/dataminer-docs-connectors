@@ -7965,6 +7965,11 @@
     topicUid: Connector_help_SES_S.A._TEMOS
   - name: SES S.A. TEMOS Probe
     topicUid: Connector_help_SES_S.A._TEMOS_Probe
+- name: Sevis
+  topicUid: Connector_help_Sevis_6104-DC
+  items:
+  - name: Sevis 6104-DC
+    topicUid: Connector_help_Sevis_6104-DC
 - name: Shelly
   topicUid: Connector_help_Shelly_Bulb_RGBW
   items:
