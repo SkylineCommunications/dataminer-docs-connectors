@@ -2795,6 +2795,8 @@
     topicUid: Connector_help_Double_D_Electronics_DDA70-80
   - name: Double D Electronics DDA70-87
     topicUid: Connector_help_Double_D_Electronics_DDA70-87
+  - name: Double D Electronics DDA75
+    topicUid : Connector_help_Double_D_Electronics_DDA75
   - name: Double D Electronics DDA89-02
     topicUid: Connector_help_Double_D_Electronics_DDA89-02
   - name: Double D Electronics DDA89-12
@@ -6767,7 +6769,7 @@
   - name: ONATi Keysight 87106B SP6T
     topicUid: Connector_help_ONATi_Keysight_87106B_SP6T
   - name: ONATi Splunk Monitoring
-  topicUid: Connector_help_ONATi_Splunk_Monitoring
+    topicUid: Connector_help_ONATi_Splunk_Monitoring
 - name: OneWeb
   topicUid: Connector_help_OneWeb_Antenna_Controller
   items:
@@ -9299,6 +9301,8 @@
     topicUid: Connector_help_Teleste_HDO907
   - name: Teleste HDO908
     topicUid: Connector_help_Teleste_HDO908
+  - name: Teleste HDP230
+    topicUid: Connector_help_Teleste_HDP230
   - name: Teleste HDP301 TSEMP DVX
     topicUid: Connector_help_Teleste_HDP301_TSEMP_DVX
   - name: Teleste Luminato
