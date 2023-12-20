@@ -8,18 +8,18 @@ The Vibe CP6000 is a contribution platform that enables users to transport up to
 
 ## About
 
-This connector is designed to monitor the state of the audio and video for the **CP6000** **Decoder** **module**. It also monitors the values of the different parameters present in the input(s) and output(s) for the decoder, and allows the user to manage transport for the decoder module. The different parameters of the device are displayed on multiple pages grouped by function.
+This connector is designed to monitor the state of the audio and video for the **CP6000 Decoder module**. It also monitors the values of the different parameters present in the input(s) and output(s) for the decoder, and allows the user to manage transport for the decoder module. The different parameters of the device are displayed on multiple pages grouped by function.
 
 This connector is generated automatically by the connector **Thomson Video Networks Vibe CP6000**.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                            | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                                                                                                           | No                  | No                      |
-| 1.0.1.x          | New feature - translated table for multicast IP address and port + fixed problem with Alarm Table.                         | Yes                 | Yes                     |
-| 1.0.2.x          | \- Changed layout. - Fixed linking between tables. - Alarm monitoring on PID bitrates returns a user-friendly description. | Yes                 | Yes                     |
-| 1.0.3.x          | Table display keys changed to avoid duplicate naming.                                                                      | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | No |
+| 1.0.1.x | New feature - translated table for multicast IP address and port + fixed problem with Alarm Table. | Yes | Yes |
+| 1.0.2.x | - Changed layout. <br>- Fixed linking between tables. <br>- Alarm monitoring on PID bit rates returns a user-friendly description. | Yes | Yes |
+| 1.0.3.x | Table display keys changed to avoid duplicate naming. | Yes | Yes |
 
 ### Product Info
 
@@ -27,9 +27,7 @@ This connector is generated automatically by the connector **Thomson Video Netwo
 |------------------|-----------------------------|
 | 1.0.1.x          | CP6000 04.20.02             |
 
-## Installation and configuration
-
-### Creation
+## Configuration
 
 This connector is used by DVEs that are **automatically created** by the parent element. No user input is required.
 
@@ -37,16 +35,16 @@ This connector is used by DVEs that are **automatically created** by the parent 
 
 ### Decoding
 
-On this page, you can configure the parameters for the **Video** and **Audio** **Decoding**.
+On this page, you can configure the parameters for the **Video** and **Audio Decoding**.
 
 ### Service Config & Demultiplex
 
-This page contains the **Input Service**, **Output** and **Ancillaries Vbi** tables for the decoder module.
+This page contains the **Input Service**, **Output**, and **Ancillaries Vbi** tables for the decoder module.
 
 ### Transport Management
 
-This page contains the **Transport** and **Transport IP Rx** **Table** for the decoder module.
+This page contains the **Transport** and **Transport IP Rx Table** for the decoder module.
 
 ### Redundancy
 
-This page displays the **Redundancy** **Table**.
+This page displays the **Redundancy Table**.
