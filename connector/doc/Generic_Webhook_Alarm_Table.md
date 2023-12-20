@@ -10,9 +10,9 @@ This connector shows received JSON objects in an Alarm Table. You can change the
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                                                                   | **Based on** | **System Impact** |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.1   | \- Inserting and modifying source URL. - Enabling/disabling automatic removal of rows in table. - Configuring rules for automatic removal of rows. | -            | -                 |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.1 | - Inserting and modifying source URL. <br>- Enabling/disabling automatic removal of rows in table. <br>- Configuring rules for automatic removal of rows. | - | - |
 
 ### System Info
 
@@ -46,6 +46,7 @@ Alarm properties that are supported by this connector are **alarm_id**, **severi
 
 This is an example JSON message:
 
+```json
 {
 "alarm_id": "alarm_id_error_1345",
 "severity": "critical",
@@ -70,3 +71,4 @@ This is an example JSON message:
 "Property15": "",
 }
 }
+```

@@ -14,13 +14,13 @@ This connector is intended to get and set information in the device via an Eleme
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                                    | **Based on** | **System Impact**                                 |
-|-----------|---------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x   | Initial version                                                                                                     | -            | -                                                 |
-| 2.0.0.x   | -                                                                                                                   | -            | -                                                 |
-| 3.0.0.x   | -                                                                                                                   | -            | -                                                 |
-| 3.0.1.x   | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 3.0.0.16     | **Old trend data will be lost for these tables.** |
-| 4.0.0.x   | -                                                                                                                   | -            | -                                                 |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 2.0.0.x | - | - | - |
+| 3.0.0.x | - | - | - |
+| 3.0.1.x | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 3.0.0.16 | **Old trend data will be lost for these tables.** |
+| 4.0.0.x | - | - | - |
 
 ## Installation and configuration
 
@@ -37,64 +37,64 @@ This connector is intended to get and set information in the device via an Eleme
 
 ### General
 
-In this page is given information about the **System** and the **Device's** **Overall Status**.
+This page contains information about the system and about the overall status of the device.
 
 ### Admin-Firmware
 
-**Base Modem** and **Packet Processor Firmware** versions can be set under this page.
+On this page, you can set the **Base Modem** and **Packet Processor Firmware** versions.
 
 ### Admin - FAST
 
-Under this page is given information about **Equipment ID** and installed **Hardware**.
+This page provides information about the **Equipment ID** and the installed **Hardware**.
 
 ### Config - Modem
 
-Under this page, Modem's **Transmit** and **Receive** parameters can be set. There's also available for configuration the **ACM** and **CnC** parameters under the page buttons.
+On this page, you can set the modem's **Transmit** and **Receive** parameters. Via page buttons, you can also access the configuration for the **ACM** and **CnC** parameters.
 
 ### Config - LAN - IP
 
-**Network Configuration**, **Per Port Configuration,** **VLAN Mode** and related parameters can be set here.
+**Network Configuration**, **Per Port Configuration**, **VLAN Mode** and related parameters can be set here.
 
 ### Config - Overhead
 
-Access this page to configure **ESC**, **AUPC** and **EDMAC**. Also **CnC-APC** and **IDR Backward Alarms** can be set under the page buttons.
+Access this page to configure **ESC**, **AUPC** and **EDMAC**. Via the page buttons, you can set **CnC-APC** and **IDR Backward Alarms**.
 
 ### Config - Utilities
 
-Parameters related to **Redundancy**, **Buffer**, **Unit**, **Clocks**, **Circuit ID**, **Date&Time**, **BERT Config**, **Warm-Up** and **Save/Load** **Configuration** can be found here.
+Parameters related to **Redundancy**, **Buffer**, **Unit**, **Clocks**, **Circuit ID**, **Date & Time**, **BERT Config**, **Warm-Up**, and **Save/Load Configuration** can be found here.
 
 ### Config - Drop and Insert
 
-**Drop and Insert** and **Quad Drop and Insert** configurations are made in this page.
+On this page, you can configure **Drop and Insert** and **Quad Drop and Insert** settings.
 
 ### Config - BUC / LNB
 
-**BUC** and **LNB** **Configuration** and also its **Status** are set in this page.
+On this page you can set the **BUC** and **LNB Configuration** and also its **Status**.
 
 ### Config - PTP
 
-Under this page the **PTP** **Feature** is set.
+The PTP feature can be configured on this page.
 
 ### Status - Modem Status
 
-To get the status of the modem's functionalities. Those can be the **Alarms**, **Rx Parameters**, **CnC**, **General Status**, **AUPC**, **WAN Statistics**, **ACM Status** and **Fractional CnC** **Counters**.
+Here you can get the status of the modem's functionalities. Those can be the **Alarms**, **Rx Parameters**, **CnC**, **General Status**, **AUPC**, **WAN Statistics**, **ACM Status**, and **Fractional CnC Counters**.
 
 ### Status - Modem Logs
 
-To get information about latest **Events** and device **Statistics** use this page. This can be *enabled* or *disabled* through the buttons. Initialize Pointer is used to load again the entries that are on the device's memory when polling is *disabled*. To mask alarms use the **Alarm Masking** page button.
+To get information about latest **Events** and device **Statistics**, use this page. This can be *enabled* or *disabled* through the buttons. **Initialize Pointer** is used to load from the device's memory again when polling is disabled. To mask alarms, use the **Alarm Masking** page button.
 
 ### ODU / Redundancy
 
-**Outdoor Unit** and **Redundacy** related configurations can be done in this page.
+On this page you can configure settings related to the **Outdoor Unit** and **Redundancy**.
 
 ### FSK
 
-In this page is possible to set the FSK functionality. This functionality will generate a virtual element that contains all BUC/LNB parameters. A unique FSK Element Name can be set for the virtual element.
+on this page you can set the FSK functionality. This functionality will generate a virtual element that contains all BUC/LNB parameters. A unique FSK Element Name can be set for the virtual element.
 
 ### Save / Load Configuration
 
-In this page is possible to **Save** to a csv file all parameters values. After, is also possible to **Load** that same file. It will set the parameters with the values that were saved.
+On this page you can save all parameter values to a CSV file. You can also load such a CSV file to set the parameters to the saved values.
 
-- The file will be stored by default on this folder: *C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\\PROTOCOLNAME\]*
+- By default, the file is stored in this folder: *C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\\PROTOCOLNAME\]*
 
-- The file will be named by default: *backup_ELEMENTNAME_datetime*
+- By default, the file is name *backup_ELEMENTNAME_datetime*
