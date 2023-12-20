@@ -10,10 +10,10 @@ This connector is used to monitor and configure Aperi's APP-S22-12567 (SDI) modu
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                 | **Based on** | **System Impact**                                                                                                                                                     |
-|----------------------|------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version                                                  | -            | -                                                                                                                                                                     |
-| 1.0.0.x [SLC Main]   | Changed parameter descriptions of parameters with 2010 and 2013. | 1.0.0.2      | All statistical data will be lost for parameters 2010 and 2013 when upgrading from the previous version. Visio drawings for the 1.0.0.x branch might be incompatible. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.0.x [SLC Main] | Changed parameter descriptions of parameters with 2010 and 2013. | 1.0.0.2 | All statistical data will be lost for parameters 2010 and 2013 when you upgrade from the previous version. Visio drawings for the 1.0.0.x branch might be incompatible. |
 
 ### Product Info
 
@@ -38,12 +38,12 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. (default: *443*)
+- **IP port**: The IP port of the destination (default: *443*).
 - **Bus address**: The app slot number
 
 ### Initialization
 
-After element creation, it is required to specify a valid **Username** and **Password** to start polling data from the device.
+After element creation, you need to specify a valid **Username** and **Password** to start polling data from the device.
 
 ### Web Interface
 
@@ -77,7 +77,7 @@ A page button provides access to the **Alarm Configuration** subpage, where the 
 
 ### Ports
 
-This page contains the network information separated in two tables **BP Ports** and **SFP Ports** which diplays info for the hardware ports/interfaces of the device, separated into receivers and senders. Typically, the device contains four ports: two on the front plane and two on the back plane. However, there is hardware support for two extra back plane ports. The information available on this page is all network related. It includes **Packet** information, **Bit Rates** and **Bytes**.
+This page contains the network information separated in two tables **BP Ports** and **SFP Ports** which displays info for the hardware ports/interfaces of the device, separated into receivers and senders. Typically, the device contains four ports: two on the front plane and two on the back plane. However, there is hardware support for two extra back plane ports. The information available on this page is all network related. It includes **Packet** information, **Bit Rates** and **Bytes**.
 
 ### Interfaces
 
@@ -98,5 +98,3 @@ This page displays the **Packet Data Variation** statistics for both **Senders**
 ### FEC
 
 This page displays the **Forward Error Correction** statistics for both **Senders** and **Receivers**, including the **FEC mode** and the **dropped** and **recovered** packets.
-
-
