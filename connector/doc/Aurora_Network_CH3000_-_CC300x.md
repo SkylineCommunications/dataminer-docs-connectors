@@ -14,11 +14,11 @@ CC300x is a communication controller module.
 |------------------|-----------------------------|
 | 1.0.0.x          | Unknown                     |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### SNMP Main Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -30,25 +30,15 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device.
-- **Get community string**: The community string used when reading values from the device. (default: public)
-- **Set community string**: The community string used when setting values on the device. (default: private)
+- **Get community string**: The community string used when reading values from the device (default: public).
+- **Set community string**: The community string used when setting values on the device (default: private).
 
-## Usage
+## How to Use
 
-### General
+The **General** page contains general info and settings.
 
-Contains general info and settings.
+The **Alarms** page contains alarm info and settings.
 
-### Alarms
+On the **Alarms Configuration** page, you can configure parameters to determine alarm conditions.
 
-Contains alarm info and settings.
-
-### Alarms Configuration
-
-Contains configuration parameters used to determine alarming conditions.
-
-### States
-
-Provides status information about the comuntication controller module.
-
-
+The **States** page provides status information about the communication controller module.
