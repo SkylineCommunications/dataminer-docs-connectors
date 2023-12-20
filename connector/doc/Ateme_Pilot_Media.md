@@ -65,22 +65,112 @@ In the Documents folder for the connector, there is a namespace implementing the
 
 The following actions are possible:
 
-| **Action**                                                              | **Example request**                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|-------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Create assets                                                           | { "**Action**": "Create", "**Object**": "Asset", "**Guid**": "Random guid", "**Data**": { "**Name**": "string" } }                                                                                                                                                                                                                                                                                                                                   |
-| Delete assets                                                           | { "**Action**": "Delete", "**Object**": "Asset", "**Guid**": "Random guid", "**Data**": { "**Id**": "int" } }                                                                                                                                                                                                                                                                                                                                        |
-| Create recordings                                                       | { "**Action**": "Create", "**Object**": "Recording", "**Guid**": "Random guid", "**Data**": { "**Title**": "string", "**AssetId**": "int", "**Channel**": "int", "**Description**": "string", "**StartTime**": "Datetime (as oadate)", "**StopTime**": "Datetime (as oadate)", "**fields**": { "**Field_Name**": "Field_value" } } }                                                                                                                 |
-| Delete recordings                                                       | { "**Action**": "Delete", "**Object**": "Recording", "**Guid**": "Random guid", "**Data**": { "**Id**": "int" } }                                                                                                                                                                                                                                                                                                                                    |
-| Set and activate metadata settings for an asset.                        | { "**Action**": "Create", "**Object**": "Metadata", "**Guid**": "Random guid", "**Data**": { "**AssetId**": "int", "**Merge**": boolean, "**Values**": { "**metadata_field**": "field_value" } } }                                                                                                                                                                                                                                                   |
-| Update recordings (data fields can be dropped if no update is required) | { "**Action**": "Update", "**Object**": "Recording", "**Guid**": "Random guid", "**Data**": { "**Id**": The recordings ID (Required, as string), "**Title**": "string", "**AssetId**": "int", "**Channel**": "int", "**Description**": "string", "**scheduledStartTime**": "Datetime (as oadate)", "**scheduledStopTime**": "Datetime (as oadate)", "**actualStartTime**": "Datetime (as oadate)", "**actualStopTime**": "Datetime (as oadate)", } } |
+- Create assets
 
+  ```json
+  {
+     "Action": "Create",
+     "Object": "Asset",
+     "Guid": "Random guid",
+     "Data": { 
+        "Name": "string" 
+        } 
+  }
+  ```
+
+- Delete assets
+
+  ```json
+  { 
+     "Action": "Delete",
+     "Object": "Asset",
+     "Guid": "Random guid",
+     "Data": {
+        "Id": "int"
+        } 
+   }
+  ```
+
+- Create recordings
+
+  ```json
+  { 
+     "Action": "Create",
+     "Object": "Recording",
+     "Guid": "Random guid",
+     "Data": {
+        "Title": "string",
+        "AssetId": "int",
+        "Channel": "int",
+        "Description": "string",
+        "StartTime": "Datetime (as oadate)",
+        "StopTime": "Datetime (as oadate)",
+        "fields": { 
+            "Field_Name": "Field_value"
+             } 
+        } 
+  }
+  ```
+
+- Delete recordings
+
+  ```json
+  {
+    "Action": "Delete",
+    "Object": "Recording",
+    "Guid": "Random guid",
+    "Data": {
+        "Id": "int"
+        }
+  }
+  ```
+
+- Set and activate metadata settings for an asset.
+
+  ```json
+  {
+    "Action": "Create",
+    "Object": "Metadata",
+    "Guid": "Random guid",
+    "Data": {
+        "AssetId": "int",
+        "Merge": boolean,
+        "Values": {
+            "metadata_field": "field_value"
+            }
+        }
+  }
+  ```
+
+- Update recordings (data fields can be dropped if no update is required)
+
+  ```json
+  {
+    "Action": "Update",
+    "Object": "Recording",
+    "Guid": "Random guid",
+    "Data": {
+        "Id": The recordings ID (Required, as string),
+        "Title": "string",
+        "AssetId": "int",
+        "Channel": "int",
+        "Description": "string",
+        "scheduledStartTime": "Datetime (as oadate)",
+        "scheduledStopTime": "Datetime (as oadate)",
+        "actualStartTime": "Datetime (as oadate)",
+        "actualStopTime": "Datetime (as oadate)",
+        }
+  }
+  ```
 
 The response will look like this:
 
+```json
 {
 "Data" : "String",
 "Guid" : "request guid",
 "Status" : "bool"
 }
+```
 
 Status can be 0 for "failed" and 1 for "succeeded".
