@@ -66,7 +66,6 @@ The Automation script specified with the **External Tasks Handler Automation Scr
 
 Example:
 
-
 ```csharp
 using System;
 using System.Collections.Generic;
