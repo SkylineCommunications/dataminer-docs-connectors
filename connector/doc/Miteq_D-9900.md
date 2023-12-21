@@ -4,7 +4,7 @@ uid: Connector_help_Miteq_D-9900
 
 # Miteq D-9900
 
-This connector allows monitoring and control of the down converter
+This connector allows monitoring and control of the downconverter
 
 ## About
 
