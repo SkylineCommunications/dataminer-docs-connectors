@@ -37,5 +37,3 @@ The connector's main element has the following pages:
 ## Notes
 
 This connector does not support traps
-
-
