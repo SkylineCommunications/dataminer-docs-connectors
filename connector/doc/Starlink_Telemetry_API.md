@@ -83,7 +83,7 @@ The User Terminals page contains the **User Terminals** table. This table shows 
 
 The columns **Device ID** and **Account Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
-As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for one day at maximum. You will see a line in the element log file when one or more terminals are still in the table but were not returned by the API.
+As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for one day at most. You will see a line in the element log file when one or more terminals are still in the table but were not returned by the API.
 
 Terminals that are no longer returned by the API for more than one day will be removed from the table. This action will also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
@@ -99,7 +99,7 @@ Information related to routers is stored in the **Routers** table.
 
 The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
-As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for one day at maximum. You will see a line in the element log file when one or more routers are still in the table but were not returned by the API.
+As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for one day at most. You will see a line in the element log file when one or more routers are still in the table but were not returned by the API.
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action will also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
