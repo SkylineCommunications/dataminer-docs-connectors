@@ -20,7 +20,7 @@ This connector uses **SNMP** polling to communicate with the device.
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
