@@ -4,38 +4,17 @@ uid: Connector_help_Dell_M1000e_Collector
 
 # Dell M1000e Collector - Dell M1000e Remote
 
-The **Dell M1000e** **Collector** Protocol communicates with multiple external **Dell Poweredge** devices and collect basic device indicators.
+The **Dell M1000e Collector** connector communicates with multiple external **Dell Poweredge** devices and collecs basic device indicators.
+
+This connector communicates using SNMPv2. It allows the monitoring and trending of all statuses and readings from remote **Dell M1000e** devices. It can optionally export each Dell M1000e device as a virtual element.
 
 ## About
 
-This connector communicates using SNMP Protocol version 2. It allows the monitor and trend of all statuses and readings from remote **Dell M1000e** devices. It can optionally export each Dell M1000e device as a virtual element.
-
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><ul>
-<li>DVE</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -43,20 +22,12 @@ This connector communicates using SNMP Protocol version 2. It allows the monitor
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
 
+### System Info
 
-
-## Configuration
-
-### Initialization
-
-No extra configurations are needed.
-
-### Redundancy
-
-There is no redundancy defined.
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## How to use
 
-On the **Configuration** page, set **File Import Path**, **Import** the csv file with all the Dell M1000e devices information and set **Polling Status** to Enabled.
-
-
+On the **Configuration** page, set the **File Import Path**, **import** the CSV file with all the Dell M1000e device information, and set **Polling Status** to *Enabled*.
