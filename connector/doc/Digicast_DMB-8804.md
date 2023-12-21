@@ -6,9 +6,9 @@ uid: Connector_help_Digicast_DMB-8804
 
 The Digicast DMB-8804 is a multichannel video encoder.
 
-## About
+This device supports audio and video collection by 4-Ch HD HDMI input. For HDMI input, each channel of HDMI input supports the output of 4 groups of IP streams with four different resolutions (up to 1080p) and four different bit rates to meet different sizes of screens and different bandwidth conditions. Each group of IP streams supports the main kinds of protocol output (HLS, RTMP, HTTP, RTSP, UDP). This enables the encoder to deliver H.264 IP streams by independent IP output to various servers for IPTV and OTT applications.
 
-This device supports audio and video collection by 4-Ch HD HDMI input. For HDMI input, each channel of HDMI input supports output 4 groups IP streams with four different resolution (up to 1080p) and four different bitrates to meet different size screen and different bandwidth condition. Each group of IP stream supports kinds of main protocols output (HLS, RTMP, HTTP, RTSP, UDP), this enable Encoder to deliver H.264 IP streams by independent IP output to various servers for IPTV & OTT application.
+## About
 
 ### Version Info
 
@@ -49,5 +49,3 @@ No extra configuration is needed.
 ### Redundancy
 
 No redundancy defined.
-
-
