@@ -4,64 +4,29 @@ uid: Connector_help_CEFD_CDM-760
 
 # CEFD CDM-760
 
-The **CDM-760** can retrieve **Configuration** information, **Status** information and **Packet Processor** informaton if it is *installed*. **Modem** configuration is found here, as well as **Utilities**, **Mask**, **Test**, **LNB**, **CID**, **MEO**, **ASI**. **CFG**. Also, the **Alarms**, **Logs**, **Info**, **IP Statistics**, **Ethernet**, **MAC** **Table**, **Packet Flows**, **Router**, **WAN,** **Header Comp**, **QoS**, and **BB Statistics**.
+The **CDM-760** can retrieve **Configuration** information, **Status** information and **Packet Processor** information if it is installed. **Modem** configuration is found here, as well as **Utilities**, **Mask**, **Test**, **LNB**, **CID**, **MEO**, **ASI**. **CFG**. Also, the **Alarms**, **Logs**, **Info**, **IP Statistics**, **Ethernet**, **MAC** **Table**, **Packet Flows**, **Router**, **WAN,** **Header Comp**, **QoS**, and **BB Statistics**.
 
 ## About
 
-The connector runs three **Timers** every *10 seconds*, every *1 minute,* and every *24 hours.* Always polling information accordently and if modules are not *installed* then it won't poll those groups. The new version *(1.5.7)* supports all *66* **ModCods** and the **Packet Processo**r.
+The connector runs three **timers**: every 10 seconds, every 1 minute, and every 24 hours. If modules are not installed, it will not poll those groups. The 1.5.7 version supports all 66 ModCods and the Packet Processor.
 
-Ranges of the connector
+### Ranges of the connector
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td>Initial version</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x</td>
-<td><p>Based on 1.0.0.13</p>
-<p>Firmware changed to 1.5.7. ModMods range (1-66)</p></td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>1.1.1.x</td>
-<td>Based on 1.1.0.4unneeded parameters removed</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>1.1.2.x</td>
-<td>Cassandra compliant</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range              | Description                                                              | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version                                                          | No              | No                  |
+| 1.1.0.x            | - Based on 1.0.0.13<br>- Firmware changed to 1.5.7. ModMods range (1-66) | No              | No                  |
+| 1.1.1.x            | Based on 1.1.0.4<br>Superfluous parameters removed                       | No              | No                  |
+| 1.1.2.x            | Cassandra compliant                                                      | No              | Yes                 |
 
-Supported firmware versions
+### Supported firmware versions
 
-| Range     | Device Firmware Version                       |
-|------------------|-----------------------------------------------|
-| 1.0.0.x          | 1.1.1                                         |
-| 1.1.0.x          | 1.5.71.2.2 - If Packet Processor is installed |
-| 1.1.1.x          | 1.5.71.2.2 - If Packet Processor is installed |
-| 1.1.2.x          | 1.5.71.2.2 - If Packet Processor is installed |
+| Range   | Device Firmware Version                       |
+|---------|-----------------------------------------------|
+| 1.0.0.x | 1.1.1                                         |
+| 1.1.0.x | 1.5.71.2.2 - If Packet Processor is installed |
+| 1.1.1.x | 1.5.71.2.2 - If Packet Processor is installed |
+| 1.1.2.x | 1.5.71.2.2 - If Packet Processor is installed |
 
 ## Installation and configuration
 
@@ -101,7 +66,7 @@ Here, you can see the **Circuit ID** module with **ID String**, **Utility Demo M
 
 ### Config - Test
 
-The **Unit Test Mode** is foundhere. It also includes **BERT** information like the *state* of it, **Pattern**, **Total Errors**, **Total Bits**, and **Ave BER**. It also has a button to **Restart** the service.
+The **Unit Test Mode** is found here. It also includes **BERT** information like the *state* of it, **Pattern**, **Total Errors**, **Total Bits**, and **Ave BER**. It also has a button to **Restart** the service.
 
 ### Config - LNB
 

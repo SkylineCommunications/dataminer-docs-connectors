@@ -10,39 +10,10 @@ AWS Elemental MediaPackage is a just-in-time packaging and origination service t
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [Obsolete]</td>
-<td><p>Lists following components from the AWS Elemental MediaPackage API:</p>
-<ul>
-<li>Channels</li>
-<li>Origin Endpoints</li>
-<li>Channel Operational Metrics</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.0.1.x [SLC Main]</td>
-<td>SNS subscription and message processing support.</td>
-<td>1.0.0.2</td>
-<td>A new IP connection has been added, requiring element configuration.</td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Lists following components from the AWS Elemental MediaPackage API:<br>- Channels<br>- Origin endpoints<br>- Channel operational metrics | - | - |
+| 1.0.1.x [SLC Main] | SNS subscription and message processing support. | 1.0.0.2 | A new IP connection has been added, requiring element configuration. |
 
 ### Product Info
 
