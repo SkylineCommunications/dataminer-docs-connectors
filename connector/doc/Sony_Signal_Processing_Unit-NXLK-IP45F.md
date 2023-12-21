@@ -4,7 +4,7 @@ uid: Connector_help_Sony_Signal_Processing_Unit-NXLK-IP45F
 
 # Sony Signal Processing Unit-NXLK-IP45F
 
-The **Sony NXL-FR316** and **Sony NXL-FR318** is a Processing units (chassis), to which different cards can be attached:
+The **Sony NXL-FR316** and **Sony NXL-FR318** are processing units (chassis), to which different cards can be attached:
 
 - IP converter boards: Sony NXL-IP40F/41F/42F/45F/50Y
 
@@ -16,38 +16,15 @@ This connector is exported by the parent connector **Sony Signal Processing Unit
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><ul>
-<li>Initial Version</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | V1.00                  |
-
-
 
 ## Configuration
 
@@ -75,6 +52,4 @@ This page displays the **Error Statuses** connected to this module.
 
 ### NMI
 
-This page allows you to connect this IP Board to the selected **NMI**. Note: only 1 NMI element can be connected to 1 IP Board Connected to this chassi. You can check which NMI element is connected to which IP Board via the **NMI** table on the main element.
-
-
+This page allows you to connect this IP Board to the selected **NMI**. Note: only 1 NMI element can be connected to 1 IP Board Connected to this chassis. You can check which NMI element is connected to which IP Board via the **NMI** table on the main element.
