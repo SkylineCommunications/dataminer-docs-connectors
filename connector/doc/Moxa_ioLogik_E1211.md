@@ -10,9 +10,9 @@ This connector allows you to monitor a configured Moxa ioLogik E1211 device via 
 
 ### Version Info
 
-| **Range** | **Key Features**          | **Based on** | **System Impact** |
-|-----------|---------------------------|--------------|-------------------|
-| 1.0.0.x   | Monitoring of DO channels | -            | -                 |
+| Range   | Key Features              | Based on | System Impact |
+|---------|---------------------------|----------|---------------|
+| 1.0.0.x | Monitoring of DO channels | -        | -             |
 
 ### Product Info
 
@@ -61,7 +61,5 @@ On this page, you can find the **DO channel monitor table**. These tables allow 
 Both tables allow you configure a custom name for each channel. Greyed out entries in the tables are disabled and cannot be set.
 
 ### Traps
-
-
 
 On this page, you can find the **Trap Table**. This trap table holds all the incoming traps from the device.
