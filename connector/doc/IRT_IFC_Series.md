@@ -4,8 +4,9 @@ uid: Connector_help_IRT_IFC_Series
 
 # IRT IFC Series
 
-This connector is used to monitor and configure an **IRT IFC Series** device.
-The **IRT IFC Series** is a Intelligent Frequency Converter and it is used for satellite transmission.
+This connector is used to monitor and configure an IRT IFC Series device.
+
+The **IRT IFC Series** is an intelligent frequency converter. It is used for satellite transmission.
 
 ## About
 
@@ -51,25 +52,20 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-This connector contains four following pages: **General**, **Configuration**, **Devices** and **Redundancy**.
-Also it contains a **Web Interface** page.
+This connector contains the following pages: **General**, **Configuration**, **Devices**, and **Redundancy**, as well as a **Web Interface** page.
 
-**Redundancy** page is the default one and on that page you can find the information on type of redundancy and also on the
-members of redundancy. 
-It is possible on that page to change the **Switchover Mode** as well as setting individual members of redundancy in *active* or *standby* states.
-(Setting the individual members status will only be available when the **Switchover Mode** is set to *manual*).
+- The **Redundancy** page is the default page. Here you can find the information on the type of redundancy and also on the redundancy members. On this page, you can change the **Switchover Mode** and set individual redundancy members to *active* or *standby*. Note that setting the status of individual members is only possible when the **Switchover Mode** is set to *Manual*.
 
-The **General** page displays generic information about the connector (**Name**, **Location**, etc.).
+- The **General** page displays general information about the connector such as the **Name** and **Location** of the device.
 
-On the **Configuration** page user can configure the parameters of the individual modules.
+- On the **Configuration** page, you can configure the parameters of the individual modules.
 
-The **Device** page contains informations on all of the modules that are available (**Temperature**, **Input/Output Power**, etc.).
+- The **Device** page contains information on all of the available modules that are available, including the **Temperature**, **Input/Output Power**, etc.
 
-When the connector is working properly, every table on every page should be populated accordingly and with the correct resolutions.
-That all can be double checked by looking at the parameters in the web interface.
+When the connector is working properly, every table on every page should be populated accordingly and with the correct resolutions. You can double-check this by looking at the parameters on the web interface.
 
-If everything works correctly, in the stream viewer you will be able to see Groups **100**,**1000**,**2000**,**3000**,**4000**,**5000** and **6000**.
-Groups **1000**, **5000** and **6000** represent parameters that are checked every 10 seconds,
-while the groups **100**, **2000**, **3000** and **4000** are checked every 10 minutes.
+If everything works correctly, in the Stream Viewer you will be able to see groups **100**, **1000**, **2000**, **3000**, **4000**, **5000**, and **6000**.
 
-If there is a polling error with any of the groups, the stream viewer will return **GENERIC ERROR** in the response from the device.
+- Groups **1000**, **5000**, and **6000** represent parameters that are checked every 10 seconds.
+- Groups **100**, **2000**, **3000**, and **4000** are checked every 10 minutes.
+- If there is a polling error with any of the groups, the Stream Viewer will return **GENERIC ERROR** in the response from the device.
