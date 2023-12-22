@@ -4,71 +4,37 @@ uid: Connector_help_Server_Technology_CDU
 
 # Server Technology CDU
 
-The Switched Cabinet Distribution Units (CDU) family combines networked configuration and management with power distribution, power and environmental monitoring.
+The Switched Cabinet Distribution Units (CDU) family combines networked configuration and management with power distribution, power, and environmental monitoring.
 
-About
+This connector is intended to get and set information in the device via an element in a DataMiner System, using SNMP commands.
 
-This connector is intended to get and set information in the device via an Element in a DataMiner System, using SNMP commands.
+To get more detailed information, see <http://www.servertech.com/products/switched-pdus/>.
 
-To get more detailed information <http://www.servertech.com/products/switched-pdus/>
+## About
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Initial version</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x</td>
-<td>New firmware based on 1.0.0.x</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>2.0.0.x</td>
-<td>Branch version based on 1.1.0.x</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>2.0.1.x</td>
-<td>Branch version based on 2.0.0.x</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range   | Description                    | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.               | No              | No                  |
+| 1.1.0.x | New firmware based on 1.0.0.x. | No              | No                  |
+| 2.0.0.x | New firmware based on 1.1.0.x. | No              | No                  |
+| 2.0.1.x | New firmware based on 2.0.0.x. | No              | Yes                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**          |
-|------------------|--------------------------------------|
-| 1.0.0.x          | Sentry Switched -48 VDC Version 7.0j |
-| 1.1.0.x          | Sentry Switched -48 VDC Version 7.0j |
-| 2.0.0.x          | Sentry Switched -48 VDC Version 7.0j |
-| 2.0.1.x          | Sentry Switched -48 VDC Version 7.0j |
+| Range   | Device Firmware Version              |
+|---------|--------------------------------------|
+| 1.0.0.x | Sentry Switched -48 VDC Version 7.0j |
+| 1.1.0.x | Sentry Switched -48 VDC Version 7.0j |
+| 2.0.0.x | Sentry Switched -48 VDC Version 7.0j |
+| 2.0.1.x | Sentry Switched -48 VDC Version 7.0j |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-SNMP Main connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -80,8 +46,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device (default value if not overridden in the connector: *public*).
-- **Set community string**: The community string used when setting values on the device (default value if not overridden in the connector: *private*).
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage
 

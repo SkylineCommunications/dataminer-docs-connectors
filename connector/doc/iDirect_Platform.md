@@ -16,220 +16,42 @@ The creation of DVEs can be enabled or disabled in the main element. Different p
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>Older ranges <strong>[Obsolete]</strong></td>
-<td>-</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>10.0.0.x</td>
-<td>Automatically detects the iDirect version and displays the available information in the databases.</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10.0.1.x <strong>[Obsolete]</strong></td>
-<td>Supports the polling of multiple iDirect hubs in a single element, to cope with roaming remotes between multiple NMS systems. <strong>From version 10.0.1.76 onwards, this range should be handled in parallel with range 10.0.2.x.</strong></td>
-<td>10.0.0.47</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>10.0.2.x <strong>[Obsolete]</strong></td>
-<td>Additional DCF external interfaces for iDirect Platform virtual DVEs. <strong>This range should be handled in parallel with range 10.0.1.x.</strong></td>
-<td>10.0.1.76</td>
-<td>Additional load on the system.</td>
-</tr>
-<tr class="even">
-<td>10.0.3.x <strong>[Obsolete]</strong></td>
-<td><p>Made Cassandra-compliant (fixed Cassandra Compliancy tag, incorrectly set in 10.0.1.x). <strong>This range should be handled in parallel with range 10.0.4.x.</strong></p></td>
-<td>10.0.1.78</td>
-<td><p>Old trend data will be lost for the following tables:</p>
-<ul>
-<li>Remotes Table</li>
-<li>Enable Linecard Polling</li>
-<li>Enable Network Polling</li>
-<li>Chassis Table</li>
-<li>IDirect Platform Table</li>
-<li>Networks Table</li>
-<li>Remotes On Network Table</li>
-<li>Upstream Carriers Table</li>
-<li>Downstream Carriers Table</li>
-<li>iDirect Linecards Table</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>10.0.4.x <strong>[Obsolete]</strong></td>
-<td><p>Made Cassandra-compliant (fixed Cassandra Compliancy tag, incorrectly set in 10.0.2.x). <strong>This range should be handled in parallel with range 10.0.3.x [SLC Main].</strong></p></td>
-<td>10.0.2.3</td>
-<td>Old trend data will be lost for the following tables:
-<ul>
-<li>Remotes Table</li>
-<li>Enable Linecard Polling</li>
-<li>Enable Network Polling</li>
-<li>Chassis Table</li>
-<li>IDirect Platform Table</li>
-<li>Networks Table</li>
-<li>Remotes On Network Table</li>
-<li>Upstream Carriers Table</li>
-<li>Downstream Carriers Table</li>
-<li>iDirect Linecards Table</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>10.0.5.x [SLC Main]</td>
-<td><p>Reverted changes made in 10.0.3.x. This connector requires the display column to maintain the trend/alarm history when a replacement is done in the tables. Refer to the Notes section below for more information.</p>
-<p><strong>This range should be handled in parallel with range 10.0.6.x [SLC Main], when applicable (no DCF integration).</strong></p></td>
-<td>10.0.3.1</td>
-<td>From 10.0.3.x/10.0.4.x only - old trend data will be lost for the following tables:
-<ul>
-<li>Remotes Table</li>
-<li>Enable Linecard Polling</li>
-<li>Enable Network Polling</li>
-<li>Chassis Table</li>
-<li>IDirect Platform Table</li>
-<li>Networks Table</li>
-<li>Remotes On Network Table</li>
-<li>Upstream Carriers Table</li>
-<li>Downstream Carriers Table</li>
-<li>iDirect Linecards Table</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>10.0.6.x [SLC Main]</td>
-<td>Reverted changes made in 10.0.4.x.
-<p>This connector requires the display column to maintain the trend/alarm history when a replacement is done in the tables. Refer to the Notes section below for more information.</p>
-<p><strong>This range should be handled in parallel with range 10.0.5.x [SLC Main], when applicable (DCF Integration).</strong></p></td>
-<td>10.0.4.1</td>
-<td>From 10.0.3.x/10.0.4.x only - old trend data will be lost for the following tables:
-<ul>
-<li>Remotes Table</li>
-<li>Enable Linecard Polling</li>
-<li>Enable Network Polling</li>
-<li>Chassis Table</li>
-<li>IDirect Platform Table</li>
-<li>Networks Table</li>
-<li>Remotes On Network Table</li>
-<li>Upstream Carriers Table</li>
-<li>Downstream Carriers Table</li>
-<li>iDirect Linecards Table</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>11.0.0.x</td>
-<td>Range created for a specific customer, to support special requirements.</td>
-<td>8.0.0.22</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| Older ranges [Obsolete] | - | - | - |
+| 10.0.0.x | Automatically detects the iDirect version and displays the available information in the databases. | - |  |
+| 10.0.1.x [Obsolete] | Supports the polling of multiple iDirect hubs in a single element, to cope with roaming remotes between multiple NMS systems. **From version 10.0.1.76 onwards, this range should be handled in parallel with range 10.0.2.x.** | 10.0.0.47 | - |
+| 10.0.2.x [Obsolete] | Additional DCF external interfaces for iDirect Platform virtual DVEs. **This range should be handled in parallel with range 10.0.1.x.** | 10.0.1.76 | Additional load on the system. |
+| 10.0.3.x [Obsolete] | Made Cassandra-compliant (fixed Cassandra Compliancy tag, incorrectly set in 10.0.1.x). **This range should be handled in parallel with range 10.0.4.x.** | 10.0.1.78 | Old trend data will be lost for the following tables:<br>- Remotes Table<br>- Enable Linecard Polling<br>- Enable Network Polling<br>- Chassis Table<br>- IDirect Platform Table<br>- Networks Table<br>- Remotes On Network Table<br>- Upstream Carriers Table<br>- Downstream Carriers Table<br>- iDirect Linecards Table |
+| 10.0.4.x [Obsolete] | Made Cassandra-compliant (fixed Cassandra Compliancy tag, incorrectly set in 10.0.2.x). **This range should be handled in parallel with range 10.0.3.x [SLC Main].** | 10.0.2.3 | Old trend data will be lost for the following tables:<br>- Remotes Table<br>- Enable Linecard Polling<br>- Enable Network Polling<br>- Chassis Table<br>- IDirect Platform Table<br>- Networks Table<br>- Remotes On Network Table<br>- Upstream Carriers Table<br>- Downstream Carriers Table<br>- iDirect Linecards Table |
+| 10.0.5.x [SLC Main] | Reverted changes made in 10.0.3.x. This connector requires the display column to maintain the trend/alarm history when a replacement is done in the tables. Refer to the Notes section below for more information.<br>**This range should be handled in parallel with range 10.0.6.x [SLC Main], when applicable (no DCF integration).** | 10.0.3.1 | From 10.0.3.x/10.0.4.x only <br>- old trend data will be lost for the following tables:<br>- Remotes Table<br>- Enable Linecard Polling<br>- Enable Network Polling<br>- Chassis Table<br>- IDirect Platform Table<br>- Networks Table<br>- Remotes On Network Table<br>- Upstream Carriers Table<br>- Downstream Carriers Table<br>- iDirect Linecards Table |
+| 10.0.6.x [SLC Main] | Reverted changes made in 10.0.4.x.<br>This connector requires the display column to maintain the trend/alarm history when a replacement is done in the tables. Refer to the Notes section below for more information.<br>**This range should be handled in parallel with range 10.0.5.x [SLC Main], when applicable (DCF Integration).** | 10.0.4.1 | From 10.0.3.x/10.0.4.x only <br>- old trend data will be lost for the following tables:<br>- Remotes Table<br>- Enable Linecard Polling<br>- Enable Network Polling<br>- Chassis Table<br>- IDirect Platform Table<br>- Networks Table<br>- Remotes On Network Table<br>- Upstream Carriers Table<br>- Downstream Carriers Table<br>- iDirect Linecards Table |
+| 11.0.0.x | Range created for a specific customer, to support special requirements. | 8.0.0.22 | - |
 
 ### Product Info
 
-| **Range**      | **Device Firmware Version**           |
-|-----------------------|---------------------------------------|
-| 10.0.0.x              | Compatible with all iDirect versions. |
-| 10.0.1.x [SLC Main]   | Compatible with all iDirect versions. |
-| 10.0.2.x              | Compatible with all iDirect versions. |
-| 10.0.3.x              | Compatible with all iDirect versions. |
-| 10.0.4.x              | Compatible with all iDirect versions. |
-| 10.0.5.x              | Compatible with all iDirect versions. |
-| 10.0.6.x              | Compatible with all iDirect versions. |
+| Range    | Device Firmware Version               |
+|----------|---------------------------------------|
+| 10.0.0.x | Compatible with all iDirect versions. |
+| 10.0.1.x | Compatible with all iDirect versions. |
+| 10.0.2.x | Compatible with all iDirect versions. |
+| 10.0.3.x | Compatible with all iDirect versions. |
+| 10.0.4.x | Compatible with all iDirect versions. |
+| 10.0.5.x | Compatible with all iDirect versions. |
+| 10.0.6.x | Compatible with all iDirect versions. |
 
 ### System Info
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-<td><strong>Linked Components</strong></td>
-<td><strong></strong> <strong>Exported Components</strong></td>
-</tr>
-<tr class="even">
-<td>Older ranges</td>
-<td>No</td>
-<td>No</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>10.0.0.x</td>
-<td>No</td>
-<td>No</td>
-<td>-</td>
-<td><ul>
-<li>iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.</li>
-<li>iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.</li>
-<li>iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>10.0.1.x</td>
-<td>No</td>
-<td>No</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10.0.2.x</td>
-<td>Yes</td>
-<td>No</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10.0.3.x</td>
-<td>No</td>
-<td>Yes</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10.0.4.x</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>10.0.5.x</td>
-<td>No</td>
-<td>Yes</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>10.0.6.x</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>-</td>
-<td></td>
-</tr>
-</tbody>
-</table>
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| Older ranges | No | No | - | - |
+| 10.0.0.x | No | No | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
+| 10.0.1.x | No | No | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
+| 10.0.2.x | Yes | No | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
+| 10.0.3.x | No | Yes | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
+| 10.0.4.x | Yes | Yes | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
+| 10.0.5.x | No | Yes | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
+| 10.0.6.x | Yes | Yes | - | - iDirect Platform Virtual - Represents terminal components (customer installations) in an iDirect NMS.<br>- iDirect Platform Network Virtual - Represents network components (beams) in an iDirect NMS.<br>- iDirect Platform Linecard Virtual - Represents line card components in an iDirect NMS. |
 
 ## Installation and configuration
 

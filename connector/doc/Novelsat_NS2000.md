@@ -4,7 +4,7 @@ uid: Connector_help_Novelsat_NS2000
 
 # Novelsat NS2000
 
-The NovelSat NS2000 is a demodulator designed for high-demand satellite reception. The NS2000 delivers signi?cantly higher spectral ef?ciency compared to DVB-S2.
+The NovelSat NS2000 is a demodulator designed for high-demand satellite reception. The NS2000 delivers significantly higher spectral efficiency compared to DVB-S2.
 
 ## About
 
@@ -27,60 +27,49 @@ This connector uses **SNMP and HTTP** communication to monitor and change parame
 |---------|----------------------------|
 | 2.1.1.x | 1.1.1 [Build 4761]         |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections - 1.0.0.x/1.0.1.x/1.0.2.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x 1.0.1.x 1.0.2.x</td>
-<td><h4 id="snmp-main-connection.">SNMP Main Connection.</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>IP port</strong>: The IP port of the device (default: <em>161</em>).</li>
-<li><strong>Get community string</strong>: The community string used when reading values from the device (default: <em>public</em>).</li>
-<li><strong>Set community string</strong>: The community string used when setting values on the device (default: <em>private</em>).</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x 2.0.1.x 2.1.1.x</td>
-<td>SNMP Main Connection.
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>IP port</strong>: The IP port of the device (default: <em>161</em>).</li>
-<li><strong>Get community string</strong>: The community string used when reading values from the device (default: <em>public</em>).</li>
-<li><strong>Set community string</strong>: The community string used when setting values on the device (default: <em>private</em>).</li>
-</ul>
-<h4 id="http-secondary-connection">HTTP Secondary Connection</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>IP port</strong>: The IP port of the device.</li>
-<li><strong>Device address</strong>: The device address (default: <em>BypassProxy</em>).</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **IP port**: The IP port of the device (default: *161*).
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+### Connections - 2.0.0.x/2.0.1.x/2.1.1.x
+
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **IP port**: The IP port of the device (default: *161*).
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+#### HTTP Secondary Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
+- **Device address**: The device address (default: *BypassProxy*).
 
 ### Firmware Configuration
 

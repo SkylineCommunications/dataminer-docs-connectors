@@ -34,93 +34,91 @@ This connector uses a **TCP/IP** connection in order to retrieve and configure t
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><h4 id="serial-main-connection">Serial Main Connection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the primary RRCS gateway.</li>
-<li><strong>IP port</strong>: The port of the primary gateway. Default: <em>8193.</em></li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy.</em></li>
-</ul>
-<h4 id="serial-event-notifications">Serial Event Notifications</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: This value should be set to "any".</li>
-<li><strong>IP port</strong>: The notifications port. Default: <em>8194.</em></li>
-<li><strong>Bus address</strong>: Not required.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>1.0.1.x</td>
-<td><h4 id="serial-main-connection-1">Serial Main Connection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the primary RRCS gateway.</li>
-<li><strong>IP port</strong>: The port of the primary gateway. Default: <em>8193.</em></li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy.</em></li>
-</ul>
-<h4 id="serial-connection-redundant">Serial Connection Redundant</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the secondary RRCS gateway.</li>
-<li><strong>IP port</strong>: The port of the secondary gateway. Default: <em>8193.</em></li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy</em>.</li>
-</ul>
-<h4 id="serial-event-notifications-1">Serial Event Notifications</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: This value should be set to "any".</li>
-<li><strong>IP port</strong>: The notifications port. Default: <em>8194</em>.</li>
-<li><strong>Bus address</strong>: Not required.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>2.0.0.x2.0.1.x2.0.2.x3.0.0.x</td>
-<td><h4 id="http-main-connection">HTTP Main Connection</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the primary RRCS gateway.</li>
-<li><strong>IP port</strong>: The port of the primary gateway. Default: <em>8193.</em></li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy.</em></li>
-</ul>
-<h4 id="http-connection-redundant">HTTP Connection Redundant</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the secondary RRCS gateway.</li>
-<li><strong>IP port</strong>: The port of the secondary gateway. Default: <em>8193.</em></li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy.</em></li>
-</ul>
-<h4 id="serial-connection">Serial Connection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: This value should be set to "any".</li>
-<li><strong>IP port</strong>: The notification port. Default: <em>8194.</em></li>
-<li><strong>Bus address</strong>: Not required.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### Serial Main Connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: The IP address of the primary RRCS gateway.
+- **IP port**: The port of the primary gateway. Default: *8193.*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
+
+#### Serial Event Notifications
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: This value should be set to "any".
+- **IP port**: The notifications port. Default: *8194.*
+- **Bus address**: Not required.
+
+### Connections - Range 1.0.1.x
+
+#### Serial Main Connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: The IP address of the primary RRCS gateway.
+- **IP port**: The port of the primary gateway. Default: *8193.*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
+
+#### Serial Connection Redundant
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: The IP address of the secondary RRCS gateway.
+- **IP port**: The port of the secondary gateway. Default: *8193.*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+
+#### Serial Event Notifications
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: This value should be set to "any".
+- **IP port**: The notifications port. Default: *8194*.
+- **Bus address**: Not required.
+
+### Connections - Range 2.0.0.x/2.0.1.x/2.0.2.x/3.0.0.x
+
+#### HTTP Main Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The IP address of the primary RRCS gateway.
+- **IP port**: The port of the primary gateway. Default: *8193.*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
+
+#### HTTP Connection Redundant
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The IP address of the secondary RRCS gateway.
+- **IP port**: The port of the secondary gateway. Default: *8193.*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
+
+#### Serial Connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: This value should be set to "any".
+- **IP port**: The notification port. Default: *8194.*
+- **Bus address**: Not required.
 
 ## Usage (all ranges except 3.0.0.x)
 

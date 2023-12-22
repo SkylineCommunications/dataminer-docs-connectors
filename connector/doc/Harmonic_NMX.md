@@ -49,129 +49,125 @@ Harmonic's NMX Digital Service Manager is a video network management solution, e
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x - 4.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x - 4.0.0.x</td>
-<td>Serial Connection - Main
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Direct connection:
-<ul>
-<li><strong>Timeout Time</strong>: 30000 ms.</li>
-<li><strong>Retries</strong>: 3.</li>
-</ul></li>
-<li>Interface connection:
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.</li>
-<li><strong>IP port</strong>: 9001.</li>
-<li><strong>Bus Address</strong>: NA.</li>
-</ul></li>
-</ul>
-<h4 id="serial-connection---serialslowconnection">Serial Connection - SerialSlowConnection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Direct connection:
-<ul>
-<li><strong>Timeout Time</strong>: 30000 ms.</li>
-<li><strong>Retries</strong>: 1.</li>
-</ul></li>
-<li>Interface connection:
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.</li>
-<li><strong>IP port</strong>: 9001.</li>
-<li><strong>Bus Address</strong>: NA.</li>
-</ul></li>
-</ul>
-<h4 id="snmp-connection---snmp">SNMP Connection - snmp</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>IP port</strong>: 161</li>
-<li><strong>Get community string</strong>: public</li>
-<li><strong>Set community string</strong>: private</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>4.0.1.x</td>
-<td>Smart-Serial Connection - Main
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Direct connection:
-<ul>
-<li><strong>Timeout Time</strong>: 5000 ms.</li>
-<li><strong>Retries</strong>: 3.</li>
-</ul></li>
-<li>Interface connection:
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.</li>
-<li><strong>IP port</strong>: 9001.</li>
-<li><strong>Bus Address</strong>: NA.</li>
-</ul></li>
-</ul>
-<h4 id="snmp-connection---snmp-1">SNMP Connection - snmp</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>IP port</strong>: 161</li>
-<li><strong>Get community string</strong>: public</li>
-<li><strong>Set community string</strong>: private</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>4.1.0.x - 4.1.1.x</td>
-<td><h4 id="http-connection---main">HTTP Connection - Main</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination (default: <em>80</em>).</li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy</em>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>4.2.0.x</td>
-<td><h4 id="http-connection---main-1">HTTP Connection - Main</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination (default: <em>80</em>).</li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy</em>.</li>
-</ul>
-<h4 id="websocket-connection">WebSocket Connection</h4>
-<p>This connector uses a WebSocket connection and requires the following input during element creation:</p>
-<p>WEBSOCKET CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination (default: <em>80</em>).</li>
-<li><strong>Bus address</strong>: If the proxy server has to be bypassed, specify <em>bypassproxy</em>.</li>
-</ul>
-<p>Note: In the <strong>IP address/host</strong> field, you must specify the <strong>prefix</strong> <em><strong>ws://</strong></em> <strong>or</strong> <em><strong>wss://</strong></em>, depending on whether an HTTP or HTTPS connection is used.</p></td>
-</tr>
-</tbody>
-</table>
+#### Serial Connection - Main
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Direct connection:
+
+  - **Timeout Time**: 30000 ms.
+  - **Retries**: 3.
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.
+  - **IP port**: 9001.
+  - **Bus Address**: NA.
+
+#### Serial Connection - SerialSlowConnection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Direct connection:
+
+  - **Timeout Time**: 30000 ms.
+  - **Retries**: 1.
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.
+  - **IP port**: 9001.
+  - **Bus Address**: NA.
+
+#### SNMP Connection - snmp
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.
+
+SNMP Settings:
+
+- **IP port**: 161
+- **Get community string**: public
+- **Set community string**: private
+
+### Connections - Range 4.0.1.x
+
+#### Smart-Serial Connection - Main
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Direct connection:
+
+  - **Timeout Time**: 5000 ms.
+  - **Retries**: 3.
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.
+  - **IP port**: 9001.
+  - **Bus Address**: NA.
+
+#### SNMP Connection - snmp
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device or, if redundancy mode is permitted, the primary/backup IP.
+
+SNMP Settings:
+
+- **IP port**: 161
+- **Get community string**: public
+- **Set community string**: private
+
+### Connections - Range 4.1.0.x - 4.1.1.x
+
+#### HTTP Connection - Main
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*).
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+
+### Connections - Range 4.2.0.x
+
+#### HTTP Connection - Main
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*).
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+
+#### WebSocket Connection
+
+This connector uses a WebSocket connection and requires the following input during element creation:
+
+WEBSOCKET CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*).
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+
+> [!NOTE]
+> In the **IP address/host** field, you must specify the **prefix** ***ws://*** **or** ***wss://***, depending on whether an HTTP or HTTPS connection is used.
 
 ### Initialization - range 4.1.0.x - 4.1.1.x and 4.2.0.x
 
@@ -245,8 +241,11 @@ Note: Enabling autoclear has an important downside. If a device disappears from 
 This page also contains the following page buttons:
 
 - **Extra Poll**: Displays a table with the platform types that require extra polling to detect **input stream redundancy socket switching** sooner.
+
   To add a row to this table, fill in a platform type in the **Add Extra Poll Platform Type** parameter and click the **Add** button. To remove a row, use the **Remove** button in the table.
+
   Note: This generates extra traffic, so we recommend that you add as few platform types as possible.
+
 - **Exclude DVE**: Displays a table with the platform types that should be **excluded from the Platform Table**, i.e. the platform types for which no DVE should be created. By default, the values "INPUT_DEVICE" and "OUTPUT_DEVICE" are filled in. Adding and removing rows in this table is done in the same way as for the Extra Poll Table.
 
 For **range 4.1.0.x - 4.1.1.x** only: For DVEs, it is possible to configure whether child elements should be deleted automatically when they are no longer present in the Harmonic NMX. To do so, configure the **DVE Automatic Deletion** parameter on the **Platform** page. You can also configure the DVE child's name and the view where it should be located, using the **DVE Name** and **DVE View** columns in the **Devices** table.

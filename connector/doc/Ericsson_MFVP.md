@@ -48,66 +48,55 @@ The connector is capable of fully monitoring the Ericsson MediaFirst Video Proce
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.1.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.1.0.x</td>
-<td><p>This connector uses 2 HTTP connections and requires the following input during element creation.</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination (default = 30001).</li>
-</ul>
-<p>MDT API (HTTPS):</p>
-<ul>
-<li><strong>IP Address/Host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP Port</strong>: The IP port of the destination (default = 80).</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>1.2.0.x</td>
-<td><p>This connector uses 2 HTTPS connections and requires the following input during element creation.</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: https://&lt;IP of the destination&gt;</li>
-<li><strong>IP port</strong>: The IP port of the destination (default = 30001).</li>
-</ul>
-<p>HTTPS Connection - MDT API:</p>
-<ul>
-<li><strong>IP Address/host</strong>: https://&lt;IP of the destination&gt;.</li>
-<li><strong>IP Port</strong>: The IP port of the destination (default = 443).</li>
-</ul>
-<p>For both connections to work, you will also need to go to element's Features page and specify the username and password for each connection.</p>
-<p>Note: The ports may vary depending on the implementation.</p></td>
-</tr>
-<tr class="even">
-<td>1.2.1.x</td>
-<td>This connector uses 5 HTTPS connections and requires the following input during element creation.
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: https://&lt;IP of the destination&gt;</li>
-<li><strong>IP port</strong>: The IP port of the destination (default = 30001).</li>
-</ul>
-<p>HTTPS Connection - MDT, STATS, CONFIG, and SOURCE APIs:</p>
-<ul>
-<li><strong>IP Address/host</strong>: https://&lt;IP of the destination&gt;.</li>
-<li><strong>IP Port</strong>: The IP port of the destination (default = 443).</li>
-</ul>
-<p>For all connections to work, you will also need to go to element's Features page and specify the username and password for each connection. The credentials used for the MDT API are also used for the STATS, CONFIG, and SOURCE connection.</p>
-<p>Note: The ports may vary depending on the implementation.</p></td>
-</tr>
-</tbody>
-</table>
+This connector uses 2 HTTP connections and requires the following input during element creation.
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default = 30001).
+
+MDT API (HTTPS):
+
+- **IP Address/Host**: The polling IP or URL of the destination.
+- **IP Port**: The IP port of the destination (default = 80).
+
+### Connections - Range 1.2.0.x
+
+This connector uses 2 HTTPS connections and requires the following input during element creation.
+
+HTTP CONNECTION:
+
+- **IP address/host**: https://&lt;IP of the destination&gt;
+- **IP port**: The IP port of the destination (default = 30001).
+
+HTTPS Connection - MDT API:
+
+- **IP Address/host**: https://&lt;IP of the destination&gt;.
+- **IP Port**: The IP port of the destination (default = 443).
+
+For both connections to work, you will also need to go to element's Features page and specify the username and password for each connection.
+
+Note: The ports may vary depending on the implementation.
+
+### Connections - Range 1.2.1.x
+
+This connector uses 5 HTTPS connections and requires the following input during element creation.
+
+HTTP CONNECTION:
+
+- **IP address/host**: https://&lt;IP of the destination&gt;
+- **IP port**: The IP port of the destination (default = 30001).
+
+HTTPS Connection - MDT, STATS, CONFIG, and SOURCE APIs:
+
+- **IP Address/host**: https://&lt;IP of the destination&gt;.
+- **IP Port**: The IP port of the destination (default = 443).
+
+For all connections to work, you will also need to go to element's Features page and specify the username and password for each connection. The credentials used for the MDT API are also used for the STATS, CONFIG, and SOURCE connection.
+
+Note: The ports may vary depending on the implementation.
 
 ### Initialization - range 1.1.0.x
 

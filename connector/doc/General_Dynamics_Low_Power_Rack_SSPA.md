@@ -24,49 +24,35 @@ This connector can be used to monitor the GD Satcom Low Power Rack SSPA using an
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>Range 1.0.0.x</td>
-<td><h4 id="snmp-main-connection">SNMP Main Connection</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>Port number</strong>: The port of the connected device, by default <em>161</em>.</li>
-<li><strong>Get community string</strong>: The community string used when reading values from the device, by default <em>public</em>.</li>
-<li><strong>Set community string</strong>: The community string used when setting values on the device, by default <em>private</em></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Range 2.0.0.x</td>
-<td><h4 id="serial-main-connection">Serial Main Connection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Interface connection:</li>
-<li><ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>IP port</strong>: The IP port of the device.</li>
-<li><strong>Bus address</strong>: The bus address of the device.</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*
+
+### Connections - Range 2.0.0.x
+
+#### Serial Main Connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Interface connection:
+
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
+- **Bus address**: The bus address of the device.
 
 ## How to Use
 
