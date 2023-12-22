@@ -22,7 +22,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | TBD                |
+| 1.0.0.x | v1                 |
 
 ### System Info
 
