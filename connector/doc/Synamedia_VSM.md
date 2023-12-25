@@ -12,7 +12,8 @@ The Synamedia VSM (Video Service Manager) connector provides a set of tools for 
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x [SLC Main] | Initial version. <br>- Lineups folders and configurations <br>- Service flows <br>- Devices <br>- Messages <br>- Resources <br>- License usage | - | - |
+| 1.0.0.x [Obsolete] | Initial version. <br>- Lineups folders and configurations <br>- Service flows <br>- Devices <br>- Messages <br>- Resources <br>- License usage | - | - |
+| 1.0.1.x [SLC Main] | - Changed primary and display key of the Messages table <br>- Updated the display key in the Service Flow table | 1.0.0.x | - |
 
 ### Product Info
 
