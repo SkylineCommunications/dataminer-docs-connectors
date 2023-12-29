@@ -24,7 +24,7 @@ This is a DataMiner connector for the ADSS Uplink Switching Control Panel. The e
 
 |Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
 |---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |No         |-         |   |
+|1.0.0.x    |No       |Yes         |-         |   |
 
 ## Configuration
 
