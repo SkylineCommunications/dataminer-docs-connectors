@@ -12,15 +12,21 @@ This connector retrieves the information on tables and parameters via SNMP polli
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -52,7 +58,7 @@ You can also **reboot** the device here and **turn off the USB Power**.
 
 ### Detailed Interface Info
 
-This page displays a table containing the **Bandwidth Speed**, **Total Utilization**, **MTU**, **Last Change**, and the number of **Errors In** **and Out**.
+This page displays a table containing the **Bandwidth Speed**, **Total Utilization**, **MTU**, **Last Change**, and the number of **Errors In and Out**.
 
 ### Detailed Interface Info - Rx
 
@@ -72,7 +78,7 @@ This page displays the Neighbor Table, with the **Platform** (name), **IP Addres
 
 ### Partition Table
 
-This page contains a table that shows if the device is partitioned in any way. The table shows the **Size** of the partition in MB, the **Version**, **Partition Status** and the **Partition** **State**.
+This page contains a table that shows if the device is partitioned in any way. The table shows the **Size** of the partition in MB, the **Version**, **Partition Status** and the **Partition State**.
 
 ### Web Interface
 

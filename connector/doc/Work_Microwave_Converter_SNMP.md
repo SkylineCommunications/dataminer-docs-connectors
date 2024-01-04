@@ -13,17 +13,24 @@ The connector allows the user to monitor the converter and to configure the syst
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                                                                                                                | No                  | Yes                     |
-| 1.1.0.x [SLC Main]   | Added frequency and attenuation channel band parameters that will replace the existing ones. Changed snmpSet to snmpSetAndGet. | No                  | Yes                     |
+| Range              | Key Features                                                                                                                   | Based on | System Impact |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version                                                                                                                | -        | -             |
+| 1.1.0.x [SLC Main] | Added frequency and attenuation channel band parameters that will replace the existing ones. Changed snmpSet to snmpSetAndGet. | -        | -             |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x              | Unknown                     |
-| 1.1.0.x [SLC Main]   | XNA01.73                    |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | Unknown            |
+| 1.1.0.x | XNA01.73           |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

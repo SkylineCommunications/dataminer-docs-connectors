@@ -14,15 +14,21 @@ This connector uses HTTP sessions to obtain the configuration XML and the HTTP p
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 4.6.16-1                    |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 4.6.16-1               |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -36,7 +42,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The IP/URL of the server
 - **IP port**: The port used by the HTTP server, by default *80*.
-- **Bus address**: b*ypassproxy.*
+- **Bus address**: *bypassproxy.*
 
 ### Configuration of Authentication
 

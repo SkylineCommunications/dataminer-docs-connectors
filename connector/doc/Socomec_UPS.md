@@ -12,28 +12,28 @@ A SNMP connection is used in order to successfully retrieve and configure the de
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
-| 1.1.0.x          | Version Update  | No                  | No                      |
-| 1.2.0.x          | Version Update  | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | No                  |
+| 1.1.0.x | Version Update  | No              | No                  |
+| 1.2.0.x | Version Update  | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.1.0.x          | 2.06                        |
-| 1.2.0.x          | 2.08                        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.1.0.x | 2.06                       |
+| 1.2.0.x | 2.08                       |
 
 ## Installation and configuration
 
 ### Creation
 
-**SNMP Connection**
+SNMP connection:
 
 - **IP address/host**: The polling IP of the device.
 
-**SNMP Settings**
+SNMP settings:
 
 - **Port number**: The port of the connected device, by default *161.*
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.

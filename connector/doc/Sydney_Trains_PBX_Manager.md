@@ -19,29 +19,21 @@ There is also a second interface on this connector, which is used by the **Sitti
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Device Firmware Version</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><p>Asterisk API 1.3</p>
-<p>Sittig Routing Interface v0202</p></td>
-</tr>
-</tbody>
-</table>
+| Range   | Supported Firmware                                 |
+|---------|----------------------------------------------------|
+| 1.0.0.x | Asterisk API 1.3<br>Sittig Routing Interface v0202 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -56,7 +48,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-  - **IP port**: \[The IP port of the device. *Default 5038*.\]
+  - **IP port**: The IP port of the device. Default: *5038*.
 
 #### Smart-Serial SITTIG Interface connection
 
@@ -67,7 +59,7 @@ SITTIG INTERFACE:
 - Interface connection:
 
   - **IP address/host**: *localhost* (DataMiner acts as server)
-  - **IP port**: \[The DataMiner IP port used by Sittig DVA to send requests to. *Default 7531*.\]
+  - **IP port**: The DataMiner IP port used by Sittig DVA to send requests to. Default: *7531*.
 
 ### Configuration of Asterisk PBX credentials
 
@@ -77,7 +69,7 @@ Before communication with the **Asterisk PBX** is established, the **Username** 
 
 ### Announcements
 
-The announcements page can be used to access all current and history callsof the last x days.
+The announcements page can be used to access all current and history calls of the last x days.
 
 The **Announcements** table contains the most recent calls, while the **Announcement History** table (available on Announcement History popup page) has the entries for older calls. When an announcement is moved from the **Announcements** table to the **Announcement History** table can be configured, as well as when the announcements should be removed from the **Announcement History** table.
 
@@ -101,4 +93,4 @@ For the Asterisk PBX, it's possible to configure the **Username** and **Password
 
 This page displays some extra **configurations** that are available.
 
-It's possible starting from 1.0.0.3, to *disable* the **DTMF** command using the **Play DTMF** parameter.
+Starting from 1.0.0.3, it is possible to disable the **DTMF** command using the **Play DTMF** parameter.

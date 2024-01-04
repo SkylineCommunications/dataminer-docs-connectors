@@ -2,9 +2,9 @@
 uid: Connector_help_Mitec_18202-01MD_Power_Switching_Controller
 ---
 
-Mitec 18202-01MD Power Switching Controller
+# Mitec 18202-01MD Power Switching Controller
 
-This protocol displays status and summary information of the **Mitec 18202-01MD Power Switching Controller**. It also allows the user to execute remote commands to change the configuration of the device.
+This connector displays status and summary information of the **Mitec 18202-01MD Power Switching Controller**. It also allows the user to execute remote commands to change the configuration of the device.
 
 The Mitec 18202-01MD Power Switching Controller can monitor and control 4 RF Switches.
 
@@ -14,29 +14,21 @@ Serial commands are used to retrieve the device information and to execute the s
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Device Firmware Version</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><p>Software version 01</p>
-<p>Model Number 18202</p></td>
-</tr>
-</tbody>
-</table>
+| Range   | Supported Firmware                                                 |
+|---------|--------------------------------------------------------------------|
+| 1.0.0.x | Software version 01<br>Model Number 18202 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -70,8 +62,8 @@ This page displays the **Model Number.**
 
 ### Status
 
-This page displays the **Local/Remote** **Mode**, **Switch** **Summary** and **Power Supply Summary**, and finally also the **Switch 1, Switch 2, Switch 3, and Switch 4 settings.**
+This page displays the **Local/Remote Mode**, **Switch Summary** and **Power Supply Summary**, and finally also the **Switch 1, Switch 2, Switch 3, and Switch 4 settings.**
 
-The **Switch 1, Switch 2, Switch 3 and Switch 4** can be configured by clicking the **Togglebutton** under each position.
+The **Switch 1, Switch 2, Switch 3 and Switch 4** can be configured by clicking the **toggle button** under each position.
 
 There are two possible positions for each switch: **Position 1 and Position 2.**

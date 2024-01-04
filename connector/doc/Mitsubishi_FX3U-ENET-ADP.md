@@ -12,15 +12,21 @@ The Mitsubishi FX3U-ENET-ADP Ethernet module is an interface module on the PLC s
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -33,6 +39,7 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
 
@@ -61,7 +68,11 @@ On this page, the parameters **Engine Effekt Tag** and **Engine Effekt Reference
 If these parameters have the correct tags, the parameters **Effekt** and **SRW** will be calculated as follows:
 
 - Effekt = Sqrt(Engine Effekt \* Engine Effekt Reference ) \* 1.126
+
 - IF Engine Effekt Reference \> 0 Then SWR = Engine Effekt / Engine Effekt Reference
+
   Else
+
   SWR = 0
+
   Endif

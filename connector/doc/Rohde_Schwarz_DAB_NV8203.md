@@ -12,15 +12,21 @@ This is an **SNMPv2** protocol. Traps are not implemented.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                  |
-|------------------|------------------------------------------------------------------------------|
-| 1.0.0.x          | Software Identification Number: 2095.8613.00 Software Version Number: 1.33.0 |
+| Range   | Supported Firmware                                                              |
+|---------|---------------------------------------------------------------------------------|
+| 1.0.0.x | Software Identification Number: 2095.8613.00<br>Software Version Number: 1.33.0 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and Configuration
 

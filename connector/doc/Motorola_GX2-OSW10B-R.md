@@ -12,17 +12,17 @@ This connector provides a monitoring interface for the **Motorola GX2-OSW10B-R**
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
-| 2.0.0.x          | DVE focused     | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | No                  |
+| 2.0.0.x | DVE focused     | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 2.0.0.x          | D                           |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 2.0.0.x | D                          |
 
 ## Usage
 
@@ -32,7 +32,7 @@ This page displays general information about the card. **Unit Name**, **Module T
 
 ### Optical Switch
 
-This page contains the parameters **Digital Switch Control**, **Operation Mode**, **Switch Mode**, **Revert Mode**, **Revert Time**, **Switch Monitor**, **Factory Default** and **Analog** **Input Level**.
+This page contains the parameters **Digital Switch Control**, **Operation Mode**, **Switch Mode**, **Revert Mode**, **Revert Time**, **Switch Monitor**, **Factory Default** and **Analog Input Level**.
 
 The page also contains a page button that includes a **counter** related to the **Digital Switch Monitor**. This counter will increase each time the parent parameter (Digital Switch Monitor) changes from *Through* to *Crossover*. There is also a button that allows you to reset the value of the counter.
 

@@ -16,15 +16,21 @@ This connector retrieves and sets data via SNMP.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**  | **Device** **Firmware Version** |
-|-------------------|---------------------------------|
-| 1.0.0.x           | 2.3.23.D11.S23.H18.18.9.4       |
+| Range   | Supported Firmware        |
+|---------|---------------------------|
+| 1.0.0.x | 2.3.23.D11.S23.H18.18.9.4 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -50,7 +56,7 @@ SNMP Settings:
 
 ### General
 
-This is the default page, which displays general information on the device (refered as unit) and on the main and backup modules.
+This is the default page, which displays general information on the device (referred as unit) and on the main and backup modules.
 
 - **Unit Name**
 - **FW-Version**

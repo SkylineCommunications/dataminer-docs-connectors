@@ -14,16 +14,22 @@ This connector is compatible with "XNA" software units (base firmware starts wit
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version**                                                           |
-|----------------------|---------------------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main]   | MCU Base Firmware: XNA01.65 MCU Device ID: FNA00.00 MCU Modulator Module ID: BBA01.25 |
-| 1.0.0.2              | MCU Base Firmware: XNA01.73                                                           |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x [SLC Main]   | MCU Base Firmware: XNA01.65<br>MCU Device ID: FNA00.00<br>MCU Modulator Module ID: BBA01.25 |
+| 1.0.0.2              | MCU Base Firmware: XNA01.73                                                                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -73,7 +79,7 @@ Page buttons provide access to **Device State**, **M&C Interface Settings**, **S
 
 On this page, several alarms are displayed: **Mod. Communication (Alarm)**, **EEPROM (Warning)**, **LCD (Warning)**, **EEPROM (Warning)**, **SNMP (Warning)**, **NTP Communication (Warning)**, etc.
 
-There are also page buttons that allow access to **MCU Interface Status Parameters,** **Modulator Status, Channel Status, Stored Events** and **Stored Alarms.**
+There are also page buttons that allow access to **MCU Interface Status Parameters, Modulator Status, Channel Status, Stored Events** and **Stored Alarms.**
 
 ### Web Interface
 
@@ -90,7 +96,7 @@ On this page, you can edit the following parameters:
 
 In the **BISS Settings** section, you can set the **MCU BISS Clear SW**, **MCU BISS Encrypted SW** and **MCU BISS Injected ID**.
 
-A number of page buttons provide access to **Single Stream Configuration**, **Stream Input...A/B Settings**, **Carrier ID** and **Predistortion** parameters. There are also page buttons that provide access to the **MCU MTS Channels Table** and **MCU** **TSoIP Channels Table.**
+A number of page buttons provide access to **Single Stream Configuration**, **Stream Input...A/B Settings**, **Carrier ID** and **Predistortion** parameters. There are also page buttons that provide access to the **MCU MTS Channels Table** and **MCU TSoIP Channels Table.**
 
 ### Monitor
 
@@ -108,7 +114,7 @@ Page buttons provide access to **Device State**, **M&C Interface Settings**, **S
 
 On this page, several alarms are displayed: **Mod. Communication (Alarm)**, **EEPROM (Warning)**, **LCD (Warning)**, **EEPROM (Warning)**, **SNMP (Warning)**, **NTP Communication (Warning)**, etc.
 
-There are also page buttons that allow access to **MCU Interface Status Parameters,** **Modulator Status, Stored Events** and **Stored Alarms.**
+There are also page buttons that allow access to **MCU Interface Status Parameters, Modulator Status, Stored Events** and **Stored Alarms.**
 
 ### Traps (from version 1.0.0.3 onwards)
 

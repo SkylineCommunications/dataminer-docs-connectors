@@ -12,21 +12,27 @@ This connector can be used to manage the LG Display settings, such as the pictur
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
-#### SNMP main connection
+## Configuration
+
+### Connections
+
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -46,7 +52,7 @@ SNMP Settings:
 
 This page consists of the following sections:
 
-- **General**: Displays the system information of the device, such as the **System Name,** **System Description,** **System Up Time** and **System Contact**
+- **General**: Displays the system information of the device, such as the **System Name, System Description, System Up Time** and **System Contact**
 - **Picture Settings**: Allows you to set the screen information, with the parameters **Input Select, Aspect Ratio, Contrast, Brightness, Color, Tint, Sharpness** and **Color Temperature**
 - **Sound Settings**: Allows you to set the sound information, with the parameters **Balance, Screen Mute, Volume Mute** and **Volume Control**
 - **Management**: Allows you to set the **Power, Energy Saving, OSD Select, Remote Control Lock Mode, ISM Method** and **Auto Configuration.**

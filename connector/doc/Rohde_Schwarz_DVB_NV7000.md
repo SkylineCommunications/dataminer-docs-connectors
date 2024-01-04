@@ -12,13 +12,25 @@ This connector uses **SNMPv2** to poll data from the device and display it accor
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Exported connectors
+### Product Info
 
-| **Exported Connector**              | **Description**                                |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | See table below.        |
+
+### Exported Connectors
+
+| Exported Connector                 | Description                                    |
 |------------------------------------|------------------------------------------------|
 | Rohde Schwarz DVB NV7000 - Exciter | Exciter A and B containing their summary fault |
 

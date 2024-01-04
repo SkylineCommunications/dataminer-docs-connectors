@@ -10,15 +10,21 @@ This is enhanced services that contains elements with the protocol Sky UK SSR, S
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | False                   |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -44,7 +50,7 @@ Elements/Parameters:
 
 ### Alarms
 
-This page displays the **ALPB** **Table**, besides the the four alarm specified in the worflow, there are more rows depending on the number of VICC elements associated with the service, there is also one row for each router output.
+This page displays the **ALPB Table**, besides the the four alarm specified in the workflow, there are more rows depending on the number of VICC elements associated with the service, there is also one row for each router output.
 
 ### Device Data
 

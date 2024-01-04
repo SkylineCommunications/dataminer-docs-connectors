@@ -109,7 +109,7 @@ This page loads a named shuffle preset into a shuffle block associated with a sp
 
 This page allows you to set up predefined actions and combinations of actions using an interface.
 
-### Web Interface.
+### Web Interface
 
 This page shows the web page of the device. The web interface is only accessible when the client machine has network access to the product.
 

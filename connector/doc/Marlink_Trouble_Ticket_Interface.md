@@ -16,10 +16,10 @@ With a tree control, you can navigate through the different SLAs and created tic
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-| 1.0.1.x          | Connector review   | No                  | Yes                     |
+| Range   | Description      | DCF Integration | Cassandra Compliant |
+|---------|------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version  | No              | Yes                 |
+| 1.0.1.x | Connector review | No              | Yes                 |
 
 ## Installation and configuration
 

@@ -12,21 +12,21 @@ This connector was designed to interact with a SOAP interface. An **HTTP** conne
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**          |
-|------------------|--------------------------------------|
-| 1.0.0.x          | StruxureWare Data Center Expert v7.2 |
+| Range   | Supported Firmware                   |
+|---------|--------------------------------------|
+| 1.0.0.x | StruxureWare Data Center Expert v7.2 |
 
-### Exported connectors
+### System Info
 
-| **Exported Connector**                                                                                            | **Description** |
-|------------------------------------------------------------------------------------------------------------------|-----------------|
-| [Schneider Electric StruxureWare - Device](xref:Connector_help_Schneider_Electric_StruxureWare_-_Device) | Device          |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | [Schneider Electric StruxureWare - Device](xref:Connector_help_Schneider_Electric_StruxureWare_-_Device) |
 
 ## Installation and configuration
 
@@ -70,6 +70,6 @@ This page displays the **Devices table**. This table displays all device informa
 
 This page displays the **Sensors table**. This table contains all information regarding sensors.
 
-### Web Interface.
+### Web Interface
 
 This page can be used to access the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

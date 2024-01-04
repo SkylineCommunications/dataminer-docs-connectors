@@ -14,15 +14,21 @@ The connector uses the **serial** protocol to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Revision 1.1                |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Revision 1.1           |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -48,11 +54,11 @@ This page contains general information about the system. Here you can find the *
 
 ### Device Status
 
-This page contains general information about the device status. Here you can for example find **M&C Rain Blower**, **Antenna Wet**, **Fuel Level**, **De-Ice**, ...
+This page contains general information about the device status. Here you can for example find **M&C Rain Blower**, **Antenna Wet**, **Fuel Level**, **De-Ice**, etc.
 
 ### Heater Status
 
-This page contains general information about the heater status. There are 6 heaters available. Here you can for example find **Heater 1**, **Heater** **1: Fail**, **Heater 1: Call For Heat**, **Heater 1: Blower**, ...
+This page contains general information about the heater status. There are 6 heaters available. Here you can for example find **Heater 1**, **Heater 1: Fail**, **Heater 1: Call For Heat**, **Heater 1: Blower**, etc.
 
 ## Notes
 

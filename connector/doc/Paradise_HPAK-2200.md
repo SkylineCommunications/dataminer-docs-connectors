@@ -12,15 +12,21 @@ This connector is used to retrieve all data information and control the HPAK-220
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 2.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                  |
-|------------------|------------------------------------------------------------------------------|
-| 2.0.0.x          | Unknown. Possibly 3.5 or 3.6. Based on HPA_2250_20160425101307840 datasheet. |
+| Range   | Supported Firmware                                                           |
+|---------|------------------------------------------------------------------------------|
+| 2.0.0.x | Unknown. Possibly 3.5 or 3.6. Based on HPA_2250_20160425101307840 datasheet. |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -49,4 +55,4 @@ This page displays the device's settings such as **Mute**, **Unit Startup State*
 
 ### Alarms
 
-This page contains the device's alarm parameters such as **High** **Temperature Fault**, **Spare Fault**, **BUC Fault** etc.
+This page contains the device's alarm parameters such as **High Temperature Fault**, **Spare Fault**, **BUC Fault** etc.

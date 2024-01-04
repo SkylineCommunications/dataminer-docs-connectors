@@ -16,9 +16,21 @@ The result of the correlation will be sent back to the respective trap receiver 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -35,4 +47,4 @@ This page displays two tables, corresponding to alarms with two different types 
 - **B2B Alarms table**
 - **HFC Alarms table**
 
-The type of the **Trigger IVR** must be defined in the trap receiver elements (**UPC Nederland Expert Cluster Trap Receiver** connector v1.0.0.12 or later) on the parameter called **Trigger IVR Type.** The correlation will be performed between the alarms of both tables.Each table describes the **Severity**, **Trigger IVR**, **Matching Status,** **Cluster** and **DMA ID** of each alarm. The **Matching Status** is the **Correlated** **Trigger IVR** (result of the correlation process that will be sent to the correspondent trap receiver element). The **Cluster** and **DMA ID** columns show the name and DataMiner ID of the trap receiver element the alarm came from.
+The type of the **Trigger IVR** must be defined in the trap receiver elements (**UPC Nederland Expert Cluster Trap Receiver** connector v1.0.0.12 or later) on the parameter called **Trigger IVR Type.** The correlation will be performed between the alarms of both tables.Each table describes the **Severity**, **Trigger IVR**, **Matching Status, Cluster** and **DMA ID** of each alarm. The **Matching Status** is the **Correlated Trigger IVR** (result of the correlation process that will be sent to the correspondent trap receiver element). The **Cluster** and **DMA ID** columns show the name and DataMiner ID of the trap receiver element the alarm came from.

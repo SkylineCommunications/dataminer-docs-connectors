@@ -12,17 +12,17 @@ The **TVG430** provides JPEG2000 compression of HD-SDI signals, allowing transmi
 
 There are 2 operational modes available for the **T-VIPS TVG430**: *HD-SDI to IP* and *IP to HD-SDI*. This connector allows you to change the operational mode and to modify settings for both operational modes.
 
-### Version Info
-
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.1.x          | Initial version | Yes                 | False                   |
-
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.1.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.1.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.1.x   | Yes                 | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -55,7 +55,7 @@ This page is primarily used to monitor all alarms on the TVG430 device. To view 
 
 ### General
 
-This page displays general information about the device, such as the **Product Name**, **System** **Uptime**, etc. Some of these parameters can also be changed, like for example **System Contact** or **System Location**.
+This page displays general information about the device, such as the **Product Name**, **System Uptime**, etc. Some of these parameters can also be changed, like for example **System Contact** or **System Location**.
 
 With the **Reset Delay** parameter, the device can be reset after a period of time. This value needs to be between *1* and *6*. After this time has elapsed, the device will perform a cold restart.
 
@@ -86,7 +86,7 @@ If the **Operation Mode** parameter is set to **HD-SDI to IP**, a connection wil
 
 ### IP to HD-SDI
 
-If the **Operation Mode** parameter is set to **IP to** **HD-SDI** , a connection will be made from the **IP** inout interface to both **SDI-OUT1** and **SDI-OUT2** out interfaces, which will have the following connection properties:
+If the **Operation Mode** parameter is set to **IP to HD-SDI** , a connection will be made from the **IP** inout interface to both **SDI-OUT1** and **SDI-OUT2** out interfaces, which will have the following connection properties:
 
 - 1st property -\> Name: *Service*, Type: *output*, Value: *Rx Output Name*
 - 2nd property -\> Name: *IP,* Type: *input*, Value: *Rx Source IP*
