@@ -18,7 +18,7 @@ This is a DataMiner connector for the ADSS uplink switching control panel. The e
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | 13361-501          |
+| 1.0.0.x | 0222          |
 
 ### System Info
 
