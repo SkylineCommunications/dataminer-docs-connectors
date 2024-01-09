@@ -39,7 +39,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination.
-  - **Bus Address**: The bus address of the destination. (default: *1*, range: *ASCII values: ! to ~* )
+  - **Bus Address**: The bus address of the destination. (default: *1*, range: **ASCII values: ! to ~** )
 
 ## How to use
 
