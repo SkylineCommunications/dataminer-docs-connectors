@@ -10,10 +10,10 @@ This connector allows monitoring and control of the downconverter. The connector
 
 ### Version Info
 
-| **Range**            | **Key Features**                                            | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | This range uses a SNMP communication | -            | -                 |
-| 1.0.1.x    | This range uses a serial communication | -            | -                 |
+| Range              | Key Features                          | Based on | System Impact |
+|--------------------|---------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | This range uses SNMP communication.   | -        | -             |
+| 1.0.1.x            | This range uses serial communication. | -        | -             |
 
 ### Product Info
 
@@ -57,7 +57,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
-  - **Bus address**: The bus address of the device. Range: *64 - 95* (ASCII character '@' to '_').
+  - **Bus address**: The bus address of the device. Range: *64 - 95* (ASCII character "@" to "_").
 
 ### Initialization
 
