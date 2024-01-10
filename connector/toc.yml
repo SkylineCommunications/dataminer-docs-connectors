@@ -7887,6 +7887,8 @@
     topicUid: Connector_help_Sencore_SMD989
   - name: Sencore TSS 6220
     topicUid: Connector_help_Sencore_TSS_6220
+  - name: Sencore SDI2X
+    topicUid: Connector_help_Sencore_SDI2X
 - name: Sennheiser
   topicUid: Connector_help_Sennheiser_EM9046
   items:
