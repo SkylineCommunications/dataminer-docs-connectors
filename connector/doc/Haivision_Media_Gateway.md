@@ -15,7 +15,7 @@ The HTTP Rest API protocol connects to the Haivision Media Gateway to gather dev
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x | Added support for all source and destination protocol types. | 1.0.0.1 | Removed SRT from Sources and Destinations tables to improve compatibility with other protocol types. This can affect DataMiner filters, Automation scripts, Visio drawings, reports, dashboards, and web API. |
 | 1.0.2.x | Complete revision of the connector: <br>- Fix for session creation/deletion. <br>- Added system metrics information. <br>- Possibility to start/stop routes and destinations. <br>- Possibility to add SRT/UDP/RTP/RTSP/RTMP routes. <br>- Possibility to add SRT/UDP/RTP/HLS destinations. | 1.0.1.x | - |
-| 1.0.3.x [SLC Main] | Change indexes and display keys for Source Statistics and Destination Statistics tables to allow multiple connection rows for each input. Impact: All data in table including alarming, trending and visios will be affected. |
+| 1.0.3.x [SLC Main] | Changed indexes and display keys for Source Statistics and Destination Statistics tables to allow multiple connection rows for each input. | 1.0.2.x | All data in the tables will be affected, as well as alarm templates, trend templates, and visual overviews. |
 
 ### Product Info
 
