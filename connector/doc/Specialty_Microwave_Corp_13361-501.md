@@ -35,11 +35,12 @@ This is a DataMiner connector for the ADSS uplink switching control panel. The e
 This connector uses a serial connection and requires the following input during element creation:
 
 SERIAL CONNECTION:
+
 - Interface connection:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination.
-  - **Bus Address**: The bus address of the destination. (default: *1*, range: ASCII values ! to ~ )
+  - **Bus address**: The bus address of the destination (default: *1*; range: ASCII values ! to ~ ).
 
 ## How to use
 
