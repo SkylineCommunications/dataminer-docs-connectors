@@ -27,7 +27,8 @@ A Visio file is provided with the connector to group data and allow easy navigat
 |--------------------|--------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
 | 1.0.0.x            | Initial version. Most parameters are read-only, but you can configure the Service Control State. A Visio drawing is available. | No              | Yes                 |
 | 1.1.0.x            | OAUTH2 authentication.                                                                                                         | No              | Yes                 |
-| 1.1.1.x [SLC Main] | Added new connection to improve polling rate.                                                                                  | No              | Yes                 |
+| 1.1.1.x            | Added new connection to improve polling rate.                                                                                  | No              | Yes                 |
+| 1.1.2.x [SLC Main] | Updated Origin engine table primary key to fix duplicate key errors                                                            | No              | Yes                 |
 
 ### Product Info
 
@@ -36,6 +37,7 @@ A Visio file is provided with the connector to group data and allow easy navigat
 | 1.0.0.x   | API version 1.2.0.0.78  |
 | 1.1.0.x   | API version 1.3.5.0.122 |
 | 1.1.1.x   | API version 1.3.5.0.122 |
+| 1.1.2.x   | API version 1.3.5.0.122 |
 
 ## Configuration
 
