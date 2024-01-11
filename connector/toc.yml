@@ -1706,6 +1706,8 @@
   items:
   - name: Blankom HCB-200
     topicUid: Connector_help_Blankom_HCB-200
+  - name: Blankom B-Nova
+    topicUid: Connector_help_Blankom_B-Nova
 - name: Blue Coat
   topicUid: Connector_help_Blue_Coat_Packet_Shaper
   items:
