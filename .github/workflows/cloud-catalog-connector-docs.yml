@@ -19,7 +19,7 @@ jobs:
         uses: tj-actions/changed-files@v40
         with:
           files: |
-             doc/**.md
+             connector/doc/**.md
           include_all_old_new_renamed_files: true
       
       - name: Get all changed images
@@ -27,7 +27,7 @@ jobs:
         uses: tj-actions/changed-files@v40
         with:
           files: |
-              images/**      
+              connector/images/**      
 
       - name: Summary changed markdown files
         run: |
