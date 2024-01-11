@@ -17,10 +17,10 @@ This connector will export different connectors based on the retrieved data. A l
 
 The connector has 2 major ranges, which are not backwards compatible.
 
-| **Range** | **Description**                                     | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version with separate DVEs for sensor types | No                  | No (DisplayColumns)     |
-| 2.0.0.x          | Single DVE Type                                     | No                  | No                      |
+| Range   | Description                                         | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version with separate DVEs for sensor types | No              | No (DisplayColumns) |
+| 2.0.0.x | Single DVE Type                                     | No              | No                  |
 
 The 1.0.0.x range contains several tables to show sensor values for:
 
@@ -50,7 +50,7 @@ The suggested range for new installations is 2.0.0.x.
 
 ### Exported connectors
 
-| **Exported Connector**                            | **Description**                                    |
+| Exported Connector                               | Description                                        |
 |--------------------------------------------------|----------------------------------------------------|
 | AKCP Environmental Monitoring Unit - Temperature | Temperature probes Only supported in range 1.0.0.x |
 | AKCP Environmental Monitoring Unit - Voltage     | Voltage probes Only supported in range 1.0.0.x     |
@@ -74,7 +74,9 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 - **Port number**: The port of the connected device, by default *161.*
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private.*
-  *(Note: sets are currently not implemented, but we nonetheless suggest to enter the correct value for possible future updates.)*
+
+  > [!NOTE]
+  > Sets are currently not implemented, but we nonetheless suggest to enter the correct value for possible future updates.
 
 ## Usage: Range 1.0.0.x
 
@@ -129,7 +131,7 @@ The DVE name parameter will also be available, making it possible to rename the 
 
 ## Notes
 
-Temperature alarm levels are estimated for a healthy industrial environment. A *sensor error* status by default triggers a **Minor** **Alarm**.
+Temperature alarm levels are estimated for a healthy industrial environment. A *sensor error* status by default triggers a **Minor Alarm**.
 
 ## Usage: Range 2.0.0.x
 
@@ -148,7 +150,9 @@ See also "Defining Alarms*"* at the end of this document.
 Notes:
 
 - With the context menu you can force an immediate refresh.
+
 - The format of the alarm naming is set to: *\[TYPE\] Sensor: \[DESCRIPTION\] (#\[ID\])*
+
   where: *\[TYPE\]* is the content of the **Sensor Type** column, *\[DESCRIPTION\]* is the content of the **Sensor Description** column and *\[ID\]* is the key of the row.
 
 #### Creating DVEs
@@ -177,5 +181,17 @@ Renaming is only possible in the main element, by means of the **Sensors Table**
 ### Defining Alarms
 
 The advised alarm strategy is to monitor the **Sensor Value** parameter and to use filters in order to set different thresholds per sensor type.
+
 For example:
 
+| ​Sensor Value   | ​Critical Low | ​Normal | ​Critical High |
+|----------------|--------------|--------|---------------|
+| ​*Humidity*     | ​             | ​30     | ​70            |
+| ​*Temperature*  | ​0            | ​20     | ​35            |
+| ​*Thermostat*   | ​15           | ​20     | ​25            |
+| ​*Smoke*        | ​             | ​0      | ​1             |
+| *Active Power​* | ​10           | ​50     | ​150           |
+| ​*Voltage*      | ​228          | ​230    | ​232           |
+| ​*Current*      | ​0            | ​5      | ​10            |
+| ​*Power Factor* | ​0            | ​1      |               |
+| ​*Frequency*    | ​49           | ​50     | ​51            |

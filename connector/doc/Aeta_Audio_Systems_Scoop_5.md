@@ -78,7 +78,7 @@ This page displays status information like the **Coding, Bit Rate, Sample Rate, 
 
 ### Calls
 
-This page allows you to easily **start** and **stop** **calls** for the two codecs. You can set the **Remote** **Number** and check the **Codec** **Status**.
+This page allows you to easily **start** and **stop calls** for the two codecs. You can set the **Remote Number** and check the **Codec Status**.
 
 ### Connections
 

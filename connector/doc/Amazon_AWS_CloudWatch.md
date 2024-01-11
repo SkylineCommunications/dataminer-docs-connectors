@@ -68,7 +68,7 @@ HTTP POST messages are used to communicate with the Amazon AWS CloudWatch. This 
 
 ### General
 
-This page contains **Login** options, as well as information on which services should be polled with this element. To make sure that the connector can work properly, you **must** **first provide login information**.
+This page contains **Login** options, as well as information on which services should be polled with this element. To make sure that the connector can work properly, you **must first provide login information**.
 
 First specify the **Default Polling Interval** and **Default Poll All Metrics** column values of the Amazon Services table. These are the values that will be applied when a new service entry has been added. Changing these values will have no impact on existing **Service Entries**. If **Default Polling Interval** has a value other than *Disabled*, a DVE element will be created and the enabled metrics will be polled at the specified polling interval. If **Default Poll All Metrics** is *Enabled*, all available metrics will be polled by the DVE at the configured polling interval.
 

@@ -81,7 +81,7 @@ This page contains the network information separated in two tables **BP Ports** 
 
 ### Interfaces
 
-This page displays **Ethernet statistics** for device **Senders** and **Receivers**. This includes **ARP**, **ICMP** and **IGMP** **statistics**.
+This page displays **Ethernet statistics** for device **Senders** and **Receivers**. This includes **ARP**, **ICMP** and **IGMP statistics**.
 
 ### Encapsulation
 
@@ -93,7 +93,7 @@ This page contains **RTP statistics** for both **Senders** and **Receivers**, in
 
 ### PDV
 
-This page displays the **Packet Data Variation** statistics for both **Senders** and **Receivers**. Average values are shown for several timespans.
+This page displays the **Packet Data Variation** statistics for both **Senders** and **Receivers**. Average values are shown for several time spans.
 
 ### FEC
 

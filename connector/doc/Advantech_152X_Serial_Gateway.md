@@ -53,7 +53,7 @@ The web interface is only accessible when the client machine has network access 
 The following data pages are available in the element:
 
 - **General**: Displays general device information such as the time.
-- **Ethernet** **Configuration**: Contains Ethernet settings.
+- **Ethernet Configuration**: Contains Ethernet settings.
 - **Port Configuration**: Contains UART port settings.
 - **Operation Mode**: Contains settings for the ports based on the type of mode of the ports (VCOM, USDG Data, USDG Control, or RFC 2217).
 - **Monitor**: Contains bandwidth details for the port and peer connection.

@@ -49,7 +49,7 @@ The web interface is only accessible when the client machine has network access 
 
 This connector consists of the following pages:
 
-- **General**: Displays general information about the device, such as the **Firmware** **Version**, **Model**, etc.
+- **General**: Displays general information about the device, such as the **Firmware Version**, **Model**, etc.
 - **Frequency**: Displays all the available frequency parameters.
 - **Power**: Displays all the available power parameters.
 - **Errors**: Displays a table listing the errors that occurred on the device.

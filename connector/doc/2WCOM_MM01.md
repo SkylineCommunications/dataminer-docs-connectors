@@ -10,19 +10,19 @@ This connector monitors the 2WCOM MM01, a **Codec** device, using **SNMP**.
 
 ### Ranges of the connector
 
-| **Range**              | **Description**                                                 |
-|------------------------|-----------------------------------------------------------------|
-| 1.0.0.x                | Initial version.                                                |
-| 1.1.0.x \[Obsolete\]   | Support for CSRF Token.                                         |
-| 1.1.1.x \[Main range\] | Based on 1.1.0.8. Changed default communication type to SNMPv2. |
+| Range                | Description                                                     |
+|----------------------|-----------------------------------------------------------------|
+| 1.0.0.x              | Initial version.                                                |
+| 1.1.0.x [Obsolete]   | Support for CSRF Token.                                         |
+| 1.1.1.x [Main range] | Based on 1.1.0.8. Changed default communication type to SNMPv2. |
 
 ### Product Info
 
-| **Range**              | **Device Firmware Version**                                                            |
-|------------------------|----------------------------------------------------------------------------------------|
-| 1.0.0.x                | 2.6.37-2wcom (kernel release) / 1.30 (MM01 version)                                    |
-| 1.1.0.x \[Obsolete\]   | 2.6.37-2wcom_ACIP (kernel release) / 185 (MM01 version) / 2.80 (web interface version) |
-| 1.1.1.x \[Main range\] | 2.6.37-2wcom_ACIP (kernel release) / 185 (MM01 version) / 2.80 (web interface version) |
+| Range                | Device Firmware Version                                                                |
+|----------------------|----------------------------------------------------------------------------------------|
+| 1.0.0.x              | 2.6.37-2wcom (kernel release) / 1.30 (MM01 version)                                    |
+| 1.1.0.x [Obsolete]   | 2.6.37-2wcom_ACIP (kernel release) / 185 (MM01 version) / 2.80 (web interface version) |
+| 1.1.1.x [Main range] | 2.6.37-2wcom_ACIP (kernel release) / 185 (MM01 version) / 2.80 (web interface version) |
 
 ## Configuration
 
@@ -88,7 +88,7 @@ The page also contains 3 page buttons:
 
 - **Login**: In order to change the system settings parameters or to upload a configuration or firmware file, user **credentials** must be entered here.
 - **Settings**: On this page, you can save the current device configuration or upload a previously saved configuration file.
-- **Firmware** **Upload**: On this page, you can upload a firmware file to the device.
+- **Firmware Upload**: On this page, you can upload a firmware file to the device.
 
 ### Status
 
