@@ -8403,6 +8403,8 @@
     topicUid: Connector_help_Snell_Wilcox_IQUPC00
   - name: Snell Wilcox IQVDA00
     topicUid: Connector_help_Snell_Wilcox_IQVDA00
+  - name: Snell Wilcox IQVDA01
+    topicUid: Connector_help_Snell_Wilcox_IQVDA01
   - name: Snell Wilcox KudosPro
     topicUid: Connector_help_Snell_Wilcox_KudosPro
   - name: Snell Wilcox KudosPro Frame
