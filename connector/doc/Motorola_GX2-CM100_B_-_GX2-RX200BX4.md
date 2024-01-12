@@ -12,15 +12,21 @@ This connector provides a monitoring interface for the **Motorola GX2-RX200BX4**
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.1.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 2.0.1.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.1.x          | B                           |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 2.0.1.x   | B                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,11 +38,11 @@ This connector is used by DVE child elements that are **automatically created** 
 
 ### General
 
-This page displays general information about the card, including the **Unit Name**, **Module Type**, **Firmware** and **Hardware** **Version**, **IP Address** and **Physical Address**.
+This page displays general information about the card, including the **Unit Name**, **Module Type**, **Firmware** and **Hardware Version**, **IP Address** and **Physical Address**.
 
 ### Optical Receiver
 
-This page contains the parameters **Optical Power** **1, 2, 3** and **4**, **Fan Current**, **Analog 12V Current**, **Digital Revert Time**, **Module Configuration**, **Digital Test Point** and **Default Reset**.
+This page contains the parameters **Optical Power 1, 2, 3** and **4**, **Fan Current**, **Analog 12V Current**, **Digital Revert Time**, **Module Configuration**, **Digital Test Point** and **Default Reset**.
 
 The **Settings** page button on this page displays a table where you can configure the digital parameters: **Mode**, **Wavelength**, **Attenuation** and **Switch Threshold**.
 

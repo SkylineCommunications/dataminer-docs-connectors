@@ -24,37 +24,9 @@ The connector retrieves information about all the modules using the SNMP protoco
 
 ### System Info
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-<td><strong>Linked Components</strong></td>
-<td><strong>Exported Components</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>No</td>
-<td>Yes</td>
-<td>-</td>
-<td><ul>
-<li>Hiltron HCS4 - Double Bias Tee</li>
-<li>Hiltron HCS4 - PSA Power Supply</li>
-<li>Hiltron HCS4 - SWI Waveguide Switch</li>
-<li>Hiltron HCS4 - L-Band 2+1 Redundancy Switch</li>
-<li>Hiltron HCS4 - LNB</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - Hiltron HCS4 - Double Bias Tee<br>- Hiltron HCS4 - PSA Power Supply<br>- Hiltron HCS4 - SWI Waveguide Switch<br>- Hiltron HCS4 - L-Band 2+1 Redundancy Switch<br>- Hiltron HCS4 - LNB |
 
 ## Configuration
 

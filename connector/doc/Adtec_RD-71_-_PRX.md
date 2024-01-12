@@ -4,7 +4,7 @@ uid: Connector_help_Adtec_RD-71_-_PRX
 
 # Adtec RD-71 - PRX
 
-The **Adtec RD-71 - PRX** connector is a DVE created by the **[Adtec RD-71](xref:Connector_help_Adtec_RD-71)** connector.
+The **Adtec RD-71 - PRX** connector is a DVE created by the [Adtec RD-71](xref:Connector_help_Adtec_RD-71) connector.
 
 ## About
 
@@ -14,7 +14,7 @@ This connector is created when the **RD-71** device is using the **PRX** model d
 
 ### Creation
 
-This connector is used by DVE child elements that are **automatically created** by the parent connector [**Adtec RD-71**](xref:Connector_help_Adtec_RD-71), from version 1.0.1.x onwards.
+This connector is used by DVE child elements that are **automatically created** by the parent connector [Adtec RD-71](xref:Connector_help_Adtec_RD-71), from version 1.0.1.x onwards.
 
 ## Usage
 
@@ -22,7 +22,7 @@ This connector is used by DVE child elements that are **automatically created** 
 
 This page contains important information about the device.
 
-Some general parameters such as the **System Up Time,** **Status**, **Source**, **Source Status** are displayed on this page as well as **Local Oscillator** related parameters and **RF Status** parameters.
+Some general parameters such as the **System Up Time, Status**, **Source**, **Source Status** are displayed on this page as well as **Local Oscillator** related parameters and **RF Status** parameters.
 
 ### General
 

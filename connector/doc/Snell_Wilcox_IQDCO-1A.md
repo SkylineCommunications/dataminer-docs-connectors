@@ -14,21 +14,27 @@ Two timers are used to poll information: one for short-to-medium term operations
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**             |
-|------------------|-----------------------------------------|
-| 1.0.0.x          | Compatible with software version 5.2.6. |
+| Range   | Supported Firmware                      |
+|---------|-----------------------------------------|
+| 1.0.0.x | Compatible with software version 5.2.6. |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
 ### Creation
 
-#### SNMP Main Connection:
+#### SNMP Main Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 

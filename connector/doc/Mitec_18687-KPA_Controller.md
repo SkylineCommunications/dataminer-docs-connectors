@@ -14,15 +14,15 @@ The connector polls information from the **Mitec 18687-KPA Controller** device e
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | No                  |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                               |
-|------------------|---------------------------------------------------------------------------------------|
-| 1.0.0.x          | Compatible with software version 2.23 of the RSU Model 18687-01 (configuration 1.00). |
+| Range   | Device Firmware Version                                                               |
+|---------|---------------------------------------------------------------------------------------|
+| 1.0.0.x | Compatible with software version 2.23 of the RSU Model 18687-01 (configuration 1.00). |
 
 ## Installation and configuration
 

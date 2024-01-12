@@ -12,19 +12,25 @@ This connector polls data from the device using a **smart-serial** connection. F
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version | **Serial Protocol Version** |
-|------------------|-----------------------------|-----------------------------|
-| 1.0.0.x          | 8.8.1                       | 1.9                         |
+| Range   | Supported Firmware Version | Serial Protocol Version |
+|---------|----------------------------|-------------------------|
+| 1.0.0.x | 8.8.1                      | 1.9                     |
 
-### Exported connectors
+### System Info
 
-| **Exported Connector**                    | **Description**                                           |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components    |
+|-----------|---------------------|-------------------------|-----------------------|------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | See table below.       |
+
+### Exported Connectors
+
+| Exported Connector                       | Description                                               |
 |------------------------------------------|-----------------------------------------------------------|
 | LYNX Technik AG Series 5000 - RCT 5023-G | Rack Controller                                           |
 | LYNX Technik AG Series 5000 - DVD 5820   | Switching and Distribution Unit                           |
@@ -71,7 +77,7 @@ This page displays information about the **Stacks**, **Controllers** and **Cards
 
 It is also possible to view the **Serial Protocol Version** of the device here and to enable or disable the **Child Completion State**.
 
-The parameter **Time Since Last Pushed Data** displays the time in seconds since the device and the element comunicated with each other.
+The parameter **Time Since Last Pushed Data** displays the time in seconds since the device and the element communicated with each other.
 
 ### Overview
 

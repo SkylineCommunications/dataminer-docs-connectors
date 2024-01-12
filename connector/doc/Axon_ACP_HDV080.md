@@ -12,30 +12,9 @@ The **Axon ACP HDV080** connector is used to configure and monitor the HDV080 ca
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><ul>
-<li>Initial Version</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -48,8 +27,6 @@ The **Axon ACP HDV080** connector is used to configure and monitor the HDV080 ca
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
-
-
 
 ## Configuration
 
@@ -103,7 +80,8 @@ The element has the following pages:
 
 - **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
 
-**Note**: If the setting of a parameter depends on another parameter, when the user tries to set the second parameter before the first parameter is set, a pop up window will be displayed indicating what to do first. In this case, the user must set the first parameter according to the information in the pop up window before setting the second parameter. Example: In order to set Active Preset (on the Preset page), the Preset Control has to be set to Manual mode.
+> [!NOTE]
+> If the setting of a parameter depends on another parameter, when the user tries to set the second parameter before the first parameter is set, a pop-up window will be displayed indicating what to do first. In this case, the user must set the first parameter according to the information in the pop-up window before setting the second parameter. For example, in order to set Active Preset (on the Preset page), the Preset Control has to be set to Manual mode.
 
 ## DataMiner Connectivity Framework
 
@@ -131,11 +109,11 @@ Physical fixed interfaces:
 
 #### Internal Connections
 
-- **SDI Input -\> HD/SD SDI Output 1**
-- **SDI Input -\> HD/SD SDI Output 2**
-- **SDI Input -\> HD/SD SDI Output 3**
-- **SDI Input -\> HD/SD SDI Output 4**
-- **SDI Input -\> SDI/CVBS Output 1**
-- **SDI Input -\> SDI/CVBS Output 2**
-- **SDI Input -\> SDI/CVBS Output 3**
-- **SDI Input -\> SDI/CVBS Output 4**
+- **SDI Input -> HD/SD SDI Output 1**
+- **SDI Input -> HD/SD SDI Output 2**
+- **SDI Input -> HD/SD SDI Output 3**
+- **SDI Input -> HD/SD SDI Output 4**
+- **SDI Input -> SDI/CVBS Output 1**
+- **SDI Input -> SDI/CVBS Output 2**
+- **SDI Input -> SDI/CVBS Output 3**
+- **SDI Input -> SDI/CVBS Output 4**

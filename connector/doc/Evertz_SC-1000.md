@@ -8,14 +8,14 @@ The aim of this connector is mainly to control and monitor a matrix.
 
 ## About
 
-The connector uses 2 connections. The main connection (*smart-serial*) implements the *Quartz* communication protocol to monitor and control a matrix. The second connection (SNMP) is used to get general device information.
+The connector uses two connections. The main connection (*smart-serial*) implements the *Quartz* communication protocol to monitor and control a matrix. The second connection (SNMP) is used to get general device information.
 
 ### Version Info
 
-| **Range** | **Description**                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                   | No                  | Yes                     |
-| 2.0.0.x          | New Smart-Serial connection to support the Quartz protocol, needed for the matrix | No                  | Yes                     |
+| Range   | Description                                                                       | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                                                   | No              | Yes                 |
+| 2.0.0.x | New Smart-Serial connection to support the Quartz protocol, needed for the matrix | No              | Yes                 |
 
 ### Product Info
 
@@ -23,8 +23,6 @@ The connector uses 2 connections. The main connection (*smart-serial*) implement
 |------------------|-------------------------------|
 | 1.0.0.x          | N/A                           |
 | 2.0.0.x          | Software: 2.43 Hardware: 2.03 |
-
-
 
 ## Installation and configuration
 
@@ -69,7 +67,7 @@ Here, you can find the following parameters: **Q-Link Version,** **Q-Link** **Ad
 
 ### Matrix Configuration
 
-On this page, configuration parameters are available: **Number of Inputs, Number of Outputs, Number of Levels, Local IP-Address, Remote IP-Address**. When changing the **Number of Inputs** and **Number of Outputs** parameters, the matrix size is automatically updated. Then, you need to press the **Refresh Matrix** to immediatly poll the matrix *crosspoints* and *inputs/outputs* labels.
+On this page, configuration parameters are available: **Number of Inputs, Number of Outputs, Number of Levels, Local IP-Address, Remote IP-Address**. When changing the **Number of Inputs** and **Number of Outputs** parameters, the matrix size is automatically updated. Then, you need to press the **Refresh Matrix** to immediately poll the matrix *crosspoints* and *inputs/outputs* labels.
 
 The **Reset Router** allows to reset the matrix connections.
 

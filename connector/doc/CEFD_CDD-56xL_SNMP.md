@@ -13,11 +13,11 @@ To get more detailed information consult this website <http://www.comtechefdata.
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                                    | **Based on** | **System Impact**                                 |
-|-----------|---------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x   | Initial version                                                                                                     | -            | -                                                 |
-| 1.0.1.x   |                                                                                                                     | 1.0.0.8      |                                                   |
-| 1.0.2.x   | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.1.3      | **Old trend data will be lost for these tables.** |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x |  | 1.0.0.8 |  |
+| 1.0.2.x | Multiple tables now uses naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.1.3 | **Old trend data will be lost for these tables.** |
 
 ### Product Info
 
@@ -83,7 +83,7 @@ Use this page to configure Mode, Access, Features, SNMP and Decryption related p
 
 - Decryption - *This is accessible only when the 3xDES FAST feature has been purchased and its FAST Access Code has been entered.*
 
-  - **3xDES Decryption:** **Receive Keys 1 - 8**: 3xDES keys are used to decrypt traffic being received from the Satellite Interface. Each key is entered in hexadecimal format (48 digits max).
+  - **3xDES Decryption**: Receive Keys 1 - 8**: 3xDES keys are used to decrypt traffic being received from the Satellite Interface. Each key is entered in hexadecimal format (48 digits max).
 
 ### Demod - Demod
 

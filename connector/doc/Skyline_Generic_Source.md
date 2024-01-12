@@ -12,13 +12,13 @@ This connector uses a virtual connection to provide a standardized way of managi
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                          | **Based on** | **System Impact**                                                                    |
-|----------------------|-----------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                          | -            | -                                                                                    |
-| 1.0.1.x              | ProfileManagerHelper calls used.                                                                          | -            | -                                                                                    |
-| 1.1.0.x              | Implemented support for the new workflow and data structure of profile definitions and profile instances. | 1.0.1.3      | Names and descriptions have been changed to match the profile definition parameters. |
-| 1.1.1.x              | Profile Manager is now obsolete. The connector now only uses the Profile Helper.                          | 1.1.0.21     | The minimum DMA version is now 10.0.8. Upgrade if necessary.                         |
-| 1.1.2.x [SLC Main]   | DCF added to the Sources Table.                                                                           | 1.1.1.7      | -                                                                                    |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x | ProfileManagerHelper calls used. | - | - |
+| 1.1.0.x | Implemented support for the new workflow and data structure of profile definitions and profile instances. | 1.0.1.3 | Names and descriptions have been changed to match the profile definition parameters. |
+| 1.1.1.x | Profile Manager is now obsolete. The connector now only uses the Profile Helper. | 1.1.0.21 | The minimum DMA version is now 10.0.8. Upgrade if necessary. |
+| 1.1.2.x [SLC Main] | DCF added to the Sources Table. | 1.1.1.7 | - |
 
 ### System Info
 
@@ -29,8 +29,6 @@ This connector uses a virtual connection to provide a standardized way of managi
 | 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 | 1.1.2.x   | Yes                 | Yes                     | -                     | -                       |
-
-
 
 ## Configuration
 
@@ -96,4 +94,4 @@ Right-click a table row to add a new row for the same source, remove the selecte
 If you **switch to a more recent version** of this connector:
 
 1. Recommit all resources.
-2. Go to the Source Management page and use the **Create/Update Profile** and **Check Generic Source Profile** buttons.
+1. Go to the Source Management page and use the **Create/Update Profile** and **Check Generic Source Profile** buttons.

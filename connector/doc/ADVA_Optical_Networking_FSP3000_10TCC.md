@@ -16,36 +16,10 @@ All information is retrieved using the SNMP protocol.
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><p>Initial version</p>
-<p>Deprecated</p></td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td><p>Changed element topology. A different element is now used to retrieve the entity table of all cards from the device.</p>
-<p>To be used</p></td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range              | Key Features                                                                                                         | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version. Deprecated.                                                                                         | -        | -             |
+| 2.0.0.x [SLC Main] | Changed element topology. A different element is now used to retrieve the entity table of all cards from the device. | -        | -             |
 
 ### Product Info
 
@@ -54,9 +28,16 @@ All information is retrieved using the SNMP protocol.
 | 1.0.0.x          | N/A                         |
 | 2.0.0.x          | All firmware versions       |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+
+## Configuration
+
+### Connections
 
 #### SNMP Main connection
 
@@ -72,10 +53,6 @@ SNMP Settings:
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device (default value: *public*).
 - **Set community string**: The community string used when setting values on the device (default value: *private*).
-
-### Configuration
-
-No additional configuration is necessary in the element.
 
 ## Usage
 

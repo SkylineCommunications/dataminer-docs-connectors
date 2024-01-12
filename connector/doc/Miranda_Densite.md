@@ -12,9 +12,9 @@ The connector displays the information about the different slots and the fame in
 
 ### Version Info
 
-| **Range** | **Description**              | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------|---------------------|-------------------------|
-| 2.0.1.x          | Fixed Issues, Changed Layout | Yes                 | Yes                     |
+| Range   | Description                  | DCF Integration | Cassandra Compliant |
+|---------|------------------------------|-----------------|---------------------|
+| 2.0.1.x | Fixed Issues, Changed Layout | Yes             | Yes                 |
 
 ### Product Info
 
@@ -37,10 +37,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device
-  (default value if not overridden in the connector: *public*).
-- **Set community string**: The community string used when setting values on the device
-  (default value if not overridden in the connector: *private*).
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage
 

@@ -12,11 +12,11 @@ This connector retrieves all data using a single SNMP connection. SNMP traps can
 
 ### Version Info
 
-| **Range** | **Key Features**                                                     | **Based on** | **System Impact** |
-|-----------|----------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                                      | -            | -                 |
-| 1.0.1.x   | \- Layout changed. - multipleGetBulk is now used.                    | -            | -                 |
-| 1.0.2.x   | \- Added minimum required version. - Removed multipleGetBulk option. | -            | -                 |
+| Range   | Key Features                                                            | Based on | System Impact |
+|---------|-------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version                                                         | -        | -             |
+| 1.0.1.x | - Layout changed. <br>- multipleGetBulk is now used.                    | -        | -             |
+| 1.0.2.x | - Added minimum required version. <br>- Removed multipleGetBulk option. | -        | -             |
 
 ### Product Info
 
@@ -60,7 +60,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### Main
 
-This page contains the following parameters: **Version**, **SNMP** **Trap** **Addresses**, **HTTP** **Proxy**, **Number of Inputs**, **Number of Outputs**, **Audio Input**, and **Audio Stream**.
+This page contains the following parameters: **Version**, **SNMP Trap Addresses**, **HTTP Proxy**, **Number of Inputs**, **Number of Outputs**, **Audio Input**, and **Audio Stream**.
 
 In addition, two tables are displayed: **Monitor Control** and **Layout Definition**.
 

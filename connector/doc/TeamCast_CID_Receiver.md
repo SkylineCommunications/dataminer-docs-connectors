@@ -14,17 +14,23 @@ The product reference of this CID Receiver is **CID0-1510**. The CID0-1510 is us
 
 This connector retrieves and sets data via **SNMP**.
 
-Ranges of the connector
+### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-Supported firmware versions
+### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | S1100-B008                  |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | S1100-B008             |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -66,7 +72,7 @@ This page allows the user to **configure** the **TSOIP** parameters. These confi
 
 ### Carrier ID
 
-This page allows the user to **enable/disable CID Extraction.** **Info** parameters regarding the **CID Extraction** are also shown on this page.
+This page allows the user to **enable/disable CID Extraction. Info** parameters regarding the **CID Extraction** are also shown on this page.
 
 ### Alarm
 
@@ -75,4 +81,4 @@ Following the alarm tables the page shows the **status LEDs** and the **relay st
 
 ### WebInterface
 
-The web interface is meant to embed the **device webUI**. The **address** **of the host/webUI** has to be configured on the **General** page (**SNMP Configuration**), otherwise the web interface defaults to localhost (127.0.0.1).
+The web interface is meant to embed the **device webUI**. The **address of the host/webUI** has to be configured on the **General** page (**SNMP Configuration**), otherwise the web interface defaults to localhost (127.0.0.1).

@@ -14,17 +14,17 @@ The interface uses a packet structure, with each packet consisting of 7 bytes of
 
 ### Version Info
 
-| **Range** | **Description**          |
-|------------------|--------------------------|
-| 1.0.0.x          | Initial version          |
-| 1.1.0.x          | Support for firmware 0.5 |
+| Range   | Key Features             | Based on | System Impact |
+|---------|--------------------------|----------|---------------|
+| 1.0.0.x | Initial version          | -        | -             |
+| 1.1.0.x | Support for firmware 0.5 | -        | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware Version** |
-|------------------|--------------------------------|
-| 1.0.0.x          | 01                             |
-| 1.1.0.x          | 0.5                            |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 01                 |
+| 1.1.0.x | 0.5                |
 
 ## Installation and configuration
 
@@ -61,7 +61,7 @@ You can find the following information on this page:
 - **Device address**: Shows the current address of the device, and allows you to change it. The valid range for the address is *1 - 15*.
 
   > [!NOTE]
-  > If you change the device address, you also have to change the **Bus Address** of the device in order for the connector to continue communication. You can do this by right-clicking the device in the Surveyor and selecting **Edit**. Then, under **More TCP/IP** **settings**, change the bus address to match the address you entered for the parameter. Communication will then be re-established.
+  > If you change the device address, you also have to change the **Bus Address** of the device in order for the connector to continue communication. You can do this by right-clicking the device in the Surveyor and selecting **Edit**. Then, under **More TCP/IP settings**, change the bus address to match the address you entered for the parameter. Communication will then be re-established.
 
 - **Unit Type:** Describes whether the unit is an *Up Converter* or a *Down Converter*.
 

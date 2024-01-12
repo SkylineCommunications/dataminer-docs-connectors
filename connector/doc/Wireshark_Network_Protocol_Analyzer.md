@@ -14,15 +14,21 @@ After the captures are taken, they are moved to a configurable remote destinatio
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Linux Server                |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Linux Server           |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -45,7 +51,7 @@ A Linux machine needs to be accessible from the DataMiner server hosting the Wir
 
 - The following modules need to be supported on that Linux server:
 
-- SSH enabled
+  - SSH enabled
   - Wireshark (tshark CLI)
   - Samba (Configure a **shared folder** with the same name as the destination folder from the Configurations page - refer to the **Configurations section** below for more information.)
 
@@ -80,10 +86,15 @@ The Closed Captures table will be automatically cleaned based on the cleanup con
 On this page, you need to configure the following settings:
 
 - **Destination Path Capture Server**: The path where the tshark process will write its file. This path is also used to do the remote copy of the captures. Make sure this path is locally available on the server and also make sure the Samba shared folder has this same name.
+
   For example, when this path is set to "*/WiresharkCaptures*", that means the local folder "/WiresharkCaptures/" needs to be available, and the shared folder (configured in Samba) should also have this path name: "*\\serverip\WiresharkCaptures\\*".
+
 - **Time to Wait Before Copying Files From Server**: To make sure the capture process is fully closed, there will be a delay of at least 15 seconds and at most 10 minutes.
+
 - **Amount of Closed Captures to Keep** and **Auto Delete Removed Captures** will make sure that the **Closed Captures** table will not grow endlessly. Older captures can be removed with this as well.
+
 - **Remote Central Server Path**: The path where the captures will be moved when they are complete and the wait delay has passed. Note that in the background, the capture will be compressed and decompressed to speed up the file move over the network.
+
 - **Remote Central Server User Name**, **Domain** and **Password**: When authentication is required to access the remote shared folder on the capture server or the destination server, the user name, domain and password can be used to impersonate the file moves. Note that you should use credentials that will allow full access to both locations.
 
 ### Filters

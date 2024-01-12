@@ -86,7 +86,6 @@ You can find the JSON schema definitions of these objects below.
 
 ### Data (real-time trend data)
 
-
 ```json
 {
   "definitions": {},

@@ -14,15 +14,21 @@ With this connector, important weather data can be retrieved based on **location
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                           |
-|------------------|-------------------------------------------------------|
-| 1.0.0.x          | [http://api.met.no](http://api.met.no/) (Version 0.3) |
+| Range   | Supported Firmware                                    |
+|---------|-------------------------------------------------------|
+| 1.0.0.x | [http://api.met.no](http://api.met.no/) (Version 0.3) |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -34,7 +40,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: [*http://api.met.no*](http://api.met.no/)
+- **IP address/host**: [http://api.met.no](http://api.met.no/)
 - **IP port**: *80*
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
@@ -58,14 +64,18 @@ However, please note that it is better to enable or disable **Monitoring** inste
 Several locations can be added in one go with the **AS AddLocations** parameter. This is also the parameter that should be used when adding rows with **Automation scripts**. The parameter expects the following format:
 
 - *Location\*Latitude\*Longitude\*Height\*Monitored;Location\*Latitude\*Longitude\*Height\*Monitored; ...*
+
   If there is no **Height**, leave the value blank (e.g. \*Longitude\*\*Monitored;).
+
   **Monitored** should be set to 0 for false or to 1 for true.
+
   Locations must be unique!
+
   Example: *TestLocation 1\*60.10\*9.58\*\*1;TestLocation 2\*60.10\*9.58\*\*1;TestLocation 3\*60.10\*9.58\*\*1*
 
 ### Summary
 
-This page contains all **weather data averaged per day**. The number of days shown can be defined with the **Predicted Days** parameter. Please note that the data for every predicted day will be contained in an **extra row for each** **location** (e.g. *200 locations showing 5 days will result in 1000 rows*).
+This page contains all **weather data averaged per day**. The number of days shown can be defined with the **Predicted Days** parameter. Please note that the data for every predicted day will be contained in an **extra row for each location** (e.g. *200 locations showing 5 days will result in 1000 rows*).
 
 The display key of each row consists of the following information: **Location - Time**, where Time = *Today, Tomorrow, 1 Day From Now, 2 Days From Now, ...*
 

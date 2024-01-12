@@ -17,7 +17,7 @@ The connector is used to configure a CXU-1240/CXU-1010.
 
 ### Creation
 
-This connector uses a Simple Network Management Protocol (**SNMP**) connection and needs following user information:
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 **SNMP CONNECTION**:
 
@@ -31,126 +31,120 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 
 ## Usage
 
-Once all configurations are done, this connector will work stand alone.
+Once the element has been configured, it will work on its own.
 
 ## General
 
 This page contains some general data concerning the device.
 
-With the button **Clear temperature statistics**, it is possible to clear the temperature parameters
+With the button **Clear temperature statistics**, you can clear the temperature parameters
 
 ## Admin
 
 This page contains standard administrator parameter such as the location and name of the device.
 
-With the button **Reboot unit**, it is possible to reboot the device.
-When pressing the button **Save Configuration**, The System parameters will be saved to the device.
+With the button **Reboot unit**, you can reboot the device.
 
-On this page it is also possible to switch to the redundant unit and to set the SNMP Trap Destination address.
+Click the button **Save Configuration** to save the system parameters to the device.
+
+On this page, you can also switch to the redundant unit and set the SNMP Trap Destination address.
 
 ## Configuration - Network
 
-Here it is possible to find the current network settings.
+Here you can find the current network settings.
 
-It is possible to change these setting by clicking on the **Modify.** page
-A new page will pop up where it is possible to fill in the new values for the parameters.
-Once this has been done click on the **Apply** button to apply these settings to the device.
+On the **Modify** subpage, you can change these settings. When you have filled in the new values for the parameters, click the **Apply** button to apply these settings to the device.
 
-Configuration - E1 Ports Page
-On this page you will find the configurations of the E1 ports.
-Here you can configure everything concerning the E1 Ports.
+## Configuration - E1 Ports Page
 
-On the bottom of the page you will also find the possibility to change the jitter buffer Depth.
+On this page, you can configure everything related to the E1 ports.
 
-**Note**: settings done on this page will immediately be applied to the device.
+At the bottom of the page, you can change the jitter buffer depth.
+
+> [!NOTE]
+> Settings done on this page will immediately be applied to the device.
 
 ## Configuration - Wan interfaces
 
-On this page you will find the configuration of the Wan Interfaces
+On this page, you can find the configuration of the Wan Interfaces.
+
 Here you can configure the Traffic channels.
-It is possible to delete an entry from the table by clicking the **Delete** button of the corresponding row.
 
-For creating a new entry in the Traffic channel Table click on the **Create New Entry.** button located at the bottom of the page. Fill in the Different Parameters.
-Press **Apply** to add the new entry to the table.
+- To delete an entry from the table, click the **Delete** button in the corresponding row.
 
-**Note**: when the maximum number of entries is reached. It is not possible to add a new entry and therefore a row should first be deleted.
+- To create a new entry in the table, click the **Create New Entry.** button located at the bottom of the page, then fill in the parameters and click **Apply**.
 
-## Configuration - Clocking
+> [!NOTE]
+> When the maximum number of entries has been reached, you will not be able to add a new entry unless you delete a row first.
 
-On this page you will find the Settings of the Clocking Configuration.
-For changing these parameters click on the **Modify.** button.
-A new window will pop up where you can change the selected settings.
-When clicking the **Apply** button, these settings will be applied to the device.
+## Configuration - Clocking / Configuration - Redundancy
 
-## Configuration - Redundancy
+On these pages, you can find the settings for the clocking configuration.
 
-On this page you will find the settings of the clocking configuration. For changing these parameters click on the **Modify.** button. A new page will pop up where you can change these settings.
-When clicking the **Apply** button, the new settings will be applied to the device.
+To change these parameters, click the **Modify** button. This will open a window where you can change the selected settings. Click **Apply** to apply your changes to the device.
 
 ## Statistics - Network
 
-On this page you are able to find the statistics of the network interface.
+On this page, you can find the statistics of the network interface.
 
-With the **clear** button it is possible to clear the network statistics.
+With the **clear** button, you can clear the network statistics.
 
 ## Statistics - E1 Ports
 
-On this page you are able to find the statistics of theE1 Ports.
+On this page you can find the statistics of the E1 ports.
 
-With the **clear** button it is possible to clear the corresponding row.
-
+With the **clear** button, you can clear the corresponding row.
 
 ## Performance monitoring E1 Ports
 
-On this page you are able to find the performance statistics of the device.
+On this page, you can find the performance statistics of the device.
 
-When clicking the **Intervals.** button a new page will pop up where it is possible to select a port and interval to view the performance statistics of up to a day ago in blocks of 15 min.
-Pressing the next will shift the interval by one and get the new data.
+Click the **Intervals** button to open a page where you can select a port and interval to view the performance statistics of up to a day ago in blocks of 15 min.
 
-Example:
-For selecting the interval of 45 minutes ago on E1 Port 2.
+Clicking the next will shift the interval by one and get the new data.
 
-- Select under the parameter E1 Port: Port 2
-- Set the interval to 3 (3\*15min = 45 min ago.)
-- Press the **Get** button.
+For example, to select the interval of 45 minutes ago on E1 Port 2:
 
+1. Select Port 2 under the parameter E1 Port.
+1. Set the interval to 3 (3\*15min = 45 min ago.)
+1. Click **Get**.
 
 ## Statistics - Wan Interfaces
 
-On this page you are able to find the statistics of the Wan interfaces.
+On this page, you can find the statistics of the Wan interfaces.
 
-With the **clear** button it is possible to clear the corresponding row.
+With the **clear** button, you can clear the corresponding row.
 
 ## Statistics - Optimization
 
-On this page you are able to find the statistics of the optimization of the device.
+On this page, you can find the statistics of the optimization of the device.
 
-Pressing the **Clear** button will clear TX and RX Savings.
+Clicking the **Clear** button will clear the saved values for TX and RX.
 
 ## E1 Ports Table
 
-With the **Clear** button it is possible to clear the corresponding row.
+With the **Clear** button, you can clear the corresponding row.
 
-When clicking on **Select E1 Port** and then clicking on the button **Mapping.** this will open a window with the Timeslots of the selected E1 Port.
-It is also possible to select the E1 port by changing the E1 Port Selected parameter located on the top of the page.
+If you click **Select E1 Port** and then click the button **Mapping**, this will open a window with the time slots of the selected E1 port. You can also select the E1 port by changing the E1 Port Selected parameter located at the top of the page.
 
-You can refresh the Timeslots by clicking on the **Refresh** button located at the bottom of the page.
+You can refresh the time slots by clicking the **Refresh** button located at the bottom of the page.
 
 ## Statistics - Clocking
 
-On this page you are able to find the statistics of the clocking of the device.
+On this page, you can find the statistics of the clocking of the device.
 
-With the **Reset** button it is possible to reset the statistics.
+With the **Reset** button, you can reset the statistics.
 
 ## Statistics - Redundancy
 
-On this page you are able to find the redundancy statistics
+On this page, you can find the redundancy statistics
 
-With the **Reset** button it is possible to reset the statistics.
+With the **Reset** button, you can reset the statistics.
 
 ## Traps
 
-on this page you can see the traps that have been received from the device.
+On this page, you can see the traps that have been received from the device.
 
-It is possible to delete a entry by pressing the **Delete** button on the corresponding row.
-For deleting all entries from the table click on the **Clear Table** button located at the bottom of the page.
+You can delete an entry by clicking the **Delete** button in the corresponding row.
+
+To delete all entries from the table, click the **Clear Table** button located at the bottom of the page.

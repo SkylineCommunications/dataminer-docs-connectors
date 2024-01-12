@@ -20,11 +20,11 @@ Backward compatibility is not guaranteed between different connector ranges.
 
 ### Version Info
 
-| **Range** | **Description**                                                     | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version. SNMP connector, basic information, support for traps. | No                  | No                      |
-| 2.0.0.x          | HTTP version using the element's SOAP interface.                    | No                  | No                      |
-| 2.1.0.x          | Support for new firmware SOAP Live 2.5.1.                           | No                  | Yes                     |
+| Range   | Description                                                            | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version. SNMP connector, basic information, support for traps. | No              | No                  |
+| 2.0.0.x | HTTP version using the element's SOAP interface.                       | No              | No                  |
+| 2.1.0.x | Support for new firmware SOAP Live 2.5.1.                              | No              | Yes                 |
 
 ### Product Info
 
@@ -88,7 +88,7 @@ This page displays a table with the **Conditional Access Modules**. The **name**
 
 ### Tree Control
 
-This page displays a tree view with the different **inputs**. For these inputs, you can see the **services** **linked to the inputs**, and for each service, you can see the **broadcasts linked to the service**.
+This page displays a tree view with the different **inputs**. For these inputs, you can see the **services linked to the inputs**, and for each service, you can see the **broadcasts linked to the service**.
 
 ### Save/Load Menu
 

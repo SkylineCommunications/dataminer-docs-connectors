@@ -12,15 +12,21 @@ This is an **SNMP**-based connector for the Video Clarity Real Time Monitoring S
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | -                           |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -46,13 +52,13 @@ SNMP Settings:
 
 On this page, you can connect to the RTM system, as well as clear logs and record files.
 
-The following buttons are displayed: **Clear** **Records**, **Clear** **Logs** and **Connect** **RTM**.
+The following buttons are displayed: **Clear Records**, **Clear Logs** and **Connect RTM**.
 
 ### Status
 
 This page displays the configuration from the last time that the RTM system was operating. It also presents general information regarding the device itself.
 
-The following parameters are displayed: **Start** **Time**, **Run** **Time**, **Video** **Impairments**, **Audio** **Impairments**, **Audio** **Sync** **Errors**, **VANC Errors**, **Dropped Frame 1**, **Dropped Frame 2**, **Last** **Video** **Impairment** **Time**, **Last** **Audio** **Impairment**, **Last** **Audio** **Sync** **Errors** **Time**, **Clear Status**, **Invalid Input Signal Source 1**, **Invalid Input Signal Source 2**, **Temperature System Mother Board**, **Temperature CPU**, **Temperature Video Card 1**, **Temperature Video Card 2**, **Invalid Input Signal Source 1 Error Time** and **Invalid Input Signal Source 2 Error Time**.
+The following parameters are displayed: **Start Time**, **Run Time**, **Video Impairments**, **Audio Impairments**, **Audio Sync Errors**, **VANC Errors**, **Dropped Frame 1**, **Dropped Frame 2**, **Last Video Impairment Time**, **Last Audio Impairment**, **Last Audio Sync Errors Time**, **Clear Status**, **Invalid Input Signal Source 1**, **Invalid Input Signal Source 2**, **Temperature System Mother Board**, **Temperature CPU**, **Temperature Video Card 1**, **Temperature Video Card 2**, **Invalid Input Signal Source 1 Error Time** and **Invalid Input Signal Source 2 Error Time**.
 
 The parameters can be changed while the system is running.
 
@@ -64,7 +70,7 @@ The following buttons are displayed: **Preview**, **Start**, **Stop**, **Exit** 
 
 ### Alignment
 
-On this page, you can manage a full alignment of the video and audio by means of the following parameters/buttons: **Re-Align All**, **Align** **Video**, **Align** **Audio**, **Video** **Offset**, **Audio** **Sample** **Offset**, **Audio** **Frame** **Offset**, **Audio** **Offset**, **Spatial** **X-Axis** and **Spatial Y-Axis**.
+On this page, you can manage a full alignment of the video and audio by means of the following parameters/buttons: **Re-Align All**, **Align Video**, **Align Audio**, **Video Offset**, **Audio Sample Offset**, **Audio Frame Offset**, **Audio Offset**, **Spatial X-Axis** and **Spatial Y-Axis**.
 
 ### Video and Audio
 
@@ -72,15 +78,15 @@ This page contains the status of the RTM Video Quality as well as the status of 
 
 Note that the video threshold can be different for **Y**, **Cb** and **Cr.** Quality is deemed to be poor if it falls below the threshold stated here. The video duration defines how many consecutive video quality failures are needed to trigger a recording.
 
-The **Audio** **Threshold** **Config** and **Audio** **Frame** **Config** page buttons provide access to the current audio quality score for each active audio channel.
+The **Audio Threshold Config** and **Audio Frame Config** page buttons provide access to the current audio quality score for each active audio channel.
 
 ### VANC Quality
 
-This page contains two tables: **VANC** **Threshold** and **VANC** **Duration**. These enable VANC quality measurements on the inputs.
+This page contains two tables: **VANC Threshold** and **VANC Duration**. These enable VANC quality measurements on the inputs.
 
 ### PSNR
 
-As the RTM creates average log files and error log files, three tables are available on this page: **Periodic Performance Monitoring Video**, **Periodic Performance Monitoring Audio** (available via the **PSNR** **Audio** **Metrics** page button) and **Periodic Performance Monitoring VANC Error** (available via the **PSNR** **VANC** **Metrics** page button).
+As the RTM creates average log files and error log files, three tables are available on this page: **Periodic Performance Monitoring Video**, **Periodic Performance Monitoring Audio** (available via the **PSNR Audio Metrics** page button) and **Periodic Performance Monitoring VANC Error** (available via the **PSNR VANC Metrics** page button).
 
 ## Notes
 

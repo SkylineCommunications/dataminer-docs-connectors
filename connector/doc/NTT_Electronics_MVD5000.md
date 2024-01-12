@@ -12,17 +12,17 @@ This connector contains different pages with information and settings. More deta
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-| 1.0.1.x          | DCF Integration | Yes                 | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | Yes                 |
+| 1.0.1.x | DCF Integration | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | MVD5000 FirmVersion.04.30   |
-| 1.0.1.x          | MVD5000 FirmVersion.04.30   |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | MVD5000 FirmVersion.04.30  |
+| 1.0.1.x | MVD5000 FirmVersion.04.30  |
 
 ## Installation and configuration
 
@@ -52,7 +52,7 @@ This page displays general information about the device, such as the **Firmware 
 
 This page displays information about the status of the device, including the **Device Icon**, **Temperature** and **Fan Status**.
 
-The page includes the following page buttons: **Alarms**, **Audio** **Decoding**, **Video** **Decoding**, **Packets** **Counter**, **Seamless** **Protection**, **Input** **Aux** and **Input** **Stream**.
+The page includes the following page buttons: **Alarms**, **Audio Decoding**, **Video Decoding**, **Packets Counter**, **Seamless Protection**, **Input Aux** and **Input Stream**.
 
 ### Configuration
 
@@ -106,6 +106,6 @@ Physical fixed interfaces:
 
 #### Internal Connections
 
-Connections are made based on the parameters **Audio/Video** **Interface**, **Receive** and **Receive Interface** on the **Configuration** page.
+Connections are made based on the parameters **Audio/Video Interface**, **Receive** and **Receive Interface** on the **Configuration** page.
 
 The connections start from the selected input interface and go to both the **SDI Output** and the **SDI Analog Audio Output**. If **Receive** is **disabled**, no connections are made.

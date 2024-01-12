@@ -12,29 +12,9 @@ The protocol gets and sets data on the device through an HTTP API.
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><p>Audio Control</p>
-<p>SFP Data</p></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range              | Key Features                  | Based on | System Impact |
+|--------------------|-------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - Audio control<br>- SFP data | -        | -             |
 
 ### Product Info
 
@@ -74,6 +54,4 @@ There is no redundancy defined.
 
 ### General
 
-This page contains both the **audio configuration**, as well as the **SFP data**.
-
-
+This page contains both the **audio configuration** and the **SFP data**.

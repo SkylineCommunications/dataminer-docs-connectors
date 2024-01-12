@@ -129,44 +129,30 @@ Below, you can also find an overview of the currently available cards and the fi
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><h4 id="serial-main-connection">Serial Main connection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Interface connection:</li>
-<li><ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>IP port</strong>: Does not need to be configured. By default, this is set to the fixed IP port <strong>2071</strong>.</li>
-</ul></li>
-</ul>
-<h4 id="serial-broadcast-connection">Serial Broadcast connection</h4>
-<p>This connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Interface connection:</li>
-<li><ul>
-<li><strong>IP address/host</strong>: Has to be configured as the fixed value "<strong>any</strong>".</li>
-<li><strong>IP port</strong>: Does not need to be configured. By default, this is set as the fixed IP port <strong>2071</strong>.</li>
-<li><strong>Bus Address</strong>: The bus address needs to be set to "<strong>any</strong>". This is necessary to be able to retrieve information about all inserted cards.</li>
-</ul></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### Serial Main connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Interface connection:
+
+- **IP address/host**: The polling IP of the device.
+- **IP port**: Does not need to be configured. By default, this is set to the fixed IP port **2071**.
+
+#### Serial Broadcast connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Interface connection:
+
+  - **IP address/host**: Has to be configured as the fixed value **any**.
+  - **IP port**: Does not need to be configured. By default, this is set as the fixed IP port **2071**.
+  - **Bus address**: The bus address needs to be set to **any**. This is necessary to be able to retrieve information about all inserted cards.
 
 ## Usage
 
@@ -195,9 +181,7 @@ On the subpages, such as **Status**, **PSU**, **FAN**, **MIB**, **Network** and 
 
 Element reflection determines how the element setup in DataMiner mirrors the actual device setup.
 
-In some cases, inconsistencies between the device setup and the DataMiner element setup can occur.
-For example, when a card is removed from a frame because of a hardware malfunction, if the related DataMiner element were to be removed as well, this would result in the loss of all trend and alarm information that has been stored for that element.
-However, if the child element is not removed, an inconsistency occurs between the device and the setup in DataMiner.
+In some cases, inconsistencies between the device setup and the DataMiner element setup can occur. For example, when a card is removed from a frame because of a hardware malfunction, if the related DataMiner element were to be removed as well, this would result in the loss of all trend and alarm information that has been stored for that element. However, if the child element is not removed, an inconsistency occurs between the device and the setup in DataMiner.
 
 Situations like this, where potential inconsistencies occur between the device setup and the element setup, are handled by element reflection based on a number of settings that can be defined by the user. The section below provides an overview of these settings and of the element reflection logic.
 
@@ -228,6 +212,7 @@ Three modes are available:
   - When a device is replaced by a device of a different type:
 
     - The existing element will be deleted if the configuration settings allow it.
+
     - A new element will be created if the configuration settings allow it.
 
   - When a device is removed, the existing element will not be deleted.
@@ -239,6 +224,7 @@ Three modes are available:
   - When a device is replaced by a device of a different type:
 
     - The existing element will be deleted.
+
     - A new element will be created if the configuration settings allow it.
 
   - When a device is removed, the existing element will not be deleted.
@@ -250,6 +236,7 @@ Three modes are available:
   - When a device is replaced by a device of a different type:
 
     - The existing element will be deleted.
+
     - A new element will be created if the configuration settings allow it.
 
   - When a device is removed, the existing element will be deleted.

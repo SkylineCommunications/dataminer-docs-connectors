@@ -8,21 +8,27 @@ The **Resolve Platform** connector is an interface for the Resolve Systems Resol
 
 ## About
 
-**SOAP calls** are used to retrieve the device information. An **HTTPS** **connection** is required to send commands and retrieve responses.
+**SOAP calls** are used to retrieve the device information. An **HTTPS connection** is required to send commands and retrieve responses.
 
 The protocol is used together with an Automation script, which receives a string with the following format: **protocol/DMA id/Element id/Param id**. The Automation script is expected to set Parameter ID 200 (with name "Send") with a string that complies with the following format: **RB0x01Name=Value0x01Name=Value0x01Name=Value...** In this string, "(char)1" is the separator. The first name and value must be Id=(ID number), where the value -1 will create an automatically generated ID. The second name and value must be WIKI = runbook (e.g. *LG.Test runbook*). The rest of the name and values are parameters that can be used in the runbook command.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 5.2.1 (20160126)            |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 5.2.1 (20160126)       |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

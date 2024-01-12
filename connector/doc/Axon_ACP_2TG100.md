@@ -4,9 +4,9 @@ uid: Connector_help_Axon_ACP_2TG100
 
 # Axon ACP 2TG100
 
-The **2TG100** is a dual channel test pattern generator. Locked to a black & burst or tri-level sync, it can generate two fully independent test patterns in either 3Gb/s, HD or SD.
+The **2TG100** is a dual-channel test pattern generator. Locked to a black & burst or tri-level sync, it can generate two fully independent test patterns in either 3 Gb/s, HD, or SD.
 
-The **Axon ACP** **2TG100** connector can be used to display and configure information related to this device.
+The **Axon ACP 2TG100** connector can be used to display and configure information related to this device.
 
 ## About
 
@@ -40,7 +40,7 @@ SERIAL CONNECTION:
 
 - Interface connection
 
-- **IP address/host**: The polling IP or URL of the destination
+  - **IP address/host**: The polling IP or URL of the destination
   - **Bus address**: The bus address of the device is the slot number/position of the card in the frame.
 
 #### Serial IP Connection - Broadcast Connection
@@ -53,14 +53,6 @@ SMART-SERIAL CONNECTION:
 
   - **IP address/host**: any
   - **Bus address**: The bus address of the device is the slot number/position of the card in the frame
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to Use
 
@@ -77,5 +69,3 @@ The element has the following data pages:
 - **Monitoring**
 - **Network**
 - **Alarm Priority**
-
-

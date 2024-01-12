@@ -6,22 +6,22 @@ uid: Connector_help_Ateme_Kyrion_DR5000
 
 The Kyrion DR5000 is an integrated receiver decoder dedicated to professional contribution over satellite, IP and ASI networks.
 
-## About
-
 This connector uses **SNMP** to allow the user to monitor the **Ateme Kyrion DR5000** decoder and make changes to the configuration of the device.
+
+## About
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                     | **Based on** | **System Impact**                                                                                         |
-|----------------------|----------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                      | -            | -                                                                                                         |
-| 2.0.0.x              | Improved connector                                                      | 1.0.0.12     | -                                                                                                         |
-| 3.0.0.x [Obsolete]     |Full connector review                                                   | 2.0.0.10     | See "Notes" section below                                                                                 |
-| 3.0.1.x              | Changed descriptions and display keys                                | 3.0.0.24     | -                                                                                                         |
-| 3.0.2.x [Obsolete]     |Reviewed DCF implementation                                          | 3.0.0.28     | -                                                                                                         |
-| 3.0.3.x [Obsolete]     |Added missing SNMP parameters to Program Stream Table                | 3.0.2.2      | -                                                                                                         |
-| 3.0.4.x [SLC Main]   | Fixed IDX of "Audio Output - Decoding Status" table to unique value. | 3.0.3.3      | From version 3.0.4.2 onwards the connector include the changes made on versions from 3.0.0.29 till 3.0.0.37. |
-| 3.1.0.x              | New firmware; fixed validator errors                                 | 3.0.4.22     | Forward IP Streams Table: Parameter "IP Output" changed to "Type"                                         |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 2.0.0.x | Improved connector | 1.0.0.12 | - |
+| 3.0.0.x [Obsolete] | Full connector review | 2.0.0.10 | See "Notes" section below |
+| 3.0.1.x | Changed descriptions and display keys | 3.0.0.24 | - |
+| 3.0.2.x [Obsolete] | Reviewed DCF implementation | 3.0.0.28 | - |
+| 3.0.3.x [Obsolete] | Added missing SNMP parameters to Program Stream Table | 3.0.2.2 | - |
+| 3.0.4.x | Fixed IDX of "Audio Output - Decoding Status" table to unique value. | 3.0.3.3 | From version 3.0.4.2 onwards, the connector includes the changes made from versions 3.0.0.29 till 3.0.0.37. |
+| 3.1.0.x [SLC_Main] | New firmware; fixed validator errors. | 3.0.4.22 | Forward IP Streams Table: Parameter "IP Output" changed to "Type". |
 
 ### Product Info
 
@@ -47,7 +47,7 @@ This connector uses **SNMP** to allow the user to monitor the **Ateme Kyrion DR5
 | 3.0.2.x   | Yes                 | No                      | -                     | -                       |
 | 3.0.3.x   | Yes                 | No                      | -                     | -                       |
 | 3.0.4.x   | Yes                 | No                      | -                     | -                       |
-| 3.1.0.x   | Yes                 | No                      | -                     | -                       |
+| 3.1.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -94,6 +94,14 @@ Note that from version 3.0.0.17 onwards, the IP settings on this page have been 
 
 This page displays the ASI **Input Type** and **Interface Settings**.
 
+### Zixi Input Page
+
+This page displays the **Zixi Input** values. From version 3.1.0.2 onwards, it is also possible to configure the **Zixi Failover** settings.
+
+### SRT Input Page
+
+This page displays the **SRT Input** values and **SRT Status**. It is also possible to configure the **SRT Failover** settings.
+
 ### Decoding Page
 
 This page displays the decoding status, including the **Mode**, **Primary Service**, **Secondary Service**, etc.
@@ -126,6 +134,10 @@ This page displays values related to **Source**, **Aux** and **Decoder**.
 ### Output Page
 
 This page displays values related to the output configuration, such as **SDI**, **Genlock** and **Emulation**.
+
+### System Traps Page
+
+This page displays information about the traps.
 
 ### Polling Control Page
 
@@ -172,7 +184,7 @@ Physical fixed interfaces:
 - Between **RF Input 1** and **all outputs**
 - Between **ZIXI Input 1** and **all outputs**
 
-### Interfaces (3.0.2.x)
+### Interfaces (3.0.2.x - 3.1.0.x)
 
 #### Fixed interfaces
 
@@ -196,7 +208,7 @@ Physical fixed interfaces:
 - **Input/Output: IP Stream 1**
 - **Input/Output: IP Stream 2**
 
-### Connections (3.0.2.x)
+### Connections (3.0.2.x - 3.1.0.x)
 
 #### Internal Connections
 

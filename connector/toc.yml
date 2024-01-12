@@ -2185,7 +2185,7 @@
     topicUid: Connector_help_Cisco_DCNM
   - name: CISCO Firepower
     topicUid: Connector_help_CISCO_Firepower
-  - name: Cisco Firepower 2100 Series
+  - name: CISCO Firepower 2100 Series
     topicUid: Connector_help_Cisco_Firepower_2100_Series
   - name: CISCO Firepower Management Center
     topicUid: Connector_help_CISCO_Firepower_Management_Center
@@ -2791,6 +2791,8 @@
     topicUid: Connector_help_Double_D_Electronics_DDA286_(4+1)
   - name: Double D Electronics DDA290
     topicUid: Connector_help_Double_D_Electronics_DDA290
+  - name: Double D Electronics DDA291
+    topicUid: Connector_help_Double_D_Electronics_DDA291
   - name: Double D Electronics DDA70-80
     topicUid: Connector_help_Double_D_Electronics_DDA70-80
   - name: Double D Electronics DDA70-87
@@ -4983,6 +4985,8 @@
     topicUid: Connector_help_IRT_DVB-T2_TX
   - name: IRT DVB-T TX
     topicUid: Connector_help_IRT_DVB-T_TX
+  - name: IRT IFC Series
+    topicUid: Connector_help_IRT_IFC_Series
 - name: Itelco
   topicUid: Connector_help_Itelco_DVB-T2_Modulator
   items:
@@ -8570,6 +8574,8 @@
     topicUid: Connector_help_Specialty_Microwave_Corp_11845-500
   - name: Specialty Microwave Corp 13056-501
     topicUid: Connector_help_Specialty_Microwave_Corp_13056-501
+  - name: Specialty Microwave Corp 13361-501
+    topicUid: Connector_help_Specialty_Microwave_Corp_13361-501
   - name: Specialty Microwave Corp 13966-505
     topicUid: Connector_help_Specialty_Microwave_Corp_13966-505
   - name: Specialty Microwave Corp 13966-506

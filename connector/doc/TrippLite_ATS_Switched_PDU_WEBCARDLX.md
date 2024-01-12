@@ -12,15 +12,21 @@ The TrippLite ATS Switched PDU WEBCARDLX connector allows for configuration and 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x [SLC Main]   | 15.5.1                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 15.5.1                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

@@ -14,56 +14,13 @@ Range 3.0.0.x contains the most important or requested parameters and displays t
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Initial version</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td><p>The connector was made for version 10.13.3.0.0 (xmlVersion attribute on the XML config file of the device). Contains the config XML as one large tree view. Focuses on the following cards:</p>
-<ul>
-<li>CE-x Analogue</li>
-<li>CE-x Encoder</li>
-</ul></td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="even">
-<td>3.0.0.x</td>
-<td>The default range. Polling and parameters have been completely redesigned based on knowledge from previous ranges.</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>3.1.0.x</td>
-<td>Started from 3.0.0.4; supports new firmware.</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="even">
-<td>3.1.1.1</td>
-<td>Added DCF; only external connections implemented.</td>
-<td>Partial</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | Yes |
+| 2.0.0.x | The connector was made for version 10.13.3.0.0 (xmlVersion attribute on the XML config file of the device). Contains the config XML as one large tree view. Focuses on the following cards:<br>- CE-x Analogue<br>- CE-x Encoder | No | Yes |
+| 3.0.0.x | The default range. Polling and parameters have been completely redesigned based on knowledge from previous ranges. | No | Yes |
+| 3.1.0.x | Started from 3.0.0.4; supports new firmware. | No | Yes |
+| 3.1.1.1 | Added DCF; only external connections implemented. | Partial | Yes |
 
 ### Product Info
 
@@ -93,7 +50,9 @@ This connector uses an HTTP connection and requires the following input during e
 Alarms on tables are named "\[ \[KEY\] \] \[UFNAME\]", where:
 
 - \[KEY\] is the key of the table (first column) or **XXX : Key** column.
+
   The key refers to exactly one tag in the config file. The XPath to this tag can be retrieved from the **Keys In Use** table on the page **Driver (Internal)**.
+
 - \[UFNAME\] is the value of the **XXX : UF Name** column.
 
 Example: *\[22354\] SNMP*
@@ -119,7 +78,9 @@ There are two exceptions to this rule.
    Here the naming is formatted as "\[ \[FEATUREID\] \] \[CODE\] (\[DESCRIPTION\])", where
 
    - \[FEATUREID\] is the value of column **LT - Feature ID.**
+
    - \[CODE\] is the value of column **LT - Code.**
+
    - \[DESCRIPTION\] is the value of column **LT - Description.**
 
    Example: *\[22\] CE/SWO/3D (This enables 3D operation.)*
@@ -139,7 +100,7 @@ Other alarms can occur, but are only active if the column **AT - Active** contai
 
 To display only active alarms, specify the filter below:
 
-> *"AT : Visible":yes "AT - Active":true*
+`"AT : Visible":yes "AT - Active":true`
 
 Note that it is also possible to only trigger alarms on active parameters by using conditional monitoring.
 To do so, use:
@@ -176,11 +137,17 @@ This page contains parameters that are required by DataMiner or are necessary to
 It contains:
 
 - A parameter **HTTP Status Code**, which indicates the status code of the last message (or response) sent to the device.
+
   This should be *200 OK*. Other values may indicate a problem.
+
 - A table that maps all the keys used in the tables on **Table Data** to an XPath that selects exactly one node in the configuration file.
+
   This is used internally to make sure that the keys of the rows do not change every time the device is polled. This is a requirement for the correct functioning of trending and alarm monitoring.
+
   However, note that there inevitably remains a small chance that this does become corrupted if parameters are deleted from the config file.
+
 - A page button **HTTP Comm.** that shows commands and responses from messages sent to/from the device. This is only used for debugging purposes.
+
 - A page button **Junction Tables**, containing information required for the tree view control in order to link different tables to one parent node. This information is normally not of use for the user.
 
 ### Web Interface Page

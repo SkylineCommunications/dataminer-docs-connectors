@@ -14,15 +14,21 @@ Note: Settings on the RSU are only possible with this connector if the device is
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -54,7 +60,7 @@ SERIAL CONNECTION:
 
 This page displays the **Mode and Status of the Redundancy Switch** and **the Status of the standby converter and 8 normal converters**. If a converter is in alarm Mode, a Fail will be mentioned here.
 
-On the right-hand side of the page, the **Frequency**, **Intermediate Frequency (IF),** **Attenuation** and **Mute/UnMute** status of the standby converter can be configured. The range to which the standby converter frequency can be set depends on the type of the standby converter. This is also the case for the attenuation. The IF has possible values of 70 MHz and 140 MHz, but some standby converters only support 70 MHz and do not have this dual IF option. If a setting command is not accepted by the device, the value in the connector will not change. If it is accepted, the new value will be displayed by the connector. The value displayed by the connector therefore always corresponds with the actual value in the standby converter.
+On the right-hand side of the page, the **Frequency**, **Intermediate Frequency (IF), Attenuation** and **Mute/UnMute** status of the standby converter can be configured. The range to which the standby converter frequency can be set depends on the type of the standby converter. This is also the case for the attenuation. The IF has possible values of 70 MHz and 140 MHz, but some standby converters only support 70 MHz and do not have this dual IF option. If a setting command is not accepted by the device, the value in the connector will not change. If it is accepted, the new value will be displayed by the connector. The value displayed by the connector therefore always corresponds with the actual value in the standby converter.
 
 Note that these values can also be changed automatically when a converter is in an alarm condition and in need of the standby converter. If possible (see below), the device will accept this switchover and then the settings of that converter are copied to the settings of the standby converter. If the converter then continues to be in standby mode, you can further configure the settings of the standby converter on this page, until another converter with a higher priority goes into standby mode. If this happens, the converter with the higher priority will use the standby converter for bypassing (i.e. a switchover of the standby converter from the signal with the lower priority to the signal with the higher priority) and copy its new settings to the standby converter. The old converter with the lower priority will be switched back online and will not use the standby converter anymore. As a consequence of this behavior, it makes no sense to configure the settings if all converters are online (i.e. no converter is in standby mode) and no signal is switched to the standby converter.
 

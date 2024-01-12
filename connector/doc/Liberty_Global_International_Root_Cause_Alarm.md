@@ -4,7 +4,7 @@ uid: Connector_help_Liberty_Global_International_Root_Cause_Alarm
 
 # Liberty Global International Root Cause Alarm
 
-This protocol allows correlation for root cause alarms on services, based on alarms from included elements.
+This connector allows correlation for root cause alarms on services, based on alarms from included elements.
 
 ## About
 
@@ -12,9 +12,21 @@ The **Root Cause Alarm** will be set based on different rules configured in the 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -42,7 +54,7 @@ Each cell of the **Alarm Matrix**, except the **Matrix ID**, is editable. The fo
 
 - **Expected Severity (Alarm Matrix)**: States the expected severity for this row. Upon editing, a selection of possible severities will be shown:
 
-- *Any*: Any severity other than normal.
+  - *Any*: Any severity other than normal.
   - *Critical*: Only critical severities are considered.
   - *Major*: Only major severities are considered.
   - *Minor*: Only minor severities are considered.
@@ -50,7 +62,7 @@ Each cell of the **Alarm Matrix**, except the **Matrix ID**, is editable. The fo
 
 - **Rule Type (Alarm Matrix)**: States the condition type for this row. Upon editing, a selection of rule types will be shown:
 
-- *Required*: This condition is required to raise the corresponding root cause alarm.
+  - *Required*: This condition is required to raise the corresponding root cause alarm.
   - *Forbidden*: If this condition is not met, the corresponding root cause alarm is raised.
   - *Root Cause*: This type will add information from the matching alarm into the root cause alarm.
 
@@ -78,7 +90,7 @@ When you click the button **Add New Rule**, a new page is shown where you can co
 
 - **Expected Severity**: States the expected severity for this row. Upon editing, a selection of possible severities will be shown:
 
-- *Any*: Any severity other than normal.
+  - *Any*: Any severity other than normal.
   - *Critical*: Only critical severities are considered.
   - *Major*: Only major severities are considered.
   - *Minor*: Only minor severities are considered.
@@ -86,7 +98,7 @@ When you click the button **Add New Rule**, a new page is shown where you can co
 
 - **Selected Type**: States the condition type for this row. Upon edition, a selection of rule types will be shown:
 
-- *Required*: This condition is required to raise the corresponding root cause alarm.
+  - *Required*: This condition is required to raise the corresponding root cause alarm.
   - *Forbidden*: If this condition is not met, the corresponding root cause alarm is raised.
   - *Root Cause*: This type will add information from the matching alarm into the root cause alarm.
 
@@ -116,7 +128,7 @@ When you right-click this table, a context menu is displayed were you can:
 
 ### Alarm Structure
 
-This page shows the root cause alam tree structure, where parent root cause alarms have child rules and each rule shows the specific conditions that need to be met.
+This page shows the root cause alarm tree structure, where parent root cause alarms have child rules and each rule shows the specific conditions that need to be met.
 
 ### Service Status
 

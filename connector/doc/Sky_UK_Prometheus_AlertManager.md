@@ -10,31 +10,9 @@ Prometheus is an open-source systems monitoring and alerting toolkit, which can 
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><ul>
-<li>General status information</li>
-<li>Alerts Table</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range              | Key Features                                   | Based on | System Impact |
+|--------------------|------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - General status information<br>- Alerts table | -        | -             |
 
 ### Product Info
 
@@ -47,8 +25,6 @@ Prometheus is an open-source systems monitoring and alerting toolkit, which can 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-
-
 
 ## Configuration
 
@@ -63,14 +39,6 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination API.
 - **IP port**: The IP port of the destination.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -12,10 +12,10 @@ This connector collects information from the device using an HTTP connection. It
 
 ### Version Info
 
-| **Range**         | **Description**                | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|--------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial version.               | No                  | Yes                     |
-| 1.0.1.x **\[SLC Main\]** | Streamlined all Aperi connectors. | No                  | Yes                     |
+| Range              | Description                       | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                  | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Streamlined all Aperi connectors. | No              | Yes                 |
 
 ### Product Info
 
@@ -36,7 +36,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device.
-- **Bus** **address**: By default *bypassproxy*.
+- **Bus address**: By default *bypassproxy*.
 
 ## Usage
 

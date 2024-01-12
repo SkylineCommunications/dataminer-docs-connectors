@@ -11,8 +11,11 @@ The **Ziggo CPE WiFi Provisioning** connector converts CSV files containing a li
 Every day, at a configurable time, the connector retrieves CSV files from a specific folder. There are two types of CSV files, one type per footprint (**fZiggo** or **fUPC)**. The CSV file names must have the following format:
 
 - **fUPC**: *YYYYMMDD*-fUPC.csv
+
   E.g*. '20170418-fUPC.csv'*
+
 - **fZiggo**: *YYYY*-*MM*-*DD*-*HH*-*MM*-fZiggo.csv\[.gz\]\>
+
   E.g. *'2017-06-05-01-08-fZiggo.csv'*
 
 The connector will parse the CSV files and convert them to **DSL** files.
@@ -23,9 +26,21 @@ The connector also allows the configuration of the community string for both foo
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -47,7 +62,7 @@ This page displays the main configuration parameters:
 
 - **Provisioning mode** :
 
-- *Full*: All the cable modems will be saved in the output **DSL** file.
+  - *Full*: All the cable modems will be saved in the output **DSL** file.
   - *Differential*: The connector will compare the current list of modems with the previous list. Only the new, updated or deleted modems will be included in the **DSL** file.
 
 - **Maximum Number of Files in History Folder**: When a CSV file has been processed, it is saved in a *History* folder (a subfolder of the **Provisioning Folder**). The parameter **Maximum Number of Files in History Folder** specifies how many files to keep in this *History* folder.

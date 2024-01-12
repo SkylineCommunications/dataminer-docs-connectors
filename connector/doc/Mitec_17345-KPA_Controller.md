@@ -14,15 +14,21 @@ Serial communication is used to poll the information from the device.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                               |
-|------------------|---------------------------------------------------------------------------------------|
-| 1.0.0.x          | Compatible with software version 2.23 of the RSU Model 18687-01 (configuration 1.00). |
+| Range   | Supported Firmware                                                   |
+|---------|----------------------------------------------------------------------|
+| 1.0.0.x | Software version 2.23 of the RSU Model 18687-01 (configuration 1.00) |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant    | Linked Components     | Exported Components     |
+|-----------|---------------------|------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -34,7 +40,7 @@ SERIAL CONNECTION:
 
 - Interface Connection
 
-- **IP Address/Host**: The polling IP of the device.
+  - **IP Address/Host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus Address**: The bus address of the device, where the range goes from *48* up to *63*.
 

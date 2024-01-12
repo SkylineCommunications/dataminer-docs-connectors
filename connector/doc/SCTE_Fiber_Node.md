@@ -12,15 +12,21 @@ This is an **SNMP**-based connector for the SCTE Fiber Node device.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Device Range** | **Device Firmware Version** |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1\. B 2. B1 3. CC           |
+| Range   | Supported Firmware     |
+|---------|------------------------|
+| 1.0.0.x | 1. B<br>2. B1<br>3. CC |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -50,7 +56,7 @@ This page contains general parameters, such as **Model Number**, **Serial Number
 
 ### Transponder
 
-This page displays the **Frequency**, **Power** and **Width** for both **Down** and **Up** **Channels** in the transponder, as well as the **SNR Quality**.
+This page displays the **Frequency**, **Power** and **Width** for both **Down** and **Up Channels** in the transponder, as well as the **SNR Quality**.
 
 ### Polling Control
 
@@ -100,6 +106,6 @@ This page displays the following tables: **Power Supply Device**, **Power Supply
 
 This page displays the **Power Supply Output Table** and **Power Supply Temperature Sensor Table**. There are two **toggle buttons** that can be used to enable/disable the polling of each of these tables.
 
-### Web Interface.
+### Web Interface
 
 This page shows the web page of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

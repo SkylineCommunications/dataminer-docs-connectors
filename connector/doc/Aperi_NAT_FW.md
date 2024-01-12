@@ -10,13 +10,13 @@ This connector is used to monitor Aperi's Network Address Translator (NAT) Firew
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                       | **Based on** | **System Impact**                                                                                                                                                     |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                                                                                       | -            | -                                                                                                                                                                     |
-| 2.0.0.x              | Connector re-write for SRM. New API.                                                                                                                                                                                      | -            | All statistical data will be lost when you upgrade from the previous version. Visio drawings for the 1.0.0.x branch are incompatible with this branch.                |
-| 2.0.1.x [Obsolete]     |Redesign of Manage Device pages. Included device table and changed FK relation to map this.                                                                                                                            | 2.0.0.7      | Automation needs to be configured to use the right parameter IDs. Function resources have changed.                                                                    |
-| 2.0.2.x [Obsolete]     |Changed parameter descriptions of parameters 2010 and 2013. Added new table columns on Senders and Create Device Table.                                                                                                | 2.0.1.5      | All statistical data will be lost for parameters 2010 and 2013 when you upgrade from the previous version. Visio drawings for the 2.0.1.x branch may be incompatible. |
-| 2.0.3.x [SLC Main]   | Added exception values to parameters 638 and 639. Changed parameter description of parameter 2803. Added new table columns + changed display order of the tables 430, 460, 610, 630, 650, 670, 690, 840, 860 and 1250. | 2.0.2.4      | Visio drawings and Automation scripts for the 2.0.2.x branch (and previous) may be incompatible.                                                                      |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 2.0.0.x | Connector re-write for SRM. New API. | - | All statistical data will be lost when you upgrade from the previous version. Visio drawings for the 1.0.0.x branch are incompatible with this branch. |
+| 2.0.1.x [Obsolete] | Redesign of Manage Device pages. Included device table and changed FK relation to map this. | 2.0.0.7 | Automation needs to be configured to use the right parameter IDs. Function resources have changed. |
+| 2.0.2.x [Obsolete] | Changed parameter descriptions of parameters 2010 and 2013. Added new table columns on Senders and Create Device Table. | 2.0.1.5 | All statistical data will be lost for parameters 2010 and 2013 when you upgrade from the previous version. Visio drawings for the 2.0.1.x branch may be incompatible. |
+| 2.0.3.x [SLC Main] | Added exception values to parameters 638 and 639. Changed parameter description of parameter 2803. Added new table columns + changed display order of the tables 430, 460, 610, 630, 650, 670, 690, 840, 860 and 1250. | 2.0.2.4 | Visio drawings and Automation scripts for the 2.0.2.x branch (and previous) may be incompatible. |
 
 ### Product Info
 
@@ -122,7 +122,7 @@ NOTE: To interact with the tables, use the table context menus. Also note that i
 
 ### Devices
 
-This page contains device information for both **senders** **and** **receivers** of the devices, including the devices' IPs, ports, and generic network configuration. A device can be deleted from the device table.
+This page contains device information for both **senders and receivers** of the devices, including the devices' IPs, ports, and generic network configuration. A device can be deleted from the device table.
 
 A page button provides access to the **Alarm Configuration** subpage, where the alarm configuration for each device is displayed. Depending on the selected encapsulation, the information for each device can be shown in different tables.
 
@@ -134,7 +134,7 @@ This page contains the network information for the hardware ports/interfaces of 
 
 ### Interfaces
 
-This page displays **Ethernet statistics** for device **senders** **and** **receivers**. This includes **ARP**, **ICMP** and **IGMP** **statistics**.
+This page displays **Ethernet statistics** for device **senders and receivers**. This includes **ARP**, **ICMP** and **IGMP statistics**.
 
 ### Encapsulation
 
@@ -142,11 +142,11 @@ This page contains statistical information for SMPTE-2022-2 and SMPTE-2022-6 enc
 
 ### RTP
 
-This page contains **RTP statistics** for both **senders** **and** **receivers**, including **packets**, **uptime**, **bit rates** and **status and error** information.
+This page contains **RTP statistics** for both **senders and receivers**, including **packets**, **uptime**, **bit rates** and **status and error** information.
 
 ### PDV
 
-This page displays the **Packet Data Variation** statistics for both **senders and receivers**. Average values are shown for several timespans.
+This page displays the **Packet Data Variation** statistics for both **senders and receivers**. Average values are shown for several time spans.
 
 ### FEC
 

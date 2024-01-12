@@ -64,14 +64,14 @@ This page contains parameters related to the beacon, the device, the resolvers a
 Page buttons provide access to additional parameters:
 
 - **Debug**: Displays parameters used for debugging.
-- **System** **Config**: Displays parameters related to the system configuration.
-- **INTRAC** **Operation**: Contains the INTRAC and dual redundant INTRAC configuration.
-- **EEPROM** **Status**: Contains parameters related to the **EEPROM**.
+- **System Config**: Displays parameters related to the system configuration.
+- **INTRAC Operation**: Contains the INTRAC and dual redundant INTRAC configuration.
+- **EEPROM Status**: Contains parameters related to the **EEPROM**.
 - **Diagnostics**: Displays the diagnostics 1, 2 and 3.
 
 ### Positioning
 
-This page contains all position-related readings and settings of the controller, such as the **Current** **Positions.** Buttons are included on this page to move the satellite up and down, left and right, clockwise and counterclockwise.
+This page contains all position-related readings and settings of the controller, such as the **Current Positions.** Buttons are included on this page to move the satellite up and down, left and right, clockwise and counterclockwise.
 
 Page buttons provide access to additional parameters related to **Search Parameters**, **Hysteresis level**, **FineTune Offsets**, **Software Limits**, **Limits of Search**, **Step Track** and **Limits**.
 

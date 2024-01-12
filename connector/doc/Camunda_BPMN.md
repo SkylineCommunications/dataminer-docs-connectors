@@ -11,9 +11,9 @@ The connector fetches and locks external tasks that can either be completed manu
 
 ### Version Info
 
-| **Range**            | **Key Features**         | **Based on** | **System Impact** |
-|----------------------|--------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | External task completion | -            | -                 |
+| Range              | Key Features             | Based on | System Impact |
+|--------------------|--------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | External task completion | -        | -             |
 
 ### Product Info
 
@@ -66,204 +66,65 @@ The Automation script specified with the **External Tasks Handler Automation Scr
 
 Example:
 
+```csharp
+using System;
+using System.Collections.Generic;
+using Newtonsoft.Json;
+using Skyline.DataMiner.Automation;
 
+public class Script
+{
+   public static void Run(Engine engine)
+   {
+      var workerElement = engine.FindElement(engine.GetScriptParam("Worker Element Name").Value);
+      var tasksIdsString = engine.GetScriptParam("External Task IDs").Value;
+      engine.GenerateInformation($"{workerElement?.ElementName} - {tasksIdsString}");
 
-       using
+      if (workerElement == null || tasksIdsString == null)
+      {
+         engine.ExitFail("Arguments are missing");
+         return;
+      }
 
+      var externalTaskIds = tasksIdsString.Split(';');
+      var r = new Random();
 
-       System;
-    using
+      foreach (var externalTaskId in externalTaskIds)
+      {
+         var priority = r.Next(1, 8);
+         if (priority <= 2)
+         {
+            // Inform that the external task can't be handled now
+            workerElement.SetParameterByPrimaryKey(107, externalTaskId, "/Fail");
+            continue;
+         }
 
+         // Confirm that the task will be handled now
+         workerElement.SetParameterByPrimaryKey(107, externalTaskId, "/Confirm");
 
-       System.Collections.Generic;
+         // Complete Task without variables
+         // workerElement.SetParameterByPrimaryKey(105, externalTaskId, "/Complete");
 
-    using
-
-
-       Newtonsoft.Json;
-    using
-
-
-       Skyline.DataMiner.Automation;
-
-    public
-
-
-       class
-
-
-       Script
-    {
-        public
-
-
-       static
-
-
-
-
-
-          void
-
-
-       Run(Engine engine)
-        {
-            var workerElement
-
-
-       = engine.FindElement(engine.GetScriptParam("Worker Element Name").Value);
-            var tasksIdsString
-
-
-       = engine.GetScriptParam("External Task IDs").Value;
-            engine.GenerateInformation($"{workerElement?.ElementName} -
-
-
-
-
-
-             {tasksIdsString}");
-
-            if
-
-
-       (workerElement
-
-
-       ==
-
-
-       null
-
-
-       || tasksIdsString
-
-
-       ==
-
-
-       null)
+         // Complete Task and pass variable `priority`
+         var completeCommand = new Dictionary<string, object>
+         {
             {
-                engine.ExitFail("Arguments are missing");
-                return;
-            }
-
-            var externalTaskIds
-
-
-       = tasksIdsString.Split(';');
-            var r
-
-
-       =
-
-
-       new
-
-
-       Random();
-            foreach
-
-
-       (var externalTaskId
-
-
-       in externalTaskIds)
+               "action",
+               "complete"
+            },
             {
-                var priority
-
-
-       = r.Next(1,
-
-
-       8);
-                if
-
-
-       (priority
-
-
-       <=
-
-
-       2)
-                {
-                    // Inform that the external task can't be handled now
-                    workerElement.SetParameterByPrimaryKey(107, externalTaskId,
-
-
-       "/Fail");
-                    continue;
-                }
-
-                // Confirm that the task will be handled now
-                workerElement.SetParameterByPrimaryKey(107, externalTaskId,
-
-
-       "/Confirm");
-
-                // Complete Task without variables
-                // workerElement.SetParameterByPrimaryKey(105, externalTaskId, "/Complete");
-
-                // Complete Task and pass variable `priority`
-                var completeCommand
-
-
-       =
-
-
-       new
-
-
-       Dictionary<string,
-
-
-          object>
-                {
-                    {
-
-
-       "action",
-
-
-       "complete"
-
-
-       },
-                    {
-
-
-       "variables",
-
-
-       new
-
-
-       Dictionary<string,
-
-
-          object>
-
-
-       {
-
-
-       {
-
-
-       "priority", priority
-
-
-       }
-
-
-       }
-
-
-       }
-                };
-
-                workerElement.SetParameterByPrimaryKey(105, externalTaskId, JsonConvert.SerializeObject(completeCommand));
+               "variables",
+               new Dictionary<string, object>
+               {
+                  {
+                     "priority", priority
+                  }
+               }
             }
-        }
-    }
+         };
+
+         workerElement.SetParameterByPrimaryKey(105, externalTaskId, JsonConvert.SerializeObject(completeCommand));
+      }
+   }
+}
+```

@@ -35,8 +35,8 @@ This connector uses a **Simple Network Management Protocol** (**SNMP**) connecti
 **SNMP Settings:**
 
 - **Port number**: The port of the connected device (default: *161*)
-- **Get community string**: The community string used when reading values from the device (default value if not overridden in the connector: *public*).
-- **Set community string**: The community string used when setting values on the device (default value if not overridden in the connector: *private*).
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage (2.x.x.x range)
 
@@ -54,7 +54,7 @@ The **Type** will always be *TBox*
 
 This will display a list of all the virtual Equipments configured in the **CM** as a **TBox** **Element**. Each will create a **DVE** **Element** displaying the Equipment information provided by the **CM** and the configured contacts.
 
-The provided information contains the **Name**, the **View** (**Site**), the **State**, ect.
+The provided information contains the **Name**, the **View** (**Site**), the **State**, etc.
 
 The **CM** will also add the name of the **Alarm** and **Trend** **Template** that is currently assigned to this **TBox** **Element**. This will be empty when no template is assigned.
 
@@ -70,7 +70,7 @@ These **Point Tables** will also display the **Service** that contains the Equip
 
 ### RTU Communication
 
-The **RTU Communiation** are settings done in the **CM** to indicate the communication details of this **TBox**. It will display e.g. the **IP Address** and the **Port**.
+The **RTU Communication** are settings done in the **CM** to indicate the communication details of this **TBox**. It will display e.g. the **IP Address** and the **Port**.
 
 ### RTU Point Summary
 

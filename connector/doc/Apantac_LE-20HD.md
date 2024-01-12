@@ -56,8 +56,8 @@ There is no redundancy defined.
 
 ## How to use
 
-On the **General** page, the **Managed** **Elements Table** contains general information and settings, while the **Managed Elements Status Table** contains status information for each managed element. The **Signal Table** lists all tracked signals. Each row of this table corresponds with a single monitored signal, e.g. an SDI video feed or an AES/EBU audio feed. For each signal, more information is available, including several status parameters.
+On the **General** page, the **Managed Elements Table** contains general information and settings, while the **Managed Elements Status Table** contains status information for each managed element. The **Signal Table** lists all tracked signals. Each row of this table corresponds with a single monitored signal, e.g. an SDI video feed or an AES/EBU audio feed. For each signal, more information is available, including several status parameters.
 
-On the **Configuration** subpage, several settings can be configured, including **Screens**, **Monitors**, **Text** **Message** and **Scroll** **Rate**.
+On the **Configuration** subpage, several settings can be configured, including **Screens**, **Monitors**, **Text Message** and **Scroll Rate**.
 
 This connector can also receive traps available in the Apantac MIB. When a specific trap is received, the relevant table is polled.

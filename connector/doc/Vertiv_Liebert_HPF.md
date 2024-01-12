@@ -58,8 +58,6 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-On the **General** page you can find an overview of all the KPI's of the Airco such as the current temperatures as well as the possibility to configure them.
+On the **General** page you can find an overview of all the KPIs of the Airco such as the current temperatures as well as the possibility to configure them.
 
 An overview of the alarms can be found on the **Alarm** page.
-
-
