@@ -85,9 +85,9 @@ There is no redundancy defined.
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use (1.2.3 range)
+## How to use (1.2.3.X range)
 
-The **Converter Overview** page displays an overview of the available converters in the **Converter Overview** table for the EDI-to-ETI/EDI mode.
+The **Converter Overview** page displays an overview of the available converters in the **Converter Overview** table for the EDI-to-ETI/EDI and ETI-to-EDI modes.
 
 The **EDI to ETI/EDI** page displays input sources, source assignment, and ETI output data for the EDI-to-ETI/EDI mode.
 
