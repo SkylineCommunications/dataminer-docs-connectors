@@ -15,8 +15,9 @@ The CISCO CBR-8 CCAP Platform is an **SNMP** connector that collects relevant da
 | 1.0.0.x              | Initial version.                       | -            | -                 |
 | 1.0.1.x              | Compatibility with new EPM Solution.   | -            | -                 |
 | 1.0.2.x              | Modifications to improve performance.  | -            | -                 |
-| 1.0.3.x [SLC Main]   | Updated the minimum DataMiner version. | -            | -                 |
+| 1.0.3.x              | Updated the minimum DataMiner version. | -            | -                 |
 | 1.0.4.x              | Modifications to improve performance   | -            | -                 |
+| 1.0.5.x [SLC Main]   | New threshold logic.                   | -            | -                 |
 
 ### Product Info
 
@@ -27,6 +28,7 @@ The CISCO CBR-8 CCAP Platform is an **SNMP** connector that collects relevant da
 | 1.0.2.x   | 16.10.1g               |
 | 1.0.3.x   | 16.10.1g               |
 | 1.0.4.x   | 16.10.1g               |
+| 1.0.5.x   | 16.10.1g               |
 
 ### System Info
 
@@ -37,6 +39,7 @@ The CISCO CBR-8 CCAP Platform is an **SNMP** connector that collects relevant da
 | 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
