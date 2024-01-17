@@ -53,5 +53,4 @@ The web interface is only accessible when the client machine has network access 
 
 The element mainly displays SNMP parameters as defined in the device MIB.
 
-The *Alarms* page contains an Alarms table which displays SNMP traps forwarded by the connected device. The resolved status is dependent on whether a previous alarm with the same description was captured in Dataminer.
-Alarms can be deleted through the table context menu.
+The *Alarms* page contains an Alarms table which displays SNMP traps forwarded by the connected device. Alarms can be deleted through the table context menu.
