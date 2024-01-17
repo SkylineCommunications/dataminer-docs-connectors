@@ -117,7 +117,7 @@ This page displays all the connections between physical **inputs** and **outputs
 
 This page contains the following tables:
 
-- The **Device Sources** table, with information about the sources**.**
+- The **Device Sources** table, with information about the sources.
 - The **Device Destinations** table, with information about the destinations. It also allows you to set a specific crosspoint by means of the **Connected Input** column.
 
 Changing the labels is not possible, because this is not supported by the device. Locking is also not possible, because this is not supported by the current firmware of the device.
@@ -132,10 +132,11 @@ This page displays all the connections between device sources and destinations, 
 
 You can configure how the element will retrieve device data by setting the **Operational Mode** to one of the following modes:
 
-- **Auto** \[Default\]: The element will automatically fetch the device data (Sources/Destinations External IDs and Labels) on a regular time basis and store it in the tables Device Sources and Device Destinations. The element
-  will also create a subscription to be immediately notified when a crosspoint change occurs on the device.
+- **Auto** \[Default\]: The element will automatically fetch the device data (Sources/Destinations External IDs and Labels) on a regular time basis and store it in the tables Device Sources and Device Destinations. The element  will also create a subscription to be immediately notified when a crosspoint change occurs on the device.
+
 - **Manual**: Users need to manually fetch the device data (Sources/Destinations External IDs and Labels) or load it via a CSV file, which must contain the row headers "External ID", "Label", and "Notes".
+
   The data is first stored in the tables Device Sources Configuration and Device Destinations Configuration, before it can be applied to the tables Device Sources and Device Destinations.
 
-Note:
-The Manual mode can be used when unexpected ID and/or label changes have a devastating impact on elements or services linked to the Grass Valley Convergent element. The manual retrieval of data, together with the Configuration tables, prevents the escalation of unwanted ID and/or label changes throughout DataMiner without the awareness of the user.
+> [!NOTE]
+> The Manual mode can be used when unexpected ID and/or label changes have a devastating impact on elements or services linked to the Grass Valley Convergent element. The manual retrieval of data, together with the Configuration tables, prevents the escalation of unwanted ID and/or label changes throughout DataMiner without the awareness of the user.

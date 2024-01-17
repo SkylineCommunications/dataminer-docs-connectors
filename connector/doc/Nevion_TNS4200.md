@@ -12,13 +12,13 @@ This connector is used to manage the Nevion TNS4200 device using the **HTTP** pr
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version. (Only supports ASCII labels.)                                                                                                                                   | No                  | No                      |
-| 1.0.1.x          | Added SNMP connection for trap receipt. (Only supports ASCII labels.)                                                                                                            | No                  | No                      |
-| 1.1.0.x          | Updated alarm implementation to firmware 1.6.16/1.7.0. Removed relative alarming in protocol. Added filter column in Transport Streams table. (Only supports ASCII labels.)      | No                  | No                      |
-| 1.1.1.x          | Range with adjustable DisplayKeys. Obsolete option "DisplayColumn" replaced with "Naming" in Alarms table. (Note: not all "DisplayColumn" options were removed from the connector.) | No                  | No                      |
-| 2.0.0.x          | Continues support for 1.1.0.x range                                                                                                                                              | No                  | No                      |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. (Only supports ASCII labels.) | No | No |
+| 1.0.1.x | Added SNMP connection for trap receipt. (Only supports ASCII labels.) | No | No |
+| 1.1.0.x | Updated alarm implementation to firmware 1.6.16/1.7.0. Removed relative alarming in protocol. Added filter column in Transport Streams table. (Only supports ASCII labels.) | No | No |
+| 1.1.1.x | Range with adjustable DisplayKeys. Obsolete option "DisplayColumn" replaced with "Naming" in Alarms table. (Note: not all "DisplayColumn" options were removed from the connector.) | No | No |
+| 2.0.0.x | Continues support for 1.1.0.x range | No | No |
 
 ### Product Info
 
@@ -81,7 +81,7 @@ In addition, the table contains a number of columns indicating whether a specifi
 
 ### SCTE35 Page (from version 1.0.1.10)
 
-This page provides an overview of all components available for each service in the **Components List Table**. This table displays the **Stream Type** and indicates whether it is encrypted or not**.**
+This page provides an overview of all components available for each service in the **Components List Table**. This table displays the **Stream Type** and indicates whether it is encrypted or not.
 
 The page also contains the **Cue Message Log Table**, which shows the list of log messages for each service. For each entry in this table, information is available regarding **Status**, **Command Time**, the **Slice Command** that was requested, the **Event type** and **Time** and also the **Command Status**.
 
