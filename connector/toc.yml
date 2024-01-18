@@ -1702,12 +1702,12 @@
   - name: Blackmagic Design Videohub
     topicUid: Connector_help_Blackmagic_Design_Videohub
 - name: Blankom
-  topicUid: Connector_help_Blankom_HCB-200
+  topicUid: Connector_help_Blankom_B-Nova
   items:
-  - name: Blankom HCB-200
-    topicUid: Connector_help_Blankom_HCB-200
   - name: Blankom B-Nova
     topicUid: Connector_help_Blankom_B-Nova
+  - name: Blankom HCB-200
+    topicUid: Connector_help_Blankom_HCB-200
 - name: Blue Coat
   topicUid: Connector_help_Blue_Coat_Packet_Shaper
   items:
