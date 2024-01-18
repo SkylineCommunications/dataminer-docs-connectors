@@ -13,6 +13,8 @@ This driver is a monitoring tool that provides an overview of the follwowing:
   * **Services** assigned to the **Desks**
   * Unassigned **Services**
 
+*Mininum supported DataMiner version: 10.1.11*
+
 ### Version Info
 
 | Range     | Key Features     | Based on     | System Impact     |
