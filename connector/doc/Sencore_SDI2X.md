@@ -3,35 +3,28 @@ uid: Connector_help_Sencore_SDI2X
 ---
 
 # Sencore SDI2X
-The Sencore SDI2X connector is used to monitor **Sencore SDI2X** device.
 
-The device supports both SDI to IP and IP to SDI workflows. It also supports SMPTE 2022-6 and TR-03/SMPTE 2110.
-
-The user can configure the direction (SDI->IP or IP->SDI) for each channel independently.
-
-The platform supports one or more channels which can be configured to convert SDI video inputs into IP output streams, or IP input streams into SDI video outputs. 
-The platform will encapsulate or de-encapsulate the SDI video according to SMPTE 2022-6 standard.
-The platform also supports redundancy using SMPTE 2022-7 seamless switching standard.
+This connector is used to monitor the **Sencore SDI2X** device. This device supports both SDI-to-IP and IP-to-SDI workflows. It also supports SMPTE 2022-6 and TR-03/SMPTE 2110. The user can configure the direction (SDI to IP or IP to SDI) for each channel independently. The platform supports one or more channels, which can be configured to convert SDI video inputs into IP output streams, or IP input streams into SDI video outputs. It will encapsulate or de-encapsulate the SDI video according to SMPTE 2022-6 standard. The platform also supports redundancy using the SMPTE 2022-7 seamless switching standard.
 
 ## About
 
 ### Version Info
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [SLC Main] | Initial version. | - | - |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware         |
-|-----------|----------------------------|
-| 1.0.0.x   |1.2.3|
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 1.2.3              |
 
 ### System Info
 
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | No | Yes | - ||
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -51,29 +44,18 @@ SNMP Settings:
 - **Get community string**: Default: *public-community.*
 - **Set community string**: Default: *private-community.*
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
-The connector contains **General**, **Channels**, **Input**, **Output** and **Alarms** data pages.
 
-On **General** page you can find generic status and informations parameters .
+The connector contains the following data pages:
 
-Below **General** page there are **Network**, **Date/Time**, **SNMP** and **Syslog** sub-pages that contain status and configuration parameters.
+- **General**: Contains general status and information parameters. Below this page, you can find the **Network**, **Date/Time**, **SNMP** and **Syslog** subpages, which contain status and configuration parameters.
 
-On the **Channels** page you can find every configuration related to each different channel along with their Inputs and Outputs.
+- **Channels**: Contains settings related to each different channel along with the inputs and outputs.
 
-On the **Input** page there are available other Input related configuration parameters that are not related with **Channel**.
+- **Input**/**Output**: These pages contain the other input- or output-related configuration parameters, which are not related to a specific channel.
 
-On the **Outputs** page you can find the same as **Inputs** page.
-
-At least on the **Alarms** page you can find the **Alarms** and **Events Log** tables.
+- **Alarms**: Contains the **Alarms** and **Events Log** tables.

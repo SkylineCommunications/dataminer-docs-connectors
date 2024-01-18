@@ -7883,12 +7883,12 @@
     topicUid: Connector_help_Sencore_OmniHub_6-16
   - name: Sencore OmniHub OHP6-EAS
     topicUid: Connector_help_Sencore_OmniHub_OHP6-EAS
+  - name: Sencore SDI2X
+    topicUid: Connector_help_Sencore_SDI2X
   - name: Sencore SMD989
     topicUid: Connector_help_Sencore_SMD989
   - name: Sencore TSS 6220
     topicUid: Connector_help_Sencore_TSS_6220
-  - name: Sencore SDI2X
-    topicUid: Connector_help_Sencore_SDI2X
 - name: Sennheiser
   topicUid: Connector_help_Sennheiser_EM9046
   items:
