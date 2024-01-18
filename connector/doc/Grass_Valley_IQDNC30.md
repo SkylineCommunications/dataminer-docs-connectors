@@ -62,7 +62,7 @@ The element created with this connector has the following data pages:
 - **Audio Shuffle:**
 - **Genlock**
 - **Timecode**
-- **Setup:** Displays basic information about the unit, such as the serial number and software version**.**
+- **Setup:** Displays basic information about the unit, such as the serial number and software version.
 
 ## Notes
 

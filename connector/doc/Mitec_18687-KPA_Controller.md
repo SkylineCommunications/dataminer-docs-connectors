@@ -34,9 +34,9 @@ SERIAL CONNECTION:
 
 - Interface Connection
 
-- **IP Address/Host**: The polling IP of the device.
+  - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
-  - **Bus Address**: The bus address of the device, with a range from *48* up to *63*.
+  - **Bus address**: The bus address of the device, with a range from *48* up to *63*.
 
 ## Usage
 
@@ -58,7 +58,7 @@ On this page, you can find the following general information and settings for th
 
 ### Switches
 
-This page displays the position of each switch, i.e. from **Switch 1** to **18**. The position can be either 1 or 2**.**
+This page displays the position of each switch, i.e. from **Switch 1** to **18**. The position can be either 1 or 2.
 
 ### Chain Alarm
 

@@ -64,7 +64,7 @@ This page displays information regarding the available services and the statisti
 
 ### Global Service Info
 
-On this page, you can check the current state of the **Serve Counters**: *Enabled* or *Disabled***.**
+On this page, you can check the current state of the **Serve Counters**: *Enabled* or *Disabled*.
 
 ### Subscriber Usage
 

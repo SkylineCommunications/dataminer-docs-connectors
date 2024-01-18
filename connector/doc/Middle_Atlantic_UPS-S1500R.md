@@ -82,7 +82,7 @@ On this page, you can configure and schedule the **Test Diagnostics**.
 
 ### Capabilities
 
-On this page, the **Conceptual Table** allows you to dynamically configure MIB values, as far as allowed by the system**.**
+On this page, the **Conceptual Table** allows you to dynamically configure MIB values, as far as allowed by the system.
 
 ### Device Entry
 

@@ -12,11 +12,11 @@ The Evertz 7880DM4-ISDBT-IP - Decoder connector uses **SNMP** to retrieve data f
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                            | -            | -                 |
-| 1.0.1.x              | Changed the DVE and tree view distribution. | -            | -                 |
-| 1.0.2.x [SLC Main]   | Added HTTP connection.                      | -            | -                 |
+| Range              | Key Features                                | Based on | System Impact |
+|--------------------|---------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                            | -        | -             |
+| 1.0.1.x            | Changed the DVE and tree view distribution. | -        | -             |
+| 1.0.2.x [SLC Main] | Added HTTP connection.                      | -        | -             |
 
 ### Product Info
 
@@ -52,7 +52,7 @@ This page displays the **Transport** **Stream** **Input table**, where you can c
 
 ### Output
 
-This page displays the **TS Output table**, which displays information such as the **Bitrate**, **PID Count** and **Errors** of the demodulators**.**
+This page displays the **TS Output table**, which displays information such as the **Bitrate**, **PID Count** and **Errors** of the demodulators.
 
 The **IP Output Stream Table** is also available in this page, which allows you to enable/disable each stream, as well as to configure the **Destination IP**, **Destination UDP** and the **TTL**.
 
