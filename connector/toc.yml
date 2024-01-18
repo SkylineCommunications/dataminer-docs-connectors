@@ -9935,6 +9935,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service
   - name: Vodafone Kabel Deutschland GmbH Pre-Encoding Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service
+  - name: Vodafone Kabel Deutschland GmbH Probe Monitoring Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service
   - name: Vodafone Kabel Deutschland GmbH Qbit Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
   - name: Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service
