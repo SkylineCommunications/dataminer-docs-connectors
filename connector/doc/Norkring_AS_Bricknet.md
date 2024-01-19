@@ -12,15 +12,21 @@ This connector supports the Bricknet View Visio drawings
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Linked connectors
+### Product Info
 
-| **Name** | **Range** |
-|-----------------|-----------|
-| VC4 IMS         | 1.0.0.x   |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range   | DCF Integration | Cassandra Compliant | Linked Components         | Exported Components |
+|---------|-----------------|---------------------|---------------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | Linked connector: VC4 IMS | -                   |
 
 ## Installation and configuration
 

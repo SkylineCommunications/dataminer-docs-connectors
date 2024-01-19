@@ -80,9 +80,21 @@ An external set action is automatically done on the button **Update Service Grou
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -138,6 +150,6 @@ The parameter **Topology File Read Status** shows the status of the current impo
 - *Import successful*: The export has ended successfully.
 - *Import failed*: An error occurred while reading the file.
 
-It is also possible to have the **DTV Subscribers column** filled in based on several filters. To do so, click the **DTV Subscribers** **button** to open a subpage where you can set several filters and fill in a **DTV Subscriber Value**. Alternatively, the subpage also allows you to import DTV subscribers from a CSV file.
+It is also possible to have the **DTV Subscribers column** filled in based on several filters. To do so, click the **DTV Subscribers button** to open a subpage where you can set several filters and fill in a **DTV Subscriber Value**. Alternatively, the subpage also allows you to import DTV subscribers from a CSV file.
 
 Finally, the **Export CSV File** button can be used to export a CSV file, which can later be imported on the General page.

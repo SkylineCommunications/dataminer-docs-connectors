@@ -12,15 +12,21 @@ This connector uses SNMP in order to monitor a cluster and its nodes.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                       |
-|------------------|---------------------------------------------------|
-| 1.0.0.x          | MIB Version: 2 Cluster Configuration Version: 133 |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | MIB Version: 2<br>Cluster Configuration Version: 133 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and creation
 

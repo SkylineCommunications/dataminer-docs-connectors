@@ -47,13 +47,13 @@ There is one page button available that will open a pop-up page on which the **T
 
 On this page, the user can set multiple parameters related to the interfaces. These settings will only be applied when the **Save and Reset** button is clicked.
 
-Note that the **Default** **IP** and **Default** **Gateway** can only be modified when **Enable DHCP** is set to *Enabled*.
+Note that the **Default IP** and **Default Gateway** can only be modified when **Enable DHCP** is set to *Enabled*.
 
-The **IP** **Address**, **Gateway**, **Subnet** **Mask** and **Primary** **DNS** can only be modified when **Enable** **DHCP** is set to *Not* *Enabled*.
+The **IP Address**, **Gateway**, **Subnet Mask** and **Primary DNS** can only be modified when **Enable DHCP** is set to *Not* *Enabled*.
 
 ### Login page
 
-On this page, the user can fill in the credentials to log on to the device. If the credentials are correct, the **Login** **Status** will display *Connected*, otherwise it will display *Not* *Connected*.
+On this page, the user can fill in the credentials to log on to the device. If the credentials are correct, the **Login Status** will display *Connected*, otherwise it will display *Not* *Connected*.
 
 ### Webpage
 

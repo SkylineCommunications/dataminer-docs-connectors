@@ -4,7 +4,7 @@ uid: Connector_help_National_TeleConsultants_DINGO_Media_Status
 
 # National TeleConsultants DINGO Media Status
 
-With the **NTC DINGO Media Status** connector, you can monitor information about **SeaChange Spot** **media** problems, including conflicts and similar issues. The connector also allows alarm monitoring and trending of those problems.
+With the **NTC DINGO Media Status** connector, you can monitor information about **SeaChange Spot media** problems, including conflicts and similar issues. The connector also allows alarm monitoring and trending of those problems.
 
 ## About
 
@@ -12,9 +12,21 @@ The Media Status connector will periodically poll the database to retrieve the m
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 

@@ -49,7 +49,7 @@ SNMP Settings:
 
 ### General
 
-This page displays the **AES Inputs** **Table**, along with the **Input**, **MPX Output**, **Peak Deviation** and **Modulation Power** parameters.
+This page displays the **AES Inputs Table**, along with the **Input**, **MPX Output**, **Peak Deviation** and **Modulation Power** parameters.
 
 The page contains page buttons to the following subpages:
 
@@ -58,8 +58,8 @@ The page contains page buttons to the following subpages:
 
 ### Preset
 
-This page displays the **Presets** **Table**.
+This page displays the **Presets Table**.
 
 ### Event Setting
 
-This page displays the **Event Settings** **Table**.
+This page displays the **Event Settings Table**.

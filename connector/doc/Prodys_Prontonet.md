@@ -14,9 +14,21 @@ The connector needs an SNMP connection to retrieve information from the device.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -41,7 +53,7 @@ SNMP settings:
 
 ### Status
 
-This page contains general parameters related to the device, such as **Name**, **Serial Number**, **Backup Status**, **Net Type**, **Temperature**, **Fan Speed**, **Main** and **Backup Voltage**, **5 V** and **3.3 V** **Voltage** and **Vumeter**.
+This page contains general parameters related to the device, such as **Name**, **Serial Number**, **Backup Status**, **Net Type**, **Temperature**, **Fan Speed**, **Main** and **Backup Voltage**, **5 V** and **3.3 V Voltage** and **Vumeter**.
 
 There are two tables, one containing the **Alarm History** and the other showing the **Line Status**, **Line Connection** and **Line Remote Number**.
 

@@ -12,7 +12,7 @@ Serial commands are used to set parameters on the device and information is retr
 
 ### Version Info
 
-| **Range** | **Key Features**               | **Based on** | **System Impact** |
+| Range     | Key Features                   | Based on     | System Impact     |
 |-----------|--------------------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version                | -            | -                 |
 | 1.1.0.x   | New firmware based on 1.0.0.x. | -            | -                 |

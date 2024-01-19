@@ -12,15 +12,21 @@ This is an **SNMP** connector, which processes received traps to update its para
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 5.0                         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 5.0                    |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -38,4 +44,4 @@ This page displays the **Events table**. All traps that are not cleared automati
 
 ### Traps
 
-This page displays the **Trap Overview** table, with information received in traps. Each entry in this table corresponds to a diferent **video channel.** Received traps will automatically update the state of the respective program. You can also manually set an alarm on each entry.
+This page displays the **Trap Overview** table, with information received in traps. Each entry in this table corresponds to a different **video channel**. Received traps will automatically update the state of the respective program. You can also manually set an alarm on each entry.

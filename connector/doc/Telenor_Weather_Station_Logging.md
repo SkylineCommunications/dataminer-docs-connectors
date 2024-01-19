@@ -12,9 +12,21 @@ The **Telenor Weather Station Logging** connector reads in the log files from a 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -36,17 +48,17 @@ On this page, a number of parameters display information about the weather stati
 
 ### Configuration page
 
-On this page, you can specify a local file directory to which the log files will be copied and where they will be stored. To do so, fill in the path in the **Local** **Workfolder** parameter.
+On this page, you can specify a local file directory to which the log files will be copied and where they will be stored. To do so, fill in the path in the **Local Workfolder** parameter.
 
-You can also fill in the **credentials** to enable access to the file locations specified in the **Location** **Mapping** **Table** on the **Locations** page, as described in the "Configuration" section above.
+You can also fill in the **credentials** to enable access to the file locations specified in the **Location Mapping Table** on the **Locations** page, as described in the "Configuration" section above.
 
-In addition, you can specify the interval for logging data to the database, by setting the **Logging** **Time** **Interval** **parameter** to a particular value. When no value is set for this parameter, *5 minutes* will be used by default.
+In addition, you can specify the interval for logging data to the database, by setting the **Logging Time Interval parameter** to a particular value. When no value is set for this parameter, *5 minutes* will be used by default.
 
-The **Interval** **Time** **Files** parameter can also be set. This value represents the time between two logs in a logfile, e.g. *10 seconds*.
+The **Interval Time Files** parameter can also be set. This value represents the time between two logs in a log file, e.g. *10 seconds*.
 
 ### File Table page
 
-With the first parameter on this page, **Number of Monitored Files**, you can configure how many files can be shown in the **File** **Table**.
+With the first parameter on this page, **Number of Monitored Files**, you can configure how many files can be shown in the **File Table**.
 
 The **File Table** displays information about a number of files from the selected file directory.
 
@@ -54,6 +66,6 @@ When you click the **Refresh Button**, the files in the **File Table** are refre
 
 ### Locations page
 
-On the **Locations** page, you can add a file location by entering a location in the **Add** **New** **Location** parameter.
+On the **Locations** page, you can add a file location by entering a location in the **Add New Location** parameter.
 
 On this page, you can see the added file locations where the connector will get the log files, as well as set new locations. You can choose to enable or disable all locations, set the polling time, set the Max Healthy Time or remove a location.

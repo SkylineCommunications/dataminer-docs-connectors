@@ -17,64 +17,11 @@ Note that your DMA will require an **internet connection** and a correctly confi
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Customer-specific range.</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td>Generic
-<ul>
-<li>Polling of synopses, events, satellites, etc.</li>
-<li>Supports callbacks</li>
-<li><ul>
-<li>Synopsis notifications</li>
-<li>Request notifications</li>
-</ul></li>
-<li>Supports external requests to book</li>
-<li><ul>
-<li>News events</li>
-<li>Program events</li>
-<li>Satellite capacity</li>
-<li>Unilateral transmissions</li>
-<li>OSS transmissions</li>
-</ul></li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>2.0.1.x [SLC Main]</td>
-<td>Generic
-<ul>
-<li>Supports all features available in 2.0.0.x.</li>
-<li>Additional polling configuration:</li>
-<li><ul>
-<li>Enabling/disabling polling of specific data</li>
-<li>Configuring polling frequency</li>
-</ul></li>
-</ul></td>
-<td>2.0.0.8</td>
-<td>Most polling is disabled by default to avoid a lot of requests (as most of this data is not needed if no bookings are created using this connector). <strong>If this data is required, manually enable polling when you move to this range.</strong></td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Customer-specific range. | - | - |
+| 2.0.0.x | Generic<br>- Polling of synopses, events, satellites, etc.<br>- Supports callbacks (Synopsis notifications / Request notifications)<br>- Supports external requests to book (News events, program events, satellite capacity, unilateral transmissions, and OSS transmissions). | - | - |
+| 2.0.1.x [SLC Main] | Generic<br>- Supports all features available in 2.0.0.x.<br>- Additional polling configuration: Enabling/disabling polling of specific data, and configuring polling frequency. | 2.0.0.8 | Most polling is disabled by default to avoid a lot of requests (as most of this data is not needed if no bookings are created using this connector). **If this data is required, manually enable polling when you move to this range.** |
 
 ### System Info
 
@@ -94,7 +41,7 @@ This connector uses an HTTP(s) connection and requires the following input durin
 
 HTTP CONNECTION:
 
-- **IP address/host**: www.eurovision.net
+- **IP address/host**: `www.eurovision.net`
 - **IP port**: 80 or 443
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 

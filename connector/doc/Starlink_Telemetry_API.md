@@ -22,7 +22,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | TBD                |
+| 1.0.0.x | v1                 |
 
 ### System Info
 
@@ -83,9 +83,9 @@ The User Terminals page contains the **User Terminals** table. This table shows 
 
 The columns **Device ID** and **Account Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
-As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for maximum one day. You will see a line in the element log file when one or more terminals are still in the table but were not returned by the API.
+As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
 
-Terminals that are no longer returned by the API for more than one day will be removed from the table. This action will also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
+Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
 You can assign a name to each user terminal in the **Device Name** column. These names will only be used by DataMiner and will not be communicated to the API. Keep in mind that a name will not be accepted if it contains invalid symbols.
 
@@ -99,9 +99,9 @@ Information related to routers is stored in the **Routers** table.
 
 The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
-As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for maximum one day. You will see a line in the element log file when one or more routers are still in the table but were not returned by the API.
+As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
 
-Routers that are no longer returned by the API for more than one day will be removed from the table. This action will also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
+Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
 ### Accounts Page
 

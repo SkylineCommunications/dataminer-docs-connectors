@@ -12,19 +12,25 @@ The Specialty Microwave Corp connector allows for quick monitoring of front pane
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x [SLC Main]   | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+
+## Configuration
+
+### Connections
 
 #### Serial main connection
 
@@ -50,4 +56,4 @@ SERIAL CONNECTION:
 
 ### General
 
-Here you can configure the device's two **Switch Positions.** Status parameters such as the **Power Supply Status 1** and **2**, **Local** **Indicator,** and **TLT Fail Status** are also displayed.
+Here you can configure the device's two **Switch Positions**. Status parameters such as the **Power Supply Status 1** and **2**, **Local** **Indicator**, and **TLT Fail Status** are also displayed.

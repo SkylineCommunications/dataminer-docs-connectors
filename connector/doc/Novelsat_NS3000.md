@@ -4,29 +4,35 @@ uid: Connector_help_Novelsat_NS3000
 
 # Novelsat NS3000
 
-This is a snmp protocol for the **Novelsat NS3000** device and can be used to display and configure information from the modem.
+This is an SNMP connector for the **Novelsat NS3000** device. It can be used to display and configure information from the modem.
+
+The connector needs an SNMP connection to retrieve and set information on the device.
 
 ## about
 
-The connector needs a snmp connection to retrieve and set information from the device.
-
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2011.3 (Build 4377)         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 2011.3 (Build 4377)    |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
-#### SNMP connection - Main
+## Configuration
+
+### Connections
+
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -40,7 +46,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default: *public*.
 - **Set community string**: The community string used when setting values on the device, by default: *private*.
 
-#### HTTP connection - Secondary
+#### HTTP Connection - Secondary
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -60,7 +66,7 @@ Here you can also update your software from the device.
 
 ### System Config
 
-Here you find settings for the external electrical connections to/from the device for the **Ethernet Interface**, **Serial Interface,** **External Clock Input** and additional settings for the **Time & Date Reference** used by the Device. This page also allows the user to load, save and delete device configurations from the devices internal **System Database**.
+Here you find settings for the external electrical connections to/from the device for the **Ethernet Interface**, **Serial Interface, External Clock Input** and additional settings for the **Time & Date Reference** used by the Device. This page also allows the user to load, save and delete device configurations from the devices internal **System Database**.
 
 ### Modulator Line Config
 

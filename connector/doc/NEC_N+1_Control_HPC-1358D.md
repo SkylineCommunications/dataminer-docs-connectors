@@ -12,22 +12,28 @@ This connector can be used to monitor and control the NEC N+1 Control HPC-1358D 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.1.3                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 2.1.3                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | See table below.        |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**                      |
-|-----------------------|--------------------------------------|
-| Main Transmitter      | Represents the mux transmitters.     |
-| Reserve Transmitter   | Represents the reserve transmitters. |
+| Exported Connector  | Description                          |
+|---------------------|--------------------------------------|
+| Main Transmitter    | Represents the mux transmitters.     |
+| Reserve Transmitter | Represents the reserve transmitters. |
 
 ## Installation and configuration
 

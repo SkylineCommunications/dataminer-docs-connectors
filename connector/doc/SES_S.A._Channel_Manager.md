@@ -12,10 +12,24 @@ The SES S.A. Channel Manager uses **inter-element communication** to obtain info
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-| 1.0.1.x          | Initial version | No                  | Yes                     |
+| Range   | Key Features    | Based on | System Impact |
+|---------|-----------------|----------|---------------|
+| 1.0.0.x | Initial version | -        | -             |
+| 1.0.1.x | Initial version | -        | -             |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -33,22 +47,23 @@ This page contains the **Configuration File** drop-down menu. This menu displays
 
 The configuration files must contain the exact name of the connectors and the PIDs of the parameters that the SES S.A. Channel Manager will obtain. The following table shows the order in which the information must be filled in:
 
-| **Connector** | **Channel** | **Orbital Position** | **Satellite** | **Tube** | **Uplink** | **Customer** | **Deviation** | **ULF** | **ULPol** | **DLF** | **DLFPol** | **ChainUplink** | **Modulation** | **DCMS Name** | **DCMS Channel Key** | **EIRP DCMS** | **EIRP CSM** | **C/N** | **Eb/No** | **TsLock** | **Monics CM Updates** | **Time Since Last EIRP Update** | **Last Modified EIRP** | **Time since last update** |
+| Connector | Channel | Orbital Position | Satellite | Tube | Uplink | Customer | Deviation | ULF | ULPol | DLF | DLFPol | ChainUplink | Modulation | DCMS Name | DCMS Channel Key | EIRP DCMS | EIRP CSM | C/N | Eb/No | TsLock | Monics CM Updates | Time Since Last EIRP Update | Last Modified EIRP | Time since last update |
 |--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-| SES S.A. TEMOS | 1001 | 1002 | 1014 | 1003 | 1009 | 1012 | 1026 | 1005 | 1006 | 1007 | 1008 | 1010 | 1013 | 1030 | 1031 |  |  |  |  |  |  |  |  |  |
-| SES S.A. DCMS | 1015 | 1008 | 100 | 1016 | 1010 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Wellav UMH160R-IP | 102 | 100 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Inverto IDLV-5x00 | 107 | 108 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Scopus Network Technologies IRD-2900 |  | 861 | 80 | 203 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Wellav UMH 160 | 208 | 62 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Ericsson RX8200 | 75 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Integral Systems Monics Automon UDP | 2001 | 2011 |  | 2021 |  | 2022 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| Astro U148 | 11106 | 11118 | 11102 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
-| TeamCast Neptune | 2002 | 1507 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+| SES S.A. TEMOS                       | 1001 | 1002 | 1014 | 1003 | 1009 | 1012 | 1026 | 1005 | 1006 | 1007 | 1008 | 1010 | 1013 | 1030 | 1031 |  |  |  |  |  |  |  |  |  |
+| SES S.A. DCMS                        | 1015 |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 1008 |  |       |       | 100 |    | 1016 | 1010 |  |
+| Wellav UMH160R-IP                    |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      | 102   |       | 100   |  |  |  |  |
+| Inverto IDLV-5x00                    |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      | 107   | 108   |       |  |  |  |  |
+| Scopus Network Technologies IRD-2900 |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      | 861   | 80    | 203   |  |  |  |  |
+| Wellav UMH 160                       |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      |208    |       | 62    |      |  |  |  |
+| Ericsson RX8200                      |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      | 75    |       |       |      |  |  |  |
+| Integral Systems Monics Automon UDP  | 2001 |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | 2011 |       |       |       | 2021 |  |  | 2022 |
+| Astro U148                           |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      | 11106 | 11118 | 11102 |      |  |  |  |
+| TeamCast Neptune                     |      |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |      | 2002  |       | 1507  |      |  |  |  |
 
 Select a **CSV** configuration file and press the **Refresh Table** button to obtain the information from **SES S.A. TEMOS**, **SES S.A. DCMS** and **Integral Systems Monics Automon UDP** elements. This button also executes the script **Element Connection Channel Manager**, which creates the element connections with the **IRD** elements.
 
-Note: To create the element connections with the IRDs, make sure these elements have the property **TRANSPONDER_ID**. This property indicates the channel(s) that the IRD is linked to.
+> [!NOTE]
+> To create the element connections with the IRDs, make sure these elements have the property **TRANSPONDER_ID**. This property indicates the channel(s) that the IRD is linked to.
 
 The Channels page also contains the **Channel Table**, which displays an overview of all the satellite channels available in the **SES S.A TEMOS** element. The display key of this table contains the concatenation of the **Channel** and the configured preset in the **Alarm Preset column**.
 
@@ -85,4 +100,4 @@ Once an alarm preset has been assigned to a certain channel, this preset name ca
 
 This page contains the **Integral Systems Monics Automon UDP Error Table**, which displays any duplicate key errors that occur in the Integral Systems Monics Automon UDP elements.
 
-This page also contains the **IRD Element Connection Error** **Table**, which displays any duplicate key errors that occur in the IRD elements.
+This page also contains the **IRD Element Connection Error Table**, which displays any duplicate key errors that occur in the IRD elements.

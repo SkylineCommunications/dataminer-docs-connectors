@@ -40,43 +40,26 @@ With this connector, you can monitor Linux platforms with SSH or with SNMP.
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x - 1.1.1.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x - 1.1.1.x</td>
-<td><p>Serial connection:</p>
-<ul>
-<li><strong>IP address/host:</strong> The polling IP of the Linux platform.</li>
-<li><strong>IP port:</strong> The IP port of the device.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x - 2.0.1.x</td>
-<td>SNMP connection:
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device, e.g. <em>10.11.12.13.</em></li>
-<li><strong>Port number:</strong> The port of the connected device, by default 161.</li>
-<li><strong>Get community string:</strong> The community string in order to read from the device, by default <em>public</em>.</li>
-<li><strong>Set community string:</strong> The community string in order to set to the device, by default <em>private</em>.</li>
-</ul>
-<p>SERIAL connection:</p>
-<ul>
-<li><strong>IP address/host:</strong> The polling IP of the Linux platform.</li>
-<li><strong>IP port:</strong> The IP port of the device, by default <em>22</em> (SSH).</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### Serial connection
+
+- **IP address/host:** The polling IP of the Linux platform.
+- **IP port:** The IP port of the device.
+
+### Connections - Range 2.0.0.x - 2.0.1.x
+
+#### SNMP connection
+
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **Port number:** The port of the connected device, by default 161.
+- **Get community string:** The community string in order to read from the device, by default *public*.
+- **Set community string:** The community string in order to set to the device, by default *private*.
+
+#### SERIAL connection
+
+- **IP address/host:** The polling IP of the Linux platform.
+- **IP port:** The IP port of the device, by default *22* (SSH).
 
 ### Configuration SSH
 

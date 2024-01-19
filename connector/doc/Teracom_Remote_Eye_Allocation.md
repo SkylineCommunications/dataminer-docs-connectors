@@ -13,15 +13,27 @@ The system will filter elements based on the protocol name. Currently, elements 
 The connector is used together with the following 4 scripts:
 
 1. Remote Eye Tx In
-2. Remote Eye Tx Out
-3. Remote Eye He In
-4. Remote Eye He Out
+1. Remote Eye Tx Out
+1. Remote Eye He In
+1. Remote Eye He Out
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -42,7 +54,7 @@ As soon as the timeout time for a session is reached, the linked entry will be d
 
 This page contains the **IRD Allocation Table**. This table lists the IRDs available in the DMS for remote-eye sessions. It displays the **Time** when each IRD has been in use, the **Service** that was selected, the **Session**, the **Engine** that it is in use and the **Stream Source**, and it contains an option to manually **remove** the IRD.
 
-Aside from this table, the page contains the **Add IRD** page button, which allows you to configure a **New IRD Name**, **EdgeVision** **IP** and **EdgeVision Port**.
+Aside from this table, the page contains the **Add IRD** page button, which allows you to configure a **New IRD Name**, **EdgeVision IP** and **EdgeVision Port**.
 
 When the scripts Remote Eye Tx In, Remote Eye Tx Out and Remote Eye He Out are run, the connector will automatically handle the initialization of the parameters mentioned above.
 

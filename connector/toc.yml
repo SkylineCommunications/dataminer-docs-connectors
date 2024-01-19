@@ -1702,8 +1702,10 @@
   - name: Blackmagic Design Videohub
     topicUid: Connector_help_Blackmagic_Design_Videohub
 - name: Blankom
-  topicUid: Connector_help_Blankom_HCB-200
+  topicUid: Connector_help_Blankom_B-Nova
   items:
+  - name: Blankom B-Nova
+    topicUid: Connector_help_Blankom_B-Nova
   - name: Blankom HCB-200
     topicUid: Connector_help_Blankom_HCB-200
 - name: Blue Coat
@@ -7883,6 +7885,8 @@
     topicUid: Connector_help_Sencore_OmniHub_6-16
   - name: Sencore OmniHub OHP6-EAS
     topicUid: Connector_help_Sencore_OmniHub_OHP6-EAS
+  - name: Sencore SDI2X
+    topicUid: Connector_help_Sencore_SDI2X
   - name: Sencore SMD989
     topicUid: Connector_help_Sencore_SMD989
   - name: Sencore TSS 6220
@@ -8574,6 +8578,8 @@
     topicUid: Connector_help_Specialty_Microwave_Corp_11845-500
   - name: Specialty Microwave Corp 13056-501
     topicUid: Connector_help_Specialty_Microwave_Corp_13056-501
+  - name: Specialty Microwave Corp 13361-501
+    topicUid: Connector_help_Specialty_Microwave_Corp_13361-501
   - name: Specialty Microwave Corp 13966-505
     topicUid: Connector_help_Specialty_Microwave_Corp_13966-505
   - name: Specialty Microwave Corp 13966-506
@@ -9931,6 +9937,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service
   - name: Vodafone Kabel Deutschland GmbH Pre-Encoding Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service
+  - name: Vodafone Kabel Deutschland GmbH Probe Monitoring Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service
   - name: Vodafone Kabel Deutschland GmbH Qbit Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
   - name: Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service

@@ -14,29 +14,21 @@ Serial commands are used to retrieve the device information and to execute the s
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Device Firmware Version</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><p>Software version 01</p>
-<p>Model Number 216804MD Model Number 18135</p></td>
-</tr>
-</tbody>
-</table>
+| Range   | Supported Firmware                                                 |
+|---------|--------------------------------------------------------------------|
+| 1.0.0.x | Software version 01<br>Model Number 216804MD<br>Model Number 18135 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -70,8 +62,8 @@ This page displays the **Model Number** and the **Software Version**.
 
 ### Status
 
-This page displays the **Control Mode**, **Redundancy Mode** and **Operation Mode**, the **Switch Summary** and **Power Supply Summary**, and finally also the **Antenna 1** and **Antenna 2 HPA Summary** and **Antenna 1** and **Antenna 2 Settings.**
+This page displays the **Control Mode**, **Redundancy Mode**, and **Operation Mode**, the **Switch Summary** and **Power Supply Summary**, and finally also the **Antenna 1** and **Antenna 2 HPA Summary** and **Antenna 1** and **Antenna 2 Settings**.
 
 The page also contains settings that can be used to configure **Redundancy Mode** and **Operation Mode**, and a button to toggle **Alarm Acknowledge**.
 
-The **Antenna 1** and **Antenna 2 Settings** can be configured by selecting a value in the **Antenna Settings** drop-down list.
+The **Antenna 1** and **Antenna 2 Settings** can be configured by selecting a value in the **Antenna Settings** dropdown list.

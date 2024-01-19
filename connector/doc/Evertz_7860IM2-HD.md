@@ -32,7 +32,7 @@ The connector is an **SNMP** connector that can change the configuration of the 
 
 ### General
 
-Specific to the device you can see the **FPGA build number** and the **Factory Reset** allows you to reset the device to the factory settings**.**
+Specific to the device you can see the **FPGA build number** and the **Factory Reset** allows you to reset the device to the factory settings.
 You can control the path of the signal and can check the **GPI**, **VANC** and **Split display** parameters through the page buttons.
 
 ### Video

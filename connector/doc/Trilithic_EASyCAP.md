@@ -12,15 +12,21 @@ This connector uses SNMP to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 01.06                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 01.06                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -65,7 +71,7 @@ This page contains the **Status CAP Source Table**, which displays status inform
 
 ### Traps
 
-On this page, the **Trap Table** displays information on all the alarms for which a trap was received from the device. There are 15 different possible OIDs, such as *alarmCapConnectionDown (*reports if the connection to a CAP feed is lost), *alarmStartup* and *alarmSystemWarning*.
+On this page, the **Trap Table** displays information on all the alarms for which a trap was received from the device. There are 15 different possible OIDs, such as *alarmCapConnectionDown* (reports if the connection to a CAP feed is lost), *alarmStartup* and *alarmSystemWarning*.
 
 The rows in this table can be limited by age and by total number of rows, so that the table does not keep growing indefinitely.
 

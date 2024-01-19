@@ -12,15 +12,21 @@ This connector is to be used as a deconcentrator.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                  |
-|------------------|----------------------------------------------|
-| 1.0.0.x          | Hardware version: 6.0 Software version: 2.07 |
+| Range   | Supported Firmware                              |
+|---------|-------------------------------------------------|
+| 1.0.0.x | Hardware version: 6.0<br>Software version: 2.07 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and creation
 
@@ -49,7 +55,7 @@ This page displays general device information, as well as the operating mode. Th
 - **Device Info**: Displays device **Software** and **Hardware** information such as **Version**, **Product ID**, **Serial Number** and **Capabilities**.
 - **Display**: This page allows you to control the device **Display Settings**.
 - **Power Supply**: Displays **Power Supply** information.
-- **Security**: This page displays **Security** information, such as the **Password** and **Licence Key**.
+- **Security**: This page displays **Security** information, such as the **Password** and **License Key**.
 - **Ethernet**: Displays **Ethernet** information. It is also possible to configure the **Ethernet Interface**.
 - **Serial**: This page allows you to control serial settings such as the **Device Address** and **Serial Baudrate**.
 - **Config**: On this page, you can **Save** and **Load** up to 48 different operational configurations in permanent memory.

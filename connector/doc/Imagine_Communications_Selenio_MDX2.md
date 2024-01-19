@@ -26,50 +26,26 @@ The **versioning** for the connector is specifically engineered to tie in with t
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>5.1.24.x</td>
-<td>Initial range</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>5.4.9.x [SLC Main]</td>
-<td><p>Based on 5.1.24.2</p>
-<p>Implemented support for New firmware (<em>Ref. Firmware version table</em>)</p>
-<p>Parameter listed in <strong>Notes</strong> section is no longer available, there are also some changes in PIDs/descriptions. So please verify any references in DMS to these parameters.(Visio, Automation Scripts, DMS Filters, Reports ...)</p></td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>10.0.0.x</td>
-<td><p>Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.</p>
-<p><strong>Not still used, until vendor release new firmware that completly support it.</strong></p></td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 5.1.24.x | Initial range | - | - |
+| 5.4.9.x [SLC Main] | Implemented support for new firmware (see [Product Info](#product-info)). | Based on 5.1.24.2 | Changes have been implemented to parameters (see [Notes](#notes)). Verify any references in DMS to these parameters.(Visio, Automation Scripts, DMS Filters, Reports ...) |
+| 10.0.0.x | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. **Not used until vendor releases new firmware that completely supports it.** | - | - |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                                                 |
-|------------------|---------------------------------------------------------------------------------------------------------|
-| 5.4.9.x          | Update for firmware 5.4.9                                                                               |
-| 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware. |
+| Range    | Firmware Version                                                                                        |
+|----------|---------------------------------------------------------------------------------------------------------|
+| 5.4.9.x  | Update for firmware 5.4.9                                                                               |
+| 10.0.0.x | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware. |
+
+### System Info
+
+| Range    | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|----------|-----------------|---------------------|-------------------|---------------------|
+| 5.1.24.x | No              | No                  | -                 | -                   |
+| 5.4.9.x  | No              | No                  | -                 | -                   |
+| 10.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Installation and configuration
 
@@ -125,7 +101,7 @@ This section consists of the following pages: **Demultiplexer PID Map, Demultipl
 
 They contain all data concerning the de-multiplexing of transport streams.
 
-### Conditional Access section:
+### Conditional Access section
 
 This section consists of the following pages: **Conditional Access, CA Systems, ECMG, EMMG, Access Criteria, Scrambling Control Groups, ECM, ISDBT SFN Transmitter.**
 
@@ -135,7 +111,7 @@ They allow you to configure the **External Conditional Access Systems**. Differe
 
 This section consists of the following pages: **DVB-T2 Gateway, Frame, System** and **SFN.**
 
-Control and monitoring of **Digital Video Broadcasting options** is available on these pages**.**
+Control and monitoring of **Digital Video Broadcasting options** is available on these pages.
 
 ## Notes
 
@@ -143,6 +119,6 @@ Because of the high amount of data present in tables for this device, the demand
 
 Changes from range 5.1.24.x to 5.4.9.x:
 
-\- Parameter IP LANs Selected Receive Interface (PID30003) is no longer available.
+- Parameter IP LANs Selected Receive Interface (PID30003) is no longer available.
 
-\- Changes in Parameter IDs/descriptions aroud the connector.
+- Changes in Parameter IDs/descriptions around the connector.

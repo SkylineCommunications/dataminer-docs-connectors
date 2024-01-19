@@ -12,15 +12,21 @@ This connector provides a monitoring interface for the **Motorola GX2-EM1000C** 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.1.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 2.0.1.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.1.x          | D                           |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 2.0.1.x   | D                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,7 +38,7 @@ This connector is used by DVE child elements that are **automatically created** 
 
 ### General
 
-This page displays general information about the card, including the **Unit Name**, **Module Type**, **Firmware** and **Hardware** **Version**, **IP Address** and **Physical Address**.
+This page displays general information about the card, including the **Unit Name**, **Module Type**, **Firmware** and **Hardware Version**, **IP Address** and **Physical Address**.
 
 ### Broadcast Transmitter
 

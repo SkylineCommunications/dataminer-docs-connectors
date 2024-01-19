@@ -14,12 +14,12 @@ The connector shows all information in table format, the same way as it is store
 
 ### Version Info
 
-| **Range**            | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x              | Initial version.                          | No                  | Yes                     |
-| 1.0.2.x              | DVE integration.                          | No                  | Yes                     |
-| 1.1.0.x [Obsolete]     |Removed parameters that were not working. | No                  | Yes                     |
-| 1.2.0.x [SLC Main]   | New MIBs OIDs change; parameters removed. | No                  | Yes                     |
+| Range              | Description                               | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------|-----------------|---------------------|
+| 1.0.1.x            | Initial version.                          | No              | Yes                 |
+| 1.0.2.x            | DVE integration.                          | No              | Yes                 |
+| 1.1.0.x [Obsolete] | Removed parameters that were not working. | No              | Yes                 |
+| 1.2.0.x [SLC Main] | New MIBs OIDs change; parameters removed. | No              | Yes                 |
 
 ### Product Info
 
@@ -31,8 +31,8 @@ The connector shows all information in table format, the same way as it is store
 
 ### Exported Connectors
 
-| **Exported Connector**                                                                                                       | **Description**                               |
-|------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| Exported Connector                                                                                               | Description                                   |
+|------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | [Advantech AMT Monitor and Control Panel Unit](xref:Connector_help_Advantech_AMT_Monitor_and_Control_Panel_Unit) | SSPAs, Transceiver. Not in the 1.2.0.x range. |
 
 ## Configuration
@@ -57,7 +57,7 @@ SNMP Settings:
 
 ### General
 
-This page contains general configuration information for the interfaces of the device: the **Unit Serial Number**, **PS Voltages**, **Shroud Temperature**, and **Port and** **MAC** information of the **Defined Units**.
+This page contains general configuration information for the interfaces of the device: the **Unit Serial Number**, **PS Voltages**, **Shroud Temperature**, and **Port and MAC** information of the **Defined Units**.
 
 There is also a **Reset Control Panel** option.
 

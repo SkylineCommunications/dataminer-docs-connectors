@@ -12,15 +12,21 @@ The UMH160R-IP connector was designed to monitor all the inputs and outputs of t
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -111,7 +117,7 @@ Physical fixed interfaces:
 - **Turner:** Physical Turner Interface with type **in**.
 - **IP**: Physical IP Interface with type **in**.
 - **ASI IN**: Physical ASI Interface with type **in**.
-- **SDI** **Decoder**: Physical SDI Interface with type **out**.
+- **SDI Decoder**: Physical SDI Interface with type **out**.
 
 #### Dynamic Interfaces
 
@@ -130,18 +136,18 @@ The connections are made following these conditions:
 
 Once the connector is running:
 
-1. If **Decoder Input** is type **Turner**: **TURNER** **IN (ID:1)** --\> **SDI DECODER OUT (ID:5)**
-1. If **Decoder Input** is type **ASI**: **ASI** **IN (ID:3)** --\> **SDI DECODER OUT (ID:5)**
-1. If **Decoder Input** is type **IP**: **IP IN (ID:2)** **--\>** **SDI DECODER OUT (ID:5)**
+1. If **Decoder Input** is type **Turner**: **TURNER IN (ID:1)** --\> **SDI DECODER OUT (ID:5)**
+1. If **Decoder Input** is type **ASI**: **ASI IN (ID:3)** --\> **SDI DECODER OUT (ID:5)**
+1. If **Decoder Input** is type **IP**: **IP IN (ID:2) --\> SDI DECODER OUT (ID:5)**
 
 If the **ASI Bypass** is **disabled**:
 
-1. If **Decoder Input** is type **Turner**: **TURNER** **IN (ID:1)** **--\> ASI** **OUT (ID:4)**
-1. If **Decoder Input** is type **ASI**: **ASI** **IN (ID:3)** **--\> ASI** **OUT (ID:4)**
-1. If **Decoder Input** is type **IP**: **IP IN (ID:2)** **--\>** **ASI OUT (ID:4)**
+1. If **Decoder Input** is type **Turner**: **TURNER IN (ID:1) --\> ASI OUT (ID:4)**
+1. If **Decoder Input** is type **ASI**: **ASI IN (ID:3) --\> ASI OUT (ID:4)**
+1. If **Decoder Input** is type **IP**: **IP IN (ID:2) --\> ASI OUT (ID:4)**
 
 If the **IP Bypass** is **disabled**:
 
-1. If **Decoder Input** is type **Turner**: **TURNER** **IN (ID:1)** **--\> IP** **OUT (ID:6)**
-1. If **Decoder Input** is type **ASI**: **ASI** **IN (ID:3)** **--\>** **IP** **OUT (ID:6)**
-1. If **Decoder Input** is type **IP**: **IP IN (ID:2)** **--\>** **IP OUT (ID:6)**
+1. If **Decoder Input** is type **Turner**: **TURNER IN (ID:1) --\> IP OUT (ID:6)**
+1. If **Decoder Input** is type **ASI**: **ASI IN (ID:3) --\> IP OUT (ID:6)**
+1. If **Decoder Input** is type **IP**: **IP IN (ID:2) --\> IP OUT (ID:6)**
