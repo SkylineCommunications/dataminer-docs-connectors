@@ -239,11 +239,14 @@ Physical dynamic interfaces:
 
 - The physical dynamic interface is created for the parameter **Interfaces Table** and its interface is **inout**.
 
-## Note
+## Notes
 
 For range **1.1.0.x**, it is possible to create a virtual dynamic Interface from an external source by adding a row to the Remote DCF Interface table (49997). This functionality does not exist in the 2.0.0.x range.
 
-## SNMP OIDs implemented (in construction)
+> [!Note]
+> The following list include OIDs that are monitored by default when creating an element
+
+## SNMP OIDs implemented
 
 |Parameter Name|SNMP Parameter Name (MIB File)|SNMP OID|MIB File|
 |--------------|------------------------------|--------|--------|
