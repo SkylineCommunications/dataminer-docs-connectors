@@ -203,8 +203,8 @@ Physical dynamic interfaces:
 
 ## SNMP OIDs Implemented
 
-> [!Note]
-> The following list include OIDs that are monitored by default when creating the element.
+> [!NOTE]
+> The following list includes OIDs that are monitored by default when the element is created.
 
 |Parameter Name|SNMP Parameter Name (MIB File)|SNMP OID|MIB File|
 |--------------|------------------------------|--------|--------|

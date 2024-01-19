@@ -245,8 +245,8 @@ For range **1.1.0.x**, it is possible to create a virtual dynamic Interface from
 
 ## SNMP OIDs Implemented
 
-> [!Note]
-> The following list include OIDs that are monitored by default when creating the element.
+> [!NOTE]
+> The following list includes OIDs that are monitored by default when the element is created.
 
 |Parameter Name|SNMP Parameter Name (MIB File)|SNMP OID|MIB File|
 |--------------|------------------------------|--------|--------|
