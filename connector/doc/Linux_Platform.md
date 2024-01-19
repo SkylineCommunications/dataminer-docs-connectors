@@ -10,7 +10,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 
 ### Version Info
 
-|**Range**|**Key Features**|**Based on**|**System Impact** |
+| Range | Key Features | Based on | System Impact |
 |---------|----------------|------------|------------------|
 |1.0.0.x|Initial version.| - | - |
 |1.1.0.x|Added version compatibility.| - | - |
@@ -201,7 +201,7 @@ Physical dynamic interfaces:
 
 - The physical dynamic interface is created for the parameter **Network Interface Table** and its interface is **inout**.
 
-## SNMP OIDs implemented (in construction)
+## SNMP OIDs Implemented (in Construction)
 
 |Parameter Name|SNMP Parameter Name (MIB File)|SNMP OID|MIB File|
 |--------------|------------------------------|--------|--------|
