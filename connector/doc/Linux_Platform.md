@@ -10,7 +10,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 
 ### Version Info
 
-|**Range**|**Key Features**|**Based on**|**System Impact** |
+| Range | Key Features | Based on | System Impact |
 |---------|----------------|------------|------------------|
 |1.0.0.x|Initial version.| - | - |
 |1.1.0.x|Added version compatibility.| - | - |
@@ -201,11 +201,10 @@ Physical dynamic interfaces:
 
 - The physical dynamic interface is created for the parameter **Network Interface Table** and its interface is **inout**.
 
-## Notes
+## SNMP OIDs Implemented
 
-For range **1.1.0.x**, it is possible to create a virtual dynamic Interface from an external source by adding a row to the Remote DCF Interface table (49997). This functionality does not exist in the 2.0.0.x range.
-
-## SNMP OIDs implemented
+> [!Note]
+> The following list include OIDs that are monitored by default when creating the element.
 
 |Parameter Name|SNMP Parameter Name (MIB File)|SNMP OID|MIB File|
 |--------------|------------------------------|--------|--------|

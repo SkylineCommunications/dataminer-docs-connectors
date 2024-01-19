@@ -61,14 +61,14 @@ This page contains the following tables:
 
 ### Power Supply
 
-This page contains only the **Power Supply Table**. For each power supply, this table lists the (user-editable) **Group Number**, the **Group** in which each power supply belongs, the measured **Value** and the **Status** of the power supply**.**
+This page contains only the **Power Supply Table**. For each power supply, this table lists the (user-editable) **Group Number**, the **Group** in which each power supply belongs, the measured **Value** and the **Status** of the power supply.
 
 ### Settings
 
 This page contains the following tables:
 
 - **IP Devices Table**: For each IP device, this table allows you to view and configure the **Address**, the **Description**, the **Group Nb**, the **Group** in which each IP belongs, the **Timeout**, the number of **Retries**, and the **State**. In the final column of the table, the **Status** is displayed.
-- **IP Link Table**: For each IP link, this table allows you to view and configure the **Address** and **Description.**
+- **IP Link Table**: For each IP link, this table allows you to view and configure the **Address** and **Description**.
 
 ### Web Page
 

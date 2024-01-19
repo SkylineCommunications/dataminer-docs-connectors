@@ -243,10 +243,10 @@ Physical dynamic interfaces:
 
 For range **1.1.0.x**, it is possible to create a virtual dynamic Interface from an external source by adding a row to the Remote DCF Interface table (49997). This functionality does not exist in the 2.0.0.x range.
 
-> [!Note]
-> The following list include OIDs that are monitored by default when creating an element
+## SNMP OIDs Implemented
 
-## SNMP OIDs implemented
+> [!Note]
+> The following list include OIDs that are monitored by default when creating the element.
 
 |Parameter Name|SNMP Parameter Name (MIB File)|SNMP OID|MIB File|
 |--------------|------------------------------|--------|--------|

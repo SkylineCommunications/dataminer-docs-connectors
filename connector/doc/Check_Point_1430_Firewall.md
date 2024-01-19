@@ -62,7 +62,7 @@ The element created with this connector consists of the following data pages:
 
 - **General**: Displays general **system information** as well as the **System OR** table, which lists the capabilities of the local SNMP applications acting as a command responder with respect to various MIB modules.
 - **Secure Virtual Network**: Provides an overview of the **Secure Virtual Network**, **OS information**, **SVN Appliance** and **SVN Routing Modification** details. Also contains three page buttons that provide access to more details about **SVN Performance, SVN Network Interfaces** and **VS Routing.**
-- **High Availability**: Provides information on the High Availability product**.**
+- **High Availability**: Provides information on the High Availability product.
 - **Firewall**: Displays the firewall status, with details related to the firewall **Network Interfaces.**
 - **Firewall Statistics**: Contains several page buttons that display information related to various firewall statistics, e.g. **SMTP**, **FTP**, **HTTP**, **Cookies**, **AV Total**, etc.
 - **Policy Statistics**: Contains information related to policy statistics.
