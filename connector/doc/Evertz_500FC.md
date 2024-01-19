@@ -39,11 +39,11 @@ The page also allows the user to make an upgrade on the slots via the **Module U
 
 The page also contains a number of page buttons:
 
-- #### Traps Info: Displays the Traps Table, which allows the user to configure how each of the trap types is sent. In the same table, the Fault Present column shows any current faults for the associated trap type.
+- **Traps Info**: Displays the Traps Table, which allows the user to configure how each of the trap types is sent. In the same table, the Fault Present column shows any current faults for the associated trap type.
 
-- #### Version Info: Displays the Version Table, which contains the Sw Revision/Build Numbers.
+- **Version Info**: Displays the Version Table, which contains the Sw Revision/Build Numbers.
 
-- #### Product: Displays the Product Location table, which indicates the type of module for each of the 16 available modules. Insertion/Removal Counters are also displayed.
+- **Product**: Displays the Product Location table, which indicates the type of module for each of the 16 available modules. Insertion/Removal counters are also displayed.
 
 ### Monitor
 
@@ -57,10 +57,10 @@ This page displays several tables with information concerning the inserted modul
 
 ### Fault Management
 
-#### On this page, a number of additional tables are displayed:
+On this page, a number of additional tables are displayed:
 
 - The **DA2Q MGMT Fault Table** shows the trap information for the inserted DA2Q modules.
-- The **DA2Q-HD** **MGMT Fault Table** shows the trap information for the DA2Q-HD modules**.**
-- The **DA2Q-3G MGMT Fault Table** shows the trap information for the DA2Q-3G modules*.*
-- The **DA-3G** **MGMT Fault Table** shows the trap information for the DA-3G modules**.**
+- The **DA2Q-HD** **MGMT Fault Table** shows the trap information for the DA2Q-HD modules.
+- The **DA2Q-3G MGMT Fault Table** shows the trap information for the DA2Q-3G modules.
+- The **DA-3G** **MGMT Fault Table** shows the trap information for the DA-3G modules.
 - The **ACO2-HD** **MGMT Fault Table** shows the trap information for the ACO2-HD modules.

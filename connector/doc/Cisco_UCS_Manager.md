@@ -12,12 +12,12 @@ The connector polls relevant information, statistics, and active faults from the
 
 ### Version Info
 
-| **Range**            | **Key Features**                        | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version                         | -            | -                 |
-| 2.0.0.x              | CISCO UCS XML Web API                   | -            | -                 |
-| 2.0.1.x              | New firmware version                    | -            | -                 |
-| 2.1.0.x              | New firmware version Web API connection | -            | -                 |
+| Range              | Key Features                            | Based on | System Impact |
+|--------------------|-----------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version                         | -        | -             |
+| 2.0.0.x            | CISCO UCS XML Web API                   | -        | -             |
+| 2.0.1.x            | New firmware version                    | -        | -             |
+| 2.1.0.x            | New firmware version Web API connection | -        | -             |
 
 ### Product Info
 
@@ -113,7 +113,7 @@ On this page, there are also three page buttons:
 
 - **Controller**: Displays the following tables:
 
-- The **Storage Controller Table**, which includes the **Operational State, Presence, Model**, etc.
+  - The **Storage Controller Table**, which includes the **Operational State, Presence, Model**, etc.
   - The **Storage Flex Flash Controller Table**, which includes the **Controller Health, Controller State, Operational State**, etc.
 
 - **Local LUN**: Displays the **Storage Local LUN Table**, which includes the **Operability, Presence**, etc.
@@ -129,15 +129,15 @@ This page displays a table with information on the **Faults** of the device: **S
 This page displays the following tables:
 
 - The **Board** **Table**, including the **CMOS Voltage, Operations Power, Presence**, etc.
-  The **Mb Power Statistics Table**, including the **Consumed Power, Input Voltage, Available Memory**, etc.
-  The **Rack Unit Table**, including the **Admin Power, Available Memory, Admin State**, etc.
-  The **Rack Unit Mb Temperature Statistics Table**, including the **Ambient Temperature, Front Temperature**, etc.
+- The **Mb Power Statistics Table**, including the **Consumed Power, Input Voltage, Available Memory**, etc.
+- The **Rack Unit Table**, including the **Admin Power, Available Memory, Admin State**, etc.
+- The **Rack Unit Mb Temperature Statistics Table**, including the **Ambient Temperature, Front Temperature**, etc.
 
 ## Usage (Range 2.0.0.x)
 
 ### General
 
-This page displays general information related to the device: **System Name, Serial Number Model, Asset Tag,** and the **Equipment System IO Controllers** table**.**
+This page displays general information related to the device: **System Name, Serial Number Model, Asset Tag,** and the **Equipment System IO Controllers** table.
 
 ### Equipment
 
@@ -185,7 +185,7 @@ This range currently displays the following pages, with largely the same informa
 
 - **Equipment**
 
-- **Fan**
+  - **Fan**
   - **Health LED**
   - **PSU**
 

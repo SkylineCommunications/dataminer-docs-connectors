@@ -70,7 +70,7 @@ The following page buttons are available:
 
 This page allows you to monitor parameters specific for this device, such as basic **Input** and **Output** parameters.
 
-The **Clock Reference** displays the **source** of the device's clock and also displays the **GPS Status**. Note that these parameters have been moved to the **System page** from version **1.0.1.1** onwards**.**
+The **Clock Reference** displays the **source** of the device's clock and also displays the **GPS Status**. Note that these parameters have been moved to the **System page** from version **1.0.1.1** onwards.
 
 The following page buttons are available:
 
@@ -84,7 +84,7 @@ This page contains information regarding the IP module included in the T2 Gatewa
 
 ### Alarms page
 
-This page displays the **Current Active Alarms** and **Status** of the device, including a list of the active alarms in the **Current Alarms** table**.** Two additional buttons are available: **Clear Log** and **Refresh Log.**
+This page displays the **Current Active Alarms** and **Status** of the device, including a list of the active alarms in the **Current Alarms** table. Two additional buttons are available: **Clear Log** and **Refresh Log.**
 
 The following page buttons are available:
 

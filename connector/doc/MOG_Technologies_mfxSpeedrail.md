@@ -56,7 +56,7 @@ This page contains the **Devices Table** with the information regarding all devi
 
 ### Locations Page
 
-This page displays the **Locations Table** with information regarding all persistent locations**.**
+This page displays the **Locations Table** with information regarding all persistent locations.
 
 ### Flows Page
 
