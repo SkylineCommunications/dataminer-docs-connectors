@@ -33,7 +33,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
-- **Device Address:** The Slot Id that will be monitored
+- **Device address**: The slot ID that will be monitored
 
 SNMP Settings:
 

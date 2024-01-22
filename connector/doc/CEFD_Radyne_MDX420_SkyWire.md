@@ -6,60 +6,37 @@ uid: Connector_help_CEFD_Radyne_MDX420_SkyWire
 
 The **CEFD Radyne MDX420 SkyWire** connector can be used to display information and configure settings for the **CEFD Radyne MDX420 SkyWire** satellite network gateway.
 
-## About
+This connector can be used to monitor and control the **CEFD Radyne MDX420 SkyWire** modem. An SNMP connection is used to retrieve and set the modem's information and configuration data.
 
-This protocol can be used to monitor and control the **CEFD Radyne MDX420 SkyWire** modem. An SNMP connection is used to retrieve and set the modem's information and configuration data.
+## About
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Initial version</td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td><p>Same as 1.0.0.x but this version uses SNMPv3.</p></td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-<tr class="even">
-<td>1.0.1.x [SLC Main]</td>
-<td><p>Based on 1.0.0.4</p>
-<p>Implemented changes in layout and configuration parameters based in feedback from vendor.</p>
-<p>Parameters listed in the Notes section are no longer available, so please verify any references in DMS to these parameters.(Visio, Automation Scripts, DMS Filters, Reports ...)</p></td>
-<td>No</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 2.0.0.x | This version uses SNMPv3. | 1.0.0.x | - |
+| 1.0.1.x [SLC Main] | Implemented changes in layout and configuration parameters based on feedback from vendor. | Based on 1.0.0.4 | Parameters listed in the Notes section are no longer available, so please verify any references in the DMS to these parameters (Visio files, Automation scripts, DMS filters, Reports, etc.). |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | F05804-L                    |
-| 1.0.0.x          | Unknown                     |
+| 2.0.0.x          | Unknown                     |
 | 1.0.1.x          | F05804-L                    |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+
+## Configuration
+
+### Connections
 
 For protocol version range 1.0.0.x, this connector uses a Simple Network Management Protocol (SNMP) connection. For protocol version range 2.0.0.x, this connector uses a Simple Network Management Protocol version 3 (SNMPv3) connection. The following user information is required for either version:
 
@@ -87,7 +64,7 @@ The **Modulator** page displays the transceiver configuration settings.
 
 ### Modulator Alarms
 
-The **Modulator** **Alarms** page displays all alarms related to the transceiver. There are 2 groups of alarms: **Alarms** and **Latched Alarms**.
+The **Modulator Alarms** page displays all alarms related to the transceiver. There are 2 groups of alarms: **Alarms** and **Latched Alarms**.
 
 The **Clear Latched Alarms** button can be used to clear the latched alarms. However, note that this button will clear all latched alarms, and not just the modulator latched alarms.
 
@@ -127,11 +104,11 @@ The **Remotes** page displays remote configuration and information data. This da
 
 ### TCP/IP Settings
 
-The **TCP/IP Settings** page can be used to access the TCP/IP settings. The **FTP** **controls** are also displayed on this page. The **Advanced...** page button displays a separate page that can be used to change the **Terminal Logon Password**.
+The **TCP/IP Settings** page can be used to access the TCP/IP settings. The **FTP controls** are also displayed on this page. The **Advanced...** page button displays a separate page that can be used to change the **Terminal Logon Password**.
 
 ### Ping Function
 
-This page displays information about the **Ping Queries**, such as **Ping Status**, **Average** **Success**, **Average** **RTT**, **Availability** and **Percentage of Packet Loss**. It also contains a toggle button to enable or disable **Ping Queries** and other editable properties of the queries ,such as **Cycle**, **Timeout**, **Requests** **per** **Cycle** and **Requests** **History**.
+This page displays information about the **Ping Queries**, such as **Ping Status**, **Average Success**, **Average RTT**, **Availability** and **Percentage of Packet Loss**. It also contains a toggle button to enable or disable **Ping Queries** and other editable properties of the queries ,such as **Cycle**, **Timeout**, **Requests per Cycle** and **Requests History**.
 
 ## Notes
 

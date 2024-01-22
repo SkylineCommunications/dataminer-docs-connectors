@@ -12,19 +12,19 @@ This is a virtual connector that is used to control/switch sources on **AppearTV
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | FDS          | New application.  |
+| 1.0.0.x [SLC Main]   | Initial version. | FDS          | New application.  |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                      | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                                                          | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | AppearTV X20 Platform<br>IneoQuest Surveyor TS<br>[IneoQuest Inspector Live](xref:Connector_help_IneoQuest_Inspector_Live) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | AppearTV X20 Platform<br>IneoQuest Surveyor TS<br>[IneoQuest Inspector Live](xref:Connector_help_IneoQuest_Inspector_Live) | -                       |
 
 ## Configuration
 

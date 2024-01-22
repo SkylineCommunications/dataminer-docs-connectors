@@ -10,9 +10,9 @@ The Signiant Manager is responsible for reading and adjusting the data received 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                   | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- HTTP request to poll Agents and Resource Control List. - Configurable resource control ceiling. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - HTTP request to poll Agents and Resource Control List. <br>- Configurable resource control ceiling. | - | - |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Signiant Manager is responsible for reading and adjusting the data received 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

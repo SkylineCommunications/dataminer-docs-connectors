@@ -51,8 +51,8 @@ Currently, the following calls are implemented:
 This connector uses an HTTP connection and requires the following input during element creation:
 **HTTP CONNECTION:**
 
-- **IP address/host:** The polling IP of the device, eg. *10.11.12.13*
-- **IP port:** The IP port of the destination, by default *80*
+- **IP address/host**: The polling IP of the device, eg. *10.11.12.13*
+- **IP port**: The IP port of the destination, by default *80*
 
 ## Usage
 

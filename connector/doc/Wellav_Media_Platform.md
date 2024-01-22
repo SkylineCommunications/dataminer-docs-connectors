@@ -25,13 +25,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 **SNMP Connection:**
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
-- **Device Address:** The type of chassis for this device (SMP100 or DMP900, *default:* *SMP100* ). Case must be respected. If nothing is specified, no data will be polled from the device.
+- **Device address**: The type of chassis for this device (SMP100 or DMP900, *default:* *SMP100* ). Case must be respected. If nothing is specified, no data will be polled from the device.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, by default *161.*
-- **Get community string:** The community string used when reading values from the device. The default value is *public.*
-- **Set community string:** The community string used when setting values on the device. The default value is *private.*
+- **Port number**: The port of the connected device, by default *161.*
+- **Get community string**: The community string used when reading values from the device. The default value is *public.*
+- **Set community string**: The community string used when setting values on the device. The default value is *private.*
 
 ## Usage
 
@@ -58,5 +58,3 @@ This page displays various alarms for the main board. Those parameters are not p
 ### Web Interface
 
 The native web interface of the device. The client machine has to be able to access the device. If not, it will not be possible to open the web interface.
-
-

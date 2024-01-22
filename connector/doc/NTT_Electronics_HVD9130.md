@@ -12,21 +12,27 @@ With this connector, it is possible to both monitor the decoder and set paramete
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 3.00                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 3.00                   |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
-*SNMP Main Connection*
+## Configuration
+
+### Connections
+
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -38,7 +44,7 @@ SNMP Settings:
 
 - **Port number**: The UDP port, by default *161.*
 - **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string:** The community string used when setting values on the device, by default *private*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage
 

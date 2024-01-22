@@ -22,15 +22,15 @@ The connector requires .NET Framework 4.0 or higher, as it needs System.Web.Exte
 
 | **Range**            | **Key Features**                                                                                                                                                                | **Based on** | **System Impact**                                                                                                          |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                                                                                 | \-           | \-                                                                                                                         |
-| 1.0.1.x \[Obsolete\] | Larger matrix size, 1024x1024.                                                                                                                                                  | \-           | \-                                                                                                                         |
+| 1.0.0.x              | Initial version                                                                                                                                                                 | -            | -                                                                                                                          |
+| 1.0.1.x [Obsolete]     |Larger matrix size, 1024x1024.                                                                                                                                                  | -            | -                                                                                                                          |
 | 1.0.3.x              | Larger matrix size, 2048x2048.                                                                                                                                                  | 1.0.1.8      | Saved labels can get shifted when the number of inputs changes. The output labels can appear as input labels in this case. |
-| 2.0.0.x              | Matrix with filtering capabilities.                                                                                                                                             | \-           | \-                                                                                                                         |
-| 2.0.1.x \[SLC Main\] | Adds HTTP connection to support SDNO Controller REST API. Further development on the REST API should be implemented on the **Imagine Communications Magellan SDNO Controller**. | \-           | \-                                                                                                                         |
+| 2.0.0.x              | Matrix with filtering capabilities.                                                                                                                                             | -            | -                                                                                                                          |
+| 2.0.1.x [SLC Main]   | Adds HTTP connection to support SDNO Controller REST API. Further development on the REST API should be implemented on the **Imagine Communications Magellan SDNO Controller**. | -            | -                                                                                                                          |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                  |
+| Range     | Supported Firmware                                      |
 |-----------|---------------------------------------------------------|
 | 1.0.0.x   | LRC 1.2, 1.3 & 1.4                                      |
 | 1.0.1.x   | LRC 1.2, 1.3 & 1.4                                      |
@@ -42,11 +42,11 @@ The connector requires .NET Framework 4.0 or higher, as it needs System.Web.Exte
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

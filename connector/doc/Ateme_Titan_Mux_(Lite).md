@@ -12,7 +12,7 @@ This connector allows you to check output information and also to configure some
 
 | **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Allows configuration of BISS Mode and Session Word | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Allows configuration of BISS Mode and Session Word | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector allows you to check output information and also to configure some
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

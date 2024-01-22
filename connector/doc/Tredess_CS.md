@@ -12,10 +12,10 @@ This connector retrieves and sets data via **SNMP**. If this is enabled on the d
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                                                                                                                                   | **Based on** | **System Impact**                                                                                                         |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                                                                                                                                                                                                                                                                                    | \-           | \-                                                                                                                        |
-| 1.0.1.x \[SLC Main\] | Custom display key added to: - Multiplexer Alarms Overview - Multiplexer Configurations - Multiplexer Measurements - GPS Alarms Overview - Contacts Input - Contacts Output - UCA Alarms Overview - UCA N+1 Compact Alarms Overview - UCA 1+1 Alarms Overview New SNMP Control Address Column added to Multiplexer Measurements Table resulting in a change of order in the table. | 1.0.0.6      | DMS filters, Automation scripts, Visual Overview pages, reports, and web API implementations may need to be reconfigured. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x [SLC Main] | Custom display key added to: <br>- Multiplexer Alarms Overview <br>- Multiplexer Configurations <br>- Multiplexer Measurements <br>- GPS Alarms Overview <br>- Contacts Input <br>- Contacts Output <br>- UCA Alarms Overview <br>- UCA N+1 Compact Alarms Overview <br>- UCA 1+1 Alarms Overview <br>New SNMP Control Address Column added to Multiplexer Measurements Table resulting in a change of order in the table. | 1.0.0.6 | DMS filters, Automation scripts, Visual Overview pages, reports, and web API implementations may need to be reconfigured. |
 
 ### Product Info
 
@@ -26,10 +26,10 @@ This connector retrieves and sets data via **SNMP**. If this is enabled on the d
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                        |
-|-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Tredess CS - Transmitter: exported connector representing transmitter modules. |
-| 1.0.1.x   | No                  | Yes                     | \-                    | Tredess CS - Transmitter: exported connector representing transmitter modules. |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | Tredess CS - Transmitter: exported connector representing transmitter modules. |
+| 1.0.1.x | No | Yes | - | Tredess CS - Transmitter: exported connector representing transmitter modules. |
 
 ## Configuration
 

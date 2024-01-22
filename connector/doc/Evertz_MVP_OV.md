@@ -15,7 +15,7 @@ This connector is intended to work with the **Evertz MVP OV** card. It was desig
 | **Range**     | **Description**                                                                                  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | SNMP set not working.                                                                            | No                  | Yes                     |
-| 2.0.0.x \[SLC Main\] | Now uses DVEs for each bus address instead of using the bus address to look at a single channel. | No                  | Yes                     |
+| 2.0.0.x [SLC Main]   | Now uses DVEs for each bus address instead of using the bus address to look at a single channel. | No                  | Yes                     |
 
 ### Supported Firmware Versions
 

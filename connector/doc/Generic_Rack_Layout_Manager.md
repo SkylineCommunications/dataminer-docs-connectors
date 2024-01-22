@@ -16,13 +16,13 @@ The application will create the views accordingly and move the elements into the
 
 ### Version Info
 
-| **Range**     | **Description**                                            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                           | No                  | Yes                     |
-| 2.0.0.x \[Obsolete\] | This range is used by DataMiner IDP.                       | No                  | Yes                     |
-| 2.0.1.x \[Obsolete\] | This range is used by DataMiner IDP.Unicode support added. | No                  | Yes                     |
-| 2.0.2.x \[Obsolete\] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6 | No                  | Yes                     |
-| 2.0.3.x \[SLC Main\] | Removed parameters                                         | No                  | Yes                     |
+| Range              | Description                                                | DCF Integration | Cassandra Compliant |
+|--------------------|------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                           | No              | Yes                 |
+| 2.0.0.x [Obsolete] | This range is used by DataMiner IDP.                       | No              | Yes                 |
+| 2.0.1.x [Obsolete] | This range is used by DataMiner IDP.Unicode support added. | No              | Yes                 |
+| 2.0.2.x [Obsolete] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6 | No              | Yes                 |
+| 2.0.3.x [SLC Main] | Removed parameters                                         | No              | Yes                 |
 
 ## Installation and configuration
 

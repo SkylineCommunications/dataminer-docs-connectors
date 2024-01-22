@@ -4,11 +4,11 @@ uid: Connector_help_ABC_Class_B_Site_Service_Definition
 
 # ABC Class B Site Service Definition
 
-The ABC Class B Site Service Definiton is intended to give an overview of the status of a **service** that includes several **elements**, including a **Generic Ping** **Element**.
+The ABC Class B Site Service Definition is intended to give an overview of the status of a **service** that includes several **elements**, including a **Generic Ping Element**.
 
 ## About
 
-This Service Definiton will give the **status** of a service based on the status of a Generic Ping Element and the **highest alarm value** between the remaining elements included in the service.
+This Service Definition will give the **status** of a service based on the status of a Generic Ping Element and the **highest alarm value** between the remaining elements included in the service.
 
 ## Installation and configuration
 

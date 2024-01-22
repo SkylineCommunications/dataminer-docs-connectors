@@ -12,9 +12,21 @@ This is an **SNMP** protocol. Traps are not implemented.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and Configuration
 
@@ -24,13 +36,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ### Configuration of the Output Power Percentage parameter
 
@@ -43,7 +55,7 @@ To correctly compute this parameter, the **Nominal Power** parameter must be set
 
 This page displays a number of status parameters, as well as two configuration parameters: **Operational Mode Tx** and **Selected Input**.
 
-There is also a **Nominal** **Power** parameter, which can be configured with the expected output power for the transmitter. Once this parameter has been set, the **Output Power Percentage** parameter will contain the **Forward Power** multiplied by *100* and then divided by the **Nominal Power**.
+There is also a **Nominal Power** parameter, which can be configured with the expected output power for the transmitter. Once this parameter has been set, the **Output Power Percentage** parameter will contain the **Forward Power** multiplied by *100* and then divided by the **Nominal Power**.
 Note: as long as this parameter has not been set, the calculated percentage will show *Infinity.*
 
 ### Web Interface

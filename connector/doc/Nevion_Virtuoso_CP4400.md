@@ -14,8 +14,8 @@ This SNMP connector is used to monitor and configure the **Nevion Virtuoso CP440
 
 | **Range**            | **Key Features**    | **Based on** | **System Impact** |
 |----------------------|---------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version     | \-           | \-                |
-| 1.0.1.x              | New HTTP connection | 1.0.0.2      | \-                |
+| 1.0.0.x [SLC Main]   | Initial version     | -            | -                 |
+| 1.0.1.x              | New HTTP connection | 1.0.0.2      | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This SNMP connector is used to monitor and configure the **Nevion Virtuoso CP440
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -91,7 +91,7 @@ The page also contains page buttons to the following subpages:
 
 This page allows the monitoring of all active alarms on the device provided by the system itself.
 
-It also contains a page button, **Alarms Log**, which displays a table with the log of all the alarms. As this can be a very large table, the **Polling Status** toggle button allows you to enable/disable its polling**.**
+It also contains a page button, **Alarms Log**, which displays a table with the log of all the alarms. As this can be a very large table, the **Polling Status** toggle button allows you to enable/disable its polling.
 
 ### Alarms (Range 1.0.1.x)
 

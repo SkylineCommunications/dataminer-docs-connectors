@@ -14,65 +14,52 @@ The **web service** API is an XML interface over HTTP. DataMiner can send reques
 
 ### Version Info
 
-| **Range** | **Description**                              | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------------------------------|---------------------|-------------------------|
-| 2.0.0.x          | Initial version                              | No                  | Yes                     |
-| 2.0.1.x          | Support for SRM added                        | No                  | Yes                     |
-| 2.0.3.x          | Support for Unicode added                    | No                  | Yes                     |
-| 3.0.0.x          | POC for Voice of America connector review       | No                  | Yes                     |
-| 3.0.1.x          | Modify Booking Overview table layout         | No                  | Yes                     |
-| 3.0.2.x          | Changes made to interfacing Resource Manager | No                  | Yes                     |
+| Range   | Description                                  | DCF Integration | Cassandra Compliant |
+|---------|----------------------------------------------|-----------------|---------------------|
+| 2.0.0.x | Initial version                              | No              | Yes                 |
+| 2.0.1.x | Support for SRM added                        | No              | Yes                 |
+| 2.0.3.x | Support for Unicode added                    | No              | Yes                 |
+| 3.0.0.x | POC for Voice of America connector review    | No              | Yes                 |
+| 3.0.1.x | Modify Booking Overview table layout         | No              | Yes                 |
+| 3.0.2.x | Changes made to interfacing Resource Manager | No              | Yes                 |
 
-## Installation and Configuration
+## Configuration
 
-### Creation
+### Connections - Range 2.0.0.x / 2.0.1.x /2.0.3.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>2.0.0.x / 2.0.1.x /2.0.3.x</td>
-<td><p>This protocol uses <strong>HTTP</strong> to communicate with the ScheduAll services, and requires the following input during element creation:</p>
-<p>HTTP connection:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the main HTTP connection.</li>
-<li><strong>Port</strong>: The main port the connector will communicate through.</li>
-</ul>
-<p>WEB SERVICE API BACKUP connection:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the web service API.</li>
-<li><strong>Port:</strong> The port used for the web service communication.</li>
-</ul>
-<p>INTEROP SERVICE connection:</p>
-<ul>
-<li><strong>IP address/host:</strong> any. (Note that if 'any' is configured DataMiner will behave similarly to a server since it will be listenning for incoming events on the port configured below.)</li>
-<li><strong>Port:</strong> The port used for the interop service communication.</li>
-</ul>
-<p>INTEROP LISTENER connection:</p>
-<ul>
-<li><strong>IP address/host</strong>: The IP address of the interop listener.</li>
-<li><strong>Port:</strong> The port used for the interop listener communication.</li>
-</ul>
-<p>Note: To make sure the ScheduAll Manager has sufficient time to retrieve the information from the Resource Information table, increase the timeout to 60s.</p></td>
-</tr>
-<tr class="odd">
-<td>3.0.0.x / 3.0.1.x / 3.0.2.x</td>
-<td><p>This connector uses a <strong>smart-serial</strong> connection and requires the following input during element creation:</p>
-<p>SMART-SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+This connector uses **HTTP** to communicate with the ScheduAll services, and requires the following input during element creation:
+
+HTTP connection:
+
+- **IP address/host**: The IP address of the main HTTP connection.
+- **Port**: The main port the connector will communicate through.
+
+WEB SERVICE API BACKUP connection:
+
+- **IP address/host**: The IP address of the web service API.
+- **Port:** The port used for the web service communication.
+
+INTEROP SERVICE connection:
+
+- **IP address/host**: *any*. (Note that if 'any' is configured, DataMiner will behave similarly to a server since it will be listening for incoming events on the port configured below.)
+- **Port:** The port used for the interop service communication.
+
+INTEROP LISTENER connection:
+
+- **IP address/host**: The IP address of the interop listener.
+- **Port:** The port used for the interop listener communication.
+
+> [!NOTE]
+> To make sure the ScheduAll Manager has sufficient time to retrieve the information from the Resource Information table, increase the timeout to 60s.
+
+### Connections - Range 3.0.0.x / 3.0.1.x / 3.0.2.x
+
+This connector uses a **smart-serial** connection and requires the following input during element creation:
+
+SMART-SERIAL CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
 
 ## ScheduAll table structure
 
@@ -84,7 +71,7 @@ The connector combines data coming from several tables in ScheduAll. Below, you 
 
 ### General
 
-This page indicates the **ScheduAll** **status** for both: **Web Service** and the **Interop Services.**
+This page indicates the **ScheduAll status** for both: **Web Service** and the **Interop Services.**
 
 ### Configuration
 
@@ -124,8 +111,6 @@ The **Message field configuration** allows you to define which data fields from 
 - **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom Client Details Fields" column in the "Client Overview" table.
 - **Query Custom Values**: Here you can define which fields have to be retrieved in addition to the default fields from the resource info table in ScheduAll. Per resource, the values are stored in the "Custom x" columns in the "Resource Information" table.
 
-
-
 ### Configuration - Interop Service
 
 This page contains the **interop-specific configuration** parameters. Via the **Credentials** button, you can access a subpage where you can enter **user credentials**. These credentials are the **ScheduAll credentials** that will allow communication between DataMiner and the interop service.
@@ -155,75 +140,71 @@ This page contains **web service statistics** for current **queries** and **work
 
 On this page, a single parameter displays the **Interop Received Time**. In addition, there is a button linking to the **Interop Listener**. The interop listener provides information on the responses DataMiner receives from the interop service.
 
-
-
 ## Usage (range 2.0.3.x)
 
 ### General
 
-This page indicates the **ScheduAll** **status** for both: **Web Service** and the **Interop Services.**
+This page indicates the **ScheduAll status** for both the **Web Service** and the **Interop Services.**
 
 ### Configuration
 
-This page contains **Communication Configuration** parameters for both the **Web Service** and the **Interop Services**, where it's possible to **enable** or **disable** the referred services.
+This page contains **Communication Configuration** parameters for both the **Web Service** and the **Interop Services**, where it is possible to **enable** or **disable** the referred services.
 Moreover, this page also includes the **Task Configuration,** which allows the user to define the validation of the **Work Orders** content as well as the the data used to launch the configured **Automation Script** when new or modified **Work Orders** are retrieved.
 
-### Configuration \[Sub-Page: Task Automation Script\]
+### Configuration Subpage - Task Automation Script
 
-This page contains the configuration of the **Automation Script** defined in the **Task Automation Script Name** under the **Configuration** page, where it's possible to specify the following settings:
+This page contains the configuration of the **Automation Script** defined in the **Task Automation Script Name** under the **Configuration** page, where it is possible to specify the following settings:
 
 - **Startup Trigger:** Defines whether the Automation Script is triggered at Connector Startup (Enabled) or not (Disabled).
 
-
 - **Default Behavior:** Defines whether the Default Behavior is Enabled or Disabled:
 
-- **Enabled:** The Task Automation Script will be triggered with the default Input Script Parameter: \[ "Work Order ID": WO ID \[IDX\] \]. Note that the referred Input Script Parameter in case of a 'Bulk' Processing State the will have a serialized list of 'WO ID \[IDX\]'.
+  - **Enabled:** The Task Automation Script will be triggered with the default Input Script Parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that the referred Input Script Parameter in case of a "Bulk" Processing State will have a serialized list of 'WO ID \[IDX\]'.
 
   - **Disabled:** The Task Automation Script will be triggered according to the data present in the Input Script Parameters table.
 
-    >
-
 - **Processing State:** Defines whether the Task Automation Script processing is Single or Bulk:
 
-- **Single:** The Task Automation Script will be triggered individually for each new/modified Work Order.
+  - **Single:** The Task Automation Script will be triggered individually for each new/modified Work Order.
+
   - **Bulk:** The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified Work Orders information according to the current configuration of the Input Script Parameters table.
 
+- **Pending Script Processing Buffer:** Defines whether there is a buffer holding the pending Work Orders to be passed as Input Script Parameter (Enabled) or not (Disabled):
 
-- **Pending Script Processing Buffer:** Defines whether there's a buffer holding the pending Work Orders to be passed as Input Script Parameter (Enabled) or not (Disabled):
+  - **Enabled:** A buffer will be used to hold the Work Orders that will be passed as Input Parameter of the "Task Automation Script" if the script is still processing those same Work Orders.
 
-- **Enabled:** A buffer will be used to hold the Work Orders that would be passsed as Input Parameter of the 'Task Automation Script' if the Script is still processing those same Work Orders.
-    (e.g. If there's a running Script busy processing '#WO12345', that Work Order will be stored in the referred buffer).
+    For example, if there is a running script busy processing "#WO12345", that Work Order will be stored in the referred buffer.
 
-    Note: If this option is selected, the 'Task Auatomation Script' will be responsible for triggering the Script again in order to process the pending Work Orders that were added,
-    which can be done throught a set of the pending Work Order IDs (separated by ;) in the 'Work Order IDs Pending Script Processing (ID=35)'. (e.g. The Work Order IDs should be set with the following format: '12345;123456;123457').
+    > [!NOTE]
+    > If this option is selected, the "Task Automation Script" will be responsible for triggering the script again in order to process the pending Work Orders that were added, which can be done through a set of the pending Work Order IDs (separated by ;) in the "Work Order IDs Pending Script Processing" (ID=35) (e.g. the Work Order IDs should be set with the following format: '12345;123456;123457').
+
   - **Disabled:** The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified Work Orders information according to the current configuration of the Input Script Parameters table.
 
-In this page it's possible to define the **Input Script Parameters,** which are passed as an argument of the referred **Automation Script** for either **new or modified Work Orders:**
+On this page, you can define the **Input Script Parameters**, which are passed as an argument of the referred **Automation Script** for either **new or modified Work Orders**:
 
-- **\[Full WO w/ Resources in JSON\]:** JSON containing new or modified Work Order(s) alongside with their associated Resource(s).
-- **\[Full WO wo/ Resources in JSON\]:** JSON containing new or modified Work Order(s).
-- **SEQNUM \[WO ID\]:** ID of the new or modified Work Order(s).
-- **JOBDESC \[WO Description\]:** Clip Name of the new or modified Work Order(s).
-- **WO_START \[WO Start Time\]:** Start time of the new or modified Work Orders(s).
-- **WO_END \[WO End Time\]:** End time of the new or modified Work Orders(s).
-- **STAT \[WO DMS Task State\]:** Mirrors Work Order(s) Status, which are mapped to the DataMiner Booking Status through the **Task Status Definition** Sub-Page.
-- **STATUSEX \[WO DMS Task State Extended\]:** Mirrors Work Order(s) Extended Status, which are mapped to the DataMiner Booking Status through the **Task Status Definition** Sub-Page.
-- **STAT.STATUSEX \[WO Status\]:** Combined Work Order(s) Status, as defined in the **Task Status Definition** Sub-Page.
-- **WONUM \[WO Number\]:** Number of the Work Order(s).
-- **CREATEDBY \[WO Created By\]:** User that has created the Work Order(s).
-- **DATECREAT \[WO Date Created\]:** Creation date of the Work Order(s).
-- **MOD_BY \[WO Modified By\]:** Last user that has modified the Work Order(s).
-- **LAST_MOD \[WO Last Modified\]:** Last modified date of the Work Order(s).
+- **\[Full WO w/ Resources in JSON\]:** JSON containing new or modified Work Orders alongside with their associated Resource(s).
+- **\[Full WO wo/ Resources in JSON\]:** JSON containing new or modified Work Orders.
+- **SEQNUM \[WO ID\]:** ID of the new or modified Work Orders.
+- **JOBDESC \[WO Description\]:** Clip Name of the new or modified Work Orders.
+- **WO_START \[WO Start Time\]:** Start time of the new or modified Work Orders.
+- **WO_END \[WO End Time\]:** End time of the new or modified Work Orders.
+- **STAT \[WO DMS Task State\]:** Mirrors Work Orders Status, which are mapped to the DataMiner Booking Status through the **Task Status Definition** Sub-Page.
+- **STATUSEX \[WO DMS Task State Extended\]:** Mirrors Work Orders Extended Status, which are mapped to the DataMiner Booking Status through the **Task Status Definition** Sub-Page.
+- **STAT.STATUSEX \[WO Status\]:** Combined Work Orders Status, as defined in the **Task Status Definition** Sub-Page.
+- **WONUM \[WO Number\]:** Number of the Work Orders.
+- **CREATEDBY \[WO Created By\]:** User that has created the Work Orders.
+- **DATECREAT \[WO Date Created\]:** Creation date of the Work Orders.
+- **MOD_BY \[WO Modified By\]:** Last user that has modified the Work Orders.
+- **LAST_MOD \[WO Last Modified\]:** Last modified date of the Work Orders.
 - **CL_ID \[WO Client ID\]:** Client record(s), which can either identify an Agency or a Contact.
 
-In addition, it's also possible to configure in this page which **Work Order Status Transitions** will trigger the referred Automation Script. Note that if no transition is defined, the Automation Script will be triggered for each Work Order Status change.
+In addition, it is also possible to configure in this page which **Work Order Status Transitions** will trigger the referred Automation Script. Note that if no transition is defined, the Automation Script will be triggered for each Work Order Status change.
 
 - **Previous Status:** Defines the previous Work Order status for the each configured transition.
 - **Current Status:** Defines the current Work Order status for the each configured transition.
 - **Valid Status for New Work Order(s):** Defines which status are valid to trigger the Automation Script for new Work Orders. Note that this table column is independent from the other columns and is only applied to new Work Orders.
 
-
-### Configuration \[Sub-Page: Task Status Definition\]
+### Configuration Subpage - Task Status Definition
 
 This page defines the mapping between the **STAT** and **STATUSEX ScheduAll** fields and the corresponding **Booking Status** in DataMiner, either for the **Web Service** as well as for the **Interop Services**.
 
@@ -303,8 +284,6 @@ This page contains **web service statistics** for current **queries** and **work
 ### Statistics - Interop Service
 
 On this page, a single parameter displays the **Interop Received Time**. In addition, there is a button linking to the **Interop Listener**. The interop listener provides information on the responses DataMiner receives from the interop service.
-
-
 
 ## Usage (range 3.0.0.x)
 

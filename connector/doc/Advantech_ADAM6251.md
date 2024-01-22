@@ -44,7 +44,7 @@ SERIAL CONNECTION:
 
 ### General
 
-Here you can find the **device** **name** and the **firmware** **version**.
+Here you can find the **device name** and the **firmware version**.
 
 ### DI Status
 
@@ -54,15 +54,15 @@ On this page you can find the statuses of the *16* **inputs**.
 
 Here you can configure the **inputs**, you can choose what **function** they are used for and a few more options.
 
-you can change **multiple** **inputs** at once and press **save** **changes**, only after you click on save changes will the changes be done on the device.
+you can change **multiple inputs** at once and press **save changes**, only after you click on save changes will the changes be done on the device.
 
 ### Stream
 
-On this page you can change the **IP** **addresses** of the **stream**, on the right side you can **enable/disable** each stream.
+On this page you can change the **IP addresses** of the **stream**, on the right side you can **enable/disable** each stream.
 
 ### Flags
 
-you can configure the **GCL** **flags** on this page, at the bottom are *2* **buttons** that change all of them.
+you can configure the **GCL flags** on this page, at the bottom are *2* **buttons** that change all of them.
 
 ### Web Interface
 

@@ -14,15 +14,21 @@ More information about the device can be found on the following website: <http:/
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                               |
-|------------------|-----------------------------------------------------------|
-| 1.0.0.x          | Software version: R6_1_GA_P2_H1_03012017; OS Version: 4.4 |
+| Range   | Supported Firmware                                        |
+|---------|-----------------------------------------------------------|
+| 1.0.0.x | Software version: R6_1_GA_P2_H1_03012017; OS Version: 4.4 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -138,8 +144,8 @@ The page also contains statistics for rules associated with the Internet service
 The following parameters are also available:
 
 - **Number of Internet Rules**: Displays the total number of Internet rules.
-- **Polling of** **Internet Rules**: Allows you to enable/disable the retrieval of data for the Internet Rules table.
-- **Last Polling of** **Internet Rules**: Indicates when the data in this table was last updated.
+- **Polling of Internet Rules**: Allows you to enable/disable the retrieval of data for the Internet Rules table.
+- **Last Polling of Internet Rules**: Indicates when the data in this table was last updated.
 
 ### Intranet
 
@@ -148,14 +154,14 @@ This page displays statistics for the intranet services on this site in the **In
 The following parameters are also available:
 
 - **Number of Intranet Services**: Displays the total number of intranet services.
-- **Polling of** **Intranet Services**: Allows you to enable/disable the retrieval of data for the Intranet Services table.
-- **Last Polling of** **Intranet Services**: Indicates when the data in this table was last updated.
+- **Polling of Intranet Services**: Allows you to enable/disable the retrieval of data for the Intranet Services table.
+- **Last Polling of Intranet Services**: Indicates when the data in this table was last updated.
 
 The **Rules** page button displays statistics for rules associated with the intranet service:
 
 - **Number of Intranet Rules**: Displays the total number of intranet rules.
-- **Polling of** **Intranet Rules**: Allows you to enable/disable the retrieval of data for the Intranet Rules table.
-- **Last Polling of** **Intranet Rules**: Indicates when the data in the Intranet Rules table was last updated.
+- **Polling of Intranet Rules**: Allows you to enable/disable the retrieval of data for the Intranet Rules table.
+- **Last Polling of Intranet Rules**: Indicates when the data in the Intranet Rules table was last updated.
 - **Intranet Rules** table: Counter data in this table is updated once a minute and is measured over the past active minute. The number of rules in this table is the sum of the number of rules for each intranet service (available in the **Number of Rules** column in the Intranet Service table).
 
 ### ARP
@@ -163,7 +169,7 @@ The **Rules** page button displays statistics for rules associated with the intr
 This page displays statistics for ARP entry objects.
 
 - **Number of ARP Entries:** Displays the total number of ARP entries.
-- **Polling of** **ARP Entries:** Allows you to enable/disable the retrieval of data for the ARP table.
+- **Polling of ARP Entries:** Allows you to enable/disable the retrieval of data for the ARP table.
 - **Last Polling of ARP Entries:** Indicates when the data in the ARP table was last updated.
 - **ARP** table: Contains statistics counts for all the ARP entries in the system. Counter data in the table is updated once a minute.
 

@@ -12,7 +12,7 @@ This connector uses JSON and SNMP to communicate with the device so that it can 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ## Configuration
 
@@ -55,7 +55,7 @@ This page contains general status information about the probe, such as the **Pro
 
 ### IP
 
-This page contains information about the streams found by the probe. It displays the **Transport Stream Table**, which contains information about the streams, such as the **Bitrate**, **IP Address** (source and destination), **IP Port** (source and destination), etc. There is also a **Stream Filter** column, which allows you to give a particular name to a stream. This index is then used in the **Stream** **Index**, which is a composed index, and is further used as a basis for other composed indexes on other pages.
+This page contains information about the streams found by the probe. It displays the **Transport Stream Table**, which contains information about the streams, such as the **Bitrate**, **IP Address** (source and destination), **IP Port** (source and destination), etc. There is also a **Stream Filter** column, which allows you to give a particular name to a stream. This index is then used in the **Stream Index**, which is a composed index, and is further used as a basis for other composed indexes on other pages.
 
 To keep missing streams from being displayed in the **Transport Stream Table** (and in the **Stream ETR Table**), you can enable the **Automatically Remove Missing Streams** parameter. If you do so, any streams that are missing (cf. **Str. Status** column) will no longer be displayed in the stream tables.
 
@@ -73,15 +73,15 @@ Programs (either missing or active) can be removed from the programs tables (**P
 
 ### PID Status
 
-This page contains information about the PIDs found by the probe. It displays the **PIDs Status Table**, which contains information about the PID settings, such as the **PID Number**, the **PID Coding**, etc. It also contains some columns that are filled in when a trap occurs or when the **Alarm table** has entries for this particular alarm. The composed index on this page is based on that on the **Programs** **page**.
+This page contains information about the PIDs found by the probe. It displays the **PIDs Status Table**, which contains information about the PID settings, such as the **PID Number**, the **PID Coding**, etc. It also contains some columns that are filled in when a trap occurs or when the **Alarm table** has entries for this particular alarm. The composed index on this page is based on that on the **Programs page**.
 
 If **Automatically Remove Missing PIDs** is enabled, then all PIDs that are missing will be removed from the PIDs Status Table. The **Remove Missing PID** parameter can be used to delete the selected missing PID from the PIDs Status Table until the next polling cycle.
 
 ### Programs QOE
 
-This page contains some more refined information about the programs found by the probe. It displays the **Programs QOE Table**, which contains information about the **Video** and **Audio** settings, for up to 4 PIDs per program. Columns include **Video Coding Type**, **Video Loss Alarm Status**, **Audio 1-4 Silent**, etc. The **Programs QOE** page also contains some columns that are filled in when a trap occurs or when the **Alarm** **table** has entries for this particular alarm. The composed index on this page is the same as that on the **Programs page**.
+This page contains some more refined information about the programs found by the probe. It displays the **Programs QOE Table**, which contains information about the **Video** and **Audio** settings, for up to 4 PIDs per program. Columns include **Video Coding Type**, **Video Loss Alarm Status**, **Audio 1-4 Silent**, etc. The **Programs QOE** page also contains some columns that are filled in when a trap occurs or when the **Alarm table** has entries for this particular alarm. The composed index on this page is the same as that on the **Programs page**.
 
-The parameters to delete programs are the same on this page as on the **Program Status** **page** and can thus also be used to delete programs from both program tables.
+The parameters to delete programs are the same on this page as on the **Program Status page** and can thus also be used to delete programs from both program tables.
 
 ### Alarms
 

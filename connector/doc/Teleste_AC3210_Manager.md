@@ -16,7 +16,7 @@ The connector includes normalization for the ingress switches. There is a button
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,9 +26,9 @@ The connector includes normalization for the ingress switches. There is a button
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**        |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components            |
 |-----------|---------------------|-------------------------|-----------------------|--------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Teleste AC3210 Manager - Child |
+| 1.0.0.x   | No                  | Yes                     | -                     | Teleste AC3210 Manager - Child |
 
 ## Configuration
 

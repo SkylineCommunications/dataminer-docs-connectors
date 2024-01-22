@@ -15,7 +15,7 @@ With this connector, the device can be managed directly. The connector displays 
 | **Range**     | **Description**                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                                  | No                  | No                      |
-| 1.0.1.x \[SLC Main\] | Based on: 1.0.0.2 Names and descriptions were changed for the new range. UX improvements based on web interface. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Based on: 1.0.0.2 Names and descriptions were changed for the new range. UX improvements based on web interface. | No                  | Yes                     |
 
 ### Product Info
 

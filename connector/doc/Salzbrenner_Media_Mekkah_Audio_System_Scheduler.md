@@ -14,19 +14,19 @@ The connector collects the schedules and data from the API and sets the data acc
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                       | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                           | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Automation script: Audio System Scheduler (see Notes below) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Automation script: Audio System Scheduler (see Notes below) | -                       |
 
 ## Configuration
 

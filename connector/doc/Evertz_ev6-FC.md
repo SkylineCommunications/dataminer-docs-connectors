@@ -12,8 +12,8 @@ The ev6-FR's architecture enables modules with advanced functionality because of
 
 | **Range**            | **Key Features**        | **Based on** | **System Impact**                     |
 |----------------------|-------------------------|--------------|---------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.        | \-           | \-                                    |
-| 1.0.1.x \[SLC Main\] | Adds redundant polling. | \-           | Adds interface for redundant polling. |
+| 1.0.0.x [Obsolete]     |Initial version.        | -            | -                                     |
+| 1.0.1.x [SLC Main]   | Adds redundant polling. | -            | Adds interface for redundant polling. |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ The ev6-FR's architecture enables modules with advanced functionality because of
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

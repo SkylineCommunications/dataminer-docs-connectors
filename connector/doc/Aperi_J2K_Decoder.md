@@ -14,10 +14,10 @@ This connector uses the **HTTP API** to collect information from the device and 
 
 ### Version Info
 
-| **Range**         | **Description**                | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|--------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial version.               | No                  | Yes                     |
-| 1.0.1.x **\[SLC Main\]** | Streamlined all Aperi connectors. | No                  | Yes                     |
+| Range              | Description                       | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                  | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Streamlined all Aperi connectors. | No              | Yes                 |
 
 ### Product Info
 
@@ -65,7 +65,7 @@ Via the **Messanine Board** page button, you can monitor the status of Messanine
 
 ### Video
 
-This page displays the **Video Output Table**, with information about each available channel. For each channel, it mentions the **Port Name**, **Lock Status**, **TRS Errors** **Status**, **AP CRC Status**, **ANC CC Status**, etc.
+This page displays the **Video Output Table**, with information about each available channel. For each channel, it mentions the **Port Name**, **Lock Status**, **TRS Errors Status**, **AP CRC Status**, **ANC CC Status**, etc.
 
 ### Audio
 

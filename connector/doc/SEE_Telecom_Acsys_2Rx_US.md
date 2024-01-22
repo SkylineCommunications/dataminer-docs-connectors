@@ -12,8 +12,8 @@ This protocol uses SNMP to monitor the SEE Telecom Acsys 2Rx Us receiver.
 
 | **Range**            | **Key Features**                                                                                                                  | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Development version.                                                                                                              | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Main version, with two timers: fast timer (every 30 s) for important parameters and slow timer (every hour) for other parameters. | \-           | \-                |
+| 1.0.0.x              | Development version.                                                                                                              | -            | -                 |
+| 1.1.0.x [SLC Main]   | Main version, with two timers: fast timer (every 30 s) for important parameters and slow timer (every hour) for other parameters. | -            | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This protocol uses SNMP to monitor the SEE Telecom Acsys 2Rx Us receiver.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -15,9 +15,21 @@ This means that instead of configuring the node crosspoint to the specific stati
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -91,7 +103,7 @@ These **presets** can only be created from the **Visio** file. This is done by s
 
 ### Configuration
 
-As explained already in the **Installation and Configuration** section, this page contains extra **configuration** **settings** applicable to announcements.
+As explained already in the **Installation and Configuration** section, this page contains extra **configuration settings** applicable to announcements.
 
 ### Matrices
 

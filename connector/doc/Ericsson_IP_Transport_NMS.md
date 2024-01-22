@@ -12,21 +12,21 @@ The connector polls information from the **Ericsson SO-EM** (EMS) through the **
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                    | No                  | Yes                     |
-| 1.0.1.x          | Adaptation based on change request | No                  | Yes                     |
+| Range   | Description                        | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                    | No              | Yes                 |
+| 1.0.1.x | Adaptation based on change request | No              | Yes                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                       |
+| Range     | Device Firmware Version                           |
 |------------------|---------------------------------------------------|
 | 1.0.0.x          | Performance Management System (PFM) version 18.3. |
 | 1.0.1.x          | Performance Management System (PFM) version 18.3. |
 
 ### Exported connectors
 
-| **Exported Connector**              | **Description**                                                         |
+| Exported Connector                 | Description                                                             |
 |------------------------------------|-------------------------------------------------------------------------|
 | Ericsson IP Transport NMS - Device | DVEs will be created only under the name of the Network Element device. |
 
@@ -100,7 +100,7 @@ This page acts as the provisioning control center for the **Service ID** and **E
 
 - **Element Properties** page button: Opens a subpage with the control center for provisioning data to/from the Element Properties table.
 
-- **Element Property Provisioning File Format**: The format that each row in the table must have in order to be successfully processed by the connector. If this format is not correct, errors will be thrown.
+  - **Element Property Provisioning File Format**: The format that each row in the table must have in order to be successfully processed by the connector. If this format is not correct, errors will be thrown.
   - **Element Property Profile File**: The name of the profile file that will be used by the connector to import/export data to/from the Element Properties table. This parameter displays a drop-down list, listing all .csv files in the following directory: **C:\Skyline DataMiner\Documents\Ericsson IP Transport NMS**.
   - **Export File/Import File** buttons: Use these buttons to import/export data to/from the profile file and the Element Properties Table.
   - **Element Property File Status**: This parameter shows the current status of the profile file. If "busy", either import or export operations are being processed.
@@ -122,7 +122,9 @@ This page contains reference information on the different cards that can be enco
 
 - **Poll Catalog Card Table** button: Performs the polling of the Catalog Card Table when clicked.
 - **Catalog Card Table**: Contains information about the different cards, including the **Card ID**, **Card Type** and **NE Type**.
-  **Note**: Because of the size of this table, it can take several minutes before the connector has polled all data from the NMS. Therefore, SNMP polling can only be triggered manually, using the Poll Catalog Card Table button, and it is entirely your choice when it is most convenient for the information in this table to be updated.
+
+  > [!NOTE]
+  > Because of the size of this table, it can take several minutes before the connector has polled all data from the NMS. Therefore, SNMP polling can only be triggered manually, using the Poll Catalog Card Table button, and it is entirely your choice when it is most convenient for the information in this table to be updated.
 
 ### Catalog Source
 
@@ -144,7 +146,9 @@ This page contains reference information on the different alarm events that can 
 
 - **Poll Catalog Alarm Table** button: Performs the polling of the Catalog Shelf Table when clicked.
 - **Catalog Alarm Table**: Alarm Type, NE Basic Type, and Alarm Description are some of the parameters that can be found in this table.
-  **Note**: As this is a very large table, containing details about every type of alarm that could possibly be triggered within the system, it can take the connector a long time to poll all the information to fully populate this table (up to 30 minutes). As such, SNMP polling is only done when the **Poll Catalog Alarm Table** button is clicked, and it is entirely your choice when it is most convenient for the information in this table to be updated.
+
+  > [!NOTE]
+  > As this is a very large table, containing details about every type of alarm that could possibly be triggered within the system, it can take the connector a long time to poll all the information to fully populate this table (up to 30 minutes). As such, SNMP polling is only done when the **Poll Catalog Alarm Table** button is clicked, and it is entirely your choice when it is most convenient for the information in this table to be updated.
 
 ### Catalog Signal
 
@@ -179,8 +183,10 @@ This page displays information on the different probable causes that could be in
 This page contains information about the different filters that can be applied to the retrieval of information about Network Elements.
 
 - **Poll NE Filter Table** button: Performs the polling of the NE Filter Table when clicked.
-- **NE Filter Table**: Includes the **Basic Type** and **Row Status**.**
-  Note**: If this table is empty, all Network Elements are listed in the Network Elements Table, and so all Network Element notifications are sent to the NMS. If this table is not empty, the Network Element Table contains only the Network Element basic types listed in this table, and so only Network Element traps related to these NEs are sent to the NMS.
+- **NE Filter Table**: Includes the **Basic Type** and **Row Status**.
+
+  > [!NOTE]
+  > If this table is empty, all Network Elements are listed in the Network Elements Table, and so all Network Element notifications are sent to the NMS. If this table is not empty, the Network Element Table contains only the Network Element basic types listed in this table, and so only Network Element traps related to these NEs are sent to the NMS.
 
 ### Alarm Filter
 
@@ -188,7 +194,9 @@ This page contains information about the different alarm filters that could be a
 
 - **Poll Alarm Filter Table** button: Performs the polling of the Alarm Filter Table when clicked.
 - **Alarm Filter Table**: Includes the **Element Manager ID**, **Network Element ID** and **Network Element Basic Type**.
-  **Note**: if this table is empty, the manager is notified of all alarms related to the Network Elements listed in the Network Elements Table, and these are all listed in the alarm tables. If this table is not empty, the manager is only notified of the alarms related to the Network Elements listed in the Network Elements Table that match the conditions of a filter, and only those alarms are listed in the alarm tables.
+
+  > [!NOTE]
+  > If this table is empty, the manager is notified of all alarms related to the Network Elements listed in the Network Elements Table, and these are all listed in the alarm tables. If this table is not empty, the manager is only notified of the alarms related to the Network Elements listed in the Network Elements Table that match the conditions of a filter, and only those alarms are listed in the alarm tables.
 
 ### System DVE
 
@@ -196,7 +204,7 @@ This page shows information about the currently created DVEs (i.e. those set to 
 
 - **DVE Export Table**: This table contains information on the settings for each created DVE.
 
-- **Custom DVE Name**: The name used to create the DVE.
+  - **Custom DVE Name**: The name used to create the DVE.
   - **View**: The Site Name (View) where the DVE was created.
   - **DVE Info**: The DataMiner ID and Element ID separated by a forward slash "/".
   - **Network Element Name**: The name of the Network Element for which the DVE was created.

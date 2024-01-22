@@ -12,21 +12,21 @@ This protocol can be used to monitor and perform basic configuring on the parent
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-### Exported connectors
+### System Info
 
-| **Exported Connector**                                                                                              | **Description**    |
-|--------------------------------------------------------------------------------------------------------------------|--------------------|
-| [Rohde Schwarz THR9 FM N+1 - Transmitter](xref:Connector_help_Rohde_Schwarz_THR9_FM_N%2B1_-_Transmitter) | Transmitter Module |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | [Rohde Schwarz THR9 FM N+1 - Transmitter](xref:Connector_help_Rohde_Schwarz_THR9_FM_N%2B1_-_Transmitter) |
 
 ## Installation and configuration
 

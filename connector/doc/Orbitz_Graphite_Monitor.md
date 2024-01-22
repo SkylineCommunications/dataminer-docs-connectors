@@ -14,7 +14,7 @@ This connector allows you to read the time-series data from the device via an HT
 
 | **Range**            | **Key Features**                             | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version (minimum .NET Framework 4.0) | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version (minimum .NET Framework 4.0) | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector allows you to read the time-series data from the device via an HT
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

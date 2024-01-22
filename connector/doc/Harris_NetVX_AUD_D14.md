@@ -15,10 +15,10 @@ The **Harris NetVX AUD D14** is an overview of **Encoders** and **Decoders** con
 The **Harris NetVX AUD D14** connector has an **SNMP** Connection:
 
 - **Port:** 161
-- **Bus Address:** The slot number of the **Audio Converter.**
+- **Bus address**: The slot number of the **Audio Converter.**
 - **IP Address:** The IP of the Device
-- **Get community string:** public
-- **Set community string:** private
+- **Get community string**: public
+- **Set community string**: private
 
 ## Usage
 

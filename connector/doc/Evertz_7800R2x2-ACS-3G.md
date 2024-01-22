@@ -12,11 +12,11 @@ This connector allows you to manage the Evertz 7800R2x2-ACS-3G card. It communic
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**       |
+| Range     | Supported Firmware           |
 |-----------|------------------------------|
 | 1.0.0.x   | VLProProd_R2X2-ACS Version 6 |
 
@@ -24,7 +24,7 @@ This connector allows you to manage the Evertz 7800R2x2-ACS-3G card. It communic
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

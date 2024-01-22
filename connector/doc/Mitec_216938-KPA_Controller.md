@@ -19,11 +19,11 @@ It performs manual or automatic switches to backup for the system's high power a
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                             |
+| Range     | Supported Firmware                                 |
 |-----------|----------------------------------------------------|
 | 1.0.0.x   | Configuration Version: 1.00 Software Version: 2.23 |
 
@@ -31,7 +31,7 @@ It performs manual or automatic switches to backup for the system's high power a
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

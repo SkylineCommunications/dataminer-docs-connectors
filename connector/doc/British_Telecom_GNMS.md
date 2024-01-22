@@ -18,9 +18,9 @@ After a restart of the element, the active alarms are populated in the Alarms ta
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|-----------|-----------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | Yes                 |
 
 ## Configuration
 

@@ -14,13 +14,13 @@ There are several versions of the connector. The 1.0.0.x range is used for older
 
 | **Range**            | **Key Features**                            | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Draft range. Obsolete - should not be used. | \-           | \-                |
-| 1.1.0.x \[SLC Main\] | Initial version.                            | \-           | \-                |
-| 1.2.0.x \[SLC Main\] | Range dedicated to the NAM x03 model.       | \-           | \-                |
+| 1.0.0.x [Obsolete]     |Draft range. Obsolete - should not be used. | -            | -                 |
+| 1.1.0.x [SLC Main]   | Initial version.                            | -            | -                 |
+| 1.2.0.x [SLC Main]   | Range dedicated to the NAM x03 model.       | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                |
+| Range     | Supported Firmware                                                                                                    |
 |-----------|-----------------------------------------------------------------------------------------------------------------------|
 | 1.1.0.x   | Supported device types: NAM 201, NAM 202, NAM 601, NAM 602. Dante Firmware: 4.00.002.007 Dante Software: 4.00.004.019 |
 | 1.2.0.x   | Supported device types: NAM x03                                                                                       |
@@ -29,9 +29,9 @@ There are several versions of the connector. The 1.0.0.x range is used for older
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

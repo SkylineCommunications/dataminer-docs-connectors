@@ -12,7 +12,7 @@ This connector provides a monitoring interface for a **Techex MW4 Server**.
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
+| Range                | Device Firmware Version     |
 |----------------------|-----------------------------|
 | 1.0.0.x              | 4.6.4                       |
 | 1.0.1.x \[SLC_Main\] | 4.6.4                       |

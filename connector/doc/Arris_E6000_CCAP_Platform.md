@@ -14,31 +14,34 @@ This connector allows you to collect data from the Arris E6000 CCAP Platform alo
 
 | **Range**            | **Key Features**                          | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                          | \-           | \-                |
-| 1.0.1.x              | Modifications for compatibility with EPM. | \-           | \-                |
-| 1.0.2.x              | Modifications to improve performance.     | \-           | \-                |
-| 1.0.3.x \[SLC Main\] | Updated the minimum DataMiner version.    | \-           | \-                |
-| 1.0.4.x              | Modifications to improve performance      | \-           | \-                |
+| 1.0.0.x              | Initial version.                          | -            | -                 |
+| 1.0.1.x              | Modifications for compatibility with EPM. | -            | -                 |
+| 1.0.2.x              | Modifications to improve performance.     | -            | -                 |
+| 1.0.3.x              | Updated the minimum DataMiner version.    | -            | -                 |
+| 1.0.4.x              | Modifications to improve performance      | -            | -                 |
+| 1.0.5.x [SLC Main]   | New threshold logic.                      | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | CER_V04.05.00.0015     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
+| 1.0.5.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

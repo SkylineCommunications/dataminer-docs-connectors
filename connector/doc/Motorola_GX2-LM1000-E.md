@@ -8,21 +8,21 @@ The **Motorola GX2-LM1000-E** connector is an SNMP-based connector used to monit
 
 ## About
 
-This connector is exported from the Motorola GX2-CM100 B and provides a monitoring interface for the **Motorola** **GX2-LM1000-E** card.
+This connector is exported from the Motorola GX2-CM100 B and provides a monitoring interface for the **Motorola GX2-LM1000-E** card.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
-| 2.0.0.x          | DVE focused     | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | No                  |
+| 2.0.0.x | DVE focused     | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 2.0.0.x          | D                           |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 2.0.0.x | D                          |
 
 ## Usage
 
@@ -32,7 +32,7 @@ This page displays general information about the card. **Unit Name**, **Module T
 
 ### Forward Transmitter
 
-This page displays both **analog** and **digital** parameters: **Offset Monitor**, **Offset Control**, **Attenuation**, **Optical Power**, both **Laser BIAS** and **Temperature**, **Temperature**, **Fan** and **12V** **Current**, **RF Input**, **Optical Power Output**,**Laser Mode**, **Video Offset, Fiber Length, Laser Secondary Mode** and **Factory Default**.
+This page displays both **analog** and **digital** parameters: **Offset Monitor**, **Offset Control**, **Attenuation**, **Optical Power**, both **Laser BIAS** and **Temperature**, **Temperature**, **Fan** and **12V Current**, **RF Input**, **Optical Power Output**,**Laser Mode**, **Video Offset, Fiber Length, Laser Secondary Mode** and **Factory Default**.
 
 ### Alarms
 

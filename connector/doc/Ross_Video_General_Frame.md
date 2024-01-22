@@ -14,9 +14,9 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|-----------|-----------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,10 +24,16 @@ This connector will export different connectors based on the retrieved data. A l
 |-----------|------------------------|
 | 1.0.0.x   | Software version 2.50  |
 
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | See table below.        |
+
 ### Exported Connectors
 
-| **Exported Connector**                                                                                             | **Description**       |
-|-------------------------------------------------------------------------------------------------------------------|-----------------------|
+| Exported Connector                                                                                  | Description           |
+|-----------------------------------------------------------------------------------------------------|-----------------------|
 | [Cobalt Digital 9004](xref:Connector_help_Ross_Video_General_Frame_-_Cobalt_Digital_9004)           | Card 9004 Module      |
 | [Cobalt Digital 9006](xref:Connector_help_Ross_Video_General_Frame_-_Cobalt_Digital_9006)           | Card 9006 Module      |
 | [Cobalt Digital 9223](xref:Connector_help_Ross_Video_General_Frame_-_Cobalt_Digital_9223)           | Card 9223 Module      |

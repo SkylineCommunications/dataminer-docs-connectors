@@ -12,49 +12,29 @@ The module provides a single point of access to communicate with the entire 3000
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td><p>1.0.0.x</p></td>
-<td><p>Initial version</p>
-<p>Extra parameters added</p></td>
-<td>No</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
+| Range   | Description                             | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version. Extra parameters added | No              | No                  |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.8                         |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 2.8                        |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### SNMP Main Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-**SNMP CONNECTION:**
+SNMP CONNECTION:
 
 - **IP address/host**: The polling IP of the device, e.g. *10.150.3.3*.
 
-**SNMP Settings:**
+SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.

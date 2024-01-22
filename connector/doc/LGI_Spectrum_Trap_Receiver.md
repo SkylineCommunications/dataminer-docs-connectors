@@ -15,7 +15,7 @@ This connector only retrieves **SNMP traps**. No other data is polled.
 | **Range**     | **Description**                                                    | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                    | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Added Incident ID (column shift, could potentially affect reports) | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Added Incident ID (column shift, could potentially affect reports) | No                  | Yes                     |
 
 ## Installation and configuration
 

@@ -12,15 +12,21 @@ This **HTTP** connector is used to monitor and configure the **Interra Orion OTT
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 1.6.2                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 1.6.2                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -56,7 +62,7 @@ This page contains the **Groups Table** which contains properties such as, **Gro
 
 ### Alerts Summary
 
-This page contains the **Query Duration** parameter that allows to modfy the alerts request and the **Alerts Summary Table** which contains two types of alerts, Recent and Active. It also shows more properties such as, **Service ID, Service Name, Type \[Recent, Active\], Variant, Start Time\[mm/dd/yy HH:MM:ss.ms\], Duration \[DD:HH:MM:ss:ms\], PID, Number, Level, Synopsis, Description**.
+This page contains the **Query Duration** parameter that allows to modify the alerts request and the **Alerts Summary Table** which contains two types of alerts, Recent and Active. It also shows more properties such as, **Service ID, Service Name, Type \[Recent, Active\], Variant, Start Time\[mm/dd/yy HH:MM:ss.ms\], Duration \[DD:HH:MM:ss:ms\], PID, Number, Level, Synopsis, Description**.
 
 ### Alerts Detailed
 
@@ -64,15 +70,15 @@ This page contains the **Alerts Detailed Table** which mainly contains the same 
 
 ### Profiles
 
-This page contains the **Profiles Table** which contains properties such as, **Profile ID, Profile Name, Type, Status, Description, Published XML,** and **Draft XML**.
+This page contains the **Profiles Table** which contains properties such as, **Profile ID, Profile Name, Type, Status, Description, Published XML**, and **Draft XML**.
 
 ### Monitors
 
-This page contains the **Monitors Table** which contains properties such as, **Monitor ID, Monitor Name, IP Address, Port, Content Type, Status,** and **Storage Server Path**.
+This page contains the **Monitors Table** which contains properties such as, **Monitor ID, Monitor Name, IP Address, Port, Content Type, Status**, and **Storage Server Path**.
 
 ### Monitoring Summary
 
-This page contains stats for the **Live Monirtoring Services** such as, **Active, Inactive, In Queue, Cleaned, Others,** and **Total**.
+This page contains stats for the **Live Monitoring Services** such as, **Active, Inactive, In Queue, Cleaned, Others**, and **Total**.
 
 ### Web Interface
 

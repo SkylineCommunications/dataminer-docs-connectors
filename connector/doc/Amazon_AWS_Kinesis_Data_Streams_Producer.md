@@ -12,11 +12,11 @@ The purpose of this connector is to be able to offload data (trending, alarms, i
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                     |
+| Range     | Supported Firmware                                                         |
 |-----------|----------------------------------------------------------------------------|
 | 1.0.0.x   | AWS4 - 20131202 <https://docs.aws.amazon.com/kinesis/latest/APIReference/> |
 
@@ -24,7 +24,7 @@ The purpose of this connector is to be able to offload data (trending, alarms, i
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -85,7 +85,6 @@ When the central DB offload CSV files are processed, each CSV row gets translate
 You can find the JSON schema definitions of these objects below.
 
 ### Data (real-time trend data)
-
 
 ```json
 {

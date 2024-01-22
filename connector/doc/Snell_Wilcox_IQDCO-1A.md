@@ -14,32 +14,38 @@ Two timers are used to poll information: one for short-to-medium term operations
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**             |
-|------------------|-----------------------------------------|
-| 1.0.0.x          | Compatible with software version 5.2.6. |
+| Range   | Supported Firmware                      |
+|---------|-----------------------------------------|
+| 1.0.0.x | Compatible with software version 5.2.6. |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
 ### Creation
 
-#### SNMP Main Connection:
+#### SNMP Main Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
-- **IP Address/host:** The Polling IP of the device.
-- **Device address:** Range between *1-255*.
+- **IP address/host**: The Polling IP of the device.
+- **Device address**: Range between *1-255*.
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161*.
+- **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 

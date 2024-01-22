@@ -40,9 +40,9 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port Number:** The port of the connected device, by default *161.*
-- **Get community string:** *public*
-- **Set community string:** *apex3kprivate*
+- **Port number**: The port of the connected device, by default *161.*
+- **Get community string**: *public*
+- **Set community string**: *apex3kprivate*
 
 #### SNMP redundant connection
 

@@ -10,24 +10,24 @@ The purpose of this connector is to monitor the health of the different channels
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                              | **Based on** | **System Impact**               |
-|----------------------|-----------------------------------------------------------------------------------------------|--------------|---------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                              | \-           | \-                              |
-| 1.0.1.x \[SLC Main\] | \- Endpoint Channel Error table added. - Stream Key, Poll Delta Time and Error columns added. | 1.0.0.1      | Changed displayed column order. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | - Endpoint Channel Error table added. <br>- Stream Key, Poll Delta Time and Error columns added. | 1.0.0.1 | Changed displayed column order. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

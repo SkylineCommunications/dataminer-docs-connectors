@@ -12,8 +12,8 @@ This connector allows you to set up and manage the IQMIX40 multi-channel video-o
 
 | **Range**            | **Key Features**                                                       | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Reworked backend. Works with initial polling and unsolicited messages. | \-           | \-                |
+| 1.0.0.x [Obsolete]     |Initial version.                                                       | -            | -                 |
+| 1.0.1.x [SLC Main]   | Reworked backend. Works with initial polling and unsolicited messages. | -            | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector allows you to set up and manage the IQMIX40 multi-channel video-o
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

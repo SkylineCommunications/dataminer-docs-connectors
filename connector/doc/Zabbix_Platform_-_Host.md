@@ -12,15 +12,21 @@ This is an **HTTP** connector that connects to the Zabbix API to retrieve data f
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -30,7 +36,7 @@ The element using this protocol is **automatically created** by the parent conne
 
 ### Configuration
 
-To be able to retrieve data from the API, the **Username,** **Password** and **URL** must be provided on the Configuration page of the parent element.
+To be able to retrieve data from the API, the **Username, Password** and **URL** must be provided on the Configuration page of the parent element.
 
 ## Usage
 

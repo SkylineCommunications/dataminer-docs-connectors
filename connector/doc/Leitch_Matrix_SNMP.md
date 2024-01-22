@@ -14,7 +14,7 @@ For short-term monitoring, the connector polls the status of the inputs and the 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.1.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.1.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ For short-term monitoring, the connector polls the status of the inputs and the 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.1.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

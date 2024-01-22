@@ -14,22 +14,22 @@ The current traps implemented in version 1.0.2.6 and above are LinkUp, LinkDown,
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                   | **Based on** | **System Impact**                                                                                                                                                                                                                                         |
-|----------------------|--------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                    | \-           |                                                                                                                                                                                                                                                           |
-| 1.0.2.x              | Support for SNMP polling from backup IP                                                                            | \-           |                                                                                                                                                                                                                                                           |
-| 2.0.0.x \[Obsolete\] | SNMPv3                                                                                                             | \-           |                                                                                                                                                                                                                                                           |
-| 2.0.1.x              | \- Table 42000 ethernetPBWanStatsTable adapted - Display key added - SNMP columns hidden - Retrieved columns added | 2.0.2.4      | \- Display key impact on iDMS filters, DMS Automation scripts, Visio files, DMS reports and DMS WebAPI usage. - Alarm and trending info removed from params 42002, 42003 and 42004. Trending and alarm monitoring now enabled for 42005, 42006 and 42007. |
-| 2.0.2.x \[Obsolete\] | DCF support added                                                                                                  | 2.0.1.1      |                                                                                                                                                                                                                                                           |
-| 2.0.3.x              | \- Discard rates added for Interfaces Table - Red/Yellow discard rates added to Ethernet Flow Policer Stats table  | 2.0.2.3      | Impact on custom reports or scripts calling Ethernet Flow Policer Statistics table indices directly.                                                                                                                                                      |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - |  |
+| 1.0.2.x | Support for SNMP polling from backup IP | - |  |
+| 2.0.0.x [Obsolete] | SNMPv3 | - |  |
+| 2.0.1.x | - Table 42000 ethernetPBWanStatsTable adapted <br>- Display key added <br>- SNMP columns hidden <br>- Retrieved columns added | 2.0.2.4 | - Display key impact on iDMS filters, DMS Automation scripts, Visio files, DMS reports and DMS WebAPI usage. <br>- Alarm and trending info removed from params 42002, 42003 and 42004. Trending and alarm monitoring now enabled for 42005, 42006 and 42007. |
+| 2.0.2.x [Obsolete] | DCF support added | 2.0.1.1 |  |
+| 2.0.3.x | - Discard rates added for Interfaces Table <br>- Red/Yellow discard rates added to Ethernet Flow Policer Stats table | 2.0.2.3 | Impact on custom reports or scripts calling Ethernet Flow Policer Statistics table indices directly. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                       |
+| Range     | Supported Firmware                           |
 |-----------|----------------------------------------------|
 | 1.0.0.x   | Backplane revision: 1.0                      |
 | 1.0.2.x   | Unconfirmed                                  |
-| 2.0.0.x   | Backplane revision: 1.04 \[to be confirmed\] |
+| 2.0.0.x   | Backplane revision: 1.04 [to be confirmed]   |
 | 2.0.1.x   | Same as 2.0.0.X                              |
 | 2.0.2.x   | Same as 2.0.1.X                              |
 | 2.0.3.x   | Same as 2.0.2.x                              |
@@ -38,12 +38,12 @@ The current traps implemented in version 1.0.2.6 and above are LinkUp, LinkDown,
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.3.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -67,7 +67,7 @@ SNMP Settings:
 
 ### General
 
-This page displays the following general information: **System Name, System Description, System Location, System Contact, CLI Prefix,** **System Up Time** and **Polling IP**.
+This page displays the following general information: **System Name, System Description, System Location, System Contact, CLI Prefix, System Up Time** and **Polling IP**.
 
 In addition, it also displays the status of the following parameters: **CLI Security Prompt, FTP, HTTP, HTTPS, SCP, Serial Port, Serial Port Auto Log Off, SFTP, TFTP, SSH** and **Telnet**.
 
@@ -144,7 +144,7 @@ This page displays the **FlowPoint Statistics History** table, with history data
 
 ### FlowPoint QoS Shaper
 
-This page displays the **FlowPoint QoS Shaper** **Statistics** table. These statistics include **Bytes Transmitted**, **Bytes Tail Dropped**, **Frames Dequeued**, **Frames Tail Dropped**, **Average Bit Rate Limited, Bytes** and **Frames** **Random Early Discarded Dropped**
+This page displays the **FlowPoint QoS Shaper Statistics** table. These statistics include **Bytes Transmitted**, **Bytes Tail Dropped**, **Frames Dequeued**, **Frames Tail Dropped**, **Average Bit Rate Limited, Bytes** and **Frames Random Early Discarded Dropped**
 
 ### FlowPoint QoS Shaper History
 
@@ -160,7 +160,7 @@ This page displays the **FlowPoint QoS Policer Statistics History** table, with 
 
 ### Power Supply Unit
 
-This page displays the **Power Supply Units** table, which monitors the **PSU Type**, **Operational** and **Secondary** **State**, **Output Voltage** and **Current**, and **Temperature.** It also allows you to configure the **Administrative State**, **Storage Type** and **PSU Status**.
+This page displays the **Power Supply Units** table, which monitors the **PSU Type**, **Operational** and **Secondary State**, **Output Voltage** and **Current**, and **Temperature.** It also allows you to configure the **Administrative State**, **Storage Type** and **PSU Status**.
 
 ### Fan
 
@@ -187,7 +187,7 @@ This page displays the time zone parameters for the device. This includes the **
 
 ### Target Addresses
 
-This page displays the IP where traps are sent, along with information related to this. It contains the **Target Addresses** table, which displays the **Transport Address**, **Domain**, **Timeout** **Time**, and **Retry Count**.
+This page displays the IP where traps are sent, along with information related to this. It contains the **Target Addresses** table, which displays the **Transport Address**, **Domain**, **Timeout Time**, and **Retry Count**.
 
 ### NTP
 
@@ -237,7 +237,7 @@ This page displays the **Flow Statistics** table. These statistics include multi
 
 ### Flow Statistics History
 
-This page displays the **Flow Statistics** **History** table, with the history data of the **Flow Statistics** table.
+This page displays the **Flow Statistics History** table, with the history data of the **Flow Statistics** table.
 
 ### Web Interface
 

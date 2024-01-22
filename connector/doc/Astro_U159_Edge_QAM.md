@@ -12,7 +12,7 @@ With this connector, it is possible to gather and view information from the devi
 
 | **Range**            | **Key Features**           | **Based on** | **System Impact** |
 |----------------------|----------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | IP-to-QAM signal converter | \-           | \-                |
+| 1.0.0.x [SLC Main]   | IP-to-QAM signal converter | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ With this connector, it is possible to gather and view information from the devi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

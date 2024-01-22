@@ -15,7 +15,7 @@ This connector monitors the state of each of the transport streams. The connecto
 | **Range**     | **Description**                                         | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|---------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                         | Yes                 | Yes                     |
-| 1.0.1.X \[SLC Main\] | Auto clear functionality for TS, Service and PID tables | Yes                 | Yes                     |
+| 1.0.1.X [SLC Main]   | Auto clear functionality for TS, Service and PID tables | Yes                 | Yes                     |
 
 ### Product Info
 

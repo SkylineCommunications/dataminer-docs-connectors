@@ -12,15 +12,21 @@ This connector polls data from the **Tryo Communications SDA+15W Outdoor** via *
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.1                         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 1.1                     |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -133,7 +139,7 @@ On this page, you can view and configure parameters related to the **RF Detector
 This page contains two tables:
 
 - **Power Amplifier Table**: Displays the power amplifier status.
-- **M**e**asurement table:** Displays measurements for different parameters of the device.
+- **Measurement table:** Displays measurements for different parameters of the device.
 
 ### PAU General
 

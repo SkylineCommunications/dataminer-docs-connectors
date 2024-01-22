@@ -12,17 +12,17 @@ This connector uses an HTTPS connection to communicate with the selected API. Th
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                         | **Based on** | **System Impact**                                                                                                   |
-|----------------------|----------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                                         | \-           | \-                                                                                                                  |
-| 1.0.1.x \[Obsolete\] | Implemented support for Unicode languages like Cyrillic script, Chinese, Arabic, etc.                    | 1.0.0.4      | All existing data will be lost. The element needs to be recreated.                                                  |
-| 1.0.2.x \[Obsolete\] | Migrated element communication to InterApp to handle ad hoc requests.                                    | 1.0.1.7      | The Weather API DLL (NuGet) needs to be deployed. Class Library DLLs version 1.2.2.4 or higher need to be deployed. |
-| 1.0.3.x              | \- Partial option added to tables 100, 300, 1000, and 1100. - WeatherApi and InterApp libraries updated. | 1.0.2.3      | The tables now have multiple pages.                                                                                 |
-| 1.0.4.x \[SLC Main\] | Windy Api added.                                                                                         | 1.0.3.1      | The connector now polls the Windy API as well as the weather API of the user's choice.                              |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [Obsolete] | Implemented support for Unicode languages like Cyrillic script, Chinese, Arabic, etc. | 1.0.0.4 | All existing data will be lost. The element needs to be recreated. |
+| 1.0.2.x [Obsolete] | Migrated element communication to InterApp to handle ad hoc requests. | 1.0.1.7 | The Weather API DLL (NuGet) needs to be deployed. Class Library DLLs version 1.2.2.4 or higher need to be deployed. |
+| 1.0.3.x [SLC Main] | - Partial option added to tables 100, 300, 1000, and 1100. <br>- WeatherApi and InterApp libraries updated. | 1.0.2.3 | The tables now have multiple pages. |
+| 1.0.4.x | Windy Api added. | 1.0.3.1 | The connector now polls the Windy API as well as the weather API of the user's choice. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                      |
+| Range     | Supported Firmware                                                                          |
 |-----------|---------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Dark Sky                                                                                    |
 | 1.0.1.x   | OpenWeather OneCall                                                                         |
@@ -34,11 +34,11 @@ This connector uses an HTTPS connection to communicate with the selected API. Th
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

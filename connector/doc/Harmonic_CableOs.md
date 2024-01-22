@@ -10,11 +10,11 @@ uid: Connector_help_Harmonic_CableOs
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                       | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Upstream and downstream channels monitoring.                                                                                           | \-           | \-                |
-| 1.0.1.x              | Every bitrate shown as Mbps. New pages added (RF Port, RPD, Out of Band, Video Channels, Memory), and new tables added on those pages. | 1.0.0.5      | \-                |
-| 1.0.2.x \[SLC Main\] | Parameter and layout adaptation.                                                                                                       | 1.0.0.5      | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Upstream and downstream channels monitoring. | - | - |
+| 1.0.1.x | Every bitrate shown as Mbps. New pages added (RF Port, RPD, Out of Band, Video Channels, Memory), and new tables added on those pages. | 1.0.0.5 | - |
+| 1.0.2.x [SLC Main] | Parameter and layout adaptation. | 1.0.0.5 | - |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ uid: Connector_help_Harmonic_CableOs
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

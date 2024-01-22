@@ -12,17 +12,25 @@ This connector collects information from cleared alarms of the desired elements,
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-Not applicable. This is a virtual connector, which does not interact with an actual device.
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-### Linked connectors
+### System Info
 
-| **Name**                  | **Range** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | See table below.      | -                       |
+
+### Linked Connectors
+
+| Connector                        | Range     |
 |----------------------------------|-----------|
 | Teracom Service Overview Manager | 1.0.0.x   |
 | Bridge Technologies VB220        | 3.2.0.x   |

@@ -12,15 +12,15 @@ This connector is designed to monitor a Cassandra cluster, providing useful info
 
 ### Version Info
 
-| **Range**            | **Key Features**                               | **Based on** | **System Impact** |
+| Range                | Key Features                                   | Based on     | System Impact     |
 |----------------------|------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                | \-           | \-                |
-| 1.0.1.x              | System checks                                  | 1.0.0.2      | \-                |
-| 1.0.2.x \[SLC Main\] | Context menu to launch the Cassandra Installer | 1.0.1.5      | \-                |
+| 1.0.0.x              | Initial version                                | -            | -                 |
+| 1.0.1.x              | System checks                                  | 1.0.0.2      | -                 |
+| 1.0.2.x [SLC Main]   | Context menu to launch the Cassandra Installer | 1.0.1.5      | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                            |
+| Range     | Supported Firmware                                                                                |
 |-----------|---------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | 3.11 4.0 (virtual tables: clients, disk_usage, max_partition_size, settings, tombstones_per_read) |
 | 1.0.1.x   | 3.11 4.0 (virtual tables: clients, disk_usage, max_partition_size, settings, tombstones_per_read) |
@@ -30,9 +30,9 @@ This connector is designed to monitor a Cassandra cluster, providing useful info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -42,7 +42,8 @@ This connector is designed to monitor a Cassandra cluster, providing useful info
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-**Note (only for the 1.0.0.x range): Make sure *ApacheCassandraCluster.dll* and *System.Threading.Tasks.Dataflow.dll* are present on the DMA in the folder *C:\Skyline DataMiner\Files*.**
+> [!NOTE]
+> For the **1.0.0.x** range only: Make sure *ApacheCassandraCluster.dll* and *System.Threading.Tasks.Dataflow.dll* are present on the DMA in the folder *C:\Skyline DataMiner\Files*.
 
 ### Initialization
 

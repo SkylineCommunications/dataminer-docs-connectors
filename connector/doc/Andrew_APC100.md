@@ -56,7 +56,7 @@ Polarization:
 
 ### Satellite Memory
 
-In order to automatically calculate the position in the **Satellite Memory** **Table**, the **North Latitude** and the **West Longitude** of the **Site** have to be configured.
+In order to automatically calculate the position in the **Satellite Memory Table**, the **North Latitude** and the **West Longitude** of the **Site** have to be configured.
 
 ## Usage
 
@@ -88,7 +88,7 @@ In order to change multiple satellites at once, it is possible to load the curre
 
 When changing a value in the **Sat Memory Table**, the position is calculated automatically. There is also a button to **Recalculate** all the items in the table. In order to do these calculations, the **Site North Latitude** and **Site West Longitude** have to be configured.
 
-The Sat Memory Table can be imported from or exported to a file. The file name is set in **Import/Export** **FileName** and will be saved in the **documents** of the element.
+The Sat Memory Table can be imported from or exported to a file. The file name is set in **Import/Export FileName** and will be saved in the **documents** of the element.
 
 ### Status Page
 

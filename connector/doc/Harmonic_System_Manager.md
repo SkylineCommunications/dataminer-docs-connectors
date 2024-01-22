@@ -14,8 +14,8 @@ The System Manager acts as the administrative hub of a Spectrum media server ins
 
 | **Range**            | **Key Features**                                                                                                         | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version. - Displays SNMP traps in a table. - Possibility to configure how long traps are displayed in the table. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | REST API                                                                                                                 | 1.0.0.x      | New connection    |
+| 1.0.0.x              | Initial version. - Displays SNMP traps in a table. - Possibility to configure how long traps are displayed in the table. | -            | -                 |
+| 1.0.1.x [SLC Main]   | REST API                                                                                                                 | 1.0.0.x      | New connection    |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ The System Manager acts as the administrative hub of a Spectrum media server ins
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

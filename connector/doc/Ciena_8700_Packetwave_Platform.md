@@ -15,7 +15,7 @@ This connector uses an SNMP connection to obtain relevant information from **Cie
 | **Range**     | **Description**              | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version              | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Correct bit rate calculation | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Correct bit rate calculation | No                  | Yes                     |
 
 ### Product Info
 

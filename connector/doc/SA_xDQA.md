@@ -12,19 +12,19 @@ This connector is a **QAM modulator**, which allows you to monitor alarms and co
 
 | **Range**            | **Key Features**                           | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------|--------------|-------------------|
-| 1.1.1.x \[SLC Main\] | Monitoring and setting of QAM frequencies. | \-           | \-                |
+| 1.1.1.x [SLC Main]   | Monitoring and setting of QAM frequencies. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.1.1.x   | \-                     |
+| 1.1.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

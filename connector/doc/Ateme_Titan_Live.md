@@ -19,14 +19,14 @@ Through this connector is possible to gather and view information from the devic
 | 4.0.1.x |  | No | Yes |
 | 4.0.2.x | No | Yes |  |
 | 4.0.3.x | Corrections to Service output logic. A new primary key format was introduced for all output tables | No | Yes |
-| 4.0.4.x \[SLC Main\] | Primary key of trap table changed. Display key unchanged. | No | Yes |
+| 4.0.4.x [SLC Main]   | Primary key of trap table changed. Display key unchanged. | No | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
-| 3.0.0.x          | \-                          |
+| 1.0.0.x          | -                           |
+| 3.0.0.x          | -                           |
 | 4.0.0.x          | 4.1.10.5                    |
 
 ## Installation and configuration

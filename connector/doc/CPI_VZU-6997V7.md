@@ -14,7 +14,7 @@ The CPI VZU-6997V7 connector uses **serial** communication to communicate with t
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC MAIN\] | Initial version | No                  | No                      |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
 
 ### Product Info
 

@@ -10,14 +10,14 @@ The Riedel Communications ST2110 - SDI Gateway is used to encapsulate or de-enca
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                      | **Based on** | **System Impact**             |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                      | \-           | \-                            |
-| 1.0.1.x \[SLC Main\] | \- Added DCF based on Interfaces Table (PID:1200). - Added support to switch polling IP between available interfaces. | 1.0.0.2      | Increased load on the system. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | - Added DCF based on Interfaces Table (PID:1200). <br>- Added support to switch polling IP between available interfaces. | 1.0.0.2 | Increased load on the system. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | Embox6 - 3.6.1615393321 |
 | 1.0.1.x\> | Embox6 - 3.6.1615393321 |
@@ -26,8 +26,8 @@ The Riedel Communications ST2110 - SDI Gateway is used to encapsulate or de-enca
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

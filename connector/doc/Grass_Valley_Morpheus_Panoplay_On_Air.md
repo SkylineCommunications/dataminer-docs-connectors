@@ -10,31 +10,9 @@ This device manages channel redundancy, and whether said channels are on air, or
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><ul>
-<li>Obtains the status for system channels</li>
-<li>Allows configuration of which channels to obtain</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range              | Key Features                                                                                   | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - Obtains the status for system channels<br>- Allows configuration of which channels to obtain | -        | -             |
 
 ### Product Info
 
@@ -46,7 +24,7 @@ This device manages channel redundancy, and whether said channels are on air, or
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

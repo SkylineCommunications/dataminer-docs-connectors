@@ -12,13 +12,13 @@ The IntelSat Flex Platform VSAT functions as a virtual connector designed to str
 
 | **Range**            | **Key Features**      | **Based on** | **System Impact** |
 |----------------------|-----------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | KAFKA Files Injection | \-           | \-                |
+| 1.0.0.x [SLC Main]   | KAFKA Files Injection | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

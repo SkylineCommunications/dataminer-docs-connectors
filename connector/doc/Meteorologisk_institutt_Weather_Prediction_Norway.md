@@ -14,15 +14,15 @@ With this connector, important weather data can be retrieved based on **location
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                          | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                          | \-           | \-                |
-| 1.1.0.x \[Obsolete\] | Adapted to new API version (locationforecast v1.9 and textforecast v2.0). | \-           | \-                |
-| 1.2.0.x \[SLC Main\] | Adapted to new API version (locationforecast v2.0).                       | \-           | \-                |
+| Range              | Key Features                                                              | Based on | System Impact |
+|--------------------|---------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                          | -        | -             |
+| 1.1.0.x [Obsolete] | Adapted to new API version (locationforecast v1.9 and textforecast v2.0). | -        | -             |
+| 1.2.0.x [SLC Main] | Adapted to new API version (locationforecast v2.0).                       | -        | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                             |
+| Range     | Supported Firmware                                                                                 |
 |-----------|----------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | [http://api.met.no](http://api.met.no/) (Version 0.3)                                              |
 | 1.1.0.x   | [https://api.met.no](http://api.met.no/) Location Forecast: Version 1.9 Text Forecast: Version 2.0 |
@@ -32,9 +32,9 @@ With this connector, important weather data can be retrieved based on **location
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -46,9 +46,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** [*https://api.met.no*](http://api.met.no/)
-- **IP port:** *443*
-- **Bus address:** If the proxy server has to be bypassed, specify *bypassproxy.*
+- **IP address/host**: [*https://api.met.no*](http://api.met.no/)
+- **IP port**: *443*
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
 ### Configuration of the Summary Table
 

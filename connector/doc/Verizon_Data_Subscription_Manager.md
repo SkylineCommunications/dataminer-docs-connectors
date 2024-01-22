@@ -17,9 +17,21 @@ This connector implements the logic to:
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -33,7 +45,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Verizon RDS
 
-This page displays the **RDS Thread State**, the last successful thread (**RDS Last Successful Thread**), and the date and time of the last success (**RDS Last Successful** **Datetime**). It also contains an **Update** button, which can be used to trigger the import/export process.
+This page displays the **RDS Thread State**, the last successful thread (**RDS Last Successful Thread**), and the date and time of the last success (**RDS Last Successful Datetime**). It also contains an **Update** button, which can be used to trigger the import/export process.
 
 The **RDS Configuration** page button opens a subpage with the **RDS File Configuration**, which consists of the following parameters:
 
@@ -89,6 +101,7 @@ This page displays the available configuration options, such as **SRM Update Sta
 
 ## Revision History
 
-DATE VERSION AUTHOR COMMENTS
-01/11/2018 1.0.0.1 FRO, Skyline Reports and Dashboards Solution integration
-17/10/2018 1.0.0.3 AIG, Skyline Resource Manager integration
+| DATE | VERSION | AUTHOR | COMMENTS |
+|--|--|--|--|
+| 01/11/2018 | 1.0.0.1 | FRO, Skyline | Reports and Dashboards Solution integration
+| 17/10/2018 | 1.0.0.3 | AIG, Skyline | Resource Manager integration

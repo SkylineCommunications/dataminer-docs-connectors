@@ -12,10 +12,11 @@ CloudWatch provides you with data and actionable insights to monitor your applic
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                  |
-|----------------------|------------------|--------------|----------------------------------------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                                                 |
-| 1.0.1.x \[SLC Main\] | Initial version  | 1.0.0.7      | Adds connection to receive SNS HTTP notifications. |
+| Range              | Key Features                                                 | Based on | System Impact |
+|--------------------|--------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version                                              | -        | -             |
+| 1.0.1.x            | Adds connection to receive SNS HTTP notifications.           | 1.0.0.7  | -             |
+| 1.0.2.x [SLC Main] | MediaLive metric table params changed from string to number. | 1.0.1.19 | -             |
 
 ### Product Info
 
@@ -23,13 +24,15 @@ CloudWatch provides you with data and actionable insights to monitor your applic
 |-----------|------------------------|
 | 1.0.0.x   | 20100801               |
 | 1.0.1.x   | 20100801               |
+| 1.0.2.x   | 20100801               |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Amazon AWS CloudWatch - API Gateway Amazon AWS CloudWatch - Direct Connect Amazon AWS CloudWatch - EC2 Amazon AWS CloudWatch - EC2 Spot Fleet Amazon AWS CloudWatch - MediaPackage Amazon AWS CloudWatch - S3 Amazon AWS CloudWatch - Transit Gateway Amazon AWS CloudWatch - Kinesis Data Streams Amazon AWS CloudWatch - Lambda Amazon AWS CloudWatch - Media Connect Amazon AWS CloudWatch - Simple Notification Service Amazon AWS CloudWatch - VPC NAT Gateway Amazon AWS CloudWatch - VPC VPN Amazon AWS CloudWatch - Route 53 Amazon AWS CloudWatch - Cognito Amazon AWS CloudWatch - Network ELB |
-| 1.0.1.x   | No                  | Yes                     | \-                    | Amazon AWS CloudWatch - API Gateway Amazon AWS CloudWatch - Direct Connect Amazon AWS CloudWatch - EC2 Amazon AWS CloudWatch - EC2 Spot Fleet Amazon AWS CloudWatch - MediaPackage Amazon AWS CloudWatch - S3 Amazon AWS CloudWatch - Transit Gateway Amazon AWS CloudWatch - Kinesis Data Streams Amazon AWS CloudWatch - Lambda Amazon AWS CloudWatch - Media Connect Amazon AWS CloudWatch - Simple Notification Service Amazon AWS CloudWatch - VPC NAT Gateway Amazon AWS CloudWatch - VPC VPN Amazon AWS CloudWatch - Route 53 Amazon AWS CloudWatch - Cognito Amazon AWS CloudWatch - Network ELB |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | Amazon AWS CloudWatch <br>- API Gateway Amazon AWS CloudWatch <br>- Direct Connect Amazon AWS CloudWatch <br>- EC2 Amazon AWS CloudWatch <br>- EC2 Spot Fleet Amazon AWS CloudWatch <br>- MediaPackage Amazon AWS CloudWatch <br>- S3 Amazon AWS CloudWatch <br>- Transit Gateway Amazon AWS CloudWatch <br>- Kinesis Data Streams Amazon AWS CloudWatch <br>- Lambda Amazon AWS CloudWatch <br>- Media Connect Amazon AWS CloudWatch <br>- Simple Notification Service Amazon AWS CloudWatch <br>- VPC NAT Gateway Amazon AWS CloudWatch <br>- VPC VPN Amazon AWS CloudWatch <br>- Route 53 Amazon AWS CloudWatch <br>- Cognito Amazon AWS CloudWatch <br>- Network ELB |
+| 1.0.1.x | No | Yes | - | Amazon AWS CloudWatch <br>- API Gateway Amazon AWS CloudWatch <br>- Direct Connect Amazon AWS CloudWatch <br>- EC2 Amazon AWS CloudWatch <br>- EC2 Spot Fleet Amazon AWS CloudWatch <br>- MediaPackage Amazon AWS CloudWatch <br>- S3 Amazon AWS CloudWatch <br>- Transit Gateway Amazon AWS CloudWatch <br>- Kinesis Data Streams Amazon AWS CloudWatch <br>- Lambda Amazon AWS CloudWatch <br>- Media Connect Amazon AWS CloudWatch <br>- Simple Notification Service Amazon AWS CloudWatch <br>- VPC NAT Gateway Amazon AWS CloudWatch <br>- VPC VPN Amazon AWS CloudWatch <br>- Route 53 Amazon AWS CloudWatch <br>- Cognito Amazon AWS CloudWatch <br>- Network ELB |
+| 1.0.2.x | No | Yes | - | Amazon AWS CloudWatch <br>- API Gateway Amazon AWS CloudWatch <br>- Direct Connect Amazon AWS CloudWatch <br>- EC2 Amazon AWS CloudWatch <br>- EC2 Spot Fleet Amazon AWS CloudWatch <br>- MediaPackage Amazon AWS CloudWatch <br>- S3 Amazon AWS CloudWatch <br>- Transit Gateway Amazon AWS CloudWatch <br>- Kinesis Data Streams Amazon AWS CloudWatch <br>- Lambda Amazon AWS CloudWatch <br>- Media Connect Amazon AWS CloudWatch <br>- Simple Notification Service Amazon AWS CloudWatch <br>- VPC NAT Gateway Amazon AWS CloudWatch <br>- VPC VPN Amazon AWS CloudWatch <br>- Route 53 Amazon AWS CloudWatch <br>- Cognito Amazon AWS CloudWatch <br>- Network ELB |
 
 ## Configuration
 
@@ -41,7 +44,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The monitoring AWS URL from the desired region. The URL should have the following structure: *monitoring.\<region\>.amazonaws.com*.
+- **IP address/host**: The monitoring AWS URL from the desired region. The URL should have the following structure: *monitoring.\<region\>.amazonaws.com*.
 - **IP port**: The IP port of the device.
 - **Bus address**: Specify *bypassproxy* if the proxy server has to be bypassed.
 
@@ -51,7 +54,7 @@ This connector uses a smart-serial connection and requires the following input d
 
 HTTP CONNECTION:
 
-- **IP address/host:** Any.
+- **IP address/host**: Any.
 - **IP port**: The IP port on which the connector will listen for SNS HTTP notifications.
 - **Bus address**: Specify *bypassproxy* if the proxy server has to be bypassed.
 
@@ -65,7 +68,7 @@ HTTP POST messages are used to communicate with the Amazon AWS CloudWatch. This 
 
 ### General
 
-This page contains **Login** options, as well as information on which services should be polled with this element. To make sure that the connector can work properly, you **must** **first provide login information**.
+This page contains **Login** options, as well as information on which services should be polled with this element. To make sure that the connector can work properly, you **must first provide login information**.
 
 First specify the **Default Polling Interval** and **Default Poll All Metrics** column values of the Amazon Services table. These are the values that will be applied when a new service entry has been added. Changing these values will have no impact on existing **Service Entries**. If **Default Polling Interval** has a value other than *Disabled*, a DVE element will be created and the enabled metrics will be polled at the specified polling interval. If **Default Poll All Metrics** is *Enabled*, all available metrics will be polled by the DVE at the configured polling interval.
 

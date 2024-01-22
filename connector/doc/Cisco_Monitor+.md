@@ -24,30 +24,16 @@ Implemented data 'groups':
 
 ### Version Info
 
-| **Range** | **Description**                                                                             |
-|------------------|---------------------------------------------------------------------------------------------|
-| 1.0.0.x          | Initial version                                                                             |
-| 2.0.0.x          | Version created to be able to filter the alarms table on a different column Arquiva request |
+| Range   | Description                                                                                 |
+|---------|---------------------------------------------------------------------------------------------|
+| 1.0.0.x | Initial version                                                                             |
+| 2.0.0.x | Version created to be able to filter the alarms table on a different column Arquiva request |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Device Firmware Version</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><p>NDS Console v3.42.3-0</p>
-<p>Monitor+ v2.76.0-0</p></td>
-</tr>
-</tbody>
-</table>
+| Range   | Firmware Version                            |
+|---------|---------------------------------------------|
+| 1.0.0.x | NDS Console v3.42.3-0<br>Monitor+ v2.76.0-0 |
 
 ### Version 1.0.0.3
 
@@ -61,12 +47,12 @@ In these versions, the connector only consists of an alarm table.
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-**HTTP** **CONNECTION**:
+**HTTP CONNECTION**:
 
 - **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
 - **IP port**: The port of the destination, e.g. *80.*
 
-**HTTP** **Settings:**
+**HTTP Settings:**
 
 - **Bus address**: This field is used to bypass the proxy. By default, *bypassproxy* is filled in.
 
@@ -88,44 +74,50 @@ The tables containing the polled data are added on separate pages. The following
 
 - Process Info page:
 
-- **Process info Table**
+  - **Process info Table**
 
 - Server Connections page:
 
-- **Server Connections Table**
+  - **Server Connections Table**
 
 - Counters page:
 
-- **Counters Table**
+  - **Counters Table**
 
 - Services page:
 
-- **Services Table**
+  - **Services Table**
 
 - Service page
 
-- **Service Table**
+  - **Service Table**
 
 - Full Scrape Statistics page:
 
-- **Full Scrape Statistics Table**
+  - **Full Scrape Statistics Table**
+
   - **Assets Statistics Table**
+
   - **Traxis Connections Table**
 
 - API Details page:
 
-- **API Details Table**
+  - **API Details Table**
 
 - Last Build Statistics page
 
-- **Last Build Statistics Table**
+  - **Last Build Statistics Table**
+
   - **Compressed Database Sizes Table**
+
   - **Uncompressed Database Sizes Table**
 
 - Fixed Bitrate Info page:
 
-- **Fixed Bitrate Info Table**
+  - **Fixed Bitrate Info Table**
+
   - **Last Fixed Bitrate Statistics Table**
+
   - **Stack Bitrates Table**
 
 ### Alarms

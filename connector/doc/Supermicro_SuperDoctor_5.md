@@ -14,15 +14,21 @@ The Supermicro SuperDoctor 5 Monitoring Platform can be used to monitor the syst
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.1c                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 1.1c                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -54,7 +60,7 @@ This page displays a table listing the different **Monitor Devices** installed i
 
 A monitor device can be **Fan**, **Voltage**, **Current**, **Power**, **Temperature** or **Status**. Measurement values are shown for each device.
 
-Measurement **high limits** can be configured for **Temperature,** **Voltage, Current** and **Power** devices only. Measurement **low limits** can be configured for **Fan,** **Voltage, Power** and **Current** devices only. The **divisor** can be configured for **Fan** devices only.
+Measurement **high limits** can be configured for **Temperature, Voltage, Current** and **Power** devices only. Measurement **low limits** can be configured for **Fan, Voltage, Power** and **Current** devices only. The **divisor** can be configured for **Fan** devices only.
 
 With a toggle button, you can set the monitoring state of each device to ***Monitored*** or ***Not Monitored***.
 

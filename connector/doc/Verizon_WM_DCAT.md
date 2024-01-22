@@ -10,10 +10,10 @@ This connector is intended to handle the Verizon Circuit Acceptance (DCAT) workf
 
 ### Version Info
 
-| **Range**            | **Key Features**                                      | **Based on** | **System Impact** |
+| Range            | Key Features                                      | Based on | System Impact |
 |----------------------|-------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                                       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Updated minimum DataMiner version to 10.0.10.0 - 9454 | 1.0.0.12     | \-                |
+| 1.0.0.x [SLC Main]   | Initial version                                       | -            | -                 |
+| 1.0.1.x [SLC Main]   | Updated minimum DataMiner version to 10.0.10.0 - 9454 | 1.0.0.12     | -                 |
 
 ### Product Info
 
@@ -24,10 +24,10 @@ This connector is intended to handle the Verizon Circuit Acceptance (DCAT) workf
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                                                    | **Exported Components** |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Automation Scripts: - Verizon DCAT OnAccept - Verizon DCAT OnAcceptExecute - Verizon DCAT OnExecute - Verizon DCAT OnResult - Verizon DCAT OnScheduledExecute - Verizon DCAT OnScheduledExecuteReport Visio file: DM Tools Report template: VRZ RDS DCAT | \-                      |
-| 1.0.1.x   | No                  | Yes                     | Automation Scripts: - Verizon DCAT OnAccept - Verizon DCAT OnAcceptExecute - Verizon DCAT OnExecute - Verizon DCAT OnResult - Verizon DCAT OnScheduledExecute - Verizon DCAT OnScheduledExecuteReport Visio file: DM Tools Report template: VRZ RDS DCAT | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | Automation Scripts: <br>- Verizon DCAT OnAccept <br>- Verizon DCAT OnAcceptExecute <br>- Verizon DCAT OnExecute <br>- Verizon DCAT OnResult <br>- Verizon DCAT OnScheduledExecute <br>- Verizon DCAT OnScheduledExecuteReport <br>Visio file: <br>DM Tools <br>Report template: <br>VRZ RDS DCAT | - |
+| 1.0.1.x | No | Yes | Automation Scripts: <br>- Verizon DCAT OnAccept <br>- Verizon DCAT OnAcceptExecute <br>- Verizon DCAT OnExecute <br>- Verizon DCAT OnResult <br>- Verizon DCAT OnScheduledExecute <br>- Verizon DCAT OnScheduledExecuteReport <br>Visio file: <br>DM Tools <br>Report template: <br>VRZ RDS DCAT | - |
 
 ## Configuration
 
@@ -43,28 +43,29 @@ This connector uses a configuration page that should be set up in order to work 
 
 - Report Settings:
 
-- **DMA Endpoint**: The base URL for the generated report.
+  - **DMA Endpoint**: The base URL for the generated report.
   - **Report Endpoint**: The query parameters to append to the DMA endpoint in order to use the report template.
   - **Email List**: Semicolon-separated (;) list of email addresses where the scheduled report will be sent if this is enabled.
 
 - DCAT Settings:
 
-- **Archive Export Path**: The local path where the DCAT history and DCAT entity history will be offloaded into files.
+  - **Archive Export Path**: The local path where the DCAT history and DCAT entity history will be offloaded into files.
   - **Auto Archive**: Indicates how long the entries remain in the DCAT Live and DCAT Live History tables before they are cleaned up.
   - **Active Index Retention**: Indicates how long the entries remain in the DCAT History and DCAT Entity History tables before they are offloaded.
   - **Archive Index Retention**: Indicates how long the entries remain in the offload file before they are cleaned up.
 
 - System Credentials:
 
-- **System Username**: The system username used to perform API requests to DataMiner, used by the report template.
+  - **System Username**: The system username used to perform API requests to DataMiner, used by the report template.
   - **System Password**: The system password used to perform API requests to DataMiner, used by the report template.
 
 - Topology Import Settings
 
-- **Topology Import Path**: The path from where the topology configuration file will be imported.
+  - **Topology Import Path**: The path from where the topology configuration file will be imported.
   - **Topology Import Interval**: Indicates how often the topology configuration file will be imported.
 
-**Note**: A **Verizon Reports and Dashboards Solution** element has to be available in the DMS, and it needs to be called "RDS_01". Only then will the DCAT Tool be able to retrieve all profiles. This does not mean that no other elements using the same connector can be created, as there can be multiple RDS elements in the environment.
+> [!NOTE]
+> A **Verizon Reports and Dashboards Solution** element has to be available in the DMS, and it needs to be called "RDS_01". Only then will the DCAT Tool be able to retrieve all profiles. This does not mean that no other elements using the same connector can be created, as there can be multiple RDS elements in the environment.
 
 ### Automation Scripts
 

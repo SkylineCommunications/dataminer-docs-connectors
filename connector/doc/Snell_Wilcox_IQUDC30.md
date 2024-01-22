@@ -12,15 +12,21 @@ The connector polls all parameters once after startup. After this, parameter upd
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | V5.7.9                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | V5.7.9                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -57,7 +63,7 @@ This page displays the **Input Source**, **SDI 1 Status**, **SDI 2 Status** and 
 
 ### Output
 
-This page contains output-related parameters, such as **Output** **Format**, **Default Field Rate**, **Current Output Standard**, **SD Half Line** and more. It also contains **Caption** controls (**Entry**, **Scroll**, and **Status**).
+This page contains output-related parameters, such as **Output Format**, **Default Field Rate**, **Current Output Standard**, **SD Half Line** and more. It also contains **Caption** controls (**Entry**, **Scroll**, and **Status**).
 
 ### Video
 
@@ -85,15 +91,15 @@ This page contains a **Source** control for each process pair, and displays the 
 
 ### Audio Shuffle
 
-This page contains the **control**, **source**, and **invert** **phase** controls of each pair, left and right, and displays the **status** of each output pair.
+This page contains the **control**, **source**, and **invert phase** controls of each pair, left and right, and displays the **status** of each output pair.
 
 ### Audio Control
 
-This page contains the **gain** and **delay** controls for all 8 left and right pairs, and displays the **total** **delays** for all of the pairs. It also contains the **global** **total** **delays** for **audio** and **video**.
+This page contains the **gain** and **delay** controls for all 8 left and right pairs, and displays the **total delays** for all of the pairs. It also contains the **global total delays** for **audio** and **video**.
 
 ### Genlock
 
-This page contains the **Horizontal Timing**, **Vertical Timing**, **Timing** **Status** and **Source** **Ch1**.
+This page contains the **Horizontal Timing**, **Vertical Timing**, **Timing Status** and **Source Ch1**.
 
 ### Timecode
 

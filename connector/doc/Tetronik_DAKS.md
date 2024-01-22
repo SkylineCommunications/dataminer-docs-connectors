@@ -12,19 +12,19 @@ The Tetronik DAKS is a **fire alarm system** that sends messages and calls to a 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 2.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 2.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 2.0.0.x   | \-                     |
+| 2.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                            |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                |
 |-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------|
-| 2.0.0.x   | No                  | Yes                     | \-                    | [Tetronik DAKS - Department](xref:Connector_help_Tetronik_DAKS_-_Department) |
+| 2.0.0.x   | No                  | Yes                     | -                     | [Tetronik DAKS - Department](xref:Connector_help_Tetronik_DAKS_-_Department) |
 
 ## Configuration
 

@@ -14,8 +14,8 @@ This is a serial connector that can be used to manage the Rohde & Schwarz NRP Po
 
 | **Range**            | **Key Features**                                                              | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------------------------------------------|--------------|-------------------|
-| 3.0.0.x \[SLC Main\] | Bus address is used to select sensor. Only one sensor is displayed at a time. | \-           | \-                |
-| 3.0.1.x              | The range for parameter 2000 has been changed to 30 to 100.                   | \-           | \-                |
+| 3.0.0.x [SLC Main]   | Bus address is used to select sensor. Only one sensor is displayed at a time. | -            | -                 |
+| 3.0.1.x              | The range for parameter 2000 has been changed to 30 to 100.                   | -            | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This is a serial connector that can be used to manage the Rohde & Schwarz NRP Po
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 3.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 3.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

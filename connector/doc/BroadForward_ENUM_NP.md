@@ -12,19 +12,19 @@ The **BroadForward ENUM NP** connector uses an SNMP connection in order to recei
 
 | **Range**            | **Key Features**          | **Based on** | **System Impact** |
 |----------------------|---------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Processing of SNMP traps. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Processing of SNMP traps. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

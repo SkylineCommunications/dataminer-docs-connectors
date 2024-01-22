@@ -16,22 +16,22 @@ With this connector, you can monitor and control the Newtec AZ710 device via RMC
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.6.0.x              | Initial version  | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | SNMP connection  | \-           | \-                |
+| 1.6.0.x              | Initial version  | -            | -                 |
+| 2.0.0.x [SLC Main]   | SNMP connection  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.6.0.x   | \-                     |
+| 1.6.0.x   | -                      |
 | 2.0.0.x   | 1.56                   |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.6.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.6.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

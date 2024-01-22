@@ -12,10 +12,10 @@ It monitors a **SatService sat-nms MNC** system, but only as far as the **fiber-
 
 ### Version Info
 
-| **Range**     | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                     | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Fault State as standalone parameter. | No                  | Yes                     |
+| Range              | Description                          | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                     | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Fault State as standalone parameter. | No              | Yes                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ It monitors a **SatService sat-nms MNC** system, but only as far as the **fiber-
 
 ### Exported connectors
 
-| **Exported Connector**         | **Description**                                                               |
+| Exported Connector            | Description                                                                   |
 |-------------------------------|-------------------------------------------------------------------------------|
 | SatService sat-nms FO - Frame | Detailed frame data of linked modules (RX card, TX card, power supply units). |
 

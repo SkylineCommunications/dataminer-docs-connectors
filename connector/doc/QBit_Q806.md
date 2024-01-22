@@ -12,7 +12,7 @@ This is an SNMP connector for the **Qbit Q806 redundancy switch**. It can be use
 
 | **Range**            | **Key Features**                                        | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Important parameters can be retrieved and set via SNMP. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Important parameters can be retrieved and set via SNMP. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This is an SNMP connector for the **Qbit Q806 redundancy switch**. It can be use
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

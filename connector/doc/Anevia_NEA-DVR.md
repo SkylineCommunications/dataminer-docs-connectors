@@ -12,7 +12,7 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -63,7 +63,7 @@ The element created with this connector consists of the data pages detailed belo
 
 ### General
 
-This page contains general information about the device, such as **System Description**, **Uptime**, **Contact**, **Name**, **Location**, **API** **Version**, **Failover** **Status**, etc.
+This page contains general information about the device, such as **System Description**, **Uptime**, **Contact**, **Name**, **Location**, **API Version**, **Failover Status**, etc.
 
 It also contains a page button that opens the **Authentication** page where the **HTTP credentials** can be defined.
 

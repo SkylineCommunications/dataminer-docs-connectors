@@ -14,12 +14,13 @@ This connector allows you to collect data from the Huawei 5688-5800 CCAP Platfor
 
 | **Range**            | **Key Features**                      | **Based on** | **System Impact** |
 |----------------------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                      | \-           | \-                |
-| 1.0.1.x              | Compatibility with new EPM Solution.  | \-           | \-                |
-| 1.0.2.x              | Modifications to improve performance. | \-           | \-                |
-| 1.0.3.x              | Updated the minimum DMA version.      | \-           | \-                |
-| 1.0.4.x              | Modifications to improve performance. | \-           | \-                |
-| 1.0.5.x \[SLC Main\] | SDF implementation.                   | \-           | \-                |
+| 1.0.0.x              | Initial version.                      | -            | -                 |
+| 1.0.1.x              | Compatibility with new EPM Solution.  | -            | -                 |
+| 1.0.2.x              | Modifications to improve performance. | -            | -                 |
+| 1.0.3.x              | Updated the minimum DMA version.      | -            | -                 |
+| 1.0.4.x              | Modifications to improve performance. | -            | -                 |
+| 1.0.5.x              | SDF implementation.                   | -            | -                 |
+| 1.0.6.x [SLC Main]   | New threshold logic.                  | -            | -                 |
 
 ### Product Info
 
@@ -31,17 +32,19 @@ This connector allows you to collect data from the Huawei 5688-5800 CCAP Platfor
 | 1.0.2.x   | 0141                   |
 | 1.0.4.x   | 0141                   |
 | 1.0.5.x   | 0141                   |
+| 1.0.6.x   | 0141                   |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

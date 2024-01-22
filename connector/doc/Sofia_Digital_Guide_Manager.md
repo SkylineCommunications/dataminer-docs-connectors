@@ -4,23 +4,29 @@ uid: Connector_help_Sofia_Digital_Guide_Manager
 
 # Sofia Digital Guide Manager
 
-With this connector, you can monitor the Sofia Digital Guide Manager and view events and informations about the available serversand channels.
+With this connector, you can monitor the Sofia Digital Guide Manager and view events and information about the available servers and channels.
 
 ## About
 
-This connector uses **SNMP** in order to monitor a Sofia Digital Guide Manager. The **SNMP** is used to retrieve system specific informations.
+This connector uses **SNMP** in order to monitor a Sofia Digital Guide Manager. The **SNMP** is used to retrieve system-specific information.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 3.16.7                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 3.16.7                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -40,19 +46,19 @@ SNMP Settings:
 
 ## Usage
 
-General Page
+### General Page
 
 This page displays general information regarding the Sofia Digital Management. Examples are **Version**, **Description** and **Contact**.
 
-Server
+### Server
 
 This page displays all information of the servers. Examples are **Name**, **Status** and **Type**.
 
-Channels
+### Channels
 
 This page displays all information of the channels. Examples are **Name**, **Status**, **Code** and **Update**.
 
-Webinterface
+### Web Interface
 
 This page displays the web interface of the device, from where it is possible to perform other actions.
 

@@ -33,12 +33,15 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Direct connection:
+
   - **Baudrate**: Baudrate specified in the manual of the device.
   - **Databits**: Databits specified in the manual of the device.
   - **Stopbits**: Stopbits specified in the manual of the device.
   - **Parity**: Parity specified in the manual of the device.
   - **FlowControl**: FlowControl specified in the manual of the device.
+
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device.
@@ -47,7 +50,7 @@ SERIAL CONNECTION:
 
 ### General
 
-This page contains some general parameters of the **Control Panel**, such as the **Serial Number**, **Shroud Temperature** and the two **Power Supply** **Voltages**.
+This page contains some general parameters of the **Control Panel**, such as the **Serial Number**, **Shroud Temperature** and the two **Power Supply Voltages**.
 
 In addition, the page contains the **Reset Main Control Board button**, the **Switches Alarm** and the **Connection Status**, as well as the **Redundancy Status** and **Mode**.
 

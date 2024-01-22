@@ -14,21 +14,27 @@ The different measurements can be executed according to the round-robin principl
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V45761.14e                  |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | V45761.14e             |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
-#### SNMP main connection
+## Configuration
+
+### Connections
+
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -83,15 +89,19 @@ When the import has succeeded, the value of the **Last Import** field changes to
 
 Below, you can find an example of the structure of the .csv file that can be used from version 1.0.0.19 onwards. Note that the header line is fixed and each line has 4 columns. A semicolon (";") delimiter is used. Values for frequency use a decimal point ( . ).
 
-> Measurement Name;Type;Frequency;Sound Type
->
-> VRT Radio 1;FM;88.5;Comedy Central;TV ANA;133.25;NICDisney Channel Vl;TV ANA;280.25;STEREO
+```txt
+Measurement Name;Type;Frequency;Sound Type
+
+VRT Radio 1;FM;88.5;
+Comedy Central;TV ANA;133.25;NIC
+Disney Channel Vl;TV ANA;280.25;STEREO
+```
 
 ### Measurement Type pages
 
 These pages contain a table with the additional settings that can be done for each measurement, and a table with the measurement results. Each page has three subpages containing the aforementioned tables.
 
-To initialize a measurement, fill in the mandatory values in the **Measurement** **Status** table. The results of the measurement are also displayed in this table.
+To initialize a measurement, fill in the mandatory values in the **Measurement Status** table. The results of the measurement are also displayed in this table.
 
 ### Firmware Upgrade
 
