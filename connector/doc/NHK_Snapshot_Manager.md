@@ -50,7 +50,7 @@ Actions within Debug Elements Management table:
 
 ### Debug Connectors
 
-This page displays the Debug Connectors Management table, which contains the Debug connectors uploaded via the Protocol Debug Tools application. These connectors will be used to create Debug Elements. When uploading a debug connector using Protocol Debug Tools, make sure to append '-debug' and select 'Remove Sequence' ('Remove Sequence' option is available from version 1.0.0.6).
+This page displays the Debug Connectors Management table, which contains the Debug connectors uploaded via the Protocol Debug Tools application. These connectors will be used to create Debug Elements. When uploading a debug Connector using Protocol Debug Tools, make sure to append '-debug' and select 'Remove Sequence' ('Remove Sequence' option is available from version 1.0.0.6).
 
 Actions within Debug Elements Management table:
 **Delete Debug Protocol Version**: Deletes the created Debug Protocol version.
