@@ -4,7 +4,7 @@ uid: Connector_help_NHK_Snapshot_Manager
 
 # NHK Snapshot Manager
 
-The **NHK Snapshot Manager** is a virtual connector designed to take snapshots of elements and create Debug Elements using created Snapshots and Debug Connectors. NHK_CreateSnapshots and NHK_CreateDebugElements Automation Scripts are required in order to create Snapshots and Debug Elements. Debug connectors are created using Protocol Debug Tools
+The **NHK Snapshot Manager** is a virtual connector designed to take snapshots of elements and create Debug Elements using created Snapshots and Debug Connectors. NHK_CreateSnapshots and NHK_CreateDebugElements Automation Scripts are required in order to create Snapshots and Debug Elements. Debug Connectors are created using Protocol Debug Tools
 
 ## About
 
@@ -52,5 +52,5 @@ Actions within Debug Elements Management table:
 
 This page displays the Debug Connectors Management table, which contains the Debug connectors uploaded via the Protocol Debug Tools application. These connectors will be used to create Debug Elements. When uploading a debug Connector using Protocol Debug Tools, make sure to append '-debug' and select 'Remove Sequence' ('Remove Sequence' option is available from version 1.0.0.6).
 
-Actions within Debug Elements Management table:
+Actions within Debug Connectors Management table:
 **Delete Debug Protocol Version**: Deletes the created Debug Protocol version.
