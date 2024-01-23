@@ -2430,6 +2430,8 @@
     topicUid: Connector_help_CPI_KHPA_Gen_IV_Series
   - name: CPI KHPA Gen IV Series Binary Version
     topicUid: Connector_help_CPI_KHPA_Gen_IV_Series_Binary_Version
+  - name: CPI KHPA Gen IV Series MITEC Controller Version
+    topicUid: Connector_help_CPI_KHPA_Gen_IV_Series_MITEC_Controller_Version
   - name: CPI SSCI
     topicUid: Connector_help_CPI_SSCI
   - name: CPI SSPA S5CI
@@ -4205,6 +4207,11 @@
     topicUid: Connector_help_Globecast_GCMCN_Platform
   - name: Globecast MADY Platform
     topicUid: Connector_help_Globecast_MADY_Platform
+- name: Globecast France
+  topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
+  items:
+  - name: Globecast France Enhanced DTM Channel Service
+    topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
 - name: Globecomm
   topicUid: Connector_help_Globecomm_iDirect_Shore_Side_Server
   items:

@@ -34,7 +34,7 @@ The following default protocols and parameters need to be included:
 
 ### Initialization
 
-No extra configurations are needed.
+No extra configuration is needed.
 
 ### Redundancy
 
