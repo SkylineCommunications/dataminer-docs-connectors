@@ -4,9 +4,9 @@ uid: Connector_help_CPI_KHPA_Gen_IV_Series_MITEC_Controller_Version
 
 # CPI KHPA Gen IV Series MITEC Controller Version
 
-The CPI KHPA Gen IV Series MITEC Controller Version connector uses a **serial** connection to communicate with the CPI KHPA Gen IV amplifier and monitor it through a MITEC Controller.
+The CPI KHPA Gen IV Series MITEC Controller Version connector uses a **serial** connection to communicate with the CPI KHPA Gen IV amplifier and monitor it through a MITEC controller.
 
-This connector is designed to communicate with the MITEC Controller via a terminal server proxy (serial to Ethernet (IP) converter).
+This connector is designed to communicate with the MITEC controller via a terminal server proxy (serial-to-Ethernet (IP) converter).
 
 ## About
 
@@ -44,8 +44,6 @@ SERIAL CONNECTION:
 
 ## How to Use
 
-The element created with this connector will display data on the following pages:
-
 ### General
 
 This page displays general status information about the device.
@@ -73,4 +71,4 @@ This connector currently only supports the following:
 - Printable ASCII as header and ending bytes. STX/ETX not yet supported.
 - Checksum as check byte. Longitudinal parity not yet supported.
 
-The parameter "RF Limits" does not represent the actual value because it is not possible to retrieve this from the device. The value is determined by the last RF Limits set command executed by a DataMiner user.
+The parameter "RF Limits" does not represent the actual value, because it is not possible to retrieve this from the device. The value is determined by the last RF Limits set command executed by a DataMiner user.
