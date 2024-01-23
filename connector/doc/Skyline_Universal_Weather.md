@@ -17,7 +17,7 @@ This connector uses an HTTPS connection to communicate with the selected API. Th
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x [Obsolete] | Implemented support for Unicode languages like Cyrillic script, Chinese, Arabic, etc. | 1.0.0.4 | All existing data will be lost. The element needs to be recreated. |
 | 1.0.2.x [Obsolete] | Migrated element communication to InterApp to handle ad hoc requests. | 1.0.1.7 | The Weather API DLL (NuGet) needs to be deployed. Class Library DLLs version 1.2.2.4 or higher need to be deployed. |
-| 1.0.3.x [SLC Main] | - Partial option added to tables 100, 300, 1000, and 1100. <br>- WeatherApi and InterApp libraries updated. | 1.0.2.3 | The tables now have multiple pages. |
+| 1.0.3.x [SLC Main] | - Partial option added to tables 100, 300, 1000, and 1100. <br>- WeatherApi and InterApp libraries updated. <br>- Windy API endpoint integrated | 1.0.2.3 | The tables now have multiple pages. |
 | 1.0.4.x | Windy Api added. | 1.0.3.1 | The connector now polls the Windy API as well as the weather API of the user's choice. |
 
 ### Product Info
@@ -27,7 +27,7 @@ This connector uses an HTTPS connection to communicate with the selected API. Th
 | 1.0.0.x   | Dark Sky                                                                                    |
 | 1.0.1.x   | OpenWeather OneCall                                                                         |
 | 1.0.2.x   | Dark Sky, OpenWeather OneCall                                                               |
-| 1.0.3.x   | Dark Sky, OpenWeather OneCall 2.5, and OpenWeather OneCall 3.0                              |
+| 1.0.3.x   | Dark Sky, OpenWeather OneCall 2.5, OpenWeather OneCall 3.0, and Windy point-forecast API v4 |
 | 1.0.4.x   | Dark Sky, OpenWeather OneCall 2.5, OpenWeather OneCall 3.0, and Windy point-forecast API v4 |
 
 ### System Info
@@ -95,7 +95,7 @@ This page contains the information that is retrieved **from the API for each loc
 
 This page also contains a page button that opens the Locations subpage, where locations can be configured.
 
-#### Windy API Forecast Tables (Range 1.0.4.x)
+#### Windy API Forecast Tables (Range 1.0.3.x and 1.0.4.x)
 
 This page contains forecast information retrieved from the Windy Point-Forecast API. It contains the following parameters:
 
@@ -175,6 +175,25 @@ This subpage contains parameters that allow you to configure the communication w
 - **Max Number of Request (24 Hours)**: The maximum number of calls that can be made to the API.
 
   Note: **1000 calls daily are free**, but there will be charges after the initial 1000.
+  
+#### Windy (Range 1.0.3.x)
+
+This subpage contains parameters to configure the communication with the **Windy Point-Forecast API v4**.
+
+- **Windy API Key**: The Point-Forecast API key that is used to obtain forecast information from the Windy API.
+
+- **Windy Max Number of Request (24 Hours)**: The maximum number of calls that can be made to the API each day. Configure this based on your account to avoid incurring unnecessary charges.
+
+- **Windy Forecast Model**: The forecast model that will be used to obtain information. The following models are currently supported:
+
+  - *arome*: Covers France and surrounding areas.
+  - *iconEu*: Covers Europe and surrounding areas.
+  - *gfs*: Global model.
+  - *namConus*: Covers the USA and surrounding areas (Canada, Mexico).
+  - *namHawaii*: Covers Hawaii.
+  - *namAlaska*: Covers Alaska and surrounding areas.
+
+More details of the Windy API can be found [here](https://api.windy.com/point-forecast/docs).
 
 #### Windy (Range 1.0.4.x)
 
