@@ -3417,6 +3417,10 @@
     topicUid: Connector_help_Evertz_7800PA-10GE2
   - name: Evertz 7800R2x2-ACS-3G
     topicUid: Connector_help_Evertz_7800R2x2-ACS-3G
+  - name: Evertz 7800R4x4-RF
+    topicUid: Connector_help_Evertz_7800R4x4-RF
+  - name: Evertz 7800R4x4-RFI
+    topicUid: Connector_help_Evertz_7800R4x4-RFI
   - name: Evertz 7800R4x8-ACS-3G
     topicUid: Connector_help_Evertz_7800R4x8-ACS-3G
   - name: Evertz 7800SW-GE
