@@ -7156,6 +7156,8 @@
     topicUid: Connector_help_Qbit_Q565
   - name: QBit Q806
     topicUid: Connector_help_QBit_Q806
+  - name: Qbit Q820
+    topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
 - name: Qligent
