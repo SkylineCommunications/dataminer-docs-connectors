@@ -16,8 +16,8 @@ This connector allows you to manage the Evertz 7800R4x4-RFI card. It communicate
 
 ### Product Info
 
-| Range     | Supported Firmware           |
-|-----------|------------------------------|
+| Range     | Supported Firmware |
+|-----------|--------------------|
 | 1.0.0.x   | VLProProd_R4X4-RFI |
 
 ### System Info
@@ -47,7 +47,8 @@ SNMP Settings:
 
 ## How to Use
 
-This connector uses SNMP to retrieve information from the card. It displays the information on the pages and allows you to perform changes to it.
-It also contains a matrix, that shows routing between the input and the output. By clicking in the crosspoint, the user can enable/disable the correspondent crosspoint.
+This connector uses SNMP to retrieve information from the card. It displays the information on the pages and allows you to perform changes to parameters.
 
-The Debugging page can be enabled to view all snmp tables that are being polled, by default it should be disabled.
+The element also contains a matrix, which shows the routing between the input and the output. By clicking a crosspoint, you can enable or disable that crosspoint.
+
+To view all SNMP tables that are being polled, you can enable the Debugging page. By default, this page is disabled.

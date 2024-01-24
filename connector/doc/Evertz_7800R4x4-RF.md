@@ -16,9 +16,9 @@ This connector allows you to manage the Evertz 7800R4x4-RF card. It communicates
 
 ### Product Info
 
-| Range     | Supported Firmware           |
-|-----------|------------------------------|
-| 1.0.0.x   | VLProProd_R4X4-RF |
+| Range     | Supported Firmware |
+|-----------|--------------------|
+| 1.0.0.x   | VLProProd_R4X4-RF  |
 
 ### System Info
 
@@ -47,6 +47,6 @@ SNMP Settings:
 
 ## How to Use
 
-This connector uses SNMP to retrieve information from the card. It displays the information on the pages and allows you to perform changes to it.
+This connector uses SNMP to retrieve information from the card. It displays the information on the pages and allows you to perform changes to parameters.
 
-The Debugging page can be enabled to view all snmp tables that are being polled, by default it should be disabled.
+To view all SNMP tables that are being polled, you can enable the Debugging page. By default, this page is disabled.
