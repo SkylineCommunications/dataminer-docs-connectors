@@ -6583,6 +6583,8 @@
     topicUid: Connector_help_NHK_Generic_DCF
   - name: NHK Remote Production Manager
     topicUid: Connector_help_NHK_Remote_Production_Manager
+  - name: NHK Snapshot Manager
+    topicUid: Connector_help_NHK_Snapshot_Manager
 - name: Nokia
   topicUid: Connector_help_Nokia_Altiplano_Collector
   items:
