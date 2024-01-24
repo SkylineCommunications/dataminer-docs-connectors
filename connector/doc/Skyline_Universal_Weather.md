@@ -175,7 +175,7 @@ This subpage contains parameters that allow you to configure the communication w
 - **Max Number of Request (24 Hours)**: The maximum number of calls that can be made to the API.
 
   Note: **1000 calls daily are free**, but there will be charges after the initial 1000.
-  
+
 #### Windy (Range 1.0.3.x)
 
 This subpage contains parameters to configure the communication with the **Windy Point-Forecast API v4**.
@@ -193,7 +193,7 @@ This subpage contains parameters to configure the communication with the **Windy
   - *namHawaii*: Covers Hawaii.
   - *namAlaska*: Covers Alaska and surrounding areas.
 
-More details of the Windy API can be found [here](https://api.windy.com/point-forecast/docs).
+For more information about the Windy API, see [Point Forecast API](https://api.windy.com/point-forecast/docs).
 
 #### Windy (Range 1.0.4.x)
 
