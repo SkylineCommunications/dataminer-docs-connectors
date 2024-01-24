@@ -88,21 +88,23 @@ After the collector element is created, all configuration should be done via the
 
 ### Thresholds Tables
 
-The thresholds tables allows the user to define limits for each polled modulation. Driver contains two threhsolds tables (Upstream and Downstream). 
+In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available, one for upstream and one for downstream.
 
-The available Key Performance Indicators (KPIs) for setting upstream thresholds are:
-  - **Minimum Tx Power Level**: Range from 32 to 55 dBmV.
-  - **Maximum Tx Power Level**: Range from 32 to 55 dBmV.
+These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
 
-  The available Key Performance Indicators (KPIs) for setting downstream thresholds are:
-  - **Minimum Rx Power Level**: Range from -16 to 16 dBmV.
-  - **Maximum Rx Power Level**: Range from -16 to 16 dBmV.
-  - **Minimum SNR Level**: Range from 0 to 100 dB.
-  - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+- **Minimum Tx Power Level**: Range from 32 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 32 to 55 dBmV.
 
-When the *Apply* button is clicked, the status of the specified Key Performance Indicators (KPIs) on the CM table will be updated.
+These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
 
-For the Rx and Tx value thresholds, the minimum value cannot exceed the maximum boundary; attempting to set such values will be restricted by the driver.
+- **Minimum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Minimum SNR Level**: Range from 0 to 100 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+
+The minimum value for the Rx and Tx thresholds cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
 
 ## Usage
 
