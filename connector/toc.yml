@@ -5526,6 +5526,11 @@
     topicUid: Connector_help_Mediaproxy_Logserver
   - name: Mediaproxy Player
     topicUid: Connector_help_Mediaproxy_Player
+- name: MegaTec
+  topicUid: Connector_help_Megatec_NetAgent9
+  items:
+  - name: MegaTec NetAgent9
+    topicUid: Connector_help_Megatec_NetAgent9
 - name: Meinberg
   topicUid: Connector_help_Meinberg_Element_Manager
   items:
