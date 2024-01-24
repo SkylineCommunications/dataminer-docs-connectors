@@ -8334,6 +8334,8 @@
     topicUid: Connector_help_Snell_Wilcox_HCO51_RollCall
   - name: Snell Wilcox IQADA00
     topicUid: Connector_help_Snell_Wilcox_IQADA00
+  - name: Snell Wilcox IQADA01
+    topicUid: Connector_help_Snell_Wilcox_IQADA01
   - name: Snell Wilcox IQAES00
     topicUid: Connector_help_Snell_Wilcox_IQAES00
   - name: Snell Wilcox IQAVDR
@@ -8412,6 +8414,8 @@
     topicUid: Connector_help_Snell_Wilcox_IQUPC00
   - name: Snell Wilcox IQVDA00
     topicUid: Connector_help_Snell_Wilcox_IQVDA00
+  - name: Snell Wilcox IQVDA01
+    topicUid: Connector_help_Snell_Wilcox_IQVDA01
   - name: Snell Wilcox KudosPro
     topicUid: Connector_help_Snell_Wilcox_KudosPro
   - name: Snell Wilcox KudosPro Frame
