@@ -1757,6 +1757,8 @@
     topicUid: Connector_help_British_Telecom_Blackout_Schedule
   - name: British Telecom CMON
     topicUid: Connector_help_British_Telecom_CMON
+  - name: British Telecom Encoder Resource Manager
+    topicUid: Connector_help_British_Telecom_Encoder_Resource_Manager
   - name: British Telecom Global Site Load Balancer
     topicUid: Connector_help_British_Telecom_Global_Site_Load_Balancer
   - name: British Telecom GNMS
