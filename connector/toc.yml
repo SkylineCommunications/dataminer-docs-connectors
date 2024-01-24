@@ -7266,6 +7266,8 @@
   items:
   - name: Red Bee Media UK Stargate
     topicUid: Connector_help_Red_Bee_Media_UK_Stargate
+  - name: Red Bee Media UK Virtual Desk Manager
+    topicUid: Connector_help_Red_Bee_Media_UK_Virtual_Desk_Manager
 - name: Red Hat Enterprise
   topicUid: Connector_help_Red_Hat_Enterprise_Cluster_Suite
   items:
