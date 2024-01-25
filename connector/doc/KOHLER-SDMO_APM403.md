@@ -49,7 +49,7 @@ SNMP Settings:
 
 ### Initialization
 
-No extra configurations are needed.
+No extra configuration is needed.
 
 ### Redundancy
 
@@ -75,4 +75,4 @@ This page displays the value of the I/O parameters including the **Input** and *
 
 ## Statistics
 
-In this page it is possible to check some statistical data about the device**.**
+In this page it is possible to check some statistical data about the device.

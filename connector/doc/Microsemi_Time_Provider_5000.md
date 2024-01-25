@@ -64,4 +64,4 @@ This page presents information regarding the **GPS Position** and **Satellite Ve
 
 ### Status
 
-This page displays information about the **System** and the **Craft** parameters. Additionally, it also has four subpages with **LED** information, the **status of Hardware**, the **PTP** **(Precision Time Protocol)** status and the **I/O** status**.**
+This page displays information about the **System** and the **Craft** parameters. Additionally, it also has four subpages with **LED** information, the **status of Hardware**, the **PTP** **(Precision Time Protocol)** status and the **I/O** status.

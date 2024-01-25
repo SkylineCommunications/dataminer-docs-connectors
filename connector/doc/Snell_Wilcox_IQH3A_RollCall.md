@@ -12,15 +12,21 @@ This connector is an application-specific protocol for control and operation of 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 5.30.21                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 5.30.21                |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -46,7 +52,7 @@ This page contains the **Display** parameter, as well as parameters of the outpu
 
 ### Setup Page
 
-This page contains information about the chassis, e.g. **Product**, **Software** **Version**, **Build**. Buttons allow you to restart the device (**Restart**), to **En**able**/Disable** the module, or to save and clear memory.
+This page contains information about the chassis, e.g. **Product**, **Software Version**, **Build**. Buttons allow you to restart the device (**Restart**), to **En**able**/Disable** the module, or to save and clear memory.
 
 Finally, you can also name the different inputs.
 
@@ -80,11 +86,11 @@ This page provides information for each slot, such as **Slot Name**, **Installed
 
 ### Control (1-8) Page
 
-This page provides an overview of **S**lot** settings** related to Slots 1-8.
+This page provides an overview of **Slot settings** related to Slots 1-8.
 
 ### Control (9-16) Page
 
-This page provides an overview of **S**lot** settings** related to Slots 9-16.
+This page provides an overview of **Slot settings** related to Slots 9-16.
 
 ### Gateway Page
 

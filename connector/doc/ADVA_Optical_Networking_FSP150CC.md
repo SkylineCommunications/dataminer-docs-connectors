@@ -67,7 +67,7 @@ SNMP Settings:
 
 ### General
 
-This page displays the following general information: **System Name, System Description, System Location, System Contact, CLI Prefix,** **System Up Time** and **Polling IP**.
+This page displays the following general information: **System Name, System Description, System Location, System Contact, CLI Prefix, System Up Time** and **Polling IP**.
 
 In addition, it also displays the status of the following parameters: **CLI Security Prompt, FTP, HTTP, HTTPS, SCP, Serial Port, Serial Port Auto Log Off, SFTP, TFTP, SSH** and **Telnet**.
 
@@ -144,7 +144,7 @@ This page displays the **FlowPoint Statistics History** table, with history data
 
 ### FlowPoint QoS Shaper
 
-This page displays the **FlowPoint QoS Shaper** **Statistics** table. These statistics include **Bytes Transmitted**, **Bytes Tail Dropped**, **Frames Dequeued**, **Frames Tail Dropped**, **Average Bit Rate Limited, Bytes** and **Frames** **Random Early Discarded Dropped**
+This page displays the **FlowPoint QoS Shaper Statistics** table. These statistics include **Bytes Transmitted**, **Bytes Tail Dropped**, **Frames Dequeued**, **Frames Tail Dropped**, **Average Bit Rate Limited, Bytes** and **Frames Random Early Discarded Dropped**
 
 ### FlowPoint QoS Shaper History
 
@@ -160,7 +160,7 @@ This page displays the **FlowPoint QoS Policer Statistics History** table, with 
 
 ### Power Supply Unit
 
-This page displays the **Power Supply Units** table, which monitors the **PSU Type**, **Operational** and **Secondary** **State**, **Output Voltage** and **Current**, and **Temperature.** It also allows you to configure the **Administrative State**, **Storage Type** and **PSU Status**.
+This page displays the **Power Supply Units** table, which monitors the **PSU Type**, **Operational** and **Secondary State**, **Output Voltage** and **Current**, and **Temperature.** It also allows you to configure the **Administrative State**, **Storage Type** and **PSU Status**.
 
 ### Fan
 
@@ -187,7 +187,7 @@ This page displays the time zone parameters for the device. This includes the **
 
 ### Target Addresses
 
-This page displays the IP where traps are sent, along with information related to this. It contains the **Target Addresses** table, which displays the **Transport Address**, **Domain**, **Timeout** **Time**, and **Retry Count**.
+This page displays the IP where traps are sent, along with information related to this. It contains the **Target Addresses** table, which displays the **Transport Address**, **Domain**, **Timeout Time**, and **Retry Count**.
 
 ### NTP
 
@@ -237,7 +237,7 @@ This page displays the **Flow Statistics** table. These statistics include multi
 
 ### Flow Statistics History
 
-This page displays the **Flow Statistics** **History** table, with the history data of the **Flow Statistics** table.
+This page displays the **Flow Statistics History** table, with the history data of the **Flow Statistics** table.
 
 ### Web Interface
 

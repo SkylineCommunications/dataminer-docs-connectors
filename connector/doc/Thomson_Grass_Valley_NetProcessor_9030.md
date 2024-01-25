@@ -12,14 +12,14 @@ The connector is intended to be compatible with the NetProcessor 9030 and NetPro
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-| 2.0.0.x          | New firmware    | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | Yes                 |
+| 2.0.0.x | New firmware    | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
+| Range            | Supported Firmware Version  |
 |------------------|-----------------------------|
 | 2.0.0.x          | 04.21.009 CG                |
 
@@ -76,7 +76,7 @@ The following settings can be configured:
 
 - **Service Alarm Cleanup Method:** The method that is used to determine when cleanup is needed.
 
-- *Row Count*: Cleanup will start when the number of alarms in the table is greater than the **Max Service Alarms.**
+  - *Row Count*: Cleanup will start when the number of alarms in the table is greater than the **Max Service Alarms.**
   - *Alarm Age*: An alarm will be removed when it is older than the **Max Service Alarms Age.**
   - *Combo*: Both of the above methods will be used to automatically clean the service alarm table.
 
@@ -86,7 +86,8 @@ The following settings can be configured:
 
 - **Service Alarm Cleanup Amount**: The number of alarms that will be removed at once (only with *Row Count* or *Combo*).
 
-Note**:** If cleared alarms are ***hidden***, there will be no automatic cleanup.
+> [!NOTE]
+> If cleared alarms are **hidden**, there will be no automatic cleanup.
 
 ### Events
 

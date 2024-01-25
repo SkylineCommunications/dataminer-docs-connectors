@@ -12,9 +12,21 @@ This virtual connector is responsible for collecting **DSL (DataMiner Structured
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -43,15 +55,15 @@ Note:
 #### Network Configuration
 
 - **Domain**: e.g. "SKYLINE2"
-- **User** **Name**: e.g. "Admin"
+- **User Name**: e.g. "Admin"
 - **Password**: e.g. "\*\*\*\*"
 
 #### DB Configuration
 
-- **DB** **Name**: e.g. "IAM"
-- **Server** **Name**: e.g. "localhost"
-- **DB** **User** **Name**: e.g. "root"
-- **DB** **Password**: e.g. ""
+- **DB Name**: e.g. "IAM"
+- **Server Name**: e.g. "localhost"
+- **DB User Name**: e.g. "root"
+- **DB Password**: e.g. ""
 
 To decrease the fetch time of the queries, you can increase the innodb_buffer_pool_size in the *my.ini* configuration file. The larger this is set, the less disk I/O is needed to access data in tables. On a dedicated database server, you can set this parameter to up to 80% of the machine physical memory size. However, be careful not to set it too large, because competition of the physical memory may cause paging in the operating system. Note that on 32-bit systems you may be limited to 2-3.5 G of user level memory per process, so do not set it too high.
 
@@ -59,7 +71,7 @@ To decrease the fetch time of the queries, you can increase the innodb_buffer_po
 
 ### General Page
 
-The provisioning of the DataMiner system is done on a scheduled basis. You can also trigger it manually by checking the DM IAM DB element system (**Check DSL files button**) for available updates. The current status of the DM IAM DB element is displayed by the **DM IAM DB Status** (*Available*, *Busy*, *Error* or *Normal*) parameter. You can also find information related to the data status (*Normal* or *Invalid*) here, as well parameters related to the last sync, such as **Time Start**, **Time** **Finished** and **Time** **Duration**.
+The provisioning of the DataMiner system is done on a scheduled basis. You can also trigger it manually by checking the DM IAM DB element system (**Check DSL files button**) for available updates. The current status of the DM IAM DB element is displayed by the **DM IAM DB Status** (*Available*, *Busy*, *Error* or *Normal*) parameter. You can also find information related to the data status (*Normal* or *Invalid*) here, as well parameters related to the last sync, such as **Time Start**, **Time Finished** and **Time Duration**.
 
 Finally, two extra parameters are displayed: **Total Number of DSL Files**, displaying the number of DSL files present in the *C:\Skyline_data\IAM\To Be Processed* folder, and **Current List of DSL Files**, displaying a list of the DSL files in the *To Be Processed* folder.
 

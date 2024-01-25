@@ -4,23 +4,29 @@ uid: Connector_help_Tandberg_MX5210
 
 # Tandberg MX5210
 
-The Tandberg MX5210 protocol is a compact and cost-effective DVB remultiplexer.
+The Tandberg MX5210 is a compact and cost-effective DVB remultiplexer.
+
+This is an **SNMP** connector that is used to display the status of the different parameters of a Tandberg MX5210.
 
 ## About
 
-This is an **SNMP** connector that is used to display the status of the different parameters of a **Tandberg MX5210**.
-
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x          | Initial version | Yes                 | true                    |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.0.x          | Mib Version 1               |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Mib Version 1          |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -60,7 +66,7 @@ This page displays information about **Ports**, such as the **Port Type**, **Por
 
 This page contains two tables, one for the **Transport Stream Input** and the other for the **Transport Stream Output.**
 
-- The input table shows the **Input** **Total Bitrate**, **Packet Length**, **Effective Bitrate**, **Module Mode**, etc.
+- The input table shows the **Input Total Bitrate**, **Packet Length**, **Effective Bitrate**, **Module Mode**, etc.
 - The output table shows the **Output Bitrate**, **Output Packet Length**, **External Clock**, **Output Interface**, **Backplane**, **Effective Bitrate**, etc.
 
 ### Streamer Module

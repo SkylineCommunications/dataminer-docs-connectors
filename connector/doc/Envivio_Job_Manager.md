@@ -82,7 +82,7 @@ Depending on the configuration of the resource elements itself, see **Notes** fo
 
 # Notes
 
-Supported resources are **Envivio Halo** using the *Envivio Halo* and **Envivio Muse** using the *Envivio 4Caster C4* protocol**.**
+Supported resources are **Envivio Halo** using the *Envivio Halo* and **Envivio Muse** using the *Envivio 4Caster C4* protocol.
 
 The **Envivio Muse** can be configured in redundancy. In this case the virtual redundant Element will be used as resource. This way the current active, main or backup, will be used on job execution.
 

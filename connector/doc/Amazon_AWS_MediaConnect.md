@@ -80,7 +80,7 @@ The element created with this connector consists of the following data pages:
   > [!NOTE]
   > While a flow is in transition (starting/stopping), metrics for that flow will not be polled.
 
-  The **Polling Status** parameter allows you to configure if additional information about the flow should be retrieved. If this parameter is enabled, the connector will schedule a request to retrieve the flow description with information about **Sources** and **Outputs**, and it will also schedule to retrieve **Flow** and **Source** **Metrics.** The parameter **Polling Frequency** allows you to determine how often this operation should be scheduled per flow. The parameter **Last Polled** shows when additional information was last requested for a flow.
+  The **Polling Status** parameter allows you to configure if additional information about the flow should be retrieved. If this parameter is enabled, the connector will schedule a request to retrieve the flow description with information about **Sources** and **Outputs**, and it will also schedule to retrieve **Flow** and **Source Metrics.** The parameter **Polling Frequency** allows you to determine how often this operation should be scheduled per flow. The parameter **Last Polled** shows when additional information was last requested for a flow.
 
 - **Sources**: Contains the **Sources** table, which is linked to the **Flows** table. It contains source-related information such as the **Protocol**, **Ingest Port**, **Max Bitrate**, **Max Latency**, **Whitelist CIDR**, and **Ingest IP**.
 

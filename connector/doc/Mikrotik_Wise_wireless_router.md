@@ -10,15 +10,21 @@ This connector can be used to display and monitor information about the Mikrotik
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | False                   |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 4.17                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 4.17                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -44,7 +50,7 @@ SNMP Settings:
 
 This page displays general information about the system, such as the System Name, System Description, Temperature, Processor Load, etc.
 
-The Software page button displays a page with information about Software licence and version running on the router.
+The Software page button displays a page with information about Software license and version running on the router.
 
 The System Health page button displays system power supply, fan status and CPU temperature.
 

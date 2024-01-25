@@ -1702,8 +1702,10 @@
   - name: Blackmagic Design Videohub
     topicUid: Connector_help_Blackmagic_Design_Videohub
 - name: Blankom
-  topicUid: Connector_help_Blankom_HCB-200
+  topicUid: Connector_help_Blankom_B-Nova
   items:
+  - name: Blankom B-Nova
+    topicUid: Connector_help_Blankom_B-Nova
   - name: Blankom HCB-200
     topicUid: Connector_help_Blankom_HCB-200
 - name: Blue Coat
@@ -1755,6 +1757,8 @@
     topicUid: Connector_help_British_Telecom_Blackout_Schedule
   - name: British Telecom CMON
     topicUid: Connector_help_British_Telecom_CMON
+  - name: British Telecom Encoder Resource Manager
+    topicUid: Connector_help_British_Telecom_Encoder_Resource_Manager
   - name: British Telecom Global Site Load Balancer
     topicUid: Connector_help_British_Telecom_Global_Site_Load_Balancer
   - name: British Telecom GNMS
@@ -2428,6 +2432,8 @@
     topicUid: Connector_help_CPI_KHPA_Gen_IV_Series
   - name: CPI KHPA Gen IV Series Binary Version
     topicUid: Connector_help_CPI_KHPA_Gen_IV_Series_Binary_Version
+  - name: CPI KHPA Gen IV Series MITEC Controller Version
+    topicUid: Connector_help_CPI_KHPA_Gen_IV_Series_MITEC_Controller_Version
   - name: CPI SSCI
     topicUid: Connector_help_CPI_SSCI
   - name: CPI SSPA S5CI
@@ -3413,6 +3419,10 @@
     topicUid: Connector_help_Evertz_7800PA-10GE2
   - name: Evertz 7800R2x2-ACS-3G
     topicUid: Connector_help_Evertz_7800R2x2-ACS-3G
+  - name: Evertz 7800R4x4-RF
+    topicUid: Connector_help_Evertz_7800R4x4-RF
+  - name: Evertz 7800R4x4-RFI
+    topicUid: Connector_help_Evertz_7800R4x4-RFI
   - name: Evertz 7800R4x8-ACS-3G
     topicUid: Connector_help_Evertz_7800R4x8-ACS-3G
   - name: Evertz 7800SW-GE
@@ -4203,6 +4213,11 @@
     topicUid: Connector_help_Globecast_GCMCN_Platform
   - name: Globecast MADY Platform
     topicUid: Connector_help_Globecast_MADY_Platform
+- name: Globecast France
+  topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
+  items:
+  - name: Globecast France Enhanced DTM Channel Service
+    topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
 - name: Globecomm
   topicUid: Connector_help_Globecomm_iDirect_Shore_Side_Server
   items:
@@ -5526,6 +5541,11 @@
     topicUid: Connector_help_Mediaproxy_Logserver
   - name: Mediaproxy Player
     topicUid: Connector_help_Mediaproxy_Player
+- name: MegaTec
+  topicUid: Connector_help_Megatec_NetAgent9
+  items:
+  - name: MegaTec NetAgent9
+    topicUid: Connector_help_Megatec_NetAgent9
 - name: Meinberg
   topicUid: Connector_help_Meinberg_Element_Manager
   items:
@@ -6581,6 +6601,8 @@
     topicUid: Connector_help_NHK_Generic_DCF
   - name: NHK Remote Production Manager
     topicUid: Connector_help_NHK_Remote_Production_Manager
+  - name: NHK Snapshot Manager
+    topicUid: Connector_help_NHK_Snapshot_Manager
 - name: Nokia
   topicUid: Connector_help_Nokia_Altiplano_Collector
   items:
@@ -7156,6 +7178,8 @@
     topicUid: Connector_help_Qbit_Q565
   - name: QBit Q806
     topicUid: Connector_help_QBit_Q806
+  - name: Qbit Q820
+    topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
 - name: Qligent
@@ -7246,6 +7270,8 @@
   items:
   - name: Red Bee Media UK Stargate
     topicUid: Connector_help_Red_Bee_Media_UK_Stargate
+  - name: Red Bee Media UK Virtual Desk Manager
+    topicUid: Connector_help_Red_Bee_Media_UK_Virtual_Desk_Manager
 - name: Red Hat Enterprise
   topicUid: Connector_help_Red_Hat_Enterprise_Cluster_Suite
   items:
@@ -7883,6 +7909,8 @@
     topicUid: Connector_help_Sencore_OmniHub_6-16
   - name: Sencore OmniHub OHP6-EAS
     topicUid: Connector_help_Sencore_OmniHub_OHP6-EAS
+  - name: Sencore SDI2X
+    topicUid: Connector_help_Sencore_SDI2X
   - name: Sencore SMD989
     topicUid: Connector_help_Sencore_SMD989
   - name: Sencore TSS 6220
@@ -8323,6 +8351,8 @@
     topicUid: Connector_help_Snell_Wilcox_HCO51_RollCall
   - name: Snell Wilcox IQADA00
     topicUid: Connector_help_Snell_Wilcox_IQADA00
+  - name: Snell Wilcox IQADA01
+    topicUid: Connector_help_Snell_Wilcox_IQADA01
   - name: Snell Wilcox IQAES00
     topicUid: Connector_help_Snell_Wilcox_IQAES00
   - name: Snell Wilcox IQAVDR
@@ -8401,6 +8431,8 @@
     topicUid: Connector_help_Snell_Wilcox_IQUPC00
   - name: Snell Wilcox IQVDA00
     topicUid: Connector_help_Snell_Wilcox_IQVDA00
+  - name: Snell Wilcox IQVDA01
+    topicUid: Connector_help_Snell_Wilcox_IQVDA01
   - name: Snell Wilcox KudosPro
     topicUid: Connector_help_Snell_Wilcox_KudosPro
   - name: Snell Wilcox KudosPro Frame
@@ -8574,6 +8606,8 @@
     topicUid: Connector_help_Specialty_Microwave_Corp_11845-500
   - name: Specialty Microwave Corp 13056-501
     topicUid: Connector_help_Specialty_Microwave_Corp_13056-501
+  - name: Specialty Microwave Corp 13361-501
+    topicUid: Connector_help_Specialty_Microwave_Corp_13361-501
   - name: Specialty Microwave Corp 13966-505
     topicUid: Connector_help_Specialty_Microwave_Corp_13966-505
   - name: Specialty Microwave Corp 13966-506
@@ -9931,6 +9965,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service
   - name: Vodafone Kabel Deutschland GmbH Pre-Encoding Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service
+  - name: Vodafone Kabel Deutschland GmbH Probe Monitoring Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service
   - name: Vodafone Kabel Deutschland GmbH Qbit Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
   - name: Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service

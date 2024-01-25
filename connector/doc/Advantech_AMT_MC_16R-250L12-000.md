@@ -57,24 +57,24 @@ In addition, the **Switch 1, 2** and **3 Alarm** and **Connection Status**, the 
 
 ### SSPB Unit A
 
-This page displays information related to SSPB Unit A, such as the **Unit A Status**, **Transmission** and **Mute/Unmute Status**. It also contains the **Unit A** **Transmission Power** and **Reflected Power**, **Frequency Shift**, **ALC Status** and **Value**, **Elapsed Time**, **Gain A** and **B**, **Low Power Threshold**, **Communication** and **Fault Status**, **Alarm Summaries**, **Reflected Power** and **Shutdown Status**.
+This page displays information related to SSPB Unit A, such as the **Unit A Status**, **Transmission** and **Mute/Unmute Status**. It also contains the **Unit A Transmission Power** and **Reflected Power**, **Frequency Shift**, **ALC Status** and **Value**, **Elapsed Time**, **Gain A** and **B**, **Low Power Threshold**, **Communication** and **Fault Status**, **Alarm Summaries**, **Reflected Power** and **Shutdown Status**.
 
-In addition, the page displays the **Unit A** **Shroud** and **Hot Spot Temperature**, **P/S Voltage** and **Current**, and the unit **Serial Number**, **Software Revision Number**, **Version**, **Device Type**, **Power Class** and **Frequency Band**.
+In addition, the page displays the **Unit A Shroud** and **Hot Spot Temperature**, **P/S Voltage** and **Current**, and the unit **Serial Number**, **Software Revision Number**, **Version**, **Device Type**, **Power Class** and **Frequency Band**.
 
-Finally, you can also find the **Unit A** **Reference Status**, and the **Unit A** **ALC Suspended**, **High**, **Low** and **Temperature Alarm** here.
+Finally, you can also find the **Unit A Reference Status**, and the **Unit A ALC Suspended**, **High**, **Low** and **Temperature Alarm** here.
 
 ### SSPB Unit B
 
-This page displays information related to SSPB Unit B, such as the **Unit B Status**, **Transmission** and **Mute/Unmute Status**. It also contains the **Unit B** **Transmission Power** and **Reflected Power**, **Frequency Shift**, **ALC Status** and **Value**, **Elapsed Time**, **Gain A** and **B**, **Low Power Threshold**, **Communication** and **Fault Status**, **Alarm Summaries**, **Reflected Power** and **Shutdown Status**.
+This page displays information related to SSPB Unit B, such as the **Unit B Status**, **Transmission** and **Mute/Unmute Status**. It also contains the **Unit B Transmission Power** and **Reflected Power**, **Frequency Shift**, **ALC Status** and **Value**, **Elapsed Time**, **Gain A** and **B**, **Low Power Threshold**, **Communication** and **Fault Status**, **Alarm Summaries**, **Reflected Power** and **Shutdown Status**.
 
-In addition, the page displays the **Unit B** **Shroud** and **Hot Spot Temperature**, **P/S Voltage** and **Current**, and the unit **Serial Number**, **Software Revision Number**, **Version**, **Device Type**, **Power Class** and **Frequency Band**.
+In addition, the page displays the **Unit B Shroud** and **Hot Spot Temperature**, **P/S Voltage** and **Current**, and the unit **Serial Number**, **Software Revision Number**, **Version**, **Device Type**, **Power Class** and **Frequency Band**.
 
-Finally, you can also find the **Unit B** **Reference Status**, and the **Unit B** **ALC Suspended**, **High**, **Low** and **Temperature Alarm** here.
+Finally, you can also find the **Unit B Reference Status**, and the **Unit B ALC Suspended**, **High**, **Low** and **Temperature Alarm** here.
 
 ### SSPB Unit S
 
-This page displays information related to SSPB Unit S, such as the **Unit S Status**, **Transmission** and **Mute/Unmute Status**. It also contains the **Unit S** **Transmission Power** and **Reflected Power**, **Frequency Shift**, **ALC Status** and **Value**, **Elapsed Time**, **Gain A** and **B**, **Low Power Threshold**, **Communication** and **Fault Status**, **Alarm Summaries**, **Reflected Power** and **Shutdown Status**.
+This page displays information related to SSPB Unit S, such as the **Unit S Status**, **Transmission** and **Mute/Unmute Status**. It also contains the **Unit S Transmission Power** and **Reflected Power**, **Frequency Shift**, **ALC Status** and **Value**, **Elapsed Time**, **Gain A** and **B**, **Low Power Threshold**, **Communication** and **Fault Status**, **Alarm Summaries**, **Reflected Power** and **Shutdown Status**.
 
-In addition, the page displays the **Unit S** **Shroud** and **Hot Spot Temperature**, **P/S Voltage** and **Current**, and the unit **Serial Number**, **Software Revision Number**, **Version**, **Device Type**, **Power Class** and **Frequency Band**.
+In addition, the page displays the **Unit S Shroud** and **Hot Spot Temperature**, **P/S Voltage** and **Current**, and the unit **Serial Number**, **Software Revision Number**, **Version**, **Device Type**, **Power Class** and **Frequency Band**.
 
-Finally, you can also find the **Unit S** **Reference Status**, and the **Unit S** **ALC Suspended**, **High**, **Low** and **Temperature Alarm** here.
+Finally, you can also find the **Unit S Reference Status**, and the **Unit S ALC Suspended**, **High**, **Low** and **Temperature Alarm** here.

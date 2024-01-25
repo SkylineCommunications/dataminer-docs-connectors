@@ -14,9 +14,21 @@ Some parameters show the combined status of multiple IO contacts as a single par
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -26,7 +38,7 @@ Some parameters show the combined status of multiple IO contacts as a single par
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Configuration of the remote contacts.
+### Configuration of the remote contacts
 
 After creating an element, it must be linked with an IO contacts device, i.e. Advantech ADAM. This must be done via the "**Element Connections**" application in DataMiner Cube. For more information see the DataMiner help.
 
@@ -39,7 +51,3 @@ This page shows all parameters that have to do with the LNA controller. Some par
 ### Contacts
 
 This page displays all parameters that are linked with the external IO contacts device.
-
-## Notes
-
-NA

@@ -16,15 +16,21 @@ The **Oi Brazil DSLAM Collector** connector performs two main operations:
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -73,7 +79,8 @@ This page is divided in three sections: PING Settings, Polling Settings and Impo
 
 ## Revision History
 
-DATE VERSION AUTHOR COMMENTS
-20/08/2018 1.0.0.1 AIG, Skyline Initial version
-05/10/2018 1.0.0.2 AIG, Skyline Manual polling of row using a push button
-09/11/2018 1.0.0.3 RDP, Skyline Decreased multi-threaded timer & other enhancements to make polling faster
+| DATE       | VERSION | AUTHOR       | COMMENTS                                                                   |
+|------------|---------|--------------|----------------------------------------------------------------------------|
+| 20/08/2018 | 1.0.0.1 | AIG, Skyline | Initial version                                                            |
+| 05/10/2018 | 1.0.0.2 | AIG, Skyline | Manual polling of row using a push button                                  |
+| 09/11/2018 | 1.0.0.3 | RDP, Skyline | Decreased multi-threaded timer & other enhancements to make polling faster |

@@ -12,9 +12,21 @@ This connector is used together with Automation scripts and a Visio overlay, all
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -33,7 +45,7 @@ This page contains detailed information about the installation and the necessary
 This page contains different basic configuration parameters, such as:
 
 - **Ticket User Name:** The value of this parameter is automatically retrieved, since logging into DataMiner also allows you to operate the application and the ticketing module.
-- **Ticket User** **Password:** The value of this parameter is also recovered from the DataMiner session, and is required in order to operate the application and the ticketing module.
+- **Ticket User Password:** The value of this parameter is also recovered from the DataMiner session, and is required in order to operate the application and the ticketing module.
 - **Ticket Resolve GUID:** This GUID is obtained via a query to the Cassandra database, and is required in order to create tickets.
 - **Solve Monitor Time:** This parameter allows you to specify the period of time after which a ticket that has been resolved will be activated if the failure is repeated.
 - **Station Check Time**: This parameter allows you to specify the interval of time during which a station can be inactive before the user of that station is disabled.
@@ -42,7 +54,7 @@ The page also has a subpage that displays tables with general information on the
 
 - **Ticket Monitor Table:** Lists the resolved tickets that remain in latency for a period of time determined by the client, during which a repetition of the failure will activate the ticket again.
 - **Panel Key Assignments:** Displays the position of the engineering stations and clients in the Clear Com device, so that these panels can be reconfigured.
-- **GUI Messages Table:** Displays important information for the correct operation of the application, required by Automations scripts.
+- **GUI Messages Table:** Displays important information for the correct operation of the application, required by Automation scripts.
 
 ### Customers
 

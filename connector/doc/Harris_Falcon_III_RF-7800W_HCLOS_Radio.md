@@ -12,15 +12,21 @@ This connector is used to monitor the major parameters (inputs and outputs) of t
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | V 5.00                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -86,7 +92,7 @@ This page contains several different sections of configurable system settings:
 
 - **System Identification**: Includes the **System Name**, **System Location** and **System Contact**.
 - **SW Upgrade Config**: Includes TFTP info.
-- **Basic Host Configuration**: Includes the **IP Address**, **Subnet Mask** and **Default Gateway Address** settings**.**
+- **Basic Host Configuration**: Includes the **IP Address**, **Subnet Mask** and **Default Gateway Address** settings.
 - **Advanced Host Configuration**: Includes the **Ethernet Port Mode**, **SNTP Server IP Address**, **Time Zone (GMT) \[Hh:mm\]**, **HTTP Access**, **Telnet Access** and **Telnet Port**.
 - **Miscellaneous System Configuration**: Allows you to enable or disable the **GPS Antenna Power Supply** and set the **GPS Coordinates Format**.
 - **Redundancy Config**: Contains the settings for Role, Peer IP and Timeout.

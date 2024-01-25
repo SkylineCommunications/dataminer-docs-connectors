@@ -19,7 +19,8 @@ This connector allows you to collect data from the Huawei 5688-5800 CCAP Platfor
 | 1.0.2.x              | Modifications to improve performance. | -            | -                 |
 | 1.0.3.x              | Updated the minimum DMA version.      | -            | -                 |
 | 1.0.4.x              | Modifications to improve performance. | -            | -                 |
-| 1.0.5.x [SLC Main]   | SDF implementation.                   | -            | -                 |
+| 1.0.5.x              | SDF implementation.                   | -            | -                 |
+| 1.0.6.x [SLC Main]   | New threshold logic.                  | -            | -                 |
 
 ### Product Info
 
@@ -31,6 +32,7 @@ This connector allows you to collect data from the Huawei 5688-5800 CCAP Platfor
 | 1.0.2.x   | 0141                   |
 | 1.0.4.x   | 0141                   |
 | 1.0.5.x   | 0141                   |
+| 1.0.6.x   | 0141                   |
 
 ### System Info
 
@@ -42,6 +44,7 @@ This connector allows you to collect data from the Huawei 5688-5800 CCAP Platfor
 | 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.4.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.5.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -83,6 +86,20 @@ In range **1.0.0.x**, also configure the following settings:
 - **Other Settings:** Additional settings to ensure proper data transfer and additional information.
 
 - **Collector:** Fill this out with the DMA ID/element ID of the Generic CM Collector used to provision the CMs of the CCAP.
+
+### Threshold Table
+
+In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:
+
+- **Maximum Timing Offset Level**: Range from 0 to 2000 µs.
+- **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Minimum SNR Level**: Range from 10 to 60 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+
+The minimum value for the Rx threshold cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
 
 ## How to use
 

@@ -4,7 +4,7 @@ uid: Connector_help_Tektronix_Aurora
 
 # Tektronix Aurora
 
-Since Tektronix aquired the Digimetrics Aurora device a new connector named Tektronix Aurora was created.
+Since Tektronix acquired the Digimetrics Aurora device, a new connector named Tektronix Aurora was created.
 
 The Tektronix Aurora is a high volume automated, no reference, file-based QC with easy-to-use web client and efficient fault reporting.
 
@@ -16,15 +16,21 @@ The connector also retrieves information from the templates, machines, processor
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 6.3.2.102                   |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 6.3.2.102              |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -56,7 +62,7 @@ On the Windows Login pop-up page, you must fill in the User Name and Password to
 
 On the General page, the User Name and Password for the Aurora web service can be filled in, as described in the Configuration for Aurora web service section above. The **Job Time to Live** and **Maximum Job Entries Allowed** refer to the **Job Contract Completed Table** so that the user can limit the presence of jobs inside the Job Contract Completed Table.
 
-On the right-hand side, buttons are available that allow the user to manually refresh the **Default Container Path**, **Job Contracts,** Machines, Templates and Processors.
+On the right-hand side, buttons are available that allow the user to manually refresh the **Default Container Path**, **Job Contracts**, Machines, Templates and Processors.
 
 ### Server Information
 

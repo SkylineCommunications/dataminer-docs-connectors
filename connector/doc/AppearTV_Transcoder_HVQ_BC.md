@@ -4,7 +4,7 @@ uid: Connector_help_AppearTV_Transcoder_HVQ_BC
 
 # AppearTV Transcoder HVQ BC
 
-This connector is used to monitor the **AppearTV** **Transcoder HVQ BC** card.
+This connector is used to monitor the **AppearTV Transcoder HVQ BC** card.
 
 ## About
 

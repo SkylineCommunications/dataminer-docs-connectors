@@ -12,11 +12,23 @@ The connector allows the user to create entries in a **Remote Elements Configura
 
 An entry in the **Remote Status Table** shows the current values of the two parameters, but also allows the user to select a KML file. If the two parameter values represent latitude and longitude values, the KML file can be used to check whether the current latitude/longitude combination is inside or outside of the boundaries defined in the KML file. Based on the Inside/Outside setting in the table, an alarm is generated if the values are not inside or outside of the boundaries.
 
-## Ranges of the connector
+### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

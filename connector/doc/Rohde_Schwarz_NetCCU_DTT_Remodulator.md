@@ -4,7 +4,7 @@ uid: Connector_help_Rohde_Schwarz_NetCCU_DTT_Remodulator
 
 # Rohde Schwarz NetCCU DTT Remodulator
 
-This connector is developed for devices such as the **Rohde Schwarz NetCCU DTT** **Remodulator**. It polls several SNMP parameters and displays them on different pages.
+This connector is developed for devices such as the **Rohde Schwarz NetCCU DTT Remodulator**. It polls several SNMP parameters and displays them on different pages.
 
 ## About
 
@@ -12,15 +12,21 @@ The SNMP parameters are polled using three timers, and displayed on several page
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.20.0                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 1.20.0                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -44,9 +50,9 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General Page
 
-This page displays status parameters of the device, such as the **Software Version**, **Hardware Version**, **Power** **Supply**, etc.
+This page displays status parameters of the device, such as the **Software Version**, **Hardware Version**, **Power Supply**, etc.
 
-The **LITE** **Protocol** option can be enabled in order to keep polling to a minimum, so that only important parameters (indicated as "LITE" below) are polled.
+The **LITE Protocol** option can be enabled in order to keep polling to a minimum, so that only important parameters (indicated as "LITE" below) are polled.
 
 The page also contains page buttons to open the following subpages:
 
@@ -59,7 +65,7 @@ The page also contains page buttons to open the following subpages:
 
 This page contains status parameters of the DVB receiver, such as the **Software Version**, **Hardware Version**, **Input Mode**, etc.
 
-The page also contains a page button to open the **Events Receiver Table** **(LITE)** subpage.
+The page also contains a page button to open the **Events Receiver Table (LITE)** subpage.
 
 ### DVB Receiver - Input 1 Page
 
@@ -73,7 +79,7 @@ This page contains information related to the second input of the DVB receiver, 
 
 This page displays the transmitter **Frequency (LITE)** and the **TX Forwarded Power (LITE)**.
 
-The page also contains a page button to open the **Transmitter Events** **(LITE)** subpage.
+The page also contains a page button to open the **Transmitter Events (LITE)** subpage.
 
 ### Exciter Status Page
 
@@ -106,6 +112,9 @@ DCF only works if **LITE** polling is disabled.
 #### Internal Connections
 
 - If the **selected input** is **Input 1** (depending on the **Exciter Input Table**), an internal connection is created between **Input 1** and the **output** with the following properties:
+
   - **Status** connection property of type **generic** with value **Up**.
+
 - If the **selected input** is **Input 2** (depending on the **Exciter Input Table**), an internal connection is created between **Input 2** and the **output** with the following properties:
+
   - **Status** connection property of type **generic** with value **Up**.

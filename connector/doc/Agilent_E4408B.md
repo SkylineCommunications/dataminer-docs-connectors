@@ -8,7 +8,7 @@ The **Agilent E4408B** is an ESA-L basic spectrum analyzer that can go up to 26.
 
 ## About
 
-This connector retrieves data via **TCP/IP** **serial communication**. Commands are sent to the device with or without a response in return.
+This connector retrieves data via **TCP/IP serial communication**. Commands are sent to the device with or without a response in return.
 
 ### Version Info
 

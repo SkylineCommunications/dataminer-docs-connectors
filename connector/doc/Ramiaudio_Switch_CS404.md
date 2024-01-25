@@ -12,15 +12,21 @@ The Ramiaudio Watchdog CS404 connector controls the inputs, listens for traps fr
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x [SLC Main]   | 4.2                         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 4.2                    |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -66,7 +72,7 @@ Via a page button, you can access the **Input Status** table.
 
 ### Traps Page
 
-The **Main Input**, **Backup Input**, **Active Physical Input**, **Active Input**, **Audio Output**, **Software Mode** and **Power 1 & 2** **Trap** states can be found on this page. Each state is either *Invalid*, *Disabled*, or *Enabled*.
+The **Main Input**, **Backup Input**, **Active Physical Input**, **Active Input**, **Audio Output**, **Software Mode** and **Power 1 & 2 Trap** states can be found on this page. Each state is either *Invalid*, *Disabled*, or *Enabled*.
 
 The **Trap Destinations** table is displayed via a page button.
 

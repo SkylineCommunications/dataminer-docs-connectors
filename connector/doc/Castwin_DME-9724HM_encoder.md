@@ -10,9 +10,9 @@ This connector can be used to manage the Castwin DME-9724HM encoder. This is a v
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
-|----------------------|---------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial development | -            | -                 |
+| Range              | Key Features        | Based on | System Impact |
+|--------------------|---------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial development | -        | -             |
 
 ### Product Info
 
