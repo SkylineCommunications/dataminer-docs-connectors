@@ -42,9 +42,9 @@ No additional configuration of parameters is necessary in a newly created elemen
 
 On the **General** page, the **Encoders** table provides an overview of all available Elemental Live encoder elements in the system. When you configure each encoder with details such as Location, Event Name Filter, and Booking Name Format, new rows will be generated in the **Channel Overview** table.
 
-When a regular expression is entered in the **Event Name Filter** field, the system will utilize the content matched by the first capturing group. The channel name that should be extracted needs to be placed within the parentheses of the first capturing group in a regex pattern.
+When a regular expression is entered in the **Event Name Filter** field, the system will utilize the content matching the first capturing group of the regular expression. The channel name that should be extracted needs to be placed within the parentheses of the first capturing group in a regex pattern (see [Examples](#examples)).
 
-When a format is entered in the **Booking Name Format** field, placeholder {0} must be used, and it will be replaced with the channel name. You can add any desired text before or after the placeholder to customize the booking name.
+When a format is entered in the **Booking Name Format** field, placeholder {0} must be used, and it will be replaced with the channel name. You can add any desired text before or after the placeholder to customize the booking name (see [Examples](#examples)).
 
 When you right-click the Encoders table, the **Encoder Swap** option is available in the context menu. This enables swapping encoding events from one encoder to another.
 
