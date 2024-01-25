@@ -18,7 +18,7 @@ This connector is used to monitor the NetAgent9 UPS management device, which all
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | 3.8.CY504       |
+| 1.0.0.x | 3.8.CY504          |
 
 ### System Info
 
@@ -52,4 +52,4 @@ The web interface is only accessible when the client machine has network access 
 
 The element mainly displays SNMP parameters as defined in the device MIB.
 
-The *Alarms* page contains an Alarms table that displays SNMP traps forwarded by the connected device. You can delete alarms via the right-click menu of the table, or set a fixed lifetime for the alarms to be automatically cleared by the driver in the *Alarm Settings* page.
+The *Alarms* page contains an Alarms table that displays SNMP traps forwarded by the connected device. You can delete alarms via the right-click menu of the table. On the *Alarm Settings* page, you can also configure a fixed lifetime for the alarms, after which they are automatically cleared by the connector.
