@@ -14,12 +14,16 @@ The ViaLiteHD system comprises up to 13 rack-mounted cards and an SNMP card, all
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
+| 1.0.2.x [SLC Main]   | Unnecessary parameters deleted from Transmitter element and fix on Receiver Table values | No                  | Yes                      |
+| 1.0.1.x [Obsolete]   | New way to get device data and traps table included | No                  | Yes                      |
+| 1.0.0.x [Obsolete]   | Initial version | No                  | No                      |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
+| 1.0.2.x          | V1.04.21                    |
+| 1.0.1.x          | V1.04.21                    |
 | 1.0.0.x          | V1.04.21                    |
 
 ### Exported connectors
@@ -32,7 +36,7 @@ The ViaLiteHD system comprises up to 13 rack-mounted cards and an SNMP card, all
 | [ViaLite ViaLiteHD Dual Transmitter LNB](xref:Connector_help_ViaLite_ViaLiteHD_Dual_Transmitter_LNB) | Dual Transmitter LNB |
 | [ViaLite ViaLiteHD Switch](xref:Connector_help_ViaLite_ViaLiteHD_Switch)                                 | Switch               |
 | [ViaLite ViaLiteHD Receiver](xref:Connector_help_ViaLite_ViaLiteHD_Receiver)                             | Receiver             |
-| ViaLite ViaLiteHD Transmitter                                                                                | Transmitter          |
+| [ViaLite ViaLiteHD Transmitter](xref:Connector_help_ViaLite_ViaLiteHD_Transmitter)                             | Transmitter          |
 | ViaLite ViaLiteHD SER                                                                                        | SER                  |
 
 ## Configuration
