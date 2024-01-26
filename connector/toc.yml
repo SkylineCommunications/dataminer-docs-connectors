@@ -4543,7 +4543,7 @@
   - name: HP Fibre Channel Switch
     topicUid: Connector_help_HP_Fibre_Channel_Switch
   - name: HP iLO Management Engine
-    topicUid: Connector_help_HP_iLO_Management_Engine
+    topicUid: Connector_help_HP_ILO_Management_Engine
   - name: HP Insight
     topicUid: Connector_help_HP_Insight
   - name: HP Intelligent Management Center
