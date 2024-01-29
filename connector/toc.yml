@@ -2759,6 +2759,11 @@
   items:
   - name: Diversitel Communications UPC 12A
     topicUid: Connector_help_Diversitel_Communications_UPC_12A
+- name: D-Link
+  topicUid: Connector_help_D-Link_DGS-3630_Series
+  items:
+  - name: D-Link DGS-3630 Series
+    topicUid: Connector_help_D-Link_DGS-3630_Series
 - name: DNF Controls
   topicUid: Connector_help_DNF_Controls_USP-8D
   items:
