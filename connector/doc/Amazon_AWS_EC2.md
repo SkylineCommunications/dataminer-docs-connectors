@@ -79,3 +79,5 @@ The **General** page features the Account ID, Access Key ID, and Secret Key. Apa
 This **Instances** page provides an overview of all EC2 instances available for the specified region. In range **1.0.1.x**, the possibility to **start or stop instances** is also introduced.
 
 The **Debug** page (available in range 1.0.1.x) contains a table with records of all interactions with AWS.
+
+The **Configuration** page (below Instances page and available in range **1.0.1.x**) contains the naming format for the retrieved instances. The user needs to put a format based on the instructions presented in the Help parameter, which will take effect after the next polling cycle of the instances.
