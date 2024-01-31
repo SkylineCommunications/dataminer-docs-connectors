@@ -49,7 +49,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-  - **IP port**: The required IP port of the device. The range of port numbers is 1 to 65535**.**
+  - **IP port**: The required IP port of the device. The range of port numbers is 1 to 65535.
   - **Bus address**: The bus address of the device. Default value is 66, with a range of 64 to 90.
 
 ## Usage
@@ -62,6 +62,6 @@ On this page, you can see and manipulate the **Radiometers**. Each request requi
 
 The RMS II **Protocol Version Number** must be filled in on this page to send correct requests to the RMS II device.
 
-It is also possible to click **Import File** on this page, in order to immediately load radiometers from a .CSV file. If the file you want to import is not in the drop-down menu, you can **Refresh** the list. You can also **Export Radiometers** to a .CSV file, which will be stored in C:\Skyline DataMiner\Documents\SES S.A. RMS II**.** Imported files must be stored there as well. If there is a problem with importing or exporting, the **Import/Export Status** will display "Fail".
+It is also possible to click **Import File** on this page, in order to immediately load radiometers from a .CSV file. If the file you want to import is not in the drop-down menu, you can **Refresh** the list. You can also **Export Radiometers** to a .CSV file, which will be stored in C:\Skyline DataMiner\Documents\SES S.A. RMS II. Imported files must be stored there as well. If there is a problem with importing or exporting, the **Import/Export Status** will display "Fail".
 
 Normally, importing a .CSV file will not remove any existing rows in the **Radiometers** table. However, if the **Auto Delete Radiometers** option is enabled, only the imported .CSV rows will be displayed.

@@ -42,7 +42,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-No extra configurations are needed.
+No extra configuration is needed.
 
 ### Redundancy
 
