@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_HP_iLO_Management_Engine
+uid: Connector_help_HP_ILO_Management_Engine
 ---
 
 # HP iLO Management Engine
