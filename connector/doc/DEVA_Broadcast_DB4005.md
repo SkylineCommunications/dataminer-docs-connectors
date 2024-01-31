@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_DEVA_Broadcast__DB4005
+uid: Connector_help_DEVA_Broadcast_DB4005
 ---
 
 # DEVA Broadcast DB4005
