@@ -9237,8 +9237,8 @@
     topicUid: Connector_help_Teleste_AC8810_SNMP
   - name: Teleste AC9000
     topicUid: Connector_help_Teleste_AC9000
-  - name: Teleste AC8 SNMP
-    topicUis: Connector_help_Teleste_ACE8_SNMP  
+  - name: Teleste ACE8 SNMP
+    topicUid: Connector_help_Teleste_ACE8_SNMP
   - name: Teleste Amplifier Collector
     topicUid: Connector_help_Teleste_Amplifier_Collector
   - name: Teleste CATVisor EMS
