@@ -4223,6 +4223,8 @@
   items:
   - name: Globecast France Enhanced DTM Channel Service
     topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
+  - name: Globecast France Enhanced Single Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
 - name: Globecomm
   topicUid: Connector_help_Globecomm_iDirect_Shore_Side_Server
   items:
