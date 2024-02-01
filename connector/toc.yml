@@ -9849,6 +9849,8 @@
     topicUid: Connector_help_ViaLite_ViaLiteHD_Splitter
   - name: ViaLite ViaLiteHD Switch
     topicUid: Connector_help_ViaLite_ViaLiteHD_Switch
+  - name: ViaLite ViaLiteHD Transmitter
+    topicUid: Connector_help_ViaLite_ViaLiteHD_Transmitter
 - name: Viasat
   topicUid: Connector_help_Viasat_AC4100
   items:
