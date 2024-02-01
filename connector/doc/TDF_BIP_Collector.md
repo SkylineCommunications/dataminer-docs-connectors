@@ -4,7 +4,7 @@ uid: Connector_help_TDF_BIP_Collector
 
 # TDF BIP Collector
 
-This connector is used to collect from the **BIP (Production Incident Database)** system, responsible for interfacing all the Collector subsystems, the storage subsystem and all potential customers using the collected and correlated data.
+This connector is used to collect data from the **BIP (Production Incident Database)** system, responsible for interfacing all the collector subsystems, the storage subsystem, and all potential customers using the collected and correlated data.
 
 ## About
 
@@ -18,7 +18,7 @@ This connector is used to collect from the **BIP (Production Incident Database)*
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | 4.58              |
+| 1.0.0.x | 4.58               |
 
 ### System Info
 
@@ -32,24 +32,27 @@ This connector is used to collect from the **BIP (Production Incident Database)*
 
 #### HTTP Main Connection
 
-This connector uses HTTPA connection  and requires the following input during element creation:
+This connector uses an HTTPS connection and requires the following input during element creation:
+
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination.Should always start with _https://_
-- **IP port**: Default:*8443*.
+- **IP address/host**: The polling IP or URL of the destination. Should always start with `https://`
+- **IP port**: Default: *8443*.
 
 ##### Initialization
-In order to perform requests, first the **Domains List** parameter needs to be configured.
-It is possible to define only one Domain or multiple separated by **;**.
+
+In order to perform requests, first the **Domains List** parameter needs to be configured. You can define only one domain or define multiple domains separated by semicolons (";").
 
 ## How to use
 
 The connector contains the following data pages:
 
-- **General**: This page contains the **Domains List** parameter that allows the user to define from each domain should the requests be directed. Without this parameter defined there is no possibility to perform requests.
+- **General**: Contains the **Domains List** parameter, which allows you to define from which domain requests should be directed. If this parameter is not defined, the connector cannot request any data.
 
-- **Resources**: This page contains the **Resources Table** that contains all the information obtained from the get resources request.  
+- **Resources**: Contains the **Resources Table**, with all the information obtained from the get resources request.
 
-- **Alarms**: This page contains the **Event Types Table** that contains all the possible Event Types and the  **Event Table** that contains the active events limited to the last 15 minutes. Also from this page it is possible to define the Display key of the Events Table. The parameter **Events Table Display Key Selection** is used to select this. If **Internal Description** is selected the Display Key will have the following format _Event ID/Event Internal Description/Resource Internal Description_ if **External Description** is selected th format will be _Event ID/Event External Description/Resource External Description_. 
+- **Alarms**: Contains the **Event Types Table**, with all the possible event types, and the **Event Table**, with the active events, limited to the last 15 minutes.
 
-- **Polling Configuration**: From this page it is possible to select which and when the 3 available requests are polled. Also it is possible to poll the requests on demand pressing the button **Poll** available on every entry of the table. There is also a **Poll All** button that allows the user to poll all requests at once. 
+  On this page, you can also define the display key of the Events Table, by means of the parameter **Events Table Display Key Selection**. If *Internal Description* is selected, the display key will have the following format: `Event ID/Event Internal Description/Resource Internal Description`. If *External Description* is selected, the format will be `Event ID/Event External Description/Resource External Description`.
+
+- **Polling Configuration**: On this page, you can select which of the available requests is polled and when. You can also poll the requests on demand with the **Poll** button for each entry in the table. With the **Poll All** button, you can poll all requests on demand at once.
