@@ -12,10 +12,10 @@ Amazon EC2's simple web service allows you to easily obtain and configure capaci
 
 ### Version Info
 
-| **Range**            | **Key Features**                         | **Based on** | **System Impact**        |
-|----------------------|------------------------------------------|--------------|--------------------------|
-| 1.0.0.x              | Initial version.                         | -            | -                        |
-| 1.0.1.x [SLC Main]   | Support for starting/stopping instances. | 1.0.0.3      | Removed HTTP connection. |
+| Range              | Key Features                             | Based on | System Impact            |
+|--------------------|------------------------------------------|----------|--------------------------|
+| 1.0.0.x            | Initial version.                         | -        | -                        |
+| 1.0.1.x [SLC Main] | Support for starting/stopping instances. | 1.0.0.3  | Removed HTTP connection. |
 
 ### Product Info
 
@@ -26,10 +26,10 @@ Amazon EC2's simple web service allows you to easily obtain and configure capaci
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 1.0.1.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -78,6 +78,6 @@ The **General** page features the Account ID, Access Key ID, and Secret Key. Apa
 
 This **Instances** page provides an overview of all EC2 instances available for the specified region. In range **1.0.1.x**, the possibility to **start or stop instances** is also introduced.
 
-The **Debug** page (available in range 1.0.1.x) contains a table with records of all interactions with AWS.
+The **Configuration** page (available below the Instances page in range **1.0.1.x**) contains the naming format for the retrieved instances. Enter a format based on the instructions in the Help parameter. This will take effect after the next polling cycle of the instances.
 
-The **Configuration** page (below Instances page and available in range **1.0.1.x**) contains the naming format for the retrieved instances. The user needs to put a format based on the instructions presented in the Help parameter, which will take effect after the next polling cycle of the instances.
+The **Debug** page (available in range 1.0.1.x) contains a table with records of all interactions with AWS.
