@@ -5011,6 +5011,8 @@
     topicUid: Connector_help_IRT_DVB-T_TX
   - name: IRT IFC Series
     topicUid: Connector_help_IRT_IFC_Series
+  - name: IRT SSPA Series
+    topicUid: Connector_help_IRT_SSPA_Series
 - name: Itelco
   topicUid: Connector_help_Itelco_DVB-T2_Modulator
   items:
