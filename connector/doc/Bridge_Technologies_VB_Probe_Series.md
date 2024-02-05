@@ -72,7 +72,7 @@ Once the element has been created in DataMiner, the **Element Configuration** pa
 
 ### Redundancy
 
-There is no redundancy defined.
+RF Redundancy is accessible via the Redundancy Page. The Active Input can only be set during Manual mode.
 
 ### Web Interface
 
