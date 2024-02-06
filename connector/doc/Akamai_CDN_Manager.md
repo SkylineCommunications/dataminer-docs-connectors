@@ -22,9 +22,9 @@ Akamai is a **C**ontent **D**elivery **N**etwork services provider. This connect
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
+|---------|---------|---------|---------|---------|
+|1.0.0.x    |No       |Yes         |-         |[Akamai CDN Manager - CP Code](xref:Connector_help_Akamai_CDN_Manager_-_CP_Code)   |
 
 ## Configuration
 
@@ -51,8 +51,9 @@ If a connection has been established, data will be displayed on the following pa
 - **Contracts**: Displays the Contracts table.
 - **Groups**: Displays the Groups table.
 - **CP Codes**: Displays the CP Codes table.
-- **Traffic Per CP Code**: Displays the Traffic per CP code table.
+- **Traffic**: Displays the Traffic per CP code table.
 - **Structure Overview**: Contains the Structure Overview tree control.
+- **Media Services Live**: Displays the Media Services Live table.
 - **Alert Summaries**: Displays the Alert Summaries table.
 - **Alert Details**: Displays the Alert Details table.
 - **Alert Overview**: Displays the relationship between the Alert Summaries and Alert Details tables.
