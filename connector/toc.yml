@@ -3050,6 +3050,8 @@
     topicUid: Connector_help_Enensys_NetMod_DVBT2
   - name: Enensys SafeSplitter
     topicUid: Connector_help_Enensys_SafeSplitter
+  - name: Enensys SmartGate OneBeam
+    topicUid: Connector_help_Enensys_SmartGate_OneBeam
   - name: Enensys Smartgate vT2
     topicUid: Connector_help_Enensys_Smartgate_vT2
   - name: Enensys T2-Mi Gen
