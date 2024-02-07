@@ -51,7 +51,7 @@ If a connection has been established, data will be displayed on the following pa
 - **Contracts**: Displays the Contracts table.
 - **Groups**: Displays the Groups table.
 - **CP Codes**: Displays the CP Codes table.
-- **Network Storage**: Displays the Storage groups and associated upload accounts.
+- **Network Storage**: Displays the storage groups and associated upload accounts.
 - **Traffic Per CP Code**: Displays the Traffic per CP code table.
 - **Structure Overview**: Contains the Structure Overview tree control.
 - **Media Services Live**: Displays a list of all streams.
