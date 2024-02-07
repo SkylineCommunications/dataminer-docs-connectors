@@ -8172,6 +8172,8 @@
     topicUid: Connector_help_Skyline_Central_DB_File_Offload
   - name: Skyline Communications CDMR Scheduler
     topicUid: Connector_help_Skyline_Communications_CDMR_Scheduler
+  - name: Skyline Communications Client KPI Monitor
+    topicUid: Connector_help_Skyline_Communications_Client_KPI_Monitor
   - name: Skyline Concurrent Offload MGMT
     topicUid: Connector_help_Skyline_Concurrent_Offload_MGMT
   - name: Skyline Configuration Manager
