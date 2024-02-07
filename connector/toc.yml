@@ -280,6 +280,8 @@
   items:
   - name: Akamai CDN Manager
     topicUid: Connector_help_Akamai_CDN_Manager
+  - name: Akamai CDN Manager - CP Code
+    topicUid: Connector_help_Akamai_CDN_Manager_-_CP_Code
 - name: AKCP
   topicUid: Connector_help_AKCP_Environmental_Monitoring_Unit
   items:
