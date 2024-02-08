@@ -28,6 +28,12 @@ This connector is used to monitor and the Amagi CLOUDPORT Playout Service Manage
 
 ## Configuration
 
+Once a Token is configure in the driver, this is used for all the requests that the driver sends.
+
+## Initialization
+
+A Token must be configure under the Security page. This is obtained from the GUI or vendor.
+
 ### Connections
 
 #### HTTP Connection
@@ -46,6 +52,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-You can find all the information you need to monitor the HTT connection, Feeds on Air and Headends in the General page.
-
-In the Security page is where you configure the Token for the driver to use.
+You can find all the information you need to monitor the HTTP connection, Feeds on Air and Headends in the General page.
