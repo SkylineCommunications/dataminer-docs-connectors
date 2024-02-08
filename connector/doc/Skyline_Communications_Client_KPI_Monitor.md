@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Communications_Client_KPI_Monitor
 
 # Skyline Communications Client KPI Monitor
 
-This connector allows to process the SLClient log falie to retrieve performance KPIs.
+This connector allows to process the SLClient log file to retrieve performance KPIs.
 
 ## About
 
@@ -34,7 +34,7 @@ This connector does not require initial configuration.
 
 ## How to Use
 
-On the **General** page there are several tables each realated to a KPI.
+On the **General** page there are several tables each related to a KPI.
 
 - Cube Metric Initial Data Duration
 - Cube Metric Initial Subscriptions Duration
