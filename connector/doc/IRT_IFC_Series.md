@@ -20,7 +20,7 @@ The **IRT IFC Series** is an intelligent frequency converter. It is used for sat
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | -                      |
+| 1.0.0.x   | 2.11.22                |
 
 ### System Info
 

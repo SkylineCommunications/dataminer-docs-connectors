@@ -92,7 +92,7 @@ This page contains three tables: **SG4 Optical Switch Unit**, **SG4 Optical Swit
 
 ### SG4 Optical Amplifier
 
-This page displays both the **SG4 Optical Amplifier Unit Table** and **SG4 Optical Amplifier Laser Table**. There are two **toggle buttons** that can be used to enable/disable the polling of each of these tables**.**
+This page displays both the **SG4 Optical Amplifier Unit Table** and **SG4 Optical Amplifier Laser Table**. There are two **toggle buttons** that can be used to enable/disable the polling of each of these tables.
 
 ### SG4 Optical Amplifier In & Out
 

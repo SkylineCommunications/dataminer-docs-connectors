@@ -115,7 +115,7 @@ This page contains the **Amplifier Input Laser**, **Amplifier Input Data** and *
 
 ### Vo IP
 
-This page contains the **Vo IP Test Control** and **VO IP Test Result** tables**.**
+This page contains the **Vo IP Test Control** and **VO IP Test Result** tables.
 
 ### Web Interface
 

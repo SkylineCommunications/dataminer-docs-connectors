@@ -280,6 +280,8 @@
   items:
   - name: Akamai CDN Manager
     topicUid: Connector_help_Akamai_CDN_Manager
+  - name: Akamai CDN Manager - CP Code
+    topicUid: Connector_help_Akamai_CDN_Manager_-_CP_Code
 - name: AKCP
   topicUid: Connector_help_AKCP_Environmental_Monitoring_Unit
   items:
@@ -1702,8 +1704,10 @@
   - name: Blackmagic Design Videohub
     topicUid: Connector_help_Blackmagic_Design_Videohub
 - name: Blankom
-  topicUid: Connector_help_Blankom_HCB-200
+  topicUid: Connector_help_Blankom_B-Nova
   items:
+  - name: Blankom B-Nova
+    topicUid: Connector_help_Blankom_B-Nova
   - name: Blankom HCB-200
     topicUid: Connector_help_Blankom_HCB-200
 - name: Blue Coat
@@ -1755,6 +1759,8 @@
     topicUid: Connector_help_British_Telecom_Blackout_Schedule
   - name: British Telecom CMON
     topicUid: Connector_help_British_Telecom_CMON
+  - name: British Telecom Encoder Resource Manager
+    topicUid: Connector_help_British_Telecom_Encoder_Resource_Manager
   - name: British Telecom Global Site Load Balancer
     topicUid: Connector_help_British_Telecom_Global_Site_Load_Balancer
   - name: British Telecom GNMS
@@ -2675,7 +2681,7 @@
   topicUid: Connector_help_DEVA_Broadcast_DB44
   items:
   - name: DEVA Broadcast DB4005
-    topicUid: Connector_help_DEVA_Broadcast__DB4005
+    topicUid: Connector_help_DEVA_Broadcast_DB4005
   - name: DEVA Broadcast DB44
     topicUid: Connector_help_DEVA_Broadcast_DB44
   - name: DEVA Broadcast DB45
@@ -2755,6 +2761,11 @@
   items:
   - name: Diversitel Communications UPC 12A
     topicUid: Connector_help_Diversitel_Communications_UPC_12A
+- name: D-Link
+  topicUid: Connector_help_D-Link_DGS-3630_Series
+  items:
+  - name: D-Link DGS-3630 Series
+    topicUid: Connector_help_D-Link_DGS-3630_Series
 - name: DNF Controls
   topicUid: Connector_help_DNF_Controls_USP-8D
   items:
@@ -3041,6 +3052,8 @@
     topicUid: Connector_help_Enensys_NetMod_DVBT2
   - name: Enensys SafeSplitter
     topicUid: Connector_help_Enensys_SafeSplitter
+  - name: Enensys SmartGate OneBeam
+    topicUid: Connector_help_Enensys_SmartGate_OneBeam
   - name: Enensys Smartgate vT2
     topicUid: Connector_help_Enensys_Smartgate_vT2
   - name: Enensys T2-Mi Gen
@@ -3415,6 +3428,10 @@
     topicUid: Connector_help_Evertz_7800PA-10GE2
   - name: Evertz 7800R2x2-ACS-3G
     topicUid: Connector_help_Evertz_7800R2x2-ACS-3G
+  - name: Evertz 7800R4x4-RF
+    topicUid: Connector_help_Evertz_7800R4x4-RF
+  - name: Evertz 7800R4x4-RFI
+    topicUid: Connector_help_Evertz_7800R4x4-RFI
   - name: Evertz 7800R4x8-ACS-3G
     topicUid: Connector_help_Evertz_7800R4x8-ACS-3G
   - name: Evertz 7800SW-GE
@@ -4042,6 +4059,8 @@
     topicUid: Connector_help_Generic_KAFKA_Consumer
   - name: Generic KAFKA Producer
     topicUid: Connector_help_Generic_KAFKA_Producer
+  - name: Generic Logger Table
+    topicUid: Connector_help_Generic_Logger_Table
   - name: Generic Mail Sender
     topicUid: Connector_help_Generic_Mail_Sender
   - name: Generic Manager Channel Distribution
@@ -4205,6 +4224,13 @@
     topicUid: Connector_help_Globecast_GCMCN_Platform
   - name: Globecast MADY Platform
     topicUid: Connector_help_Globecast_MADY_Platform
+- name: Globecast France
+  topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
+  items:
+  - name: Globecast France Enhanced DTM Channel Service
+    topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
+  - name: Globecast France Enhanced Single Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
 - name: Globecomm
   topicUid: Connector_help_Globecomm_iDirect_Shore_Side_Server
   items:
@@ -4543,7 +4569,7 @@
   - name: HP Fibre Channel Switch
     topicUid: Connector_help_HP_Fibre_Channel_Switch
   - name: HP iLO Management Engine
-    topicUid: Connector_help_HP_iLO_Management_Engine
+    topicUid: Connector_help_HP_ILO_Management_Engine
   - name: HP Insight
     topicUid: Connector_help_HP_Insight
   - name: HP Intelligent Management Center
@@ -4989,6 +5015,8 @@
     topicUid: Connector_help_IRT_DVB-T_TX
   - name: IRT IFC Series
     topicUid: Connector_help_IRT_IFC_Series
+  - name: IRT SSPA Series
+    topicUid: Connector_help_IRT_SSPA_Series
 - name: Itelco
   topicUid: Connector_help_Itelco_DVB-T2_Modulator
   items:
@@ -5528,6 +5556,11 @@
     topicUid: Connector_help_Mediaproxy_Logserver
   - name: Mediaproxy Player
     topicUid: Connector_help_Mediaproxy_Player
+- name: MegaTec
+  topicUid: Connector_help_Megatec_NetAgent9
+  items:
+  - name: MegaTec NetAgent9
+    topicUid: Connector_help_Megatec_NetAgent9
 - name: Meinberg
   topicUid: Connector_help_Meinberg_Element_Manager
   items:
@@ -6583,6 +6616,8 @@
     topicUid: Connector_help_NHK_Generic_DCF
   - name: NHK Remote Production Manager
     topicUid: Connector_help_NHK_Remote_Production_Manager
+  - name: NHK Snapshot Manager
+    topicUid: Connector_help_NHK_Snapshot_Manager
 - name: Nokia
   topicUid: Connector_help_Nokia_Altiplano_Collector
   items:
@@ -7158,6 +7193,8 @@
     topicUid: Connector_help_Qbit_Q565
   - name: QBit Q806
     topicUid: Connector_help_QBit_Q806
+  - name: Qbit Q820
+    topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
 - name: Qligent
@@ -7248,6 +7285,8 @@
   items:
   - name: Red Bee Media UK Stargate
     topicUid: Connector_help_Red_Bee_Media_UK_Stargate
+  - name: Red Bee Media UK Virtual Desk Manager
+    topicUid: Connector_help_Red_Bee_Media_UK_Virtual_Desk_Manager
 - name: Red Hat Enterprise
   topicUid: Connector_help_Red_Hat_Enterprise_Cluster_Suite
   items:
@@ -7885,6 +7924,8 @@
     topicUid: Connector_help_Sencore_OmniHub_6-16
   - name: Sencore OmniHub OHP6-EAS
     topicUid: Connector_help_Sencore_OmniHub_OHP6-EAS
+  - name: Sencore SDI2X
+    topicUid: Connector_help_Sencore_SDI2X
   - name: Sencore SMD989
     topicUid: Connector_help_Sencore_SMD989
   - name: Sencore TSS 6220
@@ -8325,6 +8366,8 @@
     topicUid: Connector_help_Snell_Wilcox_HCO51_RollCall
   - name: Snell Wilcox IQADA00
     topicUid: Connector_help_Snell_Wilcox_IQADA00
+  - name: Snell Wilcox IQADA01
+    topicUid: Connector_help_Snell_Wilcox_IQADA01
   - name: Snell Wilcox IQAES00
     topicUid: Connector_help_Snell_Wilcox_IQAES00
   - name: Snell Wilcox IQAVDR
@@ -8403,6 +8446,8 @@
     topicUid: Connector_help_Snell_Wilcox_IQUPC00
   - name: Snell Wilcox IQVDA00
     topicUid: Connector_help_Snell_Wilcox_IQVDA00
+  - name: Snell Wilcox IQVDA01
+    topicUid: Connector_help_Snell_Wilcox_IQVDA01
   - name: Snell Wilcox KudosPro
     topicUid: Connector_help_Snell_Wilcox_KudosPro
   - name: Snell Wilcox KudosPro Frame
@@ -8936,6 +8981,8 @@
     topicUid: Connector_help_TDF_ALLISS_Analog_Transmitter
   - name: TDF ALLISS Transmitter
     topicUid: Connector_help_TDF_ALLISS_Transmitter
+  - name: TDF BIP Collector
+    topicUid: Connector_help_TDF_BIP_Collector
   - name: TDF Conducteur Application
     topicUid: Connector_help_TDF_Conducteur_Application
   - name: TDF ENERGIE ALLYSS
@@ -9202,6 +9249,8 @@
     topicUid: Connector_help_Teleste_AC8810_SNMP
   - name: Teleste AC9000
     topicUid: Connector_help_Teleste_AC9000
+  - name: Teleste ACE8 SNMP
+    topicUid: Connector_help_Teleste_ACE8_SNMP
   - name: Teleste Amplifier Collector
     topicUid: Connector_help_Teleste_Amplifier_Collector
   - name: Teleste CATVisor EMS
@@ -9812,6 +9861,8 @@
     topicUid: Connector_help_ViaLite_ViaLiteHD_Splitter
   - name: ViaLite ViaLiteHD Switch
     topicUid: Connector_help_ViaLite_ViaLiteHD_Switch
+  - name: ViaLite ViaLiteHD Transmitter
+    topicUid: Connector_help_ViaLite_ViaLiteHD_Transmitter
 - name: Viasat
   topicUid: Connector_help_Viasat_AC4100
   items:
@@ -9935,6 +9986,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service
   - name: Vodafone Kabel Deutschland GmbH Pre-Encoding Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service
+  - name: Vodafone Kabel Deutschland GmbH Probe Monitoring Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Probe_Monitoring_Service
   - name: Vodafone Kabel Deutschland GmbH Qbit Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service
   - name: Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service

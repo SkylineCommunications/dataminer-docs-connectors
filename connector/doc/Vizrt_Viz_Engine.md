@@ -29,7 +29,7 @@ The 1.0.0.x range of this connector uses SNMP to poll information from the Viz E
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
