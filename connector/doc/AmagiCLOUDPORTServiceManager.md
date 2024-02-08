@@ -40,6 +40,9 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the device, by default 443.
 - **Device address**: The device address, by default *ByPassProxy*.
 
+INITIALIZATION
+-Specify the **Username** and **Password** on the **General** page. The driver will automatically send requests using this and will report the response code in the **HTTP Request Status** parameter.
+
 ## How to use
 
 The element created using this connector has the following data pages:
