@@ -3778,6 +3778,8 @@
     topicUid: Connector_help_Finnish_Broadcasting_Company_Order_Manager
   - name: Finnish Broadcasting Company Statistics Manager
     topicUid: Connector_help_Finnish_Broadcasting_Company_Statistics_Manager
+  - name: Finnish Broadcasting Company Lock Manager
+    topicUid: Connector_help_Finnish_Broadcasting_Company_Lock_Manager
 - name: Fluvius
   topicUid: Connector_help_Fluvius_Teleste_Node_Service_Provisioning
   items:
