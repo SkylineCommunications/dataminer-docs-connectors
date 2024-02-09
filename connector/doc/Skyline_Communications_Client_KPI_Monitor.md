@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Communications_Client_KPI_Monitor
 
 # Skyline Communications Client KPI Monitor
 
-This connector allows to process the SLClient log file to retrieve performance KPIs.
+This connector can be used to process SLClient log files to retrieve performance KPIs.
 
 ## About
 
@@ -28,13 +28,9 @@ This connector allows to process the SLClient log file to retrieve performance K
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-This connector does not require initial configuration.
-
 ## How to Use
 
-On the **General** page there are several tables each related to a KPI.
+On the **General** page, there are several tables each related to a KPI:
 
 - Cube Metric Initial Data Duration
 - Cube Metric Initial Subscriptions Duration
@@ -42,4 +38,4 @@ On the **General** page there are several tables each related to a KPI.
 - Cube Connection
 - Visual Overview Load Duration
 
-On the **Settings** page is possible to configure the table cleanup by specifying how many days to keep and maximum entries to keep.
+On the **Settings** page, you can configure the table cleanup by specifying the number of days entries should be kept and the maximum number entries to keep.
