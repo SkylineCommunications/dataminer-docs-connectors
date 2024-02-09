@@ -4,7 +4,7 @@ uid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
 
 # Amagi CLOUDPORT Playout Service Manager
 
-This connector is used to monitor and the Amagi CLOUDPORT Playout Service Manager.
+This connector is used to monitor the Amagi CLOUDPORT Playout Service Manager.
 
 ## About
 
@@ -28,12 +28,6 @@ This connector is used to monitor and the Amagi CLOUDPORT Playout Service Manage
 
 ## Configuration
 
-Once a Token is configure in the driver, this is used for all the requests that the driver sends.
-
-## Initialization
-
-A Token must be configure under the Security page. This is obtained from the GUI or vendor.
-
 ### Connections
 
 #### HTTP Connection
@@ -46,10 +40,14 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
+### Initialization
+
+On the **Security** page, you will need to configure a token obtained from the GUI or vendor. This will be used for all the requests sent by the connector.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
 
-You can find all the information you need to monitor the HTTP connection, Feeds on Air and Headends in the General page.
+On the **General** page, you can find all the information you need to monitor the HTTP connection, the on-air feeds, and the headends.
