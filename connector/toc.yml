@@ -377,6 +377,8 @@
     topicUid: Connector_help_AM_Networks_BridgePort_General_Platform_-_GGA8_O
 - name: Amagi
   items:
+  - name: Amagi CLOUDPORT Playout Service Manager
+    topicUid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
   - name: Amagi CLOUDPORT Service Manager
     topicUid: Connector_help_Amagi_Cloudport_Service_Manager
 - name: Amazon
