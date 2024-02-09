@@ -171,6 +171,29 @@ The provisioning of the EPM Solution is sequential and involves the following co
 
 There is no redundancy defined.
 
+### Thresholds Settings
+
+In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available: one for upstream and one for downstream.
+
+These tables will serve as a multiple set function for all CCAP and CM collectors. Once the 'Apply' button is pressed, the table settings will be applied to the active elements.
+
+These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
+
+- **Maximum Timing Offset Level**: Range from 0 to 2000 µs.
+- **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Minimum SNR Level**: Range from 10 to 60 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+- **Minimum Tx Power Level**: Range from 32 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 32 to 55 dBmV.
+
+These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
+
+- **Minimum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Minimum SNR Level**: Range from 0 to 100 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
 ## How to use
 
 The solution is based on the usage of .CSV files and the DataMiner messaging system using information events.
