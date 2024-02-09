@@ -375,6 +375,10 @@
     topicUid: Connector_help_AM_Networks_BridgePort_General_Platform_-_GGA8_N
   - name: AM Networks BridgePort General Platform - GGA8 O
     topicUid: Connector_help_AM_Networks_BridgePort_General_Platform_-_GGA8_O
+- name: Amagi
+  items:
+  - name: Amagi CLOUDPORT Service Manager
+    topicUid: Connector_help_Amagi_Cloudport_Service_Manager
 - name: Amazon
   topicUid: Connector_help_Amazon_AWS_CloudFormation
   items:
