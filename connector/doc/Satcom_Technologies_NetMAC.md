@@ -28,14 +28,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host:** The polling IP of the device.
-- **Device address:** Not required.
+- **IP address/host**: The polling IP of the device.
+- **Device address**: Not required.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, e.g. *161*.
-- **Get community string:** The community string used when reading values from the device, e.g. *public*.
-- **Set community string:** The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g. *161*.
+- **Get community string**: The community string used when reading values from the device, e.g. *public*.
+- **Set community string**: The community string used when setting values on the device, e.g. *private*.
 
 ### Creation: Range 2.0.1.x
 
@@ -43,25 +43,25 @@ This connector uses 2 Simple Network Management Protocol (SNMP) connections (one
 
 **SNMP CONNECTION:**
 
-- **IP address/host:** The polling IP of FEP A.
-- **Device address:** Not required.
+- **IP address/host**: The polling IP of FEP A.
+- **Device address**: Not required.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, e.g. *161*.
-- **Get community string:** The community string used when reading values from the device, e.g. *public*.
-- **Set community string:** The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g. *161*.
+- **Get community string**: The community string used when reading values from the device, e.g. *public*.
+- **Set community string**: The community string used when setting values on the device, e.g. *private*.
 
 **SNMP CONNECTION FEP B:**
 
-- **IP address/host:** The polling IP of FEP B.
-- **Device address:** Not required.
+- **IP address/host**: The polling IP of FEP B.
+- **Device address**: Not required.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, e.g. *161*.
-- **Get community string:** The community string used when reading values from the device, e.g. *public*.
-- **Set community string:** The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g. *161*.
+- **Get community string**: The community string used when reading values from the device, e.g. *public*.
+- **Set community string**: The community string used when setting values on the device, e.g. *private*.
 
 ## Usage: Range 1.0.0.1
 

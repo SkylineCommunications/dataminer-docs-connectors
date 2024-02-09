@@ -12,12 +12,12 @@ Depending on the range of this connector, incoming data might be **filtered** an
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                            | **Based on** | **System Impact**                                                                   |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                            | \-           | \-                                                                                  |
-| 1.1.0.x              | Some of the logic has been moved to a separate **Generic sFlow Agent** connector.                                                              | 1.0.0.1      | An additional Generic sFlow Agent element will need to be created.                  |
-| 2.0.0.x \[SLC Main\] | \- New branch supporting a different way of handling sFlow packets. - This branch works together with the **Generic sFlow Manager** connector. | \-           | \-                                                                                  |
-| 3.0.0.x              | \- Offloads aggregated sFlow data to the **Elasticsearch** database. - This branch does not support the latest Elasticsearch changes yet.   | 2.0.0.x      | DataMiner Indexing needs to be installed on the DataMiner Agent to use this branch. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.1.0.x | Some of the logic has been moved to a separate **Generic sFlow Agent** connector. | 1.0.0.1 | An additional Generic sFlow Agent element will need to be created. |
+| 2.0.0.x [SLC Main] | - New branch supporting a different way of handling sFlow packets. <br>- This branch works together with the **Generic sFlow Manager** connector. | - | - |
+| 3.0.0.x | - Offloads aggregated sFlow data to the **Elasticsearch** database. <br>- This branch does not support the latest Elasticsearch changes yet. | 2.0.0.x | DataMiner Indexing needs to be installed on the DataMiner Agent to use this branch. |
 
 ### Product Info
 
@@ -32,10 +32,10 @@ Depending on the range of this connector, incoming data might be **filtered** an
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | Generic sFlow Agent   | \-                      |
-| 2.0.0.x   | No                  | Yes                     | Generic sFlow Manager | \-                      |
-| 3.0.0.x   | No                  | Yes                     | Generic sFlow Manager | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | Generic sFlow Agent   | -                       |
+| 2.0.0.x   | No                  | Yes                     | Generic sFlow Manager | -                       |
+| 3.0.0.x   | No                  | Yes                     | Generic sFlow Manager | -                       |
 
 ## Configuration
 

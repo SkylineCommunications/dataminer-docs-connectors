@@ -12,7 +12,7 @@ This connector is designed for the monitoring of the convert function of the EVS
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is designed for the monitoring of the convert function of the EVS
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

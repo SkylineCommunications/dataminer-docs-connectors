@@ -4,18 +4,19 @@ uid: Connector_help_Junger_C8000
 
 # Junger C8000
 
-With this connector, it is possible to monitor **Junger C8000** devices with **SNMP**.
+With this connector, it is possible to monitor Junger C8000 devices with **SNMP**.
 
 ## About
 
 ### Version Info
 
-| **Range**     | **Description**                                                                            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                           | No                  | No                      |
-| 2.0.0.x              | SNMP traps; DVE; status: metadata, encoder, decoder, SDI input, etc.                       | No                  | No                      |
-| 2.0.1.x \[Obsolete\] | Added support for C8492 module. Fixed several issues, renamed Authentication Failure trap. | No                  | No                      |
-| 2.0.3.x \[SLC Main\] | Redesigned connector and added modules.                                                       | No                  | Yes                     |
+| Range              | Description                                                                                | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                           | No              | No                  |
+| 2.0.0.x            | SNMP traps; DVE; status: metadata, encoder, decoder, SDI input, etc.                       | No              | No                  |
+| 2.0.1.x [Obsolete] | Added support for C8492 module. Fixed several issues, renamed Authentication Failure trap. | No              | No                  |
+| 2.0.3.x [Obsolete] | Redesigned connector and added modules.                                                    | No              | Yes                 |
+| 2.0.4.x [SLC Main] | Fixed issue in serial command causing timeout. Changed discrete value.                     | No              | Yes                 |
 
 ### Product Info
 
@@ -25,6 +26,7 @@ With this connector, it is possible to monitor **Junger C8000** devices with **S
 | 2.0.0.x          | Unknown                     |
 | 2.0.1.x          | Unknown                     |
 | 2.0.3.x          | Unknown                     |
+| 2.0.4.x          | Unknown                     |
 
 ## Configuration
 

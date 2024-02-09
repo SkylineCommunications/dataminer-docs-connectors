@@ -26,21 +26,21 @@ Note that the two connectors are not compatible.
 
 | **Range** | **Key Features**                                                                                     | **Based on** | **System Impact**                                                          |
 |-----------|------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------|
-| 1.0.0.x   | Initial SNMP connector. Obsolete.                                                                    | \-           | \-                                                                         |
-| 2.0.0.x   | IIOP used instead of SNMP.                                                                           | \-           | \-                                                                         |
+| 1.0.0.x   | Initial SNMP connector. Obsolete.                                                                    | -            | -                                                                          |
+| 2.0.0.x   | IIOP used instead of SNMP.                                                                           | -            | -                                                                          |
 | 2.0.1.x   | Sub-branch of the 2.0.0.x range with a reduced parameter set. Also known as "SA DCM Lite". Obsolete. | 2.0.0.1      | **-**                                                                      |
 | 2.0.2.x   | Fixed issue in the DCM Alarm Tables.                                                                 | 2.0.0.49     | The display key format has changed for the Input & Output DCM Alarm Tables |
-| 3.0.0.x   | Range created specifically for customer Vodafone New Zealand.                                        | 2.0.0.20     | \-                                                                         |
+| 3.0.0.x   | Range created specifically for customer Vodafone New Zealand.                                        | 2.0.0.20     | -                                                                          |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                                     |
+| Range     | Supported Firmware                                                                                                                                         |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | \-                                                                                                                                                         |
+| 1.0.0.x   | -                                                                                                                                                          |
 | 2.0.0.x   | Before connector version 2.0.0.51, only firmware versions below 16.10 are supported. Connector version 2.0.0.52 adds support for firmware 16.10 and above. |
-| 2.0.1.x   | \-                                                                                                                                                         |
+| 2.0.1.x   | -                                                                                                                                                          |
 | 2.0.2.x   | Firmware version below 16.10                                                                                                                               |
-| 3.0.0.x   | \-                                                                                                                                                         |
+| 3.0.0.x   | -                                                                                                                                                          |
 
 ## Configuration
 

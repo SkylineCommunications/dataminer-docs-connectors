@@ -12,21 +12,21 @@ Each of these resources will represent the fiber link with a mapping to the corr
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                           | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Reads out fiber link info from a CSV file. - Looks up matching EPM object per fiber link ID. - Creates or updates fiber link resources. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Reads out fiber link info from a CSV file. <br>- Looks up matching EPM object per fiber link ID. <br>- Creates or updates fiber link resources. | - | - |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Telenor EPM Manager   | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Telenor EPM Manager   | -                       |
 
 ## Configuration
 

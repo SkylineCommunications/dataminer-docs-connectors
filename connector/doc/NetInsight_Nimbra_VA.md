@@ -12,17 +12,17 @@ The connector uses an SNMP connection to monitor **NetInsight Nimbra VA** device
 
 ### Version Info
 
-| **Range** | **Description**                                                                             | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                             | No                  | Yes                     |
-| 1.1.0.x          | Initial version                                                                             | No                  | Yes                     |
-| 1.2.0.x          | New firmware version (NOTE: version 1.2.0.3 is considered obsolete, and should not be used) | No                  | Yes                     |
+| Range   | Description                                                                                 | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                                                             | No              | Yes                 |
+| 1.1.0.x | Initial version                                                                             | No              | Yes                 |
+| 1.2.0.x | New firmware version (NOTE: version 1.2.0.3 is considered obsolete and should not be used)  | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
+| Range            | Supported Firmware Version  |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
+| 1.0.0.x          | -                           |
 | 1.1.0.x          | FX-VA200.10                 |
 | 1.2.0.x          | VA-12.1.0.0                 |
 
@@ -44,16 +44,16 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private*.
 
-## Usage
-
-## Version 1.0.0.x
+## Usage - Version 1.0.0.x
 
 ### General Page
 
 This page displays general information, such as:
 
 - **System Name**
+
 - **System Uptime**
+
 - **System Description**
 
 ### Input Page
@@ -61,23 +61,28 @@ This page displays general information, such as:
 This page displays a table with the input information, such as:
 
 - **Push information**
+
 - **Pull Information**
+
 - **Jitter**
+
 - **Latency**
+
 - **Uptime**
 
 ### Output Page
 
 This page displays a table with the Output information, such as:
 
-- **Push informartion**
+- **Push information**
+
 - **Jitter**
+
 - **Latency**
+
 - **Bitrate**
 
-## Usage
-
-## Version 1.1.0.x
+## Usage - Version 1.1.0.x
 
 ### General Page
 
@@ -100,15 +105,20 @@ This page displays the **Interface Table** that contains information such as:
 - **Filter**: allows users to adjust the trending and alarm level
 
 - **Topology fields**: Topology configuration
+
   - Interface
+
   - Decoder
+
   - UDP Sink
+
   - Pull Sink
+
   - Push Sink
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Timing Problem
 
@@ -122,7 +132,7 @@ This page displays the **Encoder Table** and the **Decoder Table**. Both tables 
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Subsystem Failure
 
@@ -139,15 +149,20 @@ The **UDP Source** Table contains information such as:
 - **Filter**: allows users to adjust the trending and alarm level
 
 - **Topology fields**: Topology configuration
+
   - Interface
+
   - Encoder
+
   - UDP Sink
+
   - Pull Sink
+
   - Push Sink
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Call Establishment Error (Connection Not Established)
 
@@ -159,7 +174,7 @@ The **UDP Sink Table** contains information such as:
 
 - **Alarm fields**: Alarms from the Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Call Establishment Error (Connection Not Established)
 
@@ -176,15 +191,20 @@ The **Pull Source Table** and the **MPU Source Table** contain information such 
 - **Filter**: allows users to adjust the trending and alarm level
 
 - **Topology fields**: Topology configuration
+
   - Interface
+
   - Encoder
+
   - UDP Sink
+
   - Pull Sink
+
   - Push Sink
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Call Establishment Error (Connection Not Established)
 
@@ -197,15 +217,20 @@ The **Pull Sink Table** contains information such as:
 - **Filter**: allows users to adjust the trending and alarm level
 
 - **Topology fields**: Topology configuration
+
   - Interface
+
   - Encoder
+
   - UDP Sink
+
   - Pull Sink
+
   - Push Sink
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Call Establishment Error (Connection Not Established)
 
@@ -222,15 +247,20 @@ The **Push Source Table** contains information such as:
 - **Filter**: allows users to adjust the trending and alarm level
 
 - **Topology fields**: Topology configuration
+
   - Interface
+
   - Encoder
+
   - UDP Sink
+
   - Pull Sink
+
   - Push Sink
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Call Establishment Error (Connection Not Established)
 
@@ -244,7 +274,7 @@ The **Ls Table** contains information such as:
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
 The **Push Sink Table** contains information such as:
 
@@ -254,7 +284,7 @@ The **Push Sink Table** contains information such as:
 
 - **Alarm fields**: Alarms from the Active Alarm Table
 
-- Configuration Error
+  - Configuration Error
 
   - Call Establishment Error (Connection Not Established)
 
@@ -271,24 +301,28 @@ This page displays the **UDP Statistics** **Table**, **Transport Statistics** **
 This page displays the **Active Alarm Table** contain information such as:
 
 - **Display key**: contains the Index of the table
-- **Object**: object in wich the alarm is active
+
+- **Object**: object in which the alarm is active
+
 - **Alarm Type**
+
 - **Cause**
-- **Severety**
+
+- **Severity**
+
 - **Text**
+
 - **Last Changed Time**
+
 - **Acknowledged**
+
 - **Created Time**
 
 ### Web Page
 
 Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
-
-
-## Usage
-
-## Version 1.2.0.x
+## Usage - Version 1.2.0.x
 
 ### General Page
 
@@ -310,7 +344,7 @@ This page displays tables containing information of various input types, such as
 - **Source Route Transport Sink Information**
 - **Reliable Internet Stream Transport Sink Information**
 
-By right clicking the configuration tables, the user is able to create their own inputs through DataMiner.
+By right clicking the configuration tables, you can create your own inputs through DataMiner.
 
 ### Output Page
 
@@ -322,15 +356,15 @@ This page displays tables containing information of various output types, such a
 - **Source Route Transport Source Information**
 - **Reliable Internet Stream Transport Source Information**
 
-By right clicking the configuration tables, the user is able to create their own outputs through DataMiner.
+By right-clicking the configuration tables, you can create your own outputs through DataMiner.
 
 ### Tunnel Page
 
-This page displays the Reliable Internet Stream Transport Tunnel table, where users can monitor and configure tunnel settings in the device.
+This page displays the Reliable Internet Stream Transport Tunnel table, where you can monitor and configure tunnel settings in the device.
 
 ### Notifications Page
 
-This page displays the events and alarms captured by the device. The user may configure whether DataMiner polls for this information or not.
+This page displays the events and alarms captured by the device. You can configure whether DataMiner polls this information or not.
 
 ### Interfaces Page
 
@@ -347,7 +381,7 @@ This page displays the following information:
 - **Encoder Pipe Information**
 - **Encoder Audio Stream Information**
 
-The user is able to create their own encoder pipeline objects and their audio streams through the table context menus.
+You can create your own encoder pipeline objects and audio streams through the table context menus.
 
 ### Decoder Page
 
@@ -357,7 +391,7 @@ This page displays the following information:
 - **Decoder Audio Configuration**
 - **Decoder Audio Stream**
 
-The user is able to create their own decoder pipeline objects and their decoder audio configurations through the table context menus.
+You can create your own decoder pipeline objects and decoder audio configurations through the table context menus.
 
 ### Statistics Page
 
@@ -382,6 +416,4 @@ Note that the client machine has to be able to access the device, as otherwise i
 
 ### Note
 
-When the user want to do a set in the Input From, it could change the Input **Number** or the Select Input, anyone who chooses the other one can't be on "N/A", in case it changes the **Select Input** and the **Input Number** is on "N/A" it would display a message saying "Input Number can't be N/A, please change it" and if it changes the **Input Number** and the **Select Input** is on "N/A" it would display a message saying "Select Input can't be N/A, please change it". In this way until both parts have a valid value it wont be complete the set on the **Input From**.
-
-
+If you want to do a set in the **Input From**, and you change **Input Number**, **Select Input** may not be N/A, and vice versa. If you change Select Input and Input Number is set to N/A, a message will be displayed to notify you that you should change Input Number, and the same happens if you change Input Number and Select Input is N/A. Until both have a valid value, it will not be possible to complete the Input From set.

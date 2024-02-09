@@ -38,8 +38,8 @@ The KPIs in the topologies are the result of aggregation performed in the **Skyl
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x | Initial version | \- | \- |
-| 1.0.1.x \[SLC Main\] | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | \- | \- |
-| 1.0.2.x \[SLC Main\] | Removed remote view for ONT level | \- | \- |
+| 1.0.1.x [SLC Main]   | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | \- | \- |
+| 1.0.2.x [SLC Main]   | Removed remote view for ONT level | \- | \- |
 
 ### System Info
 

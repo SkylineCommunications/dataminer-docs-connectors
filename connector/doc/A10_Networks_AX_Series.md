@@ -94,7 +94,7 @@ With the **Delete Server** page button, it is possible to delete **Servers** and
 
 - A server: select the **Server Name** from the available list, and click the button **Delete Server**.
 - All servers: just click the **Delete All Servers** button.
-- A port from a server: select the **Server Name** and the **Server** **Port** from the available list (the server port list is available only after you select the **Server Name**), then click the **Delete Port** button to delete the port.
+- A port from a server: select the **Server Name** and the **Server Port** from the available list (the server port list is available only after you select the **Server Name**), then click the **Delete Port** button to delete the port.
 - All ports from a server: select the **Server Name** from the available list, and click the button **Delete All Ports**.
 
 ### Virtual Server Page
@@ -116,7 +116,7 @@ The **Delete Virtual Server** page button allows you to delete **Virtual Servers
 
 - A virtual server: select the **Virtual Server Name** and click the button **Delete Virtual Server**.
 - All virtual servers: just click the **Delete All V. Servers** button.
-- A service from a virtual server: select the **Virtual Server Name** and the **Service Port** from the available list (the list is available only after you select the **Virtual** **Server Name**), then click the **Delete Service** button to delete the service.
+- A service from a virtual server: select the **Virtual Server Name** and the **Service Port** from the available list (the list is available only after you select the **Virtual Server Name**), then click the **Delete Service** button to delete the service.
 - All services from a virtual server: select the **Virtual Server Name** and click the button **Delete All Services**.
 
 ### Service Group Page

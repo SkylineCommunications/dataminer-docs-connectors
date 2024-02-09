@@ -10,15 +10,15 @@ This connector is used to upload key files to elements running an Ericsson RX820
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.x   | Uploading key files to IRDs. | \-           | \-                |
+| 1.0.0.x   | Uploading key files to IRDs. | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

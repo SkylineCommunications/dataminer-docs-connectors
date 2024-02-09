@@ -14,7 +14,7 @@ The connector periodically polls relevant information from the device. This happ
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
@@ -34,9 +34,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host:** The polling IP of the device.
-  - **IP port:** The IP port of the device, by default *2050*.
-  - **Bus Address:** The bus of the card on the chassis. The default, *UU.PP (Hex)*, shows the expected structure of the address, where UU is the chassis ID, and the PP is the card position, both in Hex.
+  - **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device, by default *2050*.
+  - **Bus address**: The bus of the card on the chassis. The default, *UU.PP (Hex)*, shows the expected structure of the address, where UU is the chassis ID, and the PP is the card position, both in Hex.
 
 ## Usage
 

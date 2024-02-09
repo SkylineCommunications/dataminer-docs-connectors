@@ -12,7 +12,7 @@ This connector is exported by the [Ateme AMS](xref:Connector_help_Ateme_AMS) con
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 

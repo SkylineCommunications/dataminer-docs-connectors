@@ -10,9 +10,9 @@ The Netgate XG-1541 security gateway uses pfSenser Plus software and features an
 
 ### Version Info
 
-| **Range**            | **Key Features**                               | **Based on** | **System Impact** |
+| Range                | Key Features                                   | Based on     | System Impact     |
 |----------------------|------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version - Based on Linux Platform SNMP | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version - Based on Linux Platform SNMP | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Netgate XG-1541 security gateway uses pfSenser Plus software and features an
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

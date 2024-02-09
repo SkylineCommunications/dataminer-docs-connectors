@@ -15,7 +15,7 @@ This connector also automatically creates Tandem 10 VF card DVEs if they are ava
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -25,9 +25,9 @@ This connector also automatically creates Tandem 10 VF card DVEs if they are ava
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                          |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                                              |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Crystal Vision Vision 3 Frame - Tandem 10 VF](xref:Connector_help_Crystal_Vision_Vision_3_Frame_-_Tandem_10_VF) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [Crystal Vision Vision 3 Frame - Tandem 10 VF](xref:Connector_help_Crystal_Vision_Vision_3_Frame_-_Tandem_10_VF) |
 
 ## Configuration
 

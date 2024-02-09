@@ -28,7 +28,7 @@ The **IDC STAR Pro Audio Receiver G2** connector is used to monitor and control 
 
 ### Creation
 
-#### SNMP \[Main\] connection
+#### SNMP [Main] connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -50,7 +50,7 @@ This page allows you to manage the following general parameters of the device: *
 
 ### Input
 
-This page allows you to set the inputs on the device, including the **LNB Mode** and **LNB Local Offset Frequency**, the **Preferred Carrier**, the polarization, frequency, mode, symbol rate and NCC PID for Carrier A and B, and the local port and input stream settings**.**
+This page allows you to set the inputs on the device, including the **LNB Mode** and **LNB Local Offset Frequency**, the **Preferred Carrier**, the polarization, frequency, mode, symbol rate and NCC PID for Carrier A and B, and the local port and input stream settings.
 
 ### DVB-TS
 

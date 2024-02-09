@@ -12,11 +12,23 @@ To use this connector, create a service that uses it as the service definition, 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-## Instalation and configuration
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+
+## Installation and configuration
 
 ### Creation
 
@@ -30,7 +42,7 @@ Elements/Parameters:
 
 - [Sky UK VICC](xref:Connector_help_Sky_UK_VICC)
 
-- **Channel From User**
+  - **Channel From User**
   - **Data Update Trigger**
 
 ### Configuration of Elements
@@ -51,7 +63,7 @@ For this workflow, current and future events are grouped differently for each al
 
 **Video Content Missing**: For this table, events are grouped by **Video Item**, if video content is missing, the first occurrence is mentioned by **Event ID** and **Event Time**.
 
-**Logo Content Missing**: For this table, events are grouped by the **On Screen Graphic ID**, if logo content is missing, the first occurence is mentioned by **Event ID** and **Event Time**.
+**Logo Content Missing**: For this table, events are grouped by the **On Screen Graphic ID**, if logo content is missing, the first occurrence is mentioned by **Event ID** and **Event Time**.
 
 **VICC Update** is the date and time of the latest update trigger received from the **VICC** element.
 
@@ -63,21 +75,24 @@ For this workflow, current and future events are grouped differently for each al
 
 ### Subscriptions Active
 
-This shows the **Subscription Table** where you can find detailed information regarding each subscription made under this service. For each subcription (row), you will have:
+This shows the **Subscription Table** where you can find detailed information regarding each subscription made under this service. For each subscription (row), the following information is present:
 
-**SourceKey** **\[IDX\]** - String Key that identifies each subscription which is composed by "DataMiner ID / Element ID / Parameter ID : Row Key Filter" of the parameter subscribed. Please note that Row Key Filter is only needed when a Cell Parameter is subscribed.
+- **SourceKey [IDX]**: String key identifying each subscription. Consists of the "DataMiner ID / Element ID / Parameter ID : Row Key Filter" of the subscribed parameter.
 
-**Parameter Value** - Value of the subscribed parameter.
+- **Parameter Value**: The value of the subscribed parameter.
 
-**DataMiner ID** - DataMiner ID from the DataMiner where the parameter subscribed is running.
+- **DataMiner ID**: The DataMiner ID of the Agent running the subscribed parameter.
 
-**Element ID** - Element ID from the DataMiner where the element subscribed is running.
+- **Element ID**: The element ID of the element containing the subscribed parameter.
 
-**Parameter ID** - Parameter ID from the Element where the parameter subscribed is running.
+- **Parameter ID**: The parameter ID of the subscribed parameter.
 
-**Row Key Filter** - Row Key Filter used to selected a specific row from the table where you want to subscribe the parameter. Please note that Row Key Filter is only needed when a Cell Parameter is subscribed, otherwise it will be 'NA'.
+- **Row Key Filter**: The row key filter used to selected a specific row from the table in order to subscribe to a cell parameter.
 
-**Protocol Name** - Name of the protocol that is running in the subscribed element.
+   > [!NOTE]
+   > The row key filter is only needed for a cell parameter. Otherwise, it is "NA".
+
+- **Protocol Name**: The name of the connector used by the element containing the subscribed parameter.
 
 ### General Parameters
 

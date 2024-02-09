@@ -16,9 +16,9 @@ There also different possibilities available for **alarm monitoring** and **tren
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version \[SLC Main\] | \-           | \-                |
+| 1.0.0.x   | Initial version [SLC Main]   | -            | -                 |
 
 ### Product Info
 
@@ -30,7 +30,7 @@ There also different possibilities available for **alarm monitoring** and **tren
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

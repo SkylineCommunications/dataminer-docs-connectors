@@ -12,15 +12,21 @@ This connector works via SNMP. The data it retrieves can be found on several pag
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 10.0r1                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 10.0r1                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -58,7 +64,7 @@ This page shows the **Number of Pools** and the **Pool Table**, which contains i
 
 ### Nodes
 
-This page shows the **Number of Nodes** and the **Node** **Table**, which contains information on every node of the device.
+This page shows the **Number of Nodes** and the **Node Table**, which contains information on every node of the device.
 
 ### Traffic
 

@@ -10,13 +10,13 @@ The iDirect iQ200 connector polls all data from the device web interface. The UI
 
 ## About
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | EVOLUTION - 21.0.6.3 90 |
 
@@ -24,7 +24,7 @@ The iDirect iQ200 connector polls all data from the device web interface. The UI
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

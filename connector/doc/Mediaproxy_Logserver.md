@@ -12,24 +12,24 @@ The connector uses **SNMP traps** to capture the logging of the device. It uses 
 
 ### Version Info
 
-| **Range**            | **Key Features**              | **Based on** | **System Impact** |
+| Range                | Key Features                  | Based On     | System Impact     |
 |----------------------|-------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.              | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | REST API communication added. | \-           | \-                |
+| 1.0.0.x              | Initial version.              | -            | -                 |
+| 1.0.1.x [SLC Main]   | REST API communication added. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**      |
+| Range     | Supported Firmware          |
 |-----------|-----------------------------|
-| 1.0.0.x   | \-                          |
+| 1.0.0.x   | -                           |
 | 1.0.1.x   | Mediaproxy LogServer API v1 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -62,7 +62,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: Set this to "any".
-  - **IP port:** Set this to "any".
+  - **IP port**: Set this to "any".
 
 Push API:
 

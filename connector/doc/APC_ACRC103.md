@@ -48,7 +48,7 @@ SNMP Settings:
 
 ### General
 
-This page contains basic information about the unit, as well as its **operational status**, which includes **cooling**, **water** **and air flow**, **temperatures** and **running time**.
+This page contains basic information about the unit, as well as its **operational status**, which includes **cooling**, **water and air flow**, **temperatures** and **running time**.
 
 ### Unit Configuration
 

@@ -14,15 +14,21 @@ A serial connection is needed for the connector so it can retrieve and send info
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V2.93                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | V2.93                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -44,6 +50,6 @@ SERIAL CONNECTION:
 
 ### General
 
-This page displays general information such as the **Model Number**, **Serial Number** and **Version**.
+This page displays general information such as the **Model Number**, **Serial Number**, and **Version**.
 
 It also includes more specific parameters such as the **Temperature**, **Current**, **Voltage**, etc.

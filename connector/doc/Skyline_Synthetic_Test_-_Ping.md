@@ -10,21 +10,21 @@ This connector is used in the Synthetic Test Solution and is intended to be the 
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                           | **Based on** | **System Impact** |
-|-----------|--------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | \- Part of the Synthetic Test Solution. - Ability to perform ping with Process Automation. | \-           | \-                |
+| Range   | Key Features                                                                                  | Based on | System Impact |
+|---------|-----------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | - Part of the Synthetic Test Solution. <br>- Ability to perform ping with Process Automation. | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

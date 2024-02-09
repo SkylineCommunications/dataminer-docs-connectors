@@ -12,22 +12,22 @@ This connector allows you to monitor the FOR-A MV-4220 Multiviewer device via an
 
 | **Range**            | **Key Features**         | **Based on** | **System Impact**                      |
 |----------------------|--------------------------|--------------|----------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.         | \-           | \-                                     |
-| 1.0.1.x \[SLC Main\] | Serial connection added. | 1.0.0.1      | New connection needs to be configured. |
+| 1.0.0.x [Obsolete]     |Initial version.         | -            | -                                      |
+| 1.0.1.x [SLC Main]   | Serial connection added. | 1.0.0.1      | New connection needs to be configured. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,8 +12,8 @@ The Spectrum VUE-2 is a next-generation spectrum measurement and analysis unit w
 
 | **Range**            | **Key Features**                                  | **Based On** | **System Impact** |
 |----------------------|---------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                  | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | DataMiner protocol feature for lengthy responses. | 1.0.0.4      | \-                |
+| 1.0.0.x              | Initial version.                                  | -            | -                 |
+| 1.0.1.x [SLC Main]   | DataMiner protocol feature for lengthy responses. | 1.0.0.4      | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ The Spectrum VUE-2 is a next-generation spectrum measurement and analysis unit w
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -39,8 +39,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
-- **IP port:** The IP port of the device.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
 
 ## Usage
 

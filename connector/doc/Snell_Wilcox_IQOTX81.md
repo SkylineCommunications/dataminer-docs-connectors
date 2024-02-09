@@ -12,15 +12,21 @@ This connector allows the management of the **Snell Wilcox IQOTX81** using a ser
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 5.0.7                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 5.0.7                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -35,8 +41,8 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device, e.g. *192.168.14.10*.
-  - **IP Port:** The IP port of the device, e.g. *2050*.
-  - **Bus address:** Used to fill in the Unit Address and the Unit Port, e.g. *26.02* is for Unit Address *0x26* and Unit Port *0x02*.
+  - **IP port**: The IP port of the device, e.g. *2050*.
+  - **Bus address**: Used to fill in the Unit Address and the Unit Port, e.g. *26.02* is for Unit Address *0x26* and Unit Port *0x02*.
 
 ## Usage
 

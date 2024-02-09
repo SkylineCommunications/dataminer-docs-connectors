@@ -12,7 +12,7 @@ The 7881IRD2 series is used to receive, demodulate, and decode digital ATSC/DVB-
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.2.x   | \-                     |
+| 1.0.2.x   | -                      |
 
 ### System Info
 

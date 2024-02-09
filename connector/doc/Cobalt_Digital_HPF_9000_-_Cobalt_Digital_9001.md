@@ -12,7 +12,7 @@ The Cobalt Digital 9001 is an exported DVE SNMP card for a modular frame. The ca
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,7 +22,7 @@ The Cobalt Digital 9001 is an exported DVE SNMP card for a modular frame. The ca
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                          |
 |-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------|
 | 1.0.0.x   | No                  | Yes                     |                       | [Cobalt Digital HPF 9000](xref:Connector_help_Cobalt_Digital_HPF_9000) |
 

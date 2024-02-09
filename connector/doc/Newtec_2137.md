@@ -12,15 +12,21 @@ As a successor of the NTC/2187, the NTC/2137 has now been fully integrated into 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.1.31.x         | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.1.31.x [SLC Main]  | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.1.31.x         | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.1.31.x  | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.1.31.x  | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

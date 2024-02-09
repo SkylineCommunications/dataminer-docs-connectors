@@ -12,13 +12,13 @@ Besides showing the status for each node, it also aggregates the information to 
 
 ### Version Info
 
-| **Range**            | **Corresponding NetInsight Nimbra Version** | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | 3.0.0.x \[Obsolete\]                        | \-           | \-                |
-| 1.0.1.x \[Obsolete\] | 3.0.1.x \[Obsolete\]                        | \-           | \-                |
-| 2.0.0.x \[Obsolete   | 4.0.0.x \[Obsolete\]                        | \-           | \-                |
-| 2.0.1.x \[Obsolete\] | 4.1.0.x \[Obsolete\]                        | \-           | \-                |
-| 2.0.2.x \[SLC Main\] | 4.1.1.x \[SLC Main\]                        | \-           | \-                |
+| Range              | Corresponding NetInsight Nimbra Version | Based on | System Impact |
+|--------------------|-----------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | 3.0.0.x [Obsolete]                      | -        | -             |
+| 1.0.1.x [Obsolete] | 3.0.1.x [Obsolete]                      | -        | -             |
+| 2.0.0.x [Obsolete] | 4.0.0.x [Obsolete]                      | -        | -             |
+| 2.0.1.x [Obsolete] | 4.1.0.x [Obsolete]                      | -        | -             |
+| 2.0.2.x [SLC Main] | 4.1.1.x [SLC Main]                      | -        | -             |
 
 ### Product Info
 
@@ -34,8 +34,8 @@ Besides showing the status for each node, it also aggregates the information to 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 2.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

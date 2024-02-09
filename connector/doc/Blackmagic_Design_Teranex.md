@@ -13,11 +13,11 @@ Regardless of conversion, all processing is done in real time with minimal laten
 
 | **Range**            | **Key Features**             | **Based On** | **System Impact** |
 |----------------------|------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version - Teranex AV | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version - Teranex AV | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                       |
+| Range     | Supported Firmware                                           |
 |-----------|--------------------------------------------------------------|
 | 1.0.0.x   | This connector only supports Teranex AV Protocol Preamble: 3.22 |
 
@@ -25,7 +25,7 @@ Regardless of conversion, all processing is done in real time with minimal laten
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

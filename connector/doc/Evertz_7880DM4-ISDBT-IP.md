@@ -12,11 +12,11 @@ An **SNMP** connection is used in order to successfully retrieve and configure t
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                            | \-           | \-                |
-| 1.0.1.x              | Changed the DVE and tree view distribution. | 1.0.0.3      | \-                |
-| 1.0.2.x \[SLC Main\] | Added HTTP connection.                      | 1.0.1.2      | \-                |
+| Range              | Key Features                                | Based on | System Impact |
+|--------------------|---------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                            | -        | -             |
+| 1.0.1.x            | Changed the DVE and tree view distribution. | 1.0.0.3  | -             |
+| 1.0.2.x [SLC Main] | Added HTTP connection.                      | 1.0.1.2  | -             |
 
 ### Product Info
 
@@ -28,53 +28,40 @@ An **SNMP** connection is used in order to successfully retrieve and configure t
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                          |
-|-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
-| 1.0.2.x   | No                  | Yes                     | \-                    | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
+| 1.0.1.x | No | Yes | - | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
+| 1.0.2.x | No | Yes | - | [Evertz 7880DM4-ISDBT-IP - Decoder](xref:Connector_help_Evertz_7880DM4-ISDBT-IP_-_Decoder) |
 
 ## Configuration
 
-### Connections
+### Connections - All ranges
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>All ranges</td>
-<td><h4 id="snmp-main-connection">SNMP Main Connection</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>Get community string</strong>: The community string used when reading values from the device (default: <em>public</em>).</li>
-<li><strong>Set community string</strong>: The community string used when setting values on the device (default: <em>private</em>).</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>1.0.2.x</td>
-<td><h4 id="http-main-connection">HTTP Main Connection</h4>
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+
+SNMP Settings:
+
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+### Connections - Range 1.0.2.x
+
+#### HTTP Main Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
 
 ## How to use
 

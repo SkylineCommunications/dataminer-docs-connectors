@@ -10,21 +10,21 @@ This connector allows you to monitor and control **Infinera XTM** devices. It us
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                       | **Based on** | **System Impact** |
+| Range                | Key Features                                                                           | Based on     | System Impact     |
 |----------------------|----------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version: monitoring of interfaces, client interfaces, Mes Ports, Mes Vlan Map. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version: monitoring of interfaces, client interfaces, Mes Ports, Mes Vlan Map. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,15 +12,21 @@ This connector provides a monitoring interface for the **Motorola GX2-OSW10B-R**
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.1.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 2.0.1.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.1.x          | D                           |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 2.0.1.x   | D                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,11 +38,11 @@ This connector is used by DVE child elements that are **automatically created** 
 
 ### General
 
-This page displays general information about the card, including the **Unit Name**, **Module Type**, **Firmware** and **Hardware** **Version**, **IP Address** and **Physical Address**.
+This page displays general information about the card, including the **Unit Name**, **Module Type**, **Firmware** and **Hardware Version**, **IP Address** and **Physical Address**.
 
 ### Optical Switch
 
-This page contains the parameters **Digital Switch Control**, **Operation Mode**, **Switch Mode**, **Revert Mode**, **Revert Time**, **Switch Monitor**, **Factory Default** and **Analog** **Input Level.**
+This page contains the parameters **Digital Switch Control**, **Operation Mode**, **Switch Mode**, **Revert Mode**, **Revert Time**, **Switch Monitor**, **Factory Default** and **Analog Input Level.**
 
 It also contains a page button that displays among others a **counter** related to the **Digital Switch Monitor**. This counter will be increased each time the parent parameter (Digital Switch Monitor) changes from *Through* to *Crossover*. The subpage also includes a button that allows you to reset the value of the counter.
 

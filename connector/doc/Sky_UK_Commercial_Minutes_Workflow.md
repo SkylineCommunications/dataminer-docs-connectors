@@ -12,9 +12,21 @@ To use this connector, create a service that uses it as its service definition, 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -40,7 +52,7 @@ Parameters:
 
 ### Early Warning List
 
-This page displays a table with the alarms from each element that was configured for the service. The table displays the **Cause**, **Alarm State**, **Channel,** **Alarm Time** and **Target UI.** Depending on the channel type (General, Entertainment and Sports) of the element, some alarms might not be displayed.
+This page displays a table with the alarms from each element that was configured for the service. The table displays the **Cause**, **Alarm State**, **Channel, Alarm Time** and **Target UI.** Depending on the channel type (General, Entertainment and Sports) of the element, some alarms might not be displayed.
 
 ### Device Data
 

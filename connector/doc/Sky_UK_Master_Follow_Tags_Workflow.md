@@ -12,9 +12,21 @@ To use this connector, create a service that uses it as the service definition, 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -30,7 +42,7 @@ Elements/Parameters:
 
 - [Sky UK VICC](xref:Connector_help_Sky_UK_VICC) (Master element)
 
-- **Data Update Trigger**
+  - **Data Update Trigger**
 
 - [Sky UK VICC](xref:Connector_help_Sky_UK_VICC) (Follow element)
 
@@ -60,7 +72,7 @@ From version 1.0.0.11 subscription parameters have changed
 
 ### Alarms
 
-This page displays the **Early Warning List Table** with the alarms from each element that was configured for the service. The table displays the **Cause**, **Alarm State**, **Channel,** **Alarm Time** and **Target UI.**
+This page displays the **Early Warning List Table** with the alarms from each element that was configured for the service. The table displays the **Cause**, **Alarm State**, **Channel, Alarm Time** and **Target UI.**
 
 ### Device Data
 

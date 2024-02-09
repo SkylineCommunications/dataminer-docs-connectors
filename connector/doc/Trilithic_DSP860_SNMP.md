@@ -12,17 +12,17 @@ This connector displays a table with the different information on input level an
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Basic range     | No                  | Yes                     |
-| 1.1.0.x          | Release version | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Basic range     | No              | Yes                 |
+| 1.1.0.x | Release version | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 10.7.7.2                    |
-| 1.1.0.x          | 10.7.7.2                    |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 10.7.7.2                   |
+| 1.1.0.x | 10.7.7.2                   |
 
 ## Installation and configuration
 

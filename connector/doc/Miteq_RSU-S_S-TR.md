@@ -14,7 +14,7 @@ The connector polls relevant information from the device every 10 seconds, 15 se
 
 | **Range**            | **Key Features**     | **Based on** | **System Impact** |
 |----------------------|----------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Monitoring & control | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Monitoring & control | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The connector polls relevant information from the device every 10 seconds, 15 se
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

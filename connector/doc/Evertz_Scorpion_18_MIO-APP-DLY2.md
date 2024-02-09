@@ -12,7 +12,7 @@ This connector is used to monitor the Evertz Scorpion 18 MIO-APP-DLY2 module.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is used to monitor the Evertz Scorpion 18 MIO-APP-DLY2 module.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -36,15 +36,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: \[The polling IP or URL of the storage system\]
+- **IP address/host**: The polling IP or URL of the storage system.
 
 SNMP Settings:
 
-- **Port number**: \[The IP port of the storage system. e.g. *161\]*
-- **Get community string**: \[The community string used when reading values from the device
-  (default value if not overridden in the connector: *public*).
-- **Set community string**: \[The community string used when setting values on the device
-  (default value if not overridden in the connector: *private*).
+- **Port number**: The IP port of the storage system. e.g. *161*.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ### Web Interface
 
@@ -54,8 +52,7 @@ The web interface is only accessible when the client machine has network access 
 
 All data available is retrieved using the **SNMP** interface of the Evertz Scorpion 18 MIO-APP-DLY2.
 
-The **General** page contains all data related to **System.
-**
+The **General** page contains all data related to **System**.
 
 The **Network Management** page contains tables related to network configuration, NTP servers and SNMP Trap servers.
 

@@ -24,7 +24,7 @@ This page displays information about the **Serial Number**, **Temperature**, **P
 
 ### Config
 
-The page allows the configuration of parameters such as **Tx** and **Rx** **Frequency**, **Mute/Unmute Tx** and **Rx**, etc.
+The page allows the configuration of parameters such as **Tx** and **Rx Frequency**, **Mute/Unmute Tx** and **Rx**, etc.
 
 ### Alarms
 

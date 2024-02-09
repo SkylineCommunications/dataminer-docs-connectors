@@ -34,8 +34,8 @@ This connector uses a Smart-Serial connection and requires the following input d
 
 - Inteface connection:
 
-- **IP address/host:** The polling IP of the device.
-  - **IP port:** The IP port of the device.
+- **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device.
 
 ## Usage
 

@@ -15,9 +15,9 @@ The **Utah Scientific 400 Router RCPv3** shows us a **Matrix** with different **
 This connector is **smart-serial**, which will say the device sending information about his changes without asking for them. Therefor you need to configure the connector as follow:
 
 - **Type of port:** TCP/IP
-- **IP Address/host:** the IP Address of the device
-- **IP Port:** This is the **IP Port** of the device on which you want to communicate. **5001 par example.**
-- **Bus Address:** This has **two parts** separated by the **separator** `-`. The first part is the **level** of the router that the element want to represent. The second part is the **Panel ID** of the router.
+- **IP address/host**: the IP Address of the device
+- **IP port**: This is the **IP Port** of the device on which you want to communicate. **5001 par example.**
+- **Bus address**: This has **two parts** separated by the **separator** `-`. The first part is the **level** of the router that the element want to represent. The second part is the **Panel ID** of the router.
 - **Local IP Port:** For each element on the same PC/Server you use a **different TCP/IP port** (for example 50000). This is because the device needs to know to which element it has to respond. If you do not set the IP port, the connector would be confused.
 
 ## Usage

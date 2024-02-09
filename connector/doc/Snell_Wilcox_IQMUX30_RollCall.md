@@ -12,15 +12,21 @@ The connector allows the management of the **Snell Wilcox IQMUX30 Rollcall** usi
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 4674                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 4674                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -42,12 +48,12 @@ SERIAL CONNECTION:
 
 ### General Page
 
-This page contains the **Display** parameter and the **Status Display** parameter. An overview of module statuses is also displayed, such as **Software** **version**, **KOS**, **Build**, **PCB**, **Firmware**, **UpTime**, **Licensed** **Options**, **Product** and **Serial Number.**
+This page contains the **Display** parameter and the **Status Display** parameter. An overview of module statuses is also displayed, such as **Software version**, **KOS**, **Build**, **PCB**, **Firmware**, **UpTime**, **Licensed Options**, **Product** and **Serial Number.**
 
 Additionally, there are three buttons:
 
-- **Factory** **Default**: Resets all module settings to factory-specified default values and clears memories
-- **Default** **Settings**: Resets all module settings to factory-specified defaults but does not clear memories.
+- **Factory Default**: Resets all module settings to factory-specified default values and clears memories
+- **Default Settings**: Resets all module settings to factory-specified defaults but does not clear memories.
 - **Restar**: Software restart of the module.
 
 The parameters of the output display are also displayed.
@@ -58,11 +64,11 @@ This page contains information about video.
 
 ### Procamp Page
 
-This page contains information about the processing amplifier, e.g. **ProcAmp** **Enable**, **Black** **Level**, **Hue** **Adjust**, **Master** **Video** **Gain**, **Y Gain**, **Cb/Cr Gain**, **Y/C Timing**, etc.
+This page contains information about the processing amplifier, e.g. **ProcAmp Enable**, **Black Level**, **Hue Adjust**, **Master Video Gain**, **Y Gain**, **Cb/Cr Gain**, **Y/C Timing**, etc.
 
 ### Video Delay Page
 
-This page provides an overview of the video delay: **Horizontal** **Delay**, **Vertical** **Delay**, **Frame** **Delay** **Added** and **Active** **Video** **Delay**.
+This page provides an overview of the video delay: **Horizontal Delay**, **Vertical Delay**, **Frame Delay Added** and **Active Video Delay**.
 
 ### Embedder 1 Page
 
@@ -86,7 +92,7 @@ This page contains the audio controls for the groups.
 
 ### Audio Page
 
-This page contains information about the audio, e.g. **Frequency**, **Channel** **ident**, **Internal** **Status**, **Silence** **Level**, **Overload** **Level**, **Warning** **Timer**, etc.
+This page contains information about the audio, e.g. **Frequency**, **Channel ident**, **Internal Status**, **Silence Level**, **Overload Level**, **Warning Timer**, etc.
 
 ### Pattern & Caption Page
 
@@ -118,7 +124,7 @@ This page contains the output audiolog settings. Note that all status parameters
 
 ### Rolltrack Page
 
-This page provides a simple command interface that can be used to send unconnected Rolltrack commands to any Rollcall-compatible unit on the network. The following parameters are displayed: **Rolltrack Disable All**, **Rolltrack Index 1, Rolltrack Address 1**, **Rolltrack** **Sending, Rolltrack Source 1**, **Rolltrack Command 1** and **Rolltrack** **Status**.
+This page provides a simple command interface that can be used to send unconnected Rolltrack commands to any Rollcall-compatible unit on the network. The following parameters are displayed: **Rolltrack Disable All**, **Rolltrack Index 1, Rolltrack Address 1**, **Rolltrack Sending, Rolltrack Source 1**, **Rolltrack Command 1** and **Rolltrack Status**.
 
 ### Web Interface Page
 

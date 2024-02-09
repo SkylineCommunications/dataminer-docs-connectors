@@ -15,7 +15,7 @@ This is a DataMiner connector for the Nevion Virtuoso MI, a media server designe
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x [SLC Main] | SNMP traps implemented. | 1.0.0.1 | Existing elements need to be reconfigured before the new connection will be taken in use. |
 | 1.1.0.x [Obsolete] | Support added for firmware using TXP communication. Refer to the [Nevion Virtuoso FA](xref:Connector_help_Nevion_Virtuoso_FA). | - | Most parameters present in previous ranges do not exist in this range. |
-| 1.1.1.x [Obsolete] | Communication using TXP. Refer to the [Nevion Virtuoso FA](xref:Connector_help_Nevion_Virtuoso_FA). | 1.1.0.2 | Parameters and tables added. |
+| 1.1.1.x [Obsolete] | Communication using TXP. Refer to the [Nevion Virtuoso FA](xref:Connector_help_Nevion_Virtuoso_FA). | 1.1.0.2 | Adding parameters and tables. |
 
 ### Product Info
 
@@ -28,13 +28,12 @@ This is a DataMiner connector for the Nevion Virtuoso MI, a media server designe
 
 ### System Info
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
-| 1.0.1.x | No              | Yes                 | -                 | -                   |
-| 1.1.0.x | No              | Yes                 | -                 | -                   |
-| 1.1.1.x | No              | Yes                 | -                 | -                   |
-| 1.0.2.x | No              | Yes                 | -                 | -                   |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

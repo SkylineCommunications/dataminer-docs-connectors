@@ -12,7 +12,7 @@ This connector is used to create connections between two elements, a source and 
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ## Installation and configuration
 

@@ -12,7 +12,7 @@ Touchstream VirtualNOC is a connector used to communicate with the Touchstream A
 
 | **Range**            | **Key Features**                        | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Implemented detailed stream status API. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Implemented detailed stream status API. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ Touchstream VirtualNOC is a connector used to communicate with the Touchstream A
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ### Connections
 

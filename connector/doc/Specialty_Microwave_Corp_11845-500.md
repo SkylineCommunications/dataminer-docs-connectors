@@ -14,15 +14,21 @@ This connector is designed to work with the **Antenna Switching Panel, Part No. 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                                      |
-|------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x          | Information about the device firmware is currently unavailable. The current implementation is based on Revision 0 of the device's documentation. |
+| Range   | Supported Firmware                                                                                                                               |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.0.0.x | Information about the device firmware is currently unavailable. The current implementation is based on Revision 0 of the device's documentation. |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 

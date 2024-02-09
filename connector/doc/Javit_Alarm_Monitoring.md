@@ -13,7 +13,7 @@ The Javit Alarm Monitoring connector displays a list of all monitoring computers
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -25,7 +25,7 @@ The Javit Alarm Monitoring connector displays a list of all monitoring computers
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

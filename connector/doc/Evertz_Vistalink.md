@@ -16,13 +16,13 @@ The connector also has an HTTP interface that will gather all the alarms registe
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact** |
 |----------------------|------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.       | \-           | \-                |
-| 1.1.0.x              | Initial version.       | \-           | \-                |
-| 1.1.1.x \[SLC Main\] | Dynamic polling added. | 1.1.0.3      | \-                |
+| 1.0.0.x              | Initial version.       | -            | -                 |
+| 1.1.0.x              | Initial version.       | -            | -                 |
+| 1.1.1.x [SLC Main]   | Dynamic polling added. | 1.1.0.3      | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                |
+| Range     | Supported Firmware                                                                                    |
 |-----------|-------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Range based on MIB with NMP traps from July 7, 2016 - no specific version is highlighted in the MIB.  |
 | 1.1.0.x   | Range based on MIB with NMP traps from July 21, 2014 - no specific version is highlighted in the MIB. |
@@ -30,11 +30,11 @@ The connector also has an HTTP interface that will gather all the alarms registe
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**   |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components       |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | Evertz Vistalink Hardware |
-| 1.1.0.x   | No                  | No                      | \-                    | \-                        |
-| 1.1.1.x   | No                  | No                      | \-                    | \-                        |
+| 1.0.0.x   | No                  | No                      | -                     | Evertz Vistalink Hardware |
+| 1.1.0.x   | No                  | No                      | -                     | -                         |
+| 1.1.1.x   | No                  | No                      | -                     | -                         |
 
 ## Configuration
 

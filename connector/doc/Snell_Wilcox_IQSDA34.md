@@ -15,14 +15,14 @@ The connector periodically polls relevant information from the device for every 
 | **Range**     | **Description**                 |
 |----------------------|---------------------------------|
 | 1.0.0.x              | Initial Version                 |
-| 1.0.1.x \[SLC Main\] | Fixed channel source discreets. |
+| 1.0.1.x [SLC Main]   | Fixed channel source discreets. |
 
 ### Product Info
 
 | **Range**     | **Device Firmware Version**                                         |
 |----------------------|---------------------------------------------------------------------|
 | 1.0.0.x              | Not related to firmware, but compatible with software version 5.2.6 |
-| 1.0.1.x \[SLC Main\] | Not related to firmware, but compatible with software version 5.2.6 |
+| 1.0.1.x [SLC Main]   | Not related to firmware, but compatible with software version 5.2.6 |
 
 ## Installation and Configuration
 
@@ -37,7 +37,7 @@ The connector uses a serial TCP/IP connection and requires the following input d
 **Serial Settings:**
 
 - **Port number**: *2050 (by default);*
-- **Bus address:** *xx.yy .*
+- **Bus address**: *xx.yy .*
 
 ## Usage
 

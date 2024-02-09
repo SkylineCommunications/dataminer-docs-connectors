@@ -12,7 +12,7 @@ This is a virtual connector that is used to control/monitor the 21C Ingest Probe
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,7 +22,7 @@ This is a virtual connector that is used to control/monitor the 21C Ingest Probe
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                  | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                      | Exported Components     |
 |-----------|---------------------|-------------------------|------------------------------------------------------------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | [IneoQuest Surveyor TS](xref:Connector_help_IneoQuest_Surveyor_TS) | /                       |
 

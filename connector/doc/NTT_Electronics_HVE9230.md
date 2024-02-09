@@ -4,7 +4,7 @@ uid: Connector_help_NTT_Electronics_HVE9230
 
 # NTT Electronics HVE9230
 
-The **NTT ELECTRONICS HVE9230** is enhanced AVC/H.264 encoder which provides advanced features of 16 channels audio for 8 stereo, 5.1 ch. + stereo, or 8 PES transmission. Ancillary Data transmission or High Efficiency Video Mode in addition to the features available on HVE9200. HVE9230 also provides One Frame Super Low Latency for high quality video transmission, Closed Cationing for IPTV or CATV AVC/H.264 transmissions.
+The **NTT ELECTRONICS HVE9230** is enhanced AVC/H.264 encoder which provides advanced features of 16 channels audio for 8 stereo, 5.1 ch. + stereo, or 8 PES transmission. Ancillary Data transmission or High Efficiency Video Mode in addition to the features available on HVE9200. HVE9230 also provides One Frame Super Low Latency for high quality video transmission, Closed Captioning for IPTV or CATV AVC/H.264 transmissions.
 
 ## About
 
@@ -12,15 +12,21 @@ Using this connector, is possible to monitor the hardware and performance status
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 07.00                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 07.00                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -48,7 +54,7 @@ There is a **Reset** button that can be used to perform a system-wide reset.
 
 - Page Buttons:
 
-- Memory
+  - Memory
   - NTP
   - Test Signal
 
@@ -66,7 +72,7 @@ This page displays The format select of the **Stream** transmission, i.e Channel
 
 ### Video Page
 
-This page displays information related to the **Video Format.** Examples are **Video Aspect**, **Latency** **Mode** and **Entropy**.
+This page displays information related to the **Video Format.** Examples are **Video Aspect**, **Latency Mode** and **Entropy**.
 
 ### Audio Page
 
@@ -74,7 +80,7 @@ On this page can view the general information about Audio, such as **Audio Gain 
 
 - Page Buttons:
 
-- Settings
+  - Settings
   - Audio Gain Level
   - Audio Map Mode
 
@@ -88,7 +94,7 @@ On this page can view the general information about **PID**, such as **Audio Pac
 
 - Page Buttons:
 
-- Audio ID
+  - Audio ID
 
 ### IO Page
 
@@ -96,7 +102,7 @@ This page displays information about **Output service.**
 
 - Page Buttons:
 
-- PSI
+  - PSI
   - BISS
 
 ### IP Page
@@ -109,7 +115,7 @@ This page displays information about **Encoder Settings**.
 
 - Page Buttons:
 
-- Param Select
+  - Param Select
 
 ### Network
 
@@ -117,12 +123,10 @@ On the Network page you are able to view and configure the Control and Data.
 
 - Page Buttons:
 
-- Settings
+  - Settings
 
 ### Web Interface Page
 
-This page shows the device's Webinterface through DataMiner.
+This page shows the device's web interface through DataMiner.
 
-## Notes
-
-Note that, the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

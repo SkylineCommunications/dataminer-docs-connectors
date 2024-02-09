@@ -10,15 +10,17 @@ This connector is capable of collecting cable modem and ONT data defined in a Sk
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range              | Key Features                                               | Based on | System Impact |
+|--------------------|------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                           | -        | -             |
+| 1.0.1.x [SLC Main] | Gathers information from files created by Data Aggregator. | -        | -             |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -28,11 +30,11 @@ This connector is capable of collecting cable modem and ONT data defined in a Sk
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-## How to use
+## How to use - 1.0.0.X
 
-On the **General** page, you need to provide basic information to enable the retrieval and storage of cable modem and ONT data. You also need to set up the **Export Directory** by specifying the local path where the output data will be stored.
+On the **General** page, you need to provide basic information to enable the retrieval and storage of cable modem and ONT data.
 
-The General page also contains the **Configuration Table**. In this table, you need to create a row (By selecting *Add row* in the right-click menu) for each **Type** and **Domain** from which the data must be collected. The following data must be filled in for each row:
+The General page also contains the **Configuration Table**. In this table, you must create a row (By selecting *Add row* in the right-click menu) for each **Type** and **Domain** from which the data must be collected. The following data must be filled in for each row:
 
 - **Type**: Select *ONT* or *MAC*, depending on the type of data that should be collected.
 - **Domain**: Define the system domain. If the data is located locally, mark this field as *N/A*.
@@ -41,3 +43,10 @@ The General page also contains the **Configuration Table**. In this table, you n
 - **System User**: The username that will be used to access the ONT or MAC data. Do not include the domain if the directory is remote. If the directory is local, set the value to *N/A*.
 - **Password**: The password that will be used along with the defined System User to access the ONT or MAC data. If the value is local, set the value to *N/A*.
 - **Front End Element**: The DMA ID/element ID of the corresponding front-end element.
+- **Front End IP**: The IP address of the corresponding front-end server.
+
+## How to use - 1.0.1.X
+
+With this range of the connector, no setup is required required. The connector uses files created by the DataMiner Data Aggregator module.
+
+Once the Data Aggregator jobs are set up and running, the connector will go to the directory and process the files.

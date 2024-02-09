@@ -14,11 +14,11 @@ The connector uses **SNMP** to retrieve data from the **load balancer** and conf
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                               |
+| Range     | Device Firmware Version                                   |
 |------------------|-----------------------------------------------------------|
 | 1.0.0.x          | 1.2.28-201805012049E4.x86_64 1.2.59a-201806191849N4x86_64 |
 

@@ -12,23 +12,29 @@ The Stagetec PMT32 transmits all amplified signals to the required speaker lines
 
 This connector retrieves data via **Serial Communication TCP/IP**. Commands are sent to the device with or without a response in return.
 
-- This connector exports a connector which corresponds to a slot. A list can be found in the section 'Exported Connectors'".
+- This connector exports a connector that corresponds to a slot (see [Exported Connectors](#exported-connectors)).
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | NA                          |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-### Exported connectors
+### System Info
 
-| **Exported Connector** | **Description** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | See table below.        |
+
+### Exported Connectors
+
+| Exported Connector    | Description     |
 |-----------------------|-----------------|
 | Stagetec PMT32 Slot   | Slot modules    |
 
@@ -53,4 +59,4 @@ SERIAL CONNECTION:
 ### General
 
 The **General Page** shows if the device is still responding to the commands with the **Keep Alive Responding** and with the **Host State** parameters.
-There is also the **Slot Table**, which is the main **DVE Table**, displaying the **State** **of each** **Module** and also allows the user to **rename each DVE** and hide with the **DVE Status** parameter.
+There is also the **Slot Table**, which is the main **DVE Table**, displaying the **State of each Module** and also allows the user to **rename each DVE** and hide with the **DVE Status** parameter.

@@ -12,51 +12,25 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 
 ### Version Info
 
-| **Range**                | **Key Features**                                                                                                                                                                                                                  | **Based on** | **System Impact**                                                                                                                                                                                     |
-|--------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x                  | \- Monitoring of ETR-enabled **streams/services/PIDs**. - Monitoring of **ETR checks**. - Monitoring of **OTT channels** and **OTT profiles**. - Monitoring of the probe **alarms** with precise probe times match (history set). | \-           | \-                                                                                                                                                                                                    |
-| 1.1.0.x                  | \- **Ethernet streams provisioning** from **Automation script**.                                                                                                                                                                  | 1.0.0.x      | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
-| **1.1.1.x \[SLC Main\]** | \- InterApp Messages available via NuGet package.                                                                                                                                                                                 | 1.1.0.x      | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code.                                    |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | - Monitoring of ETR-enabled **streams/services/PIDs**. <br>- Monitoring of **ETR checks**. <br>- Monitoring of **OTT channels** and **OTT profiles**. <br>- Monitoring of the probe **alarms** with precise probe times match (history set). | - | - |
+| 1.1.0.x | - **Ethernet streams provisioning** from **Automation script**. | 1.0.0.x | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
+| **1.1.1.x \[SLC Main\]** | - InterApp Messages available via NuGet package. | 1.1.0.x | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code. |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Supported Firmware</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x / 1.1.0.x</td>
-<td><p><strong>Firmware 5.4</strong> or higher is required, and the following probe models are supported:</p>
-<ul>
-<li>Bridge Technologies VB120</li>
-<li>Bridge Technologies VB220</li>
-<li>Bridge Technologies VB240</li>
-<li>Bridge Technologies VB242</li>
-<li>Bridge Technologies VB250</li>
-<li>Bridge Technologies VB252</li>
-<li>Bridge Technologies VB260</li>
-<li>Bridge Technologies VB262</li>
-<li>Bridge Technologies VB270</li>
-<li>Bridge Technologies VB272</li>
-<li>Bridge Technologies VB330</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x / 1.1.0.x | **Firmware 5.4** or higher is required, and the following probe models are supported:<br>- Bridge Technologies VB120<br>- Bridge Technologies VB220<br>- Bridge Technologies VB240<br>- Bridge Technologies VB242<br>- Bridge Technologies VB250<br>- Bridge Technologies VB252<br>- Bridge Technologies VB260<br>- Bridge Technologies VB262<br>- Bridge Technologies VB270<br>- Bridge Technologies VB272<br>- Bridge Technologies VB330 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

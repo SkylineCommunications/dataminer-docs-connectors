@@ -10,9 +10,9 @@ Paradise Q-Flex is a satellite modem. This connector uses SNMP to communicate wi
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|-----------|-----------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version | No                  | Yes                     |
+| Range   | Key Features    | Based on | System Impact |
+|---------|-----------------|----------|---------------|
+| 1.0.0.x | Initial version | -        | -             |
 
 ### Product Info
 
@@ -21,6 +21,12 @@ Paradise Q-Flex is a satellite modem. This connector uses SNMP to communicate wi
 | 1.0.0.x   | RC_0.0.60              |
 | 1.1.0.x   | RC_0.1.31              |
 | 1.1.1.x   | RC_0.1.31              |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

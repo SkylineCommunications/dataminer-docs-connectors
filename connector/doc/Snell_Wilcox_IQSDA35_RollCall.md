@@ -12,15 +12,21 @@ This connector allows the management of the **Snell Wilcox IQSDA35** using smart
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 5.5.8                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 5.5.8                  |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -42,7 +48,7 @@ SERIAL CONNECTION:
 
 ### General Page
 
-This page contains the **Display** parameter, as well as log settings parameters such as **OS** **Version**, **Firmware Version**, etc.
+This page contains the **Display** parameter, as well as log settings parameters such as **OS Version**, **Firmware Version**, etc.
 
 The parameters of the output display are also displayed.
 
@@ -56,11 +62,11 @@ This page provides an overview of the system memory, with a table containing 16 
 
 ### Logging Page
 
-On this page, you can select either the **Logging Input 1** **Config** page button or the **Logging Input 2** **Config** page button in order to enable/disable each input channel field, such as **Ident**, **Name**, **Type**, **State** and **SDI Bitrate.** You can also set some setting parameters such as **OS** **Version**, **Firmware** **Version**, etc.
+On this page, you can select either the **Logging Input 1 Config** page button or the **Logging Input 2 Config** page button in order to enable/disable each input channel field, such as **Ident**, **Name**, **Type**, **State** and **SDI Bitrate.** You can also set some setting parameters such as **OS Version**, **Firmware Version**, etc.
 
 ### RollTrack Page
 
-This page provides a simple command interface that can be used to send unconnected Rolltrack commands to any Rollcall-compatible unit in the network. The following parameters are displayed: **Rolltrack Disable All**, **Rolltrack Index, Rolltrack Address**, **Rolltrack** **Sending, Rolltrack Source,** **Rolltrack Command** and **Rolltrack** **Status**.
+This page provides a simple command interface that can be used to send unconnected Rolltrack commands to any Rollcall-compatible unit in the network. The following parameters are displayed: **Rolltrack Disable All**, **Rolltrack Index, Rolltrack Address**, **Rolltrack Sending, Rolltrack Source, Rolltrack Command** and **Rolltrack Status**.
 
 ### Setup Page
 

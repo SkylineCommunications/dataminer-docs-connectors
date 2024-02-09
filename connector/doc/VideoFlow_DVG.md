@@ -12,14 +12,14 @@ This connector allows you to monitor this device via an HTTP connection.
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                                                              | **Based on** | **System Impact**                                                                                              |
-|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Initial version that has feature-parity with the DVP1000 connector. Supports different stream inputs and outputs, such as SRT, Zixi, and SDI. | \-           |                                                                                                                |
-| 1.0.1.x   | Updated indexes.                                                                                                                              | 1.0.0.x      | Moving **from the 1.0.0.x to the 1.0.1.x range** will cause **loss of trend data**, since indexes are updated. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version that has feature-parity with the DVP1000 connector. Supports different stream inputs and outputs, such as SRT, Zixi, and SDI. | - |  |
+| 1.0.1.x | Updated indexes. | 1.0.0.x | Moving **from the 1.0.0.x to the 1.0.1.x range** will cause **loss of trend data**, since indexes are updated. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**           |
+| Range     | Supported Firmware               |
 |-----------|----------------------------------|
 | 1.0.0.x   | 1.40.1.1(R) Oct 17 2021 12:27:59 |
 
@@ -27,7 +27,7 @@ This connector allows you to monitor this device via an HTTP connection.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -71,8 +71,10 @@ HTTP CONNECTION:
 To make sure the connector can poll data from the device:
 
 1. On the **General** page of the element, fill in the **Username** and **Password.**
-2. Click the **Log in** button.
-3. Restart the DataMiner element.
+
+1. Click the **Log in** button.
+
+1. Restart the DataMiner element.
 
 Data will only be polled from the device when these steps have been done. If you change the credentials, also restart the DataMiner element.
 
@@ -96,7 +98,7 @@ This page displays the **Firewall Status** (*enabled* or *disabled*), as well as
 
 To create a new allowed list interface, right-click the **Allowed List Interface** table, select **Add Allowed Interface** and specify an interface name.
 
-To create a new user-defined rule, click the **Add** **User Defined Rule** button and specify the values for this new rule in the creation window.
+To create a new user-defined rule, click the **Add User Defined Rule** button and specify the values for this new rule in the creation window.
 
 ### Interfaces
 
@@ -150,11 +152,11 @@ This page can be used to monitor **active alarms** as well as to view the **alar
 
 ### Mail
 
-This page displays all information related to the device's mail settings, such as **recipients**, **groups**, and **mail** **alarms**. It features subpages where you can create **new** **groups** or add **new** **recipients**.
+This page displays all information related to the device's mail settings, such as **recipients**, **groups**, and **mail alarms**. It features subpages where you can create **new groups** or add **new recipients**.
 
 ### Demux
 
-This page contains information about the device's demuxes and their **outputs**. Via the subpages, you can create a new **demux**, **demux** **output**, or **demux** **output** **PID**.
+This page contains information about the device's demuxes and their **outputs**. Via the subpages, you can create a new **demux**, **demux output**, or **demux output PID**.
 
 ### Tree Control
 

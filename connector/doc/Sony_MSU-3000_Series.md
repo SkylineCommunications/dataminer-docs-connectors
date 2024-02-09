@@ -12,7 +12,7 @@ The Sony MSU-3000 master setup unit is a multi-camera remote control panel for s
 
 | **Range**            | **Key Features**                                  | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. Supports all ember + parameters. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. Supports all ember + parameters. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The Sony MSU-3000 master setup unit is a multi-camera remote control panel for s
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

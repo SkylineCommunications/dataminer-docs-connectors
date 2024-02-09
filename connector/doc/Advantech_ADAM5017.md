@@ -4,7 +4,7 @@ uid: Connector_help_Advantech_ADAM5017
 
 # Advantech ADAM5017
 
-The **Advantech** **ADAM5017** is an 8-channel analog input module.
+The **Advantech ADAM5017** is an 8-channel analog input module.
 
 ## About
 
@@ -26,9 +26,9 @@ This connector uses a serial connection and requires the following input during 
 
 ### General page
 
-On this page, you can view the value of the different channels. The state of the channel can also be *enabled* or *disabled*, and you can set the **Input** **Range** and **Integration** **Time**.
+On this page, you can view the value of the different channels. The state of the channel can also be *enabled* or *disabled*, and you can set the **Input Range** and **Integration Time**.
 
 Two buttons are available:
 
-- **Zero** **Calibration**
-- **Span** **Calibration**
+- **Zero Calibration**
+- **Span Calibration**

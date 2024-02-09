@@ -12,25 +12,25 @@ This connector is used to retrieve events from a SolarWinds database system.
 
 | **Range**                | **Key Features**                                         | **Based on** | **System Impact**            |
 |--------------------------|----------------------------------------------------------|--------------|------------------------------|
-| 1.0.0.x                  | Initial version.                                         | \-           | \-                           |
-| 2.0.0.x \[**Obsolete**\] | Changed protocol name to include vendor name.            | 1.0.0.4      | \-                           |
+| 1.0.0.x                  | Initial version.                                         | -            | -                            |
+| 2.0.0.x \[**Obsolete**\] | Changed protocol name to include vendor name.            | 1.0.0.4      | -                            |
 | 2.0.1.x \[SLC Main\]     | Reworked connector as most of the features stopped working. | 2.0.0.1      | Old trend data will be lost. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
-| 2.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 2.0.0.x   | -                      |
+| 2.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

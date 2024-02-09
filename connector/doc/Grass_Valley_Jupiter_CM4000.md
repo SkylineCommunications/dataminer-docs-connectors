@@ -22,7 +22,7 @@ With this connector either an **SDI** or an **ASI** matrix can be created, with 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**  |
+| Range     | Device Firmware Version      |
 |------------------|------------------------------|
 | 1.0.0.x          | AccuSwitch Application       |
 | 2.0.0.1          | AccuSwitch Application       |

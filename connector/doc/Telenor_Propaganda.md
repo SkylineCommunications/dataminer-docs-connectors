@@ -12,19 +12,19 @@ This connector is used to aggregate and summarize information from the **Telenor
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                                                                                                                  | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                                                                                                                                                      | Exported Components     |
 |-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager)<br>[Telenor Channel Correlation Service Protocol](xref:Connector_help_Telenor_Channel_Correlation_Service_Protocol) (version 1.0.0.3 or higher)<br>[Telenor Service Overview Manager](xref:Connector_help_Telenor_Service_Overview_Manager) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager)<br>[Telenor Channel Correlation Service Protocol](xref:Connector_help_Telenor_Channel_Correlation_Service_Protocol) (version 1.0.0.3 or higher)<br>[Telenor Service Overview Manager](xref:Connector_help_Telenor_Service_Overview_Manager) | -                       |
 
 ## Configuration
 

@@ -12,7 +12,7 @@ This connector is intended to collect the parameter IDs from the different proto
 
 | **Range**            | **Key Features**                                  | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | DWS Calls: GetProtocolParameterInfo Interpolation | \-           | \-                |
+| 1.0.0.x [SLC Main]   | DWS Calls: GetProtocolParameterInfo Interpolation | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is intended to collect the parameter IDs from the different proto
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

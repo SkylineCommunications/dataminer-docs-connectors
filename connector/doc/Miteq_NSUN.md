@@ -12,19 +12,19 @@ The Miteq NSUN (New Switchover Unit - N) is designed to provide improved reliabi
 
 | **Range**            | **Key Features**                                                           | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. Converter Settings table with forward control capability. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. Converter Settings table with forward control capability. | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

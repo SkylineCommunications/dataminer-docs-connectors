@@ -12,8 +12,8 @@ The Miranda IControl XVP-3901 is a video processor. The connector to monitor thi
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 2.0.0.x   | \-                     |
-| 3.0.0.x   | \-                     |
+| 2.0.0.x   | -                      |
+| 3.0.0.x   | -                      |
 
 ## Configuration
 

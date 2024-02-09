@@ -12,7 +12,7 @@ This connector can be used to monitor and configure Huawei UPS AC devices.
 
 | **Range**            | **Key Features**                                                                                                | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | -Displays relevant information about the outputs, inputs, bypass and parallel systems. -Displays active alarms. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | -Displays relevant information about the outputs, inputs, bypass and parallel systems. -Displays active alarms. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector can be used to monitor and configure Huawei UPS AC devices.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

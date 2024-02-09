@@ -23,8 +23,8 @@ This connector uses a serial connection and requires the following input during 
 **SERIAL CONNECTION**
 
 - **IP address/host**: The polling IP of the device, e.g. *172.16.61.11*.
-- **IP Port:** The IP port of the device, e.g. *2050*.
-- **Bus address:** Used to fill in the Unit Address and the Unit Port, e.g. *26.02* is for Unit Address *0x26* and Unit Port *0x02*.
+- **IP port**: The IP port of the device, e.g. *2050*.
+- **Bus address**: Used to fill in the Unit Address and the Unit Port, e.g. *26.02* is for Unit Address *0x26* and Unit Port *0x02*.
 
 ## Usage
 

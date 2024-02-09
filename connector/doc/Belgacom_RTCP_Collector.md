@@ -20,7 +20,7 @@ Every day, the collector element will offload its data, which the **Belgacom DB 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                       |
+| Range     | Device Firmware Version                                           |
 |------------------|-------------------------------------------------------------------|
 | 1.0.0.x          | All firmware versions should be supported with this connector range. |
 
