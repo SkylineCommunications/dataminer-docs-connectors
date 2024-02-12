@@ -280,6 +280,8 @@
   items:
   - name: Akamai CDN Manager
     topicUid: Connector_help_Akamai_CDN_Manager
+  - name: Akamai CDN Manager - CP Code
+    topicUid: Connector_help_Akamai_CDN_Manager_-_CP_Code
 - name: AKCP
   topicUid: Connector_help_AKCP_Environmental_Monitoring_Unit
   items:
@@ -373,6 +375,12 @@
     topicUid: Connector_help_AM_Networks_BridgePort_General_Platform_-_GGA8_N
   - name: AM Networks BridgePort General Platform - GGA8 O
     topicUid: Connector_help_AM_Networks_BridgePort_General_Platform_-_GGA8_O
+- name: Amagi
+  items:
+  - name: Amagi CLOUDPORT Playout Service Manager
+    topicUid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
+  - name: Amagi CLOUDPORT Service Manager
+    topicUid: Connector_help_Amagi_Cloudport_Service_Manager
 - name: Amazon
   topicUid: Connector_help_Amazon_AWS_CloudFormation
   items:
@@ -3055,6 +3063,8 @@
     topicUid: Connector_help_Enensys_NetMod_DVBT2
   - name: Enensys SafeSplitter
     topicUid: Connector_help_Enensys_SafeSplitter
+  - name: Enensys SmartGate OneBeam
+    topicUid: Connector_help_Enensys_SmartGate_OneBeam
   - name: Enensys Smartgate vT2
     topicUid: Connector_help_Enensys_Smartgate_vT2
   - name: Enensys T2-Mi Gen
@@ -4060,6 +4070,8 @@
     topicUid: Connector_help_Generic_KAFKA_Consumer
   - name: Generic KAFKA Producer
     topicUid: Connector_help_Generic_KAFKA_Producer
+  - name: Generic Logger Table
+    topicUid: Connector_help_Generic_Logger_Table
   - name: Generic Mail Sender
     topicUid: Connector_help_Generic_Mail_Sender
   - name: Generic Manager Channel Distribution
@@ -4228,6 +4240,8 @@
   items:
   - name: Globecast France Enhanced DTM Channel Service
     topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
+  - name: Globecast France Enhanced Single Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
 - name: Globecomm
   topicUid: Connector_help_Globecomm_iDirect_Shore_Side_Server
   items:
@@ -5012,6 +5026,8 @@
     topicUid: Connector_help_IRT_DVB-T_TX
   - name: IRT IFC Series
     topicUid: Connector_help_IRT_IFC_Series
+  - name: IRT SSPA Series
+    topicUid: Connector_help_IRT_SSPA_Series
 - name: Itelco
   topicUid: Connector_help_Itelco_DVB-T2_Modulator
   items:
@@ -8167,6 +8183,8 @@
     topicUid: Connector_help_Skyline_Central_DB_File_Offload
   - name: Skyline Communications CDMR Scheduler
     topicUid: Connector_help_Skyline_Communications_CDMR_Scheduler
+  - name: Skyline Communications Client KPI Monitor
+    topicUid: Connector_help_Skyline_Communications_Client_KPI_Monitor
   - name: Skyline Concurrent Offload MGMT
     topicUid: Connector_help_Skyline_Concurrent_Offload_MGMT
   - name: Skyline Configuration Manager
@@ -8976,6 +8994,8 @@
     topicUid: Connector_help_TDF_ALLISS_Analog_Transmitter
   - name: TDF ALLISS Transmitter
     topicUid: Connector_help_TDF_ALLISS_Transmitter
+  - name: TDF BIP Collector
+    topicUid: Connector_help_TDF_BIP_Collector
   - name: TDF Conducteur Application
     topicUid: Connector_help_TDF_Conducteur_Application
   - name: TDF ENERGIE ALLYSS
@@ -9242,6 +9262,8 @@
     topicUid: Connector_help_Teleste_AC8810_SNMP
   - name: Teleste AC9000
     topicUid: Connector_help_Teleste_AC9000
+  - name: Teleste ACE8 SNMP
+    topicUid: Connector_help_Teleste_ACE8_SNMP
   - name: Teleste Amplifier Collector
     topicUid: Connector_help_Teleste_Amplifier_Collector
   - name: Teleste CATVisor EMS
@@ -9852,6 +9874,8 @@
     topicUid: Connector_help_ViaLite_ViaLiteHD_Splitter
   - name: ViaLite ViaLiteHD Switch
     topicUid: Connector_help_ViaLite_ViaLiteHD_Switch
+  - name: ViaLite ViaLiteHD Transmitter
+    topicUid: Connector_help_ViaLite_ViaLiteHD_Transmitter
 - name: Viasat
   topicUid: Connector_help_Viasat_AC4100
   items:
