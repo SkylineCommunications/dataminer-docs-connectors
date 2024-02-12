@@ -2603,6 +2603,11 @@
   items:
   - name: DEIF AGC 200
     topicUid: Connector_help_DEIF_AGC_200
+- name: Dejero
+  topicUid: Connector_help_Dejero_Control
+  items:
+  - name: Dejero Control
+    topicUid: Connector_help_Dejero_Control
 - name: DekTec
   topicUid: Connector_help_DekTec_DTE-3100
   items:
