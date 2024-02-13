@@ -53,4 +53,4 @@ There is no redundancy defined.
 The element polls all service desks for the environment specified in the URL of the element. This includes the **Service Desks**, **Queues**, and **Issues**. You can choose to Enable/Disable polling of certain Queues.
 
 From the **Issues** page, it is possible to create a small issue given some input data. 
-If you'd like to instead, by following the given format in the API documentation for [Create Request \| Create Request](https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/#api-rest-servicedeskapi-request-post), you can use an Automation Script to set PID 2 with your own JSON data.
+If you'd like to instead, by following the given format in the API documentation for [Create Request](https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/#api-rest-servicedeskapi-request-post), you can use an Automation Script to set PID 2 with your own JSON data.
