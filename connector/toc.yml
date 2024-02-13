@@ -6849,6 +6849,10 @@
   items:
   - name: OpenDrives Storage
     topicUid: Connector_help_OpenDrives_Storage
+- name: OpenGear
+  items:
+  - name: OpenGear Gator Toolbox-2-r4
+    topicUid: Connector_help_OpenGear_Gator_Toolbox-2-r4
 - name: OpenHeadend
   topicUid: Connector_help_OpenHeadend_Content_Management_Platform
   items:
