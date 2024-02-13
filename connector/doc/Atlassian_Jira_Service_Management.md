@@ -2,7 +2,7 @@
 uid: Connector_help_Atlassian_Jira_Service_Management
 ---
 
-# Atlassian Jira Manager
+# Atlassian Jira Service Management
 
 This connector is polls all issues and requests for Jira projects within a domain. With it, you can also use it to create simple issue tickets on a Service Desk.
 
