@@ -3772,6 +3772,8 @@
     topicUid: Connector_help_Finnish_Broadcasting_Company_Contract_Manager
   - name: Finnish Broadcasting Company Feenix
     topicUid: Connector_help_Finnish_Broadcasting_Company_Feenix
+  - name: Finnish Broadcasting Company Lock Manager
+    topicUid: Connector_help_Finnish_Broadcasting_Company_Lock_Manager
   - name: Finnish Broadcasting Company Notification Manager
     topicUid: Connector_help_Finnish_Broadcasting_Company_Notification_Manager
   - name: Finnish Broadcasting Company Order Manager
