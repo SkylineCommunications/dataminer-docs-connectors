@@ -9367,6 +9367,10 @@
     topicUid: Connector_help_Teleste_HDO101_TSEMP_DVX
   - name: Teleste HDO103 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO103_TSEMP_DVX
+  - name: Teleste HDO202_TSEMP
+    topicUid: Connector_help_Teleste_HDO202_TSEMP
+  - name: Teleste HDO212
+    topicUid: Connector_help_Teleste_HDO212
   - name: Teleste HDO611 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO611_TSEMP_DVX
   - name: Teleste HDO613 TSEMP DVX
