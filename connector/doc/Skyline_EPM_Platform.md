@@ -138,7 +138,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 
 ### Connections
 
-#### Virtual connection
+#### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
 
@@ -167,15 +167,11 @@ The provisioning of the EPM Solution is sequential and involves the following co
 - **Skyline Platform EPM DOCSIS WM**: Creates compatible files regarding the passives available within the DOCSIS infrastructure.
 - **Skyline Platform EPM GPON WM**: Creates compatible files regarding the passives available within the GPON infrastructure and the KAFKA OLT KPIs.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Thresholds Settings
 
 In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available: one for upstream and one for downstream.
 
-These tables will serve as a multiple set function for all CCAP and CM collectors. Once the 'Apply' button is pressed, the table settings will be applied to the active elements.
+These tables will serve as a multiple set function for all CCAP and CM collectors. Once the *Apply* button is clicked, the table settings will be applied to the active elements.
 
 These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
 
@@ -194,7 +190,7 @@ These are the available Key Performance Indicators (KPIs) for setting downstream
 - **Minimum SNR Level**: Range from 0 to 100 dB.
 - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
 
-## How to use
+## How to Use
 
 The solution is based on the usage of .CSV files and the DataMiner messaging system using information events.
 
