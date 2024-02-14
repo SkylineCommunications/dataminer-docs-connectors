@@ -4,7 +4,7 @@ uid: Connector_help_Teleste_HDO212
 
 # Teleste HDO212
 
-The HDO212 is a dual receiver module for fibre optic return path links in CATV networks. The module contains an integrated route backup function and has an extended frequency range to fulfil DOCSIS 3.1 requirements. The **Teleste HDO212** connector can be used to display and configure information of the related device.
+The HDO212 is a dual-receiver module for fiber-optic return path links in CATV networks. The module contains an integrated route backup function and has an extended frequency range to fulfill DOCSIS 3.1 requirements. The **Teleste HDO212** connector can be used to display and configure information of this device.
 
 A **serial** connection is used in order to successfully retrieve and configure the information of the device. There are also different possibilities available for **alarm monitoring** and **trending**.
 
@@ -49,6 +49,6 @@ The element using the HDO212 connector has a General, Monitoring, and Adjustment
 
 - On the **General** page, you can find all the details related to general information about the device, and you can set the device name.
 
-- The **Monitoring** page contains two tables for both analog and discrete alarm limits. You can configure those two tables.
+- The **Monitoring** page contains two tables for analog and discrete alarm limits. You can configure those two tables.
 
-- The **Adjustment** page contains the most important parameters. Here, you can configure and monitor receivers.
+- The **Adjustment** page contains the most important parameters. Here you can configure and monitor receivers.
