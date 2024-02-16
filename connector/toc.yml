@@ -999,12 +999,10 @@
   - name: AVT MAGIC THipPRo Telephone Hybrids
     topicUid: Connector_help_AVT_MAGIC_THipPRo_Telephone_Hybrids
 - name: Axel Technology
-  topicUid: Connector_help_Axel_Technology_Wolf2MS
   items:
   - name: Axel Technology Wolf2MS
     topicUid: Connector_help_Axel_Technology_Wolf2MS
 - name: Axon
-  topicUid: Connector_help_Axon_2HS10
   items:
   - name: Axon 2HS10
     topicUid: Connector_help_Axon_2HS10
@@ -1511,53 +1509,44 @@
   - name: Axon ACP ERS10 - SLI10
     topicUid: Connector_help_Axon_ACP_ERS10_-_SLI10
 - name: BA
-  topicUid: Connector_help_BA_CM
   items:
   - name: BA CM
     topicUid: Connector_help_BA_CM
 - name: Bard
-  topicUid: Connector_help_Bard_MC4000_Series
   items:
   - name: Bard MC4000 Series
     topicUid: Connector_help_Bard_MC4000_Series
   - name: Bard MC5000 Series
     topicUid: Connector_help_Bard_MC5000_Series
 - name: Barnfind
-  topicUid: Connector_help_Barnfind_BTF1
   items:
   - name: Barnfind BTF1
     topicUid: Connector_help_Barnfind_BTF1
 - name: Barracuda Networks
-  topicUid: Connector_help_Barracuda_Networks_Email_Security_Gateway
   items:
   - name: Barracuda Networks Email Security Gateway
     topicUid: Connector_help_Barracuda_Networks_Email_Security_Gateway
 - name: Barrowa
-  topicUid: Connector_help_Barrowa_Sundial
   items:
   - name: Barrowa Sundial
     topicUid: Connector_help_Barrowa_Sundial
 - name: BBright
-  topicUid: Connector_help_BBright_Multi-TS
   items:
   - name: BBright Multi-TS
     topicUid: Connector_help_BBright_Multi-TS
   - name: BBright UHD-Decode
     topicUid: Connector_help_BBright_UHD-Decode
 - name: Beckhoff
-  topicUid: Connector_help_Beckhoff_BK9000
   items:
   - name: Beckhoff BK9000
     topicUid: Connector_help_Beckhoff_BK9000
   - name: Beckhoff KL2622
     topicUid: Connector_help_Beckhoff_KL2622
 - name: Beenius
-  topicUid: Connector_help_Beenius_IPTV_Delivery_Platform
   items:
   - name: Beenius IPTV Delivery Platform
     topicUid: Connector_help_Beenius_IPTV_Delivery_Platform
 - name: Belgacom
-  topicUid: Connector_help_Belgacom_Blackout_Notifier
   items:
   - name: Belgacom Blackout Notifier
     topicUid: Connector_help_Belgacom_Blackout_Notifier
@@ -1582,7 +1571,6 @@
   - name: Belgacom TVRO De-icing
     topicUid: Connector_help_Belgacom_TVRO_De-icing
 - name: Benning
-  topicUid: Connector_help_Benning_MCU1000
   items:
   - name: Benning MCU1000
     topicUid: Connector_help_Benning_MCU1000
@@ -1593,29 +1581,24 @@
   - name: Benning MCU 3000
     topicUid: Connector_help_Benning_MCU_3000
 - name: Benu Networks
-  topicUid: Connector_help_Benu_Networks_MEG_Platform
   items:
   - name: Benu Networks MEG Platform
     topicUid: Connector_help_Benu_Networks_MEG_Platform
 - name: BFE
-  topicUid: Connector_help_BFE_KSC_CORE
   items:
   - name: BFE KSC CORE
     topicUid: Connector_help_BFE_KSC_CORE
 - name: BGC
-  topicUid: Connector_help_BGC_Live_Ads
   items:
   - name: BGC Live Ads
     topicUid: Connector_help_BGC_Live_Ads
 - name: Black Box
-  topicUid: Connector_help_Black_Box_Boxilla
   items:
   - name: Black Box Boxilla
     topicUid: Connector_help_Black_Box_Boxilla
   - name: Black Box Copper Tap Splitter
     topicUid: Connector_help_Black_Box_Copper_Tap_Splitter
 - name: Blackmagic Design
-  topicUid: Connector_help_Blackmagic_Design_HyperDeck
   items:
   - name: Blackmagic Design HyperDeck
     topicUid: Connector_help_Blackmagic_Design_HyperDeck
@@ -1624,31 +1607,26 @@
   - name: Blackmagic Design Videohub
     topicUid: Connector_help_Blackmagic_Design_Videohub
 - name: Blankom
-  topicUid: Connector_help_Blankom_B-Nova
   items:
   - name: Blankom B-Nova
     topicUid: Connector_help_Blankom_B-Nova
   - name: Blankom HCB-200
     topicUid: Connector_help_Blankom_HCB-200
 - name: Blue Coat
-  topicUid: Connector_help_Blue_Coat_Packet_Shaper
   items:
   - name: Blue Coat Packet Shaper
     topicUid: Connector_help_Blue_Coat_Packet_Shaper
 - name: BMC
-  topicUid: Connector_help_BMC_Remedy
   items:
   - name: BMC Remedy
     topicUid: Connector_help_BMC_Remedy
   - name: BMC Remedy ORCA
     topicUid: Connector_help_BMC_Remedy_ORCA
 - name: Brandywine Communications
-  topicUid: Connector_help_Brandywine_Communications_NFS-220
   items:
   - name: Brandywine Communications NFS-220
     topicUid: Connector_help_Brandywine_Communications_NFS-220
 - name: Bridge Technologies
-  topicUid: Connector_help_Bridge_Technologies_RDP
   items:
   - name: Bridge Technologies RDP
     topicUid: Connector_help_Bridge_Technologies_RDP
@@ -1663,7 +1641,6 @@
   - name: Bridge Technologies VB Probe Series
     topicUid: Connector_help_Bridge_Technologies_VB_Probe_Series
 - name: British Telecom
-  topicUid: Connector_help_British_Telecom_-_21C_Ingest_Probe_Monitoring_Controller
   items:
   - name: British Telecom - 21C Ingest Probe Monitoring Controller
     topicUid: Connector_help_British_Telecom_-_21C_Ingest_Probe_Monitoring_Controller
@@ -1700,31 +1677,26 @@
   - name: British Telecom Unified Streaming Single Channel Failover
     topicUid: Connector_help_British_Telecom_Unified_Streaming_Single_Channel_Failover
 - name: Broadcast Automation Systems
-  topicUid: Connector_help_Broadcast_Automation_Systems_Equinox_TS
   items:
   - name: Broadcast Automation Systems Equinox TS
     topicUid: Connector_help_Broadcast_Automation_Systems_Equinox_TS
 - name: BroadForward
-  topicUid: Connector_help_BroadForward_ENUM_NP
   items:
   - name: BroadForward ENUM NP
     topicUid: Connector_help_BroadForward_ENUM_NP
 - name: Broadpeak
-  topicUid: Connector_help_Broadpeak_BKS350
   items:
   - name: Broadpeak BKS350
     topicUid: Connector_help_Broadpeak_BKS350
   - name: Broadpeak CDN Mediator BkM100
     topicUid: Connector_help_Broadpeak_CDN_Mediator_BkM100
 - name: BroadV
-  topicUid: Connector_help_BroadV_Apollo
   items:
   - name: BroadV Apollo
     topicUid: Connector_help_BroadV_Apollo
   - name: BroadV TrinityAres Multiviewer
     topicUid: Connector_help_BroadV_TrinityAres_Multiviewer
 - name: Brocade
-  topicUid: Connector_help_Brocade_6510
   items:
   - name: Brocade 6510
     topicUid: Connector_help_Brocade_6510
@@ -1733,19 +1705,16 @@
   - name: Brocade VDX6740
     topicUid: Connector_help_Brocade_VDX6740
 - name: Bry Air
-  topicUid: Connector_help_Bry_Air_FFB-170
   items:
   - name: Bry Air FFB-170
     topicUid: Connector_help_Bry_Air_FFB-170
   - name: Bry Air FFB Series
     topicUid: Connector_help_Bry_Air_FFB_Series
 - name: Bryant
-  topicUid: Connector_help_Bryant_eyePower_MDU
   items:
   - name: Bryant eyePower MDU
     topicUid: Connector_help_Bryant_eyePower_MDU
 - name: C-COR
-  topicUid: Connector_help_C-COR_CHP_2RRX
   items:
   - name: C-COR CHP 2RRX
     topicUid: Connector_help_C-COR_CHP_2RRX
@@ -1760,14 +1729,12 @@
   - name: C-COR CHP xMM
     topicUid: Connector_help_C-COR_CHP_xMM
 - name: CA
-  topicUid: Connector_help_CA_Spectrum
   items:
   - name: CA Spectrum
     topicUid: Connector_help_CA_Spectrum
   - name: CA Spectrum Device
     topicUid: Connector_help_CA_Spectrum_Device
 - name: Calrec
-  topicUid: Connector_help_Calrec_Apollo
   items:
   - name: Calrec Apollo
     topicUid: Connector_help_Calrec_Apollo
@@ -1776,27 +1743,22 @@
   - name: Calrec Type R
     topicUid: Connector_help_Calrec_Type_R
 - name: Cambium Networks
-  topicUid: Connector_help_Cambium_Networks_PTP_670
   items:
   - name: Cambium Networks PTP 670
     topicUid: Connector_help_Cambium_Networks_PTP_670
 - name: Campbell Scientific
-  topicUid: Connector_help_Campbell_Scientific_CS125
   items:
   - name: Campbell Scientific CS125
     topicUid: Connector_help_Campbell_Scientific_CS125
 - name: Camunda
-  topicUid: Connector_help_Camunda_BPMN
   items:
   - name: Camunda BPMN
     topicUid: Connector_help_Camunda_BPMN
 - name: Capella Systems
-  topicUid: Connector_help_Capella_Systems_Cambria_FTC
   items:
   - name: Capella Systems Cambria FTC
     topicUid: Connector_help_Capella_Systems_Cambria_FTC
 - name: Carel
-  topicUid: Connector_help_Carel_PCO5_Free_Air
   items:
   - name: Carel PCO5 Free Air
     topicUid: Connector_help_Carel_PCO5_Free_Air
@@ -1805,7 +1767,6 @@
   - name: Carel Pcoweb
     topicUid: Connector_help_Carel_Pcoweb
 - name: Casa Systems
-  topicUid: Connector_help_Casa_Systems_C100G
   items:
   - name: Casa Systems C100G
     topicUid: Connector_help_Casa_Systems_C100G
@@ -1814,12 +1775,10 @@
   - name: Casa Systems Platform D-DOCSIS
     topicUid: Connector_help_Casa_Systems_Platform_D-DOCSIS
 - name: Casella
-  topicUid: Connector_help_Casella_Hydro_RT
   items:
   - name: Casella Hydro RT
     topicUid: Connector_help_Casella_Hydro_RT
 - name: Castlerock
-  topicUid: Connector_help_Castlerock_SNMPc
   items:
   - name: Castlerock SNMPc
     topicUid: Connector_help_Castlerock_SNMPc
@@ -1828,29 +1787,24 @@
   - name: Castlerock SNMPc Node
     topicUid: Connector_help_Castlerock_SNMPc_Node
 - name: Castwin
-  topicUid: Connector_help_Castwin_DME-9724HM_encoder
   items:
   - name: Castwin DME-9724HM encoder
     topicUid: Connector_help_Castwin_DME-9724HM_encoder
 - name: Cavena
-  topicUid: Connector_help_Cavena_DVB_PID
   items:
   - name: Cavena DVB PID
     topicUid: Connector_help_Cavena_DVB_PID
   - name: Cavena STU
     topicUid: Connector_help_Cavena_STU
 - name: CCTV
-  topicUid: Connector_help_CCTV_Routing_Manager
   items:
   - name: CCTV Routing Manager
     topicUid: Connector_help_CCTV_Routing_Manager
 - name: CE+T
-  topicUid: Connector_help_CE+T_TSI_via_T2S_ETH
   items:
   - name: CE+T TSI via T2S ETH
     topicUid: Connector_help_CE+T_TSI_via_T2S_ETH
 - name: CEFD
-  topicUid: Connector_help_CEFD_CDD-56xA_SNMP
   items:
   - name: CEFD CDD-56xA SNMP
     topicUid: Connector_help_CEFD_CDD-56xA_SNMP
@@ -1989,22 +1943,18 @@
   - name: CEFD xSAT-5060 Serial
     topicUid: Connector_help_CEFD_xSAT-5060_Serial
 - name: Ceiton
-  topicUid: Connector_help_Ceiton_Resource_Planning
   items:
   - name: Ceiton Resource Planning
     topicUid: Connector_help_Ceiton_Resource_Planning
 - name: Cellent
-  topicUid: Connector_help_Cellent_EMS
   items:
   - name: Cellent EMS
     topicUid: Connector_help_Cellent_EMS
 - name: CelPlan
-  topicUid: Connector_help_CelPlan_CellScanner
   items:
   - name: CelPlan CellScanner
     topicUid: Connector_help_CelPlan_CellScanner
 - name: Ceragon Networks
-  topicUid: Connector_help_Ceragon_Networks_FibeAir_IP-20
   items:
   - name: Ceragon Networks FibeAir IP-20
     topicUid: Connector_help_Ceragon_Networks_FibeAir_IP-20
@@ -2013,7 +1963,6 @@
   - name: Ceragon Networks Netmaster - Device
     topicUid: Connector_help_Ceragon_Networks_Netmaster_-_Device
 - name: Check Point
-  topicUid: Connector_help_Check_Point_1100_Firewall
   items:
   - name: Check Point 1100 Firewall
     topicUid: Connector_help_Check_Point_1100_Firewall
@@ -2028,17 +1977,14 @@
   - name: Check Point 1430 Firewall
     topicUid: Connector_help_Check_Point_1430_Firewall
 - name: Chloride
-  topicUid: Connector_help_Chloride_70-NET
   items:
   - name: Chloride 70-NET
     topicUid: Connector_help_Chloride_70-NET
 - name: CibredSud
-  topicUid: Connector_help_CibredSud_Dehydrator_LAB9.50
   items:
   - name: CibredSud Dehydrator LAB9.50
     topicUid: Connector_help_CibredSud_Dehydrator_LAB9.50
 - name: Ciena
-  topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
   items:
   - name: Ciena 5160 Service Aggregation Switch
     topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
