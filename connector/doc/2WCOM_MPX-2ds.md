@@ -51,3 +51,5 @@ SNMP Settings:
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
+
+In the **Polling Config** page, the user can configure which polling groups should be polled. By default, they are all _Disabled_.
