@@ -52,4 +52,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-In the **Polling Config** page, the user can configure which polling groups should be polled. By default, they are all _Disabled_.
+On the **Polling Config** page, you can configure which polling groups should be polled. By default, they are all disabled.
