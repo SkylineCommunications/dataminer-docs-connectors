@@ -12,19 +12,22 @@ This connector uses SNMP to connect to a redundancy switch with audio conversion
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+| 1.0.0.x              | Initial version. | -            | -                 |
+| 1.0.1.x [SLC Main]   | New Firmware.    | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.0-rc7                |
+| 1.0.1.x   | 1.14-rc1               |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -61,3 +64,4 @@ The following data pages are available:
 - **Device Status**: Contains various hardware information such as temperature and voltage status information.
 - **Monitoring Settings**: Contains hardware settings for the device.
 - **System Settings**: Contains various system settings such as CSL, Ember+, NTP, Headphone, GPO/GPI, and Ethernet information.
+- **Polling**: In this page is possible to configure the polling frequency of the polling groups.
