@@ -28,6 +28,8 @@
     topicUid: Connector_help_2WCOM_MoIN_Controller
   - name: 2WCOM MPX-1g
     topicUid: Connector_help_2WCOM_MPX-1g
+  - name: 2WCOM MPX-2ds
+    topicUid: Connector_help_2WCOM_MPX-2ds
   - name: 2WCOM NC06
     topicUid: Connector_help_2WCOM_NC06
   - name: 2WCOM NC06 - Device
