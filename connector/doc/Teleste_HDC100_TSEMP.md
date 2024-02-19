@@ -265,9 +265,14 @@ On the Interfaces page, a table with two rows provides an easy overview of the i
 
 Range 5.0.0.x supports the following connectors:
 
+- Teleste HDO103 TSEMP
 - Teleste HDO202
 - Teleste HDO212
-- Teleste HDO230
+- Teleste HDP230 TSEMP
+- Teleste HDP301 TSEMP
+- Teleste HDO421 TSEMP
+- Teleste HDO611 TSEMP
+- Teleste HDO613 TSEMP
 - Teleste HDO752
 - Teleste HDO775
 - Teleste HDO905
