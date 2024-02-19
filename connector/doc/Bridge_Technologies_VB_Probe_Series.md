@@ -22,7 +22,7 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 
 | Range | Supported Firmware |
 |--|--|
-| 1.0.0.x / 1.1.0.x | **Firmware 5.4** or higher is required, and the following probe models are supported:<br>- Bridge Technologies VB120<br>- Bridge Technologies VB220<br>- Bridge Technologies VB240<br>- Bridge Technologies VB242<br>- Bridge Technologies VB250<br>- Bridge Technologies VB252<br>- Bridge Technologies VB260<br>- Bridge Technologies VB262<br>- Bridge Technologies VB270<br>- Bridge Technologies VB272<br>- Bridge Technologies VB330 |
+| 1.0.0.x / 1.1.0.x | **Firmware 5.4** or higher is required, and the following probe models are supported:<br>- Bridge Technologies VB120<br>- Bridge Technologies VB220<br>- Bridge Technologies VB240<br>- Bridge Technologies VB242<br>- Bridge Technologies VB250<br>- Bridge Technologies VB252<br>- Bridge Technologies VB260<br>- Bridge Technologies VB262<br>- Bridge Technologies VB270<br>- Bridge Technologies VB272<br>- Bridge Technologies VB330<br>- Bridge Technologies VB258 |
 
 ### System Info
 
