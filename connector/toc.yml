@@ -300,6 +300,10 @@
     topicUid: Connector_help_Alcatel_Manager
   - name: Alcatel SR Manager
     topicUid: Connector_help_Alcatel_SR_Manager
+- name: Alea
+  items:
+  - name: Alea MCxPTT
+    topicUid: Connector_help_Alea_MCxPTT
 - name: Alignsat
   items:
   - name: Alignsat AC9250S
