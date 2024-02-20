@@ -7747,6 +7747,8 @@
     topicUid: Connector_help_SEE_Telecom_Acsys_Tx_Ds
   - name: SEE Telecom Acsys Tx Us
     topicUid: Connector_help_SEE_Telecom_Acsys_Tx_Us
+  - name: SEE Telecom eAcsys 2Rx Us
+    topicUid: Connector_help_SEE_Telecom_eAcsys_2Rx_Us
   - name: SEE Telecom eAcsys NMS
     topicUid: Connector_help_SEE_Telecom_eAcsys_NMS
   - name: SEE Telecom eAcsys NMS_X_eACSYS PS 48V
