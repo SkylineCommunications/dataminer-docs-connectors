@@ -9233,6 +9233,8 @@
     topicUid: Connector_help_Teleste_HDO202_TSEMP
   - name: Teleste HDO212
     topicUid: Connector_help_Teleste_HDO212
+  - name: Teleste HDO421 TSEMP
+    topicUid: Connector_help_Teleste_HDO421_TSEMP
   - name: Teleste HDO611 TSEMP
     topicUid: Connector_help_Teleste_HDO611_TSEMP
   - name: Teleste HDO611 TSEMP DVX
