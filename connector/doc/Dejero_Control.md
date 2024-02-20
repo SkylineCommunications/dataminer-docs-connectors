@@ -2,7 +2,7 @@
 uid: Connector_help_Dejero_Control
 ---
 
-# Dejero Contro
+# Dejero Control
 
 Dejero Control is a cloud-based management system that provides the power and flexibility to centrally manage Dejero equipment via a web browser.
 
@@ -56,56 +56,50 @@ This page displays the **Sources** and **Sources Details** tables.
 Within the **Sources** table, the following actions are possible:
 
 - **Start/Stop Video Stream**: Start or stop the live stream.
-- **Live Assigment**: Assign, change or unassign the source's live assignment.
-- **Clip Assigment**: Assign, change or unassign the source's clip assignment.
-- **File Assigment**: Assign, change or unassign the source's file assignment.
+- **Live Assigment**: Assign, change, or unassign the source's live assignment.
+- **Clip Assigment**: Assign, change, or unassign the source's clip assignment.
+- **File Assigment**: Assign, change, or unassign the source's file assignment.
 
-The **Sources Details** table contains the location and battery information of the source. The **Location Last Updated** and **Battery Last Updated** parameters signify the last time the information was updated for that source.
+The **Sources Details** table contains the location and battery information of the source. The **Location Last Updated** and **Battery Last Updated** parameters indicate the last time the information was updated for that source.
 
 ### Connection Settings
 
-This page displays the **Secret Key** and **Access ID** text boxes where the credentials information are filled for the HTTP API polling.
+This page displays the **Secret Key** and **Access ID** boxes, where the credentials for the HTTP API polling should be filled in.
 
 ### Receivers
 
-This page displays the **Receivers** table, which contains the following columns: **Index**, **Serial Number**, **Name** and **Type**.
+This page displays the **Receivers** table, which contains the following columns: **Index**, **Serial Number**, **Name**, and **Type**.
 
 ### Outputs
 
-This page displays the **Outputs** table, which contains the following columns: **Index**, **Serial Number**, **Name**, **Status** and **Type**.
+This page displays the **Outputs** table, which contains the following columns: **Index**, **Serial Number**, **Name**, **Status**, and **Type**.
 
 ### Stations
 
-This page displays the **Stations** table, which contains the following columns: **Index**, **Name** and **Callsign**.
+This page displays the **Stations** table, which contains the following columns: **Index**, **Name**, and **Callsign**.
 
 ### Gateways
 
-This page displays the **Gateways** table, which contains the following columns: **Index**, **Serial Number**, **Name** and **Status**.
+This page displays the **Gateways** table, which contains the following columns: **Index**, **Serial Number**, **Name**, and **Status**.
 
 ### Pools
 
-This page displays the **Pools** table, which contains the following columns: **Index**, and **Name**.
+This page displays the **Pools** table, which contains the following columns: **Index** and **Name**.
 
 ### Live Assignments
 
-This page displays the **Live Assignments** table, which contains the following columns: **Index**, and **Resource**, **Resource Name**, **Source Name** and **Unassign**.
+This page displays the **Live Assignments** table, which contains the following columns: **Index**, **Resource**, **Resource Name**, **Source Name**, and **Unassign**.
 
-Within the **Live Assignments** table, the following actions are possible:
-
-- **Unassign**: unassign the live assignment from the output.
+In the **Unassign** column, you can unassign the live assignment from the output.
 
 ### Clip Assignments
 
-This page displays the **Clip Assignments** table, which contains the following columns: **Index**, and **Receiver Name**, **Source Name** and **Unassign**.
+This page displays the **Clip Assignments** table, which contains the following columns: **Index**, **Receiver Name**, **Source Name**, and **Unassign**.
 
-Within the **Clip Assignments** table, the following actions are possible:
-
-- **Unassign**: unassign the clip assignment from the receiver.
+In the **Unassign** column, you can unassign the clip assignment from the receiver.
 
 ### File Assignments
 
-This page displays the **File Assignments** table, which contains the following columns: **Index**, and **Receiver Name**, **Source Name** and **Unassign**.
+This page displays the **File Assignments** table, which contains the following columns: **Index**, **Receiver Name**, **Source Name**, and **Unassign**.
 
-Within the **File Assignments** table, the following actions are possible:
-
-- **Unassign**: unassign the file assignment from the receiver.
+In the **Unassign** column, you can unassign the file assignment from the receiver.
