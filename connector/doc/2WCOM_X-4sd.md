@@ -13,21 +13,21 @@ This connector uses SNMP to connect to a redundancy switch with audio conversion
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version. | -            | -                 |
-| 1.0.1.x [SLC Main]   | New Firmware.    | -            | -                 |
+| 1.1.0.x [SLC Main]   | New Firmware.    | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.0-rc7                |
-| 1.0.1.x   | 1.14-rc1               |
+| 1.1.0.x   | 1.14-rc1               |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
