@@ -3966,10 +3966,12 @@
     topicUid: Connector_help_Globecast_MADY_Platform
 - name: Globecast France
   items:
+  - name: Globecast France Enhanced Double Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Double_Destination_Transport_Service
   - name: Globecast France Enhanced DTM Channel Service
     topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
   - name: Globecast France Enhanced Single Destination Transport Service
-    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service 
 - name: Globecomm
   items:
   - name: Globecomm iDirect Shore Side Server
