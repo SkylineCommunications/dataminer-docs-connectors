@@ -6098,7 +6098,7 @@
   items:
   - name: NBCS Roadkit Manager
     topicUid: Connector_help_NBCS_Roadkit_Manager
- - name: NBCU
+- name: NBCU
   items:
   - name: NBCU Ocellus Data Collector
     topicUid: Connector_help_NBCU_Ocellus_Data_Collector
