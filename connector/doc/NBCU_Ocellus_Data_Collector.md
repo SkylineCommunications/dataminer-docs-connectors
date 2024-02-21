@@ -37,7 +37,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - IP address/host: The polling IP or URL of the destination.
-- IP port: The IP port of the destinatio, by default "443".
+- IP port: The IP port of the destination, by default "443".
 - Bus address: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Initialization
