@@ -50,6 +50,6 @@ SNMP Settings:
 
 ### General
 
-This page contains the **Alarm Traps** table, which displays all alarms that came in through traps. The **ID**, **Timestamp**, **Source** **IP**, **OID**, **Radio** **link**, **Alarm** **condition**, **Alarm** **state** and **ECAM** **cct** **number** of the trap are displayed in the different columns.
+This page contains the **Alarm Traps** table, which displays all alarms that came in through traps. The **ID**, **Timestamp**, **Source IP**, **OID**, **Radio link**, **Alarm condition**, **Alarm state** and **ECAM cct number** of the trap are displayed in the different columns.
 
 With the **Clear Table** button above the table, you can delete all rows from the table.

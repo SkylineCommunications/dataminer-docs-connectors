@@ -20,7 +20,7 @@ This connector uses an SNMP connection to poll data from the ACE8 device.
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 4.8.13                 |
+| 1.0.0.x   | A3.3                   |
 
 ### System Info
 
