@@ -12,21 +12,24 @@ A **serial** connection is used in order to successfully retrieve and configure 
 
 ### Version Info
 
-| Range              | Key Features      | Based on | System Impact |
-|--------------------|-------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version.  | -        | -             |
+| Range              | Key Features      | Based on   | System Impact |
+|--------------------|-------------------|------------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.  | -          | -             |
+| 2.0.0.x [SLC Main] | Full refactor.    | -          | Full refactor |
 
 ### Product Info
 
 | Range   | Supported Firmware |
 |---------|--------------------|
 | 1.0.0.x | -                  |
+| 2.0.0.x | -                  |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
 | 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 2.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
