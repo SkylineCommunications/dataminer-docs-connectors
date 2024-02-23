@@ -14,7 +14,7 @@ A **serial** connection is used in order to successfully retrieve and configure 
 
 | Range              | Key Features      | Based on | System Impact |
 |--------------------|-------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version.  | -        | -             |
+| 1.0.0.x [Obsolete] | Initial version.  | -        | -             |
 | 2.0.0.x [SLC Main] | Full refactoring. | -        | Full refactor |
 
 ### Product Info
