@@ -55,7 +55,8 @@ The web interface is only accessible when the client machine has network access 
 The driver contains the following pages:
 
 - **General**: Displays the device's system information.
-- **Interfaces**:Displays the Interface and Interface X tables of the device.
+- **Interface**:Displays the Interface and Interface X SNMP tables of the device.
+- **Interface Rates**:Offers Rate Calculations for the Interface tables and presents a processed version of the Interfaces table.
 - **IP**:Displays the IP Address, IP Route as well as the IP Net to Media tables.
 - **Bridge**:Displays the Bridge address and ports as well as the Stp Protocol specifications and priority.
 - **Group Management**: Allows the user to view and configure certain group management parameters. This page also has the subpages:		
