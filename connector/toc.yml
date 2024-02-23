@@ -9225,6 +9225,8 @@
     topicUid: Connector_help_Teleste_HDM100_-_AC8800
   - name: Teleste HDM100 - AC8810
     topicUid: Connector_help_Teleste_HDM100_-_AC8810
+  - name: Teleste HDO101 TSEMP
+    topicUid: Connector_help_Teleste_HDO101_TSEMP
   - name: Teleste HDO101 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO101_TSEMP_DVX
   - name: Teleste HDO103 TSEMP DVX
