@@ -42,7 +42,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-Fill in the **Username** and **Password** on the **General** page. Basic authentication with passwords is deprecated, and instead of the password an **API token needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
+Fill in the **Username** and **API Key** on the **General** page. Basic authentication with passwords is deprecated, and instead of the password an **API token needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
 
 ### Redundancy
 
