@@ -2661,8 +2661,9 @@
   - name: Delta Power Solutions Orion controller
     topicUid: Connector_help_Delta_Power_Solutions_Orion_controller
 - name: DEV
-  topicUid: Connector_help_DEV_4111
   items:
+  - name: DEV 1985
+    topicUid: Connector_help_DEV_1985
   - name: DEV 4111
     topicUid: Connector_help_DEV_4111
   - name: DEV 7000
