@@ -816,6 +816,8 @@
     topicUid: Connector_help_Atlassian_Jira
   - name: Atlassian Jira Manager
     topicUid: Connector_help_Atlassian_Jira_Manager
+  - name: Atlassian Jira Service Management
+    topicUid: Connector_help_Atlassian_Jira_Service_Management
   - name: Atlassian OpsGenie
     topicUid: Connector_help_Atlassian_OpsGenie
 - name: ATNS
