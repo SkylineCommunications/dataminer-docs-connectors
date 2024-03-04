@@ -8822,16 +8822,26 @@
     topicUid: Connector_help_Teleste_HDM100_-_AC8800
   - name: Teleste HDM100 - AC8810
     topicUid: Connector_help_Teleste_HDM100_-_AC8810
+  - name: Teleste HDO101 TSEMP
+    topicUid: Connector_help_Teleste_HDO101_TSEMP
   - name: Teleste HDO101 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO101_TSEMP_DVX
+  - name: Teleste HDO103 TSEMP
+    topicUid: Connector_help_Teleste_HDO103_TSEMP
   - name: Teleste HDO103 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO103_TSEMP_DVX
-  - name: Teleste HDO202_TSEMP
+  - name: Teleste HDO202 TSEMP
     topicUid: Connector_help_Teleste_HDO202_TSEMP
   - name: Teleste HDO212
     topicUid: Connector_help_Teleste_HDO212
+  - name: Teleste HDO421 TSEMP
+    topicUid: Connector_help_Teleste_HDO421_TSEMP
+  - name: Teleste HDO611 TSEMP
+    topicUid: Connector_help_Teleste_HDO611_TSEMP
   - name: Teleste HDO611 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO611_TSEMP_DVX
+  - name: Teleste HDO613 TSEMP
+    topicUid: Connector_help_Teleste_HDO613_TSEMP
   - name: Teleste HDO613 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO613_TSEMP_DVX
   - name: Teleste HDO905
