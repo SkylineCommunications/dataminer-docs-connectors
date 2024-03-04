@@ -4,7 +4,7 @@ uid: Connector_help_Teleste_HDO103_TSEMP
 
 # Teleste HDO103 TSEMP
 
-The HDO103 is an RF switch module used for signal backup purposes. HDO103 has an extended frequency range to fulfil DOCSIS 3.1 requirements.
+The HDO103 is an RF switch module used for signal backup purposes. It has an extended frequency range to fulfill DOCSIS 3.1 requirements.
 
 The unit has two inputs with RF wideband detectors and one output. The HDO103 will detect the loss of signal power on the active input port and automatically switch from the active port to the alternate port, restoring network continuity. A user can change the switching decision limits via UI.
 

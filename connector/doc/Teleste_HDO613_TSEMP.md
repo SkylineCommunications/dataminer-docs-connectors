@@ -5,7 +5,8 @@ uid: Connector_help_Teleste_HDO613_TSEMP
 # Teleste HDO613 TSEMP
 
 The HDO613 is an RF forward path amplifier that supports frequencies up to 1218 MHz. The module provides a fixed gain of 29 dB with a single output port. The module has a front panel RF test point.
-The HDO613 module’s wide gain range and clever control of the RF attenuation and gain stages allow it to be used as a universal amplifier block in headend and hub systems. The amplifier is mechanically compatible with HDX002 and HDX003 installation frames.
+
+The HDO613 module’s wide gain range and control of the RF attenuation and gain stages allow it to be used as a universal amplifier block in headend and hub systems. The amplifier is mechanically compatible with HDX002 and HDX003 installation frames.
 
 A **serial** connection is used in order to successfully retrieve and configure the information of the device. There are also different possibilities available for **alarm monitoring** and **trending**.
 
@@ -52,4 +53,4 @@ The element using the HDO613 connector has several data pages:
 
 - The **Monitoring** page contains two tables for analog and discrete alarm limits. You can configure those two tables.
 
-- The **Adjustment** page contains the most important parameters. Here you can configure amplifier.
+- The **Adjustment** page contains the most important parameters. Here you can configure the amplifier.

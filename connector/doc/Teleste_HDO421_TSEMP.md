@@ -12,10 +12,10 @@ A **serial** connection is used in order to successfully retrieve and configure 
 
 ### Version Info
 
-| Range              | Key Features      | Based on   | System Impact |
-|--------------------|-------------------|------------|---------------|
-| 1.0.0.x [Obsolete] | Initial version.  | -          | -             |
-| 2.0.0.x [SLC Main] | Full refactor.    | -          | Full refactor |
+| Range              | Key Features      | Based on   | System Impact  |
+|--------------------|-------------------|------------|----------------|
+| 1.0.0.x [Obsolete] | Initial version.  | -          | -              |
+| 2.0.0.x [SLC Main] | Full refactor.    | -          | Full refactor. |
 
 ### Product Info
 
@@ -54,4 +54,4 @@ The element using the HDO421 connector has several data pages:
 
 - The **Monitoring** page contains two tables for analog and discrete alarm limits. You can configure those two tables.
 
-- The **Adjustment** page contains the most important parameters. Here you can configure amplifier.
+- The **Adjustment** page contains the most important parameters. Here you can configure the amplifier.
