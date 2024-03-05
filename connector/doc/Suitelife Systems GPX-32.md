@@ -48,4 +48,5 @@ This page displays the Status table
 This page displays the Analog table
 
 ### Control
+
 This page displays the Control table
