@@ -12,15 +12,15 @@ This connector allows you to monitor and configure specific devices connected to
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
-| 1.0.1.x              | DVE support      | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.1.x              | DVE support      | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ## Configuration
 

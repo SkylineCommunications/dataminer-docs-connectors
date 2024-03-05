@@ -13,11 +13,11 @@ Depending on which type is used, GXT2, GXT3, GXT4, or GXT5, specific parameters 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                      |
+| Range     | Supported Firmware                                          |
 |-----------|-------------------------------------------------------------|
 | 1.0.0.x   | GXT2: 3.000.0 GXT3: 5.300.0 GXT4:U170D210 GXT5: MCUV130/190 |
 
@@ -25,7 +25,7 @@ Depending on which type is used, GXT2, GXT3, GXT4, or GXT5, specific parameters 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

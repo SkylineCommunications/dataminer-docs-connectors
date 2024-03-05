@@ -14,15 +14,21 @@ The DataMiner Agent that is polled needs to have a valid Web API v1 license.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 7.5 and up                  |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 7.5 and up             |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -34,14 +40,15 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: \[The polling IP or URL of the destination DMA.\] (The polled DMA needs to have a valid Web API v1 license)
+- **IP address/host**: The polling IP or URL of the destination DMA. The polled DMA needs to have a valid Web API v1 license.
 - **IP port**: The IP port of the destination.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
 ### Configuration of the HTTP Main connection
 
-The connector needs the credentials of the DataMiner system to poll configured on the General\>Security" page.
-The configured user needs to have the "Modules\>System Configuration\>Mobile Gateway\>Allow access to Mobile UI" permission.
+On the **General** > **Security** page, you need to configure the credentials of the DataMiner System that should be polled.
+
+The configured user needs to have the Cube user permission to access the Monitoring UI. Prior to DataMiner 10.1.0/10.1.2, this is the permission Modules > System Configuration > Mobile Gateway > Allow access to Mobile UI. In more recent DataMiner versions, you can find this permission under General > DataMiner web apps / DataMiner Cube mobile access.
 
 ## Usage
 
@@ -59,20 +66,23 @@ For each entry in the table, a Microsoft Platform element can be configured to p
 
 ### Elements page and Services page
 
-On these pages, elements and Services can be configured to be monitored.
-Alarms of configured elements and Services can be requested to be shown on the page button pages.
-There are page buttons to list an overview of all elements/Services in the cluster.
+On these pages, elements and services can be configured to be monitored.
+
+Alarms of configured elements and services can be requested to be shown on the page button pages.
+
+There are page buttons to list an overview of all elements/services in the cluster.
 
 ### Redundancy Groups
 
 Redundancy groups can be configured to be monitored by the connector.
-Monitored Redundancy groups will list virtual elements and Included elements.
+
+Monitored redundancy groups will list virtual elements and included elements.
 
 There is an overview table with all redundancy groups on the page button page.
 
 ### Alarms
 
-This page displays the number of alarms sorted by type: Critical, Major, Minor, Warning, Error, Notice and Timeout.
+This page displays the number of alarms sorted by type: Critical, Major, Minor, Warning, Error, Notice, and Timeout.
 
 There is also a parameter that displays the cluster overall alarm state.
 

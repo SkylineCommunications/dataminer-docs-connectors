@@ -12,7 +12,7 @@ This protocol has been made for an air conditioning Apac Airco UG40. The protoco
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | False                   |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | False                   |
 
 ### Product Info
 

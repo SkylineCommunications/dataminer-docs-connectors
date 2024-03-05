@@ -16,13 +16,13 @@ This protocol can be used to monitor and control the Axon ERS11 main controller 
 
 **SNMP Connection:**
 
-- **IP Address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 **SNMP Settings:**
 
-- **Port Number:** The port of the connection device (by default: *161*).
-- **Get community string:** The community string needed to read from the device. The default value is *public.*
-- **Set community string:** The community string needed to set to the device. The default value is *private.*
+- **Port number**: The port of the connection device (by default: *161*).
+- **Get community string**: The community string needed to read from the device. The default value is *public.*
+- **Set community string**: The community string needed to set to the device. The default value is *private.*
 
 ## Usage
 

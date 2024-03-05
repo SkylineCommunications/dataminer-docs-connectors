@@ -12,7 +12,7 @@ This connector is designed to configure an Agilent E8257D signal generator. It a
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector is designed to configure an Agilent E8257D signal generator. It a
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -49,7 +49,7 @@ The web interface is only accessible when the client machine has network access 
 
 This connector consists of the following pages:
 
-- **General**: Displays general information about the device, such as the **Firmware** **Version**, **Model**, etc.
+- **General**: Displays general information about the device, such as the **Firmware Version**, **Model**, etc.
 - **Frequency**: Displays all the available frequency parameters.
 - **Power**: Displays all the available power parameters.
 - **Errors**: Displays a table listing the errors that occurred on the device.

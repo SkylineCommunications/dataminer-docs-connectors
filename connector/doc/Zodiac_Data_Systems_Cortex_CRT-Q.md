@@ -12,23 +12,23 @@ This connector uses serial communication over TCP/IP. It follows the structure o
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                          | **Based on** | **System Impact**                                                                                                                                       |
-|----------------------|---------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version.                                                          | \-           | This range does not support DVEs. It assumes there is only 1 TMU.                                                                                       |
-| 1.0.1.x \[SLC Main\] | Implemented support for new firmware. (See "Product Info" section below.) | 1.0.0.1      | This range uses DVEs. It is not downwards compatible with the 1.0.0.x range. Some parameters have been renamed. It allows for multiple DCUs, TMUs, etc. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | This range does not support DVEs. It assumes there is only 1 TMU. |
+| 1.0.1.x [SLC Main] | Implemented support for new firmware. (See "Product Info" section below.) | 1.0.0.1 | This range uses DVEs. It is not downwards compatible with the 1.0.0.x range. Some parameters have been renamed. It allows for multiple DCUs, TMUs, etc. |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                               |
+| Range     | Supported Firmware                                                   |
 |-----------|----------------------------------------------------------------------|
 | 1.01.x    | Kernel 2, CRT Software revision 10 Kernel 6, CRT Software revision 3 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| 1.0.1.x   | No                  | Yes                     | \-                    | Zodiac Data Systems Cortex CRT-Q - TMU<br>[Zodiac Data Systems Cortex CRT-Q - IFR](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_IFR)<br>[Zodiac Data Systems Cortex CRT-Q - IFM](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_IFM)<br>[Zodiac Data Systems Cortex CRT-Q - RAU](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_RAU)<br>[Zodiac Data Systems Cortex CRT-Q - DCU](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_DCU) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.0.1.x | No | Yes | - | Zodiac Data Systems Cortex CRT-Q - TMU<br>[Zodiac Data Systems Cortex CRT-Q - IFR](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_IFR)<br>[Zodiac Data Systems Cortex CRT-Q - IFM](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_IFM)<br>[Zodiac Data Systems Cortex CRT-Q - RAU](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_RAU)<br>[Zodiac Data Systems Cortex CRT-Q - DCU](xref:Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_DCU) |
 
 ## Configuration
 

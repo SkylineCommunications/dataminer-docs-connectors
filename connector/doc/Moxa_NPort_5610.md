@@ -16,7 +16,7 @@ The connector uses an SNMP connection to retrieve the general device info and mo
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.1.x              | Initial version.                                                                                                               | No                  | No                      |
 | 2.0.0.x              | Extended previous range by adding a second connection to configure the serial interfaces over HTTP.                            | No                  | No                      |
-| 2.0.1.x \[SLC Main\] | Cassandra compliant. Added Operating Settings table, Monitor Line table, Monitor Async table and Monitor Async-Settings table. | No                  | Yes                     |
+| 2.0.1.x [SLC Main]   | Cassandra compliant. Added Operating Settings table, Monitor Line table, Monitor Async table and Monitor Async-Settings table. | No                  | Yes                     |
 
 ### Product Info
 

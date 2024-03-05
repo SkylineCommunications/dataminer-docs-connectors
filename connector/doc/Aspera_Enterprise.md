@@ -10,18 +10,18 @@ The **Aspera Enterprise** is a file-monitoring connector that uses **SSH** to re
 
 After the connector has retrieved a file through **SSH**, the contents of the file are checked line by line with a number of configured filters. The files that are polled are specific .log files that have a maximum size of 10 MB.
 
-In range1.0.0.x of the connector, once the maximum file size has been reached, the file is renamed by another application by appending a *'.0'.*
+In range 1.0.0.x of the connector, once the maximum file size has been reached, the file is renamed by another application by appending a *'.0'.*
 
-In range 2.0.0.x of the connector, once the maximum file size has been reached, the oldest lines are progressively replaced, starting from the begining.
+In range 2.0.0.x of the connector, once the maximum file size has been reached, the oldest lines are progressively replaced, starting from the beginning.
 
 This connector takes this into account and will make sure that every line (new or old file) is parsed once.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                         |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x          | Initial version.                                                                                                                                                                        |
-| 2.0.0.x          | New range version based on 1.0.0.x. Instead of creating multiple log files after reaching 10MB, this new version parses just one file, which is overwritten after the limit is reached. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 2.0.0.x | Instead of creating multiple log files after reaching 10 MB, this new version parses just one file, which is overwritten after the limit is reached. | 2.0.0.x | - |
 
 ### Product Info
 
@@ -30,11 +30,11 @@ This connector takes this into account and will make sure that every line (new o
 | 1.0.0.x          | Unknown                     |
 | 2.0.0.x          | Unknown                     |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### Serial main connection
+#### Serial Connection - Main
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -71,11 +71,11 @@ The **Logs Last Read** page button leads to a table with data indicating the las
 
 On the **Log File** page, depending on the size and number of the different files that need to be parsed, it can take more than 30 seconds between each poll.
 
-### Logfile Filter Types
+### Log File Filter Types
 
-The following section describes the filter types available in the detection of an alarm state in an event log.
+Below you can find more information about the filter types available in the detection of an alarm state in an event log.
 
-#### Simple: Detects an alarm state from the occurrence of a single event.
+#### Simple: Detects an alarm state from the occurrence of a single event
 
 Simple event detection uses the occurrence of a single event to indicate an alarm condition.
 
@@ -90,15 +90,15 @@ Simple event example:
 - **Alarm Filter:** Event 1
 - **Normal Filter:** Event 5
 
-| **Time** | **Event** | **State** |
+| Time     | Event     | State     |
 |----------|-----------|-----------|
-| 00:00:00 | \-        | Normal    |
+| 00:00:00 | -         | Normal    |
 | 00:01:00 | Event 1   | Alarm     |
 | 00:02:00 | Event 1   | Alarm     |
-| 00:03:00 | \-        | Alarm     |
+| 00:03:00 | -         | Alarm     |
 | 00:04:00 | Event 5   | Normal    |
-| 00:05:00 | \-        | Normal    |
-| 00:06:00 | \-        | Normal    |
+| 00:05:00 | -         | Normal    |
+| 00:06:00 | -         | Normal    |
 | 00:07:00 | Event 1   | Alarm     |
 
 #### Repeating: Detects an alarm state based on one or more occurrence of a particular event in a specified time window
@@ -115,18 +115,18 @@ Repeated events example:
 - **Alarm Filter:** Event 1
 - **Normal Filter:** Event 2
 
-| **Time** | **Event** | **Trigger On Count State** | **Trigger On Count, Sliding State** |
-|----------|-----------|----------------------------|-------------------------------------|
-| 00:00:00 | \-        | Normal                     | Normal                              |
-| 00:01:00 | Event 1   | Normal                     | Normal                              |
-| 00:01:30 | Event 1   | Normal                     | Normal                              |
-| 00:02:00 | \-        | Normal                     | Normal                              |
-| 00:02:30 | Event 1   | Alarm                      | Alarm                               |
-| 00:02:40 | Event 2   | Alarm                      | Normal                              |
-| 00:03:00 | \-        | Normal                     | Normal                              |
-| 00:04:00 | Event 1   | Normal                     | Normal                              |
-| 00:04:10 | Event 1   | Alarm                      | Normal                              |
-| 00:04:30 | Event 1   | Normal                     | Alarm                               |
+| Time     | Event   | Trigger On Count State | Trigger On Count, Sliding State |
+|----------|---------|------------------------|---------------------------------|
+| 00:00:00 | -       | Normal                 | Normal                          |
+| 00:01:00 | Event 1 | Normal                 | Normal                          |
+| 00:01:30 | Event 1 | Normal                 | Normal                          |
+| 00:02:00 | -       | Normal                 | Normal                          |
+| 00:02:30 | Event 1 | Alarm                  | Alarm                           |
+| 00:02:40 | Event 2 | Alarm                  | Normal                          |
+| 00:03:00 | -       | Normal                 | Normal                          |
+| 00:04:00 | Event 1 | Normal                 | Normal                          |
+| 00:04:10 | Event 1 | Alarm                  | Normal                          |
+| 00:04:30 | Event 1 | Normal                 | Alarm                           |
 
 #### Missing: Detects an alarm state when an expected event is not detected in a particular time window
 
@@ -138,15 +138,15 @@ Missing event example:
 - (time window) **Interval:** 2 hours
 - **Normal Filter:** Event 3
 
-| **Time** | **Event** | **State** |
-|----------|-----------|-----------|
-| 00:00:00 | Event 1   | Normal    |
-| 01:00:00 | \-        | Normal    |
-| 02:00:00 | \-        | Alarm     |
-| 03:00:00 | Event 1   | Normal    |
-| 05:00:00 | \-        | Alarm     |
-| 05:06:00 | Event 3   | Normal    |
-| 05:07:00 | Event 1   | Normal    |
+| Time     | Event   | State  |
+|----------|---------|--------|
+| 00:00:00 | Event 1 | Normal |
+| 01:00:00 | -       | Normal |
+| 02:00:00 | -       | Alarm  |
+| 03:00:00 | Event 1 | Normal |
+| 05:00:00 | -       | Alarm  |
+| 05:06:00 | Event 3 | Normal |
+| 05:07:00 | Event 1 | Normal |
 
 #### Correlated Missing Events: Detects an alarm state when an expected event is not detected in a particular time window after the occurrence of another event
 
@@ -154,8 +154,27 @@ Correlated missing event detection identifies an error when a particular event d
 
 Correlated missing event example:
 
-- \(A\) **Alarm Filter:** Event 1
-- \(B\) **Alarm Filter B:** Event 2
-- (correlation) **Interval:** 2 minutes
+- (A) **Alarm Filter:** Event 1
+- (B) **Alarm Filter B:** Event 2
+- (Correlation) **Interval:** 2 minutes
 - **Normal Filter:** Event 3
 
+| Time     | Event   | State  |
+|----------|---------|--------|
+| 00:00:00 | -       | Normal |
+| 00:01:00 | Event 1 | Normal |
+| 00:02:00 | -       | Normal |
+| 00:03:00 | -       | Alarm  |
+| 00:04:00 | Event 1 | Alarm  |
+| 00:05:00 | -       | Alarm  |
+| 00:05:30 | Event 2 | Normal |
+| 00:06:00 | Event 1 | Normal |
+| 00:07:00 | -       | Normal |
+| 00:08:00 | -       | Alarm  |
+| 00:09:00 | Event 2 | Alarm  |
+| 00:10:00 | Event 1 | Alarm  |
+| 00:10:30 | Event 2 | Normal |
+| 00:11:00 | Event 1 | Normal |
+| 00:12:00 | -       | Normal |
+| 00:13:00 | -       | Alarm  |
+| 00:15:00 | Event 3 | Normal |

@@ -10,13 +10,13 @@ The **Skyline EPM Platform GPON WM** is a configuration manager used to handle w
 
 | **Range**            | **Key Features**                                                                                                             | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Initial version - Manages the workflow and creation of OLT KPI files - Manages the workflow and creation of Passive files | \-           | \-                |
+| 1.0.0.x [SLC Main]   | \- Initial version - Manages the workflow and creation of OLT KPI files - Manages the workflow and creation of Passive files | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                     | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                         | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Automation scripts: - WmGponToOlt - OltToGponWm Generic KAFKA Consumer OLT Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Automation scripts: - WmGponToOlt - OltToGponWm Generic KAFKA Consumer OLT Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform | -                       |
 
 ## Configuration
 

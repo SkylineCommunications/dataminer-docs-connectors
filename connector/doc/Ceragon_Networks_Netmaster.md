@@ -25,7 +25,7 @@ Information is polled from the device via SNMP. The connector is also able to pr
 | 1.0.0.x              | Initial version.                    | No                  | Yes                     |
 | 1.0.1.x              | Adaptation based on change request. | No                  | Yes                     |
 | 1.0.2.x (Obsolete)   | Added Redundancy Status table.      | No                  | Yes                     |
-| 1.0.3.x \[SLC Main\] | Modified Redundancy Status table.   | No                  | Yes                     |
+| 1.0.3.x [SLC Main]   | Modified Redundancy Status table.   | No                  | Yes                     |
 
 ### Product Info
 

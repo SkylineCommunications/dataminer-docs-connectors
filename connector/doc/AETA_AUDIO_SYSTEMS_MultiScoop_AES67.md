@@ -14,11 +14,11 @@ This connector uses **SNMP** to poll data from AETA AUDIO SYSTEMS MultiScoop AES
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                  |
+| Range     | Supported Firmware                                      |
 |-----------|---------------------------------------------------------|
 | 1.0.0.x   | 1.06.01 (MultiScoop Devices) / 1.15 (ScoopTeam Devices) |
 
@@ -26,7 +26,7 @@ This connector uses **SNMP** to poll data from AETA AUDIO SYSTEMS MultiScoop AES
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

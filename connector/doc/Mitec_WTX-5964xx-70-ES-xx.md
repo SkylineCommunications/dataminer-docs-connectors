@@ -12,15 +12,21 @@ Using **serial** communication, the protocol retrieves settings, telemetry, and 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 3900040-00-Rxx              |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 3900040-00-Rxx         |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -33,7 +39,7 @@ This protocol uses serial communication to transmit commands and receive respons
 SERIAL CONNECTION
 
 - **IP Address/Host**: The polling IP of the device, e.g. *10.255.110.xx*.
-- **IP Port:** The device port location at the specified IP, e.g. *10.255.110.xx:15000*.
+- **IP port**: The device port location at the specified IP, e.g. *10.255.110.xx:15000*.
 
 ## Usage
 

@@ -20,7 +20,7 @@ This protocol can be used to monitor and control the Audemat Aztec FM Monitoring
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**           |
+| Range     | Device Firmware Version               |
 |------------------|---------------------------------------|
 | 1.0.0.x          | N/A                                   |
 | 2.0.0.x          | 2.5.1                                 |

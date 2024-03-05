@@ -16,7 +16,7 @@ Supported firmware versions
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
+| 1.0.0.x          | -                           |
 
 ## Installation and configuration
 

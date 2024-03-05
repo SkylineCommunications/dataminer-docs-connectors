@@ -18,9 +18,9 @@ This connector uses a **HTTP** connection and needs following user information:
 
 **HTTP Connection:**
 
-- **Type of Port:** \[*TCP/IP\]*
-- **IP Address/host:** \[*The polling IP of the device.*\]
-- **IP Port:** \[*The port used for the TCP/IP connection (for instance: 80).*\]
+- **Type of Port**: TCP/IP.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The port used for the TCP/IP connection (for instance: *80*).
 
 ### Configuration
 
@@ -58,4 +58,4 @@ This page contains a table with the configuration and a table with the status of
 
 ### Web Interface Page
 
-Contains the webinterface of the device.
+Contains the web interface of the device.

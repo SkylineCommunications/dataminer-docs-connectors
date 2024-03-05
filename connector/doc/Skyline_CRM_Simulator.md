@@ -6,15 +6,27 @@ uid: Connector_help_Skyline_CRM_Simulator
 
 ## About
 
-SQM-DemoSubscriberData connector to offload data in DSL format. Latitude, longitude & offset parameters are configurable as well as the names and service package types.
+SQM-DemoSubscriberData connector to offload data in DSL format. Latitude, longitude, and offset parameters are configurable, as well as the names and service package types.
 
-This protocol is pure for CRM simulation.
+This connector is only intended for CRM simulations.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 0.0.0.x          | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 0.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 0.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 0.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,7 +44,7 @@ Contains of 4 tables, CM Data Table, Node Data Table, CMTS Data Table and Subscr
 
 Contains of 3 tables, CMTS location data, ServicePackage data and UsersNames data. This is the data which will be used to be able to create randomly combinations for the data page. Every cell found on this page is editable.
 
-Only first row of the CMTS location data will be used!!!
+Only the first row of the CMTS location data will be used!
 
 ### Configurations
 

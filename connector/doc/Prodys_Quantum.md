@@ -14,7 +14,7 @@ The Prodys Quantum main application is designed to receive, decode, and store au
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ The Prodys Quantum main application is designed to receive, decode, and store au
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     |
 |-----------|---------------------|-------------------------|-----------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    |
+| 1.0.0.x   | No                  | Yes                     | -                     |
 
 ## Configuration
 

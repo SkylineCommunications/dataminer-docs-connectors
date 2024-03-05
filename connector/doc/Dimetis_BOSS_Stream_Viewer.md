@@ -14,7 +14,7 @@ The Dimetis BOSS Stream Viewer can monitor and analyze SDI streams in cable, sat
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The Dimetis BOSS Stream Viewer can monitor and analyze SDI streams in cable, sat
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -59,20 +59,16 @@ The web interface is only accessible when the client machine has network access 
 
 ### General Page
 
-This page has a **Summary** of the **Local** **Controller**.
-
+This page has a **Summary** of the **Local Controller**.
 
 ### BSV Servers Page
 
 This page allows you to configure the **BSV Instances**.
 
-
 ### Services Page
 
-This page details the **Services**, its **Audio** and **Video** **Pids** and their **Status**.
-
+This page details the **Services**, their **Audio** and **Video Pids** and their **Status**.
 
 ### Configurations Page
 
-This Page contains the existing **Configurations** and their **Status**.
-
+This page contains the existing **Configurations** and their **Status**.

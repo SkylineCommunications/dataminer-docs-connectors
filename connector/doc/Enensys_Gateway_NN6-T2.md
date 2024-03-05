@@ -12,10 +12,10 @@ This connector is mainly used to monitor the device, but also allows the configu
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                                                                                                                                   |
-|----------------------|------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                                                                                                                                                                  |
-| 1.0.1.x \[SLC Main\] | Connector review    | 1.0.0.1      | The entire connector was updated considering the newest DMA features. Furthermore, the vendor discontinued the main MIB and the connector suffered a considerable change. |
+| Range | Key Features | Based On | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x [SLC Main] | Connector review | 1.0.0.1 | The entire connector was updated considering the newest DMA features. Furthermore, the vendor discontinued the main MIB and the connector suffered a considerable change. |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This connector is mainly used to monitor the device, but also allows the configu
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -70,7 +70,7 @@ The following page buttons are available:
 
 This page allows you to monitor parameters specific for this device, such as basic **Input** and **Output** parameters.
 
-The **Clock Reference** displays the **source** of the device's clock and also displays the **GPS Status**. Note that these parameters have been moved to the **System page** from version **1.0.1.1** onwards**.**
+The **Clock Reference** displays the **source** of the device's clock and also displays the **GPS Status**. Note that these parameters have been moved to the **System page** from version **1.0.1.1** onwards.
 
 The following page buttons are available:
 
@@ -84,7 +84,7 @@ This page contains information regarding the IP module included in the T2 Gatewa
 
 ### Alarms page
 
-This page displays the **Current Active Alarms** and **Status** of the device, including a list of the active alarms in the **Current Alarms** table**.** Two additional buttons are available: **Clear Log** and **Refresh Log.**
+This page displays the **Current Active Alarms** and **Status** of the device, including a list of the active alarms in the **Current Alarms** table. Two additional buttons are available: **Clear Log** and **Refresh Log.**
 
 The following page buttons are available:
 

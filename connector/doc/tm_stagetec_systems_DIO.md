@@ -12,7 +12,7 @@ The tm stagetec systems DIO (Dante Input Output) has a wide variety of interface
 
 | **Range** | **Key Features** | **Based on**            | **System Impact** |
 |-----------|------------------|-------------------------|-------------------|
-| 1.0.0.x   | Initial version  | Delec Unito DIO 1.0.0.x | \-                |
+| 1.0.0.x   | Initial version  | Delec Unito DIO 1.0.0.x | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The tm stagetec systems DIO (Dante Input Output) has a wide variety of interface
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

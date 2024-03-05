@@ -21,26 +21,26 @@ The most important features of the **Heights Networking Platform** are the follo
 
 ### Version Info
 
-| **Range**         | **Description**                                                                                                                             | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial Comtech Netvue-specific branch.                                                                                                     | No                  | Yes                     |
-| 1.1.0.x                  | Comtech Netvue: Branched from 1.0.0.14 - supports firmware 3.1.x.                                                                           | No                  | Yes                     |
-| 1.1.1.x                  | Comtech Netvue: Branched from 1.1.0.6 - updated parameter descriptions.                                                                     | No                  | Yes                     |
-| 1.2.0.x                  | Comtech Netvue: Branched from 1.1.1.3 - supports firmware 3.2.x.                                                                            | No                  | Yes                     |
-| 1.3.0.x                  | Comtech NetVue: Branched from 1.2.0.7 - updated mechanism to sync element data over multiple VMSs when element is in timeout after startup. | No                  | Yes                     |
-| 2.0.0.x                  | Branched from 1.0.0.16 - removed Netvue-specific functionality in order to let the connector function outside a Netvue environment.            | No                  | Yes                     |
-| 2.0.1.x **\[SLC Main\]** | Initial generic customer branch.                                                                                                            | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial Comtech Netvue-specific branch. | No | Yes |
+| 1.1.0.x | Comtech Netvue: Branched from 1.0.0.14 - supports firmware 3.1.x. | No | Yes |
+| 1.1.1.x | Comtech Netvue: Branched from 1.1.0.6 - updated parameter descriptions. | No | Yes |
+| 1.2.0.x | Comtech Netvue: Branched from 1.1.1.3 - supports firmware 3.2.x. | No | Yes |
+| 1.3.0.x | Comtech NetVue: Branched from 1.2.0.7 - updated mechanism to sync element data over multiple VMSs when element is in timeout after startup. | No | Yes |
+| 2.0.0.x | Branched from 1.0.0.16 - removed Netvue-specific functionality in order to let the connector function outside a Netvue environment. | No | Yes |
+| 2.0.1.x [SLC Main] | Initial generic customer branch. | No | Yes |
 
-Supported firmware versions
+### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.1.0.x          | 3.1.x                       |
-| 1.1.1.x          | 3.1.x                       |
-| 1.2.0.x          | 3.2.x                       |
-| 2.0.0.x          | 3.1.x                       |
-| 2.0.1.x          | 3.1.x                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 1.1.0.x | 3.1.x                      |
+| 1.1.1.x | 3.1.x                      |
+| 1.2.0.x | 3.2.x                      |
+| 2.0.0.x | 3.1.x                      |
+| 2.0.1.x | 3.1.x                      |
 
 ## Installation and configuration
 

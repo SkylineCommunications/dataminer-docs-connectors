@@ -16,7 +16,7 @@ The changeover uses a voting system based on which source has the best signals a
 
 | **Range**            | **Key Features**                                      | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Manual/automatic changeover - Voting configuration | \-           | \-                |
+| 1.0.0.x [SLC Main]   | \- Manual/automatic changeover - Voting configuration | -            | -                 |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ The changeover uses a voting system based on which source has the best signals a
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

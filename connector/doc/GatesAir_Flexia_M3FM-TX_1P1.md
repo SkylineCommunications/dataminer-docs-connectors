@@ -19,7 +19,7 @@ This is an **SNMP**-based connector for the GatesAir Flexiva M3M-TX 1P1.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                    |
+| Range     | Device Firmware Version                        |
 |------------------|------------------------------------------------|
 | 1.0.0.x          | 02.03.0139 / 861-1151-162 S (software version) |
 | 1.0.1.x          | 02.03.0139 / 861-1151-162 S (software version) |

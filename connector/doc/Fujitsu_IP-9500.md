@@ -23,7 +23,7 @@ From version 1.0.0.2, the **DataMiner Connectivity Framework** has been implemen
 | **Range**     | **Description**  | **DCF Implementation** | **Cassandra Complaint** |
 |----------------------|------------------|------------------------|-------------------------|
 | 1.0.0.x              | Initial version  | Yes                    | Yes                     |
-| 1.0.1.x \[SLC Main\] | Based on 1.0.0.3 | Yes                    | Yes                     |
+| 1.0.1.x [SLC Main]   | Based on 1.0.0.3 | Yes                    | Yes                     |
 
 ### Product Info
 

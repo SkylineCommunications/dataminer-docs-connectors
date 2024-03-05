@@ -2,8 +2,6 @@
 uid: Connector_help_KPN_Service_Manager
 ---
 
-
-
 # KPN Service Manager
 
 The KPN Service Manager is a manager connector used to calculate the severity of every Program view and Stream view in the KPN system.
@@ -12,15 +10,15 @@ The KPN Service Manager is a manager connector used to calculate the severity of
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

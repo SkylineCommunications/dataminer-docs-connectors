@@ -12,7 +12,7 @@ The DEVA Broadcast DB45 connector can be used to monitor the FM signals analyzed
 
 | **Range**            | **Key Features**             | **Based on** | **System Impact**                                                                       |
 |----------------------|------------------------------|--------------|-----------------------------------------------------------------------------------------|
-| 1.0.0.x \[SLC Main\] | Implements DB45-MIB.         | \-           | \-                                                                                      |
+| 1.0.0.x [SLC Main]   | Implements DB45-MIB.         | -            | -                                                                                       |
 | 1.1.0.x              | Supports firmware v1.7.1841. | 1.0.0.1      | If the device does not support the new firmware, some parameters will not be filled in. |
 
 ### Product Info
@@ -26,8 +26,8 @@ The DEVA Broadcast DB45 connector can be used to monitor the FM signals analyzed
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

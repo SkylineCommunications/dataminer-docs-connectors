@@ -10,13 +10,13 @@ This connector can poll the redundancy switch via SNMP. It can read all paramete
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**              |
+| Range     | Supported Firmware                  |
 |-----------|-------------------------------------|
 | 1.0.0.x   | Boot:1.1.1 Bulk1:1.1.3 Bulk2: 1.1.3 |
 
@@ -24,7 +24,7 @@ This connector can poll the redundancy switch via SNMP. It can read all paramete
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

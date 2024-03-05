@@ -12,7 +12,7 @@ Hawk Matrix is typically used for RF signal routing for LEO and MEO gateways, as
 
 | **Range**            | **Key Features**      | **Based on** | **System Impact** |
 |----------------------|-----------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Two 8x8 matrix cards. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Two 8x8 matrix cards. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ Hawk Matrix is typically used for RF signal routing for LEO and MEO gateways, as
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

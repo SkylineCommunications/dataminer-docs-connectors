@@ -12,19 +12,19 @@ The Vodafone Kabel Deutschland GmbH ABR OTT Service protocol monitors the active
 
 | **Range**            | **Key Features**                                                           | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version: Monitors the Active Streaming States of each XOS Encoder. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version: Monitors the Active Streaming States of each XOS Encoder. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                            |
+| Range     | Supported Firmware                                |
 |-----------|---------------------------------------------------|
 | 1.0.0.x   | N/A (Harmonic VOS protocol - Range 1.1.1.x or up) |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                            | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
 
 ## Configuration
 

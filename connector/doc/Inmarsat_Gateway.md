@@ -18,12 +18,12 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Version Info
 
-| **Range** | **Description**                                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                               | No                  | Yes                     |
-| 1.0.1.x          | Added second connection to the connector                         | No                  | Yes                     |
-| 2.0.0.x          | Master/slave functionality with the Inmarsat Gateway Director | No                  | Yes                     |
-| 2.1.0.x          | Support for the new Inmarsat API                              | No                  | Yes                     |
+| Range   | Description                                                   | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                               | No              | Yes                 |
+| 1.0.1.x | Added second connection to the connector                      | No              | Yes                 |
+| 2.0.0.x | Master/slave functionality with the Inmarsat Gateway Director | No              | Yes                 |
+| 2.1.0.x | Support for the new Inmarsat API                              | No              | Yes                 |
 
 ### Product Info
 
@@ -36,58 +36,46 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Exported connectors
 
-| **Exported Connector**       | **Description** |
-|-----------------------------|-----------------|
-| Inmarsat Gateway - Terminal | Terminal        |
+| Exported Connector          | Description |
+|-----------------------------|-------------|
+| Inmarsat Gateway - Terminal | Terminal    |
 
-## Installation and configuration
+## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x to 2.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>Versions 1.0.0.x to 2.0.0.x</td>
-<td>HTTP main connection
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: <a href="https://api.inmarsat.com/">https://api.inmarsat.com</a></li>
-<li><strong>IP port</strong>: 443</li>
-<li><strong>Bus address</strong>: byPassProxy</li>
-</ul>
-Serial SSH connection
-<p>This connector also uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Interface connection:</li>
-<li><ul>
-<li><strong>IP address/host</strong>: 127.0.0.1</li>
-<li><strong>IP port</strong>: 22</li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Version 2.0.0.x</td>
-<td>HTTP main connection
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: <a href="https://inmarsat-prod.apigee.net/">https://inmarsat-prod.apigee.net</a></li>
-<li><strong>IP port</strong>: 443</li>
-<li><strong>Bus address</strong>: byPassProxy</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### HTTP main connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: `https://api.inmarsat.com`
+- **IP port**: 443
+- **Bus address**: byPassProxy
+
+#### Serial SSH connection
+
+This connector also uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Interface connection:
+
+  - **IP address/host**: 127.0.0.1
+  - **IP port**: 22
+
+### Connections - Range 2.0.0.x
+
+#### HTTP main connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: `https://inmarsat-prod.apigee.net`
+- **IP port**: 443
+- **Bus address**: byPassProxy
 
 ## Usage (versions 1.0.0.x to 2.0.0.x)
 

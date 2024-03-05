@@ -10,11 +10,11 @@ This connector allows you to manage the Evertz 7882IRD-S2X-10G card. It communic
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                                                      |
+| Range                | Key Features     | Based On     | System Impact                                                                          |
 |----------------------|------------------|--------------|----------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version  | \-           | \-                                                                                     |
+| 1.0.0.x              | Initial version  | -            | -                                                                                      |
 | 1.0.1.x              | Initial version  | 1.0.0.2      | Descriptions and parameter placement have changed.                                     |
-| 1.0.2.x \[SLC Main\] | Initial version  | 1.0.1.1      | \- Connects to the card directly instead of the frame. - New OIDs for every parameter. |
+| 1.0.2.x [SLC Main]   | Initial version  | 1.0.1.1      | \- Connects to the card directly instead of the frame. - New OIDs for every parameter. |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ This connector allows you to manage the Evertz 7882IRD-S2X-10G card. It communic
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

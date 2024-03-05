@@ -10,14 +10,14 @@ The **CISCO CMTS** is an **SNMP** connector. It is used to poll data from the CM
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                  | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                                                  | \-           | \-                |
-| 1.1.0.x              | The 1.1.0.x range is a standard range; the 1.1.1.x range has a different index column for tables 22000 and 22500. | \-           | \-                |
-| 3.0.0.x \[Obsolete\] | Branch version based on version 1.1.1.41.                                                                         | 1.1.1.41     | \-                |
-| 3.0.1.x \[Obsolete\] | Based on version 3.0.0.18.                                                                                        | 3.0.0.18     | \-                |
-| 3.0.2.x \[Main\]     | New: DCF Connections available for Gigabit Interfaces Table (PID 24200).                                          | 3.0.1.1      | \-                |
-| 4.0.0.x              | Branch for TDC (custom alarm properties).                                                                         | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.1.0.x | The 1.1.0.x range is a standard range; the 1.1.1.x range has a different index column for tables 22000 and 22500. | - | - |
+| 3.0.0.x [Obsolete] | Branch version based on version 1.1.1.41. | 1.1.1.41 | - |
+| 3.0.1.x [Obsolete] | Based on version 3.0.0.18. | 3.0.0.18 | - |
+| 3.0.2.x [SLC Main] | New: DCF Connections available for Gigabit Interfaces Table (PID 24200). | 3.0.1.1 | - |
+| 4.0.0.x | Branch for TDC (custom alarm properties). | - | - |
 
 ### Product Info
 
@@ -30,12 +30,12 @@ The **CISCO CMTS** is an **SNMP** connector. It is used to poll data from the CM
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.1.0.x   | No                  | No                      | \-                    | \-                      |
-| 3.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 3.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 4.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.1.0.x   | No                  | No                      | -                     | -                       |
+| 3.0.0.x   | No                  | No                      | -                     | -                       |
+| 3.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 4.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

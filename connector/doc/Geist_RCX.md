@@ -67,6 +67,6 @@ This page contains information about the 3-phase outlet control. This informatio
 
 Like the Airflow Info page, it also displays a toggle button called **Polling** **3 Phase Outlet Control Table** to enable and disable the polling of this specific table.
 
-### Web Interface.
+### Web Interface
 
 This page can be used to access the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

@@ -15,39 +15,61 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 - **DOCSIS Network**
 
   - Network
+
   - Market
+
   - Hub
+
   - CCAP Core
+
   - DS Line Cards - US Line Cards
+
   - DS Ports - US Ports
+
   - Node Segment
+
   - CM
 
 - **DOCSIS Service**
 
   - DOCSIS Network
+
   - DOCSIS Market
+
   - DOCSIS Hub
+
   - CCAP Core
-  - Service Group \[Fiber Node\]
+
+  - Service Group [Fiber Node]
+
   - DS Service Group - US Service Group
+
   - CM
 
 - **DOCSIS Passives**
 
   - Node
+
   - Amplifier
+
   - Tap
+
   - CM
 
 - **GPON Service**
 
   - GPON Network
+
   - GPON Market
+
   - GPON Hub
+
   - OLT
+
   - Slot
+
   - Port
+
   - ONT
 
 - **DOCSIS Quick**
@@ -66,18 +88,19 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x | Initial version. | \- | \- |
-| 1.0.1.x | Integration of PNM KPIs. | \- | \- |
-| 1.0.2.x | Decoupling and enhancements. | \- | \- |
-| 1.0.3.x | Remote view tables retrieve information from multiple source elements. | \- | \- |
-| 1.0.4.x | \- Partial table option enabled on several tables to improve loading time of the filter box for the EPM topology. - Parameter added that lets the user change the name of the Automation script that notifies the CCAPs/CM collector pairs of new data to be ingested. | \- | \- |
-| 1.0.5.x | \- New exceptions added for the correction of the default value for average percentage US and DS utilization. | \- | \- |
-| 1.0.6.x | \- Quick topology for GPON now contains Split Route, Split Distribution, and Split FAT. Generic Split level was removed. | \- | \- |
-| 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | \- | \- |
-| 1.0.8.x | Remote views removed from GPON CPE level (ONT). | \- | \- |
-| 1.0.9.x \[SLC Main\] | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | \- | \- |
+| 1.0.0.x | Initial version. | -  | -  |
+| 1.0.1.x | Integration of PNM KPIs. | -  | -  |
+| 1.0.2.x | Decoupling and enhancements. | -  | -  |
+| 1.0.3.x | Remote view tables retrieve information from multiple source elements. | -  | -  |
+| 1.0.4.x | - Partial table option enabled on several tables to improve loading time of the filter box for the EPM topology. <br>- Parameter added that lets the user change the name of the Automation script that notifies the CCAPs/CM collector pairs of new data to be ingested. | -  | -  |
+| 1.0.5.x | New exceptions added for the correction of the default value for average percentage US and DS utilization. | -  | -  |
+| 1.0.6.x | Quick topology for GPON now contains Split Route, Split Distribution, and Split FAT. Generic Split level was removed. | -  | -  |
+| 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | -  | -  |
+| 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
+| 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
+| 1.0.10.x [SLC Main] | Tables ordered in the same way as on the overview page. | -  | -  |
 
 ### Product Info
 
@@ -93,27 +116,29 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x   | N/A                    |
 | 1.0.8.x   | N/A                    |
 | 1.0.9.x   | N/A                    |
+| 1.0.10.x  | N/A                    |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.5.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.6.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.7.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.8.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.9.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.7.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.8.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.9.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.10.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### Virtual connection
+#### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
 
@@ -142,11 +167,30 @@ The provisioning of the EPM Solution is sequential and involves the following co
 - **Skyline Platform EPM DOCSIS WM**: Creates compatible files regarding the passives available within the DOCSIS infrastructure.
 - **Skyline Platform EPM GPON WM**: Creates compatible files regarding the passives available within the GPON infrastructure and the KAFKA OLT KPIs.
 
-### Redundancy
+### Thresholds Settings
 
-There is no redundancy defined.
+In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available: one for upstream and one for downstream.
 
-## How to use
+These tables will serve as a multiple set function for all CCAP and CM collectors. Once the *Apply* button is clicked, the table settings will be applied to the active elements.
+
+These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
+
+- **Maximum Timing Offset Level**: Range from 0 to 2000 µs.
+- **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Minimum SNR Level**: Range from 10 to 60 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+- **Minimum Tx Power Level**: Range from 32 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 32 to 55 dBmV.
+
+These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
+
+- **Minimum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Minimum SNR Level**: Range from 0 to 100 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+## How to Use
 
 The solution is based on the usage of .CSV files and the DataMiner messaging system using information events.
 

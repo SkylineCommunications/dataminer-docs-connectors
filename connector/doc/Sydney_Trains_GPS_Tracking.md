@@ -10,7 +10,7 @@ The **Sydney Trains GPS Tracking** connector reads out one of the **XML** files 
 
 There are 2 XML files that are used by this connector to check when an announcement should be made in which station:
 
-- **Real time running file**: is the prefered file to use, but is only when it has been updated within the last 10 minutes
+- **Real time running file**: is the preferred file to use, but is only when it has been updated within the last 10 minutes
 - **Station time table file**: is used when the real time running file was not update in the last 10 minutes
 
 Both files are the same format, but the real time running file can contain extra information about delays etc.
@@ -22,15 +22,21 @@ The **Sydney Trains GPS Tracking** connector will read these files and will send
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Sittig DVA v0202            |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Sittig DVA v0202       |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -45,7 +51,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: *localhost* (DataMiner acts as server)
-  - **IP port**: \[The DataMiner IP port used by Sittig DVA to send requests to. *Default 7531*.\]
+  - **IP port**: The DataMiner IP port used by Sittig DVA to send requests to. Default: *7531*.
 
 ### Configuration of files
 

@@ -10,24 +10,24 @@ The **Cisco Meraki Cloud Controller** is a managed Wi-Fi solution, managing swit
 
 ### Version Info
 
-| **Range** | **Key Features**                                     | **Based on** | **System Impact** |
-|-----------|------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                      | \-           | \-                |
-| 2.0.0.x   | New connector range only polling interfaces over SNMPv1 | \-           | \-                |
+| Range   | Key Features                                            | Based on | System Impact |
+|---------|---------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version                                         | -        | -             |
+| 2.0.0.x | New connector range only polling interfaces over SNMPv1 | -        | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                    |
+| Range     | Supported Firmware                                                        |
 |-----------|---------------------------------------------------------------------------|
-| 1.0.0.x   | \-                                                                        |
+| 1.0.0.x   | -                                                                         |
 | 2.0.0.x   | No specific firmware version required as only interfaces table is polled. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

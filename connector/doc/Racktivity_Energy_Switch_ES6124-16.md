@@ -12,15 +12,21 @@ This protocol can be used to monitor and control any Racktivity Energy Switch ES
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.0.3.4                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 2.0.3.4                |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -51,16 +57,22 @@ This page provides general status information, including the System Name, Device
 
 This page contains the **Overview table**, which provides a general overview of **Current**, **Power**, **Power Factor** and **Energy**.
 
-It also contains the **Voltage/Frequency Total** **by** **Module table**, with quick information on the total frequency and voltage per module.
+It also contains the **Voltage/Frequency Total by Module table**, with quick information on the total frequency and voltage per module.
 
 The following page buttons lead to subpages with additional information and settings:
 
 - **Agent:** Displays the **Agent Table**, with information about Ports, Agent status and Agent IP.
+
 - **Fuse:** Displays three different tables, i.e. the **Line**, **Line Current** and **Fuse table**, with information on the current and the status per fuse. Also allows you to set the thresholds and warnings.
+
 - **Scheduler:** Displays the **Scheduler Table**, which contains information about the port name, the port state and the port on and off time, and allows you to enable or disable ports by outlet.
+
 - **Energy:** Displays the **Energy Table**, which contains the outlets names, Port State, Active Energy, Resettable Active Energy, reset buttons, Apparent Energy and Resettable Apparent Energy. This provides an overview of the complete energy status of the device, along with the possibility to set changes to the relevant parameters.
+
 - **Power:** Displays the **Power Table**, with the columns Port State, Actual Power, Min Power, Max Power, Reset Values, Power Warning, Switch Off, Apparent, etc.
+
   Note that **minimum and maximum values are calculated by the connector itself**. Because of this, it is strongly recommended to **reset the values of the device when the connector starts**.
+
 - **Current:** Displays the **Current Table**, which allows you to set thresholds for the currents, view maximum and minimum values, and set the Current Off value.
 
 ### Environment

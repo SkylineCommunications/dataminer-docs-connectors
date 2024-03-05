@@ -12,15 +12,21 @@ The connector communicates with the device using **SNMP**, to change its configu
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                            |
-|------------------|------------------------------------------------------------------------|
-| 1.0.0.x          | UC: *4.34* FPGA: *1.42* AL_BOARD: *1.4* GPS_BOARD: *8.47* SNMP: *2.15* |
+| Range   | Supported Firmware                                                                 |
+|---------|------------------------------------------------------------------------------------|
+| 1.0.0.x | UC: *4.34*<br>FPGA: *1.42*<br>AL_BOARD: *1.4*<br>GPS_BOARD: *8.47*<br>SNMP: *2.15* |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,14 +38,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host:** The polling IP of the device.
-- **Device address:** Not required.
+- **IP address/host**: The polling IP of the device.
+- **Device address**: Not required.
 
 **SNMP Settings:**
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device, by default e.g. *public*.
-- **Set community string:** The community string used when setting values on the device, by default e.g. *private*.
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device, by default e.g. *public*.
+- **Set community string**: The community string used when setting values on the device, by default e.g. *private*.
 
 ## Usage
 

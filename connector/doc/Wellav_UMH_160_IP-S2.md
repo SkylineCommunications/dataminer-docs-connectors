@@ -14,15 +14,21 @@ An **SNMP** connection is used to successfully retrieve the device's information
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -34,7 +40,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
@@ -74,7 +80,7 @@ This page displays the following local connection and channel information.
 - **Source Port**
 - **Protocol**
 
-A page button opens the **IGMP** page, which displays the **IGMP** **Version**, **Auto** **Report**, **Filter** and **IP** **Address**.
+A page button opens the **IGMP** page, which displays the **IGMP Version**, **Auto Report**, **Filter** and **IP Address**.
 
 ### Output Decoder
 
@@ -97,7 +103,7 @@ This page provides the **GbE Port-Setting** for the **Main** and **Backup** and 
 
 ### CA
 
-This page shows the **CAM Max Bitrate** and BISS related parameters: **Mode**, the **BISS-1** and **BISS-E** **Keys** and the **BISS-E ID.**
+This page shows the **CAM Max Bitrate** and BISS related parameters: **Mode**, the **BISS-1** and **BISS-E Keys** and the **BISS-E ID.**
 
 ### System
 

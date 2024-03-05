@@ -14,17 +14,21 @@ It uses the Redfish REST API to get all the associated parameters for this type 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
-
-
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | 8.82                        |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -79,5 +83,3 @@ This table provides some configuration options to manage the table:
 ### Web Interface
 
 This page displays the Web Interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
-
-

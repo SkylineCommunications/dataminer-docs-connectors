@@ -24,87 +24,64 @@ This connector can export different connectors based on the retrieved data. A li
 
 ### Version Info
 
-| **Range** | **Description**                                                                                           | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version with connection to SQL Database.                                                          | No                  | No                      |
-| 1.0.1.x          | New alarm clearing system implemented. Update tables reviewed.                                            | No                  | Yes                     |
-| 2.0.0.x          | New connector range retrieving information from traps and from the import of rules and IP addresses via CSV. | No                  | No                      |
+| Range   | Description                                                                                                  | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version with connection to SQL Database.                                                             | No              | No                  |
+| 1.0.1.x | New alarm clearing system implemented. Update tables reviewed.                                               | No              | Yes                 |
+| 2.0.0.x | New connector range retrieving information from traps and from the import of rules and IP addresses via CSV. | No              | No                  |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.0.1.x          | Unknown                     |
-| 2.0.0.x          | Unknown                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 1.0.1.x | Unknown                    |
+| 2.0.0.x | Unknown                    |
 
 ### Exported connectors
 
-| **Exported Connector**                                                                  | **Description**                                                                                                                                      |
-|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exported Connector | Description |
+|--|--|
 | Castlerock SNMPc Node (in 1.0.0.x and 2.0.0.x) Castlerock SNMPc - Node (since 1.0.1.x) | A separate connector showing only the database or traps information for that specific node, connected to the Castlerock SNMPc. Supported in all ranges. |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections - Range 1.0.0.x/1.0.1.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range 1.0.0.x/1.0.1.x</strong></td>
-<td><h4 id="virtual-sql-database-connection">Virtual SQL Database connection</h4>
-<p>This connector uses a virtual connection and does not require any input during element creation. The configuration of the connection is done on the Configuration page of the connector (see below).</p></td>
-</tr>
-<tr class="even">
-<td><strong>Range 2.0.0.x</strong></td>
-<td><h4 id="snmp-trap-input-connection">SNMP Trap Input connection</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>Device address</strong>: Not required.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>Port number</strong>: <em>161</em></li>
-<li><strong>Get community string</strong>: <em>public</em></li>
-<li><strong>Set community string</strong>: <em>private</em></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### Virtual SQL Database Connection
 
-### Configuration
+This connector uses a virtual connection and does not require any input during element creation. The configuration of the connection is done on the Configuration page of the connector (see below).</
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range 1.0.0.x/1.0.1.x</strong></td>
-<td>Configuration of credentials to connect to the SNMPc-database
-<p>The credentials to connect with the SQL database must be specified on the <strong>Configuration page</strong>:</p>
-<ul>
-<li><strong>Database Name:</strong> The name of the database, by default SNMPc.</li>
-<li><strong>Server IP:</strong> The IP address of the database.</li>
-<li><strong>User Name:</strong> The user name to connect.</li>
-<li><strong>Password:</strong> The password that is required to login.</li>
-</ul>
-<p>The connector does a credential check on these parameters before trying to connect to the database. If the default alarm template is used, not filling in these parameters will result in a critical alarm.</p></td>
-</tr>
-<tr class="even">
-<td><strong>Range 2.0.0.x</strong></td>
-<td><h4 id="custom-element-properties">CUSTOM ELEMENT PROPERTIES</h4>
-<p>The <strong>Custom Element Properties</strong> <em>Client ID and MHA Identifier</em> need to be created in the main element before you import the CSV file.</p></td>
-</tr>
-</tbody>
-</table>
+### Connections - Range 2.0.0.x
+
+#### SNMP Trap Input Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: *161*
+- **Get community string**: *public*
+- **Set community string**: *private*
+
+### Configuration of Credentials to Connect to the SNMPc Database (Range 1.0.0.x/1.0.1.x Only)
+
+The credentials to connect with the SQL database must be specified on the **Configuration page**:
+
+- **Database Name:** The name of the database, by default SNMPc.
+- **Server IP:** The IP address of the database.
+- **User Name:** The user name to connect.
+- **Password:** The password that is required to login.
+
+The connector does a credential check on these parameters before trying to connect to the database. If the default alarm template is used, not filling in these parameters will result in a critical alarm.
+
+### Configuration of Custom Element Properties (Range 2.0.0.x Only)
+
+The **Custom Element Properties** Client ID and MHA Identifier need to be created in the main element before you import the CSV file.
 
 ## Usage: Range 1.0.0.x/1.0.1.x
 
@@ -139,6 +116,7 @@ The **Events Filter Table** contains the following columns:
   - Will filter the following IDs:
 
     1. 5.6.7.8
+
     2. 0
 
 Via the **Add Row** button, you can open a pop-up page where you can specify a new filter to add to the Events Filter Table.
@@ -168,7 +146,8 @@ Note that in this table overwriting is not possible. All entries from priority 7
 
 This page consists of three main sections (detailed below), as well as the **Maximum Processing Speed \[Events/Minute\]** parameter. The latter displays the maximum number of events of the EventLog Table that can be queried and processed in one minute. By default, this parameter is set to 5000.
 
-> Note: This setting is intended as a safety measure in case the EventLog Table contains a large number of entries, as errors could occur if the number of queried entries is too high. Because this value will be higher than the number of events stored per minute in the EventLog table of the SNMPc database, this parameter is only relevant on startup, when the Events Table in the element first gets updated. For example, if you were to set the parameter to 10000, and only 10 events per minute are stored in the EventLog table on average, the element will be up to date fairly quickly. When the table is not yet up to date, the Date and Time of the Youngest Processed Event parameter can give an indication of the update progress.
+> [!NOTE]
+> This setting is intended as a safety measure in case the EventLog Table contains a large number of entries, as errors could occur if the number of queried entries is too high. Because this value will be higher than the number of events stored per minute in the EventLog table of the SNMPc database, this parameter is only relevant on startup, when the Events Table in the element first gets updated. For example, if you were to set the parameter to 10000, and only 10 events per minute are stored in the EventLog table on average, the element will be up to date fairly quickly. When the table is not yet up to date, the Date and Time of the Youngest Processed Event parameter can give an indication of the update progress.
 
 #### Events Limitations
 
@@ -209,17 +188,30 @@ The decision to see if an event can overwrite an existing event in the Events Ta
 
 The normal hash key consists of four parts, delimited by semicolons:
 
-1. **Map ID** This is equal to the raw data of that specific cell of an entry. Including this in the hash key ensures that only events coming from the same node can overwrite each other.
+1. **Map ID**
 
-1. **From_address** This is equal to the raw data of that specific cell of an entry. Including this in the hash key ensures that only events with the same from_addres can overwrite each other.
+   This is equal to the raw data of that specific cell of an entry. Including this in the hash key ensures that only events coming from the same node can overwrite each other.
 
-1. **IP addresses in the Event Message** Through the use of a regular expression, the IP addresses (several types and occurrences in one message are possible, delimited by an '\*') are extracted from the raw message, which also correspond to a specific cell of the entry. This check is necessary as sometimes a node is connected to several devices, and the difference between these can be seen based on the IP addresses included in the message.
+1. **From_address**
 
-1. **Slot:port-combinations in the Event Message** Through the use of a regular expression, the Slot:Port combinations (several types and occurrences in one message are possible, delimited by an '\*') are extracted from the raw message, which also correspond to a specific cell of the entry. This check is necessary as sometimes a node is connected to several devices, and the difference between these can be seen based on the Slot:Port combinations in the message.
+   This is equal to the raw data of that specific cell of an entry. Including this in the hash key ensures that only events with the same from_addres can overwrite each other.
+
+1. **IP addresses in the Event Message**
+
+   Through the use of a regular expression, the IP addresses (several types and occurrences in one message are possible, delimited by an '\*') are extracted from the raw message, which also correspond to a specific cell of the entry. This check is necessary as sometimes a node is connected to several devices, and the difference between these can be seen based on the IP addresses included in the message.
+
+1. **Slot:port-combinations in the Event Message**
+
+   Through the use of a regular expression, the Slot:Port combinations (several types and occurrences in one message are possible, delimited by an '\*') are extracted from the raw message, which also correspond to a specific cell of the entry. This check is necessary as sometimes a node is connected to several devices, and the difference between these can be seen based on the Slot:Port combinations in the message.
 
 #### Examples of calculated hash keys
 
-eska-\[ER\];192.168.3.242;192.168.7.234; cn-go-wp1-cr90;192.168.255.61;192.168.255.61\*0.0.0.0\*192.168.255.65\*192.168.255.65; eska-\[ER\];192.168.3.242;192.168.6.82;2:12 dtv-nawij-is-dcm71;192.168.23.151;;
+```
+eska-[ER];192.168.3.242;192.168.7.234;
+cn-go-wp1-cr90;192.168.255.61;192.168.255.61\*0.0.0.0\*192.168.255.65\*192.168.255.65;
+eska-[ER];192.168.3.242;192.168.6.82;2:12
+dtv-nawij-is-dcm71;192.168.23.151;;
+```
 
 In version 1.0.1.x, the hash key consists of the following parts, delimited by semicolons, if an **Events Filter** is applied:
 
@@ -346,11 +338,11 @@ The fields of an imported trim rule detail the following information:
 
 Consider the following trim rules table:
 
-| **ID** | **IP Address**      | **RegEx Incoming Trap**                                                                                                                                               | **Severity Incoming Trap** | **Applied** |
-|--------|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|-------------|
-| 1      | \* (Wildcard Value) | \*;^(?:\b\[0-9\]{4})-(?:0\*\[1-9\]\|1\[0-2\])-(?:3\[0-1\]\|\[1-2\]\[0-9\]\|0\*\[1-9\]),(?:2\[0-3\]\|1\[0-9\]\|0\*\[1-9\]):(?:\[0-5\]\*\[0-9\]):(?:\[0-5\]\*\[0-9\])\b | 0 (Wildcard Value)         | Yes         |
-| 2      | \* (Wildcard Value) | working                                                                                                                                                               | 6 (Normal)                 | Yes         |
-| 3      | 10.x.10.x           | Failed                                                                                                                                                                | 2 (Severe)                 | Yes         |
+| ID | IP Address | RegEx Incoming Trap | Severity Incoming Trap | Applied |
+|----|------------|---------------------|------------------------|---------|
+| 1 | \* (Wildcard Value) | \*;^(?:\b\[0-9\]{4})-(?:0\*\[1-9\]\|1\[0-2\])-(?:3\[0-1\]\|\[1-2\]\[0-9\]\|0\*\[1-9\]),(?:2\[0-3\]\|1\[0-9\]\|0\*\[1-9\]):(?:\[0-5\]\*\[0-9\]):(?:\[0-5\]\*\[0-9\])\b | 0 (Wildcard Value) | Yes |
+| 2 | \* (Wildcard Value) | working | 6 (Normal) | Yes |
+| 3 | 10.x.10.x | Failed | 2 (Severe) | Yes |
 
 Consider the following incoming trap, with the first three bindings equal to:
 
@@ -398,20 +390,20 @@ Additional remarks:
 
 Consider the following update rules table:
 
-| **ID** | **IP Address** | **RegEx Updated Trap** | **Severity Updated Trap** | **RegEx Updating Trap** | **Severity Updated Trap** | **Applied** |
-|--------|----------------|------------------------|---------------------------|-------------------------|---------------------------|-------------|
-| 1      | 11.11.11.11    | alcorSetTrap           | 1 (Critical)              | alcorClearTrap          | 6 (Normal)                | Yes         |
-| 2      | 10.10.10.10    | Down                   | 1 (Critical)              | Up                      | 6 (Normal)                | Yes         |
-| 3      | 12.12.12.12    | alarmSetTrap           | 1 (Critical)              | alarmClearTrap          | 6 (Normal)                | Yes         |
+| ID | IP Address  | RegEx Updated Trap | Severity Updated Trap | RegEx Updating Trap | Severity Updated Trap | Applied |
+|----|-------------|--------------------|-----------------------|---------------------|-----------------------|---------|
+| 1  | 11.11.11.11 | alcorSetTrap       | 1 (Critical)          | alcorClearTrap      | 6 (Normal)            | Yes     |
+| 2  | 10.10.10.10 | Down               | 1 (Critical)          | Up                  | 6 (Normal)            | Yes     |
+| 3  | 12.12.12.12 | alarmSetTrap       | 1 (Critical)          | alarmClearTrap      | 6 (Normal)            | Yes     |
 
 Consider the current content of the Traps Table. Some columns were hidden because they are not relevant to the update rules mechanism. The oldest trap is the one with the lowest ID. They are ordered by descending timestamp, so from new to old.
 
-| **Shortkey** | **Timestamp**           | **IP Address** | **Message**    | **Severity** |
-|--------------|-------------------------|----------------|----------------|--------------|
-| 4            | 2010/01/01 14:17:00.000 | 10.10.10.10    | asxLinkDown Q8 | 1 (Critical) |
-| 3            | 2010/01/01 14:10:00.000 | 10.15.15.12    | asxLinkDown Q8 | 1 (Critical) |
-| 2            | 2010/01/01 14:03:00.000 | 10.10.10.10    | asxLinkDown A7 | 1 (Critical) |
-| 1            | 2010/01/01 14:00:00.000 | 10.10.10.10    | asxLinkDown Q8 | 2 (Severe)   |
+| Shortkey | Timestamp               | IP Address  | Message        | Severity     |
+|----------|-------------------------|-------------|----------------|--------------|
+| 4        | 2010/01/01 14:17:00.000 | 10.10.10.10 | asxLinkDown Q8 | 1 (Critical) |
+| 3        | 2010/01/01 14:10:00.000 | 10.15.15.12 | asxLinkDown Q8 | 1 (Critical) |
+| 2        | 2010/01/01 14:03:00.000 | 10.10.10.10 | asxLinkDown A7 | 1 (Critical) |
+| 1        | 2010/01/01 14:00:00.000 | 10.10.10.10 | asxLinkDown Q8 | 2 (Severe)   |
 
 Consider the following incoming trap on 2010/01/01 15:00:00.000 (so more recent than the traps in the table), with the first three bindings equal to:
 
@@ -443,10 +435,10 @@ The result of evaluating the update rules will be that the incoming trap will up
 
 Imagine the following two traps, arriving in this order:
 
-| **IP Address**        | **Trap Message** | **Severity**                                                                                                        |              |
-|-----------------------|------------------|---------------------------------------------------------------------------------------------------------------------|--------------|
-| Stored in Traps Table | 10.237.150.41    | alarmSetTrap; No stream received : SES in DVBR; alarmDescr: Sess: \[WIN.D.U24M.INGL.CANO;IP2\]:No stream received   | 1 (Critical) |
-| Incoming Trap         | 10.237.150.41    | alarmClearTrap; No stream received : SES in DVBR; alarmDescr: Sess: \[WIN.D.U24M.INGL.CANO;IP2\]:No stream received | 6 (Normal)   |
+|                       | IP Address    | Trap Message                                                                                                        | Severity     |
+|-----------------------|---------------|---------------------------------------------------------------------------------------------------------------------|--------------|
+| Stored in Traps Table | 10.237.150.41 | alarmSetTrap; No stream received : SES in DVBR; alarmDescr: Sess: \[WIN.D.U24M.INGL.CANO;IP2\]:No stream received   | 1 (Critical) |
+| Incoming Trap         | 10.237.150.41 | alarmClearTrap; No stream received : SES in DVBR; alarmDescr: Sess: \[WIN.D.U24M.INGL.CANO;IP2\]:No stream received | 6 (Normal)   |
 
 Importing the following .csv file for the rules would be enough to make sure that the incoming trap updates the correct old trap, because the regular expression trims the first word from the updated and updating trap:
 
@@ -460,10 +452,10 @@ This more specific .csv file would also do the job:
 
 Imagine the following two traps, arriving in this order:
 
-| **IP Address**        | **Trap Message** | **Severity**                                                             |              |
-|-----------------------|------------------|--------------------------------------------------------------------------|--------------|
-| Stored in Traps Table | 10.11.12.13      | 4 Trib 1 uncommissioned traffic 1 Slot7 Slot7 system                     | 1 (Critical) |
-| Incoming Trap         | 10.11.12.13      | 2015-11-22,13:37:03 6 Trib 1 uncommissioned traffic 0 Slot7 Slot7 system | 6 (Normal)   |
+|                       | IP Address   | Trap Message                                                             | Severity     |
+|-----------------------|--------------|--------------------------------------------------------------------------|--------------|
+| Stored in Traps Table | 10.11.12.13  | 4 Trib 1 uncommissioned traffic 1 Slot7 Slot7 system                     | 1 (Critical) |
+| Incoming Trap         | 10.11.12.13  | 2015-11-22,13:37:03 6 Trib 1 uncommissioned traffic 0 Slot7 Slot7 system | 6 (Normal)   |
 
 Importing the following .csv file for the rules would be enough to make sure that the incoming trap updates the correct old trap and is stored without the timestamp at the beginning:
 
@@ -477,10 +469,10 @@ You can even add the general case of traps updating older traps if the trap mess
 
 *TRIM RULES*<br/>*UPDATE RULES*<br/>*\*;\*;0;\*;0*
 
-| **IP Address**        | **Trap Message** | **Severity**            |            |
-|-----------------------|------------------|-------------------------|------------|
-| Stored in Traps Table | 10.11.12.13      | No response from Device | 3 (Major)  |
-| Incoming Trap         | 10.11.12.13      | No response from Device | 6 (Normal) |
+|                       | IP Address  | Trap Message            | Severity   |
+|-----------------------|-------------|-------------------------|------------|
+| Stored in Traps Table | 10.11.12.13 | No response from Device | 3 (Major)  |
+| Incoming Trap         | 10.11.12.13 | No response from Device | 6 (Normal) |
 
 #### Example 4 of Choosing an Update Rule
 
@@ -489,3 +481,8 @@ Imagine there is a certain range of devices that all have a source IP belonging 
 Importing this file would add the required rule:
 
 *TRIM RULES*<br/>*UPDATE RULES*<br/>*192.16.5.x;.\*;7;.\*;7*
+
+|                       | IP Address  | Trap Message                                 | Severity   |
+|-----------------------|-------------|--------------------------------------------- |------------|
+| Stored in Traps Table | 192.16.5.56 | The CPU Load is 87 %, which is already high. | 7 (Info)​   |
+| Incoming Trap         | 192.16.5.56 | 	The CPU Load is 30 %, which is acceptable. | 7 (Info)​   |

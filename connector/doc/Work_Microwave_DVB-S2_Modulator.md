@@ -16,15 +16,17 @@ This connector is compatible with "FMB" software units (front panel firmware sta
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range   | Description                      | DCF Integration | Cassandra Compliant |
+|---------|----------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                  | Yes             | Yes                 |
+| 1.0.2.x | Removes alarm mapping from traps | Yes             | Yes                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**    |
-|------------------|--------------------------------|
-| 1.0.0.x          | Front Panel Firmware: FMB0x.yz |
+| Range   | Device Firmware Version        |
+|---------|--------------------------------|
+| 1.0.0.x | Front Panel Firmware: FMB0x.yz |
+| 1.0.2.x | Front Panel Firmware: FMB0x.yz |
 
 ## Installation and configuration
 
@@ -48,7 +50,7 @@ SNMP Settings:
 
 ### Modulator Configuration
 
-This page contains the parameters for the configuration of the modulator signal: **Signal** **Output**, **TX Frequency**, **TX Level**, **Symbol Rate**, **Data Rate**, **MODCOD**, **Roll**-**off**, **Slope** **Compensation** and **Spectrum** **Inversion**.
+This page contains the parameters for the configuration of the modulator signal: **Signal Output**, **TX Frequency**, **TX Level**, **Symbol Rate**, **Data Rate**, **MODCOD**, **Roll**-**off**, **Slope Compensation** and **Spectrum Inversion**.
 
 The **Automatic Disabled Polling** toggle button is also available on this page. If this button is set to enabled, the polling of the modulator configuration parameters will be automatically disabled when a "NO SUCH NAME" error is received.
 
@@ -68,11 +70,11 @@ This page allows you to configure the system. The **State** of the device can be
 
 The following page buttons are available on this page:
 
-- **SNMP**: Displays the **Trap Sink Server** table, with up to 4 rows (one for each server), and information regarding the **TCP/UDP** ports and **Read**/**Write** **Community**.
+- **SNMP**: Displays the **Trap Sink Server** table, with up to 4 rows (one for each server), and information regarding the **TCP/UDP** ports and **Read**/**Write Community**.
 - **Device States**: Displays a table with information related to the stored devices.
-- **M&C Interface Settings**: Allows you to set up the M&C interface, with parameters such as **Multipoint Address**, **Interface Type**, **RS485 TX** and **RX Termination**, **Packet Delay**, **Baud Rate**, **IP Address**, **Subnet Mask** and **Gateway**. The page also displays the status of the **ASI**-**A** and **ASI**-**B** signals, **SPI interface** and **auto** **mode**.
+- **M&C Interface Settings**: Allows you to set up the M&C interface, with parameters such as **Multipoint Address**, **Interface Type**, **RS485 TX** and **RX Termination**, **Packet Delay**, **Baud Rate**, **IP Address**, **Subnet Mask** and **Gateway**. The page also displays the status of the **ASI**-**A** and **ASI**-**B** signals, **SPI interface** and **auto mode**.
 
-With the **Factory** **Reset** button, you can reset the device to its factory status.
+With the **Factory Reset** button, you can reset the device to its factory status.
 
 ### Status
 

@@ -14,7 +14,7 @@ The TimeProvider 5000 is an independent timing reference that enables telecommun
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
@@ -64,4 +64,4 @@ This page presents information regarding the **GPS Position** and **Satellite Ve
 
 ### Status
 
-This page displays information about the **System** and the **Craft** parameters. Additionally, it also has four subpages with **LED** information, the **status of Hardware**, the **PTP** **(Precision Time Protocol)** status and the **I/O** status**.**
+This page displays information about the **System** and the **Craft** parameters. Additionally, it also has four subpages with **LED** information, the **status of Hardware**, the **PTP** **(Precision Time Protocol)** status and the **I/O** status.

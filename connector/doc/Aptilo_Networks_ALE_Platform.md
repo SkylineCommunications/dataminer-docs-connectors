@@ -74,7 +74,7 @@ This page contains all the information about the **Call Data Record** generation
 
 This page displays the **CDR Events** table.
 
-With the **FTP Connection** page button, you can configure the **FTP Connection Settings**. Those **FTP Connections Settings** include a parameter that enables/disables the polling of the FTP Server. By default, this is *Disabled*. As soon as it is *Enabled*, polling will start, but only if all the other parameters were entered corrrectly (username, password, folder). As such, it is recommended to enter all the settings before enabling FTP polling. The **IP address** at startup is the IP address of the element (sometimes the FTP's IP address is the same as the element's IP). If it is different, change the IP address to the correct address. The **Polling Time** denotes how frequently the FTP server will be polled in order to retrieve the required number of records. The **Record Time Span** determines how much information all the records contain (by default this is set to 5 minutes of events).
+With the **FTP Connection** page button, you can configure the **FTP Connection Settings**. Those **FTP Connections Settings** include a parameter that enables/disables the polling of the FTP Server. By default, this is *Disabled*. As soon as it is *Enabled*, polling will start, but only if all the other parameters were entered correctly (username, password, folder). As such, it is recommended to enter all the settings before enabling FTP polling. The **IP address** at startup is the IP address of the element (sometimes the FTP's IP address is the same as the element's IP). If it is different, change the IP address to the correct address. The **Polling Time** denotes how frequently the FTP server will be polled in order to retrieve the required number of records. The **Record Time Span** determines how much information all the records contain (by default this is set to 5 minutes of events).
 
 With the **Old Records** page button, historic data can be retrieved from the FTP Server.
 
@@ -108,4 +108,4 @@ This page contains information about the **Uptime**, **Memory Size** and **Stora
 
 ### Radius
 
-This page contains information about the **Authentication** **Server** and the **Accounting** **Server**.
+This page contains information about the **Authentication Server** and the **Accounting Server**.

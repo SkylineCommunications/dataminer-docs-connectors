@@ -20,12 +20,12 @@ It uses a serial connection to monitor the state of the HPA itself and to contro
 
 | **Range** | **Key Features**                                 | **Based on** | **System Impact** |
 |-----------|--------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                  | \-           | \-                |
-| 1.1.0.x   | New firmware that uses variable response lengths | \-           | \-                |
+| 1.0.0.x   | Initial version                                  | -            | -                 |
+| 1.1.0.x   | New firmware that uses variable response lengths | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| Range     | Supported Firmware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Front Panel Boost Kernel Software Version: 03.00.13 Front Panel Main Program Software Version: 03.01.72 Power Supply Boot Kernel Software Version: 03.00.03 Power Supply Main Program Software Version: 03.01.34 RF Controller Boot Kernel Software Version: 03.00.03 RF Controller Main Program Software Version: 03.01.42 Ext Interface Boot Kernel Software Version: 03.00.03 Ext Interface Main Program Software Version: 03.01.54 Can Communication Level Key: 03.01.22 ID Version: GEN4 2003 |
 | 1.1.0.x   | Front Panel Main Program Software Version: 03.01.85 Power Supply Main Program Software Version: 03.01.40 RF Controller Main Program Software Version: 03.01.46 Ext Interface Main Program Software Version: 03.01.62                                                                                                                                                                                                                                                                               |
@@ -34,8 +34,8 @@ It uses a serial connection to monitor the state of the HPA itself and to contro
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

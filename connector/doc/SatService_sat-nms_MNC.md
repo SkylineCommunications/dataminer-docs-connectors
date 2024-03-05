@@ -17,7 +17,7 @@ The connector displays several tables with general information for each device t
 | **Range**     | **Description**        | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version        | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | New range without DVEs | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | New range without DVEs | No                  | Yes                     |
 
 ### Product Info
 

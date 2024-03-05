@@ -14,13 +14,13 @@ The Ericsson RX8330 is a very versatile piece of equipment. It comes in many dif
 
 | **Range** | **Key Features**                                                                | **Based on** | **System Impact**                                               |
 |-----------|---------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------|
-| 1.0.0.x   | Initial version (SNMP only).                                                    | \-           | \-                                                              |
-| 1.0.1.x   | Evolution from the 1.0.0.x range (extra parameters polled).                     | 1.0.0.x      | \-                                                              |
-| 2.0.0.x   | Reworked version of the 1.0.1.x range, compatible with later firmware versions. | 1.0.1.x      | \-                                                              |
-| 2.0.1.x   | Added XPO interface.                                                            | \-           | \-                                                              |
-| 2.0.2.x   | Changed naming, added SNMP traps.                                               | \-           | Elements need to be recreated when you upgrade to this version. |
-| 2.0.3.x   | Implemented DCF.                                                                | \-           | \-                                                              |
-| 2.0.4.x   | Changed index of Service Control Table.                                         | \-           | \-                                                              |
+| 1.0.0.x   | Initial version (SNMP only).                                                    | -            | -                                                               |
+| 1.0.1.x   | Evolution from the 1.0.0.x range (extra parameters polled).                     | 1.0.0.x      | -                                                               |
+| 2.0.0.x   | Reworked version of the 1.0.1.x range, compatible with later firmware versions. | 1.0.1.x      | -                                                               |
+| 2.0.1.x   | Added XPO interface.                                                            | -            | -                                                               |
+| 2.0.2.x   | Changed naming, added SNMP traps.                                               | -            | Elements need to be recreated when you upgrade to this version. |
+| 2.0.3.x   | Implemented DCF.                                                                | -            | -                                                               |
+| 2.0.4.x   | Changed index of Service Control Table.                                         | -            | -                                                               |
 
 ### Product Info
 
@@ -38,13 +38,13 @@ Version Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | --                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 2.0.4.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | --                    | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.3.x   | Yes                 | Yes                     | -                     | -                       |
+| 2.0.4.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -14,7 +14,7 @@ A **Visio** file is provided along with this connector and provides full access 
 
 | **Range**            | **Key Features**                                           | **Based on** | **System Impact** |
 |----------------------|------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Overview of PTP devices. Monitoring of active grandmaster. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Overview of PTP devices. Monitoring of active grandmaster. | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ A **Visio** file is provided along with this connector and provides full access 
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                        | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                            | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Standard DataMiner PTP Device (mediation protocol) PTP_SetupWizard (configuration Automation script) PTP_SetupWizard_Roles (configuration Automation script) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Standard DataMiner PTP Device (mediation protocol) PTP_SetupWizard (configuration Automation script) PTP_SetupWizard_Roles (configuration Automation script) | -                       |
 
 ## Configuration
 

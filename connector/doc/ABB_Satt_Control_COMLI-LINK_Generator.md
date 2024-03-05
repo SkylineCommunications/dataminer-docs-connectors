@@ -4,7 +4,7 @@ uid: Connector_help_ABB_Satt_Control_COMLI-LINK_Generator
 
 # ABB Satt Control COMLI-LINK Generator
 
-This connector makes it possible to monitor and gather information from an **ABB** **Satt Control COMLI-LINK Generator** controller.
+This connector makes it possible to monitor and gather information from an **ABB Satt Control COMLI-LINK Generator** controller.
 
 ## About
 

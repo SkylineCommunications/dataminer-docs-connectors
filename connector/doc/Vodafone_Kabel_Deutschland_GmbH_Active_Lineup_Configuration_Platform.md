@@ -12,13 +12,13 @@ The Vodafone Deutschland GmbH Active Lineup Configuration Platform connector col
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                              | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                  | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service) | -                       |
 
 ## Configuration
 

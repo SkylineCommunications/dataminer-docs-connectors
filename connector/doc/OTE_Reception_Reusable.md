@@ -16,9 +16,9 @@ Enhanced services require a DataMiner version of **9.0.3.0** or higher.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes (1.0.0.6+)          |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | Yes (1.0.0.6+)      |
 
 ### Product Info
 
@@ -49,5 +49,3 @@ The **Active Service Alarms** table lists the alarms involved in this service. T
 ### Elements
 
 The **Service Element Status** table lists the child elements of the service and their alarm state.
-
-

@@ -20,7 +20,7 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 | 1.0.2.x              | Implemented changes on the Physical Upstream Channel Table and Upstream Bounding table. | No                  | No                      |
 | 1.0.3.x              | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No                  | Yes                     |
 | 1.0.4.x              | DCF feature added.                                                                      | Yes                 | Yes                     |
-| 2.0.0.x \[SLC Main\] | Connector review. Added CCAP parameters.                                                | No                  | Yes                     |
+| 2.0.0.x [SLC Main]   | Connector review. Added CCAP parameters.                                                | No                  | Yes                     |
 
 ### Product Info
 

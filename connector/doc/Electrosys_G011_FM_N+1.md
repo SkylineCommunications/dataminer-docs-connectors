@@ -12,21 +12,21 @@ For each monitored transmitter, a DVE can be created.
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                             |
-|-----------|---------------------|-------------------------|-----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | Electrosys G011 FM N+1 - Main Transmitter<br>[Electrosys G011 FM N+1 - Reserve Transmitter](xref:Connector_help_Electrosys_G011_FM_N%2B1_-_Reserve_Transmitter) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | Electrosys G011 FM N+1 - Main Transmitter<br>[Electrosys G011 FM N+1 - Reserve Transmitter](xref:Connector_help_Electrosys_G011_FM_N%2B1_-_Reserve_Transmitter) |
 
 ## Configuration
 

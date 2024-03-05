@@ -20,9 +20,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 **HTTP CONNECTION:**
 
-- **IP address/host:** The polling IP or URL of the destination, e.g. *10.67.0.34*.
-- **IP port:** The IP port of the destination, e.g. *8080*.
-- **Bus address:** To be able to retrieve the *TA Application* information, fill in the value *ByPassProxy*. Otherwise, if you connect to a *TA Reporting* device, set the value *reporting*.
+- **IP address/host**: The polling IP or URL of the destination, e.g. *10.67.0.34*.
+- **IP port**: The IP port of the destination, e.g. *8080*.
+- **Bus address**: To be able to retrieve the *TA Application* information, fill in the value *ByPassProxy*. Otherwise, if you connect to a *TA Reporting* device, set the value *reporting*.
 
 ## Usage
 

@@ -12,15 +12,21 @@ The connector uses SLNet calls to run an SQL query with configurable parameters 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**           |
-|------------------|---------------------------------------|
-| 1.0.0.x          | DataMiner db schema for version 8.5.x |
+| Range   | Supported Firmware                    |
+|---------|---------------------------------------|
+| 1.0.0.x | DataMiner DB schema for version 8.5.x |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -28,7 +34,7 @@ The connector uses SLNet calls to run an SQL query with configurable parameters 
 
 There's no need of any kind of special configuration while creating the element. The connection information and other misc params shall be provided later.
 
-### Configuration of ...
+### Configuration
 
 The minimum information necessary to run any report is the list of DMAs to be monitored. This is located in the **Configuration** page. You can add the ids of the DMAs, plus, optionally a description. The particular report parameters such as actions/users to be considered and start and end dates can be configured in the pages **Manual** and **Automated Report**, as described later on.
 

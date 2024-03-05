@@ -14,9 +14,9 @@ This connector can be used for multiple purposes, including the configuration of
 
 | **Range** | **Key Features** | **Based on** | **System Impact**                                                                                                                  |
 |-----------|------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                                                                                                                                 |
+| 1.0.0.x   | Initial version  | -            | -                                                                                                                                  |
 | 1.0.1.x   | New connector based | 1.0.0.4      | New improved Display look, New features, added data from new MIBs, changed the way the snmp data is retrieved using snmpSetAndGet. |
-| 1.0.2.x   | \-               | 1.0.1.14     | New MIBs are added + Data linking between several Echoes Tables                                                                    |
+| 1.0.2.x   | -                | 1.0.1.14     | New MIBs are added + Data linking between several Echoes Tables                                                                    |
 
 ### Product Info
 
@@ -29,8 +29,8 @@ This connector can be used for multiple purposes, including the configuration of
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

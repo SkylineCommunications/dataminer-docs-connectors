@@ -16,7 +16,7 @@ This connector is discontinued. Replaced by Skyline Generic Rack Passive Device 
 
 | **Range** | **Description**              | **DCF Integration** | **Cassandra Compliant** |
 |------------------|------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version \[Obsolete\] | No                  | Yes                     |
+| 1.0.0.x          | Initial version [Obsolete]     |No                  | Yes                     |
 
 ## Installation and configuration
 

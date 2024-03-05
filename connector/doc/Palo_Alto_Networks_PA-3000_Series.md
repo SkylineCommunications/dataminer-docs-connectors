@@ -14,17 +14,17 @@ This connector uses an SNMPv3 connection.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Old range (\*). | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Old range (\*). | No              | Yes                 |
 
 **(\*) NOTE:** Connectors for all Palo Alto Networks firewall products will continue to be developed in the **1.0.0.x [Palo Alto Networks Firewall Series](xref:Connector_help_Palo_Alto_Networks_Firewall_Series) range**.
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 7.\*, 8.0.0 & 8.0.7         |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 7.\*, 8.0.0 & 8.0.7        |
 
 ## Installation and configuration
 

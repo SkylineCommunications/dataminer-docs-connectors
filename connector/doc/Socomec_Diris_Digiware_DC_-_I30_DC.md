@@ -12,17 +12,17 @@ The I30 DC is a power supply measurement module. It measures the voltage, curren
 
 ### Version Info
 
-| **Range**     | **Description**                                             | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                            | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | The element name can be customized from the parent element. | No                  | Yes                     |
+| Range              | Description                                                 | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                            | No              | Yes                 |
+| 1.0.1.x [SLC Main] | The element name can be customized from the parent element. | No              | Yes                 |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | \-                          |
-| 1.0.1.x          | \-                          |
+| 1.0.0.x          | -                           |
+| 1.0.1.x          | -                           |
 
 ## Configuration
 

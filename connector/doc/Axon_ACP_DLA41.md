@@ -14,9 +14,9 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Version Info
 
-| **Range** | **Key Features**             | **Based on** | **System Impact** |
+| Range     | Key Features                 | Based on     | System Impact     |
 |-----------|------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version \[SLC Main\] | \-           | \-                |
+| 1.0.0.x   | Initial version [SLC Main]   | -            | -                 |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -43,7 +43,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-  - **IP port:** The IP port of the device.
+  - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device.
 
 #### IP Connection - Broadcast

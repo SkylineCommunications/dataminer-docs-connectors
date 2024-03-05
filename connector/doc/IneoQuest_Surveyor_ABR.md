@@ -14,11 +14,11 @@ An HTTPS connection is used to retrieve information from and send information to
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**    |
+| Range     | Device Firmware Version        |
 |------------------|--------------------------------|
 | 1.0.0.x          | SurveyorABR-3.00.00.083-102417 |
 

@@ -4,7 +4,7 @@ uid: Connector_help_ABB_Satt_Control_COMLI-LINK_Status
 
 # ABB Satt Control COMLI-LINK Status
 
-This connector makes it possible to monitor and gather information from an **ABB** **Satt Control COMLI-LINK** **Status** controller.
+This connector makes it possible to monitor and gather information from an **ABB Satt Control COMLI-LINK Status** controller.
 
 ## About
 

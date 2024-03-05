@@ -21,7 +21,7 @@ The protocol uses **SNMP** to poll and control the current matrix connections, t
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                |
+| Range     | Device Firmware Version                                                                    |
 |------------------|--------------------------------------------------------------------------------------------|
 | 1.0.0.x/2.0.0.x  | Unknown. The protocol conforms to the initial MIB version of the device (date 2005/02/23). |
 

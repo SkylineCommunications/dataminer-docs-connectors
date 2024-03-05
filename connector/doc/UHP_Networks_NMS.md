@@ -14,9 +14,9 @@ All data in the element is read-only. It is not possible to configure the UHP Ne
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,9 +26,9 @@ All data in the element is read-only. It is not possible to configure the UHP Ne
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                              |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                                                                                                                                                                                  |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [UHP Networks NMS - Controller](xref:Connector_help_UHP_Networks_NMS_-_Controller)<br>[UHP Networks NMS - Station](xref:Connector_help_UHP_Networks_NMS_-_Station)<br>[UHP Networks NMS - Network](xref:Connector_help_UHP_Networks_NMS_-_Network) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [UHP Networks NMS - Controller](xref:Connector_help_UHP_Networks_NMS_-_Controller)<br>[UHP Networks NMS - Station](xref:Connector_help_UHP_Networks_NMS_-_Station)<br>[UHP Networks NMS - Network](xref:Connector_help_UHP_Networks_NMS_-_Network) |
 
 ## Configuration
 

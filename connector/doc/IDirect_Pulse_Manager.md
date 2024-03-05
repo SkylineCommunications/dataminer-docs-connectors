@@ -22,7 +22,7 @@ All data is retrieved over HTTP using the web service API.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                               |
+| Range     | Device Firmware Version                                                   |
 |------------------|---------------------------------------------------------------------------|
 | 1.0.0.x          | API version 1.0                                                           |
 | 1.1.0.x          | API version 1.1 No other major changes when going from 1.0.0.x to 1.1.0.x |

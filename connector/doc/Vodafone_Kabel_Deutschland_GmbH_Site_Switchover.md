@@ -12,17 +12,17 @@ This is a dedicated connector intended to monitor and retrieve KPIs related to t
 
 | **Range**            | **Key Features**                             | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Satellite Downlink, Pre-Encoding, IP Gateway | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Satellite Downlink, Pre-Encoding, IP Gateway | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**    |
+| Range     | Supported Firmware        |
 |-----------|---------------------------|
 | 1.0.0.x   | CISCO DCM 1.0.3.47 and up |
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

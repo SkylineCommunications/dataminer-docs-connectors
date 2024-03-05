@@ -19,12 +19,12 @@ Note: This connector will export a different connector based on button **FSK Ena
 | 1.0.0.x              | Initial version                                                                             | No                  | No                      |
 | 2.0.0.x              | Customer Specific                                                                           | No                  | No                      |
 | 3.0.0.x              | Customer Specific                                                                           | No                  | No                      |
-| 3.0.1.x \[Obsolete\] | Cassandra compliant                                                                         | No                  | Yes                     |
+| 3.0.1.x [Obsolete]     |Cassandra compliant                                                                         | No                  | Yes                     |
 | 3.0.2.x              | IP address was split up into a separate IP Address parameter and a Subnet Mask parameter | No                  | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**          |
+| Range     | Device Firmware Version              |
 |------------------|--------------------------------------|
 | 1.0.0.x          | Boot:1.1.1 Bulk1:1.6.16 Bulk2:1.6.16 |
 | 2.0.0.x          | Boot:1.1.1 Bulk1:1.6.16 Bulk2:1.6.16 |

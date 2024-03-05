@@ -14,19 +14,19 @@ The ETL Systems SRY-C2xx connector provides chassis and module status informatio
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | - ETL Systems SRY-C2xx<br>- SRY-TX-L1-205 <br>- ETL Systems SRY-C2xx <br>- SRY-RX-L1-206 <br>- ETL Systems SRY-C2xx - SRY-TX-Y-281 <br>- ETL Systems SRY-C2xx - SRY-DIV-Y-219 <br>- ETL Systems SRY-C2xx <br>- SRY-RX-Y-282 <br>- [ETL Systems SRY-C2xx - SRY-SW-Y-220](xref:Connector_help_ETL_Systems_SRY-C2xx_-_SRT-SW-Y-220) |
+| 1.0.0.x   | No                  | Yes                     | -                     | - ETL Systems SRY-C2xx<br>- SRY-TX-L1-205 <br>- ETL Systems SRY-C2xx <br>- SRY-RX-L1-206 <br>- ETL Systems SRY-C2xx - SRY-TX-Y-281 <br>- ETL Systems SRY-C2xx - SRY-DIV-Y-219 <br>- ETL Systems SRY-C2xx <br>- SRY-RX-Y-282 <br>- [ETL Systems SRY-C2xx - SRY-SW-Y-220](xref:Connector_help_ETL_Systems_SRY-C2xx_-_SRT-SW-Y-220) |
 
 ## Configuration
 

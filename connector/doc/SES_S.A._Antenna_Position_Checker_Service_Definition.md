@@ -10,19 +10,25 @@ The **SES S.A. Antenna Position Checker Service Definition** is a service defini
 
 The **SES S.A. Antenna Position Checker Service Definition** allows the user to monitor the azimuth and elevation deviation of an antenna. The service calculates the deviation by comparing the real position of the antenna with the theoretical position.
 
-The real position is obtained from a **SatService sat-nms MNC** or **Intorel Visionic** element that monitors the antenna, whereas the theorical position is retrieved from the **Intelsat IESS-412 Earth Station Pointing Data Calculator** element.
+The real position is obtained from a **SatService sat-nms MNC** or **Intorel Visionic** element that monitors the antenna, whereas the theoretical position is retrieved from the **Intelsat IESS-412 Earth Station Pointing Data Calculator** element.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Usage
 

@@ -17,11 +17,11 @@ Earth stations can be fixed or steerable, and in the latter case the orientation
 
 ### Version Info
 
-| **Range**     | **Description**                                                                             | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                            | No                  | Yes                     |
-| 1.0.1.x              | Implemented logic that allows dynamic adding of earth stations and satellites via CSV file. | No                  | Yes                     |
-| 1.0.2.x \[SLC Main\] | Changed the primary key for the Outages table to be numerical.                              | No                  | Yes                     |
+| Range              | Description                                                                                 | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                            | No              | Yes                 |
+| 1.0.1.x            | Implemented logic that allows dynamic adding of earth stations and satellites via CSV file. | No              | Yes                 |
+| 1.0.2.x [SLC Main] | Changed the primary key for the Outages table to be numerical.                              | No              | Yes                 |
 
 ## Configuration
 
@@ -35,7 +35,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### General
 
-This page displays an overview of the earth stations and satellites monitored by this connector, with the parameters **Monitored Stations**, **Active Outages**, and **Satellites.**
+This page displays an overview of the earth stations and satellites monitored by this connector, with the parameters **Monitored Stations**, **Active Outages**, and **Satellites**.
 
 ### Earth Stations
 
@@ -44,7 +44,9 @@ This page displays an overview of all the configured earth stations, with their 
 Via the **New Earth Station** page button, you can add a new earth station. To do so:
 
 - Specify an **identifiable description** and **location**, as well as the **frequency band** and **dish size**.
+
 - For fixed earth stations, fill in the **latitude and longitude** of the earth station and the **longitude for the satellite**.
+
   For steerable earth stations, configure the **latitude and longitude** of the earth station and the **protocol** and **element** that will be subscribed to for orientation changes.
 
 Via the **Outage Overview** column in the Earth Station table, you can **add or remove** earth stations in the tree control on the **Outage Overview** page. Refer to the **Tree Control Config section** for more information.
@@ -61,7 +63,7 @@ Via the **New ES Subscriber** page button at the bottom of the page, you can add
 
 On this page, you can configure geostationary satellites that can be used to determine the azimuth and elevation values of fixed earth stations.
 
-Via the **Add New Satellite** page button at the bottom of the page, you can add a satellite by entering the **Name,** **Longitude**, and **Longitude Direction**
+Via the **Add New Satellite** page button at the bottom of the page, you can add a satellite by entering the **Name**, **Longitude**, and **Longitude Direction**.
 
 Note: **Longitude** is determined **based on the compass direction**. Longitude deg E represents positive values and deg W represents negative values.
 
@@ -134,7 +136,7 @@ In this section, you can enable or disable three different pages: **Earth Statio
 
 - **Outage Config**: This subpage allows you to configure the following settings:
 
-  - **Visibility Threshold**: The earth station elevation value below which it is considered not to have visibility on a given satellite. (By default 0§.)
+  - **Visibility Threshold**: The earth station elevation value below which it is considered not to have visibility on a given satellite. (By default 0°.)
 
   - **Number of Cycles**: The number of equinoxes for which the future outages should be calculated. (By default 2.)
 
@@ -143,6 +145,9 @@ In this section, you can enable or disable three different pages: **Earth Statio
 This section allows you to configure the following settings:
 
 - **Overview**: Allows you to **enable/disable** the ability to add **earth stations** to the **Earth Stations Tree Control** table (on the **Tree Overview Info** page).
+
 - **Disable All:** This button sets all cells in the Outage Overview column in the Earth Station table to *Disabled*, effectively removing the earth stations from the **Earth Stations Tree** table.
+
 - **Enable All:** This button sets all cells in the Outage Overview column in the Earth Station table to *Enabled*, effectively adding the earth stations to the **Earth Stations Tree** table.
-- **Overview Limit:** Allows you to specify how many rows can be added to the **Earth Stations Tree table.**
+
+- **Overview Limit:** Allows you to specify how many rows can be added to the **Earth Stations Tree table**.

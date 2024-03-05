@@ -12,15 +12,21 @@ This connector provides a monitoring interface for the **Motorola GX2-DRR-2X85**
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.1.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 2.0.1.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.1.x          | E                           |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 2.0.1.x   | E                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

@@ -12,28 +12,28 @@ This is a smart-serial connector (Ember+) that is used to monitor and configure 
 
 | **Range**            | **Key Features**                     | **Based on** | **System Impact** |
 |----------------------|--------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                      | \-           | \-                |
-| 1.0.1.x              | \-                                   | 1.0.0.16     | \-                |
-| 1.0.2.x              | Changed button name (display value). | 1.0.1.4      | \-                |
-| 1.0.3.x \[SLC Main\] | Added DCF support.                   | 1.0.2.7      | \-                |
+| 1.0.0.x              | Initial version                      | -            | -                 |
+| 1.0.1.x              | -                                    | 1.0.0.16     | -                 |
+| 1.0.2.x              | Changed button name (display value). | 1.0.1.4      | -                 |
+| 1.0.3.x [SLC Main]   | Added DCF support.                   | 1.0.2.7      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
