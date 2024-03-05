@@ -1,5 +1,6 @@
 ---
 uid: index
+_layout: landing
 ---
 
 ## DataMiner Connector Documentation
