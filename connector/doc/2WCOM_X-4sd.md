@@ -13,7 +13,7 @@ This connector uses SNMP to connect to a redundancy switch with audio conversion
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version. | -            | -                 |
-| 1.1.0.x [SLC Main]   | New Firmware.    | -            | -                 |
+| 1.1.0.x [SLC Main]   | New firmware.    | -            | -                 |
 
 ### Product Info
 
@@ -64,4 +64,4 @@ The following data pages are available:
 - **Device Status**: Contains various hardware information such as temperature and voltage status information.
 - **Monitoring Settings**: Contains hardware settings for the device.
 - **System Settings**: Contains various system settings such as CSL, Ember+, NTP, Headphone, GPO/GPI, and Ethernet information.
-- **Polling**: In this page is possible to configure the polling frequency of the polling groups.
+- **Polling**: Allows you to configure the polling frequency of the polling groups.
