@@ -10281,6 +10281,8 @@
     topicUid: Connector_help_ZTE_ZXA10_C600
   - name: ZTE ZXA10 C600 GPON Platform
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
+  - name: ZTE ZXDU
+    topicUid: Connector_help_ZTE_ZXDU
   - name: ZTE ZXR10 8900
     topicUid: Connector_help_ZTE_ZXR10_8900
 - name: Unknown vendor
