@@ -4060,6 +4060,8 @@
     topicUid: Connector_help_Grass_Valley_Jupiter_VM3000
   - name: Grass Valley Karrera
     topicUid: Connector_help_Grass_Valley_Karrera
+  - name: Grass Valley Kula
+    topicUid: Connector_help_Grass_Valley_Kula
   - name: Grass Valley Media Server
     topicUid: Connector_help_Grass_Valley_Media_Server
   - name: Grass Valley Morpheus Panoplay On Air
