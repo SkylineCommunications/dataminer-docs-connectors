@@ -36,8 +36,10 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP of the device.]
+- **IP address/host**: The polling IP of the device.
+
 SNMP Settings:
+
 - **Port number**: The port of the connected device, by default *161*
 - **Get community string**: The community string used when reading values from the device. By default *public*.
 - **Set community string**: The community string used when setting values on the device. By default *private*.
@@ -50,8 +52,8 @@ The web interface is only accessible when the client machine has network access 
 
 These are the main data pages of the connector:
 
-The **Redundancy** page serves as the default page. Here, users can access the **Units** table and switch between units.
-The **General** page provides general information about the device, including its **Name** and **Contact** details.
-On the **Alarms** page, users can view the **System** and **Unit** tables, which display information such as alarm **Description** and **Status**.
-Available modules are listed in the **Device Modules** table on the **Device** page.
-The **Controls** page features the **Configuration** table, where users can adjust settings such as **Attenuation**, **Gain**, and **Mute**.
+- The **Redundancy** page serves as the default page. Here you can access the **Units** table and switch between units.
+- The **General** page provides general information about the device, including its **Name** and **Contact** details.
+- On the **Alarms** page, you can view the **System** and **Unit** tables, which display information such as the alarm **Description** and **Status**.
+- Available modules are listed in the **Device Modules** table on the **Device** page.
+- The **Controls** page contains the **Configuration** table, where you can adjust settings such as **Attenuation**, **Gain**, and **Mute**.
