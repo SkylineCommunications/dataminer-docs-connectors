@@ -63,7 +63,7 @@ A healthy element will show groups 1000, 1200, 1400, 1600, 1800, and 2000 in the
 
 ### General Page
 
-The General page contains basic device information. It's possible to change the **Clock Reference Source** from here.
+The General page contains basic device information. You can also change the **Clock Reference Source** here.
 
 ### Alarms Page
 
