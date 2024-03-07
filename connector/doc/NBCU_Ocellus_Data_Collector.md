@@ -10,21 +10,21 @@ uid: Connector_help_NBCU_Ocellus_Data_Collector
 
 ### Version Info
 
-| Range            | Key Features | Based on | System Impact |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main] | Initial version. | -           | -                |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-| Range | Supported Firmware |
-|-----------|------------------------|
-| 1.0.0.x   | -                     |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -36,21 +36,16 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- IP address/host: The polling IP or URL of the destination.
-- IP port: The IP port of the destination, by default "443".
-- Bus address: If the proxy server has to be bypassed, specify *bypassproxy*.
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination, by default *443*.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Initialization
 
-To start using this connector, you need to specify the **User** name and the **Password** by clicking on the **Authentication** button on the **General** page .
+To start using this connector, click the **Authentication** button on the **General** page and specify the **User** name and **Password** to log in.
 
-Once you have logged in, you will need to especify the **App Name** on the **General** page.
-
-### Redundancy
-
-There is no redundancy defined.
+Once you have logged in, you will also need to specify the **App Name** on the **General** page.
 
 ## How to use
-
 
 After the initialization process is completed, to set the data to be retrieved, you will need to add rows in both the **Top Level Metric Polling** and **Individual Metric Polling** tables, specifying the values to be retrieved. The connector will retrieve the requested data from the tables every minute, and this data will be available on the **Top Level Metric** and **Individual Metric** pages.
