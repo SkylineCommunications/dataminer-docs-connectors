@@ -4,26 +4,27 @@ uid: Connector_help_TDF_Network_Collector
 
 # TDF Network Collector
 
-The TDF Network Collector it's a connector that is able to agregate data from multiple sources.
+The TDF Network Collector connector is used to aggregate data from multiple sources.
 
 ## About
 
 ### Version Info
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -				         |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -35,7 +36,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-It´s necessary to define the http endpoints in order to retrieve the data from the multiple sources.
+To be able to retrieve data from the different sources, you will need to define the HTTP endpoints.
 
 ## How to use
 
