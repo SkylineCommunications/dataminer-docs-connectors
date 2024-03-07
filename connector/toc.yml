@@ -6910,6 +6910,8 @@
     topicUid: Connector_help_Rohde_Schwarz_DVMS
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
+  - name: Rohde Schwarz FPL1026
+    topicUid: Connector_help_Rohde_Schwarz_FPL1026
   - name: Rohde Schwarz FSC3
     topicUid: Connector_help_Rohde_Schwarz_FSC3
   - name: Rohde Schwarz FSH3
