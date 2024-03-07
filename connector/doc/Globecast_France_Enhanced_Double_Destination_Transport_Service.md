@@ -4,7 +4,7 @@ uid: Connector_help_Globecast_France_Enhanced_Double_Destination_Transport_Servi
 
 # Globecast France Enhanced Double Destination Transport Service
 
-The Globecast France Enhanced Double Destination Transport service is an enhanced service protocol. It oversees two 'Globecast France Enhanced Single Destination Transport' services. It retrieves the active alarms and determines the overall severity.
+The Globecast France Enhanced Double Destination Transport service is an enhanced service protocol. It oversees two "Globecast France Enhanced Single Destination Transport" services. It retrieves the active alarms and determines the overall severity.
 
 ## About
 
@@ -24,7 +24,7 @@ The Globecast France Enhanced Double Destination Transport service is an enhance
 
 ### Connections
 
-This connector is an enhanced service protocol and uses a virtual connection. It can be applied to a service that includes two 'Globecast France Enhanced Single Destination Transport' services.
+This connector is an enhanced service protocol and uses a virtual connection. It can be applied to a service that includes two "Globecast France Enhanced Single Destination Transport" services.
 
 ## How to use
 
@@ -32,7 +32,7 @@ On the **Service Status** page, the computed severity is displayed as the standa
 
 The table **Service Element Status** on this same page illustrates the health of the nodes associated with the service.
 
-Further, the **Service Alarms** page shows the active and the clear alarms belonging to the service, each in their own table.
+The **Service Alarms** page shows the active and the clear alarms belonging to the service, each in their own table.
 
 ## Notes
 

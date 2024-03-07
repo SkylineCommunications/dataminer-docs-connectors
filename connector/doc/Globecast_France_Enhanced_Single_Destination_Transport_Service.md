@@ -4,7 +4,7 @@ uid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Servi
 
 # Globecast France Enhanced Single Destination Transport Service
 
-The Globecast France Enhanced Single Destination Transport Service is an enhanced service protocol. The protocol monitors four 'Globecast France Enhanced DTM Channel' services and two Cobalt switches. It will collect the active alarms associated with these elements and determine the overall severity.
+The Globecast France Enhanced Single Destination Transport Service is an enhanced service protocol. The protocol monitors four "Globecast France Enhanced DTM Channel" services and two Cobalt switches. It will collect the active alarms associated with these elements and determine the overall severity.
 
 ## About
 
@@ -24,7 +24,7 @@ The Globecast France Enhanced Single Destination Transport Service is an enhance
 
 ### Connections
 
-This connector is an enhanced service protocol and uses a virtual connection. It can be applied to a service that includes four 'Globecast France Enhanced DTM Channel' services and two Cobalt switches.
+This connector is an enhanced service protocol and uses a virtual connection. It can be applied to a service that includes four "Globecast France Enhanced DTM Channel"8/7 services and two Cobalt switches.
 
 ## How to use
 
