@@ -12,25 +12,25 @@ The Rosa EM connector is used to monitor and control a Rosa EM device and device
 
 ### Version Info
 
-| **Range**        | **Description**                                              | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                              | No                  | Yes                     |
-| 2.0.0.x          | SNMP implementation for a number of devices. DVE generation. | No                  | Yes                     |
-| 2.0.1.x          | Connector review                                             | No                  | Yes                     |
-| 3.0.0.x          | Cellnex Version                                              | No                  | Yes                     |
-| 3.0.1.x[OBSOLETE]| Added Connected Devices pages                                | No                  | Yes                     |
-| 3.0.2.x[MAIN]    | Changed display keys for Connected Devices pages             | No                  | Yes                     |
+| Range              | Description                                                  | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                             | No              | Yes                 |
+| 2.0.0.x            | SNMP implementation for a number of devices. DVE generation. | No              | Yes                 |
+| 2.0.1.x            | Connector review.                                            | No              | Yes                 |
+| 3.0.0.x            | Cellnex version.                                             | No              | Yes                 |
+| 3.0.1.x [Obsolete] | Added Connected Devices pages.                               | No              | Yes                 |
+| 3.0.2.x [Main]     | Changed display keys for Connected Devices pages.            | No              | Yes                 |
 
 ### Product Info
 
-| Range            | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 2.0.0.x          | Unknown                     |
-| 2.0.1.x          | V0401.90                    |
-| 3.0.0.x          | Unknown                     |
-| 3.0.1.x          | Unknown                     |
-| 3.0.2.x          | Unknown                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 2.0.0.x | Unknown                    |
+| 2.0.1.x | V0401.90                   |
+| 3.0.0.x | Unknown                    |
+| 3.0.1.x | Unknown                    |
+| 3.0.2.x | Unknown                    |
 
 ### Device types
 
