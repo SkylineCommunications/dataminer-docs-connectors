@@ -304,6 +304,8 @@
   items:
   - name: Alea MCxPTT
     topicUid: Connector_help_Alea_MCxPTT
+  - name: Alea xPTT
+    topicUid: Connector_help_Alea_xPTT
 - name: Alignsat
   items:
   - name: Alignsat AC9250S
