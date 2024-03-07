@@ -12,10 +12,10 @@ This connector uses **SNMP** to retrieve and configure parameters of the Sencore
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                                                                                                                     | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                                                                                                                                                                                                                     | No                  | Yes                     |
-| 1.0.1.x \[Main\] | \- Fixes Input Primary & Secondary Source Output, making it dynamic and mutually exclusive using Labels from Transport Stream Input Source. - Fixes Output Manual Format behavior. - Adds Overlay Image parameters, SCTE35 info, SCTE104 Filter Mode, and ASI parameters. -Fixes SETs for IP Address-like and Port-like parameters. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | Yes |
+| 1.0.1.x [Main] | - Fixes Input Primary & Secondary Source Output, making it dynamic and mutually exclusive using labels from Transport Stream Input Source. <br>- Fixes Output Manual Format behavior. <br>- Adds Overlay Image parameters, SCTE35 info, SCTE104 Filter Mode, and ASI parameters. <br>- Fixes SETs for IP Address-like and Port-like parameters. | No | Yes |
 
 ### Product Info
 
