@@ -8486,6 +8486,8 @@
     topicUid: Connector_help_TDF_Incident_Ticketing
   - name: TDF Jbus PLC
     topicUid: Connector_help_TDF_Jbus_PLC
+  - name: TDF Network Collector
+    topicUid: Connector_help_TDF_Network_Collector
   - name: TDF Plan Maintenance
     topicUid: Connector_help_TDF_Plan_Maintenance
   - name: TDF Securisation FM
