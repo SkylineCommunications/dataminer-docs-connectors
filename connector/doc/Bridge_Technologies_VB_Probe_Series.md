@@ -72,7 +72,7 @@ Once the element has been created in DataMiner, the **Element Configuration** pa
 
 ### Redundancy
 
-RF Redundancy is accessible via the Redundancy Page. The Active Input can only be set during Manual mode.
+You can access RF redundancy on the Redundancy page. The active input can only be set while *Manual* mode is active.
 
 ### Web Interface
 

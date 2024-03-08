@@ -10,13 +10,13 @@ The DVB Stream Monitor is a solution for DVB-C and/or IPTV monitoring for unicas
 
 ### Version Info
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | Initial version | - | - |
-| 1.1.0.x [Obsolete] | New firmware version with different enterprise OID. Some parameters were no longer available on the new MIB. | 1.0.0.2 |  |
-| 1.1.1.x | Removed EPG table and refresh mechanism. Improved buffering system. | 1.0.1.1 |  |
-| 1.1.2.x [SLC Main] | Introduced partial table option in the following tables: Service, PMT, SDT, NIT, AIT, Cable Delivery | 1.1.1.4 |  |
-| 1.2.2.x [SLC Main] | Introduce BAT table and different display modes: Basic, Intermediate, Full| 1.1.2.4 |  |
+| Range              | Key Features                                                                                                 | Based on | System Impact |
+|--------------------|--------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                                             | -        | -             |
+| 1.1.0.x [Obsolete] | New firmware version with different enterprise OID. Some parameters were no longer available on the new MIB. | 1.0.0.2  | -             |
+| 1.1.1.x            | Removed EPG table and refresh mechanism. Improved buffering system.                                          | 1.0.1.1  | -             |
+| 1.1.2.x [SLC Main] | Introduced partial table option in the following tables: Service, PMT, SDT, NIT, AIT, Cable Delivery.        | 1.1.1.4  | -             |
+| 1.2.2.x [SLC Main] | Introduced BAT table and different display modes: Basic, Intermediate, Full.                                 | 1.1.2.4  | -             |
 
 ### Product Info
 
@@ -96,6 +96,6 @@ The element has the following data pages:
 
 ### Display Modes
 
-- **Basic**: 	The SNMP tables and the PAT, PMT, SDT, TDT / TOT and CAT tables are polled and updated.
-- **Intermediate**: 	The Basic tables and the EIT table are polled and updated.
-- **Full**: 	All tables including the NIT and BAT table will be polled and updated.
+- **Basic**: The SNMP tables and the PAT, PMT, SDT, TDT/TOT, and CAT tables are polled and updated.
+- **Intermediate**: The basic tables and the EIT table are polled and updated.
+- **Full**: All tables including the NIT and BAT table are polled and updated.
