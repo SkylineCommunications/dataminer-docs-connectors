@@ -36,7 +36,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-To be able to retrieve data from the different sources, you will need to define the HTTP endpoints in the General page.
+To be able to retrieve data from the different sources, you will need to define the HTTP endpoints on the General page.
 
 ## How to use
 
