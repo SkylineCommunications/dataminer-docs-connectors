@@ -59,6 +59,13 @@ This page displays information about the **Position**, the **Locked** state and 
 
 The page also allows you to change the **Position** of the regular switches.
 
+In the subpage **Route Calculation** you can upload a CSV file to change the switch paths.
+
+The format of the CSF is as follow:
+
+IP Address 1;IP Address 2
+IP Address X;IP Address Y
+
 ### Multi-Position Switches
 
 This page displays information about the **Position**, the **Locked** state and the **Fault** of the different Multi-Position switches of the device.
