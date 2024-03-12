@@ -12,9 +12,9 @@ This SNMP connector contains different tables that allow the user to monitor and
 
 ### Version Info
 
-| **Range**            | **Key Features**                                           | **Based on** | **System Impact** |
-|----------------------|------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | \- Monitoring. - Configuration of both inputs and outputs. | -            | -                 |
+| Range              | Key Features                                                  | Based on | System Impact |
+|--------------------|---------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - Monitoring. <br>- Configuration of both inputs and outputs. | -        | -             |
 
 ### Product Info
 

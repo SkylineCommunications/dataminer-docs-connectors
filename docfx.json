@@ -26,15 +26,17 @@
     "dest": "_site",
     "globalMetadata": {
       "_appTitle": "DataMiner Docs",
-      "_appFooter": "© Skyline Communications 2023",
+      "_appFooter": "© Skyline Communications 2024",
       "_enableSearch": false,
-      "_enableNewTab": true
+      "_enableNewTab": true,
+	  "_googleAnalyticsTagId": "GTM-WD3NQGN"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
       "default",
-      "templates/skyfx"
+	  "modern",
+      "templates/skyline"
     ],
     "markdownEngineName": "markdig",
     "noLangKeyword": false,

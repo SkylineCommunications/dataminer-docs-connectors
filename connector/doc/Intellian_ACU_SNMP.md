@@ -14,11 +14,11 @@ The protocol range 2.1.0.x is only compatible with the device firmware version 3
 
 ### Version Info
 
-| **Range**     | **Description**                                                    | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Old range.                                                         | No                  | Yes                     |
-| 2.0.0.x              | New range for firmware v3.14.                                      | No                  | Yes                     |
-| 2.1.0.x [SLC Main]   | New range based on version 2.0.0.x. Major impacting changes added. | No                  | Yes                     |
+| Range              | Description                                                        | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Old range.                                                         | No              | Yes                 |
+| 2.0.0.x            | New range for firmware v3.14.                                      | No              | Yes                 |
+| 2.1.0.x [SLC Main] | New range based on version 2.0.0.x. Major impacting changes added. | No              | Yes                 |
 
 ### Product Info
 
@@ -63,11 +63,11 @@ This page contains the main status information: **Status Lock**, **Latitude**, *
 
 ### Status Overview
 
-Every 5 minutes, the **ACU Status Overview** table on this page is filled in with a new entry detailing the **Azimuth Relative Position**, **Elevation Position**, **NBD Frequency** and **Satellite Name** at that particular time**.**
+Every 5 minutes, the **ACU Status Overview** table on this page is filled in with a new entry detailing the **Azimuth Relative Position**, **Elevation Position**, **NBD Frequency** and **Satellite Name** at that particular time.
 
 ### Blind Sector
 
-This page contains the **Blind Sector Table**, where **Azimuth/Elevation Start/Stop** angles can be filled in. This way, an alarm can be generated via the **In** **Blind Sector** parameter when the satellite is in one of the defined blind sectors.
+This page contains the **Blind Sector Table**, where **Azimuth/Elevation Start/Stop** angles can be filled in. This way, an alarm can be generated via the **In Blind Sector** parameter when the satellite is in one of the defined blind sectors.
 
 The **History Table** page button shows all the blind sector events in the last **History Age** month(s).
 

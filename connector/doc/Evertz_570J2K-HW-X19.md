@@ -76,7 +76,7 @@ The element created with this connector consists of the data pages detailed belo
 - **Program Control Encoder**: Contains the Element Stream Input Table.
 - **Program Control Decoder**: Contains program control settings.
 - **IP Input Monitor**: Contains tables that allows you to monitor the IP input stream. The **Decoder** page button displays a table with similar information specific to the decoder. The **Encoder** page button displays IP input measurements.
-- **Decoder Program Monitor:** Contains several program monitoring tables**.**
+- **Decoder Program Monitor:** Contains several program monitoring tables.
 - **System Notify**: Allows you to configure the Temperature Threshold and Received Bandwidth Threshold. Also shows if there is any system fault present in the System Notify Table.
 - **Input Notify**: Indicates if there are input faults for each of the different inputs.
 - **Decoder Notify**: Indicates if decoder faults are present, e.g. TS Input Missing and Audio PID Missing.
