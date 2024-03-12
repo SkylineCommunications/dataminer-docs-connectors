@@ -88,9 +88,9 @@ The **Network** page provides a list of all available (VLAN) networks on the dev
 
 To create or remove MacVlan networks, use the right-click menus of the table.
 
-When creating a new MacVlan network, it is possible to include more than one configuration data. For this, the user has to provide the list of each configuration parameter values (Subnet, IP Range and Gateway) in a comma separated list. Make sure at least the Subnets and Gateway have the same number of entries. For example, if we want to add 2 config data, we have to provide 2 subnets (separated by comma), 2 Gateways (separated by comma) and optionaly 2 IP Ranges (separated by comma).
+When creating a new MacVlan network, it is possible to include more than one configuration data. For this, the user has to provide the list of each configuration parameter values (Subnet, IP Range and Gateway) in a comma separated list. Make sure the Subnets, IP Range and Gateway have the same number of entries. For example, if we want to add 2 config data, we have to provide 2 subnets (separated by comma), 2 Gateways (separated by comma) and 2 IP Ranges (separated by comma).
 
-Similarly, it is possible to configure multiple Types and Tags by providing a comma separated list.
+It is also possible to configure multiple Types and Tags by providing a comma separated list.
 
 ### Users Page
 
