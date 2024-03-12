@@ -85,3 +85,21 @@ Configuring UDP proxies works in the same way as configuring DAB Monitors (see a
 ### Network Page
 
 The **Network** page provides a list of all available (VLAN) networks on the device. These networks can be assigned to an UDP proxy.
+
+To create or remove MacVlan networks, use the right-click menus of the table.
+
+When creating a new MacVlan network, it is possible to include more than one configuration data. For this, the user has to provide the list of each configuration parameter values (Subnet, IP Range and Gateway) in a comma separated list. Make sure at least the Subnets and Gateway have the same number of entries. For example, if we want to add 2 config data, we have to provide 2 subnets (separated by comma), 2 Gateways (separated by comma) and optionaly 2 IP Ranges (separated by comma).
+
+Similarly, it is possible to configure multiple Types and Tags by providing a comma separated list.
+
+### Users Page
+
+The **Users** page provides a list of all the orchestration users.
+
+To create, modify or remove a user, use the right-click menus of the table.
+
+### Certificates Page
+
+The **Certificates** page provides the status of the TLS certificate slots.
+
+It is possible to install a TLS certificate (or replace the exisiting certificate with a new one) and delete the TLS certitifcate for a slot using the right-click menus of the TLS Certificates table.
