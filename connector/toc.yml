@@ -8844,6 +8844,8 @@
     topicUid: Connector_help_Teleste_HDO613_TSEMP
   - name: Teleste HDO613 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO613_TSEMP_DVX
+  - name: Teleste HDO775
+    topicUid: Connector_help_Teleste_HDO775
   - name: Teleste HDO905
     topicUid: Connector_help_Teleste_HDO905
   - name: Teleste HDO907
