@@ -4,14 +4,15 @@ uid: Connector_help_2WCOM_MPX-2c
 
 # 2WCOM MPX-2c
 
-The MPX-2c is a point to point or point to multipoint MPX codec using IP-based network technologies for real-time distribution of complete FM-MPX ( FM composite signal) to connect the signal generation in the studio directly to the transmitter site.
+The MPX-2c is a point-to-point or point-to-multipoint MPX codec using IP-based network technologies for real-time distribution of complete FM-MPX (FM composite signal) to connect the signal generation in the studio directly to the transmitter site.
 
 ## About
 
 ### Version Info
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+
+| Range              | Key Features     | Based on     | System Impact     |
+|--------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -23,7 +24,7 @@ The MPX-2c is a point to point or point to multipoint MPX codec using IP-based n
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -35,14 +36,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **IP port**: [The IP port of the destination.]
-- **Bus address**: [The bus address of the device.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
-- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
-- **Set community string**: [The community string used when setting values on the device. (default: *private*)]
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Web Interface
 
@@ -50,7 +51,7 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The **General** page displays the system information.
-The **Monitoring** page displays the monitoring tables.
-The **Services** page displays the list of services available in the device and their alarm status.
-In **Polling** page is possible to define the polling groups frequency.
+- The **General** page displays the system information.
+- The **Monitoring** page displays the monitoring tables.
+- The **Services** page displays the list of services available in the device and their alarm status.
+- On the **Polling** page, you can define the polling groups frequency.
