@@ -1556,6 +1556,10 @@
   items:
   - name: Beenius IPTV Delivery Platform
     topicUid: Connector_help_Beenius_IPTV_Delivery_Platform
+- name: BeIN
+  items:
+  - name: beIN GPIO Mapping
+    topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
   items:
   - name: Belgacom Blackout Notifier
