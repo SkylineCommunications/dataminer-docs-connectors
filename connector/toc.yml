@@ -4753,6 +4753,8 @@
   items:
   - name: ITV Playout Channel
     topicUid: Connector_help_ITV_Playout_Channel
+  - name: ITV Transport Channel
+    topicUid: Connector_help_ITV_Transport_Channel
 - name: ITWatchDogs
   items:
   - name: iTWatchDogs Mini Goose-II
