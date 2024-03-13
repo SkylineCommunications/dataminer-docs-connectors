@@ -69,11 +69,11 @@ The web interface is only accessible when the client machine has network access 
 
 ### Communication Settings
 
-In the **Communication Manager** it is possible to adjust how the data is retrieved. If it is possible to retrieve the data from different connections it can be configured on the **Type** parameter (e.g. GNMI, HTTP,...).
+On the  **Communication Manager** page it is possible to adjust how the data is retrieved. If it is possible to retrieve the data from different connections it can be configured on the **Type** parameter (e.g. GNMI, HTTP,...).
 
-When using GNMI it is possible to switch to Subscribe as a **Method**. When using an **Interval** of 0 or On Change the device will push the value of a parameter when it changes. When provided it will report back in the given interval.
+When using GNMI it is possible to choose to "Subscribe" or to "poll" the data, this can be changed on the **Method** parameter. For "Subscribe" it is possible to configure an **Interval** of 0 or On Change, this will push the data when it changes to the connecter. For other values it will send the data every configured interval.
 
-Right clicking on the table will provide you with the options to: 
+Right clicking on the table will provide you with the options to:
 
 - **Add Subscription** provide a user friendly **Description**, **Commands** (e.g. interfaces/interface/state/admin-status) and a interval.
 - **Delete Subscription** this will delete the selected **Custom Subsription**.
