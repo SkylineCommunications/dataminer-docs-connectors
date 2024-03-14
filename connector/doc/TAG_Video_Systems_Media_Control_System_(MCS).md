@@ -13,18 +13,22 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 | Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version  | -            | -                 |
+|-----------|------------------|--------------|-------------------|
+| 1.0.1.x   | Driver Overhaul  | 1.0.0.7      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | API Version: 5.0       |
+| 1.0.1.x   |                        |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   |                     |                         |                       |                         |
 
 ## Configuration
 
@@ -49,24 +53,8 @@ Specify the following input configuration on the **Communication** page of the e
 
 ## How to Use
 
-REST API calls are used to establish communication with the device.
+REST API calls are used to establish communication with the device. Custom right-click context menus have been implemented on several tables which allows data manipulation and changes.
 
-The following data pages are available in the element:
+Certain sets, such as the layouts and channel configuration outside of the context menus are stored into the **Tag Sets** page.
 
-- **Users**: Allows you to assign the user and their role.
-- **Devices**: Displays the device information and statistics.
-- **Channels Configuration**: Contains the configuration of the sources.
-- **Channel Scans Configuration**: Contains the configuration of the sources scan.
-- **Outputs Configuration**: Contains the configuration of the output encoder.
-- **Layouts**: Displays the layouts available to set the channel's location.
-- **Networks Configuration**: Displays the available networks.
-- **DNS Configuration**: Displays the DNS servers that are being used.
-- **NTP Configuration**: Displays the NTP servers that are being used.
-- **PTP Configuration**: Displays the PTP servers that are being used.
-- **Scheduler Configuration**: Displays the scheduler settings to change the profile on the channel configuration.
-- **KMS Configuration**: Displays the KMS settings for the MCS platform.
-- **Timezones Configuration**: Displays the available time zones for the MCS platform.
-- **Threshold Configuration**: Displays the available threshold settings for the MCS platform.
-- **Notification Configuration**: Displays the available notifications settings for the MCS platform.
-- **Backup & Restore**: Contains settings for backing up, restoring, and downloading.
-- **Tasks**: Displays the tasks that are currently being performed on the MCS platform.
+Note: SNMP traps are received in a hidden connection and are connected over port 162 in order to automatically update table information with new events.
