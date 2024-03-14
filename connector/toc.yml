@@ -3176,12 +3176,12 @@
     topicUid: Connector_help_Evertz_7703DA-RFA
   - name: Evertz 7703PA
     topicUid: Connector_help_Evertz_7703PA
-  - name: Evertz 7707GPS-DT-F2
-    topicUid: Connector_help_Evertz_7707GPS-DT-F2
-  - name: Evertz 7707GPS-DR-F2
-    topicUid: Connector_help_Evertz_7707GPS-DR-F2
   - name: Evertz 7707CVT
     topicUid: Connector_help_Evertz_7707CVT
+  - name: Evertz 7707GPS-DR-F2
+    topicUid: Connector_help_Evertz_7707GPS-DR-F2
+  - name: Evertz 7707GPS-DT-F2
+    topicUid: Connector_help_Evertz_7707GPS-DT-F2
   - name: Evertz 7707OE
     topicUid: Connector_help_Evertz_7707OE
   - name: Evertz 7707VR8-HS
