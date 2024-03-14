@@ -307,10 +307,12 @@ With the **Virtual Input - Default Action** and **Virtual Output - Default Actio
 
 #### Backup Configuration
 
-The backup will write a file to C\Skyline DataMiner\Documents\Generic Matrix Virtualization + the file name you can configure.
-This action will save the vMatrix Mode, Tieline priority order, TieLine Management Mode, Status Update Mode and Favorable Pathing. It will also save/restore data in the Sources, Destinations, Virtual Sources, Virtual Destinations, Source Matrix, Tielines, External Loops,Actions, Label Management tables.
+The backup will write a file to the folder `C:\Skyline DataMiner\Documents\Generic Matrix Virtualization`. The file name depends on what you have configured.
 
-**Warning:** the backup is not of full restore of an element. So it was never designed to create a backup, and use that as a template to create a new element.
+The backup action will save the vMatrix mode, tieline priority order, TieLine management mode, status update mode, and favorable pathing. It will also save the data in the Sources, Destinations, Virtual Sources, Virtual Destinations, Source Matrix, Tielines, External Loops, Actions, and Label Management tables.
+
+> [!IMPORTANT]
+> Restoring the backup will not fully restore the element. The purpose of this backup feature is to create a template to easily create a new element.
 
 ### Tie Lines Configuration
 
