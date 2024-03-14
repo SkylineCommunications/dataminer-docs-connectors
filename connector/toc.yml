@@ -4756,6 +4756,12 @@
     topicUid: Connector_help_ITS_Electronics_Quad-Band_BUC-BDC
   - name: ITS Electronics Tri-Band BDC
     topicUid: Connector_help_ITS_Electronics_Tri-Band_BDC
+- name: ITV
+  items:
+  - name: ITV Playout Channel
+    topicUid: Connector_help_ITV_Playout_Channel
+  - name: ITV Transport Channel
+    topicUid: Connector_help_ITV_Transport_Channel
 - name: ITWatchDogs
   items:
   - name: iTWatchDogs Mini Goose-II
