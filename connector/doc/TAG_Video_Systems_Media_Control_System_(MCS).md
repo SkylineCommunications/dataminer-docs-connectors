@@ -13,22 +13,21 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 | Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version  | -            | -                 |
-|-----------|------------------|--------------|-------------------|
-| 1.0.1.x   | Driver Overhaul  | 1.0.0.7      | -                 |
+| 1.0.1.x [SLC Main]  | Driver Overhaul  | 1.0.0.7      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | API Version: 5.0       |
-| 1.0.1.x   |                        |
+| 1.0.1.x   | API Version: 5.0       |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   |                     |                         |                       |                         |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
