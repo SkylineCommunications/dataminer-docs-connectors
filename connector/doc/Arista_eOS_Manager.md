@@ -52,11 +52,11 @@ HTTP CONNECTION:
 
 #### Configuration of credentials for eAPI communication
 
-On the **Element Settings** Page, fill in the **eAPI Settings** and click **Log In** to establish the eAPI communication.
+On the **Element Settings** page, fill in the **eAPI Settings** and click **Log In** to establish the eAPI communication.
 
 #### Configuration of credentials for OpenConfig communication
 
-On the **Element Settings** Page, fill in the **OpenConfig Settings** and click **Connect** to establish the OpenConfig communication.
+On the **Element Settings** page, fill in the **OpenConfig Settings** and click **Connect** to establish the OpenConfig communication.
 
 ### Web Interface
 
@@ -66,23 +66,21 @@ The web interface is only accessible when the client machine has network access 
 
 ### Communication Settings
 
-On the  **Communication Manager** page it is possible to adjust how the data is retrieved. If it is possible to retrieve the data from different connections it can be configured on the **Type** parameter (e.g. GNMI, HTTP,...).
+On the **Communication Manager** page, you can adjust how the data is retrieved. If it is possible to retrieve the data from different connections, you can configure this using the **Type** parameter (e.g. gNMI, HTTP, etc.).
 
-When using GNMI it is possible to choose to "Subscribe" or to "poll" the data, this can be changed on the **Method** parameter. For "Subscribe" it is possible to configure an **Interval** of 0 or On Change, this will push the data when it changes to the connecter. For other values it will send the data every configured interval.
+When gNMI is used, you can choose to "Subscribe" or to "poll" the data. You can change this using the **Method** parameter. For "Subscribe", you can configure an **Interval** of *0* or *On Change*. The latter will push the data to the connecter whenever it changes. For other values, it will send the data every configured interval.
 
-Right clicking on the table will provide you with the options to:
-
-- **Delete Subscription** this will delete the selected **Custom Subscription**.
+You can delete a selected custom subscription from the table by right-clicking it and selecting **Delete Subscription**.
 
 ### Explorer
 
-On this page, you can execute a command through the command API. This includes configuration commands. To do so, fill in the command in the **API Commands** box and click the **Send** button. You can execute multiple commands with one call, using a semicolon as separator, e.g. *show interfaces;show clock*.
+On the Explorer page, you can execute a command through the command API. This includes configuration commands. To do so, fill in the command in the **API Commands** box and click the **Send** button. You can execute multiple commands with one call, using a semicolon as separator, e.g. *show interfaces;show clock*.
 
 The result will be displayed in the **API Response** box.
 
-- **Request Viewer:** Displays the standalone parameter **API Request**, which shows the full request that is going to be sent based on the commands added by the user.
+The **Request Viewer** button displays the standalone parameter **API Request**, which shows the full request that is going to be sent based on the commands added by the user.
 
-## Dataminer Connectivity Framework
+## DataMiner Connectivity Framework
 
 The **1.0.0.x** range of the Arista eOS Manager connector supports the usage of DCF.
 
@@ -94,4 +92,4 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 Physical dynamic interfaces:
 
-- **Interfaces**: Physical interfaces, type **inout** (in / out / inout).
+- **Interfaces**: Physical interfaces, type **inout** (in/out/inout).
