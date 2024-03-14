@@ -606,6 +606,8 @@
     topicUid: Connector_help_Argus_Alpha
 - name: Arista
   items:
+  - name: Arista eOS Manager
+    topicUid: Connector_help_Arista_eOS_Manager
   - name: Arista Fox Truck DMZ
     topicUid: Connector_help_Arista_Fox_Truck_DMZ
   - name: Arista Manager
