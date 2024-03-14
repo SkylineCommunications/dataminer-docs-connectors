@@ -6,12 +6,12 @@ uid: Connector_help_ITV_Playout_Channel
 
 The ITV Playout Channel Service protocol monitors the overall channel status of all ingress monitoring probes on every leg (red/blue/green A/green B) in the chain.
 
-Channel Status Options:
+Channel status options:
 
-- OK: no critical alarms present on any leg
-- P1: highest priority = 3 or more different legs have critical alarms
-- P2: 2 different legs have critical alarms
-- P3: One of the legs has a critical alarm
+- OK: No critical alarms present on any leg
+- P1: Highest priority = 3, or more different legs have critical alarms.
+- P2: Two different legs have critical alarms.
+- P3: One of the legs has a critical alarm.
 
 ## About
 
@@ -19,7 +19,7 @@ Channel Status Options:
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -29,28 +29,30 @@ Channel Status Options:
 
 ### System Info
 
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|---|
-| 1.0.0.x | No | Yes | - | - |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
 To create a service using this service protocol:
 
 1. In DataMiner Cube, Navigate to **Apps** > **Service Templates**.
-1. Select the Playout Channels Template *(Default: CHORD Playout Channels)*.
-1. Click on **Apply** in the bottom action bar.
-1. Press **Load**.
-1. If the template requires input data such as the Name or Probe Element, the window will now ask to provide this information and continue.
-1. A new Service will now be created based on the selected template automatically including this service protocol.
+1. Select the Playout Channels template (default: *CHORD Playout Channels*).
+1. In the action bar at the bottom of the card, click **Apply**.
+1. Click **Load**.
+1. If the template requires input data such as the Name or Probe Element, provide this information and continue.
 
-Alternatively, the Service Templates App allows you to 'bulk' import a set of services from an Excel-file. Please refer to the DataMiner Docs for more information on **Service Templates**.
+A new service will be created based on the selected template. It will automatically include this service protocol.
+
+> [!NOTE]
+> The Service Templates module also allows you to import a set of services in bulk from an Excel file. For more information, see [Applying service templates](https://aka.dataminer.services/applying-service-templates).
 
 ## How to use
 
 The **General** page contains the overall channel status.
 
-The **Alarms** page contains display all active alarms for the included services and elements.
+The **Alarms** page displays all active alarms for the included services and elements.
 
 The **Elements** page displays the elements configured under the service together with the highest severity state.
 
