@@ -4758,6 +4758,8 @@
     topicUid: Connector_help_ITS_Electronics_Tri-Band_BDC
 - name: ITV
   items:
+  - name: ITV Distribution Channel
+    topicUid: Connector_help_ITV_Distribution_Channel
   - name: ITV Playout Channel
     topicUid: Connector_help_ITV_Playout_Channel
   - name: ITV Transport Channel
