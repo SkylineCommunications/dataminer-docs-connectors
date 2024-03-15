@@ -54,4 +54,4 @@ The element using the HDP301 connector has several data pages:
 
 - The **Monitoring** page contains two tables for analog and discrete alarm limits. You can configure those two tables.
 
-- The **Measurements** page contains HDP301 powering measurements, it also keeps track of peeks.
+- The **Measurements** page contains HDP301 power measurements. It also keeps track of peaks.
