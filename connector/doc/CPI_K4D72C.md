@@ -18,9 +18,9 @@ The protocol uses the CPI serial protocol in **ASCII mode** with STX/ETX bytes a
 
 ### Product Info
 
-| Range     | Supported Firmware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | \- Front Panel Boot Kernel Software Version: *03.00.19* - Front Main Program Software Version: *03.01.85* - Power Supply Controller Boot Kernel Software Version: *03.00.03* - Power Supply Controller Main Program Software Version: *03.01.40* - RF Controller Boot Kernel Software Version: *03.00.03* - RF Controller Main Program Software Version: *03.01.46* - External Interface Controller Boot Kernel Software Version: *03.00.03* - External Interface Controller Main Program Software Version: *03.01.62* - CAN Communication Level Key Version: *03.01.31* |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | - Front Panel Boot Kernel Software Version: *03.00.19* <br>- Front Main Program Software Version: *03.01.85* <br>- Power Supply Controller Boot Kernel Software Version: *03.00.03* <br>- Power Supply Controller Main Program Software Version: *03.01.40* <br>- RF Controller Boot Kernel Software Version: *03.00.03* <br>- RF Controller Main Program Software Version: *03.01.46* <br>- External Interface Controller Boot Kernel Software Version: *03.00.03* <br>- External Interface Controller Main Program Software Version: *03.01.62* <br>- CAN Communication Level Key Version: *03.01.31* |
 
 ### System Info
 

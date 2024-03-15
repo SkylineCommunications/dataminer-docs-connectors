@@ -245,7 +245,7 @@ This can be configured either using element connections or subscriptions.
 - **Element Connections**: In the [Element Connections](https://aka.dataminer.services/virtual-elements-used-for-element-connections) module in DataMiner, you will find an entry for the Generic Matrix Virtualization for each row you have added. Link each source matrix (**Status String** parameter) with a row.
 - **Subscriptions**: When you edit one of the subscription parameters, the parameter **Source Matrix Subscription State** will report ***Not Synced***. When you have configured all subscription parameters in the Source matrix data table (Element Name, Matrix Buffer PID, Max. Inputs, Max. Outputs, Source Table Pid, Destination Table Pid, and Park Input ID) you can click the **Sync** button on the page. This will cause the element to attempt to subscribe on the source matrices. After this configuration, data will be sent to the Generic Matrix Virtualization element, and tables will be filled in with inputs and outputs.
 
-## How to use range 4.0.0.x
+## How to use range 4.0.0.x - 4.0.1.x
 
 ### Virtual Matrix
 
@@ -304,6 +304,15 @@ Example: `Script:TestScript||TriggerId=[TRIGGER];VirtualId=[ID];CellValue=[VALUE
 - \[VALUE\]: Value of the cell of the triggered column.
 
 With the **Virtual Input - Default Action** and **Virtual Output - Default Action**, you can select an action that will be executed automatically when a new input or output is added.
+
+#### Backup Configuration
+
+The backup will write a file to the folder `C:\Skyline DataMiner\Documents\Generic Matrix Virtualization`. The file name depends on what you have configured.
+
+The backup action will save the vMatrix mode, tieline priority order, TieLine management mode, status update mode, and favorable pathing. It will also save the data in the Sources, Destinations, Virtual Sources, Virtual Destinations, Source Matrix, Tielines, External Loops, Actions, and Label Management tables.
+
+> [!IMPORTANT]
+> Restoring the backup will not fully restore the element. The purpose of this backup feature is to create a template to easily create a new element.
 
 ### Tie Lines Configuration
 

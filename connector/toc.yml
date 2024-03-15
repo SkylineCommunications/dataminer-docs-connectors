@@ -28,6 +28,8 @@
     topicUid: Connector_help_2WCOM_MoIN_Controller
   - name: 2WCOM MPX-1g
     topicUid: Connector_help_2WCOM_MPX-1g
+  - name: 2WCOM MPX-2c
+    topicUid: Connector_help_2WCOM_MPX-2c
   - name: 2WCOM MPX-2ds
     topicUid: Connector_help_2WCOM_MPX-2ds
   - name: 2WCOM NC06
@@ -304,6 +306,8 @@
   items:
   - name: Alea MCxPTT
     topicUid: Connector_help_Alea_MCxPTT
+  - name: Alea xPTT
+    topicUid: Connector_help_Alea_xPTT
 - name: Alignsat
   items:
   - name: Alignsat AC9250S
@@ -602,6 +606,8 @@
     topicUid: Connector_help_Argus_Alpha
 - name: Arista
   items:
+  - name: Arista eOS Manager
+    topicUid: Connector_help_Arista_eOS_Manager
   - name: Arista Fox Truck DMZ
     topicUid: Connector_help_Arista_Fox_Truck_DMZ
   - name: Arista Manager
@@ -816,6 +822,8 @@
     topicUid: Connector_help_Atlassian_Jira
   - name: Atlassian Jira Manager
     topicUid: Connector_help_Atlassian_Jira_Manager
+  - name: Atlassian Jira Service Management
+    topicUid: Connector_help_Atlassian_Jira_Service_Management
   - name: Atlassian OpsGenie
     topicUid: Connector_help_Atlassian_OpsGenie
 - name: ATNS
@@ -1552,6 +1560,10 @@
   items:
   - name: Beenius IPTV Delivery Platform
     topicUid: Connector_help_Beenius_IPTV_Delivery_Platform
+- name: BeIN
+  items:
+  - name: beIN GPIO Mapping
+    topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
   items:
   - name: Belgacom Blackout Notifier
@@ -2484,6 +2496,8 @@
     topicUid: Connector_help_Delta_Power_Solutions_Orion_controller
 - name: DEV
   items:
+  - name: DEV 1985
+    topicUid: Connector_help_DEV_1985
   - name: DEV 4111
     topicUid: Connector_help_DEV_4111
   - name: DEV 7000
@@ -3166,6 +3180,8 @@
     topicUid: Connector_help_Evertz_7703DA-RFA
   - name: Evertz 7703PA
     topicUid: Connector_help_Evertz_7703PA
+  - name: Evertz 7707CVT
+    topicUid: Connector_help_Evertz_7707CVT
   - name: Evertz 7707GPS-DR-F2
     topicUid: Connector_help_Evertz_7707GPS-DR-F2
   - name: Evertz 7707GPS-DT-F2
@@ -3482,6 +3498,8 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_COMPRESS
   - name: EVS Neuron NAP - CONVERT
     topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT
+  - name: EVS Neuron NAP - PROTECT
+    topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
 - name: eWon
@@ -3966,10 +3984,12 @@
     topicUid: Connector_help_Globecast_MADY_Platform
 - name: Globecast France
   items:
+  - name: Globecast France Enhanced Double Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Double_Destination_Transport_Service
   - name: Globecast France Enhanced DTM Channel Service
     topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
   - name: Globecast France Enhanced Single Destination Transport Service
-    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service 
 - name: Globecomm
   items:
   - name: Globecomm iDirect Shore Side Server
@@ -4056,6 +4076,8 @@
     topicUid: Connector_help_Grass_Valley_Jupiter_VM3000
   - name: Grass Valley Karrera
     topicUid: Connector_help_Grass_Valley_Karrera
+  - name: Grass Valley Kula
+    topicUid: Connector_help_Grass_Valley_Kula
   - name: Grass Valley Media Server
     topicUid: Connector_help_Grass_Valley_Media_Server
   - name: Grass Valley Morpheus Panoplay On Air
@@ -4110,6 +4132,8 @@
     topicUid: Connector_help_Haivision_Makito_X_Decoder
   - name: Haivision Makito X Encoder
     topicUid: Connector_help_Haivision_Makito_X_Encoder
+  - name: Haivision Makito X4 Platform
+    topicUid: Connector_help_Haivision_Makito_X4_Platform
   - name: Haivision Media Gateway
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
@@ -4700,6 +4724,8 @@
     topicUid: Connector_help_IRT_DVB-T_TX
   - name: IRT IFC Series
     topicUid: Connector_help_IRT_IFC_Series
+  - name: IRT IRPC Series
+    topicUid: Connector_help_IRT_IRPC_Series
   - name: IRT SSPA Series
     topicUid: Connector_help_IRT_SSPA_Series
 - name: Itelco
@@ -4730,6 +4756,12 @@
     topicUid: Connector_help_ITS_Electronics_Quad-Band_BUC-BDC
   - name: ITS Electronics Tri-Band BDC
     topicUid: Connector_help_ITS_Electronics_Tri-Band_BDC
+- name: ITV
+  items:
+  - name: ITV Playout Channel
+    topicUid: Connector_help_ITV_Playout_Channel
+  - name: ITV Transport Channel
+    topicUid: Connector_help_ITV_Transport_Channel
 - name: ITWatchDogs
   items:
   - name: iTWatchDogs Mini Goose-II
@@ -5798,6 +5830,10 @@
   items:
   - name: NBCS Roadkit Manager
     topicUid: Connector_help_NBCS_Roadkit_Manager
+- name: NBCU
+  items:
+  - name: NBCU Ocellus Data Collector
+    topicUid: Connector_help_NBCU_Ocellus_Data_Collector
 - name: ND Satcom
   items:
   - name: ND Satcom HPA 3412A
@@ -6202,6 +6238,8 @@
     topicUid: Connector_help_Nokia_NetAct_NMS_3GPP_Manager
   - name: Nokia NFM-P
     topicUid: Connector_help_Nokia_NFM-P
+  - name: Nokia NSP
+    topicUid: Connector_help_Nokia_NSP
   - name: Nokia OMS 1350
     topicUid: Connector_help_Nokia_OMS_1350
   - name: Nokia OMS 1350 - 11DPM8
@@ -8470,6 +8508,8 @@
     topicUid: Connector_help_TDF_Incident_Ticketing
   - name: TDF Jbus PLC
     topicUid: Connector_help_TDF_Jbus_PLC
+  - name: TDF Network Collector
+    topicUid: Connector_help_TDF_Network_Collector
   - name: TDF Plan Maintenance
     topicUid: Connector_help_TDF_Plan_Maintenance
   - name: TDF Securisation FM
@@ -8820,26 +8860,44 @@
     topicUid: Connector_help_Teleste_HDM100_-_AC8800
   - name: Teleste HDM100 - AC8810
     topicUid: Connector_help_Teleste_HDM100_-_AC8810
+  - name: Teleste HDO101 TSEMP
+    topicUid: Connector_help_Teleste_HDO101_TSEMP
   - name: Teleste HDO101 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO101_TSEMP_DVX
+  - name: Teleste HDO103 TSEMP
+    topicUid: Connector_help_Teleste_HDO103_TSEMP
   - name: Teleste HDO103 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO103_TSEMP_DVX
-  - name: Teleste HDO202_TSEMP
+  - name: Teleste HDO202 TSEMP
     topicUid: Connector_help_Teleste_HDO202_TSEMP
+  - name: Teleste HDO203
+    topicUid: Connector_help_Teleste_HDO203
   - name: Teleste HDO212
     topicUid: Connector_help_Teleste_HDO212
+  - name: Teleste HDO421 TSEMP
+    topicUid: Connector_help_Teleste_HDO421_TSEMP
+  - name: Teleste HDO611 TSEMP
+    topicUid: Connector_help_Teleste_HDO611_TSEMP
   - name: Teleste HDO611 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO611_TSEMP_DVX
+  - name: Teleste HDO613 TSEMP
+    topicUid: Connector_help_Teleste_HDO613_TSEMP
   - name: Teleste HDO613 TSEMP DVX
     topicUid: Connector_help_Teleste_HDO613_TSEMP_DVX
+  - name: Teleste HDO752
+    topicUid: Connector_help_Teleste_HDO752
+  - name: Teleste HDO775
+    topicUid: Connector_help_Teleste_HDO775
   - name: Teleste HDO905
     topicUid: Connector_help_Teleste_HDO905
   - name: Teleste HDO907
     topicUid: Connector_help_Teleste_HDO907
   - name: Teleste HDO908
     topicUid: Connector_help_Teleste_HDO908
-  - name: Teleste HDP230
-    topicUid: Connector_help_Teleste_HDP230
+  - name: Teleste HDP230 TSEMP
+    topicUid: Connector_help_Teleste_HDP230_TSEMP
+  - name: Teleste HDP301 TSEMP
+    topicUid: Connector_help_Teleste_HDP301_TSEMP
   - name: Teleste HDP301 TSEMP DVX
     topicUid: Connector_help_Teleste_HDP301_TSEMP_DVX
   - name: Teleste Luminato
@@ -9865,6 +9923,8 @@
     topicUid: Connector_help_ZTE_ZXA10_C600
   - name: ZTE ZXA10 C600 GPON Platform
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
+  - name: ZTE ZXR10 2900E Series
+    topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900
     topicUid: Connector_help_ZTE_ZXR10_8900
 - name: Unknown vendor

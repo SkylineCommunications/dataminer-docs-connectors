@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_Teleste_HDP230
+uid: Connector_help_Teleste_HDP230_TSEMP
 ---
 
-# Teleste HDP230
+# Teleste HDP230 TSEMP
 
-The HDP230 is a power supply module for the Teleste DMM.
+The HDP230 TSEMP is a power supply module for the Teleste DMM.
 
 ## About
 

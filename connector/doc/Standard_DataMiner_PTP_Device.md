@@ -43,9 +43,9 @@ The following connectors are currently mediated with the latest version:
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                          | Exported Components     |
-|-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- Arista Manager - Lawo HD Core Ravenna - Lawo Power Core - Meinberg Lantime M3000 - PTPv2 Module - Skyline PTP (application and scripts) | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - Arista Manager <br>- Lawo HD Core Ravenna <br>- Lawo Power Core <br>- Meinberg Lantime M3000 <br>- PTPv2 Module <br>- Skyline PTP (application and scripts) | - |
 
 ## Configuration
 
@@ -61,4 +61,4 @@ This connector should not be accessed directly by the user.
 
 It is a mediation protocol that is used by the **PTP application** to easily get the values of the different PTP parameters from each supported device.
 
-The PTP-related parameters of the mediated protocols that cannot be linked to a mediation parameter are grouped in a custom tag \<RelatedProtocols\>. This tag is used by the Skyline PTP app.
+The PTP-related parameters of the mediated protocols that cannot be linked to a mediation parameter are grouped in a custom tag `<RelatedProtocols\>`. This tag is used by the Skyline PTP app.
