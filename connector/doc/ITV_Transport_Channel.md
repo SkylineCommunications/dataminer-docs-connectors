@@ -9,7 +9,7 @@ The ITV Transport Channel Service protocol monitors the overall transport status
 Channel status options:
 
 - OK: No critical alarms present on any leg
-- P1: Highest priority = 3, or more different legs have critical alarms.
+- P1: Highest priority = Three or more different legs have critical alarms.
 - P2: Two different legs have critical alarms.
 - P3: One of the legs has a critical alarm.
 

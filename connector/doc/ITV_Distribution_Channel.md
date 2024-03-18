@@ -4,12 +4,12 @@ uid: Connector_help_ITV_Distribution_Channel
 
 # ITV Distribution Channel Service
 
-The ITV Distribution Channel Service protocol monitors the overall Distribution status of all monitoring probes on every leg (RED and BLUE) in the chain.
+The ITV Distribution Channel Service protocol monitors the overall distribution status of all monitoring probes on every leg (RED and BLUE) in the chain.
 
 Channel status options:
 
 - OK: No critical alarms present on any leg.
-- P1: Highest priority = 3, or more critical alarms present on any leg.
+- P1: Highest priority = Three or more critical alarms present on any leg.
 - P2: Two critical alarms present on any legs.
 - P3: One critical alarm present on one of the legs.
 
