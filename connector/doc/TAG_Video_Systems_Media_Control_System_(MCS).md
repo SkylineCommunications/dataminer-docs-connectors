@@ -10,10 +10,10 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 
 ### Version Info
 
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]  | Driver Overhaul  | 1.0.0.7      | -                 |
+| Range              | Key Features       | Based on | System Impact |
+|--------------------|--------------------|----------|---------------|
+| 1.0.0.x            | Initial version    | -        | -             |
+| 1.0.1.x [SLC Main] | Connector overhaul | 1.0.0.7  | -             |
 
 ### Product Info
 
@@ -52,8 +52,8 @@ Specify the following input configuration on the **Communication** page of the e
 
 ## How to Use
 
-REST API calls are used to establish communication with the device. Custom right-click context menus have been implemented on several tables which allows data manipulation and changes.
+REST API calls are used to establish communication with the device. For several of the tables, you can right-click the table to access a context menu that allows data manipulation and changes.
 
-Certain sets, such as the layouts and channel configuration outside of the context menus are stored into the **Tag Sets** page.
+Certain settings, such as the layouts and channel configuration outside of the context menus, are stored on the **Tag Sets** page.
 
-Note: SNMP traps are received in a hidden connection and are connected over port 162 in order to automatically update table information with new events.
+Note that SNMP traps are received via a hidden connection using port 162 in order to automatically update table information with new events.
