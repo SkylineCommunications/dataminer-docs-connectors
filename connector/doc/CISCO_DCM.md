@@ -27,6 +27,9 @@ Please note the following:
 | 1.0.2.x              | Based on 1.0.0.104, but with partial tables.                                    | Yes                 | Yes                     |
 | 1.0.3.x [SLC Main]   | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes                 | Yes                     |
 
+> [!NOTE]
+> If you are using a version in the 1.0.3.x range prior to 1.0.3.93, a memory leak can occur when incorrect IIOP credentials are configured on the element. Make sure to upgrade to the latest version of this connector to prevent this.
+
 ### Product Info
 
 | Range | Supported Firmware |

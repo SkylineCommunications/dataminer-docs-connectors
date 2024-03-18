@@ -12,30 +12,30 @@ This connector was designed for use with the device **Adtec RD-71**. The connect
 
 ### Version Info
 
-| **Range**                        | **Description**                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x (Obsolete)                      | Initial version.                                                                                                                 | No                  | Yes                     |
-| 1.0.1.x (Obsolete)                      | Added DVE support to the connector.                                                                                                 | No                  | Yes                     |
-| 1.0.2.x (Obsolete)                      | Applied conditional pages instead of DVEs.                                                                                       | No                  | Yes                     |
-| 1.0.3.x (based on 1.0.2.x)              | Fixed PK duplicate issue in the 2050 table.                                                                                      | No                  | Yes                     |
-| 1.0.4.x (based on 1.0.3.2)              | Added support for profiles by adding a new serial connection (Telnet). For more information, refer to the "Notes" section below. | No                  | Yes                     |
-| 1.1.0.1 (based on 1.0.3.2) [SLC Main]   | Compatible with new firmware 2.02.21 and higher. Added reset/reboot buttons.                                                     | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x (Obsolete) | Initial version. | No | Yes |
+| 1.0.1.x (Obsolete) | Added DVE support to the connector. | No | Yes |
+| 1.0.2.x (Obsolete) | Applied conditional pages instead of DVEs. | No | Yes |
+| 1.0.3.x (based on 1.0.2.x) | Fixed PK duplicate issue in the 2050 table. | No | Yes |
+| 1.0.4.x (based on 1.0.3.2) | Added support for profiles by adding a new serial connection (Telnet). For more information, refer to the "Notes" section below. | No | Yes |
+| 1.1.0.1 (based on 1.0.3.2) [SLC Main] | Compatible with new firmware 2.02.21 and higher. Added reset/reboot buttons. | No | Yes |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | v 2.02.06                   |
-| 1.0.1.x          | v 2.02.11                   |
-| 1.0.2.x          | v 2.02.11                   |
-| 1.0.3.x          | v 2.02.11                   |
-| 1.0.4.x          | v 2.02.11                   |
-| 1.1.0.x          | v 2.02.21                   |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | v 2.02.06                  |
+| 1.0.1.x | v 2.02.11                  |
+| 1.0.2.x | v 2.02.11                  |
+| 1.0.3.x | v 2.02.11                  |
+| 1.0.4.x | v 2.02.11                  |
+| 1.1.0.x | v 2.02.21                  |
 
 ### Exported connectors (only in range 1.0.1.x)
 
-| **Exported Connector**                                            | **Description**                                  |
-|------------------------------------------------------------------|--------------------------------------------------|
+| Exported Connector                                         | Description                                      |
+|------------------------------------------------------------|--------------------------------------------------|
 | [Adtec RD-71 - PRX](xref:Connector_help_Adtec_RD-71_-_PRX) | Adtec RD-71 with the PRX model demodulator board |
 | [Adtec RD-71 - LB](xref:Connector_help_Adtec_RD-71_-_LB)   | Adtec RD-71 with the LB model demodulator board  |
 

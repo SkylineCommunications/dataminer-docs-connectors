@@ -14,10 +14,10 @@ This connector uses **SNMP** to retrieve the entity IDs of the different compone
 
 ### Version Info
 
-| **Range**           | **Description**                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------------|----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\]       | Initial version.                                                                                                                 | No                  | Yes                     |
-| 1.0.1.x (based on 1.0.0.3) | Added support for profiles by adding a new serial connection (Telnet). For more information, refer to the "Notes" section below. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version. | No | Yes |
+| 1.0.1.x (based on 1.0.0.3) | Added support for profiles by adding a new serial connection (Telnet). For more information, refer to the "Notes" section below. | No | Yes |
 
 ### Product Info
 

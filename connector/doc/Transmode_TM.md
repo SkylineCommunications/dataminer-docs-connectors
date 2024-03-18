@@ -4,18 +4,18 @@ uid: Connector_help_Transmode_TM
 
 # Transmode TM
 
-The Transmode TM is a **transponder/muxponder** that is used as a buffer between the "client layer" and the "WDM domain". As a result of this buffer, client equipment of different types and from different vendors can be connected to the Transmode network. A transponder/muxponder also enables encapsulation of the client signal into a digital wrapper, i.e. extra bytes are added to the client signal at the client ingress point and removed at the client egress point. These overhead bytes can be used for a number of features such as Performance & Fault Management, FEC, Automatic Laser Shutdown, etc.
-
-## About
+The Transmode TM is a **transponder/muxponder** that is used as a buffer between the "client layer" and the "WDM domain". As a result of this buffer, client equipment of different types and from different vendors can be connected to the Transmode network. A transponder/muxponder also enables encapsulation of the client signal into a digital wrapper, i.e. extra bytes are added to the client signal at the client ingress point and removed at the client egress point. These overhead bytes can be used for a number of features such as performance and fault management, FEC, automatic laser shutdown, etc.
 
 This connector retrieves and sets data via **SNMP**.
 
+## About
+
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                        | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                                                        | No                  | No                      |
-| 1.0.1.x          | \- Implementation of DCF - Obsolete DisplayColumn technology replaced (for improved efficiency & Cassandra support): No access to previous trend data for some tables. | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | No |
+| 1.0.1.x | - Implementation of DCF <br>- Obsolete DisplayColumn technology replaced (for improved efficiency and Cassandra support): No access to previous trend data for some tables. | Yes | Yes |
 
 ### Product Info
 
@@ -46,9 +46,9 @@ SNMP Settings:
 
 ### General
 
-This page displays the **system node info**. Via page buttons, you can access the **IP**, **Options** and **Configuration** settings.
+This page displays the **system node info**. Via page buttons, you can access the **IP**, **Options**, and **Configuration** settings.
 
-The page also contains buttons that can be used to show the **Board Table**, **Equipment Table**, **Module Overview**, **Ping**, **Power Table** and **Fan Table**.
+The page also contains buttons that can be used to show the **Board Table**, **Equipment Table**, **Module Overview**, **Ping**, **Power Table**, and **Fan Table**.
 
 ### Client overview 1-4
 
@@ -60,7 +60,7 @@ This page displays the **IP Interface Table** and the **IP Route Table**.
 
 ### Alarms
 
-This page displays a table containing all **Alarms.**
+This page displays a table containing all **Alarms**.
 
 ### BackUp
 
@@ -96,7 +96,7 @@ This page contains the **Optical Transmission Section** and **Optical Channel** 
 
 ### Optical Signal Processing
 
-This page contains the **Optical Digital Signal Rate**, **Optical FEC** and **OTN OTU** tables.
+This page contains the **Optical Digital Signal Rate**, **Optical FEC**, and **OTN OTU** tables.
 
 ### Web Interface
 
