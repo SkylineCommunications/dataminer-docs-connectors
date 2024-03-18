@@ -1,17 +1,17 @@
 ---
-uid: Connector_help_ITV_Transport_Channel
+uid: Connector_help_ITV_Distribution_Channel
 ---
 
-# ITV Transport Channel Service
+# ITV Distribution Channel Service
 
-The ITV Transport Channel Service protocol monitors the overall transport status of all monitoring probes on every leg (BLN RED, BLN BLUE, SLG BLUE, SLG GREEN) in the chain.
+The ITV Distribution Channel Service protocol monitors the overall distribution status of all monitoring probes on every leg (RED and BLUE) in the chain.
 
 Channel status options:
 
-- OK: No critical alarms present on any leg
-- P1: Highest priority = Three or more different legs have critical alarms.
-- P2: Two different legs have critical alarms.
-- P3: One of the legs has a critical alarm.
+- OK: No critical alarms present on any leg.
+- P1: Highest priority = Three or more critical alarms present on any leg.
+- P2: Two critical alarms present on any legs.
+- P3: One critical alarm present on one of the legs.
 
 ## About
 
@@ -38,7 +38,7 @@ Channel status options:
 To create a service using this service protocol:
 
 1. In DataMiner Cube, Navigate to **Apps** > **Service Templates**.
-1. Select the Transport Channels template (default: *CHORD Transport*).
+1. Select the Distribution Channels template (default: *CHORD Distribution*).
 1. In the action bar at the bottom of the card, click **Apply**.
 1. Click **Load**.
 1. If the template requires input data such as the Name or Probe Element, provide this information and continue.
