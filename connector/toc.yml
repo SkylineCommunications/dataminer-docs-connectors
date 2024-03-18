@@ -8892,6 +8892,8 @@
     topicUid: Connector_help_Teleste_HDO775
   - name: Teleste HDO905
     topicUid: Connector_help_Teleste_HDO905
+  - name: Teleste HDO906
+    topicUid: Connector_help_Teleste_HDO906
   - name: Teleste HDO907
     topicUid: Connector_help_Teleste_HDO907
   - name: Teleste HDO908
