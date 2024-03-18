@@ -12,7 +12,7 @@ The Suitelife Systems GPX-32 connector has been designed to monitor and manage t
 
 | Range   | Description                      | DCF Integration | Cassandra Compliant |
 |---------|----------------------------------|-----------------|---------------------|
-| 1.0.0.x | Initial version - Serial RS-232. | No              | No                  |
+| 1.0.0.x | Initial version - Serial RS-232. | No              | Yes                 |
 
 ### Product Info
 
