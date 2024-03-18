@@ -4086,6 +4086,8 @@
     topicUid: Connector_help_Grass_Valley_Morpheus_UX
   - name: Grass Valley MV-8 Series
     topicUid: Connector_help_Grass_Valley_MV-8_Series
+  - name: Grass Valley MV-Flex-32-R
+    topicUid: Connector_help_Grass_Valley_MV_Flex_32_R
   - name: Grass Valley Orbit
     topicUid: Connector_help_Grass_Valley_Orbit
   - name: Grass Valley Orbit - Device

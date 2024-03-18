@@ -18,7 +18,7 @@ The Grass Valley MV-Flex-32-R is a compact router that offers configurable I/O i
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | N/A           |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
@@ -62,12 +62,9 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination.
-  - **Bus address**: The **matrix number**, **level number**, **number of inputs** and **number of outputs** of the matrix separated by periods (".") The matrix number range is 0-15, the level number range is 0-7, and the range of inputs and outputs is 1-1024.
+  - **Bus address**: The **matrix number**, **level number**, **number of inputs**, and **number of outputs** of the matrix separated by periods (".") The matrix number range is 0-15, the level number range is 0-7, and the range of inputs and outputs is 1-1024.
+
     For example: *"0.0.1024.1024".*
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
@@ -75,8 +72,8 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The **General** page contains the SNMP general information of the device.
+The **General** page contains the general SNMP information of the device.
 
 The other pages are related to the **matrix configuration**. The information on these pages is updated via the smart-serial connection.
 
-The **Matrix Configuration** parameter displays any detected misconfigurations. The status *OK* indicates that the matrix was successfully configured.
+The **Matrix Configuration** parameter displays any detected misconfigurations. The status *OK* indicates that the matrix is successfully configured.
