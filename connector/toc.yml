@@ -3426,6 +3426,8 @@
     topicUid: Connector_help_Evertz_HD201x_Video_PassPort
   - name: Evertz HD2020-3G Video Passport
     topicUid: Connector_help_Evertz_HD2020-3G_Video_Passport
+  - name: Evertz HDSD9545DLY-PRO
+    topicUid: Evertz_HDSD9545DLY-PRO
   - name: Evertz InSite
     topicUid: Connector_help_Evertz_InSite
   - name: Evertz Magnum
