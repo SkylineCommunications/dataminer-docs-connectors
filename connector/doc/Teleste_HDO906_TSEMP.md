@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Teleste_HDO906
+uid: Connector_help_Teleste_HDO906_TSEMP
 ---
 
 # Teleste HDO906
