@@ -4,21 +4,21 @@ uid: Connector_help_Red_Bee_Media_Playout_Desk
 
 # Red Bee Media Playout Desk
 
-This connector is intended to be used with the Rbm_playout DOM module. It has a configurable DOM instance (for the Playout Desk definition). Based on the instance of the Desk, information about Channel Services, Region Services and Output services is retrieved.
+This connector is intended to be used with the **Rbm_playout** DOM module. It has a configurable DOM instance (for the Playout Desk definition). Based on the instance of the desk, information about channel services, region services, and output services is retrieved.
 
 ## About
 
 ### Version Info
 
-|Range               |Features         |Based on   |System Impact  |
-|--------------------|-----------------|-----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -         | -             |
+| Range              | Features         | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### System Info
 
-|Range    |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|-----------------|---------------------|-------------------|----------------------|
-| 1.0.0.x | No              | Yes                 | -                 |                      |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -30,14 +30,10 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-In order for tables to be populated, it is necessary to specify the Desk ID.
+In order for tables to be populated, specify the **Desk ID** on the General page.
 
+When the Desk ID parameter has been initialized, click the **Reload the Data** button in order to retrieve the data from DOM.
 
 ## How to use
 
-After initializing the Desk ID parameter, you should press the "Reload the Data" button, in order to retrieve the data from DOM.
-Desk ID is saved. Data is refreshed after click on the "Reload the Data" button.
-
-### Examples
-
-You can find all information about the tables on the corresponding pages, and on the General page, you can specify the Desk ID.
+You can find all information about the tables on the corresponding pages. On the General page, you can specify the Desk ID.
