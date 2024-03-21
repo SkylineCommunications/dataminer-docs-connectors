@@ -6494,6 +6494,8 @@
     topicUid: Connector_help_Ovarro_Kingfisher_-_Digital_Input
   - name: Ovarro Kingfisher - Digital Output
     topicUid: Connector_help_Ovarro_Kingfisher_-_Digital_Output
+  - name: Ovarro Kingfisher Sensor
+    topicUid: Connector_help_Ovarro_Kingfisher_Sensor
 - name: Ovzon
   items:
   - name: Ovzon Control Terminal
