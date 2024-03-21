@@ -6804,6 +6804,8 @@
     topicUid: Connector_help_Red_Bee_Media_Aggregation_Matrix
   - name: Red Bee Media Lawo Powercore RouterControl Visio Mapping
     topicUid: Connector_help_Red_Bee_Media_Lawo_Powercore_RouterControl_Visio_Mapping
+  - name: Red Bee Media Playout Desk
+    topicUid: Connector_help_Red_Bee_Media_Playout_Desk
   - name: Red Bee Media Service Early Warning
     topicUid: Connector_help_Red_Bee_Media_Service_Early_Warning
 - name: Red Bee Media UK
