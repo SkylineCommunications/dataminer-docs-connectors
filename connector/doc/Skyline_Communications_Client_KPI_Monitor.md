@@ -34,9 +34,9 @@ On the **General** page:
 
 - The parameter **Last Client KPI Log Entry Timestamp** contains the last timestamp read from the client log files.
 - The parameter **Last Processing Timestamp** contains the timestamp from the last time the client log files where processed.
-- The average parameters for each KPI. The average is calculated each time the client log files are processed.
-- The table **Cube Event Cube Connection**
-- The **Clear Data Client KPI** button which will clear all tables and reset the Last log entry timestamp.
+- The average parameters for each KPI are displayed. The average is calculated each time the client log files are processed.
+- The table **Cube Event Cube Connection** is displayed.
+- You can use the **Clear Data Client KPI** button to clear all tables and reset the last log entry timestamp.
 
 On the **Metrics** page, you can find the following tables:
 
