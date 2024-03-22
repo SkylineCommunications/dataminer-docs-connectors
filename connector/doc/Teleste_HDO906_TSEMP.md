@@ -2,9 +2,9 @@
 uid: Connector_help_Teleste_HDO906_TSEMP
 ---
 
-# Teleste HDO906
+# Teleste HDO906 TSEMP
 
-The HDO906 is an optical transmitter. The **Teleste HDO906** connector can be used to display and configure information of the related device.
+The HDO906 TSEMP is an optical transmitter. The **Teleste HDO906 TSEMP** connector can be used to display and configure information of the related device.
 
 A **serial** connection is used in order to successfully retrieve and configure the information of the device. There are also different possibilities available for **alarm monitoring** and **trending**.
 
@@ -38,14 +38,14 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the HDO906 device.
-- **IP port**: The IP port of the HDO906 device.
+- **IP address/host**: The polling IP of the HDO906 TSEMP device.
+- **IP port**: The IP port of the HDO906 TSEMP device.
 
 ### How to Use
 
 The connector uses serial commands to request and push information to and from the node. This communication can be seen in the Stream Viewer.
 
-The element using the HDO906 connector has a General, Monitoring, and Adjustment page.
+The element using the HDO906 TSEMP connector has a General, Monitoring, and Adjustment page.
 
 - On the **General** page, you can find all the details related to general information about the device, and you can set the device name.
 
