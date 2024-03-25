@@ -267,17 +267,18 @@ Range 5.0.0.x supports the following connectors:
 
 - Teleste HDO103 TSEMP
 - Teleste HDO202
-- Teleste HDO212
-- Teleste HDP230 TSEMP
-- Teleste HDP301 TSEMP
 - Teleste HDO421 TSEMP
 - Teleste HDO611 TSEMP
 - Teleste HDO613 TSEMP
 - Teleste HDO752
 - Teleste HDO775
 - Teleste HDO905
+- Teleste HDO906 TSEMP
 - Teleste HDO907
 - Teleste HDO908 TSEMP
+- Teleste HDO212
+- Teleste HDP230 TSEMP
+- Teleste HDP301 TSEMP
 
 ### Detailed logging about polled modules
 
