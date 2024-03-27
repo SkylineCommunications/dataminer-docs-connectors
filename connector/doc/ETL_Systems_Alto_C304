@@ -1,0 +1,67 @@
+---
+uid: Connector_help_ETL_Systems_ALTO_C304
+---
+
+# ETL SYSTEMS ALTO C304
+
+## Overview
+
+This ALTO amplifier chassis is a configurable,redundant amplifier fitted with 6 hot swap amplifier modules
+to provide typically 4 channels of redundant amplification.
+
+The unit is usually arranged as 4 main amplifier modules and 2 standby modules
+
+### Version Info
+
+| Range   | Key Features                                                      | Based on | System Impact |
+|---------|-------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution. | -        | -             |
+
+### Product Info
+
+| Range    | Supported Firmware |
+|----------|--------------------|
+| 1.0.0.0x | ALTO Amplifier        |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+
+
+### Connections
+
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The IP address of the device, e.g. *10.11.12.13*.
+- **Device address**: Not required.
+
+SNMP Settings:
+
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+## How to use
+
+### General
+
+The **General** section presents an informative overview of the system's current status. The **Module Readings Table** displays critical parameters such as Optical Power (OP), Laser Diode Bias Current (LNB Current), and voltages across multiple amplifiers, which are indicative of each module's operational health. Furthermore, the Chassis Readings Table gives a summary of system-wide power statistics, including Power Supply Unit (PSU) voltages and fan speeds, to provide a comprehensive snapshot of the system's power infrastructure.
+
+### Module Settings
+
+Within the **Module Settings** segment, one can find tools necessary for adjusting individual module characteristics. The Module Settings Table facilitates the configuration of gains, slopes, power levels, and Low Noise Block (LNB) states, among other settings. This allows the user to tailor each module's performance parameters to meet specific operational requirements
+
+### Systems Settings
+
+The **System Settings** section is designed for modification and management of overarching system parameters. It accommodates the setting of main and redundant module numbers, integral to the system's failover strategy. The tracking status, included in this section, provides the user with control over the system's tracking behavior.
+
+Additionally, the section encompasses the **Set Path Module Table**, **Hot Standby Redundancy Table**, and **Cold Standby Redundancy Table**. These tables offer read and write access, granting the user the ability to modify module paths and configure the redundancy setup of the system, whether it be for immediate failover through hot standby or manual intervention through cold standby.
+
+It is imperative that changes to system configurations are made with a full understanding of their implications. The user is advised to refer to the comprehensive documentation for detailed explanations of each setting or to seek assistance from technical support for further clarification.
