@@ -58,6 +58,11 @@ For each process, file path controls allow you to specify the directory where th
 
 The page also contains buttons that can be used to manually trigger each of the provisioning mechanisms.
 
+On the right-hand side of the page, you can find the controls for the ID Notify mechanism:
+
+- The ID Import Settings section contains controls to enable/disable the process of importing IDs from CSV files, as well as the path where the files are located and the current status of this process.
+- The ID Export Settings section is similar to the ID Import Settings section, except that its controls apply to the process of exporting CSV files with ID requests.
+
 ## How to use
 
 ### Remotes Page
@@ -75,9 +80,3 @@ The SSPCs Table is populated with data retrieved from the KAFKA broker via the G
 ### Circuits Page
 
 On the **Circuits** page of this connector, you will find the Circuits Overview table, which contains all the information related to the circuits. This table is populated with data retrieved from the provisioning files, which contain information from the database.
-
-
-On the right-hand side of the page, you can find the controls for the ID Notify mechanism:
-
-- The ID Import Settings section contains controls to enable/disable the process of importing IDs from CSV files, as well as the path where the files are located and the current status of this process.
-- The ID Export Settings section is similar to the ID Import Settings section, except that its controls apply to the process of exporting CSV files with ID requests.
