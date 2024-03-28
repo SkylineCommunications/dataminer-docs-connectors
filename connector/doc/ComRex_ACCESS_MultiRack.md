@@ -32,11 +32,11 @@ ACCESS MultiRack is a rackmount IP audio multi-codec, capable of establishing an
 
 #### WebSocket Connections
 
-This connector uses 5 simultanious websocket connections and requires the following input during element creation:
+This connector uses 5 simultaneous WebSocket connections and requires the following input during element creation:
 
 WEBSOCKET CONNECTION:
 
-- **IP address/host**: The polling IP of the device 5 times for every websocket connection.
+- **IP address/host**: The polling IP of the device, for each of the 5 WebSocket connections.
 - **IP port**: The IP port of the device. Required. Range: *81-85*. Default value: *81*.
 
 ### Initialization
@@ -50,17 +50,25 @@ After you click the **Login** button, the **Login Status** will indicate whether
 The element has following data pages:
 
 - **General**: Displays general information about the device.
-- **General/Login**: Contains the WebSocket statusses, Password, Login button, and Login Statusses.
+
+  The **Login** subpage contains the WebSocket status information, the Password box and Login button, and login status information.
 
 - **License Manager**: Shows a list of all the licenses on the device.
-- **Instance Settings**: Shows instance specific settings.
-- **Network Manager**: Shows device wide network settings.
-- **Global Settings**: Shows device wide settings. For example: NTP, AE67, ...
 
-- **Overview**: Shows a tree view with all the instances and there connections, profiles and channels.
+- **Instance Settings**: Shows instance-specific settings.
+
+- **Network Manager**: Shows device-wide network settings.
+
+- **Global Settings**: Shows device-wide settings, such as NTP, AE67, etc.
+
+- **Overview**: Shows a tree view with all the instances and their connections, profiles, and channels.
+
 - **Connections**: Displays the Peers Table. With the right-click menu of the table, you can connect, disconnect, add, edit, or delete a peer.
-- **Profiles:** Contains the Profiles Table.
+
+- **Profiles**: Contains the Profiles Table.
+
 - **Channels**: Displays channels and channel options.
 
 ## Notes
-If a websocket loses connection there is no way to recover it. This means the element will need to be restarted.
+
+If a WebSocket connection is lost, the only way to recover it is to restart the element.
