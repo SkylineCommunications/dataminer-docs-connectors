@@ -4,7 +4,7 @@ uid: Connector_help_Ateme_Titan_Live
 
 # Ateme Titan Live
 
-Through this connector is possible to gather and view information from the device **Ateme Titan Live**. It also gives the possibility to configure the device.
+Through this connector, it is possible to gather and view information from the device **Ateme Titan Live**. It also gives the possibility to configure the device.
 
 ## About
 
@@ -17,9 +17,11 @@ Through this connector is possible to gather and view information from the devic
 | 3.0.0.x | Added HTTP API features | No | Yes |
 | 4.0.0.x | Implemented the full HTTP API | No | Yes |
 | 4.0.1.x |  | No | Yes |
-| 4.0.2.x | No | Yes |  |
-| 4.0.3.x | Corrections to Service output logic. A new primary key format was introduced for all output tables | No | Yes |
-| 4.0.4.x [SLC Main]   | Primary key of trap table changed. Display key unchanged. | No | Yes |
+| 4.0.2.x |  | Yes |  |
+| 4.0.3.x | Corrections to Service output logic. A new primary key format was introduced for all output tables | Yes | Yes |
+| 4.0.4.x | Primary key of trap table changed. Display key unchanged. | Yes | Yes |
+| 4.0.5.x | DCF Rework to create internal connection for services from input (both SDI and IP) to output | Yes | Yes |
+| 4.0.6.x [Main range] | Fix column parameters descriptions according to the guidelines. Add exception values for NTP parameters. | Yes | Yes |
 
 ### Product Info
 
@@ -28,12 +30,18 @@ Through this connector is possible to gather and view information from the devic
 | 1.0.0.x          | -                           |
 | 3.0.0.x          | -                           |
 | 4.0.0.x          | 4.1.10.5                    |
+| 4.0.1.x          | 4.1.10.5                    |
+| 4.0.2.x          | 4.1.10.5                    |
+| 4.0.3.x          | 4.1.10.5                    |
+| 4.0.4.x          | 4.1.10.5                    |
+| 4.0.5.x          | 4.1.10.5                    |
+| 4.0.6.x          | 4.1.10.5                    |
 
 ## Installation and configuration
 
 ### Creation
 
-On connector range 4.0.0.x it only uses HTTP connection.
+From connector range 4.0.0.x it only uses HTTP connection.
 
 ### SNMP Connection
 
