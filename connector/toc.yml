@@ -3554,6 +3554,8 @@
     topicUid: Connector_help_Finnish_Broadcasting_Company_Notification_Manager
   - name: Finnish Broadcasting Company Order Manager
     topicUid: Connector_help_Finnish_Broadcasting_Company_Order_Manager
+  - name: Finnish Broadcasting Company Playout Comparison
+    topicUid: Connector_help_Finnish_Broadcasting_Company_Playout_Comparison
   - name: Finnish Broadcasting Company Statistics Manager
     topicUid: Connector_help_Finnish_Broadcasting_Company_Statistics_Manager
 - name: Fluvius
