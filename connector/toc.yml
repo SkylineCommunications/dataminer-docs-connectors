@@ -2756,6 +2756,10 @@
     topicUid: Connector_help_Elber_RK610
   - name: Elber RK610 - RFSW-04
     topicUid: Connector_help_Elber_RK610_-_RFSW-04
+- name: Elecard
+  items:
+  - name: Elecard Boro Monitoring
+    topicUid: Connector_help_Elecard_Boro_Monitoring
 - name: Electrosys
   items:
   - name: Electrosys G011 FM N+1
