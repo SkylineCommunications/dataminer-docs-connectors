@@ -4,25 +4,15 @@ uid: Connector_help_Elecard_Boro_Monitoring
 
 # Elecard Boro Monitoring
 
-## About
+The Elecard Boro Monitoring connector can be used to gather information from the Elecard Boro Solution Server, as well as to create and manage tasks. This connector uses the control API of the Elecard Boro Solution Server to collect the data and send control signals.
 
-The Elecard Boro Monitoring allows gathering information from the Elecard Boro Solution Server, creating and managing the tasks. This connector uses the control API of Elecard Boro Solution Server to collect the data and send control signals.
+## About
 
 ### Version Info
 
-| Range     | Key Features                                                         |Based on  |System Impact  |
-|-----------|----------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x   | Provides the information about:                                      |-         |-              |
-|           | - existing projects                                                  |          |               |
-|           | - probes (running and stopped)                                       |          |               |
-|           | - current consumption of system resources (CPU, RAM, HDD, NICs usage)|          |               |
-|           | - tasks (running and stopped)                                        |          |               |
-|           | - active alarms                                                      |          |               |
-|           |                                                                      |          |               |
-|           | Allows to:                                                           |          |               |
-|           | - configure alarms individually for each project                     |          |               |
-|           | - create new tasks                                                   |          |               |
-
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Provides information about:<br>- existing projects<br>- probes (running and stopped)<br>- current consumption of system resources (CPU, RAM, HDD, NICs usage)<br>- tasks (running and stopped)<br>- active alarms<br>Allows you to:<br>- configure alarms individually for each project<br>- create new tasks | - | - |
 
 ### Product Info
 
@@ -30,15 +20,13 @@ The Elecard Boro Monitoring allows gathering information from the Elecard Boro S
 |-----------|------------------------|
 | 1.0.0.x   | N/A                    |
 
-
 ### System Info
 
-|Range      |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|-----------|-----------------|---------------------|-------------------|----------------------|
-|1.0.0.x    |No               |Yes                  |-                  |-                     |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
-
-## Installation and Configuration
+## Configuration
 
 ### Connections
 
@@ -48,51 +36,79 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the Boro Solution Server.]
-  - **IP port**: [The IP port of the Boro Solution Server (default 80).]
+- **IP address/host**: The polling IP or URL of the Boro Solution Server.
+- **IP port**: The IP port of the Boro Solution Server (default: *80*).
 
 ### Initialization
 
-[Allow the control API of the Boro Solution Server in Nginx](https://boro.elecard.com/docs/en/boro-solution-userguide/chapter.SolutionSettings/ConfiguringSolution.html#enableapiaccessnginx)
-[Enable the control API of the Boro Solution Server](https://boro.elecard.com/docs/en/boro-solution-userguide/chapter.ControlAPI/General.Information.html)
-[Allow Verify HMAC signatures (optionally, if needed)](https://boro.elecard.com/docs/en/boro-solution-userguide/chapter.ControlAPI/Signing.Requests.html#signingapirequests)
+To make sure the element in DataMiner will function correctly, first perform the following steps:
 
-Upload the protocol to DataMinerCube, specify an IP address/host and an IP port.
+1. [Allow the control API of the Boro Solution Server in Nginx](https://boro.elecard.com/docs/en/boro-solution-userguide/chapter.SolutionSettings/ConfiguringSolution.html#enableapiaccessnginx)
 
-### Redundancy
+1. [Enable the control API of the Boro Solution Server](https://boro.elecard.com/docs/en/boro-solution-userguide/chapter.ControlAPI/General.Information.html)
 
-There is no redundancy defined.
+1. [Allow Verify HMAC signatures](https://boro.elecard.com/docs/en/boro-solution-userguide/chapter.ControlAPI/Signing.Requests.html#signingapirequests) (optionally, if needed)
 
-## How to use
+When this is done, you can create the element with the IP address and port detailed under [Connections](#connections).
+
+Next, on the **Settings** page of the element, specify a **user ID** and an **HMAC authorization token** (in case the digital signature is required, and you have already enabled this setting in the control API). You can get the user ID from the Boro Solution Server. When you have specified these settings, click the green checkmark to confirm your changes. The value you have entered will be displayed in the User ID field.
+
+## How to Use
 
 ### Settings Page
 
-. To start protocol operation specify a User ID that you can get from the Boro Solution Server and a HMAC authorization token (in case the digital signature is required, and you have already enabled this setting in Control API). When a user ID specified, click the green checkmark and confirm changes. After saving, the entered value should be displayed in the field against the User ID.
+On this page, the User ID and Authorization Token From Boro need to be specified (see [Initialization](#initialization)).
 
-. In the Settings page, you can configure alarms individually for each project. For that, select a required project and click the green checkmark for confirmation. The project ID/name should display in the Project ID field. 
+This page also allows you to configure alarms individually for each project. To do so, select a required project in the Project ID field and click the green checkmark to confirm. The project ID/name will then be displayed in the Project ID field.
 
-. All settings are enabled by default for all projects (except for the Level field). The Level field enables us to select alarm level for a project. Using this field, you can configure receiving alarms of Major or Fatal level. 
+Except for the Level setting, all **alarm settings** are by default enabled for all projects. You can use the **Level** setting to select an alarm level for a project. This will for instance allow you to configure to receive alarms of Major or Fatal level only.
 
-. Additionally, you need to remember that all alarms are selected depending on the general settings configuration. In case, you have only QOE and OTT fields enabled, and the Major field is set, then you will receive only QOE and OTT alarms of the Major level.
+All alarms are selected depending on the general settings configuration. In case, for example, you have only QOE and OTT fields enabled, and the Major level is set, you will receive only QOE and OTT alarms of the Major level.
 
-. Click the Save Settings to save and activate your settings. The list of projects will be displayed in accordance with projects in your table.
+When you have changed the alarm settings, remember to click the **Save Settings** button to save and activate your settings. The list of projects will be displayed in accordance with the projects in your table.
 
 ### Projects Page
 
-In the page with projects, the following information is displayed: a project title and ID, a project founder, number of live probes and tasks, total number of live streams. The column header displays the summary values for live probes, tasks, and streams. All projects available for the authorized user will be shown.
+The Projects page displays the following information for each project:
+
+- The project title and ID.
+- The project founder.
+- The number of live probes and tasks.
+- The total number of live streams.
+
+The column header displays the summary values for live probes, tasks, and streams. All projects available for the authorized user will be shown.
 
 ### Probes Page
 
-The page with probes displays project title and probe name, CPU total usage, RAM usage, ratio of RAM Used to RAM Total in percentage, hard disk usage (Disk Used), and amount of available disk space (Disk Available). Network Interfaces table displays probe and interface names, IPV4 and IPV6 addresses, netmask, transmission/receiving data rates.
+This page contains two tables.
 
-### Tasks Page (IPTV, OTT, SRT, RTMP)
+The **Probe Resources Usage** table displays the following information:
 
-The page includes two tables - live tasks and completed tasks (the table of completed tasks is one for all, i.e., the table displays all tasks regardless of the protocol). Tables contains the following information: a probe name, a task name, a task state (Started, Stalled…), a protocol (HLS, DASH, IPTV…), URI, a task start time, an interface name, streaming interface. Node Type shows whether the task is independent (i.e., it does not contain subtasks - SINGLE or ROOT) or a task has subtasks (ROOT, CHILD). You can stop or resume tasks in the Action field.
+- The project title and probe name.
+- The total CPU usage.
+- The RAM usage.
+- The ratio of RAM used to RAM total in percent.
+- The hard disk usage (Disk Used)
+- The and amount of available disk space (Disk Available).
+
+The **Network Interfaces** table displays the probe and interface names, IPV4 and IPV6 addresses, netmask, and transmission/receiving data rates.
+
+### Tasks Pages (IPTV, OTT, SRT, RTMP)
+
+These pages include two tables each, with the live tasks and completed tasks, respectively. The **Completed Tasks Info** table displays all tasks regardless of the protocol.
+
+The tables display the probe name, task name, task state (*Started*, *Stalled*, etc.), protocol (*HLS*, *DASH*, *IPTV*, etc.), URI, task start time, interface name, and streaming interface. In addition, the **Node Type** column shows whether the task is independent (i.e. it does not contain subtasks — SINGLE or ROOT) or it has subtasks (ROOT, CHILD). You can stop or resume tasks with the **Action** field.
 
 ### Active Alarms Page
 
-The page includes the table with active alarms and the table with completed alarms. Both tables contain a project title, the probe name, the task name. Additionally, there is information about a task URI, alarm level (ok, error, warning major, fatal), alarm start time, alarm group (ETH - Ethernet, ETR - TR 101 290, QOE - Quality of experience, OTT - OTT and Progressive Download, SYS - System и SCTE35).
+This page includes a table with active alarms and a table with completed alarms.
+
+Both tables display the project title, probe name, and task name. They also contain information about the task URI, alarm level (*OK*, *error*, *warning*, *major*, or *fatal*), alarm start time, and alarm group (ETH - Ethernet, ETR - TR 101 290, QOE - Quality of experience, OTT - OTT and Progressive Download,  or SYS - System и SCTE35).
 
 ### Start Task Page
 
-The Start Task is designed for a task creation. The form almost completely repeats the process of a task creation in the Boro Solution Server Web-UI. To create a task, fill in the appropriate fields. The process of selecting Project ID, Probe ID and Interface occurs in the following sequence: Project ID → Probe ID → Interface (when choosing, you should click on the green checkmark in the corresponding field to confirm). The Project ID is taken from the projects table. The Probe ID field is selected by the protocol, depending on the previously selected project. Thus, only probes belonging to the project with ID 2 are available. Next, an interface is selected. Interfaces are selected by the protocol, depending on the previously selected probe. Some settings can be selected from the list, while others should be manually specified. Each time, you need to click the green checkmark to save settings. After all settings are made, click the Start Task button to run a task.
+This page is designed for a task creation. It displays a form that allows you to create a task in the same way as in the Boro Solution Server web UI. To create a task, fill in the appropriate fields. First select a **Project ID**, then a **Probe ID**, and then the **Interface**. When you make your selection, always click the green checkmark for the corresponding field to confirm.
+
+The Project ID is taken from the projects table. The Probe ID field is filtered by the connector depending on the selected project. This way, only probes belonging to the project with the selected ID are available. Interfaces are filtered by the protocol depending on the selected probe.
+
+Some settings can be selected from a list, while others should be specified manually. Each time, you need to click the green checkmark to save your settings. When all settings have been configured, click the **Start Task** button to run a task.
