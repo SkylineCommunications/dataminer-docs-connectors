@@ -2994,6 +2994,8 @@
     topicUid: Connector_help_ETL_Systems_2776
   - name: ETL Systems ALT-C300
     topicUid: Connector_help_ETL_Systems_ALT-C300
+  - name: ETL Systems ALTO C304
+    topicUid: Connector_help_ETL_Systems_ALTO_C304
   - name: ETL Systems Genus
     topicUid: Connector_help_ETL_Systems_Genus
   - name: ETL Systems Genus - 22544
