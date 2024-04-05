@@ -87,7 +87,7 @@ It also contains the following buttons:
 
 ### OpenConfig
 
-Version 3.0.5.x of the connector introduces support for **OpenConfig**. You can update some columns from the **Detailed Interface**, **Rx Interface**, and **Tx Interface** tables. OpenConfig should only be used with CISCO Nexus devices running version 10.2(7)/10.3(4) or higher. When using OpenConfig in a DataMiner system with multiple agents ensure you only have one Communication Gateway DxM active in the system (pending fix to avoid that every Communication Gateway will make a connection).
+Version 3.0.5.x of the connector introduces support for **OpenConfig**. You can update some columns from the **Detailed Interface**, **Rx Interface**, and **Tx Interface** tables.
 
 When this is used, the data from SNMP will be removed in those tables and filled in with the values from OpenConfig.
 
@@ -98,6 +98,9 @@ To configure OpenConfig, fill in these parameters on the **OpenConfig Settings**
 - Data Source User Name
 - Data Source Password
 - Client Certificate (optional)
+
+> [!NOTE]
+> OpenConfig should only be used with CISCO Nexus devices running version 10.2(7)/10.3(4) or higher. When OpenConfig is used in a DataMiner System with multiple Agents, you currently have to make sure you only have one Communication Gateway DxM active in the system (pending a fix to avoid that every Communication Gateway will make a connection).
 
 ### Sensor
 
