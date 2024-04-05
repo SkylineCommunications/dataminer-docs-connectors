@@ -10,11 +10,11 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 
 ### Version Info
 
-| Range              | Key Features       | Based on | System Impact |
-|--------------------|--------------------|----------|---------------|
-| 1.0.0.x            | Initial version    | -        | -             |
-| 1.0.1.x            | Connector overhaul | 1.0.0.7  | -             |
-| 1.0.2.x [SLC Main] | New range for unicode | 1.0.1.2  | -             |
+| Range              | Key Features          | Based on | System Impact |
+|--------------------|-----------------------|----------|---------------|
+| 1.0.0.x            | Initial version       | -        | -             |
+| 1.0.1.x            | Connector overhaul    | 1.0.0.7  | -             |
+| 1.0.2.x [SLC Main] | New range for Unicode | 1.0.1.2  | -             |
 
 ### Product Info
 
