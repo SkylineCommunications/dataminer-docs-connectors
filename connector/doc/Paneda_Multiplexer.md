@@ -66,8 +66,10 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-On the **General** page of this connector, you can configure the **API Token** and **Provider** to access the device.
+On the **General** page of this connector, you can configure the **API Token** and **Provider** to access the device. You have the ability to show or hide the **Service Configuration** page in the connector.
 
 The **Debug** page contains basic information about the communication with the device, as well as specific logs for every entry.
 
-The other pages contain status information for the multiplexer and general information.
+The **Service Configuration** page contains raw information regarding input sources, encoder profiles, MSC items, MSC layouts and the active service configuration. Furthermore, the connector contains controls the create new input sources, encoder profiles, MSC items, MSC layouts and the ability to activate an existing MSC layout. These controls can be used in a manual way. However as these all require JSON snippets, they can also be set by an external script (not part of the connector).
+
+The remaining pages contain status information for the multiplexer and general information.
