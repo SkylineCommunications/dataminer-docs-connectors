@@ -10,10 +10,11 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 
 ### Version Info
 
-| Range              | Key Features       | Based on | System Impact |
-|--------------------|--------------------|----------|---------------|
-| 1.0.0.x            | Initial version    | -        | -             |
-| 1.0.1.x [SLC Main] | Connector overhaul | 1.0.0.7  | -             |
+| Range              | Key Features          | Based on | System Impact |
+|--------------------|-----------------------|----------|---------------|
+| 1.0.0.x            | Initial version       | -        | -             |
+| 1.0.1.x            | Connector overhaul    | 1.0.0.7  | -             |
+| 1.0.2.x [SLC Main] | New range for Unicode | 1.0.1.2  | -             |
 
 ### Product Info
 
@@ -21,6 +22,7 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 |-----------|------------------------|
 | 1.0.0.x   | API Version: 5.0       |
 | 1.0.1.x   | API Version: 5.0       |
+| 1.0.2.x   | API Version: 5.0       |
 
 ### System Info
 
@@ -28,6 +30,7 @@ This is an HTTP-based connector that can be used to monitor and configure the **
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
