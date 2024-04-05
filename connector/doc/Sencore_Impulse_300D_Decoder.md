@@ -4,15 +4,17 @@ uid: Connector_help_Sencore_Impulse_300D_Decoder
 
 # Sencore Impulse 300D Decoder
 
-**Impulse 300D Decoder** offers a large range output ports including SDI, HDMI®, and even analog video with RCA stereo for legacy applications. The **Sencore Impulse 300D Decoder** connector monitors and provides settings for the device through SNMP in range 1.0.x.x. and HTTP in range 1.1.x.x.
+The **Impulse 300D Decoder** offers a large range of output ports including SDI, HDMI, and analog video with RCA stereo for legacy applications.
+
+The **Sencore Impulse 300D Decoder** connector monitors and provides settings for the device. In range 1.0.x.x, SNMP communication is used for this, while range 1.1.x.x uses HTTP.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**                                          | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version.                                          | -            | -                 |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
@@ -31,7 +33,7 @@ uid: Connector_help_Sencore_Impulse_300D_Decoder
 
 ### Connections
 
-#### HTTP Main connection
+#### HTTP Main connection (Range 1.1.0.x)
 
 In range 1.1.0.x, this connector uses an HTTP connection and requires the following input during element creation:
 
@@ -43,7 +45,7 @@ HTTP CONNECTION:
 - **Number of Retries**: The number of retries for HTTP commands. This should be set to "0" for write parameters to work properly.
 - **Timeout of a single command (ms)**: The time between HTTP commands. This should be set to "10000" for write parameters to work properly.
 
-#### SNMP Connection
+#### SNMP Connection (Range 1.0.0.x)
 
 In range 1.0.0.x, this connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -59,13 +61,9 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
+### Initialization (Range 1.1.0.x)
 
-See "1.1.0.x range" below.
-
-### Redundancy
-
-There is no redundancy defined.
+See [HTTP Version: Authentication](#http-version-authentication-110x-range).
 
 ### Web Interface
 
@@ -77,7 +75,7 @@ The web interface is only accessible when the client machine has network access 
 
 For the 1.0.0.x branch, the Sencore OmniHub has a limited SNMP feature set. Parameters are limited to status and configuration parameters defined in a limited MIB, and SNMP traps are not supported.
 
-Each page contains information related to the OmniHub device such as the IP inputs and outputs, which can be configured in the associated **Settings** table.
+Each page contains information related to the OmniHub device, such as the IP inputs and outputs, which can be configured in the associated **Settings** table.
 
 ### HTTP Version: Authentication (1.1.0.x Range)
 
