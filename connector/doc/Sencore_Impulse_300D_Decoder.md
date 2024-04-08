@@ -61,7 +61,8 @@ SNMP Settings:
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Initialization (Range 1.0.0.x)
-You need to specify a username and password on the **Authentication** page of the element.
+
+On the **Authentication** page of the element, specify a username and password.
 
 ### Web Interface
 
