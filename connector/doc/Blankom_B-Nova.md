@@ -65,8 +65,6 @@ This page displays general information about the device:
 - **Software Version**
 - **Up Time**
 - **Cumulative Uptime**
-- **Redundancy Status**
-- **General Status**
 - **Development Mode** (when this is enabled, the Status Codes page is displayed for debugging traps and alarm descriptions)
 
 ### Interfaces
@@ -74,25 +72,26 @@ This page displays general information about the device:
 This page displays detailed information about the available interfaces. You can also set the rate calculation method for the Interfaces table.
 
 - The **Interfaces Table** displays information such as the interface alias, type, MTU, speed, in bit rate, out bit rate, physical address, status, etc.
-- The **Signal Physical Table** displays signal quality information per module interface (SNR, error counts, bit error rates, and Viterbi bit error rates).
 - The **Transfer Table** provides information on data transfer per module.
-- The **Pro Mpeg Fec Table** provides information about media stream packets that are received, corrected, duplicated, reordered, etc.
 
 Two subpages are available:
 
-- **Display Key Settings**: Allows you to create custom display keys for the Interfaces Table and the Signal Physical Table. You can select how the display key will be formed. Note that changing the display key can result in loss of trend data.
+- **Display Key Settings**: Allows you to create custom display keys for the Interfaces Table. You can select how the display key will be formed. Note that changing the display key can result in loss of trend data.
 
 - **Raw Tables**: Displays three tables with raw values related to interfaces that are retrieved from the device.
 
-### Traps and Alarming
+### Alarm Traps
 
 On this page, the **Current Alarm Table** lists all alarms active on the device. The active alarms and the **Current Alarm State** can be monitored (with an alarm template), and you can use the **Alarm Description** as a filter in the alarm template. You can also select the display column format for service alarms in the **Service Alarms Description Format** dropdown list.
 
 With the exception of a **Coldstart** alarm, alarms will be cleared automatically from the table. You can also manually remove an alarm from the table with the **Remove** button.
 
-The page also displays notification data about the alarm severity, the module that caused an alarm, the description, the reason, and the notification parameter table.
-
 A subpage is available with settings for the **automatic cleanup** process for the **Current Alarm Table**. You can select a **maximum number** of alarms and/or a **maximum number of days** to keep alarms in the table.
+
+
+### Notification Traps
+
+The page displays notification data about the alarm severity, the module that caused an alarm, the description, the reason, and the notification parameter table.
 
 ### Log
 
