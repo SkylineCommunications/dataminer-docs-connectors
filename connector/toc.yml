@@ -2756,6 +2756,10 @@
     topicUid: Connector_help_Elber_RK610
   - name: Elber RK610 - RFSW-04
     topicUid: Connector_help_Elber_RK610_-_RFSW-04
+- name: Elecard
+  items:
+  - name: Elecard Boro Monitoring
+    topicUid: Connector_help_Elecard_Boro_Monitoring
 - name: Electrosys
   items:
   - name: Electrosys G011 FM N+1
@@ -3398,6 +3402,10 @@
     topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC
   - name: Evertz 7x00 General Platform  - 7880IPASIIP
     topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
+  - name: Evertz 9000RF-Probe
+    topicUid: Connector_help_Evertz_9000RF-Probe
+  - name: Evertz 9000RF-Probe - Channel
+    topicUid: Connector_help_Evertz_9000RF-Probe_-_Channel
   - name: Evertz BPXRF
     topicUid: Connector_help_Evertz_BPXRF
   - name: Evertz DEC7882H264
@@ -3554,6 +3562,8 @@
     topicUid: Connector_help_Finnish_Broadcasting_Company_Notification_Manager
   - name: Finnish Broadcasting Company Order Manager
     topicUid: Connector_help_Finnish_Broadcasting_Company_Order_Manager
+  - name: Finnish Broadcasting Company Playout Comparison
+    topicUid: Connector_help_Finnish_Broadcasting_Company_Playout_Comparison
   - name: Finnish Broadcasting Company Statistics Manager
     topicUid: Connector_help_Finnish_Broadcasting_Company_Statistics_Manager
 - name: Fluvius

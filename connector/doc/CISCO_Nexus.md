@@ -99,6 +99,9 @@ To configure OpenConfig, fill in these parameters on the **OpenConfig Settings**
 - Data Source Password
 - Client Certificate (optional)
 
+> [!NOTE]
+> OpenConfig should only be used with CISCO Nexus devices running version 10.2(7)/10.3(4) or higher. When OpenConfig is used in a DataMiner System with multiple Agents, you currently have to make sure you only have one Communication Gateway DxM active in the system (pending a fix to avoid that every Communication Gateway will make a connection).
+
 ### Sensor
 
 This page contains the **Sensor table**, which lists the type, scale, and the present value of each sensor.
