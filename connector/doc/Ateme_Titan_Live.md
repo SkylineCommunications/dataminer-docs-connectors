@@ -109,15 +109,13 @@ From version 4.0.0.8 onwards, a **Manage** button is available for the services,
 
 From version 4.0.0.2 onwards, you can change the format of the SDI input port name. For legacy reasons, this cannot be changed automatically. The old format is `sdi-card-x Input y`; the new format is `sdi-card-x/y`.
 
-### Services Overview Page (Version 4.0.0.2 or Higher)
+### Services Overview Page (Version 4.0.0.x or Higher)
 
 This page contains a graphical overview of the transport stream structure, with the audio, video, and data streams.
 
-It contains a link to the **Service Tables** subpage.
+### Services Output (Version 4.0.0.x or Higher)
 
-### Service Tables (Version 4.0.0.2 or Higher)
-
-This page contains the tables that are also shown in a tree control: **Services**, **Output Transport Streams**, **Output Audio Parameters**, **Output Video Parameters**, and **Output Data Parameters**.
+This page contains the tables that are also shown in a tree control: **Services**, **Output Transport Streams**, **Output Audio Parameters**, **Output Video Parameters**, **Output Data Parameters** and **Output Streams Interfaces**.
 
 - The **Services** table contains information such as the **Status**, the **Streaming Status**, **Input Type**, **Output**, and **Video Format**.
 
@@ -129,9 +127,9 @@ This page contains the tables that are also shown in a tree control: **Services*
 
 - The **Output Data Parameters** table contains information about each output data stream, such as the **Codec**.
 
-In version 4.0.2.1, **Service Tables** is renamed to **Services Output Tables**.
+- The **Output Streams Interfaces** table contains information about each output stream interface, such as the **Output URL** and **Output Stream Interface**.
 
-### Service Input Tables (Version 4.0.2.1 or higher)
+### Services Input (Version 4.0.0.x or Higher)
 
 This page contains the tables that can be used to reconfigure the settings of the IP inputs services: Active Input, TS Smoothing, TS Sync Loss Failover and Timeout, Sync Bytes Erros Failover, PAT Failover and Maximum time between 2 PAT, PMT Failover and Maximum time between 2 PMT, PID Errors Failover and Maximum time between 2 PID, Continuity Failover, Timeframe and Threshold.
 
