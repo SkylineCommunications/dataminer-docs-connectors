@@ -51,9 +51,9 @@ From connector range 4.0.0.x onwards, only an HTTP connection is used.
 
 **SNMP Settings:**
 
-- **Port number**: the port of the connected device, default 161
-- **Get community string**: the community string in order to read from the device. The default value is public.
-- **Set community string**: the community string in order to set to the device. The default value is private.
+- **Port number**: The port of the connected device, default 161
+- **Get community string**: The community string in order to read from the device. The default value is public.
+- **Set community string**: The community string in order to set to the device. The default value is private.
 
 #### HTTP Connection
 
@@ -115,7 +115,7 @@ This page contains a graphical overview of the transport stream structure, with 
 
 ### Services Output (Version 4.0.0.x or Higher)
 
-This page contains the tables that are also shown in a tree control: **Services**, **Output Transport Streams**, **Output Audio Parameters**, **Output Video Parameters**, **Output Data Parameters** and **Output Streams Interfaces**.
+This page contains the tables that are also shown in a tree control: **Services**, **Output Transport Streams**, **Output Audio Parameters**, **Output Video Parameters**, **Output Data Parameters**, and **Output Streams Interfaces**.
 
 - The **Services** table contains information such as the **Status**, the **Streaming Status**, **Input Type**, **Output**, and **Video Format**.
 
@@ -131,7 +131,7 @@ This page contains the tables that are also shown in a tree control: **Services*
 
 ### Services Input (Version 4.0.0.x or Higher)
 
-This page contains the tables that can be used to reconfigure the settings of the IP inputs services: Active Input, TS Smoothing, TS Sync Loss Failover and Timeout, Sync Bytes Erros Failover, PAT Failover and Maximum time between 2 PAT, PMT Failover and Maximum time between 2 PMT, PID Errors Failover and Maximum time between 2 PID, Continuity Failover, Timeframe and Threshold.
+This page contains the tables that can be used to reconfigure the settings of the IP inputs services, including the Active Input, TS Smoothing, TS Sync Loss Failover and Timeout, and more.
 
 ### Hardware Monitoring Page
 
