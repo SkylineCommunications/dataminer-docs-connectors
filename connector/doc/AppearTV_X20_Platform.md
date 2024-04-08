@@ -43,7 +43,7 @@ The connector **sequentially** requests information from the device, processes t
 | 1.2.1.x | 2.x.x |
 | 1.2.2.x | 2.x.x |
 | 1.2.3.x | 2.x.x |
-| 1.2.4.x 2.0.3.x | - MMI (IP Switch Control): 2.x.x and higher (MMI 2.8+) <br>- IP Switch / Dual IP (SWx/IPx): 2.x.x and higher (IpGateway 1.11+) <br>- IP 2022 Encoder (ECx2): 3.x.x and higher (XGer 2.17+) <br>- SDI Encoder/Decoder (ECx1): 5.6.x and higher (XGer 2.17+) <br>- ASI IO (SIx): 2.4.x and higher (Asi 1.11+) <br>- SDI IO (SIx): 2.4.x and higher (Sdi 1.11+) <br>- DVB-S2 (SRx): 2.2.x and higher (S2xIn 1.3+) <br>- Descrambler (DSx): 2.0.x and higher (Descr 1.1+) <br>- Scrambler (CAx): 2.0.x and higher (Scr 1.5+) |
+| 1.2.4.x/2.0.3.x | - MMI (IP Switch Control): 2.x.x and higher (MMI 2.8+) <br>- IP Switch / Dual IP (SWx/IPx): 2.x.x and higher (IpGateway 1.11+) <br>- IP 2022 Encoder (ECx2): 3.x.x and higher (XGer 2.17+) <br>- SDI Encoder/Decoder (ECx1): 5.6.x and higher (XGer 2.17+) <br>- ASI IO (SIx): 2.4.x and higher (Asi 1.11+) <br>- SDI IO (SIx): 2.4.x and higher (Sdi 1.11+) <br>- DVB-S2 (SRx): 2.2.x and higher (S2xIn 1.3+) <br>- Descrambler (DSx): 2.0.x and higher (Descr 1.1+) <br>- Scrambler (CAx): 2.0.x and higher (Scr 1.5+) |
 | 2.0.0.x | 2.x.x |
 | 2.0.1.x | 2.x.x |
 | 2.0.2.x | 2.x.x |
