@@ -582,6 +582,8 @@
     topicUid: Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_IP_Switch
   - name: AppearTV X20 Platform - AppearTV X20 Multituner Sat Demod
     topicUid: Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_Multituner_Sat_Demod
+  - name: AppearTV X20 Platform - AppearTV X20 Scrambler
+    topicUid: Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_Scrambler
   - name: AppearTV X20 Platform - AppearTV X20 SDI IO
     topicUid: Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_SDI_IO
   - name: AppearTV X20 Platform - AppearTV X20 Transcoder
