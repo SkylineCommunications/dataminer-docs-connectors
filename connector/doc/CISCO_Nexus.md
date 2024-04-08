@@ -23,7 +23,7 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 | 3.0.3.x **[Obsolete - see 3.0.4.x]** | Reworked VTP VLAN table to support both SNMP and NX API polling. | Yes | Yes |
 | 3.0.4.x | Improved display keys of RTP Flow and RTP Flow Errors tables. | Yes | Yes |
 | 3.0.5.x [SLC Main] | OpenConfig implementation. | Yes | Yes |
-| 3.0.6.x | Added VRF group information and rework for IGMP table, Multicast Route Detail table, and BGP Peer tables. | Yes |Yes |
+| 3.0.6.x | Added VRF group information and reworked IGMP table, Multicast Route Detail table, and BGP Peer table. | Yes |Yes |
 | 4.0.0.x | SNMPv3 version (based on version 1.0.0.9). | No | Yes |
 
 ### Product Info
