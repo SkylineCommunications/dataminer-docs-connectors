@@ -88,7 +88,6 @@ With the exception of a **Coldstart** alarm, alarms will be cleared automaticall
 
 A subpage is available with settings for the **automatic cleanup** process for the **Current Alarm Table**. You can select a **maximum number** of alarms and/or a **maximum number of days** to keep alarms in the table.
 
-
 ### Notification Traps
 
 The page displays notification data about the alarm severity, the module that caused an alarm, the description, the reason, and the notification parameter table.
