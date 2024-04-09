@@ -622,6 +622,8 @@
     topicUid: Connector_help_Aritech_Access
 - name: Arqiva
   items:
+  - name: Arqiva DAB Data Collector
+    topicUid: Connector_help_Arqiva_DAB_Data_Collector
   - name: Arqiva Radio Trap Receiver
     topicUid: Connector_help_Arqiva_Radio_Trap_Receiver
 - name: Arris
