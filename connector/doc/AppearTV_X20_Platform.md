@@ -8,7 +8,7 @@ The AppearTV X20 Platform connector can be used to configure and display informa
 
 On the US market, the same chassis is also offered by Sencore. Under the Sencore brand, it is offered with the following model names: **Sencore DMG-3200** (X10 Chassis), **Sencore DMG-4100**, and **Sencore DMG-4200** (X20 Chassis).
 
-It allows manual creation of DVEs for **IP Switch**, **Dual IP**, **SDI IO, Encoder, Decoder, Transcoder, DVB**, and **Descrambler** cards connected to the slots of the device (see "Exported Connectors" table below).
+It allows manual creation of DVEs for **IP Switch**, **Dual IP**, **SDI IO, Encoder, Decoder, Transcoder, DVB, Descrambler**, and **Scrambler** cards connected to the slots of the device (see "Exported Connectors" table below).
 
 The connector uses an **HTTP** connection. This connection uses the MMI, IpGateway, XGER, ASI, and SDI APIs to retrieve information and to configure the device. The information transfer is performed using JSON.
 The connector **sequentially** requests information from the device, processes the responses and displays the results. It is possible to send configuration requests and receive the updated results.
@@ -43,7 +43,7 @@ The connector **sequentially** requests information from the device, processes t
 | 1.2.1.x | 2.x.x |
 | 1.2.2.x | 2.x.x |
 | 1.2.3.x | 2.x.x |
-| 1.2.4.x 2.0.3.x | - MMI (IP Switch Control): 2.x.x and higher (MMI 2.8+) <br>- IP Switch / Dual IP (SWx/IPx): 2.x.x and higher (IpGateway 1.11+) <br>- IP 2022 Encoder (ECx2): 3.x.x and higher (XGer 2.17+) <br>- SDI Encoder/Decoder (ECx1): 5.6.x and higher (XGer 2.17+) <br>- ASI IO (SIx): 2.4.x and higher (Asi 1.11+) <br>- SDI IO (SIx): 2.4.x and higher (Sdi 1.11+) <br>- DVB-S2 (SRx): 2.2.x and higher (S2xIn 1.3+) <br>- Descrambler (DSx): 2.0.x and higher (Descr 1.1+) |
+| 1.2.4.x/2.0.3.x | - MMI (IP Switch Control): 2.x.x and higher (MMI 2.8+) <br>- IP Switch / Dual IP (SWx/IPx): 2.x.x and higher (IpGateway 1.11+) <br>- IP 2022 Encoder (ECx2): 3.x.x and higher (XGer 2.17+) <br>- SDI Encoder/Decoder (ECx1): 5.6.x and higher (XGer 2.17+) <br>- ASI IO (SIx): 2.4.x and higher (Asi 1.11+) <br>- SDI IO (SIx): 2.4.x and higher (Sdi 1.11+) <br>- DVB-S2 (SRx): 2.2.x and higher (S2xIn 1.3+) <br>- Descrambler (DSx): 2.0.x and higher (Descr 1.1+) <br>- Scrambler (CAx): 2.0.x and higher (Scr 1.5+) |
 | 2.0.0.x | 2.x.x |
 | 2.0.1.x | 2.x.x |
 | 2.0.2.x | 2.x.x |
@@ -60,6 +60,7 @@ The connector **sequentially** requests information from the device, processes t
 | [AppearTV X20 Platform - AppearTV X20 Transcoder](xref:Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_Transcoder) | Displays information and settings regarding the transcoded services per slot. |
 | [AppearTV X20 Platform - AppearTV X20 Multituner Sat Demod](xref:Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_Multituner_Sat_Demod) | Displays information and settings regarding satellite demodulator cards. |
 | [AppearTV X20 Platform - AppearTV X20 Descrambler](xref:Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_Descrambler) | Displays information and settings regarding all descrambled services. |
+| [AppearTV X20 Platform - AppearTV X20 Scrambler](xref:Connector_help_AppearTV_X20_Platform_-_AppearTV_X20_Scrambler) | Displays information and settings regarding all scrambled services. |
 
 ## Configuration
 
