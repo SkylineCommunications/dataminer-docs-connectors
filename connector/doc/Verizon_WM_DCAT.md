@@ -10,11 +10,11 @@ This connector is intended to handle the Verizon Circuit Acceptance (DCAT) workf
 
 ### Version Info
 
-| Range            | Key Features                                      | Based on | System Impact |
-|----------------------|-------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x    | Initial version                                       | -            | -                 |
-| 1.0.1.x    | Updated minimum DataMiner version to 10.0.10.0 - 9454 | 1.0.0.12     | -                 |
-| 1.0.2.x [SLC Main]   | Removed Session ID Columns from all the tables, and Migrate UI from visio to LCA | 1.0.1.8     | -                 |
+| Range              | Key Features                                                               | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                           | -        | -             |
+| 1.0.1.x            | Updated minimum DataMiner version to 10.0.10.0 - 9454.                     | 1.0.0.12 | -             |
+| 1.0.2.x [SLC Main] | Session ID columns removed from all tables. UI migrated from Visio to LCA. | 1.0.1.8  | -             |
 
 ### Product Info
 
@@ -23,14 +23,13 @@ This connector is intended to handle the Verizon Circuit Acceptance (DCAT) workf
 | 1.0.0.x   | N/A                    |
 | 1.0.1.x   | N/A                    |
 
-
 ### System Info
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
 | 1.0.0.x | No | Yes | Automation Scripts: <br>- Verizon DCAT OnAccept <br>- Verizon DCAT OnAcceptExecute <br>- Verizon DCAT OnExecute <br>- Verizon DCAT OnResult <br>- Verizon DCAT OnScheduledExecute <br>- Verizon DCAT OnScheduledExecuteReport <br>Visio file: <br>DM Tools <br>Report template: <br>VRZ RDS DCAT | - |
 | 1.0.1.x | No | Yes | Automation Scripts: <br>- Verizon DCAT OnAccept <br>- Verizon DCAT OnAcceptExecute <br>- Verizon DCAT OnExecute <br>- Verizon DCAT OnResult <br>- Verizon DCAT OnScheduledExecute <br>- Verizon DCAT OnScheduledExecuteReport <br>Visio file: <br>DM Tools <br>Report template: <br>VRZ RDS DCAT | - |
-| 1.0.2.x | No | Yes | Automation Scripts: <br>- Verizon DCAT OnAccept <br>- Verizon DCAT OnAcceptExecute <br>- Verizon DCAT OnExecute <br>- Verizon DCAT OnResult <br>- Verizon DCAT OnScheduledExecute <br>- Verizon DCAT OnScheduledExecuteReport <br>LCA: <br>DCAT | - |
+| 1.0.2.x | No | Yes | Automation Scripts: <br>- Verizon DCAT OnAccept <br>- Verizon DCAT OnAcceptExecute <br>- Verizon DCAT OnExecute <br>- Verizon DCAT OnResult <br>- Verizon DCAT OnScheduledExecute <br>- Verizon DCAT OnScheduledExecuteReport <br>LCA: <br>- DCAT | - |
 
 ## Configuration
 
@@ -79,15 +78,15 @@ This connector uses a configuration page that should be set up in order to work 
 - **Verizon DCAT OnScheduledExecute**: This script needs to be triggered via DataMiner Scheduler, which will need to be configured. The script passes blank data to WM DCAT to retrieve new and unprocessed circuits to perform a live execution with a default profile. It generates a report with the results of all validated circuits.
 - **Verizon DCAT OnScheduledExecuteReport**: This script is triggered by the Verizon DCAT OnScheduledExecute script. It parses the information of the generated report and sends it by email to the configured email list.
 
-### Low Code App
+### Low-Code App
 
-- **DCAT**: This app allows users to perform the live and history execution. In addition, circuits can be grouped by NMS, customer, or individual circuits, and users can configure a range of dates to perform the validation, the report format, the profile, and selected metrics and faults. The LCA app will allow the user to trigger the necessary Automation scripts to perform the workflows.
+- **DCAT**: This app allows users to perform the live and history execution. In addition, circuits can be grouped by NMS, customer, or individual circuit, and users can configure a range of dates for the validation, the report format, the profile, and selected metrics and faults. The low-code app will allow users to trigger the necessary Automation scripts to perform the workflows.
 
 ## How to use
 
-The Verizon WM DCAT connector is meant to be used as a way to check the results and history of circuit analysis from the DCAT low code app.
+The Verizon WM DCAT connector is meant to be used as a way to check the results and history of circuit analysis from the DCAT low-code app.
 
-From the DCAT app, circuits are selected for which the analysis should be run. Once the analysis is complete, entries will be added to the DCAT Live and DCAT History.
+From the DCAT app, circuits are selected for which the analysis should be run. Once the analysis is complete, entries will be added to the DCAT Live and DCAT History tables.
 
 The **DCAT History** table contains entries that display when each report was executed. It is a more condensed version of the **DCAT Live** table, which contains the same information including the results of the analysis.
 
