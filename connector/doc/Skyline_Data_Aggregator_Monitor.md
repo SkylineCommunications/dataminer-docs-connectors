@@ -10,10 +10,10 @@ This connector is responsible for continuously monitoring the status of jobs def
 
 ### Version Info
 
-| Range                | Key Features                                          | Based on           | System Impact                           |
-|----------------------|-------------------------------------------------------|--------------------|-----------------------------------------|
-| 1.0.0.x [SLC Main]   | Initial version                                       | -                  | -                                       |
-| 1.1.0.x [SLC Main]   | New driver range compatible with Data Aggregator 3.x  | 1.0.0.2            | Does not support versions prior to 3.x. |
+| Range                | Key Features                                    | Based on           | System Impact                           |
+|----------------------|-------------------------------------------------|--------------------|-----------------------------------------|
+| 1.0.0.x [SLC Main]   | Initial version.                                | -                  | -                                       |
+| 1.1.0.x [SLC Main]   | New range compatible with Data Aggregator 3.x.  | 1.0.0.2            | Does not support versions prior to 3.x. |
 
 ### System Info
 
