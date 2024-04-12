@@ -25,18 +25,9 @@ The connector can be used as a remote control for the **Miteq NSU1** device, and
 
 ### System Info
 
-In this subsection, insert a table with five columns. Indicate whether the range features **DCF integration** and whether it is **Cassandra compliant**.
-
-In the "Linked Components"; column, list all DataMiner components that have a link, in any way, with this connector range, e.g. mediation connectors, Automation scripts, custom report, etc.
-
-In the "Exported Components" column, list all the connectors that are exported by the parent connector in question.
-**This can only be omitted for an exported connector or for a connector that cannot have exported connectors.**
-
 |Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
 |---------|---------|---------|---------|---------|
 |1.0.0.x    |No       |Yes         |-         |   |
-
-### Configuration
 
 ## Connections
 
@@ -44,7 +35,6 @@ In the "Exported Components" column, list all the connectors that are exported b
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the device.
 - **IP port**: The IP port of the device.
