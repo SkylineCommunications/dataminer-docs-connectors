@@ -4,23 +4,23 @@ uid: Connector_help_RCN_Event_Router_Management
 
 # RCN Event Router Management
 
-This is a router management system connector that checks all events from the user database, displays them in the connector, and creates the appropriate scheduler tasks that will execute the script to switch the crosspoints on the routers.
+This is a router management system connector that checks all events from the user database, displays them in the connector, and creates the appropriate scheduled tasks that will execute the script to switch the crosspoints on the routers.
 
-The key objectives of the connector is to collect all relevant events and switch appropriate crospoints on defined routers. The whole process is being monitored.
+The key objectives of the connector are to collect all relevant events and switch appropriate crosspoints on defined routers. The whole process can be monitored.
 
 ## About
 
 ### Version Info
 
-| Range            | Key Features | Based on | System Impact |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-| Range | Supported Firmware |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
@@ -38,37 +38,42 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-User need to fill database credentials on DataBase Configuration page before any actions.
-Database credentials: Server Address, Port, User Name, Password.
+Before you start using the element, on the **Database Configuration** page, fill in the following database credentials: **Server Address**, **Port**, **User Name**, and **Password**.
 
-## How to use
+## How to Use
 
-After you have correctly initialized the connector as described above, you will find all daily events on **Events page**.
+### Events Page
+
+After you have correctly initialized the connector as described above, you will find all daily events on the Events page.
 
 Events can be in following states:
 
-              1)Pending - Scheduler task is created.
-  
-              2)Running - Script is executed and crosspoint is set successfully.
-  
-              3)Completeed - Script is executed and router is switch to CBG.
-              
-              4)Failed To Run - Script is executed but set on router failed.
-              
-              5)Failed Swtich To CBG - Script is executed but switch to CBG on router failed.
-  
+- *Pending*: A scheduled task has been created.
 
-Events page has Weekly Events, Completed Events and Logging subpages.
+- *Running*: The script has been executed, and the crosspoint has successfully been set.
 
-**Weekly Events** subpage contains Weekly Events table which displays all events for next 7 days.
-**Completed Events** subpage displays all completed events in Completed Events table.
-On **Logging** subpage user can found all logging about manual actions from element or message which will give a more context why switch failed.
+- *Completed*: The script has been executed, and the router has switched to CBG.
 
-On **General** page user can see listed all customers with configuration of related router element to that customer. User can specify destination, source and CBG ports.
+- *Failed To Run*: The script has been executed, but the set on the router failed.
 
-**Database Configuration** contains all necessary data to establish a connection with the user's database.
+- *Failed Switch To CBG*: The script has been executed, but the switch to CBG on the router failed.
+
+The Events page also has several subpages:
+
+- **Weekly Events**: Contains a table listing all events for the next 7 days.
+- **Completed Events**: Contains a table listing all completed events.
+- **Logging**: Displays the logging for manual actions from the element or a message with more information about why a switch failed.
+
+### General Page
+
+The General page lists all customers with the configuration of the router element related to that customer.
+
+You can specify the destination, source, and CBG ports.
+
+### Database Configuration
+
+The Database Configuration page contains the parameters required to establish a connection with the database (see [Initialization](#initialization)).
 
 ## Notes
 
-Dates and Times in Daily Events, Weekly Events and Completed events tables are stored like we get it from database. However, that time has difference with server time with offset of 3 hours.
-Database use Eastern time, server use Pacific time.
+Dates and times in the Daily Events, Weekly Events, and Completed Events tables are stored as they were retrieved from the database. However, note that the time has a difference of 3 hours with the server time. The database use Eastern time, while the server use Pacific time.
