@@ -5602,6 +5602,8 @@
     topicUid: Connector_help_Miteq_LN2-177220-120
   - name: Miteq NSU1
     topicUid: Connector_help_Miteq_NSU1
+  - name: Miteq NSU1 SNMP
+    topicUid: Connector_help_Miteq_NSU1_SNMP
   - name: Miteq NSU2-C
     topicUid: Connector_help_Miteq_NSU2-C
   - name: Miteq NSU2
