@@ -24,4 +24,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The connector contains mainly monitoring KPIs with the possibility of configuring other data, like the Input Video Source, Video Alarms settings, or Output Video Routing.
+The element will mainly display monitoring KPIs. You can also configure data like the Input Video Source, Video Alarms settings, or Output Video Routing.
