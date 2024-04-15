@@ -2162,6 +2162,10 @@
     topicUid: Connector_help_Coba_BMS
 - name: Cobalt Digital
   items:
+  - name: Cobalt Digital BBG-1300-FR
+    topicUid: Connector_help_Cobalt_Digital_BBG-1300-FR
+  - name: Cobalt Digital BBG-1300-FR - 9940-ACO
+    topicUid: Connector_help_Cobalt_Digital_BBG-1300-FR_-_9940-ACO
   - name: Cobalt Digital HPF 9000
     topicUid: Connector_help_Cobalt_Digital_HPF_9000
   - name: Cobalt Digital HPF 9000 - Cobalt Digital 9001
