@@ -8834,6 +8834,8 @@
     topicUid: Connector_help_Telestream_Inspect_2110
   - name: Telestream OptiQ
     topicUid: Connector_help_Telestream_OptiQ
+  - name: Telestream SPG9000
+    topicUid: Connector_help_Telestream_SPG9000
   - name: Telestream Vantage
     topicUid: Connector_help_Telestream_Vantage
 - name: Telos Alliance
