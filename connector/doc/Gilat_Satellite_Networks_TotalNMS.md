@@ -81,7 +81,7 @@ The connector uses SOAP calls to retrieve most of its data. Alarms are retrieved
 
 This connector can export a child connector based on the retrieved data (see "Exported Components" above).
 
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show Groups 900-903, Groups 905-907 and Group 915 in Stream Viewer. Optionally, Group 904, Group 914, Groups 908-910, and Groups 912-913 can also be shown.
+To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show Groups 900-903, Groups 905-907, and Group 915 in Stream Viewer. Optionally, Group 904, Group 914, Groups 908-910, and Groups 912-913 can also be shown.
 
 ### General Page
 
