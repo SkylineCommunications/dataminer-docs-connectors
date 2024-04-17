@@ -32,20 +32,25 @@ This connector uses a virtual connection and does not need any input during elem
 
 ### General
 
-This page displays the Snapshot Manager table, which contains the following parameters: **Snapshot File Name**, **Element Name**, **Connector Name**, **Connector Version**, **Creation Date**, **Debug Connector Status**, **Create Debug Connector**, **Debug Element Status**, **Create Debug Element**, **Notes** and **Delete Snapshot File**.
+This page displays the Snapshot Manager table, which contains the following parameters: Snapshot File Name, Element Name, Connector Name, Connector Version, Creation Date, Debug Connector Status, Create Debug Connector, Debug Element Status, Create Debug Element, Notes, and Delete Snapshot File.
 
 Within the Snapshot Manager table, the following actions are possible:
 
-- **Create Debug Connector**: Creates a debug connector based on the snapshot file information. The debug connector version will have an extension that can be specified in the **Connector Version Extension** parameter (extension is `debug` by default).
+- **Create Debug Connector**: Creates a debug connector based on the snapshot file information. The extension of the debug connector version can be specified with the **Connector Version Extension** parameter (the default extension is `debug`).
+
 - **Create Debug Element**: Creates a debug element based on the snapshot file. The new element will have the same name as the snapshot file. The element will be created using the *NHK_CreateDebugElements* Automation script.
+
 - **Delete Snapshot File**: Deletes the snapshot file from the system.
 
 This page also has several standalone parameters:
 
 - **Create Snapshot**: Snapshots are created using the Snapshot Creator Wizard and stored in the location specified with the **Snapshot File Location** parameter. The snapshots will be created with the *NHK_CreateSnapshots* Automation script.
+
 - **Snapshot File Location**: By default, the file location will be `C:\Skyline DataMiner\Documents\Snapshot Files`.
+
 - **Debug Element View**: This parameter determines which view the debug elements will be created in. If no view is selected, the debug elements will be created in the root view.
-- **Connector Version Extension**: this parameter specifies the debug connector version. The debug connector version will be appended with `-debug`.
+
+- **Connector Version Extension**: This parameter specifies the debug connector version extension. The debug connector version will be appended with `-debug`.
 
 ### Debug Elements
 
@@ -63,10 +68,10 @@ Via **Delete Debug Connector Version**, you can remove a debug connector version
 
 ### Debug Connector Configuration
 
-This page is used to configure the creation of the debug connector. You also have the option to directly create a debug connector here.
+This page is used to configure the creation of the debug connector. You can also directly create a debug connector here.
 
-- **Add Write Parameters**: If this option is enabled, the debug protocol will be modified to include write parameters for all read parameters that are present in the protocol.
+- **Add Write Parameters**: If this option is enabled, the debug protocol will be modified to include write parameters for all read parameters in the protocol.
 - **Mark Parameters as Saved**: If this option is enabled, the debug protocol will be modified to mark all parameters as saved.
-- **Connector**: This is a dropdown list which lists all of the connectors that a debug connector can be created for.
-- **Connector Version Extension**: this parameter specifies the debug connector version. The debug connector version will be appended with `-debug`.
-- **Debug Connector Creation Status**: This parameter indicates the status of debug connector creation when initiated from this page.
+- **Connector**: This dropdown lists all the connectors that a debug connector can be created for.
+- **Connector Version Extension**: This parameter specifies the debug connector version. The debug connector version will be appended with `-debug`.
+- **Debug Connector Creation Status**: This parameter indicates the status of debug connector creation when it is initiated from this page.
