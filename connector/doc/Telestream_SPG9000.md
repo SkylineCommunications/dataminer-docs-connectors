@@ -4,9 +4,7 @@ uid: Connector_help_Telestream_SPG9000
 
 # Telestream SPG9000
 
-Timing and reference system.
-
-The Telestream SPG9000 Timing and Reference System elevates IP/Hybrid Timing through Dual Independent PTP Sources and Enhanced Satellite Connectivity. It offers two autonomous 1G/10G IP ports for Precision Time Protocol (PTP) sources and reference timing derived from worldwide GNSS standards, guaranteeing video synchronization in hybrid SDI/IP and IP-centric setups.
+The Telestream SPG9000 timing and reference system elevates IP/hybrid timing through dual independent PTP sources and enhanced satellite connectivity. It provides two autonomous 1G/10G IP ports for Precision Time Protocol (PTP) sources and reference timing derived from worldwide GNSS standards, allowing video synchronization in hybrid SDI/IP and IP-centric setups.
 
 ## About
 
@@ -38,42 +36,27 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **IP port**: [The IP port of the destination. (default: *161*)]
-- **Bus address**: [The bus address of the device. (default: *byPassProxy*)]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *161*).
+- **Bus address**: The bus address of the device (default: *byPassProxy*).
 
 SNMPv3 Settings:
 
-- **Username**: [The SNMPv3 username.]
-- **Security level**: [The SNMPv3 security level.]
-- **Authentication type**: [The SNMPv3 authentication type.]
-- **Authentication password**: [The SNMPv3 authentication password. (default: *public*)]
-- **Privacy type**: [The SNMPv3 privacy type.]
-- **Privacy password**: [The SNMPv3 privacy password. (default: *private*)]
+- **Username**: The SNMPv3 username.
+- **Security level**: The SNMPv3 security level.
+- **Authentication type**: The SNMPv3 authentication type.
+- **Authentication password**: The SNMPv3 authentication password (default: *public*).
+- **Privacy type**: The SNMPv3 privacy type.
+- **Privacy password**: The SNMPv3 privacy password (default: *private*).
 
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## Usage
+## How to Use
 
-### General Information
+On the **General Information** page, you can find system info and health status info.
 
-This page displays 2 sections:
+The system info includes the System Name, Contact, Location, and Uptime.
 
-#### System Info
-
-- *System Name*
-- *System Contact*
-- *System Location*
-- *System Uptime*
-
-#### Health Status
-
-- *Reference Status*
-- *Time Status*
-- *PTP 1 Grandmaster Status*
-- *PTP 2 Grandmaster Status*
-- *Hardware Status*
-- *Power Supply 1 Status*
-- *Power Supply 2 Status*
+The health status info includes the Reference Status, Time Status, and Hardware Status, as well as PTP grandmaster and power supply status information.
