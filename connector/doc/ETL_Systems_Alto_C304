@@ -64,4 +64,3 @@ The **System Settings** section is designed for modification and management of o
 
 Additionally, the section encompasses the **Set Path Module Table**, **Hot Standby Redundancy Table**, and **Cold Standby Redundancy Table**. These tables offer read and write access, granting the user the ability to modify module paths and configure the redundancy setup of the system, whether it be for immediate failover through hot standby or manual intervention through cold standby.
 
-It is imperative that changes to system configurations are made with a full understanding of their implications. The user is advised to refer to the comprehensive documentation for detailed explanations of each setting or to seek assistance from technical support for further clarification.
