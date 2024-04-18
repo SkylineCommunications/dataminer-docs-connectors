@@ -9226,6 +9226,8 @@
     topicUid: Connector_help_Vertex_7134
   - name: Vertex 7200
     topicUid: Connector_help_Vertex_7200
+  - name: ACU Vertex 7200 DTR
+    topicUid: Connector_help_ACU_Vertex_7200_DTR
   - name: Vertex DTR
     topicUid: Connector_help_Vertex_DTR
   - name: Vertex LRx-1201-xx
@@ -9748,8 +9750,6 @@
     topicUid: Connector_help_ZTE_ZXR10_8900
 - name: Unknown vendor
   items:
-  - name: ACU Vertex 7200 DTR
-    topicUid: Connector_help_ACU_Vertex_7200_DTR
   - name: Damocles2 1208
     topicUid: Connector_help_Damocles2_1208
   - name: EF Data Comtech LBC-4000
