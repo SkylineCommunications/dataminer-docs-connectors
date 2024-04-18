@@ -39,18 +39,24 @@ This connector uses SNMP in order to monitor a Linux platform.
 <td>No</td>
 </tr>
 <tr class="even">
-<td>1.1.1.x [SLC Main]</td>
+<td>1.1.1.x (obsolete)</td>
 <td>Based on 1.1.0.56 Process Counter table was created in version 1.1.0.47. Impact upgrading from 1.1.0.46 or below: none Impact upgrading from 1.1.0.47 or above: <strong>loss of trend data for Process Counter Table</strong>. Process Counter table remade.</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
 <tr class="odd">
+<td>1.1..x [SLC Main]</td>
+<td>Based on 1.1.1.8 Added support for dynamic units.</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr class="even">
 <td>2.0.0.x</td>
 <td>Based on 1.1.0.35 Implemented SNMPv3</td>
 <td>Yes</td>
 <td>No</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>2.0.1.x</td>
 <td>Based on 1.1.0.44 Changed displayColumn to Naming to improve performance and make the connector Cassandra-compliant. Impact: <strong>loss of trend data on tables</strong>:
 <ul>
@@ -82,6 +88,7 @@ This connector uses SNMP in order to monitor a Linux platform.
 | 1.0.0.x          | Not applicable              |
 | 1.1.0.x          | Not applicable              |
 | 1.1.1.x          | Not applicable              |
+| 1.1.2.x          | Not applicable              |
 | 2.0.0.x          | Not applicable              |
 | 2.0.1.x          | Not applicable              |
 
