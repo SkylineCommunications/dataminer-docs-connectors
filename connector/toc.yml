@@ -2742,6 +2742,10 @@
     topicUid: Connector_help_EEG_iCap_Caption_Server
   - name: EEG Lexi
     topicUid: Connector_help_EEG_Lexi
+- name: EF Data
+  items:
+  - name: EF Data Comtech LBC-4000
+    topicUid: Connector_help_EF_Data_Comtech_LBC-4000
 - name: Egatel
   items:
   - name: Egatel CCU9000
@@ -2844,6 +2848,10 @@
     topicUid: Connector_help_Emerson_Liebert_Himod
   - name: Emerson Liebert PDX-PCW
     topicUid: Connector_help_Emerson_Liebert_PDX-PCW
+- name: EndRun Technologies
+  items:
+  - name: Meridian II Precision TimeBase
+    topicUid: Connector_help_Meridian_II_Precision_TimeBase
 - name: Enensys
   items:
   - name: Enensys ASIIP Guard
@@ -9768,9 +9776,5 @@
     topicUid: Connector_help_ZTE_ZXR10_8900
 - name: Unknown vendor
   items:
-  - name: EF Data Comtech LBC-4000
-    topicUid: Connector_help_EF_Data_Comtech_LBC-4000
-  - name: Meridian II Precision TimeBase
-    topicUid: Connector_help_Meridian_II_Precision_TimeBase
   - name: VideoShip
     topicUid: Connector_help_VideoShip
