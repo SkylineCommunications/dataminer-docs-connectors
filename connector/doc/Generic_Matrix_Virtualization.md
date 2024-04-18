@@ -374,7 +374,7 @@ The following example illustrates both options:
 |-----------|----------------------|--------------------------|--------------|-----------|
 | TIELINE 1 | 10                   | 21                       | 1            | TX        |
 | TIELINE 2 | 11                   | 22                       | 2            | TX        |
-| TIELINE 3 | 12                   | 22                       | MOD          |           |
+| TIELINE 3 | 12                   | 22                       | 1            | MOD       |
 
 In this example, there are two sites, connected via two different tie lines. The priority order is set to **Ascending** on the page **Matrix Configuration** (priority 2 \> priority 1). The following paths are created:
 

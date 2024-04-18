@@ -425,7 +425,7 @@
 - name: AMWA
   items:
   - name: AMWA NMOS IS-04
-    topicUid: Connector_help_AMWA_NMOS_IS-04
+    topicUid: Connector_help_AMWA_NMOS_IS-04_Registry
   - name: AMWA NMOS IS-05
     topicUid: Connector_help_AMWA_NMOS_IS-05
 - name: AnaCom
@@ -8834,6 +8834,8 @@
     topicUid: Connector_help_Telestream_Inspect_2110
   - name: Telestream OptiQ
     topicUid: Connector_help_Telestream_OptiQ
+  - name: Telestream SPG9000
+    topicUid: Connector_help_Telestream_SPG9000
   - name: Telestream Vantage
     topicUid: Connector_help_Telestream_Vantage
 - name: Telos Alliance
