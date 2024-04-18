@@ -14,12 +14,13 @@ The information on tables and parameters is retrieved via **HTTP** and **serial*
 
 | **Range**            | **Description**                                                                                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                                                                              | Yes                 | Yes                     |
-| 1.0.1.x              | Replaced Telnet connection with SSH connection.                                                                                                                                                               | Yes                 | Yes                     |
-| 1.0.2.x              | Implemented SNMP traps.                                                                                                                                                                                       | Yes                 | Yes                     |
-| 1.0.3.x              | Added Disk Usage Table based on Linux SSH connection.                                                                                                                                                         | Yes                 | Yes                     |
-| 1.0.4.x              | Added control plane connection and functionality.                                                                                                                                                             | Yes                 | Yes                     |
-| 1.0.5.x [SLC Main]   | Removed Tx columns from the Network Interface Rx table (49000) and Rx columns from the network Interface Tx table (59000). Added FK column to the 9000 table in the following tables: 11000, 49000 and 59000. | Yes                 | Yes                     |
+| 1.0.0.x [Obsolete]   | Initial version.                                                                                                                                                                                              | Yes                 | Yes                     |
+| 1.0.1.x [Obsolete]   | Replaced Telnet connection with SSH connection.                                                                                                                                                               | Yes                 | Yes                     |
+| 1.0.2.x [Obsolete]   | Implemented SNMP traps.                                                                                                                                                                                       | Yes                 | Yes                     |
+| 1.0.3.x [Obsolete]   | Added Disk Usage Table based on Linux SSH connection.                                                                                                                                                         | Yes                 | Yes                     |
+| 1.0.4.x [Obsolete]   | Added control plane connection and functionality.                                                                                                                                                             | Yes                 | Yes                     |
+| 1.0.5.x [Obsolete]   | Removed Tx columns from the Network Interface Rx table (49000) and Rx columns from the network Interface Tx table (59000). Added FK column to the 9000 table in the following tables: 11000, 49000 and 59000. | Yes                 | Yes                     |
+| 1.0.6.x [SLC Main]   | Implemented InterAppCalls with SSH Connection.                                                                                                                                                                | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -31,6 +32,7 @@ The information on tables and parameters is retrieved via **HTTP** and **serial*
 | 1.0.3.x   | vStack 1.7.x           |
 | 1.0.4.x   | vStack 1.7.x           |
 | 1.0.5.x   | vStack 1.7.x           |
+| 1.0.6.x   | vStack 1.7.x           |
 
 ## Configuration
 
