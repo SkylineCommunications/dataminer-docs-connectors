@@ -45,7 +45,7 @@ This connector uses SNMP in order to monitor a Linux platform.
 <td>No</td>
 </tr>
 <tr class="odd">
-<td>1.1..x [SLC Main]</td>
+<td>1.1.2.x [SLC Main]</td>
 <td>Based on 1.1.1.8 Added support for dynamic units.</td>
 <td>Yes</td>
 <td>No</td>
