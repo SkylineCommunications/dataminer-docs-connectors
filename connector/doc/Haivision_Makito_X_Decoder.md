@@ -15,7 +15,7 @@ The **Haivision Makito X Decoder** connector is used to monitor and control a de
 | **Range**            | **Description**            | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|----------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.           | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | New HTTP connection added. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | New HTTP connection added. | No <br> Yes (added in version 1.0.1.9)  | Yes                     |
 
 ### Product Info
 
@@ -94,3 +94,10 @@ It also contains page buttons to subpages with **DNS** (Domain Name Space) and *
 ### Web Interface
 
 On this page you can access the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+
+### DCF Connections
+
+#### External Connections
+In version 1.0.1.9, DCF Interfaces are generated for each Stream in order to faciliate DCF connections.
+
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
