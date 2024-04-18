@@ -4,7 +4,7 @@ uid: Connector_help_Microsoft_Azure_-_Service_Bus
 
 # Microsoft Azure - Service Bus
 
-Azure Service Bus is an asynchronous messaging cloud platform that enables sending data between decoupled systems.
+Azure Service Bus is an asynchronous messaging cloud platform that makes it possible to send data between decoupled systems.
 
 ## About
 
@@ -22,9 +22,9 @@ Azure Service Bus is an asynchronous messaging cloud platform that enables sendi
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                       | Exported Components     |
-|-----------|---------------------|-------------------------|-------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Microsoft Azure Cloud Platform](xref:Connector_help_Microsoft_Azure) | -                       |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components                                                     | Exported Components |
+|---------|-----------------|---------------------|-----------------------------------------------------------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | [Microsoft Azure Cloud Platform](xref:Connector_help_Microsoft_Azure) | -                   |
 
 ## Configuration
 
@@ -38,9 +38,9 @@ This connector uses an HTTP connection. However, it requires no input from the u
 
 The connector requires no user input. The metrics that are polled for this resource type element are displayed on the **Metrics** page.
 
-Enabling or disabling polling of metrics in done on the **Configuration** page.
+Enabling or disabling polling of metrics can be done on the **Configuration** page.
 
-On the **General** page, you can configure the **Polling Interval** for the metrics. This same page also displays the scope (Subscription and Resource Group) this resource type element belongs to.
+On the **General** page, you can configure the **Polling Interval** for the metrics. This same page also displays the scope (Subscription and Resource Group) that this resource type element belongs to.
 
 ## Notes
 
