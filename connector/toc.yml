@@ -425,7 +425,7 @@
 - name: AMWA
   items:
   - name: AMWA NMOS IS-04
-    topicUid: Connector_help_AMWA_NMOS_IS-04
+    topicUid: Connector_help_AMWA_NMOS_IS-04_Registry
   - name: AMWA NMOS IS-05
     topicUid: Connector_help_AMWA_NMOS_IS-05
 - name: AnaCom
