@@ -2430,6 +2430,10 @@
   items:
   - name: Dantherm Flexibox 900
     topicUid: Connector_help_Dantherm_Flexibox_900
+- name: Damocles
+  items:
+  - name: Damocles2 1208
+    topicUid: Connector_help_Damocles2_1208
 - name: DataProbe
   items:
   - name: DataProbe iPIO
@@ -6688,6 +6692,10 @@
   items:
   - name: Plura Rubidium Series
     topicUid: Connector_help_Plura_Rubidium_Series
+- name: Power One
+  items:
+  - name: Powerone AEONGold AL175
+    topicUid: Connector_help_Powerone_AEONGold_AL175
 - name: Powersoft
   items:
   - name: Powersoft Ottocanali 4K4 DSP+D
@@ -7206,6 +7214,10 @@
   items:
   - name: SAF Tehnika Integra-W
     topicUid: Connector_help_SAF_Tehnika_Integra-W
+- name: Sandar TeleCast
+  items:
+  - name: Sandar SA-1100
+    topicUid: Connector_help_Sandar_SA-1100
 - name: Salzbrenner Media
   items:
   - name: Salzbrenner Media Mekkah Audio System Scheduler
@@ -8394,6 +8406,10 @@
     topicUid: Connector_help_Tandberg_TT4030_HTTP
   - name: Tandberg TT7116
     topicUid: Connector_help_Tandberg_TT7116
+- name: Tata Communications
+  items:
+  - name: Tata Communications Booking Manager
+    topicUid: Connector_help_Tata_Communications_Booking_Manager
 - name: Tata Sky India Limited
   items:
   - name: Tata Sky India Limited MCR DB Provision
@@ -8876,6 +8892,8 @@
     topicUid: Connector_help_Teracom_Service_Overview_Manager
   - name: Teracom Service Performance Export Manager
     topicUid: Connector_help_Teracom_Service_Performance_Export_Manager
+  - name: Teracom_SFN Nim Data Reader
+    topicUid: Connector_help_Teracom_SFN_Nim_Data_Reader
   - name: Teracom Site View Manager
     topicUid: Connector_help_Teracom_Site_View_Manager
 - name: Teracue
@@ -9750,23 +9768,9 @@
     topicUid: Connector_help_ZTE_ZXR10_8900
 - name: Unknown vendor
   items:
-  - name: Damocles2 1208
-    topicUid: Connector_help_Damocles2_1208
   - name: EF Data Comtech LBC-4000
     topicUid: Connector_help_EF_Data_Comtech_LBC-4000
-  - name: Globalcomm iDirect Aggregation
-    topicUid: Connector_help_Globalcomm_iDirect_Aggregation
   - name: Meridian II Precision TimeBase
     topicUid: Connector_help_Meridian_II_Precision_TimeBase
-  - name: Powerone AEONGold AL175
-    topicUid: Connector_help_Powerone_AEONGold_AL175
-  - name: Sandar SA-1100
-    topicUid: Connector_help_Sandar_SA-1100
-  - name: SFN Nim Data Reader
-    topicUid: Connector_help_SFN_Nim_Data_Reader
-  - name: Tata Booking Manager
-    topicUid: Connector_help_Tata_Booking_Manager
   - name: VideoShip
     topicUid: Connector_help_VideoShip
-  - name: Weather Prediction Norway
-    topicUid: Connector_help_Weather_Prediction_Norway
