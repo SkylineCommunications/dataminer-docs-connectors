@@ -5382,6 +5382,8 @@
     topicUid: Connector_help_Microsoft_Azure_-_Load_Balancers
   - name: Microsoft Azure - Public IP Addresses
     topicUid: Connector_help_Microsoft_Azure_-_Public_IP_Addresses
+  - name: Microsoft Azure - Service Bus
+    topicUid: Connector_help_Microsoft_Azure_-_Service_Bus
   - name: Microsoft Azure - Storage Accounts
     topicUid: Connector_help_Microsoft_Azure_-_Storage_Accounts
   - name: Microsoft Azure - Virtual Machines
