@@ -24,7 +24,7 @@ The Evertz 9000RF-Probe is a real-time radio frequency (RF) and transport stream
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components                                                                  |
 |---------|-----------------|---------------------|-------------------|--------------------------------------------------------------------------------------|
-| 1.0.0.x | No              | Yes                 | -                 | - [Evertz 9000RF-Probe - RF Input](xref:Connector_help_Evertz_9000RF-Probe_-RF_Input) |
+| 1.0.0.x | No              | Yes                 | -                 | - [Evertz 9000RF-Probe - RF Input](xref:Connector_help_Evertz_9000RF-Probe_-_RF_Input) |
 
 ## Configuration
 
