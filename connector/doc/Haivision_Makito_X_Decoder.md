@@ -6,16 +6,16 @@ uid: Connector_help_Haivision_Makito_X_Decoder
 
 The Makito X decoder delivers dual-channel HD digital video to 3G-SDI and HDMI interfaces, supporting all HD standards up to 1080p60. The Makito X decoder is a unique match for the Makito X encoder.
 
-## About
+The **Haivision Makito X Decoder** connector is used to monitor and control the decoder device. It provides an overview of the different parameters of the device, along with its statuses and generated alarms. The connector uses SNMP to retrieve the data from the device.
 
-The **Haivision Makito X Decoder** connector is used to monitor and control a decoder device. It provides an overview of the different parameters of the device, along with its statuses and generated alarms. The connector uses SNMP to retrieve the data from the device.
+## About
 
 ### Version Info
 
-| **Range**            | **Description**            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.           | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | New HTTP connection added. | No <br> Yes (added in version 1.0.1.9)  | Yes                     |
+| Range              | Key Features               | Based on | System Impact |
+|--------------------|----------------------------|----------|---------------|
+| 1.0.0.x            | Initial version            | -        | -             |
+| 1.0.1.x [SLC Main] | New HTTP connection added. | -        | -             |
 
 ### Product Info
 
@@ -23,6 +23,13 @@ The **Haivision Makito X Decoder** connector is used to monitor and control a de
 |-----------|------------------------|
 | 1.0.0.x   | 2.2.0-43               |
 | 1.0.1.x   | 1.3.2-10               |
+
+### System Info
+
+| Range   | DCF Integration                                                        | Cassandra Compliant |
+|---------|------------------------------------------------------------------------|---------------------|
+| 1.0.0.x | No                                                                     | Yes                 |
+| 1.0.1.x | No (prior to version 1.0.1.9) <br> Yes (starting from version 1.0.1.9) | Yes                 |
 
 ## Configuration
 
@@ -98,6 +105,7 @@ On this page you can access the web interface of the device. Note that the clien
 ### DCF Connections
 
 #### External Connections
-In version 1.0.1.9, DCF Interfaces are generated for each Stream in order to faciliate DCF connections.
+
+In version 1.0.1.9, DCF interfaces are generated for each stream in order to facilitate DCF connections.
 
 DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
