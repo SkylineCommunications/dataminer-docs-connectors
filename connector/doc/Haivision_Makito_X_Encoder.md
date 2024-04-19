@@ -16,7 +16,7 @@ The Makito X encoder allows highly flexible configurations for remote installati
 |--------------------|-------------------------------|----------|---------------|
 | 1.0.0.x            | Initial version.              | -        | -             |
 | 1.0.1.x            | Polling control added.        | 1.0.0.2  | -             |
-| 1.0.2.x [SLC Main] | HTTP Polling interface added. | 1.0.1.1  | -             |
+| 1.0.2.x [SLC Main] | HTTP polling interface added. | 1.0.1.1  | -             |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ The Makito X encoder allows highly flexible configurations for remote installati
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | 
+| Range     | DCF Integration     | Cassandra Compliant     |
 |-----------|---------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     |
 | 1.0.1.x   | No                  | Yes                     |
@@ -125,6 +125,7 @@ This page allows to define which tables the connector should retrieve from the d
 ### DCF Connections
 
 #### External Connections
-In version 1.0.2.2, DCF Interfaces are generated for each Stream in order to faciliate DCF connections.
+
+In version 1.0.2.2, DCF interfaces are generated for each stream in order to facilitate DCF connections.
 
 DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
