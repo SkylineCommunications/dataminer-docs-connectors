@@ -18,20 +18,19 @@ The Evertz 9000RF-Probe is a real-time radio frequency (RF) and transport stream
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | 2.9.2.r1.588       |
+| 1.0.0.x | 2.2.b130       |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components                                                                  |
 |---------|-----------------|---------------------|-------------------|--------------------------------------------------------------------------------------|
-| 1.0.0.x | No              | Yes                 | -                 | - [Evertz 9000RF-Probe - Channel](xref:Connector_help_Evertz_9000RF-Probe_-_Channel) |
+| 1.0.0.x | No              | Yes                 | -                 | - [Evertz 9000RF-Probe - RF Input](xref:Connector_help_Evertz_9000RF-Probe_-RF_Input) |
 
 ## Configuration
 
 ### Connections
 
 #### SNMP Connection
-
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 SNMP CONNECTION:
