@@ -22,7 +22,7 @@ The 2WCOM IP-8e is a point-to-point or point-to-multipoint audio encoder using I
 |--------------------|--------------------|
 | 1.0.0.x            | 2.11.12            |
 | 1.0.1.x [Obsolete] | 2.11.12            |
-| 2.0.0.x            | 2.14.1             |
+| 2.0.0.x            | 2.15               |
 
 ### System Info
 
@@ -43,12 +43,14 @@ This connector uses HTTP connections and requires the input detailed below durin
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: 80).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+- **Timeout of a single command**: The default timeout time is 5000 ms, as there are API calls that usually take around 3-4 s to respond. If you notice timeout alarms or the element switching between primary and secondary connection, increase this timeout time.
 
 ### HTTP Connection - Secondary
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: 80).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+- **Timeout of a single command**: The default timeout time is 5000 ms, as there are API calls that usually take around 3-4 s to respond. If you notice timeout alarms or the element switching between primary and secondary connection, increase this timeout time.
 
 ### Initialization
 

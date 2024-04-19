@@ -50,7 +50,7 @@ This page also has several standalone parameters:
 
 - **Debug Element View**: This parameter determines which view the debug elements will be created in. If no view is selected, the debug elements will be created in the root view.
 
-- **Connector Version Extension**: This parameter specifies the debug connector version extension. The debug connector version will be appended with `-debug`.
+- **Connector Version Extension**: This parameter specifies the debug connector version extension, which will be appended to the debug connector version. By default, it is set to `debug`.
 
 ### Debug Elements
 
@@ -62,7 +62,7 @@ Via **Delete Debug Element**, you can remove a created debug element.
 
 This page displays the Debug Connectors Management table, which lists the debug connectors uploaded via the [protocol debug tools](https://aka.dataminer.services/Protocol_debug_tools) or the Snapshot Manager itself. These connectors are used to create debug elements.
 
-If you upload a debug connector using the protocol debug tools, make sure to append the value that is set in the **Connector Version Extension**. If the value is `debug`, append `-debug`. Additionally, make sure to select "Remove Sequence" (available from version 1.0.0.6 onwards).
+If you upload a debug connector using the protocol debug tools, make sure to append the value of the **Connector Version Extension** parameter. If the value is `debug`, append `-debug`. Additionally, make sure to select **Remove Sequence** (available from version 1.0.0.6 onwards).
 
 Via **Delete Debug Connector Version**, you can remove a debug connector version.
 
@@ -71,7 +71,11 @@ Via **Delete Debug Connector Version**, you can remove a debug connector version
 This page is used to configure the creation of the debug connector. You can also directly create a debug connector here.
 
 - **Add Write Parameters**: If this option is enabled, the debug protocol will be modified to include write parameters for all read parameters in the protocol.
+
 - **Mark Parameters as Saved**: If this option is enabled, the debug protocol will be modified to mark all parameters as saved.
+
 - **Connector**: This dropdown lists all the connectors that a debug connector can be created for.
-- **Connector Version Extension**: This parameter specifies the debug connector version. The debug connector version will be appended with `-debug`.
+
+- **Connector Version Extension**: This parameter specifies the debug connector version extension, which will be appended to the debug connector version. By default, it is set to `debug`.
+
 - **Debug Connector Creation Status**: This parameter indicates the status of debug connector creation when it is initiated from this page.
