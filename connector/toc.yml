@@ -3426,8 +3426,8 @@
     topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
   - name: Evertz 9000RF-Probe
     topicUid: Connector_help_Evertz_9000RF-Probe
-  - name: Evertz 9000RF-Probe - Channel
-    topicUid: Connector_help_Evertz_9000RF-Probe_-_Channel
+  - name: Evertz 9000RF-Probe - RF Input
+    topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
   - name: Evertz BPXRF
     topicUid: Connector_help_Evertz_BPXRF
   - name: Evertz DEC7882H264
