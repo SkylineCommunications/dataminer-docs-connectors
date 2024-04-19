@@ -12,74 +12,14 @@ This connector uses SNMP in order to monitor a Linux platform.
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x (obsolete)</td>
-<td>Initial version</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x (obsolete)</td>
-<td>Based on 1.0.0.25 New firmware based on 1.0.0.x (see below)</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>1.1.1.x (obsolete)</td>
-<td>Based on 1.1.0.56 Process Counter table was created in version 1.1.0.47. Impact upgrading from 1.1.0.46 or below: none Impact upgrading from 1.1.0.47 or above: <strong>loss of trend data for Process Counter Table</strong>. Process Counter table remade.</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>1.1.2.x [SLC Main]</td>
-<td>Based on 1.1.1.8 Added support for dynamic units.</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>2.0.0.x</td>
-<td>Based on 1.1.0.35 Implemented SNMPv3</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>2.0.1.x</td>
-<td>Based on 1.1.0.44 Changed displayColumn to Naming to improve performance and make the connector Cassandra-compliant. Impact: <strong>loss of trend data on tables</strong>:
-<ul>
-<li>Software Info</li>
-<li>Storage Table</li>
-<li>Linux Monitored Disks</li>
-<li>Load Average Information</li>
-<li>Processor Table</li>
-<li>Disk IO Table</li>
-<li>Dell Power Supply Table</li>
-<li>Dell Temperature Probe Table</li>
-<li>Dell Cooling Device Table</li>
-<li>Dell Controller Table</li>
-<li>Dell Channel Table</li>
-<li>Dell Enclosure Table</li>
-<li>Dell Array Disk Table</li>
-<li>Dell Virtual Disk Table</li>
-</ul></td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-</tbody>
-</table>
+| Range              | Description                                                                   | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x (obsolete) | Initial version.                                                               | No | No |
+| 1.1.0.x (obsolete) | Based on 1.0.0.25. <br>New firmware based on 1.0.0.x (see below). | Yes | No |
+| 1.1.1.x (obsolete) | Based on 1.1.0.56. <br>Process Counter table remade. This table was created in version 1.1.0.47. <br>Impact upgrading from 1.1.0.46 or below: none. <br>Impact upgrading from 1.1.0.47 or above: **loss of trend data for Process Counter Table**. | Yes | No |
+| 1.1.2.x [SLC Main] | Based on 1.1.1.8. <br>Added support for dynamic units. | Yes | No |
+| 2.0.0.x | Based on 1.1.0.35. <br>Implemented SNMPv3. | Yes | No |
+| 2.0.1.x | Based on 1.1.0.44. <br>Changed displayColumn to Naming to improve performance and make the connector Cassandra-compliant. <br>Impact: **loss of trend data on tables**:<br>- Software Info<br>- Storage Table<br>- Linux Monitored Disks<br>- Load Average Information<br>- Processor Table<br>- Disk IO Table<br>- Dell Power Supply Table<br>- Dell Temperature Probe Table<br>- Dell Cooling Device Table<br>- Dell Controller Table<br>- Dell Channel Table<br>- Dell Enclosure Table<br>- Dell Array Disk Table<br>- Dell Virtual Disk Table | Yes | Yes |
 
 ### Product Info
 
@@ -92,9 +32,9 @@ This connector uses SNMP in order to monitor a Linux platform.
 | 2.0.0.x          | Not applicable              |
 | 2.0.1.x          | Not applicable              |
 
-## Installation and creation
+## Configuration
 
-### Creation
+### Connections
 
 #### SNMP main connection
 
