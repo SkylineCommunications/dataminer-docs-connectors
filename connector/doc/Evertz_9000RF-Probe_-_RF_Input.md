@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_Evertz_9000RF-Probe_-_Channel
+uid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
 ---
 
-# Evertz 9000RF-Probe - Channel
+# Evertz 9000RF-Probe - RF Input
 
-The Evertz 9000RF-Probe - Channel connector is used to create DVEs based on the RF Inputs for the Evertz 9000RF-Probe. Each RF probe is a 1RU rack-based unit and can have 8x, 16x, or 32x RF inputs. Each DVE can represent one of the RF inputs.
+The Evertz 9000RF-Probe - RF Input connector is used to create DVEs based on the RF Inputs for the Evertz 9000RF-Probe. Each RF probe is a 1RU rack-based unit and can have 8x, 16x, or 32x RF inputs. Each DVE can represent one of the RF inputs.
 
 ## About
 
@@ -12,7 +12,7 @@ The Evertz 9000RF-Probe - Channel connector is used to create DVEs based on the 
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | 2.9.2.r1.588       |
+| 1.0.0.x | 2.2.b130       |
 
 ## Configuration
 
