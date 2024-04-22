@@ -64,6 +64,8 @@ The Events page also has several subpages:
 - **Completed Events**: Contains a table listing all completed events.
 - **Logging**: Displays the logging for manual actions from the element or a message with more information about why a switch failed.
 
+Dates and times in the Daily Events, Weekly Events, and Completed Events tables are stored as they were retrieved from the database. However, note that the time has a difference of 3 hours with the server time. The database use Eastern time, while the server use Pacific time.
+
 ### General Page
 
 The General page lists all customers with the configuration of the router element related to that customer.
@@ -73,7 +75,3 @@ You can specify the destination, source, and CBG ports.
 ### Database Configuration
 
 The Database Configuration page contains the parameters required to establish a connection with the database (see [Initialization](#initialization)).
-
-## Notes
-
-Dates and times in the Daily Events, Weekly Events, and Completed Events tables are stored as they were retrieved from the database. However, note that the time has a difference of 3 hours with the server time. The database use Eastern time, while the server use Pacific time.
