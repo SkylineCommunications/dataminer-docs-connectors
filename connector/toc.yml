@@ -425,7 +425,7 @@
 - name: AMWA
   items:
   - name: AMWA NMOS IS-04
-    topicUid: Connector_help_AMWA_NMOS_IS-04
+    topicUid: Connector_help_AMWA_NMOS_IS-04_Registry
   - name: AMWA NMOS IS-05
     topicUid: Connector_help_AMWA_NMOS_IS-05
 - name: AnaCom
@@ -2430,6 +2430,10 @@
   items:
   - name: Dantherm Flexibox 900
     topicUid: Connector_help_Dantherm_Flexibox_900
+- name: Damocles
+  items:
+  - name: Damocles2 1208
+    topicUid: Connector_help_Damocles2_1208
 - name: DataProbe
   items:
   - name: DataProbe iPIO
@@ -2738,6 +2742,10 @@
     topicUid: Connector_help_EEG_iCap_Caption_Server
   - name: EEG Lexi
     topicUid: Connector_help_EEG_Lexi
+- name: EF Data
+  items:
+  - name: EF Data Comtech LBC-4000
+    topicUid: Connector_help_EF_Data_Comtech_LBC-4000
 - name: Egatel
   items:
   - name: Egatel CCU9000
@@ -2840,6 +2848,10 @@
     topicUid: Connector_help_Emerson_Liebert_Himod
   - name: Emerson Liebert PDX-PCW
     topicUid: Connector_help_Emerson_Liebert_PDX-PCW
+- name: EndRun Technologies
+  items:
+  - name: Meridian II Precision TimeBase
+    topicUid: Connector_help_Meridian_II_Precision_TimeBase
 - name: Enensys
   items:
   - name: Enensys ASIIP Guard
@@ -3006,6 +3018,8 @@
     topicUid: Connector_help_ETL_Systems_2776
   - name: ETL Systems ALT-C300
     topicUid: Connector_help_ETL_Systems_ALT-C300
+  - name: ETL Systems ALTO C304
+    topicUid: Connector_help_ETL_Systems_ALTO_C304
   - name: ETL Systems Genus
     topicUid: Connector_help_ETL_Systems_Genus
   - name: ETL Systems Genus - 22544
@@ -3412,8 +3426,8 @@
     topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
   - name: Evertz 9000RF-Probe
     topicUid: Connector_help_Evertz_9000RF-Probe
-  - name: Evertz 9000RF-Probe - Channel
-    topicUid: Connector_help_Evertz_9000RF-Probe_-_Channel
+  - name: Evertz 9000RF-Probe - RF Input
+    topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
   - name: Evertz BPXRF
     topicUid: Connector_help_Evertz_BPXRF
   - name: Evertz DEC7882H264
@@ -6688,6 +6702,10 @@
   items:
   - name: Plura Rubidium Series
     topicUid: Connector_help_Plura_Rubidium_Series
+- name: Power One
+  items:
+  - name: Powerone AEONGold AL175
+    topicUid: Connector_help_Powerone_AEONGold_AL175
 - name: Powersoft
   items:
   - name: Powersoft Ottocanali 4K4 DSP+D
@@ -7206,6 +7224,10 @@
   items:
   - name: SAF Tehnika Integra-W
     topicUid: Connector_help_SAF_Tehnika_Integra-W
+- name: Sandar TeleCast
+  items:
+  - name: Sandar SA-1100
+    topicUid: Connector_help_Sandar_SA-1100
 - name: Salzbrenner Media
   items:
   - name: Salzbrenner Media Mekkah Audio System Scheduler
@@ -8394,6 +8416,10 @@
     topicUid: Connector_help_Tandberg_TT4030_HTTP
   - name: Tandberg TT7116
     topicUid: Connector_help_Tandberg_TT7116
+- name: Tata Communications
+  items:
+  - name: Tata Communications Booking Manager
+    topicUid: Connector_help_Tata_Communications_Booking_Manager
 - name: Tata Sky India Limited
   items:
   - name: Tata Sky India Limited MCR DB Provision
@@ -8876,6 +8902,8 @@
     topicUid: Connector_help_Teracom_Service_Overview_Manager
   - name: Teracom Service Performance Export Manager
     topicUid: Connector_help_Teracom_Service_Performance_Export_Manager
+  - name: Teracom_SFN Nim Data Reader
+    topicUid: Connector_help_Teracom_SFN_Nim_Data_Reader
   - name: Teracom Site View Manager
     topicUid: Connector_help_Teracom_Site_View_Manager
 - name: Teracue
@@ -9226,6 +9254,8 @@
     topicUid: Connector_help_Vertex_7134
   - name: Vertex 7200
     topicUid: Connector_help_Vertex_7200
+  - name: ACU Vertex 7200 DTR
+    topicUid: Connector_help_ACU_Vertex_7200_DTR
   - name: Vertex DTR
     topicUid: Connector_help_Vertex_DTR
   - name: Vertex LRx-1201-xx
@@ -9748,25 +9778,5 @@
     topicUid: Connector_help_ZTE_ZXR10_8900
 - name: Unknown vendor
   items:
-  - name: ACU Vertex 7200 DTR
-    topicUid: Connector_help_ACU_Vertex_7200_DTR
-  - name: Damocles2 1208
-    topicUid: Connector_help_Damocles2_1208
-  - name: EF Data Comtech LBC-4000
-    topicUid: Connector_help_EF_Data_Comtech_LBC-4000
-  - name: Globalcomm iDirect Aggregation
-    topicUid: Connector_help_Globalcomm_iDirect_Aggregation
-  - name: Meridian II Precision TimeBase
-    topicUid: Connector_help_Meridian_II_Precision_TimeBase
-  - name: Powerone AEONGold AL175
-    topicUid: Connector_help_Powerone_AEONGold_AL175
-  - name: Sandar SA-1100
-    topicUid: Connector_help_Sandar_SA-1100
-  - name: SFN Nim Data Reader
-    topicUid: Connector_help_SFN_Nim_Data_Reader
-  - name: Tata Booking Manager
-    topicUid: Connector_help_Tata_Booking_Manager
   - name: VideoShip
     topicUid: Connector_help_VideoShip
-  - name: Weather Prediction Norway
-    topicUid: Connector_help_Weather_Prediction_Norway

@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_AMWA_NMOS_IS-04
+uid: Connector_help_AMWA_NMOS_IS-04_Registry
 ---
 
-# AMWA NMOS IS-04
+# AMWA NMOS IS-04 Registry
 
 NMOS is a family name for specifications produced by the Advanced Media Workflow Association related to networked media for professional applications.
 

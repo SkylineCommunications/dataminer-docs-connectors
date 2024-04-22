@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_SFN_Nim_Data_Reader
+uid: Connector_help_Teracom_SFN_Nim_Data_Reader
 ---
 
 # SFN Nim Data Reader
