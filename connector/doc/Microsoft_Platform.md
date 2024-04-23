@@ -114,7 +114,7 @@ On the **Network Adapter Measurement** page, you can disable processes to remove
 
 ### Disk Info
 
-The **Percent Disk Busy Time** can go above 100% (more info: <http://demandtech.pmhclients.com/index.php?pg=kb.page&id=47>, <http://support.microsoft.com/kb/310067>).
+The **Percent Disk Busy Time** can go above 100%.
 
 Another indication of when the disk is very busy is the "Latency" of the disk, i.e. how long it takes before it can process something. On this page, this is indicated by the **Avg Disk sec/Transfer Rate**.
 
