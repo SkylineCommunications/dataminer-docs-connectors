@@ -61,7 +61,7 @@ To poll REST API data, the username and password need to be filled in. You can t
 
 To subscribe to start receiving Kafka messages after configuring the parameters above, click **Consume** to start the connection. The **Connection** parameter on the same page will show if this operation worked.
 
-For Kafka messages to work, the **Modules** command from the REST API needs to be enabled to populate the **Schema Modules** which this table then controls individual processing of Kafka messages for each module and their frequency.
+For Kafka messages to work, the **Modules** command in the **Poll Manager Table** needs to be enabled which this information comes from the the REST API. Once this command has been sent at least once the **Schema Modules Table** in the **General** page should now be populated and from here you can control the processing and frequency for each module.
 
 ### Layout
 
