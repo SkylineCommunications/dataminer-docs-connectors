@@ -6,21 +6,21 @@ uid: Connector_help_Aperi_Chassis
 
 This is an **HTTP** and **serial** connector that is used to monitor and configure the **Aperi Chassis** equipment.
 
-## About
-
 The information on tables and parameters is retrieved via **HTTP** and **serial** communication.
+
+## About
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]   | Initial version.                                                                                                                                                                                              | Yes                 | Yes                     |
-| 1.0.1.x [Obsolete]   | Replaced Telnet connection with SSH connection.                                                                                                                                                               | Yes                 | Yes                     |
-| 1.0.2.x [Obsolete]   | Implemented SNMP traps.                                                                                                                                                                                       | Yes                 | Yes                     |
-| 1.0.3.x [Obsolete]   | Added Disk Usage Table based on Linux SSH connection.                                                                                                                                                         | Yes                 | Yes                     |
-| 1.0.4.x [Obsolete]   | Added control plane connection and functionality.                                                                                                                                                             | Yes                 | Yes                     |
-| 1.0.5.x [Obsolete]   | Removed Tx columns from the Network Interface Rx table (49000) and Rx columns from the network Interface Tx table (59000). Added FK column to the 9000 table in the following tables: 11000, 49000 and 59000. | Yes                 | Yes                     |
-| 1.0.6.x [SLC Main]   | Implemented InterAppCalls with SSH Connection.                                                                                                                                                                | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | Yes | Yes |
+| 1.0.1.x [Obsolete] | Replaced Telnet connection with SSH connection. | Yes | Yes |
+| 1.0.2.x [Obsolete] | Implemented SNMP traps. | Yes | Yes |
+| 1.0.3.x [Obsolete] | Added Disk Usage Table based on Linux SSH connection. | Yes | Yes |
+| 1.0.4.x [Obsolete] | Added control plane connection and functionality. | Yes | Yes |
+| 1.0.5.x [Obsolete] | Removed Tx columns from the Network Interface Rx table (49000) and Rx columns from the network Interface Tx table (59000). Added FK column to the 9000 table in the following tables: 11000, 49000 and 59000. | Yes | Yes |
+| 1.0.6.x [SLC Main] | Implemented InterAppCalls with SSH connection. | Yes | Yes |
 
 ### Product Info
 
@@ -56,7 +56,7 @@ SERIAL CONNECTION:
 
 - **Port:**
 
-- The Telnet port of the device (**1.0.0.x**).
+  - The Telnet port of the device (**1.0.0.x**).
   - The SSH port of the device (**1.0.1.x**), by default **222**.
 
 #### SNMP Connection
@@ -176,36 +176,37 @@ This page displays the web interface of the device. Note that the client machine
 
 ## Commands linked to polling manager
 
-| **Polling parameter name**                             | **Command sent**                              | **Default polling frequency (seconds)** |
-|--------------------------------------------------------|-----------------------------------------------|-----------------------------------------|
-| Dataplane Get VLAN                                     | show vlan                                     | 60                                      |
-| Dataplane Get Port All                                 | show port all                                 | 60                                      |
-| Dataplane Get Interface Counters                       | show interface counters                       | 60                                      |
-| Dataplane Get Spanning-Tree Summary                    | show spanning-tree summary                    | 60                                      |
-| Dataplane Get IGMP Snooping                            | show igmpsnooping                             | 60                                      |
-| Dataplane Get IGMP Snooping Querier                    | show igmpsnooping querier                     | 60                                      |
-| Dataplane Get Ethernet Interface                       | show interface ethernet all                   | 60                                      |
-| Dataplane Get VLAN Interface                           | show vlan port all                            | 60                                      |
-| Dataplane Show Interfaces Switchport General           | show interfaces switchport general            | 60                                      |
-| Dataplane Get Interfaces Status All                    | show interfaces status all                    | 60                                      |
-| Dataplane Get Fiber-Ports Optical-Transceiver All      | show fiber-ports optical-transceiver all      | 60                                      |
-| Dataplane Get Fiber-Ports Optical-Transceiver-Info All | show fiber-ports optical-transceiver-info all | 60                                      |
-| Dataplane Get SysInfo                                  | show sysinfo                                  | 60                                      |
-| Dataplane Get CPU and Memory Utilization               | show process cpu                              | 60                                      |
-| Dataplane Get Class Map                                | show class-map                                | 60                                      |
-| Dataplane Get Policy Map                               | show policy-map                               | 60                                      |
-| Dataplane Get Class Map Details                        | show class-map + class map name               | 60                                      |
-| Dataplane Get Policy Map In                            | show service-policy in                        | 60                                      |
-| Get Chassis                                            | (http) /chassis                               | 30                                      |
-| Get Metrics                                            | (http) /metrics                               | 30                                      |
-| Get Slots                                              | (http) /slots                                 | 30                                      |
-| Get Applications                                       | (http) /applications                          | 30                                      |
-| Get Events                                             | (http) /ipmi_events                           | 30                                      |
-| Get Interfaces                                         | (http) /interfaces                            | 30                                      |
-| Get Applications instance                              | (http) /application_instances                 | 30                                      |
-| Port Descriptions                                      | Show Port Description                         | 3600                                    |
+| Polling parameter name                                 | Command sent                                  | Default polling frequency (seconds) |
+|--------------------------------------------------------|-----------------------------------------------|-------------------------------------|
+| Dataplane Get VLAN                                     | show vlan                                     | 60                                  |
+| Dataplane Get Port All                                 | show port all                                 | 60                                  |
+| Dataplane Get Interface Counters                       | show interface counters                       | 60                                  |
+| Dataplane Get Spanning-Tree Summary                    | show spanning-tree summary                    | 60                                  |
+| Dataplane Get IGMP Snooping                            | show igmpsnooping                             | 60                                  |
+| Dataplane Get IGMP Snooping Querier                    | show igmpsnooping querier                     | 60                                  |
+| Dataplane Get Ethernet Interface                       | show interface ethernet all                   | 60                                  |
+| Dataplane Get VLAN Interface                           | show vlan port all                            | 60                                  |
+| Dataplane Show Interfaces Switchport General           | show interfaces switchport general            | 60                                  |
+| Dataplane Get Interfaces Status All                    | show interfaces status all                    | 60                                  |
+| Dataplane Get Fiber-Ports Optical-Transceiver All      | show fiber-ports optical-transceiver all      | 60                                  |
+| Dataplane Get Fiber-Ports Optical-Transceiver-Info All | show fiber-ports optical-transceiver-info all | 60                                  |
+| Dataplane Get SysInfo                                  | show sysinfo                                  | 60                                  |
+| Dataplane Get CPU and Memory Utilization               | show process cpu                              | 60                                  |
+| Dataplane Get Class Map                                | show class-map                                | 60                                  |
+| Dataplane Get Policy Map                               | show policy-map                               | 60                                  |
+| Dataplane Get Class Map Details                        | show class-map + class map name               | 60                                  |
+| Dataplane Get Policy Map In                            | show service-policy in                        | 60                                  |
+| Get Chassis                                            | (http) /chassis                               | 30                                  |
+| Get Metrics                                            | (http) /metrics                               | 30                                  |
+| Get Slots                                              | (http) /slots                                 | 30                                  |
+| Get Applications                                       | (http) /applications                          | 30                                  |
+| Get Events                                             | (http) /ipmi_events                           | 30                                  |
+| Get Interfaces                                         | (http) /interfaces                            | 30                                  |
+| Get Applications instance                              | (http) /application_instances                 | 30                                  |
+| Port Descriptions                                      | Show Port Description                         | 3600                                |
 
-**Note:** Port descriptions polling cannot be disabled. The result of this poll cycle is used to map incoming SNMP traps to the relevant interface.
+> [!NOTE]
+> Port descriptions polling cannot be disabled. The result of this poll cycle is used to map incoming SNMP traps to the relevant interface.
 
 ## DataMiner Connectivity Framework
 
