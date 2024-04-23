@@ -17,7 +17,7 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 | 1.0.0.x | - Monitoring of ETR-enabled **streams/services/PIDs**. <br>- Monitoring of **ETR checks**. <br>- Monitoring of **OTT channels** and **OTT profiles**. <br>- Monitoring of the probe **alarms** with precise probe times match (history set). | - | - |
 | 1.1.0.x | - **Ethernet streams provisioning** from **Automation script**. | 1.0.0.x | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
 | 1.1.1.x | - InterApp Messages available via NuGet package. | 1.1.0.x | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code. |
-| **1.2.0.x \[SLC Main\]** | - | 1.1.1.x | Minimum required DataMiner version brought up to 10.2.0.0. |
+| **1.2.0.x [SLC Main]** | - | 1.1.1.x | Minimum required DataMiner version brought up to 10.2.0.0. |
 
 ### Product Info
 
