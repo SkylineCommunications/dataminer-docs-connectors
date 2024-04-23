@@ -8501,6 +8501,8 @@
 - name: Techex
   topicUid: Connector_help_Techex_MW4_Server
   items:
+  - name: Techex Darwin
+    topicUid: Connector_help_Techex_Darwin
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
