@@ -44,7 +44,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-For the REST API to work, the **Username** and **Password** need to be configured on the General page.
+For the REST API to work, the **Username** and **Password** need to be configured on the **General** page.
 
 In addition, for the connector to start receiving Kafka messages, the following parameters need to be configured:
 
@@ -61,7 +61,7 @@ To poll REST API data, the username and password need to be filled in. You can t
 
 To subscribe to start receiving Kafka messages after configuring the parameters above, click **Consume** to start the connection. The **Connection** parameter on the same page will show if this operation worked.
 
-For Kafka messages to work, the **Modules** command in the **Poll Manager Table** needs to be enabled which this information comes from the the REST API. Once this command has been sent at least once the **Schema Modules Table** in the **General** page should now be populated and from here you can control the processing and frequency for each module.
+For Kafka messages to work, the **Modules** command in the **Poll Manager Table** needs to be enabled. Once this command has been sent at least once, data will be filled in in the **Schema Modules Table** on the **General** page, and you will be able to control the processing and frequency for each module from there.
 
 ### Layout
 
