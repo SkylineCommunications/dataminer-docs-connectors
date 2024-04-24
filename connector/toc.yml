@@ -1566,6 +1566,8 @@
     topicUid: Connector_help_Beenius_IPTV_Delivery_Platform
 - name: BeIN
   items:
+  - name: beIN Arvato VPMS Doha
+    topicUid: Connector_help_beIN_Arvato_VPMS
   - name: beIN GPIO Mapping
     topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom

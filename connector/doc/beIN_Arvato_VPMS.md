@@ -4,11 +4,11 @@ uid: Connector_help_beIN_Arvato_VPMS
 
 # beIN Arvato VPMS Doha
 
-The Arvato System's VPMS (Video Production Management System) is a solution designed to create, manage and process digital video content. With this solution, every integrated workflow, from ingest and production, transcoding and quality management to distribution, playout and archiving, can be managed. The beIN VPMS connector enables the monitoring of this solution.
-
-## About
+The Arvato System's VPMS (Video Production Management System) is a solution designed to create, manage, and process digital video content. With this solution, every integrated workflow, from ingest and production, transcoding and quality management to distribution, playout and archiving, can be managed. The beIN VPMS connector enables the monitoring of this solution.
 
 An **SNMP** connection is used in order to retrieve the necessary information. In addition, this connector can process SNMP traps in order to update the monitored parameters.
+
+## About
 
 ### Version Info
 
@@ -42,7 +42,7 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port number**: The port of the connected device, by default *161.*
+- **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string needed to read from the device.
 - **Set community string**: The community string needed to set to the device.
 
