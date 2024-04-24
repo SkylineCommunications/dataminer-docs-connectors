@@ -27,6 +27,7 @@ The connector is capable of fully monitoring the Ericsson MediaFirst Video Proce
 | 1.1.0.x | - Support for **HTTP** for general APIs (Alarms, Servers, Failover and Services API) <br>- SRM integration <br>- Major UI revision <br>- Major data retrieval revision <br>- POD deployment wizard | - | - |
 | 1.2.0.x [SLC Main] | - Support for **HTTPS** **(via bearer token authentication)** for general APIs (Alarms, Servers, Failover and Services API) <br>- Support for basic authentication for MDT API (optional) <br>- General bug fix on data presentation <br>- Replaced counter data by rate calculation | - | DO NOT USE VERSION 1.2.0.30 AND ABOVE FOR THE 1.2.0.x RANGE. THIS WILL CONTAIN A MAJOR CHANGE, WHICH WILL REQUIRE ELEMENT CONFIGURATION. |
 | 1.2.1.x | - Changes from the 1.2.0.x range up to version 1.2.0.33 <br>- Uses extra connections to execute queries more efficiently. | 1.2.0.33 | - |
+| 1.3.1.x | - Support for new firmware | 1.2.1.18 | - |
 
 ### Product Info
 
@@ -36,6 +37,7 @@ The connector is capable of fully monitoring the Ericsson MediaFirst Video Proce
 | 1.1.0.x | Alarms API 2.1 <br>Servers API 1.1 <br>Failover API 1.0 <br>**Services API 1.3 up to 1.6** <br>MDT API 0.1.4.dev54547 |
 | 1.2.0.x | Product version support for v11 and v12 <br>Alarms API 2.2 <br>Servers API 1.2 <br>Failover API 1.1 <br>**Services API 1.6+** <br>MDT API 0.1.42 |
 | 1.2.1.x | Product version support for v11 and v12 <br>Alarms API 2.2 <br>Servers API 1.2 <br>Failover API 1.1 <br>**Services API 1.6+** <br>MDT API 0.1.42 |
+| 1.3.1.x | Product version support for v11 and v12 <br>Alarms API 3.1 <br>Servers API 1.6 <br>Failover API 1.2 <br>**Services API 1.9+** <br>MDT API 0.1.42 |
 
 ### System Info
 
@@ -45,6 +47,7 @@ The connector is capable of fully monitoring the Ericsson MediaFirst Video Proce
 | 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.2.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.2.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.3.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -80,7 +83,7 @@ For both connections to work, you will also need to go to element's Features pag
 
 Note: The ports may vary depending on the implementation.
 
-### Connections - Range 1.2.1.x
+### Connections - Ranges 1.2.1.x & 1.3.1.x
 
 This connector uses 5 HTTPS connections and requires the following input during element creation.
 
@@ -104,7 +107,7 @@ After element creation, go to the **Features** page and enable or disable the di
 
 If you encounter any issues after the element has been configured, check whether the **API Versions** parameter on the Features page matches the **supported firmware**.
 
-### Initialization - range 1.2.0.x & 1.2.1.x
+### Initialization - range 1.2.0.x & 1.2.1.x & 1.3.1.x
 
 After element creation, go to the Features page and set the username and password for both API groups.
 

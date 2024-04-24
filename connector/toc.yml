@@ -8500,6 +8500,8 @@
     topicUid: Connector_help_TeamCast_Vyper_DVBSS2_SNMP
 - name: Techex
   items:
+  - name: Techex Darwin
+    topicUid: Connector_help_Techex_Darwin
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
