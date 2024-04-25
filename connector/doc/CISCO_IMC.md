@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_CISCO_IMC
+uid: Connector_help_Cisco_IMC
 ---
 
 # CISCO IMC
 
-The Cisco Integrated Management Controller (IMC) is a baseboard management controller that provides embedded server management for Cisco UCS® C-Series Rack Servers and Cisco UCS S-Series Storage Servers.
+The Cisco Integrated Management Controller (IMC) is a baseboard management controller that provides embedded server management for Cisco UCSï¿½ C-Series Rack Servers and Cisco UCS S-Series Storage Servers.
 The Cisco IMC enables system management in the data center and across distributed branch-office locations.
 
 ## About
