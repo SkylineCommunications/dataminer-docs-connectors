@@ -10,10 +10,10 @@ DirectOut Prodigy is a connector that monitors **Prodigy.MC** (Modular Audio Con
 
 ### Version Info
 
-| **Range**            | **Key Features**                                    | **Based on** | **System Impact**                                 |
-|----------------------|-----------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x [Obsolete]   | Initial version. Includes all available monitoring. | -            | -                                                 |
-| 1.0.1.x [SLC Main]   | Added Matrix View                                   | 1.0.0.8      | New Minimum DataMiner Version is 10.3.0.1 - 12509 |
+| Range              | Key Features                                        | Based on | System Impact                                   |
+|--------------------|-----------------------------------------------------|----------|-------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version. Includes all available monitoring. | -        | -                                               |
+| 1.0.1.x [SLC Main] | Added matrix view.                                  | 1.0.0.8  | New minimum DataMiner version: 10.3.0.1 - 12509 |
 
 ### Product Info
 
