@@ -2088,6 +2088,8 @@
     topicUid: Connector_help_Cisco_GS7000_Hub
   - name: CISCO GS7000 Node
     topicUid: Connector_help_CISCO_GS7000_Node
+  - name: Cisco IMC
+    topicUid: Connector_help_Cisco_IMC
   - name: Cisco ISE
     topicUid: Connector_help_Cisco_ISE
   - name: CISCO ISR

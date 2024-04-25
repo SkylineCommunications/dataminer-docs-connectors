@@ -21,6 +21,7 @@ The Synamedia Virtual DCM is a device that represents virtualized and software-b
 |-----------|------------------------|
 | 1.0.0.x   | V21_00_01              |
 | 1.0.1.x   | V21_00_01              |
+| 1.0.1.10+   | V23_00_01              |
 
 ### System Info
 
