@@ -92,13 +92,13 @@ In the threshold tables, you can define limits for each polled modulation. Two t
 
 These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
 
-- **Minimum Tx Power Level**: Range from 32 to 55 dBmV.
-- **Maximum Tx Power Level**: Range from 32 to 55 dBmV.
+- **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
 
 These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
 
-- **Minimum Rx Power Level**: Range from -16 to 16 dBmV.
-- **Maximum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
 - **Minimum SNR Level**: Range from 0 to 100 dB.
 - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
 
