@@ -55,9 +55,9 @@ This connector uses a secondary HTTP connection and requires the following input
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *80*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*)
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Web Interface
 
@@ -71,4 +71,4 @@ The system info includes the System Name, Contact, Location, and Uptime.
 
 The health status info includes the Reference Status, Time Status, and Hardware Status, as well as PTP grandmaster and power supply status information.
 
-The **System Health** page gives an overview of all detailed PSU, Fan, Temperatures and Voltage readings and statuses.
+The **System Health** page gives an overview of all detailed PSU, fan, temperature, and voltage readings and status information.
