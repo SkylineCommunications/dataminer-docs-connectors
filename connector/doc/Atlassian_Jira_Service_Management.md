@@ -54,4 +54,4 @@ The element polls all service desks for the environment specified in the URL of 
 
 From the **Issues** page, it is possible to create a small issue given some input data.
 
-Alternatively, by following the given format in the API documentation for [Create Request](https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/#api-rest-servicedeskapi-request-post), you can also use an Automation script to set PID 2 with your own JSON data.
+Alternatively, by following the given format in the API documentation for [Create Request](https://developer.atlassian.com/cloud/jira/service-desk/rest/api-group-request/#api-rest-servicedeskapi-request-post), you can also use an Automation script to set PID 51 with your own JSON data.
