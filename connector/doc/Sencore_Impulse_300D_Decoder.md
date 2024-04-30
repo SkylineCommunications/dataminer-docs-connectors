@@ -62,9 +62,13 @@ SNMP Settings:
 
 ### Initialization (Range 1.0.0.x)
 
-On the **Authentication** page of the element, specify a username and password.
+On the **General > Authentication** page of the element, specify a username and password.
 
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
+
+## How to use
+
+You need to specify a username and password on the **General > Authentication** page of the element. Also, for the **HTTP Connection**, the IP port is usually the default of **80** and the for the **SNMP Connection**, the Port Number is usually the default of **161**. Both connections are necessary for every part of the protocol to work.
 
