@@ -13,8 +13,8 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 | Range              | Key Features                                                                                   | Based on | System Impact |
 |--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
 | 1.0.0.x            | Initial version.                                                                               | -        | -             |
-| 1.0.1.x  | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
-| 1.1.0.x   [SLC Main]         | Implemented software version 3.0.X API change                                    | 1.0.2.3  | -             |
+| 1.0.1.x            | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
+| 1.1.0.x [SLC Main] | Implemented software version 3.0.X API change.                                                 | 1.0.2.3  | -             |
 
 ### Product Info
 

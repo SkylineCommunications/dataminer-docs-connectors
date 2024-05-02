@@ -10,11 +10,11 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 
 ### Version Info
 
-| Range              | Key Features                | Based on | System Impact |
-|--------------------|-----------------------------|----------|---------------|
-| 1.0.0.x            | Initial version             | -        | -             |
-| 1.0.1.x            | Implemented firmware 2.11.1 | 1.0.0.4  | -             |
-| 1.1.0.x [SLC Main] | Implemented software version 3.0.X API change        | 1.0.2.3  | -             |
+| Range              | Key Features                                  | Based on | System Impact |
+|--------------------|-----------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version                               | -        | -             |
+| 1.0.1.x            | Implemented firmware 2.11.1                   | 1.0.0.4  | -             |
+| 1.1.0.x [SLC Main] | Implemented software version 3.0.X API change | 1.0.2.3  | -             |
 
 ### Product Info
 
