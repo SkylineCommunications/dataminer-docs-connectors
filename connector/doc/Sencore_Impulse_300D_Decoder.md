@@ -39,7 +39,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+- **IP port**: The IP port of the destination. Default: *80*.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 - **Number of Retries**: The number of retries for HTTP commands. This should be set to "0" for write parameters to work properly.
 - **Timeout of a single command (ms)**: The time between HTTP commands. This should be set to "10000" for write parameters to work properly.
@@ -52,7 +52,7 @@ SNMP CONNECTION:
 
 - **SNMP Type**: SNMPv2.
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+- **IP port**: The IP port of the destination. Default: *161*.
 - **Bus address**: The bus address of the device (default: *ByPassProxy*).
 
 SNMP Settings:
