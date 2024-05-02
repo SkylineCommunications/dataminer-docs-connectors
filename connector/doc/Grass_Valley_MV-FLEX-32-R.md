@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Grass_Valley_MV_Flex_32_R
+uid: Connector_help_Grass_Valley_MV-FLEX-32-R
 ---
 
-# Grass Valley MV-Flex-32-R
+# Grass Valley MV-FLEX-32-R
 
 The Grass Valley MV-Flex-32-R is a compact router that offers configurable I/O in any mixture of physical interfaces such as coax, fiber, HDMI, balanced and unbalanced AES and MADI.
 
