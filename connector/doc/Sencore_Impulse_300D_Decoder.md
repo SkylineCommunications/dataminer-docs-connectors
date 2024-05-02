@@ -96,5 +96,9 @@ This page features administration settings for the device including the Network,
 ### Health Status 
 This page contains each of the alarming and events related tables including the Alarms, Traps, Event Logging, System Conditions, and System Events. 
 
+## Notes 
+
+This device requires both HTTP and SNMP connections due to some sets working through SNMP while others through HTTP. For example, for the "Select Input Type" on the "Inputs" page, most of the settings use SNMP for sets while the "None" setting uses HTTP due to how the connections were designed. 
+
 
 
