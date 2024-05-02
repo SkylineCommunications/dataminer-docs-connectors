@@ -70,5 +70,31 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-You need to specify a username and password on the **General > Authentication** page of the element. Also, for the **HTTP Connection**, the IP port is usually the default of **80** and the for the **SNMP Connection**, the Port Number is usually the default of **161**. Both connections are necessary for every part of the protocol to work.
+The element created with this connector consists of the data pages detailed below.
+
+### General
+This page features information on the device, like its serial number and status code, as well as the authentication page necessary for the HTTP polling. 
+
+### Inputs
+This page features the current input that is active on the device, the status of each of the input types, and the pages for each of the input types (MPEG/IP, RTMP, HLS, SRT, ZIXI, CTP-Server)
+
+### Decoding
+This page shows the status of the currently selected service, its video details, and its audio details. It also has pages that shows each of the available services and the settings page that allows for changing the selected service. 
+
+### Baseband Processing 
+This page contains the tables for video configuration, captions/subtitles, compositing, and analog audio. 
+
+### Baseband Outputs 
+This page shows the settings put on the SDI Video. 
+
+### Output
+This page features the state, bitrate, and the IP transmit settings for the Output. 
+
+### Admin 
+This page features administration settings for the device including the Network, Date/Time, SNMP Communities, SNMP Trap Managers, and Syslog. 
+
+### Health Status 
+This page contains each of the alarming and events related tables including the Alarms, Traps, Event Logging, System Conditions, and System Events. 
+
+
 
