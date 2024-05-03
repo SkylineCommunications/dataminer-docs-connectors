@@ -73,32 +73,37 @@ The web interface is only accessible when the client machine has network access 
 The element created with this connector consists of the data pages detailed below.
 
 ### General
-This page features information on the device, like its serial number and status code, as well as the authentication page necessary for the HTTP polling. 
+
+This page features information on the device, like its serial number and status code, as well as the authentication page necessary for the HTTP polling (see [Initialization](#initialization-range-100x).
 
 ### Inputs
+
 This page features the current input that is active on the device, the status of each of the input types, and the pages for each of the input types (MPEG/IP, RTMP, HLS, SRT, ZIXI, CTP-Server)
 
 ### Decoding
-This page shows the status of the currently selected service, its video details, and its audio details. It also has pages that shows each of the available services and the settings page that allows for changing the selected service. 
 
-### Baseband Processing 
-This page contains the tables for video configuration, captions/subtitles, compositing, and analog audio. 
+This page shows the status of the currently selected service, its video details, and its audio details. It also has pages that show each of the available services and a settings page where you can change the selected service.
 
-### Baseband Outputs 
-This page shows the settings put on the SDI Video. 
+### Baseband Processing
+
+This page contains the tables for video configuration, captions/subtitles, compositing, and analog audio.
+
+### Baseband Outputs
+
+This page shows the settings for the SDI video.
 
 ### Output
-This page features the state, bitrate, and the IP transmit settings for the Output. 
 
-### Admin 
-This page features administration settings for the device including the Network, Date/Time, SNMP Communities, SNMP Trap Managers, and Syslog. 
+This page features the state, bitrate, and the IP transmit settings for the output.
 
-### Health Status 
-This page contains each of the alarming and events related tables including the Alarms, Traps, Event Logging, System Conditions, and System Events. 
+### Admin
 
-## Notes 
+This page features administration settings for the device, including the Network, Date/Time, SNMP Communities, SNMP Trap Managers, and Syslog.
 
-This device requires both HTTP and SNMP connections due to some sets working through SNMP while others through HTTP. For example, for the "Select Input Type" on the "Inputs" page, most of the settings use SNMP for sets while the "None" setting uses HTTP due to how the connections were designed. 
+### Health Status
 
+This page contains alarm- and event-related tables including the Alarms, Traps, Event Logging, System Conditions, and System Events tables.
 
+## Notes
 
+This device requires both HTTP and SNMP connections because some sets work through SNMP while others use HTTP. For example, for the "Select Input Type" on the "Inputs" page, most of the options use SNMP while the "None" option uses HTTP because of the way the connections were designed.
