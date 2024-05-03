@@ -10,21 +10,24 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range                | Key Features         | Based on     | System Impact                      |
+|----------------------|----------------------|--------------|------------------------------------|
+| 1.0.0.x              | Initial version      | -            | -                                  |
+| 1.0.1.x [SLC Main]   | Outputs table added  | 1.0.0.7      | Columns removed from Assets Table  |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
+| 1.0.1.x   | 2.9.2.r1.588           |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -73,7 +76,7 @@ This page contains the **Interfaces** table, where information about each interf
 
 ### Assets
 
-This page displays the **Assets** table, where information about each asset is displayed, as well as the **total number of VOD**, **live** and **nPVR assets**.
+This page displays the **Assets** table, where information about each asset is displayed, as well as the **total number of VOD**, **live** and **nPVR assets**. This page also includes the **Outputs** table, which lists all the outputs of each Asset.
 
 ### VOD
 
