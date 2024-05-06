@@ -20,7 +20,7 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
+| 1.0.1.x   | v4.20.4                |
 
 ### System Info
 
