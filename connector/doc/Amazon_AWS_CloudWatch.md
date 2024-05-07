@@ -48,6 +48,9 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the device.
 - **Bus address**: Specify *bypassproxy* if the proxy server has to be bypassed.
 
+> [!NOTE]
+> This connector is compatible with both HTTP and HTTPS. By default, the IP Port configuration is set to _80_. To utilize HTTPS, ensure to adjust the IP Port to 443.
+
 IP Connection
 
 This connector uses a smart-serial connection and requires the following input during element creation:
