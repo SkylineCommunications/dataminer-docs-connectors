@@ -6814,6 +6814,10 @@
     topicUid: Connector_help_RCI_RC2000
   - name: RCI RC2500
     topicUid: Connector_help_RCI_RC2500
+- name: RCN
+  items:
+  - name: RCN Event Router Management
+    topicUid: Connector_help_RCN_Event_Router_Management
 - name: Red Bee Media
   items:
   - name: Red Bee Media Aggregation Matrix

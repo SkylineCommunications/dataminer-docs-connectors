@@ -46,7 +46,7 @@ Before you start using the element, on the **Database Configuration** page, fill
 
 After you have correctly initialized the connector as described above, you will find all daily events on the Events page.
 
-Events can be in following states:
+Events can have the following states:
 
 - *Pending*: A scheduled task has been created.
 
