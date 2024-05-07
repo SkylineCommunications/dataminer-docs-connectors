@@ -4678,6 +4678,10 @@
   items:
   - name: InfluxData InfluxDB Collector
     topicUid: Connector_help_InfluxData_InfluxDB_Collector
+- name: Infoblox
+  items:
+  - name: Infoblox NIOS Platform
+    topicUid: Connector_help_Infoblox_NIOS_Platform
 - name: Infothuis
   items:
   - name: Infothuis DST100
