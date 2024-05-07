@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Starlink_Telemetry_API
+uid: Connector_help_Starlink_Enterprise
 ---
 
-# Starlink Telemetry API
+# Starlink Enterprise
 
 The purpose of this connector is to monitor Starlink devices through the Telemetry API over HTTP using JSON files.
 
