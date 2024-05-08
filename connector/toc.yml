@@ -3752,6 +3752,10 @@
     topicUid: Connector_help_Geist_RSMICRO
   - name: Geist Watchdog 1250
     topicUid: Connector_help_Geist_Watchdog_1250
+- name: Generac Power Systems
+  items:
+  - name: Generac Power Systems SG050T Generator
+    topicUid: Connector_help_Generac_Power_Systems_SG050T_Generator
 - name: General Dynamics
   items:
   - name: General Dynamics 500 Tracking Receiver
