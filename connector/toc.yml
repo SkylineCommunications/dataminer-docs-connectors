@@ -8238,8 +8238,8 @@
     topicUid: Connector_help_Standard_Switch_Management
 - name: Starlink
   items:
-  - name: Starlink Telemetry API
-    topicUid: Connector_help_Starlink_Telemetry_API
+  - name: Starlink Enterprise
+    topicUid: Connector_help_Starlink_Enterprise
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
