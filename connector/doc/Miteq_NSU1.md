@@ -10,21 +10,21 @@ If a primary unit fails, the backup unit will take over, on the condition that *
 
 ## About
 
-The connector can be used as a remote control for the **Miteq NSU1** device, and also monitors the device.
+The connector can be used as a remote control for the **Miteq NSU1** device and also monitors the device.
 
 ### Version Info
 
-| Range              | Key Features                                      | Based on | System Impact |
-|--------------------|---------------------------------------------------|----------|---------------|
-| 2.0.0.x [SLC Main] | SNMP communication replaced serial communication. | -        | -             |
-| 1.0.0.x            | Initial version that uses serial communication.   | -        | -             |
+| Range              | Key Features                                         | Based on | System Impact |
+|--------------------|------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version using serial communication.          | -        | -             |
+| 2.0.0.x [SLC Main] | Serial communication replaced by SNMP communication. | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 2.0.0.x   | V3.003                 |
 | 1.0.0.x   | -                      |
+| 2.0.0.x   | V3.003                 |
 
 ### System Info
 
@@ -37,19 +37,16 @@ The connector can be used as a remote control for the **Miteq NSU1** device, and
 
 ### Connections
 
-This connector uses a serial connection and requires the following input during element creation:
+#### SNMP Connection (2.0.0.x range)
 
-**SNMP CONNECTION - 2.0.0.X range**:
-
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+This 2.0.0.x range of this connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
 
+#### Serial Connection (1.0.0.x range)
 
-**SERIAL CONNECTION - 1.0.0.X range**:
-
-This connector uses a serial connection and requires the following input during element creation:
+The 1.0.0.x range of this connector uses a serial connection and requires the following input during element creation:
 
 - **IP address/host**: The polling IP of the device e.g. *10.11.12.13.*
 - **IP port**: The port of the connected device.
@@ -105,7 +102,7 @@ This page shows the system's **IP, Gateway** and **Subnet Mask.** These paramete
 
 Click the **Clock Settings** page button to view and configure the **Internal Calendar/Clock.**
 
-The **Redundancy Mode** can be set to *Manual* or *Automatic.* In normal circumstances, it is set to *Automatic*. The *Manual* mode is mainly used for offline testing and maintenance. **Local/Remote Mode** makes it possible to switch between *Local Control* or *Remote Control.*
+The **Redundancy Mode** can be set to *Manual* or *Automatic*. In normal circumstances, it is set to *Automatic*. The *Manual* mode is mainly used for offline testing and maintenance. **Local/Remote Mode** makes it possible to switch between *Local Control* or *Remote Control*.
 
 The **Fault Status** page button shows a summary of the statuses of the **Power Supplies**, **Converter**, and **Switch Module**.
 

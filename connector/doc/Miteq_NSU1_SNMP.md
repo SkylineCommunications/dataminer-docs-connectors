@@ -9,10 +9,7 @@ This is a New Switchover Unit (NSU) redundant switchover system with a fixed 1:1
 This connector can be used as a remote control for the Miteq NSU1 device and also monitors the device.
 
 > [!NOTE]
->
-> - This version of the connector is now marked as obsolete and is not in use because the version of the protocol with SNMP connection had been added to **Miteq NSU1** connector (range 2.0.0.X) - [Miteq NSU1](https://docs.dataminer.services/connector/doc/Miteq_NSU1.html)
-> 
-
+> This version of the connector is obsolete and should no longer be used. Instead, use range 2.0.0.x of the [Miteq NSU1](xref:Connector_help_Miteq_NSU1) connector, which uses an SNMP connection.
 
 ## About
 
