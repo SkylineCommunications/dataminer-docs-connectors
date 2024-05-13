@@ -8864,8 +8864,8 @@
     topicUid: Connector_help_Teleste_HDO906_TSEMP
   - name: Teleste HDO907
     topicUid: Connector_help_Teleste_HDO907
-  - name: Teleste HDO908
-    topicUid: Connector_help_Teleste_HDO908
+  - name: Teleste HDO908 TSEMP
+    topicUid: Connector_help_Teleste_HDO908_TSEMP
   - name: Teleste HDP230 TSEMP
     topicUid: Connector_help_Teleste_HDP230_TSEMP
   - name: Teleste HDP301 TSEMP
