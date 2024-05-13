@@ -5548,6 +5548,8 @@
     topicUid: Connector_help_Miranda_nVision_Router_Control
   - name: Miranda RCP-200
     topicUid: Connector_help_Miranda_RCP-200
+  - name: Miranda XVP-3901
+    topicUid: Connector_help_Miranda_XVP-3901
 - name: Miravid
   items:
   - name: Miravid Telesight

@@ -45,7 +45,9 @@ SERIAL CONNECTION:
   
 ## How to use
 
-Via the **Miranda iControl XML Gateway**, a list of devices (nodes) is retrieved. Only supported devices are retrieved. A limited list of supported parameters is retrieved from these devices.
+Via the **Miranda iControl XML Gateway**, a list of devices (nodes) is retrieved. Only supported devices are retrieved.
+
+The connector currently only supports the device *Miranda XVP-3901*.
 
 The communication to the XML Gateway is done via **serial** commands, so the parameters are retrieved one by one. Based on the number of devices, an update of a parameter could take some time.
 
