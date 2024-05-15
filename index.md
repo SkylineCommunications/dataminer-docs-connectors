@@ -1,14 +1,13 @@
 ---
 uid: index
+_layout: landing
 ---
 
-## DataMiner Connector Help
+## DataMiner Connector Documentation
 
-Welcome to the DataMiner Connector Help!
+Welcome to the DataMiner Connector Documentation!
 
-Here you will find a dedicated help page for each of the DataMiner connectors.
-
-To quickly find the connector help you need, use the filter at the top of the contents pane on the left. On small screens, select *Show/Hide Table of Contents* to see the filter.
+[Here you will find a dedicated page for each of the DataMiner connectors](xref:connector_index).
 
 > [!TIP]
-> Want to contribute? Go to [Contributing to the DataMiner connector help](xref:contributing_connectors) for more info.
+> Want to contribute? Go to [Contributing to the DataMiner connector documentation](xref:contributing_connectors) for more info.
