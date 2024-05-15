@@ -1648,6 +1648,8 @@
     topicUid: Connector_help_BMC_Remedy_ORCA
 - name: Brandywine Communications
   items:
+  - name: Brandywine Communications FDU-160i
+    topicUid: Connector_help_Brandywine_Communications_FDU-160i
   - name: Brandywine Communications NFS-220
     topicUid: Connector_help_Brandywine_Communications_NFS-220
 - name: Bridge Technologies
