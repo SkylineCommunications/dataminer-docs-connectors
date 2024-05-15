@@ -4,44 +4,58 @@ uid: Connector_help_Skyline_Spectrum_Simulator
 
 # Skyline Spectrum Simulator
 
+This connector is used to simulate a spectrum analyzer. It allows you to test DataMiner Spectrum Analysis without the need for an actual device or special debug code directly in SLSpectrum.
+
 ## About
-
-This connector is used to simulate the DataMiner Spectrum Analyzer. This driver allows to test SLSpectrum without the need for an actual device or special debug code directly in SLSpectrum.
-
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
+| Range              | Key Features     | Based on     | System Impact     |
+|--------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Initial version  | -            | -                |
 
-## Installation and configuration
+### Product Info
 
-### Creation
+| Range     | Supported Firmware    |
+|-----------|-----------------------|
+| 1.0.0.x   | -                     |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
+
+## Configuration
+
+### Connections
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-## Usage
+## How to Use
 
 ### Spectrum Analyzer
 
-This page contains the Spectrum Analyzer, allowing you to view the simulated trace data.
+This page contains the spectrum analyzer, allowing you to view the simulated trace data.
 
 ### General
 
-Allows you to configure the basic parameters required to create the simulated trace. 
+On this page, you can configure the basic parameters required to create the simulated trace.
 
-It is has 2 modes. 
+It has two modes:
 
-The Center Trace Pattern mode creates a waveform at the center of the Spectrum Analyzer trace.  The type of waveform is based on the Trace Pattern Parameter's value. 
+- The *Center Trace Pattern* mode creates a waveform at the center of the spectrum analyzer trace. The type of waveform is based on the value of the Trace Pattern parameter.
 
-The Carriers from Table mode creates a waveform based on the Center Frequency, Bandwidth, Amplitude that is declared in the Carrier Table.
+- The *Carriers from Table* mode creates a waveform based on the Center Frequency, Bandwidth, and Amplitude specified in the Carrier Table.
 
 ### Tracking
-Allows to trace which sets were made on the spectrum analyzer 641xx write parameters. (from SLSpectrum point of view, these are settings on the device)
+
+This page allows you to trace which sets have been made on the spectrum analyzer 641xx write parameters. (From the SLSpectrum point of view, these are settings on the device.)
 
 ### Mirror Values
+
 The parameters on this page mirror the 64xxx special spectrum parameters.
 
 ### Measurement Points
-Shows the current values from the 64xxx spectrum interfacing parameters, and allows to change them as if they change directly on the device.
+
+This page shows the current values of the 64xxx spectrum interfacing parameters and allows you to change them as if they were changed directly on the device.
