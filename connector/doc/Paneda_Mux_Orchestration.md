@@ -12,19 +12,19 @@ The **Paneda Mux Orchestration** connector can be used to orchestrate and manage
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                             |
-|-----------|------------------------------------------------------------------------------------|
-| 1.0.0.x   | \- Document revision: rev.79 - System version: h-2023-06-29 - Git commit: 61967b0c |
+| Range   | Supported Firmware                                                                        |
+|---------|-------------------------------------------------------------------------------------------|
+| 1.0.0.x | - Document revision: rev.79 <br>- System version: h-2023-06-29 <br>- Git commit: 61967b0c |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

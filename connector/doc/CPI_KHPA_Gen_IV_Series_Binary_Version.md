@@ -12,7 +12,7 @@ CPI's GEN IV klystron power amplifier (KPA) is used by Direct-to-Home service pr
 
 | **Range**            | **Key Features**                          | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.1 \[SLC Main\] | Reviewed connector based on the CPI K4U74 | CPI K4U74    | \-                |
+| 1.0.0.1 [SLC Main]   | Reviewed connector based on the CPI K4U74 | CPI K4U74    | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ CPI's GEN IV klystron power amplifier (KPA) is used by Direct-to-Home service pr
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

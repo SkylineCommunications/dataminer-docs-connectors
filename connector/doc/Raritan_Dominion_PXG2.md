@@ -4,7 +4,7 @@ uid: Connector_help_Raritan_Dominion_PXG2
 
 # Raritan Dominion PXG2
 
-The Raritan Dominion PXG2 connector facilitates the monitoring of this line of Power Distribituion Units (PDU).
+The Raritan Dominion PXG2 connector facilitates the monitoring of this line of Power Distribution Units (PDU).
 
 ## About
 
@@ -12,15 +12,21 @@ This connector uses **SNMP** to extract all relevant information concerning the 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -52,7 +58,7 @@ In this page can be found the specifications of each inlet. It also shows the cu
 
 ### Over Current Protector
 
-In this page can be found the specifications of each Over Current Protecto. It also shows the current operating configuration and the options allowing changes to said configuration of each sensor.
+In this page can be found the specifications of each Over Current Protector. It also shows the current operating configuration and the options allowing changes to said configuration of each sensor.
 
 ### Outlets
 
@@ -76,7 +82,7 @@ In this page are identified the transfers switches of the device. It also shows 
 
 ### Control
 
-The Control Page presents the options allowing to control the operation of the conected elements of this device.
+The Control Page presents the options allowing to control the operation of the connected elements of this device.
 
 ### Measurements Unit
 
@@ -108,45 +114,45 @@ This page shows the availability of and the values of each Transfer Switch senso
 
 ### Log Unit
 
-This page logs the Unit sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the Unit sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Log Inlet
 
-This page logs the Inlet sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the Inlet sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Log Over Current Protector
 
-This page logs the Over Current Protector sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the Over Current Protector sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Log Outlet
 
-This page logs the Outlet sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the Outlet sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Log External Sensor
 
-This page logs the External sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the External sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Log Wire
 
-This page logs the Wire sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the Wire sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Log Transfer Switch
 
-This page logs the Transfer Switch sensor information in a span of 2 hours. One enty is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
+This page logs the Transfer Switch sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
-For each sensor it is logged the state, maximum, minimun and average value. There is also an indication whether the logged information is available.
+For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
 ### Reliability Data
 

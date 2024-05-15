@@ -12,7 +12,7 @@ The Cobalt Digital HPF 9000 is an SNMP connector for a modular frame. This frame
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ The Cobalt Digital HPF 9000 is an SNMP connector for a modular frame. This frame
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                          |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     |                       | [Cobalt Digital HPF 9000 - Cobalt Digital 9001](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes |  | [Cobalt Digital HPF 9000 - Cobalt Digital 9001](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001) |
 
 ## Configuration
 
@@ -39,10 +39,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: 183
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*.
-
-
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
 ### Initialization
 
@@ -54,4 +52,4 @@ There is no redundancy defined.
 
 ## How to use
 
-The element created with this SNMP connector consists of the data pulled from the individual cards inserted into the slots on the frame. A dynamic virtual element can be created by the SNMP connector via a toggle button. The user can toggle DVE creation for the specific card in the slot which exports the information virtually. In order to delete the virtual elements, there are buttons to delete each individual DVE and a clear all button.
+The element created with this SNMP connector consists of the data pulled from the individual cards inserted into the slots on the frame. A dynamic virtual element can be created by the SNMP connector via a toggle button. You can toggle DVE creation for a specific card in a slot, which exports the information virtually. In order to delete the virtual elements, there are buttons to delete each individual DVE and a clear all button.

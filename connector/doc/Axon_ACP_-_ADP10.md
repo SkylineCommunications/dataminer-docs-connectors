@@ -23,7 +23,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
+| Range     | Device Firmware Version            |
 |------------------|------------------------------------|
 | 1.0.2.x          | 0101, 0203, 0304, 0305, 0306, 0407 |
 | 1.0.3.x          | 0101, 0203, 0304, 0305, 0306, 0407 |

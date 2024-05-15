@@ -12,15 +12,21 @@ This connector was designed to interact with a SOAP interface. An **HTTP** conne
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 6.1.7600.0                  |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 6.1.7600.0             |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,9 +38,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP or URL of the destination.
-- **IP port:** The IP port of the destination.
-- **Bus address:** If the proxy server has to be bypassed, specify "*bypassproxy".*
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: If the proxy server has to be bypassed, specify "*bypassproxy".*
 
 ## Usage
 
@@ -50,7 +56,7 @@ This page contains the **Devices Table** with the information regarding all devi
 
 ### Locations Page
 
-This page displays the **Locations Table** with information regarding all persistent locations**.**
+This page displays the **Locations Table** with information regarding all persistent locations.
 
 ### Flows Page
 

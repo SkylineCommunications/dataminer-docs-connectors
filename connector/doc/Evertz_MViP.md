@@ -12,17 +12,24 @@ All data is retrieved using a single **SNMP** connection. SNMP traps can also be
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                   | No                  | Yes                     |
-| 1.0.1.x          | Changed table ID 500 naming and descriptions from "Alerts" to "Faults" for compatibility with Evertz MVIPII. Added trap receiver. | No                  | Yes                     |
+| Range   | Key Features                                                                                                                      | Based on | System Impact |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version                                                                                                                   | -        | -             |
+| 1.0.1.x | Changed table ID 500 naming and descriptions from "Alerts" to "Faults" for compatibility with Evertz MVIPII. Added trap receiver. | -        | -             |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.0.1.x          | Unknown                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 1.0.1.x | Unknown                    |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -50,7 +57,7 @@ This page contains the following parameters: **System Description**, **System Up
 
 ### Source
 
-This page displays the **Source Definition** table**.**
+This page displays the **Source Definition** table.
 
 ### Video
 
@@ -78,7 +85,7 @@ This page contains the following parameters: **System Description**, **System Up
 
 ### Source
 
-This page displays the **Source Definition** table**.**
+This page displays the **Source Definition** table.
 
 ### Video
 

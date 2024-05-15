@@ -12,15 +12,21 @@ This connector uses the **SNMP** protocol to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 07.00/Rev.F./01.50/Rev.C    |
+| Range   | Supported Firmware       |
+|---------|--------------------------|
+| 1.0.0.x | 07.00/Rev.F./01.50/Rev.C |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -42,7 +48,7 @@ SNMP Settings:
 
 ### General
 
-This page contains general information about the device, such as the **Encoder State**, **System Description**, **System** **Version**, **MIB Version** and **System Up Time**.
+This page contains general information about the device, such as the **Encoder State**, **System Description**, **System Version**, **MIB Version** and **System Up Time**.
 
 ### Status
 

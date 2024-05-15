@@ -10,9 +10,9 @@ The **CXC HP controller** provides total energy system management and **single p
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                         | **Based on** | **System Impact** |
-|----------------------|------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Monitors the Line Power System, Line Power System Module, Inverter System and DC System. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Monitors the Line Power System, Line Power System Module, Inverter System and DC System. | - | - |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The **CXC HP controller** provides total energy system management and **single p
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
 
 ## Configuration
 

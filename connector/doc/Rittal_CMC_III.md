@@ -15,7 +15,7 @@ The connector gets the information from the Rittal CMC III through SNMP.
 | **Range**     | **Description**                                            | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                            | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Discreet value for Status changed from 45 to 4 for Off 60s | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Discreet value for Status changed from 45 to 4 for Off 60s | No                  | Yes                     |
 
 ### Product Info
 
@@ -39,8 +39,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device: *151.*
-- **Get Community string:** *public*
-- **Set Community string:** *private*
+- **Get community string**: *public*
+- **Set community string**: *private*
 
 ## Usage
 

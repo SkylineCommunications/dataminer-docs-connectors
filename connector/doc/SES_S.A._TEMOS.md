@@ -15,10 +15,10 @@ Depending on the version, this connector functions in a very different way:
 
 ### Version Info
 
-| **Range** | **Description**                     | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                     | No                  | Yes                     |
-| 1.0.1.x          | Initial version as a virtual connector | No                  | Yes                     |
+| Range   | Description                            | DCF Integration | Cassandra Compliant |
+|---------|----------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                        | No              | Yes                 |
+| 1.0.1.x | Initial version as a virtual connector | No              | Yes                 |
 
 ### Product Info
 
@@ -27,50 +27,36 @@ Depending on the version, this connector functions in a very different way:
 | 1.0.0.x          | Unknown                     |
 | 1.0.1.x          | Unknown                     |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections - Range 1.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Serial Main Connection
-<p>This connector range uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li>Direct connection:
-<ul>
-<li><strong>Baudrate</strong>: Baudrate specified in the manual of the device.</li>
-<li><strong>Databits</strong>: Databits specified in the manual of the device.</li>
-<li><strong>Stopbits</strong>: Stopbits specified in the manual of the device.</li>
-<li><strong>Parity</strong>: Parity specified in the manual of the device.</li>
-<li><strong>FlowControl</strong>: FlowControl specified in the manual of the device.</li>
-</ul></li>
-<li>Interface connection:
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>IP port</strong>: The IP port of the device.</li>
-</ul></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>1.0.1.x</td>
-<td><h4 id="virtual-connection">Virtual Connection</h4>
-<p>This connector range uses a virtual connection and does not require any input during element creation.</p></td>
-</tr>
-</tbody>
-</table>
+#### Serial Main Connection
 
-## Usage \[1.0.0.x\]
+This connector range uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Direct connection:
+
+  - **Baudrate**: Baudrate specified in the manual of the device.
+  - **Databits**: Databits specified in the manual of the device.
+  - **Stopbits**: Stopbits specified in the manual of the device.
+  - **Parity**: Parity specified in the manual of the device.
+  - **FlowControl**: FlowControl specified in the manual of the device.
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device.
+
+### Connections - Range 1.0.1.x
+
+#### Virtual Connection
+
+This connector range uses a virtual connection and does not require any input during element creation.
+
+## Usage [1.0.0.x]
 
 ### Channels
 
@@ -154,7 +140,7 @@ This page contains the **Satellite Connection Table**, which shows the current s
 
 This page contains the **Error Tube LRV Table**, which shows the tubes that have negative responses when trying to retrieve telemetry data.
 
-## Usage \[1.0.1.x\]
+## Usage [1.0.1.x]
 
 ### Channel
 
@@ -221,7 +207,7 @@ You can also add a preset in the table by selecting **Create Preset** in the tab
 
 Once an alarm preset has been assigned to a certain channel, this preset name can be used as a filter when you create alarm templates in DataMiner. This will allow you to configure different thresholds for the same parameter depending on the alarm preset filter.
 
-## Notes \[1.0.1.x\]
+## Notes [1.0.1.x]
 
 The Channel CSV and LRV CSV files must contain the following data, in the same order as specified below:
 

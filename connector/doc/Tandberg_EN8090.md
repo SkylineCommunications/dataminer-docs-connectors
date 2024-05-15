@@ -12,15 +12,21 @@ The **Tandberg EN8090** is a High Definition MPEG-4 AVC Encoder. This connector 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | v4.4                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | v4.4                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and Configuration
 
@@ -77,7 +83,7 @@ To configure the DCF settings, in the **DataMiner Connectivity Framework** secti
 
 The DCF tables that are used are **Interfaces, Connections**, and **Connection Properties**.
 
-- The **Interfaces** table lists the Input and Output interfaces that are present in the system, and is created at the startup of the element, or when the board type changes. The input interfaces consist of an **SDI** and an **HD-SDI** interface, and the output interfaces consist of three **ASI** interfaces, and, depending on the model of the board, two **Gigabit** **interfaces** as well.
+- The **Interfaces** table lists the Input and Output interfaces that are present in the system, and is created at the startup of the element, or when the board type changes. The input interfaces consist of an **SDI** and an **HD-SDI** interface, and the output interfaces consist of three **ASI** interfaces, and, depending on the model of the board, two **Gigabit interfaces** as well.
 - The **Connections** table lists the connections that exist for the protocol. These depend on the status of the **Mux on Air** parameter, the **Video Input** parameter, and the **IP Destination** table. If **Mux On Air** is set to *Off*, no connections are defined. Otherwise, a connection is made between the **Video Input** parameter and the three **ASI** interfaces. The selected **Video Input** parameter will also be connected to the **Gigabit IP** interfaces, but this depends on the **IP Destination** table, which will contain 0 or more entries for the **IP connections**. Each entry can be set to *Port 1, Port 2, Both*, or Auto.
 - The **Connection properties** table lists the properties for the **IP Connections**. These consist of the *IP address:Port* for the output stream.
 
@@ -88,10 +94,10 @@ This page contains a list of alarm indicators, such as **LCD Not Found, Over Vol
 The page also contains the following page buttons:
 
 - **Audio Alarms:** Displays a list of all **Audio Alarm** statuses, such as **Audio A Level Clipping Right**, **Audio B Silence Timeout Left**, etc.
-- **Video Alarms:** Displays a list of all **Video** **Alarm** statuses, such as **Video Line Standard**, **Video Duplicate VBI PID**, etc.
-- **Mux** **Alarms:** Displays a list of all **Mux** **Alarm** statuses, such as **Mux Invalid PCR PID**, **Mux Comms Error**, etc.
-- **IPStreamer** **Alarms:** Displays a list of all **IPStreamer** **Alarm** statuses, such as **IPStreamer No Response**, **IPStreamer Out of Sync**, etc.
-- **Data** **Alarms:** Displays a list of all **RS232 Data Alarm** statuses, such as **Data RS232 Comms Error**, **Data RS32 Duplicate PID**, etc.
+- **Video Alarms:** Displays a list of all **Video Alarm** statuses, such as **Video Line Standard**, **Video Duplicate VBI PID**, etc.
+- **Mux Alarms:** Displays a list of all **Mux Alarm** statuses, such as **Mux Invalid PCR PID**, **Mux Comms Error**, etc.
+- **IPStreamer Alarms:** Displays a list of all **IPStreamer Alarm** statuses, such as **IPStreamer No Response**, **IPStreamer Out of Sync**, etc.
+- **Data Alarms:** Displays a list of all **RS232 Data Alarm** statuses, such as **Data RS232 Comms Error**, **Data RS32 Duplicate PID**, etc.
 - **MMI Alarms:** Displays a list of all **MMI Alarm** statuses, such as **MMI Display**, **MMI Interface**, etc.
 
 ### Service Page
@@ -131,7 +137,7 @@ There are also page buttons that lead to the following subpages:
 - **IP Settings**: Contains a table with parameters such as **IP Address of Board, Board Subnet Mask**, etc.
 - **Output Channels**: Contains a table with parameters such as **Channel Number, Destination IP**, etc.
 - **Input Channels**: Contains a table with parameters such as **Destination Input UDP Port, RTP Input**, etc.
-- **IP Port:** This page contains parameters that refer to the **IP Port settings**, such as **IP Slot Number, IP Software Version**, etc.
+- **IP port**: This page contains parameters that refer to the **IP Port settings**, such as **IP Slot Number, IP Software Version**, etc.
 
 ### MUX Page
 

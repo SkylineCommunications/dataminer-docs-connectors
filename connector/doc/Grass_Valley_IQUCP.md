@@ -10,21 +10,24 @@ The Grass Valley IQUCP is a 3G/HD/SD-SDI multi-channel IP transceiver.
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | \-           | \-                |
+| Range   | Key Features          | Based on | System Impact |
+|---------|-----------------------|----------|---------------|
+| 1.0.0.x | Initial version.      | -        | -             |
+| 1.1.0.x | Support for FW 17.3a. | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 17.0a.122_v0.36.14     |
+| Range   | Supported Firmware     |
+|---------|------------------------|
+| 1.0.0.x | **17.0**a.122_v0.36.14 |
+| 1.1.0.x | **17.3**a.134_b0.48.26 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

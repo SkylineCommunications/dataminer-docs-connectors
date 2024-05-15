@@ -16,19 +16,19 @@ When an import occurs, the connector gets the **DCF Type** and **DCF Grouping** 
 
 - **DCF Type** can either be *Full* or *Partial*:
 
-- **Partial import**: Connections will be imported from the CSV file and added/updated in the system.
+  - **Partial import**: Connections will be imported from the CSV file and added/updated in the system.
   - **Full import**: Connections will be imported from the CSV file. All the existing connections and their properties that are not in the CSV file will be removed from the system.
 
 - **DCF Grouping** is used to "group" connections. It is not recommended to have the same connection(s) in different groupings. When this happens, there is a synchronizing mechanism that ensures that if the connection is removed, it will also be removed from the other groupings that were previously imported. It is the responsibility of the user to not import overlapping connections and keep the synchronization in mind.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                                                 | No                  | Yes                     |
-| 2.0.0.x \[Obsolete\] | This range is used by DataMiner Infrastructure Discovery and Provisioning (IDP). | No                  | Yes                     |
-| 2.0.1.x \[Obsolete\] | Support for Unicode characters.                                                  | No                  | Yes                     |
-| 2.0.2.x \[IDP ONLY\] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6.                      | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version. | No | Yes |
+| 2.0.0.x [Obsolete] | This range is used by DataMiner Infrastructure Discovery and Provisioning (IDP). | No | Yes |
+| 2.0.1.x [Obsolete] | Support for Unicode characters. | No | Yes |
+| 2.0.2.x [IDP ONLY] | Increased minimum DataMiner version to 10.0.0.0 - 9517 CU6. | No | Yes |
 
 ## Installation and configuration
 

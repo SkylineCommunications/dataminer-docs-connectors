@@ -55,7 +55,7 @@ Further down, there are two tables on this page. The first table contains all th
 
 ### Last week Table page
 
-This page contains the **Last** **Week** **Graph** table. This table is used in the background for the Portal. All session data is filled in for each user for the last 7 days. Below the table there is a button **Clear Last Week Table**.
+This page contains the **Last Week Graph** table. This table is used in the background for the Portal. All session data is filled in for each user for the last 7 days. Below the table there is a button **Clear Last Week Table**.
 
 ### Connection Server page
 

@@ -12,15 +12,21 @@ The connector retrieves data via **serial communication TCP/IP** and monitors th
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | D163995V2.066.25            |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | D163995V2.066.25       |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -52,15 +58,15 @@ The connector contains 5 pages.
 
 ### General
 
-This page displays device-specific parameters, such as **Firmware version**, **Calendar/Clock**, **Device Name,** **Mute/Unmute, Voltage, Remote Access, Mute Indicator** and **Temperature**.
+This page displays device-specific parameters, such as **Firmware version**, **Calendar/Clock**, **Device Name, Mute/Unmute, Voltage, Remote Access, Mute Indicator** and **Temperature**.
 
 ### Status and System
 
-This page displays the system status, with amongst others the following parameters: **Local Oscillator** **Frequency**, **Input/Output Frequency Indicator** and **Input/Output Frequency Range**. The configuration of the different units is displayed: **Unit Event Log**, **Unit Attenuation, Unit Frequency Configuration** and **Unit Alarm.**
+This page displays the system status, with amongst others the following parameters: **Local Oscillator Frequency**, **Input/Output Frequency Indicator** and **Input/Output Frequency Range**. The configuration of the different units is displayed: **Unit Event Log**, **Unit Attenuation, Unit Frequency Configuration** and **Unit Alarm.**
 
 ### Logger
 
-On this page, the table with the followings columns/parameters represents the Unit Event Log: **Index**, **Entry** **Queried**, **Event Desciption** and **Date/Time.**
+On this page, the table with the followings columns/parameters represents the Unit Event Log: **Index**, **Entry Queried**, **Event Description** and **Date/Time.**
 
 If the entry 00 is queried, the unit returns the number of log entries currently in the log. Otherwise, the unit responds with the date, time and a code indicating the event which has occurred.
 

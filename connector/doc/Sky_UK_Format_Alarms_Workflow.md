@@ -12,9 +12,21 @@ To use this connector, create a service that uses it as the service definition, 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -30,22 +42,24 @@ Elements/Parameters:
 
 - Imagine Communications EPIC MV
 
-- **Video AFD Missing State (PiP)**
+  - **Video AFD Missing State (PiP)**
   - **Video AFD Format State (PiP)**
 
 - [Sky UK VICC](xref:Connector_help_Sky_UK_VICC) (Follow element)
+
   - **Type of Material**
   - **Widescreen Signaling Format**
   - **Widescreen Signaling Mode**
 
 - [Sky UK SSR](xref:Connector_help_Sky_UK_VICC)
+
   - **Wide Screen (Current Events)**
 
 ## Usage
 
 ### Alarms
 
-This page displays the **ALPB Table** with the alarms from each element that was configured for the service. The table displays the **Cause**, **Alarm State**, **Channel,** **Suggested Action** and **Target UI.**
+This page displays the **ALPB Table** with the alarms from each element that was configured for the service. The table displays the **Cause**, **Alarm State**, **Channel, Suggested Action** and **Target UI.**
 
 ### Device Data
 

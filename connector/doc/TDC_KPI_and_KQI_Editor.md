@@ -14,9 +14,21 @@ This connector is a virtual connector. Other than the configuration on the **Gen
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.X          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -50,7 +62,7 @@ It also includes the following page buttons:
 
     - **Generate Log File**: Enables the creation of .txt files with information about the processing results.
     - **Log Store Time**: If log files were generated, the ones older than the Log Store Time will be zipped and deleted or simply deleted, depending on the **Action Log Files** setting.
-    - **Action Log Files**: Allows you to choose beween zipping or just deleting the log files older than the Log Store Time. This is done automatically after the **Next Get Value** occurs. Click the **Execute Now** button to have the verification done immediately at the moment the button is clicked, and then automatically afterwards.
+    - **Action Log Files**: Allows you to choose between zipping or just deleting the log files older than the Log Store Time. This is done automatically after the **Next Get Value** occurs. Click the **Execute Now** button to have the verification done immediately at the moment the button is clicked, and then automatically afterwards.
     - **Set Prev Period:** Allows you to set the previous **Next Get Value** in order to trigger previous period calculation.
     - **Average Trend Interval**: Set this value and then click the **Apply All** button in order to set the **Average Trend Interval Type** column for all the rows.
 
@@ -64,7 +76,7 @@ After the necessary information has been provided, it will be validated. Validat
 
 - The **DMA ID\Element ID\Parameter ID** is invalid (parameter ID is not correct, parameter is not being trended or parameter is a table column).
 - The parameter ID refers to a table, but you have not entered the **Column ID** and selected the **Table Indexes.**
-- The **Recurrence Range Period** is set to *Yes,* but the **Recurrence Start** **and** **End Dates** are not filled in or the selected dates do not allow the calculation of the **Next Get Value** (time when the query to the database is done).
+- The **Recurrence Range Period** is set to *Yes,* but the **Recurrence Start and End Dates** are not filled in or the selected dates do not allow the calculation of the **Next Get Value** (time when the query to the database is done).
 - The **Trending Type** is *Real Time*, but for that parameter only average trending is activated, or vice versa. Check the logging for more information.
 
 > [!NOTE]

@@ -16,7 +16,7 @@ The connector can be used to configure, control and view the XPRF14-FR router sy
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.1 \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.1 [SLC Main]   | Initial version | No                  | Yes                     |
 
 ### Product Info
 

@@ -16,33 +16,25 @@ This connector supports features across all device layers.
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Device Firmware Version</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><p>Hardware Version: 1705160830/003</p>
-<p>Parameter Version: 7</p></td>
-</tr>
-</tbody>
-</table>
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Hardware Version: 1705160830/003<br>Parameter Version: 7 |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+
+## Configuration
+
+### Connections
 
 #### SNMP Main Connection
 
@@ -54,8 +46,8 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **IP port**: The IP port of the device (default: 161);
-- **Read Community**: The Read community string to read data from the device (default: public);
+- **IP port**: The IP port of the device (default: 161).
+- **Read Community**: The Read community string to read data from the device (default: public).
 - **Write Community**: The Write community string to write data to the device. (default: private).
 
 ## Usage
@@ -106,7 +98,7 @@ A sub set of pages where created in order to provide additional configuration fe
 
 ### Flow
 
-The **Flow** page allows a user to check and configure information related with **Flow Services,** **Flow Mac Learning,** **CPU Rate Limiting** and **CPU Rate Statistics**.
+The **Flow** page allows a user to check and configure information related with **Flow Services**, **Flow Mac Learning**, **CPU Rate Limiting**, and **CPU Rate Statistics**.
 
 ### MPLS
 
@@ -136,7 +128,7 @@ The Virtual Private Local Area Network Switch displays information regarding the
 
 ### IP
 
-This page provides information regarding the **Internet Protocol setup,** **routes,** **IPv4 and IPv6 Interfaces** and **IP Statistics**.
+This page provides information regarding the **Internet Protocol setup**, **routes**, **IPv4 and IPv6 Interfaces** and **IP Statistics**.
 
 ### ICMP
 
@@ -144,7 +136,7 @@ This page allows a user to check **ICMP statistics.**
 
 ### ISIS
 
-This page allows a user to verify and setup the ISIS configurations for this device. The user may find information regarding the **ISIS Router, ISIS LSP Summary, ISIS LSP TLV and ISIS System Statistics.**
+This page allows a user to verify and setup the ISIS configurations for this device. The user may find information regarding the **ISIS Router, ISIS LSP Summary, ISIS LSP TLV and ISIS System Statistics**.
 
 ### OSPF
 

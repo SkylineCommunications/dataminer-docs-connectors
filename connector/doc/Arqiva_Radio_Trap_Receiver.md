@@ -12,15 +12,21 @@ The **Arqiva Radio Trap Receiver** connector captures the **SNMP** alarm traps f
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -44,6 +50,6 @@ SNMP Settings:
 
 ### General
 
-This page contains the **Alarm Traps** table, which displays all alarms that came in through traps. The **ID**, **Timestamp**, **Source** **IP**, **OID**, **Radio** **link**, **Alarm** **condition**, **Alarm** **state** and **ECAM** **cct** **number** of the trap are displayed in the different columns.
+This page contains the **Alarm Traps** table, which displays all alarms that came in through traps. The **ID**, **Timestamp**, **Source IP**, **OID**, **Radio link**, **Alarm condition**, **Alarm state** and **ECAM cct number** of the trap are displayed in the different columns.
 
 With the **Clear Table** button above the table, you can delete all rows from the table.

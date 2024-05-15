@@ -14,7 +14,7 @@ This connector monitors the activity of **DDA286** Networkable Switching Control
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x \[SLC Main\] | Initial Version | No                  | False                   |
+| 2.0.0.x [SLC Main]   | Initial Version | No                  | False                   |
 
 ### Product Info
 
@@ -58,6 +58,13 @@ In addition, you can also view the state of the **Alarms** and there is a button
 This page displays information about the **Position**, the **Locked** state and the **Fault** of the different regular switches of the device.
 
 The page also allows you to change the **Position** of the regular switches.
+
+On the subpage **Route Calculation**, you can upload a CSV file to change the switch paths. The CSV file should use the following format:
+
+```
+IP Address 1;IP Address 2
+IP Address X;IP Address Y
+```
 
 ### Multi-Position Switches
 

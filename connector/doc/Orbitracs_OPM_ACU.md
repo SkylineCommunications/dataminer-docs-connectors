@@ -12,15 +12,21 @@ This connector uses **SNMP** to extract the relevant information used to monitor
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | RU-4.1                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | RU-4.1                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -45,7 +51,7 @@ SNMP Settings:
 
 ### General
 
-This is the default page. Here some **general** information is displayed. This includes the **Station Name and Location (Latitude, Longitude and Altitude), UTC Clock,** present pointing satellite **(Orbit Position,** **Satellite Name and Offset** (fine-pointing offset)), station **Clock Status** (GPS synchronized), button to force the clock synchronization.
+This is the default page. Here some **general** information is displayed. This includes the **Station Name and Location (Latitude, Longitude and Altitude), UTC Clock,** present pointing satellite **(Orbit Position, Satellite Name and Offset** (fine-pointing offset)), station **Clock Status** (GPS synchronized), button to force the clock synchronization.
 
 **Repointing**:
 
@@ -56,7 +62,7 @@ This is the default page. Here some **general** information is displayed. This i
 Following **settings** are provided with page buttons:
 
 - **Console**: **Console Line,** allow display the on-going process after **Force Sync**, **Repointing** or **Fine-pointing**.
-- **Maintenance:** **Start** and **operate** the OPM in **DOS mode**.
+- **Maintenance: Start** and **operate** the OPM in **DOS mode**.
 
 ### Fine-pointing
 

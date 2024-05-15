@@ -12,10 +12,10 @@ This connector provides status data for input 1 and input 2. It is also possible
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | This version treats the boards contained within the chassis as DVEs.                                                           | No                  | Yes                     |
-| 2.0.0.x          | This version should be used to monitor each board separately (i.e. each board is represented by a single independent element). | No                  | Yes                     |
+| Range   | Description                                                                                                                    | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | This version treats the boards contained within the chassis as DVEs.                                                           | No              | Yes                 |
+| 2.0.0.x | This version should be used to monitor each board separately (i.e. each board is represented by a single independent element). | No              | Yes                 |
 
 ### Product Info
 
@@ -24,54 +24,41 @@ This connector provides status data for input 1 and input 2. It is also possible
 | 1.0.0.x          | Unknown                     |
 | 2.0.0.x          | 5.3. .6                     |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections - Range 1.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td><h4 id="snmp-main-connection">SNMP main connection</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>Device address</strong>: Not required.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>Port number</strong>: The port of the connected device, by default <em>161</em>.</li>
-<li><strong>Get community string</strong>: The community string used to read from the device. The default value is <em>public</em>.</li>
-<li><strong>Set community string</strong>: The community string used to write on the device. The default value is <em>private.</em></li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td><h4 id="snmp-main-connection-1">SNMP main connection</h4>
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-<li><strong>Device address</strong>: The ID of the board to be monitored.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>Port number</strong>: The port of the connected device, by default <em>161</em>.</li>
-<li><strong>Get community string</strong>: The community string used to read from the device. The default value is <em>public</em>.</li>
-<li><strong>Set community string</strong>: The community string used to write on the device. The default value is <em>private.</em></li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### SNMP main connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+- **Device address**: Not required.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used to read from the device. The default value is *public*.
+- **Set community string**: The community string used to write on the device. The default value is *private.*
+
+### Connections - Range 2.0.0.x
+
+#### SNMP main connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+- **Device address**: The ID of the board to be monitored.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used to read from the device. The default value is *public*.
+- **Set community string**: The community string used to write on the device. The default value is *private.*
 
 ## Usage
 

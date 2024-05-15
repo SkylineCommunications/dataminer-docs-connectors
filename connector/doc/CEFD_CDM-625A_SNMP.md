@@ -12,21 +12,28 @@ The connector layout is designed to look similar to the web interface of the dev
 
 ### Version Info
 
-| **Range**     | **Description**      | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.     | No                  | No                      |
-| 1.0.1.x \[SLC Main\] | Cassandra compliant. | No                  | Yes                     |
+| Range              | Key Features        | Based on | System Impact |
+|--------------------|---------------------|----------|---------------|
+| 1.0.0.x            | Initial version     | -        | -             |
+| 1.0.1.x [SLC Main] | Cassandra compliant | -        | -             |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                    |
+| Range     | Device Firmware Version                                                        |
 |------------------|--------------------------------------------------------------------------------|
 | 1.0.0.x 1.0.0.8  | Firmware version 1.2.4 (based on manuals of the device) Firmware version 1.4.2 |
 | 1.0.1.x          | Firmware version 1.2.4 (based on manuals of the device) Firmware version 1.4.2 |
 
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | See table below.        |
+| 1.0.1.x   | No                  | Yes                     | -                     | See table below.        |
+
 ### Exported connectors
 
-| **Exported Connector**    | **Description**          |
+| Exported Connector       | Description              |
 |--------------------------|--------------------------|
 | CEFD CDM-625A SNMP (FSK) | FSK Functionality Module |
 
@@ -152,7 +159,7 @@ This page allows you to configure parameters related to LAN IP. It consists of f
 - VLAN Table
 
   - **VLAN ID**: This parameter is read-only and reflects the ID value assigned in the "Per Port Configuration" section of this page (any ID has a value range of 0001-4095).
-  - **Port 1** through **Port 4**: Use the drop-down menu to set the port to *Untagged*, *Tagged*, or *Filtered***.**
+  - **Port 1** through **Port 4**: Use the drop-down menu to set the port to *Untagged*, *Tagged*, or *Filtered*.
   - **VLAN Row Status**: Contains a button that can be used to delete this active ID.
   - **Create VLAN**: This button is displayed below the table and allows you to create a new VLAN ID.
 
@@ -298,7 +305,7 @@ The page consists of the following sections:
 
 Via page buttons, you can access the following subpages:
 
-- **Alarm Masking**: Contains toggle buttons that allow you to set specific alarms to *Masked* or *Active***.**
+- **Alarm Masking**: Contains toggle buttons that allow you to set specific alarms to *Masked* or *Active*.
 - **Packet Processor**: Allows you to set the level of logging of the packet processor elements of the device. The **Packet Event Logs** table displays the log events.
 
 ### Status - Traffic Statistics

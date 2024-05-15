@@ -10,21 +10,21 @@ This is a generic connector intended to monitor display devices using the TSL pr
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                        | **Based on** | **System Impact** |
-|-----------|---------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | \- Initial version. - Features: republish tallies, add publisher, add functions, and process CSV files. | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | - Initial version. <br>- Features: republish tallies, add publisher, add functions, and process CSV files. | - | - |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -33,6 +33,7 @@ This is a generic connector intended to monitor display devices using the TSL pr
 SMART-SERIAL CONNECTION:
 
 - Direct connection:
+
   - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
   - **Databits**: Databits specified in the manual of the device, e.g. *7*.
   - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
@@ -58,4 +59,4 @@ On the **Messages** page, you can view the connection state and the messages rec
 
 ## Notes
 
-This connector **requires** **.NET 4.0 or higher**, as System.Web.Extensions.dll must be available.
+This connector **requires .NET 4.0 or higher**, as System.Web.Extensions.dll must be available.

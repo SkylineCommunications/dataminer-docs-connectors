@@ -10,21 +10,21 @@ The Paneda multiplexer looks at the multiplexing compartment for each provider.
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 61967b0c (Rev.113)     |
+| 1.0.0.x   | h-2024-02-09           |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -66,8 +66,10 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-On the **General** page of this connector, you can configure the **API Token** and **Provider** to access the device.
+On the **General** page of this connector, you can configure the **API Token** and **Provider** to access the device. You can also set the **Service Configuration** page of the element to be shown or hidden.
 
 The **Debug** page contains basic information about the communication with the device, as well as specific logs for every entry.
 
-The other pages contain status information for the multiplexer and general information.
+The **Service Configuration** page contains raw information regarding input sources, encoder profiles, MSC items, MSC layouts, and the active service configuration. It also contains controls to create new input sources, encoder profiles, MSC items, and MSC layouts, and it allows you to activate an existing MSC layout. These controls can be used manually, but as these all require JSON snippets, they can also be set from an external Automation script (outside of the connector).
+
+The remaining pages contain status information for the multiplexer and general information.

@@ -12,15 +12,21 @@ The connector has a serial communication to the device and allows the end user t
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 2.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.0.x          | 1.092                       |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 1.092                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -54,8 +60,8 @@ This page contains general information about the device together with some gener
 
 ### Configuration Page
 
-This page displays the configuration parametes of the device.
+This page displays the configuration parameters of the device.
 
 ### Alarms Page
 
-This page contains the currenlty active and latched alarms on the device.
+This page contains the currently active and latched alarms on the device.

@@ -12,11 +12,11 @@ The **2Wcom Flex DSR02+** is an integrated receiver-decoder (IRD). This connecto
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                   |
+| Range     | Supported Firmware                       |
 |-----------|------------------------------------------|
 | 1.0.0.x   | ARM FW:04.78, DSP FW:3.62, FPGA FW: 2.16 |
 
@@ -24,7 +24,7 @@ The **2Wcom Flex DSR02+** is an integrated receiver-decoder (IRD). This connecto
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

@@ -12,10 +12,11 @@ The Makito X encoder allows highly flexible configurations for remote installati
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact** |
-|----------------------|------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.       | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Polling control added. | 1.0.0.2      | \-                |
+| Range              | Key Features                  | Based on | System Impact |
+|--------------------|-------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.              | -        | -             |
+| 1.0.1.x            | Polling control added.        | 1.0.0.2  | -             |
+| 1.0.2.x [SLC Main] | HTTP polling interface added. | 1.0.1.1  | -             |
 
 ### Product Info
 
@@ -23,13 +24,15 @@ The Makito X encoder allows highly flexible configurations for remote installati
 |-----------|------------------------|
 | 1.0.0.x   | 2.2.2-1                |
 | 1.0.1.x   | 2.6.0-2                |
+| 1.0.2.x   | 2.6.0-2                |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     |
+|-----------|---------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     |
+| 1.0.1.x   | No                  | Yes                     |
+| 1.0.2.x   | Yes                 | Yes                     |
 
 ## Configuration
 
@@ -118,3 +121,11 @@ Two page buttons also provide access to subpages with information about **DNS** 
 ### Polling Control
 
 This page allows to define which tables the connector should retrieve from the device.
+
+### DCF Connections
+
+#### External Connections
+
+In version 1.0.2.2, DCF interfaces are generated for each stream in order to facilitate DCF connections.
+
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).

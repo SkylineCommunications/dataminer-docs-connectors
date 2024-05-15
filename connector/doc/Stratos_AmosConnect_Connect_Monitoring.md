@@ -12,15 +12,21 @@ This connector uses an **Oracle Connection** to connect with the database.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                          |
-|------------------|----------------------------------------------------------------------|
-| 1.0.0.x          | 11.2.0.2.0 Oracle Database 11g Release 11.2.0.2.0 - 64bit Production |
+| Range   | Supported Firmware                                                   |
+|---------|----------------------------------------------------------------------|
+| 1.0.0.x | 11.2.0.2.0 Oracle Database 11g Release 11.2.0.2.0 - 64bit Production |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -42,7 +48,7 @@ SERIAL CONNECTION:
 
 ### Main
 
-At the top of this page, you can configure the parameters needed to connect to the database: the **Username**, **Password** and **Oracle System ID (SID)**.
+At the top of this page, you can configure the parameters needed to connect to the database: the **Username**, **Password**, and **Oracle System ID (SID)**.
 
 The page contains several tables:
 

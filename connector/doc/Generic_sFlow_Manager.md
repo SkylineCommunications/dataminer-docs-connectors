@@ -12,17 +12,17 @@ The Generic sFlow Manager is used to manage the different Generic sFlow Collecto
 
 | **Range**            | **Key Features**                                                                          | **Based on** | **System Impact**       |
 |----------------------|-------------------------------------------------------------------------------------------|--------------|-------------------------|
-| 1.0.0.x              | Initial version                                                                           | \-           | \-                      |
+| 1.0.0.x              | Initial version                                                                           | -            | -                       |
 | 1.0.1.x              | Data stored in Elasticsearch database                                                     | 1.0.0.3      | Requires Elasticsearch. |
-| 1.0.2.x \[SLC Main\] | New columns added to the Persistent Flows table, in order to display the interface names. | 1.0.1.1      |                         |
+| 1.0.2.x [SLC Main]   | New columns added to the Persistent Flows table, in order to display the interface names. | 1.0.1.1      |                         |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**   | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components       | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Generic sFlow Collector | \-                      |
-| 1.0.1.x   | No                  | Yes                     | Generic sFlow Collector | \-                      |
-| 1.0.2.x   | No                  | Yes                     | Generic sFlow Collector | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Generic sFlow Collector | -                       |
+| 1.0.1.x   | No                  | Yes                     | Generic sFlow Collector | -                       |
+| 1.0.2.x   | No                  | Yes                     | Generic sFlow Collector | -                       |
 
 ## Configuration
 

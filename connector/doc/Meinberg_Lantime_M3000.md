@@ -12,24 +12,24 @@ The connector uses an SNMP connection to monitor and configure the Meinberg Lant
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                          | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                                          | \-           | \-                |
-| 1.0.1.x              | DVE name change, firmware version compatibility update, and port editing. | 1.0.0.5      | \-                |
+| Range              | Key Features                                                              | Based on | System Impact |
+|--------------------|---------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version.                                                          | -        | -             |
+| 1.0.1.x            | DVE name change, firmware version compatibility update, and port editing. | 1.0.0.5  | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                               |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | 2.9.2.r1.588 7.00.001 - 7.00.007 (starting from 7.00.005, there is a new REST API available, which is used to retrieve some PTP parameters)          |
-| 1.0.1.x   | 2.9.2.r1.588 7.00.001 - 7.00.007 (starting from 7.00.005, there is a new REST API available, which is used to retrieve some PTP parameters) 7.02.004 |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | 2.9.2.r1.588 7.00.001 - 7.00.007 (starting from 7.00.005, there is a new REST API available, which is used to retrieve some PTP parameters) |
+| 1.0.1.x | 2.9.2.r1.588 7.00.001 - 7.00.007 (starting from 7.00.005, there is a new REST API available, which is used to retrieve some PTP parameters) 7.02.004 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**               |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                   |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | Meinberg Lantime M3000 - PTPv2 Module |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | Meinberg Lantime M3000 - PTPv2 Module |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | Meinberg Lantime M3000 - PTPv2 Module |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | Meinberg Lantime M3000 - PTPv2 Module |
 
 ## Configuration
 

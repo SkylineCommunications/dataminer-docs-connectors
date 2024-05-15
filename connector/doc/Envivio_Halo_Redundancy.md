@@ -6,43 +6,28 @@ uid: Connector_help_Envivio_Halo_Redundancy
 
 ## About
 
-The **Envivio Halo Redundancy** will retrieve a list of configured "**Envivio Halo**" elements on the DMS and the user can register on **max. 2** of those elements to receive the alarm status. When both of the configured elements have the same alarm, the redundancy element will also show the alarm in the Alarm table.
+The **Envivio Halo Redundancy** connector will retrieve a list of configured **Envivio Halo** elements in the DMS. You can then subscribe to **maximum 2** of those elements to receive the alarm status. When both of the configured elements have the same alarm, the redundancy element will also show the alarm in the Alarm table.
 
 ## Creation
 
-It is a **virtual element**, no IP is needed.
+This connector uses a virtual connection and does not require any input during element creation.
 
 ## Timing
 
-Every hour the list of configured "Envivio Halo" elements will be updated.
+Every hour, the list of configured Envivio Halo elements will be updated.
 
-Every 5min there is a check if the elements are active or not and clean alarm entries if needed.
+Every 5 minutes, the connector checks if the elements are active or not and cleans alarm entries if needed.
 
 ## Usage
 
-The element contains 5 pages :
+The element contains 5 pages:
 
-- Redundancy Config:
+- **Redundancy Config**: Provides an overview of all the installed Envivio Halo elements that are using the "production" version. Using the **Registration** button, it is possible to enable or disable the registration on the alarms table of maximum 2 elements.
 
-Provides an overview of all the installed "Envivio Halo" elements which are using the "production" version. Using the Registration button, it is possible to enable or disable the registration on the alarms table of maximum 2 elements.
+- **Services**/**Outputs**/**Recording**: These pages are currently not used yet.
 
-- Services:
+- **Alarms**: This page provides a summary alarm overview of the configured Envivio Halo elements. When the **same alarms** are active on both devices, these will also be shown in the alarm table for the Halo Redundancy.
 
-This page is not being filled in at the moment.
-
-- Outputs
-
-
-This page is not being filled in at the moment.
-
-- Recording:
-
-This page is not being filled in at the moment
-
-- Alarms
-
-This page provides a summary alarm overview of the configured "Envivio Halo" elements. When the **same alarms** are active on both devices, it will be shown also in this alarm table of the Halo Redundancy.
-
-## Latest Verison
+## Latest Version
 
 1.0.0.3

@@ -12,7 +12,7 @@ This connector will allow the monitoring and configuration of the AirCo through 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector will allow the monitoring and configuration of the AirCo through 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -58,8 +58,6 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-On the **General** page you can find an overview of all the KPI's of the Airco such as the current temperatures as well as the possibility to configure them.
+On the **General** page you can find an overview of all the KPIs of the Airco such as the current temperatures as well as the possibility to configure them.
 
 An overview of the alarms can be found on the **Alarm** page.
-
-

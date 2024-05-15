@@ -14,10 +14,10 @@ This HTTP connector is made specifically for YLE and consists of three major com
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                           | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | \- Web service to receive JSON via HTTP. - API to request Source list via HTTP. - HTTP session to send JSON notifications. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | \- Unicode support.                                                                                                        | 1.0.0.7      | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | - Web service to receive JSON via HTTP. <br>- API to request Source list via HTTP. <br>- HTTP session to send JSON notifications. | - | - |
+| 1.0.1.x [SLC Main] | - Unicode support. | 1.0.0.7 | - |
 
 ### Product Info
 
@@ -28,10 +28,10 @@ This HTTP connector is made specifically for YLE and consists of three major com
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                         | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                             | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- Finnish Broadcasting Company Order Manager | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \- Finnish Broadcasting Company Order Manager | \-                      |
+| 1.0.0.x   | No                  | Yes                     | - Finnish Broadcasting Company Order Manager  | -                      |
+| 1.0.1.x   | No                  | Yes                     | - Finnish Broadcasting Company Order Manager  | -                      |
 
 ## Configuration
 

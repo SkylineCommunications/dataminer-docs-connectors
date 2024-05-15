@@ -10,10 +10,10 @@ The Harmonic ProView 8000 is an integrated receiver-decoder (IRD). This connecto
 
 ### Version Info
 
-| **Range** | **Description**                           |
-|-----------|-------------------------------------------|
-| 1.0.0.x   | Initial version                           |
-| 1.1.0.x   | Version supporting FW version 1.3.0.0.25. |
+| Range   | Description                               |
+|---------|-------------------------------------------|
+| 1.0.0.x | Initial version                           |
+| 1.1.0.x | Version supporting FW version 1.3.0.0.25. |
 
 ### Product Info
 
@@ -266,7 +266,7 @@ This subpage contains parameters related to the video decoder. The following par
   - *Fixed PID*: Allows you to select a video PID by its number (1-8190).
   - *Automatic*: Selects the video PID with the lowest number in the PMT. PID selection occurs whenever there is any change in the PMT. (When Service mode is *Automatic*, the PID Selection Mode default is *Automatic*.)
 
-- **Video PID:** The video PID value**.**
+- **Video PID:** The video PID value.
 
 - **Video Codec**: Determines the video decoding codec (*MPEG-2*, *AVC* or *Automatic* (default)).
 

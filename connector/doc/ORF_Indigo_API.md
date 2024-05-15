@@ -14,7 +14,7 @@ The ORF Indigo API communicates via HTTP.
 
 | **Range**            | **Key Features**     | **Based on** | **System Impact** |
 |----------------------|----------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Resource management. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Resource management. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The ORF Indigo API communicates via HTTP.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

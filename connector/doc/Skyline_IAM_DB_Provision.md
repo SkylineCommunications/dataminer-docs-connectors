@@ -12,9 +12,21 @@ The **Skyline IAM DB Provision** element will retrieve data from the IAMDB MySQL
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -26,7 +38,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Configuration
 
-On the **Settings** page of the element, you can add timestamps in the **Refresh Table**, which will determine when the connector starts provisioning. The timestamps need to be in the **HH:MM** **24-hour** format.
+On the **Settings** page of the element, you can add timestamps in the **Refresh Table**, which will determine when the connector starts provisioning. The timestamps need to be in the **HH:MM 24-hour** format.
 
 ## Usage
 

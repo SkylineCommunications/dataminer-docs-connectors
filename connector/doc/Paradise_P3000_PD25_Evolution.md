@@ -14,17 +14,17 @@ The Paradise P3000 PD25 Evolution connector retrieves data via **SNMP**.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                 | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                                                                                                                 | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Added Firmware Version Controller to support different versions Added new Firmware ParametersReorganized pages without moving parameters across | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | No | Yes |
+| 1.0.1.x [SLC Main] | - Added Firmware Version Controller to support different versions. <br>- Added new firmware parameters.<br>Reorganized pages without moving parameters across. | No | Yes |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x              | 1.6.57b                     |
-| 1.0.1.x \[SLC Main\] | 1.6.57b, 1.6.74             |
+| Range              | Device Firmware Version |
+|--------------------|-------------------------|
+| 1.0.0.x            | 1.6.57b                 |
+| 1.0.1.x [SLC Main] | 1.6.57b, 1.6.74         |
 
 ## Installation and configuration
 
@@ -41,8 +41,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device (default value if not overridden in the connector: *public*).
-- **Set community string**: The community string used when setting values on the device (default value if not overridden in the connector: *private*).
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
 
 ## Usage
 

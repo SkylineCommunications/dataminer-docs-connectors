@@ -8,7 +8,7 @@ Tandberg nCompass is an open systems network monitoring solution that supervises
 
 The top-level network monitoring function allows early visibility and identification of network and MPEG service issues.
 
-The 4.0.1.x version is compatible with nCompass versions 5.x, 6.x and 8.x
+The 4.0.4.x version is compatible with nCompass versions 5.x, 6.x, and 8.x
 
 The Tandberg nCompass uses SNMP and serial communication to get information about devices and alarms. It uses SOAP to display the profiles and streams. The schedule of these transport streams and system streams is displayed in a table. The connector allows the user to clear the schedule starting from a desired time, or to activate profiles. Events are retrieved from the device and an action is automatically executed if an event has occurred.
 
@@ -16,40 +16,46 @@ The Tandberg nCompass uses SNMP and serial communication to get information abou
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
-|----------------------|---------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                             | \-           | \-                |
-| 1.1.0.x              | Assign severity to SNMP traps               | 1.0.0.2      | \-                |
-| 2.0.0.x              | SNMP and serial connections                 | \-           | \-                |
-| 2.1.0.x              | Creates DVEs                                | 1.1.0.2      | \-                |
-| 3.1.0.x              | nCompass SNMP and SOAP API                  | 2.1.0.8      | \-                |
-| 4.0.0.x              | Fixed problems with SOAP requests/responses | 3.1.0.6      | \-                |
-| 4.0.1.x \[SLC Main\] | Connector review                               | 4.0.0.14     | \-                |
-| **4.0.2.x**          | **Do not use this range!**                  | 4.0.1.20     | \-                |
+| Range              | Key Features                                | Based on | System Impact |
+|--------------------|---------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version                             | -        | -             |
+| 1.1.0.x            | Assign severity to SNMP traps               | 1.0.0.2  | -             |
+| 2.0.0.x            | SNMP and serial connections                 | -        | -             |
+| 2.1.0.x            | Creates DVEs                                | 1.1.0.2  | -             |
+| 3.1.0.x            | nCompass SNMP and SOAP API                  | 2.1.0.8  | -             |
+| 4.0.0.x            | Fixed problems with SOAP requests/responses | 3.1.0.6  | -             |
+| 4.0.1.x            | Connector review                            | 4.0.0.14 | -             |
+| **4.0.2.x**        | **Do not use this range!**                  | 4.0.1.20 | -             |
+| 4.0.3.x            | Fixed Basic Streams and Components Table    | 4.0.1.32 | -             |
+| 4.0.4.x [SLC Main] | User-defined label for Device Table         | 4.0.3.1  | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.1.0.x   | \-                     |
-| 2.0.0.x   | \-                     |
-| 2.1.0.x   | \-                     |
-| 3.1.0.x   | \-                     |
-| 4.0.0.x   | \-                     |
-| 4.0.1.x   | 5.x, 6.x and 8.x       |
+| 1.0.0.x   | -                      |
+| 1.1.0.x   | -                      |
+| 2.0.0.x   | -                      |
+| 2.1.0.x   | -                      |
+| 3.1.0.x   | -                      |
+| 4.0.0.x   | -                      |
+| 4.0.1.x   | 5.x, 6.x, and 8.x      |
+| 4.0.3.x   | 5.x, 6.x, and 8.x      |
+| 4.0.4.x   | 5.x, 6.x, and 8.x      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**  |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components      |
 |-----------|---------------------|-------------------------|-----------------------|--------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                       |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                       |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                       |
-| 2.1.0.x   | No                  | Yes                     | \-                    | Tandberg nCompass Device |
-| 3.1.0.x   | No                  | Yes                     | \-                    | Tandberg nCompass Device |
-| 4.0.0.x   | No                  | Yes                     | \-                    | Tandberg nCompass Device |
-| 4.0.1.x   | No                  | Yes                     | \-                    | Tandberg nCompass Device |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                        |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                        |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                        |
+| 2.1.0.x   | No                  | Yes                     | -                     | Tandberg nCompass Device |
+| 3.1.0.x   | No                  | Yes                     | -                     | Tandberg nCompass Device |
+| 4.0.0.x   | No                  | Yes                     | -                     | Tandberg nCompass Device |
+| 4.0.1.x   | No                  | Yes                     | -                     | Tandberg nCompass Device |
+| 4.0.3.x   | No                  | Yes                     | -                     | Tandberg nCompass Device |
+| 4.0.4.x   | No                  | Yes                     | -                     | Tandberg nCompass Device |
 
 ## Configuration
 

@@ -12,13 +12,13 @@ The Vodafone Deutschland GmbH Active Service Configuration Platform connector co
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- [Vodafone Kabel Deutschland GmbH IP GW Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service) <br>- [Vodafone Kabel Deutschland GmbH SAT DL GW Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service) <br>- [Vodafone Kabel Deutschland GmbH Pre-Encoding Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service) <br>- [Vodafone Kabel Deutschland GmbH IP PEER DS Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_DS_Service) <br>- [Vodafone Kabel Deutschland GmbH IP PEER OS Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_OS_Service) <br>- [Vodafone Kabel Deutschland GmbH Qbit Radio Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service) <br>- [Vodafone Kabel Deutschland GmbH TAG Radio Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service) <br>- [Vodafone Kabel Deutschland GmbH KEVAG Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | - [Vodafone Kabel Deutschland GmbH IP GW Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service) <br>- [Vodafone Kabel Deutschland GmbH SAT DL GW Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service) <br>- [Vodafone Kabel Deutschland GmbH Pre-Encoding Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Pre-Encoding_Service) <br>- [Vodafone Kabel Deutschland GmbH IP PEER DS Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_DS_Service) <br>- [Vodafone Kabel Deutschland GmbH IP PEER OS Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_OS_Service) <br>- [Vodafone Kabel Deutschland GmbH Qbit Radio Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Qbit_Radio_Service) <br>- [Vodafone Kabel Deutschland GmbH TAG Radio Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service) <br>- [Vodafone Kabel Deutschland GmbH KEVAG Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_KEVAG_Service) | -                       |
 
 ## Configuration
 
@@ -27,14 +27,6 @@ The Vodafone Deutschland GmbH Active Service Configuration Platform connector co
 #### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

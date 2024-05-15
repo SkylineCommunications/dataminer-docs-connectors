@@ -14,13 +14,13 @@ This way, the connector can increase the plasma integration load, so that it can
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**               | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                   | Exported Components     |
 |-----------|---------------------|-------------------------|-------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Mediagenix WHATS On (2.0.1.x range) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Mediagenix WHATS On (2.0.1.x range) | -                       |
 
 ## Configuration
 

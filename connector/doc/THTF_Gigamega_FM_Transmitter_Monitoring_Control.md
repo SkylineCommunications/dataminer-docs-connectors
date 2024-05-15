@@ -12,11 +12,11 @@ This connector can be used to monitor the use of FM transmitters via traps. It r
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**               |
+| Range     | Supported Firmware                   |
 |-----------|--------------------------------------|
 | 1.0.0.x   | Unknown, MIB version : July 27, 2015 |
 
@@ -24,7 +24,7 @@ This connector can be used to monitor the use of FM transmitters via traps. It r
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

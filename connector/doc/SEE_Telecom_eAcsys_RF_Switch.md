@@ -12,7 +12,7 @@ The connector uses 2 connections. The main connection (*SNMPv2*) is used for nor
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description | DCF Integration | Cassandra Compliant |
 |------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version | No                  | Yes                     |
 
@@ -22,13 +22,11 @@ The connector uses 2 connections. The main connection (*SNMPv2*) is used for nor
 |------------------|-----------------------------|
 | 1.0.0.x          | E_2.4.3                     |
 
-
-
 ## Installation and configuration
 
 ### Creation
 
-SNMP Main connection
+#### SNMP connection - Main
 
 This connector uses a Simple Network Management Protocol (**SNMP**) connection and requires the following input during element creation:
 
@@ -42,7 +40,6 @@ SNMP Settings:
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device (e.g. *public*).
 - **Set community string**: The community string used when setting values on the device (e.g. *private*).
-
 
 #### HTTP Control connection
 
@@ -60,12 +57,12 @@ HTTP CONNECTION:
 
 On this page, you can find the following parameters:
 
-- **Address RF Switch Module 1**: this parameter allows to address a particular switch slot.
-- **Path RF Switch Module 1:** allows the user to set the path of the RF Switch Module.
-- **Mode RF Switch Module 1:** allows the user to set the mode of the RF Switch Module.
-- **Voltage Main RF Switch Module 1:** displays the voltage of the Main RF Switch 1.
-- **Voltage Backup RF Switch Module 1:** displays the voltage of the Backup RF Switch 1.
-- **User Description RF Switch Module 1:** allows the user to add a description to this module. Automatically, all parameter names of this module will also include this description to allow an easy identification. Note that these names will furthermore be used throughout the DataMiner System.
+- **Address RF Switch Module 1**: This parameter allows you to address a particular switch slot.
+- **Path RF Switch Module 1**: Allows you to set the path of the RF Switch Module.
+- **Mode RF Switch Module 1**: Allows you to set the mode of the RF Switch Module.
+- **Voltage Main RF Switch Module 1**: Displays the voltage of the Main RF Switch 1.
+- **Voltage Backup RF Switch Module 1**: Displays the voltage of the Backup RF Switch 1.
+- **User Description RF Switch Module 1**: Allows you to add a description to this module. Automatically, all parameter names of this module will also include this description to allow an easy identification. Note that these names will furthermore be used throughout the DataMiner System.
 
 ### Web Interface
 

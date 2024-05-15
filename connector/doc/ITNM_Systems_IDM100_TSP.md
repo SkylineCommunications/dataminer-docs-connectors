@@ -12,10 +12,10 @@ The connector only polls the services from one of the transport streams of the I
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                | **Based on** | **System Impact**                                                                                    |
-|----------------------|---------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------|
-| 1.1.0.7              | Initial version.                                                                | \-           | \-                                                                                                   |
-| 1.1.1.x \[SLC Main\] | Normalized parameters removed. New display key for Transport Stream PIDs table. | 1.1.0.7      | \- Loss of normalized parameters. - Loss of trend and alarm data in the Transport Stream PIDs table. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.1.0.7 | Initial version. | - | - |
+| 1.1.1.x [SLC Main] | Normalized parameters removed. New display key for Transport Stream PIDs table. | 1.1.0.7 | - Loss of normalized parameters. <br>- Loss of trend and alarm data in the Transport Stream PIDs table. |
 
 ### Product Info
 
@@ -25,10 +25,10 @@ The connector only polls the services from one of the transport streams of the I
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------------------------------------------------------------------------------------------|
-| 1.1.0.x   | No                  | No                      | \-                    | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
-| 1.1.1.x   | No                  | No                      | \-                    | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.1.0.x | No | No | - | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
+| 1.1.1.x | No | No | - | [ITNM Systems IDM100 Service](xref:Connector_help_ITNM_Systems_IDM100_Service) (generated via button) |
 
 ## Configuration
 

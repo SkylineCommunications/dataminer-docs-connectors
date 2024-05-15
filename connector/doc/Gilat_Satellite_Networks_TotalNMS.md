@@ -14,17 +14,17 @@ The physical devices of the system are called CPE (Customer Peripheral Equipment
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**  |
+| Range     | Supported Firmware      |
 |-----------|-------------------------|
 | 1.0.0.x   | SkyEdge II-c NBI v5.5P2 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                            | **Exported Components**                                                                                          |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                | Exported Components                                                                                              |
 |-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | No                  | Yes                     | - [Generic Ping](xref:Connector_help_Generic_Ping) connector version 3.1.2.5 or higher (supported from version 1.0.0.2 of this connector onward) | [Gilat Satellite Networks TotalNMS - CPE](xref:Connector_help_Gilat_Satellite_Networks_TotalNMS_-_CPE) |
 
@@ -58,7 +58,7 @@ HTTP CONNECTION:
 
 TCP/IP settings
 
-- **IP port:** 443
+- **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
 
 ### Initialization
@@ -81,7 +81,7 @@ The connector uses SOAP calls to retrieve most of its data. Alarms are retrieved
 
 This connector can export a child connector based on the retrieved data (see "Exported Components" above).
 
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show Groups 900-903 and Groups 905-907 in Stream Viewer. Optionally, Group 904, Group 914, Groups 908-910, and Groups 912-913 can also be shown.
+To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer. A healthy element will show Groups 900-903, Groups 905-907, and Group 915 in Stream Viewer. Optionally, Group 904, Group 914, Groups 908-910, and Groups 912-913 can also be shown.
 
 ### General Page
 
@@ -111,9 +111,11 @@ If a CPE device was known earlier but no longer seems to be present in the **CPE
 
 After startup, the Severity column can indicate the *Unknown* state. This is expected behavior, caused by the fact that the Severity column will only be updated when an alarm trap is received. For example, when a *Major Open* alarm comes in, *Major* will be the severity. When after a number of minutes the same alarm comes in with the *Cleared* state, the new severity will be *Normal*.
 
-To see the **Subscriber Public IPv4 address**, make sure a valid VLAN ID is selected. The VLAN ID can be selected on the Settings page. In case the dropdown is empty, open Stream Viewer and wait until Group 906 is displayed in the column on the left. When Group 906 has been executed successfully, try again. The dropdown should now contain the available IDs. There is no need to change the other parameters located on that page.
+To see the **Subscriber Public IPv4 address**, make sure a valid VLAN ID is selected. The VLAN ID can be selected on the Settings page. In case the dropdown list is empty, open Stream Viewer and wait until Group 906 is displayed in the column on the left. When Group 906 has been executed successfully, try again. The dropdown list should now contain the available IDs. There is no need to change the other parameters located on that page.
 
-The CPEs table also contains some important reports such as **Data** **Throughput**, **Es/N0**, and **C/N0**. The mechanism used to poll these reports can produce several log lines in the element log. It can take a couple of minutes until these columns are filled in completely after an element restart. This is all expected behavior. If an entire report column indicates N/A, check the CPE report polling toggle buttons on the Settings page. When a CPE report polling toggle button is set to *Disabled*, the corresponding column will show N/A.
+The CPEs table also contains some important reports such as **Forward Data Throughput**, **Return Data Throughput**, **Forward Es/N0**, and **Return Tx Capability C/N0**. The mechanism used to poll these reports can produce several log lines in the element logging. It can take a couple of minutes until these columns are filled in completely after an element restart. This is all expected behavior. If an entire report column indicates "N/A", check the CPE report polling toggle buttons on the Settings page. When a CPE report polling toggle button is set to *Disabled*, the corresponding column will show "N/A".
+
+Similar to the report columns, it can take a couple of minutes until the columns **Administrative State**, **Last Modification**, **Latitude**, and **Company Name** are filled in completely after an element restart. Executing HTTP SOAP calls in a loop takes time and seems to put extra load on the NBI. From time to time, this results in responses that have an unexpected status code. If you notice that a column has been *Not initialized* for a while already, open the Stream Viewer and check which group contains a request with an unexpected status code.
 
 ### CPE DVE Configurations Page
 

@@ -12,19 +12,19 @@ This connector can be used to control and monitor the Harmonic Proview PVR7000.
 
 ### Version info
 
-| **Range**            | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                           | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version. Uses SNMP to retrieve alarm and input information.                                                                                                                                                                                                                                                                                                                                                                                                       | No                  | No                      |
-| 1.1.0.x              | Based on 1.0.0.5. New MIB and HTTP connection.                                                                                                                                                                                                                                                                                                                                                                                                                            | No                  | Yes                     |
-| 2.0.0.x              | Uses Telnet to monitor all inputs and settings.                                                                                                                                                                                                                                                                                                                                                                                                                           | No                  | No                      |
-| 3.0.0.x              | v2.0.0.x. SNMP is used for the alarm information.                                                                                                                                                                                                                                                                                                                                                                                                                         | No                  | No                      |
-| 4.0.0.x              | SSH interface (requires firmware v3.x.x.x; modulation parameters available from firmware v3.3.x.x).                                                                                                                                                                                                                                                                                                                                                                       | No                  | No                      |
-| 4.0.1.x              | DCF Implemented.                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Yes                 | Yes                     |
-| 4.1.0.x              | HTTP API (requires firmware v4.x.x.x).                                                                                                                                                                                                                                                                                                                                                                                                                                    | No                  | No                      |
-| 4.2.0.x              | \- Serial connection replaced by HTTP (requires firmware v4.x.x.x). - Port changes due to device firmware: manual changes needed to element configuration. - Internal methods to compose the display keys (used in template filters and Alarm Console) changed, causing the loss of existing trend and alarm history, but increasing efficiency and enabling support for Cassandra. - Support added for the video and audio decoding information available on the device. | No                  | Yes                     |
-| 4.2.1.x              | Supports HTTP only. Alarm information is no longer retrieved via SNMP, but instead via HTTP.                                                                                                                                                                                                                                                                                                                                                                              | No                  | Yes                     |
-| 4.2.2.x              | Naming value change for table GbeSocketOutTable (PID 5500).                                                                                                                                                                                                                                                                                                                                                                                                               | No                  | Yes                     |
-| 4.2.3.x \[SLC Main\] | DCF connections added.                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. Uses SNMP to retrieve alarm and input information. | No | No |
+| 1.1.0.x | Based on 1.0.0.5. New MIB and HTTP connection. | No | Yes |
+| 2.0.0.x | Uses Telnet to monitor all inputs and settings. | No | No |
+| 3.0.0.x | v2.0.0.x. SNMP is used for the alarm information. | No | No |
+| 4.0.0.x | SSH interface (requires firmware v3.x.x.x; modulation parameters available from firmware v3.3.x.x). | No | No |
+| 4.0.1.x | DCF Implemented. | Yes | Yes |
+| 4.1.0.x | HTTP API (requires firmware v4.x.x.x). | No | No |
+| 4.2.0.x | - Serial connection replaced by HTTP (requires firmware v4.x.x.x). <br>- Port changes due to device firmware: manual changes needed to element configuration. <br>- Internal methods to compose the display keys (used in template filters and Alarm Console) changed, causing the loss of existing trend and alarm history, but increasing efficiency and enabling support for Cassandra. <br>- Support added for the video and audio decoding information available on the device. | No | Yes |
+| 4.2.1.x | Supports HTTP only. Alarm information is no longer retrieved via SNMP, but instead via HTTP. | No | Yes |
+| 4.2.2.x | Naming value change for table GbeSocketOutTable (PID 5500). | No | Yes |
+| 4.2.3.x [SLC Main] | DCF connections added. | Yes | Yes |
 
 ### Product Info
 
@@ -71,9 +71,9 @@ SERIAL CONNECTION:
 
 HTTP CONNECTION:
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13.*
-- **Port number:** The port of the connected device, by default *80*.
-- **Bus address:** If the proxy server has to be bypassed, by default *bypassproxy*.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **Port number**: The port of the connected device, by default *80*.
+- **Bus address**: If the proxy server has to be bypassed, by default *bypassproxy*.
 
 ## Usage
 
@@ -113,7 +113,7 @@ With the **Demodulator Port Selection**, you can select a port to display all th
 
 ### CAM page (prior to version 4.2.0.x)
 
-This page displays information about the **CAM** and **BISS** properties and the associated programs. In the **CAM Table**, the **Reboot CAM** column allows you to reboot a specific CAM module**.**
+This page displays information about the **CAM** and **BISS** properties and the associated programs. In the **CAM Table**, the **Reboot CAM** column allows you to reboot a specific CAM module.
 
 ### CAM page (from version 4.2.0.x onwards)
 
@@ -131,7 +131,7 @@ This page displays information about the **DSR** configuration.
 
 ### XC page (prior to version 4.2.0.x)
 
-This page contains the tables **Current Program XC**, **Current Program XC** **Additional Info** and **Current TS XC**, which shows detailed information regarding the XC programs that are running on the device.
+This page contains the tables **Current Program XC**, **Current Program XC Additional Info** and **Current TS XC**, which shows detailed information regarding the XC programs that are running on the device.
 
 ### Decoder page
 

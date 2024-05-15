@@ -19,39 +19,39 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                          | **DCF Integration** | **Cassandra Compliant** |
-|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version.                                                                                                                                                                                                                         | Yes                 | Yes                     |
-| 1.0.1.x   | Extra "smart-serial" interface for SyslogMessages.                                                                                                                                                                                       | Yes                 | Yes                     |
-| 1.0.3.x   | Adapted to work with custom-made Truck Application.                                                                                                                                                                                      | Yes                 | Yes                     |
-| 2.0.2.x   | Adapted to work with custom-made Truck Application.                                                                                                                                                                                      | Yes                 | Yes                     |
-| 2.0.3.x   | Key of "Monitor IGMP Snooping" table adapted.                                                                                                                                                                                            | Yes                 | Yes                     |
-| 2.0.4.x   | Current VLAN Table replaced by VLAN Port Overview.                                                                                                                                                                                       | Yes                 | Yes                     |
-| 2.0.5.x   | Version merge.                                                                                                                                                                                                                           | Yes                 | Yes                     |
-| 2.0.6.x   | Added polling table. Reverted display keys for SRM purposes.                                                                                                                                                                             | Yes                 | Yes                     |
-| 2.0.7.x   | Fixed typos in PTP Interfaces table.                                                                                                                                                                                                     | Yes                 | Yes                     |
-| 2.0.9.x   | Credential Manager with the latest implementation.                                                                                                                                                                                       | Yes                 | Yes                     |
-| 2.0.10.x  | Changed the way the polling is executed to get a more consistent result.                                                                                                                                                                 | Yes                 | Yes                     |
-| 2.0.11.x  | Changed the key of the IP multicast routing table.                                                                                                                                                                                       | Yes                 | Yes                     |
-| 2.0.12.x  | \- Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. - Trunk Table has been converted to SwitchPort Table. It now shows more extended information. - Fixed various incorrect "Interpretes". | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | Yes | Yes |
+| 1.0.1.x | Extra "smart-serial" interface for SyslogMessages. | Yes | Yes |
+| 1.0.3.x | Adapted to work with custom-made Truck Application. | Yes | Yes |
+| 2.0.2.x | Adapted to work with custom-made Truck Application. | Yes | Yes |
+| 2.0.3.x | Key of "Monitor IGMP Snooping" table adapted. | Yes | Yes |
+| 2.0.4.x | Current VLAN Table replaced by VLAN Port Overview. | Yes | Yes |
+| 2.0.5.x | Version merge. | Yes | Yes |
+| 2.0.6.x | Added polling table. Reverted display keys for SRM purposes. | Yes | Yes |
+| 2.0.7.x | Fixed typos in PTP Interfaces table. | Yes | Yes |
+| 2.0.9.x | Credential Manager with the latest implementation. | Yes | Yes |
+| 2.0.10.x | Changed the way the polling is executed to get a more consistent result. | Yes | Yes |
+| 2.0.11.x | Changed the key of the IP multicast routing table. | Yes | Yes |
+| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect "Interpretes". | Yes | Yes |
 
 ### Product Info
 
-| **Range**             | **Supported Firmware**          |
-|-----------------------|---------------------------------|
-| 1.0.0.x               | 4.15.2F                         |
-| 1.0.1.x               | 4.15.2F                         |
-| 1.0.3.x               | 4.15.2F                         |
-| 2.0.2.x \[Obsolete\]  | 4.15.2F                         |
-| 2.0.3.x \[Obsolete\]  | 4.15.2F 4.20.5F                 |
-| 2.0.4.x               | 4.15.2F 4.20.5F                 |
-| 2.0.5.x               | 4.15.2F 4.20.5F                 |
-| 2.0.6.x               | 4.15.2F 4.20.5F 4.21.1F         |
-| 2.0.7.x               | 4.15.2F 4.20.5F 4.21.1F         |
-| 2.0.9.x               | 4.15.2F 4.20.5F 4.21.1F         |
-| 2.0.10.x              | 4.15.2F 4.20.5F 4.21.1F 4.25.2F |
-| 2.0.11.x              | 4.15.2F 4.20.5F 4.21.1F 4.25.2F |
-| 2.0.12.x \[SLC Main\] | 4.15.2F 4.20.5F 4.21.1F 4.25.2F |
+| Range               | Supported Firmware                          |
+|---------------------|---------------------------------------------|
+| 1.0.0.x             | 4.15.2F                                     |
+| 1.0.1.x             | 4.15.2F                                     |
+| 1.0.3.x             | 4.15.2F                                     |
+| 2.0.2.x [Obsolete]  | 4.15.2F                                     |
+| 2.0.3.x [Obsolete]  | 4.15.2F <br>4.20.5F                         |
+| 2.0.4.x             | 4.15.2F <br>4.20.5F                         |
+| 2.0.5.x             | 4.15.2F <br>4.20.5F                         |
+| 2.0.6.x             | 4.15.2F <br>4.20.5F <br>4.21.1F             |
+| 2.0.7.x             | 4.15.2F <br>4.20.5F <br>4.21.1F             |
+| 2.0.9.x             | 4.15.2F <br>4.20.5F <br>4.21.1F             |
+| 2.0.10.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.11.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.12.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 
 ## Configuration
 

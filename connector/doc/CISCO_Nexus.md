@@ -12,18 +12,19 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 
 ### Version Info
 
-| **Range**                              | **Description**                                                                                 | **DCF Integration** | **Cassandra Compliant** |
-|----------------------------------------|-------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.2.x                                | SNMPv2 - complete review.                                                                       | Yes                 | Yes                     |
-| 1.0.3.x                                | SNMPv3 version.                                                                                 | Yes                 | Yes                     |
-| 1.0.4.x                                | SNMPv2 version - Advance display key.                                                           | Yes                 | Yes                     |
-| 3.0.0.x **\[Obsolete - see 3.0.1.x\]** | SNMPv2 version - Advance display key.                                                           | Yes                 | Yes                     |
-| 3.0.1.x **\[Obsolete - see 3.0.2.x\]** | Removed duplicate Interfaces table introduced in 3.0.0.24.                                      | Yes                 | Yes                     |
-| 3.0.2.x **\[Obsolete - see 3.0.3.x\]** | Changed display key of interface tables. Changed API polling table to a complete polling table. | Yes                 | Yes                     |
-| 3.0.3.x **\[Obsolete - see 3.0.4.x\]** | Reworked VTP VLAN table to support both SNMP and NX API polling.                                | Yes                 | Yes                     |
-| 3.0.4.x                                | Improved display keys of RTP Flow and RTP Flow Errors tables.                                   | Yes                 | Yes                     |
-| 3.0.5.x \[SLC Main\]                   | OpenConfig implementation.                                                                      | Yes                 | Yes                     |
-| 4.0.0.x                                | SNMPv3 version (based on version 1.0.0.9).                                                      | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.2.x | SNMPv2 - complete review. | Yes | Yes |
+| 1.0.3.x | SNMPv3 version. | Yes | Yes |
+| 1.0.4.x | SNMPv2 version - Advance display key. | Yes | Yes |
+| 3.0.0.x **[Obsolete - see 3.0.1.x]** | SNMPv2 version - Advance display key. | Yes | Yes |
+| 3.0.1.x **[Obsolete - see 3.0.2.x]** | Removed duplicate Interfaces table introduced in 3.0.0.24. | Yes | Yes |
+| 3.0.2.x **[Obsolete - see 3.0.3.x]** | Changed display key of interface tables. Changed API polling table to a complete polling table. | Yes | Yes |
+| 3.0.3.x **[Obsolete - see 3.0.4.x]** | Reworked VTP VLAN table to support both SNMP and NX API polling. | Yes | Yes |
+| 3.0.4.x **[Obsolete - see 3.0.5.x]** | Improved display keys of RTP Flow and RTP Flow Errors tables. | Yes | Yes |
+| 3.0.5.x [SLC Main] | OpenConfig implementation. | Yes | Yes |
+| 3.0.6.x **[Obsolete - see 3.0.5.x]** | Added VRF group information and rework for IGMP table, Multicast Route Detail table, and BGP Peer tables.| Yes |Yes |
+
 
 ### Product Info
 
@@ -38,7 +39,7 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 | 3.0.3.x   | 7.0(8)N1(1)            |
 | 3.0.4.x   | 7.0(8)N1(1)            |
 | 3.0.5.x   | 7.0(8)N1(1)            |
-| 4.0.0.x   | 7.0(8)N1(1)            |
+| 3.0.6.x   | 7.0(8)N1(1)            |
 
 ## Configuration
 
@@ -99,9 +100,12 @@ To configure OpenConfig, fill in these parameters on the **OpenConfig Settings**
 - Data Source Password
 - Client Certificate (optional)
 
+> [!NOTE]
+> OpenConfig should only be used with CISCO Nexus devices running version 10.2(7)/10.3(4) or higher. When OpenConfig is used in a DataMiner System with multiple Agents, you currently have to make sure you only have one Communication Gateway DxM active in the system (pending a fix to avoid that every Communication Gateway will make a connection).
+
 ### Sensor
 
-This page contains the **Sensor** **table**, which lists the type, scale, and the present value of each sensor.
+This page contains the **Sensor table**, which lists the type, scale, and the present value of each sensor.
 
 ### System Health
 
@@ -156,23 +160,23 @@ This page contains the **Interface Rx table**. This contains the input statistic
 
 ### Interface Tx
 
-This page contains the **Interface Tx** **table**. This contains the output statistics of each interface.
+This page contains the **Interface Tx table**. This contains the output statistics of each interface.
 
 ### L2 L3 Interface
 
-This page contains the **L2 L3 Interface** **table**. The table shows the administratively requested and actual operating configuration for switch port interfaces.
+This page contains the **L2 L3 Interface table**. The table shows the administratively requested and actual operating configuration for switch port interfaces.
 
 ### PoE
 
-This page displays the **PoE** **table**. This table contains information about power Ethernet ports on a Powered Sourcing Equipment (PSE) device. Some settings can be configured in this table, such as the maximum amount of power that the PSE will make available for the power device.
+This page displays the **PoE table**. This table contains information about power Ethernet ports on a Powered Sourcing Equipment (PSE) device. Some settings can be configured in this table, such as the maximum amount of power that the PSE will make available for the power device.
 
 ### BGP
 
-This page displays the **BGP Peer** **table**. This table contains information about the connections with BGP peers. Some settings can be configured in this table, such as the time intervals for the ConnectRetry and KeepAlive timer.
+This page displays the **BGP Peer table**. This table contains information about the connections with BGP peers. Some settings can be configured in this table, such as the time intervals for the ConnectRetry and KeepAlive timer.
 
 ### HSRP
 
-This page contains the **HSRP** **Group** **table**, which displays information about each HSRP group for each interface.
+This page contains the **HSRP Group table**, which displays information about each HSRP group for each interface.
 
 ### OSPF
 
@@ -182,9 +186,9 @@ The page also contains the following buttons:
 
 - **Area-Stub Area**: Displays a page containing the **Area and Stub Area table**. The Area table displays the configured parameters and cumulative statistics of the attached areas of the router. The Stub Area table contains the set of metrics that is advertised by a default Area Border Router in a stub area.
 - **LSDB**: Displays the **LSDB table**, which displays information about the Link State Database of the OSPF process.
-- **Interface**: Displays a page containing the **Interface**, **Interface Metric,** **and** **Virtual Interface** **tables**.
-- **Host**: Displays a page containing the **Host** **table**, which displays the metrics of the hosts, which the router will advertise as host routes.
-- **Neighbor**: Displays a page with the **Virtual Neighbor** **and** **Non Virtual Neighbor** **tables**.
+- **Interface**: Displays a page containing the **Interface**, **Interface Metric**, and **Virtual Interface tables**.
+- **Host**: Displays a page containing the **Host table**, which displays the metrics of the hosts, which the router will advertise as host routes.
+- **Neighbor**: Displays a page with the **Virtual Neighbor and Non Virtual Neighbor tables**.
 
 ### IP
 
@@ -192,10 +196,10 @@ This page displays general IP statistics such as **requests**, **discards**, and
 
 The page also contains the following buttons:
 
-- **IP Route**: Displays a page containing the **IP** **Route** **table**.
-- **IP Statistics**: Displays a page with the **IP System Statistic Input** and **IP System Statistic Output** **tables**.
-- **ARP**: Displays a page containing the **ARP** **table**.
-- **IP Multicast**: Displays a page containing the **IP Multicast Interface** and **IP Multicast SSM Range** **table**. The first table can be used to manage the multicast protocol active on an interface. The second table can be used to create and manage the range(s) of group addresses to which SSM semantics should be applied.
+- **IP Route**: Displays a page containing the **IP Route table**.
+- **IP Statistics**: Displays a page with the **IP System Statistic Input** and **IP System Statistic Output tables**.
+- **ARP**: Displays a page containing the **ARP table**.
+- **IP Multicast**: Displays a page containing the **IP Multicast Interface** and **IP Multicast SSM Range table**. The first table can be used to manage the multicast protocol active on an interface. The second table can be used to create and manage the range(s) of group addresses to which SSM semantics should be applied.
 
 ### IGMP
 
@@ -205,19 +209,22 @@ This page contains two tables, the **IGMP Interface** and **IGMP Cache Table**. 
 
 This page contains the **NBM Interfaces Bandwidth** table.
 
+> [!NOTE]
+> Because of rounding issues in the device itself, bit rates may be slightly inaccurate. Because of this, bandwidth utilization can exceed 100% without dropped bytes indication. Keep this in mind when configuring alarm templates.
+
 ### VTP VLAN
 
-This page displays the **VTP VLAN** and **VTP** **Internal VLAN tables**.
+This page displays the **VTP VLAN** and **VTP Internal VLAN tables**.
 
 The page also contains the following buttons:
 
-- **VTP Authentication**: Displays a page containing the **VTP Authentication** **table**. The table shows the authentication information of VTP for the local system.
+- **VTP Authentication**: Displays a page containing the **VTP Authentication table**. The table shows the authentication information of VTP for the local system.
 - **VTP Management Domain**: Displays a page containing the **VTP VLAN Management Domain table**. This table shows information on the management domains for the local system.
-- **VTP Statistics**: Displays a page with the **VTP Statistics** **table**.
-- **VTP Edit Control**: Displays a page that contains the **VTP Edit Control** **table**. This table allows you to control the editing of the VLANs for a particular management domain.
+- **VTP Statistics**: Displays a page with the **VTP Statistics table**.
+- **VTP Edit Control**: Displays a page that contains the **VTP Edit Control table**. This table allows you to control the editing of the VLANs for a particular management domain.
 - **VTP VLAN Membership:** Displays a page with the **VLAN Membership table**.
 - **VTP VLAN Status**: Displays a page with general VTP information such as the **VTP Version** and **VTP Maximum VLAN Storage**.
-- **VTP VLAN Trunk Port:** Displays a page that contains the **VLAN Trunk Port** **table**. This table shows information on the VLAN trunk ports of the local system.
+- **VTP VLAN Trunk Port:** Displays a page that contains the **VLAN Trunk Port table**. This table shows information on the VLAN trunk ports of the local system.
 
 ### Web Interface
 
@@ -231,5 +238,5 @@ From version **1.0.2.1** of the connector onwards, DCF is supported, requiring a
 
 The dynamic interfaces are created based on the number of rows in the **tables 2800 Interfaces and 7400 VLANs (DCF Interfaces).**
 
-- **Interfaces\_***instance value*\_*Interface Type*: Dynamic interface with type **inout**.
-- **VLANs\_***instance value*\_*Interface Type*: Dynamic interface with type **inout.**
+- **Interfaces**\_*instance value\_Interface Type*: Dynamic interface with type **inout**.
+- **VLANs**\_*instance value\_Interface Type*: Dynamic interface with type **inout.**

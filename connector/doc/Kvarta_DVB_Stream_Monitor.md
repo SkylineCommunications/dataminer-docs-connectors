@@ -10,11 +10,13 @@ The DVB Stream Monitor is a solution for DVB-C and/or IPTV monitoring for unicas
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                            | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                             | \-           | \-                |
-| 1.1.0.x \[Obsolete\] | New firmware version with different enterprise OID. Some parameters were no longer available on the new MIB | 1.0.0.2      |                   |
-| 1.1.1.x \[SLC Main\] | Removed EPG table and refresh mechanism. Improved buffering system.                                         | 1.0.1.1      |                   |
+| Range              | Key Features                                                                                                 | Based on | System Impact |
+|--------------------|--------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                                             | -        | -             |
+| 1.1.0.x [Obsolete] | New firmware version with different enterprise OID. Some parameters were no longer available on the new MIB. | 1.0.0.2  | -             |
+| 1.1.1.x            | Removed EPG table and refresh mechanism. Improved buffering system.                                          | 1.0.1.1  | -             |
+| 1.1.2.x [SLC Main] | Introduced partial table option in the following tables: Service, PMT, SDT, NIT, AIT, Cable Delivery.        | 1.1.1.4  | -             |
+| 1.2.2.x [SLC Main] | Introduced BAT table and different display modes: Basic, Intermediate, Full.                                 | 1.1.2.4  | -             |
 
 ### Product Info
 
@@ -23,12 +25,14 @@ The DVB Stream Monitor is a solution for DVB-C and/or IPTV monitoring for unicas
 | 1.0.0.x   | 1.65A                  |
 | 1.1.0.x   | 1.93A                  |
 | 1.1.1.x   | 1.93A                  |
+| 1.1.2.x   | 1.93A                  |
+| 1.2.2.x   | 2.20A                  |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -56,7 +60,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element has the following data pages:
 
-- **General**: This page displays general information about the card: **Device Name**, **Device Model**, **Firmware Version**, **Device ID**, etc.
+- **General**: This page displays general information about the card: **Device Name**, **Device Model**, **Firmware Version**, **Device ID**, **Display Mode** (from version 1.1.2.3 onwards), etc.
 - **Authentication**: This page allows the user to input the **Username** and **Password** to authenticate into the device.
 - **IPTV**
 - **DVB-C:** This page contains a subpage with the **Tuner Settings**.
@@ -66,16 +70,17 @@ The element has the following data pages:
 - **PAT**
 - **PMT**
 - **SDT**
-- **EPG (**Removed on 1.1.1.x)
+- **EPG**(removed in range 1.1.1.x)
 - **NIT**
 - **EIT**
 - **CAT**
 - **AIT**
+- **BAT**
 - **Time**
 - **TR 101 209**
 - **Service Statistics**
 - **Alarms Status**
-- **Alarms Configuration:** This page contains the following subpages**: RF Alarms**, **HLS Alarms** and **TR 101 290 Alarms**.
+- **Alarms Configuration**: This page contains the following subpages: **RF Alarms**, **HLS Alarms**, and **TR 101 290 Alarms**.
 - **Program Alarms**
 - **Logged Alarms**
 - **Configurations**
@@ -89,4 +94,8 @@ The element has the following data pages:
 - **Rx**
 - **Tx**
 
+### Display Modes
 
+- **Basic**: The SNMP tables and the PAT, PMT, SDT, TDT/TOT, and CAT tables are polled and updated.
+- **Intermediate**: The basic tables and the EIT table are polled and updated.
+- **Full**: All tables including the NIT and BAT table are polled and updated.

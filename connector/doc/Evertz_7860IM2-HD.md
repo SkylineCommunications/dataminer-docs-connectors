@@ -22,7 +22,7 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 **SNMP Settings**:
 
 - **Port number**: the port of the connected device, default *161*
-- **Device address:** Is the card number of the card that will be used.
+- **Device address**: Is the card number of the card that will be used.
 - **Get community string**: the community string in order to read from the device. The default value is *public*.
 - **Set community string**: the community string in order to set to the device. The default value is *private.*
 
@@ -32,7 +32,7 @@ The connector is an **SNMP** connector that can change the configuration of the 
 
 ### General
 
-Specific to the device you can see the **FPGA build number** and the **Factory Reset** allows you to reset the device to the factory settings**.**
+Specific to the device you can see the **FPGA build number** and the **Factory Reset** allows you to reset the device to the factory settings.
 You can control the path of the signal and can check the **GPI**, **VANC** and **Split display** parameters through the page buttons.
 
 ### Video

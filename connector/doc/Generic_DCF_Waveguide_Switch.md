@@ -14,135 +14,27 @@ Multiple ranges of the connector exist in parallel to support the different posi
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td>Initial version. Position values:
-<ul>
-<li>Read/Write</li>
-<li><ul>
-<li>Position A = A</li>
-<li>Position B = B</li>
-</ul></li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x [SLC Main]</td>
-<td>Position values:
-<ul>
-<li>Read/Write</li>
-<li><ul>
-<li>Position A = 1</li>
-<li>Position B = 3</li>
-</ul></li>
-</ul></td>
-<td>1.0.0.1</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1.2.0.x [SLC Main]</td>
-<td>Position values:
-<ul>
-<li>Read/Write</li>
-<li><ul>
-<li>Position A = 2</li>
-<li>Position B = 3</li>
-</ul></li>
-</ul></td>
-<td>1.0.0.1</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.3.0.x [SLC Main]</td>
-<td>Position values:
-<ul>
-<li>Read/Write</li>
-<li><ul>
-<li>Position A = 1</li>
-<li>Position B = 2</li>
-</ul></li>
-</ul></td>
-<td>1.0.0.1</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1.4.0.x [SLC Main]</td>
-<td>Position values:
-<ul>
-<li>Read/Write</li>
-<li><ul>
-<li>Position A = 0</li>
-<li>Position B = 1</li>
-</ul></li>
-</ul></td>
-<td>1.0.0.1</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.5.0.x [SLC Main]</td>
-<td>Position values:
-<ul>
-<li>Read</li>
-<li><ul>
-<li>Position A = 0</li>
-<li>Position B = 1</li>
-</ul></li>
-<li>Write</li>
-<li><ul>
-<li>Position A = 31</li>
-<li>Position B = 32</li>
-</ul></li>
-</ul></td>
-<td>1.0.0.1</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1.6.0.x [SLC Main]</td>
-<td>Position values:
-<ul>
-<li>Read</li>
-<li><ul>
-<li>Position A = 0</li>
-<li>Position B = 1</li>
-</ul></li>
-<li>Write</li>
-<li><ul>
-<li>Position A = A</li>
-<li>Position B = B</li>
-</ul></li>
-</ul></td>
-<td>1.0.0.1</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | Initial version. Position values read/write:<br>- Position A = A<br>- Position B = B | - | - |
+| 1.1.0.x [SLC Main] | Position values read/write:<br>- Position A = 1<br>- Position B = 3 | 1.0.0.1 | - |
+| 1.2.0.x [SLC Main] | Position values read/write:<br>- Position A = 2<br>- Position B = 3 | 1.0.0.1 | - |
+| 1.3.0.x [SLC Main] | Position values read/write:<br>- Position A = 1<br>- Position B = 2 | 1.0.0.1 | - |
+| 1.4.0.x [SLC Main] | Position values read/write:<br>- Position A = 0<br>- Position B = 1 | 1.0.0.1 | - |
+| 1.5.0.x [SLC Main] | Position values read:<br>- Position A = 0<br>- Position B = 1<br>Position values write:<br>- Position A = 31<br>- Position B = 32 | 1.0.0.1 | - |
+| 1.6.0.x [SLC Main] | Position values read:<br>- Position A = 0<br>- Position B = 1<br>Position values write:<br>- Position A = A<br>- Position B = B | 1.0.0.1 | - |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.3.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.4.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.5.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.6.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.2.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.3.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.4.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.5.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.6.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

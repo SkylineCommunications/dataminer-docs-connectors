@@ -8,7 +8,7 @@ The **Advantech ADAM6050** connector is a serial connector used to monitor and c
 
 ## About
 
-The **Advantech ADAM6050** is an 18-ch Isolated Digital I/O Modbus TCP Module, which supports High-to-Low Delay Output. With this connector, the outputs can be set for the device. The inputs are only monitored. It's also possible to set the user value, which is the value the user associates with the real value on the device. With the inversion setting, the user value will be the inverted value of the real value on the device.
+The **Advantech ADAM6050** is an 18-ch Isolated Digital I/O Modbus TCP Module, which supports High-to-Low Delay Output. With this connector, the outputs can be set for the device. The inputs are only monitored. It is also possible to set the user value, which is the value the user associates with the real value on the device. With the inversion setting, the user value will be the inverted value of the real value on the device.
 
 ## Installation and configuration
 
@@ -28,7 +28,7 @@ Before the connector can be used, the following .dll files have to be added in t
 
 ### Main View page
 
-The **Main** **View** page is only used to monitor the device settings. There are no write parameters.
+The **Main View** page is only used to monitor the device settings. There are no write parameters.
 
 ### General page
 
@@ -36,15 +36,15 @@ The **General** page is similar to the Main View page, but on this page, the use
 
 ### Configuration page
 
-The **Configuration** page allows the user to set the **FSV** values for the different outputs. Also the **Communication** **WDT** and **P2P/GCL WDT** can be set. However, note that only one of the two can be *enabled* at the same time.
+The **Configuration** page allows the user to set the **FSV** values for the different outputs. Also the **Communication WDT** and **P2P/GCL WDT** can be set. However, note that only one of the two can be *enabled* at the same time.
 
-The set values for the FSVs and the WDT will only be set to the device when the **Apply** **FSV** button is clicked.
+The set values for the FSVs and the WDT will only be set to the device when the **Apply FSV** button is clicked.
 
-The **Host** **Idle** **Time** can also be viewed. This is the time that the host must be idle before the **FSV** values will be set to the outputs of the device.
+The **Host Idle Time** can also be viewed. This is the time that the host must be idle before the **FSV** values will be set to the outputs of the device.
 
 ### Backup page
 
-The **Backup** page contains all the functionality for creating and restoring backups. When the **Create** **Backup** button is clicked, a backup of the current settings is made and the status of the backup is displayed. This backup will be saved in the folder *C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\Advantech ADAM6050*.
+The **Backup** page contains all the functionality for creating and restoring backups. When the **Create Backup** button is clicked, a backup of the current settings is made and the status of the backup is displayed. This backup will be saved in the folder *C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\Advantech ADAM6050*.
 
 All backups will have a similar name. The name is formatted as follows: *\[Name of the element\]\_\[date\]\_\[time\].xml*.
 

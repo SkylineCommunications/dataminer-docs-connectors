@@ -12,7 +12,7 @@ This is a DataMiner connector for the Nevion Virtuoso FA, a media server designe
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This is a DataMiner connector for the Nevion Virtuoso FA, a media server designe
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -72,13 +72,13 @@ This page displays information about the IP Interfaces, e.g. **State**, **IPv4 A
 
 ### Ethernet
 
-### This page displays information about the Ethernet, e.g. State, Rx Bitrate and Load.
+This page displays information about the Ethernet, e.g. State, Rx Bitrate and Load
 
 The page also contains page buttons to the following subpages:
 
 - **Sync Input**: Lists the sync input for the ethernet ports.
-- **Status**: Lists the status, received status, trasmit status, and errors for the ethernet ports.
-- **Routing**: Lists receiver and trasmitter routing for the ethernet ports.
+- **Status**: Lists the status, received status, transmit status, and errors for the ethernet ports.
+- **Routing**: Lists receiver and transmitter routing for the ethernet ports.
 
 ### ASI Input
 
@@ -90,29 +90,27 @@ This page displays information about the ASI Outputs on each of the ethernet por
 
 ### IP Input
 
-### This page displays information about the Ip Inputs, e.g. Flow A & B Source Interface, Expected Lagging Flow.
+This page displays information about the IP inputs, e.g. **Flow A & B Source Interface**, **Expected Lagging Flow**.
 
 The page also contains page buttons to the following subpages:
 
 - **Flow A**: Lists the Rx Status for the Flow A values.
 - **Flow B**: Lists the Rx Status for the Flow B values.
-- **FEC**: Lists fecs for the ethernet ports.
+- **FEC**: Lists fecs for the Ethernet ports.
 - **Buffer Regulator**: Lists the buffer regulators for the ethernet ports.
 
 ### TS Input Switch
 
-This page displays information about the TS Input Switches, e.g. **Switch and Return Delay,** **Selected Input GID**.
+This page displays information about the TS Input Switches, e.g. **Switch and Return Delay**, **Selected Input GID**.
 
 ### Transport Streams
 
-### This page displays information about the Transport Streams, e.g. Source Interface, Multicast Address.
+This page displays information about the Transport Streams, e.g. **Source Interface**, **Multicast Address**.
 
 ### Services
 
-This page displays information about the services, e.g. **Service Provider,** **Service Type**.
+This page displays information about the services, e.g. **Service Provider**, **Service Type**.
 
 ### Alarms
 
-This page displays information about the alarms, e.g. **Desriptions,** **Severity**.
-
-
+This page displays information about the alarms, e.g. **Desriptions**, **Severity**.

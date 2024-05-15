@@ -14,11 +14,11 @@ This connector uses SNMP to poll data from the Apantac LE-20HD device based on t
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                         |
+| Range     | Supported Firmware                                                             |
 |-----------|--------------------------------------------------------------------------------|
 | 1.0.0.x   | K(20190808) - Q0(20200325) Q1(20200325) Q2(20200325) Q3(20200325) Q4(20200325) |
 
@@ -26,7 +26,7 @@ This connector uses SNMP to poll data from the Apantac LE-20HD device based on t
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -56,8 +56,8 @@ There is no redundancy defined.
 
 ## How to use
 
-On the **General** page, the **Managed** **Elements Table** contains general information and settings, while the **Managed Elements Status Table** contains status information for each managed element. The **Signal Table** lists all tracked signals. Each row of this table corresponds with a single monitored signal, e.g. an SDI video feed or an AES/EBU audio feed. For each signal, more information is available, including several status parameters.
+On the **General** page, the **Managed Elements Table** contains general information and settings, while the **Managed Elements Status Table** contains status information for each managed element. The **Signal Table** lists all tracked signals. Each row of this table corresponds with a single monitored signal, e.g. an SDI video feed or an AES/EBU audio feed. For each signal, more information is available, including several status parameters.
 
-On the **Configuration** subpage, several settings can be configured, including **Screens**, **Monitors**, **Text** **Message** and **Scroll** **Rate**.
+On the **Configuration** subpage, several settings can be configured, including **Screens**, **Monitors**, **Text Message** and **Scroll Rate**.
 
 This connector can also receive traps available in the Apantac MIB. When a specific trap is received, the relevant table is polled.

@@ -14,7 +14,7 @@ The connector requires DataMiner version **9.0.3** or higher.
 
 | **Range**            | **Key Features** | **Based on**                             | **System Impact** |
 |----------------------|------------------|------------------------------------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | Skyline Service Definition Basic 1.0.0.7 | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | Skyline Service Definition Basic 1.0.0.7 | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The connector requires DataMiner version **9.0.3** or higher.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

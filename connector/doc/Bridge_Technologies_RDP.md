@@ -28,7 +28,7 @@ Note:
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                             |
+| Range     | Device Firmware Version                                                 |
 |------------------|-------------------------------------------------------------------------|
 | 1.0.0.x          | Software version 4.2 and higher. For recording: version 5.0 and higher. |
 

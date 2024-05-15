@@ -12,15 +12,21 @@ The Newtec 2177 is the successor of the well-established NTC/2077. It has been d
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.1.36.x         | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.1.36.x [SLC Main]  | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.1.36.x         | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.1.36.x  | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.1.36.x  | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

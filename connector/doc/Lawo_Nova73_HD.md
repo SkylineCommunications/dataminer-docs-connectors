@@ -14,7 +14,7 @@ No DVEs are created for these modules as they can be polled individually. Curren
 
 | **Range** | **Key Features**                                                            | **Based on** | **System Impact** |
 |-----------|-----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. HD Core and Compact Core device compatible since v1.0.0.3. | \-           | \-                |
+| 1.0.0.x   | Initial version. HD Core and Compact Core device compatible since v1.0.0.3. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ No DVEs are created for these modules as they can be polled individually. Curren
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

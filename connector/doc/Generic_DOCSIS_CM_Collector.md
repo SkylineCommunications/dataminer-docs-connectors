@@ -12,18 +12,19 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 
 | **Range**            | **Key Features**                                             | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version.                                             | \-           | \-                |
-| 2.0.0.x              | TDC custom version.                                          | \-           | \-                |
-| 3.0.0.x              | EPM I-DOCSIS Solution version.                               | \-           | \-                |
-| 3.0.1.x              | Adjustment to the PNM logic, Channel Contextuality.          | \-           | \-                |
-| 3.0.2.x              | CCAP logic decoupled.                                        | \-           | \-                |
-| 3.0.3.x              | CM QAM DS/US logic adjusted for better aggregation accuracy. | \-           | \-                |
-| 3.0.4.x              | Added minimum DMA version for NuGet Packages.                | \-           | \-                |
-| 3.0.5.x              | Modifications to improve performance.                        | \-           | \-                |
+| 1.0.0.x              | Initial version.                                             | -            | -                 |
+| 2.0.0.x              | TDC custom version.                                          | -            | -                 |
+| 3.0.0.x              | EPM I-DOCSIS Solution version.                               | -            | -                 |
+| 3.0.1.x              | Adjustment to the PNM logic, Channel Contextuality.          | -            | -                 |
+| 3.0.2.x              | CCAP logic decoupled.                                        | -            | -                 |
+| 3.0.3.x              | CM QAM DS/US logic adjusted for better aggregation accuracy. | -            | -                 |
+| 3.0.4.x              | Added minimum DMA version for NuGet Packages.                | -            | -                 |
+| 3.0.5.x              | Modifications to improve performance.                        | -            | -                 |
+| 3.0.6.x [SLC Main]   | New threshold logic.                                         | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**             |
+| Range     | Supported Firmware                 |
 |-----------|------------------------------------|
 | 1.0.0.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 | 2.0.0.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
@@ -33,19 +34,21 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 | 3.0.3.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 | 3.0.4.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 | 3.0.5.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
+| 3.0.6.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.4.x   | No                  | Yes                     | \-                    | \-                      |
-| 3.0.5.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.5.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.6.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -82,6 +85,26 @@ SNMP Settings:
 ### Configuration of Provisioning
 
 After the collector element is created, all configuration should be done via the CPE Manager element.
+
+### Thresholds Tables
+
+In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available, one for upstream and one for downstream.
+
+These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
+
+- **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
+
+These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
+
+- **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Minimum SNR Level**: Range from 0 to 100 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+
+The minimum value for the Rx and Tx thresholds cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
 
 ## Usage
 

@@ -10,7 +10,7 @@ This connector can be used to monitor devices in the CISCO DCM D9900 series, suc
 
 This connector polls some basic information, such as available boards, ports, and transport streams. Many other settings can also be monitored and displayed in a tree view, but these must be enabled before they will be polled. These other settings include: PIDs, Bitrates, CAM cards, FEC settings, etc.
 
-Before using this protocol, make sure you have read and understand the following sections of this Help: "Installation and configuration" and "Poll Manager".
+Before using this connector, make sure you have read and understand the following sections of this Help: "Installation and configuration" and "Poll Manager".
 
 Please note the following:
 
@@ -25,7 +25,10 @@ Please note the following:
 | 1.0.0.x              | Initial version, based on "SA DCM 2.0.0.36" connector.                          | Yes                 | Yes                     |
 | 1.0.1.x              | Added partial tables.                                                           | Yes                 | Yes                     |
 | 1.0.2.x              | Based on 1.0.0.104, but with partial tables.                                    | Yes                 | Yes                     |
-| 1.0.3.x \[SLC Main\] | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes                 | Yes                     |
+| 1.0.3.x [SLC Main]   | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes                 | Yes                     |
+
+> [!NOTE]
+> If you are using a version in the 1.0.3.x range prior to 1.0.3.93, a memory leak can occur when incorrect IIOP credentials are configured on the element. Make sure to upgrade to the latest version of this connector to prevent this.
 
 ### Product Info
 
@@ -38,27 +41,28 @@ Please note the following:
 ### Prerequisites
 
 The connector requires that Visual C++ 2008 (or 2010) Redistributional is installed. To verify this, go to: Control Panel \> Programs and Features.
+
 If this program has not been installed yet, you can download and install it from the following website: <http://www.microsoft.com/en-us/download/details.aspx?id=29>.
 
-### Installing the Protocol
+### Installing the Connector
 
-#### For protocol versions up to 1.0.0.26
+#### For connector versions up to 1.0.0.26
 
-Unlike most protocols, the CISCO DCM connector is not just a plain XML protocol file. It is instead delivered as a ".DMUpgrade" package. This is because the protocol requires additional DLLs that cannot be installed using a default .dmprotocol package.
+Unlike most connectors, the CISCO DCM connector is not just a plain XML protocol file. It is instead delivered as a ".DMUpgrade" package. This is because the connector requires additional DLLs that cannot be installed using a default .dmprotocol package.
 
-To install the protocol package:
+To install the package:
 
 1. Copy the upgrade package to one of the DMAs and double-click it. This will start the upgrade procedure.
 
 1. Do not change any of the default settings.
 
-1. Upload the protocol or, if available, install the protocol package. All required files should now be installed and ready for use.
+1. Upload the connector or, if available, install the connector package. All required files should now be installed and ready for use.
 
 Note: The DMUpgrade package does not install the XML protocol itself, but only the extra DLLs.
 
-#### For protocol version 1.0.0.27 and higher
+#### For connector version 1.0.0.27 and higher
 
-From version 1.0.0.27 onwards, assemblies are supported in protocol packages. Internally, the packages can be built using the connector tool page, if a package is not found for this version on the distribution platform. In case the Protocol Update Center does not support the version with DLLs yet, use a .dmprotocol package, or request one from your Technical Account Manager.
+From version 1.0.0.27 onwards, assemblies are supported in connector packages. Internally, the packages can be built using the connector tool page, if a package is not found for this version on the distribution platform. In case the Protocol Update Center does not support the version with DLLs yet, use a .dmprotocol package, or request one from your Technical Account Manager.
 
 ### Creating an Element
 
@@ -81,12 +85,12 @@ The procedure below describes how you can set up your first element. To create f
 
 1. Click **Create** to finish element creation.
 
-> **Note**:
+> [!NOTE]
 > In versions before 1.0.0.14, the default port was 5003, but this setting was ignored by the connector. 5003 is the port used for IIOP communication, which is the main communication protocol used to poll the device. However, this setting has always been ignored by the connector and instead the port could be changed inside the connector (though this was not likely to be necessary). When you update a pre-14 version to version 14 or later, the port settings must be updated, otherwise the SNMP traps will not be received by the connector.
 
 If communication does not work once the element has been created, follow the steps below to get the connection running. For any of the steps after the initial connection test, always perform this first test again to see if the connection works before moving to the next step.
 
-Note that the first time an element is created using a protocol on a DMA, it can take a few minutes before all the QActions are compiled. As such, it is advisable to wait at least one minute before you conclude that no data is available.
+Note that the first time an element is created using a connector on a DMA, it can take a few minutes before all the QActions are compiled. As such, it is advisable to wait at least one minute before you conclude that no data is available.
 
 #### Connection Test
 
@@ -147,24 +151,40 @@ Check if all files mentioned below are in the correct location in the system.
 - In the folder "*C:\Skyline DataMiner\Files*", or for versions 1.0.0.17 and higher in the folder "*C:\Skyline DataMiner\ProtocolScripts*":
 
   - omniORB416_vc10_rt.dll
+
   - omnithread34_vc10_rt.dll
+
   - SLDCM Full 2.0.0.X .dll (up to and including version 1.0.0.60)
+
     (where X can be found in the [DataMiner Catalog](https://catalog.dataminer.services/).
 
 - In the folder "*C:\Skyline DataMiner\ProtocolScripts*"
 
-- CISCO DCM GENERIC CODE 1.0.0.X.dll
+  - CISCO DCM GENERIC CODE 1.0.0.X.dll
+
     (Where X can be found in the [DataMiner Catalog](https://catalog.dataminer.services/)
+
+
   - IIOPChannel.dll (since version 1.0.0.25)
+
   - SL_API_CISCO_D9900_IIOP.NET.dll (For versions 1.0.0.25 to 1.0.0.34 incl.)
+
   - SL_IIOPNet1910_CiscoDCM_20150326.dll (For versions 1.0.0.35 to 1.0.0.44 incl.)
+
   - SL_IIOPNet1910_CiscoDCM_20160414.dll (For versions 1.0.0.45 to 1.0.0.81 incl.)
+
   - SL_IIOPNet1910_CiscoDCM_20180124.dll (For versions 1.0.0.82 to 1.0.3.63 incl.)
+
   - SL.IDL.Cisco.DCM.1.0.3.64.dll (For versions 1.0.3.64 or higher - see note below)
+
   - Cisco_DCM_OmniOrbProxy.dll (For versions 1.0.0.61 to 1.0.0.71)
+
   - Cisco_DCM_OmniOrbProxy_1_0_0_72.dll (For versions 1.0.0.72 to 1.0.0.77)
+
   - Cisco_DCM_OmniOrbProxy_1_0_0_78.dll (For versions 1.0.0.78 to 1.0.0.90)
+
   - Cisco_DCM_OmniOrbProxy_1_0_0_91.dll (For versions 1.0.0.91 or higher)
+
   - Cisco_DCM_OmniOrbProxy_1_0_3_65.dll (For versions 1.0.3.65 or higher)
 
 If a file is missing, run the upgrade package again and verify the DLLs.
@@ -187,6 +207,7 @@ Verify if the prerequisites have been installed: Visual C++ 2008 (or 2010) Redis
 If you have tried all the previous steps and there is still no data in the DCM, check the log file. It is possible that the cause of the problem is clearly indicated in the log file. Usually it can be found somewhere at the end and is repeated several times. If there are no errors or it is not clear how to handle the error messages, contact your Skyline Communications Technical Account Manager and send them the log file.
 
 The log file can be found in "*C:\Skyline DataMiner\Logging\\ElementName\].txt*".
+
 You can also find it in Cube:
 
 1. in the **Surveyor**, go to **Apps** \> **Logging**. This will open a new card.
@@ -204,89 +225,89 @@ By default, most commands are disabled, so you will almost certainly need to ena
 
 Below, you can find a list of existing commands and the information (tables and parameters) they poll.
 
-| **Command**                                                                                                             | **Polled Tables**                                                                                                                               | **Polled Parameters**                                                                                                                                                                                                       |
-|-------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Get Active Mode                                                                                                         | N/A                                                                                                                                             | Current Activation Mode Power-Up Activation Mode Current Activation Peer                                                                                                                                                    |
-| Get Alarm Descriptions                                                                                                  | Alarm Overview (needs both Get Alarms and Get Alarm Descriptions commands) \_Alarm Information Table                                            |                                                                                                                                                                                                                             |
-| Get Alarms                                                                                                              | Alarm Overview (needs both Get Alarms and Get Alarm Descriptions commands) \_Alarm Table \_Alarm Detection Time Table                           | Device Operational Status Power Supply 1 Status Power Supply 2 Status FAN Status                                                                                                                                            |
-| Get Alternate Sources                                                                                                   | Alternating Sources                                                                                                                             | N/A                                                                                                                                                                                                                         |
-| Get Backup                                                                                                              | N/A                                                                                                                                             | N/A                                                                                                                                                                                                                         |
-| Get Backup Params                                                                                                       | Output Service Backup Params                                                                                                                    | Device Role Revertive Main to Backup Delay Backup to Main Delay Heartbeat Network Interface Peer IP Address Heartbeat UDP Port Secondary Heartbeat Network Interface Secondary Peer IP Address Secondary Heartbeat UDP Port |
-| Get Backup Services                                                                                                     | Service Backup Table                                                                                                                            | N/A                                                                                                                                                                                                                         |
-| Get Banner Config                                                                                                       | Banner Config Table                                                                                                                             | N/A                                                                                                                                                                                                                         |
-| Get Boards                                                                                                              | Board Info Table (Version 2) Module Info Board Identification Board Components                                                                  | N/A                                                                                                                                                                                                                         |
-| Get CAM Status                                                                                                          | CAM Status Table                                                                                                                                | N/A                                                                                                                                                                                                                         |
-| Get Descrambling Service Data                                                                                           | Service Descrambling Table                                                                                                                      | N/A                                                                                                                                                                                                                         |
-| Get Descrambling Service Config                                                                                         | BISS Service Settings Descrambling Service Settings                                                                                             | N/A                                                                                                                                                                                                                         |
-| Get DPI Channel Settings                                                                                                | DPI Channel Settings Table                                                                                                                      | N/A                                                                                                                                                                                                                         |
-| Get DVB S2 LNC Config                                                                                                   | DVB-S2 LNC Config Table                                                                                                                         | N/A                                                                                                                                                                                                                         |
-| Get DVB S2 Receiver Mode                                                                                                | DVB-S2 Receiver Mode Table                                                                                                                      | N/A                                                                                                                                                                                                                         |
-| Get DVB S2 Status                                                                                                       | DVB-S2 Port Status Table                                                                                                                        | N/A                                                                                                                                                                                                                         |
-| Get DVB S2 Tuner Config                                                                                                 | DVB-S2 Tuner Config Table                                                                                                                       | N/A                                                                                                                                                                                                                         |
-| Get ECMg Config                                                                                                         | ECMg Config Table                                                                                                                               | N/A                                                                                                                                                                                                                         |
-| Get ECMg Connection Status                                                                                              | ECMg Connection Status Table                                                                                                                    | N/A                                                                                                                                                                                                                         |
-| Get ECMg Connections                                                                                                    | ECMg Connection Config Table                                                                                                                    | N/A                                                                                                                                                                                                                         |
-| Get EDH/CRC Error Counters                                                                                              | EDH/CRC Error Counters                                                                                                                          | N/A                                                                                                                                                                                                                         |
-| Get EMM Config                                                                                                          | EMMg Config Table                                                                                                                               | N/A                                                                                                                                                                                                                         |
-| Get EMM Status                                                                                                          | EMMg Status Table                                                                                                                               | N/A                                                                                                                                                                                                                         |
-| Get Feature List (Licenses)                                                                                             | Features (/Licenses) Table                                                                                                                      | N/A                                                                                                                                                                                                                         |
-| Get FEC Decoder Statistics                                                                                              | FEC Decoder Statistics Table FEC Decoder Proportional Statistics Table                                                                          | N/A                                                                                                                                                                                                                         |
-| Get FEC Decoding Params                                                                                                 | FEC Decoder Table FEC Decoder Status Table                                                                                                      | N/A                                                                                                                                                                                                                         |
-| Get FEC Encoding Params                                                                                                 | FEC Encoder Table                                                                                                                               | N/A                                                                                                                                                                                                                         |
-| Get FEC Endoding Overhead                                                                                               | FEC Encoder Overhead                                                                                                                            | N/A                                                                                                                                                                                                                         |
-| Get GbE Settings                                                                                                        | GbE Settings                                                                                                                                    | N/A                                                                                                                                                                                                                         |
-| Get GbE Statistics                                                                                                      | GbE Input Rates Table GbE Output Rates Table GbE Input Statistics Table GbE Output Statiscs Table                                               | N/A                                                                                                                                                                                                                         |
-| Get IGMP Settings                                                                                                       | IGMP Settings Table                                                                                                                             | N/A                                                                                                                                                                                                                         |
-| Get Input PID Bitrates                                                                                                  | Input Component Bitrates                                                                                                                        | N/A                                                                                                                                                                                                                         |
-| Get Input PIDs                                                                                                          | Input Service Component Table Input Service Component Info Table Input Service ECM Table Input Elementary Stream Table Input PID ECM Table      | N/A                                                                                                                                                                                                                         |
-| Get Input Services                                                                                                      | Input Service Table Input Service Property Table                                                                                                | N/A                                                                                                                                                                                                                         |
-| Get Input TS                                                                                                            | Input TS Table Input TS Property Table Input TS Triggers Table                                                                                  | N/A                                                                                                                                                                                                                         |
-| Get Log Forwarding                                                                                                      | N/A                                                                                                                                             | Remote Logging IP Address Remote Logging Port Remote Logging Protocol                                                                                                                                                       |
-| Get Logo Settings                                                                                                       | Logo Settings                                                                                                                                   | Max Height Max Width                                                                                                                                                                                                        |
-| Get LSS Settings                                                                                                        | LSS Settings POIS URL Configuration Blackout Message Configuration LSS Alternate Service Configuration                                          | N/A                                                                                                                                                                                                                         |
-| Get Merged Services                                                                                                     | Merged Services Table                                                                                                                           | N/A                                                                                                                                                                                                                         |
-| Get MFP Banner Settings                                                                                                 | MFP Banner Settings Table                                                                                                                       | N/A                                                                                                                                                                                                                         |
-| Get MFP Banner Status                                                                                                   | MFP Banner Status Table MFP Banner Insertion Table                                                                                              | N/A                                                                                                                                                                                                                         |
-| Get MFP Bitrates                                                                                                        | MFP Service Bitrates                                                                                                                            | N/A                                                                                                                                                                                                                         |
-| Get MFP Configuration                                                                                                   | MFP Engine Units MFP Service Overview MFP Service Settings MFP Service Backup                                                                   | N/A                                                                                                                                                                                                                         |
-| Get MFP Logo Insertion                                                                                                  | MFP Logo Insertion                                                                                                                              | N/A                                                                                                                                                                                                                         |
-| Get Output PID Bitrates                                                                                                 | Output Component Bitrates                                                                                                                       | N/A                                                                                                                                                                                                                         |
-| Get Output PIDs                                                                                                         | Output Service Component Table Output Service Component Info Table Output Service ECM Table Output Elementary Stream Table Output PID ECM Table | N/A                                                                                                                                                                                                                         |
-| Get Output Services                                                                                                     | Output Service Table Output Service Property Table                                                                                              | N/A                                                                                                                                                                                                                         |
-| Get Output TS                                                                                                           | Output TS Table Output TS Property Table Output Transparent Loop Through Transport Streams Output TS Alarm Settings Table                       | N/A                                                                                                                                                                                                                         |
-| Get Output TS Auto Pass Rules                                                                                           | TS Auto Pass Rules                                                                                                                              | N/A                                                                                                                                                                                                                         |
-| Get Output TS VLAN                                                                                                      | TS VLAN                                                                                                                                         | N/A                                                                                                                                                                                                                         |
-| Get PMT Descriptors                                                                                                     | PMT Descriptors Table Descriptor Removal Rules Table                                                                                            | N/A                                                                                                                                                                                                                         |
-| Get Ports                                                                                                               | Board Config Table (Version 2) Port Property Table GbE Port Settings                                                                            | N/A                                                                                                                                                                                                                         |
-| Get Descrambler Resources                                                                                               | Descrambler Resources                                                                                                                           | N/A                                                                                                                                                                                                                         |
-| Get RTP Status                                                                                                          | RTP Status Table                                                                                                                                | N/A                                                                                                                                                                                                                         |
-| Get SCR Enabled Status                                                                                                  | Service Scrambling Settings                                                                                                                     | N/A                                                                                                                                                                                                                         |
-| Get Service Bitrates                                                                                                    | Input Service Bit Rate Table Output Service Bit Rate Table                                                                                      | N/A                                                                                                                                                                                                                         |
-| Get SMX Statmux Pools                                                                                                   | SMX Statmux Pools                                                                                                                               | N/A                                                                                                                                                                                                                         |
-| Get SMX36 Community Settings                                                                                            | N/A                                                                                                                                             | SMX36 - Community Multicast IP Address SMX36 - Community Name SMX36 - Community UDP Port SMX36 - Starting UDP Port Number                                                                                                   |
-| Get SMX36 Controllers                                                                                                   | SMX Statmux Controllers                                                                                                                         | N/A                                                                                                                                                                                                                         |
-| Get SMX36 Encoders                                                                                                      | SMX36 Encoders                                                                                                                                  | N/A                                                                                                                                                                                                                         |
-| Get SMX36 Pools                                                                                                         | SMX36 Statmux Pools                                                                                                                             | N/A                                                                                                                                                                                                                         |
-| Get SMX36 QoS Settings                                                                                                  | N/A                                                                                                                                             | SMX36 QoS - Code Point SMX36 QoS - CoS SMX36 QoS - Mode SMX36 QoS - ToS SMX36 QoS - Custom ToS SMX36 QoS - TTL                                                                                                              |
-| Get SMX36 VSE                                                                                                           | SMX36 Video Service Encoder Table                                                                                                               | N/A                                                                                                                                                                                                                         |
-| Get SMX36 VSE Backups                                                                                                   | SXM36 Statmux BSE Backup Table                                                                                                                  | N/A                                                                                                                                                                                                                         |
-| Get SNMP Settings                                                                                                       | SNMP Community Tabe SNMP Trap Destination Table                                                                                                 | N/A                                                                                                                                                                                                                         |
-| Get Transrater Groups                                                                                                   | Transrater Groups Table                                                                                                                         | N/A                                                                                                                                                                                                                         |
-| Get TS Backup Active Input                                                                                              | Updates column 'Active Input (Backup TS List)' of Input TS Backup List Table                                                                    | N/A                                                                                                                                                                                                                         |
-| Get TS Backup Input Settings                                                                                            | Input TS Backup Params Input TS Backup List                                                                                                     | N/A                                                                                                                                                                                                                         |
-| Get TS Bitrates                                                                                                         | Input TS Bit Rates Table Output TS Bit Rates Table                                                                                              | N/A                                                                                                                                                                                                                         |
-| Get CAM Config                                                                                                          | CAM Config Table                                                                                                                                | N/A                                                                                                                                                                                                                         |
-| Get CAM EMM Settings                                                                                                    | CAM EMM Table                                                                                                                                   | N/A                                                                                                                                                                                                                         |
-| Get TS Input EMM Settings                                                                                               | TS Input EMM PIDs Table                                                                                                                         | N/A                                                                                                                                                                                                                         |
-| Get TS Output EMM Settings                                                                                              | TS Output EMM PIDs Table                                                                                                                        | N/A                                                                                                                                                                                                                         |
-| Load CAM Command Line Interface                                                                                         | CAM Command Line Interface                                                                                                                      | N/A                                                                                                                                                                                                                         |
-| Ping Procedure (On network error, if enabled, will ping the device until a success. No tables or parameters are polled) | N/A                                                                                                                                             | N/A                                                                                                                                                                                                                         |
-| SDI: Get Input TS                                                                                                       | SDI Input Transport Streams                                                                                                                     | N/A                                                                                                                                                                                                                         |
-| SDI: Get Output TS                                                                                                      | SDI Output Transport Streams                                                                                                                    | N/A                                                                                                                                                                                                                         |
-| SDI: Get Signal Info                                                                                                    | SDI Signal Info                                                                                                                                 | N/A                                                                                                                                                                                                                         |
-| Update DCF                                                                                                              | N/A (Updates DCF internally. No tables or parameters are polled)                                                                                | N/A (Updates DCF internally. No tables or parameters are polled)                                                                                                                                                            |
-| SRT Inputs                                                                                                              | SRT Input                                                                                                                                       | N/A                                                                                                                                                                                                                         |
-| SRT Outputs                                                                                                             | SRT Outputs                                                                                                                                     | N/A                                                                                                                                                                                                                         |
+| Command | Polled Tables | Polled Parameters |
+|--|--|--|
+| Get Active Mode | N/A | Current Activation Mode <br>Power-Up Activation Mode <br>Current Activation Peer |
+| Get Alarm Descriptions | Alarm Overview (needs both Get Alarms and Get Alarm Descriptions commands) <br>\_Alarm Information Table |  |
+| Get Alarms | Alarm Overview (needs both Get Alarms and Get Alarm Descriptions commands) <br>\_Alarm Table <br>\_Alarm Detection Time Table | Device Operational Status <br>Power Supply 1 Status <br>Power Supply 2 Status <br>FAN Status |
+| Get Alternate Sources | Alternating Sources | N/A |
+| Get Backup | N/A | N/A |
+| Get Backup Params | Output Service Backup Params | Device Role <br>Revertive <br>Main to Backup Delay <br>Backup to Main Delay <br>Heartbeat Network Interface <br>Peer IP Address <br>Heartbeat UDP Port <br>Secondary Heartbeat Network Interface <br>Secondary Peer IP Address <br>Secondary Heartbeat UDP Port |
+| Get Backup Services | Service Backup Table | N/A |
+| Get Banner Config | Banner Config Table | N/A |
+| Get Boards | Board Info Table (Version 2) <br>Module Info <br>Board Identification <br>Board Components | N/A |
+| Get CAM Status | CAM Status Table | N/A |
+| Get Descrambling Service Data | Service Descrambling Table | N/A |
+| Get Descrambling Service Config | BISS Service Settings <br>Descrambling Service Settings | N/A |
+| Get DPI Channel Settings | DPI Channel Settings Table | N/A |
+| Get DVB S2 LNC Config | DVB-S2 LNC Config Table | N/A |
+| Get DVB S2 Receiver Mode | DVB-S2 Receiver Mode Table | N/A |
+| Get DVB S2 Status | DVB-S2 Port Status Table | N/A |
+| Get DVB S2 Tuner Config | DVB-S2 Tuner Config Table | N/A |
+| Get ECMg Config | ECMg Config Table | N/A |
+| Get ECMg Connection Status | ECMg Connection Status Table | N/A |
+| Get ECMg Connections | ECMg Connection Config Table | N/A |
+| Get EDH/CRC Error Counters | EDH/CRC Error Counters | N/A |
+| Get EMM Config | EMMg Config Table | N/A |
+| Get EMM Status | EMMg Status Table | N/A |
+| Get Feature List (Licenses) | Features (/Licenses) Table | N/A |
+| Get FEC Decoder Statistics | FEC Decoder Statistics Table <br>FEC Decoder Proportional Statistics Table | N/A |
+| Get FEC Decoding Params | FEC Decoder Table <br>FEC Decoder Status Table | N/A |
+| Get FEC Encoding Params | FEC Encoder Table | N/A |
+| Get FEC Endoding Overhead | FEC Encoder Overhead | N/A |
+| Get GbE Settings | GbE Settings | N/A |
+| Get GbE Statistics | GbE Input Rates Table <br>GbE Output Rates Table <br>GbE Input Statistics Table <br>GbE Output Statistics Table | N/A |
+| Get IGMP Settings | IGMP Settings Table | N/A |
+| Get Input PID Bitrates | Input Component Bitrates | N/A |
+| Get Input PIDs | Input Service Component Table <br>Input Service Component Info Table <br>Input Service ECM Table <br>Input Elementary Stream Table <br>Input PID ECM Table | N/A |
+| Get Input Services | Input Service Table <br>Input Service Property Table | N/A |
+| Get Input TS | Input TS Table <br>Input TS Property Table <br>Input TS Triggers Table | N/A |
+| Get Log Forwarding | N/A | Remote Logging IP Address <br>Remote Logging Port <br>Remote Logging Protocol |
+| Get Logo Settings | Logo Settings | Max Height <br>Max Width |
+| Get LSS Settings | LSS Settings <br>POIS URL Configuration <br>Blackout Message Configuration <br>LSS Alternate Service Configuration | N/A |
+| Get Merged Services | Merged Services Table | N/A |
+| Get MFP Banner Settings | MFP Banner Settings Table | N/A |
+| Get MFP Banner Status | MFP Banner Status Table <br>MFP Banner Insertion Table | N/A |
+| Get MFP Bitrates | MFP Service Bitrates | N/A |
+| Get MFP Configuration | MFP Engine Units <br>MFP Service Overview <br>MFP Service Settings <br>MFP Service Backup | N/A |
+| Get MFP Logo Insertion | MFP Logo Insertion | N/A |
+| Get Output PID Bitrates | Output Component Bitrates | N/A |
+| Get Output PIDs | Output Service Component Table <br>Output Service Component Info Table <br>Output Service ECM Table <br>Output Elementary Stream Table <br>Output PID ECM Table | N/A |
+| Get Output Services | Output Service Table <br>Output Service Property Table | N/A |
+| Get Output TS | Output TS Table <br>Output TS Property Table <br>Output Transparent Loop Through Transport Streams <br>Output TS Alarm Settings Table | N/A |
+| Get Output TS Auto Pass Rules | TS Auto Pass Rules | N/A |
+| Get Output TS VLAN | TS VLAN | N/A |
+| Get PMT Descriptors | PMT Descriptors Table Descriptor Removal Rules Table | N/A |
+| Get Ports | Board Config Table (Version 2)<br>Port Property Table<br>GbE Port Settings | N/A |
+| Get Descrambler Resources | Descrambler Resources | N/A |
+| Get RTP Status | RTP Status Table | N/A |
+| Get SCR Enabled Status | Service Scrambling Settings | N/A |
+| Get Service Bitrates | Input Service Bit Rate Table<br>Output Service Bit Rate Table | N/A |
+| Get SMX Statmux Pools | SMX Statmux Pools | N/A |
+| Get SMX36 Community Settings | N/A | SMX36 - Community Multicast IP Address <br>SMX36 - Community Name <br>SMX36 - Community UDP Port <br>SMX36 - Starting UDP Port Number |
+| Get SMX36 Controllers | SMX Statmux Controllers | N/A |
+| Get SMX36 Encoders | SMX36 Encoders | N/A |
+| Get SMX36 Pools | SMX36 Statmux Pools | N/A |
+| Get SMX36 QoS Settings | N/A | SMX36 QoS - Code Point <br>SMX36 QoS - CoS <br>SMX36 QoS - Mode <br>SMX36 QoS - ToS <br>SMX36 QoS - Custom ToS <br>SMX36 QoS - TTL |
+| Get SMX36 VSE | SMX36 Video Service Encoder Table | N/A |
+| Get SMX36 VSE Backups | SXM36 Statmux BSE Backup Table | N/A |
+| Get SNMP Settings | SNMP Community Tabe SNMP Trap Destination Table | N/A |
+| Get Transrater Groups | Transrater Groups Table | N/A |
+| Get TS Backup Active Input | Updates column 'Active Input (Backup TS List)' of Input TS Backup List Table | N/A |
+| Get TS Backup Input Settings | Input TS Backup Params <br>Input TS Backup List | N/A |
+| Get TS Bitrates | Input TS Bit Rates Table <br>Output TS Bit Rates Table | N/A |
+| Get CAM Config | CAM Config Table | N/A |
+| Get CAM EMM Settings | CAM EMM Table | N/A |
+| Get TS Input EMM Settings | TS Input EMM PIDs Table | N/A |
+| Get TS Output EMM Settings | TS Output EMM PIDs Table | N/A |
+| Load CAM Command Line Interface | CAM Command Line Interface | N/A |
+| Ping Procedure (On network error, if enabled, will ping the device until a success. No tables or parameters are polled) | N/A | N/A |
+| SDI: Get Input TS | SDI Input Transport Streams | N/A |
+| SDI: Get Output TS | SDI Output Transport Streams | N/A |
+| SDI: Get Signal Info | SDI Signal Info | N/A |
+| Update DCF | N/A (Updates DCF internally. No tables or parameters are polled) | N/A (Updates DCF internally. No tables or parameters are polled) |
+| SRT Inputs | SRT Input | N/A |
+| SRT Outputs | SRT Outputs | N/A |
 
 #### Network Error Handling
 
@@ -321,7 +342,7 @@ Please note the following:
 
 - Any parameters prefixed with "\[DMA\]" will only be synced between elements on that DMA, while all other parameters will be synced on the entire cluster.
 - In future versions, more parameters may be added to the group config.
-- The parameters are saved in an .xml file which is stored in the following Documents folder: "*C:\Skyline DataMiner\Documents\Cisco DCM\\*". The System config parameters are stored in DriverConfig.xml and the group config parameters are saved in \[GroupName\].GroupConfig.xml. It is advisable to take a backup of these files once the elements have been properly configured.
+- The parameters are saved in an .xml file which is stored in the following Documents folder: "*C:\Skyline DataMiner\Documents\Cisco DCM\\*". The System config parameters are stored in DriverConfig.xml and the group config parameters are saved in \[GroupName\].GroupConfig.xml. It is advisable to **take a backup of these files once the elements have been properly configured**.
 
 #### Event-Based Polling
 
@@ -329,7 +350,7 @@ It is possible to poll some commands/tables based upon an event. Currently only 
 
 Currently there is only one toggle button available for this feature.
 
-Custom Naming
+#### Custom Naming
 
 From version 1.0.0.83 onwards, you can configure display keys of the following tables:
 
@@ -348,24 +369,24 @@ To configure these, a parameter is available above the relevant table where you 
 
 For example:
 
-> ![naming2.JPG](~/connector/images/CISCO_DCM_naming2.JPG)
->
-> In this example, the DisplayKey will be as follows: 'Board: (value of column 4 (User Name)) Type: (value of column 1 (Type))'.
+![naming2.JPG](~/connector/images/CISCO_DCM_naming2.JPG)
+
+In the example above, the DisplayKey will be as follows: 'Board: (value of column 4 (User Name)) Type: (value of column 1 (Type))'.
 
 To find the column identifiers, check the corresponding Naming Format tooltips.
 
-> Based on the previous example:
+Based on the previous example:
+
+![naming4.JPG](~/connector/images/CISCO_DCM_naming4.JPG)
+
+> [!NOTE]
 >
-> ![naming4.JPG](~/connector/images/CISCO_DCM_naming4.JPG)
-
-Note:
-
-- Because of the complexity of **display keys** (based on multiple tables), the connector will not check if generated formats will produce unique values. **This needs to be ensured by the user**.
-- There is dependency between tables, so if for instance the display key of **Board Info Table (Version 2)** is changed, this will be reflected in all tables that depend on it. In the previous example, the **Input TS Table** display key will be as follows:
-
+> - Because of the complexity of **display keys** (based on multiple tables), the connector will not check if generated formats will produce unique values. **This needs to be ensured by the user**.
+> - There is dependency between tables, so if for instance the display key of **Board Info Table (Version 2)** is changed, this will be reflected in all tables that depend on it. In the previous example, the **Input TS Table** display key will be as follows:
+>
 > ![naming5.JPG](~/connector/images/CISCO_DCM_naming5.JPG)
-
-- By default, all custom naming will be configured with the same values that were hardcoded before version 1.0.0.83. **No historic data will be lost**.
+>
+> - By default, all custom naming will be configured with the same values that were hardcoded before version 1.0.0.83. **No historic data will be lost**.
 
 ## Usage
 
@@ -382,13 +403,15 @@ This page contains a tree view and is one of the most important pages in the con
 
 Each level has its own set of specific tabs. Some are generic, like the **Alarms** tab, where the alarms can be viewed that were generated by the DCM and are related to that Board, Port, TS, etc. Others are more specific, such as information about ECM PIDs.
 
-Note: At the Board level, there is a special node called the *Main Board*. This is used to display general alarms and license information.
+> [!NOTE]
+> At the Board level, there is a special node called the *Main Board*. This is used to display general alarms and license information.
 
 ### General
 
 This page contains general information about the system, such as the **System Name**, **Serial Number** and **Module Info.** One of the most important parameters is the **Current Activation Mode**, which indicates if the system is online or not. Other important information includes **Licenses** and **SNMP Settings**. Note that both of these are related to Cisco DCM and not to Skyline or the connector.
 
-Note: If event-based polling is enabled on the **Driver Settings** page, the connector will automatically add the IP address of the DMA and the public SNMP community of the element in the **SNMP Trap Destinations** table.
+> [!NOTE]
+> If event-based polling is enabled on the **Driver Settings** page, the connector will automatically add the IP address of the DMA and the public SNMP community of the element in the **SNMP Trap Destinations** table.
 
 ### Alarms
 
@@ -396,7 +419,8 @@ This page contains an **Alarm Overview** table where you can find the alarms ava
 
 Below the overview table, there are three page buttons that hide the tables containing the base information used to populate the alarm overview table. These tables are not intended for use in daily operations, but can be used to track down issues when an alarm is not shown or is incorrectly shown in the overview table.
 
-Note: It is possible that not all alarm names can be selected in the alarm template. This is because each alarm name is linked to a number, and the name has to be added as a discrete value in the protocol. Since alarms/numbers can be added when firmware is upgraded or cards are added, the discrete list can become outdated. As such, if a discrete is missing, it will not be possible to create an alarm for that name using the **AIT - Name** column. Version 1.0.0.20 should contain all possible alarms for DCMs using firmware version V13.00.00. If there are missing alarms, please send the "DCM Alarms VXX.XX.XX.xls" file that comes with the DCM to Skyline Communications, and request to sync the discretes with that file.
+> [!NOTE]
+> It is possible that not all alarm names can be selected in the alarm template. This is because each alarm name is linked to a number, and the name has to be added as a discrete value in the connector. Since alarms/numbers can be added when firmware is upgraded or cards are added, the discrete list can become outdated. As such, if a discrete is missing, it will not be possible to create an alarm for that name using the **AIT - Name** column. Version 1.0.0.20 should contain all possible alarms for DCMs using firmware version V13.00.00. If there are missing alarms, please send the "DCM Alarms VXX.XX.XX.xls" file that comes with the DCM to Skyline Communications, and request to sync the discretes with that file.
 
 ### Backup Settings
 
@@ -410,7 +434,8 @@ A backup contains the complete configuration of a device. When you take a backup
 
 Backups are usually stored on the local DataMiner Agent. The default folder is the Windows %Temp% folder.
 
-Important note: While you are taking a backup, **all other polling is set on hold**. Taking a backup should only take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an Automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to test this after the DCM is fully (re)configured.
+> [!IMPORTANT]
+> While you are taking a backup, **all other polling is set on hold**. Taking a backup should only take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an Automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to test this after the DCM is fully (re)configured.
 
 #### Export/Import File
 
@@ -426,10 +451,10 @@ To export a configuration:
 
 To import a file, fill in the path to the file where the configuration is stored, and click Import.
 
-Notes:
-
-- This feature can only be used if the web interface credentials have been set on **Web API Login** page.
-- To import a configuration file, you need to have Administrator rights.
+> [!NOTE]
+>
+> - This feature can only be used if the web interface credentials have been set on **Web API Login** page.
+> - To import a configuration file, you need to have Administrator rights.
 
 #### Backup Save Path
 
@@ -459,10 +484,10 @@ To restore a backup:
 1. Check the **BS Backup File Valid** and **BS Restore Status** parameters.
 1. In case of errors, verify the log file for more information.
 
-Note:
-
-- You should always set **BS Backup Scope** and **BS Restore Scope** to *ALL*.
-- The maximum backup size is limited to 20 MB, and the maximum duration before the backup should be received is 5 minutes. This is hard-coded in the connector. (The typical size of a backup is approx. 3 MB.)
+> [!NOTE]
+>
+> - You should always set **BS Backup Scope** and **BS Restore Scope** to *ALL*.
+> - The maximum backup size is limited to 20 MB, and the maximum duration before the backup should be received is 5 minutes. This is hard-coded in the connector. (The typical size of a backup is approx. 3 MB.)
 
 ### Statmux (SMX36)
 
@@ -480,7 +505,8 @@ This page contains a tree view displaying information about Cisco D9036 (Statmux
 1. Pool
 1. VSE
 
-Note: There is a dummy node for the Controller and Pool level, so that a list of VSEs can be shown that are not part of a pool.
+> [!NOTE]
+> There is a dummy node for the Controller and Pool level, so that a list of VSEs can be shown that are not part of a pool.
 
 ### Statmux Encoders
 
@@ -555,16 +581,16 @@ A list of parameters to be added to this list are:
 
 The settings of a group are saved in an .xml file located in the folder *C:\Skyline DataMiner\Documents\Cisco DCM\\GroupName\].GroupConfig.xml*. They can be downloaded from any DCM element via the **Documents** page. It is advisable to take a backup after all settings have been configured. Though making manual changes is not advisable, it is possible, and such changes will be picked up by the elements as soon as they are saved.
 
-Note: It is not possible to only sync some of the parameters. Either an element is part of a group and all parameters are synced, or it is not and no parameters are synced (excluding connector config parameters, which are always synced).
+> [!NOTE]
+> It is not possible to only sync some of the parameters. Either an element is part of a group and all parameters are synced, or it is not and no parameters are synced (excluding connector config parameters, which are always synced).
 
 #### Event-Based Polling
 
 This page currently contains one toggle button to configure if the content of the **Backup Service Table** should be refreshed when an SNMP trap is received that indicates a (possible) change. By default, this is disabled, in order to prevent a heavy load in case of an event storm.
 
-Note:
-
-- In the future, this parameter could be replaced by a table and multiple traps could be used to refresh some commands in the **Poll Manager**.
-- If event-based polling is enabled and the command *Get SNMP Settings* is enabled in the **Poll Manager**, then the connector will automatically check and, if necessary, add the IP address of the DMA in the trap destinations table. However, it is still advisable to check if the SNMP settings are properly configured on the DCM itself, especially if the SNMP settings are not polled.
+> [!NOTE]
+> - In the future, this parameter could be replaced by a table and multiple traps could be used to refresh some commands in the **Poll Manager**.
+> - If event-based polling is enabled and the command *Get SNMP Settings* is enabled in the **Poll Manager**, then the connector will automatically check and, if necessary, add the IP address of the DMA in the trap destinations table. However, it is still advisable to check if the SNMP settings are properly configured on the DCM itself, especially if the SNMP settings are not polled.
 
 #### Event Forwarding
 
@@ -585,12 +611,12 @@ To load a simulation:
 - Copy the file "simulation.xml" to the following folder: "C:\Skyline DataMiner\Documents\CISCO DCM\\Name of Element created in previous point\]\\
 - Click the **Load** button.
 
-Note:
-
-- A simulation file should NEVER be loaded into an element that is polling a device.
-- This feature has been added for debug purposes only and should only be used if someone at Skyline explicitly requests such a simulation file.
-- The created file contains a lot of information about the device and the setup of your system and is not encrypted in any way.
-- This does not simulate any kind of communication with devices; it only populates a table with information present in the file.
+> [!NOTE]
+>
+> - A simulation file should NEVER be loaded into an element that is polling a device.
+> - This feature has been added for debug purposes only and should only be used if someone at Skyline explicitly requests such a simulation file.
+> - The created file contains a lot of information about the device and the setup of your system and is not encrypted in any way.
+> - This does not simulate any kind of communication with devices; it only populates a table with information present in the file.
 
 #### DCF
 
@@ -626,7 +652,7 @@ Six columns are displayed in the Poll Manager table:
 - **Last Executed**: Contains a timestamp indicating when the command was last executed.
 - **Actions**: Allows you to poll the command again outside the normal polling cycle.
 
-The status of a command is either *Enabled* or *Disabled.* However, some commands cannot be disabled by the user. These are displayed as *\[Enabled\]*. This is for instance the case for **Get Boards** and **Get Ports***.*
+The status of a command is either *Enabled* or *Disabled.* However, **some commands cannot be disabled by the user**. These are displayed as *\[Enabled\]*. This is for instance the case for **Get Boards** and **Get Ports***.*
 
 To enable a command, you can set the **Status** column to *Enabled*; however, note that this does not guarantee that the command will actually be enabled. It is possible that other commands also need to be enabled before a particular command can be activated. To see the required commands, check the hidden column **PM - Required Commands** (see "Hidden Columns" section below). If other commands are required, these should either be enabled in the correct order, or the option *Enable (including parents)* should be used.
 
@@ -688,13 +714,13 @@ On this page, you can access several tables using page buttons. You can also vie
 
 At the request of customers, Skyline can add customer-specific features in this connector, which may result in extra tables, polling, a higher CPU load, etc. However, to minimize the impact of such customizations, by default, these extra features are disabled and hidden. They are numbered as follows: "HF1", "HF2", etc. This is short for "Hidden Feature N". You can find these features on the **Table Data** page by clicking a page button displaying the HF number. It is assumed that the customer who ordered the feature will know where to find it or will use a custom visual overview to make it more easily accessible.
 
-It is usually not possible to request a change to a hidden feature that was not ordered by your company. This is because those features are usually very specific and are used by Automation scripts, visual overviews, other protocols, etc., so that changing even a small detail could potentially break the system of another user. However, the company that ordered a feature can request changes to that feature and other customers will not be considered when the change is implemented.
+It is usually not possible to request a change to a hidden feature that was not ordered by your company. This is because those features are usually very specific and are used by Automation scripts, visual overviews, other connectors, etc., so that changing even a small detail could potentially break the system of another user. However, the company that ordered a feature can request changes to that feature and other customers will not be considered when the change is implemented.
 
 The currently implemented customizations are listed below.
 
 ### Event Forwarding
 
-This customization is exceptional, in that it is considered "potentially interesting for other customers", and as a consequence has no sequence number. Instead it has a page button, **Event Forwarding**, on the **Driver Settings** page. It is used to trigger actions on another element (using another protocol) in an event-based manner.
+This customization is exceptional, in that it is considered "potentially interesting for other customers", and as a consequence has no sequence number. Instead it has a page button, **Event Forwarding**, on the **Driver Settings** page. It is used to trigger actions on another element (using another connector) in an event-based manner.
 
 Currently, the following events can be forwarded:
 
@@ -703,7 +729,8 @@ Currently, the following events can be forwarded:
 - Alarm severity changes on the transport stream bitrate table
 - Each time a backup has finished.
 
-Note: The alarms used for this feature are not those from the alarm table, but the severity of the alarms as defined by the alarm template.
+> [!NOTE]
+> The alarms used for this feature are not those from the alarm table, but the severity of the alarms as defined by the alarm template.
 
 To activate this feature:
 
@@ -770,7 +797,7 @@ Services that are not configured in this table are considered "Always On Air". I
 
 #### Backup\export
 
-To take a backup of the settings, right-click the table and select **Other\Export Table...**
+To take a backup of the settings, right-click the table and select **Other\Export Table**.
 
 #### Import
 
@@ -788,8 +815,10 @@ There are a few rules that the import file must comply with, and some things tha
 
 - Regarding the first line:
 
-- The content of the first line is used to identify the separator, which can be either a semicolon (";") or a comma (",").
+  - The content of the first line is used to identify the separator, which can be either a semicolon (";") or a comma (",").
+
   - Aside from this, the content of the first two lines is completely ignored.
+
   - You can use the first line to indicate the titles of the columns, in order to make the file more readable. However, note that the order of the columns cannot be changed, so if you just switch two of the column titles, this does not mean that the connector will change these accordingly.
 
 - Regarding the second line:
@@ -798,57 +827,39 @@ There are a few rules that the import file must comply with, and some things tha
 
 - Regarding all other lines:
 
-- All the other lines in the file are considered possible data lines. They will be parsed and, if parsing was successful, result in a new row in the table.
-  - A (valid) record must be formatted like this: *\[IGNORED\];\[SERVCE_NAME\];\[START_DAY\];\[START_TIME\];\[END_DAY\];\[END_TIME\]* The table below explains the purpose of each column.
+  - All the other lines in the file are considered possible data lines. They will be parsed and, if parsing was successful, result in a new row in the table.
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Column</strong></td>
-<td><strong>Description</strong></td>
-</tr>
-<tr class="even">
-<td>IGNORED</td>
-<td>The first column is not used in the import. When you export a table, this column will have the key of the record in that table. This will not necessarily be the same key after importing.</td>
-</tr>
-<tr class="odd">
-<td>Service Name</td>
-<td>The name of the service as it is displayed in the <strong>ALARM - Service Name</strong> column in the <strong>Alarm Overview table</strong>, but without the service identifier.</td>
-</tr>
-<tr class="even">
-<td>Start Day</td>
-<td><p>The day of the week when the service goes online.</p>
-<p>You can use any of the following values:</p>
-<ul>
-<li>The number indicating the day of the week. <em>'0'</em> is Sunday, '<em>1'</em> is Monday, ...</li>
-<li>The day of the week in English and in text format: "<em>Sunday</em>", "<em>Monday</em>", ... (not case sensitive)</li>
-<li>The abbreviation of the days: "<em>Sun</em>", "<em>Mon</em>", "<em>Thu</em>", ... (not case sensitive)</li>
-<li>If the server is set to the local culture, the day of the week and abbreviated names in your own language (not case sensitive). E.g. if Server Culture is set to "nl" (Dutch): "<em>Zondag</em>", "<em>zo</em>", "<em>Maandag</em>", "<em>ma</em>", ...</li>
-<li><em>Always On-Air</em> or <em>Never On-Air</em>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>Start Time</td>
-<td><p>The time when the service comes online, formatted as:</p>
-<ul>
-<li><em>HH:mm</em>, where HH is 24-hour format;</li>
-<li>or <em>Always On-Air</em> or <em>Never On-Air</em>.</li>
-</ul></td>
-</tr>
-<tr class="even">
-<td>End Day</td>
-<td>The day of the week when the service goes offline. Formatted in the same way as the <strong>Start Day</strong>.</td>
-</tr>
-<tr class="odd">
-<td>End Time</td>
-<td>The time on the <strong>End Day</strong> when the service goes offline. Formatted in the same way as the <strong>Start Time</strong>.</td>
-</tr>
-</tbody>
-</table>
+  - A (valid) record must be formatted like this: *\[IGNORED\];\[SERVCE_NAME\];\[START_DAY\];\[START_TIME\];\[END_DAY\];\[END_TIME\]*
+
+    This is the purpose of each column:
+
+    - **IGNORED**: The first column is not used in the import. When you export a table, this column will have the key of the record in that table. This will not necessarily be the same key after importing.
+
+    - **Service Name**: The name of the service as it is displayed in the **ALARM - Service Name** column in the **Alarm Overview table**, but without the service identifier.
+
+    - **Start Day**: The day of the week when the service goes online.
+
+      You can use any of the following values:
+
+      - The number indicating the day of the week. *'0'* is Sunday, '*1'* is Monday, etc.
+
+      - The day of the week in English and in text format: "*Sunday*", "*Monday*", etc. (not case sensitive)
+
+      - The abbreviation of the days: "*Sun*", "*Mon*", "*Thu*", etc. (not case sensitive)
+
+      - If the server is set to the local culture, the day of the week and abbreviated names in your own language (not case sensitive). E.g. if Server Culture is set to "nl" (Dutch): "*Zondag*", "*zo*", "*Maandag*", "*ma*", etc.
+
+      - *Always On-Air* or *Never On-Air*.
+
+    - **Start Time**: The time when the service comes online, formatted as:
+
+      - *HH:mm*, where HH is 24-hour format;
+
+      - or *Always On-Air* or *Never On-Air*.
+
+    - **End Day**: The day of the week when the service goes offline. Formatted in the same way as the **Start Day**.
+
+    - **End Time**: The time on the **End Day** when the service goes offline. Formatted in the same way as the **Start Time**.
 
 > [!NOTE]
 >
@@ -925,11 +936,10 @@ Note that all DCF-related settings are automatically propagated to all elements 
 
 The following sections explain the internal workings of the DCF linker used to connect inputs to outputs.
 
-Note:
-
-- When a "Source Service" is used, this can be a service from the Input Service Table or from the Output Service Table. The system will first check the Input Service Table, and if the reference is not found there, it will try to find the service in the Output Service Table. This can be the case when the source signal is the result of a processing step. In the web interface, this is the equivalent of a source coming from the processing tree instead of the input tree.
-- When signals from this processing tree are used, it may be necessary to poll the CAM Config command in order to allow a full backtrack of the output signals to the input.
-  This will not be enabled automatically, as this command will inject additional "virtual" ports in the port table, which in turn adds extra transport streams, services, etc.
+> [!NOTE]
+>
+> - When a "Source Service" is used, this can be a service from the Input Service Table or from the Output Service Table. The system will first check the Input Service Table, and if the reference is not found there, it will try to find the service in the Output Service Table. This can be the case when the source signal is the result of a processing step. In the web interface, this is the equivalent of a source coming from the processing tree instead of the input tree.
+> - When signals from this processing tree are used, it may be necessary to poll the CAM Config command in order to allow a full backtrack of the output signals to the input. This will not be enabled automatically, as this command will inject additional "virtual" ports in the port table, which in turn adds extra transport streams, services, etc.
 
 #### Default
 
@@ -938,9 +948,13 @@ As mentioned before, the connector will generate virtual interfaces for every in
 The connections between a port and a transport stream will have the following properties:
 
 - **MC**: This is a MultiCast IP address and port format: *x.x.x.x:p.*
+
 - **VLAN**: This is a number indicating the Virtual Lan ID.
+
   Note: This can automatically be retrieved from the device if polling for the *Output VLAN* command is activated.
+
   For input VLANs, this can optionally be defined manually in the **Input TS VLAN Config** table (**Table Data** page \> button **VLAN**: *Input*).
+
 - **ONID**: This contains the OnID property for the transport stream.
 
 #### Alternate Sources

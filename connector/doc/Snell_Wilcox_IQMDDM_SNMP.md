@@ -8,9 +8,9 @@ The IQMDDM is an ASI 2 to 1 switch, distribution amplifier and transport stream 
 
 The inputs are transformer coupled and equalized to \> 200 m of high quality cable. All outputs are re-clocked and transformer coupled. There is independent control of the input to be passed to the distribution amplifier outputs and the input to be passed to the transport stream monitor.
 
-The IQMDDM have as features:
+The IQMDDM features:
 
-- Indepent selection of monitored stream and distribution amplifier input.
+- Independent selection of monitored stream and distribution amplifier input.
 - User programmable minimum and maximum TS bitrate thresholds.
 - Fully programmable TR101290 monitoring to match each transmission system specifications.
 
@@ -24,30 +24,9 @@ All control and monitored parameters are available for access over the RollCall 
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><ul>
-<li>Initial version.</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -59,9 +38,7 @@ All control and monitored parameters are available for access over the RollCall 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-
-
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 
@@ -75,20 +52,12 @@ SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
-- **Bus address**: \[The bus address of the device.\]
+- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configurations are needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
@@ -108,7 +77,7 @@ In this subpage you can control the generation of error messages to be logged. I
 
 ### Bitrate
 
-Bitrate page display information on **Bitrate Status**, **Bitrate Current**, **Bitrate Maximum**, **Bitrate Minimum** and **Bitrate Continuous Update**. It also has a Configuration subpage tha allows you to configure the **Bitrate Minimum Threshold**, **Bitrate Maximum Threshold**, **Bitrate Enable Updates** and configure if minimum or maximum threshold are enabled.
+Bitrate page display information on **Bitrate Status**, **Bitrate Current**, **Bitrate Maximum**, **Bitrate Minimum** and **Bitrate Continuous Update**. It also has a Configuration subpage that allows you to configure the **Bitrate Minimum Threshold**, **Bitrate Maximum Threshold**, **Bitrate Enable Updates** and configure if minimum or maximum threshold are enabled.
 
 ### Errors
 
@@ -128,13 +97,13 @@ Programs/Pmts page aims to load and display the List of **Available Services.**
 
 ### Template
 
-This page shows the selection, naming and prioritisation of SI/PSI templates.
+This page shows the selection, naming and prioritization of SI/PSI templates.
 
 A template contains the set of data described in the Template Categories subpage. Used as a reference, templates are particularly useful to check some high-level parameters contained in the transport stream.
 
 #### Template Categories
 
-This page contains a toogle button for each parameter contained in a template.
+This page contains a toggle button for each parameter contained in a template.
 
 The template comparison will only be performed for enabled parameters in this subpage. The parameters listed are:
 
@@ -150,7 +119,7 @@ The template comparison will only be performed for enabled parameters in this su
 
 **PCR PIDs** - The Packet IDentification (PID) numbers of all transport stream packets carrying Program Clock Reference (PCR) timestamps. The PCR PID for each program is found in its associated Program Map Table (PMT).
 
-**Service Bitrates** - The service bitrates.
+**Service Bitrates** - The service bit rates.
 
 **Component PIDs -** The PID of each component in every program in the transport stream as defined in the relevant PMT.
 

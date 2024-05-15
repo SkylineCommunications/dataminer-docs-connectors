@@ -8,15 +8,15 @@ The **Skyline EPM Platform GPON WM** is a configuration manager used to handle w
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                             | **Based on** | **System Impact** |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Initial version - Manages the workflow and creation of OLT KPI files - Manages the workflow and creation of Passive files | \-           | \-                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Initial version <br>- Manages the workflow and creation of OLT KPI files <br>- Manages the workflow and creation of Passive files | - | - |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                     | **Exported Components** |
-|-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Automation scripts: - WmGponToOlt - OltToGponWm Generic KAFKA Consumer OLT Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | Automation scripts: <br>- WmGponToOlt <br>- OltToGponWm Generic KAFKA Consumer OLT <br>Connectors: <br>- ZTE ZXA10 C600 GPON Platform <br>- Huawei 5600-5800 GPON Platform <br>- Nokia ISAM 7300 FX GPON Platform | - |
 
 ## Configuration
 
@@ -32,22 +32,22 @@ Before the creation of a **Skyline EPM Platform GPON WM** element it is necessar
 
 Additionally, all components of the **Skyline EPM Platform Solution** work with a file system for internal communication. Because of this, when a new **Skyline EPM Platform GPON WM** element is created the following parameters must be defined in the **Configuration** page:
 
-1\. Import Settings
+1. Import Settings
 
-- **Entity Import Directory**: Specify the generic GPON entity import path that is used throughout the EPM Solution. From this path the **Skyline EPM Platform GPON WM** will retrieve the ONT CSV file, or the Subscriber/Splitter CSV files required for the **ONT KPI Requests** and **Passive Data Requests**, respectively.
-- **KAFKA Import Directory**: Specify the path where the KAFKA Stream update files are located.
-- **Entity/KAFKA Import Directory Type**: Specify whether the respective import path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
+   - **Entity Import Directory**: Specify the generic GPON entity import path that is used throughout the EPM Solution. From this path the **Skyline EPM Platform GPON WM** will retrieve the ONT CSV file, or the Subscriber/Splitter CSV files required for the **ONT KPI Requests** and **Passive Data Requests**, respectively.
+   - **KAFKA Import Directory**: Specify the path where the KAFKA Stream update files are located.
+   - **Entity/KAFKA Import Directory Type**: Specify whether the respective import path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
 
-2\. Export Settings
+2. Export Settings
 
-- **Entity Export Directory**: Specify the generic GPON entity export path that is used throughout the EPM Solution. In this path the output Subscriber and Splitter CSV files will be exported as a result of the **Passive Data Requests**.
-- **KAFKA Import Directory**: Specify the path where the output KAFKA Stream JSON files will be exported as a result of the **ONT KPI Requests**.
-- **Entity/KAFKA Import Directory Type**: Specify whether the respective export path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
+   - **Entity Export Directory**: Specify the generic GPON entity export path that is used throughout the EPM Solution. In this path the output Subscriber and Splitter CSV files will be exported as a result of the **Passive Data Requests**.
+   - **KAFKA Import Directory**: Specify the path where the output KAFKA Stream JSON files will be exported as a result of the **ONT KPI Requests**.
+   - **Entity/KAFKA Import Directory Type**: Specify whether the respective export path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
 
-3\. System Credentials: This section is to be used if the element is configured to a remote file location.
+3. System Credentials: This section is to be used if the element is configured to a remote file location.
 
-- **System Username**: The username that has access to the remote directory. If no domain is specified, the domain from the element's DMA location will be used.
-- **System Password**: The password of the user to access the remote directory.
+   - **System Username**: The username that has access to the remote directory. If no domain is specified, the domain from the element's DMA location will be used.
+   - **System Password**: The password of the user to access the remote directory.
 
 Finally, if considered necessary it is possible to configure the handling of the workflow requests in the **Workflow Settings** section of the **Configuration** page. The available options are:
 

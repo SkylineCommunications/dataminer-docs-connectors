@@ -10,9 +10,9 @@ This connector retrieves the folder structure from the Avid Interplay Production
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ This connector retrieves the folder structure from the Avid Interplay Production
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                  | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                      | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Avid Interplay PAM (Automation script) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Avid Interplay PAM (Automation script) | -                       |
 
 ## Configuration
 

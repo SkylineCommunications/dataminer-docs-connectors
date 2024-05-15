@@ -12,9 +12,9 @@ The **Qbit Q8V Codec System** connector shows status information for the device 
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on** | **System Impact**                                                                                   |
+| Range                | Key Features     | Based On     | System Impact                                                                                       |
 |----------------------|------------------|--------------|-----------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | Minimum required DataMiner version is **10.0.0.0 - 9118** because of SLManagedScripting C#7 syntax. |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | Minimum required DataMiner version is **10.0.0.0 - 9118** because of SLManagedScripting C#7 syntax. |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ The **Qbit Q8V Codec System** connector shows status information for the device 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,15 +12,21 @@ The Weather Underground connector implements the "Weather API" (from The Weather
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | API version 0.1             |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | API version 0.1        |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -46,20 +52,21 @@ This page displays the protocol overview and includes parameters such as the **A
 
 This page contains the **Forecast Information** table, which contains information related to the weather conditions for the locations configured in the **Locations** table.
 
-The **Locations** subpage, containing the corresponding table, can be accessed via a page button. The **Locations** **table** contains the list of locations for which the connector will obtain the current weather conditions. To make the connector retrieve the weather conditions for a specific location, add a new row to this table.
+The **Locations** subpage, containing the corresponding table, can be accessed via a page button. The **Locations table** contains the list of locations for which the connector will obtain the current weather conditions. To make the connector retrieve the weather conditions for a specific location, add a new row to this table.
 
 To add a location, this connector currently supports two methods:
 
 - **Add Location**: The following fields are required:
 
-- **ISO Country Code**: Weather Underground uses custom ISO country codes (e.g. BE). You can find the custom codes on the following page: <https://www.wunderground.com/weather/api/d/docs?d=resources/country-to-iso-matching>.
+  - **ISO Country Code**: Weather Underground uses custom ISO country codes (e.g. BE). You can find the custom codes on the following page: <https://www.wunderground.com/weather/api/d/docs?d=resources/country-to-iso-matching>.
+
   - **Weather Station Location Code**: The location name (e.g. Gent).
 
-> It could be that when you select this option, multiple responses (for different locations) are possible, e.g. when the same location name is available for more than one country. If this is the case, the results will be stored in the **Multiple Results** table. In this table, you can select the correct location in order to add it to the Locations table.
+    It could be that when you select this option, multiple responses (for different locations) are possible, e.g. when the same location name is available for more than one country. If this is the case, the results will be stored in the **Multiple Results** table. In this table, you can select the correct location in order to add it to the Locations table.
 
 - **Location ZMW**: The following fields are required:
 
-- **Weather Station ZMW Code**: In some cases, when you provide the location (ISO Code and ISO Country Code), multiple responses are possible. In order to uniquely identify a location, Weather Underground uses the ZMW code. If you provide this code, the forecast service will return forecast information for only one specific location. More information about this request can be found on the following page: <https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1>.
+  - **Weather Station ZMW Code**: In some cases, when you provide the location (ISO Code and ISO Country Code), multiple responses are possible. In order to uniquely identify a location, Weather Underground uses the ZMW code. If you provide this code, the forecast service will return forecast information for only one specific location. More information about this request can be found on the following page: <https://www.wunderground.com/weather/api/d/docs?d=autocomplete-api&MR=1>.
 
 ### Quick Features
 
@@ -80,17 +87,17 @@ The **Quick Configuration** subpage can be accessed using a page button and cont
 
 - **Console Status**:
 
-- *Enabled*: Actions can be performed via the Quick Features Console.
+  - *Enabled*: Actions can be performed via the Quick Features Console.
   - *Disabled*: No actions can be performed via the Quick Features Console. If an attempt is made to send an API call through the console, a message will be displayed to notify the user that the console is disabled.
 
 - **Inter Element Service**:
 
-- *Enabled*: The protocol will respond to inter-element calls for Weather Conditions Information.
+  - *Enabled*: The protocol will respond to inter-element calls for Weather Conditions Information.
   - *Disabled*: The protocol will not respond to inter-element calls for Weather Conditions Information.
 
 - **Auto Delete**:
 
-- *Enabled*: Weather information retrieved via the Quick Features Console is automatically deleted according to the specified timer.
+  - *Enabled*: Weather information retrieved via the Quick Features Console is automatically deleted according to the specified timer.
   - *Disabled*: Weather information retrieved via the Quick Features Console is not automatically deleted according to the specified timer.
 
 If **Auto Delete** is enabled, the **Auto Delete Delay** specifies the time to wait before deleting a record retrieved via the **Quick Features Console**.

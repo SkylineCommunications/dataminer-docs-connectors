@@ -14,19 +14,25 @@ For each card inserted into one of the available slots, a corresponding **Dynami
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V01.00.00.00b               |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | V01.00.00.00b          |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | See table below.        |
 
 ### Exported connectors
 
-| **Exported Connector**         | **Description**    |
+| Exported Connector            | Description        |
 |-------------------------------|--------------------|
 | WISI General Platform - CD80T | Transceiver Module |
 | WISI General Platform - CD80A | Transceiver Module |

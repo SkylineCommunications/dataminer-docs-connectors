@@ -10,7 +10,8 @@ The **Tektronix Sentry PVQ** connector is used to display information related to
 
 This connector will display information related to the selected **Sentry PVQ** device. This information and details such as Ports, Transport and Services, are available on different pages, described in the "Usage" section of this document. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the **bitrate**.
 
-**Note: This connector requires the .Net Framework 4.0**
+> [!NOTE]
+> This connector requires .Net Framework 4.0.
 
 ### Version Info
 
@@ -20,7 +21,7 @@ This connector will display information related to the selected **Sentry PVQ** d
 | 1.1.0.x | New firmware based on 1.0.0.x (see below). | No | Yes |
 | 1.2.0.x | New firmware based on 2.1.0.x (see below). | No | Yes |
 | 1.3.0.x **(existing elements need to be recreated)** | Supports new firmware version 10.0.1. | No | Yes |
-| 1.4.0.x \[obsolete\] | Supports firmware version 10.3. Improved communication with Tektronix Config Manager. Works with the latest version of Tektronix Config Manager (1.1.0.x). | No | Yes |
+| 1.4.0.x [Obsolete] |Supports firmware version 10.3. Improved communication with Tektronix Config Manager. Works with the latest version of Tektronix Config Manager (1.1.0.x). | No | Yes |
 | 1.4.1.x | PID Overview table no longer has duplicate display keys that prevent the correct use of the alarm template. | No | Yes |
 
 ### Product Info
@@ -31,7 +32,7 @@ This connector will display information related to the selected **Sentry PVQ** d
 | 1.1.0.x                                              | 9.3                         |
 | 1.2.0.x                                              | 9.4                         |
 | 1.3.0.x **(existing elements need to be recreated)** | 10.0.2                      |
-| 1.4.0.x \[obsolete\]                                 | 10.3+ (10.4 also supported) |
+| 1.4.0.x [Obsolete]                                   | 10.3+ (10.4 also supported) |
 | 1.4.1.x                                              | 10.3+ (10.4 also supported) |
 
 ## Installation and configuration

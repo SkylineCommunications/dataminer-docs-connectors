@@ -10,21 +10,24 @@ Developed for Kudos Pro UHD units, this connector allows you to monitor and mana
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| Range                | Key Features                                             | Based on     | System Impact     |
+|----------------------|----------------------------------------------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version (UHD1200.MIB range (.846. OID Support))  | -            | -                 |
+| 1.1.0.x [SLC Main]   | UHD1200-AUDIO.MIB range (.847. OID Support)              | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.2.c.2                |
+| 1.1.0.x   | 1.7                    |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

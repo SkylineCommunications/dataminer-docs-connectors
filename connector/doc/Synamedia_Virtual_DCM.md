@@ -10,10 +10,10 @@ The Synamedia Virtual DCM is a device that represents virtualized and software-b
 
 ### Version Info
 
-| **Range**            | **Key Features**                                | **Based on** | **System Impact** |
+| Range                | Key Features                                    | Based on     | System Impact     |
 |----------------------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version: SRT and Zixi reads and writes. | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Changed layout. Added Alarms Table.             | 1.0.0.3      | \-                |
+| 1.0.0.x              | Initial version: SRT and Zixi reads and writes. | -            | -                 |
+| 1.0.1.x [SLC Main]   | Changed layout. Added Alarms Table.             | 1.0.0.3      | -                 |
 
 ### Product Info
 
@@ -21,13 +21,14 @@ The Synamedia Virtual DCM is a device that represents virtualized and software-b
 |-----------|------------------------|
 | 1.0.0.x   | V21_00_01              |
 | 1.0.1.x   | V21_00_01              |
+| 1.0.1.10+   | V23_00_01              |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

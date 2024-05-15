@@ -16,24 +16,24 @@ Every month a report is sent to a number of email addresses that are specified i
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                           | **Based on** | **System Impact**                |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------|
-| 1.0.0.x \[obsolete\] | Initial version                                                                                                            | \-           | \-                               |
-| 2.0.0.x \[SLC Main\] | Complete connector refactoring and implement Dynamic Table replacing the standalone parameters displayed in Port status page. | 1.0.0.18     | **Old trend data will be lost.** |
+| Range              | Key Features                                                                                                                  | Based on | System Impact                    |
+|--------------------|-------------------------------------------------------------------------------------------------------------------------------|----------|----------------------------------|
+| 1.0.0.x [Obsolete] | Initial version                                                                                                               | -        | -                                |
+| 2.0.0.x [SLC Main] | Complete connector refactoring and implement Dynamic Table replacing the standalone parameters displayed in Port status page. | 1.0.0.18 | **Old trend data will be lost.** |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \[Unknown\]            |
-| 2.0.0.x   | \[Unknown\]            |
+| 1.0.0.x   | Unknown            |
+| 2.0.0.x   | Unknown            |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -54,7 +54,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 ### Configuration
 
 Go to the **Port** **Status** page, and add the different switches you want to monitor.
-For each device, enter the **Label**, choose the **Type** of switch from the predefined types, the **Polling** **IP** and the **Polling Instance.**
+For each device, enter the **Label**, choose the **Type** of switch from the predefined types, the **Polling IP** and the **Polling Instance.**
 
 ## How to Use
 
@@ -70,9 +70,9 @@ You can also define a csv import file from where you can import the table from t
 
 On the **Settings** page, in the **Log File Settings** you can choose the decimal format (dot or comma) to be included in the Log files.
 
-In the **Mail settings** you can define the list of email addresses to send the report to separated by ";", you can also enter a **Mail** **Subject**, and a **Mail** **Body**.
+In the **Mail settings** you can define the list of email addresses to send the report to separated by ";", you can also enter a **Mail Subject**, and a **Mail Body**.
 
-In the **Send Mail** section you can select the respective label of the device you want to send the report by email form the **Selected Label in Attachment,** clicking in **Send E-mail** it will send an E-mail to all addresses with the selected LAN Switch Log File in attachment**.**
+In the **Send Mail** section you can select the respective label of the device you want to send the report by email form the **Selected Label in Attachment**, clicking in **Send E-mail** it will send an E-mail to all addresses with the selected LAN Switch Log File in attachment.
 
 The **Refresh Labels** button is to update the list of available labels in the table if it did not update automatically.
 

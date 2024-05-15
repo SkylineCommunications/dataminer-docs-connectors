@@ -14,11 +14,11 @@ This connector was designed to be as generic as possible. This way, you can use 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                     |
+| Range     | Supported Firmware                         |
 |-----------|--------------------------------------------|
 | 1.0.0.x   | JMC-048-05 (switch) JMC-338-05 (converter) |
 
@@ -26,7 +26,7 @@ This connector was designed to be as generic as possible. This way, you can use 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

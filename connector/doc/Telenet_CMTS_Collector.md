@@ -12,7 +12,7 @@ The **Telenet CMTS Collector** is part of the Telenet EPM (CPE) setup. At presen
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ The **Telenet CMTS Collector** is part of the Telenet EPM (CPE) setup. At presen
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Telenet CPE Manager   | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Telenet CPE Manager   | -                       |
 
 ## Configuration
 

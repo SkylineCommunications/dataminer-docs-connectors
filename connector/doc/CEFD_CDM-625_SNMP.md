@@ -8,18 +8,17 @@ The CDM-625 is an advanced satellite modem that provides the combination of adva
 
 ## About
 
-This connector uses SNMP to display information from the device and to set device settings. More detailed information can be found on the following website:
-<http://www.comtechefdata.com/support/docs/satellitemodemdocs>
+This connector uses SNMP to display information from the device and to set device settings. More detailed information can be found on the following website: <http://www.comtechefdata.com/support/docs/satellitemodemdocs>
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                                   | **Based on** | **System Impact**                                 |
-|-----------|--------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------|
-| 1.0.0.x   | Initial version                                                                                                    | \-           | \-                                                |
-| 1.0.1.x   | \-                                                                                                                 | \-           | \-                                                |
-| 1.0.2.x   | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.1.33     | **Old trend data will be lost for these tables.** |
-| 2.0.0.x   | \-                                                                                                                 | \-           | \-                                                |
-| 3.0.0.x   | \-                                                                                                                 | \-           | \-                                                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | - | - | - |
+| 1.0.2.x | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.1.33 | **Old trend data will be lost for these tables.** |
+| 2.0.0.x | - | - | - |
+| 3.0.0.x | - | - | - |
 
 ## Installation and configuration
 
@@ -72,12 +71,12 @@ These options are only available when the device is working in *Local* mode (see
 
 - Host Access List:
 
-- **Access List**: Allows you to grant access via HTTP and SNMP to a defined list of client machines.
+  - **Access List**: Allows you to grant access via HTTP and SNMP to a defined list of client machines.
   - **Access List Overview**: Allows you to define which remote clients can connect when Access List is *Enabled*. Each entry allows you to specify an **IP Address** and a **Subnet Mask** to define a unique class of machines that are allowed access.
 
 - SNMP:
 
-- **Trap IP 1 / Trap IP 2:** Allow you to assign up to two SNMP trap IP addresses.
+  - **Trap IP 1 / Trap IP 2:** Allow you to assign up to two SNMP trap IP addresses.
   - **Trap Version:** Allows you to set the trap version to *SNMPv1* or *SNMPv2* using the drop-down list.
   - **Trap Community String:** Allows you to assign the SNMP trap community string. The community string must consist of a minimum of 0 to a maximum of 20 alphanumeric characters.
 
@@ -92,7 +91,7 @@ The CDM-625 has a number of optional features that can be activated after the un
 
 Use this page to configure modem operating (Tx/Rx) parameters:
 
-- Tx/Rx Interfaces and Framing: The **Tx**/**Rx** **Interface Types** and **Framing Modes** have **higher priority** over the other parameters. They should be configured before other parameters are set.
+- Tx/Rx Interfaces and Framing: The **Tx**/**Rx Interface Types** and **Framing Modes** have **higher priority** over the other parameters. They should be configured before other parameters are set.
 - Tx/Rx operating parameters: Remaining parameters for configuration.
 - Carrier-in-Carrier (CnC) parameters: Click the **CnC** page button to access CnC configurable parameters.
 - ACM parameters: Click the **ACM** page button to access ACM configurable parameters.
@@ -131,7 +130,7 @@ VLAN Mode: This mode is supported if Working Mode is set to *Managed Switch*, wi
 Below this, you can find the **VLAN Table**, which contains the following parameters:
 
 - **VLAN ID:** This parameter is read-only and reflects the ID value assigned in de PVID column of the Per Port Configuration Table (i.e. any ID has a value range of 0001-4095).
-- **Port 1** through **Port 4:** Use the drop-down menu to set the port to *Untagged*, *Tagged* or *Filtered***.**
+- **Port 1** through **Port 4:** Use the drop-down menu to set the port to *Untagged*, *Tagged* or *Filtered*.
 - **VLAN Row Status:** You can use the button to **Delete** the VLAN ID.
 - **Create VLAN:** Allows you to create a new VLAN ID.
 
@@ -153,23 +152,23 @@ Use this page to configure a number of the utility functions of the device.
 
 - **Re-Center Buffer**: Click **Re-Center Buffer** to force the re-centering of the Plesiochronous/Doppler buffer.
 
-- **Unit**: Use the drop-down menus provided in this section to configure the **Unit** **Test Mode**, **RTS/CTS Control**, **HSSI Handshake Control** and **Local/Distant** mode. Reboot the device using the **Soft Reboot** button.
+- **Unit**: Use the drop-down menus provided in this section to configure the **Unit Test Mode**, **RTS/CTS Control**, **HSSI Handshake Control** and **Local/Distant** mode. Reboot the device using the **Soft Reboot** button.
 
 - **Clocks**: Use the drop-down menus provided in this section to configure **Tx / Rx Clock Sources**, **Rx Buffer Size**, **External Clock**, **External Frequency Reference** and **G.703 Clock Extended Mode / Interface**.
 
 - **Circuit ID String**: Enter a Circuit ID string of up to 40 characters. The Circuit ID, as created here, appears in the title bar of compatible web browsers for easy unit identification.
 
-- **BERT Config**: Use this section to configure the **Tx** and **Rx** **Bit Error Rate Test** as *On* or *Off,* to configure the pattern for **Tx** and **Rx**, and to set **Error Insertion** to either *Off* or *10E-3*.
+- **BERT Config**: Use this section to configure the **Tx** and **Rx Bit Error Rate Test** as *On* or *Off,* to configure the pattern for **Tx** and **Rx**, and to set **Error Insertion** to either *Off* or *10E-3*.
 
 - Date and Time:
 
-- **RTC Date:** Enter a date using MM/DD/YY format (where MM = month \[01 to 12\], DD = day \[01 to 31\], and YY = year \[00 to 99\]).
+  - **RTC Date:** Enter a date using MM/DD/YY format (where MM = month \[01 to 12\], DD = day \[01 to 31\], and YY = year \[00 to 99\]).
   - **RTC Time:** Enter a time using HH:MM:SS format (where HH = hour \[00 to 23\], MM = minutes \[00 to 59\], and SS = seconds \[00 to 59\]).
   - **Time Sync** page button: Time sync-related parameters.
 
 - Warm-Up:
 
-- **Warm Up Delay**: Warm-up delay for internal frequency reference (OCXO). Can be set to *Disabled* (instant on - no delay for OCXO to reach temperature) or *Enabled* (unit waits until OCXO reaches correct temperature).
+  - **Warm Up Delay**: Warm-up delay for internal frequency reference (OCXO). Can be set to *Disabled* (instant on - no delay for OCXO to reach temperature) or *Enabled* (unit waits until OCXO reaches correct temperature).
   - **Warm Up Countdown**: The remaining warm-up delay countdown in seconds.
   - **Truncate Delay**: Used to truncate the warm-up delay period to *zero*, forcing the unit into "*instant-on*" mode.
 
@@ -211,15 +210,15 @@ Use this page to configure PTP operating parameters and to view PTP operating st
 
 - PTP:
 
-- **PTP Feature**: Set PTP operation to *Enabled* or *Disabled*.
+  - **PTP Feature**: Set PTP operation to *Enabled* or *Disabled*.
   - **PTP Grandmaster**: Use the drop-down menu to assign to which side (either the *LAN* port or the *WAN* port) the PTP Grandmaster is connected.
 
 - PTP Status:
 
-- **PTP Engine Status**: Shows whether PTP is actively attempting to synchronize time.
+  - **PTP Engine Status**: Shows whether PTP is actively attempting to synchronize time.
   - **PTP Port**: The PTP Port is always Ethernet Port 2 on the modem. This displays whether the Ethernet link is detected.
   - **PTP Date/Time**: Displays the time that has been synchronized with the master device and is being propagated to the slave devices.
-  - **PTP** **RTC Date/Time**: Displays the presumed time for the modem. While the PTP time depends on the Grandmaster device, the RTC Time changes only when it is set by the user.
+  - **PTP RTC Date/Time**: Displays the presumed time for the modem. While the PTP time depends on the Grandmaster device, the RTC Time changes only when it is set by the user.
   - **PTP Offset**: Information about the PTP Offset.
   - **PTP WAN State**: Information about the PTP WAN State.
   - **PTP LAN State**: Information about the PTP LAN State.

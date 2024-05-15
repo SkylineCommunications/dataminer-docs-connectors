@@ -12,15 +12,21 @@ This protocol can be used to monitor the Wellav UMH 160 T2 devices. WellAV UMH 1
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -32,7 +38,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
@@ -62,7 +68,7 @@ This page displays tuner-related information. There are parameters for both Tune
 
 ### Input ASI
 
-This page displays **ASI** **1**, **ASI** **2** and the **TS** **Standard** for both ASI 1 and 2. There is also a **ScanTS** button for both ASI 1 and 2.
+This page displays **ASI 1**, **ASI 2** and the **TS Standard** for both ASI 1 and 2. There is also a **ScanTS** button for both ASI 1 and 2.
 
 ### Input IP
 
@@ -81,11 +87,11 @@ This page displays the following local connection and channel information for ch
 - **Enable Row Port Matching**
 - **TS Standard**
 
-A page button opens the **IGMP** pages for Channel 1 and Channel 2. They display the **IGMP** **Version**, **Auto** **Report**, **Filter** and **IP** **Address**.
+A page button opens the **IGMP** pages for Channel 1 and Channel 2. They display the **IGMP Version**, **Auto Report**, **Filter** and **IP Address**.
 
 ### Backup Setting
 
-Here the **Main** and **Backup** **Input** **StreamBackup** **Settings** can be set, both for **Stream** **1** and **Stream2**.
+Here the **Main** and **Backup Input StreamBackup Settings** can be set, both for **Stream 1** and **Stream2**.
 
 ### Output Decoder
 
@@ -113,7 +119,7 @@ A button can be used to **set the Backup Port** the same as the Main Port.
 
 ### CA
 
-This page shows the **CAM Max Bitrate** and BISS related parameters: **Mode,** the **BISS-1** and **BISS-E** **Keys** and the **BISS-E ID.** The **TS** **Sources** are also displayed for both CAs.
+This page shows the **CAM Max Bitrate** and BISS related parameters: **Mode,** the **BISS-1** and **BISS-E Keys** and the **BISS-E ID.** The **TS Sources** are also displayed for both CAs.
 
 ### Program Mux Setting
 

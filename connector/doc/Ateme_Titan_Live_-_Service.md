@@ -20,7 +20,7 @@ This connector is exported by the parent connector, **Ateme Titan Live**, from v
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 4.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 4.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

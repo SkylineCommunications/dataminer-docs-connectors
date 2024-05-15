@@ -12,36 +12,36 @@ The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC*
 
 ### Version Info
 
-| **Range**            | **Key Features**                                  | **Based on**                                      | **System Impact**                                                                                                     |
-|----------------------|---------------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                  | Range 1.0.2.x of the Evertz 7x00 General Platform | \-                                                                                                                    |
-| 1.0.1.x \[Obsolete\] | Discrete changes.                                 | 1.0.0.2                                           | Alarm templates, Visual Overview, Automation scripts                                                                  |
-| 1.0.2.x \[Obsolete\] | Discrete changes.                                 | 1.0.1.4                                           | Alarm templates, Visual Overview, Automation scripts                                                                  |
-| 1.0.3.x \[Obsolete\] | \-                                                | 1.0.2.11                                          | \-                                                                                                                    |
-| 1.0.4.x \[SLC Main\] | Removed columns from fault polling configuration. | 1.0.3.3                                           | \-                                                                                                                    |
-| 2.0.0.x              | Removed 7700ACO2HD and 7800R2X2-ACS-3G cards.     | 1.0.4.2                                           | The removed cards can no longer be polled using this connector. Standalone connectors are available for this instead. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | Range 1.0.2.x of the Evertz 7x00 General Platform | - |
+| 1.0.1.x [Obsolete] | Discrete changes. | 1.0.0.2 | Alarm templates, Visual Overview, Automation scripts |
+| 1.0.2.x [Obsolete] | Discrete changes. | 1.0.1.4 | Alarm templates, Visual Overview, Automation scripts |
+| 1.0.3.x [Obsolete] | - | 1.0.2.11 | - |
+| 1.0.4.x [SLC Main] | Removed columns from fault polling configuration. | 1.0.3.3 | - |
+| 2.0.0.x | Removed 7700ACO2HD and 7800R2X2-ACS-3G cards. | 1.0.4.2 | The removed cards can no longer be polled using this connector. Standalone connectors are available for this instead. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
-| 2.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
+| 2.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \- [Evertz 7x00 General Platform Group 2 - 7800R2x2-ACS](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800R2x2-ACS) <br>- [Evertz 7x00 General Platform Group 2 - 7800IDA8-3G](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800IDA8-3G) <br>- [Evertz 7x00 General Platform Group 2 - 7707GPS-DR](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DR) <br>- [Evertz 7x00 General Platform Group 2 - 7707GPS-DT](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DT) |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \- [Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC) <br>- [Evertz 7x00 General Platform Group 2 - 7881DEC2MP2HD](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD) <br>- [Evertz 7x00 General Platform Group 2 - 7746FSHD](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7746FSHD)                                                                                                                                          |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \- [Evertz 7x00 General Platform Group 2- 7800TM23G](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800TM23G)                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \- [Evertz 7x00 General Platform Group 2 - 7800R2x2-ACS](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800R2x2-ACS)                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - [Evertz 7x00 General Platform Group 2 - 7800R2x2-ACS](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800R2x2-ACS) <br>- [Evertz 7x00 General Platform Group 2 - 7800IDA8-3G](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800IDA8-3G) <br>- [Evertz 7x00 General Platform Group 2 - 7707GPS-DR](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DR) <br>- [Evertz 7x00 General Platform Group 2 - 7707GPS-DT](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DT) |
+| 1.0.1.x | No | Yes | - | - |
+| 1.0.2.x | No | Yes | - | - [Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC) <br>- [Evertz 7x00 General Platform Group 2 - 7881DEC2MP2HD](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD) <br>- [Evertz 7x00 General Platform Group 2 - 7746FSHD](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7746FSHD) |
+| 1.0.3.x | No | Yes | - | - [Evertz 7x00 General Platform Group 2- 7800TM23G](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800TM23G) |
+| 1.0.4.x | No | Yes | - | - [Evertz 7x00 General Platform Group 2 - 7800R2x2-ACS](xref:Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800R2x2-ACS) |
+| 2.0.0.x | No | Yes | - | - |
 
 ## Configuration
 

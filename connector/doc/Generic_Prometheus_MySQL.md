@@ -16,19 +16,19 @@ MySQL is a freely available open-source Relational Database Management System (R
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                    | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Generic Prometheus Collector](xref:Connector_help_Generic_Prometheus_Collector) | \-                      |
+| 1.0.0.x   | No                  | Yes                     | [Generic Prometheus Collector](xref:Connector_help_Generic_Prometheus_Collector) | -                       |
 
 ## Configuration
 

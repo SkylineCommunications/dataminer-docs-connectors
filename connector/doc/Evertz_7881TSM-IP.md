@@ -58,14 +58,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -79,5 +71,5 @@ The element created with this connector has the following data pages:
 - **TSM**: Displays the **Input Control** table, where you can configure parameters such as the **IP Address** from which to receive the stream and the **UDP Port** number to receive the stream. The **Monitor** status allows you to enable or disable the stream monitoring.
 - **Input Monitor**: Contains multiple tables that display relevant information about the inputs, such as **average bitrate**, **number of programs**, and **known PIDs** detected in the input stream.
 - **TS Syntax Errors**: Displays multiple tables that allow you to monitor possible errors as well as configure the error test for each variable.
-- **PID Monitor**: Contains multiple PID-related tables, namely **PID Table**, **PID Template Control**, and **PID Monitor Control.**
-- **Transport Stream:** Contains a tree control with transport stream information. The tree control uses the following relationship order: **Input Table** \> **Program Name** \> **PID Table**.
+- **PID Monitor**: Contains multiple PID-related tables, namely **PID Table**, **PID Template Control**, and **PID Monitor Control**.
+- **Transport Stream**: Contains a tree control with transport stream information. The tree control uses the following relationship order: **Input Table** \> **Program Name** \> **PID Table**.

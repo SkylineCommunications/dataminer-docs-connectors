@@ -12,15 +12,21 @@ This connector is used to monitor and control the spectrum analyzer using the pr
 
 ### Version Info
 
-| **Range** | **Description**                                                 | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version, based on version 1.0.0.11 of the 8 port connector | No                  | Yes                     |
+| Range              | Key Features    | Based on                                 | System Impact |
+|--------------------|-----------------|------------------------------------------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | Version 1.0.0.11 of the 8 port connector | -             |
 
-### Supported firmware version
+### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | 3.0.12-3                    |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 3.0.12-3               |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -47,4 +53,4 @@ This page contains general parameters such as the voltage, and global status par
 
 ## Notes
 
-Since it is not possible to retrieve the center frequency, frequency span or resolution bandwidth, default values are set after startup to initiate the communication. The default values are *1550 MHz* for the center frequency, *15885 Hz* for the span and *100 Hz* for the resolution bandwith.
+Since it is not possible to retrieve the center frequency, frequency span or resolution bandwidth, default values are set after startup to initiate the communication. The default values are *1550 MHz* for the center frequency, *15885 Hz* for the span and *100 Hz* for the resolution bandwidth.

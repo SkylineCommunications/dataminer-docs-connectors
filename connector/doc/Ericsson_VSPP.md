@@ -12,22 +12,22 @@ The Ericsson VSPP is a **Management System**.
 
 | **Range** | **Key Features**      | **Based on** | **System Impact** |
 |-----------|-----------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version       | \-           | \-                |
-| 1.0.1.x   | HTTP connection added | \-           | \-                |
+| 1.0.0.x   | Initial version       | -            | -                 |
+| 1.0.1.x   | HTTP connection added | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -39,13 +39,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host:** The polling IP of the device
+- **IP address/host**: The polling IP of the device
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device (default value: *161).*
-- **Get community string:** The community string used when reading values from the device (default value: *public*).
-- **Set community string:** The community string used when setting values on the device (default value: *private*).
+- **Port number**: The port of the connected device (default value: *161).*
+- **Get community string**: The community string used when reading values from the device (default value: *public*).
+- **Set community string**: The community string used when setting values on the device (default value: *private*).
 
 #### HTTP connection
 
