@@ -10,9 +10,9 @@ This connector displays general information about the Evertz 7881TSM-IP device a
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                     | **Based on** | **System Impact**                                                                               |
-|----------------------|----------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------|
-| 1.0.0.x   \[SLC Main\]            | \- Input and output port monitoring - Monitoring of TS syntax errors | \-           | \-                                                                                              |
+| Range                | Key Features                                                            | Based on | System Impact |
+|----------------------|-------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x   [SLC Main] | - Input and output port monitoring <br>- Monitoring of TS syntax errors | -        | -             |
 
 ### Product Info
 
@@ -22,9 +22,9 @@ This connector displays general information about the Evertz 7881TSM-IP device a
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
 
 ## Configuration
 
