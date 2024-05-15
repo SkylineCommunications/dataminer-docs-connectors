@@ -7844,6 +7844,8 @@
     topicUid: Connector_help_Skyline_Smart_Serial_Client_Example
   - name: Skyline Smart Serial Server Example
     topicUid: Connector_help_Skyline_Smart_Serial_Server_Example
+  - name: Skyline Spectrum Simulator
+    topicUid: Connector_help_Skyline_Spectrum_Simulator
   - name: Skyline Software Panel
     topicUid: Connector_help_Skyline_Software_Panel
   - name: Skyline SRM Generic Function Generator
