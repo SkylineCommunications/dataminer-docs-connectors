@@ -76,6 +76,7 @@ This page displays information regarding the **Configured Nodes**.
 ### Functions and Operations Page
 
 This page displays information regarding the **Configured** **Functions,** **Configured Operations**, and **Operation Transcode AAC** that are created in the device.
+To alarm on DateTime parameters, like Last Up/Down columns, the user has to calculate the numeric value for a specific date and use that in the alarm template.
 
 ### Schedules and Jobs Page
 
