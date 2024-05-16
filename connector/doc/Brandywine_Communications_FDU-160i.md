@@ -87,21 +87,4 @@ Configuration
 The configuration page allows the configuration of Ip addresses as well as displaying their current values.
 
  
-### Examples
 
-For a really simple connector that contains only one "General" page with a couple of read-only parameters, you can write something like this:
-
-*You can find all the information you need to monitor [the data source in question] on the General data page.*
-
-For a relatively simple connector with a couple of pages, you can mention the most important pages and what their purpose is. For example:
-
-*On the **General** page of this connector, you can configure the username and password to access the device.*
-
-*The **Instance Settings** page contains basic information about the existing instances, as well as specific logs for every instance. This page has multiple subpages, which can among others be used to add new instances or edit existing ones.*
-
-If you need to add more than just a couple of lines of text because the connector is quite complicated or you need to go into a lot of detail for some of the features, use **subtitles** (using the same format as the "Examples" subtitle above: Heading 3 with Accent 1) to create structure in your text. These subtitles can either reflect the different pages you want to discuss, or the different topics, e.g. General settings, Import and export, Logging.
-
-
-## Notes
-
-In this section, you can provide additional information about the connector that does not fit in the other sections. Remove this section if it does not contain any info.
