@@ -90,6 +90,8 @@ After the collector element is created, all configuration should be done via the
 
 In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available, one for upstream and one for downstream.
 
+The QAM thresholds tables are located under *docsis thresholds settings > upstream/downstream QAM channels*. 
+
 These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
 
 - **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
@@ -105,6 +107,16 @@ These are the available Key Performance Indicators (KPIs) for setting downstream
 When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
 
 The minimum value for the Rx and Tx thresholds cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
+
+In the *docsis thresholds settings > upstream/downstream QAM channels* you will find the PNM threshold parameters.
+
+These are the available PNM parameters to be modified:
+- **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
+- **Non-Main-Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
+- **Post-Main-Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
+- **Pre-Main-Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
+
+When you click the **Apply** button, the status of the specified PNM Key  Performance Indicators (KPIs) in the CM table will be updated.
 
 ## Usage
 
