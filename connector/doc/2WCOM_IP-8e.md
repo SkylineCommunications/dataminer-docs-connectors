@@ -83,7 +83,7 @@ Below, you can find a list of existing commands and the information (tables and 
 | Command/Name | Polled Tables | Polled Parameters |
 |--|--|--|
 | VirtCsl/Device Status | Device Fans<br>GPI States<br>GPO States  | General parameters<br>Mainboard parameters |
-| Csl/Device Settings | External APIs<br>GPO Configuration<br>syslog Settings | Headphone<br>External APIs<br>NTP \[Network Settings\] |
+| Csl/Device Settings | External APIs<br>GPO Configuration<br>Syslog Settings | Headphone<br>External APIs<br>NTP \[Network Settings\] |
 | VirtCsl/Monitoring Status | AES/EBU and Silence Detection Statuses<br>No Input Data Encoder Statuses<br>Ancillary Data Statuses<br>LAN Data Links Statuses | NTP Clock Status<br>Temperature Status<br>Power Supply Status<br>LAN Ctrl Link Status |
 | Csl/Monitoring Settings | LAN Data Links<br>AES/EBU No Signal Audios<br>AES/EBU Silence Detection Audios<br>AES/EBU CRC Error Audios<br>No Input Data Encoders<br>Ancillary Timeout Audios<br>DTE Timeout Inputs | External Clock NTP Parameters<br>Device Hardware Parameters<br>Network LAN Ctrl |
 | VirtCsl/External Clock Sources | N/A | NTP Statuses |
