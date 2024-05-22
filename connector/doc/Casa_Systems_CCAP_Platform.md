@@ -90,6 +90,20 @@ In addition, in range **1.0.0.x and 1.0.1.x**, configure the following settings:
 
 There is no redundancy defined.
 
+### Threshold Table
+
+In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:
+
+- **Maximum Timing Offset Level**: Range from 0 to 10000 µs.
+- **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Minimum SNR Level**: Range from 10 to 60 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+
+The minimum value for the Rx threshold cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
+
 ## How to use
 
 ### Configuration

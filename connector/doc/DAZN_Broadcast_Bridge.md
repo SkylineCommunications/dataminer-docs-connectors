@@ -10,15 +10,15 @@ The DAZN Broadcast Bridge platform translates the DOTS livestream module data in
 
 ### Version Info
 
-| Range                | Key Features                                   | Based on     | System Impact     |
-|----------------------|------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | \- Initial version. - Event stream monitoring. | -            | -                 |
+| Range              | Key Features                                      | Based on | System Impact |
+|--------------------|---------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - Initial version. <br>- Event stream monitoring. | -        | -             |
 
 ### Product Info
 
-| **Range** | **Supported Firmware / API** |
-|-----------|------------------------------|
-| 1.0.0.x   | v1                           |
+| Range    | Supported Firmware / API |
+|----------|--------------------------|
+| 1.0.0.x  | v1                       |
 
 ### System Info
 

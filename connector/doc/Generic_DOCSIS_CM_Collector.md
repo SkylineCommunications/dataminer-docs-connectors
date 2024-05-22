@@ -86,6 +86,26 @@ SNMP Settings:
 
 After the collector element is created, all configuration should be done via the CPE Manager element.
 
+### Thresholds Tables
+
+In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available, one for upstream and one for downstream.
+
+These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
+
+- **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
+
+These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
+
+- **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Minimum SNR Level**: Range from 0 to 100 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+
+The minimum value for the Rx and Tx thresholds cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
+
 ## Usage
 
 The data of this element are not intended to be viewed directly, so no data pages are displayed. Instead, a CPE Manager element should be used to view the data.

@@ -16,10 +16,10 @@ The connector polls data from the device using **SNMPv1**.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                        | **Based on** | **System Impact**                                   |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                         | -            | -                                                   |
-| 1.1.0.x [SLC Main]   | \- Added support for firmware version 270. - Added the tables Inputs Totals, Device Performance, and Reset Performance. | 1.0.0.2      | May not be compatible with older firmware versions. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.1.0.x [SLC Main] | - Added support for firmware version 270. <br>- Added the tables Inputs Totals, Device Performance, and Reset Performance. | 1.0.0.2 | May not be compatible with older firmware versions. |
 
 ### Product Info
 
@@ -63,7 +63,7 @@ The web interface is only accessible when the client machine has network access 
 
 This page displays information about the **Devices Connected**, such as Hardware Address, New Devices, Ring State, etc. It also displays the **System Status**, including the Device Status Code and Alerts.
 
-You can also enable or disable the **Outlet** **Automatically Unlock** feature on this page. When this is enabled, there is no need for a manual unlock before a change to the current state or a reboot of a certain outlet.
+You can also enable or disable the **Outlet Automatically Unlock** feature on this page. When this is enabled, there is no need for a manual unlock before a change to the current state or a reboot of a certain outlet.
 
 ### Sensors
 

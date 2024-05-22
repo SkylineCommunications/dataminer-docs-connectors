@@ -4,36 +4,40 @@ uid: Connector_help_ViaLite_ViaLiteHD
 
 # ViaLite ViaLiteHD
 
-The **ViaLite ViaLiteHD** connector is used to display and configure information of the attached modules.
+The ViaLiteHD system comprises up to 13 rack-mounted cards and an SNMP card, all of which are plugged into a 19" 3U chassis with dual power supplies.
+
+The ViaLite ViaLiteHD connector is used to display and configure information of the attached modules.
 
 ## About
 
-The ViaLiteHD system comprises up to 13 rack-mounted cards and an SNMP card, all of which are plugged into a 19" 3U chassis with dual power supplies.
-
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | No                  | No                      |
+| Range              | Description                                                                                | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                                           | No              | No                  |
+| 1.0.1.x [Obsolete] | New way to get device data and traps table included.                                       | No              | Yes                 |
+| 1.0.2.x [SLC Main] | Unnecessary parameters deleted from Transmitter element and fix for Receiver Table values. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V1.04.21                    |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | V1.04.21           |
+| 1.0.1.x | V1.04.21           |
+| 1.0.2.x | V1.04.21           |
 
 ### Exported connectors
 
-| **Exported Connector**                                                                                        | **Description**      |
-|--------------------------------------------------------------------------------------------------------------|----------------------|
-| [ViaLite ViaLiteHD Dual Transmitter](xref:Connector_help_ViaLite_ViaLiteHD_Dual_Transmitter)           | Dual Transmitter     |
-| [ViaLite ViaLiteHD Dual Receiver](xref:Connector_help_ViaLite_ViaLiteHD_Dual_Receiver)                 | Dual Receiver        |
-| [ViaLite ViaLiteHD Splitter](xref:Connector_help_ViaLite_ViaLiteHD_Splitter)                             | Splitter             |
+| Exported Connector                                                                                   | Description          |
+|------------------------------------------------------------------------------------------------------|----------------------|
+| [ViaLite ViaLiteHD Dual Transmitter](xref:Connector_help_ViaLite_ViaLiteHD_Dual_Transmitter)         | Dual Transmitter     |
+| [ViaLite ViaLiteHD Dual Receiver](xref:Connector_help_ViaLite_ViaLiteHD_Dual_Receiver)               | Dual Receiver        |
+| [ViaLite ViaLiteHD Splitter](xref:Connector_help_ViaLite_ViaLiteHD_Splitter)                         | Splitter             |
 | [ViaLite ViaLiteHD Dual Transmitter LNB](xref:Connector_help_ViaLite_ViaLiteHD_Dual_Transmitter_LNB) | Dual Transmitter LNB |
-| [ViaLite ViaLiteHD Switch](xref:Connector_help_ViaLite_ViaLiteHD_Switch)                                 | Switch               |
-| [ViaLite ViaLiteHD Receiver](xref:Connector_help_ViaLite_ViaLiteHD_Receiver)                             | Receiver             |
-| ViaLite ViaLiteHD Transmitter                                                                                | Transmitter          |
-| ViaLite ViaLiteHD SER                                                                                        | SER                  |
+| [ViaLite ViaLiteHD Switch](xref:Connector_help_ViaLite_ViaLiteHD_Switch)                             | Switch               |
+| [ViaLite ViaLiteHD Receiver](xref:Connector_help_ViaLite_ViaLiteHD_Receiver)                         | Receiver             |
+| [ViaLite ViaLiteHD Transmitter](xref:Connector_help_ViaLite_ViaLiteHD_Transmitter)                   | Transmitter          |
+| ViaLite ViaLiteHD SER                                                                                | SER                  |
 
 ## Configuration
 
@@ -59,9 +63,13 @@ On the **Modules** page of the main element, all modules are shown in the **Modu
 
 To remove a virtual element, set the **Create DVE** toggle button to "*NO*" for that virtual element.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to use
 
-The ViaLite ViaLiteHD protocol creates a main element and virtual elements for each supported module. The virtual elements receive a name that consists of the **Main Element Name** followed by the relevant **Slot Number** and **Type**, for instance: *ViaLiteHD Slot 6 (Receiver)*.
+The ViaLite ViaLiteHD connector creates a main element and virtual elements for each supported module. The virtual elements receive a name that consists of the **Main Element Name** followed by the relevant **Slot Number** and **Type**, for instance: *ViaLiteHD Slot 6 (Receiver)*.
 
 ### Main Element
 
@@ -69,8 +77,8 @@ The connector's main element has the following pages:
 
 - **General**: General system parameters of the chassis. The **System Details** page button provides access to more detailed information.
 - **Modules**: For every module slot, an entry is created in the **Module Table**. The **Invalid DVE Table** page button provides access to a table that tracks the hanging/invalid DVEs, with an option to remove them.
-- **Receiver,** **Transmitter,** **Switch, LNB, SER:** Module-specific information.
-- **Webpage:** Link to the webpage of the device
+- **Receiver, Transmitter, Switch, LNB, SER**: Module-specific information.
+- **Webpage**: Displays the webpage of the device.
 
 ### Virtual Elements
 

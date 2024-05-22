@@ -27,7 +27,7 @@ In order to poll the databases, the **primary and secondary HADB Connection Stri
 
 ### General Page
 
-On this page, you can view information about the **Primary and Secondary connection** to request data about the system, in the **Timeout and Timeout Message** parameters**.**
+On this page, you can view information about the **Primary and Secondary connection** to request data about the system, in the **Timeout and Timeout Message** parameters.
 
 It is also on this page that the **Primary and Secondary Connection Strings** have to be filled in.
 
