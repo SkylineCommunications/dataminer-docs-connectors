@@ -3974,6 +3974,8 @@
     topicUid: Connector_help_Generic_UPS
   - name: Generic Virtual Chassis
     topicUid: Connector_help_Generic_Virtual_Chassis
+  - name: Generic Virtual DeEmbedder
+    topicUid: Connector_help_Generic_Virtual_DeEmbedder
   - name: Generic Virtual IP Device
     topicUid: Connector_help_Generic_Virtual_IP_Device
   - name: Generic Weather Feed Retriever
