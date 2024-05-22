@@ -35,4 +35,5 @@ There is no redundancy defined.
 
 This is a virtual connector that initializes DCF Connections at start-up. 
 
-The connector does not have data pages. 
+The connector does not have data pages.
+
