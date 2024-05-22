@@ -38,9 +38,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**:  Selected by the user from the available devices.
-  - **IP port**: Selected by the user from the available devices.
-  - **Bus address**: Not required.
+  - **IP address/host**:  An arbitrary IP address can be entered because it will be overwritten when element is started. User can select Device and IP address will be dynamicly updated.
+  - **IP port**: An arbitrary Port can be entered because it will be overwritten when element is started. User can select Device and Port will be dynamicly updated. 
 
 ## How to use
 
