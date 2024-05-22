@@ -82,24 +82,24 @@ Below, you can find a list of existing commands and the information (tables and 
 
 | Command/Name | Polled Tables | Polled Parameters |
 |--|--|--|
-| VirtCsl/Device Status | Device Fans<b>GPI States<b>GPO States  | General parameters<b>Mainboard parameters |
-| Csl/Device Settings | External APIs<b>GPO Configuration<b>syslog Settings | Headphone<b>External APIs<b>NTP \[Network Settings\] |
-| VirtCsl/Monitoring Status | AES/EBU and Silence Detection Statuses<b>No Input Data Encoder Statuses<b>Ancillary Data Statuses<b>LAN Data Links Statuses | NTP Clock Status<b>Temperature Status<b>Power Supply Status<b>LAN Ctrl Link Status |
-| Csl/Monitoring Settings | LAN Data Links<b>AES/EBU No Signal Audios<b>AES/EBU Silence Detection Audios<b>AES/EBU CRC Error Audios<b>No Input Data Encoders<b>Ancillary Timeout Audios<b>DTE Timeout Inputs | Externa; Clock NTP Parameters<b>Device Hardware Parameters<b>Network LAN Ctrl |
+| VirtCsl/Device Status | Device Fans<br>GPI States<br>GPO States  | General parameters<br>Mainboard parameters |
+| Csl/Device Settings | External APIs<br>GPO Configuration<br>syslog Settings | Headphone<br>External APIs<br>NTP \[Network Settings\] |
+| VirtCsl/Monitoring Status | AES/EBU and Silence Detection Statuses<br>No Input Data Encoder Statuses<br>Ancillary Data Statuses<br>LAN Data Links Statuses | NTP Clock Status<br>Temperature Status<br>Power Supply Status<br>LAN Ctrl Link Status |
+| Csl/Monitoring Settings | LAN Data Links<br>AES/EBU No Signal Audios<br>AES/EBU Silence Detection Audios<br>AES/EBU CRC Error Audios<br>No Input Data Encoders<br>Ancillary Timeout Audios<br>DTE Timeout Inputs | External Clock NTP Parameters<br>Device Hardware Parameters<br>Network LAN Ctrl |
 | VirtCsl/External Clock Sources | N/A | NTP Statuses |
 | Csl/Audio Clock | External Audio Clocks | External Clock (PTP and NTP) |
-| Csl/Interface | Ancillary Data DTE Inputs | Audio Device Mode<b>Critical Level Marker Digital & Analog Threshold |
+| Csl/Interface | Ancillary Data DTE Inputs | Audio Device Mode<br>Critical Level Marker Digital & Analog Threshold |
 | Csl/Decoder Input Sources File | File Input Sources | Check Criteria - File |
 | Csl/Decoder Input Sources RTP | ES-RIST Input Sources | Check Criteria - ES-RIST |
 | Csl/Decoder Input Sources ICY | Icecast Input Sources | Check Criteria - Icecast |
 | Csl/Decoder Input Sources XLR | XLR Input Sources | Check Criteria - XLR |
-| VirtCsl/IP Config VLANs | Interface Settings Table<b>MAC Addresses<b>Ctrl VLANs<b>Data 1 VLANs<b>Data 2 VLANs | N/A |
-| Csl/IP Config Interface Services | VLANs and DNSs<b>Ctrl Interface Services<b>Data 1 Interface Services<b>Data 2 Interface Services<b>Interface Services | DNS Routing |
+| VirtCsl/IP Config VLANs | Interface Settings Table<br>MAC Addresses<br>Ctrl VLANs<br>Data 1 VLANs<br>Data 2 VLANs | N/A |
+| Csl/IP Config Interface Services | VLANs and DNSs<br>Ctrl Interface Services<br>Data 1 Interface Services<br>Data 2 Interface Services<br>Interface Services | DNS Routing |
 | VirtCsl/Interface Ethernet Status | Ethernet Statuses | N/A |
 | VirtCsl/Ancillary Data | DTE Inputs | N/A |
-| Csl/FPGA Encoder Config | Audio Inputs<b>Analog Signal Types<b>Analog Volumes<b>Digital Volumes | N/A |
+| Csl/FPGA Encoder Config | Audio Inputs<br>Analog Signal Types<br>Analog Volumes<br>Digital Volumes | N/A |
 | Csl/Ancillary Data Input | Ancillary Data UDP Inputs | N/A |
-| Csl/Encoder Outputs | ES-RIST Encoder Outputs<b>Icecast Source Client Encoder Outputs<b>Icecast Server Encoder Outputs | Table Status (Icecast Server Encoder Outputs)<b>Table Status (Icecast Source Client Encoder Outputs)<b>Table Status (ES-RIST Encoder Outputs) |
+| Csl/Encoder Outputs | ES-RIST Encoder Outputs<br>Icecast Source Client Encoder Outputs<br>Icecast Server Encoder Outputs | Table Status (Icecast Server Encoder Outputs)<br>Table Status (Icecast Source Client Encoder Outputs)<br>Table Status (ES-RIST Encoder Outputs) |
 | VirtCsl/Encoder Outputs Control | Encoder Outputs Control | N/A |
 | VirtCsl/Decoder Input Sources | Input Sources Control | N/A |
 | Csl/Audio Profiles | Audio Profiles | N/A |
