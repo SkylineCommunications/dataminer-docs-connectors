@@ -2743,6 +2743,8 @@
     topicUid: Connector_help_directOut_montone.42
   - name: directOut Prodigy
     topicUid: Connector_help_directOut_Prodigy
+  - name: directOut PRODIGY.MC
+    topicUid: Connector_help_directOut_PRODIGY.MC
 - name: Discovery Networks Europe
   topicUid: Connector_help_Discovery_Networks_Europe_ESB_Bus
   items:
