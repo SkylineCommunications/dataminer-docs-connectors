@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Skyline_Spectrum_Simulator
+uid: Connector_help_Skyline_Spectrum_Simulation
 ---
 
-# Skyline Spectrum Simulator
+# Skyline Spectrum Simulation
 
 This connector is used to simulate a spectrum analyzer. It allows you to test DataMiner Spectrum Analysis without the need for an actual device or special debug code directly in SLSpectrum.
 
@@ -12,7 +12,7 @@ This connector is used to simulate a spectrum analyzer. It allows you to test Da
 
 | Range              | Key Features     | Based on     | System Impact     |
 |--------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main] | Initial version  | -            | -                |
+| 1.0.0.x [SLC Main] | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -48,9 +48,9 @@ This page contains general information, as well as the following parameters:
 
   - The *Center Trace Pattern* mode creates a waveform at the center of the spectrum analyzer trace. The type of waveform is based on the value of the Trace Pattern parameter.
 
-  - The *Carriers from Table* mode creates a waveform based on the Center Frequency, Bandwidth, and Amplitude specified in the Carrier Table.
+  - The *Carriers from Table* mode creates a waveform based on the Center Frequency, Bandwidth, and Amplitude specified in the **Carrier Table**.
 
-- **Trace pattern**: Allows you to select a specific trace pattern instead of the default pattern. The following patterns are available:
+- **Trace Pattern**: Allows you to select a specific trace pattern instead of the default pattern. The following patterns are available:
 
   - *Default*: A single flat line at the center of the trace window, simulating no available signals or carriers.
 
@@ -62,11 +62,13 @@ This page contains general information, as well as the following parameters:
 
   - *Band*: A set of 8 spikes spread over the trace window, simulating a band with several channels.
 
-- **Floor**: A single line in the lower part of the trace window, simulating no available signals or carriers.
+  - *Floor*: A single line in the lower part of the trace window, simulating no available signals or carriers.
+
+  - *Frequencydependent*: An asymmetrical trace with five carriers, spread over the trace window, which have a different bandwidth but all have the same amplitude.
 
 - **Noise**: Allows you to disable noise in the simulated pattern.
 
-- **Noise depth**: Allows you to modify the amount of random noise added to the simulated pattern, so that you can for instance simulate environments with poor reception.
+- **Noise Depth**: Allows you to modify the amount of random noise added to the simulated pattern, so that you can for instance simulate environments with poor reception.
 
 ### Tracking
 
