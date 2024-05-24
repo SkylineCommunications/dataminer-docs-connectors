@@ -7456,6 +7456,8 @@
     topicUid: Connector_help_Sencore_AG_4800A
   - name: Sencore AG 5800
     topicUid: Connector_help_Sencore_AG_5800
+  - name: Sencore CRD 4900
+    topicUid: Connector_help_Sencore_CRD_4900
   - name: Sencore DMG-7000
     topicUid: Connector_help_Sencore_DMG-7000
   - name: Sencore Impulse 300D Decoder
