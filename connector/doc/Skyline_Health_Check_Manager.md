@@ -14,7 +14,7 @@ Skyline Health Check Manager helps users with system checks of resources in a si
 
 - Map standalone and table column parameters of any protocol and any protocol version to a subscription.
 - Add, edit, or delete tests based on Automation scripts or subscriptions, which need to meet certain thresholds based on a set of available operations.
-- View all tests results in a single pane of information in a table with details about failures.
+- View all test results in a single pane of information in a table with details about failures.
 - Configure a schedule to run the tests with daily, weekly, and monthly options.
 
 ### Version Info
@@ -133,7 +133,7 @@ The connector contains settings to customize its behavior:
 
 - **Email Addresses**: Allows you to provide a list of emails that will receive a report of the test run, similar to the results table.
 
-- **Recurrence**: Allows you to view and edit the recurrence set for the scheduled test runs, with *Daily*, *Weekly*, and *Monthly* options. You can always see when is the next test run is due.
+- **Recurrence**: Allows you to view and edit the recurrence set for the scheduled test runs, with *Daily*, *Weekly*, and *Monthly* options. You can always see when the next test run is due.
 
 - **Longer Duration Time**: Allows you to specify a duration during which tests will run and get information on their failure rate.
 
