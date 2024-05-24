@@ -7772,6 +7772,8 @@
     topicUid: Connector_help_Skyline_Generic_Source
   - name: Skyline Generic Virtual Connector
     topicUid: Connector_help_Skyline_Generic_Virtual_Connector
+  - name: Skyline Health Check Manager
+    topicUid: Connector_help_Skyline_Health_Check_Manager
   - name: Skyline IAM DB
     topicUid: Connector_help_Skyline_IAM_DB
   - name: Skyline IAM DB Provision
