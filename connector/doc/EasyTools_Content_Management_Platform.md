@@ -56,7 +56,7 @@ You can find more information about the data display pages of the connector belo
 
 ### General Page
 
-This page displays the server **System ID, Version, Vendor, Time,** **Name**, and **IP Address** (which represents the polling IP), as well as the **Total Memory, Memory Cache, Free Memory**, and **Memory Buffers.**
+This page displays the server **System ID**, **Version**, **Vendor**, **Time**, **Name**, and **IP Address** (which represents the polling IP), as well as the **Total Memory, Memory Cache, Free Memory**, and **Memory Buffers.**
 
 There are two page buttons:
 
@@ -75,8 +75,10 @@ This page displays information regarding the **Configured Nodes**.
 
 ### Functions and Operations Page
 
-This page displays information regarding the **Configured** **Functions,** **Configured Operations**, and **Operation Transcode AAC** that are created in the device.
-To alarm on DateTime parameters, like Last Up/Down columns, the user has to calculate the numeric value for a specific date and use that in the alarm template.
+This page displays information regarding the **Configured Functions**, **Configured Operations**, and **Operation Transcode AAC** that are created in the device.
+
+> [!NOTE]
+> If you want alarms to be triggered for datetime parameters such as the Last Up/Down columns, you will need to calculate the numeric value for a specific date and use that in the alarm template.
 
 ### Schedules and Jobs Page
 
