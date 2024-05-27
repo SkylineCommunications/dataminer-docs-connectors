@@ -30,8 +30,7 @@ VB280 is supported in a separate version of the connector.
 | 3.3.0.x | Obsolete -\> See 3.3.1.x.<br>OTT Streams Table renamed to OTT Profiles -\> minor impact expected. | Yes | Yes |
 | 3.3.1.x | Obsolete -\> See 3.3.2.x.<br>**PID Info Polling** should be disabled if firmware \< 5.3.<br>**RDP Version** should be set to *Version 1* if firmware \< 5.2; otherwise, it should be set to *Version 2*.<br>**Ethernet Multicast Version** should be double-checked. | Yes | Yes |
 | 3.3.2.x | Obsolete -\> See 3.3.3.x.<br>Standalone "CPU Core 1-2 Usage" parameters replaced with a table with all CPU cores. | Yes | Yes |
-| **3.3.3.x** | **Last Main Range**<br>Fixed PKs on Streams tables.<br>**[Bridge Technologies VB Probe Series](xref:Connector_help_Bridge_Technologies_VB_Probe_Series) should be used instead.** |
-|  | Yes | Yes |
+| **3.3.3.x** | **Last Main Range**<br>Fixed PKs on Streams tables.<br>**[Bridge Technologies VB Probe Series](xref:Connector_help_Bridge_Technologies_VB_Probe_Series) should be used instead.** | Yes | Yes |
 | 4.1.0.x | Obsolete -\> See 4.3.0.x. | No | Yes |
 | 4.2.0.x | Obsolete -\> See 4.3.0.x. | No | Yes |
 | 4.3.0.x | Specific version<br>Only to be used if very accurate timing on alarms (history sets) is required. | No | Yes |

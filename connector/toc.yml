@@ -1648,6 +1648,8 @@
     topicUid: Connector_help_BMC_Remedy_ORCA
 - name: Brandywine Communications
   items:
+  - name: Brandywine Communications FDU-160i
+    topicUid: Connector_help_Brandywine_Communications_FDU-160i
   - name: Brandywine Communications NFS-220
     topicUid: Connector_help_Brandywine_Communications_NFS-220
 - name: Bridge Technologies
@@ -3974,6 +3976,10 @@
     topicUid: Connector_help_Generic_UPS
   - name: Generic Virtual Chassis
     topicUid: Connector_help_Generic_Virtual_Chassis
+  - name: Generic Virtual DeEmbedder
+    topicUid: Connector_help_Generic_Virtual_DeEmbedder
+  - name: Generic Virtual Embedder
+    topicUid: Connector_help_Generic_Virtual_Embedder
   - name: Generic Virtual IP Device
     topicUid: Connector_help_Generic_Virtual_IP_Device
   - name: Generic Weather Feed Retriever
@@ -5548,6 +5554,8 @@
     topicUid: Connector_help_Miranda_nVision_Router_Control
   - name: Miranda RCP-200
     topicUid: Connector_help_Miranda_RCP-200
+  - name: Miranda XVP-3901
+    topicUid: Connector_help_Miranda_XVP-3901
 - name: Miravid
   items:
   - name: Miravid Telesight
@@ -7454,6 +7462,8 @@
     topicUid: Connector_help_Sencore_AG_4800A
   - name: Sencore AG 5800
     topicUid: Connector_help_Sencore_AG_5800
+  - name: Sencore CRD 4900
+    topicUid: Connector_help_Sencore_CRD_4900
   - name: Sencore DMG-7000
     topicUid: Connector_help_Sencore_DMG-7000
   - name: Sencore Impulse 300D Decoder
@@ -7770,6 +7780,8 @@
     topicUid: Connector_help_Skyline_Generic_Source
   - name: Skyline Generic Virtual Connector
     topicUid: Connector_help_Skyline_Generic_Virtual_Connector
+  - name: Skyline Health Check Manager
+    topicUid: Connector_help_Skyline_Health_Check_Manager
   - name: Skyline IAM DB
     topicUid: Connector_help_Skyline_IAM_DB
   - name: Skyline IAM DB Provision
@@ -7844,8 +7856,8 @@
     topicUid: Connector_help_Skyline_Smart_Serial_Client_Example
   - name: Skyline Smart Serial Server Example
     topicUid: Connector_help_Skyline_Smart_Serial_Server_Example
-  - name: Skyline Spectrum Simulator
-    topicUid: Connector_help_Skyline_Spectrum_Simulator
+  - name: Skyline Spectrum Simulation
+    topicUid: Connector_help_Skyline_Spectrum_Simulation
   - name: Skyline Software Panel
     topicUid: Connector_help_Skyline_Software_Panel
   - name: Skyline SRM Generic Function Generator
@@ -9318,6 +9330,10 @@
     topicUid: Connector_help_ViaLite_ViaLiteHD_Switch
   - name: ViaLite ViaLiteHD Transmitter
     topicUid: Connector_help_ViaLite_ViaLiteHD_Transmitter
+- name: Viaplay
+  items:
+  - name: Viaplay SCTE Injector
+    topicUid: Connector_help_Viaplay_SCTE_Injector
 - name: Viasat
   items:
   - name: Viasat AC4100
