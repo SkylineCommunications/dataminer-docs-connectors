@@ -14,7 +14,7 @@ SOAP calls are used to retrieve the device information. SNMP traps are used to c
 
 ### Version Info
 
-The current range of the connector is 4.4.1.x. Other ranges are not updated.
+The current range of the connector is 4.4.2.x. Other ranges are not updated.
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
@@ -34,7 +34,7 @@ The current range of the connector is 4.4.1.x. Other ranges are not updated.
 
 ### Product Info
 
-Range 4.4.0.x is compatible with AppearTV firmware version 3.x. The latest tested version is 3.30.
+Range 4.4.x.x is compatible with AppearTV firmware version 3.x. The latest tested version is 3.30.
 
 Newer firmware versions in the range 3.x are likely to work as well, since the API is backwards compatible.
 
