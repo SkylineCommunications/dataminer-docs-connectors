@@ -14,9 +14,12 @@ The protocol also features alarm monitoring and trending.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                       | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x          | Matrix size changed from 1024x1024 to 128x128. WARNING: ports.xml file will not longer be compatible. | No                  | Yes                     |
+| **Range** | **Description**                                                                                                | **DCF Integration** | **Cassandra Compliant** |
+|------------------|---------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
+| 1.0.0.x          | Initial Version.                                                                                        | No                  | Yes                     |
+| 1.0.1.x          | Matrix size changed from 1024x1024 to 128x128. WARNING: ports.xml file will not longer be compatible.   | No                  | Yes                     |
+| 1.0.2.x          | Added DCF.                                                                                              | Yes                 | Yes                     |
+| 1.0.3.x          | Add name in Parameter Group which will cause an impact on DCF.                                          | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -64,7 +67,10 @@ This page also contains a **Reset Labels** button. Click this button to send a c
 
 Finally, the page contains a **Show Route** page button. Click this button and then choose the relevant output to check the route. The result will be displayed in the parameters **Input**, **Mid Matrix Card**, **Mid Matrix Input** and **Mid Matrix Output.**
 
-### Matrix Card Status Page
+### Interfaces Page
+This page displaces the Input and Output tables. Both tables contains their indexes and Labels. The Output table also contain a column for the connected input.
+
+### Matrix Status Page
 
 This page displays a table with the general status of the matrix cards. It also contains three page buttons:
 
