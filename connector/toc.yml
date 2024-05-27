@@ -9326,6 +9326,10 @@
     topicUid: Connector_help_ViaLite_ViaLiteHD_Switch
   - name: ViaLite ViaLiteHD Transmitter
     topicUid: Connector_help_ViaLite_ViaLiteHD_Transmitter
+- name: Viaplay
+  items:
+  - name: Viaplay SCTE Injector
+    topicUid: Connector_help_Viaplay_SCTE_Injector
 - name: Viasat
   items:
   - name: Viasat AC4100
