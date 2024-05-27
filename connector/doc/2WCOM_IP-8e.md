@@ -73,10 +73,10 @@ The connector uses a UI structure similar to the web interface of the device. Yo
 To add new multiplexers, you will need to use the web interface of the device (available on a page of the element). These will then be accessible only through the web interface of the device.
 
 The connector does not provide access to sensitive information such as the User, Storage, or Log pages of the web interface.
-#### Poll Manager
 
-With the poll manager, you can enable or disable polling commands, as well as change the poll interval (within certain limits).
-By default, all commands are enabled.
+### Poll Manager
+
+With the poll manager, you can enable or disable polling commands, as well as change the polling interval (within certain limits). By default, all commands are enabled.
 
 Below, you can find a list of existing commands and the information (tables and parameters) they poll.
 
