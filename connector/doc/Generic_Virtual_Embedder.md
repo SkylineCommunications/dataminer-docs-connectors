@@ -4,16 +4,15 @@ uid: Connector_help_Generic_Virtual_Embedder
 
 # Generic Virtual Embedder
 
-This is a virtual connector that initializes DCF Connections at start-up and has no data pages. 
+This is a virtual connector that initializes DCF connections at startup. It has no data pages.
 
 ## About
 
 ### Version Info
 
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Initialize DCF Connections at start-up.</li></ul>         |-         |-         |
+| Range              | Features                                | Based on | System Impact |
+|--------------------|-----------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initializes DCF connections at startup. | -        | -             |
 
 ## Configuration
 
@@ -23,17 +22,8 @@ This is a virtual connector that initializes DCF Connections at start-up and has
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-Indicate if additional configuration of parameters is necessary in a newly created element.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
-This is a virtual connector that initializes DCF Connections at start-up. 
+This is a virtual connector that initializes DCF connections at startup.
 
-The connector does not have data pages. 
-
+The connector does not have any data pages.
