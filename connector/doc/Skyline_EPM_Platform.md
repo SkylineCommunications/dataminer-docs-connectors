@@ -171,7 +171,7 @@ The provisioning of the EPM Solution is sequential and involves the following co
 
 In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available: one for upstream and one for downstream.
 
-The QAM thresholds tables are located under *docsis thresholds settings > upstream/downstream QAM channels*. 
+The QAM thresholds tables are located under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**.
 
 These tables will serve as a multiple set function for all CCAP and CM collectors. Once the *Apply* button is clicked, the table settings will be applied to the active elements.
 
@@ -185,16 +185,17 @@ These are the available Key Performance Indicators (KPIs) for setting upstream t
 - **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
 - **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
 
-These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
+These are the available KPIs for setting downstream thresholds:
 
 - **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
 - **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
 - **Minimum SNR Level**: Range from 0 to 100 dB.
 - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
 
-In the *docsis thresholds settings > upstream/downstream QAM channels* you will find the PNM threshold parameters.
+Under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**, you will also find the PNM threshold parameters.<!-- RN 39603 -->
 
-These are the available PNM parameters to be modified:
+These are the available PNM parameters that can be modified:
+
 - **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
 - **Non-Main-Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
 - **Post-Main-Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
