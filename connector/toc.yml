@@ -2598,6 +2598,8 @@
     topicUid: Connector_help_directOut_montone.42
   - name: directOut Prodigy
     topicUid: Connector_help_directOut_Prodigy
+  - name: directOut PRODIGY.MC
+    topicUid: Connector_help_directOut_PRODIGY.MC
 - name: Discovery Networks Europe
   items:
   - name: Discovery Networks Europe ESB Bus
