@@ -5234,6 +5234,8 @@
     topicUid: Connector_help_Measat_Tie_Line_Manager
   - name: Measat Tie Line Manager Service Feed
     topicUid: Connector_help_Measat_Tie_Line_Manager_Service_Feed
+  - name: Measat VSAT Broadband Management
+    topicUid: Connector_help_Measat_VSAT_Broadband_Management
 - name: Media Excel
   items:
   - name: Media Excel Hero Management System
