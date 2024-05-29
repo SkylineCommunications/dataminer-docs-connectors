@@ -15,18 +15,21 @@ The unit is usually arranged as four main amplifier modules and two standby modu
 | Range   | Key Features                                                   | Based on | System Impact |
 |---------|----------------------------------------------------------------|----------|---------------|
 | 1.0.0.x | - Initial version. <br>- Compatible with Skyline EPM Solution. | -        | -             |
+| 1.0.1.x | - Removed display key column from the Set Path Module Table. <br>- Added the Module Used column to the Set Path Module Table.| -        | -             |
 
 ### Product Info
 
 | Range    | Supported Firmware |
 |----------|--------------------|
-| 1.0.0.0x | ALTO Amplifier     |
+| 1.0.0.x | ALTO Amplifier     |
+| 1.0.1.x | ALTO Amplifier     |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ### Connections
 

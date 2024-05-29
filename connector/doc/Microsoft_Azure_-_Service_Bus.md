@@ -38,7 +38,7 @@ This connector uses an HTTP connection. However, it requires no input from the u
 
 The connector requires no user input. The metrics that are polled for this resource type element are displayed on the **Metrics** page.
 
-Enabling or disabling polling of metrics can be done on the **Configuration** page.
+Enabling or disabling polling of metrics can be done on the **Configuration** page. Polling of these metric has a direct financial impact.
 
 On the **General** page, you can configure the **Polling Interval** for the metrics. This same page also displays the scope (Subscription and Resource Group) that this resource type element belongs to.
 

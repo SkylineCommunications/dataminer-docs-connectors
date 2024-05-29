@@ -49,6 +49,16 @@ SNMPv3 Settings:
 - **Privacy type**: The SNMPv3 privacy type.
 - **Privacy password**: The SNMPv3 privacy password (default: *private*).
 
+#### HTTP Connection
+
+This connector uses a secondary HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*)
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -60,3 +70,5 @@ On the **General Information** page, you can find system info and health status 
 The system info includes the System Name, Contact, Location, and Uptime.
 
 The health status info includes the Reference Status, Time Status, and Hardware Status, as well as PTP grandmaster and power supply status information.
+
+The **System Health** page gives an overview of all detailed PSU, fan, temperature, and voltage readings and status information.

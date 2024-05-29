@@ -1566,6 +1566,8 @@
     topicUid: Connector_help_Beenius_IPTV_Delivery_Platform
 - name: BeIN
   items:
+  - name: beIN Arvato VPMS Doha
+    topicUid: Connector_help_beIN_Arvato_VPMS
   - name: beIN GPIO Mapping
     topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
@@ -1646,6 +1648,8 @@
     topicUid: Connector_help_BMC_Remedy_ORCA
 - name: Brandywine Communications
   items:
+  - name: Brandywine Communications FDU-160i
+    topicUid: Connector_help_Brandywine_Communications_FDU-160i
   - name: Brandywine Communications NFS-220
     topicUid: Connector_help_Brandywine_Communications_NFS-220
 - name: Bridge Technologies
@@ -2086,6 +2090,8 @@
     topicUid: Connector_help_Cisco_GS7000_Hub
   - name: CISCO GS7000 Node
     topicUid: Connector_help_CISCO_GS7000_Node
+  - name: Cisco IMC
+    topicUid: Connector_help_Cisco_IMC
   - name: Cisco ISE
     topicUid: Connector_help_Cisco_ISE
   - name: CISCO ISR
@@ -2592,6 +2598,8 @@
     topicUid: Connector_help_directOut_montone.42
   - name: directOut Prodigy
     topicUid: Connector_help_directOut_Prodigy
+  - name: directOut PRODIGY.MC
+    topicUid: Connector_help_directOut_PRODIGY.MC
 - name: Discovery Networks Europe
   items:
   - name: Discovery Networks Europe ESB Bus
@@ -3748,6 +3756,10 @@
     topicUid: Connector_help_Geist_RSMICRO
   - name: Geist Watchdog 1250
     topicUid: Connector_help_Geist_Watchdog_1250
+- name: Generac Power Systems
+  items:
+  - name: Generac Power Systems SG050T Generator
+    topicUid: Connector_help_Generac_Power_Systems_SG050T_Generator
 - name: General Dynamics
   items:
   - name: General Dynamics 500 Tracking Receiver
@@ -3966,6 +3978,10 @@
     topicUid: Connector_help_Generic_UPS
   - name: Generic Virtual Chassis
     topicUid: Connector_help_Generic_Virtual_Chassis
+  - name: Generic Virtual DeEmbedder
+    topicUid: Connector_help_Generic_Virtual_DeEmbedder
+  - name: Generic Virtual Embedder
+    topicUid: Connector_help_Generic_Virtual_Embedder
   - name: Generic Virtual IP Device
     topicUid: Connector_help_Generic_Virtual_IP_Device
   - name: Generic Weather Feed Retriever
@@ -4121,7 +4137,7 @@
   - name: Grass Valley MV-8 Series
     topicUid: Connector_help_Grass_Valley_MV-8_Series
   - name: Grass Valley MV-Flex-32-R
-    topicUid: Connector_help_Grass_Valley_MV_Flex_32_R
+    topicUid: Connector_help_Grass_Valley_MV-FLEX-32-R
   - name: Grass Valley Orbit
     topicUid: Connector_help_Grass_Valley_Orbit
   - name: Grass Valley Orbit - Device
@@ -4674,6 +4690,10 @@
   items:
   - name: InfluxData InfluxDB Collector
     topicUid: Connector_help_InfluxData_InfluxDB_Collector
+- name: Infoblox
+  items:
+  - name: Infoblox NIOS Platform
+    topicUid: Connector_help_Infoblox_NIOS_Platform
 - name: Infothuis
   items:
   - name: Infothuis DST100
@@ -5536,6 +5556,8 @@
     topicUid: Connector_help_Miranda_nVision_Router_Control
   - name: Miranda RCP-200
     topicUid: Connector_help_Miranda_RCP-200
+  - name: Miranda XVP-3901
+    topicUid: Connector_help_Miranda_XVP-3901
 - name: Miravid
   items:
   - name: Miravid Telesight
@@ -6840,6 +6862,10 @@
     topicUid: Connector_help_RCI_RC2000
   - name: RCI RC2500
     topicUid: Connector_help_RCI_RC2500
+- name: RCN
+  items:
+  - name: RCN Event Router Management
+    topicUid: Connector_help_RCN_Event_Router_Management
 - name: Red Bee Media
   items:
   - name: Red Bee Media Aggregation Matrix
@@ -7438,8 +7464,12 @@
     topicUid: Connector_help_Sencore_AG_4800A
   - name: Sencore AG 5800
     topicUid: Connector_help_Sencore_AG_5800
+  - name: Sencore CRD 4900
+    topicUid: Connector_help_Sencore_CRD_4900
   - name: Sencore DMG-7000
     topicUid: Connector_help_Sencore_DMG-7000
+  - name: Sencore Impulse 300D Decoder
+    topicUid: Connector_help_Sencore_Impulse_300D_Decoder
   - name: Sencore MRD-3187x
     topicUid: Connector_help_Sencore_MRD-3187x
   - name: Sencore MRD 5800
@@ -7752,6 +7782,8 @@
     topicUid: Connector_help_Skyline_Generic_Source
   - name: Skyline Generic Virtual Connector
     topicUid: Connector_help_Skyline_Generic_Virtual_Connector
+  - name: Skyline Health Check Manager
+    topicUid: Connector_help_Skyline_Health_Check_Manager
   - name: Skyline IAM DB
     topicUid: Connector_help_Skyline_IAM_DB
   - name: Skyline IAM DB Provision
@@ -7826,6 +7858,8 @@
     topicUid: Connector_help_Skyline_Smart_Serial_Client_Example
   - name: Skyline Smart Serial Server Example
     topicUid: Connector_help_Skyline_Smart_Serial_Server_Example
+  - name: Skyline Spectrum Simulation
+    topicUid: Connector_help_Skyline_Spectrum_Simulation
   - name: Skyline Software Panel
     topicUid: Connector_help_Skyline_Software_Panel
   - name: Skyline SRM Generic Function Generator
@@ -8224,8 +8258,8 @@
     topicUid: Connector_help_Standard_Switch_Management
 - name: Starlink
   items:
-  - name: Starlink Telemetry API
-    topicUid: Connector_help_Starlink_Telemetry_API
+  - name: Starlink Enterprise
+    topicUid: Connector_help_Starlink_Enterprise
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
@@ -8500,6 +8534,8 @@
     topicUid: Connector_help_TeamCast_Vyper_DVBSS2_SNMP
 - name: Techex
   items:
+  - name: Techex Darwin
+    topicUid: Connector_help_Techex_Darwin
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
@@ -8844,8 +8880,8 @@
     topicUid: Connector_help_Teleste_HDO906_TSEMP
   - name: Teleste HDO907
     topicUid: Connector_help_Teleste_HDO907
-  - name: Teleste HDO908
-    topicUid: Connector_help_Teleste_HDO908
+  - name: Teleste HDO908 TSEMP
+    topicUid: Connector_help_Teleste_HDO908_TSEMP
   - name: Teleste HDP230 TSEMP
     topicUid: Connector_help_Teleste_HDP230_TSEMP
   - name: Teleste HDP301 TSEMP
@@ -9296,6 +9332,10 @@
     topicUid: Connector_help_ViaLite_ViaLiteHD_Switch
   - name: ViaLite ViaLiteHD Transmitter
     topicUid: Connector_help_ViaLite_ViaLiteHD_Transmitter
+- name: Viaplay
+  items:
+  - name: Viaplay SCTE Injector
+    topicUid: Connector_help_Viaplay_SCTE_Injector
 - name: Viasat
   items:
   - name: Viasat AC4100
@@ -9332,6 +9372,10 @@
   items:
   - name: VideoLAN - VLC Media Player Control
     topicUid: Connector_help_VideoLAN_-_VLC_Media_Player_Control
+- name: VideoShip
+  items:
+  - name: VideoShip
+    topicUid: Connector_help_VideoShip
 - name: Vidispine
   items:
   - name: Vidispine API Client
@@ -9776,7 +9820,3 @@
     topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900
     topicUid: Connector_help_ZTE_ZXR10_8900
-- name: Unknown vendor
-  items:
-  - name: VideoShip
-    topicUid: Connector_help_VideoShip

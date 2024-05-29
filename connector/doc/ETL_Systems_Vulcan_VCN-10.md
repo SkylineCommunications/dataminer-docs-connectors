@@ -8,27 +8,39 @@ The **ETL Systems Vulcan VCN-10** connector can be used to display and configure
 
 ## About
 
-This protocol can be used to monitor and control the **ETL Systems Vulcan VCN-10** device. The connector supports one serial connection to communicate with the device.
+This connector can be used to monitor and control the **ETL Systems Vulcan VCN-10** device. The connector supports one serial connection to communicate with the device.
 
-The protocol also features alarm monitoring and trending.
+The connector also features alarm monitoring and trending.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                       | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x          | Matrix size changed from 1024x1024 to 128x128. WARNING: ports.xml file will not longer be compatible. | No                  | Yes                     |
+| Range   | Key Features                                          | Based on | System Impact                                    |
+|---------|-------------------------------------------------------|----------|--------------------------------------------------|
+| 1.0.0.x | Initial version.                                      | -        | -                                                |
+| 1.0.1.x | Matrix size changed from 1024x1024 to 128x128.        | -        | **Ports.xml file will no longer be compatible.** |
+| 1.0.2.x | DCF implemented.                                      | -        | -                                                |
+| 1.0.3.x | Name added in Parameter Group, which will affect DCF. | -        | -                                                |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.1.x          | E405 Version 01.03          |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.1.x | E405 Version 01.03         |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range           | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|-----------------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x         | No              | Yes                 | -                 |                     |
+| 1.0.1.x         | No              | Yes                 | -                 |                     |
+| 1.0.2.x         | Yes             | Yes                 | -                 |                     |
+| 1.0.3.x         | Yes             | Yes                 | -                 |                     |
 
-Serial main connection
+## Configuration
+
+### Connections
+
+#### Serial Main Connection
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -38,16 +50,15 @@ SERIAL CONNECTION:
 - **IP port**: The port of the destination e.g. *4000*.
 - **Bus address**: This field is optional.
 
-## Usage
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to Use
 
 ### General Page
 
-This page displays general information about the device. E.g.:
-
-- System Name
-- Firmware Version
-- System Version
-- Etc.
+This page displays general information about the device, such as the System Name, Firmware Version, and System Version.
 
 ### Matrix Page
 
@@ -56,15 +67,19 @@ This page displays the matrix containing the connections on the device.
 The following actions are possible on the matrix:
 
 - Setting a new connection by clicking the desired connection. Note that this can disconnect a previous connection.
-- Locking an output by right-clicking the output and then clicking **Lock**. Note that the device does not support the lock of an input, so if you try to use that option, nothing will happen on the device.
+- Locking an output by right-clicking the output and then clicking **Lock**. Note that the device does not support locking an input, so if you try to use that option, nothing will happen on the device.
 - Blocking a connection by right-clicking in the matrix, selecting the **Edit** option, and then selecting the relevant connection on the pop-up page.
 - Editing the labels by right-clicking in the matrix, selecting the **Edit** option, and then changing the field description of the relevant output or input on the pop-up page.
 
 This page also contains a **Reset Labels** button. Click this button to send a command to the device that will reset all the matrix labels to the default values.
 
-Finally, the page contains a **Show Route** page button. Click this button and then choose the relevant output to check the route. The result will be displayed in the parameters **Input**, **Mid Matrix Card**, **Mid Matrix Input** and **Mid Matrix Output.**
+Finally, the page contains a **Show Route** page button. Click this button and then choose the relevant output to check the route. The result will be displayed in the parameters **Input**, **Mid Matrix Card**, **Mid Matrix Input**, and **Mid Matrix Output.**
 
-### Matrix Card Status Page
+### Interfaces Page
+
+This page displays the Input and Output tables. Both tables contain the indexes and labels. The Output table also contain a column for the connected input.
+
+### Matrix Status Page
 
 This page displays a table with the general status of the matrix cards. It also contains three page buttons:
 
@@ -74,12 +89,7 @@ This page displays a table with the general status of the matrix cards. It also 
 
 ### System Status Page
 
-This page displays the general status of the device. It contains information such as:
-
-- Power Supply status
-- Communication status
-- Chassis CPU temperature
-- Etc.
+This page displays the general status of the device. It contains information such as the Power Supply status, Communication status, and Chassis CPU temperature.
 
 The following two buttons can also be found on this page:
 

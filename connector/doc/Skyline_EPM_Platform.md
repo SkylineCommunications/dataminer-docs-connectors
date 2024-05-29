@@ -175,18 +175,18 @@ These tables will serve as a multiple set function for all CCAP and CM collector
 
 These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
 
-- **Maximum Timing Offset Level**: Range from 0 to 2000 µs.
+- **Maximum Timing Offset Level**: Range from 0 to 10000 µs.
 - **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
 - **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
 - **Minimum SNR Level**: Range from 10 to 60 dB.
 - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
-- **Minimum Tx Power Level**: Range from 32 to 55 dBmV.
-- **Maximum Tx Power Level**: Range from 32 to 55 dBmV.
+- **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
 
 These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
 
-- **Minimum Rx Power Level**: Range from -16 to 16 dBmV.
-- **Maximum Rx Power Level**: Range from -16 to 16 dBmV.
+- **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
 - **Minimum SNR Level**: Range from 0 to 100 dB.
 - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
 
