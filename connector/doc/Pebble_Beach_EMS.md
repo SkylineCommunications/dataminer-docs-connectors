@@ -20,7 +20,7 @@ This connector communicates with this data source through the HTTP REST and SNMP
 | 2.0.2.x [Obsolete] | Added possibility to monitor channels data. | 2.0.1.x | New HTTP connection added to the connector to support Channel Monitoring API. |
 | 2.0.3.x | - Corrected the State discreets for Channel Health. <br>- Implemented child event processing. <br>- Changed column descriptions of Events Table. <br>- Added Media Name to Events Table. | 2.0.2.x | - The updated parameter descriptions can affect the following DMS filters, Automation scripts, visual overviews, reports, and web API implementations. <br>- Column order changed: table information will be reordered if requested externally. |
 | 2.1.0.x [SLC Main] | - Initial version with HTTP only. <br>- SNMP support has been decommissioned. <br>- HTTP notifications have been implemented. | - | The connector now uses only an HTTP connection. |
-| 2.1.1.x | -Update primary key of events table to combination of playlist ID and UID. | 2.1.0.x | -Automatic poll frequency has been slowed to once every hour due to updated OnEventUsageTimeChanged notification handling.<br>-Custom start and end triggers are now being handled. |
+| 2.1.1.x | - Primary key of events table updated to combination of playlist ID and UID. | 2.1.0.x | - Automatic poll frequency slowed to once per hour because of updated OnEventUsageTimeChanged notification handling.<br>- Custom start and end triggers are now used. |
 
 ### Product Info
 
