@@ -26,9 +26,9 @@ Typically, this connector is used together with the **NetInsight Nimbra Applicat
 | 3.0.1.x [Obsolete] | 1.0.1.x [Obsolete] | Based on 3.0.0.x. All bit rates in Mbps for consistency. | No | Yes |
 | 4.0.0.x [Obsolete] | 2.0.0.x [Obsolete] | Based on 3.0.1.x. Uses DCF. | Yes | Yes |
 | 4.1.0.x [Obsolete] | 2.0.1.x [Obsolete] | Based on 4.0.0.x. Improved number of rows retrieved with each SNMP call. Version change required because some devices are unable to handle the bigger load. | Yes | Yes |
-| 4.1.1.x | 2.0.2.x [SLC Main] | Based on 4.1.0.x. Improved interface for third-party applications (e.g. SRM) **with breaking changes**. Validation on requests is no longer polling-based but is pushed to the manager from the node element. | Yes | Yes |
-| 4.1.2.x | 2.0.2.x [SLC Main] | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters. | Yes | Yes |
-| 4.1.3.x [SLC Main] | 2.0.2.x [SLC Main] | Based on 4.1.2.x. Modified DCF interfaces to use the DTM name as the unique identifier instead of the instance. | Yes | Yes |
+| 4.1.1.x [Obsolete]| 2.0.2.x [SLC Main] | Based on 4.1.0.x. Improved interface for third-party applications (e.g. SRM) **with breaking changes**. Validation on requests is no longer polling-based but is pushed to the manager from the node element. | Yes | Yes |
+| 4.1.2.x [Obsolete] | 2.0.2.x [SLC Main] | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters. | Yes | Yes |
+| 4.1.3.x [SLC Main] | 2.0.2.x [SLC Main] | Based on 4.1.2.x. Modified DCF interfaces to use the DTM name as the unique identifier instead of the instance. **The hostory alarm and trend data for DTM table will be lost due to this major change**| Yes | Yes |
 
 ### Product Info
 
