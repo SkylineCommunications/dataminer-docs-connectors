@@ -4,7 +4,7 @@ uid: Connector_help_Measat_VSAT_Broadband_Management
 
 # Measat VSAT Broadband Management
 
-The Measat VSAT Broadband Management driver is a custom connector for Measat that retrieves data from an NMS and displays it to be ingested by Measat's Low Code App and Dashboard.
+The Measat VSAT Broadband Management driver is a custom connector for Measat that retrieves data from an NMS and displays it to be ingested by Measat's Low Code App and Dashboard. Custom Parameters on the connector include the Overall Site Count of the networks in East and West Malaysia and Congestion status of the Group QOS.
 List of NMS that are available to be used:
 iDirect
 
@@ -32,15 +32,21 @@ iDirect
 
 ### Connections
 
-#### Virtual Connection - Main
+#### MySQL Connection
 
-This connector uses a virtual connection and does not require any input during element creation.
+This connector connects to a MySQL database and an archive database where data from the NMS is stored.
 
 ### Initialization
 
-To use this connector, the credentials for the Config and Archive databases need to be configured on the General page. 
-The first archive database queries the state_change_log table to update the net modem statuses. 
-The second archive database queries the nms_group_qos_changes table to update the Group QOS and congestion data.
+MySQL CONNECTION:
+
+- **Database Server**: The IP Address of the MySQL server.
+- **Database User Name**: The user name of the account to log into the MySQL server.
+- **Database Password**: The password of the account to log into the MySQL server.
+- **Database Name**: The name of the database being accessed in the MySQL server.
+
+The Site Count archive database queries the state_change_log table to update the net modem statuses. 
+The Congestion archive database queries the nms_group_qos_changes table to update the Group QOS and congestion data.
 
 ### Redundancy
 
