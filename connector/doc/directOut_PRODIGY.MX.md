@@ -4,8 +4,9 @@ uid: Connector_help_directOut_PRODIGY.MX
 
 # directOut PRODIGY.MX
 
-This connector monitors **PRODIGY.MX** through its custom TCP API. 
-PRODIGY.MX is DirectOut's modular audio converter and signal processor, supporting multiple formats and offering flexible I/O, networked audio and multiformat audio matrix with a capacity of 1664 x 1664 audio channels.
+This connector monitors **PRODIGY.MX** through its custom TCP API.
+
+PRODIGY.MX is DirectOut's modular audio converter and signal processor, supporting multiple formats and offering flexible I/O, networked audio, and a multiformat audio matrix with a capacity of 1664 x 1664 audio channels.
 
 ## About
 
@@ -44,7 +45,7 @@ SERIAL CONNECTION:
 
 ## How to use
 
-This connector uses the DirectOut custom TCP communication protocol. When the element is started and periodically on a timer a message is sent to the device to get all current status data.
+This connector uses the DirectOut custom TCP communication protocol. Both when the element is started and periodically, based on a timer, a message is sent to the device to get all current status data.
 
 On the **Communication** page, you can see the last sent command and its response.
 
@@ -52,11 +53,11 @@ If you wish to test a command, you can do so by setting the **Outgoing Command C
 
 The remaining pages display status and settings data:
 
-- General page: Contains system information data.
-- Matrix page and subpages: Contains information about inputs/outputs.
-- DSP page and subpage: Contains data about the Input Managers and Sum Buses.
-- Status page and subpages: Contains all the status-related data.
-- Settings page and subpages: Contains all the data related to settings.
-- IP Config page: Contains the IP configuration parameters.
-- Mirroring page: Contains the mirroring configuration parameters.
-- Snapshots page: Contains data about available snapshots.
+- **General** page: Contains system information data.
+- **Matrix** page and subpages: Contains information about inputs/outputs.
+- **DSP** page and subpage: Contains data about the input managers and sum buses.
+- **Status** page and subpages: Contains all the status-related data.
+- **Settings** page and subpages: Contains all the data related to settings.
+- **IP Config** page: Contains the IP configuration parameters.
+- **Mirroring** page: Contains the mirroring configuration parameters.
+- **Snapshots** page: Contains data about available snapshots.
