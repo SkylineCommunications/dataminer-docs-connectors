@@ -32,8 +32,8 @@ SERIAL connection:
 
 - **Type of port:** The type of port of the connection, by default *TCP/IP*.
 - **IP address/host**: The polling IP of the device.
-- **IP port:** The IP port of the connection device.
-- **Bus address:** The "NumberOfInputs" and "NumberOfOutputs" of the matrix separated by a "." (range of inputs and outputs: 1-1024). For instance: "*1024.1024*".
+- **IP port**: The IP port of the connection device.
+- **Bus address**: The "NumberOfInputs" and "NumberOfOutputs" of the matrix separated by a "." (range of inputs and outputs: 1-1024). For instance: "*1024.1024*".
 
 #### SNMP connection
 
@@ -42,8 +42,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP connection:
 
 - **IP address/host**: The polling IP of the device.
-- **Port number:** The port of the connection device, by default *161*.
-- **Get community string:** The community string needed to read from the device. The default value is *public*.
+- **Port number**: The port of the connection device, by default *161*.
+- **Get community string**: The community string needed to read from the device. The default value is *public*.
 
 ## Usage
 

@@ -14,15 +14,21 @@ The connector only monitors the device. Though the API also allows for requests 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                       |
-|------------------|-----------------------------------------------------------------------------------|
-| 1.0.0.x          | Tested with DIVArchive 7.1 Compatible with the most recent version DIVArchive 7.3 |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Tested with DIVArchive 7.1 <br>Compatible with the most recent version DIVArchive 7.3 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

@@ -16,10 +16,10 @@ This connector is exported by the parent connector **Sony Signal Processing Unit
 
 ### Version Info
 
-| **Range**            | **Key Features**                        | **Based on** | **System Impact**                            |
-|----------------------|-----------------------------------------|--------------|----------------------------------------------|
-| 1.0.0.x              | Initial version                         | \-           | \-                                           |
-| 1.0.1.x \[SLC Main\] | Support monitoring of Sony 2110 devices | 1.0.0.14     | \- Button parameters renamed - Pages renamed |
+| Range              | Key Features                            | Based on | System Impact                                     |
+|--------------------|-----------------------------------------|----------|---------------------------------------------------|
+| 1.0.0.x            | Initial version                         | -        | -                                                 |
+| 1.0.1.x [SLC Main] | Support monitoring of Sony 2110 devices | 1.0.0.14 | - Button parameters renamed. <br>- Pages renamed. |
 
 ### Product Info
 
@@ -44,7 +44,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### Status
 
-This page displays detailed status information on the module, including the **Device ID**, **Manufacturer**, **Model**, **Destination**, **Serial Number**, **Category, Version**, **Model Suffix** and **Version Suffix**.
+This page displays detailed status information on the module, including the **Device ID**, **Manufacturer**, **Model**, **Destination**, **Serial Number**, **Category, Version**, **Model Suffix**, and **Version Suffix**.
 
 ### Alarms
 

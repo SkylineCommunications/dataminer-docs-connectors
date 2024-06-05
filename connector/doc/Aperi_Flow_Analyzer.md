@@ -14,7 +14,7 @@ It can also be configured to trigger an alarm if a flow goes missing.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 0.0.0.x \[SLC Main\] | Alpha release    | \-           | \-                |
+| 0.0.0.x [SLC Main]   | Alpha release    | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ It can also be configured to trigger an alarm if a flow goes missing.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 0.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 0.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,15 +12,21 @@ This connector is used to control and monitor the Qbit Q565.
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | v2.220                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | v2.220                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -48,7 +54,7 @@ Contains general information about the device.
 
 ### Encoder
 
-Contains informaton related to the encoder channels.
+Contains information related to the encoder channels.
 
 ### FM
 

@@ -12,15 +12,21 @@ This connector supports switches from the RF Design "FlexLink C2" series and is 
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.3.25.D15.S26.H19.21.11.4  |
+| Range   | Supported Firmware         |
+|---------|----------------------------|
+| 1.0.0.x | 2.3.25.D15.S26.H19.21.11.4 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -45,7 +51,7 @@ SNMP Settings:
 
 ### General
 
-This page displays information about the device hardware, the device **Status**, the **PSU** **Status** and the **Input**/**Output** configuration.
+This page displays information about the device hardware, the device **Status**, the **PSU Status** and the **Input**/**Output** configuration.
 
 ### Input/Output
 

@@ -10,27 +10,27 @@ This connector monitors the activity of the General Dynamics Model 930A access c
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | **Based on** | **System Impact**                                                                                       |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | \-           | \-                                                                                                      |
-| 2.0.0.x              | SNMP version                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | \-           | \-                                                                                                      |
-| 2.0.1.x              | **Fix:** - Polarization Mode and Jog Elevation Set. **Changes:** - Parameter name SS Current Freq changed to RX Current Frequency3 - Parameter name Encoder Offset changed to Elevation Encoder Offset. - Parameter name Encoder Rotation changed to Elevation Encoder Rotation. - RX Signal range changed from \[-99.9, 0\] to \[-90,10\]. - Low Signal range changed from \[-99.9,0\] to \[-90,10\]. - Acquire Signal range changed from \[-99.9,0\] to \[-90,10\]. - Azimuth Encoder Offset range changed from \[0,360\] to \[-180, 180\]. - Encoder Offset range changed from \[-5,95\] to \[-180,180\]. - Polarization Encoder Offset range changed from \[0,360\] to \[-180,180\]. | 2.0.0.5      | DMS filters, Automation scripts, Visio files, reports, web API usage, etc. may need to be reconfigured. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | Initial version | - | - |
+| 2.0.0.x | SNMP version | - | - |
+| 2.0.1.x | **Fix:** <br>- Polarization Mode and Jog Elevation Set. <br>**Changes:** <br>- Parameter name SS Current Freq changed to RX Current Frequency3 <br>- Parameter name Encoder Offset changed to Elevation Encoder Offset. <br>- Parameter name Encoder Rotation changed to Elevation Encoder Rotation. <br>- RX Signal range changed from [-99.9, 0] to [-90,10]. <br>- Low Signal range changed from [-99.9,0] to [-90,10]. <br>- Acquire Signal range changed from [-99.9,0] to [-90,10]. <br>- Azimuth Encoder Offset range changed from [0,360] to [-180, 180]. <br>- Encoder Offset range changed from [-5,95] to [-180,180]. <br>- Polarization Encoder Offset range changed from [0,360] to [-180,180]. | 2.0.0.5 | DMS filters, Automation scripts, Visio files, reports, web API usage, etc. may need to be reconfigured. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.279                  |
-| 2.0.0.x   | \-                     |
-| 2.0.1.x   | \-                     |
+| 2.0.0.x   | -                      |
+| 2.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 2.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -71,7 +71,7 @@ SNMP Settings:
 
 ### Initialization
 
-No extra configurations are needed.
+No extra configuration is needed.
 
 ### Redundancy
 

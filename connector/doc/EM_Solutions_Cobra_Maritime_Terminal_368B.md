@@ -12,11 +12,11 @@ With this connector, you can monitor and configure the EM Solutions Cobra Mariti
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**   |
+| Range     | Supported Firmware       |
 |-----------|--------------------------|
 | 1.0.0.x   | Venom v2.5.0 (ca712a547) |
 
@@ -24,7 +24,7 @@ With this connector, you can monitor and configure the EM Solutions Cobra Mariti
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

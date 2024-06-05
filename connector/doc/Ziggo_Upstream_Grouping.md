@@ -18,7 +18,7 @@ The issues are grouped by the USSegment field and the highest severity among the
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial Version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial Version | No                  | Yes                     |
 
 ## Installation and configuration
 

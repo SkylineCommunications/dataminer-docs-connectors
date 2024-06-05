@@ -12,16 +12,16 @@ This connector provides a monitoring interface for the **Motorola GX2-PSAC10D-R*
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
-| 2.0.0.x          | DVE focused     | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | No                  |
+| 2.0.0.x | DVE focused     | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 2.0.0.x          | G                           |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 2.0.0.x | G                          |
 
 ## Usage
 

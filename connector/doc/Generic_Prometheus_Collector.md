@@ -14,7 +14,7 @@ This **Generic Prometheus Collector** connector executes queries via HTTP to ret
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,9 +24,9 @@ This **Generic Prometheus Collector** connector executes queries via HTTP to ret
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**             | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                 | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Generic Prometheus Base Component | \-                      |
+| 1.0.0.x   | No                  | Yes                     | Generic Prometheus Base Component | -                       |
 
 ## Configuration
 

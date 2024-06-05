@@ -12,15 +12,15 @@ This connector allows you to access various information on the device. There are
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                                                | **Based on** | **System Impact**                                                                                            |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                                                                                                                                                                | \-           | \-                                                                                                           |
-| 1.0.1.x              | \- Improved table display keys. - New streams and interfaces commands added.                                                                                                                                                                                                                    | \-           | Moving from the 1.0.0.x to the 1.0.1.x range will cause a **loss of trend data**, since indexes are updated. |
-| 1.0.2.x \[SLC Main\] | \- Many different kinds of things can now be created in the device, such as new inputs and outputs for streams or new codec presets. - Syslog and traps polling and logging is now possible. - More data can be polled from the device, such as transport stream services, codecs, and demuxes. | \-           | \-                                                                                                           |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x | - Improved table display keys. <br>- New streams and interfaces commands added. | - | Moving from the 1.0.0.x to the 1.0.1.x range will cause a **loss of trend data**, since indexes are updated. |
+| 1.0.2.x [SLC Main] | - Many different kinds of things can now be created in the device, such as new inputs and outputs for streams or new codec presets. <br>- Syslog and traps polling and logging is now possible. <br>- More data can be polled from the device, such as transport stream services, codecs, and demuxes. | - | - |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**      |
+| Range | Device Firmware Version      |
 |-----------|----------------------------------|
 | 1.0.0.x   | 1.80.1.4(R) Oct 20 2016 04:17:40 |
 | 1.0.1.x   | 1.80.1.4(R) Oct 20 2016 04:17:40 |
@@ -30,9 +30,9 @@ This connector allows you to access various information on the device. There are
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

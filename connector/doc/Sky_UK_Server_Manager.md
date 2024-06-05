@@ -12,13 +12,13 @@ This is an enhanced service protocol that can be used to monitor subscribed elem
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -34,7 +34,7 @@ The following default protocols and parameters need to be included:
 
 ### Initialization
 
-No extra configurations are needed.
+No extra configuration is needed.
 
 ### Redundancy
 

@@ -14,7 +14,7 @@ This connector will fetch and process specific emails. According to the email, a
 
 | **Range**            | **Key Features**                              | **Based on** | **System Impact** |
 |----------------------|-----------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Integrates mail processing into SAM's system. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Integrates mail processing into SAM's system. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector will fetch and process specific emails. According to the email, a
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

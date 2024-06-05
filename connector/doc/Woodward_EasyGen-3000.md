@@ -16,15 +16,21 @@ The information from the device that is displayed depends on the configuration o
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.2004                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 1.2004                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -78,5 +84,7 @@ On this page, the **Table Fuel Tank** is used to add new types of fuel tanks con
 The following estimated info is available:
 
 - **Running Time Left**: Engine run time left based on how much fuel is left in the fuel tanks.
+
   Calculated by retrieving power engine consumption from the data table (based on the **Running Time Left Power Engine Tag** or the **Running Time Left Power Grid Tag** when the generator is not running) and the **Running Time Left Power Engine Factor**.
+
 - **Total Remaining Fuel Left**: The total fuel remaining in all the tanks (in liters).

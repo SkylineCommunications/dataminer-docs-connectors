@@ -14,7 +14,7 @@ All configuration data that is needed for the calculations can be retrieved by C
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x \[SLC Main\] | Initial version | No                  | Yes                     |
+| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
 
 ## Installation and configuration
 
@@ -28,13 +28,13 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Sites
 
-This page displays a table listing all the sites or **ground stations**. For each site, the **Latitude**, **Longitude** and **Height Above Sea Level** are mentioned**.**
+This page displays a table listing all the sites or **ground stations**. For each site, the **Latitude**, **Longitude** and **Height Above Sea Level** are mentioned.
 
 Sites can be added and removed via the context menu of the table or via CSV import. This is the header of the CSV file: Site;Latitude;Longitude;Height Above Sea level.
 
 ### Satellites
 
-This page displays a table listing all the **Satellites** the system has access to. The table contains the following information: **Satellite Name, I11 File Name, Epoch time, I11 Data valid Until, Time Since Last Update,** **Latitude** and **Longitude.**
+This page displays a table listing all the **Satellites** the system has access to. The table contains the following information: **Satellite Name, I11 File Name, Epoch time, I11 Data valid Until, Time Since Last Update, Latitude** and **Longitude.**
 
 Satellites can be added and removed via the context menu of the table or via CSV import. This is the header of the CSV file: Satellite;i11FileName.
 

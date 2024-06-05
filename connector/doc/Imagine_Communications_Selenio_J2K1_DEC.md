@@ -18,30 +18,30 @@ The connector has two different versions to support 2-channel and 4-channel deco
 
 ### Version Info
 
-| **Range**    | **Description**                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|---------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.90.x            | Initial range.                                                                                                                                | No                  | No                      |
-| 1.1.0.x             | Updated for firmware 2.0.13.                                                                                                                  | No                  | No                      |
-| 2.2.0.x             | Updated for firmware 2.0.                                                                                                                     | No                  | No                      |
-| 3.0.0.x             | DVEs for each decoder.                                                                                                                        | No                  | Yes                     |
-| \<10.0.0.x \[Main\] | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports.                  | No                  | Yes                     |
-| 10.0.0.x            | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                            | No                  | Yes                     |
-| 4.0.0.x             | \- Changed the base OID from .1.3.6.1.4.1.290.9.3.3.**21.18** to .1.3.6.1.4.1.290.9.3.3.**21.20.** - Removed Decoder Channel 3 and Channel 4. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.90.x | Initial range. | No | No |
+| 1.1.0.x | Updated for firmware 2.0.13. | No | No |
+| 2.2.0.x | Updated for firmware 2.0. | No | No |
+| 3.0.0.x | DVEs for each decoder. | No | Yes |
+| \<10.0.0.x [Main] | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No | Yes |
+| 10.0.0.x | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. | No | Yes |
+| 4.0.0.x | - Changed the base OID from .1.3.6.1.4.1.290.9.3.3.**21.18** to .1.3.6.1.4.1.290.9.3.3.**21.20.** <br>- Removed Decoder Channel 3 and Channel 4. | No | Yes |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                  |
-|------------------|------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.90.x         | 1.0.90                                                                                                                       |
-| 1.1.0.x          | 2.0.13                                                                                                                       |
-| 2.2.0.x          | 2.0                                                                                                                          |
-| 3.0.0.x          | 2.0                                                                                                                          |
-| \<10.0.0.x       | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
-| 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work on older firmware.                        |
+| Range | Device Firmware Version |
+|--|--|
+| 1.0.90.x | 1.0.90 |
+| 1.1.0.x | 2.0.13 |
+| 2.2.0.x | 2.0 |
+| 3.0.0.x | 2.0 |
+| \<10.0.0.x | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
+| 10.0.0.x | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work on older firmware. |
 
 ### Exported connectors
 
-| **Exported Connector**                            | **Description** |
+| Exported Connector                               | Description     |
 |--------------------------------------------------|-----------------|
 | Imagine Communications Selenio J2K1 DEC - Module | Decoder modules |
 
@@ -98,7 +98,7 @@ Displays the **management information** for the **SDI out source**.
 
 For each decoder channel (1 - 4)/(1-2), the same pages are available:
 
-- **Decoder \[x\]** **Control**: Contains settings related to decoder control functions.
+- **Decoder \[x\] Control**: Contains settings related to decoder control functions.
 - **Decoder \[x\] Video**: Contains video information and settings.
 - **Decoder \[x\] Audio**: Contains audio information and settings.
 - **Decoder \[x\] Data Services**: Contains information and settings related to decoder field lines.

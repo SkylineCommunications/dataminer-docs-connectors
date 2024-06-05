@@ -20,7 +20,7 @@ This connector is intended to communicate with the device using SNMP and serial 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                       |
+| Range     | Device Firmware Version                           |
 |------------------|---------------------------------------------------|
 | 1.0.0.x          | Software Version: 06.07.04.004 Boot Version 3.0.4 |
 | 1.0.1.x          | Software Version: 06.07.04.004 Boot Version 3.0.4 |

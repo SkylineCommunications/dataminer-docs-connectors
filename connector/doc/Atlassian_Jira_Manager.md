@@ -12,20 +12,20 @@ This connector is designed to sync DataMiner Ticketing with the Jira software. I
 
 | **Range**            | **Key Features**                                                                          | **Based on** | **System Impact**                                                     |
 |----------------------|-------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                          | \-           | \-                                                                    |
-| 2.0.0.x \[SLC Main\] | Atlassian Jira dependency removed. Element configuration improved. Unicode support added. | \-           | Existing elements using this connector must be removed and recreated. |
+| 1.0.0.x              | Initial version.                                                                          | -            | -                                                                     |
+| 2.0.0.x [SLC Main]   | Atlassian Jira dependency removed. Element configuration improved. Unicode support added. | -            | Existing elements using this connector must be removed and recreated. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 2.0.0.x   | \-                     |
+| 2.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

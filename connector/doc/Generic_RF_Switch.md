@@ -10,17 +10,17 @@ The Generic RF Switch virtual connector can be linked to an IO gateway element.
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |--|--|--|--|
-| 1.0.0.1 | Initial version | \- | \- |
-| 1.1.0.x \[SLC Main\] | Send '2' to the write command that allows the contact to send the 'm' command (temporarily close the contact and open it again). Must use connector ILC IO Link Intelligent 96 IO version 1.0.0.10. | \- | \- |
+| 1.0.0.1 | Initial version | - | - |
+| 1.1.0.x [SLC Main]   | Send '2' to the write command that allows the contact to send the 'm' command (temporarily close the contact and open it again). Must use connector ILC IO Link Intelligent 96 IO version 1.0.0.10. | - | - |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.1   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.1   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

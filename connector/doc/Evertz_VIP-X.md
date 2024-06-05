@@ -12,10 +12,10 @@ This connector uses an SNMP connection to display information on an Evertz VIP-X
 
 ### Version Info
 
-| **Range**     | **Description**              | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version              | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Fixed indexes, TOO BIG error | No                  | Yes                     |
+| Range                | Description                  | DCF Integration | Cassandra Compliant |
+|----------------------|------------------------------|-----------------|---------------------|
+| 1.0.0.x              | Initial version              | No              | Yes                 |
+| 1.0.1.x [SLC Main]   | Fixed indexes, TOO BIG error | No              | Yes                 |
 
 ## Installation and Configuration
 

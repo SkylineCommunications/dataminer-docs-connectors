@@ -12,10 +12,10 @@ This connector allows you to monitor the status and configuration of the AG 2600
 
 ### Version Info
 
-| **Range**            | **Key Features**                               | **Based on** | **System Impact** |
+| Range                | Key Features                                   | Based on     | System Impact     |
 |----------------------|------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                               | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Extended naming implemented on Services table. | \-           | \-                |
+| 1.0.0.x              | Initial version.                               | -            | -                 |
+| 1.0.1.x [SLC Main]   | Extended naming implemented on Services table. | -            | -                 |
 
 ### Product Info
 
@@ -28,8 +28,8 @@ This connector allows you to monitor the status and configuration of the AG 2600
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

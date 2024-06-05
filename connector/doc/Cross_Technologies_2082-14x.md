@@ -12,7 +12,7 @@ This SNMP connector provides an overview of the status of the available amplifie
 
 | **Range**            | **Key Features**                                             | **Based on** | **System Impact** |
 |----------------------|--------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Retrieve amplifier data based on configured redundancy mode. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Retrieve amplifier data based on configured redundancy mode. | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This SNMP connector provides an overview of the status of the available amplifie
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

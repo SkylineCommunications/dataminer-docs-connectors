@@ -4,7 +4,7 @@ uid: Connector_help_Snell_Wilcox_IQMCC3000-1B3
 
 # Snell Wilcox IQMCC3000-1B3
 
-The **Snell Wilcox IQMCC3000-1B3** is a motion-compensated frame rate converter that provides multi-rate and format conversion for 3Gbps SDI and HD-SDI digital video signals. The **Snell Wilcox IQMCC3000-1B3** connector is the solution designed to monitor this converter.
+The **Snell Wilcox IQMCC3000-1B3** is a motion-compensated frame rate converter that provides multi-rate and format conversion for 3 Gbps SDI and HD-SDI digital video signals. The **Snell Wilcox IQMCC3000-1B3** connector is the solution designed to monitor this converter.
 
 ## About
 
@@ -12,15 +12,21 @@ With this connector, you can manage the **Snell Wilcox IQMCC3000-1B3** device us
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 4.15.3                      |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 4.15.3                 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -94,7 +100,7 @@ On this page, you can configure several ancillary data stores parameters related
 
 ### Rolltrack
 
-This page provides a simple command interface for sending unconnected Rolltrack commands to any Rollcall-compatible unit in the network. The following parameters are displayed: **Disable All**, **Rolltrack Index,** **Rolltrack Source**, **Rolltrack Address**, **Rolltrack Command**, **Rolltrack** **Sending** and **Rolltrack** **Status**.
+This page provides a simple command interface for sending unconnected Rolltrack commands to any Rollcall-compatible unit in the network. The following parameters are displayed: **Disable All**, **Rolltrack Index, Rolltrack Source**, **Rolltrack Address**, **Rolltrack Command**, **Rolltrack Sending** and **Rolltrack Status**.
 
 ### Memories
 
@@ -124,6 +130,6 @@ On this page, you can enable or disable the logging for **Output Embedded Audio*
 
 This page displays information regarding setup parameters, such as the **Software Version**, **Rear ID**, **Serial Number** and **Build Version**.
 
-### Web Interface.
+### Web Interface
 
 This page can be used to access the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface

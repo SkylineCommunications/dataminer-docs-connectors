@@ -8,21 +8,21 @@ This is a **serial** connector to retrieve status information and update the con
 
 ## About
 
-This connector uses a serial protocol developed by CPI. Two communication modes are available on the 2.25KW TWT amplifiers: **ASCII Based Serial Computer Interface Protocol** **(ACIP)** and **Binary Based Serial Computer Interface Protocol (BCIP)**. This connector implements the **BCIP** mode, which provides more reliable and complete information.
+This connector uses a serial protocol developed by CPI. Two communication modes are available on the 2.25KW TWT amplifiers: **ASCII Based Serial Computer Interface Protocol (ACIP)** and **Binary Based Serial Computer Interface Protocol (BCIP)**. This connector implements the **BCIP** mode, which provides more reliable and complete information.
 
 ### Version Info
 
-| **Range**            | **Description**                            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                            | No                  | Yes                     |
-| 1.1.0.x \[SLC Main\] | Firmware update. Change in status command. | No                  | Yes                     |
+| Range              | Description                                | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                            | No              | Yes                 |
+| 1.1.0.x [SLC Main] | Firmware update. Change in status command. | No              | Yes                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | \- Front Panel Boot Kernel Software Version: *03.00.19* - Front Main Program Software Version: *01.00.90* - Power Supply Boot Kernel Software Version: *03.00.03* - Power Supply Main Program Software Version: *01.00.49* - RF Controller Boot Kernel Software Version: *03.00.03* - RF Controller Main Program Software Version: *01.00.36* - External Interface Boot Kernel Software Version: *03.00.03* - External Interface Main Program Software Version: *01.00.42* |
-| 1.1.0.x   | N/A                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | - Front Panel Boot Kernel Software Version: *03.00.19* <br>- Front Main Program Software Version: *01.00.90* <br>- Power Supply Boot Kernel Software Version: *03.00.03* <br>- Power Supply Main Program Software Version: *01.00.49* <br>- RF Controller Boot Kernel Software Version: *03.00.03* <br>- RF Controller Main Program Software Version: *01.00.36* <br>- External Interface Boot Kernel Software Version: *03.00.03* <br>- External Interface Main Program Software Version: *01.00.42* |
+| 1.1.0.x | N/A |
 
 ## Configuration
 

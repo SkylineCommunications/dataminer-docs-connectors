@@ -20,7 +20,7 @@ This connector is exported from the [Teleste HDM100](xref:Connector_help_Teleste
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

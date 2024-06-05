@@ -12,7 +12,7 @@ This SNMP connector allows the user to monitor the Commscope VUE Splicer device.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \-               | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This SNMP connector allows the user to monitor the Commscope VUE Splicer device.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -58,12 +58,10 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-**General** page: shows **System Info** parameters like **Name**, **Description**, **Model** and **Uptime**. It also has the information for the **Nodes** and **Interfaces**.
+The **General** page shows **System Info** parameters like **Name**, **Description**, **Model**, and **Uptime**. It also has information for the **Nodes** and **Interfaces**.
 
-**Alarms** page: this page shows the Active **Alarms** as well as the Active **Alarm Variables** which gives extra information. It has a subpage with the **Alarm Definition** table where the **Severity** and **Description** of the alarm are fetched from.
+The **Alarms** page shows the Active **Alarms** as well as the Active **Alarm Variables**, which gives extra information. It has a subpage with the **Alarm Definition** table where the **Severity** and **Description** of the alarm are fetched from.
 
 ## Notes
 
-This connector does not perform any SET.
-
-
+This connector does not perform any sets.

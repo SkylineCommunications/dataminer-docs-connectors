@@ -14,11 +14,11 @@ This connector is also compatible with the **ETL Systems 22532** combiner.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                            |
+| Range     | Supported Firmware                                                |
 |-----------|-------------------------------------------------------------------|
 | 1.0.0.x   | ETL Systems 22522, version 04.60 ETL Systems 22532, version 04.60 |
 
@@ -26,7 +26,7 @@ This connector is also compatible with the **ETL Systems 22532** combiner.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

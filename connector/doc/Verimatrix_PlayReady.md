@@ -4,7 +4,7 @@ uid: Connector_help_Verimatrix_PlayReady
 
 # Verimatrix PlayReady
 
-This connector displays and monitors the configuration and general information of the **Verimatrix PlayReady** **playout server.**
+This connector displays and monitors the configuration and general information of the **Verimatrix PlayReady playout server.**
 
 ## About
 
@@ -12,15 +12,21 @@ The Verimatrix PlayReady connector retrieves general and configuration informati
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | v3.6                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | v3.6                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

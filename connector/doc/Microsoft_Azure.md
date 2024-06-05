@@ -14,19 +14,19 @@ This connector allows you to monitor relevant resource metrics available in Azur
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**      |
+| Range     | Supported Firmware          |
 |-----------|-----------------------------|
 | 1.0.0.x   | REST-API version 2018-01-01 |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                               | **Exported Components** |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                   | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | See "Supported Resource Type Elements" table below. | \-                      |
+| 1.0.0.x   | No                  | Yes                     | See "Supported Resource Type Elements" table below. | -                       |
 
 ### Supported Resource Type Elements
 
@@ -43,6 +43,7 @@ This connector allows you to monitor relevant resource metrics available in Azur
 | [Microsoft Azure Cloud Platform - Cosmos DB Accounts](xref:Connector_help_Microsoft_Azure_-_Cosmos_DB_Accounts)                                         | Microsoft.DocumentDb/databaseAccounts      |
 | [Microsoft Azure Cloud Platform - Azure DB for MySQL Flexible Servers](xref:Connector_help_Microsoft_Azure_-_Azure_DB_for_MySQL_Flexible_Servers) | Microsoft.DBforMySQL/flexibleServers       |
 | [Microsoft Azure Cloud Platform - Virtual Machines](xref:Connector_help_Microsoft_Azure_-_Virtual_Machines)                                               | Microsoft.Compute/virtualMachines          |
+| [Microsoft Azure Cloud Platform - Service Bus](xref:Connector_help_Microsoft_Azure_-_Service_Bus)                                               | Microsoft.ServiceBus/namespaces          |
 
 ## Configuration
 

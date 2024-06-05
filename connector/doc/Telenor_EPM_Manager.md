@@ -17,19 +17,19 @@ The connector has two levels of complexity:
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                                                                                                                                                                          | **Exported Components** |
-|-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Agama Consumer](xref:Connector_help_Telenor_EPM_Agama_Consumer) Telenor EPM MAM Consumer [Telenor EPM Collector](xref:Connector_help_Telenor_EPM_Collector) [Telenor Propaganda](xref:Connector_help_Telenor_Propaganda) (not required - see "General" section below) | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | [Telenor EPM Agama Consumer](xref:Connector_help_Telenor_EPM_Agama_Consumer) <br>Telenor EPM MAM Consumer <br>[Telenor EPM Collector](xref:Connector_help_Telenor_EPM_Collector) <br>[Telenor Propaganda](xref:Connector_help_Telenor_Propaganda) (not required - see "General" section below) | - |
 
 ## Configuration
 

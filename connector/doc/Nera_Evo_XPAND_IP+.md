@@ -14,15 +14,21 @@ This connector communicates with the device using an **SNMP** connection, allowi
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 7.2.0.0.08-1                |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | 7.2.0.0.08-1           |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -46,7 +52,7 @@ SNMP Settings:
 
 ### General
 
-On this page, you can find information such as the **ID Version**, **Measurement** **System**, **Real Time on Device** and **Last Configuration Change**.
+On this page, you can find information such as the **ID Version**, **Measurement System**, **Real Time on Device** and **Last Configuration Change**.
 
 The following page buttons are available:
 
@@ -64,7 +70,7 @@ The **Event log**, **Current Alarm**, **Traps** and **General Alarm** page butto
 
 ### Licenses
 
-This page contains information on the licenses: **Type License,** **License Code** and **Switch Application License**.
+This page contains information on the licenses: **Type License, License Code** and **Switch Application License**.
 
 ### Security
 

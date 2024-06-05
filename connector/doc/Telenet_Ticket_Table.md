@@ -14,9 +14,9 @@ The **Telenet Ticket Table** will retrieve a list of the **current active alarms
 
 | **Range**            | **Key Features**                                                                                                                                  | **Based on** | **System Impact** |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                  | \-           | \-                |
-| 2.0.0.x              | New topology binding.                                                                                                                             | 1.0.0.x      | \-                |
-| 2.0.1.x \[SLC Main\] | QActions triggered on row change of a specific table cell will be replaced by triggers on standalone parameters where the update needs to be set. | 2.0.0.x      | \-                |
+| 1.0.0.x              | Initial version.                                                                                                                                  | -            | -                 |
+| 2.0.0.x              | New topology binding.                                                                                                                             | 1.0.0.x      | -                 |
+| 2.0.1.x [SLC Main]   | QActions triggered on row change of a specific table cell will be replaced by triggers on standalone parameters where the update needs to be set. | 2.0.0.x      | -                 |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ The **Telenet Ticket Table** will retrieve a list of the **current active alarms
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.1.x   | No                  | No                      | \-                    | \-                      |
+| 2.0.1.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

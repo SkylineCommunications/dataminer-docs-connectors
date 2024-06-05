@@ -12,13 +12,13 @@ This connector communicates with the Evertz InSite API. It retrieves system info
 
 | **Range**            | **Key Features**                         | **Based on** | **System Impact**                                                                           |
 |----------------------|------------------------------------------|--------------|---------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                         | \-           | \-                                                                                          |
+| 1.0.0.x              | Initial version.                         | -            | -                                                                                           |
 | 1.0.1.x              | Separate notification cleanup procedure. | 1.0.0.12     | Notification tables have been modified. Clean up existing information and adjust templates. |
-| 1.0.1.x \[SLC Main\] | Added session cookie/modified API calls. | 1.0.1.2      | Command URL change. Additional JSON may not be backwards compatible.                        |
+| 1.0.1.x [SLC Main]   | Added session cookie/modified API calls. | 1.0.1.2      | Command URL change. Additional JSON may not be backwards compatible.                        |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**           |
+| Range     | Supported Firmware               |
 |-----------|----------------------------------|
 | 1.0.0.x   | v.0.10.3 a.305 Beta 9            |
 | 1.0.1.x   | v.0.10.3 a.305 Beta 9            |
@@ -28,9 +28,9 @@ This connector communicates with the Evertz InSite API. It retrieves system info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

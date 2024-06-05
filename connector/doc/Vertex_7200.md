@@ -4,39 +4,39 @@ uid: Connector_help_Vertex_7200
 
 # Vertex 7200
 
-The **Vertex 7200** is an antenna pointing system that positions the antenna to receive the peak signal from one or more communication satellites.
-
-## About
+The Vertex 7200 is an antenna pointing system that positions the antenna to receive the peak signal from one or more communication satellites.
 
 The **Vertex 7200** connector will update its monitoring and configuration parameters by sending serial commands to the device.
 
+## About
+
 ### Version Info
 
-| **Range** | **Description**                                                                            | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                            | No                  | Yes                     |
-| 1.1.0.x          | Release version, requires CRC                                                              | Yes                 | Yes                     |
-| 1.2.0.x          | Release version, based on 1.1.0.16, disabled CRC                                           | No                  | No                      |
-| 2.0.0.x          | Release version. Layout based on 1.1.0.18. Requires MT M&C protocol to be the serial mode. | No                  | Yes                     |
+| Range   | Description                                                                                | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                                                            | No              | Yes                 |
+| 1.1.0.x | Release version, requires CRC                                                              | Yes             | Yes                 |
+| 1.2.0.x | Release version, based on 1.1.0.16, disabled CRC                                           | No              | No                  |
+| 2.0.0.x | Release version. Layout based on 1.1.0.18. Requires MT M&C protocol to be the serial mode. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
-| 1.1.0.x          | N/A                         |
-| 1.2.0.x          | N/A                         |
-| 2.0.0.x          | N/A                         |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | N/A                        |
+| 1.1.0.x | N/A                        |
+| 1.2.0.x | N/A                        |
+| 2.0.0.x | N/A                        |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description** |
-|-----------------------|-----------------|
-| ACU Vertex 7200 DTR   | DTR Info        |
+| Exported Connector                                              | Description |
+|-----------------------------------------------------------------|-------------|
+| [ACU Vertex 7200 DTR](xref:Connector_help_ACU_Vertex_7200_DTR) | DTR Info    |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### Serial Main Connection
 
@@ -44,8 +44,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host:** The polling IP of the device.
-- **IP port:** The IP port of the device.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
 
 ### Configuration of the device
 

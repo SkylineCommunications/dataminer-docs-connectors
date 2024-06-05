@@ -25,7 +25,7 @@ When an offload is started, the data will be stored in a **temporary file** and 
 | **Range**     | **Description**                                                    | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                    | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | Based on v1.0.0.15. Review of the queries: Topology DB connection. | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Based on v1.0.0.15. Review of the queries: Topology DB connection. | No                  | Yes                     |
 
 ## Installation and configuration
 

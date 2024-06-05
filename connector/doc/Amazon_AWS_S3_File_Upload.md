@@ -12,11 +12,11 @@ This connector allows you to automatically upload files from a specific source d
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                      |
+| Range     | Supported Firmware                                                          |
 |-----------|-----------------------------------------------------------------------------|
 | 1.0.0.x   | Amazon S3 API 2006-03-01 <https://docs.aws.amazon.com/AmazonS3/latest/dev/> |
 
@@ -24,7 +24,7 @@ This connector allows you to automatically upload files from a specific source d
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -10,24 +10,24 @@ This connector allows you to monitor the FOR-A MFR-6100 Video Router via an SNMP
 
 ### Version Info
 
-| **Range**            | **Key Features**                                  | **Based on** | **System Impact**                                                        |
-|----------------------|---------------------------------------------------|--------------|--------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version (SNMP).                           | \-           | \-                                                                       |
-| 1.0.1.x \[SLC Main\] | \- Added matrix. - Added extra serial connection. | 1.0.0.x      | Existing elements must be edited to configure the additional connection. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version (SNMP). | - | - |
+| 1.0.1.x [SLC Main] | - Added matrix. <br>- Added extra serial connection. | 1.0.0.x | Existing elements must be edited to configure the additional connection. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

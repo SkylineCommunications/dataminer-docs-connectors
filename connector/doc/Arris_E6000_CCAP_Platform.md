@@ -14,31 +14,34 @@ This connector allows you to collect data from the Arris E6000 CCAP Platform alo
 
 | **Range**            | **Key Features**                          | **Based on** | **System Impact** |
 |----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                          | \-           | \-                |
-| 1.0.1.x              | Modifications for compatibility with EPM. | \-           | \-                |
-| 1.0.2.x              | Modifications to improve performance.     | \-           | \-                |
-| 1.0.3.x \[SLC Main\] | Updated the minimum DataMiner version.    | \-           | \-                |
-| 1.0.4.x              | Modifications to improve performance      | \-           | \-                |
+| 1.0.0.x              | Initial version.                          | -            | -                 |
+| 1.0.1.x              | Modifications for compatibility with EPM. | -            | -                 |
+| 1.0.2.x              | Modifications to improve performance.     | -            | -                 |
+| 1.0.3.x              | Updated the minimum DataMiner version.    | -            | -                 |
+| 1.0.4.x              | Modifications to improve performance      | -            | -                 |
+| 1.0.5.x [SLC Main]   | New threshold logic.                      | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | CER_V04.05.00.0015     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.x   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
+| 1.0.5.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -66,6 +69,20 @@ The connector uses custom properties to configure the Network, Market, and Hub o
 ### Redundancy
 
 There is no redundancy defined.
+
+### Threshold Table
+
+In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:
+
+- **Maximum Timing Offset Level**: Range from 0 to 2000 µs.
+- **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Minimum SNR Level**: Range from 10 to 60 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+
+The minimum value for the Rx threshold cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
 
 ## How to use
 

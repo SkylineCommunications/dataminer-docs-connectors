@@ -12,7 +12,7 @@ Is an audio embedder with embedded domain audio shuffler and framesync, the conn
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ Is an audio embedder with embedded domain audio shuffler and framesync, the conn
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -78,10 +78,8 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 #### Fixed interfaces
 
-
-
 Physical fixed interfaces:
 
-2 SDI Inputs
+- 2 SDI Inputs
 
-2 SDI Outputs
+- 2 SDI Outputs

@@ -12,12 +12,12 @@ The connector layout has been configured to look as much like the web interface 
 
 This connector will export different connectors based on the retrieved data. A list can be found in the section "Exported Connectors" below.
 
-### Ranges on the connector
+### Version Info
 
-| **Range**     | **Description**     | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version     | No                  | No                      |
-| 1.0.1.x \[SLC Main\] | Cassandra compliant | No                  | Yes                     |
+| Range              | Key Features        | Based on | System Impact |
+|--------------------|---------------------|----------|---------------|
+| 1.0.0.x            | Initial version     | -        | -             |
+| 1.0.1.x [SLC Main] | Cassandra compliant | -        | -             |
 
 ### Product Info
 
@@ -26,11 +26,18 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.0.x          | 1.4.1                       |
 | 1.0.1.x          | 1.4.1                       |
 
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | See table below.        |
+| 1.0.1.x   | No                  | Yes                     | -                     | See table below.        |
+
 ### Exported Connectors
 
-| **Exported Connector** | **Description**               |
-|-----------------------|-------------------------------|
-| CEFD 625A Serial.FSK  | BUC/LNB-specific information. |
+| Exported Connector   | Description                   |
+|----------------------|-------------------------------|
+| CEFD 625A Serial.FSK | BUC/LNB-specific information. |
 
 ## Installation and configuration
 
@@ -120,7 +127,7 @@ VLAN Mode: This mode is supported if Working Mode is set to *Managed Switch*, wi
 Below this, you can find the **VLAN Table**, which contains the following parameters:
 
 - **VLAN ID:** This read-only parameter reflects the ID value assigned in the Per Port Configuration Table (i.e. any ID has a value range of *0001-4095*).
-- **Port 1** to **Port 4:** Use the drop-down menu to set the port to *Untagged*, *Tagged*, or *Filtered***.**
+- **Port 1** to **Port 4:** Use the drop-down menu to set the port to *Untagged*, *Tagged*, or *Filtered*.
 - **VLAN Row Status:** You can use the button to **Delete** the active ID.
 - **Create VLAN**: Allows you to create a new VLAN ID.
 
@@ -152,13 +159,13 @@ Use this page to configure a number of the utility functions of the device:
 
 - Date and Time:
 
-- **RTC Date**: Enter a date using MM/DD/YY format (where MM = month \[01 to 12\], DD = day \[01 to 31\], and YY = year \[00 to 99\]).
+  - **RTC Date**: Enter a date using MM/DD/YY format (where MM = month \[01 to 12\], DD = day \[01 to 31\], and YY = year \[00 to 99\]).
   - **RTC Time**: Enter a time using HH:MM:SS format (where HH = hour \[00 to 23\], MM = minutes \[00 to 59\], and SS = seconds \[00 to 59\]).
   - **Time Sync**: Time sync-related parameters.
 
 - Warm-Up:
 
-- **Warm Up Delay:** Warm-up delay for internal frequency reference (OCXO). Can be set to *Disabled* (instantly on: no delay for OCXO to reach temperature) or *Enabled* (unit waits until OCXO reaches correct temperature).
+  - **Warm Up Delay:** Warm-up delay for internal frequency reference (OCXO). Can be set to *Disabled* (instantly on: no delay for OCXO to reach temperature) or *Enabled* (unit waits until OCXO reaches correct temperature).
   - **Warm Up Countdown**: The warm-up delay countdown remaining (in seconds).
   - **Truncate Delay**: Used to truncate the warm-up delay period to *zero*, forcing the unit into "*instant-on*" mode.
 
@@ -166,7 +173,7 @@ Use this page to configure a number of the utility functions of the device:
 
 - **Save** / **Load** (save takes precedence over load):
 
-- **Configuration Save / Configuration Load:** Use the drop-down menus to save or load up to 10 different modem configurations, *0* through *9*.
+  - **Configuration Save / Configuration Load:** Use the drop-down menus to save or load up to 10 different modem configurations, *0* through *9*.
   - In the serial version of the connector, the page button **Configuration slots**, which shows the available configuration slots, is not available.
 
 ### Config - Drop and Insert
@@ -232,7 +239,7 @@ The **Statistics Log** section contains the following parameters:
 - **Statistics Interval**: The interval at which the statistics are logged.
 - **Statistics Overview**: The table showing the statistics.
 
-Finally, the **Alarm Masking** page button opens a subpage where you can use the available option buttons to define an alarm as *Masked* or *Active***.**
+Finally, the **Alarm Masking** page button opens a subpage where you can use the available option buttons to define an alarm as *Masked* or *Active*.
 
 ### ODU / Redundancy
 

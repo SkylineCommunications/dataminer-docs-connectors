@@ -12,61 +12,25 @@ This connector will manage the test tasks that are scheduled for the robot, coll
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [Obsolete]</td>
-<td>Initial version</td>
-<td>-</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x [Obsolete]</td>
-<td>New robot firmware</td>
-<td>1.0.0.5</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1.2.0.x [SLC Main]</td>
-<td><p>Maestro Public API</p></td>
-<td>1.1.0.12</td>
-<td><p>To make sure running tasks are handled correctly when you update to this version:</p>
-<ol>
-<li>Disable all carousels and stacks on the WitBe Robot Manager.</li>
-<li>Cancel and clear all queued tasks.</li>
-<li>Update the WitBe Robot Manager.</li>
-<li>Update the WitBe Robots.</li>
-<li>Enable carousels and stacks on the WitBe Robot Manager.</li>
-</ol></td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.1.0.x [Obsolete] | New robot firmware | 1.0.0.5 | - |
+| 1.2.0.x [SLC Main] | Maestro Public API | 1.1.0.12 | To make sure running tasks are handled correctly when you update to this version:<br>-Disable all carousels and stacks on the WitBe Robot Manager.<br>-Cancel and clear all queued tasks.<br>-Update the WitBe Robot Manager.<br>-Update the WitBe Robots.<br>-Enable carousels and stacks on the WitBe Robot Manager. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 | 1.1.0.x   | v4.5.1.5               |
 | 1.2.0.x   | v6.2                   |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                               | **Exported Components** |
-|-----------|---------------------|-------------------------|-------------------------------------------------------------------------------------|-------------------------|
-| 1.2.0.x   | No                  | Yes                     | \- *WitBe Robot Manager* connector - *Schedule WitBe Maintenance* Automation script | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.2.0.x | No | Yes | - *WitBe Robot Manager* connector <br>- *Schedule WitBe Maintenance* Automation script | - |
 
 ## Configuration
 

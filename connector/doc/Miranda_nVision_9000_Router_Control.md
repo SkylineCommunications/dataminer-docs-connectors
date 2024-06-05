@@ -14,31 +14,31 @@ This connector uses **serial** communication to configure and monitor routers su
 
 | **Range**            | **Key Features**                                                                             | **Based on** | **System Impact**                                                                                                         |
 |----------------------|----------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                              | \-           | \-                                                                                                                        |
-| 1.0.1.x \[SLC Main\] | Layout adapted and pages renamed.                                                            | \-           | Users may not be used to the new layout and existing Visio files may need to be adapted because of the page name changes. |
-| 1.0.2.1              | DCF implemented.                                                                             | \-           | \-                                                                                                                        |
-| 1.0.3.x              | Smart-serial connection added to use a subscription mechanism for device crosspoint changes. | \-           | \-                                                                                                                        |
-| 1.0.4.x              | Matrix dimension change                                                                      | \-           | \-                                                                                                                        |
+| 1.0.0.x              | Initial version                                                                              | -            | -                                                                                                                         |
+| 1.0.1.x [SLC Main]   | Layout adapted and pages renamed.                                                            | -            | Users may not be used to the new layout and existing Visio files may need to be adapted because of the page name changes. |
+| 1.0.2.1              | DCF implemented.                                                                             | -            | -                                                                                                                         |
+| 1.0.3.x              | Smart-serial connection added to use a subscription mechanism for device crosspoint changes. | -            | -                                                                                                                         |
+| 1.0.4.x              | Matrix dimension change                                                                      | -            | -                                                                                                                         |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
-| 1.0.1.x   | \-                     |
-| 1.0.2.1   | \-                     |
-| 1.0.3.x   | \-                     |
-| 1.0.4.x   | \-                     |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.1   | -                      |
+| 1.0.3.x   | -                      |
+| 1.0.4.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.1   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.4.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.1   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

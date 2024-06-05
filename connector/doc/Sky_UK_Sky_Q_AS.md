@@ -10,9 +10,9 @@ This connector can be used to manage device apps. The apps can be retrieved, lau
 
 ### Version Info
 
-| **Range**            | **Key Features**                                            | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | \- Launch and close apps. - Get system state via WebSocket. | \-           | \-                |
+| Range              | Key Features                                                   | Based on | System Impact |
+|--------------------|----------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - Launch and close apps. <br>- Get system state via WebSocket. | -        | -             |
 
 ### Product Info
 
@@ -24,7 +24,7 @@ This connector can be used to manage device apps. The apps can be retrieved, lau
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

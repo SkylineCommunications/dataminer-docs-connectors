@@ -12,21 +12,21 @@ It polls relevant information from the device every 2 seconds, 30 seconds, or 1 
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | \-           | \-                |
+| 1.0.0.x   | Initial version  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | \-                     |
+| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -56,7 +56,7 @@ You can find more information about the data display pages of the connector belo
 
 ### General Page
 
-This page displays the server **System ID, Version, Vendor, Time,** **Name**, and **IP Address** (which represents the polling IP), as well as the **Total Memory, Memory Cache, Free Memory**, and **Memory Buffers.**
+This page displays the server **System ID**, **Version**, **Vendor**, **Time**, **Name**, and **IP Address** (which represents the polling IP), as well as the **Total Memory, Memory Cache, Free Memory**, and **Memory Buffers.**
 
 There are two page buttons:
 
@@ -75,7 +75,10 @@ This page displays information regarding the **Configured Nodes**.
 
 ### Functions and Operations Page
 
-This page displays information regarding the **Configured** **Functions,** **Configured Operations**, and **Operation Transcode AAC** that are created in the device.
+This page displays information regarding the **Configured Functions**, **Configured Operations**, and **Operation Transcode AAC** that are created in the device.
+
+> [!NOTE]
+> If you want alarms to be triggered for datetime parameters such as the Last Up/Down columns, you will need to calculate the numeric value for a specific date and use that in the alarm template.
 
 ### Schedules and Jobs Page
 

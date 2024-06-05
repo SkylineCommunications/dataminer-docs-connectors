@@ -12,10 +12,10 @@ This connector uses SNMP to retrieve a list of cards of the **Riedel Communicati
 
 ### Version Info
 
-| **Range** | **Key Features**                         | **Based on** | **System Impact** |
-|-----------|------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                          | \-           | \-                |
-| 1.0.1.x   | Added smart-serial connection for Ember+ | \-           | \-                |
+| Range   | Key Features                             | Based on | System Impact |
+|---------|------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version                          | -        | -             |
+| 1.0.1.x | Added smart-serial connection for Ember+ | -        | -             |
 
 ### Product Info
 
@@ -26,9 +26,9 @@ This connector uses SNMP to retrieve a list of cards of the **Riedel Communicati
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components**                                                                                                                            | **Exported Components** |
-|-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \- Riedel Communications MediorNet - Link Module - Riedel Communications MediorNet - Video Module - Riedel Communications MediorNet - GPI Module | \-                      |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - Riedel Communications MediorNet <br>- Link Module <br>- Riedel Communications MediorNet <br>- Video Module <br>- Riedel Communications MediorNet <br>- GPI Module | - |
 
 ## Configuration
 
@@ -40,13 +40,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP address/host:** The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
 
 SNMP Settings:
 
-- **Port number:** The port of the connected device, by default *161*.
-- **Get community string:** The community string used when reading values from the device. The default value is *public*.
-- **Set community string:** The community string used when setting values on the device. The default value is *private*
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*
 
 #### IP Connection
 

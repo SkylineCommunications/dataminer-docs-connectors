@@ -12,31 +12,9 @@ This connector allows the user to monitor the parameters, status and alarms of t
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>2.0.0.x [SLC Main]</td>
-<td><ul>
-<li>Displays information about the parameters, status and alarms of the available instances.</li>
-<li>Manages traps</li>
-</ul></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range              | Key Features                                                                                                   | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 2.0.0.x [SLC Main] | - Displays information about the parameters, status, and alarms of the available instances.<br>- Manages traps | -        | -             |
 
 ### Product Info
 
@@ -48,7 +26,7 @@ This connector allows the user to monitor the parameters, status and alarms of t
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 

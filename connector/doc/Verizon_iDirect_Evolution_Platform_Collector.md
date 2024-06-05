@@ -20,13 +20,13 @@ As this is a virtual connector, **no data traffic** will be shown in the Stream 
 
 ### Version Info
 
-| **Range**     | **Description**                                                          | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                         | No                  | Yes                     |
-| 1.0.1.x \[Obsolete\] | Display keys in alarm tables updated to show a more user-friendly value. | No                  | Yes                     |
-| 1.0.2.x              | Main KPIs updated.                                                       | No                  | Yes                     |
-| 1.0.3.x              | Fault/alarm functionality removed.                                       | No                  | Yes                     |
-| 1.0.4.x \[SLC Main\] | Fix of the way events are handled towards native fault handling.         | No                  | Yes                     |
+| Range              | Description                                                              | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                         | No              | Yes                 |
+| 1.0.1.x [Obsolete] | Display keys in alarm tables updated to show a more user-friendly value. | No              | Yes                 |
+| 1.0.2.x            | Main KPIs updated.                                                       | No              | Yes                 |
+| 1.0.3.x            | Fault/alarm functionality removed.                                       | No              | Yes                 |
+| 1.0.4.x [SLC Main] | Fix of the way events are handled towards native fault handling.         | No              | Yes                 |
 
 ## Installation and configuration
 

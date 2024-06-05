@@ -12,8 +12,8 @@ With the CISCO Manager CIN Platform it is possible to configure and monitor CISC
 
 | **Range**            | **Key Features**             | **Based on** | **System Impact** |
 |----------------------|------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.             | \-           | \-                |
-| 1.0.1.x \[SLC Main\] | Updated Temperature section. | \-           | \-                |
+| 1.0.0.x              | Initial version.             | -            | -                 |
+| 1.0.1.x [SLC Main]   | Updated Temperature section. | -            | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ With the CISCO Manager CIN Platform it is possible to configure and monitor CISC
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

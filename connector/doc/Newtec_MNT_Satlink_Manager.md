@@ -4,7 +4,7 @@ uid: Connector_help_Newtec_MNT_Satlink_Manager
 
 # Newtec MNT SatLink Manager
 
-The Newtec MNT SatLink Manager connector implements a small subset of requests from the **Newtec** **SLC SIT Controller API**. The connector uses the **SOAP** API to interface with the SIT controller.
+The Newtec MNT SatLink Manager connector implements a small subset of requests from the **Newtec SLC SIT Controller API**. The connector uses the **SOAP** API to interface with the SIT controller.
 
 This connector is specifically used to enable/disable SCPC (SLM 1.0) or carrier (SLM 2.1) transmissions and reception.
 
@@ -12,11 +12,11 @@ This connector is specifically used to enable/disable SCPC (SLM 1.0) or carrier 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                             | **Based on** | **System Impact** |
-|----------------------|----------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | \- Retrieval and configuration of modems, transmissions, and reception. - Supports 2 modems. | \-           | \-                |
-| 1.1.0.x              | Updated to new firmware SLM 2.1.                                                             | 1.0.0.x      | \-                |
-| 1.1.1.x \[SLC Main\] | Supports more modems (dynamic).                                                              | 1.1.0.x      | \-                |
+| Range              | Key Features                                                                                    | Based on | System Impact |
+|--------------------|-------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | - Retrieval and configuration of modems, transmissions, and reception. <br>- Supports 2 modems. | -        | -             |
+| 1.1.0.x            | Updated to new firmware SLM 2.1.                                                                | 1.0.0.x  | -             |
+| 1.1.1.x [SLC Main] | Supports more modems (dynamic).                                                                 | 1.1.0.x  | -             |
 
 ### Product Info
 
@@ -30,9 +30,9 @@ This connector is specifically used to enable/disable SCPC (SLM 1.0) or carrier 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | EBU FNRMN MNT Manager | \-                      |
-| 1.1.0.x   | No                  | Yes                     | EBU FNRMN MNT Manager | \-                      |
-| 1.1.1.x   | No                  | Yes                     | EBU FNRMN MNT Manager | \-                      |
+| 1.0.0.x   | No                  | Yes                     | EBU FNRMN MNT Manager | -                       |
+| 1.1.0.x   | No                  | Yes                     | EBU FNRMN MNT Manager | -                       |
+| 1.1.1.x   | No                  | Yes                     | EBU FNRMN MNT Manager | -                       |
 
 ## Configuration
 

@@ -14,15 +14,21 @@ The main features offered by this solutions are network resiliency with greater 
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version** |
-|----------------------|-----------------------------|
-| 1.0.0.x \[SLC Main\] | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -66,7 +72,7 @@ This page contains a two tables with **common information** to all **4G WAN** (*
 
 In the **first table**, you will find each **module status information** about the **modem status**, **RSSI** and **Ec/Io** measurements, **current system time** and **cellular capacities**.
 
-The **second table** contains each **module** **settings**, where it is possible to configure the thresholds to send notifications for parameters such as **Modem Temperature**, **RSSI**, **Ec/Io** or **Modem Status**. It's also possible to **reset** or **power cycle** the modules separately.
+The **second table** contains each **module settings**, where it is possible to configure the thresholds to send notifications for parameters such as **Modem Temperature**, **RSSI**, **Ec/Io** or **Modem Status**. It's also possible to **reset** or **power cycle** the modules separately.
 
 ### GSM
 
@@ -84,7 +90,7 @@ These tables will be empty if no GSM modules are installed.
 
 This page will allow you to explore the information about the **CDMA (Code-Division Multiple Access) capabilities** of the modules installed. This info is distributed by the following tables:
 
-- **CDMA** **Identity** - Here you can find information that uniquely identifies the installed CDMA modules, such as **ESN**, **MDN**, **MSID**, as well as the **Activation Status** and the **Roaming preferences**.
+- **CDMA Identity** - Here you can find information that uniquely identifies the installed CDMA modules, such as **ESN**, **MDN**, **MSID**, as well as the **Activation Status** and the **Roaming preferences**.
 - **CDMA Radio** - This table has the information about **Channel Number**, **Channel State** and the usual **RSSI** and **Ec/Io**.
 - **CDMA Network** - This table has the information about the **location** of the associated base station, **SID**, **NID** and **Simple IP** preferences.
 - **CDMA Security** - Here you will be able to configure the **PIN** and **Power Up Lock** status.
@@ -111,7 +117,7 @@ This page displays the **Radio metrics** used to evaluate LTE wireless communica
 
 You can also configure the **threshold settings** associated to these metric parameters, that will trigger **system notifications**.
 
-By opening the EPS Bearers QoS page button you access the system **LTE EPS** **Bearers** (connection between two endpoints) **QoS** (Quality of Service) **metrics**.
+By opening the EPS Bearers QoS page button you access the system **LTE EPS Bearers** (connection between two endpoints) **QoS** (Quality of Service) **metrics**.
 
 ### Ping Function
 

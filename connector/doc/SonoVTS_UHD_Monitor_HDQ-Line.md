@@ -12,15 +12,21 @@ This connector allows you to monitor the parameters of the media stream connecte
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V0.9022                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | V0.9022                |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -33,6 +39,7 @@ This connector uses a serial-over-IP connection implementing the Ember+ protocol
 SMART-SERIAL CONNECTION:
 
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device. By default, this value is *9000*.
 

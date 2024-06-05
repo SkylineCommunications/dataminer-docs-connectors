@@ -10,36 +10,13 @@ The **Skyline Bookings Monitoring** is a virtual connector that allows **SRM Sol
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [SLC Main]</td>
-<td><p>Booking Table to Monitor booking</p>
-<p>Clear all Nominal Bookings Button</p>
-<p>Clear all Bookings Button</p>
-<p>Configurable Retention Time</p>
-<p>Configurable Past Lookup Time</p></td>
-<td>-</td>
-<td>-</td>
-</tr>
-</tbody>
-</table>
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main] | - Booking Table to Monitor booking<br>- Clear all Nominal Bookings Button<br>- Clear all Bookings Button<br>- Configurable Retention Time<br>- Configurable Past Lookup Time | - | - |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                   |
+| Range     | Supported Firmware                                                                                       |
 |-----------|----------------------------------------------------------------------------------------------------------|
 | 1.0.0.x   | Connector meant to be installed with Skyline Booking Manager Connector (2.0.2.29) in SRM 1.2.14 or above |
 
@@ -47,7 +24,7 @@ The **Skyline Bookings Monitoring** is a virtual connector that allows **SRM Sol
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -12,15 +12,21 @@ This connector communicates with the device using a serial connection. It retrie
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                         |
-|------------------|---------------------------------------------------------------------|
-| 1.0.0.x          | TelliShape version 3.0.1 201010191428391 Decapsulator version 1.1.7 |
+| Range   | Supported Firmware                                                     |
+|---------|------------------------------------------------------------------------|
+| 1.0.0.x | TelliShape version 3.0.1 201010191428391<br>Decapsulator version 1.1.7 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

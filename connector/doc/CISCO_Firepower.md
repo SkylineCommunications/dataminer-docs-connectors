@@ -10,14 +10,14 @@ This connector uses SNMP or HTTP communication in order to monitor a CISCO Firep
 
 ### Version Info
 
-| **Range**            | **Key Features**      | **Based on** | **System Impact** |
-|----------------------|-----------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | SNMP initial version. | \-           | \-                |
-| 2.0.0.x \[SLC Main\] | HTTP initial version. | \-           | \-                |
+| Range              | Key Features          | Based on | System Impact |
+|--------------------|-----------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | SNMP initial version. | -        | -             |
+| 2.0.0.x [SLC Main] | HTTP initial version. | -        | -             |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version** |
+| Range     | Device Firmware Version     |
 |-----------|-----------------------------|
 | 1.0.0.x   | N/A                         |
 | 2.0.0.x   | N/A                         |
@@ -26,55 +26,42 @@ This connector uses SNMP or HTTP communication in order to monitor a CISCO Firep
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 2.0.0.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 2.0.0.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>SNMP connection - Main
-<p>This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:</p>
-<p>SNMP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device.</li>
-</ul>
-<p>SNMP Settings:</p>
-<ul>
-<li><strong>Port number</strong>: The port of the connected device, by default <em>161</em>.</li>
-<li><strong>Get community string</strong>: The community string used when reading values from the device, by default <em>public</em>.</li>
-<li><strong>Set community string</strong>: The community string used when setting values on the device, by default <em>private</em>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x</td>
-<td>HTTP Connection - Main
-<p>This connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### SNMP connection - Main
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device, by default *public*.
+- **Set community string**: The community string used when setting values on the device, by default *private*.
+
+### Connections - Range 2.0.0.x
+
+#### HTTP Connection - Main
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
 
 ## Usage
 
 ### General Page
 
-This page displays general system information, including the **System** **Description**, **Model**, **System Up Time**, **System Contact**, **System Name**, **System Location**, **CPU Usage** and **Memory Usage**.
+This page displays general system information, including the **System Description**, **Model**, **System Up Time**, **System Contact**, **System Name**, **System Location**, **CPU Usage**, and **Memory Usage**.
 
 The **System Services** page button displays a subpage with the status (*Active* or *Not Active*) for the following layers:
 
@@ -104,7 +91,7 @@ This page displays the following statistics tables:
 
 This page displays the following tables with motherboard statistics:
 
-- **Motherboard Power Statistics** **Table**: Includes information such as the Consumed Power, Input Current and Input Voltage.
+- **Motherboard Power Statistics Table**: Includes information such as the Consumed Power, Input Current and Input Voltage.
 - **Motherboard Temperature Statistics Table**: Includes information such as Temperature Sensor IO, Temperature Sensor Rear, Temperature Sensor Rear L and Temperature Sensor Rear R.
 
 ### Processor Page
@@ -135,9 +122,10 @@ This page displays the Interface Details Table, in which you can among others fi
 
 ## Revision History
 
-DATE VERSION AUTHOR COMMENTS
-02/10/2017 1.0.0.1 RSA , Skyline Initial version
-04/30/2018 1.0.0.2 JGA , Skyline Fixed MultipleGetNext option
-05/23/2018 1.0.0.3 JGA , Skyline Added System Information, System Services and Network Interface Table
-27/06/2018 1.0.0.4 AIG, Skyline Quick protocol review
-20/10/2021 2.0.0.1 MFR, Skyline NF: HTTP initial version.
+| DATE       | VERSION | AUTHOR        | COMMENTS                                                              |
+|------------|---------|---------------|-----------------------------------------------------------------------|
+| 02/10/2017 | 1.0.0.1 | RSA , Skyline | Initial version                                                       |
+| 04/30/2018 | 1.0.0.2 | JGA , Skyline | Fixed MultipleGetNext option                                          |
+| 05/23/2018 | 1.0.0.3 | JGA , Skyline | Added System Information, System Services and Network Interface Table |
+| 27/06/2018 | 1.0.0.4 | AIG, Skyline  | Quick protocol review                                                 |
+| 20/10/2021 | 2.0.0.1 | MFR, Skyline  | NF: HTTP initial version.                                             |

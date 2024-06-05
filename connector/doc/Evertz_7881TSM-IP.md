@@ -10,24 +10,21 @@ This connector displays general information about the Evertz 7881TSM-IP device a
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                     | **Based on** | **System Impact**                                                                               |
-|----------------------|----------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | \- Input and output port monitoring - Monitoring of TS syntax errors | \-           | \-                                                                                              |
-| 1.0.1.x \[SLC Main\] | \- Tree control for transport stream - Bit rate unit selector        | 1.0.0.10     | Alarm monitoring and trending of bit rate uses different parameters than in the previous range. |
+| Range                | Key Features                                                            | Based on | System Impact |
+|----------------------|-------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x   [SLC Main] | - Input and output port monitoring <br>- Monitoring of TS syntax errors | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.2 build 13           |
-| 1.0.1.x   | 1.2 build 13           |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components    | Exported Components    |
+|-----------|---------------------|-------------------------|----------------------|------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                    | -                      |
 
 ## Configuration
 
@@ -61,14 +58,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -82,5 +71,5 @@ The element created with this connector has the following data pages:
 - **TSM**: Displays the **Input Control** table, where you can configure parameters such as the **IP Address** from which to receive the stream and the **UDP Port** number to receive the stream. The **Monitor** status allows you to enable or disable the stream monitoring.
 - **Input Monitor**: Contains multiple tables that display relevant information about the inputs, such as **average bitrate**, **number of programs**, and **known PIDs** detected in the input stream.
 - **TS Syntax Errors**: Displays multiple tables that allow you to monitor possible errors as well as configure the error test for each variable.
-- **PID Monitor**: Contains multiple PID-related tables, namely **PID Table**, **PID Template Control**, and **PID Monitor Control.**
-- **Transport Stream:** Contains a tree control with transport stream information. The tree control uses the following relationship order: **Input Table** \> **Program Name** \> **PID Table**.
+- **PID Monitor**: Contains multiple PID-related tables, namely **PID Table**, **PID Template Control**, and **PID Monitor Control**.
+- **Transport Stream**: Contains a tree control with transport stream information. The tree control uses the following relationship order: **Input Table** \> **Program Name** \> **PID Table**.

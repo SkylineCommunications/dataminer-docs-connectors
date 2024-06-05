@@ -10,21 +10,21 @@ This connector gives access to the GV Orbit monitoring data, using the Alarm API
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | \-           | \-                |
+| 1.0.0.x   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**             |
+| Range     | Supported Firmware                 |
 |-----------|------------------------------------|
 | 1.0.0.x   | GV Orbit Alarm API (version 1.0.0) |
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** | **Linked Components** | **Exported Components**                                                                |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                    |
 |-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | [Grass Valley Orbit - Device](xref:Connector_help_Grass_Valley_Orbit_-_Device) |
+| 1.0.0.x   | No                  | Yes                     | -                     | [Grass Valley Orbit - Device](xref:Connector_help_Grass_Valley_Orbit_-_Device) |
 
 ## Configuration
 

@@ -14,19 +14,19 @@ This connector uses SNMP to poll data from this device based on the encoder and 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                             |
-|-----------|------------------------------------------------------------------------------------|
-| 1.0.0.x   | \- Encoder: V1.0.0B20200826-1122-G-U9E-8A - Decoder: V1.0.0B20210325-1310-H-U9D-8A |
+| Range     | Supported Firmware                                                                    |
+|-----------|---------------------------------------------------------------------------------------|
+| 1.0.0.x   | - Encoder: V1.0.0B20200826-1122-G-U9E-8A <br>- Decoder: V1.0.0B20210325-1310-H-U9D-8A |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -76,7 +76,7 @@ The element created with this connector consists of the data pages detailed belo
 - **Program Control Encoder**: Contains the Element Stream Input Table.
 - **Program Control Decoder**: Contains program control settings.
 - **IP Input Monitor**: Contains tables that allows you to monitor the IP input stream. The **Decoder** page button displays a table with similar information specific to the decoder. The **Encoder** page button displays IP input measurements.
-- **Decoder Program Monitor:** Contains several program monitoring tables**.**
+- **Decoder Program Monitor:** Contains several program monitoring tables.
 - **System Notify**: Allows you to configure the Temperature Threshold and Received Bandwidth Threshold. Also shows if there is any system fault present in the System Notify Table.
 - **Input Notify**: Indicates if there are input faults for each of the different inputs.
 - **Decoder Notify**: Indicates if decoder faults are present, e.g. TS Input Missing and Audio PID Missing.

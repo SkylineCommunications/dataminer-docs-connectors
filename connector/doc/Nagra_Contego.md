@@ -6,15 +6,15 @@ uid: Connector_help_Nagra_Contego
 
 The **Nagra Contego** is a conditional access system.
 
-## About
+This connector uses HTTPS to monitor the Nagra Contego equipment.
 
-This connector uses HTTPs to monitor the Nagra Contego equipment.
+## About
 
 ### Version Info
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -26,22 +26,20 @@ This connector uses HTTPs to monitor the Nagra Contego equipment.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### HTTP Connection - \[Main\]
+#### HTTP Connection - Main
 
-This connector uses an HTTPs connection and requires the following input during element creation:
+This connector uses an HTTPS connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination
 - **IP port**: The IP port of the destination
-
-
 
 ### Initialization
 
@@ -54,6 +52,5 @@ There is no redundancy defined.
 ## How to Use
 
 At startup of the element or when using the **Login** button, data will be retrieved every minute using the login information.
-In case this would fail, a message will be shown on the **General** page.
 
-
+In case this fails, a message will be shown on the **General** page.

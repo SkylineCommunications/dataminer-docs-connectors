@@ -10,13 +10,13 @@ This is a generic Kubernetes connector that allows full container-based operatio
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                         | **Based on** | **System Impact**                                                                              |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version Kubelet API v1.6                                                                                         | \-           | \-                                                                                             |
-| 1.1.0.x              | Kubelet API v1.7                                                                                                         | \-           | \-                                                                                             |
-| 1.2.0.x              | Kubelet API v1.11 **Obsolete  See 1.2.2.x**                                                                              | \-           | \-                                                                                             |
-| 1.2.1.x              | Protocol type change from Virtual to HTTP. Added HTTP connection to the element configuration. **Obsolete  See 1.2.2.x** | \-           | The element will need to be adjusted to use the correct connections.                           |
-| 1.2.2.x \[SLC Main\] | Parameter discrete updates for Conditions table. Based on 1.2.1.5.                                                       | 1.2.1.5      | Parameter discrete updates for Conditions table. Possible impact on trend and alarm templates. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version Kubelet API v1.6 | - | - |
+| 1.1.0.x | Kubelet API v1.7 | - | - |
+| 1.2.0.x | Kubelet API v1.11 **Obsolete — see 1.2.2.x** | - | - |
+| 1.2.1.x | Protocol type change from Virtual to HTTP. Added HTTP connection to the element configuration. **Obsolete — see 1.2.2.x** | - | The element will need to be adjusted to use the correct connections. |
+| 1.2.2.x [SLC Main] | Parameter discrete updates for Conditions table. Based on 1.2.1.5. | 1.2.1.5 | Parameter discrete updates for Conditions table. Possible impact on trend and alarm templates. |
 
 ### Product Info
 
@@ -32,11 +32,11 @@ This is a generic Kubernetes connector that allows full container-based operatio
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

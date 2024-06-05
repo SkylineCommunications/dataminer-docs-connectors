@@ -12,9 +12,9 @@ This connector can be used to monitor and control the **Evertz** **670IPG-X19-25
 
 | **Range**            | **Key Features**                       | **Based on** | **System Impact**                                                 |
 |----------------------|----------------------------------------|--------------|-------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                       | \-           | \-                                                                |
+| 1.0.0.x [Obsolete]     |Initial version.                       | -            | -                                                                 |
 | 1.0.1.x              | Adds redundant polling.                | 1.0.0.1      | Added interface for redundant polling.                            |
-| 1.0.2.x \[SLC Main\] | Removed some unit tags and thresholds. | 1.0.1.2      | Potentially affects alarms, Visual Overviews, Automation scripts. |
+| 1.0.2.x [SLC Main]   | Removed some unit tags and thresholds. | 1.0.1.2      | Potentially affects alarms, Visual Overviews, Automation scripts. |
 
 ### Product Info
 
@@ -22,15 +22,15 @@ This connector can be used to monitor and control the **Evertz** **670IPG-X19-25
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
 | 1.0.1.x   | 2.9.2.r1.588           |
-| 1.0.2.x   | \-                     |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

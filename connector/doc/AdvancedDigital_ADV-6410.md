@@ -6,16 +6,16 @@ uid: Connector_help_AdvancedDigital_ADV-6410
 
 This connector monitors the activity of the AdvanceDigital ADV-6410 device.
 
-## About
+AdvanceDigital ADV-6410 is an integrated receiver/decoder (IRD). It provides operators with ideal solution for multi receiving, descrambling, remultiplexing, and decoding operations.
 
-AdvanceDigital ADV-6410 is an integrated receiver/decoder (IRD). It provides operators with ideal solution for multi receiving, descrambling, remultiplexing and decoding operations.
+## About
 
 ### Version Info
 
-| **Range** | **Description**                                | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version                                | No                  | Yes                     |
-| 1.1.0.x          | New SNMP Tables and Layout due to new firmware | No                  | Yes                     |
+| Range   | Key Features                                       | Based on | System Impact |
+|---------|----------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version                                    | -        | -             |
+| 1.1.0.x | New SNMP tables and layout because of new firmware | -        | -             |
 
 ### Product Info
 
@@ -24,11 +24,18 @@ AdvanceDigital ADV-6410 is an integrated receiver/decoder (IRD). It provides ope
 | 1.0.0.x          | 34PA2046                    |
 | 1.1.0.x          | 34PA600A                    |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
-#### SNMP Main Connection
+## Configuration
+
+### Connections
+
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -39,25 +46,27 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device.
-- **Get community string**: The community string used when reading values from the device. (default: public)
-- **Set community string**: The community string used when setting values on the device. (default: private)
+- **Get community string**: The community string used when reading values from the device (default: public).
+- **Set community string**: The community string used when setting values on the device (default: private).
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
 
 ## Usage
 
 ### General
 
-The General page has some **System** parameters and device parameters like **SNMP** and **MIB** version, **Inputs** and the **Outputs** . In the Configuration sub page it is possible to configure the **BISS** and the **Traps**. The Trap Events sub page displays the latest device events.
+The General page has some system parameters and device parameters like **SNMP** and **MIB** version, **Inputs** and **Outputs** .
+
+On the **Configuration** subpage, you can configure the **BISS** and the **Traps**.
+
+The **Trap Events** subpage displays the latest device events.
 
 ### Tuner
 
-In this page it is possible to check the status and the configuration of the Tuner.
+On this page, you can check the status and the configuration of the tuner.
 
 ### Decoder (Not Available in 1.1.0.x)
 
-In this page it is possible to check the status and the configuration of the Decoder.
-
-### Web Interface
-
-Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
-
-
+On this page, you can check the status and the configuration of the decoder.

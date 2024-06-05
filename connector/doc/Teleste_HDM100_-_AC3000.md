@@ -10,13 +10,13 @@ The AC3000 is a broadband amplifier from Teleste.
 
 ### Product Info
 
-| **Range** | **Device Revision** |
-|------------------|---------------------|
-| 1.0.1.x          | \-                  |
+| Range   | Device Revision |
+|---------|-----------------|
+| 1.0.1.x | -               |
 
 ## Configuration
 
-This connector is used by DVE child elements that are automatically created by the parent connector [Teleste HDM100](https://catalog.dataminer.services/?q=Teleste%20HDM100). No user input is required.
+This connector is used by DVE child elements that are automatically created by the parent connector [Teleste HDM100](xref:Connector_help_Teleste_HDM100). No user input is required.
 
 ## How to use
 

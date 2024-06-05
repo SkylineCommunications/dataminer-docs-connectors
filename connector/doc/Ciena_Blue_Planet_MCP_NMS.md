@@ -14,7 +14,7 @@ This HTTP connector is used to monitor and configure the Ciena Blue Planet domai
 
 | **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
 |----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Alarms, Network Elements and Equipment are listed. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Alarms, Network Elements and Equipment are listed. | -            | -                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This HTTP connector is used to monitor and configure the Ciena Blue Planet domai
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

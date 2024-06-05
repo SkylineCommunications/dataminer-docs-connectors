@@ -18,9 +18,9 @@ The connector uses a serial connection and requires the following input during e
 
 **SERIAL CONNECTION:**
 
-- **IP address/host:** The polling IP of the device.
-- **IP port:** The IP port of the device.
-- **Bus address:** The bus address of the device with range *1* to *255*.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
+- **Bus address**: The bus address of the device with range *1* to *255*.
 
 ## Usage
 

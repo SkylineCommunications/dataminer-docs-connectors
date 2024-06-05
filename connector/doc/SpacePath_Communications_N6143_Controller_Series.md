@@ -12,15 +12,21 @@ The connector communicates with the control unit through its **serial interface*
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                       |
-|------------------|---------------------------------------------------|
-| 1.0.0.x          | Complies with N6143 Series Operation Manual; 2015 |
+| Range   | Supported Firmware                                |
+|---------|---------------------------------------------------|
+| 1.0.0.x | Complies with N6143 Series Operation Manual; 2015 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -35,16 +41,23 @@ SERIAL CONNECTION:
 - Direct connection:
 
   - **Baudrate**: 9600 baud
+
   - **Databits**: 7 bits
+
   - **Stopbits**: 1 bit
+
   - **Parity**: Even
+
   - **FlowControl**: No
 
 - Interface connection:
 
   - **IP address/host**: The IP address of the intermediate serial gateway.
+
   - **IP port**: The port specified by the intermediate serial gateway.
+
   - **Bus address**: The address of the amplifier connected to the control unit.
+
     You can find this address on the physical display of the control unit, in hexadecimal value (0x30 - 0x6F). This value has to be converted to a decimal before it is entered in DataMiner. For example: 0x30 is 48, 0x6F is 111.
 
 ## Usage

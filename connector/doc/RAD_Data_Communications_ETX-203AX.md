@@ -10,30 +10,30 @@ This connector can be used to monitor RAD ETX-203AX modems via SNMP.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                | **Based on** | **System Impact**                                                                                                     |
-|----------------------|-----------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | SNMP polling.                                                   | \-           | \-                                                                                                                    |
-| 1.0.1.x \[Obsolete\] | DCF compatibility.                                              | 1.0.0.4      | \-                                                                                                                    |
-| 1.0.2.x \[Obsolete\] | Additional columns in Service Stats table and Interfaces table. | 1.0.1.3      | Impact on custom reports or scripts calling Service Statistics or Interfaces table IDX or displayed columns directly. |
-| 1.0.3.x \[SLC Main\] | Subtable filtering on Alarm Event Log table                     | \-           | Impact on custom reports or scripts calling Alarm Event Log displayed columns directly via IDX.                       |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | SNMP polling. | - | - |
+| 1.0.1.x [Obsolete] | DCF compatibility. | 1.0.0.4 | - |
+| 1.0.2.x [Obsolete] | Additional columns in Service Stats table and Interfaces table. | 1.0.1.3 | Impact on custom reports or scripts calling Service Statistics or Interfaces table IDX or displayed columns directly. |
+| 1.0.3.x [SLC Main] | Subtable filtering on Alarm Event Log table | - | Impact on custom reports or scripts calling Alarm Event Log displayed columns directly via IDX. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | /                      |
-| 1.0.1.x   | /                      |
-| 1.0.2.x   | /                      |
-| 1.0.3.x   | /                      |
+| 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
+| 1.0.3.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.3.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

@@ -39,7 +39,7 @@ SERIAL CONNECTION
 - **Stopbits:** 1
 - **Parity: No**
 - **FlowControl:** No
-- **Bus Address:** 01FF
+- **Bus address**: 01FF
 - **Serial Port:** COM11
 
 ## Usage

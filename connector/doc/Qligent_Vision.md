@@ -12,8 +12,8 @@ This connector is solely used to switch and monitor the Qligent Vision Linux ser
 
 | **Range**            | **Key Features**       | **Based on** | **System Impact**    |
 |----------------------|------------------------|--------------|----------------------|
-| 1.0.0.x              | Initial version.       | \-           | \-                   |
-| 1.0.1.x \[SLC Main\] | SNMP connection added. | 1.0.0.2      | New SNMP connection. |
+| 1.0.0.x              | Initial version.       | -            | -                    |
+| 1.0.1.x [SLC Main]   | SNMP connection added. | 1.0.0.2      | New SNMP connection. |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ This connector is solely used to switch and monitor the Qligent Vision Linux ser
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

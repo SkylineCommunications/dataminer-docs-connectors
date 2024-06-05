@@ -12,21 +12,21 @@ The connector uses a **serial** connection to retrieve information from and send
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | Yes                 | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | V1.5                        |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | V1.5                   |
 
-### Exported connectors
+### System Info
 
-| **Exported Connector**             | **Description** |
-|-----------------------------------|-----------------|
-| Wavestream RMC-RRS011-HE01 - SSPA | SSPA            |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components               |
+|---------|-----------------|---------------------|-------------------|-----------------------------------|
+| 1.0.0.x | Yes             | Yes                 | -                 | Wavestream RMC-RRS011-HE01 - SSPA |
 
 ## Installation and configuration
 

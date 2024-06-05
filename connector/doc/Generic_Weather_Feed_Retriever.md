@@ -12,12 +12,12 @@ This connector retrieves the weather forecast for all entries in the **Weather T
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 2.0.0.x          | Changes in order to work with serial command/response (instead of web client). Only supports free API key, which allows 500 commands to be sent per hour, with max. 3 commands per second.                                 | No                  | Yes                     |
-| 3.0.0.x          | Added support for premium account. The free version is deprecated.                                                                                                                                                                | No                  | Yes                     |
-| 3.0.1.x          | Display columns changed to use naming.                                                                                                                                                                                            | No                  | Yes                     |
-| 4.0.0.x          | Complete overhaul to increase scalability (you can now choose the forecast date from today to 14 days in the future and the forecast interval, e.g, hourly). Connection has been changed from serial to HTTP. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 2.0.0.x | Changes in order to work with serial command/response (instead of web client). Only supports free API key, which allows 500 commands to be sent per hour, with max. 3 commands per second. | No | Yes |
+| 3.0.0.x | Added support for premium account. The free version is deprecated. | No | Yes |
+| 3.0.1.x | Display columns changed to use naming. | No | Yes |
+| 4.0.0.x | Complete overhaul to increase scalability (you can now choose the forecast date from today to 14 days in the future and the forecast interval, e.g, hourly). Connection has been changed from serial to HTTP. | No | Yes |
 
 ### Product Info
 
@@ -26,42 +26,29 @@ This connector retrieves the weather forecast for all entries in the **Weather T
 | 3.0.1.x          | v1                          |
 | 4.0.0.x          | Unknown                     |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections - Range 2.0.0.x and 3.0.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>2.0.0.x and 3.0.0.x</td>
-<td>Serial main connection
-<p>The connector uses a serial connection and requires the following input during element creation:</p>
-<p>SERIAL CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device with value <em>api.worldweatheronline.com</em>.</li>
-<li><strong>IP port</strong>: The IP port of the device with value <em>80</em>.</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>4.0.0.x</td>
-<td>HTTP main connection
-<p>The connector uses an HTTP connection and requires the following input during element creation:</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP of the device with value <em>api.worldweatheronline.com</em>.</li>
-<li><strong>IP port</strong>: The IP port of the device with value <em>80</em>.</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+#### Serial main connection
+
+The connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- **IP address/host**: The polling IP of the device with value *api.worldweatheronline.com*.
+- **IP port**: The IP port of the device with value *80*.
+
+### Connections - Range 4.0.0.x
+
+#### HTTP main connection
+
+The connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP of the device with value *api.worldweatheronline.com*.
+- **IP port**: The IP port of the device with value *80*.
 
 ### Configuration (range 2.0.0.x and 3.0.0.x)
 

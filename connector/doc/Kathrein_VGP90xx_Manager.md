@@ -26,7 +26,7 @@ SNMP Settings:
 
   The default value is *161*. You can override this field per device by adding the port in the IP address column of the .csv import file.
 
-- **Get community string:** The community string in order to read from the device. The default value is *public*.
+- **Get community string**: The community string in order to read from the device. The default value is *public*.
 
   Note: This must be the same for all elements.
 

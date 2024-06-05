@@ -16,7 +16,7 @@ The connector can receive traps to update the channel and system events in real 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version  | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
@@ -28,7 +28,7 @@ The connector can receive traps to update the channel and system events in real 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -42,7 +42,7 @@ SMART-SERIAL CONNECTION:
 
 - **IP address/host**: The IP of the syslog proxy.
 - **Type of port:** UDP/IP
-- **IP port:** 514 (the default syslog port).
+- **IP port**: 514 (the default syslog port).
 
 ## How to use
 

@@ -12,15 +12,15 @@ This connector can be used to monitor and control Bridge Technologies VB288 devi
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                            | **Based on** | **System Impact**                                             |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                                             | \-           | \-                                                            |
-| 1.0.1.x              | \- Fix for duplicate keys. - New firmware version supported. - DCF interfaces implemented.                                                  | 1.0.0.2      | Supported firmware version: 5.1.0.4.                          |
-| 1.1.0.x              | \- New firmware version supported. - Unsupported parameters removed. - Audio and video parameters added to the multicast. - Services Table. | 1.0.1.1      | Supported firmware version: 5.4.0.4                           |
-| 1.2.0.x \[obsolete\] | New firmware version supported.                                                                                                             | 1.1.0.8      | Supported firmware version: 5.5.0-6.                          |
-| 1.2.1.x              | Correct alarm severity discrete parameter PID 1402.                                                                                         | 1.2.0.3      | Alarm monitoring on table Alarms PID 1400 should be reviewed. |
-| 1.2.2.x              | Change column descriptions: remove prefix and add table name at the end of the description.                                                 | 1.2.1.2      | Automation scripts should be reviewed.                        |
-| 1.3.2.x \[SLC Main\] | New firmware version supported.                                                                                                             | 1.2.2.6      | Supported firmware version: 6.1.                              |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | - Fix for duplicate keys. <br>- New firmware version supported. <br>- DCF interfaces implemented. | 1.0.0.2 | Supported firmware version: 5.1.0.4. |
+| 1.1.0.x | - New firmware version supported. <br>- Unsupported parameters removed. <br>- Audio and video parameters added to the multicast. <br>- Services Table. | 1.0.1.1 | Supported firmware version: 5.4.0.4 |
+| 1.2.0.x [Obsolete] | New firmware version supported. | 1.1.0.8 | Supported firmware version: 5.5.0-6. |
+| 1.2.1.x | Correct alarm severity discrete parameter PID 1402. | 1.2.0.3 | Alarm monitoring on table Alarms PID 1400 should be reviewed. |
+| 1.2.2.x | Change column descriptions: remove prefix and add table name at the end of the description. | 1.2.1.2 | Automation scripts should be reviewed. |
+| 1.3.2.x [SLC Main] | New firmware version supported. | 1.2.2.6 | Supported firmware version: 6.1. |
 
 ### Product Info
 
@@ -38,13 +38,13 @@ This connector can be used to monitor and control Bridge Technologies VB288 devi
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.2.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.2.2.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.3.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.1.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.2.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.2.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.2.2.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.3.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -57,8 +57,8 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - **IP port type:** TCP/IP
-- **IP address/host:** The polling IP of the device.
-- **IP port:** The port of the connected device, by default *80*.
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The port of the connected device, by default *80*.
 
 ## Usage
 

@@ -10,11 +10,11 @@ This connector can be used to monitor RAD LA-210 switches via SNMP.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                              | **Based on** | **System Impact**                                                                                                     |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | SNMP monitoring.                                                                                                                                              | \-           | \-                                                                                                                    |
-| 1.0.1.x \[Obsolete\] | DCF integration.                                                                                                                                              | 1.0.0.3      | Added DCF.                                                                                                            |
-| 1.0.2.x \[SLC Main\] | Conditional monitoring of alarms and CFM table. Added in/out discard rates for interface table and forward green/yellow packets for Service Statistics table. | 1.0.1.1      | Impact on custom reports or scripts calling Service Statistics or Interfaces table IDX or displayed columns directly. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | SNMP monitoring. | - | - |
+| 1.0.1.x [Obsolete] | DCF integration. | 1.0.0.3 | Added DCF. |
+| 1.0.2.x [SLC Main] | Conditional monitoring of alarms and CFM table. Added in/out discard rates for interface table and forward green/yellow packets for Service Statistics table. | 1.0.1.1 | Impact on custom reports or scripts calling Service Statistics or Interfaces table IDX or displayed columns directly. |
 
 ### Product Info
 
@@ -28,9 +28,9 @@ This connector can be used to monitor RAD LA-210 switches via SNMP.
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.0.1.x   | Yes                 | Yes                     | \-                    | \-                      |
-| 1.0.2.x   | Yes                 | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 

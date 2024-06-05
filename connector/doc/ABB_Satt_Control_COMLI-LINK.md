@@ -4,7 +4,7 @@ uid: Connector_help_ABB_Satt_Control_COMLI-LINK
 
 # ABB Satt Control COMLI-LINK
 
-This connector makes it possible to monitor and gather information from an **ABB** **Satt Control COMLI-LINK** controller.
+This connector makes it possible to monitor and gather information from an **ABB Satt Control COMLI-LINK** controller.
 
 ## About
 
@@ -26,25 +26,37 @@ Two types of **messages** are supported:
 
 ### Version Info
 
-| **Range** | **Description** |
-|------------------|-----------------|
-| 1.0.0.x          | Initial version |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware  |
+|-----------|---------------------|
+| 1.0.0.x   | -                   |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | See table below.        |
 
 ### Exported Connectors
 
-| **Exported Connector** | **Description**           |
-|-----------------------|---------------------------|
-| FM Transmitter        | FM Transmitter module     |
-| Audio Mux             | Audio Mux module          |
-| Generator             | Generator module          |
-| Rectifier             | Rectifier module          |
-| Environment           | Environment module        |
-| Receiver Ball         | Receiver Ball module      |
-| Satellite Receiver    | Satellite Receiver module |
+| Exported Connector | Description               |
+|--------------------|---------------------------|
+| FM Transmitter     | FM Transmitter module     |
+| Audio Mux          | Audio Mux module          |
+| Generator          | Generator module          |
+| Rectifier          | Rectifier module          |
+| Environment        | Environment module        |
+| Receiver Ball      | Receiver Ball module      |
+| Satellite Receiver | Satellite Receiver module |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### Serial main connection
 
@@ -58,9 +70,9 @@ SERIAL CONNECTION:
 
 PING SETTINGS:
 
-- **IP address/host:** The IP address used to ping the device's status. This is used to know if the device is actually in a timeout status.
+- **IP address/host**: The IP address used to ping the device's status. This is used to know if the device is actually in a timeout status.
 
-### Configuration
+### Initialization
 
 On the **Import** page, select the Excel file with all polling addresses to import, and click the **Import** button. For more information, refer to the "Import" section below.
 
@@ -110,4 +122,4 @@ For the connector to function correctly, **Microsoft Access Database Engine 2010
 
 Otherwise, the following exception will occur:
 
-\[InvalidOperationException: The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.\]
+`InvalidOperationException: The 'Microsoft.ACE.OLEDB.12.0' provider is not registered on the local machine.`

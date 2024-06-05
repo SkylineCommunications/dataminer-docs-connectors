@@ -15,7 +15,7 @@ This connector uses an **SNMP** connection to monitor Ciena CN6500 Platform devi
 | **Range**            | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version. Features interface data, equipment data, SNMP data, NMM topology, Nortel optical performance, and alarm data. | No                  | Yes                     |
-| 1.0.1.x \[SLC Main\] | DCF                                                                                                                            | Yes                 | Yes                     |
+| 1.0.1.x [SLC Main]   | DCF                                                                                                                            | Yes                 | Yes                     |
 
 ### Product Info
 

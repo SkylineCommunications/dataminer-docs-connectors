@@ -12,12 +12,12 @@ The connector handles communication through both **RS-232** and **RS-485** proto
 
 ### Version Info
 
-| **Range**            | **Description**                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version                                  | No                  | Yes                     |
-| 2.0.0.x              | New firmware based on 1.0.0.1, responses changed | No                  | Yes                     |
-| 3.0.0.x \[Obsolete\] | Branch version based on 2.0.0.x                  | No                  | Yes                     |
-| 4.0.0.x              | New firmware based on 2.0.0.1                    | No                  | Yes                     |
+| Range              | Description                                      | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version                                  | No              | Yes                 |
+| 2.0.0.x            | New firmware based on 1.0.0.1, responses changed | No              | Yes                 |
+| 3.0.0.x [Obsolete] | Branch version based on 2.0.0.x                  | No              | Yes                 |
+| 4.0.0.x            | New firmware based on 2.0.0.1                    | No              | Yes                 |
 
 ### Product Info
 

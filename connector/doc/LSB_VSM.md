@@ -14,15 +14,15 @@ LSB VSM uses a **smart-serial** connection, which means that it will register it
 
 ### Version Info
 
-| **Range**     | **Description**                                     | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version (customer-specific)                 | No                  | Yes                     |
-| 2.0.0.x              | \- Based on 1.0.0.x - Generic version               | No                  | Yes                     |
-| 2.0.1.x \[SLC Main\] | \- Based on 2.0.0.x - Added DCF support for layer 1 | Yes                 | Yes                     |
+| Range              | Description                                            | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version (customer-specific)                    | No              | Yes                 |
+| 2.0.0.x            | - Based on 1.0.0.x <br>- Generic version               | No              | Yes                 |
+| 2.0.1.x [SLC Main] | - Based on 2.0.0.x <br>- Added DCF support for layer 1 | Yes             | Yes                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**     |
+| Range     | Device Firmware Version         |
 |------------------|---------------------------------|
 | 1.0.0.x          | 16.1.2 Pro-bel SW-P-08 Issue 31 |
 | 2.0.0.x          | 16.1.2 Pro-bel SW-P-08 Issue 31 |

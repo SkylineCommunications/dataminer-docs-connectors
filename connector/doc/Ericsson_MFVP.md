@@ -21,101 +21,93 @@ The connector is capable of fully monitoring the Ericsson MediaFirst Video Proce
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                          | **Based on** | **System Impact**                                                                                                                        |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                                                                                                                                                                           | \-           | \-                                                                                                                                       |
-| 1.1.0.x              | \- Support for **HTTP** for general APIs (Alarms, Servers, Failover and Services API) - SRM integration - Major UI revision - Major data retrieval revision - POD deployment wizard                                                                                       | \-           | \-                                                                                                                                       |
-| 1.2.0.x \[SLC Main\] | \- Support for **HTTPS** **(via bearer token authentication)** for general APIs (Alarms, Servers, Failover and Services API) - Support for basic authentication for MDT API (optional) - General bug fix on data presentation - Replaced counter data by rate calculation | \-           | DO NOT USE VERSION 1.2.0.30 AND ABOVE FOR THE 1.2.0.x RANGE. THIS WILL CONTAIN A MAJOR CHANGE, WHICH WILL REQUIRE ELEMENT CONFIGURATION. |
-| 1.2.1.x              | \- Changes from the 1.2.0.x range up to version 1.2.0.33 - Uses extra connections to execute queries more efficiently.                                                                                                                                                    | 1.2.0.33     | \-                                                                                                                                       |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.1.0.x | - Support for **HTTP** for general APIs (Alarms, Servers, Failover and Services API) <br>- SRM integration <br>- Major UI revision <br>- Major data retrieval revision <br>- POD deployment wizard | - | - |
+| 1.2.0.x [SLC Main] | - Support for **HTTPS** **(via bearer token authentication)** for general APIs (Alarms, Servers, Failover and Services API) <br>- Support for basic authentication for MDT API (optional) <br>- General bug fix on data presentation <br>- Replaced counter data by rate calculation | - | DO NOT USE VERSION 1.2.0.30 AND ABOVE FOR THE 1.2.0.x RANGE. THIS WILL CONTAIN A MAJOR CHANGE, WHICH WILL REQUIRE ELEMENT CONFIGURATION. |
+| 1.2.1.x | - Changes from the 1.2.0.x range up to version 1.2.0.33 <br>- Uses extra connections to execute queries more efficiently. | 1.2.0.33 | - |
+| 1.3.1.x | - Support for new firmware | 1.2.1.18 | - |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                                                                       |
-|-----------|------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | \-                                                                                                                           |
-| 1.1.0.x   | Alarms API 2.1 Servers API 1.1 Failover API 1.0 **Services API 1.3 up to 1.6** MDT API 0.1.4.dev54547                        |
-| 1.2.0.x   | Product version support for v11 and v12 Alarms API 2.2 Servers API 1.2 Failover API 1.1 **Services API 1.6+** MDT API 0.1.42 |
-| 1.2.1.x   | Product version support for v11 and v12 Alarms API 2.2 Servers API 1.2 Failover API 1.1 **Services API 1.6+** MDT API 0.1.42 |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | - |
+| 1.1.0.x | Alarms API 2.1 <br>Servers API 1.1 <br>Failover API 1.0 <br>**Services API 1.3 up to 1.6** <br>MDT API 0.1.4.dev54547 |
+| 1.2.0.x | Product version support for v11 and v12 <br>Alarms API 2.2 <br>Servers API 1.2 <br>Failover API 1.1 <br>**Services API 1.6+** <br>MDT API 0.1.42 |
+| 1.2.1.x | Product version support for v11 and v12 <br>Alarms API 2.2 <br>Servers API 1.2 <br>Failover API 1.1 <br>**Services API 1.6+** <br>MDT API 0.1.42 |
+| 1.3.1.x | Product version support for v11 and v12 <br>Alarms API 3.1 <br>Servers API 1.6 <br>Failover API 1.2 <br>**Services API 1.9+** <br>MDT API 0.1.42 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.1.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.0.x   | No                  | Yes                     | \-                    | \-                      |
-| 1.2.1.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.3.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
-### Connections
+### Connections - Range 1.1.0.x
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Connections</strong></td>
-</tr>
-<tr class="even">
-<td>1.1.0.x</td>
-<td><p>This connector uses 2 HTTP connections and requires the following input during element creation.</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP port</strong>: The IP port of the destination (default = 30001).</li>
-</ul>
-<p>MDT API (HTTPS):</p>
-<ul>
-<li><strong>IP Address/Host</strong>: The polling IP or URL of the destination.</li>
-<li><strong>IP Port</strong>: The IP port of the destination (default = 80).</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td>1.2.0.x</td>
-<td><p>This connector uses 2 HTTPS connections and requires the following input during element creation.</p>
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: https://&lt;IP of the destination&gt;</li>
-<li><strong>IP port</strong>: The IP port of the destination (default = 30001).</li>
-</ul>
-<p>HTTPS Connection - MDT API:</p>
-<ul>
-<li><strong>IP Address/host</strong>: https://&lt;IP of the destination&gt;.</li>
-<li><strong>IP Port</strong>: The IP port of the destination (default = 443).</li>
-</ul>
-<p>For both connections to work, you will also need to go to element's Features page and specify the username and password for each connection.</p>
-<p>Note: The ports may vary depending on the implementation.</p></td>
-</tr>
-<tr class="even">
-<td>1.2.1.x</td>
-<td>This connector uses 5 HTTPS connections and requires the following input during element creation.
-<p>HTTP CONNECTION:</p>
-<ul>
-<li><strong>IP address/host</strong>: https://&lt;IP of the destination&gt;</li>
-<li><strong>IP port</strong>: The IP port of the destination (default = 30001).</li>
-</ul>
-<p>HTTPS Connection - MDT, STATS, CONFIG, and SOURCE APIs:</p>
-<ul>
-<li><strong>IP Address/host</strong>: https://&lt;IP of the destination&gt;.</li>
-<li><strong>IP Port</strong>: The IP port of the destination (default = 443).</li>
-</ul>
-<p>For all connections to work, you will also need to go to element's Features page and specify the username and password for each connection. The credentials used for the MDT API are also used for the STATS, CONFIG, and SOURCE connection.</p>
-<p>Note: The ports may vary depending on the implementation.</p></td>
-</tr>
-</tbody>
-</table>
+This connector uses 2 HTTP connections and requires the following input during element creation.
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default = 30001).
+
+MDT API (HTTPS):
+
+- **IP Address/Host**: The polling IP or URL of the destination.
+- **IP Port**: The IP port of the destination (default = 80).
+
+### Connections - Range 1.2.0.x
+
+This connector uses 2 HTTPS connections and requires the following input during element creation.
+
+HTTP CONNECTION:
+
+- **IP address/host**: https://&lt;IP of the destination&gt;
+- **IP port**: The IP port of the destination (default = 30001).
+
+HTTPS Connection - MDT API:
+
+- **IP Address/host**: https://&lt;IP of the destination&gt;.
+- **IP Port**: The IP port of the destination (default = 443).
+
+For both connections to work, you will also need to go to element's Features page and specify the username and password for each connection.
+
+Note: The ports may vary depending on the implementation.
+
+### Connections - Ranges 1.2.1.x & 1.3.1.x
+
+This connector uses 5 HTTPS connections and requires the following input during element creation.
+
+HTTP CONNECTION:
+
+- **IP address/host**: https://&lt;IP of the destination&gt;
+- **IP port**: The IP port of the destination (default = 30001).
+
+HTTPS Connection - MDT, STATS, CONFIG, and SOURCE APIs:
+
+- **IP Address/host**: https://&lt;IP of the destination&gt;.
+- **IP Port**: The IP port of the destination (default = 443).
+
+For all connections to work, you will also need to go to element's Features page and specify the username and password for each connection. The credentials used for the MDT API are also used for the STATS, CONFIG, and SOURCE connection.
+
+Note: The ports may vary depending on the implementation.
 
 ### Initialization - range 1.1.0.x
 
 After element creation, go to the **Features** page and enable or disable the different features according to your preference.
 
-If you encounter any issues after the element has been configured, check whether the **API Versions** parameter on the Features page matches the **supported** **firmware**.
+If you encounter any issues after the element has been configured, check whether the **API Versions** parameter on the Features page matches the **supported firmware**.
 
-### Initialization - range 1.2.0.x & 1.2.1.x
+### Initialization - range 1.2.0.x & 1.2.1.x & 1.3.1.x
 
 After element creation, go to the Features page and set the username and password for both API groups.
 
@@ -123,12 +115,12 @@ This system implementation covers two different HTTPS interfaces with different 
 
 - The **HTTP CONNECTION** using the **General API Credentials** has the following default credentials:
 
-- Username: *admin*
+  - Username: *admin*
   - Password: *admin*
 
 - The **HTTPS Connection - MDT API** using the **MDT API Credentials** has the following default credentials:
 
-- Username: *mdt-admin*
+  - Username: *mdt-admin*
   - Password: *changeme*
 
 NOTE: If the element is properly authenticated, but still some **400 HTTP Bad Requests** are identified in Stream Viewer, **use range 1.1.0.x** instead. In this kind of situation, an update action on behalf of the vendor is needed.

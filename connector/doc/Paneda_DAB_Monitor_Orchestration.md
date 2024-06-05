@@ -12,19 +12,19 @@ The **Paneda DAB Monitor Orchestration** connector can be used to orchestrate an
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x \[SLC Main\] | Initial version. | \-           | \-                |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Supported Firmware**                                                             |
+| Range     | Supported Firmware                                                                 |
 |-----------|------------------------------------------------------------------------------------|
-| 1.0.0.x   | \- Document revision: rev.79 - System version: h-2023-06-29 - Git commit: 61967b0c |
+| 1.0.0.x   | - Document revision: rev.79 <br>- System version: h-2023-06-29 <br>- Git commit: 61967b0c |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | \-                    | \-                      |
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -85,3 +85,21 @@ Configuring UDP proxies works in the same way as configuring DAB Monitors (see a
 ### Network Page
 
 The **Network** page provides a list of all available (VLAN) networks on the device. These networks can be assigned to an UDP proxy.
+
+To create or remove Macvlan networks, use the right-click menu of the table.
+
+When you create a new Macvlan network, you can include several configuration items by providing the list of configuration parameter values (Subnet, IP Range, and Gateway) as a comma-separated list. Make sure to include the same number of entries for Subnet, IP Range, and Gateway. For example, to add 2 configuration items, provide 2 subnets (separated by comma), 2 gateways (separated by comma), and 2 IP ranges (separated by comma).
+
+You can also configure multiple types and tags by providing a comma-separated list.
+
+### Users Page
+
+The **Users** page provides a list of all the orchestration users.
+
+To create, modify, or remove a user, use the right-click menu of the table.
+
+### Certificates Page
+
+The **Certificates** page provides the status of the TLS certificate slots.
+
+Via the right-click menu of the TLS Certificates table, you can install a TLS certificate (or replace an existing certificate with a new one) and delete the TLS certificate for a slot.

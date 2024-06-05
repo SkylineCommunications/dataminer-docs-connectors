@@ -12,19 +12,25 @@ The DIRIS Digiware D-50 is a master device on the RS485 bus and master on the DI
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-### Exported connectors
+### System Info
 
-| **Exported Connector**     | **Description**            |
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | See table below.        |
+
+### Exported Connectors
+
+| Exported Connector        | Description                |
 |---------------------------|----------------------------|
 | Socomec Diris D-50 - B-30 | Power Monitoring Device    |
 | Socomec Diris D-50 - I-60 | Current Measurement Module |
@@ -41,12 +47,15 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Direct connection:
+
   - **Baudrate**: Baudrate specified in the manual of the device.
   - **Databits**: Databits specified in the manual of the device.
   - **Stopbits**: Stopbits specified in the manual of the device.
   - **Parity**: Parity specified in the manual of the device.
   - **FlowControl**: FlowControl specified in the manual of the device.
+
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device.

@@ -16,15 +16,21 @@ This data should be aggregated and displayed by a CPE Manager. The data is not i
 
 ### Version Info
 
-| **Range** | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
-|------------------|------------------------------------|
-| 1.0.0.x          | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
+| Range   | Supported Firmware                 |
+|---------|------------------------------------|
+| 1.0.0.x | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 

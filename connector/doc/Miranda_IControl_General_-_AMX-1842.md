@@ -37,8 +37,6 @@ This page displays the **Input Signal**, **Audio Group** from 1 to 4, and the **
 
 This page displays the test parameters, such as, **Audio Video Test**, **Test on AES** from 1 to 4..
 
-Mute
+### Mute
 
 This page displays the AES Mute parameters status.
-
-

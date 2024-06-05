@@ -12,10 +12,10 @@ This connector allows you to interface with various modules. For an overview of 
 
 ### Version Info
 
-| **Range** | **Key Features** | **Based on** | **System Impact** |
+| Range     | Key Features     | Based on     | System Impact     |
 |--|--|--|--|
 | 1.0.0.x | Initial version | \- | \- |
-| 2.0.0.x \[SLC Main\] | Removed DVE generation. Instead the controller will generate standalone elements for connected modules. | \- | Most of the existing parameters are still available, but parameter IDs have changed. Existing alarm and trend templates will no longer work. New elements should be created when upgrading from 1.0.0.x to this range. |
+| 2.0.0.x [SLC Main]   | Removed DVE generation. Instead the controller will generate standalone elements for connected modules. | \- | Most of the existing parameters are still available, but parameter IDs have changed. Existing alarm and trend templates will no longer work. New elements should be created when upgrading from 1.0.0.x to this range. |
 
 ### Product Info
 

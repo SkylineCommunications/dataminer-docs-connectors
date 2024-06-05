@@ -12,30 +12,15 @@ This protocol can be used to monitor and control an IBM System x device. An **SN
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range   | Description     | DCF Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | Yes                 |
 
 ### Product Info
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Device Firmware Version</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x1.0.1.x</td>
-<td><p>IMM2: 1AOO58T 4.31</p>
-<p>UEFI: D7E142AUS 1.71</p>
-<p>DSA: DSYTD8G 9.54</p></td>
-</tr>
-</tbody>
-</table>
+| Range              | Supported Firmware                                              |
+|--------------------|-----------------------------------------------------------------|
+| 1.0.0.x<br>1.0.1.x | IMM2: 1AOO58T 4.31<br>UEFI: D7E142AUS 1.71<br>DSA: DSYTD8G 9.54 |
 
 ## Installation and configuration
 
@@ -47,13 +32,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP Address/host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
-- **Port Number:** The port of the connection device, by default *161*.
-- **Get community string:** The community string needed to read from the device. The default value is *public*.
-  **Set community string:** The community string needed to set to the device. The default value is *public*.
+- **Port number**: The port of the connection device, by default *161*.
+- **Get community string**: The community string needed to read from the device. The default value is *public*.
+- **Set community string:** The community string needed to set to the device. The default value is *public*.
 
 ## Usage
 

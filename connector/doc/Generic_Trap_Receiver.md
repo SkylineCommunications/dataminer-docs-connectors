@@ -12,8 +12,8 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 
 | **Range** | **Key Features**                                | **Based on** | **System Impact** |
 |-----------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                 | \-           | \-                |
-| 1.0.1.x   | Display traps in a table. Lookup functionality. | \-           | \-                |
+| 1.0.0.x   | Initial version                                 | -            | -                 |
+| 1.0.1.x   | Display traps in a table. Lookup functionality. | -            | -                 |
 
 ### Product Info
 
@@ -26,8 +26,8 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | \-                    | \-                      |
-| 1.0.1.x   | No                  | No                      | \-                    | \-                      |
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
 
 ## Configuration
 
@@ -39,11 +39,11 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP Address/Host:** The polling IP of the device.
+- **IP address/host**: The polling IP of the device.
 
 SNMP Settings:
 
-- **Port Number:** The port of the connection device (default: *161*).
+- **Port number**: The port of the connection device (default: *161*).
 
 ## Usage
 

@@ -6,25 +6,33 @@ uid: Connector_help_CISCO_RTT_MON
 
 The Cisco RTT Mon is used for measuring delay, jitter, and packet loss on the data network.
 
-## About
-
 This connector uses **SNMP** polling to communicate with the device.
+
+## About
 
 ### Version Info
 
-| **Range**    | **Description** | **DCF Integration** | **Cassandra Compliant** |
-|---------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x\[SLC Main\] | Initial Version | No                  | False                   |
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
 
-## Installation and Configuration
+### System Info
 
-#### SNMP Main Connection
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | No                      | -                     | -                       |
+
+## Configuration
+
+### Connections
+
+#### SNMP Connection- Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -35,8 +43,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device. By default 161.
-- **Get community string**: The community string used when reading values from the device. (default: public)
-- **Set community string**: The community string used when setting values on the device. (default: private)
+- **Get community string**: The community string used when reading values from the device (default: public).
+- **Set community string**: The community string used when setting values on the device (default: private).
 
 ## Usage
 
@@ -51,7 +59,3 @@ This page presents a table with **Jitter Statistics**.
 ### ICMP Jitter Statistics
 
 This page presents a table with **ICMP** **Jitter Statistics**.
-
-
-
-
