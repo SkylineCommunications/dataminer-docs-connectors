@@ -4,28 +4,29 @@ uid: Connector_help_Skyline_Logical_Layer
 
 # Skyline Logical Layer
 
-This connector give you the ability to subscribe on Parameter Values, Parameter Alarms, Element Alarms and View Alarms.
-With these values being updated in real time you can define conditions that will be evaluated on change and gives you a result that can be reused in DataMiner.
+With this connector, you can subscribe on parameter values, parameter alarms, element alarms, and view alarms in DataMiner.
+
+These values are updated in real time, and you can define conditions that will be evaluated as soon as a change happens. The result of these can then be reused in DataMiner.
 
 ## About
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Feature1</li><li>Feature2</li></ul>         |-         |-         |
+| Range              | Features         | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |No firmware         |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | N/A                |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -35,21 +36,14 @@ With these values being updated in real time you can define conditions that will
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
+## How to Use
 
-Indicate if additional configuration of parameters is necessary in a newly created element.
+To use this connector, you will need to install the Skyline Logical Layer package. This package contains the connector and an Automation script.
+The script is used to fill in data in the tables of the element. It is an interactive script that helps you select and populate the tables.
 
-## How to use
+The first thing you will need to do in the script is define Parameter Value, Element Alarm, or View Alarm Monitors. After that, you will need to define conditions.
 
-To be able to use this driver you will have to install the Skyline Logical Layer package.
-This package contains the connector and automation script.
-The AS is being used to be able to fill the tables with data, it's an interactive script that helps you select and populate the tables.
+Once you have set up the element as detailed above, it will show the following information:
 
-The first that should be done is defining Parameter Value, Element Alarm or View Alarm Monitors.
-Next is defining conditions, this can be done in the automation script as well.
-
-### Examples
-
-The **Conditions** page has 1 table with the defined conditions and the result and settings.
-
-The **Monitors** page has 3 tables for the Parameter Value, Element Alarm and the View Alarm Monitors.
+- The **Conditions** page displays a table with the defined conditions and the result and settings.
+- The **Monitors** page displays three tables, for the Parameter Value, Element Alarm, and View Alarm Monitors.
