@@ -38,16 +38,20 @@ This connector connects to a MySQL database and an archive database where data f
 
 ### Initialization
 
-To set up the MySQL connection, configure the following parameters on the General page of the element:
+To set up the MySQL connection to the _nms_ server with the config data, configure the following parameters on the General page of the element:
 
-- **Database Server**: The IP address of the MySQL server.
-- **Database User Name**: The user name of the account to log into the MySQL server.
-- **Database Password**: The password of the account to log into the MySQL server.
-- **Database Name**: The name of the database being accessed on the MySQL server.
+- **Database Config Server**: The IP address of the MySQL server.
+- **Database Config User Name**: The user name of the account to log into the MySQL server.
+- **Database Config Password**: The password of the account to log into the MySQL server.
+- **Database Config Name**: The name of the database being accessed on the MySQL server.
 
-The Site Count archive database queries the state_change_log table to update the net modem statuses.
+To set up the MySQL connection to the _nrd_archive_ server with the Site Count data, configure the following parameters on the General page of the element:
 
-The Congestion archive database queries the nms_group_qos_changes table to update the Group QOS and congestion data.
+- **Database Site Count Server**: The IP address of the MySQL archive server with the _state_change_log_ database table.
+- **Database Congestion Server**: The IP address of the MySQL archive server with the _nms_group_qos_stats_ database table.
+- **Database Archive User Name**: The user name of the account to log into the MySQL archive server.
+- **Database Archive Password**: The password of the account to log into the MySQL archive server.
+- **Database Archive Name**: The name of the database being accessed on the MySQL archive server.
 
 ## How to use
 
