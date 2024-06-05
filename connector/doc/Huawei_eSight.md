@@ -42,7 +42,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 ### Initialization
 
-For the connector to retrieve the desired information, it is necessary to set the proper credentials (username/password) in the **General page** once the element is initialize.
+For the connector to retrieve the desired information, it is necessary to set the proper credentials (username/password) in the **General page** once the element is initialized.
 
 ### Redundancy
 
