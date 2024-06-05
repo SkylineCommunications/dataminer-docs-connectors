@@ -38,19 +38,19 @@ This connector connects to a MySQL database and an archive database where data f
 
 ### Initialization
 
-To set up the MySQL connection to the _nms_ server with the config data, configure the following parameters on the General page of the element:
+To set up the MySQL connection to the *nms* server with the config data, configure the following parameters on the General page of the element:
 
 - **Database Config Server**: The IP address of the MySQL server.
-- **Database Config User Name**: The user name of the account to log into the MySQL server.
-- **Database Config Password**: The password of the account to log into the MySQL server.
+- **Database Config User Name**: The user name of the account to log in to the MySQL server.
+- **Database Config Password**: The password of the account to log in to the MySQL server.
 - **Database Config Name**: The name of the database being accessed on the MySQL server.
 
-To set up the MySQL connection to the _nrd_archive_ server with the Site Count data, configure the following parameters on the General page of the element:
+To set up the MySQL connection to the *nrd_archive* server with the site count data, configure the following parameters on the General page of the element:
 
-- **Database Site Count Server**: The IP address of the MySQL archive server with the _state_change_log_ database table.
-- **Database Congestion Server**: The IP address of the MySQL archive server with the _nms_group_qos_stats_ database table.
-- **Database Archive User Name**: The user name of the account to log into the MySQL archive server.
-- **Database Archive Password**: The password of the account to log into the MySQL archive server.
+- **Database Site Count Server**: The IP address of the MySQL archive server with the *state_change_log* database table.
+- **Database Congestion Server**: The IP address of the MySQL archive server with the *nms_group_qos_stats* database table.
+- **Database Archive User Name**: The user name of the account to log in to the MySQL archive server.
+- **Database Archive Password**: The password of the account to log in to the MySQL archive server.
 - **Database Archive Name**: The name of the database being accessed on the MySQL archive server.
 
 ## How to use
