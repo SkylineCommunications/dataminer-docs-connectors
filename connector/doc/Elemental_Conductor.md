@@ -12,12 +12,12 @@ The **Elemental Conductor** connector is an **HTTP** connector that is used to m
 
 ### Version Info
 
-| **Range** | **Description**                                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                               | No                  | Yes                     |
-| 1.0.1.x          | New connector range based on 1.0.0.13                            | No                  | Yes                     |
-| 1.1.0.x          | Remake of the connector, with similar layout as previous version | No                  | Yes                     |
-| 1.1.2.x          | Changes to the Channel Parameters page (possible custom range in investigation, do not use) | No                  | Yes                     |
+| **Range**        | **Description**                                                   | **DCF Integration** | **Cassandra Compliant** |
+|------------------|-------------------------------------------------------------------|---------------------|-------------------------|
+| 1.0.0.x          | Initial version.                                                  | No                  | Yes                     |
+| 1.0.1.x          | New connector range based on 1.0.0.13.                            | No                  | Yes                     |
+| 1.1.0.x          | Remake of the connector, with similar layout as previous version. | No                  | Yes                     |
+| 1.1.2.x [DO NOT USE] | Changes to the Channel Parameters page. (This is a possible custom range that is being investigated. Do not use this range yet.) | No      | Yes     |
 
 ### Product Info
 
