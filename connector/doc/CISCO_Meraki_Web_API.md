@@ -10,16 +10,18 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                         | **Based on** | **System Impact** |
-|-----------|----------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version Polling and Monitoring via Meraki API over HTTPS                                         | -            | -                 |
-| 2.0.0.x   | Virtual connector captures and processes webhook notifications automatic clearing of cleared/expired alarms | -            | -                 |
+| **Range**             | **Key Features**                                                                                               | **Based on** | **System Impact** |
+|-----------------------|----------------------------------------------------------------------------------------------------------------|--------------|-------------------|
+| 1.0.0.x (obsolete)    | Initial version Polling and Monitoring via Meraki API over HTTPS                                               | -            | -                 |
+| 1.1.0.x               | All commands from deprecated api/v0 have been updated to api/v1                                                | -            | -                 |
+| 2.0.0.x               | Virtual connector captures and processes webhook notifications automatic clearing of cleared/expired alarms    | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | Not Applicable         |
+| 1.1.0.x   | Not Applicable         |
 | 2.0.0.x   | Not Applicable         |
 
 ### System Info
@@ -27,9 +29,10 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 | 2.0.0.x   | No                  | No                      | -                     | -                       |
 
-## Configuration 1.0.0.X
+## Configuration 1.0.0.X, 1.1.0.X
 
 ### Cisco Meraki API Key
 
