@@ -10,17 +10,17 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 
 ### Version Info
 
-| **Range**            | **Key Features**                                             | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                             | -            | -                 |
-| 2.0.0.x              | TDC custom version.                                          | -            | -                 |
-| 3.0.0.x              | EPM I-DOCSIS Solution version.                               | -            | -                 |
-| 3.0.1.x              | Adjustment to the PNM logic, Channel Contextuality.          | -            | -                 |
-| 3.0.2.x              | CCAP logic decoupled.                                        | -            | -                 |
-| 3.0.3.x              | CM QAM DS/US logic adjusted for better aggregation accuracy. | -            | -                 |
-| 3.0.4.x              | Added minimum DMA version for NuGet Packages.                | -            | -                 |
-| 3.0.5.x              | Modifications to improve performance.                        | -            | -                 |
-| 3.0.6.x [SLC Main]   | New threshold logic.                                         | -            | -                 |
+| Range              | Key Features                                                 | Based on | System Impact |
+|--------------------|--------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                             | -        | -             |
+| 2.0.0.x            | TDC custom version.                                          | -        | -             |
+| 3.0.0.x            | EPM I-DOCSIS Solution version.                               | -        | -             |
+| 3.0.1.x            | Adjustment to the PNM logic, Channel Contextuality.          | -        | -             |
+| 3.0.2.x            | CCAP logic decoupled.                                        | -        | -             |
+| 3.0.3.x            | CM QAM DS/US logic adjusted for better aggregation accuracy. | -        | -             |
+| 3.0.4.x            | Added minimum DMA version for NuGet Packages.                | -        | -             |
+| 3.0.5.x            | Modifications to improve performance.                        | -        | -             |
+| 3.0.6.x [SLC Main] | New threshold logic.                                         | -        | -             |
 
 ### Product Info
 
@@ -90,21 +90,34 @@ After the collector element is created, all configuration should be done via the
 
 In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available, one for upstream and one for downstream.
 
+The QAM thresholds tables are located under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**.
+
 These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
 
 - **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
 - **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
 
-These are the available Key Performance Indicators (KPIs) for setting downstream thresholds:
+These are the available KPIs for setting downstream thresholds:
 
 - **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
 - **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
 - **Minimum SNR Level**: Range from 0 to 100 dB.
 - **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
 
-When you click the **Apply** button, the status of the specified Key Performance Indicators (KPIs) in the CM table will be updated.
+When you click the **Apply** button, the status of the specified KPIs in the CM table will be updated.
 
 The minimum value for the Rx and Tx thresholds cannot exceed the maximum boundary; the connector will restrict attempts to set such values.
+
+Under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**, you will also find the PNM threshold parameters.<!-- RN 39603 -->
+
+These are the available PNM parameters that can be modified:
+
+- **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
+- **Non-Main-Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
+- **Post-Main-Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
+- **Pre-Main-Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
+
+When you click the **Apply** button, the status of the specified PNM KPIs in the CM table will be updated.
 
 ## Usage
 
