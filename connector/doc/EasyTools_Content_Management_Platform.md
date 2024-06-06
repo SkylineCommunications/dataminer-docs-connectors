@@ -77,7 +77,7 @@ This page displays information regarding the **Configured Nodes**.
 
 This page displays information regarding the **Configured Functions**, **Configured Operations**, and **Operation Transcode AAC** that are created in the device.
 
-By default, the **Display Key** of the **Configured Operations** table contains the **Function Name** to which the given operation belongs. If the **Operation Name** is needed to be part of the Display Key, the user has to set the **Operation Display Key Format** parameter to the value **{ID}/{Type}/{Operation Name}**.
+By default, the **display key** of the **Configured Operations** table contains the **Function Name** for the given operation. If you need the **Operation Name** to be part of the display key, set the **Operation Display Key Format** parameter to the value **{ID}/{Type}/{Operation Name}**.
 
 > [!NOTE]
 > If you want alarms to be triggered for datetime parameters such as the Last Up/Down columns, you will need to calculate the numeric value for a specific date and use that in the alarm template.
