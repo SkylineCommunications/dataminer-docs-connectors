@@ -4,7 +4,9 @@ uid: Connector_help_directOut_PRODIGY.MP
 
 # directOut PRODIGY.MP
 
-This connector monitors **PRODIGY.MP** (Modular Audio Processor) through its custom TCP API. PRODIGY.MP is DirectOut's modular audio processor, designed to address numerous applications in live sound, broadcast, installation and recording. It provides flexible I/O, dual network audio, DSP functions, sample rate conversion and powerful hard- and software. Fully modular, the hardware can be configured to specific requirements.
+This connector monitors **PRODIGY.MP** (Modular Audio Processor) through its custom TCP API.
+
+PRODIGY.MP is DirectOut's modular audio processor, designed to address numerous applications in live sound, broadcast, installation, and recording. It provides flexible I/O, dual network audio, DSP functions, sample rate conversion, and powerful hardware and software. Fully modular, the hardware can be configured to specific requirements.
 
 ## About
 
@@ -53,7 +55,7 @@ The remaining pages display status and settings data:
 
 - General page: Contains system information data.
 - Matrix page and subpages: Contains information about inputs/outputs.
-- DSP page and subpages: Contains data about the Input Managers, Audio Delays, Sum Buses, Flex Channels, Automix and Mixers.
+- DSP page and subpages: Contains data about the Input Managers, Audio Delays, Sum Buses, Flex Channels, Automix, and Mixers.
 - Status page and subpages: Contains all the status-related data.
 - Settings page and subpages: Contains all the data related to settings.
 - IP Config page: Contains the IP configuration parameters.
