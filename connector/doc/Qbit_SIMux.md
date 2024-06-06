@@ -4,7 +4,7 @@ uid: Connector_help_Qbit_SIMux
 
 # Qbit SIMux
 
-The **Qbit SI Multiplexer** is used to configure the *Service Information* data within transport streams on individual PID level. From multiple inputs, it's possible to define per PID from which input it will be used by using the PID groups available on the device.
+The **Qbit SI Multiplexer** is used to configure the service information data within transport streams on individual PID level. Per PID, it is possible to define which of the multiple inputs will be used, by using the PID groups available on the device.
 
 The **Qbit SIMux** connector shows status information for the device and can be used to configure the device.
 
@@ -43,7 +43,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-To be able to access the device, specify a correct username and password under the **General**/**Authentication** page.
+To be able to access the device, specify a correct username and password on the **General** > **Authentication** page.
 
 ## How to use
 
@@ -53,7 +53,7 @@ The following pages are available:
 - On the **Versions** page, you can find the current image and software versions.
 - The **Interfaces** page shows a list of all available interfaces.
 - The **Inputs** page contains a table with different types of inputs and the included PID configurations.
-- The **PID Groups** page contains a table with all PID Groups.
-- The **Outputs** page contains a list of all configured outputs. An output must have a reference to a PID group (PID Groups table).
+- The **PID Groups** page contains a table with all PID groups.
+- The **Outputs** page contains a list of all configured outputs. An output must have a reference to a PID group (in the PID Groups table).
 
-Most of the tables have a right-click menu available that offers extra functionality such as adding, editing or deleting an entry.
+Most of the tables have a right-click menu available that offers extra functionality such as adding, editing, or deleting an entry.
