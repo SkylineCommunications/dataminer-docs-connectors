@@ -18,7 +18,7 @@ The **Elemental Conductor** connector is an **HTTP** connector that is used to m
 | 1.0.1.x          | New connector range based on 1.0.0.13.                            | No                  | Yes                     |
 | 1.1.0.x          | Remake of the connector, with similar layout as previous version. | No                  | Yes                     |
 | 1.1.2.x [DO NOT USE] | Changes to the Channel Parameters page. (This is a possible custom range that is being investigated, but which should not be used.) | No      | Yes     |
-| 1.1.3.x [SLC MAIN]| Revert desing issues created in 1.1.2.X                           | No                  | Yes                     |
+| 1.1.3.x [SLC MAIN] | Design issues created in 1.1.2.x reverted.                           | No                  | Yes                     |
 
 ### Product Info
 
