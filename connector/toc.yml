@@ -6802,6 +6802,8 @@
     topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
+  - name: Qbit SIMux
+    topicUid: Connector_help_Qbit_SIMux
 - name: Qligent
   items:
   - name: Qligent Vision
