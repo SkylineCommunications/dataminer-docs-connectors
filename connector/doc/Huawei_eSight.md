@@ -5,7 +5,8 @@ uid: Connector_help_Huawei_eSight
 # Huawei eSight
 
 eSight is an enterprise-oriented O&M management solution. It implements converged management and provides centralized management, visualized monitoring, and analysis for enterprise ICT devices.
-This connector purpose is to monitor the devices information and status, and the alarms currently present in the system.
+
+With this connector, you can monitor device information, status information, and alarms for this solution.
 
 ## About
 
@@ -17,9 +18,9 @@ This connector purpose is to monitor the devices information and status, and the
 
 ### Product Info
 
-| Range     | Supported Firmware                                   |
-|-----------|------------------------------------------------------|
-| 1.0.0.x   | 21.2.0 |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 21.2.0             |
 
 ### System Info
 
@@ -42,16 +43,12 @@ This connector uses an HTTP connection and requires the following input during e
 
 ### Initialization
 
-For the connector to retrieve the desired information, it is necessary to set the proper credentials (username/password) in the **General page** once the element is initialized.
-
-### Redundancy
-
-There is no redundancy defined.
+To make sure the connector can retrieve information, go to the **General** page of the element and enter the username and password to log in to the API.
 
 ## How to use
 
-In the **General** page, the parameters (username/password) required for login to the API can be found.
+The **General** page contains the parameters to log in to the API, as required during element initialization.
 
 The **Devices** page shows the relevant information about each device within the system and its status.
 
-The **Alarms** page contains every alarm which has not been uncleared yet, the serial number attached to it, its severity, description, and more relevant information about it.
+The **Alarms** page contains every alarm that has not been cleared yet, the serial number attached to it, its severity, its description, and other relevant information.
