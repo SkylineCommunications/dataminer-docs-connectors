@@ -14,13 +14,17 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 |--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
 | 1.0.0.x            | Initial version.                                                                               | -        | -             |
 | 1.0.1.x [SLC Main] | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
+| 1.0.2.x            | Change for the PK on the Encoder and Gateway IP Output table, adapted layout                   | 1.0.1.10 | -             |
+| 1.1.0.x            | Changed API St5ructure to match device new software version                                    | 1.0.2.3  | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | API v0.1               |
-| 1.0.1.x   | 2.11.1                 |
+| 1.0.1.x   | API v0.1               |
+| 1.0.2.x   | API v0.1               |
+| 1.1.0.x   | API ??? Software v3.0.2|
 
 ### System Info
 
@@ -28,6 +32,9 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>Ateme Titan Edge - Gateway |
 | 1.0.1.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
+| 1.0.2.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
+| 1.1.0.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
+
 
 ## Configuration
 
