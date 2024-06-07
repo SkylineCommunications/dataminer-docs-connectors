@@ -2600,6 +2600,8 @@
     topicUid: Connector_help_directOut_Prodigy
   - name: directOut PRODIGY.MC
     topicUid: Connector_help_directOut_PRODIGY.MC
+  - name: directOut PRODIGY.MP
+    topicUid: Connector_help_directOut_PRODIGY.MP
   - name: directOut PRODIGY.MX
     topicUid: Connector_help_directOut_PRODIGY.MX
 - name: Discovery Networks Europe
@@ -4386,6 +4388,8 @@
     topicUid: Connector_help_Huawei_5600-5800_GPON_Platform
   - name: Huawei 5688-5800 CCAP Platform
     topicUid: Connector_help_Huawei_5688-5800_CCAP_Platform
+  - name: Huawei eSight
+    topicUid: Connector_help_Huawei_eSight
   - name: Huawei FusionCube
     topicUid: Connector_help_Huawei_FusionCube
   - name: Huawei iBMC
@@ -5236,6 +5240,8 @@
     topicUid: Connector_help_Measat_Tie_Line_Manager
   - name: Measat Tie Line Manager Service Feed
     topicUid: Connector_help_Measat_Tie_Line_Manager_Service_Feed
+  - name: Measat VSAT Broadband Management
+    topicUid: Connector_help_Measat_VSAT_Broadband_Management
 - name: Media Excel
   items:
   - name: Media Excel Hero Management System
@@ -6800,6 +6806,8 @@
     topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
+  - name: Qbit SIMux
+    topicUid: Connector_help_Qbit_SIMux
 - name: Qligent
   items:
   - name: Qligent Vision
@@ -7812,6 +7820,8 @@
     topicUid: Connector_help_Skyline_Job_Manager
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline Logical Layer
+    topicUid: Connector_help_Skyline_Logical_Layer
   - name: Skyline MDC Service Monitoring
     topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch
