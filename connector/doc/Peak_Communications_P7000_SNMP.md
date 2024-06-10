@@ -77,11 +77,11 @@ This page contains the **Faults Table**, which displays alarms and complete info
 
 ### UPC
 
-This page displays UPC parameters, some of which can be configured by the user. It also contains the **UPC Channels table**.
+This page displays UPC parameters, some of which can be configured, as well as the **UPC Channels table**.
 
 ### Configuration
 
-This page displays the Ethernet and Redundancy parameters, which can be configured by the user.
+On this page, you can view and configure the Ethernet and Redundancy parameters.
 
 ### WebInterface
 
