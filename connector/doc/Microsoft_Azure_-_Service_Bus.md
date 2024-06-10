@@ -68,7 +68,7 @@ This is how the filter works, based on an example where the metric contains the 
 
   `filter=A eq 'a1' and B eq '' and C eq ''`
 
-- If multiple entities are present in same namespace filter can be utilized to use only one
+- If multiple entities are present in the same namespace, a filter can be utilized to use only one:
 
   `filter=entityname eq 'prod'`
 
