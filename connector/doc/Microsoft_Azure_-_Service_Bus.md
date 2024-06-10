@@ -72,7 +72,7 @@ This is how the filter works, based on an example where the metric contains the 
 
   `filter=entityname eq 'prod'`
 
-  The following metrics support filtering by EntityName:
+  The following metrics support filtering by entity name:
 
   - Abandoned Messages
   - Active Messages
