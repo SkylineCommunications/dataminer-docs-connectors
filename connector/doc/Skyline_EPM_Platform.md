@@ -100,7 +100,8 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | -  | -  |
 | 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
 | 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
-| 1.0.10.x [SLC Main] | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.10.x  | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.11.x [SLC Main] | Removing extra hyphens from threshold page | -  | -  |
 
 ### Product Info
 
@@ -117,6 +118,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x   | N/A                    |
 | 1.0.9.x   | N/A                    |
 | 1.0.10.x  | N/A                    |
+| 1.0.11.x  | N/A                    |
 
 ### System Info
 
@@ -133,6 +135,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.9.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.10.x  | No                  | Yes                     | -                     | -                       |
+| 1.0.11.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -197,9 +200,9 @@ Under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**, you
 These are the available PNM parameters that can be modified:
 
 - **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
-- **Non-Main-Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
-- **Post-Main-Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
-- **Pre-Main-Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
+- **Non-Main Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
+- **Post-Main Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
+- **Pre-Main Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
 
 ## How to Use
 
