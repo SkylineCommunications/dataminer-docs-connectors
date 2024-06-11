@@ -42,7 +42,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
-  - **Bus address**: The bus address of the device. The connector uses this to create commands.
+  - **Bus address**: The bus address of the device. The connector uses this to create commands. (*Decimal Value Range*: 32 to 57)
 
 > [!NOTE]
 > The default value for *Timeout of a single command* is set to 2000 ms and the default value for *Number of retries* is set to 1.
