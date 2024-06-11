@@ -1568,6 +1568,8 @@
   items:
   - name: beIN Arvato VPMS Doha
     topicUid: Connector_help_beIN_Arvato_VPMS
+  - name: beIN ESVC Feed Request
+    topicUid: Connector_help_beIN_ESVC_Feed_Request
   - name: beIN GPIO Mapping
     topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
