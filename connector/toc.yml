@@ -4047,7 +4047,9 @@
   - name: Globecast France Enhanced DTM Channel Service
     topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
   - name: Globecast France Enhanced Single Destination Transport Service
-    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service 
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
+  - name: Globecast France Enhanced 4 DTM Single Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_4_DTM_Single_Destination_Transport_Service
 - name: Globecomm
   items:
   - name: Globecomm iDirect Shore Side Server
