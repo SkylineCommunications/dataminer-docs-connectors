@@ -3750,6 +3750,8 @@
     topicUid: Connector_help_GatesAir_Maxiva_XTE_MSC3
   - name: GatesAir Maxiva XTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_XTE_Transmitter
+  - name: GatesAir MSCx DD Dual Drive Controller
+    topicUid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
 - name: Geist
   items:
   - name: Geist ATS
