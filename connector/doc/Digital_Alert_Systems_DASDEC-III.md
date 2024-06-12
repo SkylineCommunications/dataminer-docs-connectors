@@ -3,7 +3,7 @@ uid: Connector_help_DASDEC-III
 ---
 
 
-# Digitial Alert Systems DASDEC-III
+# Digital Alert Systems DASDEC-III
 
 The purpose of this connector is to receive alerts from the DASDEC-III. It will act as a server using the smart-serial protocol. It can log received messages to an elastic database. To forward alerts, SCP via public-private key authentication must be used.
 
@@ -64,9 +64,9 @@ On this page, you can generate the SSH Public/Private key pair and configure the
 ### Alerts
 
 This page contains the **Mandatory Open Alerts** and the **Voluntary Open Alerts** tables. Each alert contains a countdown. Once the countdown reaches zero different actions will occur depending on the type of alert:
--EAN, NPT, RMT - Message will be forwarded/sent to **Alert Logging** table
--RWT - Message will be forwarded based on last message countdown and then sent to **Alert Logging** table
--All other messages: Message will not be forwarded and be sent to **Alert Logging** table.
+-EAN, NPT, RMT - Message will be forwarded to DASDEC/moved to **Alert Logging** table
+-RWT - Message will be forwarded to DASDEC based on last message countdown and then moved to **Alert Logging** table
+-All other messages: Message will not be forwarded to DASDEC and be moved to **Alert Logging** table with a status of "expired".
 Do note that the operator can manually forward a message at any time using the "Approve" button
 
 Also contains "Alert Logging" page button
