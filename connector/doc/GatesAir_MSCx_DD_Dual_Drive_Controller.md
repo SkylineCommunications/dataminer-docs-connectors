@@ -4,7 +4,7 @@ uid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
 
 # GatesAir MSCx DD Dual Driver Controller
 
-This connector monitors information from the GatesAir MSCx Dual Drive Controller. The Controller is a multisystem control platform that extends the redundancy capabilities of GatesAir transmitters.
+This connector monitors information from the GatesAir MSCx Dual Drive Controller. This controller is a multisystem control platform that extends the redundancy capabilities of GatesAir transmitters.
 
 ## About
 
@@ -44,18 +44,10 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
 
-The element contains generic parameters and configuration on the **General** page, while the **Status** page displays KPIs for the overall **System**, **Power**, **Output** and **Drive Chain**.
+The element contains generic parameters and configuration on the **General** page, while the **Status** page displays KPIs for the overall **System**, **Power**, **Output**, and **Drive Chain**.
