@@ -14,8 +14,8 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 |--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
 | 1.0.0.x            | Initial version.                                                                               | -        | -             |
 | 1.0.1.x [SLC Main] | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
-| 1.0.2.x            | Change for the PK on the Encoder and Gateway IP Output table, adapted layout                   | 1.0.1.10 | -             |
-| 1.1.0.x            | Changed API St5ructure to match device new software version                                    | 1.0.2.3  | -             |
+| 1.0.2.x            | Encoder and Gateway IP Output table PK changed. Layout adapted.                                | 1.0.1.10 | -             |
+| 1.1.0.x            | API structure changed to match new software version device.                                    | 1.0.2.3  | -             |
 
 ### Product Info
 
