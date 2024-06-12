@@ -101,7 +101,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
 | 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
 | 1.0.10.x  | Tables ordered in the same way as on the overview page. | -  | -  |
-| 1.0.11.x [SLC Main] | Removing extra hyphens from threshold page | -  | -  |
+| 1.0.11.x [SLC Main] | Removed extra hyphens from thresholds page. | -  | -  |
 
 ### Product Info
 
