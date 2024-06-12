@@ -69,3 +69,10 @@ On the **General** page of this connector, you can initialize the **API Token** 
 The **Debug** page contains basic information about the communication with the device, as well as specific logs for every entry.
 
 The **Transport Aggregated Data** page contains aggregated telemetry information from the DAB monitor for the transport layer, as well as a button for clearing the counters.
+
+The **STC Aggregated Data (Stream Characterization Observations)** page contains aggregated stream characterization observation which describe the layout of the streams, number of streams, length and error protection.
+
+The **MST Aggregated Data (Main Stream Observations)** page contains aggregated main stream observations, this information describes content characteristics of the streams.
+
+The **File Sotrage** page contains information about the file storage log for recored files.
+
