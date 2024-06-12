@@ -21,7 +21,7 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 | 3.0.4.x            | Added minimum DMA version for NuGet Packages.                | -        | -             |
 | 3.0.5.x            | Modifications to improve performance.                        | -        | -             |
 | 3.0.6.x            | New threshold logic.                                         | -        | -             |
-| 3.0.7.x [SLC Main] | Removing hyphens from threshold setting                      | -        | -             |
+| 3.0.7.x [SLC Main] | Removed hyphens from threshold settings.                     | -        | -             |
 
 ### Product Info
 
