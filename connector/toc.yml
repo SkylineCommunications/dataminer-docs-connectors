@@ -8914,6 +8914,8 @@
   items:
   - name: Telestream Inspect 2110
     topicUid: Connector_help_Telestream_Inspect_2110
+  - name: Telestream Lightspeed Live Stream
+    topicUid: Connector_help_Telestream_Lightspeed_Live_Stream
   - name: Telestream OptiQ
     topicUid: Connector_help_Telestream_OptiQ
   - name: Telestream SPG9000
