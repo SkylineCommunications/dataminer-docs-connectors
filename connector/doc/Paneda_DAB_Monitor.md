@@ -70,9 +70,8 @@ The **Debug** page contains basic information about the communication with the d
 
 The **Transport Aggregated Data** page contains aggregated telemetry information from the DAB monitor for the transport layer, as well as a button for clearing the counters.
 
-The **STC Aggregated Data (Stream Characterization Observations)** page contains aggregated stream characterization observation which describe the layout of the streams, number of streams, length and error protection.
+The **STC Aggregated Data (Stream Characterization Observations)** page contains aggregated stream characterization observations, which describe the layout of the streams, number of streams, length, and error protection.
 
-The **MST Aggregated Data (Main Stream Observations)** page contains aggregated main stream observations, this information describes content characteristics of the streams.
+The **MST Aggregated Data (Main Stream Observations)** page contains aggregated main stream observations, which describe content characteristics of the streams.
 
-The **File Sotrage** page contains information about the file storage log for recored files.
-
+The **File Storage** page contains information about the file storage log for recorded files.
