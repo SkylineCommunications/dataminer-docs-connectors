@@ -19,12 +19,12 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | API v0.1               |
-| 1.0.1.x   | API v0.1               |
-| 1.0.2.x   | API v0.1               |
-| 1.1.0.x   | API unknown Software v3.0.2|
+| Range   | Supported Firmware             |
+|---------|--------------------------------|
+| 1.0.0.x | API v0.1                       |
+| 1.0.1.x | API v0.1                       |
+| 1.0.2.x | API v0.1                       |
+| 1.1.0.x | API unknown  - Software v3.0.2 |
 
 ### System Info
 

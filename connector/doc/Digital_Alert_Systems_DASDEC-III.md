@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_DASDEC-III
+uid: Connector_help_Digital_Alert_Systems_DASDEC-III
 ---
 
 
@@ -50,7 +50,7 @@ To perform the public-private key initialization, follow these steps:
 
 1. On the **General** page, click the **Generate Keys** button.
 
-   This will generate a private key file in C:\Skyline DataMiner\Documents\\DASDEC\privatekey as well as a public key in the **Public Key** parameter.
+   This will generate a private key file in `C:\Skyline DataMiner\Documents\DASDEC\privatekey` as well as a public key in the **Public Key** parameter.
 
 1. In the DASDEC web GUI, navigate to **Setup** > **Security**, and change the **SSH Key Type** in the dropdown list to RSA.
 
@@ -75,24 +75,20 @@ This page also contains the following page buttons:
 
 ### Alerts
 
-This page contains the **Mandatory Open Alerts** and the **Voluntary Open Alerts** tables. Each alert contains a countdown. Once the countdown reaches zero different actions will occur depending on the type of alert:
--EAN, NPT, RMT - Message will be forwarded to DASDEC/moved to **Alert Logging** table
--RWT - Message will be forwarded to DASDEC based on last message countdown and then moved to **Alert Logging** table
--All other messages: Message will not be forwarded to DASDEC and be moved to **Alert Logging** table with a status of "expired".
-Do note that the operator can manually forward a message at any time using the "Approve" button
+This page contains the **Mandatory Open Alerts** and the **Voluntary Open Alerts** tables.
 
-Each alert has a countdown. Once the countdown reaches zero, different actions can occur depending on the type of alert:
+Each alert contains a countdown. Once the countdown reaches zero, different actions can occur depending on the type of alert:
 
-- EAN, NPT, RMT: A message will be forwarded/sent to the **Alert Logging** table.
-- RWT: A message will be forwarded based on last message countdown and then sent to **Alert Logging** table.
-- All other messages: Message will not be forwarded and be sent to **Alert Logging** table.
+- EAN, NPT, RMT: The message will be forwarded to DASDEC/sent to the **Alert Logging** table
+- RWT: The message will be forwarded to DASDEC based on the last message countdown and then moved to the **Alert Logging** table
+- All other messages: The message will not be forwarded to DASDEC, and it will be moved to the **Alert Logging** table with the status "expired".
 
-Note that the operator can manually forward a message at any time using the **Approve** button
+Note that the operator can manually forward a message at any time using the **Approve** button.
 
-Via the  **Alert Logging** page button, you can access the Alert Logging table as well as various configuration parameters.
+Via the **Alert Logging** page button, you can access the Alert Logging table as well as various configuration parameters.
 
 ### Debug
 
 This page contains the last received message.
 
-You can also trigger an RWT here by filling in all required Net parameters. You can also trigger an Automatic RWT, which will automatically send an RWT every 7 days.
+You can trigger an RWT here by filling in all required Net parameters. You can also trigger an automatic RWT, which will automatically send an RWT every 7 days.
