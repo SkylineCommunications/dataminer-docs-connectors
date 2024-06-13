@@ -47,3 +47,43 @@ Once you have set up the element as detailed above, it will show the following i
 
 - The **Conditions** page displays a table with the defined conditions and the result and settings.
 - The **Monitors** page displays three tables, for the Parameter Value, Element Alarm, and View Alarm Monitors.
+
+### Condition Syntax
+
+Every comparison has to be started and closed with `< >`.
+
+Example: `<Number==5>`
+
+The following operators can be used for comparisons:
+
+- `=`
+- `!`
+- `<`
+- `>`
+
+You can also use the following combinations:
+
+- `==`
+- `!=`
+- `<=`
+- `>=`
+
+You can also start with an exclamation mark to inverse the used condition: `<!ConditionName>`
+
+Combining multiple comparisons is possible with the keywords `and`, `or`, and `not` (`not` will be translated to `and not`).
+
+Examples:
+
+- `<Number==5>and<String==Test>`
+
+- `<Number==5>not<ConditionName>`
+
+  This can also be written like this: `<Number==5>and<!ConditionName>`
+
+- `<String==Test>or<Discreet==Disconnected>`
+
+Any of the monitors can be used in a condition.
+
+Conditions can be reused inside other conditions.
+
+To make use of the static variables, prefix the name with `@`: `<Number==@StaticNumber>`
