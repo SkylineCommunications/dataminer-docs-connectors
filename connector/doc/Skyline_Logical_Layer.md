@@ -87,3 +87,9 @@ Any of the monitors can be used in a condition.
 Conditions can be reused inside other conditions.
 
 To make use of the static variables, prefix the name with `@`: `<Number==@StaticNumber>`
+
+Brackets are also supported
+
+Example:
+
+- `(<Condition1> or <Condition2>) and <Condition3>`
