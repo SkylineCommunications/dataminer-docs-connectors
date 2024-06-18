@@ -4,21 +4,23 @@ uid: Connector_help_Skyline_EPM_Platform_Availability
 
 # Skyline EPM Platform Availability
 
-The Skyline **EPM Platform Availability** is an EPM Manger to be used with the **Skyline Platform Collector** driver. The driver manages all the endpoints and ping statistics from the entire system and maintains relational information and aggregated data to be viewed from a central **Frontend** element and the DataMiner topology app.
+The Skyline EPM Platform Availability is an EPM Manager that is intended to be used with the **Skyline Platform Collector** connector.
+
+This connector manages all the endpoints and ping statistics from the entire system and maintains relational information and aggregated data that can be viewed from a central front-end element and from the DataMiner Topology app.
 
 ## About
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |Initial Version         |-         |-         |
+| Range              | Features         | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -30,28 +32,42 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-All of the following is handled by the EPM Setup Wizard automation script in the EPM TOOLS folder.
+If you use the **EPM Setup Wizard** Automation script in the EPM TOOLS folder, the initialization detailed below is handled automatically.
 
-If manually creating the managers the following steps are needed:
+If you create the managers manually without the script, follow these steps:
 
-1. Create a single **Frontend** element and change the **Element Manager Type** to **Frontend** in the **Configuration** page. Then fill in the **Import Settings** with the import directory in which the MASTER_PING.csv file is located and fill in the **Export Settings** where the **Backend** elements will be importing from.
+1. Create a single **front-end element** and configure it as follows:
 
-2. Create however many **Backend** elements are needed. Typically, the **Frontend** element should be on it's own DMA and a Backened element on all other DMA's. If the DMS only consists of one DMA, then it may have the one **Frontend** and one **Backend** element.
+   1. On the **Configuration** page, change the **Element Manager Type** to *Frontend*.
 
-3. Fill in the **Import Settings** in the **Configuration** page with the directory where the **Frontend** is exporting and the **Export Settings** with the directory where the **Collectors** will be importing from.
+   1. In the **Import Settings**, fill in the import directory where the MASTER_PING.csv file is located.
 
-4. In the **Frontend**, fill in the **Frontend Registration** table with the DMA ID/Element ID of the **Frontend** element. Then fill in the **Backend Registration** table with all of the DMA ID/Element ID's of all the **Backend** elements in the system. Finally, fill in the **Collector Registration** table with all of the DMA ID/Element ID's of all the **Collector** elements in the system.
+   1. In the **Export Settings**, fill in the location from which the **back-end** elements will be importing.
 
-5. For all of the **Backend** elements, fill in the **Backend Registration** table with the DMA ID/Element ID of the current **Backend** element and the **Collector Registration** table with the DMA ID/Element ID's of all the **Collector** elements on the same DMA.
+1. Create as many **back-end elements** as needed.
 
-6. Hit the **Import** button on the ****Frontend**** element's **Configuration** page to begin the provisioning.
+   Typically, the front-end element should be on a DMA of its own, and there should be a back-end element on all other DMAs. If the DMS only consists of one DMA, then it can have one front-end and one back-end element.
 
-### Redundancy
+1. In the **Import Settings** on the **Configuration** page of the back-end elements, fill in the directory where the front-end element will export.
 
-There is no redundancy defined.
+1. In the **Export Settings** on the **Configuration** page of the back-end elements, fill in the directory from which the collectors will import.
 
+1. In the **front-end** element, fill in the necessary DMA ID/Element IDs:
 
+   - In **Frontend Registration** table, fill in the DMA ID/Element ID of the front-end element.
+
+   - In the **Backend Registration** table, fill in all DMA ID/Element IDs of the back-end elements in the system.
+
+   - In the **Collector Registration** table, fill in all DMA ID/Element IDs of the collector elements in the system.
+
+1. In the **back-end** elements, fill in the necessary DMA ID/Element IDs:
+
+   - In the **Backend Registration** table, fill in the DMA ID/Element ID of the current back-end element.
+
+   - In the **Collector Registration** table, fill in all DMA ID/Element IDs of the collector elements on the **same DMA**.
+
+1. On the **Configuration** page of the *front-end* element, click the **Import** button to begin the provisioning.
 
 ## How to use
 
-Once the **EPM Manager** elements are configured, the only necesarry procedure is to have the **Frontend** element import the MASTER_PING.csv file whenever there is a change to the file.
+Once the EPM Manager elements have been configured, the only necessary procedure is for the front-end element to import the MASTER_PING.csv file whenever there is a change to the file.

@@ -10,17 +10,15 @@ This collector will ping various endpoints provided by the Availability EPM mana
 
 ### Version Info
 
-**This subsection can only be omitted for an exported connector**
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |Initial version         |-         |-         |
+| Range              | Features         | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -32,14 +30,10 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-For the collector to import which endpoints it needs to ping, the **Import Settings** section in the **Configuration** page need to be properly filled out with the correct directory and user information if importing from a remote directory.
+To import the endpoints the collector needs to ping, in the **Import Settings** section on the **Configuration** page, fill in the correct directory, as well as user information in case you will import from a remote directory.
 
-This will automatically be filled out after using the EPM Setup Wizard script.
-
-### Redundancy
-
-There is no redundancy defined.
+If you use the **EPM Setup Wizard** script, this will be filled in automatically.
 
 ## How to use
 
-This driver is a self sufficient collector to be used with the **Skyline EPM Platform Availability** driver.
+This is a self-sufficient connector that is intended to be used with the **Skyline EPM Platform Availability** connector.
