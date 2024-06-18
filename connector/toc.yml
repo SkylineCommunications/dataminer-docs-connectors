@@ -2590,6 +2590,10 @@
   items:
   - name: Digimetrics Aurora
     topicUid: Connector_help_Digimetrics_Aurora
+- name: Digital Alert Systems
+  items:
+  - name: Digital Alert Systems DASDEC-III
+    topicUid: Connector_help_Digital_Alert_Systems_DASDEC-III
 - name: Dimetis
   items:
   - name: Dimetis BOSS Stream Viewer
