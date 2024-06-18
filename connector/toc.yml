@@ -7710,6 +7710,8 @@
   items:
   - name: Skyline Automation Performance Monitor
     topicUid: Connector_help_Skyline_Automation_Performance_Monitor
+  - name: Skyline Availability Platform
+    topicUid: Connector_help_Skyline_Availability_Platform
   - name: Skyline Basic SDN Controller
     topicUid: Connector_help_Skyline_Basic_SDN_Controller
   - name: Skyline Bookings Monitoring
@@ -7764,6 +7766,8 @@
     topicUid: Connector_help_Skyline_Enhanced_Service
   - name: Skyline EPM Platform
     topicUid: Connector_help_Skyline_EPM_Platform
+  - name: Skyline EPM Platform Availability
+    topicUid: Connector_help_Skyline_EPM_Platform_Availability
   - name: Skyline EPM Platform DOCSIS
     topicUid: Connector_help_Skyline_EPM_Platform_DOCSIS
   - name: Skyline EPM Platform DOCSIS WM
