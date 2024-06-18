@@ -14,8 +14,9 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x | New version because of invalid connector integration. | - | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
+| 1.0.2.x | New version because of InterApp update to 1.0.1.x. | - | InterApp communication possibly not backwards compatible. |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 |-----------|------------------------|
 | 1.0.0.x   | API 0.1                |
 | 1.0.1.x   | API 0.1                |
+| 1.0.2.x   | API 0.1                |
 
 ### System Info
 
@@ -30,6 +32,7 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

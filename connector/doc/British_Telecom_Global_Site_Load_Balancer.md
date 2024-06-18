@@ -10,9 +10,9 @@ This connector allows you to monitor and control an automatic global site load b
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                       | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | \- Initial version. - Load balancer table to check the active location and location status. - Control table for each server to start/stop it. - Functionality to export/import the host mapping table. | -            | -                 |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Initial version. <br>- Load balancer table to check the active location and location status. <br>- Control table for each server to start/stop it. <br>- Functionality to export/import the host mapping table. | - | - |
 
 ### Product Info
 

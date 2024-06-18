@@ -16,28 +16,30 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Version Info
 
-| **Range**     | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                               | No                  | No                      |
-| 1.0.1.x              | Added support for software version 2.3 (Module GT11).          | No                  | No                      |
-| 1.1.0.x [SLC Main]   | Added HTTP connection for retrieving QAM outputs and services. | No                  | No                      |
+| Range              | Description                                                                          | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                     | No              | No                  |
+| 1.0.1.x            | Added support for software version 2.3 (Module GT11).                                | No              | No                  |
+| 1.1.0.x            | Added HTTP connection for retrieving QAM outputs and services.                       | No              | No                  |
+| 1.1.1.x [SLC Main] | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.4.1                       |
-| 1.0.1.x          | 2.3 3.0.1                   |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.4.1                      |
+| 1.0.1.x | 2.3<br>3.0.1               |
+| 1.1.1.x | 2.3<br>3.0.1               |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description** |
-|-----------------------|-----------------|
-| WISI Tangram GT21     | GT21 table      |
-| WISI Tangram GT22     | GT22 table      |
-| WISI Tangram GT23     | GT23 table      |
-| WISI Tangram GT31     | GT31 table      |
-| WISI Tangram GT41     | GT41 table      |
+| Exported Connector | Description |
+|--------------------|-------------|
+| WISI Tangram GT21  | GT21 table  |
+| WISI Tangram GT22  | GT22 table  |
+| WISI Tangram GT23  | GT23 table  |
+| WISI Tangram GT31  | GT31 table  |
+| WISI Tangram GT41  | GT41 table  |
 
 ### Module Types
 
@@ -50,11 +52,11 @@ The connector supports the following types:
 - **GT31**
 - **GT41**
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### SNMP Main connection
+#### SNMP Main Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -68,7 +70,7 @@ SNMP Settings:
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private*.
 
-#### UDP/IP Syslog connection
+#### UDP/IP Syslog Connection
 
 This connector uses a Syslog connection and requires the following input during element creation:
 
@@ -78,7 +80,7 @@ UDP/IP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The port of the connected device, by default *514*.
 
-#### HTTP HTTP Connection Connection
+#### HTTP Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -88,13 +90,17 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination, by default *80*.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Configuration
+### Initialization
 
 On the **Modules page** of the main element, the IP addresses of the modules are automatically retrieved (from SW-Version 1.4cr4).
 
 The IPs can also be configured manually, but then the value will be overwritten if the controller returns another IP address. If a module does not contain an IP, no specific information is retrieved for this module.
 
-## Usage
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to Use
 
 The WISI Tangram connector creates a main element, which provides information on the chassis status and a module overview, and dynamic virtual elements for each supported module. The name of these DVEs consists of the **Main Element Name** followed by the relevant **Module Number** and **Type**, for instance *TG01 M3 (GT22)*.
 
@@ -106,7 +112,7 @@ On this page, you can find general information about the basic unit as well as m
 
 This page displays the **Modules** table, which contains a list of all SFM/MFM modules within the GT01/GN50 rack unit.
 
-For each entry of type GT21, GT22, GT23 and GT41, the **IP Address** and the **DVE Name** can be configured.
+For each entry of type GT21, GT22, GT23, and GT41, the **IP Address** and the **DVE Name** can be configured.
 
 ### Switch
 
@@ -143,7 +149,7 @@ This page displays every **Input** and **Output** for every card on slots 1 to 6
 
 ### Supported Card Types
 
-This page contains several tables, one for each card type **GT21**, **GT22,** **GT23,** **GT31** and **GT41**. Each row will generate a DVE.
+This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**, and **GT41**. Each row will generate a DVE.
 
 ### Webpage
 
