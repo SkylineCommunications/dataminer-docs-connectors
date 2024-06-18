@@ -6,11 +6,29 @@ uid: Connector_help_Socomec_BCMS720
 
 The **Socomec BCMS 720** is a robust and compact device that is used to monitor up to 72 single-phase branch circuits.
 
-## About
-
 With this connector, you can monitor and configure **Socomec BCMS720** devices with a **serial** connection. The serial connection uses the Modbus RTU protocol with 9600 bds.
 
 The different parameters of the device are displayed on multiple pages.
+
+## About
+
+### Version Info
+
+| Range              | Key Features                          | Based on | System Impact |
+|--------------------|---------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version                       | -        | -             |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Installation and configuration
 

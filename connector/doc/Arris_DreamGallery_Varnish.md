@@ -8,13 +8,13 @@ The Arris DreamGallery Varnish is part of the Arris DreamGallery connector. This
 
 ## About
 
-The Arris DreamGallery Varnish connector will get the varnish stats and will display them on the Varnish page. To get these stats there is a serial connection used where there will be an SSH connection created on.
+The Arris DreamGallery Varnish connector will get the varnish stats and will display them on the Varnish page. To get these stats, an **SSH** connection is used.
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-This connector uses a **serial** connection and needs following user information:
+This connector uses a **serial** connection and needs the following input during element creation:
 
 **SERIAL CONNECTION**:
 
@@ -26,10 +26,10 @@ This connector uses a **serial** connection and needs following user information
 
 ### Varnish Page
 
-On this page the varnish stats are displayed.
+On this page, the varnish stats are displayed.
 
 ### Settings Page
 
-On this page the settings to set up the SSH connection are available. The **User** **Name** and **Password** parameter need to be filled in, in order for the SSH connection to be set up.
+On this page, the settings to set up the SSH connection are available. The **User Name** and **Password** parameter need to be filled in, in order for the SSH connection to be set up.
 
 Once this connection is set up, the varnish stats can be retrieved.

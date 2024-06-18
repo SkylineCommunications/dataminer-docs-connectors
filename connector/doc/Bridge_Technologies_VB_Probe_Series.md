@@ -16,13 +16,14 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 |--|--|--|--|
 | 1.0.0.x | - Monitoring of ETR-enabled **streams/services/PIDs**. <br>- Monitoring of **ETR checks**. <br>- Monitoring of **OTT channels** and **OTT profiles**. <br>- Monitoring of the probe **alarms** with precise probe times match (history set). | - | - |
 | 1.1.0.x | - **Ethernet streams provisioning** from **Automation script**. | 1.0.0.x | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
-| **1.1.1.x \[SLC Main\]** | - InterApp Messages available via NuGet package. | 1.1.0.x | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code. |
+| 1.1.1.x | - InterApp Messages available via NuGet package. | 1.1.0.x | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code. |
+| **1.2.0.x [SLC Main]** | - | 1.1.1.x | Minimum required DataMiner version brought up to 10.2.0.0. |
 
 ### Product Info
 
 | Range | Supported Firmware |
 |--|--|
-| 1.0.0.x / 1.1.0.x | **Firmware 5.4** or higher is required, and the following probe models are supported:<br>- Bridge Technologies VB120<br>- Bridge Technologies VB220<br>- Bridge Technologies VB240<br>- Bridge Technologies VB242<br>- Bridge Technologies VB250<br>- Bridge Technologies VB252<br>- Bridge Technologies VB260<br>- Bridge Technologies VB262<br>- Bridge Technologies VB270<br>- Bridge Technologies VB272<br>- Bridge Technologies VB330 |
+| 1.0.0.x / 1.1.0.x | **Firmware 5.4** or higher is required, and the following probe models are supported:<br>- Bridge Technologies VB120<br>- Bridge Technologies VB220<br>- Bridge Technologies VB240<br>- Bridge Technologies VB242<br>- Bridge Technologies VB250<br>- Bridge Technologies VB252<br>- Bridge Technologies VB260<br>- Bridge Technologies VB262<br>- Bridge Technologies VB270<br>- Bridge Technologies VB272<br>- Bridge Technologies VB330<br>- Bridge Technologies VB258 |
 
 ### System Info
 
@@ -31,6 +32,7 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.1.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -72,7 +74,7 @@ Once the element has been created in DataMiner, the **Element Configuration** pa
 
 ### Redundancy
 
-There is no redundancy defined.
+You can access RF redundancy on the Redundancy page. The active input can only be set while *Manual* mode is active.
 
 ### Web Interface
 

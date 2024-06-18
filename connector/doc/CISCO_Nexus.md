@@ -21,9 +21,10 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 | 3.0.1.x **[Obsolete - see 3.0.2.x]** | Removed duplicate Interfaces table introduced in 3.0.0.24. | Yes | Yes |
 | 3.0.2.x **[Obsolete - see 3.0.3.x]** | Changed display key of interface tables. Changed API polling table to a complete polling table. | Yes | Yes |
 | 3.0.3.x **[Obsolete - see 3.0.4.x]** | Reworked VTP VLAN table to support both SNMP and NX API polling. | Yes | Yes |
-| 3.0.4.x | Improved display keys of RTP Flow and RTP Flow Errors tables. | Yes | Yes |
+| 3.0.4.x **[Obsolete - see 3.0.5.x]** | Improved display keys of RTP Flow and RTP Flow Errors tables. | Yes | Yes |
 | 3.0.5.x [SLC Main] | OpenConfig implementation. | Yes | Yes |
-| 4.0.0.x | SNMPv3 version (based on version 1.0.0.9). | No | Yes |
+| 3.0.6.x **[Obsolete - see 3.0.5.x]** | Added VRF group information and rework for IGMP table, Multicast Route Detail table, and BGP Peer tables.| Yes |Yes |
+
 
 ### Product Info
 
@@ -38,7 +39,7 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 | 3.0.3.x   | 7.0(8)N1(1)            |
 | 3.0.4.x   | 7.0(8)N1(1)            |
 | 3.0.5.x   | 7.0(8)N1(1)            |
-| 4.0.0.x   | 7.0(8)N1(1)            |
+| 3.0.6.x   | 7.0(8)N1(1)            |
 
 ## Configuration
 
@@ -98,6 +99,9 @@ To configure OpenConfig, fill in these parameters on the **OpenConfig Settings**
 - Data Source User Name
 - Data Source Password
 - Client Certificate (optional)
+
+> [!NOTE]
+> OpenConfig should only be used with CISCO Nexus devices running version 10.2(7)/10.3(4) or higher. When OpenConfig is used in a DataMiner System with multiple Agents, you currently have to make sure you only have one Communication Gateway DxM active in the system (pending a fix to avoid that every Communication Gateway will make a connection).
 
 ### Sensor
 
