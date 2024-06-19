@@ -49,7 +49,8 @@ Once you have set up the element as detailed above, it will show the following i
 - The **Monitors** page displays three tables, for the Parameter Value, Element Alarm, and View Alarm Monitors.
 
 The connector supports importing CSV files that are exported with the build in export table function in DataMiner.
-For the Parameter Value Monitors table, the export file has to contains the hidden columns as well.
+For the Parameter Value Monitors table, the import will be based on the element name that was filled in.
+The import will fail if any of the entries isn't correct.
 
 ### Condition Syntax
 
