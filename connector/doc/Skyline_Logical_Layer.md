@@ -48,10 +48,7 @@ Once you have set up the element as detailed above, it will show the following i
 - The **Conditions** page displays a table with the defined conditions and the result and settings.
 - The **Monitors** page displays three tables, for the Parameter Value, Element Alarm, and View Alarm Monitors.
 
-The connector supports importing CSV files that are exported with the build in export table function in DataMiner.
-For the Parameter Value Monitors table, the import will be based on the element name that was filled in.
-The import will fail if any of the entries isn't correct.
-The file has to be available from the server, like the documents folder of dataminer.
+The connector supports **importing** CSV files that have been exported with the built-in DataMiner table export function. For the **Parameter Value Monitors** table, the import will be based on the element name that was filled in. The import will fail if any of the entries is not correct. The file has to be available from the server, e.g. in the DataMiner Documents folder.
 
 ### Condition Syntax
 
@@ -93,8 +90,4 @@ Conditions can be reused inside other conditions.
 
 To make use of the static variables, prefix the name with `@`: `<Number==@StaticNumber>`
 
-Brackets are also supported
-
-Example:
-
-- `(<Condition1> or <Condition2>) and <Condition3>`
+Brackets are also supported. Example: `(<Condition1> or <Condition2>) and <Condition3>`
