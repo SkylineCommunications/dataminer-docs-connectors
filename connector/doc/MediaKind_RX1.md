@@ -17,7 +17,8 @@ The MediaKind RX1 connector focuses on monitoring the configuration found in the
 | 1.0.0.x | Initial version (monitoring of configuration parameters). | - | - |
 | 1.0.1.x | Configurable display key on Active Alarms. | 1.0.0.3 | May affect visual overviews, Automation scripts, trending, alarms, etc. |
 | 1.0.1.x [SLC Main] | - Decryption Table display key updated.<br>- SDI Outputs table columns are now writable.<br>- Video and Audio status columns.<br>- Decoding service selection. | 1.0.1.8 | May affect visual overviews, Automation scripts, alarms, etc. |
-| 1.1.0.x | - Updated the JSON properties that have been changed.<br>- Program number, IP sources, Source Addresses are now writable.<br>- Added DCF interfaces<br>- Updated the discreets in the Redundancy Mode parameter. | 1.0.2.5 | Not backwards compatible with older versions. SDI Outputs table will not be filled because of the mismatch. |
+| 1.1.0.x | - Changed JSON properties have been updated.<br>- Program number, IP sources, and source addresses are now editable.<br>- DCF interfaces added.<br>- Redundancy Mode parameter discreets updated. | 1.0.2.5 | Not backwards compatible with older versions. SDI Outputs table will not be filled in because of the mismatch. |
+
 ### Product Info
 
 | Range     | Supported Firmware     |
