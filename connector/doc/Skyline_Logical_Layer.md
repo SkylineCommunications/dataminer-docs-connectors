@@ -51,6 +51,7 @@ Once you have set up the element as detailed above, it will show the following i
 The connector supports importing CSV files that are exported with the build in export table function in DataMiner.
 For the Parameter Value Monitors table, the import will be based on the element name that was filled in.
 The import will fail if any of the entries isn't correct.
+The file has to be available from the server, like the documents folder of dataminer.
 
 ### Condition Syntax
 
