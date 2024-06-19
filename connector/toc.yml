@@ -2018,6 +2018,8 @@
     topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
   - name: Ciena 5170 Packetwave Platform
     topicUid: Connector_help_Ciena_5170_Packetwave_Platform
+  - name: Ciena 8114
+    topicUid: Connector_help_Ciena_8114
   - name: Ciena 8700 Packetwave Platform
     topicUid: Connector_help_Ciena_8700_Packetwave_Platform
   - name: Ciena Blue Planet MCP NMS
