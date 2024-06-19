@@ -48,6 +48,9 @@ Once you have set up the element as detailed above, it will show the following i
 - The **Conditions** page displays a table with the defined conditions and the result and settings.
 - The **Monitors** page displays three tables, for the Parameter Value, Element Alarm, and View Alarm Monitors.
 
+The connector supports importing CSV files that are exported with the build in export table function in DataMiner.
+For the Parameter Value Monitors table, the export file has to contains the hidden columns as well.
+
 ### Condition Syntax
 
 Every comparison has to be started and closed with `< >`.
