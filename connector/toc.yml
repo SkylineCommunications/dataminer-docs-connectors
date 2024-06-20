@@ -7612,6 +7612,8 @@
     topicUid: Connector_help_Singtel_ANTlabs_Tru_Auth_Radius
   - name: SingTel Event Manager
     topicUid: Connector_help_SingTel_Event_Manager
+  - name: Singtel Events Ingest Manager
+    topicUid: Connector_help_SingTel_Events_Ingest_Manager
   - name: SingTel ForeTV CMS Generator
     topicUid: Connector_help_SingTel_ForeTV_CMS_Generator
   - name: SingTel ForeTV Event Manager
