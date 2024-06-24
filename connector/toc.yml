@@ -9388,6 +9388,8 @@
     topicUid: Connector_help_Viavi_Solutions_ONMSi
   - name: Viavi Solutions VSA Streamer
     topicUid: Connector_help_Viavi_Solutions_VSA_Streamer
+  - name: Viavi Solutions XPERTrak
+    topicUid: Connector_help_Viavi_Solutions_XPERTrak
 - name: Victron
   items:
   - name: Victron UPS
