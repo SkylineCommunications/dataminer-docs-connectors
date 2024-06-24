@@ -4,11 +4,11 @@ uid: Connector_help_Viavi_Solutions_XPERTrak
 
 # Viavi Solutions XPERTrak
 
-The **Viavi Solutions XPERTrak** is is a Spectrum Analyzer connector. It polls the data from the RCIs and displayes desired trace from the Upstreamports list.
+The Viavi Solutions XPERTrak is a Spectrum Analyzer connector. It polls data from the RCIs and allows you to view a specific trace from the upstream ports.
+
+This connector will initially poll the data for an RCI, upon which it will poll the data from the ports from that RCI. Each port can be selected, and its trace will be requested from the API that will be shown in the list. A page with data about the RCI is also available.
 
 ## About
-
-This connector will initially poll the data for RCI, upon which will poll the data from the ports from that RCI. Each port can be selected and it's trace will be requested from the API which will be shown on the list. Also, a page containing data about the RCI is available.
 
 ### Version Info
 
@@ -38,18 +38,20 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination.]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
-
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
 
-Credentials needed for system authentication are needed. Username nad password can be put in on the configuration page.
+When you have created the element, on the **Configuration** page, fill in the **Username** and **Password** required for system authentication.
 
 ## How to use
 
-After initial driver authentication and authorization, driver will poll the list of all available RCIs. Selected RCI can be changed on the configuration page. From the selected RCI, all available ports will be requested and they will be presented on General page in the Upstreamports table.
-Each port can be individually opened and the trace from that port will be requested and shown on Spectrum Analyzer page.
+After the initial connector authentication and authorization, the connector will poll the list of all available RCIs. On the **Configuration** page, you can change which RCI is selected.
 
-On the status parameter on the General page, status of the polling is shown, and can be tracked real-time.
+All available ports will be requested from the selected RCI, and they will be displayed on the **General** page in the **Upstreamports** table.
+
+You can open each port individually. The trace from that port will be requested and shown on the **Spectrum Analyzer** page.
+
+On the **General** page, the status parameter shows the status of the polling and allows you to track this in real time.
