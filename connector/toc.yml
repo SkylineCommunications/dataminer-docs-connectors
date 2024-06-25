@@ -8178,6 +8178,8 @@
     topicUid: Connector_help_SpacePath_Communications_SPC1100
   - name: SpacePath Communications STx Series
     topicUid: Connector_help_SpacePath_Communications_STx_Series
+  - name: SpacePath Communications STA5000 Series
+    topicUid: Connector_help_SpacePath_Communications_STA5000_Series
 - name: Specialty Microwave Corp
   items:
   - name: Specialty Microwave Corp 11464-507
