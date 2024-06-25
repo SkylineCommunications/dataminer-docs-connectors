@@ -64,4 +64,4 @@ The connector is only used for monitoring, so no special settings are required.
 
 ## Notes
 
-This connector has been developed using the information available in version 6.0 of the API. The connector is monitoring the configuration of the device and the status of the signals.
+This connector has been developed using the information available in version 6.0 of the API. The connector monitors the configuration of the device and the status of the signals.
