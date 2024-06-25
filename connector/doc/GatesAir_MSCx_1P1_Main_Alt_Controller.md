@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_GatesAir_MCSx_1P1_Main_Alt_Controller
+uid: Connector_help_GatesAir_MSCx_1P1_Main_Alt_Controller
 ---
 
-# GatesAir MCSx 1P1 Main Alt Controller
+# GatesAir MSCx 1P1 Main Alt Controller
 
-The GatesAir MCSx 1P1 Main Alt Controller is designed for seamless broadcast transmission control, with redundancy to ensure uninterrupted operation.
+The GatesAir MSCx 1P1 Main Alt Controller is designed for seamless broadcast transmission control, with redundancy to ensure uninterrupted operation.
 
 ## About
 

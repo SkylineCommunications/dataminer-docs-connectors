@@ -3756,8 +3756,8 @@
     topicUid: Connector_help_GatesAir_Maxiva_XTE_MSC3
   - name: GatesAir Maxiva XTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_XTE_Transmitter
-  - name: GatesAir MCSx 1P1 Main Alt Controller
-    topicUid: Connector_help_GatesAir_MCSx_1P1_Main_Alt_Controller
+  - name: GatesAir MSCx 1P1 Main Alt Controller
+    topicUid: Connector_help_GatesAir_MSCx_1P1_Main_Alt_Controller
   - name: GatesAir MSCx DD Dual Drive Controller
     topicUid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
 - name: Geist
