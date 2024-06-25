@@ -21,13 +21,16 @@ Based on the type of card, different tables and parameters are available in the 
 
 ### Version Info
 
-| **Range**            | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]     |Initial version                                                | Yes                 | No                      |
-| 2.0.0.x [Obsolete]     |Yes                                                            | No                  |                         |
-| 2.0.1.x [Obsolete]     |Yes                                                            | No                  |                         |
-| 3.0.0.x [SLC Main]   | Stripped version with new firmware. Serial connection removed. | Yes                 | No                      |
+| **Range**                                | **Description**                                               | **DCF Integration** | **Cassandra Compliant** |
+|------------------------------------------|---------------------------------------------------------------|---------------------|-------------------------|
+| 1.0.0.x [Obsolete]                       |Initial version                                                | Yes                 | No                      |
+| 2.0.0.x [Obsolete]                       |Yes                                                            | No                  |                         |
+| 2.0.1.x [SLC Main]                       |Yes                                                            | No                  |                         |
+| 3.0.0.x [Obsolete - Customer Specific]   |Stripped version with new firmware. Serial connection removed. | Yes                 | No                      |
 
+## NOTE: 
+- Previously, 3.0.0.X was considered to be the main range. After some thought, it was decided to revert back to 2.0.1.X. 3.0.0.x is a stripped down version of the connector that doesn't include the matrix and some more functionality.
+   
 ## Configuration
 
 ### Connections
