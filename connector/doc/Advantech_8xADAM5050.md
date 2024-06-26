@@ -4,9 +4,9 @@ uid: Connector_help_Advantech_8xADAM5050
 
 # Advantech 8xADAM5050
 
-The 8xADAM-5050 features sixteen digital input channels for the 8 modules available on the device, summing up to a great total of 128 inputs in the Status table. The switches can be used to control solid-state relays, which in turn can control heaters, pumps, and power equipment. The ADAM-5000 can use the module's digital inputs to determine the state of limit or safety switches, or to receive remote digital signals.
+The 8xADAM-5050 features sixteen digital input channels for the 8 modules available on the device, summing up to a total of 128 inputs in the Status table. The switches can be used to control solid-state relays, which in turn can control heaters, pumps, and power equipment. The ADAM-5000 can use the module's digital inputs to determine the state of limit or safety switches, or to receive remote digital signals.
 
-The connector uses **serial** communication with the device. It is possible to invert the mode line.
+This connector uses **serial** communication with the device. It is possible to invert the mode line.
 
 ## About
 
@@ -28,7 +28,6 @@ The connector uses **serial** communication with the device. It is possible to i
 |-----------|---------------------|-------------------------|----------------------|------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                    | -                      |
 
-
 ## Configuration
 
 ### Connections
@@ -46,8 +45,6 @@ SERIAL CONNECTION:
 
 ## Usage
 
-This connector consists of a table **Status** on the **General** page.
+On the **General** page, the connector displays a **Status** table, with all 16 channels for the 8 modules. The table has 128 entries showing the current status of the input and allowing you to configure it.
 
-On that page, you can find all 16 channels for the 8 modules. The table has 128 entries where is possible to see the current status of the input and set it.
-
-This connector also has InterApp available to do remote sets from a different connector.
+This connector makes use of InterApp functionality to allow remote sets from a different connector.
