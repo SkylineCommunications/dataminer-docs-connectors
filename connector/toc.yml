@@ -7534,6 +7534,8 @@
     topicUid: Connector_help_ServiceHeroes_ServiceHighway
 - name: ServiceNow
   items:
+  - name: ServiceNow Authenticator
+    topicUid: Connector_help_ServiceNow_Authenticator
   - name: ServiceNow Tables
     topicUid: Connector_help_ServiceNow_Tables
 - name: SES
