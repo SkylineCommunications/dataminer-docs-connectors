@@ -4806,6 +4806,8 @@
     topicUid: Connector_help_IRT_IRPC_Series
   - name: IRT SSPA Series
     topicUid: Connector_help_IRT_SSPA_Series
+  - name: IRT DLRC
+    topicUid: Connector_help_IRT_DLRC
 - name: Itelco
   items:
   - name: Itelco DVB-T2 Modulator
