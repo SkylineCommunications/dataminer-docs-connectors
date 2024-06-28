@@ -102,7 +102,7 @@ The web interface is only accessible when the client machine has network access 
 
 This connector provides a monitoring and configuration interface for the **Techex MWCore Platform.** It allows you to perform operations on monitored **Devices**, **Channels**, **MWEdges**, **Streams**, and **Input** and **Output Sources**.
 
-The **IP Connection - Statistics Interface** provides statistics information for the input sources and output sources, including ETR290 statistics data**.**
+The **IP Connection - Statistics Interface** provides statistics information for the input sources and output sources, including ETR290 statistics data.
 
 **REST API** calls are used to establish communication with the server.
 
