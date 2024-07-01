@@ -27,6 +27,7 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 | 1.0.2.x | API v0.1                      |
 | 1.1.0.x | API unknown - Software v3.0.2 |
 | 1.1.1.x | API unknown - Software v3.0.2 |
+
 ## Configuration
 
 This connector is used by DVE child elements that are **automatically created** by the connector [Ateme Titan Edge](xref:Connector_help_Ateme_Titan_Edge).
