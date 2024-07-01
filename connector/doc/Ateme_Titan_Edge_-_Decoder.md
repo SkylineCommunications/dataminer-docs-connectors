@@ -46,5 +46,5 @@ The element created with this connector has the following data pages:
 - **Decoder Probe Information**: Displays information about the decoder programs and PIDs.
 - **Decoder Video**: Contains information about the SDI and video.
 - **Decoder Audio**: Contains information about the audio.
-- **Decoder Progrm**: Contains information about the programs.
+- **Decoder Program**: Contains information about the programs.
 - **Decoder Configuration**: Allows you to configure settings for the decoder.
