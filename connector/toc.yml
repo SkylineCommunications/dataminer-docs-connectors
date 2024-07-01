@@ -3738,6 +3738,8 @@
     topicUid: Connector_help_GatesAir_LX
   - name: GatesAir Maxiva M2X
     topicUid: Connector_help_GatesAir_Maxiva_M2X
+  - name: GatesAir Maxiva UAXT Transmitter
+    topicUid: Connector_help_GatesAir_Maxiva_UAXT_Transmitter
   - name: GatesAir Maxiva UAXTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_UAXTE_Transmitter
   - name: GatesAir Maxiva ULX-OP Driver
