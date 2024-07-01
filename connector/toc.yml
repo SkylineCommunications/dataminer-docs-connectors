@@ -4796,6 +4796,8 @@
     topicUid: Connector_help_Invidi_Advatar
 - name: IRT
   items:
+  - name: IRT DLRC
+    topicUid: Connector_help_IRT_DLRC
   - name: IRT DVB-T2 TX
     topicUid: Connector_help_IRT_DVB-T2_TX
   - name: IRT DVB-T TX
@@ -4806,8 +4808,6 @@
     topicUid: Connector_help_IRT_IRPC_Series
   - name: IRT SSPA Series
     topicUid: Connector_help_IRT_SSPA_Series
-  - name: IRT DLRC
-    topicUid: Connector_help_IRT_DLRC
 - name: Itelco
   items:
   - name: Itelco DVB-T2 Modulator
