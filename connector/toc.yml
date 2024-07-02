@@ -6886,6 +6886,8 @@
     topicUid: Connector_help_Raritan_Dominion_KX
   - name: Raritan Dominion PXG2
     topicUid: Connector_help_Raritan_Dominion_PXG2
+  - name: Raritan Xerus Platform
+    topicUid: Connector_help_Raritan_Xerus_Platform
 - name: RCI
   items:
   - name: RCI RC2000

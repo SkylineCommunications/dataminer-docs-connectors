@@ -1,13 +1,24 @@
 ---
-uid: Connector_help_Raritan_Dominion_PXG2
+uid: Connector_help_Raritan_Xerus_Platform
 ---
 
-# Raritan Dominion PXG2
+# Raritan Xerus Platform
 
-The Raritan Dominion PXG2 connector facilitates the monitoring of this line of Power Distribution Units (PDU).
+The Raritan Xerus Platform connector facilitates the monitoring and control of the following Raritan device types:
+- SRC
+- PX3
+- PX2
+- PXC
+- PX0
+- BCM2
+- PX3TS
+- SmartLock
+- DX2 SmartSensors
+- AMS2
 
 > [!NOTE]
-> This connector is based on the Xerus Platfor MIB and the implementation has been moved to the [Raritan Xerus Platform connector](xref:Connector_help_Raritan_Xerus_Platform). Please migrate to this connector instead.
+> The Xerus MIB implements all Raritan Product types. Therefor this connector is a generic connector type that supports all these devices.  
+> Dependant on the type, some tables might be empty.
 
 ## About
 
@@ -23,7 +34,7 @@ This connector uses **SNMP** to extract all relevant information concerning the 
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | -                      |
+| 1.0.0.x   | 4.1.1.5-49961          |
 
 ### System Info
 
@@ -41,13 +52,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device.
+- **IP address/host**: [The polling IP or URL of the destination.]
+- **IP port**: [The IP port of the destination.]
 
 SNMP Settings:
 
-- **IP port**: 161
-- **Get community string**: public
-- **Set community string**: private
+- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
+- **Set community string**: [The community string used when setting values on the device. (default: *private*)]
 
 ## Usage
 
@@ -74,10 +85,6 @@ In this page can be found the specifications of external sensors. It also shows 
 ### Server Reachability
 
 In this page are listed the servers connected to the device, their respective IPs and whether or not they are reachable.
-
-### Wires
-
-In this page can be found the specifications of all the wires connected to the device. It also shows the current operating configuration and the options allowing changes to said configuration.
 
 ### Transfer Switch
 
@@ -106,10 +113,6 @@ This page shows the availability of and the values of each Outlet sensors.
 ### Measurements External Sensor
 
 This page shows the availability of and the values of each External sensor.
-
-### Measurements Wire
-
-This page shows the availability of and the values of each Wire sensor.
 
 ### Measurements Transfer Switch
 
@@ -142,12 +145,6 @@ For each sensor it is logged the state, maximum, minimum and average value. Ther
 ### Log External Sensor
 
 This page logs the External sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
-
-For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
-
-### Log Wire
-
-This page logs the Wire sensor information in a span of 2 hours. One entity is added to the table corresponding to each minute, therefore there will be 120 entries per sensor.
 
 For each sensor it is logged the state, maximum, minimum and average value. There is also an indication whether the logged information is available.
 
