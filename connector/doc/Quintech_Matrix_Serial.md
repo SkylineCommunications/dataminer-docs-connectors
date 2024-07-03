@@ -11,18 +11,28 @@ This connector uses a serial connection to display information on a Quintech mat
 ## About
 
 ### Version Info
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 2.0.0.1 [SLC Main]   | Matrix helper    | 1.0.0.10     | -                 |
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
 ### Product Info
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 2.0.0.x   | 9.34                   |
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 9.34                   |
 
 ### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
@@ -49,6 +59,7 @@ On the **General** page of this connector you can find **system information** an
 On the **Matrix** page, the serial matrix is displayed. You can set a crosspoint between an input and output here. It is also possible to lock or unlock an input or output to prevent incorrect crosspoint sets.
 
 ## Notes
+2.0.0.1 range of the driver has the "Matrix helper" implemented which solved the issues with locking and setting crosspoints that some users had (SES Germany).
 
 The Quintech matrix only allows labels of at most 7 alphanumeric characters.
 
