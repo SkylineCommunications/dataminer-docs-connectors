@@ -151,6 +151,9 @@ This page indicates the **ScheduAll status** for both the **Web Service** and th
 This page contains **Communication Configuration** parameters for both the **Web Service** and the **Interop Services**, where it is possible to **enable** or **disable** the referred services.
 Moreover, this page also includes the **Task Configuration,** which allows the user to define the validation of the **Work Orders** content as well as the the data used to launch the configured **Automation Script** when new or modified **Work Orders** are retrieved.
 
+### Configuration Subpage - Ignored DataMiner Resource Pools
+This page allows to configure which Resource Pools from DataMiner that should be ignored upon Work Order creation.
+
 ### Configuration Subpage - Task Automation Script
 
 This page contains the configuration of the **Automation Script** defined in the **Task Automation Script Name** under the **Configuration** page, where it is possible to specify the following settings:
@@ -202,7 +205,8 @@ In addition, it is also possible to configure in this page which **Work Order St
 
 - **Previous Status:** Defines the previous Work Order status for the each configured transition.
 - **Current Status:** Defines the current Work Order status for the each configured transition.
-- **Valid Status for New Work Order(s):** Defines which status are valid to trigger the Automation Script for new Work Orders. Note that this table column is independent from the other columns and is only applied to new Work Orders.
+- **Valid Status for New Work Orders:** Defines which status are valid to trigger the Automation Script for new Work Orders. Note that this table column is independent from the other columns and is only applied to new Work Orders.
+- **Valid Status for Existing Work Orders:** Defines which status are valid to trigger the Automation Script for new existing Work Orders. Note that this table column is independent from the other columns and is only applied to new Work Orders.
 
 ### Configuration Subpage - Task Status Definition
 
