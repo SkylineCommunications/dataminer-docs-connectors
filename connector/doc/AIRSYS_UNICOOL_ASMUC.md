@@ -4,33 +4,27 @@ uid: Connector_help_AIRSYS_UNICOOL_ASMUC
 
 # AIRSYS UNICOOL ASMUC
 
-Driver contains general overview parameters about the HVAC controller and it's cooling units. 
+This connector provides a general overview of parameters related to the HVAC controller and its cooling units. The controller can monitor up to 16 HVAC units.
 
 ## About
 
 ### Version Info
-|Range                  |Features              |Based on  |System Impact  |
-|-----------------------|----------------------|----------|---------------|
-|1.0.0.x [SLC Main]     |Initial version       |-         |-              |
+
+| Range              | Features        | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
-|Range  |Supported Firmware |
-|------------|--------------|
-|1.0.0.x     |2.1.049       |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 2.1.049            |
 
 ### System Info
 
-In this subsection, insert a table with five columns. Indicate whether the range features **DCF integration** and whether it is **Cassandra compliant**.
-
-In the "Linked Components"; column, list all DataMiner components that have a link, in any way, with this connector range, e.g. mediation connectors, Automation scripts, custom report, etc.
-
-In the "Exported Components" column, list all the connectors that are exported by the parent connector in question.
-**This can only be omitted for an exported connector or for a connector that cannot have exported connectors.**
-
-|Range      |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components |
-|-----------|-----------------|---------------------|-------------------|--------------------|
-|1.0.0.x    |No               |Yes                  |-                  |                    |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -42,9 +36,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**
-
-SNMP port is set by default to 161.
+- **IP address/host**: The polling IP or URL of the destination.
+- The **SNMP port** is by default set to 161.
 
 ### Web Interface
 
@@ -52,10 +45,12 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-This connector has no capability to do sets on the device and is for display purposes only. Connector will frequently poll the device through its SNMP interface to retrieve real-time parameters such as power consumption, fan speeds and many alarm states.
+This connector only allows you to view information from the device. It cannot be used to implement changes on the device. The connector will frequently poll the device through its SNMP interface to retrieve real-time parameters such as power consumption, fan speeds, and many alarm states.
 
-The controller can monitor up to 16 HVAC units. Instantaneous and average power consumptions can be seen for each component on the **Power** page.
+On the **Power** page, you can see the instantaneous and average power consumption for each component.
 
-**Component Run-Time** page has run and start times for the HVAC components. Most critical alarms can be seen on the **DI-Inputs** page (when one of the fans gets clogged with dust, supply fan overload, etc.).
+The **Component Run-Time** page shows the run and start times for the HVAC components.
 
-Sensor readings, such as humidity, temperatures or fan speeds, can be found on the **Sensors** and **Driver Outputs** pages.
+On the **DI-Inputs** page, you can see critical alarms, for example when one of the fans gets clogged with dust, when there is a supply fan overload, etc.
+
+Sensor readings, such as humidity, temperatures, or fan speeds, can be found on the **Sensors** and **Driver Outputs** pages.
