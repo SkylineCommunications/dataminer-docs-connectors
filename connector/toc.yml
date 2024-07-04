@@ -244,6 +244,10 @@
   items:
   - name: Agilis AUC28
     topicUid: Connector_help_Agilis_AUC28
+- name: AIRSYS
+  items:
+  - name: AIRSYS UNICOOL ASMUC
+    topicUid: Connector_help_AIRSYS_UNICOOL_ASMUC
 - name: AJA
   items:
   - name: AJA IPR-10G2-HDMI
