@@ -55,21 +55,21 @@ To set up the MySQL connection to the *nrd_archive* server with the site count d
 
 ## How to use
 
-On the **General** page of this connector, you can configure the connection with the config and archive databases. This also contains the time the most recent data was polled until.
+On the **General** page of this connector, you can configure the connection with the config and archive databases. This page also shows when the most recent data was polled.
 
-On the **Site Counts** page of this connector, you can view the networks in the West Malaysia and East Malaysia tables and the online and offline sites for each network. The overall site count is also present here for both the West Malaysia and East Malaysia gateways.
+On the **Site Counts** page, you can view the networks in the West Malaysia and East Malaysia tables and the online and offline sites for each network. The overall site count is also present here for both the West Malaysia and East Malaysia gateways.
 
 On the **Site Count Configuration** subpage, you can set the allowable sites for all of the networks in either West or East Malaysia at once and also set the alarm threshold for the status of the networks.
 
-On the **Network Congestion** page of this connector, you can view the network congestion status and the inroute group congestion status for both West and East Malaysia. The congestion is based on the upstream inroute group current slot usage and downstream network percentage of free bandwidth remaining.
+On the **Network Congestion** page, you can view the network congestion status and the inroute group congestion status for both West and East Malaysia. The congestion is based on the upstream inroute group current slot usage and downstream network percentage of free bandwidth remaining.
 
-On the **Traffic and Capacity** page of this connector, you can view the network traffic and capacity status for both West and East Malaysia. The traffic and capacity is based on the upstream and downstream throughput and also has the average and 95th percentile of the data for the past 24 hours.
+On the **Traffic and Capacity** page, you can view the network traffic and capacity status for both West and East Malaysia. The traffic and capacity is based on the upstream and downstream throughput and also has the average and 95th percentile of the data for the past 24 hours.
 
-On the **Group QOS Congestion** page of this connector, you can view the Group QOS congestion status for both West and East Malaysia. The Group QOS congestion is based on the free bandwidth against the allocated bandwidth for each group QOS.
+On the **Group QOS Congestion** page, you can view the Group QOS congestion status for both West and East Malaysia. The Group QOS congestion is based on the free bandwidth against the allocated bandwidth for each group QOS.
 
 On the **Congestion Configuration** subpage, you can set the threshold for when a group QOS would be considered congested.
 
-On the **Resources** subpage, you can view the polled Netmodem, Network, Group QOS and Beams data.
+On the **Resources** subpage, you can view the polled Net Modem, Network, Group QOS, and Beams data.
 
 ### Notes
 
