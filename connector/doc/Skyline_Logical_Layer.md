@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Logical_Layer
 
 # Skyline Logical Layer
 
-With this connector, you can subscribe on parameter values, parameter alarms, element alarms, and view alarms in DataMiner.
+With this connector you can subscribe on parameter values, parameter alarms, element alarms, and view alarms in DataMiner.
 
 These values are updated in real time, and you can define conditions that will be evaluated as soon as a change happens. The result of these can then be reused in DataMiner.
 
