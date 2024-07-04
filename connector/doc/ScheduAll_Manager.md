@@ -209,7 +209,7 @@ It is also possible to configure which **Work Order Status Transitions** will tr
 - **Previous Status**: Defines the previous work order status for the each configured transition.
 - **Current Status**: Defines the current work order status for the each configured transition.
 - **Valid Status for New Work Orders**: Defines which status is valid to trigger the Automation script for new work orders. Note that this table column is independent from the other columns and is only applied for new work orders.
-- **Valid Status for Existing Work Orders**: Defines which status is valid to trigger the Automation script for existing work orders. Note that this table column is independent from the other columns and is only applied for new work orders.
+- **Valid Status for Existing Work Orders**: Defines which status is valid to trigger the Automation script for existing work orders. Note that this table column is independent from the other columns and is only applied for existing work orders.
 
 ### Configuration Subpage - Task Status Definition
 
