@@ -54,5 +54,5 @@ This page displays an overview of the Alarms generate by the incoming events.
 
 ### Dimissed Events
 
-On this page, you can view the Events that have been dimissed by the policies set up. The information is stored in a logger table with a 7-day TTL.
+On this page, you can view the Events that have been dimissed by the policies set up.
 
