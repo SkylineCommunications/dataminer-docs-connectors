@@ -270,9 +270,6 @@ To **add** a condition:
 > - The condition will only be added if the condition name you defined does not exist yet.
 > - No validation is done on the condition definition, and it is added as you defined it. The logic will only try to resolve it taking into account the expected correct syntax and the configured monitors and static variables. If all is well, the logic will resolve the condition to *True* or *False*. Otherwise, it will result in *Unknown* or even possibly *Infinite Loop*. If this happens, you have most likely made a syntax error or a typo in one of the monitor names or compare values.
 
-Explain Visualize
-Explain Corrective Action Text - Automatic Correction - Corrective Action Script - Owner - Timestamp
-
 ### Condition Syntax
 
 Every comparison has to start with `<` and end with `>`. Any of the configured monitors can be used in a condition.
