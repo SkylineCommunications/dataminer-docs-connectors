@@ -6806,6 +6806,10 @@
     topicUid: Connector_help_Proximus_Airing_Manager
   - name: Proximus Unicast RTCP Collector
     topicUid: Connector_help_Proximus_Unicast_RTCP_Collector
+- name: PTF
+  items:
+  - name: PTF 3207a
+    topicUid: Connector_help_PTF_3207a
 - name: Pure Storage
   items:
   - name: Pure Storage FlashArray
