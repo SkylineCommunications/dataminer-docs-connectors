@@ -7726,6 +7726,8 @@
     topicUid: Connector_help_Sky_UK_VICC
   - name: Sky UK Watershed Alarming Workflow
     topicUid: Connector_help_Sky_UK_Watershed_Alarming_Workflow
+  - name: Sky Unsolicited Message Processor
+    topicUid: Connector_help_Sky_Unsolicited_Message_Processor
 - name: Skyline
   items:
   - name: Skyline Automation Performance Monitor
