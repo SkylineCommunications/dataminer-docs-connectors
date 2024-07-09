@@ -52,7 +52,7 @@ The connector supports **importing** CSV files in order to easily provision moni
 
 ### Adding/Editing/Deleting a Parameter Monitor
 
-In this table, you can define monitors that can subscribe to a single parameter. This can be either a standalone parameter or a specific index of a table parameter.
+In the **Parameter Value Monitors** table, you can define monitors that can subscribe to a single parameter. This can be either a standalone parameter or a specific index of a table parameter.
 
 To **add** a parameter monitor:
 
@@ -162,7 +162,7 @@ To **delete** one or more element alarm monitors:
 
 ### Adding/Editing/Deleting a View Alarm Monitor
 
-In this table, you can define view alarm monitors, which can subscribe to a view alarm state.
+In the **View Alarm Monitors** table, you can define view alarm monitors, which can subscribe to a view alarm state.
 
 To **add** a view alarm monitor:
 
