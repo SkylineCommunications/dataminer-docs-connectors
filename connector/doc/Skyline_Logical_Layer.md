@@ -103,7 +103,7 @@ To **delete** one or more parameter monitors:
 
 ### Adding/Editing/Deleting an Element Alarm Monitor
 
-In this table, you can define alarm monitors, which can subscribe to an overall element alarm state or to a single parameter alarm state. Note that this requires the configuration of appropriate alarm templates that monitor the related element and/or parameters.
+In the **Element Alarm Monitors** table, you can define alarm monitors, which can subscribe to an overall element alarm state or to a single parameter alarm state. Note that this requires the configuration of appropriate alarm templates that monitor the related element and/or parameters.
 
 To **add** an element alarm monitor:
 
