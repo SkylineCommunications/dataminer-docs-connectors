@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Logical_Layer
 
 # Skyline Logical Layer
 
-With this connector, you can subscribe on parameter values, parameter alarms, element alarms, and on view alarms in DataMiner.
+With this connector, you can subscribe on parameter values, parameter alarms, element alarms, and view alarms in DataMiner.
 
 These values are updated in real time, and you can define conditions that will be evaluated as soon as a change happens. The results of these conditions can then be reused in DataMiner.
 
@@ -99,7 +99,7 @@ To **delete** one or more parameter monitors:
 1. In the confirmation box, click **OK** if you are sure you want to delete the selected items.
 
 > [!NOTE]
-> Only parameter monitors that are not used in any condition can be deleted. If you try to delete parameter monitors, and one or more of the selected parameter monitors is used in a condition, none of the selected parameter monitors will be deleted. In such a case a popup message will be displayed clearly indicating this.
+> Only parameter monitors that are not used in any condition can be deleted. If you try to delete parameter monitors, and one or more of the selected parameter monitors is used in a condition, none of the selected parameter monitors will be deleted. In such a case, a pop-up message will be displayed clearly indicating this.
 
 ### Adding/Editing/Deleting an Element Alarm Monitor
 
@@ -158,7 +158,7 @@ To **delete** one or more element alarm monitors:
 1. In the confirmation box, click **OK** if you are sure you want to delete the selected items.
 
 > [!NOTE]
-> Only element alarm monitors that are not used in any condition can be deleted. If you try to delete element alarm monitors, and one or more of the selected element alarm monitors is used in a condition, none of the selected element alarm monitors will be deleted. In such a case a popup message will be displayed clearly indicating this.
+> Only element alarm monitors that are not used in any condition can be deleted. If you try to delete element alarm monitors, and one or more of the selected element alarm monitors is used in a condition, none of the selected element alarm monitors will be deleted. In such a case, a pop-up message will be displayed clearly indicating this.
 
 ### Adding/Editing/Deleting a View Alarm Monitor
 
@@ -209,7 +209,7 @@ To **delete** one or more view alarm monitors:
 1. In the confirmation box, click **OK** if you are sure you want to delete the selected items.
 
 > [!NOTE]
-> Only view alarm monitors that are not used in any condition can be deleted. If you try to delete view alarm monitors, and one or more of the selected view alarm monitors is used in a condition, none of the selected view alarm monitors will be deleted. In such a case a popup message will be displayed clearly indicating this.
+> Only view alarm monitors that are not used in any condition can be deleted. If you try to delete view alarm monitors, and one or more of the selected view alarm monitors is used in a condition, none of the selected view alarm monitors will be deleted. In such a case, a pop-up message will be displayed clearly indicating this.
 
 ### Adding/Editing/Deleting a User-Defined Static Variable
 
@@ -261,21 +261,24 @@ To **add** a condition:
 
    While the IAS window is open, you can navigate to these monitors, right-click a specific monitor entry, select **Other => Copy 'Monitor Name'**, and then paste it in the condition definition. This will prevent typos and speeds up the configuration.
 
-1. Define the Visualize option (Yes (default) or No). This option can be used to for example conditionally show or hide the condition in Visio
+1. Optionally, set the **Visualize** option to *No*. This option can be used to for example conditionally show or hide the condition in Visual Overview.
 
-1. Define the Corrective Action Script (i.e. an existing automation script name) which is to be executed in case the Condition results in True.
+1. Set the **Corrective Action Script** to an Automation script that exists in the system. This is the script that will be executed if the condition is evaluated as true.
+
+   > [!NOTE]
+   >
+   > - In order for the corrective action script to be executed automatically when the condition is evaluated as true, the **Automatic Correction** parameter needs to be enabled in the Conditions table. This parameter cannot be configured in the pop-up window, but must be configured directly in the table.
+   - A template corrective action script is provided in the Logical Layer install package. You can use this template to start developing your own scripts. The condition name is passed to the Automation script as an argument, so when you set up the corrective action scripts, you can reuse a single script but act differently depending on the provided condition name.
 
 1. Click Add.
 
-   The condition will be added, and the result will be updated to *True* or *False*. The Timestamp indicates the last time the result of the Condition was updated.
+   The condition will be added, and the result will be updated to *True* or *False*. A timestamp indicates the last time when the result of the condition was updated.
 
 > [!NOTE]
 >
 > - The condition will only be added if the condition name you defined does not exist yet.
 > - No validation is done on the condition definition, and it is added as you defined it. The logic will only try to resolve it taking into account the expected correct syntax and the configured monitors and static variables. If all is well, the logic will resolve the condition to *True* or *False*. Otherwise, it will result in *Unknown* or even possibly *Infinite Loop*. If this happens, you have most likely made a syntax error or a typo in one of the monitor names or compare values.
-> - A condition entry also contains some additional parameters which can only be edited directly on the table (so not via the pop-up window). The Corrective Action Text can for example be used to be displayed conditionally on a Visio in case the Condition becomes True. The Owner can for example contain a reference to a person who is responsible for the configuration and maintenance of this Condition.
-> - In order for the Corrective Action Script to be executed automatically when the condition results in True an extra condition parameter Automatic Correction needs to be enabled (disabled by default). This parameter is also only available on the condition table.
-> - A template corrective automation script is provided in the Logical Layer install package which you can use to start developing your own scripts. The Condition name is passed on to the automation script as an argument so that is also something which can be used when setting up the corrective automation scripts and which allows you to reuse a single script, but act differently/accordingly depending on the provided Condition name.
+> - A condition entry also contains some additional parameters that can only be edited directly in the Conditions table, but not via the pop-up window, such as the Automatic Correction, Corrective Action Text, and Owner parameter. You can for example use the Corrective Action Text parameter to conditionally display text in Visual Overview in case the condition is evaluated as true, and the Owner parameter can for example refer to the person responsible for the configuration and maintenance of this condition.
 
 In the **Documentation** column, you can describe the particular usage of this monitor.
 
@@ -301,7 +304,7 @@ To **delete** one or more conditions:
 1. In the confirmation box, click **OK** if you are sure you want to delete the selected items.
 
 > [!NOTE]
-> Only conditions that are not used in any other selected or not selected condition can be deleted. If you try to delete conditions, and one or more of the selected conditions is used in another selected or unselecteed condition, none of the selected conditions will be deleted. In such a case a popup message will be displayed clearly indicating this.
+> Only conditions that are not used in any other (selected or not selected) condition can be deleted. If you try to delete conditions, and one or more of the selected conditions is used in another condition, none of the selected conditions will be deleted. In such a case, a pop-up message will be displayed clearly indicating this.
 
 ### Condition Syntax
 
