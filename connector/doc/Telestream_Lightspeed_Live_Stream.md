@@ -44,7 +44,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-To be able to log in, specify the **API token** on the **Authentication** page.
+To be able to log in, specify the **API token** on the **Authentication** page. The API token can be found in the web app's **About** panel, accessible from the settings menu.
 
 ### Web Interface
 
