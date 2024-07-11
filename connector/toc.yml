@@ -6376,6 +6376,10 @@
     topicUid: Connector_help_NPC_System_ACU550
   - name: NPC System DTR500
     topicUid: Connector_help_NPC_System_DTR500
+- name: NTI
+  items:
+  - name: NTI ENVIROMUX MINI LXO
+    topicUid: Connector_help_NTI_ENVIROMUX_MINI_LXO
 - name: NTP
   items:
   - name: NTP RCP
