@@ -60,5 +60,3 @@ The following data pages are available in the main element:
 - **Channel Polling Manager**: This page allows the enabling or disabling of polling for certain channels. This can be used to disable polling for channels that are not in use.
 
 - **Traps**: This page lists the received traps from the device.
-
-- **LNB**: This page contains the Low-Noise Block Table.
