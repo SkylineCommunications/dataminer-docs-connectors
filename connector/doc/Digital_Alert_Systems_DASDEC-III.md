@@ -78,6 +78,7 @@ This page also contains the following page buttons:
 
 - **Driver Configuration**: Here you can view and clear the error counter.
 - **Display Key Configuration**: Here you can configure the display key across all message-related tables.
+- **Authentication**: Here you can configure the authentication for the HTTP connection.
 
 ### Alerts
 
