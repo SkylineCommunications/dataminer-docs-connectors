@@ -158,6 +158,8 @@
   items:
   - name: Advantech 152X Serial Gateway
     topicUid: Connector_help_Advantech_152X_Serial_Gateway
+  - name: Advantech 8xADAM5050
+    topicUid: Connector_help_Advantech_8xADAM5050
   - name: Advantech ADAM5017
     topicUid: Connector_help_Advantech_ADAM5017
   - name: Advantech ADAM5050
@@ -242,6 +244,10 @@
   items:
   - name: Agilis AUC28
     topicUid: Connector_help_Agilis_AUC28
+- name: AIRSYS
+  items:
+  - name: AIRSYS UNICOOL ASMUC
+    topicUid: Connector_help_AIRSYS_UNICOOL_ASMUC
 - name: AJA
   items:
   - name: AJA IPR-10G2-HDMI
@@ -2018,6 +2024,8 @@
     topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
   - name: Ciena 5170 Packetwave Platform
     topicUid: Connector_help_Ciena_5170_Packetwave_Platform
+  - name: Ciena 8114
+    topicUid: Connector_help_Ciena_8114
   - name: Ciena 8700 Packetwave Platform
     topicUid: Connector_help_Ciena_8700_Packetwave_Platform
   - name: Ciena Blue Planet MCP NMS
@@ -3734,6 +3742,8 @@
     topicUid: Connector_help_GatesAir_LX
   - name: GatesAir Maxiva M2X
     topicUid: Connector_help_GatesAir_Maxiva_M2X
+  - name: GatesAir Maxiva UAXT Transmitter
+    topicUid: Connector_help_GatesAir_Maxiva_UAXT_Transmitter
   - name: GatesAir Maxiva UAXTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_UAXTE_Transmitter
   - name: GatesAir Maxiva ULX-OP Driver
@@ -3754,6 +3764,8 @@
     topicUid: Connector_help_GatesAir_Maxiva_XTE_MSC3
   - name: GatesAir Maxiva XTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_XTE_Transmitter
+  - name: GatesAir MSCx 1P1 Main Alt Controller
+    topicUid: Connector_help_GatesAir_MSCx_1P1_Main_Alt_Controller
   - name: GatesAir MSCx DD Dual Drive Controller
     topicUid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
 - name: Geist
@@ -4790,6 +4802,8 @@
     topicUid: Connector_help_Invidi_Advatar
 - name: IRT
   items:
+  - name: IRT DLRC
+    topicUid: Connector_help_IRT_DLRC
   - name: IRT DVB-T2 TX
     topicUid: Connector_help_IRT_DVB-T2_TX
   - name: IRT DVB-T TX
@@ -6404,6 +6418,10 @@
     topicUid: Connector_help_NPC_System_ACU550
   - name: NPC System DTR500
     topicUid: Connector_help_NPC_System_DTR500
+- name: NTI
+  items:
+  - name: NTI ENVIROMUX MINI LXO
+    topicUid: Connector_help_NTI_ENVIROMUX_MINI_LXO
 - name: NTP
   items:
   - name: NTP RCP
@@ -6792,6 +6810,10 @@
     topicUid: Connector_help_Proximus_Airing_Manager
   - name: Proximus Unicast RTCP Collector
     topicUid: Connector_help_Proximus_Unicast_RTCP_Collector
+- name: PTF
+  items:
+  - name: PTF 3207a
+    topicUid: Connector_help_PTF_3207a
 - name: Pure Storage
   items:
   - name: Pure Storage FlashArray
@@ -6876,6 +6898,8 @@
     topicUid: Connector_help_Raritan_Dominion_KX
   - name: Raritan Dominion PXG2
     topicUid: Connector_help_Raritan_Dominion_PXG2
+  - name: Raritan Xerus Platform
+    topicUid: Connector_help_Raritan_Xerus_Platform
 - name: RCI
   items:
   - name: RCI RC2000
@@ -7530,6 +7554,8 @@
     topicUid: Connector_help_ServiceHeroes_ServiceHighway
 - name: ServiceNow
   items:
+  - name: ServiceNow Authenticator
+    topicUid: Connector_help_ServiceNow_Authenticator
   - name: ServiceNow Tables
     topicUid: Connector_help_ServiceNow_Tables
 - name: SES
@@ -7610,6 +7636,8 @@
     topicUid: Connector_help_Singtel_ANTlabs_Tru_Auth_Radius
   - name: SingTel Event Manager
     topicUid: Connector_help_SingTel_Event_Manager
+  - name: Singtel Events Ingest Manager
+    topicUid: Connector_help_SingTel_Events_Ingest_Manager
   - name: SingTel ForeTV CMS Generator
     topicUid: Connector_help_SingTel_ForeTV_CMS_Generator
   - name: SingTel ForeTV Event Manager
@@ -7706,10 +7734,14 @@
     topicUid: Connector_help_Sky_UK_VICC
   - name: Sky UK Watershed Alarming Workflow
     topicUid: Connector_help_Sky_UK_Watershed_Alarming_Workflow
+  - name: Sky Unsolicited Message Processor
+    topicUid: Connector_help_Sky_Unsolicited_Message_Processor
 - name: Skyline
   items:
   - name: Skyline Automation Performance Monitor
     topicUid: Connector_help_Skyline_Automation_Performance_Monitor
+  - name: Skyline Availability Platform
+    topicUid: Connector_help_Skyline_Availability_Platform
   - name: Skyline Basic SDN Controller
     topicUid: Connector_help_Skyline_Basic_SDN_Controller
   - name: Skyline Bookings Monitoring
@@ -7764,6 +7796,8 @@
     topicUid: Connector_help_Skyline_Enhanced_Service
   - name: Skyline EPM Platform
     topicUid: Connector_help_Skyline_EPM_Platform
+  - name: Skyline EPM Platform Availability
+    topicUid: Connector_help_Skyline_EPM_Platform_Availability
   - name: Skyline EPM Platform DOCSIS
     topicUid: Connector_help_Skyline_EPM_Platform_DOCSIS
   - name: Skyline EPM Platform DOCSIS WM
@@ -8166,6 +8200,8 @@
     topicUid: Connector_help_SpacePath_Communications_N6143_Controller_Series
   - name: SpacePath Communications SPC1100
     topicUid: Connector_help_SpacePath_Communications_SPC1100
+  - name: SpacePath Communications STA5000 Series
+    topicUid: Connector_help_SpacePath_Communications_STA5000_Series
   - name: SpacePath Communications STx Series
     topicUid: Connector_help_SpacePath_Communications_STx_Series
 - name: Specialty Microwave Corp
@@ -9378,6 +9414,8 @@
     topicUid: Connector_help_Viavi_Solutions_ONMSi
   - name: Viavi Solutions VSA Streamer
     topicUid: Connector_help_Viavi_Solutions_VSA_Streamer
+  - name: Viavi Solutions XPERTrak
+    topicUid: Connector_help_Viavi_Solutions_XPERTrak
 - name: Victron
   items:
   - name: Victron UPS

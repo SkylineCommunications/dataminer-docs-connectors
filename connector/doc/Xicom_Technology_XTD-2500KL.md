@@ -43,7 +43,7 @@ SERIAL CONNECTION:
   - **Databits**: Databits specified in the manual of the device, by default *8*.
   - **Stopbits**: Stopbits specified in the manual of the device, by default *1*.
   - **Parity**: Parity specified in the manual of the device, by default *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device**.**
+  - **FlowControl**: FlowControl specified in the manual of the device.
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device, by default *65*. Range: *255 - 64*.
