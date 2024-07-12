@@ -10,11 +10,11 @@ The Newtec HZ914 is a DVB-S2 satellite demodulator with up to 4 ASI outputs, des
 
 ### Version Info
 
-| **Range** | **Key Features**                                                             | **Based on** | **System Impact** |
-|-----------|------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.                                                             | -            | -                 |
-| 1.6.63.x  | New firmware based on software version 6.63, software ID 6279.               | -            | -                 |
-| 1.1.0.x   | \- Implemented Cassandra compliancy. - Adapted to correct version numbering. | -            | -                 |
+| Range    | Key Features                                                                    | Based on | System Impact |
+|----------|---------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x  | Initial version.                                                                | -        | -             |
+| 1.6.63.x | New firmware based on software version 6.63, software ID 6279.                  | -        | -             |
+| 1.1.0.x  | - Implemented Cassandra compliancy. <br>- Adapted to correct version numbering. | -        | -             |
 
 ### Product Info
 
@@ -111,7 +111,7 @@ It also displays information and statistics related to Receive Level, Power Spec
 
 ### Alarms
 
-This page contains alarm status information like the **Actual** and **Memorized** **Alarm Status**, as well as **Current Alarms Status Flags**.
+This page contains alarm status information like the **Actual** and **Memorized Alarm Status**, as well as **Current Alarms Status Flags**.
 
 ### Web Interface
 

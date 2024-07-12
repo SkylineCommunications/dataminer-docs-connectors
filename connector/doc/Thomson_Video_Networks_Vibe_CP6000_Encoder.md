@@ -8,24 +8,24 @@ The Vibe CP6000 is a contribution platform that enables users to transport up to
 
 ## About
 
-This connector is designed to monitor the state of the audio and video for the **CP6000** **Encoder module**. It also monitors the values of the different parameters present in the input(s) and output(s) for the encoder. The connector also features transport management and profile selection for the encoder module. The different parameters of the device are displayed on multiple pages grouped by function.
+This connector is designed to monitor the state of the audio and video for the **CP6000 Encoder module**. It also monitors the values of the different parameters present in the input(s) and output(s) for the encoder. The connector also features transport management and profile selection for the encoder module. The different parameters of the device are displayed on multiple pages grouped by function.
 
 This connector is generated automatically by the connector **Thomson Video Networks Vibe CP6000**.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                            | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                                                                                                           | No                  | No                      |
-| 1.0.1.x          | New feature - translated table for multicast IP address and port + fixed problem with Alarm Table.                         | Yes                 | Yes                     |
-| 1.0.2.x          | \- Changed layout. - Fixed linking between tables. - Alarm monitoring on PID bitrates returns a user-friendly description. | Yes                 | Yes                     |
-| 1.0.3.x          | Table display keys changed to avoid duplicate naming.                                                                      | Yes                 | Yes                     |
+| Range   | Description                                                                                                                        | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.                                                                                                                   | No              | No                  |
+| 1.0.1.x | New feature - translated table for multicast IP address and port + fixed problem with Alarm Table.                                 | Yes             | Yes                 |
+| 1.0.2.x | - Changed layout. <br>- Fixed linking between tables. <br>- Alarm monitoring on PID bit rates returns a user-friendly description. | Yes             | Yes                 |
+| 1.0.3.x | Table display keys changed to avoid duplicate naming.                                                                              | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.1.x          | CP6000 04.20.02             |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.1.x | CP6000 04.20.02            |
 
 ## Installation and configuration
 
@@ -37,11 +37,11 @@ This connector is used by DVEs that are **automatically created** by the parent 
 
 ### Encoding
 
-On this page, you can configure the parameters for the **Video** and **Audio** **Encoding**.
+On this page, you can configure the parameters for the **Video** and **Audio Encoding**.
 
 ### MPEG Service
 
-This page displays the **Output Service**, **Multiplexing** and **Dpi** tables for the encoder module.
+This page displays the **Output Service**, **Multiplexing**, and **Dpi** tables for the encoder module.
 
 ### MPEG Transport Stream
 
@@ -49,7 +49,7 @@ On this page, you can configure the **Encoder Transport Stream Table**.
 
 ### Transport Stream
 
-This page contains the **Encoder Transport Stream Constitution**, **Encoder** **Transport** and **Encoder Transport IP Tx Tables**.
+This page contains the **Encoder Transport Stream Constitution**, **Encoder Transport**, and **Encoder Transport IP Tx Tables**.
 
 ### Input Stream with External Component
 
@@ -61,4 +61,4 @@ The page displays the **Encoder Profile** and the **Profile Selection Table** fo
 
 ### VBI & Ancillaries Management
 
-The page contains the **Encoder Vbi**, **Encoder** **Ancillaries** and **Encoder Vbi Line Tables** for the encoder module.
+The page contains the **Encoder Vbi**, **Encoder Ancillaries**, and **Encoder Vbi Line Tables** for the encoder module.

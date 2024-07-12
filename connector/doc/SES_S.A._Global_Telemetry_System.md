@@ -12,10 +12,10 @@ For each satellite available, one element must be created using an IP address an
 
 ### Version Info
 
-| **Range** | **Description**                                                          | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version (obsolete)                                               | No                  | Yes                     |
-| 1.0.1.x          | \- Added RF Out Column to the Telemetry Table - Auto clear functionality | No                  | Yes                     |
+| Range   | Description                                                                 | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version (obsolete)                                                  | No              | Yes                 |
+| 1.0.1.x | - Added RF Out Column to the Telemetry Table <br>- Auto clear functionality | No              | Yes                 |
 
 ### Product Info
 
@@ -35,12 +35,15 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - Direct connection:
+
   - **Baudrate**: Baudrate specified in the manual of the device.
   - **Databits**: Databits specified in the manual of the device.
   - **Stopbits**: Stopbits specified in the manual of the device.
   - **Parity**: Parity specified in the manual of the device.
   - **FlowControl**: FlowControl specified in the manual of the device.
+
 - Interface connection:
+
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
 
@@ -96,7 +99,7 @@ This table contains the following columns:
 
 - **Deviation**: Deviation of the channel in dBm. To calculate this value, the following values must be available:
 
-- Mode
+  - Mode
   - Sat I/P
   - Nominal ALC/FG
   - Nominal ALC/FG Mode

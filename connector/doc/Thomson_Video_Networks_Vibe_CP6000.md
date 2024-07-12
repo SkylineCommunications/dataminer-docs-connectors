@@ -16,13 +16,13 @@ From version 1.0.1.5 onwards, the **DataMiner Connectivity Framework** has been 
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                             | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                                            | No                  | No                      |
-| 1.0.1.x              | New feature: translated table for multicast IP address and port + fixed problem with Alarm Table.                           | Yes                 | Yes                     |
-| 1.0.2.x              | \- Changed layout. - Fixed linking between tables. - Alarm monitoring on PID bit rates returns a user-friendly description. | Yes                 | Yes                     |
-| 1.0.3.x              | Table display keys changed to avoid duplicate naming.                                                                       | Yes                 | Yes                     |
-| 1.0.4.x [SLC Main]   | Reorganized the internal linking to accommodate the different functions that use the connector.                             | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | No |
+| 1.0.1.x | New feature: translated table for multicast IP address and port + fixed problem with Alarm Table. | Yes | Yes |
+| 1.0.2.x | - Changed layout. <br>- Fixed linking between tables. <br>- Alarm monitoring on PID bit rates returns a user-friendly description. | Yes | Yes |
+| 1.0.3.x | Table display keys changed to avoid duplicate naming. | Yes | Yes |
+| 1.0.4.x [SLC Main] | Reorganized the internal linking to accommodate the different functions that use the connector. | Yes | Yes |
 
 ### Product Info
 
@@ -32,8 +32,8 @@ From version 1.0.1.5 onwards, the **DataMiner Connectivity Framework** has been 
 
 ### Exported Connectors
 
-| **Exported Connector**                                                                                                  | **Description** |
-|------------------------------------------------------------------------------------------------------------------------|-----------------|
+| Exported Connector                                                                                           | Description     |
+|--------------------------------------------------------------------------------------------------------------|-----------------|
 | [Thomson Video Networks Vibe CP6000 Decoder](xref:Connector_help_Thomson_Video_Networks_Vibe_CP6000_Decoder) | Decoder modules |
 | [Thomson Video Networks Vibe CP6000 Encoder](xref:Connector_help_Thomson_Video_Networks_Vibe_CP6000_Encoder) | Encoder modules |
 
@@ -122,7 +122,7 @@ This page displays several parameters, each representing a **LED**, **bar graph*
 
 ### Decoding
 
-On this page, you can configure the parameters for the **Video** and **Audio** **Decoding**.
+On this page, you can configure the parameters for the **Video** and **Audio Decoding**.
 
 ### Service Config & Demultiplex
 
@@ -130,11 +130,11 @@ This page contains the **Input Service**, **Output** and **Ancillaries VBI** tab
 
 ### Transport Translation
 
-This page includes the **Transport Translation** **Table**, with a **destination name**, **IP address**, and **Port Number**.
+This page includes the **Transport Translation Table**, with a **destination name**, **IP address**, and **Port Number**.
 
 ### Transport Management
 
-This page includes the **Transport** **Table** and **Transport IP Rx** **Table** for the **decoder** module.
+This page includes the **Transport Table** and **Transport IP Rx Table** for the **decoder** module.
 
 ### Decoder Slot Structure
 
@@ -146,7 +146,7 @@ This page contains two tables with information about the different **Ethernet an
 
 ### Redundancy
 
-This page is the last one for the **decoder** module and contains the **Redundancy** **Table**.
+This page is the last one for the **decoder** module and contains the **Redundancy Table**.
 
 ### Encoding
 
@@ -158,7 +158,7 @@ This page displays the **Output Service**, **Multiplexing**, and **DPI** tables 
 
 ### Transport Stream
 
-The page displays the **Encoder Transport Stream Constitution**, **Encoder** **Transport**, and **Encoder Transport IP Tx Tables**.
+The page displays the **Encoder Transport Stream Constitution**, **Encoder Transport**, and **Encoder Transport IP Tx Tables**.
 
 ### MPEG Transport Stream
 
@@ -184,7 +184,7 @@ This page displays the **Encoder Profile** and **Profile Selection Table** for t
 
 ### VBI & Ancillaries Management
 
-This page contains the **Encoder VBI**, **Encoder** **Ancillaries**, and **Encoder VBI Line** tables for the encoder module.
+This page contains the **Encoder VBI**, **Encoder Ancillaries**, and **Encoder VBI Line** tables for the encoder module.
 
 ### Descriptors
 
@@ -226,12 +226,12 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 The dynamic interfaces are created based on the number of rows in **Table 600 (DCF Input Interfaces)** and **Table 700 (DCF Output Interfaces)** for both the **decoder** and the **encoder.**
 
-**Table 600** will contain all the DCF input interfaces for the **encoder** and **decoder**. The total number of rows depends on how many rows there are in **Table 6000 (Decoder Transport Table)** and **Table 19000 (Encoder TS Input Table)**.**
-Table 700** will contain all the DCF output interfaces for the **encoder** and **decoder**. The total number of rows depends on the rows in **Table 5000 (Decoder Output Table)** and **Table 33000 (Encoder Transport Table).**
+**Table 600** will contain all the DCF input interfaces for the **encoder** and **decoder**. The total number of rows depends on how many rows there are in **Table 6000 (Decoder Transport Table)** and **Table 19000 (Encoder TS Input Table)**.
+Table 700** will contain all the DCF output interfaces for the **encoder** and **decoder**. The total number of rows depends on the rows in **Table 5000 (Decoder Output Table)** and **Table 33000 (Encoder Transport Table)**.
 
 - **DEC_IN\_***instance value*\_*Interface Type*: Dynamic Interface with type **in**.
-- **ENC_IN\_***instance value*\_*Interface Type*: Dynamic Interface with type **in.**
-- **DEC_OUT\_***instance value*\_*Interface Type*: Dynamic Interface with type **out**
+- **ENC_IN\_***instance value*\_*Interface Type*: Dynamic Interface with type **in**.
+- **DEC_OUT\_***instance value*\_*Interface Type*: Dynamic Interface with type **out**.
 - **ENC_OUT\_***instance value*\_*Interface Type*: Dynamic Interface with type **out**.
 
 ### Connections

@@ -37,17 +37,17 @@ The KPIs in the topologies are the result of aggregation performed in the **Skyl
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x | Initial version | \- | \- |
-| 1.0.1.x [SLC Main]   | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | \- | \- |
-| 1.0.2.x [SLC Main]   | Removed remote view for ONT level | \- | \- |
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x [SLC Main]   | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | - | - |
+| 1.0.2.x [SLC Main]   | Removed remote view for ONT level | - | - |
 
 ### System Info
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
-| 1.0.0.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | \- |
-| 1.0.1.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | \- |
-| 1.0.2.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | \- |
+| 1.0.0.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
+| 1.0.1.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
+| 1.0.2.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
 
 ## Configuration
 
@@ -105,4 +105,4 @@ The solution is based on the usage of CSV files and the DataMiner messaging syst
 
 First, the **OLT** elements export the necessary files containing the resources (GPON topology and passives topology) that need to be assigned DataMiner IDs. These elements notify the **Skyline EPM Platform front-end** element, which in turn, initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests. The **front-end** element will import the CSV files to perform the necessary steps of the provisioning.
 
-Once the ID assignment is completed, the **front-end** element will export a series of CSV files for the **Skyline EPM Platform GPON back-end** and **OLT** elements to import. For this, the **front-end** element notifies the respective b**ack-end** element to process these files. The **back-end** element imports the resources with their assigned IDs and notifies the respective **OLT** elements of ID assignment completion (these elements will import the new files).
+Once the ID assignment is completed, the **front-end** element will export a series of CSV files for the **Skyline EPM Platform GPON back-end** and **OLT** elements to import. For this, the **front-end** element notifies the respective **back-end** element to process these files. The **back-end** element imports the resources with their assigned IDs and notifies the respective **OLT** elements of ID assignment completion (these elements will import the new files).

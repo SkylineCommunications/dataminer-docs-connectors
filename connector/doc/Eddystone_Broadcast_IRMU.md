@@ -10,10 +10,10 @@ The Eddystone Broadcast RMU enabled FM transmitters can enable your network oper
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                           | **Based on** | **System Impact**                             |
-|-----------|--------------------------------------------------------------------------------------------|--------------|-----------------------------------------------|
-| 1.0.0.x   | Initial version.                                                                           | -            | -                                             |
-| 1.0.1.x   | \- Changed the Description parameter as the index. - Changed \[IDX\] tag from primary key. | 1.0.0.1      | Alarm and trend information will be affected. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x | - Changed the Description parameter as the index. <br>- Changed [IDX] tag from primary key. | 1.0.0.1 | Alarm and trend information will be affected. |
 
 ### Product Info
 
@@ -47,14 +47,6 @@ SNMPv1 Settings (1.0.0.x):
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -64,5 +56,5 @@ The web interface is only accessible when the client machine has network access 
 The element created with this connector consists of the following data pages:
 
 - **General**: Displays general **system information** as well as the IRMU **device information**. Also allows you to configure general **device settings**.
-- **Inputs/Outputs/Sensors/Exciters/Amplifiers/Triggers**: These pages contain information about the Boolean inputs, Boolean outputs, sensors, exciters, transmitters, amplifiers and triggers, respectively
+- **Inputs/Outputs/Sensors/Exciters/Amplifiers/Triggers**: These pages contain information about the Boolean inputs, Boolean outputs, sensors, exciters, transmitters, amplifiers, and triggers, respectively
 - **Web Interface**: Displays the web interface of the polling IP address.

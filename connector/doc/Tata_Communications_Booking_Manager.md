@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Tata_Booking_Manager
+uid: Connector_help_Tata_Communications_Booking_Manager
 ---
 
 # Tata Communications Booking Manager

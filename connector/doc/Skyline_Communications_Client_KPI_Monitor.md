@@ -30,12 +30,26 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to Use
 
-On the **General** page, there are several tables each related to a KPI:
+On the **General** page:
+
+- The parameter **Last Client KPI Log Entry Timestamp** contains the last timestamp read from the client log files.
+- The parameter **Last Processing Timestamp** contains the timestamp from the last time the client log files where processed.
+- The average parameters for each KPI are displayed. The average is calculated each time the client log files are processed.
+- The table **Cube Event Cube Connection** is displayed.
+- You can use the **Clear Data Client KPI** button to clear all tables and reset the last log entry timestamp.
+
+On the **Metrics** page, you can find the following tables:
 
 - Cube Metric Initial Data Duration
 - Cube Metric Initial Subscriptions Duration
 - Cube Metric Full Connect Duration
-- Cube Connection
-- Visual Overview Load Duration
+- Cube Metric Visual Overview Load Duration
+
+On the **Outliers** page, you can find the following tables:
+
+- Cube Metric Initial Data Duration Outliers
+- Cube Metric Initial Subscriptions Duration Outliers
+- Cube Metric Full Connect Duration Outliers
+- Cube Metric Visual Overview Load Duration Outliers
 
 On the **Settings** page, you can configure the table cleanup by specifying the number of days entries should be kept and the maximum number entries to keep.

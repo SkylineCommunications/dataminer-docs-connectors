@@ -10,15 +10,17 @@ This connector is responsible for continuously monitoring the status of jobs def
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main] | Initial version  | -            | -                 |
+| Range                | Key Features                                    | Based on           | System Impact                           |
+|----------------------|-------------------------------------------------|--------------------|-----------------------------------------|
+| 1.0.0.x [SLC Main]   | Initial version.                                | -                  | -                                       |
+| 1.1.0.x [SLC Main]   | New range compatible with Data Aggregator 3.x.  | 1.0.0.2            | Does not support versions prior to 3.x. |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

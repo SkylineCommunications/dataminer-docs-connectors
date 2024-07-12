@@ -8,7 +8,7 @@ The **Advantech ADAM6050** connector is a serial connector used to monitor and c
 
 ## About
 
-The **Advantech ADAM6050** is an 18-ch Isolated Digital I/O Modbus TCP Module, which supports High-to-Low Delay Output. With this connector, the outputs can be set for the device. The inputs are only monitored. It's also possible to set the user value, which is the value the user associates with the real value on the device. With the inversion setting, the user value will be the inverted value of the real value on the device.
+The **Advantech ADAM6050** is an 18-ch Isolated Digital I/O Modbus TCP Module, which supports High-to-Low Delay Output. With this connector, the outputs can be set for the device. The inputs are only monitored. It is also possible to set the user value, which is the value the user associates with the real value on the device. With the inversion setting, the user value will be the inverted value of the real value on the device.
 
 ## Installation and configuration
 

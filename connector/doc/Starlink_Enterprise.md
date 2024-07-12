@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Starlink_Telemetry_API
+uid: Connector_help_Starlink_Enterprise
 ---
 
-# Starlink Telemetry API
+# Starlink Enterprise
 
 The purpose of this connector is to monitor Starlink devices through the Telemetry API over HTTP using JSON files.
 
@@ -51,6 +51,10 @@ TCP/IP settings
 ### Initialization
 
 A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Configuration** page.
+
+It is also possible to install the Starlink Telemetry API connector using the **Starlink Enterprise** application package, which provides a simulation extension. The simulation extension is installed alongside the application package. Upon installation, the simulation becomes available and utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the creation of the element. Simulation files are stored within the application's designated directory.
+
+In case you make use of this package, the **simulation will run until you enter the Client ID and Client Secret** on the **Configuration** page. After that, the simulation stops, and the element begins polling data with real values from the device if the credentials are valid.
 
 > [!IMPORTANT]
 > No telemetry will be polled by default. To enable telemetry polling, go to the **Accounts** table on the **Accounts** page, and use the toggle button of the relevant row(s) in the **Polling** column.
