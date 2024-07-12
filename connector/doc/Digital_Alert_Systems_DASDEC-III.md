@@ -13,19 +13,25 @@ The purpose of this connector is to receive alerts from the DASDEC-III. It will 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x              | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Added HTTP/SNMP  | 1.0.0.2      | Element configuration must be adapted|
+                         Connections  
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 5.2.2                  |
+| 1.0.1.x   | 5.2.2                  |
+
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+
 
 ## Configuration
 
@@ -96,3 +102,7 @@ Via the  **Alert Logging** page button, you can access the Alert Logging table a
 This page contains the last received message.
 
 You can also trigger an RWT here by filling in all required Net parameters. You can also trigger an Automatic RWT, which will automatically send an RWT every 7 days.
+
+### Web Interface
+
+This page displays the web GUI.
