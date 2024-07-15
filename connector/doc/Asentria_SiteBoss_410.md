@@ -12,19 +12,17 @@ The connector allows you to monitor general parameters (e.g. system uptime, loca
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Alarm and Trap refinement  | -            | -                 |
-
+| Range              | Key Features              | Based on | System Impact |
+|--------------------|---------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version           | -        | -             |
+| 1.0.1.x [SLC Main] | Alarm and trap refinement | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x [Obsolete]  | 3.11T                  |
-| 1.0.1.x   | 3.11T                  |
-
+| Range              | Supported Firmware |
+|--------------------|--------------------|
+| 1.0.0.x [Obsolete] | 3.11T              |
+| 1.0.1.x            | 3.11T              |
 
 ### System Info
 
@@ -94,7 +92,7 @@ This page contains the settings for the analog 1 and 2 inputs. This includes the
 
 This page contains information about relay 1 and 2 outputs. It also allows you to send a pulse for a specific duration between 1 and 15 seconds. This pulse will always operate with the opposite value of the current state. For example, if the current state is opened and pulse duration is 5 seconds, a pulse with 5 seconds of closed state will be sent to the device.
 
-This page also contains the page buttons to all contact pages. Each contact page contains the following information: Name, Alarms Enabled/Disabled, Time threshold, Trap Repeat, Contact State, Contact Active Direction, Return to Normal Trap, Contact Alarm Severity and Alarm State.
+This page also contains the page buttons to all contact pages. Each contact page contains the following information: Name, Alarms Enabled/Disabled, Time Threshold, Trap Repeat, Contact State, Contact Active Direction, Return to Normal Trap, Contact Alarm Severity, and Alarm State.
 
 ### Alarms and Traps
 
