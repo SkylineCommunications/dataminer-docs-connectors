@@ -14,19 +14,24 @@ The connector allows you to monitor general parameters (e.g. system uptime, loca
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Alarm and Trap refinement  | -            | -                 |
+
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 3.11T                  |
+| 1.0.0.x [Obsolete]  | 3.11T                  |
+| 1.0.1.x   | 3.11T                  |
+
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -89,17 +94,16 @@ This page contains the settings for the analog 1 and 2 inputs. This includes the
 
 This page contains information about relay 1 and 2 outputs. It also allows you to send a pulse for a specific duration between 1 and 15 seconds. This pulse will always operate with the opposite value of the current state. For example, if the current state is opened and pulse duration is 5 seconds, a pulse with 5 seconds of closed state will be sent to the device.
 
-This page also contains the page buttons to all contact pages. Each contact page contains the following information: Name, Alarms Enabled/Disabled, Time threshold, Trap Repeat, Contact State, Contact Active Direction, Return to Normal Trap, and Contact Alarm Severity,
+This page also contains the page buttons to all contact pages. Each contact page contains the following information: Name, Alarms Enabled/Disabled, Time threshold, Trap Repeat, Contact State, Contact Active Direction, Return to Normal Trap, Contact Alarm Severity and Alarm State.
 
 ### Alarms and Traps
 
-This page displays information obtained from trap processing and severity information obtained from other parameters in the device.
+This page displays information obtained from trap processing.
 
 It contains a table with a fixed number of rows (1 per type) and the following columns:
 
 - **Instance**: The origin of an alarm/trap, e.g. *Analog 1*, *Contact 5*, *Humidity*.
-- **Time**: The time when the trap was received (or the start-up time in case the element is started for the first time).
-- **Alarm Description**: A concatenated string containing the instance and severity.
-- **Severity**: The severity of the alarm (Normal, Warning, Minor, Major, Critical, Severe).
-- **OID**: The OID of the trap. Can be empty when the element is just started. Can also be "Manually Cleared" if the Manual Clear button is pressed.
-- **Manual Clear:** A button to manually clear a trap.
+- **Sensor Name**: The name assigned to the sensor.
+- **Time**: The time when the trap was received.
+- **Trap Description**: The description of the trap, e.g. *Active*/*Normal* for contact sensors, *Very Low*/*Low*/*High*/*Very High*/*Normal* for non-contact sensors.
+- **OID**: The OID of the trap.
