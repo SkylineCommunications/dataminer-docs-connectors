@@ -45,14 +45,14 @@ This connector polls data from the device using a **smart-serial** connection. F
 | LYNX Technik AG Series 5000 - DAD 5220   | Dual AES Audio Distribution Amplifier                     |
 | LYNX Technik AG Series 5000 - DVD 5810   | SDI/ASI Distribution Amplifier                            |
 | LYNX Technik AG Series 5000 - DVO 5820   | Dual SDI/ASI Distribution Amplifier with Fiber I/O        |
-| LYNX Technik AG Series 5000 - ORR 1802   | Dual 3G Fiber Optic to SDI Receiver                       |
-| LYNX Technik AG Series 5000 - ORX 1702   | Analog Sync / Video Fiber Optic Receiver                  |
-| LYNX Technik AG Series 5000 - ORX 5800   | Quad Fiber Optic to SDI Receiver                          |
-| LYNX Technik AG Series 5000 - OTT 1812   | Dual 3G SDI to Fiber Optic Transmitter                    |
-| LYNX Technik AG Series 5000 - OTX 1712   | Analog Sync / Video Fiber Optic Receiver                  |
+| LYNX Technik AG Series 5000 - ORR 1802   | Dual 3G Fiber-Optic-to-SDI Receiver                       |
+| LYNX Technik AG Series 5000 - ORX 1702   | Analog Sync / Video Fiber-Optic Receiver                  |
+| LYNX Technik AG Series 5000 - ORX 5800   | Quad Fiber-Optic-to-SDI Receiver                          |
+| LYNX Technik AG Series 5000 - OTT 1812   | Dual 3G SDI-to-Fiber-Optic Transmitter                    |
+| LYNX Technik AG Series 5000 - OTX 1712   | Analog Sync / Video Fiber-Optic Receiver                  |
 | LYNX Technik AG Series 5000 - RCT 1012   | Rack Controller                                           |
 | LYNX Technik AG Series 5000 - SPG 1707   | HD / SD Sync Pulse Generator with Genlock                 |
-| LYNX Technik AG Series 5000 - OTX 5840   | Quad SDI to Fiber Optic Transmitter                       |
+| LYNX Technik AG Series 5000 - OTX 5840   | Quad SDI-to-Fiber-Optic Transmitter                       |
 
 ## Installation and configuration
 
