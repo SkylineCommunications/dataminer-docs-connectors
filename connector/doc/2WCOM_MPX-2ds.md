@@ -54,4 +54,4 @@ The web interface is only accessible when the client machine has network access 
 
 On the **Polling Config** page, you can configure which polling groups should be polled. By default, they are all disabled.
 
-The **Virtual Common Audio Decoder Input Sources Ts Demux** table identifies which SAT Tuner each service uses by the StrInfo value containing RF1 or RF2. This impacts the **RF Level**, **C/N**, and **TS Sync** values of the **Service Info** table.
+The **Virtual Common Audio Decoder Input Sources Ts Demux** table shows which SAT tuner each service uses by displaying "RF1" or "RF2" in the StrInfo column. This impacts the **RF Level**, **C/N**, and **TS Sync** values of the **Service Info** table.
