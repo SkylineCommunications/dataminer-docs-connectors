@@ -5170,6 +5170,8 @@
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVA_5718-L
   - name: LYNX Technik AG Series 5000 - DVD 5820
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVD_5820
+  - name: LYNX Technik AG Series 5000 - OTX 5840
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_OTX_5840
   - name: LYNX Technik AG Series 5000 - PDM 5380
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_PDM_5380
   - name: LYNX Technik AG Series 5000 - PMX 5364
