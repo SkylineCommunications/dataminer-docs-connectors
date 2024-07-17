@@ -12,8 +12,6 @@ This connector is the basic service definition used to create enhanced services.
 
 The connector makes active alarms and subscribed elements available in the service.
 
-Enhanced services require a DataMiner version of **9.0.3.0** or higher.
-
 ### Version Info
 
 | Range                | Key Features     | Based on     | System Impact     |
@@ -36,7 +34,7 @@ Enhanced services require a DataMiner version of **9.0.3.0** or higher.
 
 ### Creation
 
-When editing a service, open the **Advanced** tab and select the desired **Definition**, in this case *Skyline Service Definition Basic*. Also select the desired **Version**.
+When editing a service, open the **Advanced** section and select the desired **Protocol**, in this case *Skyline Service Definition Basic*. Also select the desired **Version**.
 
 ### Configuration
 
