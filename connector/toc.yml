@@ -1022,6 +1022,10 @@
     topicUid: Connector_help_AVT_Magic_SDC_EDI_Converter
   - name: AVT MAGIC THipPRo Telephone Hybrids
     topicUid: Connector_help_AVT_MAGIC_THipPRo_Telephone_Hybrids
+- name: AVTECH
+  items:
+  - name: AVTECH RoomAlert Monitor
+    topicUid: Connector_help_AVTECH_RoomAlert_Monitor
 - name: Axel Technology
   items:
   - name: Axel Technology Wolf2MS
