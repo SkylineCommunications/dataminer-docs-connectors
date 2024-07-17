@@ -115,7 +115,7 @@ The **Message field configuration** allows you to define which data fields from 
 
 It is possible to specify additional filters to append to WorkOrderQuery Filter tag by adding rows to the **Work Order Query Filtering** table. Adding and removing rows is done through a context menu. Keys of the table are mapped to ScheduAll field names by which the filtering will be done. Values can be added as a semicolon separated list. 
 
-For example: Row with a key of "EXTID" and Field Value of "1;9;4" will translated to "AND (EXTID='       1' OR EXTID='       9' OR EXTID='       4')" being appended to the WorkOrderQuery filter.
+For example: Row with a key of "EXTID" and Field Value of "1;9;4" will translated to "AND (EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1' OR EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9' OR EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4')" being appended to the WorkOrderQuery filter.
 
 This feature can be toggled with the **Work Order Query Filter by Field** parameter.
 
