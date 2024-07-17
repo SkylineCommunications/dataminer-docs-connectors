@@ -111,6 +111,14 @@ The **Message field configuration** allows you to define which data fields from 
 - **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Client Details Fields** column in the **Client Overview** table.
 - **Query Custom Values**: Here you can define which fields have to be retrieved in addition to the default fields from the resource info table in ScheduAll. Per resource, the values are stored in the **Custom x** columns in the **Resource Information** table.
 
+#### Query Filtering
+
+It is possible to specify additional filters to append to WorkOrderQuery Filter tag by adding rows to the **Work Order Query Filtering** table. Adding and removing rows is done through a context menu. Keys of the table are mapped to ScheduAll field names by which the filtering will be done. Values can be added as a semicolon separated list. 
+
+For example: Row with a key of "EXTID" and Field Value of "1;9;4" will translated to "AND (EXTID='       1' OR EXTID='       9' OR EXTID='       4')" being appended to the WorkOrderQuery filter.
+
+This feature can be toggled with the **Work Order Query Filter by Field** parameter.
+
 ### Configuration - Interop Service
 
 This page contains the **interop-specific configuration** parameters. Via the **Credentials** button, you can access a subpage where you can enter **user credentials**. These credentials are the **ScheduAll credentials** that will allow communication between DataMiner and the interop service.
