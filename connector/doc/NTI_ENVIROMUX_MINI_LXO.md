@@ -18,9 +18,9 @@ The NTI ENVIROMUX MINI LXO connector allows you to configure and monitor each of
 
 ### Product Info
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | 2.9.2.r1.588       |
+|Range  | Supported Model | Supported Firmware  |
+|---------|---------|---------|
+|1.0.0.x     |E-MINI-LXO     |4.4         |
 
 ### System Info
 
