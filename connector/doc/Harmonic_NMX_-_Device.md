@@ -12,15 +12,15 @@ The device information is retrieved via an SNMP connection and a serial connecti
 
 ### Version Info
 
-| **Range**                | **Key Features**                                                               | **Based on** | **System Impact**                                                           |
-|--------------------------|--------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------|
-| 1.0.0.x                  | Initial version.                                                               | -            | -                                                                           |
-| 2.0.0.x                  | Initial version SNMP.                                                          | -            | -                                                                           |
-| 3.0.0.x                  | DVE integration.                                                               | -            | -                                                                           |
-| 4.0.0.x                  | Parsing XML with LINQ, streams per device.                                     | -            | -                                                                           |
-| 4.0.1.x                  | Smart-serial conversion.                                                       | -            | -                                                                           |
-| 4.1.0.x                  | REST API communication.                                                        | 4.0.1.5      | -                                                                           |
-| 4.1.1.x **\[SLC Main\]** | \- REST API refactored. - Enhancement of HTTP data relations and organization. | 4.1.0.3      | \- Primary/ display keys changed. - Possible impact on monitoring/trending. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 2.0.0.x | Initial version SNMP. | - | - |
+| 3.0.0.x | DVE integration. | - | - |
+| 4.0.0.x | Parsing XML with LINQ, streams per device. | - | - |
+| 4.0.1.x | Smart-serial conversion. | - | - |
+| 4.1.0.x | REST API communication. | 4.0.1.5 | - |
+| 4.1.1.x **[SLC Main]** | - REST API refactored. <br>- Enhancement of HTTP data relations and organization. | 4.1.0.3 | - Primary/ display keys changed. <br>- Possible impact on monitoring/trending. |
 
 ### Product Info
 
@@ -75,10 +75,10 @@ The **Data Tables** page button provides access to the tables used in the **Stre
 
 ### Page Matrix
 
-This page displays **which** **output** **is connected to which input** if the device is a matrix. For other devices (e.g. encoders), this table is empty.
+This page displays **which output is connected to which input** if the device is a matrix. For other devices (e.g. encoders), this table is empty.
 
 ### Page Stream Overview
 
-This page displays a tree control that provides an overview of all **input and output streams** **and their services, PIDs and descriptors**. If you click an input stream, the parameter **Stream Active Channel** allows you to **switch between** **primary and backup**.
+This page displays a tree control that provides an overview of all **input and output streams and their services, PIDs and descriptors**. If you click an input stream, the parameter **Stream Active Channel** allows you to **switch between primary and backup**.
 
 Note: It is not possible to define alarms on the tables included in this tree control, because a stream can be output for one device but also input for another device. In other words, rows of the base table can be exported to different DVEs and it is not possible to have one alarm that is linked to multiple elements.

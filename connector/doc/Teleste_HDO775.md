@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_Teleste_HDO908
+uid: Connector_help_Teleste_HDO775
 ---
 
-# Teleste HDO908
+# Teleste HDO775
 
-The HDO908 is a transmitter. The **Teleste HDO908** connector can be used to display and configure information of the related device. This device has two configurable inputs.
+The HDO775 is a transmitter. The **Teleste HDO775** connector can be used to display and configure information of the related device.
 
 A **serial** connection is used in order to successfully retrieve and configure the information of the device. There are also different possibilities available for **alarm monitoring** and **trending**.
 
@@ -38,14 +38,14 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the HDO908 device.
-- **IP port**: The IP port of the HDO908 device.
+- **IP address/host**: The polling IP of the HDO775 device.
+- **IP port**: The IP port of the HDO775 device.
 
 ### How to Use
 
 The connector uses serial commands to request and push information to and from the node. This communication can be seen in the Stream Viewer.
 
-The element using the HDO908 connector has a General, Monitoring, and Adjustment page.
+The element using the HDO775 connector has a General, Monitoring, and Adjustment page.
 
 - On the **General** page, you can find all the details related to general information about the device, and you can set the device name.
 
