@@ -392,10 +392,10 @@ By importing parameter monitors, you can easily create a large number of new par
    This should add all the defined monitors.
 
 > [!NOTE]
-> No validation is done on the imported monitors. It is your own responsibility to verify if what you import is correct (so that the element, parameter, and index exist). The only checks that are done are to prevent that existing monitors could get corrupted (i.e. changed or duplicated). In any case, when importing monitors it is good practice to always check the element logging and verify if no errors are reported. Also check in the Parameter Value Monitors table if all expected monitors have been added, and if they have obtained a valid value. This is the only way to be sure an import has been fully successful.
+> When importing parameter monitors checks will be performed to verify for each parameter monitor if the element, parameter and (if applicable) index exist. If any of the to be imported parameter monitors is invalid a pop-up message will be shown indicating the reason why it is invalid and none of the to be imported parameter monitors will be imported or added. On top of that checks are done to prevent that existing monitors could get corrupted (i.e. changed or duplicated). In any case, when importing monitors it is good practice to always check the element logging and verify if no errors are reported. Also check in the Parameter Value Monitors table if all expected monitors have been added, and if they have obtained a valid value. This is the only way to be sure an import has been fully successful.
 
 ### Importing Condition Monitors
 
 Proceed in the same way as for the import of parameter monitors, editing at least the Name value (second column) and Condition value (fourth column).
 
-Like with the import of parameter monitors, no validation is performed, but the overwriting or deleting of existing conditions will be prevented.
+Unlike with the import of parameter monitors, no validation whatsoever is performed, but the overwriting or deleting of existing conditions will be prevented.
