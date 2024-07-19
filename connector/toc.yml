@@ -3738,6 +3738,8 @@
     topicUid: Connector_help_GatesAir_Flexiva_M3FM-TX_1P1
   - name: GatesAir Flexiva M3FM-TX 1P1 Transmitter
     topicUid: Connector_help_GatesAir_Flexiva_M3FM-TX_1P1_Transmitter
+  - name: GatesAir Intraplex Ascent
+    topicUid: Connector_help_GatesAir_Intraplex_Ascent
   - name: GatesAir LX
     topicUid: Connector_help_GatesAir_LX
   - name: GatesAir Maxiva M2X
