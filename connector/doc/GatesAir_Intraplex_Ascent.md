@@ -4,7 +4,7 @@ uid: Connector_help_GatesAir_Intraplex_Ascent
 
 # GatesAir Intraplex Ascent
 
-The GatesAir Intraplex Ascent is a sophisticated broadcast solution designed to provide reliable, scalable, and secure audio over IP (AoIP) transport. It enables broadcasters to manage multiple audio streams efficiently and ensures high-quality, low-latency transmission. The system supports various audio codecs and network redundancy features, making it ideal for mission-critical broadcasting applications. Ascent is known for its robust performance, ease of use, and advanced network management capabilities, catering to the needs of modern broadcast operations.
+The GatesAir Intraplex Ascent is a sophisticated broadcast solution designed to provide reliable, scalable, and secure audio over IP (AoIP) transport. It enables broadcasters to manage multiple audio streams efficiently and ensures high-quality, low-latency transmission. The system supports various audio codecs and network redundancy features, making it ideal for mission-critical broadcasting applications.
 
 ## About
 
@@ -54,5 +54,4 @@ The element created with this connector has the following data pages:
 
 - **Stream Module**: A few tables are found here with information about **Streams** and their properties.
 
-- **Network**: Displays config information for both **Nework Access and Forwarding**.
-
+- **Network**: Displays config information for both **Network Access and Forwarding**.
