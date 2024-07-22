@@ -14,21 +14,24 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range                | Key Features              | Based on     | System Impact     |
+|----------------------|---------------------------|--------------|-------------------|
+| 1.0.0.x              | Initial version           | -            | -                 |
+| 1.0.1.x [SLC Main]   | Added UPC Channels Table  | 1.0.0.2      | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 4.99                   |
+| 1.0.1.x   | 4.99                   |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | No                      | -                     | -                       |
+| 1.0.1.x   | No                  | No                      | -                     | -                       |
 
 ## Installation and configuration
 
@@ -71,6 +74,14 @@ This page displays the **Down Converter Table**, which contains detailed informa
 ### Faults Module
 
 This page contains the **Faults Table**, which displays alarms and complete information about the origin of faults.
+
+### UPC
+
+This page displays UPC parameters, some of which can be configured, as well as the **UPC Channels table**.
+
+### Configuration
+
+On this page, you can view and configure the Ethernet and Redundancy parameters.
 
 ### WebInterface
 

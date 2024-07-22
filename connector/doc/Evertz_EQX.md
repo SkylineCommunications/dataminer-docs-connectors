@@ -21,12 +21,15 @@ Based on the type of card, different tables and parameters are available in the 
 
 ### Version Info
 
-| **Range**            | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]     |Initial version                                                | Yes                 | No                      |
-| 2.0.0.x [Obsolete]     |Yes                                                            | No                  |                         |
-| 2.0.1.x [Obsolete]     |Yes                                                            | No                  |                         |
-| 3.0.0.x [SLC Main]   | Stripped version with new firmware. Serial connection removed. | Yes                 | No                      |
+| Range                                  | Description                                                         | DCF Integration | Cassandra Compliant |
+|----------------------------------------|---------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete]                     | Initial version                                                     | Yes             | No                  |
+| 2.0.0.x [Obsolete]                     | -                                                                   | Yes             | No                  |
+| 2.0.1.x [SLC Main]                     | -                                                                   | Yes             | No                  |
+| 3.0.0.x [Obsolete - Customer-Specific] | Stripped-down version with new firmware. Serial connection removed. | Yes             | No                  |
+
+> [!NOTE]
+> Previously, 3.0.0.x was considered to be the main range. However, this has been reverted back to 2.0.1.x. 3.0.0.x is a stripped-down version of the connector that does not include the matrix and some other functionality.
 
 ## Configuration
 
