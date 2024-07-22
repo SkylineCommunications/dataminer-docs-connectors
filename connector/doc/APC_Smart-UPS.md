@@ -15,12 +15,16 @@ This connector can be used with all APC Smart-UPS models. It makes it possible t
 | Range | Description              | DCF Integration | Cassandra Compliant |
 |------------------|------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, added traps | No                  | No                      |
+| 1.0.2.x          | Obsolete | No                  | No                      |
+| 1.0.3.x [SLC Main]          | Obsolete | No                  | Yes                      |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | UPS 07.4 (ID1003)           |
+| 1.0.2.x          | UPS 07.4 (ID1003)           |
+| 1.0.3.x          | UPS 07.4 (ID1003)           |
 
 ## Installation and configuration
 
@@ -48,8 +52,11 @@ This page contains general information such as **software versions**, **diagnost
 
 ### Battery Status
 
-On this page, it is possible to check different parameters related to the operational state of the battery as well as the information
-concerning battery packs.
+On this page, it is possible to check different parameters related to the operational state of the battery as well as the information concerning battery packs.
+
+#### Notes for range 1.0.3.X
+
+The column "Status" of the Battery Packs table was replaced by different columns that represent better the statuses of each battery pack entry. The process of the "Health" status column was fixed.
 
 ### Power Status
 
