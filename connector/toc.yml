@@ -1566,6 +1566,8 @@
     topicUid: Connector_help_Beckhoff_BK9000
   - name: Beckhoff KL2622
     topicUid: Connector_help_Beckhoff_KL2622
+  - name: Beckhoff KL3202
+    topicUid: Connector_help_Beckhoff_KL3202
 - name: Beenius
   items:
   - name: Beenius IPTV Delivery Platform
