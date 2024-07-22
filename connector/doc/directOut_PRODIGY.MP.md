@@ -51,13 +51,15 @@ On the **Communication** page, you can see the last sent command and its respons
 
 If you wish to test a command, you can do so by setting the **Outgoing Command Content** parameter to the command you wish to send and then clicking the **Send Command** button. The **Incoming Response Content** parameter will display the response.
 
+To create sets on the device, a DMA user must have access level 1.
+
 The remaining pages display status and settings data:
 
-- General page: Contains system information data.
+- General page and subpages: Contains system information data.
 - Matrix page and subpages: Contains information about inputs/outputs.
 - DSP page and subpages: Contains data about the Input Managers, Audio Delays, Sum Buses, Flex Channels, Automix, and Mixers.
 - Status page and subpages: Contains all the status-related data.
 - Settings page and subpages: Contains all the data related to settings.
-- IP Config page: Contains the IP configuration parameters.
+- IP Configuration page: Contains the IP configuration parameters.
 - Mirroring page: Contains the mirroring configuration parameters.
 - Snapshots page: Contains data about available snapshots.
