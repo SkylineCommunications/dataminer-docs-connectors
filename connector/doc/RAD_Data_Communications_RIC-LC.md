@@ -26,6 +26,10 @@ This connector can be used to monitor RAD Data Communications RIC-LC Ethernet co
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
+## Important Note
+
+This connector uses GetNext for retrieving SNMP params. This is deliberate as the device is not able to handle high traffic of requests and will result in device crashes.
+
 ## Configuration
 
 ### Connections
