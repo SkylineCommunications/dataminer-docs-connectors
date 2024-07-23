@@ -16,7 +16,7 @@ This connector can be used with all APC Smart-UPS models. It makes it possible t
 |------------------|------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, added traps | No                  | No                      |
 | 1.0.2.x          | Obsolete | No                  | No                      |
-| 1.0.3.x [SLC Main]          | Obsolete | No                  | Yes                      |
+| 1.0.3.x [SLC Main]          | Battery Packs table correctly processing statuses. | No                  | Yes                      |
 
 ### Product Info
 
@@ -31,13 +31,10 @@ This connector can be used with all APC Smart-UPS models. It makes it possible t
 ### Creation
 
 Follow the standard procedure for SNMP managed devices. No additional information is required.
-
 **SNMP Connection**
 
 - **IP address/host**: The polling IP of the device.
-
 **SNMP Settings**
-
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
@@ -56,7 +53,7 @@ On this page, it is possible to check different parameters related to the operat
 
 #### Notes for range 1.0.3.X
 
-The column "Status" of the Battery Packs table was replaced by different columns that represent better the statuses of each battery pack entry. The process of the "Health" status column was fixed.
+The column "Status" of the Battery Packs table was replaced by different columns that represent better the statuses of each battery pack entry. The processing of the "Health" status column was fixed.
 
 ### Power Status
 
