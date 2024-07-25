@@ -13,7 +13,7 @@ LiveU Central is a management platform where live feeds can be monitored and man
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
-| 1.1.0.x [SLC Main]   |  Support the new API endpoints and headers. | 1.0.0.11           | Need to fill in the new API Key parameter for the connector to work properly.                |
+| 1.1.0.x [SLC Main]   | Support the new API endpoints and headers. <br> Minimum required DMA version: 10.1.11.0. | 1.0.0.11           | Need to fill in the new API Key parameter for the connector to work properly.                |
 
 ### Product Info
 
