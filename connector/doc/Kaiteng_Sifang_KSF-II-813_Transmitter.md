@@ -38,7 +38,6 @@ SNMP CONNECTION:
 
 - **IP address/host**: [The polling IP or URL of the destination.]
 - **IP port**: [The IP port of the destination. (default: *161*)]
-- **Bus address**: [The bus address of the device. (default: *ByPassProxy*)]
 
 SNMP Settings:
 
@@ -58,3 +57,6 @@ The connector contains the following pages:
 - **Power Amplifier**: Expand to view displayed parameters of power amplifiers 1-8.
 - **DC Power Supply**: Display parameters of DC power supplies 1-4.
 - **Exciter**: Displays parameters for Exciters 1 and 2.
+
+## Note
+Each amplifier, power supply and exciter has the option to be polled by the driver. This option is disabled for all components by default.
