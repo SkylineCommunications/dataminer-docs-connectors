@@ -1,0 +1,61 @@
+---
+uid: Connector_help_Novelsat_Xstream
+---
+
+# Novelsat Xstream
+
+NOVELSAT Xstream Multi-Purpose Gateway is for multiple interfaces satellite networks requiring any-to-any high-speed connectivity solution. Addressing multiple applications including video delivery, Earth observation, SIGINT, Cloud and IoT.
+This connector retrieves the data from the Demodulator and Modulator cards from the chassis.
+
+## About
+
+### Version Info
+
+**This subsection can only be omitted for an exported connector**
+
+|Range  |Features  |Based on  |System Impact  |
+|---------|---------|---------|---------|
+|1.0.0.x [SLC Main]     |<ul><li>Demodulator</li><li>Modulator</li></ul>         |-         |-         |
+
+### Product Info
+
+**This subsection can only be omitted for a virtual connector**
+
+|Range  |Supported Firmware  |
+|---------|---------|
+|1.0.0.x     |2.9.2.r1.588         |
+
+### System Info
+
+|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
+|---------|---------|---------|---------|---------|
+|1.0.0.x    |No       |Yes         |-         |   |
+
+## Configuration
+
+### Connections
+
+#### HTTP Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+  - **IP address/host**: [The polling IP or URL of the destination.]
+  - **IP port**: [The IP port of the destination. (default: *8443*)]
+  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+
+### Initialization
+
+A token of an admin account has to be filled in on the **Settings** page.
+
+## How to use
+
+When a token is filled in, it will retrieve the Demodulator and Modulator info through the REST API.
+
+### Examples
+
+On the **General** page you can find some chassis metrics and a table with connected modules.
+
+For the Demodulator and Modulator there are 2 pages 1 for the configuration parameters and 1 for the status parameters.
+Each page has some tables dividing parameters according to the web interface of the device.
