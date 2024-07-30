@@ -23,7 +23,7 @@ This connector retrieves the data from the Demodulator and Modulator cards from 
 
 |Range  |Supported Firmware  |
 |---------|---------|
-|1.0.0.x     |2.9.2.r1.588         |
+|1.0.0.x     |2.1.2         |
 
 ### System Info
 
