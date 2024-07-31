@@ -24,6 +24,7 @@ This connector allows to monitor and configure the Pro-Bel Cygnus routing system
 |------------------|-----------------------------|
 | 1.0.0.x          | -                           |
 | 2.0.0.x          | -                           |
+| 3.0.0.x          | -                           |
 
 ## Installation and configuration
 
@@ -65,7 +66,7 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device.
   - **Bus address**: 1
 
-## Usage
+## Usage - SERIAL
 
 ### Matrix
 
@@ -84,3 +85,42 @@ This page allows to set advanced switching using the **Advanced Switching** para
 ### Matrix Status
 
 On this page an overview is given of the crosspoints (**Crosspoints**), the crosspoints buffer (**Crosspoints Buffer**), and status information (**Status Information** and **Communication Status**).
+
+## Usage - SNMP
+
+### General
+This page shows the general information of the device. It displays its status and name.
+
+### Matrice
+This page shows an overview of the Matrice Table.
+
+### Levels
+This page shows an overview of the Levels Table. The format of the Index is {Matrice Index}.{Levels Id}.
+
+### Sources
+This page shows an overview of the Sources Table. The format of the Index is {Levels Index}.{Sources Id}.\
+The display name can be configured in the format of **Source Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name.
+
+The Audio Modify can also be configured on the table, and its respective enabled and lock state that are used for in the Matrix.
+
+#### Source Association
+This page shows an overview of the Source Assiociation Table and the Source Association Sources.
+
+#### Source Settings
+This page allows the 
+The display name can be configuration of the Sources Table display name. It is formatted in the format of **Source Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name. The default configuration uses the 16 character name choice.
+
+### Destinations
+This page shows an overview of the Destinations Table. The format of the Index is {Levels Index}.{Destinations Id}.\
+The display name can be configured in the format of **Destination Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name.
+
+The routed source can also be configured on the table, and its respective enabled and lock state that are used for in the Matrix.
+
+#### Destination Settings
+This page allows the 
+The display name can be configuration of the Destinations Table display name. It is formatted in the format of **Destination Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name. The default configuration uses the 16 character name choice.
+
+### Matrix
+This page shows the Matrix, an overview of the crosspoints of the destinations and sources.\
+The sources of each destination can be configured on this Matrix, as well as locking of destinations and sources.
+
