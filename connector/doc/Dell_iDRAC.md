@@ -15,12 +15,13 @@ This connector communicates using SNMP v3. It can be used to monitor and trend a
 | Range | Description | DCF Integration | Cassandra Compliant |
 |------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version | No                  | Yes                     |
-
+| 1.0.1.x          | HTTP API Added  | No                  | Yes                     |
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | 2.30.30.30                  |
+| 1.0.1.x          | 2.30.30.30 for SNMP. iDRAC 9 and above for HTTP.|
 
 ## Installation and configuration
 
@@ -42,6 +43,18 @@ SNMP Settings:
 - **Authentication password**: The SNMPv3 authentication password.
 - **Privacy type**: The SNMPv3 privacy type.
 - **Privacy password**: The SNMPv3 privacy password.
+
+#### HTTP Main connection (Range 1.0.1.x)
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination. Default: *443*.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+- **Number of Retries**: The number of retries for HTTP commands. This should be set to "0" for write parameters to work properly.
+- **Timeout of a single command (ms)**: The time between HTTP commands. This should be set to "15000".
 
 ## Usage
 
