@@ -94,7 +94,7 @@ There is no redundancy defined.
 
 In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:
 
-- **Maximum Timing Offset Level**: Range from 0 to 2000 µs.
+- **Maximum Timing Offset Level**: Range from 0 to 10000 µs.
 - **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
 - **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
 - **Minimum SNR Level**: Range from 10 to 60 dB.

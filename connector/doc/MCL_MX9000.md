@@ -12,10 +12,10 @@ The connector communicates with the device via serial commands. It can be used i
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                       | **Based on** | **System Impact** |
-|-----------|----------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                                                        | -            | -                 |
-| 1.1.0.x   | \- Issues with incorrectly interpreted input resolved. - Duplicate parameters removed. | -            | -                 |
+| Range   | Key Features                                                                              | Based on | System Impact |
+|---------|-------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version                                                                           | -        | -             |
+| 1.1.0.x | - Issues with incorrectly interpreted input resolved. <br>- Duplicate parameters removed. | -        | -             ||
 
 ### Product Info
 
