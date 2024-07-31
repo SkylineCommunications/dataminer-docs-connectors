@@ -16,6 +16,7 @@ This connector allows to monitor and configure the Pro-Bel Cygnus routing system
 |------------------|----------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version      | No                  | Yes                     |
 | 2.0.0.x          | Smart Serial version | No                  | Yes                     |
+| 3.0.0.x          | SNMP version         | No                  | Yes                     |
 
 ### Product Info
 
