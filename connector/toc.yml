@@ -5186,6 +5186,10 @@
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_PVD_5840-D
   - name: LYNX Technik AG Series 5000 - RCT 5023-G
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_RCT_5023-G
+  - name: LYNX Technik AG Series 5000 - ORX 1802
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_ORX_1802
+  - name: LYNX Technik AG Series 5000 - CHD 1402-2
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CHD_1402
 - name: M3 Systems
   items:
   - name: M3 Systems SMT
