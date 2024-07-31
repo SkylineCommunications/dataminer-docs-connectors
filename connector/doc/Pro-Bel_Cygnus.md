@@ -8,7 +8,7 @@ This connector allows to monitor and configure the the Pro-Bel Cygnus routing sy
 
 ## About
 
-This connector allows to monitor and configure the Pro-Bel Cygnus routing system, using smart-serial communication. The connector has two smart-serial connections which are set up as redundant polling.
+This connector allows to monitor and configure the Pro-Bel Cygnus routing system, using smart-serial communication or SNMP communication. The connector has two smart-serial connections which are set up as redundant polling.
 
 ### Version Info
 
@@ -28,7 +28,7 @@ This connector allows to monitor and configure the Pro-Bel Cygnus routing system
 
 ## Installation and configuration
 
-### Creation
+### Configuration - SERIAL
 
 #### Serial connection - Main
 
@@ -65,7 +65,19 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
   - **Bus address**: 1
+  - 
+### Configuration - SNMP
+#### SNMP Main connection
 
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: 161
+- **Get community string**: public
+- **Set community string**: private
 ## Usage - SERIAL
 
 ### Matrix
