@@ -15,7 +15,8 @@ This connector uses **SNMP** to retrieve and configure parameters of the Sencore
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
 | 1.0.0.x | Initial version | No | Yes |
-| 1.0.1.x [Main] | - Fixes Input Primary & Secondary Source Output, making it dynamic and mutually exclusive using labels from Transport Stream Input Source. <br>- Fixes Output Manual Format behavior. <br>- Adds Overlay Image parameters, SCTE35 info, SCTE104 Filter Mode, and ASI parameters. <br>- Fixes SETs for IP Address-like and Port-like parameters. | No | Yes |
+| 1.0.1.x | - Fixes Input Primary & Secondary Source Output, making it dynamic and mutually exclusive using labels from Transport Stream Input Source. <br>- Fixes Output Manual Format behavior. <br>- Adds Overlay Image parameters, SCTE35 info, SCTE104 Filter Mode, and ASI parameters. <br>- Fixes SETs for IP Address-like and Port-like parameters. | No | Yes |
+| 1.0.2.x [Main] | Addition of HTTP connection | No | Yes |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ This connector uses **SNMP** to retrieve and configure parameters of the Sencore
 |------------------|-----------------------------|
 | 1.0.0.x          | 2.5.0                       |
 | 1.0.1.x          | 2.5.0                       |
+| 1.0.2.x          | 2.5.0                       |
 
 ## Installation and configuration
 
@@ -41,6 +43,20 @@ SNMP Settings:
 - **IP port**: The IP port of the device.
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
+
+#### HTTP Connection (1.0.2.X)
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**
+- **IP port**:
+
+HTTP Settings:
+
+- **Username**: The username to request the SID.
+- **Password**: The password used on the request to get the SID.
 
 ## Usage
 
