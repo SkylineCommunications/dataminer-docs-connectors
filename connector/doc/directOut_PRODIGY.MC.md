@@ -4,7 +4,7 @@ uid: Connector_help_directOut_PRODIGY.MC
 
 # directOut PRODIGY.MC
 
-This connector monitors **PRODIGY.MC** (Modular Audio Converter) through its custom TCP API. 
+This connector monitors **PRODIGY.MC** (Modular Audio Converter) through its custom TCP API.
 
 PRODIGY.MC is DirectOut's modular audio converter, supporting multiple formats and offering flexible I/O, networked audio, and powerful hardware and software. PRODIGY.MC has been designed to address numerous applications in pro audio, broadcasting, installation, and studio applications, using a single hardware frame.
 
@@ -51,7 +51,7 @@ On the **Communication** page, you can see the last sent command and its respons
 
 If you wish to test a command, you can do so by setting the **Outgoing Command Content** parameter to the command you wish to send and then clicking the **Send Command** button. The **Incoming Response Content** parameter will display the response.
 
-To create sets on the device, a DMA user must have access level 1.
+To set parameters on the device, a DMA user must have access level 1.
 
 The remaining pages display status and settings data:
 
