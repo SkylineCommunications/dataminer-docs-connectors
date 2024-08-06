@@ -12,29 +12,34 @@ This connector can be used with all APC Smart-UPS models. It makes it possible t
 
 ### Version Info
 
-| Range | Description              | DCF Integration | Cassandra Compliant |
-|------------------|------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version, added traps | No                  | No                      |
-| 1.0.2.x          | Obsolete | No                  | No                      |
-| 1.0.3.x [SLC Main]          | Battery Packs table correctly processing statuses. | No                  | Yes                      |
+| Range              | Description                                           | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version. Added traps.                         | No              | No                  |
+| 1.0.2.x            | Obsolete.                                             | No              | No                  |
+| 1.0.3.x [SLC Main] | Battery Packs table now correctly processes statuses. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | UPS 07.4 (ID1003)           |
-| 1.0.2.x          | UPS 07.4 (ID1003)           |
-| 1.0.3.x          | UPS 07.4 (ID1003)           |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | UPS 07.4 (ID1003)          |
+| 1.0.2.x | UPS 07.4 (ID1003)          |
+| 1.0.3.x | UPS 07.4 (ID1003)          |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-Follow the standard procedure for SNMP managed devices. No additional information is required.
-**SNMP Connection**
+#### SNMP Connection - Main
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
-**SNMP Settings**
+
+SNMP Settings:
+
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
@@ -51,9 +56,8 @@ This page contains general information such as **software versions**, **diagnost
 
 On this page, it is possible to check different parameters related to the operational state of the battery as well as the information concerning battery packs.
 
-#### Notes for range 1.0.3.X
-
-The column "Status" of the Battery Packs table was replaced by different columns that represent better the statuses of each battery pack entry. The processing of the "Health" status column was fixed.
+> [!NOTE]
+> In range 1.0.3.x, the "Status" column of the Battery Packs table is replaced with different columns that better represent the status of each battery pack entry. The processing of the "Health" status column is also fixed in this range.
 
 ### Power Status
 
