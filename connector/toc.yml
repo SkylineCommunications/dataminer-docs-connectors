@@ -9522,6 +9522,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service
   - name: Vodafone Kabel Deutschland GmbH SAT DL Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service
+  - name: Vodafone Kabel Deutschland GmbH SI Stream Mapping
+    topicUid: Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
   - name: Vodafone Kabel Deutschland GmbH Site Switchover
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
