@@ -10,17 +10,17 @@ LiveU Central is a management platform where live feeds can be monitored and man
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
-| 1.1.0.x [SLC Main]   | Support the new API endpoints and headers. <br> Minimum required DMA version: 10.1.11.0. | 1.0.0.11           | Need to fill in the new API Key parameter for the connector to work properly.                |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.1.0.x [SLC Main] | Supports the new API endpoints and headers.<br> Minimum required DataMiner version: 10.1.11. | 1.0.0.11 | The new API Key parameter must be filled in for the connector to work properly. |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | LUC Backend API 8.3    |
-| 1.1.0.x   | Central Backend API 10.0    |
+| Range   | Supported Firmware       |
+|---------|--------------------------|
+| 1.0.0.x | LUC Backend API 8.3      |
+| 1.1.0.x | Central Backend API 10.0 |
 
 ### System Info
 
@@ -44,7 +44,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-To initialize communication, you need to provide a username, password, APP ID and API Key on the **Connection** page.
+To initialize communication, you need to provide a username, password, APP ID, and API Key on the **Connection** page.
 
 ### Web Interface
 
