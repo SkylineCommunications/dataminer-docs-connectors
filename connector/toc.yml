@@ -42,6 +42,8 @@
     topicUid: Connector_help_2WCOM_RDS_OCTO-IP
   - name: 2WCOM S02
     topicUid: Connector_help_2WCOM_S02
+  - name: 2WCOM SAT-4d
+    topicUid: Connector_help_2WCOM_SAT-4d
   - name: 2WCOM X-4sd
     topicUid: Connector_help_2WCOM_X-4sd
 - name: A10 Networks
