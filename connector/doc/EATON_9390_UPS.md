@@ -78,7 +78,7 @@ The **Environment Settings** subpage contains configuration parameters for tempe
 
 ### Alarms
 
-This page shows the number of alarms,**Alarms** and the **Alarm Table**. As well as the number of events, **Events** and the **Event Table**.
+This page shows the number of alarms, the current number of active alarm conditions, and the **Alarm Table**, as well as the number of events, the number of entries in the UPS event history queue, and the **Event Table**.
 
 ### UPS Configuration
 
