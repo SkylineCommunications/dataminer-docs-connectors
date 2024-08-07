@@ -4,18 +4,19 @@ uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
 
 # Vodafone Kabel Deutschland GmbH SI Stream Mapping
 
-This is a dedicated connector intended to store the links between the DataMiner Reservations, Input Transport Stream information and outgoing SDT/EIT PID information.
-The saved data tables within the connector are required by the SRM (Service and Resource Management) framework to setup the SI Streams correctly for the IP Gateway, IP Peering and SRT Gateway use cases.
+This is a dedicated connector intended to store the links between DataMiner reservations, input transport stream information, and outgoing SDT/EIT PID information.
+
+The saved data tables within the connector are required by the SRM (Service and Resource Management) framework to correctly set up the SI streams for the IP Gateway, IP Peering, and SRT Gateway use cases.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
-|----------------------|---------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version     | -            | -                 |
+| Range              | Key Features    | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
-### Product Info
+### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
