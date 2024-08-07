@@ -12,6 +12,10 @@ Range 2.1.0.x uses serial communication and introduces virtual matrixes. It work
 
 The Network Electronics MRP matrix routers are polled with SNMP from version 3.0.0.x onwards, and can connect each output with a single input. In addition, they allow the user to monitor fans, voltages, temperatures, etc.
 
+Version 1.0.2.1:
+
+- Matrix size has been increased to 1024x1024.
+
 Version 3.0.0.7 and higher:
 
 - The crosspoints are now retrieved and set using MRP communication. This happens on port *4381* and has been implemented to provide higher performance when the matrix is edited. All other values use SNMP.
@@ -29,6 +33,7 @@ Version 3.0.0.8 and higher:
 |------------------|---------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                   | No                  | Yes                     |
 | 1.0.1.x          | Virtual Matrix                                    | No                  | No                      |
+| 1.0.2.x          | Virtual Matrix that supports 1024x1024 matrix     | No                  | No                      |
 | 2.1.0.x          | Main Matrix, Virtual Matrix, Serial, Smart Serial | No                  | Yes                     |
 | 3.0.0.x          | MRP (+SNMP) version                               | Yes                 | Yes                     |
 
@@ -38,6 +43,7 @@ Version 3.0.0.8 and higher:
 |------------------|-----------------------------|
 | 1.0.0.x          | MRP                         |
 | 1.0.1.x          | MRP                         |
+| 1.0.2.x          | MRP                         |
 | 2.1.0.x          | MRP Rev3.0                  |
 | 3.0.0.x          | MRP (+SNMP)                 |
 
@@ -58,6 +64,20 @@ SERIAL CONNECTION:
   - **Bus address**: The bus address of the device, by default *1*.
 
 ### Connections - Range 1.0.1.x
+
+#### Serial Main Connection
+
+This connector uses a serial connection and requires the following input during element creation:
+
+SERIAL CONNECTION:
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device, by default *4381*.
+  - **Bus address**: The bus address of the device, by default *1*.
+
+### Connections - Range 1.0.2.x
 
 #### Serial Main Connection
 
