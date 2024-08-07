@@ -5174,10 +5174,14 @@
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000
   - name: LYNX Technik AG Series 5000 - CDX 5624
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CDX_5624
+  - name: LYNX Technik AG Series 5000 - CHD 1402-2
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CHD_1402
   - name: LYNX Technik AG Series 5000 - DVA 5718-L
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVA_5718-L
   - name: LYNX Technik AG Series 5000 - DVD 5820
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVD_5820
+  - name: LYNX Technik AG Series 5000 - ORX 1802
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_ORX_1802
   - name: LYNX Technik AG Series 5000 - OTX 5840
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_OTX_5840
   - name: LYNX Technik AG Series 5000 - PDM 5380
