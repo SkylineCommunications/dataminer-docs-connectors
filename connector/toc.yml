@@ -4924,6 +4924,10 @@
   items:
   - name: JVC PTZ Camcorder
     topicUid: Connector_help_JVC_PTZ_Camcorder
+- name: Kaiteng Sifang
+  items:
+  - name: Kaiteng Sifang KSF-II-813 Transmitter
+    topicUid: Connector_help_Kaiteng_Sifang_KSF-II-813_Transmitter
 - name: Kantar Media
   items:
   - name: Kantar Media SNAP Watermarking Monitor
