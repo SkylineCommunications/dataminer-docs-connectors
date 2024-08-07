@@ -4,7 +4,8 @@ uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
 
 # Vodafone Kabel Deutschland GmbH SI Stream Mapping
 
-This is a dedicated connector intended to monitor and store the links between the DataMiner Reservations, Input information and outgoing SDT/EIT PID information.
+This is a dedicated connector intended to monitor and store the links between DataMiner reservations, input information, and outgoing SDT/EIT PID information.
+
 Required to configure the SI Stream data correctly.
 
 ## About
@@ -35,5 +36,4 @@ There is no redundancy defined.
 
 ## How to use
 
-The **IP GW**, **IP Peering** and **SRT** pages display the linked configurations between DataMiner reservations and SDT/EIT information.  
-You can perform several actions on this table via its right-click menu.
+The **IP GW**, **IP Peering**, and **SRT** pages display the linked configurations between DataMiner reservations and SDT/EIT information. You can perform several actions on this table via its right-click menu.
