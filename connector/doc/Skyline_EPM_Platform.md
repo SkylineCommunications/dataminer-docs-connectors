@@ -222,7 +222,7 @@ In range **1.0.4.x**, the **Script Name** parameter is added, which allows you t
 
 In range **1.0.11.4**, the **Automatic CMTS Removal** parameter is added, this toggle button allows to enable or disable the removal
 
-A new toggle button called **"Automatic CMTS Removal"** has been introduced in Version 1.0.11.4. This button is available on the **Configuration** page and in the **Visio** page of the element. It enables or disables the automatic removal of CMTS on the front-end element and on all active back-end elements in the system.
+A new toggle button called **"Automatic CMTS Removal"** has been introduced in Version **1.0.11.4**. This button is available on the **Configuration** page and in the **Visio** page of the element. It enables or disables the automatic removal of CMTS on the front-end element and on all active back-end elements in the system.
 
 > **Note:** A pop-up window will appear every time the toggle button is interacted with, to confirm the action.
 
