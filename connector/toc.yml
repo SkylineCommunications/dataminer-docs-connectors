@@ -2716,6 +2716,8 @@
   items:
   - name: EATON 9355 UPS
     topicUid: Connector_help_EATON_9355_UPS
+  - name: EATON 9390 UPS
+    topicUid: Connector_help_EATON_9390_UPS
   - name: Eaton 93PM UPS
     topicUid: Connector_help_Eaton_93PM_UPS
   - name: EATON 9PX UPS
