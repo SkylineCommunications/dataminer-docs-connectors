@@ -6,7 +6,7 @@ uid: Connector_help_EATON_9390_UPS
 
 This connector is used to monitor the EATON 9390 UPS device.
 
-The energy-efficient Eaton 9390 UPS (formerly Powerware 9390 UPS) provides backup power and scalable battery runtimes in a small footprint for mid-size data centers, medical equipment and other critical systems.
+The energy-efficient Eaton 9390 UPS (formerly Powerware 9390 UPS) provides backup power and scalable battery runtimes with a small footprint for mid-size data centers, medical equipment, and other critical systems.
 
 ## About
 
@@ -18,9 +18,9 @@ The energy-efficient Eaton 9390 UPS (formerly Powerware 9390 UPS) provides backu
 
 ### Product Info
 
-|Range  | Supported Model | Supported Firmware  |
-|---------|---------|---------|
-|1.0.0.x     |PXGX UPS + EATON 9390   |2.12         |
+| Range   | Supported Model       | Supported Firmware |
+|---------|-----------------------|--------------------|
+| 1.0.0.x | PXGX UPS + EATON 9390 | 2.12               |
 
 ### System Info
 
@@ -46,6 +46,10 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *public*).
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to use
 
 ### General
@@ -60,17 +64,17 @@ The **Input** page contains important data regarding the inputs, such as the **I
 
 The **Output** page displays information about the outputs, such as the state of the **Output Source**, **Output Frequency**, **Output Load**, **Output Table**, etc.
 
-The **Bypass**  page, you can find the **Bypass Frequency** and the **Bypass Table**.
+On the **Bypass** page, you can find the **Bypass Frequency** and the **Bypass Table**.
 
 ### Receptacles
 
-This page displays information on the Receptacles, such as the **Receptacle Table**.
+This page displays information on the receptacles, such as the **Receptacle Table**.
 
 ### Environment
 
-This page displays information on the Environment, such as the **Ambient Temp/Humidity**, **Remote Temp/Humidity**, **Contact Sense Table**, etc.
+This page displays information on the environment of the device, such as the **Ambient Temp/Humidity**, **Remote Temp/Humidity**, **Contact Sense Table**, etc.
 
-The **Enviroment Settings** page contains configuration parameters for Temparature and Humidity.
+The **Environment Settings** page contains configuration parameters for temperature and humidity.
 
 ### Alarms
 
@@ -82,7 +86,7 @@ This page displays information on the configured parameters, such as **Configure
 
 The **UPS Settings** page button displays configuration parameters for, among others, **shutdown**, **startup** or **reboot** operations.
 
-The **UPS Test** page where you can select a type of test procedure in the **Test Setup** section with the parameter **UPS Test Type**, **UPS Test ID** and **UPS Test Spin Lock**. Additionally you can review the **Results**, such as **UPS Test Battery Status**, **UPS Test Duration**, etc.
+On the **UPS Test** page, you can select a type of test procedure in the **Test Setup** section with the parameters **UPS Test Type**, **UPS Test ID**, and **UPS Test Spin Lock**. You can also review the results, such as **UPS Test Battery Status**, **UPS Test Duration**, etc.
 
 The **UPS Topology** page displays information on the topology, such as **Topology Type**, **Topology Machine Code**, **Topology Unit Number**, and **Topology Power Strategy**.
 
