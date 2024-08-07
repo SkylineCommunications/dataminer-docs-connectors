@@ -19,7 +19,7 @@ This connector uses an HTTPS connection to communicate with the selected API. Th
 | 1.0.2.x [Obsolete] | Migrated element communication to InterApp to handle ad hoc requests. | 1.0.1.7 | The Weather API DLL (NuGet) needs to be deployed. Class Library DLLs version 1.2.2.4 or higher need to be deployed. |
 | 1.0.3.x [Obsolete] | - Partial option added to tables 100, 300, 1000, and 1100. <br>- WeatherApi and InterApp libraries updated. <br>- Windy API endpoint integrated | 1.0.2.3 | The tables now have multiple pages. |
 | 1.0.4.x | Windy Api added. | 1.0.3.1 | The connector now polls the Windy API as well as the weather API of the user's choice. |
-| 1.1.0.x [SLC Main] | OpenWeather OneCall 2.5, OpenWeather OneCall 3.0, and Windy point-forecast API v4 | 1.0.3.5 | Removed Dark Sky API endpoint from available options and WeatherAPI nuget. | 
+| 1.1.0.x [SLC Main] | OpenWeather OneCall 2.5, OpenWeather OneCall 3.0, and Windy point-forecast API v4. | 1.0.3.5 | Removed Dark Sky API endpoint from available options and WeatherAPI NuGet package. |
 
 ### Product Info
 
@@ -97,7 +97,7 @@ This page contains the information that is retrieved **from the API for each loc
 
 This page also contains a page button that opens the Locations subpage, where locations can be configured.
 
-#### Windy API Forecast Tables (Range 1.0.3.x, 1.0.4.x and 1.1.0.x)
+#### Windy API Forecast Tables (Range 1.0.3.x, 1.0.4.x, and 1.1.0.x)
 
 This page contains forecast information retrieved from the Windy Point-Forecast API. It contains the following parameters:
 
