@@ -40,7 +40,9 @@ This connector uses a serial connection and requires the following input during 
 
 ### Configuration of Virtual Connection
 
-The **PositionInfo from BK9000** needs to be configured with a virtual connection to the **PositionInfo** of the right entry of the **Module Table** in the **Beckhoff BK9000** connector. This connection is needed because the Beckhoff BK9000 provides the Beckhoff KL3202 element with a start and stop position. These are used in the serial communication to set the relays.
+The Beckhoff KL3202 element requires a virtual connection to the **Beckhoff BK9000** connector, so that this connector can provide the element with a start and stop position. These are used in the serial communication to set the relays.
+
+To configure the virtual connection, in the **PositionInfo from BK9000** parameter, fill in the correct **PositionInfo** entry from the **Module Table** of the Beckhoff BK9000 element.
 
 ## How to use
 
