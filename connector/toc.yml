@@ -6382,6 +6382,8 @@
     topicUid: Connector_help_Novelsat_NS2000
   - name: Novelsat NS3000
     topicUid: Connector_help_Novelsat_NS3000
+  - name: Novelsat Xstream
+    topicUid: Connector_help_Novelsat_Xstream
 - name: Novotronik
   items:
   - name: Novotronik GTS191x
