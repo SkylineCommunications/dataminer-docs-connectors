@@ -29,57 +29,29 @@ Version 3.0.0.8 and higher:
 
 ### Version Info
 
-| **Range** | **Description**                                   | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                   | No                  | Yes                     |
-| 1.0.1.x          | Virtual Matrix                                    | No                  | No                      |
-| 1.0.2.x          | Virtual Matrix that supports 1024x1024 matrix     | No                  | No                      |
-| 2.1.0.x          | Main Matrix, Virtual Matrix, Serial, Smart Serial | No                  | Yes                     |
-| 3.0.0.x          | MRP (+SNMP) version                               | Yes                 | Yes                     |
+| Range   | Description                                       | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                   | No              | Yes                 |
+| 1.0.1.x | Virtual matrix                                    | No              | No                  |
+| 1.0.2.x | Virtual matrix that supports 1024x1024 matrix     | No              | No                  |
+| 2.1.0.x | Main matrix, virtual matrix, serial, smart-serial | No              | Yes                 |
+| 3.0.0.x | MRP (+SNMP) version                               | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | MRP                         |
-| 1.0.1.x          | MRP                         |
-| 1.0.2.x          | MRP                         |
-| 2.1.0.x          | MRP Rev3.0                  |
-| 3.0.0.x          | MRP (+SNMP)                 |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | MRP                        |
+| 1.0.1.x | MRP                        |
+| 1.0.2.x | MRP                        |
+| 2.1.0.x | MRP Rev3.0                 |
+| 3.0.0.x | MRP (+SNMP)                |
 
 ## Configuration
 
-### Connections - Range 1.0.0.x
+### Connections - Range 1.0.0.x, 1.0.1.x, and 1.0.2.x
 
-##### Serial Main Connection
-
-This connector uses a serial connection and requires the following input during element creation:
-
-SERIAL CONNECTION:
-
-- Interface connection:
-
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device, by default *4381*.
-  - **Bus address**: The bus address of the device, by default *1*.
-
-### Connections - Range 1.0.1.x
-
-#### Serial Main Connection
-
-This connector uses a serial connection and requires the following input during element creation:
-
-SERIAL CONNECTION:
-
-- Interface connection:
-
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device, by default *4381*.
-  - **Bus address**: The bus address of the device, by default *1*.
-
-### Connections - Range 1.0.2.x
-
-#### Serial Main Connection
+#### Serial Connection - Main
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -93,7 +65,7 @@ SERIAL CONNECTION:
 
 ### Connections - Range 2.1.0.x
 
-#### Serial Main Connection
+#### Serial Connection - Main
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -105,7 +77,7 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device, by default *4381*.
   - **Bus address**: The bus address of the device, by default *1*.
 
-#### Serial StatusMessages Connection
+#### Serial Connection - StatusMessages
 
 This connector uses a smart serial connection to retrieve spontaneous status messages and requires the following input during element creation:
 
@@ -119,7 +91,7 @@ SERIAL CONNECTION:
 
 ### Connections - Range 3.0.0.x
 
-#### SNMP main connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -158,11 +130,11 @@ A tree control allows you to monitor all the available virtual routers.
 
 ### Virtual Routers Status
 
-This page contains information related to all the **Virtual Routers**, **Levels**, **Sources** and **Destinations** with the corresponding **ID**, **Format,** **Description**, **Label**, **Crosspoints** and **Lock** listed in tables.
+This page contains information related to all the **Virtual Routers**, **Levels**, **Sources**, and **Destinations** with the corresponding **ID**, **Format,** **Description**, **Label**, **Crosspoints**, and **Lock** listed in tables.
 
 ### Alarms
 
-This page contains a table displaying all the **Alarms** stored on the device with their **State**, **Severity**, **Origin** and **Description**. Alarms are retrieved both through a serial command and via alarm status messages.
+This page contains a table displaying all the **Alarms** stored on the device with their **State**, **Severity**, **Origin**, and **Description**. Alarms are retrieved both through a serial command and via alarm status messages.
 
 ### Communication Details
 
@@ -256,7 +228,7 @@ This page displays the different levels present in this router, with their corre
 
 ### Crosspoints
 
-This page contains the **crosspoints** table. This is the table that is stored in the device and converted into the matrix on the **Main View** page. It contains the output and connected input number, as well as the **Locking**, **Locking Level** and **Lock UID** columns. However, currently the matrix locking and the device's locking are not connected.
+This page contains the **crosspoints** table. This is the table that is stored in the device and converted into the matrix on the **Main View** page. It contains the output and connected input number, as well as the **Locking**, **Locking Level**, and **Lock UID** columns. However, currently the matrix locking and the device's locking are not connected.
 
 ### Settings
 
@@ -276,19 +248,19 @@ When **Request Matrix** **Data** is set to *Modular*, the following toggle butto
 
 The following table provides an overview of which data will be polled under which setting.
 
-| **Settings**        |               |               |                  |           |
+| Settings            |               |               |                  |           |
 |---------------------|---------------|---------------|------------------|-----------|
 | Request Matrix Data | ***Sublime*** | ***Compact*** | *Modular*        | *Modular* |
 | Modular (1)(2)(3)   | *Any*         | *Any*         | ***Not polled*** | *Polled*  |
 
-| **SNMP Table/Param**                          | **Polling status** |                  |                  |          |
-|-----------------------------------------------|--------------------|------------------|------------------|----------|
-| Crosspoints                                   | *Polled*           | *Polled*         | *Polled*         | *Polled* |
-| Labels                                        | ***Not polled***   | *Polled*         | *Polled*         | *Polled* |
-| Modules                                       | ***Not polled***   | ***Not polled*** | *Polled*         | *Polled* |
-| Fans, Voltage, Temperature, Monitor, Level    | ***Not polled***   | ***Not polled*** | *Polled*         | *Polled* |
-| Cable EQ (1), Reclocker (2), Cable Driver (3) | ***Not polled***   | ***Not polled*** | ***Not polled*** | *Polled* |
-| System Info                                   | ***Not polled***   | ***Not polled*** | *Polled*         | *Polled* |
+| SNMP Table/Param                              | Polling status   |                  |                  |          |
+|-----------------------------------------------|------------------|------------------|------------------|----------|
+| Crosspoints                                   | *Polled*         | *Polled*         | *Polled*         | *Polled* |
+| Labels                                        | ***Not polled*** | *Polled*         | *Polled*         | *Polled* |
+| Modules                                       | ***Not polled*** | ***Not polled*** | *Polled*         | *Polled* |
+| Fans, Voltage, Temperature, Monitor, Level    | ***Not polled*** | ***Not polled*** | *Polled*         | *Polled* |
+| Cable EQ (1), Reclocker (2), Cable Driver (3) | ***Not polled*** | ***Not polled*** | ***Not polled*** | *Polled* |
+| System Info                                   | ***Not polled*** | ***Not polled*** | *Polled*         | *Polled* |
 
 ### Matrix Configuration
 
