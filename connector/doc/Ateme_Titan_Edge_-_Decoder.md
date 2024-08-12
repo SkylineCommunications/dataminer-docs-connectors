@@ -10,17 +10,23 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 
 ### Version Info
 
-| Range              | Key Features                | Based on | System Impact |
-|--------------------|-----------------------------|----------|---------------|
-| 1.0.0.x            | Initial version             | -        | -             |
-| 1.0.1.x [SLC Main] | Implemented firmware 2.11.1 | 1.0.0.4  | -             |
+| Range              | Key Features                                                                                   | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                               | -        | -             |
+| 1.0.1.x            | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
+| 1.0.2.x            | Encoder and Gateway IP Output table PK changed. Layout adapted.                                | 1.0.1.10 | -             |
+| 1.1.0.x            | API structure changed to match new software version device.                                    | 1.0.2.3  | -             |
+| 1.1.1.x [SLC Main] | API structure changed to match new software version device.                                    | 1.1.0.4  | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | API v0.1               |
-| 1.0.1.x   | 2.11.1                 |
+| Range   | Supported Firmware            |
+|---------|-------------------------------|
+| 1.0.0.x | API v0.1                      |
+| 1.0.1.x | API v0.1                      |
+| 1.0.2.x | API v0.1                      |
+| 1.1.0.x | API unknown - Software v3.0.2 |
+| 1.1.1.x | API unknown - Software v3.0.2 |
 
 ## Configuration
 
@@ -38,5 +44,7 @@ The element created with this connector has the following data pages:
 - **Decoder Input**: Displays information about the inputs
 - **Decoder Probe Overview**: Contains a tree view of the programs captured by the probe.
 - **Decoder Probe Information**: Displays information about the decoder programs and PIDs.
-- **Decoder Output**: Contains information about the SDI, video, audio, and program outputs.
+- **Decoder Video**: Contains information about the SDI and video.
+- **Decoder Audio**: Contains information about the audio.
+- **Decoder Program**: Contains information about the programs.
 - **Decoder Configuration**: Allows you to configure settings for the decoder.

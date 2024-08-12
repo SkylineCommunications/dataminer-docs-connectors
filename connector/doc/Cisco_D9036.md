@@ -134,8 +134,7 @@ Once an element has been created, it is possible to fine-tune the behavior of th
 
 #### Poll Manager
 
-With the poll manager, you can enable or disable polling commands, as well as change the poll interval (within certain limits).
-By default, most commands are disabled, so you will almost certainly need to enable some commands.
+With the poll manager, you can enable or disable polling commands, as well as change the polling  interval (within certain limits). By default, most commands are disabled, so you will almost certainly need to enable some commands.
 
 #### Network Error Handling
 
@@ -276,7 +275,7 @@ To enable a command, you can set the **PM - Status** column to *Enabled*. Howeve
 
 The same applies for disabling commands: disabling a command will fail if there is at least one other command which requires that command. However, it is also possible to stop all "child commands" using the option *Disable (Including Children)*.
 
-To change the poll interval, simply specify a new timespan in the **PM - Interval** column. The value should be specified as follows: *\[Days\].\[Hours\]:\[Minutes\]:\[Seconds\]*
+To change the polling interval, specify a new timespan in the **PM - Interval** column. The value should be specified as follows: *\[Days\].\[Hours\]:\[Minutes\]:\[Seconds\]*
 However, please note:
 
 - Days and Seconds are optional.

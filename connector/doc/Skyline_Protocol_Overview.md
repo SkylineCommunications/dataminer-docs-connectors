@@ -12,7 +12,7 @@ With the **Skyline Protocol Overview** connector you can parse multiple protocol
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x [SLC Main]<br/> 1.0.1.X | Initial version. Parse XML version history; Metric on number of found matches; Support for XPath filters; Refresh more efficient; Cancel buttons; Search case-insensitive; Support code library in detection for manipulation external elements; Add indexed items - Class Library & Community Class Library | \-<br/> 1.0.0.5 | \-<br/> - |
+| 1.0.0.x [SLC Main]<br> 1.0.1.x | Initial version. Parse XML version history; Metric on number of found matches; Support for XPath filters; Refresh more efficient; Cancel buttons; Search case-insensitive; Support code library in detection for manipulation external elements; Add indexed items - Class Library & Community Class Library | - 1.0.0.5 | - <br>- |
 
 ### Product Info
 
@@ -34,19 +34,11 @@ With the **Skyline Protocol Overview** connector you can parse multiple protocol
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Workflow on startup:
 
-(step 1 & 2 are executed automatically every 15 minutes, cancel in Protocols page)
+(step 1 & 2 are executed automatically every 15 minutes, cancel on the Protocols page)
 
 1. Directories, select a directory that has an SVN structure. (Note: default is filled in. Pointing at a directory that is updated every 15 minutes)
 1. Protocols, Click Refresh & Wait

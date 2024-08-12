@@ -15,13 +15,14 @@ The Techex MWCore connector is an HTTP-based connector that can be used to monit
 | 1.0.0.x [Obsolete] | Initial version (includes DCF integration). | - | - |
 | 1.0.1.x [Obsolete] | Reformat of the MWEdge stream keys. | 1.0.0.2 | **Old trend and alarm data will be lost for Streams, Input Sources, and Outputs.** |
 | 1.0.2.x [Obsolete] | - Single output/input is retrieved upon context menu operation instead of MwEdge polling. <br>- MWEdges are retrieved separately instead of all at once. <br>- Reverse foreign key relation between Streams Resources table and Streams table. | 1.0.1.19 | **Because NuGets are now used, the minimum DataMiner version is now 10.0.10.** |
-| 1.0.3.x [SLC Main] | - Statistics Connections table and "IP Connection <br>- Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
+| 1.0.3.x | - Statistics Connections table and "IP Connection <br>- Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
+| 1.0.4.x [SLC Main] | - Secondary interface has been removed from element creation (additional MWCore nodes of the same cluster are now added in the connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default. They can be displayed using the parameters on the "Debug" page.<br>- The debugging logs for the statistics interface have been enhanced (serilog is now used), and the default path is now the logging folder.<br>- The Sources and Output tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection. This can be activated on the Statistics Configuration page by enabling the "Elastic Export".<br>- Support for the 2022-7 version has been added.<br>| 1.0.3.33 | **Existing elements need to be reconfigured to account for the connection changes.** |
 
 ### Product Info
 
 | Range                             | Supported Firmware                             |
 |-----------------------------------|------------------------------------------------|
-| 1.0.0.x, 1.0.1.x,1.0.2.x, 1.0.3.x | **MWCore version:** 5.2.3 (Build 784), 5.2.4 \ | **MWEdges version:** 1.9.2, 1.9.3 |
+| 1.0.0.x, 1.0.1.x,1.0.2.x, 1.0.3.x, 1.0.4.x | **MWCore version:** 5.2.3 (Build 784), 5.2.4 <br> **MWEdges version:** 1.9.2, 1.9.3 |
 
 ### System Info
 
@@ -31,6 +32,7 @@ The Techex MWCore connector is an HTTP-based connector that can be used to monit
 | 1.0.1.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
 | 1.0.2.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
 | 1.0.3.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
+| 1.0.4.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
 
 ## Configuration
 
@@ -48,7 +50,7 @@ HTTP CONNECTION:
 
 This connection is used to perform the regular polling, to retrieve data from the device based on a request/response mechanism.
 
-#### HTTP Secondary Connection
+#### HTTP Secondary Connection (Prior to Range 1.0.3.x)
 
 This connector also uses a redundant HTTP connection and requires the following input during element creation:
 
@@ -58,9 +60,9 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-This is the redundant connection, used to perform the regular polling when the main connection is no longer responding.
+This is the redundant connection, used to perform the regular polling when the main connection is no longer responding. It is no longer used starting from range 1.0.4.x. Range 1.0.4.x uses dynamic IP and allows users to specify additional MWCore nodes of the same cluster in the Connections table.
 
-#### IP Connection - Statistics Interface (range 1.0.0.x-1.0.2.x only)
+#### IP Connection - Statistics Interface (Prior to Range 1.0.2.x)
 
 This connector uses a TLS TCP IP connection and requires the following input during element creation:
 
@@ -100,7 +102,7 @@ The web interface is only accessible when the client machine has network access 
 
 This connector provides a monitoring and configuration interface for the **Techex MWCore Platform.** It allows you to perform operations on monitored **Devices**, **Channels**, **MWEdges**, **Streams**, and **Input** and **Output Sources**.
 
-The **IP Connection - Statistics Interface** provides statistics information for the input sources and output sources, including ETR290 statistics data**.**
+The **IP Connection - Statistics Interface** provides statistics information for the input sources and output sources, including ETR290 statistics data.
 
 **REST API** calls are used to establish communication with the server.
 

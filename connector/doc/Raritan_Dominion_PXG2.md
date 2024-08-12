@@ -6,6 +6,9 @@ uid: Connector_help_Raritan_Dominion_PXG2
 
 The Raritan Dominion PXG2 connector facilitates the monitoring of this line of Power Distribution Units (PDU).
 
+> [!NOTE]
+> This connector is based on the Xerus Platform MIB. Its implementation has been moved to the [Raritan Xerus Platform connector](xref:Connector_help_Raritan_Xerus_Platform). Please migrate to that connector instead.
+
 ## About
 
 This connector uses **SNMP** to extract all relevant information concerning the configuration and operating configuration of Raritan's PDU.

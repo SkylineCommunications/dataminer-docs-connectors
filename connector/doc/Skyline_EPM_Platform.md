@@ -100,7 +100,8 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | -  | -  |
 | 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
 | 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
-| 1.0.10.x [SLC Main] | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.10.x  | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.11.x [SLC Main] | Removed extra hyphens from thresholds page. | -  | -  |
 
 ### Product Info
 
@@ -117,6 +118,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x   | N/A                    |
 | 1.0.9.x   | N/A                    |
 | 1.0.10.x  | N/A                    |
+| 1.0.11.x  | N/A                    |
 
 ### System Info
 
@@ -133,12 +135,13 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.9.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.10.x  | No                  | Yes                     | -                     | -                       |
+| 1.0.11.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### Virtual connection
+#### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
 
@@ -167,11 +170,41 @@ The provisioning of the EPM Solution is sequential and involves the following co
 - **Skyline Platform EPM DOCSIS WM**: Creates compatible files regarding the passives available within the DOCSIS infrastructure.
 - **Skyline Platform EPM GPON WM**: Creates compatible files regarding the passives available within the GPON infrastructure and the KAFKA OLT KPIs.
 
-### Redundancy
+### Thresholds Settings
 
-There is no redundancy defined.
+In the threshold tables, you can define limits for each polled modulation. Two threshold tables are available: one for upstream and one for downstream.
 
-## How to use
+The QAM thresholds tables are located under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**.
+
+These tables will serve as a multiple set function for all CCAP and CM collectors. Once the *Apply* button is clicked, the table settings will be applied to the active elements.
+
+These are the available Key Performance Indicators (KPIs) for setting upstream thresholds:
+
+- **Maximum Timing Offset Level**: Range from 0 to 10000 µs.
+- **Minimum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Maximum Rx Power Level**: Range from -12 to 12 dBmV.
+- **Minimum SNR Level**: Range from 10 to 60 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+- **Minimum Tx Power Level**: Range from 25 to 55 dBmV.
+- **Maximum Tx Power Level**: Range from 25 to 55 dBmV.
+
+These are the available KPIs for setting downstream thresholds:
+
+- **Minimum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Maximum Rx Power Level**: Range from -16 to 20 dBmV.
+- **Minimum SNR Level**: Range from 0 to 100 dB.
+- **Post-FEC Maximum Uncorrectable Error Ratio Level**: Range from 0 to 30000 ppm.
+
+Under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**, you will also find the PNM threshold parameters.<!-- RN 39603 -->
+
+These are the available PNM parameters that can be modified:
+
+- **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
+- **Non-Main Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
+- **Post-Main Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
+- **Pre-Main Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
+
+## How to Use
 
 The solution is based on the usage of .CSV files and the DataMiner messaging system using information events.
 
@@ -186,6 +219,8 @@ The **Provision** button makes the element import and export all files and add a
 The **Reset** button will remove existing data from tables and performs provisioning logic to remove any erroneous data.
 
 In range **1.0.4.x**, the **Script Name** parameter is added, which allows you to change the Automation script to be executed. This parameter is available on the **Configuration** page.
+
+In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the front-end element and on all active back-end elements in the system. Whenever you use the button, you will need to confirm this action in a pop-up window.
 
 ## Notes
 

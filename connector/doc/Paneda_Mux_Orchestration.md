@@ -16,9 +16,9 @@ The **Paneda Mux Orchestration** connector can be used to orchestrate and manage
 
 ### Product Info
 
-| Range     | Supported Firmware                                                                 |
-|-----------|------------------------------------------------------------------------------------|
-| 1.0.0.x   | \- Document revision: rev.79 - System version: h-2023-06-29 - Git commit: 61967b0c |
+| Range   | Supported Firmware                                                                        |
+|---------|-------------------------------------------------------------------------------------------|
+| 1.0.0.x | - Document revision: rev.79 <br>- System version: h-2023-06-29 <br>- Git commit: 61967b0c |
 
 ### System Info
 

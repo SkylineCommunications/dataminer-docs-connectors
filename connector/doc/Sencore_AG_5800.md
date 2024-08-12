@@ -12,10 +12,11 @@ This connector uses **SNMP** to retrieve and configure parameters of the Sencore
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                                                                                                                                     | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                                                                                                                                                                                                                     | No                  | Yes                     |
-| 1.0.1.x \[Main\] | \- Fixes Input Primary & Secondary Source Output, making it dynamic and mutually exclusive using Labels from Transport Stream Input Source. - Fixes Output Manual Format behavior. - Adds Overlay Image parameters, SCTE35 info, SCTE104 Filter Mode, and ASI parameters. -Fixes SETs for IP Address-like and Port-like parameters. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | Yes |
+| 1.0.1.x | - Fixes input primary and secondary source output, making it dynamic and mutually exclusive using labels from transport stream input source. <br>- Fixes output manual format behavior. <br>- Adds overlay image parameters, SCTE35 info, SCTE104 filter mode, and ASI parameters. <br>- Fixes sets for IP address-like and port-like parameters. | No | Yes |
+| 1.0.2.x [Main] | Addition of HTTP connection | No | Yes |
 
 ### Product Info
 
@@ -23,10 +24,11 @@ This connector uses **SNMP** to retrieve and configure parameters of the Sencore
 |------------------|-----------------------------|
 | 1.0.0.x          | 2.5.0                       |
 | 1.0.1.x          | 2.5.0                       |
+| 1.0.2.x          | 2.5.0                       |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### SNMP Main Connection
 
@@ -42,35 +44,53 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
+#### HTTP Connection (1.0.2.X)
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+
+HTTP Settings:
+
+- **Username**: The username to request the SID.
+- **Password**: The password used in the request to get the SID.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## Usage
 
 ### General
 
-This page displays information about the device, such as the **System Name**, the **System Description** and **Unit Information**. It also contains page buttons that lead to more information on **In-Band Control**, **Hardware**, **TCP IP** and the **Sensor.**
+This page displays information about the device, such as the **System Name**, **System Description**, and **Unit Information**. It also contains page buttons that lead to more information on **In-Band Control**, **Hardware**, **TCP IP**, and the **Sensor.**
 
 ### Input
 
-This page displays the **Input** status and configuration. The **Primary** and **Secondary Source** can be set here.
+This page displays the input status and configuration. The **Primary** and **Secondary Source** can be set here.
 
 ### BISS
 
-This page contains information about **BISS** and the keys related to it.
+This page contains information about BISS and the keys related to it.
 
 ### Decoding
 
-This page displays the **Service Information**, including the **Service Lock** and **PID Lock**.
+This page displays the service information, including the **Service Lock** and **PID Lock**.
 
 ### TS
 
-This page displays **Transport Stream** information, such as **Input** and **Output Sources**.
+This page displays transport stream information, such as **Input** and **Output Sources**.
 
 ### Baseband Processing
 
-This page contains **Overlay** information and **Ancillary Data**.
+This page contains overlay information and ancillary data.
 
 ### Audio
 
-This page displays the **Audio** information, including the **Audio Service** and **Discrete** tables.
+This page displays the audio information, including the **Audio Service** and **Discrete** tables.
 
 ### Baseband Outputs
 
@@ -87,11 +107,3 @@ This page displays the **MPEG/IP** information and configuration.
 ### Web Interface
 
 This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
-
-## Revision history
-
-DATE VERSION AUTHOR COMMENTS
-
-14/06/2017 1.0.0.1 SUL, Skyline Initial version
-
-11/07/2018 1.0.1.1 RBL, Skyline Fixes Input Primary & Secondary Source Output, making it dynamic and mutually exclusive using Labels from Transport Stream Input Source. Fixes Output Manual Format behavior. Adds Overlay Image parameters, SCTE35 info, SCTE104 Filter Mode, and ASI parameters. Fixes SETs for IP Address-like and Port-like parameters.

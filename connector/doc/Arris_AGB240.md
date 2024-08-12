@@ -4,29 +4,35 @@ uid: Connector_help_Arris_AGB240
 
 # Arris AGB240
 
-The **Arris AGB240** is an ASI to Gigabit Ethernet bridge.
-
-## About
+The **Arris AGB240** is an ASI-to-Gigabit Ethernet bridge.
 
 This connector allows you to access various information on the device and configure device settings.
 
+## About
+
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Supported Firmware Versions
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.2.6                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.2.6                      |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
-#### HTTP Request/Response connection
+## Configuration
+
+### Connections
+
+#### HTTP Request/Response Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -40,7 +46,7 @@ HTTP CONNECTION:
 
 ### General
 
-This page displays device statistics that are displayed upon successful login. It also displays the **Serial Number**, **Board MCN**, **Software Version** and other device information.
+This page displays device statistics that are displayed upon successful login. It also displays the **Serial Number**, **Board MCN**, **Software Version**, and other device information.
 
 Eight buttons are available:
 
@@ -55,12 +61,12 @@ Eight buttons are available:
 
 ### Status
 
-This page displays information regarding the status of the device. In the **Total Data Rates** section, the **Total ASI**, **Content Data,** and **Output** rates are displayed.
+This page displays information regarding the status of the device. In the **Total Data Rates** section, the **Total ASI**, **Content Data**, and **Output** rates are displayed.
 
 The page also contains the following tables:
 
 - **Error Packet Counts and Port Overflow:** Displays various error counters as well as the port overflow status.
-- **Network Link Status:** Displays status information for the ENET1, ENET2 and GIGE network links.
+- **Network Link Status:** Displays status information for the ENET1, ENET2, and GIGE network links.
 - **Event Logs**: Displays recent events.
 
 At the bottom of the page, the **Clear Counters** button is available, which clears the counter values in the **Error Packet Counts and Port Overflow** table.
@@ -78,7 +84,7 @@ This page contains various settings to configure the device:
 
 ### ASI
 
-This page displays ASI port information such as the **ASI Processing Mode,** **ASI Monitor Port Setup** and **Total ASI Rate**. In the **ASI Port Config Table**, it displays information on the status of each ASI port.
+This page displays ASI port information such as the **ASI Processing Mode**, **ASI Monitor Port Setup**, and **Total ASI Rate**. In the **ASI Port Config Table**, it displays information on the status of each ASI port.
 
 ### Web Interface
 
