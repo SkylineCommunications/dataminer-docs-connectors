@@ -1,0 +1,73 @@
+---
+uid: Connector_help_Evertz_X1202-HX_HDSDI
+---
+
+# Evertz X1202-HX HDSDI
+
+This connector can be used to monitor and configure the Evertz X1202-HX HDSDI. This is a virtualized media processing platform that allows users to move to an infrastructure where essential core broadcast services can be applied on a generic hardware platform when required.
+
+## About
+
+### Version Info
+
+| **Range**            | **Key Features**               | **Based on** | **System Impact**                                                                                              |
+|----------------------|--------------------------------|--------------|----------------------------------------------------------------------------------------------------------------|
+| 1.0.0.x [SLC Main]   | Initial implementation.        | -            | -                                                                                                              |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | -                      |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+
+## Configuration
+
+### Connections
+
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: The bus address of the device.
+
+### Initialization
+
+No extra configuration is needed.
+
+### Redundancy
+
+There is no redundancy defined.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to use
+
+The connector polls most of the tables using subtable functionalities to reduce the amount of time it takes to poll tables and also to poll essential rows.
+
+In range **1.0.0.x**, the following pages are available in the element:
+
+- **General**: Includes general system parameters like the up time, name, and location. 
+- **Video**: Includes configuration and Input Control options for Video Inputs. 
+- **Audio**: Includes Input and SS control options for Audio Inputs and Outputs. 
+- **GPIO**: Includes GPI and GPO Global and individual control settings. 
+- **Misc**: Includes various miscellanious parameter such as Serial Address and Baud Rate. 
+- **Trap Management**: Includes managing the ability for traps to be received for Management and Video Input sources. 
+- **Traps**: Includes all traps received from the device as well as detailed descriptions on what each trap does. 
+
+- **Advanced** **Loudness** **Notify**: Includes the Audio Loudness Notify table.
+- **NMOS** **Control**: Contains various NMOS configurables.
+- **Output** **Encoder**: New for 1.1.1.x. Includes the Output Encoder control table.
+- **Input** **Control**: New for 1.1.1.x. Includes the Input Video, Input Audio, and Input ANC Control tables, as well as the Input Video/Audio/ANC Notify tables.
+- **Traps**: Includes the Traps Log table and trap control parameters.
