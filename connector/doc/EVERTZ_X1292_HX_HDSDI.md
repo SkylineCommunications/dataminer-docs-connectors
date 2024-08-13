@@ -57,8 +57,3 @@ In range **1.0.0.x**, the following pages are available in the element:
 - **Misc**: Includes various miscellaneous parameters such as Serial Address and Baud Rate.
 - **Trap Management**: Allows you to manage the ability for traps to be received for management and video input sources.
 - **Traps**: Includes all traps received from the device as well as detailed descriptions on what each trap does.
-- **Advanced Loudness Notify**: Contains the Audio Loudness Notify table.
-- **NMOS Control**: Contains various NMOS configurables.
-- **Output Encoder**: New for 1.1.1.x. Includes the Output Encoder control table.
-- **Input Control**: New for 1.1.1.x. Includes the Input Video, Input Audio, and Input ANC Control tables, as well as the Input Video/Audio/ANC Notify tables.
-- **Traps**: Includes the Traps Log table and trap control parameters.
