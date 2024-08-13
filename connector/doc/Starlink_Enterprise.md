@@ -10,6 +10,9 @@ Starlink is an internet service that uses a satellite constellation in a low Ear
 
 The Starlink Telemetry API is a low-latency API for accessing the telemetry data from Starlink devices. This API is only available for enterprise accounts with an account manager. It is designed for users that have their own data infrastructure to monitor Starlink devices remotely. The API is stateless and will only respond with current telemetry data.
 
+> [!NOTE]
+> **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, please visit [Usage-based services | DataMiner Docs](https://docs.dataminer.services/dataminer-overview/Pricing/Pricing_Usage_based_service.html). For inquiries regarding commercial production usage, contact Skyline Sales at sales@skyline.be.
+
 ## About
 
 ### Version Info
