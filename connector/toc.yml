@@ -7802,6 +7802,8 @@
     topicUid: Connector_help_Skyline_DataMiner_System
   - name: Skyline Dependency Checker
     topicUid: Connector_help_Skyline_Dependency_Checker
+  - name: Skyline DOM Backup Manager
+    topicUid: Connector_help_Skyline_DOM_Backup_Manager
   - name: Skyline DMP Replication
     topicUid: Connector_help_Skyline_DMP_Replication
   - name: Skyline DMP Replication Umbrella
