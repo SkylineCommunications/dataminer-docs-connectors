@@ -4,127 +4,215 @@ uid: Connector_help_Microsoft_Platform
 
 # Microsoft Platform
 
-With the Microsoft Platform connector, it is possible to monitor a Microsoft server.
+The Microsoft Platform connector enables the monitoring of servers that run the Microsoft Windows OS.
 
 ## About
 
-The Microsoft Platform connector retrieves basic information from a Microsoft server. Extra information can be enabled or disabled, e.g. Task Manager, Service List, etc.
-On the Task Manager page, a button allows you to normalize alarms in order to set the current values as normal.
+The Microsoft Platform connector gathers key performance indicators from a server running the Microsoft Windows OS. To accomplish this, the connector utilizes Windows Management Instrumentation ([WMI](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)) extensions to query data from the monitored server.
+
+All versions of Microsoft Windows are supported, as long as the connector is able to retrieve data using WMI.
+
+<!--Extra information can be enabled or disabled, e.g. Task Manager, Service List, etc.-->
+<!-- On the Task Manager page, a button allows you to normalize alarms in order to set the current values as normal.
+-->
 
 ### Version Info
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
-| 1.0.0.x [Obsolete] |Microsoft WMI interface implementation. | Yes | Yes |
-| 1.1.0.x | Microsoft WMI interface implementation. | Yes | No |
-| 1.1.1.x [move to 1.1.2.x] | Branched from 1.1.0.89: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
-| 1.1.2.x [Obsolete] |Branched from 1.1.1.x: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
 | 1.1.3.x [SLC Main - Virtual Machine Environment] | Branched from 1.1.0.97: Contains partitionedTrending database option. Difference between 1.1.3.x and 1.1.0.x branch will not be noticeable with Cassandra general database, only with MySQL general database. Version 1.1.3.5 merged with 1.1.0.106. | Yes | Yes |
-| 1.2.0.x | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | Yes | Yes |
-| 2.1.0.x | Branched from 1.1.0.41: Network Interface table adjustments. | Yes | Yes |
-| 3.0.0.x | Branched from 1.1.0.71: Implemented a workaround for a WMI bug in the network adapter table. | Yes | Yes |
-| 4.0.0.x | Branched from 1.1.0.78: Customer-specific branch including functionality to see if the element is running on the active DMA (Failover) with specific security configuration settings in the elements. | Yes | Yes |
-| 5.0.0.x | Branched from 1.1.1.5: Temporary branch to be used as workaround for a problem with retrieving the service table via WMI calls. | Yes | Yes |
-| 6.0.0.x [SLC Main - Physical Hardware Environment] | Branched from 1.1.2.31: Microsoft WMI interface + interface for DELL-, HP- and Supermicro-specific SNMP parameters. | Yes | Yes |
+| 6.0.0.x [SLC Main - Physical Hardware Environment] | Branched from 1.1.2.31: Microsoft WMI interface + interface for DELL-, HP-, and Supermicro-specific SNMP parameters. | Yes | Yes |
+
+> [!IMPORTANT]
+> Currently, only the ranges listed above are supported. In case you are currently using a different range of the connector, we recommend migrating to one of the supported ranges.
+
+<!--
+| 1.0.0.x [Obsolete] |Microsoft WMI interface implementation. | Yes | Yes |
+| 1.1.0.x [Obsolete] | Microsoft WMI interface implementation. | Yes | No |
+| 1.1.1.x [Obsolete] [move to 1.1.2.x] | Branched from 1.1.0.89: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
+| 1.1.2.x [Obsolete] |Branched from 1.1.1.x: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
+| 1.2.0.x [Obsolete] | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | Yes | Yes |
+| 2.1.0.x [Obsolete] | Branched from 1.1.0.41: Network Interface table adjustments. | Yes | Yes |
+| 3.0.0.x [Obsolete] | Branched from 1.1.0.71: Implemented a workaround for a WMI bug in the network adapter table. | Yes | Yes |
+| 4.0.0.x [Obsolete] | Branched from 1.1.0.78: Customer-specific branch including functionality to see if the element is running on the active DMA (Failover) with specific security configuration settings in the elements. | Yes | Yes |
+| 5.0.0.x [Obsolete] | Branched from 1.1.1.5: Temporary branch to be used as workaround for a problem with retrieving the service table via WMI calls. | Yes | Yes |
+-->
 
 ## Configuration
 
-The polling IP of the Microsoft server must be defined when the element is created.
+When creating an element using this connector, apart from the element name and the protocol fields, the only required field to be populated is the *IP address*. In this field, you must specify the IP address assigned to the server running Microsoft Windows OS that will be monitored.
+
+> [!IMPORTANT]
+> When you create an element to monitor the DataMiner Agent hosting the element, the administrator built-in account will be used to query the server. In case the element will monitor a remote server, you must configure the appropriate credentials on the [Security](#security) page.
+
+In addition, WMI and DCOM must be properly configured on the server to be monitored, as detailed below.
 
 ### WMI configuration
 
 1. To go to WMI Control Properties, go to **Start** \> **Run** and enter *wmimgmt.msc*.
 1. Right-click **WMI Control (Local)** and select **Properties**.
 1. On the **Security** tab page, go to \\Root\CIMV2 and click the **Security** button.
-1. Add your local user to the list and give the user all rights.
+1. Add the user that will be used to query data from the remote server to the list and give the user all rights.
 1. Apply all.
 
 ### DCOM configuration
 
-1. Go to **Start** \> **Run** and enter *dcomcnfg*.
-1. Select **My Computer** and click the **Properties** button.
+1. Go to **Start** \> **Run** and enter *dcomcnfg* (Component Services).
+1. Under **Component Services** \> **Computers**, right-click **My Computer** and select **Properties**.
 1. Go to the tab **COM Security**.
-1. Under **Launch and Activation Permissions**, choose **Edit Limits**.
-1. Add your local user and give the user the Local Launch, Remote Launch, and Remote Activation permissions.
+1. Under **Launch and Activation Permissions**, click **Edit Limits**.
+1. Add the user and give the user the *Local Launch*, *Remote Launch*, and *Remote Activation* permissions.
 1. Apply all.
 
-**Note:**
-
-- After DCOM settings have been changed, the WMI services sometimes need to be restarted.
-- This method works fine for a Windows XP system but cannot be used on a Windows Server 2003 SP1.
-- On a Win2K3, the local user must be added to the administrators group.
-- On a Win2K8, the local user must be added to the administrators group, Distributed COM Users, and Performance Monitor Users.
+>[!NOTE]
+>
+> - After DCOM settings have been changed, the WMI services sometimes need to be restarted.
+> - This method works fine for a Windows XP system but cannot be used on a Windows Server 2003 SP1.
+> - On a Win2K3, the local user must be added to the administrators group.
+> - On a Win2K8, the local user must be added to the administrators group, Distributed COM Users, and Performance Monitor Users.
 
 ## Usage
 
 ### Performance
 
-- **Security**: Opens the **Security Settings** window, where the **Domain name**, **User Name** and **Password** can be configured. The status shows if the DMA is connected to the server you want to monitor.
+#### Security
 
-- **Port monitoring:** Opens a window where port monitoring can be enabled and configured. To enable port monitoring:
+This page displays settings that will be used by WMI to query the remote server.
 
-  1. On the **Performance** page, click the **Port monitoring** button.
-  1. Define a **Polling Period.**
-  1. Use the **Add Port** box to add one or more ports that need to be monitored in the **Port List**.
-  1. Enable polling by clicking the toggle button next to **Port Monitoring Status**.
+- **Username**: The user account used for querying the remote server.
+- **Password**: The password associated with the user account.
+- **Domain Name**: Required only if the user account belongs to a domain controller. If a local user is used to query the server, this parameter can be left blank.
 
-- **Ping monitoring:** Opens a window where ping monitoring can be enabled and configured. To enable ping monitoring:
+#### Port Monitoring
 
-  1. On the **Performance** page, click the **Ping monitoring**... button.
-  1. Click the toggle button next to **Ping Query** to execute the ping.
-  1. Configure the **Ping Cycle**, i.e. the interval between each ping. The default value is *60 s*.
-  1. Configure the **Ping Timeout** and **Ping Number**. The default values are *1500 ms* and *4* respectively.
+This page allows you to configure the *port monitoring* feature in this connector, which enables you to verify whether a port is opened or closed and to measure any response delay.
+
+To enable this feature:
+
+1. On the **Performance** page, click the **Port monitoring** button.
+1. Define a **Polling Period.**
+1. Use the **Add Port** box to add one or more ports that need to be monitored in the **Port List**.
+1. Finally, enable the port monitoring feature by clicking the toggle button next to **Port Monitoring Status**.
+
+#### Ping Monitoring
+
+This page allows you to configure the *ping monitoring* feature available in this connector. This feature allows you to perform a ping command on the remote server.
+
+To enable this feature:
+
+1. On the **Performance** page, click the **Ping monitoring** button.
+1. Click the toggle button next to **Ping Query** to execute the ping.
+1. Configure the **Ping Cycle**, i.e. the interval between each ping. The default value is *60 s*.
+1. Configure the **Ping Timeout** and **Ping Number**. The default values are *1500 ms* and *4* respectively.
 
 ### Task Manager
 
-To clear all processes that are no longer running from the table, click the button **Clear Task Manager** at the bottom of the page. You can also enable automatic removal of processes that are not running by setting the parameter **Auto Clear Task Manager** to **On**.
+The Task Manager page lists all the processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). Each entry in the **Task Manager** table represents a process active on the monitored server.
 
-To set the current values in the table as the normal reference for alarms, click the button **Normalize Alarms**. You can then view these references via the **Nominal** **Values** button at the bottom of the page.
+By default, the connector will poll all the running processes on the monitored server. You can modify this behavior by setting the parameter **Poll Task Manager** to *Off*.
+
+Also by default, the connector will remove any process that is no longer running from the Task Manager table. You can modify this behavior by setting the parameter **Auto Clear Task Manager** to *Off*
+
+> [!TIP]
+> If you wish to monitor when a process is no longer running, set the parameter **Auto Clear Task Manager** to *Off*. By enabling monitoring on the parameter **Row Status**, you can then generate an alarm when a process is no longer running.
+
+The button **Clear Task Manager** allows you to clear the Task Manager table manually. This button is useful only if the parameter **Auto Clear Task Manager** is set to *Off*
+
+To set the current values in the table as the normal reference for alarms, click the button **Normalize Alarms**. You can then view these references via the **Nominal Values** button at the bottom of the page.
+
+> [!IMPORTANT]
+> The Normalize Alarms feature is deprecated. Instead, we recommend [configuring dynamic alarm thresholds](https://aka.dataminer.services/configuring-dynamic-alarm-thresholds).
 
 It is also possible to add a filter to calculate the sum of the memory usage of all processes that match this filter. To do so:
 
 1. Click the button **Cumulated Memory** at the bottom of the page.
 
-1. Enter a filter in the box **Add Filter Param**. An asterisk ("\*") wildcard is supported in this filter. You can also use an exclamation mark ("!") to return the opposite cumulated memory of the filter parameter. (cf. examples below)
+1. Enter a filter in the box **Add Filter Param**. An asterisk (\*) wildcard is supported in this filter. You can also use an exclamation mark (\!\) to return the opposite cumulated memory of the filter parameter. (See examples below.)
 
-   | Examples | Description |
-   |--|--|
-   | `SLDatam*` | Searches for processes that begin with "SLDatam". |
-   | `*Dataminer*` | Searches for processes that contain the word "DataMiner". |
-   | `miner:0*` | Searches for processes that end with "miner:0". |
-   | `SLDataminer:0` | Searches for the process "SLDataminer:0". |
-   | `!SLDatam*` | Searches for processes that do not begin with "SLDatam". |
-   | `!*Dataminer*` | Searches for processes that do not contain the word "DataMiner". |
-   | `!miner:0*` | Searches for processes that do not end with "miner:0". |
-   | `!SLDataminer:0` | Searches for processes that are not equal to "SLDataminer:0". |
+   |Examples|Description|
+   |--------|-----------|
+   |SLDatam\*|Searches for processes that begin with "SLDatam"|
+   |\*Dataminer\*|Searches for processes that contain the word "DataMiner"|
+   |miner:0*|Searches for processes that end with "miner:0"|
+   |SLDataminer:0|Searches for the process "SLDataminer:0"|
+   |!SLDatam*|Searches for processes that do not begin with "SLDatam"|
+   |!\*Dataminer*|Searches for processes that do not contain the word "DataMiner"|
+   |!miner:0*|Searches for processes that do not end with "miner:0"|
+   |!SLDataminer:0|Searches for processes that are not equal to "SLDataminer:0"|
 
-1. If necessary, add more filters or delete filters using the **Delete** button next to the filtered parameter.
+If necessary, add more filters, or delete filters using the **Delete** button next to the filtered parameter.
 
-On the **Task Manager Measurement** page, you can disable processes to remove them from the **Task Manager** Table. The **Task Manager Default Measurement State** will enable/disable the measurement of new processes. The **Clear** button will remove all deleted processes from the **Task Manager Measurement Config** table. The **Refresh** button can be used to manually refresh the list of processes when Auto Refresh is disabled.
+#### Task Manager Measurement
+
+Clicking the button **Measurement Config** will open the **Task Measurement Config** page. This page allows you to customize the processes listed in the **Task Manager** table. The following parameters are available for this:
+
+- The parameter **Task Manager Default Measurement State** will enable/disable the measurement of new processes.
+- The parameter **Task Manager Auto Refresh Measurement Table** allows you to automatically refresh the Task Manager Measurement Config table.
+- The parameter **Task Manager Auto Clear Measurement Table** allows you to automatically remove processes that are no longer running on the server.
+
+In addition, the buttons **Disable All**, **Enable All**, **Clear**, and **Refresh** allow you to manually perform the actions covered by the parameters listed above.
+
+To disable or enable the monitoring of a specific process in the Task Manager table (i.e. remove or add the process from/to the Task Manager table), proceed as follows:
+
+1. Locate the process to be removed in the **Task Manager Measurement Config** table.
+1. In the column **Task Polling**, set the value to *Disable* or *Enable* accordingly.
+
+>[!NOTE]
+> By default, the **Task Manager Measurement Config** table will list the same processes as the **Task Manager** table, and the column **Task Polling** will be set to *Not Initialized*.
 
 ### Network Interface
 
-This page displays a table with the different measured network adapters on the server. Note that the bandwidth of an adapter can be very high (*e.g. 10 GB/s*). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if *Total Speed \< 0.005 \* Bandwidth*.
+This page displays the **Network Adapter** table. This table monitors the network adapters available in the server.
 
-For most interfaces, the **Mac Address** and **Status** are available. For a server of the type Microsoft Server 2000 or Microsoft 2000 Professional, the **Mac Address** is not available.
+> [!NOTE]
+> The bandwidth of an adapter can be very high (*e.g. 10 GB/s*). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if *Total Speed \< 0.005 \* Bandwidth*.
 
-If you set the **Adapter Description** to the correct name (from Win32_PerfRawData_Tcpip_NetworkInterface), additional info will be retrieved. The connector intelligently tries to match the adapters to the correct default description on initializing, but in some cases, you will still need to set this description manually, using the dropdown box. Once this has been set manually, the connector will not overrule the setting with an automatic set. The options displayed in the dropdown box are the names of the network interfaces that were found in the WMI. You can also choose a custom name that is not from this list, but then no match will be found, no additional info will be shown, and the description can be overruled by the connector. You can only assign a network interface to one network adapter. If you set a network adapter to a description that is already used by another adapter, the description of the other adapter will be set to an empty string.
+<!--
+For most interfaces, the **MAC Address** and **Status** are available. For a server of the type Microsoft Server 2000 or Microsoft 2000 Professional, the **MAC Address** is not available.
+-->
 
-On the **Network Adapter Measurement** page, you can disable processes to remove them from the **Network Adapter** table. The **Network Adapter Default Measurement State** will enable/disable the measurement of new adapters. The **Clear** button removes all deleted processes from the **Network Adapter Measurement** and **Network Adapter** table. This is by default followed by a refresh. The **Refresh** button can be used to manually refresh the list of network adapters and the additional information. It is possible to entirely disable the polling of the network adapters with the toggle button **Poll Network Adapters**. Once an adapter is disconnected and not found by the connector in the WMI, its status will be set to *Disconnected*. You can choose to either autoclear such adapters with the button **Autoclear Disconnected Adapters** or to manually delete them with the dropdown box **Manually Clear Disconnected Adapters**. If no adapter has the status *Disconnected*, this dropdown box will be empty.
+By default, the column **Adapter Description** will contain the name of the adapter as retrieved by [WMI](https://learn.microsoft.com/en-us/previous-versions/aa394293(v=vs.85)). However, in some cases, the connector will not be able to retrieve the name. If this is the case, it is possible to customize this name of the adapter.
+
+> [!IMPORTANT]
+> Once the column **Adapter Description** is set manually, the connector will not overrule this setting. Updating the name could cause metrics related to this network adapter to not be retrieved. If you set a network adapter to a description that is already used by another adapter, the description of the other adapter will be set to an empty string.
+
+<!--
+If you set the **Adapter Description** to the correct name (from Win32_PerfRawData_Tcpip_NetworkInterface), additional info will be retrieved. The connector will try to match the adapters to the correct default description on initializing, but in some cases, you will still need to set this description manually.
+
+Once this has been set manually, the connector will not overrule this setting. The options displayed in the dropdown box are the names of the network interfaces that were found by the connector. You can also choose a custom name that is not from this list, but then no match will be found, no additional info will be shown, and the description can be overruled by the connector. You can only assign a network interface to one network adapter. If you set a network adapter to a description that is already used by another adapter, the description of the other adapter will be set to an empty string.
+-->
+
+On the **Network Adapter Measurement** page, you can disable processes to remove them from the **Network Adapter** table.
+
+- The parameter **Network Adapter Default Measurement State** allows you to enable/disable the measurement of new adapters.
+
+- The **Clear** button removes all deleted processes from the **Network Adapter Measurement** and **Network Adapter** table. This is by default followed by a refresh.
+
+- The **Refresh** button can be used to manually refresh the list of network adapters and the additional information.
+
+You can also entirely disable the polling of the network adapters with the toggle button **Poll Network Adapters**.
+
+Once an adapter is disconnected and not found by the connector, its status will be set to *Disconnected*. You can choose to either remove such adapters automatically (using the button **Auto Clear Disconnected Adapters**) or manually delete them using the parameter **Manually Clear Disconnected Adapters**.
+
+>[!NOTE]
+> The parameter **Manually Clear Disconnected Adapters** will only list disconnected adapters.
 
 ### Disk Info
 
-The **Percent Disk Busy Time** can go above 100%. This can happen because some controllers allow the operating system to use overlapping input/output operations for multiple outstanding requests. For more information, see <https://serverfault.com/questions/420462/performance-counter-disk-time-and-avg-disk-queue-length>.
+This page provides information about local storage devices on a server running Windows.
 
-Another indication of when the disk is very busy is the "Latency" of the disk, i.e. how long it takes before it can process something. On this page, this is indicated by the **Avg Disk sec/Transfer Rate**.
+>[!TIP]
+> A sign that could indicate that the disk is busy is the *Latency*, i.e. how long it takes before it can process something. This metric can be tracked with the parameter **Avg Disk sec/Transfer Rate**.
 
 ### Event Viewer
 
 This page displays information regarding selected or created events.
 
-When you enable the Event Viewer, you can monitor the events displayed in the Event Viewer table. If you want to add events, click the **Add event** page button. A subpage will open. If you click **Load**, all the event messages from a specific time interval will be retrieved and displayed on the page. You can then select the events you want to monitor by clicking the **Monitor Event** button. The time interval can be changed using the slider.
+When you enable the Event Viewer, you can monitor the events displayed in the **Event Viewer** table.
 
-To delete a monitored event, click the **Delete button** in the Event Viewer table.
+If you want to add events, click the **Add event** page button. If you click **Load**, all the event messages from a specific time interval will be retrieved and displayed on the page. You can then select the events you want to monitor by clicking the **Monitor Event** button. The time interval can be changed using the slider.
+
+To delete a monitored event, click the **Delete** button in the **Event Viewer** table.
 
 The event details can be configured. For each type of event (information, warning, or error), the severity of the created alarm can be selected from the dropdown list. For example: "Disk Crash" event with a **Severity Error Type** equal to *Critical*.
 
@@ -133,31 +221,42 @@ When the configured **Alarm Type** equals ***Normal*** and an event occurs that 
 From version 1.1.0.100 onwards, it is possible to get all events except those with a specific **Event ID**. In each row of the table, a toggle button **Exclude Event ID** has been added:
 
 - If it is set to the default setting ***Include***, you can insert a **single event ID** or the value **"\*"** to **get all event IDs** for the relevant source/category (= **equal to all previous versions**).
+
 - If it is set to ***Exclude***, you can select a **single event ID**, which will be omitted from the results. All other event IDs will be selected.
 
 ### Performance Monitor
 
 This page monitors performance counters added by the user.
 
-On the **Config Performance Counters** page, you can search for performance counters and add them to the **Performance Monitor** table. To do so, first click **Refresh Categories** to create a dropdown list with the **Categories**. Select the category and then choose a **Counter**. If the counter has multiple instances, you can either select the **Instance** you want, or select *\<All Instances\>.* Finally, click the **Add Counter** button to add the selected counter to the table.
+On the **Config Performance Counters** page, you can search for performance counters and add them to the **Performance Monitor** table:
+
+1. Click **Refresh Categories** to create a dropdown list with the **Categories**.
+1. Select the category and then select a **Counter**. If the counter has multiple instances, you can either select the **Instance** you want, or select *\<All Instances\>.*
+1. Finally, click the **Add Counter** button to add the selected counter to the table.
 
 With the **Performance Monitor Sample Time**, you can configure the sample time for all created performance counters.
 
 ### Dell
 
-This page is intended for Dell hardware.
+This page focuses on Dell computer hardware.
 
-It monitors certain high-level parameters, such as the name, version, model and so on. It also includes several subpages with more information on specific subcategories. The **Temperature Probe Table** provides information about the temperature of the device. The **power supply**, **fans**, **CPU** and **memory** of the device are monitored in a similar way. The **Disk** page provides an overview of all of the disks included in the system.
+It monitors certain high-level parameters, such as the name, version, and model. It also includes pages with more information on specific categories:
 
-Note that in order for these parameters to be polled, you have to **enable polling on the Dell page**.
+- The **Temperature Probe Table** provides information about the temperature of the device.
+- A page is available for the **power supply**, **fans**, **CPU**, and **memory** information for the device.
+- The **Disk** page provides an overview of all the disks included in the system.
+
+>[!IMPORTANT]
+> In order to monitor these parameters, you have to enable polling on the **Dell** page.
 
 ### HP
 
-This page is intended for HP hardware.
+This page focuses on HP computer hardware.
 
 It monitors the same set of parameters as the Dell page described above.
 
-Note that in order for these parameters to be polled, you have to **enable polling on the HP page**.
+>[!IMPORTANT]
+> In order to monitor these parameters, you have to enable polling on the **HP** page.
 
 ### Software Info
 
@@ -171,99 +270,85 @@ Above the table, it is possible to select the polling method. (Alternative metho
 - *Win32reg_AddRemoveProgram*: WMI Query used to retrieve a list of all installed programs if Microsoft CSSM software is installed. This is a better alternative to the Win32_Product method.
 - *Registry Keys*: **Recommended method.** This method will use WMI to read the registry keys to display a list of all installed programs in the system.
 
-## Notes
+## Troubleshooting
 
-### General
+### Access is denied with error code 0x80070005 (or 0x80041003)
 
-From Windows 2000 onwards, WMI is installed by default.
+**Symptom**
 
-Except in Windows Vista, WMI uses random ports.
-To configure a fixed port in Windows Vista:
+The following errors are shown in the Stream Viewer (when looking at the communication of any group):
 
-1. In the command prompt window, type *winmgmt -standalonehost.*
-1. Stop the WMI service by typing the command *net stop "Windows Management Instrumentation"*.
-1. Restart the WMI service in a new service host by typing *net start "Windows Management Instrumentation"*.
-1. Establish a new port number for the WMI service by typing *netsh firewall add portopening port=24158 name=WMIFixedPort*.
+- Access is denied with error code 0x80070005
+- Access is denied with error code 0x80041003
 
-If you want to have access to the WMI interface of a Windows XP computer, you can work with a local user (a group user, not an administrator) that has the necessary Windows security rights, so extra configuration is necessary on the client computers.
+**Cause**
 
-As this is a Microsoft configuration, nothing has to be configured within DataMiner for this.
+The username does not have enough permissions to query the server, specifically when performing remote WMI queries using non-admin users.
 
-### Global configuration
+**Resolution**
 
-1. Create a user and add the user in the user group.
-1. If the firewall is enabled, open a command prompt and execute "*netsh firewall set service RemoteAdmin enable*".
+- Access is denied with error code 0x80070005: See [DCOM configuration](#dcom-configuration)
+- Access is denied with error code 0x80041003: See [WMI configuration](#wmi-configuration)
+- If the above options do not solve the issue, try to open Windows Explorer on the monitored server, using the username that you configured on the [Settings](#security) page. If it is not possible to connect to the server because you have to log on with the account *guest*, execute the following steps:
 
-### Troubleshooting
+  1. Go to **Control Panel** \> **Administrative Tools** \> **Local Security Policy**.
+  1. Go to **Local Policies** \> **Security Options**.
+  1. Double-click **Network access: Sharing and security model for local accounts**.
+  1. Select **Classic- local users authenticate as themselves**.
 
-**Problem:**
+> [!NOTE]
+> To confirm that a user does not have the rights to perform WMI queries, you can proceed as follows:
+>
+> 1. Click **Start** \> **Run** and execute *wmimgmt.msc*.
+> 1. Right-click **WMI Control (Local)** and select **Connect to another computer**.
+> 1. Select **Actions** \> **More Actions** \> **Properties**.
+>
+> At this point, you will receive the following error:
+>
+> ```text
+> Failed to connect to [\\%RemoteIP%](file:///) because "Win32 Access is denied".
+> ```
+>
+> If the above steps are not possible, you could also run **wmimgmt.msc** directly on the server (from CMD or PowerShell). You will receive the following error: Microsoft Management Console "An attempt was made to reference a token that does not exist".
 
-- Remote WMI queries for non-admin users:
+### Not all parameters are initialized
 
-  - Access is denied with error code 0x80070005 -\> **Solution**: DCOM configuration (see installation and configuration).
+**Symptom**
 
-  - Access is denied with error code 0x80041003 -\> **Solution**: WMI configuration (see installation and configuration).
+A Microsoft element displays a partial set of the data. Some parameters, such as *Local Time*, *Total Physical Memory*, etc. are populated, while others like *Total Processor Load*, *Total Handles* remain not initialized. Looking at the **Stream Viewer**, you notice certain queries do not return any results.
 
-  - To check whether access is denied, the following two procedures are possible:
+**Cause**
 
-    - The first procedure:
+There can be different possible causes for this behavior. Refer to the possible resolutions below.
 
-      1. Click **Start** \> **Run** and enter *wmimgmt.msc*.
-      1. Right-click **WMI Control (Local)** and select **Connect to another computer**.
-      1. Select **Actions** \> **More Actions** \> **Properties**.
+**Resolution**
 
-         At this point, you will receive the following error: Failed to connect to [\\%RemoteIP%](file:///) because "Win32 Access is denied".
+- Check the element timeout settings. When an element is created, these are the default values:
 
-    - The second procedure:
+  - Timeout of a single command: 6000 ms
+  - Number of retries: 3
 
-      - Run "wmimgmt.msc" directly on server.
+  Update the timeout value if necessary, and validate whether the element is now able to poll all parameters.
 
-        You will receive the following error: Microsoft Management Console "An attempt was made to reference a token that does not exist".
+- Execute the following command (using CMD or PowerShell) to manually reset the counters with WMI (for more information, refer to [Microsoft Learn](https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/manually-rebuild-performance-counters)):
 
-**Problem:**
-
-- Access is denied, even when the username and the password are correct.
-
-  **Solution**:
-
-  - Try to open Windows Explorer on that machine, using the login that you want to use in the Microsoft element. If it is not possible to connect to the server because you have to log on with the account "guest", execute the following steps:
-
-    1. Go to **Control Panel** \> **Administrative Tools** \> **Local Security Policy**.
-    1. Go to **Local Policies** \> **Security Options**.
-    1. Double-click **Network access: Sharing and security model for local accounts**.
-    1. Select **Classic- local users authenticate as themselves**.
-
-**Problem:**
-
-- A Microsoft element displays only some of the data. Data like Local Time, Total Physical Memory, etc. are filled in, while other data, like Total Processor Load, Total Handles, etc. remain empty. In the stream, you see that no answer is received on some queries.
-
-  **Solution:**
-
-  - Execute the following command prompt: *c:\\winmgmt.exe /resyncperf PID_OF_WINMGMT_AS_SERVICE*
-
-**Problem:**
-
-- Possible memory leak on remote machines that are running 2008/Vista:
-  <http://support.microsoft.com/kb/970520/en-us>
-
-  **Solution:**
-
-  - When the remote server is running Vista, UAC must be disabled.
-
-**Re-registering the WMI components on the monitored server:**
-
-- The .DLL and .EXE files used by WMI are located in %windir%\system32\wbem. You may need to re-register all the .DLL and .EXE files in this directory.
-
-  If you are running a 64-bit system you may also need to check for DLLs and EXE files in %windir%\sysWOW64\wbem.
-
-- To re-register the WMI components, run the following commands with the command prompt:
-
-  ```
-  cd /d %windir%\system32\wbem*
-  for %i in (*.dll) do RegSvr32 -s %i
-  for %i in (*.exe) do %i /RegServer
+  ```cmd
+  winmgmt.exe /resyncperf
   ```
 
+- Verify whether the user used to query the server is included in the group *Performance Monitor Users*.
+
+<!--
+#### Possible memory leak on remote machines that are running 2008/Vista
+
+- Possible memory leak on remote machines that are running 2008/Vista: <http://support.microsoft.com/kb/970520/en-us>
+
+**Solution:**
+
+When the remote server is running Vista, UAC must be disabled.
+-->
+
+<!--
 **Problem:**
 
 - Task Manager data through WMI cannot be retrieved. This can be related to missing "Process Performance Counters".
@@ -272,36 +357,118 @@ As this is a Microsoft configuration, nothing has to be configured within DataMi
   **Solution**:
 
   - Disable a specific flag on the Windows Register. Set the "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance\Disable Performance Counters" to *0*.
+-->
 
-**Problem:**
+### Query failed: Retrieving the data failed. (hr = 0x80041010)
 
-- StreamViewer mentions the following: Query failed : Retrieving the data failed. (hr = 0x80041010) for numerous WQL SELECT queries.
+**Symptom**
 
-  When wbemtest is used and these queries are performed or the classes are listed, this results in similar errors mentioning "Invalid class".
+Stream Viewer shows the following error:
 
-  **Solution**:
+```text
+Query failed : Retrieving the data failed. (hr = 0x80041010) for numerous WQL SELECT queries.
+```
 
-  - Most likely some or all related Disable Performance Counters in regedit for PerfDisk, PerfNet, PerfOS, PerfProc, Tcpip or W3SVC are set to 1 (see Problem/Solution above for information on regedit).
-  - Set all these to 0, and after a couple of minutes the query errors should disappear and the related data should get filled in.
+**Cause**
 
-**Problem:**
+Some or all related Disable Performance Counters in regedit for `PerfDisk`, `PerfNet`, `PerfOS`, `PerfProc`, `Tcpip`, or `W3SVC` are set to **1**. With the path below, you can confirm if these counters are disabled:
 
-- The following error occurs: *Contacting server failed: Connection to \[//tns1216.inet.telenet.be/root/cimv2\] failed. The RPC server is unavailable. (hr = 0x800706BA).*
+```text
+"HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance\
+```
 
-  **Solution**:
+When wbemtest is used and these queries are performed, or the classes are listed, this results in similar errors mentioning "Invalid class".
 
-  - Make sure tcp/135 and tcp/49000-65535 (WMI) are open.
-  - Make sure the user is created on server and host.
+**Solution**
 
-**Problem:**
+Set all these to **0**, and after a couple of minutes the query errors should disappear and the related data should get filled in.
 
-- WMI is working and everything gets filled in, but Performance Monitor does not work. Pressing Refresh Categories provides the following error in element logging:
+### Contacting Server Failed: Connection to root/cimv2 failed. The RPC server is unavailable
 
-  Exception Perf Counters The network path was not found.
+**Symptom**
 
-  **Solution:**
+The following error occurs:
 
-  - Check if the destination computer has the "Remote Registry" service running. If not, start this service. (Note that you may need to adjust the Startup Type from *Disabled* to *Manual/automatic* first.)
+```text
+Contacting server failed: Connection to \[//server/root/cimv2\] failed. The RPC server is unavailable. (hr = 0x800706BA).
+```
+
+**Cause**
+
+Configuration issue on the remote server.
+
+**Solution**
+
+- Make sure TCP/135 and TCP/49000-65535 (WMI) are open.
+- Make sure the user is created on server and host.
+
+### Performance Monitoring not working
+
+**Symptom**
+
+The element is able to populate all parameters, except the Performance Monitor. Clicking *Refresh Categories* triggers the following error in element logging:
+
+```text
+Exception Perf Counters The network path was not found.
+```
+
+**Cause**
+
+Possible configuration issue on the remote server.
+
+**Solution**
+
+Check if the destination computer has the "Remote Registry" service running. If not, start this service. (Note that you may need to adjust the Startup Type from *Disabled* to *Manual/automatic* first.)
+
+### Percent Disk Busy Time goes above 100%
+
+**Symptom**
+
+The parameter **Percent Disk Busy Time** shows values higher than 100%.
+
+**Cause**
+
+By design.
+
+**Resolution**
+
+Not applicable. More information can be found in the [Microsoft Knowledge Base](http://support.microsoft.com/kb/310067).
+
+## Additional Notes
+
+### Windows Vista
+
+From Windows 2000 onwards, WMI is installed by default. Except in Windows Vista, WMI uses random ports. To configure a fixed port in Windows Vista:
+
+1. In the command prompt window, type *winmgmt -standalonehost.*
+1. Stop the WMI service by typing the command *net stop "Windows Management Instrumentation"*.
+1. Restart the WMI service in a new service host by typing *net start "Windows Management Instrumentation"*.
+1. Establish a new port number for the WMI service by typing *netsh firewall add portopening port=24158 name=WMIFixedPort*.
+
+If you want to have access to the WMI interface of a Windows XP computer, you can work with a local user (a group user, not an administrator) that has the necessary Windows security rights, so extra configuration is necessary on the client computers.
+
+<!--
+### Global Configuration
+
+1. Create a user and add the user in the user group.
+1. If the firewall is enabled, open a command prompt and execute "*netsh firewall set service RemoteAdmin enable*".
+
+-->
+
+### Re-registering the WMI component on the monitored server
+
+In some situations, you will need to re-register the WMI component in the monitored server.
+
+- For 32-bit Windows OS, the `.dll` and `.exe` files used by WMI are located in `%windir%\system32\wbem`.
+- For 64-bit Windows OS, these files are located in `%windir%\sysWOW64\wbem`.
+
+To re-register the WMI components, run the following commands with the command prompt:
+
+```cmd
+cd /d %windir%\system32\wbem*
+for %i in (*.dll) do RegSvr32 -s %i
+for %i in (*.exe) do %i /RegServer
+```
 
 ### Information Resources
 
