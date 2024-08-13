@@ -94,6 +94,8 @@ This connector uses a HTTP connection and requires the following input during el
     1. Set an action to run the “**META Alarm Detection**” script recently included in the proper DMA.
 1. In the Contacts table, add the phone numbers you want to receive WhatsApp alarm notifications. The number must start with the country code and exclude any non-numeric characters.
 
+*For more info about correlation rules visit <https://community.dataminer.services/learning/courses/orchestration-automation/> and <https://docs.dataminer.services/user-guide/Advanced_Modules/Correlation/About_DMS_Correlation.html>*.
+
 ## How to use
 
 - If everything went well with the installation and configuration, and an alarm occurs that matches the filtering criteria defined in the correlation rule, the people in the Contacts table should receive an alarm message in their WhatsApps informing about the generated alarm.
