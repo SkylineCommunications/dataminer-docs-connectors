@@ -10,9 +10,9 @@ This connector can be used to monitor and configure the Evertz X1202-HX HDSDI. T
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact**                                                                                              |
-|----------------------|--------------------------------|--------------|----------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main]   | Initial implementation.        | -            | -                                                                                                              |
+| Range              | Key Features            | Based on | System Impact |
+|--------------------|-------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial implementation. | -        | -             |
 
 ### Product Info
 
@@ -40,14 +40,6 @@ SNMP CONNECTION:
 - **IP port**: The IP port of the destination.
 - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -58,16 +50,15 @@ The connector polls most of the tables using subtable functionalities to reduce 
 
 In range **1.0.0.x**, the following pages are available in the element:
 
-- **General**: Includes general system parameters like the up time, name, and location. 
-- **Video**: Includes configuration and Input Control options for Video Inputs. 
-- **Audio**: Includes Input and SS control options for Audio Inputs and Outputs. 
-- **GPIO**: Includes GPI and GPO Global and individual control settings. 
-- **Misc**: Includes various miscellanious parameter such as Serial Address and Baud Rate. 
-- **Trap Management**: Includes managing the ability for traps to be received for Management and Video Input sources. 
-- **Traps**: Includes all traps received from the device as well as detailed descriptions on what each trap does. 
-
-- **Advanced** **Loudness** **Notify**: Includes the Audio Loudness Notify table.
-- **NMOS** **Control**: Contains various NMOS configurables.
-- **Output** **Encoder**: New for 1.1.1.x. Includes the Output Encoder control table.
-- **Input** **Control**: New for 1.1.1.x. Includes the Input Video, Input Audio, and Input ANC Control tables, as well as the Input Video/Audio/ANC Notify tables.
+- **General**: Includes general system parameters like the uptime, name, and location.
+- **Video**: Includes configuration and input control options for video inputs.
+- **Audio**: Includes input and SS control options for audio inputs and outputs.
+- **GPIO**: Includes GPI and GPO global and individual control settings.
+- **Misc**: Includes various miscellaneous parameters such as Serial Address and Baud Rate.
+- **Trap Management**: Allows you to manage the ability for traps to be received for management and video input sources.
+- **Traps**: Includes all traps received from the device as well as detailed descriptions on what each trap does.
+- **Advanced Loudness Notify**: Contains the Audio Loudness Notify table.
+- **NMOS Control**: Contains various NMOS configurables.
+- **Output Encoder**: New for 1.1.1.x. Includes the Output Encoder control table.
+- **Input Control**: New for 1.1.1.x. Includes the Input Video, Input Audio, and Input ANC Control tables, as well as the Input Video/Audio/ANC Notify tables.
 - **Traps**: Includes the Traps Log table and trap control parameters.
