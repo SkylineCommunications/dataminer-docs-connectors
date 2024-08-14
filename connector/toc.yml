@@ -3536,6 +3536,8 @@
     topicUid: Connector_help_Evertz_Vistalink
   - name: Evertz Vistalink Hardware
     topicUid: Connector_help_Evertz_Vistalink_Hardware
+  - name: Evertz X1202-HX HDSDI
+    topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
   - name: Evertz XPRF14
