@@ -7812,6 +7812,8 @@
     topicUid: Connector_help_Skyline_DMP_Replication
   - name: Skyline DMP Replication Umbrella
     topicUid: Connector_help_Skyline_DMP_Replication_Umbrella
+  - name: Skyline DOM Backup Manager
+    topicUid: Connector_help_Skyline_DOM_Backup_Manager
   - name: Skyline Driver Passport Health Check
     topicUid: Connector_help_Skyline_Driver_Passport_Health_Check
   - name: Skyline Driver Passport Platform
