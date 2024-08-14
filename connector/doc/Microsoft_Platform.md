@@ -12,10 +12,6 @@ The Microsoft Platform connector gathers key performance indicators from a serve
 
 All versions of Microsoft Windows are supported, as long as the connector is able to retrieve data using WMI.
 
-<!--Extra information can be enabled or disabled, e.g. Task Manager, Service List, etc.-->
-<!-- On the Task Manager page, a button allows you to normalize alarms in order to set the current values as normal.
--->
-
 ### Version Info
 
 | Range | Description | DCF Integration | Cassandra Compliant |
@@ -25,18 +21,6 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 
 > [!IMPORTANT]
 > Currently, only the ranges listed above are supported. In case you are currently using a different range of the connector, we recommend migrating to one of the supported ranges.
-
-<!--
-| 1.0.0.x [Obsolete] |Microsoft WMI interface implementation. | Yes | Yes |
-| 1.1.0.x [Obsolete] | Microsoft WMI interface implementation. | Yes | No |
-| 1.1.1.x [Obsolete] [move to 1.1.2.x] | Branched from 1.1.0.89: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
-| 1.1.2.x [Obsolete] |Branched from 1.1.1.x: Microsoft WMI interface + interface for DELL- and HP-specific SNMP parameters. | Yes | Yes |
-| 1.2.0.x [Obsolete] | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | Yes | Yes |
-| 2.1.0.x [Obsolete] | Branched from 1.1.0.41: Network Interface table adjustments. | Yes | Yes |
-| 3.0.0.x [Obsolete] | Branched from 1.1.0.71: Implemented a workaround for a WMI bug in the network adapter table. | Yes | Yes |
-| 4.0.0.x [Obsolete] | Branched from 1.1.0.78: Customer-specific branch including functionality to see if the element is running on the active DMA (Failover) with specific security configuration settings in the elements. | Yes | Yes |
-| 5.0.0.x [Obsolete] | Branched from 1.1.1.5: Temporary branch to be used as workaround for a problem with retrieving the service table via WMI calls. | Yes | Yes |
--->
 
 ## Configuration
 
@@ -167,20 +151,10 @@ This page displays the **Network Adapter** table. This table monitors the networ
 > [!NOTE]
 > The bandwidth of an adapter can be very high (*e.g. 10 GB/s*). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if *Total Speed \< 0.005 \* Bandwidth*.
 
-<!--
-For most interfaces, the **MAC Address** and **Status** are available. For a server of the type Microsoft Server 2000 or Microsoft 2000 Professional, the **MAC Address** is not available.
--->
-
 By default, the column **Adapter Description** will contain the name of the adapter as retrieved by [WMI](https://learn.microsoft.com/en-us/previous-versions/aa394293(v=vs.85)). However, in some cases, the connector will not be able to retrieve the name. If this is the case, it is possible to customize this name of the adapter.
 
 > [!IMPORTANT]
 > Once the column **Adapter Description** is set manually, the connector will not overrule this setting. Updating the name could cause metrics related to this network adapter to not be retrieved. If you set a network adapter to a description that is already used by another adapter, the description of the other adapter will be set to an empty string.
-
-<!--
-If you set the **Adapter Description** to the correct name (from Win32_PerfRawData_Tcpip_NetworkInterface), additional info will be retrieved. The connector will try to match the adapters to the correct default description on initializing, but in some cases, you will still need to set this description manually.
-
-Once this has been set manually, the connector will not overrule this setting. The options displayed in the dropdown box are the names of the network interfaces that were found by the connector. You can also choose a custom name that is not from this list, but then no match will be found, no additional info will be shown, and the description can be overruled by the connector. You can only assign a network interface to one network adapter. If you set a network adapter to a description that is already used by another adapter, the description of the other adapter will be set to an empty string.
--->
 
 On the **Network Adapter Measurement** page, you can disable processes to remove them from the **Network Adapter** table.
 
@@ -338,27 +312,6 @@ There can be different possible causes for this behavior. Refer to the possible 
 
 - Verify whether the user used to query the server is included in the group *Performance Monitor Users*.
 
-<!--
-#### Possible memory leak on remote machines that are running 2008/Vista
-
-- Possible memory leak on remote machines that are running 2008/Vista: <http://support.microsoft.com/kb/970520/en-us>
-
-**Solution:**
-
-When the remote server is running Vista, UAC must be disabled.
--->
-
-<!--
-**Problem:**
-
-- Task Manager data through WMI cannot be retrieved. This can be related to missing "Process Performance Counters".
-  Refer to this technet post for more info: <http://blogs.technet.com/b/mscom/archive/2008/12/18/the-mystery-of-the-missing-process-performance-counter-in-perfmon.aspx>
-
-  **Solution**:
-
-  - Disable a specific flag on the Windows Register. Set the "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\PerfProc\Performance\Disable Performance Counters" to *0*.
--->
-
 ### Query failed: Retrieving the data failed. (hr = 0x80041010)
 
 **Symptom**
@@ -446,14 +399,6 @@ From Windows 2000 onwards, WMI is installed by default. Except in Windows Vista,
 1. Establish a new port number for the WMI service by typing *netsh firewall add portopening port=24158 name=WMIFixedPort*.
 
 If you want to have access to the WMI interface of a Windows XP computer, you can work with a local user (a group user, not an administrator) that has the necessary Windows security rights, so extra configuration is necessary on the client computers.
-
-<!--
-### Global Configuration
-
-1. Create a user and add the user in the user group.
-1. If the firewall is enabled, open a command prompt and execute "*netsh firewall set service RemoteAdmin enable*".
-
--->
 
 ### Re-registering the WMI component on the monitored server
 
