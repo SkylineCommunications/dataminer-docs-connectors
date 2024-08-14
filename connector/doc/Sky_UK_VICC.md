@@ -15,7 +15,7 @@ When there are changes, data updates are sent by the application using the Signa
 
 ### Version Info
 
-| **Range** | **Description**                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, with SignalR interface working. | No                  | Yes                     |
 | 1.0.1.x          | Support VICC API 2.11.0.                         | No                  | Yes                     |

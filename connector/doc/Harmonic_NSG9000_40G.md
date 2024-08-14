@@ -12,7 +12,7 @@ This EdgeQAM device supports up to 9 modules, which house 2 RFs with 8 QAMs each
 
 ### Version Info
 
-| **Range** | **Description**                                                               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.1          | Initial version                                                               | No                  | Yes                     |
 | 1.0.0.2          | Added MPTS Grooming; fixed issue with treeview                                | No                  | Yes                     |

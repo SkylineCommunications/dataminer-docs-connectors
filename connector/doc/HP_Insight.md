@@ -12,7 +12,7 @@ This connector can be used to manage contracts and warranties, and to automate r
 
 ### Version Info
 
-| **Range** | **Description**                         | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                             | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                         | No                  | Yes                     |
 | 1.0.1.x          | Major change; key of table 3000 changed | No                  | Yes                     |
