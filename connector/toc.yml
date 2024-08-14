@@ -5422,6 +5422,10 @@
   items:
   - name: Mellanox Technologies MLNX-OS Manager
     topicUid: Connector_help_Mellanox_Technologies_MLNX-OS_Manager
+- name: META
+  items:
+  - name: META WhatsApp Messaging
+    topicUid: Connector_help_META_WhatsApp_Messaging
 - name: Metaswitch
   items:
   - name: Metaswitch MetaView Explorer
