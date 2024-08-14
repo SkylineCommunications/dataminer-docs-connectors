@@ -108,6 +108,26 @@ namespace QAction_1.InterApp.Messages
 	}
 
 	/// <summary>
+	/// Represents the request to delete one or more tasks.
+	/// </summary>
+	[Serializable]
+	public class DeleteTasksRequest : Message
+	{
+		/// <summary>
+		/// Gets or sets a list of task ids.
+		/// </summary>
+		public List<string> TaskIds { get; set; } = new List<string>();
+	}
+
+	/// <summary>
+	/// Represents the response of the <see cref="DeleteTasksRequest"/>.
+	/// </summary>
+	[Serializable]
+	public class DeleteTasksResponse : BaseResponse
+	{
+	}
+
+	/// <summary>
 	/// Represents the request to retrieve all relevant tasks.
 	/// </summary>
 	[Serializable]
@@ -170,6 +190,15 @@ namespace QAction_1.InterApp.Messages
 	[Serializable]
 	public class UpdateTaskResponse : BaseResponse
 	{
+		/// <summary>
+		/// Gets or sets the id.
+		/// </summary>
+		public string Id { get; set; }
+
+		/// <summary>
+		/// Gets or sets the global identifier used when using multiple task systems.
+		/// </summary>
+		public string LinkId { get; set; }
 	}
 }
 
@@ -186,47 +215,47 @@ namespace QAction_1.InterApp.MessagesContent
 		/// <summary>
 		/// Gets or sets the link id. This represents an overarching identifier when working with multiple task systems.
 		/// </summary>
-		public string LinkId { get; set; }
+		public string LinkId { get; set; } = String.Empty;
 
 		/// <summary>
 		/// Gets or sets the task url. This can be used to cross-referencing when working with multiple task systems.
 		/// </summary>
-		public string TaskUrl { get; set; }
+		public string TaskUrl { get; set; } = String.Empty;
 
 		/// <summary>
 		/// Gets or sets the task type.
 		/// </summary>
-		public TaskType Type { get; set; }
+		public TaskType Type { get; set; } = TaskType.Unknown;
 
 		/// <summary>
 		/// Gets or sets the task state.
 		/// </summary>
-		public TaskState State { get; set; }
+		public TaskState State { get; set; } = TaskState.Unknown;
 
 		/// <summary>
 		/// Gets or sets the id.
 		/// </summary>
-		public string Id { get; set; }
+		public string Id { get; set; } = String.Empty;
 
 		/// <summary>
 		/// Gets or sets the name.
 		/// </summary>
-		public string Name { get; set; }
+		public string Name { get; set; } = String.Empty;
 
 		/// <summary>
 		/// Gets or sets the description.
 		/// </summary>
-		public string Description { get; set; }
+		public string Description { get; set; } = String.Empty;
 
 		/// <summary>
 		/// Gets or sets the creation date.
 		/// </summary>
-		public DateTime CreatedAt { get; set; }
+		public DateTime CreatedAt { get; set; } = DateTime.Now;
 
 		/// <summary>
 		/// Gets or sets the creator.
 		/// </summary>
-		public string CreatedBy { get; set; }
+		public string CreatedBy { get; set; } = String.Empty;
 	}
 
 	/// <summary>
@@ -321,6 +350,11 @@ namespace QAction_1.InterApp.MessagesContent
 		/// Issue.
 		/// </summary>
 		Issue,
+
+		/// <summary>
+		/// Group.
+		/// </summary>
+		Group,
 	}
 }
 
@@ -352,6 +386,9 @@ namespace QAction_1.InterApp
 
 			typeof(GetAllTasksRequest),
 			typeof(GetAllTasksResponse),
+
+			typeof(DeleteTasksRequest),
+			typeof(DeleteTasksResponse),
 
 			// Message content
 			typeof(TaskConfiguration),
