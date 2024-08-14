@@ -5466,6 +5466,8 @@
     topicUid: Connector_help_Microsoft_Azure_-_Virtual_Machines
   - name: Microsoft Azure - VM Scale Sets
     topicUid: Connector_help_Microsoft_Azure_-_VM_Scale_Sets
+  - name: Microsoft Azure DevOps
+    topicUid: Connector_help_Microsoft_Azure_DevOps
   - name: Microsoft DHCP Server
     topicUid: Connector_help_Microsoft_DHCP_Server
   - name: Microsoft DNS
