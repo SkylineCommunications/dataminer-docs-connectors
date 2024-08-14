@@ -10,7 +10,7 @@ The Vodafone Kabel Deutschland GmbH SRT GW Service protocol monitors the active 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                            | **Based on** | **System Impact** |
+| Range              | Key Features                                              | Based on   | System Impact   |
 |----------------------|-------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version: Monitors the SRT GW, IP GW, and xSwitches. | -            | -                 |
 

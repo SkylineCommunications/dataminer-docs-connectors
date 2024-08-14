@@ -14,7 +14,7 @@ SNMP based connector for the Kubotek MNB960.
 
 This will list the different ranges of this connector and a short description what the reason of the range change was.
 
-| **Range** | **Description**                                                                                 |
+| Range     | Description                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | Initial version for the Kubotek MNB960v1                                                        |
 | 1.1.0.x          | Initial version for the Kubotek MNB960v2. Different firmware version than the Kubotek MNB960v1. |

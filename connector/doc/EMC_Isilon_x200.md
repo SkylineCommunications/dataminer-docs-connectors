@@ -18,7 +18,7 @@ For more information, refer to <https://store.emc.com/us/Product-Family/ISILON-P
 
 ### Version Info
 
-| **Range** | **Description**                                                         | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                        | No                  | Yes                     |
 | 1.0.1.x          | Based on 1.0.0.4. Uses dynamic IP for redundancy.                       | No                  | Yes                     |

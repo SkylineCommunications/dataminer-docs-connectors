@@ -10,7 +10,7 @@ The **MIT-xperts iSIMS** is a single-rack unit server designed to play out all S
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                      | **Based on** | **System Impact** |
+| Range              | Key Features                                                        | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Possible to gather and view information from the **MIT-xperts iSIMS** | -            | -                 |
 

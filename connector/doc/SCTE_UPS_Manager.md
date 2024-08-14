@@ -12,7 +12,7 @@ It is also possible to group and analyze the traps that the DMA receives from th
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
+| Range              | Key Features                                   | Based on   | System Impact   |
 |----------------------|--------------------------------------------------|--------------|-------------------|
 | 2.0.0.x [SLC Main]   | Automatic and manual provisioning of UPS devices | -            | -                 |
 

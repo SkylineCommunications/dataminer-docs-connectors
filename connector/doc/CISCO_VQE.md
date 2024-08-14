@@ -12,7 +12,7 @@ SSH is used to retrieve an overview of all channels. The connector also monitors
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version  | No                  | Yes                     |
 | 1.0.1.x          | Range for SNMPv3 | No                  | Yes                     |

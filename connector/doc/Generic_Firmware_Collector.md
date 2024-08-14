@@ -10,7 +10,7 @@ The Generic Firmware Collector connector gathers information related to the firm
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact** |
+| Range              | Key Features                                   | Based on   | System Impact   |
 |----------------------|--------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Retrieves firmware version from connector elements. | -            | -                 |
 

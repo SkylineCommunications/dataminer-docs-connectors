@@ -12,7 +12,7 @@ The connector communicates through an HTTP protocol.
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 0.0.0.x          | Initial version (proof of concept) | No                  | Yes                     |
 

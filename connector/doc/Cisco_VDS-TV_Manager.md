@@ -10,7 +10,7 @@ The **Cisco VDS-TV Manager** is used to manage a VDS-TV network. This connector 
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitor and control | -            | -                 |
 

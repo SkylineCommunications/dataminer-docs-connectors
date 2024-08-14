@@ -16,7 +16,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.2.x          | Change in export rules.            | No                  | Yes                     |
 | 1.0.3.x          | Change in discrete display values. | No                  | Yes                     |

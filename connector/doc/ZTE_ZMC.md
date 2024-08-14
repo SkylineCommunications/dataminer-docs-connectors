@@ -10,7 +10,7 @@ This connector can be used to integrate the alarms from the ZTE ZMC monitoring p
 
 ### Version Info
 
-| **Range**            | **Key Features**                      | **Based on** | **System Impact** |
+| Range                | Key Features                          | Based on     | System Impact     |
 |----------------------|---------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Integrates active and cleared alarms. | -            | -                 |
 

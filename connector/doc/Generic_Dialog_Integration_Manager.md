@@ -10,7 +10,7 @@ This connector is intended to collect the parameter IDs from the different proto
 
 ### Version Info
 
-| **Range**            | **Key Features**                                  | **Based on** | **System Impact** |
+| Range              | Key Features                                    | Based on   | System Impact   |
 |----------------------|---------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | DWS Calls: GetProtocolParameterInfo Interpolation | -            | -                 |
 
