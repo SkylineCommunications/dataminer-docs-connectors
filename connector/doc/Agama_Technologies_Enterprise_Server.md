@@ -6,7 +6,7 @@ uid: Connector_help_Agama_Technologies_Enterprise_Server
 
 This connector is used to monitor the Agama Technologies Enterprise Server application. The Agama Enterprise Server collects and presents quality assurance information from connected analyzers.
 
-The Enterprise Server can send SNMP traps to an element using this connector. Other communication goes through SOAP and SSH commands.
+The Enterprise Server can send SNMP traps to an element using this connector. Other communication goes through SOAP and SSH commands on firmware versions that are bellow firmware v9.0. From firmware version 9.0 connector use HTTP instead SOAP communication.
 
 Alarms cannot be retrieved on the analyzer devices themselves, but the Agama Enterprise Server element can forward that information to analyzer elements.
 
@@ -19,7 +19,9 @@ Alarms cannot be retrieved on the analyzer devices themselves, but the Agama Ent
 | 1.0.0.x | Initial version. | - | - |
 | 2.0.0.x | Added SSH and SOAP. | - | - |
 | 2.0.1.x | Fixed OS release version. | - | Custom reports and alarm templates need to be adjusted, because of a parameter type change from double to string. |
-| 2.1.0.x [SLC Main] | Added support for firmware v7.0.4. | 7.0.4 | Updated URL on HTTP Sessions; older firmware versions will not work with this range. |
+| 2.1.0.x | Added support for firmware v7.0.4. | 7.0.4 | Updated URL on HTTP Sessions; older firmware versions will not work with this range. |
+| 2.2.0.x [SLC Main] | Added support for firmware v9.0.6. | 9.0.6 | Updated URL on HTTP Sessions; older firmware versions will not work with this range. |
+
 
 ### System Info
 
@@ -28,7 +30,8 @@ Alarms cannot be retrieved on the analyzer devices themselves, but the Agama Ent
 | 1.0.0.x            | No              | Yes                 | -                 | -                   |
 | 2.0.0.x            | No              | Yes                 | -                 | -                   |
 | 2.0.1.x            | No              | Yes                 | -                 | -                   |
-| 2.1.0.x [SLC Main] | No              | Yes                 | -                 | -                   |
+| 2.1.0.x  | No              | Yes                 | -                 | -                   |
+| 2.2.0.x [SLC Main] | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -48,14 +51,14 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public.*
 - **Set community string**: the community string used when setting values on the device, by default *private.*
 
-#### HTTP (SOAP) connection
+#### HTTP connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination, by default *8008.*
+- **IP port**: The IP port of the destination, by default *8006.*
 - **Bus address**: If the proxy server has to be bypassed, specify *byPassProxy.*
 
 #### Serial (SSH) connection
