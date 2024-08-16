@@ -12,7 +12,7 @@ The chassis must include an **Evertz** **7800-FC** card in order to be functiona
 
 ### Version Info
 
-| **Range** | **Description**                       | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                           | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                      | No                  | Yes                     |
 | 2.0.0.x          | Connector connects directly to the card. | No                  | Yes                     |

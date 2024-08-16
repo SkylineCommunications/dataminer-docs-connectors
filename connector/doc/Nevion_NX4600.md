@@ -14,7 +14,7 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Version Info
 
-| **Range** | **Description**                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                         | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                     | Yes                 | Yes                     |
 | 1.1.0.x          | New firmware version                | Yes                 | Yes                     |

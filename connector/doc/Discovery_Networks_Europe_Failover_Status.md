@@ -14,7 +14,7 @@ Alarm monitoring and trending can be activated on these parameters.
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | License and Failover information are shown. | -            | -                 |
 

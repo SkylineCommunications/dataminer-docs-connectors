@@ -12,7 +12,7 @@ This connector has two ranges, each with their own table layout depending on cus
 
 ### Version Info
 
-| **Range** | **Description**                                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. In range 1.x.x.x, the minimum and maximum EIRP values are provided by a manager connector. | No                  | No                      |
 | 2.0.0.x          | Different table design.                                                                                  | No                  | No                      |

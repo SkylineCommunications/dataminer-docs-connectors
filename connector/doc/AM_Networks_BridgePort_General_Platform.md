@@ -14,23 +14,23 @@ The connector has several pages with general information, HMTS info, the HMTS de
 
 ### Version Info
 
-| **Range** | **Description**                   | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                   | No                  | Yes                     |
-| 1.0.1.x          | Added display column to a table.   | No                  | Yes                     |
-| 1.0.2.x          | Changed display column for naming. | No                  | Yes                     |
+| Range   | Description                        | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                    | No              | Yes                 |
+| 1.0.1.x | Added display column to a table.   | No              | Yes                 |
+| 1.0.2.x | Changed display column for naming. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
-| 1.0.1.x          | N/A                         |
-| 1.0.2.x          | N/A                         |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | N/A                        |
+| 1.0.1.x | N/A                        |
+| 1.0.2.x | N/A                        |
 
 ### Exported connectors
 
-| **Exported Connector**                              | **Description**    |
+| Exported Connector                                 | Description        |
 |----------------------------------------------------|--------------------|
 | AM Networks BridgePort General Platform - VGP-9240 | VGP-9240 amplifier |
 | AM Networks BridgePort General Platform - VGP-9022 | VGP-9022 amplifier |

@@ -12,7 +12,7 @@ The **directOut montone.42** connector provides information related to the input
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact** |
+| Range                | Key Features                   | Based on     | System Impact     |
 |----------------------|--------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                | -            | -                 |
 | 1.1.0.x              | Supports new firmware changes. | 1.0.0.4      | -                 |

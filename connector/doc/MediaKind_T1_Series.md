@@ -12,7 +12,7 @@ This connector displays the available chassis information. It uses an SNMP and H
 
 ### Version Info
 
-| **Range**            | **Key Features**                      | **Based on** | **System Impact** |
+| Range                | Key Features                          | Based on     | System Impact     |
 |----------------------|---------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | SNMPv2 connection HTTP API connection | -            | -                 |
 

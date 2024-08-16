@@ -12,7 +12,7 @@ This connector is used to monitor **Concurrent Mediahawk 4500** video server dev
 
 ### Version Info
 
-| **Range** | **Description**                 | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                     | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                 | No                  | No                      |
 | 1.1.0.x          | Initial version                 | No                  | No                      |

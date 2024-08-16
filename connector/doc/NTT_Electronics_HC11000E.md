@@ -14,17 +14,17 @@ With this connector, it is possible to monitor the hardware and performance stat
 
 ### Version Info
 
-| **Range** | **Description**                      | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                      | No                  | Yes                     |
-| 1.1.0.x          | Support for firmware version RC3.B.1 | No                  | Yes                     |
+| Range   | Description                          | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                      | No              | Yes                 |
+| 1.1.0.x | Support for firmware version RC3.B.1 | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Ver.00.24.0002              |
-| 1.1.0.x          | RC3.B.1                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Ver.00.24.0002             |
+| 1.1.0.x | RC3.B.1                    |
 
 ## Installation and configuration
 

@@ -51,7 +51,7 @@ On the **Communication** page, you can see the last sent command and its respons
 
 If you wish to test a command, you can do so by setting the **Outgoing Command Content** parameter to the command you wish to send and then clicking the **Send Command** button. The **Incoming Response Content** parameter will display the response.
 
-To create sets on the device, a DMA user must have access level 1.
+To set parameters on the device, a DMA user must have access level 1.
 
 The remaining pages display status and settings data:
 

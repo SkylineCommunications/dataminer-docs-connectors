@@ -10,7 +10,7 @@ This is strictly a system connector. Its function is to perform different action
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
+| Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                                   | -            | -                 |
 | 1.0.1.x [SLC Main]   | Logic that interfaces with the collectors removed. | 1.0.0.1      | -                 |

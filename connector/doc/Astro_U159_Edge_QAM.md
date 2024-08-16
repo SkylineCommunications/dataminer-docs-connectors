@@ -10,9 +10,9 @@ With this connector, it is possible to gather and view information from the devi
 
 ### Version Info
 
-| **Range**            | **Key Features**           | **Based on** | **System Impact** |
-|----------------------|----------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | IP-to-QAM signal converter | -            | -                 |
+| Range              | Key Features               | Based on | System Impact |
+|--------------------|----------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | IP-to-QAM signal converter | -        | -             |
 
 ### Product Info
 

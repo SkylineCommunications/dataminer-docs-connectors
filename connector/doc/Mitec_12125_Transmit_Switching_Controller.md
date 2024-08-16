@@ -12,7 +12,7 @@ The **Mitec 12125 Transmit Switching Controller** connector will update its moni
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

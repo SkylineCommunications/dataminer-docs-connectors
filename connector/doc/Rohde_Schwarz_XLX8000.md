@@ -12,7 +12,7 @@ With three timers, all the **SNMP** parameters are polled and displayed on sever
 
 ### Version Info
 
-| **Range** | **Description**                                                            | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                               | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                            | Yes                 | Yes                     |
 | 1.0.1.x          | Renamed single parameters and table column parameters to meet QA standards | Yes                 | Yes                     |

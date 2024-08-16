@@ -12,7 +12,7 @@ This connector displays an **Input Port Table** and **Output Port Table**. The l
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                    | No                  | Yes                     |
 | 1.0.1.x          | Current version                    | No                  | Yes                     |
