@@ -15,7 +15,8 @@ This connector allows you to monitor and configure several aspects of the device
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version  | -            | -                 |
-| 1.1.0.x [SLC Main]   | New firmware     | -            | -                 |
+| 1.1.0.x    | New firmware     | -            | -                 |
+| 1.1.3.x [SLC Main]   | Display Key changed and added Low & High tag on few parameters     | -            | -                 |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ This connector allows you to monitor and configure several aspects of the device
 |-----------|------------------------|
 | 1.0.0.x   | 4.1.0                  |
 | 1.1.0.x   | 4.2.0.RC4              |
+| 1.1.3.x   | 4.2.0.RC4              |
 
 ### System Info
 
