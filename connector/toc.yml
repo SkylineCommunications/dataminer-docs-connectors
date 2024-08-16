@@ -5402,6 +5402,8 @@
     topicUid: Connector_help_Meinberg_microSync
   - name: Meinberg SCU-XPT
     topicUid: Connector_help_Meinberg_SCU-XPT
+  - name: Meinberg LANTIME IMS-GXL API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-GXL_API_V17
 - name: Mellanox Technologies
   items:
   - name: Mellanox Technologies MLNX-OS Manager
