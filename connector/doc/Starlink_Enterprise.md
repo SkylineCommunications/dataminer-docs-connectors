@@ -4,11 +4,15 @@ uid: Connector_help_Starlink_Enterprise
 
 # Starlink Enterprise
 
-The purpose of this connector is to monitor Starlink devices through the Telemetry API over HTTP using JSON files.
+The purpose of this connector is to monitor Starlink devices through the Telemetry API and the Management API over HTTP using JSON files.
 
 Starlink is an internet service that uses a satellite constellation in a low Earth orbit to deliver high-speed low-latency broadband internet. Because Starlink satellites are in a low orbit, at about 550 km from Earth, the round-trip data time between the user and a satellite is significantly lower compared to internet services that make use of single geostationary satellites.
 
 The Starlink Telemetry API is a low-latency API for accessing the telemetry data from Starlink devices. This API is only available for enterprise accounts with an account manager. It is designed for users that have their own data infrastructure to monitor Starlink devices remotely. The API is stateless and will only respond with current telemetry data.
+
+The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
+
+The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. Please upgrade your elements that are still using the Starlink Telemetry API to the latest version of the Starlink Enterprise connector.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
@@ -17,9 +21,9 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 ### Version Info
 
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
+| Range              | Key Features    | Based on                       | System Impact |
+|--------------------|-----------------|--------------------------------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
 
 ### Product Info
 
@@ -39,7 +43,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 #### HTTP Connection - Main
 
-This connector uses an HTTP connection to be able to interact with the Telemetry API and requires the following input during element creation:
+This connector uses an HTTP connection to be able to interact with the API and requires the following input during element creation:
 
 HTTP CONNECTION:
 
@@ -55,12 +59,12 @@ TCP/IP settings
 
 A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Configuration** page.
 
-It is also possible to install the Starlink Telemetry API connector using the **Starlink Enterprise** application package, which provides a simulation extension. The simulation extension is installed alongside the application package. Upon installation, the simulation becomes available and utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the creation of the element. Simulation files are stored within the application's designated directory.
+It is possible to install the Starlink Enterprise connector using the **Starlink Enterprise** application package, which provides a simulation extension. The simulation extension is installed alongside the application package. Upon installation, the simulation becomes available and utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the creation of the element. Simulation files are stored within the application's designated directory.
 
 In case you make use of this package, the **simulation will run until you enter the Client ID and Client Secret** on the **Configuration** page. After that, the simulation stops, and the element begins polling data with real values from the device if the credentials are valid.
 
 > [!IMPORTANT]
-> No telemetry will be polled by default. To enable telemetry polling, go to the **Accounts** table on the **Accounts** page, and use the toggle button of the relevant row(s) in the **Polling** column.
+> No information will be polled by default. To enable polling, go to the **Accounts** table on the **Accounts** page, and use the toggle button of the relevant row(s) in the **Polling** column.
 
 ### Redundancy
 
@@ -70,7 +74,7 @@ No redundancy is defined in the connector.
 
 The connector uses JSON over HTTP to retrieve its data.
 
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**. A healthy element will show groups 700-702 in the Stream Viewer.
+To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**. A healthy element will show groups 700-705 in the Stream Viewer.
 
 If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
 
@@ -79,7 +83,7 @@ If you only see groups 700 and 701 in the Stream Viewer, check the **Polling** c
 Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
 
 > [!NOTE]
-> Keep in mind that the tables User Terminals, Alerts, and Routers can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-702 are shown in the Stream Viewer.
+> Keep in mind that the tables User Terminals, Alerts, Routers, Services, Overage Lines, Monthly and Daily Data Usage can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-705 are shown in the Stream Viewer.
 
 > [!TIP]
 > In case you notice that a large number of user terminals are not shown in the User Terminals table, restart the element. This will trigger a new access token request and a new poll cycle.
@@ -88,17 +92,21 @@ Unexpected column names and user terminal alerts will be logged in the element l
 
 The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which polling is enabled.
 
-The columns **Device ID** and **Account Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
+The columns **Device ID**, **Account Number** and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
 As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
 
 Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
-You can assign a name to each user terminal in the **Device Name** column. These names will only be used by DataMiner and will not be communicated to the API. Keep in mind that a name will not be accepted if it contains invalid symbols.
+User terminals for which the Timestamp column shows **N/A** are returned by the Management API and not by the Telemetry API. In other words, no telemetry (Signal Quality, Downlink Throughput, etc.) can be shown for these.
+
+The **Device Name** column will show the service nickname if a service is active on the user terminal. The Device ID is used as Device Name if no service is active.
 
 ### Alerts Page
 
 Each row in the **Alerts** table represents an alert that comes from a user terminal (not from a router). Alerts will persist for as long as they are active.
+
+The **User Terminal Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 ### Routers Page
 
@@ -110,12 +118,36 @@ As the Telemetry API does not always return the routers consistently, the connec
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
+### Services Page
+
+The rows in the **Services** table represent the active service plans of the accounts.
+
+The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+
+### Overage Lines Page
+
+This table shows the overages, which are additional services or data consumed beyond the limit.
+
+The **Service** column in the Overage Lines table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+
+### Monthly Data Usage Page
+
+Review and monitor your data usage by type of data consumed (Fixed or Mobile, Priority or Standard) by month on the Monthly Data Usage page.
+
+The **Service** column in the **Monthly Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+
+### Daily Data Usage Page
+
+Review and monitor your data usage by type of data consumed (Fixed or Mobile, Priority or Standard) by day on the Daily Data Usage page.
+
+The **Service** column in the **Daily Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+
 ### Accounts Page
 
-All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No telemetry will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You will need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts, and Routers.
+All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No information will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You will need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts, Routers, Services, Overage Lines, Monthly and Daily Data Usage.
 
 > [!NOTE]
-> Keep in mind that after you enable polling for one or more accounts, it can take some time before data is visible in the tables User Terminals, Alerts, and Routers. There is no trigger after changing one or more toggle buttons. Every timer cycle, the connector checks for which accounts polling is enabled.
+> Keep in mind that after you enable polling for one or more accounts, it can take some time before data is visible in the tables User Terminals, Alerts, Routers, Services, Overage Lines, Monthly and Daily Data Usage. There is no trigger after changing one or more toggle buttons. Every timer cycle, the connector checks for which accounts polling is enabled.
 
 ### Configuration Page
 
