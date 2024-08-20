@@ -64,4 +64,5 @@ The element has the following data pages:
 - **Input**: Contains information regarding the inputs of the device, such as Input Frequency, Number of Input Phases, and Nominal Input Voltage. The Input Table lists all the inputs of the UPS.
 - **Output**: Contains information regarding the outputs of the device, such as Output Frequency, Number of Output Phases, Nominal Output Voltage, Output Frequency, and Output Power. The Output Table lists all the outputs of the UPS.
 - **Battery**: Contains information regarding the battery state of the device, such as Remaining Battery Time, Voltage, Battery Current, Battery Capacity, Battery Status, and Battery Last Replaced date.
-- **Alarms**: Contains information regarding the alarms of the device, such as UPS Alarm Table and Number of Present Alarms. Also contains UPS Receptacles information and allows you to shut down, start up and restart those same receptacles.
+- **Alarms**: Contains information regarding the alarms of the device, such as the number of active alarms. The different standalone alarms are separated by their categories.
+- **Receptacles**: Contains information regarding the receptacles of the device. It also allows you to shut down, start up and restart those same receptacles.
