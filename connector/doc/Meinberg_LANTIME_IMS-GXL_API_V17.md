@@ -4,21 +4,21 @@ uid: Connector_help_Meinberg_LANTIME_IMS-GXL_API_V17
 
 # Meinberg LANTIME IMS-GXL API V17
 
-The IMS-GXL is a 448-channel satellite clock module with GNSS technology that has been developed from the ground up specifically for time and frequency synchronization purposes. The IMS-GXL provides a high-precision, high-accuracy time and frequency reference for your Meinberg IMS system and is designed to receive all civilian signals from the U.S. Global Positioning System (GPS), the European Galileo system, the Chinese BeiDou system, and the Russian GLONASS system, providing an impressive range of sources for your Meinberg system to be used anywhere in the world.
+The IMS-GXL is a 448-channel satellite clock module with GNSS technology that has been developed specifically for time and frequency synchronization purposes. The IMS-GXL provides a high-precision, high-accuracy time and frequency reference for Meinberg IMS systems and is designed to receive all civilian signals from the U.S. Global Positioning System (GPS), the European Galileo system, the Chinese BeiDou system, and the Russian GLONASS system, providing a large range of sources for your Meinberg system to be used anywhere in the world.
 
 ## About
 
 ### Version Info
 
-| Range | Key Features | Based On | System Impact |
-|--|--|--|--|
-| 1.0.0.x [SLC Main] | Initial version. | - | Minimum required DataMiner version is **10.2.0.0 - 12603**. |
+| Range              | Key Features     | Based On | System Impact                                               |
+|--------------------|------------------|----------|-------------------------------------------------------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | Minimum required DataMiner version is **10.2.0.0 - 12603**. |
 
 ### Product Info
 
-| Range     | Supported Firmware     | REST API Version     | Supported Types                  |
-|-----------|------------------------|----------------------|----------------------------------|
-| 1.0.0.x   | 7.08.x       | 16.x.y<br>17.x.y    | GXL183 |
+| Range   | Supported Firmware | REST API Version | Supported Types |
+|---------|--------------------|------------------|-----------------|
+| 1.0.0.x | 7.08.x             | 16.x.y<br>17.x.y | GXL183          |
 
 ### System Info
 
@@ -79,16 +79,16 @@ This makes it possible to follow the communication flow and provides some useful
 
 ### Inter App
 
-On the **Inter App** page, an overview is provided that allows you to track the inter application communication and the related handlers.
+On the **Inter App** page, an overview is provided that allows you to track the inter-application communication and the related handlers.
 
 #### Inter App Communication
 
-Overview of the inter application communication events and messages.
+This is an overview of the inter-application communication events and messages.
 
 The state of a communication object indicates whether it is waiting to be processed, being processed, executed successfully, or failed.
 
 #### Inter App Handlers
 
-Overview of the inter application handlers of the received events and messages.
+This is an overview of the inter-application handlers of the received events and messages.
 
-Every communication object will be represented by a related handler. The handler is responsible for taking the necessary actions depending on the related communication object.
+Every communication object is represented by a related handler. The handler is responsible for taking the necessary actions depending on the related communication object.
