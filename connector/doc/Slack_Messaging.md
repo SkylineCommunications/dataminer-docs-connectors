@@ -9,7 +9,7 @@ This connector can be used to integrate Skyline DataMiner with a **Slack workspa
 When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it will execute the Automation script linked to that command.
 
 > [!TIP]
-> Read the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) to learn how this integration can unify your team’s communication between DataMiner and Slack. 
+> To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
 
 ## About
 
