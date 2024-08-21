@@ -2224,6 +2224,8 @@
     topicUid: Connector_help_Comet_T8541
 - name: Commscope
   items:
+  - name: Commscope AdEdge Com
+    topicUid: Connector_help_Commscope_AdEdge_Com
   - name: Commscope VUE Splicer
     topicUid: Connector_help_Commscope_VUE_Splicer
 - name: ComRex
