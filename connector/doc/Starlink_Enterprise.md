@@ -100,7 +100,7 @@ Terminals that are no longer returned by the API for more than one day will be r
 
 User terminals for which the Timestamp column shows **N/A** are returned by the Management API and not by the Telemetry API. This means no telemetry (Signal Quality, Downlink Throughput, etc.) can be shown for these.
 
-The **Device Name** column will show the service nickname if a service is active on the user terminal. The device ID is used as device name if no service is active. Changing the Device Name from the User Terminals table is currently not possible. Please try to change it on the Starlink web interface. The new name will then appear in the table after the next poll cycle.
+The **Device Name** column will show the service nickname if a service is active on the user terminal. The device ID is used as device name if no service is active. Changing the device name from the User Terminals table is currently not possible. To change it, you will need to use the Starlink web interface instead. The new name will then appear in the table after the next poll cycle.
 
 When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when no terminals are assigned to a specific account.
 
