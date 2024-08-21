@@ -2,9 +2,9 @@
 uid: Connector_help_Commscope_AdEdge_Com
 ---
 
-# Commscope VUE Splicer
+# Commscope AdEdge Com
 
-This SNMP connector allows the user to monitor the Commscope AdEdge Com device. Its main feature is the alarm information.
+This SNMP connector allows the user to monitor the Commscope AdEdge Com device. Its main feature is its alarm information.
 
 ## About
 
@@ -44,23 +44,15 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
 
-The **General** page shows **System Info** parameters like **Name**, **Description**, **Model**, and **Uptime**. 
+The **General** page shows **System Info** parameters like **Name**, **Description**, **Model**, and **Uptime**.
 
-The **Alarms** page shows the Active **Alarms** as well as the **Alarm Definition**, which is used to map the description when an active alarm is detected.
+The **Alarms** page shows the active alarms as well as the **Alarm Definition**, which is used to map the description when an active alarm is detected.
 
 ## Notes
 
