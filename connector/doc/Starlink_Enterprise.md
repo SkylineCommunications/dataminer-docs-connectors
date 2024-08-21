@@ -12,7 +12,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. Please upgrade your elements that are still using the Starlink Telemetry API to the latest version of the Starlink Enterprise connector.
+The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
@@ -83,7 +83,7 @@ If you only see groups 700 and 701 in the Stream Viewer, check the **Polling** c
 Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
 
 > [!NOTE]
-> Keep in mind that the tables User Terminals, Alerts, Routers, Services, Overage Lines, Monthly and Daily Data Usage can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-705 are shown in the Stream Viewer.
+> Keep in mind that the tables User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-705 are shown in the Stream Viewer.
 
 > [!TIP]
 > In case you notice that a large number of user terminals are not shown in the User Terminals table, restart the element. This will trigger a new access token request and a new poll cycle.
@@ -92,15 +92,15 @@ Unexpected column names and user terminal alerts will be logged in the element l
 
 The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which polling is enabled.
 
-The columns **Device ID**, **Account Number** and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
+The columns **Device ID**, **Account Number**, and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
 As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
 
 Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
-User terminals for which the Timestamp column shows **N/A** are returned by the Management API and not by the Telemetry API. In other words, no telemetry (Signal Quality, Downlink Throughput, etc.) can be shown for these.
+User terminals for which the Timestamp column shows **N/A** are returned by the Management API and not by the Telemetry API. This means no telemetry (Signal Quality, Downlink Throughput, etc.) can be shown for these.
 
-The **Device Name** column will show the service nickname if a service is active on the user terminal. The Device ID is used as Device Name if no service is active.
+The **Device Name** column will show the service nickname if a service is active on the user terminal. The device ID is used as device name if no service is active.
 
 ### Alerts Page
 
@@ -132,22 +132,22 @@ The **Service** column in the Overage Lines table is hidden by default. You can 
 
 ### Monthly Data Usage Page
 
-Review and monitor your data usage by type of data consumed (Fixed or Mobile, Priority or Standard) by month on the Monthly Data Usage page.
+On this page, you can review and monitor your data usage per month by type of data consumed (*Fixed* or *Mobile*, *Priority* or *Standard*).
 
 The **Service** column in the **Monthly Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 ### Daily Data Usage Page
 
-Review and monitor your data usage by type of data consumed (Fixed or Mobile, Priority or Standard) by day on the Daily Data Usage page.
+On this page, you can review and monitor your data usage per day by type of data consumed (*Fixed* or *Mobile*, *Priority* or *Standard*).
 
 The **Service** column in the **Daily Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
 ### Accounts Page
 
-All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No information will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You will need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts, Routers, Services, Overage Lines, Monthly and Daily Data Usage.
+All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No information will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You will need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage.
 
 > [!NOTE]
-> Keep in mind that after you enable polling for one or more accounts, it can take some time before data is visible in the tables User Terminals, Alerts, Routers, Services, Overage Lines, Monthly and Daily Data Usage. There is no trigger after changing one or more toggle buttons. Every timer cycle, the connector checks for which accounts polling is enabled.
+> Keep in mind that after you enable polling for one or more accounts, it can take some time before data is visible in the tables User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage. There is no trigger after changing one or more toggle buttons. Every timer cycle, the connector checks for which accounts polling is enabled.
 
 ### Configuration Page
 
