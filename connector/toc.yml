@@ -1772,6 +1772,10 @@
     topicUid: Connector_help_CA_Spectrum
   - name: CA Spectrum Device
     topicUid: Connector_help_CA_Spectrum_Device
+- name: Calix
+  items:
+  - name: Calix AXOS
+    topicUid: Connector_help_Calix_AXOS
 - name: Calrec
   items:
   - name: Calrec Apollo
