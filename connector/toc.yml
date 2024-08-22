@@ -1772,6 +1772,10 @@
     topicUid: Connector_help_CA_Spectrum
   - name: CA Spectrum Device
     topicUid: Connector_help_CA_Spectrum_Device
+- name: Calix
+  items:
+  - name: Calix AXOS
+    topicUid: Connector_help_Calix_AXOS
 - name: Calrec
   items:
   - name: Calrec Apollo
@@ -4486,6 +4490,8 @@
   items:
   - name: iDirect 9350
     topicUid: Connector_help_iDirect_9350
+  - name: iDirect Evolution Platform VSAT
+    topicUid: Connector_help_iDirect_Evolution_Platform_VSAT
   - name: iDirect iQ200
     topicUid: Connector_help_iDirect_iQ200
   - name: iDirect LineCard Virtual
