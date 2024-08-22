@@ -10,31 +10,35 @@ This device series is divided into two main product lines: the STA Series and th
 
 ## About
 
-The SpacePath Communications STx Series connector uses SNMPv2 in order to communicate with the whole STx range of HPAs.
+The SpacePath Communications STx Series connector uses SNMPv2 or Serial communication, depending on the connector range, in order to communicate with the whole STx range of HPAs.
+SpacePath Communications STx Series connector using Serial (2.0.0.x range) has less available parameters compared to SNMP (1.0.0.x range), it should only be used in case device does not support SNMP.
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range                | Key Features                             | Based on     | System Impact     |
+|----------------------|------------------------------------------|--------------|-------------------|
+| 1.0.0.x [SLC Main]   | Initial version                          | -            | -                 |
+| 2.0.0.x              | SNMP communication replaced with Serial  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
+| 2.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
 ### Creation
 
-#### SNMP Main Connection
+#### SNMP Main Connection (1.0.0.X range)
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -49,7 +53,15 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default value: *public*).
 - **Set community string**: The community string used when setting values on the device (default value: *private*).
 
-## Usage
+#### Serial Main Connection (2.0.0.X range)
+
+This connector uses a Serial connection and requires the following input during element creation:
+
+- **IP address/host**: The polling IP of the device e.g. 10.11.12.13.
+- **IP port**: The port of the connected device.
+- **Bus address**: The bus address of the connected device.
+
+## Usage  (1.0.0.X range)
 
 ### General
 
@@ -106,6 +118,28 @@ This page is used for the **configuration** of the device **IP communication**.
 ### Configuration
 
 This page contains parameters used for the **configuration of several device functionalities** (e.g. Device Control Mode, Bus Address and Serial COM and CLI communication options).
+
+### Web Interface
+
+This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+
+## Usage  (2.0.0.X range)
+
+### General
+
+This page displays generic **system information**.
+
+### Control
+
+This page contains several parameters that provide **control options** for the device power **amplification**.
+
+### Status
+
+This page contains several parameters that **monitor** the **device state**, such as I/O Power, internal voltage values and temperatures.
+
+### Faults
+
+This page contains the **fault detection** configuration, along with flag parameters.
 
 ### Web Interface
 
