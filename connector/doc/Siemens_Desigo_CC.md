@@ -4,27 +4,27 @@ uid: Connector_help_Siemens_Desigo_CC
 
 # Siemens Desigo CC
 
-The connector will subscribe on all the values on the siemens desigo cc system that were provided with an excel file.
+This connector will subscribe to the values in the Siemens Desigo CC system that were provided with an Excel file.
 
 ## About
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Initial Version</li></ul>         |-         |-         |
+| Range              | Features         | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |6.0.97.105         |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 6.0.97.105         |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -36,9 +36,9 @@ This connector uses an HTTPS connection and requires the following input during 
 
 HTTPS CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *8080*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *8080*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 #### HTTPS Connection - Redundant
 
@@ -46,19 +46,18 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTPS CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *8080*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *8080*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
 
-Fill in the username and password.
-Also import an excel file with the parameters that want to be retrieved.
+When you have created the element, fill in the username and password so the connector can retrieve information.
 
-The excel file should have 1 column with the name of the value from on the Siemens Desigo CC system.
-The name can be found on the GUI.
+Next, import an Excel file with the parameters that should be retrieved. This Excel file must contain one column with the name of the value from on the Siemens Desigo CC system. You can find this name in the GUI.
 
 ## How to use
 
-The values table will be filled in with the values that are being provided through the excel file.
-There are subscription so the values should be pushed by the siemens system to dataminer.
+The values table will be filled in with the values that are provided through the Excel file.
+
+The connector will subscribe to the values, so these should be pushed by the Siemens system to DataMiner.
