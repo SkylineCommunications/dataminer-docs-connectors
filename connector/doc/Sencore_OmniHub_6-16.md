@@ -10,7 +10,7 @@ uid: Connector_help_Sencore_OmniHub_6-16
 
 ### Version Info
 
-| **Range**            | **Key Features**                                          | **Based on** | **System Impact** |
+| Range              | Key Features                                            | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version.                                          | -            | -                 |
 | 1.1.0.x              | Changed from "SNMP" connection type to "HTTP" connection. | -            | -                 |

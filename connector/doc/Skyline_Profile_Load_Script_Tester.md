@@ -16,7 +16,7 @@ With the *Profile Load Script Tester* connector and the associated Automation sc
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                  | **Based on** | **System Impact** |
+| Range              | Key Features                                                    | Based on   | System Impact   |
 |----------------------|-------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Test Profile Load scripts. Requires SRM version 1.2.21 or higher. | -            | -                 |
 

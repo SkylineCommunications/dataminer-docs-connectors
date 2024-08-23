@@ -12,7 +12,7 @@ This connector uses an HTTP connection to get and set the configuration file of 
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial Version (Config Import/Export only) | No                  | Yes                     |
 

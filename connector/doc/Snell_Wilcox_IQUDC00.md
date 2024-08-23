@@ -16,19 +16,19 @@ The communication is based on the RollCall serial protocol.
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                               | No                  | Yes                     |
-| 2.0.0.x          | Smart-serial implementation instead of serial | No                  | Yes                     |
-| 3.0.0.x          | RollCall version.                             | No                  | Yes                     |
+| Range   | Description                                   | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                               | No              | Yes                 |
+| 2.0.0.x | Smart-serial implementation instead of serial | No              | Yes                 |
+| 3.0.0.x | RollCall version.                             | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | All                         |
-| 2.0.0.x          | All                         |
-| 3.0.0.x          | 2.213                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | All                        |
+| 2.0.0.x | All                        |
+| 3.0.0.x | 2.213                      |
 
 ## Installation and configuration
 

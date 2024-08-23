@@ -8,7 +8,7 @@ This is a generic connector with one DCF input connection and one DCF output con
 
 ## About
 
-| **Range**            | **Key Features**                                                       | **Based on** | **System Impact** |
+| Range              | Key Features                                                         | Based on   | System Impact   |
 |----------------------|------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Contains DCF connections (one in and one out) and general device info. | -            | -                 |
 

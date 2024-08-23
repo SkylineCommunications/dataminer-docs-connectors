@@ -12,7 +12,7 @@ This connector was designed to monitor the different properties of the device, s
 
 ### Version Info
 
-| **Range** | **Description**                                              | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                  | DCF Integration     | Cassandra Compliant     |
 |-----------|--------------------------------------------------------------|---------------------|-------------------------|
 | 2.0.0.x   | DVE creation                                                 | No                  | Yes                     |
 | 2.0.1.x   | Fix not all inputs being shown in the RF Switch Input Table. | No                  | Yes                     |
@@ -26,7 +26,7 @@ This connector was designed to monitor the different properties of the device, s
 
 ### Exported Connectors
 
-| **Exported Connector**     | **Description**                                                |
+| Exported Connector         | Description                                                    |
 |----------------------------|----------------------------------------------------------------|
 | ATX Networks MP3 - MPAC    | A separate connector that represents the MPAC Power Supply.    |
 | ATX Networks MP3 - QMP1000 | A separate connector that represents the QMP1000 RF Amplifier. |

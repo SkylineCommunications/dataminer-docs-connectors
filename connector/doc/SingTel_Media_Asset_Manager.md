@@ -10,7 +10,7 @@ This connector orchestrates the Live-to-VOD and MAM workflows for SingTel using 
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on | System Impact |
 |----------------------|-------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Support for L2V workflow and MAM workflow | -            | -                 |
 

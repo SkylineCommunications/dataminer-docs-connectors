@@ -16,7 +16,7 @@ If you want to use the export function, you need to provide an empty Excel file 
 
 ### Version Info
 
-| **Range** | **Description**                        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                            | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                       | No                  | Yes                     |
 | 1.0.1.x          | Major change by QA (DisplayKey).       | No                  | Yes                     |
