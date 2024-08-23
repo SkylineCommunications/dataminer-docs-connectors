@@ -7664,6 +7664,8 @@
     topicUid: Connector_help_SIAE_Microwave_Trunklink
 - name: Siemens
   items:
+  - name: Siemens Desigo CC
+    topicUid: Connector_help_Siemens_Desigo_CC
   - name: Siemens Netviewer
     topicUid: Connector_help_Siemens_Netviewer
   - name: Siemens Sentron PAC3200
