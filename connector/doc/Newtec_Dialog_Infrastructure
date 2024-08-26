@@ -1,0 +1,60 @@
+---
+uid: Connector_help_Newtec_Dialog_Infrastructure
+---
+
+# Newtec Dialog Infrastructure
+
+The Newtec Dialog Time Infrastructure connector collects and organizes data related to the hardware and operating system infratructure that supports the Newtec Dialog VSAT platform .
+
+## About
+
+The Newtec Dialog monitoring system collects metrics from the Newtec dialog platform and stores them in a Time Series database. The connector retrieves data from the Newtec Dialog Platform via its **REST API** and via the **TSDB API**. Data from both sources is aggregated into the connector.
+
+The connector uses the Dialog SOAP to poll the data from the Central Dialog NMS.
+The collected data has system configuration and status information on the plaform hub enclosures and processing segments, servers, virtual machines, modulators, demodulators, switches and other components.
+
+
+### Version Info
+
+| Range              | Description                                                            | DCF Integration | Cassandra Compliant |
+|--------------------|------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                                                        | No              | Yes                 |
+
+### Product Info
+
+**This subsection can only be omitted for a virtual connector**
+
+In this subsection, insert a table with two columns. In the table, list the firmware versions that are fully compatible with the connector, together with the connector ranges. If multiple firmware versions are compatible with one connector range, add them in the same row, but on different lines.
+
+| Range              | Supported Firmware       |
+|--------------------|--------------------------|
+| 1.0.0.x            | 2.2.1, 2.2.2, 2.4.2      |
+
+## Configuration
+
+### Connections
+
+#### HTTP Connection - 1
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+- **IP address/host**: The IP of the Newtec Central NMS.
+- **IP port**: *80*
+- **Device address**: *BypassProxy*
+
+### General Page
+
+On this page, you can configure and apply the **credentials** for user authentication of the SOAP API in order to collect data from the Dialog platform.
+
+On the polling config subpage a series of polling settings can be configured such as request size, and the to enable/disable connection requests.
+
+### Dialog Integration Page
+
+Contains system relevant information such as the primary system IP, Dialog version, system role and integrated element statistics.
+The Protocols subpage lists the mapped Dialog connectors used to retrieve data on the individual system components.
+The Elements subpage lists the underlying Dataminer/system elements that contain the polled information. These correspond to the elements displayed at the system web interface.
+
+### Other Pages
+
+The remaining pages contain the specific information for a given system component type.
+The additional polled data contains configuration and status information on the plaform hub enclosures and processing segments, servers, virtual machines, modulators, demodulators, switches and other components.
