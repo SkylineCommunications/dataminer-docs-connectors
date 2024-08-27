@@ -80,7 +80,7 @@ If you only see group 700 in the Stream Viewer, check the **Authentication** par
 
 If you only see groups 700 and 701 in the Stream Viewer, check the **Polling** column of the **Accounts** table, as probably none of the toggle buttons will be set to enabled.
 
-Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
+Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**. However, note that lines in the element log file indicating *token_expired* can be safely ignored, as these are also added when nothing is wrong with the element.
 
 > [!NOTE]
 > Keep in mind that the tables User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-705 are shown in the Stream Viewer.
