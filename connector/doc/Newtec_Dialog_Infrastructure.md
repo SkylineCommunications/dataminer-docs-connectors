@@ -42,6 +42,10 @@ This connector uses an HTTP connection and requires the following input during e
 - **IP port**: *80*
 - **Device address**: *BypassProxy*
 
+### Initialization
+
+When you have created an element with this connector, go to the **General** page and fill in the **credentials** to authenticate with the SOAP API.
+
 ## How to Use
 
 ### General Page
