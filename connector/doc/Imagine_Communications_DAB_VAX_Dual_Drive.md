@@ -12,7 +12,7 @@ With this connector, it is possible to monitor and configure the transmitter its
 
 ### Version Info
 
-| **Range** | **Description**                                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                  | No                  | Yes                     |
 | 1.0.0.10         | Support for the Extended SD Transmitter MIB (VAXEXTENDED-DD-MIB) | No                  | No                      |

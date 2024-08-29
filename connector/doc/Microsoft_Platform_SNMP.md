@@ -133,3 +133,10 @@ Physical dynamic interfaces:
 ## Notes
 
 To be able to poll using SNMP, the client Microsoft machine needs the SNMP service to be configured correctly (community strings and accepted hosts).
+
+In order to correctly configure the SNMP service on devices running a Windows Server OS, make sure the following features are enabled:
+
+- SNMP Service
+- Remote Server Administration Tools -> Feature Administration Tools -> SNMP Tools. This feature allows additional settings in the SNMP agent (e.g. setting the community string, defining hosts that can monitor the server, etc.)
+
+For more information on how to enable features on Windows Server, refer to [Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard).

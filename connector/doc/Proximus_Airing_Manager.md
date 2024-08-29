@@ -22,7 +22,7 @@ When transmissions are exported, the Proximus Airing Manager will check if they 
 
 ### Version Info
 
-| **Range** | **Description**                                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                                                          | No                  | Yes                     |
 | 1.0.1.x          | Support multiple technicalSystems instances (in same synopsis) Primary key change in Transmissions table | No                  | Yes                     |

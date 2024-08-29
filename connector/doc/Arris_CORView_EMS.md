@@ -12,10 +12,10 @@ This connector **only** supports **SNMP traps** for the Arris CORView EMS.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                 |
-|------------------|-------------------------------------------------------------------------------------------------|
-| 1.0.0.x          | Initial version.                                                                                |
-| 1.0.1.x          | Added "Down" or "Mismatch" to the DisplayKey when there is a Module Communication Status Event. |
+| Range   | Description                                                                                     |
+|---------|-------------------------------------------------------------------------------------------------|
+| 1.0.0.x | Initial version.                                                                                |
+| 1.0.1.x | Added "Down" or "Mismatch" to the DisplayKey when there is a Module Communication Status Event. |
 
 ## Installation and configuration
 

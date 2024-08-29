@@ -12,10 +12,10 @@ The CISCO WLC Platform connector uses **SNMP** to retrieve the data from the CIS
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                               | No                  | Yes                     |
-| 1.0.1.x          | This range supports SNMPv3 (based on 1.0.0.1) | No                  | Yes                     |
+| Range   | Description                                   | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                               | No              | Yes                 |
+| 1.0.1.x | This range supports SNMPv3 (based on 1.0.0.1) | No              | Yes                 |
 
 ### Product Info
 

@@ -23,7 +23,7 @@ For each module, a **DVE** is created that includes the following pages:
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                      | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                                         | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                                                                     | No                  | Yes                     |
 | 1.0.1.x          | Added support for new module PWL4207C (HD PowerLink). New export rules for DVE descriptions were created. New naming format for DVE. | No                  | Yes                     |

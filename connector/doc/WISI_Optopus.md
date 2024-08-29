@@ -20,7 +20,7 @@ For more information about the device, please refer to the website <http://wisi.
 
 ### Version Info
 
-| **Range** | **Description**                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                              | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                         | No                  | No                      |
 | 1.0.1.x          | Tables display column changed to naming. | No                  | No                      |

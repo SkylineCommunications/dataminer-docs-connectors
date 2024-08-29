@@ -12,7 +12,7 @@ This is an **SNMP-based connector** for the ND Satcom Skywan.
 
 ### Version Info
 
-| **Range** | **Description**                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                    | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                | No                  | Yes                     |
 | 1.1.0.x          | Firmware update to version 1.3 | No                  | Yes                     |

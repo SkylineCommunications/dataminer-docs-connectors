@@ -12,7 +12,7 @@ This connector is used to monitor and control the spectrum analyzer using the pr
 
 ### Version Info
 
-| **Range** | **Description**                                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.8          | Span frequencies bigger than 52 MHz up to 1200 MHz are supported. | No                  | Yes                     |
 

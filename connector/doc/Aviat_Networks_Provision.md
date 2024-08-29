@@ -19,23 +19,23 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 
 ### Version Info
 
-| **Range** | **Description**                                    | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                    | No                  | Yes                     |
-| 1.0.1.x          | Adaptation to new SoW                              | No                  | Yes                     |
-| 1.0.2.x          | Primary key is based on rowkey from change request | No                  | Yes                     |
+| Range   | Description                                        | DCF Integration | Cassandra Compliant |
+|---------|----------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                    | No              | Yes                 |
+| 1.0.1.x | Adaptation to new SoW                              | No              | Yes                 |
+| 1.0.2.x | Primary key is based on rowkey from change request | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 6.10                        |
-| 1.0.1.x          | 6.10                        |
-| 1.0.2.x          |                             |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 6.10                       |
+| 1.0.1.x | 6.10                       |
+| 1.0.2.x |                            |
 
 ### Exported connectors
 
-| **Exported Connector**             | **Description**                                                                                                                                                   |
+| Exported Connector                | Description                                                                                                                                                       |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aviat Networks Provision - Device | Alarms of each device connected to the Aviat Networks Provision. A table with information related to the alarm (event ID, severity, location, etc.) is displayed. |
 

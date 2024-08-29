@@ -12,14 +12,14 @@ With this connector, you can keep track of the **cable modems** that are **onlin
 
 ### Version Info
 
-| **Range**            | **Description**                                                                              | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                             | No                  | No                      |
-| 1.1.0.x              | Release version.                                                                             | No                  | No                      |
-| 1.0.2.x [Obsolete]     |Release version with C4 and CCAP model device autodetection.                                 | No                  | No                      |
-| 1.0.3.x [Obsolete]     |Display key column added (Signal Quality Table), naming format for correct alarm monitoring. | No                  | No                      |
-| 1.0.4.x              | Cassandra compliant.                                                                         | No                  | Yes                     |
-| 1.0.5.x [SLC Main]   | DCF feature added.                                                                           | Yes                 | Yes                     |
+| Range              | Description                                                                                  | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                             | No              | No                  |
+| 1.1.0.x            | Release version.                                                                             | No              | No                  |
+| 1.0.2.x [Obsolete] | Release version with C4 and CCAP model device autodetection.                                 | No              | No                  |
+| 1.0.3.x [Obsolete] | Display key column added (Signal Quality Table), naming format for correct alarm monitoring. | No              | No                  |
+| 1.0.4.x            | Cassandra compliant.                                                                         | No              | Yes                 |
+| 1.0.5.x [SLC Main] | DCF feature added.                                                                           | Yes             | Yes                 |
 
 ### Product Info
 

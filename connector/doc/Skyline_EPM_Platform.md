@@ -100,7 +100,8 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | -  | -  |
 | 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
 | 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
-| 1.0.10.x [SLC Main] | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.10.x  | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.11.x [SLC Main] | Removed extra hyphens from thresholds page. | -  | -  |
 
 ### Product Info
 
@@ -117,6 +118,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x   | N/A                    |
 | 1.0.9.x   | N/A                    |
 | 1.0.10.x  | N/A                    |
+| 1.0.11.x  | N/A                    |
 
 ### System Info
 
@@ -133,6 +135,7 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.8.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.9.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.10.x  | No                  | Yes                     | -                     | -                       |
+| 1.0.11.x  | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -197,9 +200,9 @@ Under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**, you
 These are the available PNM parameters that can be modified:
 
 - **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
-- **Non-Main-Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
-- **Post-Main-Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
-- **Pre-Main-Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
+- **Non-Main Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
+- **Post-Main Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
+- **Pre-Main Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
 
 ## How to Use
 
@@ -216,6 +219,8 @@ The **Provision** button makes the element import and export all files and add a
 The **Reset** button will remove existing data from tables and performs provisioning logic to remove any erroneous data.
 
 In range **1.0.4.x**, the **Script Name** parameter is added, which allows you to change the Automation script to be executed. This parameter is available on the **Configuration** page.
+
+In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the front-end element and on all active back-end elements in the system. Whenever you use the button, you will need to confirm this action in a pop-up window.
 
 ## Notes
 
