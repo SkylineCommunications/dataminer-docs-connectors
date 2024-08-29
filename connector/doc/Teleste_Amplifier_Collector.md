@@ -12,11 +12,11 @@ The connector can be provisioned via the import of CSV files with IP addresses a
 
 ### Version Info
 
-| Range              | Description                      | DCF Integration | Cassandra Compliant |
-|--------------------|----------------------------------|-----------------|---------------------|
-| 1.0.0.x [Obsolete] | Initial version                  | No              | Yes                 |
-| 1.0.1.x | Updated spectrum analyzer tables | No              | Yes                 |
-| 1.0.2.x [SLC Main] | Updated discreet values for the Mode parameter in the Level Detector Table to align more with manufacture values.| No              | Yes                 |
+| Range              | Description                                                                                                       | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                                                                  | No              | Yes                 |
+| 1.0.1.x            | Updated spectrum analyzer tables.                                                                                 | No              | Yes                 |
+| 1.0.2.x [SLC Main] | Updated discrete values for the Mode parameter in the Level Detector Table to align more with manufacture values. | No              | Yes                 |
 
 ### Product Info
 
