@@ -16,8 +16,8 @@ The function of this connector is to receive and display data from a Mediagenix 
 | 2.0.0.x [Obsolete] | - Finnish Broadcasting Company branch. <br>- Communication through web service. | -        | -             |
 | 2.0.1.x [Obsolete] | Support for Unicode characters added.                                           | 2.0.0.4  | -             |
 | 2.0.2.x [Obsolete] | Communication through RabbitMQ.                                                 | 2.0.1.7  | -             |
-| 2.0.3.x [Obsolete] | Hotfix branch																   | 2.0.2.10  | -             |
-| 2.0.4.x [SLC Main] | Publication Events and Resource Groups table set to partial.                    | 2.0.2.20  | -             |
+| 2.0.3.x [Obsolete] | Hotfix branch.                                                                  | 2.0.2.10 | -             |
+| 2.0.4.x [SLC Main] | Publication Events and Resource Groups table set to partial.                    | 2.0.2.20 | -             |
 
 ### Product Info
 
