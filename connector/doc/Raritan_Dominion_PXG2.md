@@ -18,7 +18,7 @@ This connector uses **SNMP** to extract all relevant information concerning the 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x   		   | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Reformatted Measurement Table layouts  | 1.0.0.2            | -                 |
+| 1.0.1.x [SLC Main]   | Reformatted layout measurement tables | 1.0.0.2            | -                 |
 
 ### Product Info
 
