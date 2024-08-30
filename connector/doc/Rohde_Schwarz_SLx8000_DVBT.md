@@ -70,6 +70,8 @@ On the **Commands** subpage, you can find all the mode configurations info that 
 
 The **Receiver** page contains status and power parameters.
 
+System Impedance is a configurable parameter used to compute RF Input Level dBm column (Status DVB Receiver/Monitor Table). Changing the value will affect trending and monitoring of that column. 
+
 ### Exciter
 
 On the **Exciter** page of the connector, you can find more information about the Exciter's Input, Status, Precorrection, Configuration and Product Information in the respective tables. All of this information is read-only.
