@@ -12,6 +12,6 @@ The DVE using this connector is exported by a parent element using the [Meinberg
 
 ### Product Info
 
-| Range     | Supported Firmware     | REST API Version     |
-|-----------|------------------------|----------------------|
-| 1.0.0.x   | 7.08.x       | 17.x.y     |
+| Range   | Supported Firmware | REST API Version |
+|---------|--------------------|------------------|
+| 1.0.0.x | 7.08.x             | 17.x.y           |

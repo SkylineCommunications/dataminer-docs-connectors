@@ -4,21 +4,21 @@ uid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17
 
 # Meinberg LANTIME IMS-PSX API V17
 
-The **PSX** (Precision Synchronization eXpert) provides a powerful IEEE1588 PTP solution designed to integrate into 10 Gigabit networks conventionally found in high-bandwidth environments such as data centers, broadcasting & media production, telecom and financial networks.
+The **PSX** (Precision Synchronization eXpert) provides a powerful IEEE1588 PTP solution designed to integrate into 10-gigabit networks conventionally found in high-bandwidth environments such as data centers, broadcasting and media productions, and telecom and financial networks.
 
 ## About
 
 ### Version Info
 
-| Range                | Key Features     | Based On     | System Impact                                                                   |
-|----------------------|------------------|--------------|---------------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | Minimum required DataMiner version is **10.2.0.0 - 12603**. |
+| Range              | Key Features     | Based On | System Impact                                               |
+|--------------------|------------------|----------|-------------------------------------------------------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | Minimum required DataMiner version is **10.2.0.0 - 12603**. |
 
 ### Product Info
 
-| Range     | Supported Firmware     | REST API Version     | Supported Types                 |
-|-----------|------------------------|----------------------|---------------------------------|
-| 1.0.0.x   | 7.08.x       | 17.x.y     | PSX210                          |
+| Range   | Supported Firmware | REST API Version | Supported Types |
+|---------|--------------------|------------------|-----------------|
+| 1.0.0.x | 7.08.x             | 17.x.y           | PSX210          |
 
 ### System Info
 
