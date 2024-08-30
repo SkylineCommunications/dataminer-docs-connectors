@@ -8366,6 +8366,10 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+- name: Stormshield
+  items:
+  - name: Stormshield Network Security S-Series
+    topicUid: Connector_help_Stormshield_Network_Security_S-Series
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
