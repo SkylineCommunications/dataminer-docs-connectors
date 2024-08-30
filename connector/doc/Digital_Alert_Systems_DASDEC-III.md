@@ -48,6 +48,31 @@ SERIAL CONNECTION:
   - **IP address/host**: The connector will act as a server. Set this field to "*Any*".
   - **IP port**: By default *20002*. A different port can be specified.
 
+#### SNMP Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+- **Device address**: This is not required.
+
+SNMP Settings:
+
+- **Port number**: *161*
+- **Get community string**: *public*
+- **Set community string**: *private*
+
+#### HTTP Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: *80*
+- **Bus address**: *ByPassProxy*
+
 ### Initialization
 
 To perform the public-private key initialization, follow these steps:
