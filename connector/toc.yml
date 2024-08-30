@@ -5384,10 +5384,10 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10
   - name: Meinberg LANTIME IMS-PIO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10
-  - name: Meinberg LANTIME IMS-PSX API V10
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V10
-  - name: Meinberg LANTIME IMS-PSX API V10 - PTPv2 Instance
-    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V10_-_PTPv2_Instance
+  - name: Meinberg LANTIME IMS-PSX API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17
+  - name: Meinberg LANTIME IMS-PSX API V17 - PTPv2 Instance
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17_-_PTPv2_Instance
   - name: Meinberg LANTIME IMS-PZF
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF
   - name: Meinberg LANTIME IMS-PZF API V10

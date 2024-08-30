@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V10
+uid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17
 ---
 
-# Meinberg LANTIME IMS-PSX API V10
+# Meinberg LANTIME IMS-PSX API V17
 
 The **PSX** (Precision Synchronization eXpert) provides a powerful IEEE1588 PTP solution designed to integrate into 10 Gigabit networks conventionally found in high-bandwidth environments such as data centers, broadcasting & media production, telecom and financial networks.
 
@@ -24,7 +24,7 @@ The **PSX** (Precision Synchronization eXpert) provides a powerful IEEE1588 PTP 
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
-| 1.0.0.x | Yes | Yes | DataMiner connector:<br>- [Meinberg LANTIME Modular API V10](xref:Connector_help_Meinberg_LANTIME_Modular_API_V10) | DataMiner connector:<br>- [Meinberg LANTIME IMS-PSX API V10 - PTPv2 Instance](xref:Connector_help_Meinberg_LANTIME_IMS-PSX_API_V10_-_PTPv2_Instance) |
+| 1.0.0.x | Yes | Yes | DataMiner connector:<br>- [Meinberg LANTIME Modular API V10](xref:Connector_help_Meinberg_LANTIME_Modular_API_V10) | DataMiner connector:<br>- [Meinberg LANTIME IMS-PSX API V17 - PTPv2 Instance](xref:Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17_-_PTPv2_Instance) |
 
 ## Configuration
 
