@@ -11,11 +11,10 @@ The purpose of this connector is to receive alerts from the DASDEC-III. It will 
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Added HTTP/SNMP  | 1.0.0.2      | Element configuration must be adapted|
-                         Connections  
+| Range              | Key Features                | Based on | System Impact                          |
+|--------------------|-----------------------------|----------|----------------------------------------|
+| 1.0.0.x            | Initial version             | -        | -                                      |
+| 1.0.1.x [SLC Main] | Added HTTP/SNMP connections | 1.0.0.2  | Element configuration must be adapted. |
 
 ### Product Info
 
@@ -24,14 +23,12 @@ The purpose of this connector is to receive alerts from the DASDEC-III. It will 
 | 1.0.0.x   | 5.2.2                  |
 | 1.0.1.x   | 5.2.2                  |
 
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-
 
 ## Configuration
 
@@ -92,6 +89,10 @@ To perform the public-private key initialization, follow these steps:
 1. Click **Accept SSH Authorization Change**.
 
 You can now approve mandatory/voluntary open alerts. If an alert is not forwarded, check the element logging for errors.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
 
