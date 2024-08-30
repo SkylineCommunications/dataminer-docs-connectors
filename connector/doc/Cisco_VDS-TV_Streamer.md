@@ -10,7 +10,7 @@ The **Cisco VDS-TV Streamer** is used to stream the content stored on the **Cisc
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitor and control | -            | -                 |
 

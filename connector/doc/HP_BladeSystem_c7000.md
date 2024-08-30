@@ -12,7 +12,7 @@ An **SNMP** connection is needed for the connector so that it can retrieve and s
 
 ### Version Info
 
-| **Range**            | **Key Features**                              | **Based on** | **System Impact** |
+| Range              | Key Features                                | Based on   | System Impact   |
 |----------------------|-----------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                              | -            | -                 |
 | 1.0.1.x [SLC Main]   | Additional trap support and checklist review. | 1.0.0.x      | -                 |

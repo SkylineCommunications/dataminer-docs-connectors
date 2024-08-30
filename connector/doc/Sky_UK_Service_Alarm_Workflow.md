@@ -14,7 +14,7 @@ The parameters must be selected when the service is created. First you will need
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. | No                  | Yes                     |
 

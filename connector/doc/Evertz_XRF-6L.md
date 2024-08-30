@@ -12,7 +12,7 @@ This connector was designed to work with the **Evertz XRF-6L**. With it, you can
 
 ### Version Info
 
-| **Range** | **Description**                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                  | No                  | Yes                     |
 | 2.0.0.x          | Incremental improvements to connector.            | No                  | Yes                     |

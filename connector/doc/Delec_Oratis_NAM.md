@@ -12,7 +12,7 @@ There are several versions of the connector. The 1.0.0.x range is used for older
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]     |Draft range. Obsolete - should not be used. | -            | -                 |
 | 1.1.0.x [SLC Main]   | Initial version.                            | -            | -                 |

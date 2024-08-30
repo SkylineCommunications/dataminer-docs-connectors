@@ -12,7 +12,7 @@ This HTTP connector connects to the Zabbix API to retrieve data from the Zabbix 
 
 ### Version Info
 
-| **Range**            | **Key Features**                        | **Based on** | **System Impact** |
+| Range                | Key Features                            | Based on     | System Impact     |
 |----------------------|-----------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                        | -            | -                 |
 | 1.1.0.x [SLC Main]   | API 4.0: new features were implemented. | -            | -                 |

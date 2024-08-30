@@ -12,17 +12,17 @@ This connector (SNMP-based in range 1.0.0.x and HTTP-based in range 1.1.0.x) mon
 
 ### Version Info
 
-| **Range** | **Description**                | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.               | No                  | No                      |
-| 1.1.0.x          | HTTP connection. Tree control. | No                  | Yes                     |
+| Range   | Description                    | DCF Integration | Cassandra Compliant |
+|---------|--------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.               | No              | No                  |
+| 1.1.0.x | HTTP connection. Tree control. | No              | Yes                 |
 
 ### Product Info
 
-| Range     | Device Firmware Version        |
-|------------------|--------------------------------|
-| 1.0.0.x          | me7k.1.0.0.42.150313 (CCBuild) |
-| 1.1.0.x          | me7k.2.2.0                     |
+| Range   | Device Firmware Version        |
+|---------|--------------------------------|
+| 1.0.0.x | me7k.1.0.0.42.150313 (CCBuild) |
+| 1.1.0.x | me7k.2.2.0                     |
 
 ## Installation and configuration
 

@@ -16,17 +16,17 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------|---------------------|-------------------------|
-| 1.0.2.x          | Change in export rules.            | Yes                 | Yes                     |
-| 1.0.3.x          | Change in discreet display values. | Yes                 | Yes                     |
+| Range   | Description                        | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------|-----------------|---------------------|
+| 1.0.2.x | Change in export rules.            | Yes             | Yes                 |
+| 1.0.3.x | Change in discreet display values. | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.2.x          | 6034, 6040                  |
-| 1.0.3.x          | 6034, 6040                  |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.2.x | 6034, 6040                 |
+| 1.0.3.x | 6034, 6040                 |
 
 ## Installation and configuration
 

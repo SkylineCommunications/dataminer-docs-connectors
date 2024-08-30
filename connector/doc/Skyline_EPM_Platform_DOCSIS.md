@@ -96,6 +96,8 @@ On the **Configuration Passives** page, the **Load Time** parameter allows you t
 
 In range **1.0.4.x**, the **Script Name** is added, which allows you to change the Automation script to be executed. This parameter is available on the **Configuration** page.
 
+In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the back-end element.
+
 ### Inner workflow of the EPM Solution
 
 The provisioning of the EPM Solution is sequential and involves the following components:

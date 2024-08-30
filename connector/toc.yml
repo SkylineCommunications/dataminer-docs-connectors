@@ -42,6 +42,8 @@
     topicUid: Connector_help_2WCOM_RDS_OCTO-IP
   - name: 2WCOM S02
     topicUid: Connector_help_2WCOM_S02
+  - name: 2WCOM SAT-4d
+    topicUid: Connector_help_2WCOM_SAT-4d
   - name: 2WCOM X-4sd
     topicUid: Connector_help_2WCOM_X-4sd
 - name: A10 Networks
@@ -1566,6 +1568,8 @@
     topicUid: Connector_help_Beckhoff_BK9000
   - name: Beckhoff KL2622
     topicUid: Connector_help_Beckhoff_KL2622
+  - name: Beckhoff KL3202
+    topicUid: Connector_help_Beckhoff_KL3202
 - name: Beenius
   items:
   - name: Beenius IPTV Delivery Platform
@@ -1768,6 +1772,10 @@
     topicUid: Connector_help_CA_Spectrum
   - name: CA Spectrum Device
     topicUid: Connector_help_CA_Spectrum_Device
+- name: Calix
+  items:
+  - name: Calix AXOS
+    topicUid: Connector_help_Calix_AXOS
 - name: Calrec
   items:
   - name: Calrec Apollo
@@ -2220,6 +2228,8 @@
     topicUid: Connector_help_Comet_T8541
 - name: Commscope
   items:
+  - name: Commscope AdEdge Com
+    topicUid: Connector_help_Commscope_AdEdge_Com
   - name: Commscope VUE Splicer
     topicUid: Connector_help_Commscope_VUE_Splicer
 - name: ComRex
@@ -2712,6 +2722,8 @@
   items:
   - name: EATON 9355 UPS
     topicUid: Connector_help_EATON_9355_UPS
+  - name: EATON 9390 UPS
+    topicUid: Connector_help_EATON_9390_UPS
   - name: Eaton 93PM UPS
     topicUid: Connector_help_Eaton_93PM_UPS
   - name: EATON 9PX UPS
@@ -3530,6 +3542,8 @@
     topicUid: Connector_help_Evertz_Vistalink
   - name: Evertz Vistalink Hardware
     topicUid: Connector_help_Evertz_Vistalink_Hardware
+  - name: Evertz X1202-HX HDSDI
+    topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
   - name: Evertz XPRF14
@@ -4440,6 +4454,10 @@
     topicUid: Connector_help_Huawei_OceanStor_9000
   - name: Huawei UPS AC
     topicUid: Connector_help_Huawei_UPS_AC
+- name: Hughes
+  items:
+  - name: Hughes Pulse Platform VSAT
+    topicUid: Connector_help_Hughes_Pulse_Platform_VSAT
 - name: HW Group
   items:
   - name: HW Group Poseidon2
@@ -4472,6 +4490,8 @@
   items:
   - name: iDirect 9350
     topicUid: Connector_help_iDirect_9350
+  - name: iDirect Evolution Platform VSAT
+    topicUid: Connector_help_iDirect_Evolution_Platform_VSAT
   - name: iDirect iQ200
     topicUid: Connector_help_iDirect_iQ200
   - name: iDirect LineCard Virtual
@@ -4922,6 +4942,10 @@
   items:
   - name: JVC PTZ Camcorder
     topicUid: Connector_help_JVC_PTZ_Camcorder
+- name: Kaiteng Sifang
+  items:
+  - name: Kaiteng Sifang KSF-II-813 Transmitter
+    topicUid: Connector_help_Kaiteng_Sifang_KSF-II-813_Transmitter
 - name: Kantar Media
   items:
   - name: Kantar Media SNAP Watermarking Monitor
@@ -5168,10 +5192,14 @@
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000
   - name: LYNX Technik AG Series 5000 - CDX 5624
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CDX_5624
+  - name: LYNX Technik AG Series 5000 - CHD 1402-2
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CHD_1402
   - name: LYNX Technik AG Series 5000 - DVA 5718-L
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVA_5718-L
   - name: LYNX Technik AG Series 5000 - DVD 5820
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVD_5820
+  - name: LYNX Technik AG Series 5000 - ORX 1802
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_ORX_1802
   - name: LYNX Technik AG Series 5000 - OTX 5840
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_OTX_5840
   - name: LYNX Technik AG Series 5000 - PDM 5380
@@ -5332,6 +5360,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-GPS
   - name: Meinberg LANTIME IMS-GPS API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-GPS_API_V10
+  - name: Meinberg LANTIME IMS-GXL API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-GXL_API_V17
   - name: Meinberg LANTIME IMS-HPS
     topicUid: Connector_help_Meinberg_LANTIME_IMS-HPS
   - name: Meinberg LANTIME IMS-HPS - PTPv2 Instance
@@ -5410,6 +5440,10 @@
   items:
   - name: Mellanox Technologies MLNX-OS Manager
     topicUid: Connector_help_Mellanox_Technologies_MLNX-OS_Manager
+- name: META
+  items:
+  - name: META WhatsApp Messaging
+    topicUid: Connector_help_META_WhatsApp_Messaging
 - name: Metaswitch
   items:
   - name: Metaswitch MetaView Explorer
@@ -5450,6 +5484,8 @@
     topicUid: Connector_help_Microsoft_Azure_-_Virtual_Machines
   - name: Microsoft Azure - VM Scale Sets
     topicUid: Connector_help_Microsoft_Azure_-_VM_Scale_Sets
+  - name: Microsoft Azure DevOps
+    topicUid: Connector_help_Microsoft_Azure_DevOps
   - name: Microsoft DHCP Server
     topicUid: Connector_help_Microsoft_DHCP_Server
   - name: Microsoft DNS
@@ -6254,6 +6290,8 @@
     topicUid: Connector_help_Newtec_AZ860_Deconcentrator
   - name: Newtec Dialog Platform VSAT
     topicUid: Connector_help_Newtec_Dialog_Platform_VSAT
+  - name: Newtec Dialog Infrastructure
+    topicUid: Connector_help_Newtec_Dialog_Infrastructure
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
   - name: Newtec Dialog Time Series Database - Network
@@ -6404,6 +6442,8 @@
     topicUid: Connector_help_Novelsat_NS2000
   - name: Novelsat NS3000
     topicUid: Connector_help_Novelsat_NS3000
+  - name: Novelsat Xstream
+    topicUid: Connector_help_Novelsat_Xstream
 - name: Novotronik
   items:
   - name: Novotronik GTS191x
@@ -7630,6 +7670,8 @@
     topicUid: Connector_help_SIAE_Microwave_Trunklink
 - name: Siemens
   items:
+  - name: Siemens Desigo CC
+    topicUid: Connector_help_Siemens_Desigo_CC
   - name: Siemens Netviewer
     topicUid: Connector_help_Siemens_Netviewer
   - name: Siemens Sentron PAC3200
@@ -7794,6 +7836,8 @@
     topicUid: Connector_help_Skyline_DMP_Replication
   - name: Skyline DMP Replication Umbrella
     topicUid: Connector_help_Skyline_DMP_Replication_Umbrella
+  - name: Skyline DOM Backup Manager
+    topicUid: Connector_help_Skyline_DOM_Backup_Manager
   - name: Skyline Driver Passport Health Check
     topicUid: Connector_help_Skyline_Driver_Passport_Health_Check
   - name: Skyline Driver Passport Platform
@@ -8326,6 +8370,10 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+- name: Stormshield
+  items:
+  - name: Stormshield Network Security S-Series
+    topicUid: Connector_help_Stormshield_Network_Security_S-Series
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
@@ -9526,6 +9574,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service
   - name: Vodafone Kabel Deutschland GmbH SAT DL Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service
+  - name: Vodafone Kabel Deutschland GmbH SI Stream Mapping
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
   - name: Vodafone Kabel Deutschland GmbH Site Switchover
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
