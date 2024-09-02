@@ -8,7 +8,7 @@ The Arista Manager connector can monitor all Arista systems running the **Arista
 
 ## About
 
-This connector can be used to monitor **Interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
+This connector can be used to monitor **interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
 
 - **SNMP** is used to retrieve device information (e.g. **System Name**, **System Description**, **Detailed Interface Info tables**, etc.) and to receive the **traps**.
 - **HTTP** is used to retrieve information that is available in the Arista Command API.
