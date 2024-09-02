@@ -20,6 +20,35 @@ The combination of filters will be evaluated using an OR condition.
 
 ## How to use
 
+In order to follow the next steps there is a required Static Views folder stucture that the DMS should have:
+- TDF
+  - 01 - TNT
+    - 01 - Métropole
+      - Inside this view there are the **Departments Views** with following names :"01", "02", "03", "04", "05", "06", "07", "08", "09", "10",
+"11", "12", "13", "14", "15", "16", "17", "18", "19",
+"21", "22", "23", "24", "25", "26", "27", "28", "29", "30",
+"31", "32", "33", "34", "35", "36", "37", "38", "39", "40",
+"41", "42", "43", "44", "45", "46", "47", "48", "49", "50",
+"51", "52", "53", "54", "55", "56", "57", "58", "59", "60",
+"61", "62", "63", "64", "65", "66", "67", "68", "69", "70",
+"71", "72", "73", "74", "75", "76", "77", "78", "79", "80",
+"81", "82", "83", "84", "85", "86", "87", "88", "89", "90",
+"91", "92", "93", "94", "95", "2A", "2B".
+    - 02 - Outremer
+      - Inside this view there are the **Departments Views** with following names: "971", "972", "973", "974", "975", "985", "986", "987", "988".
+    - 03 -Sites Tiers
+  - 02 - France 3
+    - 01 - F3 CAT
+      - F3 CAT-Elements
+    - 02 - F3 eDLiveR
+      - F3 eDliveR-Elements
+    - 03 - F3 FTR VAISE CDE
+      - F3 FTR VAISE CDE-Elements
+  - 98 - Common
+  - 99 - Skyline
+
+Also it is required for the next steps to work that at least one element on the system has the **"Addresse IP"** custom property filled.
+
 When you have defined the filters, you can use the pages **Views & Services Provisioning** and **Elements Provisioning** to provision the views and services and to provision the elements to be added to those view and services, respectively.
 
 Click the **Refresh** button to make the connector read all the information present in the queries tables and filter it with the defined filters. In the **Unstaged Changes** tables, you will then see the creation/update changes that are present in the tables related to the actual views, services, and elements present in the DMS.
