@@ -106,13 +106,13 @@ On this page an overview is given of the crosspoints (**Crosspoints**), the cros
 
 This page shows the general information of the device. It displays its status and name.
 
-### Matrice
+### Matrices
 
-This page shows an overview of the Matrice Table.
+This page shows an overview of the Matrices Table.
 
 ### Levels
 
-This page shows an overview of the Levels Table. The format of the Index is {Matrice Index}.{Levels Id}.
+This page shows an overview of the Levels Table. The format of the Index is {Matrices Index}.{Levels Id}.
 
 ### Sources
 
@@ -127,7 +127,6 @@ This page shows an overview of the Source Association Table and the Source Assoc
 
 #### Source Settings
 
-This page allows the 
 The display name can be configuration of the Sources Table display name. It is formatted in the format of **Source Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name. The default configuration uses the 16 character name choice.
 
 ### Destinations
@@ -139,7 +138,6 @@ The routed source can also be configured on the table, and its respective enable
 
 #### Destination Settings
 
-This page allows the 
 The display name can be configuration of the Destinations Table display name. It is formatted in the format of **Destination Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name. The default configuration uses the 16 character name choice.
 
 ### Matrix
