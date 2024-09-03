@@ -42,7 +42,7 @@ This connector uses a virtual connection and does not require any input during e
 
 This connector requires that the VISA library is installed on the DataMiner Agent. The installer for the library can be downloaded from the [Rohde-Schwarz website](https://www.rohde-schwarz.com/us/driver-pages/remote-control/3-visa-and-tools_231388.html).
 
-*RsInstrument.dll* must also be present in the *C:\Skyline DataMiner\ProtocolScripts* folder of the DataMiner Agent.
+*RsInstrument.dll* must also be present in the *C:\Skyline DataMiner\ProtocolScripts\DllImport* folder of the DataMiner Agent. If you choose to deploy the connector from the Catalog to your Cloud-Connected DataMiner System, this dll will be automatically stored there. Also if you install the connector via a .dmprotocol-Package, the dll will be included and added in the correct location.
 
 ## How to Use
 
