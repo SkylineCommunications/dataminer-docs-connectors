@@ -54,7 +54,7 @@ Currently the following devices can be discovered:
 
 ### Version Info
 
-| **Range** | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description      | DCF Integration     | Cassandra Compliant     |
 |-----------|------------------|---------------------|-------------------------|
 | 1.0.0.x   | Initial version  | No                  | Yes                     |
 | 1.0.1.x   | Connector review | No                  | Yes                     |

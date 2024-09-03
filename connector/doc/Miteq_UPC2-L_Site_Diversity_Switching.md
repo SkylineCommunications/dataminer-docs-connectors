@@ -12,7 +12,7 @@ This is a **serial** or **SNMP** connector used to monitor and control the **Mit
 
 ### Version Info
 
-| **Range** | **Description**                                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                    | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                | Yes                 | Yes                     |
 | 2.0.0.x          | Serial connection replaced by SNMP connection. | No                  | Yes                     |

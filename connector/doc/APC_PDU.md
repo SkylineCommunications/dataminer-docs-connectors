@@ -12,19 +12,19 @@ The connector uses an **SNMP** connection to retrieve the status of the APC PDU 
 
 ### Version Info
 
-| **Range**     | **Description**                                        | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Added additional traps.                                | No                  | No                      |
-| 1.0.1.x [SLC Main]   | Added missing OIDs; removed displayColumn from tables. | No                  | Yes                     |
-| 1.0.2.x              | Added support for SNMPv3.                              | No                  | Yes                     |
+| Range              | Description                                            | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Added additional traps.                                | No              | No                  |
+| 1.0.1.x [SLC Main] | Added missing OIDs; removed displayColumn from tables. | No              | Yes                 |
+| 1.0.2.x            | Added support for SNMPv3.                              | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 6.4.0                       |
-| 1.0.1.x          | 6.4.0                       |
-| 1.0.2.x          | 6.4.0                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 6.4.0                      |
+| 1.0.1.x | 6.4.0                      |
+| 1.0.2.x | 6.4.0                      |
 
 ## Installation and configuration
 

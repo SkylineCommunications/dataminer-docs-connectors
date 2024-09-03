@@ -14,7 +14,7 @@ The connector shows the full status of the server.
 
 ### Version Info
 
-| **Range** | **Description**                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                              | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------|---------------------|-------------------------|
 | 2.0.0.x          | Initial version                          | No                  |                         |
 | 2.1.0.x          | Adapted to firmware esb2001-2.18 release | No                  | Yes                     |

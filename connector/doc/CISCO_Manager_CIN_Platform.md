@@ -10,7 +10,7 @@ With the CISCO Manager CIN Platform it is possible to configure and monitor CISC
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based on** | **System Impact** |
+| Range              | Key Features                 | Based on | System Impact |
 |----------------------|------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.             | -            | -                 |
 | 1.0.1.x [SLC Main]   | Updated Temperature section. | -            | -                 |

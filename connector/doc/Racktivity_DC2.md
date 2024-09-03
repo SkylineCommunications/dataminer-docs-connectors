@@ -14,7 +14,7 @@ The connector uses **SNMP** to retrieve and update the data of the device. The R
 
 ### Version Info
 
-| **Range** | **Description**                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                                    | No                  | Yes                     |
 | 1.0.1.x          | Corrected Displayed Items. Reset Max/Min Values function. Improved Polling timing. | No                  | Yes                     |

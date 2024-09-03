@@ -15,7 +15,7 @@ The connector retrieves information via **SNMP** and displays it in the element 
 
 ### Version Info
 
-| **Range** | **Description**                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                          | No                  | No                      |
 | 1.1.0.x          | Updated parameters based on the new MIBs because of new device firmware. | No                  | No                      |

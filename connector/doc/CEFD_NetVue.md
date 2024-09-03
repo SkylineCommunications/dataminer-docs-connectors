@@ -14,11 +14,11 @@ Remote items (connectors, Automation scripts) can also interact with this connec
 
 ### Version Info
 
-| **Range** | **Description**               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Provisioning for NetVue 2.5.9 | No                  | Yes                     |
-| 1.1.0.x          | Provisioning for NetVue 3.1.7 | No                  | Yes                     |
-| 1.2.0.x          | Provisioning for NetVue 3.2   | No                  | Yes                     |
+| Range   | Description                   | DCF Integration | Cassandra Compliant |
+|---------|-------------------------------|-----------------|---------------------|
+| 1.0.0.x | Provisioning for NetVue 2.5.9 | No              | Yes                 |
+| 1.1.0.x | Provisioning for NetVue 3.1.7 | No              | Yes                 |
+| 1.2.0.x | Provisioning for NetVue 3.2   | No              | Yes                 |
 
 ## Installation and configuration
 

@@ -6,6 +6,9 @@ uid: Connector_help_RAD_Data_Communications_RIC-LC
 
 This connector can be used to monitor RAD Data Communications RIC-LC Ethernet converters.
 
+> [!NOTE]
+> This connector has been deliberately designed to use the GetNext method to retrieve SNMP parameters. This is necessary because the device is not able to handle high traffic of requests, and this would result in device crashes.
+
 ## About
 
 ### Version Info

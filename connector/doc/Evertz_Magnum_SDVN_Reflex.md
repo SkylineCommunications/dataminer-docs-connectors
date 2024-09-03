@@ -10,7 +10,7 @@ With Reflex you can automate tasks with sensors, triggers and actions. Scripts c
 
 ### Version Info
 
-| **Range**            | **Key Features**                | **Based on** | **System Impact** |
+| Range                | Key Features                    | Based on     | System Impact     |
 |----------------------|---------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                | -            | -                 |
 | 1.1.0.x [SLC Main]   | Support for new firmware 2.1.0. | 1.0.0.2      | -                 |

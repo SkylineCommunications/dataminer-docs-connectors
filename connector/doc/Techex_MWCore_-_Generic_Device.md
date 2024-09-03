@@ -10,7 +10,7 @@ This connector is used by Dynamic Virtual Elements (DVEs) exported by the Techex
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version (includes DCF integration). | -            | -                 |
 

@@ -12,7 +12,7 @@ This connector displays the spectrum analyzer UI for the Kronback Tracers B16.
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                             | No                  | No                      |
 | 1.0.1.x          | Several adjustments and added functionality | No                  | No                      |
