@@ -94,11 +94,11 @@ The **Set MON Name** parameter can be used to add an entry to the **MON Overview
 
 #### Advanced
 
-This page allows to set advanced switching using the **Advanced Switching** parameter.
+This page allows you to set advanced switching using the **Advanced Switching** parameter.
 
 #### Matrix Status
 
-On this page an overview is given of the crosspoints (**Crosspoints**), the crosspoints buffer (**Crosspoints Buffer**), and status information (**Status Information** and **Communication Status**).
+On this page, you can find an overview of the crosspoints (**Crosspoints**), the crosspoints buffer (**Crosspoints Buffer**), and status information (**Status Information** and **Communication Status**).
 
 ### Version with SNMP Connection
 
@@ -108,22 +108,23 @@ This page shows the general information of the device. It displays its status an
 
 ### Matrices
 
-This page shows an overview of the Matrices Table.
+This page displays the Matrices Table.
 
 ### Levels
 
-This page shows an overview of the Levels Table. The format of the Index is {Matrices Index}.{Levels Id}.
+This page displays the Levels Table. The format of the index is {Matrices Index}.{Levels ID}.
 
 ### Sources
 
-This page shows an overview of the Sources Table. The format of the Index is {Levels Index}.{Sources Id}.\
-The display name can be configured in the format of **Source Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name.
+This page displays the Sources Table. The format of the index is {Levels Index}.{Sources ID}.
+
+The display name can be configured in the format **Source Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
 
 The Audio Modify can also be configured on the table, and its respective enabled and lock state that are used for in the Matrix.
 
 #### Source Association
 
-This page shows an overview of the Source Association Table and the Source Association Sources.
+This page displays the Source Association Table and the Source Association Sources.
 
 #### Source Settings
 
@@ -131,16 +132,17 @@ The display name can be configuration of the Sources Table display name. It is f
 
 ### Destinations
 
-This page shows an overview of the Destinations Table. The format of the Index is {Levels Index}.{Destinations Id}.\
-The display name can be configured in the format of **Destination Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name.
+This page displays the Destinations Table. The format of the index is {Levels Index}.{Destinations Id}.\
+The display name can be configured in the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
 
 The routed source can also be configured on the table, and its respective enabled and lock state that are used for in the Matrix.
 
 #### Destination Settings
 
-The display name can be configuration of the Destinations Table display name. It is formatted in the format of **Destination Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name. The default configuration uses the 16 character name choice.
+The display name can be configuration of the Destinations Table display name. It uses the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name. The default configuration uses the 16-character name.
 
 ### Matrix
 
-This page shows the Matrix, an overview of the crosspoints of the destinations and sources.\
-The sources of each destination can be configured on this Matrix, as well as locking of destinations and sources.
+This page shows the matrix, an overview of the crosspoints of the destinations and sources.
+
+The sources of each destination can be configured on this matrix, and destinations and sources can be locked.
