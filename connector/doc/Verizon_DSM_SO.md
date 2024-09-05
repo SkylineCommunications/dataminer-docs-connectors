@@ -50,7 +50,7 @@ As this is mainly a system connector, not much user interaction is needed. Below
 
 Clicking the **update** button will perform a **full update of the system**. It will:
 
-- Get the latest subscribers from the Profile Manager for both the **Earth Stations** and the **Satellites table.**
+- Get the latest subscribers from the EPM VSAT Subscriber Manager for both the **Earth Stations** and the **Satellites table.**
 - Retrieve the data from these subscribers.
 - Export information for both earth stations and satellites to the relevant **CSV** **file**.
 
@@ -69,8 +69,10 @@ The following functionalities are available within this section:
 
 The following functionalities are available within this section:
 
-- **Update Subscribers**: Allows you to control the update of the subscribers table from Profile Manager.
-- **Subscribers Timer**: Allows you to control how **frequently** the system will get updates from Profile Manager.
+- **Update Subscribers**: Allows you to control the update of the subscribers table from EPM VSAT Subscription Manager.
+- **Subscribers Timer**: Allows you to control how **frequently** the system will get updates from EPM VSAT Subscription Manager.
+- **FE DMA ID**: Dataminer Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed. 
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but will not be a local path to the hosting agent but the FE Agent.
 
 ### ES Subscribers
 
@@ -101,7 +103,7 @@ The following functionalities are available on this page:
   1. Right-click anywhere within the table.
   1. Select **Clear Table** in the context menu.
 
-- Updating the table: Click the update button at the bottom of the table to update it with the latest information from Profile Manager.
+- Updating the table: Click the update button at the bottom of the table to update it with the latest information from EPM VSAT Subscriber Manager.
 
 ### Sat Subscribers
 
@@ -132,19 +134,5 @@ The following functionalities are available on this page:
   1. Right-click anywhere within the table.
   1. Click **Clear Table**
 
-- Updating the table: Click the update button at the bottom of the table to update it with the latest information from Profile Manager.
+- Updating the table: Click the update button at the bottom of the table to update it with the latest information from EPM VSAT Subscriber Manager.
 
-## Notes
-
-The connector requires the following additional configuration in order to be fully functional:
-
-- A **Correlation rule** needs to be set up that captures **information events** and executes a script. The following parameters should be used in this Correlation rule:
-
-  - Earth Station Subscribers OnChange Event
-  - Earth Station Subscribers OnUpdate Event
-  - Satellite Subscribers OnChange Event
-  - Satellite Station Subscribers OnUpdate Event
-
-- An **Automation script** is needed to read the information event and pass the information to the correct element running the **Verizon WM DSM** to be processed.
-
-- A **definition in Profile Manager** needs to be created with the name "**Protocols_SO**". Within this definition, **a parameter with the same name** needs to be created and linked with the **name and version of the connector that your element is currently using**.

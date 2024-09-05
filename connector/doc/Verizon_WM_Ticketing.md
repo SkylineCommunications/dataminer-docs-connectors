@@ -54,3 +54,10 @@ This page provides an overview of the main sections of the connector. A configur
 ### Diagnostics
 
 This page contains an overview of the diagnostic results.
+
+### Configuration
+
+The **Subscriptions Configuration** section contains the following parameters:
+
+- **FE DMA ID**: Dataminer Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed. 
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but will not be a local path to the hosting agent but the FE Agent.

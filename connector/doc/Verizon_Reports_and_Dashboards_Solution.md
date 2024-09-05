@@ -186,3 +186,8 @@ The **Export Configuration** section contains the following parameters:
 - **Export Processing Time**: Determines how often the export is executed. By default, this is set to 1 hour, but it can be set to any value between 20 seconds and 24 hours.
 - **Export Provisioning File**: Displays the export processing status, which can be either *Idle* or *Processing*.
 - **Apply**: Allows you to manually execute the export without taking the **File Handling** or **File Export** parameters into account.
+
+The **Subscriptions Configuration** section contains the following parameters:
+
+- **FE DMA ID**: Dataminer Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed. 
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but will not be a local path to the hosting agent but the FE Agent.
