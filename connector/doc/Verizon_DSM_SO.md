@@ -71,8 +71,8 @@ The following functionalities are available within this section:
 
 - **Update Subscribers**: Allows you to control the update of the subscribers table from EPM VSAT Subscription Manager.
 - **Subscribers Timer**: Allows you to control how **frequently** the system will get updates from EPM VSAT Subscription Manager.
-- **FE DMA ID**: Dataminer Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed. 
-- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but will not be a local path to the hosting agent but the FE Agent.
+- **FE DMA ID**: DataMiner Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed.
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but it will not be a local path to the hosting Agent but to the front-end Agent.
 
 ### ES Subscribers
 
@@ -135,4 +135,3 @@ The following functionalities are available on this page:
   1. Click **Clear Table**
 
 - Updating the table: Click the update button at the bottom of the table to update it with the latest information from EPM VSAT Subscriber Manager.
-
