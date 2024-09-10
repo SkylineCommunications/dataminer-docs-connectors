@@ -26,25 +26,25 @@ The connector needs an SNMP connection to retrieve information from the device.
 
 ### Version Info
 
-| **Range**     | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                             | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Temp/CPU table split into CMC and OLT table | No                  | Yes                     |
-| 2.0.0.x              | New customer specific branch                | No                  | Yes                     |
+| Range              | Description                                 | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                             | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Temp/CPU table split into CMC and OLT table | No              | Yes                 |
+| 2.0.0.x            | New customer-specific branch                | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2102350FGBN0FA000057        |
-| 1.0.1.x          | 2102350FGBN0FA000057        |
-| 2.0.0.x          | 2102350FGBN0FA000057        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 2102350FGBN0FA000057       |
+| 1.0.1.x | 2102350FGBN0FA000057       |
+| 2.0.0.x | 2102350FGBN0FA000057       |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### SNMP main connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -427,23 +427,28 @@ This page displays a table that contains all the traps that have been received. 
 
 ## Usage (v2.0.x)
 
-The 2.0.x branch of the Huawei MA5800-MA5633 driver introduces a series of important updates and improvements that enhance the performance, reliability, and functionality of the driver. Below are the most notable changes in this version.
+The 2.0.x branch of the Huawei MA5800-MA5633 connector introduces a series of important updates and improvements that enhance the performance, reliability, and functionality of the connector. Below you can find the most notable changes in this version.
 
 ### Key Changes in Version 2.0.x
 
 #### Improved Polling Flow (v2.0.0.27)
-- **Enhanced Polling Mechanism**: The polling flow has been optimized to improve the efficiency and reliability of data collection from the device. This change reduces the likelihood of polling errors and improves the overall stability of the data retrieval process.
-- **Vendor Information in Uplink Optical**: The vendor information has been added to the Uplink Optical table and is now included as a possible display key option. This provides users with more detailed insights into the components involved in the network infrastructure.
+
+- **Enhanced polling mechanism**: The polling flow has been optimized to improve the efficiency and reliability of data collection from the device. This change reduces the likelihood of polling errors and improves the overall stability of the data retrieval process.
+- **Vendor information in Uplink Optical table**: The vendor information has been added to the Uplink Optical table and is now included as a possible display key option. This provides users with more detailed insights into the components involved in the network infrastructure.
 
 #### Removal of GET-DMS-INFO (v2.0.0.26)
-- **Removed Obsolete GET-DMS-INFO**: The GET-DMS-INFO call was remove as this is a depricated method. 
+
+- **Obsolete GET-DMS-INFO removed**: The GET-DMS-INFO call has been removed, as this method is deprecated.
 
 #### Enhanced DDCAP Statistics (v2.0.0.25)
-- **Improved DDCAP Statistics Calculation**: DDCAP (Distributed Converged Cable Access Platform) statistics are now calculated using DOCS Cable MAC Layer interfaces, providing more accurate and relevant performance data for network management.
+
+- **DDCAP statistics calculation improved**: DDCAP (Distributed Converged Cable Access Platform) statistics are now calculated using DOCS Cable MAC Layer interfaces, providing more accurate and relevant performance data for network management.
 
 #### Polling and Flow Optimization (v2.0.0.24)
-- **QAction-Based Polling**: Polling has been transitioned to use QActions, which are custom scripts designed to execute specific tasks more efficiently. This change improves the speed and reliability of polling operations.
-- **Flow Adjustments to Avoid RTEs**: Changes have been made to the polling flows to reduce the occurrence of Runtime Errors (RTEs), enhancing the stability and performance of the driver.
+
+- **QAction-based polling**: Polling now uses QActions, which are custom scripts designed to execute specific tasks more efficiently. This change improves the speed and reliability of polling operations.
+- **Flow adjustments to avoid RTEs**: Changes have been made to the polling flows to reduce the occurrence of run-time errors (RTEs), enhancing the stability and performance of the connector.
 
 #### Uplink Optical Table Enhancements (v2.0.0.21)
-- **Display Key Format Option**: A new display key format option has been added to the Uplink Optical table. This allows users to customize the way information is displayed, making it easier to interpret critical data.
+
+- **New display key format option**: A new display key format option has been added to the Uplink Optical table. This allows you to customize the way information is displayed, making it easier to interpret critical data.
