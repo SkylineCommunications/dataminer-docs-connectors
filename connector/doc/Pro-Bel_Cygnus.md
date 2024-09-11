@@ -128,7 +128,9 @@ This page displays the Source Association Table and the Source Association Sourc
 
 #### Source Settings
 
-The display name can be configuration of the Sources Table display name. It is formatted in the format of **Source Index**.**Choice** which choice can be either the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name. The default configuration uses the 16 character name choice.
+On the Sources Table, there is a display name column to identify each row. The format of this display name is "**Source Index**.**Choice**".
+The **Choice** is configurable in this page to either use the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name.
+The default configuration uses the 16 character name.
 
 ### Destinations
 
