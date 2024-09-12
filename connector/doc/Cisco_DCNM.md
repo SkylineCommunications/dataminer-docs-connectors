@@ -12,27 +12,27 @@ The **Cisco DCNM** monitors and displays the connections between the switches, m
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                       | **Based on** | **System Impact**                                  |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                                                                                                                                                                       | -            | -                                                  |
-| 1.0.1.x [Obsolete]     |Fix for SLElement leak by fixing display keys: - RTP Flows - RTP Error History - RTP Packet Drop History - RTP Active Flows - RTP Switch Corrections - RTP Error Flows - Host Policies | 1.0.0.4      | Existing trend data will be lost for these tables. |
-| 1.0.2.x [SLC Main]   | Changed primary key for the following tables: - Active Flow Status - Inactive Flow Status - Sender Only Flow Status - Receiver Only Flow Status                                        | 1.0.1.4      | Existing alarm/trend data will be lost             |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
+| 1.0.1.x [Obsolete] | Fix for SLElement leak by fixing display keys: - RTP Flows - RTP Error History - RTP Packet Drop History - RTP Active Flows - RTP Switch Corrections - RTP Error Flows - Host Policies | 1.0.0.4 | Existing trend data will be lost for these tables. |
+| 1.0.2.x [SLC Main] | Changed primary key for the following tables: - Active Flow Status - Inactive Flow Status - Sender Only Flow Status - Receiver Only Flow Status | 1.0.1.4 | Existing alarm/trend data will be lost |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 11.0(1)                |
-| 1.0.1.x   | 11.0(1)                |
-| 1.0.2.x   | 11.5(1)                |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | 11.0(1) |
+| 1.0.1.x | 11.0(1) |
+| 1.0.2.x | 11.5(1) |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.0.1.x | No | Yes | - | - |
+| 1.0.2.x | No | Yes | - | - |
 
 ## Configuration
 
@@ -45,6 +45,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
+
 - **IP port**: The IP port of the destination, by default *443*.
 
 ### Configuration of HTTP Authentication
