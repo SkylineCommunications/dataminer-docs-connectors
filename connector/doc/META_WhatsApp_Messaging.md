@@ -47,7 +47,7 @@ HTTP CONNECTION:
 
 #### Prerequisites
 
-All prerequisites are described in the [META WhatsApp Messaging solution installation guide]().
+All prerequisites are described in the [META WhatsApp Messaging solution installation guide](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging_Installation.html).
 
 #### Installation
 
