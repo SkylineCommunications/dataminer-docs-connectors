@@ -121,7 +121,7 @@ You can enable or disable this feature with the **Work Order Query Filter by Fie
 
 #### External mappings
 
-When using the _EventModify_ request, ScheduAll Manager needs to tie the resource ID (RESID) of a resource booking in ScheduAll with an external ID (EXTID). The **DataMiner Combined IDS Field** is a parameter where you can define which parameter from the **Custom Resource Details Fields** will be used as a mapping to RESID.
+When the *EventModify* request is used, ScheduAll Manager needs to tie the resource ID (RESID) of a resource booking in ScheduAll with an external ID (EXTID). With the **DataMiner Combined IDS Field** parameter, you can define which parameter from the **Custom Resource Details Fields** will be used as a mapping to the RESID.
 
 ### Configuration - Interop Service
 
