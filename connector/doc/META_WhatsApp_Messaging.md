@@ -26,6 +26,10 @@ The META WhatsApp Messaging connector is part of the [META WhatsApp Messaging so
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
+## Installation
+
+See [Installing the META WhatsApp Messaging solution](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging_Installation.html).
+
 ## Configuration
 
 ### Connections

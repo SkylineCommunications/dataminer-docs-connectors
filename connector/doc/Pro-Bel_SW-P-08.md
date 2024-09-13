@@ -80,6 +80,7 @@ This page contains the following parameters:
 - **Matrix Configuration:** Displays any detected misconfigurations. The status **OK** indicates that the matrix was successfully configured.
 - **Number of Inputs:** Displays the selected number of inputs for the matrix.
 - **Number of Outputs:** Displays the selected number of outputs for the matrix.
+- **Enable Interrogate Commands As Backup**: Enables sending a backup command in cases where the tally command does not retrieve all crosspoints.
 - **Last KeepAlive Timestamp:** Displays the last timestamp received.
 - **Number of Wrong CRCs Received**: The number of wrong CRCs received on a message.
 - **Name Length**: The number of characters of a name.

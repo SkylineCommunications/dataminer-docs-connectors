@@ -109,6 +109,8 @@ This page contains a table listing the CPE devices that are currently known to t
 
 If a CPE device was known earlier but no longer seems to be present in the **CPEs** table, you should check the **CPE DVEs** table. You can find this table by clicking the **CPE DVEs Configurations** page button at the bottom of this page.
 
+CPE DVEs will be created for devices for which the **DVE Enabled** parameter is set to *Enabled*. For new CPE devices that are added to the table, this parameter is set to *Disabled* by default. You can change this parameter setting on the **Settings** page.
+
 After startup, the Severity column can indicate the *Unknown* state. This is expected behavior, caused by the fact that the Severity column will only be updated when an alarm trap is received. For example, when a *Major Open* alarm comes in, *Major* will be the severity. When after a number of minutes the same alarm comes in with the *Cleared* state, the new severity will be *Normal*.
 
 To see the **Subscriber Public IPv4 address**, make sure a valid VLAN ID is selected. The VLAN ID can be selected on the Settings page. In case the dropdown list is empty, open Stream Viewer and wait until Group 906 is displayed in the column on the left. When Group 906 has been executed successfully, try again. The dropdown list should now contain the available IDs. There is no need to change the other parameters located on that page.
@@ -164,3 +166,8 @@ A log line will be added to the element log when a ping sync was triggered. A pi
 For each report that is part of the CPEs table, a **Polling toggle button** is available. With these toggle buttons, you can disable or enable the polling of the CPE reports. For instance, if you disable the CPE Forward Data Throughput Polling toggle button, the CPE Forward Data Throughput will not be polled. This means that the Forward Data Throughput column of the CPEs table will show N/A and Group 908 will not be displayed in Stream Viewer.
 
 Note that the **minimum required version of the Generic Ping connector is** **3.1.2.5**.
+
+On the Settings page, you can also find settings related to CPE DVE creation:
+
+- **Automatic CPE DVE Creation**: Allows you to set the **DVE Enabled** parameter to *Enabled* for all future added CPE devices. By default, is set to *Disabled*.
+- **Enable/Disable All DVEs** Allows you to set the state of all CPE devices in the table to *Enabled* or *Disabled*.

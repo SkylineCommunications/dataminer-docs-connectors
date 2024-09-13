@@ -2840,6 +2840,8 @@
   items:
   - name: Eltek Inverter Candis
     topicUid: Connector_help_Eltek_Inverter_Candis
+  - name: Eltek Smartpack
+    topicUid: Connector_help_Eltek_Smartpack
   - name: Eltek Smartpack 2
     topicUid: Connector_help_Eltek_Smartpack_2
   - name: Eltek Smartpack S
@@ -3880,6 +3882,8 @@
     topicUid: Connector_help_Generic_Dummy
   - name: Generic Dynamic Table
     topicUid: Connector_help_Generic_Dynamic_Table
+  - name: Generic Ember+
+    topicUid: Connector_help_Generic_Ember+
   - name: Generic Failover Status
     topicUid: Connector_help_Generic_Failover_Status
   - name: Generic File Explorer
@@ -5384,6 +5388,10 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10
   - name: Meinberg LANTIME IMS-PIO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10
+  - name: Meinberg LANTIME IMS-PSX API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17
+  - name: Meinberg LANTIME IMS-PSX API V17 - PTPv2 Instance
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17_-_PTPv2_Instance
   - name: Meinberg LANTIME IMS-PZF
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF
   - name: Meinberg LANTIME IMS-PZF API V10
@@ -6250,6 +6258,8 @@
     topicUid: Connector_help_Nevion_Virtuoso_FA
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
+  - name: Nevion Virtuoso RE
+    topicUid: Connector_help_Nevion_Virtuoso_RE
 - name: Newtec
   items:
   - name: Newtec 2137
@@ -6286,6 +6296,8 @@
     topicUid: Connector_help_Newtec_AZ860_Deconcentrator
   - name: Newtec Dialog Platform VSAT
     topicUid: Connector_help_Newtec_Dialog_Platform_VSAT
+  - name: Newtec Dialog Infrastructure
+    topicUid: Connector_help_Newtec_Dialog_Infrastructure
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
   - name: Newtec Dialog Time Series Database - Network
@@ -6596,6 +6608,10 @@
     topicUid: Connector_help_Oracle_Database_Node
   - name: Oracle DIVArchive
     topicUid: Connector_help_Oracle_DIVArchive
+- name: Orange
+  items:
+  - name: Orange Orion
+    topicUid: Connector_help_Orange_Orion
 - name: Orban
   items:
   - name: Orban Optimod 8685
@@ -7664,6 +7680,8 @@
     topicUid: Connector_help_SIAE_Microwave_Trunklink
 - name: Siemens
   items:
+  - name: Siemens Desigo CC
+    topicUid: Connector_help_Siemens_Desigo_CC
   - name: Siemens Netviewer
     topicUid: Connector_help_Siemens_Netviewer
   - name: Siemens Sentron PAC3200
@@ -8362,6 +8380,10 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+- name: Stormshield
+  items:
+  - name: Stormshield Network Security S-Series
+    topicUid: Connector_help_Stormshield_Network_Security_S-Series
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring

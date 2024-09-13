@@ -14,23 +14,23 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 
 ### Version Info
 
-| **Range**            | **Description**                                                                         | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x              | Initial version.                                                                        | No                  | No                      |
-| 1.0.2.x              | Implemented changes on the Physical Upstream Channel Table and Upstream Bounding table. | No                  | No                      |
-| 1.0.3.x              | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No                  | Yes                     |
-| 1.0.4.x              | DCF feature added.                                                                      | Yes                 | Yes                     |
-| 2.0.0.x [SLC Main]   | Connector review. Added CCAP parameters.                                                | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.1.x | Initial version. | No | No |
+| 1.0.2.x | Implemented changes on the Physical Upstream Channel Table and Upstream Bounding table. | No | No |
+| 1.0.3.x | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No | Yes |
+| 1.0.4.x | DCF feature added. | Yes | Yes |
+| 2.0.0.x [SLC Main] | Connector review. Added CCAP parameters. | No | Yes |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 1.0                    |
-| 1.0.2.x   | 1.0                    |
-| 1.0.3.x   | 1.0                    |
-| 1.0.4.x   | 1.0                    |
-| 2.0.0.x   | 1.0                    |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.1.x | 1.0 |
+| 1.0.2.x | 1.0 |
+| 1.0.3.x | 1.0 |
+| 1.0.4.x | 1.0 |
+| 2.0.0.x | 1.0 |
 
 ## Configuration
 
@@ -47,7 +47,9 @@ SNMP CONNECTION:
 SNMP settings:
 
 - **Port number**: The port of the connected device, by default *161*.
+
 - **Get community string**: The community string needed to read from the device.
+
 - **Set community string**: The community string needed to set to the device.
 
 ## Usage (Range 1.0.x.x)
@@ -59,7 +61,9 @@ This page displays the system information, main rate usage or memory and CPU usa
 The page contains a number of page buttons:
 
 - **Power Supplies**: Displays information on the power supplies of the device.
+
 - **Processors**: Displays the 1-min CPU total utilization.
+
 - **Temperature**: Displays information on the temperature of the device.
 
 ### Configuration - Upstream Channels
@@ -101,9 +105,13 @@ This page provides access to the internal webpage of the device. Note that the c
 This page displays general and system information for the Cisco CBR-8 device. The page also displays five page buttons, which lead to the following subpages:
 
 - **Alarms**: Displays several tables with specific alarm information.
+
 - **Power Supplies**: Displays the **Power** **Supply Table**, with specific information about the monitored Cisco CBR-8 power supplies.
+
 - **CPU**: Displays the **CPU** **Table**, with specific information about the CPU.
+
 - **Temperature**: Displays the **Temperature** **Table**, with specific information about the temperature of the Cisco CBR-8 device.
+
 - **Fans**: Displays information on the fan status.
 
 ### Interface Overview
@@ -113,6 +121,7 @@ This page contains the **Interface Overview** table, which displays information 
 This page also displays two page buttons, which lead to the following subpages:
 
 - **Interface Selection**: Allows you to select the interfaces to be monitored. After you have selected the desired interfaces, click the **Update Interfaces** button to fill in the table.
+
 - **Ifx Table**: Displays a table with additional interface information.
 
 ### Video QAM Channels
