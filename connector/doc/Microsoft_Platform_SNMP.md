@@ -57,11 +57,29 @@ To set the current values in the table as the normal reference for alarms, click
 
 ### Services
 
+This page shows all active services that are being monitored from the **Service Monitor Config** page.
+
 To enable or disable the polling of the service list, click the toggle button next to **Poll Services**.
 
-When polling is enabled, the various services with their status, description, etc. will be shown in the table below.
+When polling is enabled, active services with their status, description, etc. will be shown in the table on the **Service Monitor Config** page.
 
-The **Service Monitor Config** page allows you to enable or disable the polling of individual services.
+The following options are available in the right-click menu of the Services table:
+
+- **Validate Services**: Add the selected service(s) to the Services Validation table.
+
+### Service Monitor Config
+
+This page allows you to monitor individual active services. Monitored services will be listed in the Services table.
+
+### Service Validation
+
+This page allows you to validate selected services according to features such as availability in order to monitor inactive services.
+
+The following options are available in the right-click menu of the Services Validation table:
+
+- **Remove Services**: Removes the selected service(s) from Services Validation table.
+
+- **Add Service**: Allows you to add a service with the provided service name to the Services Validation table. You can use this to add inactive services.
 
 ### Network Info
 
