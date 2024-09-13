@@ -2840,6 +2840,8 @@
   items:
   - name: Eltek Inverter Candis
     topicUid: Connector_help_Eltek_Inverter_Candis
+  - name: Eltek Smartpack
+    topicUid: Connector_help_Eltek_Smartpack
   - name: Eltek Smartpack 2
     topicUid: Connector_help_Eltek_Smartpack_2
   - name: Eltek Smartpack S
