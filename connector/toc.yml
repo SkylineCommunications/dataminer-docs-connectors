@@ -6258,6 +6258,8 @@
     topicUid: Connector_help_Nevion_Virtuoso_FA
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
+  - name: Nevion Virtuoso RE
+    topicUid: Connector_help_Nevion_Virtuoso_RE
 - name: Newtec
   items:
   - name: Newtec 2137
