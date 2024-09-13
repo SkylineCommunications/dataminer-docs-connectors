@@ -49,7 +49,7 @@ HTTP CONNECTION:
 
 All prerequisites are described in the [META WhatsApp Messaging solution installation guide](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging_Installation.html).
 
-#### Installation
+#### First Steps
 
 1. Once the element created automatically by the package installation is running, fill in the *Phone Number ID*, *WhatsApp Business ID*, and *Token* parameters on the **Configuration** page with the values you saved earlier.
 1. In the Contacts table, add the phone numbers that should receive WhatsApp alarm notifications.
