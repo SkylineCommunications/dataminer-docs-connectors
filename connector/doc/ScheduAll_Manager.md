@@ -119,6 +119,10 @@ For example, if a row is added with key "EXTID" and field value "1;9;4", this is
 
 You can enable or disable this feature with the **Work Order Query Filter by Field** parameter.
 
+#### External mappings
+
+When using the _EventModify_ request, ScheduAll Manager needs to tie the resource ID (RESID) of a resource booking in ScheduAll with an external ID (EXTID). The **DataMiner Combined IDS Field** is a parameter where you can define which parameter from the **Custom Resource Details Fields** will be used as a mapping to RESID.
+
 ### Configuration - Interop Service
 
 This page contains the **interop-specific configuration** parameters. Via the **Credentials** button, you can access a subpage where you can enter **user credentials**. These credentials are the **ScheduAll credentials** that will allow communication between DataMiner and the interop service.
