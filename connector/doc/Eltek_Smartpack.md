@@ -12,9 +12,9 @@ Information is polled from the device using SNMP calls. In addition, the origina
 
 ### Version Info
 
-| **Range** | **Key Features**       | **Based on** | **System Impact** |
-|-----------|------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.       | -            | -                 |
+| Range   | Key Features     | Based on | System Impact |
+|---------|------------------|----------|---------------|
+| 1.0.0.x | Initial version. | -        | -             |
 
 ### Product Info
 
@@ -46,7 +46,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -57,43 +56,60 @@ The connector consists of different pages that cover the various subsections tha
 
 ### General
 
-This page displays general information about the device, such as the general **Status**, and power system **Information** such as the **System Model**.
+This page displays general information about the device, such as the general **Status**, and power system information such as the **System Model**.
 
 #### System Configuration
 
-This page displays the general configurations of the device. such as the **Location** and the **Units** that are used.
+This page displays the general configuration of the device, such as the **Location** and the **Units** that are used.
 
 #### Polling Manager
 
-This page contains a polling table, that consists of its polling state, interval, last polled time, and a button to **Poll** now.
+This page contains a polling table, which displays the polling state, interval, and last polled time, and contains a **Poll** button that can be used to manually trigger the polling.
 
 ### Mains
 
-This page displays information about the **Mains**, such as the **Mains Status**, and **Mains Values**, as well as the **Mains Voltage Table**.
+This page displays information about the mains, such as the **Mains Status** and **Mains Values**, as well as the **Mains Voltage Table**.
 
-The page contains a **Configuration** page button which provides access to all configurable parameters.
+Via the **Configuration** page button, you can access related configurable parameters.
 
 ### Rectifiers
 
-This page displays information about the **Rectifiers**, such as the **Rectifiers Status** and **Rectifiers Values**.
+This page displays information about the rectifiers, such as the **Rectifiers Status** and **Rectifiers Values**.
 
-The page contains a number of page buttons. The **Configuration** page button provides access to all configurable parameters. The page buttons **Energy Log** provides access to the energy logs tables and the **Rectifiers** button provides access to the rectifiers table.
+The page contains a number of page buttons:
 
+- **Configuration**: Provides access to all configurable parameters.
+- **Energy Log**: Provides access to the energy logs tables.
+- **Rectifiers**: Provides access to the rectifiers table.
 
 ### Load
 
-This page displays information about the **Load**, such as the **Load Status** and the **Load Values**.
+This page displays information about the load, such as the **Load Status** and the **Load Values**.
 
-The page contains a number of page buttons. The **Configuration** page button provides access to all configurable parameters. The page buttons **Energy Log** provides access to the energy logs tables, whereas the **Loads** button provides access to the Group Table, LVLD Table, Fuse Table, and Voltage Table.
+The page contains a number of page buttons:
+
+- **Configuration**: Provides access to all configurable parameters.
+- **Energy Log**: Provides access to the energy logs tables.
+- **Loads**: Provides access to the Group Table, LVLD Table, Fuse Table, and Voltage Table.
 
 ### Battery
 
-This page presents details about the **Battery**, including the **Battery Status** and **Battery Values**.
+This page presents details about the battery, including the **Battery Status** and **Battery Values**.
 
-The page contains a number of page buttons. The **Configuration** button allows access to all configurable parameters. The **Energy Log** and **Cycle Log** buttons provide access to the respective tables for energy and cycle logs. The **Monitors** button opens the battery's monitors tables, while the **Banks** button grants access to the battery's banks tables.
+The page contains a number of page buttons:
+
+- **Configuration**: Provides access to all configurable parameters.
+- **Energy Log**: Provides access to the energy logs tables.
+- **Cycle Log**: Provides access to the cycle logs tables.
+- **Monitors**: Provides access to the battery monitors tables.
+- **Banks**: Provides access to the battery banks tables.
 
 ### Battery Group 2
 
-This page presents details about the **Battery Group 2**, including the **Battery Group 2 Status** and **Battery Group 2 Values**.
+This page presents details about battery group 2, including the **Battery Group 2 Status** and **Battery Group 2 Values**.
 
-The page contains a number of page buttons. The **Configuration** button allows access to all configurable parameters. The **Energy Log** and **Cycle Log** buttons provide access to the respective tables for energy and cycle logs.
+The page contains a number of page buttons:
+
+- **Configuration**: Provides access to all configurable parameters.
+- **Energy Log**: Provides access to the energy logs tables.
+- **Cycle Log**: Provides access to the cycle logs tables.
