@@ -51,6 +51,42 @@ There are also two standalone configuration parameters on this page:
 - **Backup File Path**: The path where the backup will be stored. Default: `C:\Skyline DataMiner\Documents`.
 - **Sync button**: This allows you to manually **update the table** with all DOM modules in the DMS.
 
+### Restorables Page 
+
+The **Restorables** page of this connector, lists all the DOM modules inside certain folder and the zip files that can be restored
+
+
+# Restorables Page Documentation
+
+The **Restorables** page of this connector lists all the DOM modules inside a specified folder and the zip files that can be restored.
+
+## DOM Module Overview Table
+
+This table shows all the different modules inside the folder. It allows the user to control the inclusion or exclusion of Zip files associated with each module in the **Restorables Overview** table:
+
+- **ID**: Name of the module found.
+- **State**: The user can choose between **Included** or **Excluded** for the module. This will determine whether the associated rows are shown in the **Restorables Overview** table.
+
+## Restorables Overview Table
+
+This table lets the user select a Zip file to restore the information for the desired module:
+
+- **Last Modification**: The latest modification inside the JSON within the Zip file.
+- **Zip File Name**: The name of the Zip file.
+- **Module ID**: The name of the module inside the Zip file.
+- **DOM Definition Count**: The count of DOM Definitions.
+- **Section Definition Count**: The count of Section Definitions.
+- **DOM Instances Count**: The count of DOM Instances.
+- **Restore State**: Displays the current state of the row. Possible values are **Not Restored**, **Processing**, **Failed**, and **Restored**.
+- **Restore Button**: Allows the connector to restore the desired row.
+
+
+There are two standalone configuration parameters on this page:
+
+- **Restore Folder Path**: Syncs the modules across the Zip files in the specified path.
+- **Update Folder Path**: Updates the **DOM Module Overview** table with the modules found inside the Restore Folder Path.
+- **Update Path**: Updates the **Restorables Overview** table with the Zip files found inside the Restore Folder Path.
+
 ### Configuration Page
 
 On the **Configuration** page of this connector, you can configure the following parameters:
