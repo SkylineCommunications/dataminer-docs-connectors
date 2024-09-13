@@ -48,26 +48,29 @@ To make sure the connector can retrieve data, fill in the **User Name** and **Pa
 
 ## How to use
 
-Element using this connector will display both manager and card data, polling of manager data is always enabled and requests are being sent on a timer basis. 
-Polling of the card data needs to be configured on the **Slots** table, **Slots** page, where polling for any card can be enabled/disabled and a polling frequency for each card can be configured separately.
+Elements using this connector will display both manager and card data.
 
-The element using this connector consists of the data pages detailed below.
+Polling of manager data is always enabled, and requests are sent based on a timer.
 
-- General: Contains general information data and a subpage Authentication where user name and password can be configured.
-- Slots: Contains table **Slots** which displays card data and allows for polling configuration of each card. Table **Modules** contains all available modules and their data.
-- Cards: Contains tables for card data, such as **Product Information**, **Time Information**, **Memory Information** and **Memory Thresholds**.
-- Alarm Profiles: Contains Alarm Profiles (Alarm Definitions) information.
-- Alarms: Contains active alarms information.
-- Temperature: Contains all the data related to the temperature, including tables for temperature zones, sensors and fans.
-- Memory: Contains memory data, and additional custom table parameter **Threshold Reached** which displays if used / free memory ratio is above a defined percentage threshold.
-- Power: Contains all the data related to the power, including table for power sensors.
-- Sessions: Contains tables **Users**, which shows users and their level, and **Sessions**, which show currently connected users, their level and session duration.
-- Files: Contains data about files and **Configuration** table.
-- Inputs: Contains inputs data, displayed in **TS-IP Inputs** table.
-- Switch: Contains switch data, displayed in **TS Input Switch** and **TS Switch Inputs** tables.
-- Outputs: Contains outputs data, displayed in **TS-IP Outputs** table.
-- SNTP: Contains SNTP information.
-- Ethernet: Contains **Ethernet**, **Ethernet Status**, **LLDP Remote** and **Reference Sync Input** tables as well as two subpages: Routing (**Rx Routing** and **Tx Routing**) and Rates (**Rx Rates** and **Tx Rates**).
-- SFP: Contains data related to SFP, displayed in **SFP** and **SFP Channels** tables.
-- Network Config: Contains **DNS** table as well as two subpages: Services (with **Services** table) and Static IP Routing (with tables for **IPv4** and **IPv6**).
-- Interfaces: Contains interfaces data, displayed in **Interfaces** table.
+Polling of the card data needs to be configured in the **Slots** table (on the Slots page). There you can enable or disable the polling for any card, and you can configure the polling frequency for each card separately.
+
+The element using this connector consists of the following data pages:
+
+- **General**: Contains general information data. On the **Authentication** subpage, the username and password to connect with the device need to be configured.
+- **Slots**: Contains the **Slots** table, which displays card data and allows you to configure the polling for each card. The **Modules** table contains all available modules and their data.
+- **Cards**: Contains tables for card data, such as **Product Information**, **Time Information**, **Memory Information**, and **Memory Thresholds**.
+- **Alarm Profiles**: Contains information related to alarm profiles (alarm definitions).
+- **Alarms**: Contains information related to active alarms.
+- **Temperature**: Contains all the data related to the temperature, including tables for temperature zones, sensors, and fans.
+- **Memory**: Contains memory data. In addition, the custom table parameter **Threshold Reached** displays if the used/free memory ratio is above a defined percentage threshold.
+- **Power**: Contains all the data related to the power, including a table for the power sensors.
+- **Sessions**: Contains the **Users** table, which shows users and their level, and the **Sessions**, which show the currently connected users, their level, and the session duration.
+- **Files**: Contains data about files, as well as the **Configuration** table.
+- **Inputs**: Contains inputs data, displayed in the **TS-IP Inputs** table.
+- **Switch**: Contains switch data, displayed in the **TS Input Switch** and **TS Switch Inputs** tables.
+- **Outputs**: Contains outputs data, displayed in the **TS-IP Outputs** table.
+- **SNTP**: Contains SNTP information.
+- **Ethernet**: Contains the **Ethernet**, **Ethernet Status**, **LLDP Remote**, and **Reference Sync Input** tables, as well as two subpages: **Routing** (Rx Routing and Tx Routing) and **Rates** (Rx Rates and Tx Rates).
+- **SFP**: Contains data related to SFP, displayed in the **SFP** and **SFP Channels** tables.
+- **Network Config**: Contains the **DNS** table as well as two subpages: **Services** (with the Services table) and **Static IP Routing** (with tables for IPv4 and IPv6).
+- **Interfaces**: Contains interfaces data, displayed in the **Interfaces** table.
