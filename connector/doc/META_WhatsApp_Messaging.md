@@ -4,7 +4,7 @@ uid: Connector_help_META_WhatsApp_Messaging
 
 # META WhatsApp Messaging
 
-The META WhatsApp Messaging connector is part of the [META WhatsApp Messaging solution](). This connector is in charge of taking the alarm information retrieved from the ***META Alarm Detection*** script and send it to the contacts defined.
+The META WhatsApp Messaging connector is part of the [META WhatsApp Messaging solution](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging.html). This connector is in charge of taking the alarm information retrieved from the ***META Alarm Detection*** script and send it to the contacts defined.
 
 ## About
 
