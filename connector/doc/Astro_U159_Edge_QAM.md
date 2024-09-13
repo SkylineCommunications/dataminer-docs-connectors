@@ -12,19 +12,22 @@ With this connector, it is possible to gather and view information from the devi
 
 | Range              | Key Features               | Based on | System Impact |
 |--------------------|----------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | IP-to-QAM signal converter | -        | -             |
+| 1.0.0.x [Obsolete] | IP-to-QAM signal converter | -        | -             |
+| 1.0.1.x [SLC Main] | Changed display key of the IP Interfaces and Active Alarms table.  | 1.0.0.x        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 6420                   |
+| 1.0.1.x   | 6420                   |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
