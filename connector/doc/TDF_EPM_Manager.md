@@ -21,13 +21,16 @@ The geographical topology is presented in the TDF EPM Manager and represents a c
 ## About
 
 ### Version Info
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |Initial Version|-         |-         |
+
+| Range              | Features        | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
+
 ### System Info
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
