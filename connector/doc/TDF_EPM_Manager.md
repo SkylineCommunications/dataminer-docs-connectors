@@ -45,7 +45,7 @@ This connector uses a virtual connection and does not require any input during e
 When creating the managers manually, follow these steps:
 1. Create a single **front-end element** and configure it as follows:
 
-    - On the **Configuration** page, change the **Element Manager Type** to Frontend.
+    - On the **Configuration** page, change the **Element Manager Type** to *Frontend*.
     - In the **Import Settings**, fill in the import directory where the provisioning files are located.
     - In the **Export Settings**, fill in the location from which the **back-end** elements will be importing.
     - In the **Helios Settings**, specify the import directory where Helios files, such as device and site files, are located.
