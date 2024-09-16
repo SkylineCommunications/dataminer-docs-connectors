@@ -411,6 +411,18 @@ When the configuration is done, all inputs will be listed in the **Source Inputs
 
 When the configuration is done, all outputs will be listed in the **Source Outputs** table. The **Type** column indicates if a particular output is used as a tie line node.
 
+### Heartbeats
+
+The Connector can monotor the subscriptions by subscribing to a heartbeat PID on a source matrix, this can be configured on the connector in the source matrix table. (We expect the UTC time in that parameter)
+Note that when we detect a disconnection we will try to recover. Also note that the recovery will be proceeded by an error in the logs looking like this:
+```txt
+CQAction::Run|ERR|-1|QAction [3195] triggered by [pid=3195/idx=-1/pk=/user=] failed. (0x800706BA)
+	Input: new = <NULL>
+	Input: old = <NULL>
+	Input: extra = <NULL>
+ ```
+This is normal behaviour related to dataminer.
+
 ## Notes
 
 This connector is part of the vMatrix solution.
