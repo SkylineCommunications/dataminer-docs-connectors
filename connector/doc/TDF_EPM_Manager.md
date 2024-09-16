@@ -75,7 +75,7 @@ There is no redundancy defined.
 
 ## How to use
 
-Once the EPM Manager elements are configured, the only required procedure is for the front-end element to import the following CSV files and initiate the ID assignment process.
+Once the EPM Manager elements are configured, the only required procedure is for the front-end element to import the following CSV files and initiate the ID assignment process:
 
 - Zones.csv
 - Departments.csv
