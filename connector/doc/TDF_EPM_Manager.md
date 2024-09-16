@@ -16,6 +16,7 @@ The geographical topology is presented in the TDF EPM Manager and represents a c
   - Site
   - Equipment
 - **Configuration**
+
   Allows you to place Visual Overview layouts on a separate chain.
   
 ## About
@@ -45,10 +46,10 @@ This connector uses a virtual connection and does not require any input during e
 When creating the managers manually, follow these steps:
 1. Create a single **front-end element** and configure it as follows:
 
-    - On the **Configuration** page, change the **Element Manager Type** to *Frontend*.
-    - In the **Import Settings**, fill in the import directory where the provisioning files are located.
-    - In the **Export Settings**, fill in the location from which the **back-end** elements will be importing.
-    - In the **Helios Settings**, specify the import directory where Helios files, such as device and site files, are located.
+    1. On the **Configuration** page, change the **Element Manager Type** to *Frontend*.
+    1. In the **Import Settings**, fill in the import directory where the provisioning files are located.
+    1. In the **Export Settings**, fill in the location from which the **back-end** elements will be importing.
+    1. In the **Helios Settings**, specify the import directory where Helios files, such as device and site files, are located.
 
 2. Create as many **back-end** elements as needed.
 
@@ -59,13 +60,15 @@ When creating the managers manually, follow these steps:
 4. In the **Export Settings** on the Configuration page of the back-end elements, fill in the directory from which the collectors will import.
 
 5. In the **front-end** element, fill in the necessary DMA ID/Element IDs:
-    - In **Frontend Registration** table, fill in the DMA ID/Element ID of the front-end element.
-    - In the **Backend Registration** table, fill in all DMA ID/Element IDs of the back-end elements in the system.
-    - In the **Collector Registration** table, fill in all DMA ID/Element IDs of the collector elements in the system.
+
+    1. In **Frontend Registration** table, fill in the DMA ID/Element ID of the front-end element.
+    1. In the **Backend Registration** table, fill in all DMA ID/Element IDs of the back-end elements in the system.
+    1. In the **Collector Registration** table, fill in all DMA ID/Element IDs of the collector elements in the system.
 
 6. In the **back-end** elements, fill in the necessary DMA ID/Element IDs:
-    - In the **Backend Registration** table, fill in the DMA ID/Element ID of the current back-end element.
-    - In the **Collector Registration** table, fill in all DMA ID/Element IDs of the collector elements on the same DMA.
+
+    1. In the **Backend Registration** table, fill in the DMA ID/Element ID of the current back-end element.
+    1. In the **Collector Registration** table, fill in all DMA ID/Element IDs of the collector elements on the same DMA.
 
 7. On the **Configuration** page of the front-end element, click the **Import** button to begin the provisioning.
 
