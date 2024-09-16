@@ -9,13 +9,15 @@ The **TDF EPM Manager** connector is an Experience and Performance Management co
 A deployed EPM Solution consists of one TDF EPM Manager front-end element and can have one or multiple back-end elements (using the same connector). The TDF EPM Manager front-end element is responsible for top-level data aggregation from different back-end elements. Each back-end element handles data aggregation from the collectors.
 
 The geographical topology is presented in the TDF EPM Manager and represents a connected entity from top to bottom:
-- #### Geographical
-    - Zone
-    - Department
-    - Site
-    - Equipment
-- #### Configuration
-    Allows you to place Visual Overview layouts on a separate chain.
+
+- **Geographical**
+  - Zone
+  - Department
+  - Site
+  - Equipment
+- **Configuration**
+  Allows you to place Visual Overview layouts on a separate chain.
+  
 ## About
 
 ### Version Info
