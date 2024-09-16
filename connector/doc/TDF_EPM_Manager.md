@@ -4,7 +4,7 @@ uid: Connector_help_TDF_EPM_Manager
 
 # TDF EPM Manager
 
-The **TDF EPM Manager** connector is an Experience and Performance Management connector, and as such it is designed to handle large amounts of data from the deployed infrastructures. It manages and monitors devices across various Equipment Management Systems (EMSs), maintaining relational data and aggregating data that can be viewed through a central front-end interface and the DataMiner Topology app
+The **TDF EPM Manager** connector is an Experience and Performance Management connector, and as such it is designed to handle large amounts of data from the deployed infrastructures. It manages and monitors devices across various Equipment Management Systems (EMSs), maintaining relational data and aggregating data that can be viewed through a central front-end interface and the DataMiner Topology app.
 
 A deployed EPM Solution consists of one TDF EPM Manager front-end element and can have one or multiple back-end elements (using the same connector). The TDF EPM Manager front-end element is responsible for top-level data aggregation from different back-end elements. Each back-end element handles data aggregation from the collectors.
 
