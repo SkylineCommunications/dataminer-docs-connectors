@@ -12,7 +12,7 @@ With this connector, it is possible to gather and view information from the devi
 
 | Range              | Key Features               | Based on | System Impact |
 |--------------------|----------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | IP-to-QAM signal converter | -        | -             |
+| 1.0.0.x [Obsolete] | IP-to-QAM signal converter | -        | -             |
 | 1.0.1.x [SLC Main] | Changed display key of the IP Interfaces and Active Alarms table.  | 1.0.0.x        | -             |
 
 ### Product Info
