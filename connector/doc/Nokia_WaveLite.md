@@ -4,7 +4,7 @@ uid: Connector_help_Nokia_WaveLite
 
 # Nokia WaveLite
 
-The **Nokia WaveLite connector** allows you to monitor the device of the same name, focusing on the interfaces details, the physical entities present in the device, alarming and its corresponding configuration. The device itself is an aggregator of enterprise services over optical networks.
+The Nokia WaveLite connector allows you to monitor the device of the same name, focusing on the interfaces details, the physical entities present in the device, alarms, and the corresponding configuration. The device itself is an aggregator of enterprise services over optical networks.
 
 ## About
 
@@ -46,4 +46,4 @@ SNMP Settings:
 
 ## How to use
 
-This connector is mainly intended for monitoring purposes. Across the whole connector, there are some parameters that can be modified by the user according his needs. Ideally, the connector should be used with alarm and trend templates to enable alarm monitoring and trending of the parameters.
+This connector is mainly intended for monitoring purposes. Across the whole connector, there are some parameters that you can modify according to your preferences. Ideally, the connector should be used with alarm and trend templates to enable alarm monitoring and trending of the parameters.

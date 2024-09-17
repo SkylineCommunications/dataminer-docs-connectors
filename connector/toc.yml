@@ -6404,6 +6404,8 @@
     topicUid: Connector_help_Nokia_OMS_1350_-_USRPNL
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
+  - name: Nokia WaveLite
+    topicUid: Connector_help_Nokia_WaveLite
 - name: Norkring
   items:
   - name: Norkring AS Bricknet

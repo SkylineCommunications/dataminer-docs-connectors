@@ -4,7 +4,7 @@ uid: Connector_help_META_WhatsApp_Messaging
 
 # META WhatsApp Messaging
 
-The META WhatsApp Messaging connector is part of the [META WhatsApp Messaging solution](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging.html). This connector is in charge of taking the alarm information retrieved from the ***META Alarm Detection*** script and send it to the contacts defined.
+The META WhatsApp Messaging connector is part of the [META WhatsApp Messaging solution](https://aka.dataminer.services/META_WhatsApp_Messaging). This connector is in charge of taking the alarm information retrieved from the **META Alarm Detection** script and sending it to the defined contacts.
 
 ## About
 
@@ -26,9 +26,9 @@ The META WhatsApp Messaging connector is part of the [META WhatsApp Messaging so
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
-## Installation
+## Prerequisites and Installation
 
-See [Installing the META WhatsApp Messaging solution](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging_Installation.html).
+See [Installing the META WhatsApp Messaging solution](https://aka.dataminer.services/META_WhatsApp_Messaging_Installation).
 
 ## Configuration
 
@@ -45,14 +45,11 @@ HTTP CONNECTION:
 
 ### Initialization
 
-#### Prerequisites
+When you install the package as described under [Installing the META WhatsApp Messaging solution](https://aka.dataminer.services/META_WhatsApp_Messaging_Installation), the element is created automatically. Once the element is running, these are the first steps to configure it:
 
-All prerequisites are described in the [META WhatsApp Messaging solution installation guide](https://docs.dataminer.services/user-guide/Standard_Apps/Monitoring_Solutions/META_WhatsApp_Messaging/META_WhatsApp_Messaging_Installation.html).
+1. On the **Configuration** page, fill in the **Phone Number ID**, **WhatsApp Business ID**, and **Token** parameters  with the values you saved earlier.
 
-#### First Steps
-
-1. Once the element created automatically by the package installation is running, fill in the *Phone Number ID*, *WhatsApp Business ID*, and *Token* parameters on the **Configuration** page with the values you saved earlier.
-1. In the Contacts table, add the phone numbers that should receive WhatsApp alarm notifications.
+1. In the **Contacts** table, add the phone numbers that should receive WhatsApp alarm notifications.
 
    > [!NOTE]
    > The numbers must start with the country code and exclude any non-numeric characters.
