@@ -8616,6 +8616,8 @@
     topicUid: Connector_help_TDF_ENERGIE_ALLYSS
   - name: TDF ENERGIE TBOX
     topicUid: Connector_help_TDF_ENERGIE_TBOX
+  - name: TDF EPM Manager
+    topicUid: Connector_help_TDF_EPM_Manager
   - name: TDF GE TBOX
     topicUid: Connector_help_TDF_GE_TBOX
   - name: TDF Helios Database
