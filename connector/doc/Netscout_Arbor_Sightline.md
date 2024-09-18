@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Netscout Arbor Sightline
+uid: Connector_help_Netscout_Arbor_Sightline
 ---
 
 # Netscout Arbor Sightline
