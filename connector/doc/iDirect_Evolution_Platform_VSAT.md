@@ -55,64 +55,11 @@ In order to obtain unique numeric IDs for entities used in the EPM aggregation p
 - The collector's Agent ID/element ID must be registered to the EPM collector registration.
 
 ## How to use
-
-### General Page
-
-The **General** page contains general information on the system, such as the number of Active Remotes, Inactive Remotes, Active Networks, Hub Forward, and Hub Return.
-
-### Remotes Page
-
-The **Remotes** page contains the Remotes overview table with specific metrics for all the remote terminals present in the system.
-
-This page has several subpages:
-
-- **Remotes Events**: Displays the details of all the alarms in the system related to the remotes.
-- **Vlan Status**: Displays the details of all the Vlan and Vrrp events related to the remotes.
-- **Remotes Netmodem**: Contains a mapper table tracking the current roaming network status on different remotes in the system.
-- **Remotes Modcod**: Contains a table tracking the modcod data of the remotes in the system.
-
-### Circuits Page
-
-The **Circuit** page displays the Circuits Overview table, which contains config and stats data related to the circuits (with a "circuit" being the network part of the system that resides at the customer site).
-
-The circuit is considered the lowest entity in the topology chain and is used to aggregate data to the higher entities if EPM functionality is enabled.
-
-### Hub Network Page
-
-The **Hub Network** page contains the Hub Network Overview table, with config and stats information for the networks present in the system.
-
-### Hub Forward Page
-
-The **Hub Forward** page contains the Hub Forward Overview table, with specific data for the Hub Forward entities.
-
-### Hub Return Page
-
-The **Hub Return** page contains the following tables:
-
-- **Hub Return Overview**: Contains config and stats data for the Hub Return entities.
-- **Hub Return Carriers**: Contains config and stats data for the individual carriers part of a Hub Return.
-
-### Linecards Page
-
-The **Linecards** page contains the Linecards table, with config and stats data for each linecard net modem in the system. These linecards are modular electronic circuits designed to fit on a separate printed circuit board (PCB) and interface with a telecommunications access network.
-
-The **Linecard Events** subpage contains detailed information on each alarm related to the linecards.
-
-### Protocol Processors Page
-
-The **Protocol Processors** page contains the Protocol Processor Blades table, with config and stats data for each server.
-
-The **PP Events** subpage contains detailed information for each protocol processor related event.
-
-### Chassis Page
-
-The **Chassis** page contains the Chassis table, with config and stats data for each chassis.
-
-The **Chassis Events** subpage contains detailed information for each alarm related to the chassis.
+When you first start up the element make your way to the configuration page. 
 
 ### Configuration Page
 
-The **Configuration** page contains the **Database Configuration** table, which stores the required settings for each database that is polled by the SQL queries to collect Config, Statistics, and Event data. At the top of this page, you can find the **EPM toggle button**, which can be used to enable or disable EPM integration.
+The **Configuration** page contains the **Database Configuration** table, which stores the required settings for each database that is polled by the SQL queries to collect Config, Statistics, and Event data. This table is a context menu table so you will need to configure the values for each individual database. This includes the Ip Address, Username, and Password. At the top of this page, you can find the **EPM toggle button**, which can be used to enable or disable EPM integration.
 
 This page has several subpages:
 
@@ -121,10 +68,12 @@ This page has several subpages:
 - **Auto Clear**: Allows the configuration of the Events Tables. This configuration includes the maximum number of days an event stays in the table after being cleared, the total number of events allowed in the table, and how often the clean-up logic should run. You can force the clean-up logic using the **Apply** button. There is also a **Clear All** button, which clears all the events in every Event table.
 - **Vlan Config**: This page allows the configuration of cleanup logic of the Vlan Event table located on the **Vlan Status** page.
 
+After configuring the databases make your way to the collector setup page. 
+
 ### Collector Setup Page
 
-This page contains all the settings to manage the file handling mechanisms. These files are the ID files from the EPM setup, which are exported and imported from a specified path, and the CMDB files, which are also imported and exported from a specified path.
+This page contains all the settings to manage the file handling mechanisms. These files are the ID files from the EPM setup, which are exported and imported from a specified path, and the CMDB files, which are also imported and exported from a specified path. If EPM integration is not enabled, then the only thing necessary to configure on this page is the entity removal section detailed below.  This section handles the cleanup of tables for removed entites.
 
 The **Directory Type** toggle button allows you to specify if the file path is located locally on the DMA or in a remote location.
 
-The **Entity Removal** section in the lower right corner allows you to configure how long a circuit with the state "removed" (no longer polled in the system) is retained for trend and data purposes.
+The **Entity Removal** section in the lower right corner allows you to configure how long an entity with the state "removed" (no longer polled in the system) is retained for trend and data purposes.
