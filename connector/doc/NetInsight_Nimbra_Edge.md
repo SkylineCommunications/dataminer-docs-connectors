@@ -14,8 +14,8 @@ The HTTP(S) REST API is used to retrieve data from Nimbra Edge.
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-| 1.0.1.x | Flow Engineering, MinimumRequiredVersion of 10.4.5 | 1.0.0.6 | - |
+| 1.0.0.x [SLC Main]   | Initial version.  | -            | -                 |
+| 1.0.1.x | Flow Engineering.<br>Minimum required version changed to 10.4.5. | 1.0.0.6 | - |
 
 ### Product Info
 
