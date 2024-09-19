@@ -120,7 +120,9 @@ This page displays the Sources Table. The format of the index is {Levels Index}.
 
 The display name can be configured in the format **Source Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
 
-The Audio Modify can also be configured on the table, and its respective enabled and lock state that are used for in the Matrix.
+The Audio Modify specifies the type of audio modification performed on the sources, such as Audio Normal or Audio Swap, which can be configured on the table.
+
+The respective enabled and lock state that are used for in the Matrix can also be configured on the table.
 
 #### Source Association
 
