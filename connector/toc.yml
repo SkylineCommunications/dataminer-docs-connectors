@@ -2066,6 +2066,8 @@
     topicUid: Connector_help_CISCO_CBR-8_CCAP_Platform
   - name: CISCO CBR-8 CCAP Platform Collector
     topicUid: Connector_help_CISCO_CBR-8_CCAP_Platform_Collector
+  - name: CISCO CBR-8 CCAP UTSC
+    topicUid: Connector_help_CISCO_CBR-8_CCAP_UTSC
   - name: CISCO CDS
     topicUid: Connector_help_CISCO_CDS
   - name: CISCO CMTS
