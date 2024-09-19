@@ -6056,6 +6056,8 @@
     topicUid: Connector_help_NetInsight_Nimbra_VA
 - name: Netscout
   items:
+  - name: Netscout Arbor Sightline
+    topicUid: Connector_help_Netscout_Arbor_Sightline
   - name: Netscout VSS vBroker
     topicUid: Connector_help_Netscout_VSS_vBroker
 - name: NetSure
