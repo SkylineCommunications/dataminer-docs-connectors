@@ -120,9 +120,9 @@ This page displays the Sources Table. The format of the index is {Levels Index}.
 
 The display name can be configured in the format **Source Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
 
-The Audio Modify specifies the type of audio modification performed on the sources, such as Audio Normal or Audio Swap, which can be configured on the table.
+The **Audio Modify** parameter specifies the type of audio modification performed on the sources, such as *Audio Normal* or *Audio Swap*. This can be configured in the table.
 
-The respective enabled and lock state that are used for in the Matrix can also be configured on the table.
+The respective enabled and lock state, which are used in the matrix, can also be configured in the table.
 
 #### Source Association
 
@@ -130,23 +130,22 @@ This page displays the Source Association Table and the Source Association Sourc
 
 #### Source Settings
 
-On the Sources Table, there is a display name column to identify each row. The format of this display name is "**Source Index**.**Choice**".
-The **Choice** is configurable in this page to either use the alternative name, 4 character name, 8 character name, 12 character name, or 16 character name.
-The default configuration uses the 16 character name.
+In the Sources Table, there is a display name column to identify each row. The format of this display name is "**Source Index**.**Choice**". This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name. The default configuration uses the 16-character name.
 
 ### Destinations
 
-This page displays the Destinations Table. The format of the index is {Levels Index}.{Destinations Id}.\
+This page displays the Destinations Table. The format of the index is {Levels Index}.{Destinations Id}.
+
 The display name can be configured in the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
 
-The routed source can also be configured on the table, and its respective enabled and lock state that are used for in the Matrix.
+The routed source can also be configured in the table, as well as the respective enabled and lock state, which are used in the matrix.
 
 #### Destination Settings
 
-The display name can be configuration of the Destinations Table display name. It uses the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name. The default configuration uses the 16-character name.
+The Destinations Table display name can be configured here. It uses the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name. The default configuration uses the 16-character name.
 
 ### Matrix
 
 This page shows the matrix, an overview of the crosspoints of the destinations and sources.
 
-The sources of each destination can be configured on this matrix, and destinations and sources can be locked.
+The sources of each destination can be configured with this matrix, and destinations and sources can be locked.
