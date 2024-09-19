@@ -55,11 +55,14 @@ In order to obtain unique numeric IDs for entities used in the EPM aggregation p
 - The collector's Agent ID/element ID must be registered to the EPM collector registration.
 
 ## How to use
-When you first start up the element make your way to the configuration page. 
+
+When you first start up the element, go to the Configuration page to configure the databases.
 
 ### Configuration Page
 
-The **Configuration** page contains the **Database Configuration** table, which stores the required settings for each database that is polled by the SQL queries to collect Config, Statistics, and Event data. This table is a context menu table so you will need to configure the values for each individual database. This includes the Ip Address, Username, and Password. At the top of this page, you can find the **EPM toggle button**, which can be used to enable or disable EPM integration.
+The **Configuration** page contains the **Database Configuration** table, which stores the required settings for each database that is polled by the SQL queries to collect Config, Statistics, and Event data. You can right-click this table to configure the values for each individual database, including the IP Address, Username, and Password.
+
+At the top of this page, you can also find the **EPM toggle button**, which can be used to enable or disable EPM integration.
 
 This page has several subpages:
 
@@ -68,12 +71,12 @@ This page has several subpages:
 - **Auto Clear**: Allows the configuration of the Events Tables. This configuration includes the maximum number of days an event stays in the table after being cleared, the total number of events allowed in the table, and how often the clean-up logic should run. You can force the clean-up logic using the **Apply** button. There is also a **Clear All** button, which clears all the events in every Event table.
 - **Vlan Config**: This page allows the configuration of cleanup logic of the Vlan Event table located on the **Vlan Status** page.
 
-After configuring the databases make your way to the collector setup page. 
+When you have configured the databases, go to the Collector Setup page to continue configuring the element.
 
 ### Collector Setup Page
 
-This page contains all the settings to manage the file handling mechanisms. These files are the ID files from the EPM setup, which are exported and imported from a specified path, and the CMDB files, which are also imported and exported from a specified path. If EPM integration is not enabled, then the only thing necessary to configure on this page is the entity removal section detailed below.  This section handles the cleanup of tables for removed entites.
+This page contains all the settings to manage the file handling mechanisms. These files are the ID files from the EPM setup, which are exported and imported from a specified path, and the CMDB files, which are also imported and exported from a specified path.
 
 The **Directory Type** toggle button allows you to specify if the file path is located locally on the DMA or in a remote location.
 
-The **Entity Removal** section in the lower right corner allows you to configure how long an entity with the state "removed" (no longer polled in the system) is retained for trend and data purposes.
+The **Entity Removal** section in the lower right corner handles the cleanup of tables for removed entities. It allows you to configure how long an entity with the state "removed" (no longer polled in the system) is retained for trend and data purposes. If EPM integration is not enabled, this section is the only thing you need to configure on this page.
