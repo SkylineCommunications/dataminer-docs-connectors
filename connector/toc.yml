@@ -9942,8 +9942,6 @@
     topicUid: Connector_help_Zodiac_Data_Systems_Cortex_CRT-Q_-_RAU
 - name: ZTE
   items:
-  - name: ZTE ZXDUPA-BCUA
-    topicUid: Connector_help_ZTE_ZXDUPA-BCUA
   - name: ZTE ZMC
     topicUid: Connector_help_ZTE_ZMC
   - name: ZTE ZXA10 C600
@@ -9952,6 +9950,8 @@
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
   - name: ZTE ZXDU
     topicUid: Connector_help_ZTE_ZXDU
+  - name: ZTE ZXDUPA-BCUA
+    topicUid: Connector_help_ZTE_ZXDUPA-BCUA
   - name: ZTE ZXR10 2900E Series
     topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900
