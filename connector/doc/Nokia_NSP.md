@@ -10,10 +10,10 @@ This connector is used to collect alarm data from the **Nokia NSP** system, whic
 
 ### Version Info
 
-| Range              | Key Features     | Based on | System Impact |
-|--------------------|------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
-| 2.0.0.x | EPM version. | 1.0.0.2        | This version is intended for EPM only, UX and functionality have been impacted             |
+| Range              | Key Features     | Based on | System Impact                                                               |
+|--------------------|------------------|----------|-----------------------------------------------------------------------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -                                                                           |
+| 2.0.0.x            | EPM version.     | 1.0.0.2  | This version impacts the UX and functionality. It is intended for EPM only. |
 
 ### Product Info
 
