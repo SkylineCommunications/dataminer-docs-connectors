@@ -385,7 +385,7 @@ Based on the previous example:
 > ![naming5.JPG](~/connector/images/CISCO_DCM_naming5.JPG)
 >
 > - By default, all custom naming will be configured with the same values that were hardcoded before version 1.0.0.83. **No historic data will be lost**.
-> - From version 1.0.3.101 there is a toggle button to disable the syncing, by default is the syncing enabled.
+> - From version 1.0.3.101 of the connector onwards, there is a toggle button to disable the syncing. By default, the syncing is enabled.
 
 ## Usage
 
