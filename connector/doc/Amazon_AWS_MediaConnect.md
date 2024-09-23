@@ -70,7 +70,8 @@ In order to communicate with the AWS REST APIs, on the **General** page, the **A
 The element created with this connector consists of the following data pages:
 
 - **General**: Contains the parameters **Account**, **Access Key ID**, and **Secret Access Key**, which are used for authentication and verification. The parameters SNS URL and SNS Topic ARN contain the information related to the SNS subscription topic from which the connector received unsolicited messages.
-    Three different (Key Pair, Metadata, Assume Role) types of authentication mechanisms are available on **1.0.1.X.**. The user can select the one that desires on the **Credentials Source** parameter. 
+
+  Three different types of authentication mechanisms (*Key Pair*, *Metadata*, and *Assume Role*) are available in range **1.0.1.x**. You can select the preferred mechanism using the **Credentials Source** parameter.
 
 - **SNS Debug**: The parameter **SNS Message** contains the last received SNS message. This can be used for debug purposes to determine which information was received.
 
