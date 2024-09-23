@@ -10,21 +10,24 @@ This connector is used to collect alarm data from the **Nokia NSP** system, whic
 
 ### Version Info
 
-| Range              | Key Features     | Based on | System Impact |
-|--------------------|------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
+| Range              | Key Features     | Based on | System Impact                                                               |
+|--------------------|------------------|----------|-----------------------------------------------------------------------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -                                                                           |
+| 2.0.0.x            | EPM version.     | 1.0.0.2  | This version impacts the UX and functionality. It is intended for EPM only. |
 
 ### Product Info
 
 | Range   | Supported Firmware |
 |---------|--------------------|
 | 1.0.0.x | 23.11              |
+| 2.0.0.x | 23.11              |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
 | 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 2.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
