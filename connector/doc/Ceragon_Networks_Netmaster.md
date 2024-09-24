@@ -30,6 +30,7 @@ Information is polled from the device via SNMP. The connector is also able to pr
 | 1.0.1.x | Adaptation based on change request. | No | Yes |
 | 1.0.2.x (Obsolete) | Added Redundancy Status table. | No | Yes |
 | 1.0.3.x [SLC Main] | Modified Redundancy Status table. | No | Yes |
+| 2.0.0.x [EPM] | Converted DVE logic to create EPM Entities. | No | Yes |
 
 ### Product Info
 
@@ -71,11 +72,11 @@ SNMP Settings:
 
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-### Configuration of the element properties
+### Configuration of the element properties (range 1.0.3.X)
 
 The element's custom properties **Client Id** and **MHA Identifier** need to be created as soon as the main element is created, so that the values from the provisioning file can be filled in.
 
-### Configuration of DVEs
+### Configuration of DVEs (range 1.0.3.X)
 
 To create DVEs, go to the **General Information** page. On this page, the **Device Table** lists the devices that were retrieved from the system. To create a DVE corresponding to a particular device, change the **Device View** to an existing view, and change the **Device Name** to a custom name. Then click the toggle button to set **Device Creation State** to *Created*. If the column **Device View** is not filled in, the element will be placed in the root view.
 
@@ -127,7 +128,7 @@ This page contains two alarm tables:
 
 This page displays information about which DVEs have been exported, including the **Export Custom DVE Name**, the **DVE View**, etc.
 
-### Provisioning
+### Provisioning (range 1.0.3.X)
 
 This page contains the following parameters:
 
@@ -141,6 +142,18 @@ This page contains the following parameters:
 
 - **Import Report:** Displays how many rows are in both the Device Table and the CSV file. Also confirms how many rows have empty values for both the Client Id and MHA Identifier properties, and, in case of a mismatch in the number of rows, displays the rows that are missing in the Device Table and present in the CSV file or vice versa.
 
-### Web Interface
+### Configuration (range 2.0.0.X)
+
+This page contains the following parameters:
+
+- **Entity Import Directory**: Directory where the element will import the devices information from EPM.
+
+- **Entity Export Directory**: Directory where the element will export the devices inventory information to the EPM.
+
+- **System Username**: Username used to retrieve files from a remote directory.
+
+- **System Password**: Password used to retrieve files from a remote directory.
+
+### Web Interface (range 1.0.3.X)
 
 This page opens the web interface of the NMS. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
