@@ -1,0 +1,140 @@
+name: Upload Modified Files to Azure Blob Storage
+
+on: 
+  push:
+    branches: 
+      - main
+
+jobs:
+  upload_to_azure_after_master_commit: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch files from last merge
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Get all changed markdown files
+        id: changed-markdown-files
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+             connector/doc/**.md
+          include_all_old_new_renamed_files: true
+      
+      - name: Get all changed images
+        id: changed-images
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+              connector/images/**      
+
+      - name: Summary changed markdown files
+        run: |
+          echo Docs:
+          echo Number of markdown files added: ${{ steps.changed-markdown-files.outputs.added_files_count }}
+          echo Number of markdown files modified: ${{ steps.changed-markdown-files.outputs.modified_files_count }}
+          echo Number of markdown files renamed: ${{ steps.changed-markdown-files.outputs.renamed_files_count }}
+          echo Number of markdown files deleted: ${{ steps.changed-markdown-files.outputs.deleted_files_count }}
+          echo Images:
+          echo Number of images added: ${{ steps.changed-images.outputs.added_files_count }}
+          echo Number of images modified: ${{ steps.changed-images.outputs.modified_files_count }}
+          echo Number of images renamed: ${{ steps.changed-images.outputs.renamed_files_count }}
+          echo Number of images deleted: ${{ steps.changed-images.outputs.deleted_files_count }}
+
+      - name: Create folder for added, modified and renamed files
+        if: steps.changed-markdown-files.outputs.all_changed_and_modified_files_count > 0 || steps.changed-images.outputs.all_changed_and_modified_files_count > 0
+        run: |
+          mkdir update_docs 
+          mkdir update_images      
+
+      - name: Add added and modified docs to folders
+        if: steps.changed-markdown-files.outputs.added_files_count > 0 || steps.changed-markdown-files.outputs.modified_files_count > 0
+        id: list-docs 
+        run: |
+          for file in ${{ steps.changed-markdown-files.outputs.added_files }}; do
+            echo "$file was added"
+            cp $file update_docs/
+          done
+          for file in ${{ steps.changed-markdown-files.outputs.modified_files }}; do
+            echo "$file was modified"
+            cp $file update_docs/
+          done
+      
+      - name: Add added and modified images to folders
+        if: steps.changed-images.outputs.added_files_count > 0 || steps.changed-images.outputs.modified_files_count > 0 
+        id: list-images
+        run: |
+          for image in ${{ steps.changed-images.outputs.added_files }}; do
+            echo "$image was added"
+            cp $image update_images/
+          done
+          for image in ${{ steps.changed-images.outputs.modified_files }}; do
+            echo "$image was modified"
+            cp $image update_images/
+          done
+          
+      - name: Delete renamed files on azure and add new name to folders
+        if: steps.changed-markdown-files.outputs.all_old_new_renamed_files_count > 0
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            for file in ${{ steps.changed-markdown-files.outputs.all_old_new_renamed_files }}; do
+              IFS=',' read -r original renamed <<< "$file"  
+              if [[ -n $renamed ]]; then
+                echo "$original was renamed to $renamed"
+                if [[ $original == *doc* ]]; then
+                  stripped_file="$(basename "$original")"
+                  cp $renamed update_docs/
+                  az storage blob delete -c 'docs' -n $stripped_file --connection-string  '${{ secrets.AZUREBLOBSTORAGECS }}'
+                fi
+                if [[ $original == *images* ]] ; then
+                  stripped_image="$(basename "$original")"
+                  cp $renamed update_images/
+                  az storage blob delete -c 'images' -n $stripped_image --connection-string  '${{ secrets.AZUREBLOBSTORAGECS }}'
+                fi
+              fi
+            done
+            
+      - name: Delete removed files on azure
+        if: steps.changed-markdown-files.outputs.any_deleted == 'true' || steps.changed-images.outputs.any_deleted == 'true'
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            for file in ${{ steps.changed-markdown-files.outputs.deleted_files }}; do 
+              stripped_file="$(basename "$file")"
+              az storage blob delete -c 'docs' -n $stripped_file --connection-string  '${{ secrets.AZUREBLOBSTORAGECS }}'
+              echo "$file was deleted"
+            done
+            for image in ${{ steps.changed-images.outputs.deleted_files }}; do 
+              stripped_image="$(basename "$image")"
+              az storage blob delete -c 'images' -n $stripped_image --connection-string  '${{ secrets.AZUREBLOBSTORAGECS }}'
+              echo "$image was deleted"
+            done
+      
+      - name: Upload docs folder contents to Azure Storage Container
+        if: steps.changed-markdown-files.outputs.any_changed == 'true'
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            for file in update_docs/*; do
+              blob_name="$(basename "$file")"
+              sed -E 's|xref:Connector_help_([^)]*)\)|https://docs.dataminer.services/connector/doc/\1.html)|g' $file
+              sed -i 's~\~/connector/images/~https://api.dataminer.services/api/public-catalog/v1-0/catalog/images/~g' $file
+              az storage blob upload --file "$file" -c 'docs' -n "$blob_name" --connection-string '${{ secrets.AZUREBLOBSTORAGECS }}' --overwrite 'true'
+              az storage blob update -c 'docs' -n "$blob_name" --connection-string '${{ secrets.AZUREBLOBSTORAGECS }}' --content-type 'text/plain'
+              echo $blob_name uploaded
+            done
+            
+      
+      - name: Upload images folder contents to Azure Storage Container
+        if: steps.changed-images.outputs.any_changed == 'true'
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            for image in update_images/*; do
+              blob_name="$(basename "$image")"
+              az storage blob upload --file "$image" -c 'images' -n "$blob_name" --connection-string '${{ secrets.AZUREBLOBSTORAGECS }}' --overwrite 'true'
+              echo $blob_name uploaded
+            done
+
