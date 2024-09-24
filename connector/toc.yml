@@ -1580,6 +1580,8 @@
     topicUid: Connector_help_beIN_Arvato_VPMS
   - name: beIN ESVC Feed Request
     topicUid: Connector_help_beIN_ESVC_Feed_Request
+  - name: beIN Feed Request Preset Manager
+    topicUid: Connector_help_beIN_Feed_Request_Preset_Manager
   - name: beIN GPIO Mapping
     topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
