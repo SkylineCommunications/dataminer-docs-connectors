@@ -2480,6 +2480,8 @@
   items:
   - name: DAZN Broadcast Bridge
     topicUid: Connector_help_DAZN_Broadcast_Bridge
+  - name: DAZN MediaOps VSC Sync
+    topicUid: Connector_help_DAZN_MediaOps_VSC_Sync
 - name: Deep Sea Electronics
   items:
   - name: Deep Sea Electronics DSE74XX MKII
