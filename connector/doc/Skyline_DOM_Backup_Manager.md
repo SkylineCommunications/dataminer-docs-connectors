@@ -83,10 +83,10 @@ This table allows you to select a zip file to restore the information for the de
 - **Restore Button**: Allows the connector to restore the desired row.
 
 > [!NOTE]  
-> The restorables that are shown in this table are _unique_. This is done in the background by comparing the _Last Modification_ parameter of every backup that is created. The benefit of this approach is that if the user sorts the table by the column _Last Modification_ you get a sort of version history of your DOM Backups and only see the unique backup moments that are meaningful to restore.
+> The restorables displayed in this table are _unique_, determined by comparing the Last Modification parameter of each created backup. This comparison process runs in the background. The advantage of this approach is that when the user sorts the table by the Last Modification column, it effectively creates a version history of DOM backups, showing only the distinct backup moments that are meaningful for restoration. It’s normal not to see all backups of the backup folder in this table, especially if multiple backups were taken without any changes made in between.
 
 > [!WARNING]  
-> In the background, upon restoring a previous back-up, there is checked if the module already exists. If so, an automatic backup is taken. Afterwards it is deleted and the old backup is imported. While this is a safe approach, it can take time, depending on the computing power of your system and reading/writing speed from/to your indexing engine. 
+> In the background, when restoring a previous backup, the system first checks if the module already exists. If it does, an automatic backup is created before the existing module is deleted and the old backup is imported. Although this approach ensures safety, it can be time-consuming depending on your system's computing power and the read/write speed of your indexing engine.
 
 ### Configuration Page
 
