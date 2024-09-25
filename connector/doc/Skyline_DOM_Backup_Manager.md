@@ -6,9 +6,12 @@ uid: Connector_help_Skyline_DOM_Backup_Manager
 
 This is a generic connector that ingests all of the available **DOM modules in the DMS** and takes a backup of each module based on user requirements.
 
-It is intended for users that depend a lot on DOM for their day-to-day operations, so they can have the peace of mind of knowing that if something goes wrong with their system, all their DOM modules will be backed up.
+It is intended for users that depend a lot on DOM for their day-to-day operations, so they can have the peace of mind of knowing that if something goes wrong with their system, all their DOM modules will be backed up. This connector offers the ability to include DOM instances in the backups along with some quality-of-life configuration for e.g. frequency of backups, maximum backups, etc.
 
-This connector offers the ability to include DOM instances in the backups along with some quality-of-life configuration for e.g. frequency of backups, maximum backups, etc.
+Furthermore, it is possible to restore previous backups. This gives the user the possibility to easily go back to a earlier point in time. 
+
+> [!WARNING]  
+> It is recommended to only use this connector in production systems after evaluating internally within Skyline. Whether it's recommended to use this connector depends on the size of a certain module and its instances and the DMS where you want to deploy it to. 
 
 ## About
 
@@ -46,16 +49,16 @@ The **Backups Schedule** page lists all the **available DOM modules** in a table
 
 There are also two standalone configuration parameters on this page:
 
-- **Backup File Path**: The path where the backup will be stored. Default: `C:\Skyline DataMiner\Documents`.
+- **Backup File Path**: The path where the backup will be stored. Default: `C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\DOM Backups`.
 - **Sync button**: This allows you to manually **update the table** with all DOM modules in the DMS.
 
 ### Restorables Page
 
-The **Restorables** page of this connector contains two tables: the [DOM Module Overview Table](#dom-module-overview-table), listing all the DOM modules inside a specified folder, and the [Restorables Overview Table](#restorables-overview-table), listing the zip files that can be restored.
+The **Restorables** page of this connector contains two tables: the **DOM Module Overview Table**, listing all the DOM modules inside a specified folder, and the **Restorables Overview Table**, listing the zip files that can be restored.
 
 There are also several standalone configuration parameters on this page:
 
-- **Restore Folder Path**: Syncs the modules across the zip files at the specified path.
+- **Restore Folder Path**: Syncs the modules across the zip files at the specified path. Default: 'C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\DOM Backups'.
 - **Update Folder Path**: Updates the **DOM Module Overview** table with the modules found inside the folder specified with the Restore Folder Path parameter.
 - **Update Path**: Updates the **Restorables Overview** table with the zip files found inside the folder specified with the Restore Folder Path parameter.
 
@@ -78,6 +81,12 @@ This table allows you to select a zip file to restore the information for the de
 - **DOM Instances Count**: The number of DOM instances.
 - **Restore State**: Displays the current state of the row. Possible values are **Not Restored**, **Processing**, **Failed**, and **Restored**.
 - **Restore Button**: Allows the connector to restore the desired row.
+
+> [!NOTE]  
+> The restorables that are shown in this table are _unique_. This is done in the background by comparing the _Last Modification_ parameter of every backup that is created. The benefit of this approach is that if the user sorts the table by the column _Last Modification_ you get a sort of version history of your DOM Backups and only see the unique backup moments that are meaningful to restore.
+
+> [!WARNING]  
+> In the background, upon restoring a previous back-up, there is checked if the module already exists. If so, an automatic backup is taken. Afterwards it is deleted and the old backup is imported. While this is a safe approach, it can take time, depending on the computing power of your system and reading/writing speed from/to your indexing engine. 
 
 ### Configuration Page
 
