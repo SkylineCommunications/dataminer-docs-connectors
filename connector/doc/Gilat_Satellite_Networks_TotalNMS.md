@@ -109,7 +109,7 @@ This page contains a table listing the CPE devices that are currently known to t
 
 If a CPE device was known earlier but no longer seems to be present in the **CPEs** table, you should check the **CPE DVEs** table. You can find this table by clicking the **CPE DVEs Configurations** page button at the bottom of this page.
 
-CPE DVEs will be created for devices for which the **DVE Enabled** parameter is set to *Enabled*. For new CPE devices that are added to the table, this parameter is set to *Disabled* by default. You can change this parameter setting on the **Settings** page.
+CPE DVEs will be created for devices for which the **DVE Created** parameter is set to *Enabled*. For new CPE devices that are added to the table, this parameter is set to *Disabled* by default. You can change this parameter setting in the **Settings** page.
 
 After startup, the Severity column can indicate the *Unknown* state. This is expected behavior, caused by the fact that the Severity column will only be updated when an alarm trap is received. For example, when a *Major Open* alarm comes in, *Major* will be the severity. When after a number of minutes the same alarm comes in with the *Cleared* state, the new severity will be *Normal*.
 
@@ -169,5 +169,5 @@ Note that the **minimum required version of the Generic Ping connector is** **3.
 
 On the Settings page, you can also find settings related to CPE DVE creation:
 
-- **Automatic CPE DVE Creation**: Allows you to set the **DVE Enabled** parameter to *Enabled* for all future added CPE devices. By default, is set to *Disabled*.
+- **Automatic CPE DVE Creation**: Allows you to set the **DVE Created** parameter to *Enabled* for all future added CPE devices. By default, is set to *Disabled*.
 - **Enable/Disable All DVEs** Allows you to set the state of all CPE devices in the table to *Enabled* or *Disabled*.
