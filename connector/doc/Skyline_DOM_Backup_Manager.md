@@ -8,10 +8,10 @@ This is a generic connector that ingests all of the available **DOM modules in t
 
 It is intended for users that depend a lot on DOM for their day-to-day operations, so they can have the peace of mind of knowing that if something goes wrong with their system, all their DOM modules will be backed up. This connector offers the ability to include DOM instances in the backups along with some quality-of-life configuration for e.g. frequency of backups, maximum backups, etc.
 
-Furthermore, it is possible to restore previous backups. This gives the user the possibility to easily go back to a earlier point in time. 
+Furthermore, it is possible to restore previous backups. This gives the user the possibility to easily go back to an earlier point in time.
 
-> [!WARNING]  
-> It is recommended to only use this connector in production systems after evaluating internally within Skyline. Whether it's recommended to use this connector depends on the size of a certain module and its instances and the DMS where you want to deploy it to. 
+> [!WARNING]
+> Only use this connector in production systems after evaluating internally within Skyline. Whether using this connector is recommended depends on the size of a certain module, its instances, and the DMS to which you want to deploy it.
 
 ## About
 
@@ -58,7 +58,7 @@ The **Restorables** page of this connector contains two tables: the **DOM Module
 
 There are also several standalone configuration parameters on this page:
 
-- **Restore Folder Path**: Syncs the modules across the zip files at the specified path. Default: 'C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\DOM Backups'.
+- **Restore Folder Path**: Syncs the modules across the zip files at the specified path. Default: `C:\Skyline DataMiner\Documents\DMA_COMMON_DOCUMENTS\DOM Backups`.
 - **Update Folder Path**: Updates the **DOM Module Overview** table with the modules found inside the folder specified with the Restore Folder Path parameter.
 - **Update Path**: Updates the **Restorables Overview** table with the zip files found inside the folder specified with the Restore Folder Path parameter.
 
@@ -82,11 +82,11 @@ This table allows you to select a zip file to restore the information for the de
 - **Restore State**: Displays the current state of the row. Possible values are **Not Restored**, **Processing**, **Failed**, and **Restored**.
 - **Restore Button**: Allows the connector to restore the desired row.
 
-> [!NOTE]  
-> The restorables displayed in this table are _unique_, determined by comparing the Last Modification parameter of each created backup. This comparison process runs in the background. The advantage of this approach is that when the user sorts the table by the Last Modification column, it effectively creates a version history of DOM backups, showing only the distinct backup moments that are meaningful for restoration. It’s normal not to see all backups of the backup folder in this table, especially if multiple backups were taken without any changes made in between.
+> [!NOTE]
+> The restorables displayed in this table are **unique**. They are determined by comparing the Last Modification parameter of each created backup. This comparison process runs in the background. The advantage of this approach is that when the user sorts the table by the Last Modification column, it effectively creates a version history of DOM backups, showing only the distinct backup moments that are meaningful for restoration. It is normal not to see all backups of the backup folder in this table, especially if multiple backups were taken without any changes made in between.
 
-> [!WARNING]  
-> In the background, when restoring a previous backup, the system first checks if the module already exists. If it does, an automatic backup is created before the existing module is deleted and the old backup is imported. Although this approach ensures safety, it can be time-consuming depending on your system's computing power and the read/write speed of your indexing engine.
+> [!WARNING]
+> In the background, when a previous backup is restored, the system first checks if the module already exists. If it does, an automatic backup is created before the existing module is deleted and the old backup is imported. Although this approach ensures safety, it can be time-consuming depending on your system's computing power and the read/write speed of your indexing engine.
 
 ### Configuration Page
 
