@@ -14,6 +14,7 @@ The Skyline Booking Manager is a generic application that allows you to fully ma
 |---------|-------------------------------------------------------------------------------------------|-----------------|---------------------|
 | 2.0.1.x | Initial version                                                                           | No              | Yes                 |
 | 2.0.2.x | Removed Booking Manager Tables. A visual overview is provided to enable CRUD of bookings. | No              | Yes                 |
+| 2.0.3.x | Replaced QAction63000 by nuget packages. Compatible with SRM 2.0.X                        | No              | Yes                 |
 
 ## Installation and configuration
 
