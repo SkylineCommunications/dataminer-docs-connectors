@@ -12,7 +12,7 @@ This connector allows you to manage a Snell Wilcox MC2000 Controller using a **s
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

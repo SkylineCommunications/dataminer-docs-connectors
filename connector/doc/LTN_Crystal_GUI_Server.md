@@ -12,7 +12,7 @@ This connector allows you to monitor and control parameters of the devices in th
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on | System Impact |
 |----------------------|-------------------------------------------|--------------|-------------------|
 | 1.0.0.x (obsolete)   | Initial version                           | -            | -                 |
 | 1.0.1.x [SLC Main]   | Fixes parameter names to match device GUI | 1.0.0.1      | -                 |

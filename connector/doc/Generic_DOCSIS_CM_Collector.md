@@ -20,7 +20,8 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 | 3.0.3.x            | CM QAM DS/US logic adjusted for better aggregation accuracy. | -        | -             |
 | 3.0.4.x            | Added minimum DMA version for NuGet Packages.                | -        | -             |
 | 3.0.5.x            | Modifications to improve performance.                        | -        | -             |
-| 3.0.6.x [SLC Main] | New threshold logic.                                         | -        | -             |
+| 3.0.6.x            | New threshold logic.                                         | -        | -             |
+| 3.0.7.x [SLC Main] | Removed hyphens from threshold settings.                     | -        | -             |
 
 ### Product Info
 
@@ -35,6 +36,7 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 | 3.0.4.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 | 3.0.5.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 | 3.0.6.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
+| 3.0.7.x   | DOCSIS 2.0, DOCSIS 3.0, DOCSIS 3.1 |
 
 ### System Info
 
@@ -49,6 +51,7 @@ This connector uses SNMP on the standard DOCSIS MIBs to collect info from CMs an
 | 3.0.4.x   | No                  | Yes                     | -                     | -                       |
 | 3.0.5.x   | No                  | Yes                     | -                     | -                       |
 | 3.0.6.x   | No                  | Yes                     | -                     | -                       |
+| 3.0.7.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -113,9 +116,9 @@ Under **DOCSIS thresholds settings** > **upstream/downstream QAM channels**, you
 These are the available PNM parameters that can be modified:
 
 - **Velocity Factor (VF) for Coax Cable**: Range from 0 to 1.
-- **Non-Main-Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
-- **Post-Main-Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
-- **Pre-Main-Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
+- **Non-Main Tap Energy Ratio (NMTER) Threshold**: Range from -50 to 0 dB.
+- **Post-Main Tap to Total Energy Ratio (PostMTTER) Threshold**: Range from -50 to 0 dB.
+- **Pre-Main Tap to Total Energy Ratio (PreMTTER) Threshold**: Range from -50 to 0 dB.
 
 When you click the **Apply** button, the status of the specified PNM KPIs in the CM table will be updated.
 

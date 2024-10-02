@@ -14,9 +14,9 @@ A **serial** connection is used in order to successfully retrieve and configure 
 
 ### Product Info
 
-| **Range** | **Device Revision** |
-|------------------|---------------------|
-| 1.0.0.x          | Rev. 100            |
+| Range   | Device Revision |
+|---------|-----------------|
+| 1.0.0.x | Rev. 100        |
 
 ## Installation and configuration
 

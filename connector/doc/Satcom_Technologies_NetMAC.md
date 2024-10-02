@@ -13,7 +13,7 @@ The aim of this connector is to collect data from the NetMAC device and to allow
 
 ### Version Info
 
-| **Range** | **Description**                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, with optional DVE creation.      | No                  | Yes                     |
 | 2.0.0.x          | Implementation based on traps instead of polling. | No                  | Yes                     |

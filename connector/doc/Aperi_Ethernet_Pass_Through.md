@@ -12,17 +12,17 @@ The information on tables and parameters is retrieved via **HTTP** communication
 
 ### Version Info
 
-| **Range**     | **Description**                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.               | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Streamlined all Aperi connectors. | No                  | Yes                     |
+| Range              | Description                       | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                  | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Streamlined all Aperi connectors. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.0.3                       |
-| 1.0.1.x          | 1.0.3                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.0.3                      |
+| 1.0.1.x | 1.0.3                      |
 
 ## Installation and configuration
 

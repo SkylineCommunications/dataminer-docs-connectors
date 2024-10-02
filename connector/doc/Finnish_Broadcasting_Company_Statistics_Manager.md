@@ -10,7 +10,7 @@ The Finnish Broadcasting Company Statistics Manager connector retrieves and calc
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact** |
+| Range                | Key Features                   | Based on     | System Impact     |
 |----------------------|--------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Real-time and daily statistics | -            | -                 |
 

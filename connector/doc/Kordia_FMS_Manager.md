@@ -10,7 +10,7 @@ This connector executes logic for the provisioning of elements and enhanced serv
 
 ### Version Info
 
-| **Range**            | **Key Features**         | **Based on** | **System Impact** |
+| Range                | Key Features             | Based on     | System Impact     |
 |----------------------|--------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | FMS element provisioning | -            | -                 |
 

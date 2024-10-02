@@ -12,7 +12,7 @@ The application service provides access to all features of the middleware used n
 
 ### Version Info
 
-| **Range** | **Description**               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                   | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version               | No                  | No                      |
 | 1.0.1.x          | Added serial and new features | No                  | No                      |

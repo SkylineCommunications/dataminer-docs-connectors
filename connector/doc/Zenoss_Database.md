@@ -12,7 +12,7 @@ The connector will create **Zenoss Database - Element** DVEs based on the inform
 
 ### Version Info
 
-| **Range**            | **Key Features**        | **Based on** | **System Impact** |
+| Range                | Key Features            | Based on     | System Impact     |
 |----------------------|-------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial                 | -            | -                 |
 | 2.0.0.x              | HTTP JSON; DVE version. | -            | -                 |

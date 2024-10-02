@@ -12,7 +12,7 @@ A smart-serial single protocol is used, so that connections from different eleme
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based on** | **System Impact** |
+| Range              | Key Features                 | Based on | System Impact |
 |----------------------|------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version              | -            | -                 |
 | 2.0.0.x [SLC Main]   | Initial smart-serial version | -            | -                 |

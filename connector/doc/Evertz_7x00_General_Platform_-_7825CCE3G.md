@@ -2,7 +2,9 @@
 uid: Connector_help_Evertz_7x00_General_Platform_-_7825CCE3G
 ---
 
-The Evertz 7825CCE3( is a professional high-quality 3G/HD/SD-SDI DTV Closed Caption Encoder platform. It offers dual and simultaneous CC encoding path support for 3G/HD/SD-SDI video signals.
+# Evertz 7x00 General Platform - 7825CCE3G
+
+The Evertz 7825CCE3G is a professional high-quality 3G/HD/SD-SDI DTV Closed Caption Encoder platform. It offers dual and simultaneous CC encoding path support for 3G/HD/SD-SDI video signals.
 
 ## About
 

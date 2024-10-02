@@ -14,7 +14,7 @@ This SNMP connector for the ETL Systems 26128 chassis will create elements for a
 
 ### Version Info
 
-| **Range** | **Description**                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                          | No                  | Yes                     |
 | 1.0.1.x          | Based on 1.0.0.1 Added creation of DVEs (different layout of main page). | No                  | Yes                     |

@@ -12,7 +12,7 @@ It also handles embedded, AES and analog audio. It can do aspect ratio conversio
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                      | **Based on** | **System Impact** |
+| Range              | Key Features                                                        | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version, enables monitoring and setting of device parameters. | -            | -                 |
 
