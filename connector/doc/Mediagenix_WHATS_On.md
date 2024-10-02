@@ -25,6 +25,8 @@ The function of this connector is to receive and display data from a Mediagenix 
 |-----------|------------------------|
 | 1.0.0.x   | TBD                    |
 | 2.0.2.x   | 2.9.2.r1.588           |
+| 2.0.3.x   | 2.9.2.r1.588           |
+| 2.0.4.x   | 2.9.2.r1.588           |
 
 ### System Info
 
@@ -32,6 +34,8 @@ The function of this connector is to receive and display data from a Mediagenix 
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 2.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.3.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.4.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -108,7 +112,7 @@ This is the message format:
 
 Cleaning the Incoming and Outgoing Requests tables is possible from the Debug page. This will not remove the corresponding DOM instances if the **Manager DMA ID** parameter is set to **DOM**.
 
-## How to use (range 2.0.2.x)
+## How to use (range 2.0.4.x)
 
 During startup of the element, the connector will start listening to several hardcoded RabbitMQ queues using the connection settings defined in the parameters. Data coming in through these queues is parsed and stored in one of the multiple tables in the connector.
 
