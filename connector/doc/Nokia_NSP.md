@@ -94,6 +94,35 @@ For example, on the **Probable Cause Configuration** page, to **add** a new entr
 
 On this page, you can select which of the available requests is polled and when. You can also poll the requests on demand with the **Poll** button for each entry in the table.
 
+### In range **2.0.0.X**
+
+  The UX has been re-arranged to have the same look and feel as other EPM collectors, which is comprised of making the **General page** a landing page with an overview of entities in the connector and **all relevant settings** moved to the **Configuration section** of the connector.
+
+  #### Configuration
+
+  This section contains most of the settings in the connector that are crucial to the way the connector works, Here you will be able to configure the:
+
+  - **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
+
+    - **Entity Export** and **Entity Import**: These parameters allow you to enable/disable the exporting and importing feature.
+    - **Export Directory** and **Entity Import Directory**: It is necessary to specify the paths where the files will be exported and imported.
+    - **Entity Export Directory Type** and **Entity Import Directory Type**: Specify whether the export/import paths are **local or remote**. Just so you know, for the remote file handling to work, you must enter the credentials for the system in the System Credentials section and enter the path to the remote directory in the Export Directory or Import Directory parameter. The path must be shared/accessible, or this feature will not work.
+    - **Apply Button**: This button allows the user to manually export/import the files.
+
+- **System Credentials**: This section is to be used if the element is configured to a remote file location.
+
+  - **System Username**: The username of the user with access to the directory. If no domain is specified, the domain from the element's DMA location will be used.
+  - **System Password**: The password of the user to access the remote directory.
+ 
+- **HTTP Credentials**: This section contains the parameters that were previously on the general page.
+
+  - **User Name**: This allows the user to configure the user name to communicate with the endpoint.
+  - **Password**: This allows the user to configure the password to communicate with the endpoint.
+
+ - The **Polling Configuration Section** in the previous range is now a sub-page in the **Configuration Section**. All settings from the previous range still apply here.
+
+ - The **JMS Connection Section** in the previous range is now a sub-page in the **Configuration Section**. All settings from the previous range still apply here. Additionally, there is a new parameter **JMS Heartbeat Timer** that allows the user to configure the interval that checks the **Heartbeat from the JMS endpoint**.
+    
 ## Notes
 
 For the **JMS Connection**, some prerequisites must be met:
