@@ -46,7 +46,7 @@ HTTP CONNECTION:
 
 In order to perform requests, you first need to configure the **User Name** and **Password** parameters on the General page.
 
-## How to use
+## How to Use - Range 1.0.0.x
 
 ### General
 
@@ -94,35 +94,43 @@ For example, on the **Probable Cause Configuration** page, to **add** a new entr
 
 On this page, you can select which of the available requests is polled and when. You can also poll the requests on demand with the **Poll** button for each entry in the table.
 
-### In range **2.0.0.X**
+## How to Use - Range 2.0.0.x
 
-  The UX has been re-arranged to have the same look and feel as other EPM collectors, which is comprised of making the **General page** a landing page with an overview of entities in the connector and **all relevant settings** moved to the **Configuration section** of the connector.
+In range 2.0.0.x, the user interface has been redesigned to have the same look and feel as other EPM collectors. Its **General** page now functions as a landing page with an overview of entities in the connector. All relevant settings have been moved to the **Configuration** section of the connector.
 
-  #### Configuration
+In the **Configuration** section, you can configure all the essential settings for the functionality of the connector:
 
-  This section contains most of the settings in the connector that are crucial to the way the connector works, Here you will be able to configure the:
+- **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
 
-  - **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
+  - **Entity Export** and **Entity Import**: These parameters allow you to enable/disable the exporting and importing feature.
+  - **Export Directory** and **Entity Import Directory**: It is necessary to specify the paths where the files will be exported and imported.
+  - **Entity Export Directory Type** and **Entity Import Directory Type**: Specify whether the export/import paths are **local or remote**. For the remote file handling to work, you must enter the credentials for the system in the System Credentials section and enter the path to the remote directory in the Export Directory or Import Directory parameter. The path must be shared/accessible, or this feature will not work.
+  - **Apply Button**: This button allows you to manually export/import the files.
 
-    - **Entity Export** and **Entity Import**: These parameters allow you to enable/disable the exporting and importing feature.
-    - **Export Directory** and **Entity Import Directory**: It is necessary to specify the paths where the files will be exported and imported.
-    - **Entity Export Directory Type** and **Entity Import Directory Type**: Specify whether the export/import paths are **local or remote**. Just so you know, for the remote file handling to work, you must enter the credentials for the system in the System Credentials section and enter the path to the remote directory in the Export Directory or Import Directory parameter. The path must be shared/accessible, or this feature will not work.
-    - **Apply Button**: This button allows the user to manually export/import the files.
-
-- **System Credentials**: This section is to be used if the element is configured to a remote file location.
+- **System Credentials**: This section is used if the element is configured to a remote file location.
 
   - **System Username**: The username of the user with access to the directory. If no domain is specified, the domain from the element's DMA location will be used.
   - **System Password**: The password of the user to access the remote directory.
- 
-- **HTTP Credentials**: This section contains the parameters that were previously on the general page.
 
-  - **User Name**: This allows the user to configure the user name to communicate with the endpoint.
-  - **Password**: This allows the user to configure the password to communicate with the endpoint.
+- **HTTP Credentials**: This section contains the parameters that are on the General page in range 1.0.0.x.
 
- - The **Polling Configuration Section** in the previous range is now a sub-page in the **Configuration Section**. All settings from the previous range still apply here.
+  - **User Name**: Allows you to configure the username to communicate with the endpoint.
+  - **Password**: Allows you to configure the password to communicate with the endpoint.
 
- - The **JMS Connection Section** in the previous range is now a sub-page in the **Configuration Section**. All settings from the previous range still apply here. Additionally, there is a new parameter **JMS Heartbeat Timer** that allows the user to configure the interval that checks the **Heartbeat from the JMS endpoint**.
-    
+- The **Polling Configuration** section is available on a subpage in the Configuration section. Here, you can select which of the available requests is polled and when. You can also poll the requests on demand with the **Poll** button for each entry in the table.
+
+- The **JMS Connection** section is available on a subpage in the Configuration section. It includes the following settings:
+
+  - **JMS Host IP**, **JMS Port**, **JMS User Name**, **JMS Password**, and **JMS Client ID**.
+  - **JMS Directory Path**: The path where all the required .jar, .java, and .class files are available (see [Notes](#notes)).
+  - **JMS Java Executable Path**: The path of the java.exe.
+  - **JMS Keystore File Name**: The file name of the .keystore file that must be located in the JMS directory.
+  - **JMS Topic**: The topic to connect to. Possible topics: 5620-MAP-topic, 5620-SAM-topic-xml-filtered, 5620-AUX-SAM-topic,5650-CPAM-topic-xml, 5620-SAM-topic, 5620-GRAPH-topic,5620-SAM-topic-xml, 5620-SAM-topic-xml-general, 5620-SAM-topic-xml-file, 5620-SAM-topic-xml-fault, 5620-SAM-topic-xml-stats.
+  - **JMS Connection Type**: If *Persistent* is selected, the connection will be durable.
+  - **JMS Heartbeat Timer**: Allows you to configure the interval that checks the heartbeat from the JMS endpoint.
+
+  After you have configured these parameters, click the **Connect** button to establish a connection.
+
 ## Notes
 
 For the **JMS Connection**, some prerequisites must be met:
