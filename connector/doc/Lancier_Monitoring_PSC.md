@@ -12,7 +12,7 @@ The Lancier Monitoring CSI 3000-PSC is a modernized, fully automatic compressed 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version | -            | -                 |
+| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
 ### Product Info
 
@@ -22,17 +22,16 @@ The Lancier Monitoring CSI 3000-PSC is a modernized, fully automatic compressed 
 
 ## How to use
 
-Lancier Monitoring PSC is plug and play type of connector.
+Lancier Monitoring PSC is a plug-and-play type of connector.
 
 ### General Page
 
-General page is read only page which contain information about the system, configuration, compressor and tank information.
+The General page displays information about the system, configuration, compressor, and tank.
 
 ### Time Settings
 
-Time settings page allows the user to configure date and time settings of the device.
+On the Time Settings page, you can configure the date and time settings of the device.
 
 ### Operating Hours
 
-Operating Hours page allows the user to configure operating hours of the device.
-
+On the Operating Hours page, you can configure the operating hours of the device.
