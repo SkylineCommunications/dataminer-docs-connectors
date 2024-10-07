@@ -26,11 +26,11 @@ The **Lancier Monitoring PSC** is a modernized, fully automatic compressed air s
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
-## How to use
+## Configuration
 
-Lancier Monitoring PSC is a plug-and-play type of connector.
+### Connections
 
-### SNMP Connection - Main
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -43,6 +43,10 @@ SNMP Settings:
 - **IP port**: The IP port of the device.
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
+
+## How to Use
+
+Lancier Monitoring PSC is a plug-and-play type of connector.
 
 ### General Page
 
