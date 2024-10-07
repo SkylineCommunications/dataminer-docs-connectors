@@ -52,25 +52,27 @@ The web interface is only accessible when the client machine has network access 
 
 The **General** page contains an overview of system information and internet, mode, and Wi-Fi station status information.
 
-On the **Polling Configuration** page, you can enable or disable the polling of specific groups of parameters, so that only the relevant information is shown.
+On the **Polling Configuration** subpage, you can enable or disable the polling of specific groups of parameters, so that only the relevant information is shown.
 
-The **Interface** page features several management options.
+The **Interface** page features several management options and following subpages:
 
-**Link Manager Settings** allow for the management of network link connections to optimize performance.
+- **Link Manager Settings** allow for the management of network link connections to optimize performance.
 
-**Lan Port Settings** enable configuration of the LAN port, including IP address assignments and network masks.
+- **Lan Port Settings** enable configuration of the LAN port, including IP address assignments and network masks.
 
-**Ethernet Settings** provide adjustments for Ethernet connections.
+- **Ethernet Settings** provide adjustments for Ethernet connections.
 
-**Cellular Settings** manage configurations for mobile data connectivity.
+- **Cellular Settings** manage configurations for mobile data connectivity.
 
-**Wi-Fi Settings** contain Wi-Fi options, including SSID, security settings, and channel selection for optimal wireless performance.
+- **Wi-Fi Settings** contain Wi-Fi options, including SSID, security settings, and channel selection for optimal wireless performance.
 
-The **Network** page includes information and settings related to network management. It covers **Firewall Filtering**, which provides options for managing network traffic and security.
+The **Network** page includes information and settings related to network management and contains the following subpages: 
 
-The **Network Status** section displays the current state of the network.
+- **Network Status** section displays the current state of the network.
 
-**Firewall Custom Rules** allow you to define specific rules for network traffic.
+- **Firewall Filtering**, which provides options for managing network traffic and security.
+
+- **Firewall Custom Rules** allow definition of specific rules for network traffic.
 
 The **OpenVPN Page** includes settings related to VPN management. Tunnel settings allow for configuration of the VPN tunnel parameters. Password settings enable the management of authentication credentials.
 
