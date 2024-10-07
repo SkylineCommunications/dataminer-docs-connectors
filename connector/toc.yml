@@ -7112,6 +7112,8 @@
   items:
   - name: Robustel R2000
     topicUid: Connector_help_Robustel_R2000
+  - name: Robustel R2011
+    topicUid: Connector_help_Robustel_R2011
 - name: Rogers Communications
   items:
   - name: Rogers Communications Juniper CSV Importer
