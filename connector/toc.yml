@@ -3258,6 +3258,10 @@
     topicUid: Connector_help_Evertz_7707GPS-DR-F2
   - name: Evertz 7707GPS-DT-F2
     topicUid: Connector_help_Evertz_7707GPS-DT-F2
+  - name: Evertz 7707LR
+    topicUid: Connector_help_Evertz_7707LR
+  - name: Evertz 7707LTA
+    topicUid: Connector_help_Evertz_7707LTA
   - name: Evertz 7707OE
     topicUid: Connector_help_Evertz_7707OE
   - name: Evertz 7707VR8-HS
