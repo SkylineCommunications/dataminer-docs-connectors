@@ -5058,6 +5058,10 @@
   items:
   - name: L-3 Communications MPM-1000
     topicUid: Connector_help_L-3_Communications_MPM-1000
+- name: Lancier Monitoring
+  items:
+  - name: Lancier Monitoring PSC
+    topicUid: Connector_help_Lancier_Monitoring_PSC
 - name: Lantronix
   items:
   - name: Lantronix ETS32
