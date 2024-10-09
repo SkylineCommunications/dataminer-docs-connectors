@@ -47,4 +47,6 @@ SERIAL CONNECTION:
 
 This connector retrieves and presents all the parameters that are available in the Ember+ tree structure of the device.
 
-All the information that can be useful for monitoring can be found on the General data page.
+All the information that can be useful for monitoring can be found on the **General** data page in a treecontrol and in the **Overview** page in a table.
+
+On the **Configuration** subpage under Overview, the user can set to include or exclude the label in the Display Key of the **Parameters** table. Note that this is applicable for nodes that have a parameter with a 'lable' identifier.
