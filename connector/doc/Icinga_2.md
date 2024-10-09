@@ -10,9 +10,9 @@ The Icinga 2 platform can poll all the information from an Icinga monitoring sys
 
 ### Version Info
 
-| **Range**| **Key Features**| **Based on** | **System Impact**    |
-|-------|----------------|--------------|---------------|
-| 1.0.0.x [SLC Main]| Initial version. | - | - |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
@@ -39,19 +39,9 @@ This connector uses an HTTP connection and requires the following input during e
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination. **Default port: 443.**
 
-### Initialization
-
-No additional configuration is necessary to create a new element.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
-### Configuration
-
-This page contains the following parameters:
+On the **Configuration** page, you can configure the following parameters:
 
 - **Entity Import Directory**: Directory where the element will import the devices information from EPM.
 
