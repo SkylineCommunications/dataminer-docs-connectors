@@ -40,6 +40,7 @@ Information is polled from the device via SNMP. The connector is also able to pr
 | 1.0.1.x | R14 Rev. A04 |
 | 1.0.2.x | R14 Rev. A04 |
 | 1.0.3.x | R14 Rev. A04 |
+| 2.0.0.x | R14 Rev. A04 |
 
 ### Exported connectors
 
