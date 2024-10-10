@@ -12,11 +12,12 @@ A **serial** connection is used in order to successfully retrieve and configure 
 
 ### Version Info
 
-| Range              | Key Features      | Based on |                        System Impact                            |
-|--------------------|-------------------|----------|-----------------------------------------------------------------|
-| 1.0.0.x [Obsolete] | Initial version.  | -        | -                                                               |
-| 2.0.0.x            | Full refactoring. | -        | Full refactor.                                                  |
-| 2.0.1.x [SLC Main] | Full refactoring. | -        | Alarm templates and tend templates should me re-made.           |
+| Range                         | Key Features                             | Based on |                        System Impact                            |
+|-------------------------------|------------------------------------------|----------|-----------------------------------------------------------------|
+| 1.0.0.x [Obsolete]            | Initial version.                         | -        | -                                                               |
+| 2.0.0.x [Obsolete]            | Full refactoring.                        | -        | Elements should be recreated. Alarm and trend templates should be recreated. |
+| 2.0.1.x [SLC Main]            | Standalone measurement parameters are now  shown in table. | 2.0.0.2  | Alarm templates, trend templates and automation scripts should me re-made.|
+
 
 ### Product Info
 
