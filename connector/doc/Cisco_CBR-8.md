@@ -20,7 +20,9 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 | 1.0.2.x | Implemented changes on the Physical Upstream Channel Table and Upstream Bounding table. | No | No |
 | 1.0.3.x | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No | Yes |
 | 1.0.4.x | DCF feature added. | Yes | Yes |
-| 2.0.0.x [SLC Main] | Connector review. Added CCAP parameters. | No | Yes |
+| 2.0.0.x | Connector review. Added CCAP parameters. | No | Yes |
+| 2.0.1.x [SLC Main] | Split up MPEG table into 4 tables because of possibility of multiple programs per transport stream. | No | Yes |
+| 3.0.0.x | Customer specific branch. | No | Yes |
 
 ### Product Info
 
@@ -31,6 +33,8 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 | 1.0.3.x | 1.0 |
 | 1.0.4.x | 1.0 |
 | 2.0.0.x | 1.0 |
+| 2.0.1.x | 1.0 |
+| 3.0.0.x | 1.0 |
 
 ## Configuration
 
@@ -98,7 +102,7 @@ The **Signal Quality** button provides access to the Signal Quality table.
 
 This page provides access to the internal webpage of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
-## Usage (Range 2.0.0.x)
+## Usage (Range 2.0.0.x - 2.0.1.x)
 
 ### General
 
@@ -148,4 +152,4 @@ This page contains the **RF Port** table, which displays a counter for interface
 
 ### Video Streams
 
-This page contains the **MPEG** table, which stores basic information on all video streams.
+This page contains the **MPEG** tables, which store basic information on all video streams.
