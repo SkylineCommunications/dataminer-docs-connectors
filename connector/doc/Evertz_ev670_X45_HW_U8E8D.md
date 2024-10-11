@@ -62,7 +62,7 @@ The connector polls most of the tables using subtable functionalities to reduce 
 
 In range **1.0.0.x**, the following pages are available in the element:
 
-- **General**: Includes parameters that match the "System" page on the device such as the Build Time and CPU Temperature.
+- **General**: Includes parameters that match the "System" page on the device such as the Build Time and CPU Temperature. This also includes a parameter named **"Amount of Outputs to show"** which can be toggled to **show all the outputs that the device provides on all of the tables** or just limit it to the **first 8 outputs to show on all of the tables**. 
 - **Network Management**: Includes all of the network management tables such as the Control Port Configuration, Data Port Configuration, RS-FEC Control, Data Port Monitor, Magnum In-Band Controller, Time Management, NTP Server, and SNMP Trap Servers.
 - **Product Features**: Includes the support statuses of each of the product features and their licenses.
 - **Timing**: Includes various PTP and Genlock-related configuration parameters.
