@@ -22,9 +22,9 @@ This connector can be used to manage contracts and warranties, and to automate r
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x \[Main\] | Unknown                     |
+| 1.0.0.x          | Unknown                     |
 | 1.0.1.x          | Unknown                     |
-| 1.0.2.x          | Unknown                     |
+| 1.0.2.x \[Main\] | Unknown                     |
 
 ## Installation and configuration
 
