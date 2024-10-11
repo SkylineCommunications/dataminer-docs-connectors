@@ -21,7 +21,7 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 | 1.0.3.x | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No | Yes |
 | 1.0.4.x | DCF feature added. | Yes | Yes |
 | 2.0.0.x | Connector review. Added CCAP parameters. | No | Yes |
-| 2.0.1.x [SLC Main] | Split up MPEG Table into 4 Tables because of possibility of multiple programs per transport stream. | No | Yes |
+| 2.0.1.x [SLC Main] | Split up MPEG table into 4 tables because of possibility of multiple programs per transport stream. | No | Yes |
 | 3.0.0.x | Customer specific branch. | No | Yes |
 
 ### Product Info
@@ -152,4 +152,4 @@ This page contains the **RF Port** table, which displays a counter for interface
 
 ### Video Streams
 
-This page contains the **MPEG** tables, which stores basic information on all video streams.
+This page contains the **MPEG** tables, which store basic information on all video streams.
