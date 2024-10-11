@@ -37,11 +37,10 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
+- **Port number**: The IP port of the destination (default: *161*).
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
@@ -63,29 +62,32 @@ The connector polls most of the tables using subtable functionalities to reduce 
 
 In range **1.0.0.x**, the following pages are available in the element:
 
-- **General**: Includes general parameters such as Serial Number and MAC Address.
-- **System**: Includes the Data Port Control table as well as some controls such as Reboot, Trap Port Select, System Mode, and various monitoring controls.
-- **System** **Data** **Port**: Includes the System Data Port Monitor and QSFP Monitor tables.
-- **PTP Control**: Includes various PTP-related configuration parameters.
-- **System** **Time** **Management**: Includes various time and NTP configurables.
-- **UMD** **Control**: Includes the UMD Control and Dynamic Input tables.
-- **Input** **Monitor**: Includes various monitor tables for Input/Video/ANC/Audio.
-- **Video** **Input** **Control**: Includes the Input Control and Video Input Control tables. The **Input Control Table** is where you **set the custom description for all input tables**.
-- **Audio** **Input** **Control**: Includes the Audio Input Control and Audio Shuffle Control tables.
-- **ANC** **Input** **Control**: Includes the ANC Input Control table.
-- **Input** **Properties** **Control**: Includes the Input Properties control table.
-- **System** **Notify**: Includes the Data Port and System Notify tables, as well as CPU configurables.
-- **Video** **Notify**: Includes the Video Monitoring Control and Video Notify tables. As of 1.1.1.x, each row in the Video Notify table represents an input instead of an input fault. The **individual fault statuses** can be found in the **columns**.
-- **Audio Notify**: Includes the Audio Monitoring Control and Audio Channel/Group Notify tables. As of 1.1.1.x, each row in the Audio Notify table represents an input instead of an input fault. The original table is also split into the Channel and Group tables based on the fault types. The **individual fault statuses** can be found in the **columns**.
-- **System** **Monitor**: Includes the various system monitoring parameters.
-- **Output** **Control**: Includes the Output Control, Output Video IP Control, Output Audio, and Layout Control tables.
-- **Advanced** **Notify** **Control**: Includes the Picture Level, CC, TXT, Nielsen, EIA 708, ANC, LTC, Video, and Scte 104 control tables.
-- **Advanced** **Notify**: Includes the Advanced Notify table. As of 1.1.1.x, each row in this table represents an input instead of an input fault. The **individual fault statuses** can be found in the **columns**.
-- **Advanced Loudness**: Includes the Audio Loudness Control/Audio Loudness tables.
-- **Advanced** **Loudness** **Notify**: Includes the Audio Loudness Notify table.
-- **NMOS** **Control**: Contains various NMOS configurables.
-- **Output** **Encoder**: New for 1.1.1.x. Includes the Output Encoder control table.
-- **Input** **Control**: New for 1.1.1.x. Includes the Input Video, Input Audio, and Input ANC Control tables, as well as the Input Video/Audio/ANC Notify tables.
+- **General**: Includes parameters that match the "System" page on the device such as the Build Time and CPU Temperature.
+- **Network Management**: Includes all of the network management tables such as the Control Port Configuration, Data Port Configuration, RS-FEC Control, Data Port Monitor, Magnum In-Band Controller, Time Management, NTP Server, and SNMP Trap Servers.
+- **Product Features**: Includes the support statuses of each of the product features and their licenses.
+- **Timing**: Includes various PTP and Genlock-related configuration parameters.
+- **NMOS Control**: Includes parameters for adjusting the NMOS control such as the Unicast Domain and Nameserver.
+  
+- **SDI Input**: Includes the SDI Input Table.
+- **Compressed IP Input**: Includes the Compressed Stream MPPM Control and Compressed IP Input tables.
+
+- **Video** **Control**: Includes the Video SDI Output table.
+- **Audio** **Control**: Includes the Audio Shuffling, Audio Shuffling Control, and the SDI Output tables.
+- **ANC** **Control**: Includes the VPID Control table.
+- **Compressed IP Output**: Includes the Compressed IP Output Configuration table.
+- **Video (S2110-20,22) IP Output**: Includes the RTP Payload Type parameter and the Video IP Output Configuration Control table.
+- **Audio (S2110-30) IP Output**: Includes the Audio RTP Payload Type and AES67 IP Output Packet Time parameters as well as the Audio IP Output Channel Configuration and Audio IP Output tables.
+- **ANC (S2110-40) IP Output**: Includes the ANC RTP Payload Type parameter as well as the ANC IP Output table.
+
+- **Encoder** **Control**: Includes the Encoder Control and Encoder Audio Output Control tables.
+- **Decoder** **Control**: Includes the Decoder Input Monitor and Decoder Input Control tables.
+
+- **Compressed Video IP Input Monitor**: Includes the Compressed Video IP Packet Monitor, COmpressed Video IP Packet Clear, and Input Stream Internal Decoder Core tables.
+- **Internal Decoder Core**: Includes the Internal Decoder Core table.
+
+- **System** **Notify**: Includes the System Faults table.
+- **Input** **Notify**: Includes the SDI Input Monitoring and Faults table. The Monitoring table can be used for alarming while the Faults table can be use to enable or disable traps.
+- **Decoder** **Notify**: Includes the Deocder Monitoring and Faults table as well as the Decoder MPPM Monitoring and Faults table. The Monitoring table can be used for alarming while the Faults table can be use to enable or disable traps.
 - **Traps**: Includes the Traps Log table and trap control parameters.
 
 
