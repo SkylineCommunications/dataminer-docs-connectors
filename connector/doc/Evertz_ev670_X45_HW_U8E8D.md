@@ -4,15 +4,15 @@ uid: Connector_help_Evertz_ev670_X45_HW_U8E8D
 
 # Evertz ev670-X45-HW U8E8D
 
-TThis connector can be used to monitor and configure the Evertz ev670-X45-HW U8E8D. This is a FPGA-accelerated compute blade that supports both 12G/3G/HD-SDI and IP interfaces.
+TThis connector can be used to monitor and configure the Evertz ev670-X45-HW U8E8D. This is an FPGA-accelerated compute blade that supports both 12G/3G/HD-SDI and IP interfaces.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact**                                                                                              |
-|----------------------|--------------------------------|--------------|----------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial implementation.        | -            | -                                                                                                              |
+| Range   | Key Features            | Based on | System Impact |
+|---------|-------------------------|----------|---------------|
+| 1.0.0.x | Initial implementation. | -        | -             |
 
 ### Product Info
 
@@ -44,14 +44,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -62,13 +54,13 @@ The connector polls most of the tables using subtable functionalities to reduce 
 
 In range **1.0.0.x**, the following pages are available in the element:
 
-- **General**: Includes parameters that match the "System" page on the device such as the Build Time and CPU Temperature. This also includes a parameter named **"Amount of Outputs to show"** which can be toggled to **show all the outputs that the device provides on all of the tables** or just limit it to the **first 8 outputs to show on all of the tables**. 
-- **Network Management**: Includes all of the network management tables such as the Control Port Configuration, Data Port Configuration, RS-FEC Control, Data Port Monitor, Magnum In-Band Controller, Time Management, NTP Server, and SNMP Trap Servers.
+- **General**: Includes parameters that match the "System" page on the device such as the Build Time and CPU Temperature. This also includes a parameter named **Amount of Outputs to show**, which can be toggled to **show all the outputs** that the device provides in all of the tables or to just show the **first 8 outputs in all of the tables**.
+- **Network Management**: Includes all of the network management tables such as Control Port Configuration, Data Port Configuration, RS-FEC Control, Data Port Monitor, Magnum In-Band Controller, Time Management, NTP Server, and SNMP Trap Servers.
 - **Product Features**: Includes the support statuses of each of the product features and their licenses.
 - **Timing**: Includes various PTP and Genlock-related configuration parameters.
 - **NMOS Control**: Includes parameters for adjusting the NMOS control such as the Unicast Domain and Nameserver.
-  
-- **SDI Input**: Includes the SDI Input Table.
+
+- **SDI Input**: Includes the SDI Input table.
 - **Compressed IP Input**: Includes the Compressed Stream MPPM Control and Compressed IP Input tables.
 
 - **Video** **Control**: Includes the Video SDI Output table.
@@ -82,13 +74,10 @@ In range **1.0.0.x**, the following pages are available in the element:
 - **Encoder** **Control**: Includes the Encoder Control and Encoder Audio Output Control tables.
 - **Decoder** **Control**: Includes the Decoder Input Monitor and Decoder Input Control tables.
 
-- **Compressed Video IP Input Monitor**: Includes the Compressed Video IP Packet Monitor, COmpressed Video IP Packet Clear, and Input Stream Internal Decoder Core tables.
+- **Compressed Video IP Input Monitor**: Includes the Compressed Video IP Packet Monitor, Compressed Video IP Packet Clear, and Input Stream Internal Decoder Core tables.
 - **Internal Decoder Core**: Includes the Internal Decoder Core table.
 
 - **System** **Notify**: Includes the System Faults table.
-- **Input** **Notify**: Includes the SDI Input Monitoring and Faults table. The Monitoring table can be used for alarming while the Faults table can be use to enable or disable traps.
-- **Decoder** **Notify**: Includes the Deocder Monitoring and Faults table as well as the Decoder MPPM Monitoring and Faults table. The Monitoring table can be used for alarming while the Faults table can be use to enable or disable traps.
+- **Input** **Notify**: Includes the SDI Input Monitoring and Faults table. The Monitoring table can be used for alarm monitoring while the Faults table can be used to enable or disable traps.
+- **Decoder** **Notify**: Includes the Decoder Monitoring and Faults table as well as the Decoder MPPM Monitoring and Faults table. The Monitoring table can be used for alarm monitoring while the Faults table can be used to enable or disable traps.
 - **Traps**: Includes the Traps Log table and trap control parameters.
-
-
-
