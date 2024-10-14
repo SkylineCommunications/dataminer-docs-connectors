@@ -3498,6 +3498,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
+  - name: Evertz ev670-X45-HW U8E8D
+    topicUid: Connector_help_Evertz_ev670_X45_HW_U8E8D
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
