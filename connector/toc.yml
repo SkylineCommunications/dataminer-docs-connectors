@@ -4374,6 +4374,10 @@
     topicUid: Connector_help_Harris_VEA6800+
   - name: Harris X50
     topicUid: Connector_help_Harris_X50
+- name: Hewtech
+  items:
+  - name: Hewtech Hirakawa HS-600MA
+    topicUid: Connector_help_Hewtech_Hirakawa_HS-600MA
 - name: Hiltron
   items:
   - name: Hiltron HACU
