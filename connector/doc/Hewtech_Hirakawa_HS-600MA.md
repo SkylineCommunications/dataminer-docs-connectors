@@ -50,16 +50,16 @@ The web interface is only accessible when the client machine has network access 
 ## How to use
 
 - **General** page: Contains system information data, providing an overview of the current status and configuration of the device.
-- **SSH Settings** page: Contains **User Name** and **Password** text boxes where the credentials information are filled for the SSH polling.
-- **IP** page and subpages: Contains information about IP Interfaces, IP Routes, IP Routing Info and IP Neighbor Info.
+- **SSH Settings** page: Contains **User Name** and **Password** boxes where the credentials should be filled in for the SSH polling.
+- **IP** page and subpages: Contains information about IP Interfaces, IP Routes, IP Routing Info, and IP Neighbor Info.
 - **DNS** page: Contains settings related to DNS servers.
 - **NTP** page: Contains settings related to NTP servers.
 - **Log** page: Contains system log information with a warning or error level.
-- **Interfaces Counters** page and subpages: Contains Size, Queuing and Error RX and TX counters.
+- **Interfaces Counters** page and subpages: Contains Size, Queuing, and Error RX and TX counters.
 - **Ports** page: Contains switch port information.
 - **IGMP Snooping** page: Contains IGMP snooping information and settings for multicast traffic optimization.
-- **MLD Snooping** page: Contains MLD snooping information and settings similarly to IGMP Snooping but for IPv6.
-- **LLDP** page and subpages: Contains settings and information for LLDP Interface, LLDP-MED, LLDP Neighbors and LLDP Port Statistics.
+- **MLD Snooping** page: Contains MLD snooping information and settings similar to IGMP Snooping but for IPv6.
+- **LLDP** page and subpages: Contains settings and information for LLDP Interface, LLDP-MED, LLDP Neighbors, and LLDP Port Statistics.
 - **PoE** page: Contains PoE configuration.
 - **VLAN** page: Contains Port VLAN configuration.
 - **Private VLAN** page: Contains Private VLAN configuration.
