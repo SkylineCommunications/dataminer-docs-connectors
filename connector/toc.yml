@@ -8940,8 +8940,11 @@
     topicUid: Connector_help_Teleste_DVX002
   - name: Teleste EMS
     topicUid: Connector_help_Teleste_EMS
-  - name: Teleste HDC100 TSEMP
-    topicUid: Connector_help_Teleste_HDC100_TSEMP
+  - name: Teleste HDC100 TSEMP Main
+    topicUid: Connector_help_Teleste_HDC100_TSEMP_Parent_Page
+    items:
+     - name: Teleste HDC100 TSEMP 
+       topicUid: Connector_help_Teleste_HDC100_TSEMP
   - name: Teleste HDC100 TSEMP - HDO101
     topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO101
   - name: Teleste HDC100 TSEMP - HDO202
