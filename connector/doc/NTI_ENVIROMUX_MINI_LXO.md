@@ -102,8 +102,17 @@ This page displays information about the water sensor and allows you to configur
 
 ### Configuration
 
-On this page, you can enable or disable the polling of each sensor.
+#### Temperature (1, 2) and Humidity (1, 2)
+On this page, you can switch the polling mode of each sensor:
+- **Never**: It will never try to poll the sensor data.
+- **Always**: It will always try to poll the sensor data.
+- **Auto**: It will try to poll data only if there is a sensor connected.
 
-Disabling the polling of a sensor will remove the sensor from the **Summary table** and will hide the corresponding page. Enabling the polling of a sensor will add the sensor to the **Summary table** and will show the page again.
+#### Dry Contact (1, 2, 3, 4) and Water Sensor
+You can switch the polling status of each sensor:
+- **Disabled**: It will not poll the sensor data.
+- **Enabled**: It will poll the sensor data.
 
-By default, Temperature 2 Sensor and Humidity 2 Sensor are hidden.
+A sensor with Polling Status value "Disabled" will remove the sensor from the **Summary table** and will hide the corresponding page. Polling Status value "Enabled" of a sensor will add the sensor to the **Summary table** and will show the page again.
+
+By default, Temperature (1, 2) and Humidity (1, 2) are set to Polling Mode "Auto", Dry Contact (1, 2, 3, 4) and Water Sensor are set to Polling Status "Enabled".
