@@ -102,17 +102,15 @@ This page displays information about the water sensor and allows you to configur
 
 ### Configuration
 
-#### Temperature (1, 2) and Humidity (1, 2)
-On this page, you can switch the polling mode of each sensor:
-- **Never**: It will never try to poll the sensor data.
-- **Always**: It will always try to poll the sensor data.
-- **Auto**: It will try to poll data only if there is a sensor connected.
+For the **Temperature (1, 2) and Humidity (1, 2)** sensors, you can switch the **Polling Mode** of each sensor:
 
-#### Dry Contact (1, 2, 3, 4) and Water Sensor
-You can switch the polling status of each sensor:
-- **Disabled**: It will not poll the sensor data.
-- **Enabled**: It will poll the sensor data.
+- *Never*: The connector will never try to poll the sensor data.
+- *Always*: The connector will always try to poll the sensor data.
+- *Auto*: The connector will try to poll data only if a sensor is connected.
 
-A sensor with Polling Status value "Disabled" will remove the sensor from the **Summary table** and will hide the corresponding page. Polling Status value "Enabled" of a sensor will add the sensor to the **Summary table** and will show the page again.
+For the **Dry Contact (1, 2, 3, 4)** sensors and **Water Sensor**, you can switch the **Polling Status** of each sensor:
 
-By default, Temperature (1, 2) and Humidity (1, 2) are set to Polling Mode "Auto", Dry Contact (1, 2, 3, 4) and Water Sensor are set to Polling Status "Enabled".
+- *Disabled*: No sensor data will be polled. If the Polling Status for a sensor is set to *Disabled*, the sensor will be removed from the **Summary table**, and the corresponding page will be hidden.
+- *Enabled*: Sensor data will be polled. Setting the Polling Status for a sensor to *Enabled* will add the sensor to the **Summary table** and will make the corresponding page visible in DataMiner.
+
+By default, Temperature (1, 2) and Humidity (1, 2) are set to Polling Mode *Auto*, and Dry Contact (1, 2, 3, 4) and Water Sensor are set to Polling Status *Enabled*.
