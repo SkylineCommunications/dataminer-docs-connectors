@@ -2542,6 +2542,8 @@
   items:
   - name: DEV 1985
     topicUid: Connector_help_DEV_1985
+  - name: DEV 1986
+    topicUid: Connector_help_DEV_1986
   - name: DEV 4111
     topicUid: Connector_help_DEV_4111
   - name: DEV 7000
