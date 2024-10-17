@@ -90,6 +90,13 @@ This page contains **communication configuration** parameters related to the web
 - Disabling or enabling polling of the client info or resource info tables from ScheduAll.
 - Time format used by ScheduAll.
 
+> Note: Range 2.0.3.X has some additional parameters on this page:
+> - **Dynamic URL** - Base URL path to append to polling IP/host for each request
+> - **Authentication Provider Username** - Used for setting the username if another authentication layer is used.
+> - **Authentication Provider Password** - User for setting the password if another authentication layer is used.
+> 
+> Only _Basic Auth_ authentication type is supported. Username and password is joint with a colon, encoded with Base64 encoding and set in the _Authorization_ header.
+
 #### Timespan configuration
 
 With a start and stop parameter, the size of a sliding window in which data (bookings + resources) have to be retrieved can be defined (in minutes). For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.
