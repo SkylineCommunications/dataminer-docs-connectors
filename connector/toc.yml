@@ -8940,53 +8940,53 @@
     topicUid: Connector_help_Teleste_DVX002
   - name: Teleste EMS
     topicUid: Connector_help_Teleste_EMS
-  - name: Teleste HDC100 TSEMP Main
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_Parent_Page
+  - name: Teleste HDC100 TSEMP
+    topicUid: Connector_help_Teleste_HDC100_TSEMP
     items:
-     - name: Teleste HDC100 TSEMP 
-       topicUid: Connector_help_Teleste_HDC100_TSEMP
-  - name: Teleste HDC100 TSEMP - HDO101
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO101
-  - name: Teleste HDC100 TSEMP - HDO202
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO202
-  - name: Teleste HDC100 TSEMP - HDO203
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO203
-  - name: Teleste HDC100 TSEMP - HDO204
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO204
-  - name: Teleste HDC100 TSEMP - HDO212
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO212
-  - name: Teleste HDC100 TSEMP - HDO302
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO302
-  - name: Teleste HDC100 TSEMP - HDO371
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO371
-  - name: Teleste HDC100 TSEMP - HDO421
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO421
-  - name: Teleste HDC100 TSEMP - HDO610
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO610
-  - name: Teleste HDC100 TSEMP - HDO611
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO611
-  - name: Teleste HDC100 TSEMP - HDO613
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO613
-  - name: Teleste HDC100 TSEMP - HDO773
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO773
-  - name: Teleste HDC100 TSEMP - HDO802
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO802
-  - name: Teleste HDC100 TSEMP - HDO902
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO902
-  - name: Teleste HDC100 TSEMP - HDO904
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO904
-  - name: Teleste HDC100 TSEMP - HDO905
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO905
-  - name: Teleste HDC100 TSEMP - HDO906
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO906
-  - name: Teleste HDC100 TSEMP - HDO907
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO907
-  - name: Teleste HDC100 TSEMP - HDO908
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO908
-  - name: Teleste HDC100 TSEMP - HDP230
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDP230
-  - name: Teleste HDC100 TSEMP - HDP301
-    topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDP301
+     - name: Teleste HDC100 TSEMP Main
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_Technical
+     - name: Teleste HDC100 TSEMP - HDO101
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO101
+     - name: Teleste HDC100 TSEMP - HDO202
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO202
+     - name: Teleste HDC100 TSEMP - HDO203
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO203
+     - name: Teleste HDC100 TSEMP - HDO204
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO204
+     - name: Teleste HDC100 TSEMP - HDO212
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO212
+     - name: Teleste HDC100 TSEMP - HDO302
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO302
+     - name: Teleste HDC100 TSEMP - HDO371
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO371
+     - name: Teleste HDC100 TSEMP - HDO421
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO421
+     - name: Teleste HDC100 TSEMP - HDO610
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO610
+     - name: Teleste HDC100 TSEMP - HDO611
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO611
+     - name: Teleste HDC100 TSEMP - HDO613
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO613
+     - name: Teleste HDC100 TSEMP - HDO773
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO773
+     - name: Teleste HDC100 TSEMP - HDO802
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO802
+     - name: Teleste HDC100 TSEMP - HDO902
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO902
+     - name: Teleste HDC100 TSEMP - HDO904
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO904
+     - name: Teleste HDC100 TSEMP - HDO905
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO905
+     - name: Teleste HDC100 TSEMP - HDO906
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO906
+     - name: Teleste HDC100 TSEMP - HDO907
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO907
+     - name: Teleste HDC100 TSEMP - HDO908
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO908
+     - name: Teleste HDC100 TSEMP - HDP230
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDP230
+     - name: Teleste HDC100 TSEMP - HDP301
+       topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDP301
   - name: Teleste HDM100
     topicUid: Connector_help_Teleste_HDM100
   - name: Teleste HDM100 - AC3000
