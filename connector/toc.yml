@@ -7706,6 +7706,8 @@
   items:
   - name: Shelly Bulb RGBW
     topicUid: Connector_help_Shelly_Bulb_RGBW
+  - name: Shelly Pro 1PM
+    topicUid: Connector_help_Shelly_Pro_1PM
 - name: SIAE
   items:
   - name: SIAE Microwave Trunklink
