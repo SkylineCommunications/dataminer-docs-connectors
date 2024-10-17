@@ -12,21 +12,24 @@ This SNMP connector contains different tables that allow the user to monitor and
 
 ### Version Info
 
-| Range              | Key Features                                                  | Based on | System Impact |
-|--------------------|---------------------------------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | - Monitoring. <br>- Configuration of both inputs and outputs. | -        | -             |
+| Range              | Key Features                                                                                     | Based on | System Impact                                          |
+|--------------------|--------------------------------------------------------------------------------------------------|----------|--------------------------------------------------------|
+| 1.0.0.x            | - Monitoring. <br>- Configuration of both inputs and outputs.                                    | -        | -                                                      |
+| 1.0.1.x [SLC Main] | - Renamed "Primary SRC" to "Primary Source" (same change applied to "Backup SRC"). <br>- Updated "Ts Bitrate" from bps to Mbps. <br>- Modified "Ts Sync" from "Lock Locked" to "Locked" and from "Lock Unlock" to "Unlock" <br>- Made "Primary Source" a dropdown, dependent on the "Label" column in the "Input Source" table. <br>- Updated display keys in the "Input Source" and "MPEG IP Receive" tables.                | 1.0.0.4  | -Display key updates and parameter name/value changes. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
