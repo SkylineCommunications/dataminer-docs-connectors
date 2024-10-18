@@ -47,11 +47,11 @@ The **DataMiner Protocol for Teleste HDC100 TSEMP** is the ultimate solution for
 
 |   |   |
 |---|---|
-| ![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.PNG){width=300px}  | **Overview Page (Range 5.0.0.x):** Provides a summary of the Teleste HDC100 device status, listing all connected modules and showing real-time device health and operational status. |
-| ![General Page](~/connector/images/TelesteHDC100GeneralPage.PNG){width=300px}  | **General Page (Range 5.0.0.x):** Displays overall device information such as device name, configuration, software version, and uptime. This page also provides quick access to reset and monitoring actions. |
-| ![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.PNG){width=300px}  | **Interfaces Page (Range 5.0.0.x):** Shows detailed network settings including IP address, network mask, default gateway, and HDO Bus parameters, enabling network configuration management. |
-| ![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.PNG){width=300px}  | **Monitoring Page - Analog (Range 5.0.0.x):** Displays settings for configuring analog alarm limits, including HiHi, Hi, Lo, LoLo, and Deadband thresholds, for effective device monitoring. |
-| ![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.PNG){width=300px}  | **Monitoring Page - Discrete (Range 5.0.0.x):** Provides control over discrete (binary) alarms, allowing users to configure alarm settings for specific modules. |
+| <img src="~/connector/images/TelesteHDC100ModuleOverview.PNG" alt="Module Overview" width="300px" />  | **Overview Page (Range 5.0.0.x):** Provides a summary of the Teleste HDC100 device status, listing all connected modules and showing real-time device health and operational status. |
+| <img src="~/connector/images/TelesteHDC100GeneralPage.PNG" alt="General Page" width="300px" />  | **General Page (Range 5.0.0.x):** Displays overall device information such as device name, configuration, software version, and uptime. This page also provides quick access to reset and monitoring actions. |
+| <img src="~/connector/images/TelesteHDC100InterfacesPage.PNG" alt="Interfaces Page" width="300px" />  | **Interfaces Page (Range 5.0.0.x):** Shows detailed network settings including IP address, network mask, default gateway, and HDO Bus parameters, enabling network configuration management. |
+| <img src="~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.PNG" alt="Analog Alarm Limits" width="300px" />  | **Monitoring Page - Analog (Range 5.0.0.x):** Displays settings for configuring analog alarm limits, including HiHi, Hi, Lo, LoLo, and Deadband thresholds, for effective device monitoring. |
+| <img src="~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.PNG" alt="Discrete Alarm Limits" width="300px" />  | **Monitoring Page - Discrete (Range 5.0.0.x):** Provides control over discrete (binary) alarms, allowing users to configure alarm settings for specific modules. |
 
 ---
 ## References
