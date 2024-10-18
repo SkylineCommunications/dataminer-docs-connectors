@@ -4496,8 +4496,8 @@
     topicUid: Connector_help_Icareus_EP100
 - name: Icinga
   items:
-  - name: Icinga 2
-    topicUid: Connector_help_Icinga_2
+  - name: Icinga Icinga 2
+    topicUid: Connector_help_Icinga_Icinga_2
 - name: IDC
   items:
   - name: IDC P561 Audio Encoder
