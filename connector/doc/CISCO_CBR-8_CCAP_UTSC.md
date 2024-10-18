@@ -45,5 +45,20 @@ The connector can also read CSV files from a remote server. To configure this:
 
 1. Go to the **Configuration** page.
 1. Enter a remote directory path in the **Entity Import Directory** parameter.
-1. Fill in the **System Username** and **System Password** with an account that has access to the remote directory.
+1. Fill in the **System Username** and **System Password** with an account with access to the remote directory.
 1. Toggle the **Entity Import Directory Type** to *Remote*.
+
+#### UTSC
+
+This section allows users to **request Spectrum Analyzer trace data** from the CCAP via SNMP based on the configurations for **a selected upstream port**. There are some specific steps to follow when requesting Spectrum Analyzer trace data, **here are the steps upon landing on the UTSC main page**:
+
+1. The user must select an upstream port from the dropdown menu in the Upstream Port parameter. This step is crucial, without a selected port the user will not be able to configure the CCAP to retrieve Spectrum Analyzer data.
+2. Based on the **selected upstream port**, the **Status parameter** below will indicate **if the upstream port was already configured**.
+   - **If the status is N/A**, the port is **not configured**. The user must click the **Update Config button**, this will **configure the port with the default configuration and return a status of Not Ready**.
+   - If Status is a valid value, this step can be skipped
+3. The user can fill out the **desired configuration parameters**, once the desired settings are filled the user must click the **Update Config** button to send the settings to the device.
+4. Once the desired configurations have been applied to the **selected upstream port**, the user can **click the Start Capture or Stop Capture button**, based on the user's desired action.
+
+#### FTP
+
+This section allows users to configure the **IP address and Destination Path** for the **FTP server**.
