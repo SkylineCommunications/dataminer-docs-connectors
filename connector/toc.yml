@@ -2542,6 +2542,8 @@
   items:
   - name: DEV 1985
     topicUid: Connector_help_DEV_1985
+  - name: DEV 1986
+    topicUid: Connector_help_DEV_1986
   - name: DEV 4111
     topicUid: Connector_help_DEV_4111
   - name: DEV 7000
@@ -3498,6 +3500,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
+  - name: Evertz ev670-X45-HW U8E8D
+    topicUid: Connector_help_Evertz_ev670_X45_HW_U8E8D
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
@@ -4374,6 +4378,10 @@
     topicUid: Connector_help_Harris_VEA6800+
   - name: Harris X50
     topicUid: Connector_help_Harris_X50
+- name: Hewtech
+  items:
+  - name: Hewtech Hirakawa HS-600MA
+    topicUid: Connector_help_Hewtech_Hirakawa_HS-600MA
 - name: Hiltron
   items:
   - name: Hiltron HACU
@@ -7898,6 +7906,8 @@
     topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM
   - name: Skyline EPM Platform PLM
     topicUid: Connector_help_Skyline_EPM_Platform_PLM
+  - name: Skyline EPM Platform VSAT GEO
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
   - name: Skyline Example Serial Client Advanced
     topicUid: Connector_help_Skyline_Example_Serial_Client_Advanced
   - name: Skyline Example Serial Client Basic
