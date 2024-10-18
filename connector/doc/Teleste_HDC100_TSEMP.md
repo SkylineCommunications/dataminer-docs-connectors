@@ -47,11 +47,11 @@ The **DataMiner Protocol for Teleste HDC100 TSEMP** is the ultimate solution for
 
 |   |   |
 |---|---|
-| ![Overview Page](~/connector/images/hdcOverviewPage.PNG){width=300px}  | **Overview Page (Range 5.0.0.x):** Provides a summary of the Teleste HDC100 device status, listing all connected modules and showing real-time device health and operational status. |
-| ![General Page](~/connector/images/hdcGeneralPage.PNG){width=300px}  | **General Page (Range 5.0.0.x):** Displays overall device information such as device name, configuration, software version, and uptime. This page also provides quick access to reset and monitoring actions. |
-| ![Interfaces Page](~/connector/images/hdcInterfacesPage.PNG){width=300px}  | **Interfaces Page (Range 5.0.0.x):** Shows detailed network settings including IP address, network mask, default gateway, and HDO Bus parameters, enabling network configuration management. |
-| ![Monitoring Page](~/connector/images/hdcMonitoringAnalogPage.PNG){width=300px}  | **Monitoring Page - Analog (Range 5.0.0.x):** Displays settings for configuring analog alarm limits, including HiHi, Hi, Lo, LoLo, and Deadband thresholds, for effective device monitoring. |
-| ![Monitoring Page](~/connector/images/hdcMonitoringDiscrete.PNG){width=300px}  | **Monitoring Page - Discrete (Range 5.0.0.x):** Provides control over discrete (binary) alarms, allowing users to configure alarm settings for specific modules. |
+| ![hdcOverviewPage.PNG](~/connector/images/hdcOverviewPage.PNG){width=300px}  | **Overview Page (Range 5.0.0.x):** Provides a summary of the Teleste HDC100 device status, listing all connected modules and showing real-time device health and operational status. |
+| ![hdcGeneralPage.PNG](~/connector/images/hdcGeneralPage.PNG){width=300px}  | **General Page (Range 5.0.0.x):** Displays overall device information such as device name, configuration, software version, and uptime. This page also provides quick access to reset and monitoring actions. |
+| ![hdcInterfacesPage.PNG](~/connector/images/hdcInterfacesPage.PNG){width=300px}  | **Interfaces Page (Range 5.0.0.x):** Shows detailed network settings including IP address, network mask, default gateway, and HDO Bus parameters, enabling network configuration management. |
+| ![hdcMonitoringAnalogPage.PNG](~/connector/images/hdcMonitoringAnalogPage.PNG){width=300px}  | **Monitoring Page - Analog (Range 5.0.0.x):** Displays settings for configuring analog alarm limits, including HiHi, Hi, Lo, LoLo, and Deadband thresholds, for effective device monitoring. |
+| ![hdcMonitoringDiscrete.PNG](~/connector/images/hdcMonitoringDiscrete.PNG){width=300px}  | **Monitoring Page - Discrete (Range 5.0.0.x):** Provides control over discrete (binary) alarms, allowing users to configure alarm settings for specific modules. |
 
 ---
 ## References
