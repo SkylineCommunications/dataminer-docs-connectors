@@ -67,3 +67,19 @@ The Infoblox NIOS Platform connector uses both SNMP and HTTP connections to gath
 The HTTP connection provides access to important KPIs related to networks, members, and nodes, such as high-availability status and utilization metrics.
 
 The connector also allows users to verify the license validity for the platform.
+
+### Single Range Switching
+
+In the **Network Ranges** table, you can switch a specific range to a different member. This is done through the **Member Name** column, which shows the currently active member for each range. Clicking on a member's name will open a dropdown listing all available members. Simply select a new member from the list to complete the switch.
+
+### Bulk Range Switching
+
+You can switch multiple ranges in bulk via the **Switch** subpage within the **Network Ranges** page.
+
+On this subpage, select an **Active Member** and a **Switch Member** from their respective dropdown lists, which display all available members.
+
+Once you click the **Switch** button, all ranges currently assigned to the selected **Active Member** will be reassigned to the specified **Switch Member**.
+
+### Default Switching
+
+You can reset all ranges to their default member, as listed in the **IBX DHCP Member** column of the **Network Ranges** table. To do this, navigate to the **Switch** subpage within the **Network Ranges** page and click the Switch Default button.
