@@ -55,7 +55,7 @@ The **DataMiner Protocol for Teleste HDC100 TSEMP** is the ultimate solution for
 
 ---
 ## References
-1. [Driver Help Page](./Connector_help_Teleste_HDC100_TSEMP_Technical.md)  
+1. [Driver Help Page](./Teleste_HDC100_TSEMP_Technical.md)  
    Refer to the Driver Help Page for in-depth help on configuring and using the DataMiner protocol for Teleste HDC100.
 
 The DataMiner Connector for Teleste HDC100 TSEMP supports a range of modules to meet your specific network needs. 
