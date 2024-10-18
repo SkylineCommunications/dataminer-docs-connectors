@@ -12,30 +12,6 @@ A **serial** connection is used to retrieve and configure the information of the
 
 The connector also provides different possibilities for **alarm monitoring** and **trending**.
 
-### Version Info
-
-| Range              | Description                                | DCF Integration | Cassandra Compliant |
-|--------------------|--------------------------------------------|-----------------|---------------------|
-| 1.0.0.x            | Initial version                            | No              | No                  |
-| 2.0.0.x            | DVEs are created for the supported modules | No              | No                  |
-| 3.0.0.x            | DVE protocol name changed                  | No              | No                  |
-| 3.1.0.x            | Updated to support new ESW                 | No              | No                  |
-| 3.1.1.x            | Removed normalization                      | No              | No                  |
-| 4.0.0.x [SLC Main] | Branched version                           | No              | Yes                 |
-| 5.0.0.x            | Rework of 3.1.0.x                          | No              | Yes                 |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 2.0.0.x          | Unknown                     |
-| 3.0.0.x          | Unknown                     |
-| 3.1.0.x          | Unknown                     |
-| 3.1.1.x          | 1.\*                        |
-| 4.0.0.x          | C1.2, C1.5                  |
-| 5.0.0.x          | Unknown                     |
-
 ### Exported connectors
 
 | Exported Connector                      | Description                                                                                                               |
