@@ -221,7 +221,7 @@ You can configure automatic removal of missing nodes, creation of elements with 
 
 The page has two subpages:
 
-- **Configuration**: This page allows you to select a specific .csv file to use for the configuration of the elements. The config files must be located in the following directory: `C:\Skyline DataMiner\Documents\Teleste HDC100\`.
+- **Configuration**: This page allows you to select a specific .csv file to use for the configuration of the elements. The config files must be located in the following directory: `C:\Skyline DataMiner\Documents\Teleste HDC100 TSEMP\`.
 
 - **Template**: This page shows the alarm and trend templates for each [supported connector](#supported-connectors---500x) available in your DMS.
 

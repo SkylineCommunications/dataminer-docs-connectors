@@ -25,8 +25,8 @@ The **DataMiner Protocol for Teleste HDC100 TSEMP** is the ultimate solution for
 - **Simplified Configuration**: Quick and easy setup with flexible configuration options to suit various network types.
 - **Real-time Monitoring**: Keep track of your devices’ status, alarms, and trends, ensuring your system is always at peak performance.
 - **High Availability**: Built for mission-critical operations where uptime is essential.
+- **Configuration**: This page allows you to select a specific .csv file to use for the configuration of the elements. The config files must be located in the following directory: `C:\Skyline DataMiner\Documents\Teleste HDC100 TSEMP\`.
 
----
 
 ### <span style="color: #00517d;">Overview</span>
 
@@ -42,8 +42,6 @@ The **DataMiner Protocol for Teleste HDC100 TSEMP** is the ultimate solution for
 > **Outcome:**  
 > By using the **DataMiner Protocol for Teleste HDC100**, users can reduce operational complexity and increase system uptime through automated monitoring and real-time control. This protocol enables efficient, centralized management of Teleste HDC100 devices, contributing to improved network performance and streamlined operations.
 
-
-
 ---
 ## Details  
 
@@ -54,7 +52,6 @@ The **DataMiner Protocol for Teleste HDC100 TSEMP** is the ultimate solution for
 | ![Interfaces Page](~/connector/images/hdcInterfacesPage.png){width=300px}  | **Interfaces Page (Range 5.0.0.x):** Shows detailed network settings including IP address, network mask, default gateway, and HDO Bus parameters, enabling network configuration management. |
 | ![Monitoring Page](~/connector/images/hdcMonitoringAnalogPage.png){width=300px}  | **Monitoring Page - Analog (Range 5.0.0.x):** Displays settings for configuring analog alarm limits, including HiHi, Hi, Lo, LoLo, and Deadband thresholds, for effective device monitoring. |
 | ![Monitoring Page](~/connector/images/hdcMonitoringDiscrete.png){width=300px}  | **Monitoring Page - Discrete (Range 5.0.0.x):** Provides control over discrete (binary) alarms, allowing users to configure alarm settings for specific modules. |
-
 
 ---
 ## References
