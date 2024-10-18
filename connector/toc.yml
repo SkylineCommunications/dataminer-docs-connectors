@@ -8950,6 +8950,9 @@
     topicUid: Connector_help_Teleste_EMS
   - name: Teleste HDC100 TSEMP
     topicUid: Connector_help_Teleste_HDC100_TSEMP
+    items:
+      - name: Teleste HDC100 TSEMP
+        topicUid: Connector_help_Teleste_HDC100_TSEMP_Technical
   - name: Teleste HDC100 TSEMP - HDO101
     topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO101
   - name: Teleste HDC100 TSEMP - HDO202
