@@ -55,7 +55,4 @@ The DataMiner connector for Teleste HDC100 TSEMP is the ultimate solution for ma
 ## References
 
 - Refer to the [technical help page](xref:Connector_help_Teleste_HDC100_TSEMP_Technical) for in-depth information on configuring and using the DataMiner connector for Teleste HDC100.
-
-- The DataMiner connector for Teleste HDC100 TSEMP supports a range of modules to meet your specific network needs.
-
 ---
