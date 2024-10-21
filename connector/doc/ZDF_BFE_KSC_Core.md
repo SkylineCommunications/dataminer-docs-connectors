@@ -48,8 +48,8 @@ The way the connector does this is by sending *ButtonPressed* commands to the co
 ![Control Panel Layout](~/connector/images/ZDF_BFE_KSC_Core_ControlManager.png)
 
 1. The SRC Fam and Dest Fam buttons are used to switch respectively between the input and output groups.
-2. The groups are depicted in the green box and each contain a set of matrix inputs or outputs.
-3. The labels represent a physical connection of the matrix.
+2. The groups are depicted in the green box and each contain a set of labels.
+3. The labels represent physical connections of the matrix.
 
 ## Requirements
 
