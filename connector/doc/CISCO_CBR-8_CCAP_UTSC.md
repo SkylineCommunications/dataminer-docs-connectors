@@ -39,26 +39,41 @@ This connector uses a virtual connection and does not require any input during e
 After the initial setup mentioned above, this is how you use the connector:
 
 1. Go to the **Configuration** page and click the **Update Trace button**. This will read all the CSV files in the location specified in the File Import Settings section.
+
 1. Go to the **Spectrum Analyzer** page to see the trace in the DataMiner Spectrum Analysis UI. On this page, you have a wide range of tools available. For detailed information, refer to [DataMiner Spectrum Analysis](https://aka.dataminer.services/Spectrum_Analysis).
 
 The connector can also read CSV files from a remote server. To configure this:
 
 1. Go to the **Configuration** page.
+
 1. Enter a remote directory path in the **Entity Import Directory** parameter.
+
 1. Fill in the **System Username** and **System Password** with an account with access to the remote directory.
+
 1. Toggle the **Entity Import Directory Type** to *Remote*.
 
-#### UTSC
+### UTSC
 
-This section allows users to **request Spectrum Analyzer trace data** from the CCAP via SNMP based on the configurations for **a selected upstream port**. There are some specific steps to follow when requesting Spectrum Analyzer trace data, **here are the steps upon landing on the UTSC main page**:
+This section allows you to **request Spectrum Analyzer trace data** from the CCAP via SNMP based on the configurations for **a selected upstream port**. There are the steps to follow when requesting Spectrum Analyzer trace data. Here are the **steps upon landing on the UTSC main page**:
 
-1. The user must select an upstream port from the dropdown menu in the Upstream Port parameter. This step is crucial, without a selected port the user will not be able to configure the CCAP to retrieve Spectrum Analyzer data.
-2. Based on the **selected upstream port**, the **Status parameter** below will indicate **if the upstream port was already configured**.
-   - **If the status is N/A**, the port is **not configured**. The user must click the **Update Config button**, this will **configure the port with the default configuration and return a status of Not Ready**.
-   - If Status is a valid value, this step can be skipped
-3. The user can fill out the **desired configuration parameters**, once the desired settings are filled the user must click the **Update Config** button to send the settings to the device.
-4. Once the desired configurations have been applied to the **selected upstream port**, the user can **click the Start Capture or Stop Capture button**, based on the user's desired action.
+1. Select an upstream port from the **Upstream Port** dropdown menu.
 
-#### FTP
+   This step is crucial. Without a selected port, you will not be able to configure the CCAP to retrieve Spectrum Analyzer data.
 
-This section allows users to configure the **IP address and Destination Path** for the **FTP server**.
+1. Check the **Status parameter** below this.
+
+   Based on the selected upstream port, this parameter will indicate if the upstream port has already been configured.
+
+   - If the status is **N/A**, the port is **not configured**, which means you must click the **Update Config button** to configure the port with the default configuration.
+
+     This will return a status of *Not Ready*.
+
+   - If the status has a valid value, no further action is needed for this step.
+
+1. Fill out the desired **configuration parameters**, and click the **Update Config** button to send the settings to the device.
+
+1. Once the desired settings have been applied to the selected upstream port, click the **Start Capture or Stop Capture button**, depending on what you want to do.
+
+### FTP
+
+This section allows you to configure the **IP address and Destination Path** for the **FTP server**.
