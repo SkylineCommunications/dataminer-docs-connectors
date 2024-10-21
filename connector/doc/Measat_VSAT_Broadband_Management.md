@@ -12,10 +12,10 @@ At present, the following NMS is supported: iDirect.
 
 ### Version Info
 
-| Range              | Features        | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x            | Initial version | -        | -             |
-| 1.0.1.x [SLC Main] | Implements backpolling | -        | -             |
+| Range              | Features                | Based on | System Impact |
+|--------------------|-------------------------|----------|---------------|
+| 1.0.0.x            | Initial version         | -        | -             |
+| 1.0.1.x [SLC Main] | Backpolling implemented | -        | -             |
 
 ### Product Info
 
@@ -66,7 +66,7 @@ On the **Network Congestion** page, you can view the network congestion status a
 
 On the **Traffic and Capacity** page, you can view the network traffic and capacity status for both West and East Malaysia. The traffic and capacity is based on the upstream and downstream throughput and also has the average and 95th percentile of the data for the past 24 hours.
 
-On the **Monthly Calculations** subpage, the *Get 30 Days 95TH Percentile* button will run the calculations for the previous month. A Scheduler app is running to execute this on the first day of every month to collect that data to present in the low code app.
+On the **Monthly Calculations** subpage, the **Get 30 Days 95TH Percentile** button will run the calculations for the previous month. A Scheduler app will run to execute this on the first day of every month to collect the data to present in the low-code app.
 
 On the **Group QOS Congestion** page, you can view the Group QOS congestion status for both West and East Malaysia. The Group QOS congestion is based on the free bandwidth against the allocated bandwidth for each group QOS.
 
