@@ -3538,6 +3538,8 @@
     topicUid: Connector_help_Evertz_MVP_OV
   - name: Evertz MVP OV - Channel
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
+  - name: Evertz NATX
+    topicUid: Connector_help_Evertz_NATX
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000
   - name: Evertz Scorpion 18
@@ -7706,6 +7708,8 @@
   items:
   - name: Shelly Bulb RGBW
     topicUid: Connector_help_Shelly_Bulb_RGBW
+  - name: Shelly Pro 1PM
+    topicUid: Connector_help_Shelly_Pro_1PM
 - name: SIAE
   items:
   - name: SIAE Microwave Trunklink
