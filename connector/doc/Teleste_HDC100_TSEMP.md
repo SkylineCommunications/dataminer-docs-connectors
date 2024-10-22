@@ -44,7 +44,7 @@ The DataMiner connector for Teleste HDC100 TSEMP is the ultimate solution for ma
 ---
 ## Details
 
-|   | Description  |
+|   | These are the main pages of the connector:  |
 |---|--------------|
 | <img src="~/connector/images/TelesteHDC100ModuleOverview.PNG" alt="Module Overview" width="300px" />  | **Overview page (range 5.0.0.x):** Provides a summary of the Teleste HDC100 device status, listing all connected modules and showing real-time device health and operational status information. |
 | <img src="~/connector/images/TelesteHDC100GeneralPage.PNG" alt="General Page" width="300px" />  | **General page (range 5.0.0.x):** Displays overall device information such as device name, configuration, software version, and uptime. This page also provides quick access to reset and monitoring actions. |
@@ -55,5 +55,6 @@ The DataMiner connector for Teleste HDC100 TSEMP is the ultimate solution for ma
 ---
 ## References
 
-- Refer to the [technical help page](xref:Connector_help_Teleste_HDC100_TSEMP_Technical) for in-depth information on configuring and using the DataMiner connector for Teleste HDC100.
+Refer to the [technical help page](xref:Connector_help_Teleste_HDC100_TSEMP_Technical) for in-depth information on configuring and using the DataMiner connector for Teleste HDC100.
+
 ---
