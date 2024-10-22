@@ -1,7 +1,8 @@
 ---
 uid: Connector_help_Teleste_HDC100_TSEMP
 ---
-# *DataMiner Connector for Teleste HDC100 TSEMP**
+
+# DataMiner Connector for Teleste HDC100 TSEMP
 
 ## Why Choose the DataMiner Connector for Teleste HDC100?
 
