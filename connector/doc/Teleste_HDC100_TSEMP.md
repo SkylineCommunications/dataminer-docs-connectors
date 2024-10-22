@@ -45,24 +45,24 @@ The DataMiner connector for Teleste HDC100 TSEMP is the ultimate solution for ma
 ---
 ## Details
 
-- **Overview page (range 5.0.0.x):**
-  ![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.PNG)  
+- **Overview page (range 5.0.0.x):**<br>
+  ![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.PNG)<br>
   Provides a summary of the Teleste HDC100 device status, listing all connected modules and showing real-time device health and operational status information.
 
-- **General page (range 5.0.0.x):**
-  ![General Page](~/connector/images/TelesteHDC100GeneralPage.PNG)  
+- **General page (range 5.0.0.x):**<br>
+  ![General Page](~/connector/images/TelesteHDC100GeneralPage.PNG)<br>
   Displays overall device information such as device name, configuration, software version, and uptime. This page also provides quick access to reset and monitoring actions.
 
-- **Interfaces page (range 5.0.0.x):**
-  ![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.PNG)  
+- **Interfaces page (range 5.0.0.x):**<br>
+  ![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.PNG)<br>
   Shows detailed network settings including IP address, network mask, default gateway, and HDO bus parameters, enabling network configuration management.
 
-- **Monitoring page - Analog (range 5.0.0.x):**
-  ![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.PNG)  
+- **Monitoring page - Analog (range 5.0.0.x):**<br>
+  ![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.PNG)<br>
   Displays settings for configuring analog alarm limits, including HiHi, Hi, Lo, LoLo, and Deadband thresholds, for effective device monitoring.
 
-- **Monitoring page - Discrete (range 5.0.0.x):**
-  ![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.PNG)  
+- **Monitoring page - Discrete (range 5.0.0.x):**<br>
+  ![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.PNG)<br>
   Provides control over discrete (binary) alarms, allowing users to configure alarm settings for specific modules.
 ---
 ## References
