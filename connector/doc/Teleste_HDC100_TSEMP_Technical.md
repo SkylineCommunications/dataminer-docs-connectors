@@ -179,7 +179,7 @@ It contains three page buttons:
 
 - **Network**: Allows you to configure the **IP Address**, **Network Mask**, **Default Gateway**, **Mastering**, **Poll and Packet Timeout**, and **Master Address**, as well as the **HDO** parameters **IP Address**, **Network Mask**, and **Default Gateway**.
 
-- **Monitoring***:* Contains both the **Analog** and **Discrete Alarm Limits Tables**, as well as the parameters **Alarm Control Detection**, **ACD on Delay**, and **ACD off Delay**.
+- **Monitoring**: Contains both the **Analog** and **Discrete Alarm Limits Tables**, as well as the parameters **Alarm Control Detection**, **ACD on Delay**, and **ACD off Delay**.
 
   - In the **Analog Alarm Limits Table**, the **HiHi**, **Hi**, **LoLo**, **Lo**, **Deadband**, **HiHi State**, **Hi State**, **Lo State**, and **LoLo State** can be configured.
 
