@@ -20,21 +20,21 @@ Deploying the **Teleste HDC100 TSEMP** connector reduces operational complexity,
 
 ## Visuals
 
-### Overview Page (Range 5.0.0.x)
-![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.PNG)  
-This visual provides a **summary of Teleste HDC100 device status**, displaying connected modules and real-time health information. It is clean and focused, emphasizing key system status without unnecessary elements.
+### Overview Page
+![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)  
+Provides a comprehensive summary of the Teleste HDC100 device status, displaying all connected modules and offering real-time health information. The layout emphasizes key system metrics, delivering clear insights without unnecessary distractions.
 
 ---
 
-### General Page (Range 5.0.0.x)
-![General Page](~/connector/images/TelesteHDC100GeneralPage.PNG)  
-This visual showcases **device information**, including name, configuration, software version, and uptime. It highlights quick access to reset and monitoring actions, ensuring ease of use without unnecessary panels.
+### General Page
+![General Page](~/connector/images/TelesteHDC100GeneralPage.png)  
+Showcases essential device information, including name, configuration details, software version, and uptime. Offers quick access to reset and monitoring functions, designed for intuitive and efficient use.
 
 ---
 
-### Interfaces Page (Range 5.0.0.x)
-![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.PNG)  
-This image details **network configuration**, covering IP addresses, network masks, and gateway parameters. The visual is clear and focused on essential settings for effective network management.
+### Interfaces Page
+![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png)  
+Presents detailed network configuration options, covering IP addresses, network masks, gateway parameters, and more. Focused on providing essential settings for effective network management and seamless connectivity.
 
 ---
 
@@ -51,7 +51,7 @@ This image details **network configuration**, covering IP addresses, network mas
 ## Use Cases
 
 ### Remote Monitoring of Device Alarms
-![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.PNG)  
+![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.png)  
 **Challenge:** In large, distributed systems, monitoring and managing device alarms remotely can be a challenge, particularly for maintaining system reliability.  
 **Solution:** The **Teleste HDC100 TSEMP** connector allows users to remotely set and manage alarm thresholds for analog signals, including HiHi, Hi, Lo, and LoLo limits. This feature enables proactive monitoring and reduces the risk of unexpected system failures.  
 **Benefit:** Users can **quickly address potential issues** in real-time, improving the reliability and performance of their network operations.
@@ -59,7 +59,7 @@ This image details **network configuration**, covering IP addresses, network mas
 ---
 
 ### Efficient Management of Discrete Alarms
-![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.PNG)  
+![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.png)  
 **Challenge:** Managing discrete (binary) alarms across multiple Teleste HDC100 modules can be resource-intensive without a unified solution.  
 **Solution:** The **Teleste HDC100 TSEMP** connector provides centralized control over discrete alarms, allowing users to configure alarms for individual modules based on specific operational needs.  
 **Benefit:** Users can achieve **better system oversight** and targeted management of discrete alarms, reducing complexity and enhancing operational efficiency.
