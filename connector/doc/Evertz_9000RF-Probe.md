@@ -56,7 +56,7 @@ The following data pages are available in the main element:
 
 - **RF Inputs**: Contains the details of the RF Probe Inputs and Channels. In the *RF Configuration* Table, the *Device DVE* setting allows generation of DVEs based on the RF Input.
 
-- **Channel Polling Manager**: This page allows the enabling or disabling of polling for certain channels. This can be used to disable polling for channels that are not in use. The default polling state is disabled. Using the *disable all polling* and *enable all polling*, you can disable all channels or enable all channels for polling at once.
+- **Channel Polling Manager**: This page allows the enabling or disabling of polling for certain channels. This can be used to disable polling for channels that are not in use. The default polling state is disabled. Using the **Disable All Polling** and **Enable All Polling**, you can disable all channels or enable all channels for polling at once.
 
 - **Traps**: This page lists the received traps from the device. The traps will get cleared on an element restart and based on the settings provided. Based on the cleanup method, you can choose to clean up traps by age, by max count or both. If you choose to clean up traps by max count, the number of traps to be cleared at a time when it reaches the max count can be set under the deletion amount.
 
