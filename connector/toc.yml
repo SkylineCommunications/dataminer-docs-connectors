@@ -6538,6 +6538,10 @@
   items:
   - name: Nutanix Prism
     topicUid: Connector_help_Nutanix_Prism
+- name: NVIDIA
+  items:
+  - name: NVIDIA Onyx Manager
+    topicUid: Connector_help_NVIDIA_Onyx_Manager
 - name: Ocean Controls
   items:
   - name: Ocean Controls KTA-282 Weather Station Gateway
