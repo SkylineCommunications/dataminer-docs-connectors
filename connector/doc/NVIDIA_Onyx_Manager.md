@@ -18,9 +18,10 @@ The information on tables and parameters is retrieved via SNMP polling and HTTP 
 
 ### Product Info
 
-| Range   | Supported Firmware |
-|---------|--------------------|
+| Range   | Supported Firmware                     |
+|---------|----------------------------------------|
 | 1.0.0.x | Software X86_64 3.10.4408 API 3.6.5000 |
+
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -31,7 +32,9 @@ The information on tables and parameters is retrieved via SNMP polling and HTTP 
 
 ### Connections
 
-#### SNMP Main Connection
+During element creation, you will need to specify the IP addresses for both the SNMP and the HTTP connection.
+
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -54,17 +57,25 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device, by default *80*.
 
+### Initialization
+
+On the [General - HTTP Connection](#general---http-connection) page, fill in the credentials so that the HTTP-related parameters can be polled.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## Usage
-When creating an element using this connector, apart from the element name and the protocol fields, IP Addresses for both HTTP and SNMP Connection are need to be filed.
+
 ### General
 
-This page displays the following general information: **System Name, System Description, System Location, System Contact, System Up Time** and other general parameters.
+This page displays the **System Name, System Description, System Location, System Contact, System Up Time**, and other general parameters.
 
 ### General - HTTP Connection
 
 This page displays the configuration parameters for the HTTP connection. A successful login must be performed in order to poll the HTTP-related parameters.
 
-- **Username**: The user account used for login to the device.
+- **Username**: The user account used to log in to the device.
 - **Password**: The password associated with the user account.
 
 ### Detailed Interface Info
@@ -73,7 +84,7 @@ This page displays the **Detailed Interface Info** table.
 
 ### Interface Data
 
-This page displays the **Ethernet Interface Data**, which contains extra information for the ethernet interfaces.
+This page displays the **Ethernet Interface Data**, which contains extra information for the Ethernet interfaces.
 
 ### Detailed Interface Info - RX
 
@@ -85,8 +96,9 @@ This page displays the **Interface Info - Tx** table.
 
 ### Chassis
 
-This page displays information related to the chassis status of the device. 
-Via page buttons, information is also available on the **Fans**, **Modules**, **Clusters**, **CPU**, **Storage**, **STP** and **Temperature**.
+This page displays information related to the chassis status of the device.
+
+Via page buttons, information is also available on the **Fans**, **Modules**, **Clusters**, **CPU**, **Storage**, **STP**, and **Temperature**.
 
 ### PTP
 
@@ -114,7 +126,7 @@ This page displays the **Physical Entities** device information in a table.
 
 ### DHCP
 
-This page displays the DHCP Relay instances information for both IPv4 and IPv6.
+This page displays the DHCP relay instances information for both IPv4 and IPv6.
 
 ### IGMP
 
@@ -130,20 +142,23 @@ This page displays the **VRF (Virtual Routing and Forwarding)** table.
 
 ### BGP
 
-This page displays the **BGP (Border Gateway Protocol)** related tables. You can delete the BGP Summary or BGP Neighbor using the delete button in the Action column.
+This page displays the **BGP (Border Gateway Protocol)** related tables. You can delete the BGP Summary or BGP Neighbor using the Delete button in the Action column.
 
 ### Dump Files
 
 This page is used to create and download the **Dump File** from the device.
-To create the dump file, please use the **Create Dump File** button from this page.
+
+To create the dump file, click the **Create Dump File** button.
 
 > [!IMPORTANT]
-> The connector will time out during the creation of the dump file because the device is currently busy and cannot process other requests. The process of creating the dump file will take approximately 5 minutes.
+> The connector will time out during the creation of the dump file because the device will be busy and unable to process other requests. The process of creating the dump file will take approximately 5 minutes.
 
-Use the **Download** button from the **Dump Files** table to downlad the dump file. You can only download one file per time.
+To download the dump file:
 
-> [!IMPORTANT]
-> All configuration parameters under the **Download Configuration** page must be filled before download the dump file.
+1. Fill in all configuration parameters on the **Download Configuration** page.
+1. Use the **Download** button from the **Dump Files** table.
+
+You can only download one file at a time.
 
 ### Web Interface
 
