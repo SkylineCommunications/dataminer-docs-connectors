@@ -22,7 +22,7 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 | 1.0.4.x [DCF] | DCF feature added. | Yes | Yes |
 | 2.0.0.x [Deprecated] | Connector review. Added CCAP parameters. | No | Yes |
 | 2.0.1.x [SLC Main] | Split up MPEG table into 4 tables because of possibility of multiple programs per transport stream. | No | Yes |
-| 3.0.0.x [Deprecated] | Customer specific branch. | No | Yes |
+| 3.0.0.x [Deprecated] | Customer-specific branch. | No | Yes |
 
 ### Product Info
 
