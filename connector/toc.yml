@@ -554,6 +554,10 @@
     topicUid: Connector_help_Apica_Synthetic_Monitoring_API
 - name: AppearTV
   items:
+  - name: Appear X Platform
+    topicUid: Connector_help_Appear_X_Platform
+- name: AppearTV
+  items:
   - name: AppearTV Audio Transcoder
     topicUid: Connector_help_AppearTV_Audio_Transcoder
   - name: AppearTV Clock Ref
