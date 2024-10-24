@@ -8832,6 +8832,8 @@
     topicUid: Connector_help_Telenor_BCDB_Multiviewer_Manager
   - name: Telenor Channel Correlation Service Protocol
     topicUid: Connector_help_Telenor_Channel_Correlation_Service_Protocol
+  - name: Telenor Cisco CBR-8 Video Platform
+    topicUid: Connector_help_Telenor_Cisco_CBR-8_Video_Platform
   - name: Telenor CMDB Provisioning
     topicUid: Connector_help_Telenor_CMDB_Provisioning
   - name: Telenor Common Onboarding Instances
