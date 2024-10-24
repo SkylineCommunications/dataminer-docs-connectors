@@ -15,7 +15,7 @@ The connector is used to control and monitor the Harmonic Proview PVR8000.
 | **Range**     | **Description**                                                  | **DCF Integration** | **Cassandra Compliant** |
 |----------------------|------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                 | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Combine DVB-S2 port receiver and carrier parameters into a table | No                  | Yes                     |
+| 1.0.1.x [SLC Main]   | Combine DVB-S2 port receiver and carrier parameters into a table | Yes                 | Yes                     |
 
 ### Product Info
 
