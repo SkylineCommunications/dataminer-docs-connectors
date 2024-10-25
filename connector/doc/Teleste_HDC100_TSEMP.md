@@ -58,7 +58,7 @@ Presents detailed network configuration options, covering IP addresses, network 
 ---
 
 ### Efficient Management of Discrete Alarms
-![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.png)  
+![Discrete Alarm Limits](~/connector/images/TelesteHDC100MonitoringDiscreteAlarms.png)  
 
 **Challenge:** Managing discrete (binary) alarms across multiple Teleste HDC100 modules can be resource-intensive without a unified solution.  
 **Solution:** The **Teleste HDC100 TSEMP** connector provides centralized control over discrete alarms, allowing users to configure alarms for individual modules based on specific operational needs.  
