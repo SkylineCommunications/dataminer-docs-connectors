@@ -14,13 +14,11 @@ Managing Teleste HDC100 devices within the HDO platform can be complex, particul
 
 Seamlessly integrated with DataMiner, this connector enables real-time access to device information, configuration, and status, while supporting Ethernet and serial communication. It continually evolves to support new Teleste HDC100 modules and firmware updates, improving configuration and monitoring.
 
-Deploying the **Teleste HDC100 TSEMP** connector reduces operational complexity, enhances network performance, and increases system uptime through automated, real-time control.
-
 ---
 
 ## Visuals
 
-### Overview Page
+### Module Overview
 ![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)  
 Provides a comprehensive summary of the Teleste HDC100 device status, displaying all connected modules and offering real-time health information. The layout emphasizes key system metrics, delivering clear insights without unnecessary distractions.
 
@@ -52,6 +50,7 @@ Presents detailed network configuration options, covering IP addresses, network 
 
 ### Remote Monitoring of Device Alarms
 ![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.png)  
+
 **Challenge:** In large, distributed systems, monitoring and managing device alarms remotely can be a challenge, particularly for maintaining system reliability.  
 **Solution:** The **Teleste HDC100 TSEMP** connector allows users to remotely set and manage alarm thresholds for analog signals, including HiHi, Hi, Lo, and LoLo limits. This feature enables proactive monitoring and reduces the risk of unexpected system failures.  
 **Benefit:** Users can **quickly address potential issues** in real-time, improving the reliability and performance of their network operations.
@@ -60,23 +59,27 @@ Presents detailed network configuration options, covering IP addresses, network 
 
 ### Efficient Management of Discrete Alarms
 ![Discrete Alarm Limits](~/connector/images/TelesteHDCMonitoringDiscreteAlarmLimits.png)  
+
 **Challenge:** Managing discrete (binary) alarms across multiple Teleste HDC100 modules can be resource-intensive without a unified solution.  
 **Solution:** The **Teleste HDC100 TSEMP** connector provides centralized control over discrete alarms, allowing users to configure alarms for individual modules based on specific operational needs.  
 **Benefit:** Users can achieve **better system oversight** and targeted management of discrete alarms, reducing complexity and enhancing operational efficiency.
 
 ---
 
-### Prerequisites
+## Prerequisites
+
 - **DataMiner version 10.2 or higher** is required for compatibility with the Teleste HDC100 TSEMP connector.
 - **Administrator permissions** are needed to configure Teleste HDC100 devices through the connector.
 - **Network and serial access** to the Teleste HDC100 devices are essential, including IP address, default ports (2500 for main connection, 65535 for modules), and serial communication capabilities.
 
 ---
 
-### Technical Reference
-For in-depth information on configuring and using the DataMiner connector for Teleste HDC100, please refer to the [technical help page](xref:Connector_help_Teleste_HDC100_TSEMP_Technical).
+## Technical Reference
+
+For in-depth information on configuring and using the DataMiner connector for Teleste HDC100, please refer to the [Technical help page](xref:Connector_help_Teleste_HDC100_TSEMP_Technical).
 
 ---
 
-### Short Description
+## Short Description
+
 The **Teleste HDC100 TSEMP connector** enables centralized management of HDC100 communication modules within the HDO platform, offering remote configuration, Ethernet connectivity, real-time monitoring, and comprehensive alarm management capabilities through the DataMiner platform.
