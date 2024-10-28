@@ -24,6 +24,7 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 | 1.0.0.x | Initial version                                    | No              | Yes                 |
 | 1.0.1.x | Adaptation to new SoW                              | No              | Yes                 |
 | 1.0.2.x | Primary key is based on rowkey from change request | No              | Yes                 |
+| 2.0.0.x | EPM Compatible                                     | No              | Yes                 |
 
 ### Product Info
 
@@ -32,10 +33,11 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 | 1.0.0.x | 6.10                       |
 | 1.0.1.x | 6.10                       |
 | 1.0.2.x |                            |
+| 2.0.0.x | 6.10                       |
 
 ### Exported connectors
 
-| Exported Connector                | Description                                                                                                                                                       |
+| Exported Connector  [1.0.2.X]              | Description                                                                                                                                                       |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Aviat Networks Provision - Device | Alarms of each device connected to the Aviat Networks Provision. A table with information related to the alarm (event ID, severity, location, etc.) is displayed. |
 
@@ -174,3 +176,17 @@ If a provision file is imported and a mismatch is detected between one of the en
 On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e. within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
 
 The **primary key** of the traps table is obtained by concatenating the **Service ID** and **Event Name** column parameters.
+
+## Usage (2.0.0.X)
+
+### Configuration
+
+This page contains the following parameters:
+
+- **Entity Import Directory**: Directory where the element will import the devices information from EPM.
+
+- **Entity Export Directory**: Directory from which the element will export the devices inventory information to EPM.
+
+- **System Username**: Username used to retrieve files from a remote directory.
+
+- **System Password**: Password used to retrieve files from a remote directory.
