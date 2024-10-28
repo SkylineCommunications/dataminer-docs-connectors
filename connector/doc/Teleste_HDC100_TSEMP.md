@@ -16,7 +16,7 @@ Seamlessly integrated with DataMiner, this connector enables real-time access to
 
 ---
 
-## Visuals
+## Details
 
 ### Module Overview
 
