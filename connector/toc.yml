@@ -5502,6 +5502,8 @@
     topicUid: Connector_help_Microsoft_Azure_-_Cosmos_DB_Accounts
   - name: Microsoft Azure - Disks
     topicUid: Connector_help_Microsoft_Azure_-_Disks
+  - name: Microsoft Azure - File Pusher
+    topicUid: Connector_help_Microsoft_Azure_-_File_Pusher    
   - name: Microsoft Azure - Kubernetes Services
     topicUid: Connector_help_Microsoft_Azure_-_Kubernetes_Services
   - name: Microsoft Azure - Load Balancers
