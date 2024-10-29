@@ -2840,6 +2840,8 @@
   items:
   - name: Eltek Inverter Candis
     topicUid: Connector_help_Eltek_Inverter_Candis
+  - name: Eltek Smartpack
+    topicUid: Connector_help_Eltek_Smartpack
   - name: Eltek Smartpack 2
     topicUid: Connector_help_Eltek_Smartpack_2
   - name: Eltek Smartpack S
@@ -3880,6 +3882,8 @@
     topicUid: Connector_help_Generic_Dummy
   - name: Generic Dynamic Table
     topicUid: Connector_help_Generic_Dynamic_Table
+  - name: Generic Ember+
+    topicUid: Connector_help_Generic_Ember+
   - name: Generic Failover Status
     topicUid: Connector_help_Generic_Failover_Status
   - name: Generic File Explorer
@@ -6254,6 +6258,8 @@
     topicUid: Connector_help_Nevion_Virtuoso_FA
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
+  - name: Nevion Virtuoso RE
+    topicUid: Connector_help_Nevion_Virtuoso_RE
 - name: Newtec
   items:
   - name: Newtec 2137
