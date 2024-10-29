@@ -24,7 +24,7 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 | 1.0.0.x | Initial version                                    | No              | Yes                 |
 | 1.0.1.x | Adaptation to new SoW                              | No              | Yes                 |
 | 1.0.2.x | Primary key is based on rowkey from change request | No              | Yes                 |
-| 2.0.0.x | EPM Compatible                                     | No              | Yes                 |
+| 2.0.0.x | EPM compatible                                     | No              | Yes                 |
 
 ### Product Info
 
@@ -35,17 +35,17 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 | 1.0.2.x |                            |
 | 2.0.0.x | 6.10                       |
 
-### Exported connectors
+### Exported connectors - Range 1.0.2.x
 
-| Exported Connector  [1.0.2.X]              | Description                                                                                                                                                       |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Exported Connector | Description |
+|--|--|
 | Aviat Networks Provision - Device | Alarms of each device connected to the Aviat Networks Provision. A table with information related to the alarm (event ID, severity, location, etc.) is displayed. |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### SNMP Trap Input connection
+#### SNMP Connection - Trap Input
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -62,13 +62,13 @@ SNMP Settings:
 
 ## Usage (1.0.0.1)
 
-### Traps
+### Traps Page
 
 SNMP traps received from the EMS are displayed in the **Traps Table**. The **Number of Traps** parameter displays how many rows are available in this table. You can remove specific rows by clicking the **Delete Trap** button (available in the last column of the table).
 
 Additional configuration is available on the **Configuration page** (see below).
 
-### Known IP Addresses
+### Known IP Addresses Page
 
 This page displays the **Devices Table**, which contains an overview of all the devices known by the connector. Note that every incoming trap has a source IP (see below) and this source IP address is used to match the trap to a specific device. Only traps with a source IP address known by the connector will be processed; any other traps will be discarded.
 
@@ -80,7 +80,7 @@ The **Number of Known IP Addresses** parameter at the top of this page displays 
 
 To manage the devices further, e.g. to delete multiple devices or create or delete all DVEs at once, refer to the Configuration page (see below).
 
-### Configuration
+### Configuration Page
 
 This page consists of several sections, corresponding to different aspects of the configuration.
 
@@ -121,7 +121,7 @@ Please note the following:
 
 This section also contains the **DVE Table** page button, which opens a subpage with a table that displays all DVEs created by the connector. The last column of this table contains a **Delete DVE** button, which can be used to erase DVEs one by one.
 
-### Debug
+### Debug Page
 
 This page displays the **Deleted Traps Table**, which lists the stored deleted traps, ordered from young to old. Above the table, the **Number of Deleted Traps** parameter indicates the number of rows in the table. For more information on how to further manage the traps, delete multiple traps or configure the processing, refer to the **Configuration page**.
 
@@ -136,21 +136,21 @@ This page displays the **Deleted Traps Table**, which lists the stored deleted t
 
 ## Usage (1.0.1.1)
 
-### Traps
+### Traps Page
 
 On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e. within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
 
 The **display key** of the traps table is obtained by concatenating the **Service ID** and **Event Name** column parameters.
 
-### Known IP Addresses
+### Known IP Addresses Page
 
 In last column of the Device Table, **Create DVE**, you can enable or disable the creation of a single Dynamic Virtual Element (DVE). If DVE creation is enabled, a new element with the same name as the Device Name will appear in the Surveyor in the view that corresponds to the Site Name.
 
-### Service
+### Service Page
 
 This page displays the **Service Table**. Each entry in this table represents a known **Service ID**, which is linked to the respective Device Name. The page also displays the **DAC/Port** parameter, as the concatenation of these three parameters is used as the **Index** of the table.
 
-### Configuration
+### Configuration Page
 
 This page consists of several sections, corresponding to different aspects of the configuration.
 
@@ -171,7 +171,7 @@ If a provision file is imported and a mismatch is detected between one of the en
 
 ## Usage (1.0.2.1)
 
-### Traps
+### Traps Page
 
 On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e. within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
 
@@ -179,7 +179,7 @@ The **primary key** of the traps table is obtained by concatenating the **Servic
 
 ## Usage (2.0.0.X)
 
-### Configuration
+### Configuration Page
 
 This page contains the following parameters:
 
