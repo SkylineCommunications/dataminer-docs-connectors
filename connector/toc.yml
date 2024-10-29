@@ -5412,6 +5412,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-LNO
   - name: Meinberg LANTIME IMS-LNO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-LNO_API_V10
+  - name: Meinberg LANTIME IMS-LSG API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-LSG_API_V17
   - name: Meinberg LANTIME IMS-MRI
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI
   - name: Meinberg LANTIME IMS-MRI API V10
