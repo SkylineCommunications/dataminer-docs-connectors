@@ -14,7 +14,7 @@ Credentials for authentication are securely stored within the collector, and use
 You can configure multiple file path combinations, each with dedicated upload settings, allowing flexible file transfers to the Azure Blob Storage that best fits your use case.
 <br>
 <br>
-For the detailed technical information, please refer to our technical documentation [page](Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page).
+For the detailed technical information, please refer to our technical documentation [page](Connector_help_Microsoft_Azure_-_File_Pusher_Technical).
 
 ## Key Features
 
