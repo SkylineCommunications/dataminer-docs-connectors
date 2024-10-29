@@ -13,25 +13,6 @@ Credentials for authentication are securely stored withing the collector, and us
 
 You can configure multiple file path combinations, each with dedicated upload settings, allowing flexible file transfers to the Azure Storage that best fits your use case. File paths are added, edited or deleted through the right-click context menu in the File Paths table.
 
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware          |
-|-----------|-----------------------------|
-| 1.0.0.x   | REST-API version 2022-04-01 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components  | Exported Components     |
-|-----------|---------------------|-------------------------|--------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -   				 | -                       |
-
 ## Configuration
 
 ### Connections
