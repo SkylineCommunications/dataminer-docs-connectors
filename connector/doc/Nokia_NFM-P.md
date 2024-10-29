@@ -42,7 +42,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-In addition to the above HTTP settings, All the arguments in the JMS Configuration page has to be provided in a newly created element.
+In addition to the above HTTP settings, All the arguments in the JMS Configuration page has to be provided in a newly created element before pressing the "Connect" button.
 
 ### Web Interface
 
@@ -52,7 +52,21 @@ The web interface is only accessible when the client machine has network access 
 
 The connector uses SOAP calls to retrieve the device information and JMS connection to receive alarm events.
 
-- You can find the system relation information on the **General** page of this connector. JMS Connection parameter shows the status of the connection, if it is Active or Inactive.
-- The **JMS Configuration** page contains the mandatory input arguments that must be provided to establish a JMS connection.
-- On the **Alarms** page, you can find the list of alarms in the Alarm Events table. There is a Refresh button on the same page that can be used to get all alarms on the NFM-P main server and refresh the Alarm Events table. Note: Since the volume of the alarms might be high, this can have a performance impact on the system, if triggered frequently.
-- The **Events Received** page displays a table which temporarily stores the event messages before processing them. Note: It is a volatile table and hence trending and alarming cannot be enabled.
+### General Page
+This page displays system related information. The "JMS Connection" parameter shows the connection's status (Active/Inactive).
+
+### JMS Configuration Page
+This page contains the mandatory input arguments that must be provided to establish a JMS connection.
+- For initial connections, fill in the settings before pressing the "Connect" button.
+- To apply new settings to an existing JMS connection, press the "Disconnect" button followed by the "Connect" button.
+- If the JMS connection is cut off intermittently, a retry mechanism is activated to reestablish the JMS connection.
+- Infinite retries can be set for the JMS connection with a minimum interval of 1s. Use it with caution as this might stress the device.
+
+### Alarms Page
+- This page contains the list of alarms in the Alarm Events table.
+There is a Refresh button on the same page that can be used to get all alarms on the NFM-P main server and refresh the Alarm Events table.
+Note: Since the volume of the alarms might be high, this can have a performance impact on the system, if triggered frequently.
+
+### Debug Page
+- This page contains useful metrics like buffer counts and logs from JMS connection.
+- The number of things taken out from the buffers are configurable.
