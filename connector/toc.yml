@@ -576,6 +576,8 @@
     topicUid: Connector_help_AppearTV_Telenet_Light
   - name: AppearTV Transcoder HVQ BC
     topicUid: Connector_help_AppearTV_Transcoder_HVQ_BC
+  - name: Appear X Platform
+    topicUid: Connector_help_Appear_X_Platform
   - name: AppearTV X20 Platform
     topicUid: Connector_help_AppearTV_X20_Platform
   - name: AppearTV X20 Platform - AppearTV X20 Decoder
@@ -1580,6 +1582,8 @@
     topicUid: Connector_help_beIN_Arvato_VPMS
   - name: beIN ESVC Feed Request
     topicUid: Connector_help_beIN_ESVC_Feed_Request
+  - name: beIN Feed Request Preset Manager
+    topicUid: Connector_help_beIN_Feed_Request_Preset_Manager
   - name: beIN GPIO Mapping
     topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
@@ -2066,6 +2070,8 @@
     topicUid: Connector_help_CISCO_CBR-8_CCAP_Platform
   - name: CISCO CBR-8 CCAP Platform Collector
     topicUid: Connector_help_CISCO_CBR-8_CCAP_Platform_Collector
+  - name: CISCO CBR-8 CCAP UTSC
+    topicUid: Connector_help_CISCO_CBR-8_CCAP_UTSC
   - name: CISCO CDS
     topicUid: Connector_help_CISCO_CDS
   - name: CISCO CMTS
@@ -2476,6 +2482,8 @@
   items:
   - name: DAZN Broadcast Bridge
     topicUid: Connector_help_DAZN_Broadcast_Bridge
+  - name: DAZN MediaOps VSC Sync
+    topicUid: Connector_help_DAZN_MediaOps_VSC_Sync
 - name: Deep Sea Electronics
   items:
   - name: Deep Sea Electronics DSE74XX MKII
@@ -2536,6 +2544,8 @@
   items:
   - name: DEV 1985
     topicUid: Connector_help_DEV_1985
+  - name: DEV 1986
+    topicUid: Connector_help_DEV_1986
   - name: DEV 4111
     topicUid: Connector_help_DEV_4111
   - name: DEV 7000
@@ -3252,6 +3262,10 @@
     topicUid: Connector_help_Evertz_7707GPS-DR-F2
   - name: Evertz 7707GPS-DT-F2
     topicUid: Connector_help_Evertz_7707GPS-DT-F2
+  - name: Evertz 7707LR
+    topicUid: Connector_help_Evertz_7707LR
+  - name: Evertz 7707LTA
+    topicUid: Connector_help_Evertz_7707LTA
   - name: Evertz 7707OE
     topicUid: Connector_help_Evertz_7707OE
   - name: Evertz 7707VR8-HS
@@ -3488,6 +3502,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
+  - name: Evertz ev670-X45-HW U8E8D
+    topicUid: Connector_help_Evertz_ev670_X45_HW_U8E8D
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
@@ -3524,6 +3540,8 @@
     topicUid: Connector_help_Evertz_MVP_OV
   - name: Evertz MVP OV - Channel
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
+  - name: Evertz NATX
+    topicUid: Connector_help_Evertz_NATX
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000
   - name: Evertz Scorpion 18
@@ -4364,6 +4382,10 @@
     topicUid: Connector_help_Harris_VEA6800+
   - name: Harris X50
     topicUid: Connector_help_Harris_X50
+- name: Hewtech
+  items:
+  - name: Hewtech Hirakawa HS-600MA
+    topicUid: Connector_help_Hewtech_Hirakawa_HS-600MA
 - name: Hiltron
   items:
   - name: Hiltron HACU
@@ -4484,6 +4506,10 @@
   items:
   - name: Icareus EP100
     topicUid: Connector_help_Icareus_EP100
+- name: Icinga
+  items:
+  - name: Icinga Icinga 2
+    topicUid: Connector_help_Icinga_Icinga_2
 - name: IDC
   items:
   - name: IDC P561 Audio Encoder
@@ -5048,6 +5074,10 @@
   items:
   - name: L-3 Communications MPM-1000
     topicUid: Connector_help_L-3_Communications_MPM-1000
+- name: Lancier Monitoring
+  items:
+  - name: Lancier Monitoring PSC
+    topicUid: Connector_help_Lancier_Monitoring_PSC
 - name: Lantronix
   items:
   - name: Lantronix ETS32
@@ -6054,6 +6084,8 @@
     topicUid: Connector_help_NetInsight_Nimbra_VA
 - name: Netscout
   items:
+  - name: Netscout Arbor Sightline
+    topicUid: Connector_help_Netscout_Arbor_Sightline
   - name: Netscout VSS vBroker
     topicUid: Connector_help_Netscout_VSS_vBroker
 - name: NetSure
@@ -6404,6 +6436,8 @@
     topicUid: Connector_help_Nokia_OMS_1350_-_USRPNL
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
+  - name: Nokia WaveLite
+    topicUid: Connector_help_Nokia_WaveLite
 - name: Norkring
   items:
   - name: Norkring AS Bricknet
@@ -6506,6 +6540,10 @@
   items:
   - name: Nutanix Prism
     topicUid: Connector_help_Nutanix_Prism
+- name: NVIDIA
+  items:
+  - name: NVIDIA Onyx Manager
+    topicUid: Connector_help_NVIDIA_Onyx_Manager
 - name: Ocean Controls
   items:
   - name: Ocean Controls KTA-282 Weather Station Gateway
@@ -7094,6 +7132,8 @@
   items:
   - name: Robustel R2000
     topicUid: Connector_help_Robustel_R2000
+  - name: Robustel R2011
+    topicUid: Connector_help_Robustel_R2011
 - name: Rogers Communications
   items:
   - name: Rogers Communications Juniper CSV Importer
@@ -7674,6 +7714,8 @@
   items:
   - name: Shelly Bulb RGBW
     topicUid: Connector_help_Shelly_Bulb_RGBW
+  - name: Shelly Pro 1PM
+    topicUid: Connector_help_Shelly_Pro_1PM
 - name: SIAE
   items:
   - name: SIAE Microwave Trunklink
@@ -7874,6 +7916,8 @@
     topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM
   - name: Skyline EPM Platform PLM
     topicUid: Connector_help_Skyline_EPM_Platform_PLM
+  - name: Skyline EPM Platform VSAT GEO
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
   - name: Skyline Example Serial Client Advanced
     topicUid: Connector_help_Skyline_Example_Serial_Client_Advanced
   - name: Skyline Example Serial Client Basic
@@ -8616,6 +8660,8 @@
     topicUid: Connector_help_TDF_ENERGIE_ALLYSS
   - name: TDF ENERGIE TBOX
     topicUid: Connector_help_TDF_ENERGIE_TBOX
+  - name: TDF EPM Manager
+    topicUid: Connector_help_TDF_EPM_Manager
   - name: TDF GE TBOX
     topicUid: Connector_help_TDF_GE_TBOX
   - name: TDF Helios Database
@@ -8796,6 +8842,8 @@
     topicUid: Connector_help_Telenor_BCDB_Multiviewer_Manager
   - name: Telenor Channel Correlation Service Protocol
     topicUid: Connector_help_Telenor_Channel_Correlation_Service_Protocol
+  - name: Telenor Cisco CBR-8 Video Platform
+    topicUid: Connector_help_Telenor_Cisco_CBR-8_Video_Platform
   - name: Telenor CMDB Provisioning
     topicUid: Connector_help_Telenor_CMDB_Provisioning
   - name: Telenor Common Onboarding Instances
@@ -8914,6 +8962,9 @@
     topicUid: Connector_help_Teleste_EMS
   - name: Teleste HDC100 TSEMP
     topicUid: Connector_help_Teleste_HDC100_TSEMP
+    items:
+      - name: Teleste HDC100 TSEMP Technical
+        topicUid: Connector_help_Teleste_HDC100_TSEMP_Technical
   - name: Teleste HDC100 TSEMP - HDO101
     topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO101
   - name: Teleste HDC100 TSEMP - HDO202
@@ -9872,6 +9923,10 @@
     topicUid: Connector_help_Zenoss_Database
   - name: Zenoss Database - Element
     topicUid: Connector_help_Zenoss_Database_-_Element
+- name: ZDF
+  items:
+  - name: ZDF BFE KSC Core
+    topicUid: Connector_help_ZDF_BFE_KSC_Core
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
@@ -9946,6 +10001,8 @@
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
   - name: ZTE ZXDU
     topicUid: Connector_help_ZTE_ZXDU
+  - name: ZTE ZXDUPA-BCUA
+    topicUid: Connector_help_ZTE_ZXDUPA-BCUA
   - name: ZTE ZXR10 2900E Series
     topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900

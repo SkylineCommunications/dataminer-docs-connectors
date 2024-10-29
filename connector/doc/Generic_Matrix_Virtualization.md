@@ -411,6 +411,21 @@ When the configuration is done, all inputs will be listed in the **Source Inputs
 
 When the configuration is done, all outputs will be listed in the **Source Outputs** table. The **Type** column indicates if a particular output is used as a tie line node.
 
+### Heartbeats
+
+The connector can monitor the subscriptions by subscribing to a heartbeat PID on a source matrix. You can configure this in the source matrix table. Note that this parameter expects UTC time.
+
+If a disconnection is detected, the connector will attempt to recover. The recovery will be preceded by an error in the logs, similar to the following error:
+
+```txt
+CQAction::Run|ERR|-1|QAction [3195] triggered by [pid=3195/idx=-1/pk=/user=] failed. (0x800706BA)
+   Input: new = <NULL>
+   Input: old = <NULL>
+   Input: extra = <NULL>
+```
+
+This is normal DataMiner behavior.
+
 ## Notes
 
 This connector is part of the vMatrix solution.
