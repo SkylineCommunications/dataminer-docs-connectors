@@ -576,6 +576,8 @@
     topicUid: Connector_help_AppearTV_Telenet_Light
   - name: AppearTV Transcoder HVQ BC
     topicUid: Connector_help_AppearTV_Transcoder_HVQ_BC
+  - name: Appear X Platform
+    topicUid: Connector_help_Appear_X_Platform
   - name: AppearTV X20 Platform
     topicUid: Connector_help_AppearTV_X20_Platform
   - name: AppearTV X20 Platform - AppearTV X20 Decoder
@@ -4506,8 +4508,8 @@
     topicUid: Connector_help_Icareus_EP100
 - name: Icinga
   items:
-  - name: Icinga 2
-    topicUid: Connector_help_Icinga_2
+  - name: Icinga Icinga 2
+    topicUid: Connector_help_Icinga_Icinga_2
 - name: IDC
   items:
   - name: IDC P561 Audio Encoder
@@ -6538,6 +6540,10 @@
   items:
   - name: Nutanix Prism
     topicUid: Connector_help_Nutanix_Prism
+- name: NVIDIA
+  items:
+  - name: NVIDIA Onyx Manager
+    topicUid: Connector_help_NVIDIA_Onyx_Manager
 - name: Ocean Controls
   items:
   - name: Ocean Controls KTA-282 Weather Station Gateway
@@ -8836,6 +8842,8 @@
     topicUid: Connector_help_Telenor_BCDB_Multiviewer_Manager
   - name: Telenor Channel Correlation Service Protocol
     topicUid: Connector_help_Telenor_Channel_Correlation_Service_Protocol
+  - name: Telenor Cisco CBR-8 Video Platform
+    topicUid: Connector_help_Telenor_Cisco_CBR-8_Video_Platform
   - name: Telenor CMDB Provisioning
     topicUid: Connector_help_Telenor_CMDB_Provisioning
   - name: Telenor Common Onboarding Instances
