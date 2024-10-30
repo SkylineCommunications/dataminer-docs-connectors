@@ -12,13 +12,8 @@ This connector is intended to be used with the Neuron COMPRESS, which provides t
 
 | Range                | Key Features     | Based on     | System Impact                                            |
 |----------------------|------------------|--------------|----------------------------------------------------------|
-<<<<<<< HEAD
 | 1.0.0.x              | Initial version. | -            | -                                                        |
 | 1.1.0.x [SLC Main]   | Support v5.9.1   | 1.0.0.2      | Possible impact on alarms, trending, and Visual Overview |
-=======
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                                                        |
-| 1.1.0.x [SLC Main]   | Support v5.9.1.  | 1.0.0.2      | Possible impact on alarms, trending, and Visual Overview |
->>>>>>> f70269861ca0795f8bfcaf74e85ed74814670541
 
 ### Product Info
 
