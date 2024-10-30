@@ -16,26 +16,16 @@ You can configure multiple file path combinations, each with dedicated upload se
 <br>
 
 > [!NOTE]
-> **LEGAL NOTE**: For a better user experience, this connector can be used together with the [**Microsoft Azure Cloud Platform**](xref:Connector_help_Microsoft_Azure) connector, which allows you to monitor relevant resource metrics available in Azure.
+> For a better user experience, this connector can be used together with the [**Microsoft Azure Cloud Platform**](xref:Connector_help_Microsoft_Azure) connector, which allows you to monitor relevant resource metrics available in Azure.
 
 ## Key Features
 
 - Configure Azure Storage Authentication.
 <br>
-<div style="text-align: center;">
-    <figure>
-        <img src="~/connector/images/MicrosoftAzure_FilePusher_General_Page.PNG" width="70%" style="offset: 100px 10px; border: #000000 3px outset"></img><br>
-        <figcaption>General Page</figcaption>
-    </figure>
-</div>
+![File Paths Page](~/connector/images/MicrosoftAzure_FilePusher_General_Page.jpg "File Paths")<br>
 
 - Management of file path combinations and their configurations in the File Paths table.
-<div style="text-align: center;">
-   <figure>
-        <img src="~/connector/images/MicrosoftAzure_FilePusher_FilePaths_Page.PNG" width="70%" style="offset: 100px 10px; border: #000000 3px outset"></img><br>
-        <figcaption>File Paths table</figcaption>
-    </figure>
-</div>
+![File Paths Page](~/connector/images/MicrosoftAzure_FilePusher_FilePaths_Page.jpg "File Paths")<br>
 
 - Configure upload interval for each file path combination.
 - Configure upload options (Overwrite, Recursive, Auto Delete on Success, Tries) for each file path combination.
@@ -48,4 +38,4 @@ To deploy this integration, you will need:
 - DataMiner version 10.2.0 CU15 or higher
 
 > [!NOTE]
-> **LEGAL NOTE**: For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page).

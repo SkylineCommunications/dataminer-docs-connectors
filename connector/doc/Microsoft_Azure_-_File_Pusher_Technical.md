@@ -18,7 +18,11 @@ You can configure multiple file path combinations, each with dedicated upload se
 
 #### HTTP Main Connection
 
-This connector uses an HTTP connection. However, it requires no input from the user regarding the connection configuration, but only Azure Storage credentials (Tenant ID, Client ID, and Client Secret) and Storage URL, to which the files are uploaded.
+This connector uses an HTTP connection. However, it requires no input from the user regarding the connection configuration.
+
+### Initialization
+
+On the **General** page, configure and test Azure Storage credentials (Tenant ID, Client ID, Client Secret) and the Storage URL to proceed with setting up file path combinations.
 
 ## How to use
 
