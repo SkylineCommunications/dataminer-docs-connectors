@@ -22,9 +22,9 @@ The Vodafone Deutschland Descrambling service protocol monitors the outgoing str
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform)			   | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | - |
 
 ## Configuration
 
@@ -33,17 +33,9 @@ The Vodafone Deutschland Descrambling service protocol monitors the outgoing str
 This is a service protocol. To create a service using this protocol:
 
 1. In DataMiner Cube, right-click a view in the Surveyor and select *Create service*.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol, *Vodafone Kabel Deutschland GmbH SAT DL Service,* with the latest version or production version.
-4. Go to the *parameters* tab and include the service you want to monitor.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
+1. Specify the name for the service.
+1. Open the advanced options and select the service protocol, *Vodafone Kabel Deutschland GmbH SAT DL Service*, with the latest version or production version.
+1. Go to the *parameters* tab and include the service you want to monitor.
 
 ## How to use
 
