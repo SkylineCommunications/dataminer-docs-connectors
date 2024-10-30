@@ -4,7 +4,7 @@ uid: Connector_help_Meinberg_LANTIME_IMS-LSG_API_V17
 
 # Meinberg LANTIME IMS-LSG API V17
 
-The **LSG** (Line Signal Generator) generates different reference signals (Clock/BITS) which are derived from the GNSS-locked master oscillator of a preconnected satellite receiver, which means that the module maintains high precision by synchronizing with Global Navigation Satellite Systems (like GPS).
+The **LSG** (Line Signal Generator) generates different reference signals (Clock/BITS) derived from the GNSS-locked master oscillator of a preconnected satellite receiver, which means that the module maintains high precision by synchronizing with global navigation satellite systems (like GPS).
 
 ## About
 
