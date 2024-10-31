@@ -12,18 +12,18 @@ Credentials for authentication are securely stored within the collector and used
 
 You can configure multiple file path combinations, each with dedicated upload settings, allowing flexible file transfers to the Azure Blob Storage that best fits your use case.
 
-> [!NOTE]
+> [!TIP]
 > For a better user experience, this connector can be used together with the [**Microsoft Azure Cloud Platform**](xref:Connector_help_Microsoft_Azure) connector, which allows you to monitor relevant resource metrics available in Azure.
 
 ## Key Features
 
 - Configure Azure Storage Authentication.
 
-  ![General Page](~/connector/images/MicrosoftAzure_FilePusher_General_Page.jpg)
+  ![General Page](~/connector/images/MicrosoftAzure_FilePusher_General_Page.png)
 
 - Manage file path combinations and their configurations in the File Paths table.
 
-  ![File Paths Page](~/connector/images/MicrosoftAzure_FilePusher_FilePaths_Page.jpg)
+  ![File Paths Page](~/connector/images/MicrosoftAzure_FilePusher_FilePaths_Page.png)
 
 - Configure an upload interval for each file path combination.
 
