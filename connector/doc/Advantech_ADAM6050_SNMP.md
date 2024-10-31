@@ -10,9 +10,9 @@ The Advantech ADAM6050 SNMP connector enables monitoring and management of digit
 
 ### Version Info
 
-| Range       | Features                                             | Based on | System Impact |
-|-------------|------------------------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | <ul><li>Initial version</li></ul> | - | None |
+| Range              | Features        | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
@@ -39,18 +39,10 @@ This connector uses an SNMP connection to communicate with the Advantech ADAM605
 - **Get community string**: Community string for reading device values (default: *public*).
 - **Set community string**: Community string for writing values to the device (default: *private*).
 
-### Initialization
-
-No additional configuration of parameters is necessary upon element creation.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is accessible when the client machine has network access to the device.
 
 ## How to use
 
-Upon creation and configuration, the connector enables real-time monitoring and control of input and output values for the Advantech ADAM6050 device. It retrieves device data over SNMP and displays it in DataMiner, allowing operators to manage device statuses effectively.
+When an element has been created with this connector, you will be able to monitor and control input and output values for the Advantech ADAM6050 device in real time. The connector will retrieve device data over SNMP and display it in DataMiner, allowing you to manage device statuses effectively.
