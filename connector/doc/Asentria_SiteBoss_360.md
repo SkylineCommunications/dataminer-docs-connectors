@@ -10,23 +10,21 @@ This connector allows you to monitor general parameters (e.g. system uptime, loc
 
 ### Version Info
 
-**This subsection can only be omitted for an exported connector**
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>SNMP Monitoring</li><li>SNMP Traps</li></ul>         |-         |-         |
+| Range              | Features                          | Based on | System Impact |
+|--------------------|-----------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | - SNMP monitoring<br>- SNMP traps | -        | -             |
 
 ### Product Info
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     | -        |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -38,30 +36,23 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **IP port**: [The IP port of the destination. (default: *161*)]
-- **Bus address**: [The bus address of the device.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *161*).
+- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
-- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
-- **Set community string**: [The community string used when setting values on the device. (default: *private*)]
-
-
-### Initialization
-
-Indicate if additional configuration of parameters is necessary in a newly created element.
-
-### Redundancy
-
-There is no redundancy defined.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ## How to use
 
-The connector is divided in three main parts
-- A single General page with standard device information
-- A few pages containing information regarding data traffic (Interface, Ports, Ethernet)
-- The specific device functions, such as the power, battery en event sensor information
+The connector is divided in three main parts:
 
-All tables are polled over SNMP
-For event sensor information, trap support is added to updated information when a trap comes in to provide accurate alarming.
+- A single **General** page with standard device information.
+- Several pages with information regarding data traffic: **Interface**, **Ports**, and **Ethernet**.
+- The specific device functions, such as the **power**, **battery**, and **event sensor** information
+
+All tables are polled over SNMP.
+
+For event sensor information, information is updated whenever traps are received to ensure accurate alarm monitoring.
