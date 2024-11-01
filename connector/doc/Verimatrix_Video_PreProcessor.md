@@ -12,7 +12,7 @@ This connector uses **SNMP** to monitor the **Verimatrix** **Video PreProcessor*
 
 ### Version Info
 
-| **Range** | **Description**                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                              | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                          | No                  | Yes                     |
 | 1.1.0.x          | Based on 1.0.0.1 Added support for firmware version 4.1. | No                  | Yes                     |

@@ -14,7 +14,7 @@ Range **2.0.0.x** of the protocol uses **SNMP** communication to monitor the dev
 
 ### Version Info
 
-| **Range** | **Description**        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description            | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial serial version | No                  | Yes                     |
 | 2.0.0.x          | Initial SNMP version   | No                  | Yes                     |

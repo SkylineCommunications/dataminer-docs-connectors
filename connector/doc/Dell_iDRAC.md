@@ -6,27 +6,36 @@ uid: Connector_help_Dell_iDRAC
 
 The **Dell iDRAC** controller protocol communicates with an external card on any Dell PowerEdge device, and allows the user to remotely reboot and monitor the server in the case of a shutdown.
 
-## About
+This connector can be used to monitor and trend all status information and readings from the Dell iDRAC.
 
-This connector communicates using SNMP v3. It can be used to monitor and trend all status information and readings from the **Dell iDRAC**.
+## About
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+| Range   | Key Features    | Based on | System Impact |
+|---------|-----------------|----------|---------------|
+| 1.0.0.x | Initial version | -        | -             |
+| 1.0.1.x | HTTP API added  | -        | -             |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.30.30.30                  |
+| Range   | Supported Firmware Version                       |
+|---------|--------------------------------------------------|
+| 1.0.0.x | 2.30.30.30                                       |
+| 1.0.1.x | 2.30.30.30 for SNMP. iDRAC 9 and above for HTTP. |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 1.0.1.x | No              | Yes                 | -                 | -                   |
 
-#### SNMP Main Connection
+## Configuration
+
+### Connections
+
+#### SNMP Main Connection (Range 1.0.0.x)
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -43,11 +52,23 @@ SNMP Settings:
 - **Privacy type**: The SNMPv3 privacy type.
 - **Privacy password**: The SNMPv3 privacy password.
 
+#### HTTP Main Connection (Range 1.0.1.x)
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination. Default: *443*.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
+- **Number of Retries**: The number of retries for HTTP commands. This should be set to "0" for write parameters to work properly.
+- **Timeout of a single command (ms)**: The time between HTTP commands. This should be set to "15000".
+
 ## Usage
 
 ### System
 
-This page displays the **System Model Name**, **System Service Tag**, **System OS Version**, **Global System Status**, **Global Storage Status**, **System Power State** and **System Power Up Time**.
+This page displays the **System Model Name**, **System Service Tag**, **System OS Version**, **Global System Status**, **Global Storage Status**, **System Power State**, and **System Power Up Time**.
 
 There are also three page buttons:
 
@@ -57,7 +78,7 @@ There are also three page buttons:
 
 ### Chassis Info
 
-This page contains the chassis information. Other tables will reference to the chassis entries on this page, including the **Power Supply**, **Cooling Device**, **Temperature Probe**, **Processor Device**, **Processor Device Status**, **Memory Device**, **PCI Device**, **Network Device** and **System Slot Table**.
+This page contains the chassis information. Other tables will reference to the chassis entries on this page, including the **Power Supply**, **Cooling Device**, **Temperature Probe**, **Processor Device**, **Processor Device Status**, **Memory Device**, **PCI Device**, **Network Device**, and **System Slot Table**.
 
 ### PSU
 
@@ -74,7 +95,7 @@ This page contains the following tables:
 
 On this page, you can find all settings, readings and status information for the processors in the **Processor Device Table** and **Processor Device Status Table**.
 
-Additional readings and status information can be found in the **Memory**, **PCI** and **Network Device Table**.
+Additional readings and status information can be found in the **Memory**, **PCI**, and **Network Device Table**.
 
 ### Modular Slots
 
@@ -82,7 +103,7 @@ This page contains the **System Slot Table**. This table will only be polled if 
 
 ### RAID
 
-On this page, you can find settings, readings and status information in the **Controller Table**, **Enclosure Table**, **Physical Disk Table** and **Battery Table**.
+On this page, you can find settings, readings and status information in the **Controller Table**, **Enclosure Table**, **Physical Disk Table**, and **Battery Table**.
 
 All information on this page is available for alarm monitoring and trending
 
@@ -104,5 +125,16 @@ There is a special restriction related to an authentication type of *None*: if t
 
 The table below lists the supported and non-supported selections for authentication and privacy.
 
-#### SNMP Authentication/Privacy matrix Table 1.
+#### SNMP Authentication/Privacy matrix Table 1
 
+| Authentication | Privacy | Support       |
+|----------------|---------|---------------|
+| None           | None    | Supported     |
+| None           | AES     | Not supported |
+| None           | DES     | Not supported |
+| MD5            | None    | Supported     |
+| MD5            | AES     | Supported     |
+| MD5            | DES     | Supported     |
+| SHA            | None    | Supported     |
+| SHA1           | AES1    | Supported     |
+| SHA            | DES     | Supported     |

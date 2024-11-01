@@ -10,7 +10,7 @@ This connector can ingest any **CSV** and **XLSX** files, which can be used for 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                      | **Based on** | **System Impact** |
+| Range              | Key Features                                                        | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version. Imports a CSV file with a specific header structure. | -            | -                 |
 | 1.0.1.x [SLC Main]   | Imports CSV and XLSX files with any headers.                          | -            | -                 |

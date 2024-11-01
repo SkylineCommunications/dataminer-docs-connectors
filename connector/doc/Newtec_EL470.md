@@ -14,7 +14,7 @@ The web interface can be accessed if the client machine has access to it.
 
 ### Version Info
 
-| **Range** | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                               | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------|---------------------|-------------------------|
 | 1.7.2.x          | Initial version                           | No                  | Yes                     |
 | 1.8.25.x         | New firmware based on 1.7.2.x (see below) | No                  | Yes                     |

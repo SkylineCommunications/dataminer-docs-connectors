@@ -14,7 +14,7 @@ The connector first retrieves the destination-specific information, which includ
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                                                                               | No                  | Yes                     |
 | 2.0.0.x          | Based on 1.0.0.1. Changed the matrix size to 1024x1024. Added redundant polling. Improved the delay when setting crosspoints. | No                  | Yes                     |

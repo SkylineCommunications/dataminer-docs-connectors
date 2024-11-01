@@ -2,7 +2,7 @@
 uid: Connector_help_Netgear_FS726T
 ---
 
-Netgear FS726T
+# Netgear FS726T
 
 The FS726T is a Netgear PROSAFET 24 PORT 10/100 Smart Switch with 2 Gigabit Ports.
 

@@ -21,39 +21,39 @@ The most important features of the **Heights Networking Platform** are:
 
 ### Version Info
 
-| **Range**         | **Description**                                                                                                                | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|--------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial Comtech Netvue-specific branch                                                                                         | No                  | Yes                     |
-| 1.1.0.x                  | Comtech Netvue: Branched from 1.0.0.13 - supports firmware 2.4.1                                                               | No                  | Yes                     |
-| 1.2.0.x                  | Comtech Netvue: Branched from 1.1.0.7 - supports firmware 2.6.1                                                                | No                  | Yes                     |
-| 1.3.0.x                  | Comtech NetVue: Branched from 1.2.0.2 - supports firmware 3.x                                                                  | No                  | Yes                     |
-| 1.3.1.x                  | General changes: Parameters descriptions, text and subtext.                                                                    | No                  | Yes                     |
-| 1.4.0.x                  | General changes. NetVue 3.2.                                                                                                   | No                  | Yes                     |
-| 1.4.1.x                  | Pico.                                                                                                                          | No                  | Yes                     |
-| 1.5.0.x                  | General changes. NetVue 4.0.x.                                                                                                 | No                  | Yes                     |
-| 1.5.1.x                  | Mobility/PICO changes for NV 4.3.x                                                                                             | No                  | Yes                     |
-| 2.0.0.x                  | Branched from 1.2.0.2: Removed Netvue-specific functionality in order to let the connector function outside a Netvue environment. | No                  | Yes                     |
-| 2.0.1.x **\[SLC Main\]** | Initial generic customer branch.                                                                                               | No                  | Yes                     |
+| Range                | Description                                                                                                                       | DCF Integration | Cassandra Compliant |
+|----------------------|-----------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x              | Initial Comtech Netvue-specific branch                                                                                            | No              | Yes                 |
+| 1.1.0.x              | Comtech Netvue: Branched from 1.0.0.13 - supports firmware 2.4.1                                                                  | No              | Yes                 |
+| 1.2.0.x              | Comtech Netvue: Branched from 1.1.0.7 - supports firmware 2.6.1                                                                   | No              | Yes                 |
+| 1.3.0.x              | Comtech NetVue: Branched from 1.2.0.2 - supports firmware 3.x                                                                     | No              | Yes                 |
+| 1.3.1.x              | General changes: Parameters descriptions, text and subtext.                                                                       | No              | Yes                 |
+| 1.4.0.x              | General changes. NetVue 3.2.                                                                                                      | No              | Yes                 |
+| 1.4.1.x              | Pico.                                                                                                                             | No              | Yes                 |
+| 1.5.0.x              | General changes. NetVue 4.0.x.                                                                                                    | No              | Yes                 |
+| 1.5.1.x              | Mobility/PICO changes for NV 4.3.x                                                                                                | No              | Yes                 |
+| 2.0.0.x              | Branched from 1.2.0.2: Removed Netvue-specific functionality in order to let the connector function outside a Netvue environment. | No              | Yes                 |
+| 2.0.1.x \[SLC Main\] | Initial generic customer branch.                                                                                                  | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.1.0.x          | 2.4.1                       |
-| 1.2.0.x          | 2.6.1                       |
-| 1.3.0.x          | 3.x                         |
-| 1.4.0.x          | 3.2.x                       |
-| 1.4.1.x          | 3.2.x                       |
-| 1.5.0.x          | 4.0.x                       |
-| 1.5.1.x          | 4.3.x                       |
-| 2.0.0.x          | 2.6.1                       |
-| 2.0.1.x          | 2.6.1                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 1.1.0.x | 2.4.1                      |
+| 1.2.0.x | 2.6.1                      |
+| 1.3.0.x | 3.x                        |
+| 1.4.0.x | 3.2.x                      |
+| 1.4.1.x | 3.2.x                      |
+| 1.5.0.x | 4.0.x                      |
+| 1.5.1.x | 4.3.x                      |
+| 2.0.0.x | 2.6.1                      |
+| 2.0.1.x | 2.6.1                      |
 
 ### Exported connectors
 
-| **Exported Connector**                                              | **Description**           |
-|--------------------------------------------------------------------|---------------------------|
+| Exported Connector                                         | Description               |
+|------------------------------------------------------------|---------------------------|
 | [CEFD H SNMP - FSK](xref:Connector_help_CEFD_H_SNMP_-_FSK) | FSK Functionality Module. |
 
 ## Installation and configuration

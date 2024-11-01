@@ -36,7 +36,7 @@ The information displayed in this connector is divided over seven pages:
 
 ### Version Info
 
-| **Range** | **Description**                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                              | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                         | No                  | No                      |
 | 1.1.0.1          | Branch version based on 1.0.0.x.DVE functionality added. | No                  | No                      |

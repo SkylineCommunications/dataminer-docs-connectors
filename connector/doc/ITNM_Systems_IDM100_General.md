@@ -12,7 +12,7 @@ This connector sends HTTP commands to the IDM100 over a serial connection. The c
 
 ### Version Info
 
-| **Range** | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                      | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------|---------------------|-------------------------|
 | 2.0.0.x          | Integration of previous version. | No                  | Yes                     |
 

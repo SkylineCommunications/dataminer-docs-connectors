@@ -10,7 +10,7 @@ The TNS546 is part of the Nevion nSure product line, which provides 24/7 monitor
 
 ### Version Info
 
-| **Range**            | **Key Features**                     | **Based on** | **System Impact** |
+| Range                | Key Features                         | Based on     | System Impact     |
 |----------------------|--------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Serial and SNMP connection for traps | -            | -                 |
 
