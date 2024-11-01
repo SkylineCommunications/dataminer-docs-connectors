@@ -6,8 +6,7 @@ uid: Connector_help_Teleste_HDC100_TSEMP
 
 The **Teleste HDC100 TSEMP connector** is a solution for managing and monitoring Teleste HDC100 devices with exceptional efficiency.
 It simplifies the complexity of overseeing multiple modules in distributed systems by providing a centralized interface for remote control, real-time monitoring, and alarm management within the HDO platform. 
-Integrated with DataMiner, the connector offers real-time access to device information, configuration, and status, supporting both Ethernet and serial communication. 
-Additionally, it evolves continually to accommodate new Teleste HDC100 modules and firmware updates, enhancing configuration and monitoring capabilities.
+This connector offers real-time access to device information, configuration, and status, supporting both Ethernet and serial communication. Additionally, it evolves continually to accommodate new Teleste HDC100 modules and firmware updates, enhancing configuration and monitoring capabilities.
 
 ## Key Features
 
@@ -15,15 +14,13 @@ Additionally, it evolves continually to accommodate new Teleste HDC100 modules a
 - **Customizable Alarm Limits**: Configure analog and discrete alarm limits tailored to your specific operational requirements, enhancing system responsiveness.
 - **Configuration Import and Management**: Easily import configurations using CSV files, streamlining the setup of new modules and reducing manual entry errors.
 - **Automatic Module Management**: Utilize automatic removal options for missing modules, ensuring a clean and efficient system overview.
-- **Effortless Integration**: Easily connect and manage your Teleste HDC100 devices through seamless integration with the DataMiner platform.
 - **Remote Monitoring and Control**: Configure and monitor devices from anywhere with full remote management capabilities, ensuring continuous operational oversight.
 - **Flexible Scalability**: Supports various Teleste HDC100 modules, enabling you to expand and adapt your system effortlessly as your needs grow.
 - **Optimized Performance**: Stay up to date with regular firmware updates, ensuring reliable device operation and enhanced efficiency.
-- **Comprehensive Device Management**: Gain complete control over all connected Teleste HDC100 modules, simplifying configuration and maintenance tasks.
 - **User-Friendly Interface**: Navigate a structured and intuitive interface for quick access to critical features, settings, and module overviews.
 
 ### Module Overview
-Provides a comprehensive summary of the Teleste HDC100 device status, displaying all connected modules and offering real-time health information. The layout emphasizes key system metrics, delivering clear insights without unnecessary distractions.
+Provides a summary of the Teleste HDC100 device status, displaying all connected modules and offering real-time health information. The layout emphasizes key system metrics, delivering clear insights without unnecessary distractions.
 
 ![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)  
 
