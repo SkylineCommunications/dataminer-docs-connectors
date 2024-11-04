@@ -16,9 +16,9 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 > [!NOTE] 
 > The Techex MWCore connector requires the DataMiner system to have an indexing database configured or use STaaS.
 
-## 1. About
+## About
 
-### 1.2. Version Info
+### Version Info
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
@@ -28,7 +28,7 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 | 1.0.3.x | - Statistics Connections table and "IP Connection <br>- Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
 | 1.0.4.x [SLC Main] | - Secondary interface has been removed from element creation (additional MWCore nodes of the same cluster are now added in the connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default. They can be displayed using the parameters on the "Debug" page.<br>- The debugging logs for the statistics interface have been enhanced (serilog is now used), and the default path is now the logging folder.<br>- The Sources and Output tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection. This can be activated on the Statistics Configuration page by enabling the "Elastic Export".<br>- Support for the 2022-7 version has been added.<br>| 1.0.3.33 | **Existing elements need to be reconfigured to accommodate the connection changes. It is highly advisable to recreate the elements.** |
 
-### 1.3. Product Info
+### Product Info
 
 | Range                             | Supported Firmware                             |
 |-----------------------------------|------------------------------------------------|
@@ -36,7 +36,7 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 | 1.0.3.x | **MWCore version:** 5.22.4 <br> **MWEdges version:** 1.24.1 |
 | 1.0.4.x [SLC Main]| **MWCore version:** 5.22.4, 5.29.0 <br> **MWEdges version:** 1.24.1, 1.34.0 |
 
-### 1.4. System Info
+### System Info
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
@@ -46,11 +46,11 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 | 1.0.3.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
 | 1.0.4.x | Yes | Yes | - | [Techex MWCore - Generic Device](xref:Connector_help_Techex_MWCore_-_Generic_Device) |
 
-## 2. Configuration
+## Configuration
 
-### 2.1. Connections
+### Connections
 
-#### 2.1.1. HTTP Main Connection
+#### HTTP Main Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -62,7 +62,7 @@ HTTP CONNECTION:
 
 This connection is used to perform the regular polling, to retrieve data from the device based on a request/response mechanism.
 
-#### 2.1.2. HTTP Secondary Connection (Prior to Range 1.0.3.x)
+#### HTTP Secondary Connection (Prior to Range 1.0.3.x)
 
 This connector also uses a redundant HTTP connection and requires the following input during element creation:
 
@@ -75,7 +75,7 @@ HTTP CONNECTION:
 > [!NOTE] 
 > This redundant connection is used for regular polling when the main connection fails. Starting from range 1.0.4.x, it is no longer in use. The 1.0.4.x range employs dynamic IPs and enables users to specify additional MWCore nodes within the same cluster in the Connections table.
 
-### 2.2. Initialization
+### Initialization
 
 In order to initialize the connector, you need to specify the following input configuration on the **General** page and **Statistics Configuration** subpage:
 
@@ -93,18 +93,18 @@ In order to initialize the connector, you need to specify the following input co
 
 In addition, note that *openssl.exe* comes alongside a [Git](https://git-scm.com/) installation.
 
-### 2.3. Redundancy
+### Redundancy
 From range 1.0.4.x [SLC Main], a connections table is available on the General page, allowing users to specify additional TXCore nodes for DataMiner to automatically connect to if the primary connection becomes unavailable. 
 The first entry is automatically added and always matches the one defined in the element creation edit menu.
 
-### 2.4. DataMiner Connectivity Framework
+### DataMiner Connectivity Framework
 
 The Techex MWCore - Generic Device connector supports DCF usage. DCF can be implemented via the DataMiner DCF user interface and/or through DataMiner third-party connectors, such as a manager connector. This connector manages connectivity for all exported connectors.
 
 **Interfaces type**: Virtual dynamic interfaces 
 - **Output:** Created to interface with the DVE table with **interface type out**.
 
-## 3. How to use - SLC Main version
+## How to use - SLC Main version
 
 The Techex MWCore connector offers management and monitoring capabilities for the Techex TXCore Platform. 
 Configuration settings are retrieved through a polling mechanism that integrates with Techex's REST API (available at ```<URL>/doc/```). 
@@ -198,7 +198,7 @@ This page is only visible if the "SRM Information" parameter is enabled on the "
 ### Web Interface
 Opens the TXCore web interface. The web interface is only accessible when the DataMiner host has network access to the TXCore platform.
 
-## 4. Known Issues
+## Known Issues
 
 ### DataMiner is not displaying statistics/telemetry
 In most cases the issue is related to firewall or to the certificate.
