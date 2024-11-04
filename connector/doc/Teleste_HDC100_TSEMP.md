@@ -22,21 +22,21 @@ This connector offers real-time access to device information, configuration, and
 ### Module Overview
 Provides a summary of the Teleste HDC100 device status, displaying all connected modules and offering real-time health information. The layout emphasizes key system metrics, delivering clear insights without unnecessary distractions.
 
-![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)  
+![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png){: width="300"}
 
 ---
 
 ### General
 Showcases essential device information, including name, configuration details, software version, and uptime. Offers quick access to reset and monitoring functions, designed for intuitive and efficient use.
 
-![General Page](~/connector/images/TelesteHDC100GeneralPage.png)  
+![General Page](~/connector/images/TelesteHDC100GeneralPage.png){: width="300"}
 
 ---
 
 ### Interfaces
 Presents detailed network configuration options, covering IP addresses, network masks, gateway parameters, and more. Focused on providing essential settings for effective network management and seamless connectivity.
 
-![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png)  
+![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png){: width="300"}
 
 ---
 
@@ -50,7 +50,7 @@ Presents detailed network configuration options, covering IP addresses, network 
 
 **Benefit:** Users can **quickly address potential issues** in real time, improving the reliability and performance of their network operations.
 
-![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.png)  
+![Analog Alarm Limits](~/connector/images/TelesteHDC100MonitoringAnalogAlarmLimits.png){: width="300"}
 
 ---
 
@@ -61,7 +61,7 @@ Presents detailed network configuration options, covering IP addresses, network 
 
 **Benefit:** Users can achieve **better system oversight** and targeted management of discrete alarms, reducing complexity and enhancing operational efficiency.
 
-![Discrete Alarm Limits](~/connector/images/TelesteHDC100MonitoringDiscreteAlarms.png)  
+![Discrete Alarm Limits](~/connector/images/TelesteHDC100MonitoringDiscreteAlarms.png){: width="300"}
 
 ---
 
