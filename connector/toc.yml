@@ -7929,6 +7929,8 @@
     topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM
   - name: Skyline EPM Platform PLM
     topicUid: Connector_help_Skyline_EPM_Platform_PLM
+  - name: Skyline EPM Platform VSAT DSM SO
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
   - name: Skyline EPM Platform VSAT GEO
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
   - name: Skyline Example Serial Client Advanced
