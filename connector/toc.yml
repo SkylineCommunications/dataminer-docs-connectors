@@ -170,6 +170,8 @@
     topicUid: Connector_help_Advantech_ADAM5060
   - name: Advantech ADAM6050
     topicUid: Connector_help_Advantech_ADAM6050
+  - name: Advantech ADAM6050 SNMP
+    topicUid: Connector_help_Advantech_ADAM6050_SNMP
   - name: Advantech ADAM6060
     topicUid: Connector_help_Advantech_ADAM6060
   - name: Advantech ADAM6251
@@ -552,6 +554,10 @@
   items:
   - name: Apica Synthetic Monitoring API
     topicUid: Connector_help_Apica_Synthetic_Monitoring_API
+- name: Appear
+  items:
+  - name: Appear X Platform
+    topicUid: Connector_help_Appear_X_Platform
 - name: AppearTV
   items:
   - name: AppearTV Audio Transcoder
@@ -576,8 +582,6 @@
     topicUid: Connector_help_AppearTV_Telenet_Light
   - name: AppearTV Transcoder HVQ BC
     topicUid: Connector_help_AppearTV_Transcoder_HVQ_BC
-  - name: Appear X Platform
-    topicUid: Connector_help_Appear_X_Platform
   - name: AppearTV X20 Platform
     topicUid: Connector_help_AppearTV_X20_Platform
   - name: AppearTV X20 Platform - AppearTV X20 Decoder
@@ -724,6 +728,8 @@
     topicUid: Connector_help_Asentria_SiteBoss_220
   - name: Asentria SiteBoss 340
     topicUid: Connector_help_Asentria_SiteBoss_340
+  - name: Asentria SiteBoss 360
+    topicUid: Connector_help_Asentria_SiteBoss_360
   - name: Asentria SiteBoss 410
     topicUid: Connector_help_Asentria_SiteBoss_410
   - name: Asentria SiteBoss 450
@@ -5412,6 +5418,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-LNO
   - name: Meinberg LANTIME IMS-LNO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-LNO_API_V10
+  - name: Meinberg LANTIME IMS-LSG API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-LSG_API_V17
   - name: Meinberg LANTIME IMS-MRI
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI
   - name: Meinberg LANTIME IMS-MRI API V10
@@ -5504,6 +5512,11 @@
     topicUid: Connector_help_Microsoft_Azure_-_Cosmos_DB_Accounts
   - name: Microsoft Azure - Disks
     topicUid: Connector_help_Microsoft_Azure_-_Disks
+  - name: Microsoft Azure - File Pusher
+    topicUid: Connector_help_Microsoft_Azure_-_File_Pusher
+    items:
+      - name: Microsoft Azure - File Pusher Technical
+        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
   - name: Microsoft Azure - Kubernetes Services
     topicUid: Connector_help_Microsoft_Azure_-_Kubernetes_Services
   - name: Microsoft Azure - Load Balancers
@@ -9615,6 +9628,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Channel_Management
   - name: Vodafone Kabel Deutschland GmbH DAVE DB
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DAVE_DB
+  - name: Vodafone Kabel Deutschland GmbH Descrambling Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service
   - name: Vodafone Kabel Deutschland GmbH DVB-T2 Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
   - name: Vodafone Kabel Deutschland GmbH IP GW Service
