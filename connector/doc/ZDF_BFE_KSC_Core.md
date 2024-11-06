@@ -4,7 +4,7 @@ uid: Connector_help_ZDF_BFE_KSC_Core
 
 # ZDF BFE KSC Core
 
-This custom connector functions as a (virtual) control panel which receives information pushed from the BFE KSC Core using the SC05 BD-Protocol.
+This custom connector functions as a (virtual) control panel that receives information pushed from the BFE KSC Core using the SC05 BD-Protocol.
 
 ## About
 
