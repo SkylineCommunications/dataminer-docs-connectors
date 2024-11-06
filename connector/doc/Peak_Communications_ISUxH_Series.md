@@ -4,13 +4,11 @@ uid: Connector_help_Peak_Communications_ISUxH_Series
 
 # Peak Communications ISUxH Series
 
-ISUxH series of IF/ L-Band & SHF switching units from Peak Communications are designed to provide high quality signal switching, primarily for satellite earth station signal selection (monitoring) and signal distribution applications.
+The ISUxH series of IF/L-Band and SHF switching units from Peak Communications are designed to provide high-quality signal switching, primarily for satellite earth station signal selection (monitoring) and signal distribution applications.
 
-A serial connection is used in order to retrieve and configure the information of the device.
+This connector uses a serial connection to communicate with the device, so that users can check general information about the unit and also set the switch position in DataMiner.
 
 ## About
-
-This driver use serial connection to communicate with device. User can check all general information about unit but also perform sets to selected switch position.
 
 ### Version Info
 
@@ -48,8 +46,8 @@ SERIAL CONNECTION:
 
 ## How to use
 
-The **General** page displays general infomation about unit and "Set Switch Position" option where user can perform switch position sets.
+The **General** page displays general information about the unit. With the **Set Switch Position** option, you can set the switch position.
 
-Unit type depends on where "01" is located in the unit name. If we have the case "ISUSH2101" it means that it is an input type, if the name is "ISUSH0121" then it is an output type. Depending on which type we have, we will also have a disabled opposite type for the set switch position.
+The unit type depends on where "01" is located in the unit name. "ISUSH2101" indicates an input type, while "ISUSH0121" indicates an output type. Depending on the type, the opposite type will be disabled for the Set Switch Position option.
 
-On the **Switch Labels** page, you can configure labels for all positions related to used switch unit.
+On the **Switch Labels** page, you can configure labels for all positions related to the used switch unit.

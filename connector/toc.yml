@@ -6797,6 +6797,8 @@
     topicUid: Connector_help_Peak_Communications_IBDH-XXXX
   - name: Peak Communications IBUH-137
     topicUid: Connector_help_Peak_Communications_IBUH-137
+  - name: Peak Communications ISUxH Series
+    topicUid: Connector_help_Peak_Communications_ISUxH_Series
   - name: Peak Communications P7000 SNMP
     topicUid: Connector_help_Peak_Communications_P7000_SNMP
   - name: Peak Communications PBU137
