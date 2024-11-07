@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Icinga_2
+uid: Connector_help_Icinga_Icinga_2
 ---
 
 # Icinga 2

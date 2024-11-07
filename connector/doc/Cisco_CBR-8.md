@@ -16,13 +16,13 @@ The connector uses regular timers that trigger every 60 and 120 seconds, as well
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
-| 1.0.1.x | Initial version. | No | No |
-| 1.0.2.x | Implemented changes on the Physical Upstream Channel Table and Upstream Bounding table. | No | No |
-| 1.0.3.x | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No | Yes |
-| 1.0.4.x | DCF feature added. | Yes | Yes |
-| 2.0.0.x | Connector review. Added CCAP parameters. | No | Yes |
+| 1.0.1.x [Deprecated] | Initial version. | No | No |
+| 1.0.2.x [Deprecated] | Implemented changes on the Physical Upstream Channel Table and Upstream Bounding table. | No | No |
+| 1.0.3.x [Deprecated] | Index of the Measurement Upstream Channel table changed to the instance of the channel. | No | Yes |
+| 1.0.4.x [DCF] | DCF feature added. | Yes | Yes |
+| 2.0.0.x [Deprecated] | Connector review. Added CCAP parameters. | No | Yes |
 | 2.0.1.x [SLC Main] | Split up MPEG table into 4 tables because of possibility of multiple programs per transport stream. | No | Yes |
-| 3.0.0.x | Customer specific branch. | No | Yes |
+| 3.0.0.x [Deprecated] | Customer-specific branch. | No | Yes |
 
 ### Product Info
 

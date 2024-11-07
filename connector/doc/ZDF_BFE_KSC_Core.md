@@ -4,7 +4,7 @@ uid: Connector_help_ZDF_BFE_KSC_Core
 
 # ZDF BFE KSC Core
 
-This custom connector retrieves information from a BFE KSC 2 RU/19" control panel with 72 buttons using the SC05 BD-Protocol.
+This custom connector functions as a (virtual) control panel that receives information pushed from the BFE KSC Core using the SC05 BD-Protocol.
 
 ## About
 
@@ -41,7 +41,7 @@ SMART-SERIAL CONNECTION:
 
 ## Logic
 
-A BFE KSC 2 RU/19" control panel can be used to display any kind of button layout. This connector is designed for a specific use case where the control panel is used to control matrix inputs and outputs. The connector will retrieve the input and output groups, together with the labels of the connections that are part of these groups.
+This connector is designed for a specific use case where BFE KSC Core contains the matrix inputs and outputs each linked to a label for a designated group. The connector will receive the input and output groups, together with the labels of the connections that are part of these groups.
 
 The way the connector does this is by sending *ButtonPressed* commands to the control panel and checking what the result of each button press is.
 
@@ -53,7 +53,7 @@ The way the connector does this is by sending *ButtonPressed* commands to the co
 
 ## Requirements
 
-In order for the connector to interact with the control panel and correctly interpret what is being displayed, make sure the control panel has the following layout (as illustrated in the image above):
+In order for the connector to interact with the BFE KSC Core and correctly interpret what is being displayed, make sure the BFE KSC Core has the following layout (as illustrated in the image above):
 
 1. The two buttons in the purple box are used to switch between input and output groups. Pressing the top button causes the input groups to be displayed. Pressing the bottom button causes the output groups to be displayed. The colors and text of these buttons can be freely adjusted, but their positions cannot.
 1. Every button in the green box that has a text and a color is considered a **group**. The active group (= the currently selected group) is determined by the green background color (RGB 0;255;0). This means that any group can be added, with any text or background color except for green (RGB 0;255;0), as long as it is part of the green box. The color to visualize the active group cannot be adjusted.
