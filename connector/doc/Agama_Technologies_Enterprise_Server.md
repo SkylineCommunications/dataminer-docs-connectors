@@ -20,7 +20,7 @@ Alarms cannot be retrieved on the analyzer devices themselves, but the Agama Ent
 | 2.0.0.x | Added SSH and SOAP. |  | - |
 | 2.0.1.x | Fixed OS release version. | 2.0.0.6 | Custom reports and alarm templates need to be adjusted, because of a parameter type change from double to string. |
 | 2.1.0.x | Added support for firmware v7.0.4. | 2.0.1.2 | Updated URL on HTTP sessions; older firmware versions will not work with this range. |
-| 2.2.0.x [SLC Main] | Added support for firmware v9.0.6. | 2.1.0.1 | Updated URL on HTTP sessions; older firmware versions will not work with this range. |
+| 2.2.0.x [SLC Main] | Added support for firmware v9.0.6. | 2.1.0.1 | Updated URL on HTTP sessions; older firmware versions will not work with this range. Only "cli version" SSH command is supported on this range.|
 
 ### Product Info
 
@@ -91,6 +91,8 @@ The web interface is only accessible when the client machine has network access 
 This page displays the **Version Number**, **CPU Usage** and **Memory Usage** of the Enterprise Server.
 
 The Enterprise Server and Aksusbd Linux service status are also displayed, and you can start, stop, and restart the services.
+
+Take a note that only parameter for Version will be displayed on 2.2.0.X range.
 
 ### Overview page
 
