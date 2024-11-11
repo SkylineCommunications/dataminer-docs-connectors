@@ -91,6 +91,7 @@ This page contains **communication configuration** parameters related to the web
 - Time format used by ScheduAll.
 
 > Note: Range 2.0.3.X has some additional parameters on this page:
+> - **Resolve DNS Name** - Indicates if hostname (if specified) should be DNS resolved. Set to _false_ by default.
 > - **Dynamic URL** - Base URL path to append to polling IP/host for each request
 > - **Authentication Provider Username** - Used for setting the username if another authentication layer is used.
 > - **Authentication Provider Password** - User for setting the password if another authentication layer is used.
