@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Verizon_DSM_SO
+uid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
 ---
 
-# Verizon DSM SO
+# Skyline EPM Platform VSAT DSM SO
 
 This connector is used to gather information **via inter-element communication** that will be exported to a location used by the **Generic Sun Outage** connector. The information gathered consists of key parameters used during the calculation of sun outages. This connector is purely a system connector with this sole responsibility.
 
