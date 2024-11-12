@@ -59,7 +59,9 @@ The web interface is only accessible when the client machine has network access 
 ## How to Use
 
 The element created with this connector consists of the data pages detailed below.
-Warning: If you want to poll Fabric related data (including: **Fabric Errors, Fabric Error History, Fabric Flows and Host Policies**), then the **RTP Service Polling** needs to be enabled on the RTP Services page.
+
+> [!IMPORTANT]
+> If you want to poll fabric-related data (including Fabric Errors, Fabric Error History, Fabric Flows, and Host Policies), make sure **RTP Service Polling** is enabled on the RTP Services page.
 
 ### General
 
