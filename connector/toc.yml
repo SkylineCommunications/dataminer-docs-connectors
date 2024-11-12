@@ -52,6 +52,8 @@
     topicUid: Connector_help_A10_Networks_AX_Series
 - name: ABB
   items:
+  - name: ABB Newave UPS
+    topicUid: Connector_help_ABB_Newave_UPS
   - name: ABB Satt Control COMLI-LINK
     topicUid: Connector_help_ABB_Satt_Control_COMLI-LINK
   - name: ABB Satt Control COMLI-LINK Generator
