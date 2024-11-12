@@ -4260,6 +4260,8 @@
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
     topicUid: Connector_help_Haivision_Media_Platform
+  - name: Haivision StreamHub
+    topicUid: Connector_help_Haivision_StreamHub
 - name: Hambisana
   items:
   - name: Hambisana Appear TV Analyzer
