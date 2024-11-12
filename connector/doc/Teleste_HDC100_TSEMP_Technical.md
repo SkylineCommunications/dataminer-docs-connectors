@@ -208,6 +208,7 @@ Range 5.0.0.x of the Teleste HDC100 connector does not create DVE elements but n
 ### General Page
 
 This page displays general information such as the Alias Name and Location. It also contains general hardware and software info and statistics such as uptime, total uptime, reset count, and position.
+![General Page](~/connector/images/TelesteHDC100GeneralPage.png)
 
 ### Monitoring Page
 
@@ -218,6 +219,7 @@ This page contains two tables, one for **analog** and one for **discrete alarm l
 This is the main page for all devices connected to the controller. It contains parameters for easier control over created elements. This includes counters indicating the total number of elements connected to the controller, as well as a table with details about the connected nodes.
 
 You can configure automatic removal of missing nodes, creation of elements with invalid submasks, and creation of elements that are not in the config file.
+![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)
 
 The page has two subpages:
 
@@ -231,6 +233,7 @@ The page has two subpages:
 ### Interfaces Page
 
 On the Interfaces page, a table with two rows provides an easy overview of the information related to Ethernet and the HDO bus. It includes all information regarding communication such as the IP address, net masks, gateway address, mastering mode, master address, poll timeout, packet timeout, etc.
+![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png)
 
 > [!NOTE]
 > For some cells, it is not possible to set values. In the logging for the element, you can see notifications for commands that are not supported.
