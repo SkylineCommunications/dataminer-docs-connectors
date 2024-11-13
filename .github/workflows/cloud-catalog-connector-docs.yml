@@ -120,7 +120,7 @@ jobs:
             for file in update_docs/*; do
               blob_name="$(basename "$file")"
               sed -E 's|xref:Connector_help_([^)]*)\)|https://docs.dataminer.services/connector/doc/\1.html)|g' $file
-              sed -i 's~\~/connector/images/~https://api.dataminer.services/api/public-catalog/v1-0/catalog/images/~g' $file
+              sed -i 's~\~/connector/images/~https://api.dataminer.services/api/public-catalog/v2-0/catalogs/images/~g' $file
               az storage blob upload --file "$file" -c 'docs' -n "$blob_name" --connection-string '${{ secrets.AZUREBLOBSTORAGECS }}' --overwrite 'true'
               az storage blob update -c 'docs' -n "$blob_name" --connection-string '${{ secrets.AZUREBLOBSTORAGECS }}' --content-type 'text/plain'
               echo $blob_name uploaded
