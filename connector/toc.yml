@@ -366,6 +366,8 @@
     topicUid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
   - name: Amagi CLOUDPORT Service Manager
     topicUid: Connector_help_Amagi_Cloudport_Service_Manager
+  - name: Amagi Tellyo Po
+    topicUid: Connector_help_Amagi_Tellyo_Pro 
 - name: Amazon
   items:
   - name: Amazon AWS CloudFormation
