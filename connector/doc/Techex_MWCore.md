@@ -137,7 +137,12 @@ This page has several subpages:
 
 - **Thumbnail Configuration**: Allows you to configure the desired settings for thumbnails retrieval. If thumbnails are needed for a low-code app, the path can be updated to `C:\Skyline DataMiner\Webpages\public\TechexMWCoreThumbnails`.
 
-- **Debug**: Allows you to enable more detailed ***logging*** specifically for statistics data, generating new log files in the specified folder with a rolling window of 2 days and a file size of 10 MB. Files are generated in the following format: `{Protocol.ElementName}-statisticslog[{DnsName}].txt`. For SRM integrations, you can enable the **SRM Information** parameter, making the SRM Resources page and its subpages visible in the element's data layout.
+- **Debug**: Allows you to enable more detailed ***logging*** specifically for statistics data, generating new log files in the specified folder with a rolling window of 2 days and a file size of 10 MB. Files are generated in the following format: `{Protocol.ElementName}-statisticslog[{DnsName}].txt`. The **Statistics Buffer State** parameter indicates whether DataMiner is struggling to handle the volume and frequency of data being pushed by the TXCore. If there are difficulties, the parameter will display ***Overflow***. In case of difficulties, the parameter will state Overflow. For SRM integrations, you can enable the **SRM Information** parameter, making the SRM Resources page and its subpages visible in the element's data layout.
+
+> [!IMPORTANT]
+> Telemetry data is sent to DataMiner asynchronously. To facilitate this, DataMiner establishes a dedicated connection with each TXCore node to receive the necessary telemetry data for streams, sources, and outputs. 
+> To prevent issues from excessive data and high frequency rates, the **Techex MWCore DataMiner connector** uses an internal buffer for message processing. This buffer can queue up to **10 messages**. Any message received after the queue is full will be dropped. If **5 consecutive messages** are dropped, the Statistics Buffer State parameter will display ***Overflow***. 
+> The parameter will revert to the ***Normal*** state once an incoming message can be successfully added to the queue again.
 
 ### Devices
 
@@ -161,9 +166,9 @@ The information for the monitored TXEdges is further detailed on the following s
 
 - **ETR 290**: When the statistics connection is enabled, the table on this subpage lists ETR messages related to the sources.
 
-- **Sources States**: When the statistics connection is enabled, the table on this subpage lists the source states. You can choose to include all sources or only the active ones.
+- **Sources States**: The table on this subpage lists the source states (e.g., error caused by zero bitrate detected in the last 10 seconds). You can choose to include all sources or only the active ones.
 
-- **Outputs States**: When the statistics connection is enabled, the table on this subpage lists the output states. You can choose to include all outputs or only the active ones.
+- **Outputs States**: The table on this subpage lists the output states (e.g., error caused by an invalid passphrase). You can choose to include all outputs or only the active ones.
 
 ### Cluster Members
 
@@ -172,6 +177,10 @@ The Cluster Members page lists all nodes of the TXCore cluster. Here you can mon
 You can also enable the statistics interface from the table on this page and manually overwrite the IP address that DataMiner should use to open the statistics connection with the TXCore node by specifying the desired IP in the **Public IP Address** column.
 
 If communication with a TXCore node fails more than a predefined number of times (monitored in the Retries column), the connection will be automatically disabled, and you will need to manually enable it again. You can configure the number of retries on the **General** > **Statistics Configuration** page.
+
+Finally, the **Statistics Status** column displays the current status of the statistics connections - OK, Timeout, Warning - indicating if any issues in the connection are being detected by DataMiner. 
+The Timeout status indicates that DataMiner did not receive any communication, including keep-alives, from the TXCore node for a period longer than the rate limit configured on the **General** > **Statistics page**. 
+The Warning status indicates that DataMiner did not receive valid telemetry information from the TXCore node for a period longer than three times the configured rate limit.
 
 ### SRM Resources
 
