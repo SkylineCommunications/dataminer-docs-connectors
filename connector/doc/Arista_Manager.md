@@ -33,7 +33,8 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 | 2.0.9.x | Credential Manager with the latest implementation. | Yes | Yes |
 | 2.0.10.x | Changed the way the polling is executed to get a more consistent result. | Yes | Yes |
 | 2.0.11.x | Changed the key of the IP multicast routing table. | Yes | Yes |
-| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect "Interpretes". | Yes | Yes |
+| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect 
+| 2.0.13.x | Traps table is now volatile and generation of keys are not using auto increment feature. Alarming and trending is no longer possible | Yes | Yes |
 
 ### Product Info
 
@@ -51,7 +52,8 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 | 2.0.9.x             | 4.15.2F <br>4.20.5F <br>4.21.1F             |
 | 2.0.10.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 | 2.0.11.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
-| 2.0.12.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.12.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.13.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 
 ## Configuration
 
