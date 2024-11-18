@@ -24,15 +24,15 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 | 1.0.0.x [Obsolete] | Initial version (includes DCF integration). | - | - |
 | 1.0.1.x [Obsolete] | Reformat of the MWEdge stream keys. | 1.0.0.2 | **Old trend and alarm data will be lost for Streams, Input Sources, and Outputs.** |
 | 1.0.2.x [Obsolete] | - Single output/input is retrieved upon context menu operation instead of MwEdge polling. <br>- MWEdges are retrieved separately instead of all at once. <br>- Reverse foreign key relation between Streams Resources table and Streams table. | 1.0.1.19 | **Because NuGets are now used, the minimum DataMiner version is now 10.0.10.** |
-| 1.0.3.x | - Statistics Connections table and "IP Connection - Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
-| 1.0.4.x [SLC Main] | - Secondary interface has been removed from element creation (additional MWCore nodes of the same cluster are now added in the connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default. They can be displayed using the parameters on the "Debug" page.<br>- The debugging logs for the statistics interface have been enhanced (serilog is now used), and the default path is now the logging folder.<br>- The Sources and Output tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection. This can be activated on the Statistics Configuration page by enabling the "Elastic Export".<br>- Support for the 2022-7 version has been added.<br>| 1.0.3.33 | **Existing elements need to be reconfigured to accommodate the connection changes. We highly recommend recreating the elements.** |
+| 1.0.3.x [Obsolete] | - Statistics Connections table and "IP Connection - Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
+| 1.0.4.x [SLC Main] | - Secondary interface has been removed from element creation (additional cluster nodes are now added in the connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default.<br>- The debugging logs for the statistics interface have been enhanced (serilog is now used), and the default path is now the logging folder.<br>- The Sources and Output tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection.<br>- Support for the 2022-7 version has been added.<br>| 1.0.3.33 | **Existing elements need to be reconfigured to accommodate the connection changes.<br>We highly recommend recreating the elements.** |
 
 ### Product Info
 
 | Range                             | Supported Firmware                             |
 |-----------------------------------|------------------------------------------------|
 | 1.0.0.x [Obsolete]<br>1.0.1.x [Obsolete]<br> 1.0.2.x [Obsolete] | **MWCore version:** 5.2.3, 5.2.4 <br> **MWEdges version:**  1.9.2, 1.9.3 |
-| 1.0.3.x | **MWCore version:** 5.22.4 <br> **MWEdges version:** 1.24.1 |
+| 1.0.3.x [Obsolete]| **MWCore version:** 5.22.4 <br> **MWEdges version:** 1.24.1 |
 | 1.0.4.x [SLC Main]| **MWCore version:** 5.22.4, 5.29.0 <br> **MWEdges version:** 1.24.1, 1.34.0 |
 
 ### System Info
@@ -154,7 +154,14 @@ On this page, you can view and monitor TXCore channels listed in the Channels ta
 
 ### MWEdges
 
-The MWEdges page displays a table listing either all TXEdges or those specified on the Polling Configuration page. In this table, you can monitor the state of each edge, including addresses, licenses, the number of streams, and more.
+The MWEdges page displays a table listing either all TXEdges or those specified on the Polling Configuration page. 
+In this table, you can monitor the state of each edge, including addresses, licenses, the number of streams, and more.
+
+> [!NOTE]
+> Bandwidth usage metrics (**source total**, **output total**, **total usage**, **license left**) are not retrieved through polling. 
+> Instead, DataMiner receives this data asynchronously via the statistics connections. 
+> Periodically, DataMiner performs the necessary calculations based on the values available in the sources and outputs tables.
+> This feature is **disabled by default**. To enable it, navigate to the ***General > Statistics Configuration*** subpage and configure the ***Total MWEdge Bitrate Calculation Interval*** parameter.
 
 The information for the monitored TXEdges is further detailed on the following subpages:
 
