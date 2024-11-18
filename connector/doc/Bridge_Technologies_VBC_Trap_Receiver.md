@@ -36,7 +36,8 @@ The **VBC Trap Receiver** connector integrates the **VideoBRIDGE Controller (VBC
 
 ### Device Settings
 
-To ensure that the traps are parsed correctly by the connector, please ensure that the **Parameterize trap text** setting is enabled. This setting can be found on the device settings under *ALARM SETUP > MESSAGE FWD > SNMP traps*.
+To ensure that the traps are parsed correctly by the connector, please ensure that the **Parameterize trap text** and **Year in trap time** settings are enabled. 
+To enable these settings, access the VBC device's web interface and login to the device. The settings can be found on the device settings under *ALARM SETUP > MESSAGE FWD > SNMP traps*.
 
 ### Connections
 
