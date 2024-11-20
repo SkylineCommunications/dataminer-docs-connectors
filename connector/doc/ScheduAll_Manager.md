@@ -90,13 +90,15 @@ This page contains **communication configuration** parameters related to the web
 - Disabling or enabling polling of the client info or resource info tables from ScheduAll.
 - Time format used by ScheduAll.
 
-> Note: Range 2.0.3.X has some additional parameters on this page:
-> - **Resolve DNS Name** - Indicates if hostname (if specified) should be DNS resolved. Set to _false_ by default.
-> - **Dynamic URL** - Base URL path to append to polling IP/host for each request
-> - **Authentication Provider Username** - Used for setting the username if another authentication layer is used.
-> - **Authentication Provider Password** - User for setting the password if another authentication layer is used.
-> 
-> Only _Basic Auth_ authentication type is supported. Username and password is joint with a colon, encoded with Base64 encoding and set in the _Authorization_ header.
+> [!NOTE]
+> In range 2.0.3.x, additional parameters are available on this page:
+>
+> - **Resolve DNS Name**: Indicates if the hostname (if specified) should be DNS-resolved. Set to *false* by default.
+> - **Dynamic URL**: Base URL path to append to the polling IP/host for each request.
+> - **Authentication Provider Username**: Used for setting the username if another authentication layer is used.
+> - **Authentication Provider Password**: User for setting the password if another authentication layer is used.
+>
+> Only the *Basic Auth* authentication type is supported. Username and password are joined with a colon, encoded with Base64 encoding, and set in the *Authorization* header.
 
 #### Timespan configuration
 
