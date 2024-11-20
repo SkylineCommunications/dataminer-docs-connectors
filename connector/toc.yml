@@ -368,6 +368,8 @@
     topicUid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
   - name: Amagi CLOUDPORT Service Manager
     topicUid: Connector_help_Amagi_Cloudport_Service_Manager
+  - name: Amagi Tellyo PRO
+    topicUid: Connector_help_Amagi_Tellyo_Pro 
 - name: Amazon
   items:
   - name: Amazon AWS CloudFormation
@@ -6645,6 +6647,8 @@
   items:
   - name: OpenTelemetry Collector
     topicUid: Connector_help_OpenTelemetry_Collector
+  - name: OpenTelemetry Generic Log Receiver
+    topicUid: Connector_help_OpenTelemetry_Generic_Log_Receiver
 - name: Opsview
   items:
   - name: Opsview Opsview

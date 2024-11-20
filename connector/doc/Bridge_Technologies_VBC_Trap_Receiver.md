@@ -10,11 +10,11 @@ The **VBC Trap Receiver** connector integrates the **VideoBRIDGE Controller (VBC
 
 ### Version Info
 
-| Range                | Key Features                                                                         | Based on | System Impact                                  |
-|----------------------|--------------------------------------------------------------------------------------|----------|------------------------------------------------|
-| 1.0.0.x \[Obsolete\] | Initial version.                                                                     | -        | -                                              |
-| 1.0.1.x \[Obsolete\] | Probe filtering added for traps aggregation.                                         | 1.0.0.3  | Page renamed.                                  |
-| 1.0.2..x [SLC Main]  | HTTP connection added to support Bridge Technologies External Integration Interface. | 1.0.1.4  | New connection added to element configuration. |
+| Range               | Key Features                                                                         | Based on | System Impact                                  |
+|---------------------|--------------------------------------------------------------------------------------|----------|------------------------------------------------|
+| 1.0.0.x [Obsolete]  | Initial version.                                                                     | -        | -                                              |
+| 1.0.1.x [Obsolete]  | Probe filtering added for traps aggregation.                                         | 1.0.0.3  | Page renamed.                                  |
+| 1.0.2..x [SLC Main] | HTTP connection added to support Bridge Technologies External Integration Interface. | 1.0.1.4  | New connection added to element configuration. |
 
 ### Product Info
 
@@ -33,6 +33,10 @@ The **VBC Trap Receiver** connector integrates the **VideoBRIDGE Controller (VBC
 | 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
+
+### Device Settings
+
+To ensure that the traps are parsed correctly by the connector, make sure that the **Parameterize trap text** and **Year in trap time** settings are enabled. To enable these settings, access the VBC device's web interface and log in to the device. You can then find these settings in the device settings under *ALARM SETUP* > *MESSAGE FWD* > *SNMP traps*.
 
 ### Connections
 
@@ -54,17 +58,9 @@ SNMP Settings:
 
 This connector uses the Bridge Technologies External Integration Interface over HTTP to get additional information from the VBC.
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *http://10.24.4.138.*
+- **IP address/host**: The polling IP or URL of the destination, e.g. `http://10.24.4.138`.
 - **IP port**: The IP port of the destination.
-- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Web Interface
 
@@ -78,10 +74,10 @@ The element has the following data pages:
 
 - **License**: Shows the expiration date and the remaining duration of the active license.
 
-- **Sites and Probes:** Allows you to enable/disable the sites and/or probes that should be considered for the aggregation of traps.
+- **Sites and Probes**: Allows you to enable/disable the sites and/or probes that should be considered for the aggregation of traps.
 
-- **Service Inhibition:** Allows you to create filters for the services that should be considered for the aggregation of traps. These filters can contain wildcards.
+- **Service Inhibition**: Allows you to create filters for the services that should be considered for the aggregation of traps. These filters can contain wildcards.
 
-- **Aggregated Traps:** Aggregates traps by service with a summary listing the errors by site.
+- **Aggregated Traps**: Aggregates traps by service with a summary listing the errors by site.
 
-- **Counters:** Displays event counters by type.
+- **Counters**: Displays event counters by type.
