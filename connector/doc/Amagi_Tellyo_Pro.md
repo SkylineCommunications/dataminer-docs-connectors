@@ -45,7 +45,6 @@ HTTP CONNECTION:
 Specify the **Tellyo-token** on the **General** page. The connector will automatically send requests using this token and will report the response code in the **HTTP Request Status** parameter.
 
 > [!NOTE]
->
 > - The Tellyo Open API is a JSON-based REST API that allows external applications to manage basic tasks within their Tellyo account.
 > - All Open API requests require a **Tellyo-Token** header, provided by Tellyo, to uniquely identify the integrating application.
 > - The access token can only access one organization. Object IDs (e.g. channels, sources, recordings) are unique within a single region.
@@ -63,4 +62,10 @@ Below you can find more information about the different data pages available in 
 - **Users**: Displays a table listing all users of the organization.
 - **Channels**: Displays a table listing the available channels in the organization. The ID field can be used, for example, to manage recordings.
 - **Sources**: Displays a table listing all sources linked to the organization.
-- **Recordings**: Displays a table listing all recordings, linked to the channels and sources tables. A context menu is available with the following actions: add, edit, delete, start, and stop.
+- **Recordings**: Displays a table listing all recordings, linked to the channels and sources tables. A context menu is available with the following actions: add, edit, delete, start, and stop.  
+
+> [!NOTE]
+> When scheduling a recording, ensure you schedule at least 10 minutes ahead to allow the recording infrastructure sufficient time to initialize.
+
+> [!IMPORTANT]
+> This DataMiner connector is designed to integrate with DataMiner SRM solutions, where a channel is treated as a resource for scheduling recordings. The recordings table maps the booking ID of the event that requested the recording. To facilitate easy updates to the stop recording time if the booking is extended, the DataMiner element will automatically detect changes in the linked bookings and request a stop time update to the Tellyo PRO platform. This can be monitored in the ***General > Debug*** subpage.
