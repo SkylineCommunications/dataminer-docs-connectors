@@ -16,7 +16,7 @@ This connector will manage the test tasks that are scheduled for the robot, coll
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version | - | - |
 | 1.1.0.x [Obsolete] | New robot firmware | 1.0.0.5 | - |
-| 1.2.0.x [SLC Main] | Maestro Public API | 1.1.0.12 | To make sure running tasks are handled correctly when you update to this version:<br>-Disable all carousels and stacks on the Witbe Robot Manager.<br>-Cancel and clear all queued tasks.<br>-Update the Witbe Robot Manager.<br>-Update the Witbe Robots.<br>-Enable carousels and stacks on the Witbe Robot Manager. |
+| 1.2.0.x [SLC Main] | Maestro Public API | 1.1.0.12 | To make sure running tasks are handled correctly when you update to this version:<br>- Disable all carousels and stacks on the Witbe Robot Manager.<br>- Cancel and clear all queued tasks.<br>-Update the Witbe Robot Manager.<br>- Update the Witbe Robots.<br>- Enable carousels and stacks on the Witbe Robot Manager. |
 
 ### Product Info
 
@@ -69,9 +69,7 @@ HTTP CONNECTION:
 
 ### Licensing Requirements
 
-For DataMiner to pull data from Witbe, the following license should be activated on the customer’s end:
-- **DataPipe API Poll**: Allows third-party platforms, like DataMiner, to pull data from the Witbe DataServer.
-
+For DataMiner to pull data from Witbe, you must make sure the **DataPipe API Poll** license is activated. This license allows third-party platforms like DataMiner to pull data from the Witbe data server.
 
 ### Initialization
 
