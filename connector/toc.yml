@@ -4918,6 +4918,10 @@
   items:
   - name: iTWatchDogs Mini Goose-II
     topicUid: Connector_help_iTWatchDogs_Mini_Goose-II
+- name: Ivanti
+  items:
+  - name: Ivanti PSA 7000
+    topicUid: Connector_help_Ivanti_PSA_7000
 - name: iXsystems
   items:
   - name: iXsystems FreeNAS
