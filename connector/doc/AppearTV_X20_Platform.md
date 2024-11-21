@@ -7,7 +7,7 @@ uid: Connector_help_AppearTV_X20_Platform
 The AppearTV X20 Platform connector can be used to configure and display information from an AppearTV X Platform chassis. This includes both X20 and X10 chassis versions.
 
 > [!IMPORTANT]
-> New greenfield deployments are strongly advised to use the successor of this connector which is available as **[Appear X platform](https://catalog.dataminer.services/details/ea164cd4-c408-4fe6-9506-087d868aee79)** in the catalog. The current **AppearTV X20 Platform** connector is still maintained but will in the future be fully replaced by the new **Appear X Platform**.
+> For new greenfield deployments, we strongly recommend using the successor of this connector, which is available as **[Appear X platform](https://catalog.dataminer.services/details/ea164cd4-c408-4fe6-9506-087d868aee79)** in the DataMiner Catalog. The current **AppearTV X20 Platform** connector is still maintained, but in the future it will be fully replaced by the new **Appear X Platform**.
 
 On the US market, the same chassis is also offered by Sencore. Under the Sencore brand, it is offered with the following model names: **Sencore DMG-3200** (X10 Chassis), **Sencore DMG-4100**, and **Sencore DMG-4200** (X20 Chassis).
 
