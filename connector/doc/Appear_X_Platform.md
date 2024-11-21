@@ -6,8 +6,8 @@ uid: Connector_help_Appear_X_Platform
 
 The Appear X Platform connector allows users to configure and display information from the Appear X10/X20 chassis and its associated module cards.
 
-> [!NOTE]
-> This connector is the successor of the **AppearTV X20 platform** connector, which will be gradually phased out and will eventually become deprecated. For new greenfield deployments, we strongly recommend using this **Appear X platform** connector instead.
+> [!IMPORTANT]
+> This connector is the successor of the **[AppearTV X20 platform](https://catalog.dataminer.services/details/7bb327a7-0844-4c2b-b5bc-fbfd4e3bc8de)** connector, which will be gradually phased out and will eventually become deprecated. For new greenfield deployments, we strongly recommend using this **Appear X platform** connector instead.
 
 On the U.S. market, the same chassis is also offered under the Sencore brand, with the following model names: **Sencore DMG-3200** (X10 chassis), **Sencore DMG-4100**, and **Sencore DMG-4200** (X20 chassis).
 
