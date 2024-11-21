@@ -11,7 +11,6 @@ The **Teleste HDC100 TSEMP connector** is an efficient solution for managing and
 - **Real-time module status**: View connected HDO modules with real-time health information, emphasizing key metrics for quick insights and diagnostics.
 - **Essential device information access**: Quickly access configuration, software versions, uptime data, and reset functionalities, ensuring efficient module management.
 - **Detailed network configuration**: Configure IP settings, network masks, and gateway parameters to ensure smooth network connectivity across the HDO modules.
-- **Custom alarm configuration**: Set analog and discrete alarm thresholds tailored to each HDO module's operational requirements, supporting proactive system management.
 - **Scalable integration**: Supports up to 16 racks of HDO modules, offering flexible scalability and adaptation for expanding system demands.
 
 > [!NOTE]
