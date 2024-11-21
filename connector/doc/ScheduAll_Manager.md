@@ -90,6 +90,16 @@ This page contains **communication configuration** parameters related to the web
 - Disabling or enabling polling of the client info or resource info tables from ScheduAll.
 - Time format used by ScheduAll.
 
+> [!NOTE]
+> In range 2.0.3.x, additional parameters are available on this page:
+>
+> - **Resolve DNS Name**: Indicates if the hostname (if specified) should be DNS-resolved. Set to *false* by default.
+> - **Dynamic URL**: Base URL path to append to the polling IP/host for each request.
+> - **Authentication Provider Username**: Used for setting the username if another authentication layer is used.
+> - **Authentication Provider Password**: User for setting the password if another authentication layer is used.
+>
+> Only the *Basic Auth* authentication type is supported. Username and password are joined with a colon, encoded with Base64 encoding, and set in the *Authorization* header.
+
 #### Timespan configuration
 
 With a start and stop parameter, the size of a sliding window in which data (bookings + resources) have to be retrieved can be defined (in minutes). For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.

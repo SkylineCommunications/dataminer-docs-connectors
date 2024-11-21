@@ -17,7 +17,8 @@ The function of this connector is to receive and display data from a Mediagenix 
 | 2.0.1.x [Obsolete] | Support for Unicode characters added.                                           | 2.0.0.4  | -             |
 | 2.0.2.x [Obsolete] | Communication through RabbitMQ.                                                 | 2.0.1.7  | -             |
 | 2.0.3.x [Obsolete] | Hotfix branch.                                                                  | 2.0.2.10 | -             |
-| 2.0.4.x [SLC Main] | Publication Events and Resource Groups table set to partial.                    | 2.0.2.20 | -             |
+| 2.0.4.x            | Publication Events and Resource Groups table set to partial.                    | 2.0.2.20 | -             |
+| 2.0.5.x [SLC Main] | All displayed tables are set to partial. Improved cleanup logic.                | 2.0.4.3  | -             |
 
 ### Product Info
 
@@ -27,6 +28,7 @@ The function of this connector is to receive and display data from a Mediagenix 
 | 2.0.2.x   | 2.9.2.r1.588           |
 | 2.0.3.x   | 2.9.2.r1.588           |
 | 2.0.4.x   | 2.9.2.r1.588           |
+| 2.0.5.x   | 2.9.2.r1.588           |
 
 ### System Info
 
@@ -36,6 +38,7 @@ The function of this connector is to receive and display data from a Mediagenix 
 | 2.0.2.x   | No                  | Yes                     | -                     | -                       |
 | 2.0.3.x   | No                  | Yes                     | -                     | -                       |
 | 2.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 2.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -112,7 +115,7 @@ This is the message format:
 
 Cleaning the Incoming and Outgoing Requests tables is possible from the Debug page. This will not remove the corresponding DOM instances if the **Manager DMA ID** parameter is set to **DOM**.
 
-## How to use (range 2.0.4.x)
+## How to use (range 2.0.5.x)
 
 During startup of the element, the connector will start listening to several hardcoded RabbitMQ queues using the connection settings defined in the parameters. Data coming in through these queues is parsed and stored in one of the multiple tables in the connector.
 
