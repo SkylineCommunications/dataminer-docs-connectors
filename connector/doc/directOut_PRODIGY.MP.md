@@ -53,11 +53,9 @@ On the **Communication** page, you can see the last sent command and its respons
 
 If you wish to test a command, you can do so by setting the **Outgoing Command Content** parameter to the command you wish to send and then clicking the **Send Command** button. The **Incoming Response Content** parameter will display the response.
 
-The Automatic Request Interval determines how long the system will wait before sending a new GET request if no response is received during that time.
+The **Automatic Request Interval** determines how long the system will wait before sending a new GET request if no response is received during that time.
 
-With the timeout status enabled, the system will consider the device as unresponsive if no response is received within the defined timeout period after sending the request.
-
-Please note that it is important to adjust the default timeout settings in the element configuration (under TCP/IP settings) to ensure that the element correctly enters and displays the timeout state if no response is received from the device within the specified period. If the device is found to be unresponsive after the element's timeout period, the system will wait an additional 30 seconds (the default timeout duration in the TCP/IP settings) before marking the element as in a timeout state. To minimize delays, it is recommended to set this value as low as possible.
+If the **timeout status** is enabled, the system will consider the device unresponsive if no response is received within the defined timeout period after the request is sent. To make sure that the element correctly enters the timeout state in such a case, it is important that the **default timeout settings** are **adjusted correctly** in the element editor (under TCP/IP settings). If the device is found to be unresponsive after the element's timeout period, by default the system will wait an additional 30 seconds (the default timeout duration in the TCP/IP settings) before marking the element as in a timeout state. To minimize delays, we recommend setting this value as low as possible.
 
 The remaining pages display status and settings data:
 
