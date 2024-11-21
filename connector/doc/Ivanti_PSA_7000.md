@@ -4,7 +4,7 @@ uid: Connector_help_Ivanti_PSA_7000
 
 # Ivanti PSA 7000
 
-The Ivanti PSA 7000 is an appliance within the Ivanti Secure Access platform. It primarily serves as a gateway for secure remote access, offering various features like, application access control, and advanced threat defense.
+The Ivanti PSA 7000 is an appliance within the Ivanti Secure Access platform. It primarily serves as a gateway for secure remote access, offering various features like application access control and advanced threat defense.
 
 The connector uses an **SNMP** connection.
 
@@ -54,23 +54,22 @@ This page displays general information about the device, such as the **Name**, *
 
 ### Interface
 
-This page contains the **Interface**. This table information about device interfaces, such as **MTU**, **Bit Rate**, and **Bandwidth**.
+This page contains a table with information about device interfaces, such as **MTU**, **Bit Rate**, and **Bandwidth**.
 
-The **Rate Calculation Method for Interface Table** parameter allows users to change the method of calculating the bit rate of the interface.
+In addition, the **Rate Calculation Method for Interface Table** parameter allows you to change the method of calculating the bit rate of the interface.
 
 ### Disk information
 
-This page displays **Disk** information of the device. 
+This page displays disk information for the device.
 
 ### Processes
 
-This page displays **Monitored Processes** of the device. 
+This page displays the monitored processes of the device.
 
 ### Commands
 
-This page displays a table which contains **Extensible Commands** of the device. 
+This page displays a table with the **Extensible Commands** for the device.
 
 ### Load Average
 
-This page displays a table which shows **Load Average** of the device for 1, 5 and 15 minutes.
-
+This page displays a table showing the load average of the device for 1, 5, and 15 minutes.
