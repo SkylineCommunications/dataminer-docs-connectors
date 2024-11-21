@@ -60,6 +60,9 @@ The web interface is only accessible when the client machine has network access 
 
 The element created with this connector consists of the data pages detailed below.
 
+> [!IMPORTANT]
+> If you want to poll fabric-related data (including Fabric Errors, Fabric Error History, Fabric Flows, and Host Policies), make sure **RTP Service Polling** is enabled on the RTP Services page.
+
 ### General
 
 The **Username** and **Password** must be provided on this page. Every time the credentials have changed, you must press the **Apply** button to request a new authentication token.
