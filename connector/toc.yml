@@ -4024,6 +4024,8 @@
     topicUid: Connector_help_Generic_Uplink_Power_Controller
   - name: Generic UPS
     topicUid: Connector_help_Generic_UPS
+  - name: Generic Virtual 4K Video Delay
+    topicUid: Connector_help_Generic_Virtual_4K_Video_Delay
   - name: Generic Virtual Chassis
     topicUid: Connector_help_Generic_Virtual_Chassis
   - name: Generic Virtual DeEmbedder
