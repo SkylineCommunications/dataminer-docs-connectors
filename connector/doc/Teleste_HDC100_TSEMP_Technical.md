@@ -84,7 +84,10 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the device, by default *65535*.
 # Usage
-## [Version 5.0.0.x](#tab/version-5-0-0-x)
+
+Depending on the range of connector that is being use, different features are available. You can find more information about this below.
+
+## [5.0.0.x](#tab/version-5-0-0-x)
 
 Range 5.0.0.x of the Teleste HDC100 connector does not create DVE elements but new elements that use their own connector depending on the node model.
 
@@ -129,7 +132,7 @@ On the Interfaces page, a table with two rows provides an easy overview of the i
 Detailed logging about polled modules is disabled by default on app level. To enable this, enable the parameter **Debug Logging State** (ID 5).
 
 
-## [Version 4.0.0.x](#tab/version-4-0-0-x)
+## [4.0.0.x](#tab/version-4-0-0-x)
 
 ### Exported connectors
 
@@ -212,7 +215,7 @@ The **Configuration** page button provides access to a subpage with the followin
 
 Each of these pages displays a table specific to the module in question, an **Analog Alarm Limits** table, and a **Discrete Alarm Limits** table.
 
-## [Version 3.1.0.x](#tab/version-3-1-0-x)
+## [3.1.0.x](#tab/version-3-1-0-x)
 
 ### General Page
 
@@ -279,7 +282,7 @@ For each of the tables, a subpage allows you to enable or disable the **automati
 
 These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo** and **Deadband**, as well as the **Status** for each of these columns.
 
-## [Version < 3.1.0.x](#tab/version-pre-3-1-0-x)
+## [Versions prior to 3.1.0.x](#tab/version-pre-3-1-0-x)
 
 ### General Page
 
