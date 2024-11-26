@@ -54,28 +54,8 @@ The **General** page contains an overview of system information and internet, mo
 
 On the **Polling Configuration** subpage, you can enable or disable the polling of specific groups of parameters, so that only the relevant information is shown.
 
-The **Interface** page features several management options. It has the following subpages:
-
-- **Link Manager Settings**: Management of network link connections to optimize performance.
-
-- **Lan Port Settings**: Configuration of the LAN port, including IP address assignments and network masks.
-
-- **Ethernet Settings**: Adjustments for Ethernet connections.
-
-- **Cellular Settings**: Configuration of mobile data connectivity.
-
-- **Wi-Fi Settings**: Wi-Fi options, including SSID, security settings, and channel selection for optimal wireless performance.
-
-The **Network** page contains information and settings related to network management. It has the following subpages:
-
-- **Network Status**: Displays the current state of the network.
-
-- **Firewall Filtering**: Options for managing network traffic and security.
-
-- **Firewall Custom Rules**: Configuration of specific rules for network traffic.
-
-The **OpenVPN** page contains settings related to VPN management. You can configure the VPN tunnel parameters with the tunnel settings and manage the authentication credentials with the password settings.
-
 ## Notes
 
 Because of the processing time of the device, performing set actions can take between 10 to 30 seconds. Each set command is followed by a save command to ensure that the changes are applied to the device.
+
+Because of the device's limitations in processing speed, the timeout for each individual command is set to 30 seconds by default to accommodate the necessary data retrieval time.
