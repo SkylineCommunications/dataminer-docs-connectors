@@ -57,5 +57,5 @@ On the **Polling Configuration** subpage, you can enable or disable the polling 
 ## Notes
 
 Because of the processing time of the device, performing set actions can take between 10 to 30 seconds. Each set command is followed by a save command to ensure that the changes are applied to the device.
-Due to the device's limitations in processing speed, the timeout for each individual command is set to 30 seconds by default to accommodate the necessary data retrieval time.
 
+Because of the device's limitations in processing speed, the timeout for each individual command is set to 30 seconds by default to accommodate the necessary data retrieval time.
