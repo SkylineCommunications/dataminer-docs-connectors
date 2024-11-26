@@ -83,110 +83,53 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the device, by default *65535*.
+# Usage
+## [Version 5.0.0.x](#tab/version-5-0-0-x)
 
-## Usage (versions prior to 3.1.0.x)
-
-### General Page
-
-This page displays identification information and statistics for the device.
-
-- **Ping:** Ping status and settings.
-- **Network**: Network settings of the device and HDO bus.
-- **Monitoring**: Overview of the analog and discrete alarm limits of the device.
-
-### Overview Page
-
-For every card type, an entry is created in the **Modules** table. Different configurations are possible (e.g. **Automatic Removal**) in order to delete the modules with status **Missing**.
-
-#### Configuration
-
-- **Timer Configuration**: The polling of the data for the modules can be configured by setting the different timer intervals.
-
-- **DVE Settings**: Settings to configure the DVEs.
-
-- **Configuration Import**: When **Automatic DVE Name** is set to *Configuration File*, the selected configuration file will be used with the DVE name and view that need to be used.
-
-  - Every line in the **CSV** file represents a module of which the data should be in the following format: ***Main Element IP Address;Rack Number;Slot Number;DVE Name;DVE View***
-  - Example:
-
-    10.3.3.9;0;4;DVE Name 1;DVE View 1
-
-    10.3.3.9;0;7;DVE Name 2;DVE View 2
-
-    10.3.3.9;1;9;DVE Name 3;DVE View 2
-
-### Module Type pages
-
-For every supported module type (exported connector), a page is available with an overview of the **Details**, **Analog Alarm Limits** and **Discrete Alarm Limits** of that module type.
-
-## Usage (3.1.0.x)
+Range 5.0.0.x of the Teleste HDC100 connector does not create DVE elements but new elements that use their own connector depending on the node model.
 
 ### General Page
 
-This page contains identification information and statistics for the device, as well as a **Reset Device** button.
+This page displays general information such as the Alias Name and Location. It also contains general hardware and software info and statistics such as uptime, total uptime, reset count, and position.
 
-The identification information includes the general parameters for the HDC100 device, such as its **Name** (configurable), **Type**, **Configuration**, **Software Version**, **BIOS Version**, **Hardware Version**, **Rack** and **Slot Number**, etc.
+![General Page](~/connector/images/TelesteHDC100GeneralPage.png)
 
-The statistics include the **Uptime**, **Total Uptime**, **Number of Restarts**, **Temperature** and **Alarm Control Detection**. This section also contains a button that provides access to a subpage with the **Analog** and **Discrete Alarm Limits Table**.
+### Monitoring Page
 
-### Interfaces Page
-
-This page contains network settings such as the **IP Address**, **Network Mask** and **Default Gateway**, as well as the following **HDO Bus** parameters: **IP Address**, **Network Mask**, **Default Gateway**, **Master Address**, **Mastering**, **Poll Timeout** and **Packet Timeout**.
+This page contains two tables, one for **analog** and one for **discrete alarm limits**. Both tables provide detailed information about each alarm and allow you to configure the read/write parameters for each alarm.
 
 ### Module Overview Page
 
-This page displays the **HDO Devices Table**. It also allows you to **Remove Missing Modules**.
+This is the main page for all devices connected to the controller. It contains parameters for easier control over created elements. This includes counters indicating the total number of elements connected to the controller, as well as a table with details about the connected nodes.
 
-In addition, the **Configuration** page button provides access to a subpage with:
+You can configure automatic removal of missing nodes, creation of elements with invalid submasks, and creation of elements that are not in the config file.
 
-- The **Refresh File List** button.
-- The possibility to upload a **Configuration File**.
-- The possibility to enable or disable the **Automatic View Check**.
-- The **Manual View Check** button.
+![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)
 
-### SW Update Page
+The page has two subpages:
 
-This page includes the following parameters:
+- **Configuration**: This page allows you to select a specific .csv file to use for the configuration of the elements. The config files must be located in the following directory: `C:\Skyline DataMiner\Documents\Teleste HDC100 TSEMP\`.
 
-- **Load Status**
-- **File Path in order to Load the File**
-- **Update HW_model**
-- **Update HW_Version**
-- **Update Target**
-- **Update Format**
-- **Update Status**
-- **Update Block Number**
-- **Update Message**
-- **Send Update**
-- **Abort Update**
+- **Template**: This page shows the alarm and trend templates for each [supported connector](#supported-connectors) available in your DMS.
 
-### DVE Tables Page
+  > [!NOTE]
+  > For each connector, one default alarm or trend template can be selected.
 
-All DVE tables for the different modules are present on this page:
+### Interfaces Page
 
-- **OTX HDO902 DVE Table**
-- **ORX HDO202 DVE Table**
-- **PSU HDP DVE Table**
-- **UAU HDO611 DVE Table**
-- **RFS HDO101 DVE Table**
-- **RAU HDO421 DVE Table**
-- **OTX HDO905 DVE Table**
-- **ORX HDO212 DVE Table**
-- **TRM HDO907 DVE Table**
-- **TRM HDO775 DVE Table**
-- **HDO906 DVE Table**
-- **HDO908 DVE Table**
-- **HDO613 DVE Table**
-- **HDO103 DVE Table**
-- **HDO203 DVE Table**
+On the Interfaces page, a table with two rows provides an easy overview of the information related to Ethernet and the HDO bus. It includes all information regarding communication such as the IP address, net masks, gateway address, mastering mode, master address, poll timeout, packet timeout, etc.
 
-For each of the tables, a subpage allows you to enable or disable the **automatic removal of deleted modules** or to remove modules manually.
+![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png)
 
-### Alarm Limits Pages
+> [!NOTE]
+> For some cells, it is not possible to set values. In the logging for the element, you can see notifications for commands that are not supported.
 
-These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo** and **Deadband**, as well as the **Status** for each of these columns.
+### Detailed logging about polled modules
 
-## Usage (4.0.0.x)
+Detailed logging about polled modules is disabled by default on app level. To enable this, enable the parameter **Debug Logging State** (ID 5).
+
+
+## [Version 4.0.0.x](#tab/version-4-0-0-x)
 
 ### Exported connectors
 
@@ -269,46 +212,105 @@ The **Configuration** page button provides access to a subpage with the followin
 
 Each of these pages displays a table specific to the module in question, an **Analog Alarm Limits** table, and a **Discrete Alarm Limits** table.
 
-## Usage (5.0.0.X)
-
-Range 5.0.0.x of the Teleste HDC100 connector does not create DVE elements but new elements that use their own connector depending on the node model.
+## [Version 3.1.0.x](#tab/version-3-1-0-x)
 
 ### General Page
 
-This page displays general information such as the Alias Name and Location. It also contains general hardware and software info and statistics such as uptime, total uptime, reset count, and position.
+This page contains identification information and statistics for the device, as well as a **Reset Device** button.
 
-![General Page](~/connector/images/TelesteHDC100GeneralPage.png)
+The identification information includes the general parameters for the HDC100 device, such as its **Name** (configurable), **Type**, **Configuration**, **Software Version**, **BIOS Version**, **Hardware Version**, **Rack** and **Slot Number**, etc.
 
-### Monitoring Page
-
-This page contains two tables, one for **analog** and one for **discrete alarm limits**. Both tables provide detailed information about each alarm and allow you to configure the read/write parameters for each alarm.
-
-### Module Overview Page
-
-This is the main page for all devices connected to the controller. It contains parameters for easier control over created elements. This includes counters indicating the total number of elements connected to the controller, as well as a table with details about the connected nodes.
-
-You can configure automatic removal of missing nodes, creation of elements with invalid submasks, and creation of elements that are not in the config file.
-
-![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)
-
-The page has two subpages:
-
-- **Configuration**: This page allows you to select a specific .csv file to use for the configuration of the elements. The config files must be located in the following directory: `C:\Skyline DataMiner\Documents\Teleste HDC100 TSEMP\`.
-
-- **Template**: This page shows the alarm and trend templates for each [supported connector](#supported-connectors) available in your DMS.
-
-  > [!NOTE]
-  > For each connector, one default alarm or trend template can be selected.
+The statistics include the **Uptime**, **Total Uptime**, **Number of Restarts**, **Temperature** and **Alarm Control Detection**. This section also contains a button that provides access to a subpage with the **Analog** and **Discrete Alarm Limits Table**.
 
 ### Interfaces Page
 
-On the Interfaces page, a table with two rows provides an easy overview of the information related to Ethernet and the HDO bus. It includes all information regarding communication such as the IP address, net masks, gateway address, mastering mode, master address, poll timeout, packet timeout, etc.
+This page contains network settings such as the **IP Address**, **Network Mask** and **Default Gateway**, as well as the following **HDO Bus** parameters: **IP Address**, **Network Mask**, **Default Gateway**, **Master Address**, **Mastering**, **Poll Timeout** and **Packet Timeout**.
 
-![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png)
+### Module Overview Page
 
-> [!NOTE]
-> For some cells, it is not possible to set values. In the logging for the element, you can see notifications for commands that are not supported.
+This page displays the **HDO Devices Table**. It also allows you to **Remove Missing Modules**.
 
-### Detailed logging about polled modules
+In addition, the **Configuration** page button provides access to a subpage with:
 
-Detailed logging about polled modules is disabled by default on app level. To enable this, enable the parameter **Debug Logging State** (ID 5).
+- The **Refresh File List** button.
+- The possibility to upload a **Configuration File**.
+- The possibility to enable or disable the **Automatic View Check**.
+- The **Manual View Check** button.
+
+### SW Update Page
+
+This page includes the following parameters:
+
+- **Load Status**
+- **File Path in order to Load the File**
+- **Update HW_model**
+- **Update HW_Version**
+- **Update Target**
+- **Update Format**
+- **Update Status**
+- **Update Block Number**
+- **Update Message**
+- **Send Update**
+- **Abort Update**
+
+### DVE Tables Page
+
+All DVE tables for the different modules are present on this page:
+
+- **OTX HDO902 DVE Table**
+- **ORX HDO202 DVE Table**
+- **PSU HDP DVE Table**
+- **UAU HDO611 DVE Table**
+- **RFS HDO101 DVE Table**
+- **RAU HDO421 DVE Table**
+- **OTX HDO905 DVE Table**
+- **ORX HDO212 DVE Table**
+- **TRM HDO907 DVE Table**
+- **TRM HDO775 DVE Table**
+- **HDO906 DVE Table**
+- **HDO908 DVE Table**
+- **HDO613 DVE Table**
+- **HDO103 DVE Table**
+- **HDO203 DVE Table**
+
+For each of the tables, a subpage allows you to enable or disable the **automatic removal of deleted modules** or to remove modules manually.
+
+### Alarm Limits Pages
+
+These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo** and **Deadband**, as well as the **Status** for each of these columns.
+
+## [Version < 3.1.0.x](#tab/version-pre-3-1-0-x)
+
+### General Page
+
+This page displays identification information and statistics for the device.
+
+- **Ping:** Ping status and settings.
+- **Network**: Network settings of the device and HDO bus.
+- **Monitoring**: Overview of the analog and discrete alarm limits of the device.
+
+### Overview Page
+
+For every card type, an entry is created in the **Modules** table. Different configurations are possible (e.g. **Automatic Removal**) in order to delete the modules with status **Missing**.
+
+#### Configuration
+
+- **Timer Configuration**: The polling of the data for the modules can be configured by setting the different timer intervals.
+
+- **DVE Settings**: Settings to configure the DVEs.
+
+- **Configuration Import**: When **Automatic DVE Name** is set to *Configuration File*, the selected configuration file will be used with the DVE name and view that need to be used.
+
+  - Every line in the **CSV** file represents a module of which the data should be in the following format: ***Main Element IP Address;Rack Number;Slot Number;DVE Name;DVE View***
+  - Example:
+
+    10.3.3.9;0;4;DVE Name 1;DVE View 1
+
+    10.3.3.9;0;7;DVE Name 2;DVE View 2
+
+    10.3.3.9;1;9;DVE Name 3;DVE View 2
+
+### Module Type pages
+
+For every supported module type (exported connector), a page is available with an overview of the **Details**, **Analog Alarm Limits** and **Discrete Alarm Limits** of that module type.
+
