@@ -13,7 +13,8 @@ A **serial** connection is used to retrieve and configure the information of the
 The connector also provides different possibilities for **alarm monitoring** and **trending**.
 
 ### Supported connectors
-#### **Transmitters**
+
+#### Transmitters
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -23,16 +24,16 @@ The connector also provides different possibilities for **alarm monitoring** and
 | **Teleste HDO907**                      | Downstream 1310 nm transmitter for short distances.                                                                       |
 | **Teleste HDO908 TSEMP**                | Downstream transmitter.                                                                                                   |
 
-#### **Amplifiers**
+#### Amplifiers
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **Teleste HDO421 TSEMP**                | Return path amplifier with 20 dB gain.                                                                                    |
 | **Teleste HDO611 TSEMP**                | Output forward amplifier with 16 dB or 21 dB gain and optional spectrum analyzer.                                         |
 | **Teleste HDO613 TSEMP**                | Forward path amplifier.                                                                                                   |
-| **Teleste HDO752**                      | High-performance single wavelength optical amplifier for fiber optic CATV and FTTx networks.                              |
+| **Teleste HDO752**                      | High-performance single-wavelength optical amplifier for fiber-optic CATV and FTTx networks.                              |
 
-#### **Receivers**
+#### Receivers
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -40,7 +41,7 @@ The connector also provides different possibilities for **alarm monitoring** and
 | **Teleste HDO203**                      | Dual receiver for return path (upstream) fiber-optic links.                                                               |
 | **Teleste HDO212**                      | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
 
-#### **Switch Modules**
+#### Switch Modules
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -48,7 +49,7 @@ The connector also provides different possibilities for **alarm monitoring** and
 | **Teleste HDO103 TSEMP**                | RF switch module used for signal backup purposes.                                                                         |
 | **Teleste HDO151**                      | Optical switch module used for signal backup purposes.                                                                    |
 
-#### **Power Supplies**
+#### Power Supplies
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -184,8 +185,10 @@ For each of the tables, a subpage allows you to enable or disable the **automati
 These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo** and **Deadband**, as well as the **Status** for each of these columns.
 
 ## Usage (4.0.0.x)
+
 ### Exported connectors
-#### **Transmitters**
+
+#### Transmitters
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -198,7 +201,7 @@ These pages display the **Analog** and **Discrete Alarm Limits Table** for each 
 | **Teleste HDC100 TSEMP - HDO905**       | Linear directly modulated DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks.             |
 | **Teleste HDC100 TSEMP - HDO906**       | Directly modulated linear O-band DWDM DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks. |
 
-#### **Amplifiers**
+#### Amplifiers
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -207,7 +210,7 @@ These pages display the **Analog** and **Discrete Alarm Limits Table** for each 
 | **Teleste HDC100 TSEMP - HDO611**       | Output forward amplifier with 16 dB or 21 dB gain and optional spectrum analyzer.                                         |
 | **Teleste HDC100 TSEMP - HDO613**       | Forward path amplifier.                                                                                                   |
 
-#### **Receivers**
+#### Receivers
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -217,14 +220,14 @@ These pages display the **Analog** and **Discrete Alarm Limits Table** for each 
 | **Teleste HDC100 TSEMP - HDO212 (3.1.0.x)** | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
 | **Teleste HDC100 TSEMP - HDO802**       | Optical forward path receiver.                                                                                            |
 
-#### **Power Supplies**
+#### Power Supplies
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **Teleste HDC100 TSEMP - HDP230**       | Switching mode power supply with load sharing functionality.                                                              |
 | **Teleste HDC100 TSEMP - HDP301**       | Switching mode power supply with load sharing functionality.                                                              |
 
-#### **Other Modules**
+#### Other Modules
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -269,6 +272,7 @@ Range 5.0.0.x of the Teleste HDC100 connector does not create DVE elements but n
 ### General Page
 
 This page displays general information such as the Alias Name and Location. It also contains general hardware and software info and statistics such as uptime, total uptime, reset count, and position.
+
 ![General Page](~/connector/images/TelesteHDC100GeneralPage.png)
 
 ### Monitoring Page
@@ -280,6 +284,7 @@ This page contains two tables, one for **analog** and one for **discrete alarm l
 This is the main page for all devices connected to the controller. It contains parameters for easier control over created elements. This includes counters indicating the total number of elements connected to the controller, as well as a table with details about the connected nodes.
 
 You can configure automatic removal of missing nodes, creation of elements with invalid submasks, and creation of elements that are not in the config file.
+
 ![Module Overview](~/connector/images/TelesteHDC100ModuleOverview.png)
 
 The page has two subpages:
@@ -294,6 +299,7 @@ The page has two subpages:
 ### Interfaces Page
 
 On the Interfaces page, a table with two rows provides an easy overview of the information related to Ethernet and the HDO bus. It includes all information regarding communication such as the IP address, net masks, gateway address, mastering mode, master address, poll timeout, packet timeout, etc.
+
 ![Interfaces Page](~/connector/images/TelesteHDC100InterfacesPage.png)
 
 > [!NOTE]

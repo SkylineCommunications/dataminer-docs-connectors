@@ -3,7 +3,9 @@ uid: Connector_help_Teleste_HDC100_TSEMP
 ---
 
 # Teleste HDC100 TSEMP
+
 ## About
+
 The **Teleste HDC100 TSEMP connector** is an efficient solution for managing and monitoring HDO modules within the Teleste HDO platform. The HDC100 module, installed within an HDX frame, enables centralized control over Teleste’s HDO modules—including transmitters, receivers, and more—through real-time health monitoring and remote access. This connector offers streamlined oversight by displaying the status of all connected modules, complete with essential metrics such as configuration, software version, uptime, and reset options for intuitive use. The system allows seamless Ethernet and serial connectivity, compatible with the Teleste CATVisor Commander and EMS.
 
 ### Key Features
