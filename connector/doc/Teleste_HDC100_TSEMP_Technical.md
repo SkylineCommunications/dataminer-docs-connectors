@@ -12,32 +12,48 @@ A **serial** connection is used to retrieve and configure the information of the
 
 The connector also provides different possibilities for **alarm monitoring** and **trending**.
 
-### Exported connectors
+### Supported connectors
+#### **Transmitters**
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| Teleste HDC100 TSEMP - HDO101           | RF switch module used for signal backup purposes.                                                                         |
-| Teleste HDC100 TSEMP - HDO202           | Dual receiver with frequency range 5-300 MHz and output switches for return path fiber-optic links in CATV networks.      |
-| Teleste HDC100 TSEMP - HDO204           | Quadruple receiver module with 230 MHz and DOCSIS 3.1 compatibility for fiber-optic return path links in CATV networks.   |
-| Teleste HDC100 TSEMP - HDO421           | Return path amplifier with 20 dB gain.                                                                                    |
-| Teleste HDC100 TSEMP - HDO610           | Forward path amplifier with four outputs and 10 dB gain.                                                                  |
-| Teleste HDC100 TSEMP - HDO611           | Output forward amplifier with 16 dB or 21 dB gain and optional spectrum analyzer.                                         |
-| Teleste HDC100 TSEMP - HDO902           | 1310 nm DFB transmitter for forward path fiber-optic links in CATV networks.                                              |
-| Teleste HDC100 TSEMP - HDO904           | O-band DWDM laser transmitter for forward path fiber-optic links in CATV networks.                                        |
-| Teleste HDC100 TSEMP - HDO905           | Linear directly modulated DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks.             |
-| Teleste HDC100 TSEMP - HDO906           | Directly modulated linear O-band DWDM DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks. |
-| Teleste HDC100 TSEMP - HDP230           | Switching mode power supply with load sharing functionality.                                                              |
-| Teleste HDC100 TSEMP - HDP301           | Switching mode power supply with load sharing functionality.                                                              |
-| Teleste HDC100 TSEMP - HDO775           | Downstream transmitter. 1550 nm DWDM transmitter for short, medium and long distances.                                    |
-| Teleste HDC100 TSEMP - HDO907 (3.1.0.x) | Downstream 1310 nm transmitter for short distances.                                                                       |
-| Teleste HDC100 TSEMP - HDO212 (3.1.0.x) | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
-| Teleste HDC100 TSEMP - HDO802           | Optical forward path receiver.                                                                                            |
-| Teleste HDC100 TSEMP - HDO302           | DFB laser transmitter.                                                                                                    |
-| Teleste HDC100 TSEMP - HDO371           | DWDM DFB laser transmitter.                                                                                               |
-| Teleste HDC100 TSEMP - HDO773           | 1550 nm DWDM transmitter.                                                                                                 |
-| Teleste HDC100 TSEMP - HDO613           | Forward path amplifier.                                                                                                   |
-| Teleste HDC100 TSEMP - HDO908           | Downstream transmitter.                                                                                                   |
-| Teleste HDC100 TSEMP - HDO203           | Dual receiver for return path (upstream) fiber-optic links.                                                               |
+| **Teleste HDO775**                      | Downstream transmitter. 1550 nm DWDM transmitter for short, medium, and long distances.                                   |
+| **Teleste HDO905**                      | Linear directly modulated DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks.             |
+| **Teleste HDO906 TSEMP**                | Directly modulated linear O-band DWDM DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks. |
+| **Teleste HDO907**                      | Downstream 1310 nm transmitter for short distances.                                                                       |
+| **Teleste HDO908 TSEMP**                | Downstream transmitter.                                                                                                   |
+
+#### **Amplifiers**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDO421 TSEMP**                | Return path amplifier with 20 dB gain.                                                                                    |
+| **Teleste HDO611 TSEMP**                | Output forward amplifier with 16 dB or 21 dB gain and optional spectrum analyzer.                                         |
+| **Teleste HDO613 TSEMP**                | Forward path amplifier.                                                                                                   |
+| **Teleste HDO752**                      | High-performance single wavelength optical amplifier for fiber optic CATV and FTTx networks.                              |
+
+#### **Receivers**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDO202 TSEMP**                | Dual receiver with frequency range 5-300 MHz and output switches for return path fiber-optic links in CATV networks.      |
+| **Teleste HDO203**                      | Dual receiver for return path (upstream) fiber-optic links.                                                               |
+| **Teleste HDO212**                      | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
+
+#### **Switch Modules**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDO101 TSEMP**                | RF switch module used for signal backup purposes.                                                                         |
+| **Teleste HDO103 TSEMP**                | RF switch module used for signal backup purposes.                                                                         |
+| **Teleste HDO151**                      | Optical switch module used for signal backup purposes.                                                                    |
+
+#### **Power Supplies**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDP230 TSEMP**                | Switching mode power supply with load sharing functionality.                                                              |
+| **Teleste HDP301 TSEMP**                | Switching mode power supply with load sharing functionality.                                                              |
 
 ## Configuration
 
@@ -168,6 +184,51 @@ For each of the tables, a subpage allows you to enable or disable the **automati
 These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo** and **Deadband**, as well as the **Status** for each of these columns.
 
 ## Usage (4.0.0.x)
+### Exported connectors
+#### **Transmitters**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDC100 TSEMP - HDO302**       | DFB laser transmitter.                                                                                                    |
+| **Teleste HDC100 TSEMP - HDO371**       | DWDM DFB laser transmitter.                                                                                               |
+| **Teleste HDC100 TSEMP - HDO773**       | 1550 nm DWDM transmitter.                                                                                                 |
+| **Teleste HDC100 TSEMP - HDO775**       | Downstream transmitter. 1550 nm DWDM transmitter for short, medium, and long distances.                                   |
+| **Teleste HDC100 TSEMP - HDO902**       | 1310 nm DFB transmitter for forward path fiber-optic links in CATV networks.                                              |
+| **Teleste HDC100 TSEMP - HDO904**       | O-band DWDM laser transmitter for forward path fiber-optic links in CATV networks.                                        |
+| **Teleste HDC100 TSEMP - HDO905**       | Linear directly modulated DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks.             |
+| **Teleste HDC100 TSEMP - HDO906**       | Directly modulated linear O-band DWDM DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks. |
+
+#### **Amplifiers**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDC100 TSEMP - HDO421**       | Return path amplifier with 20 dB gain.                                                                                    |
+| **Teleste HDC100 TSEMP - HDO610**       | Forward path amplifier with four outputs and 10 dB gain.                                                                  |
+| **Teleste HDC100 TSEMP - HDO611**       | Output forward amplifier with 16 dB or 21 dB gain and optional spectrum analyzer.                                         |
+| **Teleste HDC100 TSEMP - HDO613**       | Forward path amplifier.                                                                                                   |
+
+#### **Receivers**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDC100 TSEMP - HDO202**       | Dual receiver with frequency range 5-300 MHz and output switches for return path fiber-optic links in CATV networks.      |
+| **Teleste HDC100 TSEMP - HDO203**       | Dual receiver for return path (upstream) fiber-optic links.                                                               |
+| **Teleste HDC100 TSEMP - HDO204**       | Quadruple receiver module with 230 MHz and DOCSIS 3.1 compatibility for fiber-optic return path links in CATV networks.   |
+| **Teleste HDC100 TSEMP - HDO212 (3.1.0.x)** | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
+| **Teleste HDC100 TSEMP - HDO802**       | Optical forward path receiver.                                                                                            |
+
+#### **Power Supplies**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDC100 TSEMP - HDP230**       | Switching mode power supply with load sharing functionality.                                                              |
+| **Teleste HDC100 TSEMP - HDP301**       | Switching mode power supply with load sharing functionality.                                                              |
+
+#### **Other Modules**
+
+| Exported Connector                      | Description                                                                                                               |
+|-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Teleste HDC100 TSEMP - HDO101**       | RF switch module used for signal backup purposes.                                                                         |
 
 ### General Page
 
@@ -237,30 +298,6 @@ On the Interfaces page, a table with two rows provides an easy overview of the i
 
 > [!NOTE]
 > For some cells, it is not possible to set values. In the logging for the element, you can see notifications for commands that are not supported.
-
-## Notes
-
-### Supported connectors - 5.0.0.X
-
-Range 5.0.0.x supports the following connectors:
-
-- Teleste HDO101 TSEMP
-- Teleste HDO103 TSEMP
-- Teleste HDO203
-- Teleste HDO151
-- Teleste HDO202 TSEMP
-- Teleste HDO421 TSEMP
-- Teleste HDO611 TSEMP
-- Teleste HDO613 TSEMP
-- Teleste HDO752
-- Teleste HDO775
-- Teleste HDO905
-- Teleste HDO906 TSEMP
-- Teleste HDO907
-- Teleste HDO908 TSEMP
-- Teleste HDO212
-- Teleste HDP230 TSEMP
-- Teleste HDP301 TSEMP
 
 ### Detailed logging about polled modules
 
