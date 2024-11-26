@@ -13,8 +13,9 @@ A **serial** connection is used to retrieve and configure the information of the
 The connector also provides different possibilities for **alarm monitoring** and **trending**.
 
 ### Supported connectors
-The following table provides a categorized list of connectors supported by range 5.0.0.X :
- 
+
+Below you can find a categorized list of the connectors supported by range 5.0.0.x.
+
 #### Transmitters
 
 | Exported Connector                      | Description                                                                                                               |
@@ -188,8 +189,9 @@ These pages display the **Analog** and **Discrete Alarm Limits Table** for each 
 ## Usage (4.0.0.x)
 
 ### Exported connectors
-The following tables provide a comprehensive overview of the exported connectors used for DVEs creation.
- 
+
+Below you can find a comprehensive overview of the exported connectors used for the creation of DVEs.
+
 #### Transmitters
 
 | Exported Connector                      | Description                                                                                                               |
