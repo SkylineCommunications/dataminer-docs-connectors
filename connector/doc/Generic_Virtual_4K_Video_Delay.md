@@ -12,7 +12,7 @@ This is a virtual connector that initializes DCF connections at startup. It has 
 
 | Range              | Features                                                                        | Based on | System Impact |
 |--------------------|---------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initializes the following DCF connections at startup. <br> - Input <br> - Output| -        | -             |
+| 1.0.0.x [SLC Main] | Initializes the following DCF connections at startup: <br> - Input <br> - Output| -        | -             |
 
 ### Product Info
 
