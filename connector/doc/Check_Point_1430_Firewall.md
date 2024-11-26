@@ -70,8 +70,8 @@ The element created with this connector consists of the following data pages:
 - **LS Connectivity**: This page contains information related to LS connectivity.
 - **VPN**: Provides an overview of the **Check Point VPN (CPV)**. Also contains several page buttons that provide detailed information such as **IKE**, **FWZ**, **Accelerator**, **IPSec NIC** and **IPSec**.
 - **SNMP Traps**: Contains the SNMP Traps table.
-- **RAID**: Contains **RAID Volume** and **Disk** tables.
-- **Sensor**: Contains **Temperature**, **Fan Speed** and **Voltage** Sensor tables.
-- **Power Supply**: Contains the Status of the power supplies.
-- The interface information such as **Input** and **Output Bitrates** and **Error Rates**, and **Bandwidth** are presented on the Interfaces page
+- **RAID**: Contains the **RAID Volume** and **Disk** tables.
+- **Sensor**: Contains the **Temperature**, **Fan Speed**, and **Voltage Sensor** tables.
+- **Power Supply**: Displays the status of the power supplies.
+- **Interfaces**: Displays interface information such as **Input** and **Output Bitrates**, **Error Rates**, and **Bandwidth**.
 - **Web Interface**: Displays the web interface of the polling IP address.
