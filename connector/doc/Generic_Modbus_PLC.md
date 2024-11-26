@@ -21,12 +21,14 @@ If you want to use the export function, you need to provide an empty Excel file 
 | 1.0.0.x          | Initial version.                       | No                  | Yes                     |
 | 1.0.1.x          | Major change by QA (DisplayKey).       | No                  | Yes                     |
 | 1.0.2.x          | Major change: changed naming.          | No                  | Yes                     |
+| 1.0.4.x          | Major change: The slave address is now dynamically retrieved from the registers table. Alarm Page: Functions similarly to the register pages, with alarm-specific registers added as per the device documentation.          | No                  | Yes                     |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | Any                         |
+| 1.0.4.x          | Any                         |
 
 ## Installation and configuration
 
@@ -46,23 +48,58 @@ SERIAL CONNECTION:
 
 ### Configuration
 
-When you use this connector for the first time on a DMA, place an Excel file with the name **Template.xlsx** in the connector folder **C:\Skyline DataMiner\Documents\Generic Modbus PLC**.
+When using the connector for the first time, ensure that the configuration file is located in the Documents folder within DataMiner (e.g., **C:\Skyline DataMiner\Documents\Generic Modbus PLC**). Detailed instructions on the file format and required data can be found in the [Configuration File](#configuration-File) section.
+
+### Configuration File
+
+The configuration file must include Excel sheets designated for the following registers:
+
+**DI** – Digital Input,
+**DO** – Digital Output,
+**AI** – Analog Input,
+**AO** – Analog Output,
+
+An additional sheet for alarms should be named **Alarms**.
+
+To complete the configuration file, refer to the device documentation, which defines the fields for the register values that need to be retrieved. Below is an example of how to fill in the file with dummy data:
+
+![Overview](../images/Generic_Modbus_PLC_Configfile_Template.png)
+
+**Required Fields for Retrieving Registers:**
+- **Slave Address:** The address of the slave device.
+- **Register Number:** The register number associated with the data to be retrieved.
+- **Modicon Format:** For Analog Outputs, this field should be the value 40000 + Register Number.
+- **Number of Registers to Read:** Specifies how many registers should be read for the given value.
+
+**Optional Fields for Processing and Interpretation:**
+The remaining fields help with processing and provide better clarity for interpreting the retrieved information from the registers. These fields are used for internal processing and are not mandatory for retrieving the registers.
+
+The **Template** with all the pages and fields that you can use for loading onto the element and retrieving data from the device after filling it out according to the device documentation can be found here: [Template](https://skylinebe.sharepoint.com/:x:/s/DeviceDocumentation/EYWnTbve1ghMjJyi5dEfRnYBvx2bFNPzB-qTDgKkhoeAtQ?e=XgGFRB).
 
 ## Usage
 
+### General 
+On the General page, there is a **Polling Control** option where you can choose between:
+- **Poll by Timer:** Polling occurs at set intervals.
+- **Poll Continuous:** Registers are polled constantly, and values are continuously updated.
+  
+Additionally, you have the option to show or hide pages for specific registers if they are not in use.
+
+
 ### Import/Export
 
-On this page, you can **import** an Excel file in order to populate the tables, so that the connector can effectively start polling the connections.
+On this page, you can **Import Excel** an Excel file to populate the tables, enabling the connector to start polling the connections effectively.
+If not all files are displayed, you can use the **Refresh Files** button to update the file list.
 
-You can also **export** the tables from the element to an Excel file here.
+You can also **Export Excel** the tables from the element to an Excel file here.
 
 ### Analog Input
 
-This page displays the **Analog** **Input** connections with the current value and all the information imported from the Excel file.
+This page displays the **Analog Input** connections with the current value and all the information imported from the Excel file.
 
 ### Analog Output
 
-This page displays the **Analog** **Output** connections with the current value and all the information from the Excel file. The current value can also be modified here.
+This page displays the **Analog Output** connections with the current value and all the information from the Excel file. The current value can also be modified here.
 
 ### Digital Input
 
@@ -71,3 +108,4 @@ This page displays the **Digital Input** connections with the current value and 
 ### Digital Output
 
 This page displays the **Digital Output** connections with the current value and all the information from the Excel file. The current value can also be modified here.
+
