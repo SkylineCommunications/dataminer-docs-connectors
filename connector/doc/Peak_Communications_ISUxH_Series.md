@@ -20,7 +20,7 @@ This connector uses a serial connection to communicate with the device, so that 
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | Unknown            |
+| 1.0.0.x | 5.24            |
 
 ### System Info
 
