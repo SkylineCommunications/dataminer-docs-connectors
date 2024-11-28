@@ -83,25 +83,26 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the device, by default *65535*.
-# Usage
 
-Depending on the range of connector that is being use, different features are available. You can find more information about this below.
+## How to Use
 
-## [5.0.0.x](#tab/version-5-0-0-x)
+Depending on the range of connector that is being used, different features are available. You can find more information about this below.
+
+### [5.0.0.x](#tab/version-5-0-0-x)
 
 Range 5.0.0.x of the Teleste HDC100 connector does not create DVE elements but new elements that use their own connector depending on the node model.
 
-### General Page
+#### General Page
 
 This page displays general information such as the Alias Name and Location. It also contains general hardware and software info and statistics such as uptime, total uptime, reset count, and position.
 
 ![General Page](~/connector/images/TelesteHDC100GeneralPage.png)
 
-### Monitoring Page
+#### Monitoring Page
 
 This page contains two tables, one for **analog** and one for **discrete alarm limits**. Both tables provide detailed information about each alarm and allow you to configure the read/write parameters for each alarm.
 
-### Module Overview Page
+#### Module Overview Page
 
 This is the main page for all devices connected to the controller. It contains parameters for easier control over created elements. This includes counters indicating the total number of elements connected to the controller, as well as a table with details about the connected nodes.
 
@@ -118,7 +119,7 @@ The page has two subpages:
   > [!NOTE]
   > For each connector, one default alarm or trend template can be selected.
 
-### Interfaces Page
+#### Interfaces Page
 
 On the Interfaces page, a table with two rows provides an easy overview of the information related to Ethernet and the HDO bus. It includes all information regarding communication such as the IP address, net masks, gateway address, mastering mode, master address, poll timeout, packet timeout, etc.
 
@@ -127,18 +128,17 @@ On the Interfaces page, a table with two rows provides an easy overview of the i
 > [!NOTE]
 > For some cells, it is not possible to set values. In the logging for the element, you can see notifications for commands that are not supported.
 
-### Detailed logging about polled modules
+#### Detailed logging about polled modules
 
 Detailed logging about polled modules is disabled by default on app level. To enable this, enable the parameter **Debug Logging State** (ID 5).
 
+### [4.0.0.x](#tab/version-4-0-0-x)
 
-## [4.0.0.x](#tab/version-4-0-0-x)
-
-### Exported connectors
+#### Exported connectors
 
 Below you can find a comprehensive overview of the exported connectors used for the creation of DVEs.
 
-#### Transmitters
+##### Transmitters
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -151,7 +151,7 @@ Below you can find a comprehensive overview of the exported connectors used for 
 | **Teleste HDC100 TSEMP - HDO905**       | Linear directly modulated DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks.             |
 | **Teleste HDC100 TSEMP - HDO906**       | Directly modulated linear O-band DWDM DFB laser transmitter for forward path fiber-optic links in CATV and FTTx networks. |
 
-#### Amplifiers
+##### Amplifiers
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -160,7 +160,7 @@ Below you can find a comprehensive overview of the exported connectors used for 
 | **Teleste HDC100 TSEMP - HDO611**       | Output forward amplifier with 16 dB or 21 dB gain and optional spectrum analyzer.                                         |
 | **Teleste HDC100 TSEMP - HDO613**       | Forward path amplifier.                                                                                                   |
 
-#### Receivers
+##### Receivers
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
@@ -170,20 +170,20 @@ Below you can find a comprehensive overview of the exported connectors used for 
 | **Teleste HDC100 TSEMP - HDO212 (3.1.0.x)** | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
 | **Teleste HDC100 TSEMP - HDO802**       | Optical forward path receiver.                                                                                            |
 
-#### Power Supplies
+##### Power Supplies
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **Teleste HDC100 TSEMP - HDP230**       | Switching mode power supply with load sharing functionality.                                                              |
 | **Teleste HDC100 TSEMP - HDP301**       | Switching mode power supply with load sharing functionality.                                                              |
 
-#### Other Modules
+##### Other Modules
 
 | Exported Connector                      | Description                                                                                                               |
 |-----------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **Teleste HDC100 TSEMP - HDO101**       | RF switch module used for signal backup purposes.                                                                         |
 
-### General Page
+#### General Page
 
 This page displays the general parameters of the device, such as the Alias Name, HW Version, SW Version, BIOS Version, Up Time, Rack Number, and Temperature.
 
@@ -199,7 +199,7 @@ It contains three page buttons:
 
   - For the **Discrete Alarm Limits**, the **settings** can be configured, and the **alarm** status can be monitored.
 
-### Overview Page
+#### Overview Page
 
 This page contains the **Modules Table**. A DVE will be created for each of the cards listed in this table that have their **Status** set to *OK*.
 
@@ -211,25 +211,25 @@ The **Configuration** page button provides access to a subpage with the followin
 - **DVE Settings**: Allows you to enable or disable **Element Prefix**, **Automatic DVE Name**, and **Automatic DVE View**. There is also an option to **Delete Hanging DVEs**, which can be of use when a module is swapped with a module of a different type in the same position.
 - **Configuration Import**: Allows you to specify a custom **Configuration Directory** (the default directory is `C:\Skyline DataMiner\Documents\Teleste HDC100 TSEMP`). Via the **Configuration File** dropdown menu, you can select one of the configuration files present in the directory. With the **Import** button you can then import the file. The **Refresh** button allows you to refresh the dropdown menu.
 
-### HDO101 / HDO202 / HDO204 / HDO302 / HDO371 / HDO421 / HDO610 / HDO611 / HDO613 / HDO773/ HDO775 / HDO802 / HDO902 / HDO904 / HDO905 / HDO906 / HDP230 / HDO231 / HDO908 Pages
+#### HDO101 / HDO202 / HDO204 / HDO302 / HDO371 / HDO421 / HDO610 / HDO611 / HDO613 / HDO773/ HDO775 / HDO802 / HDO902 / HDO904 / HDO905 / HDO906 / HDP230 / HDO231 / HDO908 Pages
 
 Each of these pages displays a table specific to the module in question, an **Analog Alarm Limits** table, and a **Discrete Alarm Limits** table.
 
-## [3.1.0.x](#tab/version-3-1-0-x)
+### [3.1.0.x](#tab/version-3-1-0-x)
 
-### General Page
+#### General Page
 
 This page contains identification information and statistics for the device, as well as a **Reset Device** button.
 
 The identification information includes the general parameters for the HDC100 device, such as its **Name** (configurable), **Type**, **Configuration**, **Software Version**, **BIOS Version**, **Hardware Version**, **Rack** and **Slot Number**, etc.
 
-The statistics include the **Uptime**, **Total Uptime**, **Number of Restarts**, **Temperature** and **Alarm Control Detection**. This section also contains a button that provides access to a subpage with the **Analog** and **Discrete Alarm Limits Table**.
+The statistics include the **Uptime**, **Total Uptime**, **Number of Restarts**, **Temperature**, and **Alarm Control Detection**. This section also contains a button that provides access to a subpage with the **Analog** and **Discrete Alarm Limits Table**.
 
-### Interfaces Page
+#### Interfaces Page
 
-This page contains network settings such as the **IP Address**, **Network Mask** and **Default Gateway**, as well as the following **HDO Bus** parameters: **IP Address**, **Network Mask**, **Default Gateway**, **Master Address**, **Mastering**, **Poll Timeout** and **Packet Timeout**.
+This page contains network settings such as the **IP Address**, **Network Mask** and **Default Gateway**, as well as the following **HDO Bus** parameters: **IP Address**, **Network Mask**, **Default Gateway**, **Master Address**, **Mastering**, **Poll Timeout**, and **Packet Timeout**.
 
-### Module Overview Page
+#### Module Overview Page
 
 This page displays the **HDO Devices Table**. It also allows you to **Remove Missing Modules**.
 
@@ -240,7 +240,7 @@ In addition, the **Configuration** page button provides access to a subpage with
 - The possibility to enable or disable the **Automatic View Check**.
 - The **Manual View Check** button.
 
-### SW Update Page
+#### SW Update Page
 
 This page includes the following parameters:
 
@@ -256,7 +256,7 @@ This page includes the following parameters:
 - **Send Update**
 - **Abort Update**
 
-### DVE Tables Page
+#### DVE Tables Page
 
 All DVE tables for the different modules are present on this page:
 
@@ -278,13 +278,13 @@ All DVE tables for the different modules are present on this page:
 
 For each of the tables, a subpage allows you to enable or disable the **automatic removal of deleted modules** or to remove modules manually.
 
-### Alarm Limits Pages
+#### Alarm Limits Pages
 
-These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo** and **Deadband**, as well as the **Status** for each of these columns.
+These pages display the **Analog** and **Discrete Alarm Limits Table** for each of the module types. In the Analog Alarm Limits Table, you can configure the **HiHi**, **Hi**, **Lo**, **LoLo**, and **Deadband**, as well as the **Status** for each of these columns.
 
-## [Versions prior to 3.1.0.x](#tab/version-pre-3-1-0-x)
+### [Versions prior to 3.1.0.x](#tab/version-pre-3-1-0-x)
 
-### General Page
+#### General Page
 
 This page displays identification information and statistics for the device.
 
@@ -292,11 +292,11 @@ This page displays identification information and statistics for the device.
 - **Network**: Network settings of the device and HDO bus.
 - **Monitoring**: Overview of the analog and discrete alarm limits of the device.
 
-### Overview Page
+#### Overview Page
 
 For every card type, an entry is created in the **Modules** table. Different configurations are possible (e.g. **Automatic Removal**) in order to delete the modules with status **Missing**.
 
-#### Configuration
+##### Configuration
 
 - **Timer Configuration**: The polling of the data for the modules can be configured by setting the different timer intervals.
 
@@ -313,7 +313,8 @@ For every card type, an entry is created in the **Modules** table. Different con
 
     10.3.3.9;1;9;DVE Name 3;DVE View 2
 
-### Module Type pages
+#### Module Type pages
 
 For every supported module type (exported connector), a page is available with an overview of the **Details**, **Analog Alarm Limits** and **Discrete Alarm Limits** of that module type.
 
+***
