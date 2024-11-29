@@ -40,8 +40,8 @@ Below you can find a categorized list of the connectors supported by range 5.0.0
 | Supported Connector        | Description                                                                                                               |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------|
 | **Teleste HDO202 TSEMP**   | Dual receiver with frequency range 5-300 MHz and output switches for return path fiber-optic links in CATV networks.      |
-| **Teleste HDO203**         | Dual receiver for return path (upstream) fiber-optic links.                                                               |
-| **Teleste HDO212**         | Dual receiver module for fiber-optic return path links in CATV networks.                                                  |
+| **Teleste HDO203**         | Dual receiver for return path (upstream) fiber-optic links.                 |
+| **Teleste HDO212**         | Dual receiver module for fiber-optic return path links in CATV networks.    |
 
 #### Switch Modules
 
@@ -55,8 +55,8 @@ Below you can find a categorized list of the connectors supported by range 5.0.0
 
 | Supported Connector        | Description                                                                                                               |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| **Teleste HDP230 TSEMP**   | Switching mode power supply with load sharing functionality.                                                              |
-| **Teleste HDP301 TSEMP**   | Switching mode power supply with load sharing functionality.                                                              |
+| **Teleste HDP230 TSEMP**   | Switching mode power supply with load sharing functionality.                    |
+| **Teleste HDP301 TSEMP**   | Switching mode power supply with load sharing functionality.                    |
 
 ## Configuration
 
