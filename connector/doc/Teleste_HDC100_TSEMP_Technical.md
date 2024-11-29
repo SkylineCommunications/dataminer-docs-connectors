@@ -114,7 +114,7 @@ The page has two subpages:
 
 - **Configuration**: This page allows you to select a specific .csv file to use for the configuration of the elements. The config files must be located in the following directory: `C:\Skyline DataMiner\Documents\Teleste HDC100 TSEMP\`.
 
-- **Template**: This page shows the alarm and trend templates for each [supported connector](#supported-connectors) available in your DMS.
+- **Template**: This page shows the alarm and trend templates for each [supported connector](#supported-modules) available in your DMS.
 
   > [!NOTE]
   > For each connector, one default alarm or trend template can be selected.
