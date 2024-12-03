@@ -42,7 +42,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
-  - **Bus address**: The bus address of the device. The connector uses this to create commands. (Decimal value range: 32 to 57.)
+  - **Bus address**: The bus address of the device. The connector uses this to create commands.
 
 ## How to use
 
