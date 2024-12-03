@@ -4,7 +4,7 @@ uid: Connector_help_Google_Android_Debug_Bridge
 
 # Google Android Debug Bridge
 
-This connector can be used to monitor devices with Android Debug Bridge capability. Android Debug Bridge (adb) is a versatile command-line tool that lets you communicate with a device.
+This connector can be used to monitor devices with Android Debug Bridge capability. Android Debug Bridge (ADB) is a versatile command-line tool that lets you communicate with a device.
 
 ## About
 
@@ -16,9 +16,9 @@ This connector can be used to monitor devices with Android Debug Bridge capabili
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 1.0.41  				 |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 1.0.41             |
 
 ### System Info
 
@@ -36,13 +36,13 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-The command line aplication platform-tools must be installed in the local server in the path "C:\platform-tools".
+The command-line application platform tools must be installed on the local server in the folder `C:\platform-tools`.
 
 ## How to Use
 
 ### General
 
-This page displays general information about the device locations. Is it possible to import a csv file with location and device information.
+This page displays general information about the device locations. It is possible to import a CSV file with location and device information.
 
 ### Devices
 
@@ -51,4 +51,3 @@ This page contains information about the device and the device interfaces.
 ### Overview
 
 This page displays a tree view with the network topology.
-
