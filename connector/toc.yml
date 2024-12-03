@@ -5388,6 +5388,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE
   - name: Meinberg LANTIME IMS-BPE API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE_API_V10
+  - name: Meinberg LANTIME IMS-BPE API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE_API_V17
   - name: Meinberg LANTIME IMS-CPE
     topicUid: Connector_help_Meinberg_LANTIME_IMS-CPE
   - name: Meinberg LANTIME IMS-CPE API V10
