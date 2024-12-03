@@ -4144,6 +4144,8 @@
     topicUid: Connector_help_GMIT_BMM-810
 - name: Google
   items:
+  - name: Google Android Debug Bridge
+    topicUid: Connector_help_Google_Android_Debug_Bridge
   - name: Google Cloud Compute Engine
     topicUid: Connector_help_Google_Cloud_Compute_Engine
   - name: Google Cloud DNS
