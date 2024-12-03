@@ -12,7 +12,7 @@ A **serial** connection is used to retrieve and configure the information of the
 
 The connector also provides different possibilities for **alarm monitoring** and **trending**.
 
-### Supported modules
+### Supported Modules
 
 Below you can find a categorized list of the connectors supported by range 5.0.0.x that will be used for creation of new elements.
 
@@ -134,7 +134,7 @@ Detailed logging about polled modules is disabled by default on app level. To en
 
 ### [4.0.0.x](#tab/version-4-0-0-x)
 
-#### Supported modules
+#### Supported Modules
 
 Below you can find a comprehensive overview of the exported connectors used for the creation of DVEs.
 
