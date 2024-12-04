@@ -56,4 +56,4 @@ HTTP calls are used to retrieve the API information.
 
 On the **General** page of this connector, you can configure the username and password to access the API.
 
-The **Events** page contains information about all 247 future events. Every hour the old events will be automatically removed based on the configured **Events Storage Time**.
+The **Events** page contains information about all 24/7 future events. Every hour the old events will be automatically removed based on the configured **Events Storage Time**.
