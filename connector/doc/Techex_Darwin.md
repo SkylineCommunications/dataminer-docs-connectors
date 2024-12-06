@@ -12,10 +12,10 @@ The microservice-based tx darwin platform is used for live media processing, tra
 
 ### Version Info
 
-| Range              | Features         | Based on | System Impact |
-|--------------------|------------------|----------|---------------|
-| 1.0.0.x | Initial version. | -        | -             |
-| 1.0.1.x [SLC Main] | Update for Firmware 1.4.2. | 1.0.0.2  | -             |
+| Range              | Features                   | Based on | System Impact |
+|--------------------|----------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.           | -        | -             |
+| 1.0.1.x [SLC Main] | Update for firmware 1.4.2. | 1.0.0.2  | -             |
 
 ### Product Info
 
