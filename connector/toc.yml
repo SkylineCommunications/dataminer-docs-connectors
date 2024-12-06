@@ -5054,6 +5054,10 @@
     topicUid: Connector_help_KPN_Probe_Service
   - name: KPN Service Manager
     topicUid: Connector_help_KPN_Service_Manager
+- name: Kratos
+  items:
+  - name: Kratos RF Switching System
+    topicUid: Connector_help_Kratos_RF_Switching_System
 - name: Kronback Tracers
   items:
   - name: Kronback Tracers B16
