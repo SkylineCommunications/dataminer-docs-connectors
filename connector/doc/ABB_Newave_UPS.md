@@ -53,11 +53,9 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-SNMP is used to retrieve the device information. On element creation, IP address of the device must be set.
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer.
-Pages section describes what data each page contains.
+SNMP is used to retrieve the device information. To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**.
 
-## Pages
+Below, you can find an overview of the available data pages.
 
 ### General
 
