@@ -23,7 +23,6 @@ The **Tektronix Sentry** connector will display information related to the selec
 | 1.3.0.x          | Supports firmware version 10.3 Improved communication with Tektronix Config Manager Works with the latest version of Tektronix Config Manager (1.1.0.x) | No                  | Yes                     |
 | 1.4.0.x          | New range for firmware 10.6.6 Add ABR parameters for program statistics                                                                                 | No                  | Yes                     |
 
-
 ### Product Info
 
 | **Range** | **Device Firmware Version**                                        |
@@ -33,7 +32,6 @@ The **Tektronix Sentry** connector will display information related to the selec
 | 1.2.0.x          | 9.4                                                                |
 | 1.3.0.x          | 10.3+ (10.4 also works with this connector range; tested with 10.4.3) |
 | 1.4.0.x          | 10.6.6                                                             |
-
 
 ## Installation and configuration
 
