@@ -4,12 +4,9 @@ uid: Connector_help_FOR-A_DSK-400
 
 # FOR-A DSK-400
 
-The DSK-400 is a digital downstream keyer which accepts 4 background (Line) video and 4 title 
-inputs (Fill and Key) in both 1080p (Level-A) and 1080i. 
-It can superimpose title text over incoming video to output combined signals. A chromakey function 
-is also available as an option.
+The DSK-400 is a digital downstream keyer that accepts 4 background (Line) video and 4 title inputs (Fill and Key) in both 1080p (Level-A) and 1080i. It can superimpose title text over incoming video to output combined signals. A chromakey function is also available as an option.
 
-This connector uses a serial connection oveer UDP/IP port to communicate with the device.
+This connector uses a serial connection over UDP/IP port to communicate with the device.
 
 ## About
 
@@ -23,7 +20,7 @@ This connector uses a serial connection oveer UDP/IP port to communicate with th
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | v1.08.2           |
+| 1.0.0.x | v1.08.2            |
 
 ### System Info
 
@@ -49,4 +46,4 @@ SERIAL CONNECTION:
 
 ## How to use
 
-The **General** page displays Superimpose statuses for all of 4 Superimpose values. The user can easily configure and read the Superimpose Status, Transition Rate, Clip and Gain values for each Superimpose.
+The **General** page displays Superimpose statuses for all of 4 Superimpose values. You can configure and read the Superimpose Status, Transition Rate, Clip, and Gain values for each Superimpose.
