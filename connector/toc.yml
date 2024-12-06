@@ -3664,6 +3664,8 @@
     topicUid: Connector_help_Fluvius_Teleste_Node_Service_Provisioning
 - name: FOR-A
   items:
+  - name: FOR-A DSK-400
+    topicUid: Connector_help_FOR-A_DSK-400
   - name: FOR-A FA-9500
     topicUid: Connector_help_FOR-A_FA-9500
   - name: FOR-A FA-9520
