@@ -10,17 +10,17 @@ CPI's GEN IV klystron power amplifier (KPA) is used by Direct-to-Home service pr
 
 ### Version Info
 
-| Range              | Key Features                                | Based on     | System Impact |
-|----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.1              | Reviewed connector based on the CPI K4U74 | CPI K4U74    | -                 |
-| 1.1.0.1 [SLC Main]   | Support new firmware versions             | 1.0.0.1      | Devices running a different firmware version will not be compatible with this driver version.|
+| Range              | Key Features                               | Based on  | System Impact                                                                                    |
+|--------------------|--------------------------------------------|-----------|--------------------------------------------------------------------------------------------------|
+| 1.0.0.1            | Reviewed connector based on the CPI K4U74. | CPI K4U74 | -                                                                                                |
+| 1.1.0.1 [SLC Main] | Supports new firmware versions.            | 1.0.0.1   | Devices running a different firmware version will not be compatible with this connector version. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | Gen IV                 |
-| 1.1.0.x   | Front Panel Main Program Software Version: 03.01.72, Front Panel Boot Kernel Software Version:03.00.14, Power Supply Main Program Software Version: 03.01.35,Power Supply Boot Kernel Software Version: 03.00.03, RF Controller Main Program Software Version: 03.01.42,RF Controller Boot Kernel Software Version: 03.00.03, Ext Interface Boot Kernel Software Version: 03.00.03, Ext Interface Main Program Software Version: 03.01.54, CAN Communication Level Key: 03.01.22, ID Version: GEN4 2033|
+| 1.1.0.x   | Front Panel Main Program Software Version: 03.01.72<br>Front Panel Boot Kernel Software Version:03.00.14<br>Power Supply Main Program Software Version: 03.01.35<br>Power Supply Boot Kernel Software Version: 03.00.03<br>RF Controller Main Program Software Version: 03.01.42<br>RF Controller Boot Kernel Software Version: 03.00.03<br>Ext Interface Boot Kernel Software Version: 03.00.03<br>Ext Interface Main Program Software Version: 03.01.54<br>CAN Communication Level Key: 03.01.22<br>ID Version: GEN4 2033 |
 
 ### System Info
 
