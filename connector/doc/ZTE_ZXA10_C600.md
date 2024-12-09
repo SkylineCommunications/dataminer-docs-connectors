@@ -15,7 +15,7 @@ This connector monitors the complete device and has several configuration option
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [obsolete]   | Initial version. | -            | -                 |
-| 1.0.2.x [SLC Main]   | Removed deprecated OLTs. | 1.0.0.10        | -                 |
+| 1.0.1.x [SLC Main]   | Removed deprecated OLTs. | 1.0.0.10        | -                 |
 
 ### Product Info
 
