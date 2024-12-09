@@ -123,6 +123,10 @@ This feature allows the automatic updating of properties for **Views**, **Servic
 
 To trigger this functionality, a JSON-formatted string must be set on **Parameter ID 4**.
 
+When triggered, the Helios Database element will refresh, stage, and apply changes to update the properties automatically.
+
+An operator must be defined to run this process, and its filters will be applied.
+
 The JSON message defines which properties should be updated and must include the following fields:
 
 - **`Operator`** (string, required):  
