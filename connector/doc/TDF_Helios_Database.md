@@ -119,13 +119,15 @@ For more specific information about the provisioning, see [TDF Helios Database -
 
 #### Automatic Update of Properties [v1.0.4.5]
 
-This feature allows the automatic updating of properties for **views**, **services**, and **elements**.
+This feature automatically updates properties for **views**, **services**, and **elements**.
 
-To trigger this functionality, a JSON-formatted string must be set on **Parameter ID 4**.
+A JSON-formatted string must be set on **Parameter ID 4** to trigger this functionality.
 
-When it is triggered, the Helios Database element will refresh, stage, and apply changes to update the properties automatically.
+When triggered, the Helios Database element will automatically refresh, stage, and apply changes to update the properties.
 
-An operator must be defined to run this process, and its filters will be applied.
+An operator must be defined to run this process, and its filters will be applied (Item De Catalogue, Site Code, Service Client Code, and PNO Code).
+
+Some properties, such as Pilote View ID and Pilote View Name, are implicitly inspected.
 
 The JSON message defines which properties should be updated and must include the following fields:
 
@@ -175,8 +177,6 @@ The properties that can be updated with this feature are limited to the followin
 |  | Parent View ID |  |
 |  | Passerelle |  |
 |  | Pays |  |
-|  | PiloteViewID |  |
-|  | PiloteViewName |  |
 |  | Sécurisation énergie |  |
 |  | SLA |  |
 |  | Type Couverture |  |
