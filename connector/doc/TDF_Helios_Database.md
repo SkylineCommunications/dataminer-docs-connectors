@@ -21,7 +21,7 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.2.x [Obsolete] | Element provisioning now relies on HOST_IP_ADDRESS and on PNO_CODE. | 1.0.1.54 | Instead of only on HOST_IP_ADDRESS, element provisioning relies on HOST_IP_ADDRESS and on PNO_CODE. |
 | 1.0.3.x [Obsolete] | Names of required views in DMS "01 - CAT", "CAT-Elements", "02 - Transport FR3 remontées", and "Transport FR3 remontées-Elements" changed to "01 - F3 CAT", "F3 CAT - Elements", "02 - F3eDliveR", and "F3 eDliveR-Elements", respectively.| 1.0.2.10 | Required views must have the new correct name for the connector to work. |
 | 1.0.4.x [Obsolete] | New required views added: "03 -F3 FTR VAISE CDE" and "F3 FTR VAISE CDE-Elements" | 1.0.3.10 | New required views need to be created to the connector to work. |
-| 1.0.5.x [SLC Main] | Changed CAT and F3 eDliveR sites structure to each have 1 site view and 1 "Elements" view.. |
+| 1.0.5.x [SLC Main] | Changed CAT and F3 eDliveR sites structure to each have 1 site view and 1 "Elements" view. | | |
 
 ### Product Info
 
@@ -117,13 +117,13 @@ The service templates that define how the services are going to be created are d
 
 For more specific information about the provisioning, see [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator).
 
-#### Automatically Update Properties [v1.0.4.5]
+#### Automatic Update of Properties [v1.0.4.5]
 
-This feature allows the automatic updating of properties for **Views**, **Services**, and **Elements**.
+This feature allows the automatic updating of properties for **views**, **services**, and **elements**.
 
 To trigger this functionality, a JSON-formatted string must be set on **Parameter ID 4**.
 
-When triggered, the Helios Database element will refresh, stage, and apply changes to update the properties automatically.
+When it is triggered, the Helios Database element will refresh, stage, and apply changes to update the properties automatically.
 
 An operator must be defined to run this process, and its filters will be applied.
 
@@ -142,6 +142,7 @@ The JSON message defines which properties should be updated and must include the
   A list of property names related to elements.
 
 ##### Example JSON
+
 ```json
 {
   "Operator" : "AutoProv",
@@ -150,9 +151,10 @@ The JSON message defines which properties should be updated and must include the
   "ElementProperties" : ["Fabricant"]
 }
 ```
+
 The properties that can be updated with this feature are limited to the following:
 
-| **Views** | **Services** | **Elements** |
+| Views | Services | Elements |
 |-----------|--------------|--------------|
 | Adresse | Adresse | Code IG |
 | Code Arcom | CFS Date Mes Realisee | Description IG |
