@@ -10,16 +10,15 @@ This connector implements the BBright RMD API. Communication happens via HTTP us
 
 ### Version Info
 
-| Range              | Key Features                                                                                                     | Based on | System Impact             |
-|--------------------|------------------------------------------------------------------------------------------------------------------|----------|---------------------------|
-| 1.0.0.x            | Initial version.                                                                                                 | -        | -                         |
+| Range   | Key Features     | Based on | System Impact |
+|---------|------------------|----------|---------------|
+| 1.0.0.x | Initial version. | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.0.2.0                |
-
 
 ### System Info
 
@@ -43,7 +42,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-The API requires the use of a token for authentication. You can get an API Token via GUI under the page ADMIN > Server and click on 'REST API TOKEN'.
+The API requires the use of a token for authentication. You can get an API token via GUI under the page ADMIN > Server and click on 'REST API TOKEN'.
 
 Copy this token to the **Authentication Token** parameter on the **General** page of the DataMiner element.
 
