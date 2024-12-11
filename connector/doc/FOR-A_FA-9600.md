@@ -8,7 +8,7 @@ This is an SNMP-based protocol for the FOR-A FA-9600. FA-9600 multipurpose signa
 
 ## About
 
-This connector was designed to work only with model **FA-9600**. It allows the user to monitor the state of the fans and power supplies. The status of the many inputs and outputs of this equipment sudh as Video, Audio or Slot parameters can also be monitored. SNMP **Get** commands are used to read information from the device.
+This connector was designed to work only with model **FA-9600**. It allows the user to monitor the state of the fans and power supplies. The status of the many inputs and outputs of this equipment, such as video, audio, or slot parameters, can also be monitored. SNMP **Get** commands are used to read information from the device.
 
 ### Version Info
 
@@ -45,24 +45,24 @@ SNMP Settings:
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device, by default *public1*.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to use
 
 ### General
 
-This page contains general information, such as **Product Name**, **Unit Name** and **Serial number**.
+This page contains general information, such as **Product Name**, **Unit Name**, and **Serial number**.
 
-Several page buttons provide access to more information about **Slot Options** or **Status** of the specific parameters of the device.
+Several page buttons provide access to more information about **slot options** or about the **status** of the specific parameters of the device.
 
 ### Slot Options
 
-This page displays information related to available slots, slot versions and firmware version of the slot.
+This page displays information related to the available slots, slot versions, and slot firmware version.
 
 ### Status
 
-This page provides information about the operational status of the **fans**, **power supplies**, **FPGA temperature**.
+This page provides information about the operational status of the **fans** and **power supplies**, and about the **FPGA temperature**.
 
-Status page contains following subpages **Video Status**, **Audio Status**, **Slot A Status**, **Slot B Status** where user can monitor statuses related to Audio, Video or Slot parameters.
-
-### Web Interface
-
-This page provides access to the web interface of the device. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+On the **Video Status**, **Audio Status**, **Slot A Status**, and **Slot B Status** subpages, you can monitor status information related to audio, video, or slot parameters.

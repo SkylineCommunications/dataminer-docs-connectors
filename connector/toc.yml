@@ -3668,6 +3668,8 @@
     topicUid: Connector_help_FOR-A_DSK-400
   - name: FOR-A FA-9500
     topicUid: Connector_help_FOR-A_FA-9500
+  - name: FOR-A FA-9600
+    topicUid: Connector_help_FOR-A_FA-9600
   - name: FOR-A FA-9520
     topicUid: Connector_help_FOR-A_FA-9520
   - name: FOR-A FRC-8000
