@@ -7501,6 +7501,8 @@
     topicUid: Connector_help_SatService_sat-nms_MNC_-_Weather_Monitors
 - name: ScheduAll
   items:
+  - name: ScheduAll Generic Interop Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
