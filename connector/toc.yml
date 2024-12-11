@@ -6731,6 +6731,8 @@
   items:
   - name: Ovzon Control Terminal
     topicUid: Connector_help_Ovzon_Control_Terminal
+  - name: Ovzon OBP Spectrum
+    topicUid: Connector_help_Ovzon_OBP_Spectrum
 - name: PacketLight
   items:
   - name: PacketLight PL-1000IL
