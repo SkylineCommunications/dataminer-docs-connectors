@@ -42,7 +42,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-The API requires the use of a token for authentication. You can get an API token via GUI under the page ADMIN > Server and click on 'REST API TOKEN'.
+The API requires the use of a token for authentication. You can get an API token via the web GUI under the page ADMIN > Server and click on 'REST API TOKEN'.
 
 Copy this token to the **Authentication Token** parameter on the **General** page of the DataMiner element.
 
@@ -53,3 +53,17 @@ The web interface is only accessible when the client machine has network access 
 ## How to Use
 
 On the General page, the token used for the communication should be specified.
+
+### Notes
+
+The conector does not have any sets implemented, currently these are the command avialable now.
+1) Get List Of Channels
+2) Start/Stop Decoding
+3) Start/Stop Monitoring
+4) Delete Channel
+5) Reset ETR 290 Stats
+6) Get Alarms
+7) Get Logs
+8) Create Channel
+
+With this conenctor you will be able to monitor everything with the channels including streams, ETR 290 metrics. Different metrics are available for TS, SDI, SRT and ST 2110.
