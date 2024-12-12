@@ -24,15 +24,15 @@ Optionally, the connector can **export a DVE for each device** monitored by the 
 | 1.0.0.x [Obsolete] | Initial version (includes DCF integration). | - | - |
 | 1.0.1.x [Obsolete] | Reformat of the MWEdge stream keys. | 1.0.0.2 | **Old trend and alarm data will be lost for Streams, Input Sources, and Outputs.** |
 | 1.0.2.x [Obsolete] | - Single output/input is retrieved upon context menu operation instead of MwEdge polling. <br>- MWEdges are retrieved separately instead of all at once. <br>- Reverse foreign key relation between Streams Resources table and Streams table. | 1.0.1.19 | **Because NuGets are now used, the minimum DataMiner version is now 10.0.10.** |
-| 1.0.3.x | - Statistics Connections table and "IP Connection - Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
-| 1.0.4.x [SLC Main] | - Secondary interface has been removed from element creation (additional MWCore nodes of the same cluster are now added in the connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default. They can be displayed using the parameters on the "Debug" page.<br>- The debugging logs for the statistics interface have been enhanced (serilog is now used), and the default path is now the logging folder.<br>- The Sources and Output tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection. This can be activated on the Statistics Configuration page by enabling the "Elastic Export".<br>- Support for the 2022-7 version has been added.<br>| 1.0.3.33 | **Existing elements need to be reconfigured to accommodate the connection changes. We highly recommend recreating the elements.** |
+| 1.0.3.x [Obsolete] | - Statistics Connections table and "IP Connection - Statistics Interface" connection removed. <br>- Columns added to the Servers Info table to enable the statistics interface for each server. | 1.0.2.3 | **Existing elements need to be reconfigured to account for the connection changes.** |
+| 1.0.4.x [SLC Main] | - Secondary interface has been removed from element creation (additional cluster nodes are now added in the connections table).<br>- Pages associated with SRM resources and debugging are now hidden by default.<br>- The debugging logs for the statistics interface have been enhanced (serilog is now used), and the default path is now the logging folder.<br>- The Sources and Output tables have been divided into configurations and metrics/statistics.<br>- Logger tables have been restructured to include more metrics and are now designed to use DirectConnection.<br>- Support for the 2022-7 version has been added.<br>| 1.0.3.33 | **Existing elements need to be reconfigured to accommodate the connection changes.<br>We highly recommend recreating the elements.** |
 
 ### Product Info
 
 | Range                             | Supported Firmware                             |
 |-----------------------------------|------------------------------------------------|
 | 1.0.0.x [Obsolete]<br>1.0.1.x [Obsolete]<br> 1.0.2.x [Obsolete] | **MWCore version:** 5.2.3, 5.2.4 <br> **MWEdges version:**  1.9.2, 1.9.3 |
-| 1.0.3.x | **MWCore version:** 5.22.4 <br> **MWEdges version:** 1.24.1 |
+| 1.0.3.x [Obsolete]| **MWCore version:** 5.22.4 <br> **MWEdges version:** 1.24.1 |
 | 1.0.4.x [SLC Main]| **MWCore version:** 5.22.4, 5.29.0 <br> **MWEdges version:** 1.24.1, 1.34.0 |
 
 ### System Info
@@ -137,7 +137,10 @@ This page has several subpages:
 
 - **Thumbnail Configuration**: Allows you to configure the desired settings for thumbnails retrieval. If thumbnails are needed for a low-code app, the path can be updated to `C:\Skyline DataMiner\Webpages\public\TechexMWCoreThumbnails`.
 
-- **Debug**: Allows you to enable more detailed ***logging*** specifically for statistics data, generating new log files in the specified folder with a rolling window of 2 days and a file size of 10 MB. Files are generated in the following format: `{Protocol.ElementName}-statisticslog[{DnsName}].txt`. For SRM integrations, you can enable the **SRM Information** parameter, making the SRM Resources page and its subpages visible in the element's data layout.
+- **Debug**: Allows you to enable more detailed **logging** specifically for statistics data, generating new log files in the specified folder with a rolling window of 2 days and a file size of 10 MB. Files are generated in the following format: `{Protocol.ElementName}-statisticslog[{DnsName}].txt`. The **Statistics Buffer State** parameter indicates whether DataMiner is struggling to handle the volume and frequency of data being pushed by the TXCore. If there are difficulties, the parameter will display *Overflow*. For SRM integrations, you can enable the **SRM Information** parameter, making the SRM Resources page and its subpages visible in the element's data layout.
+
+> [!IMPORTANT]
+> Telemetry data is sent to DataMiner asynchronously. To facilitate this, DataMiner establishes a dedicated connection with each TXCore node to receive the necessary telemetry data for streams, sources, and outputs. To prevent issues from excessive data and high frequency rates, the Techex MWCore DataMiner connector uses an **internal buffer** for message processing. This buffer can queue up to **65 messages**. Any message received after the queue is full will be dropped. If a message is dropped, the Statistics Buffer State parameter will display *Overflow*. The parameter will revert to the *Normal* state once the queue frees up approximately 20% and incoming messages can be successfully added to the queue again. The system waits for the queue to free up 20% to avoid the alarm toggling.
 
 ### Devices
 
@@ -151,6 +154,9 @@ On this page, you can view and monitor TXCore channels listed in the Channels ta
 
 The MWEdges page displays a table listing either all TXEdges or those specified on the Polling Configuration page. In this table, you can monitor the state of each edge, including addresses, licenses, the number of streams, and more.
 
+> [!NOTE]
+> Bandwidth usage metrics (**source total**, **output total**, **total usage**, **license left**) are not retrieved through polling. Instead, DataMiner receives this data asynchronously via the statistics connections. Periodically, DataMiner performs the necessary calculations based on the values available in the sources and outputs tables. This feature is **disabled by default**. To enable it, navigate to the **General** > **Statistics Configuration** subpage and configure the **Total MWEdge Bitrate Calculation Interval** parameter.
+
 The information for the monitored TXEdges is further detailed on the following subpages:
 
 - **Streams**: Lists streams of all monitored TXEdges. You can add and delete streams via the right-click menu, and edit streams directly in the table columns.
@@ -161,9 +167,9 @@ The information for the monitored TXEdges is further detailed on the following s
 
 - **ETR 290**: When the statistics connection is enabled, the table on this subpage lists ETR messages related to the sources.
 
-- **Sources States**: When the statistics connection is enabled, the table on this subpage lists the source states. You can choose to include all sources or only the active ones.
+- **Sources States**: The table on this subpage lists the source states (e.g. error caused by zero bitrate detected in the last 10 seconds). You can choose to include all sources or only the active ones.
 
-- **Outputs States**: When the statistics connection is enabled, the table on this subpage lists the output states. You can choose to include all outputs or only the active ones.
+- **Outputs States**: The table on this subpage lists the output states (e.g. error caused by an invalid passphrase). You can choose to include all outputs or only the active ones.
 
 ### Cluster Members
 
@@ -172,6 +178,8 @@ The Cluster Members page lists all nodes of the TXCore cluster. Here you can mon
 You can also enable the statistics interface from the table on this page and manually overwrite the IP address that DataMiner should use to open the statistics connection with the TXCore node by specifying the desired IP in the **Public IP Address** column.
 
 If communication with a TXCore node fails more than a predefined number of times (monitored in the Retries column), the connection will be automatically disabled, and you will need to manually enable it again. You can configure the number of retries on the **General** > **Statistics Configuration** page.
+
+Finally, the **Statistics Status** column displays the current status of the statistics connections (*OK*, *Timeout*, or *Warning*), indicating if any issues in the connection are being detected by DataMiner. The *Timeout* status indicates that DataMiner has not received any communication, including keep-alives, from the TXCore node for a period longer than the rate limit configured on the **General** > **Statistics page**. The *Warning* status indicates that DataMiner has not received valid telemetry information from the TXCore node for a period longer than three times the configured rate limit.
 
 ### SRM Resources
 

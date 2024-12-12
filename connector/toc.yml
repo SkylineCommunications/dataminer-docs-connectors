@@ -368,6 +368,8 @@
     topicUid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
   - name: Amagi CLOUDPORT Service Manager
     topicUid: Connector_help_Amagi_Cloudport_Service_Manager
+  - name: Amagi Tellyo PRO
+    topicUid: Connector_help_Amagi_Tellyo_Pro 
 - name: Amazon
   items:
   - name: Amazon AWS CloudFormation
@@ -1788,6 +1790,8 @@
   items:
   - name: Calix AXOS
     topicUid: Connector_help_Calix_AXOS
+  - name: Calix NMS
+    topicUid: Connector_help_Calix_NMS
 - name: Calrec
   items:
   - name: Calrec Apollo
@@ -3662,8 +3666,12 @@
     topicUid: Connector_help_Fluvius_Teleste_Node_Service_Provisioning
 - name: FOR-A
   items:
+  - name: FOR-A DSK-400
+    topicUid: Connector_help_FOR-A_DSK-400
   - name: FOR-A FA-9500
     topicUid: Connector_help_FOR-A_FA-9500
+  - name: FOR-A FA-9600
+    topicUid: Connector_help_FOR-A_FA-9600
   - name: FOR-A FA-9520
     topicUid: Connector_help_FOR-A_FA-9520
   - name: FOR-A FRC-8000
@@ -4048,6 +4056,8 @@
     topicUid: Connector_help_Generic_Uplink_Power_Controller
   - name: Generic UPS
     topicUid: Connector_help_Generic_UPS
+  - name: Generic Virtual 4K Video Delay
+    topicUid: Connector_help_Generic_Virtual_4K_Video_Delay
   - name: Generic Virtual Chassis
     topicUid: Connector_help_Generic_Virtual_Chassis
   - name: Generic Virtual DeEmbedder
@@ -4142,6 +4152,8 @@
     topicUid: Connector_help_GMIT_BMM-810
 - name: Google
   items:
+  - name: Google Android Debug Bridge
+    topicUid: Connector_help_Google_Android_Debug_Bridge
   - name: Google Cloud Compute Engine
     topicUid: Connector_help_Google_Cloud_Compute_Engine
   - name: Google Cloud DNS
@@ -4918,6 +4930,10 @@
   items:
   - name: iTWatchDogs Mini Goose-II
     topicUid: Connector_help_iTWatchDogs_Mini_Goose-II
+- name: Ivanti
+  items:
+  - name: Ivanti PSA 7000
+    topicUid: Connector_help_Ivanti_PSA_7000
 - name: iXsystems
   items:
   - name: iXsystems FreeNAS
@@ -5046,6 +5062,10 @@
     topicUid: Connector_help_KPN_Probe_Service
   - name: KPN Service Manager
     topicUid: Connector_help_KPN_Service_Manager
+- name: Kratos
+  items:
+  - name: Kratos RF Switching System
+    topicUid: Connector_help_Kratos_RF_Switching_System
 - name: Kronback Tracers
   items:
   - name: Kronback Tracers B16
@@ -5380,6 +5400,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE
   - name: Meinberg LANTIME IMS-BPE API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE_API_V10
+  - name: Meinberg LANTIME IMS-BPE API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE_API_V17
   - name: Meinberg LANTIME IMS-CPE
     topicUid: Connector_help_Meinberg_LANTIME_IMS-CPE
   - name: Meinberg LANTIME IMS-CPE API V10
@@ -6715,6 +6737,8 @@
   items:
   - name: Ovzon Control Terminal
     topicUid: Connector_help_Ovzon_Control_Terminal
+  - name: Ovzon OBP Spectrum
+    topicUid: Connector_help_Ovzon_OBP_Spectrum
 - name: PacketLight
   items:
   - name: PacketLight PL-1000IL
@@ -7485,6 +7509,8 @@
     topicUid: Connector_help_SatService_sat-nms_MNC_-_Weather_Monitors
 - name: ScheduAll
   items:
+  - name: ScheduAll Generic Interop Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
@@ -7947,6 +7973,8 @@
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
   - name: Skyline EPM Platform VSAT GEO
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
+  - name: Skyline EVS Cerebrum Performance Monitor
+    topicUid: Connector_help_Skyline_EVS_Cerebrum_Performance_Monitor
   - name: Skyline Example Serial Client Advanced
     topicUid: Connector_help_Skyline_Example_Serial_Client_Advanced
   - name: Skyline Example Serial Client Basic
@@ -9958,6 +9986,8 @@
   items:
   - name: ZDF BFE KSC Core
     topicUid: Connector_help_ZDF_BFE_KSC_Core
+  - name: ZDF Bluestream Live
+    topicUid: Connector_help_ZDF_Bluestream_Live
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
@@ -10034,6 +10064,8 @@
     topicUid: Connector_help_ZTE_ZXDU
   - name: ZTE ZXDUPA-BCUA
     topicUid: Connector_help_ZTE_ZXDUPA-BCUA
+  - name: ZTE ZXONE 9700
+    topicUid: Connector_help_ZTE_ZXONE_9700
   - name: ZTE ZXR10 2900E Series
     topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900

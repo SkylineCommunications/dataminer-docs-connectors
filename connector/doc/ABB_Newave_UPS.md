@@ -6,7 +6,7 @@ uid: Connector_help_ABB_Newave_UPS
 
 The connector allows you to monitor and configure the ABB Newave UPS through the USHA+ interface, which obtains the status from a UPS and issues commands to it.
 
-USHA+ supports HTTP and SNMP protocols. In this connector, **SNMP** is used.
+USHA+ supports HTTP and SNMP protocols.
 
 ## About
 
@@ -52,6 +52,10 @@ SNMP Settings:
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
+
+SNMP is used to retrieve the device information. To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**.
+
+Below, you can find an overview of the available data pages.
 
 ### General
 
