@@ -12,9 +12,9 @@ The Kratos RF Switching System operates through a TCP/IP-based interface using a
 
 ### Version Info
 
-| Range              | Features                          | Based on | System Impact |
-| ------------------ | --------------------------------- | -------- | ------------- |
-| 1.0.0.x [SLC Main] | <ul><li>Initial version</li></ul> | -        | -             |
+| Range              | Features        | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version | -        | -             |
 
 ### Product Info
 
@@ -41,30 +41,18 @@ SERIAL CONNECTION:
 - **Type of port:** TCP/IP
 - **IP port**: 4567
 
-### Initialization
-
-The device will begin polling as soon as the element is created. No additional parameter configuration is required for initial operation.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
 
-The connector communicates with the system using commands and responses to set or retrieve information related to RF switch positions and operation modes.
+The connector communicates with the system using commands and responses to set or retrieve information related to RF switch positions and operation modes. You can find all the information you need to monitor the operations and statuses of the RF switching system on the **General** data page.
 
 To monitor the communication between the element and the device, you can use the built-in Stream Viewer tool in DataMiner:
 
-1. Right-click on the element in the Surveyor.
-2. Select View > Stream Viewer.
-3. For healthy elements, you should see groups 1-5 for polling the data, and groups 6-7 for write commands
+1. Right-click the element in the Surveyor.
+1. Select **View** > **Stream Viewer**.
+1. For healthy elements, you should see groups 1-5 for polling the data, and groups 6-7 for write commands
 
 After every successful set, the system will immediately trigger a get operation to retrieve the updated state. Any unsuccessful responses will be logged in the system and displayed as part of the connector's error reporting. If the connector receives an unrecognized response, it will generate a detailed error message in the element logs, specifying the invalid or unknown response format. This ensures that unhandled cases are documented for troubleshooting.
-
-### Examples
-
-You can find all the information you need to monitor the operations and statuses of the RF switching system on the General Data page.
