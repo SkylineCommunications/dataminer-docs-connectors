@@ -1790,6 +1790,8 @@
   items:
   - name: Calix AXOS
     topicUid: Connector_help_Calix_AXOS
+  - name: Calix NMS
+    topicUid: Connector_help_Calix_NMS
 - name: Calrec
   items:
   - name: Calrec Apollo
