@@ -1790,6 +1790,8 @@
   items:
   - name: Calix AXOS
     topicUid: Connector_help_Calix_AXOS
+  - name: Calix NMS
+    topicUid: Connector_help_Calix_NMS
 - name: Calrec
   items:
   - name: Calrec Apollo
@@ -3664,8 +3666,12 @@
     topicUid: Connector_help_Fluvius_Teleste_Node_Service_Provisioning
 - name: FOR-A
   items:
+  - name: FOR-A DSK-400
+    topicUid: Connector_help_FOR-A_DSK-400
   - name: FOR-A FA-9500
     topicUid: Connector_help_FOR-A_FA-9500
+  - name: FOR-A FA-9600
+    topicUid: Connector_help_FOR-A_FA-9600
   - name: FOR-A FA-9520
     topicUid: Connector_help_FOR-A_FA-9520
   - name: FOR-A FRC-8000
@@ -6729,6 +6735,8 @@
   items:
   - name: Ovzon Control Terminal
     topicUid: Connector_help_Ovzon_Control_Terminal
+  - name: Ovzon OBP Spectrum
+    topicUid: Connector_help_Ovzon_OBP_Spectrum
 - name: PacketLight
   items:
   - name: PacketLight PL-1000IL
@@ -7499,6 +7507,8 @@
     topicUid: Connector_help_SatService_sat-nms_MNC_-_Weather_Monitors
 - name: ScheduAll
   items:
+  - name: ScheduAll Generic Interop Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
@@ -7961,6 +7971,8 @@
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
   - name: Skyline EPM Platform VSAT GEO
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
+  - name: Skyline EVS Cerebrum Performance Monitor
+    topicUid: Connector_help_Skyline_EVS_Cerebrum_Performance_Monitor
   - name: Skyline Example Serial Client Advanced
     topicUid: Connector_help_Skyline_Example_Serial_Client_Advanced
   - name: Skyline Example Serial Client Basic
@@ -9972,6 +9984,8 @@
   items:
   - name: ZDF BFE KSC Core
     topicUid: Connector_help_ZDF_BFE_KSC_Core
+  - name: ZDF Bluestream Live
+    topicUid: Connector_help_ZDF_Bluestream_Live
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
