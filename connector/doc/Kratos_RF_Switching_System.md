@@ -39,7 +39,6 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - **Type of port:** TCP/IP
-- **IP address/host**: 192.168.50.100
 - **IP port**: 4567
 
 ### Initialization
