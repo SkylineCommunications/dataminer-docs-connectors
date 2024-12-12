@@ -12,19 +12,22 @@ The Service Problem Management API is used to manage service problems. Service p
 
 | Range              | Key Features                                                              | Based on   | System Impact   |
 |----------------------|-----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. This is a customer-specific branch with custom attributes. | -            | -                 |
+| 1.0.0.x              | Initial version. This is a customer-specific branch with custom attributes. | -            | -                 |
+| 1.0.1.x [SLC Main]   | Changing a protocol to Unicode. | -            | The addition of a Unicode tag will cause the element data and trending information in the database to be entirely removed.                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | TMF656                 |
+| 1.0.1.x   | TMF656                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
