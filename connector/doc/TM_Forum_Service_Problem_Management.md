@@ -10,10 +10,10 @@ The Service Problem Management API is used to manage service problems. Service p
 
 ### Version Info
 
-| Range              | Key Features                                                              | Based on   | System Impact   |
-|----------------------|-----------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version. This is a customer-specific branch with custom attributes. | -            | -                 |
-| 1.0.1.x [SLC Main]   | Changing a protocol to Unicode. | -            | The addition of a Unicode tag will cause the element data and trending information in the database to be entirely removed.                 |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. This is a customer-specific branch with custom attributes. | - | - |
+| 1.0.1.x [SLC Main] | Protocol changed to Unicode. | - | The addition of a Unicode tag will cause the element data and trending information in the database to be entirely removed. |
 
 ### Product Info
 
