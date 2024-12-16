@@ -55,18 +55,15 @@ To clear all processes that are no longer running from the table, click the butt
 
 To set the current values in the table as the normal reference for alarms, click the button **Normalize Alarms**. You can then view these references via the **Nominal** **Values** button at the bottom of the page.
 
-The following options are available in the right-click menu of the Task Manager table:
-
-- **Validate Processes**: Add the selected process(s) to the Processes Validation table.
+In the right-click menu of the Task Manager table, you can select **Validate Processes** to add the selected process or processes to the Processes Validation table.
 
 ### Process Validation
 
-This page allows you to validate selected processes according to features such as count of active process instances in order to monitor inactive processes.
+This page allows you to validate selected processes according to features such as the number of active process instances in order to monitor inactive processes.
 
-The following options are available in the right-click menu of the Processes Validation table:
+The following options are available in the right-click menu of the **Processes Validation** table:
 
-- **Remove Processes**: Removes the selected process(s) from Processes Validation table.
-
+- **Remove Processes**: Removes the selected process or processes from Processes Validation table.
 - **Add Process**: Allows you to add a process with the provided process name to the Processes Validation table. You can use this to add inactive processes.
 
 ### Services
