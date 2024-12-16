@@ -8459,6 +8459,8 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+  - name: Starlink Enterprise - User Terminal
+    topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
