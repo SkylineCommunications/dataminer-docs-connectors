@@ -13,7 +13,7 @@ Hawk Matrix is typically used for RF signal routing for LEO and MEO gateways, as
 | Range                | Key Features          | Based on     | System Impact     |
 |----------------------|-----------------------|--------------|-------------------|
 | 1.0.0.x    | Two 8x8 matrix cards. | -            | -                 |
-| 1.0.1.x [SLC Main]   |Two 8x8 matrix cards. Supports both distributing and combining mode. | -            |Tables S2 Router Control and S3 Router Control are removed as they can be used only for distributing mode. |
+| 1.0.1.x [SLC Main]   |Two 8x8 matrix cards. Supports both distributing and combining mode. | -            |The S2 Router Control and S3 Router Control tables have been removed, as they can be used only for distributing mode. |
 
 ### Product Info
 
