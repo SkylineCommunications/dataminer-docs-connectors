@@ -28,10 +28,9 @@ This connector is designed to interact with the **ScheduAll** platform, a Window
 
 ### DataMiner Compliancy
 
-| Range   | Minimum DMA requiered version |
-|---------|--------------------|
-| 1.0.0.x | 10.2.0.0 - 12603                |
-
+| Range   | Minimum required DataMiner version |
+|---------|------------------------------------|
+| 1.0.0.x | 10.2.0.0 - 12603                   |
 
 ## Configuration
 
