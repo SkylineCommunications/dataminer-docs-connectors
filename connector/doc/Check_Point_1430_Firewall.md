@@ -10,9 +10,10 @@ The Check Point 1430 Firewall is a security gateway of high-performance, integra
 
 ### Version Info
 
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
+| Range              | Key Features                                                                                      | Based on | System Impact |
+|--------------------|---------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                                  | -        | -             |
+| 1.0.1.x [SLC Main] | Removed IP-related parameters that were not correctly populated in tables 4000, 27000, and 28000. | -        | -             |
 
 ### Product Info
 
@@ -22,9 +23,10 @@ The Check Point 1430 Firewall is a security gateway of high-performance, integra
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | No                  | -                 | -                   |
+| 1.0.1.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
