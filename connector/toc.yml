@@ -8845,6 +8845,8 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Sapiens_Offload
   - name: Telefonia por Cable S.A de C.V. SPA CPE Indexer
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
+  - name: Telefonia por Cable S.A de C.V. Ticketing WM
+    topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM
   - name: Telefonia por Cable S.A de C.V. Topology Aggregator
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Topology_Aggregator
 - name: Telefonica
