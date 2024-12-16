@@ -4012,6 +4012,8 @@
     topicUid: Connector_help_Generic_sFlow_Monitor
   - name: Generic sFlow Viewer
     topicUid: Connector_help_Generic_sFlow_Viewer
+  - name: Generic SFTP Client
+    topicUid: Connector_help_Generic_SFTP_Client
   - name: Generic Shelter Access
     topicUid: Connector_help_Generic_Shelter_Access
   - name: Generic SIP Client
