@@ -59,4 +59,4 @@ The **Inputs Programs** page contains detailed program-specific information and 
 
 The same applies for the **Outputs** and **Outputs Programs** page.
 
-The **Active Alarms** page contains a list of active alarms and the alarm count, and the **History Alarms** page lists the alarm history and displays the full history alarm count. The amount of alarms polled in the alarm history is limited to the **History Alarms Maximum Amount**.
+The **Active Alarms** page contains a list of active alarms and the alarm count, and the **History Alarms** page lists the alarm history and displays the full history alarm count. The number of alarms polled in the alarm history is limited to the **History Alarms Maximum Amount**.
