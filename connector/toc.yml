@@ -1572,6 +1572,8 @@
   items:
   - name: BBright Multi-TS
     topicUid: Connector_help_BBright_Multi-TS
+  - name: BBright RMD
+    topicUid: Connector_help_BBright_RMD
   - name: BBright UHD-Decode
     topicUid: Connector_help_BBright_UHD-Decode
 - name: Beckhoff
