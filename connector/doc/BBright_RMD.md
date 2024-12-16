@@ -54,7 +54,9 @@ The web interface is only accessible when the client machine has network access 
 
 On the General page, the token used for the communication should be specified.
 
-The connector does not have any sets implemented. Currently these are the available commands:
+With this connector, you will be able to monitor everything for the channels, including streams and ETR 290 metrics. Different metrics are available for TS, SDI, SRT, and ST 2110.
+
+It is currently not possible to edit the channel configuration with this connector. However, the following commands are available:
 
 - Get List Of Channels
 - Start/Stop Decoding
@@ -64,5 +66,3 @@ The connector does not have any sets implemented. Currently these are the availa
 - Get Alarms
 - Get Logs
 - Create Channel
-
-With this connector, you will be able to monitor everything for the channels, including streams and ETR 290 metrics. Different metrics are available for TS, SDI, SRT, and ST 2110.
