@@ -18,7 +18,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
 
 > [!TIP]
-> It's advised to deploy our **Standard Product Solution** [Starlink Enterprise](https://catalog.dataminer.services/details/66a4c259-0fb1-4c27-aede-8bbd3a4925d0) via the catalog. This will enable your operations with the complementary Low-Code-App and standard available Dashboards.
+> We recommend deploying our **Standard Product Solution** [Starlink Enterprise](https://catalog.dataminer.services/details/66a4c259-0fb1-4c27-aede-8bbd3a4925d0) via the Catalog. This will enable your operations with the complementary low-code app and standard available dashboards.
 
 ## About
 
