@@ -53,6 +53,6 @@ To monitor the communication between the element and the device, you can use the
 
 1. Right-click the element in the Surveyor.
 1. Select **View** > **Stream Viewer**.
-1. For healthy elements, you should see groups 1-5 for polling the data, and groups 6-7 for write commands
+1. For healthy elements, you should see groups 1-5 for polling the data, and groups 6-8 for write commands
 
 After every successful set, the system will immediately trigger a get operation to retrieve the updated state. Any unsuccessful responses will be logged in the system and displayed as part of the connector's error reporting. If the connector receives an unrecognized response, it will generate a detailed error message in the element logs, specifying the invalid or unknown response format. This ensures that unhandled cases are documented for troubleshooting.
