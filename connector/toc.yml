@@ -1572,6 +1572,8 @@
   items:
   - name: BBright Multi-TS
     topicUid: Connector_help_BBright_Multi-TS
+  - name: BBright RMD
+    topicUid: Connector_help_BBright_RMD
   - name: BBright UHD-Decode
     topicUid: Connector_help_BBright_UHD-Decode
 - name: Beckhoff
@@ -4010,6 +4012,8 @@
     topicUid: Connector_help_Generic_sFlow_Monitor
   - name: Generic sFlow Viewer
     topicUid: Connector_help_Generic_sFlow_Viewer
+  - name: Generic SFTP Client
+    topicUid: Connector_help_Generic_SFTP_Client
   - name: Generic Shelter Access
     topicUid: Connector_help_Generic_Shelter_Access
   - name: Generic SIP Client
@@ -8479,6 +8483,8 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+  - name: Starlink Enterprise - User Terminal
+    topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
@@ -8841,6 +8847,8 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Sapiens_Offload
   - name: Telefonia por Cable S.A de C.V. SPA CPE Indexer
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
+  - name: Telefonia por Cable S.A de C.V. Ticketing WM
+    topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM
   - name: Telefonia por Cable S.A de C.V. Topology Aggregator
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Topology_Aggregator
 - name: Telefonica
