@@ -47,12 +47,16 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The connector communicates with the system using commands and responses to set or retrieve information related to RF switch positions and operation modes. You can find all the information you need to monitor the operations and statuses of the RF switching system on the **General** data page.
+The connector communicates with the system using commands and responses to set or retrieve information related to system operation modes, RF switch positions, and device statuses. Monitoring and operational details are distributed across the following pages:
+
+- **General:** Displays system-wide operational information, including redundancy modes, operation modes, and alarms.
+- **HPA (High Power Amplifier):** Focuses on High Power Amplifier statuses, including alarms and inhibit statuses for SSPA devices.
+- **Switch State and Positions:** Provides details about RF switch positions, their statuses, and related control options.
 
 To monitor the communication between the element and the device, you can use the built-in Stream Viewer tool in DataMiner:
 
 1. Right-click the element in the Surveyor.
 1. Select **View** > **Stream Viewer**.
-1. For healthy elements, you should see groups 1-5 for polling the data, and groups 6-8 for write commands
+1. For healthy elements, you should see groups 1-5 for polling the data, and groups 6-7 for write commands
 
 After every successful set, the system will immediately trigger a get operation to retrieve the updated state. Any unsuccessful responses will be logged in the system and displayed as part of the connector's error reporting. If the connector receives an unrecognized response, it will generate a detailed error message in the element logs, specifying the invalid or unknown response format. This ensures that unhandled cases are documented for troubleshooting.
