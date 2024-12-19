@@ -38,7 +38,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **Type of port:** TCP/IP
+- **Type of port**: TCP/IP
 - **IP port**: 4567
 
 ### Web Interface
@@ -49,9 +49,9 @@ The web interface is only accessible when the client machine has network access 
 
 The connector communicates with the system using commands and responses to set or retrieve information related to system operation modes, RF switch positions, and device statuses. Monitoring and operational details are distributed across the following pages:
 
-- **General:** Displays system-wide operational information, including redundancy modes, operation modes, and alarms.
-- **HPA (High Power Amplifier):** Focuses on High Power Amplifier statuses, including alarms and inhibit statuses for SSPA devices.
-- **Switch State and Positions:** Provides details about RF switch positions, their statuses, and related control options.
+- **General**: Displays system-wide operational information, including redundancy modes, operation modes, and alarms.
+- **HPA (High Power Amplifier)**: Focuses on HPA status information, including alarms and inhibit statuses for SSPA devices.
+- **Switch State and Positions**: Provides details about RF switch positions, their statuses, and related control options.
 
 To monitor the communication between the element and the device, you can use the built-in Stream Viewer tool in DataMiner:
 
