@@ -6843,6 +6843,8 @@
     topicUid: Connector_help_Peak_Communications_PBU137
   - name: Peak Communications PTR50
     topicUid: Connector_help_Peak_Communications_PTR50
+  - name: Peak Communications RCU H100
+    topicUid: Connector_help_Peak_Communications_RCU_H100
   - name: Peak Communications RCU100 SNMP
     topicUid: Connector_help_Peak_Communications_RCU100_SNMP
   - name: Peak Communications RCUH200
