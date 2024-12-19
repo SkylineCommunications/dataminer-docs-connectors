@@ -46,7 +46,7 @@ SNMP Settings:
 
 #### SNMP traps
 
-The connector also receives traps from the device and it will repoll the RF Inputs and channels for traps received. 
+The connector also receives traps from the device, and it will repoll the RF inputs and channels for the received traps.
 
 ## How to use
 
@@ -54,17 +54,17 @@ This connector communicates with the 9000RF-Probe device via SNMP, and it can ex
 
 ### On Startup
 
-The connector starts up by polling the list of available channels on the channel polling manager. The RF Tune, RF Status and Transport Stream Status tables will initially be empty due to all channels having polling disabled by default. 
+The connector starts up by polling the list of available channels for the channel polling manager. The RF Tune, RF Status, and Transport Stream Status tables will initially be empty because polling is disabled by default for all channels.
 
 The following data pages are available in the main element:
 
-- **General/System**: Displays general and system info for the device, including system features, system products, system security, system faults and system license.
+- **General/System**: Displays general and system info for the device, including system features, system products, system security, system faults, and system license.
 
 - **Data Ports/SFP/IP**: Contains the Data Port, SFP, and IP tables, which are related to the communication settings of the device. We recommend updating this info from the device's web interface.
 
 - **RF Inputs/RF Configuration**: Contains the data and settings of the RF Probe inputs and channels. The monitoring and alarming of the data from the RF Inputs and channels occur here.
 
-- **DVE Manager/Channel Polling Manager**: Allows the enabling or disabling of polling for certain channels. It is recommended to disable polling for channels that are not in use. Using the **Disable All Polling** and **Enable All Polling** options, you can disable or enable polling for all channels at once. DVEs can also be created via the DVE Manager, which will create an element for the specific RF Input to enable better visualization and monitoring of data.
+- **DVE Manager/Channel Polling Manager**: Allows the enabling or disabling of polling for certain channels. We recommend disabling the polling for channels that are not in use. Using the **Disable All Polling** and **Enable All Polling** options, you can disable or enable polling for all channels at once. DVEs can also be created via the DVE Manager, which will create an element for the specific RF input to enable better visualization and monitoring of data.
 
 ### Maintenance Windows
 
