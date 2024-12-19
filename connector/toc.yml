@@ -8297,6 +8297,8 @@
     topicUid: Connector_help_Sony_CNA-1_-_CCU
   - name: Sony CNA-1 - RCP
     topicUid: Connector_help_Sony_CNA-1_-_RCP
+  - name: Sony CNA-2
+    topicUid: Connector_help_Sony_CNA-2
   - name: Sony HDCU-3000 Series
     topicUid: Connector_help_Sony_HDCU-3000_Series
   - name: Sony Location Manager
@@ -8307,6 +8309,8 @@
     topicUid: Connector_help_Sony_MKS-R4020
   - name: Sony MKS Remote Control Panel
     topicUid: Connector_help_Sony_MKS_Remote_Control_Panel
+  - name: Sony MLS-X1
+    topicUid: Connector_help_Sony_MLS-X1
   - name: Sony MSU-3000 Series
     topicUid: Connector_help_Sony_MSU-3000_Series
   - name: Sony NMI Device
