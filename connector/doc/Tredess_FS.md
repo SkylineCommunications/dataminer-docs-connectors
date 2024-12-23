@@ -4,7 +4,7 @@ uid: Connector_help_Tredess_FS
 
 # Tredess FS
 
-The Tredess FS connector can be used to configure and monitor a digital TV transmitter. This device is responsible for the correct functioning of terrestrial and satellite transmitters.
+The Tredess FS (Fourth Series) connector can be used to configure and monitor a digital TV transmitter. This device is responsible for the correct functioning of terrestrial and satellite transmitters.
 
 The connector retrieves and sets data via **SNMP**. If this is enabled on the device, **SNMP traps** can also be retrieved.
 
@@ -24,7 +24,8 @@ The connector retrieves and sets data via **SNMP**. If this is enabled on the de
 |-----------|-------------------------------------|
 | 1.0.0.x   | 01.004                              |
 | 1.1.0.x   | 01.V05 (MIB Revision 201806181005Z) |
-| 1.1.1.x   | 02.V04 (MIB Revision 201811270849)  |
+| 1.1.1.1 - 1.1.1.4   | 02.V04 (MIB Revision 201811270849)  |
+| 1.1.1.5   | 03.V27 (MIB Revision 202311301335Z)  |
 
 ### System Info
 
