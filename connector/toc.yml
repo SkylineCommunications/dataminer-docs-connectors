@@ -9534,6 +9534,8 @@
     topicUid: Connector_help_Vertex_7200
   - name: ACU Vertex 7200 DTR
     topicUid: Connector_help_ACU_Vertex_7200_DTR
+  - name: Vertex BRK-1201
+    topicUid: Connector_help_Vertex_BRK-1201 
   - name: Vertex DTR
     topicUid: Connector_help_Vertex_DTR
   - name: Vertex LRx-1201-xx
