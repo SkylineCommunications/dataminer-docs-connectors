@@ -6,7 +6,7 @@ uid: Connector_help_Peak_Communications_RCU_H100
 
 The purpose of this connector is to manage and monitor the Peak Communications RCU H100 redundancy switching system. This system provides control over redundant units and ensures operational continuity by managing redundancy modes, unit statuses, and fault conditions.
 
-The Peak Communications RCU H100 operates through a serial-based interface and supports both manual and automated operations for redundancy switching. It facilitates monitoring and control of connected units via a set of discrete commands and responses, allowing for management of system modes and fault monitoring.
+The Peak Communications RCU H100 operates through a serial-based interface and supports both manual and automated operations for redundancy switching. It facilitates monitoring and control of connected units via a set of discrete commands and responses, allowing the management of system modes and monitoring of faults.
 
 ## About
 
@@ -26,7 +26,7 @@ The Peak Communications RCU H100 operates through a serial-based interface and s
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 | ------- | --------------- | ------------------- | ----------------- | ------------------- |
-| 1.0.0.x | No              | Yes                 | -                 |                     |
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -37,9 +37,10 @@ The Peak Communications RCU H100 operates through a serial-based interface and s
 This connector uses a serial connection and requires the following input during element creation:
 
 SERIAL CONNECTION:
-- **Type of port:** TCP/IP
+
+- **Type of port**: TCP/IP
 - **IP port**: 8004
-- **Bus address**: [The bus address of the device. (default: *32*)]
+- **Bus address**: The bus address of the device (default: *32*).
 
 ### Web Interface
 
@@ -48,7 +49,7 @@ The web interface is only accessible when the client machine has network access 
 ## How to use
 
 ### Monitoring and Management
- 
+
 The Peak Communications RCU H100 connector enables monitoring and management of redundancy settings, fault statuses, and operational modes. Key features include:
 
 - **General Page:** Provides an overview of the system's operational configuration and status.
