@@ -26,7 +26,8 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 | Range              | Key Features    | Based on                       | System Impact |
 |--------------------|-----------------|--------------------------------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
+| 1.0.0.x [Obsolete] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
+| 1.0.1.x [SLC Main] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | -             |
 
 ### Product Info
 
@@ -121,6 +122,12 @@ To **remove a DVE**:
 
 User terminal DVEs can only be removed if the DVE Creation column contains a value other than *Enabled*. User terminals for which a dynamic virtual element was created will not be removed automatically if they are no longer returned by the API for more than one day and have DVE Creation set to *Enabled*.
 
+#### Relations to other tables
+
+The data retrieved and stored in the different tables can be linked to each other. For the hardware related information, this is with the column **User Terminal Device ID**, while for the more service related data, the **Service Line Number** is used.
+
+![Relations between tables](~/connector/images/Starlink_Enterprise_UserTerminalsRelationships.drawio.svg)
+
 ### Alerts Page
 
 Each row in the **Alerts** table represents an alert that comes from a user terminal (not from a router). Alerts will persist for as long as they are active.
@@ -137,7 +144,15 @@ As the Telemetry API does not always return the routers consistently, the connec
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
-The **Dish ID** column contains the router dish ID, which is linked to the **Device ID** column from the User Terminals table.
+The **User Terminal Device ID** column contains the reference to the Device ID of the User Terminal. In the API, this is referred to as the _Router Dish ID_.
+
+### IP Allocations Page
+
+Information related to IP Allocations is stored in the **IP Allocations** table.
+
+The **IP Allocation Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+
+The **User Terminal Device ID** column contains the reference to the Device ID of the User Terminal.
 
 ### Services Page
 
