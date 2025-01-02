@@ -1572,6 +1572,8 @@
   items:
   - name: BBright Multi-TS
     topicUid: Connector_help_BBright_Multi-TS
+  - name: BBright RMD
+    topicUid: Connector_help_BBright_RMD
   - name: BBright UHD-Decode
     topicUid: Connector_help_BBright_UHD-Decode
 - name: Beckhoff
@@ -6841,6 +6843,8 @@
     topicUid: Connector_help_Peak_Communications_PBU137
   - name: Peak Communications PTR50
     topicUid: Connector_help_Peak_Communications_PTR50
+  - name: Peak Communications RCU H100
+    topicUid: Connector_help_Peak_Communications_RCU_H100
   - name: Peak Communications RCU100 SNMP
     topicUid: Connector_help_Peak_Communications_RCU100_SNMP
   - name: Peak Communications RCUH200
@@ -8481,6 +8485,8 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+  - name: Starlink Enterprise - User Terminal
+    topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
@@ -8843,6 +8849,8 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Sapiens_Offload
   - name: Telefonia por Cable S.A de C.V. SPA CPE Indexer
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
+  - name: Telefonia por Cable S.A de C.V. Ticketing WM
+    topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM
   - name: Telefonia por Cable S.A de C.V. Topology Aggregator
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Topology_Aggregator
 - name: Telefonica
