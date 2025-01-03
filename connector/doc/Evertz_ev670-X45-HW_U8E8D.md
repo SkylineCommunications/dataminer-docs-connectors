@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Evertz_ev670_X45_HW_U8E8D
+uid: Connector_help_Evertz_ev670-X45-HW_U8E8D
 ---
 
 # Evertz ev670-X45-HW U8E8D
