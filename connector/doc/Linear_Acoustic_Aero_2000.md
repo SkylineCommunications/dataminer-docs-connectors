@@ -15,18 +15,21 @@ The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of h
 | **Range** | **Key Features**                                                                       | **Based on** | **System Impact** |
 |-----------|----------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version. Polls SNMP data from the device and reacts to incoming trap messages. | N/A          | N/A               |
+| 1.1.0.x   | Added new Nielsen codes and Upmix parameters. Introduced new and updated existing trap mappings. | 1.0.0.x          | N/A               |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 3.19.85                |
+| 1.1.0.x   | 3.32.27                |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -68,9 +71,15 @@ This page can be used to quickly gather information about the state of the devic
 - **Inputs**: Allows you to monitor the status of video and audio inputs, as well as the status of the audio reference.
 - **Other**: Displays information about the state of the redundant power supply, as well as the engine status and the state of the Cn 2000.
 
-### Instance
+### Instance 1
 
 This page displays the various programs that belong to instance 1, as well as the silence state and loudness of each one of these programs.
+
+Should the loudness value fall out of range, the loudness alarm will be shown on this page.
+
+### Instance 2
+
+This page displays the various programs that belong to instance 2, as well as the silence state and loudness of each one of these programs.
 
 Should the loudness value fall out of range, the loudness alarm will be shown on this page.
 
