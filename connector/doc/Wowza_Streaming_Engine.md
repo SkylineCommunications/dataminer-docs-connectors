@@ -37,6 +37,11 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
 
+### Initialization
+
+On the **Credientials** page user needs to populate the necessary credentials parameters which are the **Username** and **Password**.
+Other parameters on this page **Server Name**, **Vhost Name** and **Instance Name**, are necessary parameter that need to be popluated for the API requests to function correctly. By default these parameters are populated with the default values obtained from device documentation.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
