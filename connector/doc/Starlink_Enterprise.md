@@ -27,7 +27,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 | Range              | Key Features    | Based on                       | System Impact |
 |--------------------|-----------------|--------------------------------|---------------|
 | 1.0.0.x [Obsolete] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
-| 1.0.1.x [SLC Main] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | -             |
+| 1.0.1.x [SLC Main] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | Foreign key parameters have been renamed, this impacts Automation Scripts that get a parameter of this protocol by name.  |
 
 ### Product Info
 
