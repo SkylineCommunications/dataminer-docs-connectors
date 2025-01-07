@@ -4,21 +4,11 @@ uid: Connector_help_Avid_iNews
 
 # Avid iNews
 
-This connector monitors input booking details associated with the **Avid iNews**.
+This connector monitors input booking details associated with the **Avid iNews**. It retrieves these entries from iNews, processes them, and displays them in a table in DataMiner. These entries are then used to create bookings in the system.
 
-## About
+## Configuration
 
-This connector monitors input booking details, retrieves these entries from iNews, processes them, and displays them as a table within DataMiner. These entries are then used to create bookings in the system.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-## Installation and configuration
-
-### Creation
+### Connections
 
 #### HTTP Main Connection
 
@@ -32,31 +22,31 @@ HTTP CONNECTION:
 
 ### Initialization
 
-When a new element is created, the **username, password and server name** of the Avid iNews should be entered on the **General** page. These credentials are necessary for a successful connection and communication during sessions.
+When a new element is created, the **username, password, and server name** of the Avid iNews should be entered on the **General** page. These credentials are necessary for a successful connection and communication during sessions.
 
 ## Usage
 
-This connector presents the booking details in two different data display pages on the element card.
+This connector presents the booking details on two different data display pages on the element card.
 
 ### General
 
 This page contains information about the system:
 
-- **Server**: Server name of the iNews.
+- **Server**: iNews server name.
 - **User Name**: User name of the iNews user.
 - **Password**: Password that is necessary for a successful login.
 
 ### Bookings
 
-This page contains all of the bookings that have been made during the period of time that is determined by the user (default: last 7 days):
+This page contains all the bookings that have been made during a period of time determined by the user (default: last 7 days):
 
-- **Days to Retrieve:** Time period for which the bookings are listed in the table.
-- **Booking Table:** Booking table containing the necessary information about each individual booking from the said time period.
-- **Booking Table Row Max Count:** Maximum number of rows diplayed in the table (default: 500 rows).
+- **Days to Retrieve**: The time period for which the bookings are listed in the table.
+- **Booking Table**: Table containing the necessary information about each individual booking from this time period.
+- **Booking Table Row Max Count**: Maximum number of rows displayed in the table (default: 500 rows).
 
 ### Historical Bookings
 
-This page contains all of the bookings for a certain date that is chosen by the user:
+This page contains all the bookings for a selected date:
 
-- **Date of the Booking:** Date for which the user wants to list the bookings.
-- **Historical Booking:** Table that contains the bookings for the chosen date.
+- **Date of the Booking**: Date for which the bookings should be listed.
+- **Historical Booking**: Table containing the bookings for the selected date.
