@@ -44,9 +44,9 @@ On the **Config** subpage, you can set the directory and file to select the key 
 
 - **File upload process** in range **1.0.0.x**:
 
-  1. The connector reads the referenced folder (typically a DataMiner Documents folder) and lists the files in a dropdown menu.
-  1. The user selects one file at a time by selecting an item in the dropdown menu.
-  1. After selecting a file, the user clicks to move the file to the table listing the files to be uploaded.
+  1. The connector reads the referenced folder (typically a DataMiner Documents folder) and lists the files in a dropdown list.
+  1. The user selects one file at a time by selecting an item in the dropdown list. If necessary, the Retrieve Files button can be used to refresh the dropdown list.
+  1. After selecting a file, the user clicks Add File to move the file to the table listing the files to be uploaded.
 
 - **File upload process** from range **1.0.1.x** onwards:
 
