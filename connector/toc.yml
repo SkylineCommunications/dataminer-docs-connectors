@@ -1006,6 +1006,8 @@
     topicUid: Connector_help_Aviat_Networks_Provision_-_Device
 - name: Avid
   items:
+  - name: Avid iNews
+    topicUid: Connector_help_Avid_iNews
   - name: Avid Interplay Engine
     topicUid: Connector_help_Avid_Interplay_Engine
   - name: Avid Interplay PAM
