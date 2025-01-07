@@ -32,7 +32,7 @@ This connector uses a virtual connection and does not require any input during e
 
 - When you are creating the element, expand the **Advanced element settings** section, and enable the **Shared session mode** option (under Spectrum settings). This prevents multiple users from sending a request for a new trace at the same time, which is necessary because this connector reads static binary files. See [Sharing spectrum sessions](https://aka.dataminer.services/Sharing_spectrum_sessions).
 
-- When the element has been created, go to the **Configuration page** and fill in the **Entity Import Directory**. This directory should contain the binary files offloaded by the CISCO CBR-8 CCAP. This driver is used in conjunction with the **Generic SFTP Client** driver to retrieve the files exported by the CISCO CBR-8 in the TFTP server and copies them to a local directory.
+- When the element has been created, go to the **Configuration page** and fill in the **Entity Import Directory**. This directory should contain the binary files offloaded by the CISCO CBR-8 CCAP. This connector is used in conjunction with the **Generic SFTP Client** connector to retrieve the files exported by the CISCO CBR-8 on the TFTP server and copy them to a local directory.
 
 ## How to use
 
