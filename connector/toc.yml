@@ -4194,6 +4194,8 @@
     topicUid: Connector_help_Haivision_Makito_X_Encoder
   - name: Haivision Makito X4 Platform
     topicUid: Connector_help_Haivision_Makito_X4_Platform
+  - name: Haivision Manager
+    topicUid: Connector_help_Haivision_Manager
   - name: Haivision Media Gateway
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
