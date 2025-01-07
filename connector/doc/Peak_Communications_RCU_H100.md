@@ -52,13 +52,13 @@ The web interface is only accessible when the client machine has network access 
 
 The Peak Communications RCU H100 connector enables monitoring and management of redundancy settings, fault statuses, and operational modes. Key features include:
 
-- **General Page:** Provides an overview of the system's operational configuration and status.
-- **Fault Monitoring Page:** Provides a detailed view of faults, including power supply faults, environmental faults, and general hardware issues.
-- **Unit Details Page:** Displays real-time information about connected units, such as validity, online status, and CAN Bus connection status.
-- **Redundancy Configuration:** Allows configuration and monitoring of redundancy settings.
+- **General page**: Provides an overview of the system's operational configuration and status.
+- **Fault Monitoring page**: Provides a detailed overview of faults, including power supply faults, environmental faults, and general hardware issues.
+- **Unit Details page**: Displays real-time information about connected units, such as validity, online status, and CAN bus connection status.
+- **Redundancy Configuration**: Allows the configuration and monitoring of redundancy settings.
 
 To monitor communication between the element and the device, use the Stream Viewer tool in DataMiner:
 
 1. Right-click the element in the Surveyor.
 1. Select **View** > **Stream Viewer**.
-1. For healthy elements, you should see groups 1-4 for polling the data, and groups 5-8 for write commands
+1. For healthy elements, you should see groups 1-4 for polling the data, and groups 5-8 for write commands.
