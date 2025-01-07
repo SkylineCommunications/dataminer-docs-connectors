@@ -12,10 +12,10 @@ The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of h
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                       | **Based on** | **System Impact** |
-|-----------|----------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. Polls SNMP data from the device and reacts to incoming trap messages. | N/A          | N/A               |
-| 1.1.0.x   | Added new Nielsen codes and Upmix parameters. Introduced new and updated existing trap mappings. | 1.0.0.x          | N/A               |
+| Range   | Key Features                                                                            | Based on | System Impact |
+|---------|-----------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version. Polls SNMP data from the device and reacts to incoming trap messages.  | N/A      | N/A           |
+| 1.1.0.x | Added new Nielsen codes and upmix parameters. Introduced new and updated trap mappings. | 1.0.0.x  | N/A           |
 
 ### Product Info
 
@@ -42,13 +42,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **SNMP Version:** The version of the Simple Network Management Protocol to be used for communication with the device.
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
 
 SNMP Settings:
 
-- **Port number**: The port of the connected device, by default *161.*
+- **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
-- **Set community string**: The community string in order to set to the device. The default value is *private.*
+- **Set community string**: The community string in order to set to the device. The default value is *private*.
 
 ### Web Interface
 
@@ -71,17 +71,11 @@ This page can be used to quickly gather information about the state of the devic
 - **Inputs**: Allows you to monitor the status of video and audio inputs, as well as the status of the audio reference.
 - **Other**: Displays information about the state of the redundant power supply, as well as the engine status and the state of the Cn 2000.
 
-### Instance 1
+### Instance 1 and 2
 
-This page displays the various programs that belong to instance 1, as well as the silence state and loudness of each one of these programs.
+These pages display the various programs that belong to instance 1 and 2, respectively, as well as the silence state and loudness of each one of these programs.
 
-Should the loudness value fall out of range, the loudness alarm will be shown on this page.
-
-### Instance 2
-
-This page displays the various programs that belong to instance 2, as well as the silence state and loudness of each one of these programs.
-
-Should the loudness value fall out of range, the loudness alarm will be shown on this page.
+Should the loudness value fall out of range, the loudness alarm will be shown.
 
 ### Traps
 
