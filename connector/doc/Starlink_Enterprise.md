@@ -27,7 +27,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 | Range              | Key Features    | Based on                       | System Impact |
 |--------------------|-----------------|--------------------------------|---------------|
 | 1.0.0.x [Obsolete] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
-| 1.0.1.x [SLC Main] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | Foreign key parameters have been renamed, this impacts Automation Scripts that get a parameter of this protocol by name.  |
+| 1.0.1.x [SLC Main] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | Foreign key parameters have been renamed, which impacts Automation scripts that retrieve a parameter of this protocol by name. |
 
 ### Product Info
 
@@ -124,7 +124,7 @@ User terminal DVEs can only be removed if the DVE Creation column contains a val
 
 #### Relations to other tables
 
-The data retrieved and stored in the different tables can be linked to each other. For the hardware related information, this is with the column **User Terminal Device ID**, while for the more service related data, the **Service Line Number** is used.
+The data retrieved and stored in the different tables can be linked to each other. For the hardware-related information, this is with the column **User Terminal Device ID**, while for the more service-related data, the **Service Line Number** is used.
 
 ![Relations between tables](~/connector/images/Starlink_Enterprise_UserTerminalsRelationships.drawio.svg)
 
@@ -140,19 +140,19 @@ Information related to routers is stored in the **Routers** table.
 
 The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
-As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
+As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for at most one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
-The **User Terminal Device ID** column contains the reference to the Device ID of the User Terminal. In the API, this is referred to as the _Router Dish ID_.
+The **User Terminal Device ID** column contains the reference to the Device ID of the user terminal. In the API, this is referred to as the **Router Dish ID**.
 
 ### IP Allocations Page
 
-Information related to IP Allocations is stored in the **IP Allocations** table.
+Information related to IP allocations is stored in the **IP Allocations** table.
 
 The **IP Allocation Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
-The **User Terminal Device ID** column contains the reference to the Device ID of the User Terminal.
+The **User Terminal Device ID** column contains the reference to the device ID of the user terminal.
 
 ### Services Page
 
