@@ -96,7 +96,7 @@ By default, all tables in this connector are polled. However, in order to reduce
 
 Version range 1.0.2.x has some extra features:
 
-- **Polling Config** (on the General page): This page contains a **Polling Configuration Table**, which can be used to configure the polling speed for each table. If you set the **PCT - Polling Time** to *disabled (-1)*, no polling is done for these parameters. With the **Refresh** button, you can poll the parameters manually. In version range 1.0.9.X, each row will have a unique toggle button to switch between enabling and disabling polling. Initially, this column will display 'Not Initialized' upon element creation. When polling is set to enabled, the polling time will automatically be set to 5 minutes.
+- **Polling Config** (on the General page): This page contains a **Polling Configuration Table**, which can be used to configure the polling speed for each table. If you set the **PCT - Polling Time** to *disabled (-1)*, no polling is done for these parameters. With the **Refresh** button, you can poll the parameters manually. In range 1.0.9.x, each row has a unique toggle button to switch between enabling and disabling polling. Initially, this column will display *Not Initialized* upon element creation. When polling is set to enabled, the polling time will automatically be set to 5 minutes.
 
 - **Measurement Config** (on the Interfaces page):
 
