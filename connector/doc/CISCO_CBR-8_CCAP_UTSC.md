@@ -30,27 +30,13 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-- When you are creating the element, expand the **Advanced element settings** section, and enable the **Shared session mode** option (under Spectrum settings). This prevents multiple users from sending a request for a new trace at the same time, which is necessary because this connector reads static CSV files. See [Sharing spectrum sessions](https://aka.dataminer.services/Sharing_spectrum_sessions).
+- When you are creating the element, expand the **Advanced element settings** section, and enable the **Shared session mode** option (under Spectrum settings). This prevents multiple users from sending a request for a new trace at the same time, which is necessary because this connector reads static binary files. See [Sharing spectrum sessions](https://aka.dataminer.services/Sharing_spectrum_sessions).
 
-- When the element has been created, go to the **Configuration page** and fill in the **Entity Import Directory**. This directory should contain the CSV files offloaded by the CISCO CBR-8 CCAP.
+- When the element has been created, go to the **Configuration page** and fill in the **Entity Import Directory**. This directory should contain the binary files offloaded by the CISCO CBR-8 CCAP. This connector is used in conjunction with the **Generic SFTP Client** connector to retrieve the files exported by the CISCO CBR-8 on the TFTP server and copy them to a local directory.
 
 ## How to use
 
-After the initial setup mentioned above, this is how you use the connector:
-
-1. Go to the **Configuration** page and click the **Update Trace button**. This will read all the CSV files in the location specified in the File Import Settings section.
-
-1. Go to the **Spectrum Analyzer** page to see the trace in the DataMiner Spectrum Analysis UI. On this page, you have a wide range of tools available. For detailed information, refer to [DataMiner Spectrum Analysis](https://aka.dataminer.services/Spectrum_Analysis).
-
-The connector can also read CSV files from a remote server. To configure this:
-
-1. Go to the **Configuration** page.
-
-1. Enter a remote directory path in the **Entity Import Directory** parameter.
-
-1. Fill in the **System Username** and **System Password** with an account with access to the remote directory.
-
-1. Toggle the **Entity Import Directory Type** to *Remote*.
+After the initial setup mentioned above, configure which port to request trace data for on the **UTSC** page.
 
 ### UTSC
 
@@ -73,7 +59,3 @@ This section allows you to **request Spectrum Analyzer trace data** from the CCA
 1. Fill out the desired **configuration parameters**, and click the **Update Config** button to send the settings to the device.
 
 1. Once the desired settings have been applied to the selected upstream port, click the **Start Capture or Stop Capture button**, depending on what you want to do.
-
-### FTP
-
-This section allows you to configure the **IP address and Destination Path** for the **FTP server**.
