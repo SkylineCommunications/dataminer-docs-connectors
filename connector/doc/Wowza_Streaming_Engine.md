@@ -39,8 +39,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-On the **Credientials** page user needs to populate the necessary credentials parameters which are the **Username** and **Password**.
-Other parameters on this page **Server Name**, **Vhost Name** and **Instance Name**, are necessary parameter that need to be popluated for the API requests to function correctly. By default these parameters are populated with the default values obtained from device documentation.
+On the **Credentials** page, specify the necessary credentials in the **Username** and **Password** parameters. Also make sure the **Server Name**, **Vhost Name**, and **Instance Name** are correctly filled in, so that the API requests will be able to function correctly. By default, these parameters are populated with the default values obtained from the device documentation.
 
 ### Web Interface
 
