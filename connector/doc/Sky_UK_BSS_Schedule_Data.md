@@ -12,7 +12,7 @@ When the connection information is entered correctly, the TX_MONITOR_VIEW table 
 
 ### Version Info
 
-| **Range** | **Description**                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                   | No                  | Yes                     |
 | 1.0.1.x          | Overview table, less information for SLElement and less data polled from database. | No                  | Yes                     |

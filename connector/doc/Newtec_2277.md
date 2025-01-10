@@ -12,7 +12,7 @@ Like its predecessor, the NTC/2177 DVB-S modulator, the Newtec 2277 is a member 
 
 ### Version Info
 
-| **Range** | **Description**                         | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                             | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------|---------------------|-------------------------|
 | 1.5.9.x          | Initial Version                         | No                  | Yes                     |
 | 1.6.2.x          | Software version 6.02                   | No                  | Yes                     |

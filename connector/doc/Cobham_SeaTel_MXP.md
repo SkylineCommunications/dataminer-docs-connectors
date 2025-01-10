@@ -12,7 +12,7 @@ An **SNMP** connection is used to communicate with the system.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                   | **Based on** | **System Impact** |
+| Range              | Key Features                                                     | Based on   | System Impact   |
 |----------------------|--------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]     |Initial version.                                                   | -            | -                 |
 | 1.0.1.x [Obsolete]     |Initial version.                                                   | -            | -                 |
@@ -21,7 +21,7 @@ An **SNMP** connection is used to communicate with the system.
 
 ### Product Info
 
-| **Range**            | **Supported Firmware** |
+| Range              | Supported Firmware   |
 |----------------------|------------------------|
 | 1.0.0.x [Obsolete]     |2.12                   |
 | 1.0.1.x [Obsolete]     |2.15                   |

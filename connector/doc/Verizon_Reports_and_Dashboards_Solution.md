@@ -13,7 +13,7 @@ In order to efficiently integrate the requirements, this solution comprises two 
 
 ### Version Info
 
-| **Range** | **Description**                                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                       | DCF Integration     | Cassandra Compliant     |
 |-----------|-------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x   | Initial version                                                   | No                  | Yes                     |
 | 1.0.1.x   | Minimum DataMiner required version increased to 10.0.10.0 - 9454. | No                  | Yes                     |
@@ -186,3 +186,8 @@ The **Export Configuration** section contains the following parameters:
 - **Export Processing Time**: Determines how often the export is executed. By default, this is set to 1 hour, but it can be set to any value between 20 seconds and 24 hours.
 - **Export Provisioning File**: Displays the export processing status, which can be either *Idle* or *Processing*.
 - **Apply**: Allows you to manually execute the export without taking the **File Handling** or **File Export** parameters into account.
+
+The **Subscriptions Configuration** section contains the following parameters:
+
+- **FE DMA ID**: DataMiner Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed.
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but it will not be a local path to the hosting Agent but to the front-end Agent.

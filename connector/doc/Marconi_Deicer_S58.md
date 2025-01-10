@@ -12,7 +12,7 @@ The **Marconi Deicer S58** will update its monitoring parameters by receiving **
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

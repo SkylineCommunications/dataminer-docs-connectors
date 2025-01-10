@@ -12,7 +12,7 @@ The connector polls relevant information from the device every 10 seconds, 15 se
 
 ### Version Info
 
-| **Range**            | **Key Features**     | **Based on** | **System Impact** |
+| Range                | Key Features         | Based on     | System Impact     |
 |----------------------|----------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitoring & control | -            | -                 |
 

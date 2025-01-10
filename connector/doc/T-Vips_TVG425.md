@@ -12,7 +12,7 @@ The TVG425 provides gateway functionality to encapsulate MPEG-2 transport stream
 
 ### Version Info
 
-| **Range** | **Description**                       | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                           | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                       | No                  | No                      |
 | 1.0.1.x          | No                                    | No                  |                         |

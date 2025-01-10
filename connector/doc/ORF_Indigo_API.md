@@ -12,7 +12,7 @@ The ORF Indigo API communicates via HTTP.
 
 ### Version Info
 
-| **Range**            | **Key Features**     | **Based on** | **System Impact** |
+| Range                | Key Features         | Based on     | System Impact     |
 |----------------------|----------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Resource management. | -            | -                 |
 

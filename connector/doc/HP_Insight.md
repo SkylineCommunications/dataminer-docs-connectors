@@ -12,17 +12,19 @@ This connector can be used to manage contracts and warranties, and to automate r
 
 ### Version Info
 
-| **Range** | **Description**                         | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                         | No                  | Yes                     |
-| 1.0.1.x          | Major change; key of table 3000 changed | No                  | Yes                     |
+| Range              | Description                                                                | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                           | No              | Yes                 |
+| 1.0.1.x            | Major change; key of table 3000 changed.                                   | No              | Yes                 |
+| 1.0.2.x [SLC Main] | Primary keys of tables 1000 and 1100 changed to avoid duplicate key error. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x \[Main\] | Unknown                     |
-| 1.0.1.x          | Unknown                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 1.0.1.x | Unknown                    |
+| 1.0.2.x | Unknown                    |
 
 ## Installation and configuration
 

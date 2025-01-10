@@ -14,7 +14,7 @@ Several ACU protocols are supported by means of the **ACU Protocol Parameters** 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
+| Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version, with DCF support for outputs      | -            | -                 |
 | 1.0.1.x              | DCF integration and ACU subscription               | -            | -                 |

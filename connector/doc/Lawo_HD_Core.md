@@ -12,7 +12,7 @@ The Lawo HD Core is the core component of the products **Nova73 HD** and **mc2 s
 
 ### Version Info
 
-| **Range** | **Description**                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                    | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                | No                  | Yes                     |
 | 1.0.1.x          | Changed primary keys of table. | No                  | Yes                     |

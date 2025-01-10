@@ -14,7 +14,7 @@ This connector also exports several other connectors based on the information re
 
 ### Version Info
 
-| **Range** | **Description**                                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                       | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                                   | No                  | Yes                     |
 | 1.0.1.x          | Support added for new card type (EDFA). DVE protocol names adjusted and logic and layout improved. | No                  | Yes                     |

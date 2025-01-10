@@ -24,7 +24,7 @@ This connector is used to retrieve all data information from the Nevion Video iP
 | 1.2.5.x [Obsolete] | Corrected Endpoints table to reflect the correct column names for Descriptor Description, Descriptor Label and FDescriptor Label data. | No | Yes |
 | 1.2.6.x | InterApp communication upgraded on QAction 9000000. All external integrations that communicate with this connector will need to upgrade their own InterApp communication. <br>Following methods need to be upgraded: <br>- Message.Send(); <br>- InterAppCallFactory.CreateFromRaw() | No | Yes |
 | 1.2.7.x [Obsolete] | InterApp code moved to NuGets. Minimum required DataMiner version: 10.0.10.x | No | Yes |
-| 1.2.8.x | Performance improvements. General code review fixes. | No | Yes |
+| 1.2.8.x [Obsolete] | Performance improvements. General code review fixes. | No | Yes |
 | 1.3.0.x [SLC Main] | Endpoint for authentication changed to endpoint api/_session for authentication in version 9.22. The endpoint cdb/_session is deprecated. | No | Yes |
 
 ### Product Info
