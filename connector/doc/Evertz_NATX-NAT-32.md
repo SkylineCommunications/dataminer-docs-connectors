@@ -34,6 +34,6 @@ The data in this connector is divided into two main sections: **LAN to WAN** and
 
 In the **Core Configuration Page LAN to WAN or WAN to LAN**, a table displays the number of supported cores and their status. Depending on the core's status, the flow information is polled.
 
-The connector only polls information for cores that are enabled and displays flow information exclusively for those that are enabled as well. This applies to both the **Input Flow Configuration** and the **Input Flow Translation Configuration**.
+The connector only polls information for cores that are enabled and displays flow information exclusively for cores and flows that are enabled. This applies to both the **Input Flow Configuration** and the **Input Flow Translation Configuration**.
 
 On the **General** page, you can find system parameters such as the name, description, and system uptime.
