@@ -6636,7 +6636,7 @@
   - name: OneWeb Incident Manager
     topicUid: Connector_help_OneWeb_Incident_Manager
   - name: OneWeb PCN Collector
-    topicUid: Connector_help_OneWeb_PCN_Collector  
+    topicUid: Connector_help_OneWeb_PCN_Collector
 - name: Ooredoo
   items:
   - name: Ooredoo Messenger

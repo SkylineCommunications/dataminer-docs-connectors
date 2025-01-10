@@ -12,14 +12,13 @@ The **OneWeb PCN Collector** connector retrieves and organizes **Predicted Cause
 
 |Range          |Features                                                                                  |Based on |System Impact            |
 |---------------|------------------------------------------------------------------------------------------|---------|--------------------------|
-|1.0.0.x [SLC Main] |<ul><li>Initial release of the connector.</li><li>Consumes PCN data via Kafka.</li><li>Includes a tree control for viewing PCNs and their associated alarms.</li></ul> |-       |-      |
-
+|1.0.0.x [SLC Main] |- Initial release of the connector.<br>- Consumes PCN data via Kafka.<br>- Includes a tree control for viewing PCNs and their associated alarms. |-       |-      |
 
 ### System Info
 
-|Range          |DCF Integration  |Cassandra Compliant  |Linked Components            |Exported Components   |
-|---------------|-----------------|---------------------|-----------------------------|-----------------------|
-|1.0.0.x        |No               |Yes                  |-                         |-                 |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -33,15 +32,11 @@ This connector uses a Kafka-based virtual connection and does not require manual
 
 The **Configuration** page contains fields for Kafka authentication settings. These must be configured after the element is created to enable the connector to connect to the Kafka server and start polling for PCN data.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The **OneWeb PCN Collector** organizes **PCN** and alarm data into three main areas for easy access:
 
-- **General Page**: Provides a tree control where users can select a specific PCN and view its details, along with its associated alarms. This helps users quickly navigate and analyze the data.
+- **General page**: Provides a tree control where you can select a specific PCN and view its details, along with its associated alarms, so that you can quickly navigate and analyze the data.
 - **PCN Table**: Displays information about PCNs, including their ID, predicted cause, timestamp, and the number of associated alarms.
 - **Alarms Table**: Lists all alarms retrieved by the connector. Each alarm includes details such as severity, timestamp, and a reference to the related PCN.
 
