@@ -3558,6 +3558,8 @@
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
   - name: Evertz NATX
     topicUid: Connector_help_Evertz_NATX
+  - name: Evertz NATX-NAT-32
+    topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000
   - name: Evertz Scorpion 18
