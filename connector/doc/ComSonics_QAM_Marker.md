@@ -12,7 +12,7 @@ The ComSonics QAM Marker generates a non-interfering marker signal that is inser
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                        | **Based on** | **System Impact** |
+| Range              | Key Features                                                          | Based on   | System Impact   |
 |----------------------|-------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version, featuring monitoring and configuration of marker data. | -            | -                 |
 

@@ -12,7 +12,7 @@ The Redus Switch can be used as a standalone redundancy switch for third-party e
 
 ### Version Info
 
-| **Range** | **Description**                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                         | No                  | Yes                     |
 | 1.0.1.x          | Improvement of logic and UI - No support for multiple elements polling the same IP:Port. | No                  | Yes                     |

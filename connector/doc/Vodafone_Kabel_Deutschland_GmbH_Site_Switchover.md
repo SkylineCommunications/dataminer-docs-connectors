@@ -10,7 +10,7 @@ This is a dedicated connector intended to monitor and retrieve KPIs related to t
 
 ### Version Info
 
-| **Range**            | **Key Features**                             | **Based on** | **System Impact** |
+| Range              | Key Features                               | Based on   | System Impact   |
 |----------------------|----------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Satellite Downlink, Pre-Encoding, IP Gateway | -            | -                 |
 

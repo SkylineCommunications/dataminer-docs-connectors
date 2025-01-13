@@ -4,11 +4,9 @@ uid: Connector_help_Wellav_UMH_160_T2
 
 # Wellav UMH 160 T2
 
-The **Wellav UMH 160 T2** connector can be used to display information of any related device.
+This connector can be used to monitor Wellav UMH 160 T2 devices. WellAV UMH 160 S2 and WellAV UMH 160 IP devices are monitored by a dedicated connector. An **SNMP** connection is used to successfully retrieve the device's information.
 
 ## About
-
-This protocol can be used to monitor the Wellav UMH 160 T2 devices. WellAV UMH 160 S2 and WellAV UMH 160 IP devices are monitored by their own protocol. A **SNMP** connection is used to successfully retrieve the device's information.
 
 ### Version Info
 
@@ -48,11 +46,9 @@ SNMP Settings:
 
 ## Usage
 
-The connector contains 10 pages.
-
 ### Status
 
-This page displays all status information for the **Input Tuner**, **Input ASI**, **Input IP**, **Output ASI**, **Output IPs** and **CI Slots**.
+This page displays all status information for the **Input Tuner**, **Input ASI**, **Input IP**, **Output ASI**, **Output IPs**, and **CI Slots**.
 
 ### Input Receiver
 
@@ -68,7 +64,7 @@ This page displays tuner-related information. There are parameters for both Tune
 
 ### Input ASI
 
-This page displays **ASI 1**, **ASI 2** and the **TS Standard** for both ASI 1 and 2. There is also a **ScanTS** button for both ASI 1 and 2.
+This page displays **ASI 1**, **ASI 2**, and the **TS Standard** for both ASI 1 and 2. There is also a **ScanTS** button for both ASI 1 and 2.
 
 ### Input IP
 
@@ -87,7 +83,7 @@ This page displays the following local connection and channel information for ch
 - **Enable Row Port Matching**
 - **TS Standard**
 
-A page button opens the **IGMP** pages for Channel 1 and Channel 2. They display the **IGMP Version**, **Auto Report**, **Filter** and **IP Address**.
+A page button opens the **IGMP** pages for Channel 1 and Channel 2. They display the **IGMP Version**, **Auto Report**, **Filter**, and **IP Address**.
 
 ### Backup Setting
 
@@ -95,11 +91,11 @@ Here the **Main** and **Backup Input StreamBackup Settings** can be set, both fo
 
 ### Output Decoder
 
-This page displays information related to the **decoder**, **video**, **audio**, **subtitle** and **teletext**. The related tables display the indexes, names and PID.
+This page displays information related to the **decoder**, **video**, **audio**, **subtitle**, and **teletext**. The related tables display the indexes, names and PID.
 
 ### Output ASI
 
-This page displays the **TS Source** for ASI 1 and 2**.**
+This page displays the **TS Source** for ASI 1 and 2.
 
 ### Output IP
 
@@ -115,23 +111,23 @@ This page provides the **GbE Port Setting** for the **Main** and **Backup** and 
 - **Backup Port**
 - **Backup MAC**
 
-A button can be used to **set the Backup Port** the same as the Main Port.
+A button can be used to **set the backup port** the same as the main port.
 
 ### CA
 
-This page shows the **CAM Max Bitrate** and BISS related parameters: **Mode,** the **BISS-1** and **BISS-E Keys** and the **BISS-E ID.** The **TS Sources** are also displayed for both CAs.
+This page shows the **CAM Max Bitrate** and BISS related parameters: **Mode**, the **BISS-1** and **BISS-E Keys**, and the **BISS-E ID**. The **TS Sources** are also displayed for both CAs.
 
 ### Program Mux Setting
 
-This page displays information related to the **Mux 1, Mux 2, Tuner 1, Tuner 2, ASI 1, ASI 2, IP 1** and **IP 2**. The related tables display the indexes, names and PID.
+This page displays information related to the **Mux 1, Mux 2, Tuner 1, Tuner 2, ASI 1, ASI 2, IP 1**, and **IP 2**. The related tables display the indexes, names, and PID.
 
 ### System
 
-This page displays system information such as the **IP Address, Subnet Mask, Gateway** as well as some **Trap** information. This page also contains a **Reboot** and a **FactorySet** button.
+This page displays system information such as the **IP Address, Subnet Mask, Gateway**, as well as some **Trap** information. This page also contains a **Reboot** and a **FactorySet** button.
 
 ### Alarm
 
-This page displays six alarms: **LNB Connection Short, Signal Unlock, CAM 1** and **CAM 2 Communication Error** and **Descrambling**.
+This page displays six alarms: **LNB Connection Short, Signal Unlock, CAM 1** and **CAM 2 Communication Error**, and **Descrambling**.
 
 ### Web Interface
 

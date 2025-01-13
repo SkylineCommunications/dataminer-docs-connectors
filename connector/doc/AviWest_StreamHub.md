@@ -8,6 +8,9 @@ The AviWest StreamHub DataMiner connector will interface with StreamHubs using a
 
 Up to 8 videos can be decoded simultaneously thanks to 8 SDI outputs, while up to 32 IP outputs are supported to re-stream the video contents over LAN or WAN to CDNs, media servers, streaming platforms, social networks, IRDs, or other StreamHubs. Each StreamHub also features video encoding and transcoding capability, so that incoming feeds can be adapted to the desired output format.
 
+> [!IMPORTANT]
+> This connector is deprecated. Use the [Haivision StreamHub connector](xref:Connector_help_Haivision_StreamHub) instead.
+
 ## About
 
 ### Version Info
@@ -18,9 +21,9 @@ Up to 8 videos can be decoded simultaneously thanks to 8 SDI outputs, while up t
 
 ### Product Info
 
-| Range     | Supported Firmware                  |
-|-----------|-------------------------------------|
-| 1.0.0.x   | 3.4.0 3.5.0 3.5.2 4.0.1 4.1.0 4.2.3 |
+| Range     | Supported Firmware                        |
+|-----------|-------------------------------------------|
+| 1.0.0.x   | 3.4.0<br>3.5.0<br>3.5.2<br>4.0.1<br>4.1.0<br>4.2.3<br>4.3.2 |
 
 ### System Info
 

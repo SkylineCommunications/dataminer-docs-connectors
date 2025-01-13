@@ -12,7 +12,7 @@ This connector retrieves status and configuration parameters through SNMP. It ca
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact** |
+| Range                | Key Features           | Based on     | System Impact     |
 |----------------------|------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitoring and control | -            | -                 |
 

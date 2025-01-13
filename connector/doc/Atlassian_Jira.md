@@ -12,19 +12,19 @@ The Atlassian Jira connector uses the official JSON REST API to create and updat
 
 ### Version Info
 
-| **Range** | **Description**                                      | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                                     | No                  | Yes                     |
-| 1.0.1.x          | Connector review.                                       | No                  | Yes                     |
-| 3.0.0.x          | Based on 1.0.0.x. Dedicated branch for costumer VOO. | No                  | Yes                     |
+| Range   | Description                                          | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.                                     | No              | Yes                 |
+| 1.0.1.x | Connector review.                                    | No              | Yes                 |
+| 3.0.0.x | Based on 1.0.0.x. Dedicated branch for costumer VOO. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 5.2.11                      |
-| 1.0.1.x          | 5.2.11 7.3.6                |
-| 3.0.0.x          | 5.2.11 7.2.7                |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 5.2.11                     |
+| 1.0.1.x | 5.2.11 7.3.6               |
+| 3.0.0.x | 5.2.11 7.2.7               |
 
 ## Installation and configuration
 

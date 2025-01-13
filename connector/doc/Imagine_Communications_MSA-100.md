@@ -30,7 +30,7 @@ All data gets retrieved from the device with the following timing:
 
 ### Version Info
 
-| **Range** | **Description** | **DCP Integration** | **Cassandra Compliant** |
+| Range     | Description     | DCP Integration     | Cassandra Compliant     |
 |------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version | No                  | Yes                     |
 

@@ -42,6 +42,8 @@
     topicUid: Connector_help_2WCOM_RDS_OCTO-IP
   - name: 2WCOM S02
     topicUid: Connector_help_2WCOM_S02
+  - name: 2WCOM SAT-4d
+    topicUid: Connector_help_2WCOM_SAT-4d
   - name: 2WCOM X-4sd
     topicUid: Connector_help_2WCOM_X-4sd
 - name: A10 Networks
@@ -50,6 +52,8 @@
     topicUid: Connector_help_A10_Networks_AX_Series
 - name: ABB
   items:
+  - name: ABB Newave UPS
+    topicUid: Connector_help_ABB_Newave_UPS
   - name: ABB Satt Control COMLI-LINK
     topicUid: Connector_help_ABB_Satt_Control_COMLI-LINK
   - name: ABB Satt Control COMLI-LINK Generator
@@ -158,6 +162,8 @@
   items:
   - name: Advantech 152X Serial Gateway
     topicUid: Connector_help_Advantech_152X_Serial_Gateway
+  - name: Advantech 8xADAM5050
+    topicUid: Connector_help_Advantech_8xADAM5050
   - name: Advantech ADAM5017
     topicUid: Connector_help_Advantech_ADAM5017
   - name: Advantech ADAM5050
@@ -166,6 +172,8 @@
     topicUid: Connector_help_Advantech_ADAM5060
   - name: Advantech ADAM6050
     topicUid: Connector_help_Advantech_ADAM6050
+  - name: Advantech ADAM6050 SNMP
+    topicUid: Connector_help_Advantech_ADAM6050_SNMP
   - name: Advantech ADAM6060
     topicUid: Connector_help_Advantech_ADAM6060
   - name: Advantech ADAM6251
@@ -242,6 +250,10 @@
   items:
   - name: Agilis AUC28
     topicUid: Connector_help_Agilis_AUC28
+- name: AIRSYS
+  items:
+  - name: AIRSYS UNICOOL ASMUC
+    topicUid: Connector_help_AIRSYS_UNICOOL_ASMUC
 - name: AJA
   items:
   - name: AJA IPR-10G2-HDMI
@@ -356,6 +368,8 @@
     topicUid: Connector_help_Amagi_CLOUDPORT_Playout_Service_Manager
   - name: Amagi CLOUDPORT Service Manager
     topicUid: Connector_help_Amagi_Cloudport_Service_Manager
+  - name: Amagi Tellyo PRO
+    topicUid: Connector_help_Amagi_Tellyo_Pro 
 - name: Amazon
   items:
   - name: Amazon AWS CloudFormation
@@ -544,6 +558,10 @@
   items:
   - name: Apica Synthetic Monitoring API
     topicUid: Connector_help_Apica_Synthetic_Monitoring_API
+- name: Appear
+  items:
+  - name: Appear X Platform
+    topicUid: Connector_help_Appear_X_Platform
 - name: AppearTV
   items:
   - name: AppearTV Audio Transcoder
@@ -714,6 +732,8 @@
     topicUid: Connector_help_Asentria_SiteBoss_220
   - name: Asentria SiteBoss 340
     topicUid: Connector_help_Asentria_SiteBoss_340
+  - name: Asentria SiteBoss 360
+    topicUid: Connector_help_Asentria_SiteBoss_360
   - name: Asentria SiteBoss 410
     topicUid: Connector_help_Asentria_SiteBoss_410
   - name: Asentria SiteBoss 450
@@ -986,6 +1006,8 @@
     topicUid: Connector_help_Aviat_Networks_Provision_-_Device
 - name: Avid
   items:
+  - name: Avid iNews
+    topicUid: Connector_help_Avid_iNews
   - name: Avid Interplay Engine
     topicUid: Connector_help_Avid_Interplay_Engine
   - name: Avid Interplay PAM
@@ -1552,6 +1574,8 @@
   items:
   - name: BBright Multi-TS
     topicUid: Connector_help_BBright_Multi-TS
+  - name: BBright RMD
+    topicUid: Connector_help_BBright_RMD
   - name: BBright UHD-Decode
     topicUid: Connector_help_BBright_UHD-Decode
 - name: Beckhoff
@@ -1560,6 +1584,8 @@
     topicUid: Connector_help_Beckhoff_BK9000
   - name: Beckhoff KL2622
     topicUid: Connector_help_Beckhoff_KL2622
+  - name: Beckhoff KL3202
+    topicUid: Connector_help_Beckhoff_KL3202
 - name: Beenius
   items:
   - name: Beenius IPTV Delivery Platform
@@ -1570,6 +1596,8 @@
     topicUid: Connector_help_beIN_Arvato_VPMS
   - name: beIN ESVC Feed Request
     topicUid: Connector_help_beIN_ESVC_Feed_Request
+  - name: beIN Feed Request Preset Manager
+    topicUid: Connector_help_beIN_Feed_Request_Preset_Manager
   - name: beIN GPIO Mapping
     topicUid: Connector_help_beIN_GPIO_Mapping
 - name: Belgacom
@@ -1762,6 +1790,12 @@
     topicUid: Connector_help_CA_Spectrum
   - name: CA Spectrum Device
     topicUid: Connector_help_CA_Spectrum_Device
+- name: Calix
+  items:
+  - name: Calix AXOS
+    topicUid: Connector_help_Calix_AXOS
+  - name: Calix NMS
+    topicUid: Connector_help_Calix_NMS
 - name: Calrec
   items:
   - name: Calrec Apollo
@@ -2018,6 +2052,8 @@
     topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
   - name: Ciena 5170 Packetwave Platform
     topicUid: Connector_help_Ciena_5170_Packetwave_Platform
+  - name: Ciena 8114
+    topicUid: Connector_help_Ciena_8114
   - name: Ciena 8700 Packetwave Platform
     topicUid: Connector_help_Ciena_8700_Packetwave_Platform
   - name: Ciena Blue Planet MCP NMS
@@ -2050,6 +2086,8 @@
     topicUid: Connector_help_CISCO_CBR-8_CCAP_Platform
   - name: CISCO CBR-8 CCAP Platform Collector
     topicUid: Connector_help_CISCO_CBR-8_CCAP_Platform_Collector
+  - name: CISCO CBR-8 CCAP UTSC
+    topicUid: Connector_help_CISCO_CBR-8_CCAP_UTSC
   - name: CISCO CDS
     topicUid: Connector_help_CISCO_CDS
   - name: CISCO CMTS
@@ -2212,6 +2250,8 @@
     topicUid: Connector_help_Comet_T8541
 - name: Commscope
   items:
+  - name: Commscope AdEdge Com
+    topicUid: Connector_help_Commscope_AdEdge_Com
   - name: Commscope VUE Splicer
     topicUid: Connector_help_Commscope_VUE_Splicer
 - name: ComRex
@@ -2458,6 +2498,8 @@
   items:
   - name: DAZN Broadcast Bridge
     topicUid: Connector_help_DAZN_Broadcast_Bridge
+  - name: DAZN MediaOps VSC Sync
+    topicUid: Connector_help_DAZN_MediaOps_VSC_Sync
 - name: Deep Sea Electronics
   items:
   - name: Deep Sea Electronics DSE74XX MKII
@@ -2518,6 +2560,8 @@
   items:
   - name: DEV 1985
     topicUid: Connector_help_DEV_1985
+  - name: DEV 1986
+    topicUid: Connector_help_DEV_1986
   - name: DEV 4111
     topicUid: Connector_help_DEV_4111
   - name: DEV 7000
@@ -2590,6 +2634,10 @@
   items:
   - name: Digimetrics Aurora
     topicUid: Connector_help_Digimetrics_Aurora
+- name: Digital Alert Systems
+  items:
+  - name: Digital Alert Systems DASDEC-III
+    topicUid: Connector_help_Digital_Alert_Systems_DASDEC-III
 - name: Dimetis
   items:
   - name: Dimetis BOSS Stream Viewer
@@ -2700,6 +2748,8 @@
   items:
   - name: EATON 9355 UPS
     topicUid: Connector_help_EATON_9355_UPS
+  - name: EATON 9390 UPS
+    topicUid: Connector_help_EATON_9390_UPS
   - name: Eaton 93PM UPS
     topicUid: Connector_help_Eaton_93PM_UPS
   - name: EATON 9PX UPS
@@ -2816,6 +2866,8 @@
   items:
   - name: Eltek Inverter Candis
     topicUid: Connector_help_Eltek_Inverter_Candis
+  - name: Eltek Smartpack
+    topicUid: Connector_help_Eltek_Smartpack
   - name: Eltek Smartpack 2
     topicUid: Connector_help_Eltek_Smartpack_2
   - name: Eltek Smartpack S
@@ -3226,6 +3278,10 @@
     topicUid: Connector_help_Evertz_7707GPS-DR-F2
   - name: Evertz 7707GPS-DT-F2
     topicUid: Connector_help_Evertz_7707GPS-DT-F2
+  - name: Evertz 7707LR
+    topicUid: Connector_help_Evertz_7707LR
+  - name: Evertz 7707LTA
+    topicUid: Connector_help_Evertz_7707LTA
   - name: Evertz 7707OE
     topicUid: Connector_help_Evertz_7707OE
   - name: Evertz 7707VR8-HS
@@ -3462,6 +3518,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
+  - name: Evertz ev670-X45-HW U8E8D
+    topicUid: Connector_help_Evertz_ev670-X45-HW_U8E8D
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
@@ -3498,6 +3556,10 @@
     topicUid: Connector_help_Evertz_MVP_OV
   - name: Evertz MVP OV - Channel
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
+  - name: Evertz NATX
+    topicUid: Connector_help_Evertz_NATX
+  - name: Evertz NATX-NAT-32
+    topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000
   - name: Evertz Scorpion 18
@@ -3518,6 +3580,8 @@
     topicUid: Connector_help_Evertz_Vistalink
   - name: Evertz Vistalink Hardware
     topicUid: Connector_help_Evertz_Vistalink_Hardware
+  - name: Evertz X1202-HX HDSDI
+    topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
   - name: Evertz XPRF14
@@ -3608,8 +3672,12 @@
     topicUid: Connector_help_Fluvius_Teleste_Node_Service_Provisioning
 - name: FOR-A
   items:
+  - name: FOR-A DSK-400
+    topicUid: Connector_help_FOR-A_DSK-400
   - name: FOR-A FA-9500
     topicUid: Connector_help_FOR-A_FA-9500
+  - name: FOR-A FA-9600
+    topicUid: Connector_help_FOR-A_FA-9600
   - name: FOR-A FA-9520
     topicUid: Connector_help_FOR-A_FA-9520
   - name: FOR-A FRC-8000
@@ -3726,10 +3794,14 @@
     topicUid: Connector_help_GatesAir_Flexiva_M3FM-TX_1P1
   - name: GatesAir Flexiva M3FM-TX 1P1 Transmitter
     topicUid: Connector_help_GatesAir_Flexiva_M3FM-TX_1P1_Transmitter
+  - name: GatesAir Intraplex Ascent
+    topicUid: Connector_help_GatesAir_Intraplex_Ascent
   - name: GatesAir LX
     topicUid: Connector_help_GatesAir_LX
   - name: GatesAir Maxiva M2X
     topicUid: Connector_help_GatesAir_Maxiva_M2X
+  - name: GatesAir Maxiva UAXT Transmitter
+    topicUid: Connector_help_GatesAir_Maxiva_UAXT_Transmitter
   - name: GatesAir Maxiva UAXTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_UAXTE_Transmitter
   - name: GatesAir Maxiva ULX-OP Driver
@@ -3750,6 +3822,8 @@
     topicUid: Connector_help_GatesAir_Maxiva_XTE_MSC3
   - name: GatesAir Maxiva XTE Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_XTE_Transmitter
+  - name: GatesAir MSCx 1P1 Main Alt Controller
+    topicUid: Connector_help_GatesAir_MSCx_1P1_Main_Alt_Controller
   - name: GatesAir MSCx DD Dual Drive Controller
     topicUid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
 - name: Geist
@@ -3848,6 +3922,8 @@
     topicUid: Connector_help_Generic_Dummy
   - name: Generic Dynamic Table
     topicUid: Connector_help_Generic_Dynamic_Table
+  - name: Generic Ember+
+    topicUid: Connector_help_Generic_Ember+
   - name: Generic Failover Status
     topicUid: Connector_help_Generic_Failover_Status
   - name: Generic File Explorer
@@ -3940,6 +4016,8 @@
     topicUid: Connector_help_Generic_sFlow_Monitor
   - name: Generic sFlow Viewer
     topicUid: Connector_help_Generic_sFlow_Viewer
+  - name: Generic SFTP Client
+    topicUid: Connector_help_Generic_SFTP_Client
   - name: Generic Shelter Access
     topicUid: Connector_help_Generic_Shelter_Access
   - name: Generic SIP Client
@@ -3984,6 +4062,8 @@
     topicUid: Connector_help_Generic_Uplink_Power_Controller
   - name: Generic UPS
     topicUid: Connector_help_Generic_UPS
+  - name: Generic Virtual 4K Video Delay
+    topicUid: Connector_help_Generic_Virtual_4K_Video_Delay
   - name: Generic Virtual Chassis
     topicUid: Connector_help_Generic_Virtual_Chassis
   - name: Generic Virtual DeEmbedder
@@ -4047,7 +4127,9 @@
   - name: Globecast France Enhanced DTM Channel Service
     topicUid: Connector_help_Globecast_France_Enhanced_DTM_Channel_Service
   - name: Globecast France Enhanced Single Destination Transport Service
-    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service 
+    topicUid: Connector_help_Globecast_France_Enhanced_Single_Destination_Transport_Service
+  - name: Globecast France Enhanced 4 DTM Single Destination Transport Service
+    topicUid: Connector_help_Globecast_France_Enhanced_4_DTM_Single_Destination_Transport_Service
 - name: Globecomm
   items:
   - name: Globecomm iDirect Shore Side Server
@@ -4076,6 +4158,8 @@
     topicUid: Connector_help_GMIT_BMM-810
 - name: Google
   items:
+  - name: Google Android Debug Bridge
+    topicUid: Connector_help_Google_Android_Debug_Bridge
   - name: Google Cloud Compute Engine
     topicUid: Connector_help_Google_Cloud_Compute_Engine
   - name: Google Cloud DNS
@@ -4200,6 +4284,8 @@
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
     topicUid: Connector_help_Haivision_Media_Platform
+  - name: Haivision StreamHub
+    topicUid: Connector_help_Haivision_StreamHub
 - name: Hambisana
   items:
   - name: Hambisana Appear TV Analyzer
@@ -4328,6 +4414,10 @@
     topicUid: Connector_help_Harris_VEA6800+
   - name: Harris X50
     topicUid: Connector_help_Harris_X50
+- name: Hewtech
+  items:
+  - name: Hewtech Hirakawa HS-600MA
+    topicUid: Connector_help_Hewtech_Hirakawa_HS-600MA
 - name: Hiltron
   items:
   - name: Hiltron HACU
@@ -4422,6 +4512,10 @@
     topicUid: Connector_help_Huawei_OceanStor_9000
   - name: Huawei UPS AC
     topicUid: Connector_help_Huawei_UPS_AC
+- name: Hughes
+  items:
+  - name: Hughes Pulse Platform VSAT
+    topicUid: Connector_help_Hughes_Pulse_Platform_VSAT
 - name: HW Group
   items:
   - name: HW Group Poseidon2
@@ -4444,6 +4538,10 @@
   items:
   - name: Icareus EP100
     topicUid: Connector_help_Icareus_EP100
+- name: Icinga
+  items:
+  - name: Icinga Icinga 2
+    topicUid: Connector_help_Icinga_Icinga_2
 - name: IDC
   items:
   - name: IDC P561 Audio Encoder
@@ -4454,6 +4552,8 @@
   items:
   - name: iDirect 9350
     topicUid: Connector_help_iDirect_9350
+  - name: iDirect Evolution Platform VSAT
+    topicUid: Connector_help_iDirect_Evolution_Platform_VSAT
   - name: iDirect iQ200
     topicUid: Connector_help_iDirect_iQ200
   - name: iDirect LineCard Virtual
@@ -4786,6 +4886,8 @@
     topicUid: Connector_help_Invidi_Advatar
 - name: IRT
   items:
+  - name: IRT DLRC
+    topicUid: Connector_help_IRT_DLRC
   - name: IRT DVB-T2 TX
     topicUid: Connector_help_IRT_DVB-T2_TX
   - name: IRT DVB-T TX
@@ -4836,6 +4938,10 @@
   items:
   - name: iTWatchDogs Mini Goose-II
     topicUid: Connector_help_iTWatchDogs_Mini_Goose-II
+- name: Ivanti
+  items:
+  - name: Ivanti PSA 7000
+    topicUid: Connector_help_Ivanti_PSA_7000
 - name: iXsystems
   items:
   - name: iXsystems FreeNAS
@@ -4902,6 +5008,10 @@
   items:
   - name: JVC PTZ Camcorder
     topicUid: Connector_help_JVC_PTZ_Camcorder
+- name: Kaiteng Sifang
+  items:
+  - name: Kaiteng Sifang KSF-II-813 Transmitter
+    topicUid: Connector_help_Kaiteng_Sifang_KSF-II-813_Transmitter
 - name: Kantar Media
   items:
   - name: Kantar Media SNAP Watermarking Monitor
@@ -4960,6 +5070,10 @@
     topicUid: Connector_help_KPN_Probe_Service
   - name: KPN Service Manager
     topicUid: Connector_help_KPN_Service_Manager
+- name: Kratos
+  items:
+  - name: Kratos RF Switching System
+    topicUid: Connector_help_Kratos_RF_Switching_System
 - name: Kronback Tracers
   items:
   - name: Kronback Tracers B16
@@ -5000,6 +5114,10 @@
   items:
   - name: L-3 Communications MPM-1000
     topicUid: Connector_help_L-3_Communications_MPM-1000
+- name: Lancier Monitoring
+  items:
+  - name: Lancier Monitoring PSC
+    topicUid: Connector_help_Lancier_Monitoring_PSC
 - name: Lantronix
   items:
   - name: Lantronix ETS32
@@ -5148,10 +5266,16 @@
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000
   - name: LYNX Technik AG Series 5000 - CDX 5624
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CDX_5624
+  - name: LYNX Technik AG Series 5000 - CHD 1402-2
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_CHD_1402
   - name: LYNX Technik AG Series 5000 - DVA 5718-L
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVA_5718-L
   - name: LYNX Technik AG Series 5000 - DVD 5820
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_DVD_5820
+  - name: LYNX Technik AG Series 5000 - ORX 1802
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_ORX_1802
+  - name: LYNX Technik AG Series 5000 - OTX 5840
+    topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_OTX_5840
   - name: LYNX Technik AG Series 5000 - PDM 5380
     topicUid: Connector_help_LYNX_Technik_AG_Series_5000_-_PDM_5380
   - name: LYNX Technik AG Series 5000 - PMX 5364
@@ -5284,6 +5408,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE
   - name: Meinberg LANTIME IMS-BPE API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE_API_V10
+  - name: Meinberg LANTIME IMS-BPE API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-BPE_API_V17
   - name: Meinberg LANTIME IMS-CPE
     topicUid: Connector_help_Meinberg_LANTIME_IMS-CPE
   - name: Meinberg LANTIME IMS-CPE API V10
@@ -5310,6 +5436,8 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-GPS
   - name: Meinberg LANTIME IMS-GPS API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-GPS_API_V10
+  - name: Meinberg LANTIME IMS-GXL API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-GXL_API_V17
   - name: Meinberg LANTIME IMS-HPS
     topicUid: Connector_help_Meinberg_LANTIME_IMS-HPS
   - name: Meinberg LANTIME IMS-HPS - PTPv2 Instance
@@ -5326,12 +5454,18 @@
     topicUid: Connector_help_Meinberg_LANTIME_IMS-LNO
   - name: Meinberg LANTIME IMS-LNO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-LNO_API_V10
+  - name: Meinberg LANTIME IMS-LSG API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-LSG_API_V17
   - name: Meinberg LANTIME IMS-MRI
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI
   - name: Meinberg LANTIME IMS-MRI API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-MRI_API_V10
   - name: Meinberg LANTIME IMS-PIO API V10
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10
+  - name: Meinberg LANTIME IMS-PSX API V17
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17
+  - name: Meinberg LANTIME IMS-PSX API V17 - PTPv2 Instance
+    topicUid: Connector_help_Meinberg_LANTIME_IMS-PSX_API_V17_-_PTPv2_Instance
   - name: Meinberg LANTIME IMS-PZF
     topicUid: Connector_help_Meinberg_LANTIME_IMS-PZF
   - name: Meinberg LANTIME IMS-PZF API V10
@@ -5384,6 +5518,10 @@
   items:
   - name: Mellanox Technologies MLNX-OS Manager
     topicUid: Connector_help_Mellanox_Technologies_MLNX-OS_Manager
+- name: META
+  items:
+  - name: META WhatsApp Messaging
+    topicUid: Connector_help_META_WhatsApp_Messaging
 - name: Metaswitch
   items:
   - name: Metaswitch MetaView Explorer
@@ -5410,6 +5548,11 @@
     topicUid: Connector_help_Microsoft_Azure_-_Cosmos_DB_Accounts
   - name: Microsoft Azure - Disks
     topicUid: Connector_help_Microsoft_Azure_-_Disks
+  - name: Microsoft Azure - File Pusher
+    topicUid: Connector_help_Microsoft_Azure_-_File_Pusher
+    items:
+      - name: Microsoft Azure - File Pusher Technical
+        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
   - name: Microsoft Azure - Kubernetes Services
     topicUid: Connector_help_Microsoft_Azure_-_Kubernetes_Services
   - name: Microsoft Azure - Load Balancers
@@ -5424,6 +5567,8 @@
     topicUid: Connector_help_Microsoft_Azure_-_Virtual_Machines
   - name: Microsoft Azure - VM Scale Sets
     topicUid: Connector_help_Microsoft_Azure_-_VM_Scale_Sets
+  - name: Microsoft Azure DevOps
+    topicUid: Connector_help_Microsoft_Azure_DevOps
   - name: Microsoft DHCP Server
     topicUid: Connector_help_Microsoft_DHCP_Server
   - name: Microsoft DNS
@@ -5988,6 +6133,8 @@
     topicUid: Connector_help_NetInsight_Nimbra_VA
 - name: Netscout
   items:
+  - name: Netscout Arbor Sightline
+    topicUid: Connector_help_Netscout_Arbor_Sightline
   - name: Netscout VSS vBroker
     topicUid: Connector_help_Netscout_VSS_vBroker
 - name: NetSure
@@ -6192,6 +6339,8 @@
     topicUid: Connector_help_Nevion_Virtuoso_FA
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
+  - name: Nevion Virtuoso RE
+    topicUid: Connector_help_Nevion_Virtuoso_RE
 - name: Newtec
   items:
   - name: Newtec 2137
@@ -6228,6 +6377,8 @@
     topicUid: Connector_help_Newtec_AZ860_Deconcentrator
   - name: Newtec Dialog Platform VSAT
     topicUid: Connector_help_Newtec_Dialog_Platform_VSAT
+  - name: Newtec Dialog Infrastructure
+    topicUid: Connector_help_Newtec_Dialog_Infrastructure
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
   - name: Newtec Dialog Time Series Database - Network
@@ -6334,6 +6485,8 @@
     topicUid: Connector_help_Nokia_OMS_1350_-_USRPNL
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
+  - name: Nokia WaveLite
+    topicUid: Connector_help_Nokia_WaveLite
 - name: Norkring
   items:
   - name: Norkring AS Bricknet
@@ -6378,6 +6531,8 @@
     topicUid: Connector_help_Novelsat_NS2000
   - name: Novelsat NS3000
     topicUid: Connector_help_Novelsat_NS3000
+  - name: Novelsat Xstream
+    topicUid: Connector_help_Novelsat_Xstream
 - name: Novotronik
   items:
   - name: Novotronik GTS191x
@@ -6400,6 +6555,10 @@
     topicUid: Connector_help_NPC_System_ACU550
   - name: NPC System DTR500
     topicUid: Connector_help_NPC_System_DTR500
+- name: NTI
+  items:
+  - name: NTI ENVIROMUX MINI LXO
+    topicUid: Connector_help_NTI_ENVIROMUX_MINI_LXO
 - name: NTP
   items:
   - name: NTP RCP
@@ -6430,6 +6589,10 @@
   items:
   - name: Nutanix Prism
     topicUid: Connector_help_Nutanix_Prism
+- name: NVIDIA
+  items:
+  - name: NVIDIA Onyx Manager
+    topicUid: Connector_help_NVIDIA_Onyx_Manager
 - name: Ocean Controls
   items:
   - name: Ocean Controls KTA-282 Weather Station Gateway
@@ -6476,6 +6639,8 @@
     topicUid: Connector_help_OneWeb_Antenna_Controller
   - name: OneWeb Incident Manager
     topicUid: Connector_help_OneWeb_Incident_Manager
+  - name: OneWeb PCN Collector
+    topicUid: Connector_help_OneWeb_PCN_Collector
 - name: Ooredoo
   items:
   - name: Ooredoo Messenger
@@ -6510,6 +6675,12 @@
     topicUid: Connector_help_OpenStack_Manager
   - name: OpenStack Manager - Project
     topicUid: Connector_help_OpenStack_Manager_-_Project
+- name: OpenTelemetry
+  items:
+  - name: OpenTelemetry Collector
+    topicUid: Connector_help_OpenTelemetry_Collector
+  - name: OpenTelemetry Generic Log Receiver
+    topicUid: Connector_help_OpenTelemetry_Generic_Log_Receiver
 - name: Opsview
   items:
   - name: Opsview Opsview
@@ -6532,6 +6703,10 @@
     topicUid: Connector_help_Oracle_Database_Node
   - name: Oracle DIVArchive
     topicUid: Connector_help_Oracle_DIVArchive
+- name: Orange
+  items:
+  - name: Orange Orion
+    topicUid: Connector_help_Orange_Orion
 - name: Orban
   items:
   - name: Orban Optimod 8685
@@ -6572,6 +6747,8 @@
   items:
   - name: Ovzon Control Terminal
     topicUid: Connector_help_Ovzon_Control_Terminal
+  - name: Ovzon OBP Spectrum
+    topicUid: Connector_help_Ovzon_OBP_Spectrum
 - name: PacketLight
   items:
   - name: PacketLight PL-1000IL
@@ -6666,12 +6843,16 @@
     topicUid: Connector_help_Peak_Communications_IBDH-XXXX
   - name: Peak Communications IBUH-137
     topicUid: Connector_help_Peak_Communications_IBUH-137
+  - name: Peak Communications ISUxH Series
+    topicUid: Connector_help_Peak_Communications_ISUxH_Series
   - name: Peak Communications P7000 SNMP
     topicUid: Connector_help_Peak_Communications_P7000_SNMP
   - name: Peak Communications PBU137
     topicUid: Connector_help_Peak_Communications_PBU137
   - name: Peak Communications PTR50
     topicUid: Connector_help_Peak_Communications_PTR50
+  - name: Peak Communications RCU H100
+    topicUid: Connector_help_Peak_Communications_RCU_H100
   - name: Peak Communications RCU100 SNMP
     topicUid: Connector_help_Peak_Communications_RCU100_SNMP
   - name: Peak Communications RCUH200
@@ -6788,6 +6969,10 @@
     topicUid: Connector_help_Proximus_Airing_Manager
   - name: Proximus Unicast RTCP Collector
     topicUid: Connector_help_Proximus_Unicast_RTCP_Collector
+- name: PTF
+  items:
+  - name: PTF 3207a
+    topicUid: Connector_help_PTF_3207a
 - name: Pure Storage
   items:
   - name: Pure Storage FlashArray
@@ -6872,6 +7057,8 @@
     topicUid: Connector_help_Raritan_Dominion_KX
   - name: Raritan Dominion PXG2
     topicUid: Connector_help_Raritan_Dominion_PXG2
+  - name: Raritan Xerus Platform
+    topicUid: Connector_help_Raritan_Xerus_Platform
 - name: RCI
   items:
   - name: RCI RC2000
@@ -7008,6 +7195,8 @@
   items:
   - name: Robustel R2000
     topicUid: Connector_help_Robustel_R2000
+  - name: Robustel R2011
+    topicUid: Connector_help_Robustel_R2011
 - name: Rogers Communications
   items:
   - name: Rogers Communications Juniper CSV Importer
@@ -7332,6 +7521,8 @@
     topicUid: Connector_help_SatService_sat-nms_MNC_-_Weather_Monitors
 - name: ScheduAll
   items:
+  - name: ScheduAll Generic Interop Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
@@ -7526,6 +7717,8 @@
     topicUid: Connector_help_ServiceHeroes_ServiceHighway
 - name: ServiceNow
   items:
+  - name: ServiceNow Authenticator
+    topicUid: Connector_help_ServiceNow_Authenticator
   - name: ServiceNow Tables
     topicUid: Connector_help_ServiceNow_Tables
 - name: SES
@@ -7586,12 +7779,16 @@
   items:
   - name: Shelly Bulb RGBW
     topicUid: Connector_help_Shelly_Bulb_RGBW
+  - name: Shelly Pro 1PM
+    topicUid: Connector_help_Shelly_Pro_1PM
 - name: SIAE
   items:
   - name: SIAE Microwave Trunklink
     topicUid: Connector_help_SIAE_Microwave_Trunklink
 - name: Siemens
   items:
+  - name: Siemens Desigo CC
+    topicUid: Connector_help_Siemens_Desigo_CC
   - name: Siemens Netviewer
     topicUid: Connector_help_Siemens_Netviewer
   - name: Siemens Sentron PAC3200
@@ -7606,6 +7803,8 @@
     topicUid: Connector_help_Singtel_ANTlabs_Tru_Auth_Radius
   - name: SingTel Event Manager
     topicUid: Connector_help_SingTel_Event_Manager
+  - name: Singtel Events Ingest Manager
+    topicUid: Connector_help_SingTel_Events_Ingest_Manager
   - name: SingTel ForeTV CMS Generator
     topicUid: Connector_help_SingTel_ForeTV_CMS_Generator
   - name: SingTel ForeTV Event Manager
@@ -7702,10 +7901,14 @@
     topicUid: Connector_help_Sky_UK_VICC
   - name: Sky UK Watershed Alarming Workflow
     topicUid: Connector_help_Sky_UK_Watershed_Alarming_Workflow
+  - name: Sky Unsolicited Message Processor
+    topicUid: Connector_help_Sky_Unsolicited_Message_Processor
 - name: Skyline
   items:
   - name: Skyline Automation Performance Monitor
     topicUid: Connector_help_Skyline_Automation_Performance_Monitor
+  - name: Skyline Availability Platform
+    topicUid: Connector_help_Skyline_Availability_Platform
   - name: Skyline Basic SDN Controller
     topicUid: Connector_help_Skyline_Basic_SDN_Controller
   - name: Skyline Bookings Monitoring
@@ -7750,6 +7953,8 @@
     topicUid: Connector_help_Skyline_DMP_Replication
   - name: Skyline DMP Replication Umbrella
     topicUid: Connector_help_Skyline_DMP_Replication_Umbrella
+  - name: Skyline DOM Backup Manager
+    topicUid: Connector_help_Skyline_DOM_Backup_Manager
   - name: Skyline Driver Passport Health Check
     topicUid: Connector_help_Skyline_Driver_Passport_Health_Check
   - name: Skyline Driver Passport Platform
@@ -7760,6 +7965,8 @@
     topicUid: Connector_help_Skyline_Enhanced_Service
   - name: Skyline EPM Platform
     topicUid: Connector_help_Skyline_EPM_Platform
+  - name: Skyline EPM Platform Availability
+    topicUid: Connector_help_Skyline_EPM_Platform_Availability
   - name: Skyline EPM Platform DOCSIS
     topicUid: Connector_help_Skyline_EPM_Platform_DOCSIS
   - name: Skyline EPM Platform DOCSIS WM
@@ -7774,6 +7981,12 @@
     topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM
   - name: Skyline EPM Platform PLM
     topicUid: Connector_help_Skyline_EPM_Platform_PLM
+  - name: Skyline EPM Platform VSAT DSM SO
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
+  - name: Skyline EPM Platform VSAT GEO
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
+  - name: Skyline EVS Cerebrum Performance Monitor
+    topicUid: Connector_help_Skyline_EVS_Cerebrum_Performance_Monitor
   - name: Skyline Example Serial Client Advanced
     topicUid: Connector_help_Skyline_Example_Serial_Client_Advanced
   - name: Skyline Example Serial Client Basic
@@ -8092,6 +8305,8 @@
     topicUid: Connector_help_Sony_CNA-1_-_CCU
   - name: Sony CNA-1 - RCP
     topicUid: Connector_help_Sony_CNA-1_-_RCP
+  - name: Sony CNA-2
+    topicUid: Connector_help_Sony_CNA-2
   - name: Sony HDCU-3000 Series
     topicUid: Connector_help_Sony_HDCU-3000_Series
   - name: Sony Location Manager
@@ -8102,6 +8317,8 @@
     topicUid: Connector_help_Sony_MKS-R4020
   - name: Sony MKS Remote Control Panel
     topicUid: Connector_help_Sony_MKS_Remote_Control_Panel
+  - name: Sony MLS-X1
+    topicUid: Connector_help_Sony_MLS-X1
   - name: Sony MSU-3000 Series
     topicUid: Connector_help_Sony_MSU-3000_Series
   - name: Sony NMI Device
@@ -8162,6 +8379,8 @@
     topicUid: Connector_help_SpacePath_Communications_N6143_Controller_Series
   - name: SpacePath Communications SPC1100
     topicUid: Connector_help_SpacePath_Communications_SPC1100
+  - name: SpacePath Communications STA5000 Series
+    topicUid: Connector_help_SpacePath_Communications_STA5000_Series
   - name: SpacePath Communications STx Series
     topicUid: Connector_help_SpacePath_Communications_STx_Series
 - name: Specialty Microwave Corp
@@ -8278,6 +8497,12 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+  - name: Starlink Enterprise - User Terminal
+    topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
+- name: Stormshield
+  items:
+  - name: Stormshield Network Security S-Series
+    topicUid: Connector_help_Stormshield_Network_Security_S-Series
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
@@ -8510,6 +8735,8 @@
     topicUid: Connector_help_TDF_ENERGIE_ALLYSS
   - name: TDF ENERGIE TBOX
     topicUid: Connector_help_TDF_ENERGIE_TBOX
+  - name: TDF EPM Manager
+    topicUid: Connector_help_TDF_EPM_Manager
   - name: TDF GE TBOX
     topicUid: Connector_help_TDF_GE_TBOX
   - name: TDF Helios Database
@@ -8634,6 +8861,8 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Sapiens_Offload
   - name: Telefonia por Cable S.A de C.V. SPA CPE Indexer
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
+  - name: Telefonia por Cable S.A de C.V. Ticketing WM
+    topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM
   - name: Telefonia por Cable S.A de C.V. Topology Aggregator
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Topology_Aggregator
 - name: Telefonica
@@ -8690,6 +8919,8 @@
     topicUid: Connector_help_Telenor_BCDB_Multiviewer_Manager
   - name: Telenor Channel Correlation Service Protocol
     topicUid: Connector_help_Telenor_Channel_Correlation_Service_Protocol
+  - name: Telenor Cisco CBR-8 Video Platform
+    topicUid: Connector_help_Telenor_Cisco_CBR-8_Video_Platform
   - name: Telenor CMDB Provisioning
     topicUid: Connector_help_Telenor_CMDB_Provisioning
   - name: Telenor Common Onboarding Instances
@@ -8808,6 +9039,9 @@
     topicUid: Connector_help_Teleste_EMS
   - name: Teleste HDC100 TSEMP
     topicUid: Connector_help_Teleste_HDC100_TSEMP
+    items:
+      - name: Teleste HDC100 TSEMP Technical
+        topicUid: Connector_help_Teleste_HDC100_TSEMP_Technical
   - name: Teleste HDC100 TSEMP - HDO101
     topicUid: Connector_help_Teleste_HDC100_TSEMP_-_HDO101
   - name: Teleste HDC100 TSEMP - HDO202
@@ -8914,6 +9148,8 @@
   items:
   - name: Telestream Inspect 2110
     topicUid: Connector_help_Telestream_Inspect_2110
+  - name: Telestream Lightspeed Live Stream
+    topicUid: Connector_help_Telestream_Lightspeed_Live_Stream
   - name: Telestream OptiQ
     topicUid: Connector_help_Telestream_OptiQ
   - name: Telestream SPG9000
@@ -9310,6 +9546,8 @@
     topicUid: Connector_help_Vertex_7200
   - name: ACU Vertex 7200 DTR
     topicUid: Connector_help_ACU_Vertex_7200_DTR
+  - name: Vertex BRK-1201
+    topicUid: Connector_help_Vertex_BRK-1201 
   - name: Vertex DTR
     topicUid: Connector_help_Vertex_DTR
   - name: Vertex LRx-1201-xx
@@ -9372,6 +9610,8 @@
     topicUid: Connector_help_Viavi_Solutions_ONMSi
   - name: Viavi Solutions VSA Streamer
     topicUid: Connector_help_Viavi_Solutions_VSA_Streamer
+  - name: Viavi Solutions XPERTrak
+    topicUid: Connector_help_Viavi_Solutions_XPERTrak
 - name: Victron
   items:
   - name: Victron UPS
@@ -9454,6 +9694,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Channel_Management
   - name: Vodafone Kabel Deutschland GmbH DAVE DB
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DAVE_DB
+  - name: Vodafone Kabel Deutschland GmbH Descrambling Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service
   - name: Vodafone Kabel Deutschland GmbH DVB-T2 Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
   - name: Vodafone Kabel Deutschland GmbH IP GW Service
@@ -9474,6 +9716,8 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service
   - name: Vodafone Kabel Deutschland GmbH SAT DL Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SAT_DL_Service
+  - name: Vodafone Kabel Deutschland GmbH SI Stream Mapping
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
   - name: Vodafone Kabel Deutschland GmbH Site Switchover
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
@@ -9762,6 +10006,12 @@
     topicUid: Connector_help_Zenoss_Database
   - name: Zenoss Database - Element
     topicUid: Connector_help_Zenoss_Database_-_Element
+- name: ZDF
+  items:
+  - name: ZDF BFE KSC Core
+    topicUid: Connector_help_ZDF_BFE_KSC_Core
+  - name: ZDF Bluestream Live
+    topicUid: Connector_help_ZDF_Bluestream_Live
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
@@ -9836,6 +10086,10 @@
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
   - name: ZTE ZXDU
     topicUid: Connector_help_ZTE_ZXDU
+  - name: ZTE ZXDUPA-BCUA
+    topicUid: Connector_help_ZTE_ZXDUPA-BCUA
+  - name: ZTE ZXONE 9700
+    topicUid: Connector_help_ZTE_ZXONE_9700
   - name: ZTE ZXR10 2900E Series
     topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900

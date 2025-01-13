@@ -23,14 +23,14 @@ This connector uses a **TCP/IP** connection in order to retrieve and configure t
 
 ### Product Info
 
-| Range     | Supported Firmware                |
-|-----------|-----------------------------------|
-| 1.0.0.x   | -                                 |
-| 1.0.1.x   | -                                 |
-| 2.0.0.x   | RRCS Version: 6.90.RR5            |
-| 2.0.1.x   | RRCS Version: 6.90.RR5 and higher |
-| 2.0.2.x   | RRCS Version: 7.40.RR5 and higher |
-| 3.0.0.x   | RRCS Version: 6.90.RR5            |
+| Range     | Supported Firmware                  |
+|-----------|-------------------------------------|
+| 1.0.0.x   | -                                   |
+| 1.0.1.x   | -                                   |
+| 2.0.0.x   | RRCS Version: 6.90.RR5              |
+| 2.0.1.x   | RRCS Version: 6.90.RR5 and higher   |
+| 2.0.2.x   | RRCS Version: 8.40.RR5 to 8.50.RR5  |
+| 3.0.0.x   | RRCS Version: 6.90.RR5              |
 
 ## Configuration
 

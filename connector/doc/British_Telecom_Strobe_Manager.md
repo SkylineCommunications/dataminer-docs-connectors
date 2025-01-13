@@ -14,11 +14,11 @@ It is important that this connector is used in combination with the **Visio draw
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                    | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                                                                    | -            | -                 |
-| 2.0.0.x [Obsolete]     |Strobe Manager 2.0: Workflow with IneoQuest Inspector Live and CISCO Nexus devices. | -            | -                 |
-| 2.0.1.x [SLC Main]   | Decoupled MIP tables for Static Joins Interface 1 and Interface 2 tables.           | -            | -                 |
+| Range              | Key Features                                                                        | Based on | System Impact |
+|--------------------|-------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                                    | -        | -             |
+| 2.0.0.x [Obsolete] | Strobe Manager 2.0: Workflow with IneoQuest Inspector Live and CISCO Nexus devices. | -        | -             |
+| 2.0.1.x [SLC Main] | Decoupled MIP tables for Static Joins Interface 1 and Interface 2 tables.           | -        | -             |
 
 ### System Info
 

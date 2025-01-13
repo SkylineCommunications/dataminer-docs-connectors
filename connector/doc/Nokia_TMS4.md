@@ -12,7 +12,7 @@ The purpose of this connector is to provide the capability to listen to printed 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
+| Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]     |Initial version. Processes incoming serial alarms. | -            | -                 |
 | 1.0.1.x [SLC Main]   | Fixed some parameter descriptions.                 | 1.0.0.x      | -                 |

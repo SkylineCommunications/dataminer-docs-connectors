@@ -18,22 +18,22 @@ The devices and alarms are retrieved using the **RESTful HTTP Web Service API** 
 
 ### Version Info
 
-| **Range** | **Description**                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                               | No                  | Yes                     |
-| 2.0.0.x          | Alarms are received on port instead of via polling. Possibility to get devices from CSV file. | No                  | Yes                     |
+| Range   | Description                                                                                   | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                                                               | No              | Yes                 |
+| 2.0.0.x | Alarms are received on port instead of via polling. Possibility to get devices from CSV file. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 10.0                        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 10.0                       |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**       |
-|-----------------------|-----------------------|
-| CA Spectrum Device    | Device in CA Spectrum |
+| Exported Connector | Description           |
+|--------------------|-----------------------|
+| CA Spectrum Device | Device in CA Spectrum |
 
 ## Installation and configuration
 

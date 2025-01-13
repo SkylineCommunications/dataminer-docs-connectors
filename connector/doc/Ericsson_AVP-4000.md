@@ -14,7 +14,7 @@ Range 2.0.0.x contains the most important or requested parameters, but not every
 
 ### Version Info
 
-| **Range** | **Description**                                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                        | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version (deprecated)                                        | No                  | Yes                     |
 | 2.0.0.x          | Revised version (based on the AVP-2000 3.0.0.3)                     | Yes                 | Yes                     |
