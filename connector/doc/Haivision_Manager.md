@@ -24,7 +24,7 @@ The Haivision Manager connector facilitates integration with Haivision's video s
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | No                  | -                 | -                   |
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
