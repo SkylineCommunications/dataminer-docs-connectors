@@ -8883,6 +8883,8 @@
     topicUid: Connector_help_Telenet_CPE_Manager
   - name: Telenet eMTA Collector
     topicUid: Connector_help_Telenet_eMTA_Collector
+  - name: Telenet Eos XAP
+    topicUid: Connector_help_Telenet_Eos_XAP
   - name: Telenet EPM Platform FTTH WM
     topicUid: Connector_help_Telenet_EPM_Platform_FTTH_WM
   - name: Telenet Frontend Inform Sender
