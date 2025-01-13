@@ -10,7 +10,7 @@ The TSI via T2S ETH connector allows you to monitor a TSI inverter with up to 32
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial development | -            | -                 |
 

@@ -10,10 +10,11 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 
 ### Version Info
 
-| **Range** | **Key Features**                                | **Based on** | **System Impact** |
-|-----------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                 | -            | -                 |
-| 1.0.1.x   | Display traps in a table. Lookup functionality. | -            | -                 |
+| Range              | Key Features                                    | Based on | System Impact |
+|--------------------|-------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version                                 | -        | -             |
+| 1.0.1.x            | Display traps in a table. Lookup functionality. | -        | -             |
+| 1.0.2.x [SLC Main] | Display trap bindings in a table.               | -        | -             |
 
 ### Product Info
 
@@ -21,6 +22,7 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 |-----------|------------------------|
 | 1.0.0.x   | N/A                    |
 | 1.0.1.x   | N/A                    |
+| 1.0.2.x   | N/A                    |
 
 ### System Info
 
@@ -28,6 +30,7 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | No                      | -                     | -                       |
 | 1.0.1.x   | No                  | No                      | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

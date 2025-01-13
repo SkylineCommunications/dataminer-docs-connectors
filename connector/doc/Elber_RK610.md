@@ -12,10 +12,10 @@ This connector exports connectors of type RFSW04A and creates elements for each 
 
 ### Version Info
 
-| **Range** | **Description**              | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version              | No                  | Yes                     |
-| 1.0.1.x          | Update DVE removal mechanism | No                  | Yes                     |
+| Range   | Description                  | DCF Integration | Cassandra Compliant |
+|---------|------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version              | No              | Yes                 |
+| 1.0.1.x | Update DVE removal mechanism | No              | Yes                 |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This connector exports connectors of type RFSW04A and creates elements for each 
 
 ### Exported connectors
 
-| **Exported Connector**  | **Description**              |
+| Exported Connector     | Description                  |
 |------------------------|------------------------------|
 | Elber RK1000 - RFSW04A | Used for the RFSW04A module. |
 

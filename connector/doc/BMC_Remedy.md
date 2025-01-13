@@ -16,11 +16,11 @@ This connector is used in conjunction with an Automation script to create and up
 
 Ranges of the connector
 
-| **Range** | **Description**                          | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                          | No                  | Yes                     |
-| 2.0.0.x          | Branch version based on 1.0.0.x          | No                  | Yes                     |
-| 3.0.0.x          | Initial version for 3.0.0.x requirements | No                  | Yes                     |
+| Range   | Description                              | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                          | No              | Yes                 |
+| 2.0.0.x | Branch version based on 1.0.0.x          | No              | Yes                 |
+| 3.0.0.x | Initial version for 3.0.0.x requirements | No              | Yes                 |
 
 ## Installation and configuration
 

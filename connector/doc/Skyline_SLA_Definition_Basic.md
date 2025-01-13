@@ -135,7 +135,3 @@ This page contains a parameter that can be picked up by an Automation script to 
 ### Offline window
 
 On this page, a window can be configured when the SLA is offline.
-
-## Notes
-
-The "SLSLAOutageConfiguration.dll" dll must be placed in the same folder as the "protocol.xml" file, e.g. "*C:\Skyline DataMiner\Protocols\Skyline SLA Definition Basic\1.1.0.10*".

@@ -18,24 +18,24 @@ It uses a serial connection to monitor the state of the HPA itself and to contro
 
 ### Version Info
 
-| **Range** | **Key Features**                                 | **Based on** | **System Impact** |
-|-----------|--------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                  | -            | -                 |
-| 1.1.0.x   | New firmware that uses variable response lengths | -            | -                 |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.1.0.x | New firmware that uses variable response lengths | - | - |
 
 ### Product Info
 
-| Range     | Supported Firmware                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Front Panel Boost Kernel Software Version: 03.00.13 Front Panel Main Program Software Version: 03.01.72 Power Supply Boot Kernel Software Version: 03.00.03 Power Supply Main Program Software Version: 03.01.34 RF Controller Boot Kernel Software Version: 03.00.03 RF Controller Main Program Software Version: 03.01.42 Ext Interface Boot Kernel Software Version: 03.00.03 Ext Interface Main Program Software Version: 03.01.54 Can Communication Level Key: 03.01.22 ID Version: GEN4 2003 |
-| 1.1.0.x   | Front Panel Main Program Software Version: 03.01.85 Power Supply Main Program Software Version: 03.01.40 RF Controller Main Program Software Version: 03.01.46 Ext Interface Main Program Software Version: 03.01.62                                                                                                                                                                                                                                                                               |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | Front Panel Boost Kernel Software Version: 03.00.13 Front Panel Main Program Software Version: 03.01.72 Power Supply Boot Kernel Software Version: 03.00.03 Power Supply Main Program Software Version: 03.01.34 RF Controller Boot Kernel Software Version: 03.00.03 RF Controller Main Program Software Version: 03.01.42 Ext Interface Boot Kernel Software Version: 03.00.03 Ext Interface Main Program Software Version: 03.01.54 Can Communication Level Key: 03.01.22 ID Version: GEN4 2003 |
+| 1.1.0.x | Front Panel Main Program Software Version: 03.01.85 Power Supply Main Program Software Version: 03.01.40 RF Controller Main Program Software Version: 03.01.46 Ext Interface Main Program Software Version: 03.01.62 |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.1.0.x | No | Yes | - | - |
 
 ## Configuration
 
@@ -48,7 +48,9 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+
 - **IP port**: The port of the connected device.
+
 - **Bus address**: The bus address of the connected device's relay processor, ranging from *17* up to and including *255*.
 
 ### Web Interface
@@ -60,7 +62,11 @@ The web interface is only accessible when the client machine has network access 
 The element consists of the following data pages:
 
 - **General**: Displays system information and information about software versions.
+
 - **Measurements**: Displays the values for the current, voltage, power, UPC information, and temperature.
+
 - **Switch Controller**: Displays information about Switch Position and Switch Controller amplifier channels.
+
 - **Settings**: Contains configurable parameters, such as time and amplifier settings.
+
 - **Alarms**: Displays the alarm status for all monitored parameters. Subpages are available with more specific alarm information.

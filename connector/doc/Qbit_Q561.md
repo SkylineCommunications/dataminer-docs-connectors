@@ -14,7 +14,7 @@ Note that any upgrade to the current range 1.1.0.x will cause the loss of all hi
 
 ### Version Info
 
-| **Range** | **Description**      | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description          | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version      | No                  | Yes                     |
 | 1.1.0.x          | New firmware version | Yes                 | Yes                     |

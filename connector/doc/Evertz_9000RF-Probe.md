@@ -38,25 +38,34 @@ SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *161*).
-- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
+#### SNMP traps
+
+The connector also receives traps from the device, and it will repoll the RF inputs and channels for the received traps.
+
 ## How to use
 
-This connector communicates with the 9000RF-Probe device via SNMP, and it can export DVEs for each of the RF Inputs.
+This connector communicates with the 9000RF-Probe device via SNMP, and it can export DVEs for each of the RF inputs. To enable DVE creation, select the **Enable DVE child creation** checkbox in the advanced element settings.
+
+### On Startup
+
+The connector starts up by polling the list of available channels for the channel polling manager. The RF Tune, RF Status, and Transport Stream Status tables will initially be empty because polling is disabled by default for all channels.
 
 The following data pages are available in the main element:
 
-- **General**: Displays general system info for the device, including its type and features.
+- **General/System**: Displays general and system info for the device, including system features, system products, system security, system faults, and system license.
 
-- **Data Ports**: Contains the Data Port, SFP, and IP tables, which are related to the communication settings of the device. We recommend updating this info from the device's web interface.
+- **Data Ports/SFP/IP**: Contains the Data Port, SFP, and IP tables, which are related to the communication settings of the device. We recommend updating this info from the device's web interface.
 
-- **RF Inputs**: Contains the details of the RF Probe Inputs and Channels. In the *RF Configuration* Table, the *Device DVE* setting allows generation of DVEs based on the RF Input.
+- **RF Inputs/RF Configuration**: Contains the data and settings of the RF Probe inputs and channels. The monitoring and alarming of the data from the RF Inputs and channels occur here.
 
-- **Channel Polling Manager**: This page allows the enabling or disabling of polling for certain channels. This can be used to disable polling for channels that are not in use.
+- **DVE Manager/Channel Polling Manager**: Allows the enabling or disabling of polling for certain channels. We recommend disabling the polling for channels that are not in use. Using the **Disable All Polling** and **Enable All Polling** options, you can disable or enable polling for all channels at once. DVEs can also be created via the DVE Manager, which will create an element for the specific RF input to enable better visualization and monitoring of data.
 
-- **Traps**: This page lists the received traps from the device.
+### Maintenance Windows
+
+During maintenance windows, traps can be sent very frequently for channels under maintenance, which can cause excessive polling of data in the tables. To prevent this, we recommend **disabling polling** on the channels undergoing maintenance (on the Channel Polling Manager page).

@@ -12,7 +12,7 @@ This HTTP connector is used to monitor and configure the Ciena Blue Planet domai
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
+| Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Alarms, Network Elements and Equipment are listed. | -            | -                 |
 

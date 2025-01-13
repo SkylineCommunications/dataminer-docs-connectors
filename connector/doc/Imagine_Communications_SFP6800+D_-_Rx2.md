@@ -2,7 +2,7 @@
 uid: Connector_help_Imagine_Communications_SFP6800+D_-_Rx2
 ---
 
-Imagine Communications SFP6800+D - Rx2
+# Imagine Communications SFP6800+D - Rx2
 
 This connector can be used to view information and configure settings of **Rx2 cards** connected to the Imagine Communications SFP6800+D Chassis. This includes information regarding HDMI, CMPST, Electrical, Optical and Alarming (Signal Loss of SFP) of the Rx2 cage.
 

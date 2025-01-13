@@ -12,7 +12,7 @@ The connector monitors the **Thales TDU21K50** device. For each exciter present 
 
 ### Version Info
 
-| **Range** | **Description**                                                 | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                     | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                | No                  | Yes                     |
 | 1.1.0.x          | MIB update and support for different exciter modes implemented. | No                  | Yes                     |

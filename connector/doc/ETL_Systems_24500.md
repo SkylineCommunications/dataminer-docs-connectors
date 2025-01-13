@@ -12,7 +12,7 @@ This connector uses **SNMP** to enable the configuration of the **ETL Systems 24
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

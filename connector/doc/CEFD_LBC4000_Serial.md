@@ -14,7 +14,7 @@ The different parameters of the device are displayed on multiple pages, similar 
 
 ### Version Info
 
-| **Range** | **Description**      | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description          | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version      | Yes                 | Yes                     |
 | 2.0.0.x          | Protocol name change | Yes                 | Yes                     |

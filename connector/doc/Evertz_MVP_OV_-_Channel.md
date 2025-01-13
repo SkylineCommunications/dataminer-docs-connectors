@@ -12,7 +12,7 @@ This protocol is created by the **Evertz MVP OV** connector. For each bus addres
 
 ### Version Info
 
-| **Range** | **Description**                                                                            | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                               | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | SNMP set not working                                                                       |                     |                         |
 | 2.0.0.x          | Use of DVEs for each bus address instead of using the bus address to look at a single channel | -                   | -                       |

@@ -12,7 +12,7 @@ This connector will fetch and process specific emails. According to the email, a
 
 ### Version Info
 
-| **Range**            | **Key Features**                              | **Based on** | **System Impact** |
+| Range              | Key Features                                | Based on   | System Impact   |
 |----------------------|-----------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Integrates mail processing into SAM's system. | -            | -                 |
 

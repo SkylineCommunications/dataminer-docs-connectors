@@ -12,7 +12,7 @@ This connector can be used to monitor **Molden Media vizSecure**-enabled devices
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

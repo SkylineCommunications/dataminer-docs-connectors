@@ -14,7 +14,7 @@ This connector will create **dynamic virtual elements** for each managed element
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                             | Yes                 | Yes                     |
 | 1.0.1.x          | DVEs are now generated on a per shelf basis | Yes                 | Yes                     |
