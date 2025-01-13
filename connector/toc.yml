@@ -9640,6 +9640,8 @@
     topicUid: Connector_help_WISI_Tangram_GT31
   - name: WISI Tangram GT41
     topicUid: Connector_help_WISI_Tangram_GT41
+  - name: WISI Tangram GT24
+    topicUid: Connector_help_WISI_Tangram_GT24
 - name: Witbe
   items:
   - name: Witbe Experience Center
