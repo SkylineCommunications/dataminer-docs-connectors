@@ -41,7 +41,8 @@ Serial Connection:
 
 Serial Settings:
 
-- **Port number**: The port of the connected device*.*
+- **Port number**: The port of the connected device. Default port: 5060
+- **Type of port**: UDP/IP
 
 ## Usage
 
