@@ -19,13 +19,13 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 
 ### Version Info
 
-| Range   | Description                                        | DCF Integration | Cassandra Compliant |
-|---------|----------------------------------------------------|-----------------|---------------------|
-| 1.0.0.x | Initial version                                    | No              | Yes                 |
-| 1.0.1.x | Adaptation to new SoW                              | No              | Yes                 |
-| 1.0.2.x | Primary key is based on rowkey from change request | No              | Yes                 |
-| 1.0.3.x | Driver rework to fix traps and DVEs implementation | No              | Yes                 |
-| 2.0.0.x | EPM compatible                                     | No              | Yes                 |
+| Range   | Description                                             | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                         | No              | Yes                 |
+| 1.0.1.x | Adaptation to new SoW                                   | No              | Yes                 |
+| 1.0.2.x | Primary key is based on rowkey from change request      | No              | Yes                 |
+| 1.0.3.x | Connector reworked to fix traps and DVEs implementation | No              | Yes                 |
+| 2.0.0.x | EPM compatible                                          | No              | Yes                 |
 
 ### Product Info
 
@@ -181,13 +181,13 @@ The **primary key** of the traps table is obtained by concatenating the **Servic
 
 ## Usage (1.0.3.1)
 
-### General
+### General Page
 
-The Device Elements Table implements a context menu for adding Devices to be monitored.
+With the context menu in the Device Elements Table, you can add devices to be monitored.
 
 ### Configuration Page
 
-Source IP needs to be manually configured; this IP address is the IP of the host DMA. This is required for sending traps to the Aviat Networks Provision device and informs the device which IP to reply.
+The Source IP needs to be configured manually. This IP address is the IP of the host DMA. This is required for sending traps to the Aviat Networks Provision device. It informs the device of which IP to reply to.
 
 ## Usage (2.0.0.X)
 
