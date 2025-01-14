@@ -74,4 +74,4 @@ This page contains all the configuration General Information such as the **Ether
 
 ### Device Overview
 
-This page shows the **Devices Table** which contains all the Devices present on the current configuration along with their most important parameters. It also displays the **Overall Polling Status** and the **Polling Steps** parameters. The **DVE Overview** subpage contains the **B30**, **I60**, **U30**, **S130 DVEs** and **U10 DVEs** Tables, where the created DVEs will be displayed. It also shows the **Automatic Delete Missing Devices** button that will automatically removed the deleted devices.
+This page shows the **Devices Table** which contains all the Devices present on the current configuration along with their most important parameters. It also displays the **Overall Polling Status** and the **Polling Steps** parameters. The **DVE Overview** subpage contains the **B30**, **I60**, **U30**, **S130** and **U10 DVEs** Tables, where the created DVEs will be displayed. It also shows the **Automatic Delete Missing Devices** button that will automatically removed the deleted devices.
