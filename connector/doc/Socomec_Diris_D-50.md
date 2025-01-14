@@ -35,6 +35,8 @@ The DIRIS Digiware D-50 is a master device on the RS485 bus and master on the DI
 | Socomec Diris D-50 - B-30 | Power Monitoring Device    |
 | Socomec Diris D-50 - I-60 | Current Measurement Module |
 | Socomec Diris D-50 - U-30 | Voltage Measurement Module |
+| Socomec Diris D-50 - S-130 | Current Measurement Module |
+| Socomec Diris D-50 - U-10 | Current Measurement Module |
 
 ## Installation and configuration
 
@@ -72,4 +74,4 @@ This page contains all the configuration General Information such as the **Ether
 
 ### Device Overview
 
-This page shows the **Devices Table** which contains all the Devices present on the current configuration along with their most important parameters. It also displays the **Overall Polling Status** and the **Polling Steps** parameters. The **DVE Overview** subpage contains the **B30**, **I60** and **U30 DVEs** Tables, where the created DVEs will be displayed. It also shows the **Automatic Delete Missing Devices** button that will automatically removed the deleted devices.
+This page shows the **Devices Table** which contains all the Devices present on the current configuration along with their most important parameters. It also displays the **Overall Polling Status** and the **Polling Steps** parameters. The **DVE Overview** subpage contains the **B30**, **I60**, **U30**, **S130 DVEs** and **U10 DVEs** Tables, where the created DVEs will be displayed. It also shows the **Automatic Delete Missing Devices** button that will automatically removed the deleted devices.
