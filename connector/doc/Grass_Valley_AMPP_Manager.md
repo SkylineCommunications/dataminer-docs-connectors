@@ -51,7 +51,7 @@ This page contains general configuration parameters: API Key, Last Login Time, a
 
 ### Application Types
 
-Here you will find the voltage the application types table.
+Here you will find the application types table.
 
 ### Workloads
 
