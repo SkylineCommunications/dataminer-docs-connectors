@@ -8,7 +8,7 @@ The Socomec Diris D-50 is a Control and Power Supply Interface. This connector c
 
 ## About
 
-The DIRIS Digiware D-50 is a master device on the RS485 bus and master on the DIRIS Digiware bus. It can display measurements from other Socomec counters and measuring units such as Countis, Diris A and Diris B. It centralizes data from up to 32 devices with a maximum of 186 outputs.
+The DIRIS Digiware D-50 is a master device on the RS485 bus and master on the DIRIS Digiware bus. It can display measurements from other Socomec counters and measuring units such as Countis, Diris A, and Diris B. It centralizes data from up to 32 devices with a maximum of 186 outputs.
 
 ### Version Info
 
@@ -66,12 +66,16 @@ SERIAL CONNECTION:
 
 ### General
 
-This page contains all the configuration General Information of the device. It shows the Diris D-50 Product Identification parameters such as **Product ID**, **JBUS Table** and **Software Version**, **Customization Data Loaded**, **Vendor**, **Product** and **Extended Name**, **Resource Version** and **Network ID**. It also displays the **Product Major** and **Minor Versions**, **Product Version** and **Build Date** along with **Software Technical Base Version** which has a **Major** and **Minor** options and the **Serial AA SS**, **SST L**, **Order** and **Reserve**.
+This page contains the general configuration information of the device. This includes Diris D-50 product identification parameters such as the Product ID, JBUS Table, Software Version, Vendor, etc. and various product version information.
 
 ### Connection Info
 
-This page contains all the configuration General Information such as the **Ethernet IP Address**, **Gate** and **Mask**, the **JBUS Gateway Status**, **Baudrate**, **Parity**, **Stop Bit** and **DHCP Status**.
+This page contains connection information such as the Ethernet IP Address, Gate, Mask, etc.
 
 ### Device Overview
 
-This page shows the **Devices Table** which contains all the Devices present on the current configuration along with their most important parameters. It also displays the **Overall Polling Status** and the **Polling Steps** parameters. The **DVE Overview** subpage contains the **B30**, **I60**, **U30**, **S130** and **U10 DVEs** Tables, where the created DVEs will be displayed. It also shows the **Automatic Delete Missing Devices** button that will automatically removed the deleted devices.
+This page contains a table that lists all the devices present in the current configuration along with their most important parameters.
+
+It also displays the **Overall Polling Status** and the **Polling Steps** parameters.
+
+The **DVE Overview** subpage contains the **B30**, **I60**, **U30**, **S130** and **U10 DVEs** tables, which display the created DVEs. It also contains the **Automatic Delete Missing Devices** button, which will automatically remove the deleted devices.
