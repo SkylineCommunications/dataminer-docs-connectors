@@ -2686,6 +2686,8 @@
   items:
   - name: Double D Electronics DDA-219-310
     topicUid: Connector_help_Double_D_Electronics_DDA-219-310
+  - name: Double D Electronics DDA219-511E
+    topicUid: Connector_help_Double_D_Electronics_DDA219-511E
   - name: Double D Electronics DDA219-733
     topicUid: Connector_help_Double_D_Electronics_DDA219-733
   - name: Double D Electronics DDA219-C333E
