@@ -9148,6 +9148,15 @@
     topicUid: Connector_help_Teleste_TRM_HDO775
 - name: Telestream
   items:
+  - name: Telestream Argus Probe
+    topicUid: Connector_help_Telestream_Argus_Probe
+    items:
+    - name: Telestream Argus Probe - IQDialogue Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_IQDialogue_Probe
+    - name: Telestream Argus Probe - Inspector Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_Inspector_Probe
+    - name: Telestream Argus Probe - Surveyor ABR Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_Surveyor_ABR_Probe
   - name: Telestream Inspect 2110
     topicUid: Connector_help_Telestream_Inspect_2110
   - name: Telestream Lightspeed Live Stream
