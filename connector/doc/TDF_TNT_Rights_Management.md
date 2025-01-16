@@ -14,8 +14,8 @@ Its goal is to manage the DMS permissions of multiple groups of users. This incl
 
 | Range                | Key Features                                                                           | Based on   | System Impact                       |
 |----------------------|--------------------------------------------------------------------------------------- |------------|-------------------------------------|
-| 1.0.0.x [Obsolete]   | Initial version                                                                        | -          | -                                   |
-| 1.0.1.x [SLC Main]   | Assign rights directly<br>Groups Profiles table only allows existing DMS user groups   | 1.0.0.5    | Loss of Group Profiles table data   |
+| 1.0.0.x [Obsolete]   | Initial version.                                                                       | -          | -                                   |
+| 1.0.1.x [SLC Main]   | Assign rights directly.<br>Group Profiles table only allows existing DMS user groups. | 1.0.0.5    | Loss of Group Profiles table data.  |
 
 ### System Info
 
@@ -32,13 +32,13 @@ Its goal is to manage the DMS permissions of multiple groups of users. This incl
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
+### Initialization (Range 1.0.0.x)
 
 Configure the **Right Management Script Name** parameter with the name of the script responsible for changing the permissions of user groups.
 
 This script is stored in Skyline's GitHub repository called **TDF-AS-TNTRightsManagement**.
 
-<ins>Since version 1.0.1.1,</ins> this parameter was removed since the connector will perform the permission changes by itself, making the script unnecessary.
+Starting from version 1.0.1.1, this parameter is no longer available because the connector will perform the permission changes by itself, making the script unnecessary.
 
 ### Redundancy
 
@@ -62,7 +62,6 @@ The **Rights Management** table is updated at startup and can be manually refres
 
 When this table is refreshed, the column descriptions are also updated accordingly. They are ordered based on the order of the **Group Profiles** table
 
-When you change the group permissions for a specific service, the element will update the **Group List** property of that service and trigger the Automation script configured with the **Right Management Script Name** parameter.
-<ins>Since version 1.0.1.1,</ins> this connector does not require an automation script. Therefore, the "Group List" property is unnecessary and the element will be responsible for updating the groups' permissions by itself.
+In range 1.0.0.x, when you change the group permissions for a specific service, the element will update the **Group List** property of that service and trigger the Automation script configured with the **Right Management Script Name** parameter. Starting from version 1.0.1.1, this connector no longer requires an Automation script, so the Group List property is no longer needed, and the element itself will be responsible for updating the group permissions.
 
 The **Export to CSV** button exports the **Rights Management** table to a CSV file located in the *Documents \> Elements \> \[ElementName\]* folder. This file is automatically synced in the DMS after the export is completed.
