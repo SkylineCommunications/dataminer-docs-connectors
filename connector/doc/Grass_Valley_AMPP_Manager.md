@@ -65,11 +65,11 @@ Here you will find the workloads table as well as a button to refresh the worklo
 
 ### Fabrics and Nodes
 
-Here you will find the Fabrics and Nodes tables as well as a button to refresh them.
+Here you will find the fabrics and nodes tables as well as a button to refresh them.
 
 ### Snapshots
 
-Here you will find the Snapshots table as well as a button to refresh the snapshots. Each row contains several buttons/toggle buttons:
+Here you will find the snapshots table as well as a button to refresh the snapshots. Each row contains several buttons/toggle buttons:
 
 - **Start**: Sends a Start Snapshot POST command.
 - **Stop**: Sends a Stop Snapshot POST command.
