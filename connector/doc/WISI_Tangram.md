@@ -54,6 +54,15 @@ The connector supports the following types:
 
 ## Configuration
 
+### Timers
+
+Starting from version **1.1.1.6**, the **Polling Manager** feature is implemented in the connector. This feature does not require any special configuration. The existing timers are replaced with entries in the Polling Manager table, which is accessible on the Polling Manager page.
+
+> [!IMPORTANT]
+>
+> - **High CPU usage with older versions**: Agents running versions prior to **1.1.1.6** may experience high CPU (DataMiner) usage, and the device may be overloaded when an element is started. To mitigate this, the Polling Manager feature reduces system load by limiting the number of groups placed on the stack. Specifically, only **5 groups** are added at a time, with a **10-second interval** between batches.
+> - **Impact on initial polling time**: While using the Polling Manager feature decreases the system load and device strain, it also slightly **increases the initial polling time**. Polling all data from the device takes longer as the process is staggered to ensure optimal performance and system stability.
+
 ### Connections
 
 #### SNMP Main Connection

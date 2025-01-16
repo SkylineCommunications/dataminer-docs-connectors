@@ -10,7 +10,7 @@ With this connector, you can gather and view information from the device Spectra
 
 ### Version Info
 
-| **Range**            | **Key Features**                                            | **Based on** | **System Impact** |
+| Range              | Key Features                                              | Based on   | System Impact   |
 |----------------------|-------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. Supports DCF from version 1.0.0.8 onwards. | -            | -                 |
 

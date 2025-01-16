@@ -10,9 +10,10 @@ The Check Point 1430 Firewall is a security gateway of high-performance, integra
 
 ### Version Info
 
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
+| Range              | Key Features                                                                                      | Based on | System Impact |
+|--------------------|---------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                                  | -        | -             |
+| 1.0.1.x [SLC Main] | Removed IP-related parameters that were not correctly populated in tables 4000, 27000, and 28000. | -        | -             |
 
 ### Product Info
 
@@ -22,9 +23,10 @@ The Check Point 1430 Firewall is a security gateway of high-performance, integra
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                       |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | No                  | -                 | -                   |
+| 1.0.1.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -70,4 +72,8 @@ The element created with this connector consists of the following data pages:
 - **LS Connectivity**: This page contains information related to LS connectivity.
 - **VPN**: Provides an overview of the **Check Point VPN (CPV)**. Also contains several page buttons that provide detailed information such as **IKE**, **FWZ**, **Accelerator**, **IPSec NIC** and **IPSec**.
 - **SNMP Traps**: Contains the SNMP Traps table.
+- **RAID**: Contains the **RAID Volume** and **Disk** tables.
+- **Sensor**: Contains the **Temperature**, **Fan Speed**, and **Voltage Sensor** tables.
+- **Power Supply**: Displays the status of the power supplies.
+- **Interfaces**: Displays interface information such as **Input** and **Output Bitrates**, **Error Rates**, and **Bandwidth**.
 - **Web Interface**: Displays the web interface of the polling IP address.

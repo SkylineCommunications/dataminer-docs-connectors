@@ -10,7 +10,7 @@ uid: Connector_help_Dell_EMC_Unity
 
 ### Version Info
 
-| **Range**            | **Key Features**                           | **Based on** | **System Impact** |
+| Range              | Key Features                             | Based on   | System Impact   |
 |----------------------|--------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. Only includes monitoring. | -            | -                 |
 

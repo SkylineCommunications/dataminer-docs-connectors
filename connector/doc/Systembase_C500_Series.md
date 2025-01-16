@@ -12,7 +12,7 @@ This connector periodically polls the target device using an SNMP connection. It
 
 ### Version Info
 
-| **Range** | **Description**                                              | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. Compatible with C510 XR and C510 IP models. | Yes                 | Yes                     |
 

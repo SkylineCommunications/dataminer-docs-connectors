@@ -14,7 +14,7 @@ Note: This connector **requires .Net Framework 4.0** or higher.
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact** |
+| Range                | Key Features           | Based on     | System Impact     |
 |----------------------|------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.       | -            | -                 |
 | 1.0.1.x [SLC Main]   | HTTP connection added. | -            | -                 |

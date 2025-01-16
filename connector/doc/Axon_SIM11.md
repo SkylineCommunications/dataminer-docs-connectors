@@ -12,9 +12,9 @@ This is an **SNMP**-based connector for the Axon SIM11 device.
 
 ### Version Info
 
-| **Range** | **Description** |
-|------------------|-----------------|
-| 1.0.0.x          | Initial version |
+| Range   | Description     |
+|---------|-----------------|
+| 1.0.0.x | Initial version |
 
 ## Installation and configuration
 

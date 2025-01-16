@@ -13,10 +13,11 @@ The HTTP Rest API protocol connects to the Haivision Media Gateway to gather dev
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
-| 1.0.1.x | Added support for all source and destination protocol types. | 1.0.0.1 | Removed SRT from Sources and Destinations tables to improve compatibility with other protocol types. This can affect DataMiner filters, Automation scripts, Visio drawings, reports, dashboards, and web API. |
-| 1.0.2.x | Complete revision of the connector: <br>- Fix for session creation/deletion. <br>- Added system metrics information. <br>- Possibility to start/stop routes and destinations. <br>- Possibility to add SRT/UDP/RTP/RTSP/RTMP routes. <br>- Possibility to add SRT/UDP/RTP/HLS destinations. | 1.0.1.x | - |
-| 1.0.3.x | Changed indexes and display keys for Source Statistics and Destination Statistics tables to allow multiple connection rows for each input. | 1.0.2.x | All data in the tables will be affected, as well as alarm templates, trend templates, and visual overviews. |
-| 1.0.4.x [SLC Main] | Changed indexes and display keys for Route, Source, and Destination tables to keep them unique. | 1.0.3.x | All data in the tables will be affected, as well as alarm templates, trend templates, and visual overviews. |
+| 1.0.1.x [Obsolete] | Added support for all source and destination protocol types. | 1.0.0.1 | Removed SRT from Sources and Destinations tables to improve compatibility with other protocol types. This can affect DataMiner filters, Automation scripts, Visio drawings, reports, dashboards, and web API. |
+| 1.0.2.x [Obsolete] | Complete revision of the connector: <br>- Fix for session creation/deletion. <br>- Added system metrics information. <br>- Possibility to start/stop routes and destinations. <br>- Possibility to add SRT/UDP/RTP/RTSP/RTMP routes. <br>- Possibility to add SRT/UDP/RTP/HLS destinations. | 1.0.1.x | - |
+| 1.0.3.x [Obsolete] | Changed indexes and display keys for Source Statistics and Destination Statistics tables to allow multiple connection rows for each input. | 1.0.2.x | All data in the tables will be affected, as well as alarm templates, trend templates, and visual overviews. |
+| 1.0.4.x [Obsolete]  | Changed indexes and display keys for Route, Source, and Destination tables to keep them unique. | 1.0.3.x | All data in the tables will be affected, as well as alarm templates, trend templates, and visual overviews. |
+| 1.0.5.x [SLC Main]  | Modification of display keys and indexes to enable a format that will accommodate all possible data in tables. Required features are taken from all previous versions. | 1.0.5.1 | All data in the tables will be affected, as well as alarm templates, trend templates, and visual overviews. The addition of a Unicode tag will cause the element data and trending information in the database to be entirely removed. |
 
 ### Product Info
 
@@ -27,6 +28,7 @@ The HTTP Rest API protocol connects to the Haivision Media Gateway to gather dev
 | 1.0.2.x   | 5.5.210518.1712        |
 | 1.0.3.x   | 5.5.210518.1712        |
 | 1.0.4.x   | 5.5.210518.1712        |
+| 1.0.5.x   | 5.5.210518.1712        |
 
 ### System Info
 
@@ -37,6 +39,7 @@ The HTTP Rest API protocol connects to the Haivision Media Gateway to gather dev
 | 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.5.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

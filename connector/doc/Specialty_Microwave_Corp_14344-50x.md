@@ -12,7 +12,7 @@ This connector polls the device every five seconds through a serial connection.
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

@@ -11,21 +11,24 @@ The purpose of this connector is to receive alerts from the DASDEC-III. It will 
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range              | Key Features                | Based on | System Impact                          |
+|--------------------|-----------------------------|----------|----------------------------------------|
+| 1.0.0.x            | Initial version             | -        | -                                      |
+| 1.0.1.x [SLC Main] | Added HTTP/SNMP connections | 1.0.0.2  | Element configuration must be adapted. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 5.2.2                  |
+| 1.0.1.x   | 5.2.2                  |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -41,6 +44,31 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The connector will act as a server. Set this field to "*Any*".
   - **IP port**: By default *20002*. A different port can be specified.
+
+#### SNMP Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+- **Device address**: This is not required.
+
+SNMP Settings:
+
+- **Port number**: *161*
+- **Get community string**: *public*
+- **Set community string**: *private*
+
+#### HTTP Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: *80*
+- **Bus address**: *ByPassProxy*
 
 ### Initialization
 
@@ -62,6 +90,10 @@ To perform the public-private key initialization, follow these steps:
 
 You can now approve mandatory/voluntary open alerts. If an alert is not forwarded, check the element logging for errors.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to Use
 
 ### General
@@ -72,6 +104,7 @@ This page also contains the following page buttons:
 
 - **Driver Configuration**: Here you can view and clear the error counter.
 - **Display Key Configuration**: Here you can configure the display key across all message-related tables.
+- **Authentication**: Here you can configure the authentication for the HTTP connection.
 
 ### Alerts
 
@@ -91,4 +124,8 @@ Via the **Alert Logging** page button, you can access the Alert Logging table as
 
 This page contains the last received message.
 
-You can trigger an RWT here by filling in all required Net parameters. You can also trigger an automatic RWT, which will automatically send an RWT every 7 days.
+You can also trigger an RWT here by filling in all required Net parameters. You can also trigger an Automatic RWT, which will automatically send an RWT every 7 days.
+
+### Web Interface
+
+This page displays the web GUI.

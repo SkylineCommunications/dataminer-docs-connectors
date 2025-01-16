@@ -22,8 +22,9 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 | 3.0.2.x **[Obsolete - see 3.0.3.x]** | Changed display key of interface tables. Changed API polling table to a complete polling table. | Yes | Yes |
 | 3.0.3.x **[Obsolete - see 3.0.4.x]** | Reworked VTP VLAN table to support both SNMP and NX API polling. | Yes | Yes |
 | 3.0.4.x **[Obsolete - see 3.0.5.x]** | Improved display keys of RTP Flow and RTP Flow Errors tables. | Yes | Yes |
-| 3.0.5.x [SLC Main] | OpenConfig implementation. | Yes | Yes |
+| 3.0.5.x **[Obsolete - see 3.0.7.x]** | OpenConfig implementation. | Yes | Yes |
 | 3.0.6.x **[Obsolete - see 3.0.5.x]** | Added VRF group information and rework for IGMP table, Multicast Route Detail table, and BGP Peer tables.| Yes |Yes |
+| 3.0.7.x [SLC Main] | Updated IPAM library and NuGet for InterApp communication.| Yes |Yes |
 
 
 ### Product Info
@@ -40,6 +41,7 @@ The connector uses an **SNMP** connection and **DCF** integration to monitor Cis
 | 3.0.4.x   | 7.0(8)N1(1)            |
 | 3.0.5.x   | 7.0(8)N1(1)            |
 | 3.0.6.x   | 7.0(8)N1(1)            |
+| 3.0.7.x   | 7.0(8)N1(1)            |
 
 ## Configuration
 

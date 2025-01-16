@@ -12,7 +12,7 @@ The Nevion Flashlink HDSDI-CHO-2x1 connector is used for monitor these kinds of 
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                   | No                  | Yes                     |
 | 1.0.1.x          | New range with DCF implementation. | Yes                 | Yes                     |
