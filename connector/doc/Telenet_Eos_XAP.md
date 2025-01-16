@@ -4,7 +4,8 @@ uid: Connector_help_Telenet_Eos_XAP
 
 # Telenet Eos XAP
 
-The Telenet Eos XAP protocol provides an interface for integration and management of EOS XAP set-top box devices. It allows for remote control, configuration, and monitoring of key parameters such as HDMI resolution, device identifiers, and video stream URLs to optimize functionality and ensure efficient operation.
+The Telenet Eos XAP protocol provides an interface for integration and management of EOS XAP set-top box devices. It allows remote control, configuration, and monitoring of key parameters such as HDMI resolution, device identifiers, and video stream URLs to optimize functionality and ensure efficient operation.
+
 ## About
 
 ### Version Info
@@ -35,11 +36,11 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. xxx.yyy.zzz.com.
-- **IP port**: The IP port of the device, e.g. 8080.
-- **Device address**: The device address (default: ByPassProxy).
+- **IP address/host**: The polling IP of the device, e.g. *xxx.yyy.zzz.com*.
+- **IP port**: The IP port of the device, e.g. *8080*.
+- **Device address**: The device address (default: *ByPassProxy*).
 
-## How to use
+## How to Use
 
 The element consists of the data pages detailed below.
 
@@ -48,8 +49,7 @@ The element consists of the data pages detailed below.
 The **General** page includes the following parameters:
 
 - **Press Key**: This parameter is used to simulate the pressing of buttons on the remote control. You can select a specific key to trigger an action on the set-top box. It supports discrete measurements, providing a clear response for each action.
-- **HDMI Resolution**: Displays or configures the current HDMI output resolution of the set-top box. It allows reading the current resolution and setting a new resolution to adjust the display settings as required.
-
+- **HDMI Resolution**: Displays or configures the current HDMI output resolution of the set-top box. You can use this to read the current resolution and set a new resolution to adjust the display settings as required.
 
 ### Settings
 
