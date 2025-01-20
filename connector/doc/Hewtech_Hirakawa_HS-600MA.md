@@ -43,6 +43,9 @@ SSH CONNECTION:
 
 You must enter a valid **User Name** and **Password** to connect to the device. To do so, on the **SSH Settings** page, fill in the correct credentials.
 
+### Save settings
+For configured device settings to persist across device restarts, there is a need to save them. This is done via the **Save Config** button in the **General** page.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
