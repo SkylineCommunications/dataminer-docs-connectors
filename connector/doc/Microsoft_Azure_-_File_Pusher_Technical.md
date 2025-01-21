@@ -39,8 +39,10 @@ The **Test Authentication** button can be used to test whether the provided cred
 
 ### Configuration Page
 
-To ensure that file uploads do not get stuck indefinitely, we have implemented a safety measure. On the configuration page, you have the option to set parameters that will automatically terminate an upload if certain conditions are met. 
-Specifically, you can configure the system to terminate uploads after a specified number of **failures** or after a certain **duration (in minutes)**. 
+To ensure that file uploads do not get stuck indefinitely, a safety measure has been implemented. On the Configuration page, you can set parameters that will automatically terminate an upload if certain conditions are met.
+
+Specifically, you can configure the system to terminate uploads after a specified number of **failures** or after a certain **duration (in minutes)**.
+
 This helps maintain the efficiency and reliability of the upload process by preventing prolonged or failed uploads from consuming resources unnecessarily.
 
 ### File Paths Page

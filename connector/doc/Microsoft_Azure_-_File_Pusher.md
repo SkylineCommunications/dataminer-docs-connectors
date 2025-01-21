@@ -27,7 +27,7 @@ You can configure multiple file path combinations, each with dedicated upload se
 
   ![General Page](~/connector/images/MicrosoftAzure_FilePusher_Configuration_Page.png)
 
-- Set the number of failures or the duration (in minutes) after which uploads will be terminated and considered failed..
+- Set the number of failures or the duration (in minutes) after which uploads will be terminated and considered failed.
 
   ![File Paths Page](~/connector/images/MicrosoftAzure_FilePusher_FilePaths_Page.png)
 
