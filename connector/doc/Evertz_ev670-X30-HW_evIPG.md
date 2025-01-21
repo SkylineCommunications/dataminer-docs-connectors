@@ -16,8 +16,8 @@ The 670 is a virtualized media processing platform that enables users to move a 
 |----------------------|------------------------------------------------------------------|--------------|---------------------------------------------------------------|
 | 1.0.0.x [Obsolete]     |Initial version.                                                 | -            | -                                                             |
 | 1.0.1.x [Obsolete]     |Adds redundant polling.                                          | -            | Adds interface for redundant polling.                         |
-| 1.0.2.x [SLC Main]   | Subtable functionality in all tables to filter out unneeded rows | 1.0.1.2      | Trending, Visio drawings and alarm templates may be affected. |
-
+| 1.0.2.x [Obsolete]   | Subtable functionality in all tables to filter out unneeded rows | 1.0.1.2      | Trending, Visio drawings and alarm templates may be affected. |
+| 1.0.3.x [SLC Main]   | Subtable functionality in all tables to filter out unneeded rows | 1.0.2.3      | Appended user defined description to IDX. Applied filterring to some rows |
 ### Product Info
 
 | Range     | Supported Firmware     |
@@ -25,6 +25,7 @@ The 670 is a virtualized media processing platform that enables users to move a 
 | 1.0.0.x   | 2.9.2.r1.588           |
 | 1.0.1.x   | 2.9.2.r1.588           |
 | 1.0.2.x   | -                      |
+| 1.0.3.x   | 2.9.2.r1.588           |
 
 ### System Info
 
@@ -33,6 +34,7 @@ The 670 is a virtualized media processing platform that enables users to move a 
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -74,3 +76,7 @@ The element created with this connector has several data pages:
 - On the **IP Input** and **IP** **Output** pages, you can find several tables with information about the audio, video and ancillary channels.
 - On the **Product Location, Hardware, Hardware LED, Software, Proxy Configuration** and **Time Management** pages, you can find various tables with information and settings related to these subjects.
 - The **SNMP Traps, Video Notify, Audio Notify** and **Notify** pages display tables where you can add/remove traps destinations as well as read/change the state and value of traps.
+
+## Notes 1.0.3.2 Version
+
+You can enable/disable polling specific QSFPs from the **QSFP Monitor*** page. This would affect all tables related to that QSFP.
