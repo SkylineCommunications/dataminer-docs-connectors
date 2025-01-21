@@ -24,7 +24,7 @@ From range 2.0.1.x onwards, the information is retrieved via **WebSocket** subsc
 | 2.0.1.x | DCF connections added. | Yes | Yes |
 | 2.0.2.x | Fixed Rx and Tx value. | Yes | Yes |
 | 2.0.3.x [SLC Main] | Fixed various bugs, split up tables, and changed parameter type. | Yes | Yes |
-| 2.1.0.x | Support new firmware version 2.1.708. | Yes | Yes |
+| 2.1.0.x | Supports new firmware version 2.1.708. | Yes | Yes |
 
 ### Product Info
 
