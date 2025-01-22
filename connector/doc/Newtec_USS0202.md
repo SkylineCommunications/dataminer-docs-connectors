@@ -43,6 +43,12 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
+## How To Use
+
+The connector uses a retry mechanism to update its tables after changing a cell value.
+
+The parameters that are located on the pages USS Control and USS Operation Config are only relevant for devices with a single protection group. This means that these pages are useless when multiple protection groups are available.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
