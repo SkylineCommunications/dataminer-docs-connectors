@@ -12,7 +12,7 @@ A **Visio** file is provided along with this connector and provides full access 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                           | **Based on** | **System Impact** |
+| Range              | Key Features                                             | Based on   | System Impact   |
 |----------------------|------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Overview of PTP devices. Monitoring of active grandmaster. | -            | -                 |
 

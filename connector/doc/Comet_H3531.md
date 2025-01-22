@@ -12,13 +12,13 @@ The device is able to measure temperature values between -30 øC and 105 øC. It
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 
 ### Product Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | 04.1904.21      |
 

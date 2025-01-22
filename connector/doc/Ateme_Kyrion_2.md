@@ -14,23 +14,23 @@ Alarms are also generated for each received trap.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                           | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                                                                                                                                          | No                  | Yes                     |
-| 1.0.1.x          | New firmware based on 1.0.0.13.                                                                                                                           | Yes                 | Yes                     |
-| 1.0.2.x          | New firmware based on 1.0.1.16.                                                                                                                           | No                  | Yes                     |
-| 1.0.3.x          | Based on 1.0.1.25. In every TS-related parameter, descriptions changed from '\[XXX\] \[ChannelNumber\].1' to 'Channel \[ChannelNumber\] Main TS \[XXX\]'. | Yes                 | Yes                     |
-| 1.1.0.x          | New firmware based on 2.0.1.17.                                                                                                                           | Yes                 | Yes                     |
-| 2.0.0.x          | Alternative parameter implementation based on version 1.0.0.11.                                                                                           | No                  | Yes                     |
-| 2.0.1.x          | New firmware based on 2.0.0.9.                                                                                                                            | No                  | Yes                     |
-| 2.0.2.x          | New firmware based on 2.0.1.14.                                                                                                                           | No                  | Yes                     |
-| 2.0.3.x          | DCF support.                                                                                                                                              | Yes                 | Yes                     |
-| 2.1.0.x          | New firmware based on 2.0.3.5. New trap mechanism.                                                                                                        | Yes                 | Yes                     |
-| 3.0.0.x          | New firmware based on 2.0.2.16. New trap mechanism. Compatible with DataMiner 7.5.                                                                        | No                  | Yes                     |
+| Range   | Description                                                                                                                                       | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.                                                                                                                                  | No              | Yes                 |
+| 1.0.1.x | New firmware based on 1.0.0.13.                                                                                                                   | Yes             | Yes                 |
+| 1.0.2.x | New firmware based on 1.0.1.16.                                                                                                                   | No              | Yes                 |
+| 1.0.3.x | Based on 1.0.1.25. In every TS-related parameter, descriptions changed from '[XXX] [ChannelNumber].1' to 'Channel [ChannelNumber] Main TS [XXX]'. | Yes             | Yes                 |
+| 1.1.0.x | New firmware based on 2.0.1.17.                                                                                                                   | Yes             | Yes                 |
+| 2.0.0.x | Alternative parameter implementation based on version 1.0.0.11.                                                                                   | No              | Yes                 |
+| 2.0.1.x | New firmware based on 2.0.0.9.                                                                                                                    | No              | Yes                 |
+| 2.0.2.x | New firmware based on 2.0.1.14.                                                                                                                   | No              | Yes                 |
+| 2.0.3.x | DCF support.                                                                                                                                      | Yes             | Yes                 |
+| 2.1.0.x | New firmware based on 2.0.3.5. New trap mechanism.                                                                                                | Yes             | Yes                 |
+| 3.0.0.x | New firmware based on 2.0.2.16. New trap mechanism. Compatible with DataMiner 7.5.                                                                | No              | Yes                 |
 
 ### Product Info
 
-| **Range**    | **Device Firmware Version**            |
+| Range               | Device Firmware Version                |
 |---------------------|----------------------------------------|
 | 1.0.0.x             | MIB revision 201304081515Z             |
 | 1.0.1.x             | v.2.0.1.0 (build 25.0.1-rc)            |

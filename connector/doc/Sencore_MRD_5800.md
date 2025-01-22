@@ -16,7 +16,7 @@ It is also possible to **download** a profile to a local file and to **upload** 
 
 ### Version Info
 
-| **Range** | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                    | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                | No                  | Yes                     |
 | 1.0.1.x          | Added functionality to download and upload configuration files | No                  | Yes                     |

@@ -12,7 +12,7 @@ This analyser uses a combination of SNMP and HTML to pass the information relate
 
 ### Version Info
 
-| **Range** | **Description**                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                       | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------|---------------------|-------------------------|
 | 1.2.0.x          | New MIB implemented on the device | No                  | Yes                     |
 

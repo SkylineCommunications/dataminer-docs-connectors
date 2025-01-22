@@ -14,7 +14,7 @@ This connector is generated automatically by the connector **Ruckus Wireless vSC
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                   | DCF Integration     | Cassandra Compliant     |
 |------------------|----------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.1.x          | New range that adds new HTTP connection and creation of DVEs. Supports node redundancy. Supports new firmware. | No                  | Yes                     |
 

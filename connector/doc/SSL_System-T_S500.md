@@ -10,7 +10,7 @@ This is a smart-serial connector (Ember+) that is used to monitor and configure 
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                             | -            | -                 |
 | 1.0.1.x [SLC Main]   | Changed primary key GPI/GPO Tables to index | 1.0.0.1      | -                 |

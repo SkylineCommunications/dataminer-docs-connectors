@@ -18,9 +18,9 @@ The NTI ENVIROMUX MINI LXO connector allows you to configure and monitor each of
 
 ### Product Info
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | 2.9.2.r1.588       |
+|Range  | Supported Model | Supported Firmware  |
+|---------|---------|---------|
+|1.0.0.x     |E-MINI-LXO     |4.4         |
 
 ### System Info
 
@@ -102,8 +102,15 @@ This page displays information about the water sensor and allows you to configur
 
 ### Configuration
 
-On this page, you can enable or disable the polling of each sensor.
+For the **Temperature (1, 2) and Humidity (1, 2)** sensors, you can switch the **Polling Mode** of each sensor:
 
-Disabling the polling of a sensor will remove the sensor from the **Summary table** and will hide the corresponding page. Enabling the polling of a sensor will add the sensor to the **Summary table** and will show the page again.
+- *Never*: The connector will never try to poll the sensor data.
+- *Always*: The connector will always try to poll the sensor data.
+- *Auto*: The connector will try to poll data only if a sensor is connected.
 
-By default, Temperature 2 Sensor and Humidity 2 Sensor are hidden.
+For the **Dry Contact (1, 2, 3, 4)** sensors and **Water Sensor**, you can switch the **Polling Status** of each sensor:
+
+- *Disabled*: No sensor data will be polled. If the Polling Status for a sensor is set to *Disabled*, the sensor will be removed from the **Summary table**, and the corresponding page will be hidden.
+- *Enabled*: Sensor data will be polled. Setting the Polling Status for a sensor to *Enabled* will add the sensor to the **Summary table** and will make the corresponding page visible in DataMiner.
+
+By default, Temperature (1, 2) and Humidity (1, 2) are set to Polling Mode *Auto*, and Dry Contact (1, 2, 3, 4) and Water Sensor are set to Polling Status *Enabled*.

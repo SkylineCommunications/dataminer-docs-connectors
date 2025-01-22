@@ -12,7 +12,7 @@ This connector allows you to collect data from the Huawei 5688-5800 CCAP Platfor
 
 ### Version Info
 
-| **Range**            | **Key Features**                      | **Based on** | **System Impact** |
+| Range                | Key Features                          | Based on     | System Impact     |
 |----------------------|---------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                      | -            | -                 |
 | 1.0.1.x              | Compatibility with new EPM Solution.  | -            | -                 |

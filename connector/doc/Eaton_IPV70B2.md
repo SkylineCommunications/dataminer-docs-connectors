@@ -16,15 +16,15 @@ The connector uses the SNMP protocol to communicate with the device. SNMP traps 
 
 ### Version Info
 
-| **Range** | **Description** | **DCP Integration** | **Cassandra Compliant** |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | No                      |
+| Range   | Description     | DCP Integration | Cassandra Compliant |
+|---------|-----------------|-----------------|---------------------|
+| 1.0.0.x | Initial version | No              | No                  |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.0                         |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.0                        |
 
 ## Installation and Timing
 

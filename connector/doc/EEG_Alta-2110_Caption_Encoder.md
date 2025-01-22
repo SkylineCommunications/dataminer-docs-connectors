@@ -10,10 +10,11 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 
 ### Version Info
 
-| **Range**            | **Key Features**                                       | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                       | -            | -                 |
-| 1.0.1.x [SLC Main]   | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5      | -                 |
+| Range              | Key Features                                           | Based on | System Impact |
+|--------------------|--------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                       | -        | -             |
+| 1.0.1.x            | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5  | -             |
+| 1.1.0.x [SLC Main] | Fixed iCap Status parameter.                           | 1.0.1.5  | -             |
 
 ### Product Info
 
@@ -21,6 +22,7 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
 | 1.0.1.x   | 2.9.2.r1.588           |
+| 1.1.0.x   | 3.50.0                 |
 
 ### System Info
 
@@ -28,6 +30,7 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
