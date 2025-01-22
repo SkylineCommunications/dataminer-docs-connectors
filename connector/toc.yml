@@ -2686,6 +2686,8 @@
   items:
   - name: Double D Electronics DDA-219-310
     topicUid: Connector_help_Double_D_Electronics_DDA-219-310
+  - name: Double D Electronics DDA219-511E
+    topicUid: Connector_help_Double_D_Electronics_DDA219-511E
   - name: Double D Electronics DDA219-733
     topicUid: Connector_help_Double_D_Electronics_DDA219-733
   - name: Double D Electronics DDA219-C333E
@@ -4188,6 +4190,8 @@
     topicUid: Connector_help_Grass_Valley_Acappella
   - name: Grass Valley Alchemist Live
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
+  - name: Grass Valley AMPP Manager
+    topicUid: Connector_help_Grass_Valley_AMPP_Manager
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
@@ -8885,6 +8889,8 @@
     topicUid: Connector_help_Telenet_CPE_Manager
   - name: Telenet eMTA Collector
     topicUid: Connector_help_Telenet_eMTA_Collector
+  - name: Telenet Eos XAP
+    topicUid: Connector_help_Telenet_Eos_XAP
   - name: Telenet EPM Platform FTTH WM
     topicUid: Connector_help_Telenet_EPM_Platform_FTTH_WM
   - name: Telenet Frontend Inform Sender
@@ -9146,6 +9152,15 @@
     topicUid: Connector_help_Teleste_TRM_HDO775
 - name: Telestream
   items:
+  - name: Telestream Argus Probe
+    topicUid: Connector_help_Telestream_Argus_Probe
+    items:
+    - name: Telestream Argus Probe - IQDialogue Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_IQDialogue_Probe
+    - name: Telestream Argus Probe - Inspector Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_Inspector_Probe
+    - name: Telestream Argus Probe - Surveyor ABR Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_Surveyor_ABR_Probe
   - name: Telestream Inspect 2110
     topicUid: Connector_help_Telestream_Inspect_2110
   - name: Telestream Lightspeed Live Stream
