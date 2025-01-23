@@ -16,8 +16,8 @@ The 670 is a virtualized media processing platform that enables users to move a 
 |----------------------|------------------------------------------------------------------|--------------|---------------------------------------------------------------|
 | 1.0.0.x [Obsolete]     |Initial version.                                                 | -            | -                                                             |
 | 1.0.1.x [Obsolete]     |Adds redundant polling.                                          | -            | Adds interface for redundant polling.                         |
-| 1.0.2.x [Obsolete]   | Subtable functionality in all tables to filter out unneeded rows | 1.0.1.2      | Trending, Visio drawings and alarm templates may be affected. |
-| 1.0.3.x [SLC Main]   | Subtable functionality in all tables to filter out unneeded rows | 1.0.2.3      | Appended user defined description to IDX. Applied filterring to some rows |
+| 1.0.2.x [Obsolete]   | Subtable functionality in all tables to filter out unneeded rows. | 1.0.1.2      | Trending, Visio drawings and alarm templates may be affected. |
+| 1.0.3.x [SLC Main]   | Ability to enable/disable polling of QSFPs. Subtable is still being used. | 1.0.2.3      | Appended user defined description to IDX. Applied filterring to some rows |
 ### Product Info
 
 | Range     | Supported Firmware     |
