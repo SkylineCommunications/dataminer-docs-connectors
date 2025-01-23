@@ -53,6 +53,7 @@ This connector polls data from the device using a **smart-serial** connection. F
 | LYNX Technik AG Series 5000 - RCT 1012   | Rack Controller                                           |
 | LYNX Technik AG Series 5000 - SPG 1707   | HD / SD Sync Pulse Generator with Genlock                 |
 | LYNX Technik AG Series 5000 - OTX 5840   | Quad SDI-to-Fiber-Optic Transmitter                       |
+| LYNX Technik AG Series 5000 - CHD 1402-G | 4K HDMI-to-12G-SDI Converter                              |
 
 ## Installation and configuration
 

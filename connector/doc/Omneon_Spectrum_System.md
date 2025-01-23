@@ -12,7 +12,7 @@ This connector retrieves data using the SNMP protocol every 30 seconds. It will 
 
 ### Version Info
 
-| **Range** | **Description**                                            | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                           | No                  | Yes                     |
 | 2.0.0.x          | DVE support added.                                         | No                  | Yes                     |

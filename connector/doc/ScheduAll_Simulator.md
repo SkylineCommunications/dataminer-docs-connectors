@@ -12,7 +12,7 @@ This connector can communicate with the ScheduAll Manager, simulating the usual 
 
 ### Version Info
 
-| **Range** | **Description**                                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                        | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.1          | Initial version                                                     | No                  | Yes                     |
 | 2.1.0.7          | Additional check on number of fields                                | No                  | Yes                     |

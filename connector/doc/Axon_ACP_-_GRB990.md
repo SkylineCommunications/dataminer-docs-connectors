@@ -16,7 +16,7 @@ There also different possibilities available for **alarm monitoring** and **tren
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.2.x          | Change in export rules.            | Yes                 | Yes                     |
 | 1.0.3.x          | Change in discrete display values. | Yes                 | Yes                     |

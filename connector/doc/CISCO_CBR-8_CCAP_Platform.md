@@ -10,7 +10,7 @@ The CISCO CBR-8 CCAP Platform is an **SNMP** connector that collects relevant da
 
 ### Version Info
 
-| **Range**            | **Key Features**                       | **Based on** | **System Impact** |
+| Range                | Key Features                           | Based on     | System Impact     |
 |----------------------|----------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                       | -            | -                 |
 | 1.0.1.x              | Compatibility with new EPM Solution.   | -            | -                 |
@@ -121,6 +121,10 @@ Once the initial setup is done, the connector can function without further confi
 - In range **1.0.3.x**:
 
   - **Script Name**: Specify the Automation script to be executed.
+ 
+- In range **1.0.5.x**
+
+  - **Auto Correct Status Interval**: On the Debug page, this parameter allows you to adjust the interval for a recurring logic that checks how long the polling statuses have been stuck in processing and revert the statuses to OK. Range: 1 day – 1 week. Default: 1 day.
 
 ## Notes
 

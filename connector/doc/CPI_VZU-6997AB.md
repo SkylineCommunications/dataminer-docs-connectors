@@ -12,7 +12,7 @@ This connector is intended to communicate with the device using serial commands 
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version (**obsolete**)     | Yes                 | Yes                     |
 | 1.1.0.x          | New release version (**obsolete**) | No                  | Yes                     |

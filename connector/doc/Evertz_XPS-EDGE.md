@@ -28,7 +28,7 @@ XPS is Evertz' real-time high-quality and low-latency video streaming platform. 
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact** |
+| Range                | Key Features                   | Based on     | System Impact     |
 |----------------------|--------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Supports all 4K and 3G options | -            | -                 |
 

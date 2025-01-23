@@ -16,17 +16,17 @@ A smart-serial connection is used to retrieve the data from the device.
 
 ### Version Info
 
-| **Range**     | **Description**    | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version    | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | DCF implementation | Yes                 | Yes                     |
+| Range              | Description        | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version    | No              | Yes                 |
+| 1.0.1.x [SLC Main] | DCF implementation | Yes             | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.0.1.x          | Unknown                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | Unknown                    |
+| 1.0.1.x | Unknown                    |
 
 ## Installation and configuration
 

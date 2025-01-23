@@ -10,7 +10,7 @@ This connector allows you to monitor and control a Newtec AZ210 1+1 modulator re
 
 ### Version Info
 
-| **Range**            | **Key Features**                                            | **Based on** | **System Impact** |
+| Range              | Key Features                                              | Based on   | System Impact   |
 |----------------------|-------------------------------------------------------------|--------------|-------------------|
 | 1.1.10.x             | Config ID: M1114; Software ID: 6369; Software Version: 1.10 | -            | -                 |
 | 1.1.11.x             | Config ID: M1114; Software ID: 6369; Software Version: 1.11 | -            | -                 |

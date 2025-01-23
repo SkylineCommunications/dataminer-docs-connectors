@@ -14,13 +14,13 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                 | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                 | No                  | No                      |
-| 1.1.0.x          | No automatic DVE removal, except for unsupported card types (Based on 1.0.0.2)                                  | No                  | No                      |
-| 1.2.0.x          | Supported chassis revision 108. No automatic DVE removal, except for unsupported card types (Based ond 1.0.0.2) | No                  | No                      |
-| 2.1.0.x          | Override DVE Timeout (Based on 1.1.0.1)                                                                         | No                  | No                      |
-| 2.2.0.x          | Override DVE Timeout (Based on 1.2.0.1)                                                                         | No                  | No                      |
+| Range   | Description                                                                                                     | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                                                                                 | No              | No                  |
+| 1.1.0.x | No automatic DVE removal, except for unsupported card types (Based on 1.0.0.2)                                  | No              | No                  |
+| 1.2.0.x | Supported chassis revision 108. No automatic DVE removal, except for unsupported card types (Based ond 1.0.0.2) | No              | No                  |
+| 2.1.0.x | Override DVE Timeout (Based on 1.1.0.1)                                                                         | No              | No                  |
+| 2.2.0.x | Override DVE Timeout (Based on 1.2.0.1)                                                                         | No              | No                  |
 
 ### Product Info
 
@@ -32,7 +32,7 @@ The implemented firmware versions for each supported card type are described in 
 
 ### Exported Connectors
 
-| **Exported Connector**  | **Description**                                                                                                |
+| Exported Connector     | Description                                                                                                    |
 |------------------------|----------------------------------------------------------------------------------------------------------------|
 | Axon ACP ERS10 - 2IX08 | Dual channel basic signal integrity monitor with switch-over function.                                         |
 | Axon ACP ERS10 - 2IX11 | Dual channel high-performance SDI video and embedded audio probe with clean switch-over function.              |

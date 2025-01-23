@@ -10,7 +10,7 @@ With the EC3 Networks - DDS connector, you can monitor the DDS status and visual
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                        | **Based on** | **System Impact** |
+| Range              | Key Features                                                          | Based on   | System Impact   |
 |----------------------|-------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version. Includes proxy info, plugin info, and DDS status info. | -            | -                 |
 | 1.0.1.x [SLC Main]   | REST API implementation                                                 | 1.0.0.x      | New connection.   |

@@ -10,7 +10,7 @@ This SNMP connector provides an overview of the status of the available amplifie
 
 ### Version Info
 
-| **Range**            | **Key Features**                                             | **Based on** | **System Impact** |
+| Range              | Key Features                                               | Based on   | System Impact   |
 |----------------------|--------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Retrieve amplifier data based on configured redundancy mode. | -            | -                 |
 

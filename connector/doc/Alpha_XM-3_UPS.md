@@ -12,10 +12,10 @@ This connector uses **SNMP** to retrieve data from the device. An **HTTP** conne
 
 ### Version Info
 
-| **Range** | **Description**        | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version        | No                  | No                      |
-| 2.0.0.x          | Added support for DDNS | No                  | No                      |
+| Range   | Description            | DCF Integration | Cassandra Compliant |
+|---------|------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version        | No              | No                  |
+| 2.0.0.x | Added support for DDNS | No              | No                  |
 
 ## Installation and Configuration
 

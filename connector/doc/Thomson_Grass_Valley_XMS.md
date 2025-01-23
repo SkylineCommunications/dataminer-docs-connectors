@@ -2,7 +2,7 @@
 uid: Connector_help_Thomson_Grass_Valley_XMS
 ---
 
-Thomson Grass Valley XMS
+# Thomson Grass Valley XMS
 
 The **Thomson Grass Valley XMS** is used to control/manage the XMS Manager. This manager keeps track of all the connected devices that are used in the network. Trending and alarming are available on many important parameters.
 
