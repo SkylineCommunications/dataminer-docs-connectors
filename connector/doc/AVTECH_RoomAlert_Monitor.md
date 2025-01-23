@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_IRT_IRPC_Series
+uid: Connector_help_AVTECH_RoomAlert_Monitor
 ---
 
-# IRT IRPC Series
+# AVTECH RoomAlert Monitor
 
 This connector is used to monitor and configure an AVTECH RoomAlert Monitor device.
 
