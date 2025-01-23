@@ -3170,6 +3170,8 @@
     topicUid: Connector_help_Eutelsat_Siecams_Manager
   - name: Eutelsat TAOS Calculation
     topicUid: Connector_help_Eutelsat_TAOS_Calculation
+  - name: Eutelsat TAOS Manager
+    topicUid: Connector_help_Eutelsat_TAOS_Manager
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
