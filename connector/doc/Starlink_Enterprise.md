@@ -28,7 +28,8 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 |--------------------|-----------------|--------------------------------|---------------|
 | 1.0.0.x [Obsolete] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
 | 1.0.1.x [Obsolete] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | Foreign key parameters have been renamed, which impacts Automation scripts that retrieve a parameter of this protocol by name. |
-| 1.0.2.x [SLC Main] | Telemetry Data is set using history sets for accurate backpolling, Partial table option implemented for large tables | Starlink Enterprise 1.0.1.2 | Pagination for large tables (User Terminal, Services, Daily Data Usage, Monthly Data Usage, Overage Lines). History sets can cause alarm storms without hysteresis enabled on alarm templates. |
+| 1.0.2.x [SLC Main] | Telemetry Data is set using history sets for accurate backpolling. Partial table option implemented for large tables. | Starlink Enterprise 1.0.1.2 | Pagination for large tables (User Terminal, Services, Daily Data Usage, Monthly Data Usage, Overage Lines). History sets can cause alarm storms if hysteresis is not enabled on alarm templates. |
+
 ### Product Info
 
 | Range   | Supported Firmware |
@@ -200,8 +201,8 @@ The polling mechanism is triggered after the value of the Client Secret paramete
 
 The Configuration page also contains two telemetry request configuration parameters:
 
-- **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~65000 records per request (the max). If the batch isn't that size, it will return less.  Keeping it at 65000 allows for fast backpolling when needed.
-- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. In order for all the datapoints to come in accurately, starlink recommends a linger duration of 15 seconds.
+- **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~65000 records per request (this is the maximum). If the batch does not have that size, it will return less. Keeping it at 65000 allows fast backpolling when needed.
+- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. This duration is recommended by Starlink in order for all the data points to come in accurately.
 
 > [!NOTE]
 > Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
