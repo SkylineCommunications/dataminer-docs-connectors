@@ -3896,6 +3896,8 @@
     topicUid: Connector_help_Generex_UPS_CS121_BC
 - name: Generic
   items:
+  - name: Generic 4K Converter
+    topicUid: Connector_help_Generic_4K_Converter
   - name: Generic Automation Script
     topicUid: Connector_help_Generic_Automation_Script
   - name: Generic Bookings Log
