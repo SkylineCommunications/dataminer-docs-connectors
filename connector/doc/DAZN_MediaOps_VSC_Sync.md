@@ -58,44 +58,43 @@ In the background, there are two buffers: pending and live requests. When a pend
 
 ## Register Livestream
 
-**POST**  
-e.g.:[https://&lt;Hostname&gt;/api/custom/livestreams/registrations?livestreamId=6gr51t8jdhl7119l9w23ljtnc](https://&lt;Hostname&gt;/api/custom/livestreams/registrations?livestreamId=6gr51t8jdhl7119l9w23ljtnc)
+### POST
 
-**Body**
+For example: `https://<Hostname>/api/custom/livestreams/registrations?livestreamId=6gr51t8jdhl7119l9w23ljtnc`
+
+### Body
+
 ```json
 {
 "contentMediaId": "a98711a1-ab43-4e76-8491-5ff413ffFFF0"
 }
 ```
 
-This will register the livestream in DOM ((slc)event_management/ LiveStream ContentMedia Link Registrations)
+This will register the livestream in DOM ((slc)event_management / LiveStream ContentMedia Link Registrations), depending on whether the MediaContent and Livestream ID match, and on whether a link can be found in the DOM events between the ContentMedia, livestream, and event:
 
-When the MediaContent and Livestream ID match we will update the record.
-
-Note: MediaContent and Livestream ID don’t match we will return an error: 400 "Content Media Already Registered”.
-
-Note: there must be an event with the livestream must exist and it mist have a job otherwise we will return the error 404 "Event has no Job attached".
-
-Note: if we can’t find an event with the livestream id we will return 404 Livestream not found".
-
-Note that the livestream will be looked up in DOM, looking into the Events, searching for an event with that livestream attached. Because we need a link between the ContentMedia, livestream and Event.
+- If the MediaContent and Livestream ID match, the record will be updated.
+- If these do not match, the following error will be returned: 400 "Content Media Already Registered”.
+- If no event with the livestream ID is found, the following error will be returned: 404 "Livestream not found".
+- If an event with the livestream ID is found, but it does not have a job, the following error will be returned: 404 "Event has no Job attached".
 
 ## Unregister
 
-**DELETE**
-e.g.:[https://&lt;HOSTNAME&gt;/api/custom/livestreams/registrations?livestreamId=6gr51t8jdhl7119l9w23ljtnc&contentMediaId=a98711a1-ab43-4e76-8491-5ff413ffFFF0](https://&lt;HOSTNAME&gt;/api/custom/livestreams/registrations?livestreamId=6gr51t8jdhl7119l9w23ljtnc&contentMediaId=a98711a1-ab43-4e76-8491-5ff413ffFFF0)
+### DELETE
 
-This will soft delete the registration in DOM ((slc)event_management/ LiveStream ContentMedia Link Registrations)
+For example: `https://<HOSTNAME>/api/custom/livestreams/registrations?livestreamId=6gr51t8jdhl7119l9w23ljtnc&contentMediaId=a98711a1-ab43-4e76-8491-5ff413ffFFF0`
+
+This will soft-delete the registration in DOM ((slc)event_management / LiveStream ContentMedia Link Registrations)
 
 ## List Active Livestreams
 
-**GET**
+### GET
 
-e.g.: [https://&lt;HOSTNAME&gt;/api/custom/livestreams/registrations/active](https://&lt;HOSTNAME&gt;/api/custom/livestreams/registrations/active)
+For example: `https://<HOSTNAME>/api/custom/livestreams/registrations/active`
 
-This will filter all the non soft deleted registers in DOM ((slc)event_management/ LiveStream ContentMedia Link Registrations) and respond them back.
+This will filter out all the non-soft-deleted registers in DOM ((slc)event_management / LiveStream ContentMedia Link Registrations) and include them in the response.
 
-Response body:  
+Response body:
+
 ```json
 {
 "activeLivestreams": 
@@ -108,32 +107,34 @@ Response body:
 
 ## Update ContentMedia
 
-**GET**  
+### GET
 
-e.g.: [https://&lt;HOSTNAME&gt;/api/custom/livestreams/update?contentMediaId=a98711a1-ab43-4e76-8491-5ff413ff63f0](https://&lt;HOSTNAME&gt;/api/custom/livestreams/update?contentMediaId=a98711a1-ab43-4e76-8491-5ff413ff63f0)
+For example: `https://<HOSTNAME>/api/custom/livestreams/update?contentMediaId=a98711a1-ab43-4e76-8491-5ff413ff63f0`
 
-This request request dataminer to send an update to AVOS with 2 PATCH messages (Patch ContentMedia/live/{id} and a Patch ContentMedia/live/{id}/technicalMedia/sourceMedia/
+This request asks DataMiner to send an update to AVOS with 2 PATCH messages (`Patch ContentMedia/live/{id}` and a `Patch ContentMedia/live/{id}/technicalMedia/sourceMedia/`)
 
-The DZN-UDAPI-AVOS script will pick this up and forward this request to the DAZN MediaOps VSC Sync connector
+The DZN-UDAPI-AVOS script will pick this up and forward this request to the DAZN MediaOps VSC Sync connector.
 
-# Outgoing
+## Outgoing
 
 Via connector DAZN MediaOps VSC Sync.
 
-UDAPI-AVOS detects the recuest
+UDAPI-AVOS detects the request.
 
 ## Get ContentMedia/live/{id}
 
-**GET**
+### GET
 
-e.g.:[https:// &lt;HOSTNAME&gt;/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472](https://avos.metadata.dazn-stage.com/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472)
+For example: `https://<HOSTNAME>/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472`
 
 ## Patch ContentMedia/live/{id}
 
-**PATCH**
-e.g.: [https:// &lt;HOSTNAME&gt;/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472](https://avos.metadata.dazn-stage.com/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472)
+### PATCH
 
-**Body**  
+For example: `https://<HOSTNAME>/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472`
+
+### Body
+
 ```json
 {
   "**bookingPreKOStartTime**": "0001-01-01T00:00:00",
@@ -143,21 +144,23 @@ e.g.: [https:// &lt;HOSTNAME&gt;/external/contentMedia/live/0b26a1d5-b490-4167-b
 }
 ```
 
-Before the patch can be sent a GET ContentMedia/live/{id} must be sent to receive the field “LastModified”, this field bust be copied to the PATCH request Body to the AVOS API accepts the patch.
+Before the patch can be sent, a `GET ContentMedia/live/{id}` must be sent to receive the field "LastModified". This field bust be copied to the PATCH request body so the AVOS API accepts the patch.
 
-**AVOS API fields / Dataminer DOM mapping**
+### AVOS API fields / DataMiner DOM mapping
 
-**BookingPreKOStartTime** = eventsInstance.LiveStream.First().PreKoUTC  
-<br/>**BookingStartTime** = jobInstance.JobInfo.JobStart  
-<br/>**EventEndTIme** = eventsInstance.EventInfo.EventEnd;  
-<br/>**lastModified** : From GET request id this Content Media ID
+- **BookingPreKOStartTime**: eventsInstance.LiveStream.First().PreKoUTC
+- **BookingStartTime**: jobInstance.JobInfo.JobStart
+- **EventEndTIme**: eventsInstance.EventInfo.EventEnd
+- **lastModified**: From GET request ID, this Content Media ID
 
 ## Patch ContentMedia/live/{id}/technicalMedia/sourceMedia/
 
-**PATCH**
-e.g.: [https://&lt;HOSTNAME&gt;/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472/technicalMedia/sourceMedia/](https://&lt;HOSTNAME&gt;/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472/technicalMedia/sourceMedia/)
+### PATCH
 
-**Body**  
+For example: `https://<HOSTNAME>/external/contentMedia/live/0b26a1d5-b490-4167-b370-c39fa5224472/technicalMedia/sourceMedia/`
+
+### Body
+
 ```json
 {
   "lastModified": "2025-01-23T12:34:56Z",
@@ -193,13 +196,10 @@ e.g.: [https://&lt;HOSTNAME&gt;/external/contentMedia/live/0b26a1d5-b490-4167-b3
 }
 ```
 
+Before the patch can be sent, a `GET ContentMedia/live/{id}` must be sent to receive the field "LastModified". This field bust be copied to the PATCH request body so the AVOS API accepts the patch.
 
-Before the patch can be sent a GET ContentMedia/live/{id} must be sent to receive the field “LastModified”, this field bust be copied to the PATCH request Body to the AVOS API accepts the patch.
+### AVOS API fields / DataMiner DOM mapping
 
-**AVOS API fields / Dataminer DOM mapping**
-
-**heSourceAddresses:** in the JobInstance we have Nodes, these nodes can be of the NodeTypeResouces, these resources can have the DMHE property if they are then they will be added in the correct sorting.
-
-**txEventType: livestream.Txeventtype**
-
-**lastModified** : From GET request id this Content Media ID
+- **heSourceAddresses**: In the job instance, there are nodes, which can be of the "resources" node type. These resources can have the DMHE property. If they do, they will be added with the correct sorting.
+- **txEventType**: livestream.Txeventtype
+- **lastModified**: From GET request ID, this Content Media ID.
