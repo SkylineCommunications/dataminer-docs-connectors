@@ -20,10 +20,10 @@ From version 1.0.0.2, the **DataMiner Connectivity Framework** has been implemen
 
 ### Version Info
 
-| **Range**     | **Description**  | **DCF Implementation** | **Cassandra Complaint** |
-|----------------------|------------------|------------------------|-------------------------|
-| 1.0.0.x              | Initial version  | Yes                    | Yes                     |
-| 1.0.1.x [SLC Main]   | Based on 1.0.0.3 | Yes                    | Yes                     |
+| Range              | Description      | DCF Implementation | Cassandra Compliant |
+|--------------------|------------------|--------------------|---------------------|
+| 1.0.0.x            | Initial version  | Yes                | Yes                 |
+| 1.0.1.x [SLC Main] | Based on 1.0.0.3 | Yes                | Yes                 |
 
 ### Product Info
 
@@ -151,7 +151,7 @@ If the **Decoder** is enabled:
 - **Decoder Input** is type **IP**: **IP DECODER IN (ID:2)** --\> **SDI DECODER OUT (ID:3)**
 - **Decoder Input** is type **ASI**: **ASI DECODER IN (ID:1)** --\> **SDI DECODER OUT (ID:3)**
 
-If the **Main** **Encoder** is enabled:
+If the **Main Encoder** is enabled:
 
 - **Encoder Output** is type **IP**: **SDI ENCODER IN (ID:11)** -- \> **IP MAIN ENCODER OUT (ID:13)**
 - **Encoder Output** is type **ASI**: **SDI ENCODER IN (ID:11) -- \> ASI ENCODER OUT (ID:12)**

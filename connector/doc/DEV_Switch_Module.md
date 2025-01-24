@@ -12,11 +12,11 @@ The connector displays this information on two pages, one for each port of the m
 
 ### Version Info
 
-| **Range**            | **Key Features**                        | **Based on** | **System Impact**          |
-|----------------------|-----------------------------------------|--------------|----------------------------|
-| 1.0.0.x              | Initial version.                        | -            |                            |
-| 2.0.0.x              | DVEs added.                             | 1.0.0.2      | -                          |
-| 3.0.0.x [SLC Main]   | Support added for two ports per module. | 2.0.0.5      | Will delete existing DVEs. |
+| Range                | Key Features                            | Based on | System Impact              |
+|----------------------|-----------------------------------------|----------|----------------------------|
+| 1.0.0.x              | Initial version.                        | -        |                            |
+| 2.0.0.x              | DVEs added.                             | 1.0.0.2  | -                          |
+| 3.0.0.x [SLC Main]   | Support added for two ports per module. | 2.0.0.5  | Will delete existing DVEs. |
 
 ### Product Info
 
@@ -27,14 +27,6 @@ The connector displays this information on two pages, one for each port of the m
 | 3.0.0.x   | A.08 (DEV1951) B.01 (DEV1520) P.01 (DEV7113) Q.03 (DEV2190) |
 
 ## Configuration
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -58,13 +58,13 @@ The element created with this connector consists of the pages detailed below.
 
 ### General
 
-This page displays chassis information such as the **Model Number**, **Serial Number**, **Date of Manufacture** and **Firmware Revision**, and network settings such as **IP address**, **Subnet Mask** and **Gateway**.
+This page displays chassis information such as the **Model Number**, **Serial Number**, **Date of Manufacture** and **Firmware Revision**, and network settings such as **IP address**, **Subnet Mask**, and **Gateway**.
 
-Remote management is accessible through the **SNMP Manager** **table.**
+Remote management is accessible through the **SNMP Manager table.**
 
 ### Attenuation
 
-This page contains system attenuation parameters, such as **Gain Setpoint**, **Output Power** **Setpoint, Optical Output Power**, **Oscillator Optical Power** and **Output Power ALS** (Automatic Laser Shutdown).
+This page contains system attenuation parameters, such as **Gain Setpoint**, **Output Power Setpoint, Optical Output Power**, **Oscillator Optical Power**, and **Output Power ALS** (Automatic Laser Shutdown).
 
 ### Alarm Settings
 
@@ -74,5 +74,5 @@ The **Alarm Table** on this page shows the current alarm conditions present in t
 
 This page contains the following tables:
 
-- **Event** **table**: Shows the current events present in the system.
-- **History** **table**: Shows the records of events that have occurred in the system.
+- **Event table**: Shows the current events present in the system.
+- **History table**: Shows the records of events that have occurred in the system.
