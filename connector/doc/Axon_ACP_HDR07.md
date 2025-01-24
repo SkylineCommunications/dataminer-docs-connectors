@@ -99,13 +99,13 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 Depending on the state of the **Input Selection A**, the following connections are established:
 
-- Fixed Conncetions
+- Fixed Connections
 
-- Between **SDI Input 1** and **Reclocker**.
+  - Between **SDI Input 1** and **Reclocker**.
   - Between **Reclocker** and **SDI Output 1**.
   - Between **Reclocker** and **SDI Output 2**.
   - Between **Reclocker** and **SDI Output 3**.
   - Between **Reclocker** and **SDI Output 4**.
-  - Between **Reclocker** and **SDI Output** **5**.
+  - Between **Reclocker** and **SDI Output 5**.
   - Between **Reclocker** and **SDI Output 6**.
   - Between **Reclocker** and **SDI Output 7**.

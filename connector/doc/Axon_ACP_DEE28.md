@@ -71,7 +71,7 @@ The element has the following data pages:
 - **System Settings**: Contains sample rate converters and other system control parameters.
 - **Decoder Options**: Contains decoder control parameters such as inputs.
 - **Decoder Metadata**: Contains parameters that indicate the value of the metadata parameters. This page also contains the **Program Scale Factor** page button.
-- **E-encoder Inputs Ch1-4/5-8/9-12/13-16**: These pages contain information about the **sources**, **gain**, **phase**, **delay** and **audio** **system** of the output channels.
+- **E-encoder Inputs Ch1-4/5-8/9-12/13-16**: These pages contain information about the **sources**, **gain**, **phase**, **delay** and **audio system** of the output channels.
 - **VO Control**: Contains the VO control parameters. The DBD handles voice-over channels. With the settings on this page, you can configure how the involved program out channels should react to a voice-over signal and how everything is triggered.
 - **Encoder Options**: Contains encoder control parameters such as metadata, downmix, preprocessing, etc.
 - **Add_On Bus**: Contains the ADD-ON bus parameters such as the meta bus control, the quad speed audio bus outputs (Slot 1/2 ~ Slot 31/32) and parameters used to pass processed audio from one quad-speed add-on card to another (override parameters).

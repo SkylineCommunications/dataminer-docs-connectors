@@ -66,7 +66,7 @@ The router instance can be defined on the *Matrix Configuration* page.
 
 ### General
 
-This page displays information about the current **connections**, as well as **WebSocket Info** and information about the **Router** **Instances** and dimensions.
+This page displays information about the current **connections**, as well as **WebSocket Info** and information about the **Router Instances** and dimensions.
 
 ### Router
 
@@ -74,7 +74,7 @@ This page contains information about the available **router inputs** and **outpu
 
 ### Matrix Configuration
 
-This page allows you to configure the **Router** **Instance** and check its dimensions.
+This page allows you to configure the **Router Instance** and check its dimensions.
 
 ### Subscription Details
 

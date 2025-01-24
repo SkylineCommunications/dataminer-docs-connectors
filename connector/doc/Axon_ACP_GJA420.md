@@ -79,7 +79,7 @@ The element has the following data pages:
 - **SDI I/O Status**
 - **Metadata**
 - **Metadata Status**
-- **Alarm** **Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 
@@ -102,5 +102,5 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 The following connections are established:
 
-- **SDI-1**: Between **SDI Input 1** and **SDI Output 1.**
-- **SDI-2**: Between **SDI Input 2** and **SDI Output 1.**
+- **SDI-1**: Between **SDI Input 1** and **SDI Output 1**.
+- **SDI-2**: Between **SDI Input 2** and **SDI Output 1**.

@@ -34,7 +34,7 @@ This connector is used by DVEs that are **automatically generated** when DVE cre
 
 ### General
 
-This page displays general parameters, such as the **Description**, **Hardware** and **Firmware** **Revision**, **Serial** **Number**, **Manufacturer**, **Model**, **Alias** and **Asset ID** for the QMP200 module.
+This page displays general parameters, such as the **Description**, **Hardware** and **Firmware Revision**, **Serial Number**, **Manufacturer**, **Model**, **Alias**, and **Asset ID** for the QMP200 module.
 
 ### Properties
 
