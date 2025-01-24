@@ -22,7 +22,6 @@ The **Tektronix Sentry** connector will display information related to the selec
 | 1.2.1.x          | Change to display key in Program Trap Table.                                                                                                            | No                  | Yes                     |
 | 1.3.0.x          | Supports firmware version 10.3 Improved communication with Tektronix Config Manager Works with the latest version of Tektronix Config Manager (1.1.0.x) | No                  | Yes                     |
 | 1.4.0.x          | New range for firmware 10.6.6 Add ABR parameters for program statistics                                                                                 | No                  | Yes                     |
-| 1.5.0.x          | New range for firmware 10.7.3                                                                                                                           | No                  | Yes                     |
 
 ### Product Info
 
@@ -33,7 +32,6 @@ The **Tektronix Sentry** connector will display information related to the selec
 | 1.2.0.x          | 9.4                                                                |
 | 1.3.0.x          | 10.3+ (10.4 also works with this connector range; tested with 10.4.3) |
 | 1.4.0.x          | 10.6.6                                                             |
-| 1.5.0.x          | 10.7.3                                                             |
 
 ## Installation and configuration
 
