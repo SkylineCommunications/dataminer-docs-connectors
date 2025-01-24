@@ -53,8 +53,7 @@ The web interface is only accessible when the client machine has network access 
 These are the main data pages of the connector:
 
 - The **General** page provides general information about the device, including its **Name** and **Contact** details.
-- On the **Digital Sensor** page, you'll find the **Digital Sensor** table, with each row represents an individual Digital Sensor.
-- **Switch Sensor** page contains the table where each row represents a Switch Sensor.
-- The parameters for the **Internal Sensor** can be found on the page with the same name.
-- **External Relays** page features two tables that represent the External Relays.
-- The Polling configuration can be modified on the *Configuration** page.
+- The **Digital Sensor** and **Switch Sensor** pages each contain a table where each row represents an individual digital sensor or switch sensor, respectively.
+- The **Internal Sensor** page contains the parameters for the internal sensor.
+- The **External Relays** page features two tables that represent the external relays.
+- On the **Configuration** page, you can modify the polling configuration.
