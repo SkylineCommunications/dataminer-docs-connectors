@@ -47,10 +47,6 @@ Fill in the **Jira User Name** and **Jira Password** on the Configuration page. 
 
 In the 1.0.0.x range of the connector, also fill in the **Jira Element** parameter on this same page with the name of the Atlassian Jira element that handles the communication. In addition, specify the **DataMiner User Name** and **DataMiner Password** to connect to the Ticketing module.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

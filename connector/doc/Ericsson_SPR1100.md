@@ -12,19 +12,19 @@ This connector is used to monitor and control an **Ericsson SPR1100** device. Th
 
 ### Version Info
 
-| **Range**            | **Description**                                     | **DCF Integration** | **Cassandra Compliant** |
-|-----------------------------|-----------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                     | Initial version for firmware 6.20.0.120456 or lower | No                  | No                      |
-| 2.0.0.x                     | New version based on firmware above 6.20.0.120456   | Yes                 | No                      |
-| 3.0.0.x (see Notes section) | Corrected naming for several tables.                | Yes                 | No                      |
+| Range                       | Description                                         | DCF Integration | Cassandra Compliant |
+|-----------------------------|-----------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x                     | Initial version for firmware 6.20.0.120456 or lower | No              | No                  |
+| 2.0.0.x                     | New version based on firmware above 6.20.0.120456   | Yes             | No                  |
+| 3.0.0.x (see Notes section) | Corrected naming for several tables.                | Yes             | No                  |
 
 ### Product Info
 
-| **Range**            | **Device Firmware Version** |
-|-----------------------------|-----------------------------|
-| 1.0.0.x                     | 6.20.0.120456 or lower      |
-| 2.0.0.x                     | Above 6.20.0.120456         |
-| 3.0.0.x (see Notes section) | Above 6.20.0.120456         |
+| Range                       | Device Firmware Version |
+|-----------------------------|-------------------------|
+| 1.0.0.x                     | 6.20.0.120456 or lower  |
+| 2.0.0.x                     | Above 6.20.0.120456     |
+| 3.0.0.x (see Notes section) | Above 6.20.0.120456     |
 
 ## Installation and Configuration
 
@@ -49,7 +49,7 @@ The connector has **6** **timers**:
 - **Cisco Parameters**: Every 2 seconds, all switching parameters of Cisco elements in the DMS are retrieved.
 - **Boosted Status Timer**: This timer is only run when the device is rebooted. It polls for the device status every 7 seconds to see whether the device is up again.
 - **Alarm/Status Timer**: Every 30 seconds, the active alarms and status are polled.
-- **Fast Timer**: Every minute, all fast data is polled, e.g. bitrates.
+- **Fast Timer**: Every minute, all fast data is polled, e.g. bit rates.
 - **Medium Timer**: Every 10 minutes, all generic data concerning services, streams and components is polled.
 - **Slow Timer**: Every hour, slowly updating data such as the build, firmware and software versions is updated.
 
@@ -73,7 +73,9 @@ There are nine buttons available on this page:
 - **Software Version**: Displays information about the current software version.
 - **Redundancy**: Displays the IP address, name and status of the primary and secondary devices.
 - **Clean ElementStorage**: Cleans the element storage.
-  Note: Before you **delete an element**, it is advisable to press this button. The connector uses a technique called element storage to keep the active configuration file stored in memory. Cleaning ElementStorage will remove this configuration for a short time.
+
+  > [!NOTE]
+  > Before you **delete an element**, first click the **Clean ElementStorage** button. This connector uses a technique called element storage to keep the active configuration file stored in memory. Cleaning element storage will remove this configuration for a short time.
 
 ### Board Overview
 
@@ -181,98 +183,98 @@ Version 3.0.0.x was created specifically for Proximus. The DisplayColumn option 
 
 (Please note that \[X\] indicates a number)
 
-Over Temperature Warning
-Over Temperature
-Invalid Parameter
-Video/Audio Module Error
-Power On Self Test Failure
-Internal HW Information
-Option Card Build Version Mismatch
-Internal Reflex Operation Compromised
-Video Processor Boot Failure
-Video Processor Alive Count Failure
-Video \[X\] Input Lock
-Video \[X\] Input Mismatch
-Video \[X\] Input Quality
-Video \[X\] Input PCR
-Video \[X\] SCTE35
-Video \[X\] Conversion
-Audio Module Error
-Audio Module CPU loading
-Audio DSP Failed to Boot
-Audio \[X\] Input lock
-Audio \[X\] TS input error
-Audio \[X\] Compressed audio not detected
-Audio \[X\] Input frame CRC failure
-Audio \[X\] Unsupported sample rate
-Ethernet interface Ctrl1 link down on Control network
-Ethernet interface Ctrl1 on Control network: duplicate IP detected
-Ethernet interface Ctrl2 link down on Control network
-Ethernet interface Ctrl2 on Control network: duplicate IP detected
-Control Network Lost
-Virtual IP address on Control network: duplicate IP detected
-Ethernet interface Data3 link down in Data Interface Group 3-4
-Ethernet interface Data3 in Data Interface Group 3-4: duplicate IP detected
-Ethernet interface Data4 link down in Data Interface Group 3-4
-Ethernet interface Data4 in Data Interface Group 3-4: duplicate IP detected
-Data Interface Group 3-4: Data Network Lost
-Virtual IP address on Data Interface Group 3-4: duplicate IP detected
-Ethernet interface Data1 link down in Data Interface Group 1-2
-Ethernet interface Data1 in Data Interface Group 1-2: duplicate IP detected
-Ethernet interface Data2 link down in Data Interface Group 1-2
-Ethernet interface Data2 in Data Interface Group 1-2: duplicate IP detected
-Data Interface Group 1-2: Data Network Lost
-Virtual IP address on Data Interface Group 1-2: duplicate IP detected
-Primary Ethernet interface not in use on Control Network
-Primary Ethernet interface not in use on Data Interface Group 3-4
-Primary Ethernet interface not in use on Data Interface Group 1-2
-Network Configuration failed
-Option card failed to boot
-Option Card Comms Failure in slot
-HW Configuration Mismatch in slot
-Unrecognized Option Card in slot
-Referenced Output Stream Unavailable from slot 1
-Referenced Output Stream Unavailable from slot 2
-Referenced Output Stream Unavailable from slot 3
-Referenced Output Stream Unavailable from slot 4
-Referenced Output Stream Unavailable from slot 5
-Referenced Output Stream Unavailable from slot 6
-Fan Failure
-+12V A Failed
-+12V B Failed
-Real Time Clock
-NTP Server Response Timeout
-Internal Hardware Issue
-Host Build Version Mismatch
-System Clock Not Locked
-Chassis Identity Not Programmed
-Selected Mux SCR Source is not present
-Host Identity Not Programmed
-Uncontrolled release
-No identity license
-TS NIT is not valid
-Unsupported Option Card
-Unsupported Software on Option Card
-POIS URL not configured
-Invalid POIS URL configured
-POIS connection failure
-Invalid response from POIS
-Lost Contact With Peer
-Unit Unavailable
-Configuration Mismatch
-Redundant Secondary Active
-Version Mismatch
-Redundancy Parameters Unavailable
-Conflicting Roles
-Conflicting IP Addresses
-Conflicting Status
-Pairing Mismatch
-MGP Failure
-MGP Collision
-MGP Spurious
-Datagram loss is greater than 0
-Sequence number errors in Transport Stream
-No data available for Input Transport Stream
-Input Transport Stream running on Backup
-Input Transport Stream missing
-No data available for Input TS (\[Additional Info\])
+- Over Temperature Warning
+- Over Temperature
+- Invalid Parameter
+- Video/Audio Module Error
+- Power On Self Test Failure
+- Internal HW Information
+- Option Card Build Version Mismatch
+- Internal Reflex Operation Compromised
+- Video Processor Boot Failure
+- Video Processor Alive Count Failure
+- Video \[X\] Input Lock
+- Video \[X\] Input Mismatch
+- Video \[X\] Input Quality
+- Video \[X\] Input PCR
+- Video \[X\] SCTE35
+- Video \[X\] Conversion
+- Audio Module Error
+- Audio Module CPU loading
+- Audio DSP Failed to Boot
+- Audio \[X\] Input lock
+- Audio \[X\] TS input error
+- Audio \[X\] Compressed audio not detected
+- Audio \[X\] Input frame CRC failure
+- Audio \[X\] Unsupported sample rate
+- Ethernet interface Ctrl1 link down on Control network
+- Ethernet interface Ctrl1 on Control network: duplicate IP detected
+- Ethernet interface Ctrl2 link down on Control network
+- Ethernet interface Ctrl2 on Control network: duplicate IP detected
+- Control Network Lost
+- Virtual IP address on Control network: duplicate IP detected
+- Ethernet interface Data3 link down in Data Interface Group 3-4
+- Ethernet interface Data3 in Data Interface Group 3-4: duplicate IP detected
+- Ethernet interface Data4 link down in Data Interface Group 3-4
+- Ethernet interface Data4 in Data Interface Group 3-4: duplicate IP detected
+- Data Interface Group 3-4: Data Network Lost
+- Virtual IP address on Data Interface Group 3-4: duplicate IP detected
+- Ethernet interface Data1 link down in Data Interface Group 1-2
+- Ethernet interface Data1 in Data Interface Group 1-2: duplicate IP detected
+- Ethernet interface Data2 link down in Data Interface Group 1-2
+- Ethernet interface Data2 in Data Interface Group 1-2: duplicate IP detected
+- Data Interface Group 1-2: Data Network Lost
+- Virtual IP address on Data Interface Group 1-2: duplicate IP detected
+- Primary Ethernet interface not in use on Control Network
+- Primary Ethernet interface not in use on Data Interface Group 3-4
+- Primary Ethernet interface not in use on Data Interface Group 1-2
+- Network Configuration failed
+- Option card failed to boot
+- Option Card Comms Failure in slot
+- HW Configuration Mismatch in slot
+- Unrecognized Option Card in slot
+- Referenced Output Stream Unavailable from slot 1
+- Referenced Output Stream Unavailable from slot 2
+- Referenced Output Stream Unavailable from slot 3
+- Referenced Output Stream Unavailable from slot 4
+- Referenced Output Stream Unavailable from slot 5
+- Referenced Output Stream Unavailable from slot 6
+- Fan Failure
+- +12V A Failed
+- +12V B Failed
+- Real Time Clock
+- NTP Server Response Timeout
+- Internal Hardware Issue
+- Host Build Version Mismatch
+- System Clock Not Locked
+- Chassis Identity Not Programmed
+- Selected Mux SCR Source is not present
+- Host Identity Not Programmed
+- Uncontrolled release
+- No identity license
+- TS NIT is not valid
+- Unsupported Option Card
+- Unsupported Software on Option Card
+- POIS URL not configured
+- Invalid POIS URL configured
+- POIS connection failure
+- Invalid response from POIS
+- Lost Contact With Peer
+- Unit Unavailable
+- Configuration Mismatch
+- Redundant Secondary Active
+- Version Mismatch
+- Redundancy Parameters Unavailable
+- Conflicting Roles
+- Conflicting IP Addresses
+- Conflicting Status
+- Pairing Mismatch
+- MGP Failure
+- MGP Collision
+- MGP Spurious
+- Datagram loss is greater than 0
+- Sequence number errors in Transport Stream
+- No data available for Input Transport Stream
+- Input Transport Stream running on Backup
+- Input Transport Stream missing
+- No data available for Input TS (\[Additional Info\])

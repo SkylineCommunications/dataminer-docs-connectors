@@ -55,14 +55,6 @@ SMART-SERIAL CONNECTION:
   - **IP port**: The IP port of the destination. Specify "any".
   - **Bus address**: The bus address or slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:

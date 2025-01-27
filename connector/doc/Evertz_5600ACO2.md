@@ -10,10 +10,10 @@ The Evertz 5600ACO2 is a dual automatic changeover system with 2 power supplies.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                     | **Based on** | **System Impact**                    |
-|----------------------|----------------------------------------------------------------------|--------------|--------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial range.                                                       | -            | -                                    |
-| 1.0.1.x [SLC Main]   | Improvements to the keys to correctly display which PSU failed, etc. | 1.0.0.1      | Loss of trend and alarm information. |
+| Range              | Key Features                                                         | Based on | System Impact                        |
+|--------------------|----------------------------------------------------------------------|----------|--------------------------------------|
+| 1.0.0.x [Obsolete] | Initial range.                                                       | -        | -                                    |
+| 1.0.1.x [SLC Main] | Improvements to the keys to correctly display which PSU failed, etc. | 1.0.0.1  | Loss of trend and alarm information. |
 
 ### Product Info
 

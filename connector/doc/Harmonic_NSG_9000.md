@@ -14,10 +14,10 @@ Each QAM may serve a different application, allowing a single device to concurre
 
 ### Version Info
 
-| **Range**     | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version                           | No                  | No                      |
-| 2.0.0.x              | Customer-specific version for Unity Media | No                  | Yes                     |
+| Range              | Description                               | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version                           | No              | No                  |
+| 2.0.0.x            | Customer-specific version for Unity Media | No              | Yes                 |
 
 ### Product Info
 

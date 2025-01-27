@@ -12,10 +12,10 @@ The model **ALT-C300** is a redundant ALTO amplifier chassis with auto switch be
 
 Ranges of the connector
 
-| **Range**     | **Description**                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                  | Yes                 | Yes                     |
-| 1.0.1.x [SLC Main]   | Based on 1.0.0.3. Fixed validator error regarding table index using discreet as measurement type. | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | Yes | Yes |
+| 1.0.1.x [SLC Main] | Based on 1.0.0.3. Fixed validator error regarding table index using discreet as measurement type. | Yes | Yes |
 
 ### Product Info
 
@@ -46,7 +46,7 @@ SNMP Settings:
 
 ### General
 
-This page displays general parameters such as **System Description**, **Contact** and **Name**, as well as a **Summary Alarm.**
+This page displays general parameters such as **System Description**, **Contact** and **Name**, as well as a **Summary Alarm**.
 
 The page also contains the following three buttons:
 

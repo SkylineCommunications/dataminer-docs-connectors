@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 On the **Security** page, you must specify the correct **Username** and **Password** to be able to poll information.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

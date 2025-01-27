@@ -53,14 +53,6 @@ SNMP Settings:
 - **Get community string**: *public*
 - **Set community string**: *private*
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -74,7 +66,8 @@ The connector provides the following pages:
 - **System:** Allows you to configure the system date, its time reference (local, GPS, NTP) and the alarm temperature threshold.
 
 - **TX Configuration:** Displays a table with the Tx configuration (presence and priority).
-  - **PSU Alarms:** Displays a table with the PSU alarms (voltage and current).
+
+- **PSU Alarms:** Displays a table with the PSU alarms (voltage and current).
 
 - **Amplifier:** Displays the amplifier model.
 
@@ -83,12 +76,14 @@ The connector provides the following pages:
 - **External Amplifier:** Allows you to monitor and configure the external amplifier (nominal, actual and reflected power, power percentage, switch mode, etc.).
 
 - **External Amplifier Alarms:** Displays alarms for monitoring power forward high/low, power reflected, feedback power, temperature and fans.
-  - **External PSU Alarms:** Displays a table with the PSU alarms (voltage and current).
+
+- **External PSU Alarms:** Displays a table with the PSU alarms (voltage and current).
 
 - **Modulator:** DVB-T2 modulator overview (presence of 1PPS, 10MHz and TX frequency signals).
 
 - **Modulator Configuration:** Displays a table with DVB-T2 settings, i.e. the channel number, country, channel offset and channel frequency.
-  - **Modulator Alarms:** Displays a table with DVB-T2 alarms (e.g. temperature, 1PPS, 10MHz and TS presence, etc.).
+
+- **Modulator Alarms:** Displays a table with DVB-T2 alarms (e.g. temperature, 1PPS, 10MHz and TS presence, etc.).
 
 - **Input:** Provides information related to the inputs (GbE1/2 and ASI1/2) TS status (locked, bitrate, ASI format and selected input) in table format.
 
@@ -96,6 +91,6 @@ The connector provides the following pages:
 
 - **GbE:** Provides an overview of the GbE (source 1/2 status and selected source), as well as data related to the GbE status (TS, ASI format, TS bitrate, delay and alignment, etc.) and GbE Alarms (GbE1/2 lock and ASI1/2 Lock).
 
-- **GbE Configuration Seamless:** Contains settings related to the GbE seamless (enable, input 1/2, forced input, source switch command and TS ID control).
+  - **GbE Configuration Seamless:** Contains settings related to the GbE seamless (enable, input 1/2, forced input, source switch command and TS ID control).
   - **GbE Control Seamless:** Contains seamless control settings (enable mask, enabled alarm mask, user PID and interval).
   - **GbE Status Seamless:** Displays a table with seamless stream error counters (e.g. continuity, CRC, PAR, PMT, Sync Byte, Sync Loss, etc.).
