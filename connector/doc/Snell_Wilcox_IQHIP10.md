@@ -12,7 +12,7 @@ The connector allows the management of the **Snell Wilcox IQHIP10** using a smar
 
 ### Version Info
 
-| **Range** | **Description**    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description        | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version    | No                  | Yes                     |
 | 1.0.1.x          | DCF Implementation | Yes                 | Yes                     |

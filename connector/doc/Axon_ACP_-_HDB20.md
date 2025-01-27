@@ -63,13 +63,13 @@ Connectivity for this protocol is managed by the parent protocol Axon ACP.
 - **SDI Output 2**: A single fixed interface of type **output**.
 - **SDI Output 3**: A single fixed interface of type **output**.
 - **AES/EBU Output 1**: A single fixed interface of type **output**.
-- **AES/EBU** **Output 2**: A single fixed interface of type **output**.
-- **AES/EBU** **Output 3**: A single fixed interface of type **output**.
-- **AES/EBU** **Output 4**: A single fixed interface of type **output**.
+- **AES/EBU Output 2**: A single fixed interface of type **output**.
+- **AES/EBU Output 3**: A single fixed interface of type **output**.
+- **AES/EBU Output 4**: A single fixed interface of type **output**.
 - **SYNAPSE Bus Output 1**: A single fixed interface of type **output**.
-- **SYNAPSE Bus** **Output 2**: A single fixed interface of type **output**.
-- **SYNAPSE Bus** **Output 3**: A single fixed interface of type **output**.
-- **SYNAPSE Bus** **Output 4**: A single fixed interface of type **output**.
+- **SYNAPSE Bus Output 2**: A single fixed interface of type **output**.
+- **SYNAPSE Bus Output 3**: A single fixed interface of type **output**.
+- **SYNAPSE Bus Output 4**: A single fixed interface of type **output**.
 
 ### Connections
 

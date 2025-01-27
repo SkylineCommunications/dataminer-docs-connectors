@@ -62,10 +62,6 @@ SNMP Settings:
 
 On the **General** page, click the **Login** page button and specify the **Username** and **Password**.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

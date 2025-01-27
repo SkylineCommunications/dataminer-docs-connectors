@@ -79,7 +79,7 @@ On this page, you can monitor parameters such as cable model upstream channel **
 
 ### Measurements -- Downstream Channels
 
-On this page, you can monitor parameters such as cable model downstream channel **offline**, **online**, and **initializing** elements, the **channel capacity**, **bitrate**, and **RF** **utilization**, as well as the **signal to noise ratio**, **error**, **unerror**, and **corrected bits**, and the **consecutive/non-consecutive alarm state**.
+On this page, you can monitor parameters such as cable model downstream channel **offline**, **online**, and **initializing** elements, the **channel capacity**, **bitrate**, and **RF utilization**, as well as the **signal to noise ratio**, **error**, **unerror**, and **corrected bits**, and the **consecutive/non-consecutive alarm state**.
 
 ### Measurement - Gigabit Interfaces
 
@@ -87,7 +87,7 @@ On this page, you can monitor parameters such as **bitrate**, **utilization**, *
 
 ### Interfaces
 
-This page displays information about the interfaces, such as the **type**, **bandwidth**, **state**, **administrative** **status**, and **operational status**.
+This page displays information about the interfaces, such as the **type**, **bandwidth**, **state**, **administrative status**, and **operational status**.
 
 ### Web Interface
 

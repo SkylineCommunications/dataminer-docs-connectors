@@ -86,10 +86,6 @@ In addition, in range **1.0.0.x and 1.0.1.x**, configure the following settings:
 
 - **Collector**: Fill this out with the DMA ID/element ID of the Generic CM Collector used to provision the CMs of the CCAP.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Threshold Table
 
 In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:

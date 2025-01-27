@@ -44,10 +44,6 @@ When the element has been created, several things need to be configured on the *
 - **Auto Switch Delay**: The hysteresis time that the automatic routing/unrouting will wait before checking the current state again and performing the expected switch based on this result.
   This hysteresis makes it possible to ignore short outages or short temporary streams.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 There are two Visual Overview pages: **SKY -\> BT** and **BT -\> SKY**. Both pages have the same structure and capabilities; only the data will be different.

@@ -26,7 +26,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Configuration
 
-The connector will determine which modules must be controlled based on the **element** **names**.
+The connector will determine which modules must be controlled based on the **element names**.
 
 For a module to be recognized as to be controlled by this connector, its name must start with the controller name.
 

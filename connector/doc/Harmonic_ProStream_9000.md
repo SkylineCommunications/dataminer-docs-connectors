@@ -14,13 +14,13 @@ Aside from the IP address parameter, all settings in this connector require that
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version.                                                                                                                                  | No                  | No                      |
-| 1.0.1.x   | New firmware based on 1.0.1.x (see below).                                                                                                        | No                  | No                      |
-| 1.1.0.x   | HTTP-over-serial connection implemented for gzip encoding (because not yet supported by DataMiner via HTTP connection).                           | No                  | No                      |
-| 1.1.1.x   | HTTP connection for non-gzip encoding along with HTTP-over-serial for gzip encoding (because not yet supported by DataMiner via HTTP connection). | No                  | No                      |
-| 1.1.2.x   | More meaningful display keys.                                                                                                                     | No                  | Yes (1.1.2.3 onwards)   |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | No |
+| 1.0.1.x | New firmware based on 1.0.1.x (see below). | No | No |
+| 1.1.0.x | HTTP-over-serial connection implemented for gzip encoding (because not yet supported by DataMiner via HTTP connection). | No | No |
+| 1.1.1.x | HTTP connection for non-gzip encoding along with HTTP-over-serial for gzip encoding (because not yet supported by DataMiner via HTTP connection). | No | No |
+| 1.1.2.x | More meaningful display keys. | No | Yes (1.1.2.3 onwards) |
 
 ### Product Info
 

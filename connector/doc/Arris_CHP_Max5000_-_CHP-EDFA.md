@@ -34,7 +34,7 @@ This page displays the generic status of the card, which includes **slot informa
 
 ### Amplifier
 
-This page displays the amplifier information. **Amplifier** **Input**, **Laser** and **Output** tables are included.
+This page displays the amplifier information. **Amplifier Input**, **Laser** and **Output** tables are included.
 
 ### Configuration
 

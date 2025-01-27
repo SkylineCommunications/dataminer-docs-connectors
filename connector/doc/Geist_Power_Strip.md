@@ -45,14 +45,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -65,7 +57,7 @@ The element created with this connector consists of the following data pages:
 
 - **Power Strip**: Displays information about the power strip module, including the following information:
 
-- **Availability**: Indicates whether the module is *available*, *unavailable* or *partially available*.
+  - **Availability**: Indicates whether the module is *available*, *unavailable* or *partially available*.
   - **Power**
   - **Total Energy**
   - **PDU Phase** table: Contains **Voltage**, **Current** and **Power** information.

@@ -12,10 +12,10 @@ The **Evertz EMX-FC** connector provides general information about the device an
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact**                      |
-|----------------------|--------------------------------------------------|--------------|----------------------------------------|
-| 1.0.1.x [Obsolete]     |Full connector QA changing IDs and parameter names. | 1.0.0.1      | -                                      |
-| 1.0.2.x [SLC Main]   | Adds redundant polling.                          | 1.0.1.2      | Added interface for redundant polling. |
+| Range              | Key Features                                        | Based on | System Impact                          |
+|--------------------|-----------------------------------------------------|----------|----------------------------------------|
+| 1.0.1.x [Obsolete] | Full connector QA changing IDs and parameter names. | 1.0.0.1  | -                                      |
+| 1.0.2.x [SLC Main] | Adds redundant polling.                             | 1.0.1.2  | Added interface for redundant polling. |
 
 ### Product Info
 
@@ -48,14 +48,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

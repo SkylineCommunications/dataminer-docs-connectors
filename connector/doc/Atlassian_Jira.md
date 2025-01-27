@@ -51,7 +51,7 @@ You can either configure **Username** and **Password**, or configure the **Autho
 
 This page displays information related to the JSON command used to create a ticket.
 
-The **Create Query** parameter displays the actual **JSON** **command** that will be sent to the Atlassian Jira interface. The **Ticket Creation Table** can be used to inspect the JSON in a more user-friendly way. Clicking the **Execute** button will send the JSON as displayed in the Create Query parameter to the REST interface.
+The **Create Query** parameter displays the actual **JSON command** that will be sent to the Atlassian Jira interface. The **Ticket Creation Table** can be used to inspect the JSON in a more user-friendly way. Clicking the **Execute** button will send the JSON as displayed in the Create Query parameter to the REST interface.
 
 The **Create Query** and **Ticket Creation Table** are **synced** at all times, which means if either one of these is altered, the other table will also be altered.
 
@@ -68,7 +68,7 @@ On the left side of the page, you can find the **Update Settings** and **Log Set
 - The **Update settings** are only used for tickets that are **updated automatically** with the **Advanced** parameter, for example from an Automation script. These settings make sure that there are **not too many ticket updates** in the specified period of time. When the **maximum is reached**, the ticket updates will be updated later once the interval has passed.
 - The **Log Settings** can be used to manage the **number of entries** in the **Ticket Log Table**.
 
-On the right side of the page, you can find the settings **necessary** **to create tickets**. The **Ticket Location URL** is used in the commands that **create** and **update** **tickets**. This parameter should contain the ticket URL, by default *rest/api/latest/issue*. The **Authentication** button can be used to set the basic authorization settings for the Atlassian Jira environment. This can be either the **Authorization Key** or a **Username** and **Password** combination.
+On the right side of the page, you can find the settings **necessary to create tickets**. The **Ticket Location URL** is used in the commands that **create** and **update tickets**. This parameter should contain the ticket URL, by default *rest/api/latest/issue*. The **Authentication** button can be used to set the basic authorization settings for the Atlassian Jira environment. This can be either the **Authorization Key** or a **Username** and **Password** combination.
 
 The **Advanced** button can be used to immediately set certain values in the JSON command and send the command to the Atlassian Jira interface. The syntax for the Advanced parameter must be **\<GUID\>\|\<Action\>(*CREATE* or *UPDATE*)\|field;value\|field n;value n\|.** The fields specified in this parameter will be added to the existing fields in the **Ticket Creation Table** and the command will be sent immediately. This parameter can for example be used in combination with an Automation script that **generates tickets automatically**.
 
@@ -92,7 +92,7 @@ The **Create Log Table** contains information about the latest commands that hav
 The number of entries in the **Create Log Table** can be managed by setting the **Maximum Entries** and/or the **Remove Entries Older Than** parameter.
 
 - Setting the **Maximum Entries** parameter will make sure that the oldest tickets are always deleted when a new row needs to be added and the maximum number of entries has been reached.
-- The **Remove Entries Older Than** parameter can be used to clean the table on a daily basis. **Every** **24 hours**, all tickets older than the value in this parameter will be deleted.
+- The **Remove Entries Older Than** parameter can be used to clean the table on a daily basis. **Every 24 hours**, all tickets older than the value in this parameter will be deleted.
 
 ### Statistics
 

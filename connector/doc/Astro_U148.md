@@ -209,7 +209,7 @@ DCF is supported in range 1.0.0.x, from version **1.0.0.8 onwards**. It can only
 
 #### Internal Connections
 
-**Internal Connections** between the **Sat/RF Input Ports** and the **Ethernet Data Outputs** are mapped and characterized by the following connection properties: **Transponder Name**, **TS-ID**, **ONID**, **Input Frequency** and **MC (Syntax** **"TX Destination IP:TX Destination Port"** **)**.
+**Internal Connections** between the **Sat/RF Input Ports** and the **Ethernet Data Outputs** are mapped and characterized by the following connection properties: **Transponder Name**, **TS-ID**, **ONID**, **Input Frequency**, and **MC (Syntax "TX Destination IP:TX Destination Port" )**.
 
 ## Notes
 

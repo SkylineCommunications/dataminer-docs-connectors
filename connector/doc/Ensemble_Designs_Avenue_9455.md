@@ -46,10 +46,6 @@ SNMP Settings:
 
 When you have created a new element with this connector, specify the number of available slots on the **Slot Management** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### Frame Information

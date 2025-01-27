@@ -140,7 +140,7 @@ This page has several subpages:
 - **Debug**: Allows you to enable more detailed **logging** specifically for statistics data, generating new log files in the specified folder with a rolling window of 2 days and a file size of 10 MB. Files are generated in the following format: `{Protocol.ElementName}-statisticslog[{DnsName}].txt`. The **Statistics Buffer State** parameter indicates whether DataMiner is struggling to handle the volume and frequency of data being pushed by the TXCore. If there are difficulties, the parameter will display *Overflow*. For SRM integrations, you can enable the **SRM Information** parameter, making the SRM Resources page and its subpages visible in the element's data layout.
 
 > [!IMPORTANT]
-> Telemetry data is sent to DataMiner asynchronously. To facilitate this, DataMiner establishes a dedicated connection with each TXCore node to receive the necessary telemetry data for streams, sources, and outputs. To prevent issues from excessive data and high frequency rates, the Techex MWCore DataMiner connector uses an **internal buffer** for message processing. This buffer can queue up to **65 messages**. Any message received after the queue is full will be dropped. If a message is dropped, the Statistics Buffer State parameter will display *Overflow*. The parameter will revert to the *Normal* state once the queue frees up approximately 20% and incoming messages can be successfully added to the queue again. The system waits for the queue to free up 20% to avoid the alarm toggling.
+> Telemetry data is sent to DataMiner asynchronously. To facilitate this, DataMiner establishes a dedicated connection with each TXCore node to receive the necessary telemetry data for streams, sources, and outputs. To prevent issues from excessive data and high frequency rates, the Techex MWCore DataMiner connector uses an **internal buffer** for message processing. This buffer can queue up to **300 messages**. Any message received after the queue is full will be dropped. If a message is dropped, the Statistics Buffer State parameter will display *Overflow*. The parameter will revert to the *Normal* state once the queue frees up approximately 50% and incoming messages can be successfully added to the queue again. The system waits for the queue to free up 20% to avoid the alarm toggling.
 
 ### Devices
 
@@ -159,11 +159,11 @@ The MWEdges page displays a table listing either all TXEdges or those specified 
 
 The information for the monitored TXEdges is further detailed on the following subpages:
 
-- **Streams**: Lists streams of all monitored TXEdges. You can add and delete streams via the right-click menu, and edit streams directly in the table columns.
+- **Streams**: Lists streams of all monitored TXEdges. You can add and delete streams via the right-click menu, and edit streams directly in the table columns. Using the right-click menu, you can also clear stats for all sources and outputs of the selected stream.
 
-- **Sources**: Lists sources of all monitored TXEdges. You can add and delete sources via the right-click menu of the Sources table, and edit sources directly in the table columns. In the Sources Statistics table, telemetry data is added when the statistics connection is enabled, such as bit rates, missing packets, and more.
+- **Sources**: Lists sources of all monitored TXEdges. You can add and delete sources via the right-click menu of the Sources table, and edit sources directly in the table columns. Using the right-click menu, you can also clear stats for selected source. In the Sources Statistics table, telemetry data is added when the statistics connection is enabled, such as bit rates, missing packets, and more.
 
-- **Outputs**: Lists outputs of all monitored TXEdges. You can add and delete outputs via the right-click menu of the Outputs table, and edit outputs directly in the table columns. In the Output Statistics and Output Listener Statistics tables, telemetry data is added when the statistics connection is enabled, such as bit rates, missing packets, and more.
+- **Outputs**: Lists outputs of all monitored TXEdges. You can add and delete outputs via the right-click menu of the Outputs table, and edit outputs directly in the table columns. Using the right-click menu, you can also clear stats for selected output. In the Output Statistics and Output Listener Statistics tables, telemetry data is added when the statistics connection is enabled, such as bit rates, missing packets, and more.
 
 - **ETR 290**: When the statistics connection is enabled, the table on this subpage lists ETR messages related to the sources.
 

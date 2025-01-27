@@ -46,10 +46,6 @@ HTTP CONNECTION:
 
 For the connector to work properly, you need to specify the username and password on the General page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

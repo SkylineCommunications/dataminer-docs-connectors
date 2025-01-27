@@ -66,10 +66,6 @@ SNMP Settings:
 
 The connector uses custom properties to configure the Network, Market, and Hub of the CCAP, so ensure that these are configured to link the views to the EPM data cards and full EPM functionality.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Threshold Table
 
 In the threshold table, you can define limits for each polled modulation. The available Key Performance Indicators (KPIs) for setting thresholds are:
