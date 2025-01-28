@@ -12,11 +12,11 @@ The microservice-based tx darwin platform is used for live media processing, tra
 
 ### Version Info
 
-| Range              | Features                     | Based on | System Impact                     |
-|--------------------|------------------------------|----------|-----------------------------------|
-| 1.0.0.x            | Initial version.             | -        | -                                 |
-| 1.0.1.x            | Update for firmware 1.4.2.   | 1.0.0.2  | -                                 |
-| 1.0.2.x [SLC Main] | Decoupling Kafka Consumption | 1.0.0.2  | Generic Kafka Consumer dependency |
+| Range              | Features                     | Based on | System Impact                      |
+|--------------------|------------------------------|----------|------------------------------------|
+| 1.0.0.x            | Initial version.             | -        | -                                  |
+| 1.0.1.x            | Update for firmware 1.4.2.   | 1.0.0.2  | -                                  |
+| 1.0.2.x [SLC Main] | Kafka consumption decoupled. | 1.0.0.2  | Generic Kafka Consumer dependency. |
 
 ### Product Info
 
@@ -57,7 +57,7 @@ To poll REST API data, the username and password need to be filled in. You can t
 
 To subscribe to start receiving Kafka messages after configuring the parameters above, click **Consume** to start the connection. The **Connection** parameter on the same page will show if this operation worked.
 
-For Kafka messages to work, an element running the **Generic Kafka Consumer** must be running and sending interapp messages to the Darwin element. Once the **Modules** command in the **Poll Manager Table** is enabled, data will be filled in the **Schema Modules Table** on the **General** page, and you will be able to control the processing and frequency for each module from there.
+For Kafka messages to work, an element running the **Generic Kafka Consumer** must be running and sending InterApp messages to the Darwin element. Once the **Modules** command in the **Poll Manager Table** is enabled, data will be filled in in the **Schema Modules Table** on the **General** page, and you will be able to control the processing and frequency for each module from there.
 
 ### Layout
 
