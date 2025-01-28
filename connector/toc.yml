@@ -6796,6 +6796,8 @@
   items:
   - name: Promax RANGERNeo 4
     topicUid: Connector_help_Promax_RANGERNeo_4
+  - name: Promax Neo
+    topicUid: Connector_help_PROMAX_NEO
 - name: Prometheus
   items:
   - name: Prometheus Data Exporter
