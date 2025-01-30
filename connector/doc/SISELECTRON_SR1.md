@@ -5,13 +5,14 @@ uid: Connector_help_SISELECTRON_SR1
 # Siselectron SR1
 
 ## About
-This is a DataMiner connector for the **Siselectron SR1**, a rack mount server which utilizes Synamedia's Media Edge Gateway which has Decoding, Encoding Transcoding/Processing, and other features.
+
+This is a DataMiner connector for the **Siselectron SR1**, a rack mount server that utilizes Synamedia's Media Edge Gateway, which can be used for decoding, encoding, and transcoding/processing.
 
 ### Key Features
 
-- **Channel Monitoring and Editing**: Look through each of the channels on the device, monitor them to detect changes on critical parameters, and edit their Input, Descrambling, Video, Audio, and Output settings. 
-- **Encoder and Decoder Settings**: Monitor and change the settings on all aspects of the encoders and decoders on the device.
-- **Configuration**: Go through the Licenses, PCIe cards, and Alarm History of the device. 
+- **Channel monitoring and editing**: Look through each of the channels on the device, monitor them to detect changes on critical parameters, and edit their input, descrambling, video, audio, and output settings.
+- **Encoder and decoder settings**: Monitor and change any encoder and decoder settings on the device.
+- **Configuration**: Go through the Licenses, PCIe cards, and Alarm History of the device.
 
 ## Use Cases
 
@@ -19,17 +20,16 @@ This is a DataMiner connector for the **Siselectron SR1**, a rack mount server w
 
 **Challenge:** In large, distributed systems, monitoring and managing device alarms remotely can be a challenge, particularly for maintaining system reliability.
 
-**Solution:** The **Siselectron SR1** connector allows users to remotely set and manage alarm thresholds for Channels, Encoders, Decoders, and other settings. This feature enables proactive monitoring and reduces the risk of unexpected system failures.
+**Solution:** With this connector, you can remotely set and manage alarm thresholds for channels, encoders, decoders, and more. This enables proactive monitoring and reduces the risk of unexpected system failures.
 
-**Benefit:** Users can **quickly address potential issues** in real time, improving the reliability and performance of their network operations.
+**Benefit:** Potential issues can be quickly addressed in real time, improving the reliability and performance of network operations.
+
+## Prerequisites
+
+- **DataMiner version 10.2 or higher** is required.
+- **Network access**: You must have a username and password for the device to be able to log in on the **Authentication** page of the element, so that the connector can retrieve data from the device.
 
 ## Technical Information
 
-### Prerequisites
-
-- **DataMiner version 10.2 or higher** is required for compatibility with the Siselectron SR1.
-- **Network access** Logging in on the **Authentication** page is essential for getting the data in the device. An username and password for the device is required. 
-
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_My_connector_name_Technical).
-
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_SISELECTRON_SR1_Technical).
