@@ -21,7 +21,8 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.0.x            | Initial version.                                                                     | No              | No                  |
 | 1.0.1.x            | Added support for software version 2.3 (Module GT11).                                | No              | No                  |
 | 1.1.0.x            | Added HTTP connection for retrieving QAM outputs and services.                       | No              | No                  |
-| 1.1.1.x [SLC Main] | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
+| 1.1.1.x            | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
+| 1.2.0.x [SLC Main] | Support Firmware version 3.5.2 MIBs.                                                 | No              | Yes                 |
 
 ### Product Info
 
@@ -30,11 +31,13 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.0.x | 1.4.1                      |
 | 1.0.1.x | 2.3<br>3.0.1               |
 | 1.1.1.x | 2.3<br>3.0.1               |
+| 1.2.0.x | 3.5.2                      |
 
 ### Exported connectors
 
 | Exported Connector | Description |
 |--------------------|-------------|
+| WISI Tangram GT11  | GT11 table  |
 | WISI Tangram GT21  | GT21 table  |
 | WISI Tangram GT22  | GT22 table  |
 | WISI Tangram GT23  | GT23 table  |
@@ -45,10 +48,10 @@ This connector will export different connectors based on the retrieved data. A l
 
 The connector supports the following types:
 
+- **GT11**
 - **GT21**
 - **GT22**
 - **GT23**
-- **GT11**
 - **GT31**
 - **GT41**
 
