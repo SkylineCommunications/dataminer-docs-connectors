@@ -22,7 +22,7 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.1.x            | Added support for software version 2.3 (Module GT11).                                | No              | No                  |
 | 1.1.0.x            | Added HTTP connection for retrieving QAM outputs and services.                       | No              | No                  |
 | 1.1.1.x            | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
-| 1.2.0.x [SLC Main] | Support Firmware version 3.5.2 MIBs.                                                 | No              | Yes                 |
+| 1.2.0.x [SLC Main] | Added suppport for firmware version 3.5.2 MIBs.                                      | No              | Yes                 |
 
 ### Product Info
 
