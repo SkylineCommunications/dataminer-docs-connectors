@@ -50,7 +50,7 @@ If a connection has been established, data will be displayed on the following pa
 
 - **Contracts**: Displays the Contracts table.
 - **Groups**: Displays the Groups table.
-- **CP Codes**: Displays the CP Codes table. Enabling the **Poll Metrics** parameter will fill the Traffic per CP Code table. Enabling the **Poll Real-Time Metrics** parameter will fil the Real-Time Traffic per CP Code table and Dimensions table.
+- **CP Codes**: Displays the CP Codes table. Enable the **Poll Metrics** parameter to get data in the Traffic per CP Code table. Enable the **Poll Real-Time Metrics** parameter to get data in the Real-Time Traffic per CP Code table and Dimensions table.
 - **Network Storage**: Displays the storage groups and associated upload accounts.
 - **Traffic**: Displays the Traffic per CP Code table and Real-Time Traffic per CP Code table.
 - **Structure Overview**: Contains the Structure Overview tree control.
