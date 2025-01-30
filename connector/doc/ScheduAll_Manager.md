@@ -206,7 +206,8 @@ This subpage contains the configuration of the Automation script specified with 
 
   - *Disabled*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
-> Scripts that are being executed according to the configuration are limited to five running concurrently. The execution queue can hold up to fifty scripts. This is not configurable, and it's to prevent system instability issues.
+  > [!NOTE]
+  > At most five of these scripts can run concurrently. The execution queue can hold up to fifty scripts. These limits cannot be adjusted. These are required to prevent system instability issues.
 
 On this subpage, you can also define the **Input Script Parameters**, which are passed as an argument of the referred Automation script for either new or modified work orders:
 
