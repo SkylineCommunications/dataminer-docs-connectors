@@ -7835,6 +7835,13 @@
   items:
   - name: Sintai OTNS8600
     topicUid: Connector_help_Sintai_OTNS8600
+- name: Siselectron
+  items:
+  - name: Siselectron SR1
+    topicUid: Connector_help_SISELECTRON_SR1
+    items:
+    - name: Siselectron SR1 Technical
+      topicUid: Connector_help_SISELECTRON_SR1_Technical
 - name: Sittig
   items:
   - name: Sittig DVA
