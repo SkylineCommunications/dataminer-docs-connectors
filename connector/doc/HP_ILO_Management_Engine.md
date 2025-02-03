@@ -42,7 +42,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The device API IP Port *(default 443)*
-- **BusAddress:** The Computer System ID *(default: 1)*
+- **BusAddress:** The Computer System ID *(default: ByPassProxy)*
 
 #### SNMP Connection
 
