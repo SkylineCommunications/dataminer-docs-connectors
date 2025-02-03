@@ -6,13 +6,13 @@ uid: Connector_help_SISELECTRON_SR1
 
 ## About
 
-This is a DataMiner connector for the **Siselectron SR1**, a rack mount server that utilizes Synamedia's Media Edge Gateway, which can be used for decoding, encoding, and transcoding/processing. Using this protocol allows for monitoring the Siselectron SR1's data through alarming and trending, being able to change the data on the SR1 through DataMiner, and more features enabled through accessing the device in DataMiner.
+This is a DataMiner connector for the **Siselectron SR1**, a rack mount server that utilizes Synamedia's Media Edge Gateway, which can be used for decoding, encoding, and transcoding/processing. With this connector, you can monitor the Siselectron SR1's data with DataMiner's alarm monitoring and trending features, you can change data on the SR1 through DataMiner, and more.
 
 ### Key Features
 
 - **Channel monitoring and editing**: Look through each of the channels on the device, monitor them to detect changes on critical parameters, and edit their input, descrambling, video, audio, and output settings.
 - **Encoder and decoder settings**: Monitor and change any encoder and decoder settings on the device.
-- **Configuration**: Access and monitor the currently available Licenses, PCIe cards, and recent Alarm History of the device.
+- **Configuration**: Access and monitor the currently available licenses, PCIe cards, and recent alarm history of the device.
 
 ## Use Cases
 
