@@ -10,6 +10,9 @@ The **Generic Trap Processor** is a powerful tool that allows you to define rule
 
 ![Generic Trap Processor Overview](~/connector/images/GenericTrapProcessor_Overview.png)
 
+> [!TIP]
+> For an enhanced experience, explore the complete package, which includes this connector and the Low-Code App: [Smart Trap Processor Package](https://catalog.dataminer.services/details/0c70b4b6-f687-459f-8cc9-bd1c9025dd50).
+
 ## Key Features
 
 - **Flexible processing rules**: Customizable rules that can be tailored to suit any system or device sending SNMP traps.
@@ -35,7 +38,4 @@ Common use cases include:
 ## Technical info
 
 > [!NOTE]
-> The complete list of supported modules and additional technical details are available on the [Technical help page](xref:Connector_help_Generic_Trap_Processor_Technical).
-
-> [!TIP]
-> Download the full package, which includes this connector and the Low-Code App: [Smart Trap Processor Package](https://catalog.dataminer.services/details/0c70b4b6-f687-459f-8cc9-bd1c9025dd50).
+> For detailed technical information, refer to the [Technical help page](xref:Connector_help_Generic_Trap_Processor_Technical).

@@ -4,27 +4,9 @@ uid: Connector_help_Generic_Trap_Processor_Technical
 
 # Generic Trap Processor
 
-This connector will receive traps on a DMA. It allows you to specify rules that received traps need to match. Traps matching these rules will be logged with information that is generated based on the rule and trap data.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector will receive traps on a DMA. It allows you to specify rules that received traps need to match. Traps matching these rules will be logged with information that is generated based on the rule and trap data.
 
 ## Configuration
 

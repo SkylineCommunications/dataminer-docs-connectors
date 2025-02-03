@@ -21,4 +21,4 @@ The overview of the captured traps will be displayed in the **Traps** table alon
 ## Technical info
 
 > [!NOTE]
-> The complete list of supported modules and additional technical details are available on the [Technical help page](xref:Connector_help_Generic_Trap_Receiver_Technical).
+> For detailed technical information, refer to the [Technical help page](xref:Connector_help_Generic_Trap_Receiver_Technical).

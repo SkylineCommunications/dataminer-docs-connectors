@@ -4,30 +4,9 @@ uid: Connector_help_Generic_Trap_Receiver_Technical
 
 # Generic Trap Receiver
 
-The Generic Trap Receiver is used to capture and display all the traps for a specific IP address.
-
 ## About
 
-### Version Info
-
-| **Range** | **Key Features**                                | **Based on** | **System Impact** |
-|-----------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                 | -            | -                 |
-| 1.0.1.x   | Display traps in a table. Lookup functionality. | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-| 1.0.1.x   | N/A                    |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                       |
-| 1.0.1.x   | No                  | No                      | -                     | -                       |
+The Generic Trap Receiver is used to capture and display all the traps for a specific IP address.
 
 ## Configuration
 
