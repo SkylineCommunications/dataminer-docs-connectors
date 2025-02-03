@@ -21,7 +21,8 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.0.x            | Initial version.                                                                     | No              | No                  |
 | 1.0.1.x            | Added support for software version 2.3 (Module GT11).                                | No              | No                  |
 | 1.1.0.x            | Added HTTP connection for retrieving QAM outputs and services.                       | No              | No                  |
-| 1.1.1.x [SLC Main] | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
+| 1.1.1.x            | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
+| 1.2.0.x [SLC Main] | Added suppport for firmware version 3.5.2 MIBs.                                      | No              | Yes                 |
 
 ### Product Info
 
@@ -30,6 +31,7 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.0.x | 1.4.1                      |
 | 1.0.1.x | 2.3<br>3.0.1               |
 | 1.1.1.x | 2.3<br>3.0.1               |
+| 1.2.0.x | 3.5.2                      |
 
 ### Exported connectors
 
@@ -45,14 +47,23 @@ This connector will export different connectors based on the retrieved data. A l
 
 The connector supports the following types:
 
+- **GT11**
 - **GT21**
 - **GT22**
 - **GT23**
-- **GT11**
 - **GT31**
 - **GT41**
 
 ## Configuration
+
+### Timers
+
+Starting from version **1.1.1.6**, the **Polling Manager** feature is implemented in the connector. This feature does not require any special configuration. The existing timers are replaced with entries in the Polling Manager table, which is accessible on the Polling Manager page.
+
+> [!IMPORTANT]
+>
+> - **High CPU usage with older versions**: Agents running versions prior to **1.1.1.6** may experience high CPU (DataMiner) usage, and the device may be overloaded when an element is started. To mitigate this, the Polling Manager feature reduces system load by limiting the number of groups placed on the stack. Specifically, only **5 groups** are added at a time, with a **10-second interval** between batches.
+> - **Impact on initial polling time**: While using the Polling Manager feature decreases the system load and device strain, it also slightly **increases the initial polling time**. Polling all data from the device takes longer as the process is staggered to ensure optimal performance and system stability.
 
 ### Connections
 

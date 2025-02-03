@@ -77,7 +77,7 @@ This page contains a number of tables:
 - The **CX Status** table shows the status of the communication modules.
 - The **CX Config** table contains information regarding the communication module management configuration entries.
 - The **CX Module Alarms Status** table contains detailed alarm information for the communication module.
-- The **CX Card Alarm** **Status** table contains detailed alarms regarding the environment and voltage usage.
+- The **CX Card Alarm Status** table contains detailed alarms regarding the environment and voltage usage.
 
 In order to commit all the changes made in the CX Config Table to the device, you must press the **Commit** button.
 

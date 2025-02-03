@@ -12,10 +12,10 @@ This connector is used to gather information from the **Harris Flexiva10KW IRTFM
 
 ### Version Info
 
-| **Range** | **Description**        |
-|------------------|------------------------|
-| 1.0.0.x          | Initial version        |
-| 1.0.1.x          | Added support for DVEs |
+| Range   | Description            |
+|---------|------------------------|
+| 1.0.0.x | Initial version        |
+| 1.0.1.x | Added support for DVEs |
 
 ### Product Info
 

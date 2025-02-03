@@ -4,17 +4,17 @@ uid: Connector_help_Evertz_670IPG-X19-25G-100G
 
 # Evertz 670IPG-X19-25G-100G
 
-This connector can be used to monitor and control the **Evertz** **670IPG-X19-25G-100G** media gateway device.
+This connector can be used to monitor and control the **Evertz 670IPG-X19-25G-100G** media gateway device.
 
 ## About
 
 ### Version Info
 
-| **Range**            | **Key Features**                       | **Based on** | **System Impact**                                                 |
-|----------------------|----------------------------------------|--------------|-------------------------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                       | -            | -                                                                 |
-| 1.0.1.x              | Adds redundant polling.                | 1.0.0.1      | Added interface for redundant polling.                            |
-| 1.0.2.x [SLC Main]   | Removed some unit tags and thresholds. | 1.0.1.2      | Potentially affects alarms, Visual Overviews, Automation scripts. |
+| Range              | Key Features                           | Based on | System Impact                                                     |
+|--------------------|----------------------------------------|----------|-------------------------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.                       | -        | -                                                                 |
+| 1.0.1.x            | Adds redundant polling.                | 1.0.0.1  | Added interface for redundant polling.                            |
+| 1.0.2.x [SLC Main] | Removed some unit tags and thresholds. | 1.0.1.2  | Potentially affects alarms, Visual Overviews, Automation scripts. |
 
 ### Product Info
 
@@ -49,14 +49,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

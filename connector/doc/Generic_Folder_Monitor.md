@@ -12,10 +12,10 @@ This virtual connector can check the content of a directory and its subdirectori
 
 ### Version Info
 
-| **Range** | **Description**    | **DCF Integration** | **Cassandra Compliant** |
-|------------------|--------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version    | No                  | Yes                     |
-| 1.0.1.x          | Support to Unicode | No                  | Yes                     |
+| Range   | Description        | DCF Integration | Cassandra Compliant |
+|---------|--------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version    | No              | Yes                 |
+| 1.0.1.x | Support to Unicode | No              | Yes                 |
 
 ## Installation and configuration
 
@@ -55,7 +55,7 @@ The parameter **Time Since Last Modification Or Creation** is also available for
 
 ### Configuration
 
-As mentioned in the "Installation and configuration" section above, the parameters **Location**, **Username** and **Password** must be configured correctly so that the connector can monitor the right folder. In order to connect to an **SFTP Server**, the parameters **Location**, **Username** and **Password** also have to be specified.
+As mentioned in the [Configuration](#configuration) section above, the parameters **Location**, **Username**, and **Password** must be configured correctly so that the connector can monitor the right folder. In order to connect to an **SFTP Server**, the parameters **Location**, **Username**, and **Password** also have to be specified.
 
 In addition, this page contains the **Directory Status**, which indicates whether the connector can access the directory. If the status is *Not OK*, more details can be found in the logging or in the **Summary of Last Check**.
 
@@ -78,7 +78,7 @@ On the right-hand side of the page, the **Last Check** parameter indicates the d
 
 - It is possible to end up with a file that has a modification time that is earlier than its creation time when you make a new copy of a file:
 
-- Copying does not modify the file. The last modification time will stay the same and will be copied from the last modification time of the original file.
+  - Copying does not modify the file. The last modification time will stay the same and will be copied from the last modification time of the original file.
   - The creation time will be set to the time when the file was copied, as the file is treated as a new file. You take a hard copy of the file that was "born" at the moment of the copying.
 
 - Moving a file will not change the creation time, as moving a file actually only changes the file name. (The path name is a part of the file name.)
@@ -88,6 +88,3 @@ On the right-hand side of the page, the **Last Check** parameter indicates the d
 This integer is the result of converting every character of the Full File Name to an integer, concatenating this integer in a string and then converting it back to an integer.
 
 This was done because this integer will be used to check whether a file name was already there during the previous check. If the full file names were used instead, and a full file name contained a special character, the connector would ignore this special character when it saved the Full File Name to the table. In that case, when the check of the folder was done again, and the connector compared the found file names with the ones that were in the table, it would erroneously conclude that this is a new file because the character was ignored. **By converting all characters to integers and storing this here, we make sure that comparing old and new files can also handle special characters, even when these cannot be printed.**
-
-Example:
-

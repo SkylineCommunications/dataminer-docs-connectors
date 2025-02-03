@@ -106,10 +106,10 @@ Depending on the state of the **Input Selection A**, the following connections a
 - Fixed Connections:
 
   - Between **SDI Input A** and **Reclocker A.**
-  - Between **Reclocker** **A** and **Output A1.**
-  - Between **Reclocker** **A** and **Output A2.**
-  - Between **Reclocker** **A** and **Output A3.**
+  - Between **Reclocker A** and **Output A1.**
+  - Between **Reclocker A** and **Output A2.**
+  - Between **Reclocker A** and **Output A3.**
   - Between **SDI Input B** and **Reclocker B.**
-  - Between **Reclocker** **B** and **Output B1.**
-  - Between **Reclocker** **B** and **Output B2.**
-  - Between **Reclocker** **B** and **Output B3.**
+  - Between **Reclocker B** and **Output B1.**
+  - Between **Reclocker B** and **Output B2.**
+  - Between **Reclocker B** and **Output B3.**

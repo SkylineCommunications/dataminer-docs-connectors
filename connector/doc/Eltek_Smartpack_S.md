@@ -12,10 +12,10 @@ Information is polled from the device using SNMP calls. In addition, the origina
 
 ### Version Info
 
-| **Range** | **Key Features**       | **Based on** | **System Impact** |
-|-----------|------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version.       | -            | -                 |
-| 1.0.1.x   | HTTP connection added. | -            | -                 |
+| Range   | Key Features           | Based on | System Impact |
+|---------|------------------------|----------|---------------|
+| 1.0.0.x | Initial version.       | -        | -             |
+| 1.0.1.x | HTTP connection added. | -        | -             |
 
 ### Product Info
 

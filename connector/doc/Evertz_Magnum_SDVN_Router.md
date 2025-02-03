@@ -10,11 +10,11 @@ This connector can be used to control the Magnum application. It allows DataMine
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                               | **Based on** | **System Impact** |
-|----------------------|------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                                                               | -            | -                 |
-| 1.0.2.x              | Replaced IDX on Sources and Destinations. Duplicated global names are supported on the device. | -            | -                 |
-| 1.0.3.x [SLC Main]   | Use of API calls to reduce Quartz polling. Renamed Counter parameters.                         | -            | -                 |
+| Range              | Key Features                                                                                   | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                                                               | -        | -             |
+| 1.0.2.x            | Replaced IDX on Sources and Destinations. Duplicated global names are supported on the device. | -        | -             |
+| 1.0.3.x [SLC Main] | Use of API calls to reduce Quartz polling. Renamed Counter parameters.                         | -        | -             |
 
 ### Product Info
 
@@ -62,10 +62,6 @@ In order to use this connector, it is necessary to also **configure the Magnum a
 On the **General** page of the element, you need to specify the following parameters: the **Username**, **Password**, **Device**, **Breakaway Mode**, **Number of Audio Channels**, **Operation Mode**, and **View Nameset**.
 
 On the **Quartz** page, the **Profile ID** must be specified.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

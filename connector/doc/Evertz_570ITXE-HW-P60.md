@@ -12,10 +12,10 @@ The connector uses **SNMP** and **HTTP** to poll data from the Evertz 570ITXE-HW
 
 ### Version Info
 
-| **Range** | **Description**       | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version       | No                  | Yes                     |
-| 1.0.1.x          | HTTP connection added | No                  | Yes                     |
+| Range   | Description           | DCF Integration | Cassandra Compliant |
+|---------|-----------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version       | No              | Yes                 |
+| 1.0.1.x | HTTP connection added | No              | Yes                 |
 
 ### Product Info
 
@@ -169,7 +169,7 @@ It also contains the following page buttons:
   - **IntelliGain Mixer** table.
   - **IntelliGain Configuration** table.
   - **IntelliGain Program Control** table.
-  - **IntelliGain Program Fault** **Controls** table.
+  - **IntelliGain Program Fault Controls** table.
   - **IntelliGain Fault** table.
 
 - **Presets**: Displays a subpage with the following sections:

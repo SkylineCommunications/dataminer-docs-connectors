@@ -49,14 +49,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device.
   - **Bus address**: The bus address of the device. By default, 66.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 This connector contains the following pages:

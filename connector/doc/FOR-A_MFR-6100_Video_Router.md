@@ -65,10 +65,6 @@ No extra configuration is needed in range 1.0.0.x.
 
 From range 1.0.1.x onwards, the connector retrieves matrix information via serial communication. This requires that the command protocol on the **Port Settings** page of the **device** is set to **Crosspoint Remote Control 2**.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

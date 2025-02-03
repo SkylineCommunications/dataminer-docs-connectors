@@ -12,15 +12,15 @@ The parameters that indicate the values of the IP addresses are used both for co
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
+| Range              | Description     | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version | Yes             | Yes                 |
 
 ### Linked connectors
 
-| **Name** | **Range** |
-|-----------------|-----------|
-| SKY UK IP Cloud | 1.0.1.x   |
+| Name            | Range   |
+|-----------------|---------|
+| SKY UK IP Cloud | 1.0.1.x |
 
 ## Installation and configuration
 
@@ -36,9 +36,9 @@ This connector uses a virtual connection and does not require any input during e
 
 The General page contains several parameters that can be used to configure the virtual IP device.
 
-There are two destination addresses, **Destination Address A** and **Destination Address B.** There are also two ports that are linked to these addresses, **Destination Port A** and **Destination Port B**. For the destinations, the **Device Output Configuration** parameter allows you to indicate if the virtual IP device has a **Single-** or **Dual**-IP connection.
+There are two destination addresses, **Destination Address A** and **Destination Address B.** There are also two ports that are linked to these addresses, **Destination Port A** and **Destination Port B**. For the destinations, the **Device Output Configuration** parameter allows you to indicate if the virtual IP device has a **Single** or **Dual** IP connection.
 
-There are also two source addresses **Source Address A** and **Source Address B**, with the corresponding ports **Source Port A** and **Source Port B**. For the sources, the **Device Input Configuration** parameter allows you to indicate if the virtual IP device has a **Single-**or **Dual**-IP connection.
+There are also two source addresses **Source Address A** and **Source Address B**, with the corresponding ports **Source Port A** and **Source Port B**. For the sources, the **Device Input Configuration** parameter allows you to indicate if the virtual IP device has a **Single** or **Dual** IP connection.
 
 ## DataMiner Connectivity Framework
 
@@ -56,7 +56,3 @@ Virtual fixed interfaces:
 - The output of IP connection B: The virtual connection **Output B** is of type **out**.
 - The input of IP connection A: The virtual connection **Input A** is of type **in**.
 - The input of IP connection B: The virtual connection **Input B** is of type **in**.
-
-## Revision History
-
-1.0.0.1 Initial version

@@ -52,10 +52,6 @@ Configure the settings below when you configure the element to allow full pollin
 - **Timeout of a single command:** 5000
 - **Number of retries:** 3
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 ### General

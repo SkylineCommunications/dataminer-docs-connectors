@@ -72,18 +72,18 @@ On this page, you can manage the creation of DVEs. For each of the different car
 
 The following parameters are used for DVE management:
 
-- **Automatic DVE Deletion**: This parameter is *Disabled* by default. If it is *Enabled*, all rows in the **DVE Control Table** with the state **Delete** **Row** will be deleted automatically. This means that all templates linked to those cards will also be deleted.
+- **Automatic DVE Deletion**: This parameter is *Disabled* by default. If it is *Enabled*, all rows in the **DVE Control Table** with the state **Delete Row** will be deleted automatically. This means that all templates linked to those cards will also be deleted.
 
 - **DVE Actions**: Provides two options:
 
-- *Enable All*: Creates all DVEs at once. Note that it could take some time to display all the DVEs.
+  - *Enable All*: Creates all DVEs at once. Note that it could take some time to display all the DVEs.
   - *Disable All:* Deletes all DVEs and all corresponding templates.
 
 - **Change View for all DVEs**: This drop-down list contains all the views on the DMA. If a new value is selected, all DVEs will be placed in the new view. If a change was performed on the DMA, such as the renaming or deleting of a view, you should click the **Refresh button** in order to synchronize the drop-down list with the changes on the DMA.
 
 - **DVE Control Table**: This table contains all the cards present in the chassis. **Individual DVEs** can be created using the column **Element Creation**. Rows that have the state *Delete Row* can be removed manually. With the **Rename** column, you can rename each of the DVEs, though you must respect the following limitations when you do so:
 
-- Spaces are not allowed in the new name.
+  - Spaces are not allowed in the new name.
   - Null values are not allowed as the new name.
   - The following characters must not be included in the new name value: **\\ / : ? " \> \< \| ; ø**
 
@@ -93,7 +93,7 @@ This page contains the **Physical Entity Table**. This table displays all the mo
 
 ### Module
 
-This page displays the **Model**, **Description**, **Name**, **Alias**, **Manufacturer**, **Asset ID**, **Serial** **Number**, **Hardware** **Revision**, and **Software** **Revision** of the **chassis**.
+This page displays the **Model**, **Description**, **Name**, **Alias**, **Manufacturer**, **Asset ID**, **Serial Number**, **Hardware Revision**, and **Software Revision** of the **chassis**.
 
 In addition, there are two page buttons:
 
