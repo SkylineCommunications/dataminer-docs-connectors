@@ -14,7 +14,7 @@ The 8200 ACU is compatible with industry-standard drive cabinet interfaces and l
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version | - | - |
 | 1.0.1.x | **Major Changes:** <br>- In the Targets table: Moved column Longitude from 12th position to 3rd position and Beacon Frequency from 14th to 4th. <br>- Moved parameters "Offset Azimuth/Elevation/Polarization" from Positioner to Encoder page. <br>- Moved parameters "Fault test Period ..." from Timing to Motion page. <br>**Fix:** <br>Ack/Unacknowledged Faults are now string parameters (this was incorrect from version 1.0.0.2 onwards). | 1.0.0.2 (the change made in version 1.0.0.3 is also present in 1.0.1.x, but in a different way) | - Displayed column order of table changed (existing custom reports may no longer work). <br>- Layout changes may take some getting used to. However, the result is similar to the web interface. |
-| 1.0.2.x [SLC Main] | **Fixes:** <br>- Resolved issue preventing parameters Fault Test Period, Track Coast Time, Slew Coast Time, Bump Time, and Bump Off Time from being set. <br>- Removed write option from offset parameters on the encoders page as they are read-only. | 1.0.1.x | - Updated minimum required version to 10.2.0 since the solution has been migrated to PackageReference, and the legacy class library has been removed. |
+| 1.0.2.x [SLC Main] | **Fixes:** <br>- Resolved issue preventing parameters Fault Test Period, Track Coast Time, Slew Coast Time, Bump Time, and Bump Off Time from being set. <br>- Removed write option from offset parameters on the encoders page as they are read-only. | 1.0.1.x | - Updated minimum required version to 10.2.0 since the solution has been migrated to PackageReference and the legacy class library has been removed. |
 
 ### Product Info
 
