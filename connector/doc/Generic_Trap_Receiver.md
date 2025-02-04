@@ -6,17 +6,15 @@ uid: Connector_help_Generic_Trap_Receiver
 
 ## About
 
-The **Generic Trap Receiver** is a tool used to capture and display SNMP traps for a specific IP addresses.
-The overview of the captured traps will be displayed in the **Traps** table alongside **Traps Number**, which captures the number of traps on the table. Information like **Source IP**, **Trap OID**, and 20 different **Bindings** are available for display for each trap in the **Traps** table.
-
+The **Generic Trap Receiver** is a tool used to capture and display SNMP traps for a specific IP address. The overview of the captured traps will be displayed in the **Traps** table alongside the **Traps Number**, which shows the number of traps in the table. Information like **Source IP**, **Trap OID**, and 20 different **bindings** are available for display for each trap in the Traps table.
 
 ![Generic Trap Receiver Overview](~/connector/images/GenericTrapReceiver_Overview.png)
 
 ## Key Features
 
-- **Displays Traps**: Displays traps coming from the configurable parameter **Trap IP Sources**
-- **Create Information Events**: By Enabling the **Information Events** parameter, it creates an Information Event on the DMA for every trap received. 
-- **Lookup Table**: Be able to configure incoming trap OIDs and replace them with an alias names. For this purpose, the parameter Lookup Table State must be enabled.
+- **Displays Traps**: Displays traps coming from the configurable parameter **Trap IP Sources**.
+- **Create Information Events**: If you enable the **Information Events** parameter, an information event will be created on the DMA for every trap received.
+- **Lookup Table**: If the **Lookup Table State** parameter is enabled, you can configure incoming trap OIDs and replace them with alias names.
 
 ## Technical info
 

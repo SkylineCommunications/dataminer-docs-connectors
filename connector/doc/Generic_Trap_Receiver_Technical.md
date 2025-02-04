@@ -28,7 +28,7 @@ SNMP Settings:
 
 ### General
 
-To capture traps, specify the IP addresses for which traps should be captured in the **Trap IP Sources** parameter, using a comma as separator. This page will then display an overview of the captured traps with their information (**OID**, **Source IP** and **Bindings**) in the **Traps** table.
+To capture traps, specify the IP addresses for which traps should be captured in the **Trap IP Sources** parameter, using a comma as separator. This page will then display an overview of the captured traps with their information (OID, Source IP, and Bindings) in the **Traps** table.
 
 If you also want an information event to be created on the DMA every time a trap is received, enable the **Information Events** parameter.
 
