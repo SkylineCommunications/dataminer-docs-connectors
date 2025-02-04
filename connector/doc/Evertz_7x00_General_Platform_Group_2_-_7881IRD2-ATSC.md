@@ -16,7 +16,7 @@ The 7881IRD2 series is used to receive, demodulate, and decode digital ATSC/DVB-
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** |
+| Range     | DCF Integration     | Cassandra Compliant     |
 |-----------|---------------------|-------------------------|
 | 1.0.2.x   | No                  | Yes                     |
 

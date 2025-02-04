@@ -12,15 +12,15 @@ The Ericsson RX8330 is a very versatile piece of equipment. It comes in many dif
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                | **Based on** | **System Impact**                                               |
-|-----------|---------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------|
-| 1.0.0.x   | Initial version (SNMP only).                                                    | -            | -                                                               |
-| 1.0.1.x   | Evolution from the 1.0.0.x range (extra parameters polled).                     | 1.0.0.x      | -                                                               |
-| 2.0.0.x   | Reworked version of the 1.0.1.x range, compatible with later firmware versions. | 1.0.1.x      | -                                                               |
-| 2.0.1.x   | Added XPO interface.                                                            | -            | -                                                               |
-| 2.0.2.x   | Changed naming, added SNMP traps.                                               | -            | Elements need to be recreated when you upgrade to this version. |
-| 2.0.3.x   | Implemented DCF.                                                                | -            | -                                                               |
-| 2.0.4.x   | Changed index of Service Control Table.                                         | -            | -                                                               |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version (SNMP only). | - | - |
+| 1.0.1.x | Evolution from the 1.0.0.x range (extra parameters polled). | 1.0.0.x | - |
+| 2.0.0.x | Reworked version of the 1.0.1.x range, compatible with later firmware versions. | 1.0.1.x | - |
+| 2.0.1.x | Added XPO interface. | - | - |
+| 2.0.2.x | Changed naming, added SNMP traps. | - | Elements need to be recreated when you upgrade to this version. |
+| 2.0.3.x | Implemented DCF. | - | - |
+| 2.0.4.x | Changed index of Service Control Table. | - | - |
 
 ### Product Info
 
@@ -63,7 +63,7 @@ SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161.*
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
-- **Set community string**: The community string in order to set to the device. The default value is *private.*
+- **Set community string**: The community string in order to set to the device. The default value is *private*.
 
 #### HTTP connection
 
@@ -122,7 +122,7 @@ This page contains information about the input parameters and allows you to set 
 
 The page contains page buttons to the following subpages:
 
-- **Sat Input**: Displays parameters related to **Satellite input**, such as **Selected Input Channel**, **Signal Status**, **Signal Strength, C/N** and **C/N Margin.**
+- **Sat Input**: Displays parameters related to **Satellite input**, such as **Selected Input Channel**, **Signal Status**, **Signal Strength, C/N** and **C/N Margin**.
 - **Configuration**: Allows you to set the parameters **LNB Frequency**, **Satellite Frequency**, **L-Band Frequency**, **Symbol Rate**, **Modulation Type**, **Roll Off**, **Spectrum Sense**, **Search Range**, **LNB Power Output**, **LNB Power Level** and **LNB 22Khz**.
 
 ### Service Plus

@@ -76,11 +76,11 @@ This page contains **IP to Tel** and **Tel to IP** call statistics. There is als
 
 ### Tel to IP Routing
 
-This page contains the **Tel to IP Routing Table**, where you can modify the **Route** **Name**, **Destination** **Phone**, **Destination** **IP**, **Transport** **Type**, etc.
+This page contains the **Tel to IP Routing Table**, where you can modify the **Route Name**, **Destination Phone**, **Destination IP**, **Transport Type**, etc.
 
 ### IP to Tel Routing
 
-This page contains the **IP to Tel Routing** **Table**, where you can modify the **Route Name**, **Source IP Address**, **Destination Phone**, **Phone Prefix**, etc.
+This page contains the **IP to Tel Routing Table**, where you can modify the **Route Name**, **Source IP Address**, **Destination Phone**, **Phone Prefix**, etc.
 
 ### Web Interface
 

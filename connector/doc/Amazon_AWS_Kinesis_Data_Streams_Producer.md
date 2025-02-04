@@ -48,10 +48,6 @@ Before polling can start, the credentials for the AWS service first have to be e
 
 On the same page, the target delivery stream needs to be configured for each supported data type.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The purpose of this connector is to be able to offload data (trending, alarms, information events, etc.) towards AWS Kinesis through a DataMiner element. The connector will process DataMiner offload files and push the contents of these offload files in a JSON format towards the AWS Kinesis Data Streams service.

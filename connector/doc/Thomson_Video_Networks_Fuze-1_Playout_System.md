@@ -12,7 +12,7 @@ This connector was designed to work with model **FUZE-1.** It will be possible t
 
 ### Range of the connector
 
-| Range     | Description     | DCF Integration     | Cassandra Complaint     |
+| Range     | Description     | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version | No                  | Yes                     |
 

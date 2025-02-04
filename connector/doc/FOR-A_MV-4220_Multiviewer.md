@@ -10,10 +10,10 @@ This connector allows you to monitor the FOR-A MV-4220 Multiviewer device via an
 
 ### Version Info
 
-| **Range**            | **Key Features**         | **Based on** | **System Impact**                      |
-|----------------------|--------------------------|--------------|----------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.         | -            | -                                      |
-| 1.0.1.x [SLC Main]   | Serial connection added. | 1.0.0.1      | New connection needs to be configured. |
+| Range              | Key Features             | Based on | System Impact                          |
+|--------------------|--------------------------|----------|----------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.         | -        | -                                      |
+| 1.0.1.x [SLC Main] | Serial connection added. | 1.0.0.1  | New connection needs to be configured. |
 
 ### Product Info
 
@@ -55,14 +55,6 @@ SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination. The IP port is **always 51000 + the last octet of the IP address** (e.g. if the IP address is *192.168.0.112*, the IP port is *51112*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

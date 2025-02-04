@@ -1038,6 +1038,10 @@
     topicUid: Connector_help_AVT_Magic_SDC_EDI_Converter
   - name: AVT MAGIC THipPRo Telephone Hybrids
     topicUid: Connector_help_AVT_MAGIC_THipPRo_Telephone_Hybrids
+- name: AVTECH
+  items:
+  - name: AVTECH RoomAlert Monitor
+    topicUid: Connector_help_AVTECH_RoomAlert_Monitor
 - name: Axel Technology
   items:
   - name: Axel Technology Wolf2MS
@@ -2686,6 +2690,8 @@
   items:
   - name: Double D Electronics DDA-219-310
     topicUid: Connector_help_Double_D_Electronics_DDA-219-310
+  - name: Double D Electronics DDA219-511E
+    topicUid: Connector_help_Double_D_Electronics_DDA219-511E
   - name: Double D Electronics DDA219-733
     topicUid: Connector_help_Double_D_Electronics_DDA219-733
   - name: Double D Electronics DDA219-C333E
@@ -3168,6 +3174,8 @@
     topicUid: Connector_help_Eutelsat_Siecams_Manager
   - name: Eutelsat TAOS Calculation
     topicUid: Connector_help_Eutelsat_TAOS_Calculation
+  - name: Eutelsat TAOS Manager
+    topicUid: Connector_help_Eutelsat_TAOS_Manager
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
@@ -3558,12 +3566,16 @@
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
   - name: Evertz NATX
     topicUid: Connector_help_Evertz_NATX
+  - name: Evertz NATX-NAT-32
+    topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000
   - name: Evertz Scorpion 18
     topicUid: Connector_help_Evertz_Scorpion_18
   - name: Evertz Scorpion 18 MIO-APP-DLY2
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-DLY2
+  - name: Evertz Scorpion 18 MIO-APP-UDX-3G
+    topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
   - name: Evertz Scorpion 18 MIO-APP-UDX-4K
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-4K
   - name: Evertz Scorpion 18 MIO-HDMI-2-4K-IP
@@ -3886,6 +3898,8 @@
     topicUid: Connector_help_Generex_UPS_CS121_BC
 - name: Generic
   items:
+  - name: Generic 4K Converter
+    topicUid: Connector_help_Generic_4K_Converter
   - name: Generic Automation Script
     topicUid: Connector_help_Generic_Automation_Script
   - name: Generic Bookings Log
@@ -4190,6 +4204,8 @@
     topicUid: Connector_help_Grass_Valley_Acappella
   - name: Grass Valley Alchemist Live
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
+  - name: Grass Valley AMPP Manager
+    topicUid: Connector_help_Grass_Valley_AMPP_Manager
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
@@ -6641,6 +6657,8 @@
     topicUid: Connector_help_OneWeb_Antenna_Controller
   - name: OneWeb Incident Manager
     topicUid: Connector_help_OneWeb_Incident_Manager
+  - name: OneWeb PCN Collector
+    topicUid: Connector_help_OneWeb_PCN_Collector
 - name: Ooredoo
   items:
   - name: Ooredoo Messenger
@@ -6949,6 +6967,8 @@
     topicUid: Connector_help_Prodys_Quantum
 - name: Promax
   items:
+  - name: Promax Neo
+    topicUid: Connector_help_PROMAX_NEO
   - name: Promax RANGERNeo 4
     topicUid: Connector_help_Promax_RANGERNeo_4
 - name: Prometheus
@@ -7821,6 +7841,13 @@
   items:
   - name: Sintai OTNS8600
     topicUid: Connector_help_Sintai_OTNS8600
+- name: Siselectron
+  items:
+  - name: Siselectron SR1
+    topicUid: Connector_help_SISELECTRON_SR1
+    items:
+    - name: Siselectron SR1 Technical
+      topicUid: Connector_help_SISELECTRON_SR1_Technical
 - name: Sittig
   items:
   - name: Sittig DVA
@@ -8885,6 +8912,8 @@
     topicUid: Connector_help_Telenet_CPE_Manager
   - name: Telenet eMTA Collector
     topicUid: Connector_help_Telenet_eMTA_Collector
+  - name: Telenet Eos XAP
+    topicUid: Connector_help_Telenet_Eos_XAP
   - name: Telenet EPM Platform FTTH WM
     topicUid: Connector_help_Telenet_EPM_Platform_FTTH_WM
   - name: Telenet Frontend Inform Sender
@@ -9146,6 +9175,15 @@
     topicUid: Connector_help_Teleste_TRM_HDO775
 - name: Telestream
   items:
+  - name: Telestream Argus Probe
+    topicUid: Connector_help_Telestream_Argus_Probe
+    items:
+    - name: Telestream Argus Probe - IQDialogue Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_IQDialogue_Probe
+    - name: Telestream Argus Probe - Inspector Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_Inspector_Probe
+    - name: Telestream Argus Probe - Surveyor ABR Probe
+      topicUid: Connector_help_Telestream_Argus_Probe_-_Surveyor_ABR_Probe
   - name: Telestream Inspect 2110
     topicUid: Connector_help_Telestream_Inspect_2110
   - name: Telestream Lightspeed Live Stream

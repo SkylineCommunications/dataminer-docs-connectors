@@ -43,10 +43,6 @@ HTTP CONNECTION:
 
 To make sure the element can log in to the device, fill in the credentials on the **Credentials** page of the element.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the **API Command** page, you can execute any API command from the documentation. To do so, fill in the method and URL in the URL field, and add the body of the command in the content field.

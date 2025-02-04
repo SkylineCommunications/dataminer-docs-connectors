@@ -60,10 +60,6 @@ SNMP Settings:
 
 **Username** and **Password** must be filled in order to retrieve data from the device.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

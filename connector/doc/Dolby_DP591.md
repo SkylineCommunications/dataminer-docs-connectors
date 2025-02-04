@@ -42,14 +42,6 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination (default: *80*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Most of the sets in the connector do not have data in the response, which means that the Stream Viewer application will show a "204 No Content" status response. This response indicates that the set request succeeded, even though no data is returned from the device in response. The connector retrieves the corresponding read value by polling the updated values, so that the updated value is displayed instantly.

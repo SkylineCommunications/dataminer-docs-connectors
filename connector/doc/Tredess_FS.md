@@ -150,4 +150,5 @@ There are several **known issues** in the device:
 
 - The device returns **GENERIC_ERROR** when you try to set event configurations.
 - Some parameters that are included in the MIB are not available on the device: **rfinput, echoCanceller, modLinearPrecorrection, modNonLinearPrecorrection, modEfficiencyImprovement, modClipping, modPrecorrectorLevels**, some parameters related to **synchronization**, and some **status parameters.**
-- **Elevated Power Threshold** and **Reduced Power Threshold:** When a set is performed via the MIB, the device responds with a **bad value** **error**. When the set is performed via protocol, the device does not respond.
+- **Elevated Power Threshold** and **Reduced Power Threshold:** When a set is performed via the MIB, the device responds with a **bad value error**. When the set is performed via protocol, the device does not respond.
+- **Tag** column in the **Rack Cooling** table: When a set is performed via the connector, the device responds with a **WRONG LENGTH** error. Because of the specific setup where this issue occurred, it could not be verified further. Packet capture will be required to verify if it is a firmware issue.
