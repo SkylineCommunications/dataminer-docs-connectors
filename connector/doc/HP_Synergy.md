@@ -10,10 +10,10 @@ This connector is used to monitor an HP Synergy device via the HP OneView manage
 
 ### Version Info
 
-| **Range**            | **Key Features**         | **Based on** | **System Impact**                                   |
-|----------------------|--------------------------|--------------|-----------------------------------------------------|
-| 1.0.0.x              | Initial version          | -            | -                                                   |
-| 1.0.1.x [SLC Main]   | Add support for Unicode. | 1.0.0.3      | Element must be recreated. Saved data will be lost. |
+| Range              | Key Features             | Based on | System Impact                                       |
+|--------------------|--------------------------|----------|-----------------------------------------------------|
+| 1.0.0.x            | Initial version          | -        | -                                                   |
+| 1.0.1.x [SLC Main] | Add support for Unicode. | 1.0.0.3  | Element must be recreated. Saved data will be lost. |
 
 ### Product Info
 
@@ -45,10 +45,6 @@ HTTP CONNECTION:
 ### Initialization
 
 The **HP Synergy** device requires authentication. Specify the necessary credentials on the **General** page.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -34,14 +34,6 @@ The main purpose of this connector is to have elements that provide DCF interfac
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector consists of only one page, the **General** page. On this page, the **Web Interface URL** must be specified.

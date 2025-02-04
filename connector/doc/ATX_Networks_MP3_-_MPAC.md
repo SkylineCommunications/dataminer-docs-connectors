@@ -10,11 +10,11 @@ The **MPAC** is a modular power supply that supplies +24 VDC to the MAXNET II ac
 
 This connector was designed to monitor and receive statistics from the **MPAC**.
 
-The connector is generated automatically by the connector **ATX Networks MP3.**
+The connector is generated automatically by the connector **ATX Networks MP3**.
 
 ### Version Info
 
-| Range   | Description  | DCF Integration | Cassandra Complaint |
+| Range   | Description  | DCF Integration | Cassandra Compliant |
 |---------|--------------|-----------------|---------------------|
 | 2.0.0.x | DVE creation | No              | Yes                 |
 
@@ -28,7 +28,7 @@ This connector is used by DVEs that are **automatically generated** when DVE cre
 
 ### General
 
-This page displays general parameters, such as the **Description**, **Hardware** and **Firmware** **Revision**, **Serial** **Number**, **Manufacturer**, **Model**, **Alias** and **Asset ID** for the Power Supply (MPAC) module.
+This page displays general parameters, such as the **Description**, **Hardware** and **Firmware Revision**, **Serial Number**, **Manufacturer**, **Model**, **Alias** and **Asset ID** for the Power Supply (MPAC) module.
 
 ### Properties
 

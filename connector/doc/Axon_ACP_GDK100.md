@@ -56,14 +56,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination.
   - **Bus address**: Use the value "any".
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This element has the following data pages:

@@ -12,13 +12,13 @@ The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC*
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                                                                                                                              | No                  | Yes                     |
-| 1.0.1.x              | Refactored version.                                                                                                                                                                                                                           | No                  | Yes                     |
-| 1.0.2.x              | Based on 1.0.1.11. Output Stream Column in Output Stream Table and Send Trap Column in Demod Fault Table have been updated to display the correct information for 7780DM-LB card. **Old trend and alarm data will be lost for these tables.** | No                  | Yes                     |
-| 1.0.4.x              | Based on 1.0.3.1.                                                                                                                                                                                                                             | No                  | Yes                     |
-| 1.0.5.x [SLC Main]   | Based on 1.0.4.12.                                                                                                                                                                                                                            | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | Yes |
+| 1.0.1.x | Refactored version. | No | Yes |
+| 1.0.2.x | Based on 1.0.1.11. Output Stream Column in Output Stream Table and Send Trap Column in Demod Fault Table have been updated to display the correct information for 7780DM-LB card. **Old trend and alarm data will be lost for these tables.** | No | Yes |
+| 1.0.4.x | Based on 1.0.3.1. | No | Yes |
+| 1.0.5.x [SLC Main] | Based on 1.0.4.12. | No | Yes |
 
 ### Product Info
 
@@ -34,54 +34,54 @@ The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC*
 
 Details about the supported cards can be found at the end of this document.
 
-| **Exported Connector**                                                                                                     | **Description**                                                                                                                                                               |
-|---------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Evertz 7x00 General Platform - 7700R2X2-HD                                                                                | Used for the 7700R2X2-HD module.                                                                                                                                              |
-| Evertz 7x00 General Platform - 7700DA7                                                                                    | Used for the 7700DA7-HD and 7700DA7 types.                                                                                                                                    |
-| Evertz 7x00 General Platform - SWPBRF7700                                                                                 | Used for the SWRF87703, SWRF167703, SWRF16A7703, SWRF16B7703, SWRF8B7703 and SWRF47703 types.                                                                                 |
-| Evertz 7x00 General Platform - 7880IPASIIP                                                                                | Used for the 7880IPASIIP module.                                                                                                                                              |
-| Evertz 7x00 General Platform - 7703DA-RFA                                                                                 | Used for the 7703DA4A-RF, 7703DA4A-RF-LNB, 7703DA8A-RF, 7703DA8A-RF-LNB, 7703DA16-RF, and 7703DA16-RF-LNB types.                                                              |
-| Evertz 7x00 General Platform - 7880IRD-H264                                                                               | Used for the 7780IRD-H264-HD-LB module.                                                                                                                                       |
-| Evertz 7x00 General Platform - 7700DA6                                                                                    | Used for the 7700DA6-HD-L and 7700DA6-L types.                                                                                                                                |
-| Evertz 7x00 General Platform - 7780DMIPLB                                                                                 | Used for the 7780DM2-IP-LB, 7780DM2-IP-LB2, 7780DM-IP-LB2, 7780DM2-IP-CA and 7780DM4-IP-CA types.                                                                             |
-| Evertz 7x00 General Platform - 7707VT8                                                                                    | Used for the 7707VT8 module.                                                                                                                                                  |
-| Evertz 7x00 General Platform - 7707VT8-HS                                                                                 | Used for the 7707VT-8-HS module.                                                                                                                                              |
-| Evertz 7x00 General Platform - 7707VR8-HS                                                                                 | Used for the 7707VR-8-HS module.                                                                                                                                              |
-| Evertz 7x00 General Platform - BPXRF                                                                                      | Used for the 7703BPX-LB, 7703BPXA-LB, 7703BPX50-LB, 7703BPXA-LB-50, 7703BPX-IF, 7703BPXA-IF, and 7703BPX50-IF types (where LB and IF denote the L-band or IF frequency type). |
-| Evertz 7x00 General Platform - 7708LR                                                                                     | Used for the 7708LRA and 7708LR-H types.                                                                                                                                      |
-| Evertz 7x00 General Platform - 7708LT                                                                                     | Used for the 7708LT, 7708LT-LNB, 7708LT-DWDM and 7708LT-DWDM-LNB types.                                                                                                       |
-| Evertz 7x00 General Platform - 7707OE                                                                                     | Used for the 7707EO-3G, 7707OE-3G, 7707OE-3G-H, 7707OE-3G-1 and 7707OE-3G-H-1 types.                                                                                          |
-| Evertz 7x00 General Platform - 7780ASI-B2-DS3                                                                             | Used for the 780ASIB2-DS3/E3 module.                                                                                                                                          |
-| Evertz 7x00 General Platform - 7703PA                                                                                     | Used for the 7703PA, 7703PA-LNB, 7703PA-2, 7703PA-2-LNB and 7803PA-2-LNB2 types.                                                                                              |
-| Evertz 7x00 General Platform - 7881DEC2MP2HD                                                                              | Used for the 7881DEC2-MP2 module.                                                                                                                                             |
-| Evertz 7x00 General Platform - 7700ACO2HD                                                                                 | Used for the 7700ACO2HD module.                                                                                                                                               |
-| Evertz 7x00 General Platform - 7812DCDA2Q                                                                                 | Used for the 7812DCDA2Q module.                                                                                                                                               |
-| Evertz 7x00 General Platform - 7814UDX                                                                                    | Used for the 7814UDX module.                                                                                                                                                  |
-| Evertz 7x00 General Platform - 7736CDM                                                                                    | Used for the 7736CDM-A4 and 7736CDM-AES types.                                                                                                                                |
-| Evertz 7x00 General Platform - 7736CEM                                                                                    | Used for the 7736CEM, 7736CEM-A4 and 7736CEM-AES types.                                                                                                                       |
-| Evertz 7x00 General Platform - 7700ACOHD                                                                                  | Used for the 7700ACO-HD module.                                                                                                                                               |
-| Evertz 7x00 General Platform - 7807LR2                                                                                    | Used for the 7807LR-2 and 7807LR-2-H module.                                                                                                                                  |
-| Evertz 7x00 General Platform - 7707ET                                                                                     | Used for the 7707ET module.                                                                                                                                                   |
-| Evertz 7x00 General Platform - 7712UCHD                                                                                   | Used for the 7712UCHD module.                                                                                                                                                 |
-| Evertz 7x00 General Platform - 7700DA7-3G                                                                                 | Used for the 7700DA7-3G module.                                                                                                                                               |
-| Evertz 7x00 General Platform - 7807LT2                                                                                    | Used for the 7807LT2 module.                                                                                                                                                  |
-| Evertz 7x00 General Platform - 7707EO (DA2EOSD)                                                                           | Used for the 7707EO module a.k.a. DA2EOSD (product name).                                                                                                                     |
-| Evertz 7x00 General Platform - 7707OE (DA2OESD)                                                                           | Used for the 7707OE module a.k.a. DA2OESD (product name).                                                                                                                     |
-| Evertz 7x00 General Platform - 7746FSHD                                                                                   | User for the 7746FSxxxx modules.                                                                                                                                              |
-| Evertz 7x00 General Platform - 7781DEC2MP2HD                                                                              | Used for 7781DEC2MP2HD module.                                                                                                                                                |
-| Evertz 7x00 General Platform - 7707VR8                                                                                    | Used for 7707VR8 module.                                                                                                                                                      |
-| Evertz 7x00 General Platform - 7782DECH264                                                                                | Used for 7782DECH264 module.                                                                                                                                                  |
-| Evertz 7x00 General Platform - 7890MG                                                                                     | Used for 7890MG module.                                                                                                                                                       |
-| Evertz 7x00 General Platform - 7707VT4HS                                                                                  | User for 7707VT4HS module.                                                                                                                                                    |
-| Evertz 7x00 General Platform - 7707VT4                                                                                    | Used for 7707VT4 module.                                                                                                                                                      |
-| Evertz 7x00 General Platform - 7707VR4HS                                                                                  | Used for 7707VR4HS module.                                                                                                                                                    |
-| Evertz 7x00 General Platform - ENC7882H264HDFC                                                                            | Used for ENC7882H264HDFC module.                                                                                                                                              |
-| [Evertz 7x00 General Platform - 7800R4X23G](xref:Connector_help_Evertz_7x00_General_Platform_-_7800R4X23G)      | Used for 7800R4X23G module.                                                                                                                                                   |
-| [Evertz 7x00 General Platform - 7812UDXD](xref:Connector_help_Evertz_7x00_General_Platform_-_7812UDXD)          | Used for the 7812UDXD module.                                                                                                                                                 |
-| [Evertz 7x00 General Platform - 746FSEAES8HD](xref:Connector_help_Evertz_7x00_General_Platform_-_7746FSEAES8HD) | Used for the 746FS-EAES8-HD module.                                                                                                                                           |
-| [Evertz 7x00 General platform - 7882DM-SAT](xref:Connector_help_Evertz_7x00_General_platform_-_7882DM-SAT)      | Used for the 7882DM-SAT module.                                                                                                                                               |
-| [Evertz 7x00 General Platform - 7707IFTA](xref:Connector_help_Evertz_7x00_General_Platform_-_7707IFTA)          | Used for the 7707IFTA module - 7707LT card family.                                                                                                                            |
-| [Evertz 7x00 General Platform - 7707IFRA](xref:Connector_help_Evertz_7x00_General_Platform_-_7707IFRA)          | Used for the 7707IFRA module - 7707RT card family.                                                                                                                            |
+| Exported Connector | Description |
+|--|--|
+| Evertz 7x00 General Platform - 7700R2X2-HD | Used for the 7700R2X2-HD module. |
+| Evertz 7x00 General Platform - 7700DA7 | Used for the 7700DA7-HD and 7700DA7 types. |
+| Evertz 7x00 General Platform - SWPBRF7700 | Used for the SWRF87703, SWRF167703, SWRF16A7703, SWRF16B7703, SWRF8B7703 and SWRF47703 types. |
+| Evertz 7x00 General Platform - 7880IPASIIP | Used for the 7880IPASIIP module. |
+| Evertz 7x00 General Platform - 7703DA-RFA | Used for the 7703DA4A-RF, 7703DA4A-RF-LNB, 7703DA8A-RF, 7703DA8A-RF-LNB, 7703DA16-RF, and 7703DA16-RF-LNB types. |
+| Evertz 7x00 General Platform - 7880IRD-H264 | Used for the 7780IRD-H264-HD-LB module. |
+| Evertz 7x00 General Platform - 7700DA6 | Used for the 7700DA6-HD-L and 7700DA6-L types. |
+| Evertz 7x00 General Platform - 7780DMIPLB | Used for the 7780DM2-IP-LB, 7780DM2-IP-LB2, 7780DM-IP-LB2, 7780DM2-IP-CA and 7780DM4-IP-CA types. |
+| Evertz 7x00 General Platform - 7707VT8 | Used for the 7707VT8 module. |
+| Evertz 7x00 General Platform - 7707VT8-HS | Used for the 7707VT-8-HS module. |
+| Evertz 7x00 General Platform - 7707VR8-HS | Used for the 7707VR-8-HS module. |
+| Evertz 7x00 General Platform - BPXRF | Used for the 7703BPX-LB, 7703BPXA-LB, 7703BPX50-LB, 7703BPXA-LB-50, 7703BPX-IF, 7703BPXA-IF, and 7703BPX50-IF types (where LB and IF denote the L-band or IF frequency type). |
+| Evertz 7x00 General Platform - 7708LR | Used for the 7708LRA and 7708LR-H types. |
+| Evertz 7x00 General Platform - 7708LT | Used for the 7708LT, 7708LT-LNB, 7708LT-DWDM and 7708LT-DWDM-LNB types. |
+| Evertz 7x00 General Platform - 7707OE | Used for the 7707EO-3G, 7707OE-3G, 7707OE-3G-H, 7707OE-3G-1 and 7707OE-3G-H-1 types. |
+| Evertz 7x00 General Platform - 7780ASI-B2-DS3 | Used for the 780ASIB2-DS3/E3 module. |
+| Evertz 7x00 General Platform - 7703PA | Used for the 7703PA, 7703PA-LNB, 7703PA-2, 7703PA-2-LNB and 7803PA-2-LNB2 types. |
+| Evertz 7x00 General Platform - 7881DEC2MP2HD | Used for the 7881DEC2-MP2 module. |
+| Evertz 7x00 General Platform - 7700ACO2HD | Used for the 7700ACO2HD module. |
+| Evertz 7x00 General Platform - 7812DCDA2Q | Used for the 7812DCDA2Q module. |
+| Evertz 7x00 General Platform - 7814UDX | Used for the 7814UDX module. |
+| Evertz 7x00 General Platform - 7736CDM | Used for the 7736CDM-A4 and 7736CDM-AES types. |
+| Evertz 7x00 General Platform - 7736CEM | Used for the 7736CEM, 7736CEM-A4 and 7736CEM-AES types. |
+| Evertz 7x00 General Platform - 7700ACOHD | Used for the 7700ACO-HD module. |
+| Evertz 7x00 General Platform - 7807LR2 | Used for the 7807LR-2 and 7807LR-2-H module. |
+| Evertz 7x00 General Platform - 7707ET | Used for the 7707ET module. |
+| Evertz 7x00 General Platform - 7712UCHD | Used for the 7712UCHD module. |
+| Evertz 7x00 General Platform - 7700DA7-3G | Used for the 7700DA7-3G module. |
+| Evertz 7x00 General Platform - 7807LT2 | Used for the 7807LT2 module. |
+| Evertz 7x00 General Platform - 7707EO (DA2EOSD) | Used for the 7707EO module a.k.a. DA2EOSD (product name). |
+| Evertz 7x00 General Platform - 7707OE (DA2OESD) | Used for the 7707OE module a.k.a. DA2OESD (product name). |
+| Evertz 7x00 General Platform - 7746FSHD | User for the 7746FSxxxx modules. |
+| Evertz 7x00 General Platform - 7781DEC2MP2HD | Used for 7781DEC2MP2HD module. |
+| Evertz 7x00 General Platform - 7707VR8 | Used for 7707VR8 module. |
+| Evertz 7x00 General Platform - 7782DECH264 | Used for 7782DECH264 module. |
+| Evertz 7x00 General Platform - 7890MG | Used for 7890MG module. |
+| Evertz 7x00 General Platform - 7707VT4HS | User for 7707VT4HS module. |
+| Evertz 7x00 General Platform - 7707VT4 | Used for 7707VT4 module. |
+| Evertz 7x00 General Platform - 7707VR4HS | Used for 7707VR4HS module. |
+| Evertz 7x00 General Platform - ENC7882H264HDFC | Used for ENC7882H264HDFC module. |
+| [Evertz 7x00 General Platform - 7800R4X23G](xref:Connector_help_Evertz_7x00_General_Platform_-_7800R4X23G) | Used for 7800R4X23G module. |
+| [Evertz 7x00 General Platform - 7812UDXD](xref:Connector_help_Evertz_7x00_General_Platform_-_7812UDXD) | Used for the 7812UDXD module. |
+| [Evertz 7x00 General Platform - 746FSEAES8HD](xref:Connector_help_Evertz_7x00_General_Platform_-_7746FSEAES8HD) | Used for the 746FS-EAES8-HD module. |
+| [Evertz 7x00 General platform - 7882DM-SAT](xref:Connector_help_Evertz_7x00_General_platform_-_7882DM-SAT) | Used for the 7882DM-SAT module. |
+| [Evertz 7x00 General Platform - 7707IFTA](xref:Connector_help_Evertz_7x00_General_Platform_-_7707IFTA) | Used for the 7707IFTA module - 7707LT card family. |
+| [Evertz 7x00 General Platform - 7707IFRA](xref:Connector_help_Evertz_7x00_General_Platform_-_7707IFRA) | Used for the 7707IFRA module - 7707RT card family. |
 
 ## Configuration
 

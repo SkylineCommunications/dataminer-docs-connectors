@@ -12,10 +12,10 @@ This connector monitors and configures Enensys GigaCaster DMB devices over **SNM
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                   | **Based on** | **System Impact**                              |
-|----------------------|------------------------------------------------------------------------------------|--------------|------------------------------------------------|
-| 1.0.0.x              | Initial version.                                                                   | -            | -                                              |
-| 1.0.1.x [SLC Main]   | Compliancies, version history, and new parameters have been added in this version. | 1.0.0.3      | Page name changed. Cassandra compliance added. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | Compliancies, version history, and new parameters have been added in this version. | 1.0.0.3 | Page name changed. Cassandra compliance added. |
 
 ### Product Info
 
@@ -46,14 +46,6 @@ SNMP Settings:
 - **Port number**: The port of the connected device, by default *161.*
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

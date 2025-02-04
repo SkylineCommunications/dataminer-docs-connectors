@@ -14,12 +14,12 @@ It uses the REST API to get and set all the associated parameters for this type 
 
 ### Version Info
 
-| **Range**                                                                | **Description**                                 | **DCF Integration** | **Cassandra Compliant** |
-|---------------------------------------------------------------------------------|-------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[not to be used - no monitoring capabilities due to undocumented API\] | Initial Version                                 | No                  | Yes                     |
-| 1.0.1.x **\[SLC Main\]**                                                        | Using the RedFish API - iLO 4                   | No                  | Yes                     |
-| 1.1.0.x **\[Obsolete\]**                                                        | Using the Redfish API - iLO 5                   | No                  | Yes                     |
-| 1.1.1.x **\[SLC Main\]**                                                        | Using the Redfish API - iLO 5 with SNMP polling | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [not to be used - no monitoring capabilities due to undocumented API] | Initial version | No | Yes |
+| 1.0.1.x **[SLC Main]** | Using the RedFish API - iLO 4 | No | Yes |
+| 1.1.0.x **[Obsolete]** | Using the Redfish API - iLO 5 | No | Yes |
+| 1.1.1.x **[SLC Main]** | Using the Redfish API - iLO 5 with SNMP polling | No | Yes |
 
 ### Product Info
 
@@ -57,19 +57,19 @@ SNMP CONNECTION:
 
 ## Usage
 
-General
+### General
 
 This page displays the device generic information, which contains the following parameters: **Server Name**, **Product Name**, **UUID**, **Serial Number**, **Product Id**, **System ROM**, **System ROM Date**, **Backup ROM Date**, **System Health**, **Power**, **UID Indicator**, **Date**, **ILO Name**, **License**, **ILO FW Version**, **IP Address** and **IPV6 Link Local**.
 
 ### Active Sessions
 
-This page displays a table where the info related to Active Sessions are being shown up. The table contains the following columns: **Index**, **User Type**, **User Name,** **User Tag** and **User IP**.
+This page displays a table where the info related to Active Sessions are being shown up. The table contains the following columns: **Index**, **User Type**, **User Name**, **User Tag** and **User IP**.
 
 ### Connection Setup
 
 The Connection Setup page displays the **User Name** and **Password** text boxes where the credentials information are filled for the HTTP API polling.
 
-By default, **SNMP polling** is disabled, but can be enabled by toggling the **SNMP Polling** parameter. SNMP polling is used to populate the items and subages on the **Alarms** page.
+By default, **SNMP polling** is disabled, but can be enabled by toggling the **SNMP Polling** parameter. SNMP polling is used to populate the items and subpages on the **Alarms** page.
 
 ### System Information
 
@@ -92,25 +92,25 @@ In case some piece of information seems to be missing, first check that the actu
 
 ### Integrated Management Log
 
-This page displays the **Integrated Management Log Table** which contains the following columns: **Description,** **Severity**, **Last Update** and **Initial Update.**
+This page displays the **Integrated Management Log Table** which contains the following columns: **Description**, **Severity**, **Last Update** and **Initial Update.**
 
 This table provides some configuration options to manage the table:
 
-- **Clear Log -** Clear the Table (this page is only available in the 1.0.0.x and 1.0.1.x range)
-- **Refresh -** Forces a refresh on the Table.
-- **Polling Configuration** - To configure the polling rate of this table for each hour or 5 min.
-- **Maximum Number of Entries** - To Limit in size the amount of available rows in the table
+- **Clear Log**: Clear the Table (this page is only available in the 1.0.0.x and 1.0.1.x range)
+- **Refresh**: Forces a refresh on the Table.
+- **Polling Configuration**: To configure the polling rate of this table for each hour or 5 min.
+- **Maximum Number of Entries**: To Limit in size the amount of available rows in the table
 
 ### iLO Event Log
 
-This page displays the **ILO Event Log Table** which contains the following columns: **Description,** **Severity**, **Last Update**, **Initial Update** and **Count**.
+This page displays the **ILO Event Log Table** which contains the following columns: **Description**, **Severity**, **Last Update**, **Initial Update** and **Count**.
 
 This table provides some configuration options to manage the table:
 
-- **Clear Log -** Clear the Table
-- **Refresh -** Forces a refresh on the Table.
-- **Polling Configuration** - To configure the polling rate of this table for each hour or 5 min.
-- **Maximum Number of Entries** - To Limit in size the amount of available rows in the table
+- **Clear Log**: Clear the Table
+- **Refresh**: Forces a refresh on the Table.
+- **Polling Configuration**: To configure the polling rate of this table for each hour or 5 min.
+- **Maximum Number of Entries**: To Limit in size the amount of available rows in the table
 
 ### Alarms
 

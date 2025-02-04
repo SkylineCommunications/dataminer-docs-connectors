@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 Fill in the **Username** and **API Key** on the **General** page. Basic authentication with passwords is deprecated, and instead of the password an **API token needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element polls all service desks for the environment specified in the URL of the element. This includes the **Service Desks**, **Queues**, and **Issues**. You can choose to enable or disable polling of certain queues.

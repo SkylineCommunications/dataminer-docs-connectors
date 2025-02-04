@@ -12,21 +12,21 @@ This is an **SNMP** connector that exports the protocol **Grass Valley 8900 Slot
 
 ### Version Info
 
-| Range     | Description      | DCF Integration     | Cassandra Compliant     |
-|------------------|------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version  | No                  | Yes                     |
-| 1.0.1.x          | DVE custom names | No                  | Yes                     |
-| 1.0.2.x          | Added DCF        | Yes                 | Yes                     |
+| Range   | Description      | DCF Integration | Cassandra Compliant |
+|---------|------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version  | No              | Yes                 |
+| 1.0.1.x | DVE custom names | No              | Yes                 |
+| 1.0.2.x | Added DCF        | Yes             | Yes                 |
 
 ### Product Info
 
-| **Range**        | **Device Firmware Version**                    |
-|-------------------------|------------------------------------------------|
-| 1.0.0.x 1.0.1.x 1.0.2.x | Software version: 4.0.0 Hardware revision: 01A |
+| Range                           | Device Firmware Version                            |
+|---------------------------------|----------------------------------------------------|
+| 1.0.0.x <br>1.0.1.x <br>1.0.2.x | Software version: 4.0.0 <br>Hardware revision: 01A |
 
 ### Exported connectors
 
-| **Exported Connector**  | **Description**       |
+| Exported Connector     | Description           |
 |------------------------|-----------------------|
 | Grass Valley 8900 Slot | 8947 and 8949 modules |
 
@@ -52,7 +52,7 @@ SNMP Settings:
 
 ### Frame Status
 
-This page contains parameters related to the **general functioning** of the frame, such as the bus status summary, the **general frame status**, **temperature**, **fan** and **power supplies status**.
+This page contains parameters related to the **general functioning** of the frame, such as the bus status summary, the **general frame status**, **temperature**, **fan**, and **power supplies status**.
 
 ### General NetCard
 

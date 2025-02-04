@@ -28,14 +28,6 @@ This is a module for the Foxcom Platinum PL700 Manager. This module has 2 **tran
 
 ## Configuration
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

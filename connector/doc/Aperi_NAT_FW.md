@@ -56,10 +56,6 @@ HTTP CONNECTION:
 
 After element creation, specify a valid **User Name** and **Password** to start polling data from the device. To do so, in version 1.0.0.x, go to the **Security Settings** subpage of the **General** page. In version 2.0.0.x, these settings are available directly on the **General** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

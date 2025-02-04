@@ -36,14 +36,6 @@ History sets are implemented so that if trending is enabled, it will include the
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 To use this connector, you will need to add a row in the **File Paths** table and fill in the file path where the csv.gz files are stored for a single device.

@@ -12,10 +12,10 @@ The **HP Storageworks MSA** connector is used to monitor and control the HP Stor
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                                                                                                                                                                      | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 2.0.0.x              | Changed connector to new MIBs                                                                                                                                                                                                                                                                           | No                  | True                    |
-| 3.0.0.x [SLC Main]   | HTTP only version, Note that this version is not compatible with the previous versions.Features Implemented: + Features General Info, Controllers, Enclosures, Fans, Power Supplies, Volumes, Disks, Hosts and Event Log. + Implemented Physical and Logical Tree Control to resemble the device UI. | No                  | True                    |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 2.0.0.x | Changed connector to new MIBs | No | Yes |
+| 3.0.0.x [SLC Main] | HTTP-only version. Note that this version is not compatible with the previous versions.<br>Features Implemented: <br>- Features General Info, Controllers, Enclosures, Fans, Power Supplies, Volumes, Disks, Hosts and Event Log. <br>- Implemented Physical and Logical Tree Control to resemble the device UI. | No | Yes |
 
 ### Product Info
 
@@ -106,7 +106,7 @@ The **Hosts** page displays detailed information about the **Hosts**.
 
 ### Events
 
-The **Events** page presents the Log Table. The user may **enable or disable the polling** of this page and also manage the **ammount of event entries** to poll from the device.
+The **Events** page presents the Log Table. The user may **enable or disable the polling** of this page and also manage the **number of event entries** to poll from the device.
 
 ### Web Interface
 

@@ -44,14 +44,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -64,11 +56,11 @@ The element created with this connector consists of the data pages detailed belo
 
 This page displays general information about the device, such as **Serial Number**, **Model Number**, etc.
 
-There is also a **Reset** button, and a **Configuration** page button that displays a subpage with several settings, such as **Alarm Detection Mode**, **Backoff** **Period**, **Minimum** **MAC** **Layer** **Retries**, etc.
+There is also a **Reset** button, and a **Configuration** page button that displays a subpage with several settings, such as **Alarm Detection Mode**, **Backoff Period**, **Minimum MAC Layer Retries**, etc.
 
 ### Amplifier Page
 
-This page displays the **Amplifier Unit**, **Amplifier Input**, **Amplifier Laser** and **Amplifier Output** tables.
+This page displays the **Amplifier Unit**, **Amplifier Input**, **Amplifier Laser**, and **Amplifier Output** tables.
 
 ### Power Supply Page
 
@@ -83,4 +75,4 @@ This page displays the **Fan Status** table.
 This page displays the **Current Alarm Table**, and contains two page buttons:
 
 - **Properties**: Displays the **Property Table** and the **Discreet Property Table**.
-- **Logs**: Displays the **Alarm Log Table.**
+- **Logs**: Displays the **Alarm Log Table**.

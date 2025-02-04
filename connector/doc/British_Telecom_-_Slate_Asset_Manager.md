@@ -39,10 +39,6 @@ With the **File Server User Name**, **Domain** and **Password**, you can specify
 
 With **Encoder Mount Path**, you can specify what the path will look like on the encoder itself. By default, this should start with */data/mnt/...*
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 To add, update or remove assets, the script **British Telecom Slate Asset Manager** is needed. The visual overview should be used on the application to launch the appropriate script in the correct mode.

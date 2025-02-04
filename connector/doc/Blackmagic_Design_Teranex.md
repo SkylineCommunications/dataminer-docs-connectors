@@ -42,14 +42,6 @@ SERIAL CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the device. Default value: *9800*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 This connector is fairly straightforward. After the element has been created, it will display the values retrieved from the device.
