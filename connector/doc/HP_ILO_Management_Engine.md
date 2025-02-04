@@ -96,7 +96,7 @@ This page displays the **Integrated Management Log Table**, which contains the f
 
 Some configuration options are available to manage the table:
 
-- **Clear Log**: Clear the table (only available in the 1.0.0.x and 1.0.1.x range).
+- **Clear Log**: Clears the table (only available in the 1.0.0.x and 1.0.1.x range).
 - **Refresh**: Forces a refresh of the data in the table.
 - **Polling Configuration**: Allows you to set the polling rate of the table to each hour or 5 min.
 - **Maximum Number of Entries**: Allows you to limit the total number of rows available in the table.
@@ -107,7 +107,7 @@ This page displays the **ILO Event Log Table**, which contains the following col
 
 Some configuration options are available to manage the table:
 
-- **Clear Log**: Clear the table.
+- **Clear Log**: Clears the table.
 - **Refresh**: Forces a refresh of the data in the table.
 - **Polling Configuration**: Allows you to set the polling rate of the table to each hour or 5 min.
 - **Maximum Number of Entries**: Allows you to limit the total number of rows available in the table.
