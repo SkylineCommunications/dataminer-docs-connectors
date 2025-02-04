@@ -4060,8 +4060,14 @@
     topicUid: Connector_help_Generic_Trap_Forwarder
   - name: Generic Trap Processor
     topicUid: Connector_help_Generic_Trap_Processor
+    items:
+    - name: Generic Trap Processor Technical
+      topicUid: Connector_help_Generic_Trap_Processor_Technical
   - name: Generic Trap Receiver
     topicUid: Connector_help_Generic_Trap_Receiver
+    items:
+    - name: Generic Trap Receiver Technical
+      topicUid: Connector_help_Generic_Trap_Receiver_Technical
   - name: Generic Truck Manager
     topicUid: Connector_help_Generic_Truck_Manager
   - name: Generic TSI-SP-003 VMS
