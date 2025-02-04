@@ -8,61 +8,29 @@ This virtual connector reads and parses USAGM-specific Excel files representing 
 
 ## About
 
-### Version Info
+### Key Features
 
-| Range   | Key Features     | Based on | System Impact |
-|---------|------------------|----------|---------------|
-| 1.0.0.x | Initial version. | -        | -             |
+- **Parsing Proprietary Excel Sheets into Scheduling Table**: This driver is able to parse and display booking schedules as well as determine which bookings are active, all from the Excel.
+- **Multiple Bookings Schedules**: This connector has the capability of parsing multiple bookings schedules at once.
+- **Service Tracking**: This connector displays every service available on the DMA in a table.
+-**Row config***: Should the order of columns in the excel change, the user can update the row location of various parameters on the **General** Page.
 
-### Product Info
+## Use Cases
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -              |
+### Writing this marketing document
 
-### System Info
+**Challenge:** 
+User has hundreds of inactive programs which are still displaying alarms that are not important.
+**Solution:** 
+This driver, in conjunction with an Interactive Automation Script, will mask these inactive programs and unmask when they become active.
+**Benefit:** 
+User is not flooded with "false positive" alarms.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Technical info
 
-## Configuration
+### Prerequisites
 
-### Connections
+- **DataMiner version 10.2 or higher** is required for compatibility with the Skyline Masking Service connector.
 
-#### Virtual connection
-
-This connector uses a virtual connection and does not require any input during element creation.
-
-## Usage
-
-### General
-
-Contains various parameters such as the *Config* parameters, and the *Row config* parameters which define where in the excel various parameters will be found.
-
-### Schedules
-
-Contains the Schedules table - the full schedule of program data.
-
-### Filtered Programs
-
-Contains the *Programs* table - full list of programs.
-
-### Active Programs
-
-Contains the *Active Programs* table - list of only active programs.
-
-### Services
-
-Contains the Services table - every existing service in the DMA
-
-### Audit Trail
-
-Contains the *Audit Trail* table.
-
-## Requirements
-On startup of the element, user must do the following
-
--Set the Excel Import Path parameter to the path containing the Excel documents to be parsed. *Note: Directories containing multiple Excel files will result in parsing of all at once*
--Check the Row Config against the Excel file for formatting changes: Generally these will not change, but if parsing is wrong, will have to update the various Rows/Program Start/UTC Column parameters to match that of the Excel files.
--Click the Refresh Button - Excel files will now be parsed/tables will be filled. Consult the *Import Status Message* parameter for any errors that may occur during parsing.
+[!NOTE]
+> For in-depth information on configuring and using the DataMiner connector for Skyline Masking Services, refer to the [Technical help page](xref:Connector_help_Skyline_Masking_Services_Technical).
