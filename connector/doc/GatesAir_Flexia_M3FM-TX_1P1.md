@@ -12,10 +12,10 @@ This is an **SNMP**-based connector for the GatesAir Flexiva M3M-TX 1P1.
 
 ### Version Info
 
-| **Range** | **Description**        |
-|------------------|------------------------|
-| 1.0.0.x          | Initial version        |
-| 1.0.1.x          | Added support for DVEs |
+| Range   | Description            |
+|---------|------------------------|
+| 1.0.0.x | Initial version        |
+| 1.0.1.x | Added support for DVEs |
 
 ### Product Info
 
@@ -26,7 +26,7 @@ This is an **SNMP**-based connector for the GatesAir Flexiva M3M-TX 1P1.
 
 ### Exported connectors
 
-| **Exported Connector**                           | **Description**    |
+| Exported Connector                              | Description        |
 |-------------------------------------------------|--------------------|
 | GatesAir Flexiva M3FM-TX 1P1 Main Transmitter   | Main transmitter   |
 | GatesAir Flexiva M3FM-TX 1P1 Backup Transmitter | Backup transmitter |
@@ -71,7 +71,7 @@ They display the **Communication**, **Frequency**, **Summary Faults**, **Remote 
 
 Both pages have two page buttons:
 
-- **Transmitter Config**: Transmitter settings of **Trip Level**, **Warning** **Level** and **Trip Time**.
+- **Transmitter Config**: Transmitter settings of **Trip Level**, **Warning Level** and **Trip Time**.
 - **Transmitter Events**: Transmitter **Event settings**.
 
 ### Web Interface

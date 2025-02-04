@@ -14,12 +14,12 @@ It uses the REST API to get and set all the associated parameters for this type 
 
 ### Version Info
 
-| **Range**                                                                | **Description**                                 | **DCF Integration** | **Cassandra Compliant** |
-|---------------------------------------------------------------------------------|-------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x \[not to be used - no monitoring capabilities due to undocumented API\] | Initial version                                 | No                  | Yes                     |
-| 1.0.1.x **\[SLC Main\]**                                                        | Using the RedFish API - iLO 4                   | No                  | Yes                     |
-| 1.1.0.x **\[Obsolete\]**                                                        | Using the Redfish API - iLO 5                   | No                  | Yes                     |
-| 1.1.1.x **\[SLC Main\]**                                                        | Using the Redfish API - iLO 5 with SNMP polling | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [not to be used - no monitoring capabilities due to undocumented API] | Initial version | No | Yes |
+| 1.0.1.x **[SLC Main]** | Using the RedFish API - iLO 4 | No | Yes |
+| 1.1.0.x **[Obsolete]** | Using the Redfish API - iLO 5 | No | Yes |
+| 1.1.1.x **[SLC Main]** | Using the Redfish API - iLO 5 with SNMP polling | No | Yes |
 
 ### Product Info
 

@@ -38,10 +38,6 @@ SNMP CONNECTION:
 - **IP port**: The IP port of the destination
 - **Bus address**: The bus address of the device.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

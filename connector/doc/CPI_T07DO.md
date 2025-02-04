@@ -49,14 +49,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device, by default *50000*.
   - **Bus address**: The bus address of the device, by default *48*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

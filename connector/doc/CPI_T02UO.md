@@ -43,14 +43,6 @@ SERIAL CONNECTION:
 - **IP port**: The port of the device, by default *50000.*
 - **Bus address***:* The bus address of the device, by default *48.*
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector has the following data pages:

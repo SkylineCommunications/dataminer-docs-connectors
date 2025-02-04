@@ -17,13 +17,18 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
 
+> [!TIP]
+> To optimize your use of this connector, we recommend deploying our **Standard Product Solution** [Starlink Enterprise](https://catalog.dataminer.services/details/66a4c259-0fb1-4c27-aede-8bbd3a4925d0) via the Catalog. This way, you will also be able to use the complementary low-code app and standard available dashboards.
+
 ## About
 
 ### Version Info
 
 | Range              | Key Features    | Based on                       | System Impact |
 |--------------------|-----------------|--------------------------------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
+| 1.0.0.x [Obsolete] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
+| 1.0.1.x [Obsolete] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | Foreign key parameters have been renamed, which impacts Automation scripts that retrieve a parameter of this protocol by name. |
+| 1.0.2.x [SLC Main] | Telemetry Data is set using history sets for accurate backpolling. Partial table option implemented for large tables. | Starlink Enterprise 1.0.1.2 | Pagination for large tables (User Terminal, Services, Daily Data Usage, Monthly Data Usage, Overage Lines). History sets can cause alarm storms if hysteresis is not enabled on alarm templates. |
 
 ### Product Info
 
@@ -33,9 +38,9 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ### System Info
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components                                                                            |
+|---------|-----------------|---------------------|-------------------|----------------------------------------------------------------------------------------------- |
+| 1.0.0.x | No              | Yes                 | -                 | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 
 ## Configuration
 
@@ -104,6 +109,26 @@ The **Device Name** column will show the service nickname if a service is active
 
 When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when no terminals are assigned to a specific account.
 
+#### User Terminal DVEs
+
+User terminals can be converted to dynamic virtual elements (DVEs). To **generate a DVE**, enable the **DVE Creation** toggle button for a specific terminal in the **User Terminals** table.
+
+To **remove a DVE**:
+
+1. Make sure that the **DVE Creation** toggle button for the corresponding terminal is set to *Disabled* in the **User Terminals** table.
+1. Navigate to the **User Terminal DVEs Configuration** page via the page button on the **Configuration** page or by clicking the downwards arrow next to Configuration.
+1. Click the **Delete** button for the corresponding terminal.
+1. Read the warning message carefully.
+1. If you are sure that the DVE can be removed, click **Yes** to confirm.
+
+User terminal DVEs can only be removed if the DVE Creation column contains a value other than *Enabled*. User terminals for which a dynamic virtual element was created will not be removed automatically if they are no longer returned by the API for more than one day and have DVE Creation set to *Enabled*.
+
+#### Relations to other tables
+
+The data retrieved and stored in the different tables can be linked to each other. For the hardware-related information, this is with the column **User Terminal Device ID**, while for the more service-related data, the **Service Line Number** is used.
+
+![Relations between tables](~/connector/images/Starlink_Enterprise_UserTerminalsRelationships.drawio.svg)
+
 ### Alerts Page
 
 Each row in the **Alerts** table represents an alert that comes from a user terminal (not from a router). Alerts will persist for as long as they are active.
@@ -116,9 +141,19 @@ Information related to routers is stored in the **Routers** table.
 
 The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
-As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
+As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for at most one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
+
+The **User Terminal Device ID** column contains the reference to the Device ID of the user terminal. In the API, this is referred to as the **Router Dish ID**.
+
+### IP Allocations Page
+
+Information related to IP allocations is stored in the **IP Allocations** table.
+
+The **IP Allocation Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
+
+The **User Terminal Device ID** column contains the reference to the device ID of the user terminal.
 
 ### Services Page
 
@@ -161,10 +196,23 @@ In case the element **does not show any data**, and traffic inside the Stream Vi
 
 The polling mechanism is triggered after the value of the Client Secret parameter changes. This means that a Client Secret value change is required to trigger a new poll cycle after an incorrect Client ID is corrected.
 
+> [!CAUTION]
+> Changing the client secret will also remove all dynamic virtual elements.
+
 The Configuration page also contains two telemetry request configuration parameters:
 
-- **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~1000 records per request.
-- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~1000 ms.
+- **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~65000 records per request (this is the maximum). If the batch does not have that size, it will return less. Keeping it at 65000 allows fast backpolling when needed.
+- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. This duration is recommended by Starlink in order for all the data points to come in accurately.
 
 > [!NOTE]
 > Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
+
+### User Terminal DVEs Configuration page
+
+Every row in the **User Terminal DVEs** table represents a DVE.
+
+If the table is empty, this means no DVEs have been generated yet.
+
+When a user generates a DVE by enabling the **DVE Creation** toggle button in the **User Terminals** table, a new row will appear in this table.
+
+Removing a DVE is only possibly via the **Delete** button in the **User Terminal DVEs** table. See [User Terminal DVEs](#user-terminal-dves).

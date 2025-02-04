@@ -45,10 +45,6 @@ HTTP CONNECTION:
 
 For the external tasks, the topic name and lock duration should be set on the **General** page or on the **External Tasks** \> **Configuration** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 External tasks, with the topic defined with the **External Tasks Topic Name** parameter, will be fetched and locked every minute. They will be requested for locking for the duration defined with the **External Tasks Lock Duration** parameter, for the specified **Worker ID**.

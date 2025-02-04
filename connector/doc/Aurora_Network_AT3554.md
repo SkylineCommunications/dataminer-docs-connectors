@@ -13,7 +13,7 @@ The information displayed in the main element is delivered in four pages:
 - The **General** page contains general information about the specific AT3554 slot.
 - The **Alarms** page contains alarming information.
 - The **Configuration** page contains configuration settings specific to the AT3554 slot.
-- The **Alarms** **Configuration** page contains configuration settings specific to the AT3554 slot.
+- The **Alarms Configuration** page contains configuration settings specific to the AT3554 slot.
 
 ### Version Info
 
@@ -41,4 +41,4 @@ Contains configuration information.
 
 ### Alarms Configuration
 
-Contains alarm configuration information
+Contains alarm configuration information.

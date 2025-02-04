@@ -12,10 +12,10 @@ It is intended to be used with generic SNMP devices. SNMP is used to communicate
 
 ### Version Info
 
-| **Range** | **Key Features**       | **Based on** | **System Impact** |
-|-----------|------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version        | -            | -                 |
-| 1.0.1.x   | Fully reviewed version | -            | -                 |
+| Range   | Key Features           | Based on | System Impact |
+|---------|------------------------|----------|---------------|
+| 1.0.0.x | Initial version        | -        | -             |
+| 1.0.1.x | Fully reviewed version | -        | -             |
 
 ### Product Info
 
@@ -46,8 +46,8 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **IP port**: The IP port of the device.
-- **Get community string**: The community string used when reading values from the device (default: public).
-- **Set community string**: The community string used when setting values on the device (default: private).
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Web Interface
 

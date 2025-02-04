@@ -12,22 +12,22 @@ With this connector either an **SDI** or an **ASI** matrix can be created, with 
 
 ### Version Info
 
-| **Range**         | **Description**                                                       | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|-----------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x                  | Initial version.                                                      | No                  | No                      |
-| 2.0.0.1                  | Label pages are custom-linked to page names.                          | No                  | No                      |
-| \>1.0.0.14               | Support for JupiterXPress added.                                      | No                  | No                      |
-| 1.0.1.1                  | Communication with device via smart-serial connection instead of DLL. | No                  | Yes                     |
-| 1.0.2.1 **\[SLC Main\]** | DCF interfaces added.                                                 | Yes                 | Yes                     |
+| Range                    | Description                                                           | DCF Integration | Cassandra Compliant |
+|--------------------------|-----------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x                  | Initial version.                                                      | No              | No                  |
+| 2.0.0.1                  | Label pages are custom-linked to page names.                          | No              | No                  |
+| \>1.0.0.14               | Support for JupiterXPress added.                                      | No              | No                  |
+| 1.0.1.1                  | Communication with device via smart-serial connection instead of DLL. | No              | Yes                 |
+| 1.0.2.1 **\[SLC Main\]** | DCF interfaces added.                                                 | Yes             | Yes                 |
 
 ### Product Info
 
-| Range     | Device Firmware Version      |
-|------------------|------------------------------|
-| 1.0.0.x          | AccuSwitch Application       |
-| 2.0.0.1          | AccuSwitch Application       |
-| \>1.0.0.14       | AccuSwitch and JupiterXPress |
-| 1.0.1.1          | JupiterXPress                |
+| Range      | Device Firmware Version      |
+|------------|------------------------------|
+| 1.0.0.x    | AccuSwitch Application       |
+| 2.0.0.1    | AccuSwitch Application       |
+| \>1.0.0.14 | AccuSwitch and JupiterXPress |
+| 1.0.1.1    | JupiterXPress                |
 
 ## Installation and configuration
 
@@ -42,6 +42,7 @@ SERIAL CONNECTION:
 - **IP address/host**: The polling IP of the device.
 - **IP port**: The IP port of the device. Default: *420*, *UDP.*
 - **Bus address**: The bus address of the device: *\<device address\>.\<level\>*
+
   \<device address\> and \<level\> are *1-based*. A level of *1* indicates **SDI** and a level of *2* indicates **ASI**.
 
 ### Installation Procedure
@@ -80,7 +81,7 @@ If you use a version of the connector prior to 1.0.1.1, you can also find the **
 
 ### Input-Outputs
 
-This page contains a **matrix** with **outputs on the X-axis** and **inputs on the Y-axis.** **Label Names** and **Categories** are retrieved from the device. It is possible to **set crosspoints** and to apply **locking or unlocking**.
+This page contains a **matrix** with **outputs on the X-axis** and **inputs on the Y-axis**. **Label Names** and **Categories** are retrieved from the device. It is possible to **set crosspoints** and to apply **locking or unlocking**.
 
 When a **locking or unlocking** command is executed, the **Communication Status** parameter on this page and on the General page will show *Timeout*. However, the lock or unlock command does go through to the device, and despite the timeout status, the connector is still fully functional. To clear the timeout status of this parameter, go to the **Advanced** subpage of the General page and use the **Clear Queue** parameter.
 

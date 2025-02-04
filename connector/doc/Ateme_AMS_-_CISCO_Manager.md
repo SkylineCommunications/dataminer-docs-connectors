@@ -20,16 +20,6 @@ This connector is exported by the [Ateme AMS](xref:Connector_help_Ateme_AMS) con
 |-----------|------------------------|
 | 1.0.0.x   | 3.1.1.80               |
 
-## Configuration
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the general page you will find all standalone parameters that come from the CISCO Manager element.

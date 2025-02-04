@@ -55,10 +55,6 @@ SNMP Settings:
 
 The connector is designed to poll the information of a single card. The slot position within the frame needs to be configured in the element under the **Device Address**.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

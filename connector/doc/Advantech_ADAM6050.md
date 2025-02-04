@@ -10,19 +10,32 @@ The **Advantech ADAM6050** connector is a serial connector used to monitor and c
 
 The **Advantech ADAM6050** is an 18-ch Isolated Digital I/O Modbus TCP Module, which supports High-to-Low Delay Output. With this connector, the outputs can be set for the device. The inputs are only monitored. It is also possible to set the user value, which is the value the user associates with the real value on the device. With the inversion setting, the user value will be the inverted value of the real value on the device.
 
+### Version Info
+
+| Range              | Features        | Based on | System Impact |
+|--------------------|-----------------|----------|---------------|
+| 1.0.0.x            | Initial version | -        | -             |
+| 1.0.1.x [SLC Main] | Migrated from SVN and added missing Advantech .dll files | 1.0.0.11       | -             |
+
+### Product Info
+
+| Range       | Supported Firmware |
+|-------------|---------------------|
+| 1.0.0.x     | -              |
+| 1.0.1.x     | Tested on firmware versions 5.X and 6.X |
+
+### System Info
+
+| Range       | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|-------------|-----------------|---------------------|-------------------|----------------------|
+| 1.0.0.x     | No              | Yes                 | -                | -                   |
+| 1.0.1.x     | No              | Yes                 | -                | -                   |
+
 ## Installation and configuration
 
 ### Creation
 
 When you create this element, only the IP address of the host and the port need to be configured.
-
-### Installation
-
-Before the connector can be used, the following .dll files have to be added in the directory *C:\Skyline DataMiner\ProtocolScripts*:
-
-- Advantech.Adam.dll,
-- Advantech.Common.dll,
-- Advantech.Protocol.dll.
 
 ## Usage
 

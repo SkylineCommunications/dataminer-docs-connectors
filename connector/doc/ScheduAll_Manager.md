@@ -19,8 +19,6 @@ The **web service** API is an XML interface over HTTP. DataMiner can send reques
 | 2.0.0.x | Initial version                              | No              | Yes                 |
 | 2.0.1.x | Support for SRM added                        | No              | Yes                 |
 | 2.0.3.x | Support for Unicode added                    | No              | Yes                 |
-| 3.0.0.x | POC for Voice of America connector review    | No              | Yes                 |
-| 3.0.1.x | Modify Booking Overview table layout         | No              | Yes                 |
 | 3.0.2.x | Changes made to interfacing Resource Manager | No              | Yes                 |
 
 ## Configuration
@@ -89,6 +87,16 @@ This page contains **communication configuration** parameters related to the web
 - Adjusting the polling time with the **Communication Web Service Polling Time** parameter.
 - Disabling or enabling polling of the client info or resource info tables from ScheduAll.
 - Time format used by ScheduAll.
+
+> [!NOTE]
+> In range 2.0.3.x, additional parameters are available on this page:
+>
+> - **Resolve DNS Name**: Indicates if the hostname (if specified) should be DNS-resolved. Set to *false* by default.
+> - **Dynamic URL**: Base URL path to append to the polling IP/host for each request.
+> - **Authentication Provider Username**: Used for setting the username if another authentication layer is used.
+> - **Authentication Provider Password**: User for setting the password if another authentication layer is used.
+>
+> Only the *Basic Auth* authentication type is supported. Username and password are joined with a colon, encoded with Base64 encoding, and set in the *Authorization* header.
 
 #### Timespan configuration
 
@@ -197,6 +205,9 @@ This subpage contains the configuration of the Automation script specified with 
     > If this option is selected, the Task Automation Script will be responsible for triggering the script again in order to process the pending work orders that have been added, which can be done by setting the pending work order IDs (separated by ;) in the **Work Order IDs Pending Script Processing** parameter (ID=35). The following example illustrates the format in which the work order IDs should be set: `12345;123456;123457`.
 
   - *Disabled*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
+
+  > [!NOTE]
+  > At most five of these scripts can run concurrently. The execution queue can hold up to fifty scripts. These limits cannot be adjusted. These are required to prevent system instability issues.
 
 On this subpage, you can also define the **Input Script Parameters**, which are passed as an argument of the referred Automation script for either new or modified work orders:
 

@@ -33,7 +33,7 @@ To find all the possible Low Band Matrices, click the **Get L-Band Element** but
 
 ### Antennas
 
-Adding and removing antennas is done in the **Antenna** **Table**. Once a row is added in this table, it is possible to configure it the same way the real antenna is configured.
+Adding and removing antennas is done in the **Antenna Table**. Once a row is added in this table, it is possible to configure it the same way the real antenna is configured.
 
 Required configurations are:
 
@@ -78,7 +78,7 @@ After the antennas have been configured, the linked inputs will be added in the 
 
 ### Destinations / Outputs
 
-According to the limit of the L-Band, outputs can be added to the **Output Table**. When you add an output, the current connected input will be retrieved from the **L-Band Matrix element**. This way, the configuration details from the antenna will be shown in the **Output Table**. Only the link to the IRD remains, and this can be done via the **Output Element Ref** column. This will indicate the **Element** **Name** of the IRD linked to this output. You can also give this IRD output a name in the **Dst (IRD)** column.
+According to the limit of the L-Band, outputs can be added to the **Output Table**. When you add an output, the current connected input will be retrieved from the **L-Band Matrix element**. This way, the configuration details from the antenna will be shown in the **Output Table**. Only the link to the IRD remains, and this can be done via the **Output Element Ref** column. This will indicate the **Element Name** of the IRD linked to this output. You can also give this IRD output a name in the **Dst (IRD)** column.
 
 From this IRD, multiple real-time values can be displayed in the **Output Table**. For this, the location of this value needs to be configured in the **Element Config.** To specify this location, add the protocol name used by the IRD in the **Output Element Config Table**. You can then set the parameter ID of the value you wish to retrieve. There are three fixed values:
 
@@ -137,7 +137,7 @@ This page gives an overview of the configured antennas. These will be available 
 
 The configuration of this table is explained in the section *Installation and configuration*.
 
-The values in the table will result in the correct setting of the actions requested via the Visio visual overview. E.g. when the Vertical Low Backup needs to be used, the connector will select the setting in the **Antenna VLB Input ID** in order to know the **L-Band Matrix** **Input**.
+The values in the table will result in the correct setting of the actions requested via the Visio visual overview. E.g. when the Vertical Low Backup needs to be used, the connector will select the setting in the **Antenna VLB Input ID** in order to know the **L-Band Matrix Input**.
 
 ### L-Band Matrix Antenna Alerts Page
 
@@ -157,7 +157,7 @@ The configuration of the LO Frequency with its minimum and maximum, as explained
 
 ### L-Band Matrix Destinations Page
 
-This page displays the main table to configure antennas via the Visio visual overview, the **Output Table**. It contains a list of all L-Band outputs with their currently connected inputs. You can configure the linked device with the **DataMiner** **Element Name** to each output. The type of this device, e.g. *IRD* or *SA* for Spectrum Analyzers, can be set via the **Output Element Type** column.
+This page displays the main table to configure antennas via the Visio visual overview, the **Output Table**. It contains a list of all L-Band outputs with their currently connected inputs. You can configure the linked device with the **DataMiner Element Name** to each output. The type of this device, e.g. *IRD* or *SA* for Spectrum Analyzers, can be set via the **Output Element Type** column.
 
 These linked devices can be given an alias that is displayed in the Visio visual overview for easier use. The current linked antenna and satellite are again retrieved automatically according to the configurations made in the **Antenna Table**.
 
@@ -169,11 +169,11 @@ The **Sync Matrix** button will retrieve the current connections in the L-Band m
 
 This page displays a list of all the satellites that are available for use. This list consists of manually added satellites and retrieved satellites of the configured **ACU elements**.
 
-Manually added satellites can be removed when they are no longer found in any of the **ACU** **elements**. If a satellite was not manually added and is not in any of the **ACUs,** it will be removed automatically.
+Manually added satellites can be removed when they are no longer found in any of the **ACU elements**. If a satellite was not manually added and is not in any of the **ACUs,** it will be removed automatically.
 
 ### Destination Configuration Page
 
-Via the Visio visual overview, it is possible to save a configuration of an output. This is saved in the **Destination Config Table.**
+Via the Visio visual overview, it is possible to save a configuration of an output. This is saved in the **Destination Config Table**.
 
 It is also possible to add and remove such a configuration with the **Add Destination** and **Delete Destination** buttons.
 
@@ -193,7 +193,7 @@ This page displays an overview of the equipment used by an antenna.
 
 The Low Band Matrix must use the **Novotronik MAS1000** connector with the **Production** version.
 
-The ACUs must use the **Andrew** **APC100** connector with the **Production** version.
+The ACUs must use the **Andrew APC100** connector with the **Production** version.
 
 The connector supports following commands in the Visio visual overview:
 
