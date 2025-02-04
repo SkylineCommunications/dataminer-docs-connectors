@@ -6795,7 +6795,7 @@
 - name: Promax
   items:
   - name: Promax Neo
-    topicUid: Connector_help_PROMAX_NEO
+    topicUid: Connector_help_Promax_Neo
   - name: Promax RANGERNeo 4
     topicUid: Connector_help_Promax_RANGERNeo_4
 - name: Prometheus
