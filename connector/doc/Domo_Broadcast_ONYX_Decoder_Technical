@@ -1,0 +1,50 @@
+---
+uid: Connector_help_Domo_Broadcast_ONYX_Decoder
+---
+
+# Domo Broadcast ONYX Decoder
+
+The **ONYX Decoder** is a broadcast decoder that offers compression ratios on video resolutions up to 4K UHD. It is suitable for remote production applications over leased lines or satellite, handling 4xHD or 1xUHD feed with ultra-low latency
+The **Domo Broadcast ONYX Decoder** connector is used to monitor and control ONYX decoders that support both ASI and IP inputs.
+
+## About
+
+### Version Info
+
+|Range  |Features  |Based on  |System Impact  |
+|---------|---------|---------|---------|
+|1.0.0.x [SLC Main]     |<ul><li>Initial version</li></ul>         |-         |-         |
+
+### Product Info
+
+|Range  |Supported Firmware  |
+|---------|---------|
+|1.0.0.x     |onyx-b150_4.12.0         |
+
+### System Info
+
+|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
+|---------|---------|---------|---------|---------|
+|1.0.0.x    |No       |Yes         |-         |   |
+
+## Configuration
+
+### Connections
+
+#### HTTP Connection
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+  - **IP address/host**: [The polling IP or URL of the destination.]
+  - **IP port**: [The IP port of the destination. (default: *443*)]
+  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to use
+
+The device web interface separates the parameters in to two groups: Status and Config. In the connector, those parameters are presented in a way where each module has a separate page for the status and config parameters. When the user wants to control/configure the parameters, go to the corresponding Config page of the module. All the information about the **Unit** module is presented in the **General**, **Device**, **Firmware** and **Power Supply** pages.
