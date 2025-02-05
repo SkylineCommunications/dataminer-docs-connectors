@@ -49,6 +49,8 @@ The connector uses a retry mechanism to update its tables after changing a cell 
 
 The parameters that are located on the pages USS Control and USS Operation Config are only relevant for devices with a single protection group. This means that these pages are not useful when multiple protection groups are available.
 
+The Group Name column of several tables can show wrong names. If it seems that the names are shifted, please change the Control Group Index parameter located on the USS Setup page. The default value (Check First ID) will instruct the connector to decide how to poll the groups, based on the ID of the first group. The One Based option will poll the groups without incrementing the ID. Example: group with ID 0 will be polled at //cgi-bin/pegui-cgi/uss0, group with ID 1 will be //cgi-bin/pegui-cgi/uss1, etc.
+
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
