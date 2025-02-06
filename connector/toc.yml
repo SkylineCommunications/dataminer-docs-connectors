@@ -7848,6 +7848,11 @@
     items:
     - name: Siselectron SR1 Technical
       topicUid: Connector_help_SISELECTRON_SR1_Technical
+- name: Site Sentinel
+  topicUid: Connector_help_Site_Sentinel
+  items:
+    - name: Site Sentinel Techincal
+      topicUid: Connector_help_Site_Sentinel_Technical
 - name: Sittig
   items:
   - name: Sittig DVA
