@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_SISELECTRON_SR1
+uid: Connector_help_Siselectron_SR1
 ---
 
 # Siselectron SR1
