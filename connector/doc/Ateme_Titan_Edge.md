@@ -74,3 +74,14 @@ The element created with this connector has the following data pages:
 - **Decoder**: Displays the decoder information.
 - **Encoder**: Displays the encoder information.
 - **Gateway**: Displays the gateway information.
+- **BISS**: Displays and manages BISS services.
+
+### BISS Page
+
+The BISS page provides a BISS Services table, which supports both encoders and decoders. This table allows users to configure and monitor BISS services.
+
+Important Notes:
+
+- Descrambling mode is not supported for encoders.
+- Entitlement key name is not supported for encoders.
+- Entitlement Session ID is not supported for decoders.
