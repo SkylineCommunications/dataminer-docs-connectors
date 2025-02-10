@@ -4,7 +4,7 @@ uid: Connector_help_Evertz_ev670-X45-HW_U8E8D
 
 # Evertz ev670-X45-HW U8E8D
 
-TThis connector can be used to monitor and configure the Evertz ev670-X45-HW U8E8D. This is an FPGA-accelerated compute blade that supports both 12G/3G/HD-SDI and IP interfaces.
+This connector can be used to monitor and configure the Evertz ev670-X45-HW U8E8D. This is an FPGA-accelerated compute blade that supports both 12G/3G/HD-SDI and IP interfaces.
 
 ## About
 
