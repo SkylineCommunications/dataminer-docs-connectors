@@ -32,4 +32,4 @@ This is a DataMiner connector for the **Siselectron SR1**, a rack mount server t
 ## Technical Information
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_SISELECTRON_SR1_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Siselectron_SR1_Technical).
