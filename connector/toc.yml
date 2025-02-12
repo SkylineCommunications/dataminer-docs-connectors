@@ -2154,6 +2154,8 @@
     topicUid: Connector_help_Cisco_Netflow
   - name: CISCO Nexus
     topicUid: Connector_help_CISCO_Nexus
+  - name: CISCO NSO
+    topicUid: Connector_help_CISCO_NSO
   - name: Cisco Panorama CL
     topicUid: Connector_help_Cisco_Panorama_CL
   - name: Cisco Panorama SL
