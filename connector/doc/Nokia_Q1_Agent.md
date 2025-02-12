@@ -4,85 +4,32 @@ uid: Connector_help_Nokia_Q1_Agent
 
 # Nokia Q1 Agent
 
-This connector is a network management system that is designed to manage Nokia node devices of the **Nokia DCNA** system.
-
 ## About
 
-### Version Info
+This is a DataMiner connector for the **Nokia Q1 Agent**, the network management system that is designed to manage Nokia node devices of the **Nokia DCNA** system. With this connector, you can monitor the Nokia node device data with DataMiner's alarm monitoring and trending features. The node devices will be displayed as a **Dynamic Virtual Element** in your DataMiner, to serve better alarming and monitoring purposes.
 
-| Range              | Key Features     | Based on | System Impact                                                               |
-|--------------------|------------------|----------|-----------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -                                                                           |
+### Key Features
 
-### Product Info
+- **FTP XML file import for node devices**: Importing your node devices is very easy! Configure the FTP information to import the XML file from the FTP server with just one click, and the node device DVE will be created.
+- **Alarm monitoring of the node devices**: To have real-time monitoring of the alarms that are triggered in the node devices.
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x |                    |
+## Use Cases
 
-### System Info
+### Node Device Alarms Monitoring
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+**Challenge:** The **Nokia DCNA** system uses obsolete communication protocol, and it is hard to monitor the alarm for each of the node device from a large amount of the node devices.
 
-## Configuration
+**Solution:** With this connector, you can easily import the node devices. For each node devices can be monitored individually. This also enables proactive monitoring and reduces the risk of unexpected system failures.
 
-### Connections
+**Benefit:** Potential issues can be quickly addressed in real time, improving the reliability and performance of managing the **Nokia DCNA** system.
 
-#### SNMP Main Connection
+## Prerequisites
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+- **DataMiner version 10.2 or higher** is required.
+- **Node device XML file** is needed for creating the DVE.
+- **FTP server access**: You must have a username, and password and configure the FTP information for the connector to be able to access the FTP directory to get the node devices for the monitoring.
 
-SNMP CONNECTION:
+## Technical Information
 
-- **IP address/host**: The polling IP of the device.
-
-SNMP Settings:
-
-- **IP port**: The IP port of the device.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: The community string used when setting values on the device, by default *private*.
-
-### Initialization
-
-The monitored devices are loaded from an XML file located on the FTP server.
-The **Username**, **Password**, **FTP Sever Address**, and **File Name** parameters on the **General** page are mandatory fields that must be completed to retrieve the XML file. If the file is located in a subfolder of the root directory, please ensure that the **File Path** parameter is also filled in.
-
-If DVEs need to be created automatically after importation, Please ensure the **DVE Auto Creation** option is enabled.
-
-> [!IMPORTANT]
-> Please note that if the **DVE Auto Creation** option is enabled, DVEs will be automatically created. This could result in a massive amount of DVEs being created.
-> If you wish to know how many DVEs will be created, please use the **Check DVE Count** button to check the maximum DVEs created. The result will be displayed at the parameter **Max DVE Number Count**.
-
-Once all the mandatory parameters are filled in, click the **Import DVE** button to import the node devices from the XML file.
-
-## How to Use
-
-### General
-
-This page contains FTP configuration parameters and DVE configuration settings.
-
-If you wish to create a DVE automatically when a node device is imported, ensure that the **Default View Name** is configured and the **DVE Auto Creation** option is enabled.
-
-**Check DVE Count** button can be used to check the maximum possible DVEs that will be created.
-
-### Device Management
-
-This page is used to managing the node devices that are important from the XML file.
-
-**Device Manegement** table  can be used to edit the device's DVE name and view. By enabling or disabling the DVE state of a device, the respective device DVE will be created or removed.
-
-Please exercise caution when removing a DVE as once a DVE is removed, its historical alarm and trend data can no longer be accessed, even if a DVE with the same name is added back.
-
-**Node Detailed Information** table displays the detailed information of each imported node device.
-
-### Alarms
-
-This page contains the **Alarms** table, which display alarms for each node device.
-
-### Logging
-
-This page contains the **DVE Log** table, which displays any messages that require attention during the import or creation of the node device DVE.
-
-
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Nokia_Q1_Agent_Technical).
