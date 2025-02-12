@@ -2,7 +2,7 @@
 uid: Connector_help_Nokia_Q1_Agent
 ---
 
-# Nokia NSP
+# Nokia Q1 Agent
 
 This connector is used to collect alarm data from the **Nokia DCNA** system, which is a network management system that is designed to manage Nokia node devices.
 
