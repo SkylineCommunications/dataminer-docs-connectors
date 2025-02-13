@@ -2288,15 +2288,15 @@
     topicUid: Connector_help_Conteg_RAMOS_Mini
 - name: Control By Web
   items:
-  - name: Control By Web X332
-    topicUid: Connector_help_Control_By_Web_X332
-  - name: Control By Web X400
-    topicUid: Connector_help_Control_By_Web_X400
   - name: Control By Web X-600M
     topicUid: Connector_help_Control_By_Web_X-600M
     items:
     - name: Connector name Technical
       topicUid: Connector_help_Control_By_Web_X-600M_Technical
+  - name: Control By Web X332
+    topicUid: Connector_help_Control_By_Web_X332
+  - name: Control By Web X400
+    topicUid: Connector_help_Control_By_Web_X400
 - name: Conviva
   items:
   - name: Conviva Experience Insights

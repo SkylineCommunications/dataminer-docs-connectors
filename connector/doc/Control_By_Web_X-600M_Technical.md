@@ -4,7 +4,7 @@ uid: Connector_help_Control_By_Web_X-600M_Technical
 
 # Control By Web X-600M
 
-This connector retrieves the state and performs minor controls of Control By Web modules attached to the X-600M.
+This connector retrieves the state and performs minor control functions of Control By Web modules attached to the X-600M.
 
 ## Configuration
 
@@ -44,8 +44,8 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-Once a valid Username and Password have been specified, content is retrieved and shown in the tables.
+Once a valid username and password have been specified, content is retrieved and shown in the tables.
 
-Some control of the Relays is available, and data is displayed depending on how the X-600M is configured for each Control By Web device.
+Some control of the relays is available, and data is displayed depending on how the X-600M is configured for each Control By Web device.
 
-Note: configuraiton of the names can break the handling of data, so it is highly recommended to use the default names of each KPI.
+Note: Configuration of the names can break the handling of data, so we highly recommend using the default names of each KPI.

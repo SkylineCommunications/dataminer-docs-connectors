@@ -8,7 +8,7 @@ The **Control By Web X-600M** is a multifunction web-enabled industrial I/O cont
 
 ## Key Features
 
-- **Simplistic UI**: simplistic UI that allows for addition of KPIs for any ControlByWeb module.
+- **Simplistic UI**: The simplistic UI allows for addition of KPIs for any ControlByWeb module.
 
 ## Use Cases
 
