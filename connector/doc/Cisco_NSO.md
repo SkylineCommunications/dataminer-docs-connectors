@@ -4,27 +4,9 @@ uid: Connector_help_Cisco_NSO
 
 # Cisco NSO
 
-The Cisco Network Services Orchestrator (NSO) is a orchestration platform for hybrid networks. It provides comprehensive lifecycle service automation to enable you to design and deliver high-quality services faster and more easily.
-
 ## About
 
-### Version Info
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |Initial version         |-         |-         |
-
-### Product Info
-
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |5.7.X        |
-
-### System Info
-
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+The Cisco Network Services Orchestrator (NSO) is a orchestration platform for hybrid networks. It provides comprehensive lifecycle service automation to enable you to design and deliver high-quality services faster and more easily.
 
 ## Configuration
 
@@ -36,12 +18,12 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination. (default: *443*)
-  - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination. (default: *443*)
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
+
 After creating a new element it is necessary that the user specifies the login credentials in the General page
 
 ## How to use
