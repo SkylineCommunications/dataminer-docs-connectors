@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Broadcast_Tools_Site_Sentinel
+uid: Connector_help_Site_Sentinel_Technical
 ---
 
 # Broadcast Tools Site Sentinel
