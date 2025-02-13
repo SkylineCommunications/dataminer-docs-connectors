@@ -78,10 +78,10 @@ The element created with this connector has the following data pages:
 
 ### BISS Page
 
-The BISS page provides a BISS Services table, which supports both encoders and decoders. This table allows users to configure and monitor BISS services.
+The BISS Services table on the BISS page supports both encoders and decoders. With this table, you can configure and monitor BISS services.
 
-Important Notes:
+Important notes:
 
 - Descrambling mode is not supported for encoders.
 - Entitlement key name is not supported for encoders.
-- Entitlement Session ID is not supported for decoders.
+- Entitlement session ID is not supported for decoders.
