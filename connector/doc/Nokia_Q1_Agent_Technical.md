@@ -4,25 +4,9 @@ uid: Connector_help_Nokia_Q1_Agent_Technical
 
 # Nokia Q1 Agent
 
+## About
+
 This connector is a network management system that is designed to manage Nokia node devices of the **Nokia DCNA** system.
-
-### Version Info
-
-| Range              | Key Features     | Based on | System Impact                                                               |
-|--------------------|------------------|----------|-----------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -                                                                           |
-
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x |                    |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -44,14 +28,14 @@ SNMP Settings:
 
 ### Initialization
 
-The monitored devices are loaded from an XML file located on the FTP server.
-The **Username**, **Password**, **FTP Sever Address**, and **File Name** parameters on the **General** page are mandatory fields that must be completed to retrieve the XML file. If the file is located in a subfolder of the root directory, please ensure that the **File Path** parameter is also filled in.
+The monitored devices are **loaded from an XML file** located on the FTP server.
 
-If DVEs need to be created automatically after importation, Please ensure the **DVE Auto Creation** option is enabled.
+To make sure the connector can retrieve this file, go to the **General** page and specify the **Username**, **Password**, **FTP Server Address**, and **File Name**. If the file is located in a subfolder of the root directory, make sure that the **File Path** parameter is also filled in.
+
+If DVEs need to be created automatically after the import, make sure the **DVE Auto Creation** option is enabled.
 
 > [!IMPORTANT]
-> Please note that if the **DVE Auto Creation** option is enabled, DVEs will be automatically created. This could result in a massive amount of DVEs being created.
-> If you wish to know how many DVEs will be created, please use the **Check DVE Count** button to check the maximum DVEs created. The result will be displayed at the parameter **Max DVE Number Count**.
+> If the **DVE Auto Creation** option is enabled, DVEs will be created automatically. This could result in a massive number of DVEs being created. If you wish to know how many DVEs will be created, use the **Check DVE Count** button to check the maximum number of DVEs that will be created. The result will be displayed by the parameter **Max DVE Number Count**.
 
 Once all the mandatory parameters are filled in, click the **Import DVE** button to import the node devices from the XML file.
 
@@ -61,19 +45,20 @@ Once all the mandatory parameters are filled in, click the **Import DVE** button
 
 This page contains FTP configuration parameters and DVE configuration settings.
 
-If you wish to create a DVE automatically when a node device is imported, ensure that the **Default View Name** is configured and the **DVE Auto Creation** option is enabled.
+If you wish to create a DVE automatically when a node device is imported, make sure that the **Default View Name** is configured and the **DVE Auto Creation** option is enabled.
 
-**Check DVE Count** button can be used to check the maximum possible DVEs that will be created.
+With the **Check DVE Count** button, you can check the maximum possible number of DVEs that will be created.
 
 ### Device Management
 
-This page is used to managing the node devices that are important from the XML file.
+This page is used to manage the node devices that are imported from the XML file.
 
-**Device Manegement** table  can be used to edit the device's DVE name and view. By enabling or disabling the DVE state of a device, the respective device DVE will be created or removed.
+In the **Device Management** table, you can edit the DVE name and view for the node devices. When the DVE state of a device is enabled or disabled, the corresponding device DVE will be created or removed, respectively.
 
-Please exercise caution when removing a DVE as once a DVE is removed, its historical alarm and trend data can no longer be accessed, even if a DVE with the same name is added back.
+> [!IMPORTANT]
+> Exercise caution when removing a DVE. Once a DVE has been removed, its historical alarm and trend data can no longer be accessed, even if a DVE with the same name is added again.
 
-**Node Detailed Information** table displays the detailed information of each imported node device.
+The **Node Detailed Information** table displays the detailed information of each imported node device.
 
 ### Alarms
 
@@ -81,6 +66,4 @@ This page contains the **Alarms** table, which display alarms for each node devi
 
 ### Logging
 
-This page contains the **DVE Log** table, which displays any messages that require attention during the import or creation of the node device DVE.
-
-
+This page contains the **DVE Log** table, which displays any messages that require attention during the import or creation of node device DVEs.
