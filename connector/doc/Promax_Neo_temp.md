@@ -4,6 +4,8 @@ uid: Connector_help_Promax_Neo
 
 # Promax Neo
 
+## About
+
 The Promax Neo is a portable device used to analyze and measure the quality of electronic signals.
 
 This connector is used to monitor and configure the device data using SNMP communication.
