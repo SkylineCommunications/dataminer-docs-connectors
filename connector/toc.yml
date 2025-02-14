@@ -3526,8 +3526,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
-  - name: Evertz ev670-X45-HW U8E8D
-    topicUid: Connector_help_Evertz_ev670-X45-HW_U8E8D
+  - name: Evertz ev670-X45-HW
+    topicUid: Connector_help_Evertz_ev670-X45-HW
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
@@ -6501,6 +6501,11 @@
     topicUid: Connector_help_Nokia_OMS_1350_-_Node
   - name: Nokia OMS 1350 - USRPNL
     topicUid: Connector_help_Nokia_OMS_1350_-_USRPNL
+  - name: Nokia Q1 Agent
+    topicUid: Connector_help_Nokia_Q1_Agent
+    items:
+    - name: Nokia Q1 Agent Technical
+      topicUid: Connector_help_Nokia_Q1_Agent_Technical
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
   - name: Nokia WaveLite
@@ -6968,7 +6973,7 @@
 - name: Promax
   items:
   - name: Promax Neo
-    topicUid: Connector_help_PROMAX_NEO
+    topicUid: Connector_help_Promax_Neo
   - name: Promax RANGERNeo 4
     topicUid: Connector_help_Promax_RANGERNeo_4
 - name: Prometheus
@@ -7844,10 +7849,10 @@
 - name: Siselectron
   items:
   - name: Siselectron SR1
-    topicUid: Connector_help_SISELECTRON_SR1
+    topicUid: Connector_help_Siselectron_SR1
     items:
     - name: Siselectron SR1 Technical
-      topicUid: Connector_help_SISELECTRON_SR1_Technical
+      topicUid: Connector_help_Siselectron_SR1_Technical
 - name: Site Sentinel
   topicUid: Connector_help_Site_Sentinel
   items:
@@ -8073,6 +8078,11 @@
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
+    name: Skyline Masking Services
+    topicUid: Connector_help_Skyline_Masking_Services
+    items:
+       - name: Skyline Masking Service Technical
+         topicUid: Connector_help_Skyline_Masking_Services_Technical 
   - name: Skyline MDC Service Monitoring
     topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch
