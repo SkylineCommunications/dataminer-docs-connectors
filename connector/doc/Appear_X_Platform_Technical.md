@@ -47,19 +47,6 @@ The connector operates sequentially, requesting data from the device, processing
 | Scrambler (CAx)             | SW 2.6                    | API 1.5+             | SR 7                     |
 | Descrambler (DSx)           | SW 2.4                    | Descr API 1.1+       | SR 7                     |
 
-### Exported Connectors
-
-| Exported Connector | Description |
-|--|--|
-| [Appear X Platform - IP IO](xref:Connector_help_Appear_X_Platform_-_IP_IO) | Displays settings and status data regarding IP Switch, Dual IP, SRT, ZIXI and IP JPEG XS Cards. |
-| [Appear X Platform - SDI IO](xref:Connector_help_Appear_X_Platform_-_SDI_IO) | Displays settings and status data regarding SDI and SDI JPEG XS TS Cards. |
-| [Appear X Platform - ASI IO](xref:Connector_help_Appear_X_Platform_-_ASI_IO) | Displays settings and status data regarding ASI Cards. |
-| [Appear X Platform - Coder](xref:Connector_help_Appear_X_Platform_-_Coder) | Displays settings and status data regarding ECx-Cards (SDI/ST2022/ST2110 Encoding & Decoding). |
-| [Appear X Platform - Demodulator](xref:Connector_help_Appear_X_Platform_-_Demodulator) | Displays settings and status data regarding Demodulator Cards. |
-| [Appear X Platform - Demodulator](xref:Connector_help_Appear_X_Platform_-_Modulator) | Displays settings and status data regarding Modulator Cards. |
-| [Appear X Platform - Scrambler](xref:Connector_help_Appear_X_Platform_-_Scrambler) | Displays settings and status data regarding Scrambler Cards. |
-| [Appear X Platform - Descrambler](xref:Connector_help_Appear_X_Platform_-_Descrambler) | Displays settings and status data regarding Descrambler Cards. |
-
 > [!NOTE]
 > To create or remove the DVE for a card, toggle the *DVE State* column in the **Module Overview Table** within the element. By default not exported.
 
@@ -67,7 +54,7 @@ The connector operates sequentially, requesting data from the device, processing
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | Yes             | Yes                 | -                 | -                   |
+| 1.0.0.x | Yes             | Yes                 | -                 | - [Appear X Platform - IP IO](xref:Connector_help_Appear_X_Platform_-_IP_IO)<br/>- [Appear X Platform - ASI IO](xref:Connector_help_Appear_X_Platform_-_ASI_IO)<br/>- [Appear X Platform - Coder](xref:Connector_help_Appear_X_Platform_-_Coder)<br/>- [Appear X Platform - Demodulator](xref:Connector_help_Appear_X_Platform_-_Demodulator)<br/>- [Appear X Platform - Modulator](xref:Connector_help_Appear_X_Platform_-_Modulator)<br/>- [Appear X Platform - Scrambler](xref:Connector_help_Appear_X_Platform_-_Scrambler)<br/>- [Appear X Platform - Descrambler](xref:Connector_help_Appear_X_Platform_-_Descrambler) |
 
 ## Configuration
 
