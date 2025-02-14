@@ -7856,7 +7856,7 @@
 - name: Site Sentinel
   topicUid: Connector_help_Site_Sentinel
   items:
-    - name: Site Sentinel Techincal
+    - name: Site Sentinel Technical
       topicUid: Connector_help_Site_Sentinel_Technical
 - name: Sittig
   items:
