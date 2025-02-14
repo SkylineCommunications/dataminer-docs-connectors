@@ -8073,6 +8073,11 @@
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
+    name: Skyline Masking Services
+    topicUid: Connector_help_Skyline_Masking_Services
+    items:
+       - name: Skyline Masking Service Technical
+         topicUid: Connector_help_Skyline_Masking_Services_Technical 
   - name: Skyline MDC Service Monitoring
     topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch
