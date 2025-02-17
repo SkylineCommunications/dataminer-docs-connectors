@@ -12,11 +12,11 @@ This connector can be used for multiple purposes, including the configuration of
 
 ### Version info
 
-| **Range** | **Key Features** | **Based on** | **System Impact**                                                                                                                  |
-|-----------|------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Initial version  | -            | -                                                                                                                                  |
-| 1.0.1.x   | New connector based | 1.0.0.4      | New improved Display look, New features, added data from new MIBs, changed the way the snmp data is retrieved using snmpSetAndGet. |
-| 1.0.2.x   | -                | 1.0.1.14     | New MIBs are added + Data linking between several Echoes Tables                                                                    |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | New connector based | 1.0.0.4 | New improved display look, new features, added data from new MIBs, changed the way the SNMP data is retrieved using snmpSetAndGet. |
+| 1.0.2.x | - | 1.0.1.14 | New MIBs are added. Data linking between several echoes tables. |
 
 ### Product Info
 
@@ -72,13 +72,17 @@ This page contains a number of buttons that allow you to perform certain operati
 - **Reset All**: Resets the entire device.
 - **Blink LED**: Asks the device to identify itself by blinking a LED.
 
-The page also contains two page buttons, which open the following subpages:
+The page also contains page buttons, which open the following subpages:
 
 - GPS Status: Displays the status of the **GPS Satellites**.
+
 - Time Config: Allows you to change the time settings, e.g. **Date Time**, **Time Source**, **Time Zone**, etc.
+
   Note: The **Time Zone** can only be configured when the **Time Source** is configured as *System*.
+
 - Network Interface: Interface table that provides an overview of **all used network interfaces**, with information about the IPv4 addresses, MAC addresses, Gateway, etc. It allows you to change the network settings of each network interface separately.
-- Device Option: Table that summarizes thetypes of devices and their current status.
+
+- Device Option: Table that summarizes the types of devices and their current status.
 
 Note: Not every combination of settings is accepted. For example, when **DHCP** is configured, the settings to change the **IP Address** will be disabled. The **Speed** setting *Ethernet 100* cannot be combined with a full **Duplex** configuration, and the interface speed cannot be changed when **Autonegotiation** is enabled.
 

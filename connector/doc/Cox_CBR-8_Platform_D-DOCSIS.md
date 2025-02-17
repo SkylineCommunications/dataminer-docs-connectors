@@ -60,10 +60,6 @@ SERIAL CONNECTION:
 
 Once you have created the element, on the **Configuration** page, enter the **CLI credentials** so the CLI polling can work properly. Once this is done, the element will start regular polling.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

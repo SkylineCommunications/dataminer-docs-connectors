@@ -10,35 +10,35 @@ This is an SNMP connector that shows the status of the different parameters of a
 
 The **Ericsson RX8200** is a very versatile piece of equipment. It comes in many different configurations, in which input and output options vary between IP, satellite, combo (satellite and IP), VSB, and ASI. In case of a combo type, a primary and secondary input can be specified.
 
-This connector allows the capturing of **traps** of type "**No TS Lock"**. The info related to the TS lock status is used to update the **TS Lock** **status** **parameter**. The IP to which the trap messages are sent can be configured in the **Trap Server** **table**, which contains the list of servers supporting the device.
+This connector allows the capturing of **traps** of type **No TS Lock**. The info related to the TS lock status is used to update the **TS Lock** **status** **parameter**. The IP to which the trap messages are sent can be configured in the **Trap Server** **table**, which contains the list of servers supporting the device.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version (SNMP only).                                                                                                                     | No                  | Yes                     |
-| 1.0.1.x              | Evolution from the 1.0.0.x range (extends firmware compatibility).                                                                               | No                  | Yes                     |
-| 2.0.0.x              | Reworked version of the 1.0.1.x range, with layout closely resembling the original device webpage.                                               | No                  | Yes                     |
-| 2.0.1.x              | Added XPO interface.                                                                                                                             | No                  | Yes                     |
-| 2.1.0.x              | Some new firmware 7.x features supported.                                                                                                        | No                  | Yes                     |
-| 2.2.0.x              | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | No                  | Yes                     |
-| 3.0.0.x              | DCF functionality added.                                                                                                                         | Yes                 | Yes                     |
-| 3.0.1.x              | Specific version made for customer BeIn. Based on version 3.0.0.18, but uses discreets for AudioEmbedding as they were until 3.0.0.9.            | Yes                 | Yes                     |
-| 3.1.0.x [SLC Main]   | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version (SNMP only). | No | Yes |
+| 1.0.1.x | Evolution from the 1.0.0.x range (extends firmware compatibility). | No | Yes |
+| 2.0.0.x | Reworked version of the 1.0.1.x range, with layout closely resembling the original device webpage. | No | Yes |
+| 2.0.1.x | Added XPO interface. | No | Yes |
+| 2.1.0.x | Some new firmware 7.x features supported. | No | Yes |
+| 2.2.0.x | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | No | Yes |
+| 3.0.0.x | DCF functionality added. | Yes | Yes |
+| 3.0.1.x | Specific version made for customer BeIn. Based on version 3.0.0.18, but uses discreets for AudioEmbedding as they were until 3.0.0.9. | Yes | Yes |
+| 3.1.0.x [SLC Main] | Supports new firmware 7.x and beyond. Not fully downwards compatible: some trending/alarm history may be lost. New hardware (DVB-S2X) supported. | Yes | Yes |
 
 ### Product Info
 
-| **Range** | **Device Software Version** |
-|------------------|-----------------------------|
-| 1.0.0.x          | Under 5.0.0                 |
-| 1.0.1.x          | 5.0.0 onwards               |
-| 2.0.0.x          | 5.0.0 onwards               |
-| 2.0.1.x          | 5.0.0 onwards               |
-| 2.1.0.x          | 7.0.0 onwards               |
-| 2.2.0.x          | 7.0.0 onwards               |
-| 3.0.0.x          | 3.0.0.x                     |
-| 3.0.1.x          | 8.11.x                      |
-| 3.1.0.x          | 7.0.0 onwards               |
+| Range   | Device Software Version |
+|---------|-------------------------|
+| 1.0.0.x | Under 5.0.0             |
+| 1.0.1.x | 5.0.0 onwards           |
+| 2.0.0.x | 5.0.0 onwards           |
+| 2.0.1.x | 5.0.0 onwards           |
+| 2.1.0.x | 7.0.0 onwards           |
+| 2.2.0.x | 7.0.0 onwards           |
+| 3.0.0.x | 3.0.0.x                 |
+| 3.0.1.x | 8.11.x                  |
+| 3.1.0.x | 7.0.0 onwards           |
 
 ## Installation and Configuration
 
@@ -82,7 +82,7 @@ This page contains general status information, such as the **TS Lock status**, *
 
 On the right-hand side, you can find the **Selected Service Name**, **Selected Service ID,** **Uptime**, **Video Status** and **Combined Audio Status**.
 
-Below this, you can find the **Audio Channel Configuration**, which lists the following parameters: **Audio Channel, Audio PID, PIDs list, Audio Status, Primary Language, Default Primary Language, Primary Language Changed, Secondary Language, Audio Bitrate, Audio Coding Type, Sampling Frequency, Buffer Usage, Decode Time, Info, Downmix, Audio Gain, Audio User PID, User Standard, Clipping Level, Routing, Delay Adjustment, Range Control** and **Line Mode Adjust**.
+Below this, you can find the **Audio Channel Configuration**, which lists the following parameters: **Audio Channel, Audio PID, PIDs list, Audio Status, Primary Language, Default Primary Language, Primary Language Changed, Secondary Language, Audio Bitrate, Audio Coding Type, Sampling Frequency, Buffer Usage, Decode Time, Info, Downmix, Audio Gain, Audio User PID, User Standard, Clipping Level, Routing, Delay Adjustment, Range Control**, and **Line Mode Adjust**.
 
 ### General Page
 
@@ -238,4 +238,3 @@ Virtual dynamic interfaces:
 Because of the versatility of the equipment, not all parameters will be filled in. If, for instance, your device is only IP-based, the Sat options will not be filled in.
 
 For version 3.1.0.x, which allows the configuration of the timers to be set, this is the list of parameters that correspond with each timer group:
-

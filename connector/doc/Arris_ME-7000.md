@@ -57,7 +57,7 @@ HTTP CONNECTION:
 
 This page displays the system's general information parameters, such as **System Contact, System Name, Device Status** etc.
 
-It also displays 4 buttons that allow you to **Restore Configuration**, **Back up Configuration**, **Shut down** the device or **Reboot** it.
+It also displays 4 buttons that allow you to **Restore Configuration**, **Back up Configuration**, **Shut down** the device, or **Reboot** it.
 
 ### Network
 
@@ -70,7 +70,7 @@ This page displays the **Network Interfaces Table** with parameters such as:
 
 ### Disk
 
-This page displays the **Disk Table** and **Load Average** **Table**.
+This page displays the **Disk Table** and **Load Average Table**.
 
 The **Disk Table** displays parameters such as:
 
@@ -87,7 +87,7 @@ The **Load Average Table** displays the following information:
 
 ### Physical Units
 
-This page displays the **Physical Units Table** and the **Temperature Sensors** **Table**.
+This page displays the **Physical Units Table** and the **Temperature Sensors Table**.
 
 The **Physical Units Table** displays parameters such as:
 
@@ -112,14 +112,14 @@ This page displays the **Output Multiplex Table** with parameters such as:
 
 ### Device Redundancy
 
-This page displays parameters such as the **Device Redundancy Mode**, **Device Redundancy State** and **Force Redundancy State**. It also displays the **Device Redundancy Primary Definition Table** with the following parameters:
+This page displays parameters such as the **Device Redundancy Mode**, **Device Redundancy State**, and **Force Redundancy State**. It also displays the **Device Redundancy Primary Definition Table** with the following parameters:
 
 - **Host Address**
 - **Enabled**
 
 ### Alarms
 
-This page displays alarm parameters triggered by incoming traps such as the **Agent State**, **Service Interruption Reason** and **Force Redundancy State**. It also displays the **Alarms** table with the following parameters:
+This page displays alarm parameters triggered by incoming traps such as the **Agent State**, **Service Interruption Reason**, and **Force Redundancy State**. It also displays the **Alarms** table with the following parameters:
 
 - **Severity**
 - **Alarm Description**
@@ -145,7 +145,7 @@ On this page, you also need to configure the **Protocol Version** before logging
 
 ### System
 
-This page displays system information parameters such as **Name, Mode, Version, Model, Memory Utilization, Time Format, Time Zone** and **Reset Filter Time Remaining**. It also also allows you to configure the **SDT Path.**
+This page displays system information parameters such as **Name, Mode, Version, Model, Memory Utilization, Time Format, Time Zone**, and **Reset Filter Time Remaining**. It also also allows you to configure the **SDT Path.**
 
 On the **NTP Settings** subpage, you can find the **NTP Server Table** and the **Current NTP Server**. This page also allows you to add **NTP servers**, and contains the **NTP Sync** and **Reboot Device** buttons.
 
@@ -155,8 +155,8 @@ This page displays the **GigE Interface Port Configuration Table**, which allows
 
 The page has two subpages:
 
-- **Port Analyzer**: On this page, you can configure the parameters **Direction (In or Out)**, **Analyzer** **Source**, **Analyzer Destination**, **Auto Negotation**, **Speed** and **Port Analyzer** in order to enable the **Port Analyzer** in the selected source-destination combination. When the port analyzer is enabled, the parameter configuration can no longer be changed and the **PAN Configuration Edit Mode** is changed from *Read/Write Mode* to *Read Only*. You can cancel the settings and enter new values as long as the **Apply** button has not been pressed yet.
-- **Static Routes**: This page contains the **Static Routes Table**. With the **IP Address**, **Subnet Mask**, **Port ID**, **Network** and **Gateway** parameters, you can add a new static route entry to the table. With the **Delete** **All** button, you can remove all entries from the table. You can also delete a static route manually using the button in the table.
+- **Port Analyzer**: On this page, you can configure the parameters **Direction (In or Out)**, **Analyzer Source**, **Analyzer Destination**, **Auto Negotiation**, **Speed**, and **Port Analyzer** in order to enable the **Port Analyzer** in the selected source-destination combination. When the port analyzer is enabled, the parameter configuration can no longer be changed and the **PAN Configuration Edit Mode** is changed from *Read/Write Mode* to *Read Only*. You can cancel the settings and enter new values as long as the **Apply** button has not been pressed yet.
+- **Static Routes**: This page contains the **Static Routes Table**. With the **IP Address**, **Subnet Mask**, **Port ID**, **Network**, and **Gateway** parameters, you can add a new static route entry to the table. With the **Delete All** button, you can remove all entries from the table. You can also delete a static route manually using the button in the table.
 
 ### SNMP
 
@@ -167,13 +167,14 @@ Note:
 - If the **SNMP Version** is changed from *version 2* to *version 3* and the **SNMP User Settings Table** does not have any user entries, the user will be forced to enter at least one **SNMPv3 User** first. If the **SNMP Version** is changed from *version 2* to *version 3* and there is at least one entry in the **SNMPv3 User Settings Table**, the change will be implemented without any need for additional configuration.
 
 - If you change the **SNMP Security Level**, the **SNMPv3 User Settings Table** will be deleted and you will need to enter at least one SNMPv3 user with the new security level.
+
   It is important that there are three **security levels**:
 
-- *No Authorization No Privacy*: No authorization or privacy password need to be specified.
+  - *No Authorization No Privacy*: No authorization or privacy password need to be specified.
   - *Authorization No Privacy*: An authorization password must be specified, but no privacy password is needed.
   - *Authorization and Privacy*: Both an authorization and a privacy password must be specified.
 
-> If for some reason you do not configure these settings, a pop-up message will inform you that the corresponding action cannot be completed.
+  If for some reason you do not configure these settings, a pop-up message will inform you that the corresponding action cannot be completed.
 
 - If **Accept All Hosts** is enabled, it is not possible to add an NMS host.
 
@@ -188,24 +189,25 @@ This page contains the RADIUS Status, Local Fallback, Number of Retries, Authent
 Via a page button, you can add a server, using the following parameters:
 
 - **Security Server Type**
-- **Sercurity Server IP**
+- **Security Server IP**
 - **Security Server Timeout**
 - **Security Shared Secret**
 - **Confirm Security Shared Secret**
 
-**IMPORTANT**: It is very important that before you add a server using the **Add** button, you first test the connection using the **Test** button. There is a parameter that will display the result of this test.
+> [!IMPORTANT]
+> It is very important that before you add a server using the **Add** button, you first test the connection using the **Test** button. There is a parameter that will display the result of this test.
 
 ### Sessions
 
-This page displays the **Sessions** **Table**.
+This page displays the **Sessions Table**.
 
-### Sotware Updates
+### Software Updates
 
 This page contains the **Software Updates Table**, as well as parameters that allow you to execute a software update:
 
-- **Update Via:** Remote Server or File System on PC.
-- **Server Communication:** SCP (Default) or TFTP
-- **Server IP Address** (IP Addres sof the Remote Server)
+- **Update Via**: Remote Server or File System on PC.
+- **Server Communication**: SCP (Default) or TFTP
+- **Server IP Address** (IP Address of the Remote Server)
 - **Build**
 - **Remote Username**
 - **Remote Password**
@@ -215,7 +217,7 @@ This page contains the **Software Updates Table**, as well as parameters that al
 
 This page contains parameters related to the chassis redundancy: Mode, Backup Device IP Address, Backup Device Name, Auto Fail Back, Checking Frequency, Check Frequency Type, Start Checking on, Checking Duration, Backup Table and Primary Device IP Address to Backup.
 
-Wiht four buttons at the bottom of the page, you can execute the following actions: **Cancel** or **Apply** the Cred Failback settings, or trigger a **Failback** or **Failover**. You can also add a **Primary Device IP** **Address** to the **Backup Table**.
+With four buttons at the bottom of the page, you can execute the following actions: **Cancel** or **Apply** the Cred Failback settings, or trigger a **Failback** or **Failover**. You can also add a **Primary Device IP Address** to the **Backup Table**.
 
 ### Tools
 
@@ -249,7 +251,7 @@ On this page, you can configure the **Backup File Path** and **Restore Options**
 This page displays five tables:
 
 - **Input BNC Lines Table**: Includes the Name, Description, Mode, Video Format, Status, etc.
-- **SDI** **Input** **Multiplex** **Table**: Includes the Video Format, Audio Mode, Closed Caption Format, Audio Channels, etc.
+- **SDI Input Multiplex Table**: Includes the Video Format, Audio Mode, Closed Caption Format, Audio Channels, etc.
 - **SDI Input Programs Table:** Includes the Name, Description, Number, etc.
 - **SDI Input Program Streams Table**: Includes the Stream Name, Description, Content, Maximum Bitrate, etc.
 - **ARIB Input Channels Table**: Includes the Code, Description, Channels, etc.
@@ -311,7 +313,7 @@ This page displays a tree control that allows easy navigation through the differ
 
 This page contains the **Input Grooming Table**, **Output Programs Grooming Table** and **Files Grooming Table**. At the bottom of the page, you can find the **Create Groom** and **Refresh** buttons. Clicking the Refresh button will refresh the inputs.
 
-On the Grooming Settings subpage, you can configure the **Priority**, **Maximum** and **Minimum** **Bit Rate** for the grooming.
+On the Grooming Settings subpage, you can configure the **Priority**, **Maximum** and **Minimum Bit Rate** for the grooming.
 
 Note: You can only configure one program at a time in the tables.
 

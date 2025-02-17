@@ -14,9 +14,9 @@ The connector uses the **SNMP** protocol to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description**         | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------|---------------------|-------------------------|
-| 1.0.1.x          | Added output selection. | No                  | Yes                     |
+| Range   | Description             | DCF Integration | Cassandra Compliant |
+|---------|-------------------------|-----------------|---------------------|
+| 1.0.1.x | Added output selection. | No              | Yes                 |
 
 ### Product Info
 

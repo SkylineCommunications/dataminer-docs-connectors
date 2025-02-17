@@ -1038,6 +1038,10 @@
     topicUid: Connector_help_AVT_Magic_SDC_EDI_Converter
   - name: AVT MAGIC THipPRo Telephone Hybrids
     topicUid: Connector_help_AVT_MAGIC_THipPRo_Telephone_Hybrids
+- name: AVTECH
+  items:
+  - name: AVTECH RoomAlert Monitor
+    topicUid: Connector_help_AVTECH_RoomAlert_Monitor
 - name: Axel Technology
   items:
   - name: Axel Technology Wolf2MS
@@ -3170,6 +3174,8 @@
     topicUid: Connector_help_Eutelsat_Siecams_Manager
   - name: Eutelsat TAOS Calculation
     topicUid: Connector_help_Eutelsat_TAOS_Calculation
+  - name: Eutelsat TAOS Manager
+    topicUid: Connector_help_Eutelsat_TAOS_Manager
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
@@ -3520,8 +3526,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
-  - name: Evertz ev670-X45-HW U8E8D
-    topicUid: Connector_help_Evertz_ev670-X45-HW_U8E8D
+  - name: Evertz ev670-X45-HW
+    topicUid: Connector_help_Evertz_ev670-X45-HW
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
@@ -3568,6 +3574,8 @@
     topicUid: Connector_help_Evertz_Scorpion_18
   - name: Evertz Scorpion 18 MIO-APP-DLY2
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-DLY2
+  - name: Evertz Scorpion 18 MIO-APP-UDX-3G
+    topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
   - name: Evertz Scorpion 18 MIO-APP-UDX-4K
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-4K
   - name: Evertz Scorpion 18 MIO-HDMI-2-4K-IP
@@ -3890,6 +3898,8 @@
     topicUid: Connector_help_Generex_UPS_CS121_BC
 - name: Generic
   items:
+  - name: Generic 4K Converter
+    topicUid: Connector_help_Generic_4K_Converter
   - name: Generic Automation Script
     topicUid: Connector_help_Generic_Automation_Script
   - name: Generic Bookings Log
@@ -4050,8 +4060,14 @@
     topicUid: Connector_help_Generic_Trap_Forwarder
   - name: Generic Trap Processor
     topicUid: Connector_help_Generic_Trap_Processor
+    items:
+    - name: Generic Trap Processor Technical
+      topicUid: Connector_help_Generic_Trap_Processor_Technical
   - name: Generic Trap Receiver
     topicUid: Connector_help_Generic_Trap_Receiver
+    items:
+    - name: Generic Trap Receiver Technical
+      topicUid: Connector_help_Generic_Trap_Receiver_Technical
   - name: Generic Truck Manager
     topicUid: Connector_help_Generic_Truck_Manager
   - name: Generic TSI-SP-003 VMS
@@ -6485,6 +6501,11 @@
     topicUid: Connector_help_Nokia_OMS_1350_-_Node
   - name: Nokia OMS 1350 - USRPNL
     topicUid: Connector_help_Nokia_OMS_1350_-_USRPNL
+  - name: Nokia Q1 Agent
+    topicUid: Connector_help_Nokia_Q1_Agent
+    items:
+    - name: Nokia Q1 Agent Technical
+      topicUid: Connector_help_Nokia_Q1_Agent_Technical
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
   - name: Nokia WaveLite
@@ -6951,6 +6972,8 @@
     topicUid: Connector_help_Prodys_Quantum
 - name: Promax
   items:
+  - name: Promax Neo
+    topicUid: Connector_help_Promax_Neo
   - name: Promax RANGERNeo 4
     topicUid: Connector_help_Promax_RANGERNeo_4
 - name: Prometheus
@@ -7823,6 +7846,18 @@
   items:
   - name: Sintai OTNS8600
     topicUid: Connector_help_Sintai_OTNS8600
+- name: Siselectron
+  items:
+  - name: Siselectron SR1
+    topicUid: Connector_help_Siselectron_SR1
+    items:
+    - name: Siselectron SR1 Technical
+      topicUid: Connector_help_Siselectron_SR1_Technical
+- name: Site Sentinel
+  topicUid: Connector_help_Site_Sentinel
+  items:
+    - name: Site Sentinel Technical
+      topicUid: Connector_help_Site_Sentinel_Technical
 - name: Sittig
   items:
   - name: Sittig DVA
@@ -8043,6 +8078,11 @@
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
+    name: Skyline Masking Services
+    topicUid: Connector_help_Skyline_Masking_Services
+    items:
+       - name: Skyline Masking Service Technical
+         topicUid: Connector_help_Skyline_Masking_Services_Technical 
   - name: Skyline MDC Service Monitoring
     topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch

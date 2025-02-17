@@ -48,10 +48,6 @@ For the connector to be able to poll information from the API, you need to fill 
 
 As the **Authentication URL** can be changed in the device, this can also be configured on the Authentication page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the General page, you can see information about the **partitions**. Information regarding **channels**, **pipelines**, **asset locations** and **missing events** is also available.
