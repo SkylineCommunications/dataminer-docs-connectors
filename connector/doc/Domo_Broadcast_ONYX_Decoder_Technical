@@ -4,28 +4,10 @@ uid: Connector_help_Domo_Broadcast_ONYX_Decoder
 
 # Domo Broadcast ONYX Decoder
 
-The **ONYX Decoder** is a broadcast decoder that offers compression ratios on video resolutions up to 4K UHD. It is suitable for remote production applications over leased lines or satellite, handling 4xHD or 1xUHD feed with ultra-low latency
-The **Domo Broadcast ONYX Decoder** connector is used to monitor and control ONYX decoders that support both ASI and IP inputs.
-
 ## About
 
-### Version Info
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Initial version</li></ul>         |-         |-         |
-
-### Product Info
-
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |onyx-b150_4.12.0         |
-
-### System Info
-
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+The **ONYX Decoder** is a broadcast decoder that offers compression ratios on video resolutions up to 4K UHD. It is suitable for remote production applications over leased lines or satellite, handling 4xHD or 1xUHD feed with ultra-low latency
+The **Domo Broadcast ONYX Decoder** connector is used to monitor and control ONYX decoders that support both ASI and IP inputs.
 
 ## Configuration
 
