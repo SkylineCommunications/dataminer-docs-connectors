@@ -12,7 +12,7 @@ The Zixi Broadcaster connector uses HTTP communication to allow users to monitor
 
 ### Version Info
 
-| **Range** | **Description**                                                                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                              | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                          | No                  | Yes                     |
 | 1.0.1.x          | Added an SNMP connection for interface information.                                       | No                  | Yes                     |

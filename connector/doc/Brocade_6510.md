@@ -12,15 +12,15 @@ TheBrocade 6510 connector enables Skyline Communication DataMiner to communicate
 
 ### Version Info
 
-| **Range**     | **Description**                                               | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x [SLC Main]   | Full connector review in order to comply with Skyline standards. | No                  | True                    |
+| Range              | Description                                                      | DCF Integration | Cassandra Compliant |
+|--------------------|------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.1.x [SLC Main] | Full connector review in order to comply with Skyline standards. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.1.x          | 7.4.1d                      |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.1.x | 7.4.1d                     |
 
 ## Installation and configuration
 

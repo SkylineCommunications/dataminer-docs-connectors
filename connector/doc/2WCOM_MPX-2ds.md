@@ -46,10 +46,18 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Web Interface
+## Available Data Pages
 
-The web interface is only accessible when the client machine has network access to the product.
+- **General**: Includes information on the status of the device, including some general information.
 
-## How to Use
+- **Services**: Displays the available services as entries in the table **Services Info**, each representing a decoder channel. Information about each decoder channel will be displayed here.
 
-On the **Polling Config** page, you can configure which polling groups should be polled. By default, they are all disabled.
+- **Virtual Tables** subpage: Displays virtual tables, which contain information that is used to build the **Service Info** table on the Services page. The **Virtual Common Audio Decoder Input Sources Ts Demux** table shows which SAT tuner each service uses by displaying "RF1" or "RF2" in the StrInfo column. This affects the **RF Level**, **C/N**, and **TS Sync** values of the **Services Info** table.
+
+- **Audio Sources**: Contains information and settings for the device's audio sources. At present, RTP is the only available audio source.
+
+- **Settings**: Shows the available settings. Currently, you can configure the SNMP trap destinations and XLR channel routing.
+
+- **Polling Config**: Allows you to configure which polling groups should be polled. By default, they are all disabled.
+
+- **Web Interface**: The device's web interface, which is only accessible when the client machine has network access to the device.

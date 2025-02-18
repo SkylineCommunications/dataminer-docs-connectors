@@ -10,7 +10,7 @@ The Casa Systems CCAP Platform is an SNMP connector that collects relevant data 
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on | System Impact |
 |----------------------|-------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                          | -            | -                 |
 | 1.0.1.x              | Modifications for compatibility with EPM. | -            | -                 |

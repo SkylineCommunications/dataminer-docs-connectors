@@ -12,19 +12,19 @@ This is an SNMP and HTTP connector that is used to configure and monitor the **T
 
 ### Version Info
 
-| **Range** | **Description**                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                              | No                  | -                       |
-| 1.1.0.x          | Supports device firmware version 4.0.0.0.     | No                  | -                       |
-| 1.1.1.x          | Supports a variable number of job parameters. | No                  | Yes                     |
+| Range   | Description                                   | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.                              | No              | -                   |
+| 1.1.0.x | Supports device firmware version 4.0.0.0.     | No              | -                   |
+| 1.1.1.x | Supports a variable number of job parameters. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | -                           |
-| 1.1.0.x          | 4.0.0.0                     |
-| 1.1.1.x          | 4.0.0.0                     |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | -                          |
+| 1.1.0.x | 4.0.0.0                    |
+| 1.1.1.x | 4.0.0.0                    |
 
 ## Installation and configuration
 

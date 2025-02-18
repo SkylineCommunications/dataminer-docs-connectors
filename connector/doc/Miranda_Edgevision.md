@@ -14,7 +14,7 @@ When a webpage can be safely executed inside DataMiner to scrape the contents, i
 
 ### Version Info
 
-| **Range** | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                               | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                           | No                  | Yes                     |
 | 1.1.0.x          | New firmware based on 1.0.0.x (see below) | No                  | Yes                     |

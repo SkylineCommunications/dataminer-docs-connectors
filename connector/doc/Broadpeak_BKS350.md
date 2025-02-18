@@ -12,10 +12,10 @@ This connector allows the real-time monitoring of BKS350 general information, se
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact**                                                         |
-|----------------------|------------------------|--------------|---------------------------------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.       | -            | -                                                                         |
-| 1.0.1.x [SLC Main]   | HTTP connection added. | -            | Existing elements will need to be reconfigured to use the new connection. |
+| Range              | Key Features           | Based on | System Impact                                                             |
+|--------------------|------------------------|----------|---------------------------------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.       | -        | -                                                                         |
+| 1.0.1.x [SLC Main] | HTTP connection added. | -        | Existing elements will need to be reconfigured to use the new connection. |
 
 ### Product Info
 

@@ -10,7 +10,7 @@ This connector can be used to export an Excel file with information for StableNe
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                          | **Based on** | **System Impact** |
+| Range              | Key Features                                                            | Based on   | System Impact   |
 |----------------------|---------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                                                          | -            | -                 |
 | 1.0.1.x              | Updated exception values on Downlink Frequency and Symbol Rate.           | 1.0.0.1      | -                 |

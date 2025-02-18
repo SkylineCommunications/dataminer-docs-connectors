@@ -220,6 +220,8 @@ The **Reset** button will remove existing data from tables and performs provisio
 
 In range **1.0.4.x**, the **Script Name** parameter is added, which allows you to change the Automation script to be executed. This parameter is available on the **Configuration** page.
 
+In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the front-end element and on all active back-end elements in the system. Whenever you use the button, you will need to confirm this action in a pop-up window.
+
 ## Notes
 
 The messaging system integration requires the use of Correlation rules and Automation scripts that will pick up on the information events and send the corresponding message to a message listener to begin the logical flow.

@@ -14,7 +14,7 @@ This connector uses an SNMPv3 connection.
 
 ### Version Info
 
-| **Range** | **Description**                                                               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial range, based on the Palo Alto Networks PA-3000 series range 1.0.0.x. | No                  | Yes                     |
 

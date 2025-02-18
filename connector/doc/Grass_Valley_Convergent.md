@@ -18,6 +18,7 @@ The Convergent is a video router device that controls video input and output mat
 | 1.0.3.x | - Matrix UI removed from element. <br>- Matrix maximum size increased to 10000x10000. <br>- Option to select special "ALL" level that shows aggregated view of all crosspoints across all levels. |  | None. |
 | 1.0.4.x | The primary key of the tables Device Sources (PID 3400) and Device Destinations (PID 3500) is now the ID of the Convergent device (External ID). | 1.0.3.4 | Loss of data: Changing the primary key of a table has a large impact, as all saved data references to the primary key will be lost. This includes element data (i.e. all columns that were saved) and alarm/trend data, since all these records refer to the primary key. Any components that rely on a specific primary key will also need to be adjusted. These could be dashboards, Automation scripts, visual overviews, etc. |
 | 1.0.5.x [SLC Main] | The connector no longer relies on DataMiner to establish the HTTP connection towards the device. Instead, the device sets up its own connection in order to speed up the communication flow. | 1.0.4.5 | Existing elements will need to be recreated. |
+| 1.0.6.x [Globo Only] | The connector no longer uses the partial attribute when retrieving table data, as the device is not compatible with this functionality. | 1.0.5.8 | Improved data retrieval stability for Globo devices. |
 
 ### Product Info
 
@@ -29,6 +30,7 @@ The Convergent is a video router device that controls video input and output mat
 | 1.0.3.x   | -                     |
 | 1.0.4.x   | -                     |
 | 1.0.5.x   | -                     |
+| 1.0.6.x   | -                     |
 
 ### System Info
 
@@ -40,6 +42,7 @@ The Convergent is a video router device that controls video input and output mat
 | 1.0.3.x | 10.0.0.5                  | Yes             | Yes                 | -                 | -                   |
 | 1.0.4.x | 10.0.0.5                  | Yes             | Yes                 | -                 | -                   |
 | 1.0.5.x | 10.2.10.0                 | Yes             | Yes                 | -                 | -                   |
+| 1.0.6.x | 10.2.10.0                 | Yes             | Yes                 | -                 | -                   |
 
 ## Configuration
 

@@ -12,7 +12,7 @@ The connector uses the **SNMP** protocol to communicate with the device.
 
 ### Version Info
 
-| **Range** | **Description**                                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                 | No                  | No                      |
 | 1.1.0.x          | New MIBs used.                                                   | No                  | No                      |
