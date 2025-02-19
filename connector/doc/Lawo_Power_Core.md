@@ -10,27 +10,30 @@ This connector is used to monitor a Lawo Power Core device. This device is a rem
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range                | Key Features     							| Based on     | System Impact     |
+|----------------------|--------------------------------------------|--------------|-------------------|
+| 1.0.0.x			   | Initial version  							| -            | -                 |
+| 1.0.1.x [SLC Main]   | LAWO EmberPlusSharp Library Integration  	| -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
+| 1.0.0.x   | -				         |
+| 1.0.1.x   | -				         |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### Smart-Serial Main Connection
+#### Smart-Serial Main Connection [1.0.0.x-range]
 
 This connector uses a smart-serial connection and requires the following input during element creation:
 
@@ -40,6 +43,14 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (default: *9000*).
+
+#### Virtual Connection [1.0.1.x-range]
+
+This connector uses a virtual connection to setup the communication through the official EmberPlusSharp Library from LAWO.
+The following parameters need to be configured under the **General** page of the element:
+
+  - **IP Address**: The polling IP or URL of the destination.
+  - **IP Port**: The IP port of the destination (default: *9000*).
 
 ### Initialization
 
