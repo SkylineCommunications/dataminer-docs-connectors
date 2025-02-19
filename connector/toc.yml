@@ -1740,6 +1740,11 @@
   items:
   - name: Broadcast Automation Systems Equinox TS
     topicUid: Connector_help_Broadcast_Automation_Systems_Equinox_TS
+- name: Broadcast Tools Site Sentinel
+  topicUid: Connector_help_Broadcast_Tools_Site_Sentinel
+  items:
+    - name: Broadcast Tools Site Sentinel Technical
+      topicUid: Connector_help_Broadcast_Tools_Site_Sentinel_Technical
 - name: BroadForward
   items:
   - name: BroadForward ENUM NP
@@ -7860,11 +7865,6 @@
     items:
     - name: Siselectron SR1 Technical
       topicUid: Connector_help_Siselectron_SR1_Technical
-- name: Site Sentinel
-  topicUid: Connector_help_Site_Sentinel
-  items:
-    - name: Site Sentinel Technical
-      topicUid: Connector_help_Site_Sentinel_Technical
 - name: Sittig
   items:
   - name: Sittig DVA
