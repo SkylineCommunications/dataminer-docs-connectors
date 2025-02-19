@@ -2034,7 +2034,7 @@
     topicUid: Connector_help_Check_Point_Security_Manager
     items:
     - name: Check Point Security Manager Technical
-      topicUid: Connector_help_Check_Point_Security_Manager
+      topicUid: Connector_help_Check_Point_Security_Manager_Technical
   - name: Check Point 1100 Firewall
     topicUid: Connector_help_Check_Point_1100_Firewall
   - name: Check Point 1100 Firewall - Virtual Router

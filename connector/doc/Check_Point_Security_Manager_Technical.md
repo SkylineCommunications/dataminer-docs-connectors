@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Check_Point_Security_Manager
+uid: Connector_help_Check_Point_Security_Manager_Technical
 ---
 
 # Check Point Security Manager
