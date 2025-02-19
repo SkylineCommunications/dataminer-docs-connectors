@@ -30,3 +30,29 @@ The web interface is only accessible when the client machine has network access 
 ## How to use
 
 The device web interface separates the parameters in to two groups: Status and Config. In the connector, those parameters are presented in a way where each module has a separate page for the status and config parameters. When the user wants to control/configure the parameters, go to the corresponding Config page of the module. All the information about the **Unit** module is presented in the **General**, **Device**, **Firmware** and **Power Supply** pages.
+
+### Available Modules
+In the current connector version, the status and/or config parameters of the following modules are currently available in the connector.
+| Module | Status | Config |
+|-------------|---------------------|
+| ASI | ✓  |  ✓ |
+| SDI | ✓  |  ✓ |
+| Genlock | ✓  |  ✓ |
+| Streaming | ✓  |  ✓ |
+| Demux | ✓  |  ✓ |
+| Video | ✓  |  ✓ |
+| Audio | ✓  |  ✓ |
+| Analog Audio | x  |  ✓ |
+| Ancillary Data | ✓  |  x |
+| Return Data | ✓  |  x |
+| Metadata | ✓  |  x |
+| GPS | ✓  |  x |
+| Serial | ✓  |  ✓ |
+| SFP | ✓  |  ✓ |
+| Network | ✓  |  ✓ |
+| License | ✓  |  x |
+| Unit | ✓  |  ✓ |
+| Storage | ✓  |  x |
+| USB | ✓  |  x |
+| Time | ✓  |  x |
+| Certificate | ✓  |  x |
