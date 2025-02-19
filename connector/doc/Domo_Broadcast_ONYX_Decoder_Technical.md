@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Domo_Broadcast_ONYX_Decoder
+uid: Connector_help_Domo_Broadcast_ONYX_Decoder_Technical
 ---
 
 # Domo Broadcast ONYX Decoder
@@ -19,9 +19,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *443*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *443*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Web Interface
 
@@ -32,7 +32,9 @@ The web interface is only accessible when the client machine has network access 
 The device web interface separates the parameters in to two groups: Status and Config. In the connector, those parameters are presented in a way where each module has a separate page for the status and config parameters. When the user wants to control/configure the parameters, go to the corresponding Config page of the module. All the information about the **Unit** module is presented in the **General**, **Device**, **Firmware** and **Power Supply** pages.
 
 ### Available Modules
+
 In the current connector version, the status and/or config parameters of the following modules are currently available in the connector.
+
 | Module | Status | Config |
 |-------------|---------------------|
 | ASI | ✓  |  ✓ |
