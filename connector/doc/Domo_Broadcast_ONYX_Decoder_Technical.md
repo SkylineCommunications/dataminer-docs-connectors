@@ -6,7 +6,8 @@ uid: Connector_help_Domo_Broadcast_ONYX_Decoder_Technical
 
 ## About
 
-The **ONYX Decoder** is a broadcast decoder that offers compression ratios on video resolutions up to 4K UHD. It is suitable for remote production applications over leased lines or satellite, handling 4xHD or 1xUHD feed with ultra-low latency
+The **ONYX Decoder** is a broadcast decoder that offers compression ratios on video resolutions up to 4K UHD. It is suitable for remote production applications over leased lines or satellite, handling 4xHD or 1xUHD feeds with ultra-low latency.
+
 The **Domo Broadcast ONYX Decoder** connector is used to monitor and control ONYX decoders that support both ASI and IP inputs.
 
 ## Configuration
@@ -29,11 +30,13 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The device web interface separates the parameters in to two groups: Status and Config. In the connector, those parameters are presented in a way where each module has a separate page for the status and config parameters. When the user wants to control/configure the parameters, go to the corresponding Config page of the module. All the information about the **Unit** module is presented in the **General**, **Device**, **Firmware** and **Power Supply** pages.
+Two groups of parameters are available: **Status** and **Config**. For each module, the connector will show a separate page for the status and config parameters. To control/configure the parameters, go to the corresponding Config page of the module.
+
+All the information about the **Unit** module is shown on the **General**, **Device**, **Firmware**, and **Power Supply** pages.
 
 ### Available Modules
 
-In the current connector version, the status and/or config parameters of the following modules are currently available in the connector.
+In the current connector version, the status and/or config parameters of the following modules are currently available:
 
 | Module | Status | Config |
 |-------------|---------------------|
