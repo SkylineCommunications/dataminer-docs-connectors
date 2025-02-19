@@ -2081,6 +2081,11 @@
   items:
   - name: CISCO 4G LTE NIM
     topicUid: Connector_help_CISCO_4G_LTE_NIM
+  - name: CISCO APIC
+    topicUid: Connector_help_CISCO_APIC
+    items:
+    - name: CISCO APIC Technical
+      topicUid: Connector_help_CISCO_APIC_Technical
   - name: Cisco ASA 5540
     topicUid: Connector_help_Cisco_ASA_5540
   - name: CISCO ASA Software
