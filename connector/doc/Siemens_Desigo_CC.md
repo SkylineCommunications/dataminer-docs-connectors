@@ -56,7 +56,8 @@ When you have created the element, fill in the username and password so the conn
 
 Next, import an Excel file with the parameters that should be retrieved. This Excel file must contain one column with the name of the value from on the Siemens Desigo CC system. You can find this name in the GUI.
 
-Example of the excel file:
+The Excel file can for example look like this:
+
 ![Example Excel](~/connector/images/SiemensDesigoCcExampleExcel.png)
 
 ## How to use
