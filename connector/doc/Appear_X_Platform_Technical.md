@@ -4,6 +4,8 @@ uid: Connector_help_Appear_X_Platform_Technical
 
 # Appear X Platform
 
+## About
+
 The Appear X Platform connector allows users to configure and display information from the Appear X10/X20 chassis and its associated module cards.
 
 > [!IMPORTANT]
@@ -14,8 +16,6 @@ On the U.S. market, the same chassis is also offered under the Sencore brand, wi
 The connector establishes an **HTTP connection**, utilizing the MMI, IpGateway, XGER, ASI, SDI APIs, and Prometheus endpoints to retrieve and configure device data. Information is exchanged in JSON format.
 
 The connector operates sequentially, requesting data from the device, processing responses, and displaying the results. Users can send configuration requests and receive updated information in real-time.
-
-## About
 
 ### Version Info
 
@@ -159,7 +159,7 @@ You can also configure and manage the following output-related content through t
 
 ### Output Redundancy Config
 
-This page allows you to manage the redundancy settings per output or output Service. Currently supported types: **IP**, **SRT**, **Modulator**.
+This page allows you to manage the redundancy settings per output or output service. Currently supported types: **IP**, **SRT**, **Modulator**.
 
 The **Redundancy Settings** table contains details on which source is currently active and when or how to switch to the backup. The **Redundant Sources** table contains the configured backups per output.
 
@@ -205,9 +205,9 @@ Via the **Add Output** page button, you can add a new output to the selected IP 
 
 ### IP Output TS Status
 
-This page lists all IP outputs with their respective **effective bitrates**.
+This page lists all IP outputs with their respective **effective bit rates**.
 
-Per output, the list of services with their outgoing configurations is shown, and per output/service, the list of PIDs with their outgoing configuration, bitrate, and CC errors is shown.
+Per output, the list of services with their outgoing configurations is shown, and per output/service, the list of PIDs with their outgoing configuration, bit rate, and CC errors is shown.
 
 ### SRT Inputs
 
@@ -224,7 +224,7 @@ This page displays the **SRT Outputs Table**, with configurable information rela
 
 For each output, you can see the Output Status, with the **Bitrate** and **Socket State**, as well as a list of services with their outgoing configurations.
 
-In addition, per output/service, the list of PIDs with their outgoing configuration, bitrate, and CC errors is shown.
+In addition, per output/service, the list of PIDs with their outgoing configuration, bit rate, and CC errors is shown.
 
 > [!NOTE]
 > The status information is only available through the Prometheus API endpoint on the chassis. To verify if the Prometheus setting has been enabled, go to the **General** > **Module Overview Config** page.
@@ -321,7 +321,7 @@ More detailed information on the contents received from the tuned demodulators i
 
 This page contains an overview of the **S2X Ports**, related **Port Profiles** and **Modulators**.
 
-Status data per port is available in the **S2X OUT Physical Port Status** Table.
+Status data per port is available in the **S2X OUT Physical Port Status Table**.
 
 ### Scrambler
 

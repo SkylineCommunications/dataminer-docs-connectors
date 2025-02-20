@@ -9845,7 +9845,7 @@
     topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API
     items:
     - name: Warner Bros Discovery DAZN Live Stream API Technical
-    topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API_Technical
+      topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API_Technical
 - name: Warner Bros Discovery Sports
   items:
   - name: Warner Bros Discovery Sports Transmission Orders

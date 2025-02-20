@@ -10,17 +10,17 @@ This connector is used to monitor a Lawo Power Core device. This device is a rem
 
 ### Version Info
 
-| Range                | Key Features     							| Based on     | System Impact     |
-|----------------------|--------------------------------------------|--------------|-------------------|
-| 1.0.0.x			   | Initial version  							| -            | -                 |
-| 1.0.1.x [SLC Main]   | LAWO EmberPlusSharp Library Integration  	| -            | -                 |
+| Range              | Key Features                            | Based on | System Impact |
+|--------------------|-----------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version                         | -        | -             |
+| 1.0.1.x [SLC Main] | LAWO EmberPlusSharp Library integration | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -				         |
-| 1.0.1.x   | -				         |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | -                  |
+| 1.0.1.x | -                  |
 
 ### System Info
 
@@ -33,9 +33,9 @@ This connector is used to monitor a Lawo Power Core device. This device is a rem
 
 ### Connections
 
-#### Smart-Serial Main Connection [1.0.0.x-range]
+#### Smart-Serial Main Connection [1.0.0.x Range]
 
-This connector uses a smart-serial connection and requires the following input during element creation:
+In range 1.0.0.x, this connector uses a smart-serial connection and requires the following input during element creation:
 
 SERIAL CONNECTION:
 
@@ -44,21 +44,14 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (default: *9000*).
 
-#### Virtual Connection [1.0.1.x-range]
+#### Virtual Connection [1.0.1.x Range]
 
-This connector uses a virtual connection to setup the communication through the official EmberPlusSharp Library from LAWO.
-The following parameters need to be configured under the **General** page of the element:
+In range 1.0.1.x, this connector uses a virtual connection to set up the communication through the official EmberPlusSharp Library from LAWO.
 
-  - **IP Address**: The polling IP or URL of the destination.
-  - **IP Port**: The IP port of the destination (default: *9000*).
+The following parameters need to be configured on the **General** page of the element:
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
+- **IP Address**: The polling IP or URL of the destination.
+- **IP Port**: The IP port of the destination (default: *9000*).
 
 ### Web Interface
 
