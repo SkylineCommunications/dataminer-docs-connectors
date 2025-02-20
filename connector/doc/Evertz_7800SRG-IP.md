@@ -39,4 +39,4 @@ uid: Connector_help_Evertz_7800SRG-IP
 - **DataMiner version 10.2 or higher** is required for compatibility with the 7800SRG-IP connector.
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector for 7800SRG-IP, refer to the [Technical help page](xref:Connector_help_7800SRG-IP_Technical).
+> For in-depth information on configuring and using the DataMiner connector for 7800SRG-IP, refer to the [Technical help page](xref:Connector_help_Evertz_7800SRG-IP_Technical).
