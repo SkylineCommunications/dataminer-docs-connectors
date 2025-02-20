@@ -562,6 +562,25 @@
   items:
   - name: Appear X Platform
     topicUid: Connector_help_Appear_X_Platform
+    items:
+    - name: Appear X Platform Technical
+      topicUid: Connector_help_Appear_X_Platform_Technical
+    - name: Appear X Platform - ASI IO
+      topicUid: Connector_help_Appear_X_Platform_-_ASI_IO
+    - name: Appear X Platform - Coder
+      topicUid: Connector_help_Appear_X_Platform_-_Coder
+    - name: Appear X Platform - Demodulator
+      topicUid: Connector_help_Appear_X_Platform_-_Demodulator
+    - name: Appear X Platform - Descrambler
+      topicUid: Connector_help_Appear_X_Platform_-_Descrambler
+    - name: Appear X Platform - IP IO
+      topicUid: Connector_help_Appear_X_Platform_-_IP_IO
+    - name: Appear X Platform - Modulator
+      topicUid: Connector_help_Appear_X_Platform_-_Modulator
+    - name: Appear X Platform - Scrambler
+      topicUid: Connector_help_Appear_X_Platform_-_Scrambler
+    - name: Appear X Platform - SDI IO
+      topicUid: Connector_help_Appear_X_Platform_-_SDI_IO
 - name: AppearTV
   items:
   - name: AppearTV Audio Transcoder
@@ -9842,6 +9861,13 @@
     topicUid: Connector_help_Walton_Enterprises_DP-8
   - name: Walton Enterprises DP-9
     topicUid: Connector_help_Walton_Enterprises_DP-9
+- name: Warner Bros Discovery
+  items:
+  - name: Warner Bros Discovery DAZN Live Stream API
+    topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API
+    items:
+    - name: Warner Bros Discovery DAZN Live Stream API Technical
+      topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API_Technical
 - name: Warner Bros Discovery Sports
   items:
   - name: Warner Bros Discovery Sports Transmission Orders
