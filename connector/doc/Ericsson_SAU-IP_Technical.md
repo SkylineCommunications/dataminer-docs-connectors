@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Ericsson_SAU-IP
+uid: Connector_help_Ericsson_SAU-IP_Technical
 ---
 
 # Ericsson SAU-IP
