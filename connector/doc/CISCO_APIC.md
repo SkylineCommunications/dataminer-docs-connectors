@@ -10,10 +10,10 @@ This is a DataMiner connector for the **CISCO APIC**, a software-based solution 
 
 ### Key Features
 
-- **Physical Entities**: Monitor CISCO devices monitored by the CISCO APIC.
+- **Physical entities**: Monitor CISCO devices monitored by the CISCO APIC.
 - **Sensors**: Monitor the sensors of physical entities.
 - **CPU**: Monitor the CPUs of physical entities.
-- **Power**: Monitor power related physical entities.
+- **Power**: Monitor power-related physical entities.
 
 ## Use Cases
 
@@ -21,7 +21,7 @@ This is a DataMiner connector for the **CISCO APIC**, a software-based solution 
 
 **Challenge:** Monitor CISCO devices from a single source.
 
-**Solution:** With this connector, you can set and manage alarm thresholds for the CISCO devices. This allows for proactive monitoring and minimizes the risk of unforeseen system failures.
+**Solution:** With this connector, you can set and manage alarm thresholds for the CISCO devices. This allows proactive monitoring and minimizes the risk of unforeseen system failures.
 
 **Benefit:** Potential issues can be quickly addressed in real time, improving the reliability and performance of network operations.
 
