@@ -3053,9 +3053,9 @@
   - name: Ericsson RX9500 - Descrambler Card
     topicUid: Connector_help_Ericsson_RX9500_-_Descrambler_Card
   - name: Ericsson SAU-IP
-    topicUid: Connector_help_Connector_name
+    topicUid: Connector_help_Ericsson_SAU-IP
     items:
-      - name: Connector_help_Ericsson_SAU-IP
+      - name: Ericsson SAU-IP Technical
         topicUid: Connector_help_Ericsson_SAU-IP_Technical
   - name: Ericsson SPR1100
     topicUid: Connector_help_Ericsson_SPR1100
