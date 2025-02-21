@@ -1,8 +1,10 @@
 ---
-uid: Connector_help_Site_Sentinel
+uid: Connector_help_Broadcast_Tools_Site_Sentinel
 ---
 
-# About
+# Broadcast Tools Site Sentinel
+
+## About
 
 The Site Sentinel® 16 G2 is a robust, full-featured, web-enabled sixteen-channel remote control featuring a desktop/mobile browser-compatible web interface (HTML5.) The system is equipped with 16 metering inputs (0 to 10 VDC), four virtual metering channels, 16 optically isolated status (logic) inputs, 33 programmable SPDT relays, which may be configured for ON, OFF, and pulsed operation, four temperature probe inputs, one internal temperature sensor, stereo silence sensor, and power failure input. It also includes built-in support for email alarms and SNMP.
 
@@ -22,4 +24,4 @@ The Site Sentinel® 16 G2 is a robust, full-featured, web-enabled sixteen-channe
 ## Technical info
 
 > [!NOTE]
-> For detailed technical information, refer to the [Technical help page](xref:Connector_help_Site_Sentinel_Technical).
+> For detailed technical information, refer to the [Technical help page](xref:Connector_help_Broadcast_Tools_Site_Sentinel_Technical).
