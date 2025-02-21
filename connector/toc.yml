@@ -2049,6 +2049,11 @@
     topicUid: Connector_help_Ceragon_Networks_Netmaster_-_Device
 - name: Check Point
   items:
+  - name: Check Point Security Manager
+    topicUid: Connector_help_Check_Point_Security_Manager
+    items:
+    - name: Check Point Security Manager Technical
+      topicUid: Connector_help_Check_Point_Security_Manager_Technical
   - name: Check Point 1100 Firewall
     topicUid: Connector_help_Check_Point_1100_Firewall
   - name: Check Point 1100 Firewall - Virtual Router
@@ -2095,6 +2100,11 @@
   items:
   - name: CISCO 4G LTE NIM
     topicUid: Connector_help_CISCO_4G_LTE_NIM
+  - name: CISCO APIC
+    topicUid: Connector_help_CISCO_APIC
+    items:
+    - name: CISCO APIC Technical
+      topicUid: Connector_help_CISCO_APIC_Technical
   - name: Cisco ASA 5540
     topicUid: Connector_help_Cisco_ASA_5540
   - name: CISCO ASA Software
