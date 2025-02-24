@@ -84,6 +84,38 @@ SSH settings:
 - **IP address:** The polling IP of the device, e.g. *10.11.12.13*.
 - **Port number**: The SSH port of the connected device, by default *23* or *22* (version 1.0.3.x).
 
+#### Supported Pages:
+Expanded system monitoring with additional pages:
+- ICMPv6 Stats, IPv6 Stats, LLDP, Polling Configuration, SSH Command
+- Measurement Configuration Table, NAT Statistics, RPM Metrics, RPM History
+- Multicast, Multicast Next Hop, ISIS
+
+#### Trap Debugging
+
+A dedicated "Trap Debug" page exists, with a toggle feature (overridePID=4001).
+
+#### Enhanced SNMP Polling & Measurement
+- Default: SNMP tables auto-included
+- Dynamic Control: Supports selective polling and disabling
+- NoTimeouts Policy: Ignores errors like NO SUCH NAME and NO SUCH OBJECT
+
+#### Device Model Identification
+
+Automatically detects Juniper device models:
+- Supported Models: M40, M20, M160, M10, M5, T640, T320, M40e, M320, M7i, J2300, J4300, J6300, IRM, TX, M120, MX960, MX480, MX240
+- Cross-references OIDs for precise monitoring
+
+#### Interface Statistics Enhancements
+
+- Granular control over Interface Queues
+- New parameters monitored: IFQ Forwarding Class, IFQ Red Drop Packets, IFQ WRED Drop Packets
+
+#### Real-Time Performance Monitoring (RPM)
+
+New RPM Metrics page includes:
+- Enhanced ping-based metrics
+- Dynamic alerting via SNMP traps
+
 ### Initialization
 
 For the **SSH** communication, a **user name** and **password** need to be set. To do so, go to the **General** page and click the **Credentials** page button on the right-hand side page.
