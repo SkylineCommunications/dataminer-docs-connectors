@@ -1,8 +1,10 @@
 ---
-uid: Connector_help_PROMAX_NEO
+uid: Connector_help_Promax_Neo
 ---
 
-# PROMAX NEO
+# Promax Neo
+
+## About
 
 The Promax Neo is a portable device used to analyze and measure the quality of electronic signals.
 
