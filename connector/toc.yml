@@ -562,6 +562,25 @@
   items:
   - name: Appear X Platform
     topicUid: Connector_help_Appear_X_Platform
+    items:
+    - name: Appear X Platform Technical
+      topicUid: Connector_help_Appear_X_Platform_Technical
+    - name: Appear X Platform - ASI IO
+      topicUid: Connector_help_Appear_X_Platform_-_ASI_IO
+    - name: Appear X Platform - Coder
+      topicUid: Connector_help_Appear_X_Platform_-_Coder
+    - name: Appear X Platform - Demodulator
+      topicUid: Connector_help_Appear_X_Platform_-_Demodulator
+    - name: Appear X Platform - Descrambler
+      topicUid: Connector_help_Appear_X_Platform_-_Descrambler
+    - name: Appear X Platform - IP IO
+      topicUid: Connector_help_Appear_X_Platform_-_IP_IO
+    - name: Appear X Platform - Modulator
+      topicUid: Connector_help_Appear_X_Platform_-_Modulator
+    - name: Appear X Platform - Scrambler
+      topicUid: Connector_help_Appear_X_Platform_-_Scrambler
+    - name: Appear X Platform - SDI IO
+      topicUid: Connector_help_Appear_X_Platform_-_SDI_IO
 - name: AppearTV
   items:
   - name: AppearTV Audio Transcoder
@@ -1740,6 +1759,11 @@
   items:
   - name: Broadcast Automation Systems Equinox TS
     topicUid: Connector_help_Broadcast_Automation_Systems_Equinox_TS
+- name: Broadcast Tools Site Sentinel
+  topicUid: Connector_help_Broadcast_Tools_Site_Sentinel
+  items:
+    - name: Broadcast Tools Site Sentinel Technical
+      topicUid: Connector_help_Broadcast_Tools_Site_Sentinel_Technical
 - name: BroadForward
   items:
   - name: BroadForward ENUM NP
@@ -2030,6 +2054,11 @@
     topicUid: Connector_help_Ceragon_Networks_Netmaster_-_Device
 - name: Check Point
   items:
+  - name: Check Point Security Manager
+    topicUid: Connector_help_Check_Point_Security_Manager
+    items:
+    - name: Check Point Security Manager Technical
+      topicUid: Connector_help_Check_Point_Security_Manager_Technical
   - name: Check Point 1100 Firewall
     topicUid: Connector_help_Check_Point_1100_Firewall
   - name: Check Point 1100 Firewall - Virtual Router
@@ -2076,6 +2105,11 @@
   items:
   - name: CISCO 4G LTE NIM
     topicUid: Connector_help_CISCO_4G_LTE_NIM
+  - name: CISCO APIC
+    topicUid: Connector_help_CISCO_APIC
+    items:
+    - name: CISCO APIC Technical
+      topicUid: Connector_help_CISCO_APIC_Technical
   - name: Cisco ASA 5540
     topicUid: Connector_help_Cisco_ASA_5540
   - name: CISCO ASA Software
@@ -2686,6 +2720,13 @@
     topicUid: Connector_help_Dolby_DP580
   - name: Dolby DP591
     topicUid: Connector_help_Dolby_DP591
+- name: Domo Broadcast
+  items:
+  - name: Domo Broadcast ONYX Decoder
+    topicUid: Connector_help_Domo_Broadcast_ONYX_Decoder
+    items:
+    - name: Domo Broadcast ONYX Decoder Technical
+      topicUid: Connector_help_Domo_Broadcast_ONYX_Decoder_Technical
 - name: Double D Electronics
   items:
   - name: Double D Electronics DDA-219-310
@@ -3026,6 +3067,11 @@
     topicUid: Connector_help_Ericsson_RX9500
   - name: Ericsson RX9500 - Descrambler Card
     topicUid: Connector_help_Ericsson_RX9500_-_Descrambler_Card
+  - name: Ericsson SAU-IP
+    topicUid: Connector_help_Ericsson_SAU-IP
+    items:
+      - name: Ericsson SAU-IP Technical
+        topicUid: Connector_help_Ericsson_SAU-IP_Technical
   - name: Ericsson SPR1100
     topicUid: Connector_help_Ericsson_SPR1100
   - name: Ericsson TT1222
@@ -3320,6 +3366,11 @@
     topicUid: Connector_help_Evertz_7800PA-10GE2
   - name: Evertz 7800R2x2-ACS-3G
     topicUid: Connector_help_Evertz_7800R2x2-ACS-3G
+  - name: Evertz_7800SRG-IP
+    topicUid: Connector_help_Evertz_7800SRG-IP
+    items:
+      - name: Evertz_7800SRG-IP_Technical
+        topicUid: Connector_help_Evertz_7800SRG-IP_Technical
   - name: Evertz 7800R4x4-RF
     topicUid: Connector_help_Evertz_7800R4x4-RF
   - name: Evertz 7800R4x4-RFI
@@ -3526,8 +3577,8 @@
     topicUid: Connector_help_Evertz_ev670-X30-HW_evIPG
   - name: Evertz ev670-X30-HW evVIP
     topicUid: Connector_help_Evertz_ev670-X30-HW_evVIP
-  - name: Evertz ev670-X45-HW U8E8D
-    topicUid: Connector_help_Evertz_ev670-X45-HW_U8E8D
+  - name: Evertz ev670-X45-HW
+    topicUid: Connector_help_Evertz_ev670-X45-HW
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
   - name: Evertz General Platform BPXRF
@@ -4062,8 +4113,14 @@
     topicUid: Connector_help_Generic_Trap_Forwarder
   - name: Generic Trap Processor
     topicUid: Connector_help_Generic_Trap_Processor
+    items:
+    - name: Generic Trap Processor Technical
+      topicUid: Connector_help_Generic_Trap_Processor_Technical
   - name: Generic Trap Receiver
     topicUid: Connector_help_Generic_Trap_Receiver
+    items:
+    - name: Generic Trap Receiver Technical
+      topicUid: Connector_help_Generic_Trap_Receiver_Technical
   - name: Generic Truck Manager
     topicUid: Connector_help_Generic_Truck_Manager
   - name: Generic TSI-SP-003 VMS
@@ -6497,6 +6554,11 @@
     topicUid: Connector_help_Nokia_OMS_1350_-_Node
   - name: Nokia OMS 1350 - USRPNL
     topicUid: Connector_help_Nokia_OMS_1350_-_USRPNL
+  - name: Nokia Q1 Agent
+    topicUid: Connector_help_Nokia_Q1_Agent
+    items:
+    - name: Nokia Q1 Agent Technical
+      topicUid: Connector_help_Nokia_Q1_Agent_Technical
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
   - name: Nokia WaveLite
@@ -6963,6 +7025,8 @@
     topicUid: Connector_help_Prodys_Quantum
 - name: Promax
   items:
+  - name: Promax Neo
+    topicUid: Connector_help_Promax_Neo
   - name: Promax RANGERNeo 4
     topicUid: Connector_help_Promax_RANGERNeo_4
 - name: Prometheus
@@ -7835,6 +7899,13 @@
   items:
   - name: Sintai OTNS8600
     topicUid: Connector_help_Sintai_OTNS8600
+- name: Siselectron
+  items:
+  - name: Siselectron SR1
+    topicUid: Connector_help_Siselectron_SR1
+    items:
+    - name: Siselectron SR1 Technical
+      topicUid: Connector_help_Siselectron_SR1_Technical
 - name: Sittig
   items:
   - name: Sittig DVA
@@ -8055,6 +8126,11 @@
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
+    name: Skyline Masking Services
+    topicUid: Connector_help_Skyline_Masking_Services
+    items:
+       - name: Skyline Masking Service Technical
+         topicUid: Connector_help_Skyline_Masking_Services_Technical 
   - name: Skyline MDC Service Monitoring
     topicUid: Connector_help_Skyline_MDC_Service_Monitoring
   - name: Skyline Mediation 1+1 redundancy switch
@@ -9807,6 +9883,13 @@
     topicUid: Connector_help_Walton_Enterprises_DP-8
   - name: Walton Enterprises DP-9
     topicUid: Connector_help_Walton_Enterprises_DP-9
+- name: Warner Bros Discovery
+  items:
+  - name: Warner Bros Discovery DAZN Live Stream API
+    topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API
+    items:
+    - name: Warner Bros Discovery DAZN Live Stream API Technical
+      topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API_Technical
 - name: Warner Bros Discovery Sports
   items:
   - name: Warner Bros Discovery Sports Transmission Orders
