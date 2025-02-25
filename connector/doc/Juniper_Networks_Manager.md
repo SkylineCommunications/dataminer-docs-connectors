@@ -84,7 +84,7 @@ SSH settings:
 - **IP address:** The polling IP of the device, e.g. *10.11.12.13*.
 - **Port number**: The SSH port of the connected device, by default *23* or *22* (version 1.0.3.x).
 
-#### Supported Pages:
+#### Supported Pages
 Expanded system monitoring with additional pages:
 - ICMPv6 Stats, IPv6 Stats, LLDP, Polling Configuration, SSH Command
 - Measurement Configuration Table, NAT Statistics, RPM Metrics, RPM History
