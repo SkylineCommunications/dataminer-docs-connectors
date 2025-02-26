@@ -53,15 +53,18 @@ The Huawei Manager retrieves data via **SNMP** and **SSH** from version 1.0.3.x 
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-SNMP CONNECTION:
+- IP address/host: The polling IP of the device.
+- Port number: Default 161.
+- Get community string: Default public.
+- Set community string: Default private.
 
-- **IP address/host**: The polling IP of the device.
+#### SSH Configuration
 
-SNMP Settings:
+From version 1.0.3.x onwards, SSH is used to retrieve additional parameters.
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: The community string used when setting values on the device, by default *private*.
+- SSH Username and Password: Required for authentication.
+- SSH File Transfer: Uses SFTP protocol.
+- PTP Configuration: Accessible via SSH commands.
 
 ## How to Use
 
@@ -131,3 +134,38 @@ This page contains the **IP Routing Table**, as well as the following page butto
 - **Address Translations Table**
 - **ARP Table**
 - **BGP Peer Table**
+
+### Trunk Info
+
+Displays trunking information, including aggregated ports and link states.
+
+### LDP
+
+Lists Label Distribution Protocol (LDP) sessions and their status in MPLS networks.
+
+### LLDP
+
+Provides details of Link Layer Discovery Protocol (LLDP) neighbors and their connectivity status.
+
+### System Power Table
+
+Displays power-related details of the system.
+- Power Used Information: Provides insights into power consumption by different components.
+- Power Status: Shows real-time power supply status.
+
+### OSPF
+
+Displays Open Shortest Path First (OSPF) routing information, including neighbor relationships and network topology.
+
+### PTP
+
+Provides information about Precision Time Protocol (PTP) settings and synchronization status.
+
+### NAT
+
+With version 1.0.5.11, new NAT-related tables were introduced to enhance monitoring and management of NAT configurations. These include:
+- Pool Group Table: Allows querying and managing the configuration of CGN IP pool groups, including their allocation and usage statistics.
+- Statistics Info Table: Provides detailed NAT statistics, including packet transmission, session data, and error tracking.
+- Session Table: Facilitates monitoring session configurations based on license constraints, ensuring optimal resource utilization.
+
+These tables are polled using SNMP and enable real-time visibility into NAT operations, helping administrators track performance and troubleshoot issues effectively.
