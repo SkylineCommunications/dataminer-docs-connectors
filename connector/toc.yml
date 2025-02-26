@@ -6557,6 +6557,8 @@
     items:
     - name: Nokia Q1 Agent Technical
       topicUid: Connector_help_Nokia_Q1_Agent_Technical
+  - name: Nokia Q1 Agent Network Element
+    topicUid: Connector_help_Nokia_Q1_Agent_Network_Element
   - name: Nokia TMS4
     topicUid: Connector_help_Nokia_TMS4
   - name: Nokia WaveLite
