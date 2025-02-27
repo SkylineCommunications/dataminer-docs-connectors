@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_Evertz_MUXIP-10GE-v52-2RU
+uid: Connector_help_International_Datacasting_Map_Pro_Audio
 ---
 
-# Evertz MUXIP-10GE-v52-2RU
+# International Datacasting Map Pro Audio
 
-The **Evertz MUXIP-10GE-v52-2RU** is a versatile IP re/de-multiplexer designed for video delivery. It supports up to 128 IP inputs and outputs, handles both SPTS and MPTS, and offers advanced stream processing features like program and PID remapping. With robust redundancy options and flexible configuration, it's ideal for broadcasters and service providers managing high-quality video content across networks.
+The **International Datacasting Map Pro Audio** device is a professional audio distribution and monitoring solution designed for broadcasters and content providers. It allows for high-quality audio delivery via satellite, Internet, or IP-based systems. The device is typically used in environments that require reliable, high-performance audio transport for both live and pre-recorded content. It provides functionalities such as real-time monitoring, signal analysis, and seamless integration with existing broadcast infrastructures. It is known for its stability and efficiency in managing large-scale audio transmissions across multiple platforms.
 
 ## About
 
@@ -63,11 +63,3 @@ The web interface is not currently integrated.
 ## How to use
 
 Once the element is created, all information will be polled and displayed. Navigating to the appropriate pages will show the desired information, no other configuration is required.
-
-### Examples
-
-For general device information, data can be found in the *General*, *Status*, *System Configuration*, and *Ethernet Ports Control/Monitor* Pages.
-
-The device can forward any faults via SNMP traps. To do so, enable the *Send Trap* option for any modules on the *Fault* page then configure where to send the traps in the *SNMP Configuration* page
- 
-To configure the Input and Output channels, all that information can be found on the *Input Configuration* and *Output Configuration* pages respectively. You can also configure route rules on the *Routes* page.

@@ -1,3 +1,7 @@
+---
+uid: Marketing_International_Datacasting_Map_Pro_Audio
+---
+
 ## About
 
 The **International Datacasting Map Pro Audio** is a high-quality audio distribution device used by broadcasters for reliable audio delivery via satellite, Internet, or IP systems. Combined with Dataminer, it offers real-time monitoring and signal analysis, ensuring efficient audio transport across multiple platforms.
