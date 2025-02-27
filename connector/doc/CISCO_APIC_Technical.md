@@ -44,7 +44,7 @@ The element created with this connector consists of the following data pages:
 
 - **CPU**: Displays the **CPUs** table.
 
-  Note that the polled SNMP index is not saved over reboots for the CISCO APIC. Because of this limitation in the software, alarm and trend info will be removed when a reboot on the CISCO APIC is detected. This is done to prevent a mismatch in trending and alarming.
+  Note that the polled SNMP index is not saved over reboots for the CISCO APIC. Because of this limitation in the software, the same primary key might not necessarily refer to the same cpu, resulting in a possible mismatch in alarming/trending.
 
 - **Power**: Displays power related physical entities.
 
