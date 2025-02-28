@@ -18,14 +18,14 @@ Starting from version **3.0.0.1**, **DVEs** can be created for the 4 encoder cha
 
 ### Version Info
 
-| **Range**    | **Description**                                                                                                              | **DCF Integration** | **Cassandra Compliant** |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.90.x            | Initial range.                                                                                                               | No                  | No                      |
-| 1.1.0.x             | Updated for firmware 2.0.13.                                                                                                 | No                  | No                      |
-| 2.2.0.x             | Updated for firmware 2.0.                                                                                                    | No                  | No                      |
-| 3.0.0.x             | DVEs for each encoder.                                                                                                       | No                  | Yes                     |
-| \<10.0.0.x \[Main\] | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
-| 10.0.0.x            | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                           | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.90.x | Initial range. | No | No |
+| 1.1.0.x | Updated for firmware 2.0.13. | No | No |
+| 2.2.0.x | Updated for firmware 2.0. | No | No |
+| 3.0.0.x | DVEs for each encoder. | No | Yes |
+| \<10.0.0.x \[Main\] | The versioning of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No | Yes |
+| 10.0.0.x | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. | No | Yes |
 
 ### Product Info
 
@@ -40,7 +40,7 @@ Starting from version **3.0.0.1**, **DVEs** can be created for the 4 encoder cha
 
 ### Exported connectors
 
-| **Exported Connector**                            | **Description** |
+| Exported Connector                            | Description |
 |--------------------------------------------------|-----------------|
 | Imagine Communications Selenio J2K1 ENC - Module | Encoder modules |
 
