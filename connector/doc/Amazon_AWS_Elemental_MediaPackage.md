@@ -100,6 +100,8 @@ On the General page, you can specify the Access Key and the Secret Key, as detai
 
 The Channels page displays the channels configured in the MediaPackage configured region.
 
+The **Channels** table includes a context menu with the option to remove selected channels with the **"Deleted"** status.
+
 Note: If no channels have any tags configured, the Channel Tags table will be empty.
 
 ### Origin Endpoints page
