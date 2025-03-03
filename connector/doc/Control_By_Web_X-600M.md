@@ -8,11 +8,11 @@ The **Control By Web X-600M** is a multifunction web-enabled industrial I/O cont
 
 ## Key Features
 
-- **Modular I/O Expansion**: Supports a wide range of I/O modules for flexible system configuration.
-- **Web-Based Interface**: Built-in web server for remote monitoring and control without additional software.
-- **Advanced Logic & Scripting**: Create custom logic using an intuitive interface with scripting capabilities.
-- **Data Logging & Alerts**: Logs data and sends notifications via email, SMS, or SNMP traps.
-- **Secure Access**: HTTPS encryption and user authentication for secure remote access.
+- **Modular I/O expansion**: Supports a wide range of I/O modules for flexible system configuration.
+- **Web-based interface**: Built-in web server for remote monitoring and control without additional software.
+- **Advanced logic & scripting**: Create custom logic using an intuitive interface with scripting capabilities.
+- **Data logging & alerts**: Logs data and sends notifications via email, SMS, or SNMP traps.
+- **Secure access**: HTTPS encryption and user authentication for secure remote access.
 
 ## Use Cases
 
