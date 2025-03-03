@@ -18,9 +18,9 @@ This connector was designed to work with the Kentrox model 72771 DataSMART MAX T
 
 ### Product Info
 
-| **Range**   | **Supported Firmware** |
-|-------------|------------------------|
-| 1.0.0.x1.31 | -                      |
+| Range  | Supported Firmware |
+|--------|--------------------|
+| 1.0.0. | x1.31              |
 
 ### System Info
 
