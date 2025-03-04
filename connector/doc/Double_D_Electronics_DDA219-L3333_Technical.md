@@ -4,29 +4,11 @@ uid: Connector_help_Double_D_Electronics_DDA219-L3333_Technical
 
 # Double D Electronics DDA219-L3333
 
+## About
+
 This connector monitors the activity of the **Double D Electronics DDA219-L3333** switch controller.
 
 The connector uses serial communication to allow the end user to control and monitor the switch configuration.
-
-## About
-
-### Version Info
-
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
-
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | V1.28T13           |
-
-### System Info
-
-| Range              | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--------------------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x            | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -60,4 +42,4 @@ You can also define the mode of the device (using the **Global Device Mode** par
 
 On the right, the page shows if there are any **Active Alarms**, **Unacknowledged Alarms**, or **PSU 1** and **PSU 2 Alarms**.
 
-On the **Switches** page, you can view the status of up to four switches in the system. For each switch, the current position, lock state and alarm state are displayed.
+On the **Switches** page, you can view the status of up to four switches in the system. For each switch, the current position, lock state, and alarm state are displayed.
