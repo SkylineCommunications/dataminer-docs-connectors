@@ -19,7 +19,7 @@ AWS Elemental MediaPackage is a just-in-time packaging and origination service t
 
 | Range     | Supported Firmware                     |
 |-----------|----------------------------------------|
-| 1.0.0.x   | AWS Service - Production service 2021. |
+| 1.0.0.x   | AWS Service - Production service 2021  |
 | 1.0.1.x   | AWS Service - Production service 2021  |
 
 ### System Info
@@ -31,13 +31,13 @@ AWS Elemental MediaPackage is a just-in-time packaging and origination service t
 
 ## Configuration
 
-This connector communicates with 2 AWS APIs, namely the Amazon MediaPackage and the Amazon CloudWatch API. It will also process CloudWatch SNS subscription messages that are sent from AWS.
+This connector communicates with two AWS APIs, namely the Amazon MediaPackage and the Amazon CloudWatch API. It will also process CloudWatch SNS subscription messages that are sent from AWS.
 
 The connector is intended to only work for a single region at a time, so each element created with this connector will only support one region.
 
 To monitor multiple regions, create an element for each region.
 
-To configure the connections, refer to the region information on the page <https://docs.aws.amazon.com/general/latest/gr/rande.html>. Collect the region code of your choice and use it ro replace **\#REGION#** within each URL as described below.
+To configure the connections, refer to the region information on the page <https://docs.aws.amazon.com/general/latest/gr/rande.html>. Collect the region code of your choice and use it to replace **\#REGION#** within each URL as described below.
 
 ### Connections
 
@@ -94,13 +94,13 @@ In order to securely interact with AWS APIs, go to the General page and fill in 
 
 ### General page
 
-On the General page, you can specify the Access Key and the Secret Key, as detailed under "Initialization" above.
+On the General page, you can specify the Access Key and the Secret Key, as detailed under [Initialization](#initialization).
 
 ### Channels page
 
 The Channels page displays the channels configured in the MediaPackage configured region.
 
-The **Channels** table includes a context menu with the option to remove selected channels with the **"Deleted"** status.
+The **Channels** table includes a right-click menu with the option to remove selected channels with the **Deleted** status.
 
 Note: If no channels have any tags configured, the Channel Tags table will be empty.
 
