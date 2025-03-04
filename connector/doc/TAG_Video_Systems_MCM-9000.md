@@ -24,10 +24,10 @@ The connector can receive traps to update the channel and system events in real 
 | 1.1.4.x [Obsolete] |                                                        | 1.1.3.25 | -                                                   |
 | 1.1.5.x [Obsolete] | Option for Unicode added.                              | 1.1.4.17 | All elements need to be re-created.                 |
 | 1.1.6.x [SLC Main] | Default value auto-clear Channel Events Table changed. | 1.1.5.6  | Only elements that are stuck need to be re-created. |
-| 1.1.7.x [SLC Main] | Added non unicode support.                             | 1.1.6.19 | -                                                   |
+| 1.1.7.x [SLC Main] | Added non-Unicode support.                             | 1.1.6.19 | -                                                   |
 
 > [!NOTE]
-> Both ranges, 1.1.6.x and 1.1.7.x are ment to be maintained in parallel. Any change, new feature, or fix is to be applied to both ranges!
+> Ranges 1.1.6.x and 1.1.7.x are maintained in parallel. Changes, new features, and fixes will therefore be applied to both ranges.
 
 ### Product Info
 
