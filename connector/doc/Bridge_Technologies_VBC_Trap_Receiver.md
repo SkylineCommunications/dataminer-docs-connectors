@@ -82,4 +82,4 @@ The element has the following data pages:
 
 - **Counters**: Displays event counters by type.
   
-- **Remote Data Wall**: Displays the canvases and widgets data. The Widgets table includes a context menu that allows for editing the cofiguration of selected widget.
+- **Remote Data Wall**: Displays the canvases and widgets data. Via the right-click menu of the Widgets table, you can edit the configuration of the selected widget.
