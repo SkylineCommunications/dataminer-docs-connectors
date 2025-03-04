@@ -185,7 +185,8 @@ The **primary key** of the traps table is obtained by concatenating the **Servic
 
 With the context menu in the Device Elements Table, you can add devices to be monitored.
 
-> **_NOTE:_**  For the DVE configurations to be set, they must be applied by either using the context menu "Apply All" option or by pressing the "Apply All" button.
+> [!NOTE]
+> For the DVE configuration to be set, you must apply it either by selecting **Apply All** in the context menu or by clicking the **Apply All** button.
 
 ### Configuration Page
 
