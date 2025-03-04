@@ -2742,6 +2742,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA219-733
   - name: Double D Electronics DDA219-C333E
     topicUid: Connector_help_Double_D_Electronics_DDA219-C333E
+  - name: Double D Electronics DDA219-L3333
+    topicUid: Connector_help_Double_D_Electronics_DDA219-L3333 
+    items:
+      - name: Double D Electronics DDA219-L3333 Technical
+        topicUid: Connector_help_Teleste_HDC100_TSEMP_Technical
   - name: Double D Electronics DDA266
     topicUid: Connector_help_Double_D_Electronics_DDA266
   - name: Double D Electronics DDA276
