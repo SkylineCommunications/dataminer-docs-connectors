@@ -44,7 +44,7 @@ The element created with this connector consists of the following data pages:
 
 - **CPU**: Displays the **CPUs** table.
 
-  Note that the polled SNMP index is not saved over reboots for the CISCO APIC. Because of this limitation in the software, the same primary key might not necessarily refer to the same cpu, resulting in a possible mismatch in alarming/trending.
+  Note that the polled SNMP index is not saved over reboots for the CISCO APIC. Because of this limitation in the software, the same primary key might not necessarily refer to the same CPU, resulting in a possible mismatch in alarming/trending.
 
 - **Power**: Displays power related physical entities.
 
