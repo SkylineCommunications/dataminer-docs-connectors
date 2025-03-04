@@ -4262,6 +4262,9 @@
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
   - name: Grass Valley AMPP Manager
     topicUid: Connector_help_Grass_Valley_AMPP_Manager
+    items:
+      - name: Grass Valley AMPP Manager Technical
+        topicUid: Connector_help_Grass_Valley_AMPP_Manager_Technical
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
