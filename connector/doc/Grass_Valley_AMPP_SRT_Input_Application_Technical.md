@@ -2,12 +2,11 @@
 uid: Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical
 ---
 
-# Grass Valley AMPP SRT Input Application 
+# Grass Valley AMPP SRT Input Application
 
 ## About
 
-The SRT Input is part of the Application Connectors defined for the GV AMPP (Agile Media Processing Platform) solution, designed to show the status and allow the configuration of the workloads added to a fabric in AMPP.
-It depends on Interapp messages from the Grass Valley AMPP Manager.
+The SRT Input is an application connector defined for the GV AMPP (Agile Media Processing Platform) solution, designed to show the status and allow the configuration of the workloads added to a fabric in AMPP. It depends on InterApp messages from the Grass Valley AMPP Manager.
 
 ## Configuration
 
@@ -26,5 +25,5 @@ HTTP CONNECTION:
 
 The following data pages are available in an element created with this connector:
 
-- **General**: Contains the *Overview* and *Configuration* tables. Overview shows the workloads of SRT Input type, Configuration allows user to send HTTP commands.
-- **Debug**: Enabled by a toggle button at the bottom of *General* page, this includes the Last Login Time, token Expiration, and Reponse Status Code.
+- **General**: Contains the **Overview** and **Configuration** tables. The Overview table shows the workloads for the SRT Input type, and the Configuration table allows you to send HTTP commands.
+- **Debug**: Enabled by a toggle button at the bottom of **General** page, this page includes the Last Login Time, Token Expiration, and Response Status Code.

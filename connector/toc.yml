@@ -4200,6 +4200,11 @@
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
   - name: Grass Valley AMPP Manager
     topicUid: Connector_help_Grass_Valley_AMPP_Manager
+  - name: Grass Valley AMPP SRT Input Application
+    topicUid: Connector_help_Grass_Valley_AMPP_SRT_Input_Application
+    items:
+    - name: Grass Valley AMPP SRT Input Application Technical
+      topicUid: Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
