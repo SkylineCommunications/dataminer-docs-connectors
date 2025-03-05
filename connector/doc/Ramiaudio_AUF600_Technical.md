@@ -47,7 +47,7 @@ SNMP Settings:
 
 ### Polling Manager
 
-This page contains a polling table, which displays the polling state, interval, and last polled time, and contains a **Poll** button that can be used to manually trigger the polling.
+This page contains a polling table where it is possible to change the **interval** and **state** of each polling group to cater to your specific use case. It also displays the last polled time and a **Poll** button that can be used to manually trigger the polling.
 
 ### Web Interface
 
