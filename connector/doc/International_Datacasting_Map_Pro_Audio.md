@@ -10,11 +10,11 @@ The **International Datacasting Map Pro Audio** is a high-quality audio distribu
 
 ## Key Features
 
-- **Channel Monitoring and Configuration**: Configure and monitor input, audio, and volume channels.
+- **Channel monitoring and configuration**: Configure and monitor input, audio, and volume channels.
 
-- **Network Configuration**: Check and update network configurations.
+- **Network configuration**: Check and update network configurations.
 
-- **Error Logging Functionality**: Forward any issues through logging files and determine what to include.
+- **Error logging**: Forward any issues through logging files and determine what to include.
 
 ## Use Case
 

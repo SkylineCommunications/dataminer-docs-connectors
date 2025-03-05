@@ -10,11 +10,11 @@ The **Evertz MUXIP-10GE-v52-2RU** is your ultimate solution for seamless video d
 
 ## Key Features
 
-- **Channel Configuration and Monitoring**: Configure and monitor all input channels and MUX output channels.
+- **Channel configuration and monitoring**: Configure and monitor all input channels and MUX output channels.
 
-- **Module Monitoring**: Monitor MUXIP module system metrics.
+- **Module monitoring**: Monitor MUXIP module system metrics.
 
-- **SNMP Trap functionality**: Forward any issues with the device through SNMP traps.
+- **SNMP trap functionality**: Forward any issues with the device through SNMP traps.
 
 ## Use Case
 
