@@ -4,27 +4,9 @@ uid: Connector_help_Ramiaudio_AUF600_Technical
 
 # Ramiaudio AUF600
 
-The AUF600 is a digital audio mixer capable of handling cross-fading of three sources in AES/EBU format.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | V6.5                   |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+The AUF600 is a digital audio mixer capable of handling cross-fading of three sources in AES/EBU format.
 
 ## Configuration
 
@@ -36,14 +18,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **IP port**: [The IP port of the destination. (default: *161*)]
-
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *161*).
 
 SNMP Settings:
 
-- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
-- **Set community string**: [The community string used when setting values on the device. (default: *private*)]
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Polling Manager
 
