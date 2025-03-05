@@ -3613,6 +3613,8 @@
     topicUid: Connector_help_Evertz_Magnum_SDVN_Router
   - name: Evertz Mediator Nexus
     topicUid: Connector_help_Evertz_Mediator_Nexus
+  - name: Evertz MUXIP-10GE-v52-2RU
+    topicUid: Connector_help_Evertz_MUXIP-10GE-v52-2RU
   - name: Evertz MViP
     topicUid: Connector_help_Evertz_MViP
   - name: Evertz MVIP II
