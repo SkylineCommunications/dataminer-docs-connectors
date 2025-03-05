@@ -11,14 +11,14 @@ The AUF600 is a digital audio mixer capable of handling cross-fading of three so
 ### Key Features
 
 - **Channel monitoring and configuration**: Look through each of the channels on the device, monitor them to detect changes on critical parameters, and edit their settings.
-- **Core Configuration**: Monitor and change CSS Core settings in your device.
-- **Trap Support**: Make sure your element is always up to date with your device through traps received directly in DataMiner.
-- **Web Interface**: Check the whole device and its configurations directly from the element.
+- **Core configuration**: Monitor and change CSS Core settings in your device.
+- **Trap support**: Make sure your element is always up to date through traps received directly in DataMiner.
+- **Web interface**: Check the whole device and its configurations directly from the element.
 
 ## Prerequisites
 
 - **DataMiner version 10.2 or higher** is required.
-- **Credentials**: You must have a username and password for the device if you wish to use the **Web Interface** feature.
+- **Credentials**: To use the **web interface** feature, you will need a username and password for the device.
 
 ## Technical Information
 
