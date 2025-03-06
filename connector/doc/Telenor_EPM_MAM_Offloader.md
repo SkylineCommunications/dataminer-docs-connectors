@@ -10,12 +10,8 @@ The **Telenor EPM MAM Offloader** connector is used to collect messages forwarde
 
 ## Key Features
 
-- **Real-time statistics**: The connector displays statistics about the offloading process (rate of messages, offload duration,...)
-- **Database Configuration**: The user can configure the name of the OpenSearch indices and for how long the documents must remain in the database.
-
-## Prerequisites
-
-- **DataMiner version 10.2.0 or higher** is required for compatibility with this connector.
+- **Real-time statistics**: Easily view statistics related to the offloading process (rate of messages, offload duration, etc.)
+- **Database configuration**: Configure the connector to look for specific OpenSearch indices, with the possibility to limit how long the documents will remain in the database.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telenor_EPM_MAM_Offloader_Technical).

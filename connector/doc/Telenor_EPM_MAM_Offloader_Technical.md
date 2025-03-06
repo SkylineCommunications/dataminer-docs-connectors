@@ -19,9 +19,10 @@ This connector uses a virtual connection and does not require any input during e
 ### Initialization
 
 On the *General* page, the settings of the OpenSearch database must be filled in:
--   **User Name**: the OpenSearch user name.
--   **Password**: the OpenSearch password.
--   **Nodes**: this table contains the list of the nodes in the OpenSearch database. A node can be added by right-clicking the table and selecting *Add Node...*
+
+- **User Name**: The OpenSearch user name.
+- **Password**: The OpenSearch password.
+- **Nodes**: This table contains the list of the nodes in the OpenSearch database. A node can be added by right-clicking the table and selecting *Add Node...*
 
 ## How to Use
 
