@@ -7136,6 +7136,11 @@
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
 - name: Ramiaudio
   items:
+  - name: Ramiaudio AUF600
+    topicUid: Connector_help_Ramiaudio_AUF600
+    items:
+    - name: Ramiaudio AUF600 Technical
+      topicUid: Connector_help_Ramiaudio_AUF600_Technical
   - name: Ramiaudio Switch CS404
     topicUid: Connector_help_Ramiaudio_Switch_CS404
   - name: Ramiaudio Switch CSS600
