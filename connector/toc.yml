@@ -4501,10 +4501,10 @@
 - name: Hessischer Rundfunk
   items:
   - name: Hessischer Rundfunk ABR Audio Monitoring Service
-    topicUid: Hessischer_Rundfunk_ABR_Audio_Monitoring_Service
+    topicUid: Connector_help_Hessischer_Rundfunk_ABR_Audio_Monitoring_Service
     items:
-    - name: Hessischer_Rundfunk_ABR_Audio_Monitoring_Service Technical
-    topicUid: Hessischer_Rundfunk_ABR_Audio_Monitoring_Service_Technical
+    - name: Hessischer Rundfunk ABR Audio Monitoring Service Technical
+    topicUid: Connector_help_Hessischer_Rundfunk_ABR_Audio_Monitoring_Service_Technical
 - name: Hewtech
   items:
   - name: Hewtech Hirakawa HS-600MA
