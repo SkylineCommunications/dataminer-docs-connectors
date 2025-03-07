@@ -40,7 +40,7 @@ The element consists of the following data pages:
 
 - **General**: Contains general device information and settings.
 - **Channel Status**: Contains channel status information and general channel settings.
-- **Channel Error Trame**: Contains information on the error frames for each channel.
+- **Channel Error Frame**: Contains information on the error frames for each channel.
 - **Channel Settings**: Contains core channel settings.
 - **CSS Core Setting**: Contains core device settings.
 - **Trap Configurations**: Contains SNMP trap and trap destination settings.
