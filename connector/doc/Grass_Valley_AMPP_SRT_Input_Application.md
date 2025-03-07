@@ -10,16 +10,18 @@ The SRT Input is an application connector for the GV AMPP (Agile Media Processin
 
 ### Key Features
 
-- **View SRT Input workloads**: With this connector, you can get an overview of the workloads for the "SRT Input" application type, along with their status information.
-- **Send configuration commands**: Using this connector, you will be able to configure specific SRT Input applications.
-- **Get up-to-date status info**: Whenever this connector makes an adjustment to the configuration, it will immediately retrieve status information from the manager element.
+- **Displaying Workloads for a specific Application Type**: This connector is able to display workloads for the "SRT Input" application type, and their status.
+- **Send Configuration commands to a specific srt input application**: This connector is able to configure specific SRT Input applications via HTTP POST request.
+- **Request status from GVAMPP Manager**: This connector is able to retrieve its status from the manager element immediately after performing a configuration POST.
+- **Recover from an element restart**: When the connector comes back to active, the manager element knows to send workload status to it because of an element state monitor.
+
 
 ## Use Case
 
-- **Challenge**: SRT Input Application element is stopped, restarted, or in an error state for some time.
-- **Solution**: In conjunction with the GVAMPP Manager, this connector is able to receive/parse workload status information from the GVAMPP Manager element when it comes back from stop/restart/error element status.
-- **Benefit**: Potential element issues will not cause you to be out of sync — the GVAMPP Manager will send out initialization messages periodically and on element state changes.
-
+- **Challenge**: Operator has thousands of workloads, but want to monitor only the SRT Input workloads, in separate elements.
+- **Solution**: Operator can create one or multiple elements of the SRT Input Application, and point each workload to the respective element.
+- **Benefit**: Don't have to sift through the filtering of the large workloads table, all your SRT Input status information would be under one roof. 
+    - <em> Note: More workload types will be added as standalone connectors in the future.</em>
 ## Technical info
 
 ### Prerequisites
