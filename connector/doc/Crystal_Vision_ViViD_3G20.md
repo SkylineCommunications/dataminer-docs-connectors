@@ -12,6 +12,27 @@ The Crystal Vision ViViD 3G20 connector makes it possible to monitor and control
 
 All data is retrieved using an SNMP connection. The bus address of an element is used to indicate the card number to poll.
 
+### Version Info
+
+| Range                | Key Features     | Based on     | System Impact     |
+|----------------------|------------------|--------------|-------------------|
+| 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Support DCF      | -            | -                 |
+
+### Product Info
+
+| Range     | Supported Firmware     |
+|-----------|------------------------|
+| 1.0.0.x   | Unknown                |
+| 1.0.1.x   | Unknown                |
+
+### System Info
+
+| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
+|-----------|---------------------|-------------------------|-----------------------|-------------------------|
+| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+
 ## Installation and configuration
 
 ### Creation
