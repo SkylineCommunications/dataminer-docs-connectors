@@ -65,9 +65,9 @@ Connectivity for this connector is managed by the connector itself, but creation
 - **REF Input 1**: A single fixed interface of type **input**.
 - **REF Input 2**: A single fixed interface of type **input**.
 - **AUDIO Input 1**: A single fixed interface of type **input**.
-- **AUDIO** **Input 2**: A single fixed interface of type **input**.
-- **AUDIO** **Input 3**: A single fixed interface of type **input**.
-- **AUDIO** **Input 4**: A single fixed interface of type **input**.
+- **AUDIO Input 2**: A single fixed interface of type **input**.
+- **AUDIO Input 3**: A single fixed interface of type **input**.
+- **AUDIO Input 4**: A single fixed interface of type **input**.
 - **SYNAPSE Bus Audio Input 2**: A single fixed interface of type **input**.
 - **SYNAPSE Bus Audio Input 4**: A single fixed interface of type **input**.
 - **SDI Output 1**: A single fixed interface of type **output**.

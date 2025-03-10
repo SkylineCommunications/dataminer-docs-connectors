@@ -10,9 +10,9 @@ This connector monitors the SNMP data retrieved from a generic UPS device. You c
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                      | **Based on** | **System Impact** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version: - Reading SNMP data from the device and setting data on the device via SNMP. - SNMP trap management. | -            | -                 |
+| Range              | Key Features                                                                                                          | Based on | System Impact |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version: <br>- Reading SNMP data from the device and setting data on the device via SNMP. <br>- SNMP trap management. | -        | -             |
 
 ### Product Info
 
@@ -37,7 +37,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: 161).
+- **IP port**: The IP port of the destination (default: *161*).
 
 SNMP Settings:
 

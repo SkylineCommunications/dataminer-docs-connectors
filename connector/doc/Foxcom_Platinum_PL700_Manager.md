@@ -14,11 +14,11 @@ This connector exports several other connectors based on the information retriev
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                       | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                                                                                      | Yes                 | Yes                     |
-| 1.0.1.x [Obsolete]     |Support for Unicode. **Impact:** Element data and trend data need to be removed entirely.             | Yes                 | Yes                     |
-| 1.0.2.x [SLC Main]   | Support for additional modules. **Impact:** Duplicate description of 2 parameters, very small impact. | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version. | Yes | Yes |
+| 1.0.1.x [Obsolete] | Support for Unicode. **Impact:** Element data and trend data need to be removed entirely. | Yes | Yes |
+| 1.0.2.x [SLC Main] | Support for additional modules. **Impact:** Duplicate description of 2 parameters, very small impact. | Yes | Yes |
 
 ### Product Info
 
@@ -29,16 +29,16 @@ This connector exports several other connectors based on the information retriev
 
 ### Exported components
 
-| **Exported Connector**                                                                                                 | **Description**   |
-|------------------------------------------------------------------------------------------------------------------------|-------------------|
-| [Foxcom Platinum PL700 Manager - PL7011](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7011)         | Power supply      |
-| [Foxcom Platinum PL700 Manager - PL7220T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220T)       | Transmission card |
-| [Foxcom Platinum PL700 Manager - PL7220R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220R)       | Receiving card    |
-| [Foxcom Platinum PL700 Manager - PL7230T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230T)       | Transmission card |
-| [Foxcom Platinum PL700 Manager - PL7230R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230R)       | Receiving card    |
-| [Foxcom Platinum PL700 Manager - PL7611](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7611)         | Power supply      |
-| [Foxcom Platinum PL700 Manager - PL7240T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240T)       | Transmission card |
-| [Foxcom Platinum PL700 Manager - PL7240R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240R)       | Receiving card    |
+| Exported Connector                                                                                         | Description       |
+|------------------------------------------------------------------------------------------------------------|-------------------|
+| [Foxcom Platinum PL700 Manager - PL7011](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7011)       | Power supply      |
+| [Foxcom Platinum PL700 Manager - PL7220T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220T)     | Transmission card |
+| [Foxcom Platinum PL700 Manager - PL7220R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220R)     | Receiving card    |
+| [Foxcom Platinum PL700 Manager - PL7230T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230T)     | Transmission card |
+| [Foxcom Platinum PL700 Manager - PL7230R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230R)     | Receiving card    |
+| [Foxcom Platinum PL700 Manager - PL7611](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7611)       | Power supply      |
+| [Foxcom Platinum PL700 Manager - PL7240T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240T)     | Transmission card |
+| [Foxcom Platinum PL700 Manager - PL7240R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240R)     | Receiving card    |
 | [Foxcom Platinum PL700 Manager - PL2 7220R](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220R) | Receiving card    |
 | [Foxcom Platinum PL700 Manager - PL2 7220T](xref:Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220T) | Transmitting card |
 

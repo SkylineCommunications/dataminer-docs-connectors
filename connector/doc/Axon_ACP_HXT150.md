@@ -59,14 +59,6 @@ SMART SERIAL CONNECTION:
 > [!NOTE]
 > The configuration of the element can also be performed via the Axon ACP Frame Manager. The Frame Manager will auto-populate the elements in the system if the card connectors are available.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:

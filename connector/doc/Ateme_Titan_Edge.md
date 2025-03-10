@@ -52,14 +52,6 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -74,3 +66,14 @@ The element created with this connector has the following data pages:
 - **Decoder**: Displays the decoder information.
 - **Encoder**: Displays the encoder information.
 - **Gateway**: Displays the gateway information.
+- **BISS**: Displays and manages BISS services.
+
+### BISS Page
+
+The BISS Services table on the BISS page supports both encoders and decoders. With this table, you can configure and monitor BISS services.
+
+Important notes:
+
+- Descrambling mode is not supported for encoders.
+- Entitlement key name is not supported for encoders.
+- Entitlement session ID is not supported for decoders.

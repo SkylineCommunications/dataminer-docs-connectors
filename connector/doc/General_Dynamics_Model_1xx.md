@@ -43,14 +43,6 @@ SERIAL CONNECTION:
   - Adjust the protocol.xml (see below)
   - Adjust QAction_3161.cs (see below)
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### Info Messages

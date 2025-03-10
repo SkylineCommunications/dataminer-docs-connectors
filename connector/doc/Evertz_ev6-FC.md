@@ -10,10 +10,10 @@ The ev6-FR's architecture enables modules with advanced functionality because of
 
 ### Version Info
 
-| **Range**            | **Key Features**        | **Based on** | **System Impact**                     |
-|----------------------|-------------------------|--------------|---------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.        | -            | -                                     |
-| 1.0.1.x [SLC Main]   | Adds redundant polling. | -            | Adds interface for redundant polling. |
+| Range              | Key Features            | Based on | System Impact                         |
+|--------------------|-------------------------|----------|---------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.        | -        | -                                     |
+| 1.0.1.x [SLC Main] | Adds redundant polling. | -        | Adds interface for redundant polling. |
 
 ### Product Info
 
@@ -46,14 +46,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -57,14 +57,6 @@ SERIAL CONNECTION:
 
 The connection above is used to received messages after actions such as HTTP POST, as well as unsolicited TCP messages that can be configured in Reflex to send parameter values to update contexts.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector consists of the following data pages:

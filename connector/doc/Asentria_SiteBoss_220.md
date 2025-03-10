@@ -46,14 +46,6 @@ SNMP Settings:
 - **Get community string**: The community string required to read from the device. The default value is *public*.
 - **Set community string**: The community string required to set to the device. The default value is *private*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

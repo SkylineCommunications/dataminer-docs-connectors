@@ -46,14 +46,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No further configuration is required.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the **General** page, the **Managed Elements Table** contains general information and settings, while the **Managed Elements Status Table** contains status information for each managed element. The **Signal Table** lists all tracked signals. Each row of this table corresponds with a single monitored signal, e.g. an SDI video feed or an AES/EBU audio feed. For each signal, more information is available, including several status parameters.

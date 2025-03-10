@@ -45,10 +45,6 @@ This connector uses an HTTP connection and requires input during element creatio
 
 To initialize the web service responsible for receiving the notifications and providing the API, some parameters need to be configured on the **Configuration** page. The **Notifications** **Status** must be set to *enabled* to start the web service. The **Notifications** **URI**, **Port** and **Protocol** parameters, together with the IP address of the element are used to form the complete web service URI. In case the **Notifications Protocol** parameter is set to HTTPS, a certificate can be selected in the **Notifications Certificate** parameter.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### Configuration page

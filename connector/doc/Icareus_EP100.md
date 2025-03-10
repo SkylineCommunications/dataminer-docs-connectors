@@ -12,10 +12,10 @@ In the 1.0.0.x range, this connector uses a serial connection to communicate wit
 
 ### Version Info
 
-| **Range**            | **Key Features**                                        | **Based on** | **System Impact**                                                                         |
-|----------------------|---------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                        | -            | -                                                                                         |
-| 1.1.0.x [SLC Main]   | Changed from a serial connection to an SNMP connection. | 1.0.0.3      | Existing elements need to be reconfigured before the new connection will be taken in use. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.1.0.x [SLC Main] | Changed from a serial connection to an SNMP connection. | 1.0.0.3 | Existing elements need to be reconfigured before the new connection will be taken in use. |
 
 ### Product Info
 
@@ -60,14 +60,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No additional configuration is necessary to create a new element.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

@@ -50,18 +50,18 @@ This page displays information about the system, such as the **Description**, **
 
 This section contains the following pages:
 
-- **Input**: This page contains the **Input Table**, **TS Input Source Table** and **ASI Input Table**.
+- **Input**: This page contains the **Input Table**, **TS Input Source Table**, and **ASI Input Table**.
 - **Output**: This page contains the **TS Output Table** and the **Output Source Table**.
-- **Sensor**: This page displays the status of the **3V**, **5V** and **12V sensor** as well as the **temperature** sensor and the **fan**.
+- **Sensor**: This page displays the status of the **3V**, **5V**, and **12V sensor** as well as the **temperature** sensor and the **fan**.
 - **Relay**: This page displays the relay count and contains the **Relay Table**.
 - **Hardware**: This page contains the **Model Table** and **Hardware Table**.
-- **Digital Video Broadcasting (DVB)**: This page contains the **DVB-S2 In Table**, **DVB-S2 In Status Table** and a subpage with the **Advanced Features** **Table**.
-- **Ancillary**: This page contains the **Ancillary Decoder**, **Line Conflict** and **Option Table**.
+- **Digital Video Broadcasting (DVB)**: This page contains the **DVB-S2 In Table**, **DVB-S2 In Status Table**, and a subpage with the **Advanced Features Table**.
+- **Ancillary**: This page contains the **Ancillary Decoder**, **Line Conflict**, and **Option Table**.
 - **Video**: This page contains the **Video Table** and **Video Output Table** as well as subpages for the video **format** and video **overlay**.
-- **Gen Lock**: This page contains the **Gen Lock**, **HD** Gen Lock and **SD** Gen Lock Tables.
-- **Serial Digital Interface**: This page contains the **HD SDI**, **SD SDI** and **Audio SDI Tables**.
-- **Service Information**: This page contains the **SI Program** and **SI Transport Stream** **Tables** as well as subpages for **SI Video**, **SI Audio** and **SI Subtitle**.
-- **Service**: This page contains the **Selected Services** **Tables** as well as subpages for **Service Lock** **Tables** and **Service Audio** **Tables**.
+- **Gen Lock**: This page contains the **Gen Lock**, **HD** Gen Lock, and **SD** Gen Lock Tables.
+- **Serial Digital Interface**: This page contains the **HD SDI**, **SD SDI**, and **Audio SDI Tables**.
+- **Service Information**: This page contains the **SI Program** and **SI Transport Stream Tables** as well as subpages for **SI Video**, **SI Audio**, and **SI Subtitle**.
+- **Service**: This page contains the **Selected Services Tables** as well as subpages for **Service Lock Tables** and **Service Audio Tables**.
 
 ### Ateme DR2100 Configuration Pages
 
@@ -83,7 +83,7 @@ This section contains the following pages:
 - **Alarm**: This page contains the **Alarm Table** with the **name** of the alarm and its **current state**.
 - **Event Log**: This page contains the **Event Log Table** with the events and their **transition** and **severity**.
 - **System Log**: The System Log Table displays all the **IP addresses that receive system log data**.
-- **System Events**: This page contains the **System Events**, System Events **Log Config**, **Trap Config** and **Relay Config** **Tables**.
+- **System Events**: This page contains the **System Events**, System Events **Log Config**, **Trap Config**, and **Relay Config Tables**.
 - **System Conditions**: This page contains the **Conditions Table** which determines when alarms, relay, traps and logs are triggered. All of these can be manually enabled/disabled via the subpages.
 
 ### Web Interface Page
