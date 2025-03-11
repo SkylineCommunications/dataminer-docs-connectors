@@ -2322,6 +2322,11 @@
     topicUid: Connector_help_Conteg_RAMOS_Mini
 - name: Control By Web
   items:
+  - name: Control By Web X-600M
+    topicUid: Connector_help_Control_By_Web_X-600M
+    items:
+    - name: Connector name Technical
+      topicUid: Connector_help_Control_By_Web_X-600M_Technical
   - name: Control By Web X332
     topicUid: Connector_help_Control_By_Web_X332
   - name: Control By Web X400
@@ -2737,6 +2742,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA219-733
   - name: Double D Electronics DDA219-C333E
     topicUid: Connector_help_Double_D_Electronics_DDA219-C333E
+  - name: Double D Electronics DDA219-L3333
+    topicUid: Connector_help_Double_D_Electronics_DDA219-L3333 
+    items:
+      - name: Double D Electronics DDA219-L3333 Technical
+        topicUid: Connector_help_Double_D_Electronics_DDA219-L3333_Technical
   - name: Double D Electronics DDA266
     topicUid: Connector_help_Double_D_Electronics_DDA266
   - name: Double D Electronics DDA276
@@ -3603,6 +3613,8 @@
     topicUid: Connector_help_Evertz_Magnum_SDVN_Router
   - name: Evertz Mediator Nexus
     topicUid: Connector_help_Evertz_Mediator_Nexus
+  - name: Evertz MUXIP-10GE-v52-2RU
+    topicUid: Connector_help_Evertz_MUXIP-10GE-v52-2RU
   - name: Evertz MViP
     topicUid: Connector_help_Evertz_MViP
   - name: Evertz MVIP II
@@ -4257,6 +4269,9 @@
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
   - name: Grass Valley AMPP Manager
     topicUid: Connector_help_Grass_Valley_AMPP_Manager
+    items:
+      - name: Grass Valley AMPP Manager Technical
+        topicUid: Connector_help_Grass_Valley_AMPP_Manager_Technical
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
@@ -7123,6 +7138,11 @@
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
 - name: Ramiaudio
   items:
+  - name: Ramiaudio AUF600
+    topicUid: Connector_help_Ramiaudio_AUF600
+    items:
+    - name: Ramiaudio AUF600 Technical
+      topicUid: Connector_help_Ramiaudio_AUF600_Technical
   - name: Ramiaudio Switch CS404
     topicUid: Connector_help_Ramiaudio_Switch_CS404
   - name: Ramiaudio Switch CSS600
