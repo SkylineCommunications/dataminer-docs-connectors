@@ -4,29 +4,11 @@ uid: Connector_help_Nokia_Q1_Agent_Network_Element
 
 # Nokia Q1 Agent Network Element
 
-The Nokia node devices of the **Nokia DCNA** system that managed by the **Nokia Q1 Agent**.
-
-This type of Nokia Q1 Agent DVE is a virtual representation of a managed node device.
-
 ## About
 
-### Version Info
+This connector is used to monitor Nokia node devices of the **Nokia DCNA** system managed by the **Nokia Q1 Agent**.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+It creates a Nokia Q1 Agent DVE as a virtual representation of a managed node device.
 
 ## Configuration
 
@@ -38,11 +20,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-The exported element is defined in the **Device Management** table on the *Device Management page of the main element.
-
-### Redundancy
-
-There is no redundancy defined.
+The exported element is defined in the **Device Management** table on the Device Management page of the main element.
 
 ### Web Interface
 
@@ -50,4 +28,6 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The element created with this connector consists of a general page which display the general information of the node edvice and one page with an alarm table. This table can be used to monitor the state of the node device.
+On the General page of the element created with this connector, you can find general information about the node device.
+
+The element also has a page with an alarm table, which you can use to monitor the state of the node device.
