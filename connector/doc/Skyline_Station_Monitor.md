@@ -1,18 +1,16 @@
 ---
-uid: Connector_help_Skyline_Station_Montior
+uid: Connector_help_Skyline_Station_Monitor
 ---
 
 # Skyline Station Monitor
 
-The **Skyline Station Montior** is a multifunction web-enabled industrial I/O controller. It performs control, logic, and monitoring functions for other ControlByWeb modules and allows users to design custom web-based applications.
+The **Skyline Station Montior** is a real-time monitoring and automation driver for collecting system data, tracking parameters, and executing custom actions with precision.
 
 ## Key Features
-
-- **Modular I/O expansion**: Supports a wide range of I/O modules for flexible system configuration.
-- **Web-based interface**: Built-in web server for remote monitoring and control without additional software.
-- **Advanced logic & scripting**: Create custom logic using an intuitive interface with scripting capabilities.
-- **Data logging & alerts**: Logs data and sends notifications via email, SMS, or SNMP traps.
-- **Secure access**: 
+- Monitors standard system parameters at regular intervals.
+- Retrieves custom values from specified elements and parameters.
+- Ability to define custom polling frequency and view results and alarm states.
+- Provides historical polling timestamps for analysis.
 
 ## Use Cases
 
@@ -33,4 +31,4 @@ The **Skyline Station Montior** is a multifunction web-enabled industrial I/O co
 **Benefit**: Enhances efficiency, reduces manual intervention, and minimizes the risk of human error.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Station_Montior_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Station_Monitor_Technical).
