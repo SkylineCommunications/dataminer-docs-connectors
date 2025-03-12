@@ -4,7 +4,8 @@ uid: Connector_help_Skyline_Station_Monitor_Technical
 
 # Skyline Station Monitor
 
-This connector retrieves the state and performs minor control functions of Control By Web modules attached to the X-600M.
+The Skyline Station Monitor connection is designed to facilitate real-time data collection, parameter tracking, and automated actions for generic Apps for quick deployment of new stations.
+
 ## Configuration
 
 ### Connections
