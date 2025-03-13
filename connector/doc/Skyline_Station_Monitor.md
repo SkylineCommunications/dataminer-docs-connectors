@@ -4,31 +4,39 @@ uid: Connector_help_Skyline_Station_Monitor
 
 # Skyline Station Monitor
 
-The **Skyline Station Montior** is a real-time monitoring and automation driver for collecting system data, tracking parameters, and executing custom actions with precision.
+The **Skyline Station Monitor** standardizes and simplifies the collection of data for monitoring transmitters and related equipment (tower lights, generators, transfer switches, etc.) across multiple stations/transmission sites. Utilizing real-time monitoring and automation, this connector serves as a mediation layer, gathering data from various collectors and storing it according to predefined parameters. This ensures consistent reporting and display in LCAs and dashboards. Additionally, the collector supports the collection of non-standard (custom) parameters for stations that need to track data from elements that users might not have permission to access. It also provides the capability to define custom actions.
 
 ## Key Features
-- Monitors standard system parameters at regular intervals.
-- Retrieves custom values from specified elements and parameters.
-- Ability to define custom polling frequency and view results and alarm states.
+
+- Mediates common transmission parameters at regular intervals into standard parameters allowing for standardized reporting.
+- Can be extended to monitor additional, custom values from specified elements for data aggregation beyond the standard complement of included parameters.
+- Ability to define custom polling frequency of standard and custom parameters.
+- Polls both value and alarm state from the source element to allow for passthrough of existing alarm templates.
 - Provides historical polling timestamps for analysis.
+- Can help isolate users from source elements by only allowing access to the Station Monitor element.
+- FCC Licensed Power calculations allow stations to monitor their compliance with transmission output power limitations and provide warnings if the power output exceeds FCC tolerances.
 
 ## Use Cases
 
-### Remote Industrial Monitoring
+### Standardized Monitoring of Multiple Transmission Sites
 
-**Challenge**: Industrial sites require continuous monitoring of environmental parameters and equipment status across multiple locations.
+**Challenge**: Unless each transmission site has the exact same complement of equipment, groups that need to monitor multiple transmission sites find that each site needs to be treated as a one-off. This requires setting up custom alarming, custom trending, custom reporting, and custom dashboards for each site, which can be time-consuming and costly at scale.
 
-**Solution**: The X-600M allows remote access to sensor data and system status via its web interface, eliminating the need for on-site personnel.
+**Solution**: The **Skyline Station Monitor** provides a way to collect commonly used monitoring and reporting values into a standard footprint.
 
-**Benefit**: Reduces operational costs, improves response time to system failures, and ensures compliance with industry regulations.
+**Benefit**: There are multiple benefits to this approach that can greatly reduce the admin overhead of managing a large number of sites. Some of these benefits include:
 
-### Automated Equipment Control
+- Standardized Alarm and Trend templates.
+- The ability to reuse Reports and Low Code apps across sites.
+- Provide users access to targeted information about a site without having to give them full access to the source elements.
 
-**Challenge**: Industrial facilities need an automated way to control pumps, valves, and other machinery based on real-time sensor data.
+### FCC Reporting Requirements
 
-**Solution**: Using built-in logic and scripting, the X-600M automates equipment operations based on predefined conditions.
+**Challenge**: Stations have an obligation to report certain metrics to the FCC related to their transmission towers, including power outputs and tower light status.
 
-**Benefit**: Enhances efficiency, reduces manual intervention, and minimizes the risk of human error.
+**Solution**: By using the **Skyline Station Monitor**, this information is easy to collect in a standardized way.
+
+**Benefit**: By standardizing the collection, monitoring, and trending of key metrics required by the FCC, report generation is a breeze and easy to implement across your entire organization, reducing time to deploy and the costs to manage changes needed down the road.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Station_Monitor_Technical).
