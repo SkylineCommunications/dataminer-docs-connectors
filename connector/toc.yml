@@ -9056,6 +9056,11 @@
     topicUid: Connector_help_Telenor_EPM_Collector
   - name: Telenor EPM MAM Consumer
     topicUid: Connector_help_Telenor_EPM_MAM_Consumer
+  - name: Telenor EPM MAM Offloader
+    topicUid: Connector_help_Telenor_EPM_MAM_Offloader
+    items:
+      - name: Telenor EPM MAM Offloader Technical
+        topicUid: Connector_help_Telenor_EPM_MAM_Offloader_Technical
   - name: Telenor EPM Manager
     topicUid: Connector_help_Telenor_EPM_Manager
   - name: Telenor EPM Provisioning Manager
