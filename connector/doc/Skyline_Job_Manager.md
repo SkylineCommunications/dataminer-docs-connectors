@@ -8,15 +8,15 @@ This connector exposes a REST API that can be used to manage jobs and distribute
 
 A DataMiner job is a domain-specific description to set up SRM services. DataMiner Domain Orchestrators will be able to convert a DataMiner job into one or multiple DataMiner bookings. Whereas a job is an administrative description of a service that needs to be set up, a DataMiner booking is a detailed definition of the service, the configuration profiles and parameters, the exact resources to be used, the detailed schedule, etc.
 
-The purpose of this connector is to manage and store a collection of jobs. Jobs can be ingested via a REST API that is hosted by a Job Manager element. When possible, jobs are distributed to one or multiple network domains (DataMiner Virtual Platforms), which then convert the jobs into full service bookings. Typically, Automation scripts are used to perform the complex operation of converting a job into a booking.
-
+The purpose of this connector is to manage and store a collection of jobs. Jobs can be ingested via a REST API that is hosted by a Job Manager element. When possible, jobs are distributed to one or multiple network domains (virtual platforms), which then convert the jobs into full service bookings. Typically, Automation scripts are used to perform the complex operation of converting a job into a booking.
 
 ![Visual Overview](~/connector/images/Skyline_Job_Manager_Visual_Overview.png)
 
 ## About
 
 ### Key Features
-- **REST API**: Exposes a REST API that allows users and third-party applications to push and retrieve DataMiner jobs to the DataMiner system.
+
+- **REST API**: Exposes a REST API that allows users and third-party applications to push and retrieve DataMiner jobs to/from the DataMiner System.
 - **Domain-specific**: Enables users to specify jobs per domain.
 - **Multi-service**: Allows a job to be divided into multiple SRM services.
 
@@ -31,8 +31,7 @@ The purpose of this connector is to manage and store a collection of jobs. Jobs 
 ### Prerequisites
 
 - **DataMiner version 10.3 or higher** is required for compatibility with the Skyline Job Manager connector.
-
-- **DataMiner SRM package** is required for converting a DataMiner Job to a SRM Service.
+- The **DataMiner SRM package** is required for converting a DataMiner job to an SRM service.
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector for Skyline Job Manager, refer to the [Technical help page](xref:Connector_help_Skyline_Job_Manager_Technical).
+> For in-depth information on configuring and using the Skyline Job Manager connector, refer to the [Technical help page](xref:Connector_help_Skyline_Job_Manager_Technical).

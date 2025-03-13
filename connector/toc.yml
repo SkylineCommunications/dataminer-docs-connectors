@@ -8120,6 +8120,9 @@
     topicUid: Connector_help_Skyline_IP_Network_Manager
   - name: Skyline Job Manager
     topicUid: Connector_help_Skyline_Job_Manager
+    items:
+      - name: Skyline Job Manager Technical
+        topicUid: Connector_help_Skyline_Job_Manager_Technical
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
   - name: Skyline Logical Layer
