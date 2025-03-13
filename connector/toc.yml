@@ -7469,9 +7469,9 @@
   - name: Ross Video Matrix
     topicUid: Connector_help_Ross_Video_Matrix
   - name: Ross Video MC1
-    topicUid: Connector_help_Evertz_Ross_Video_MC1
+    topicUid: Connector_help_Ross_Video_MC1
     items:
-      - name: Ross_Video_MC1_Technical
+      - name: Ross Video MC1 Technical
         topicUid: Connector_help_Ross_Video_MC1_Technical
   - name: Ross Video NEWT-HDMI-RX
     topicUid: Connector_help_Ross_Video_NEWT-HDMI-RX

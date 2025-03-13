@@ -18,39 +18,17 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *5253*)]
-  - **Bus address**: [The **Slot Number** for the card which we are connecting to.]
-
-
-### Initialization
-
-At the moment of creating the element, the user needs to configure the Bus Address by putting the slot number of the card that we are going to request the information from.
-
-### Redundancy
-
-There is no redundancy defined.
+  - **IP address/host**: The polling IP or URL of the destination.
+  - **IP port**: The IP port of the destination (default: *5253*).
+  - **Bus address**: The **slot number** of the card you want to connect to.
 
 ## How to use
 
-### General Page
+The element created with this connector has the following data pages:
 
-You can find parameters related to **Product**, **Hardware** and **Network**
-
-### Program Fail-Over
-Contains parameters related with the **Auto Return** and **Mode**.
-
-### Video
-The **Inputs Status** table is found here with information for all the inputs and the formart of the input.
-
-
-### Audio Page
-The **AES Video Status** table with information about Channel A and B is found here for each EAS Input.
-
-### GPI/Tally
-For each tally in the system information such as the **Number** and **Function** is found here on this table.
-
-### On Air Control
-Few stand-alone parameters like **EAS Status**, **Program Bus** and **Audio Level**. You will also find the **Keyers** table with the **Status** and **Description** for each Keyer.
-
-## Notes
+- **General**: Contains **Product**, **Hardware**, and **Network** parameters.
+- **Program Fail-Over**: Contains parameters related to the **Auto Return** and **Mode**.
+- **Video**: Contains the **Inputs Status** table, with information about all the inputs and the format of the inputs.
+- **Audio**: Contains the **AES Video Status** table, with information about Channel A and B for each EAS input.
+- **GPI/Tally**: Contains a table with information for each tally in the system, such as the **Number** and **Function**.
+- **On Air Control**: Contains several standalone parameters like **EAS Status**, **Program Bus**, and **Audio Level**, as well as the **Keyers** table; with the **Status** and **Description** for each Keyer.
