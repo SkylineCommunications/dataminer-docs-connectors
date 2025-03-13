@@ -4503,6 +4503,13 @@
     topicUid: Connector_help_Harris_VEA6800+
   - name: Harris X50
     topicUid: Connector_help_Harris_X50
+- name: Hessischer Rundfunk
+  items:
+  - name: Hessischer Rundfunk ABR Audio Monitoring Service
+    topicUid: Connector_help_Hessischer_Rundfunk_ABR_Audio_Monitoring_Service
+    items:
+    - name: Hessischer Rundfunk ABR Audio Monitoring Service Technical
+      topicUid: Connector_help_Hessischer_Rundfunk_ABR_Audio_Monitoring_Service_Technical
 - name: Hewtech
   items:
   - name: Hewtech Hirakawa HS-600MA
