@@ -6,7 +6,7 @@ uid: Connector_help_Telenor_EPM_MAM_Offloader
 
 ## About
 
-The **Telenor EPM MAM Offloader** connector is used to collect messages forwarded by the **Telenor EPM MAM Consumer** elements and push them in an OpenSearch database.
+With the **Telenor EPM MAM Offloader** connector, the messages forwarded by **Telenor EPM MAM Consumer** elements can be collected and pushed into an OpenSearch database.
 
 ## Key Features
 
