@@ -12,10 +12,10 @@ The connector is used to control and monitor the Harmonic Proview PVR8000.
 
 ### Version Info
 
-| **Range**     | **Description**                                                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                 | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Combine DVB-S2 port receiver and carrier parameters into a table | Yes                 | Yes                     |
+| Range              | Description                                                      | DCF Integration | Cassandra Compliant |
+|--------------------|------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                 | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Combine DVB-S2 port receiver and carrier parameters into a table | Yes             | Yes                 |
 
 ### Product Info
 
@@ -40,7 +40,7 @@ HTTP CONNECTION:
 
 ### Inputs page
 
-This page displays the primary and backup input information. This page also contains the **DVB-S/S2** settings and the DVB-S/S2 Ports Table, the **GbE Socket Input** **Table**, the **LNB Port Table** and the **ASI** **Table**.
+This page displays the primary and backup input information. This page also contains the **DVB-S/S2** settings and the DVB-S/S2 Ports Table, the **GbE Socket Input Table**, the **LNB Port Table** and the **ASI Table**.
 
 ### Services page
 

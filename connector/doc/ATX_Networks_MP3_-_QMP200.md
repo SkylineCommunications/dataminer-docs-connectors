@@ -14,7 +14,7 @@ The connector is generated automatically by the connector **ATX Networks MP3**.
 
 ### Version Info
 
-| Range     | Description     | DCF Integration     | Cassandra Complaint     |
+| Range     | Description     | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------|---------------------|-------------------------|
 | 2.0.0.x          | DVE creation    | No                  | Yes                     |
 
@@ -34,7 +34,7 @@ This connector is used by DVEs that are **automatically generated** when DVE cre
 
 ### General
 
-This page displays general parameters, such as the **Description**, **Hardware** and **Firmware** **Revision**, **Serial** **Number**, **Manufacturer**, **Model**, **Alias** and **Asset ID** for the QMP200 module.
+This page displays general parameters, such as the **Description**, **Hardware** and **Firmware Revision**, **Serial Number**, **Manufacturer**, **Model**, **Alias**, and **Asset ID** for the QMP200 module.
 
 ### Properties
 

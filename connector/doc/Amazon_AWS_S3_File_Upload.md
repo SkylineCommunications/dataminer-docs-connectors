@@ -50,10 +50,6 @@ After creating a new element, you need to configure the following parameters:
 - **Source Path**: The directory where the source files can be found.
 - **Processing State**: Enable this parameter to start uploading the files.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The purpose of this connector is to be able to upload files (specifically DataMiner backup files) towards the Amazon S3 cloud service using a DataMiner element.

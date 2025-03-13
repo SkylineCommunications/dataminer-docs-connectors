@@ -14,10 +14,10 @@ Note: For version 1.1.0.x, there is no DVE creation. This protocol version commu
 
 ### Version Info
 
-| **Range** | **Description**     |
-|------------------|---------------------|
-| 1.0.0.x          | Initial version     |
-| 1.1.0.x          | HTTPS communication |
+| Range   | Description         |
+|---------|---------------------|
+| 1.0.0.x | Initial version     |
+| 1.1.0.x | HTTPS communication |
 
 ### Product Info
 

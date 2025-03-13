@@ -19,12 +19,13 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 
 ### Version Info
 
-| Range   | Description                                        | DCF Integration | Cassandra Compliant |
-|---------|----------------------------------------------------|-----------------|---------------------|
-| 1.0.0.x | Initial version                                    | No              | Yes                 |
-| 1.0.1.x | Adaptation to new SoW                              | No              | Yes                 |
-| 1.0.2.x | Primary key is based on rowkey from change request | No              | Yes                 |
-| 2.0.0.x | EPM compatible                                     | No              | Yes                 |
+| Range   | Description                                             | DCF Integration | Cassandra Compliant |
+|---------|---------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version                                         | No              | Yes                 |
+| 1.0.1.x | Adaptation to new SoW                                   | No              | Yes                 |
+| 1.0.2.x | Primary key is based on rowkey from change request      | No              | Yes                 |
+| 1.0.3.x | Connector reworked to fix traps and DVEs implementation | No              | Yes                 |
+| 2.0.0.x | EPM compatible                                          | No              | Yes                 |
 
 ### Product Info
 
@@ -33,6 +34,7 @@ In addition, the connector offers several possibilities for **alarm monitoring**
 | 1.0.0.x | 6.10                       |
 | 1.0.1.x | 6.10                       |
 | 1.0.2.x |                            |
+| 1.0.3.x |                            |
 | 2.0.0.x | 6.10                       |
 
 ### Exported connectors - Range 1.0.2.x
@@ -176,6 +178,19 @@ If a provision file is imported and a mismatch is detected between one of the en
 On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e. within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
 
 The **primary key** of the traps table is obtained by concatenating the **Service ID** and **Event Name** column parameters.
+
+## Usage (1.0.3.1)
+
+### General Page
+
+With the context menu in the Device Elements Table, you can add devices to be monitored.
+
+> [!NOTE]
+> For the DVE configuration to be set, you must apply it either by selecting **Apply All** in the context menu or by clicking the **Apply All** button.
+
+### Configuration Page
+
+The Source IP needs to be configured manually. This IP address is the IP of the host DMA. This is required for sending traps to the Aviat Networks Provision device. It informs the device of which IP to reply to.
 
 ## Usage (2.0.0.X)
 

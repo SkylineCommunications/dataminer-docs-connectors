@@ -54,10 +54,6 @@ A configuration file must be imported with the node parameters to be polled. The
 - C:\Skyline DataMiner\Documents\Elements\XERT_III_RTU_GESTEL.xlsx
 - C:\Skyline DataMiner\Documents\Protocol\XERT_III_RTU_GESTEL.xlsx
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 - **General**: This page shows basic information about the Remote Terminal Unit (RTU):
@@ -75,7 +71,3 @@ There is no redundancy defined.
 - **Configuration**: The Metadata table displays the RTU's configuration after importing the file.
 - **Digital I/O**: Allows the user to monitor input and output digital signals.
 - **Analog I/O**: Allows the user to monitor input and output analog signals.
-
-### Web Interface
-
-No web interface is available.

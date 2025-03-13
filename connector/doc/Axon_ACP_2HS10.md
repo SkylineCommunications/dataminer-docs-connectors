@@ -62,8 +62,8 @@ The element has the following pages:
 
 - **General**: Displays information about the identity of the card and other general information: **Card Name**, **Card Description**, **SW Revision**, **HW Revision**, etc.
 - **I/O:** Contains the input and output settings and status information.
-- **Down** **Converter A**: Contains down conversion setting parameters of Channel A.
-- **Down** **Converter B**: Contains down conversion setting parameters of Channel B.
+- **Down Converter A**: Contains down conversion setting parameters of Channel A.
+- **Down Converter B**: Contains down conversion setting parameters of Channel B.
 - **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
 
 > [!NOTE]
@@ -81,7 +81,7 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 Physical fixed interfaces:
 
-- **SDI Input** **A:** A single fixed interface of type **in**
+- **SDI Input A**: A single fixed interface of type **in**
 - **SDI Input B**: A single fixed interface of type **in**.
 - **SDI HD/SD Output A**: A single fixed interface of type **out**.
 - **SDI Output A**: A single fixed interface of type **out**.

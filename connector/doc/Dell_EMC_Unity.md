@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 The element communicates with the data source using the **Unisphere Management REST API**. In order enable this communication, you need to fill in the **HTTP Username** and **HTTP Password** parameters on the **Communication** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

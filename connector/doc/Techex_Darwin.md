@@ -12,10 +12,11 @@ The microservice-based tx darwin platform is used for live media processing, tra
 
 ### Version Info
 
-| Range              | Features                   | Based on | System Impact |
-|--------------------|----------------------------|----------|---------------|
-| 1.0.0.x            | Initial version.           | -        | -             |
-| 1.0.1.x [SLC Main] | Update for firmware 1.4.2. | 1.0.0.2  | -             |
+| Range              | Features                     | Based on | System Impact                      |
+|--------------------|------------------------------|----------|------------------------------------|
+| 1.0.0.x            | Initial version.             | -        | -                                  |
+| 1.0.1.x            | Update for firmware 1.4.2.   | 1.0.0.2  | -                                  |
+| 1.0.2.x [SLC Main] | Kafka consumption decoupled. | 1.0.0.2  | Generic Kafka Consumer dependency. |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ The microservice-based tx darwin platform is used for live media processing, tra
 |---------|--------------------|
 | 1.0.0.x | 1.4.0              |
 | 1.0.1.x | 1.4.2              |
+| 1.0.2.x | 1.4.2              |
 
 ### System Info
 
@@ -49,22 +51,13 @@ HTTP CONNECTION:
 
 For the REST API to work, the **Username** and **Password** need to be configured on the **General** page.
 
-In addition, for the connector to start receiving Kafka messages, the following parameters need to be configured:
-
-- **Bootstrap Server**
-- **Port**
-- **Client ID** (optional)
-- **Group ID** (optional)
-
-Finally, an entry in the **Kafka Topic Subscriptions** needs to be created specifying the topic name.
-
 ## How to Use
 
 To poll REST API data, the username and password need to be filled in. You can then control the commands that are sent and their frequency using the **Poll Manager Table**.
 
 To subscribe to start receiving Kafka messages after configuring the parameters above, click **Consume** to start the connection. The **Connection** parameter on the same page will show if this operation worked.
 
-For Kafka messages to work, the **Modules** command in the **Poll Manager Table** needs to be enabled. Once this command has been sent at least once, data will be filled in in the **Schema Modules Table** on the **General** page, and you will be able to control the processing and frequency for each module from there.
+For Kafka messages to work, an element running the **Generic Kafka Consumer** must be running and sending InterApp messages to the Darwin element. Once the **Modules** command in the **Poll Manager Table** is enabled, data will be filled in in the **Schema Modules Table** on the **General** page, and you will be able to control the processing and frequency for each module from there.
 
 ### Layout
 

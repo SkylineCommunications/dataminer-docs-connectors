@@ -34,14 +34,6 @@ This connector is used to run an application. However, all logic for the applica
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 In order to work with this connector, you need specific Visio drawings and Automation scripts. The Visio drawing contains directions on how to use the connector.

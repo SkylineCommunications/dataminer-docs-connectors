@@ -62,14 +62,6 @@ SERIAL CONNECTION:
   - **IP address**: The polling IP of the destination, containing four digits.
   - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:

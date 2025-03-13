@@ -16,10 +16,10 @@ To construct the program guide, the information is extracted from XML files that
 
 ### 1.1 Ranges of the connector
 
-| **Range**     | **Description**                            | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                            | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Recreation of element Impact: loss of data | No                  | Yes                     |
+| Range              | Description                                | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                            | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Recreation of element Impact: loss of data | No              | Yes                 |
 
 ## 2. Installation and Configuration
 
@@ -46,6 +46,7 @@ This section of the page focuses on establishing a connection with the server wh
 The following settings must be configured:
 
 - **Server Address:** The IP address or URL of the directory on the server where the EPG XML files are stored.
+
   Note: For FTP, "ftp://" must be added to the beginning of the address. For SMB, the address must start with "\\". For example:
 
 - <ftp://11.12.13.14/path/to/epg/files>
@@ -68,8 +69,11 @@ This section focuses on the connection with the Stagis server. This server conta
 The following setting must be configured:
 
 - **Stagis IMI FTP Address**: The IP address or URL of the directory on the server where the Stagis IMI XML files are stored. For example: <ftp://11.12.13.14/path/to/stagis/imi/files>.
+
 - **Stagis IMI Backup Address**: A second location where the Stagis files can be found. The connector will automatically switch to this server when it is unable to access the main server.
+
 - **Stagis Status**: The connection status with the Stagis server. If the connector is using the backup server, the status will be **Backup**.
+
 - **Stagis IMI Forward Limit** and **Stagis IMI Backward Limit**: Only programs that have a start and end time within this time window will be updated with the Stagis IMI.
 
 The **Stagis Status** indicates if there are connection issues with the server. Note that the connector does not keep the connection alive, so a healthy connection will often switch between *Ok* and *Connecting*. When the main server is not available, the backup server will be used. In this case, the Stagis status will display **Backup**.
@@ -92,12 +96,19 @@ This section focuses on how the EPG/TVA XML files are processed.
 The following settings can be configured:
 
 - **Enable Asset Polling**: Enables or disables the polling for new XML files on the EPG/TVA server.
+
   If this is disabled, no new programs will be added and the timeline with existing programs will not receive updates.
+
 - **Amount of Files to Process at Once**: The maximum number of files that will be downloaded before they are processed.
+
 - **Gap Resolution**: Determines how big the distance between two programs must be before it is recognized as a gap.
+
   If the difference between the end of a program and the beginning of the next program is higher than or equal to this parameter, a gap will be detected. If the resolution is 0, the start time of the new program and the end time of the finished program must be exactly the same.
+
 - **Keep locations for**: Determines for how many days entries in the **Program Location Table** are kept in the database.
+
 - **EPG Backward Limit** and **EPG Forward Limit**: These parameters determine the time range of the EPG timeline.
+
 - **Status**: Indicates what the connector is currently is doing. Examples of Status values can be "Idle", "Processing Files", "Adding Resources", "Deleting Content", etc.
 
 The **FTP File Index** contains the name of the last processed file.
@@ -123,18 +134,31 @@ The **TVA Files Issues** table lists all the files that were not successfully pr
 On this page, the **Service Information Table** lists all the services/channels.
 
 - **Service ID**: Numeric identifier of the channel.
+
 - **Name**: Name of the channel.
+
 - **Broadcast Setting**: Allows you to enter the names of programs, in order to mark these as **not broadcasting**. Wildcards can be used.
+
 - **Broadcast Start Time**: The beginning of the broadcast window.
+
 - **Broadcast Duration**: The duration of the broadcast window.
+
 - **Update**: Reports if there are pending updates for the timeline. The connector will automatically do these updates.
+
 - **Monitoring**: Enables or disables the monitoring of the channel. Channels that are monitored will **appear in the timeline** and will also be **checked for gaps**.
+
 - **Stagis IMI Verification**: Enables or disables the check for missing Stagis IMI on the channel.
+
 - **Creation Delta**: This is the smallest or most negative **program creation delta** value (see explanation **Program Location Table**).
+
 - **Delivered Delta**: This is the smallest or most negative **program delivered delta** value (see explanation **Program Location Table**).
+
 - **Delta Threshold**: Determines when a program is considered to be created or delivered late.
+
   A program is **considered late** when the **Creation Delta** is **larger than** the **Delta Threshold**.
+
 - **Number of Late Creation**: This is the number of programs that were create late according to the **Delta Threshold**.
+
 - **Number of Late Delivery**: This is the number of programs that were delivered late according to the **Delta Threshold**.
 
 The **Update Bookings** button forces the connector to push all program changes of channels that require an update to the timeline.
@@ -160,21 +184,37 @@ On this page, the **Overlap Table** shows which program updates have caused a ga
 This page contains the **Program Location Table**, which lists all the programs that are currently in the connector.
 
 - **Location ID**: Identifier of the program. This identifier is created from the Redbee CRID and IMI.
+
 - **Service ID**: Numeric identifier of the channel.
+
 - **Name**: Name of the program.
+
 - **Start Time UTC**: Start time of the program in UTC.
+
 - **End Time UTC**: End time of the program in UTC.
+
 - **Start Time Local**: Start time of the program in local time.
+
 - **End Time Local**: End time of the program in local time.
+
 - **Duration**: Indicates how long the program will be playing.
+
 - **Blackout**: Indicates whether the program is blacked out.
+
 - **Broadcasting Status**: Indicates whether the program will be or was broadcast.
+
 - **GUID**: Identifier of the program on the timeline. If the value equals *N/A*, then the program is not listed on the timeline.
+
 - **Stagis IMI**: The Stagis IMI identifier of the program.
+
 - **Creation Delta**: The time **difference between** the time that the entry was **first created** and the **start time** of the program.
+
   Negative values indicate that it was created before the start of the program. Positive values indicate that it was created after the program started.
+
 - **Delivered Delta**: The time **difference between** the time the entry was **last updated** and the **start time** of the program.
+
   Negative values indicate that it was last updated before the start of the program. Positive values indicate that it was last updated after the program started.
+
 - **Registered**: The timestamp when the program was processed by the connector.
 
 This table can contain multiple entries for the same TV program/episode. This is because the program can air on multiple channels and at multiple times.
@@ -213,4 +253,4 @@ This page is used in order to reset parts of the connector. It is also used to c
 
 The **Reload All EPG Files** button will clear all tables except for the **Service Information Table** and clear the timeline. The data will be rebuilt immediately using the files that are available on the server, but **this can take a while**. This button must be used with caution.
 
-The **Reload All Reservations** button will only clear the timeline. It will be rebuilt immediately using the data stored in the **Program Location**, **Program Information** and **Gap** tables.
+The **Reload All Reservations** button will only clear the timeline. It will be rebuilt immediately using the data stored in the **Program Location**, **Program Information**, and **Gap** tables.

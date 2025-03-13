@@ -44,14 +44,6 @@ SNMP Settings:
 - **Get community string**: Default: *public-community.*
 - **Set community string**: Default: *private-community.*
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

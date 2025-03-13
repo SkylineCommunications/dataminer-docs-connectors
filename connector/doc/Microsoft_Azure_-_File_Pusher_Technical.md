@@ -2,7 +2,7 @@
 uid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
 ---
 
-# Microsoft Azure - Storage Accounts
+# Microsoft Azure - File Pusher
 
 The Azure File Pusher connector is used to automate file synchronization from local storage to Azure Blob Storage.
 
@@ -36,6 +36,14 @@ On the **General** page, the authentication parameters and storage URL should be
 - **Blob Storage URL**: The endpoint used to access resources within an Azure Storage account (e.g. `https://dataminer.blob.core.windows.net`).
 
 The **Test Authentication** button can be used to test whether the provided credentials can retrieve the valid token used to access the blob storage. The **Authentication Test** parameter will indicate whether the authentication test was successful (*OK*) or unsuccessful (*Error*).
+
+### Configuration Page
+
+To ensure that file uploads do not get stuck indefinitely, a safety measure has been implemented. On the Configuration page, you can set parameters that will automatically terminate an upload if certain conditions are met.
+
+Specifically, you can configure the system to terminate uploads after a specified number of **failures** or after a certain **duration (in minutes)**.
+
+This helps maintain the efficiency and reliability of the upload process by preventing prolonged or failed uploads from consuming resources unnecessarily.
 
 ### File Paths Page
 

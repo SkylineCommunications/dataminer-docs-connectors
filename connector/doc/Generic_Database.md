@@ -10,11 +10,11 @@ This is a database connector that is used to make queries on demand. It retrieve
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                                                                                                                                                       | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Database connection.                                                                                                                                                                                                                                                  | No                  | Yes                     |
-| 2.0.0.x              | Database connection supports viewing an array result as a table.                                                                                                                                                                                                      | No                  | Yes                     |
-| 2.0.1.x [SLC Main]   | This range supports numeric results for MySQL and ODBC database types. It also adds an option to specify the MySQL SSL Mode and support for adding results of multiple queries to Table Result and Table Result 2 instead of always overriding the last query result. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Database connection. | No | Yes |
+| 2.0.0.x | Database connection supports viewing an array result as a table. | No | Yes |
+| 2.0.1.x [SLC Main] | This range supports numeric results for MySQL and ODBC database types. It also adds an option to specify the MySQL SSL Mode and support for adding results of multiple queries to Table Result and Table Result 2 instead of always overriding the last query result. | No | Yes |
 
 ## Configuration
 
