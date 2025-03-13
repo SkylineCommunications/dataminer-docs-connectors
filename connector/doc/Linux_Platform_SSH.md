@@ -4,6 +4,9 @@ uid: Connector_help_Linux_Platform_SSH
 
 # Linux Platform SSH
 
+>[!IMPORTANT]
+>This connector is deprecated. [Linux Platform](https://catalog.dataminer.services/details/33a5c495-60c9-4409-aecc-91f1876dacf1) should be used instead.
+
 This connector can be used to monitor Linux Platforms with **SSH**.
 
 ## About
