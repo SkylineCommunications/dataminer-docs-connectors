@@ -17,7 +17,7 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 | 1.0.2.x            | Encoder and Gateway IP Output table PK changed. Layout adapted.                                | 1.0.1.10 | -             |
 | 1.1.0.x            | API structure changed to match new software version device.                                    | 1.0.2.3  | -             |
 | 1.1.1.x            | API structure changed to match new software version device.                                    | 1.1.0.4  | -             |
-| 1.1.2.x [SLC Main] | Added addtional Gatewat Channel and Network parameters.                                        | 1.1.1.7  | -             |
+| 1.1.2.x [SLC Main] | Added additional Gateway Channel and Network parameters.                                        | 1.1.1.7  | -             |
 
 ### Product Info
 
