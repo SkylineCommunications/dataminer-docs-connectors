@@ -4277,6 +4277,11 @@
     items:
     - name: Grass Valley AMPP SRT Input Application Technical
       topicUid: Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical
+  - name: Grass Valley AMPP Virtual Crosspoint Application
+    topicUid: Connector_help_Grass_Valley_AMPP_Virtual_Crosspoint_Application
+    items:
+    - name: Grass Valley AMPP Virtual Crosspoint Application Technical
+      topicUid: Connector_help_Grass_Valley_AMPP_Virtual_Crosspoint_Application_Technical
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
