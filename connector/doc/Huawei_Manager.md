@@ -63,8 +63,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 From version 1.0.3.x onwards, SSH is used to retrieve additional parameters.
 
 - **SSH Username and Password**: Required for authentication.
-- **SSH File Transfer**: Uses SFTP protocol.
-- **PTP Configuration**: Accessible via SSH commands.
+- **SSH File Transfer**: Uses SFTP protocol to overwrite files specified in the ***Fimename To Copy*** parameter on the SSH File Server page.
 
 ## How to Use
 
