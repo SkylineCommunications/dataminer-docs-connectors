@@ -8232,6 +8232,8 @@
     topicUid: Connector_help_Skyline_Synthetic_Test_-_HTTP
   - name: Skyline Synthetic Test - Ping
     topicUid: Connector_help_Skyline_Synthetic_Test_-_Ping
+  - name: Skyline Table Checker
+    topicUid: Connector_help_Skyline_Table_Checker
   - name: Skyline Universal Weather
     topicUid: Connector_help_Skyline_Universal_Weather
   - name: Skyline VOD Workflow Application
