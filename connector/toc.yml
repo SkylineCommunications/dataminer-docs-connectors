@@ -6895,6 +6895,13 @@
     topicUid: Connector_help_Papouch_T2HE
   - name: Papouch TME
     topicUid: Connector_help_Papouch_TME
+- name: PatchAmp
+  items:
+    -name: PatchAmp Frame Monitor
+    topicUid: Connector_help_PatchAmp_Frame_Monitor
+    items:
+    - name: PatchAmp Frame Monitor Technical
+      topicUid: Connector_help_PatchAmp_Frame_Monitor_Technical
 - name: Paradigm
   items:
   - name: Paradigm Redundancy Controller
