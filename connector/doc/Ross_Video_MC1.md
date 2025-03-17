@@ -8,7 +8,9 @@ The **Ross Video MC1** is a cost-effective, modular master control switcher and 
 
 ## Key Features
 
+- **Flexible Master Control Switching**: Provides seamless video and audio transitions with frame-accurate switching, ensuring smooth and professional on-air operations across multiple channels.
 
+- **Integrated Branding and Graphics**: Supports multi-layer keying for real-time insertion of logos, bugs, and other branding elements, enhancing broadcast presentation and audience engagement.
 
 ## Use Cases
 
