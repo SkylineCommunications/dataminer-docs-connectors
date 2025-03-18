@@ -16,6 +16,14 @@ This connector uses a virtual connection and does not require any input during e
 
 ## Usage
 
+### **Standard Monitoring**
+
+Standard monitoring is consistent across all stations. It must be routed to the predefined parameters that hold information for each KPI, meaning that rows cannot be added or removed. The collected data is then displayed on the Standard Monitoring page.
+
+### **Custom Monitoring**
+
+Custom monitoring allows for flexible mapping, enabling users to define their own parameters to retrieve. Unlike standard monitoring, users can add or remove rows as needed to accommodate specific monitoring requirements that are not predefined within the standard framework.
+
 ### **Data Polling Process**
 1. The system reads the **Element ID** to identify the device and component.
 2. It retrieves the specified **Parameter ID** value at the configured polling frequency.
