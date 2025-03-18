@@ -1,5 +1,5 @@
 ---
-uid: Generic_Data_Simulator_Technical
+uid: Connector_Generic_Data_Simulator_Technical
 ---
 
 ## About
