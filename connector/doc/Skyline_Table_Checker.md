@@ -4,58 +4,39 @@ uid: Connector_help_Skyline_Table_Checker
 
 # Skyline Table Checker
 
-This connector will search through the elements with the corresponding protocol on the DataMiner System and look for entries in the desired table based on the configuration parameters set by the user.
-
 ## About
 
-### Version Info
+This connector will search through the elements with the corresponding protocol on the DataMiner System and look for entries in the desired table based on the configuration parameters set by the user.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+### Key Features
 
-### Product Info
+- **Automated Table Checks**: Periodically scans tables based on a configurable update interval (default: 30 minutes).
+- **Detailed Check Results**: Provides a comprehensive table with information about checked elements, including protocol name, table and column IDs, match status, and instance counts.
+- **Regex-Based Filtering**: Supports an *Optional Element Name Regex Filter* to refine element searches for more precise results.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+## Use Cases
 
-### System Info
+### Proactive System Monitoring
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge:** Ensuring that critical table entries (e.g., device status, service configurations) exist and remain updated.
 
-## Configuration
+**Solution:** The connector automatically checks specified tables at a set interval, verifying if key entries are present and up to date.
 
-### Connections
+**Benefit:** Provides real-time visibility into the system’s health.
 
-#### Virtual connection
+### Troubleshooting & Diagnostics
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Challenge:** Finding the root cause of missing or incorrect entries often requires manual effort.
 
-## How to use
+**Solution:** The tool quickly scans tables to identify missing values, incorrect mappings, or unexpected data changes.
 
-### General
+**Benefit:** Speeds up troubleshooting by instantly detecting configuration issues.
 
-The **General** page includes several key parameters:
+## Prerequisites
 
-- **Update Interval** - Determines how often table checks are performed. The default interval is *30 minutes*.
-- **Execute Checks Now** - Button to trigger immediate check instead of waiting for the update interval.
-- **Table Checker Last Update** - Displays the timestamp of the most recent table check.
-- **Check Results** -  A table that provides details on the checked entries, including the element and protocol name, table and column ID, whether the entry was found, and the number of instances found. These entries are configured in the *Configuration of Checks* table on the **Configuration** Page.
+- **DataMiner version 10.3 or higher** is required.
 
-### Configuration
+## Technical Information
 
-The **Configuration** page allows users to define and manage the table checks by specifying key parameters for each test.
-
-**Configuration of Checks** table contains the following columns:
-
-- *Test Name* – The name of the check.
-- *Protocol Name* – The protocol name which acts as a filter to filter only the elements using it.
-- *Optional Element Name Regex Filter* – A regular expression filter to refine the element name search.
-- *Table PID* – The unique identifier for the table being checked.
-- *Column ID* – The specific column within the table being checked.
-- *Text to Search On* – The text pattern used to find matches within the column.
-
-The **Update Result Table** button refreshes the results based on the defined checks.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Table_Checker_Technical).
