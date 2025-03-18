@@ -1,5 +1,5 @@
 ---
-uid: Connector_marketing_NBCU_Amagi_Channel_Status
+uid: Connector_help_NBCU_Amagi_Channel_Status
 ---
 
 # NBCU Amagi Channel Status
