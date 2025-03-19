@@ -24,11 +24,4 @@ SERIAL CONNECTION:
 
 ## How to use
 
-The element created with this connector has the following data pages:
-
-- **General**: Contains **Product**, **Hardware**, and **Network** parameters.
-- **Program Fail-Over**: Contains parameters related to the **Auto Return** and **Mode**.
-- **Video**: Contains the **Inputs Status** table, with information about all the inputs and the format of the inputs.
-- **Audio**: Contains the **AES Video Status** table, with information about Channel A and B for each EAS input.
-- **GPI/Tally**: Contains a table with information for each tally in the system, such as the **Number** and **Function**.
-- **On Air Control**: Contains several standalone parameters like **EAS Status**, **Program Bus**, and **Audio Level**, as well as the **Keyers** table; with the **Status** and **Description** for each Keyer.
+The connector is read-only at the moment, so every parameter you see can be monitored. Each page is labeled according to the contained parameters or tables associated with its name. All of these parameters are retrieved using single serial commands. Status parameters are retrieved every ten seconds, while everything else is updated via a one-minute timer.

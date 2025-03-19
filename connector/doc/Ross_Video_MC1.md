@@ -4,7 +4,7 @@ uid: Connector_help_Ross_Video_MC1
 
 # Ross Video MC1
 
-The **Ross Video MC1** is a cost-effective, modular master control switcher and branding solution designed to streamline broadcast operations. It offers features such as program/preset mixing, four keyers, and 16 channels of audio processing, enhancing both video and audio management. The system is scalable, accommodating configurations from standalone branding to multi-channel master control installations, and supports both manual and automated control. Integration with Ross Video's DashBoard interface and optional hardware panels provides flexible and intuitive operation.
+This is a DataMiner connector for the **Ross Video MC1** cards. With this conenctor you can monitor the card's parameters using Dataminer's alarm and trending features. The connector is only capable of monitorring one card at a time since the slot number has to be configured when creating the element. 
 
 ## Key Features
 
