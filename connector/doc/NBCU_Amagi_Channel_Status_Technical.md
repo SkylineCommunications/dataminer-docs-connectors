@@ -8,31 +8,6 @@ uid: Connector_help_NBCU_Amagi_Channel_Status_Technical
 
 This connector is designed to retrieve and monitor Amagi channel statuses, providing an overview of the health state of each channel. It communicates using HTTP requests to fetch real-time data. The retrieved information includes channel names and agent states, which are displayed in the Channel Status Table.
 
-### Version Info
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |Initial version      |-         |-         |
-
-### Product Info
-
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |-     |
-
-
-### System Info
-
-In this subsection, insert a table with five columns. Indicate whether the range features **DCF integration** and whether it is **Cassandra compliant**.
-
-In the "Linked Components"; column, list all DataMiner components that have a link, in any way, with this connector range, e.g. mediation connectors, Automation scripts, custom report, etc.
-
-In the "Exported Components" column, list all the connectors that are exported by the parent connector in question.
-**This can only be omitted for an exported connector or for a connector that cannot have exported connectors.**
-
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
 
 ## Configuration
 
