@@ -4274,6 +4274,11 @@
     topicUid: Connector_help_Grass_Valley_Acappella
   - name: Grass Valley Alchemist Live
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
+  - name: Grass Valley AMPP Elastic Recorder Application
+    topicUid: Connector_help_Grass_Valley_AMPP_Elastic_Recorder_Application
+    items:
+      - name: Grass Valley AMPP Elastic Recorder Application Technical
+        topicUid: Connector_help_Grass_Valley_AMPP_Elastic_Recorder_Application_Technical
   - name: Grass Valley AMPP Manager
     topicUid: Connector_help_Grass_Valley_AMPP_Manager
     items:
