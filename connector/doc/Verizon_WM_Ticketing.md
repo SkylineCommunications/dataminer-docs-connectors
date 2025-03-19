@@ -35,6 +35,10 @@ As this is a virtual connector, **no data traffic** will be shown **in the Strea
 | 1.0.2.x [Obsolete] | Minimum DataMiner required version increased from 10.0.3.0 - 8964 to 10.0.10.0 - 9454. | No | Yes |
 | 1.0.3.x [SLC Main]| Starlink alarms support added. | No | Yes |
 
+## Creation
+
+This connector uses a **virtual** connection and does not require any input during element creation.
+
 ## Configuration
 
 The **Configuration** section allows you to adjust the behavior of the connector, including ticketing settings, topology imports, and system credentials. The following areas can be configured:
