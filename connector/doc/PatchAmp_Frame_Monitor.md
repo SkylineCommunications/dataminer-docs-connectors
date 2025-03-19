@@ -12,9 +12,9 @@ With this **PatchAmp** connector, you can monitor the status of all 32 possible 
 
 ### Key Features
 
-- **Comprehensive Signal Monitoring**: Instantly reports loss of signal, loss of lock, module temperature, fiber transmit and receive levels, and fiber laser current and voltage, ensuring real-time awareness of system status.
+- **Real-Time Parameter Extraction**: The connector continuously retrieves and displays critical signal metrics, including loss of signal, lock status, module temperature, fiber transmit/receive levels, and laser diagnostics, enabling proactive monitoring and alarm generation.
 
-- **Flexible Module Compatibility**: The universal frame design allows for any combination of cards, providing adaptability to various system configurations. 
+- **Seamless Integration with PatchAmp Modules**: Designed to communicate with the PatchAmp Frame Monitoring System, the connector supports automatic detection and data retrieval from any combination of installed modules, ensuring comprehensive visibility across the entire system.
 
 ## Use Cases
 
