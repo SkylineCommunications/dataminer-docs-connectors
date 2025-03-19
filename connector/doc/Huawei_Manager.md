@@ -60,10 +60,11 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### SSH Configuration
 
-From version 1.0.3.x onwards, SSH is used to retrieve additional parameters.
+From version 1.0.3.x onwards, SSH is used to retrieve additional parameters. On the **SSH Files Server** page, the following parameters should be specified for this:
 
-- **SSH Username and Password**: Required for authentication.
-- **SSH File Transfer**: Uses SFTP protocol to overwrite files specified in the ***Fimename To Copy*** parameter on the SSH File Server page.
+- **IP Address of Files Server**
+- **Username** and **Password**: Required for authentication.
+- **Filename to Copy**: The file to copy from the files server.
 
 ## How to Use
 
