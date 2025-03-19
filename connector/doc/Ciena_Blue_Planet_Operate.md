@@ -17,16 +17,15 @@ This is a DataMiner connector for the **Ciena Blue Planet Operate**, a network m
 
 ### Node Device Alarms Monitoring
 
-**Challenge**: The **Ciena Blue Planet Operate** has alarms coming from many devices within it's network. This might make it hard to monitor the alarms for each of the devices.
+**Challenge**: The **Ciena Blue Planet Operate** has alarms coming from many devices within its network. This might make it hard to monitor the alarms for each of the devices.
 
-**Solution**: With this connector, you can easily represent the devices as a DVE, allowing for every device to be monitored individually.
+**Solution**: With this connector, you can easily represent the devices as a DVE, so that each device can be monitored individually.
 
 **Benefit**: Potential issues can be quickly addressed in real time, improving the reliability and performance of managing the Ciena devices.
 
 ## Prerequisites
 
-- **DataMiner version 10.2 or higher** is required.
-- API Key and User Id are required for the connector's HTTP requests to work
+- An API Key and user ID are required for the connector's HTTP requests to work.
 
 ## Technical Information
 
