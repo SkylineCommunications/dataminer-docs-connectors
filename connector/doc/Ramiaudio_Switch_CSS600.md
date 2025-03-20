@@ -18,7 +18,7 @@ The CSS600 is a device for monitoring and replacing a primary MPX/RDS signal wit
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | -                      |
+| 1.0.0.x   | V2.5                   |
 
 ### System Info
 
