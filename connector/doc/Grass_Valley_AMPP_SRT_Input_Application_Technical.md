@@ -26,4 +26,4 @@ HTTP CONNECTION:
 The following data pages are available in an element created with this connector:
 
 - **General**: Contains the **Overview** and **Configuration** tables. The Overview table shows the workloads for the SRT Input type, and the Configuration table allows you to send HTTP commands.
-- **Debug**: Enabled by a toggle button at the bottom of **General** page, this page includes the Last Login Time, Token Expiration, and Response Status Code.
+- **Debug**: Enabled by a toggle button at the bottom of the **General** page, this page includes the Last Login Time, Token Expiration, and Response Status Code.
