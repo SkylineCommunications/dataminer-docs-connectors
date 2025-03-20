@@ -14,19 +14,22 @@ This HTTP connector is used to monitor and configure the Ciena Blue Planet domai
 
 | Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Alarms, Network Elements and Equipment are listed. | -            | -                 |
+| 1.0.0.x              | Alarms, Network Elements and Equipment are listed. | -            | -                 |
+| 1.0.1.x [SLC Main]   | Details about the affected services in the Active Alarms table, user-friendly display key for Active Alarms | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.9.2.r1.588           |
+| 1.0.1.x   | 2.9.2.r1.588           |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -57,5 +60,5 @@ The element consists of the following data pages:
 - **General**: Allows you to specify the username and password to log in. A status parameter indicates whether you are logged in or logged out.
 - **Network Elements**: Contains the Network Elements table.
 - **Equipment**: Contains a table with the existing equipment per network element.
-- **Active Alarms**: Lists the active alarms. A subpage summarizes the number of active alarms per category (Warning, Minor, Major, Critical and Total).
+- **Active Alarms**: Lists the active alarms. A subpage summarizes the number of active alarms per category (Warning, Minor, Major, Critical and Total).  Enable the **Active Alarms Retrieve Affected Services** parameter to get data about the affected services in the Active Alarms table. For each new service affecting alarm, an extra API call is used to retrieve the affected services data.
 - **Alarms History**: Contains the Alarms History table. On a subpage, you can set the alarms history range.
