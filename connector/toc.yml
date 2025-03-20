@@ -4910,6 +4910,8 @@
   items:
   - name: InfluxData InfluxDB Collector
     topicUid: Connector_help_InfluxData_InfluxDB_Collector
+  - name: InfluxData Kapacitor
+    topicUid: Connector_help_InfluxData_Kapacitor
 - name: Infoblox
   items:
   - name: Infoblox NIOS Platform
