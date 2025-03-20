@@ -25,5 +25,5 @@ HTTP CONNECTION:
 
 The following data pages are available in an element created with this connector:
 
-- **General**: Contains the **Overview** and **Recording** tables. The Overview table shows the workloads for the Clip Player HD Input type, and the Recording table allows you to send Start, Stop, Record,  HTTP commands as well as change the Source and File Name of each workload.
+- **General**: Contains the **Overview** and **States** tables. The Overview table shows the workloads for the Clip Player HD Input type, and the States table allows you to send Start, Stop, GoToStart, GoToEnd,  HTTP commands as well as change the File Name of each workload. Note: since the File name is retrieved from the interapp, but the start of the path is not, user must additionally configure the File Path (the beginning part of the file name) for the command to work.
 - **Debug**: Enabled by a toggle button at the bottom of **General** page, this page includes the Last Login Time, Token Expiration, and Response Status Code.
