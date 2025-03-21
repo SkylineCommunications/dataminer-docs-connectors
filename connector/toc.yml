@@ -3988,6 +3988,11 @@
     topicUid: Connector_help_Generic_DataMiner_Log_Reader
   - name: Generic Data Burst Logger
     topicUid: Connector_help_Generic_Data_Burst_Logger
+  - name: Generic Data Simulator
+    topicUid: Connector_Generic_Data_Simulator
+    items:
+      - name: Generic Data Simulator Technical
+        topicUid: Connector_Generic_Data_Simulator_Technical
   - name: Generic DCF Waveguide Switch
     topicUid: Connector_help_Generic_DCF_Waveguide_Switch
   - name: Generic Dialog Integration Manager
