@@ -11,7 +11,7 @@ The **Generic Data Simulator** is a DataMiner connector designed to simulate any
 
 ## Key Features (1.0.0.X)
 
-- **CPU and network interfaces simulations**: Simulating 4 network interfaces and CPU load (only on 1.0.0.X branch)
+- **CPU and network interfaces simulations**: Simulating 4 network interfaces and CPU load (only on 1.0.0.X branch).
 
 ## Key Features (2.0.0.X)
 
@@ -21,10 +21,11 @@ The **Generic Data Simulator** is a DataMiner connector designed to simulate any
 
 ## Use Cases
 
-Easy way to simulate all sorts of parameters, trends and polling rates makes this connector very useful for all sorts of use cases such as:
+As it provides an easy way to simulate all sorts of parameters, trends, and polling rates, this connector is very useful for all sorts of use cases such as:
+
 - IoT device simulation
 - Various management services with lots of KPIs (fleet management, smart city management, etc.)
-- Broadcast and Media monitoring
+- Broadcast and media monitoring
 - API simulation
 
 > [!NOTE]

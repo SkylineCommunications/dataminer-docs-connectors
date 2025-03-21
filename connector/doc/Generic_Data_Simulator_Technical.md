@@ -2,9 +2,11 @@
 uid: Connector_Generic_Data_Simulator_Technical
 ---
 
+# Generic Data Simulator
+
 ## About
 
-Generic Data Simulator is a virtual connector, where users can customize and mimic any kind of API or device interface by adding parameter simulations with various trending type possibilities.
+This is a virtual connector that allows you to customize and mimic any kind of API or device interface by adding parameter simulations with various trending type possibilities.
 
 ## Configuration
 
@@ -16,14 +18,10 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to use (1.0.0.X)
 
-CPU load and NIC bitrate simulation are customizable through **General** and **Interfaces** pages, respectively.
+CPU load and NIC bitrate simulation can be customized on the **General** and **Interfaces** pages, respectively.
 
 ## How to use (2.0.0.X)
 
-Adding simulated parameters is done through the context menu in the Simulations table. User can add static values and trended numeric values with various behaviors. It is also possible to edit and delete simulators from the same context menu.
+To add simulated parameters, use the right-click menu of the **Simulations** table. You can add static values and trended numeric values with various behaviors. Via the same right-click menu, you can also edit or delete simulators.
 
-Measurement unit and groups can be assigned to each simulator, which serve as conceptual classification of simulators, and can be added through context menu's in the tables found on the **Configuration** page.
-
-## Notes
-
-[In this section, you can provide additional information about the connector that does not fit in the other sections. Remove this section if it does not contain any info.]
+Via the right-click menus of the tables on the **Configuration** page, you can assign a measurement unit and groups to each simulator. These serve as a conceptual classification of simulators.
