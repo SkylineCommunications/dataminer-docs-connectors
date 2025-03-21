@@ -6180,6 +6180,11 @@
     topicUid: Connector_help_NBCS_Roadkit_Manager
 - name: NBCU
   items:
+  - name: NBCU Amagi Channel Status
+    topicUid: Connector_help_NBCU_Amagi_Channel_Status
+    items:
+      - name: NBCU Amagi Channel Status Technical
+        topicUid: Connector_help_NBCU_Amagi_Channel_Status_Technical
   - name: NBCU Ocellus Data Collector
     topicUid: Connector_help_NBCU_Ocellus_Data_Collector
 - name: ND Satcom
