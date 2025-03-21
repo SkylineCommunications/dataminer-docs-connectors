@@ -2,24 +2,25 @@
 uid: Connector_help_AJA_Bridge_Live
 ---
 
-# About
+# AJA Bridge Live
 
-The AJA Bridge Live connector enables seamless integration with AJA Bridge Live, a high-performance, turnkey solution for SDI video encoding, decoding, transcoding, and streaming. 
-Designed for remote production, live contribution, and content delivery, this connector allows users to monitor and configure critical workflows while ensuring reliable, cost-effective video transport across networks.
+## About
 
-# Key Features
+The AJA Bridge Live connector enables seamless integration with AJA Bridge Live, a high-performance turnkey solution for SDI video encoding, decoding, transcoding, and streaming. Designed for remote production, live contribution, and content delivery, this connector allows users to monitor and configure critical workflows while ensuring reliable, cost-effective video transport across networks.
 
-**System Monitoring**: Retrieve system details such as software versions, driver information, and real-time GPU/CPU utilization for performance monitoring.
+## Key Features
 
-**Network Interface Management**: Monitor network interfaces, bandwidth utilization, and ensure optimal connectivity for uninterrupted streaming.
+**System monitoring**: Retrieve system details such as software versions and real-time GPU/CPU utilization for performance monitoring.
 
-**Pipeline Control & Configuration**: Start, stop, and modify pipelines dynamically, adjusting video, audio, and caption settings as needed.
+**Network interface management**: Monitor network interfaces and bandwidth utilization, and ensure optimal connectivity for uninterrupted streaming.
 
-**Input & Output Stream Management**: Configure input and output streams with flexible encoding and transport options, including NDI, SRT, and RTMP.
+**Pipeline control & configuration**: Start, stop, and modify pipelines dynamically, adjusting video, audio, and caption settings as needed.
 
-# Use Cases
+**Input & output stream management**: Configure input and output streams with flexible encoding and transport options, including NDI, SRT, and RTMP.
 
-## Use Case 1: Replacing Satellite Uplink with IP Streaming
+## Use Cases
+
+### Use Case 1: Replacing Satellite Uplink with IP Streaming
 
 **Challenge**: Traditional satellite uplink solutions are expensive and require extensive infrastructure, making them inefficient for modern live broadcasts.
 
@@ -27,7 +28,7 @@ Designed for remote production, live contribution, and content delivery, this co
 
 **Benefit**: Significant cost savings, reduced complexity, and improved flexibility for remote productions and live events.
 
-## Use Case 2: Dynamic Multi-Codec Transcoding
+### Use Case 2: Dynamic Multi-Codec Transcoding
 
 **Challenge**: Live production environments require real-time transcoding across multiple formats to ensure compatibility with different platforms.
 
@@ -35,7 +36,7 @@ Designed for remote production, live contribution, and content delivery, this co
 
 **Benefit**: Enhanced compatibility with CDNs like YouTube, Twitch, and Facebook Live, enabling seamless content distribution.
 
-## Use Case 3: High-Redundancy Live Streaming
+### Use Case 3: High-Redundancy Live Streaming
 
 **Challenge**: Live video streams are vulnerable to network issues such as packet loss, jitter, and latency fluctuations.
 
@@ -43,10 +44,13 @@ Designed for remote production, live contribution, and content delivery, this co
 
 **Benefit**: Increased reliability, reduced risk of video interruptions, and optimized quality of experience for viewers.
 
-# Technical Reference
+## Technical Reference
 
-## Prerequisites
+### Prerequisites
 
-* Network Access: AJA Bridge Live must be accessible over the network for API communication.
-* Authentication Configuration: Basic authentication credentials (username & password) must be set up.
-* Pipeline Configuration: Users should pre-define input and output settings for efficient stream management
+- Network access: AJA Bridge Live must be accessible over the network for API communication.
+- Authentication configuration: Basic authentication credentials (username and password) must be set up.
+- Pipeline configuration: Users should pre-define input and output settings for efficient stream management.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_AJA_Bridge_Live_Technical).
