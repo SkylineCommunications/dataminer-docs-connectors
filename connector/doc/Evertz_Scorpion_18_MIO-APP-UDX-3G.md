@@ -57,4 +57,6 @@ This connector is mainly used to monitor the device and adjust some important se
 The layout of the connector is very similar to that of the web UI, with the following sections:
 
 - **System**: Contains the same parameters as the **System section of the web UI**. The parameters are **read-only**.
-- **Video**:  Contains the same parameters as the **Video section of the web UI**. Some parameters allow you to adjust settings on the device.
+- **Video**: Contains the same parameters as the **Video section of the web UI**. Some parameters allow you to adjust settings on the device.
+- **Audio**: Contains the same parameters as the **Audio section of the web UI**. Some parameters allow you to adjust settings on the device.
+- **ANC**: Contains the same parameters as the **ANC section of the web UI**. Some parameters allow you to adjust settings on the device.
