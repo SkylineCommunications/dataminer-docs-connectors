@@ -8,9 +8,9 @@ This is a DataMiner connector for the **Ross Video MC1** cards. With this conenc
 
 ## Key Features
 
-- **Flexible Master Control Switching**: Provides seamless video and audio transitions with frame-accurate switching, ensuring smooth and professional on-air operations across multiple channels.
+- **System Parameters Monitorring**: Live values of critical parameters including temperature, fan speed and hardware status can me monitored very closely.
 
-- **Integrated Branding and Graphics**: Supports multi-layer keying for real-time insertion of logos, bugs, and other branding elements, enhancing broadcast presentation and audience engagement.
+- **Video Input Monitorring**: Supports up to 6 Video Inputs and 8 AES Audio channels which different settings can be monitored and alarmed on.
 
 ## Use Cases
 
