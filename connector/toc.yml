@@ -4,6 +4,9 @@
   items:
   - name: 2WCOM DAB-4c
     topicUid: Connector_help_2WCOM_DAB-4c
+    items:
+    - name: 2WCOM DAB-4c Technical
+      topicUid: Connector_help_2WCOM_DAB-4c_Technical
   - name: 2WCOM F01
     topicUid: Connector_help_2WCOM_F01
   - name: 2WCOM FlexDSR04+
