@@ -75,15 +75,15 @@ This page displays an overview of the available converters in the **Converter Ov
 
 ### Input Sources
 
-This page displays an overview of the Input and Output Sources.
+This page displays an overview of the input and output sources.
 
 ### GPI
 
-This page displays the state of the GPI interfaces and allows you to **Switch Sources** or **Invert Masks** of each interface.
+This page displays the state of the GPI interfaces and allows you to **switch sources** or **invert masks** of each interface.
 
 ### GPO
 
-This page displays the state of the GPO interfaces and allows you to **Switch Sources** of each interface.
+This page displays the state of the GPO interfaces and allows you to **switch sources** of each interface.
 
 ### Network
 
@@ -98,7 +98,7 @@ The page contains page buttons to the following subpages:
 
 ### DNS
 
-This page allows you to monitor the **DNS Server Configuration.**
+This page allows you to monitor the **DNS Server Configuration**.
 
 ### SNMP
 
@@ -106,7 +106,7 @@ On this page, you can monitor and configure **SNMP settings**, as well as the SN
 
 ### Time
 
-This page contains the **NTP Configuration** and **Timezone** configuration.
+This page contains the **NTP** and **time zone** configuration.
 
 Via the **External NTP** page button, you can configure built-in device alarm monitoring conditions for **external clock NTP** and **NTP Calibration**.
 
@@ -131,8 +131,8 @@ It also contains page buttons to subpages where these alarms can be configured:
 
 - **EDI Input 1**: Allows you to configure **EDI Input 1** built-in device alarm monitoring conditions for each **converter**.
 - **EDI Input 2**: Allows you to configure **EDI Input 2** built-in device alarm monitoring conditions for each **converter**.
-- **ETI Inputs**: Allows you to configure **ETI Input** built-in device alarm monitoring conditions for each **ETI Input**.
-- **Inputs**: Allows you to configure **Inputs** built-in device alarm monitoring conditions for each **Converter Input**, **EDI to EDI2 Input**, and **ETI to EDI 2 Input**.
+- **ETI Inputs**: Allows you to configure **ETI Input** built-in device alarm monitoring conditions for each **ETI input**.
+- **Inputs**: Allows you to configure **Inputs** built-in device alarm monitoring conditions for each **converter input**, **EDI-to-EDI2 input**, and **ETI-to-EDI 2 input**.
 - **ETI Outputs**: Allows you to configure **ETI Output Error** built-in device alarm monitoring conditions for each **ETI output**.
 
 ### Log
