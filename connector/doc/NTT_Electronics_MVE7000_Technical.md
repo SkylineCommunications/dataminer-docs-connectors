@@ -42,6 +42,10 @@ The web interface is only accessible when the client machine has network access 
 This page displays general information about the device as well as the **Last Event** data.
 There are multiple page-button containing data about the **Device State** and **Device Interfaces** information.
 
+> [!NOTE]
+> On the sub-page **PPPoE 1** parameter **PPPoE1 Gateway** shows as **Not Initialized** this a device issues.
+> The value is present on the web interface but not available via SNMP (OID exists but the device is not sending data for that parameter).
+
 ### Encode Input Status
 
 This page contains the **Encode Input Status** parameters, which displays the status of the encoder input parameters.
