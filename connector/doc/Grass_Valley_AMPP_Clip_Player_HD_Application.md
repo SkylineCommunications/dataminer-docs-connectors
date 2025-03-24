@@ -25,8 +25,8 @@ The Clip Player HD is an application connector for the GV AMPP (Agile Media Proc
 ## Technical info
 
 ### Prerequisites
-- **Grass Valley AMPP Manager** is required for this driver to function properly.
-- **DataMiner version 10.2 or higher** is required for compatibility with the Grass Valley AMPP Clip Player HD Application connector.
+- **Grass Valley AMPP Manager** is required for this connector to function properly.
+- **DataMiner version 10.3 or higher** is required for compatibility with the Grass Valley AMPP Clip Player HD Application connector.
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Grass Valley AMPP Clip Player HD Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_Clip_Player_HD_Application_Technical).
