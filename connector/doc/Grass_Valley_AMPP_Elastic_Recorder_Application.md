@@ -22,7 +22,7 @@ The Elastic Recorder is an application connector for the GV AMPP (Agile Media Pr
 - **Benefit**: No more need to sift through the filtering of the large workloads table. All your Elastic Recorder status information is available in one place.
 
 > [!NOTE]
-> While this connector is only applicable for Elastic Recorder workloads, standalone connectors for other workload types will also become available in the future.
+> While this connector is only applicable for Elastic Recorder workloads, standalone connectors for other workload types are also available.
 
 ### Prerequisites
 
@@ -32,4 +32,4 @@ The Elastic Recorder is an application connector for the GV AMPP (Agile Media Pr
 ## Technical info
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector for Grass Valley AMPP Elastic Recorder Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_Elastic_Recorder_Application_Technical).
+> For in-depth information on configuring and using the DataMiner connector for the Grass Valley AMPP Elastic Recorder Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_Elastic_Recorder_Application_Technical).
