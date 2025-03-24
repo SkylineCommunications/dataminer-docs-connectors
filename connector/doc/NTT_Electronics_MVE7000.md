@@ -12,7 +12,7 @@ It supports H.265/HEVC encoding, multiple input interfaces (3G-SDI, HDMI), and f
 ## Key Features
 
 - **Status Pages:** Overviews of the device general state information, last event data, and device interfaces.
-- **Stream Data:** Output and configure up to 4 IP stream simultaneously.
+- **Stream Data:** Output and configure up to 4 IP streams simultaneously.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_NTT_Electronics_MVE7000_Technical).
