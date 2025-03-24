@@ -4,13 +4,15 @@ uid: Connector_help_Ross_Video_MC1
 
 # Ross Video MC1
 
-This is a DataMiner connector for the **Ross Video MC1** cards. With this conenctor you can monitor the card's parameters using Dataminer's alarm and trending features. The connector is only capable of monitorring one card at a time since the slot number has to be configured when creating the element. 
+The Ross Video MC1 is a versatile master control switcher designed for streamlined broadcast operations. It provides frame-accurate video and audio transitions, branding capabilities, and automated workflows for live production environments. The MC1 supports a range of video formats and integrates seamlessly with automation systems, enabling precise playout control. Features include internal audio processing, multi-channel keying for branding elements, and failover redundancy to ensure uninterrupted broadcasts. With an intuitive interface and remote configuration options, the MC1 enhances operational efficiency while maintaining high broadcast quality.
+
+This is a DataMiner connector for the **Ross Video MC1** cards. With this connector, you can monitor the parameters of a specific card using DataMiner's alarm and trending features.
 
 ## Key Features
 
-- **System Parameters Monitorring**: Live values of critical parameters including temperature, fan speed and hardware status can me monitored very closely.
+- **System parameter monitoring**: Closely monitor live values of critical parameters including temperature, fan speed, and hardware status.
 
-- **Video Input Monitorring**: Supports up to 6 Video Inputs and 8 AES Audio channels which different settings can be monitored and alarmed on.
+- **Video input monitoring**: Supports up to 6 video inputs and 8 AES audio channels, allowing monitoring and alarms for the different settings.
 
 ## Use Cases
 
