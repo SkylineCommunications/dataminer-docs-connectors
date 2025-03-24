@@ -4,6 +4,8 @@ uid: Connector_help_Grass_Valley_AMPP_Manager_Technical
 
 # Grass Valley AMPP Manager
 
+## About
+
 The Grass Valley Agile Media Processing Platform (GVAMPP) connector will retrieve a list of existing workloads to be managed/configured.
 
 A smart-serial connection is needed to listen to incoming messages, and an additional two HTTP connections are needed, one for the GVAMPP and one for the SignalR Forwarder.

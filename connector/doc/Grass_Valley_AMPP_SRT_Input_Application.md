@@ -22,9 +22,9 @@ The SRT Input is an application connector for the GV AMPP (Agile Media Processin
 - **Benefit**: No more need to sift through the filtering of the large workloads table. All your SRT Input status information is available in one place.
 
 > [!NOTE]
-> While this connector is only applicable for SRT Input workloads, standalone connectors for other workload types will also become available in the future.
+> While this connector is only applicable for SRT Input workloads, standalone connectors for other workload types are also available.
 
 ## Technical info
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector for Grass Valley AMPP SRT Input Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical).
+> For in-depth information on configuring and using the DataMiner connector for the Grass Valley AMPP SRT Input Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical).
