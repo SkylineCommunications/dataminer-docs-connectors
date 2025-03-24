@@ -6724,8 +6724,18 @@
     topicUid: Connector_help_NTT_Electronics_HVE9230
   - name: NTT Electronics MVD5000
     topicUid: Connector_help_NTT_Electronics_MVD5000
+  - name: NTT Electronics MVD7000
+    topicUid: Connector_help_NTT_Electronics_MVD7000
+    items:
+    - name: NTT Electronics MVD7000 Technical
+      topicUid: Connector_help_NTT_Electronics_MVD7000_Technical
   - name: NTT Electronics MVE5000
     topicUid: Connector_help_NTT_Electronics_MVE5000
+  - name: NTT Electronics MVE7000
+    topicUid: Connector_help_NTT_Electronics_MVE7000
+    items:
+    - name: NTT Electronics MVE7000 Technical
+      topicUid: Connector_help_NTT_Electronics_MVE7000_Technical
   - name: NTT Electronics XVE9300
     topicUid: Connector_help_NTT_Electronics_XVE9300
   - name: NTT Electronics XVE9310
