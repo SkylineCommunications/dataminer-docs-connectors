@@ -4,9 +4,7 @@ uid: Connector_help_NBCU_Amagi_Channel_Status_Technical
 
 # NBCU Amagi Channel Status
 
-## About
-
-This connector is designed to retrieve and monitor Amagi channel statuses, providing an overview of the health state of each channel. It communicates using HTTP requests to fetch real-time data. The retrieved information includes channel names and agent states, which are displayed in the Channel Status Table.
+The NBCU Amagi Channel Status connector is designed to retrieve and monitor real-time statuses of Amagi channels, providing an overview of the health state of each channel. It communicates via HTTP requests to fetch and display relevant data, including channel names and agent states.
 
 ## Configuration
 
@@ -16,26 +14,24 @@ This connector is designed to retrieve and monitor Amagi channel statuses, provi
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-HTTP CONNECTION:
+- **IP Address/Host**: The polling IP or URL of the destination.
+- **IP Port**: The IP port of the destination (default: *443*).
+- **Device Address**: The bus address of the device. If a proxy server needs to be bypassed, specify *BypassProxy*.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+## Usage
 
-### Initialization
+### Token Initialization
 
-On the **General** page, you will need to configure a token obtained from the GUI or vendor. This will be used for all the requests sent by the connector.
+On the **General** page, you must configure a token obtained from the GUI or vendor. This token is required for authentication and will be used for all requests sent by the connector.
 
-## How to use
+### Channel Status Table
 
-### General Page
+The **Channel Status** table provides real-time insights into monitored channels. The table includes:
 
-On the **General** page, you can configure parameters such as **Core ID** and **Strategy**, enabling better identification of each switcher control.
+- **Channel Name**: The identifier for each channel.
+- **Agent State**: The operational state of the channel.
 
-### Channel Status Page
-
-On the **Channel Status** page, you can view the real-time statuses of channels retrieved from the device. The table displays the **channel name** and its **agent state**.
-
-### Polling Frequency
-
-The connector allows you to **set the desired polling frequency** to retrieve channel statuses at your preferred intervals.
+If the Channel Prefix parameter is filled, it will be added to the channel name.
+```
+Format: {Channel Prefix}_{Channel Name}
+```
