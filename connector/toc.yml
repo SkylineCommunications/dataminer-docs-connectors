@@ -6944,6 +6944,13 @@
     topicUid: Connector_help_Papouch_T2HE
   - name: Papouch TME
     topicUid: Connector_help_Papouch_TME
+- name: PatchAmp
+  items:
+    - name: PatchAmp Frame Monitor
+      topicUid: Connector_help_PatchAmp_Frame_Monitor
+      items:
+      - name: PatchAmp Frame Monitor Technical
+        topicUid: Connector_help_PatchAmp_Frame_Monitor_Technical
 - name: Paradigm
   items:
   - name: Paradigm Redundancy Controller
@@ -7517,6 +7524,11 @@
     topicUid: Connector_help_Ross_Video_Iggy-AES16.16
   - name: Ross Video Matrix
     topicUid: Connector_help_Ross_Video_Matrix
+  - name: Ross Video MC1
+    topicUid: Connector_help_Ross_Video_MC1
+    items:
+      - name: Ross Video MC1 Technical
+        topicUid: Connector_help_Ross_Video_MC1_Technical
   - name: Ross Video NEWT-HDMI-RX
     topicUid: Connector_help_Ross_Video_NEWT-HDMI-RX
   - name: Ross Video Newt-IPR-3G-4S
