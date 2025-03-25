@@ -8,6 +8,8 @@ uid: Connector_help_Ciena_Blue_Planet_Operate_Technical
 
 This connector is a network management system designed to manage Ciena devices.
 
+It can create a Ciena Blue Planet Operate Node DVE as a virtual representation of the managed device.
+
 ## Configuration
 
 ### Connections
