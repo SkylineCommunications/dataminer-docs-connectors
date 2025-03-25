@@ -4,32 +4,10 @@ uid: Connector_help_Ciena_Blue_Planet_MCP_NMS
 
 # Ciena Blue Planet MCP NMS
 
+## About
 Ciena's Blue Planet Manage, Control and Plan (MCP) domain controller brings software-defined programmability to Ciena network and service operations. It eliminates manual steps between separate management tools.
 
 This HTTP connector is used to monitor and configure the Ciena Blue Planet domain controller.
-
-## About
-
-### Version Info
-
-| Range                | Key Features                                       | Based on     | System Impact     |
-|----------------------|----------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Alarms, Network Elements and Equipment are listed. | -            | -                 |
-| 1.0.1.x [SLC Main]   | Details about the affected services in the Active Alarms table, user-friendly display key for Active Alarms | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
