@@ -4,27 +4,9 @@ uid: Connector_help_Evertz_Scorpion_18_MIO-APP-UDX-3G
 
 # Evertz Scorpion 18 MIO-APP-UDX-3G
 
-This connector is used to monitor the Evertz Scorpion 18 MIO-APP-UDX-3G module.
-
 ## About
 
-### Version Info
-
-| Range              | Features        | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
-
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | -                  |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+This connector is used to monitor the Evertz Scorpion 18 MIO-APP-UDX-3G module.
 
 ## Configuration
 
@@ -57,4 +39,6 @@ This connector is mainly used to monitor the device and adjust some important se
 The layout of the connector is very similar to that of the web UI, with the following sections:
 
 - **System**: Contains the same parameters as the **System section of the web UI**. The parameters are **read-only**.
-- **Video**:  Contains the same parameters as the **Video section of the web UI**. Some parameters allow you to adjust settings on the device.
+- **Video**: Contains the same parameters as the **Video section of the web UI**. Some parameters allow you to adjust settings on the device.
+- **Audio**: Contains the same parameters as the **Audio section of the web UI**. Some parameters allow you to adjust settings on the device.
+- **ANC**: Contains the same parameters as the **ANC section of the web UI**. Some parameters allow you to adjust settings on the device.

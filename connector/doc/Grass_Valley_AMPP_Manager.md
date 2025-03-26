@@ -4,77 +4,51 @@ uid: Connector_help_Grass_Valley_AMPP_Manager
 
 # Grass Valley AMPP Manager
 
-The Grass Valley Agile Media Processing Platform (GVAMPP) connector will retrieve a list of existing workloads to be managed/configured.
+## About
 
-A smart-serial connection is needed to listen to incoming messages, and an additional two HTTP connections are needed, one for the GVAMPP and one for the SignalR Forwarder.
+![Gvampp_header.png](~/connector/images/Gvampp_header.png)
 
-## Configuration
+The Grass Valley Agile Media Processing Platform (GVAMPP) Solution integrates AMPP's robust processing capabilities into DataMiner, enabling its users to monitor and control various applications with exceptional efficiency.
 
-### Connections
+The AMPP Manager is equipped with the essential functionality to list fabrics, nodes, and workloads. It also offers the ability to start or stop application instances, enabling advanced orchestration workflows.
 
-#### IP Connection - Main
+### Key Features
 
-This connector uses a smart-serial connection by IP to act as listener.
+- **Workloads**: Presents a detailed list of all existing workloads. Each instance includes the application, package, status, and dedicated action buttons, allowing users to efficiently manage operations.
+- **Fabrics and Nodes**: Shows the collected fabrics, their nodes, and the relations between them.
+- **Snapshots**: Displays a table listing all available snapshots, including relevant information about associated workloads. The interface also provides action buttons, allowing users to start or stop them as needed. This functionality helps facilitate the management of workload instances and their corresponding workloads.
 
-- **IP address/host**: The polling IP or URL of the destination (default: *any*).
-- **IP port**: The IP port of the destination (default: *5001*).
+> [!NOTE]
+> Supported through the Workloads representation, productions offer a modern alternative to traditional snapshots. This approach allows users to manage production environments with the ability to start or stop workloads directly associated with a specific production.
 
-#### HTTP Connection - GVAMPP
+## Use Cases
 
-This connector uses an HTTP connection and requires the following input during element creation:
+### Status Monitoring and Proactive Reaction
 
-HTTP CONNECTION:
+![Gvampp_workloads_error.png](~/connector/images/Gvampp_workloads_error.png)
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Challenge**: Daily workflows often necessitate a substantial number of workloads to function effectively. However, several factors can impact the availability of these instances, potentially rendering them unusable during critical operations, disrupting the processes and hindering the overall performance.
 
-#### HTTP Connection - SignalR Forwarder
+**Solution**: The **AMPP Manager** can periodically retrieve the workloads, exposing their status and serving as a source to create alarms or proactively react through DataMiner Correlation, which can range from delivering early pertinent notifications to implementing sophisticated recovering mechanisms by triggering restarts via Automation.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Benefit**: The effectiveness of the workflows is ensured through the timely detection of workload errors, with even a potential automatic recovery.
 
-HTTP CONNECTION:
+### Reduction in Resource Costs
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+![Gvampp_snapshot_control.png](~/connector/images/Gvampp_snapshot_control.png)
 
-### Web Interface
+**Challenge**: Whether in the cloud or on the ground, workloads incur costs that typically depend on how long the instances remain active. While AMPP offers a variety of excellent tools to calculate and track these expenses, it is still necessary to implement mechanisms associated with scheduled events. This way, workloads will only be active during the required times.
 
-The web interface is only accessible when the client machine has network access to the product.
+**Solution**: The **AMPP Manager** offers three different options for activating or deactivating workloads. These options include managing individual instances, using groups of pre-assigned workloads known as snapshots, or adopting the more modern approach of productions. Additionally, these alternatives can be integrated with MediaOps, enhancing not only configuration capabilities but also providing an effective means of cost control.
 
-## Usage
+**Benefit**: Reducing the usage costs can lead to higher profitability and a smaller environmental footprint.
 
-### General
+## Technical Info
 
-This page contains general configuration parameters: API Key, Last Login Time, and Token Expiration. Token Expiration is by default set to 24 hours, but a new token will automatically be requested whenever there is an API key change and every 12 hours.
+### Prerequisites
 
-### Application Types
+- **DataMiner version 10.2 or higher**
+- **SignalR Forwarder 2.1 or higher**
 
-Here you will find the application types table.
-
-### Workloads
-
-Here you will find the workloads table as well as a button to refresh the workloads. Each row contains several buttons/toggle buttons:
-
-- **Get State**: Sends a Get State POST command.
-- **Disable Get State**: Sends a Disable Get State DELETE command.
-- **Start**: Sends a Start Workload POST command.
-- **Stop**: Sends a Stop Workload POST command.
-- **Refresh State on Restart**: Sends a Get State command after a restart of the element.
-
-### Fabrics and Nodes
-
-Here you will find the fabrics and nodes tables as well as a button to refresh them.
-
-### Snapshots
-
-Here you will find the snapshots table as well as a button to refresh the snapshots. Each row contains several buttons/toggle buttons:
-
-- **Start**: Sends a Start Snapshot POST command.
-- **Stop**: Sends a Stop Snapshot POST command.
-- **Restore Workloads After Start**: Restores the workload on element restart.
-
-### Debug
-
-This page contains the current listener message as well as the response to AMPP.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Grass_Valley_AMPP_Manager_Technical).

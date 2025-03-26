@@ -23,9 +23,5 @@ This virtual connector reads and parses USAGM-specific Excel files representing 
 
 ## Technical info
 
-### Prerequisites
-
-- **DataMiner version 10.2 or higher** is required for compatibility with the Skyline Masking Service connector.
-
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Skyline Masking Services, refer to the [Technical help page](xref:Connector_help_Skyline_Masking_Services_Technical).
