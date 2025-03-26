@@ -12,19 +12,21 @@ This connector displays information related to the V__Remote 4 device. This info
 
 | Range              | Key Features    | Based on | System Impact |
 |--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
-
+| 1.0.0.x            | Initial version | -        | -             |
+| 1.0.1.x [SLC Main] | Changed layout for audio and video interface table | -        | -             |
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | SW 1.4.0.104           |
+| 1.0.1.x   | SW 1.4.0.104           |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
 | 1.0.0.x | No              | Yes                 | -                 | -                   |
+| 1.0.1.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
