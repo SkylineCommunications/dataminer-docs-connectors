@@ -10,9 +10,9 @@ This integration allows you to monitor and control **Bridge Technologies probe**
 
 ## Key Features
 
-- **Monitor your streams, services and pids**: Gain real-time insights into your streams, services, and PIDs with comprehensive monitoring. Detect issues instantly and ensure seamless content delivery.
+- **Monitor your Streams, Services and PIDs**: Gain real-time insights into your streams, services, and PIDs with comprehensive monitoring. Detect issues instantly and ensure seamless content delivery.
 
-- **Monitor your OTT channels**: Keep track of your Over-the-Top (OTT) channels with detailed analytics and performance metrics. Ensure a high-quality streaming experience by identifying and resolving issues proactively.
+- **Monitor your OTT Channels**: Keep track of your Over-the-Top (OTT) channels with detailed analytics and performance metrics. Ensure a high-quality streaming experience by identifying and resolving issues proactively.
 
 - **Configure the Return Data Path**: Set up and manage return data paths effortlessly, enabling efficient feedback loops of your monitored streams for enhanced monitoring and diagnostics.
 
@@ -40,7 +40,7 @@ This integration allows you to monitor and control **Bridge Technologies probe**
 
 ### Prerequisites
 
-- **EII access** is needed to allow dataminer to communicate with the probes.
+- **EII access** is needed to allow DataMiner to communicate with the probes.
 
 - **Probe licenses** some of the features available in the connector require an active license on the probe e.g. ETR, OTT, ...
 
