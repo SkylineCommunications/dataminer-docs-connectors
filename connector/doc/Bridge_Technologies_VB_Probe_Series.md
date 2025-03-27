@@ -6,55 +6,43 @@ uid: Connector_help_Bridge_Technologies_VB_Probe_Series
 
 ## About
 
-[Short description of the data source and of the function of the connector.]
+This integration allows you to monitor and control **Bridge Technologies probe** devices.
 
 ## Key Features
 
-- **Feature 1 name**: small description of feature 1.
+- **Monitor your streams, services and pids**: Gain real-time insights into your streams, services, and PIDs with comprehensive monitoring. Detect issues instantly and ensure seamless content delivery.
 
-- **Feature 2 name**: small description of feature 2.
+- **Monitor your OTT channels**: Keep track of your Over-the-Top (OTT) channels with detailed analytics and performance metrics. Ensure a high-quality streaming experience by identifying and resolving issues proactively.
 
-- **Feature 3 name**: small description of feature 3.
+- **Configure the Return Data Path**: Set up and manage return data paths effortlessly, enabling efficient feedback loops of your monitored streams for enhanced monitoring and diagnostics.
 
-- **Feature 4 name**: small description of feature 4.
+- **Get an overview of all ETR Checks**: Access a centralized overview of all ETSI TR 101 290 (ETR) checks to ensure compliance with broadcast standards. Quickly identify and resolve transport stream errors.
 
-- **Feature 5 name**: small description of feature 5.
+- **Retrieve the SCTE-35 Events**: Capture and analyze SCTE-35 events in real-time to manage ad insertion, content replacement, and blackout signaling effectively. Ensure accurate execution of scheduled content changes.
 
 ## Use Cases
 
 ### Use Cases 1
 
-**Challenge**: challenge description.
+**Keep track of all your services through your network**: Distributing signals efficiently throughout your network can be a complex challenge. By leveraging probes, you can continuously monitor the quality of your signals, services, and streams across your entire infrastructure.
 
-**Solution**: solution description.
+**Solution**: Integrate all your probes into your DataMiner system to gain real-time visibility and instant status updates across your entire network.
 
-**Benefit**: benefit(s) description.
+**Benefit**: Having access to all measurement results within a single centralized system empowers you to quickly detect anomalies and pinpoint the root cause of failures across multiple sites.
 
-### Use Cases 2
+![General](~/connector/images/BridgeTechProbeSeriesGeneral.png)
 
-**Challenge**: challenge description.
+![Tree View](~/connector/images/BridgeTechProbeSeriesTreeView.png)
 
-**Solution**: solution description.
-
-**Benefit**: benefit(s) description.
-
-### Use Cases 3
-
-**Challenge**: challenge description.
-
-**Solution**: solution description.
-
-**Benefit**: benefit(s) description.
+![OTT](~/connector/images/BridgeTechProbeSeriesOTT.png)
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **Prerequisite 1** is needed for...
+- **EII access** is needed to allow dataminer to communicate with the probes.
 
-- **Prerequisite 2** are needed for...
-
-- **Prerequisite 3** is required for...
+- **Probe licenses** some of the features available in the connector require an active license on the probe e.g. ETR, OTT, ...
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Bridge_Technologies_VB_Probe_Series_Technical).
