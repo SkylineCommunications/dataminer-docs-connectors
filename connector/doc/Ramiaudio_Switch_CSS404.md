@@ -28,29 +28,33 @@ The Ramiaudio Watchdog CSS404 connector controls the inputs, listens for traps f
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### SNMP main connection
+#### SNMP Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device.
+- **IP address/host**: [The polling IP or URL of the destination.]
+- **IP port**: [The IP port of the destination.]
+
 
 SNMP Settings:
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: The community string used when setting values on the device, by default *private*.
+- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
+- **Set community string**: [The community string used when setting values on the device. (default: *private*)]
 
-## Usage
 
-### General Page
+### Web Interface
 
-This page displays general information, such as the **Name** and **Version**.
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to use
+
+The General Page displays general information, such as the **Name** and **Version**.
 
 Note: To set the **System Date Time**, use the format **dd/MM/yyyy HH:mm:ss.**
 
@@ -64,22 +68,13 @@ Below the parameters, you can find the following buttons:
 - **Force SD**: Forces the **Switch Input** to *SD Card*, if the **SD Card** parameter is *Available*.
 - **Refresh All**: Polls every parameter in the connector again.
 
-### System Page
-
-This page contains controls and status information for the various inputs or parts of the device. The information in the table can be refreshed using the **Refresh** button.
+The System Page contains controls and status information for the various inputs or parts of the device. The information in the table can be refreshed using the **Refresh** button.
 
 Via a page button, you can access the **Input Status** table.
 
-### Traps Page
 
-The **Main Input**, **Backup Input**, **Active Physical Input**, **Active Input**, **Audio Output**, **Software Mode** and **Power 1 & 2 Trap** states can be found on this page. Each state is either *Invalid*, *Disabled*, or *Enabled*.
+The **Main Input**, **Backup Input**, **Active Physical Input**, **Active Input**, **Audio Output**, **Software Mode** and **Power 1 & 2 Trap** states can be found on the Traps Page. Each state is either *Invalid*, *Disabled*, or *Enabled*.
 
 The **Trap Destinations** table is displayed via a page button.
 
-### AES Error Page
-
-The **Error AES Table** is displayed on this page, which contains information such as the status of the **Validity** or **Confidence.**
-
-### Web Interface Page
-
-This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+The **Error AES Table** is displayed on the AES Error Page, which contains information such as the status of the **Validity** or **Confidence.**
