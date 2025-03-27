@@ -4018,6 +4018,11 @@
     topicUid: Connector_help_Generic_Webhook_Alarm_Table
   - name: Generic XML File Reader
     topicUid: Connector_help_Generic_XML_File_Reader
+  - name: Generic RabbitMQ Producer
+    topicUid: Connector_help_Generic_RabbitMQ_Producer
+    items:
+      - name: Generic RabbitMQ Producer Technical
+        topicUid: Connector_help_Generic_RabbitMQ_Producer_Technical
 - name: GeoSync Microwave
   items:
   - name: GeoSync Microwave 1+1 RCU LNA Series
