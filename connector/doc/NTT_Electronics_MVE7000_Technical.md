@@ -4,14 +4,11 @@ uid: Connector_help_NTT_Electronics_MVE7000_Technical
 
 # NTT Electronics MVE7000 Technical
 
-This connector is used to monitor and configure the **MVE7000** Encoder from **NTT Electronics**.
-
 ## About
 
-The **NTT Electronics MVE7000** is a high-performance HEVC IP encoder designed for ultra-low latency HD video transmission. 
-It supports H.265/HEVC encoding, multiple input interfaces (3G-SDI, HDMI), and features seamless IP transmission with FEC and ARQ for reliability.
+The **NTT Electronics MVE7000** is a high-performance HEVC IP encoder designed for ultra-low latency HD video transmission. It supports H.265/HEVC encoding, has multiple input interfaces (3G-SDI, HDMI), and features seamless IP transmission with FEC and ARQ for reliability.
 
-The **NTT Electronics MVE7000** connector is used to monitor and configure the **MVE7000** Encoder from **NTT Electronics**.
+The **NTT Electronics MVE7000** connector is used to monitor and configure the MVE7000 Encoder from NTT Electronics.
 
 ## Configuration
 
@@ -39,24 +36,22 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-This page displays general information about the device as well as the **Last Event** data.
-There are multiple page-button containing data about the **Device State** and **Device Interfaces** information.
+This page displays general information about the device as well as the **Last Event** data. Via page buttons, you can access information about the **device state** and **device interfaces**.
 
 > [!NOTE]
-> On the sub-page **PPPoE 1** parameter **PPPoE1 Gateway** shows as **Not Initialized** this a device issues.
-> The value is present on the web interface but not available via SNMP (OID exists but the device is not sending data for that parameter).
+> On the **PPPoE 1** subpage, the parameter **PPPoE1 Gateway** will show as *Not Initialized* because of an issue in the device. This value is present on the web interface but not available via SNMP (the OID exists but the device is not sending data for that parameter).
 
 ### Encode Input Status
 
-This page contains the **Encode Input Status** parameters, which displays the status of the encoder input parameters.
+This page displays the status of the encoder input parameters.
 
 ### Encode Status
 
-**Encode Status** page contains all the relevant parameters to the encoding status of the device.
+This page contains all the relevant parameters for the encoding status of the device.
 
 ### Streaming Status
 
-**Streaming Status** page displays all the relevant parameters to the streaming status of the device.
+This page displays all the relevant parameters for the streaming status of the device.
 
 ### Input/Output
 
@@ -76,7 +71,7 @@ This page contains all the relevant configuration parameters for the audio setti
 
 ### PID
 
-**PID** page contains all the PID information in regards to the device.
+This page contains all the PID information for the device.
 
 ### TS MUX
 
@@ -84,19 +79,19 @@ This page contains all the relevant configuration parameters for the TS MUX sett
 
 ### Streaming Common
 
-The page contains common parameters which apply to the available streams.
+The page contains common parameters that apply to the available streams.
 
-### Stream 1, Stream 2, Stream 3, Stream 4
+### Stream 1, Stream 2, Stream 3, and Stream 4
 
-These pages contain all the available configuration parameters for the Stream 1, Stream 2, Stream 3 and Stream 4 settings.
+These pages contain all the available configuration parameters for the Stream 1, Stream 2, Stream 3, and Stream 4 settings.
 
-### Control, Data1 and Data2 Interfaces
+### Control, Data1, and Data2 Interfaces
 
-The interfaces pages contain all the data in regards to the control, data1 and data2 device interfaces. The user has the ability to alter the settings of the device interfaces.
+The interfaces pages contain all the data with regards to the control, data 1, and data 2 device interfaces. You can also alter the settings of the device interfaces.
 
 ### System Settings
 
-This page allows you to view and configure the system settings. Such as the device **Time Zone**, **Date**, "**Time** and **NTP** data.
+This page allows you to view and configure the system settings, such as the device **Time Zone**, **Date**, **Time**, and **NTP** data.
 
 ### Preferences
 
@@ -104,8 +99,9 @@ This page allows you to view and configure the preset information.
 
 ### Traps
 
-The traps page contains a table containing all the relevant information regarding the traps that the device has sent.
-As well it contains a page buttons to the following sub-pages: **Last Trap Data** and **Clean up Configuration**.
+The traps page contains a table with all the relevant information regarding the traps that the device has sent.
 
-**Last Trap Data** displays the last trap data received from the device.
-**Clean up Configuration** contains parameters that will activate automatic cleanup of the traps table.
+It also contains page buttons to the following subpages:
+
+- **Last Trap Data**: Displays the last trap data received from the device.
+- **Clean up Configuration**: Contains parameters that will activate automatic cleanup of the traps table.
