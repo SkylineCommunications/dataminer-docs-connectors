@@ -756,6 +756,9 @@
     topicUid: Connector_help_Asentria_SiteBoss_340
   - name: Asentria SiteBoss 360
     topicUid: Connector_help_Asentria_SiteBoss_360
+    items:
+      - name: Asentria SiteBoss 360 Technical
+        topicUid: Connector_help_Asentria_SiteBoss_360_Technical
   - name: Asentria SiteBoss 410
     topicUid: Connector_help_Asentria_SiteBoss_410
   - name: Asentria SiteBoss 450
