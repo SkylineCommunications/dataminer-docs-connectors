@@ -4572,6 +4572,13 @@
     topicUid: Connector_help_Hirschmann_Multimedia_Rover_TAB7
   - name: Hirschmann Multimedia Rover TAB7 Manager
     topicUid: Connector_help_Hirschmann_Multimedia_Rover_TAB7_Manager
+- name: Hitomi
+  items:
+  - name: Hitomi Matchbox
+    topicUid: Connector_help_Hitomi_Matchbox
+    items:
+      - name: Hitomi Matchbox Technical
+        topicUid: Connector_help_Hitomi_Matchbox_Technical_Page
 - name: Honeywell
   items:
   - name: Honeywell Notifier NF3000
