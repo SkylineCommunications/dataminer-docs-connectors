@@ -1988,6 +1988,9 @@
     topicUid: Connector_help_CEFD_SLM-5650A_SNMP
   - name: CEFD SLM-5650B SNMP
     topicUid: Connector_help_CEFD_SLM-5650B_SNMP
+    items:
+      - name: CEFD SLM-5650B SNMP Technical
+        topicUid: Connector_help_CEFD_SLM-5650B_SNMP_Technical
   - name: CEFD Spectrum VUE-2
     topicUid: Connector_help_CEFD_Spectrum_VUE-2
   - name: CEFD Spectrum VUE-8
