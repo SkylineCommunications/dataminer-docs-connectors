@@ -2557,6 +2557,11 @@
   items:
   - name: Deep Sea Electronics DSE74XX MKII
     topicUid: Connector_help_Deep_Sea_Electronics_DSE74XX_MKII
+  - name: Deep Sea Electronics DSE8620 MkII
+    topicUid: Connector_help_Deep_Sea_Electronics_DSE8620_MkII
+    items:
+      - name: Deep Sea Electronics DSE8620 MkII Technical
+        topicUid: Connector_help_Deep_Sea_Electronics_DSE8620_MkII_Technical
 - name: DEIF
   items:
   - name: DEIF AGC 200
