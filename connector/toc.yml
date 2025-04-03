@@ -5852,6 +5852,9 @@
     topicUid: Connector_help_Mitec_WTX-5964xx-70-ES-xx
   - name: Mitec ALGA
     topicUid: Connector_help_Mitec_ALGA
+    items:
+    - name: Mitec ALGA Technical
+      topicUid: Connector_help_Mitec_ALGA_Technical
 - name: Miteq
   items:
   - name: Miteq 1+1 Redundant Line Amplifier

@@ -4,27 +4,9 @@ uid: Connector_help_Mitec_ALGA_Technical
 
 # Mitec ALGA
 
-This connector is used to monitor and configure a Mitec ALGA device.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector is used to monitor and configure a Mitec ALGA device.
 
 ## Configuration
 
@@ -53,9 +35,12 @@ The web interface is only accessible when the client machine has network access 
 These are the main data pages of the connector:
 
 - The **General** page provides general information about the device.
-- On the **Control** page, you can adjust the Mute and Gain settings for BUCs.
-- Information about HPA Units is available on the **Status** page.
+
+- On the **Control** page, you can adjust the mute and gain settings for BUCs.
+
+- Information about HPA units is available on the **Status** page.
+
 - Alarm logs are available on the **Alarm Log** page.
 
-**NOTE**
-Read and write parameters for the KPIs on the **Control** page are handled separately. To ensure accuracy, the read parameter is updated immediately after setting, and a retry mechanism is implemented.
+> [!NOTE]
+> Read and write parameters for the KPIs on the **Control** page are handled separately. To ensure accuracy, the read parameter is updated immediately after the write parameter is set, and a retry mechanism has been implemented.
