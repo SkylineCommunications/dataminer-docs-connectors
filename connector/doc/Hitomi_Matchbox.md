@@ -10,10 +10,11 @@ The **Hitomi MatchBox** connector provides seamless integration between the Hito
 
 ## Key Features
 
-- **Hardware monitoring**: Intuitive overview on temperature and fans.
-- **Audio analysis**: Quality and latency of an audio stream will be presented.
-- **Multi Analysis**: Up to four analyses can be performed simultaneously. 
+- **Hardware monitoring**: Intuitive overview of temperature and fans.
+- **Audio analysis**: View the quality and latency of audio streams.
+- **Multi-analysis**: Up to four analyses can be performed simultaneously. 
 
+## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Hitomi_Matchbox_Technical_Page).
