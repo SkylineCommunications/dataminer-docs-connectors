@@ -32,7 +32,7 @@ The element created with this connector consists of the data pages detailed belo
 
 On this page, you can **upload** the following **CSV files**:
 
-- **Modbus List**: File with the register address, description, multiplier and units of the parameters. This file must be created manually based on information from the manual.
+- **Modbus List**: File with the register address, description, multiplier, and units of the parameters. This file must be created manually based on information from the manual.
 - Three files that can be exported from the device, containing the address and description of the parameters.
 
 ### Modbus Data Table
