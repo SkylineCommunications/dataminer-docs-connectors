@@ -4,9 +4,9 @@ uid: Connector_help_Skyline_Job_Manager_Technical
 
 # Skyline Job Manager
 
-This connector exposes a REST API that can be used to manage jobs and distribute them to operational domains (DataMiner SRM applications).
-
 ## About
+
+This connector exposes a REST API that can be used to manage jobs and distribute them to operational domains (DataMiner SRM applications).
 
 ### 1.0.3 Range (SLC Main)
 

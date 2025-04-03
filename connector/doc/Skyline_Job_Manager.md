@@ -4,6 +4,8 @@ uid: Connector_help_Skyline_Job_Manager
 
 # Skyline Job Manager
 
+## About
+
 This connector exposes a REST API that can be used to manage jobs and distribute them to operational domains (DataMiner SRM applications). In this context, the Skyline Job Manager connector works as an intermediary between third-party applications and the SRM Booking module.
 
 A DataMiner job is a domain-specific description to set up SRM services. DataMiner Domain Orchestrators will be able to convert a DataMiner job into one or multiple DataMiner bookings. Whereas a job is an administrative description of a service that needs to be set up, a DataMiner booking is a detailed definition of the service, the configuration profiles and parameters, the exact resources to be used, the detailed schedule, etc.
@@ -12,9 +14,7 @@ The purpose of this connector is to manage and store a collection of jobs. Jobs 
 
 ![Visual Overview](~/connector/images/Skyline_Job_Manager_Visual_Overview.png)
 
-## About
-
-### Key Features
+## Key Features
 
 - **REST API**: Exposes a REST API that allows users and third-party applications to push and retrieve DataMiner jobs to/from the DataMiner System.
 - **Domain-specific**: Enables users to specify jobs per domain.

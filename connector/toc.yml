@@ -4,6 +4,9 @@
   items:
   - name: 2WCOM DAB-4c
     topicUid: Connector_help_2WCOM_DAB-4c
+    items:
+    - name: 2WCOM DAB-4c Technical
+      topicUid: Connector_help_2WCOM_DAB-4c_Technical
   - name: 2WCOM F01
     topicUid: Connector_help_2WCOM_F01
   - name: 2WCOM FlexDSR04+
@@ -753,6 +756,9 @@
     topicUid: Connector_help_Asentria_SiteBoss_340
   - name: Asentria SiteBoss 360
     topicUid: Connector_help_Asentria_SiteBoss_360
+    items:
+      - name: Asentria SiteBoss 360 Technical
+        topicUid: Connector_help_Asentria_SiteBoss_360_Technical
   - name: Asentria SiteBoss 410
     topicUid: Connector_help_Asentria_SiteBoss_410
   - name: Asentria SiteBoss 450
@@ -1711,6 +1717,9 @@
     topicUid: Connector_help_Bridge_Technologies_RDP
   - name: Bridge Technologies VB220
     topicUid: Connector_help_Bridge_Technologies_VB220
+    items:
+      - name: Bridge Technologies VB220 Technical
+        topicUid: Connector_help_Bridge_Technologies_VB220_Technical
   - name: Bridge Technologies VB288
     topicUid: Connector_help_Bridge_Technologies_VB288
   - name: Bridge Technologies VB440
@@ -1719,6 +1728,9 @@
     topicUid: Connector_help_Bridge_Technologies_VBC_Trap_Receiver
   - name: Bridge Technologies VB Probe Series
     topicUid: Connector_help_Bridge_Technologies_VB_Probe_Series
+    items:
+      - name: Bridge Technologies VB Probe Series Technical
+        topicUid: Connector_help_Bridge_Technologies_VB_Probe_Series_Technical
 - name: British Telecom
   items:
   - name: British Telecom - 21C Ingest Probe Monitoring Controller
@@ -2554,6 +2566,11 @@
   items:
   - name: Deep Sea Electronics DSE74XX MKII
     topicUid: Connector_help_Deep_Sea_Electronics_DSE74XX_MKII
+  - name: Deep Sea Electronics DSE8620 MkII
+    topicUid: Connector_help_Deep_Sea_Electronics_DSE8620_MkII
+    items:
+      - name: Deep Sea Electronics DSE8620 MkII Technical
+        topicUid: Connector_help_Deep_Sea_Electronics_DSE8620_MkII_Technical
 - name: DEIF
   items:
   - name: DEIF AGC 200
@@ -3988,6 +4005,11 @@
     topicUid: Connector_help_Generic_DataMiner_Log_Reader
   - name: Generic Data Burst Logger
     topicUid: Connector_help_Generic_Data_Burst_Logger
+  - name: Generic Data Simulator
+    topicUid: Connector_Generic_Data_Simulator
+    items:
+      - name: Generic Data Simulator Technical
+        topicUid: Connector_Generic_Data_Simulator_Technical
   - name: Generic DCF Waveguide Switch
     topicUid: Connector_help_Generic_DCF_Waveguide_Switch
   - name: Generic Dialog Integration Manager
@@ -4274,6 +4296,11 @@
     topicUid: Connector_help_Grass_Valley_Acappella
   - name: Grass Valley Alchemist Live
     topicUid: Connector_help_Grass_Valley_Alchemist_Live
+  - name: Grass Valley AMPP Clip Player HD Application
+    topicUid: Connector_help_Grass_Valley_AMPP_Clip_Player_HD_Application
+    items:
+      - name: Grass Valley AMPP Clip Player HD Application Technical
+        topicUid: Connector_help_Grass_Valley_AMPP_Clip_Player_HD_Application_Technical
   - name: Grass Valley AMPP Elastic Recorder Application
     topicUid: Connector_help_Grass_Valley_AMPP_Elastic_Recorder_Application
     items:
@@ -4289,6 +4316,11 @@
     items:
     - name: Grass Valley AMPP SRT Input Application Technical
       topicUid: Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical
+  - name: Grass Valley AMPP Virtual Crosspoint Application
+    topicUid: Connector_help_Grass_Valley_AMPP_Virtual_Crosspoint_Application
+    items:
+    - name: Grass Valley AMPP Virtual Crosspoint Application Technical
+      topicUid: Connector_help_Grass_Valley_AMPP_Virtual_Crosspoint_Application_Technical
   - name: Grass Valley Audio Live
     topicUid: Connector_help_Grass_Valley_Audio_Live
   - name: Grass Valley Biometrics AP
@@ -4554,6 +4586,13 @@
     topicUid: Connector_help_Hirschmann_Multimedia_Rover_TAB7
   - name: Hirschmann Multimedia Rover TAB7 Manager
     topicUid: Connector_help_Hirschmann_Multimedia_Rover_TAB7_Manager
+- name: Hitomi
+  items:
+  - name: Hitomi Matchbox
+    topicUid: Connector_help_Hitomi_Matchbox
+    items:
+      - name: Hitomi Matchbox Technical
+        topicUid: Connector_help_Hitomi_Matchbox_Technical_Page
 - name: Honeywell
   items:
   - name: Honeywell Notifier NF3000
@@ -5008,6 +5047,13 @@
     topicUid: Connector_help_IRT_IRPC_Series
   - name: IRT SSPA Series
     topicUid: Connector_help_IRT_SSPA_Series
+- name: ISS Tracker
+  items:
+  - name: ISS Tracker
+    topicUid: Connector_help_ISS_Tracker
+    items:
+    - name: ISS Tracker Technical
+      topicUid: Connector_help_ISS_Tracker_Technical
 - name: Itelco
   items:
   - name: Itelco DVB-T2 Modulator
@@ -5891,6 +5937,11 @@
     topicUid: Connector_help_Mitec_Antenna_Switch_Control_Unit
   - name: Mitec WTX-5964xx-70-ES-xx
     topicUid: Connector_help_Mitec_WTX-5964xx-70-ES-xx
+  - name: Mitec ALGA
+    topicUid: Connector_help_Mitec_ALGA
+    items:
+    - name: Mitec ALGA Technical
+      topicUid: Connector_help_Mitec_ALGA_Technical
 - name: Miteq
   items:
   - name: Miteq 1+1 Redundant Line Amplifier
@@ -6165,6 +6216,11 @@
     topicUid: Connector_help_NBCS_Roadkit_Manager
 - name: NBCU
   items:
+  - name: NBCU Amagi Channel Status
+    topicUid: Connector_help_NBCU_Amagi_Channel_Status
+    items:
+      - name: NBCU Amagi Channel Status Technical
+        topicUid: Connector_help_NBCU_Amagi_Channel_Status_Technical
   - name: NBCU Ocellus Data Collector
     topicUid: Connector_help_NBCU_Ocellus_Data_Collector
 - name: ND Satcom
@@ -6696,8 +6752,18 @@
     topicUid: Connector_help_NTT_Electronics_HVE9230
   - name: NTT Electronics MVD5000
     topicUid: Connector_help_NTT_Electronics_MVD5000
+  - name: NTT Electronics MVD7000
+    topicUid: Connector_help_NTT_Electronics_MVD7000
+    items:
+    - name: NTT Electronics MVD7000 Technical
+      topicUid: Connector_help_NTT_Electronics_MVD7000_Technical
   - name: NTT Electronics MVE5000
     topicUid: Connector_help_NTT_Electronics_MVE5000
+  - name: NTT Electronics MVE7000
+    topicUid: Connector_help_NTT_Electronics_MVE7000
+    items:
+    - name: NTT Electronics MVE7000 Technical
+      topicUid: Connector_help_NTT_Electronics_MVE7000_Technical
   - name: NTT Electronics XVE9300
     topicUid: Connector_help_NTT_Electronics_XVE9300
   - name: NTT Electronics XVE9310
@@ -6916,6 +6982,13 @@
     topicUid: Connector_help_Papouch_T2HE
   - name: Papouch TME
     topicUid: Connector_help_Papouch_TME
+- name: PatchAmp
+  items:
+    - name: PatchAmp Frame Monitor
+      topicUid: Connector_help_PatchAmp_Frame_Monitor
+      items:
+      - name: PatchAmp Frame Monitor Technical
+        topicUid: Connector_help_PatchAmp_Frame_Monitor_Technical
 - name: Paradigm
   items:
   - name: Paradigm Redundancy Controller
@@ -7489,6 +7562,11 @@
     topicUid: Connector_help_Ross_Video_Iggy-AES16.16
   - name: Ross Video Matrix
     topicUid: Connector_help_Ross_Video_Matrix
+  - name: Ross Video MC1
+    topicUid: Connector_help_Ross_Video_MC1
+    items:
+      - name: Ross Video MC1 Technical
+        topicUid: Connector_help_Ross_Video_MC1_Technical
   - name: Ross Video NEWT-HDMI-RX
     topicUid: Connector_help_Ross_Video_NEWT-HDMI-RX
   - name: Ross Video Newt-IPR-3G-4S
@@ -8175,7 +8253,7 @@
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
-    name: Skyline Masking Services
+  - name: Skyline Masking Services
     topicUid: Connector_help_Skyline_Masking_Services
     items:
        - name: Skyline Masking Service Technical
