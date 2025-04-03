@@ -41,4 +41,4 @@ The Licensing page presents a comprehensive list of all the licensed options ava
 
 ### Latency Page
 
-The Latencies page displays latency measurements and the corresponding latency quality level values for each analyzer.
+The Latency page displays latency measurements and the corresponding latency quality level values for each analyzer.
