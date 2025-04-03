@@ -6,7 +6,7 @@ uid: Connector_help_Asentria_SiteBoss_360_Technical
 
 ## About
 
-This connector is designed to monitor the Asentria SiteBoss 360 and connected Event Sensor Points.
+This connector is designed to monitor the Asentria SiteBoss 360 and connected event sensor points.
 
 ## Configuration
 
@@ -28,8 +28,6 @@ SNMP Settings:
 
 ## How to Use
 
-### Event Sensor Points
+The connector has dedicated pages with monitoring and configuration tables for each of the different types of event sensor points: Analog Inputs, Contact Closures, Humidity Sensors, Outputs, and Temperature Sensors.
 
-The Event Sensor Points are separated by their types; i.e. Analog Inputs, Contact Closures, Humidity Sensors, Outputs, Temperature Sensors, with the monitoring and configuration tables on the same page.
-
-In the Configuration table, each sensor point can be individually configured to change their states, thresholds, severities, and more dependent on the type of sensor point. For more information of each configurable parameter, refer to the corresponding information subtext.
+In the configuration tables, each sensor point can be individually configured to change its states, thresholds, severities, and more, depending on the type of sensor point. For more information about each configurable parameter, refer to the information displayed for the parameter in DataMiner.
