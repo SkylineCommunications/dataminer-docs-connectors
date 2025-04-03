@@ -26,5 +26,10 @@ The SRT Input is an application connector for the GV AMPP (Agile Media Processin
 
 ## Technical info
 
+### Prerequisites
+
+- **Grass Valley AMPP Manager** is required for this connector to function properly.
+- **DataMiner version 10.3 or higher** is required for compatibility with the Grass Valley AMPP Clip Player HD Application connector.
+
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for the Grass Valley AMPP SRT Input Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical).

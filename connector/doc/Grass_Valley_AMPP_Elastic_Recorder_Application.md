@@ -24,6 +24,11 @@ The Elastic Recorder is an application connector for the GV AMPP (Agile Media Pr
 > [!NOTE]
 > While this connector is only applicable for Elastic Recorder workloads, standalone connectors for other workload types are also available.
 
+### Prerequisites
+
+- **Grass Valley AMPP Manager** is required for this connector to function properly.
+- **DataMiner version 10.3 or higher** is required for compatibility with the Grass Valley AMPP Clip Player HD Application connector.
+
 ## Technical info
 
 > [!NOTE]
