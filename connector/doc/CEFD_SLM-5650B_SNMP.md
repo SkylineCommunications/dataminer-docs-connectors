@@ -10,18 +10,6 @@ The Comtech EF Data (CEFD) SLM-5650B satellite modem uses state-of-the-art modul
 
 This connector can be used to monitor and control a CEFD SLM-5650B satellite modem through SNMP.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.3.1                       |
-
 ## Installation and configuration
 
 ### Creation
@@ -94,9 +82,6 @@ This page displays the modem statistics, including the **Minimum** and **Average
 
 This page displays the modem alarms, including **Unit Alarms**, **Transmit Alarms**, **Receive Alarms** and **Interface Alarms**.
 
-### Mode - B
-
-This page is only available when the modem **Circuit ID** is **Modem - B**. If you have the required security level, you can view and configure the different modem parameters here, including **Username**, **Password**, **Transmission Power**, **Transmission Carrier Dithering**, **AUPC** and **ASYNC** parameters.
 
 ### Web Interface
 

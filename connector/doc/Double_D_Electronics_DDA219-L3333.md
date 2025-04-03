@@ -17,8 +17,7 @@ The **Double D Electronics DDA219-L3333 connector** is an efficient solution for
 
 ### Prerequisites
 
-- **DataMiner version 10.2 or higher** is required for compatibility with the Double D Electronics DDA219-L3333 connector.
-- **Network and serial access** to the Double D Electronics DDA219-L3333 controller are essential, including IP address, port, and serial communication capabilities.
+**Network and serial access** to the Double D Electronics DDA219-L3333 controller are essential, including IP address, port, and serial communication capabilities.
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Double D Electronics DDA219-L3333, refer to the [technical help page](xref:Connector_help_Double_D_Electronics_DDA219-L3333_Technical).
