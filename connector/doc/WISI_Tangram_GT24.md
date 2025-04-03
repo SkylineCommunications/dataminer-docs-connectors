@@ -4,7 +4,7 @@ uid: Connector_help_WISI_Tangram_GT24
 
 # WISI Tangram GT24
 
-The **WISI Tangram GT24** connector is used to monitor and control the Tangram GT 24 W module. The GT 24 W module allows you to add up to 8 services in QAM (DVB-C) format per module to your network.
+The **WISI Tangram GT24** connector is used to monitor and control the Tangram GT 24 W module. The GT 24 W module allows you to add up to 8 services in QAM (DVB-T) format per module to your network.
 
 ## About
 
