@@ -3155,6 +3155,11 @@
     topicUid: Connector_help_ETL_Systems_23198_-_e278
   - name: ETL Systems 23199
     topicUid: Connector_help_ETL_Systems_23199
+  - name: ETL Systems 23222 - 23223
+    topicUid: Connector_help_ETL_Systems_23222_-_23223
+    items:
+      - name: ETL Systems 23222 - 23223 Techinical
+        topicUid: Connector_help_ETL_Systems_23222_-_23223_Technical
   - name: ETL Systems 23235
     topicUid: Connector_help_ETL_Systems_23235
   - name: ETL Systems 24500
