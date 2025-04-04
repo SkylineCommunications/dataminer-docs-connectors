@@ -54,9 +54,19 @@ The element created with this connector consists of the following data pages:
 
 - **General**: Displays configuration parameters required for the HTTP requests, as well as the **Nodes** tables.
 
+- **Device Management**: Contains DVE configuration like:
+	- DVE Auto Creation
+		- Toggle that specifies whether DVEs are automatically created.
+		- Requires Default View Name to be filled.
+	- Default View Name
+		- Specifies the view that the DVE will be created under.
+	- Remove Unavailable Devices
+		- Button which when clicked, removes DVEs and Device Management table rows for unavailable node devices.
+		- Please note that when DVE is deleted, all data (Alarming/Trending) from it will be gone as well.
+
   The **Device Elements** subpage displays a table of running DVEs.
 
-- **Device Management**: Contains the DVE configuration.
+- **Nodes**: Displays the Ciena node devices monitored by the Blue Planet Operate.
 
 - **Alarms**: Displays active alarms from the nodes.
 
