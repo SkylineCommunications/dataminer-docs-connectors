@@ -4,7 +4,6 @@
       {
         "files": [
           "connector/**.md",
-          "fonts/**",
           "**/toc.yml",
           "toc.yml",
           "*.md"
@@ -19,6 +18,7 @@
       {
         "files": [
           "connector/images/**",
+          "fonts/**",
           "staticwebapp.config.json",
           "404.html"
         ]
