@@ -259,6 +259,11 @@
     topicUid: Connector_help_AIRSYS_UNICOOL_ASMUC
 - name: AJA
   items:
+  - name: AJA Bridge Live
+    topicUid: Connector_help_AJA_Bridge_Live
+    items:
+      - name: AJA Bridge Live Technical
+        topicUid: Connector_help_AJA_Bridge_Live_Technical
   - name: AJA IPR-10G2-HDMI
     topicUid: Connector_help_AJA_IPR-10G2-HDMI
   - name: AJA IPT-10G2-HDMI
