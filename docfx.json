@@ -4,6 +4,7 @@
       {
         "files": [
           "connector/**.md",
+          "fonts/**",
           "**/toc.yml",
           "toc.yml",
           "*.md"
