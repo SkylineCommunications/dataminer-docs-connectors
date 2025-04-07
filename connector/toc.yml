@@ -7121,8 +7121,11 @@
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
 - name: Ramiaudio
   items:
-  - name: Ramiaudio Switch CS404
-    topicUid: Connector_help_Ramiaudio_Switch_CS404
+  - name: Ramiaudio Switch CSS404
+    topicUid: Connector_help_Ramiaudio_Switch_CSS404
+    items:
+    - name: Ramiaudio Switch CSS404 Technical
+      topicUid: Connector_help_Ramiaudio_Switch_CSS404_Technical
   - name: Ramiaudio Switch CSS600
     topicUid: Connector_help_Ramiaudio_Switch_CSS600
   - name: Ramiaudio Watchdog CS510
