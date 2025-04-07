@@ -4963,7 +4963,7 @@
     topicUid: Connector_help_InfluxData_Kapacitor
     items:
       - name: InfluxData Kapacitor Technical
-      topicUid: Connector_help_InfluxData_Kapacitor_Technical
+        topicUid: Connector_help_InfluxData_Kapacitor_Technical
 - name: Infoblox
   items:
   - name: Infoblox NIOS Platform
