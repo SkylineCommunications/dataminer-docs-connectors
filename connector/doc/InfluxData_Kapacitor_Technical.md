@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_InfluxData_Kapacitor
+uid: Connector_help_InfluxData_Kapacitor_Technical
 ---
 
 # InfluxData Kapacitor
