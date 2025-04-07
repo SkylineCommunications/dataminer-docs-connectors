@@ -10,7 +10,7 @@ This is a DataMiner connector for the **InfluxData Kapacitor**. Using this conne
 
 ### Key Features
 
-- **Alarm Monitoring**: Alarms can be monitored based on the parameters configured in the Configuration page.
+- **Alarm Monitoring**: Alarms can be monitored based on the parameters configured on the Configuration page.
 
 ## Prerequisites
 
