@@ -7422,6 +7422,8 @@
     topicUid: Connector_help_Rohde_Schwarz_DVM100L
   - name: Rohde Schwarz DVMS
     topicUid: Connector_help_Rohde_Schwarz_DVMS
+  - name: Rohde Schwarz ETX-T
+    topicUid: Connector_help_Rohde_Schwarz_ETX-T
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
   - name: Rohde Schwarz FPL1026
