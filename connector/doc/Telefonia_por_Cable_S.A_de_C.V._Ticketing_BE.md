@@ -1,4 +1,6 @@
-uid: Connector_marketing_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE
+---
+uid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE
+---
 
 # Telefonia por Cable S.A. de C.V. Ticketing BE
 
@@ -8,21 +10,17 @@ The Telefonia por Cable S.A. de C.V. Ticketing BE connector facilitates the send
 
 ## Key Features
 
-* **Ticket Sending and Updating**: Sends and updates tickets processed by the Telefonia por Cable S.A. de C.V. Ticketing WM connector.
-
-* **Cherwell and SFyC Platform Integration**: Communicates with Cherwell and SFyC Platforms via their APIs.
-
-* **Ticket Processing Control**: Enables or disables ticket processing.
-
-* **Retry Mechanism**: Configures the number of retries for failed ticket operations.
-
-* **Batch Sending**: Sends tickets in batches to optimize API requests.
+- **Ticket sending and updating**: Sends and updates tickets processed by the Telefonia por Cable S.A. de C.V. Ticketing WM connector.
+- **Cherwell and SFyC Platform integration**: Communicates with Cherwell and SFyC Platforms via their APIs.
+- **Ticket processing control**: Enables or disables ticket processing.
+- **Retry mechanism**: Configures the number of retries for failed ticket operations.
+- **Batch sending**: Sends tickets in batches to optimize API requests.
 
 ## Use Cases
 
 ### Synchronizing Tickets with External Platforms
 
-**Challenge**: Telefonia por Cable S.A. de C.V. needs to ensure that tickets processed in their internal system are accurately reflected in external platforms like Cherwell and SFyC.
+**Challenge**: Tickets processed in the internal system of Telefonia por Cable S.A. de C.V. must be accurately reflected in external platforms like Cherwell and SFyC.
 
 **Solution**: The Telefonia por Cable S.A. de C.V. Ticketing BE connector automatically sends and updates ticket information to these external platforms via their APIs.
 
@@ -30,7 +28,7 @@ The Telefonia por Cable S.A. de C.V. Ticketing BE connector facilitates the send
 
 ### Handling Ticket Processing Errors
 
-**Challenge**: Network issues or API downtime can cause failures when sending or updating tickets, potentially leading to data loss or inconsistencies.
+**Challenge**: Network issues or API downtime can cause failures when tickets are sent or updated, potentially leading to data loss or inconsistencies.
 
 **Solution**: The connector includes a configurable retry mechanism that attempts to resend failed ticket operations. Tickets that exceed the maximum number of retries are marked as errors for later review.
 
@@ -46,16 +44,5 @@ The Telefonia por Cable S.A. de C.V. Ticketing BE connector facilitates the send
 
 ## Technical Reference
 
-### Prerequisites
-
-* **HTTP Connection**: Requires an HTTP connection with the IP address/host, IP port, and device address of the system hosting the ticket operation endpoints.
-
-* **Ticketing Processing Configuration**: Specifies if the tickets will be processed and sent to the respective API.
-
-* **Max Retries Configuration**: Specifies how many retries a ticket has for each operation.
-
-* **Max Tickets Per Request**: Specifies how many tickets are sent in each operation request.
-
->   \[!NOTE\]
->
->   For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE).
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE_Technical).
