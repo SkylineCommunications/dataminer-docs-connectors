@@ -6709,6 +6709,8 @@
   items:
   - name: Novella Satcoms B763
     topicUid: Connector_help_Novella_Satcoms_B763
+  - name: Novella Satcoms B356
+    topicUid: Connector_help_Novella_Satcoms_B356
 - name: Novelsat
   items:
   - name: Novelsat NS1000
