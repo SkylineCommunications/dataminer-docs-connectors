@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Ciena_Blue_Planet_Operate_Node
+uid: Connector_help_Ciena_Blue_Planet_Operate_Network_Element
 ---
 
-# Ciena Blue Planet Operate - Node
+# Ciena Blue Planet Operate - Network Element
 
 ## About
 
