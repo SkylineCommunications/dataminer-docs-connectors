@@ -6714,6 +6714,11 @@
   items:
   - name: Novella Satcoms B763
     topicUid: Connector_help_Novella_Satcoms_B763
+  - name: Novella Satcoms B356
+    topicUid: Connector_help_Novella_Satcoms_B356
+    items:
+    - name: Novella Satcoms B356 Technical
+      topicUid: Connector_help_Novella_Satcoms_B356_Technical
 - name: Novelsat
   items:
   - name: Novelsat NS1000
@@ -7445,6 +7450,11 @@
     topicUid: Connector_help_Rohde_Schwarz_DVM100L
   - name: Rohde Schwarz DVMS
     topicUid: Connector_help_Rohde_Schwarz_DVMS
+  - name: Rohde Schwarz ETX-T
+    topicUid: Connector_help_Rohde_Schwarz_ETX-T
+    items:
+    - name: Rohde Schwarz ETX-T
+      topicUid: Connector_help_Rohde_Schwarz_ETX-T_Technical
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
   - name: Rohde Schwarz FPL1026
