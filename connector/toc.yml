@@ -2101,8 +2101,8 @@
     items:
     - name: Ciena Blue Planet Operate Technical
       topicUid: Connector_help_Ciena_Blue_Planet_Operate_Technical
-    - name: Ciena Blue Planet Operate - Node
-      topicUid: Connector_help_Ciena_Blue_Planet_Operate_Node
+    - name: Ciena Blue Planet Operate - Network Element
+      topicUid: Connector_help_Ciena_Blue_Planet_Operate_Network_Element
   - name: Ciena 5160 Service Aggregation Switch
     topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
   - name: Ciena 5170 Packetwave Platform
