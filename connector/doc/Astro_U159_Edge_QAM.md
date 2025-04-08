@@ -14,7 +14,7 @@ With this connector, it is possible to gather and view information from the devi
 |--------------------|----------------------------|----------|---------------|
 | 1.0.0.x [Obsolete] | IP-to-QAM signal converter | -        | -             |
 | 1.0.1.x            | Changed display key of the IP Interfaces and Active Alarms table.  | 1.0.0.x        | -             |
-| 1.0.2.x [SLC Main] | Unicode encoding support (ö, ü, ß, ...).  | 1.0.1.x        | BREAKING! The Unicode setting is not compatible with existing elements, please duplicate or create new elements when moving to this range. |
+| 1.0.2.x [SLC Main] | Unicode encoding support (ö, ü, ß, etc.).  | 1.0.1.x        | **BREAKING CHANGE**: The Unicode setting is not compatible with existing elements. Please duplicate or create new elements when moving to this range. |
 
 ### Product Info
 
