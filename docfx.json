@@ -18,6 +18,7 @@
       {
         "files": [
           "connector/images/**",
+          "fonts/**",
           "staticwebapp.config.json",
           "404.html"
         ]
