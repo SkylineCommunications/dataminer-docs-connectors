@@ -25,7 +25,6 @@ The Warner Bros Discovery Sports DAZN Live Stream API connector can be used to i
 
 ### Prerequisites
 
-- **DataMiner version 10.2 or higher** is required for compatibility with the connector.
 - **DAZN API permissions** are needed to retrieve and ingest the data.
 - **Network access** to the DAZN API is essential, including IP address and UDP port (default: 443).
 
