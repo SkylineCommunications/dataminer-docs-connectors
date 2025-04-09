@@ -2024,6 +2024,9 @@
     topicUid: Connector_help_CEFD_SLM-5650A_SNMP
   - name: CEFD SLM-5650B SNMP
     topicUid: Connector_help_CEFD_SLM-5650B_SNMP
+    items:
+      - name: CEFD SLM-5650B SNMP Technical
+        topicUid: Connector_help_CEFD_SLM-5650B_SNMP_Technical
   - name: CEFD Spectrum VUE-2
     topicUid: Connector_help_CEFD_Spectrum_VUE-2
   - name: CEFD Spectrum VUE-8
@@ -2098,8 +2101,8 @@
     items:
     - name: Ciena Blue Planet Operate Technical
       topicUid: Connector_help_Ciena_Blue_Planet_Operate_Technical
-    - name: Ciena Blue Planet Operate - Node
-      topicUid: Connector_help_Ciena_Blue_Planet_Operate_Node
+    - name: Ciena Blue Planet Operate - Network Element
+      topicUid: Connector_help_Ciena_Blue_Planet_Operate_Network_Element
   - name: Ciena 5160 Service Aggregation Switch
     topicUid: Connector_help_Ciena_5160_Service_Aggregation_Switch
   - name: Ciena 5170 Packetwave Platform
@@ -3152,6 +3155,11 @@
     topicUid: Connector_help_ETL_Systems_23198_-_e278
   - name: ETL Systems 23199
     topicUid: Connector_help_ETL_Systems_23199
+  - name: ETL Systems 23222 - 23223
+    topicUid: Connector_help_ETL_Systems_23222_-_23223
+    items:
+      - name: ETL Systems 23222 - 23223 Techinical
+        topicUid: Connector_help_ETL_Systems_23222_-_23223_Technical
   - name: ETL Systems 23235
     topicUid: Connector_help_ETL_Systems_23235
   - name: ETL Systems 24500
@@ -4188,6 +4196,11 @@
     topicUid: Connector_help_Generic_Webhook_Alarm_Table
   - name: Generic XML File Reader
     topicUid: Connector_help_Generic_XML_File_Reader
+  - name: Generic RabbitMQ Producer
+    topicUid: Connector_help_Generic_RabbitMQ_Producer
+    items:
+      - name: Generic RabbitMQ Producer Technical
+        topicUid: Connector_help_Generic_RabbitMQ_Producer_Technical
 - name: GeoSync Microwave
   items:
   - name: GeoSync Microwave 1+1 RCU LNA Series
@@ -4413,6 +4426,8 @@
     topicUid: Connector_help_Haivision_Makito_X_Encoder
   - name: Haivision Makito X4 Platform
     topicUid: Connector_help_Haivision_Makito_X4_Platform
+  - name: Haivision Manager
+    topicUid: Connector_help_Haivision_Manager
   - name: Haivision Media Gateway
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
@@ -4949,6 +4964,11 @@
   items:
   - name: InfluxData InfluxDB Collector
     topicUid: Connector_help_InfluxData_InfluxDB_Collector
+  - name: InfluxData Kapacitor
+    topicUid: Connector_help_InfluxData_Kapacitor
+    items:
+      - name: InfluxData Kapacitor Technical
+        topicUid: Connector_help_InfluxData_Kapacitor_Technical
 - name: Infoblox
   items:
   - name: Infoblox NIOS Platform
@@ -6694,6 +6714,11 @@
   items:
   - name: Novella Satcoms B763
     topicUid: Connector_help_Novella_Satcoms_B763
+  - name: Novella Satcoms B356
+    topicUid: Connector_help_Novella_Satcoms_B356
+    items:
+    - name: Novella Satcoms B356 Technical
+      topicUid: Connector_help_Novella_Satcoms_B356_Technical
 - name: Novelsat
   items:
   - name: Novelsat NS1000
@@ -7240,8 +7265,11 @@
     items:
     - name: Ramiaudio AUF600 Technical
       topicUid: Connector_help_Ramiaudio_AUF600_Technical
-  - name: Ramiaudio Switch CS404
-    topicUid: Connector_help_Ramiaudio_Switch_CS404
+  - name: Ramiaudio Switch CSS404
+    topicUid: Connector_help_Ramiaudio_Switch_CSS404
+    items:
+    - name: Ramiaudio Switch CSS404 Technical
+      topicUid: Connector_help_Ramiaudio_Switch_CSS404_Technical
   - name: Ramiaudio Switch CSS600
     topicUid: Connector_help_Ramiaudio_Switch_CSS600
   - name: Ramiaudio Watchdog CS510
@@ -7422,6 +7450,11 @@
     topicUid: Connector_help_Rohde_Schwarz_DVM100L
   - name: Rohde Schwarz DVMS
     topicUid: Connector_help_Rohde_Schwarz_DVMS
+  - name: Rohde Schwarz ETX-T
+    topicUid: Connector_help_Rohde_Schwarz_ETX-T
+    items:
+    - name: Rohde Schwarz ETX-T
+      topicUid: Connector_help_Rohde_Schwarz_ETX-T_Technical
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
   - name: Rohde Schwarz FPL1026
@@ -9088,6 +9121,11 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
   - name: Telefonia por Cable S.A de C.V. Ticketing WM
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM
+  - name: Telefonia por Cable S.A. de C.V. Ticketing BE
+    topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE
+    items:
+    - name: Telefonia por Cable S.A. de C.V. Ticketing BE Technical
+      topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE_Technical
   - name: Telefonia por Cable S.A de C.V. Topology Aggregator
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Topology_Aggregator
 - name: Telefonica
@@ -10128,6 +10166,8 @@
     topicUid: Connector_help_WISI_Tangram_GT22
   - name: WISI Tangram GT23
     topicUid: Connector_help_WISI_Tangram_GT23
+  - name: WISI Tangram GT24
+    topicUid: Connector_help_WISI_Tangram_GT24
   - name: WISI Tangram GT31
     topicUid: Connector_help_WISI_Tangram_GT31
   - name: WISI Tangram GT41

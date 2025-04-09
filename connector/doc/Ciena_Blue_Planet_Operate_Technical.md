@@ -8,7 +8,7 @@ uid: Connector_help_Ciena_Blue_Planet_Operate_Technical
 
 This connector is a network management system designed to manage Ciena devices.
 
-It can create a Ciena Blue Planet Operate Node DVE as a virtual representation of the managed device.
+It can create a Ciena Blue Planet Operate Network Element DVE as a virtual representation of the managed device.
 
 ## Configuration
 
@@ -54,9 +54,14 @@ The element created with this connector consists of the following data pages:
 
 - **General**: Displays configuration parameters required for the HTTP requests, as well as the **Nodes** tables.
 
-  The **Device Elements** subpage displays a table of running DVEs.
+- **Device Management**: Contains settings and information related to the DVE configuration:
 
-- **Device Management**: Contains the DVE configuration.
+  - **DVE Auto Creation**: This toggle button determines whether DVEs are automatically created. Automatic creation requires that the Default View Name is filled in.
+  - **Default View Name**: Determines the view where DVEs will be created.
+  - **Remove Unavailable Devices**: Clicking this button removes DVEs and Device Management table rows for unavailable node devices. Please note that **when DVE is deleted, all trending and alarm data for this DVE is also deleted**.
+  - **Device Elements**: This subpage displays a table of running DVEs.
+
+- **Nodes**: Displays the Ciena node devices monitored by the Blue Planet Operate.
 
 - **Alarms**: Displays active alarms from the nodes.
 
