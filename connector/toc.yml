@@ -9182,6 +9182,16 @@
     topicUid: Connector_help_Telenor_Adaptation_Engine_CMS
   - name: Telenor BCDB Multiviewer Manager
     topicUid: Connector_help_Telenor_BCDB_Multiviewer_Manager
+  - name: Telenor Channel Correlation Service Broadcast
+    topicUid: Connector_help_Telenor_Channel_Correlation_Service_Broadcast
+    items:
+      - name: Telenor Channel Correlation Service Broadcast Technical
+        topicUid: Connector_help_Telenor_Channel_Correlation_Service_Broadcast_Technical
+  - name: Telenor Channel Correlation Service OTT
+    topicUid: Connector_help_Telenor_Channel_Correlation_Service_OTT
+    items:
+      - name: Telenor Channel Correlation Service OTT Technical
+        topicUid: Connector_help_Telenor_Channel_Correlation_Service_OTT_Technical
   - name: Telenor Channel Correlation Service Protocol
     topicUid: Connector_help_Telenor_Channel_Correlation_Service_Protocol
   - name: Telenor Cisco CBR-8 Video Platform
