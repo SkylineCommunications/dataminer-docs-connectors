@@ -19,49 +19,18 @@ Supported Cards:
 
 Data is polled via SNMP protocol.
 
-## Installation and Configuration
 
-### Creation
+## Key Features
 
-**SNMP Connection:**
+- **Monitor and control both BPXRF and 7703PA cards**: With this driver, you have multiple pages for both the Evertz BPXRF and the Evertz 7703-PA cards.
+- **View and configure faults**: With multiple fault statuses across both cards, you can easily monitor and control various fault types.
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
 
-**SNMP Settings:**
+## Use Case
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device. The default value is *public*.
-- **Set community string**: The community string used when setting values on the device. The default value is *private*.
+- **Challenge**: User has multiple BPXRF/7703PA cards under one frame.
+- **Solution**: User can use this connector to monitor and control all their cards under one connector.
+- **Benefit**: Includes DVE tables for separate monitoring/views of each card.
 
-## Usage
-
-The Evertz BPXRF connector displays information about the two kinds of supported cards. For each detected card, a child element will be created under the main element.
-The connector contains 6 pages. The first 3 pages monitor the 7703PA card. The remaining 3 pages monitor the 7703BPX connector.
-
-### General PA
-
-This page displays data about the **Input Power** and miscellaneous data about the card, such as **Type**, **Firmware**, etc.
-
-### Fault PA
-
-This page lists all the alarms that can be reported by the 7703PA card. For each alarm, the user has the possibility to enable the traps or not.
-
-Note that traps are not currently supported by this connector: nothing will happen if a trap is received.
-
-### Control PA
-
-This page allows the operator to set different parameters: **Gain**, **Output** **Level,** .
-
-### General PX
-
-This page displays data about the **Input Power** and miscellaneous data about the card, such as **Card Type**, **Current Active Channel**, etc.
-
-### Fault BPX
-
-This page lists all the alarms that can be reported by the card 7703BPX. For each alarm, the user has the possibility to enable the traps or not.
-
-Note that traps are not currently supported by this connector: nothing will happen if a trap is received.
-
-### Control BPX
-
-This page allows the operator to set different parameters: **Threshold**, **Delay**, ...
+> [!NOTE]
+> For in-depth information on configuring and using the DataMiner connector for the Evertz BPXRF, refer to the [Technical help page](xref:Connector_help_Evertz_BPXRF_Technical).
