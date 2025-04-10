@@ -10,9 +10,9 @@ The Imagine Communications DMDP6802+D is a data and metadata processing module, 
 
 ### Version Info
 
-| **Range** | **Key Features**                                                             | **Based on** | **System Impact** |
-|-----------|------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. Full support for all features of this specific card. | -            | -                 |
+| Range   | Key Features                                                          | Based on | System Impact |
+|---------|-----------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x | Initial version. Full support for all features of this specific card. | -        | -             |
 
 ### Product Info
 
