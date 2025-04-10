@@ -572,8 +572,8 @@ a.backtotoplink:hover
 .logo_main {
   /* Resize logo.png */
   height: 46px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+  padding-top: 4px;
+  padding-bottom: 4px;
 }
 
 #search-query {
