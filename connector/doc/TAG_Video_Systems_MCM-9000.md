@@ -182,6 +182,10 @@ Introduced in version 1.1.2.19. This page allows you to configure basic channel 
 
 Via page buttons, you can configure the channel content and miscellaneous information. The **Channel Profiles** and **Channel PIDs/Components** configuration tables are available on dedicated subpages.
 
+### Scheduler Events
+
+Introduced in version 1.1.6.22, this page allows you to monitor and control scheduled events created under each channel. To add events (on the **Add Events** subpage), first select and set the channel (**Input Channel**). Then the connector will retrieve the available profiles of that channel and make them available for selection in the **Channel Profile** field dropdown list.
+
 ### Output Stream
 
 On this page, you can manipulate the mosaic stream.
