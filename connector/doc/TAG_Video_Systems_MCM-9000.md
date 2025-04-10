@@ -180,6 +180,8 @@ Via the right-click menu of the table, you can **start or stop monitoring** a ch
 Introduced in version 1.1.2.19. This page allows you to configure basic channel parameters. In order to fill in the parameters, a channel must be selected in the **Select an Input Channel** drop-down box at the top of the page.
 
 Via page buttons, you can configure the channel content and miscellaneous information. The **Channel Profiles** and **Channel PIDs/Components** configuration tables are available on dedicated subpages.
+### Scheduler Events
+Introduced in version 1.1.6.22, this page allows to monitor and control scheduled events created under each channel. To add events (on the **Add Events** sub-page), first the user needs to select and set the channel (**Input Channel**). Then the connector will retrieve the available profiles of that channel and make them available for selection in the **Channel Profile** field.
 
 ### Output Stream
 
