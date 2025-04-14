@@ -4738,6 +4738,11 @@
     topicUid: Connector_help_IDirect_Pulse_Terminal
   - name: IDirect Pulse Terminal Manager
     topicUid: Connector_help_IDirect_Pulse_Terminal_Manager
+  - name: IDirect VSAT Broadband Observability
+    topicUid: Connector_help_iDirect_VSAT_Broadband_Observability
+    items:
+      - name: IDirect VSAT Broadband Observability Technical
+        topicUid: Connector_help_iDirect_VSAT_Broadband_Observability_Technical
   - name: iDirect X5 Satellite Router
     topicUid: Connector_help_iDirect_X5_Satellite_Router
   - name: iDirect X7 Satellite Router
