@@ -5058,6 +5058,11 @@
     topicUid: Connector_help_Invidi_Advatar
 - name: IRT
   items:
+  - name: IRT DAB TX
+    topicUid: Connector_help_IRT_DAB_TX
+    items:
+    - name: IRT DAB TX Technical
+      topicUid: Connector_help_IRT_DAB_TX_Technical
   - name: IRT DLRC
     topicUid: Connector_help_IRT_DLRC
   - name: IRT DVB-T2 TX
