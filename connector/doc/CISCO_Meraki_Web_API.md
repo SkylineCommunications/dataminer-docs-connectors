@@ -32,7 +32,7 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 | 2.0.0.x   | No                  | No                      | -                     | -                       |
 
-## Configuration 1.0.1.X
+## Configuration 1.0.1.x
 
 ### Cisco Meraki API Key
 
