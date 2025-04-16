@@ -20,29 +20,7 @@ The AJA Bridge Live connector enables seamless integration with AJA Bridge Live,
 
 ## Use Cases
 
-### Use Case 1: Replacing Satellite Uplink with IP Streaming
-
-**Challenge**: Traditional satellite uplink solutions are expensive and require extensive infrastructure, making them inefficient for modern live broadcasts.
-
-**Solution**: AJA Bridge Live allows broadcasters to replace satellite transponders with a simple ISP connection, leveraging bidirectional IP transport for reliable video streaming.
-
-**Benefit**: Significant cost savings, reduced complexity, and improved flexibility for remote productions and live events.
-
-### Use Case 2: Dynamic Multi-Codec Transcoding
-
-**Challenge**: Live production environments require real-time transcoding across multiple formats to ensure compatibility with different platforms.
-
-**Solution**: Bridge Live supports multiple codecs (H.264, HEVC, JPEG XS, MPEG-2) and can dynamically transcode streams to meet delivery requirements.
-
-**Benefit**: Enhanced compatibility with CDNs like YouTube, Twitch, and Facebook Live, enabling seamless content distribution.
-
-### Use Case 3: High-Redundancy Live Streaming
-
-**Challenge**: Live video streams are vulnerable to network issues such as packet loss, jitter, and latency fluctuations.
-
-**Solution**: With SMPTE 2022-7 hitless redundancy, AJA Bridge Live ensures seamless failover by transmitting identical streams across independent network paths.
-
-**Benefit**: Increased reliability, reduced risk of video interruptions, and optimized quality of experience for viewers.
+- This device will be utilized for SRT transmission and reception over the internet. This functionality is managed through configurable pipelines, which users can set up and monitor via the connector interface.
 
 ## Technical Reference
 
