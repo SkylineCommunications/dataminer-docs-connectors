@@ -8,26 +8,6 @@ The **GIX100** is dual-channel high-performance 3 Gb/s, HD and SD SDI video and 
 
 The Axon ACP GIX100 connector is used to monitor these Axon cards.
 
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.1              | New Relese       | 1.0.0.x      | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.1   | 1925                   |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.1   | Yes                 | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
