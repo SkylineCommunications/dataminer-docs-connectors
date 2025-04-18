@@ -18,9 +18,11 @@ The AJA Bridge Live connector enables seamless integration with AJA Bridge Live,
 
 **Input & output stream management**: Configure input and output streams with flexible encoding and transport options, including NDI, SRT, and RTMP.
 
-## Use Cases
+## Use Case
 
-- This device will be utilized for SRT transmission and reception over the internet. This functionality is managed through configurable pipelines, which users can set up and monitor via the connector interface.
+**Challenge**: Managing SRT transmission and reception over the internet.
+
+**Solution**: Installing the AJA Bridge Live connector will allow you to manage this functionality through configurable pipelines, which you can set up and monitor via the connector interface.
 
 ## Technical Reference
 
