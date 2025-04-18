@@ -42,7 +42,7 @@ The setting of some parameters depends on other parameters' current value. For e
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.1** connector range of the Axon ACP GIX100 protocol supports the usage of DCF and can only be used on a DMA with **10.2.0.0** as the minimum version.
+The **1.0.0.1** connector range of the Axon ACP GIX100 protocol supports the usage of DCF and can only be used on a DMA with **10.2.0** as the minimum version.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
