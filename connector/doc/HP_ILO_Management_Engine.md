@@ -20,7 +20,7 @@ It uses the REST API to get and set all the associated parameters for this type 
 | 1.0.1.x **[SLC Main]** | Using the RedFish API - iLO 4 | No | Yes |
 | 1.1.0.x **[Obsolete]** | Using the Redfish API - iLO 5 | No | Yes |
 | 1.1.1.x **[Obsolete]** | Using the Redfish API - iLO 5 with SNMP polling | No | Yes |
-| 1.1.2.x **[SLC Main]** | Replace JSON API calls with Redfish API equivalent | No | Yes |
+| 1.1.2.x **[SLC Main]** | Replaced JSON API calls with Redfish API equivalent | No | Yes |
 
 ### Product Info
 
