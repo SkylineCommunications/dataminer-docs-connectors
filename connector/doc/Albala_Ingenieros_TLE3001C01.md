@@ -10,21 +10,21 @@ The Albala Ingenieros monitoring connector is designed to seamlessly integrate w
 
 ## Key Features
 
-- **Comprehensive Monitoring**: The connector offers real-time monitoring of all modules, providing detailed status and performance metrics.
+- **Comprehensive monitoring**: The connector offers real-time monitoring of all modules, providing detailed status and performance metrics.
 
-- **Remote Control**: Enables remote control of modules via the communications controller, ensuring flexibility and ease of management.
+- **Remote control**: Enables remote control of modules via the communications controller, ensuring flexibility and ease of management.
 
-- **Advanced Alerting**: Provides advanced alerting mechanisms to notify users of any issues or anomalies in the system.
+- **Advanced alerting**: Provides advanced alerting mechanisms to notify users of any issues or anomalies in the system.
 
-- **Seamless Integration**: Integrates seamlessly with both analog and digital signal formats, maintaining signal integrity and minimizing latency.
+- **Seamless integration**: Integrates seamlessly with both analog and digital signal formats, maintaining signal integrity and minimizing latency.
 
-- **Versatile Communication Support**: Supports both serial and Ethernet communication for flexible connectivity options.
+- **Versatile communication support**: Supports both serial and Ethernet communication for flexible connectivity options.
 
 ## Use Cases
 
 ### Broadcasting Station Setup
 
-**Challenge**: Need for reliable and high-quality video distribution.
+**Challenge**: Reliable and high-quality video distribution.
 
 **Solution**: Utilize the monitoring connector to oversee the HVD3001C01V1 and HVD3001C02V1 modules for HD-SDI signal distribution.
 
