@@ -35,10 +35,10 @@ The Generic RabbitMQ Producer connector facilitates sending files from a specifi
 
 ## Technical Reference
 
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Generic_RabbitMQ_Producer_Technical).
+
 ### Prerequisites
 
 - **DataMiner version 10.3 or higher** is required for compatibility with the Generic RabbitMQ Producer connector.
 - **RabbitMQ username and password**: Required for RabbitMQ authentication.
-
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Generic_RabbitMQ_Producer).
