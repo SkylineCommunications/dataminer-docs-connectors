@@ -4,7 +4,7 @@ uid: Connector_help_Imagine_Communications_Nexio+_AMP
 
 # Imagine Communications Nexio+ AMP
 
-This protol is meant to work with the Imagine Communications Nexio+ AMP video server. The protocol shows basic information of the different communcation methods and connections the device is currently using.
+This protocol is meant to work with the Imagine Communications Nexio+ AMP video server. The protocol shows basic information of the different communication methods and connections the device is currently using.
 
 ## About
 
@@ -14,13 +14,17 @@ Nexio+T AMPr is the next step in the evolution of the acclaimed Nexio AMPr video
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | True                    |
+| 1.0.0.x (Obsolete)          | Initial Version | No                  | True                    |
+| 1.0.1.x (Obsolete)          |                 | No                  | True                    |
+| 1.1.0.x (SLC Main)          | Firmware change | No                  | True                    |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
 | 1.0.0.x          | Unknown                     |
+| 1.0.1.x          | Unknown                     |
+| 1.1.0.x          | Unknown                     |
 
 ## Installation and configuration
 
@@ -42,23 +46,23 @@ The Interface Table shows the different interfaces that the device is connected 
 
 ### IP Status
 
-This pages shows information on the IP protocol communcation traffic to and from the device. This includes tables showing the connection addresses, the different routes, and the translations.
+This pages shows information on the IP protocol communication traffic to and from the device. This includes tables showing the connection addresses, the different routes, and the translations.
 
 ### ICMP Status
 
-This pages shows information on the ICMP protocol communcation traffic to and from the device.
+This pages shows information on the ICMP protocol communication traffic to and from the device.
 
 ### TCP Status
 
-This pages shows information on the TCP protocol communcation traffic to and from the device. This includes a table showing the different TCP connections.
+This pages shows information on the TCP protocol communication traffic to and from the device. This includes a table showing the different TCP connections.
 
 ### UDP Status
 
-This pages shows information on the UDP protocol communcation traffic to and from the device. This includes a table showing the UDP listeners.
+This pages shows information on the UDP protocol communication traffic to and from the device. This includes a table showing the UDP listeners.
 
 ### SNMP Status
 
-This pages shows information on the SNMP protocol communcation traffic to and from the device.
+This pages shows information on the SNMP protocol communication traffic to and from the device.
 
 ### Server Info
 
