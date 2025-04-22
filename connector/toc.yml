@@ -10270,7 +10270,7 @@
     topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator
     items:
     - name: Work Microwave AX60 Series Modulator Technical
-    topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator_Technical
+      topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator_Technical
   - name: Work Microwave Converter SNMP
     topicUid: Connector_help_Work_Microwave_Converter_SNMP
   - name: Work Microwave DVB-S2 Modulator
