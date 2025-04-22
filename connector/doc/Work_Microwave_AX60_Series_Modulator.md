@@ -1,80 +1,48 @@
 ---
-uid: Connector_help_Work_Microwave_Converter_SNMP
+uid: Connector_help_Work_Microwave_AX60_Series_Modulator
 ---
 
-# Work Microwave Converter SNMP
-
-This SNMP connector is used to monitor and configure the various Work Microwave Converters that use the conv2 MIB.
+# Work Microwave AX60 Series Modulator
 
 ## About
 
-The **Work Microwave Converter SNMP** connector is a full implementation of the conv2 MIB from Work. As such, this connector can be used for any Work Microwave that uses the conv2 MIB.
-The connector allows the user to monitor the converter and to configure the system and converter.
+The Work Microwave AX60 Series Modulator driver provides comprehensive oversight and control of the device. It continuously tracks performance metrics, detects anomalies, and allows for real-time adjustments to ensure optimal operation. This driver is essential for maintaining high-speed IP connectivity and advanced modulation schemes up to 256APSK, making it suitable for a wide range of applications, including governmental, IP networking, and space communications.
 
-### Version Info
+## Key Features
 
-| Range              | Key Features                                                                                                                   | Based on | System Impact |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x            | Initial version                                                                                                                | -        | -             |
-| 1.1.0.x [SLC Main] | Added frequency and attenuation channel band parameters that will replace the existing ones. Changed snmpSet to snmpSetAndGet. | -        | -             |
+- **Real-Time Performance Monitoring**: Continuously tracks key performance metrics to ensure the modulator operates at peak efficiency.
 
-### Product Info
+- **Anomaly Detection and Alerts**: Identifies unusual patterns and sends alerts to prevent potential issues before they escalate.
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | Unknown            |
-| 1.1.0.x | XNA01.73           |
+- **Remote Configuration Management**: Allows for real-time adjustments and updates to the modulator's settings from a centralized interface.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+### Use Cases 1
 
-## Installation and configuration
+**Challenge**: Managing high-volume data traffic in IP networking environments.
 
-### Creation
+**Solution**: The driver's historical data analysis and automated reporting help optimize data traffic management and plan for future needs.
 
-#### SNMP Main Connection
+**Benefit**: Enhanced network performance and reduced latency.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Use Cases 2
 
-SNMP CONNECTION:
+**Challenge**: Integrating satellite communication systems with IP networks for space applications.
 
-- **IP address/host**: The polling IP of the device.
-- **Device address**: Not required for this connector.
+**Solution**: The driver's remote configuration management allows seamless integration and real-time adjustments to the modulator settings.
 
-SNMP Settings:
+**Benefit**: Improved efficiency and flexibility in space communication systems.
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device. The default value is *public*.
-- **Set community string**: The community string used when setting values on the device. The default value is *private*.
+### Use Cases 3
 
-## Usage
+**Challenge**: Ensuring consistent high-speed data transmission in governmental communication networks.
 
-### Main View
+**Solution**: The driver's real-time performance monitoring and anomaly detection ensure reliable and secure data transmission.
 
-This page displays the various converter temperatures as well as some general information, such as the **Base System ID**, **Device ID**, and **Date & Time**. It also displays the **System Status** and the **Converter Status** (in hex). To view more information about these status values, click the **Detailed Converter Status** or the **Detailed System Status** page button.
+**Benefit**: Enhanced communication reliability and security for governmental operations.
 
-The page also contains the following page buttons:
+## Technical Reference
 
-- **Stored Events**: Displays the Stored Events Table.
-- **Alarms**: Displays the Stored Alarms Table.
-- **MC Interface**: Displays the MC interface table.
-- **SNMP**: Displays the Trap Sink Server Table.
-- **Device Info**: Displays additional device information (various IDs, **Load** and **Save Device State** options, as well as the **Autosave** option).
-
-### Converter Config
-
-On this page, you can configure various converter settings. This includes the **Sweep** settings, **Min Frequency**, **Max Frequency** and **Frequency Offset**.
-
-There are also three buttons that link to **Channel Config** pop-up pages. On each of these pages, you can set the **Frequency**, **Attenuation** and **Equalizer** for the channel and band (band only for channel 1 and 2) in question. For channel 1, you can also set the **IF frequency**.
-
-### System Config
-
-On this page, you can view and configure the system settings. The page also has five page buttons that can also be found on the **Main View** page.
-
-### Web Interface
-
-This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to access the web interface.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Work_Microwave_AX60_Series_Modulator_Technical).
