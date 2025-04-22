@@ -4,31 +4,23 @@ uid: Connector_help_Imagine_Communications_Nexio+_AMP
 
 # Imagine Communications Nexio+ AMP
 
-This protocol is meant to work with the Imagine Communications Nexio+ AMP video server. The protocol shows basic information of the different communication methods and connections the device is currently using.
-
 ## About
 
-Nexio+T AMPr is the next step in the evolution of the acclaimed Nexio AMPr video server. Now combining industry-leading Hewlett Packard Enterprise standard server models and Imagine software/hardware bundle kits, Nexio+ AMP truly enables software-defined applications and delivers the exceptional reliability, flexibility and format transparency that broadcast operations demand. The Nexio+ AMP Advanced Media Platform is an efficient and integrated server platform for managing digital content from ingest to playout.
+The Nexio+ AMP video server combines Hewlett Packard Enterprise standard server models and Imagine software/hardware bundle kits, enabling software-defined applications and allowing broadcast operations to reliably and flexibly manage digital content from ingest to playout.
+
+This connector is meant to work with the Imagine Communications Nexio+ AMP video server. The connector shows basic information of the different communication methods and connections the device is currently using.
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x (Obsolete)          | Initial Version | No                  | True                    |
-| 1.0.1.x (Obsolete)          |                 | No                  | True                    |
-| 1.1.0.x (SLC Main)          | Firmware change | No                  | True                    |
+| Range              | Description     | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------|-----------------|---------------------|
+| 1.0.0.x (Obsolete) | Initial version | No              | Yes                 |
+| 1.0.1.x (Obsolete) |                 | No              | Yes                 |
+| 1.1.0.x (SLC Main) | Firmware change | No              | Yes                 |
 
-### Product Info
+## Configuration
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.0.1.x          | Unknown                     |
-| 1.1.0.x          | Unknown                     |
-
-## Installation and configuration
-
-### Creation
+### Connections
 
 #### SNMP Main Connection
 
