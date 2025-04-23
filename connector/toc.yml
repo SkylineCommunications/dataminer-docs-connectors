@@ -5080,6 +5080,11 @@
     topicUid: Connector_help_Interlogix_United_Technologies_Alliance_8300
 - name: International Datacasting
   items:
+  - name: International Datacasting ENC7000
+    topicUid: Connector_help_International_Datacasting_ENC7000
+    items:
+    - name: International Datacasting ENC7000 Technical
+    topicUid: Connector_help_International_Datacasting_ENC7000_Technical
   - name: International Datacasting IPE-4000
     topicUid: Connector_help_International_Datacasting_IPE-4000
   - name: International Datacasting Star3
@@ -7746,10 +7751,15 @@
     topicUid: Connector_help_SA_ROSA_EM_-_Vikinx
   - name: SA xDQA
     topicUid: Connector_help_SA_xDQA
-- name: SAF Tehnika
+- name: SAF Technika
   items:
-  - name: SAF Tehnika Integra-W
+  - name: SAF Technika Integra-W
     topicUid: Connector_help_SAF_Tehnika_Integra-W
+  - name: SAF Technika Phoenix G2
+    topicUid: Connector_help_SAF_Technika_Phoenix_G2
+    items:
+    - name: SAF Technika Phoenix G2 Technical
+    topicUid: Connector_help_SAF_Technika_Phoenix_G2_Technical
 - name: Sandar TeleCast
   items:
   - name: Sandar SA-1100
