@@ -6980,6 +6980,11 @@
   items:
   - name: Orange Orion
     topicUid: Connector_help_Orange_Orion
+  - name: Orange Oceane Ticketing System
+    topicUid: Connector_help_Orange_Oceane_Ticketing_System
+    items:
+    - name: Orange Oceane Ticketing System Technical
+      topicUid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 - name: Orban
   items:
   - name: Orban Optimod 8685
