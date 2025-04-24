@@ -1,12 +1,12 @@
 ---
-uid: Connector_help_SAF_Technika_Phoenix_G2
+uid: Connector_help_SAF_Tehnika_Phoenix_G2
 ---
 
-# SAF Technika Phoenix G2
+# SAF Tehnika Phoenix G2
 
 ## About
 
-The SAF Technika Phoenix G2 driver provides comprehensive oversight and control of the microwave radio system. It continuously tracks performance metrics, detects anomalies, and allows for real-time adjustments to ensure optimal operation. This driver is essential for maintaining high-capacity point-to-point data transmission, supporting channel bandwidths up to 80 MHz and capacities up to 1 Gbps in 2+0 configurations.
+The SAF Tehnika Phoenix G2 driver provides comprehensive oversight and control of the microwave radio system. It continuously tracks performance metrics, detects anomalies, and allows for real-time adjustments to ensure optimal operation. This driver is essential for maintaining high-capacity point-to-point data transmission, supporting channel bandwidths up to 80 MHz and capacities up to 1 Gbps in 2+0 configurations.
 
 ## Key Features
 

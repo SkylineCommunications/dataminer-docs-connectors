@@ -7751,15 +7751,15 @@
     topicUid: Connector_help_SA_ROSA_EM_-_Vikinx
   - name: SA xDQA
     topicUid: Connector_help_SA_xDQA
-- name: SAF Technika
+- name: SAF Tehnika
   items:
-  - name: SAF Technika Integra-W
+  - name: SAF Tehnika Integra-W
     topicUid: Connector_help_SAF_Tehnika_Integra-W
-  - name: SAF Technika Phoenix G2
-    topicUid: Connector_help_SAF_Technika_Phoenix_G2
+  - name: SAF Tehnika Phoenix G2
+    topicUid: Connector_help_SAF_Tehnika_Phoenix_G2
     items:
-    - name: SAF Technika Phoenix G2 Technical
-    topicUid: Connector_help_SAF_Technika_Phoenix_G2_Technical
+    - name: SAF Tehnika Phoenix G2 Technical
+    topicUid: Connector_help_SAF_Tehnika_Phoenix_G2_Technical
 - name: Sandar TeleCast
   items:
   - name: Sandar SA-1100

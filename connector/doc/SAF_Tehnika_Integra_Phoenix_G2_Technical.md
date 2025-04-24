@@ -1,10 +1,10 @@
 ---
-uid: Connector_help_SAF_Technika_Phoenix_G2_Technical
+uid: Connector_help_SAF_Tehnika_Phoenix_G2_Technical
 ---
 
-# SAF Technika Phoenix G2
+# SAF Tehnika Phoenix G2
 
-The SAF Technika Phoenix G2 is a high-capacity point-to-point microwave radio system designed for robust and flexible data transmission. It supports channel bandwidths up to 80 MHz and offers capacities up to 1 Gbps in 2+0 configurations. The system integrates advanced modulation schemes, including 1024QAM, and provides seamless transition from TDM-only or ASI-only networks to hybrid native ASI/T1/E1/IP networks.
+The SAF Tehnika Phoenix G2 is a high-capacity point-to-point microwave radio system designed for robust and flexible data transmission. It supports channel bandwidths up to 80 MHz and offers capacities up to 1 Gbps in 2+0 configurations. The system integrates advanced modulation schemes, including 1024QAM, and provides seamless transition from TDM-only or ASI-only networks to hybrid native ASI/T1/E1/IP networks.
 
 ## About
 
