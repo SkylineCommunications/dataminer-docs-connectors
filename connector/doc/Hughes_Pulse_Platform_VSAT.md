@@ -4,71 +4,43 @@ uid: Connector_help_Hughes_Pulse_Platform_VSAT
 
 # Hughes Pulse Platform VSAT
 
-The Hughes Pulse Platform VSAT connector facilitates the integration of Hughes Pulse API data into a DataMiner System. This connector allows users to configure and poll various endpoints from the Hughes Pulse Platform to retrieve and display information about remote devices and their status.
-
 ## About
 
-### Version Info
+The **Hughes Pulse Platform VSAT** connector enables real-time monitoring of VSAT terminals using the Hughes Pulse API. It provides full visibility into terminal configuration, device status, and key performance metrics, making it ideal for network teams, NOC operators, and service providers managing large satellite networks.
 
-| Range              | Features                                         | Based on | System Impact |
-|--------------------|--------------------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial release. Supports basic API integration. | -        | -             |
+## Key Features
 
-### Product Info
+**Centralized Remote Terminal Monitoring**  
+Easily track the health and status of VSAT terminals in real time, from a single interface.
 
-| Range      | Supported Firmware          |
-|------------|-----------------------------|
-| 1.0.0.x    | Hughes Pulse API V1         |
+**End-to-End Network Performance Metrics**  
+Continuously monitor ICMP latency, jitter, packet loss, signal quality (RSRP, RSSI, SINR), and throughput per terminal.
 
-### System Info
+**Secure & Scalable API Integration**  
+Built on secure REST API connections, ensuring reliable data access across large deployments.
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+**Terminal Configuration Insights**  
+Gain immediate access to detailed terminal setup info, including ID, access mode, location, and current status.
 
-## Configuration
+## Use Cases
 
-### Connections
+### Use Case 1  
+**Challenge:** Network operations teams need a consolidated view of terminal performance across hundreds or thousands of remote VSAT sites.  
+**Solution:** The connector centralizes device data and metrics in DataMiner, providing at-a-glance insight into status and performance.  
+**Benefit:** Quicker root cause analysis, reduced mean time to resolution (MTTR), and fewer escalations.
 
-#### HTTP Connection
+### Use Case 2  
+**Challenge:** NOC teams struggle to detect and react to network degradations in time.  
+**Solution:** By polling metrics like latency, jitter, and signal quality at frequent intervals, the connector enables proactive monitoring.  
+**Benefit:** Teams can set up DataMiner alarms and trending for early anomaly detection and service assurance.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+## Technical Reference
 
-HTTP CONNECTION:
+### Prerequisites
 
-- **IP address/host**: `https://api.hugheson.net`
-- **IP port**: `443` (default)
+- A valid Hughes Pulse API account with access to required endpoints.
+- DataMiner System version 10.3.0 or higher.
+- Connectivity to `https://api.hugheson.net` via HTTPS (port 443).
 
-### Initialization
-
-When you have created an element with this connector, you will then need to configure the REST API credentials, including the username, password, and maximum login retries.
-
-The system will automatically generate a token upon successful login, with the status displayed as *Token Created* and the **Token Expiration** parameter set to one hour from the current time.
-
-## How to use
-
-The Hughes Pulse Platform VSAT connector primarily communicates with the Hughes Pulse API using HTTP REST calls. The connector provides a configurable interface for managing API endpoints, including polling intervals and response display.
-
-### Configuration Page
-
-On the **Configuration** page, users can set the REST API username and password, and configure the maximum login retries. You can use the **Login** button to manually trigger the login process, generating a new token when required.
-
-### REST API Endpoints Page
-
-The **REST API Endpoints Configuration** table, accessible from the REST API Endpoints page, allows you to add, edit, or delete API endpoint configurations. Upon element startup, the connector automatically adds two essential endpoints:
-
-1. **Endpoint:** `assets/device?san=*`
-   - **Category:** Remotes
-   - **Timer:** 30 minutes
-   - **Purpose:** Populates the columns in the Remotes Table.
-
-1. **Endpoint:** `assets/device?san=*&fields=["name","state"]`
-   - **Category:** Remotes
-   - **Timer:** 5 minutes
-   - **Purpose:** Provides the data for the **Current Device Status** in the Remotes Table.
-
-You can also add other endpoints, which should be categorized as *N/A*. The table also includes options to enable or disable polling and to display the API response for debugging purposes. Each row in the table has a **Poll** button to manually trigger the GET request outside of the defined timer.
-
-### Collector Setup Page
-
-The **Collector Setup** page contains settings for managing entities, including options for enabling automatic entity removal and configuring the removal period. This feature clears entries in the tables that have not been updated within the specified period.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:onnector_help_Hughes_Pulse_Platform_VSAT_Technical).
