@@ -4730,6 +4730,9 @@
   items:
   - name: Hughes Pulse Platform VSAT
     topicUid: Connector_help_Hughes_Pulse_Platform_VSAT
+    items:
+    - name: Hughes Pulse Platform VSAT Technical
+      topicUid: Connector_help_Hughes_Pulse_Platform_VSAT_Technical
 - name: HW Group
   items:
   - name: HW Group Poseidon2
