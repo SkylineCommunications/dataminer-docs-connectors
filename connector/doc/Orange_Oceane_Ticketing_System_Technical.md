@@ -1,3 +1,8 @@
+---
+uid: Connector_help_Orange_Oceane_Ticketing_System_Technical
+---
+
+
 # Orange Oceane Ticketing System Connector Technical Documentation
 
 ## About
