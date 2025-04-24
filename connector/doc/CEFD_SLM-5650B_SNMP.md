@@ -11,5 +11,4 @@ The Comtech EF Data (CEFD) SLM-5650B satellite modem uses state-of-the-art modul
 This connector can be used to monitor and control a CEFD SLM-5650B satellite modem through SNMP.
 
 > [!NOTE]
-> For more information on the installation and configuration of the connector as well as more details on the usage visit the [Technical help page](xref:Connector_help_CEFD_SLM-5650B_SNMP_Technical).
-
+> For more information on the installation and configuration of the connector as well as more details on the usage, refer to the [Technical help page](xref:Connector_help_CEFD_SLM-5650B_SNMP_Technical).
