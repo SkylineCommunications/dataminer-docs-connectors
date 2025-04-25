@@ -5126,6 +5126,11 @@
     topicUid: Connector_help_IRT_DVB-T2_TX
   - name: IRT DVB-T TX
     topicUid: Connector_help_IRT_DVB-T_TX
+  - name: IRT FM TX
+    topicUid: Connector_help_IRT_FM_TX
+    items:
+    - name: IRT FM TX Technical
+      topicUid: Connector_help_IRT_FM_TX_Technical
   - name: IRT IFC Series
     topicUid: Connector_help_IRT_IFC_Series
   - name: IRT IRPC Series
@@ -6980,6 +6985,11 @@
   items:
   - name: Orange Orion
     topicUid: Connector_help_Orange_Orion
+  - name: Orange Oceane Ticketing System
+    topicUid: Connector_help_Orange_Oceane_Ticketing_System
+    items:
+    - name: Orange Oceane Ticketing System Technical
+      topicUid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 - name: Orban
   items:
   - name: Orban Optimod 8685
