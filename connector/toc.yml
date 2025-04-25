@@ -5084,7 +5084,7 @@
     topicUid: Connector_help_International_Datacasting_ENC7000
     items:
     - name: International Datacasting ENC7000 Technical
-    topicUid: Connector_help_International_Datacasting_ENC7000_Technical
+      topicUid: Connector_help_International_Datacasting_ENC7000_Technical
   - name: International Datacasting IPE-4000
     topicUid: Connector_help_International_Datacasting_IPE-4000
   - name: International Datacasting Star3
@@ -7759,7 +7759,7 @@
     topicUid: Connector_help_SAF_Tehnika_Phoenix_G2
     items:
     - name: SAF Tehnika Phoenix G2 Technical
-    topicUid: Connector_help_SAF_Tehnika_Phoenix_G2_Technical
+      topicUid: Connector_help_SAF_Tehnika_Phoenix_G2_Technical
 - name: Sandar TeleCast
   items:
   - name: Sandar SA-1100

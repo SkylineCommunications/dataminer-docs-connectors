@@ -4,27 +4,9 @@ uid: Connector_help_International_Datacasting_ENC7000_Technical
 
 # International Datacasting ENC7000
 
-The International Datacasting ENC7000 Audio Encoder is designed to encode multiple audio channels into MPEG-4 AAC-LC, HE-AAC v1/v2, and MPEG-1 Layer 2 formats for improved IP audio delivery. It supports up to 12 digital stereo channels or up to 8 analog stereo channels, which can be output as MPEG-2 compliant DVB transport streams or elementary streams via the IP interface. The encoder can be managed remotely through REST-API ensuring flexible and efficient audio data transmission across various network configurations
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based On     | System Impact                                                                                       |
-|----------------------|------------------|--------------|-----------------------------------------------------------------------------------------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | - |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.11-vf+25b5b4d2       |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+The International Datacasting ENC7000 Audio Encoder is designed to encode multiple audio channels into MPEG-4 AAC-LC, HE-AAC v1/v2, and MPEG-1 Layer 2 formats for improved IP audio delivery. It supports up to 12 digital stereo channels or up to 8 analog stereo channels, which can be output as MPEG-2 compliant DVB transport streams or elementary streams via the IP interface. The encoder can be managed remotely through REST API, ensuring flexible and efficient audio data transmission across various network configurations.
 
 ## Configuration
 
@@ -53,7 +35,7 @@ The following pages are available:
 - The **Inputs** page contains a table with different types of inputs. Two types, **Web Streams** and **Transport Streams**, are supported and can be configured on the corresponding subpages.
 - The **Input Selectors** page contains a table with all input selectors.
 - The **Encoders** page contains two tables, one for monitoring and one for configuring encoders. An encoder must have a reference to either an input selector (Input Selectors table) or an audio source (Inputs table).
-- The **MPEG-2 TS** page contains a table with transport streams. Each transport stream can have multiple destinations and services*,* which can be managed on the **Destinations** and **Services** pages*.*
+- The **MPEG-2 TS** page contains a table with transport streams. Each transport stream can have multiple destinations and services, which can be managed on the **Destinations** and **Services** pages.
 - The **File Manager** page lists the available files.
 
-Most of the tables have a right-click menu available that offers extra functionality such as adding, editing or deleting an entry.
+Most of the tables have a right-click menu available that offers extra functionality such as adding, editing, or deleting an entry.

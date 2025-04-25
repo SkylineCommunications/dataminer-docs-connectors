@@ -32,4 +32,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-Once initialized, the element will display the **Modulator Configuration**, **Single TS Configuration**, **Single TS Input**, **Carrier ID**, **Data Interface**, **System Monitor**, **Temperatures**, **Modulator**, and **ACM** pages with their respective KPI's, many of which may be configured.
+Once initialized, the element will display the **Modulator Configuration**, **Single TS Configuration**, **Single TS Input**, **Carrier ID**, **Data Interface**, **System Monitor**, **Temperatures**, **Modulator**, and **ACM** pages with their respective KPIs, many of which can be configured.
