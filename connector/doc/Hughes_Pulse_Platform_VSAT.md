@@ -43,4 +43,4 @@ Gain immediate access to detailed terminal setup info, including ID, access mode
 - Connectivity to `https://api.hugheson.net` via HTTPS (port 443).
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:onnector_help_Hughes_Pulse_Platform_VSAT_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:connector_help_Hughes_Pulse_Platform_VSAT_Technical).
