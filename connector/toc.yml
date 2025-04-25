@@ -5080,6 +5080,11 @@
     topicUid: Connector_help_Interlogix_United_Technologies_Alliance_8300
 - name: International Datacasting
   items:
+  - name: International Datacasting ENC7000
+    topicUid: Connector_help_International_Datacasting_ENC7000
+    items:
+    - name: International Datacasting ENC7000 Technical
+      topicUid: Connector_help_International_Datacasting_ENC7000_Technical
   - name: International Datacasting IPE-4000
     topicUid: Connector_help_International_Datacasting_IPE-4000
   - name: International Datacasting Star3
@@ -7755,6 +7760,11 @@
   items:
   - name: SAF Tehnika Integra-W
     topicUid: Connector_help_SAF_Tehnika_Integra-W
+  - name: SAF Tehnika Phoenix G2
+    topicUid: Connector_help_SAF_Tehnika_Phoenix_G2
+    items:
+    - name: SAF Tehnika Phoenix G2 Technical
+      topicUid: Connector_help_SAF_Tehnika_Phoenix_G2_Technical
 - name: Sandar TeleCast
   items:
   - name: Sandar SA-1100
@@ -10271,6 +10281,11 @@
     topicUid: Connector_help_Woodward_EasyGen-3000
 - name: Work Microwave
   items:
+  - name: Work Microwave AX60 Series Modulator
+    topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator
+    items:
+    - name: Work Microwave AX60 Series Modulator Technical
+      topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator_Technical
   - name: Work Microwave Converter SNMP
     topicUid: Connector_help_Work_Microwave_Converter_SNMP
   - name: Work Microwave DVB-S2 Modulator
