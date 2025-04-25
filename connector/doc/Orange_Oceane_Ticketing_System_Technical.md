@@ -3,17 +3,17 @@ uid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 ---
 
 
-# Orange Oceane Ticketing System Connector Technical Documentation
+# Orange Oceane Ticketing System Technical Documentation
 
 ## About
 
-The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with an automation script and hyperlinks that extend the alarm console menu to include a "Create Ticket" option, allowing users to initiate ticket creation directly from alarms.
+The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner Automation script and hyperlinks that extend the Alarm Console menu to include a "Create Ticket" option, allowing users to initiate ticket creation directly from alarms.
 
 ## Configuration
 
 ### Connections
 
-**HTTP Connection – Orange Oceane API**
+#### HTTP Connection - Orange Oceane API
 
 This connector uses an HTTP connection for the Orange Oceane Ticketing System API and requires the following input during element creation:
 
@@ -21,13 +21,13 @@ This connector uses an HTTP connection for the Orange Oceane Ticketing System AP
 
   - **IP address/host:** The base URL of the Orange Oceane Ticketing System (user-defined).
 
-**Additional Configuration During Element Creation:**
+- **Timeout configuration:**
 
-- In the "More TCP/IP Settings" section, ensure the "Include Timeout" checkbox is unchecked. This should be done because the connector does not poll any endpoints, and retries are implemented internally by the connector logic.
+  - In the "More TCP/IP Settings" section, ensure the **Include timeout** checkbox is **not selected**. This is necessary because the connector does not poll any endpoints, and retries are implemented internally by the connector logic.
 
 ### Initialization
 
-After creating the element, the user must configure the following settings on the settings page:
+After creating the element, configure the following settings on the **Settings** page:
 
 - **Element Settings:**
 
@@ -42,17 +42,19 @@ After creating the element, the user must configure the following settings on th
   - **Client Secret:** The secret key for authentication.
   - **User ID:** The identifier of the user creating the tickets.
 
-The user must then click the "Authenticate" button in the API Settings section to establish the connection with the Orange Oceane Ticketing System. Note that the "Client ID" and "Client Secret" are used for authentication, and the "User ID" is used to identify the user creating the tickets and is not used in the authentication process.
+When this is done, click the **Authenticate** button in the API Settings section to establish the connection with the Orange Oceane Ticketing System.
+
+Note that the "Client ID" and "Client Secret" are used for authentication, and the "User ID" is used to identify the user creating the tickets but is not used in the authentication process.
 
 ## Automation Scripts
 
-The connector requires the "Orange Oceane Ticketing System" automation script to be installed on the DataMiner system. This script is essential for extending the alarm console menu with the "Create Ticket" option and handling the logic for ticket creation, including checking for existing tickets and prompting the user for ticket details.
+The connector requires the **Orange Oceane Ticketing System** Automation script to be installed in the DataMiner System. This script is essential for extending the Alarm Console menu with the **Create Ticket** option and handling the logic for ticket creation, including checking for existing tickets and prompting the user for ticket details.
 
 ## Hyperlinks
 
-To enable the "Create Ticket" option in the alarm console's right-click menu, hyperlinks must be added to the DataMiner system. The following hyperlink configuration is an example how to extend the menu and links to the automation script:
+To enable the **Create Ticket** option in the Alarm Console's right-click menu, hyperlinks must be added to the DataMiner System. The following hyperlink configuration is an example of how to extend the menu and link to the Automation script:
 
-```
+```xml
 <HyperLinks xmlns="http://www.skyline.be/config/hyperlinks">
   <HyperLink id="1"
           version="2"
@@ -65,48 +67,60 @@ To enable the "Create Ticket" option in the alarm console's right-click menu, hy
 </HyperLinks>
 ```
 
-**Parameters:**
-
 - **Required Parameters:**
+
   - **DMA ID ([DMAID]):** The DataMiner Agent ID.
   - **Element ID ([EID]):** The ID of the element associated with the alarm.
   - **Alarm ID ([ROOTKEY]):** The unique identifier of the alarm.
   - **Element Name ([ENAME]):** The name of the element associated with the alarm.
 
 - **Optional Parameters:**
+
   - **Alarm Value ([VALUE]):** The value of the alarm.
   - **Root Time ([ROOTTIME]):** The timestamp of the alarm's root cause, formatted as `yyyy-MM-ddTHH:mm:ssZ`.
 
-This hyperlink configuration ensures that the "Create Ticket" option is available in the alarm console, triggering the automation script with the necessary alarm details.
+This hyperlink configuration ensures that the "Create Ticket" option is available in the Alarm Console, triggering the Automation script with the necessary alarm details.
 
-> \[!NOTE\] For more information on configuring hyperlinks in DataMiner, refer to the DataMiner Hyperlinks Documentation.
+> [!NOTE]
+> For more information on configuring hyperlinks in DataMiner, see [Hyperlinks.xml](https://aka.dataminer.services/Hyperlinks_xml).
 
 ## How to Use
 
 To use this connector, follow these steps:
 
-1. Create an element using the Orange Oceane Ticketing System connector in DataMiner, specifying the HTTP connection details and ensuring the "Include Timeout" checkbox is unchecked in the "More TCP/IP Settings."
-2. On the settings page, configure the API Settings with the provided Client ID, Client Secret, and User ID, then authenticate.
-3. Set the desired Element Settings, such as ticket storage limits, retry counts, and whether to display the debug page.
-4. In the alarm console, right-click on an alarm and select "Create Ticket" from the menu.
-5. If the ticket does not already exist, a dialog will appear prompting the user to enter ticket details, including:
-   - Priority (required)
-   - Urgency (required)
-   - Technical Impact (required)
-   - Client Impact
-   - Description
-6. After filling in the details, click "Create Ticket" to submit the request.
-7. The connector will attempt to create the ticket:
-   - If successful, it updates the alarm properties with the ticket ID and URL and adds the ticket to the Tickets table.
-   - If unsuccessful, it adds the ticket to Tickets table with failed status and it records the failure in the "Failed Ticket Requests" table.
+1. Create an element using the Orange Oceane Ticketing System connector in DataMiner, specifying the HTTP connection details and ensuring the **Include timeout** checkbox is **not selected** in the "More TCP/IP Settings."
 
-**Note:** The debug page can be enabled in the Element Settings to monitor ticket queue statuses for troubleshooting purposes.
+1. On the **Settings** page, configure the API settings with the provided *Client ID*, *Client Secret*, and *User ID*, then authenticate.
+
+1. Configure the desired element settings, such as ticket storage limits, retry counts, and whether to display the debug page.
+
+   The [Debug page](#debug-page) can be used to monitor ticket queue statuses for troubleshooting purposes, but you will not need this page in normal circumstances.
+
+1. To create a ticket:
+
+   1. Right-click an alarm in the Alarm Console and select **Create Ticket** in the menu.
+
+   1. If the ticket does not already exist, you will be asked to enter ticket details, including:
+
+      - Priority (required)
+      - Urgency (required)
+      - Technical Impact (required)
+      - Client Impact
+      - Description
+
+   1. After filling in the details, click **Create Ticket** to submit the request.
+
+      The connector will attempt to create the ticket:
+
+      - If **successful**, it updates the alarm properties with the ticket ID and URL and adds the ticket to the **Tickets** table.
+      - If **unsuccessful**, it adds the ticket to **Tickets** table with **failed** status, and it records the failure in the **Failed Ticket Requests** table.
 
 ## Interfaces
 
 ### Dynamic Interfaces
 
 - **Virtual dynamic interfaces:**
+
   - **Tickets Table:** Contains created tickets with fields such as Instance, Ticket ID, Alarm ID, DataMiner ID, Element ID, Element Name, Created At, Priority, Urgency, Technical Impact, Client Impact, Root Cause, and Status.
   - **Failed Ticket Requests Table:** Contains information about failed ticket creation attempts, with fields such as Instance, Ticket ID, HTTP Error Code, App Error Code, Error Message, and Error Description.
 
@@ -114,9 +128,9 @@ These tables are updated by the connector as tickets are created or fail to be c
 
 ## Debug Page
 
-The connector provides a debug page (enabled via Element Settings) that displays the status of ticket queues:
+The connector provides a debug page (enabled via the Settings page) that displays the status of ticket queues:
 
 - **Ticket Queue Processing Lock:** Indicates if the ticket processing is locked or not with the locked status indicating that the connector is currently processing the ticket.
-- **Pending Ticket Creation Queue:** Shows the status of pending ticket creation requests (the buffer).
+- **Pending Ticket Creation Queue:** Shows the status of pending ticket creation requests (buffer).
 
 These can be useful for troubleshooting issues with ticket creation.
