@@ -4,32 +4,14 @@ uid: Connector_help_Evertz_DreamCatcher_Technical
 
 # Evertz DreamCatcher
 
-Evertz DreamCatcher is a scheduling system for generating “growing files”. This system has 4 main components: Schedules, Events, Tasks, and Resources.
-
-- Schedules are the top level metadata that holds reference to one or many Events. 
-- Events are the entities actually doing work in the system.
-- Task are the activities to perform during the event.
-- Resources are abstractions of many different entities in the system that can be operated upon.
-
 ## About
 
-### Version Info
+Evertz DreamCatcher is a scheduling system for generating "growing files". This system has four main components:
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Initial version</li></ul>         |-         |-         |
-
-### Product Info
-
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |2.9.2.r1.588         |
-
-### System Info
-
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+- **Schedules**: The top-level metadata that hold references to one or more events.
+- **Events**: The entities actually doing work in the system.
+- **Tasks**: The activities to perform during an event.
+- **Resources**: Abstractions of the many different entities in the system that can be operated upon.
 
 ## Configuration
 
@@ -41,7 +23,6 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-
 - Direct connection:
 
   - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
@@ -52,11 +33,7 @@ SERIAL CONNECTION:
 
 ### Initialization
 
-To start polling device data, the user must need to set the Username and Version. Those parameters are placed on General page.
-
-### Redundancy
-
-There is no redundancy defined.
+To start polling device data, go to the **General** page of the element and specify the **Username** and **Version**.
 
 ### Web Interface
 
@@ -64,7 +41,22 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-To retrieve data, we need to configure the credentials on main page. After configure those parameters, the user will show all tables with the desire data.
+Once the credentials have been configured as detailed above, the element will show the necessary data in its tables, and you will be able to create schedules or tasks.
 
-- To create a Schedule, the user needs to go to Schedules page and click on **Create Schedule** pagebutton. On that popup window, the user needs to fill in all the information (schedule name, start and end time) and also add the events that are associated to the schedule. After fill in all the information, the user must click the **Create Schedule** button and the connector will execute the command. After click the button, the user will see the Schedule created on Schedules table.
-- To create a Task, the user needs to go to Tasks page and click on **Create Task** pagebutton. On that popup window, the user must need to fill in all the parameters and click on **Create Task** button. After click the button, the user will see the task created on Tasks table.
+To **create a schedule**:
+
+1. Go to the **Schedules** page and click the **Create Schedule** page button.
+
+1. In the pop-up window, fill in the schedule name, start time, and end time, and also add the events that are associated with the schedule.
+
+1. When all the necessary information has been filled in, click the **Create Schedule** button.
+
+   The connector will then execute the command, and the new schedule will be added in the Schedules table.
+
+To **create a task**:
+
+1. Go to the **Tasks** page and click the **Create Task** page button.
+
+1. In the pop-up window, fill in the necessary parameters and click the **Create Task** button.
+
+   The new task will then be added in the Tasks table.

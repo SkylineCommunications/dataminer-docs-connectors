@@ -6,42 +6,40 @@ uid: Connector_help_Evertz_DreamCatcher
 
 ## About
 
-Evertz DreamCatcher is a scheduling system designed for generating “growing files.” It organizes operations through a hierarchy of Schedules, Events, Tasks, and Resources, enabling efficient workflow and data handling in media production environments.
+Evertz DreamCatcher is a scheduling system designed for generating "growing files". It organizes operations through a hierarchy of schedules, events, tasks, and resources, enabling efficient workflow and data handling in media production environments.
 
 ## Key Features
 
-- **Hierarchical Structure**: Utilizes Schedules, Events, Tasks, and Resources to manage workflows efficiently.
+- **Hierarchical structure**: Utilizes schedules, events, tasks, and resources to manage workflows efficiently.
 
-- **Web Interface Access**: Allows users to access the system's web interface when on the same network, making configuration and monitoring more accessible.
+- **Web interface access**: Allows users to access the system's web interface when on the same network, making configuration and monitoring more accessible.
 
-- **User Authentication**: Requires username and version credentials to start data polling, enhancing security and control.
-
-- **Growing File Scheduling**: Enables the creation and management of schedules and tasks directly within the interface for dynamic media handling.
+- **Growing file scheduling**: Enables the creation and management of schedules and tasks directly within the interface for dynamic media handling.
 
 ## Use Cases
 
-### Use Case 1
+### Managing Complex Scheduling
 
 **Challenge**: Broadcasters need to manage complex scheduling for live or ongoing media capture with minimal interruption.
 
-**Solution**: Use Evertz DreamCatcher to create detailed Schedules with associated Events and Tasks that manage media input dynamically.
+**Solution**: This connector allows you to create detailed schedules with associated events and tasks that manage media input dynamically.
 
 **Benefit**: Streamlined operations, reduced manual workload, and improved content readiness for broadcast or review.
 
-### Use Case 3
+### Visibility of Active Media Capture Tasks
 
 **Challenge**: Users struggle with visibility and management of active media capture tasks.
 
-**Solution**: Intuitive web interface allows users to create, view, and manage tasks and schedules effectively.
+**Solution**: The intuitive web interface allows users to create, view, and manage tasks and schedules effectively.
 
-**Benefit**: Improved user control and task management with real-time interaction and visibility into the system.
+**Benefit**: Improved user control and task management with real-time interaction with and visibility on the system.
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **Serial Connection** is needed for device communication and requires specific parameters like baudrate and parity settings.
+- A **serial connection** is needed for device communication, requiring specific parameters like baudrate and parity settings.
 
-- **User Credentials** are needed for initializing the system and accessing its features securely.
+- **User credentials** are required for initializing the system and accessing its features securely.
 
-- **Network Access** is required for utilizing the web interface and managing the connector remotely.
+- **Network access** is required for utilizing the web interface and managing the connector remotely.
