@@ -3655,6 +3655,11 @@
     topicUid: Connector_help_Evertz_BPXRF
   - name: Evertz DEC7882H264
     topicUid: Connector_help_Evertz_DEC7882H264
+  - name: Evertz DreamCatcher
+    topicUid: Connector_help_Evertz_DreamCatcher
+    items:
+      - name: Evertz DreamCatcher Technical
+        topicUid: Connector_help_Evertz_DreamCatcher_Technical
   - name: Evertz EMR-IP96-AESB
     topicUid: Connector_help_Evertz_EMR-IP96-AESB
   - name: Evertz EMX-FC
