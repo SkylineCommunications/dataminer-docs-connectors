@@ -3,8 +3,8 @@ uid: Connector_help_Harmonic_VOS_Technical
 ---
 
 # Harmonic VOS
-
-
+> [!IMPORTANT]
+> If you update to the 1.1.3.x range you will need to re-enter the credentials of the client secret!
 
 > [!IMPORTANT]
 > If you do not have RF cards, please disable these routes on the API Endpoint Status page of the element:
