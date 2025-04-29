@@ -6,59 +6,52 @@ uid: Connector_help_iDirect_VSAT_Broadband_Observability
 
 ## About
 
-The iDirect VSAT Broadband Observability connector provides real-time network insights for VSAT broadband systems. Built on the iDirect NMS platform, this connector aggregates critical performance data across networks at a teleport, enabling users to monitor, analyze, and optimize broadband connectivity through a low-code application.
+The iDirect VSAT Broadband Observability connector provides real-time network insights for VSAT broadband systems. Built on the iDirect NMS platform, this connector aggregates critical performance data across networks at a teleport, enabling users to monitor, analyze, and optimize broadband connectivity through a low-code app.
 
 ## Key Features
 
-**Comprehensive Network Monitoring:**  
-Tracks network health, congestion, and site availability in real time.
+- **Comprehensive network monitoring**: Tracks network health, congestion, and site availability in real time.
 
-**Traffic and Capacity Analysis:**  
-Monitors bandwidth utilization, providing visibility into upstream and downstream traffic.
+- **Traffic and capacity analysis**: Monitors bandwidth utilization, providing visibility on upstream and downstream traffic.
 
-**Site Count Monitoring:**  
-Uses both state change logs and event message logs to determine site status with high accuracy.
+- **Site count monitoring**: Uses both state change logs and event message logs to determine site status with high accuracy.
 
-**Automated Data Collection:**  
-Seamlessly integrates with MySQL databases to retrieve and update data without manual intervention.
+- **Automated data collection**: Seamlessly integrates with MySQL databases to retrieve and update data without manual intervention.
 
-**Configurable Thresholds and Alerts:**  
-Allows users to customize bandwidth configurations and proactively detect network congestion.
+- **Configurable thresholds and alerts**: Allows users to customize bandwidth configurations and proactively detect network congestion.
 
 ## Use Cases
 
-### Use Case 1: Real-Time Network Health Monitoring
+### Real-Time Network Health Monitoring
 
-**Challenge:** Managing VSAT broadband networks across multiple locations requires real-time insights to detect connectivity issues before they impact operations.
+**Challenge**: Managing VSAT broadband networks across multiple locations requires real-time insights to detect connectivity issues before they impact operations.
 
-**Solution:** The connector continuously collects and aggregates data from the MySQL database, providing instant visibility into network health, congestion, and site status.
+**Solution**: The connector continuously collects and aggregates data from the MySQL database, providing instant visibility into network health, congestion, and site status.
 
-**Benefit:** Proactive network management reduces downtime and improves service reliability.
+**Benefit**: Proactive network management reduces downtime and improves service reliability.
 
-### Use Case 2: Bandwidth Optimization for High-Traffic Networks
+### Bandwidth Optimization for High-Traffic Networks
 
-**Challenge:** Unpredictable bandwidth consumption leads to network congestion, affecting performance and user experience.
+**Challenge**: Unpredictable bandwidth consumption leads to network congestion, affecting performance and user experience.
 
-**Solution:** By monitoring bandwidth utilization against the configured values, the connector helps identify capacity issues and optimize network traffic distribution.
+**Solution**: By monitoring bandwidth utilization against the configured values, the connector helps identify capacity issues and optimize network traffic distribution.
 
-**Benefit:** Improved network efficiency ensures seamless communication and maximized resource utilization.
+**Benefit**: Improved network efficiency ensures seamless communication and maximized resource utilization.
 
-### Use Case 3: Monthly Network Performance Reporting
+### Monthly Network Performance Reporting
 
-**Challenge:** Gathering and analyzing large volumes of network data for performance reports is time-consuming and complex.
+**Challenge**: Gathering and analyzing large volumes of network data for performance reports is time-consuming and complex.
 
-**Solution:** The connector automates data collection, calculates 95th percentile bandwidth usage, and generates reports on network utilization.
+**Solution**: The connector automates data collection, calculates 95th percentile bandwidth usage, and generates reports on network utilization.
 
-**Benefit:** Simplified reporting saves time, enhances decision-making, and ensures data accuracy.
+**Benefit**: Simplified reporting saves time, enhances decision-making, and ensures data accuracy.
 
 ## Technical Reference
 
 ### Prerequisites
 
-**Database Access:** Credentials for accessing the MySQL database containing network data.
+**Database Access**: Credentials for accessing the MySQL database containing network data.
 
-**Configuration Server:** Required to retrieve teleport, network, and netmodem configurations.
+**Configuration Server**: Required to retrieve teleport, network, and net modem configurations.
 
-**Archive Server:** Needed for event message logs and historical data retrieval.
-
-With the iDirect VSAT Broadband Observability connector, network administrators can achieve better visibility, optimize traffic management, and ensure uninterrupted broadband connectivity with ease.
+**Archive Server**: Needed for event message logs and historical data retrieval.
