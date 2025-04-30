@@ -80,6 +80,24 @@ If the connector is communicating with the device, the **Connection Status** wil
 
 The **Alarm** page contains a table showing all the received alarms.
 
+### Auto Events
+
+The **Auto Events** page has a table containing captured auto events (unsolicited TL1 message).
+
+### Auto Alarms
+
+The **Auto Alarms** page has a table containing captured auto alarms (unsolicited TL1 message).
+Since auto alarms cannot be polled, rows here can be removed manually/automatically to avoid sticky alarms.
+
+To remove alarms manually,
+1. left click on all rows that you wish to delete.
+2. right click on the **Auto Alarms** table to open up a context menu.
+3. click the "Remove Alarm(s)" option to remove the rows.
+
+To remove alarms automatically,
+1. enable the "Auto Clear Old Auto Alarms" toggle
+2. configure the "Max Age of Auto Alarms" to determine the criteria for automatic alarm removal.
+
 ### Inventory
 
 The **Inventory** page shows all network elements in the inventory. This inventory has to be provisioned via a CSV file.
