@@ -10,14 +10,13 @@ This connector integrates DataMiner with Interra Systems' ORION platform, a real
 
 ## Key Features
 
-**Feed Monitoring**: Displays all available video feeds monitored by ORION, including their current health status.
+**Feed monitoring**: Displays all available video feeds monitored by ORION, including their current health status.
 
-**PID Inspection**: Retrieves and presents Program Identifiers (PIDs) for each feed, supporting in-depth stream analysis.
+**PID inspection**: Retrieves and presents Program Identifiers (PIDs) for each feed, supporting in-depth stream analysis.
 
-**Service Monitoring**: Offers a complete view of monitored services and their compliance or error states.
+**Service monitoring**: Offers a complete view of monitored services and their compliance or error states.
 
 ## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Interra_Orion_Real-Time_Content_Monitor_Technical).
-

@@ -6,7 +6,7 @@ uid: Connector_help_Interra_Orion_Real-Time_Content_Monitor_Technical
 
 ## About
 
-This is a DataMiner connector for the Interra Systems' ORION, a real-time content monitoring system used in IP-based video delivery infrastructures. ORION monitors multiple aspects of video streams including Quality of Service (QoS), Quality of Experience (QoE), closed captions, loudness compliance, and ad insertion verification. It supports real-time analysis and logging of streaming content, enabling service providers to track alerts, alarms, and impairments across large-scale deployments.
+This is a DataMiner connector for Interra Systems' ORION, a real-time content monitoring system used in IP-based video delivery infrastructures. ORION monitors multiple aspects of video streams including Quality of Service (QoS), Quality of Experience (QoE), closed captions, loudness compliance, and ad insertion verification. It supports real-time analysis and logging of streaming content, enabling service providers to track alerts, alarms, and impairments across large-scale deployments.
 
 ## Configuration
 
@@ -14,18 +14,18 @@ This is a DataMiner connector for the Interra Systems' ORION, a real-time conten
 
 #### HTTP Connection - Main
 
-This connector uses a HTTP connection and requires the following input during element creation:
+This connector uses an HTTP connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
 
-## How to use 
+## How to use
 
 ### General
 
-On this page, you can configure the user's authentication details to the system's, namely **Username** and **Password**. You can also monitor the authentication status of this user's credentials.
+On this page, you can configure the **Username** and **Password** to authenticate with the system, and you can monitor the authentication status.
 
 ### Feeds
 
