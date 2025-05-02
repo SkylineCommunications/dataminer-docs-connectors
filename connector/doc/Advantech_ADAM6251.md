@@ -66,4 +66,4 @@ you can configure the **GCL flags** on this page, at the bottom are *2* **button
 
 ### Web Interface
 
-The client machine has to be able to access the device. If not, it won't be possible to open the web interface.
+The client machine has to be able to access the device. If not, it will not be possible to open the web interface.
