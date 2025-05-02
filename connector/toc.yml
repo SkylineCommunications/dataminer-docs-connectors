@@ -3925,8 +3925,9 @@
   items:
   - name: Fujitsu FLEXR
     topicUid: Connector_help_Fujitsu_FLEXR
-  - name: Fujitsu FLEXR - Network Element
-    topicUid: Connector_help_Fujitsu_FLEXR_-_Network_Element
+    items:
+    - name: Fujitsu FLEXR - Network Element
+      topicUid: Connector_help_Fujitsu_FLEXR_-_Network_Element
   - name: Fujitsu IP-920
     topicUid: Connector_help_Fujitsu_IP-920
   - name: Fujitsu IP-9500

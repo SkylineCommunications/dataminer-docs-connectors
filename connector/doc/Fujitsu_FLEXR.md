@@ -30,7 +30,7 @@ The Fujitsu FLEXR is a management system used to maintain and monitor a wide var
 
 ### Connections
 
-#### SNMP Primary Connection.
+#### SNMP Primary Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -44,7 +44,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private.*
 
-#### SNMP Secondary Connection.
+#### SNMP Secondary Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -86,17 +86,18 @@ The **Auto Events** page has a table containing captured auto events (unsolicite
 
 ### Auto Alarms
 
-The **Auto Alarms** page has a table containing captured auto alarms (unsolicited TL1 message).
-Since auto alarms cannot be polled, rows here can be removed manually/automatically to avoid sticky alarms.
+The **Auto Alarms** page has a table containing captured auto alarms (unsolicited TL1 message). Since auto alarms cannot be polled, rows here can be removed manually/automatically to avoid sticky alarms.
 
-To remove alarms manually,
-1. left click on all rows that you wish to delete.
-2. right click on the **Auto Alarms** table to open up a context menu.
-3. click the "Remove Alarm(s)" option to remove the rows.
+To remove alarms manually:
 
-To remove alarms automatically,
-1. enable the "Auto Clear Old Auto Alarms" toggle
-2. configure the "Max Age of Auto Alarms" to determine the criteria for automatic alarm removal.
+1. Select the rows that you want to delete.
+1. Right-click the **Auto Alarms** table to open up a context menu.
+1. Select the **Remove Alarm(s)** option to remove the rows.
+
+To have alarms removed automatically:
+
+1. Enable the **Auto Clear Old Auto Alarms** toggle button.
+1. Set the **Max Age of Auto Alarms** to determine the criteria for automatic alarm removal.
 
 ### Inventory
 
@@ -106,6 +107,8 @@ The Inventory table will generate DVE elements for each entry in the inventory C
 
 CSV example:
 
+```txt
 id;type
 DeviceId1;Type1
 DeviceId2;Type2
+```
