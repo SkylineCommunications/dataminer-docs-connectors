@@ -4586,6 +4586,9 @@
     topicUid: Connector_help_Harmonic_ViBE_CP9000
   - name: Harmonic VOS
     topicUid: Connector_help_Harmonic_VOS
+    items:
+     - name: Harmonic VOS Technical
+       topicUid: Connector_help_Harmonic_VOS_Technical
 - name: Harris
   items:
   - name: Harris Falcon III RF-7800W HCLOS Radio
