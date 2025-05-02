@@ -6,9 +6,7 @@ uid: Connector_help_Harmonic_VOS
 
 ## About
 
-**Harmonic VOS** retrieves monitoring information from the Harmonic VOS and XOS application, which runs on Amazon Web Services.
-It allows you to monitor the services, sources, and destinations, as well as logs, notifications, and Origin Engine info.
-A Visio file is provided with the connector to group data and allow easy navigation.
+Harmonic VOS retrieves monitoring information from the Harmonic VOS and XOS application, which runs on Amazon Web Services. It allows you to monitor the services, sources, and destinations, as well as logs, notifications, and Origin Engine info. A Visio file is provided with the connector to group data and allow easy navigation.
 
 > [!TIP]
 > For easy navigation between services and all the details per service, the Visio file is required.
@@ -19,13 +17,9 @@ A Visio file is provided with the connector to group data and allow easy navigat
 
 - Overview of sources and destinations.
 
-- Adding of new sources, destinations and services.
+- Adding of new sources, destinations, and services.
 
-## Prerequisites
-
-To deploy this integration, you will need:
-
-- DataMiner version **10.2.0 CU15 or higher**
+## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Harmonic_VOS_Technical).

@@ -3,29 +3,28 @@ uid: Connector_help_Harmonic_VOS_Technical
 ---
 
 # Harmonic VOS
-> [!IMPORTANT]
-> If you update to the 1.1.3.x range you will need to re-enter the credentials of the client secret!
 
 > [!IMPORTANT]
-> If you do not have RF cards, please disable these routes on the API Endpoint Status page of the element:
 >
-> - /vos-api/platform-config/v1/systemInfo
-> - /vos-api/platform-config/v1/networks
-> - /vos-api/platform-config/v1/rfMonitorings
-> - /vos-api/platform-config/v1/rfStatistics
-> - /vos-api/platform-config/v1/rfSettings
+> - If you **update to the 1.1.3.x range**, you will need to **re-enter the credentials** of the client secret.
+> - If you **do not have RF cards**, please **disable these routes** on the API Endpoint Status page of the element:
+>   - /vos-api/platform-config/v1/systemInfo
+>   - /vos-api/platform-config/v1/networks
+>   - /vos-api/platform-config/v1/rfMonitorings
+>   - /vos-api/platform-config/v1/rfStatistics
+>   - /vos-api/platform-config/v1/rfSettings
 
 ## About
 
 ### Version Info
 
-| Range              | Description                                                                                                                    | DCF Integration | Cassandra Compliant |
-|--------------------|--------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
-| 1.0.0.x            | Initial version. Most parameters are read-only, but you can configure the Service Control State. A Visio drawing is available. | No              | Yes                 |
-| 1.1.0.x            | OAUTH2 authentication.                                                                                                         | No              | Yes                 |
-| 1.1.1.x            | Added new connection to improve polling rate.                                                                                  | No              | Yes                 |
-| 1.1.2.x | Updated Origin engine table primary key to fix duplicate key errors                                                            | No              | Yes                 |
-| 1.1.3.x [SLC Main] | Updated Client Secret to be a password                                                            | No              | Yes                 |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. Most parameters are read-only, but you can configure the Service Control State. A Visio drawing is available. | No | Yes |
+| 1.1.0.x | OAUTH2 authentication. | No | Yes |
+| 1.1.1.x | Added new connection to improve polling rate. | No | Yes |
+| 1.1.2.x | Updated Origin engine table primary key to fix duplicate key errors. | No | Yes |
+| 1.1.3.x [SLC Main] | Updated Client Secret to be a password. | No | Yes |
 
 ### Product Info
 
@@ -85,13 +84,13 @@ Via the **Add Destination** page button, you can access a subpage where you can 
 
 ### Profiles
 
-This page contains multiple tables with all **Multiscreen**, **IPTV** and **Destination Profiles**. However, we recommend using the Visio drawing instead of the element data on this page.
+This page contains multiple tables with all **Multiscreen**, **IPTV**, and **Destination Profiles**. However, we recommend using the Visio drawing instead of the element data on this page.
 
 There is a **Multiscreen Video Profiles Table** linked to the **Multiscreen Profiles** and also an **Audio Profiles** table linked to both **Multiscreen** and **IPTV Profiles**.
 
 ### Cloud Links
 
-This page displays the **Cloud Link Table**. Each row in the table represents a cloud link, with the following information: **IP Address**, **Rank**, **Version**, **Uplink State**, etc.
+This page displays the **Cloud Link Table**. Each row in the table represents a cloud link, with the **IP Address**, **Rank**, **Version**, **Uplink State**, etc.
 
 ### Nodes
 
@@ -133,7 +132,3 @@ This page contains connection parameters related to the configuration of this co
 This page contains API endpoint status information, including the number of times it has been executed, and the number of times it had errors.
 
 You can also disable or enable polling of the API paths here.
-
-
-
-
