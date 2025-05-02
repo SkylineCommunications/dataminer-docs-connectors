@@ -4678,6 +4678,11 @@
     topicUid: Connector_help_HP_3PAR_StoreServ
   - name: HP A5500 EI Switch Serie
     topicUid: Connector_help_HP_A5500_EI_Switch_Serie
+  - name: HP Aruba Network Switch
+    topicUid: Connector_help_HP_Aruba_Network_Switch
+    items:
+    - name: HP Aruba Network Switch Technical
+      topicUid: Connector_help_HP_Aruba_Network_Switch_Technical
   - name: HP BladeSystem c7000
     topicUid: Connector_help_HP_BladeSystem_c7000
   - name: HP Fibre Channel Switch
