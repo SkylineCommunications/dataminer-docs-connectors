@@ -34,13 +34,14 @@ The web interface is only accessible when the client machine has network access 
 ## How to use
 
 ### General Page
-
+On this page the user can check the device information.
 ### Status
-
+This page displays device status information like the temperature, fan and power unit status.
 ### Interface
-
+Displays information about the switch interfaces.
 ### SNMP
-
+Here the user can configure the trap information.
 ### VLAN
-
+Displays information related with the VLANs.
 ### Events
+This page contains a table with the latest device events.
