@@ -17,15 +17,15 @@ This driver connects to the solution by an HTTP connection and displays various 
 
 - **Easy Authentication**: Authenticate using a Username and a Password, which will enable you to access and monitor your network solution.
 
-## Use Cases [WIP]
+## Use Cases
 
-### Remote Monitoring of Device Alarms
+### Remote Monitoring and Network Management
 
-**Challenge:** Monitor CISCO devices from a single source.
+**Challenge:** Manage your IP network across vendor and technology boundaries.
 
-**Solution:** With this connector, you can set and manage alarm thresholds for the CISCO devices. This allows proactive monitoring and minimizes the risk of unforeseen system failures.
+**Solution:** Integrate all your network management systems into your DataMiner System to gain real-time visibility and instant status updates across your entire network.
 
-**Benefit:** Potential issues can be quickly addressed in real time, improving the reliability and performance of network operations.
+**Benefit:** Having access to all measurement results within a single centralized system empowers you to quickly detect anomalies and pinpoint the root cause of failures across multiple sites.
 
 ## Technical Reference
 
