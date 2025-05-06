@@ -6738,6 +6738,11 @@
     topicUid: Connector_help_NHK_Snapshot_Manager
 - name: Nokia
   items:
+  - name: Nokia 1830 PSD
+    topicUid: Connector_help_Nokia_1830_PSD
+    items:
+    - name: Nokia 1830 PSD Technical
+      topicUid: Connector_help_Nokia_1830_PSD_Technical
   - name: Nokia Altiplano Collector
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
