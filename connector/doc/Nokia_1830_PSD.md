@@ -12,17 +12,17 @@ This connector is designed to support customers using MEF-compliant 10G Ethernet
 
 ## Key Features
 
-- **SNMP-Based Monitoring**: Retrieves data using SNMP to monitor interface traffic and device health.
-- **Device Overview**: Shows general device information including model, IP, and status.
-- **Interface Metrics**: Displays per-interface statistics such as bit rate, packet rate, and operational status.
-- **Alarm Visibility**: Flags abnormal behavior or status to support prompt action.
-- **Standards Compliance**: Supports monitoring of MEF-compliant services and optical transport protocols.
+- **SNMP-based monitoring**: Retrieves data using SNMP to monitor interface traffic and device health.
+- **Device overview**: Shows general device information including model, IP, and status.
+- **Interface metrics**: Displays per-interface statistics such as bit rate, packet rate, and operational status.
+- **Alarm visibility**: Flags abnormal behavior or status to support prompt action.
+- **Standards compliance**: Supports monitoring of MEF-compliant services and optical transport protocols.
 
 ## Use Cases
 
 ### Use Case 1
 
-**Challenge**: Need to monitor network demarcation points deployed at customer sites across an optical network.
+**Challenge**: Monitoring of network demarcation points deployed at customer sites across an optical network.
 
 **Solution**: Deploy the Nokia 1830 PSD connector to gather real-time performance data and interface statistics.
 

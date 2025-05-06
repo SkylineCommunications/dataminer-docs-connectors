@@ -4,29 +4,11 @@ uid: Connector_help_Nokia_1830_PSD_Technical
 
 # Nokia 1830 PSD
 
-The **Nokia 1830 Photonic Service Demarcation (PSD)** is Network Interface Device (NID) used for network demarcation at customer premises. It supports MEF-compliant 10G Ethernet and wavelength services by extending the optical network.
-
-This connector uses the SNMP protocol to communicate with the actual **Nokia 1830 PSD** device.
-
 ## About
 
-### Version Info
+The **Nokia 1830 Photonic Service Demarcation (PSD)** is Network Interface Device (NID) used for network demarcation at customer premises. It supports MEF-compliant 10G Ethernet and wavelength services by extending the optical network.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 3.5                    |
-
-### System Info
-
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | No | Yes | - | - |
+This connector uses the SNMP protocol to communicate with the **Nokia 1830 PSD** device.
 
 ## Configuration
 
@@ -48,8 +30,8 @@ SNMP Settings:
 
 ## How to use
 
-The connector is designed to monitor the device's network interfaces, raise alarms when necessary, and enable timely response to network events.
+The connector is designed to monitor the device's network interfaces, raise alarms when necessary, and enable a timely response to network events.
 
-The *General page* provides basic information about the device (e.g., name, model, IP address).
+The General page provides basic information about the device (e.g. name, model, and IP address).
 
-The following three pages present detailed interface metrics, including input/output bit rate, packet rate, operational status, and other relevant parameters.
+The other three pages present detailed interface metrics, including input/output bit rate, packet rate, operational status, and other relevant parameters.
