@@ -2192,6 +2192,11 @@
     topicUid: Connector_help_CISCO_ASR_Manager
   - name: CISCO AS Series Media Processor
     topicUid: Connector_help_CISCO_AS_Series_Media_Processor
+  - name: CISCO Catalyst SD-WAN
+    topicUid: Connector_help_CISCO_Catalyst_SD-WAN
+    items:
+    - name: CISCO Catalyst SD-WAN Technical
+      topicUid: Connector_help_CISCO_Catalyst_SD-WAN_Technical
   - name: Cisco CBR-8
     topicUid: Connector_help_Cisco_CBR-8
   - name: CISCO CBR-8 CCAP Platform
