@@ -4209,6 +4209,9 @@
     topicUid: Connector_help_Generic_SMB
   - name: Generic SMPP SMS Sender
     topicUid: Connector_help_Generic_SMPP_SMS_Sender
+    items:
+    - name: Generic SMPP SMS Sender Technical
+      topicUid: Connector_help_Generic_SMPP_SMS_Sender_Technical
   - name: Generic SNMP
     topicUid: Connector_help_Generic_SNMP
   - name: Generic SQL Query
