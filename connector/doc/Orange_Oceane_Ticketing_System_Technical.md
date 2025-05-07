@@ -79,7 +79,7 @@ To enable the **Create Ticket** option in the Alarm Console's right-click menu, 
   - **Alarm Value ([VALUE]):** The value of the alarm.
   - **Root Time ([ROOTTIME]):** The timestamp of the alarm's root cause, formatted as `yyyy-MM-ddTHH:mm:ssZ`.
 
-This hyperlink configuration ensures that the "Create Ticket" option is available in the Alarm Console, triggering the Automation script with the necessary alarm details. The provided HyperLinks.xml file assumes that the script named "Orange Oceane Ticketing System" is located in the "Automation scripts" root folder within the Automation module (Apps -> Automation). If you prefer to place the script in a different folder, please update the HyperLinks.xml file accordingly. 
+This hyperlink configuration ensures that the "Create Ticket" option is available in the Alarm Console, triggering the Automation script with the necessary alarm details. The provided HyperLinks.xml file assumes that the script named "Orange Oceane Ticketing System" is located in the "Automation scripts" root folder within the Automation module (Apps -> Automation). If you prefer to place the script in a different folder or if you want to rename the script, please update the HyperLinks.xml file accordingly. 
 
 > [!TIP]
 > For more information on configuring hyperlinks in DataMiner:
