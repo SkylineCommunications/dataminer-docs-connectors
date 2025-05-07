@@ -94,10 +94,15 @@ This page is similar to the Input Services page but contains information for all
 This page has page buttons to the following subpages:
 
 - **Output CC Errors**: Contains a table with information on the PIDs that have CC errors. It shows the number of CC errors detected.
+
 - **DPI**: Contains the digital program insertion table, which lists the services that have a DPI PID.
+
 - **Redundancy**: Displays the service redundancies summary, with basic information including the redundancy state and the mode. Also displays a table with more detailed information on the available redundancy streams.
+
   Note: In the current version of the connector, the Redundancy Mode is shown as an integer.
+
 - **Slate**: Contains a table showing the status of a slate, whether it is active, and the IDs for the service used to generate the slate.
+
 - **SPS**: Contains the Seamless Program Substitution table, with the sources for SPS.
 
 ### Bitrate pages (TS, Service and PID)
