@@ -48,7 +48,7 @@ The AMPP Manager is equipped with the essential functionality to list fabrics, n
 ### Prerequisites
 
 - **DataMiner version 10.2 or higher**
-- **SignalR Forwarder 2.1 or higher**
+- **SignalR Forwarder 3.4 or higher**
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Grass_Valley_AMPP_Manager_Technical).

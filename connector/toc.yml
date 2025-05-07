@@ -2192,6 +2192,11 @@
     topicUid: Connector_help_CISCO_ASR_Manager
   - name: CISCO AS Series Media Processor
     topicUid: Connector_help_CISCO_AS_Series_Media_Processor
+  - name: CISCO Catalyst SD-WAN
+    topicUid: Connector_help_CISCO_Catalyst_SD-WAN
+    items:
+    - name: CISCO Catalyst SD-WAN Technical
+      topicUid: Connector_help_CISCO_Catalyst_SD-WAN_Technical
   - name: Cisco CBR-8
     topicUid: Connector_help_Cisco_CBR-8
   - name: CISCO CBR-8 CCAP Platform
@@ -2489,6 +2494,9 @@
     topicUid: Connector_help_CPI_TL12DO
   - name: CPI TL12UO
     topicUid: Connector_help_CPI_TL12UO
+    items:
+    - name: CPI TL12UO Technical
+      topicUid: Connector_help_CPI_TL12UO_Technical
   - name: CPI TL22CI
     topicUid: Connector_help_CPI_TL22CI
   - name: CPI Touch Power 3RU-0 Controller
@@ -2726,6 +2734,13 @@
     topicUid: Connector_help_DHD_XC2_AES67_RAVENNA
   - name: DHD XC3
     topicUid: Connector_help_DHD_XC3
+- name: Dialight
+  items:
+  - name: Dialight INEM
+    topicUid: Connector_help_Dialight_INEM
+    items:
+    - name: Dialight INEM Technical
+      topicUid: Connector_help_Dialight_INEM_Technical
 - name: DIBP
   items:
   - name: DIBP Active Bearer
@@ -3653,8 +3668,16 @@
     topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
   - name: Evertz BPXRF
     topicUid: Connector_help_Evertz_BPXRF
+    items:
+    - name: Evertz BPXRF Technical
+      topicUid: Connector_help_Evertz_BPXRF_Technical
   - name: Evertz DEC7882H264
     topicUid: Connector_help_Evertz_DEC7882H264
+  - name: Evertz DreamCatcher
+    topicUid: Connector_help_Evertz_DreamCatcher
+    items:
+      - name: Evertz DreamCatcher Technical
+        topicUid: Connector_help_Evertz_DreamCatcher_Technical
   - name: Evertz EMR-IP96-AESB
     topicUid: Connector_help_Evertz_EMR-IP96-AESB
   - name: Evertz EMX-FC
@@ -3917,8 +3940,9 @@
   items:
   - name: Fujitsu FLEXR
     topicUid: Connector_help_Fujitsu_FLEXR
-  - name: Fujitsu FLEXR - Network Element
-    topicUid: Connector_help_Fujitsu_FLEXR_-_Network_Element
+    items:
+    - name: Fujitsu FLEXR - Network Element
+      topicUid: Connector_help_Fujitsu_FLEXR_-_Network_Element
   - name: Fujitsu IP-920
     topicUid: Connector_help_Fujitsu_IP-920
   - name: Fujitsu IP-9500
@@ -4190,6 +4214,9 @@
     topicUid: Connector_help_Generic_SMB
   - name: Generic SMPP SMS Sender
     topicUid: Connector_help_Generic_SMPP_SMS_Sender
+    items:
+    - name: Generic SMPP SMS Sender Technical
+      topicUid: Connector_help_Generic_SMPP_SMS_Sender_Technical
   - name: Generic SNMP
     topicUid: Connector_help_Generic_SNMP
   - name: Generic SQL Query
@@ -4578,6 +4605,9 @@
     topicUid: Connector_help_Harmonic_ViBE_CP9000
   - name: Harmonic VOS
     topicUid: Connector_help_Harmonic_VOS
+    items:
+     - name: Harmonic VOS Technical
+       topicUid: Connector_help_Harmonic_VOS_Technical
 - name: Harris
   items:
   - name: Harris Falcon III RF-7800W HCLOS Radio
@@ -4670,6 +4700,11 @@
     topicUid: Connector_help_HP_3PAR_StoreServ
   - name: HP A5500 EI Switch Serie
     topicUid: Connector_help_HP_A5500_EI_Switch_Serie
+  - name: HP Aruba Network Switch
+    topicUid: Connector_help_HP_Aruba_Network_Switch
+    items:
+    - name: HP Aruba Network Switch Technical
+      topicUid: Connector_help_HP_Aruba_Network_Switch_Technical
   - name: HP BladeSystem c7000
     topicUid: Connector_help_HP_BladeSystem_c7000
   - name: HP Fibre Channel Switch
@@ -4730,6 +4765,9 @@
   items:
   - name: Hughes Pulse Platform VSAT
     topicUid: Connector_help_Hughes_Pulse_Platform_VSAT
+    items:
+    - name: Hughes Pulse Platform VSAT Technical
+      topicUid: Connector_help_Hughes_Pulse_Platform_VSAT_Technical
 - name: HW Group
   items:
   - name: HW Group Poseidon2
@@ -5085,6 +5123,11 @@
     topicUid: Connector_help_Interlogix_United_Technologies_Alliance_8300
 - name: International Datacasting
   items:
+  - name: International Datacasting ENC7000
+    topicUid: Connector_help_International_Datacasting_ENC7000
+    items:
+    - name: International Datacasting ENC7000 Technical
+      topicUid: Connector_help_International_Datacasting_ENC7000_Technical
   - name: International Datacasting IPE-4000
     topicUid: Connector_help_International_Datacasting_IPE-4000
   - name: International Datacasting Star3
@@ -5097,6 +5140,11 @@
     topicUid: Connector_help_Interra_Orion_Central_Manager
   - name: Interra Orion OTT
     topicUid: Connector_help_Interra_Orion_OTT
+  - name: Interra Orion Real-Time Content Monitor
+    topicUid: Connector_help_Interra_Orion_Real-Time_Content_Monitor
+    items:
+    - name: Interra Orion Real-Time Content Monitor Technical
+      topicUid: Connector_help_Interra_Orion_Real-Time_Content_Monitor_Technical
 - name: Intinor
   items:
   - name: Intinor Direkt Router
@@ -6703,6 +6751,11 @@
     topicUid: Connector_help_NHK_Snapshot_Manager
 - name: Nokia
   items:
+  - name: Nokia 1830 PSD
+    topicUid: Connector_help_Nokia_1830_PSD
+    items:
+    - name: Nokia 1830 PSD Technical
+      topicUid: Connector_help_Nokia_1830_PSD_Technical
   - name: Nokia Altiplano Collector
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
@@ -6985,6 +7038,11 @@
   items:
   - name: Orange Orion
     topicUid: Connector_help_Orange_Orion
+  - name: Orange Oceane Ticketing System
+    topicUid: Connector_help_Orange_Oceane_Ticketing_System
+    items:
+    - name: Orange Oceane Ticketing System Technical
+      topicUid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 - name: Orban
   items:
   - name: Orban Optimod 8685
@@ -7760,6 +7818,11 @@
   items:
   - name: SAF Tehnika Integra-W
     topicUid: Connector_help_SAF_Tehnika_Integra-W
+  - name: SAF Tehnika Phoenix G2
+    topicUid: Connector_help_SAF_Tehnika_Phoenix_G2
+    items:
+    - name: SAF Tehnika Phoenix G2 Technical
+      topicUid: Connector_help_SAF_Tehnika_Phoenix_G2_Technical
 - name: Sandar TeleCast
   items:
   - name: Sandar SA-1100
@@ -10276,6 +10339,11 @@
     topicUid: Connector_help_Woodward_EasyGen-3000
 - name: Work Microwave
   items:
+  - name: Work Microwave AX60 Series Modulator
+    topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator
+    items:
+    - name: Work Microwave AX60 Series Modulator Technical
+      topicUid: Connector_help_Work_Microwave_AX60_Series_Modulator_Technical
   - name: Work Microwave Converter SNMP
     topicUid: Connector_help_Work_Microwave_Converter_SNMP
   - name: Work Microwave DVB-S2 Modulator
