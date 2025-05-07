@@ -51,4 +51,4 @@ On this page, you can define the polling groups of the element.
 
 ### SNMP
 
-On the SNMP page, there is a table that allows the user to enter information to retrieve data from a specific OID. It´s also possible to set an optional trap receiver IP.
+On the SNMP page, there is a table where you can enter information to retrieve data from a specific OID. You can also set an optional trap receiver IP.
