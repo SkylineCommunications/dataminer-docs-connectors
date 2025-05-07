@@ -69,19 +69,19 @@ SERIAL CONNECTION:
 
 ## Usage
 
-The element consists of the following pages: **General** and **Boards**.
+The element has the following data pages: **General** and **Boards**.
 
 ### General
 
 This page contains the following parameters:
 
-- **Matrix Configuration status:** Displays any detected misconfigurations. The status **OK** indicates that the matrix was successfully configured.
-- **Number of Sources:** Allows configuration of number of sources for the matrix.
-- **Number of Destinations:** Allows configuration of number of destinations for the matrix.
-- **Matrix Number:** Allows configuration of matrix number.
-- **Level Number:** Allows configuration of level number.
-- **Source Names Length:** Allows configuration of name length for sources.
-- **Destination Names Length:** Allows configuration of name length for destinations.
+- **Matrix Configuration status:** Displays any detected misconfigurations. The status **OK** indicates that the matrix has been successfully configured.
+- **Number of Sources:** Allows you to configure the number of sources for the matrix.
+- **Number of Destinations:** Allows you to configure the number of destinations for the matrix.
+- **Matrix Number:** Allows you to configure the matrix number.
+- **Level Number:** Allows you to configure the level number.
+- **Source Names Length:** Allows you to configure the name length for sources.
+- **Destination Names Length:** Allows you to configure the name length for destinations.
 
 ### Boards
 
