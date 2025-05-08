@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Rosslare_Security_AxTraxNG
+uid: Connector_help_Rosslare_Security_AxTraxNG_Tehnical
 ---
 
 # Rosslare Security AxTraxNG
@@ -43,6 +43,6 @@ HTTP CONNECTION:
 
 ## How to use
 
-The **General** page displays details about available networks in Networks table. General page contains  **Panels**, **Doors**, **Readers** and **Outpits** subpages. On each subpage user can find data in table related to that page.
+The **General** page displays details about available networks in Networks table. General page contains  **Panels**, **Doors**, **Readers** and **Outputs** subpages. On each subpage user can find data in table related to that page.
 On **Departments** page, user can find tables for each department. Each table contains users from specified department.
 The **Cards** page displays table with all user cards on the server.
