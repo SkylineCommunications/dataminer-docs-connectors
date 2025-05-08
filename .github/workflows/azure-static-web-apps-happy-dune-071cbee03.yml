@@ -118,6 +118,6 @@ jobs:
         # Name of the Azure Cognitive Search resource.
         azure-search-instance: docs-srch
         # Search indexer to reindex
-        azure-search-indexer: azureblob-indexer-docs-connectors
+        azure-search-indexer: indexer-1745835789148
         # Admin key used to connect to Azure Cognitive Search instance
         azure-search-admin-key: ${{ secrets.AZURE_SEARCH_KEY }}

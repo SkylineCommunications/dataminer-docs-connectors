@@ -10,14 +10,15 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 
 ### Version Info
 
-| Range   | Key Features                                                        | Based on | System Impact                               |
-|---------|---------------------------------------------------------------------|----------|---------------------------------------------|
-| 1.0.0.x | Initial version.                                                    | -        | -                                           |
-| 1.0.1.x | QVC Italy customer-specific branch (with hard-coded matrix labels). | -        | -                                           |
-| 1.0.2.x | DCF implementation.                                                 | -        | -                                           |
-| 1.0.3.x | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
-| 1.0.4.x | Additional functionality added.                                     | -        | -                                           |
-| 1.0.5.x | Dual Controller functionality implemented.                          | -        | Minimum required version: 10.3.11.0 - 13456 |
+| Range              | Key Features                                                        | Based on | System Impact                               |
+|--------------------|---------------------------------------------------------------------|----------|---------------------------------------------|
+| 1.0.0.x            | Initial version.                                                    | -        | -                                           |
+| 1.0.1.x            | QVC Italy customer-specific branch (with hard-coded matrix labels). | -        | -                                           |
+| 1.0.2.x            | DCF implementation.                                                 | -        | -                                           |
+| 1.0.3.x            | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
+| 1.0.4.x            | Additional functionality added.                                     | -        | -                                           |
+| 1.0.5.x            | Dual Controller functionality implemented.                          | -        | Minimum required version: 10.3.11.0 - 13456 |
+| 1.0.6.x [SLC Main] | Full refactoring.                                                   | -        | Minimum required version: 10.3.0.0 - 12752  |
 
 ### Product Info
 
@@ -29,6 +30,7 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.3.x   | -                      |
 | 1.0.4.x   | -                      |
 | 1.0.5.x   | -                      |
+| 1.0.6.x   | -                      |
 
 ### System Info
 
@@ -40,6 +42,7 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
 | 1.0.4.x   | Yes                 | Yes                     | -                     | -                       |
 | 1.0.5.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -63,39 +66,23 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
-  - **Bus address**: The "Matrix Number", "Level Number", "Number of Inputs", and "Number of Outputs" of the matrix, separated by a period ("."). The range of inputs and outputs is 1-1024. For instance: "*1024.1024*".
 
 ## Usage
 
-The element consists of the following pages: **Matrix**, **General**, **Inputs/Outputs** and **Labels**.
-
-### Matrix
-
-This page contains the matrix, sized according to the **Number of Inputs** and **Number of Outputs** specified during configuration.
+The element has the following data pages: **General** and **Boards**.
 
 ### General
 
 This page contains the following parameters:
 
-- **Matrix Configuration:** Displays any detected misconfigurations. The status **OK** indicates that the matrix was successfully configured.
-- **Number of Inputs:** Displays the selected number of inputs for the matrix.
-- **Number of Outputs:** Displays the selected number of outputs for the matrix.
-- **Enable Interrogate Commands As Backup**: Enables sending a backup command in cases where the tally command does not retrieve all crosspoints.
-- **Last KeepAlive Timestamp:** Displays the last timestamp received.
-- **Number of Wrong CRCs Received**: The number of wrong CRCs received on a message.
-- **Name Length**: The number of characters of a name.
-- **Refresh Names:** This button allows you to refresh the associated destination and source names.
+- **Matrix Configuration status:** Displays any detected misconfigurations. The status **OK** indicates that the matrix has been successfully configured.
+- **Number of Sources:** Allows you to configure the number of sources for the matrix.
+- **Number of Destinations:** Allows you to configure the number of destinations for the matrix.
+- **Matrix Number:** Allows you to configure the matrix number.
+- **Level Number:** Allows you to configure the level number.
+- **Source Names Length:** Allows you to configure the name length for sources.
+- **Destination Names Length:** Allows you to configure the name length for destinations.
 
-Starting from range 1.0.5.x, this page also includes a **Cluster** subpage, which contains the **Dynamic Connections** table as well as the **Active Connection** and **Dynamic Polling IP** parameters.
+### Boards
 
-### Inputs/Outputs
-
-This page contains the **Inputs** and **Outputs** tables, which contain information about the respective inputs and outputs.
-
-### Labels
-
-This page contains the **Matrix Labels** table, which contains label information.
-
-## Notes
-
-Range 1.0.5.x includes the implementation of Dual Controller functionality. Specifically, the main connection dynamically switches in case of a loss of the current connection with one of the devices in the cluster. This range requires DataMiner version **10.3.11.0 - 13456** or higher.
+This page contains the **Sources** and **Destinations** tables, which contain information about the respective sources and destinations.

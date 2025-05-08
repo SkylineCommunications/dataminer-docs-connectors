@@ -4,55 +4,28 @@ uid: Connector_help_Asentria_SiteBoss_360
 
 # Asentria SiteBoss 360
 
-This connector allows you to monitor general parameters (e.g. system uptime, location, tech support details, etc.) as well as input and output interfaces such as contacts, relays, sensors, and analog inputs.
-
 ## About
 
-### Version Info
+This is a DataMiner connector for the **Asentria SiteBoss 360**. Using this connector, you can monitor and configure the event sensor points connected to the device.
 
-| Range              | Features                          | Based on | System Impact |
-|--------------------|-----------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | - SNMP monitoring<br>- SNMP traps | -        | -             |
+### Key Features
 
-### Product Info
+- **Alarm monitoring of the event sensor points**: Each alarm triggered in the event sensor points can be monitored in real time.
+- **Alarm configuration of the event sensor points**: Each type of supported event sensor point is accompanied by a configuration table that allows you to set thresholds, severities, and unique descriptions for the sensor values to trigger alarms.
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | -                  |
+## Use Cases
 
-### System Info
+### Event Sensor Points Monitoring and Configuration
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+**Challenge**: The **Asentria SiteBoss 360** returns all event sensor points in a single table, regardless of type. Configuration options are not clearly explained.
 
-## Configuration
+**Solution**: With this connector, each type of event sensor point, i.e. analog inputs, contact closures, humidity sensors, outputs, and temperature sensors, has its own dedicated page to better categorize the different sensors and their states. The configuration table is also enhanced with better explanations to aid in alarm configuration.
 
-### Connections
+## Technical Information
 
-#### SNMP Connection
+### Prerequisites
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+- **DataMiner version 10.3 or higher** is required.
 
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *161*).
-- **Bus address**: The bus address of the device.
-
-SNMP Settings:
-
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
-
-## How to use
-
-The connector is divided in three main parts:
-
-- A single **General** page with standard device information.
-- Several pages with information regarding data traffic: **Interface**, **Ports**, and **Ethernet**.
-- The specific device functions, such as the **power**, **battery**, and **event sensor** information
-
-All tables are polled over SNMP.
-
-For event sensor information, information is updated whenever traps are received to ensure accurate alarm monitoring.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Asentria_SiteBoss_360_Technical).
