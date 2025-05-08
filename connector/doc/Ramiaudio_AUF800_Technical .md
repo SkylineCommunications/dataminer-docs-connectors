@@ -38,7 +38,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element consists of the following data pages:
 
-- **General**: Contains general device information, settings and power supplies.
+- **General**: Contains general device information, settings, and power supplies.
 - **Input Channels**: Contains input channel status information and general channel settings.
 - **GPIO**: Contains input GPIO status information and general GPIO settings.
 - **SNTP Server Settings**: Contains SNTP settings.
