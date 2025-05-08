@@ -6401,6 +6401,9 @@
     topicUid: Connector_help_Newtec_AZ860_Deconcentrator
   - name: Newtec Dialog Platform VSAT
     topicUid: Connector_help_Newtec_Dialog_Platform_VSAT
+    items:
+    - name: Newtec Dialog Platform VSAT Technical
+      topicUid: Connector_help_Newtec_Dialog_Platform_VSAT_Technical
   - name: Newtec Dialog Infrastructure
     topicUid: Connector_help_Newtec_Dialog_Infrastructure
   - name: Newtec Dialog Time Series Database
