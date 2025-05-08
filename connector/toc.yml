@@ -7727,6 +7727,13 @@
     topicUid: Connector_help_Ross_Video_NEWT-HDMI-RX
   - name: Ross Video Newt-IPR-3G-4S
     topicUid: Connector_help_Ross_Video_Newt-IPR-3G-4S
+- name: Rosslare
+  items:
+  - name: Rosslare Security AxTraxNG
+    topicUid: Connector_help_Rosslare_Security_AxTraxNG
+    items:
+    - name: Rosslare Security AxTraxNG Technical
+      topicUid: Connector_help_Rosslare_Security_AxTraxNG_Technical
 - name: Route Mobile
   items:
   - name: Route Mobile SmsPlus
