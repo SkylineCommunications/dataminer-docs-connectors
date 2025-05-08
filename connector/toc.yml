@@ -7395,6 +7395,11 @@
     items:
     - name: Ramiaudio AUF600 Technical
       topicUid: Connector_help_Ramiaudio_AUF600_Technical
+  - name: Ramiaudio AUF800
+    topicUid: Connector_help_Ramiaudio_AUF800
+    items:
+    - name: Ramiaudio AUF800 Technical
+      topicUid: Connector_help_Ramiaudio_AUF800_Technical
   - name: Ramiaudio Switch CSS404
     topicUid: Connector_help_Ramiaudio_Switch_CSS404
     items:
