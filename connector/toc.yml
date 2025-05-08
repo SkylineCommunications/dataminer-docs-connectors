@@ -2156,6 +2156,9 @@
     topicUid: Connector_help_CISCO_Nexus
   - name: Cisco NSO
     topicUid: Connector_help_Cisco_NSO
+    items:
+    - name: Cisco NSO Technical
+      topicUid: Connector_help_Cisco_NSO_Technical
   - name: Cisco Panorama CL
     topicUid: Connector_help_Cisco_Panorama_CL
   - name: Cisco Panorama SL
