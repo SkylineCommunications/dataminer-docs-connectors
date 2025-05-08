@@ -4,29 +4,16 @@ uid: Connector_help_Lawo_V__Remote_4
 
 # Lawo V__Remote 4
 
-This connector displays information related to the V__Remote 4 device. This information, including audio/video input and output, bandwidth statistics, and PTP info, is available on different pages. Alarm monitoring and trending are possible for some of the parameters, e.g. the bitrate.
-
 ## About
 
-### Version Info
+This connector displays information related to the V__Remote 4 device. This information, including audio/video input and output, bandwidth statistics, and PTP info, is available on different pages. Alarm monitoring and trending are possible for some of the parameters, e.g. the bitrate.
 
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x            | Initial version | -        | -             |
-| 1.0.1.x [SLC Main] | Changed layout for audio and video interface table | -        | -             |
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | SW 1.4.0.104           |
 | 1.0.1.x   | SW 1.4.0.104           |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
-| 1.0.1.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
