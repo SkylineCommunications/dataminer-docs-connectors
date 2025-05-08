@@ -4911,6 +4911,11 @@
     topicUid: Connector_help_Imagine_Communications_Platinum_Router
   - name: Imagine Communications Platinum Router VX CQ Router
     topicUid: Connector_help_Imagine_Communications_Platinum_VX_CQ_Router
+  - name: Imagine Communications Platinum VX 4RU
+    topicUid: Connector_help_Imagine_Communications_Platinum_VX_4RU
+    items:
+    - name: Imagine Communications Platinum VX 4RU Technical
+      topicUid: Connector_help_Imagine_Communications_Platinum_VX_4RU_Technical
   - name: Imagine Communications SelenioFlex
     topicUid: Connector_help_Imagine_Communications_SelenioFlex
   - name: Imagine Communications Selenio 1UHD1
