@@ -4371,6 +4371,11 @@
     topicUid: Connector_help_Google_Cloud_Compute_Engine
   - name: Google Cloud DNS
     topicUid: Connector_help_Google_Cloud_DNS
+  - name: Google Maps Platform
+    topicUid: Connector_help_Google_Maps_Platform
+    items:
+    - name: Google Maps Platform Technical
+      topicUid: Connector_help_Google_Maps_Platform_Technical
 - name: Gracenote
   items:
   - name: Gracenote OnAPI Channel Schedule Monitor
