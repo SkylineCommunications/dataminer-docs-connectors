@@ -26,7 +26,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-The Google Maps Platform connector uses an API key to communicate with the Google Maps Platform API.
+The Google Maps Platform connector uses an API key to communicate with the Google Maps Platform API. To ensure full functionality of the connector, this API key should have the following APIs enabled: **Routes**, **Air Quality**, **Pollen**, and **Geocoding**.
 
 To generate the API key, set up a Google Cloud project before you start using this connector. To do so, follow the steps under [Getting started with Google Maps Platform](https://developers.google.com/maps/get-started).
 
@@ -34,38 +34,45 @@ Once the project has been created and the API key has been generated, go to the 
 
 ## How to use
 
-The Google Maps Platform connector offers monitoring capabilities for various city and metrics. To utilize these features, you need to set up a Google Cloud project and obtain a valid API key. To access all the data provided by this connector, you must first define one or more locations in the Locations table.
+The Google Maps Platform connector offers monitoring capabilities for various city metrics. To utilize these features, you need to set up a Google Cloud project and obtain a valid API key (see [Initialization](#initialization)). To access all the data provided by this connector, you will then need to define one or more locations in the Locations table.
 
-You can view the full list of available APIs offered by the Google Maps Platform [here](https://mapsplatform.google.com/maps-products/).
+For the full list of available APIs offered by the Google Maps Platform, refer to [Maps Products](https://mapsplatform.google.com/maps-products/).
 
-Below is detailed information about the various data pages available in the element.
+Below, you can find more detailed information about the various data pages available in the element.
 
 ### General
 
-On this page, specify the API Key that will be used to interact with the Google Maps Platform during element initialization. To ensure full functionality of the connector, this API Key should have the following APIs enabled: *Routes*, *Air Quality*, *Pollen*, and *Geocoding*.
+On this page, specify the API key that will be used to interact with the Google Maps Platform during element initialization. See [Initialization](#initialization).
 
 ### Locations
-On this page, specify the locations you wish to monitor. Use the table's context menu (right-click on the table) and select *Add Location...*. In the context menu, provide the name of the city and optionally fill in the other fields.
 
-To retrieve air quality and pollen data, ensure the *Pollen* and *Air Quality* fields are set to *Enabled*. You can manually enter the latitude and longitude values for the location, or leave these fields blank to have the information retrieved via the Geocoding API.
+On this page, specify the locations you wish to monitor. To do so, right-click the table, select **Add Location**, provide the name of the city, and optionally fill in the other fields.
+
+To retrieve air quality and pollen data, ensure the **Pollen** and **Air Quality** fields are set to *Enabled*. You can manually enter the latitude and longitude values for the location, or leave these fields blank to have the information retrieved via the Geocoding API.
 
 ### Air Quality
-On this page, you can monitor the Air Quality Index (AQI) for each designated location. The AQI category (e.g., good, moderate, unhealthy) and the main pollutant are also clearly identified.
+
+On this page, you can monitor the Air Quality Index (AQI) for each designated location. The AQI category (e.g. good, moderate, unhealthy) and the main pollutant are also clearly identified.
 
 ### Pollutants
+
 This page provides a comprehensive list of pollutants for each designated location, along with their concentration values and main health effects.
 
 ### Health Recommendations
-This page allows you to select a location and view the latest health recommendations for different population groups (e.g., children, elderly, general population).
+
+This page allows you to select a location and view the latest health recommendations for different population groups (e.g. children, the elderly, the general population).
 
 ### Pollen
-The Pollen page provides detailed information about the Universal Pollen Index (UPI) for each designated location and pollen type. It includes the UPI categorization (e.g., low, moderate, high) and relevant health recommendations.
+
+The Pollen page provides detailed information about the Universal Pollen Index (UPI) for each designated location and pollen type. It includes the UPI categorization (e.g. low, moderate, high) and relevant health recommendations.
 
 ### Plant Info
-On this page, you will find a comprehensive list of UPIs for each plant at the designated locations. The UPI categorization, the season in which each pollen type is most common, and any cross-reactions are also presented.
+
+On this page, you will find a comprehensive list of UPIs for each plant at the designated locations. The UPI categorization, the season in which each pollen type is most common, and any cross-reactions are also displayed.
 
 ### Routes
-On the Routes page, fill in the *Origin* and *Destination* of the route using the Routes table's context menu (right-click on the table). The available locations are provided in the dropdown lists, which are populated from the Locations table.
+
+On the Routes page, fill in the **Origin** and **Destination** of the route using the Routes table's right-click menu. The available locations are provided in the dropdown lists, which are populated from the Locations table.
 
 ### Poll Manager
 
@@ -73,9 +80,9 @@ On the Poll Manager page, you can control the polling state and frequency for ea
 
 ### API Usage
 
-On the API Usage page, you can monitor API usage. Based on the estimated API usage shown on this page, you can adjust the polling frequency for each API on the *Poll Manager* page. The Request Count and Estimated Usage on the API Usage page reflect the API calls and locations defined in the DataMiner element. **If the API key is also used for other DataMiner elements or applications, those API requests are not counted here**.
+On the API Usage page, you can monitor API usage. Based on the estimated API usage shown on this page, you can adjust the polling frequency for each API on the Poll Manager page. The Request Count and Estimated Usage on the API Usage page reflect the API calls and locations defined in the DataMiner element. **If the API key is also used for other DataMiner elements or applications, those API requests are not counted here**.
 
 > [!IMPORTANT]
-> The estimated number of API requests is an approximation for the current month based on the current configuration of the location and poll manager. Please note that the API Key used by this element might also be utilized by other elements or third-party applications. If this is the case, such requests are not included in this estimation.
+> The estimated number of API requests is an approximation for the current month based on the current configuration of the location and poll manager. Please note that the API key used by this element might also be utilized by other elements or third-party applications. If this is the case, such requests are not included in this estimation.
 >
-> The free limit indication is provided by Google Maps Platform. Be aware that Google may have changed policies since the connector development. Please verify that the presented values are still up-to-date with Google's policies, and inform us if you find that they need to be updated. You can review Google's API request policies [here](https://mapsplatform.google.com/lp/maps-apis/).
+> The free limit indication is provided by the Google Maps Platform. Be aware that Google may have changed policies since the connector development. Please verify that the presented values are still up to date with Google's policies, and inform us if you find that they need to be updated. To review Google's API request policies, go to <https://mapsplatform.google.com/lp/maps-apis/>.
