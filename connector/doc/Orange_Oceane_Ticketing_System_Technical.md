@@ -90,6 +90,34 @@ To enable the **Create Ticket** option in the Alarm Console's right-click menu, 
 
 This hyperlink configuration ensures that the "Create Ticket" option is available in the Alarm Console, triggering the Automation script with the necessary alarm details. The provided *HyperLinks.xml* file assumes that the script named "Orange Oceane Ticketing System" is located in the "Automation scripts" root folder within the Automation module in DataMiner Cube (Apps > Automation). If you would prefer to place the script in a different folder or if you want to rename the script, please update the *HyperLinks.xml* file accordingly.
 
+The hyperlink configuration can also be extended with a "Go To Ticket" option to open the ticket in the Orange Oceane Ticketing System. With the example provided below, "Go To Ticket" option will only be available if the ticket URL is available in the alarm properties ("Oceane Ticket URL" property), meaning it will only be available if the ticket is created for that specific alarm, otherwise it will not appear in the right-click menu. The ticket URL property in the alarm console is set by the connector when a ticket is created successfully. Example hyperlink configuration for the "Go To Ticket" option is as follows:
+
+```xml
+<HyperLinks xmlns="http://www.skyline.be/config/hyperlinks">
+  <HyperLink id="1"
+          version="2"
+          name="Create Ticket"
+          menu="root"
+          type="script"
+          alarmColumn="false">
+    Orange Oceane Ticketing System||DMA ID=[DMAID];Element ID=[EID];Alarm ID=[ROOTKEY];Element Name=[ENAME];Alarm Value=[VALUE];Root Time=[ROOTTIME:yyyy-MM-ddTHH:mm:ssZ]||Create ticket in Oceane Ticketing Tool|NoConfirmation,CloseWhenFinished
+  </HyperLink>
+  <HyperLink id="2"
+          version="2"
+          name="Go To Ticket"
+          menu="root"
+          type="url"
+          filterElement="AlarmEventMessage.PropertiesDict.&quot;Oceane Ticket URL&quot;[String]!=''">
+     [PROPERTY:ALARM:Oceane Ticket URL]
+   </HyperLink>
+</HyperLinks>
+```
+
+The "Go To Ticket" option opens the **Oceane Ticketing System** in your browser. The tool has its own authentication mechanism, so the "Go To Ticket" option expects that you have already logged into Oceane in the same browser session. Once authenticated, Oceane saves your session in browser cookies. The "Go To Ticket" option does not handle authentication. If you haven’t previously logged into Oceane in that browser, you will see an "Unauthorized" prompt from Oceane. Authentication must be done separately before using this feature.
+
+> [!NOTE]
+> Two custom alarm properties should be added to the DMA alarm properties to store the ticket ID and URL. They should be named **Oceane Ticket ID** and **Oceane Ticket URL** respectively. The connector will automatically set these properties when a ticket is created successfully. The **Oceane Ticket ID** property will contain the ticket ID, and the **Oceane Ticket URL** property will contain the URL to access the ticket in the Orange Oceane Ticketing System. For more information on adding custom properties to alarms, see [Adding custom properties to alarms](https://docs.dataminer.services/user-guide/Basic_Functionality/Alarms/Working_with_alarms/Changing_custom_alarm_properties.html).
+
 > [!TIP]
 > For more information on configuring hyperlinks in DataMiner:
 >
