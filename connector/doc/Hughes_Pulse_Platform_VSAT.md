@@ -14,6 +14,8 @@ The Hughes Pulse Platform VSAT connector enables real-time monitoring of VSAT te
 
 - **End-to-end network performance metrics**: Continuously monitor ICMP latency, jitter, packet loss, signal quality (RSRP, RSSI, SINR), and throughput per terminal.
 
+- **Daily usage monitoring**: Visualize daily inbound/outbound usage data per terminal to support capacity planning and customer service use cases.
+
 - **Secure and scalable API integration**: Built on secure REST API connections, ensuring reliable data access across large deployments.
 
 - **Terminal configuration insights**: Gain immediate access to detailed terminal setup info, including ID, access mode, location, and current status.
@@ -35,6 +37,14 @@ The Hughes Pulse Platform VSAT connector enables real-time monitoring of VSAT te
 **Solution**: By polling metrics like latency, jitter, and signal quality at frequent intervals, the connector enables proactive monitoring.
 
 **Benefit**: Teams can set up DataMiner alarms and trending for early anomaly detection and service assurance.
+
+### Use Case 3
+
+**Challenge**: Service managers need visibility into bandwidth usage patterns for customer troubleshooting and billing support.
+
+**Solution**: The connector fetches daily usage data per device, split by usage category, and displays it in a dedicated DataMiner table.
+
+**Benefit**: Enables historical usage analysis, policy compliance monitoring, and data-driven service improvements.
 
 ## Technical Reference
 
