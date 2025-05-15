@@ -1,12 +1,12 @@
 ---
-uid: Connector_help_IRT_DAB_TX_Technical
+uid: Connector_help_HP_Aruba_Network_Switch_Technical
 ---
 
-# IRT DAB TX
+# HP Aruba Network Switch
 
 ## About
 
-The IRT DAB TX is designed for continuous monitoring of DAB signals. This connector controls the inputs, listens for traps from the device, and reads the status and errors of the device.
+The HP Aruba Network Switch is designed for monitoring and device configuration. This connector listens for traps from the device, and reads the status and errors of the device.
 
 ## Configuration
 
@@ -33,22 +33,11 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-### General Page
+The element has the following data pages:
 
-This page displays general information.
-
-### Single Transmitter
-
-This page displays the Single Transmitter information.
-
-### Dual Drive
-
-This page displays Dual Drive Transmitter information.
-
-### Polling Settings
-
-On this page, you can define the polling groups of the element.
-
-### SNMP
-
-On the SNMP page, there is a table where you can enter information to retrieve data from a specific OID. You can also set an optional trap receiver IP.
+- **General**: Displays the device information.
+- **Status**: Displays device status information like the temperature, fan, and power unit status.
+- **Interface**: Displays information about the switch interfaces.
+- **SNMP**: Allows you to configure the trap information.
+- **VLAN**: Displays information related to the VLANs.
+- **Events**: Contains a table with the latest device events.

@@ -2192,6 +2192,11 @@
     topicUid: Connector_help_CISCO_ASR_Manager
   - name: CISCO AS Series Media Processor
     topicUid: Connector_help_CISCO_AS_Series_Media_Processor
+  - name: CISCO Catalyst SD-WAN
+    topicUid: Connector_help_CISCO_Catalyst_SD-WAN
+    items:
+    - name: CISCO Catalyst SD-WAN Technical
+      topicUid: Connector_help_CISCO_Catalyst_SD-WAN_Technical
   - name: Cisco CBR-8
     topicUid: Connector_help_Cisco_CBR-8
   - name: CISCO CBR-8 CCAP Platform
@@ -2262,6 +2267,11 @@
     topicUid: Connector_help_Cisco_Netflow
   - name: CISCO Nexus
     topicUid: Connector_help_CISCO_Nexus
+  - name: Cisco NSO
+    topicUid: Connector_help_Cisco_NSO
+    items:
+    - name: Cisco NSO Technical
+      topicUid: Connector_help_Cisco_NSO_Technical
   - name: Cisco Panorama CL
     topicUid: Connector_help_Cisco_Panorama_CL
   - name: Cisco Panorama SL
@@ -2489,6 +2499,9 @@
     topicUid: Connector_help_CPI_TL12DO
   - name: CPI TL12UO
     topicUid: Connector_help_CPI_TL12UO
+    items:
+    - name: CPI TL12UO Technical
+      topicUid: Connector_help_CPI_TL12UO_Technical
   - name: CPI TL22CI
     topicUid: Connector_help_CPI_TL22CI
   - name: CPI Touch Power 3RU-0 Controller
@@ -2726,6 +2739,13 @@
     topicUid: Connector_help_DHD_XC2_AES67_RAVENNA
   - name: DHD XC3
     topicUid: Connector_help_DHD_XC3
+- name: Dialight
+  items:
+  - name: Dialight INEM
+    topicUid: Connector_help_Dialight_INEM
+    items:
+    - name: Dialight INEM Technical
+      topicUid: Connector_help_Dialight_INEM_Technical
 - name: DIBP
   items:
   - name: DIBP Active Bearer
@@ -3653,8 +3673,16 @@
     topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
   - name: Evertz BPXRF
     topicUid: Connector_help_Evertz_BPXRF
+    items:
+    - name: Evertz BPXRF Technical
+      topicUid: Connector_help_Evertz_BPXRF_Technical
   - name: Evertz DEC7882H264
     topicUid: Connector_help_Evertz_DEC7882H264
+  - name: Evertz DreamCatcher
+    topicUid: Connector_help_Evertz_DreamCatcher
+    items:
+      - name: Evertz DreamCatcher Technical
+        topicUid: Connector_help_Evertz_DreamCatcher_Technical
   - name: Evertz EMR-IP96-AESB
     topicUid: Connector_help_Evertz_EMR-IP96-AESB
   - name: Evertz EMX-FC
@@ -3920,8 +3948,9 @@
   items:
   - name: Fujitsu FLEXR
     topicUid: Connector_help_Fujitsu_FLEXR
-  - name: Fujitsu FLEXR - Network Element
-    topicUid: Connector_help_Fujitsu_FLEXR_-_Network_Element
+    items:
+    - name: Fujitsu FLEXR - Network Element
+      topicUid: Connector_help_Fujitsu_FLEXR_-_Network_Element
   - name: Fujitsu IP-920
     topicUid: Connector_help_Fujitsu_IP-920
   - name: Fujitsu IP-9500
@@ -4193,6 +4222,9 @@
     topicUid: Connector_help_Generic_SMB
   - name: Generic SMPP SMS Sender
     topicUid: Connector_help_Generic_SMPP_SMS_Sender
+    items:
+    - name: Generic SMPP SMS Sender Technical
+      topicUid: Connector_help_Generic_SMPP_SMS_Sender_Technical
   - name: Generic SNMP
     topicUid: Connector_help_Generic_SNMP
   - name: Generic SQL Query
@@ -4342,6 +4374,11 @@
     topicUid: Connector_help_Google_Cloud_Compute_Engine
   - name: Google Cloud DNS
     topicUid: Connector_help_Google_Cloud_DNS
+  - name: Google Maps Platform
+    topicUid: Connector_help_Google_Maps_Platform
+    items:
+    - name: Google Maps Platform Technical
+      topicUid: Connector_help_Google_Maps_Platform_Technical
 - name: Gracenote
   items:
   - name: Gracenote OnAPI Channel Schedule Monitor
@@ -4581,6 +4618,9 @@
     topicUid: Connector_help_Harmonic_ViBE_CP9000
   - name: Harmonic VOS
     topicUid: Connector_help_Harmonic_VOS
+    items:
+     - name: Harmonic VOS Technical
+       topicUid: Connector_help_Harmonic_VOS_Technical
 - name: Harris
   items:
   - name: Harris Falcon III RF-7800W HCLOS Radio
@@ -4673,6 +4713,11 @@
     topicUid: Connector_help_HP_3PAR_StoreServ
   - name: HP A5500 EI Switch Serie
     topicUid: Connector_help_HP_A5500_EI_Switch_Serie
+  - name: HP Aruba Network Switch
+    topicUid: Connector_help_HP_Aruba_Network_Switch
+    items:
+    - name: HP Aruba Network Switch Technical
+      topicUid: Connector_help_HP_Aruba_Network_Switch_Technical
   - name: HP BladeSystem c7000
     topicUid: Connector_help_HP_BladeSystem_c7000
   - name: HP Fibre Channel Switch
@@ -4733,6 +4778,9 @@
   items:
   - name: Hughes Pulse Platform VSAT
     topicUid: Connector_help_Hughes_Pulse_Platform_VSAT
+    items:
+    - name: Hughes Pulse Platform VSAT Technical
+      topicUid: Connector_help_Hughes_Pulse_Platform_VSAT_Technical
 - name: HW Group
   items:
   - name: HW Group Poseidon2
@@ -4876,6 +4924,11 @@
     topicUid: Connector_help_Imagine_Communications_Platinum_Router
   - name: Imagine Communications Platinum Router VX CQ Router
     topicUid: Connector_help_Imagine_Communications_Platinum_VX_CQ_Router
+  - name: Imagine Communications Platinum VX 4RU
+    topicUid: Connector_help_Imagine_Communications_Platinum_VX_4RU
+    items:
+    - name: Imagine Communications Platinum VX 4RU Technical
+      topicUid: Connector_help_Imagine_Communications_Platinum_VX_4RU_Technical
   - name: Imagine Communications SelenioFlex
     topicUid: Connector_help_Imagine_Communications_SelenioFlex
   - name: Imagine Communications Selenio 1UHD1
@@ -5100,6 +5153,11 @@
     topicUid: Connector_help_Interra_Orion_Central_Manager
   - name: Interra Orion OTT
     topicUid: Connector_help_Interra_Orion_OTT
+  - name: Interra Orion Real-Time Content Monitor
+    topicUid: Connector_help_Interra_Orion_Real-Time_Content_Monitor
+    items:
+    - name: Interra Orion Real-Time Content Monitor Technical
+      topicUid: Connector_help_Interra_Orion_Real-Time_Content_Monitor_Technical
 - name: Intinor
   items:
   - name: Intinor Direkt Router
@@ -6636,6 +6694,9 @@
     topicUid: Connector_help_Newtec_AZ860_Deconcentrator
   - name: Newtec Dialog Platform VSAT
     topicUid: Connector_help_Newtec_Dialog_Platform_VSAT
+    items:
+    - name: Newtec Dialog Platform VSAT Technical
+      topicUid: Connector_help_Newtec_Dialog_Platform_VSAT_Technical
   - name: Newtec Dialog Infrastructure
     topicUid: Connector_help_Newtec_Dialog_Infrastructure
   - name: Newtec Dialog Time Series Database
@@ -6706,6 +6767,11 @@
     topicUid: Connector_help_NHK_Snapshot_Manager
 - name: Nokia
   items:
+  - name: Nokia 1830 PSD
+    topicUid: Connector_help_Nokia_1830_PSD
+    items:
+    - name: Nokia 1830 PSD Technical
+      topicUid: Connector_help_Nokia_1830_PSD_Technical
   - name: Nokia Altiplano Collector
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
@@ -7345,6 +7411,11 @@
     items:
     - name: Ramiaudio AUF600 Technical
       topicUid: Connector_help_Ramiaudio_AUF600_Technical
+  - name: Ramiaudio AUF800
+    topicUid: Connector_help_Ramiaudio_AUF800
+    items:
+    - name: Ramiaudio AUF800 Technical
+      topicUid: Connector_help_Ramiaudio_AUF800_Technical
   - name: Ramiaudio Switch CSS404
     topicUid: Connector_help_Ramiaudio_Switch_CSS404
     items:
@@ -7682,6 +7753,13 @@
     topicUid: Connector_help_Ross_Video_NEWT-HDMI-RX
   - name: Ross Video Newt-IPR-3G-4S
     topicUid: Connector_help_Ross_Video_Newt-IPR-3G-4S
+- name: Rosslare
+  items:
+  - name: Rosslare Security AxTraxNG
+    topicUid: Connector_help_Rosslare_Security_AxTraxNG
+    items:
+    - name: Rosslare Security AxTraxNG Technical
+      topicUid: Connector_help_Rosslare_Security_AxTraxNG_Technical
 - name: Route Mobile
   items:
   - name: Route Mobile SmsPlus
