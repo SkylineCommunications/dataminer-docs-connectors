@@ -2,7 +2,7 @@
 uid: Connector_help_Evertz_DreamCatcher
 ---
 
-# Connector marketing documentation template
+# Evertz DreamCatcher
 
 ## About
 

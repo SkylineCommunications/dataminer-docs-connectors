@@ -32,7 +32,7 @@ The Evertz NATX switch is a network-based broadcast distribution system that is 
 
 ### Connections
 
-This connector uses two Simple Network Management Protocol (SNMP) connections. To facilitate network redundancy, the device's two IP interfaces should be filled in during element creation.
+This connector uses two Simple Network Management Protocol (SNMP) connections. To facilitate network redundancy, the device's two IP interfaces should be filled in during element creation. Starting from the 1.0.1.x range, an additional HTTP connection is used to retrieve data from the API.
 
 #### SNMP Connection - Main
 
@@ -64,9 +64,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *80*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *80*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Web Interface
 

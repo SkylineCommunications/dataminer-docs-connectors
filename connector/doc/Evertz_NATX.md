@@ -2,35 +2,35 @@
 uid: Connector_help_Evertz_NATX
 ---
 
-# Connector marketing documentation template
+# Evertz NATX
 
 ## About
 
-This connector enables Skyline DataMiner to interface with the Evertz NATX, a high-performance IP network address translation router used in broadcast and media environments. The driver provides real-time monitoring, control, and diagnostics of NATX devices, ensuring seamless IP address translation and routing within complex media networks.
+With this connector, DataMiner can interface with the Evertz NATX, a high-performance IP network address translation router used in broadcast and media environments. The connector provides real-time monitoring, control, and diagnostics of NATX devices, ensuring seamless IP address translation and routing within complex media networks.
 
 ## Key Features
 
-- **Real-Time Monitoring**: Continuously tracks the operational status and performance metrics of the NATX device.
+- **Real-time monitoring**: Continuously tracks the operational status and performance metrics of the NATX device.
 
-- **IP Translation Table Access**: Provides visibility into active NAT sessions and translation mappings.
+- **IP translation table access**: Provides visibility on active NAT sessions and translation mappings.
 
-- **Alarm Management**: Detects and reports faults or threshold breaches, enabling proactive maintenance.
+- **Alarm management**: Detects and reports faults or threshold breaches, enabling proactive maintenance.
 
-- **Configuration Control**: Allows remote configuration of NAT rules and routing parameters directly from DataMiner.
+- **Configuration control**: Allows remote configuration of NAT rules and routing parameters directly from DataMiner.
 
-- **Scalability Support**: Supports monitoring of multiple NATX units across distributed environments.
+- **Scalability support**: Supports monitoring of multiple NATX units across distributed environments.
 
 ## Use Cases
 
-### Use Cases 1
+### Use Case 1
 
 **Challenge**: Managing IP address translation in a dynamic broadcast environment with multiple live streams.
 
-**Solution**: The driver provides real-time visibility into NAT mappings and session states.
+**Solution**: This connector provides real-time visibility on NAT mappings and session states.
 
 **Benefit**: Ensures uninterrupted stream routing and simplifies troubleshooting of IP conflicts.
 
-### Use Cases 2
+### Use Case 2
 
 **Challenge**: Detecting and responding to NAT device failures or performance degradation.
 
@@ -38,7 +38,7 @@ This connector enables Skyline DataMiner to interface with the Evertz NATX, a hi
 
 **Benefit**: Reduces downtime and improves network reliability through proactive maintenance.
 
-### Use Cases 3
+### Use Case 3
 
 **Challenge**: Configuring and updating NAT rules across multiple devices manually.
 
