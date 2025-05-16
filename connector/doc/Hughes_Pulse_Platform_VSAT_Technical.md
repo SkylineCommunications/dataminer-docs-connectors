@@ -65,9 +65,9 @@ The following configuration options are available for each entry:
 > [!NOTE]
 > The **Batch Size** defines how many devices are included in each separate POST request. Batching is used to:
 >
-> - Prevent timeout or server errors (e.g., 504 or 500) on large payloads  
-> - Avoid paginating API responses  
-> - Ensure partial failures don’t block polling (failed batches are retried individually)
+> - Prevent timeout or server errors (e.g. 504 or 500) on large payloads.
+> - Avoid paginating API responses.
+> - Ensure that partial failures do not block polling (failed batches are retried individually).
 
 > [!IMPORTANT]
 > You can add additional endpoints for testing, categorized as *N/A*. However, be careful when editing the automatically added endpoints, as they populate the **Remotes**, **Metrics**, and **Usage** tables:
@@ -91,11 +91,11 @@ Below is the default POST body used for the metric endpoints (`icmp`, `signalStr
 }
 ```
 
-- __REPLACE_DEVICES__ is replaced at runtime with the list of remote device IDs.
-- __REPLACE_PAGESIZE__ is replaced by the defined Batch Size.
-- time_choice can be customized:
-  - For Metrics, it defaults to "1 day"
-  - For Usage, it defaults to "30 days" but can be set to "1 day" or "7 days" as needed.
+- `__REPLACE_DEVICES__` is replaced at runtime with the list of remote device IDs.
+- `__REPLACE_PAGESIZE__` is replaced with the defined batch size.
+- `time_choice` can be customized:
+  - For *Metrics*, it defaults to "1 day".
+  - For *Usage*, it defaults to "30 days" but can be set to "1 day" or "7 days" as needed.
 
 ### Pages Overview
 
@@ -131,12 +131,12 @@ Each row represents usage data for a unique combination of:
 
 The following metrics are displayed:
 
-- **Inbound**: Amount of data received in MB
-- **Outbound**: Amount of data sent in MB
-- **Total**: Sum of inbound and outbound in MB
-- **Timestamp**: Date of the measurement
+- **Inbound**: Amount of data received in MB.
+- **Outbound**: Amount of data sent in MB.
+- **Total**: Sum of inbound and outbound in MB.
+- **Timestamp**: Date of the measurement.
 
-Each device can report multiple usage categories (e.g., Web Browsing, Entertainment, Network Infrastructure), which are derived from the Hughes API and may vary.
+Each device can report multiple usage categories (e.g. Web Browsing, Entertainment, Network Infrastructure), which are derived from the Hughes API and may vary.
 
 > [!NOTE]
 > The retention period for this data is configured on the **Collector Setup** page, where you can define how many days of usage history should be retained. Rows older than the configured retention period are automatically removed.

@@ -40,11 +40,11 @@ The Hughes Pulse Platform VSAT connector enables real-time monitoring of VSAT te
 
 ### Use Case 3
 
-**Challenge**: Service managers need visibility into bandwidth usage patterns for customer troubleshooting and billing support.
+**Challenge**: Service managers need visibility on bandwidth usage patterns for customer troubleshooting and billing support.
 
-**Solution**: The connector fetches daily usage data per device, split by usage category, and displays it in a dedicated DataMiner table.
+**Solution**: The connector fetches daily usage data per device, split up by usage category, and displays it in a dedicated DataMiner table.
 
-**Benefit**: Enables historical usage analysis, policy compliance monitoring, and data-driven service improvements.
+**Benefit**: Historical usage analysis, policy compliance monitoring, and data-driven service improvements.
 
 ## Technical Reference
 
