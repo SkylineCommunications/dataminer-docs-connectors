@@ -3741,6 +3741,9 @@
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
   - name: Evertz NATX
     topicUid: Connector_help_Evertz_NATX
+    items:
+    - name: Evertz NATX Technical
+      topicUid: Connector_help_Evertz_NATX_Technical
   - name: Evertz NATX-NAT-32
     topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
