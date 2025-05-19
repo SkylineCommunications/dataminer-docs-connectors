@@ -2,7 +2,7 @@
 uid: Connector_help_F5_OS_Appliance
 ---
 
-# F5 OS Appliance Connector
+# F5 OS Appliance
 
 ## About
 
@@ -10,10 +10,10 @@ The F5 OS Appliance connector provides comprehensive monitoring capabilities for
 
 ## Key Features
 
-- **Centralized Monitoring Dashboard**: Consolidates all critical F5 rSeries performance metrics and status information into a single, intuitive interface.
-- **Automated Data Collection**: Continuously polls the F5 OS API to provide real-time visibility into device performance and health.
-- **Comprehensive System Visibility**: Monitors CPU utilization, storage status, hardware conditions, interfaces, and tenant configurations from one central location.
-- **Hardware Health Monitoring**: Tracks critical hardware components including FPGA status, fan operation, system temperature, and platform firmware.
+- **Centralized monitoring dashboard**: Consolidates all critical F5 rSeries performance metrics and status information into a single, intuitive interface.
+- **Automated data collection**: Continuously polls the F5 OS API to provide real-time visibility into device performance and health.
+- **Comprehensive system visibility**: Monitors CPU utilization, storage status, hardware conditions, interfaces, and tenant configurations from one central location.
+- **Hardware health monitoring**: Tracks critical hardware components including FPGA status, fan operation, system temperature, and platform firmware.
 
 ## Use Cases
 
@@ -45,9 +45,9 @@ The F5 OS Appliance connector provides comprehensive monitoring capabilities for
 
 ### Prerequisites
 
-- **F5 rSeries Device** running F5OS-A R5R10 1.8.0-17564 firmware for full compatibility.
-- **API Credentials** with appropriate permissions to access the F5 OS API.
-- **Network Connectivity** between the connector and the F5 rSeries device on port 8888.
+- F5 rSeries device running **F5OS-A R5R10 1.8.0-17564 firmware** for full compatibility.
+- **API credentials** with appropriate permissions to access the F5 OS API.
+- **Network connectivity** between the connector and the F5 rSeries device on port 8888.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_F5_OS_Appliance_Technical).
