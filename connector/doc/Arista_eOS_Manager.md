@@ -13,6 +13,12 @@ This connector can be used to monitor operational state data at the global **int
 
 **gNMI** is used to retrieve device information. **HTTP** communication is used to retrieve information that is available in the Arista Command API.
 
+> [!IMPORTANT]
+> When using gNMI to retrieve device information:
+> - Communication Gateway must be installed on the DataMiner Agent (DMA).
+> - Configure the protocol to run with its own **SLProtocol** and **SLScripting** processes.
+> - Limit the number of elements for one DataMiner Agent to approximately 60.
+
 ## About
 
 ### Version Info
