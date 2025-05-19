@@ -3820,6 +3820,11 @@
   items:
   - name: F5 BIG-IP LTM
     topicUid: Connector_help_F5_BIG-IP_LTM
+  - name: F5 OS Appliance
+    topicUid: Connector_help_F5_OS_Appliance
+    items:
+    - name: F5 OS Appliance Technical
+      topicUid: Connector_help_F5_OS_Appliance_Technical
 - name: Factum
   items:
   - name: Factum DABMUX
