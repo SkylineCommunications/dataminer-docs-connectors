@@ -25,7 +25,7 @@ HTTP CONNECTION:
 
 ### General
 
-On this page, you can configure the **Username** and **Password** to authenticate with the system, and you can monitor the authentication status. On changing the username or password, it will break the current connection and the user will have to log in again to authenticate their credentials once again.
+On this page, you can configure the **Username** and **Password** to authenticate with the system, and you can monitor the authentication status. When you change the username or password, this will break the current connection, and you will have to log in again to renew the connection.
 
 ### Feeds
 
