@@ -11,7 +11,7 @@ The **OneWeb Enterprise** connector enables the monitoring of key resources and 
 It provides visibility into User Terminal and Products Performance metrics, Service Usage and Consumption reports. 
 This data helps organizations optimize their operations, ensure service availability, and manage their satellite connectivity more effectively. 
 
-This connector is designed for enterprise environments with access to OneWeb’s API infrastructure. At this stage, the connector focuses on monitoring only and does not support device control or provisioning features. 
+This connector is designed for enterprise environments with access to OneWebâ€™s API infrastructure. At this stage, the connector focuses on monitoring only and does not support device control or provisioning features. 
 
 ## About
 
@@ -65,7 +65,7 @@ Once the polling configuration is in place, authentication can be performed. Upo
 ### Relations between tables
 The data retrieved and stored in the different tables can be linked to each other. The ERD illustrates the logical relationships between tables, showing how data stored in different entities can be linked and retrieved efficiently.
 
-![Relations between tables](~/connector/images/OWRelations.drawio.png)
+![Relations between tables](../images/OWRelations.drawio.svg)
 
 ### User Terminals
 The **User Terminals** page provides comprehensive details about each User Terminal. It includes essential information such as IMEI, User Terminal name, and operational state. Additionally, it offers insights into network status, firmware version, hardware components, and manufacturer details.
@@ -76,7 +76,7 @@ Relational data is also available, including associations with the Distribution 
 
 The **Products** page retrieves the inventory of service plan products. It displays a list of available products, each identified by a unique identifier and name. Each product is linked to a distribution partner and a specific site, establishing its deployment context. 
 
-A key aspect of this page is the relationship between products and user terminals — each product is associated with the IMEI of the terminal utilizing the service. Additionally, products are connected to end customer accounts and sites, providing a complete view of ownership and location.
+A key aspect of this page is the relationship between products and user terminals â€” each product is associated with the IMEI of the terminal utilizing the service. Additionally, products are connected to end customer accounts and sites, providing a complete view of ownership and location.
 
 
 ### Organizations
@@ -99,9 +99,9 @@ All performance parameters support trending, enabling continuous tracking and hi
 
 ### Usage Consumption
 
-The **Usage Consumption** page provides a near real-time snapshot of data usage for Site Connectivity Products. It includes details such as monthly entitlement, remaining allowance, consumed overage blocks, and current balance. The report reflects cumulative usage starting from the bill cycle reference date — typically the 1st of the month — offering a progressively increasing usage view throughout the billing period.
+The **Usage Consumption** page provides a near real-time snapshot of data usage for Site Connectivity Products. It includes details such as monthly entitlement, remaining allowance, consumed overage blocks, and current balance. The report reflects cumulative usage starting from the bill cycle reference date â€” typically the 1st of the month â€” offering a progressively increasing usage view throughout the billing period.
 
-Each usage record is linked to a **Product ID**, which allows further association with a User Terminal via the terminal’s **IMEI**, as defined in the **Products** table.
+Each usage record is linked to a **Product ID**, which allows further association with a User Terminal via the terminalâ€™s **IMEI**, as defined in the **Products** table.
 
 
 ### Polling Settings
