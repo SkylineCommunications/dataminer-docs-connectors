@@ -5476,6 +5476,11 @@
     topicUid: Connector_help_Microsoft_Hyper-V
   - name: Microsoft Platform
     topicUid: Connector_help_Microsoft_Platform
+    items:
+    - name: Microsoft Platform Technical
+      topicUid: Connector_help_Microsoft_Platform_Technical
+    - name: Microsoft Platform Technical (7.0.0.x)
+      topicUid: Connector_help_Microsoft_Platform_Technical_7.0.0.x
   - name: Microsoft Platform SNMP
     topicUid: Connector_help_Microsoft_Platform_SNMP
   - name: Microsoft SCOM Universal Connector
