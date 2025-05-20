@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_OneWeb_Enterprise_Technical_
+uid: Connector_help_OneWeb_Enterprise_Technical
 ---
 
 # OneWeb Enterprise
