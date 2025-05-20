@@ -6989,6 +6989,11 @@
   items:
   - name: OneWeb Antenna Controller
     topicUid: Connector_help_OneWeb_Antenna_Controller
+  - name: OneWeb Enterprise
+    topicUid: OneWeb_Enterprise
+    items:
+    - name: OneWeb Enterprise Technical
+      topicUid: OneWeb_Enterprise_Technical
   - name: OneWeb Incident Manager
     topicUid: Connector_help_OneWeb_Incident_Manager
   - name: OneWeb PCN Collector
