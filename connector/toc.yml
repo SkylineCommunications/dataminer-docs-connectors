@@ -9203,6 +9203,11 @@
     topicUid: Connector_help_Technetix_UCC-321
   - name: Technetix UCC-321 - USC-122
     topicUid: Connector_help_Technetix_UCC-321_-_USC-122
+  - name: Technetix NCC-2222
+    topicUid: Connector_help_Technetix_NCC-2222
+    items:
+        - name: Technetix NCC-2222 Technical
+          topicUid: Connector_help_Technetix_NCC-2222_Technical
 - name: Tecsys
   items:
   - name: Tecsys TS 9090
