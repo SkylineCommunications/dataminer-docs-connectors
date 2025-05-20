@@ -82,4 +82,4 @@ The **Configuration** page (available below the Instances page in range **1.0.1.
 
 The **Debug** page (available in range 1.0.1.x) contains a table with records of all interactions with AWS.
 
-On the **Events** page, The user can select the **format of the Display Key** for the **Scheduled Events table** by choosing the desire option in the drop down parameter **Scheduled Events Display Key Format**. **Default Instance Id/Events Id**
+On the **Events** page, you can select the **format of the display key** for the **Scheduled Events table** by selecting the option of your choice in the dropdown parameter **Scheduled Events Display Key Format**. The default format is `Instance ID/Events ID`.
