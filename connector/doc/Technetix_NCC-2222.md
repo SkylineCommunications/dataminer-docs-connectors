@@ -1,4 +1,4 @@
----
+﻿---
 uid: Connector_help_Technetix_NCC-2222
 ---
 
@@ -14,10 +14,10 @@ Only one element should poll a device at a time. Polling the same device with mu
 
 ## Key Features
 
-- **Converters Overview**: Provides an overview of all the available converters.
-- **EDI to ETI/EDI**: Displays input sources, source assignment, and ETI output data for the EDI-to-ETI/EDI mode.
-- **ETI to EDI**: Displays input sources, source assignment, and IP EDI output data for the ETI-to-EDI mode.
-- **Converter Alarms**: Displays built-in alarms states and alarm details for the converters.
+- **Chassis Integration**: Combines broadcast amplification and controller functionality for up to 22 NCI‑521 inserter units.
+- **Redundant Broadcast Inputs**: Dual A/B inputs ensure uninterrupted service in case of a feed failure.
+- **Per‑Unit DVE Elements**: Automatically creates a DataMiner element for each connected unit, enabling granular monitoring and control.
+- **NCI Overview**: Real‑time summary of all installed NCI‑521 cards and their status, including attenuation and equalization settings.
 
 ## Technical Reference
 
