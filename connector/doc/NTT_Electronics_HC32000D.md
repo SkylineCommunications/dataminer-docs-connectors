@@ -18,4 +18,4 @@ The **NTT Electronics HC32000D** is a is a K/60p HEVC 422 10bit Multi-channel De
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_NTT_Electronics_HC32000_Technical).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_NTT_Electronics_HC32000D_Technical).
