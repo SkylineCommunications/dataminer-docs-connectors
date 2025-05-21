@@ -6,7 +6,7 @@ uid: Connector_help_NTT_Electronics_HC32000D
 
 ## About
 
-The **NTT Electronics HC32000D** is a is a K/60p HEVC 422 10bit Multi-channel Decoder.
+The **NTT Electronics HC32000D** is a K/60p HEVC 422 10bit Multi-channel Decoder.
 
 ## Key Features
 
