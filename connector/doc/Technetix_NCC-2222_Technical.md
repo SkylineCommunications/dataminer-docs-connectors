@@ -34,11 +34,11 @@ SNMP Settings:
 
 ### General
 
-This page contains generic parameters such as the **name** of the device, the **IP address** and **software** **versions**.
+This page contains generic parameters such as the **name** of the device, the **IP address** and **software versions**.
 
 ### NCI Overview
 
-This page provides an overview of all installed **NCI-521** **cards**, together with the **status** of each card.
+This page provides an overview of all installed **NCI-521 cards**, together with the **status** of each card.
 
 ### NCC Status
 

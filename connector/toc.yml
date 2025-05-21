@@ -9232,8 +9232,8 @@
   - name: Technetix NCC-2222
     topicUid: Connector_help_Technetix_NCC-2222
     items:
-        - name: Technetix NCC-2222 Technical
-          topicUid: Connector_help_Technetix_NCC-2222_Technical
+    - name: Technetix NCC-2222 Technical
+      topicUid: Connector_help_Technetix_NCC-2222_Technical
 - name: Tecsys
   items:
   - name: Tecsys TS 9090
