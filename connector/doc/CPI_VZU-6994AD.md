@@ -12,19 +12,19 @@ The connector uses the serial interface to retrieve information from the device 
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **C**as**sandra Compliant** |
-|------------------|------------------------------------|---------------------|-----------------------------|
-| 1.0.0.x          | Initial version (**obsolete**)     | No                  | Yes                         |
-| 1.1.0.x          | New release version (**obsolete**) | Yes                 | Yes                         |
-| 1.1.1.x          | Connector review                      | Yes                 | Yes                         |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version (**obsolete**) | No | Yes |
+| 1.1.0.x | New release version (**obsolete**) | Yes | Yes |
+| 1.1.1.x | Connector review | Yes | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | CPI 01019345 Rev. 19        |
-| 1.1.0.x          | CPI 01019345 Rev. 19        |
-| 1.1.1.x          | CPI 01019345 Rev. 19        |
+|--|--|
+| 1.0.0.x | CPI 01019345 Rev. 19 |
+| 1.1.0.x | CPI 01019345 Rev. 19 |
+| 1.1.1.x | CPI 01019345 Rev. 19 |
 
 ## Installation and Configuration
 
@@ -39,15 +39,21 @@ SERIAL CONNECTION:
 - Direct connection:
 
   - **Baudrate**: Default: *9600*
+
   - **Databits**: Default: *7*
+
   - **Stopbits**: Default: *1*
+
   - **Parity**: Default: *No*
+
   - **FlowControl**: Default: *No*
 
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
+
   - **IP port**: The IP port of the device.
+
   - **Bus address**: Range: 48-111
 
 ## Usage
@@ -77,6 +83,7 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 Physical fixed interfaces:
 
 - Input (type in)
+
 - Output (type out)
 
 ### Connections

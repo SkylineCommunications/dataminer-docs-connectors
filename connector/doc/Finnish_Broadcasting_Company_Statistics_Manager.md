@@ -34,14 +34,6 @@ The Finnish Broadcasting Company Statistics Manager connector retrieves and calc
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The **General** page displays all statistics that are retrieved by this connector. These statistics can be visualized in a dashboard for monitoring purposes.

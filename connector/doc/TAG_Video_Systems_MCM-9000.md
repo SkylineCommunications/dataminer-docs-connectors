@@ -24,6 +24,11 @@ The connector can receive traps to update the channel and system events in real 
 | 1.1.4.x [Obsolete] |                                                        | 1.1.3.25 | -                                                   |
 | 1.1.5.x [Obsolete] | Option for Unicode added.                              | 1.1.4.17 | All elements need to be re-created.                 |
 | 1.1.6.x [SLC Main] | Default value auto-clear Channel Events Table changed. | 1.1.5.6  | Only elements that are stuck need to be re-created. |
+| 1.1.7.x [Obsolete] | Added non-Unicode support.                             | 1.1.6.19 | -                                                   |
+| 1.1.8.x [SLC Main] |                                                        | 1.1.7.3  | Automation scripts need to be adapted.              |
+
+> [!NOTE]
+> Ranges 1.1.6.x and 1.1.8.x are maintained in parallel. Changes, new features, and fixes will therefore be applied to both ranges.
 
 ### Product Info
 
@@ -176,6 +181,10 @@ Via the right-click menu of the table, you can **start or stop monitoring** a ch
 Introduced in version 1.1.2.19. This page allows you to configure basic channel parameters. In order to fill in the parameters, a channel must be selected in the **Select an Input Channel** drop-down box at the top of the page.
 
 Via page buttons, you can configure the channel content and miscellaneous information. The **Channel Profiles** and **Channel PIDs/Components** configuration tables are available on dedicated subpages.
+
+### Scheduler Events
+
+Introduced in version 1.1.6.22, this page allows you to monitor and control scheduled events created under each channel. To add events (on the **Add Events** subpage), first select and set the channel (**Input Channel**). Then the connector will retrieve the available profiles of that channel and make them available for selection in the **Channel Profile** field dropdown list.
 
 ### Output Stream
 

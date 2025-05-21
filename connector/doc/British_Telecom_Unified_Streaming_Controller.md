@@ -49,10 +49,6 @@ To be able to start using this connector, you must specify the following AWS cre
 - **AWS Region**
 - **Service Name**
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Once the credentials have been specified on the Configuration page, the General page will show multiple rows from the Configured Channels table, containing the following information:

@@ -10,11 +10,11 @@ The XRF4 is a non-blocking, high-density wideband RF router for signals from 40 
 
 ### Version Info
 
-| **Range**            | **Key Features**                 | **Based on** | **System Impact**                                                 |
-|----------------------|----------------------------------|--------------|-------------------------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version.                 | -            | -                                                                 |
-| 1.0.1.x              | Redundant polling.               | 1.0.0.1      | Connection setting.                                               |
-| 1.0.2.x [SLC Main]   | Display discrete values changed. | 1.0.1.1      | Potentially affects alarms, Visual Overviews, Automation scripts. |
+| Range              | Key Features                     | Based on | System Impact                                                     |
+|--------------------|----------------------------------|----------|-------------------------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.                 | -        | -                                                                 |
+| 1.0.1.x            | Redundant polling.               | 1.0.0.1  | Connection setting.                                               |
+| 1.0.2.x [SLC Main] | Display discrete values changed. | 1.0.1.1  | Potentially affects alarms, Visual Overviews, Automation scripts. |
 
 ### Product Info
 
@@ -50,14 +50,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -68,4 +60,4 @@ On the **General** page of the element, you can find general information about t
 
 The **Matrix** page displays the device matrix, where you can set crosspoints.
 
-The **IO** **Control** page contains tables listing the inputs and outputs.
+The **IO Control** page contains tables listing the inputs and outputs.

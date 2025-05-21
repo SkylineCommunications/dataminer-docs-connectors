@@ -58,10 +58,6 @@ On the **General** page of the element, you must authenticate to a Kafka broker 
 - **SASL Password:** The password for use with PLAIN.
 - **Connect:** This button allows you to force the connection to a broker. By default, the connector tries to establish the connection by polling metadata from the broker in order to check the connectivity.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### General

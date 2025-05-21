@@ -8,7 +8,7 @@ The **Arris E6000 Configuration Manager** is an element manager for Arris E6000 
 
 ## About
 
-This connector retrieves all elements using the Arris E6000 connector and allows you to **configure** the selected Arris E6000 elements, **upgrade/commit an image**, and **apply patches** **in** **bulk**. The bulk execution is performed with a maximum number of elements running simultaneously. For example, if **Elements Running Simultaneously** is set to 5 and there are 10 elements in the Selected Devices table, once you start an operation, the execution will be started for 5 elements and put in the queue for the other 5. When the execution finishes for one element, it will start for another element that will be taken from the queue.
+This connector retrieves all elements using the Arris E6000 connector and allows you to **configure** the selected Arris E6000 elements, **upgrade/commit an image**, and **apply patches in bulk**. The bulk execution is performed with a maximum number of elements running simultaneously. For example, if **Elements Running Simultaneously** is set to 5 and there are 10 elements in the Selected Devices table, once you start an operation, the execution will be started for 5 elements and put in the queue for the other 5. When the execution finishes for one element, it will start for another element that will be taken from the queue.
 
 ### Version Info
 
@@ -32,7 +32,7 @@ This connector is meant to be used as a DataMiner app with a custom visual overv
 
 This tab of the app displays two tables, the Available Devices table and the Selected Devices table.
 
-The **Available Devices Table** displays all elements in the system using the **Arris E6000** **production** protocol. It displays the following columns in the same way as they are displayed in the elements themselves:
+The **Available Devices Table** displays all elements in the system using the **Arris E6000 production** protocol. It displays the following columns in the same way as they are displayed in the elements themselves:
 
 - Element Name
 - Firmware Version
@@ -112,7 +112,7 @@ The following parameters make changes to the elements present in the table(s):
 
 The parameter **Elements Running Simultaneously** indicates the maximum number of elements for which an operation can be executed at the same time. Once the execution of an operation finishes for one element, it will start for the next element in the queue, if any.
 
-The following **SSH settings** must be configured to connect to the file server, in order to retrieve the list of files available on it: **SSH** **Username**, **SSH Password** and **SSH Timeout** (by default 100 ms).
+The following **SSH settings** must be configured to connect to the file server, in order to retrieve the list of files available on it: **SSH Username**, **SSH Password** and **SSH Timeout** (by default 100 ms).
 
 ### Directories Credentials
 
@@ -134,8 +134,8 @@ The comparison of the configuration lines within the files can either result in 
 
 - Mismatch: Can be one of the following cases:
 
-- Only the last word is different, e.g. "configure interface cable-mac 1 cable dynamic-secret mark" vs "configure interface cable-mac 1 cable dynamic-secret reject".
-  - Negated configuration, e.g. "configure interface cable-downstream 12/0/22 cable shutdown" vs "configure interface cable-downstream 12/0/22 cable no shutdown".
+  - Only the last word is different, e.g. "configure interface cable-mac 1 cable dynamic-secret mark" vs. "configure interface cable-mac 1 cable dynamic-secret reject".
+  - Negated configuration, e.g. "configure interface cable-downstream 12/0/22 cable shutdown" vs. "configure interface cable-downstream 12/0/22 cable no shutdown".
   - The line is only found in one of the files.
 
 Some lines can be repeated in both files, e.g. 4 lines repeated in one file and 8 repeated in the other. Only the first 4 lines will be considered matches.

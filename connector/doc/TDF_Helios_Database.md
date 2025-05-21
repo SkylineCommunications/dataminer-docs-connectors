@@ -18,7 +18,12 @@ Each operator will have their own exported component and will be able to provisi
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x [Obsolete] | Service views are now created as DataMiner services. | 1.0.0.25 | Instead of only views, services are now also created. |
-| 1.0.2.x [SLC Main] | Element provisioning now relies on HOST_IP_ADDRESS and on PNO_CODE. | 1.0.1.54 | Instead of only on HOST_IP_ADDRESS, element provisioning relies on HOST_IP_ADDRESS and on PNO_CODE. |
+| 1.0.2.x [Obsolete] | Element provisioning now relies on HOST_IP_ADDRESS and on PNO_CODE. | 1.0.1.54 | Instead of only on HOST_IP_ADDRESS, element provisioning relies on HOST_IP_ADDRESS and on PNO_CODE. |
+| 1.0.3.x [Obsolete] | Names of required views in DMS "01 - CAT", "CAT-Elements", "02 - Transport FR3 remontées", and "Transport FR3 remontées-Elements" changed to "01 - F3 CAT", "F3 CAT - Elements", "02 - F3eDliveR", and "F3 eDliveR-Elements", respectively.| 1.0.2.10 | Required views must have the new correct name for the connector to work. |
+| 1.0.4.x [Obsolete] | New required views added: "03 -F3 FTR VAISE CDE" and "F3 FTR VAISE CDE-Elements" | 1.0.3.10 | New required views need to be created for the connector to work. |
+| 1.0.5.x [Obsolete] | Changed CAT and F3 eDliveR sites structure to each have 1 site view and 1 "Elements" view. | 1.0.4.6 | |
+| 1.0.6.x [SLC Main] | Each element of this connector will have a dedicated SLProtocol and SLScripting processes. | 1.0.5.3 | |
+| 2.0.0.x [SLC Main] | Equipment can be exported using a filter. | 1.0.6.4 | |
 
 ### Product Info
 
@@ -27,6 +32,11 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.0.x   | Oracle SQL Developer 1.5.5 |
 | 1.0.1.x   | Oracle SQL Developer 1.5.5 |
 | 1.0.2.x   | Oracle SQL Developer 1.5.5 |
+| 1.0.3.x   | Oracle SQL Developer 1.5.5 |
+| 1.0.4.x   | Oracle SQL Developer 1.5.5 |
+| 1.0.5.x   | Oracle SQL Developer 1.5.5 |
+| 1.0.6.x   | Oracle SQL Developer 1.5.5 |
+| 2.0.0.x   | Oracle SQL Developer 1.5.5 |
 
 ### System Info
 
@@ -35,6 +45,11 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.0.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 1.0.1.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 1.0.2.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.3.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.4.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.5.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.6.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 2.0.0.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 
 ## Configuration
 
@@ -105,6 +120,73 @@ In the **DMA Departments Allocation** table, which contains a row per DMA availa
 For each type of protocol to be assigned to the created elements, you can also configure generic settings in the **Element Settings** table.
 
 The service templates that define how the services are going to be created are defined on the **Services Templates** subpage. There are two types of service templates: internal service templates and customer service templates. To define customer service templates, right-click the **Customer Service Templates** table and select the relevant customer. The services will only be created if these service templates settings are assigned.
+
+For more specific information about the provisioning, see [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator).
+
+#### Automatic Update of Properties [v1.0.4.5]
+
+This feature automatically updates properties for **views**, **services**, and **elements**.
+
+A JSON-formatted string must be set on **Parameter ID 4** to trigger this functionality.
+
+When triggered, the Helios Database element will automatically refresh, stage, and apply changes to update the properties.
+
+An operator must be defined to run this process, and its filters will be applied (Item De Catalogue, Site Code, Service Client Code, and PNO Code).
+
+Some properties, such as Pilote View ID and Pilote View Name, are implicitly inspected.
+
+The JSON message defines which properties should be updated and must include the following fields:
+
+- **`Operator`** (string, required):  
+  Specifies the logical operator to be used in the filter logic. This field is mandatory.
+
+- **`ViewProperties`** (array of strings, optional):  
+  A list of property names related to views.
+
+- **`ServiceProperties`** (array of strings, optional):  
+  A list of property names related to services.
+
+- **`ElementProperties`** (array of strings, optional):  
+  A list of property names related to elements.
+
+##### Example JSON
+
+```json
+{
+  "Operator" : "AutoProv",
+  "ViewProperties" : ["Adresse", "Code Arcom"],
+  "ServiceProperties" : ["Adresse", "Code Postal", "Latitude", "Longitude"],
+  "ElementProperties" : ["Fabricant"]
+}
+```
+
+The properties that can be updated with this feature are limited to the following:
+
+| Views | Services | Elements |
+|-----------|--------------|--------------|
+| Adresse | Adresse | Code IG |
+| Code Arcom | CFS Date Mes Realisee | Description IG |
+| Code INSEE | CFS Statut | Fabricant |
+| Code Postal | Code Arcom |  |
+| Commune | Code INSEE |  |
+| Description IG | Code Postal |  |
+| Extremite TMS | Commune |  |
+| Latitude | Contract |  |
+| Longitude | Description CFS |  |
+| Parent View ID | Description IG |  |
+| Pays | Extremite TMS |  |
+| Site Mixte | Item De Catalogue |  |
+|  | Latitude |  |
+|  | Libellé |  |
+|  | Longitude |  |
+|  | Opérateur Diff |  |
+|  | Parent View ID |  |
+|  | Passerelle |  |
+|  | Pays |  |
+|  | Sécurisation énergie |  |
+|  | SLA |  |
+|  | Type Couverture |  |
+|  | Type Syno |  |
 
 ## Notes
 

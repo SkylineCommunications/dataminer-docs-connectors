@@ -16,12 +16,13 @@ The connector also queries the Vantage SOAP interface for the various **servers*
 
 ### Version Info
 
-| Range              | Description                                                               | DCF Integration | Cassandra Compliant |
-|--------------------|---------------------------------------------------------------------------|-----------------|---------------------|
-| 1.0.0.x            | Initial version                                                           | No              | Yes                 |
-| 1.0.1.x            | Implemented redundant pooling                                             | No              | Yes                 |
-| 1.0.2.x            | Added unicode option.                                                     | No              | Yes                 |
-| 1.0.3.x [SLC Main] | Added unicode option. Major logic refactor with performance improvements. Upgrading from 1.0.2.x to 1.0.3.x has no major impact, as only changes to the internal logic are implemented. | No              | Yes                 |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | Yes |
+| 1.0.1.x | Implemented redundant pooling | No | Yes |
+| 1.0.2.x | Added unicode option. | No | Yes |
+| 1.0.3.x | Added unicode option. Major logic refactor with performance improvements. Upgrading from 1.0.2.x to 1.0.3.x has no major impact, as only changes to the internal logic have been implemented. | No | Yes |
+| 1.0.4.x  [SLC Main] | Changed the minimum required DataMiner version to 10.2.9.0 - 12190. | No | Yes |
 
 ### Product Info
 
@@ -31,6 +32,7 @@ The connector also queries the Vantage SOAP interface for the various **servers*
 | 1.0.1.x          | Vantage 6.3                 |
 | 1.0.2.x          | Vantage 6.3                 |
 | 1.0.3.x          | Vantage 6.3                 |
+| 1.0.4.x          | Vantage 6.3                 |
 
 ## Installation and configuration
 

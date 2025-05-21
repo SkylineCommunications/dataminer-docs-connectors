@@ -36,14 +36,6 @@ This **enables the users to step away from the conductor** and only use this app
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This application contains one General page, which displays the **Conductor Cluster Table**. This table contains the Conductor identification and allows you to enable or disable event management through the visual overview page.

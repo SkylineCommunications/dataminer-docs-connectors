@@ -42,14 +42,6 @@ SERIAL CONNECTION:
   - **IP port**: *502*
   - **Bus address**: *1*
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector consists of the data pages detailed below.

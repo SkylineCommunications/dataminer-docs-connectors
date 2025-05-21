@@ -12,33 +12,33 @@ The purpose of this connector is to collect the processed metrics available on P
 
 ### Version Info
 
-| **Range**            | **Key Features**                                 | **Based on** | **System Impact**                 |
-|----------------------|--------------------------------------------------|--------------|-----------------------------------|
-| 1.0.0.x              | Initial version (HTTP connection)                | -            | -                                 |
-| 1.0.1.x              | Webhook alarms                                   | 1.0.0.1      | Element IP has to be reconfigured |
-| 1.0.2.x              | Deleted incorrect duplicates in MetricLens table | 1.0.1.5      | Removed rows                      |
-| 1.0.3.x              | New connection to retrieve filter data           | 1.0.2.4      | New element IP                    |
-| 1.0.4.x [SLC Main]   | Added partial option to a couple of tables       | 1.0.3.7      | Impact to visuals, apps, etc.     |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version (HTTP connection) | - | - |
+| 1.0.1.x | Webhook alarms | 1.0.0.1 | Element IP has to be reconfigured |
+| 1.0.2.x | Deleted incorrect duplicates in MetricLens table | 1.0.1.5 | Removed rows |
+| 1.0.3.x | New connection to retrieve filter data | 1.0.2.4 | New element IP |
+| 1.0.4.x [SLC Main] | Added partial option to a couple of tables | 1.0.3.7 | Impact to visuals, apps, etc. |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.0.2.x   | -                      |
-| 1.0.3.x   | -                      |
-| 1.0.4.x   | -                      |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | - |
+| 1.0.1.x | - |
+| 1.0.2.x | - |
+| 1.0.3.x | - |
+| 1.0.4.x | - |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.0.1.x | No | Yes | - | - |
+| 1.0.2.x | No | Yes | - | - |
+| 1.0.3.x | No | Yes | - | - |
+| 1.0.4.x | No | Yes | - | - |
 
 ## Configuration
 
@@ -53,6 +53,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP or URL of the destination.
+
   - **IP port**: The IP port of the destination.
 
 #### HTTP Connection
@@ -62,7 +63,9 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
+
 - **IP port**: The IP port of the destination.
+
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Configuration of security settings
@@ -79,10 +82,6 @@ To do so, log in on <https://pulse.conviva.com/> and go to **Settings** \> **Not
 
 Note that the connector does not support the option "**URL has authentication**", if you enable this in the Conviva UI, you may not get any alarms in DataMiner.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -98,20 +97,31 @@ The page contains two tables:
 - **Metrics:**
 
 - **Metric Name**: The type of metric to display, e.g. attempts, plays, etc.
+
   - **Filter Name**: Allows you to specify a filter to see only specific data.
+
   - **Status**: The status of the HTTP call: *Error*, *Warmup* or *OK*.
+
   - **Disable**: Allows you to enable or disable the polling.
+
   - **Poll Now**: Allows you to instantly poll the data.
+
   - **Remove**: Allows you to remove the metric.
 
 - **MetricLens:**
 
 - **Dimension Name**: The dimension used to collect the data. **Dimensions** can include CDNs, Cities, ISPs. For each dimension, you can choose which metrics to display.
+
   - **Filter Name**: Allows you to specify a filter to see only specific data.
+
   - **Metric Name**: The type of metric to display.
+
   - **Status**: The status of the HTTP call.
+
   - **Disable**: Allows you to enable or disable the polling.
+
   - **Poll Now**: Allows you to instantly poll the data.
+
   - **Remove**: Allows you to remove the metric.
 
 ### Metrics Results
@@ -121,25 +131,37 @@ Depending on the metric name, the data will be displayed in one of the three tab
 - **Time Series Metrics**
 
 - **Metric name**: The type of metric.
+
   - **Filter**: The filter that is applied in the table.
+
   - **Units**: The unit corresponding to the value. This parameter is set by the user.
+
   - **Avg. value**
+
   - **Max value**
+
   - **Min value**
 
 - **Simple Series Metrics**
 
 - **Metric name**: The type of metric.
+
   - **Filter**: The filter that is applied in the table.
+
   - **Value**
+
   - **Units**
 
 - **Label Series Metrics**
 
 - **Metric name**: The type of metric.
+
   - **Filter**: The filter that is applied in the table.
+
   - **Label**: The value description.
+
   - **Value**
+
   - **Units**: The unit corresponding to the value. This parameter is set by the user.
 
 ### MetricLens Results
@@ -147,19 +169,33 @@ Depending on the metric name, the data will be displayed in one of the three tab
 The MetricLens data are displayed in the **MetricLens Quality** table. This table contains the following information:
 
 - **Dimension**: The dimension used to collect the data.
+
 - **Filter**: The filter that is applied in the table.
+
 - **Metric Name**: The type of metric.
+
 - **Label**
+
 - **Attempts**: The number of attempts to play a video initiated when a viewer clicks play or through video auto-play.
+
 - **VSF - Video Start Failures**: The number of attempts when a video was terminated during startup before the first video frame was played, and a fatal error was reported.
+
 - **EBVS - Exits Before Video Starts**: The number of attempts when a video was terminated before it started, without a reported error.
+
 - **Plays**: The number of plays, which are counted when the first video frame is displayed.
+
 - **VST** - **Video Startup Time**: The number of seconds between when the user clicks play or a video auto-starts and when the first I-frame of the video is rendered, excluding any pre-roll ads.
+
 - **Rebuffering Ratio**: Rebuffering occurs when the video stalls during playback and the viewer must wait for the video to resume playing. The Rebuffering Ratio measures the percentage of total video viewing time during which viewers experienced rebuffering.
+
 - **Average Bitrate**: The bits played by the player.
+
 - **VPF - Video Playback Failures**: The number of times when video play terminates because of a playback error.
+
 - **Ended Plays**: The number of times a play ended during the selected interval.
+
 - **CIRR - Connection Induced Rebuffering Ratio**: The percentage of total video viewing time during which viewers experienced non-seek rebuffering.
+
 - **VRT - Video Restart Time**: The number of seconds after a user initiated seeking until the video began playing.
 
 ### Alerts

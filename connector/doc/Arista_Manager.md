@@ -4,14 +4,11 @@ uid: Connector_help_Arista_Manager
 
 # Arista Manager
 
-The Arista Manager connector can monitor Arista switches of type **7010T** and **7050SX:**
-
-- **7010 series**: 1U low power (52 W) line-rate 1 Gb top-of-rack switch, with 4x10 Gb uplinks.
-- **7050 series**: 1U low-latency cut-through line-rate 10 Gb and 40 Gb switches. Higher port density than the 7100 series, with a minimum of 52 x 10 GbE ports but slightly increased latency (1.2 æs or less).
+The Arista Manager connector can monitor all Arista systems running the **Arista EOS** operating system.
 
 ## About
 
-This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
+This connector can be used to monitor **interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
 
 - **SNMP** is used to retrieve device information (e.g. **System Name**, **System Description**, **Detailed Interface Info tables**, etc.) and to receive the **traps**.
 - **HTTP** is used to retrieve information that is available in the Arista Command API.
@@ -33,7 +30,8 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 | 2.0.9.x | Credential Manager with the latest implementation. | Yes | Yes |
 | 2.0.10.x | Changed the way the polling is executed to get a more consistent result. | Yes | Yes |
 | 2.0.11.x | Changed the key of the IP multicast routing table. | Yes | Yes |
-| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect "Interpretes". | Yes | Yes |
+| 2.0.12.x | - Removed Section Table and added SNMP polling commands to the polling table to avoid confusion. <br>- Trunk Table has been converted to SwitchPort Table. It now shows more extended information. <br>- Fixed various incorrect "Interpretes". | Yes | Yes | 
+| 2.0.13.x | Traps table is now volatile and generation of keys are not using auto increment feature. Alarming and trending is no longer possible | Yes | Yes |
 
 ### Product Info
 
@@ -51,7 +49,8 @@ This connector can be used to monitor **Rx and Tx Interfaces**. Statistics are a
 | 2.0.9.x             | 4.15.2F <br>4.20.5F <br>4.21.1F             |
 | 2.0.10.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 | 2.0.11.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
-| 2.0.12.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.12.x            | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
+| 2.0.13.x [SLC Main] | 4.15.2F <br>4.20.5F <br>4.21.1F <br>4.25.2F |
 
 ## Configuration
 

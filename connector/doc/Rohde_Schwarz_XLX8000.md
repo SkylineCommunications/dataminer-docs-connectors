@@ -8,25 +8,35 @@ This connector has been developed for devices such as the **Rohde Schwarz XLX800
 
 ## About
 
-With three timers, all the **SNMP** parameters are polled and displayed on several pages. **Traps** are used to update the parameters on the **Status** page.
+Based on a polling table, **SNMP** parameters are polled and displayed on several pages. **Traps** are used to update the parameters on the **Status** page.
 
 ### Version Info
 
-| Range     | Description                                                               | DCF Integration     | Cassandra Compliant     |
-|------------------|----------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                            | Yes                 | Yes                     |
-| 1.0.1.x          | Renamed single parameters and table column parameters to meet QA standards | Yes                 | Yes                     |
+| Range              | Description                                                                | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x [Obsolete] | Initial version                                                            | -        | -             |
+| 1.0.1.x [Obsolete] | Renamed single parameters and table column parameters to meet QA standards | -        | -             |
+| 1.0.2.x [SLC Main] | Removed Lite mode toggle option                                            | 1.0.1.2  | -             |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2100.4280                   |
-| 1.0.1.x          | 2100.4280                   |
+| Range    | Supported Firmware Version |
+|----------|----------------------------|
+| 1.0.0.x  | 2100.4280                  |
+| 1.0.1.x  | 2100.4280                  |
+| 1.0.2.x  | 2100.4280                  |
 
-## Installation and configuration
+### System Info
 
-### Creation
+| Range    | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|----------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x  | Yes             | Yes                 | -                 | -                   |
+| 1.0.1.x  | Yes             | Yes                 | -                 | -                   |
+| 1.0.2.x  | Yes             | Yes                 | -                 | -                   |
+
+## Configuration
+
+### Connections
 
 #### SNMP connection
 
@@ -75,6 +85,10 @@ This page contains general device information, as well as Tx and Rx settings. It
 - **RX1 Settings**: Displays the **Input 1 Settings Table**, which contains configuration parameters for Input 1.
 - **RX2 Settings**: Displays the **Input 2 Settings Table**, which contains configuration parameters for Input 2.
 - **Time Scheduler**: Displays all the time scheduling parameters in the **Time Scheduler Table**.
+
+### Polling Configuration Page
+
+This page contains the polling table, which allows you to configure which set of parameters is polled and which polling intervals are used.
 
 ### Web Interface Page
 

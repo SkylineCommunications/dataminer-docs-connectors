@@ -28,15 +28,15 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General Page
 
-This page contains general information about the device: **System Type**, **Software Version** and **Serial Number**.
+This page contains general information about the device: **System Type**, **Software Version**, and **Serial Number**.
 
 ### Alarms Page
 
-This page provides an overview of the alarms in the **Alarm Table**. This table shows the **Alarm Severity**, **Alarm Name**, **Alarm Description**, **Alarm State** and **Alarm Timestamp**.
+This page provides an overview of the alarms in the **Alarm Table**. This table shows the **Alarm Severity**, **Alarm Name**, **Alarm Description**, **Alarm State**, and **Alarm Timestamp**.
 
 ### Inputs Page
 
-This page provides an overview of the inputs in the **Digital Input** **Table** and the **Analog Input Table**.
+This page provides an overview of the inputs in the **Digital Input Table** and the **Analog Input Table**.
 
 ### Outputs Page
 

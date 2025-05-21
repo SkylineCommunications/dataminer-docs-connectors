@@ -12,10 +12,10 @@ The connector can be provisioned via the import of CSV files with IP addresses a
 
 ### Version Info
 
-| Range              | Description                      | DCF Integration | Cassandra Compliant |
-|--------------------|----------------------------------|-----------------|---------------------|
-| 1.0.0.x [Obsolete] | Initial version                  | No              | Yes                 |
-| 1.0.1.x [SLC Main] | Updated spectrum analyzer tables | No              | Yes                 |
+| Range              | Description                                                                                                       | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version.                                                                                                  | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Updated spectrum analyzer tables.                                                                                 | No              | Yes                 |
 
 ### Product Info
 

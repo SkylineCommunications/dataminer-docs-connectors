@@ -12,21 +12,21 @@ This connector uses a serial connection to get the current audio routing configu
 
 ### Version Info
 
-| Range                | Key Features     | Based On     | System Impact                                                       |
-|----------------------|------------------|--------------|---------------------------------------------------------------------|
-| 1.0.0.x [Obsolete]     |Initial version. | -            | -                                                                   |
-| 1.0.1.x [Obsolete]     |New branch.      | 1.0.0.1      | Different layout; changed DK to I/O labels.                         |
-| 1.0.2.x \[Main\]     | New branch.      | -            | Different layout; changed I/O tables PK. Matrix and router control. |
-| 2.0.0.x              | HTTP version.    | -            | Different layout; different connection type.                        |
+| Range              | Key Features     | Based On | System Impact                                                       |
+|--------------------|------------------|----------|---------------------------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version. | -        | -                                                                   |
+| 1.0.1.x [Obsolete] | New branch.      | 1.0.0.1  | Different layout; changed DK to I/O labels.                         |
+| 1.0.2.x [SLC Main] | New branch.      | -        | Different layout; changed I/O tables PK. Matrix and router control. |
+| 2.0.0.x            | HTTP version.    | -        | Different layout; different connection type.                        |
 
 ### Product Info
 
-| **Range**            | **Supported Firmware**                        |
-|----------------------|-----------------------------------------------|
-| 1.0.0.x [Obsolete]     |7.4.35.1                                      |
-| 1.0.1.x [Obsolete]     |7.4.35.1                                      |
-| 1.0.2.x \[Main\]     | 7.4.35.1                                      |
-| 2.0.0.x              | DHD Series51 imx6 Version : 1.1.9.0 - 01/2019 |
+| Range              | Supported Firmware                            |
+|--------------------|-----------------------------------------------|
+| 1.0.0.x [Obsolete] | 7.4.35.1                                      |
+| 1.0.1.x [Obsolete] | 7.4.35.1                                      |
+| 1.0.2.x [SLC Main] | 7.4.35.1                                      |
+| 2.0.0.x            | DHD Series51 imx6 Version : 1.1.9.0 - 01/2019 |
 
 ### System Info
 
@@ -67,14 +67,6 @@ HTTP CONNECTION:
 For the element to function properly, the current router configuration must be retrieved from the Toolbox 5. To do so, go to **File** \> **Export** and click **Export AudioIDs/LogicsIDs**. This will open a new page, where you should select the file **Ext. DHD AudioID/LogicID Export (.\*dpx)**.
 
 The element must then be configured with this configuration in DataMiner. To do so, on the **General** page, specify the **Path** where the configuration file is stored. Then click the **Load Configuration** button to make the connector parse the configuration file and start retrieving the routing information.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

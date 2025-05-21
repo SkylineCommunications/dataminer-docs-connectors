@@ -10,10 +10,10 @@ This connector is designed to sync DataMiner Ticketing with the Jira software. I
 
 ### Version Info
 
-| Range              | Key Features                                                                              | Based on | System Impact                                                         |
-|--------------------|-------------------------------------------------------------------------------------------|----------|-----------------------------------------------------------------------|
-| 1.0.0.x            | Initial version.                                                                          | -        | -                                                                     |
-| 2.0.0.x [SLC Main] | Atlassian Jira dependency removed. Element configuration improved. Unicode support added. | -        | Existing elements using this connector must be removed and recreated. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 2.0.0.x [SLC Main] | Atlassian Jira dependency removed. Element configuration improved. Unicode support added. | - | Existing elements using this connector must be removed and recreated. |
 
 ### Product Info
 
@@ -43,13 +43,9 @@ HTTP CONNECTION:
 
 ### Initialization
 
-Fill in the **Jira User Name** and **Jira Password** on the Configuration page. Note that from **June 2019 onwards**, basic authentication with passwords is deprecated and instead of the password an **API token** **needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
+Fill in the **Jira User Name** and **Jira Password** on the Configuration page. Note that from **June 2019 onwards**, basic authentication with passwords is deprecated and instead of the password an **API token needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
 
 In the 1.0.0.x range of the connector, also fill in the **Jira Element** parameter on this same page with the name of the Atlassian Jira element that handles the communication. In addition, specify the **DataMiner User Name** and **DataMiner Password** to connect to the Ticketing module.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
@@ -57,7 +53,7 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use \[2.0.0.x\]
 
-First fill in the **Jira User Name** and **Jira Password** to log on to the Jira software. However, note that from **June 2019 onwards**, basic authentication with passwords is deprecated and instead of the password an **API token** **needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
+First fill in the **Jira User Name** and **Jira Password** to log on to the Jira software. However, note that from **June 2019 onwards**, basic authentication with passwords is deprecated and instead of the password an **API token needs to be used** (see also [Manage API tokens for your Atlassian account \| Atlassian Support](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/)).
 
 Use the **Select Project** parameter to select the Jira project to sync with DataMiner. **Ticketing Domain** determines the ticket domain name in DataMiner.
 
@@ -95,7 +91,7 @@ To connect to the Ticketing module, provide the **DataMiner User Name** and **Da
 
 ### Jira Pending Issues
 
-On this page, you can find the **Sync Time**, **Process Pending Issues time** and **Cleanup Time**. The **Jira Pending Issues** table shows all commands that have been or will be sent to the Jira platform. With **Delete Failed Request**, you can clean up this table.
+On this page, you can find the **Sync Time**, **Process Pending Issues time**, and **Cleanup Time**. The **Jira Pending Issues** table shows all commands that have been or will be sent to the Jira platform. With **Delete Failed Request**, you can clean up this table.
 
 The **Request Tickets** page button opens a subpage where you can configure how often all tickets should be polled, as well as poll the updated tickets from within a certain time.
 

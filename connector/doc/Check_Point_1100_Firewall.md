@@ -14,26 +14,26 @@ Range 1.0.0.x of the connector uses SNMPv1 to communicate with the device. From 
 
 ### Version Info
 
-| **Range** | **Description**             | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version             | No                  | Yes                     |
-| 1.0.1.x          | Support for SNMPv3 contexts | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | Yes |
+| 1.0.1.x | Support for SNMPv3 contexts | No | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 9                           |
-| 1.0.1.x          | 9                           |
+|--|--|
+| 1.0.0.x | 9 |
+| 1.0.1.x | 9 |
 
 ### Exported connectors
 
-| **Exported Connector**                      | **Description**                                |
-|--------------------------------------------|------------------------------------------------|
+| Exported Connector | Description |
+|--|--|
 | Check Point 1100 Firewall - Virtual Switch | Virtual Switch Only supported in range 1.0.1.x |
 | Check Point 1100 Firewall - Virtual Router | Virtual Router Only supported in range 1.0.1.x |
 | Check Point 1100 Firewall - Virtual System | Virtual System Only supported in range 1.0.1.x |
-| Check Point 1100 Firewall - VSX Gateway    | Main Module Only supported in range 1.0.1.x    |
+| Check Point 1100 Firewall - VSX Gateway | Main Module Only supported in range 1.0.1.x |
 
 ## Installation and configuration
 
@@ -48,15 +48,21 @@ SNMP CONNECTION:
 SNMPv1 Settings (1.0.0.x):
 
 - **Port number**: The port of the connected device, by default *161*.
+
 - **Get community string**: The community string used when reading values from the device, by default *public*.
+
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
 SNMPv3 Settings (1.0.1.x):
 
 - **Port number**: The port of the connected device, by default *161*.
+
 - **Security level and protocol**: The type of security used.
+
 - **User name**: The user name.
+
 - **Authentication Password**: The user password.
+
 - **Authentication** **algorithm**: The used authentication algorithm.
 
 ## Usage (1.0.0.x)

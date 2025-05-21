@@ -48,15 +48,12 @@ SNMP Settings:
 
 If you want to use the traps in DataMiner, you will have to enable this on the device and fill in the IP of the DataMiner server.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
 ## How to use
 
-The connector will work immedialty after startup.
-It's possible to change the settings for the trap table to clean up so that the table can not became to large.
+The connector will work immediately after startup.
+
+You can change the settings for the trap table to clean up so that the table cannot become too large.
