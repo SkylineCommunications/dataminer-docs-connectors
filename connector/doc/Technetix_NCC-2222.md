@@ -6,11 +6,7 @@ uid: Connector_help_Technetix_NCC-2222
 
 ## About
 
-An NCC-2222 chassis, as part of the Narrowcast Controller system, combines broadcast amplification with advanced controller functionality. It manages all connected NarrowCast inserters (NCI-521/WB or NCI-521-12, up to 22 units) while supporting dual broadcast input (A/B) for redundancy. A DVE element will be created in DataMiner for each connected unit.
-
-An **SNMP** connection is used to retrieve and configure device information.
-
-Only one element should poll a device at a time. Polling the same device with multiple elements simultaneously may result in unexpected behavior.
+An NCC-2222 chassis, as part of the Narrowcast Controller system, combines broadcast amplification with advanced controller functionality. It manages all connected NarrowCast inserters (NCI-521/WB or NCI-521-12, up to 22 units) while supporting dual broadcast input (A/B) for redundancy. With this connector, you will be able to monitor each connected unit via a separate child element in DataMiner.
 
 ## Key Features
 
