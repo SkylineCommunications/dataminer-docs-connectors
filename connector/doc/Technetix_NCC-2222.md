@@ -10,10 +10,10 @@ An NCC-2222 chassis, as part of the Narrowcast Controller system, combines broad
 
 ## Key Features
 
-- **Chassis Integration**: Combines broadcast amplification and controller functionality for up to 22 NCI‑521 inserter units.
-- **Redundant Broadcast Inputs**: Dual A/B inputs ensure uninterrupted service in case of a feed failure.
-- **Per‑Unit DVE Elements**: Automatically creates a DataMiner element for each connected unit, enabling granular monitoring and control.
-- **NCI Overview**: Real‑time summary of all installed NCI‑521 cards and their status, including attenuation and equalization settings.
+- **Chassis integration**: Combines broadcast amplification and controller functionality for up to 22 NCI‑521 inserter units.
+- **Redundant broadcast inputs**: Dual A/B inputs ensure uninterrupted service in case of a feed failure.
+- **Per‑unit DVE elements**: Automatically creates a DataMiner element for each connected unit, enabling granular monitoring and control.
+- **NCI overview**: Real‑time summary of all installed NCI‑521 cards and their status, including attenuation and equalization settings.
 
 ## Technical Reference
 
