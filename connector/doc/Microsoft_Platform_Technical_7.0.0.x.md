@@ -29,19 +29,15 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 
 ## Configuration
 
-When creating an element using this connector, apart from the element name and the protocol fields, the only required field to be populated is the *IP address*. In this field, you must specify the IP address assigned to the server running Microsoft Windows OS that will be monitored.
+### Connections
 
-### Driver range 7.0.0.x
+#### Virtual Connection
 
-Since this is a virtual connector, apart form the common element settings, no extra configuration is required.
-Once the element is created, it is necessary to configure the connection settings (available in the page General -> Connections).
-
-> [!IMPORTANT]
-> When you create an element to monitor the DataMiner Agent hosting the element, the administrator built-in account will be used to query the server. In case the element will monitor a remote server, you must configure the appropriate credentials on the [Security](#security) page.
+This connector uses a virtual connection and does not require any input during element creation. However, once the element is created, it is necessary to configure the connection settings (available in the page General -> Connections).
 
 In addition, WMI and DCOM must be properly configured on the server to be monitored, as detailed below.
 
-### WMI configuration
+#### WMI configuration
 
 1. To go to WMI Control Properties, go to **Start** \> **Run** and enter *wmimgmt.msc*.
 1. Right-click **WMI Control (Local)** and select **Properties**.
@@ -49,7 +45,7 @@ In addition, WMI and DCOM must be properly configured on the server to be monito
 1. Add the user that will be used to query data from the remote server to the list and give the user all rights.
 1. Apply all.
 
-### DCOM configuration
+#### DCOM configuration
 
 1. Go to **Start** \> **Run** and enter *dcomcnfg* (Component Services).
 1. Under **Component Services** \> **Computers**, right-click **My Computer** and select **Properties**.
@@ -65,39 +61,29 @@ In addition, WMI and DCOM must be properly configured on the server to be monito
 > - On a Win2K3, the local user must be added to the administrators group.
 > - On a Win2K8, the local user must be added to the administrators group, Distributed COM Users, and Performance Monitor Users.
 
-## Usage
+### Initialization
 
-### Performance
+Once the element is created, the **Connection** page (available under the **General** page), allows you to configure the credentials that will be used to query the target server.
 
-#### Security
+- If the element is used to monitor the DataMiner agent, and the element is hosted in the same DataMiner Agent, you can use either  *localhost*, or *127.0.0.1*.
+- If the element is used to monitor a DataMiner agent is located in another agent, the IP address (or hostname) of the DataMiner agent should be used.
+- If you are planning to use credentials from a domain controller, it is required to include the domain name (e.g. domain\myDomainUser).
 
-This page displays settings that will be used by WMI to query the remote server.
+### Connection States
 
-- **Username**: The user account used for querying the remote server.
-- **Password**: The password associated with the user account.
-- **Domain Name**: Required only if the user account belongs to a domain controller. If a local user is used to query the server, this parameter can be left blank.
+TODO: State diagram,
 
-#### Port Monitoring
+## How to use
 
-This page allows you to configure the *port monitoring* feature in this connector, which enables you to verify whether a port is opened or closed and to measure any response delay.
+The **General** page provides details about the operating system running on the monitored server. In the page *OS Updates* displays details about the recently installed patches on the server.
 
-To enable this feature:
+The **CPU** page offers information related to the processor, including usage metrics, as well as thread and handle counters. The *Logical Processors* page presents utilization metrics for each logical processor.
 
-1. On the **Performance** page, click the **Port monitoring** button.
-1. Define a **Polling Period.**
-1. Use the **Add Port** box to add one or more ports that need to be monitored in the **Port List**.
-1. Finally, enable the port monitoring feature by clicking the toggle button next to **Port Monitoring Status**.
+The **Memory** page provides information about the physical and virtual memory allocation of the monitored server.
 
-#### Ping Monitoring
+The **Network** page contain metrics related to the network adapters available in the monitored server.
 
-This page allows you to configure the *ping monitoring* feature available in this connector. This feature allows you to perform a ping command on the remote server.
-
-To enable this feature:
-
-1. On the **Performance** page, click the **Ping monitoring** button.
-1. Click the toggle button next to **Ping Query** to execute the ping.
-1. Configure the **Ping Cycle**, i.e. the interval between each ping. The default value is *60 s*.
-1. Configure the **Ping Timeout** and **Ping Number**. The default values are *1500 ms* and *4* respectively.
+The **Process** page lists all the processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS).
 
 ### Task Manager
 
