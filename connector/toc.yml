@@ -6704,6 +6704,27 @@
       topicUid: Connector_help_Newtec_Dialog_Platform_VSAT_Technical
   - name: Newtec Dialog Infrastructure
     topicUid: Connector_help_Newtec_Dialog_Infrastructure
+  - name: Newtec Dialog Inventory
+    topicUid: Connector_help_Newtec_Dialog_Inventory
+    items:
+    - name: Newtec Dialog Inventory
+      topicUid: Connector_help_Newtec_Dialog_Inventory_Technical
+    - name: Newtec Dialog Inventory - M6100 Modulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_M6100_Modulator
+    - name: Newtec Dialog Inventory - MCM7500 Modulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCM7500_Modulator
+    - name: Newtec Dialog Inventory - MCD6000 Demodulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCM6000_Demodulator
+    - name: Newtec Dialog Inventory - MCD HRC Demodulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD_HRC_Demodulator
+    - name: Newtec Dialog Inventory - MCD MRC Demodulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD_MRC_Demodulator
+    - name: Newtec Dialog Inventory - MCD 4CPM Demodulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD_4CPM_Demodulator
+    - name: Newtec Dialog Inventory - MCD7000 Demodulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD7000_Demodulator
+    - name: Newtec Dialog Inventory - PTP Sync
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_PTP_Sync
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
   - name: Newtec Dialog Time Series Database - Network
