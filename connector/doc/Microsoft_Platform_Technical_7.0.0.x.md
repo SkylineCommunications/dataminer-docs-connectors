@@ -37,6 +37,12 @@ This connector uses a virtual connection and does not require any input during e
 
 In addition, WMI and DCOM must be properly configured on the server to be monitored, as detailed below.
 
+> [!IMPORTANT]
+> Since this is a virtual connector, WMI queries sent to the target server are not displayed in the [Stream Viewer](https://docs.dataminer.services/user-guide/Troubleshooting/Logging/Monitoring_real-time_communication/Connecting_to_an_element_using_Stream_Viewer.html)
+> Currently the default timeout is set to XXX
+
+TODO: Check what is the hardcoded timeout
+
 #### WMI configuration
 
 1. To go to WMI Control Properties, go to **Start** \> **Run** and enter *wmimgmt.msc*.
@@ -63,27 +69,56 @@ In addition, WMI and DCOM must be properly configured on the server to be monito
 
 ### Initialization
 
-Once the element is created, the **Connection** page (available under the **General** page), allows you to configure the credentials that will be used to query the target server.
+Once the element is created, you can configure the credentials used to query the target server on the **Connections** page (located under the **General** section).
 
-- If the element is used to monitor the DataMiner agent, and the element is hosted in the same DataMiner Agent, you can use either  *localhost*, or *127.0.0.1*.
-- If the element is used to monitor a DataMiner agent is located in another agent, the IP address (or hostname) of the DataMiner agent should be used.
-- If you are planning to use credentials from a domain controller, it is required to include the domain name (e.g. domain\myDomainUser).
+- If the element monitors the same DataMiner agent on which it is hosted, you can use either *localhost*, or *127.0.0.1* as hostname.
+
+- If the element monitors a different DataMiner agent, specify the IP address or hostname of the remote agent.
+
+- When using credentials from a domain controller, be sure to include the domain name (e.g. domain\myDomainUser).
+
+>[!IMPORTANT]
+> After modifying the settings on the **Connections** page, it is required to click the button *Connect* to apply the changes. The connector will not use the updated settings this action is completed.
+> When the element is created, it will not start polling any data until the hostname **and** credentials are set in the **Connections** page.
 
 ### Connection States
 
-TODO: State diagram,
+```plantuml
+@startuml ConnectionState
+!theme reddress-darkblue
+
+'This diagram describes the possible states from the parameter Connection States, available in the connector'
+
+skinparam LifeLineStrategy solid
+skinparam LIfeLineBorderThickness 10
+'skinparam LineType polyline
+
+[*] --> Not_Initialized : Element started
+Not_Initialized --> OK : Correct\ncredentials
+Not_Initialized --> Unauthorized: Incorrect\ncredentials
+Unauthorized -> OK: Correct\ncredentials
+OK --> [*]: Element\nstopped
+OK --> Error: Element\nnot polling (timeout)
+Error --> OK: Element\n resume polling
+Unauthorized --> [*] : Element\nstopped
+Not_Initialized --> [*]: Element\nstopped
+Error --> [*]: Element\nstopped
+
+@enduml
 
 ## How to use
 
-The **General** page provides details about the operating system running on the monitored server. In the page *OS Updates* displays details about the recently installed patches on the server.
+The **General** page provides details about the operating system running on the monitored server. The page *OS Updates* displays details about the recently installed patches on the server.
 
 The **CPU** page offers information related to the processor, including usage metrics, as well as thread and handle counters. The *Logical Processors* page presents utilization metrics for each logical processor.
 
 The **Memory** page provides information about the physical and virtual memory allocation of the monitored server.
 
-The **Network** page contain metrics related to the network adapters available in the monitored server.
+The **Network** page contain information about the network adapters available in the monitored server. Additional metrics, such as bitrates, are available in the page **Details**.
 
-The **Process** page lists all the processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS).
+The **Process** page lists all the current processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). The connector will remove any that process that is no longer running in the monitored server.
+
+Under the **Process** page, there is 
 
 ### Task Manager
 
