@@ -1,5 +1,5 @@
 ---
-uid:microsoft_platform_technical_wmi_queries
+uid: microsoft_platform_technical_wmi_queries
 ---
 
 # Microsoft Platform - WMI Queries

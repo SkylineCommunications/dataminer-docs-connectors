@@ -83,28 +83,7 @@ Once the element is created, you can configure the credentials used to query the
 
 ### Connection States
 
-```plantuml
-@startuml ConnectionState
-!theme reddress-darkblue
-
-'This diagram describes the possible states from the parameter Connection States, available in the connector'
-
-skinparam LifeLineStrategy solid
-skinparam LIfeLineBorderThickness 10
-'skinparam LineType polyline
-
-[*] --> Not_Initialized : Element started
-Not_Initialized --> OK : Correct\ncredentials
-Not_Initialized --> Unauthorized: Incorrect\ncredentials
-Unauthorized -> OK: Correct\ncredentials
-OK --> [*]: Element\nstopped
-OK --> Error: Element\nnot polling (timeout)
-Error --> OK: Element\n resume polling
-Unauthorized --> [*] : Element\nstopped
-Not_Initialized --> [*]: Element\nstopped
-Error --> [*]: Element\nstopped
-
-@enduml
+![Connection States](../images/microsoft_platform_connection_state.png)
 
 ## How to use
 
@@ -116,7 +95,7 @@ The **Memory** page provides information about the physical and virtual memory a
 
 The **Network** page contain information about the network adapters available in the monitored server. Additional metrics, such as bitrates, are available in the page **Details**.
 
-The **Process** page lists all the current processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). The connector will remove any that process that is no longer running in the monitored server.
+The **Process** page lists all the current processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). The connector will remove any process from the table that is no longer running in the monitored server.
 
 Under the **Process** page, there is 
 
@@ -294,7 +273,7 @@ The username does not have enough permissions to query the server, specifically 
 
 - Access is denied with error code 0x80070005: See [DCOM configuration](#dcom-configuration)
 - Access is denied with error code 0x80041003: See [WMI configuration](#wmi-configuration)
-- If the above options do not solve the issue, try to open Windows Explorer on the monitored server, using the username that you configured on the [Settings](#security) page. If it is not possible to connect to the server because you have to log on with the account *guest*, execute the following steps:
+- If the above options do not solve the issue, try to open Windows Explorer on the monitored server, using the username that you configured on the [Settings](#initialization) page. If it is not possible to connect to the server because you have to log on with the account *guest*, execute the following steps:
 
   1. Go to **Control Panel** \> **Administrative Tools** \> **Local Security Policy**.
   1. Go to **Local Policies** \> **Security Options**.

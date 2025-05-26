@@ -1,5 +1,5 @@
 ---
-uid:microsoft_platform_technical_wmi_tools
+uid: microsoft_platform_technical_wmi_tools
 ---
 
 # Microsoft Platform - WMI Tools
