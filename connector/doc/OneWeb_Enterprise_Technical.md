@@ -35,7 +35,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-When you have created the element, specify the Client ID and Client Secret provided by OneWeb. Once these credentials have been submitted, the connector will send a "Hello OneWeb" message to the OneWeb API. If authentication is successful, a confirmation will be displayed, and the connector will start a polling timer to begin regular data polling.
+When you have created the element, on the General page, specify the Client ID and Client Secret provided by OneWeb. Once these credentials have been submitted, the connector will send a "Hello OneWeb" message to the OneWeb API. If authentication is successful, a confirmation will be displayed, and the connector will start a polling timer to begin regular data polling.
 
 ## How to use
 
