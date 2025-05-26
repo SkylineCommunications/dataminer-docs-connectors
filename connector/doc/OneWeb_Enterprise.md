@@ -38,6 +38,13 @@ Track data usage in near real-time to stay in control of monthly allowances. Vis
 
 ![Usage Consumption Table](~/connector/images/UsageConsumption.png)
 
+## Use Case
+### Real-Time Monitoring and Troubleshooting for Remote Connectivity Sites
+A company with operations in remote or infrastructure-limited locations relies on satellite connectivity to ensure stable internet access and continuous monitoring of field sites. Each location is equipped with user terminals connected to the OneWeb LEO satellite network to support essential communication and operational needs. The company faces challenges in maintaining real-time visibility into terminal status, performance, and data usage, making it difficult to respond quickly to issues or manage bandwidth efficiently. 
+
+By implementing the OneWeb Enterprise connector, the organization integrates OneWeb telemetry into its centralized monitoring system. This provides instant insights into terminal availability, signal strength, and firmware versions, along with detailed performance metrics such as throughput and link reliability. Real-time usage reporting helps prevent overages by aligning consumption with service plans. Historical performance data supports faster troubleshooting and helps identify recurring issues or external factors impacting service. With a clear link between products, user terminals, and site locations, the company gains full operational traceability. As a result, teams can act quickly, ensure service reliability, and maintain uninterrupted connectivity—even in the most challenging environments.
+
+
 ## Technical Reference
 
 > [!NOTE]
