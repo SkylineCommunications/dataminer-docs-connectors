@@ -1,13 +1,14 @@
 ---
-uid: Generic_Matrix_Virtualization_Technical
+uid: Connector_help_Generic_Matrix_Virtualization_Technical
 ---
 
-# Generic Matrix Virtualization - Technical Documentation
-The Generic Matrix Virtualization connector allows you to control and abstract multiple routing matrices into a single virtual matrix, supporting various advanced features like concatenation, tie lines and external loop management (Prcessing units).
+# Generic Matrix Virtualization
 
 ## About
 
-Depending on the version the connector uses element connections or subscriptions to retrieve data from the source matrices.
+The Generic Matrix Virtualization connector allows you to control and abstract multiple routing matrices into a single virtual matrix, supporting various advanced features like concatenation, tie lines, and external loop management (processing units).
+
+Depending on the version, the connector uses element connections or subscriptions to retrieve data from the source matrices.
 
 The connector also provides different possibilities for alarm monitoring and trending
 
@@ -19,16 +20,9 @@ The connector also provides different possibilities for alarm monitoring and tre
 | 4.0.0.x [Obsolete] | - Label management<br>- Tie line management<br>- Actions | -          | -                                                                   |
 | 4.0.1.x [SLC Main] | Supports subscription as an update channel.              | 4.0.0.42   | Some configuration is required to enable subscriptions (see below). |
 
+## Range 3.0.0.x
 
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 3.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 4.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 4.0.1.x   | No                  | Yes                     | -                     | -                       |
-
-## About range 3.0.0.x
+### About Range 3.0.0.x
 
 This range allows you to select one of the following functionalities: **Concatenation**, **TIE-Lines**, and **Dual Stream.**
 
@@ -60,15 +54,15 @@ On the **Settings** page, the **Input Data** table shows an overview of all the 
 
 CSV files are used to define which child inputs/outputs represent which inputs/outputs in the matrix virtualization.
 
-## Configuration of range 3.0.0.x
+### Configuration of Range 3.0.0.x
 
-### Connections
+#### Connections
 
-#### Virtual connection
+##### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Configuration of CSV files for Concatenation method
+#### Configuration of CSV Files for Concatenation Method
 
 For the **Concatenation** method, an **Input and Output CSV file** must be created.
 
@@ -84,7 +78,7 @@ The above can be visualized as follows:
 
 ![Concat.png](~/connector/images/Generic_Matrix_Virtualization_Concat.png)
 
-### Configuration of CSV files for Tie-Lines method
+#### Configuration of CSV Files for Tie-Lines Method
 
 For the **Tie-Lines** method, an **Input,** **Output,** **and** **Tie-Line CSV** file must be created.
 
@@ -104,7 +98,7 @@ The above can be visualized as follows:
 
 ![TIELines.png](~/connector/images/Generic_Matrix_Virtualization_TIELines.png)
 
-### Configuration of CSV files for Dual Stream method
+#### Configuration of CSV Files for Dual Stream Method
 
 For the **Dual Stream** method, an **Input** **and** **Output CSV** file must be created.
 
@@ -120,7 +114,7 @@ The above can be visualized as follows:
 
 ![DualStream.png](~/connector/images/Generic_Matrix_Virtualization_DualStream.png)
 
-### Configuration of element connections
+#### Configuration of element connections
 
 To configure the elements connections:
 
@@ -132,13 +126,13 @@ To configure the elements connections:
 1. Select the **Method** at the top of the page.
 1. On the **Inputs/Outputs** page, check if all inputs and outputs of the virtual matrix are now available. If they are not, check in the element logging to see what went wrong with the CSV import.
 
-## How to use range 3.0.0.x
+### How to Use Range 3.0.0.x
 
-### General
+#### General
 
 On the **Settings** page, the **Input Data** table shows the status strings of the connected matrices, with the **Format Status String (Input Data)**. It is also possible to export **CSV files** from the connector to save the current configuration. This export will always include the optional columns in the CSV files.
 
-### Input/Outputs
+#### Input/Outputs
 
 This page displays the **inputs**/**outputs** table of the virtual matrix. The **XPos**, **YPos**, **Page**, **Sequence**, and the five **External Custom** columns can be used in Visual Overview or for other purposes, but they are not used on the data pages.
 
@@ -163,11 +157,11 @@ Note:
 - Refreshing the tables may disrupt the DCF connections.
 - The Refresh from CSV button is only visible for users with Administrator (level 3) [access level](https://aka.dataminer.services/User_rights).
 
-### Concatenation
+#### Concatenation
 
 On this page, you can fill in the location of the CSV files in case you want to select the Concatenation method.
 
-### TIE-Lines
+#### TIE-Lines
 
 On this page, you can fill in the location of the CSV files in case you want to select the Tie-Lines method.
 
@@ -175,48 +169,50 @@ The **TIE-Lines** table shows how many tie lines there are and how many are avai
 
 The **TIE-Line Reservation Time** parameter allows you to configure the number of seconds a tie line must be reserved before the connector can assume a set failed and the tie line should be available for other sets again.
 
-### Dual Stream
+#### Dual Stream
 
 On this page, you can fill in the location of the CSV files in case you want to select the Dual Stream method.
 
 You can also change the **suffixes** for the Dual Stream labels here.
 
-## DataMiner Connectivity Framework - range 3.0.0.x
+### DataMiner Connectivity Framework - Range 3.0.0.x
 
 The **3.0.0.x** connector range of the **Generic Matrix Virtualization** connector supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
-### Interfaces
+#### Interfaces
 
-#### Dynamic Interfaces
+##### Dynamic Interfaces
 
 Virtual dynamic interfaces:
 
 - Input interfaces: For every entry in the **Inputs** table, an interface of type **in** is created.
 - Output interfaces: For every entry in the **Outputs** table, an interface of the type **out** is created.
 
-### Connections
+#### Connections
 
-#### Internal Connections
+##### Internal Connections
 
 - For every connection that is made between **Inputs** and **Outputs**, an internal connection is created.
 
-## About range 4.0.0.x
+## Range 4.0.0.x
+
+### About Range 4.0.0.x
 
 This range features label management, tie line management, and several actions.
 
-## Configuration of range 4.0.0.x
+### Configuration of Range 4.0.0.x
 
-### Connections
+#### Connections
 
-#### Virtual connection
+##### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
+#### Initialization
 
-#### 1. Preparing the source matrices
+##### 1. Preparing the Source Matrices
 
 Note: The source matrices need to have the **latest Matrix Helper classes and parameters** to be compatible.
 
@@ -226,28 +222,28 @@ Optionally, you can already apply filtering on the inputs and outputs using the 
 
 If you want to use subscriptions (which is the highest-performing update method), set the **Status Update Mode** to ***Subscriptions***, and configure the columns **Element Name, Matrix Buffer PID, Max. Inputs, Max. Outputs, Source Table Pid, Destination Table Pid**, and **Park Input ID**.
 
-#### 2. Creating tie lines
+##### 2. Creating Tie Lines
 
 On the **Tie Lines Configuration** page, right-click the table to add rows via the context menu.
 
 You can instruct the **Generic Matrix Virtualization connector** to not use certain tie lines, even though they are shown. In order to do this, you need to change the **Operational State** to ***Disabled***. When you do so, that particular tie line cannot be used in a valid path. This means that a disconnect, an initial connect, or a switch that uses this tie line will be prevented. In that case, you will receive a pop-up message warning that the tie line cannot be set. You can only set the Operational State to *Disabled* for a tie line that is not in use.
 
-#### 3. Connecting the source matrices
+##### 3. Connecting the Source Matrices
 
 This can be configured either using element connections or subscriptions.
 
 - **Element Connections**: In the [Element Connections](https://aka.dataminer.services/virtual-elements-used-for-element-connections) module in DataMiner, you will find an entry for the Generic Matrix Virtualization for each row you have added. Link each source matrix (**Status String** parameter) with a row.
 - **Subscriptions**: When you edit one of the subscription parameters, the parameter **Source Matrix Subscription State** will report ***Not Synced***. When you have configured all subscription parameters in the Source matrix data table (Element Name, Matrix Buffer PID, Max. Inputs, Max. Outputs, Source Table Pid, Destination Table Pid, and Park Input ID) you can click the **Sync** button on the page. This will cause the element to attempt to subscribe on the source matrices. After this configuration, data will be sent to the Generic Matrix Virtualization element, and tables will be filled in with inputs and outputs.
 
-## How to use range 4.0.0.x - 4.0.1.x
+### How to Use Range 4.0.0.x - 4.0.1.x
 
-### Virtual Matrix
+#### Virtual Matrix
 
 This is the main page of the connector, containing the **Virtual Inputs** and **Virtual Outputs** tables. These represent all the available inputs and outputs of the source matrices. Tie line inputs/outputs are not shown here, as these are handled in the background.
 
 Per virtual output, you can enable the **Strict Mode** option. This mode ensures that only the tie lines of which the label is specified in the column **Required Tie Line Labels** are used in the path created between a virtual input and a virtual output. An example can be found in the section "Tie Lines Configuration" below.
 
-### Custom Take
+#### Custom Take
 
 This is a subpage of the Virtual Matrix page. On this page, you can use the **SetCrosspointsJSON** parameter to perform multiple crosspoint sets on the matrix via JSON code, using the following format:
 
@@ -268,17 +264,17 @@ This is a subpage of the Virtual Matrix page. On this page, you can use the **Se
 
 The default behavior of the virtual matrix is to only send the crosspoint changes to its underlying devices. This behavior can be overruled by the **Forced Mode**. In this mode, the virtual matrix will send all the crosspoints, irrespective of whether they are already established.
 
-### Tie Lines
+#### Tie Lines
 
 This page contains the **Tie Lines - Usage** table. This represents the tie lines between the source matrices. It shows statistics on how many tie lines there are and how many are available. A tie line is considered in use when it is part of a valid path, i.e. a virtual input is connected to a virtual output using the tie line. The Tie Lines - Usage table does not take into account whether a tie line has its Operational State set to Disabled (see "Creating tie lines" in the range 4.0.0.x configuration section above).
 
 The **Tie Lines - Connections** table shows a line for each tie line, the GUID of the connected input, and whether it is in use or not (Usage State). A tie line is considered in use when it is part of a valid path, i.e. a virtual input is connected to a virtual output using the tie line. The Tie Lines - Connections table does not take into account whether a tie line has its Operational State set to Disabled (see "Creating tie lines" in the range 4.0.0.x configuration section above).
 
-### SRM Configuration
+#### SRM Configuration
 
 This page is only relevant if the connector is deployed as the SRM vMatrix solution. In that case, it contains data used by the solution.
 
-### Matrix Configuration
+#### Matrix Configuration
 
 If you use an [information template](https://aka.dataminer.services/Information_templates), you can rename the Label columns. This allows for more flexibility. In the **Label Management** table, you can change the names it should have. By default, this will be taken from the information template. With this table, Router Control can also show the correct descriptions. In addition, the table allows additional restrictions on the Labels columns. You can limit the character size and determine whether duplication is allowed.
 
@@ -299,7 +295,7 @@ Example: `Script:TestScript||TriggerId=[TRIGGER];VirtualId=[ID];CellValue=[VALUE
 
 With the **Virtual Input - Default Action** and **Virtual Output - Default Action**, you can select an action that will be executed automatically when a new input or output is added.
 
-#### Backup Configuration
+##### Backup Configuration
 
 The backup will write a file to the folder `C:\Skyline DataMiner\Documents\Generic Matrix Virtualization`. The file name depends on what you have configured.
 
@@ -308,7 +304,7 @@ The backup action will save the vMatrix mode, tieline priority order, TieLine ma
 > [!IMPORTANT]
 > Restoring the backup will not fully restore the element. The purpose of this backup feature is to create a template to easily create a new element.
 
-### Tie Lines Configuration
+#### Tie Lines Configuration
 
 The **Tie Lines** table can be configured to contain the tie lines. For more information, refer to the section "Configuration of range 4.0.0.x" \> "Initialization".
 
@@ -381,31 +377,31 @@ Note:
 - The column **Required Tie Line Labels** is not mandatory (see Site A Output 11).
 - The priority of a tie line is not mandatory. In this case, value 1 will be assigned to TIELINE 3 (lowest value).
 
-### External Loops Configuration
+#### External Loops Configuration
 
 The **External Loops** table can be configured to hold external loops, which can for example contain a processing unit. The external loops are read out and maintained by DCF. "Check DCF" means that the connector will access DCF and check if changes can be detected. It will display how many external loops are affected with the **Number of Affected External Loops** parameter. If an external loop is added or removed, this counts as 1, but if an external loop is updated, this counts as 2.
 
-### Manager Configuration
+#### Manager Configuration
 
 From version 4.0.0.33 onwards, the Generic Matrix Virtualization connector implements a publish-subscribe feature for tie line updates through InterApp communication. In this context, managers/subscribers can subscribe to the vMatrix connector for state and tie line updates. All subscriber managers are displayed in the **Subscribers** table. When a tie line is updated, the vMatrix will check this table and push a message to all registered subscribers.
 
 **Important:** The current version does not detect removal of tie lines, and consequently such events are not pushed to the subscribers.
 
-### Source Matrices
+#### Source Matrices
 
 To start using the connector, you need to configure the **Source Matrix Data** table. For more information, refer to the section "Configuration of range 4.0.0.x" \> "Initialization".
 
 It is possible to only use some of the inputs/outputs. With **Input Filtering** and **Output Filtering**, you can select individual inputs/outputs or ranges. The format is *A;C-E;G;K-W*.
 
-### Source Inputs
+#### Source Inputs
 
 When the configuration is done, all inputs will be listed in the **Source Inputs** table. The **Type** column indicates if a particular input is used as a tie line node.
 
-### Source Outputs
+#### Source Outputs
 
 When the configuration is done, all outputs will be listed in the **Source Outputs** table. The **Type** column indicates if a particular output is used as a tie line node.
 
-### Heartbeats
+#### Heartbeats
 
 The connector can monitor the subscriptions by subscribing to a heartbeat PID on a source matrix. You can configure this in the source matrix table. Note that this parameter expects UTC time.
 
@@ -426,4 +422,5 @@ This is normal DataMiner behavior.
 - Ensure proper format of Status Strings to avoid initialization errors.
 - Tie line configuration significantly affects path selection and reliability.
 
-> For functional use cases, refer to the main marketing documentation.
+> [!TIP]
+> For functional use cases, refer to the [main page for this connector](xref:Connector_help_Generic_Matrix_Virtualization).

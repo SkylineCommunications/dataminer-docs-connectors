@@ -1,5 +1,5 @@
 ---
-uid: Generic_Matrix_Virtualization
+uid: Connector_help_Generic_Matrix_Virtualization
 ---
 
 # Generic Matrix Virtualization
@@ -37,11 +37,6 @@ The Generic Matrix Virtualization connector makes it possible to visualize multi
 **Benefit**: Increased reliability and smarter routing decisions in complex deployments.
 
 ## Technical Reference
-
-### Prerequisites
-
-- **DataMiner version 8.5.4 or higher** is required for compatibility.
-
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Generic_Matrix_Virtualization_Technical).
