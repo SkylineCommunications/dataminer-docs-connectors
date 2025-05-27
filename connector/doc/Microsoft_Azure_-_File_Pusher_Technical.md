@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
+uid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical
 ---
 
 # Microsoft Azure - File Pusher
