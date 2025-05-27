@@ -4163,6 +4163,9 @@
     topicUid: Connector_help_Generic_Matrix
   - name: Generic Matrix Virtualization
     topicUid: Connector_help_Generic_Matrix_Virtualization
+    items:
+    - name: Generic Matrix Virtualization_Technical
+      topicUid: Connector_help_Generic_Matrix_Virtualization_Technical
   - name: Generic MIB-II
     topicUid: Connector_help_Generic_MIB-II
   - name: Generic MIB II
