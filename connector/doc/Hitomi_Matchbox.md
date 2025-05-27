@@ -17,4 +17,4 @@ The **Hitomi MatchBox** connector provides seamless integration between the Hito
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Hitomi_Matchbox_Technical_Page).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Hitomi_Matchbox_Technical).

@@ -4707,7 +4707,7 @@
     topicUid: Connector_help_Hitomi_Matchbox
     items:
       - name: Hitomi Matchbox Technical
-        topicUid: Connector_help_Hitomi_Matchbox_Technical_Page
+        topicUid: Connector_help_Hitomi_Matchbox_Technical
 - name: Honeywell
   items:
   - name: Honeywell Notifier NF3000
@@ -5864,7 +5864,7 @@
     topicUid: Connector_help_Microsoft_Azure_-_File_Pusher
     items:
       - name: Microsoft Azure - File Pusher Technical
-        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
+        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical
   - name: Microsoft Azure - Kubernetes Services
     topicUid: Connector_help_Microsoft_Azure_-_Kubernetes_Services
   - name: Microsoft Azure - Load Balancers
