@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Hitomi_Matchbox_Technical_Page
+uid: Connector_help_Hitomi_Matchbox_Technical
 ---
 
 # Hitomi Matchbox
