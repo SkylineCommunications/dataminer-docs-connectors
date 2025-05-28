@@ -4707,7 +4707,7 @@
     topicUid: Connector_help_Hitomi_Matchbox
     items:
       - name: Hitomi Matchbox Technical
-        topicUid: Connector_help_Hitomi_Matchbox_Technical_Page
+        topicUid: Connector_help_Hitomi_Matchbox_Technical
 - name: Honeywell
   items:
   - name: Honeywell Notifier NF3000
@@ -5864,7 +5864,7 @@
     topicUid: Connector_help_Microsoft_Azure_-_File_Pusher
     items:
       - name: Microsoft Azure - File Pusher Technical
-        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
+        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical
   - name: Microsoft Azure - Kubernetes Services
     topicUid: Connector_help_Microsoft_Azure_-_Kubernetes_Services
   - name: Microsoft Azure - Load Balancers
@@ -6998,6 +6998,11 @@
   items:
   - name: OneWeb Antenna Controller
     topicUid: Connector_help_OneWeb_Antenna_Controller
+  - name: OneWeb Enterprise
+    topicUid: Connector_help_OneWeb_Enterprise
+    items:
+    - name: OneWeb Enterprise Technical
+      topicUid: Connector_help_OneWeb_Enterprise_Technical
   - name: OneWeb Incident Manager
     topicUid: Connector_help_OneWeb_Incident_Manager
   - name: OneWeb PCN Collector
@@ -9238,6 +9243,11 @@
     topicUid: Connector_help_Technetix_UCC-321
   - name: Technetix UCC-321 - USC-122
     topicUid: Connector_help_Technetix_UCC-321_-_USC-122
+  - name: Technetix NCC-2222
+    topicUid: Connector_help_Technetix_NCC-2222
+    items:
+    - name: Technetix NCC-2222 Technical
+      topicUid: Connector_help_Technetix_NCC-2222_Technical
 - name: Tecsys
   items:
   - name: Tecsys TS 9090
