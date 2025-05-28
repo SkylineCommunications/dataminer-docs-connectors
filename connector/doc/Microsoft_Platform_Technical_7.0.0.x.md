@@ -94,123 +94,49 @@ Once the element is created, you can configure the credentials used to query the
 
 The **General** page provides details about the operating system running on the monitored server. The page *OS Updates* displays details about the recently installed patches on the server.
 
-The **CPU** page offers information related to the processor, including usage metrics, as well as thread and handle counters. The *Logical Processors* page presents utilization metrics for each logical processor.
+The **CPU** page offers information related to the processor, including usage metrics, as well as thread and handle counters. The **Logical Processors** page presents utilization metrics for each logical processor.
 
 The **Memory** page provides information about the physical and virtual memory allocation of the monitored server.
 
-The **Network** page contain information about the network adapters available in the monitored server. Additional metrics, such as rates, are available in the page **Details**.
+The **Disk** page offers information about the local storage in the monitored server. The page **Disk Details** provides more insightful information such as rates, read, write and transfer times.
+
+>[!TIP]
+> A sign that could indicate that the disk is busy is the *Latency*, i.e. how long it takes before it can process something. This metric can be tracked with the parameter **Avg. Transfer Rate**.
+
+The **Network** page contains information about the network adapters available in the monitored server. Additional metrics, such as rates, are available in the page **Details**.
+
+> [!NOTE]
+> By default, the column **Name** will contain the name of the adapter as retrieved by [WMI](https://learn.microsoft.com/en-us/previous-versions/aa394293(v=vs.85)). However, in some cases, the connector will not be able to retrieve the name.
 
 The **Process** page lists all the current processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). The connector will remove any process from the table that is no longer running in the monitored server.
 
 Under the **Process** page, there are two pages:
 
-- **Process Details**: Provides counter and rates for the current processes run by the monitored server.
+- **Process Details**: Provides counters and rates for the current processes run by the monitored server.
 
-- **Process Overview**: This page display the table **Processes**. This table allows:
+- **Process Overview**: This page display the table **Processes**. This table allows you:
 
-  - Monitor process that are no longer running on the monitored server. This feature is useful to monitor if a process stopped running. By default, this table is empty. To add a new or remove a row, you can right click in the table to display the context menu. From the context menu you can add or remove rows from this table.
+  - Monitor process that are no longer running on the monitored server. This is useful when you would like to monitor if a process stopped running. By default, this table is empty. You can right click in the table to display the context menu and add or remove rows. If the process is not running in the monitored server, the column *Count* will be set to 0.
 
-  - Monitor multiple instances from the same process. For example, if you would like to monitor all the instances from the Chrome browser, you can add the process *chrome.exe*.
-
-The **Services** page provides information about the services available in the monitored server. The **Service Validation** page allows you to track
-
-### Task Manager
-
-The Task Manager page lists all the processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). Each entry in the **Task Manager** table represents a process active on the monitored server.
-
-By default, the connector will poll all the running processes on the monitored server. You can modify this behavior by setting the parameter **Poll Task Manager** to *Off*.
-
-Also by default, the connector will remove any process that is no longer running from the Task Manager table. You can modify this behavior by setting the parameter **Auto Clear Task Manager** to *Off*
+  - Monitor multiple instances from the same process. For example, if you would like to monitor all the instances from the *Microsoft Edge* browser, you can add the process *msedge.exe*.
 
 > [!TIP]
-> If you wish to monitor when a process is no longer running, set the parameter **Auto Clear Task Manager** to *Off*. By enabling monitoring on the parameter **Row Status**, you can then generate an alarm when a process is no longer running.
-
-The button **Clear Task Manager** allows you to clear the Task Manager table manually. This button is useful only if the parameter **Auto Clear Task Manager** is set to *Off*
-
-To set the current values in the table as the normal reference for alarms, click the button **Normalize Alarms**. You can then view these references via the **Nominal Values** button at the bottom of the page.
-
-> [!IMPORTANT]
-> The Normalize Alarms feature is deprecated. Instead, we recommend [configuring dynamic alarm thresholds](https://aka.dataminer.services/configuring-dynamic-alarm-thresholds).
-
-It is also possible to add a filter to calculate the sum of the memory usage of all processes that match this filter. To do so:
-
-1. Click the button **Cumulated Memory** at the bottom of the page.
-
-1. Enter a filter in the box **Add Filter Param**. An asterisk (\*) wildcard is supported in this filter. You can also use an exclamation mark (\!\) to return the opposite cumulated memory of the filter parameter. (See examples below.)
-
-   |Examples|Description|
-   |--------|-----------|
-   |SLDatam\*|Searches for processes that begin with "SLDatam"|
-   |\*Dataminer\*|Searches for processes that contain the word "DataMiner"|
-   |miner:0*|Searches for processes that end with "miner:0"|
-   |SLDataminer:0|Searches for the process "SLDataminer:0"|
-   |!SLDatam*|Searches for processes that do not begin with "SLDatam"|
-   |!\*Dataminer*|Searches for processes that do not contain the word "DataMiner"|
-   |!miner:0*|Searches for processes that do not end with "miner:0"|
-   |!SLDataminer:0|Searches for processes that are not equal to "SLDataminer:0"|
-
-If necessary, add more filters, or delete filters using the **Delete** button next to the filtered parameter.
-
-#### Task Manager Measurement
-
-Clicking the button **Measurement Config** will open the **Task Measurement Config** page. This page allows you to customize the processes listed in the **Task Manager** table. The following parameters are available for this:
-
-- The parameter **Task Manager Default Measurement State** will enable/disable the measurement of new processes.
-- The parameter **Task Manager Auto Refresh Measurement Table** allows you to automatically refresh the Task Manager Measurement Config table.
-- The parameter **Task Manager Auto Clear Measurement Table** allows you to automatically remove processes that are no longer running on the server.
-
-In addition, the buttons **Disable All**, **Enable All**, **Clear**, and **Refresh** allow you to manually perform the actions covered by the parameters listed above.
-
-To disable or enable the monitoring of a specific process in the Task Manager table (i.e. remove or add the process from/to the Task Manager table), proceed as follows:
-
-1. Locate the process to be removed in the **Task Manager Measurement Config** table.
-1. In the column **Task Polling**, set the value to *Disable* or *Enable* accordingly.
-
->[!NOTE]
-> By default, the **Task Manager Measurement Config** table will list the same processes as the **Task Manager** table, and the column **Task Polling** will be set to *Not Initialized*.
-
-### Network Interface
-
-This page displays the **Network Adapter** table. This table monitors the network adapters available in the server.
+>
+> - The process to be added does not need to be previously running in the operating system. Make sure that you use the exact process name (including the extension).
+> - You can also add an existing process to the table **Processes** by right-clicking in a process in the table **Process Instances**, and select the option *Validate process*.
 
 > [!NOTE]
-> The bandwidth of an adapter can be very high (*e.g. 10 GB/s*). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if *Total Speed \< 0.005 \* Bandwidth*.
+> Currently wildcards are not supported.
 
-By default, the column **Adapter Description** will contain the name of the adapter as retrieved by [WMI](https://learn.microsoft.com/en-us/previous-versions/aa394293(v=vs.85)). However, in some cases, the connector will not be able to retrieve the name. If this is the case, it is possible to customize this name of the adapter.
+The **Services** page provides information about the services available in the monitored server. The **Service Validation** page allows you to track if services are still available in the monitored server. By default, this table is empty.You can right click in the table to display the context menu and add or remove rows.
 
-> [!IMPORTANT]
-> Once the column **Adapter Description** is set manually, the connector will not overrule this setting. Updating the name could cause metrics related to this network adapter to not be retrieved. If you set a network adapter to a description that is already used by another adapter, the description of the other adapter will be set to an empty string.
+> [!TIP]
+> You can also add an existing service to the table **Service Validation** by right-clicking in a process in the table **Services**, and select the option *Validate service*. You could also add multiple services.
 
-On the **Network Adapter Measurement** page, you can disable processes to remove them from the **Network Adapter** table.
+The **Software** page displays the list of installed applications on the monitored server.
 
-- The parameter **Network Adapter Default Measurement State** allows you to enable/disable the measurement of new adapters.
+## Notes
 
-- The **Clear** button removes all deleted processes from the **Network Adapter Measurement** and **Network Adapter** table. This is by default followed by a refresh.
+- The list of WMI queries implemented in the connector can be found in [Microsoft Platform - WMI Queries](xref:microsoft_platform_technical_wmi_queries)
 
-- The **Refresh** button can be used to manually refresh the list of network adapters and the additional information.
-
-You can also entirely disable the polling of the network adapters with the toggle button **Poll Network Adapters**.
-
-Once an adapter is disconnected and not found by the connector, its status will be set to *Disconnected*. You can choose to either remove such adapters automatically (using the button **Auto Clear Disconnected Adapters**) or manually delete them using the parameter **Manually Clear Disconnected Adapters**.
-
->[!NOTE]
-> The parameter **Manually Clear Disconnected Adapters** will only list disconnected adapters.
-
-### Disk Info
-
-This page provides information about local storage devices on a server running Windows.
-
->[!TIP]
-> A sign that could indicate that the disk is busy is the *Latency*, i.e. how long it takes before it can process something. This metric can be tracked with the parameter **Avg Disk sec/Transfer Rate**.
-
-### Software Info
-
-This page contains the **Software Info Table**, which displays a list of all installed programs.
-**Note: USERNAME and PASSWORD have to be set! (Under Performance \> Security Settings).**
-
-Above the table, it is possible to select the polling method. (Alternative methods were introduced after problems were encountered with the used WMI Query.)
-
-- *No Polling*: Nothing will be retrieved, and the table will remain empty.
-- *Win32_Product*: WMI Query used to retrieve a list of all installed programs. We strongly advise **not to use this method**, as this can perform a Windows Installer "reconfiguration" on every MSI package as it is performing the query.
-- *Win32reg_AddRemoveProgram*: WMI Query used to retrieve a list of all installed programs if Microsoft CSSM software is installed. This is a better alternative to the Win32_Product method.
-- *Registry Keys*: **Recommended method.** This method will use WMI to read the registry keys to display a list of all installed programs in the system.
+- In case the element is not able to poll the monitored server, please follow the [Troubleshooting guide](xref:microsoft_platform_technical_troubleshooting)

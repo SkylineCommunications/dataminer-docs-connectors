@@ -19,9 +19,9 @@ The username does not have enough permissions to query the server, specifically 
 
 **Resolution**
 
-- Access is denied with error code 0x80070005: See [DCOM configuration](#dcom-configuration)
-- Access is denied with error code 0x80041003: See [WMI configuration](#wmi-configuration)
-- If the above options do not solve the issue, try to open Windows Explorer on the monitored server, using the username that you configured on the [Settings](#security) page. If it is not possible to connect to the server because you have to log on with the account *guest*, execute the following steps:
+- Access is denied with error code 0x80070005: See [DCOM configuration](xref:Connector_help_Microsoft_Platform_Technical#dcom-configuration)
+- Access is denied with error code 0x80041003: See [WMI configuration](xref:Connector_help_Microsoft_Platform_Technical#wmi-configuration)
+- If the above options do not solve the issue, try to open Windows Explorer on the monitored server, using the username that you configured on the [Settings](xref:Connector_help_Microsoft_Platform_Technical#security) page. If it is not possible to connect to the server because you have to log on with the account *guest*, execute the following steps:
 
   1. Go to **Control Panel** \> **Administrative Tools** \> **Local Security Policy**.
   1. Go to **Local Policies** \> **Security Options**.
