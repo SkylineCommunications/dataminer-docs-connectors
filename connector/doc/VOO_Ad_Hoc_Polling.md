@@ -62,9 +62,9 @@ Contains a treeview with all the CMTS collectors and MTA's.
 
 This page provides a table containing all the CMTS collectors that must be polled by this connector. All CMTS collector elements on the DMS are automatically added, but it's possible to manually add entries with the context menu.
 
-CMTS US Channels Table
+### CMTS US Channels Table
 
-Table containing all upstream channels on the CMTS. This table is used to link SSH information with SNMP.
+Table containing all upstream channels on the CMTS. This table is used to link SSH information with SNMP. This page is hidden by default. Its visibility can be toggled in the Configuration page.
 
 ### MTA Page
 
@@ -78,9 +78,9 @@ This page contains a table with upstream channels, and a table with downstream c
 
 Holds all configuration parameters used by this element.
 
-### System Overview page
+### Thread Pool Info page
 
-Displays information about the threadpools used to poll the devices.
+Displays information about the thread pools used to poll the devices.
 
 ## Notes
 
