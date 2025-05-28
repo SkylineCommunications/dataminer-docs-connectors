@@ -6,6 +6,9 @@ uid: microsoft_platform_technical_wmi_queries
 
 In this page you will find the list of queries and properties implemented by the **Microsoft Platform** connector.
 
+> [!NOTE]
+> The list below is valid for driver range 7.0.0.x
+
 ## Computer System
 
 - Namespace: root\cimv2
@@ -66,7 +69,7 @@ In this page you will find the list of queries and properties implemented by the
 ## Operating System
 
 - Namespace: root\cimv2
-- ClassName: Win32_OperatingSystes
+- ClassName: Win32_OperatingSystem
 - Documentation: [Win32_OperatingSystem class](https://learn.microsoft.com/en-us/windows/win32/cimwin32prov/win32-operatingsystem)
 
 ### Win32_OperatingSystem Properties
