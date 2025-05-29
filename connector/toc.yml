@@ -7660,6 +7660,11 @@
     topicUid: Connector_help_Rohde_Schwarz_NSU_-_Transmitter
   - name: Rohde Schwarz NV8600
     topicUid: Connector_help_Rohde_Schwarz_NV8600
+  - name: Rohde Schawrz Nx8000
+    topicUid: Connector_help_Rohde_Schwarz_Nx8000
+    items:
+      - name: Rohde Schawrz Nx8000 Technical
+        topicUid: Connector_help_Rohde_Schwarz_Nx8000_Technical
   - name: Rohde Schwarz OSP 120
     topicUid: Connector_help_Rohde_Schwarz_OSP_120
   - name: Rohde Schwarz Prismon
