@@ -2191,10 +2191,10 @@
   - name: CISCO ASR Manager
     topicUid: Connector_help_CISCO_ASR_Manager
   - name: CISCO ATA192
-    topicUID: Connector_help_Cisco_ATA192
+    topicUID: Connector_help_CISCO_ATA192
     items:
-    - name: Connector help Cisco ATA192 Technical
-      topicUid: Connector_help_Cisco_ATA192_Technical
+    - name: CISCO ATA192 Technical
+      topicUid: Connector_help_CISCO_ATA192_Technical
   - name: CISCO AS Series Media Processor
     topicUid: Connector_help_CISCO_AS_Series_Media_Processor
   - name: CISCO Catalyst SD-WAN
