@@ -2985,8 +2985,10 @@
     topicUid: Connector_help_Elber_RK1000_-_CO02
   - name: Elber RK610
     topicUid: Connector_help_Elber_RK610
-  - name: Elber RK610 - RFSW-04
-    topicUid: Connector_help_Elber_RK610_-_RFSW-04
+  - name: Elber RK610 - Elber RK610 RFSW04
+    topicUid: Connector_help_Elber_RK610_-_Elber_RK610_RFSW04
+  - name: Elber RK610 - Elber RK610 RFSW_CU_06
+    topicUid: Connector_help_Elber_RK610_-_Elber_RK610_RFSW_CU_06
 - name: Elecard
   items:
   - name: Elecard Boro Monitoring
