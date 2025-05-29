@@ -2267,6 +2267,11 @@
     topicUid: Connector_help_Cisco_Netflow
   - name: CISCO Nexus
     topicUid: Connector_help_CISCO_Nexus
+  - name: Cisco NSO
+    topicUid: Connector_help_Cisco_NSO
+    items:
+    - name: Cisco NSO Technical
+      topicUid: Connector_help_Cisco_NSO_Technical
   - name: Cisco Panorama CL
     topicUid: Connector_help_Cisco_Panorama_CL
   - name: Cisco Panorama SL
@@ -3738,6 +3743,9 @@
     topicUid: Connector_help_Evertz_MVP_OV_-_Channel
   - name: Evertz NATX
     topicUid: Connector_help_Evertz_NATX
+    items:
+    - name: Evertz NATX Technical
+      topicUid: Connector_help_Evertz_NATX_Technical
   - name: Evertz NATX-NAT-32
     topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
@@ -3814,6 +3822,11 @@
   items:
   - name: F5 BIG-IP LTM
     topicUid: Connector_help_F5_BIG-IP_LTM
+  - name: F5 OS Appliance
+    topicUid: Connector_help_F5_OS_Appliance
+    items:
+    - name: F5 OS Appliance Technical
+      topicUid: Connector_help_F5_OS_Appliance_Technical
 - name: Factum
   items:
   - name: Factum DABMUX
@@ -4368,6 +4381,11 @@
     topicUid: Connector_help_Google_Cloud_Compute_Engine
   - name: Google Cloud DNS
     topicUid: Connector_help_Google_Cloud_DNS
+  - name: Google Maps Platform
+    topicUid: Connector_help_Google_Maps_Platform
+    items:
+    - name: Google Maps Platform Technical
+      topicUid: Connector_help_Google_Maps_Platform_Technical
 - name: Gracenote
   items:
   - name: Gracenote OnAPI Channel Schedule Monitor
@@ -4691,7 +4709,7 @@
     topicUid: Connector_help_Hitomi_Matchbox
     items:
       - name: Hitomi Matchbox Technical
-        topicUid: Connector_help_Hitomi_Matchbox_Technical_Page
+        topicUid: Connector_help_Hitomi_Matchbox_Technical
 - name: Honeywell
   items:
   - name: Honeywell Notifier NF3000
@@ -4913,10 +4931,10 @@
     topicUid: Connector_help_Imagine_Communications_Platinum_Router
   - name: Imagine Communications Platinum Router VX CQ Router
     topicUid: Connector_help_Imagine_Communications_Platinum_VX_CQ_Router
-  - name: Imagine Communications Platinum Router VX 4RU
+  - name: Imagine Communications Platinum VX 4RU
     topicUid: Connector_help_Imagine_Communications_Platinum_VX_4RU
     items:
-    - name: Imagine Communications Platinum Router VX 4RU Technical
+    - name: Imagine Communications Platinum VX 4RU Technical
       topicUid: Connector_help_Imagine_Communications_Platinum_VX_4RU_Technical
   - name: Imagine Communications SelenioFlex
     topicUid: Connector_help_Imagine_Communications_SelenioFlex
@@ -5848,7 +5866,7 @@
     topicUid: Connector_help_Microsoft_Azure_-_File_Pusher
     items:
       - name: Microsoft Azure - File Pusher Technical
-        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
+        topicUid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical
   - name: Microsoft Azure - Kubernetes Services
     topicUid: Connector_help_Microsoft_Azure_-_Kubernetes_Services
   - name: Microsoft Azure - Load Balancers
@@ -6683,6 +6701,9 @@
     topicUid: Connector_help_Newtec_AZ860_Deconcentrator
   - name: Newtec Dialog Platform VSAT
     topicUid: Connector_help_Newtec_Dialog_Platform_VSAT
+    items:
+    - name: Newtec Dialog Platform VSAT Technical
+      topicUid: Connector_help_Newtec_Dialog_Platform_VSAT_Technical
   - name: Newtec Dialog Infrastructure
     topicUid: Connector_help_Newtec_Dialog_Infrastructure
   - name: Newtec Dialog Time Series Database
@@ -6970,6 +6991,11 @@
   items:
   - name: OneWeb Antenna Controller
     topicUid: Connector_help_OneWeb_Antenna_Controller
+  - name: OneWeb Enterprise
+    topicUid: Connector_help_OneWeb_Enterprise
+    items:
+    - name: OneWeb Enterprise Technical
+      topicUid: Connector_help_OneWeb_Enterprise_Technical
   - name: OneWeb Incident Manager
     topicUid: Connector_help_OneWeb_Incident_Manager
   - name: OneWeb PCN Collector
@@ -7397,6 +7423,11 @@
     items:
     - name: Ramiaudio AUF600 Technical
       topicUid: Connector_help_Ramiaudio_AUF600_Technical
+  - name: Ramiaudio AUF800
+    topicUid: Connector_help_Ramiaudio_AUF800
+    items:
+    - name: Ramiaudio AUF800 Technical
+      topicUid: Connector_help_Ramiaudio_AUF800_Technical
   - name: Ramiaudio Switch CSS404
     topicUid: Connector_help_Ramiaudio_Switch_CSS404
     items:
@@ -7734,6 +7765,13 @@
     topicUid: Connector_help_Ross_Video_NEWT-HDMI-RX
   - name: Ross Video Newt-IPR-3G-4S
     topicUid: Connector_help_Ross_Video_Newt-IPR-3G-4S
+- name: Rosslare
+  items:
+  - name: Rosslare Security AxTraxNG
+    topicUid: Connector_help_Rosslare_Security_AxTraxNG
+    items:
+    - name: Rosslare Security AxTraxNG Technical
+      topicUid: Connector_help_Rosslare_Security_AxTraxNG_Technical
 - name: Route Mobile
   items:
   - name: Route Mobile SmsPlus
@@ -9198,6 +9236,11 @@
     topicUid: Connector_help_Technetix_UCC-321
   - name: Technetix UCC-321 - USC-122
     topicUid: Connector_help_Technetix_UCC-321_-_USC-122
+  - name: Technetix NCC-2222
+    topicUid: Connector_help_Technetix_NCC-2222
+    items:
+    - name: Technetix NCC-2222 Technical
+      topicUid: Connector_help_Technetix_NCC-2222_Technical
 - name: Tecsys
   items:
   - name: Tecsys TS 9090

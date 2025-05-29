@@ -2,7 +2,7 @@
 uid: Connector_help_International_Datacasting_ENC7000
 ---
 
-# Connector marketing documentation template
+# International Datacasting ENC7000
 
 ## About
 

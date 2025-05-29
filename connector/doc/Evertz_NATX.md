@@ -4,68 +4,49 @@ uid: Connector_help_Evertz_NATX
 
 # Evertz NATX
 
-The Evertz NATX switch is a network-based broadcast distribution system that is used for routing video and audio.
-
 ## About
 
-### Version Info
+With this connector, DataMiner can interface with the Evertz NATX, a high-performance IP network address translation router used in broadcast and media environments. The connector provides real-time monitoring, control, and diagnostics of NATX devices, ensuring seamless IP address translation and routing within complex media networks.
 
-| Range              | Features         | Based on | System Impact |
-|--------------------|------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
+## Key Features
 
-### Product Info
+- **Real-time monitoring**: Continuously tracks the operational status and performance metrics of the NATX device.
 
-| Range   | Supported Firmware             |
-|---------|--------------------------------|
-| 1.0.0.x | exe-guest-v1.4-natx-pln-r32789 |
+- **IP translation table access**: Provides visibility on active NAT sessions and translation mappings.
 
-### System Info
+- **Alarm management**: Detects and reports faults or threshold breaches, enabling proactive maintenance.
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+- **Configuration control**: Allows remote configuration of NAT rules and routing parameters directly from DataMiner.
 
-## Configuration
+- **Scalability support**: Supports monitoring of multiple NATX units across distributed environments.
 
-### Connections
+## Use Cases
 
-This connector uses two Simple Network Management Protocol (SNMP) connections. To facilitate network redundancy, the device's two IP interfaces should be filled in during element creation.
+### Use Case 1
 
-#### SNMP Connection - Main
+**Challenge**: Managing IP address translation in a dynamic broadcast environment with multiple live streams.
 
-SNMP CONNECTION:
+**Solution**: This connector provides real-time visibility on NAT mappings and session states.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *161*).
+**Benefit**: Ensures uninterrupted stream routing and simplifies troubleshooting of IP conflicts.
 
-SNMP Settings:
+### Use Case 2
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+**Challenge**: Detecting and responding to NAT device failures or performance degradation.
 
-#### SNMP Connection - Backup
+**Solution**: Integrated alarm management and performance metrics alert operators to issues.
 
-SNMP CONNECTION:
+**Benefit**: Reduces downtime and improves network reliability through proactive maintenance.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *161*).
+### Use Case 3
 
-SNMP Settings:
+**Challenge**: Configuring and updating NAT rules across multiple devices manually.
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+**Solution**: Centralized control via DataMiner allows remote configuration of NATX units.
 
-### Web Interface
+**Benefit**: Saves time, reduces human error, and ensures consistent network policies.
 
-The web interface is only accessible when the client machine has network access to the product.
+## Technical Reference
 
-## How to Use
-
-The connector displays only read-only information. The following data pages are available:
-
-- **General**: Displays general information of the connector and its status.
-- **Faults**: Displays alarm status parameters raised on a device level.
-- **Ports**: Displays the port status as well as various alarm statuses associated with the ports of the device.
-- **PTP**: Displays the status of the PTP, ports, and its masters.
-- **Web interface**: Web GUI of the Evertz NATX device.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_NATX_Technical).
