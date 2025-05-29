@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_2WCOM_DAB-4c_Technical
+uid: Connector_help_Ateme_Pilot_Manager_Technical
 ---
 
 # Ateme Pilot Manager

@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Ateme_Pilot_Media
+uid: Connector_help_Ateme_Pilot_Manager
 ---
 
 # Ateme Pilot Manager
