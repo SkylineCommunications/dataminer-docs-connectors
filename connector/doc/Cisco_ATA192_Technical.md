@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Cisco_ATA192_Technical
+uid: Connector_help_CISCO_ATA192_Technical
 ---
 
 
