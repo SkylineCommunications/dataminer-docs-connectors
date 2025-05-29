@@ -889,6 +889,11 @@
     topicUid: Connector_help_Ateme_Kyrion_CM3101
   - name: Ateme Kyrion DR5000
     topicUid: Connector_help_Ateme_Kyrion_DR5000
+  - name: Ateme Pilot Manager
+    topicUid: Connector_help_Ateme_Pilot_Manager
+    items:
+      - name: Ateme Pilot Manager Technical
+        topicUid: Connector_help_Ateme_Pilot_Manager_Technical
   - name: Ateme Pilot Media
     topicUid: Connector_help_Ateme_Pilot_Media
   - name: Ateme SR1000
