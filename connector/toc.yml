@@ -10590,6 +10590,11 @@
     topicUid: Connector_help_ZTE_ZXDUPA-BCUA
   - name: ZTE ZXONE 9700
     topicUid: Connector_help_ZTE_ZXONE_9700
+  - name: ZTE ZXR10
+    topicUid: Connector_help_ZTE_ZXR10
+    items:
+    - name: ZTE ZXR10 Technical
+      topicUid: Connector_help_ZTE_ZXR10_Technical
   - name: ZTE ZXR10 2900E Series
     topicUid: Connector_help_ZTE_ZXR10_2900E_Series
   - name: ZTE ZXR10 8900
