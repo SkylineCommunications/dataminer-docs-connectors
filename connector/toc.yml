@@ -2874,6 +2874,13 @@
     topicUid: Connector_help_Emerson_Liebert_Himod
   - name: Emerson Liebert PDX-PCW
     topicUid: Connector_help_Emerson_Liebert_PDX-PCW
+- name: Enatel
+  items:
+  - name: Enatel SM3X NT2
+    topicUid: Connector_help_Enatel_SM3X_NT2
+    items:
+    - name: Enatel SM3X NT2
+      topicUid: Connector_help_Enatel_SM3X_NT2_Technical
 - name: EndRun Technologies
   items:
   - name: Meridian II Precision TimeBase
