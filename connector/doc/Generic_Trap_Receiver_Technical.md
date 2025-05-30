@@ -56,4 +56,4 @@ This page allows you to set up sending and receiving of heartbeat traps. These t
 
 ## Notes
 
-When working with **SNMPv3** traps, please ensure that the *trapPort* attribute in the *SNMPv3* tag of the DataMiner.xml file is correctly set. This value should match the port number where SNMPv3 traps are expected to arrive. 
+If you are using this connector with **SNMPv3** traps, make sure that the `trapPort` attribute in the `SNMPv3` tag of the *DataMiner.xml* file is correctly configured. This value should match the port number where SNMPv3 traps are expected to arrive.
