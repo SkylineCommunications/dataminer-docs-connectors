@@ -81,6 +81,7 @@ From version **2.0.0.17** onwards, sets can be made to cards using the Oxtel pro
 | [Miranda IControl General - IRG-3401](xref:Connector_help_Miranda_IControl_General_-_IRG-3401) | ASI gateway |
 | [Miranda IControl General - HCP-1801](xref:Connector_help_Miranda_IControl_HCP-1801) | HCP-1801 SDI Video and Embedded Audio Control Probe (available from 3.0.1.7 onwards) |
 | [Miranda IControl General - HDA-1851](xref:Connector_help_Miranda_IControl_General_-_HDA-1851) | HDA 1851 Card |
+| [Miranda IControl General - HRS-1801](xref:Connector_help_Miranda_IControl_General_-_HRS-1801) | HRS 1801 Card |
 
 ## Configuration
 
