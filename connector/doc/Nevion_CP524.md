@@ -14,10 +14,10 @@ This connector displays information that is polled from the device with **SNMP**
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                    | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|--------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.1.x              | Added soft switches and updated DCF accordingly. Updated all display keys, fixed some issues and cleaned protocol. | Yes                 | Yes                     |
-| \[SLC Main\] 2.0.0.x | Initial version using HTTP communication Added outgoing services and PIDs                                          | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.1.x | Added soft switches and updated DCF accordingly. Updated all display keys, fixed some issues and cleaned connector. | Yes | Yes |
+| \[SLC Main\] 2.0.0.x | Initial version using HTTP communication.<br>Added outgoing services and PIDs. | Yes | Yes |
 
 ### Product Info
 
@@ -92,7 +92,7 @@ There are also two page buttons, which display the **Services** page and the **P
 
 This page contains one table, which provides information about the outputs.
 
-Below the table, two page buttons provide access to the **MIP** **Settings** page and the **OFDM** **Settings** page.
+Below the table, two page buttons provide access to the **MIP Settings** page and the **OFDM Settings** page.
 
 ### Configuration Page
 
@@ -102,7 +102,7 @@ There are two buttons available, which can be used to **upload** or **download**
 
 ### Service Components Page
 
-This page displays two tables, the **Service** **Components Table** and the **Physical** **Ports Table**.
+This page displays two tables, the **Service Components Table** and the **Physical** **Ports Table**.
 
 ### IP Transport Page
 
@@ -136,7 +136,8 @@ There is also a page button that displays the **Alarm/Event Table**.
 
 This page displays the interface information in the **Interfaces** and **Unit VLAN Table**.
 
-> **Note**: You can add and delete VLANs on an interface via the context menu of the **Unit VLAN Table**.
+> [!NOTE]
+> You can add and delete VLANs on an interface via the context menu of the **Unit VLAN Table**.
 
 ### Alarms Page
 
@@ -158,7 +159,8 @@ There are also four page buttons, two of which display the **Services** page and
 
 The **IP Inputs** page displays IP input information in the **TS IP Input Table, TS IP Input Rx Table, TS IP Input Rx FEC** and **TS IP Input Rx Ping Table**.
 
-> **Note**: You can add and delete IP inputs via the context menu of the **TS IP Input Table**.
+> [!NOTE]
+> You can add and delete IP inputs via the context menu of the **TS IP Input Table**.
 
 On the **Input Status** page, you can find associated alarms for all inputs in two separate tables.
 
@@ -170,7 +172,8 @@ Below the table, two page buttons provide access to the **MIP Settings** page an
 
 Similar to the IP Inputs page, the **IP Outputs** page displays the **TS IP Output Tx Table**, **TS IP Outputs FEC, TS IP Outputs Common FEC** and **IP Tx Ping Table**, which all provide information on the IP outputs.
 
-> **Note**: You can add and delete interfaces for an output via the context menu of the **TS IP Output Tx Table**.
+> [!NOTE]
+> You can add and delete interfaces for an output via the context menu of the **TS IP Output Tx Table**.
 
 On the **Outputs** **Status** page, you can find associated alarms for all the outputs in two separate tables.
 
@@ -206,7 +209,8 @@ There is also a page button that displays the **Alarm/Event Table**.
 
 This page displays the interface information in the **Interfaces** and **Unit VLAN Table**.
 
-> **Note**: You can add and delete VLANs on an interface via the context menu of the **Unit VLAN Table**.
+> [!NOTE]
+> You can add and delete VLANs on an interface via the context menu of the **Unit VLAN Table**.
 
 ### Alarms Page
 
@@ -228,7 +232,8 @@ There are also four page buttons, two of which display the **Services** page and
 
 The **IP Inputs** page displays IP input information in the **TS IP Input Table, TS IP Input Rx Table, TS IP Input Rx FEC** and **TS IP Input Rx Ping Table**.
 
-> **Note**: You can add and delete IP inputs via the context menu of the **TS IP Input Table**.
+> [!NOTE]
+> You can add and delete IP inputs via the context menu of the **TS IP Input Table**.
 
 On the **Input Status** page, you can find associated alarms for all inputs in two separate tables.
 
@@ -246,7 +251,8 @@ Outgoing services and PIDs can be found on the **Outgoing Services** and **Outgo
 
 Similar to the IP Inputs page, the **IP Outputs** page displays the **TS IP Output Tx Table**, **TS IP Outputs FEC, TS IP Outputs Common FEC** and **IP Tx Ping Table**, which all provide information on the IP outputs.
 
-> **Note**: You can add and delete interfaces for an output via the context menu of the **TS IP Output Tx Table**.
+> [!NOTE]
+> You can add and delete interfaces for an output via the context menu of the **TS IP Output Tx Table**.
 
 On the **Outputs Status** page, you can find associated alarms for all the outputs in two separate tables.
 
@@ -262,7 +268,8 @@ There are two buttons available, which can be used to **Upload** or **Download**
 
 This page displays the **Virtual Switches** available in the device. On the **Manage Switches** page, you can **Add/Delete ASI or IP inputs** to the switches.
 
-> **Note**: You can add and delete input switches via the context menu of the **Input Switches Table**.
+> [!NOTE]
+> You can add and delete input switches via the context menu of the **Input Switches Table**.
 
 ### Web Interface Page
 
@@ -272,7 +279,7 @@ Note that the client machine has to be able to access the device, as otherwise i
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the **Nevion CP524** protocol supports the usage of DCF and can only be used on a DMA with **8.5.14** as the minimum version.
+The **1.0.1.x** connector range of the **Nevion CP524** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

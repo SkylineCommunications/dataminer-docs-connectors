@@ -114,7 +114,7 @@ This page shows the web interface of the device. Note that the client machine ha
 
 ## DataMiner Connectivity Framework
 
-The **1**.**0.1.x** connector range of the **NTT Electronics MVE5000** protocol supports the usage of DCF and can only be used on a DMA with **8.5.7.2** as the minimum version.
+The **1**.**0.1.x** connector range of the **NTT Electronics MVE5000** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

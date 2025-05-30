@@ -68,7 +68,7 @@ This page displays the web interface of the amplifier. Note that the client mach
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the protocol CPI VZC-6967 supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the protocol CPI VZC-6967 supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

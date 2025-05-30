@@ -110,7 +110,7 @@ This page allows you to access the original web interface of the device. However
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the **Snell Wilcox KudosPro** protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The **1.0.0.x** connector range of the **Snell Wilcox KudosPro** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
