@@ -6,19 +6,19 @@ uid: Connector_help_Newtec_Dialog_Inventory
 
 ## About
 
-The **Newtec Dialog Inventory** connector provides comprehensive visibility into the hardware and virtual infrastructure of the Newtec Dialog VSAT platform. It communicates with Network Management Systems (NMS) of types **4IF**, **XIF** and **NIF** via **DataMiner Web Services** to collect, organize, and display configuration items (CIs) such as modulators, demodulators, and other network infrastructure components. This connector integrates with ServiceNow to provide enhanced capabilities in monitoring and provisioning.
+The **Newtec Dialog Inventory** connector provides comprehensive visibility on the hardware and virtual infrastructure of the Newtec Dialog VSAT platform. It communicates with Network Management Systems (NMS) of types **4IF**, **XIF**, and **NIF** via **DataMiner Web Services** to collect, organize, and display configuration items (CIs) such as modulators, demodulators, and other network infrastructure components. This connector integrates with ServiceNow to provide enhanced capabilities in monitoring and provisioning.
 
-Leveraging an intuitive **TreeControl** interface, the connector reflects the hierarchical structure of these CIs, enabling seamless monitoring and inventory tracking.
+Leveraging an intuitive **tree control interface**, the connector reflects the hierarchical structure of these CIs, enabling seamless monitoring and inventory tracking.
 
 ## Key Features
 
-- **NMS Integration**: Connects to different Dialog NMS types (4IF, XIF, NIF) for centralized data collection.
+- **NMS integration**: Connects to different Dialog NMS types (4IF, XIF, NIF) for centralized data collection.
 
-- **CI Inventory with TreeControl**: Presents collected CIs in a structured, expandable tree layout for enhanced visibility.
+- **CI inventory with tree control**: Presents collected CIs in a structured, expandable tree layout for enhanced visibility.
 
-- **Real-Time Polling**: Polls system components via DataMiner Web Services for updated inventory and status.
+- **Real-time polling**: Polls system components via DataMiner Web Services for updated inventory and status.
 
-- **Data Aggregation Across Layers**: Unifies data from hub enclosures, segments, virtual machines, and more.
+- **Data aggregation across layers**: Unifies data from hub enclosures, segments, virtual machines, and more.
 
 ## Use Cases
 
@@ -26,15 +26,15 @@ Leveraging an intuitive **TreeControl** interface, the connector reflects the hi
 
 **Challenge**: Managing dispersed NMS systems over the cloud without needing direct access into NMS.
 
-**Solution**: The connector unifies communication with 1IF, 4IF, and XIF systems, enabling a centralized view.
+**Solution**: This connector unifies communication with 1IF, 4IF, and XIF systems, enabling a centralized view.
 
-**Benefit**: Simplified management and faster response to infrastructure changes or issues.
+**Benefit**: Simplified management and faster responses to infrastructure changes or issues.
 
 ### Use Case 2: CI Visualization and Auditing
 
 **Challenge**: Difficulty understanding the hierarchy and relationships between system components.
 
-**Solution**: The TreeControl view organizes all CIs in a clear, browsable tree format.
+**Solution**: The tree control view organizes all CIs in a clear, browsable tree format.
 
 **Benefit**: Improved situational awareness and simplified auditing of platform assets.
 
@@ -56,4 +56,3 @@ Leveraging an intuitive **TreeControl** interface, the connector reflects the hi
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Newtec_Dialog_Inventory_Technical).
-

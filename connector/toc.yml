@@ -6714,7 +6714,7 @@
     - name: Newtec Dialog Inventory - MCM7500 Modulator
       topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCM7500_Modulator
     - name: Newtec Dialog Inventory - MCD6000 Demodulator
-      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCM6000_Demodulator
+      topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD6000_Demodulator
     - name: Newtec Dialog Inventory - MCD HRC Demodulator
       topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD_HRC_Demodulator
     - name: Newtec Dialog Inventory - MCD MRC Demodulator
