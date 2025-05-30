@@ -2,7 +2,7 @@
 uid: Connector_help_ZTE_ZXR10
 ---
 
-# ZTE ZXR10 Connector
+# ZTE ZXR10
 
 ## About
 
@@ -12,17 +12,17 @@ This connector uses SNMP to monitor the operational status and environmental con
 
 ## Key Features
 
-- **Interface Monitoring**: Displays the operational state of network interfaces across supported ZXR10 series switches.
-- **Fan Status**: Monitors the current status of all fans to ensure adequate system cooling.
-- **Power Supply Monitoring**: Provides real-time information about power modules installed in the system.
-- **Temperature Tracking**: Reports temperature data from multiple modules for thermal monitoring.
-- **Polling Control**: Allows selective activation or deactivation of polling on specific data tables.
+- **Interface monitoring**: Displays the operational state of network interfaces across supported ZXR10 series switches.
+- **Fan status**: Monitors the current status of all fans to ensure adequate system cooling.
+- **Power supply monitoring**: Provides real-time information about power modules installed in the system.
+- **Temperature tracking**: Reports temperature data from multiple modules for thermal monitoring.
+- **Polling control**: Allows selective activation or deactivation of polling on specific data tables.
 
 ## Use Cases
 
 ### Use Case 1
 
-**Challenge**: Need for real-time visibility into network switch performance and health in a distributed data center environment.
+**Challenge**: Real-time visibility on network switch performance and health in a distributed data center environment.
 
 **Solution**: Use the ZXR10 connector to monitor interface status, temperature, fan activity, and power conditions.
 
@@ -38,7 +38,7 @@ This connector uses SNMP to monitor the operational status and environmental con
 
 ### Use Case 3
 
-**Challenge**: Need to adjust monitoring behavior based on specific operational requirements.
+**Challenge**: Adjusting monitoring behavior based on specific operational requirements.
 
 **Solution**: Use the Polling Control functionality to disable or enable certain tables according to system demands.
 
@@ -46,12 +46,5 @@ This connector uses SNMP to monitor the operational status and environmental con
 
 ## Technical Reference
 
-### Prerequisites
-
-- Any **ZXR10 switch** running supported firmware (e.g., V5.00.00R6P99).
-- **SNMP access** with appropriate community strings (default: `public` for GET, `private` for SET).
-- **Polling IP address and port** of the device.
-- **Bus address** of the device, if required.
-
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_ZTE_ZXR10_Technical).
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_ZTE_ZXR10_Technical).
