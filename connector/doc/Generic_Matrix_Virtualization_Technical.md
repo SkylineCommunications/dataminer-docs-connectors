@@ -10,15 +10,15 @@ The Generic Matrix Virtualization connector allows you to control and abstract m
 
 Depending on the version, the connector uses element connections or subscriptions to retrieve data from the source matrices.
 
-The connector also provides different possibilities for alarm monitoring and trending
+The connector also provides different possibilities for alarm monitoring and trending.
 
 ### Version Info
 
-| Range              | Key Features                                             | Based on   | System Impact                                                       |
-|--------------------|----------------------------------------------------------|------------|---------------------------------------------------------------------|
-| 3.0.0.x            | Concatenation, tie lines, and dual stream.               | -          | -                                                                   |
-| 4.0.0.x [Obsolete] | - Label management<br>- Tie line management<br>- Actions | -          | -                                                                   |
-| 4.0.1.x [SLC Main] | Supports subscription as an update channel.              | 4.0.0.42   | Some configuration is required to enable subscriptions (see below). |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 3.0.0.x | Concatenation, tie lines, and dual stream. | - | - |
+| 4.0.0.x [Obsolete] | - Label management<br>- Tie line management<br>- Actions | - | - |
+| 4.0.1.x [SLC Main] | Supports subscription as an update channel. | 4.0.0.42 | Some configuration is required to enable subscriptions (see below). |
 
 ## Range 3.0.0.x
 
@@ -66,13 +66,17 @@ This connector uses a virtual connection and does not require any input during e
 
 For the **Concatenation** method, an **Input and Output CSV file** must be created.
 
-The **Input CSV** file must have the following columns: '*Input;Label;Matrix;Child Input;Matrix;Child Input;...*. It can optionally have the following columns at the end: '*External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence*'.
+The **Input CSV** file must have the following columns: `Input;Label;Matrix;Child Input;Matrix;Child Input;...`. It can optionally have the following columns at the end: `External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence`. For example:
 
-**Example** of an Input CSV file: Input;label;matrix;Child Input;matrix;Child Input 1;M1 IN1;MTX1;1;; 2;M1 IN2;MTX1;2;; 3;M1 IN3;MTX1;3;; 4;M1 IN4;MTX1;4;; 5;M1 IN5;MTX1;5;; 6;X1 IN1;MTX1;6;MTX2;1 7;X1 IN2;MTX1;7;MTX2;2 8;X1 IN3;MTX1;8;MTX2;3 9;X1 IN4;MTX1;9;MTX2;4 10;X1 IN5;MTX1;10;MTX2;5 11;M2 IN1;;;MTX2;6 12;M2 IN2;;;MTX2;7 13;M2 IN3;;;MTX2;8 14;M2 IN4;;;MTX2;9 15;M2 IN5;;;MTX2;10
+```txt
+Input;label;matrix;Child Input;matrix;Child Input 1;M1 IN1;MTX1;1;; 2;M1 IN2;MTX1;2;; 3;M1 IN3;MTX1;3;; 4;M1 IN4;MTX1;4;; 5;M1 IN5;MTX1;5;; 6;X1 IN1;MTX1;6;MTX2;1 7;X1 IN2;MTX1;7;MTX2;2 8;X1 IN3;MTX1;8;MTX2;3 9;X1 IN4;MTX1;9;MTX2;4 10;X1 IN5;MTX1;10;MTX2;5 11;M2 IN1;;;MTX2;6 12;M2 IN2;;;MTX2;7 13;M2 IN3;;;MTX2;8 14;M2 IN4;;;MTX2;9 15;M2 IN5;;;MTX2;10
+```
 
-The **Output CSV** file must have the following columns: '*Output;Label;Matrix;Child Output*'. It can optionally have the following columns at the end: '*External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence*'.
+The **Output CSV** file must have the following columns: `Output;Label;Matrix;Child Output`. It can optionally have the following columns at the end: `External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence`. For example:
 
-**Example** of an Output CSV file: Output;label;Matrix;Child Output 1;M1 OUT 1;MTX1;1 2;M1 OUT 2;MTX1;2 3;M1 OUT 3;MTX1;3 4;M1 OUT 4;MTX1;4 5;M1 OUT 5;MTX1;5 6;M1 OUT 6;MTX1;6 7;M1 OUT 7;MTX1;7 8;M1 OUT 8;MTX1;8 9;M1 OUT 9;MTX1;9 10;M1 OUT 10;MTX1;10 11;M2 OUT 1;MTX2;1 12;M2 OUT 2;MTX2;2 13;M2 OUT 3;MTX2;3 14;M2 OUT 4;MTX2;4 15;M2 OUT 5;MTX2;5 16;M2 OUT 6;MTX2;6 17;M2 OUT 7;MTX2;7 18;M2 OUT 8;MTX2;8 19;M2 OUT 9;MTX2;9 20;M2 OUT 10;MTX2;10
+```txt
+Output;label;Matrix;Child Output 1;M1 OUT 1;MTX1;1 2;M1 OUT 2;MTX1;2 3;M1 OUT 3;MTX1;3 4;M1 OUT 4;MTX1;4 5;M1 OUT 5;MTX1;5 6;M1 OUT 6;MTX1;6 7;M1 OUT 7;MTX1;7 8;M1 OUT 8;MTX1;8 9;M1 OUT 9;MTX1;9 10;M1 OUT 10;MTX1;10 11;M2 OUT 1;MTX2;1 12;M2 OUT 2;MTX2;2 13;M2 OUT 3;MTX2;3 14;M2 OUT 4;MTX2;4 15;M2 OUT 5;MTX2;5 16;M2 OUT 6;MTX2;6 17;M2 OUT 7;MTX2;7 18;M2 OUT 8;MTX2;8 19;M2 OUT 9;MTX2;9 20;M2 OUT 10;MTX2;10
+```
 
 The above can be visualized as follows:
 
@@ -80,19 +84,25 @@ The above can be visualized as follows:
 
 #### Configuration of CSV Files for Tie-Lines Method
 
-For the **Tie-Lines** method, an **Input,** **Output,** **and** **Tie-Line CSV** file must be created.
+For the **Tie-Lines** method, an **Input, Output, and Tie-Line CSV** file must be created.
 
-The **Input CSV** file must have the same format as for the **Concatenation** method, as explained above.
+The **Input CSV** file must have the same format as for the **Concatenation** method, as explained above. For example:
 
-**Example** of an Input CSV file: Input;label;matrix;Child Input;matrix;Child Input 1;M1 IN1;MTX1;1;; 2;M1 IN2;MTX1;2;; 3;M1 IN3;MTX1;3;; 4;M1 IN4;MTX1;4;; 5;M1 IN5;MTX1;5;; 6;M1 IN1;MTX1;6;; 7;X1 IN1;MTX1;7;MTX2;3 8;X1 IN2;MTX1;8;MTX2;4 9;M2 IN1;;;MTX2;5 10;M2 IN2;;;MTX2;6 11;M2 IN1;;;MTX2;7 12;M2 IN2;;;MTX2;8 13;M2 IN3;;;MTX2;9 14;M2 IN4;;;MTX2;10
+```txt
+Input;label;matrix;Child Input;matrix;Child Input 1;M1 IN1;MTX1;1;; 2;M1 IN2;MTX1;2;; 3;M1 IN3;MTX1;3;; 4;M1 IN4;MTX1;4;; 5;M1 IN5;MTX1;5;; 6;M1 IN1;MTX1;6;; 7;X1 IN1;MTX1;7;MTX2;3 8;X1 IN2;MTX1;8;MTX2;4 9;M2 IN1;;;MTX2;5 10;M2 IN2;;;MTX2;6 11;M2 IN1;;;MTX2;7 12;M2 IN2;;;MTX2;8 13;M2 IN3;;;MTX2;9 14;M2 IN4;;;MTX2;10
+```
 
-The **Output CSV** file must have the same format as for the **Concatenation** method, as explained above.
+The **Output CSV** file must have the same format as for the **Concatenation** method, as explained above. For example:
 
-**Example** of an Output CSV file: Output;label;Matrix;Child Output 1;M1 OUT 1;MTX1;1 2;M1 OUT 2;MTX1;2 3;M1 OUT 3;MTX1;3 4;M1 OUT 4;MTX1;4 5;M1 OUT 5;MTX1;5 6;M1 OUT 6;MTX1;6 7;M1 OUT 7;MTX1;7 8;M1 OUT 8;MTX1;8 9;M2 OUT 1;MTX2;3 10;M2 OUT 2;MTX2;4 11;M2 OUT 3;MTX2;5 12;M2 OUT 4;MTX2;6 13;M2 OUT 5;MTX2;7 14;M2 OUT 6;MTX2;8 15;M2 OUT 7;MTX2;9 16;M2 OUT 8;MTX2;10
+```txt
+Output;label;Matrix;Child Output 1;M1 OUT 1;MTX1;1 2;M1 OUT 2;MTX1;2 3;M1 OUT 3;MTX1;3 4;M1 OUT 4;MTX1;4 5;M1 OUT 5;MTX1;5 6;M1 OUT 6;MTX1;6 7;M1 OUT 7;MTX1;7 8;M1 OUT 8;MTX1;8 9;M2 OUT 1;MTX2;3 10;M2 OUT 2;MTX2;4 11;M2 OUT 3;MTX2;5 12;M2 OUT 4;MTX2;6 13;M2 OUT 5;MTX2;7 14;M2 OUT 6;MTX2;8 15;M2 OUT 7;MTX2;9 16;M2 OUT 8;MTX2;10
+```
 
-The **Tie-Line CSV** file must have the following columns: "*Tie-Line;Source (matrix);Source (output ID);Destination (Matrix);Destination (input ID)"*.
+The **Tie-Line CSV** file must have the following columns: `Tie-Line;Source (matrix);Source (output ID);Destination (Matrix);Destination (input ID)`. For example:
 
-**Example** of a Tie-Line CSV file: Tie-Line;Source (Matrix);Source (Output ID);Destination (Matrix);Destination (Input ID) 1;MTX1;9;MTX2;1 2;MTX1;10;MTX2;2 3;MTX2;1;MTX1;9 4;MTX2;2;MTX1;10
+```txt
+Tie-Line;Source (Matrix);Source (Output ID);Destination (Matrix);Destination (Input ID) 1;MTX1;9;MTX2;1 2;MTX1;10;MTX2;2 3;MTX2;1;MTX1;9 4;MTX2;2;MTX1;10
+```
 
 The above can be visualized as follows:
 
@@ -100,15 +110,19 @@ The above can be visualized as follows:
 
 #### Configuration of CSV Files for Dual Stream Method
 
-For the **Dual Stream** method, an **Input** **and** **Output CSV** file must be created.
+For the **Dual Stream** method, an **Input and Output CSV** file must be created.
 
-The **Input CSV** file must have the following columns: "*Input;Label;Matrix;Child Input;Matrix;Child Input;...;Dual Stream*". It can optionally have the following columns at the end: "*External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence*".
+The **Input CSV** file must have the following columns: `Input;Label;Matrix;Child Input;Matrix;Child Input;...;Dual Stream`. It can optionally have the following columns at the end: `External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence`. For example:
 
-**Example** of an Input CSV file: Input;label;matrix;Child Input;matrix;Child Input;Dual Stream 1;IN1 M1 LR;MTX1;1;;;MTX1:2 2;IN2 M1 LR;MTX1;3;;;MTX1:4 3;IN3 M1 L X R;MTX1;5;;;MTX1:6\|MTX2:1 4;IN4 X LR;MTX1;7;MTX2;2;MTX1:8\|MTX2:3 5;IN5 X LR;MTX1;9;MTX2;4;MTX1:10\|MTX2:5 6;IN6 M2 LR;;;MTX2;6;MTX2:7 7;IN7 M2 LR;;;MTX2;8;MTX2:9 8;IN8 M2 L;;;MTX2;10;
+```txt
+Input;label;matrix;Child Input;matrix;Child Input;Dual Stream 1;IN1 M1 LR;MTX1;1;;;MTX1:2 2;IN2 M1 LR;MTX1;3;;;MTX1:4 3;IN3 M1 L X R;MTX1;5;;;MTX1:6\|MTX2:1 4;IN4 X LR;MTX1;7;MTX2;2;MTX1:8\|MTX2:3 5;IN5 X LR;MTX1;9;MTX2;4;MTX1:10\|MTX2:5 6;IN6 M2 LR;;;MTX2;6;MTX2:7 7;IN7 M2 LR;;;MTX2;8;MTX2:9 8;IN8 M2 L;;;MTX2;10;
+```
 
-The **Output CSV** file has to have the following columns: '"*Output;Label;Matrix;Child Output;Dual Stream*". It can optionally have the following columns at the end: "*External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence*".
+The **Output CSV** file has to have the following columns: `Output;Label;Matrix;Child Output;Dual Stream`. It can optionally have the following columns at the end: `External Custom 1;External Custom 2;External Custom 3;External Custom 4;X;Y;Page;Sequence`. For example:
 
-**Example** of an Output CSV file: Output;label;Matrix;Child Output;Dual Stream 1; OUT1 M1 LR;MTX1;1;MTX1:2 2; OUT2 M1 LR;MTX1;3;MTX1:4 3; OUT3 M1 LR;MTX1;5;MTX1:6 4; OUT4 M1 LR;MTX1;7;MTX1:8 5; OUT5 M1 LR;MTX1;9;MTX1:10 6; OUT6 M2 LR;MTX2;1;MTX2:2 7; OUT7 M2 LR;MTX2;3;MTX2:4 8; OUT8 M2 LR;MTX2;5;MTX2:6 9; OUT9 M2 LR;MTX2;7;MTX2:8 10; OUT10 M2 LR;MTX2;9;MTX2:10
+```txt
+Output;label;Matrix;Child Output;Dual Stream 1; OUT1 M1 LR;MTX1;1;MTX1:2 2; OUT2 M1 LR;MTX1;3;MTX1:4 3; OUT3 M1 LR;MTX1;5;MTX1:6 4; OUT4 M1 LR;MTX1;7;MTX1:8 5; OUT5 M1 LR;MTX1;9;MTX1:10 6; OUT6 M2 LR;MTX2;1;MTX2:2 7; OUT7 M2 LR;MTX2;3;MTX2:4 8; OUT8 M2 LR;MTX2;5;MTX2:6 9; OUT9 M2 LR;MTX2;7;MTX2:8 10; OUT10 M2 LR;MTX2;9;MTX2:10
+```
 
 The above can be visualized as follows:
 
@@ -118,10 +132,10 @@ The above can be visualized as follows:
 
 To configure the elements connections:
 
-1. On the **Settings** page of the element, in the **Input** **Data** table, configure the matrices you want to include in the matrix virtualization. To do so, add or delete rows via the context menu until the table contains the matrices you want to include.
-1. In the Cube sidebar, go to Apps \> **Element Connections**.
+1. On the **Settings** page of the element, in the **Input Data** table, configure the matrices you want to include in the matrix virtualization. To do so, add or delete rows via the context menu until the table contains the matrices you want to include.
+1. In the Cube sidebar, go to Apps > **Element Connections**.
 1. In the Element Connections app, connect the **Status String (Input Data)** cells from the matrix virtualization with the correct **Status String** parameter of the child matrices. You can add rows by duplicating the Status String (Input Data) row.
-1. Check in the **Input** **Data** table on the **Settings** page of the element if the **Status String** is displayed. If it is not, close the Element Connections app and open it again to see if the element connection was established correctly.
+1. Check in the **Input Data** table on the **Settings** page of the element if the **Status String** is displayed. If it is not, close the Element Connections app and open it again to see if the element connection was established correctly.
 1. Go to the page of the method you want to use and specify the path and file name of the necessary CSV files, as detailed above.
 1. Select the **Method** at the top of the page.
 1. On the **Inputs/Outputs** page, check if all inputs and outputs of the virtual matrix are now available. If they are not, check in the element logging to see what went wrong with the CSV import.
@@ -177,7 +191,7 @@ You can also change the **suffixes** for the Dual Stream labels here.
 
 ### DataMiner Connectivity Framework - Range 3.0.0.x
 
-The **3.0.0.x** connector range of the **Generic Matrix Virtualization** connector supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **3.0.0.x** connector range of the **Generic Matrix Virtualization** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -216,7 +230,7 @@ This connector uses a virtual connection and does not require any input during e
 
 Note: The source matrices need to have the **latest Matrix Helper classes and parameters** to be compatible.
 
-On the **Source Matrices** page, right-click the table to add rows via the context menu. The table must contain a **row for each** **source matrix** you want to connect.
+On the **Source Matrices** page, right-click the table to add rows via the context menu. The table must contain a **row for each source matrix** you want to connect.
 
 Optionally, you can already apply filtering on the inputs and outputs using the **Input Filtering** and **Output Filtering** columns.
 
@@ -233,7 +247,7 @@ You can instruct the **Generic Matrix Virtualization connector** to not use cert
 This can be configured either using element connections or subscriptions.
 
 - **Element Connections**: In the [Element Connections](https://aka.dataminer.services/virtual-elements-used-for-element-connections) module in DataMiner, you will find an entry for the Generic Matrix Virtualization for each row you have added. Link each source matrix (**Status String** parameter) with a row.
-- **Subscriptions**: When you edit one of the subscription parameters, the parameter **Source Matrix Subscription State** will report ***Not Synced***. When you have configured all subscription parameters in the Source matrix data table (Element Name, Matrix Buffer PID, Max. Inputs, Max. Outputs, Source Table Pid, Destination Table Pid, and Park Input ID) you can click the **Sync** button on the page. This will cause the element to attempt to subscribe on the source matrices. After this configuration, data will be sent to the Generic Matrix Virtualization element, and tables will be filled in with inputs and outputs.
+- **Subscriptions**: When you edit one of the subscription parameters, the parameter **Source Matrix Subscription State** will report ***Not Synced***. When you have configured all subscription parameters in the Source matrix data table (Element Name, Matrix Buffer PID, Max. Inputs, Max. Outputs, Source Table PID, Destination Table PID, and Park Input ID) you can click the **Sync** button on the page. This will cause the element to attempt to subscribe to the source matrices. After this configuration, data will be sent to the Generic Matrix Virtualization element, and tables will be filled in with inputs and outputs.
 
 ### How to Use Range 4.0.0.x - 4.0.1.x
 
@@ -306,7 +320,7 @@ The backup action will save the vMatrix mode, tieline priority order, TieLine ma
 
 #### Tie Lines Configuration
 
-The **Tie Lines** table can be configured to contain the tie lines. For more information, refer to the section "Configuration of range 4.0.0.x" \> "Initialization".
+The **Tie Lines** table can be configured to contain the tie lines. For more information, refer to the section "Configuration of Range 4.0.0.x" \> "Initialization".
 
 DCF reads out and maintains the tie lines. "Check DCF" means that the connector will access DCF and check if changes can be detected. It will display how many tie lines are affected with the **Number of Affected Tie Lines** parameter. If a tie line is added or removed, this counts as 1, but if a tie line is updated, this counts as 2.
 
@@ -389,7 +403,7 @@ From version 4.0.0.33 onwards, the Generic Matrix Virtualization connector imple
 
 #### Source Matrices
 
-To start using the connector, you need to configure the **Source Matrix Data** table. For more information, refer to the section "Configuration of range 4.0.0.x" \> "Initialization".
+To start using the connector, you need to configure the **Source Matrix Data** table. For more information, refer to the section "Configuration of Range 4.0.0.x" \> "Initialization".
 
 It is possible to only use some of the inputs/outputs. With **Input Filtering** and **Output Filtering**, you can select individual inputs/outputs or ranges. The format is *A;C-E;G;K-W*.
 
@@ -418,8 +432,8 @@ This is normal DataMiner behavior.
 
 ## Notes
 
-- Use the most recent supported firmware for best compatibility.
-- Ensure proper format of Status Strings to avoid initialization errors.
+- Use the most recent supported firmware for optimal compatibility.
+- Ensure Status strings use the proper format to avoid initialization errors.
 - Tie line configuration significantly affects path selection and reliability.
 
 > [!TIP]

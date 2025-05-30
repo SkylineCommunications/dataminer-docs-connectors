@@ -10,13 +10,13 @@ The Generic Matrix Virtualization connector makes it possible to visualize multi
 
 ## Key Features
 
-- **Matrix Abstraction**: Combines multiple physical matrices into a single virtual routing matrix.
+- **Matrix abstraction**: Combines multiple physical matrices into a single virtual routing matrix.
 
-- **Concatenation Support**: Maps and joins inputs/outputs from various matrices to form an extended matrix.
+- **Concatenation support**: Maps and joins inputs/outputs from various matrices to form an extended matrix.
 
-- **Tie-Line Handling**: Manages internal and inter-matrix connections with automated failover and status reporting.
+- **Tie-line handling**: Manages internal and inter-matrix connections with automated failover and status reporting.
 
-- **DCF Integration**: Supports the DataMiner Connectivity Framework To read out Processing Unit connectivity.
+- **DCF integration**: Supports the DataMiner Connectivity Framework To read out processing unit connectivity.
 
 ## Use Cases
 
