@@ -2498,6 +2498,11 @@
     topicUid: Connector_help_CPI_T22C1
   - name: CPI T5DI
     topicUid: Connector_help_CPI_T5DI
+  - name: CPI T5Ui
+    topicUid: Connector_help_CPI_T5Ui
+    items:
+      - name: CPI T5Ui Technical
+        topicUid: Connector_help_CPI_T5Ui_Technical
   - name: CPI TL05KO
     topicUid: Connector_help_CPI_TL05KO
   - name: CPI TL12DO
