@@ -10,11 +10,11 @@ The Rohde & Schwarz Nx8000 is a high-performance digital TV transmitter platform
 
 ## Key Features
 
-- **Multi-Standard Support**: Compatible with DVB-T/T2, ISDB-T, and ATSC, enabling flexible deployment across global broadcast networks.
+- **Multi-standard support**: Compatible with DVB-T/T2, ISDB-T, and ATSC, enabling flexible deployment across global broadcast networks.
 
-- **Energy-Efficient Design**: Optimized for low power consumption without compromising transmission quality, reducing operational costs.
+- **Energy-efficient design**: Optimized for low power consumption without compromising transmission quality, reducing operational costs.
 
-- **Advanced Remote Monitoring and Control**: Provides real-time status updates and comprehensive system management for enhanced reliability and ease of maintenance.
+- **Advanced remote monitoring and control**: Provides real-time status updates and comprehensive system management for enhanced reliability and ease of maintenance.
 
 ## Use Cases
 

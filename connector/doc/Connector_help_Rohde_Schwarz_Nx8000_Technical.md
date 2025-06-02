@@ -33,8 +33,9 @@ The web interface is only accessible when the client machine has network access 
 ## How to Use
 
 ### General Page
+
 On the General page, system information is readily available, including key details such as the device's uptime, serial number, firmware version, and location.
 
 ### Transmitter Page
 
-The Transmitter page offers a comprehensive overview of the system’s operational status and key parameters. It enables monitoring of power levels, fault conditions, and exciter activity. Users can manage exciter selection and input sources, as well as configure automatic exciter switching to ensure reliable broadcast performance. Regular review of this page supports proactive system management and fault response.
+The Transmitter page offers a comprehensive overview of the system's operational status and key parameters. It enables monitoring of power levels, fault conditions, and exciter activity. Users can manage exciter selection and input sources, as well as configure automatic exciter switching to ensure reliable broadcast performance. Regular review of this page supports proactive system management and fault response.
