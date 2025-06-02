@@ -10,11 +10,11 @@ The Enatel SMX3 NT2 connector provides comprehensive monitoring and control capa
 
 ## Key Features
 
-- **Centralized Power System Management**: Consolidates all critical power system information from Enatel SM3X supervisory modules into a single, organized dashboard.
-- **Direct Device Configuration**: Enables remote configuration of device settings directly through the connector interface, eliminating the need for on-site access.
-- **Comprehensive Current and Voltage Monitoring**: Provides detailed visibility into AC and DC current measurements, voltage levels, and frequency data across the entire power system.
-- **Advanced Alarm Management**: Offers configurable alarm thresholds for all system components including current, temperature, voltage, and LVD parameters.
-- **Power Module Control**: Enables monitoring and control of individual power modules, including the ability to shutdown modules remotely when needed.
+- **Centralized power system management**: Allows you to consolidate all critical power system information for Enatel SMX3 supervisory modules into a single, organized dashboard.
+- **Direct device configuration**: Enables remote configuration of device settings directly through the connector interface, eliminating the need for on-site access.
+- **Comprehensive current and voltage monitoring**: Provides detailed visibility on AC and DC current measurements, voltage levels, and frequency data across the entire power system.
+- **Advanced alarm management**: Offers configurable alarm thresholds for all system components including current, temperature, voltage, and LVD parameters.
+- **Power module control**: Enables monitoring and control of individual power modules, including the ability to shut down modules remotely when needed.
 
 ## Use Cases
 
@@ -43,12 +43,6 @@ The Enatel SMX3 NT2 connector provides comprehensive monitoring and control capa
 **Benefit**: Prevents unexpected system failures through early warning notifications, reduces equipment damage risks, and ensures continuous power availability for critical applications.
 
 ## Technical Reference
-
-### Prerequisites
-
-- **Enatel SM3X Series Device** running compatible firmware (SM32 NT2, SM34 NT2, or SM36 NT2).
-- **SNMP Access** with appropriate community strings for read and write operations.
-- **Network Connectivity** between the connector and the Enatel device via SNMP protocol.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Enatel_SMX3_NT2_Technical).

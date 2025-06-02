@@ -2877,10 +2877,10 @@
 - name: Enatel
   items:
   - name: Enatel SM3X NT2
-    topicUid: Connector_help_Enatel_SM3X_NT2
+    topicUid: Connector_help_Enatel_SMX3_NT2
     items:
     - name: Enatel SM3X NT2
-      topicUid: Connector_help_Enatel_SM3X_NT2_Technical
+      topicUid: Connector_help_Enatel_SMX3_NT2_Technical
 - name: EndRun Technologies
   items:
   - name: Meridian II Precision TimeBase
