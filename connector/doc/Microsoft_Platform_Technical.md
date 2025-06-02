@@ -2,19 +2,13 @@
 uid: Connector_help_Microsoft_Platform_Technical
 ---
 
-# Microsoft Platform
-
-The Microsoft Platform connector enables the monitoring of servers that run the Microsoft Windows OS.
+# Microsoft Platform (Older Ranges)
 
 ## About
 
-The Microsoft Platform connector empowers organizations to achieve comprehensive, real-time monitoring of your Microsoft Windows-based servers. Leveraging Windows Management Instrumentation (WMI), this connector provides deep visibility into system performance, health metrics, and operational status, ensuring proactive management and swift resolution.
+The Microsoft Platform connector enables the monitoring of servers that run the Microsoft Windows OS. Leveraging Windows Management Instrumentation (WMI), it provides visibility on system performance, health metrics, and operational status.
 
-## Key Benefits
-
-- Broad Compatibility: Supports all versions of Microsoft Windows, ensuring seamless integration across diverse server environments.
-
-The Microsoft Platform connector gathers key performance indicators from a server running the Microsoft Windows OS. To accomplish this, the connector utilizes Windows Management Instrumentation ([WMI](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)) extensions to query data from the monitored server.
+To query data from the monitored server, the connector uses Windows Management Instrumentation ([WMI](https://learn.microsoft.com/en-us/windows/win32/wmisdk/wmi-start-page)) extensions.
 
 All versions of Microsoft Windows are supported, as long as the connector is able to retrieve data using WMI.
 
@@ -26,11 +20,11 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 | 6.0.0.x [SLC Main - Physical Hardware Environment] | Branched from 1.1.2.31: Microsoft WMI interface + interface for DELL-, HP-, and Supermicro-specific SNMP parameters. | Yes | Yes |
 
 > [!IMPORTANT]
-> Currently, range versions 1.1.3.x and 6.0.0.x are still supported. However, we strongly recommend to use new driver range 7.0.0.x.
+> Currently, ranges 1.1.3.x and 6.0.0.x are still supported. However, we strongly recommend switching to [range 7.0.0.x](xref:Connector_help_Microsoft_Platform_Technical_7.0.0.x).
 
 ## Configuration
 
-When creating an element using this connector, apart from the element name and the protocol fields, the only required field to be populated is the *IP address*. In this field, you must specify the IP address assigned to the server running Microsoft Windows OS that will be monitored.
+When you create an element using this connector, apart from the element name and the protocol fields, the only field you have to fill in is the **IP address**. In this field, you must specify the IP address assigned to the Windows server that will be monitored.
 
 > [!IMPORTANT]
 > When you create an element to monitor the DataMiner Agent hosting the element, the administrator built-in account will be used to query the server. In case the element will monitor a remote server, you must configure the appropriate credentials on the [Security](#security) page.
@@ -54,7 +48,7 @@ In addition, WMI and DCOM must be properly configured on the server to be monito
 1. Add the user and give the user the *Local Launch*, *Remote Launch*, and *Remote Activation* permissions.
 1. Apply all.
 
->[!NOTE]
+> [!NOTE]
 >
 > - After DCOM settings have been changed, the WMI services sometimes need to be restarted.
 > - This method works fine for a Windows XP system but cannot be used on a Windows Server 2003 SP1.
@@ -75,7 +69,7 @@ This page displays settings that will be used by WMI to query the remote server.
 
 #### Port Monitoring
 
-This page allows you to configure the *port monitoring* feature in this connector, which enables you to verify whether a port is opened or closed and to measure any response delay.
+This page allows you to configure the port monitoring feature in this connector, which enables you to verify whether a port is opened or closed and to measure any response delay.
 
 To enable this feature:
 
@@ -86,7 +80,7 @@ To enable this feature:
 
 #### Ping Monitoring
 
-This page allows you to configure the *ping monitoring* feature available in this connector. This feature allows you to perform a ping command on the remote server.
+This page allows you to configure the ping monitoring feature available in this connector. This feature allows you to perform a ping command on the remote server.
 
 To enable this feature:
 
@@ -97,7 +91,7 @@ To enable this feature:
 
 ### Task Manager
 
-The Task Manager page lists all the processes run by the monitored server (similar to the *Task Manager* tool available in any Microsoft Windows OS). Each entry in the **Task Manager** table represents a process active on the monitored server.
+The Task Manager page lists all the processes run by the monitored server (similar to the Task Manager tool available in any Microsoft Windows OS). Each entry in the **Task Manager** table represents a process active on the monitored server.
 
 By default, the connector will poll all the running processes on the monitored server. You can modify this behavior by setting the parameter **Poll Task Manager** to *Off*.
 
@@ -147,7 +141,7 @@ To disable or enable the monitoring of a specific process in the Task Manager ta
 1. Locate the process to be removed in the **Task Manager Measurement Config** table.
 1. In the column **Task Polling**, set the value to *Disable* or *Enable* accordingly.
 
->[!NOTE]
+> [!NOTE]
 > By default, the **Task Manager Measurement Config** table will list the same processes as the **Task Manager** table, and the column **Task Polling** will be set to *Not Initialized*.
 
 ### Network Interface
@@ -155,7 +149,7 @@ To disable or enable the monitoring of a specific process in the Task Manager ta
 This page displays the **Network Adapter** table. This table monitors the network adapters available in the server.
 
 > [!NOTE]
-> The bandwidth of an adapter can be very high (*e.g. 10 GB/s*). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if *Total Speed \< 0.005 \* Bandwidth*.
+> The bandwidth of an adapter can be very high (e.g. 10 GB/s). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if Total Speed \< 0.005 \* Bandwidth.
 
 By default, the column **Adapter Description** will contain the name of the adapter as retrieved by [WMI](https://learn.microsoft.com/en-us/previous-versions/aa394293(v=vs.85)). However, in some cases, the connector will not be able to retrieve the name. If this is the case, it is possible to customize this name of the adapter.
 
@@ -174,14 +168,14 @@ You can also entirely disable the polling of the network adapters with the toggl
 
 Once an adapter is disconnected and not found by the connector, its status will be set to *Disconnected*. You can choose to either remove such adapters automatically (using the button **Auto Clear Disconnected Adapters**) or manually delete them using the parameter **Manually Clear Disconnected Adapters**.
 
->[!NOTE]
+> [!NOTE]
 > The parameter **Manually Clear Disconnected Adapters** will only list disconnected adapters.
 
 ### Disk Info
 
 This page provides information about local storage devices on a server running Windows.
 
->[!TIP]
+> [!TIP]
 > A sign that could indicate that the disk is busy is the *Latency*, i.e. how long it takes before it can process something. This metric can be tracked with the parameter **Avg Disk sec/Transfer Rate**.
 
 ### Event Viewer
@@ -226,7 +220,7 @@ It monitors certain high-level parameters, such as the name, version, and model.
 - A page is available for the **power supply**, **fans**, **CPU**, and **memory** information for the device.
 - The **Disk** page provides an overview of all the disks included in the system.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > In order to monitor these parameters, you have to enable polling on the **Dell** page.
 
 ### HP
@@ -235,17 +229,19 @@ This page focuses on HP computer hardware.
 
 It monitors the same set of parameters as the Dell page described above.
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > In order to monitor these parameters, you have to enable polling on the **HP** page.
 
 ### Software Info
 
 This page contains the **Software Info Table**, which displays a list of all installed programs.
-**Note: USERNAME and PASSWORD have to be set! (Under Performance \> Security Settings).**
 
-Above the table, it is possible to select the polling method. (Alternative methods were introduced after problems were encountered with the used WMI Query.)
+> [!IMPORTANT]
+> USERNAME and PASSWORD have to be set for this to work (under **Performance** > **Security Settings**).
+
+Above the table, you can select the polling method. (Alternative methods are available to circumvent issues with WMI queries.)
 
 - *No Polling*: Nothing will be retrieved, and the table will remain empty.
-- *Win32_Product*: WMI Query used to retrieve a list of all installed programs. We strongly advise **not to use this method**, as this can perform a Windows Installer "reconfiguration" on every MSI package as it is performing the query.
-- *Win32reg_AddRemoveProgram*: WMI Query used to retrieve a list of all installed programs if Microsoft CSSM software is installed. This is a better alternative to the Win32_Product method.
+- *Win32_Product*: A list of all installed programs will be retrieved using a WMI query. We strongly advise **not to use this method**, as this can perform a Windows Installer "reconfiguration" on every MSI package as it is performing the query.
+- *Win32reg_AddRemoveProgram*: A list of all installed programs will be retrieved using a WMI query, if Microsoft CSSM software is installed. This is a better alternative to the Win32_Product method.
 - *Registry Keys*: **Recommended method.** This method will use WMI to read the registry keys to display a list of all installed programs in the system.

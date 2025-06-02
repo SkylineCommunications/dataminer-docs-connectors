@@ -4,10 +4,10 @@ uid: microsoft_platform_technical_wmi_queries
 
 # Microsoft Platform - WMI Queries
 
-In this page you will find the list of queries and properties implemented by the **Microsoft Platform** connector.
+On this page, you will find the list of queries and properties implemented by the **Microsoft Platform** connector.
 
 > [!NOTE]
-> The list below is valid for driver range 7.0.0.x
+> The list below is valid for range 7.0.0.x of the Microsoft Platform connector.
 
 ## Computer System
 
