@@ -12,15 +12,8 @@ This connector is used for the CP525 multiplexer model from T-Vips and allows SN
 
 | Range                | Key Features                                                             | Based on     | System Impact                                         |
 |----------------------|--------------------------------------------------------------------------|--------------|-------------------------------------------------------|
-| 1.0.0.x (Obsolete)   | SNMP monitoring                                                          | -            | -                                                     |
-| 1.0.1.x [SLC Main]   | Reworked PIDs table (Changed display column to display key)              | 1.0.0.x      | Possible loss in alarm/trend data for PIDs table      |
-
-### Product Info
-
-| Range     | Supported Firmware      |
-|-----------|-------------------------|
-| 1.0.0.x   | No version requirements |
-| 1.0.1.x   | No version requirements |
+| 1.0.0.x (Obsolete)   | SNMP monitoring.                                                         | -            | -                                                     |
+| 1.0.1.x [SLC Main]   | Reworked PIDs table. (Changed display column to display key.)            | 1.0.0.x      | Possible loss in alarm/trend data for PIDs table.     |
 
 ### System Info
 
