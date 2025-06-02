@@ -6,7 +6,7 @@ uid: Connector_help_Ateme_Pilot_Manager_Technical
 
 ## About
 
-The Ateme Pilot Manager provides comprehensive monitoring and control for Ateme products and solutions, whether deployed on-premises or in the cloud. It offers intuitive operational views for real-time monitoring and service delivery control, with automatic failure detection and recovery. This guarantees continuous delivery and minimal service disruption. At the time of this writing, Ateme Pilot Manager supports Titan Live, Titan Edge and Titan Mux products.
+The Ateme Pilot Manager provides comprehensive monitoring and control for Ateme products and solutions, whether deployed on-premises or in the cloud. It offers intuitive operational views for real-time monitoring and service delivery control, with automatic failure detection and recovery. This guarantees continuous delivery and minimal service disruption. At present, Ateme Pilot Manager supports Titan Live, Titan Edge and Titan Mux products.
 
 ## Configuration
 
@@ -24,15 +24,15 @@ HTTP CONNECTION:
 
 ### Initialization
 
-On the first startup, to initialize the connector, you need to specify the following input configuration on the **General** page:
+On the first startup, to initialize the element, you need to specify the following input configuration on the **General** page of the element:
 
-- **PMF Deployment Name:** Pilot Manager Foundations portal deployment name to be use to construct the API url.
-- **PMS Deployment Name:** Pilot Manager Supervision deployment name to be use to construct the API url.
-- **Username:** Name of the user used in the HTTP login operation.
-- **Password:** Password of the user used in the HTTP login operation.
+- **PMF Deployment Name**: Pilot Manager Foundations portal deployment name to be used to construct the API URL.
+- **PMS Deployment Name**: Pilot Manager Supervision deployment name to be used to construct the API URL.
+- **Username**: Name of the user used in the HTTP login operation.
+- **Password**: Password of the user used in the HTTP login operation.
 
-> [!Important]
-> To identify the PMF and PMS, access the Pilot Manager portal webpage. In the URL, you can find the PMF and PMS before and after the word 'applications' in the path, respectively. Example, `https://<IP>/<PMF>/applications/<PMS>`
+> [!IMPORTANT]
+> To identify the PMF and PMS, access the Pilot Manager portal webpage. In the URL, you can find the PMF and PMS before and after the word "applications" in the path, respectively. Example: `https://<IP>/<PMF>/applications/<PMS>`.
 
 ### Web Interface
 
@@ -42,16 +42,15 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-On this page, you should specify the PMF deployment name and PMS deployment name  to enable the connector to construct the API URL.
-Additionally, you should provide the username and password for connecting to v Manager during the element initialization.
+On this page, you should specify the PMF deployment name and PMS deployment name to enable the connector to construct the API URL.
 
-This page has one subpage:
+Additionally, you should provide the username and password for connecting to the Pilot Manager during the element initialization.
 
-- **Polling Settings**: Allows you to define preferred polling settings including the modules to be polled, polling interval.
+This page has a **Polling Settings** subpage, where you can define preferred polling settings, including the modules to be polled and the polling interval.
 
 ### Alarms
 
-The Alarms page displays all alarms present in the PILOT Manager. By default, **a filter is applied to show only active alarms**. When this filter is disabled, alarms from the last 24 hours are displayed.
+The Alarms page displays all alarms present in the Pilot Manager. By default, **a filter is applied to show only active alarms**. When this filter is disabled, alarms from the last 24 hours are displayed.
 
 ### Instances
 
@@ -67,4 +66,4 @@ On this page, Titan Mux services are displayed along with their programs. The pa
 
 ### Redundancy
 
-The Redundancy page shows the redundancy groups configured.
+The Redundancy page shows the configured redundancy groups.
