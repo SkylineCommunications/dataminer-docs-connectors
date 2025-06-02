@@ -5935,62 +5935,65 @@
     topicUid: Connector_help_Miranda_IControl_EAP-1101
   - name: Miranda IControl General
     topicUid: Connector_help_Miranda_IControl_General
-  - name: Miranda IControl General - ADA-1033
-    topicUid: Connector_help_Miranda_IControl_General_-_ADA-1033
-  - name: Miranda IControl General - ADC-1722
-    topicUid: Connector_help_Miranda_IControl_General_-_ADC-1722
-  - name: Miranda IControl General - ADX-102
-    topicUid: Connector_help_Miranda_IControl_General_-_ADX-102
-  - name: Miranda IControl General - ADX-3981
-    topicUid: Connector_help_Miranda_IControl_General_-_ADX-3981
-  - name: Miranda IControl General - AMX-1842
-    topicUid: Connector_help_Miranda_IControl_General_-_AMX-1842
-  - name: Miranda IControl General - AMX-3981
-    topicUid: Connector_help_Miranda_IControl_General_-_AMX-3981
-  - name: Miranda IControl General - Chassis Densite
-    topicUid: Connector_help_Miranda_IControl_General_-_Chassis_Densite
-  - name: Miranda IControl General - DDA-1113
-    topicUid: Connector_help_Miranda_IControl_General_-_DDA-1113
-  - name: Miranda IControl General - DSK-3901
-    topicUid: Connector_help_Miranda_IControl_General_-_DSK-3901
-  - name: Miranda IControl General - FIO-19RR
-    topicUid: Connector_help_Miranda_IControl_General_-_FIO-19RR
-  - name: Miranda IControl General - FIO-19RT
-    topicUid: Connector_help_Miranda_IControl_General_-_FIO-19RT
-  - name: Miranda IControl General - FIO-19T
-    topicUid: Connector_help_Miranda_IControl_General_-_FIO-19T
-  - name: Miranda IControl General - FIO-19TT
-    topicUid: Connector_help_Miranda_IControl_General_-_FIO-19TT
-  - name: Miranda IControl General - HCO-3901
-    topicUid: Connector_help_Miranda_IControl_General_-_HCO-3901
-  - name: Miranda IControl General - HDA-1851
-    topicUid: Connector_help_Miranda_IControl_General_-_HDA-1851
-  - name: Miranda IControl General - HDA-1931
-    topicUid: Connector_help_Miranda_IControl_General_-_HDA-1931
-  - name: Miranda IControl General - HDC-1861
-    topicUid: Connector_help_Miranda_IControl_General_-_HDC-1861
-  - name: Miranda IControl General - HLP-1801
-    topicUid: Connector_help_Miranda_IControl_General_-_HLP-1801
-  - name: Miranda IControl General - HMP-1801
-    topicUid: Connector_help_Miranda_IControl_General_-_HMP-1801
-  - name: Miranda IControl General - IRG-3401
-    topicUid: Connector_help_Miranda_IControl_General_-_IRG-3401
-  - name: Miranda IControl General - KMX-3901-IN
-    topicUid: Connector_help_Miranda_IControl_General_-_KMX-3901-IN
-  - name: Miranda IControl General - KMX-3901-OUT
-    topicUid: Connector_help_Miranda_IControl_General_-_KMX-3901-OUT
-  - name: Miranda IControl General - REF-1801
-    topicUid: Connector_help_Miranda_IControl_General_-_REF-1801
-  - name: Miranda IControl General - RFS-0886
-    topicUid: Connector_help_Miranda_IControl_General_-_RFS-0886
-  - name: Miranda IControl General - VDA-1002
-    topicUid: Connector_help_Miranda_IControl_General_-_VDA-1002
-  - name: Miranda IControl General - VEA-1002
-    topicUid: Connector_help_Miranda_IControl_General_-_VEA-1002
-  - name: Miranda IControl General - WDA-1001
-    topicUid: Connector_help_Miranda_IControl_General_-_WDA-1001
-  - name: Miranda IControl General - XVP-3901
-    topicUid: Connector_help_Miranda_IControl_General_-_XVP-3901
+    items:
+    - name: Miranda IControl General - ADA-1033
+      topicUid: Connector_help_Miranda_IControl_General_-_ADA-1033
+    - name: Miranda IControl General - ADC-1722
+      topicUid: Connector_help_Miranda_IControl_General_-_ADC-1722
+    - name: Miranda IControl General - ADX-102
+      topicUid: Connector_help_Miranda_IControl_General_-_ADX-102
+    - name: Miranda IControl General - ADX-3981
+      topicUid: Connector_help_Miranda_IControl_General_-_ADX-3981
+    - name: Miranda IControl General - AMX-1842
+      topicUid: Connector_help_Miranda_IControl_General_-_AMX-1842
+    - name: Miranda IControl General - AMX-3981
+      topicUid: Connector_help_Miranda_IControl_General_-_AMX-3981
+    - name: Miranda IControl General - Chassis Densite
+      topicUid: Connector_help_Miranda_IControl_General_-_Chassis_Densite
+    - name: Miranda IControl General - DDA-1113
+      topicUid: Connector_help_Miranda_IControl_General_-_DDA-1113
+    - name: Miranda IControl General - DSK-3901
+      topicUid: Connector_help_Miranda_IControl_General_-_DSK-3901
+    - name: Miranda IControl General - FIO-19RR
+      topicUid: Connector_help_Miranda_IControl_General_-_FIO-19RR
+    - name: Miranda IControl General - FIO-19RT
+      topicUid: Connector_help_Miranda_IControl_General_-_FIO-19RT
+    - name: Miranda IControl General - FIO-19T
+      topicUid: Connector_help_Miranda_IControl_General_-_FIO-19T
+    - name: Miranda IControl General - FIO-19TT
+      topicUid: Connector_help_Miranda_IControl_General_-_FIO-19TT
+    - name: Miranda IControl General - HCO-3901
+      topicUid: Connector_help_Miranda_IControl_General_-_HCO-3901
+    - name: Miranda IControl General - HDA-1851
+      topicUid: Connector_help_Miranda_IControl_General_-_HDA-1851
+    - name: Miranda IControl General - HDA-1931
+      topicUid: Connector_help_Miranda_IControl_General_-_HDA-1931
+    - name: Miranda IControl General - HDC-1861
+      topicUid: Connector_help_Miranda_IControl_General_-_HDC-1861
+    - name: Miranda IControl General - HLP-1801
+      topicUid: Connector_help_Miranda_IControl_General_-_HLP-1801
+    - name: Miranda IControl General - HMP-1801
+      topicUid: Connector_help_Miranda_IControl_General_-_HMP-1801
+    - name: Miranda IControl General - HRS-1801
+      topicUid: Connector_help_Miranda_IControl_General_-_HRS-1801
+    - name: Miranda IControl General - IRG-3401
+      topicUid: Connector_help_Miranda_IControl_General_-_IRG-3401
+    - name: Miranda IControl General - KMX-3901-IN
+      topicUid: Connector_help_Miranda_IControl_General_-_KMX-3901-IN
+    - name: Miranda IControl General - KMX-3901-OUT
+      topicUid: Connector_help_Miranda_IControl_General_-_KMX-3901-OUT
+    - name: Miranda IControl General - REF-1801
+      topicUid: Connector_help_Miranda_IControl_General_-_REF-1801
+    - name: Miranda IControl General - RFS-0886
+      topicUid: Connector_help_Miranda_IControl_General_-_RFS-0886
+    - name: Miranda IControl General - VDA-1002
+      topicUid: Connector_help_Miranda_IControl_General_-_VDA-1002
+    - name: Miranda IControl General - VEA-1002
+      topicUid: Connector_help_Miranda_IControl_General_-_VEA-1002
+    - name: Miranda IControl General - WDA-1001
+      topicUid: Connector_help_Miranda_IControl_General_-_WDA-1001
+    - name: Miranda IControl General - XVP-3901
+      topicUid: Connector_help_Miranda_IControl_General_-_XVP-3901
   - name: Miranda IControl HCO-182x
     topicUid: Connector_help_Miranda_IControl_HCO-182x
   - name: Miranda IControl HCP-1801
