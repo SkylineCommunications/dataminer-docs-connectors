@@ -20,15 +20,15 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-  - **IP address/host**: The IP address of the device.
-  - **IP port**: The IP port of the device.
-  - **Bus address**: The bus address of the device.
+- **IP address/host**: The IP address of the device.
+- **IP port**: The IP port of the device.
+- **Bus address**: The bus address of the device.
 
 ## How to Use
 
 The **General** page provides access to essential device settings, including configurable low and high RF alarm and fault setpoints, as well as linearizer parameters for fine-tuning performance.
 
-The **Control RF Output** page provides parameters for managing the device’s RF output, including power levels in both dBm and watts. It also includes settings for ALC (Automatic Level Control) output power, displayed in both dBm and watts,
+The **Control RF Output** page provides parameters for managing the device's RF output, including power levels in both dBm and watt. It also includes settings for ALC (Automatic Level Control) output power, displayed in both dBm and watt.
 
 The **Meter Query** page displays key diagnostic parameters such as helix voltage, helix current, reflected RF, beam current, and attenuator value.
 
