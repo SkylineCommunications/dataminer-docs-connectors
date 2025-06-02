@@ -18,7 +18,7 @@ The 670 is a virtualized media processing platform that enables users to move a 
 | 1.0.1.x [Obsolete] | Adds redundant polling. | - | Adds interface for redundant polling. |
 | 1.0.2.x [Obsolete] | Subtable functionality in all tables to filter out unneeded rows. | 1.0.1.2 | Trending, Visio drawings, and alarm templates may be affected. |
 | 1.0.3.x [SLC Main] | Ability to enable/disable polling of QSFPs. Subtable is still being used. | 1.0.2.3 | Appends user-defined description to IDX and applies filtering to some rows. |
-| 1.0.4.x | Addition of serial connection to proccess syslog messages. | 1.0.3.4 | New smart-serial connection, interface details needs to be entered in the element wizzard. |
+| 1.0.4.x | Addition of serial connection to process syslog messages. | 1.0.3.4 | New smart-serial connection. Interface details needs to be entered in the element editor. |
 
 ### Product Info
 
@@ -58,7 +58,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-#### IP Connection Range 1.0.4.x
+#### IP Connection (Range 1.0.4.x)
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -66,8 +66,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *514*)]
+  - **IP address/host**: The polling IP or URL of the destination.
+  - **IP port**: The IP port of the destination (default: *514*).
   
 ### Web Interface
 
