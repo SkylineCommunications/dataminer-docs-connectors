@@ -2191,7 +2191,7 @@
   - name: CISCO ASR Manager
     topicUid: Connector_help_CISCO_ASR_Manager
   - name: CISCO ATA192
-    topicUID: Connector_help_CISCO_ATA192
+    topicUid: Connector_help_CISCO_ATA192
     items:
     - name: CISCO ATA192 Technical
       topicUid: Connector_help_CISCO_ATA192_Technical
