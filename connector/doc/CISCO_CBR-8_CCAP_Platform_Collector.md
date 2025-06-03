@@ -101,7 +101,7 @@ With larger devices/large datasets, the polling performance may vary. You can co
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the CISCO CBR-8 CCAP Platform Collector protocol supports the usage of DCF.
+The **1.0.1.x** connector range of the CISCO CBR-8 CCAP Platform Collector connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

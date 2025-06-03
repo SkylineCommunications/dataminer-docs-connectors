@@ -86,4 +86,4 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-This connector supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+This connector supports the usage of DCF.

@@ -95,7 +95,7 @@ This page contains the tables used to export the DVEs.
 
 ## DataMiner Connectivity Framework
 
-The 1.0.0.1 range of the Platinum PL700 Manager connector supports the usage of DCF and can only be used on a DMA with **9.0.0** as the minimum version.
+The 1.0.0.1 range of the Platinum PL700 Manager connector supports the usage of DCF.
 
 Connectivity for all exported connectors is managed by this connector.
 

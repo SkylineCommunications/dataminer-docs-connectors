@@ -95,7 +95,7 @@ This page displays more detailed transmitter status information.
 
 ## DataMiner Connectivity Framework
 
-The **2.0.0.15** range of the Rohde Schwarz NetCCU800 1+1 connector supports the usage of DCF and can only be used on a DMA with **9.0.3** as the minimum version.
+The **2.0.0.15** range of the Rohde Schwarz NetCCU800 1+1 connector supports the usage of DCF.
 
 Connectivity for all exported connectors is managed by this connector.
 

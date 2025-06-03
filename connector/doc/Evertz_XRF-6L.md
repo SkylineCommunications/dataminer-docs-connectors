@@ -96,7 +96,7 @@ On this page, you can save up to eight programmable commands to be executed on d
 
 ## DataMiner Connectivity Framework
 
-The **2.0.1.x** connector range of the Evertz XRF-6L protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **2.0.1.x** connector range of the Evertz XRF-6L connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner Third-Party protocols (for instance a manager).
 

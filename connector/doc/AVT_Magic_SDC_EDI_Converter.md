@@ -59,7 +59,7 @@ The element consists of the data pages described below. Each table is updated ba
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the AVT Magic SDC EDI Converter protocol supports the usage of DCF and can only be used on a DMA with **9.5.0** as the minimum version.
+The **1.0.1.x** connector range of the AVT Magic SDC EDI Converter connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

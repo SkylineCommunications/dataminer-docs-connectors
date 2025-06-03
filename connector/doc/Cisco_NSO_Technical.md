@@ -34,6 +34,6 @@ On the **Details** page, the Check IPTV details table shows information for each
 
 ## Notes
 
-This Cisco (NSO) implementation has been customized specifically for Bouygues Telecom. It incorporates proprietary API calls and integrations developed exclusively for Bouygues Telecom’s operational requirements. The configurations, workflows, and functionalities contained in this connector are tailored to meet the unique specifications of Bouygues Telecom and may not be applicable, transferable, or suitable for other use cases or organizations. Unauthorized use, replication, or distribution of this implementation is strictly prohibited.
+This is a user-specific Cisco (NSO) implementation. It incorporates proprietary API calls and integrations developed exclusively for this user. The configurations, workflows, and functionalities contained in this connector are tailored to meet unique specifications and may not be applicable, transferable, or suitable for other use cases or organizations. Unauthorized use, replication, or distribution of this implementation is strictly prohibited.
 
 For any inquiries or permissions, please contact <squad.deploy-scrumbledore@skyline.be>.

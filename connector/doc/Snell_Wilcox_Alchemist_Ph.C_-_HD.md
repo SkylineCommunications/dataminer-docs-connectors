@@ -4,7 +4,7 @@ uid: Connector_help_Snell_Wilcox_Alchemist_Ph.C_-_HD
 
 # Snell Wilcox Alchemist Ph.C - HD
 
-This protocol can be used to monitor and manipulate the Snell Wilcox Alchemist Ph.C - HD device. It uses SNMP to request data from the device.
+This connector can be used to monitor and manipulate the Snell Wilcox Alchemist Ph.C - HD device. It uses SNMP to request data from the device.
 
 The device converts high-definition video signals with a PH.C motion measurement technology.
 
@@ -138,7 +138,7 @@ Displays the status of the input and output parameters.
 
 ## DataMiner Connectivity Framework
 
-The 2.0.1.x range of this protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The 2.0.1.x range of this connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
