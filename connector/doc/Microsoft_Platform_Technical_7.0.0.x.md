@@ -41,12 +41,35 @@ In addition, WMI and DCOM must be properly configured on the server to be monito
 > Since this is a virtual connector, WMI queries sent to the target server are not displayed in the [Stream Viewer](https://docs.dataminer.services/user-guide/Troubleshooting/Logging/Monitoring_real-time_communication/Connecting_to_an_element_using_Stream_Viewer.html)
 > Currently the default timeout is set to XXX
 
-Default timeouts;
+### Polling Frequencies
+
+Currently the polling frequencies are hardcoded in the connector. Below a summary of the polling frequencies per metric group:
+
+#### Fast Timer (10 seconds)
+
+- CPU Utilization
+- Memory
+- Process Instances
+- Process Instance Details
+- Processes
+
+#### Medium Timer (1 minute)
+
+- CPU Metrics
+- Disk Details
+- Network Adapters
+- Network Adapter Details
+
+#### Slow Timer (1 hour)
+
+- System
+- Operating System
+- Operating System Updates
+- CPU Info
+
+### Timeout Settings
 
 - Default timeout for a single command: 1.5 seconds
-- 
-
-TODO: Check what is the hardcoded timeout
 
 #### WMI configuration
 
@@ -140,3 +163,4 @@ The **Software** page displays the list of installed applications on the monitor
 - The list of WMI queries implemented in the connector can be found in [Microsoft Platform - WMI Queries](xref:microsoft_platform_technical_wmi_queries)
 
 - In case the element is not able to poll the monitored server, please follow the [Troubleshooting guide](xref:microsoft_platform_technical_troubleshooting)
+microsoft_platform_technical_troubleshooting
