@@ -22,7 +22,6 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The IP address of the CISCO ATA192 device.
-- **Device address**: Not required.
 
 SNMP Settings:
 
@@ -44,8 +43,3 @@ Once the element has been created, the connector will begin polling the device f
 - **UDP Statistics**: Datagram counts and errors.
 
 This information provides detailed insight into network communication performance and potential issues at the device level.
-
-## Notes
-
-- The connector uses the standard SNMP protocol to retrieve statistics.
-- It supports basic diagnostics and can help with troubleshooting voice-over-IP issues by analyzing ICMP and UDP behaviors.
