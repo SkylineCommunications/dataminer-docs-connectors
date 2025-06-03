@@ -52,7 +52,7 @@ This page displays the alarm statuses, such as the **Agent Alarm Status**, **Cha
 
 ## DataMiner Connectivity Framework
 
-Version **1.0.0.5** and following of the **Factum RSW100** protocol support the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+Version **1.0.0.5** and following of the **Factum RSW100** protocol support the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

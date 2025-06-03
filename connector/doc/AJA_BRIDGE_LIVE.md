@@ -28,9 +28,9 @@ The AJA Bridge Live connector enables seamless integration with AJA Bridge Live,
 
 ### Prerequisites
 
-- Network access: AJA Bridge Live must be accessible over the network for API communication.
-- Authentication configuration: Basic authentication credentials (username and password) must be set up.
-- Pipeline configuration: Users should pre-define input and output settings for efficient stream management.
+- **Network access**: AJA Bridge Live must be accessible over the network for API communication.
+- **Authentication configuration**: Basic authentication credentials (username and password) must be set up.
+- **Pipeline configuration**: Users should pre-define input and output settings for efficient stream management.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_AJA_Bridge_Live_Technical).
