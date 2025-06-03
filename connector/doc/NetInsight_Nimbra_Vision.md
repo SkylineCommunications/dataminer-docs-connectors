@@ -11,13 +11,14 @@ The NetInsight Nimbra Vision DataMiner connector is designed to provide manageme
 ![Visual Overview](~/connector/images/netinsight-nimbra-vision.png)
 
 ## Key Features
-The DataMiner Nimbra Vision connector provides not only a comprehensive view of all active Nimbra MSR circuits (with easy filtering based on type, node and metadata), but also a simplifies the process of setting up a new ad hoc Nimbra MSR circuit. Users can simply choose a service type, a source and destination node, and click connect. The system automatically computes and schedules the network paths in the background.
 
-- **Schedule services**: prepare and schedule with auto-route path detection a circuit for the future.
-- **Monitoring**: quick access to specific nodes to promptly assess their health, usage, and alarms. 
+The DataMiner Nimbra Vision connector provides not only a comprehensive view of all active Nimbra MSR circuits (with easy filtering based on type, node and metadata), but it also a simplifies the process of setting up a new ad hoc Nimbra MSR circuit. Users can simply choose a service type and a source and destination node, and then click connect. The system automatically computes and schedules the network paths in the background.
 
-> [!TIP]
-> Explore our [NetInsight Nimbra Vision DataMiner solution](https://catalog.dataminer.services/details/d9ec570f-a625-40c1-a6fa-c9b4f15416cd), featuring an app designed to streamline your daily operations for monitoring and managing the Nimbra network.
+- **Schedule services**: Prepare and schedule a circuit for the future with auto-route path detection.
+- **Monitoring**: Quick access to specific nodes to promptly assess their health, usage, and alarms.
+
+<!-- > [!TIP]
+> Explore our [NetInsight Nimbra Vision DataMiner Solution](https://catalog.dataminer.services/details/d9ec570f-a625-40c1-a6fa-c9b4f15416cd), featuring an app designed to streamline your daily operations for monitoring and managing the Nimbra network. -->
 
 ## Use Case
 
