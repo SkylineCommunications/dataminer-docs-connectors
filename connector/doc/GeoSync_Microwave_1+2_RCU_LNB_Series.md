@@ -47,4 +47,4 @@ It provides operators with access to a wide range of **operational parameters**,
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_GeoSync_Microwave_1_2_RCU_LNB_Series_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_GeoSync_Microwave_1+2_RCU_LNB_Series_Technical).
