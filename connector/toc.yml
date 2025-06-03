@@ -5890,14 +5890,16 @@
   - name: Microsoft Platform
     topicUid: Connector_help_Microsoft_Platform
     items:
-    - name: Microsoft Platform Technical
-      topicUid: Connector_help_Microsoft_Platform_Technical
     - name: Microsoft Platform Technical (7.0.0.x)
       topicUid: Connector_help_Microsoft_Platform_Technical_7.0.0.x
+    - name: Microsoft Platform Technical (older ranges)
+      topicUid: Connector_help_Microsoft_Platform_Technical
     - name: Microsoft Platform WMI Queries
       topicUid: microsoft_platform_technical_wmi_queries
     - name: Microsoft Platform WMI Tools
       topicUid: microsoft_platform_technical_wmi_tools
+    - name: Microsoft Platform Troubleshooting
+      topicUid: microsoft_platform_technical_troubleshooting
   - name: Microsoft Platform SNMP
     topicUid: Connector_help_Microsoft_Platform_SNMP
   - name: Microsoft SCOM Universal Connector
