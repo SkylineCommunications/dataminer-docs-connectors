@@ -34,7 +34,7 @@ On initial deployment, some SNMP values may display as **"Not initialized"** unt
 
 The GeoSync Microwave 1+2 RCU LNB connector provides an intuitive interface organized into four dedicated pages, each designed to streamline monitoring and control operations.
 
-### 1. **General Page**
+### General Page
 This page offers an overview of the system and its components. It includes read-only parameters that display key information such as:
 
 - **System Description** – General identification of the system.
@@ -44,7 +44,7 @@ This page offers an overview of the system and its components. It includes read-
 
 This information helps operators quickly verify the hardware setup and identify the system during troubleshooting or maintenance.
 
-### 2. **Switch Control Page**
+### Switch Control Page
 This page allows users to configure the redundancy behavior and manage LNB switching operations:
 
 - **LNB Operating Mode** – Select between **Manual** and **Automatic** switching modes.
@@ -53,7 +53,7 @@ This page allows users to configure the redundancy behavior and manage LNB switc
 
 These controls offer flexibility in managing signal paths and handling redundancy preferences in real-time.
 
-### 3. **LNB Power Page**
+### LNB Power Page
 On this page, users can manage power distribution to each LNB with detailed settings:
 
 - **LNB Naming** – Assign custom labels to LNB 1, LNB 2, and the Backup LNB for easier identification.
@@ -62,7 +62,7 @@ On this page, users can manage power distribution to each LNB with detailed sett
 
 These settings allow for precise control over power management, helping protect hardware and maintain signal integrity.
 
-### 4. **Status/Alarm Page**
+### Status/Alarm Page
 This page provides real-time feedback on system health and alarm conditions:
 
 - **Alarm Statuses** – Monitor the status of critical components including:
