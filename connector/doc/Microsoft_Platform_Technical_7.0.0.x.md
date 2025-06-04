@@ -4,6 +4,8 @@ uid: Connector_help_Microsoft_Platform_Technical_7.0.0.x
 
 # Microsoft Platform (Range 7.0.0.x)
 
+**Available soon.**
+
 ## About
 
 The Microsoft Platform connector enables the monitoring of servers that run the Microsoft Windows OS. Leveraging Windows Management Instrumentation (WMI), it provides visibility on system performance, health metrics, and operational status.
@@ -13,7 +15,7 @@ To query data from the monitored server, the connector uses Windows Management I
 All versions of Microsoft Windows are supported, as long as the connector is able to retrieve data using WMI.
 
 > [!IMPORTANT]
-> Currently, [ranges 1.1.3.x and 6.0.0.x](xref:Connector_help_Microsoft_Platform_Technical) are still supported. However, we strongly recommend switching to range 7.0.0.x.
+> Currently, [ranges 1.1.3.x and 6.0.0.x](xref:Connector_help_Microsoft_Platform_Technical) are still supported. However, we strongly recommend switching to range 7.0.0.x as soon as it is available.
 
 ## Configuration
 

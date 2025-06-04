@@ -20,7 +20,7 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 | 6.0.0.x [SLC Main - Physical Hardware Environment] | Branched from 1.1.2.31: Microsoft WMI interface + interface for DELL-, HP-, and Supermicro-specific SNMP parameters. | Yes | Yes |
 
 > [!IMPORTANT]
-> Currently, ranges 1.1.3.x and 6.0.0.x are still supported. However, we strongly recommend switching to [range 7.0.0.x](xref:Connector_help_Microsoft_Platform_Technical_7.0.0.x).
+> Currently, ranges 1.1.3.x and 6.0.0.x are still supported. However, we strongly recommend switching to [range 7.0.0.x](xref:Connector_help_Microsoft_Platform_Technical_7.0.0.x) as soon as it is available.
 
 ## Configuration
 
