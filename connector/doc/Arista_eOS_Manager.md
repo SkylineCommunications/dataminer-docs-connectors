@@ -4,10 +4,7 @@ uid: Connector_help_Arista_eOS_Manager
 
 # Arista eOS Manager
 
-The Arista eOS Manager connector can monitor Arista switches of type **7010T** and **7050SX**:
-
-- **7010 series**: 1U low power (52 W) line-rate 1 Gb top-of-rack switch, with 4x10 Gb uplinks.
-- **7050 series**: 1U low-latency cut-through line-rate 10 Gb and 40 Gb switches. Higher port density than the 7100 series, with a minimum of 52 x 10 GbE ports but slightly increased latency (1.2 s or less).
+The Arista Manager connector can monitor all Arista systems running the **Arista EOS** operating system.
 
 This connector can be used to monitor operational state data at the global **interface** level. **Platform** parameters are available for **PSU**, **Fan**, and **Temperature**. **ACL**, **LLDP**, **BGP**, and **PTP** information is shown on the respective pages. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
 
