@@ -84,7 +84,7 @@ On this page, the **Trap Logs** table displays a log of the traps received from 
 
 ### Polling Settings 
 
-On this page, polling groups polling can be configured. Group polling can be either enabled, or disabled. And the polling time can be configured.
+On this page, group polling can be configured. You can either enable or disable group polling, and you can configure the polling time.
 
 ### Web Interface Page
 
