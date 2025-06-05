@@ -2195,6 +2195,11 @@
     topicUid: Connector_help_CISCO_ASA_Software
   - name: CISCO ASR Manager
     topicUid: Connector_help_CISCO_ASR_Manager
+  - name: CISCO ATA192
+    topicUid: Connector_help_CISCO_ATA192
+    items:
+    - name: CISCO ATA192 Technical
+      topicUid: Connector_help_CISCO_ATA192_Technical
   - name: CISCO AS Series Media Processor
     topicUid: Connector_help_CISCO_AS_Series_Media_Processor
   - name: CISCO Catalyst SD-WAN
@@ -4322,6 +4327,11 @@
     topicUid: Connector_help_GeoSync_Microwave_1+1_RCU_LNA_Series
   - name: GeoSync Microwave 1+1 Redundant Ku-band Line Driver
     topicUid: Connector_help_GeoSync_Microwave_1+1_Redundant_Ku-band_Line_Driver
+  - name: GeoSync Microwave 1+2 RCU LNB Series
+    topicUid: Connector_help_GeoSync_Microwave_1+2_RCU_LNB_Series
+    items:
+      - name: GeoSync Microwave 1+2 RCU LNB Series Technical
+        topicUid: Connector_help_GeoSync_Microwave_1+2_RCU_LNB_Series_Technical
   - name: GeoSync Microwave E1R-9501450-600114
     topicUid: Connector_help_GeoSync_Microwave_E1R-9501450-600114
   - name: GeoSync Microwave R1R Series
