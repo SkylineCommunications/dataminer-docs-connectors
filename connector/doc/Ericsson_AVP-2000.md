@@ -287,7 +287,7 @@ This page displays the audio input settings of the cards:
 - **Audio Inputs**
 - **Audio Encode**
 
-Audio Inputs can be switched on and off by configuring Source and Source Switchout fields in the Audio Inputs table.
+To switch audio inputs on and off, configure the Source and Source Switchout fields in the Audio Inputs table.
 
 ### Network Tree
 
