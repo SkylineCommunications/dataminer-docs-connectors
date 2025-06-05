@@ -5,7 +5,7 @@ uid: Connector_help_GeoSync_Microwave_1+2_RCU_LNB_Series
 
 ## About
 
-The **GeoSync Microwave 1+2 RCU LNB Series** connector enables seamless integration of 1+2 Low-Noise Block downconverter (LNB) redundancy systems with **DataMiner**, ensuring optimal performance and reliability in satellite communication infrastructures. Designed to support both manual and automatic switching, the connector facilitates **real-time monitoring and control via SNMP**, offering robust visibility into device status, signal paths, and power configurations.
+The **GeoSync Microwave 1+2 RCU LNB Series** connector enables seamless integration of 1+2 Low-Noise Block downconverter (LNB) redundancy systems with DataMiner, ensuring optimal performance and reliability in satellite communication infrastructures. Designed to support both manual and automatic switching, the connector facilitates **real-time monitoring and control via SNMP**, offering robust visibility into device status, signal paths, and power configurations.
 
 It provides operators with access to a wide range of **operational parameters**, such as signal strength and lock status, along with **switch positions** and **redundancy configurations**, including priority settings and failover status. This integration empowers broadcasters and satellite operators to proactively manage their infrastructure, reduce downtime, and streamline operations from a centralized, user-friendly interface.
 
@@ -40,7 +40,7 @@ It provides operators with access to a wide range of **operational parameters**,
 
 **Challenge**: Lack of centralized visibility into remote LNB devices.
 
-**Solution**: Consolidates LNB device monitoring into a single-pane-of-glass within DataMiner.
+**Solution**: Consolidates LNB device monitoring into a single pane of glass within DataMiner.
 
 **Benefit**: Enhances operational awareness and streamlines fault detection across multiple remote sites.
 
