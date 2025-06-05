@@ -9,6 +9,7 @@ The Standard DataMiner PTP Device is a **mediation** protocol used by the **PTP 
 The following connectors are currently mediated with the latest version:
 
 - Arista Manager
+- Arista eOS Manager
 - Bridge Technologies VB Probe Series
 - CISCO Nexus
 - directOut montone.42
@@ -21,6 +22,7 @@ The following connectors are currently mediated with the latest version:
 - Imagine Communications Selenio Network Processor
 - Lawo HD Core Ravenna
 - Lawo Power Core
+- Lawo V__matrix
 - Meinberg LANTIME IMS-HPS - PTPv2 Instance
 - Meinberg LANTIME IMS-HPS API V10 - PTPv2 Instance
 - Meinberg Lantime M3000 - PTPv2 Module
@@ -29,6 +31,7 @@ The following connectors are currently mediated with the latest version:
 - Riedel Communications MediorNet MuoN (FusioN and VirtU)
 - Ross Video Iggy-AES16.16
 - Ross Video Newt-IPR-3G-4S
+- Seiko Time Server Pro. TS-1550
 - Seiko Time Server Pro. TS-2950
 - Tektronix Prism
 - Tektronix SPG8000 - PTP Interface
