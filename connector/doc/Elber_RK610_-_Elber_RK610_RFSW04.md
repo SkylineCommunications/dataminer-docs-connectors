@@ -23,3 +23,4 @@ This page contains status parameters: **Slot**, **Input Selected**, etc.
 ### Configuration
 
 This page contains configuration parameters. **Manual Mode**, **Input Priority**, etc.
+

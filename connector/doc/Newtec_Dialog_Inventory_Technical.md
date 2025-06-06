@@ -80,3 +80,4 @@ The pages visualizes inventory data using a **tree control** to represent the hi
 Each tree reflects the structure and dependencies of the component types as organized in the source NMS (4IF, XIF, NIF).
 
 Under each CI, the overview of the CI information is also present, which collates information across all elements of that CI Type in a tabular format.
+

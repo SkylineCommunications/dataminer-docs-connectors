@@ -53,3 +53,4 @@ The web interface is only accessible when the client machine has network access 
 
 - Allows you to select, store and recall presets, or return to a default preset.
   - Allows you to configure **alarm delays** for Video Black, Video Frozen, Audio Silence and Audio Silence Level.
+

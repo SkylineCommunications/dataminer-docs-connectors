@@ -22,3 +22,4 @@ This connector is intended to communicate with the device using serial commands 
 
 > [!NOTE]
 > For detailed technical information about the connector, refer to our [technical documentation](xref:Connector_help_CPI_TL12UO_Technical).
+

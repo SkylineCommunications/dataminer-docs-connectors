@@ -15,3 +15,4 @@ The **Telenor Channel Correlation Service OTT** connector generates a single cor
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telenor_Channel_Correlation_Service_OTT_Technical).
+

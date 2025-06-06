@@ -118,3 +118,4 @@ This page contains the **High Power EDFA** table. This table contains the High P
 This page displays the web interface of the device.
 
 Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+

@@ -22,3 +22,4 @@ The Ramiaudio Switch CSS404 is designed for continuous monitoring of mono or ste
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Ramiaudio_Switch_CSS404_Technical).
+

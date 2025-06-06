@@ -191,3 +191,4 @@ The properties that can be updated with this feature are limited to the followin
 ## Notes
 
 The table rows are updated with 1000 rows at a time. This limitation is in place in order to avoid a possible negative effect on DataMiner performance.
+

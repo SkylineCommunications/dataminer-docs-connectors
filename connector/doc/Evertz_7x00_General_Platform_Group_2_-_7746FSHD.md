@@ -51,3 +51,4 @@ This page displays a table with all **line blanking** information.
 ### Alarms
 
 This page displays all alarm information for this card: **Video, AES, Demux, IntelliGain**, and **SCTE**. For each alarm, the **Send Trap** parameter allows you to enable/disable traps for that fault.
+

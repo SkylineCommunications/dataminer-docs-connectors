@@ -50,3 +50,4 @@ With this connector, DataMiner can interface with the Evertz NATX, a high-perfor
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_NATX_Technical).
+

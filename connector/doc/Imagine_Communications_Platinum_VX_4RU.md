@@ -23,3 +23,4 @@ Platinum VX 4RU is a small-to-midsize utility video router capable of handling 1
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Imagine_Communications_Platinum_VX_4RU_Technical).
+

@@ -44,3 +44,4 @@ This integration allows you to monitor and control **Bridge Technologies probe**
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Bridge_Technologies_VB_Probe_Series_Technical).
+

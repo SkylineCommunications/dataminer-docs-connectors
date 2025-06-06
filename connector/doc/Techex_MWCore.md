@@ -228,3 +228,4 @@ If this fails, check the log file of the DataMiner element. If the issue is rela
 ### Incorrect alarm description after switching from one stream to another
 
 TXCore allows you to update an output by switching from one stream to another within the same TXEdge. However, if an alarm exists in DataMiner before this action, the alarm description may still display the original stream after switching. Nevertheless, any alarm actions, such as clearing and escalation, will be properly updated.
+

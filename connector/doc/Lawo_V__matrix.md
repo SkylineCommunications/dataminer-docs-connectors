@@ -146,3 +146,4 @@ This page displays information about the aligners and the combinators.
 
 - **Time Flows Aligners:** Displays the Name, Alert Level, Warning Threshold and Holdover Grains.
 - **Time Flows Combinators:** Displays the Name, Required Type, Min Drift Tolerance, Quorum Command, Session Length Command and Drift Reference Frame.
+

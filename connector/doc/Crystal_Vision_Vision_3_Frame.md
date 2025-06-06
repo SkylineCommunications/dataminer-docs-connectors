@@ -69,3 +69,4 @@ The element created with this connector consists of the following data pages:
   - On the right, you can find all other configuration tables. The columns of these tables are exported as **standalone parameters** of the **Tandem 10 VF** **DVEs**.
 
 - **DVE:** Allows you to enable or disable the **DVE Automatic Removal** feature. Also contains a table with the supported DVE cards.
+

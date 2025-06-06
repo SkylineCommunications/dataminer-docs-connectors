@@ -18,3 +18,4 @@ The **Hitomi MatchBox** connector provides seamless integration between the Hito
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Hitomi_Matchbox_Technical).
+

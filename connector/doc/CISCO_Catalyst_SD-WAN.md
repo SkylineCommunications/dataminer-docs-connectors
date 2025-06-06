@@ -40,3 +40,4 @@ This connector connects to the solution using an HTTP connection and displays va
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_CISCO_Catalyst_SD-WAN_Technical).
+

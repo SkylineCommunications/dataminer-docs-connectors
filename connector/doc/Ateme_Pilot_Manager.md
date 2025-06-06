@@ -17,3 +17,4 @@ The Ateme Pilot Manager provides comprehensive monitoring and control for Ateme 
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Ateme_Pilot_Manager_Technical).
+

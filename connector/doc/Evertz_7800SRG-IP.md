@@ -36,3 +36,4 @@ uid: Connector_help_Evertz_7800SRG-IP
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for 7800SRG-IP, refer to the [Technical help page](xref:Connector_help_Evertz_7800SRG-IP_Technical).
+

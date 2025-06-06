@@ -48,3 +48,4 @@ This connector uses SNMP to monitor the operational status and environmental con
 
 > [!NOTE]
 > For detailed technical information, refer to the [technical documentation](xref:Connector_help_ZTE_ZXR10_Technical).
+

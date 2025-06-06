@@ -117,3 +117,4 @@ This page contains a table with information related to the link statistics of th
 ### Log Page
 
 This page contains a table with the device log in chronological order.
+

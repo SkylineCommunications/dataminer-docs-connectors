@@ -112,3 +112,4 @@ id;type
 DeviceId1;Type1
 DeviceId2;Type2
 ```
+

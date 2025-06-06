@@ -52,3 +52,4 @@ The AMPP Manager is equipped with the essential functionality to list fabrics, n
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Grass_Valley_AMPP_Manager_Technical).
+

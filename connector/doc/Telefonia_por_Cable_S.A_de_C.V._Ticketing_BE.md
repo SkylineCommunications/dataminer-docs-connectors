@@ -46,3 +46,4 @@ The Telefonia por Cable S.A. de C.V. Ticketing BE connector facilitates the send
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE_Technical).
+

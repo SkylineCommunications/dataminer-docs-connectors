@@ -18,3 +18,4 @@ The **Deep Sea Electronics DSE8620 MkII** is an advanced generator control modul
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Deep_Sea_Electronics_DSE8620_MkII_Technical).
+

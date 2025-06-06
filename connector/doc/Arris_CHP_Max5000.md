@@ -131,3 +131,4 @@ This page contains transmission-related information, specifically for the transm
 In addition, the **Distortion** and **Radio Frequency configuration** can be set here for all the cards.
 
 In version 1.0.0.3 of this connector, this page has been revised so that both the radio frequency and optical transmission parameters are available. The page contains tables for both types, and page buttons for the specific configuration of each of the types.
+

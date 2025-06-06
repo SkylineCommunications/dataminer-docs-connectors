@@ -20,3 +20,4 @@ The **Generic Trap Receiver** is a tool used to capture and display SNMP traps f
 
 > [!NOTE]
 > For detailed technical information, refer to the [Technical help page](xref:Connector_help_Generic_Trap_Receiver_Technical).
+

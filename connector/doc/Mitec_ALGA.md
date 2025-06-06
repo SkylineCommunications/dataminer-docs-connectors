@@ -22,3 +22,4 @@ This connector is used to monitor and configure a **Mitec ALGA** device.The devi
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Mitec_ALGA_Technical).
+

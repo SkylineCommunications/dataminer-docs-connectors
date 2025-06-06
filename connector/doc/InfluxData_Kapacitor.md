@@ -20,3 +20,4 @@ This is a DataMiner connector for the **InfluxData Kapacitor**. Using this conne
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_InfluxData_Kapacitor_Technical).
+

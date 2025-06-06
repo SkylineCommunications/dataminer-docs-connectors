@@ -283,3 +283,4 @@ Physical dynamic interfaces:
 - Between interfaces and VLANs tagged on the specific interface, an internal connection is created with the following properties:
 
 - **VLAN ID** connection property with as its value the VLAN Filtering Database ID.
+

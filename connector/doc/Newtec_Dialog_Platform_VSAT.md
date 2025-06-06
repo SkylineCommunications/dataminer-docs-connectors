@@ -33,3 +33,4 @@ The connector uses the following APIs:
 
 > [!NOTE]
 > For detailed technical information, refer to the [Technical help page](xref:Connector_help_Newtec_Dialog_Platform_VSAT_Technical).
+

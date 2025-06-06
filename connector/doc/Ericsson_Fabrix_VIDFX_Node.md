@@ -48,3 +48,4 @@ On this page, you can find the following tables:
 - **Nodes NICs**: Displays the Link State, Bytes Sent, Bytes Received, Packets Sent, Packets Received, Errors In, Errors Out, Drop-In, Drop-Out, and Primary NIC.
 - **Nodes NICs Pingable**: Shows whether a host is pingable or not.
 - **Nodes NICs TCP**: Lists the Out Segments and Retransmitted Segments.
+
