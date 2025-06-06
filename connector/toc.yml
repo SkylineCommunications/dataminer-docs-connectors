@@ -10085,6 +10085,11 @@
     topicUid: Connector_help_Vertex_TLR-1S
 - name: Vertiv
   items:
+  - name: Vertiv EXL S1
+    topicUid: Connector_help_Vertiv_EXL_S1
+    items:
+     - name: Vertiv EXL S1 Technical
+       topicUid: Connector_help_Vertiv_EXL_S1_Technical
   - name: Vertiv Liebert HPF
     topicUid: Connector_help_Vertiv_Liebert_HPF
   - name: Vertiv Watchdog 100-PNPS
