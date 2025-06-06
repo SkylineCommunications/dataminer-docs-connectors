@@ -21,3 +21,4 @@ The element has the following data pages:
 - **Ethernet**: Contains the monitored Ethernet alarm details of the modulator.
 - **Status**: Contains the monitored status (temperature and general) alarm details of the modulator.
 - **Values**: Contains the metrics from the modulator that could be in alarm.
+

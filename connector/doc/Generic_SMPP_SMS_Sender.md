@@ -19,3 +19,4 @@ As such, this connector can be used to interface with any SMS center that suppor
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Generic_SMPP_SMS_Sender_Technical).
+

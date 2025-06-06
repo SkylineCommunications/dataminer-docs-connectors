@@ -15,3 +15,4 @@ The **Telenor Channel Correlation Service Broadcast** connector generates a sing
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telenor_Channel_Correlation_Service_Broadcast_Technical).
+

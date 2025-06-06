@@ -19,3 +19,4 @@ The element has the following data pages:
 - **General**: Displays the main information of the demodulator.
 - **Status**: Contains the monitored status (temperature and general) alarm details of the demodulator.
 - **Values**: Contains the metrics from the demodulator that could be in alarm.
+

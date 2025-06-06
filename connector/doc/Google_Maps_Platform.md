@@ -38,3 +38,4 @@ This **Google Maps Platform connector** interacts with the Google Maps Platform 
 
 > [!NOTE]
 > For detailed technical information and configuration of the element, refer to our [technical documentation](xref:Connector_help_Google_Maps_Platform_Technical).
+

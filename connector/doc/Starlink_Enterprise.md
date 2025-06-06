@@ -217,3 +217,4 @@ If the table is empty, this means no DVEs have been generated yet.
 When a user generates a DVE by enabling the **DVE Creation** toggle button in the **User Terminals** table, a new row will appear in this table.
 
 Removing a DVE is only possibly via the **Delete** button in the **User Terminal DVEs** table. See [User Terminal DVEs](#user-terminal-dves).
+

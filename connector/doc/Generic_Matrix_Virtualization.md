@@ -40,3 +40,4 @@ The Generic Matrix Virtualization connector makes it possible to visualize multi
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Generic_Matrix_Virtualization_Technical).
+

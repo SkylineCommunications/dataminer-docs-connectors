@@ -20,3 +20,4 @@ The element has the following data pages:
 - **Ethernet**: Contains the monitored Ethernet alarm details of the demodulator.
 - **Status**: Contains the monitored status (temperature and general) alarm details of the demodulator.
 - **Values**: Contains the metrics from the demodulator that could be in alarm.
+

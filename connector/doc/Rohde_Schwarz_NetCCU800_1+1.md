@@ -137,3 +137,4 @@ For each transmitter B (DVE) in the **Summary Info Tx Table B**, the following i
 
 - If the transmitter A is in redundancy switchover, the **ASI 1 input** or **ASI 2 input** is connected to the **inout** of transmitter B.
 - This **inout** is connected to the **output** of the corresponding transmitter A.
+

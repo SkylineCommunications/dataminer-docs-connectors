@@ -56,3 +56,4 @@ The Hughes Pulse Platform VSAT connector enables real-time monitoring of VSAT te
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Hughes_Pulse_Platform_VSAT_Technical).
+

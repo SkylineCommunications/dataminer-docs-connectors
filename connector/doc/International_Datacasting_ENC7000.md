@@ -38,3 +38,4 @@ The monitoring connector for the International Datacasting ENC7000 Audio Encoder
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_International_Datacasting_ENC7000_Technical).
+

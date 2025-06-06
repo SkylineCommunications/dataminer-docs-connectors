@@ -33,3 +33,4 @@ The SRT Input is an application connector for the GV AMPP (Agile Media Processin
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for the Grass Valley AMPP SRT Input Application, refer to the [Technical help page](xref:Connector_help_Grass_Valley_AMPP_SRT_Input_Application_Technical).
+

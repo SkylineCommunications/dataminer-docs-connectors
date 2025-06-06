@@ -44,3 +44,4 @@ This DVE child element has the following data pages:
 - **Optical Transmitter**: Allows you to check status information related to the optical transmitter, such as **Laser Button Status, Temperature** and **Bias Current**. You can also configure some of the transmitter parameters, such as **Fiber Length, Modulation Mode**, etc.
 - **RF Transmitter:** Displays the **RF Transmitter Input and Output Tables** and allows you to adjust some output-related parameters.
 - **RF Transmitter Configuration:** Allows you to configure **AGC Mode, Laser Drive, RF Gain** and **Flatness Tilt.**
+

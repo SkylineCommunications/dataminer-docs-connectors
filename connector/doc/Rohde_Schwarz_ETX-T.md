@@ -27,3 +27,4 @@ The **Rohde Schwarz ETX-T** is a cost-effective monitoring receiver in complianc
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Rohde Schwarz ETX-T, refer to the [Technical help page](xref:Connector_help_Rohde_Schwarz_ETX-T_Technical).
+

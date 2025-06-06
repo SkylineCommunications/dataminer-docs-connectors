@@ -17,3 +17,4 @@ With this connector, you can monitor this system using an HTTP connection.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Rosslare_Security_AxTraxNG_Technical).
+

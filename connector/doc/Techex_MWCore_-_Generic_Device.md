@@ -47,3 +47,4 @@ Connectivity for this protocol is managed by the parent protocol Techex MWCore.
 Virtual dynamic interfaces:
 
 - **Output:** Created to interface with the DVE table with **interface type** **out**.
+

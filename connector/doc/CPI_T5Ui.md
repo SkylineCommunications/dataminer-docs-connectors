@@ -18,3 +18,4 @@ The CPI T5UI connector allows monitoring and control for the Ku-Band high-perfor
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for CPI T5Ui, refer to the [technical help page](xref:Connector_help_CPI_T5Ui_Technical).
+

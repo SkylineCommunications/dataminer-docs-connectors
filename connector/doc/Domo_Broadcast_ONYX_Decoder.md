@@ -18,3 +18,4 @@ The **Domo Broadcast ONYX Decoder** connector is used to monitor and control ONY
 
 > [!NOTE]
 > For detailed technical information, including a complete list of the implemented modules in the latest version, refer to our [Technical help page](xref:Connector_help_Domo_Broadcast_ONYX_Decoder_Technical).
+

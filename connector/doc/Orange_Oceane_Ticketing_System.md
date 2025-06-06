@@ -34,3 +34,4 @@ The Orange Oceane Ticketing System connector is a tool that bridges DataMiner al
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Orange_Oceane_Ticketing_System_Technical).
+

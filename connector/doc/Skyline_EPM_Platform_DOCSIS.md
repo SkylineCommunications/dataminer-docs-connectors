@@ -125,3 +125,4 @@ The back-end elements are in charge of requesting the **passives** from the CMTS
 The messaging system integration requires the use of Correlation rules and Automation scripts that will pick up on the information events and send the corresponding message to a message listener to begin the logical flow.
 
 Only CCAP elements that are active and registered in the Registration table are used to filter out passive and non-passive files.
+

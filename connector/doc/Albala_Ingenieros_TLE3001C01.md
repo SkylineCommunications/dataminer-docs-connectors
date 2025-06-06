@@ -50,3 +50,4 @@ The Albala Ingenieros monitoring connector is designed to seamlessly integrate w
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Albala_Ingenieros_TLE3001C01_Technical).
+

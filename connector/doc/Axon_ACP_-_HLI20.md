@@ -96,3 +96,4 @@ Depending on the state of the **Reference Input**, the following connections are
 
 - Between **REF Input 2** and **SDI Output 1**.
   - Between **REF Input 2** and **SDI Output 2**.
+

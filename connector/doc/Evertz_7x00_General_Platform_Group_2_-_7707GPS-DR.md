@@ -39,3 +39,4 @@ The element created with this connector consists of the following data pages:
 - **Monitor**: Displays the device tables corresponding to **MSC, GPS,** and **Source Monitors**, as well as a **Distance** and **Power** reading.
 - **Control**: Displays the **Optical Power Alarm Threshold** and allows you to configure its value.
 - **Faults**: Displays a list of **Faults** in a table, as well as whether a fault is present and if sending traps is allowed.
+

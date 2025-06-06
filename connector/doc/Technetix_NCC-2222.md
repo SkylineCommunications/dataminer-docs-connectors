@@ -19,3 +19,4 @@ An NCC-2222 chassis, as part of the Narrowcast Controller system, combines broad
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Technetix_NCC-2222_Technical).
+
