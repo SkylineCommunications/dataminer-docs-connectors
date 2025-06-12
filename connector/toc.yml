@@ -2282,6 +2282,11 @@
     items:
     - name: Cisco NSO Technical
       topicUid: Connector_help_Cisco_NSO_Technical
+  - name: CISCO NXOS Manager
+    topicUid: Connector_help_CISCO_NXOS_Manager
+    items:
+    - name: CISCO NXOS Manager Technical
+      topicUid: Connector_help_CISCO_NXOS_Manager_Technical
   - name: Cisco Panorama CL
     topicUid: Connector_help_Cisco_Panorama_CL
   - name: Cisco Panorama SL
