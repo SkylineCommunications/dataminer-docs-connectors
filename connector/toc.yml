@@ -3785,6 +3785,11 @@
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-HDMI-2-4K-IP
   - name: Evertz Scorpion 6
     topicUid: Connector_help_Evertz_Scorpion_6
+    name: Evertz Scorpion 18 MIO-DD4-3G
+    topicUid: Connector_help_Evertz_Scorpion_18_MIO-DD4-3G
+    items:
+    - name: Evertz Scorpion 18 MIO-DD4-3G Technical
+      topicUid: Connector_help_Evertz_Scorpion_18_MIO-DD4-3G_Technical
   - name: Evertz TR-4800E
     topicUid: Connector_help_Evertz_TR-4800E
   - name: Evertz VIP-X
