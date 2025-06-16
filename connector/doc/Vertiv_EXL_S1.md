@@ -10,19 +10,17 @@ The Vertiv EXL S1 connector enables data integration and monitoring of Vertiv's 
 
 ## Key Features
 
-- **Unified Integration**: Enables communication between Dataminer and any Vertiv EXL S1 UPS.
+- **Unified integration**: Enables communication between DataMiner and any Vertiv EXL S1 UPS.
 
-- **24/7 Monitoring**: Constant monitoring to support continuous status updates.
+- **24/7 monitoring**: Constant monitoring to support continuous status updates.
 
-## Use Cases
-
-### Use Case 1
+## Use Case
 
 **Challenge**: Operators need to centrally monitor many Vertiv EXL S1 UPS devices spread over multiple sites to ensure continuous uptime.
 
-**Solution**: Use the Vertiv EXL S1 connector to integrate these devices into Dataminer, enabling real-time off-site monitoring.
+**Solution**: Use the Vertiv EXL S1 connector to integrate these devices into DataMiner, enabling real-time off-site monitoring.
 
-**Benefit**: Improves uptime and reliabilty by allowing for proactive issue detections and early awareness of system alarms. 
+**Benefit**: Improves uptime and reliability by allowing for proactive issue detection and early awareness of system alarms.
 
 ## Technical Reference
 

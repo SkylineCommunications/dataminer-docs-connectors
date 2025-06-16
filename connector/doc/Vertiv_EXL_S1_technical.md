@@ -18,38 +18,36 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **Device address**: [Indicate if required or not. If it is, specify default value and range.]
+- **IP address/host**: The polling IP or URL of the destination.
 
 SNMP Settings:
 
-- **Port number**: [The port of the connected device, by default 161.]
-- **Get community string**: [The community string used when reading values from the device (default: *public*).]
-- **Set community string**: [The community string used when setting values on the device (default: *private*).]
+- **Port number**: The port of the connected device, by default 161.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
-
 ## How to Use
 
 ### General Page
 
-On the general page, system information and battery information are available. These include the Firmware version, device name, battery status, battery charge, and more.
+On the General page, system information and battery information are available. This includes the firmware version, device name, battery status, battery charge, and more.
 
-### Inputs, Outputs, and Bypass
+### Inputs, Outputs, and Bypass Pages
 
-The Inputs, Outputs, and Bypass pages have any information regarding their respective title, allowing the monitoring of voltages, currents, power and frequencies of the device.
+These pages contain information regarding the inputs, outputs, and bypass, respectively, allowing you to monitor the voltages, currents, power, and frequencies of the device.
 
 ### Alarms Page
 
-Any alarms thrown up by the UPS are shown on the Alarms page. The status of certain well known alarms can be found in the Well-Known Alarms subpage.
+Any alarms thrown by the UPS are shown on the Alarms page. The status of certain well-known alarms can be found on the **Well-Known Alarms** subpage.
 
 ### Configuration Page
 
-Any information regarding the configuration of the device can be found on the configuration page, like nominal voltage and nominal frequency.
+Any information regarding the configuration of the device, such as the nominal voltage and nominal frequency, can be found on the Configuration page.
 
 ## Notes
 
-The Vertiv EXL S1 requires the configuration of SNMP on the device to allow the connector to poll data.
+For this connector to be able to poll data, SNMP must be configured on the device.
