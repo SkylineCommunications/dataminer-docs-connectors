@@ -200,6 +200,18 @@ It contains the following page buttons:
 
 From version 4.1.1.7 onwards, you can change the Alarm table display key by selecting your preference in the **Alarm Display Key** box. However, note that **changing this value will affect your Alarm Console descriptions** **and may affect historical element data** (alarm and trending).
 
+### Ports Table
+
+The **Ports** table allows users to enable or disable individual input and output ports within the Harmonic NMX driver.
+
+Each port entry in the table includes an **Enable/Disable** setting:
+
+- **Enabled Port**: When a port is enabled, the driver will display its corresponding information in both the **Input** and **Output** sections.
+- **Disabled Port**: When a port is disabled, it will be excluded from processing and will **not display any data** in the Input or Output views.
+
+> [!NOTE]
+> If **all ports are disabled**, no data will be shown in the Input or Output sections of the driver.  
+
 ### Device Service
 
 The Device Service page displays an overview of **all services per device**.
