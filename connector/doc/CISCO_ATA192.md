@@ -1,7 +1,8 @@
 ---
 uid: Connector_help_CISCO_ATA192
 ---
-# CISCO ATA192 Connector
+
+# CISCO ATA192
 
 ## About
 
