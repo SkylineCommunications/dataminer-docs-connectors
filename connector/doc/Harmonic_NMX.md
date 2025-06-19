@@ -167,7 +167,7 @@ WEBSOCKET CONNECTION:
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 > [!NOTE]
-> In the **IP address/host** field, you must specify the **prefix** ***ws://*** **or** ***wss://***, depending on whether an HTTP or HTTPS connection is used.
+> In the **IP address/host** field, you must specify the **prefix *ws://* or *wss://***, depending on whether an HTTP or HTTPS connection is used.
 
 ### Initialization - range 4.1.0.x - 4.1.1.x and 4.2.0.x
 
@@ -181,26 +181,38 @@ There is no redundancy defined.
 
 Depending on the connector range, the element created with this connector can have the data pages detailed below.
 
-### General
+### General Page
 
 The General page displays an overview of all general parameters.
 
-On the left-hand side, you can find the **Alarm Server Version**, the **ID of the last alarm**, the maximal **number of alarm entries**, and a toggle button to change the **trap state of the** **AFA mode**.
+On the left-hand side, you can find the **Alarm Server Version**, the **ID of the last alarm**, the maximal **number of alarm entries**, and a toggle button to change the **trap state of the AFA mode**.
 
 On the right-hand side, the primary and backup **IP addresses** and the **Redundancy Status** are displayed, as well as the **Poll SAPI Interface** parameter, which can be used to enable or disable the polling of serial commands. The latter is used for a redundancy feature in this connector that allows dynamic polling between primary and backup IP addresses to keep track of socket errors in SAPI registration processes in slow or fast serial connections.
 
-### Alarm
+### Alarm Page
 
 The Alarm page displays the alarms that come in through SNMP polling and traps.
 
 It contains the following page buttons:
 
 - **Filters**: Displays a table that allows you to filter the alarm table and count how many **occurrences of an alarm** are present. The filter is applied on the column **Info String** of the alarm table. To add a filter, click **Add Row** and fill in the filter in the added row. The filter should be a string, optionally containing a wildcard (\*).
-- **Trap** **Config**: Allows you to configure which IP traps should be taken into account using the **Accept Traps From** parameter. The parameter value can be a single IP address or a comma-separated list of IP addresses. The addresses can contain "\*" and "?" wildcards.
+- **Trap Config**: Allows you to configure which IP traps should be taken into account using the **Accept Traps From** parameter. The parameter value can be a single IP address or a comma-separated list of IP addresses. The addresses can contain "\*" and "?" wildcards.
 
-From version 4.1.1.7 onwards, you can change the Alarm table display key by selecting your preference in the **Alarm Display Key** box. However, note that **changing this value will affect your Alarm Console descriptions** **and may affect historical element data** (alarm and trending).
+From version 4.1.1.7 onwards, you can change the Alarm table display key by selecting your preference in the **Alarm Display Key** box. However, note that **changing this value will affect your Alarm Console descriptions and may affect historical element data** (alarm and trending).
 
-### Device Service
+### Ports Table
+
+The **Ports** table allows users to enable or disable individual input and output ports within the Harmonic NMX element.
+
+Each port entry in the table includes an **Enable/Disable** setting:
+
+- When a port is **enabled**, the element will display the corresponding information in both the **Input** and **Output** sections.
+- When a port is **disabled**, it will be excluded from processing, and the element will **not display any data** for the port in the Input and Output sections.
+
+> [!NOTE]
+> If **all ports are disabled**, no data will be shown in the Input or Output sections of the element.
+
+### Device Service Page
 
 The Device Service page displays an overview of **all services per device**.
 
@@ -224,11 +236,11 @@ From range 4.0.1.x onwards, it contains the below-mentioned page buttons with in
 - **Port**: Displays information on the ports.
 - **Redundancy Switches**: Displays information on the redundancy switches, including how they are linked. Also allows you to switch between devices.
 
-### Redundancy Overview
+### Redundancy Overview Page
 
 The Redundancy Overview page displays a tree control, showing the **primary and backup devices per redundancy group**. The tree control also indicates if a backup took over from a primary device. However, note that the redundancy parameters only display the correct values if the **IsBackup** property is correctly defined on the Harmonic element.
 
-### Platform
+### Platform Page
 
 The Platform page contains parameters related to the creation of the different DVEs.
 
@@ -250,7 +262,7 @@ This page also contains the following page buttons:
 
 For **range 4.1.0.x - 4.1.1.x** only: For DVEs, it is possible to configure whether child elements should be deleted automatically when they are no longer present in the Harmonic NMX. To do so, configure the **DVE Automatic Deletion** parameter on the **Platform** page. You can also configure the DVE child's name and the view where it should be located, using the **DVE Name** and **DVE View** columns in the **Devices** table.
 
-### WebSocket
+### WebSocket Connection
 
 The **General** page displays the current status of the WebSocket connection.
 
