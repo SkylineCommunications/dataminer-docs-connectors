@@ -1,50 +1,44 @@
 ---
-uid: Connector_help_Skyline_Lock_Manager
+uid: Connector_marketing_Skyline_Lock_Manager
 ---
 
 # Skyline Lock Manager
 
-The Skyline Lock Manager connector allows managing of locks within a DataMiner system for any kind of object by providing a centralised manager accessible through a public API. 
-
 ## About
 
-### Version Info
+The Skyline Lock Manager connector allows managing of locks within a DataMiner system for any kind of object by providing a centralised manager accessible through a public API. 
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]|Initial version|-|-|
+## Key Features
 
+- **DataMiner-system-wide locking**: any component in the DMS can request a lock for an object.
 
-### System Info
+- **Lock any object type**: any real or imaginary object can be locked, as long as the lock requesters give it the same ID.
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |
-|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/)        |
+- **Link objects**: objects and their locks can be linked to eachother, allowing for a more in-depth lock management.
 
-## Configuration
+## Use Cases
 
-### Connections
+### Updating a DOM instance
 
-#### Virtual Connection
+**Challenge**: Imagine two scripts, ran simultaneously on different agents, trying to update the same DOM instance. The risk exists that the second script overwrites the changes made by the first script.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Solution**: By first requesting a lock for the DOM instance to the Skyline Lock Manager, both scripts know whether they can read and update the DOM instance, or if they have to wait until the lock becomes available.
 
-### Initialization
+**Benefit**: Zero risk of overwriting changes to the DOM instance.
 
-On the *Configuration* page, two parameters should be configured according to the systems requirements:
+### Writing to a file
 
-- InterApp Timeout: a timespan used by the [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/), indicating when communication with this element should time-out.
-- Default Auto Lock Release Timespan: when no specific auto unlock timestamp is provided by the API, the value of this parameter will be added to the timestamp of reception of the lock request to define the actual auto unlock timestamp. 
+**Challenge**: Imagine multiple element running the same connector, writing custom logging to the same hardcoded text file. In theory, multiple elements might be trying to write to the file at the exact same time, causing I/O exceptions.
 
-### Redundancy
+**Solution**: By first requesting a lock for the file to the Skyline Lock Manager, all elements know whether they can write to file, or if they have to wait until the lock becomes available.
 
-There is no redundancy defined.
+**Benefit**: Zero risk of I/O exceptions when writing to the same file.
 
-## How to use
+## Technical Reference
 
-By using the [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/), other components within the DataMiner system (e.g.: automation scripts, connectors, ...) can communicate with an element running this connector to request a lock for any kind of object.
+### Prerequisites
 
-The connector keeps track of which locks are taken, along with some metadata like the timestamp of when the lock was taken, as well as the context that holds the lock. This data is stored in memory and can be visualized in the *Locked Objects* table by pressing the *Refresh Table* button.
-Element restart causes this data to be lost.
+**[Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/)** is needed for communication with this connector.
 
-When an object has been locked, any incoming request for the same *Object ID* will be answered with the lock not being granted.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Lock_Manager).
