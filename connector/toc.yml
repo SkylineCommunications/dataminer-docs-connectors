@@ -7912,6 +7912,8 @@
     topicUid: Connector_help_Skyline_Job_Manager
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline Lock Manager
+    topicUid: Connector_help_Skyline_Lock_Manager
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
   - name: Skyline MDC Service Monitoring
