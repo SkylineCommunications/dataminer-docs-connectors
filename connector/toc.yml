@@ -10579,6 +10579,8 @@
     topicUid: Connector_help_ZDF_BFE_KSC_Core
   - name: ZDF Bluestream Live
     topicUid: Connector_help_ZDF_Bluestream_Live
+  - name: ZDF Paradigma
+    topicUid: Connector_help_ZDF_Paradigma
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
