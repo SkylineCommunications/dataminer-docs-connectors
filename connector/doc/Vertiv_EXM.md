@@ -1,5 +1,5 @@
 ---
-uid: Marketing_Vertiv_EXM
+uid: Connector_help_Vertiv_EXM
 ---
 
 # E# Vertiv EXM

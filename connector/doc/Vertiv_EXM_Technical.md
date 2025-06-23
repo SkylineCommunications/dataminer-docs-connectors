@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Vertiv_EXM
+uid: Connector_help_Vertiv_EXM_Technical
 ---
 
 # Vertiv EXM
