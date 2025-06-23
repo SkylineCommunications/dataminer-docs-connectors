@@ -67,10 +67,10 @@ HTTP CONNECTION:
 
 ### Initialization
 
-Before polling can start, you first need to enter the credentials on the **General** page. There are 3 methods for authentication:
-**Key Pair** will require the user to type the **Access Key** and the **Secret Key**. **Session Token** only has to be filled in if credentials for a temporary user are being used.
-**Metadata** will retrieve the temporal credentials from the EC2 Metadata. Only to be used if the DMA is running on an EC2.
-**Assume Role** will used the role account given as the user. Otherwise, it will work the same as the "Metadata" method.
+Before polling can start, you first need to enter the credentials on the **General** page. Using the **Credentials Source** parameter, you can selected 3 different methods for authentication:
+- **Key Pair** will require the user to type the **Access Key** and the **Secret Key**. **Session Token** only has to be filled in if credentials for a temporary user are being used.
+- **Metadata** will retrieve the temporal credentials from the EC2 Metadata. Only to be used if the DMA is running on an EC2.
+- **Assume Role** will used the role account given as the user. Otherwise, it will work the same as the "Metadata" method.
 
 ## Usage
 
