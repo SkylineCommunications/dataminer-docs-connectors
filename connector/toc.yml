@@ -8541,6 +8541,11 @@
         topicUid: Connector_help_Skyline_Job_Manager_Technical
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline Lock Manager
+    topicUid: Connector_help_Skyline_Lock_Manager
+    items:
+    - name: Skyline Lock Manager Technical
+      topicUid: Connector_help_Skyline_Lock_Manager_Technical
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
   - name: Skyline Masking Services
