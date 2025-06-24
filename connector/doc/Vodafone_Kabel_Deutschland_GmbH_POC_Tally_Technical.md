@@ -4,23 +4,11 @@ uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally_Technical
 
 # Vodafone Kabel Deutschland GmbH POC Tally
 
-This is a dedicated connector intended to aggregate the SI System status of the different Lineups and systems.
-
-The POC Tally status is determined for each SI Stream to showcase if the status is: On-Air, Off-Air, On-Air Locally, Off-Air Locally, On-Air Locally Inverted or Off-Air Locally Inverted.
-
 ## About
 
-### Version Info
+This is a dedicated connector intended to aggregate the SI system status of the different lineups and systems.
 
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+The POC tally status is determined for each SI stream, so its status can be shown as *On-Air*, *Off-Air*, *On-Air Locally*, *Off-Air Locally*, *On-Air Locally Inverted*, or *Off-Air Locally Inverted*.
 
 ## Configuration
 
@@ -30,16 +18,20 @@ The POC Tally status is determined for each SI Stream to showcase if the status 
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
-The **General** page displays the aggregated Tally Status information per lineup, site and system.  
-The following pages are foreseen with the status of each lineup or system individually:
-1. iSIMS System
-1. National MUX
-1. Catweazle RegioMUX
+### General Page
 
-Note: each table can be interfaced with through the means of a context-menu (right-click).
+The **General** page displays the aggregated tally status information per lineup, site, and system.
+
+On the following pages, you can see the status of each lineup or system individually:
+
+- iSIMS System
+- National MUX
+- Catweazle RegioMUX
+
+You can interface with each table by right-clicking it to access the context menu.
+
+### User-Defined API Endpoint
+
+The connector comes with a user-defined API endpoint so that it is possible to not only retrieve the status data within DataMiner but also from external systems: `{DMA IP}/api/custom/poc-tally`.
