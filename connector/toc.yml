@@ -10285,6 +10285,11 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service
+  - name: Vodafone Kabel Deutschland GmbH POC Tally
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally
+    items:
+    - name: Vodafone Kabel Deutschland GmbH POC Tally Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally_Technical
   - name: Vodafone Kabel Deutschland GmbH TAG Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service
   - name: Vodafone Kabel Deutschland GmbH Transcoding TS Service
