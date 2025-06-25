@@ -11,7 +11,7 @@ This connector is intended to communicate with the device using serial commands 
 
 ### Connections
 
-This connector uses serial and http connections and requires the following input during element creation:
+This connector uses serial and HTTP connections and requires the following input during element creation:
 
 SERIAL CONNECTION:
 
@@ -52,7 +52,7 @@ On this page you can set the **name** of the amplifier as well as set the time o
 
 #### HTTP Configuration
 
-On this page you can enable or disable the polling for HTTP commands. These commands are necessary to be able to set the **Default Attenuation** found on the *Trip Points* page, which can only be set if the **Remote Control Point** is set to *Web Browser*. If enabled, a **username** and **password** will be needed.
+On this page, you can enable or disable the polling for HTTP commands. These commands are necessary to be able to set the **Default Attenuation** on the **Trip Points** page. This can only be set if the **Remote Control Point** is set to *Web Browser*. If polling for HTTP commands is enabled, a **username** and **password** must be provided.
 
 ### Alarms
 
