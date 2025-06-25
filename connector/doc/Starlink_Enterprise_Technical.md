@@ -65,16 +65,12 @@ TCP/IP settings
 
 A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Configuration** page.
 
-It is possible to install the Starlink Enterprise connector using the **Starlink Enterprise** application package, which provides a simulation extension. The simulation extension is installed alongside the application package. Upon installation, the simulation becomes available and utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the creation of the element. Simulation files are stored within the application's designated directory.
+It is possible to install the Starlink Enterprise connector using the **Starlink Enterprise** application package, which provides a **simulation extension**. The simulation extension is installed alongside the application package. Upon installation, the simulation becomes available and utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the creation of the element. Simulation files are stored within the application's designated directory. History simulation data was added for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
 
 In case you make use of this package, the **simulation will run until you enter the Client ID and Client Secret** on the **Configuration** page. After that, the simulation stops, and the element begins polling data with real values from the device if the credentials are valid.
 
 > [!IMPORTANT]
 > No information will be polled by default. To enable polling, go to the **Accounts** table on the **Accounts** page, and use the toggle button of the relevant row(s) in the **Polling** column.
-
-### Redundancy
-
-No redundancy is defined in the connector.
 
 ## How to Use
 
@@ -176,6 +172,8 @@ On this page, you can review and monitor your data usage per month by type of da
 
 The **Service** column in the **Monthly Data Usage** table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
+The data in the Monthly Data Usage table is retained for 12 months.
+
 ### Daily Data Usage Page
 
 On this page, you can review and monitor your data usage per day by type of data consumed (*Fixed* or *Mobile*, *Priority* or *Standard*).
@@ -206,7 +204,9 @@ The Configuration page also contains two telemetry request configuration paramet
 - **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. This duration is recommended by Starlink in order for all the data points to come in accurately.
 
 > [!NOTE]
-> Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
+>
+> - Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
+> - Telemetry is polled every minute; content is stored using history sets for accurate backpolling.
 
 ### User Terminal DVEs Configuration page
 

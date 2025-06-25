@@ -24,53 +24,51 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ## Key Features
 
-- **Conditional Telemetry Polling**: Allows for telemetry polling per account. Telemetry is being polled every minute, content is stored using history sets for accurate backpolling.
+- **Conditional telemetry polling**: Configure telemetry polling per account.
 
-- **User Terminal Details**: Details on user terminals and service lines. The User Terminal Device Name is the service nickname if a service is active on the user terminal. The Device ID is used as Device Name if no service is active.
+- **User terminal details**: View details on user terminals and service lines.
 
-- **Data Usage**: Review and monitor your data usage per month or day by type of data consumed (Fixed or Mobile, Priority or Standard). Additional services or data consumed beyond the limit is shown in the Overage Lines table. There is a 12 month retention to the Monthly Data Usage table.
+- **Data usage**: Review and monitor your data usage per month or day by type of data consumed (fixed or mobile, priority or standard). Additional services or data consumed beyond the limit is also shown.
 
-- **Simulation Mode**: An extension that utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the element creation and will run until you enter the Client ID and Client Secret**. After that, the simulation stops and the element starts polling real data if the credentials are valid. History simulation data was added for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
+- **Simulation mode**: Replicate real-world scenarios using a simulation extension with built-in logic based on mock accounts and user terminals.
 
-- **User Terminal Dynamic Virtual Elements**: The [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) connector is exported to be able to create a separate child element (DVE) for each known user terminal. These DVEs contain only data related to the user terminal.
+- **User terminal dynamic virtual elements**: Use separate child elements (DVE) to represent the different user terminals, allowing you to view and monitor their data separately. The DVEs will get created automatically using the [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) connector, which gets exported by this connector.
 
-- **Ticketing System Integration**: It's possible to export a CSV file for customer data elements to ingest for ticketing. This CSV file contains basic info about all terminals with valid service lines.
-
-- **Multithreading**: A dedicated thread is used for management/config polling next to the main protocol execution thread to increase polling efficiency.
+- **Ticketing system integration**: Export a CSV file for customer data elements to ingest for ticketing. This CSV file contains basic info about all terminals with valid service lines.
 
 ## Use Cases
 
 ### Use Cases 1
 
-**Challenge**: Mark offline terminals.
+**Challenge**: Marking terminals as offline.
 
-**Solution**: The connector compares the telemetry data with the management data to distinguish the offline terminals.
+**Solution**: The connector compares the telemetry data with the management data to distinguish the offline terminals from other terminals.
 
 **Benefit**: Makes it clear which terminals can be ignored.
 
 ### Use Cases 2
 
-**Challenge**: Show data usage as stacked bar graph.
+**Challenge**: Showing data usage as a stacked bar graph.
 
-**Solution**: Data usage tables are built to easily create a stacked bar graph in a dashboard or low code app.
+**Solution**: Data usage tables are built to easily create a stacked bar graph in a dashboard or low-code app.
 
 **Benefit**: Shows the data usage similar to the web interface.
 
 ### Use Cases 3
 
-**Challenge**: Create services with parameters from a subset of terminals.
+**Challenge**: Creating services with parameters from a subset of terminals.
 
-**Solution**: Ability to create a Dynamic Virtual Element per user terminal.
+**Solution**: Ability to create a dynamic virtual element per user terminal.
 
 **Benefit**: Monitor the KPIs of the most relevant terminals only.
 
 ### Use Cases 4
 
-**Challenge**: Too much requests send from the same IP address.
+**Challenge**: Too many requests sent from the same IP address.
 
-**Solution**: Conditional polling of telemetry data through Polling togglebutton column.
+**Solution**: Conditional polling of telemetry data.
 
-**Benefit**: Multiple elements can be created on different hosts. Accounts A and B can be polled from server Y and accounts C and D can be polled from server Z. The overarching dashboard or low code app can combine this data to show the info of every account.
+**Benefit**: Multiple elements can be created on different hosts. For example, accounts A and B can be polled from server Y, and accounts C and D can be polled from server Z. The overarching dashboard or low-code app can combine this data to show the info of every account.
 
 ### Use Cases 5
 
@@ -78,21 +76,21 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Solution**: Unexpected telemetry column names and alerts will be logged in the element log file.
 
-**Benefit**: Element will indicate by itself when the connector needs to be extended.
+**Benefit**: The element will indicate by itself when the connector needs to be extended.
 
 ### Use Cases 6
 
 **Challenge**: Monitoring based on alerts.
 
-**Solution**: Each row in the Alerts table represents an alert that comes from a user terminal or from a router. Alerts will persist for as long as they are active.
+**Solution**: The connector shows each alert from a user terminal or from a router. Alerts will persist for as long as they are active.
 
-**Benefit**: Web interface alerts are visible in the DataMiner alarm console.
+**Benefit**: Web interface alerts are visible in the DataMiner Alarm Console.
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **DataMiner Feature Release 10.4.2.0 – 13915** is needed for being able to install this connector.
+- **DataMiner Feature Release 10.4.2** or higher.
 
 - **Starlink API access**: API credentials (Client ID, Client Secret) are required for authentication to enable polling.
 
