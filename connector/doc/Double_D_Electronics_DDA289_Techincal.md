@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Double_D_Electronics_DDA289
+uid: Connector_help_Double_D_Electronics_DDA289_Technical
 ---
 
 # Double D Electronics DDA289
