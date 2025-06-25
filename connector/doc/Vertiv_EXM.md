@@ -2,7 +2,7 @@
 uid: Connector_help_Vertiv_EXM
 ---
 
-# E# Vertiv EXM
+# Vertiv EXM
 
 ## About
 
