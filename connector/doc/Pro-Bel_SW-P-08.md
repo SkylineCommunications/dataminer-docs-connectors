@@ -13,7 +13,7 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | Range              | Key Features                                                        | Based on | System Impact                               |
 |--------------------|---------------------------------------------------------------------|----------|---------------------------------------------|
 | 1.0.0.x            | Initial version.                                                    | -        | -                                           |
-| 1.0.1.x            | QVC Italy customer-specific branch (with hard-coded matrix labels). | -        | -                                           |
+| 1.0.1.x            | Hard-coded matrix labels.                                           | -        | -                                           |
 | 1.0.2.x            | DCF implementation.                                                 | -        | -                                           |
 | 1.0.3.x            | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
 | 1.0.4.x            | Additional functionality added.                                     | -        | -                                           |
@@ -69,7 +69,7 @@ SERIAL CONNECTION:
 
 ## Usage
 
-The element has the following data pages: **General** and **Boards**.
+The element has the following data pages: **General** and **Router Control**.
 
 ### General
 
@@ -83,6 +83,6 @@ This page contains the following parameters:
 - **Source Names Length:** Allows you to configure the name length for sources.
 - **Destination Names Length:** Allows you to configure the name length for destinations.
 
-### Boards
+### Router Control
 
 This page contains the **Sources** and **Destinations** tables, which contain information about the respective sources and destinations.
