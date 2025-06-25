@@ -4,27 +4,9 @@ uid: Connector_help_Vertiv_EXM_Technical
 
 # Vertiv EXM
 
-This connector will allow the monitoring of the EXM UPS devices through SNMP communication to validate UPS battery status and levels, inputs, outputs and bypass data.
-
 ## About
 
-### Version Info
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Initial version</li></ul>         |-         |-         |
-
-### Product Info
-
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |2.9.2.r1.588         |
-
-### System Info
-
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |Yes         |   |
+This connector will allow the monitoring of the EXM UPS devices through SNMP communication to validate UPS battery status and levels, inputs, outputs and bypass data.
 
 ## Configuration
 
@@ -37,22 +19,16 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. (default: *161*)
-
+- **IP port**: The IP port of the destination (default: *161*).
 
 SNMP Settings:
 
-- **Get community string**: The community string used when reading values from the device. (default: *public*)
-- **Set community string**: The community string used when setting values on the device. (default: *private*)
-
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Initialization
 
 The user needs to set the IP Address of the device on the element settings to start polling the device information.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
