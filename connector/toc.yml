@@ -9476,6 +9476,11 @@
     topicUid: Connector_help_Telenor_Customer_Validation_Manager
   - name: Telenor Customer Validation Mediator
     topicUid: Connector_help_Telenor_Customer_Validation_Mediator
+  - name: Telenor Device Simulator
+    topicUid: Connector_help_Telenor_Device_Simulator
+    items:
+      - name: Telenor Device Simulator Technical
+        topicUid: Connector_help_Telenor_Device_Simulator_Technical
   - name: Telenor EPG Channel
     topicUid: Connector_help_Telenor_EPG_Channel
   - name: Telenor EPG Manager
