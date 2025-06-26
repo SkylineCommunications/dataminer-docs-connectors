@@ -4,30 +4,9 @@ uid: Connector_help_Fujitsu_FLEXR
 
 # Fujitsu FLEXR
 
-The Fujitsu FLEXR is a management system used to maintain and monitor a wide variety of Fujitsu network elements.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features                                                           | Based on     | System Impact     |
-|----------------------|------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x (Obsolete)   | Initial version                                                        | -            | -                 |
-| 1.0.1.x [SLC Main]   | Revamped Alarms table (Changed primary key format, added display key)  | 1.0.0.x      | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                            |
-|-----------|---------------------|-------------------------|-----------------------|------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | [Fujitsu FLEXR - Network Element](xref:Connector_help_Fujitsu_FLEXR_-_Network_Element)         |
-| 1.0.1.x   | No                  | Yes                     | -                     | [Fujitsu FLEXR - Network Element](xref:Connector_help_Fujitsu_FLEXR_-_Network_Element)         |
+The Fujitsu FLEXR is a management system used to maintain and monitor a wide variety of Fujitsu network elements.
 
 ## Configuration
 
