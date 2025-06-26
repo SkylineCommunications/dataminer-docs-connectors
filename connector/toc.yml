@@ -10140,6 +10140,11 @@
     topicUid: Connector_help_Vertiv_Liebert_HPF
   - name: Vertiv Watchdog 100-PNPS
     topicUid: Connector_help_Vertiv_Watchdog_100-PNPS
+  - name: Vertiv EXM
+    topicUid: Connector_help_Vertiv_EXM
+    items:
+    - name: Vertiv_EXM Technical
+      topicUid: Connector_help_Vertiv_EXM_Technical
 - name: Viaccess
   items:
   - name: Viaccess CAS
