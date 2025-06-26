@@ -4,63 +4,61 @@ uid: Connector_help_NetInsight_Nimbra_Edge
 
 # NetInsight Nimbra Edge
 
-This DataMiner connector can be used to retrieve information from a NetInsight Nimbra Edge platform for monitoring purposes. It also allows you to change which input is connected to a specific output.
+## Overview
 
-The HTTP(S) REST API is used to retrieve data from Nimbra Edge.
+The **NetInsight Nimbra Edge** connector for DataMiner provides full integration with the Nimbra Edge platform, enabling real-time monitoring, configuration, and orchestration of IP-based media workflows across distributed environments. This connector ensures operators have full visibility and control over all media delivery paths and services in cloud, hybrid, or on-premise deployments.
 
-## About
+---
 
-### Version Info
+## Key Features
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version.  | -            | -                 |
-| 1.0.1.x | Flow Engineering.<br>Minimum required version changed to 10.4.5. | 1.0.0.6 | - |
+- **Full Visibility of Inputs and Outputs**: Discover and monitor live streams across a variety of protocols including UDP, RTP, RTMP, RIST, ZIXI, and SRT.
 
-### Product Info
+**Group Assignment with Ownership Control**: Assign multiple groups to each input and flag ownership status directly from the UI.
 
-| Range     | Supported Firmware                    |
-|-----------|---------------------------------------|
-| 1.0.0.x   | R3.9.0, 2022-02-18T14:18:05, 299fd87b |
-| 1.0.1.x   | R3.9.0, 2022-02-18T14:18:05, 299fd87b |
+- **Flow Engineering Interface**: Visualize and manage the lifecycle of media flows using the Flow Logic Engine (FLE) integration.
 
-### System Info
+- **Service and Appliance Monitoring**: Real-time retrieval of appliance, service, port, and region metadata via REST APIs.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+- **Comprehensive Metrics and Alarms**: Includes TS metrics, TR 101 290 validation, and alarm collection with deduplication support.
 
-## Configuration
+- **Dynamic Input/Output Provisioning**: Create, edit, or delete stream endpoints on the fly.
 
-### Connections
+## Use Cases
 
-#### HTTP Connection - Main
+### Centralized Monitoring of Distributed Stream Inputs
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Challenge:**: A broadcaster has multiple ingest points across regions, each delivering live streams using different protocols. Monitoring them individually is complex and error-prone.
 
-HTTP CONNECTION:
+**Solution:**: With the Nimbra Edge connector, all inputs are automatically discovered and displayed within the DataMiner interface. Operators can view real-time metrics, check input health (e.g., TR 101 290), and categorize them by region or type.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *80*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Benefit:**: One centralized view for all input streams, improving operational efficiency and reducing the time to identify faulty sources.
 
-### Initialization
+### Orchestrated Contribution-to-Distribution Workflow
 
-When the element has been created, the API username and password need to be configured on the **Configuration** page.
+**Challenge:**: Managing transitions between incoming contribution feeds and outgoing distribution channels across multiple locations requires manual configuration, which is slow and error-prone.
 
-### Redundancy
+**Solution:**: Use the connector’s Flow Engineering interface to visualize and manage connections between incoming and outgoing flows. InterApp messaging ensures real-time updates and logic tracking.
 
-There is no redundancy defined.
+**Benefit:**: Streamlined flow control, less human error, and improved responsiveness during live broadcast operations.
 
-### Web Interface
+### Multi-Tenant Input Access Control
 
-The web interface is only accessible when the client machine has network access to the product.
+**Challenge:**: A service provider hosts streams for different customers, but needs a way to control which groups can access or own specific inputs.
 
-## How to use
+**Solution:**: Using the Group Assignment feature in the connector, operators can assign multiple groups to an input and specify ownership, directly within the DataMiner UI.
 
-This connector uses the HTTP RESTful API to communicate with the device/platform. The traffic can be seen in the **Stream Viewer**.
+**Benefit:**: Secure and scalable multi-tenant support, ensuring each client only sees and controls their designated streams.
 
-The **General** page shows an overview of the system in a tree view. The root nodes display the appliances. By expanding an appliance, you can drill down to its inputs and outputs.
+### Cloud-Native Stream Provisioning
 
-More detailed information on all the components in the system can be found on the various pages that are implemented in the connector.
+**Challenge:**: Provisioning or editing streams in a cloud-based media platform typically requires switching to the vendor's web interface, slowing down response times.
+
+**Solution:**: Operators can create, edit, or delete inputs and outputs directly within DataMiner using automation scripts or context menu actions powered by the Nimbra Edge connector.
+
+**Benefit:**: Faster provisioning, fewer tools to manage, and improved workflow automation.
+
+## Technical info
+
+> [!NOTE]
+> For more information on how to configure and use the DataMiner connector for NetInsight Nimbra Edge, refer to the [Technical help page](xref:Connector_help_NetInsight_Nimbra_Edge_Technical).
