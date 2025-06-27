@@ -6516,6 +6516,9 @@
     topicUid: Connector_help_NetInsight_Nimbra_Application_Manager
   - name: NetInsight Nimbra Edge
     topicUid: Connector_help_NetInsight_Nimbra_Edge
+    items:
+    - name: NetInsight Nimbra Edge Technical
+      topicUid: Connector_help_NetInsight_Nimbra_Edge_Technical
   - name: NetInsight Nimbra VA
     topicUid: Connector_help_NetInsight_Nimbra_VA
 - name: Netscout
