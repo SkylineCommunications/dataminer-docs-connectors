@@ -66,6 +66,4 @@ More detailed information on all the components in the system can be found on th
 
 ## Notes
 
-Inputs, Outputs and Alarms display keys are customizable via the drop down on that page.
-
-- Inputs, Outputs and Alarms display keys are customizable via the drop down on their respective page.
+Inputs, Outputs and Alarms display keys are customizable via the drop down on their respective page.
