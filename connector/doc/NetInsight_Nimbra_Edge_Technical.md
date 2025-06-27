@@ -23,8 +23,6 @@ This connector uses RESTful HTTP(S) APIs for communication and supports inter-ap
 - Flow Engineering interface with provisioned/incoming/outgoing flow topology
 - Create/Edit/Delete Inputs and Outputs via context menus or automation scripts
 - Alarm monitoring with duplicate filtering
-- Login handling via token-based authentication
-
 ---
 
 ### Connections
@@ -40,8 +38,10 @@ HTTP CONNECTION:
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ## Connector Configuration
-
+ 
 ### Authentication
+
+Found in the **configuration** page.
 
 | Field        | Description                                      |
 |--------------|--------------------------------------------------|
@@ -68,4 +68,4 @@ More detailed information on all the components in the system can be found on th
  
 ## Additional Notes
 
-- Inputs, Outputs and Alarms display keys are customizable via the drop down on that page.
+- Inputs, Outputs and Alarms display keys are customizable via the drop down on their respective page.
