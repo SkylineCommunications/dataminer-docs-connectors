@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_NetInsight_Nimbra_Edge_Technical_Page
+uid: Connector_help_NetInsight_Nimbra_Edge_Technical
 ---
 
 # NetInsight Nimbra Edge
