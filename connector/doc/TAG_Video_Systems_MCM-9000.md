@@ -16,19 +16,20 @@ The connector can receive traps to update the channel and system events in real 
 
 | Range              | Key Features                                           | Based on | System Impact                                       |
 |--------------------|--------------------------------------------------------|----------|-----------------------------------------------------|
-| 1.0.0.x [Obsolete] | Initial version.                                       | -        | -                                                   |
-| 1.1.0.x [Obsolete] |                                                        | -        | -                                                   |
-| 1.1.1.x [Obsolete] |                                                        | -        | -                                                   |
-| 1.1.2.x [Obsolete] |                                                        | -        | -                                                   |
-| 1.1.3.x [Obsolete] |                                                        | -        | -                                                   |
-| 1.1.4.x [Obsolete] |                                                        | 1.1.3.25 | -                                                   |
-| 1.1.5.x [Obsolete] | Option for Unicode added.                              | 1.1.4.17 | All elements need to be re-created.                 |
-| 1.1.6.x [SLC Main] | Default value auto-clear Channel Events Table changed. | 1.1.5.6  | Only elements that are stuck need to be re-created. |
-| 1.1.7.x [Obsolete] | Added non-Unicode support.                             | 1.1.6.19 | -                                                   |
-| 1.1.8.x [SLC Main] |                                                        | 1.1.7.3  | Automation scripts need to be adapted.              |
+| 1.0.0.x [Obsolete]         | Initial version.                                       | -        | -                                                   |
+| 1.1.0.x [Obsolete]         |                                                        | -        | -                                                   |
+| 1.1.1.x [Obsolete]         |                                                        | -        | -                                                   |
+| 1.1.2.x [Obsolete]         |                                                        | -        | -                                                   |
+| 1.1.3.x [Obsolete]         |                                                        | -        | -                                                   |
+| 1.1.4.x [Obsolete]         |                                                        | 1.1.3.25 | -                                                   |
+| 1.1.5.x [Obsolete]         | Option for Unicode added.                              | 1.1.4.17 | All elements need to be re-created.                 |
+| 1.1.6.x [Obsolete]         | Default value auto-clear Channel Events Table changed. | 1.1.5.6  | Only elements that are stuck need to be re-created. |
+| 1.1.7.x [Obsolete]         | Added non-Unicode support.                             | 1.1.6.19 | -                                                   |
+| 1.1.8.x [Non-Unicode Main] | Parses and stores data in Ascii                        | 1.1.7.3  | Automation scripts need to be adapted.              |
+| 2.0.0.x [Unicode Main]     | Parses and stores data in Unicode                      | 1.1.6.29 | Range to be used if element created with Unicode option enabled             |
 
-> [!NOTE]
-> Ranges 1.1.6.x and 1.1.8.x are maintained in parallel. Changes, new features, and fixes will therefore be applied to both ranges.
+> [!WARNING]
+> It is recommended to stay using unicode or non-unicode range as switching will cause instability issues when reading alarming and trend data. Both ranges have the same features.
 
 ### Product Info
 
