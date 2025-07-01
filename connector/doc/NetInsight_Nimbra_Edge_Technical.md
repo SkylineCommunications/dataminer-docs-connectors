@@ -21,7 +21,8 @@ It includes the following features:
 - Flow Engineering interface with provisioned/incoming/outgoing flow topology
 - Create/Edit/Delete inputs and outputs via context menus or Automation scripts
 - Alarm monitoring with duplicate filtering
----
+
+## Configuration
 
 ### Connections
 
@@ -35,22 +36,16 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination (default: *80*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-## Connector Configuration
- 
 ### Authentication
 
-Found in the **configuration** page.
+When you have created the element, fill in the following parameters on the **Configuration** page:
 
-| Field        | Description                                      |
-|--------------|--------------------------------------------------|
-| **API Username** | Username for accessing the Nimbra Edge API |
-| **API Password** | Password associated with the API user       |
+- **API Username**: The username for accessing the Nimbra Edge API.
+- **API Password**: The password associated with the API user.
 
-After entering credentials, press the **Login** button to authenticate. The **API Login Status** parameter will confirm if the login succeeded.
+When you have entered these credentials, click the **Login** button to authenticate.
 
-### Redundancy
-
-There is no redundancy defined.
+The **API Login Status** parameter will confirm if the login succeeded.
 
 ### Web Interface
 
@@ -66,4 +61,4 @@ More detailed information on all the components in the system can be found on th
 
 ## Notes
 
-Inputs, Outputs and Alarms display keys are customizable via the drop down on their respective page.
+You can customize the display keys for inputs, outputs, and alarms with the dropdown boxes on the Inputs, Outputs, and Alarms pages, respectively.
