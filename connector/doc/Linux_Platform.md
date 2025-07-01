@@ -85,7 +85,7 @@ NOTE: In SSH Mode, the Processor table will use different indexes for each proce
 
 ### Task Manager
 
-This page contains the **Task Manager** table, which lists the processes that are active on the server. Note that the **CPU Load** of a process can exceed 100% if the process uses multiple cores. If a process is multi-threaded, it can use multiple cores simultaneously. For example, if you run a multi-threaded application like a video encoder or a scientific computation tool, it might show 300% CPU load on a quad-core system. This means it is using three cores fully. 200% CPU load means two cores are fully utilized, and so on.
+This page contains the **Task Manager** table, which lists the processes that are active on the server. Note that if the Communication Type is SSH (see Configuration page), the **CPU Load** of a process can exceed 100% if the process uses multiple cores. If a process is multi-threaded, it can use multiple cores simultaneously. For example, if you run a multi-threaded application like a video encoder or a scientific computation tool, it might show 300% CPU load on a quad-core system. This means it is using three cores fully. 200% CPU load means two cores are fully utilized, and so on. The **Normalized CPU Load** column shows the CPU Load per process in the range of 0% to 100%.
 
 In addition, the **Process Validation** table allows you to validate whether a given process is still running upon each new polling cycle.
 When you add a process to validate, you will be able to select it from a prepopulated list of the current processes.
