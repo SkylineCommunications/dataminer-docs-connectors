@@ -18,7 +18,6 @@ The connector only polls the services from one of the transport streams of the I
 | 1.1.1.x | Normalized parameters removed. New display key for Transport Stream PIDs table. | 1.1.0.7 | - Loss of normalized parameters. <br>- Loss of trend and alarm data in the Transport Stream PIDs table. |
 | 1.1.2.x [SLC Main] | - Display Key implemented on table Transport Stream Service. <br>- Adjustable name for element creation | 1.1.0.7 | Loss of trend and alarm data in the Transport Stream Services table |
 
-
 ### Product Info
 
 | Range     | Supported Firmware     |
