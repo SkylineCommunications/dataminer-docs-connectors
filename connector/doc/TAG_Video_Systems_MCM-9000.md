@@ -14,8 +14,8 @@ The connector can receive traps to update the channel and system events in real 
 
 ### Version Info
 
-| Range              | Key Features                                           | Based on | System Impact                                       |
-|--------------------|--------------------------------------------------------|----------|-----------------------------------------------------|
+| Range                      | Key Features                                           | Based on | System Impact                                       |
+|----------------------------|--------------------------------------------------------|----------|-----------------------------------------------------|
 | 1.0.0.x [Obsolete]         | Initial version.                                       | -        | -                                                   |
 | 1.1.0.x [Obsolete]         |                                                        | -        | -                                                   |
 | 1.1.1.x [Obsolete]         |                                                        | -        | -                                                   |
@@ -25,8 +25,8 @@ The connector can receive traps to update the channel and system events in real 
 | 1.1.5.x [Obsolete]         | Option for Unicode added.                              | 1.1.4.17 | All elements need to be re-created.                 |
 | 1.1.6.x [Obsolete]         | Default value auto-clear Channel Events Table changed. | 1.1.5.6  | Only elements that are stuck need to be re-created. |
 | 1.1.7.x [Obsolete]         | Added non-Unicode support.                             | 1.1.6.19 | -                                                   |
-| 1.1.8.x [Non-Unicode Main] | Parses and stores data in Ascii. Range to be used if element created with Unicode option disabled                         | 1.1.7.3  | Automation scripts need to be adapted.              |
-| 2.0.0.x [Unicode Main]     | Parses and stores data in Unicode. Range to be used if element created with Unicode option enabled                       | 1.1.6.29 | -            |
+| 1.1.8.x [Non-Unicode Main] | Parses and stores data in ASCII. Range to be used if element is created with **Unicode option disabled**. | 1.1.7.3  | Automation scripts need to be adapted. |
+| 2.0.0.x [Unicode Main]     | Parses and stores data in Unicode. Range to be used if element is created with **Unicode option enabled**. | 1.1.6.29 | -            |
 
 > [!WARNING]
 > It is recommended to stay using unicode or non-unicode range as switching will cause instability issues when reading alarming and trend data. Both ranges have the same features.
