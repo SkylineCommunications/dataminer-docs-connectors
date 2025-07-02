@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer
+uid: Connector_help_Telenor_TVTnD_Manager
 ---
 
 # Telenor MAM Event Aggregator And Analyzer
