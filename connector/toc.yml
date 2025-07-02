@@ -9510,6 +9510,11 @@
   - name: Telenor InHome Status
     topicUid: Connector_help_Telenor_InHome_Status
   - name: Telenor MAT File Validator
+  - name: Telenor MAM Event Aggregator And Analyzer
+    topicUid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer
+    items:
+      - name: Telenor MAM Event Aggregator And Analyzer Technical
+        topicUid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer_Technical
     topicUid: Connector_help_Telenor_MAT_File_Validator
   - name: Telenor MSNW Service Definition
     topicUid: Connector_help_Telenor_MSNW_Service_Definition
