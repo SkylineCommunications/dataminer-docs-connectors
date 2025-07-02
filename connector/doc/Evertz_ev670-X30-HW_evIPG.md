@@ -20,16 +20,6 @@ The 670 is a virtualized media processing platform that enables users to move a 
 | 1.0.3.x [SLC Main] | Ability to enable/disable polling of QSFPs. Subtable is still being used. | 1.0.2.3 | Appends user-defined description to IDX and applies filtering to some rows. |
 | 1.0.4.x | Addition of serial connection to process syslog messages. | 1.0.3.4 | New smart-serial connection. Interface details needs to be entered in the element editor. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-| 1.0.2.x   | -                      |
-| 1.0.3.x   | 2.9.2.r1.588           |
-| 1.0.4.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

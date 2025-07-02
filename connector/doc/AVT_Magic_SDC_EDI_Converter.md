@@ -15,12 +15,6 @@ This connector makes it possible to monitor an AVT Magic SDC EDI Converter with 
 | 1.0.0.x | Initial version. | - | - |
 | 1.0.1.x [SLC Main] | - Updated DCF version. <br>- Changed type string to fit units. <br>- Additional minor fixes | 1.0.0.4 | - New DCF version increases the minimum DataMiner version. <br>- Changing type of parameter affects versioning. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

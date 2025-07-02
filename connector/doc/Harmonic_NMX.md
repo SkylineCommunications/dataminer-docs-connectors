@@ -173,10 +173,6 @@ WEBSOCKET CONNECTION:
 
 In order to start polling data from the device, go to the **General** page of the element and fill in the **Username** and **Password** (and optionally the **Domain**). If you have filled in the correct credentials, the **Login Status** will be set to *OK*, and the data in the element will be filled in. We advise the use of a dedicated API user to manage this connection.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Depending on the connector range, the element created with this connector can have the data pages detailed below.

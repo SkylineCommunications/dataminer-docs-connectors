@@ -15,13 +15,6 @@ This connector is able to retrieve and set data on the Fraunhofer content server
 | 1.0.0.x [SLC Main]   | Initial version. | -            | -                                        |
 | 1.0.1.1              | New MIB support. | 1.0.0.1      | New primary key within the Status table. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

@@ -41,14 +41,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **Bus address**: The bus address of the device. Specify the bus address in the format **UU.PP**, with UU being the RollNet address and PP being the slot number (chassis is 00). Example: *10.01*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector has the following data pages:
