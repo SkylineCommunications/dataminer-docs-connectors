@@ -14,12 +14,6 @@ This is an SNMP connector for the **Qbit Q806 redundancy switch**. It can be use
 |----------------------|---------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Important parameters can be retrieved and set via SNMP. | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

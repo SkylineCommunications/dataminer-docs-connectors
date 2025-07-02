@@ -46,10 +46,6 @@ HTTP CONNECTION:
 
 For the **matrix** to be polled correctly, you must specify the level that should be monitored in the **Levels** **Table**. As soon as this done, the matrix will be initialized.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

@@ -17,12 +17,6 @@ The connector only polls the services from one of the transport streams of the I
 | 1.1.0.7 | Initial version. | - | - |
 | 1.1.1.x [SLC Main] | Normalized parameters removed. New display key for Transport Stream PIDs table. | 1.1.0.7 | - Loss of normalized parameters. <br>- Loss of trend and alarm data in the Transport Stream PIDs table. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.1.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
