@@ -62,13 +62,6 @@ Topologies describe the connections in the diagram shown in the visual interface
 | 1.0.0.x [Obsolete] | Initial version.                                                                        | -        | -             |
 | 1.0.1.x [SLC Main] | Added CCAP core Relations KPIs table. Removed Service Group table and its dependencies. | 1.0.0.8  | -             |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

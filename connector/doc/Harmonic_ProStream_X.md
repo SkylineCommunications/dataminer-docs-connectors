@@ -20,7 +20,6 @@ This connector can be used to monitor the Harmonic ProStream X. The ProStream X 
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
 | 1.0.1.x   | 2.9.5.0.181            |
 | 1.1.0.x   | 3.4.1.0.13             |
 

@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 To initialize the connector, go to the **Configuration** page of the element, fill in the **Username** and **Password** parameters, and click the **Authentication** button.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product. You also need to fill in the **Web Interface Address** parameter on the **Configuration** page.

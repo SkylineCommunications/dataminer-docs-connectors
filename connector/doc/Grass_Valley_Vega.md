@@ -65,10 +65,6 @@ SERIAL CONNECTION:
   - **Bus address**: The **matrix number**, **level number**, **number of inputs** and **number of outputs** of the matrix separated by periods (".") The matrix number range is 0-15, the level number range is 0-7, and the range of inputs and outputs is 1-1024.
     For example: *"0.0.1024.1024".*
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

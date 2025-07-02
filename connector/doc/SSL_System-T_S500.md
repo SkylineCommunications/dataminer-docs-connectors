@@ -15,13 +15,6 @@ This is a smart-serial connector (Ember+) that is used to monitor and configure 
 | 1.0.0.x              | Initial version                             | -            | -                 |
 | 1.0.1.x [SLC Main]   | Changed primary key GPI/GPO Tables to index | 1.0.0.1      | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
