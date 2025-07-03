@@ -46,10 +46,6 @@ SERIAL CONNECTION:
 
 Default stream names are used in the router control tables. If you want custom names to be displayed, you can change the names in the DataMiner element. Custom names already configured on the device need to be retrieved separately. This can be done via the **Get Stream Names** button on the **General** page. **Do not change any configuration while this action is running, because then that change could be applied on the wrong stream!**
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The **General** page displays the overall status of the device.

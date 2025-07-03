@@ -16,12 +16,6 @@ This **SNMP** connector is used to monitor and configure the **Evertz EMR-IP96-A
 |--------------------|---------------------|----------|---------------|
 | 1.0.0.x [SLC Main] | Audio Channel Traps | -        | -             |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

@@ -19,7 +19,6 @@ Imagine Communications' Software-Defined Networking (SDN) framework is a hybrid 
 
 | Range     | Supported Firmware                                      |
 |-----------|---------------------------------------------------------|
-| 1.0.0.x   | 2.9.2.r1.588                                            |
 | 2.0.0.x   | REST API SDNO Controller 3.6 Logical Router Control 1.5 |
 
 ### System Info

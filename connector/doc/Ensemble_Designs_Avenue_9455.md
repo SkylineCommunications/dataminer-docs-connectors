@@ -12,12 +12,6 @@ Ensemble Designs Avenue 9455 monitors an Ensemble Frame, which contains only car
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                      |

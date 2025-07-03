@@ -64,10 +64,6 @@ The EPM Solution works with a file system for internal element communication in 
   - **System Username**: The username of the user that has access to the directory. If no domain is specified, the domain from the element's DMA location will be used.
   - **System Password**: The password of the user to access the remote directory.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use - Range 1.0.0.x
 
 The OLT connectors are used as links in the EPM GPON solution chain. These represent the lower layer in the GPON topology, where the information of ONTs is retrieved to then be processed/aggregated by the upper layers. It is important to take into account that some of the ONT KPIs come from an external source (e.g. KAFKA). You therefore need to make sure communication with that source is functioning properly. In addition, the number of updates received determines the efficiency, so the more updates, the longer processing will take.
