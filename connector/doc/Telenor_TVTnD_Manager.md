@@ -10,9 +10,12 @@ In the Telenor DMS, the **Telenor TVTnD Manager** is in charge of customer devic
 
 ## Key Features
 
-- **Error statistics from offloaded data**: Easily analyze error trends over time and identify periods with elevated error counts.
-
-- **Customizable aggregation period**: Adjust the aggregation window to test different configurations and optimize results.
+- **Customer Device Diagnosis**: Perform on-demand diagnosis of customer devices using configurable input parameters (Customer ID, diagnosis period, and response language).
+- **Diagnosis Log**: Track detailed information about each diagnosis run, including times, customer, initiator, and results.
+- **Diagnosis and Detected Issue Tables**: Store and link diagnoses and detected issues for further analysis.
+- **Aggregation by Device Class**: Automatically aggregate diagnoses and detected issues by device class type every 5 minutes.
+- **Customizable Aggregation Period**: Adjust the aggregation window to test different configurations and optimize results.
+- **Statistics and Reporting**: View error counts and statistics for diagnoses and detected issues, aggregated by device class and time period (last hour, last day).
 
 ## Technical Reference
 
