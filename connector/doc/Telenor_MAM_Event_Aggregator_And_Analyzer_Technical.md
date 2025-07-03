@@ -6,7 +6,7 @@ uid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer_Technical
 
 ## About
 
-In the Telenor DMS, the **Telenor MAM Event Aggregator and Analyzer** element queries an OpenSearch database for aggregated MAM error events offloaded by the system. Aggregations are performed by *Device Class Type* and *Asset ID*.
+In the Telenor DMS, the **Telenor MAM Event Aggregator and Analyzer** element queries an OpenSearch database for aggregated MAM error events offloaded by the system. Aggregations are performed by **Device Class Type** and **Asset ID**.
 
 Since the raw data in OpenSearch is retained for only 21 days, the primary purpose of this element is to aggregate and store the data for long-term analysis. It also enables alerting based on error counts.
 
@@ -27,6 +27,8 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to Use
 
+### General
+
 On the **General** page, you can:
 
 - View statistics from the latest aggregation.
@@ -44,20 +46,12 @@ The aggregation period is configurable. The start and end times are calculated a
 
 ### Data Tables
 
-Aggregated data is displayed in two pages:
+Aggregated data is displayed on two pages:
 
-- **Errors Per Device Type**
-- **Errors Per Asset**
+- **Errors Per Device Type**, which displays the following information:
 
-These pages contain the following columns:
+  - **Events Count**: The total number of errors during the aggregation period, grouped by Error Code and Device Class.
 
-#### Error Events Per Device Type
+  - **Devices Count**: The number of distinct devices that generated errors during the aggregation period.
 
-- **Events Count**: Total number of errors during the aggregation period, grouped by Error Code and Device Class.
-- **Devices Count**: Number of distinct devices that generated errors during the aggregation period.
-
-#### Error Events Per Asset ID
-
-- **Events Count**: Total number of errors during the aggregation period, grouped by Error Code and Asset ID.
-
-
+- **Errors Per Asset**, which shows the **Events Count**, i.e. the total number of errors during the aggregation period, grouped by Error Code and Asset ID.
