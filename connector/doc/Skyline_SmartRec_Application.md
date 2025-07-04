@@ -10,76 +10,17 @@ This connector works in combination with the **Ericsson RedBee EPG**, **Witbe Ro
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x [Obsolete]</td>
-<td>Initial version</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>2.0.0.x [Obsolete]</td>
-<td>DVE elements for each channel</td>
-<td>1.0.0.12</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>2.0.1.x [SLC Main]</td>
-<td>Split in separate elements for each platform</td>
-<td>2.0.0.17</td>
-<td><ul>
-<li>Recreation of element is required</li>
-<li>Loss of all trend data</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 2.0.0.x [Obsolete] | DVE elements for each channel | 1.0.0.12 | - |
+| 2.0.1.x [SLC Main] | Split in separate elements for each platform | 2.0.0.17 | - Recreation of element is required<br>- Loss of all trend data |
 
 ### System Info
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-<td><strong>Linked Components</strong></td>
-<td><strong>Exported Components</strong></td>
-</tr>
-<tr class="even">
-<td>2.0.1.x</td>
-<td>No</td>
-<td>Yes</td>
-<td><ul>
-<li>Ericsson RedBee EPG</li>
-<li>WitBe Robot Manager</li>
-<li>WitBe Robot</li>
-<li>Ziggo Set Reservation Color</li>
-</ul></td>
-<td>Skyline SmartRec Application - Channel</td>
-</tr>
-</tbody>
-</table>
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 2.0.1.x | No | Yes | - Ericsson RedBee EPG<br>- WitBe Robot Manager<br>- WitBe Robot<br>- Ziggo Set Reservation Color | Skyline SmartRec Application - Channel |
 
 ## Configuration
 
