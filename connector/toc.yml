@@ -8642,6 +8642,9 @@
         topicUid: Connector_help_Skyline_Table_Checker_Technical
   - name: Skyline Universal Weather
     topicUid: Connector_help_Skyline_Universal_Weather
+    items:
+    - name: Skyline Universal Weather Technical
+      topicUid: Connector_help_Skyline_Universal_Weather_Technical
   - name: Skyline VOD Workflow Application
     topicUid: Connector_help_Skyline_VOD_Workflow_Application
   - name: SLC SDF DCF
