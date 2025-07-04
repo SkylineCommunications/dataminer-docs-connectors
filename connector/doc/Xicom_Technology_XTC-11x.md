@@ -10,62 +10,13 @@ With this connector, you can monitor **Xicom XTC-11x** controllers. It also allo
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><h3 id="range">Range</h3></td>
-<td><strong>Key Features</strong></td>
-<td><strong>Based on</strong></td>
-<td><strong>System Impact</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Initial version. Deprecated range.</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.0.1.x</td>
-<td>Removed functionality: HPA-A RF, HPA-B RF, Enable all/Inhibited all.</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1.1.1.x</td>
-<td>Removed functionality: PSU 1/PSU 2 Status parameters.</td>
-<td>1.0.1.x</td>
-<td>-</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x</td>
-<td>Support for 4 switches and minimal faults/alarming per HPA.</td>
-<td>-</td>
-<td>-</td>
-</tr>
-<tr class="even">
-<td>1.2.0.x [SLC Main]</td>
-<td>Adds locking to each pair.</td>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.1.1.x   | -                      |
-| 1.1.0.x   | -                      |
-| 1.2.0.x   | -                      |
+| Range              | Key Features                                                         | Based on | System Impact |
+|--------------------|----------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version. Deprecated range.                                   | -        | -             |
+| 1.0.1.x            | Removed functionality: HPA-A RF, HPA-B RF, Enable all/Inhibited all. | -        | -             |
+| 1.1.1.x            | Removed functionality: PSU 1/PSU 2 Status parameters.                | 1.0.1.x  | -             |
+| 1.1.0.x            | Support for 4 switches and minimal faults/alarming per HPA.          | -        | -             |
+| 1.2.0.x [SLC Main] | Adds locking to each pair.                                           |          |               |
 
 ### System Info
 
