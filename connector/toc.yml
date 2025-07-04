@@ -9517,6 +9517,11 @@
     topicUid: Connector_help_Telenor_InHome_Status
   - name: Telenor MAT File Validator
     topicUid: Connector_help_Telenor_MAT_File_Validator
+  - name: Telenor MAM Event Aggregator And Analyzer
+    topicUid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer
+    items:
+      - name: Telenor MAM Event Aggregator And Analyzer Technical
+        topicUid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer_Technical
   - name: Telenor MSNW Service Definition
     topicUid: Connector_help_Telenor_MSNW_Service_Definition
   - name: Telenor Newtec Dialog Platform
@@ -9533,6 +9538,11 @@
     topicUid: Connector_help_Telenor_Splunk_Service_Analyzer
   - name: Telenor TVTnD API Stats
     topicUid: Connector_help_Telenor_TVTnD_API_Stats
+  - name: Telenor TVTnD Manager
+    topicUid: Connector_help_Telenor_TVTnD_Manager
+    items:
+      - name: Telenor TVTnD Manager Technical
+        topicUid: Connector_help_Telenor_TVTnD_Manager_Technical
   - name: Telenor Weather Station Logging
     topicUid: Connector_help_Telenor_Weather_Station_Logging
 - name: Teleste
