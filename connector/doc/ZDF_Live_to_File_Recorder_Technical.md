@@ -16,9 +16,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- IP address/host: IP address/host on which recorders are hosted.
-- IP port: IP Port of recorders.
+- **IP address/host**: The IP address/host where the recorders are hosted.
+- **IP port**: The IP port of the recorders.
 
 ## How to Use
 
-When creating the element, the user must specify the **IP address/host** and **Port** where the recorders are hosted. Once the element is created with the correct host and port, information about all recorders will be displayed in the tables
+Once you have created the element with the above-mentioned connection details, you will be able to monitor information about all recorders in the displayed tables.
