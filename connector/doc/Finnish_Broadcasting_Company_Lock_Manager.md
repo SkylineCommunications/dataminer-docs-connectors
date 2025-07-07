@@ -4,7 +4,7 @@ uid: Connector_help_Finnish_Broadcasting_Company_Lock_Manager
 
 # Finnish Broadcasting Company Lock Manager
 
-This connector is obsolete as it has been replaced by the more generic [Skyline Lock Manager](xref:Connector_help_Skyline_Lock_Manager) connector. It is no longer recommended for use in new solutions.
+This connector is **obsolete** and has been replaced by the more generic [Skyline Lock Manager](xref:Connector_help_Skyline_Lock_Manager) connector. It is no longer recommended for use in new solutions.
 
 This connector was used in the YLE Media Services solution to hold locks for orders and events.
 
