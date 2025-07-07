@@ -10,7 +10,7 @@ The ZDF Paradigma is a webhook connector that handles every VPS trigger from the
 
 ## Key Features
 
-- **Basic Authentication**: Supports HTTP Basic Authentication for incoming webhook requests. The connector validates the username and password against the configured credentials before processing any VPS triggers.
+- **Basic authentication**: Supports HTTP Basic Authentication for incoming webhook requests. The connector validates the username and password against the configured credentials before processing any VPS triggers.
 
 - **24/7 monitoring**: Continuously listens for VPS trigger events from the configured endpoint, ensuring real-time and uninterrupted processing.
 
