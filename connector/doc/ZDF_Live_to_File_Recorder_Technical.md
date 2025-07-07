@@ -20,3 +20,5 @@ HTTP CONNECTION:
 - IP port: IP Port of recorders.
 
 ## How to Use
+
+When creating the element, the user must specify the **IP address/host** and **Port** where the recorders are hosted. Once the element is created with the correct host and port, information about all recorders will be displayed in the tables
