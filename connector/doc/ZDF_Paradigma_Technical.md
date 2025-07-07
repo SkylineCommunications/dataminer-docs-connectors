@@ -18,10 +18,6 @@ ZDF Paradigma acts as **middleware**, listening to VPS triggers and delivering V
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-To be able to access the API, go to the **General** page of the element, and configure the **User Name** and **Password**. In addition, to be able to connect to the Paradigma API to receive EVS triggers, configure **Hostname**, **URI**, and **Port**.
-
 ## How to Use
 
 The connector includes a dedicated section for configuring the webhook. After startup, the user must provide the hostname, URI, and port from which the connector will listen for incoming VPS triggers. Based on this information, an endpoint URI is generated and subscribed to automatically.
