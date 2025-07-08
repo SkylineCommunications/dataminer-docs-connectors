@@ -1,18 +1,12 @@
 ---
-uid: Connector_help_AVELTEC_CVC_Box_Connect
+uid: Connector_help_AVELTEC_CVC_Box_Connect_Technical
 ---
 
 # AVELTEC CVC Box Connect
 
-The CVC Box Connect regulation system manages heating, ventilation, and air conditioning (HVAC) functions in a modular and adaptable way.
+
 ## About
-
-### Version Info
-
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.1	|Initial development|-         |-         |
-
+The CVC Box Connect regulation system manages heating, ventilation, and air conditioning (HVAC) functions in a modular and adaptable way.
 
 #### SNMP Connection
 
@@ -39,14 +33,5 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The element consists of the following data pages:
-
-    General: Contains the device information, users table, and trap configuration table.
-    Alarm Control: Displays the alarms page, and their state.
-    Installer Control: Contains the device configuration page.
-    User Control: Contains user page that has current readings.
-    Statistics:Contains the readings statistics for inside and outside temperature and humidity.
-    Polling Manager: Contains the polling manager that enables or disables groups.
-    Web Interface : Contains SNMP trap and trap destination settings.
-
-
+In the **_Polling Settings_** page, the **_Polling Manager_** table displays all the possible polling groups, which allow for manual polling, as well as the intervals that set the interval of the timer that will automatically poll the group(s).
+All the polled information, and parameters that are settable, will be in their appropriate pages.
