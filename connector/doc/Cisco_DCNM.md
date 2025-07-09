@@ -81,6 +81,8 @@ You can access the tables with the status of the **Active**, **Inactive**, **Sen
 
 Note: Via the right-click menu, you can add or delete rows in the **Flow Alias**, **Flow Policy** and **Flow Policy Multicast Ranges** tables.
 
+Note: The Cisco DCNM API URL for accessing flow status changed in newer version of DCNM. By default, this connector uses the "Old" URL. To use the new URL, under General, select Compose URLS. On this screen enter your Fabric Name and VRF Name. The defaults are "Default_LAN" for Fabric, and "default" for the VRF. Hit Set Flow Status. The flow status table will now populate
+
 ## Notes
 
 **Warning**: Because of a change from version 1.0.0.3 onwards, the SLElement load will increase considerably, for example up to 1 Gb. The load depends on the number of records in the tables PTP Switch Corrections, RTP Error History and RTP Packet Drop History.
