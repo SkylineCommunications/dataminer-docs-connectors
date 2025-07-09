@@ -10,8 +10,8 @@ This is a DataMiner connector for the **AVELTEC CVC Box Connect**. Using this co
 
 ### Key Features
 
-- **Alarm Monitoring**: _Alarm Control_ page monitors the alarms.
-- **Polling Manager**: _Polling Manager_ Allows for individual manual polling, and setting the polling interval of each group.
+- **Alarm Monitoring**: You can monitor all alarms for the AVELTEC CVC on the *Alarm Control* page of the element.
+- **Polling Manager**: The Polling Manager in the element allows individual manual polling. You can also set a custom polling interval for each group.
 
 ## Prerequisites
 
