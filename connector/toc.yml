@@ -1080,6 +1080,13 @@
     topicUid: Connector_help_Avcom_of_Virginia_RSA-2500B
   - name: Avcom of Virginia RSA-6500
     topicUid: Connector_help_Avcom_of_Virginia_RSA-6500
+- name: AVELTEC
+  items:
+  - name: AVELTEC CVC Box Connect
+    topicUid: Connector_help_AVELTEC_CVC_Box_Connect
+    items:
+      - name: AVELTEC CVC Box Connect Technical
+        topicUid: Connector_help_AVELTEC_CVC_Box_Connect_Technical
 - name: Aviat Networks
   items:
   - name: Aviat Networks Provision
