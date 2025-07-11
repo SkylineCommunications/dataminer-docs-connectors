@@ -171,3 +171,26 @@ On the Settings page, you can also find settings related to CPE DVE creation:
 
 - **Automatic CPE DVE Creation**: Allows you to set the **DVE Created** parameter to *Enabled* for all future added CPE devices. By default, is set to *Disabled*.
 - **Enable/Disable All DVEs** Allows you to set the state of all CPE devices in the table to *Enabled* or *Disabled*.
+
+### Reports
+
+The connector is able to poll the following reports. Report responses often contain values for multiple graph types. The Used Graph Type column indicates which graph type is processed and therefore visible on the element.
+
+| Name | Element Type | Used Graph Type | Ignored Graph Type(s) | Description |
+| ---- | ------------ | --------------- | ---------------------- | ----------- |
+| FWD Throughput | CPE | Data | FWD Traffic, C2P | The total CPE FWD Throughput, also the graph shows the total DATA throughput and total C2P throughput. |
+| RTN Throughput | CPE | Data | RTN Traffic, C2P | The total CPE RTN Throughput, also the graph shows the total DATA throughput and total C2P throughput (Burst traffic/resources only). |
+| FWD Rx Level | CPE | Last FWD received Es/N0 | Minimum FWD received Es/N0, Maximum FWD received Es/N0 | The CPE FWD signal to noise measurements as reported by the CPE to the HSP. |
+| RTN Tx Capability C/N0 | CPE | Last Tx Capability C/N0 | Last Tx Continuous Capability C/N0 | The CPE RTN C/N0 capability as measured at the hub by the HSP. |
+| FWD Backbone Retransmissions | Network Segment | FWD Backbone Retransmissions |  | The ratio between the number of retransmitted FWD Backbone packets and the total number of transmitted FWD Backbone packets (including the retransmitted ones). |
+| RTN Backbone Retransmission | Network Segment | RTN frame loss |  | The ratio between the number of retransmitted RTN Backbone packets and the total number of transmitted RTN Backbone packets (including the retransmitted ones). |
+| FWD Link Throughput and Limit | Network Segment | Throughput | Throughput Limit | The total Forward data transmission rate in Kbps and the theoretical limit as calculated by the Integrated Performance Manager (Available bit rate). |
+| RTN Link Throughput Available and Limit | Network Segment | Throughput | Limit, Available | The total Return data transmission rate in Kbps and the theoretical limit as calculated by the Hub-Side Processor (Burst traffic/resources only). |
+| L2 Online CPEs | Network Segment | Online (L2) |  | Number of CPEs that are currently logged on to all the Network Segments in the Network/Teleport/Satellite/RF Cluster/Single Network Segment/Hub-Side Processor. |
+| L3 Online CPEs | Network Segment | Online (L3) |  | Number of CPEs that are currently logged on to the Dynamic Provisioning System. |
+| VLAN Throughput | Network Segment | FWD Throughput VLAN - VLAN ID, RTN Throughput VLAN - VLAN ID |  | Summed up traffic of all Very Small Aperture Terminals in the same Virtual Local Area Network per Network Segment. |
+| CPEs FWD Maximal Capability | Network Segment | ModCod - xPSK x/x |  | Distribution of CPEs linked to the Network Segment/Hub-Side Processor according to their maximal Forward ModCod capability. |
+| CPEs RTN Maximal Capability | Network Segment | Slot Type - TRF x xxxKsps QPSK x/x xK |  | Distribution of CPEs according to their maximal Return slot type capability per Network Segment/Hub-Side Processor. |
+| FWD Link Load per MG | Network Segment | AVG - Managed Group ID |  | The ratio between the demands on the Forward link to the actual traffic per Managed Group in the network overload scenario (per Network Segment/Dynamic Provisioning System). |
+| FWD Link Throughput Utilization | Network Segment | Utilization |  | The ratio, in %, between the total transmitted data in the Network Segment and the total available throughput in the Network Segment Forward channel. |
+| MCR AGC Level | Network Segment | Current: NGMCR 100 | Minimum: NGMCR 100, Maximum: NGMCR 100 | The Master Control Room's Automatic Gain Control attenuator value (current, minimum and maximum). |
