@@ -30,7 +30,7 @@ SNMP Settings:
 This connector uses a Telnet connection to perform soft reset commands.
 - **IP address/host**: Not required. 
 - **Device address**: Not required.
-- **Port number**: 23 (default telnet port).
+- **Port number**: Not required (Driver used default telnet port - 23).
 
 TELNET CONNECTION:
 
