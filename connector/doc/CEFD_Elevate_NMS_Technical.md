@@ -20,6 +20,8 @@ HTTP CONNECTION:
 
 - IP address/host: The polling IP or URL of the destination.
 - IP port: The IP port of the destination.
+> [!NOTE]  
+> It is important to specify whether the connection uses **HTTP** or **HTTPS**, as different devices may only support one of these protocols. Selecting the correct protocol ensures proper communication and prevents connection failures.
 
 ### Initialization
 
