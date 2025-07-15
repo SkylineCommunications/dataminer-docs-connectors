@@ -1,18 +1,18 @@
 ---
-uid: Connector_help_CEFD_Elevate_NMS_Enterprise_Technical_
+uid: Connector_help_CEFD_Elevate_NMS_Enterprise_Technical
 ---
 
 # Connector Technical Documentation Template
 
 ## About
 
-The CEFD Elevate NMS connector integrates with Comtech’s ELEVATE platform to monitor and manage VSAT network infrastructure. The ELEVATE platform is a software-defined solution that supports both MF-TDMA and H-DNA waveforms, enabling flexible and dynamic switching between transmission modes. It allows the deployment of scalable and customizable private VSAT networks, supporting complex topologies and hybrid satellite bandwidth configurations. This connector retrieves operational data from the ELEVATE system, providing visibility into key performance and configuration parameters within the DataMiner environment.
+The CEFD Elevate NMS connector integrates with Comtechâ€™s ELEVATE platform to monitor and manage VSAT network infrastructure. The ELEVATE platform is a software-defined solution that supports both MF-TDMA and H-DNA waveforms, enabling flexible and dynamic switching between transmission modes. It allows the deployment of scalable and customizable private VSAT networks, supporting complex topologies and hybrid satellite bandwidth configurations. This connector retrieves operational data from the ELEVATE system, providing visibility into key performance and configuration parameters within the DataMiner environment.
 
 ## Configuration
 
 ### Connections
 
-#### HTTP Connection – [Name of the connection]
+#### HTTP Connection â€“ [Name of the connection]
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -34,5 +34,5 @@ To use this connector, create a DataMiner element based on the CEFD Elevate NMS 
 - **Networks:** The Networks section provides an overview of available networks and detailed performance metrics for monitoring their operational status.  
 - **Inroute Controllers:** The Inroute Controllers section provides detailed monitoring of inroute controllers, including performance metrics, detected faults, modulation and coding (Modcods) details, TDMA load distribution, and ACM (Adaptive Coding and Modulation) information.  
 - **Outroute Controllers:** The Outroute Controllers section provides detailed monitoring of outroute controllers, including performance metrics, detected faults, modulation and coding (Modcods) details, and ACM (Adaptive Coding and Modulation) information.  
-- **VNOs:** The VNOs Overview section offers a summary of all Virtual Network Operators, presenting key status indicators, active sessions, and general health metrics for quick monitoring. The VNOs Performance section delivers detailed insights into each VNO’s network performance, including traffic load, throughput, error rates, and trend analysis over time.  
+- **VNOs:** The VNOs Overview section offers a summary of all Virtual Network Operators, presenting key status indicators, active sessions, and general health metrics for quick monitoring. The VNOs Performance section delivers detailed insights into each VNOâ€™s network performance, including traffic load, throughput, error rates, and trend analysis over time.  
 - **Stations:** The Stations section provides an overview of station performance metrics, detected faults, and TDMA-related configuration and operational details.
