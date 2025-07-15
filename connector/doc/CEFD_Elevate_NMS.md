@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_OneWeb_Enterprise
+uid: Connector_help_CEFD_Elevate_NMS_Enterprise
 ---
 
 # OneWeb Enterprise
@@ -16,7 +16,6 @@ Built for scalable VSAT deployments, the connector offers visibility into a wide
 ### Monitoring of Networks
 
 Obtain a overview of all managed VSAT networks, with visibility into network availability, operational status, and key performance metrics. This section enables quick identification of network-wide issues and provides a baseline for detailed analysis of individual network components.
-![Outroute Controllers Table](~/connector/images/OutrouteControllers.png)
 
 ### Monitoring of Inroute Controllers
 
@@ -42,7 +41,7 @@ Monitor station-level metrics with detailed fault detection and TDMA-related ope
 
 An organization managing a distributed VSAT network requires real-time monitoring of satellite links, controllers, and virtual network operators to maintain high availability and service quality. Challenges include detecting faults promptly, managing dynamic bandwidth allocation, and optimizing network performance across geographically dispersed sites.
 
-By deploying the CDEF Elevate NMS connector within DataMiner, network operators gain **centralized access to comprehensive telemetry data** from all critical network components. They can **track inroute and outroute controller health**, observe **VNO traffic and performance trends**, and **manage station status and faults** effectively. The connector’s integration supports **adaptive modulation schemes and TDMA load balancing**, improving link reliability and throughput. With historical data and real-time alerts, the team can **proactively address issues**, optimize capacity, and ensure seamless satellite communications across their network.
+By deploying the CDEF Elevate NMS connector within DataMiner, network operators gain **centralized access to comprehensive telemetry data** from all critical network components. They can **track inroute and outroute controller health**, observe **VNO traffic and performance trends**, and **manage station status and faults** effectively. The connectorâ€™s integration supports **adaptive modulation schemes and TDMA load balancing**, improving link reliability and throughput. With historical data and real-time alerts, the team can **proactively address issues**, optimize capacity, and ensure seamless satellite communications across their network.
 
 ## Technical Reference
 
