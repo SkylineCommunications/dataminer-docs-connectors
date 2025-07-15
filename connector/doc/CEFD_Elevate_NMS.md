@@ -46,4 +46,4 @@ By deploying the CDEF Elevate NMS connector within DataMiner, network operators 
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:CEFD_Elevate_NMS_Technical_).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_CEFD_Elevate_NMS_Enterprise_Technical).
