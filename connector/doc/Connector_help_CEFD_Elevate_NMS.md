@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_CEFD_Elevate_NMS_Enterprise
+uid: Connector_help_CEFD_Elevate_NMS
 ---
 
-# OneWeb Enterprise
+# CEFD Elevate NMS
 
 ## About
 
