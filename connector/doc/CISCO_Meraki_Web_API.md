@@ -38,8 +38,9 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 
 The connector in version range 1.0.0.x captures alarms through communication with the Meraki API via HTTPS requests.
 
-After filling in the connection details on the element card, the **Authorization Value** on the General page must be filled in.
-This is the API Key used for authorization to access the API.
+Create an element and fill in the connection details in the element settings. Enter `https://api.meraki.com/` in the IP address/host field.
+
+On the General page of the new element, fill in the **Authorization Value** parameter. This is the API key used for authorization to access the API.
 
 ## Configuration 2.0.0.x
 
