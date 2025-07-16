@@ -6379,6 +6379,11 @@
     topicUid: Connector_help_Moxa_ioLogik_E2242
   - name: Moxa ioLogik E4200
     topicUid: Connector_help_Moxa_ioLogik_E4200
+  - name: Moxa NPort 5000 Series
+    topicUid: Connector_help_Moxa_NPort_5000_Series
+    items:
+    - name:  Moxa NPort 5000 Series Technical
+      topicUid: Connector_help_Moxa_NPort_5000_Series_Technical
   - name: Moxa NPort 5610
     topicUid: Connector_help_Moxa_NPort_5610
   - name: Moxa NPort 6610
