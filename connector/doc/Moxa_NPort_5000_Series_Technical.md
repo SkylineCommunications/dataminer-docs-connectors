@@ -28,14 +28,15 @@ SNMP Settings:
 #### Telnet Connection – Moxa Telnet
 
 This connector uses a Telnet connection to perform soft reset commands.
-- **IP address/host**: Not required. 
-- **Device address**: Not required.
-- **Port number**: Not required (Driver used default telnet port - 23).
 
 TELNET CONNECTION:
 
+- **IP address/host**: Not required.
+- **Device address**: Not required.
+- **Port number**: Not required. (The connector uses the default telnet port: 23).
+
 > [!NOTE]
-> Telnet is only used to perform soft reset, not for polling data.
+> Telnet is only used to perform soft resets, not for polling data.
 
 ## How to Use
 
