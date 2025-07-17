@@ -50,7 +50,7 @@ There is no redundancy defined.
 
 Most of the actions trigger an interaction with an element that is created based on the [BeIN Manager connector](https://catalog.dataminer.services/details/connector/3437). To link the elements, the parameters **Manager DMA ID**, **Manager Element ID**, and **Manager Parameter ID** need to be filled in on the Settings page.
 
-From version 1.0.0.12 onwards, all requests can be stored as [DataMiner Object Model (DOM) instances](https://docs.dataminer.services/user-guide/Advanced_Modules/DOM/DOM.html). For more information, see [Settings Page](#settings-page).
+From version 1.0.0.12 onwards, all requests can be stored as [DataMiner Object Model (DOM) instances](https://aka.dataminer.services/DOM). For more information, see [Settings Page](#settings-page).
 
 ### General Page
 
