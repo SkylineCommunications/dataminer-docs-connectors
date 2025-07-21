@@ -7267,6 +7267,9 @@
     topicUid: Connector_help_Paradise_Q-Flex
   - name: Paradise RCP-1200
     topicUid: Connector_help_Paradise_RCP-1200
+    items:
+      - name: Paradise RCP-1200 Technical
+        topicUid: Connector_help_Paradise_RCP-1200_Technical
   - name: Paradise RCP2-1100_1200
     topicUid: Connector_help_Paradise_RCP2-1100_1200
   - name: Paradise SSPA CO
