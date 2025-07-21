@@ -6,7 +6,7 @@ uid: Connector_help_iDirect_Evolution_Platform_VSAT
 
 ## About
 
-The iDirect Evolution Platform VSAT connector provides full visibility into your satellite network by retrieving key data from iDirect systems. It helps you monitor terminal activity, track performance, and analyze network events across all your sites — all from a single platform.
+The iDirect Evolution Platform VSAT connector provides full visibility on your satellite network by retrieving key data from iDirect systems. It helps you monitor terminal activity, track performance, and analyze network events across all your sites, all from a single platform.
 
 ## Key Features
 
@@ -22,7 +22,7 @@ The iDirect Evolution Platform VSAT connector provides full visibility into your
 
 ### Use Case 1
 
-**Challenge**: You need a clear view of how VSAT terminals are performing across different locations.
+**Challenge**: Getting a clear view of how VSAT terminals are performing across different locations.
 
 **Solution**: The connector gathers all configuration and performance data into one central dashboard.
 
@@ -30,7 +30,7 @@ The iDirect Evolution Platform VSAT connector provides full visibility into your
 
 ### Use Case 2
 
-**Challenge**: It’s hard to detect early signs of service degradation before they affect customers.
+**Challenge**: Detecting early signs of service degradation before customers are affected.
 
 **Solution**: The connector collects network events and statistics in real time.
 
@@ -38,7 +38,7 @@ The iDirect Evolution Platform VSAT connector provides full visibility into your
 
 ### Use Case 3
 
-**Challenge**: You want to generate accurate reports and understand long-term usage trends.
+**Challenge**: Generating accurate reports and understanding long-term usage trends.
 
 **Solution**: The connector keeps historical data for analysis and reporting.
 

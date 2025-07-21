@@ -16,12 +16,6 @@ This DataMiner protocol allows you to monitor a General Dynamics RSC1111 dual re
 |----------------------|----------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitors main device parameters. | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

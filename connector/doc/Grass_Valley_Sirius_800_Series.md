@@ -49,10 +49,6 @@ SNMP Settings:
 To use this element, you need to configure the matrix level monitored by the element and the primary and secondary polling IPs.
 The matrix level default value is "1.1" and the default polling IP is the one configured while creating/editing the element.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector consists of the following data pages:

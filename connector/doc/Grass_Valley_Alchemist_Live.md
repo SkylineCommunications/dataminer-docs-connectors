@@ -44,14 +44,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination (default: *2050*).
   - **Bus address**: The bus address of the device. The format is *NNNN.UU.PP* (all hex values), where NNNN is the network route/address, UU is the unit address and PP is the port address of the unit.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

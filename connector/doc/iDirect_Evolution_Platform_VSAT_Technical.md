@@ -16,8 +16,7 @@ The iDirect Evolution Platform VSAT connector integrates iDirect NMS data into D
 
 This connector uses a virtual connection and does not require any IP or hostname during element creation.
 
-> [!NOTE]
-> This is a virtual connector, so it does not produce traffic in the Stream Viewer.
+Because it is a virtual connector, it does not produce traffic in the Stream Viewer.
 
 ## How to Use
 
@@ -25,19 +24,21 @@ This connector uses a virtual connection and does not require any IP or hostname
 
 This page allows you to manage the connector’s polling, cleanup, and provisioning settings.
 
-- **Database Configuration**: Main table to define and manage all iDirect database connections.
-  - **Server IP Address**: IP of the MySQL server.
-  - **Username / Password**: Credentials for access.
-  - **Type**: Configuration or Statistics.
-  - **Polling**: Enable/disable and set polling interval.
+- **Database Configuration**: Main table to define and manage all iDirect database connections, with the following columns:
+
+  - **Server IP Address**: The IP address of the MySQL server.
+  - **Username / Password**: The credentials for access.
+  - **Type**: *Configuration* or *Statistics*.
+  - **Polling**: Can be enabled or disabled, and the polling interval can be set.
   - **Hub ID**: Unique ID per iDirect NMS.
   - **NMS Name**: Logical name used for grouping/aggregation.
 
+  > [!NOTE]
   > Each iDirect system typically includes one configuration database (`nms`) and one or more statistics/event databases (`nrd_archive`). Even if hosted on the same server, these must be entered separately.
 
-- **DB Polling Config**: Configure which data types (Config, Statistics, Events) to poll and how often.
-- **DB Polling Status**: Shows last polling times, execution results, and includes manual trigger buttons.
-- **Auto Clear**: Manages how long events are retained before being cleaned up. Supports max age, count, and cleanup frequency.
+- **DB Polling Config**: Determines which data types (*Config*, *Statistics*, *Events*) to poll and how often.
+- **DB Polling Status**: Shows the last polling times and execution results, and includes manual trigger buttons.
+- **Auto Clear**: Manages how long events are retained before they are cleaned up. Supports max age, count, and cleanup frequency configuration.
 - **VLAN Config**: Cleanup settings for VLAN event tables.
 - **EPM Toggle**: Enables optional integration with Skyline EPM Platform VSAT GEO for provisioning and circuit tracking.
 
@@ -52,10 +53,10 @@ The connector exports and imports remote circuit metadata using CMDB-formatted f
 - **Exported File Format**: `DMAID_ElementID_CC.xml`
 - **Imported File Format**: `DMAID_ElementID_CP.json`
 - **File Path**: Set the directory where files will be written to or read from.
-- **Directory Type**: Choose between Local or Remote directories.
+- **Directory Type**: Choose between *Local* or *Remote* directories.
 - **Processing Interval**: Define how often the system checks for new files.
 
-> The imported CMDB data populates the **Circuit Overview** table, allowing DataMiner to display detailed circuit-level information, including location, device types, service plans, and interfaces.
+The imported CMDB data populates the **Circuit Overview** table, allowing DataMiner to display detailed circuit-level information, including location, device types, service plans, and interfaces.
 
 ##### Example: Exported CC File (XML)
 
@@ -107,7 +108,7 @@ The connector exports and imports remote circuit metadata using CMDB-formatted f
 If EPM integration is enabled:
 
 - **ID File Import / Export**: Manages CSV-based provisioning files for assigning unique IDs to entities.
-- **ID File Path**: Set the remote directory used by the Skyline EPM Platform VSAT GEO.
+- **ID File Path**: The remote directory used by the Skyline EPM Platform VSAT GEO.
 
 #### Entity Removal
 

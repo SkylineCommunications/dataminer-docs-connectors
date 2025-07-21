@@ -22,37 +22,9 @@ The VodafoneZiggo Witbe Maestro is used to manage and schedule tests on Witbe ro
 
 ### System Info
 
-<table>
-<colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 20%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-<td><strong>Linked Components</strong></td>
-<td><strong>Exported Components</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>No</td>
-<td>Yes</td>
-<td><ul>
-<li><em>WitBe Robot Manager</em> connector</li>
-<li><em>Schedule WitBe Maintenance</em> Automation script</li>
-<li><em>Skyline SmartRec Application</em> connector</li>
-</ul></td>
-<td><ul>
-<li>VodafoneZiggo Witbe Maestro - Device</li>
-</ul></td>
-</tr>
-</tbody>
-</table>
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - *WitBe Robot Manager* connector<br>- *Schedule WitBe Maintenance* Automation script<br>- *Skyline SmartRec Application* connector | - VodafoneZiggo Witbe Maestro - Device |
 
 ## Configuration
 

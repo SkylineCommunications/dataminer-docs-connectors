@@ -1080,6 +1080,13 @@
     topicUid: Connector_help_Avcom_of_Virginia_RSA-2500B
   - name: Avcom of Virginia RSA-6500
     topicUid: Connector_help_Avcom_of_Virginia_RSA-6500
+- name: AVELTEC
+  items:
+  - name: AVELTEC CVC Box Connect
+    topicUid: Connector_help_AVELTEC_CVC_Box_Connect
+    items:
+      - name: AVELTEC CVC Box Connect Technical
+        topicUid: Connector_help_AVELTEC_CVC_Box_Connect_Technical
 - name: Aviat Networks
   items:
   - name: Aviat Networks Provision
@@ -2876,6 +2883,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA286
   - name: Double D Electronics DDA286 (4+1)
     topicUid: Connector_help_Double_D_Electronics_DDA286_(4+1)
+  - name: Double D Electronics DDA289
+    topicUid: Connector_help_Double_D_Electronics_DDA289
+    items:
+      - name: Double D Electronics DDA289 Technical
+        topicUid: Connector_help_Double_D_Electronics_DDA289_Technical
   - name: Double D Electronics DDA290
     topicUid: Connector_help_Double_D_Electronics_DDA290
   - name: Double D Electronics DDA291
@@ -4160,6 +4172,9 @@
     topicUid: Connector_help_Generic_Dynamic_Table
   - name: Generic Ember+
     topicUid: Connector_help_Generic_Ember+
+    items:
+      - name: Generic Ember+ Technical
+        topicUid: Connector_help_Generic_Ember+_Technical
   - name: Generic Failover Status
     topicUid: Connector_help_Generic_Failover_Status
   - name: Generic File Explorer
@@ -6364,6 +6379,11 @@
     topicUid: Connector_help_Moxa_ioLogik_E2242
   - name: Moxa ioLogik E4200
     topicUid: Connector_help_Moxa_ioLogik_E4200
+  - name: Moxa NPort 5000 Series
+    topicUid: Connector_help_Moxa_NPort_5000_Series
+    items:
+    - name:  Moxa NPort 5000 Series Technical
+      topicUid: Connector_help_Moxa_NPort_5000_Series_Technical
   - name: Moxa NPort 5610
     topicUid: Connector_help_Moxa_NPort_5610
   - name: Moxa NPort 6610
@@ -6511,6 +6531,9 @@
     topicUid: Connector_help_NetInsight_Nimbra_Application_Manager
   - name: NetInsight Nimbra Edge
     topicUid: Connector_help_NetInsight_Nimbra_Edge
+    items:
+    - name: NetInsight Nimbra Edge Technical
+      topicUid: Connector_help_NetInsight_Nimbra_Edge_Technical
   - name: NetInsight Nimbra VA
     topicUid: Connector_help_NetInsight_Nimbra_VA
 - name: Netscout
@@ -8544,6 +8567,11 @@
         topicUid: Connector_help_Skyline_Job_Manager_Technical
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline Lock Manager
+    topicUid: Connector_help_Skyline_Lock_Manager
+    items:
+    - name: Skyline Lock Manager Technical
+      topicUid: Connector_help_Skyline_Lock_Manager_Technical
   - name: Skyline Logical Layer
     topicUid: Connector_help_Skyline_Logical_Layer
   - name: Skyline Masking Services
@@ -8629,6 +8657,9 @@
         topicUid: Connector_help_Skyline_Table_Checker_Technical
   - name: Skyline Universal Weather
     topicUid: Connector_help_Skyline_Universal_Weather
+    items:
+    - name: Skyline Universal Weather Technical
+      topicUid: Connector_help_Skyline_Universal_Weather_Technical
   - name: Skyline VOD Workflow Application
     topicUid: Connector_help_Skyline_VOD_Workflow_Application
   - name: SLC SDF DCF
@@ -9017,6 +9048,9 @@
   items:
   - name: Starlink Enterprise
     topicUid: Connector_help_Starlink_Enterprise
+    items:
+    - name: Starlink Enterprise Technical
+      topicUid: Connector_help_Starlink_Enterprise_Technical
   - name: Starlink Enterprise - User Terminal
     topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
 - name: Stormshield
@@ -9471,6 +9505,11 @@
     topicUid: Connector_help_Telenor_Customer_Validation_Manager
   - name: Telenor Customer Validation Mediator
     topicUid: Connector_help_Telenor_Customer_Validation_Mediator
+  - name: Telenor Device Simulator
+    topicUid: Connector_help_Telenor_Device_Simulator
+    items:
+      - name: Telenor Device Simulator Technical
+        topicUid: Connector_help_Telenor_Device_Simulator_Technical
   - name: Telenor EPG Channel
     topicUid: Connector_help_Telenor_EPG_Channel
   - name: Telenor EPG Manager
@@ -9496,6 +9535,11 @@
     topicUid: Connector_help_Telenor_InHome_Status
   - name: Telenor MAT File Validator
     topicUid: Connector_help_Telenor_MAT_File_Validator
+  - name: Telenor MAM Event Aggregator And Analyzer
+    topicUid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer
+    items:
+      - name: Telenor MAM Event Aggregator And Analyzer Technical
+        topicUid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer_Technical
   - name: Telenor MSNW Service Definition
     topicUid: Connector_help_Telenor_MSNW_Service_Definition
   - name: Telenor Newtec Dialog Platform
@@ -9512,6 +9556,11 @@
     topicUid: Connector_help_Telenor_Splunk_Service_Analyzer
   - name: Telenor TVTnD API Stats
     topicUid: Connector_help_Telenor_TVTnD_API_Stats
+  - name: Telenor TVTnD Manager
+    topicUid: Connector_help_Telenor_TVTnD_Manager
+    items:
+      - name: Telenor TVTnD Manager Technical
+        topicUid: Connector_help_Telenor_TVTnD_Manager_Technical
   - name: Telenor Weather Station Logging
     topicUid: Connector_help_Telenor_Weather_Station_Logging
 - name: Teleste
@@ -10125,6 +10174,11 @@
     topicUid: Connector_help_Vertiv_Liebert_HPF
   - name: Vertiv Watchdog 100-PNPS
     topicUid: Connector_help_Vertiv_Watchdog_100-PNPS
+  - name: Vertiv EXM
+    topicUid: Connector_help_Vertiv_EXM
+    items:
+    - name: Vertiv_EXM Technical
+      topicUid: Connector_help_Vertiv_EXM_Technical
 - name: Viaccess
   items:
   - name: Viaccess CAS
@@ -10283,6 +10337,11 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service
+  - name: Vodafone Kabel Deutschland GmbH POC Tally
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally
+    items:
+    - name: Vodafone Kabel Deutschland GmbH POC Tally Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally_Technical
   - name: Vodafone Kabel Deutschland GmbH TAG Radio Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_TAG_Radio_Service
   - name: Vodafone Kabel Deutschland GmbH Transcoding TS Service

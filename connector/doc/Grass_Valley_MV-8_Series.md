@@ -46,10 +46,6 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the **General** page, you can find information about the multiviewer.

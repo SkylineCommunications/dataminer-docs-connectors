@@ -11,7 +11,7 @@ This connector is intended to communicate with the device using serial commands 
 
 ### Connections
 
-This connector uses a serial connection and requires the following input during element creation:
+This connector uses serial and HTTP connections and requires the following input during element creation:
 
 SERIAL CONNECTION:
 
@@ -19,6 +19,12 @@ SERIAL CONNECTION:
 - **IP address/host**: e.g. *10.11.12.13.*
 - **IP port**: default: *50000*
 - **Bus address**: default: *48*
+
+HTTP CONNECTION:
+
+- **Type of port:** TCP/IP
+- **IP address/host**: e.g. *10.11.12.13.*
+- **IP port**: default: *80*
 
 ## How to Use
 
@@ -43,6 +49,10 @@ This page shows the status of the switch.
 ### Settings
 
 On this page you can set the **name** of the amplifier as well as set the time of the device using the **Set Time** page button. Switch-related settings are also available here.
+
+#### HTTP Configuration
+
+On this page, you can enable or disable the polling for HTTP commands. These commands are necessary to be able to set the **Default Attenuation** on the **Trip Points** page. This can only be set if the **Remote Control Point** is set to *Web Browser*. If polling for HTTP commands is enabled, a **username** and **password** must be provided.
 
 ### Alarms
 
