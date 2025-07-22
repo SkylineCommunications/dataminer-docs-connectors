@@ -44,11 +44,12 @@ In the element, the SNMP parameters polled by the connector are shown on differe
 
 - **General**: System description, object ID, uptime, contact, name, location, number of services.
 - **Interfaces**: Physical and virtual interface statistics.
-- **IP**: Datagram, address translation, and discard statistics.
-- **ICMP**: ICMP-related metrics like echo requests and responses.
-- **UDP**: UDP datagram counters, errors, and traffic stats.
+- **Network**: Datagram, address translation, and discard statistics.
 - **TCP**: Table of all active TCP connections and session-level metrics.
-- **RS-232**: RS-232 port information including synchronous/asynchronous port status.
+- **UDP**: UDP datagram counters, errors, and traffic stats.
+- **Network Translation**: he Address Translation tables contain the NetworkAddress to physical address equivalences.
+- **ICMP**: ICMP-related metrics like echo requests and responses.
+- **Serial Settings**: RS-232 port information including synchronous/asynchronous port status.
 - **Signal**: Input and output signal tables for RS-232 lines.
 - **SNMP**: SNMP message statistics such as get, set, and trap counters.
 
