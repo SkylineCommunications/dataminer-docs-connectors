@@ -76,7 +76,7 @@ This page lists all network alarms, detailing their severity, origin, and cause.
 
 ### Web Interface
 
-This page displays the TXCore web interface. The web interface is only accessible when the DataMiner host has network access to the TXCore platform.
+This page displays the Nimbra Vision web interface. The web interface is only accessible when the DataMiner host has network access to the Nimbra Vision platform.
 
 ## Nimbra Vision Licenses
 
@@ -90,11 +90,11 @@ capacity.
 
 ### Function Enablement
 
-The autoroute must be enabled for the provisioner to automatically route a path. If not, it will use whatever path the northbound application provided. If none was provided, then the network will route the channel but not create and book a path.
+The autoroute must be enabled in the Nimbra Vision web interface for the provisioner to automatically route a path. If not, it will use whatever path the northbound application provided. If none was provided, then the network will route the channel but not create and book a path.
 
 To enable the above-mentioned functions:
 
-- Install the licenses on the page *Admin* > *System Administration* > *License Details*. In the *Action* menu, select *Install*.
-- Scheduling is enabled on the page *Admin* > *Circuit Provisioning* > *Scheduling Configurations*, by setting *Enabled* to *true*.
-- Manually trigger creation of resources using the node context menu by selecting *Scheduling* > *Refresh Resources*.
-- Default circuits to autoroute on page *Admin* > *Circuit Provisioning* > *Northbound Configuration*, setting *MSR Automatic Routing: true*
+1. Install the licenses on the page *Admin* > *System Administration* > *License Details*. In the *Action* menu, select *Install*.
+2. Scheduling is enabled on the page *Admin* > *Circuit Provisioning* > *Scheduling Configurations*, by setting *Enabled* to *true*.
+3. Manually trigger creation of resources using the node context menu by selecting *Scheduling* > *Refresh Resources*.
+4. Default circuits to autoroute on page *Admin* > *Circuit Provisioning* > *Northbound Configuration*, setting *MSR Automatic Routing: true*
