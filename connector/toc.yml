@@ -2026,6 +2026,11 @@
     topicUid: Connector_help_CEFD_CRS-500_SNMP
   - name: CEFD DM240XR SNMP
     topicUid: Connector_help_CEFD_DM240XR_SNMP
+  - name: CEFD Elevate NMS
+    topicUid: Connector_help_CEFD_Elevate_NMS
+    items:
+      - name: CEFD Elevate NMS Technical
+        topicUid: Connector_help_CEFD_Elevate_NMS_Technical
   - name: CEFD HRX SNMP
     topicUid: Connector_help_CEFD_HRX_SNMP
   - name: CEFD HTO SNMP
@@ -8469,6 +8474,11 @@
     topicUid: Connector_help_Skyline_DataMiner_IT_Tools
   - name: Skyline DataMiner System
     topicUid: Connector_help_Skyline_DataMiner_System
+  - name: Skyline Demodulator Simulation
+    topicUid: Connector_help_Skyline_Demodulator_Simulation
+    items:
+      - name: Skyline Demodulator Simulation Technical
+        topicUid: Connector_help_Skyline_Demodulator_Simulation_Technical
   - name: Skyline Dependency Checker
     topicUid: Connector_help_Skyline_Dependency_Checker
   - name: Skyline DMP Replication
@@ -8584,6 +8594,11 @@
     topicUid: Connector_help_Skyline_Mediation_IRD
   - name: Skyline Media Asset Management
     topicUid: Connector_help_Skyline_Media_Asset_Management
+  - name: Skyline Modulator Simulation
+    topicUid: Connector_help_Skyline_Modulator_Simulation
+    items:
+      - name: Skyline Modulator Simulation Technical
+        topicUid: Connector_help_Skyline_Modulator_Simulation_Technical
   - name: Skyline Network Capacity Manager
     topicUid: Connector_help_Skyline_Network_Capacity_Manager
   - name: Skyline Panel Manager
