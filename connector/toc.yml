@@ -4134,7 +4134,7 @@
   - name: Generic API Listener
     topicUid: Connector_help_Generic_API_Listener
     items:
-    - name: Generic API Listener_Technical
+    - name: Generic API Listener Technical
       topicUid: Connector_help_Generic_API_Listener_Technical
   - name: Generic Automation Script
     topicUid: Connector_help_Generic_Automation_Script
