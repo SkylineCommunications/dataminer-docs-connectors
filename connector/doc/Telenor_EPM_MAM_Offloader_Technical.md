@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Telenor_EPM_MAM_Offloader_Technical
+uid: Connector_help_Telenor_EPM_MAM_Consumer_Technical
 ---
 
 # Telenor EPM MAM Offloader

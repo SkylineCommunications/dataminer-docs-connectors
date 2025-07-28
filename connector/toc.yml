@@ -9512,14 +9512,14 @@
   - name: Telenor EPG Manager
     topicUid: Connector_help_Telenor_EPG_Manager
   - name: Telenor EPM Agama Consumer
-    topicUid: Connector_help_Telenor_EPM_Agama_Consumer
-    items:
-      - name: Telenor EPM Agama Consumer Technical
-      - topicUid: Connector_help_Telenor_EPM_Agama_Consumer_Techincal
+    topicUid: Connector_help_Telenor_EPM_Agama_Consumer    
   - name: Telenor EPM Collector
     topicUid: Connector_help_Telenor_EPM_Collector
   - name: Telenor EPM MAM Consumer
     topicUid: Connector_help_Telenor_EPM_MAM_Consumer
+    items:
+      - name: Telenor EPM MAM Consumer Technical
+      - topicUid: Connector_help_Telenor_EPM_MAM_Consumer_Technical
   - name: Telenor EPM MAM Offloader
     topicUid: Connector_help_Telenor_EPM_MAM_Offloader
     items:
