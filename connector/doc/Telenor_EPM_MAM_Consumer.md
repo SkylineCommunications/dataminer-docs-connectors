@@ -13,4 +13,4 @@ To be aware of the collector elements available in the system, the connector wil
  - **Message forwarding**: the connector automatically detects to which collector the messages needs to be forwarded.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telenor_EPM_Agama_Consumer_Techincal).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telenor_EPM_MAM_Consumer_Technical).
