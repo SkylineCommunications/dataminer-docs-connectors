@@ -9513,6 +9513,9 @@
     topicUid: Connector_help_Telenor_EPG_Manager
   - name: Telenor EPM Agama Consumer
     topicUid: Connector_help_Telenor_EPM_Agama_Consumer
+    items:
+      - name: Telenor EPM Agama Consumer Technical
+      - topicUid: Connector_help_Telenor_EPM_Agama_Consumer_Techincal
   - name: Telenor EPM Collector
     topicUid: Connector_help_Telenor_EPM_Collector
   - name: Telenor EPM MAM Consumer
