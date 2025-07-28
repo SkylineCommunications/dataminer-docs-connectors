@@ -19,6 +19,7 @@ The **Casa Systems C100G** is a chassis that has separate modules for downstream
 | 2.0.1.x            | Display key and namingFormat option in Docs If Signal Quality Table.                                                                              | No              | No                  |
 | 2.1.0.x            | Spectrum analyzer functionality for logical and physical upstream interfaces.                                                                     | No              | No                  |
 | 3.0.0.x [SLC Main] | Specific layout focusing on Edge QAM functionalities.                                                                                             | No              | Yes                 |
+| 4.0.1.x            | Supports VCCAPs                                                                                                                                   | No              | Yes                 |
 | 5.0.0.x            | Specific Lite version, focused on performance. Polling of big tables is filtered and performed by QActions.                                       | No              | Yes                 |
 | 5.0.1.x            | DCF feature added.                                                                                                                                | Yes             | Yes                 |
 | 6.0.0.x            | Custom version developed for Unity Media. Lite version of Casa Systems C100G version 3.0.0.x polling interfaces, QAM streams, and QAM interfaces. | No              | Yes                 |
