@@ -1,4 +1,4 @@
----
+<img width="268" height="23" alt="image" src="https://github.com/user-attachments/assets/955d11ba-472e-40e5-bda4-597a0bcb9c86" />---
 uid: Connector_help_ASC_Signal_APC400
 ---
 
@@ -17,12 +17,16 @@ This is an **SNMP** protocol that polls single and table parameters.
 | Range | Description | DCF Integration | Cassandra Compliant |
 |------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version | No                  | Yes                     |
+| 1.0.1.x          | - | No                  | Yes                     |
+| 1.0.2.x [Main]         | Driver review (based on 1.0.0.16) | No                  | Yes                     |
 
 ### Supported Firmware versions
 
 | Range     | Device Firmware Version              |
 |------------------|--------------------------------------|
 | 1.0.0.x          | RPI software version: ACS468K.C.3 03 |
+| 1.0.1.x          | RPI software version: ACS468K.C.3 03 |
+| 1.0.2.x          | RPI software version: ACS468K.C.3 03 |
 
 ## Installation and configuration
 
