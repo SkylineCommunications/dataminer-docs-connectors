@@ -15,7 +15,9 @@ The connector uses **SNMP traps** to capture the logging of the device. It uses 
 | Range                | Key Features                  | Based On     | System Impact     |
 |----------------------|-------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.              | -            | -                 |
-| 1.0.1.x [SLC Main]   | REST API communication added. | -            | -                 |
+| 1.0.1.x              | REST API communication added. | -            | -                 |
+| 1.0.2.x              | Added push  API.              | -            | -                 |
+| 1.0.3.x [SLC Main]   | Traps table turned volatile.  | -            | -                 |
 
 ### Product Info
 
@@ -23,6 +25,8 @@ The connector uses **SNMP traps** to capture the logging of the device. It uses 
 |-----------|-----------------------------|
 | 1.0.0.x   | -                           |
 | 1.0.1.x   | Mediaproxy LogServer API v1 |
+| 1.0.2.x   | Mediaproxy LogServer API v1 |
+| 1.0.3.x   | Mediaproxy LogServer API v1 |
 
 ### System Info
 
@@ -30,6 +34,8 @@ The connector uses **SNMP traps** to capture the logging of the device. It uses 
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
