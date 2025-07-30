@@ -12,11 +12,9 @@ The CEFD Elevate NMS connector integrates with Comtech’s ELEVATE platform to m
 
 ### Connections
 
-#### HTTP Connection – [Name of the connection]
+#### HTTP Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
 
 - IP address/host: The polling IP or URL of the destination.
 - IP port: The IP port of the destination.
