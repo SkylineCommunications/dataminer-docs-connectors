@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Dialight_INEM
+uid: Connector_help_Dialight_INEM_Technical
 ---
 
 # Dialight INEM
@@ -30,14 +30,18 @@ SNMP Settings:
 
 The element consists of the following data pages:
 
-- **General**: Contains System information through System OIDs.
-- **Status**: Contains a page button that includes the folliwng sub pages:
-    - **AOL Beacons**: Contains the **High Aol Group** table.
-    - **High Intensity Beacons**: Contains the **High Side Marker Group**, **High Relay Group**, **High Beacon Group**, **Module 1**, **Module 2**, and **Module 3** tables.
-    - **Side Marker Beacons**: Contains the **Side Marker Group** table.
-    - **D1RW**: Contains the **D1RW Group** table.
-    - **Relay Beacons**: Contains the **Relay Group** table.
+- **General**: Contains system information through system OIDs.
+
+- **Status**: Contains page buttons to the following subpages:
+
+  - **AOL Beacons**: Contains the **High Aol Group** table.
+  - **High Intensity Beacons**: Contains the **High Side Marker Group**, **High Relay Group**, **High Beacon Group**, **Module 1**, **Module 2**, and **Module 3** tables.
+  - **Side Marker Beacons**: Contains the **Side Marker Group** table.
+  - **D1RW**: Contains the **D1RW Group** table.
+  - **Relay Beacons**: Contains the **Relay Group** table.
 
 - **Events**: Contains the **Common Alarms** table.
-- **High Main**: Contains various High Intensity parameters.
-- **Medium 1 Main**: Contains various Medium Parameters
+
+- **High Main**: Contains various high-intensity parameters.
+
+- **Medium 1 Main**: Contains various medium parameters
