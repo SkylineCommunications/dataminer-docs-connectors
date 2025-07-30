@@ -2026,6 +2026,11 @@
     topicUid: Connector_help_CEFD_CRS-500_SNMP
   - name: CEFD DM240XR SNMP
     topicUid: Connector_help_CEFD_DM240XR_SNMP
+  - name: CEFD Elevate NMS
+    topicUid: Connector_help_CEFD_Elevate_NMS
+    items:
+      - name: CEFD Elevate NMS Technical
+        topicUid: Connector_help_CEFD_Elevate_NMS_Technical
   - name: CEFD HRX SNMP
     topicUid: Connector_help_CEFD_HRX_SNMP
   - name: CEFD HTO SNMP
