@@ -6,9 +6,9 @@ uid: Connector_help_RTBF_Netia_Technical
 
 ## About
 
-RTBF Netia connector provides overview and full control over all Playout Servers and player devices that are hosted on Netia.
+The **RTBF Netia** connector provides an overview and full control over all **Playout Servers** and **Player Devices** hosted on Netia.
 
-Netia is audio broadcasting software for audio stations.
+**Netia** is audio broadcasting software used by radio stations.
 
 ## Configuration
 
@@ -16,22 +16,30 @@ Netia is audio broadcasting software for audio stations.
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-HTTP CONNECTION:
-
-- **IP address/host**: The IP address/host where Netia is hosted.
-- **IP port**: The IP port of Netia.
+- **IP address/host**: The IP address or host where Netia is hosted.  
+- **IP port**: The port number of the Netia service.
 
 ### Initialization
 
-If element is created with valid hostname and port, connector will already start with polling cycle to show all available **Playout Servers** and **Player Devices** that are hosted on those playout servers.
+If the element is created with a valid hostname and port, the connector will immediately start a polling cycle to display all available **Playout Servers** and **Player Devices** hosted on those servers.
 
 ## How to Use
 
-Connector contains two pages:
-- **General Page**: Contains Playout Servers table that is showing playout servers with all relevant informations. Next to playout servers table, status parameter is shown that is indicating status of all polled informations. That parameter is reused when we poll both playout servers, player devices as well as all jingle content for each device. If status is in alarm state, it means that some of mentioned polling cycles didn't succeded.
-- **Devices Page**: Contains Player devices table and Jingles table. Devices table contains all informations about each device as well as command buttons for Start, Acquire and Stop for each Player device. If Player is Hotkey Player type, we can also chose which Run ID we want to start or stop for that specific Hotkey Player with **Selected Run** dropdown column. That column is filled in by **Jingles table**. Jingles table provides all informations about content that is loaded on every Hotkey Player Device.
+The connector contains two main pages:
 
-Devices Page has **Load Jingle** subpage. From Load Jingle subpage we can easly load any jingle pack we want. On Load Jingle page we have three parameters:
-- **Device ID**: Dropdown parameter where we have IDs of all avilable Hotkey Players. That dropdown is refreshed always after every device polling cycle (10 minutes).
-- **Jingle Pack ID**: Parameter were we provide ID of jingle pack that we want to load on specific device.
-- **Load Jingle**: Button on which we are trying to load jingle pack on device. Load will succeed if jingle pack is valid ID and if we have that jingle pack ID in database. 
+### General Page
+
+Contains a **Playout Servers** table displaying relevant information about each server. Next to this table, a **Status** parameter indicates the polling status. This status reflects the success of polling for playout servers, player devices, and jingle content for each device. If the status is in an alarm state, it means one or more polling cycles failed.
+
+### Devices Page
+
+Contains a **Player Devices** table and a **Jingles** table. The Devices table includes information about each device and provides command buttons (**Start**, **Acquire**, **Stop**) for each Player Device.  
+If the Player Device is of type **Hotkey Player**, you can choose a specific **Run ID** to start or stop using the **Selected Run** dropdown column. This column is populated from the **Jingles** table, which provides details about the content loaded on each Hotkey Player.
+
+#### Load Jingle Subpage
+
+The **Devices Page** also includes a **Load Jingle** subpage. From this subpage, you can easily load any jingle pack. It includes three parameters:
+
+- **Device ID**: A dropdown parameter listing all available Hotkey Player IDs. This list is refreshed after each device polling cycle (every 10 minutes).
+- **Jingle Pack ID**: A field where you enter the ID of the jingle pack to be loaded onto the selected device.
+- **Load Jingle**: A button used to initiate the loading of the selected jingle pack. The operation will succeed if the Jingle Pack ID is valid and exists in the database.
