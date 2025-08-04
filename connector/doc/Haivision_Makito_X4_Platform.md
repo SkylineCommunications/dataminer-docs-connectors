@@ -13,18 +13,24 @@ The Makito X4 Platform is a single solution for both video encoding and decoding
 | Range              | Features         | Based on | System Impact |
 |--------------------|------------------|----------|---------------|
 | 1.0.0.x [SLC Main] | Initial version. | -        | -             |
+| 1.0.0.x  | Support for firmware 1.6.0-x. | -        | -             |
+| 1.0.0.x  | Added "Displayed Output Frames Stats", "Skipped Output Frames Stats", and "Replayed Output Frames Stats" columns to the "Decoder Statistics" tabke which allows alarming and trending. | -        | -             |
 
 ### Product Info
 
 | Range   | Supported Firmware                         |
 |---------|--------------------------------------------|
 | 1.0.0.x | - Encoder: 1.7.0-49<br>- Decoder: 1.5.0-35 |
+| 1.1.0.x | - Encoder: 1.7.0-49<br>- Decoder: 1.6.0-x |
+| 1.1.1.x | - Encoder: 1.7.0-49<br>- Decoder: 1.6.0-x |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
 | 1.0.0.x | No              | Yes                 | -                 |                     |
+| 1.1.0.x | No              | Yes                 | -                 |                     |
+| 1.1.1.x | No              | Yes                 | -                 |                     |
 
 ## Configuration
 
