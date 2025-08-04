@@ -9,10 +9,9 @@ This integration enables monitoring and control of **Haivision Makito X4** devic
 
 ## Key Features
 - **Dual-functionality (Encoder/Decoder)**: Automatically detects and configures the device as either an encoder or decoder based on system response, with manual override available.
-- **Stream and Device Monitoring**: Access detailed statistics such as displayed, skipped, and replayed output frames for decoder performance analysis.
+- **Stream and Device Monitoring**: Access detailed statistics for decoder and encoder performance analysis.
 - **Flexible Polling Configuration**: Customize polling intervals for each command or disable unnecessary ones to optimize system performance.
 - **Secure HTTP Communication**: Establish secure connections using HTTP with configurable IP, port, and credentials.
-- **Debugging Tools**: Access a hidden DEBUG page for advanced diagnostics and communication insights.
 - **Comprehensive Stream Management**: Monitor and manage video/audio encoders, encoder streams, decoders, and decoder streams through dedicated pages.
 
 ## Use Cases
