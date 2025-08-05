@@ -1080,6 +1080,13 @@
     topicUid: Connector_help_Avcom_of_Virginia_RSA-2500B
   - name: Avcom of Virginia RSA-6500
     topicUid: Connector_help_Avcom_of_Virginia_RSA-6500
+- name: AVELTEC
+  items:
+  - name: AVELTEC CVC Box Connect
+    topicUid: Connector_help_AVELTEC_CVC_Box_Connect
+    items:
+      - name: AVELTEC CVC Box Connect Technical
+        topicUid: Connector_help_AVELTEC_CVC_Box_Connect_Technical
 - name: Aviat Networks
   items:
   - name: Aviat Networks Provision
@@ -2019,6 +2026,11 @@
     topicUid: Connector_help_CEFD_CRS-500_SNMP
   - name: CEFD DM240XR SNMP
     topicUid: Connector_help_CEFD_DM240XR_SNMP
+  - name: CEFD Elevate NMS
+    topicUid: Connector_help_CEFD_Elevate_NMS
+    items:
+      - name: CEFD Elevate NMS Technical
+        topicUid: Connector_help_CEFD_Elevate_NMS_Technical
   - name: CEFD HRX SNMP
     topicUid: Connector_help_CEFD_HRX_SNMP
   - name: CEFD HTO SNMP
@@ -6372,6 +6384,11 @@
     topicUid: Connector_help_Moxa_ioLogik_E2242
   - name: Moxa ioLogik E4200
     topicUid: Connector_help_Moxa_ioLogik_E4200
+  - name: Moxa NPort 5000 Series
+    topicUid: Connector_help_Moxa_NPort_5000_Series
+    items:
+    - name:  Moxa NPort 5000 Series Technical
+      topicUid: Connector_help_Moxa_NPort_5000_Series_Technical
   - name: Moxa NPort 5610
     topicUid: Connector_help_Moxa_NPort_5610
   - name: Moxa NPort 6610
@@ -6524,6 +6541,11 @@
       topicUid: Connector_help_NetInsight_Nimbra_Edge_Technical
   - name: NetInsight Nimbra VA
     topicUid: Connector_help_NetInsight_Nimbra_VA
+  - name: NetInsight Nimbra Vision
+    topicUid: Connector_help_NetInsight_Nimbra_Vision
+    items:
+    - name: NetInsight Nimbra Vision Technical
+      topicUid: Connector_help_NetInsight_Nimbra_Vision_Technical
 - name: Netscout
   items:
   - name: Netscout Arbor Sightline
@@ -10629,6 +10651,16 @@
     topicUid: Connector_help_ZDF_BFE_KSC_Core
   - name: ZDF Bluestream Live
     topicUid: Connector_help_ZDF_Bluestream_Live
+  - name: ZDF Live to File Recorder
+    topicUid: Connector_help_ZDF_Live_to_File_Recorder
+    items:
+     - name: ZDF Live to File Recorder Technical
+       topicUid: Connector_help_ZDF_Live_to_File_Recorder_Technical
+  - name: ZDF Paradigma
+    topicUid: Connector_help_ZDF_Paradigma
+    items:
+     - name: ZDF Paradigma Technical
+       topicUid: Connector_help_ZDF_Paradigma_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator

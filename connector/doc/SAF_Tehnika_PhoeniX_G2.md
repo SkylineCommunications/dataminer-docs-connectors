@@ -38,4 +38,3 @@ The SAF Tehnika Phoenix G2 connector provides comprehensive oversight and contro
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_SAF_Tehnika_Phoenix_G2_Technical).
-

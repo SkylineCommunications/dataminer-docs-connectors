@@ -28,7 +28,7 @@ This connector uses a virtual connection and does not require any input during e
 In addition, WMI and DCOM must be properly configured on the server to be monitored, as detailed below.
 
 > [!IMPORTANT]
-> Since this is a virtual connector, WMI queries sent to the target server are not displayed in the [Stream Viewer](https://docs.dataminer.services/user-guide/Troubleshooting/Logging/Monitoring_real-time_communication/Connecting_to_an_element_using_Stream_Viewer.html)
+> Since this is a virtual connector, WMI queries sent to the target server are not displayed in the [Stream Viewer](https://aka.dataminer.services/Connecting_to_an_element_using_Stream_Viewer)
 
 #### WMI configuration
 
