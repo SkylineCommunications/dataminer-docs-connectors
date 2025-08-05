@@ -61,6 +61,20 @@ TCP/IP settings
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
 
+#### HTTP Connection - Config Data
+
+This connector uses a second HTTP connection thread to poll management data in parallel with telemetry data and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **Type of port:** TCP/IP
+- **IP address/host**: api.starlink.com
+
+TCP/IP settings
+
+- **IP port**: 443
+- **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
+
 ### Initialization
 
 A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Configuration** page.
