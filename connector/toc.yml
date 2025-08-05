@@ -6536,6 +6536,11 @@
       topicUid: Connector_help_NetInsight_Nimbra_Edge_Technical
   - name: NetInsight Nimbra VA
     topicUid: Connector_help_NetInsight_Nimbra_VA
+  - name: NetInsight Nimbra Vision
+    topicUid: Connector_help_NetInsight_Nimbra_Vision
+    items:
+    - name: NetInsight Nimbra Vision Technical
+      topicUid: Connector_help_NetInsight_Nimbra_Vision_Technical
 - name: Netscout
   items:
   - name: Netscout Arbor Sightline
