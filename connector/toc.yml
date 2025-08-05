@@ -10646,6 +10646,16 @@
     topicUid: Connector_help_ZDF_BFE_KSC_Core
   - name: ZDF Bluestream Live
     topicUid: Connector_help_ZDF_Bluestream_Live
+  - name: ZDF Live to File Recorder
+    topicUid: Connector_help_ZDF_Live_to_File_Recorder
+    items:
+     - name: ZDF Live to File Recorder Technical
+       topicUid: Connector_help_ZDF_Live_to_File_Recorder_Technical
+  - name: ZDF Paradigma
+    topicUid: Connector_help_ZDF_Paradigma
+    items:
+     - name: ZDF Paradigma Technical
+       topicUid: Connector_help_ZDF_Paradigma_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
