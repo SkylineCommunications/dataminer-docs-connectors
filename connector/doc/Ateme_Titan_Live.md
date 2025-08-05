@@ -21,7 +21,8 @@ With this connector, you can gather and view information from the device **Ateme
 | 4.0.3.x | - Corrections to service output logic.<br>- New primary key format for all output tables. | Yes | Yes |
 | 4.0.4.x | Primary key of trap table changed. Display key unchanged. | Yes | Yes |
 | 4.0.5.x | DCF rework to create internal connection for services from input (both SDI and IP) to output | Yes | Yes |
-| 4.0.6.x [Main range] | - Fixed column parameter descriptions according to the guidelines.<br>- Added exception values for NTP parameters. | Yes | Yes |
+| 4.0.6.x | - Fixed column parameter descriptions according to the guidelines.<br>- Added exception values for NTP parameters. | Yes | Yes |
+| 4.0.7.x [Main range] | - Added ability to change active output to associated services.<br>- Services table display order has been updated. | Yes | Yes |
 
 ### Product Info
 
@@ -36,6 +37,7 @@ With this connector, you can gather and view information from the device **Ateme
 | 4.0.4.x          | 4.1.10.5                    |
 | 4.0.5.x          | 4.1.10.5                    |
 | 4.0.6.x          | 4.1.10.5                    |
+| 4.0.7.x          | 4.1.10.5                    |
 
 ## Configuration
 
