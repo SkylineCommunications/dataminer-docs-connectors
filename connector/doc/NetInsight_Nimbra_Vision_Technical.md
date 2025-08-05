@@ -95,6 +95,9 @@ The autoroute must be enabled in the Nimbra Vision web interface for the provisi
 To enable the above-mentioned functions:
 
 1. Install the licenses on the page *Admin* > *System Administration* > *License Details*. In the *Action* menu, select *Install*.
-2. Scheduling is enabled on the page *Admin* > *Circuit Provisioning* > *Scheduling Configurations*, by setting *Enabled* to *true*.
-3. Manually trigger creation of resources using the node context menu by selecting *Scheduling* > *Refresh Resources*.
-4. Default circuits to autoroute on page *Admin* > *Circuit Provisioning* > *Northbound Configuration*, setting *MSR Automatic Routing: true*
+
+1. Enable scheduling on the page *Admin* > *Circuit Provisioning* > *Scheduling Configurations*, by setting *Enabled* to *true*.
+
+1. Manually trigger creation of resources using the node context menu by selecting *Scheduling* > *Refresh Resources*.
+
+1. Set circuits to autoroute on the page *Admin* > *Circuit Provisioning* > *Northbound Configuration*, by setting *MSR Automatic Routing* to *true*
