@@ -2136,6 +2136,13 @@
     topicUid: Connector_help_Ceragon_Networks_Netmaster
   - name: Ceragon Networks Netmaster - Device
     topicUid: Connector_help_Ceragon_Networks_Netmaster_-_Device
+- name: Chatsworth Products
+  items:
+  - name: Chatsworth Products Switched eConnect PDU
+    topicUid: Connector_help_Chatsworth_Products_Switched_eConnect_PDU
+    items:
+    - name: Chatsworth Products Switched eConnect PDU Technical
+      topicUid: Connector_help_Chatsworth_Products_Switched_eConnect_PDU_Technical
 - name: Check Point
   items:
   - name: Check Point Security Manager
