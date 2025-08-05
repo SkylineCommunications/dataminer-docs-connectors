@@ -98,7 +98,7 @@ Set all these to **0**, and after a couple of minutes the query errors should di
 
 **Symptom**
 
-Task Manager table remains empty and stream Viewer shows the following error:
+The Task Manager table remains empty, and Stream Viewer shows the following error:
 
 ```text
 Query WMI failed. Retrieving the data failed. (hr = 0x80041017) for numerous WQL SELECT queries.
@@ -106,11 +106,11 @@ Query WMI failed. Retrieving the data failed. (hr = 0x80041017) for numerous WQL
 
 **Cause**
 
-Unclear, but one of the symptoms is that when viewed in the wbemtest tool the Win32_PerfRawData_PerfProc_Process class seems to be incomplete (i.e. it misses for example the IDProcess property, but also many others).
+Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the *Win32_PerfRawData_PerfProc_Process* class seems to be incomplete (i.e. it misses for example the IDProcess property, but also many others).
 
 **Solution**
 
-Open a command prompt as Administrator and execute the "lodctr /r" command which will reconstruct the performance counters.
+Open a command prompt as Administrator and execute the "lodctr /r" command. This will reconstruct the performance counters.
 
 ## Contacting Server Failed: Connection to root/cimv2 failed. The RPC server is unavailable
 
