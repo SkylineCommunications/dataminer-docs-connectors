@@ -24,4 +24,4 @@ To be able to access the API, go to the **General** page of the element, and con
 
 ## How to Use
 
-Once the element is fully configured and running, it will automatically listen for incoming VPS triggers from the Paradigma API. Incoming message will be parsed and displayed in the dedicated parameter along with timestamp of last received message time and status code. This allows users to monitor incoming EVS triggers in real time and verify that communication with the API is working.
+Once the element is fully configured and running, it will automatically listen for incoming VPS triggers from the Paradigma API. Incoming message will be parsed and displayed in the dedicated parameter along with the timestamp of last received message time and status code. This allows users to monitor incoming EVS triggers in real time and verify that communication with the API is working.
