@@ -15,18 +15,19 @@ SOAP calls are used to retrieve the device information. SNMP traps are used to c
 ### Version Info
 
 > [!IMPORTANT]
-> The current range of the connector is **4.4.2.x**.  
-> All other ranges are deprecated and are not updated.
+> The current range of the connector is **4.4.2.x**. All other ranges are deprecated and are no longer updated.
 
-> [!WARNING]
-> Updating to the latest main range **4.4.2.x** contains a breaking name change for the following DVEs:  
+> [!CAUTION]
+> The latest main range **4.4.2.x** contains a **breaking name change** for the following DVEs:
+>
 > - AppearTV Input DVB - S_S2
 > - AppearTV Output DVB - S_S2
 >
-> To avoid having unlinked DVEs after migration, it's important to follow the following steps:
+> To avoid having unlinked DVEs after you upgrade, follow these following steps:
+>
 > 1. Disable the current **DVB - S_S2** DVEs through the *Module List* table on the *General* page.
-> 1. Active the latest protocol range
-> 1. Re-enable the **DVB - S_S2** DVEs through the *Module List* table on the *General* page (if applicable)
+> 1. Activate the latest protocol range.
+> 1. Re-enable the **DVB - S_S2** DVEs through the *Module List* table on the *General* page (if applicable).
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
