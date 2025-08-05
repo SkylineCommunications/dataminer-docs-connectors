@@ -6,9 +6,9 @@ uid: Connector_help_Generic_API_Listener
 
 ## About
 
-This connector is designed to listen for incoming API requests and capture the data, including source, headers and body.
+This connector is designed to listen for incoming API requests and capture the data, including source, headers, and body.
 
-It provides a simple way to receive and forward API requests data, making it suitable for various applications that require data ingestion from external systems.
+It provides a simple way to receive and forward API request data, making it suitable for various applications that require data ingestion from external systems.
 
 ## Key Features
 

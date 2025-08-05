@@ -6,9 +6,9 @@ uid: Connector_help_Generic_API_Listener_Technical
 
 ## About
 
-This connector provides the ability for users to listen for incoming API called from a user-defined address. The received request are processed and stored in table with all the meaningful data.
+This connector provides the ability for users to listen for incoming API requests called from a user-defined address. The received requests are processed and stored in table with all the relevant meaningful data.
 
-The user has the ability to forward the received request data for further processing, such as script defined on the DataMiner system.
+The user can forward the received request data for further processing, for example by a script defined in the DataMiner System.
 
 ## Configuration
 
@@ -20,39 +20,34 @@ This connector uses a virtual connection and does not require any input during e
 
 ### General
 
-On the following page the user is able to see a general **Status** parameter of the listener, which indicates whether the listener is currently active or not.
+The General page displays a general **Status** parameter of the listener, which indicates whether the listener is currently active or not.
 
-Underneath the **Status** parameter, the user is presented with the listener **API Configuration** parameters.
+Underneath the **Status** parameter, listener **API Configuration** parameters are displayed.
 
-Following parameters are available for user to define:
+The following parameters can be configured:
 
-- **API Mode**: This parameter allows the user to select the mode of the API listener. The options are:
-  - **HTTP**: The listener will listen for HTTP requests.
-  - **HTTPS**: The listener will listen for HTTPS requests. (For HTTPS request to function correctly the user needs to select the necessary certificate on subpage **Configuration**)
-- **API Address**: The address on which the listener will listen for incoming requests. This is a read-only parameter which is composed of all the other configuration parameters.
-- **API IP/Hostname**: The IP address or hostname on which the listener will listen for incoming requests.
-- **API Path**: The path on which the listener will listen for incoming requests.
-- **API Port**: The port on which the listener will listen for incoming requests.
+- **API Mode**: Allows you to set the mode of the API listener to *HTTP* or *HTTPS* to make the listener listen for HTTP or HTTPS requests, respectively. Note that for HTTPS requests to function correctly, you will need to select the necessary certificate on the **Configuration** subpage.
+- **API Address**: The address where the listener will listen for incoming requests. This is a read-only parameter that is based on the other configuration parameters.
+- **API IP/Hostname**: The IP address or hostname where the listener will listen for incoming requests.
+- **API Path**: The path where the listener will listen for incoming requests.
+- **API Port**: The port where the listener will listen for incoming requests.
 
-At the bottom of the page, in the right corner there is a page button **Configuration** which opens a page with other configuration.
+In the lower right corner of the page, the **Configuration** page button opens a subpage with additional configuration parameters.
 
 ### Configuration
 
-This page contains extra configuration the API listener supports.
+This page contains extra configuration supported by the API listener.
 
 #### HTTPS Certificates Configuration
 
-Firstly, at the top of the page the user is able to select the **HTTPS Certificate** to be used for the HTTPS requests. The user can select a certificate from the list of available certificates on the DataMiner system.
+At the top of the page, you can select the **HTTPS Certificate** to be used for HTTPS requests. You can select any of the certificates available on the DataMiner System; however these certificates need to be **manually added to the system** first.
 
-> [!NOTE]
-> The user needs to manually add the necessary certificates on the system.
-
-Button to refresh the certificates is present underneath the certificate selection.
+Below the dropdown where you can select the certificate, a refresh button is available to update the selection list.
 
 #### Script Configuration
 
-Following the **HTTPS Certificates Configuration**, the user is able to select a **Script** which will be executed when **Execution Interval** has elapsed. The script can be used to process the request data or perform any other custom logic.
-The user is able to select a script from all the of available scripts on the DataMiner system, as well as manually refresh the list by pressing the **Refresh** button.
+Following the **HTTPS Certificates Configuration**, you can select a **Script** which will be executed when **Execution Interval** has elapsed. The script can be used to process the request data or perform any other custom logic.
+You can select any of the available scripts on the DataMiner System, as well as manually refresh the list by pressing the **Refresh** button.
 
 Besides the script selection the user is also able to define the **Script Parameter Unprocessed Keys** parameter name. This parameter allows the user to specify which parameter in the script is going to accept the unprocessed keys from the request data table. The keys are passed to the script as a comma-separated list.
 This parameter can be disabled as well.
