@@ -3770,6 +3770,9 @@
     topicUid: Connector_help_Evertz_Magnum_SDVN_Reflex
   - name: Evertz Magnum SDVN Router
     topicUid: Connector_help_Evertz_Magnum_SDVN_Router
+    items:
+    - name: Evertz Magnum SDVN Router Technical
+      topicUid: Connector_help_Evertz_Magnum_SDVN_Router_Technical
   - name: Evertz Mediator Nexus
     topicUid: Connector_help_Evertz_Mediator_Nexus
   - name: Evertz MUXIP-10GE-v52-2RU

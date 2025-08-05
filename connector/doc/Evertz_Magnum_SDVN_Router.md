@@ -8,17 +8,17 @@ The Evertz Magnum SDVN Router connector for DataMiner provides deep integration 
 
 ## Key Features
 
-- **Crosspoint Management**: Execute source-to-destination routing with support for locking, notes, and Quartz mapping.
+- **Crosspoint management**: Execute source-to-destination routing with support for locking, notes, and Quartz mapping.
 
-- **OAuth2 & Credential Authentication**: Support for secure login using either Authorization Code or Client Credentials.
+- **OAuth2 and credentials authentication**: Support for secure login using either authorization code or client credentials.
 
-- **Nameset & Salvo Retrieval**: Display up to 5 namesets and retrieve salvos configured in the Magnum application.
+- **Nameset and salvo retrieval**: Display up to five namesets and retrieve salvos configured in the Magnum application.
 
 ## Use Cases
 
 ### Unified Control of Distributed Matrices
 
-**Challenge**:Using hardware router panels or Magnum's native UI may be too technical or unfamiliar to broadcast operators.
+**Challenge**:Using hardware router panels or Magnum's native UI may be too technical or unfamiliar for broadcast operators.
 
 **Solution**: Expose only the required sources, destinations, and salvos in the DataMiner interface with intuitive labeling, view filtering, and nameset grouping.
 
@@ -28,7 +28,7 @@ The Evertz Magnum SDVN Router connector for DataMiner provides deep integration 
 
 **Challenge**: Managing transitions between incoming contribution feeds and outgoing distribution channels across multiple locations requires manual configuration, which is slow and error-prone.
 
-**Solution**: Use the connector’s Flow Engineering interface to visualize and manage connections between incoming and outgoing flows. InterApp messaging ensures real-time updates and logic tracking.
+**Solution**: Use the connector’s Flow Engineering interface to visualize and manage connections between incoming and outgoing flows. In the background, InterApp messaging ensures real-time updates and logic tracking.
 
 **Benefit**: Streamlined flow control, less human error, and improved responsiveness during live broadcast operations.
 

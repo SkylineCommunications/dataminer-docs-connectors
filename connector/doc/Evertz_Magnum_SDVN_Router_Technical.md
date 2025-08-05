@@ -37,42 +37,44 @@ To use this connector, the Magnum application must be configured to expose a vir
 
 ## Authentication
 
-Two methods are supported depending on the firmware or Magnum configuration:
+Two methods are supported depending on the firmware or Magnum configuration.
 
 ### Authorization Code Grant
+
 Used when OAuth2 token-based authentication is enabled.
 
-In the **OAUTH2 Connection Info** page, configure:
+On the **OAUTH2 Connection Info** page, configure:
 
-- **Client ID**: Provided by Magnum system administrator.
-- **Client Secret**: Provided by Magnum system administrator.
+- **Client ID**: Provided by the Magnum system administrator.
+- **Client Secret**: Provided by the Magnum system administrator.
 - **Time to Refresh Token**: Set this to less than the token expiration time to maintain a valid session.
 
 ### Client Credentials Grant
-Used for simpler integrations. Only the following fields are required (configured under the **General** page):
+
+Used for simpler integrations. Only the following fields will need to be configured for this (on the **General** page):
 
 - **Username**: REST API Username
 - **Password**: REST API Password
 
-No fields in the OAUTH2 page are required for this method.
+Nothing has to be configured on the OAUTH2 page for this method.
 
 ## Configuration Parameters
 
-On the **General** page, configure:
+On the **General** page, configure the following parameters:
 
 - **Device**: Targeted device for routing.
-- **Breakaway Mode**: Choose between Single or Quad channel routing.
-- **Number of Audio Channels**: Select from 0 to 16 (A to P).
+- **Breakaway Mode**: Choose between single or quad channel routing.
+- **Number of Audio Channels**: Select a number from 0 to 16 (A to P).
 - **Operation Mode**: Select Quartz only or Quartz + API.
 - **View Nameset**: Determines which nameset is used by default when making crosspoints.
 - **Polling Time Type** (for Quartz data only using server time):
-    - If set to Poll by Interval, the connector will use the value defined under **Poll Data Interval**.
-    - If set to Poll by Time of Day, it will use the schedule defined under **Polling by Time of Day**.
-- **Polling Delay on Quartz** Defines a time interval during which Quartz data will not be polled if a previous polling cycle was completed within that window. This is useful after an element restart to prevent redundant polling cycles which can take a while.
+  - If set to *Poll by Interval*, the connector will use the value defined under **Poll Data Interval**.
+  - If set to *Poll by Time of Day*, the connector will use the schedule defined under **Polling by Time of Day**.
+- **Polling Delay on Quartz**: Defines a time interval during which Quartz data will not be polled if a previous polling cycle was completed within that window. This is useful after an element restart to prevent redundant polling cycles, which can take a while.
 
 On the **Quartz** page:
 
-- **Profile ID**: Used to specify routing profile for crosspoints.
+- **Profile ID**: Used to specify the routing profile for crosspoints.
 
 ## Pages Overview
 
@@ -87,12 +89,13 @@ On the **Quartz** page:
 - **Labels / Profiles / Salvos / Devices**: Available when Operation Mode is set to Quartz + API.
 
 ## Notes
-The driver is designed to poll all the Quartz data first and then data using HTTP (If enabled)
 
-There are three buttons in the General page which allows the user to refresh the data of the connector.
+The connector is designed to poll all the Quartz data first and then poll data using HTTP (if enabled).
 
-1) Quartz Refresh All will initialte the polling of all data related with this connection Sources, Destinations names Crosspoint connections, and Lock Statuses. 
+There are three buttons on the General page that allow you to refresh the data of the connector.
 
-2) Quartz Cancel Polling can be use to stop at any moment the Quartz polling phase if currently in progress.
+- **Quartz Refresh All** will initiate the polling of all data related with this connection's sources, destinations, crosspoint connections, and lock statuses.
 
-3) HTTP Refresh will initiate the polling for the REST API part which includes Namesets, Salvos, Profiles, and Labels.
+- **Quartz Cancel Polling** can be used to stop the Quartz polling phase at any moment if it is currently in progress.
+
+- **HTTP Refresh** will initiate the polling for the REST API part, which includes namesets, salvos, profiles, and labels.
