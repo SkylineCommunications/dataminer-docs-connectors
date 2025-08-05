@@ -19,12 +19,15 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
+
 - **IP port**: The IP port of the destination.
+
 - **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
+
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ## How to use
@@ -32,5 +35,7 @@ SNMP Settings:
 The element consists of the data pages detailed below:
 
 - **General**: Contains the main KPIs related to radios on the device.
+
 - **Radio Configuration**: Contains all configuration values for both radios, including both receiving and transmitting values.
+
 - **Temperature**: Displays temperature readings from the device.
