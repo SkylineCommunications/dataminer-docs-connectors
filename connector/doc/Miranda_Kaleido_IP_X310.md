@@ -16,7 +16,7 @@ This connector supports the Miranda Kaleido IP X310. This is an IP video multivi
 | 1.0.1.x | 1.0.0.4 | Different display key for virtual alarm table. Changes in import file and mandatory value in service table. |
 | 1.0.2.x [Obsolete] | 1.0.1.2 | Audio alarms were separated from the service table. |
 | 1.0.3.x [SLC Main] | 1.0.2.3 | Changes to Health Information Table to allow trending and alarm monitoring. |
-| 1.1.0.x | 1.1.0.1 | SNMP no longer working for this firmware, only traps is working as it can be received via Miranda IControl (while showing source IP as the Miranda Kaleido device) |
+| 1.1.0.x | 1.1.0.1 | SNMP no longer works for this firmware; only traps work as they can be received via Miranda IControl (while showing the source IP as the Miranda Kaleido device). |
 
 ### Product Info
 
