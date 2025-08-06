@@ -4,9 +4,9 @@ uid: Connector_help_ZTE_ZXA10_C600_GPON_Platform_Technical
 
 # ZTE ZXA10 C600 GPON Platform
 
-The ZTE ZXA10 C600 GPON Platform connector uses an SNMP connection from ZTE ZXA10 C600 devices. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
-
 ## About
+
+The ZTE ZXA10 C600 GPON Platform connector uses an SNMP connection from ZTE ZXA10 C600 devices. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
 ### Version Info
 
@@ -15,7 +15,7 @@ The ZTE ZXA10 C600 GPON Platform connector uses an SNMP connection from ZTE ZXA1
 | 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution. | - | - |
 | 1.0.1.x | - Compatibility with new version of the Skyline EPM Solution. | - | - |
 | 1.0.2.x | - Split Table was removed and replaced with Split Route, Split Distribution, and Split FAT table. <br>- OLT is no longer in charge of requesting KPI data from the external source (e.g. KAFKA streams). | - | - |
-| 1.0.3.x [SLC Main] | - The ONT Overview table now includes new Rx Power thresholds to provide more specific and accurate statuses. <br>- Interfaces tables modified and rates calculations on them updated. | 1.0.2.11 | Tables IDs changed |
+| 1.0.3.x [SLC Main] | - The ONT Overview table now includes new Rx Power thresholds to provide more specific and accurate status information. <br>- Interfaces tables modified and rates calculations on them updated. | 1.0.2.11 | Tables IDs changed. |
 
 ### Product Info
 
@@ -57,22 +57,18 @@ SNMP Settings:
 
 The connector uses custom properties to configure the Network, Market, and Hub of the OLT. To link the views to the EPM data cards and full EPM functionality, make sure these properties are configured.
 
-The EPM solution works with a file system for internal element communication in relation to the topologies. Because of this, when an element is created, the following parameters must be defined on the **Configuration** page:
+The EPM Solution works with a file system for internal element communication in relation to the topologies. Because of this, when an element is created, the following parameters must be defined on the **Configuration** page:
 
 - **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
 
   - **Export State** and **Import State**: These parameters allow you to enable/disable the exporting and importing feature.
-  - **Export Directory,** **Entity Import Directory, and ONT Import Directory**: Specify the paths where the files will be exported and imported.
-  - **Entity Export Directory Type,** **Entity Import Directory Type, and ONT Import Directory Type**: Specify whether the export/import paths are **local or remote**. Note that for the remote file handling to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directories. The path must be shared/accessible, or this feature will not work.
+  - **Export Directory**, **Entity Import Directory**, and **ONT Import Directory**: Specify the paths where the files will be exported and imported.
+  - **Entity Export Directory Type**, **Entity Import Directory Type**, and **ONT Import Directory Type**: Specify whether the export/import paths are **local or remote**. Note that for the remote file handling to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directories. The path must be shared/accessible, or this feature will not work.
 
 - **System Credentials**: This section is to be used if the element is configured to a remote file location.
 
   - **System Username**: The username of the user that has access to the directory. If no domain is specified, the domain from the element's DMA location will be used.
   - **System Password**: The password of the user to access the remote directory.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to Use - Range 1.0.0.x-1.0.1.x
 
@@ -88,6 +84,7 @@ Once the initial setup is done, the connector can function without further confi
 - **SNMP Slow Interval**: Determines how often the information related to the configuration of the OLT will be polled. By default, the parameter is set to 4 hours.
 - **Virtual Interval**: Determines how often the topology will be synced with EPM. By default, the parameter is set to 2 hours.
 - **ONT Interval**: Determines how often state data of the ONTs will be requested. This data can for example come from a KAFKA stream. Default value: 15 minutes.
+
   The performance of this feature can vary depending on the number of updates received in the system.
 
 ## How to Use - Range 1.0.2.x
@@ -99,6 +96,7 @@ Another important difference with the previous range is related to the passive l
 ## Notes
 
 This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
+
 In range **1.0.1.x** of the connector, the Correlation rules are no longer required.
 
 With larger devices or large data sets, the polling performance may vary.

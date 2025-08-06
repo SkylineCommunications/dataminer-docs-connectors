@@ -4,6 +4,8 @@ uid: Connector_help_Skyline_EPM_Platform_Technical
 
 # Skyline EPM Platform
 
+## About
+
 The Skyline EPM Platform connector allows the aggregation of KPIs from different collector elements deployed for different types of infrastructures.
 
 This is an Experience and Performance Management connector, and as such it is designed to handle large amounts of data from the deployed infrastructures.
@@ -15,61 +17,39 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 - **DOCSIS Network**
 
   - Network
-
   - Market
-
   - Hub
-
   - CCAP Core
-
   - DS Line Cards - US Line Cards
-
   - DS Ports - US Ports
-
   - Node Segment
-
   - CM
 
 - **DOCSIS Service**
 
   - DOCSIS Network
-
   - DOCSIS Market
-
   - DOCSIS Hub
-
   - CCAP Core
-
   - Service Group [Fiber Node]
-
   - DS Service Group - US Service Group
-
   - CM
 
 - **DOCSIS Passives**
 
   - Node
-
   - Amplifier
-
   - Tap
-
   - CM
 
 - **GPON Service**
 
   - GPON Network
-
   - GPON Market
-
   - GPON Hub
-
   - OLT
-
   - Slot
-
   - Port
-
   - ONT
 
 - **DOCSIS Quick**
@@ -78,13 +58,11 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 
 - **GPON Quick**
 
-  - Allows you to quickly access the **GPON** topology level by selecting the desired filter (Including Split Route, Split Distribution, Split FAT).
+  - Allows you to quickly access the **GPON** topology level by selecting the desired filter (including Split Route, Split Distribution, Split FAT).
 
 - **Configuration**
 
   - Allows you to place Visual Overview layouts on a separate chain.
-
-## About
 
 ### Version Info
 
@@ -100,9 +78,9 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.7.x | Remote views removed from DOCSIS CPE level (Cable Modem, QAM Channels). | -  | -  |
 | 1.0.8.x | Remote views removed from GPON CPE level (ONT). | -  | -  |
 | 1.0.9.x | Organization and grouping for KPIs through GPON Service, DOCSIS Network, and DOCSIS Service topologies. | -  | -  |
-| 1.0.10.x  | Tables ordered in the same way as on the overview page. | -  | -  |
+| 1.0.10.x | Tables ordered in the same way as on the overview page. | -  | -  |
 | 1.0.11.x | Removed extra hyphens from thresholds page. | -  | -  |
-| 1.0.12.x [SLC Main] | The GPON Network/Market/Hub Overview tables now includes new Rx Power states to provide more specific and accurate statuses. | 1.0.11.4  | Tables IDs changed  |
+| 1.0.12.x [SLC Main] | The GPON Network/Market/Hub Overview tables now includes new Rx Power states to provide more specific and accurate status information. | 1.0.11.4  | Table IDs changed. |
 
 ### Product Info
 
@@ -138,7 +116,8 @@ Different **topologies** are presented in the Skyline EPM Platform. These topolo
 | 1.0.9.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.10.x  | No                  | Yes                     | -                     | -                       |
 | 1.0.11.x  | No                  | Yes                     | -                     | -                       |
-| 1.0.12.x  | No                  | Yes                     | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform GPON | - |
+| 1.0.12.x  | No                  | Yes                     | Automation scripts: <br>- EpmBeToOlt <br>- EpmBeToOltPassives <br>Generic KAFKA Consumer Connectors: <br>- ZTE ZXA10 C600 GPON Platform <br>- Huawei 5600-5800 GPON Platform <br>- Nokia ISAM 7300 FX GPON Platform <br>- Skyline EPM Platform GPON | - |
+
 ## Configuration
 
 ### Connections
@@ -208,7 +187,7 @@ These are the available PNM parameters that can be modified:
 
 ## How to Use
 
-The solution is based on the usage of .CSV files and the DataMiner messaging system using information events.
+The solution is based on the usage of CSV files and the DataMiner messaging system using information events.
 
 The **CCAP Platform** and **GPON Platform** elements export the necessary files containing the resources that need to be assigned DataMiner IDs. These elements notify the **Skyline Platform EPM front-end** element, which in turn initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In -First-Out) fashion to ensure the sequential processing of requests. The front-end element will import the CSV files in order to perform the necessary steps of the provisioning.
 

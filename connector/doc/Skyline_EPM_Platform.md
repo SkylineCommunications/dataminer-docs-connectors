@@ -2,7 +2,7 @@
 uid: Connector_help_Skyline_EPM_Platform
 ---
 
-# Skyline EPM Platform Connector
+# Skyline EPM Platform
 
 ## About
 
@@ -12,11 +12,11 @@ It provides visual topologies for DOCSIS and GPON networks, showing the hierarch
 
 ## Key Features
 
-- **Centralized KPI Aggregation**: Collects and consolidates KPIs from DOCSIS and GPON back-end elements.
-- **Visual Network Topologies**: Displays DOCSIS and GPON hierarchical network views, including quick navigation options.
-- **DOCSIS and GPON Quick Access**: Provides fast access to key topology levels using filter-based quick views.
-- **Topology Export/Import**: Manages topology data exchange with back-end elements for provisioning and synchronization.
-- **Integration with External Data**: Supports KPI collection from various back-end systems, including passives and KAFKA data sources.
+- **Centralized KPI aggregation**: Collects and consolidates KPIs from DOCSIS and GPON back-end elements.
+- **Visual network topologies**: Displays DOCSIS and GPON hierarchical network views, including quick navigation options.
+- **DOCSIS and GPON quick access**: Provides fast access to key topology levels using filter-based quick views.
+- **Topology export/import**: Manages topology data exchange with back-end elements for provisioning and synchronization.
+- **Integration with external data**: Supports KPI collection from various back-end systems, including passives and KAFKA data sources.
 
 ## Use Cases
 
@@ -32,7 +32,7 @@ It provides visual topologies for DOCSIS and GPON networks, showing the hierarch
 
 **Challenge**: Navigating large and complex DOCSIS or GPON topologies.
 
-**Solution**: Use the connector’s built-in visual overviews and quick access filters to navigate from high-level topology views to individual devices.
+**Solution**: Use the connector's built-in visual overviews and quick access filters to navigate from high-level topology views to individual devices.
 
 **Benefit**: Improves operational efficiency and speeds up troubleshooting.
 
@@ -40,7 +40,7 @@ It provides visual topologies for DOCSIS and GPON networks, showing the hierarch
 
 **Challenge**: Keeping topology and provisioning data consistent across multiple systems.
 
-**Solution**: Utilize the connector’s export/import capabilities to synchronize topology and provisioning data between the front-end and back-end elements.
+**Solution**: Utilize the connector's export/import capabilities to synchronize topology and provisioning data between the front-end and back-end elements.
 
 **Benefit**: Reduces configuration errors and ensures data accuracy across the network.
 
@@ -50,7 +50,7 @@ It provides visual topologies for DOCSIS and GPON networks, showing the hierarch
 
 - **Integration with Skyline EPM back-end elements** for DOCSIS and GPON data collection.
 - **Correctly configured file import/export paths** for topology and provisioning data sharing.
-- **Automation scripts and correlation rules** for handling message-based data exchange.
+- **Automation scripts and Correlation rules** for handling message-based data exchange.
 - Access credentials for remote directories if using remote export/import functionality.
 
 > [!NOTE]

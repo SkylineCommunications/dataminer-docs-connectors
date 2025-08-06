@@ -2,7 +2,7 @@
 uid: Connector_help_Huawei_5600-5800_GPON_Platform
 ---
 
-# Huawei 5600-5800 GPON Platform Connector
+# Huawei 5600-5800 GPON Platform
 
 ## About
 
@@ -12,11 +12,11 @@ The connector provides insight into the health and status of the OLT, connected 
 
 ## Key Features
 
-- **OLT Monitoring**: Tracks operational status, configuration parameters, and key performance metrics of Huawei 5600/5800 OLTs.
-- **ONT Management**: Displays ONT status and retrieves KPIs from internal or external sources (e.g., KAFKA).
-- **Topology Export/Import**: Synchronizes GPON topology data with the Skyline EPM GPON solution.
-- **Enhanced Split Topology**: Separates GPON split information into route, distribution, and FAT segments for clearer network visualization.
-- **Customizable Polling**: Configurable intervals for fast, slow, and virtual polling to optimize performance.
+- **OLT monitoring**: Tracks operational status, configuration parameters, and key performance metrics of Huawei 5600/5800 OLTs.
+- **ONT management**: Displays ONT status information and retrieves KPIs from internal or external sources (e.g. KAFKA).
+- **Topology export/import**: Synchronizes GPON topology data with the Skyline EPM GPON solution.
+- **Enhanced split topology**: Separates GPON split information into route, distribution, and FAT segments for clearer network visualization.
+- **Customizable polling**: Configurable intervals for fast, slow, and virtual polling to optimize performance.
 
 ## Use Cases
 
@@ -32,7 +32,7 @@ The connector provides insight into the health and status of the OLT, connected 
 
 **Challenge**: Keeping GPON topology synchronized between systems.
 
-**Solution**: Leverage the connector’s export/import capabilities to maintain accurate and consistent topology information across the network.
+**Solution**: Leverage the connector's export/import capabilities to maintain accurate and consistent topology information across the network.
 
 **Benefit**: Improves network planning, reduces configuration errors, and ensures operational consistency.
 
@@ -48,8 +48,6 @@ The connector provides insight into the health and status of the OLT, connected 
 
 ### Prerequisites
 
-- **Huawei 5600 or 5800 GPON OLT** running supported firmware.
-- **SNMP access** with correct community strings (default: `public` for GET, `private` for SET).
 - **Integration with Skyline EPM GPON Solution** for topology aggregation and visualization (optional but recommended).
 - Credentials for remote directories if using remote export/import functionality.
 

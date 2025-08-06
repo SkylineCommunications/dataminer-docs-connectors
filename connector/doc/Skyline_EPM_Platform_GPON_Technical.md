@@ -4,10 +4,13 @@ uid: Connector_help_Skyline_EPM_Platform_GPON_Technical
 
 # Skyline EPM Platform GPON
 
+## About
+
 The **Skyline EPM Platform GPON** connector allows the aggregation of KPIs from different platform elements of the GPON infrastructures. This connector is an Experience and Performance Management connector, and as such it is designed to handle large amounts of data from the GPON infrastructures.
 
-**Skyline EPM Platform GPON** is a **back-end** connector compatible with the **Skyline** **EPM Platform Solution**. A deployed EPM Solution contains one [Skyline EPM Platform](xref:Connector_help_Skyline_EPM_Platform)**front-end** element, but it can have one or multiple **Skyline EPM Platform GPONback-end** elements.
-The **Skyline EPM Platform** front-end element is responsible for the top-level data aggregation from different **back-end** elements, while each **back-end** element is responsible for the aggregation of the data from the OLT Platform elements. The available OLTs are the following: [ZTE ZXA10 C600 GPON Platform](xref:Connector_help_ZTE_ZXA10_C600_GPON_Platform), [Huawei 5600-5800 GPON Platform](xref:Connector_help_Huawei_5600-5800_GPON_Platform) and [Nokia ISAM 7300 FX GPON Platform](xref:Connector_help_Nokia_ISAM_7300_FX_GPON_Platform)
+**Skyline EPM Platform GPON** is a **back-end** connector compatible with the **Skyline EPM Platform Solution**. A deployed EPM Solution contains one [Skyline EPM Platform](xref:Connector_help_Skyline_EPM_Platform) **front-end** element, but it can have one or multiple **Skyline EPM Platform GPON back-end** elements.
+
+The Skyline EPM Platform front-end element is responsible for the top-level data aggregation from different back-end elements, while each back-end element is responsible for the aggregation of the data from the OLT Platform elements. The following OLTs are available: [ZTE ZXA10 C600 GPON Platform](xref:Connector_help_ZTE_ZXA10_C600_GPON_Platform), [Huawei 5600-5800 GPON Platform](xref:Connector_help_Huawei_5600-5800_GPON_Platform), and [Nokia ISAM 7300 FX GPON Platform](xref:Connector_help_Nokia_ISAM_7300_FX_GPON_Platform)
 
 Different topologies are presented in the **Skyline EPM Platform**. For the GPON infrastructure, the following chains are present:
 
@@ -29,9 +32,7 @@ Different topologies are presented in the **Skyline EPM Platform**. For the GPON
 
   - Allows you to place Visual Overview layouts on a separate chain.
 
-The KPIs in the topologies are the result of aggregation performed in the **Skyline EPM Platform GPONback-end** elements.
-
-## About
+The KPIs in the topologies are the result of aggregation performed in the **Skyline EPM Platform GPON back-end** elements.
 
 ### Version Info
 
@@ -40,43 +41,42 @@ The KPIs in the topologies are the result of aggregation performed in the **Skyl
 | 1.0.0.x | Initial version | - | - |
 | 1.0.1.x [SLC Main] | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | - | - |
 | 1.0.2.x | Removed remote view for ONT level | - | - |
-| 1.0.3.x [SLC Main]  | The OLT/Slot/Port/Split Route/Split Distribution/Split FAT Overview tables now includes new Rx Power states to provide more specific and accurate statuses. | 1.0.2.7  | Tables IDs changed  |
-
+| 1.0.3.x [SLC Main]  | The OLT/Slot/Port/Split Route/Split Distribution/Split FAT Overview tables now include new Rx Power states to provide more specific and accurate status information. | 1.0.2.7  | Tables IDs changed. |
 
 ### System Info
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
-| 1.0.0.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
-| 1.0.1.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
-| 1.0.2.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
-| 1.0.3.x | No | Yes | Automation scripts: - EpmBeToOlt - EpmBeToOltPassives Generic KAFKA Consumer Connectors: - ZTE ZXA10 C600 GPON Platform - Huawei 5600-5800 GPON Platform - Nokia ISAM 7300 FX GPON Platform - Skyline EPM Platform | - |
+| 1.0.0.x | No | Yes | Automation scripts: <br>- EpmBeToOlt <br>- EpmBeToOltPassives <br>Generic KAFKA Consumer Connectors: <br>- ZTE ZXA10 C600 GPON Platform <br>- Huawei 5600-5800 GPON Platform <br>- Nokia ISAM 7300 FX GPON Platform <br>- Skyline EPM Platform | - |
+| 1.0.1.x | No | Yes | Automation scripts: <br>- EpmBeToOlt <br>- EpmBeToOltPassives <br>Generic KAFKA Consumer Connectors: <br>- ZTE ZXA10 C600 GPON Platform <br>- Huawei 5600-5800 GPON Platform <br>- Nokia ISAM 7300 FX GPON Platform <br>- Skyline EPM Platform | - |
+| 1.0.2.x | No | Yes | Automation scripts: <br>- EpmBeToOlt <br>- EpmBeToOltPassives <br>Generic KAFKA Consumer Connectors: <br>- ZTE ZXA10 C600 GPON Platform <br>- Huawei 5600-5800 GPON Platform <br>- Nokia ISAM 7300 FX GPON Platform <br>- Skyline EPM Platform | - |
+| 1.0.3.x | No | Yes | Automation scripts: <br>- EpmBeToOlt <br>- EpmBeToOltPassives <br>Generic KAFKA Consumer Connectors: <br>- ZTE ZXA10 C600 GPON Platform <br>- Huawei 5600-5800 GPON Platform <br>- Nokia ISAM 7300 FX GPON Platform <br>- Skyline EPM Platform | - |
 
 ## Configuration
 
 ### Connections
 
-#### Virtual connection
+#### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation.
 
 ### Initialization
 
-Before the creation of a **Skyline EPM Platform GPON** element it is necessary to install the Automation Scripts **EpmBeToOlt** and **EpmBeToOltPassives** (without these scripts the element will not function).
+Before the creation of a **Skyline EPM Platform GPON** element it is necessary to install the Automation Scripts **EpmBeToOlt** and **EpmBeToOltPassives** (without these scripts, the element will not function).
 
-All components of the **Skyline EPM Platform Solution** work with a file system for internal communication. Because of this, when a new **Skyline EPM Platform GPON** element is created the following parameters must be defined in the **Configuration** page:
+All components of the **Skyline EPM Platform Solution** work with a file system for internal communication. Because of this, when a new **Skyline EPM Platform GPON** element is created, the following parameters must be defined on the **Configuration** page:
 
 1. Import Settings
 
-   - **Entity Import Directory**: Specify the generic GPON entity import path that is used throughout the EPM Solution. From this path the **Skyline EPM Platform GPON** will retrieve the OLT topology CSV file.
+   - **Entity Import Directory**: Specify the generic GPON entity import path that is used throughout the EPM Solution. From this path, the **Skyline EPM Platform GPON** will retrieve the OLT topology CSV file.
 
-   - **Entity Import Directory Type**: Specify whether the import path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
+   - **Entity Import Directory Type**: Specify whether the import path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and the directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
 
 1. Export Settings
 
    - **Entity Export Directory**: Specify the generic GPON entity export path that is used throughout the EPM Solution.
 
-   - **Entity Import Directory Type**: Specify whether the respective export path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
+   - **Entity Import Directory Type**: Specify whether the respective export path is local or remote. Note that for the remote file handling to work, the credentials for the system must be entered in the **System Credentials** section and the directory must be set to a remote path. The path has to be shared/accessible, or this feature will not work.
 
 1. System Credentials: This section is to be used if the element is configured to a remote file location.
 
@@ -84,9 +84,9 @@ All components of the **Skyline EPM Platform Solution** work with a file system 
 
    - **System Password**: The password of the user to access the remote directory.
 
-Finally, it is necessary to register the **OLT elements** (DMA_ID/Element_ID) that will be taken into account for the solution. This must be done in the **GPON Collector Registration** table available in the Backend page.
+Finally, it is necessary to register the **OLT elements** (DMA_ID/Element_ID) that will be taken into account for the solution. This must be done in the **GPON Collector Registration** table on the **Backend** page.
 
-## How to use
+## How to Use
 
 While this connector is mostly self-reliant once the initial setup is done, there are actions the user can perform.
 
@@ -96,7 +96,7 @@ While this connector is mostly self-reliant once the initial setup is done, ther
 
 ## Notes
 
-### Inner workflow of the EPM Solution
+### Inner Workflow of the EPM Solution
 
 The provisioning of the EPM Solution for GPON is sequential and involves the following components:
 

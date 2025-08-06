@@ -4,9 +4,9 @@ uid: Connector_help_Huawei_5600-5800_GPON_Platform_Technical
 
 # Huawei 5600-5800 GPON Platform
 
-The Huawei 5600-5800 GPON Platform connector uses an SNMP connection to communicate with Huawei 5600-5800 devices. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
-
 ## About
+
+The Huawei 5600-5800 GPON Platform connector uses an SNMP connection to communicate with Huawei 5600-5800 devices. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
 ### Version Info
 
@@ -14,15 +14,7 @@ The Huawei 5600-5800 GPON Platform connector uses an SNMP connection to communic
 |---------|------------------------------------------------------------------------------------|----------|---------------|
 | 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution.                  | -        | -             |
 | 1.0.1.x | Modified passive logic. Now it is compatible with routes, distributions, and FATs. | 1.0.0.6  | -             |
-| 1.0.2.x [SLC Main] | - The ONT Overview table now includes new Rx Power thresholds to provide more specific and accurate statuses. <br>- Interfaces tables modified and rates calculations on them updated. | 1.0.1.11 | Tables IDs changed |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-| 1.0.1.x   | N/A                    |
-| 1.0.2.x   | N/A                    |
+| 1.0.2.x [SLC Main] | - The ONT Overview table now includes new Rx Power thresholds to provide more specific and accurate status information. <br>- Interfaces tables modified and rates calculations on them updated. | 1.0.1.11 | Tables IDs changed. |
 
 ### System Info
 
@@ -59,8 +51,8 @@ The EPM Solution works with a file system for internal element communication in 
 - **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
 
   - **Export State** and **Import State**: These parameters allow you to enable/disable the exporting and importing feature.
-  - **Export Directory,** **Entity Import Directory, and ONT Import Directory**: Specify the paths where the files will be exported and imported.
-  - **Entity Export Directory Type,** **Entity Import Directory Type, and ONT Import Directory Type**: Specify whether the export/import paths are **local or remote**. Note that for the remote file handling to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directories. The path must be shared/accessible, or this feature will not work.
+  - **Export Directory**, **Entity Import Directory**, and **ONT Import Directory**: Specify the paths where the files will be exported and imported.
+  - **Entity Export Directory Type**, **Entity Import Directory Type**, and **ONT Import Directory Type**: Specify whether the export/import paths are **local or remote**. Note that for the remote file handling to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directories. The path must be shared/accessible, or this feature will not work.
 
 - **System Credentials**: This section is to be used if the element is configured to a remote file location.
 
