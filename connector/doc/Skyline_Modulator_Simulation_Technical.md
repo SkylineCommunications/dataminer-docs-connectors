@@ -6,7 +6,7 @@ uid: Connector_help_Skyline_Modulator_Simulation_Technical
 
 ## About
 
-The Skyline Modulator Simulation driver emulates a real modulator, allowing users to adjust and monitor parameters for demonstration and training purposes without requiring physical hardware.
+The Skyline Modulator Simulation connector emulates a real modulator, allowing users to adjust and monitor parameters for demonstration and training purposes without requiring physical hardware.
 
 ## Configuration
 
@@ -17,7 +17,9 @@ This connector uses a virtual connection and does not require any input during e
 ## How to Use
 
 ### General
+
 The General page provides access to key modulator parameters, including mode, state, output frequency, carrier modulation, symbol rate, bit rate, and roll-off. These parameters can be both monitored and configured, enabling accurate simulation of modulator behavior.
 
 ### Location Details
-The Location Details page allows users to define the modulator’s geographical information, including the location name, latitude, and longitude, providing contextual details for simulation scenarios.
+
+The Location Details page allows you to define the modulator's geographical information, including the location name, latitude, and longitude, providing contextual details for simulation scenarios.
