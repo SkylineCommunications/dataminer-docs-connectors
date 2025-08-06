@@ -7917,6 +7917,11 @@
     topicUid: Connector_help_RTBF_Nodal_Database_Connector
   - name: RTBF Nodal Manager
     topicUid: Connector_help_RTBF_Nodal_Manager
+  - name: RTBF Netia
+    topicUid: Connector_help_RTBF_Netia
+    items:
+    - name: RTBF Netia Technical
+      topicUid: Connector_help_RTBF_Netia_Technical
 - name: RTRN
   items:
   - name: RTRN NI
