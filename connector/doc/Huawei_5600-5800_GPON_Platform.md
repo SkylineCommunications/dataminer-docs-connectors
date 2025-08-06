@@ -4,91 +4,52 @@ uid: Connector_help_Huawei_5600-5800_GPON_Platform
 
 # Huawei 5600-5800 GPON Platform
 
-The Huawei 5600-5800 GPON Platform connector uses an SNMP connection to communicate with Huawei 5600-5800 devices. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
-
 ## About
 
-### Version Info
+The Huawei 5600-5800 GPON Platform connector integrates with Huawei OLT devices in the 5600 and 5800 series used in GPON networks. It communicates with the devices via SNMP to collect operational, configuration, and performance data. This information is centralized for monitoring and integrated with the Skyline EPM GPON solution for aggregation and visualization.
 
-| Range   | Key Features                                                                       | Based on | System Impact |
-|---------|------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution.                  | -        | -             |
-| 1.0.1.x | Modified passive logic. Now it is compatible with routes, distributions, and FATs. | 1.0.0.6  | -             |
+The connector provides insight into the health and status of the OLT, connected ONTs, and the GPON network topology. It supports external data integration for ONT KPIs and includes functionality for exporting and importing topology configurations.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-| 1.0.1.x   | N/A                    |
+- **OLT monitoring**: Tracks operational status, configuration parameters, and key performance metrics of Huawei 5600/5800 OLTs.
+- **ONT management**: Displays ONT status information and retrieves KPIs from internal or external sources (e.g. KAFKA).
+- **Topology export/import**: Synchronizes GPON topology data with the Skyline EPM GPON solution.
+- **Enhanced split topology**: Separates GPON split information into route, distribution, and FAT segments for clearer network visualization.
+- **Customizable polling**: Configurable intervals for fast, slow, and virtual polling to optimize performance.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                         | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
-| 1.0.1.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
+### Use Case 1
 
-## Configuration
+**Challenge**: Monitoring large-scale GPON deployments and maintaining service quality.
 
-### Connections
+**Solution**: Use the Huawei 5600-5800 GPON connector to collect real-time data from OLTs and ONTs, integrating with the Skyline EPM GPON solution for centralized visibility.
 
-#### SNMP Main Connection
+**Benefit**: Enables proactive fault detection, reduced downtime, and improved service reliability.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Use Case 2
 
-SNMP CONNECTION:
+**Challenge**: Keeping GPON topology synchronized between systems.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Solution**: Leverage the connector's export/import capabilities to maintain accurate and consistent topology information across the network.
 
-SNMP Settings:
+**Benefit**: Improves network planning, reduces configuration errors, and ensures operational consistency.
 
-- **Get community string**: The community string is used when reading values from the device (default: *public*).
-- **Set community string**: The community string is used when setting values on the device (default: *private*).
+### Use Case 3
 
-### Initialization
+**Challenge**: Efficiently processing ONT KPI data from multiple sources.
 
-The connector uses custom properties to configure the Network, Market, and Hub of the OLT. To link the views to the EPM data cards and full EPM functionality, make sure these properties are configured.
+**Solution**: Integrate the connector with external systems, such as KAFKA, for centralized ONT KPI retrieval and analysis.
 
-The EPM Solution works with a file system for internal element communication in relation to the topologies. Because of this, when an element is created, the following parameters must be defined on the **Configuration** page:
+**Benefit**: Delivers a unified view of ONT performance and facilitates faster issue resolution.
 
-- **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
+## Technical Reference
 
-  - **Export State** and **Import State**: These parameters allow you to enable/disable the exporting and importing feature.
-  - **Export Directory,** **Entity Import Directory, and ONT Import Directory**: Specify the paths where the files will be exported and imported.
-  - **Entity Export Directory Type,** **Entity Import Directory Type, and ONT Import Directory Type**: Specify whether the export/import paths are **local or remote**. Note that for the remote file handling to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directories. The path must be shared/accessible, or this feature will not work.
+### Prerequisites
 
-- **System Credentials**: This section is to be used if the element is configured to a remote file location.
+- **Integration with Skyline EPM GPON Solution** for topology aggregation and visualization (optional but recommended).
+- Credentials for remote directories if using remote export/import functionality.
 
-  - **System Username**: The username of the user that has access to the directory. If no domain is specified, the domain from the element's DMA location will be used.
-  - **System Password**: The password of the user to access the remote directory.
-
-## How to Use - Range 1.0.0.x
-
-The OLT connectors are used as links in the EPM GPON solution chain. These represent the lower layer in the GPON topology, where the information of ONTs is retrieved to then be processed/aggregated by the upper layers. It is important to take into account that some of the ONT KPIs come from an external source (e.g. KAFKA). You therefore need to make sure communication with that source is functioning properly. In addition, the number of updates received determines the efficiency, so the more updates, the longer processing will take.
-
-Another important thing is to set the **Reset ONT Interval** parameter (on the Configuration page) according to the retrieval speed of the information from the ONTs.
-
-Once the initial setup is done, the connector can function without further configuration. However, you can perform the following actions on the **Configuration** page:
-
-- **Entity Export Settings/Apply**: When you click this button, the element's topology files will be exported (configuration files). These files will be processed by the Skyline EPM Solution.
-- **Entity Import Settings/Apply**: When you click this button, the element will import the topology files created by the Skyline EPM Solution (provisioning files). These new files are based on the files originally exported by the element.
-- **SNMP Fast Interval**: Determines how often the information related to the status of the OLT will be polled. By default, the parameter is set to 15 minutes.
-- **SNMP Slow Interval**: Determines how often the information related to the configuration of the OLT will be polled. By default, the parameter is set to 4 hours.
-- **Virtual Interval**: Determines how often the topology will be synced with EPM. By default, the parameter is set to 2 hours.
-- **ONT Interval**: Determines how often state data of the ONTs will be requested. This data can for example come from a KAFKA stream. Default value: 15 minutes.
-
-  The performance of this feature can vary depending on the number of updates received in the system.
-
-## How to Use - Range 1.0.1.x
-
-In this range, the OLT is no longer responsible for information retrieval from the external source (e.g. KAFKA). The OLT Interval parameter has therefore been removed.
-
-Another important difference with the previous range is related to the passive logic: Split information is now divided over three tables to allow a better understanding and segmentation of the data in the topology. The Split page now contains the **Split Route Overview**, **Split Distribution Overview**, and **Split FAT Overview** tables.
-
-## Notes
-
-This connector requires specific Automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
-
-With larger devices or large data sets, the polling performance may vary.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Huawei_5600-5800_GPON_Platform_Technical).
