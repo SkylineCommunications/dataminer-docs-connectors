@@ -3770,6 +3770,9 @@
     topicUid: Connector_help_Evertz_Magnum_SDVN_Reflex
   - name: Evertz Magnum SDVN Router
     topicUid: Connector_help_Evertz_Magnum_SDVN_Router
+    items:
+    - name: Evertz Magnum SDVN Router Technical
+      topicUid: Connector_help_Evertz_Magnum_SDVN_Router_Technical
   - name: Evertz Mediator Nexus
     topicUid: Connector_help_Evertz_Mediator_Nexus
   - name: Evertz MUXIP-10GE-v52-2RU
@@ -4136,6 +4139,11 @@
   items:
   - name: Generic 4K Converter
     topicUid: Connector_help_Generic_4K_Converter
+  - name: Generic API Listener
+    topicUid: Connector_help_Generic_API_Listener
+    items:
+    - name: Generic API Listener Technical
+      topicUid: Connector_help_Generic_API_Listener_Technical
   - name: Generic Automation Script
     topicUid: Connector_help_Generic_Automation_Script
   - name: Generic Bookings Log
@@ -6541,6 +6549,11 @@
       topicUid: Connector_help_NetInsight_Nimbra_Edge_Technical
   - name: NetInsight Nimbra VA
     topicUid: Connector_help_NetInsight_Nimbra_VA
+  - name: NetInsight Nimbra Vision
+    topicUid: Connector_help_NetInsight_Nimbra_Vision
+    items:
+    - name: NetInsight Nimbra Vision Technical
+      topicUid: Connector_help_NetInsight_Nimbra_Vision_Technical
 - name: Netscout
   items:
   - name: Netscout Arbor Sightline
@@ -7295,10 +7308,16 @@
     topicUid: Connector_help_Paradise_Q-Flex
   - name: Paradise RCP-1200
     topicUid: Connector_help_Paradise_RCP-1200
+    items:
+      - name: Paradise RCP-1200 Technical
+        topicUid: Connector_help_Paradise_RCP-1200_Technical
   - name: Paradise RCP2-1100_1200
     topicUid: Connector_help_Paradise_RCP2-1100_1200
   - name: Paradise SSPA CO
     topicUid: Connector_help_Paradise_SSPA_CO
+    items:
+      - name: Paradise SSPA CO Technical
+        topicUid: Connector_help_Paradise_SSPA_CO_Technical
   - name: Paradise vBUC
     topicUid: Connector_help_Paradise_vBUC
 - name: PATLITE Corporation
@@ -10656,6 +10675,16 @@
     topicUid: Connector_help_ZDF_BFE_KSC_Core
   - name: ZDF Bluestream Live
     topicUid: Connector_help_ZDF_Bluestream_Live
+  - name: ZDF Live to File Recorder
+    topicUid: Connector_help_ZDF_Live_to_File_Recorder
+    items:
+     - name: ZDF Live to File Recorder Technical
+       topicUid: Connector_help_ZDF_Live_to_File_Recorder_Technical
+  - name: ZDF Paradigma
+    topicUid: Connector_help_ZDF_Paradigma
+    items:
+     - name: ZDF Paradigma Technical
+       topicUid: Connector_help_ZDF_Paradigma_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator

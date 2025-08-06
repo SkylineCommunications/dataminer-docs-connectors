@@ -32,5 +32,7 @@ SNMP Settings:
 The element consists of the data pages detailed below:
 
 - **General**: Contains the main KPIs related to radios on the device.
+
 - **Radio Configuration**: Contains all configuration values for both radios, including both receiving and transmitting values.
+
 - **Temperature**: Displays temperature readings from the device.
