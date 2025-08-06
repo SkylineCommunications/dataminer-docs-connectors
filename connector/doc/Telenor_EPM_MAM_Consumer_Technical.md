@@ -18,8 +18,8 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to Use
 
-On the **Sources** page, a table list all the RabbitMQ servers monitored by this connector. New servers can be added and removed using a context menu. The queue name is identical for all the servers and can be configured on the **General** page.
+On the **Sources** page, a table lists all the RabbitMQ servers monitored by this connector. Servers can be added or removed using the table's right-click menu. The queue name is identical for all the servers and can be configured on the **General** page.
 
 The **Collectors** page displays a table containing all the collectors detected in the system and their current state. The path and access details to the folder containing the provisioning files can be configured on this same page.
 
-The **Log** page can be used to configure the custom logging. The connector uses custom logging to display the messages received for specific devices. The log files are stored in the folder *C:\Skyline DataMiner\Telenor\Elements\<ElementName>\Logging*. The devices table is used to configure the list of devices for which the received messages should be logged. Via the right-click menu of the table, you can add devices to the table or remove them.
+The **Log** page can be used to configure the custom logging. The connector uses custom logging to display the messages received for specific devices. The log files are stored in the folder `C:\Skyline DataMiner\Telenor\Elements\<ElementName>\Logging`. The devices table is used to configure the list of devices for which the received messages should be logged. Via the right-click menu of the table, you can add devices to the table or remove them.
