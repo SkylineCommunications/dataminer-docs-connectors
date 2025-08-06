@@ -7308,10 +7308,16 @@
     topicUid: Connector_help_Paradise_Q-Flex
   - name: Paradise RCP-1200
     topicUid: Connector_help_Paradise_RCP-1200
+    items:
+      - name: Paradise RCP-1200 Technical
+        topicUid: Connector_help_Paradise_RCP-1200_Technical
   - name: Paradise RCP2-1100_1200
     topicUid: Connector_help_Paradise_RCP2-1100_1200
   - name: Paradise SSPA CO
     topicUid: Connector_help_Paradise_SSPA_CO
+    items:
+      - name: Paradise SSPA CO Technical
+        topicUid: Connector_help_Paradise_SSPA_CO_Technical
   - name: Paradise vBUC
     topicUid: Connector_help_Paradise_vBUC
 - name: PATLITE Corporation
