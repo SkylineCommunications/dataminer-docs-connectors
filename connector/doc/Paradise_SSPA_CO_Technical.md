@@ -6,7 +6,7 @@ uid: Connector_help_Paradise_SSPA_CO_Technical
 
 ## About
 
-This connector is used to monitor and control compact outdoor solid-state power amplifiers (SSPAs) via serial communication. It provides visibility into amplifier performance, electrical readings, and fault indicators, and allows configuration of system behavior and alarm thresholds.
+This connector is used to monitor and control compact outdoor solid-state power amplifiers (SSPAs) via serial communication. It provides visibility on amplifier performance, electrical readings, and fault indicators, and allows configuration of system behavior and alarm thresholds.
 
 ## Configuration
 
@@ -25,7 +25,7 @@ This connector uses a serial connection and requires the following input during 
 
 ### System Info
 
-Displays RF metrics and internal voltages:
+The following system info parameters are shown:
 
 - RF Power Level
 - Reflected RF Power
@@ -36,15 +36,15 @@ Displays RF metrics and internal voltages:
 
 ### Communication Info
 
-Shows communication configuration:
+The following communication configuration parameters are shown:
 
-- Protocol Select  
-- Baudrate  
-- Network Address  
+- Protocol Select
+- Baudrate
+- Network Address
 
 ### Fault Status
 
-Displays the state of key fault indicators:
+The following key fault indicator status information is shown:
 
 - Summary Fault
 - High Temperature Fault
@@ -57,7 +57,7 @@ Displays the state of key fault indicators:
 
 ### Fault Monitoring Setup
 
-Used to configure alarm thresholds and logic:
+The following alarm thresholds and logic configuration is possible:
 
 - Fault Logic (BUC, Spare, Auxiliary)
 - Handling settings per fault type
@@ -66,7 +66,7 @@ Used to configure alarm thresholds and logic:
 
 ### System Setup
 
-Allows basic device control and configuration:
+The following parameters allow basic device control and configuration:
 
 - Attenuation Level
 - Standby Mode
@@ -77,5 +77,6 @@ Allows basic device control and configuration:
 - Unit Startup State
 - System Hierarchical Address
 
-> [!NOTE]
-> The connector was tested using firmware version *3.53* of the SSPA.
+## Notes
+
+The connector was tested using firmware version **3.53** of the SSPA.
