@@ -1119,8 +1119,8 @@
   items:
   - name: AvL Technologies AAQ Controller
     topicUid: Connector_help_AvL_Technologies_AAQ_Controller
-    items:  
-      -name: AvL Technologies AAQ Controller Technical        
+    items:
+    - name: AvL Technologies AAQ Controller Technical
       topicUid: Connector_help_AvL_Technologies_AAQ_Controller_Technical
 - name: AVT
   items:
