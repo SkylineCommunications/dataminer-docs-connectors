@@ -1115,6 +1115,13 @@
   items:
   - name: AviWest StreamHub
     topicUid: Connector_help_AviWest_StreamHub
+- name: AvL Technologies
+  items:
+  - name: AvL Technologies AAQ Controller
+    topicUid: Connector_help_AvL_Technologies_AAQ_Controller
+    items:
+    - name: AvL Technologies AAQ Controller Technical
+      topicUid: Connector_help_AvL_Technologies_AAQ_Controller_Technical
 - name: AVT
   items:
   - name: AVT MAGIC AD1 ETI
