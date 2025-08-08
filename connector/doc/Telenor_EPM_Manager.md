@@ -15,9 +15,9 @@ The connector has two levels of complexity:
 
 ### Version Info
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| Range                | Key Features     | Based on     | System Impact                                                                                                       |
+|----------------------|------------------|--------------|---------------------------------------------------------------------------------------------------------------------|
+| 1.0.0.x [SLC Main]   | Initial version  | -            | - From version 1.0.0.45 onwards, the channel file name must be configured manually. See the note below for details. |
 
 ### Product Info
 
@@ -57,7 +57,10 @@ First you need to configure an **FE Manager**. To do this, follow these steps:
 
 1. Also on the **Configurations** page, specify the **Provisioning Share Location LPI Folder** and **Provisioning Share Location SDP Folder** and add the credentials to access these folders.
 
-1. On the **Configurations** page, you can also define the path where the FE Manager can create **logging files**. These will contain information on the inconsistencies that the FE Manager encounters when trying to build the infrastructure topology diagram.
+> [!NOTE]
+> Starting from version **1.0.0.45**, the channel file name must be configured manually. To do this, specify the desired value in the **Provisioning Channel File Name** parameter, located on the **Configurations** page.
+
+5. On the **Configurations** page, you can also define the path where the FE Manager can create **logging files**. These will contain information on the inconsistencies that the FE Manager encounters when trying to build the infrastructure topology diagram.
 
 When you have configured the FE Manager element, you can configure a **BE Manager**. The connector includes logic to facilitate the creation of a BE Manager. To do this, follow these steps:
 
