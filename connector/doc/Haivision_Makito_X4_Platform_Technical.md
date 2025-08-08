@@ -4,9 +4,9 @@ uid: Connector_help_Haivision_Makito_X4_Platform_Technical
 
 # Haivision Makito X4 Platform
 
-The Makito X4 Platform is a single solution for both video encoding and decoding. It combines the features available in the Makito X4 encoders and Makito X4 decoder.
-
 ## About
+
+The Makito X4 Platform is a single solution for both video encoding and decoding. It combines the features available in the Makito X4 encoders and Makito X4 decoder.
 
 ### Version Info
 
@@ -14,7 +14,7 @@ The Makito X4 Platform is a single solution for both video encoding and decoding
 |--------------------|------------------|----------|---------------|
 | 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 | 1.0.0.x  | Support for firmware 1.6.0-x. | -        | -             |
-| 1.0.0.x  | Added "Displayed Output Frames Stats", "Skipped Output Frames Stats", and "Replayed Output Frames Stats" columns to the "Decoder Statistics" tabke which allows alarming and trending. | -        | -             |
+| 1.0.0.x  | Added "Displayed Output Frames Stats", "Skipped Output Frames Stats", and "Replayed Output Frames Stats" columns to the "Decoder Statistics" table, which allows alarm monitoring and trending. | -        | -             |
 
 ### Product Info
 
