@@ -3824,7 +3824,7 @@
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-HDMI-2-4K-IP
   - name: Evertz Scorpion 6
     topicUid: Connector_help_Evertz_Scorpion_6
-    name: Evertz Scorpion 18 MIO-DD4-3G
+  - name: Evertz Scorpion 18 MIO-DD4-3G
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-DD4-3G
     items:
     - name: Evertz Scorpion 18 MIO-DD4-3G Technical
@@ -3869,6 +3869,11 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
+  - name: EVS Neuron NAP - BRIDGE
+    topicUid: Connector_help_EVS_Neuron_NAP_-_BRIDGE
+    items:
+    - name: EVS Neuron NAP - BRIDGE Technical
+      topicUid: Connector_help_EVS_Neuron_NAP_-_BRIDGE_Technical
 - name: eWon
   items:
   - name: eWon Router
