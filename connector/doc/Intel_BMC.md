@@ -6,66 +6,68 @@ uid: Connector_help_Intel_BMC
 
 ## About
 
-The Intel Integrated Baseboard Management Controller (BMC) is a critical component of server management, providing remote monitoring and control capabilities for Intel® Server Systems powered by the Intel® Xeon® Scalable processor family.
+The **Intel Baseboard Management Controller (BMC)** is a built-in server management chip that lets you monitor, control, and troubleshoot systems remotely — even if the OS is down.
 
-This controller implements the OpenBMC Redfish API Specification*, supporting industry-standard Redfish schemas for system management. These schemas define available resources, including their URIs, supported HTTP methods, properties, links, and actions, enabling seamless integration with automation and orchestration tools.
+**Unlock smarter server management with the Intel BMC Connector.**
+Seamlessly integrate with Intel® Server Systems and leverage the power of the OpenBMC Redfish* API to monitor, control, and automate your infrastructure. From hardware health checks to power, thermal, and system insights, the Intel BMC Connector gives you real-time visibility and remote management capabilities — all without stepping into the data center. Faster troubleshooting, less downtime, and smarter operations start here.
 
-## Configuration
+## Key Features
 
-### Connections
+- **Remote System Management**: Monitor and control your server hardware without physical access, even when the operating system is offline.
 
-#### HTTP Connection
+- **OpenBMC Redfish API Support**: Industry-standard API interface for seamless integration with automation tools and third-party monitoring platforms.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+- **Hardware Health Monitoring**: Real-time insights into CPU, memory, fans, storage, power supplies, and temperature sensors.
 
-HTTP CONNECTION:
+- **Power & Thermal Management**: Retrieve and control power usage, fan speeds, and thermal thresholds to optimize energy efficiency.
 
-- IP address/host: The polling IP of the device.
-- IP port: The device API IP Port (default 443)
-- Bus address: ByPassProxy
+- **Event & Alert Handling**: Receive and process system events, alerts, and hardware status changes instantly.
 
-### Usage
+- **Inventory & Configuration Access**: View detailed hardware inventory and adjust system settings remotely.
 
-#### General
+- **Secure Remote Access**: Built-in authentication and encrypted communication for safe server management.
 
-This page displays the device generic information, which contains the following parameters: **Product Name**, **Manufacturer**, **Server Name**, **UUID**, **Serial Number**, **Product ID**, and **System ROM**.
+- **Multi-System Support**: Manage multiple Intel® Server Systems through a single integration.
 
-#### Connection Setup
+## Use Cases
 
-The Connection Setup page displays the **User Name** and **Password** text boxes where the credentials information are filled for the HTTP API polling. Also we have the **Connection Status** which can be Connected and Not Connected.
+### Remote Troubleshooting in Data Centers
 
-#### System Information
+**Challenge**:  A server in a remote data center becomes unresponsive, and on-site staff are unavailable to diagnose the issue.
 
-This page displays the **State**, **Health**, **Server Power**, **UID Indicator**, **Manager Description**, **Manager UUID**, **Manager State**, **Manager Health**.
+**Solution**: The Intel BMC Connector provides out-of-band access via the Redfish API, allowing admins to view system logs, monitor hardware health, and perform a remote reboot.
 
-#### Processors
+**Benefit**: Eliminates the need for on-site visits, reduces downtime, and speeds up incident resolution.
 
-Displays the **Processors Table** which contains the following columns: **Index**, **Name**, **State**, **Health**, **Instruction Set**, **Manufacturer**, **Max Speed**, **Total Cores**, **Total Threads**, and **Model**.
+### Automated Hardware Health Checks
 
-#### Memory
+**Challenge**: Large server farms require daily health monitoring to detect failures before they impact services.
 
-Displays the **Memory Summary Table** which has the following parameters: **Index**, **State**, **Health**, **DIMM Type**, **Slot**, **Module Type**, **Type**, **Size GiB**, **Maximum Frequency**, **Part Number**, and **Manufacturer**.
+**Solution**: The Intel BMC Connector integrates with automation scripts to query CPU temperatures, fan speeds, and power usage at regular intervals.
 
-#### Storage
+**Benefit**: Proactively detects hardware issues, reducing unplanned outages and improving service reliability.
 
-Displays the Processors Table which contains the following columns: **Index**, **Name**, **Protocol**, **Serial Number**, **Media Type**, **Rotation Speed**, **Model**, **Revision**, and **Capacity MiB**.
+### Energy Optimization in Cloud Environments
 
-#### Chassis
+**Challenge**: High energy costs and thermal constraints in large-scale deployments.
 
-Displays the Chassis Information Table which contains the following columns: **Index**, **Name**, **Part Number**, **Power State**, **LED Indicator**, **Location**, **Height**, **Serial Number**, **Health**, **State**, **Manufacturer**, **Model**, **Chassis Type**, **Min Power Watts**, and **Max Power Watts**.
+**Solution**: The connector retrieves detailed power and thermal metrics via Redfish, enabling automated cooling and power usage adjustments.
 
-#### Power
+**Benefit**: Optimizes energy efficiency, lowers operational costs, and extends hardware lifespan.
 
-This page contains the Power Supplies Table which has the following parameters: **Index**, **Name**, **Health**, **State**, **Firmware**, **Model**, **Serial Number**, **Part Number**, and **Manufacturer**.
+### Asset Inventory and Compliance Auditing
 
-#### Fans
+**Challenge**: IT teams struggle to keep hardware inventory data up to date across multiple locations.
 
-Displays the Fans Table which has the following parameters: **Index**, **Name**, **Health**, **State**, **Speed** and **Max Speed**.
+**Solution**: The Intel BMC Connector collects inventory information (CPU, memory, firmware versions, etc.) automatically via API.
 
-#### Temperatures
+**Benefit**: benefit(s) description.
 
-Displays the Temperature Table which has the following parameters: **Index**, **Name**, **Health**, **State**, and **Temperature**.
+## Technical Reference
 
-### Web Interface
+### Prerequisites
 
-This page displays the Web Interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+- **Valid BMC User Account with correct login credentials** is required to access the Redfish API and retrieve system data.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Intel_BMC_Technical).
