@@ -7817,6 +7817,11 @@
     topicUid: Connector_help_Rohde_Schwarz_OSP_120
   - name: Rohde Schwarz Prismon
     topicUid: Connector_help_Rohde_Schwarz_Prismon
+  - name: Rohde Schwarz SCE100
+    topicUid: Connector_help_Rohde_Schwarz_SCE100
+    items:
+    - name: Rohde Schwarz SCE100 Technical
+      topicUid: Connector_help_Rohde_Schwarz_SCE100_Technical
   - name: Rohde Schwarz SLx8000 DVBT
     topicUid: Connector_help_Rohde_Schwarz_SLx8000_DVBT
   - name: Rohde Schwarz SLx8000 N+1 DAB+
