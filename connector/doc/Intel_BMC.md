@@ -61,7 +61,7 @@ Seamlessly integrate with Intel® Server Systems and leverage the power of the O
 
 **Solution**: The Intel BMC Connector collects inventory information (CPU, memory, firmware versions, etc.) automatically via API.
 
-**Benefit**: benefit(s) description.
+**Benefit**: Saves time on manual audits, ensures compliance, and improves asset tracking accuracy.
 
 ## Technical Reference
 
