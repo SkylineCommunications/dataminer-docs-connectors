@@ -36,7 +36,7 @@ This page displays general information related to the device, which contains the
 
 ### Connection Setup
 
-The Connection Setup page displays the **User Name** and **Password** boxes, where the credentials are should be filled in for the HTTP API polling. The **Connection Status** indicates whether the connection is active or not.
+The Connection Setup page displays the **User Name** and **Password** boxes, where the credentials should be filled in for the HTTP API polling. The **Connection Status** indicates whether the connection is active or not.
 
 ### System Information
 
