@@ -4,59 +4,53 @@ uid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)
 
 # TAG Video Systems Media Control System (MCS)
 
-This is an HTTP-based connector that can be used to monitor and configure the **TAG Media Control System Platform**.
-
 ## About
 
-### Version Info
+The **TAG Video Systems Media Control System (MCS) connector** provides HTTP-based integration between Skyline DataMiner and TAG’s Media Control System. It enables DataMiner to monitor, configure, and control the MCS platform via its REST API—aggregating data and exposing alarms and media health metrics within DataMiner dashboards.
 
-| Range              | Key Features          | Based on | System Impact |
-|--------------------|-----------------------|----------|---------------|
-| 1.0.0.x            | Initial version       | -        | -             |
-| 1.0.1.x            | Connector overhaul    | 1.0.0.7  | -             |
-| 1.0.2.x [SLC Main] | New range for Unicode | 1.0.1.2  | -             |
+> [!NOTE]
+>
+> This connector is bundled with the TAG MCM-9000 connector in the **TAG Management** application. For more information, see: [TAG Management](https://catalog.dataminer.services/details/0ef8f78a-beeb-4ec0-b321-e79b26b393ce)
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | API Version: 5.0       |
-| 1.0.1.x   | API Version: 5.0       |
-| 1.0.2.x   | API Version: 5.0       |
+- **HTTP/REST connectivity**: Communicates with MCS via HTTP REST API, enabling seamless two-way control and status updates.
+- **Event-driven updates via SNMP traps**: Listens on port 162 for automatic updates when MCS events occur.  
+- **Data aggregation & orchestration**: Collects and correlates media health and performance data across all TAG MCM devices.  
+- **Unified visualization & automation**: Integrates MCS metrics, alarms, and control into DataMiner dashboards and low-code apps for unified monitoring and orchestration.  
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+### Use Case 1
 
-## Configuration
+**Challenge**: Operators lacked a unified view of media health and infrastructure status across TAG and DataMiner platforms.  
 
-### Connections
+**Solution**: Use the MCS connector to bring TAG MCS data, alarms, and controls into DataMiner dashboards and apps.  
 
-#### HTTP Connection
+**Benefit**: Real-time insights into both content health and infrastructure, streamlined workflows, and improved operational efficiency.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+### Use Case 2
 
-HTTP CONNECTION:
+**Challenge**: Scaling TAG deployments across multiple MCM elements and MCS clusters required complex configuration.  
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
+**Solution**: The MCS connector serves as a single integration point, simplifying deployment through automated discovery and control logic.  
 
-### Initialization
+**Benefit**: Faster rollout and simplified management of large TAG ecosystems with reduced configuration overhead.
 
-Specify the following input configuration on the **Communication** page of the element:
+### Use Case 3
 
-- **Username**: Name of the user used in the HTTP login operation.
-- **Password**: Password of the user used in the HTTP login operation.
+**Challenge**: Media anomalies and failures were buried in log files, with delayed troubleshooting.  
 
-## How to Use
+**Solution**: The connector surfaces MCS-aggregated media health metrics and alarms into DataMiner, enabling proactive dashboards and alerts.  
 
-REST API calls are used to establish communication with the device. For several of the tables, you can right-click the table to access a context menu that allows data manipulation and changes.
+**Benefit**: Faster root cause identification, proactive fault detection, and improved viewer experience.
 
-Certain settings, such as the layouts and channel configuration outside of the context menus, are stored on the **Tag Sets** page.
+## Technical Reference
 
-Note that SNMP traps are received via a hidden connection using port 162 in order to automatically update table information with new events.
+### Prerequisites
+- **DataMiner version 10.4.3.0 or higher** is required for full MCS connector functionality.
+- **HTTP/SNMP endpoint access**: Ensure MCS is reachable via IP/hostname and appropriate port (443 and 162).  
+- **Credentials for MCS**: Provide valid username and password for HTTP-based authentication.  
+
+> [!NOTE]
+> For detailed technical guidelines on using the connector and its UI context-menus, refer to our [technical documentation](xref:Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)_Technical).
