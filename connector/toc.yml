@@ -5186,6 +5186,9 @@
   items:
   - name: Intel BMC
     topicUid: Connector_help_Intel_BMC
+    items:
+    - name: Intel BMC Technical
+      topicUid: Connector_help_Intel_BMC_Technical
   - name: Intel IPMI
     topicUid: Connector_help_Intel_IPMI
 - name: Intellian

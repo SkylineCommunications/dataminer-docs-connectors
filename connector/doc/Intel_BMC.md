@@ -6,16 +6,13 @@ uid: Connector_help_Intel_BMC
 
 ## About
 
-The **Intel Baseboard Management Controller (BMC)** is a built-in server management chip that lets you monitor, control, and troubleshoot systems remotely — even if the OS is down.
+The **Intel Baseboard Management Controller (BMC)** is a built-in server management chip that lets you monitor, control, and troubleshoot systems remotely, even if the OS is down.
 
-**Unlock smarter server management with the Intel BMC Connector.**
-Seamlessly integrate with Intel® Server Systems and leverage the power of the OpenBMC Redfish* API to monitor, control, and automate your infrastructure. From hardware health checks to power, thermal, and system insights, the Intel BMC Connector gives you real-time visibility and remote management capabilities — all without stepping into the data center. Faster troubleshooting, less downtime, and smarter operations start here.
+With the Intel BMC connector, you get access to **smarter server management**. It leverages the power of the OpenBMC Redfish API to monitor, control, and automate your infrastructure. From hardware health checks to power, thermal, and system insights, the Intel BMC connector gives you real-time visibility and remote management capabilities, all without stepping into the data center.
 
 ## Key Features
 
 - **Remote System Management**: Monitor and control your server hardware without physical access, even when the operating system is offline.
-
-- **OpenBMC Redfish API Support**: Industry-standard API interface for seamless integration with automation tools and third-party monitoring platforms.
 
 - **Hardware Health Monitoring**: Real-time insights into CPU, memory, fans, storage, power supplies, and temperature sensors.
 
@@ -27,15 +24,15 @@ Seamlessly integrate with Intel® Server Systems and leverage the power of the O
 
 - **Secure Remote Access**: Built-in authentication and encrypted communication for safe server management.
 
-- **Multi-System Support**: Manage multiple Intel® Server Systems through a single integration.
+- **Multi-System Support**: Manage multiple Intel Server Systems through a single integration.
 
 ## Use Cases
 
 ### Remote Troubleshooting in Data Centers
 
-**Challenge**:  A server in a remote data center becomes unresponsive, and on-site staff are unavailable to diagnose the issue.
+**Challenge**: A server in a remote data center becomes unresponsive, and on-site staff are unavailable to diagnose the issue.
 
-**Solution**: The Intel BMC Connector provides out-of-band access via the Redfish API, allowing admins to view system logs, monitor hardware health, and perform a remote reboot.
+**Solution**: The Intel BMC connector provides out-of-band access via the Redfish API, allowing admins to view system logs, monitor hardware health, and perform a remote reboot.
 
 **Benefit**: Eliminates the need for on-site visits, reduces downtime, and speeds up incident resolution.
 
@@ -43,7 +40,7 @@ Seamlessly integrate with Intel® Server Systems and leverage the power of the O
 
 **Challenge**: Large server farms require daily health monitoring to detect failures before they impact services.
 
-**Solution**: The Intel BMC Connector integrates with automation scripts to query CPU temperatures, fan speeds, and power usage at regular intervals.
+**Solution**: The Intel BMC connector integrates with DataMiner Automation scripts to query CPU temperatures, fan speeds, and power usage at regular intervals.
 
 **Benefit**: Proactively detects hardware issues, reducing unplanned outages and improving service reliability.
 
@@ -59,7 +56,7 @@ Seamlessly integrate with Intel® Server Systems and leverage the power of the O
 
 **Challenge**: IT teams struggle to keep hardware inventory data up to date across multiple locations.
 
-**Solution**: The Intel BMC Connector collects inventory information (CPU, memory, firmware versions, etc.) automatically via API.
+**Solution**: The Intel BMC connector collects inventory information (CPU, memory, firmware versions, etc.) automatically via API.
 
 **Benefit**: Saves time on manual audits, ensures compliance, and improves asset tracking accuracy.
 
@@ -67,7 +64,7 @@ Seamlessly integrate with Intel® Server Systems and leverage the power of the O
 
 ### Prerequisites
 
-- **Valid BMC User Account with correct login credentials** is required to access the Redfish API and retrieve system data.
+- A **valid BMC user account with correct login credentials** is required to access the Redfish API and retrieve system data.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Intel_BMC_Technical).
