@@ -60,7 +60,8 @@ TCP/IP settings
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
-
+> [!NOTE]
+> Using *ByPassProxy* may result in Error : 12002. ERROR_WINHTTP_TIMEOUT if the server requires routing through a security-enforcing proxy.  In such cases, remove the *ByPassProxy* entry from *Bus address* to restore connectivity.
 #### HTTP Connection - Config Data
 
 This connector uses a second HTTP connection thread to poll management data in parallel with telemetry data and requires the following input during element creation:
@@ -74,6 +75,8 @@ TCP/IP settings
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
+> [!NOTE]
+> Using *ByPassProxy* may result in Error : 12002. ERROR_WINHTTP_TIMEOUT if the server requires routing through a security-enforcing proxy.  In such cases, remove the *ByPassProxy* entry from *Bus address* to restore connectivity.
 
 ### Initialization
 
