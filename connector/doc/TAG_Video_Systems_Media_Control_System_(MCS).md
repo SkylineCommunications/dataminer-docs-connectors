@@ -53,5 +53,3 @@ The **TAG Video Systems Media Control System (MCS) connector** provides HTTP-bas
 
 > [!NOTE]
 > For detailed technical information about the connector, refer to our [technical documentation](https://docs.dataminer.services/connector/doc/TAG_Video_Systems_Media_Control_System_(MCS)_Technical.html).
-
-<!-- A hard link is deliberately used here instead of an xref-type link, to avoid issues with the link in the Catalog -->
