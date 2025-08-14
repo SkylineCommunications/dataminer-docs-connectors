@@ -5267,6 +5267,9 @@
     topicUid: Connector_help_IRT_IRPC_Series
   - name: IRT SSPA Series
     topicUid: Connector_help_IRT_SSPA_Series
+    items:
+    - name: IRT SSPA Series Technical
+      topicUid: Connector_help_IRT_SSPA_Series_Technical
 - name: ISS Tracker
   items:
   - name: ISS Tracker

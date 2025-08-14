@@ -1,19 +1,12 @@
 ---
-uid: Connector_help_IRT_SSPA_Series
+uid: Connector_help_IRT_SSPA_Series_Technical
 ---
 
 # IRT SSPA Series
 
-This connector is used to monitor and configure an IRT SSPA Series device.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-| 1.0.1.x  | Changed "Attenuation Offset" to "Attenuation"  | -            | -                 |
+This connector is used to monitor and configure an IRT SSPA Series device.
 
 ### Product Info
 
@@ -21,12 +14,6 @@ This connector is used to monitor and configure an IRT SSPA Series device.
 |-----------|------------------------|
 | 1.0.0.x   | 2.12.10                |
 | 1.0.1.x   | 2.12.10                |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
