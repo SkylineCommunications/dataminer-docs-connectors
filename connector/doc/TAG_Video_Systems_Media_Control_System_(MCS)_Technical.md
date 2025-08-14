@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)_Technical
+uid: Connector_help_TAG_Video_Systems_Media_Control_System_MCS_Technical
 ---
 
 # TAG Video Systems Media Control System (MCS)
