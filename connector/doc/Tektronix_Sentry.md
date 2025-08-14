@@ -100,7 +100,8 @@ Note that the connector uses the JSON API, so the username that the element uses
 
 The API password must be the same as the password used to log in on the web interface.
 
-**Note:** If you are receiving a large amount of "You must wait until.." errors, you may have to increase the **timeout of a single command (ms)** time in the element settings.
+> [!NOTE]
+> If you are receiving a large amount of "You must wait until..." errors, you may have to increase the **timeout of a single command (ms)** time in the element settings.
 
 ## Usage (Before 1.3.0.x)
 
@@ -314,7 +315,8 @@ The page contains page buttons that provide access to the following subpages:
 - **Program Overview Config**: This page contains the **Program Overview Display Key Format** parameter. This determines what the display key in the Service Overview Table will look like.
 - **ABR Statistics:** This page contains the **ABR Statistics** table, where you can view the program fragment statistics.
 
-**Note:** If you are receiving a large amount of "You must wait until.." errors and the **Program Overview** table is not filling in properly, you may have to increase the **timeout of a single command (ms)** time in the element settings.
+> [!NOTE]
+> If you are receiving a large amount of "You must wait until..." errors, and the **Program Overview** table is not filling in properly, you may have to increase the **timeout of a single command (ms)** time in the element settings.
 
 ### MPEG Input Settings
 

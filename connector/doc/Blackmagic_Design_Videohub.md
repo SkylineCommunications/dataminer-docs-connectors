@@ -52,19 +52,7 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device. Required. Default value: *9990*.
 
-## Usage
-
-### General
-
-This page contains general information, such as the device name, the size of the matrix (number of inputs and outputs), etc.
-
-The **Ping** parameter indicates if the connection between the controller and the matrix chassis is working properly.
-
-### Video Routing Matrix
-
-This page displays the matrix control with crosspoints. In the DataMiner UI, you can set crosspoints, change the labels of inputs and outputs, and lock/unlock outputs.
-
-# 1.0.2.x
+## Usage - Range 1.0.2.x
 
 ## General
 
@@ -78,8 +66,20 @@ This page displays the matrix control with crosspoints. In the DataMiner UI, you
 
 ### Interfaces
 
-This page displays the **Inputs** and **Outputs** tables - can be configured to set crosspoints, change labels, or lock outputs
+This page displays the **Inputs** and **Outputs** tables, which can be configured to set crosspoints, change labels, or lock outputs.
 
 ### Debug
 
-This page shows **Data Input** and **Full Data Input** parameters - this is controlled by the **Debug** toggle button on the General page.
+This page shows **Data Input** and **Full Data Input** parameters. This is controlled by the **Debug** toggle button on the General page.
+
+## Usage - Older Ranges
+
+### General
+
+This page contains general information, such as the device name, the size of the matrix (number of inputs and outputs), etc.
+
+The **Ping** parameter indicates if the connection between the controller and the matrix chassis is working properly.
+
+### Video Routing Matrix
+
+This page displays the matrix control with crosspoints. In the DataMiner UI, you can set crosspoints, change the labels of inputs and outputs, and lock/unlock outputs.
