@@ -10,13 +10,15 @@ The connector is responsible for saving the topology KPI data from all the confi
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Change to all levels tables according to new RX Power possible states and counters.  | 1.0.0.3 | - |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
