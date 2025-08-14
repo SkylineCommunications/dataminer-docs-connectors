@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)
+uid: Connector_help_TAG_Video_Systems_Media_Control_System_MCS
 ---
 
 # TAG Video Systems Media Control System (MCS)
@@ -52,4 +52,4 @@ The **TAG Video Systems Media Control System (MCS) connector** provides HTTP-bas
 - **Credentials for MCS**: A valid username and password are needed for HTTP-based authentication.
 
 > [!NOTE]
-> For detailed technical information about the connector, refer to our [technical documentation](xref:Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)_Technical).
+> For detailed technical information about the connector, refer to our [technical documentation](xref:Connector_help_TAG_Video_Systems_Media_Control_System_MCS_Technical).
