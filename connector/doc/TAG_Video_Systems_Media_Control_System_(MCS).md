@@ -52,4 +52,6 @@ The **TAG Video Systems Media Control System (MCS) connector** provides HTTP-bas
 - **Credentials for MCS**: A valid username and password are needed for HTTP-based authentication.
 
 > [!NOTE]
-> For detailed technical information about the connector, refer to our [technical documentation](xref:Connector_help_TAG_Video_Systems_Media_Control_System_MCS_Technical).
+> For detailed technical information about the connector, refer to our [technical documentation](https://docs.dataminer.services/connector/doc/TAG_Video_Systems_Media_Control_System_(MCS)_Technical.html).
+
+<!-- A hard link is deliberately used here instead of an xref-type link, to avoid issues with the link in the Catalog -->
