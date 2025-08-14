@@ -9287,6 +9287,9 @@
     topicUid: Connector_help_TAG_Video_Systems_MCR-6000
   - name: TAG Video Systems Media Control System (MCS)
     topicUid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)
+    items:
+    - name: TAG Video Systems Media Control System (MCS) Technical
+      topicUid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)_Technical
 - name: Talari Networks
   items:
   - name: Talari Networks T5200
