@@ -4018,6 +4018,13 @@
     topicUid: Connector_help_Fraunhofer_DAB_Content_Server
   - name: Fraunhofer DRM Content Server
     topicUid: Connector_help_Fraunhofer_DRM_Content_Server
+- name: Frequentis
+  items:
+  - name: Frequentis iRIF
+    topicUid: Connector_help_Frequentis_iRIF
+    items:
+    - name: Frequentis iRIF Technical
+      topicUid: Connector_help_Frequentis_iRIF_Technical
 - name: Fujitsu
   items:
   - name: Fujitsu FLEXR
