@@ -5,6 +5,7 @@ uid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)_Technical
 # TAG Video Systems Media Control System (MCS)
 
 ## About
+
 This is an HTTP-based connector that can be used to monitor and configure the **TAG Media Control System Platform**.
 
 ## Configuration
@@ -34,14 +35,15 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-REST API calls are used to establish communication with the device. Each API request frequency, version can be manipulated the **Polling Configuration** subpage of the Communication page.
+REST API calls are used to establish communication with the device. For each API request frequency, the version can be adjusted on the **Polling Configuration** subpage of the Communication page.
 
-Next to **Polling Configuration**, the **Page Configuration** page allows you to display two useful debugging pages:
+The **Page Configuration** page allows you to display two useful debugging pages:
 
-- **Tag Sets**: Displays two tables showing changes made to existing data that are in progress or complete
-- **InterApp**: Displays external communication (e.g. Automation Scripts) made to the MCS element
+- **Tag Sets**: Displays two tables showing changes made to existing data that are in progress or complete.
+- **InterApp**: Displays external communication (e.g. from Automation scripts) towards the MCS element.
 
 For several of the tables, you can right-click the table to access a context menu that allows data manipulation and changes.
 
 ## Notes
+
 SNMP traps are received via a hidden connection using port 162 in order to automatically update the Channel Events with trap information.
