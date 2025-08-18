@@ -7737,6 +7737,13 @@
     topicUid: Connector_help_Robustel_R2000
   - name: Robustel R2011
     topicUid: Connector_help_Robustel_R2011
+- name: Roeselare
+  items:
+  - name: Roeselare Classification Manager
+    topicUid: Connector_help_Roeselare_Classification_Manager
+    items:
+      - name: Roeselare Classification Manager Technical
+        topicUid: Connector_help_Roeselare_Classification_Manager_Technical
 - name: Rogers Communications
   items:
   - name: Rogers Communications Juniper CSV Importer
