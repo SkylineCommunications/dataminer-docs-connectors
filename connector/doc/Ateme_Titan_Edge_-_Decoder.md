@@ -16,7 +16,9 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 | 1.0.1.x            | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
 | 1.0.2.x            | Encoder and Gateway IP Output table PK changed. Layout adapted.                                | 1.0.1.10 | -             |
 | 1.1.0.x            | API structure changed to match new software version device.                                    | 1.0.2.3  | -             |
-| 1.1.1.x [SLC Main] | API structure changed to match new software version device.                                    | 1.1.0.4  | -             |
+| 1.1.1.x            | Added Decoder Video page with video parameters and added descrambling status for inputs.       | 1.1.0.4  | -             |
+| 1.1.2.x            | Added additional Gateway Channel and Network parameters.                                       | 1.1.1.7  | -             |
+| 1.1.3.x [SLC Main] | Fixes, naming improvements, and new decoder/encoder and Gateway parameters introduced.         | 1.1.2.10 | -             |
 
 ### Product Info
 
@@ -27,6 +29,8 @@ This connector is exported by the parent connector [Ateme Titan Edge](xref:Conne
 | 1.0.2.x | API v0.1                      |
 | 1.1.0.x | API unknown - Software v3.0.2 |
 | 1.1.1.x | API unknown - Software v3.0.2 |
+| 1.1.2.x | API unknown - Software v3.0.2 |
+| 1.1.3.x | API unknown - Software v3.0.2 |
 
 ## Configuration
 
@@ -48,3 +52,10 @@ The element created with this connector has the following data pages:
 - **Decoder Audio**: Contains information about the audio.
 - **Decoder Program**: Contains information about the programs.
 - **Decoder Configuration**: Allows you to configure settings for the decoder.
+- **SDI Output Config**: Displaying information about SDI video outputs and configuring relevant parameters.
+- **SMPTE 2022-6 Output Config**: Displaying information about SMPTE 2022-6 video outputs and configuring relevant parameters.
+- **SMPTE 2110 Output Audio**: Displaying information about SMPTE 2110 audio outputs and configuring relevant parameters.
+- **SMPTE 2110 Output Config**: Displaying information about SMPTE 2110 outputs and configuring relevant parameters.
+- **SMPTE 2110 Output Data**: Displaying information about SMPTE 2110 data outputs and configuring relevant parameters.
+- **SMPTE 2110 Output Video**: Displaying information about SMPTE 2110 video outputs and configuring relevant parameters.
+- **Alarms**: Displaying active alarms, their severity, raising time, probable cause, and other relevant information.
