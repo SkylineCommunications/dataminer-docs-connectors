@@ -28,7 +28,7 @@ After a new element is created, provide the API **Bearer Token** on the **Genera
 
 ## How to use
 
-On the Configuration subpage of the Classification page, configure the parameters which are used to construct the request jobs that will be sent to the classifier.
+On the **General** page, configure the parameters which are used to construct the request jobs that will be sent to the classifier.
 	- **Base URL**: the location of the frames from which the detections are extracted.
 	- **Maximum Requests**: the maximum number of detections that should be included in one job. The specified amount of detections will be bundled together and forwarded to the classifier once. Detections from the same ride are bundled together. If the number of detections in one ride is greater than the **Maximum Requests**, the detections will be bundled in subsets and forwarded to the classifier.
 	- **Classification Wait Time**: How long should the connector wait to start sending the requests to the classifier after polling the unclassified detections.
