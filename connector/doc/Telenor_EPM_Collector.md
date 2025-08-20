@@ -74,10 +74,10 @@ As it is possible to zap through channels, the **Minimum Agama Activity** settin
 The channel details are used to make the mapping of a channel. This is for Live DVB-C, Live IPTV, OTT Live/Start-Over and OTT Catchup. You can load these by clicking the **Load** button. The details will be loaded from the configured LPI folder in the sublocation *\enrichment\services\channels.csv*. However, note that **starting from range 1.0.1.x, the file name needs to be configured manually** (see [General](#general)).
 
 The content of the loaded file must be comma-separated and must contain the following headers:
-*ChannelID,ChannelName,CS_Type,DVB-C-Live-TV,IPTV-Live-TV,OTT-Live-TV,Start-over,Catchup,MultiCast,MC_Port,SID,TS_ID,ONid,MPEG-DASH OTT Live/Start-Over URL,HLS OTT Live/Start-Over URL,MPEG-DASH OTT Catch-Up URL,HLS OTT Catch-Up URL*
+*ChannelID,ChannelName,CS_Type,DVB-C-Live-TV,IPTV-Live-TV,OTT-Live-TV,Start-over,Catchup,MultiCast,MC_Port,SID,TS_ID,ONid,MPEG-DASH OTT Live/Start-Over URL,HLS OTT Live/Start-Over URL,MPEG-DASH OTT Catch-Up URL,HLS OTT Catch-Up URL,NPVR*
 
 > [!NOTE]
-> Starting from range 1.0.0.X, another header is required: 'NPVR'
+> The "NPVR" header is only used from range 1.0.1.x onwards.
 
 ### Asset Details
 
