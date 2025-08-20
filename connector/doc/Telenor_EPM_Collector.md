@@ -13,14 +13,7 @@ This connector is used to gather STB data coming from MAM events and Agama fireh
 | Range                | Key Features                                         | Based on     | System Impact                                       |
 |----------------------|------------------------------------------------------|--------------|-----------------------------------------------------|
 | 1.0.0.x [Obsolete]   | Initial version                                      | -            | -                                                   |
-| 1.0.0.x [SLC Main]   | - Removed MAM Data IP Connection and associated logic. <br> - Channels Provisioning Filename is now configurable.  | 1.0.0.42     | Removed deprecated connection and associated logic. |
-
-### Product Info
-
-| Range     | Supported Firmware                                                  |
-|-----------|---------------------------------------------------------------------|
-| 1.0.0.x   | There are no known firmware versions that the connector depends on. |
-| 1.0.1.x   | There are no known firmware versions that the connector depends on. |
+| 1.0.1.x [SLC Main]   | - Removed deprecated MAM Data IP Connection and associated logic. <br> - Channels Provisioning Filename is now configurable.  | 1.0.0.42     | Existing elements can be upgraded to this version without any problem, but some of the configuration on the element pages will be different (see [How to Use](#how-to-use)). |
 
 ### System Info
 
@@ -42,7 +35,7 @@ SERIAL CONNECTION:
 - **IP address/host**: The connector will be listening for incoming data from the Agama consumer, so this field must be set to *any*.
 - **IP port**: The IP port of the server where data from the Agama consumer will enter. You can freely choose the value, but remember to open the TCP port in the firewall if the data comes from a different server.
 
-#### IP Connection - MAM Data [Removed in range 1.0.1.X]
+#### IP Connection - MAM Data (Removed in Range 1.0.1.x)
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -74,13 +67,13 @@ Agama files are considered the main source for non-OTT data, such as Live DVB-C.
 As it is possible to zap through channels, the **Minimum Agama Activity** setting helps you to avoid collecting channels that were only watched for a brief moment. It allows you to configure how long a channel needs to be watched before it is taken into account.
 
 > [!NOTE]
-> Starting from version range 1.0.1.X, the channel file name must be configured manually. To do this, enter the desired value in the **Provisioning Channel File Name** parameter.
+> Starting from range 1.0.1.x, the channel file name must be configured manually. To do this, enter the desired value in the **Provisioning Channel File Name** parameter.
 
 ### Channel Details
 
-The channel details are used to make the mapping of a channel. This is for Live DVB-C, Live IPTV, OTT Live/Start-Over and OTT Catchup. You can load these by clicking the **Load** button. The details will be loaded from the configured LPI folder in the sublocation *\enrichment\services\channels.csv*. **[Starting from version 1.0.1.X, the file name needs to be configured. See General page]**.
+The channel details are used to make the mapping of a channel. This is for Live DVB-C, Live IPTV, OTT Live/Start-Over and OTT Catchup. You can load these by clicking the **Load** button. The details will be loaded from the configured LPI folder in the sublocation *\enrichment\services\channels.csv*. However, note that **starting from range 1.0.1.x, the file name needs to be configured manually** (see [General](#general)).
 
-The content of that file must be comma-separated and must contain the following headers:
+The content of the loaded file must be comma-separated and must contain the following headers:
 *ChannelID,ChannelName,CS_Type,DVB-C-Live-TV,IPTV-Live-TV,OTT-Live-TV,Start-over,Catchup,MultiCast,MC_Port,SID,TS_ID,ONid,MPEG-DASH OTT Live/Start-Over URL,HLS OTT Live/Start-Over URL,MPEG-DASH OTT Catch-Up URL,HLS OTT Catch-Up URL*
 
 > [!NOTE]
