@@ -42,7 +42,7 @@ The KPIs in the topologies are the result of aggregation performed in the **Skyl
 | 1.0.1.x [Obsolete] | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | - | - |
 | 1.0.2.x [Obsolete] | Removed remote view for ONT level | - | - |
 | 1.0.3.x [Obsolete]  | The OLT/Slot/Port/Split Route/Split Distribution/Split FAT Overview tables now include new Rx Power states to provide more specific and accurate status information. | 1.0.2.7  | Tables IDs changed. |
-| 1.0.4.x [SLC Main]  | The GPON functionalities from the [Frontend Connector](xref:Connector_help_Skyline_EPM_Platform_Technical) has been migrated to this one. | 1.0.3.1  | Frontend functionalities included. |
+| 1.0.4.x [SLC Main]  | The GPON functionalities from the [frontend connector](xref:Connector_help_Skyline_EPM_Platform_Technical) have been migrated to this one. | 1.0.3.1  | Frontend functionalities included. |
 
 ### System Info
 
@@ -68,9 +68,9 @@ Before the creation of a **Skyline EPM Platform GPON** element it is necessary t
 
 All components of the **Skyline EPM Platform Solution** work with a file system for internal communication. Because of this, when a new **Skyline EPM Platform GPON** element is created, the following parameters must be defined on the **Configuration** page:
 
-1. Element Role (From 1.0.4.X)
-    
-    - In the configuration page, it is necessary to define if the element will act as a Backend or Frontend. Initially, this parameter is set as "Not Defined" to avoid executing processes from an undesired role.
+1. Element Role (from 1.0.4.x onwards)
+
+   On the Configuration page, you need to define if the element will act as *Backend* or *Frontend*. Initially, this parameter is set to "Not Defined" to avoid executing processes from an undesired role.
 
 1. Import Settings
 
@@ -90,11 +90,11 @@ All components of the **Skyline EPM Platform Solution** work with a file system 
 
    - **System Password**: The password of the user to access the remote directory.
 
-1. Register of Elements (from 1.0.4.X): The elements have to be registered following the format **DMA_ID/Element_ID**, and this process depends on if the element has been set as Backend or Frontend.
+1. Element registration (from 1.0.4.x onwards): The elements have to be registered using the format **DMA_ID/Element_ID**, and this process depends on whether the element has been set as *Backend* or *Frontend*.
 
-    1. **Backend**: On the Collectors Registration subpage, in the **GPON Collector Registration** table, it is necessary to register the **OLT elements** that will be taken into account for the solution.
+   1. **Backend**: On the **Collectors Registration** subpage, in the **GPON Collector Registration** table, register the **OLT elements** that will be taken into account for the solution.
 
-    1. **Frontend**: On the Backends and Collectors Registration subpage, it is necessary to register the **Backend elements** in the **Backed Registration GPON** table, the **OLT elements** in the **GPON Collector Registration** table, and the element (Frontend) itself in the **Frontend Registration** table. 
+   1. **Frontend**: On the **Backends and Collectors Registration** subpage, register the **backend elements** in the **Backend Registration GPON** table, the **OLT elements** in the **GPON Collector Registration** table, and the frontend element itself in the **Frontend Registration** table.
 
 ## How to Use
 
@@ -115,10 +115,10 @@ The provisioning of the EPM Solution for GPON is sequential and involves the fol
 - **OLT Platform**: In charge of polling data from the different OLTs (e.g. ZTE ZXA10 C600 GPON Platform) and exporting all available the entities.
 
 > [!NOTE]
-> From branch 1.0.4.X, the Skyline EPM Platform is not necessary anymore, given that the Skyline EPM Platform GPON connector can now take both the Backend and the Fronend role.
+> From branch 1.0.4.x, the Skyline EPM Platform is not necessary anymore, given that the Skyline EPM Platform GPON connector can now take both the *Backend* and the *Frontend* role.
 
 The solution is based on the usage of CSV files and the DataMiner messaging system.
 
-First, the **OLT** elements export the necessary files containing the resources (GPON topology and passives topology) that need to be assigned DataMiner IDs. These elements notify the **Skyline EPM Platform GPON Frontend** element, which in turn, initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests. The **Frontend** element will import the CSV files to perform the necessary steps of the provisioning.
+First, the **OLT** elements export the necessary files containing the resources (GPON topology and passives topology) that need to be assigned DataMiner IDs. These elements notify the **Skyline EPM Platform GPON frontend** element, which in turn, initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests. The **frontend** element will import the CSV files to perform the necessary steps of the provisioning.
 
-Once the ID assignment is completed, the **Frontend** element will export a series of CSV files for the **Skyline EPM Platform GPON Backend** and **OLT** elements to import. For this, the **front-end** element notifies the respective **Backend** element to process these files. The **Backend** element imports the resources with their assigned IDs and notifies the respective **OLT** elements of ID assignment completion (these elements will import the new files).
+Once the ID assignment is completed, the **frontend** element will export a series of CSV files for the **Skyline EPM Platform GPON backend** and **OLT** elements to import. For this, the **frontend** element notifies the respective **backend** element to process these files. The **backend** element imports the resources with their assigned IDs and notifies the respective **OLT** elements of ID assignment completion (these elements will import the new files).
