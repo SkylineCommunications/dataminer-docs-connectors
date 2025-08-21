@@ -8536,6 +8536,11 @@
     topicUid: Connector_help_Skyline_Data_Aggregator_Monitor
   - name: Skyline DataMiner IT Tools
     topicUid: Connector_help_Skyline_DataMiner_IT_Tools
+  - name: Skyline DataMiner Labs Monitoring
+    topicUid: Connector_help_Skyline_DataMiner_Labs_Monitoring
+    items:
+      - name: Skyline DataMiner Labs Monitoring Technical
+        topicUid: Connector_help_Skyline_DataMiner_Labs_Monitoring_Technical
   - name: Skyline DataMiner System
     topicUid: Connector_help_Skyline_DataMiner_System
   - name: Skyline Demodulator Simulation
