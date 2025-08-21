@@ -42,7 +42,7 @@ The KPIs in the topologies are the result of aggregation performed in the **Skyl
 | 1.0.1.x [Obsolete] | Quick topology for GPON now contains Split Route, Split Distribution, Split FAT. Generic Split level was removed. | - | - |
 | 1.0.2.x [Obsolete] | Removed remote view for ONT level | - | - |
 | 1.0.3.x [Obsolete]  | The OLT/Slot/Port/Split Route/Split Distribution/Split FAT Overview tables now include new Rx Power states to provide more specific and accurate status information. | 1.0.2.7  | Tables IDs changed. |
-| 1.0.4.x [SLC Main]  | The GPON functionalities from the [frontend connector](xref:Connector_help_Skyline_EPM_Platform_Technical) have been migrated to this one. | 1.0.3.1  | Frontend functionalities included. |
+| 1.0.4.x [SLC Main]  | The GPON functionalities from the [front-end connector](xref:Connector_help_Skyline_EPM_Platform_Technical) have been migrated to this one. | 1.0.3.1  | Front-end functionalities included. |
 
 ### System Info
 
@@ -94,7 +94,7 @@ All components of the **Skyline EPM Platform Solution** work with a file system 
 
    1. **Backend**: On the **Collectors Registration** subpage, in the **GPON Collector Registration** table, register the **OLT elements** that will be taken into account for the solution.
 
-   1. **Frontend**: On the **Backends and Collectors Registration** subpage, register the **backend elements** in the **Backend Registration GPON** table, the **OLT elements** in the **GPON Collector Registration** table, and the frontend element itself in the **Frontend Registration** table.
+   1. **Frontend**: On the **Backends and Collectors Registration** subpage, register the **back-end elements** in the **Backend Registration GPON** table, the **OLT elements** in the **GPON Collector Registration** table, and the front-end element itself in the **Frontend Registration** table.
 
 ## How to Use
 
@@ -115,10 +115,13 @@ The provisioning of the EPM Solution for GPON is sequential and involves the fol
 - **OLT Platform**: In charge of polling data from the different OLTs (e.g. ZTE ZXA10 C600 GPON Platform) and exporting all available the entities.
 
 > [!NOTE]
-> From branch 1.0.4.x, the Skyline EPM Platform is not necessary anymore, given that the Skyline EPM Platform GPON connector can now take both the *Backend* and the *Frontend* role.
+> From branch 1.0.4.x onwards, the Skyline EPM Platform is no longer needed, as the Skyline EPM Platform GPON connector can take both the *Backend* and the *Frontend* role.
 
-The solution is based on the usage of CSV files and the DataMiner messaging system.
+The solution is based on the usage of CSV files and the DataMiner messaging system:
 
-First, the **OLT** elements export the necessary files containing the resources (GPON topology and passives topology) that need to be assigned DataMiner IDs. These elements notify the **Skyline EPM Platform GPON frontend** element, which in turn, initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests. The **frontend** element will import the CSV files to perform the necessary steps of the provisioning.
-
-Once the ID assignment is completed, the **frontend** element will export a series of CSV files for the **Skyline EPM Platform GPON backend** and **OLT** elements to import. For this, the **frontend** element notifies the respective **backend** element to process these files. The **backend** element imports the resources with their assigned IDs and notifies the respective **OLT** elements of ID assignment completion (these elements will import the new files).
+1. The **OLT elements** export the necessary files containing the resources (GPON topology and passives topology) that need to be assigned DataMiner IDs, and they notify the Skyline EPM Platform GPON front-end element.
+1. The **Skyline EPM Platform GPON front-end element** initiates the ID assignment process. The ID request notifications are handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests.
+1. The **front-end element** imports the CSV files to perform the necessary steps of the provisioning.
+1. Once the ID assignment is completed, the **front-end element** exports a series of CSV files for the Skyline EPM Platform GPON back-end and OLT elements to import, and it notifies the back-end element to process these files.
+1. The **back-end element** imports the resources with their assigned IDs and notifies the respective OLT elements of ID assignment completion.
+1. The **OLT elements** import the new files.
