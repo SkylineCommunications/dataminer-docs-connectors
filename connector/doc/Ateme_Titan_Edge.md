@@ -16,8 +16,9 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 | 1.0.1.x            | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
 | 1.0.2.x            | Encoder and Gateway IP Output table PK changed. Layout adapted.                                | 1.0.1.10 | -             |
 | 1.1.0.x            | API structure changed to match new software version device.                                    | 1.0.2.3  | -             |
-| 1.1.1.x            | API structure changed to match new software version device.                                    | 1.1.0.4  | -             |
-| 1.1.2.x [SLC Main] | Added additional Gateway Channel and Network parameters.                                        | 1.1.1.7  | -             |
+| 1.1.1.x            | Added Decoder Video page with video parameters and added descrambling status for inputs.       | 1.1.0.4  | -             |
+| 1.1.2.x            | Added additional Gateway Channel and Network parameters.                                       | 1.1.1.7  | -             |
+| 1.1.3.x [SLC Main] | Fixes, naming improvements, and new decoder/encoder and Gateway parameters introduced.         | 1.1.2.10 | -             |
 
 ### Product Info
 
@@ -29,6 +30,7 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 | 1.1.0.x | API unknown - Software v3.0.2  |
 | 1.1.1.x | API unknown - Software v3.0.2  |
 | 1.1.2.x | API unknown - Software v3.0.2  |
+| 1.1.3.x | API unknown - Software v3.0.2  |
 
 ### System Info
 
@@ -39,6 +41,8 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 | 1.0.2.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
 | 1.1.0.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
 | 1.1.1.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
+| 1.1.2.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
+| 1.1.3.x | No | Yes | - | - Ateme Titan Edge - Encoder<br>- Ateme Titan Edge - Decoder<br>- Ateme Titan Edge - Gateway |
 
 ## Configuration
 
@@ -64,10 +68,18 @@ The element created with this connector has the following data pages:
 
 - **General**: Displays general information about the device and lists the current **modules** connected to the device in a table.
 - **Alarms**: Lists the current **Active Alarms** on the device.
+- **Alarms and Events**: Displays information about alarms and events.
 - **DVE**: Allows you to check the DVE configuration and status for the supported modules.
+- **Power Supply Units**: Displays information about power supply units.
+- **CPU**: Displays information about CPU usage.
+- **Ethernet**: Displays information about Ethernet interfaces.
+- **Network**: Displays information about network configuration and status.
+- **Firewall**: Displays information about firewall status.
+- **VPN**: Displays information about VPN connections.
 - **Decoder**: Displays the decoder information.
 - **Encoder**: Displays the encoder information.
 - **Gateway**: Displays the gateway information.
+- **SRM Resources**: Displays information about SRM resources.
 - **BISS**: Displays and manages BISS services.
 
 ### BISS Page
