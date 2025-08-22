@@ -16,39 +16,15 @@ The SCORPION-18 APP-IPG is a software app that turns a SCORPION-18 frame into a 
 
 ## Use Cases
 
-### Use Case 1
+### Unified monitoring of Evertz gear (SNMP)
 
-**Challenge**: challenge description.
+**Challenge**: Having a central location for monitoring other evertz devices. 
 
-**Solution**: solution description.
+**Solution**: DataMiner can ingest alarms/metrics via VistaLINK® SNMP (Evertz frame/controllers expose SNMP), so SCORPION and other Evertz modules show up in the same NMS as your switches
 
-**Benefit**: benefit(s) description.
-
-### Use Case 2
-
-**Challenge**: challenge description.
-
-**Solution**: solution description.
-
-**Benefit**: benefit(s) description.
-
-### Use Case 3
-
-**Challenge**: challenge description.
-
-**Solution**: solution description.
-
-**Benefit**: benefit(s) description.
+**Benefit**: Bening able to monitor Evertz devices from a central location
 
 ## Technical Reference
-
-### Prerequisites
-
-- **Prerequisite 1** is needed for...
-
-- **Prerequisite 2** are needed for...
-
-- **Prerequisite 3** is required for...
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_Scorpion_18_APP-IPG_Technical).
