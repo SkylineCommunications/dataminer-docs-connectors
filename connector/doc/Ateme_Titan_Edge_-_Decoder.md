@@ -52,10 +52,5 @@ The element created with this connector has the following data pages:
 - **Decoder Audio**: Contains information about the audio.
 - **Decoder Program**: Contains information about the programs.
 - **Decoder Configuration**: Allows you to configure settings for the decoder.
-- **SDI Output Config**: Displaying information about SDI video outputs and configuring relevant parameters.
-- **SMPTE 2022-6 Output Config**: Displaying information about SMPTE 2022-6 video outputs and configuring relevant parameters.
-- **SMPTE 2110 Output Audio**: Displaying information about SMPTE 2110 audio outputs and configuring relevant parameters.
-- **SMPTE 2110 Output Config**: Displaying information about SMPTE 2110 outputs and configuring relevant parameters.
-- **SMPTE 2110 Output Data**: Displaying information about SMPTE 2110 data outputs and configuring relevant parameters.
-- **SMPTE 2110 Output Video**: Displaying information about SMPTE 2110 video outputs and configuring relevant parameters.
-- **Alarms**: Displaying active alarms, their severity, raising time, probable cause, and other relevant information.
+- **SDI Output Config** / **SMPTE 2022-6 Output Config** /**SMPTE 2110 Output Audio** / **SMPTE 2110 Output Config** / **SMPTE 2110 Output Data** **SMPTE 2110 Output Video**: These pages contain information and configuration parameters for SDI video outputs, SMPTE 2022-6 video outputs, SMPTE 2110 audio outputs, SMPTE 2110 outputs, SMPTE 2110 data outputs, and SMPTE 2110 video outputs, respectively.
+- **Alarms**: Displays active alarms, their severity, raising time, probable cause, and other relevant information.

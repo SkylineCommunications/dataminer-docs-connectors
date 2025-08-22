@@ -48,8 +48,4 @@ The element created with this connector has the following data pages:
 - **Encoder Input**: Displays information about the video and audio inputs.
 - **Encoder Output**: Displays information about the IP, video, audio, and data outputs.
 - **Encoder Configuration**: Allows you to configure settings for the encoder.
-- **Encoder Video Input Config**: Displaying information about video input configuration and configuring relevant parameters.
-- **Encoder Video Input SDI**: Displaying information about SDI video inputs and configuring relevant parameters.
-- **Encoder Video Input SMPTE 2110**: Displaying information about SMPTE 2110 video inputs and configuring relevant parameters.
-- **Encoder Audio Input Config**: Displaying information about audio input configuration and configuring relevant parameters.
-- **Encoder Audio Config**: Displaying information about audio inputs and configuring relevant parameters.
+- **Encoder Video Input Config** / **Encoder Video Input SDI** / **Encoder Video Input SMPTE 2110** / **Encoder Audio Input Config** / **Encoder Audio Config**: These pages contain information and configuration parameters for the video input, SDI video inputs, SMPTE 2110 video inputs, audio input, and audio, respectively.

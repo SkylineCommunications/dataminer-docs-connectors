@@ -68,18 +68,18 @@ The element created with this connector has the following data pages:
 
 - **General**: Displays general information about the device and lists the current **modules** connected to the device in a table.
 - **Alarms**: Lists the current **Active Alarms** on the device.
-- **Alarms and Events**: Displaying information about alarms and events.
+- **Alarms and Events**: Displays information about alarms and events.
 - **DVE**: Allows you to check the DVE configuration and status for the supported modules.
-- **Power Supply Units**: Displaying information about power supply units.
-- **CPU**: Displaying information about CPU usage.
-- **Ethernet**: Displaying information about Ethernet interfaces.
-- **Network**: Displaying information about network configuration and status.
-- **Firewall**: Displaying information about firewall status.
-- **VPN**: Displaying information about VPN connections.
+- **Power Supply Units**: Displays information about power supply units.
+- **CPU**: Displays information about CPU usage.
+- **Ethernet**: Displays information about Ethernet interfaces.
+- **Network**: Displays information about network configuration and status.
+- **Firewall**: Displays information about firewall status.
+- **VPN**: Displays information about VPN connections.
 - **Decoder**: Displays the decoder information.
 - **Encoder**: Displays the encoder information.
 - **Gateway**: Displays the gateway information.
-- **SRM Resources**: Displaying information about SRM resources.
+- **SRM Resources**: Displays information about SRM resources.
 - **BISS**: Displays and manages BISS services.
 
 ### BISS Page
