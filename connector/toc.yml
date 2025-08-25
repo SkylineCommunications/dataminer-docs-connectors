@@ -3811,9 +3811,14 @@
   - name: Evertz NATX-NAT-32
     topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
-    topicUid: Connector_help_Evertz_SC-1000
+    topicUid: Connector_help_Evertz_SC-1000 
   - name: Evertz Scorpion 18
     topicUid: Connector_help_Evertz_Scorpion_18
+  - name: Evertz Scorpion 18 APP-IPG
+    topicUid: Connector_help_Evertz_Scorpion_18_APP-IPG
+    items:
+    - name: Evertz Scorpion 18 APP-IPG Technical
+      topicUid: Connector_help_Evertz_Scorpion_18_APP-IPG_Technical
   - name: Evertz Scorpion 18 MIO-APP-DLY2
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-DLY2
   - name: Evertz Scorpion 18 MIO-APP-UDX-3G
@@ -5222,6 +5227,11 @@
     topicUid: Connector_help_Integrated_Digital_Solutions_Virtual_Client
 - name: Intel
   items:
+  - name: Intel BMC
+    topicUid: Connector_help_Intel_BMC
+    items:
+    - name: Intel BMC Technical
+      topicUid: Connector_help_Intel_BMC_Technical
   - name: Intel IPMI
     topicUid: Connector_help_Intel_IPMI
 - name: Intellian
@@ -5302,6 +5312,9 @@
     topicUid: Connector_help_IRT_IRPC_Series
   - name: IRT SSPA Series
     topicUid: Connector_help_IRT_SSPA_Series
+    items:
+    - name: IRT SSPA Series Technical
+      topicUid: Connector_help_IRT_SSPA_Series_Technical
 - name: ISS Tracker
   items:
   - name: ISS Tracker
@@ -7734,6 +7747,13 @@
     topicUid: Connector_help_Robustel_R2000
   - name: Robustel R2011
     topicUid: Connector_help_Robustel_R2011
+- name: Roeselare
+  items:
+  - name: Roeselare Classification Manager
+    topicUid: Connector_help_Roeselare_Classification_Manager
+    items:
+      - name: Roeselare Classification Manager Technical
+        topicUid: Connector_help_Roeselare_Classification_Manager_Technical
 - name: Rogers Communications
   items:
   - name: Rogers Communications Juniper CSV Importer
@@ -7822,6 +7842,11 @@
     topicUid: Connector_help_Rohde_Schwarz_OSP_120
   - name: Rohde Schwarz Prismon
     topicUid: Connector_help_Rohde_Schwarz_Prismon
+  - name: Rohde Schwarz SCE100
+    topicUid: Connector_help_Rohde_Schwarz_SCE100
+    items:
+    - name: Rohde Schwarz SCE100 Technical
+      topicUid: Connector_help_Rohde_Schwarz_SCE100_Technical
   - name: Rohde Schwarz SLx8000 DVBT
     topicUid: Connector_help_Rohde_Schwarz_SLx8000_DVBT
   - name: Rohde Schwarz SLx8000 N+1 DAB+
@@ -8521,6 +8546,11 @@
     topicUid: Connector_help_Skyline_Data_Aggregator_Monitor
   - name: Skyline DataMiner IT Tools
     topicUid: Connector_help_Skyline_DataMiner_IT_Tools
+  - name: Skyline DataMiner Labs Monitoring
+    topicUid: Connector_help_Skyline_DataMiner_Labs_Monitoring
+    items:
+      - name: Skyline DataMiner Labs Monitoring Technical
+        topicUid: Connector_help_Skyline_DataMiner_Labs_Monitoring_Technical
   - name: Skyline DataMiner System
     topicUid: Connector_help_Skyline_DataMiner_System
   - name: Skyline Demodulator Simulation
@@ -9281,7 +9311,10 @@
   - name: TAG Video Systems MCR-6000
     topicUid: Connector_help_TAG_Video_Systems_MCR-6000
   - name: TAG Video Systems Media Control System (MCS)
-    topicUid: Connector_help_TAG_Video_Systems_Media_Control_System_(MCS)
+    topicUid: Connector_help_TAG_Video_Systems_Media_Control_System_MCS
+    items:
+    - name: TAG Video Systems Media Control System (MCS) Technical
+      topicUid: Connector_help_TAG_Video_Systems_Media_Control_System_MCS_Technical
 - name: Talari Networks
   items:
   - name: Talari Networks T5200

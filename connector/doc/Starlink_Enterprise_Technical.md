@@ -61,6 +61,9 @@ TCP/IP settings
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
 
+> [!NOTE]
+> Using *ByPassProxy* may result in `Error : 12002. ERROR_WINHTTP_TIMEOUT` if the server requires routing through a security-enforcing proxy. In such cases, remove the *ByPassProxy* entry from *Bus address* to restore connectivity.
+
 #### HTTP Connection - Config Data
 
 This connector uses a second HTTP connection thread to poll management data in parallel with telemetry data and requires the following input during element creation:
@@ -74,6 +77,9 @@ TCP/IP settings
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
+
+> [!NOTE]
+> Using *ByPassProxy* may result in `Error : 12002. ERROR_WINHTTP_TIMEOUT` if the server requires routing through a security-enforcing proxy. In such cases, remove the *ByPassProxy* entry from *Bus address* to restore connectivity.
 
 ### Initialization
 
@@ -110,7 +116,7 @@ The User Terminals page contains the **User Terminals** table. This table shows 
 
 The columns **Device ID**, **Account Number**, and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
-As the Telemetry API does not always return the user terminals consistently, the connector will keep the terminals that are no longer returned by the API in the table for maximum one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
+The Telemetry API provides the current user terminals. If a terminal is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
 
 Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
@@ -154,7 +160,7 @@ Information related to routers is stored in the **Routers** table.
 
 The **Account Number** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
-As the Telemetry API does not always return the routers consistently, the connector will keep the routers that are no longer returned by the API in the table for at most one day. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
+The Telemetry API provides the current routers. If a router is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more routers are still in the table but were not returned by the API.
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
