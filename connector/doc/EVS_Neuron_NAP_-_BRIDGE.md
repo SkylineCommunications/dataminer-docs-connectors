@@ -15,9 +15,7 @@ The EVS Neuron NAP - BRIDGE connector enables real-time monitoring and control o
 - **Advanced network configuration**: Monitor and adjust network interface settings, including IP configuration, bandwidth, and FEC.
 - **Integrated troubleshooting tools**: Utilize built-in debug controls for polling, logging, and error management to streamline issue resolution.
 
-## Use Cases
-
-### Use Case 1
+## Use Case
 
 **Challenge**: Managing complex network configurations and bandwidth requirements for multiple video streams.
 
