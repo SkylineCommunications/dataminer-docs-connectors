@@ -4,12 +4,9 @@ uid: Connector_help_EVS_Neuron_NAP_-_BRIDGE_Technical
 
 # EVS Neuron NAP - BRIDGE
 
-This connector is designed for the monitoring of the bridge function of the EVS Neuron.
-
 ## About
 
 TheEVS Neuron NAP - BRIDGE connector enables monitoring and control of Neuron Bridge devices, which provide high-density SDI to IP and IP to SDI conversion. This allows real-time visibility and management of SDI/IP bridging operations within broadcast environments.
-
 
 ## Configuration
 
@@ -38,7 +35,7 @@ On the **General Settings** page, you can configure key operational parameters, 
 
 ### Network Settings Page
 
-The **Network Settings** page is where you monitor and configure network interfaces. Here, you can enable or disable **bandwidth monitoring** and view or edit **MAC settings**, including **IP configuration, addresses, netmask, gateway, FEC (Forward Error Correction)** for each network interface.
+The **Network Settings** page is where you monitor and configure network interfaces. Here you can enable or disable **bandwidth monitoring** and view or edit **MAC settings**, including **IP configuration, addresses, netmask, gateway**, and **FEC (Forward Error Correction)** for each network interface.
 
 ### Video Paths Page
 
