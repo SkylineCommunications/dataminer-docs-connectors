@@ -6,7 +6,7 @@ uid: Connector_help_Evertz_Scorpion_18_APP-IPG
 
 ## About
 
-The SCORPION-18 APP-IPG is a software app that turns a SCORPION-18 frame into a high-density IP media gateway—encapsulating/de-encapsulating SDI (up to 12G) to/from SMPTE ST 2110 (and, in variants, ST 2022-6), with hitless 2022-7 support. It runs on the SCORPION-18’s NETAD compute and provides multiple configurable gateway paths.
+The SCORPION-18 APP-IPG is a software app that turns a SCORPION-18 frame into a high-density IP media gateway, encapsulating/de-encapsulating SDI (up to 12G) to/from SMPTE ST 2110 (and, in variants, ST 2022-6), with hitless 2022-7 support. It runs on the SCORPION-18's NETAD compute and provides multiple configurable gateway paths.
 
 ## Key Features
 
@@ -18,11 +18,11 @@ The SCORPION-18 APP-IPG is a software app that turns a SCORPION-18 frame into a 
 
 ### Unified monitoring of Evertz gear (SNMP)
 
-**Challenge**: Having a central location for monitoring other evertz devices. 
+**Challenge**: Monitoring of Evertz devices is scattered over different locations.
 
-**Solution**: DataMiner can ingest alarms/metrics via VistaLINK® SNMP (Evertz frame/controllers expose SNMP), so SCORPION and other Evertz modules show up in the same NMS as your switches
+**Solution**: DataMiner can ingest alarms/metrics via VistaLINK® SNMP (Evertz frame/controllers expose SNMP), so SCORPION and other Evertz modules show up in the same NMS as your switches.
 
-**Benefit**: Bening able to monitor Evertz devices from a central location
+**Benefit**: You can use one central location to monitor all your Evertz devices.
 
 ## Technical Reference
 

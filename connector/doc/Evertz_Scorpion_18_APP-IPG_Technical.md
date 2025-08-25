@@ -6,7 +6,7 @@ uid: Connector_help_Evertz_Scorpion_18_APP-IPG_Technical
 
 ## About
 
-The SCORPION-18 APP-IPG is a software app that turns a SCORPION-18 frame into a high-density IP media gateway—encapsulating/de-encapsulating SDI (up to 12G) to/from SMPTE ST 2110 (and, in variants, ST 2022-6), with hitless 2022-7 support. It runs on the SCORPION-18’s NETAD compute and provides multiple configurable gateway paths.
+The SCORPION-18 APP-IPG is a software app that turns a SCORPION-18 frame into a high-density IP media gateway, encapsulating/de-encapsulating SDI (up to 12G) to/from SMPTE ST 2110 (and, in variants, ST 2022-6), with hitless 2022-7 support. It runs on the SCORPION-18's NETAD compute and provides multiple configurable gateway paths.
 
 ## Configuration
 
@@ -32,8 +32,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-The connector functions as a monitoring tool for the Scorpion 18 APP-IPG. It monitors important information like SDI Input, SDI Output, and various Notify tables.
-
-## Notes
-
-[In this section, you can provide additional information about the connector that does not fit in the other sections. Remove this section if it does not contain any info.]
+This connector functions as a monitoring tool for the Scorpion 18 APP-IPG. It monitors important information like SDI Input, SDI Output, and various Notify tables.
