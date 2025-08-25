@@ -264,6 +264,11 @@
     items:
       - name: AJA Bridge Live Technical
         topicUid: Connector_help_AJA_Bridge_Live_Technical
+  - name: AJA BRIDGE NDI 3G
+    topicUid: Connector_help_AJA_BRIDGE_NDI_3G
+    items:
+      - name: AJA BRIDGE NDI 3G Technical
+        topicUid: Connector_help_AJA_BRIDGE_NDI_3G_Technical
   - name: AJA IPR-10G2-HDMI
     topicUid: Connector_help_AJA_IPR-10G2-HDMI
   - name: AJA IPT-10G2-HDMI
