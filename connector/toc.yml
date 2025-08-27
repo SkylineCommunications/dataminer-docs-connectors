@@ -3811,9 +3811,14 @@
   - name: Evertz NATX-NAT-32
     topicUid: Connector_help_Evertz_NATX-NAT-32
   - name: Evertz SC-1000
-    topicUid: Connector_help_Evertz_SC-1000
+    topicUid: Connector_help_Evertz_SC-1000 
   - name: Evertz Scorpion 18
     topicUid: Connector_help_Evertz_Scorpion_18
+  - name: Evertz Scorpion 18 APP-IPG
+    topicUid: Connector_help_Evertz_Scorpion_18_APP-IPG
+    items:
+    - name: Evertz Scorpion 18 APP-IPG Technical
+      topicUid: Connector_help_Evertz_Scorpion_18_APP-IPG_Technical
   - name: Evertz Scorpion 18 MIO-APP-DLY2
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-APP-DLY2
   - name: Evertz Scorpion 18 MIO-APP-UDX-3G
@@ -3824,7 +3829,7 @@
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-HDMI-2-4K-IP
   - name: Evertz Scorpion 6
     topicUid: Connector_help_Evertz_Scorpion_6
-    name: Evertz Scorpion 18 MIO-DD4-3G
+  - name: Evertz Scorpion 18 MIO-DD4-3G
     topicUid: Connector_help_Evertz_Scorpion_18_MIO-DD4-3G
     items:
     - name: Evertz Scorpion 18 MIO-DD4-3G Technical
@@ -3869,6 +3874,11 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
+  - name: EVS Neuron NAP - BRIDGE
+    topicUid: Connector_help_EVS_Neuron_NAP_-_BRIDGE
+    items:
+    - name: EVS Neuron NAP - BRIDGE Technical
+      topicUid: Connector_help_EVS_Neuron_NAP_-_BRIDGE_Technical
 - name: eWon
   items:
   - name: eWon Router
@@ -4151,6 +4161,8 @@
     topicUid: Connector_help_Generex_UPS_CS121_BC
 - name: Generic
   items:
+  - name: Generic 2110 to SDI Converter
+    topicUid: Connector_help_Generic_2110_to_SDI_Converter
   - name: Generic 4K Converter
     topicUid: Connector_help_Generic_4K_Converter
   - name: Generic API Listener
@@ -5800,6 +5812,9 @@
     topicUid: Connector_help_MediaKind_CE1
   - name: MediaKind RX1
     topicUid: Connector_help_MediaKind_RX1
+    items:
+    - name: MediaKind RX1 Technical
+      topicUid: Connector_help_MediaKind_RX1_Technical
   - name: MediaKind RX8320
     topicUid: Connector_help_MediaKind_RX8320
   - name: MediaKind T1 Series
@@ -7737,6 +7752,13 @@
     topicUid: Connector_help_Robustel_R2000
   - name: Robustel R2011
     topicUid: Connector_help_Robustel_R2011
+- name: Roeselare
+  items:
+  - name: Roeselare Classification Manager
+    topicUid: Connector_help_Roeselare_Classification_Manager
+    items:
+      - name: Roeselare Classification Manager Technical
+        topicUid: Connector_help_Roeselare_Classification_Manager_Technical
 - name: Rogers Communications
   items:
   - name: Rogers Communications Juniper CSV Importer
@@ -8529,6 +8551,11 @@
     topicUid: Connector_help_Skyline_Data_Aggregator_Monitor
   - name: Skyline DataMiner IT Tools
     topicUid: Connector_help_Skyline_DataMiner_IT_Tools
+  - name: Skyline DataMiner Labs Monitoring
+    topicUid: Connector_help_Skyline_DataMiner_Labs_Monitoring
+    items:
+      - name: Skyline DataMiner Labs Monitoring Technical
+        topicUid: Connector_help_Skyline_DataMiner_Labs_Monitoring_Technical
   - name: Skyline DataMiner System
     topicUid: Connector_help_Skyline_DataMiner_System
   - name: Skyline Demodulator Simulation
