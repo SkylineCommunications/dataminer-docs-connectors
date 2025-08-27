@@ -37,3 +37,9 @@ By using the [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/pac
 The connector **keeps track** of which locks are taken, along with some metadata like the timestamp of when the lock was taken, as well as the context that holds the lock. This data is stored in memory. You can view it in the **Locked Objects** table. When you have the element card open in Cube, the table is **populated every 10 seconds**. You can also force an immediate refresh with the **Refresh Table** button. When the element is restarted, this data is lost.
 
 When an object has been locked, any incoming request for the same object ID will be answered with the lock not being granted.
+
+### System with multiple lock priority levels
+When requesting a lock, a priority level can be specified. This allows more important components to get a lock even when less important components already hold a lock for the same object.
+Below is a diagram showing how this could be implemented.
+
+![Prioritized Locking Diagram](../images/Skyline_Lock_Manager_Prioritized_Locking_Communication_Diagram.png)
