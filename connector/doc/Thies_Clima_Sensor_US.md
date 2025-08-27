@@ -4,19 +4,18 @@ uid: Connector_help_Thies_Clima_Sensor_US
 
 # Thies Clima Sensor US
 
-The **Thies Clima Sensor US** is a weather station. It captures real-time information about wind, temperature, humidity, precipitation, pressure, brightness, and system status.
-
 ## About
 
-Originally supporting a serial Modbus RTU implementation, the connector (from version 1.1.0.x) has been refactored to use **SNMP (v2c)**. The former Modbus-specific functionality and configuration workflow (e.g. switching device mode) have been removed.  
-This connector now implements the **SNMP** interface only.
+The **Thies Clima Sensor US** is a weather station. It captures real-time information about wind, temperature, humidity, precipitation, pressure, brightness, and system status.
+
+Originally supporting a serial Modbus RTU implementation, the connector (from version 1.1.0.x onwards) has been refactored to use **SNMP (v2c)**. The former Modbus-specific functionality and configuration workflow (e.g. switching device mode) have been removed. This connector now implements the **SNMP** interface only.
 
 ### Version Info
 
 | Range            | Description                                                                 | DCF Integration | Cassandra Compliant |
 |------------------|------------------------------------------------------------------------------|-----------------|---------------------|
 | 1.0.0.x          | Initial version (Serial Modbus RTU implementation)                         | No              | Yes                 |
-| 1.1.0.x [SLC Main] | Refactored to SNMP (v2c); removed Settings page; pruned & reordered parameters | No              | Yes                 |
+| 1.1.0.x [SLC Main] | Refactored to SNMP (v2c); removed Settings page; pruned and reordered parameters | No              | Yes                 |
 
 ### Product Info
 
@@ -31,8 +30,7 @@ This connector now implements the **SNMP** interface only.
 
 #### SNMP Main connection
 
-As of version 1.1.0.x the connector uses an SNMP (v2c) connection.  
-Provide the following during element creation:
+As of version 1.1.0.x, the connector uses an SNMP (v2c) connection. Provide the following information during element creation:
 
 SNMP CONNECTION:
 
@@ -64,15 +62,15 @@ The General Error, Static Error, Averaging Memory usage, Plausibility, Heating R
 
 This page displays measurement groups:
 
-- Wind: Mean Wind Speed, Wind Direction
-- Humidity: Relative Humidity
-- Precipitation: Precipitation Status, Precipitation Intensity, Precipitation Type
-- Temperature: Air Temperature, Dew Point Temperature
-- Pressure: Absolute Air Pressure, Relative Air Pressure
-- Brightness: Brightness Highest Value
+- **Wind**: Mean Wind Speed, Wind Direction
+- **Humidity**: Relative Humidity
+- **Precipitation**: Precipitation Status, Precipitation Intensity, Precipitation Type
+- **Temperature**: Air Temperature, Dew Point Temperature
+- **Pressure**: Absolute Air Pressure, Relative Air Pressure
+- **Brightness**: Brightness Highest Value
 
-Examples include **Mean Wind Speed**, **Wind Direction**, **Relative Humidity**, **Precipitation Intensity**, **Precipitation Type**, **Air Temperature**, **Dew Point Temperature**, **Absolute Air Pressure**, **Relative Air Pressure**, and **Brightness Highest Value**.
+### Settings (Range 1.0.0.x only)
 
-### Settings
+In range 1.0.0.x, this page can be used for the Modbus-specific configuration and mode switching.
 
-The Settings page has been removed in version 1.1.0.x (previous Modbus-specific configuration and mode switching are no longer applicable).
+As of range 1.1.0.x, the Settings page is no longer available, as this configuration is no longer applicable.
