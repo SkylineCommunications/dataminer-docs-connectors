@@ -7076,6 +7076,8 @@
     topicUid: Connector_help_NTT_Electronics_HC11000D
   - name: NTT Electronics HC11000E
     topicUid: Connector_help_NTT_Electronics_HC11000E
+  - name: NTT Electronics HC32000E
+    topicUid: Connector_help_NTT_Electronics_HC32000E
   - name: NTT Electronics HVD9100
     topicUid: Connector_help_NTT_Electronics_HVD9100
   - name: NTT Electronics HVD9130
