@@ -8,7 +8,7 @@ The **Thies Clima Sensor US** is a weather station. It captures real-time inform
 
 ## About
 
-Originally supporting a serial Modbus RTU implementation, the connector (from version 1.0.1.x) has been refactored to use **SNMP (v2c)**. The former Modbus-specific functionality and configuration workflow (e.g. switching device mode) have been removed.  
+Originally supporting a serial Modbus RTU implementation, the connector (from version 1.1.0.x) has been refactored to use **SNMP (v2c)**. The former Modbus-specific functionality and configuration workflow (e.g. switching device mode) have been removed.  
 This connector now implements the **SNMP** interface only.
 
 ### Version Info
@@ -16,14 +16,14 @@ This connector now implements the **SNMP** interface only.
 | Range            | Description                                                                 | DCF Integration | Cassandra Compliant |
 |------------------|------------------------------------------------------------------------------|-----------------|---------------------|
 | 1.0.0.x          | Initial version (Serial Modbus RTU implementation)                         | No              | Yes                 |
-| 1.0.1.x [SLC Main] | Refactored to SNMP (v2c); removed Settings page; pruned & reordered parameters | No              | Yes                 |
+| 1.1.0.x [SLC Main] | Refactored to SNMP (v2c); removed Settings page; pruned & reordered parameters | No              | Yes                 |
 
 ### Product Info
 
 | Range    | Supported Firmware Version |
 |----------|----------------------------|
 | 1.0.0.x  | 4.11                       |
-| 1.0.1.x  | 4.11                       |
+| 1.1.0.x  | 4.11                       |
 
 ## Installation and configuration
 
@@ -31,7 +31,7 @@ This connector now implements the **SNMP** interface only.
 
 #### SNMP Main connection
 
-As of version 1.0.1.x the connector uses an SNMP (v2c) connection.  
+As of version 1.1.0.x the connector uses an SNMP (v2c) connection.  
 Provide the following during element creation:
 
 SNMP CONNECTION:
@@ -75,4 +75,4 @@ Examples include **Mean Wind Speed**, **Wind Direction**, **Relative Humidity**,
 
 ### Settings
 
-The Settings page has been removed in version 1.0.1.x (previous Modbus-specific configuration and mode switching are no longer applicable).
+The Settings page has been removed in version 1.1.0.x (previous Modbus-specific configuration and mode switching are no longer applicable).
