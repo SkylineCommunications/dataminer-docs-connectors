@@ -16,6 +16,8 @@ The AJA Bridge NDI 3G connector enables seamless integration with AJA Bridge NDI
 
 ## Use Case
 
+**Challenges**: The device is not returning the IDs needed to control/update data. The only way to know is the order of the array returned by the API. This can cause inconsistancy. 
+
 **Solution**: Installing the AJA Bridge NDI 3G connector will allow you to manage this functionality through configurable pipelines, which you can set up and monitor via the connector interface.
 
 

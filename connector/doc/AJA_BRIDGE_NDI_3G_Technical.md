@@ -12,12 +12,16 @@ The AJA Bridge NDI 3G connector enables seamless integration with AJA Bridge NDI
 
 ### Connections
 
-#### IP Connection
+####  HTTP Connection – IP Connection
 
 This connector uses a HTTP connection and requires the following input during element creation:
 
+- IP address/host: [The polling IP or URL of the destination.]
+- IP port: [The IP port of the destination.]
+
  **Network access**: AJA Bridge Live must be accessible over the network for API communication.
  **Authentication configuration**: Basic authentication credentials (username and password) must be set up.
+
 
 ## How to use
 
