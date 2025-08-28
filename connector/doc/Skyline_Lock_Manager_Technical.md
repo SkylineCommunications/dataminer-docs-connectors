@@ -39,7 +39,9 @@ The connector **keeps track** of which locks are taken, along with some metadata
 When an object has been locked, any incoming request for the same object ID will be answered with the lock not being granted.
 
 ### System with multiple lock priority levels
-When requesting a lock, a priority level can be specified. This allows more important components to get a lock even when less important components already hold a lock for the same object.
-Below is a diagram showing how this could be implemented.
 
-![Prioritized Locking Diagram](../images/Skyline_Lock_Manager_Prioritized_Locking_Communication_Diagram.png)
+When a lock is requested, a priority level can be specified. This allows more important components to get a lock even when less important components already hold a lock for the same object.
+
+The diagram below shows how this could be implemented.
+
+![Prioritized locking diagram](~/connector/images/Skyline_Lock_Manager_Prioritized_Locking_Communication_Diagram.png)

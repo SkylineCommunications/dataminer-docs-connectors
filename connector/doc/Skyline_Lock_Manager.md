@@ -38,14 +38,13 @@ The Skyline Lock Manager connector allows the management of locks within a DataM
 
 **Benefit**: Zero risk of I/O exceptions when writing to the same file.
 
-## Updating a Booking with a UI script while the Booking transitions to ongoing
+### Updating a Booking with a UI Script While the Booking Transitions to Ongoing
 
-**Challenge**: Imagine a booking that is being updated by a UI script while at the same time the booking transitions to ongoing. The risk exists that the UI script overwrites the changes made by the transition to ongoing.
+**Challenge**: Imagine a booking that is being updated by a UI script while at the same time the booking transitions to ongoing. There is a risk that the UI script overwrites the changes made by the transition to ongoing.
 
-**Solution**: The UI script asks for a low-priority lock on the booking, while the script that is responsible for transition to ongoing requests a high-priority lock.
-The scripts can then be developed in such a way that the UI script releases its lock when the booking transitions to ongoing, allowing the transition script to acquire the lock and make its changes.
+**Solution**: The UI script asks for a low-priority lock on the booking, while the script that is responsible for the transition to ongoing requests a high-priority lock. The scripts can then be developed in such a way that the UI script releases its lock when the booking transitions to ongoing, allowing the transition script to acquire the lock and make its changes.
 
-**Benefit**: Scripts that cannot be retried are always able to execute, no matter who has the lock.
+**Benefit**: Scripts that cannot be retried can always execute, no matter which script has the lock.
 
 ## Technical Reference
 
