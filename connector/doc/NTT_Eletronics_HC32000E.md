@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_NTT_Eletronics_HC32000E
+uid: Connector_help_NTT_Electronics_HC32000E
 ---
 
 # NTT Electronics HC32000E
