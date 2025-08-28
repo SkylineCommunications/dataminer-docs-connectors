@@ -41,4 +41,4 @@ It delivers broadcast-quality video with high efficiency, robust redundancy, and
 - **DataMiner version 10.3 or higher** is required.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_NTT_Eletronics_HC32000E_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_NTT_Electronics_HC32000E_Technical).
