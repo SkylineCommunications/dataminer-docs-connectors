@@ -6,25 +6,23 @@ uid: Connector_help_AJA_BRIDGE_NDI_3G_Technical
 
 ## About
 
-The AJA Bridge NDI 3G connector enables seamless integration with AJA Bridge NDI 3G, a 1RU gateway offering high density conversion to and from SDI to NDI and NDI to SDI for UltraHD/4K, HD, and SD signals. Designed to drop into any existing NDI or SDI workflow as a plug and play appliance, BRIDGE NDI 3G is easy to deploy and administer.
+The AJA Bridge NDI 3G connector enables seamless integration with AJA Bridge NDI 3G, a 1RU gateway offering high-density conversion from SDI to NDI and from NDI to SDI for Ultra HD/4K, HD, and SD signals.
 
 ## Configuration
 
 ### Connections
 
-####  HTTP Connection – IP Connection
+#### HTTP Connection – IP Connection
 
-This connector uses a HTTP connection and requires the following input during element creation:
+This connector uses an HTTP connection and requires the following input during element creation:
 
-- IP address/host: [The polling IP or URL of the destination.]
-- IP port: [The IP port of the destination.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
 
- **Network access**: AJA Bridge Live must be accessible over the network for API communication.
- **Authentication configuration**: Basic authentication credentials (username and password) must be set up.
+### Initialization
 
+Make sure **basic authentication credentials** (username and password) have been set up. These must be filled in in the element before any data can be retrieved.
 
 ## How to use
 
-The credentials needs to be filled to retrieved any data.
-
-All the information that can be useful for monitoring can be found in a tree view on the **Overview** data page and in a tables on the pages **Devices**, **Banks**, **Channels**.
+All the information that can be useful for monitoring can be found in a tree view on the **Overview** data page and in tables on the pages **Devices**, **Banks**, and **Channels**.
