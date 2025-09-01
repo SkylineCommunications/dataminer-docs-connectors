@@ -36,3 +36,5 @@ On the **General** page, configure the parameters that are used to construct the
 - **Classification Wait Time**: Determines how long the connector will wait to start sending the requests to the classifier after polling the unclassified detections.
 
 - **Maximum Job Retries**: If sending classification requests to the classifier fails, this setting determines how many times the connector will try to send the requests.
+  
+- **Classification API Path**: Specify the API path which is used to send the unclassified detections (classification requests). The API Endpoint address/IP shouldn't be included here since the address is configured in the element configuration wizard.
