@@ -37,4 +37,4 @@ On the **General** page, configure the parameters that are used to construct the
 
 - **Maximum Job Retries**: If sending classification requests to the classifier fails, this setting determines how many times the connector will try to send the requests.
   
-- **Classification API Path**: Specify the API path which is used to send the unclassified detections (classification requests). The API Endpoint address/IP shouldn't be included here since the address is configured in the element configuration wizard.
+- **Classification API Path**: Specify the API path that is used to send the unclassified detections (classification requests). The API endpoint address/IP should not be included here, as the address is configured in the element configuration wizard.
