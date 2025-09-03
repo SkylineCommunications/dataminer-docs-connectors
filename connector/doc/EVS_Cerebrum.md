@@ -131,6 +131,18 @@ To **create** a destination association, specify the configuration settings on t
 
 With the **Delete** option in the right-click menu, you can delete the selected destination association.
 
+### Subscription Filtering
+
+For **Levels**, **Sources** and **Destinations** it is possible to subscribe only to subset of each, based on ID. Subscriptions filters are configured on **Level Subscription Filters**, **Source Subscriptions Filters** and **Destination Subscription Filters** pages, respectively. If **Destinations** filters are defined they will be taken in to account when setting up **Routes** subscriptions, so we only subscribe to relevant routes.
+
+The following options are available in the right-click menus on these pages:
+
+- **Subscribe to All**: Disables all filters except the default one. Default filter subscribes to everything.
+- **Add Ranged Based Filter**: Add new range based filter by providing _from_ and _to_ values of IDs.
+- **Remove Filters(s)**: Removes selected filters. Default filter cannot be removed.
+
+Note that any changes to Filters pages will only be applied on element restart.
+
 ### Categories
 
 The following options are available in the right-click menu on this page:
