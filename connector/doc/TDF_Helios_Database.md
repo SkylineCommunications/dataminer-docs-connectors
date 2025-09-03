@@ -24,6 +24,7 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.5.x [Obsolete] | Changed CAT and F3 eDliveR sites structure to each have 1 site view and 1 "Elements" view. | 1.0.4.6 | |
 | 1.0.6.x [SLC Main] | Each element of this connector will have a dedicated SLProtocol and SLScripting processes. | 1.0.5.3 | |
 | 2.0.0.x [SLC Main] | Equipment can be exported using a filter. | 1.0.6.4 | |
+| 3.0.0.x [SLC Main] | Adapted to TDF Radio Project requirements. | 1.0.7.1 | |
 
 ### Product Info
 
@@ -37,6 +38,7 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.5.x   | Oracle SQL Developer 1.5.5 |
 | 1.0.6.x   | Oracle SQL Developer 1.5.5 |
 | 2.0.0.x   | Oracle SQL Developer 1.5.5 |
+| 3.0.0.x   | Oracle SQL Developer 1.5.5 |
 
 ### System Info
 
@@ -50,6 +52,7 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.5.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 1.0.6.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 2.0.0.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 3.0.0.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 
 ## Configuration
 
