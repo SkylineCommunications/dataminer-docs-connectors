@@ -133,15 +133,18 @@ With the **Delete** option in the right-click menu, you can delete the selected 
 
 ### Subscription Filtering
 
-For **Levels**, **Sources** and **Destinations** it is possible to subscribe only to subset of each, based on ID. Subscriptions filters are configured on **Level Subscription Filters**, **Source Subscriptions Filters** and **Destination Subscription Filters** pages, respectively. If **Destinations** filters are defined, they will be taken in to account when setting up **Routes** subscriptions, so we only subscribe to relevant routes.
+For **levels**, **sources**, and **destinations**, it is possible to subscribe only to a subset of each, based on ID. Subscriptions filters are configured on the **Level Subscription Filters**, **Source Subscriptions Filters**, and **Destination Subscription Filters** page, respectively.
 
-The following options are available in the right-click menus on these pages:
+If destinations filters are defined, they will be taken into account when setting up routes subscriptions, so that only the relevant routes are subscribed to.
 
-- **Subscribe to All**: Disables all filters except the default one. Default filter subscribes to everything.
-- **Add Ranged Based Filter**: Add new range based filter by providing _from_ and _to_ values of IDs.
-- **Remove Filters(s)**: Removes selected filters. Default filter cannot be removed.
+The following options are available in the right-click menus on the filter pages:
 
-Note that any changes to filters pages will only be applied on element restart.
+- **Subscribe to All**: Disables all filters except the default one. The default filter subscribes to everything.
+- **Add Ranged Based Filter**: Allows you to add a new range-based filter by providing *from* and *to* values of IDs.
+- **Remove Filters(s)**: Removes the selected filters. The default filter cannot be removed.
+
+> [!NOTE]
+> Changes to filter pages will only be applied on element restart.
 
 ### Categories
 
