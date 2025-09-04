@@ -17,7 +17,9 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 | 1.0.0.x | - Monitoring of ETR-enabled **streams/services/PIDs**. <br>- Monitoring of **ETR checks**. <br>- Monitoring of **OTT channels** and **OTT profiles**. <br>- Monitoring of the probe **alarms** with precise probe times match (history set). | - | - |
 | 1.1.0.x | - **Ethernet streams provisioning** from **Automation script**. | 1.0.0.x | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
 | 1.1.1.x | - InterApp Messages available via NuGet package. | 1.1.0.x | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code. |
-| **1.2.0.x [SLC Main]** | - | 1.1.1.x | Minimum required DataMiner version brought up to 10.2.0.0. |
+| 1.2.0.x | - | 1.1.1.x | Minimum required DataMiner version brought up to 10.2.0.0. |
+| **1.4.0.x [SLC Main]** | Display key format change for Streams, Ethernet Streams, Services and PIDs Tables. Source Multicast Group (S,G)-format added for Ethernet streams | 1.3.0.x | Revise the alarm templates, scripts and visios which are based Service PIDs table. |
+| 1.4.1.x | Alarm tables: The Time columns will now display the alarm times according to the DataMiner server time zone rather than the probe one. | 1.4.0.x | The trending data will now be based on the DataMiner server time zone rather than the probe one.
 
 ### Product Info
 
@@ -33,6 +35,8 @@ It uses the **EII API (Enterprise Information Integration)** provided by the ven
 | 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.1.1.x   | No                  | Yes                     | -                     | -                       |
 | 1.2.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.4.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.4.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
