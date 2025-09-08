@@ -14,11 +14,13 @@ This connector monitors and controls a Work Satcom Remote Control Unit and up to
 
 This connector is implemented as a serial protocol.
 
-- Serial connection
+- Serial connection:
+
   - Configure the serial COM port or serial‑over‑IP gateway according to your deployment.
   - Typical settings (baud rate, parity, etc.) should match the device manual.
 
-- TCP/Serial gateway (optional)
+- TCP/serial gateway (optional):
+
   - If using serial‑over‑IP, specify the gateway IP/host and port during element creation.
 
 ### Pages and Parameters
@@ -61,12 +63,15 @@ This connector is implemented as a serial protocol.
 
 ## How to Use
 
-- Start on General to validate controller status and basic limits.
-- Use Unit Address to assign addresses to channels; then verify Unit Overview alarms.
-- Configure UPC behavior on the UPC page to match link fade compensation strategy.
-- For each converter page, set Frequency, Attenuation, Equalization, and related controls. Monitor Unit Status and communication alarms.
+Start on the **General** page to validate the controller status and basic limits.
+
+Use the **Unit Address** parameter to assign addresses to channels, then verify the **Unit Overview** alarms.
+
+Configure the UPC behavior on the **UPC** page to match link fade compensation strategy.
+
+For each converter page, set the **Frequency**, **Attenuation**, **Equalization**, and related controls, and monitor the unit status and communication alarms.
 
 ## Alarms
 
-- Discreet statuses (e.g., Controller Alarm Status, Unit Status, Downlink Fade Alarm) and numeric thresholds generate alarms based on protocol definitions.
-- “Address Not Configured,” communication issues, warmup, and frequency limit violations are explicitly indicated.
+- Discrete statuses (e.g. Controller Alarm Status, Unit Status, Downlink Fade Alarm) and numeric thresholds generate alarms based on protocol definitions.
+- "Address Not Configured", communication issues, warmup, and frequency limit violations are explicitly indicated.

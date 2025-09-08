@@ -25,18 +25,22 @@ The Work Satcom Remote Control Unit connector integrates Work Satcom controllers
 ## Use Cases
 
 ### Use Case 1: Multi‑Converter Supervision
+
 - Monitor controller and each converter’s alarms, frequency, attenuation, and mute state on a single view to quickly identify issues.
 
 ### Use Case 2: Weather Fade Compensation
+
 - Use UPC features (Deep Fade detection, ratios, timers) to automatically compensate uplink power during downlink fades.
 
 ### Use Case 3: Safe Operations and Addressing
-- Configure Unit Address per channel and verify “Address Not Configured,” Warmup, and Communication alarms to prevent misrouting and unsafe transmissions.
+
+- Configure Unit Address per channel and verify "Address Not Configured", Warmup, and Communication alarms to prevent misrouting and unsafe transmissions.
 
 ## Technical Reference
 
 ### Prerequisites
-- DataMiner 10.3.0.0 – 12752 or higher.
+
+- DataMiner 10.3.0 or higher.
 
 > [!NOTE]
 > For detailed technical information, see the [technical reference](xref:Connector_help_Work_Satcom_Remote_Control_Unit_Technical).
