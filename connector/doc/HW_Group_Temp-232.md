@@ -6,27 +6,22 @@ uid: Connector_help_HW_Group_Temp_232
 
 ## About
 
-The HW Group Temp-232 connector integrates DataMiner with the HW Group Temp-232 temperature sensor over a Smart-Serial link (auto‑report mode). It exposes a real-time temperature measurement with 0.1 °C resolution and supports alarming and trending.
+The HW Group Temp-232 connector integrates DataMiner with the HW Group Temp-232 temperature sensor over a smart-serial link (auto‑report mode). It exposes a real-time temperature measurement with 0.1 °C resolution and supports alarm monitoring and trending.
 
 ## Key Features
 
-- Smart-Serial auto-report ingestion (no polling or commands required).
-- Real-time temperature updates on the Temperature page.
+- Smart-serial auto-report ingestion (no polling or commands required).
+- Real-time temperature updates.
 - Alarm monitoring based on parameter thresholds.
-- Measurement range: -55 °C to +125 °C, 1 decimal, unit: deg C.
 - Simple setup for direct RS-232 or serial-over-IP gateways.
 
-## Use Cases
+## Use Case
 
-### Use Case 1: Environmental Monitoring
+**Challenge**: Monitor ambient temperature in technical rooms, racks, or enclosures from one central location.
 
-- Monitor ambient temperature in technical rooms, racks, or enclosures.
-- Benefit: Early detection of thermal issues to prevent outages.
+**Solution**: Deploy the HW Group Temp-232 connector to monitor temperatures via DataMiner, and configure alarms on temperature limits to get notified automatically in case of issues.
 
-### Use Case 2: Safety Thresholds
-
-- Configure alarms on temperature limits to protect sensitive equipment.
-- Benefit: Automated alerting and faster incident response.
+**Benefit**: Early detection of thermal issues to prevent outages and enable faster incident response.
 
 ## Technical Reference
 

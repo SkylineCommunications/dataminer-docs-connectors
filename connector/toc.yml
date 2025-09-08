@@ -4900,8 +4900,8 @@
     topicUid: Connector_help_HW_Group_Poseidon2
   - name: HW Group Temp-232
     topicUid: Connector_help_HW_Group_Temp_232
-    items:  
-      -name: HW Group Temp-232 Technical        
+    items:
+    - name: HW Group Temp-232 Technical
       topicUid: Connector_help_HW_Group_Temp_232_Technical
 - name: IBM
   items:
