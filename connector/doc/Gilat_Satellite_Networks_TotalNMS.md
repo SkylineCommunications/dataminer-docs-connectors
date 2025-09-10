@@ -32,11 +32,11 @@ The physical devices of the system are called CPE (Customer Peripheral Equipment
 
 ### Connections
 
-#### SNMP Connection
+#### SNMP Connection - Traps
 
 This connector uses a Simple Network Management Protocol (SNMP) connection to be able to retrieve alarm traps and requires the following input during element creation:
 
-SNMP Connection - Traps:
+SNMP Connection:
 
 - **SNMP version**: SNMPv2
 - **IP address/host**: The polling IP of the platform.
@@ -56,17 +56,21 @@ HTTP Connection:
 - **Type of port:** TCP/IP
 - **IP address/host**: The polling IP of the platform.
 
-TCP/IP settings
+TCP/IP settings:
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
 
-HTTP Connection - Report Polling:
+#### HTTP Connection - Report Polling
+
+This connector uses an HTTP connection to be able to interact with the NBI and requires the following input during element creation:
+
+HTTP Connection:
 
 - **Type of port:** TCP/IP
 - **IP address/host**: The polling IP of the platform.
 
-TCP/IP settings
+TCP/IP settings:
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
