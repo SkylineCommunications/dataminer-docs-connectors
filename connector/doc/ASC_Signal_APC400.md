@@ -1,4 +1,3 @@
-<img width="268" height="23" alt="image" src="https://github.com/user-attachments/assets/955d11ba-472e-40e5-bda4-597a0bcb9c86" />---
 uid: Connector_help_ASC_Signal_APC400
 ---
 
