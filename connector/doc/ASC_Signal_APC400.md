@@ -12,15 +12,7 @@ This unit provides maintenance functionality and, if available, the ability to t
 
 This is an **SNMP** protocol that polls single and table parameters.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-| 1.0.1.x          | - | No                  | Yes                     |
-| 1.0.2.x [Main]         | Driver review (based on 1.0.0.16) | No                  | Yes                     |
-
-### Supported Firmware versions
+### Supported Firmware Versions
 
 | Range     | Device Firmware Version              |
 |------------------|--------------------------------------|
