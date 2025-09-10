@@ -47,7 +47,7 @@ In the element, the SNMP parameters polled by the connector are shown on differe
 - **Network**: Datagram, address translation, and discard statistics.
 - **TCP**: Table of all active TCP connections and session-level metrics.
 - **UDP**: UDP datagram counters, errors, and traffic stats.
-- **Network Translation**: he Address Translation tables contain the NetworkAddress to physical address equivalences.
+- **Network Translation**: The Address Translation tables show which network address corresponds with which physical address.
 - **ICMP**: ICMP-related metrics like echo requests and responses.
 - **Serial Settings**: RS-232 port information including synchronous/asynchronous port status.
 - **Signal**: Input and output signal tables for RS-232 lines.
