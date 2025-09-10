@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Supermicro_X9DRW_Series
+uid: Connector_help_Supermicro_X9DRW
 ---
 
 # Supermicro X9DRW
