@@ -86,7 +86,7 @@ This page displays the modulator channel settings for both channel 1 and channel
 
 ### Device Configuration
 
-This page displays the Database File Name, along with a button **(Save Configuration)** that when pressed saves device configuration on the device's database. 
+This page displays the Database File Name, along with a button **(Save Configuration)** that can be used to save the device configuration in the device's database. 
 
 ### Alarms
 
