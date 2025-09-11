@@ -16,7 +16,7 @@ Results of the diagnosis are stored in three categories represented by tables:
 - **Diagnosis**: Linked with the diagnosis configurations, this table contains the diagnoses generated when the run for a specific diagnosis configuration results in a diagnosis for the device.
 - **Detected Issue**: Table containing all detected issues, linked with the specific diagnosis run.
 
-Diagnoses and detected issues aggregation by device class type is performed every 5 minutes, and the results are stored in tables dedicated for each device class type.
+Diagnoses and detected issues aggregation by device class type is performed every 5 minutes. Diagnosis results are stored in tables dedicated for each device class type, while detected issues are stored in a single table with a device class type column.
 
 These tables support further analysis and reporting.
 
@@ -36,6 +36,8 @@ On the **General** page, you can:
 
 - Configure input parameters (Diagnosed Customer ID, Start Time, End Time, and Diagnosis Language).
 - View information about the last diagnosis run, including the time it was started, its duration, and the status of the last run.
+
+![General Page](~/connector/images/Telenor_TVTnD_Manager_General.png)
 
 ### Diagnosis Results
 
