@@ -9232,6 +9232,11 @@
     topicUid: Connector_help_Supermicro_SuperDoctor_5
   - name: Supermicro SuperDoctor III
     topicUid: Connector_help_Supermicro_SuperDoctor_III
+  - name: Supermicro X9DRW
+    topicUid: Connector_help_Supermicro_X9DRW
+    items:
+    - name: Supermicro X9DRW Technical
+      topicUid: Connector_help_Supermicro_X9DRW_Technical
 - name: SVS Telekom
   items:
   - name: SVS Telekom AKS250

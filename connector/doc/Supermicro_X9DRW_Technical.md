@@ -25,11 +25,15 @@ SNMP Settings:
 
 - **Port number**: 161 (default).
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to Use
 
 In the element, the SNMP parameters polled by the connector are shown on different data pages:
 
 - **General**: System description parameters.
-- **Sensor**: Displays sensor values for Temperature, Voltage, Power, Battery and PSU.
+- **Sensor**: Sensor values for temperature, voltage, power, battery, and PSU.
 - **FAN**: FAN details for 6 FANs that are used by device.
-- **Web Interface**: Displays Web UI.
+- **Web Interface**: The web UI of the device.
