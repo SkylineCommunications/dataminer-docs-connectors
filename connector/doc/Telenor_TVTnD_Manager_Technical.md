@@ -37,6 +37,8 @@ On the **General** page, you can:
 - Configure input parameters (Diagnosed Customer ID, Start Time, End Time, and Diagnosis Language).
 - View information about the last diagnosis run, including the time it was started, its duration, and the status of the last run.
 
+![General Page](~/connector/images/Telenor_TVTnD_Manager_General.png)
+
 ### Diagnosis Results
 
 Diagnosis results are shown on a separate page, in the **Diagnosis Log**, **Diagnosis**, and **Detected Issue** tables.
