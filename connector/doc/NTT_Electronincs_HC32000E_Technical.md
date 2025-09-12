@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_NTT_Electronics_HC11000E
+uid: Connector_help_NTT_Electronics_HC32000E
 ---
 
-# NTT Electronics HC11000E
+# NTT Electronics HC32000E
 
 This connector allows the user to monitor and control HC32000E devices.
 
