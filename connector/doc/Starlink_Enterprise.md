@@ -86,6 +86,14 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Web interface alerts are visible in the DataMiner Alarm Console.
 
+### Use Cases 7
+
+**Challenge**: Accounts may occasionally need to purchase additional data beyond the included monthly allocation. 
+
+**Solution**: The connector integrates with the Starlink Management API to provide a **one-time top-up feature**. Users can trigger a top-up from within the services table, and the system validates product availability, executes the request, and confirms whether the top-up succeeded or failed.  
+
+**Benefit**: Streamlines the process of buying extra data directly through DataMiner and providing immediate feedback to the operator.  
+
 ## Technical Reference
 
 ### Prerequisites
