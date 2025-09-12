@@ -10,12 +10,26 @@ The **NTT Electronics HC32000D** is a K/60p HEVC 422 10bit Multi-channel Decoder
 
 ## Key Features
 
-- **Network pages**: Allows the user to configure network interfaces, as well as SNMP, TCP, PPoE and syslog and monitoring target servers settings. The user can also configure other miscellaneous values such as the buzzer volume, ID format, front panel, date and time and NTP settings. Configuring and consulting the event log level customization settings is also possible here.
-- **Input Pages**: Allows the user to configure the IP stream settings of the device, selecting the input stream and configure common stream settings. The user can also configure the settings of the first and second IP streams and the IP receiver.
-- **Decoder Pages**: Allows the user to configure the decode settings of the device. The program number and packet identifiers of the transport stream can also be configured. It is also possible to change the video, audio and genlock decode settings and the audio mapping.
-- **Output Pages**: Allows the user to configure the output settings for video, audio and signal.
+- **Network Configuration and Monitoring**: Set up network interfaces, SNMP, TCP, PPPoE, syslog, and remote monitoring servers. Customize device settings including date/time, NTP, buzzer volume, and event log levels.
+- **Input Stream Configuration**: Select and configure primary and secondary IP input streams, including stream parameters and receiver settings.
+- **Decoder Setup**: Adjust transport stream settings like program numbers and packet identifiers. Fine-tune video, audio, genlock decode options, and audio mapping.
+- **Output Signal Management**: Define output settings for video, audio, and signaling to suit your downstream infrastructure.
+
+## Use Cases
+
+### Use Case 1: Live Broadcast Contribution
+
+**Challenge**: A live sports broadcaster needs to decode high-resolution HEVC streams from remote cameras with minimal delay for seamless on-air delivery.
+
+**Solution**: The HC32000D receives and decodes HEVC 4:2:2 10-bit IP streams in real-time, with configurable video and audio outputs aligned via genlock.
+
+**Benefit**: Delivers ultra-low latency and high-quality video for live production, reducing the need for post-processing and manual alignment.
 
 ## Technical Reference
 
+### Prerequisites
+
+- **DataMiner version 10.4 or higher** is required.
+  
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_NTT_Electronics_HC32000D_Technical).
