@@ -16,25 +16,38 @@ An HTTP connection is used to send commands to the Grass Valley AMPP platform, a
 
 #### HTTP Connection - AMPP
 
-This connector uses an HTTP connection and requires the following input during element creation:
+This connector uses an HTTP connection to communicate directly with AMPP and push configuration commands. The URL is set by any AMPP Manager that utilizes this element to manage the specific visualization and configuration of the AMPP Application type. To create an element, it is necessary to enter a URL; in this case, you can use the value `http://localhost`.
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination.
+- **IP address/host**: `http://localhost`.
 - **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
+### Element Configuration
 
-After the element is created, the element needs to be linked to the desired Virtual Crosspoint workload(s) in the Grass Valley AMPP Manager. To do so:
+Once the application element is created, it must be linked to the desired Virtual Crosspoint workload(s) in any Grass Valley Manager. To accomplish this:
 
-1. Navigate to the **Workloads** page of the **Grass Valley AMPP Manager element**.
+1. Note down the name of the Virtual Crosspoint Application element.
 
-1. Search for the desired Virtual Crosspoint workload(s) in the **Workloads table**.
+1. Open the existing AMPP Manager and filter the **Workloads** table by the application name "*Virtual Crosspoint*"
 
-1. In the **element** column of the **Workloads table**, specify the **name** of the Virtual crosspoint element.
+1. Select a desired workload from the filtered list.
 
-Based on the state of the workload(s) in the element, different commands can be sent, e.g. start, stop, get state, etc. For more details, refer to the [Manager page](xref:Connector_help_Grass_Valley_AMPP_Manager_Technical).
+1. Click the **Refresh State on Restart** column to configure the manager to receive notifications of the intended workload.
+
+1. In the **Element** column, enter the name of the target application element noted in step 1.
+
+   The manager should now show the **Element Status (workloads)** column as active, indicating that the target application element was found available in the system.
+
+1. Click the **Get State** button to retrieve and forward the current configuration to the target application element.
+
+1. Confirm that the workload is visualized in the target with its current state.
+
+1. To configure additional workloads for the target application, repeat the process starting from step 2.
+
+> [!NOTE]
+> Occasionally, it is necessary to restart the AMPP Manager to force a reconfiguration of the application element. Do this if you notice that the target element times out for a long period.
 
 ## How to use
 
@@ -44,4 +57,3 @@ In the Crosspoint Overview table at the bottom of the General page, the followin
 
 - **Change Producer**: Allows you to **change the producer** of the Virtual Crosspoint by specifying the desired producer in the **Routed Source column**.
 - **Clear Producer**: Allows you to clear the producer by clicking the **Clear Producer button**.
-
