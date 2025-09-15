@@ -184,13 +184,12 @@ When the **Info Logging Level** of the element log file is raised to *Level 1* o
 
 #### One-Time Top-Up
 
-A new **Data Blocks to Add** column has been added to the Services table. Users can specify the number of data blocks they want to top up for a specific account in this column.  
+If you need to purchase additional data beyond the included monthly allocation, you can can trigger a top-up from within the Services table.
 
-Once the desired amount is entered, the user can press the **Top-Up** button in the row. This will execute a one-time top-up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.  
+To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top-Up** button in the row. This will execute a one-time top-up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
 
 > [!TIP]
 > The top-up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
-
 
 ### Overage Lines Page
 
