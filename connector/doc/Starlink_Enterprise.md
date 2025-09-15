@@ -38,7 +38,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ## Use Cases
 
-### Use Cases 1
+### Use Case 1
 
 **Challenge**: Marking terminals as offline.
 
@@ -46,7 +46,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Makes it clear which terminals can be ignored.
 
-### Use Cases 2
+### Use Case 2
 
 **Challenge**: Showing data usage as a stacked bar graph.
 
@@ -54,7 +54,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Shows the data usage similar to the web interface.
 
-### Use Cases 3
+### Use Case 3
 
 **Challenge**: Creating services with parameters from a subset of terminals.
 
@@ -62,7 +62,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Monitor the KPIs of the most relevant terminals only.
 
-### Use Cases 4
+### Use Case 4
 
 **Challenge**: Too many requests sent from the same IP address.
 
@@ -70,7 +70,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Multiple elements can be created on different hosts. For example, accounts A and B can be polled from server Y, and accounts C and D can be polled from server Z. The overarching dashboard or low-code app can combine this data to show the info of every account.
 
-### Use Cases 5
+### Use Case 5
 
 **Challenge**: New column names and changing alert names.
 
@@ -78,13 +78,21 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: The element will indicate by itself when the connector needs to be extended.
 
-### Use Cases 6
+### Use Case 6
 
 **Challenge**: Monitoring based on alerts.
 
 **Solution**: The connector shows each alert from a user terminal or from a router. Alerts will persist for as long as they are active.
 
 **Benefit**: Web interface alerts are visible in the DataMiner Alarm Console.
+
+### Use Case 7
+
+**Challenge**: Accounts may occasionally need to purchase additional data beyond the included monthly allocation.
+
+**Solution**: The connector integrates with the Starlink Management API to provide a **one-time top-up feature**. Users can trigger a top-up from within the services table, and the system validates product availability, executes the request, and confirms whether the top-up succeeded or failed.
+
+**Benefit**: Streamlines the process of buying extra data directly through DataMiner and provides immediate feedback to the operator.
 
 ## Technical Reference
 
