@@ -121,23 +121,96 @@ There is no redundancy defined.
 
 ## How to use
 
+### Ports
+
+The following options are available in the right-click menu for the **Ports** table:
+
+- **Create Virtual Key**: Create a virtual key for the selected port.
+- **Refresh**: Refresh the selected port's information.
+- **Refresh Keys**: Refresh the selected port's key information.
+- **Refresh functions**: Refresh the selected port's function information.
+- **Call to Conference**: Create a call-to-conference virtual function for the selected port with the provided settings (e.g. virtual function type, conference name, priority, talk and listen privileges, etc.).
+- **Call to Group**: Create a call-to-group virtual function for the selected port with the provided settings (e.g. virtual function type, group name, priority, etc.).
+- **Call to Port (Local)**: Create a local call-to-port function for the selected port with the provided settings (e.g. virtual function type, port name, priority, etc.).
+- **Call to Port (Trunking)**: Create a trunking call-to-port function for the selected port with the provided settings (e.g. virtual function type, port name, priority, etc.).
+
+### Keys
+
+The following options are available in the right-click menu for the **Keys** table:
+
+- **Edit**: Edit the selected key (e.g. label, key mode, latching timeout, etc.).
+- **Call to Conference**: Create a call-to-conference function for the selected key with the provided settings (e.g. conference name, priority, talk and listen privileges, etc.).
+- **Call to Group**: Create a call-to-group function for the selected key with the provided settings (e.g. group name, priority, etc.).
+- **Call to Port (Local)**: Create a local call-to-port function for the selected key with the provided settings (e.g. port name, priority, etc.).
+- **Call to Port (Trunking)**: Create a trunking call-to-port function for the selected key with the provided settings (e.g. port name, priority, etc.).
+- **Delete All functions**: Deletes all functions related to the selected key.
+
+### Keys
+
+The following options are available in the right-click menu for the **Virtual Keys** table:
+
+- **Edit**: Edit the selected virtual key (e.g. key mode, latching timeout, etc.).
+- **Delete**: Delete the selected virtual key.
+- **Call to Conference**: Create a call-to-conference function for the selected virtual key with the provided settings (e.g. conference name, priority, talk and listen privileges, etc.).
+- **Call to Group**: Create a call-to-group function for the selected virtual key with the provided settings (e.g. group name, priority, etc.).
+- **Call to Port (Local)**: Create a local call-to-port function for the selected virtual key with the provided settings (e.g. port name, priority, etc.).
+- **Call to Port (Trunking)**: Create a trunking call-to-port function for the selected virtual key with the provided settings (e.g. port name, priority, etc.).
+- **Delete All functions**: Deletes all functions related to the selected virtual key.
+
+### Conferences
+
+The following options are available in the right-click menu for the **Conferences** table:
+
+- **Create**: Create a conference with the provided settings (e.g. name, label, alias, etc.).
+- **Edit**: Edit the selected conference (e.g. name, label, alias, etc.).
+- **Delete**: Delete the selected conference.
+- **Refresh**: Refresh the selected conference's information.
+
+### Groups
+
+The following options are available in the right-click menu for the **Groups** table:
+
+- **Create**: Create a group with the provided settings (e.g. name, label, etc.).
+- **Edit**: Edit the selected group (e.g. name, label, etc.).
+- **Delete**: Delete the selected group.
+- **Refresh**: Refresh the selected group's information.
+
+### Functions
+
+The following options are available in the right-click menu for the **Functions** table:
+
+- **Delete**: Delete the selected function.
+
+The following options are available in the right-click menu for the **Call to Conference Functions** table:
+
+- **Edit**: Edit the selected call-to-conference function (e.g. priority, talk and listen privileges, etc.).
+- **Delete**: Delete the selected call-to-conference function.
+
+The following options are available in the right-click menu for the **Call to Group Functions** table:
+
+- **Edit**: Edit the selected call-to-group function (e.g. priority, etc.).
+- **Delete**: Delete the selected call-to-group function.
+
+The following options are available in the right-click menu for the **Call to Port Functions** table:
+
+- **Delete**: Delete the selected call-to-port function.
+
+
+
+
+
+
+
 In this section, provide a more detailed description of **how the connector functions**.
 
 Also specify the **communication method**. Example: "SOAP calls are used to retrieve the device information. SNMP traps can be retrieved when this is enabled on the device."
 
 It must be clearly mentioned in case no data traffic will be seen in the **Stream Viewer**.
 
-Note:
 
-- In case of a parent connector (e.g. DVE), mention that it exports connectors. Example: "This connector will export different connectors based on the retrieved data. A list can be found under 'Exported Components'.
-- In case of a child connector (e.g. DVE), refer to the parent connector. Example: "This connector is automatically generated by connector ZZZZZZ range A.B.C.X"
 
-Make sure you always specify something in this section, keeping in mind what users may be looking for when they consult the help page. This should **not** be just an enumeration of the different pages and parameters, because users can see that just by looking at the element. Instead, the focus must be on what users can/should do with the connector. To figure out what should be included, these questions can help you:
 
-- Which information is the most important for the users and where can they find it?
-- Are there any parameters of which the purpose isn't obvious?
-- If the connector allows configuration, which settings are the most important?
-- Are there any potential problems that users should watch out for?
+
 
 ### Examples
 
