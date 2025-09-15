@@ -136,7 +136,7 @@ There are several page buttons, which lead to pages that display more informatio
 - The **ICMP** **Stats** subpage displays more information about ICMP statistics, such as **ICMP Received Messages**, **ICMP Sent Echo Reply**, etc.
 - The **IP Stats** subpage displays more information about IP statistics, such as **IP Forwarding**, **IP Datagrams Received**, etc.
 
-Prior to range 1.0.2.x of the connector, input fields are available in the lower right corner, which allow you to import or export the current values to a file.
+Prior to range 1.0.2.x of the connector, input fields are available in the lower-right corner, which allow you to import or export the current values to a file.
 
 ### Hardware Page
 

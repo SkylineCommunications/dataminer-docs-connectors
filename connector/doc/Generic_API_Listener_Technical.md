@@ -32,7 +32,7 @@ The following parameters can be configured:
 - **API Path**: The path where the listener will listen for incoming requests.
 - **API Port**: The port where the listener will listen for incoming requests.
 
-In the lower right corner of the page, the **Configuration** page button opens a subpage with additional configuration parameters.
+In the lower-right corner of the page, the **Configuration** page button opens a subpage with additional configuration parameters.
 
 ### Configuration
 
