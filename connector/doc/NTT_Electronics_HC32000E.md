@@ -6,9 +6,7 @@ uid: Connector_help_NTT_Electronics_HC32000E
 
 ## About
 
-The NTT Electronics HC32000E is a high-density, professional-grade video encoder designed for real-time transmission of multiple HD and 4K UHD streams using HEVC (H.265) or H.264 (AVC) compression.
-Engineered for broadcast, sports, and live event production, the HC32000E enables simultaneous encoding of up to 2 x 4K or 8 x HD video streams in a compact 1RU chassis. 
-It delivers broadcast-quality video with high efficiency, robust redundancy, and support for complex audio workflows.
+The NTT Electronics HC32000E is a high-density video encoder designed for real-time transmission of multiple HD and 4K UHD streams using HEVC (H.265) or H.264 (AVC) compression. It enables simultaneous encoding of up to 2 x 4K or 8 x HD video streams in a compact 1RU chassis, delivering broadcast-quality video with high efficiency and support for complex audio workflows.
 
 ### Key Features
 
