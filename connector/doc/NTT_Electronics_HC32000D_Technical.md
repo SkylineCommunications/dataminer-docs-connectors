@@ -4,27 +4,19 @@ uid: Connector_help_NTT_Electronics_HC32000D_Technical
 
 # NTT Electronics HC11000D
 
-This connector monitors and controls HC32000D devices, manufactured by NTT Electronics.
-
-The HC32000D is a K/60p HEVC 422 10bit Multi-channel Decoder.
-
 ## About
+
+The HC32000D is a K/60p HEVC 422 10bit multi-channel decoder, manufactured by NTT Electronics.
 
 This connector allows you to view and control general and workflow (input, decode, output) settings of the device. These settings are retrieved and set via SNMP. SNMP traps, when enabled in the device, will update the list of alarms.
 
-### Version Info
-
-| Range     | Description        | DCF Integration     | Cassandra Compliant     |
-|------------------|--------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version    | No                  | Yes                     |
-
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 3.1                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 3.1                        |
 
-## Installation and configuration
+## Configuration
 
 ### Creation
 
@@ -40,8 +32,15 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*. Can be changed in the SNMP settings of the device.
-- **Get community string**: The community string used when reading values from the device. The default value is *public*. The device allows 10 SNMP communities to be configured on the SNMP settings page.
-- **Set community string**: The community string used when setting values on the device. The default value is *private*. The device allows 10 SNMP communities to be configured on the SNMP settings page.
+- **Get community string**: The community string used when reading values from the device. The default value is *public*.
+- **Set community string**: The community string used when setting values on the device. The default value is *private*.
+
+> [!NOTE]
+> The device allows 10 SNMP communities to be configured on the SNMP settings page.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
 
 ## Usage
 
@@ -58,7 +57,7 @@ The following subpages are available:
 - **Network - Monitoring**: Allows you to configure and consult the monitoring target server settings.
 - **Network - TCP**: Allows you to configure and consult the TCP settings.
 - **Network - PPoE**: Allows you to configure and consult the PPoE settings.
-- **Misc**: Allows you to configure and consult buzzer volume, ID format, front panel, date and time and NTP settings
+- **Misc**: Allows you to configure and consult buzzer volume, ID format, front panel, date and time, and NTP settings
 - **Event Log**: Allows you to configure and consult the event log level customization settings.
 
 ### Alarms
@@ -67,15 +66,13 @@ This page provides a list of the current alarms. It also allows you to clear thi
 
 ### Input
 
-This page allows you to configure the IP stream settings of the device. The input stream can be selected and the common stream settings can be configured.
+This page allows you to configure the IP stream settings of the device. The input stream can be selected, and the common stream settings can be configured.
 
-The following subpages are available:
-
-- **Input - Status**: Allows you to configure the settings of the first and second IP streams and the IP receiver.
+On the **Input - Status** subpage, you can configure the settings of the first and second IP streams and the IP receiver.
 
 ### Decoder
 
-This page allows you to configure the decode settings of the device. The program number and packet identifiers of the transport stream can be configured. It is also possible to change the video, audio and genlock decode settings and the audio mapping.
+This page allows you to configure the decoder settings of the device. The program number and packet identifiers of the transport stream can be configured. It is also possible to change the video, audio, and genlock decoding settings, as well as the audio mapping.
 
 The following subpages are available:
 
@@ -104,7 +101,7 @@ This page allows you to configure the signal output settings.
 
 ### Presets
 
-This page allows you to load, save, protect and delete configuration presets. A list of up to 64 presets can be maintained. The current preset is shown. A startup preset can be selected and the default preset can be loaded.
+This page allows you to load, save, protect, and delete configuration presets. A list of up to 64 presets can be maintained. The current preset is shown. A startup preset can be selected and the default preset can be loaded.
 
 ### Web Interface
 
@@ -112,7 +109,7 @@ On this page, you can consult and manage the device through its web interface. N
 
 ## DataMiner Connectivity Framework
 
-NTT Electronics HC32000D protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version. DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
+NTT Electronics HC32000D protocol supports the usage of DCF. DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
 ### Interfaces
 
@@ -133,6 +130,6 @@ Physical fixed interfaces:
 
 #### Internal Connections
 
-- Between Data 1 and SDI A, SDI B, SDI C, SDI D & ASI Output
-- Between Data 2 and SDI A, SDI B, SDI C, SDI D & ASI Output
-- Between ASI and SDI A, SDI B, SDI C, SDI D & ASI Output
+- Between Data 1 and SDI A, SDI B, SDI C, SDI D, and ASI Output
+- Between Data 2 and SDI A, SDI B, SDI C, SDI D, and ASI Output
+- Between ASI and SDI A, SDI B, SDI C, SDI D, and ASI Output
