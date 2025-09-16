@@ -108,4 +108,4 @@ On this page, the **Tuner Alarm Table** displays an overview of the alarms.
 
 ### Polling Settings
 
-On this page the user can define the polling configuration.
+On this page, you can define the polling configuration.
