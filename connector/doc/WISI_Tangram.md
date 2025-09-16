@@ -92,7 +92,7 @@ UDP/IP CONNECTION:
 - **IP port**: The port of the connected device, by default *514*.
 
 > [!IMPORTANT]
-> If utilizing range 1.2.X, it is required to set the **IP Address** to value **any** so all SYSLOG-messages are retrieved. The connector will filter the applicable messages.
+> If you are using range 1.2.x, you must set the **IP address** to the value **any** so all SYSLOG messages can be retrieved. The connector will filter the applicable messages.
 
 #### HTTP Connection
 
