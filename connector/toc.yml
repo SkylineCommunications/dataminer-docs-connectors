@@ -10495,6 +10495,13 @@
     topicUid: Connector_help_VodafoneZiggo_Witbe_Maestro
   - name: VodafoneZiggo Witbe Maestro - Device
     topicUid: Connector_help_VodafoneZiggo_Witbe_Maestro_-_Device
+- name: Volkert
+  items:
+  - name: Volkert Multi-Streamer
+    topicUid: Connector_help_Volkert_Multi-Streamer
+    items:
+    - name: Volkert Multi-Streamer Technical
+    topicUid: Connector_help_Volkert_Multi-Streamer_Technical
 - name: Volicon
   items:
   - name: Volicon Observer RPM
