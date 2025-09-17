@@ -14,12 +14,6 @@ The Viaccess VO DRM - Security Services connector allows monitoring of multimedi
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -39,14 +33,6 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *80*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

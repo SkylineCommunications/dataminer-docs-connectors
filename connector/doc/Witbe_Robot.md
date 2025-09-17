@@ -114,3 +114,4 @@ If the element is in timeout, check if the Witbe Robot Manager has valid credent
 The Maestro REST API does not allow the canceling of running tasks. The previous task will still run on the robot after it is canceled. If a new task is pushed after a task is canceled, the canceled task will be added again.
 
 A Visio drawing is available for this connector.
+

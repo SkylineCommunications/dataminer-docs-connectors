@@ -69,3 +69,4 @@ The following data pages are available in the main element:
 ### Maintenance Windows
 
 During maintenance windows, traps can be sent very frequently for channels under maintenance, which can cause excessive polling of data in the tables. To prevent this, we recommend **disabling polling** on the channels undergoing maintenance (on the Channel Polling Manager page).
+

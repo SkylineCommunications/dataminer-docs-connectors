@@ -54,7 +54,7 @@ The Active Reports page contains all the reports that are actively being polled 
 
 If you click the **Add Report** button at the bottom of the Active Reports page of the parent element, a new entry will be added with a default element type and element name. Once the entry has been added to the table, select a **Name** and a **Graph Type** to start polling the report.
 
-All active reports can be removed from the table at any time if needed. You can also clear the entire table in one go with the **Clear Reports** button, located in the lower right corner of the Active Reports page of the parent element. However, note that this will also **remove all other reports that are being polled for all other CPEs**.
+All active reports can be removed from the table at any time if needed. You can also clear the entire table in one go with the **Clear Reports** button, located in the lower-right corner of the Active Reports page of the parent element. However, note that this will also **remove all other reports that are being polled for all other CPEs**.
 
 Keep in mind that the TotalNMS database itself gets an update regularly. During such an update, it is not possible to poll a report, and the corresponding value will indicate N/A. After the next poll cycle, the value should contain a number again.
 

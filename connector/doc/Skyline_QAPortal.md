@@ -30,7 +30,7 @@ This connector uses a virtual connection and does not require any input during e
 
 There is an option to push the results to the **Skyline QA Portal**. This will give **Skyline Communications** visibility on your test results. To enable this:
 
-1. Make sure you have a [mail server configured](https://docs.dataminer.services/user-guide/Advanced_Functionality/DataMiner_Agents/Configuring_a_DMA/Configuring_outgoing_email.html) on your DMS, so the results can be mailed to the portal
+1. Make sure you have a [mail server configured](https://aka.dataminer.services/Configuring_outgoing_email) on your DMS, so the results can be mailed to the portal
 
 1. Configure the **API Key** and the **Client ID** on the **Settings** page of the Skyline QAPortal element.
 

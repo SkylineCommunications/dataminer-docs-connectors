@@ -12,3 +12,4 @@ This connector can be used to monitor and control a CEFD SLM-5650B satellite mod
 
 > [!NOTE]
 > For more information on the installation and configuration of the connector as well as more details on the usage, refer to the [Technical help page](xref:Connector_help_CEFD_SLM-5650B_SNMP_Technical).
+

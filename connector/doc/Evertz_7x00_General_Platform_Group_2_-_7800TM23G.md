@@ -37,3 +37,4 @@ This page displays the **Status** and **Slot**.
 ### Alarms
 
 This page contains information regarding alarms in the **7800 TM2-3G Management Fault Table** and **7800 TM2-3G Video Fault Table** .
+

@@ -16,3 +16,4 @@ The **ABR Audio Monitoring Service** connector is a customer-specific enhanced s
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Hessischer_Rundfunk_ABR_Audio_Monitoring_Service_Technical).
+

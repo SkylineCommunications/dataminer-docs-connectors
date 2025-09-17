@@ -32,3 +32,4 @@ The element created with this connector consists of the following data pages:
 - **Descramble**: Displays information about the **CA Modules** and the **BISS Descramble**.
 - **Output**: Contains information about the **TS Output Status** and the **TS IP Output Control**.
 - **System**: Displays system information such as the **Card Serial Number** and the **Product Features**.
+

@@ -35,3 +35,4 @@ The purpose of this connector is to manage and store a collection of jobs. Jobs 
 
 > [!NOTE]
 > For in-depth information on configuring and using the Skyline Job Manager connector, refer to the [Technical help page](xref:Connector_help_Skyline_Job_Manager_Technical).
+

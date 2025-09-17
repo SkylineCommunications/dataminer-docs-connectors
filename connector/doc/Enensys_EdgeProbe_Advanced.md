@@ -115,7 +115,7 @@ Several subpages are available:
 - Mute Configuration: Channel mute settings, such as **Mode**, **Post Vit Ber** settings and **Post Ldpc Ber** settings.
 - ETR Configuration: Contains three tables that allow you to configure **ETR1**, **ETR2** and **ETR3** respectively.
 - ETR QOS Configuration: This page is related to the ETR Configuration page. It contains two tables, for **SAE Configuration** and **SDE Configuration** respectively. The parameters on this page are mainly of importance for error processing and to maintain the **Quality Of Service of the ETR** channels.
-- Multiplex Configuration Table: This page consists of four sections. The top-left section allows you to **add and remove services and PIDs** in the table in the lower left corner and in the lower right corner respectively. The most important table, i.e. the Multiplex Configuration Table, is in the top right corner. It allows you to adapt the multiplex **channel Names**, the **Ts Id Presence** settings, and **Delays** to check if services or PIDs are missing.
+- Multiplex Configuration Table: This page consists of four sections. The top-left section allows you to **add and remove services and PIDs** in the table in the lower-left corner and in the lower-right corner respectively. The most important table, i.e. the Multiplex Configuration Table, is in the top right corner. It allows you to adapt the multiplex **channel Names**, the **Ts Id Presence** settings, and **Delays** to check if services or PIDs are missing.
 
 Note: For the subpages that allow you to change the profile name, note that the profile has to exist on the device for this. Changing the profile name will change the profile name on the device, but it will not create a new profile.
 

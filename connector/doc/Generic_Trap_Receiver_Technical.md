@@ -53,3 +53,7 @@ From version 1.0.1.24 onwards, with the **Binding Alarm Index**, you can set up 
 ### Heartbeat Trap
 
 This page allows you to set up sending and receiving of heartbeat traps. These traps can be used to test and monitor the DataMiner SNMP forwarding function.
+
+## Notes
+
+If you are using this connector with **SNMPv3** traps, make sure that the `trapPort` attribute in the `SNMPv3` tag of the *DataMiner.xml* file is correctly configured. This value should match the port number where SNMPv3 traps are expected to arrive.

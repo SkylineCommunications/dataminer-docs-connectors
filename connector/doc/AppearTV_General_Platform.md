@@ -14,7 +14,20 @@ SOAP calls are used to retrieve the device information. SNMP traps are used to c
 
 ### Version Info
 
-The current range of the connector is 4.4.2.x. Other ranges are not updated.
+> [!IMPORTANT]
+> The current range of the connector is **4.4.2.x**. All other ranges are deprecated and are no longer updated.
+
+> [!CAUTION]
+> The latest main range **4.4.2.x** contains a **breaking name change** for the following DVEs:
+>
+> - AppearTV Input DVB - S_S2
+> - AppearTV Output DVB - S_S2
+>
+> To avoid having unlinked DVEs after you upgrade, follow these following steps:
+>
+> 1. Disable the current **DVB - S_S2** DVEs through the *Module List* table on the *General* page.
+> 1. Activate the latest protocol range.
+> 1. Re-enable the **DVB - S_S2** DVEs through the *Module List* table on the *General* page (if applicable).
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
@@ -25,12 +38,12 @@ The current range of the connector is 4.4.2.x. Other ranges are not updated.
 | 4.1.0.x | SNMP connection added to collect SNMP traps. | No | No |
 | 4.2.0.x | Serial connection replaced by HTTP connection. | No | No |
 | 4.3.0.x | Removal of communicationOptions="redundantPolling". | No | No |
-| 4.4.0.x [Obsolete] | Review of the connector (optimization of QActions, removal of unused parameters, etc.) NOTE: The update from 4.4.0.102 to 4.4.0.103 involves a key change that may affect Visio drawings, Automation scripts, etc. The 4.4.1.x version range should be used instead of 4.4.0.103 and onwards. | No | No |
+| 4.4.0.x | Review of the connector (optimization of QActions, removal of unused parameters, etc.) NOTE: The update from 4.4.0.102 to 4.4.0.103 involves a key change that may affect Visio drawings, Automation scripts, etc. The 4.4.1.x version range should be used instead of 4.4.0.103 and onwards. | No | No |
 | 4.4.1.x | Based on 4.4.0.107. The Input Redundancy Table (PID 18400) key has been reverted to be as it was in the 4.4.0.102 version. | No | No |
 | 4.4.2.x [SLC Main] | Based on 4.4.1.32. New column for second backup input added in Input Redundancy table (supported in firmware v3.42). | No | No |
-| 5.0.0.x [Obsolete - Spin-Off] | Implementation of the class library features - requires DataMiner 9.6.3.0 - 8092. The 5.0.0.x-range is a spin-off based on version 4.4.1.12, because of the increased minimum DataMiner version. Development should still happen in the 4.4.1.x-range. A new spin-off version in the 5.0.0.x-range can be made when needed afterwards. | No | No |
+| 5.0.0.x [Obsolete] | Implementation of the class library features - requires DataMiner 9.6.3.0 - 8092. The 5.0.0.x-range is a spin-off based on version 4.4.1.12, because of the increased minimum DataMiner version. Development should still happen in the 4.4.1.x-range. A new spin-off version in the 5.0.0.x-range can be made when needed afterwards. | No | No |
 | 5.0.1.x [Obsolete] | Merged 5.0.0.x branch with 4.4.x branch. | No | No |
-| 5.0.2.x | Displayed column order of Outputs Service Configuration table changed. | No | No |
+| 5.0.2.x [Obsolete] | Displayed column order of Outputs Service Configuration table changed. | No | No |
 
 ### Product Info
 

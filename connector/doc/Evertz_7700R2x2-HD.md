@@ -19,13 +19,6 @@ The connector also allows manual configuration of monitoring via SNMP.
 | 1.0.0.x [Obsolete] | Initial version.                              | -            | -                 |
 | 1.0.1.x [SLC Main] | Update for compliance with current standards. | 1.0.0.6      | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

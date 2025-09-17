@@ -63,3 +63,4 @@ This page contains information about the alarms: **Video Present**, **Audio X Se
 ### Decode Alarms
 
 This page contains **SDI Output, TS Output, Audio, Genlock,** and **ASI Alarms**.
+

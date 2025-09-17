@@ -158,3 +158,4 @@ All data gets retrieved from the device in three ways.
 1. Traps
 
    - When enabled and set up on the chassis, traps can be sent to DataMiner whenever an alarm occurs. The traps are accepted and processed for the ENC1 card.
+

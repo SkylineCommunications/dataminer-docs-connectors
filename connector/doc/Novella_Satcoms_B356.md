@@ -29,3 +29,4 @@ This connector allows easy configuration of the receiver:
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Novella Satcoms B356, refer to the [Technical help page](xref:Connector_help_Novella_Satcoms_B356_Technical).
+

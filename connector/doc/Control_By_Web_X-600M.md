@@ -36,3 +36,4 @@ The **Control By Web X-600M** is a multifunction web-enabled industrial I/O cont
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Control_By_Web_X-600M_Technical).
+

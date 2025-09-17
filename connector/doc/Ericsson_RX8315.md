@@ -151,7 +151,7 @@ This page contains a link to the web page of the actual device. Note that the cl
 
 ## DataMiner Connectivity Framework
 
-The **1.1.0.x** connector range of the Ericsson RX8315 protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The **1.1.0.x** connector range of the Ericsson RX8315 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

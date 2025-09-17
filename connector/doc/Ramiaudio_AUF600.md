@@ -24,3 +24,4 @@ The AUF600 is a digital audio mixer capable of handling cross-fading of three so
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Ramiaudio_AUF600_Technical).
+

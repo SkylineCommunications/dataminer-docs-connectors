@@ -36,3 +36,4 @@ This is a DataMiner connector for the **Ross Video MC1** cards. With this connec
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Ross Video MC1, refer to the [Technical help page](xref:Connector_help_Ross_Video_MC1_Technical).
+

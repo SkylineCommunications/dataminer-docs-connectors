@@ -54,3 +54,4 @@ The Appear X Platform connector allows users to configure and display informatio
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector to connect to the chassis, refer to the [Technical help page](xref:Connector_help_Appear_X_Platform_Technical).
+

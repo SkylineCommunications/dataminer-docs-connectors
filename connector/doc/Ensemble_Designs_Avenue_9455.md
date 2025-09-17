@@ -12,12 +12,6 @@ Ensemble Designs Avenue 9455 monitors an Ensemble Frame, which contains only car
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                                                      |
@@ -63,3 +57,4 @@ All the columns are purely informative except for the last two. In the **Switch 
 On the left side of this page, you can select the number of available slots, and click a button to refresh all SNMP parameters. You can also find the **SNMP Overview** table here, which displays information about the connection to each slot and allows you to manage these connections.
 
 On the right side of the page, you can use the toggle button to enable or disable the automatic creation of DVEs. You can also find the **Slot DVE** table here. This table contains two columns: the **DVE ID** column, which contains the ID of the created DVE, and the **Alias**, which indicates the name of the DVE.
+

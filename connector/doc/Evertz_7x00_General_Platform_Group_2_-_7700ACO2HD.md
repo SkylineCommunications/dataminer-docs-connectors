@@ -51,3 +51,4 @@ This page contains the Intelli Gain Config Table, Intelli Analyzer Channel Confi
 ### Alarms
 
 This page contains information regarding alarms in the Misc Fault Table and IntelliAnalyzer Alarms Table.
+
