@@ -23,9 +23,15 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (default *9111*).
 
-### Initialization
+### Enabling External Remote Control
 
-The Multi-streamer requires a password to successfully authenticate, which should be filled in in the **Authentication** section.
+External remote control must be enabled in the Volkert Multi-Streamer application for the connector to be able to successfully retrieve the stream details:
+
+1. In the Volkert Multi-Streamer application, open **Settings** > **Remote Control**.
+
+1. Enable **Allow to remote control this instance** and set a control password.
+
+1. In the DataMiner element, enter the password in the **Authentication** section of the **General** page.
 
 ## How to use
 
