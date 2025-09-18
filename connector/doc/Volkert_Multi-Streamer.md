@@ -26,7 +26,8 @@ Multi-Streamer (by Volkert Software) is a cross-platform application for handlin
 
 ### Prerequisites
 
-- **External data forwarding**: In the Software settings, the external management needs to be enabled. The provided password must be used by the connector to successfully retrieve the stream details.
+- **External Remote Control**: In the Volkert Multi-Streamer application, open *Settings* > *Remote Control*. Enable **Allow to remote control this instance** and set a control password.  
+This password must then be entered in the connector on the **General** page so the connector can successfully retrieve the stream details.
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector, refer to the [Technical help page](xref:Connector_help_Volkert_Multi-Streamer_Technical).
