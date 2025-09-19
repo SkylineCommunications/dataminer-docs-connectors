@@ -10,27 +10,23 @@ The NTT Electronics HC32000E is a high-density video encoder designed for real-t
 
 ### Key Features
 
-- **High-Density Multi-Channel Encoding**: Supports up to 8 HD or 2 4K streams simultaneously in a 1RU unit, maximizing space and efficiency for large-scale deployments.
+- **Device Status Mmnitoring**: Monitor multiple device parameters such as IP, network status, input sources, and encoding settings.
 
-- **Advanced HEVC/H.264 Video Compression**: Delivers exceptional video quality at low bitrates using the latest encoding standards, supporting both 4:2:2 10-bit and 4:2:0 8-bit color sampling.
+- **Input and output configuration**: Configure various input and output settings, including audio, audio gain, video options, and IP data. 
+  
+- **Network configuration and monitoring**: Set up network interfaces, SNMP, Web UI, PPPoE, syslog, and remote monitoring servers. Customize device settings such as NTP, scrambled audio encryption, BISS encoding, and event log levels.
 
-- **Extensive Audio Channel Support**: Encodes up to 64 discrete audio channels, enabling multi-language and multitrack audio workflows for live broadcasts.
-
-- **Flexible Input & Output Interfaces**: Accepts HD-SDI/3G-SDI inputs and outputs transport streams over DVB-ASI and IP (IPv4/IPv6), with support for up to 4 TS outputs.
-
-- **Robust Redundancy & Stream Protection**: Dual power supplies, seamless IP redundancy, and error correction (FEC, ARQ) ensure uninterrupted live streaming and contribution feeds.
-
-- **Integrated Security & Encryption**: Supports BISS-1, BISS-E, and BISS-CA encryption for secure transmission over public or private networks.
+- **Encoder setup**: Adjust transport stream settings, including program and audio configurations. Fine-tune video settings, BISS, TCP, multi-streaming, and video options.
 
 ## Use Cases
 
 ### Remote Monitoring and Network Management
 
-**Challenge:** Broadcasters need to cover multiple live HD or UHD video feeds from a venue using minimal rack space, while ensuring redundancy and reliability.
+**Challenge:** A live event production team needs to encode multiple high-resolution video feeds on-site and deliver them reliably over IP networks to a central broadcast hub.
 
-**Solution:** Deploy the HC32000E to encode multiple camera feeds simultaneously within a single 1RU unit, transmitting over IP or ASI to master control.
+**Solution:** Using the HC32000E connector, DataMiner enables real-time monitoring and control of HEVC 4:2:2 10-bit encoding, network settings, and stream management for the HC32000E encoder deployed at the event location.
 
-**Benefit:** Reduces hardware footprint and power consumption, simplifies deployment, and ensures high-reliability transmission with integrated protection mechanisms.
+**Benefit:** Achieve reliable, high-quality contribution encoding with low latency by integrating the HC32000E into the DataMiner digital twin, ensuring full visibility and remote management of the encoding workflow.
 
 ## Technical Reference
 
