@@ -2360,6 +2360,11 @@
     topicUid: Connector_help_CISCO_VDS-IS_-_Service_Engine
   - name: CISCO VDS-IS - Service Router
     topicUid: Connector_help_CISCO_VDS-IS_-_Service_Router
+  - name: CISCO XROS Manager
+    topicUid: Connector_help_CISCO_XROS_Manager
+    items:
+    - name: CISCO XROS Manager Technical
+      topicUid: Connector_help_CISCO_XROS_Manager_Technical
 - name: Clear-Com
   items:
   - name: Clear-Com Central Switch Unit
