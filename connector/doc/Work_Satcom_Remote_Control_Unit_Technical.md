@@ -23,44 +23,6 @@ This connector is implemented as a serial protocol.
 
   - If using serial‑over‑IP, specify the gateway IP/host and port during element creation.
 
-### Pages and Parameters
-
-- General
-  - Controller Alarm Status (discreet)
-  - IP Address, Subnet Mask, Gateway, TCP Port (read-only)
-  - Frequency Limit Minimum/Maximum (GHz)
-  - Alarm Relay Inhibit (toggle)
-
-- Unit Address
-  - Channel/Unit selector (1–8)
-  - Unit Address (None, @, A–Z)
-  - Configure button to apply addressing
-
-- Unit Overview
-  - Table listing units 1–8 with per‑unit general alarm status
-
-- UPC
-  - UPC Master Control (On/Off)
-  - Clear Sky Calibration (V)
-  - Deep Fade Timer (s), Deep Fade Enable Timer (s)
-  - Deep Fade Threshold (dB)
-  - Power Control Cycle (s)
-  - Voltage per 1 dB Attenuation (V)
-  - Restart Deep Fade Timer
-  - Downlink Fade (current dB), Downlink Fade Alarm (discreet)
-  - Beacon Receiver Voltage (V)
-
-- Converter 1 … Converter 8
-  - Unit Status (discreet)
-  - Reference Source (Internal/External/Auto)
-  - Frequency (GHz)
-  - Gain (On/Off)
-  - External Mute (Enabled/Disabled)
-  - Warmup Mute Time (Normal/Short)
-  - Attenuation (dB)
-  - Equalization (dB/GHz)
-  - UPC controls (Power Control, Minimum Attenuation, Uplink/Downlink Ratio, Deep Fade Behavior)
-
 ## How to Use
 
 Start on the **General** page to validate the controller status and basic limits.
