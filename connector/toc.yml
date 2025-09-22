@@ -8094,6 +8094,13 @@
   items:
   - name: Satec PM130 Plus
     topicUid: Connector_help_Satec_PM130_Plus
+- name: SatPort
+  items:
+  - name: SatPort Incident Manager
+    topicUid: Connector_help_SatPort_Incident_Manager
+    items:
+      - name: SatPort Incident Manager Technical
+      - topicUid: Connector_help_SatPort_Incident_Manager_Technical
 - name: SatService
   items:
   - name: SatService ACU-ODM
