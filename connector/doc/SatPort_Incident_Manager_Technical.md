@@ -1,5 +1,5 @@
 ---
-uid: SatPort_Incident_Manager_Technical
+uid: Connector_help_SatPort_Incident_Manager_Technical
 ---
 
 # SatPort Incident Manager
