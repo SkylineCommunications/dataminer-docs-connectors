@@ -16,7 +16,8 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 |1.1.0.x|Added version compatibility.| - | - |
 |1.1.1.x|Added SNMP connection.| - | - |
 |2.0.0.x| Changed the layout of the connector. The connector can now poll the data using SSH or SNMP. If one of the connections fails, it will use the other connection to poll the data.| - |After version 1.1.1.x, the connection type changes from serial to SNMP, which means that existing elements will need to be re-created when you update to the latest version.|
-|2.0.1.x [SLC Main] |Added CLI Table.| - | CLI Table uses context menu with NuGet.|
+|2.0.1.x |Added CLI Table.| - | CLI Table uses context menu with NuGet.|
+|2.0.2.x [SLC Main] | - Information from Interfaces table fixed and bit rates updated methods implemented.<br>- Tooltip of parameter Data Type Mode improved.<br>- Available Disk Space % (percentage) added to Disks table.| 2.0.1.15 | - NuGets for rate calculation updated.<br>- Interfaces table layout and content changed.|
 
 ### Product Info
 
