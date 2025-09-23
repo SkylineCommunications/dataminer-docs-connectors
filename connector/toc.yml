@@ -8100,7 +8100,7 @@
     topicUid: Connector_help_SatPort_Incident_Manager
     items:
       - name: SatPort Incident Manager Technical
-      - topicUid: Connector_help_SatPort_Incident_Manager_Technical
+        topicUid: Connector_help_SatPort_Incident_Manager_Technical
 - name: SatService
   items:
   - name: SatService ACU-ODM
