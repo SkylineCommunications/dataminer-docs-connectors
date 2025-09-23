@@ -12,14 +12,14 @@ The **CISCO XROS Manager** connector provides centralized, real-time monitoring 
 
 - **System health monitoring**: Get a clear view of each router's overall health and uptime using real-time data from the system-level metrics. Stay informed about how your network infrastructure is performing at a glance.
 - **Interface performance tracking**: Continuously monitor the status and performance of every network interface, including the port usage, speed, and error rates, to ensure smooth data flow across your organization.
-- **Hardware component oversight**: Gain visibility into the physical components of your routers (fans, power supplies, temperature sensors, etc.) so potential hardware issues can be detected before they cause downtime.
+- **Hardware component oversight**: Gain visibility on the physical components of your routers (fans, power supplies, temperature sensors, etc.) so potential hardware issues can be detected before they cause downtime.
 - **Network topology awareness (LLDP)**: Automatically map how devices are connected through the network using LLDP (Link Layer Discovery Protocol) data. This helps visualize dependencies and identify misconfigurations quickly.
 
 ## Use Cases
 
 ### Minimize Downtime Through Proactive Health Monitoring
 
-**Challenge**: Unexpected hardware or system failures on critical ASR Routers can lead to service interruptions and costly downtime.
+**Challenge**: Unexpected hardware or system failures on critical ASR routers can lead to service interruptions and costly downtime.
 
 **Solution**: This connector continuously monitors system health and hardware components such as fans, power supplies, and temperature sensors using OpenConfig /system and /components data.
 

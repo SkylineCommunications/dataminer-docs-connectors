@@ -11,7 +11,7 @@ The CISCO XROS Manager connector interfaces with Cisco ASR Routers to collect ne
 > [!IMPORTANT]
 > When gNMI is used to retrieve device information:
 >
-> - The Communication Gateway DxM must be installed on the DataMiner Agent (DMA).
+> - The Communication Gateway DxM must be installed on the DataMiner Agent.
 > - You need to configure the connector to run with its own **SLProtocol** and **SLScripting** processes (see [Configuring separate SLProtocol and SLScripting instances for a specific protocol](https://aka.dataminer.services/configuring-separate-slprotocol-and-slscripting-instances)).
 > - The number of elements for one DataMiner Agent must be limited to approximately 60.
 
@@ -25,13 +25,13 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-#### Configuration of credentials for gNMI communication
+#### Configuration of Credentials for gNMI communication
 
 On the **Element Settings** page, fill in the **gNMI settings** and click **Connect** to establish the gNMI communication.
 
 Make sure to fill in the full address in the **gNMI IP Address** parameter, e.g. `https://x.x.x.x`. The **Client Certificate** parameter is optional.
 
-## How to use
+## How to Use
 
 ### Communication Manager
 
