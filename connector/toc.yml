@@ -7098,6 +7098,11 @@
     items:
     - name: NTT Electronics HC32000D Technical
       topicUid: Connector_help_NTT_Electronics_HC32000D_Technical
+  - name: NTT Electronics HC32000E
+    topicUid: Connector_help_NTT_Electronics_HC32000E
+    items:
+    - name: NTT Electronics HC32000E Technical
+      topicUid: Connector_help_NTT_Electronics_HC32000E_Technical
   - name: NTT Electronics HVD9100
     topicUid: Connector_help_NTT_Electronics_HVD9100
   - name: NTT Electronics HVD9130
