@@ -10703,6 +10703,11 @@
   items:
   - name: Work Satcom Redundancy Switch 1+1
     topicUid: Connector_help_Work_Satcom_Redundancy_Switch_1+1
+  - name: Work Satcom Remote Control Unit
+    topicUid: Connector_help_Work_Satcom_Remote_Control_Unit
+    items:
+      - name: Work Satcom Remote Control Unit Technical
+        topicUid: Connector_help_Work_Satcom_Remote_Control_Unit_Technical
 - name: World Weather Online
   items:
   - name: World Weather Online Premium
