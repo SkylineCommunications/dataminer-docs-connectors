@@ -8395,6 +8395,11 @@
     topicUid: Connector_help_SES_S.A._Global_Telemetry_System
   - name: SES S.A. Monics200 DB
     topicUid: Connector_help_SES_S.A._Monics200_DB
+  - name: SES S.A. O3b mPOWER
+    topicUid: Connector_help_SES_S.A._O3b_mPOWER
+    items:
+    - name: SES S.A. O3b mPOWER Technical
+      topicUid: Connector_help_SES_S.A._O3b_mPOWER_Technical
   - name: SES S.A. RMS II
     topicUid: Connector_help_SES_S.A._RMS_II
   - name: SES S.A. Siemens Logo
