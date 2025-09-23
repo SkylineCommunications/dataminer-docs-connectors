@@ -40,7 +40,7 @@ This includes:
 - **Frame Description, Name,** and **Nickname**
 - **Equipment/Function Type**
 
-In addition, you can also perform a factory reset or reboot of the OpVision 9000 card with the buttons in the lower right corner of the page.
+In addition, you can also perform a factory reset or reboot of the OpVision 9000 card with the buttons in the lower-right corner of the page.
 
 ### Video
 

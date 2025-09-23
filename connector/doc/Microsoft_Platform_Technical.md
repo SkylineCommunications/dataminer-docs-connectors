@@ -126,6 +126,9 @@ It is also possible to add a filter to calculate the sum of the memory usage of 
 
 If necessary, add more filters, or delete filters using the **Delete** button next to the filtered parameter.
 
+> [!IMPORTANT]
+> The **Process Counter** subpage is **deprecated** and should no longer be used. Instead, you should use the **Page Validation** subpage, which uses the new and improved Process Validation feature and provides more accurate and flexible process monitoring capabilities.
+
 #### Task Manager Measurement
 
 Clicking the button **Measurement Config** will open the **Task Measurement Config** page. This page allows you to customize the processes listed in the **Task Manager** table. The following parameters are available for this:

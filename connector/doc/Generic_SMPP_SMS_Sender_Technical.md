@@ -52,7 +52,7 @@ This page contains a table with an overview of all sent messages. The table cont
 
 In the top-right corner, the **Clear Table** button can be used to clear the data from the table.
 
-In the lower right corner, the **Cleanup Config** button opens a page with the cleanup configuration for the Sent Messages table. This subpage contains the following options:
+In the lower-right corner, the **Cleanup Config** button opens a page with the cleanup configuration for the Sent Messages table. This subpage contains the following options:
 
 - **Cleanup Method**: The method to be used for cleaning up the Sent Messages table. The options are:
   - **Row Count**: Selecting this option will remove the oldest rows from the table until the number of rows in the table is equal to the value specified in **Max Rows**.
@@ -73,7 +73,7 @@ This page contains a table with an overview of all received messages. The table 
 
 In the top-right corner, the **Clear Table** button can be used to clear the data from the table.
 
-In the lower right corner, the **Cleanup Config** button opens a page with the cleanup configuration for the Received Messages table. This subpage contains the following options:
+In the lower-right corner, the **Cleanup Config** button opens a page with the cleanup configuration for the Received Messages table. This subpage contains the following options:
 
 - **Cleanup Method**: This parameter contains the method to be used for cleaning up the Received Messages table. The options are:
   - **Row Count**: Selecting this option will remove the oldest rows from the table until the number of rows in the table is equal to the value specified in **Max Rows**.

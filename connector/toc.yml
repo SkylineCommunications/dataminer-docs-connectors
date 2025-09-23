@@ -264,6 +264,11 @@
     items:
       - name: AJA Bridge Live Technical
         topicUid: Connector_help_AJA_Bridge_Live_Technical
+  - name: AJA BRIDGE NDI 3G
+    topicUid: Connector_help_AJA_BRIDGE_NDI_3G
+    items:
+      - name: AJA BRIDGE NDI 3G Technical
+        topicUid: Connector_help_AJA_BRIDGE_NDI_3G_Technical
   - name: AJA IPR-10G2-HDMI
     topicUid: Connector_help_AJA_IPR-10G2-HDMI
   - name: AJA IPT-10G2-HDMI
@@ -4893,6 +4898,11 @@
   items:
   - name: HW Group Poseidon2
     topicUid: Connector_help_HW_Group_Poseidon2
+  - name: HW Group Temp-232
+    topicUid: Connector_help_HW_Group_Temp_232
+    items:
+    - name: HW Group Temp-232 Technical
+      topicUid: Connector_help_HW_Group_Temp_232_Technical
 - name: IBM
   items:
   - name: IBM Aspera
@@ -5404,6 +5414,13 @@
   items:
   - name: Johnson Controls NCE25
     topicUid: Connector_help_Johnson_Controls_NCE25
+- name: JPEPBiH
+  items:
+  - name: JPEPBiH AMM Meter Data Collector
+    topicUid: Connector_help_JPEPBiH_AMM_Meter_Data_Collector
+    items:
+    - name: JPEPBiH AMM Meter Data Collector Technical
+      topicUid: Connector_help_JPEPBiH_AMM_Meter_Data_Collector_Technical
 - name: Junger
   items:
   - name: Junger C8000
@@ -7076,6 +7093,11 @@
     topicUid: Connector_help_NTT_Electronics_HC11000D
   - name: NTT Electronics HC11000E
     topicUid: Connector_help_NTT_Electronics_HC11000E
+  - name: NTT Electronics HC32000D
+    topicUid: Connector_help_NTT_Electronics_HC32000D
+    items:
+    - name: NTT Electronics HC32000D Technical
+      topicUid: Connector_help_NTT_Electronics_HC32000D_Technical
   - name: NTT Electronics HC32000E
     topicUid: Connector_help_NTT_Electronics_HC32000E
     items:
@@ -9220,6 +9242,11 @@
     topicUid: Connector_help_Supermicro_SuperDoctor_5
   - name: Supermicro SuperDoctor III
     topicUid: Connector_help_Supermicro_SuperDoctor_III
+  - name: Supermicro X9DRW
+    topicUid: Connector_help_Supermicro_X9DRW
+    items:
+    - name: Supermicro X9DRW Technical
+      topicUid: Connector_help_Supermicro_X9DRW_Technical
 - name: SVS Telekom
   items:
   - name: SVS Telekom AKS250
@@ -10473,6 +10500,13 @@
     topicUid: Connector_help_VodafoneZiggo_Witbe_Maestro
   - name: VodafoneZiggo Witbe Maestro - Device
     topicUid: Connector_help_VodafoneZiggo_Witbe_Maestro_-_Device
+- name: Volkert
+  items:
+  - name: Volkert Multi-Streamer
+    topicUid: Connector_help_Volkert_Multi-Streamer
+    items:
+    - name: Volkert Multi-Streamer Technical
+      topicUid: Connector_help_Volkert_Multi-Streamer_Technical
 - name: Volicon
   items:
   - name: Volicon Observer RPM

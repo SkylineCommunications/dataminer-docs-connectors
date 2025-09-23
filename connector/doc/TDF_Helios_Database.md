@@ -22,8 +22,10 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.3.x [Obsolete] | Names of required views in DMS "01 - CAT", "CAT-Elements", "02 - Transport FR3 remontées", and "Transport FR3 remontées-Elements" changed to "01 - F3 CAT", "F3 CAT - Elements", "02 - F3eDliveR", and "F3 eDliveR-Elements", respectively.| 1.0.2.10 | Required views must have the new correct name for the connector to work. |
 | 1.0.4.x [Obsolete] | New required views added: "03 -F3 FTR VAISE CDE" and "F3 FTR VAISE CDE-Elements" | 1.0.3.10 | New required views need to be created for the connector to work. |
 | 1.0.5.x [Obsolete] | Changed CAT and F3 eDliveR sites structure to each have 1 site view and 1 "Elements" view. | 1.0.4.6 | |
-| 1.0.6.x [SLC Main] | Each element of this connector will have a dedicated SLProtocol and SLScripting processes. | 1.0.5.3 | |
+| 1.0.6.x [Obsolete] | Each element of this connector will have a dedicated SLProtocol and SLScripting processes. | 1.0.5.3 | |
+| 1.0.7.x [SLC Main] | Added new columns to Point of Services table. | 1.0.6.5 | |
 | 2.0.0.x [SLC Main] | Equipment can be exported using a filter. | 1.0.6.4 | |
+| 3.0.0.x [SLC Main] | Adapted to TDF Radio Project requirements. | 1.0.7.1 | |
 
 ### Product Info
 
@@ -36,7 +38,9 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.4.x   | Oracle SQL Developer 1.5.5 |
 | 1.0.5.x   | Oracle SQL Developer 1.5.5 |
 | 1.0.6.x   | Oracle SQL Developer 1.5.5 |
+| 1.0.7.x   | Oracle SQL Developer 1.5.5 |
 | 2.0.0.x   | Oracle SQL Developer 1.5.5 |
+| 3.0.0.x   | Oracle SQL Developer 1.5.5 |
 
 ### System Info
 
@@ -49,7 +53,9 @@ Each operator will have their own exported component and will be able to provisi
 | 1.0.4.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 1.0.5.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 1.0.6.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 1.0.7.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 | 2.0.0.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
+| 3.0.0.x | No | Yes | - | [TDF Helios Database - Operator](xref:Connector_help_TDF_Helios_Database_-_Operator) |
 
 ## Configuration
 

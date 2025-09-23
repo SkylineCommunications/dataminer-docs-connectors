@@ -4,35 +4,26 @@ uid: Connector_help_Bridge_Technologies_VB_Probe_Series_Technical
 
 # Bridge Technologies VB Probe Series
 
+## About
+
 This connector allows you to monitor and control **Bridge Technologies probe** devices.
 
 It uses the **EII API (Enterprise Information Integration)** provided by the vendor for regular polling of the probes over **HTTP**, as well as **SNMP traps** in order to get quick alarm updates.
 
-## About
-
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | - Monitoring of ETR-enabled **streams/services/PIDs**. <br>- Monitoring of **ETR checks**. <br>- Monitoring of **OTT channels** and **OTT profiles**. <br>- Monitoring of the probe **alarms** with precise probe times match (history set). | - | - |
-| 1.1.0.x | - **Ethernet streams provisioning** from **Automation script**. | 1.0.0.x | This branch requires the same minimum DataMiner version as branch 1.0.0.x, but the "Ethernet streams provisioning from Automation script" feature requires DataMiner feature release 9.6.3 or higher. |
-| 1.1.1.x | - InterApp Messages available via NuGet package. | 1.1.0.x | Consumers of the InterApp calls should be adapted. They should now make use of the newly released NuGet package instead of duplicating the InterApp Messages code. |
-| **1.2.0.x [SLC Main]** | - | 1.1.1.x | Minimum required DataMiner version brought up to 10.2.0.0. |
-
-### Product Info
-
-| Range | Supported Firmware |
-|--|--|
-| 1.0.0.x / 1.1.0.x | **Firmware 5.4** or higher is required, and the following probe models are supported:<br>- Bridge Technologies VB120<br>- Bridge Technologies VB220<br>- Bridge Technologies VB240<br>- Bridge Technologies VB242<br>- Bridge Technologies VB250<br>- Bridge Technologies VB252<br>- Bridge Technologies VB260<br>- Bridge Technologies VB262<br>- Bridge Technologies VB270<br>- Bridge Technologies VB272<br>- Bridge Technologies VB330<br>- Bridge Technologies VB258 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.2.0.x   | No                  | Yes                     | -                     | -                       |
+ **Firmware 5.4** or higher is required, and the following probe models are supported:
+ 
+ - Bridge Technologies VB120
+ - Bridge Technologies VB220
+ - Bridge Technologies VB240
+ - Bridge Technologies VB242
+ - Bridge Technologies VB250
+ - Bridge Technologies VB252
+ - Bridge Technologies VB260
+ - Bridge Technologies VB262
+ - Bridge Technologies VB270
+ - Bridge Technologies VB272
+ - Bridge Technologies VB330
+ - Bridge Technologies VB258
 
 ## Configuration
 

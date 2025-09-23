@@ -36,7 +36,7 @@ The physical devices of the system are called CPE (Customer Peripheral Equipment
 
 This connector uses a Simple Network Management Protocol (SNMP) connection to be able to retrieve alarm traps and requires the following input during element creation:
 
-SNMP CONNECTION:
+SNMP Connection:
 
 - **SNMP version**: SNMPv2
 - **IP address/host**: The polling IP of the platform.
@@ -51,12 +51,26 @@ SNMP Settings:
 
 This connector uses an HTTP connection to be able to interact with the NBI and requires the following input during element creation:
 
-HTTP CONNECTION:
+HTTP Connection:
 
 - **Type of port:** TCP/IP
 - **IP address/host**: The polling IP of the platform.
 
-TCP/IP settings
+TCP/IP settings:
+
+- **IP port**: 443
+- **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
+
+#### HTTP Connection - Report Polling
+
+This connector uses an HTTP connection to be able to interact with the NBI and requires the following input during element creation:
+
+HTTP Connection:
+
+- **Type of port:** TCP/IP
+- **IP address/host**: The polling IP of the platform.
+
+TCP/IP settings:
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
@@ -141,9 +155,9 @@ Note: The Alarms table will **only show up to 100 alarms**, and all **alarms can
 
 Each row in the **Active Reports** table represents a report that is actively being polled.
 
-If you click the **Add Report** button in the lower right corner of the page, a new entry will be added with a default element type and element name. Once the entry has been added to the table, select a **Name** and a **Graph Type** to start polling the report. For now, only the Element Type CPE is supported. By default, the report will be polled for all CPE devices. You can request a report for a specific CPE instance as well by selecting the corresponding element name.
+If you click the **Add Report** button in the lower-right corner of the page, a new entry will be added with a default element type and element name. Once the entry has been added to the table, select a **Name** and a **Graph Type** to start polling the report. For now, only the Element Type CPE is supported. By default, the report will be polled for all CPE devices. You can request a report for a specific CPE instance as well by selecting the corresponding element name.
 
-All active reports can be removed from the table at any time if needed. You can also clear the entire table in one go with the **Clear Reports** button, located in the lower right corner of the page. When the Active Reports table is completely empty, Group 910 will not be polled.
+All active reports can be removed from the table at any time if needed. You can also clear the entire table in one go with the **Clear Reports** button, located in the lower-right corner of the page. When the Active Reports table is completely empty, Group 910 will not be polled.
 
 Keep in mind that the TotalNMS database itself gets an update regularly. During such an update, it is not possible to poll a report, and the corresponding value will indicate N/A. After the next poll cycle, the value should contain a number again.
 
