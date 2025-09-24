@@ -1,30 +1,10 @@
 ---
-uid: Connector_help_PTF_3207a
+uid: Connector_help_Precise_Time_and_Frequency_3207a_Technical
 ---
 
-# PTF 3207a
+# Precise Time and Frequency 3207a
 
-The PTF 3207A connector is designed to interface with the PTF 3207A Time and Frequency System, providing users with access to its high-precision time and frequency signals through SNMP and Telnet protocols. The connector allows the monitoring and configuration of the device's parameters, ensuring accurate and reliable operation.
-
-## About
-
-### Version Info
-
-| Range       | Features         | Based on   | System Impact |
-|-------------|----------------- |------------|---------------|
-| 1.0.0.x     | Initial release  | -          | -             |
-
-### Product Info
-
-| Range       | Supported Model        |Supported Firmware  |
-|-------------|------------------------|--------------------|
-| 1.0.0.x     | ptf 3207A-GNS          | 02.11xo            |
-
-### System Info
-
-| Range       | DCF Integration  | Cassandra Compliant  | Linked Components  | Exported Components   |
-|-------------|------------------|----------------------|--------------------|-----------------------|
-| 1.0.0.x     | No               | Yes                  | -                  | -                     |
+The Precise Time and Frequency 3207A connector is designed to interface with the Precise Time and Frequency 3207A Time and Frequency System, providing users with access to its high-precision time and frequency signals through SNMP and Telnet protocols. The connector allows the monitoring and configuration of the device's parameters, ensuring accurate and reliable operation.
 
 ## Configuration
 
@@ -60,7 +40,7 @@ To visualize parameters polled from Telnet, configure the Telnet settings:
 - **Module Polling**: Enable polling for each module if the device includes that module.
 - **Telnet Settings**: Adjust polling state, timer, and timeout according to your preferences.
 
-Configure these settings to ensure efficient operation and accurate monitoring of the PTF 3207A device.
+Configure these settings to ensure efficient operation and accurate monitoring of the Precise Time and Frequency 3207A device.
 
 ## Notes
 

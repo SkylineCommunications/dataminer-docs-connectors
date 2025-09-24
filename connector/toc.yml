@@ -6998,10 +6998,13 @@
     topicUid: Connector_help_Proximus_Airing_Manager
   - name: Proximus Unicast RTCP Collector
     topicUid: Connector_help_Proximus_Unicast_RTCP_Collector
-- name: PTF
+- name: Precise Time and Frequency
   items:
-  - name: PTF 3207a
-    topicUid: Connector_help_PTF_3207a
+  - name: Precise Time and Frequency 3207a
+    topicUid: Connector_help_Precise_Time_and_Frequency_3207a
+    items:
+    - name: Precise Time and Frequency 3207a Technical
+      topicUid: Connector_help_Precise_Time_and_Frequency_3207a_Technical
 - name: Pure Storage
   items:
   - name: Pure Storage FlashArray
