@@ -40,7 +40,7 @@ If given high enough credentials (Group Level: 1), users can reboot the device o
 	- If given high enough credentials (Group Level: 1), the table's rows can be right clicked on to open up a context menu. This context menu contains actions the user can perform on the software images.
 
 - **Interfaces**: Displays a table containing useful metrics (In Bit Rate, Out Bit Rate etc) for device's interfaces. Users can also perform configurations on the interfaces.
-- **Interfaces Counters**: Displays tables containing rate information for the Rx and Tx components of the interfaces.
+- **Interfaces Details**: Displays tables containing rate information for the Rx and Tx components of the interfaces.
 - **Sensors**: Displays sensor states.
   - **Temperature**: This subpage displays readings recorded from the temperature sensors.
   - **Fan**: This subpage displays the readings recorded from the fan sensors.
