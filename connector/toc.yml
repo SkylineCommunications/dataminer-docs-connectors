@@ -546,6 +546,13 @@
   items:
   - name: ANTlabs Tru Auth Radius
     topicUid: Connector_help_ANTlabs_Tru_Auth_Radius
+- name: Anywave
+  items:
+  - name: Anywave MHPTV
+    topicUid: Connector_help_Anywave_MHPTV
+    items:
+    - name: Anywave MHPTV Technical
+      topicUid: Connector_help_Anywave_MHPTV_Technical
 - name: APA
   items:
   - name: APA Sound Monitoring
