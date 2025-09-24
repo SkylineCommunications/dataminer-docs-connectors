@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Anywave_MHPTV_Technical_
+uid: Connector_help_Anywave_MHPTV_Technical
 ---
 
 # Anywave MHPTV
