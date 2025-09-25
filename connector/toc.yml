@@ -7722,7 +7722,7 @@
     topicUid: Connector_help_RGB_Networks_VMG2
 - name: Riedel Communications
   items:
-   - name: Riedel Communications ARTIST
+  - name: Riedel Communications ARTIST
     topicUid: Connector_help_Riedel_Communications_ARTIST
     items:
     - name: Riedel Communications ARTIST Technical
