@@ -6,7 +6,7 @@ uid: Connector_help_Frequentis_iRIF_Technical
 
 ## About
 
-The Frequentis iRIF is a IP-based radio gateway developed for safety- and mission-critical communications, particularly in air traffic management (ATM) and defense systems.
+The Frequentis iRIF is an IP-based radio gateway developed for safety- and mission-critical communications, particularly in air traffic management (ATM) and defense systems.
 
 ## Configuration
 
@@ -30,26 +30,48 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use (1.0.0.x)
+## How to Use (Range 1.0.0.x)
 
-The connector consists of the following data pages:
+### General Page
 
-- **General**: Displays general device information such as the system name and uptime.
-If given high enough credentials (Group Level: 1), users can reboot the device or restart the application.
-  - **Software**: This subpage displays available software images. 
-	- If given high enough credentials (Group Level: 1), the table's rows can be right clicked on to open up a context menu. This context menu contains actions the user can perform on the software images.
+This page displays general device information such as the system name and uptime.
 
-- **Interfaces**: Displays a table containing useful metrics (In Bit Rate, Out Bit Rate etc) for device's interfaces. Users can also perform configurations on the interfaces.
-- **Interfaces Details**: Displays tables containing rate information for the Rx and Tx components of the interfaces.
-- **Sensors**: Displays sensor states.
-  - **Temperature**: This subpage displays readings recorded from the temperature sensors.
-  - **Fan**: This subpage displays the readings recorded from the fan sensors.
-  - **PSU**: This subpage displays the readings recorded from the PSU sensors.
-  - **CPU**: This subpage displays the readings recorded from the CPU sensors.
-  - **HDD**: This subpage displays the readings recorded from the HDD sensors.
+If given high enough credentials (group level: 1), you can also reboot the device or restart the application.
 
-- **Service**: Displays software related services.
-- **Hardware**: Displays hardware related info.
-	- The tables' rows can be right clicked on to open up a context menu. These context menu contains actions the user can perform on the hardware module/interface.
-- **Fourwire**: Displays fourwire related info.
-- **Web Interface**: Displays the web interface of the polling IP address
+On the **Software** subpage, you can find the available software images. If given high enough credentials (group level: 1), you can right-click a row in the table to access a context menu that allows you to perform actions on the software images.
+
+### Interfaces Page
+
+This page displays a table containing useful metrics (In Bit Rate, Out Bit Rate, etc.) for the interfaces fo the device. You can also configure settings of the interfaces.
+
+### Interfaces Details Page
+
+This page displays tables containing rate information for the Rx and Tx components of the interfaces.
+
+### Sensors Page
+
+This page displays sensor states. In addition, it has the following subpages:
+
+- **Temperature**: This subpage displays readings recorded from the temperature sensors.
+- **Fan**: This subpage displays the readings recorded from the fan sensors.
+- **PSU**: This subpage displays the readings recorded from the PSU sensors.
+- **CPU**: This subpage displays the readings recorded from the CPU sensors.
+- **HDD**: This subpage displays the readings recorded from the HDD sensors.
+
+### Service Page
+
+This page displays software-related services.
+
+### Hardware Page
+
+This page displays hardware-related info.
+
+You can right-click the rows in the tables to open a context menu that allows you to perform actions on the relevant hardware module or interface.
+
+### Fourwire Page
+
+This page displays fourwire-related info.
+
+### Web Interface Page
+
+This page displays the web interface of the polling IP address. It is only available when the client machine has network access to the product.
