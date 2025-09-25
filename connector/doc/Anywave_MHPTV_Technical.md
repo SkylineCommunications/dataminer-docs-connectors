@@ -6,7 +6,7 @@ uid: Connector_help_Anywave_MHPTV_Technical
 
 ## About
 
-The Anywave MHPTV connector enables monitoring and control of Anywave MHPTVs. This connector is capable of retrieving and setting data using SNMP to communicate with the Transmitter.
+The Anywave MHPTV connector enables monitoring and control of Anywave MHPTV transmitters. This connector is capable of retrieving and setting data using SNMP to communicate with the transmitter.
 
 ## Configuration
 
@@ -18,12 +18,12 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
+- **IP address/host**: The polling IP or URL of the destination.
 
 SNMP Settings:
 
-- **IP port**: [The IP port of the destination.]
-- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
+- **IP port**: The IP port of the destination.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
 
 ### Web Interface
 
@@ -33,8 +33,8 @@ The web interface is only accessible when the client machine has network access 
 
 ### Transmitter Page
 
-The Transmitter Page gives a comprehensive overview of the Transmitter's operational status and key parameters such as `Forward Power` and `Reflective Power` as well as the alarm status of these parameters.
+This page provides a comprehensive overview of the transmitter's operational status and key parameters such as *Forward Power* and *Reflective Power* as well as the alarm status of these parameters.
 
-### System Configuration
+### System Configuration Page
 
-The System Configuration page allows for the management of the Transmitter as well as the Exciter.
+On this page, you can manage the transmitter as well as the exciter.

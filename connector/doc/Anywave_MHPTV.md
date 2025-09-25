@@ -6,7 +6,7 @@ uid: Connector_help_Anywave_MHPTV
 
 ## About
 
-The Anywave MHPTV connector enables monitoring and control of Anywave MHPTVs. This connector is capable of retrieving and setting data using SNMP to communicate with the Transmitter.
+The Anywave MHPTV connector enables monitoring and control of Anywave MHPTV transmitters. This connector is capable of retrieving and setting data using SNMP to communicate with the transmitter.
 
 ## Key Features
 
@@ -14,7 +14,7 @@ The Anywave MHPTV connector enables monitoring and control of Anywave MHPTVs. Th
 
 - **24/7 monitoring**: Constant monitoring to support continuous status updates.
 
-- **Remote Control**: Allows for remote configuration using DataMiner for the transmitter.
+- **Remote control**: Allows remote configuration of the transmitter via DataMiner.
 
 ## Use Case
 
