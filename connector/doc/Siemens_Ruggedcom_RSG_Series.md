@@ -10,9 +10,9 @@ The Siemens Ruggedcom RSG Series is a series of SNMP-based network switches.
 
 ### Version Info
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [SLC Main] | Initial version. | - | - |
+| Range              | Key Features     | Based on | System Impact |
+|--------------------|------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
 
 ### Product Info
 
@@ -20,15 +20,15 @@ The Siemens Ruggedcom RSG Series is a series of SNMP-based network switches.
 
 In this subsection, insert a table with two columns. In the table, list the firmware versions that are fully compatible with the connector, together with the connector ranges. If multiple firmware versions are compatible with one connector range, add them in the same row, but on different lines.
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |2.9.2.r1.588         |
+| Range    | Supported Firmware |
+|----------|--------------------|
+| 1.0.0.x  | TO BE CONFIRMED    |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range      | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|------------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x    | No              | Yes                 | -                 |                     |
 
 ## Configuration
 
