@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Riedel_Communications_ARTIST
+uid: Connector_help_Riedel_Communications_ARTIST_Technical
 ---
 
 # Riedel Communications ARTIST
