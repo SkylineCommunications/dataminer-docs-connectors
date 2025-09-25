@@ -12,19 +12,22 @@ This is a DataMiner connector for the Nevion Virtuoso FA, a media server designe
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+| 1.0.0.x  | Initial version. | -            | -                 |
+| 1.0.1.x [SLC Main]   | Present Services Table Primary Key format change | 1.0.0.1            | Loss of data on Present Services Table                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 2.10.8                 |
+| 1.0.1.x   | 2.10.8                 |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
