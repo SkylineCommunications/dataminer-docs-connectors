@@ -6,7 +6,7 @@ uid: Connector_help_Riedel_Communications_ARTIST
 
 ## About
 
-**Riedel Communications ARTIST** is a powerful, modular, and decentralized digital matrix intercom platform that forms the communications backbone for broadcast, live events, industry, and command/control environments around the world.
+**Riedel Communications ARTIST** is a powerful, modular, and decentralized digital matrix intercom platform that forms the communications backbone for broadcasting, live events, and command/control environments around the world. With this connector, you can poll and configure the data from a Riedel system.
 
 ## Key Features
 

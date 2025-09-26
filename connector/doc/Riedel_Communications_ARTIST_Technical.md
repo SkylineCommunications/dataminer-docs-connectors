@@ -10,21 +10,21 @@ The **Riedel Communications ARTIST** connector can be used to poll and configure
 
 ### Version Info
 
-|Range  |Features  |Based on  |System Impact  |
-|---------|---------|---------|---------|
-|1.0.0.x [SLC Main]     |<ul><li>Ports</li><li>Virtual Ports</li><li>Keys</li><li>Virtual Keys</li><li>Conferences</li><li>Groups</li><li>Functions</li></ul>         |-         |-         |
+| Range | Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x [SLC Main] | - Ports<br/>- Virtual Ports<br/>- Keys<br/>- Virtual Keys<br/>- Conferences<br/>- Groups<br/>- Functions | - | - |
 
 ### Product Info
 
-|Range  |Supported Firmware  |
-|---------|---------|
-|1.0.0.x     |8.8.RR1         |
+| Range   | Supported Firmware |
+|---------|--------------------|
+| 1.0.0.x | 8.8.RR1            |
 
 ### System Info
 
-|Range  |DCF Integration  |Cassandra Compliant  |Linked Components  |Exported Components   |
-|---------|---------|---------|---------|---------|
-|1.0.0.x    |No       |Yes         |-         |   |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|---------|-----------------|---------------------|-------------------|---------------------|
+| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -36,9 +36,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *8193*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *8193*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 #### HTTP Connection - Secondary
 
@@ -46,9 +46,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-  - **IP address/host**: [The polling IP or URL of the destination.]
-  - **IP port**: [The IP port of the destination. (default: *8193*)]
-  - **Device address**: [The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination (default: *8193*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 #### Smart-Serial Connection - Server
 
@@ -58,24 +58,20 @@ SMART-SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: [The polling IP or URL of the destination. Must be set to *any*.]
-  - **IP port**: [The IP port of the destination. (default: *8194*)]
-
+  - **IP address/host**: The polling IP or URL of the destination. Must be set to *any*.
+  - **IP port**: The IP port of the destination (default: *8194*).
 
 ### Redundancy
 
-Most Riedel ARTIST systems consist of both a primary and a secondary server.
-At any point in time, only one of these servers will act as the "online" server.
-While a connection can always be made to both servers, the Riedel ARTIST's information should be retrieved from the "online" server to guarantee the most updated information.
-To do so, while configuring the DataMiner element, please make sure to provide the info of the primary and secondary server for the HTTP connections respectively.
-The connector will automatically and continously detect which server is acting as the "online" server so that all communication can be pointed towards the "online" server at all times.
+Most Riedel ARTIST systems consist of both a primary and a secondary server. At any point in time, only one of these servers will act as the "online" server. While a connection can always be made to both servers, the Riedel ARTIST's information should be retrieved from the "online" server to guarantee the most updated information.
 
-In case your Riedel ARTIST system would not consist of a failover pair, then simply provide the information of your server for both the primary and secondary HTTP connection. 
+For this purpose, while configuring the DataMiner element, make sure to provide the info of the primary and secondary server for the HTTP connections, respectively. The connector will automatically and continuously detect which server is acting as the "online" server so that all communication can be pointed towards the "online" server at all times.
+
+In case your Riedel ARTIST system does not consist of a failover pair, provide the information of your server for both the primary and the secondary HTTP connection.
 
 ## How to use
 
-The Riedel ARTIST systems comes with many types of information and data that can be provisioned (create, update and delete).
-To make the provisioning as user friendly and straight forward possible, the configuration of these data types is available via designated right-click menus which are documented in detail in the upcoming documentation sections.
+The Riedel ARTIST system comes with many types of information and data that can be provisioned (create, update and delete). To make the provisioning as user-friendly and straightforward possible, the configuration of these data types is available via designated right-click menus, which are documented in detail below.
 
 ### Ports
 
@@ -151,10 +147,10 @@ The following options are available in the right-click menu for the **Call to Po
 
 - **Delete**: Delete the selected call-to-port function.
 
-
 ### Notifications
 
 A Riedel ARTIST system also comes with the feature of actively sending smart-serial informational messages to provide updates on changes in the Riedel system.
+
 The type of notifications for which you wish to receive these informational messages can be configured under the **Notification - Registration** page.
 
-Additionally you can also configure on how to cleanup these received notifications by choosing to either keep notifications based on a **maximum number** or **maximum age**.
+Additionally, you can configure how to clean up these received notifications by choosing to keep notifications based either on a **maximum number** or on **maximum age**.
