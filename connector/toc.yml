@@ -7562,6 +7562,11 @@
   items:
   - name: Proximus Airing Manager
     topicUid: Connector_help_Proximus_Airing_Manager
+  - name: Proximus File Manager
+    topicUid: Connector_help_Proximus_File_Manager
+    items:
+    - name: Proximus File Manager Technical
+      topicUid: Connector_help_Proximus_File_Manager_Technical
   - name: Proximus Unicast RTCP Collector
     topicUid: Connector_help_Proximus_Unicast_RTCP_Collector
 - name: Pure Storage
