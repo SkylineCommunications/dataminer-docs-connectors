@@ -13,7 +13,7 @@ This is a DataMiner connector for the Nevion Virtuoso FA, a media server designe
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x  | Initial version. | -            | -                 |
-| 1.0.1.x [SLC Main]   | Present Services Table Primary Key format change | 1.0.0.1            | Loss of data on Present Services Table                 |
+| 1.0.1.x [SLC Main]   | Present Services Table primary key format change. | 1.0.0.1            | Loss of data in Present Services Table.                 |
 
 ### Product Info
 
