@@ -10,16 +10,16 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 
 ### Version Info
 
-| Range              | Key Features                                                                                   | Based on | System Impact |
-|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x            | Initial version.                                                                               | -        | -             |
-| 1.0.1.x            | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | -             |
-| 1.0.2.x            | Encoder and Gateway IP Output table PK changed. Layout adapted.                                | 1.0.1.10 | -             |
-| 1.1.0.x            | API structure changed to match new software version device.                                    | 1.0.2.3  | -             |
-| 1.1.1.x            | Added Decoder Video page with video parameters and added descrambling status for inputs.       | 1.1.0.4  | -             |
-| 1.1.2.x            | Added additional Gateway Channel and Network parameters.                                       | 1.1.1.7  | -             |
-| 1.1.3.x [SLC Main] | Fixes, naming improvements, display key additions to decoder tables, and new decoder/encoder and Gateway parameters introduced. | 1.1.2.10 | -             |
-| 1.2.0.x [SLC Main] | Fixed issues related to Decoder IP Input response structure change due to new firmware.         | 1.1.2.10 | -             |
+| Range | Key Features | Based on | System Impact |
+|-|-|-|-|
+| 1.0.0.x [Deprecated] | Initial version.| - | - |
+| 1.0.1.x [Deprecated] | Implemented firmware version 2.11.1. Primary key changes for Video Input Configuration tables. | 1.0.0.4  | - |
+| 1.0.2.x [Deprecated] | Encoder and Gateway IP Output table PK changed. Layout adapted. | 1.0.1.10 | - |
+| 1.1.0.x [Deprecated] | API structure changed to match new software version device. | 1.0.2.3  | -             |
+| 1.1.1.x [Deprecated] | Added Decoder Video page with video parameters and added descrambling status for inputs. | 1.1.0.4  | - |
+| 1.1.2.x | Added additional Gateway Channel and Network parameters. | 1.1.1.7  | - |
+| 1.1.3.x | Fixes, naming improvements, display key additions to decoder tables, and new decoder/encoder and Gateway parameters introduced. | 1.1.2.10 | - |
+| 1.2.0.x [SLC Main] | Fixed issues related to Decoder IP Input response structure change due to new firmware. | 1.1.2.10 | - |
 
 ### Product Info
 
@@ -32,7 +32,7 @@ The Ateme Titan Edge device is an advanced media platform that can have multiple
 | 1.1.1.x | API unknown - Software v3.0.2  |
 | 1.1.2.x | API unknown - Software v3.0.2  |
 | 1.1.3.x | API unknown - Software v3.0.2  |
-| 1.2.0.x | Software v3.5.0  |
+| 1.2.0.x | Software v3.5.0 and above |
 
 ### System Info
 
