@@ -28,6 +28,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 |1.1.1.x| Not applicable     |
 |2.0.0.x| Not applicable     |
 |2.0.1.x| Not applicable     |
+|2.0.2.x| Not applicable     |
 
 ### System Info
 
@@ -38,6 +39,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 |1.1.1.x| Yes                 | Yes                     | -                     | -                       |
 |2.0.0.x| No                  | Yes                     | -                     | -                       |
 |2.0.1.x| No                  | Yes                     | -                     | -                       |
+|2.0.2.x| No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
