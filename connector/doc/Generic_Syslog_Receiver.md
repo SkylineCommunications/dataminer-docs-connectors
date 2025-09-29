@@ -4,72 +4,41 @@ uid: Connector_help_Generic_Syslog_Receiver
 
 # Generic Syslog Receiver
 
-The Generic Syslog Receiver is used to capture and analyze information received via Syslog messages.
-
-Elements using this protocol are **constantly listening** to incoming Syslog messages that are sent from **one or more network devices**. The connector processes these messages and displays the messages in an overview along with the severity. Filtering the incoming messages is possible based on severity or based on specific data in the message. The connector can also be used to trigger specific alarms and to write the messages to log files.
-
-The communication method used is **smart-serial**.
-
 ## About
 
-### Version Info
+The Generic Syslog Receiver is a DataMiner connector dedicated to capturing, consolidating, and analyzing information received via Syslog messages. It functions as a central listening post, gathering critical operational and security data sent from one or more network devices across the infrastructure. By processing these raw messages, the connector extracts severity, enables filtering, triggers alarms, and writes Syslog messages to files.
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | Initial version | - | - |
-| 1.0.1.x | Partial attribute added to tables: Received Raw Messages and Message Table. | - | - |
-| 1.0.2.x [Obsolete] | Updated sort on messages table. Added Partial attribute to messages table to display 100 rows per page. | - | - |
-| 1.0.3.x [SLC Main] | Maximum Messages Range updated to 10-10000. Partial attribute added or updated in Received Raw Messages and Message Table. | - | - |
+## Key Features
 
-### Product Info
+- **Multi-Source Syslog Centralization**: Listens via a smart-serial connection to capture from multiple network devices.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.0.2.x   | -                      |
-| 1.0.3.x   | -                      |
+- **Syslog Message Display**: Automatically processes incoming Syslog messages and displays their data in the Message Table with associated severity levels.
 
-### System Info
+- **Filtering and Search**: Provides tools to filter the overview of incoming messages based on message severity or specific data content within the message text.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+- **Alarm Triggering**: Allows users to define specific criteria (based on message content) in the Alarm Configuration table to trigger DataMiner alarms immediately when critical events occur.
 
-## Configuration
+- **Historical Logging**: Includes the capability to write all incoming Syslog messages directly to local log files.
 
-### Connections
+## Use Cases
 
-#### Serial Main Connection
+### Centralized Monitoring
 
-This connector uses a serial connection and requires the following input during element creation:
+**Challenge**: Manually checking Syslog messages across different device types for events is time-consuming and often leads to delayed response times.
 
-SERIAL CONNECTION:
+**Solution**: The Generic Syslog Receiver acts as a single, dedicated endpoint, instantly capturing and centralizing all Syslog messages in the Message Table where they can be categorized by severity.
 
-- Interface connection:
+**Benefit**: Provides a unified, real-time overview of event logs across the entire network, drastically reducing the time required to detect and respond to anomalies.
 
-  - **IP address/host**: The IP should be set to the specific keyword *any*. This will make sure the Syslog Receiver takes the Server role.
-  - **IP port**: The IP port of the device, by default *514*.
+## Technical Reference
 
-## Usage
+### Prerequisites
 
-### General
+- Network Configuration is needed to ensure the sending device is configured to forward Syslog messages to the DataMiner Element.
 
-This is the default page of the connector. It contains the **Message Table**, which displays all the information of the incoming syslog messages. There are also page buttons to specific subpages for **Priority**, **Layout**, and **Raw Messages**.
+- IP Address/Host must be set to the specific keyword any so that the connector acts as the receiving server.
 
-### Alarms
+- IP Port (default 514) must be configured to match the port used by the sending network devices.
 
-This page contains the **Alarm Configuration** table. In this table, you can create specific alarms configurations based on the incoming messages.
-
-It also contains the **Alarms Table**, which displays an overview of all the generated alarms.
-
-### Log Messages
-
-This page contains a toggle button that can be used to enable or disable the storing of syslog messages in log files. You can also specify the folder where those files will be stored.
-
-### Alert Counter
-
-This page contains the **Alert Counter Table**, which allows you to track the number of incoming syslog messages that match specific search criteria.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Generic_Syslog_Receiver_Technical).
