@@ -46,6 +46,8 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Makes it clear which terminals can be ignored.
 
+![UserTerminals](~/connector/images/StarlinkEnterpriseUserTerminals.png)
+
 ### Use Case 2
 
 **Challenge**: Showing data usage as a stacked bar graph.
