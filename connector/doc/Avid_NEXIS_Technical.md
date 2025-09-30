@@ -19,7 +19,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: 192.168.54.41
-- **Device address**: not required
+- **Device address**: Not required
 SNMP Settings:
 
 - **Port number**: 161
