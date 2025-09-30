@@ -6,7 +6,7 @@ uid: Connector_help_Generic_Syslog_Receiver
 
 ## About
 
-The Generic Syslog Receiver is a DataMiner connector dedicated to capturing, consolidating, and analyzing information received via Syslog messages. It functions as a central listening post, gathering critical operational and security data sent from one or more network devices across the infrastructure. By processing these raw messages, the connector extracts severity, enables filtering, triggers alarms, and writes Syslog messages to files.
+The Generic Syslog Receiver is a DataMiner connector dedicated to capturing, consolidating, and analyzing information received via Syslog messages. It functions as a central listening post, gathering critical operational and security data sent from one or more network devices across the infrastructure. The connector processes these raw messages and extracts severity, enables filtering, triggers alarms, and writes Syslog messages to files.
 
 ## Key Features
 
