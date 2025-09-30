@@ -41,14 +41,7 @@ SNMP CONNECTION:
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: Default: *161.*
   - **Device Address**: The slot ID of the card.
-
-### Initialization
-
-No additional configuration of parameters is necessary.
-
-### Redundancy
-
-There is no redundancy defined.
+e is no redundancy defined.
 
 ## How to use
 

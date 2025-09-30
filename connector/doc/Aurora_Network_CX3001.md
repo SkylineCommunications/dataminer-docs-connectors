@@ -77,7 +77,7 @@ This page contains a number of tables:
 - The **CX Status** table shows the status of the communication modules.
 - The **CX Config** table contains information regarding the communication module management configuration entries.
 - The **CX Module Alarms Status** table contains detailed alarm information for the communication module.
-- The **CX Card Alarm** **Status** table contains detailed alarms regarding the environment and voltage usage.
+- The **CX Card Alarm Status** table contains detailed alarms regarding the environment and voltage usage.
 
 In order to commit all the changes made in the CX Config Table to the device, you must press the **Commit** button.
 
@@ -118,3 +118,4 @@ This page contains the **High Power EDFA** table. This table contains the High P
 This page displays the web interface of the device.
 
 Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+

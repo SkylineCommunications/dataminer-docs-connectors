@@ -57,10 +57,6 @@ On the pages related to the different technologies (GSM, UMTS, LTE, 5G), you can
 
 Starting from range 1.0.1.x, it is also possible to run this helper process on a remote machine, for example because the calculations that are being done in the helper process could be very CPU intensive. After the solution is built, an installer package is created (*CellScannerServiceSetup.msi*). The Windows service that is needed on the remote machine can be installed using this installer. The IP address and port of the remote server hosting the helper service can be configured on the **Configuration** page of an element.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This connector can be used to do measurements on several mobile network technologies. Each technology has its own page in the element: **GSM**, **UMTS**, **LTE**, and **5G**.

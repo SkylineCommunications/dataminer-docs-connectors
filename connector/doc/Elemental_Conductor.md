@@ -12,13 +12,13 @@ The **Elemental Conductor** connector is an **HTTP** connector that is used to m
 
 ### Version Info
 
-| **Range**        | **Description**                                                   | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                                                  | No                  | Yes                     |
-| 1.0.1.x          | New connector range based on 1.0.0.13.                            | No                  | Yes                     |
-| 1.1.0.x          | Remake of the connector, with similar layout as previous version. | No                  | Yes                     |
-| 1.1.2.x [DO NOT USE] | Changes to the Channel Parameters page. (This is a possible custom range that is being investigated, but which should not be used.) | No      | Yes     |
-| 1.1.3.x [SLC MAIN] | Design issues created in 1.1.2.x reverted.                           | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | Yes |
+| 1.0.1.x | New connector range based on 1.0.0.13. | No | Yes |
+| 1.1.0.x | Remake of the connector, with similar layout as previous version. | No | Yes |
+| 1.1.2.x [DO NOT USE] | Changes to the Channel Parameters page. (This is a possible custom range that is being investigated, but which should not be used.) | No | Yes |
+| 1.1.3.x [SLC MAIN] | Design issues created in 1.1.2.x reverted. | No | Yes |
 
 ### Product Info
 
@@ -30,7 +30,7 @@ The **Elemental Conductor** connector is an **HTTP** connector that is used to m
 
 ### Exported connectors
 
-| **Exported Connector**    | **Description**                        |
+| Exported Connector       | Description                            |
 |--------------------------|----------------------------------------|
 | Elemental Conductor Node | Represents an Elemental Conductor node |
 
@@ -149,6 +149,6 @@ This page displays the web interface of the device. Note that the client machine
 
 ## Notes
 
-The API Key that is needed to log on to an authenticated system is not the same as the password. To find the API Key, use the web interface, log on with the username and password, and go to *http://\<ipaddress_Conductor_Node\>/users.xml*.
+The API Key that is needed to log on to an authenticated system is not the same as the password. To find the API Key, use the web interface, log on with the username and password, and go to `http://<ipaddress_Conductor_Node>/users.xml`.
 
-If you cannot find the API Key there, check here instead: *http://\<ipaddress_Conductor_Node\>/user_profile*. Make sure that you do not copy "hidden spaces" before or after the key.
+If you cannot find the API Key there, check here instead: `http://<ipaddress_Conductor_Node>/user_profile`. Make sure that you do not copy "hidden spaces" before or after the key.

@@ -10,11 +10,11 @@ The Generic sFlow Manager is used to manage the different Generic sFlow Collecto
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                          | **Based on** | **System Impact**       |
-|----------------------|-------------------------------------------------------------------------------------------|--------------|-------------------------|
-| 1.0.0.x              | Initial version                                                                           | -            | -                       |
-| 1.0.1.x              | Data stored in Elasticsearch database                                                     | 1.0.0.3      | Requires Elasticsearch. |
-| 1.0.2.x [SLC Main]   | New columns added to the Persistent Flows table, in order to display the interface names. | 1.0.1.1      |                         |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x | Data stored in Elasticsearch database. | 1.0.0.3 | Requires Elasticsearch. |
+| 1.0.2.x [SLC Main] | New columns added to the Persistent Flows table, in order to display the interface names. | 1.0.1.1 |  |
 
 ### System Info
 
@@ -40,12 +40,12 @@ From version **1.0.1.1** of this connector onwards, an **HTTP** connection is us
 
 ### Configuration of sFlow Collectors
 
-New **sFlow Collector** elements added to the DMS are **automatically** **registered** by the sFlow Manager element. The known sFlow Collectors can be found in the **Collectors** table on the Collectors page.
+New **sFlow Collector** elements added to the DMS are **automatically registered** by the sFlow Manager element. The known sFlow Collectors can be found in the **Collectors** table on the Collectors page.
 
 Any Agent sending sFlow packets to these collectors also gets registered by the sFlow Manager element. The Agents sending sFlow data to the DMS can be processed on the **Agents** page.
 The sFlow packets sent by an Agent are not processed by the sFlow Collector as long as the sFlow Manager does not **confirm** that this Agent needs to be processed by that specific sFlow collector.
 
-When a new Agent is **detected**, it will be added to the **Detected** **Agents** table, along with the sFlow collector that received data from this Agent. To start processing this Agent, it needs to be **confirmed** and then the linked sFlow collector will start processing the packets.
+When a new Agent is **detected**, it will be added to the **Detected Agents** table, along with the sFlow collector that received data from this Agent. To start processing this Agent, it needs to be **confirmed** and then the linked sFlow collector will start processing the packets.
 Note, however, that if an Agent sends sFlow data to multiple sFlow collectors, only one of these sFlow collectors can be used to process this data.
 
 When an Agent is confirmed, it will be removed from the **Detected Agents** table and will be available in the **Agents** table. In the **Agents** table, several **configuration** options are available for the Agent, e.g. assigning it to a different collector, **pausing** the Agent, or **decommissioning** it.
@@ -63,7 +63,7 @@ These filters can be managed on the Filters page. The following tables are used 
 
 ### Configuration of Protocol Headers
 
-**Protocol** **Headers** are extra headers you can define that could be inside an sFlow packet.
+**Protocol Headers** are extra headers you can define that could be inside an sFlow packet.
 
 The standard headers are automatically parsed by the sFlow Collector, but if you want more specific headers to also be parsed, then these can be configured in a file and that file record will be available here.
 

@@ -46,10 +46,6 @@ Log in on the **Settings** page with the **Username** and **Password** required 
 
 Once access is granted, the connector will start to poll data from the device. The access token is refreshed every 30 minutes.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### General Page

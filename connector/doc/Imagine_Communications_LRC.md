@@ -20,13 +20,13 @@ The connector requires .NET Framework 4.0 or higher, as it needs System.Web.Exte
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                | **Based on** | **System Impact**                                                                                                          |
-|----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                                                                                 | -            | -                                                                                                                          |
-| 1.0.1.x [Obsolete]     |Larger matrix size, 1024x1024.                                                                                                                                                  | -            | -                                                                                                                          |
-| 1.0.3.x              | Larger matrix size, 2048x2048.                                                                                                                                                  | 1.0.1.8      | Saved labels can get shifted when the number of inputs changes. The output labels can appear as input labels in this case. |
-| 2.0.0.x              | Matrix with filtering capabilities.                                                                                                                                             | -            | -                                                                                                                          |
-| 2.0.1.x [SLC Main]   | Adds HTTP connection to support SDNO Controller REST API. Further development on the REST API should be implemented on the **Imagine Communications Magellan SDNO Controller**. | -            | -                                                                                                                          |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x [Obsolete] | Larger matrix size, 1024x1024. | - | - |
+| 1.0.3.x | Larger matrix size, 2048x2048. | 1.0.1.8 | Saved labels can get shifted when the number of inputs changes. The output labels can appear as input labels in this case. |
+| 2.0.0.x | Matrix with filtering capabilities. | - | - |
+| 2.0.1.x [SLC Main] | Adds HTTP connection to support SDNO Controller REST API. Further development on the REST API should be implemented on the **Imagine Communications Magellan SDNO Controller**. | - | - |
 
 ### Product Info
 
@@ -73,6 +73,10 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP of the device.
 - **IP port**: Default 80
 - **Bus address**: *Bypassproxy.*
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
 
 ## Usage
 
@@ -131,10 +135,6 @@ Note that this page is only available in the **2.0.0.x** branch.
 This page displays the **Outputs** table, listing all the inputs available in the device.
 
 Note that this page is only available in the **2.0.0.x** branch.
-
-### Web Interface
-
-This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## DataMiner Connectivity Framework
 

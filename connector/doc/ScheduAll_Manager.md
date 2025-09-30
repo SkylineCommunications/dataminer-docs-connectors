@@ -19,8 +19,6 @@ The **web service** API is an XML interface over HTTP. DataMiner can send reques
 | 2.0.0.x | Initial version                              | No              | Yes                 |
 | 2.0.1.x | Support for SRM added                        | No              | Yes                 |
 | 2.0.3.x | Support for Unicode added                    | No              | Yes                 |
-| 3.0.0.x | POC for Voice of America connector review    | No              | Yes                 |
-| 3.0.1.x | Modify Booking Overview table layout         | No              | Yes                 |
 | 3.0.2.x | Changes made to interfacing Resource Manager | No              | Yes                 |
 
 ## Configuration
@@ -90,6 +88,16 @@ This page contains **communication configuration** parameters related to the web
 - Disabling or enabling polling of the client info or resource info tables from ScheduAll.
 - Time format used by ScheduAll.
 
+> [!NOTE]
+> In range 2.0.3.x, additional parameters are available on this page:
+>
+> - **Resolve DNS Name**: Indicates if the hostname (if specified) should be DNS-resolved. Set to *false* by default.
+> - **Dynamic URL**: Base URL path to append to the polling IP/host for each request.
+> - **Authentication Provider Username**: Used for setting the username if another authentication layer is used.
+> - **Authentication Provider Password**: User for setting the password if another authentication layer is used.
+>
+> Only the *Basic Auth* authentication type is supported. Username and password are joined with a colon, encoded with Base64 encoding, and set in the *Authorization* header.
+
 #### Timespan configuration
 
 With a start and stop parameter, the size of a sliding window in which data (bookings + resources) have to be retrieved can be defined (in minutes). For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.
@@ -118,6 +126,10 @@ It is possible to specify additional filters to append to the WorkOrderQuery fil
 For example, if a row is added with key "EXTID" and field value "1;9;4", this is what will be appended to the WorkOrderQuery filter: *AND (EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1' OR EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9' OR EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4')*
 
 You can enable or disable this feature with the **Work Order Query Filter by Field** parameter.
+
+#### External mappings
+
+When the *EventModify* request is used, ScheduAll Manager needs to tie the resource ID (RESID) of a resource booking in ScheduAll with an external ID (EXTID). With the **DataMiner Combined IDS Field** parameter, you can define which parameter from the **Custom Resource Details Fields** will be used as a mapping to the RESID.
 
 ### Configuration - Interop Service
 
@@ -194,6 +206,9 @@ This subpage contains the configuration of the Automation script specified with 
 
   - *Disabled*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
+  > [!NOTE]
+  > At most five of these scripts can run concurrently. The execution queue can hold up to fifty scripts. These limits cannot be adjusted. These are required to prevent system instability issues.
+
 On this subpage, you can also define the **Input Script Parameters**, which are passed as an argument of the referred Automation script for either new or modified work orders:
 
 - **\[Full WO w/ Resources in JSON\]**: JSON containing new or modified work orders alongside with their associated resources.
@@ -254,6 +269,7 @@ If not all bookings have to be retrieved from ScheduAll but only a subset, this 
 - **Work Order Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the work order table in ScheduAll. Per work order, the values are JSON-encoded and stored in the **Custom WO Fields** column in the **Work Order Overview** table.
 - **Query Custom WO USER Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the WO_USER table in ScheduAll. Per work order, the values are JSON-encoded and stored in the **Custom WO USER Fields** column in the **Work Order Overview** table.
 - **Resource Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the **RES Custom xx** columns in the **Resource Overview** table.
+- **Resource Custom User Fields**: Here you can define which fields have to be retrieved from the RES_USER table in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the **Custom Resource Details Fields** column in the **Resource Overview** table.
 - **Query Custom SEVT EX Fields**: Here you can define which additional fields have to be retrieved on top of the default ones from the SEVT_EX table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom SEVT EX Fields** column in the **Resource Overview** table.
 - **Query Custom Resource Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the Resource Details table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Resource Details Fields** column in the **Resource Overview** table.
 - **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Client Details Fields** column in the **Client Overview** table.

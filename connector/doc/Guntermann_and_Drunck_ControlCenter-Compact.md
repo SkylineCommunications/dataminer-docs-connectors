@@ -16,10 +16,10 @@ The connector polls data from the device using SNMPv2.
 
 ### Version Info
 
-| **Range**     | **Description**         | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version         | No                  | Yes                     |
-| 1.0.1.x              | New connection (serial) | No                  | Yes                     |
+| Range              | Description             | DCF Integration | Cassandra Compliant |
+|--------------------|-------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version         | No              | Yes                 |
+| 1.0.1.x            | New connection (serial) | No              | Yes                 |
 
 ### Product Info
 

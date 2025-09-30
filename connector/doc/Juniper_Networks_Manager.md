@@ -96,7 +96,7 @@ By default, all tables in this connector are polled. However, in order to reduce
 
 Version range 1.0.2.x has some extra features:
 
-- **Polling Config** (on the General page): This page contains a **Polling Configuration Table**, which can be used to configure the polling speed for each table. If you set the **PCT - Polling Time** to *disabled (-1)*, no polling is done for these parameters. With the **Refresh** button, you can poll the parameters manually.
+- **Polling Config** (on the General page): This page contains a **Polling Configuration Table**, which can be used to configure the polling speed for each table. If you set the **PCT - Polling Time** to *disabled (-1)*, no polling is done for these parameters. With the **Refresh** button, you can poll the parameters manually. In range 1.0.9.x, each row has a unique toggle button to switch between enabling and disabling polling. Initially, this column will display *Not Initialized* upon element creation. When polling is set to enabled, the polling time will automatically be set to 5 minutes.
 
 - **Measurement Config** (on the Interfaces page):
 
@@ -136,7 +136,7 @@ There are several page buttons, which lead to pages that display more informatio
 - The **ICMP** **Stats** subpage displays more information about ICMP statistics, such as **ICMP Received Messages**, **ICMP Sent Echo Reply**, etc.
 - The **IP Stats** subpage displays more information about IP statistics, such as **IP Forwarding**, **IP Datagrams Received**, etc.
 
-Prior to range 1.0.2.x of the connector, input fields are available in the lower right corner, which allow you to import or export the current values to a file.
+Prior to range 1.0.2.x of the connector, input fields are available in the lower-right corner, which allow you to import or export the current values to a file.
 
 ### Hardware Page
 

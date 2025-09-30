@@ -12,11 +12,11 @@ This connector can be used for multiple purposes, including the configuration of
 
 ### Version info
 
-| **Range** | **Key Features** | **Based on** | **System Impact**                                                                                                                  |
-|-----------|------------------|--------------|------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Initial version  | -            | -                                                                                                                                  |
-| 1.0.1.x   | New connector based | 1.0.0.4      | New improved Display look, New features, added data from new MIBs, changed the way the snmp data is retrieved using snmpSetAndGet. |
-| 1.0.2.x   | -                | 1.0.1.14     | New MIBs are added + Data linking between several Echoes Tables                                                                    |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | New connector based | 1.0.0.4 | New improved display look, new features, added data from new MIBs, changed the way the SNMP data is retrieved using snmpSetAndGet. |
+| 1.0.2.x | - | 1.0.1.14 | New MIBs are added. Data linking between several echoes tables. |
 
 ### Product Info
 
@@ -72,13 +72,17 @@ This page contains a number of buttons that allow you to perform certain operati
 - **Reset All**: Resets the entire device.
 - **Blink LED**: Asks the device to identify itself by blinking a LED.
 
-The page also contains two page buttons, which open the following subpages:
+The page also contains page buttons, which open the following subpages:
 
 - GPS Status: Displays the status of the **GPS Satellites**.
+
 - Time Config: Allows you to change the time settings, e.g. **Date Time**, **Time Source**, **Time Zone**, etc.
+
   Note: The **Time Zone** can only be configured when the **Time Source** is configured as *System*.
+
 - Network Interface: Interface table that provides an overview of **all used network interfaces**, with information about the IPv4 addresses, MAC addresses, Gateway, etc. It allows you to change the network settings of each network interface separately.
-- Device Option: Table that summarizes thetypes of devices and their current status.
+
+- Device Option: Table that summarizes the types of devices and their current status.
 
 Note: Not every combination of settings is accepted. For example, when **DHCP** is configured, the settings to change the **IP Address** will be disabled. The **Speed** setting *Ethernet 100* cannot be combined with a full **Duplex** configuration, and the interface speed cannot be changed when **Autonegotiation** is enabled.
 
@@ -111,7 +115,7 @@ Several subpages are available:
 - Mute Configuration: Channel mute settings, such as **Mode**, **Post Vit Ber** settings and **Post Ldpc Ber** settings.
 - ETR Configuration: Contains three tables that allow you to configure **ETR1**, **ETR2** and **ETR3** respectively.
 - ETR QOS Configuration: This page is related to the ETR Configuration page. It contains two tables, for **SAE Configuration** and **SDE Configuration** respectively. The parameters on this page are mainly of importance for error processing and to maintain the **Quality Of Service of the ETR** channels.
-- Multiplex Configuration Table: This page consists of four sections. The top-left section allows you to **add and remove services and PIDs** in the table in the lower left corner and in the lower right corner respectively. The most important table, i.e. the Multiplex Configuration Table, is in the top right corner. It allows you to adapt the multiplex **channel Names**, the **Ts Id Presence** settings, and **Delays** to check if services or PIDs are missing.
+- Multiplex Configuration Table: This page consists of four sections. The top-left section allows you to **add and remove services and PIDs** in the table in the lower-left corner and in the lower-right corner respectively. The most important table, i.e. the Multiplex Configuration Table, is in the top right corner. It allows you to adapt the multiplex **channel Names**, the **Ts Id Presence** settings, and **Delays** to check if services or PIDs are missing.
 
 Note: For the subpages that allow you to change the profile name, note that the profile has to exist on the device for this. Changing the profile name will change the profile name on the device, but it will not create a new profile.
 

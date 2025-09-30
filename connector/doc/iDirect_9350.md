@@ -60,10 +60,6 @@ SERIAL CONNECTION:
 
 Go to the Settings subpage and set the Username and Password for the HTTP and SSH connections (parameters 100, 102, 110 and 112).
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

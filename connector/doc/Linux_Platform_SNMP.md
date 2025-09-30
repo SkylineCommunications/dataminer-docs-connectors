@@ -4,6 +4,9 @@ uid: Connector_help_Linux_Platform_SNMP
 
 # Linux Platform SNMP
 
+> [!IMPORTANT]
+> This connector is deprecated. [Linux Platform](https://catalog.dataminer.services/details/33a5c495-60c9-4409-aecc-91f1876dacf1) should be used instead.
+
 With this connector, you can monitor Linux platforms with SNMP.
 
 ## About
@@ -174,7 +177,7 @@ The following page buttons allow access to additional virtual server info:
 
 ## DataMiner Connectivity Framework
 
-From version **1.1.0.29** onwards, this protocol supports the usage of DCF and can only be used on a DMA with **8.0** as the minimum version.
+From version **1.1.0.29** onwards, this connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

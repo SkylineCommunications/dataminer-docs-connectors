@@ -16,12 +16,6 @@ This connector uses a **serial** connection to poll data from the AC8710 device.
 |----------------------|-----------------|---------------------|-------------------------|
 | 1.0.0.x [SLC Main] | Initial version | No                  | Yes                     |
 
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.9.2.r1.588                  |
-
 ## Configuration
 
 ### Connections

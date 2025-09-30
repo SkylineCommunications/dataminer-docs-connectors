@@ -44,10 +44,6 @@ When the element has been created, several things need to be configured on the *
 - **Auto Switch Delay**: The hysteresis time that the automatic routing/unrouting will wait before checking the current state again and performing the expected switch based on this result.
   This hysteresis makes it possible to ignore short outages or short temporary streams.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 There are two Visual Overview pages: **SKY -\> BT** and **BT -\> SKY**. Both pages have the same structure and capabilities; only the data will be different.
@@ -119,3 +115,4 @@ When you select the history log icon on the main Visual Overview page, a pop-up 
 ## Notes
 
 A custom Visio file is needed in order for the application to work. In addition, an Automation script (with script name *British Telecom ATV Failover Manager*) is needed to execute the actual routings on the AppearTV X20 devices.
+

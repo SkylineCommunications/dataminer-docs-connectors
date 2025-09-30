@@ -64,10 +64,6 @@ SERIAL CONNECTION:
 
 Once you have created the element, on the Configuration page, enter the CLI/Serial credentials so the CLI polling can work properly. Once this is done, the element will start regular polling.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -101,7 +97,7 @@ With larger devices/large datasets, the **polling performance** may vary. You ca
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the CISCO Manager CIN Platform protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the CISCO Manager CIN Platform connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

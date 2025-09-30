@@ -14,19 +14,22 @@ Besides polling the API for monitoring devices and interfaces parameters, the Ar
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x              | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Minimum required version increased to 10.4.5.0 - 14239  | 1.0.0.3            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                               | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------------------|-------------------------|
 | 1.0.0.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | -                       |
 
 ## Configuration
 
@@ -54,7 +57,7 @@ The following pages are available:
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the Arista MCS connector supports the usage of DCF and can only be used on a DMA with DataMiner version **8.5.4** or higher.
+The **1.0.0.x** range of the Arista MCS connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
 

@@ -47,7 +47,7 @@ SERIAL CONNECTION:
 
 - Interface connection
 
-- **IP address/host**: The polling IP or URL of the destination
+  - **IP address/host**: The polling IP or URL of the destination
   - **Bus address**: The bus address of the device is the slot number/position of the card in the frame.
 
 #### Serial IP Connection - Broadcast Connection
@@ -94,7 +94,7 @@ From version **1.0.1.x** onwards, the **Logo Scheduler A** and **Logo Scheduler 
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** **and 1.0.1.x** range of the Axon ACP HLI100 protocol support the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x and 1.0.1.x** range of the Axon ACP HLI100 connector support the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

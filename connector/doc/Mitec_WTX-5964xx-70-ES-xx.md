@@ -58,7 +58,7 @@ This page displays the three alarms that can be rendered by a device using this 
 
 ## DataMiner Connectivity Framework
 
-The Mitec WTX-5964xx-70-ES-xx protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The Mitec WTX-5964xx-70-ES-xx connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

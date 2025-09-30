@@ -87,7 +87,7 @@ For Intel communication only, if the connector is not able to connect yet, conti
 
    This will typically be at the end of the file, so we advise you to start looking there.
 
-1. Contact Skyline Communications (your TAM or <techsupport@skyline.be>).
+1. Contact Skyline Communications (your TAM or <support@dataminer.services>).
 
 ## Usage
 

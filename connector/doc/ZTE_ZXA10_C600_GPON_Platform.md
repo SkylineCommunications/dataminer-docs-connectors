@@ -4,98 +4,52 @@ uid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
 
 # ZTE ZXA10 C600 GPON Platform
 
-The ZTE ZXA10 C600 GPON Platform connector uses an SNMP connection from ZTE ZXA10 C600 devices. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
-
 ## About
 
-### Version Info
+The ZTE ZXA10 C600 GPON Platform connector integrates with the ZXA10 C600 optical line terminal (OLT), a large-capacity optical access platform used in GPON networks. The connector uses SNMP to collect operational and configuration data, enabling centralized monitoring and integration with the Skyline EPM GPON solution.
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution. | - | - |
-| 1.0.1.x | - Compatibility with new version of the Skyline EPM Solution. | - | - |
-| 1.0.2.x [SLC Main] | - Split Table was removed and replaced with Split Route, Split Distribution, and Split FAT table. <br>- OLT is no longer in charge of requesting KPI data from the external source (e.g. KAFKA streams). | - | - |
+This connector supports visibility on the OLT's performance, connected optical network terminals (ONTs), and topology information for GPON deployments. It also facilitates interaction with external data sources, such as KAFKA streams, for retrieving ONT KPI data.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | V1.1.2                 |
-| 1.0.1.x   | V1.1.2                 |
-| 1.0.2.x   | V1.1.2                 |
+- **OLT monitoring**: Monitors operational state, configuration, and performance metrics of the ZXA10 C600.
+- **ONT management**: Provides access to ONT status and key performance indicators within the GPON network.
+- **Topology integration**: Exports and imports topology configuration files for integration with the Skyline EPM GPON solution.
+- **External data source support**: Retrieves KPI data from sources such as KAFKA (in applicable versions).
+- **Split information management**: Displays GPON split topology information, including route, distribution, and FAT segments (in latest connector versions).
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                      | Exported Components     |
-|-----------|---------------------|-------------------------|--------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
-| 1.0.1.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
-| 1.0.2.x   | No                  | Yes                     | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                       |
+### Use Case 1
 
-## Configuration
+**Challenge**: Managing large-scale GPON deployments with many ONTs while ensuring network reliability.
 
-### Connections
+**Solution**: Deploy the ZXA10 C600 connector to collect OLT and ONT metrics, integrating with the Skyline EPM GPON solution for aggregation and visualization.
 
-#### SNMP Main Connection
+**Benefit**: Improved network oversight, enabling faster fault detection and optimized maintenance.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Use Case 2
 
-SNMP CONNECTION:
+**Challenge**: Need to keep GPON topology information synchronized across multiple systems.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Solution**: Use the connector's export/import capabilities to maintain up-to-date topology files between the OLT and EPM solution.
 
-SNMP Settings:
+**Benefit**: Ensures consistent and accurate topology data for planning and operations.
 
-- **Get community string**: The community string is used when reading values from the device (default: *public*).
-- **Set community string**: The community string is used when setting values on the device (default: *private*).
+### Use Case 3
 
-### Initialization
+**Challenge**: Efficiently processing ONT performance data from multiple sources.
 
-The connector uses custom properties to configure the Network, Market, and Hub of the OLT. To link the views to the EPM data cards and full EPM functionality, make sure these properties are configured.
+**Solution**: Integrate the connector with external data feeds (e.g. KAFKA) to centralize ONT KPI collection and analysis.
 
-The EPM solution works with a file system for internal element communication in relation to the topologies. Because of this, when an element is created, the following parameters must be defined on the **Configuration** page:
+**Benefit**: Provides a unified view of ONT health and performance across the GPON network.
 
-- **Entity Export/Import Settings**: These sections allow the exporting of the configuration files and importing of the provisioning files.
+## Technical Reference
 
-  - **Export State** and **Import State**: These parameters allow you to enable/disable the exporting and importing feature.
-  - **Export Directory,** **Entity Import Directory, and ONT Import Directory**: Specify the paths where the files will be exported and imported.
-  - **Entity Export Directory Type,** **Entity Import Directory Type, and ONT Import Directory Type**: Specify whether the export/import paths are **local or remote**. Note that for the remote file handling to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directories. The path must be shared/accessible, or this feature will not work.
+### Prerequisites
 
-- **System Credentials**: This section is to be used if the element is configured to a remote file location.
+- **Integration with Skyline EPM GPON Solution** for topology aggregation and visualization (optional but recommended).
+- Access credentials for remote directories if using remote export/import functionality.
 
-  - **System Username**: The username of the user that has access to the directory. If no domain is specified, the domain from the element's DMA location will be used.
-  - **System Password**: The password of the user to access the remote directory.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to Use - Range 1.0.0.x-1.0.1.x
-
-The OLT connectors are used as links in the EPM GPON solution chain. These represent the lower layer in the GPON topology, where the information of ONTs is retrieved to then be processed/aggregated by the upper layers. It is important to take into account that some of the ONT KPIs come from an external source (e.g. KAFKA). You therefore need to make sure communication with that source is functioning properly. In addition, the number of updates received determines the efficiency, so the more updates, the longer processing will take.
-
-Another important thing is to set the **Reset ONT Interval** parameter (on the Configuration page) according to the retrieval speed of the information from the ONTs.
-
-Once the initial setup is done, the connector can function without further configuration. However, you can perform the following actions on the **Configuration** page:
-
-- **Entity Export Settings/Apply**: When you click this button, the element's topology files will be exported (configuration files). These files will be processed by the Skyline EPM Solution.
-- **Entity Import Settings/Apply**: When you click this button, the element will import the topology files created by the Skyline EPM Solution (provisioning files). These new files are based on the files originally exported by the element.
-- **SNMP Fast Interval**: Determines how often the information related to the status of the OLT will be polled. By default, the parameter is set to 15 minutes.
-- **SNMP Slow Interval**: Determines how often the information related to the configuration of the OLT will be polled. By default, the parameter is set to 4 hours.
-- **Virtual Interval**: Determines how often the topology will be synced with EPM. By default, the parameter is set to 2 hours.
-- **ONT Interval**: Determines how often state data of the ONTs will be requested. This data can for example come from a KAFKA stream. Default value: 15 minutes.
-  The performance of this feature can vary depending on the number of updates received in the system.
-
-## How to Use - Range 1.0.2.x
-
-In this range, the OLT is no longer responsible for information retrieval from the external source (e.g. KAFKA). The OLT Interval parameter has therefore been removed.
-
-Another important difference with the previous range is related to the passive logic: Split information is now divided over three tables to allow a better understanding and segmentation of the data in the topology. The Split page now contains the **Split Route Overview**, **Split Distribution Overview**, and **Split FAT Overview** tables.
-
-## Notes
-
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
-In range **1.0.1.x** of the connector, the Correlation rules are no longer required.
-
-With larger devices or large data sets, the polling performance may vary.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_ZTE_ZXA10_C600_GPON_Platform_Technical).

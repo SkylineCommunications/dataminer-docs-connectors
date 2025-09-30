@@ -12,10 +12,10 @@ The model **ALT-C300** is a redundant ALTO amplifier chassis with auto switch be
 
 Ranges of the connector
 
-| **Range**     | **Description**                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                  | Yes                 | Yes                     |
-| 1.0.1.x [SLC Main]   | Based on 1.0.0.3. Fixed validator error regarding table index using discreet as measurement type. | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | Yes | Yes |
+| 1.0.1.x [SLC Main] | Based on 1.0.0.3. Fixed validator error regarding table index using discreet as measurement type. | Yes | Yes |
 
 ### Product Info
 
@@ -46,7 +46,7 @@ SNMP Settings:
 
 ### General
 
-This page displays general parameters such as **System Description**, **Contact** and **Name**, as well as a **Summary Alarm.**
+This page displays general parameters such as **System Description**, **Contact** and **Name**, as well as a **Summary Alarm**.
 
 The page also contains the following three buttons:
 
@@ -84,7 +84,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The ETL Systems ALT-C300 supports the usage of DCF from version 1.0.0.2 onwards and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The ETL Systems ALT-C300 supports the usage of DCF from version 1.0.0.2 onwards.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

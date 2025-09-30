@@ -16,12 +16,6 @@ The device supports remote environmental monitoring such as temperature, humidit
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -45,14 +39,6 @@ SNMP Settings:
 
 - **Get community string**: The community string required to read from the device. The default value is *public*.
 - **Set community string**: The community string required to set to the device. The default value is *private*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

@@ -14,14 +14,14 @@ The Huawei Manager retrieves data via **SNMP** and **SSH** from version 1.0.3.x 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                              | **Based on** | **System Impact**                                                                                   |
-|----------------------|-----------------------------------------------------------------------------------------------|--------------|-----------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                               | -            | -                                                                                                   |
-| 1.0.1.x              | Connector review. Removal of JScript QActions and tables as string parameter.                    | 1.0.0.14     | Unknown                                                                                             |
-| 1.0.2.x              | DCF integration.                                                                              | 1.0.1.1      | Unknown                                                                                             |
-| 1.0.3.x [Obsolete]     |Added SSH connection and PTP data.                                                            | 1.0.2.16     | Unknown                                                                                             |
-| 1.0.4.x [Obsolete]     |Changed PTP Interfaces table layout. Moved Port State column to the left, next to the "Name". | 1.0.3.5      | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
-| 1.0.5.x [SLC Main]   | Optical module table was changed. Columns removed and Column order changed.                   | 1.0.4.14     | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | Connector review. Removal of JScript QActions and tables as string parameter. | 1.0.0.14 | Unknown |
+| 1.0.2.x | DCF integration. | 1.0.1.1 | Unknown |
+| 1.0.3.x [Obsolete] | Added SSH connection and PTP data. | 1.0.2.16 | Unknown |
+| 1.0.4.x [Obsolete] | Changed PTP Interfaces table layout. Moved Port State column to the left, next to the "Name". | 1.0.3.5 | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
+| 1.0.5.x [SLC Main] | Optical module table was changed. Columns removed and Column order changed. | 1.0.4.14 | Trend data for this table could be lost. Automation scripts may need to be reviewed for this table. |
 
 ### Product Info
 
@@ -49,19 +49,22 @@ The Huawei Manager retrieves data via **SNMP** and **SSH** from version 1.0.3.x 
 
 ### Connections
 
-#### SNMP Main connection
+#### SNMP Main Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-SNMP CONNECTION:
-
 - **IP address/host**: The polling IP of the device.
-
-SNMP Settings:
-
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
+
+### SSH Configuration
+
+From version 1.0.3.x onwards, SSH is used to retrieve additional parameters. On the **SSH Files Server** page, the following parameters should be specified for this:
+
+- **IP Address of Files Server**
+- **Username** and **Password**: Required for authentication.
+- **Filename to Copy**: The file to copy from the files server.
 
 ## How to Use
 
@@ -74,6 +77,7 @@ The page contains the following page buttons:
 - **SSH Files Server:** Allows you to establish a connection with an **SSH server** through **SFTP** protocol, in order to copy a file to this server. Every field on this page must be filled in correctly in order to successfully establish the connection. If the Username and Password are not configured, no information will be polled through this connection.
 
 - **TCP/UDP** **Statistics**: Displays the **TCP Segments Total Sent**, **TCP Segments Total Received**, **UDP Datagrams Sent**, etc.
+
   Contains two page buttons that display the **UDP Listener Table** and **TCP Connection Table**, respectively.
 
 - **ICMP** **Statistics**: Displays **ICMP Received/Sent Messages**, **ICMP Echo Requests/Replies**, etc.
@@ -86,7 +90,7 @@ The page contains the following page buttons:
 
 - **Polling Configurations**: Contains toggle buttons that enable/disable polling for the following data in the connector:
 
-- Address Translation Table
+  - Address Translation Table
   - ARP Table
   - BGP Table
   - ICMP Statistics
@@ -97,10 +101,10 @@ The page contains the following page buttons:
   - TCP/UDP Statistics
   - Huawei VLAN Table
 
-**NOTE**: It is possible to configure the bitrate polling time on this page. For device firmware version 5.1, 10 seconds is used as the default value.
-If the connector is used with **newer firmware versions (e.g. 8.190), a 1-minute timer should be used to avoid spikes in bitrates**, as the counters (IfTable and IfXTable) are only updated every minute.
-
-In range 1.0.2.x, the parameter **Counter Type Mode** has been added, which allows you to select to *Always use 64 bits*. When you do so, 64 bits will be used for bitrate calculations. You should consider using this option with firmware version 8.1.90 or higher.
+> [!NOTE]
+> It is possible to **configure the bitrate polling time** on this page. For device firmware version 5.1, 10 seconds is used as the default value. If the connector is used with **newer firmware versions (e.g. 8.190), a 1-minute timer should be used to avoid spikes in bitrates**, as the counters (IfTable and IfXTable) are only updated every minute.
+>
+> In range 1.0.2.x, the parameter **Counter Type Mode** has been added, which allows you to select to *Always use 64 bits*. When you do so, 64 bits will be used for bitrate calculations. You should consider using this option with firmware version 8.1.90 or higher.
 
 ### Detailed Interface Info, Detailed Interface Info - Rx and Detailed Interface Info - Tx
 
@@ -131,3 +135,40 @@ This page contains the **IP Routing Table**, as well as the following page butto
 - **Address Translations Table**
 - **ARP Table**
 - **BGP Peer Table**
+
+### Trunk Info
+
+This page displays trunking information, including aggregated ports and link states.
+
+### LDP
+
+This page lists Label Distribution Protocol (LDP) sessions and their status in MPLS networks.
+
+### LLDP
+
+This page provides details of Link Layer Discovery Protocol (LLDP) neighbors and their connectivity status.
+
+### System Power Table
+
+This page displays power-related details of the system:
+
+- **Power Used Information**: Provides insights into power consumption by different components.
+- **Power Status**: Shows the real-time power supply status.
+
+### OSPF
+
+This page displays Open Shortest Path First (OSPF) routing information, including neighbor relationships and network topology.
+
+### PTP
+
+This page provides information about Precision Time Protocol (PTP) settings and the synchronization status.
+
+### NAT
+
+Version 1.0.5.11 of this connector introduces NAT-related tables to enhance monitoring and management of NAT configurations. These include:
+
+- **Pool Group Table**: Allows the querying and managing of the configuration of CGN IP pool groups, including their allocation and usage statistics.
+- **Statistics Info Table**: Provides detailed NAT statistics, including packet transmission, session data, and error tracking.
+- **Session Table**: Facilitates monitoring session configurations based on license constraints, ensuring optimal resource utilization.
+
+These tables are polled using SNMP and enable real-time visibility on NAT operations, helping administrators track performance and troubleshoot issues effectively.

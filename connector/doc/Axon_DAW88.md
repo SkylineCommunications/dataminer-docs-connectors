@@ -35,9 +35,9 @@ This page displays general information regarding the device. Some of the paramet
 
 There are four page buttons on this page that each lead to a pop-up page:
 
-- **Input** **Channels**: Displays information regarding the inputs.
+- **Input Channels**: Displays information regarding the inputs.
 - **Status**: Displays information regarding the status of the device.
-- **Quad** **Speed**: Displays information regarding the quad speed.
+- **Quad Speed**: Displays information regarding the quad speed.
 - **WK**: Displays information regarding the WK, and contains some parameters that can be set by the user.
 
 ### Channel 1/2 and 3/4 page
@@ -50,11 +50,11 @@ On this page, you can modify the settings for **channels 5 to 8**.
 
 ### Channel 9/10 and 11/12 page
 
-On this page, you can modify the settings for **channels** **9** **to** **12**.
+On this page, you can modify the settings for **channels 9 to 12**.
 
 ### Channel 13/14 and 15/16 page
 
-On this page, you can modify the settings for **channels** **13** **to** **16**.
+On this page, you can modify the settings for **channels 13 to 16**.
 
 ### Slots page
 

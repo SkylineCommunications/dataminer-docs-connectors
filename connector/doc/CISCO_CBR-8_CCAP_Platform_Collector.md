@@ -10,22 +10,22 @@ The CBR-8 is designed to support distributed-access architectures, remote PHY, D
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                      | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.1.x [SLC Main]   | Modified mapping logic for US/DS interface controllers. Removed Service Group table and dependencies. | 1.0.0.x      | -                 |
-| 1.0.0.x [Obsolete]     |Initial version.                                                                                      | -            | -                 |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.1.x [SLC Main] | Modified mapping logic for US/DS interface controllers. Removed Service Group table and dependencies. | 1.0.0.x | - |
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 16.12.1z               |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.1.x | 16.12.1z |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.1.x | Yes | Yes | - | - |
 
 ## Configuration
 
@@ -38,12 +38,15 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
+
 - **IP port**: The IP port of the destination. **Default port: 161.**
+
 - **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
+
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
 #### Serial Connection - CLI Connection
@@ -55,16 +58,14 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP or URL of the destination.
+
   - **IP port**: The IP port of the destination. **Default port: 22.**
+
   - **Bus address**: The bus address of the device.
 
 ### Initialization
 
 Once you have created the element, on the **Configuration** page, enter the **CLI/Serial credentials** so the CLI polling can work properly. Once this is done, the element will start regular polling.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
@@ -77,14 +78,19 @@ When you first start using this element, navigate to the Configuration page and 
 - **Interface Settings**: Allows you to enable or disable polling from an interface (SNMP, CLI) via a toggle button. You can also specify how frequently the interface should be polled. This section also contains three buttons:
 
 - **Update All:** Polls from both interfaces.
+
   - **Update SNMP**: Polls from SNMP only.
+
   - **Update CLI**: Polls from CLI only.
 
 - **Entity Export/Import Settings**: These sections allow the exporting of configuration files and importing of provisioning files. You can:
 
 - **Enable or disable** the exporting and importing feature with toggle buttons (Entity Export and Entity Import, respectively).
+
   - Specify the **file paths** where files can be exported and imported (with the Entity Export Directory and Entity Import Directory, respectively).
+
   - Specify whether to export/import to/from a **local or remote** location via a toggle button (Entity Export Directory Type and Entity Import Directory Type, respectively). Note that for the remote file handling to work, you must enter the credentials for the system in the System Credentials section and enter the path to the remote directory in the Entity Export or Import Directory parameter. The path must be shared/accessible, or this feature will not work.
+
   - Start the export or import by clicking the **Apply** button in the relevant section.
 
 ## Notes
@@ -95,7 +101,7 @@ With larger devices/large datasets, the polling performance may vary. You can co
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the CISCO CBR-8 CCAP Platform Collector protocol supports the usage of DCF.
+The **1.0.1.x** connector range of the CISCO CBR-8 CCAP Platform Collector connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

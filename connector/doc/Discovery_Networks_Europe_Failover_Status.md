@@ -36,10 +36,6 @@ This connector uses a virtual connection and does not require any input during e
 
 Create a user in DataMiner that has access to the Agents module of System Center. Fill in the credentials of that user on the Failover Status page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 If the correct credentials are filled in on the Failover Status page as detailed above, the element will display the Failover and license information. You can manually refresh the displayed information.

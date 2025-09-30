@@ -36,7 +36,7 @@ This connector uses **SNMP** to allow the user to monitor the **Ateme Kyrion DR5
 | 3.0.4.x   | 1.4.255.210            |
 | 3.1.0.x   | 2.5.0.0                |
 
-### Product Info
+### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
@@ -71,13 +71,14 @@ SNMP Settings:
 
 ### General Page
 
-This page displays general information about the device, such as the **Software Version**, **System info**, **Temperature**, **Licenses**, **Fan Status** and **Power Supply Status**.
+This page displays general information about the device, such as the **Software Version**, **System info**, **Temperature**, **Licenses**, **Fan Status**, and **Power Supply Status**.
 
 ### Preset Page
 
 This page displays the **Preset Table** and **Channel Action** parameters.
 
 From version 3.0.2.2 onwards, there is an **Export/Import** page button. This allows you to export the active configuration of the device in XML format or to import it from a specified location.
+
 If the export file path field does not end with the *.xml* extension, the connector assumes that only the directory is specified, and the exported file is named as *configuration_active\_\<date\>\_\<time\>*. Otherwise, the exported file path is exactly the one specified in the field.
 
 ### RF Input Page
@@ -106,11 +107,12 @@ This page displays the **SRT Input** values and **SRT Status**. It is also possi
 
 This page displays the decoding status, including the **Mode**, **Primary Service**, **Secondary Service**, etc.
 
-It also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered** **externally** (e.g. via Automation scripts) or from within the connector.
+It also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered externally** (e.g. via Automation scripts) or from within the connector.
 
 There is a **Program Stream Table** page button that displays all the input program streams configured in the device. This button opens the page **Stream Status**. The table that displays the streams is a static table, and can take a long time to be polled.
 
-From **version** **3.0.0.22** **onwards**, you can adjust the amount of stream data polled from the device using the sliders **Programs in Table** and **Streams in Table**. This adjustment polls data from the device using the **subtable** option. If too much data is being polled from the device, this can cause RTEs, or a very long delay updating the remaining parameters that need to be polled from the device.
+From **version 3.0.0.22 onwards**, you can adjust the amount of stream data polled from the device using the sliders **Programs in Table** and **Streams in Table**. This adjustment polls data from the device using the **subtable** option. If too much data is being polled from the device, this can cause RTEs, or a very long delay updating the remaining parameters that need to be polled from the device.
+
 Note: If you want to view all programs and streams, do not use the "all" option. Instead, manually enter the total number of programs/streams.
 
 ### Audio/Video Page
@@ -119,7 +121,7 @@ This page displays the audio and video status, including the **Codec**, **Profil
 
 ### Data Page
 
-This page contains a number of page buttons. Prior to version 3.0.0.18, the page buttons **Ancillary**, **Smpte 2031** and **VBI** are displayed.
+This page contains a number of page buttons. Prior to version 3.0.0.18, the page buttons **Ancillary**, **Smpte 2031**, and **VBI** are displayed.
 
 From version 3.0.0.18 of the connector onwards, there is an additional **Overlay** page button, which opens a subpage where **DVB Subtitle**, **Teletext** and **CC Service** parameters can be enabled, depending on the mode defined in the **Mode** parameter.
 
@@ -133,7 +135,7 @@ This page displays values related to **Source**, **Aux** and **Decoder**.
 
 ### Output Page
 
-This page displays values related to the output configuration, such as **SDI**, **Genlock** and **Emulation**.
+This page displays values related to the output configuration, such as **SDI**, **Genlock**, and **Emulation**.
 
 ### System Traps Page
 
@@ -149,7 +151,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The **3.0.0.x** connector range of the protocol supports the usage of DCF, starting at version **3.0.0.14**, and can only be used on a DMA with **8.5.4** as the minimum version.
+The **3.0.0.x** connector range of the connector supports the usage of DCF, starting at version **3.0.0.14**.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -224,9 +226,9 @@ Physical fixed interfaces:
 
 ## Notes
 
-The **3.0.0.1** version of this Ateme Kyrion DR5000 connector has been fully reviewed, causing some changes to the number of pages and the names of the pages. Compared to the previous versions, the **General**, **Preset** and **Output** pages remain the same. For the other pages, the following changes were applied:
+The **3.0.0.1** version of this Ateme Kyrion DR5000 connector has been fully reviewed, causing some changes to the number of pages and the names of the pages. Compared to the previous versions, the **General**, **Preset**, and **Output** pages remain the same. For the other pages, the following changes were applied:
 
-- For consistency with the web interface, instead of one **Input** page, there are now three input pages, **RF** **Input**, **IP** **Input** and **ASI** **Input**.
+- For consistency with the web interface, instead of one **Input** page, there are now three input pages, **RF Input**, **IP Input**, and **ASI Input**.
 - The **Stream** page is now a subpage that can be accessed via a button on the **Decoding** page.
 - An **Audio/Video** and **Data** page were added to resemble the device GUI on the web interface.
-- The **Encryption** page is now the **Conditional** **Access** page.
+- The **Encryption** page is now the **Conditional Access** page.

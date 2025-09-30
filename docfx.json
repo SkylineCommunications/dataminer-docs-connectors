@@ -18,6 +18,7 @@
       {
         "files": [
           "connector/images/**",
+          "fonts/**",
           "staticwebapp.config.json",
           "404.html"
         ]
@@ -26,10 +27,12 @@
     "dest": "_site",
     "globalMetadata": {
       "_appTitle": "DataMiner Docs",
-      "_appFooter": "© Skyline Communications 2024",
+      "_appFooter": "© Skyline Communications 2025",
       "_enableSearch": false,
       "_enableNewTab": true,
-	  "_googleAnalyticsTagId": "GTM-WD3NQGN"
+      "_disableNavbar": true,
+      "_disableNextArticle": true,
+      "_googleAnalyticsTagId": "GTM-WD3NQGN"
     },
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],

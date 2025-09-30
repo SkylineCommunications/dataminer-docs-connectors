@@ -40,7 +40,7 @@ SNMP Connection:
 
 SNMP Settings:
 
-- **Port** **number:** The port of the connected device, by default 161.
+- **Port number:** The port of the connected device, by default 161.
 - **Get community string**: The community string in order to read from the device.
 - **Set community string**: The community string in order to set to the device.
 
