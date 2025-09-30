@@ -26,10 +26,6 @@ SNMP Settings:
 - **Get community string**: public
 - **Set community string**: private
 
-### Initialization
-
-[Indicate if additional configuration of parameters is necessary in a newly created element.]
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

@@ -2,43 +2,70 @@
 uid: Connector_help_Avid_NEXIS
 ---
 
-# Avid NEXIS – Intelligent Storage for Broadcast Workflows
+# Avid NEXIS – Intelligent Storage & Monitoring for Broadcast Workflows
 
 ## About
 
 **Avid NEXIS®** is the industry’s most trusted software-defined storage platform, engineered to meet the rigorous demands of broadcast production. It delivers real-time media access, centralized management, and seamless scalability—empowering broadcasters to accelerate content creation and streamline operations.
 
+The **DataMiner Connector** enhances this ecosystem by providing deep operational visibility, performance analytics, and usage insights—ensuring your media infrastructure runs at peak efficiency.
+
 ## Key Features
 
-- **Real-Time Collaboration**: Enable multiple editors, journalists, and producers to access and work on the same media simultaneously—without performance bottlenecks.
+### General Overview
 
-- **Scalable Architecture**: Start small and scale up to petabytes of storage with modular engines and flexible licensing, adapting to evolving production needs.
+- Product name and version for quick identification and inventory tracking.
 
-- **High Availability & Redundancy**: Built-in failover, RAID protection, and intelligent media mirroring ensure 24/7 uptime and data integrity.
+### Status Monitoring
 
-- **Hybrid Cloud Integration**: Extend your workflow with Avid NEXIS | EDGE, enabling remote collaboration and cloud-based editing without compromising performance.
+- System Director state (Online/Offline).
+- Event log checks for proactive issue detection.
+- Workspace redistribution count for load balancing insights.
 
-- **Seamless Integration**: Optimized for Avid Media Composer, Pro Tools, and third-party tools like Adobe Premiere Pro and DaVinci Resolve.
+### Performance Metrics
 
-- **Centralized Management**: Avid NEXIS Management Console provides intuitive control over users, workspaces, bandwidth, and storage tiers.
+- **Read/Write Throughput**: Megabytes read and written per second.
+- **System Activity**: Messages per second, open files, active client count.
+- **Capacity Planning**: Maximum client count for scalability analysis.
+
+### Usage Analytics
+
+- **Disk Utilization**: Percentage used vs. available.
+- **Storage Breakdown**: Total system size, allocated size, used size.
+- **Content Metrics**: File, folder, and workspace counts for media asset tracking.
 
 ## Broadcaster Benefits
 
-### Accelerated Newsroom Workflows
+- **Operational Transparency**: Gain full visibility into system health and performance.
+- **Proactive Maintenance**: Detect anomalies before they impact production.
+- **Capacity Optimization**: Make informed decisions on storage allocation and scaling.
+- **Workflow Assurance**: Ensure uninterrupted access for editorial and production teams.
 
-Ingest, edit, and publish breaking news faster with shared access to high-resolution and proxy media.
+## Use Cases – Unlocking Operational Value
 
-### Multi-Site Collaboration
+### 1. Real-Time System Health Monitoring
 
-Connect regional and global teams with secure, synchronized access to shared projects and assets.
+Instantly detect when the System Director goes offline, monitor workspace redistribution activity, and track event logs to prevent disruptions in live or post-production workflows.
 
-### Regulatory Compliance & Security
+### 2. Performance Optimization
 
-Role-based access control, audit trails, and encryption help meet industry compliance standards.
+Analyze read/write throughput, message rates, and client activity to fine-tune system performance and ensure consistent delivery of high-resolution media assets.
 
-### Reduced Operational Overhead
+### 3. Capacity Planning & Forecasting
 
-Simplify IT management with centralized storage and automated media lifecycle policies.
+Use disk percentage, total system size, and allocated vs. used space to anticipate storage needs and plan for future expansion.
+
+### 4. Asset Management & Auditing
+
+Track file, folder, and workspace counts to support compliance audits and efficient media lifecycle management.
+
+### 5. SLA & Uptime Reporting
+
+Generate reports to validate service-level agreements and demonstrate infrastructure reliability to stakeholders.
+
+### 6. Multi-Site Coordination
+
+Enable centralized monitoring for distributed teams, ensuring synchronized access and performance across locations.
 
 ## Technical Reference
 
