@@ -4354,6 +4354,9 @@
     topicUid: Connector_help_Generic_Sun_Outage
   - name: Generic Syslog Receiver
     topicUid: Connector_help_Generic_Syslog_Receiver
+    items:
+    - name: Generic Syslog Receiver Technical
+      topicUid: Connector_help_Generic_Syslog_Receiver_Technical
   - name: Generic Table
     topicUid: Connector_help_Generic_Table
   - name: Generic Table Offload

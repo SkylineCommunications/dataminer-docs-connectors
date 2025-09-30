@@ -21,15 +21,6 @@ The communication method used is **smart-serial**.
 | 1.0.2.x             | Updated sort on messages table. Added Partial attribute to messages table to display 100 rows per page. | - | - |
 | 1.0.3.x [SLC Main]  | Maximum Messages Range updated to 10-10000. Partial attribute added or updated in Received Raw Messages and Message Table. | - | - |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.0.2.x   | -                      |
-| 1.0.3.x   | -                      |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
