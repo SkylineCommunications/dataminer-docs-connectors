@@ -96,6 +96,14 @@ You also have to go to the **HTTP Polling** subpage of the **General** page and 
 
 You can enable LITE mode (only displaying part of the interface table) on the **General** page via the **SNMP Polling** page button.
 
+### Polling Settings
+
+Disabling **Interfaces Status** polling will stop sending "show interfaces status" SSH commands. As a result the **Detailed Interface Info** table **IF Status** column will show N/A for every row. Enabling Interfaces Status polling will instruct the connector to send a "show interfaces status" SSH command every time the Interface Table is polled. This means that disabling **Interface Table** polling automatically disables Interfaces Status polling. If no "show interfaces status" SSH command is send even though Interfaces Status polling is enabled, please check if Interface Table polling is enabled. 
+
+The Interfaces Status polling **Interval** follows the Interface Table polling interval, no mather what is defined as Interfaces Status polling Interval. The Interface Table polling interval defines how frequent the "show interfaces status" SSH command is send.
+
+Interfaces Status polling will only succeed if the parameters **User Name** and **Password**, located on the **SSH Polling** page, are filled in correctly. Please check the parameters **Connection Status** and **Status Message** on the SSH Polling page if Interfaces Status polling failed.
+
 ### Device Configuration
 
 Because of the way SSH connections are created, we recommend limiting the SSH user for DataMiner to three concurrent connections. When the minimum supported version becomes 10.2.9, this configuration will no longer be needed.
