@@ -20,22 +20,22 @@ The main element displays various information on several pages:
 
 ### Version Info
 
-| **Range**         | **Description**     | **DCF Integration** | **Cassandra Compliant** |
-|--------------------------|---------------------|---------------------|-------------------------|
-| 1.0.0.x **\[Obsolete\]** | Initial version     | No                  | No                      |
-| 2.0.0.x                  | Update based on MIB | No                  | No                      |
-| 2.0.1.x                  | DVE Names changed   | No                  | Yes                     |
+| Range              | Description         | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete] | Initial version     | No              | No                  |
+| 2.0.0.x            | Update based on MIB | No              | No                  |
+| 2.0.1.x            | DVE Names changed   | No              | Yes                 |
 
 ### Exported connectors
 
-| **Exported Connector**                                                                                                                    | **Description**                                                                    |
-|------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
-| [Aurora Network Node NC 4000 Single DT REV A](xref:Connector_help_Aurora_Networks_Node_NC4000_Single_DT_REV_A)             | DVE for Aurora Network Node NC 4000 Single DT Rev A (Prior to version 2.0.1.x)     |
-| [Aurora Network Node NC 4000 Single DT REV B](xref:Connector_help_Aurora_Networks_Node_NC_4000_Single_DT_REV_B)          | DVE for Aurora Network Node NC 4000 Single DT Rev B (Prior to version 2.0.1.x)     |
-| [Aurora Network Node FA3527](xref:Connector_help_Aurora_Network_Node_FA3527)                                                       | DVE for Aurora Network Node FA3527 (Prior to version 2.0.1.x)                      |
-| [Aurora Network AT3554](xref:Connector_help_Aurora_Network_AT3554)                                                                   | DVE for Aurora Network AT3554A Analog Transmitter (Prior to version 2.0.1.x)       |
-| [Aurora Network CX3001 - AT3554](xref:Connector_help_Aurora_Network_CX3001_-_AT3554)                                             | DVE for Aurora Network CX3001 - AT3554 (Starting version 2.0.1.x)                  |
-| [Aurora Network CX3001 - FA3527](xref:Connector_help_Aurora_Network_CX3001_-_FA3527)                                             | DVE for Aurora Network CX3001 - FA3527 (Starting version 2.0.1.x)                  |
+| Exported Connector                                                                                                     | Description                                                                        |
+|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------|
+| [Aurora Network Node NC 4000 Single DT REV A](xref:Connector_help_Aurora_Networks_Node_NC4000_Single_DT_REV_A)         | DVE for Aurora Network Node NC 4000 Single DT Rev A (Prior to version 2.0.1.x)     |
+| [Aurora Network Node NC 4000 Single DT REV B](xref:Connector_help_Aurora_Networks_Node_NC_4000_Single_DT_REV_B)        | DVE for Aurora Network Node NC 4000 Single DT Rev B (Prior to version 2.0.1.x)     |
+| [Aurora Network Node FA3527](xref:Connector_help_Aurora_Network_Node_FA3527)                                           | DVE for Aurora Network Node FA3527 (Prior to version 2.0.1.x)                      |
+| [Aurora Network AT3554](xref:Connector_help_Aurora_Network_AT3554)                                                     | DVE for Aurora Network AT3554A Analog Transmitter (Prior to version 2.0.1.x)       |
+| [Aurora Network CX3001 - AT3554](xref:Connector_help_Aurora_Network_CX3001_-_AT3554)                                   | DVE for Aurora Network CX3001 - AT3554 (Starting version 2.0.1.x)                  |
+| [Aurora Network CX3001 - FA3527](xref:Connector_help_Aurora_Network_CX3001_-_FA3527)                                   | DVE for Aurora Network CX3001 - FA3527 (Starting version 2.0.1.x)                  |
 | [Aurora Network CX3001 - NC 4000 Single DT REV A](xref:Connector_help_Aurora_Network_CX3001_-_NC_4000_Single_DT_REV_A) | DVE for Aurora Network CX3001 - NC 4000 Single DT Rev A (Starting version 2.0.1.x) |
 | [Aurora Network CX3001 - NC 4000 Single DT REV B](xref:Connector_help_Aurora_Network_CX3001_-_NC_4000_Single_DT_REV_B) | DVE for Aurora Network CX3001 - NC 4000 Single DT Rev B (Starting version 2.0.1.x) |
 
@@ -77,7 +77,7 @@ This page contains a number of tables:
 - The **CX Status** table shows the status of the communication modules.
 - The **CX Config** table contains information regarding the communication module management configuration entries.
 - The **CX Module Alarms Status** table contains detailed alarm information for the communication module.
-- The **CX Card Alarm** **Status** table contains detailed alarms regarding the environment and voltage usage.
+- The **CX Card Alarm Status** table contains detailed alarms regarding the environment and voltage usage.
 
 In order to commit all the changes made in the CX Config Table to the device, you must press the **Commit** button.
 
@@ -118,3 +118,4 @@ This page contains the **High Power EDFA** table. This table contains the High P
 This page displays the web interface of the device.
 
 Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+

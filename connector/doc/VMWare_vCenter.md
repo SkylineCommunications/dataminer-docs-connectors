@@ -12,7 +12,7 @@ The VMWare vCenter connector enables DataMiner to communicate with a VMWare vCen
 
 ### Version Info
 
-| **Range** | **Description**                                                              | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial Version                                                              | No                  | True                    |
 | 1.0.1.x          | Improve performance when polling big amounts of data (multi-threaded timers). | No                  | True                    |

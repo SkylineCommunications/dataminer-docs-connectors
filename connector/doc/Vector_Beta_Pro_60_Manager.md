@@ -99,47 +99,14 @@ All the other lines in the file are considered possible data lines. They are spl
 
 The following table provides more information on the different columns:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="header">
-<th><strong>Column</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-&#10;<tr class="odd">
-<td><p><strong>ID</strong></p></td>
-<td><p>A number identifying the device. This must be unique per manager.</p>
-<p>If empty, the line will always create a new element when parsing the file.</p>
-<p>If a number and not already available in the manager, a new element will be created, otherwise the element with that ID will be updated.</p></td>
-</tr>
-<tr class="even">
-<td><strong>NAME</strong></td>
-<td><p>The name of the element. This name will be used to create the DVE element (prefixed with the manager's name.) The alarms will also contain this name. The name must be unique. If it is not, the connector will make it unique by adding a number to the name.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>MANAGER</strong></td>
-<td><p>The name of the manager that should poll the device. This column may not be empty. If it is, the entire row will be ignored.</p>
-<p>Only if the manager's name matches the <strong>Manager Name</strong> parameter of the <strong>Vector Beta Pro 60 Manager</strong> element, the contents of the line will be parsed by that manager.</p></td>
-</tr>
-<tr class="even">
-<td><strong>IP</strong></td>
-<td><p>The IP address of the Vector Beta Pro 60 element. Optionally, you can specify the port by adding a colon and the port number after the IP address. If you do not do so, the default port will be used that was specified in the element's port settings when creating or editing the device.</p>
-<p>Example: "10.1.23.5" or "10.1.23.5:5422"</p></td>
-</tr>
-<tr class="odd">
-<td><strong>IP_MODEM</strong></td>
-<td><p>The IP address of the modem linked to the Vector Beta Pro 60. Uses the same formatting as in the IP column.</p></td>
-</tr>
-<tr class="even">
-<td><strong>VIEW</strong></td>
-<td><p>The name or names of the view(s) to which the element should be added. Separate different views using a '|'. If you leave this column empty, the DVE will be created in the same view as the manager.</p>
-<p>Example: "Belgium|Europe|Koen VDB"</p></td>
-</tr>
-</tbody>
-</table>
+| **Column** | **Description** |
+|------------|-----------------|
+| **ID**     | A number identifying the device. This must be unique per manager.<br><br>If empty, the line will always create a new element when parsing the file.<br><br>If a number and not already available in the manager, a new element will be created, otherwise the element with that ID will be updated. |
+| **NAME**   | The name of the element. This name will be used to create the DVE element (prefixed with the manager's name.) The alarms will also contain this name. The name must be unique. If it is not, the connector will make it unique by adding a number to the name. |
+| **MANAGER**| The name of the manager that should poll the device. This column may not be empty. If it is, the entire row will be ignored.<br><br>Only if the manager's name matches the **Manager Name** parameter of the **Vector Beta Pro 60 Manager** element, the contents of the line will be parsed by that manager. |
+| **IP**     | The IP address of the Vector Beta Pro 60 element. Optionally, you can specify the port by adding a colon and the port number after the IP address. If you do not do so, the default port will be used that was specified in the element's port settings when creating or editing the device.<br><br>Example: "10.1.23.5" or "10.1.23.5:5422" |
+| **IP_MODEM** | The IP address of the modem linked to the Vector Beta Pro 60. Uses the same formatting as in the IP column. |
+| **VIEW**   | The name or names of the view(s) to which the element should be added. Separate different views using a pipe character ("\|"). If you leave this column empty, the DVE will be created in the same view as the manager.<br><br>Example: "Belgium\|Europe\|Koen VDB" |
 
 #### Comments
 
@@ -153,71 +120,20 @@ One of the most important tables in the protocol is the **Device Manager**. This
 
 A brief description of the available parameters:
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="header">
-<th><strong>Parameter</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-&#10;<tr class="odd">
-<td><strong>Index</strong></td>
-<td><p>A unique ID identifying the element in the manager.</p>
-<p>If an ID is specified in the .csv file, that ID will be used. If the ID already exists in the table when parsing the .csv file, that row/element will be updated. Otherwise a new row/element will be created.</p>
-<p>If the .csv file does not contain an ID field, a new row/element will be created for the record and it will automatically be assigned a unique ID. Note that if no ID is assigned in the .csv file and that file is parsed twice, one row will be deleted and another row will be created with a different ID. This has an impact on the trending: the available trending will be lost.</p></td>
-</tr>
-<tr class="even">
-<td><strong>Name</strong></td>
-<td><p>A user defined name for the element. The name must be unique for this manager. If not, the connector will generate a unique name by adding a number to the name.</p>
-<p>Example: two elements with name "Brugge" would become: "Brugge" and "Brugge (2)".</p></td>
-</tr>
-<tr class="odd">
-<td><strong>View(s)</strong></td>
-<td><p>The name of the view or views to which the generated DVE should be added. If nothing is specified in this column, the DVE will be added to the same view as the manager.</p></td>
-</tr>
-<tr class="even">
-<td><strong>IP 1</strong></td>
-<td><p>The IP address of the Vector Beta Pro 60 device being polled.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>IP Modem</strong></td>
-<td><p>The IP address of the modem linked to the Vector Beta Pro device.</p></td>
-</tr>
-<tr class="even">
-<td><strong>Element ID</strong></td>
-<td><p>The element ID of the generated DVE.</p>
-<p>(Formatted as "[DMA ID]/[EID]")</p></td>
-</tr>
-<tr class="odd">
-<td><strong>Timeout</strong></td>
-<td><p>This indicates if during the last polling interval of the device (Vector Beta Pro 60) at least one parameter timed out.</p>
-<p>Note that the DVE will be set in timeout if either the device or the modem is in timeout.</p></td>
-</tr>
-<tr class="even">
-<td><strong>Timeout Modem</strong></td>
-<td><p>Indicates if during the last polling cycle of the modem at least one parameter timed out.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>Last Poll "Fast" Group</strong></td>
-<td><p>The UTC date and time when the last fast poll cycle was executed.</p></td>
-</tr>
-<tr class="even">
-<td><strong>Last Poll "Medium" Group</strong></td>
-<td><p>The UTC date and time when the last medium poll cycle was executed.</p></td>
-</tr>
-<tr class="odd">
-<td><strong>Last Poll "Slow" Group</strong></td>
-<td><p>The UTC date and time when the last slow poll cycle was executed.</p></td>
-</tr>
-<tr class="even">
-<td><strong>Polling Status</strong></td>
-<td><p>Indicates if the device and modem are polled. Polling can be disabled and enabled by the user or automatically stopped by the connector if the DNS cannot translate the server name to an IP address.</p></td>
-</tr>
-</tbody>
-</table>
+| Parameter | Description |
+|--|--|
+| **Index** | A unique ID identifying the element in the manager.<br><br>If an ID is specified in the .csv file, that ID will be used. If the ID already exists in the table when parsing the .csv file, that row/element will be updated. Otherwise, a new row/element will be created.<br><br>If the .csv file does not contain an ID field, a new row/element will be created for the record and it will automatically be assigned a unique ID. Note that if no ID is assigned in the .csv file and that file is parsed twice, one row will be deleted and another row will be created with a different ID. This has an impact on the trending: the available trending will be lost. |
+| **Name** | A user defined name for the element. The name must be unique for this manager. If not, the connector will generate a unique name by adding a number to the name.<br><br>Example: two elements with name "Brugge" would become: "Brugge" and "Brugge (2)". |
+| **View(s)** | The name of the view or views to which the generated DVE should be added. If nothing is specified in this column, the DVE will be added to the same view as the manager. |
+| **IP 1** | The IP address of the Vector Beta Pro 60 device being polled. |
+| **IP Modem** | The IP address of the modem linked to the Vector Beta Pro device. |
+| **Element ID** | The element ID of the generated DVE.<br><br>(Formatted as "[DMA ID]/[EID]") |
+| **Timeout** | This indicates if during the last polling interval of the device (Vector Beta Pro 60) at least one parameter timed out.<br><br>Note that the DVE will be set in timeout if either the device or the modem is in timeout. |
+| **Timeout Modem** | Indicates if during the last polling cycle of the modem at least one parameter timed out. |
+| **Last Poll "Fast" Group** | The UTC date and time when the last fast poll cycle was executed. |
+| **Last Poll "Medium" Group** | The UTC date and time when the last medium poll cycle was executed. |
+| **Last Poll "Slow" Group** | The UTC date and time when the last slow poll cycle was executed. |
+| **Polling Status** | Indicates if the device and modem are polled. Polling can be disabled and enabled by the user or automatically stopped by the connector if the DNS cannot translate the server name to an IP address. |
 
 ### Backup & Current Settings
 

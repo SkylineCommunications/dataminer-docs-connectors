@@ -28,14 +28,6 @@ This connector can be used to launch Automation scripts and get status informati
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This connector allows you to launch Automation scripts and check information on those Automation scripts.

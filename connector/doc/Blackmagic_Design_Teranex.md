@@ -11,15 +11,15 @@ Regardless of conversion, all processing is done in real time with minimal laten
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based On** | **System Impact** |
-|----------------------|------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version - Teranex AV | -            | -                 |
+| Range              | Key Features                 | Based On | System Impact |
+|--------------------|------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version - Teranex AV | -        | -             |
 
 ### Product Info
 
-| Range     | Supported Firmware                                           |
-|-----------|--------------------------------------------------------------|
-| 1.0.0.x   | This connector only supports Teranex AV Protocol Preamble: 3.22 |
+| Range   | Supported Firmware                                              |
+|---------|-----------------------------------------------------------------|
+| 1.0.0.x | This connector only supports Teranex AV Protocol Preamble: 3.22 |
 
 ### System Info
 
@@ -41,14 +41,6 @@ SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the device. Default value: *9800*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to Use
 

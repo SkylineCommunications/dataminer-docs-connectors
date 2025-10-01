@@ -12,10 +12,10 @@ This connector uses serial communication to retrieve information from the device
 
 ### Version Info
 
-| **Range**     | **Description**                                   | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|---------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version (EF Data CDM600L)                 | No                  | Yes                     |
-| 2.0.0.x [SLC Main]   | Change of protocol name, based on EF Data CDM600L | No                  | Yes                     |
+| Range              | Description                                       | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version (EF Data CDM600L)                 | No              | Yes                 |
+| 2.0.0.x [SLC Main] | Change of protocol name, based on EF Data CDM600L | No              | Yes                 |
 
 ## Installation and configuration
 

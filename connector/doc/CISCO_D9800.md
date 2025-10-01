@@ -14,29 +14,29 @@ The connector retrieves and sets information on the device through HTTP and SNMP
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                          | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                                                                         | No                  | No                      |
-| 1.1.0.x              | Supports firmware 3.01.                                                                                                                  | No                  | Yes                     |
-| 1.2.0.x              | Supports firmware 3.75.                                                                                                                  | No                  | Yes                     |
-| 1.3.0.x              | Supports firmware 5.50 and possibility to switch between SS (Single-Stream) and MS (Multi-Stream) functionality depending on the device. | No                  | Yes                     |
-| 1.3.1.x [Obsolete]     |Supports firmware 6.80.                                                                                                                  | No                  | Yes                     |
-| 1.4.0.x [Obsolete]     |Supports firmware 6.52.                                                                                                                  | No                  | Yes                     |
-| 1.5.0.x [SLC Main]   | Supports firmware 7.0. SNMP connection removed.                                                                                          | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | No |
+| 1.1.0.x | Supports firmware 3.01. | No | Yes |
+| 1.2.0.x | Supports firmware 3.75. | No | Yes |
+| 1.3.0.x | Supports firmware 5.50 and possibility to switch between SS (Single-Stream) and MS (Multi-Stream) functionality depending on the device. | No | Yes |
+| 1.3.1.x [Obsolete] | Supports firmware 6.80. | No | Yes |
+| 1.4.0.x [Obsolete] | Supports firmware 6.52. | No | Yes |
+| 1.5.0.x [SLC Main] | Supports firmware 7.0. SNMP connection removed. | No | Yes |
 
 ### Product Info
 
 The table below indicates which device revision is available since a specific range. Every version within the same range also supports the previously implemented revisions.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-| 1.1.0.x   | 3.01                   |
-| 1.2.0.x   | 3.75 & 4.01            |
-| 1.3.0.x   | 5.50                   |
-| 1.3.1.x   | 6.80                   |
-| 1.4.0.x   | 6.52                   |
-| 1.4.0.x   | 7.0                    |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | N/A |
+| 1.1.0.x | 3.01 |
+| 1.2.0.x | 3.75 & 4.01 |
+| 1.3.0.x | 5.50 |
+| 1.3.1.x | 6.80 |
+| 1.4.0.x | 6.52 |
+| 1.4.0.x | 7.0 |
 
 ## Configuration
 
@@ -49,7 +49,9 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
+
 - **IP port**: The IP port of the destination.
+
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 SNMP CONNECTION:
@@ -75,8 +77,11 @@ This page displays information on the satellite-communicating antennas of the de
 This page contains all the information on the inputs managed by the device:
 
 - **RF Inputs**: Includes Port, Downlink Frequency, Symbol Rate, FEC, Modulation, Roll Off, I/1, AFC Limit, 22KHz, Power, LO1, LO2, Crossover, Polarization, Orbital Position, East/West Flag, and SAT Input Lock.
+
   The page also displays **RF Settings** such as Active Input, Downlink Frequency, Symbol Rate, FEC, Modulation, Roll Off, I/1, AFC Limit, 22KHz, Power, LO1, LO2, Crossover, Polarization, Orbital Polarization, East/West Flag, and SAT Input Lock for the 4 ports of the device.
+
 - **ASI Inputs**: Includes Port, Active Input, Lock, Input Rate, Scramble Mode, Packet Size, and Link.
+
 - **IP Inputs**: Includes MOIP Port, Interface, MOIP Active Input, Source IP Selection Mode, Enable Multicast, Multicast Address, FEC Mode, TS Destination Port, FEC Columns Port, FEC Rows Port, Source Filtering, De-Jitter Configuration Algorithm, De-Jitter Configuration Latency, Data Source 1, Data Source 2, Data 1 Transport Type, Data 2 Transport Type, and the Source Filter List Configuration.
 
 ### Status
@@ -84,9 +89,13 @@ This page contains all the information on the inputs managed by the device:
 This page contains several tables with status information:
 
 - **ABR Input**: Includes Status, ASI Signal Lock, Input Rate, Download Fragment Count, Download Fragment Count, and more.
+
 - **Zixi Input**: Includes Status, Signal Lock, Bit Rate, Network Name, and everything related to Zixi input.
+
 - **Audio STC302 Decode**: Includes Device Number, Stream, Number of Streams, and Packet Size.
+
 - **Video Decode Status**: Includes Input Stream Format, PV Output Format, SD Video Output Format, Bitrate, 3:2 Pulldown, Frames, Synchronization Mode, and Encoding Standard.
+
 - **Audio Decode Status**: Includes Device, Mode, Bitrate, Buffer Level, Sample Rate, Dolby Digital Mode, Audio Dual Mono Mode, and Language.
 
 ### Configuration
@@ -94,7 +103,9 @@ This page contains several tables with status information:
 This page contains three tables that are part of the configuration API:
 
 - **ABR Input Configuration**: Contains all settings related to the ABR input, in accordance with the API.
+
 - **Zixi Input Configuration**: Contains all Zixi input settings.
+
 - **MOIP Output Stream**: Contains all MOIP output stream settings.
 
 ### Decryption
@@ -102,7 +113,9 @@ This page contains three tables that are part of the configuration API:
 This page contains BISS CI and CA status information:
 
 - **BISS**: Includes Mode, 1 Session Word, E Session Word, and E Injected ID.
+
 - **CI Status Table**: Includes CAM Status, Sys Name, Comp Name, Manufacturer Code, Manufacturer ID, CI Serial Number, and Hardware Version Application Version.
+
 - **CA Status Table**: Includes ISE User Address Enc Data Packets Passed, Enc Data Packets Received, Non-Enc Data Packets Passed, and Non-Enc Data Packets Received.
 
 ### Services
@@ -110,12 +123,19 @@ This page contains BISS CI and CA status information:
 This page contains information on all the services that could be managed by the device:
 
 - **TS Video Parameters**: Includes Video Bitrate, Video Frame Rate, and Encoding Format.
+
 - **Video Setup**: Includes SDI 1, SDI 2, Primary Video Output, Standard Definition Output, Video Tri-Sync, Standard Definition Aspect Ratio, Selected Aspect Ratio Conversion, and Wide Screen Signaling Mode.
+
 - **Video Status**: Includes Video Input Format, Services-Primary Video Output, Video Standard Definition Output, Video 3:2 Pull down, and Video Synch Mode.
+
 - **Decode Program Status**: Includes Channel Name, Channel Number, PMT, and PCR.
+
 - **Channel Status Table**: Includes Input Name, Channel, Channel Name, Conditional Access System ID, Channel Authorized, Channel Encrypted, Channel Scrambled, SR Status, SR Type, SR Start, and SR End.
+
 - **Audio Status Table**: Includes PID, Language, Bitrate, Format, SFR, Buffer, DDP Mode, and Dual Mono.
+
 - **Caption & VBI**: Includes Closed Caption Mode, Preferred Closed Caption Mode, VBI-VITC Status, VITS PAL Line 17, VITS PAL Line 18, VITS PAL Line 330, and VITS PAL Line 331.
+
 - **Subtitles**: Includes Subtitle Control, Imitext Position, Imitext Foreground Color, Imitext Background Color, Language List, Language Entry, and PMT Order.
 - **SDI**: Includes Interlaced, Frames/Second, Lines, Words, First, Last, Switch, Multiline, and the SDI VANC Service Setup & Status Table.
 - **Audio 1 to 4 Setup**: Includes Audio Decode, AC3 Compression Mode, DD+Output, Language, Select by, Left Attenuation, Mode, and PMT Source and Right Attenuation.
@@ -148,6 +168,7 @@ There are also two tables:
 The following page buttons are also available:
 
 - **Licenses**: Displays the information Number of HD Transcode Licenses, Number of SD Transcode Licenses, Number of HVEC Transcode Licenses, Number of Tuner Licenses, Licensed for Decryption, Licensed for DVB S2, Licensed for Tuner ASPK, Licensed for AVC decode, Licensed for HVEC decode, Licensed for HD output, Licensed for Full HD output, Licensed for UHD output, and Licensed for Audio 3 and 4 output.
+
 - **Device General Information**: Displays the information Host Name, Host MAC Address, Device Model Number, Device Model Name, Device Board ID, Device Board FPGA Type, Primary Processor Boot Code Version, and Current App Version.
 
 ### Disaster Recovery
@@ -185,11 +206,13 @@ Via the **Login** page button, you can specify a username and password to start 
 There are also two tables:
 
 - **Ethernet Link Status**: Includes Link Status, Link Speed, and Link Crossover.
+
 - **Power Status**: Includes Power Good Signal, Card, and Status.
 
 The following page buttons are also available:
 
 - **Licenses**: Displays the information Number of HD Transcode Licenses, Number of SD Transcode Licenses, Number of HVEC Transcode Licenses, Number of Tuner Licenses, Licensed for Decryption, Licensed for DVB S2, Licensed for Tuner ASPK, Licensed for AVC decode, Licensed for HVEC decode, Licensed for HD output, Licensed for Full HD output, Licensed for UHD output, and Licensed for Audio 3 and 4 output.
+
 - **Device General Information**: Displays the information Host Name, Host MAC Address, Device Model Number, Device Model Name, Device Board ID, Device Board FPGA Type, Primary Processor Boot Code Version, and Current App Version.
 
 ### Disaster Recovery

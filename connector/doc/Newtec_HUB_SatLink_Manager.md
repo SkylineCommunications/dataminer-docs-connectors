@@ -14,7 +14,7 @@ This connector can specifically be used to **book**, **start** and **cancel** **
 
 ### Version Info
 
-| **Range** | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                               | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                           | No                  | No                      |
 | 1.1.0.x          | New firmware based on 1.0.0.5 (see below) | No                  | No                      |

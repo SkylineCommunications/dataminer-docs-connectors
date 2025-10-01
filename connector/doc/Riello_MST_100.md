@@ -93,7 +93,7 @@ Note that the client machine has to be able to access the device, as otherwise i
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** and **1.1.0.x** connector ranges of the **Riello MST 100** protocol support the usage of DCF and can only be used on a DMA with **9.0.0** as the minimum version.
+The **1.0.0.x** and **1.1.0.x** connector ranges of the **Riello MST 100** connector support the usage of DCF.
 
 ### Interfaces
 

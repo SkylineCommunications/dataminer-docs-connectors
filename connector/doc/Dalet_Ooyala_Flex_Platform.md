@@ -8,12 +8,12 @@ This connector integrates with the Ooyala Flex platform. It uses the REST API to
 
 ## About
 
-### range.
+### Version Info
 
-| **Range**            | **Key Features**                                                             | **Based on** | **System Impact**   |
-|----------------------|------------------------------------------------------------------------------|--------------|---------------------|
-| 1.0.0.x              | Initial version                                                              | -            | -                   |
-| 1.0.1.x [SLC Main]   | Add smart-serial connection to listen for messages from the Ooyala platform. | 1.0.0.1      | Adds new connection |
+| Range              | Key Features                                                                   | Based on | System Impact        |
+|--------------------|--------------------------------------------------------------------------------|----------|----------------------|
+| 1.0.0.x            | Initial version.                                                               | -        | -                    |
+| 1.0.1.x [SLC Main] | Smart-serial connection added to listen for messages from the Ooyala platform. | 1.0.0.1  | Adds new connection. |
 
 ### Product Info
 

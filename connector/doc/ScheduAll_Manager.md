@@ -19,8 +19,6 @@ The **web service** API is an XML interface over HTTP. DataMiner can send reques
 | 2.0.0.x | Initial version                              | No              | Yes                 |
 | 2.0.1.x | Support for SRM added                        | No              | Yes                 |
 | 2.0.3.x | Support for Unicode added                    | No              | Yes                 |
-| 3.0.0.x | POC for Voice of America connector review    | No              | Yes                 |
-| 3.0.1.x | Modify Booking Overview table layout         | No              | Yes                 |
 | 3.0.2.x | Changes made to interfacing Resource Manager | No              | Yes                 |
 
 ## Configuration
@@ -37,20 +35,20 @@ HTTP connection:
 WEB SERVICE API BACKUP connection:
 
 - **IP address/host**: The IP address of the web service API.
-- **Port:** The port used for the web service communication.
+- **Port**: The port used for the web service communication.
 
 INTEROP SERVICE connection:
 
-- **IP address/host**: *any*. (Note that if 'any' is configured, DataMiner will behave similarly to a server since it will be listening for incoming events on the port configured below.)
-- **Port:** The port used for the interop service communication.
+- **IP address/host**: *any*. (Note that if *any* is configured, DataMiner will behave similarly to a server since it will be listening for incoming events on the port configured below.)
+- **Port**: The port used for the interop service communication.
 
 INTEROP LISTENER connection:
 
 - **IP address/host**: The IP address of the interop listener.
-- **Port:** The port used for the interop listener communication.
+- **Port**: The port used for the interop listener communication.
 
 > [!NOTE]
-> To make sure the ScheduAll Manager has sufficient time to retrieve the information from the Resource Information table, increase the timeout to 60s.
+> To make sure the ScheduAll Manager has sufficient time to retrieve the information from the **Resource Information** table, increase the timeout to 60s.
 
 ### Connections - Range 3.0.0.x / 3.0.1.x / 3.0.2.x
 
@@ -71,7 +69,7 @@ The connector combines data coming from several tables in ScheduAll. Below, you 
 
 ### General
 
-This page indicates the **ScheduAll status** for both: **Web Service** and the **Interop Services.**
+This page indicates the **ScheduAll status** for both **Web Service** and the **Interop Services**.
 
 ### Configuration
 
@@ -90,26 +88,48 @@ This page contains **communication configuration** parameters related to the web
 - Disabling or enabling polling of the client info or resource info tables from ScheduAll.
 - Time format used by ScheduAll.
 
+> [!NOTE]
+> In range 2.0.3.x, additional parameters are available on this page:
+>
+> - **Resolve DNS Name**: Indicates if the hostname (if specified) should be DNS-resolved. Set to *false* by default.
+> - **Dynamic URL**: Base URL path to append to the polling IP/host for each request.
+> - **Authentication Provider Username**: Used for setting the username if another authentication layer is used.
+> - **Authentication Provider Password**: User for setting the password if another authentication layer is used.
+>
+> Only the *Basic Auth* authentication type is supported. Username and password are joined with a colon, encoded with Base64 encoding, and set in the *Authorization* header.
+
 #### Timespan configuration
 
-With a start and stop parameter, the size of a sliding window can be defined (in minutes) in which data (bookings + resources) have to be retrieved. For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.
+With a start and stop parameter, the size of a sliding window in which data (bookings + resources) have to be retrieved can be defined (in minutes). For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.
 
 #### Query Configuration
 
-If not all bookings have to be retrieved from ScheduAll but only a subset, this section can be used for defining a filter. There are two filters available:
+If not all bookings have to be retrieved from ScheduAll but only a subset, this section can be used to define a filter. There are two filters available:
 
 - **Work Order Query Resource Filter**: Only bookings that contain one of the resources defined in this filter will be retrieved.
-- **Work Order Query Resource Group Filter**: Only bookings that contain resources that are in the resource group defined in this filter will be retrieved. Note that in order for this to work, the polling of the 'Resource Information' table has to be enabled.
+- **Work Order Query Resource Group Filter**: Only bookings that contain resources that are in the resource group defined in this filter will be retrieved. Note that in order for this to work, the polling of the **Resource Information** table has to be enabled.
 
 The **Message field configuration** allows you to define which data fields from ScheduAll have to be retrieved:
 
-- **Work Order Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the work order table in ScheduAll. Per work order, the values are JSON-encoded and stored in the "Custom WO Fields" column in the "Work Order Overview" table.
-- **Query Custom WO USER Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the WO_USER table in ScheduAll. Per work order, the values are JSON-encoded and stored in the "Custom WO USER Fields" column in the 'Work Order Overview" table.
-- **Resource Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the "RES Custom xx" columns in the "Resource Overview" table.
-- **Query Custom SEVT EX Fields**: Here you can define which additional fields have to be retrieved on top of the default ones from the SEVT_EX table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom SEVT EX Fields" column in the "Resource Overview" table.
-- **Query Custom Resource Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the Resource Details table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom Resource Details Fields" column in the "Resource Overview" table.
-- **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom Client Details Fields" column in the "Client Overview" table.
-- **Query Custom Values**: Here you can define which fields have to be retrieved in addition to the default fields from the resource info table in ScheduAll. Per resource, the values are stored in the "Custom x" columns in the "Resource Information" table.
+- **Work Order Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the work order table in ScheduAll. Per work order, the values are JSON-encoded and stored in the **Custom WO Fields** column in the **Work Order Overview** table.
+- **Query Custom WO USER Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the WO_USER table in ScheduAll. Per work order, the values are JSON-encoded and stored in the **Custom WO USER Fields** column in the **Work Order Overview** table.
+- **Resource Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the **RES Custom xx** columns in the **Resource Overview** table.
+- **Query Custom SEVT EX Fields**: Here you can define which additional fields have to be retrieved on top of the default ones from the SEVT_EX table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom SEVT EX Fields** column in the **Resource Overview** table.
+- **Query Custom Resource Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the Resource Details table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Resource Details Fields** column in the **Resource Overview** table.
+- **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Client Details Fields** column in the **Client Overview** table.
+- **Query Custom Values**: Here you can define which fields have to be retrieved in addition to the default fields from the resource info table in ScheduAll. Per resource, the values are stored in the **Custom x** columns in the **Resource Information** table.
+
+#### Query Filtering
+
+It is possible to specify additional filters to append to the WorkOrderQuery filter tag by adding rows to the **Work Order Query Filtering** table. Adding and removing rows is done through the right-click menu of the table. Keys of the table are mapped to ScheduAll field names, which will be used for the filtering. Values can be added as a semicolon-separated list.
+
+For example, if a row is added with key "EXTID" and field value "1;9;4", this is what will be appended to the WorkOrderQuery filter: *AND (EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1' OR EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9' OR EXTID='&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4')*
+
+You can enable or disable this feature with the **Work Order Query Filter by Field** parameter.
+
+#### External mappings
+
+When the *EventModify* request is used, ScheduAll Manager needs to tie the resource ID (RESID) of a resource booking in ScheduAll with an external ID (EXTID). With the **DataMiner Combined IDS Field** parameter, you can define which parameter from the **Custom Resource Details Fields** will be used as a mapping to the RESID.
 
 ### Configuration - Interop Service
 
@@ -122,6 +142,7 @@ This page contains a table of **Parameter Mapping Names.** Via the right-click m
 ### Work Order Overview
 
 This page contains a table of current **work order information**. This table contains an overview of all the information related to the present work orders, and provides the possibility to delete a specific work order.
+
 Note that this page also displays the current **resources scheduled** by ScheduAll.
 
 ### Category Overview
@@ -148,65 +169,74 @@ This page indicates the **ScheduAll status** for both the **Web Service** and th
 
 ### Configuration
 
-This page contains **Communication Configuration** parameters for both the **Web Service** and the **Interop Services**, where it is possible to **enable** or **disable** the referred services.
-Moreover, this page also includes the **Task Configuration,** which allows the user to define the validation of the **Work Orders** content as well as the the data used to launch the configured **Automation Script** when new or modified **Work Orders** are retrieved.
+This page contains **Communication Configuration** parameters for both the **Web Service** and the **Interop Services**, allowing you to **enable** or **disable** the referred services.
+
+The page also includes the **Task Configuration,** which allows you to define the validation of the work orders content as well as the the data used to launch the configured Automation script when new or modified work orders are retrieved.
+
+### Configuration Subpage - Ignored DataMiner Resource Pools
+
+On this subpage, you can configure which resource pools from DataMiner should be ignored upon work order creation.
 
 ### Configuration Subpage - Task Automation Script
 
-This page contains the configuration of the **Automation Script** defined in the **Task Automation Script Name** under the **Configuration** page, where it is possible to specify the following settings:
+This subpage contains the configuration of the Automation script specified with the **Task Automation Script Name** parameter on the **Configuration** page. You can specify the following settings:
 
-- **Startup Trigger:** Defines whether the Automation Script is triggered at Connector Startup (Enabled) or not (Disabled).
+- **Startup Trigger**: Defines whether the Automation script is triggered at connector startup (*Enabled*) or not (*Disabled*).
 
-- **Default Behavior:** Defines whether the Default Behavior is Enabled or Disabled:
+- **Default Behavior**: Defines whether the default behavior is enabled or disabled:
 
-  - **Enabled:** The Task Automation Script will be triggered with the default Input Script Parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that the referred Input Script Parameter in case of a "Bulk" Processing State will have a serialized list of 'WO ID \[IDX\]'.
+  - *Enabled*: The Task Automation Script will be triggered with the default input script parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that in case the processing state is set to *Bulk*, the referred input script parameter will have a serialized list of "WO ID \[IDX\]".
 
-  - **Disabled:** The Task Automation Script will be triggered according to the data present in the Input Script Parameters table.
+  - *Disabled*: The Task Automation Script will be triggered according to the data present in the Input Script Parameters table.
 
-- **Processing State:** Defines whether the Task Automation Script processing is Single or Bulk:
+- **Processing State**: Defines whether the Task Automation Script processing is *Single* or *Bulk*:
 
-  - **Single:** The Task Automation Script will be triggered individually for each new/modified Work Order.
+  - *Single*: The Task Automation Script will be triggered individually for each new/modified work order.
 
-  - **Bulk:** The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified Work Orders information according to the current configuration of the Input Script Parameters table.
+  - *Bulk*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
-- **Pending Script Processing Buffer:** Defines whether there is a buffer holding the pending Work Orders to be passed as Input Script Parameter (Enabled) or not (Disabled):
+- **Pending Script Processing Buffer**: Defines whether there is a buffer holding the pending work orders to be passed as input script parameter (*Enabled*) or not (*Disabled*):
 
-  - **Enabled:** A buffer will be used to hold the Work Orders that will be passed as Input Parameter of the "Task Automation Script" if the script is still processing those same Work Orders.
+  - *Enabled*: A buffer will be used to hold the work orders that will be passed as input parameter of the Task Automation Script if the script is still processing those same work orders.
 
-    For example, if there is a running script busy processing "#WO12345", that Work Order will be stored in the referred buffer.
+    For example, if there is a running script busy processing "#WO12345", that work order will be stored in the referred buffer.
 
     > [!NOTE]
-    > If this option is selected, the "Task Automation Script" will be responsible for triggering the script again in order to process the pending Work Orders that were added, which can be done through a set of the pending Work Order IDs (separated by ;) in the "Work Order IDs Pending Script Processing" (ID=35) (e.g. the Work Order IDs should be set with the following format: '12345;123456;123457').
+    > If this option is selected, the Task Automation Script will be responsible for triggering the script again in order to process the pending work orders that have been added, which can be done by setting the pending work order IDs (separated by ;) in the **Work Order IDs Pending Script Processing** parameter (ID=35). The following example illustrates the format in which the work order IDs should be set: `12345;123456;123457`.
 
-  - **Disabled:** The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified Work Orders information according to the current configuration of the Input Script Parameters table.
+  - *Disabled*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
-On this page, you can define the **Input Script Parameters**, which are passed as an argument of the referred **Automation Script** for either **new or modified Work Orders**:
+  > [!NOTE]
+  > At most five of these scripts can run concurrently. The execution queue can hold up to fifty scripts. These limits cannot be adjusted. These are required to prevent system instability issues.
 
-- **\[Full WO w/ Resources in JSON\]:** JSON containing new or modified Work Orders alongside with their associated Resource(s).
-- **\[Full WO wo/ Resources in JSON\]:** JSON containing new or modified Work Orders.
-- **SEQNUM \[WO ID\]:** ID of the new or modified Work Orders.
-- **JOBDESC \[WO Description\]:** Clip Name of the new or modified Work Orders.
-- **WO_START \[WO Start Time\]:** Start time of the new or modified Work Orders.
-- **WO_END \[WO End Time\]:** End time of the new or modified Work Orders.
-- **STAT \[WO DMS Task State\]:** Mirrors Work Orders Status, which are mapped to the DataMiner Booking Status through the **Task Status Definition** Sub-Page.
-- **STATUSEX \[WO DMS Task State Extended\]:** Mirrors Work Orders Extended Status, which are mapped to the DataMiner Booking Status through the **Task Status Definition** Sub-Page.
-- **STAT.STATUSEX \[WO Status\]:** Combined Work Orders Status, as defined in the **Task Status Definition** Sub-Page.
-- **WONUM \[WO Number\]:** Number of the Work Orders.
-- **CREATEDBY \[WO Created By\]:** User that has created the Work Orders.
-- **DATECREAT \[WO Date Created\]:** Creation date of the Work Orders.
-- **MOD_BY \[WO Modified By\]:** Last user that has modified the Work Orders.
-- **LAST_MOD \[WO Last Modified\]:** Last modified date of the Work Orders.
-- **CL_ID \[WO Client ID\]:** Client record(s), which can either identify an Agency or a Contact.
+On this subpage, you can also define the **Input Script Parameters**, which are passed as an argument of the referred Automation script for either new or modified work orders:
 
-In addition, it is also possible to configure in this page which **Work Order Status Transitions** will trigger the referred Automation Script. Note that if no transition is defined, the Automation Script will be triggered for each Work Order Status change.
+- **\[Full WO w/ Resources in JSON\]**: JSON containing new or modified work orders alongside with their associated resources.
+- **\[Full WO wo/ Resources in JSON\]**: JSON containing new or modified work orders.
+- **SEQNUM \[WO ID\]**: ID of the new or modified work orders.
+- **JOBDESC \[WO Description\]**: Clip name of the new or modified work orders.
+- **WO_START \[WO Start Time\]**: Start time of the new or modified work orders.
+- **WO_END \[WO End Time\]**: End time of the new or modified work orders.
+- **STAT \[WO DMS Task State\]**: Mirrors work orders status, which is mapped to the DataMiner booking status through the **Task Status Definition** subpage.
+- **STATUSEX \[WO DMS Task State Extended\]**: Mirrors work orders extended status, which is mapped to the DataMiner booking status through the **Task Status Definition** subpage.
+- **STAT.STATUSEX \[WO Status\]**: Combined work orders status, as defined on the **Task Status Definition** subpage.
+- **WONUM \[WO Number\]**: Number of the work orders.
+- **CREATEDBY \[WO Created By\]**: User who has created the work orders.
+- **DATECREAT \[WO Date Created\]**: Creation date of the work orders.
+- **MOD_BY \[WO Modified By\]**: Last user who has modified the work orders.
+- **LAST_MOD \[WO Last Modified\]**: Last modified date of the work orders.
+- **CL_ID \[WO Client ID\]**: Client record(s), which can either identify an agency or a contact.
 
-- **Previous Status:** Defines the previous Work Order status for the each configured transition.
-- **Current Status:** Defines the current Work Order status for the each configured transition.
-- **Valid Status for New Work Order(s):** Defines which status are valid to trigger the Automation Script for new Work Orders. Note that this table column is independent from the other columns and is only applied to new Work Orders.
+It is also possible to configure which **Work Order Status Transitions** will trigger the referred Automation script. Note that if no transition is defined, the Automation script will be triggered for each work order status change.
+
+- **Previous Status**: Defines the previous work order status for the each configured transition.
+- **Current Status**: Defines the current work order status for the each configured transition.
+- **Valid Status for New Work Orders**: Defines which status is valid to trigger the Automation script for new work orders. Note that this table column is independent from the other columns and is only applied for new work orders.
+- **Valid Status for Existing Work Orders**: Defines which status is valid to trigger the Automation script for existing work orders. Note that this table column is independent from the other columns and is only applied for existing work orders.
 
 ### Configuration Subpage - Task Status Definition
 
-This page defines the mapping between the **STAT** and **STATUSEX ScheduAll** fields and the corresponding **Booking Status** in DataMiner, either for the **Web Service** as well as for the **Interop Services**.
+This subpage defines the mapping between the **STAT** and **STATUSEX ScheduAll** fields and the corresponding **Booking Status** in DataMiner, either for the **Web Service** or for the **Interop Services**.
 
 ### Configuration - Web Service
 
@@ -219,29 +249,30 @@ This page contains **communication configuration** parameters related to the web
 
 #### Query Timespan Configuration
 
-With a start and stop parameter, the size of a sliding window can be defined (in minutes) in which data (bookings + resources) have to be retrieved. For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.
+With a start and stop parameter, the size of a sliding window in which data (bookings + resources) have to be retrieved can be defined (in minutes). For example, if you configure a start of -1440 min and a stop of 1440 min, DataMiner is going to retrieve all bookings that have a start or stop time 24 hours before and 24 hours after the current time.
 
 #### Query Configuration
 
 If not all bookings have to be retrieved from ScheduAll but only a subset, this section can be used for defining a filter. There are two filters available:
 
 - **Work Order Query Resource Filter**: Only bookings that contain one of the resources defined in this filter will be retrieved.
-- **Work Order Query Resource Group Filter**: Only bookings that contain resources that are in the resource group defined in this filter will be retrieved. Note that in order for this to work, the polling of the 'Resource Information' table has to be enabled.
+- **Work Order Query Resource Group Filter**: Only bookings that contain resources that are in the resource group defined in this filter will be retrieved. Note that in order for this to work, the polling of the **Resource Information** table has to be enabled.
 
 #### Query Resources Configuration
 
-- **Resources Information Polling:** Defines whether the **Resources Information** table will be polled (Enabled) or not (Disabled).
-- **Query Resource Groups:** Defines the groups of the Resources that will be retrieved in the **Resources Overview** table, meaning that only the Work Orders containing Resources beloging to the configured groups will be polled.
-- **Query Custom Values**: Defines which fields have to be retrieved in addition to the default fields from the resource info table in ScheduAll. Note that per resource, the values are stored in the "Custom x" columns in the "Resource Information" table.
+- **Resources Information Polling**: Defines whether the **Resources Information** table will be polled (*Enabled*) or not (*Disabled*).
+- **Query Resource Groups**: Defines the groups of the resources that will be retrieved in the **Resources Overview** table, meaning that only the work orders containing resources belonging to the configured groups will be polled.
+- **Query Custom Values**: Defines which fields have to be retrieved in addition to the default fields from the resource info table in ScheduAll. Note that per resource, the values are stored in the **Custom x** columns in the **Resource Information** table.
 
 #### Message Fields Configuration
 
-- **Work Order Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the work order table in ScheduAll. Per work order, the values are JSON-encoded and stored in the "Custom WO Fields" column in the "Work Order Overview" table.
-- **Query Custom WO USER Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the WO_USER table in ScheduAll. Per work order, the values are JSON-encoded and stored in the "Custom WO USER Fields" column in the 'Work Order Overview" table.
-- **Resource Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the "RES Custom xx" columns in the "Resource Overview" table.
-- **Query Custom SEVT EX Fields**: Here you can define which additional fields have to be retrieved on top of the default ones from the SEVT_EX table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom SEVT EX Fields" column in the "Resource Overview" table.
-- **Query Custom Resource Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the Resource Details table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom Resource Details Fields" column in the "Resource Overview" table.
-- **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the "Custom Client Details Fields" column in the "Client Overview" table.
+- **Work Order Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the work order table in ScheduAll. Per work order, the values are JSON-encoded and stored in the **Custom WO Fields** column in the **Work Order Overview** table.
+- **Query Custom WO USER Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the WO_USER table in ScheduAll. Per work order, the values are JSON-encoded and stored in the **Custom WO USER Fields** column in the **Work Order Overview** table.
+- **Resource Custom Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the **RES Custom xx** columns in the **Resource Overview** table.
+- **Resource Custom User Fields**: Here you can define which fields have to be retrieved from the RES_USER table in addition to the default fields from the booking resource table in ScheduAll. Per resource, the values are stored in the **Custom Resource Details Fields** column in the **Resource Overview** table.
+- **Query Custom SEVT EX Fields**: Here you can define which additional fields have to be retrieved on top of the default ones from the SEVT_EX table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom SEVT EX Fields** column in the **Resource Overview** table.
+- **Query Custom Resource Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the Resource Details table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Resource Details Fields** column in the **Resource Overview** table.
+- **Query Custom Client Details Fields**: Here you can define which fields have to be retrieved in addition to the default fields from the client table in ScheduAll. Per resource, the values are JSON-encoded and stored in the **Custom Client Details Fields** column in the **Client Overview** table.
 
 ### Configuration - Interop Service
 
@@ -249,17 +280,19 @@ This page contains the **interop-specific configuration** parameters. Via the **
 
 ### Configuration - Parameter Mapping
 
-This page contains a table of **Parameter Mapping Names.** Via the right-click menu, you can add extra mapping lines to this table. This table can be used by Automation scripts to map field names from ScheduAll with field names in DataMiner.
+This page contains a table of **Parameter Mapping Names**. Via the right-click menu, you can add extra mapping lines to this table. This table can be used by Automation scripts to map field names from ScheduAll with field names in DataMiner.
 
 ### Work Order Overview
 
 This page contains a table of current **work order information**. This table contains an overview of all the information related to the present work orders, and provides the possibility to delete a specific work order.
+
 Note that this page also displays the current **resources scheduled** by ScheduAll.
 
 ### Resource Overview
 
-This page contains a table that displays an overview of the **Resources** contained in the **Work Orders** currently present in the Work Order Overview table.
-Note that a **Resource** contained in a **Work Order,** is from the ScheduALL Application point of view, an **Event Resource**.
+This page contains a table that displays an overview of the **resources** contained in the work orders currently present in the **Work Order Overview** table.
+
+Note that from the ScheduALL Application point of view, a resource contained in a work order is an **Event Resource**.
 
 ### Category Overview
 
@@ -271,11 +304,11 @@ This page contains a table of **Client Names**.
 
 ### Resource Information
 
-This page presents a table containing all the **Resources** in the system, displaying the beloging **Resource Group** as well as custom properties associated to each Resource.
+This page displays a table containing all the **Resources** in the system, displaying the **Resource Group** where they belong as well as custom properties associated with each resource.
 
 ### Work Order Update Status (2.0.3.x)
 
-This page displays the last **Work Orders** and **Event updates** performed towards the ScheduAll Application.
+This page displays the last **work orders** and **event updates** performed towards the ScheduAll Application.
 
 ### Statistics - Web Service
 
@@ -294,7 +327,7 @@ This page contains the **Booking Overview** and **Timeline Reservations** tables
 - The **Booking Overview Table** includes parameters such as **Work Order Number, Language, Start Time, End Time, Work Order Status**, etc.
 - The **Timeline Reservations Table** includes parameters such as **Reservation GUID, Work Order Sequence Number, Source, Resource, Start Time, End Time**, etc.
 
-Via the **Configuration** page button, you can access various configuration options, including **As-Run Log File Location**, **Work Order Failure Margin**, **Booking Maximum Age** and **Pre-Tally** configuration options.
+Via the **Configuration** page button, you can access various configuration options, including **As-Run Log File Location**, **Work Order Failure Margin**, **Booking Maximum Age**, and **Pre-Tally** configuration options.
 
 ### Resources
 

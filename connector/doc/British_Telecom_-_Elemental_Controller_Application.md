@@ -12,9 +12,9 @@ This **enables the users to step away from the conductor** and only use this app
 
 ### Version Info
 
-| **Range**            | **Key Features**                         | **Based on** | **System Impact** |
-|----------------------|------------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial Version: Conductor Cluster Table | -            | -                 |
+| Range              | Key Features                             | Based on | System Impact |
+|--------------------|------------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial Version: Conductor Cluster Table | -        | -             |
 
 ### Product Info
 
@@ -35,14 +35,6 @@ This **enables the users to step away from the conductor** and only use this app
 #### Virtual connection
 
 This connector uses a virtual connection and does not require any input during element creation.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

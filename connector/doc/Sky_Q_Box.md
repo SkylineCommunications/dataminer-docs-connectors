@@ -12,7 +12,7 @@ The application service provides access to all features of the middleware used n
 
 ### Version Info
 
-| **Range** | **Description**               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                   | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version               | No                  | No                      |
 | 1.0.1.x          | Added serial and new features | No                  | No                      |
@@ -60,7 +60,7 @@ This page has a table in each row, representing a button from the remote control
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the **Sky Q Box** protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.1.x** connector range of the **Sky Q Box** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

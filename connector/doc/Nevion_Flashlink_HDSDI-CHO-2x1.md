@@ -12,7 +12,7 @@ The Nevion Flashlink HDSDI-CHO-2x1 connector is used for monitor these kinds of 
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                   | No                  | Yes                     |
 | 1.0.1.x          | New range with DCF implementation. | Yes                 | Yes                     |
@@ -63,7 +63,7 @@ This page displays reclocker information, such as the reclocker configuration, b
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** connector range of the Nevion Flashlink HDSDI-CHO-2x1 protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The **1.0.1.x** connector range of the Nevion Flashlink HDSDI-CHO-2x1 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

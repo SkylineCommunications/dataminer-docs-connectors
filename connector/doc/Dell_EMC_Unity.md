@@ -10,7 +10,7 @@ uid: Connector_help_Dell_EMC_Unity
 
 ### Version Info
 
-| **Range**            | **Key Features**                           | **Based on** | **System Impact** |
+| Range              | Key Features                             | Based on   | System Impact   |
 |----------------------|--------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. Only includes monitoring. | -            | -                 |
 
@@ -43,10 +43,6 @@ HTTP CONNECTION:
 ### Initialization
 
 The element communicates with the data source using the **Unisphere Management REST API**. In order enable this communication, you need to fill in the **HTTP Username** and **HTTP Password** parameters on the **Communication** page.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

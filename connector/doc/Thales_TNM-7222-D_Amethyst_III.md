@@ -12,7 +12,7 @@ The Thales TNM-7222-D Amethyst III connector makes it possible to monitor and co
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                             | No                  | Yes                     |
 | 3.0.0.x          | Reviewed version with updated naming format | No                  | Yes                     |

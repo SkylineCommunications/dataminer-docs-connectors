@@ -62,10 +62,6 @@ The **General** page displays generic information on the transmitter.
 
 The **Transmitter Mode** is set to *Single Transmitter* by default, but you can change this to *Dual Transmitter*. In that case, the Dual Transmitter information will be polled, and those pages will also become available.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

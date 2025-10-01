@@ -10,7 +10,7 @@ The Cisco FMC centralizes firewall administration and intrusion prevention. It p
 
 ### Version Info
 
-| **Range**            | **Key Features**      | **Based on** | **System Impact** |
+| Range                | Key Features          | Based on     | System Impact     |
 |----------------------|-----------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | HTTP initial version. | -            | -                 |
 
@@ -45,10 +45,6 @@ HTTP CONNECTION:
 Log in on the **Settings** page with the **Username** and **Password** required to generate the access token, refresh token, and UUID of the Firewall Management Center device.
 
 Once access is granted, the connector will start to poll data from the device. The access token is refreshed every 30 minutes.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

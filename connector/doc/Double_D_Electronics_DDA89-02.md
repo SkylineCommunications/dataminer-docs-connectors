@@ -14,7 +14,7 @@ In addition to the previous, the connector uses three timers: 1) one polling eve
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial Version |
 

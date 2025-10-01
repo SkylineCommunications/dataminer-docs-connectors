@@ -10,24 +10,24 @@ The CEFD UT DT-45xx SNMP is designed for the transmission of SCPC, DAMA, and TDM
 
 ### Version Info
 
-| **Range**            | **Key Features**                                | **Based on** | **System Impact**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|----------------------|-------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.                                | -            | -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| 1.0.1.x [SLC Main]   | Force backup logic improved (see "How to Use"). | 1.0.0.6      | The Force backup parameter change has caused layout changes and parameter description changes, and parameters and a page button have been removed.<br>- SNMP parameter is now hidden (+ name changed) and a QAction is used to parse the information in order to display e.g. "Unit 01" instead of "01_Forced".<br>- The parameter to set this (including the button + logic) has been replaced with a dropdown menu containing all the available options. To create the information to be set on the hidden SNMP parameter, a QAction is now used. The parameter has also been renamed to match the SNMP parameter as it not only sets values but also displays current information. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | Force backup logic improved (see "How to Use"). | 1.0.0.6 | The Force backup parameter change has caused layout changes and parameter description changes, and parameters and a page button have been removed.<br>- SNMP parameter is now hidden (+ name changed) and a QAction is used to parse the information in order to display e.g. "Unit 01" instead of "01_Forced".<br>- The parameter to set this (including the button + logic) has been replaced with a dropdown menu containing all the available options. To create the information to be set on the hidden SNMP parameter, a QAction is now used. The parameter has also been renamed to match the SNMP parameter as it not only sets values but also displays current information. |
 
 ### Product Info
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 1.3.6                  |
-| 1.0.1.x   | 1.3.6                  |
+| Range | Supported Firmware |
+|--|--|
+| 1.0.0.x | 1.3.6 |
+| 1.0.1.x | 1.3.6 |
 
 ### System Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
+|--|--|--|--|--|
+| 1.0.0.x | No | Yes | - | - |
+| 1.0.1.x | No | Yes | - | - |
 
 ## Configuration
 
@@ -40,11 +40,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
+
 - **IP port**: The IP port of the destination (default: *161*).
 
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
+
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Web Interface

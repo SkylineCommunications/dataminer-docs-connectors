@@ -10,17 +10,17 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 
 ### Version Info
 
-| **Range**            | **Key Features**                                       | **Based on** | **System Impact** |
-|----------------------|--------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                                       | -            | -                 |
-| 1.0.1.x [SLC Main]   | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5      | -                 |
+| Range              | Key Features                                           | Based on | System Impact |
+|--------------------|--------------------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                                       | -        | -             |
+| 1.0.1.x            | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5  | -             |
+| 1.1.0.x [SLC Main] | Fixed iCap Status parameter.                           | 1.0.1.5  | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
+| 1.1.0.x   | 3.50.0                 |
 
 ### System Info
 
@@ -28,6 +28,7 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -43,14 +44,6 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination (default: *80*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The **General** page of this connector contains the username and password to access the device.
@@ -61,7 +54,7 @@ The **Instance Settings** page contains a table with basic information about the
 
 - **Stream Settings:** Allows you to edit the stream settings for existing instances.
 
-- **Device Label:** The name to be used for this instance within the Alta interface and as a device label in NMOS registration.
+  - **Device Label:** The name to be used for this instance within the Alta interface and as a device label in NMOS registration.
   - **Use NMOS IS-05:** Select this option to make this device responsive to changes in the input and output parameters made by NMOS IS-05 HTTP requests.
   - **ANC Multicast Destination:** The UDP unicast or multicast address and port to be used for the 2110-40 output transmissions. This parameter may be changed from its initial value by NMOS IS-05 once the device is active.
   - **Audio Multicast Source:** The UDP port to listen to or the multicast address and port to receive a 2110-30 audio stream for iCap reference. This parameter may be changed from its initial value by NMOS IS-05 once the device is active.
@@ -79,7 +72,7 @@ The **Instance Settings** page contains a table with basic information about the
 
 - **Other Settings:** Allows you to edit the following other settings for existing instances:
 
-- **Warnlevel:** This value can be set from 0-5 to control how much information is sent to the logs for this instance. Lower number settings may be more useful when debugging a problem but can make logs harder to read and increase resource usage per stream.
+  - **Warnlevel:** This value can be set from 0-5 to control how much information is sent to the logs for this instance. Lower number settings may be more useful when debugging a problem but can make logs harder to read and increase resource usage per stream.
   - **Caption Output Format:** Choose between SMPTE 334 CEA-708 VANC packets (DID/SDID 6101) and OP 47 EBU Teletext packets (DID/SDID 4302).
   - **DVB Text Config:** If OP 47 Teletext output is used, specify how many languages to include by listing the language code and Teletext magazine and page number desired for each service. Up to 6 language services are supported.
   - **Video Frame Rate:** This option allows you to force the selection of a specific frame rate for the interpretation of input and output 2110-40 ancillary streams. The default option relies on data from the SMPTE 2059 TLV transmitted by the current PTP grandmaster to obtain this information.

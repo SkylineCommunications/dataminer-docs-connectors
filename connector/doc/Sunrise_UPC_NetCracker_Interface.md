@@ -15,7 +15,7 @@ The communication between Netcracker and DataMiner will be done through the Java
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | **Initial Version** | -            | -                 |
 

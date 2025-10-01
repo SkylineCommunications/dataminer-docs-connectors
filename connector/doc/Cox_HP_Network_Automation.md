@@ -44,10 +44,6 @@ HTTP CONNECTION:
 
 To make sure the connector can connect to the API, specify the **API Key**, **Username** and **Password** on the Configuration page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The connector contains a number of settings that allow you to customize its behavior:

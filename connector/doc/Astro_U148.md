@@ -21,8 +21,8 @@ This connector uses **HTTP** to monitor the device. It also uses an **SNMP** int
 
 | Range     | Supported Firmware                                |
 |-----------|---------------------------------------------------|
-| 1.0.0.x   | 5595 5799 5974 5987 6010 6420 6800 6810 6900 6910 |
-| 1.0.1.x   | 5595 5799 5974 5987 6010 6420 6800 6810 6900 6910 |
+| 1.0.0.x   | 5595<br>5799<br>5974<br>5987<br>6010<br>6420<br>6800<br>6810<br>6900<br>6910 |
+| 1.0.1.x   | 5595<br>5799<br>5974<br>5987<br>6010<br>6420<br>6800<br>6810<br>6900<br>6910<br>7866<br>8257<br>8441 |
 
 ### System Info
 
@@ -209,7 +209,7 @@ DCF is supported in range 1.0.0.x, from version **1.0.0.8 onwards**. It can only
 
 #### Internal Connections
 
-**Internal Connections** between the **Sat/RF Input Ports** and the **Ethernet Data Outputs** are mapped and characterized by the following connection properties: **Transponder Name**, **TS-ID**, **ONID**, **Input Frequency** and **MC (Syntax** **"TX Destination IP:TX Destination Port"** **)**.
+**Internal Connections** between the **Sat/RF Input Ports** and the **Ethernet Data Outputs** are mapped and characterized by the following connection properties: **Transponder Name**, **TS-ID**, **ONID**, **Input Frequency**, and **MC (Syntax "TX Destination IP:TX Destination Port" )**.
 
 ## Notes
 

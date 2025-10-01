@@ -52,7 +52,7 @@ This page contains parameters related to the TCP layer: **TCP Retrans Timeout Al
 
 This page displays parameters such as **UDP Incoming Datagrams** and **UDP Incoming Errors**.
 
-It also contains the **UDP Table**, which indicates the **UDP Local Address** and the **UDP Local Port** for each UDP listener**.**
+It also contains the **UDP Table**, which indicates the **UDP Local Address** and the **UDP Local Port** for each UDP listener.
 
 ### EGP Management
 
@@ -63,7 +63,7 @@ This page contains the following parameters: **EGP Incoming Msgs**, **EGP Incomi
 This page displays the following tables:
 
 - **Inventory Table**: Contains the **Inventory Name, Inventory Serial, Inventory SW Revision, Inventory Shelf Part**, etc. for each slot in each chassis.
-- **Inventory** **Feature Table**: Indicates if one of the **NTP** and **SNMP** features is enabled**.**
+- **Inventory Feature Table**: Indicates if one of the **NTP** and **SNMP** features is enabled.
 
 ### Module Status
 
@@ -73,15 +73,15 @@ This page contains numerous page buttons that provide access to information abou
 
 This page contains the parameters **Set COM ID**, **Set COM Info**, **Set COM Version** and **Set COM Name.**
 
-There are also several page buttons that provide access to additional parameters: **Clock Setup, GPS Setup, DS1/E1 Input Setup, CC Input Setup, DS 1 Output Setup, E1 Output Setup,** **2048 Output Setup, CC Output Setup,** **RS422 Output Setup, E1/2048 Output Setup, LRM Setup, Sine Out Setup, Sine in Setup, JCC Out Setup, JCC in Setup** and **LRM E1 Setup.**
+There are also several page buttons that provide access to additional parameters: **Clock Setup, GPS Setup, DS1/E1 Input Setup, CC Input Setup, DS 1 Output Setup, E1 Output Setup**, **2048 Output Setup, CC Output Setup**, **RS422 Output Setup, E1/2048 Output Setup, LRM Setup, Sine Out Setup, Sine in Setup, JCC Out Setup, JCC in Setup**, and **LRM E1 Setup.**
 
 ### General
 
-This page contains the **Info Table**, which displays the **Gl Sys Time**, **Gl Elevation** (module elevation time), **Gl Setup** (*Save, User* or *Factory*) and **Gl Restart**.
+This page contains the **Info Table**, which displays the **Gl Sys Time**, **Gl Elevation** (module elevation time), **Gl Setup** (*Save, User* or *Factory*), and **Gl Restart**.
 
 ### Event
 
-This page displays all events in the **Event Table.** For each event, the following information is provided: **Ev ID**, **Ev M Hex Code**, **Ev Timestamp**, **Ev Chassis**, **Ev Slot**, **Ev Port**, **Ev Alm Code**, **Ev Notif Code**, **Ev Elevated** and **Ev Description**.
+This page displays all events in the **Event Table.** For each event, the following information is provided: **Ev ID**, **Ev M Hex Code**, **Ev Timestamp**, **Ev Chassis**, **Ev Slot**, **Ev Port**, **Ev Alm Code**, **Ev Notif Code**, **Ev Elevated**, and **Ev Description**.
 
 ### Alarm
 
@@ -91,17 +91,17 @@ In addition, the **Set Alarm Table** allows you to adjust the alarm level and th
 
 ### Reference
 
-This page contains all reference parameters: **Reference Clock** (e.g. *Clock A*), **Reference Input**, **Reference Bypass**, **Reference Clock Switch**, **Reference Input Switch** and **Reference Input Selection.**
+This page contains all reference parameters: **Reference Clock** (e.g. *Clock A*), **Reference Input**, **Reference Bypass**, **Reference Clock Switch**, **Reference Input Switch**, and **Reference Input Selection**.
 
 ### Phase
 
-This page contains general parameters about the phase: **Phase History Input Location**, **Phase History Time Average**, **Phase History Clock** and **Phase History Count**.
+This page contains general parameters about the phase: **Phase History Input Location**, **Phase History Time Average**, **Phase History Clock**, and **Phase History Count**.
 
-Two page buttons show the **Phase Table** and the **Phase History Table.** The Phase Table shows the **Ph A/B (100/1000/10000) Timestamp/Value.** The **Phase History Table** shows the **Ph Hist Timestamp** and the **Ph Hist Value** for each port, at each slot and for each chassis.
+Two page buttons show the **Phase Table** and the **Phase History Table.** The Phase Table shows the **Ph A/B (100/1000/10000) Timestamp/Value**. The **Phase History Table** shows the **Ph Hist Timestamp** and the **Ph Hist Value** for each port, at each slot and for each chassis.
 
 ### Frequency
 
-This page displays the **Frequency Table**, which contains the **Frequency A Timestamp**, **Frequency A Value**, **Frequency B Timestamp** and **Frequency B Value**.
+This page displays the **Frequency Table**, which contains the **Frequency A Timestamp**, **Frequency A Value**, **Frequency B Timestamp**, and **Frequency B Value**.
 
 ### NTP
 
@@ -132,17 +132,17 @@ This page contains the following tables:
 
 This page contains the parameters **SNMP Manager Initialize** (*Init v2, Init v3*), **SNMP Manager Trap** (*Alarm, All*)*,* **SNMP Notification** *(V2, V3, All)* and **SNMP Enable** *(V2 Enable, V2 Disable).*
 
-The page buttons **SNMPv2** and **SNMPv3** display the following information: the **SNMPv2 Manager Table**, **SNMPv2 User Table**, **SNMPv3 User Table** and **SNMPv3 Manager Table**.
+The page buttons **SNMPv2** and **SNMPv3** display the following information: the **SNMPv2 Manager Table**, **SNMPv2 User Table**, **SNMPv3 User Table**, and **SNMPv3 Manager Table**.
 
 ### System
 
-This page contains the parameters **System PBO**, **System Reset Clock**, **System Operational Mode**, **System TL1 Format**, **System Event Login** and **System ACO.**
+This page contains the parameters **System PBO**, **System Reset Clock**, **System Operational Mode**, **System TL1 Format**, **System Event Login**, and **System ACO.**
 
 It also contains the **Sys Keep Alive Table**, which provides the **Sys Alive Time** (*trap period*) for each **Sys Alive Type** (*TL1 session* or *SNMP session*).
 
 ### Users
 
-This page contains the **User Table**, which shows the **User Level** and the **Username** for each user**.**
+This page contains the **User Table**, which shows the **User Level** and the **Username** for each user.
 
 ### Who
 
@@ -150,7 +150,7 @@ On this page, the **Who Table** displays which port (**Who Port**) is used in th
 
 ### MTIE
 
-This page contains the parameters **MTIE Input Location, MTIE From Time, MTIE to Time, MTIE History Input Location, MTIE History Clock** and **MTIE History Count** (the number of days of MTIE history to report).
+This page contains the parameters **MTIE Input Location, MTIE From Time, MTIE to Time, MTIE History Input Location, MTIE History Clock**, and **MTIE History Count** (the number of days of MTIE history to report).
 
 The **MTIE Table** and **MTIE History Table** can be accessed via page buttons.
 

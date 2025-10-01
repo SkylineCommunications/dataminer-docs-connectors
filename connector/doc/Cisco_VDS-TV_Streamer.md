@@ -10,7 +10,7 @@ The **Cisco VDS-TV Streamer** is used to stream the content stored on the **Cisc
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitor and control | -            | -                 |
 
@@ -43,14 +43,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

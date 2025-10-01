@@ -13,6 +13,7 @@ This connector is a simple matrix connector. It does not communicate with a devi
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x | Initial version | - | - |
+| 1.0.1.x | Added input and output tables that are synchronized with the matrix control. | 1.0.0.2 | - |
 | 9001.0.0.x [Demo] | Inputs and Outputs tables for resource creation. InterApp and FlowInfo messages receiver. | 1.0.0.2 | - |
 
 ### System Info
@@ -20,6 +21,7 @@ This connector is a simple matrix connector. It does not communicate with a devi
 | Range      | DCF Integration | Cassandra Compliant | Linked Components |
 |------------|-----------------|---------------------|-------------------|
 | 1.0.0.x    | Yes             | Yes                 | -                 |
+| 1.0.1.x    | Yes             | Yes                 | -                 |
 | 9001.0.0.x | Yes             | Yes                 | -                 |
 
 ## Configuration
@@ -36,7 +38,7 @@ This connector contains a single page containing a matrix, along with options to
 
 ## DataMiner Connectivity Framework
 
-The 1.0.0.x range of the Generic Matrix connector supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The 1.0.0.x range of the Generic Matrix connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

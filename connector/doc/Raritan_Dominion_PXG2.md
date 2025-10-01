@@ -6,6 +6,9 @@ uid: Connector_help_Raritan_Dominion_PXG2
 
 The Raritan Dominion PXG2 connector facilitates the monitoring of this line of Power Distribution Units (PDU).
 
+> [!NOTE]
+> This connector is based on the Xerus Platform MIB. Its implementation has been moved to the [Raritan Xerus Platform connector](xref:Connector_help_Raritan_Xerus_Platform). Please migrate to that connector instead.
+
 ## About
 
 This connector uses **SNMP** to extract all relevant information concerning the configuration and operating configuration of Raritan's PDU.
@@ -14,19 +17,22 @@ This connector uses **SNMP** to extract all relevant information concerning the 
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x   		   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Reformatted layout measurement tables | 1.0.0.2            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
+| 1.0.1.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Installation and configuration
 
@@ -84,31 +90,31 @@ In this page are identified the transfers switches of the device. It also shows 
 
 The Control Page presents the options allowing to control the operation of the connected elements of this device.
 
-### Measurements Unit
+### Unit Sensor Values
 
 This page shows the availability of and the values of each Unit sensor.
 
-### Measurements Inlet
+### Inlet Sensor Values
 
 This page shows the availability of and the values of each Inlet sensor.
 
-### Measurements Over Current Protector
+### Over Current Protector Sensor Values
 
 This page shows the availability of and the values of each Over Current Protector sensor.
 
-### Measurements Outlet
+### Outlet Sensor Values
 
 This page shows the availability of and the values of each Outlet sensors.
 
-### Measurements External Sensor
+### External Sensor values
 
 This page shows the availability of and the values of each External sensor.
 
-### Measurements Wire
+### Wire Sensor Values
 
 This page shows the availability of and the values of each Wire sensor.
 
-### Measurements Transfer Switch
+### Transfer Switch Values
 
 This page shows the availability of and the values of each Transfer Switch sensor.
 

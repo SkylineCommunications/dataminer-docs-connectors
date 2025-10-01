@@ -17,13 +17,6 @@ This connector receives traps sent by the PixipNet solution and displays the inf
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x [SLC Main] | Monitor IDs are unique in the Monitors table. | 1.0.0.2 | - Loss of alarm and trend data for both Monitor tables. <br>- The export/import monitors feature does not work correctly if applied across the different ranges, e.g. when a 1.0.0.x monitor export file is imported to a 1.0.1.x element. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |

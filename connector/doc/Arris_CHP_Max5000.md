@@ -79,7 +79,7 @@ This is the default page of the connector. It is used for 2 main purposes: displ
 
 The **DVE creation** process involves simply clicking the button for a particular card to create the corresponding element. However, this button will not be available if the card state is **Deleted**. You can also create all the viable DVEs with the **Create All DVEs** button. Any card that does not have a DVE protocol or is in the **Deleted** state will not have an element created. It is also possible to set a view for all the DVEs in the control table, with the **Change DVE view for All** parameter.
 
-You can **remove** **a DVE** **element** in two ways (note that all trending data associated with the element will be lost when it is deleted):
+You can **remove a DVE element** in two ways (note that all trending data associated with the element will be lost when it is deleted):
 
 - Manual deletion by means of the **Create Element** toggle button in the **DVE Control Table**.
 - In case the card is removed physically, the element can only be deleted in the relevant DVE control table, which is available via the page buttons under the **DVE Control Table**.
@@ -89,7 +89,9 @@ You can **remove** **a DVE** **element** in two ways (note that all trending dat
 Each type of DVE card can be managed on a specific subpage, available via the page buttons located under the **DVE Control Table**. Deletion of a DVE element is also possible via these tables (unless the auto removal option is on at the time of removal). The following requirements apply:
 
 - If a card is removed from the shelf, the physical table will detect the card as non-existent and will set that slot's state to **Deleted**. Once it is in that state, DVE creation will be impossible for that slot, and the element will be placed in a **Removed** internal state. The **Delete button** will then become available for the corresponding table and element, so that it can then be completely removed from the system.
+
   However, note that deleting a DVE causes the loss of all trending data associated with it, so make sure the data is no longer required before you delete the DVE.
+
 - If a card is replaced by another one of a different type and the system detects this, the previous card type element will be set to the **Removed** internal state. The same rules then apply as for a removed card.
 
 If a card is replaced by another of the same type, the element will not be removed, and no data will be lost. Also, if a card is removed for a period of time and then re-inserted, and the card type does not change and the element was not removed, then no trending data will be lost, as the element always remained in the system.
@@ -129,3 +131,4 @@ This page contains transmission-related information, specifically for the transm
 In addition, the **Distortion** and **Radio Frequency configuration** can be set here for all the cards.
 
 In version 1.0.0.3 of this connector, this page has been revised so that both the radio frequency and optical transmission parameters are available. The page contains tables for both types, and page buttons for the specific configuration of each of the types.
+

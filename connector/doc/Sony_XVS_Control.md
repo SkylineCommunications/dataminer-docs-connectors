@@ -12,12 +12,6 @@ This connector uses the Serial Tally communication protocol to control either a 
 |--|--|--|--|
 | 1.0.0.x [SLC Main] | 2-1. M/E Xpt (Write/Read) <br>4. Key (Write/Read) <br>8. Snapshot (Write) <br>9. Key Snapshot (Write) <br>10. Macro Control (Write) <br>12-4. Source Name Setup (Read) | - | - |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

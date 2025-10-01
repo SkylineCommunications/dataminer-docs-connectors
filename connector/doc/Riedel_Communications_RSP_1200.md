@@ -10,7 +10,7 @@ This connector is used to communicate with an RSP 1200 smart panel. This panel h
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on   | System Impact   |
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                             | -            | -                 |
 | 2.0.0.x [SLC Main]   | Fixed API. Integration with software panel. | 1.0.0.1      | -                 |

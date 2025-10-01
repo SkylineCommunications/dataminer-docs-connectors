@@ -18,46 +18,11 @@ Note: To be able to manage the configuration, you must make sure **Ambient tempe
 
 ### Version Info
 
-<table>
-<colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Range</strong></td>
-<td><strong>Description</strong></td>
-<td><strong>DCF Integration</strong></td>
-<td><strong>Cassandra Compliant</strong></td>
-</tr>
-<tr class="even">
-<td>1.0.0.x</td>
-<td>Initial version.</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="odd">
-<td>1.1.0.x</td>
-<td>Alarm tag to Ref Stage Heat 2.</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr class="even">
-<td>2.0.0.x</td>
-<td><p>Changed behavior of operational validation for:</p>
-<ul>
-<li>Ref Stage Heat 1 &amp; 2</li>
-<li>Feed Sub</li>
-<li>Control Mode</li>
-</ul>
-<p>Added Ambient Temperature Manual control.</p></td>
-<td>No</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
+| Range | Description                                                                 | DCF Integration | Cassandra Compliant |
+|-----------|---------------------------------------------------------------------------------|---------------------|-------------------------|
+| 1.0.0.x   | Initial version.                                                                | No                  | No                      |
+| 1.1.0.x   | Alarm tag to Ref Stage Heat 2.                                                  | No                  | No                      |
+| 2.0.0.x   | Changed behavior of operational validation for:<br>- Ref Stage Heat 1 & 2<br>- Feed Sub<br>- Control Mode<br>Added Ambient Temperature Manual control. | No                  | No                      |
 
 ## Installation and configuration
 

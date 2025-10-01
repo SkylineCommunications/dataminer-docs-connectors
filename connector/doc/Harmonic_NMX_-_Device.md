@@ -40,10 +40,6 @@ The device information is retrieved via an SNMP connection and a serial connecti
 
 This connector is used by DVEs that are **automatically created** by the parent element. No user input is required.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this connector consists of the data pages detailed below.

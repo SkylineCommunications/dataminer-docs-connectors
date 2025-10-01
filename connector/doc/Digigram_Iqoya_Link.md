@@ -6,12 +6,14 @@ uid: Connector_help_Digigram_Iqoya_Link
 
 The Digigram Iqoya Link is a two-channel IP audio codec for STL (Studio to Transmitter Links) or SSL (Studio to Studio) applications.
 
+## About
+
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                           | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                                                           | No                  | Yes                     |
-| 1.1.0.x \[Main\] | New firmware (v03.08) based on v1.0.0.5; changed display key of the following tables: Receive Source Table, Receive Source Metrics Table and Send Destination URLs Table. | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version | No | Yes |
+| 1.1.0.x [Main] | New firmware (v03.08) based on v1.0.0.5; changed display key of Receive Source Table, Receive Source Metrics Table, and Send Destination URLs Table. | No | Yes |
 
 ### Product Info
 

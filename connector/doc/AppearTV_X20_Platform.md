@@ -6,6 +6,9 @@ uid: Connector_help_AppearTV_X20_Platform
 
 The AppearTV X20 Platform connector can be used to configure and display information from an AppearTV X Platform chassis. This includes both X20 and X10 chassis versions.
 
+> [!IMPORTANT]
+> For new greenfield deployments, we strongly recommend using the successor of this connector, which is available as **[Appear X platform](https://catalog.dataminer.services/details/ea164cd4-c408-4fe6-9506-087d868aee79)** in the DataMiner Catalog. The current **AppearTV X20 Platform** connector is still maintained, but in the future it will be fully replaced by the new **Appear X Platform**.
+
 On the US market, the same chassis is also offered by Sencore. Under the Sencore brand, it is offered with the following model names: **Sencore DMG-3200** (X10 Chassis), **Sencore DMG-4100**, and **Sencore DMG-4200** (X20 Chassis).
 
 It allows manual creation of DVEs for **IP Switch**, **Dual IP**, **SDI IO, Encoder, Decoder, Transcoder, DVB, Descrambler**, and **Scrambler** cards connected to the slots of the device (see "Exported Connectors" table below).
@@ -290,3 +293,4 @@ This page displays the web interface of the device. Note that the client machine
 In **version 1.2.0.29** of the connector, DCF integration has been added for the following tables: Physical Ports Table, IP Encoder Interfaces Table, Dual IP Physical Ports Table, SDI IO Physical Ports Table, ASI Input Table, ASI Output Table, and S2X Input Ports.
 
 Note: For the **SDI IO Physical Ports** table, the extra configuration parameter **SDI IO DCF Interfaces**, which can be found on the same page as the table, must be set to *Enabled*. Setting this parameter to *Enabled* will change the display key format in order to allow the creation of the interfaces. This change can affect trend and alarm data, Automation scripts, Visio drawings, etc. As such, the default setting of the parameter is *Disabled*.
+

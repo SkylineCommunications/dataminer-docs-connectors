@@ -2,7 +2,7 @@
 uid: Connector_help_2WCOM_Flex_DSR02+
 ---
 
-# 2Wcom Flex DRS02+
+# 2Wcom Flex DSR02+
 
 The **2Wcom Flex DSR02+** is an integrated receiver-decoder (IRD). This connector allows the management of the 2Wcom Flex DSR02+ device using the **SNMP** protocol.
 
@@ -43,14 +43,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 
@@ -113,3 +105,7 @@ In addition, the following page buttons display more detailed event information:
 ### Alarms
 
 On this page, the **Tuner Alarm Table** displays an overview of the alarms.
+
+### Polling Settings
+
+On this page, you can define the polling configuration.

@@ -16,45 +16,58 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Version Info
 
-| **Range**     | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                               | No                  | No                      |
-| 1.0.1.x              | Added support for software version 2.3 (Module GT11).          | No                  | No                      |
-| 1.1.0.x [SLC Main]   | Added HTTP connection for retrieving QAM outputs and services. | No                  | No                      |
+| Range              | Description                                                                          | DCF Integration | Cassandra Compliant |
+|--------------------|--------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                     | No              | No                  |
+| 1.0.1.x            | Added support for software version 2.3 (Module GT11).                                | No              | No                  |
+| 1.1.0.x            | Added HTTP connection for retrieving QAM outputs and services.                       | No              | No                  |
+| 1.1.1.x            | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
+| 1.2.0.x [SLC Main] | The element connection *IP Connection - SYSLOG*, which is used to retrieve the SYSLOG messages, now also checks the IP headers. The address should be set to **any** to correctly retrieve the UDP messages. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.4.1                       |
-| 1.0.1.x          | 2.3 3.0.1                   |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 1.4.1                      |
+| 1.0.1.x | 2.3<br>3.0.1               |
+| 1.1.1.x | 2.3<br>3.0.1               |
+| 1.2.0.x | 3.5.2                      |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description** |
-|-----------------------|-----------------|
-| WISI Tangram GT21     | GT21 table      |
-| WISI Tangram GT22     | GT22 table      |
-| WISI Tangram GT23     | GT23 table      |
-| WISI Tangram GT31     | GT31 table      |
-| WISI Tangram GT41     | GT41 table      |
+| Exported Connector | Description |
+|--------------------|-------------|
+| WISI Tangram GT21  | GT21 table  |
+| WISI Tangram GT22  | GT22 table  |
+| WISI Tangram GT23  | GT23 table  |
+| WISI Tangram GT31  | GT31 table  |
+| WISI Tangram GT41  | GT41 table  |
 
 ### Module Types
 
 The connector supports the following types:
 
+- **GT11**
 - **GT21**
 - **GT22**
 - **GT23**
-- **GT11**
 - **GT31**
 - **GT41**
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Timers
 
-#### SNMP Main connection
+Starting from version **1.1.1.6**, the **Polling Manager** feature is implemented in the connector. This feature does not require any special configuration. The existing timers are replaced with entries in the Polling Manager table, which is accessible on the Polling Manager page.
+
+> [!IMPORTANT]
+>
+> - **High CPU usage with older versions**: Agents running versions prior to **1.1.1.6** may experience high CPU (DataMiner) usage, and the device may be overloaded when an element is started. To mitigate this, the Polling Manager feature reduces system load by limiting the number of groups placed on the stack. Specifically, only **5 groups** are added at a time, with a **10-second interval** between batches.
+> - **Impact on initial polling time**: While using the Polling Manager feature decreases the system load and device strain, it also slightly **increases the initial polling time**. Polling all data from the device takes longer as the process is staggered to ensure optimal performance and system stability.
+
+### Connections
+
+#### SNMP Main Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -68,7 +81,7 @@ SNMP Settings:
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private*.
 
-#### UDP/IP Syslog connection
+#### UDP/IP Syslog Connection
 
 This connector uses a Syslog connection and requires the following input during element creation:
 
@@ -78,7 +91,10 @@ UDP/IP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The port of the connected device, by default *514*.
 
-#### HTTP HTTP Connection Connection
+> [!IMPORTANT]
+> If you are using range 1.2.x, you must set the **IP address** to the value **any** so all SYSLOG messages can be retrieved. The connector will filter the applicable messages.
+
+#### HTTP Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -88,13 +104,17 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination, by default *80*.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Configuration
+### Initialization
 
 On the **Modules page** of the main element, the IP addresses of the modules are automatically retrieved (from SW-Version 1.4cr4).
 
 The IPs can also be configured manually, but then the value will be overwritten if the controller returns another IP address. If a module does not contain an IP, no specific information is retrieved for this module.
 
-## Usage
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to Use
 
 The WISI Tangram connector creates a main element, which provides information on the chassis status and a module overview, and dynamic virtual elements for each supported module. The name of these DVEs consists of the **Main Element Name** followed by the relevant **Module Number** and **Type**, for instance *TG01 M3 (GT22)*.
 
@@ -106,7 +126,7 @@ On this page, you can find general information about the basic unit as well as m
 
 This page displays the **Modules** table, which contains a list of all SFM/MFM modules within the GT01/GN50 rack unit.
 
-For each entry of type GT21, GT22, GT23 and GT41, the **IP Address** and the **DVE Name** can be configured.
+For each entry of type GT21, GT22, GT23, and GT41, the **IP Address** and the **DVE Name** can be configured.
 
 ### Switch
 
@@ -143,7 +163,7 @@ This page displays every **Input** and **Output** for every card on slots 1 to 6
 
 ### Supported Card Types
 
-This page contains several tables, one for each card type **GT21**, **GT22,** **GT23,** **GT31** and **GT41**. Each row will generate a DVE.
+This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**, and **GT41**. Each row will generate a DVE.
 
 ### Webpage
 

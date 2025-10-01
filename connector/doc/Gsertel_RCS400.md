@@ -14,17 +14,17 @@ The connector uses an **SNMP** connection to communicate with the device.
 
 ### Version Info
 
-| **Range**     | **Description**                   | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                  | No                  | Yes                     |
-| 1.0.1.x [SLC Main]   | Column IDX in table 8200 changed. | No                  | Yes                     |
+| Range              | Description                       | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                  | No              | Yes                 |
+| 1.0.1.x [SLC Main] | Column IDX in table 8200 changed. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 6.05                        |
-| 1.0.1.x          | 6.05                        |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 6.05                       |
+| 1.0.1.x | 6.05                       |
 
 ## Installation and configuration
 

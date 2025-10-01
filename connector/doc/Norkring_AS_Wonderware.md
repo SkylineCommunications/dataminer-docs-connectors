@@ -14,7 +14,7 @@ It will export different connectors based on the information present in the Stat
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

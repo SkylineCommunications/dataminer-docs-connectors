@@ -32,14 +32,11 @@ The Cobalt Digital 9001 is an exported DVE SNMP card for a modular frame. The ca
 
 This element is created by the parent element using the **Cobalt Digital HPF 9000** connector by a toggle button. No additional configuration is needed.
 
-Initialization
+### Initialization
 
 This exported element is defined in the Card 9001 of the parent element **Cobalt Digital HPF 9000** connector.
-
-Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 
 This dynamic virtual element is created by the SNMP connector Cobalt Digital HPF 9000 via a toggle button. The user can toggle DVE creation for the specific card in the slot which exports the information virtually.
+

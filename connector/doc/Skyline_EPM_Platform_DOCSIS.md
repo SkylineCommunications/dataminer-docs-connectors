@@ -54,7 +54,9 @@ The KPIs present in the topologies are the result of aggregation performed in th
 | 1.0.2.x | Remote view tables retrieve information from multiple source elements. | - | - |
 | 1.0.3.x | Adjusted CM QAM US/DS CM COL view tables to match with the source and added a status parameter to the CM QAM US/DS tables. | - | - |
 | 1.0.4.x | - Partial table option enabled on several tables to improve loading time of the filter box on EPM topology. <br>- Parameter added that lets the user change the name of the Automation script that notifies the back-end element of new data to be ingested. | - | - |
-| 1.0.5.x [SLC Main]   | New exceptions added for the correction of the default value for average percentage US and DS utilization. | - | - |
+| 1.0.5.x | New exceptions added for the correction of the default value for average percentage US and DS utilization. | - | - |
+| 1.0.6.x | Removed lower level view tables (i.e. CM table) for increased performance. | - | - |
+| 1.0.7.x [SLC Main]   | Added front-end logic so now the connector can support both front-end and back-end elements, compatible with the multi-FE feature. | - | - |
 
 ### System Info
 
@@ -66,6 +68,8 @@ The KPIs present in the topologies are the result of aggregation performed in th
 | 1.0.3.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.4.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.5.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.7.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -96,6 +100,8 @@ On the **Configuration Passives** page, the **Load Time** parameter allows you t
 
 In range **1.0.4.x**, the **Script Name** is added, which allows you to change the Automation script to be executed. This parameter is available on the **Configuration** page.
 
+In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the back-end element.
+
 ### Inner workflow of the EPM Solution
 
 The provisioning of the EPM Solution is sequential and involves the following components:
@@ -119,3 +125,4 @@ The back-end elements are in charge of requesting the **passives** from the CMTS
 The messaging system integration requires the use of Correlation rules and Automation scripts that will pick up on the information events and send the corresponding message to a message listener to begin the logical flow.
 
 Only CCAP elements that are active and registered in the Registration table are used to filter out passive and non-passive files.
+

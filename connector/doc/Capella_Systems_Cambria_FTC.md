@@ -40,14 +40,6 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination (default: *8647*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 With this connector, you can monitor the general and system information for your Capella Systems.

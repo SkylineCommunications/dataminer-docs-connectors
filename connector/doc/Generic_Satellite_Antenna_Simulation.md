@@ -14,7 +14,7 @@ Several ACU protocols are supported by means of the **ACU Protocol Parameters** 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
+| Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version, with DCF support for outputs      | -            | -                 |
 | 1.0.1.x              | DCF integration and ACU subscription               | -            | -                 |
@@ -89,7 +89,9 @@ This page shows the name of the antenna.
 
 ## DataMiner Connectivity Framework
 
-The 1.0.2.x range of the Generic Satellite Antenna Simulation protocol supports the usage of DCF and can only be used on a DMA with **9.0 CU9** as the minimum version. DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
+The 1.0.2.x range of the Generic Satellite Antenna Simulation connector supports the usage of DCF.
+
+DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
 ### Interfaces
 

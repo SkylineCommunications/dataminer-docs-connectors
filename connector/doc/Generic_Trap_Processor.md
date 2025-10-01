@@ -4,52 +4,35 @@ uid: Connector_help_Generic_Trap_Processor
 
 # Generic Trap Processor
 
-This connector will receive traps on a DMA. It allows you to specify rules that received traps need to match. Traps matching these rules will be logged with information that is generated based on the rule and trap data.
-
 ## About
 
-### Version Info
+The **Generic Trap Processor** is a powerful tool that allows you to define rules for collecting and processing SNMP traps from various sources. With this tool, you can specify which traps to capture, filter, transform, and display via a user-friendly connector. The Generic Trap Processor simplifies the monitoring of the most important system events and ensures appropriate alarm levels are assigned. By enabling the team to control message volume, this tool also helps to prevent alert fatigue.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+![Generic Trap Processor Overview](~/connector/images/GenericTrapProcessor_Overview.png)
 
-### Product Info
+> [!TIP]
+> For an enhanced experience, explore the complete package, which includes this connector and the low-code app: [Smart Trap Processor Package](https://catalog.dataminer.services/details/0c70b4b6-f687-459f-8cc9-bd1c9025dd50).
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
+## Key Features
 
-### System Info
+- **Flexible processing rules**: Customizable rules that can be tailored to suit any system or device sending SNMP traps.
+- **Intelligent analytics**: Integration of intelligence and analytics into data sets that typically lack enhanced monitoring capabilities.
+- **Automated alarm generation and clearance**: Automatically generating and clearing DataMiner alarms for incoming traps based on Set and Clear OIDs.
+- **Centralized monitoring and configuration**: Configuring processing logic and monitoring all processed traps for an entire DataMiner System via a single, user-friendly connector.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Use Cases
 
-## Configuration
+The Smart Trap Processor tool is invaluable for monitoring infrastructure, benefiting NOC personnel, IT professionals, network administrators, and system engineers.
 
-### Connections
+Common use cases include:
 
-#### SNMP Main Connection
+- Alerting network administrators to critical events like link failures, power outages, and authentication issues by processing traps from routers and switches.
+- Notifying users about system-related events such as software crashes, hardware failures, and high resource consumption by processing traps from servers and workstations.
+- Notifying on-site personnel of HVAC failures, weather-related events, and other environmental issues by processing traps from environmental sensors.
+- Filtering out informational or non-critical traps from sources prone to generating excessive noise.
+- Filtering different types of traps from a single source into their own processor, when using a central trap manager to aggregate traps for an entire system. The distinction could be based on factors like location or device type.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+## Technical info
 
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP of the device. For this connector, typically 127.0.0.1 is specified.
-
-## How to Use
-
-The element created with this connector has the following data pages:
-
-- **General**: Contains 3 tables:
-
-- **Rules table**: Allows you to add matching rules for received traps. A rule contains two OIDs, Alarm and Clear, and also contains binding filters. This is used to determine if a trap matches the rule. You can define the formats for Unique Entry, Alarm and Clear in this table. These formats contain placeholders that will be replaced with the data from the received trap.
-  - **Source Name Table**: Allows you to specify rules for the name generation based on the trap information.
-  - **Source IP Name Table**: Allows you to map IP addresses to names. The element will only log traps if the source IP is included in this table.
-
-- **Import Operations**: Allows you to import the rule tables from CSV files. In these files, a semicolon (";") should be used as separator. Importing allows you to easily share and reuse rules.
-
-- **Processed Message**: Contains a table listing the processed messages. Each entry has a matching rule. The information in the entry is based on the received trap and formatted based on the matching rules.
-
-- **Received Traps**: Displays the Received Traps table, which contains an entry per received trap OID for which no match was found with the current rules. This can help you to determine if a new rule needs to be added.
+> [!NOTE]
+> For detailed technical information, refer to the [Technical help page](xref:Connector_help_Generic_Trap_Processor_Technical).

@@ -4,49 +4,31 @@ uid: Connector_help_Pro-Bel_Cygnus
 
 # Pro-Bel Cygnus
 
-This connector allows to monitor and configure the the Pro-Bel Cygnus routing system.
+This connector allows you to monitor and configure the Pro-Bel Cygnus routing system, using smart-serial communication (with two connections set up as redundant polling) or SNMP communication.
 
 ## About
 
-This connector allows to monitor and configure the Pro-Bel Cygnus routing system, using smart-serial communication. The connector has two smart-serial connections which are set up as redundant polling.
-
 ### Version Info
 
-| **Range** | **Description**      | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version      | No                  | Yes                     |
-| 2.0.0.x          | Smart Serial version | No                  | Yes                     |
+| Range   | Description          | DCF Integration | Cassandra Compliant |
+|---------|----------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version      | No              | Yes                 |
+| 2.0.0.x | Smart-serial version | No              | Yes                 |
+| 3.0.0.x | SNMP version         | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | -                           |
-| 2.0.0.x          | -                           |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | -                          |
+| 2.0.0.x | -                          |
+| 3.0.0.x | -                          |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Configuration with Serial Connections
 
-#### Serial connection - Main
-
-SERIAL CONNECTION:
-
-- Direct connection:
-
-  - **Baudrate**: 38400
-  - **Databits**: 8
-  - **Stopbits**: 1
-  - **Parity**: Even
-  - **FlowControl**: *No*
-
-- Interface connection:
-
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device.
-  - **Bus address**: 1
-
-#### Serial connection - Secondary
+#### Serial Connection - Main
 
 SERIAL CONNECTION:
 
@@ -64,22 +46,106 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device.
   - **Bus address**: 1
 
-## Usage
+#### Serial Connection - Secondary
 
-### Matrix
+SERIAL CONNECTION:
+
+- Direct connection:
+
+  - **Baudrate**: 38400
+  - **Databits**: 8
+  - **Stopbits**: 1
+  - **Parity**: Even
+  - **FlowControl**: *No*
+
+- Interface connection:
+
+  - **IP address/host**: The polling IP of the device.
+  - **IP port**: The IP port of the device.
+  - **Bus address**: 1
+
+### Configuration with SNMP Connection
+
+#### SNMP Main connection
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: 161
+- **Get community string**: public
+- **Set community string**: private
+
+## How to Use
+
+### Version with Serial Connections
+
+#### Matrix
 
 This page gives an overview of the current matrix configuration. The number of inputs and outputs can be configured in the **Number of Inputs** and **Number of Outputs** parameters, respectively.
 
 The Output Table gives an overview of which input is connected to which output.
 
-### MON Overview
+#### MON Overview
 
 The **Set MON Name** parameter can be used to add an entry to the **MON Overview** table. Once an entry has been added to the **MON Overview** table, the **Output Table** will be polled.
 
-### Advanced
+#### Advanced
 
-This page allows to set advanced switching using the **Advanced Switching** parameter.
+This page allows you to set advanced switching using the **Advanced Switching** parameter.
 
-### Matrix Status
+#### Matrix Status
 
-On this page an overview is given of the crosspoints (**Crosspoints**), the crosspoints buffer (**Crosspoints Buffer**), and status information (**Status Information** and **Communication Status**).
+On this page, you can find an overview of the crosspoints (**Crosspoints**), the crosspoints buffer (**Crosspoints Buffer**), and status information (**Status Information** and **Communication Status**).
+
+### Version with SNMP Connection
+
+### General
+
+This page shows the general information of the device. It displays its status and name.
+
+### Matrices
+
+This page displays the Matrices Table.
+
+### Levels
+
+This page displays the Levels Table. The format of the index is {Matrices Index}.{Levels ID}.
+
+### Sources
+
+This page displays the Sources Table. The format of the index is {Levels Index}.{Sources ID}.
+
+The display name can be configured in the format **Source Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
+
+The **Audio Modify** parameter specifies the type of audio modification performed on the sources, such as *Audio Normal* or *Audio Swap*. This can be configured in the table.
+
+The respective enabled and lock state, which are used in the matrix, can also be configured in the table.
+
+#### Source Association
+
+This page displays the Source Association Table and the Source Association Sources.
+
+#### Source Settings
+
+In the Sources Table, there is a display name column to identify each row. The format of this display name is "**Source Index**.**Choice**". This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name. The default configuration uses the 16-character name.
+
+### Destinations
+
+This page displays the Destinations Table. The format of the index is {Levels Index}.{Destinations Id}.
+
+The display name can be configured in the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name.
+
+The routed source can also be configured in the table, as well as the respective enabled and lock state, which are used in the matrix.
+
+#### Destination Settings
+
+The Destinations Table display name can be configured here. It uses the format **Destination Index**.**Choice**. This choice can be either the alternative name, a 4-character name, an 8-character name, a 12-character name, or a 16-character name. The default configuration uses the 16-character name.
+
+### Matrix
+
+This page shows the matrix, an overview of the crosspoints of the destinations and sources.
+
+The sources of each destination can be configured with this matrix, and destinations and sources can be locked.

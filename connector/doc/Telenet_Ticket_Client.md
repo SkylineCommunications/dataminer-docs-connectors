@@ -19,7 +19,7 @@ As an extra check to monitor the correct operation of the entire ticketing flow,
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitor and control | -            | -                 |
 

@@ -10,15 +10,9 @@ The PM130 PLUS is a compact, multi-function, three-phase AC power meter, designe
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact** |
+| Range                | Key Features                   | Based on     | System Impact     |
 |----------------------|--------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | General monitoring parameters. | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
 
 ### System Info
 

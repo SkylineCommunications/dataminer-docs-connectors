@@ -12,7 +12,7 @@ With three timers, all parameters of the device are polled. The parameters are d
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                             | Yes                 | No                      |
 | 1.0.1.x          | Added DVEs                                  | Yes                 | No                      |

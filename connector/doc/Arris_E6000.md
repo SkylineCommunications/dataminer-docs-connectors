@@ -16,12 +16,12 @@ Range **2.0.1.x** of the connector only uses one SNMPv3 connection to monitor th
 
 ### Version Info
 
-| **Range**            | **Description**                  | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version.                 | No                  | Yes                     |
-| 2.0.0.x              | Supports a new firmware version. | No                  | Yes                     |
-| 2.0.1.x              | Based on 2.0.0.3. Uses SNMPv3.   | No                  | Yes                     |
-| 3.0.0.x              | Customer-specific version.       | No                  | Yes                     |
+| Range              | Description                      | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version.                 | No              | Yes                 |
+| 2.0.0.x            | Supports a new firmware version. | No              | Yes                 |
+| 2.0.1.x            | Based on 2.0.0.3. Uses SNMPv3.   | No              | Yes                 |
+| 3.0.0.x            | Customer-specific version.       | No              | Yes                 |
 
 ### Product Info
 
@@ -146,10 +146,10 @@ The interfaces page contains an overview of the interfaces of the Arris E6000 de
 
 The **Interface Entry** page button allows you to visualize more information about the interfaces in the **Interface Entry Table**. This table contains information about packets that have been sent or received through an interface. Link up/down traps for the interface can be enabled/disabled via the **Link Up Down Trap Enable** parameter.
 
-Note**:**
-
-- The interface utilization (Utilization In and Utilization Out) can be calculated from the Interfaces MIB tables, used from the Card Utilization Hidden Table (OID: 1.3.6.1.4.1.4998.1.1.10.2.23), or taken from the CLI with the command "show interface utilization". The parameter **Card Utilization Source** allows you to select which of these options should be used.
-- The displayed interface speeds (Bandwidth) are based on the ifTable and the ifxTable. By default, the speed from the ifTable is used, unless its value is equal to 2^32 (4,294,967,295), in which case the speed from the ifxTable (ifHighSpeed) is used instead.
+> [!NOTE]
+>
+> - The interface utilization (Utilization In and Utilization Out) can be calculated from the Interfaces MIB tables, used from the Card Utilization Hidden Table (OID: 1.3.6.1.4.1.4998.1.1.10.2.23), or taken from the CLI with the command "show interface utilization". The parameter **Card Utilization Source** allows you to select which of these options should be used.
+> - The displayed interface speeds (Bandwidth) are based on the ifTable and the ifxTable. By default, the speed from the ifTable is used, unless its value is equal to 2^32 (4,294,967,295), in which case the speed from the ifxTable (ifHighSpeed) is used instead.
 
 ### Cards Page
 
@@ -163,7 +163,7 @@ This page provides an overview of notifications and alarms received from the Arr
 
 A distinction is made between alarms and notifications. When the device sends an alarm trap, the device is expected to send another related trap to acknowledge that the alarm has been cleared. Notifications, however, are considered to be just informational, so the device will not send any subsequent traps related to a notification. The connector contains two types of tables related to alarms and notifications.
 
-The notifications tables (**Notifications Table** and **Generic Notifications** **Table**) contain notifications and the **Alarms Table** contains alarms.
+The notifications tables (**Notifications Table** and **Generic Notifications Table**) contain notifications and the **Alarms Table** contains alarms.
 
 With the **Auto Clear** page button, the number of notifications that should be stored in a notification table (Notifications Table and Generic Notifications Table) can be configured. A maximum duration (**Notification Max Duration**) can be set as a number of days. Notifications that are older than the set number of days will automatically be removed from the table. In addition, the maximum number of notifications that the notification table should contain can be set through the **Notification Max Number** parameter. Once the table contains more notifications than the specified number, the oldest notifications will automatically be removed from the table. The parameter **Notification Count** shows the number of notifications present in the table.
 
@@ -175,36 +175,36 @@ Note that some traps will not appear in the table but will immediately update th
 
 The following table provides an overview of the traps that are processed by the connector. The "Type" column indicates whether the trap is shown in a notification table (type Notification), is shown in an alarm table (type Alarm), or updates a parameter in another table (type Table Update). In the latter case, the name of the table and the parameters that are updated are shown in the columns "Table" and "Updated Columns", respectively.
 
-| **Trap OID**                   | **Trap Name**                           | **Type**     | **Table**                   | **Updated Columns**                                    |
-|--------------------------------|-----------------------------------------|--------------|-----------------------------|--------------------------------------------------------|
-| 1.3.6.1.4.1.4998.1.1.5.3.0.1   | cardOverload                            | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.5.3.0.2   | sysOverload                             | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.1 | aaaServerUnreachableTrap                | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.2 | aaaServerGroupUnreachableTrap           | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.3 | aaaServerAuthFailTrap                   | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.4 | secuLocalAuthFailTrap                   | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.5 | secuLineAuthFailTrap                    | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.7 | cadIpdrNoPrimaryCollector               | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.8 | cadIpdrStreamingDisabled                | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.6.1.1.0.9 | cadIpdrReportCycleMissed                | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.19 | cardTempOutOfRangeNotification          | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.20 | cardTempNoReportNotification            | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.21 | cardTempOverHeatNotification            | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.24 | noLicenseNotification                   | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.25 | cerCardPrStateChange                    | Table Update | Card Table                  | Card Primary State                                     |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.26 | cerCardSecStateChange                   | Table Update | Card Table                  | Card Secondary State                                   |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.27 | cerCardDetectedChange                   | Table Update | Card Table                  | Card Detected, Card Sub Detected                       |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.28 | cerCardDplxStatusChange                 | Table Update | Card Table                  | Card Duplexing Status,Card Detected, Card Sub Detected |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.29 | cerPortPrStateChange                    | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.30 | cerPortSecStateChange                   | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.35 | cerDiskVolumeUsageNotification          | Alarm        | Alarms Table                |                                                        |
-| 1.3.6.1.4.1.4998.1.1.10.1.0.36 | cerDiskVolumeAutoDeleteFileNotification | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.100.1.0.1 | cadCmtsExportNotification               | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.4.1.4998.1.1.100.1.0.2 | cadCmtsImportNotification               | Notification | Notifications Table         |                                                        |
-| 1.3.6.1.6.3.1.1.5.1            | coldStart                               | Notification | Generic Notifications Table |                                                        |
-| 1.3.6.1.6.3.1.1.5.3            | linkDown                                | Table Update | Interface Table             | Admin Status, Operational Status                       |
-| 1.3.6.1.6.3.1.1.5.4            | linkUp                                  | Table Update | Interface Table             | Admin Status, Operational Status                       |
-| 1.3.6.1.6.3.1.1.5.5            | authenticationFailure                   | Notification | Generic Notifications Table |                                                        |
+| Trap OID | Trap Name | Type | Table | Updated Columns |
+|--|--|--|--|--|
+| 1.3.6.1.4.1.4998.1.1.5.3.0.1 | cardOverload | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.5.3.0.2 | sysOverload | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.1 | aaaServerUnreachableTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.2 | aaaServerGroupUnreachableTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.3 | aaaServerAuthFailTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.4 | secuLocalAuthFailTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.5 | secuLineAuthFailTrap | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.7 | cadIpdrNoPrimaryCollector | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.8 | cadIpdrStreamingDisabled | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.6.1.1.0.9 | cadIpdrReportCycleMissed | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.19 | cardTempOutOfRangeNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.20 | cardTempNoReportNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.21 | cardTempOverHeatNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.24 | noLicenseNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.25 | cerCardPrStateChange | Table Update | Card Table | Card Primary State |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.26 | cerCardSecStateChange | Table Update | Card Table | Card Secondary State |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.27 | cerCardDetectedChange | Table Update | Card Table | Card Detected, Card Sub Detected |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.28 | cerCardDplxStatusChange | Table Update | Card Table | Card Duplexing Status,Card Detected, Card Sub Detected |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.29 | cerPortPrStateChange | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.30 | cerPortSecStateChange | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.35 | cerDiskVolumeUsageNotification | Alarm | Alarms Table |  |
+| 1.3.6.1.4.1.4998.1.1.10.1.0.36 | cerDiskVolumeAutoDeleteFileNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.100.1.0.1 | cadCmtsExportNotification | Notification | Notifications Table |  |
+| 1.3.6.1.4.1.4998.1.1.100.1.0.2 | cadCmtsImportNotification | Notification | Notifications Table |  |
+| 1.3.6.1.6.3.1.1.5.1 | coldStart | Notification | Generic Notifications Table |  |
+| 1.3.6.1.6.3.1.1.5.3 | linkDown | Table Update | Interface Table | Admin Status, Operational Status |
+| 1.3.6.1.6.3.1.1.5.4 | linkUp | Table Update | Interface Table | Admin Status, Operational Status |
+| 1.3.6.1.6.3.1.1.5.5 | authenticationFailure | Notification | Generic Notifications Table |  |
 
 ### Backup & Restore Config Page
 

@@ -16,19 +16,19 @@ A serial connection is used to get and set the LSR state.
 
 ### Version Info
 
-| **Range** | **Description**                                       | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version                                       | No                  | Yes                     |
-| 2.0.0.x          | Usage of tables to handle all slots, based on 1.0.0.6 | No                  | Yes                     |
-| 2.0.1.x          | Add (serial) command LRS / REN, based on 2.0.0.9      | No                  | Yes                     |
-| 3.0.0.x          | New protocol name, based on 2.0.1.5                   | No                  | Yes                     |
-| 3.1.0.x          | New firmware, based on 3.0.0.1                        | No                  | Yes                     |
+| Range   | Description                                           | DCF Integration | Cassandra Compliant |
+|---------|-------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial Version                                       | No              | Yes                 |
+| 2.0.0.x | Usage of tables to handle all slots, based on 1.0.0.6 | No              | Yes                 |
+| 2.0.1.x | Add (serial) command LRS / REN, based on 2.0.0.9      | No              | Yes                 |
+| 3.0.0.x | New protocol name, based on 2.0.1.5                   | No              | Yes                 |
+| 3.1.0.x | New firmware, based on 3.0.0.1                        | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 3.1.0.x          | FW-11247                    |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 3.1.0.x | FW-11247                   |
 
 ## Installation and configuration
 

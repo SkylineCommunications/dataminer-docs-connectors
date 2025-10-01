@@ -14,17 +14,17 @@ This is a read-only connector, so it is not possible to configure the device wit
 
 ### Version Info
 
-| **Range**     | **Description**                   | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version.                  | No                  | Yes                     |
-| 1.0.1.x              | Display keys added to the tables. | No                  | Yes                     |
+| Range              | Description                       | DCF Integration | Cassandra Compliant |
+|--------------------|-----------------------------------|-----------------|---------------------|
+| 1.0.0.x [SLC Main] | Initial version.                  | No              | Yes                 |
+| 1.0.1.x            | Display keys added to the tables. | No              | Yes                 |
 
 ### Product Info
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 4.5.0                       |
-| 1.0.1.x          | 4.5.0                       |
+| Range   | Supported Firmware Version |
+|---------|----------------------------|
+| 1.0.0.x | 4.5.0                      |
+| 1.0.1.x | 4.5.0                      |
 
 ## Installation and configuration
 

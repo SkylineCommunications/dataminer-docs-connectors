@@ -12,7 +12,7 @@ The Redus Switch can be used as a standalone redundancy switch for third-party e
 
 ### Version Info
 
-| **Range** | **Description**                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                             | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version.                                                                         | No                  | Yes                     |
 | 1.0.1.x          | Improvement of logic and UI - No support for multiple elements polling the same IP:Port. | No                  | Yes                     |
@@ -94,6 +94,6 @@ This page displays the critical **Device Messages** of the device, i.e. the **AS
 
 ## DataMiner Connectivity Framework
 
-The **2.0.1.x** connector range of the **SA Redus Switch** protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The **2.0.1.x** connector range of the **SA Redus Switch** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).

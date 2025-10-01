@@ -12,7 +12,7 @@ This connector uses a serial connection to manage and monitor the JDSU MVP-200.
 
 ### Version Info
 
-| **Range** | **Description**                 | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                     | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------|---------------------|-------------------------|
 | 1.1.3.x          | New Alarm Preset feature added. | No                  | Yes                     |
 

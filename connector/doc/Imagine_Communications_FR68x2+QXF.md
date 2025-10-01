@@ -51,10 +51,6 @@ SMART-SERIAL CONNECTION:
 - **IP address/host**: The local DataMiner IP to receive responses (e.g. *172.0.0.50 or keyword "any"*).
 - **IP port**: The IP port of the DMA (fixed value: *4000*).
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

@@ -12,7 +12,7 @@ This connector periodically polls the target device using an SNMP connection. It
 
 ### Version Info
 
-| **Range** | **Description**                                              | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version. Compatible with C510 XR and C510 IP models. | Yes                 | Yes                     |
 
@@ -95,7 +95,7 @@ This page provides access to the web interface of the device. Note that the clie
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the **Systembase C500 Series** protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The **1.0.0.x** connector range of the **Systembase C500 Series** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

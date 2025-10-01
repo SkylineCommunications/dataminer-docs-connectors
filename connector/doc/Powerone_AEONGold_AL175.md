@@ -12,7 +12,7 @@ This connector retrieves status and configuration parameters through SNMP. It ca
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact** |
+| Range                | Key Features           | Based on     | System Impact     |
 |----------------------|------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Monitoring and control | -            | -                 |
 
@@ -68,6 +68,6 @@ The remaining pages are used to monitor the system and the respective alarms.
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Powerone AEONGold AL175 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** connector range of the Powerone AEONGold AL175 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).

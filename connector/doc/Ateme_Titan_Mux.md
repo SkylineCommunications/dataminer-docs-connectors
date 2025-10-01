@@ -12,19 +12,22 @@ Ateme Titan Mux is used to interface with the Multiplexer Processing API and Ala
 
 | Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
+| 1.0.0.x [Obsolete]  | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main] | Converted the History Alarms table to a partial one and added a configurable maximum number of alarms history to get.  | 1.0.0.7 | Existing custom reports and Automation scripts that use the History Alarms table may no longer work as expected. |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 1.5.11.3-0             |
+| 1.0.1.x   | 1.5.11.3-0             |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -56,4 +59,4 @@ The **Inputs Programs** page contains detailed program-specific information and 
 
 The same applies for the **Outputs** and **Outputs Programs** page.
 
-The **Active Alarms** page contains a list of active alarms and the alarm count, and the **History Alarms** page lists the full alarm history and displays the history alarm count.
+The **Active Alarms** page contains a list of active alarms and the alarm count, and the **History Alarms** page lists the alarm history and displays the full history alarm count. The number of alarms polled in the alarm history is limited to the **History Alarms Maximum Amount**.

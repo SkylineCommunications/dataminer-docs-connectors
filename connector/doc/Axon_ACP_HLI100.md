@@ -12,10 +12,10 @@ The **Axon ACP HLI100** connector can be used to display and configure informati
 
 ### Version Info
 
-| **Range** | **Key Features**                                                     | **Based on** | **System Impact**                                                                                                             |
-|-----------|----------------------------------------------------------------------|--------------|-------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.1   | Initial version                                                      | -            | -                                                                                                                             |
-| 1.0.1.1   | Scheduling for logo presets added. Logo presets now shown in tables. | 1.0.0.1      | Single logo presets A and B are no longer shown as individual parameters. Trend and alarm information for these will be lost. |
+| Range   | Key Features                                                         | Based on | System Impact                                                                                                                 |
+|---------|----------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------------------------------------|
+| 1.0.0.1 | Initial version                                                      | -        | -                                                                                                                             |
+| 1.0.1.1 | Scheduling for logo presets added. Logo presets now shown in tables. | 1.0.0.1  | Single logo presets A and B are no longer shown as individual parameters. Trend and alarm information for these will be lost. |
 
 ### Product Info
 
@@ -47,7 +47,7 @@ SERIAL CONNECTION:
 
 - Interface connection
 
-- **IP address/host**: The polling IP or URL of the destination
+  - **IP address/host**: The polling IP or URL of the destination
   - **Bus address**: The bus address of the device is the slot number/position of the card in the frame.
 
 #### Serial IP Connection - Broadcast Connection
@@ -94,7 +94,7 @@ From version **1.0.1.x** onwards, the **Logo Scheduler A** and **Logo Scheduler 
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** **and 1.0.1.x** range of the Axon ACP HLI100 protocol support the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x and 1.0.1.x** range of the Axon ACP HLI100 connector support the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

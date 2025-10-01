@@ -12,10 +12,10 @@ The **Arris Alarm Central** sends notifications to DataMiner via HTTP POST reque
 
 ### Version Info
 
-| **Range** | **Description**                                                         | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version.                                                        | No                  | Yes                     |
-| 2.0.0.x          | Changed protocol type to HTTP. The protocol can now forward HTTP posts. | No                  | Yes                     |
+| Range   | Description                                                             | DCF Integration | Cassandra Compliant |
+|---------|-------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version.                                                        | No              | Yes                 |
+| 2.0.0.x | Changed protocol type to HTTP. The protocol can now forward HTTP posts. | No              | Yes                 |
 
 ## Installation and Configuration
 

@@ -12,14 +12,14 @@ With this connector, you can keep track of the **cable modems** that are **onlin
 
 ### Version Info
 
-| **Range**            | **Description**                                                                              | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version.                                                                             | No                  | No                      |
-| 1.1.0.x              | Release version.                                                                             | No                  | No                      |
-| 1.0.2.x [Obsolete]     |Release version with C4 and CCAP model device autodetection.                                 | No                  | No                      |
-| 1.0.3.x [Obsolete]     |Display key column added (Signal Quality Table), naming format for correct alarm monitoring. | No                  | No                      |
-| 1.0.4.x              | Cassandra compliant.                                                                         | No                  | Yes                     |
-| 1.0.5.x [SLC Main]   | DCF feature added.                                                                           | Yes                 | Yes                     |
+| Range              | Description                                                                                  | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version.                                                                             | No              | No                  |
+| 1.1.0.x            | Release version.                                                                             | No              | No                  |
+| 1.0.2.x [Obsolete] | Release version with C4 and CCAP model device autodetection.                                 | No              | No                  |
+| 1.0.3.x [Obsolete] | Display key column added (Signal Quality Table), naming format for correct alarm monitoring. | No              | No                  |
+| 1.0.4.x            | Cassandra compliant.                                                                         | No              | Yes                 |
+| 1.0.5.x [SLC Main] | DCF feature added.                                                                           | Yes             | Yes                 |
 
 ### Product Info
 
@@ -79,7 +79,7 @@ On this page, you can monitor parameters such as cable model upstream channel **
 
 ### Measurements -- Downstream Channels
 
-On this page, you can monitor parameters such as cable model downstream channel **offline**, **online**, and **initializing** elements, the **channel capacity**, **bitrate**, and **RF** **utilization**, as well as the **signal to noise ratio**, **error**, **unerror**, and **corrected bits**, and the **consecutive/non-consecutive alarm state**.
+On this page, you can monitor parameters such as cable model downstream channel **offline**, **online**, and **initializing** elements, the **channel capacity**, **bitrate**, and **RF utilization**, as well as the **signal to noise ratio**, **error**, **unerror**, and **corrected bits**, and the **consecutive/non-consecutive alarm state**.
 
 ### Measurement - Gigabit Interfaces
 
@@ -87,7 +87,7 @@ On this page, you can monitor parameters such as **bitrate**, **utilization**, *
 
 ### Interfaces
 
-This page displays information about the interfaces, such as the **type**, **bandwidth**, **state**, **administrative** **status**, and **operational status**.
+This page displays information about the interfaces, such as the **type**, **bandwidth**, **state**, **administrative status**, and **operational status**.
 
 ### Web Interface
 

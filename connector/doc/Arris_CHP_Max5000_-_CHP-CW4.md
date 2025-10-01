@@ -32,10 +32,6 @@ The CHP CORWaver 4 module features Quad Density modular transmitter design, 40 t
 
 This SNMP connector is used by DVE child elements that are automatically created by the parent connector [Arris CHP Max5000](xref:Connector_help_Arris_CHP_Max5000) if the respective row in the **DVE Control Table** is enabled.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -48,3 +44,4 @@ This DVE child element has the following data pages:
 - **Optical Transmitter**: Allows you to check status information related to the optical transmitter, such as **Laser Button Status, Temperature** and **Bias Current**. You can also configure some of the transmitter parameters, such as **Fiber Length, Modulation Mode**, etc.
 - **RF Transmitter:** Displays the **RF Transmitter Input and Output Tables** and allows you to adjust some output-related parameters.
 - **RF Transmitter Configuration:** Allows you to configure **AGC Mode, Laser Drive, RF Gain** and **Flatness Tilt.**
+

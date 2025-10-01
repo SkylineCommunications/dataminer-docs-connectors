@@ -42,7 +42,7 @@ This page displays information about the system configuration. You can also down
 
 ### Network Configuration Page
 
-This page displays the **Network** **Interfaces Table**.
+This page displays the **Network Interfaces Table**.
 
 ### Transcoding Overview Page
 

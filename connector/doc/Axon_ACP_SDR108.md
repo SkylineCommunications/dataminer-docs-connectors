@@ -54,14 +54,6 @@ SMART-SERIAL CONNECTION:
   - **IP address/host**: *any*
   - **Bus address**: The slot number/position of the card in the frame.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element has the following data pages:
@@ -70,3 +62,4 @@ The element has the following data pages:
 - **Status**: Displays status parameters related to the card itself, such as SDI Input, PLL Rate, SFP Status, SFP Temperature Status, SFP Voltage Status, Ports 1 and 2 Power, Bias and Wavelength, etc.
 - **Settings**: Allows you to configure card settings such as PLL Set, Reclock, Mute, HDMI, HMDI Format, HDMI DVI Mode, HDMI Mute All, CBVS and CBVS Format.
 - **Events**: Displays information related to events.
+
