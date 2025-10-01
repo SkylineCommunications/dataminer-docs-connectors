@@ -9196,6 +9196,12 @@
   items:
   - name: Utah Scientific 400 Router RCPv3
     topicUid: Connector_help_Utah_Scientific_400_Router_RCPv3
+  - name: Utah Scientific 100 Router RCPv3
+    topicUid: Connector_help_Utah_Scientific_100_Router_RCPv3
+  - name: Utah Scientific 100 UDS
+    topicUid: Connector_help_Utah_Scientific_100_UDS
+  - name: Utah Scientific 100 X
+    topicUid: Connector_help_Utah_Scientific_100_X
 - name: Valere Power
   items:
   - name: Valere Power DC Power System
