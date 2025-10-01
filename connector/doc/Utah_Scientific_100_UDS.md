@@ -19,7 +19,7 @@ The **Utah Scientific 100 UDS** is a **compact, modular routing/distribution sys
 
 ## Installation and configuration
 
-This connector uses both **Serial**. The Serial communication retrieves and updates the crosspoints for the Matrix.
+This connector uses **Serial**. The Serial communication retrieves and updates the crosspoints for the Matrix.
 
 ### Serial
 - **Type of port:** TCP/IP
