@@ -2964,6 +2964,9 @@
   items:
   - name: DYN Live Production Manager
     topicUid: Connector_help_DYN_Live_Production_Manager
+    items:
+      - name: DYN Live Production Manager Technical
+        topicUid: Connector_help_DYN_Live_Production_Manager_Technical
 - name: E S Manebach
   items:
   - name: E S Manebach VITex INKA 4
