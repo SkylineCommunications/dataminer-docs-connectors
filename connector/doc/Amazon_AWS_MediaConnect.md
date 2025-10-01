@@ -71,6 +71,8 @@ The element created with this connector consists of the following data pages:
 
 - **General**: Contains the parameters **Account**, **Access Key ID**, and **Secret Access Key**, which are used for authentication and verification. The parameters SNS URL and SNS Topic ARN contain the information related to the SNS subscription topic from which the connector received unsolicited messages.
 
+  Three different types of authentication mechanisms (*Key Pair*, *Metadata*, and *Assume Role*) are available in range **1.0.1.x**. You can select the preferred mechanism using the **Credentials Source** parameter.
+
 - **SNS Debug**: The parameter **SNS Message** contains the last received SNS message. This can be used for debug purposes to determine which information was received.
 
 - **Flow Tree**: Contains a tree control that shows the current flows. For each flow, there is a tab with **Sources**, **Outputs**, and **Metrics**.

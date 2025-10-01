@@ -10,16 +10,10 @@ The Inmarsat BGAN Manager connector is used to monitor the BGAN network and exec
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on | System Impact |
 |----------------------|-------------------------------------------|--------------|-------------------|
 | 1.0.0.x | Poll Customers Poll Terminals and details | -           | -                |
 | 1.1.0.x [SLC Main] | Changed connector implementation to API v3 | -           | -                |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
 
 ### System Info
 

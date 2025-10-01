@@ -4,73 +4,20 @@ uid: Connector_help_Generic_Trap_Receiver
 
 # Generic Trap Receiver
 
-The Generic Trap Receiver is used to capture and display all the traps for a specific IP address.
-
 ## About
 
-### Version Info
+The **Generic Trap Receiver** is a tool used to capture and display SNMP traps for a specific IP address. The overview of the captured traps will be displayed in the **Traps** table alongside the **Traps Number**, which shows the number of traps in the table. Information like **Source IP**, **Trap OID**, and 20 different **bindings** are available for display for each trap in the Traps table.
 
-| **Range** | **Key Features**                                | **Based on** | **System Impact** |
-|-----------|-------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version                                 | -            | -                 |
-| 1.0.1.x   | Display traps in a table. Lookup functionality. | -            | -                 |
+![Generic Trap Receiver Overview](~/connector/images/GenericTrapReceiver_Overview.png)
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-| 1.0.1.x   | N/A                    |
+- **Displays Traps**: Displays traps coming from the configurable parameter **Trap IP Sources**.
+- **Create Information Events**: If you enable the **Information Events** parameter, an information event will be created on the DMA for every trap received.
+- **Lookup Table**: If the **Lookup Table State** parameter is enabled, you can configure incoming trap OIDs and replace them with alias names.
 
-### System Info
+## Technical info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                       |
-| 1.0.1.x   | No                  | No                      | -                     | -                       |
+> [!NOTE]
+> For detailed technical information, refer to the [Technical help page](xref:Connector_help_Generic_Trap_Receiver_Technical).
 
-## Configuration
-
-### Connections
-
-#### SNMP Main Connection
-
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP of the device.
-
-SNMP Settings:
-
-- **Port number**: The port of the connection device (default: *161*).
-
-## Usage
-
-### General
-
-To capture traps, specify the IP addresses for which traps should be captured in the **Trap IP Sources** parameter, using a comma as separator. This page will then display an overview of the captured traps with their information (**OID**, **Source IP** and **Bindings**) in the **Traps** table.
-
-If you also want an information event to be created on the DMA every time a trap is received, enable the **Information Events** parameter.
-
-Via the **Auto Clear** page button, you can access settings to clean up the Traps table.
-
-### Lookup Configuration
-
-On this page, you can use the **Lookup Table** to have incoming trap OIDs replaced with an alias name. For this purpose, the parameter **Lookup Table State** must be enabled.
-
-With the **Add Raw Value** parameter, you can add an OID to the lookup table. The **Clear Table** button can be used to delete all the raw values from the lookup table, except for some well-known values.
-
-### Filter Trap
-
-On this page, you can configure traps to be filtered so that certain traps will not be received. Regular expressions are supported.
-
-### Update Trap
-
-This page allows you to set up rules so that specific traps can update traps with a specific OID and alarm reference. From version 1.0.1.17 onwards, basic regular expressions using "\*" are supported.
-
-From version 1.0.1.24 onwards, with the **Binding Alarm Index**, you can set up rules that are a combination of columns. To do so, specify a backslash ("\\) followed by a comma-separated list of bindings. Also add a row with the same specific OID to the **Filter Trap** page.
-
-### Heartbeat Trap
-
-This page allows you to set up sending and receiving of heartbeat traps. These traps can be used to test and monitor the DataMiner SNMP forwarding function.

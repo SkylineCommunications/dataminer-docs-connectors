@@ -10,10 +10,10 @@ The Ericsson VSPP is a **Management System**.
 
 ### Version Info
 
-| **Range** | **Key Features**      | **Based on** | **System Impact** |
-|-----------|-----------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version       | -            | -                 |
-| 1.0.1.x   | HTTP connection added | -            | -                 |
+| Range   | Key Features          | Based on | System Impact |
+|---------|-----------------------|----------|---------------|
+| 1.0.0.x | Initial version       | -        | -             |
+| 1.0.1.x | HTTP connection added | -        | -             |
 
 ### Product Info
 
@@ -79,7 +79,7 @@ The element created using this connector has the following data pages:
 
 - **Nodes NICs**: Contains the following tables:
 
-- **Nodes NICs** **table**: Displays the Link State, Bytes Sent, Bytes Received, Packets Sent, Packets Received, Errors In, Errors Out, Drop In, Drop Out and Primary NIC. This table is **linked** to the **Nodes** table.
+  - **Nodes NICs** **table**: Displays the Link State, Bytes Sent, Bytes Received, Packets Sent, Packets Received, Errors In, Errors Out, Drop In, Drop Out and Primary NIC. This table is **linked** to the **Nodes** table.
   - **Nodes NICs Pingable** **table**: Shows whether a host **is** **pingable** or not. This table is **linked** to the **Nodes** table.
   - **Nodes NICs TCP** **table**: Displays the Out Segments and Retransmitted Segments. This table is **linked** to the **Nodes** table.
 

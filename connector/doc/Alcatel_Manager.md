@@ -10,9 +10,9 @@ The **Alcatel Manager controller** is mainly used as a platform to monitor relev
 
 ### Version Info
 
-| **Range**            | **Key Features**                            | **Based on** | **System Impact**                                                     |
-|----------------------|---------------------------------------------|--------------|-----------------------------------------------------------------------|
-| 1.0.1.x [SLC Main]   | Overall update to match current guidelines. | 1.0.0.7      | Layout, internal logic, and PID changed, and many parameters deleted. |
+| Range              | Key Features                                | Based on | System Impact                                                         |
+|--------------------|---------------------------------------------|----------|-----------------------------------------------------------------------|
+| 1.0.1.x [SLC Main] | Overall update to match current guidelines. | 1.0.0.7  | Layout, internal logic, and PID changed, and many parameters deleted. |
 
 ### Product Info
 

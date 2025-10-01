@@ -12,7 +12,7 @@ With this connector, you can monitor and configure the Ericsson encoder. This mo
 
 ### Version Info
 
-| **Range** | **Description**                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                       | DCF Integration     | Cassandra Compliant     |
 |------------------|-----------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                   | No                  | No                      |
 | 2.0.0.x          | Support for firmware version 9.0  | No                  | No                      |

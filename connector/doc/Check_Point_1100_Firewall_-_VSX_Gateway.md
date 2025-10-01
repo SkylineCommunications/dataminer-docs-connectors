@@ -12,15 +12,15 @@ This connector is used to interface with the **Check Point 1100 Firewall VSX Gat
 
 ### Version Info
 
-| **Range** | **Description**             | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------|---------------------|-------------------------|
-| 1.0.1.x          | Support for SNMPv3 contexts | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.1.x | Support for SNMPv3 contexts | No | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.1.x          | 9                           |
+|--|--|
+| 1.0.1.x | 9 |
 
 ## Installation and configuration
 

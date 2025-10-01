@@ -58,10 +58,6 @@ When the element has been created, several things need to be configured on the *
 
 - **VLAN Failure Hysteresis**: The amount of time the element waits before adding the outage time when a failure is detected for all channels in the same VLAN. This allows you to keep the outage value from increasing when there's a transition from one VLAN to another.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 ### Probes
@@ -136,3 +132,4 @@ Note that for all averages, only the last completed set of data and the availabi
 ## Notes
 
 This application requires a custom-designed Visio file. In addition, an Automation script is needed to control the probes (script name: *British Telecom 21C Probe Manager*).
+

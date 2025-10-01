@@ -16,7 +16,7 @@ The connector uses SNMP to poll information from the device, but it also handles
 
 ### Version Info
 
-| **Range** | **Description**                                                           | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                              | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                           | No                  | No                      |
 | 2.0.0.x          | Branch version based on 1.0.0.x using serial communication                | No                  | No                      |

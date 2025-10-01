@@ -21,12 +21,18 @@ Based on the type of card, different tables and parameters are available in the 
 
 ### Version Info
 
-| **Range**            | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|----------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x [Obsolete]     |Initial version                                                | Yes                 | No                      |
-| 2.0.0.x [Obsolete]     |Yes                                                            | No                  |                         |
-| 2.0.1.x [Obsolete]     |Yes                                                            | No                  |                         |
-| 3.0.0.x [SLC Main]   | Stripped version with new firmware. Serial connection removed. | Yes                 | No                      |
+| Range                                  | Description                                                         | DCF Integration | Cassandra Compliant |
+|----------------------------------------|---------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x [Obsolete]                     | Initial version                                                     | Yes             | No                  |
+| 2.0.0.x [Obsolete]                     | -                                                                   | Yes             | No                  |
+| 2.0.1.x [SLC Main]                     | -                                                                   | Yes             | No                  |
+| 2.1.0.x [SLC Main]                     | New EQX-FC firmware and SNMP MIB: eqxfc-4net-mib (OID .309.).       | Yes             | Yes                 |
+| 3.0.0.x [Obsolete - Customer-Specific] | Stripped-down version with new firmware. Serial connection removed. | Yes             | No                  |
+
+> [!NOTE]
+>
+> - For EQX devices depending on the SNMP eqxfc-4net-mib (.309. OID), use range 2.1.0.x. For EQX devices depending on the SNMP eqxfc-mib (.58. OID), use range 2.0.1.x instead.
+> - Previously, 3.0.0.x was considered to be the main range. However, this has been reverted back to 2.0.1.x. 3.0.0.x is a stripped-down version of the connector that does not include the matrix and some other functionality.
 
 ## Configuration
 
@@ -69,7 +75,7 @@ SMART-SERIAL CONNECTION:
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device.
 
-## Usage (1.0.0.x, 2.0.0.x, and 2.0.1.x)
+## Usage (1.0.0.x, 2.0.0.x, 2.0.1.x, and 2.1.0.x)
 
 ### General
 
@@ -156,7 +162,7 @@ This table contains information about all of the faults present on the device. T
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of this connector supports the usage of DCF and can only be used on a DMA with **9.0.3** as the minimum version.
+The **1.0.0.x** range of this connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

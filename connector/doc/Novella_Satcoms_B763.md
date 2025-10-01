@@ -2,7 +2,7 @@
 uid: Connector_help_Novella_Satcoms_B763
 ---
 
-Novella Satcoms B763
+# Novella Satcoms B763
 
 The **Novella Satcoms B763** is an L-band tracking receiver with frequency readout and control.
 

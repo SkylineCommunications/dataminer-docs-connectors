@@ -73,10 +73,6 @@ SERIAL CONNECTION:
 
 Once you have created the element, on the **Configuration** page, enter the **CLI/Serial credentials** so the CLI polling can work properly. Once this is done, the element will start regular polling.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -107,7 +103,7 @@ With larger devices/large data sets the polling performance may vary. You can co
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the CISCO CBR-8 CCAP Platform Collector protocol supports the usage of DCF.
+The **1.0.0.x** range of the CISCO CBR-8 CCAP Platform Collector connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

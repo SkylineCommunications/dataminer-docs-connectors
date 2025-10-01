@@ -10,7 +10,7 @@ The Casa Systems CCAP Platform is an SNMP connector that collects relevant data 
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
+| Range              | Key Features                              | Based on | System Impact |
 |----------------------|-------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                          | -            | -                 |
 | 1.0.1.x              | Modifications for compatibility with EPM. | -            | -                 |
@@ -85,10 +85,6 @@ In addition, in range **1.0.0.x and 1.0.1.x**, configure the following settings:
 - **Other Settings**: Additional settings to ensure proper data transfer and additional information.
 
 - **Collector**: Fill this out with the DMA ID/element ID of the Generic CM Collector used to provision the CMs of the CCAP.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Threshold Table
 

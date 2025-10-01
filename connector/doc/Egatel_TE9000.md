@@ -12,7 +12,7 @@ This connector was designed to work with the model **TE9000E6**. With it, you ca
 
 ### Version Info
 
-| **Range** | **Description**                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                      | DCF Integration     | Cassandra Compliant     |
 |------------------|--------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                  | No                  | No                      |
 | 1.1.0.x          | New firmware for model E6 based on range 1.0.0.x | No                  | No                      |
@@ -94,7 +94,7 @@ This page displays the following configurable parameters: **IP Addresses**, **Ga
 
 ### Notifications
 
-This page displays different notification alarms, which can be enabled/disabled by means of the **Setup** page button in the lower right corner. These are for example:
+This page displays different notification alarms, which can be enabled/disabled by means of the **Setup** page button in the lower-right corner. These are for example:
 
 - Exciter Output Power Failure
 - Amplifier Output Power Failure

@@ -16,7 +16,7 @@ There also different possibilities available for **alarm monitoring** and **tren
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.2.x          | Change in export rules.            | Yes                 | Yes                     |
 | 1.0.3.x          | Change in discrete display values. | Yes                 | Yes                     |
@@ -54,7 +54,7 @@ This element has the following data pages:
 
 ## DataMiner Connectivity Framework
 
-The Axon ACP protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The Axon ACP connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -69,9 +69,9 @@ Connectivity for this protocol is managed by the parent protocol Axon ACP.
 - **REF Input 1**: A single fixed interface of type **input**.
 - **REF Input 2**: A single fixed interface of type **input**.
 - **AUDIO Input 1**: A single fixed interface of type **input**.
-- **AUDIO** **Input 2**: A single fixed interface of type **input**.
-- **AUDIO** **Input 3**: A single fixed interface of type **input**.
-- **AUDIO** **Input 4**: A single fixed interface of type **input**.
+- **AUDIO Input 2**: A single fixed interface of type **input**.
+- **AUDIO Input 3**: A single fixed interface of type **input**.
+- **AUDIO Input 4**: A single fixed interface of type **input**.
 - **SYNAPSE Bus Audio Input 2**: A single fixed interface of type **input**.
 - **SYNAPSE Bus Audio Input 4**: A single fixed interface of type **input**.
 - **SDI Output 1**: A single fixed interface of type **output**.

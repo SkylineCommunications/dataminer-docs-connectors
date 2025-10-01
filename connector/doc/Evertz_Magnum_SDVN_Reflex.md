@@ -10,7 +10,7 @@ With Reflex you can automate tasks with sensors, triggers and actions. Scripts c
 
 ### Version Info
 
-| **Range**            | **Key Features**                | **Based on** | **System Impact** |
+| Range                | Key Features                    | Based on     | System Impact     |
 |----------------------|---------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version.                | -            | -                 |
 | 1.1.0.x [SLC Main]   | Support for new firmware 2.1.0. | 1.0.0.2      | -                 |
@@ -56,14 +56,6 @@ SERIAL CONNECTION:
   - **Accepted IP addresses**: The IP (usually multiple IP addresses) of the associated Reflex servers that might send unsolicited TCP messages to DataMiner.
 
 The connection above is used to received messages after actions such as HTTP POST, as well as unsolicited TCP messages that can be configured in Reflex to send parameter values to update contexts.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

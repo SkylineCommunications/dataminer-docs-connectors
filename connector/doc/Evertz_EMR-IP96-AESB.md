@@ -16,12 +16,6 @@ This **SNMP** connector is used to monitor and configure the **Evertz EMR-IP96-A
 |--------------------|---------------------|----------|---------------|
 | 1.0.0.x [SLC Main] | Audio Channel Traps | -        | -             |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -45,14 +39,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

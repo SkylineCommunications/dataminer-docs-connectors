@@ -16,10 +16,10 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Version Info
 
-| **Range**            | **Key Features**           | **Based on** | **System Impact**                             |
-|----------------------|----------------------------|--------------|-----------------------------------------------|
-| 1.0.0.x              | Initial version            | -            | -                                             |
-| 1.0.1.x [SLC Main]   | Additional SNMP connection | 1.0.0.5      | Additional SNMP connection must be configured |
+| Range              | Key Features               | Based on | System Impact                                 |
+|--------------------|----------------------------|----------|-----------------------------------------------|
+| 1.0.0.x            | Initial version            | -        | -                                             |
+| 1.0.1.x [SLC Main] | Additional SNMP connection | 1.0.0.5  | Additional SNMP connection must be configured |
 
 ### Product Info
 
@@ -101,7 +101,7 @@ The element has the following data pages:
 
 ## DataMiner Connectivity Framework
 
-The Axon ACP protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The Axon ACP connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

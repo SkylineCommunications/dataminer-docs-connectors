@@ -10,7 +10,7 @@ This connector allows you to check output information and also to configure some
 
 ### Version Info
 
-| **Range**            | **Key Features**                                   | **Based on** | **System Impact** |
+| Range                | Key Features                                       | Based on     | System Impact     |
 |----------------------|----------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Allows configuration of BISS Mode and Session Word | -            | -                 |
 
@@ -43,10 +43,6 @@ HTTP CONNECTION:
 ### Initialization
 
 On the **Security** page, you must specify the correct **Username** and **Password** to be able to poll information.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

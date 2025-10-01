@@ -28,14 +28,6 @@ This connector can be used to read the content of an XML file and also to valida
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 After you have specified a valid folder name and a file name, click **Check***,* and the content of the specified XML is retrieved. If any tag was left open in the file, the status of the file will indicate a failure.

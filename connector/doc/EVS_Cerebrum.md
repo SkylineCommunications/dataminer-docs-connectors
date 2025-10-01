@@ -14,8 +14,9 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x [Obsolete] | Initial version | - | - |
+| 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x | New version because of invalid connector integration. | - | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
+| 1.0.2.x | New version because of InterApp update to 1.0.1.x. | - | InterApp communication possibly not backwards compatible. |
 
 ### Product Info
 
@@ -23,6 +24,7 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 |-----------|------------------------|
 | 1.0.0.x   | API 0.1                |
 | 1.0.1.x   | API 0.1                |
+| 1.0.2.x   | API 0.1                |
 
 ### System Info
 
@@ -30,6 +32,7 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -127,6 +130,21 @@ The following options are available in the right-click menu on this page:
 To **create** a destination association, specify the configuration settings on the **Destination** **Configuration** page and click the **Create** button.
 
 With the **Delete** option in the right-click menu, you can delete the selected destination association.
+
+### Subscription Filtering
+
+For **levels**, **sources**, and **destinations**, it is possible to subscribe only to a subset of each, based on ID. Subscriptions filters are configured on the **Level Subscription Filters**, **Source Subscriptions Filters**, and **Destination Subscription Filters** page, respectively.
+
+If destinations filters are defined, they will be taken into account when setting up routes subscriptions, so that only the relevant routes are subscribed to.
+
+The following options are available in the right-click menus on the filter pages:
+
+- **Subscribe to All**: Disables all filters except the default one. The default filter subscribes to everything.
+- **Add Ranged Based Filter**: Allows you to add a new range-based filter by providing *from* and *to* values of IDs.
+- **Remove Filters(s)**: Removes the selected filters. The default filter cannot be removed.
+
+> [!NOTE]
+> Changes to filter pages will only be applied on element restart.
 
 ### Categories
 

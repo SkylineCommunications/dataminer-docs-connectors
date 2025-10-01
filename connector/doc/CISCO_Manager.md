@@ -205,7 +205,7 @@ This page contains tables used for the management and configuration of voice tel
 
 ## DataMiner Connectivity Framework
 
-The 3.1.1.x, 4.1.1.x, and 5.1.1.x range of the CISCO Manager connector support the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The 3.1.1.x, 4.1.1.x, and 5.1.1.x range of the CISCO Manager connector support the usage of DCF.
 
 Different DCF configurations can be set on the DCF Config page.
 

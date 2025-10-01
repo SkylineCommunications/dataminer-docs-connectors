@@ -12,14 +12,14 @@ This connector allows you to collect data from the Arris E6000 CCAP Platform alo
 
 ### Version Info
 
-| **Range**            | **Key Features**                          | **Based on** | **System Impact** |
-|----------------------|-------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                          | -            | -                 |
-| 1.0.1.x              | Modifications for compatibility with EPM. | -            | -                 |
-| 1.0.2.x              | Modifications to improve performance.     | -            | -                 |
-| 1.0.3.x              | Updated the minimum DataMiner version.    | -            | -                 |
-| 1.0.4.x              | Modifications to improve performance      | -            | -                 |
-| 1.0.5.x [SLC Main]   | New threshold logic.                      | -            | -                 |
+| Range              | Key Features                              | Based on | System Impact |
+|--------------------|-------------------------------------------|----------|---------------|
+| 1.0.0.x            | Initial version.                          | -        | -             |
+| 1.0.1.x            | Modifications for compatibility with EPM. | -        | -             |
+| 1.0.2.x            | Modifications to improve performance.     | -        | -             |
+| 1.0.3.x            | Updated the minimum DataMiner version.    | -        | -             |
+| 1.0.4.x            | Modifications to improve performance      | -        | -             |
+| 1.0.5.x [SLC Main] | New threshold logic.                      | -        | -             |
 
 ### Product Info
 
@@ -65,10 +65,6 @@ SNMP Settings:
 ### Initialization
 
 The connector uses custom properties to configure the Network, Market, and Hub of the CCAP, so ensure that these are configured to link the views to the EPM data cards and full EPM functionality.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Threshold Table
 

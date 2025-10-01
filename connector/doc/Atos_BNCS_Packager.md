@@ -76,7 +76,7 @@ This page contains information about the available **router inputs and outputs**
 
 This page contains information about the available packager inputs in the **Source Packages** table. The Label, Title, MCR Title, Start, End, Info, LACVI status and Booking ID of a source package are displayed. There are also parameters available that add support for a visual panel.
 
-On the **Source Packages Details** subpage, you can find the following detailed information related to source packages: Video HD, HDE and SD router inputs, Video TX, Audio, IFB and talkback.
+On the **Source Packages Details** subpage, you can find the following detailed information related to source packages: Video HD, HDE and SD router inputs, Video TX, Audio, IFB, and talkback.
 
 On the **Source Packages Conferences** subpage, you can find the following information related to source package conferencing: IFB Queue Top, Conference Suffix and talkback functionality.
 
@@ -100,7 +100,7 @@ This page allows you to configure **Studios** used for **Devolved IFB Management
 
 This page allows you to check and configure notification subscriptions sent through the WebSocket connections. It displays a status count of how many router outputs (for router input updates), packager outputs (for packager input and level updates) and packager inputs (for IFB queue updates) will send notifications.
 
-You can remove subscriptions by selecting *Remove i*n a subscription row or by clicking the *Remove* button next to Pending Subscriptions (to remove older subscriptions).
+You can remove subscriptions by selecting **Remove** in a subscription row or by clicking the **Remove** button next to Pending Subscriptions (to remove older subscriptions).
 
 ### Logging
 
@@ -112,7 +112,8 @@ This page contains connection information related to redundancy and automatic sw
 
 ## DataMiner Connectivity Framework
 
-The 1.0.0.1 range of the Atos BNCS Packager protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The 1.0.0.1 range of the Atos BNCS Packager connector supports the usage of DCF.
+
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
 ### Interfaces
@@ -125,8 +126,8 @@ Virtual dynamic interfaces:
 - **Source Package HDE Input**: For every **Source Package**, this *inout* interface is created.
 - **Source Package SD Input**: For every **Source Package**, this *inout* interface is created.
 - **Source Package HD Output**: For every **Source Package**, this *inout* interface is created.
-- **Source Package HDE** **Output**: For every **Source Package**, this *inout* interface is created.
-- **Source Package SD** **Output**: For every **Source Package**, this *inout* interface is created.
+- **Source Package HDE Output**: For every **Source Package**, this *inout* interface is created.
+- **Source Package SD Output**: For every **Source Package**, this *inout* interface is created.
 - **Destination Package Video Input**: For every **Destination Package**, this *inout* interface is created.
 
 Physical dynamic interfaces:

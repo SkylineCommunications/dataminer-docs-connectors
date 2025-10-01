@@ -12,11 +12,11 @@ IPGuard v2 is a switching module from Enensys that provides 1+1 redundancy of an
 
 ### Version Info
 
-| **Range**            | **Key Features**      | **Based on** | **System Impact**                                                                                   |
-|----------------------|-----------------------|--------------|-----------------------------------------------------------------------------------------------------|
-| 1.0.0.x              | Initial version.      | -            | -                                                                                                   |
-| 1.0.1.x [SLC Main]   | New firmware.         | 1.0.0.9      | -                                                                                                   |
-| 1.0.2.x [SLC Main]   | Override Timeout DVE. | 1.0.1.5      | Timeout alarms might get stuck on (function) DVEs when you upgrade to or downgrade from this range. |
+| Range | Key Features | Based on | System Impact |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | - | - |
+| 1.0.1.x [SLC Main] | New firmware. | 1.0.0.9 | - |
+| 1.0.2.x [SLC Main] | Override Timeout DVE. | 1.0.1.5 | Timeout alarms might get stuck on (function) DVEs when you upgrade to or downgrade from this range. |
 
 ### Product Info
 

@@ -10,16 +10,16 @@ This connector uses the serial-over-Ethernet **RCP router protocol** and is desi
 
 ### Version Info
 
-| **Range**            | **Key Features**          | **Based on** | **System Impact**                                |
-|----------------------|---------------------------|--------------|--------------------------------------------------|
-| 1.0.0.x              | Initial version.          | -            | -                                                |
-| 2.0.0.x [SLC Main]   | Removed matrix parameters | 1.0.0.6      | Any logic linked with the matrix will be broken. |
+| Range              | Key Features              | Based on | System Impact                                    |
+|--------------------|---------------------------|----------|--------------------------------------------------|
+| 1.0.0.x            | Initial version.          | -        | -                                                |
+| 2.0.0.x [SLC Main] | Removed matrix parameters | 1.0.0.6  | Any logic linked with the matrix will be broken. |
 
 ### Product Info
 
-| **Range**       | **Supported Firmware** |
-|-----------------|------------------------|
-| 1.0.0.x 2.0.0.x | 1.7.4.3                |
+| Range               | Supported Firmware |
+|---------------------|--------------------|
+| 1.0.0.x <br>2.0.0.x | 1.7.4.3            |
 
 ### System Info
 
@@ -67,7 +67,7 @@ There is also a button that displays the **Set Commands.** This information can 
 
 #### Connection Details
 
-On the left side of this page, you can find the **Connection Status** and **Session ID** that the device gave to DataMiner. Next to that, the **All Destinations Initialized** value indicates if the destinations are already initialized. If they are, repolling the destination names from the device will update the columns of the Destinations Table, but not the Output Labels of the matrix view. If you want to re-initialize these output labels as well, click **Reset Matrix View**. This will reset this flag and will make sure the output labels are again equal to the destination names configured on the device. The same goes for the value **All Sources Initialized**. If you want to enable logging, to have an overview of the flow of the connector in the logging of the element, you can enable the **Detailed** **Logging** button. Check the notes below for more details.
+On the left side of this page, you can find the **Connection Status** and **Session ID** that the device gave to DataMiner. Next to that, the **All Destinations Initialized** value indicates if the destinations are already initialized. If they are, repolling the destination names from the device will update the columns of the Destinations Table, but not the Output Labels of the matrix view. If you want to re-initialize these output labels as well, click **Reset Matrix View**. This will reset this flag and will make sure the output labels are again equal to the destination names configured on the device. The same goes for the value **All Sources Initialized**. If you want to enable logging, to have an overview of the flow of the connector in the logging of the element, you can enable the **Detailed Logging** button. Check the notes below for more details.
 
 At the bottom of the page, you can find the **Reset Matrix View** button. When you click this button:
 

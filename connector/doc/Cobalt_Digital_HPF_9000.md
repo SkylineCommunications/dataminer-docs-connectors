@@ -42,14 +42,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 The element created with this SNMP connector consists of the data pulled from the individual cards inserted into the slots on the frame. A dynamic virtual element can be created by the SNMP connector via a toggle button. You can toggle DVE creation for a specific card in a slot, which exports the information virtually. In order to delete the virtual elements, there are buttons to delete each individual DVE and a clear all button.
+

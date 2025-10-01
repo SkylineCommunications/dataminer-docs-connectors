@@ -19,7 +19,6 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
 | 1.0.1.x   | v4.20.4                |
 
 ### System Info
@@ -47,14 +46,6 @@ SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

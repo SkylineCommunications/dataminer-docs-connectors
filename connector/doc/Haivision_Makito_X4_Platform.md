@@ -4,66 +4,27 @@ uid: Connector_help_Haivision_Makito_X4_Platform
 
 # Haivision Makito X4 Platform
 
-The Makito X4 Platform is a single solution for both video encoding and decoding. It combines the features available in the Makito X4 encoders and Makito X4 decoder.
-
 ## About
 
-### Version Info
+This integration enables monitoring and control of **Haivision Makito X4** devices, offering a unified solution for both video encoding and decoding. It combines the capabilities of Makito X4 encoders and decoders into a single platform.
 
-| Range              | Features         | Based on | System Impact |
-|--------------------|------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
+## Key Features
 
-### Product Info
+- **Dual-functionality (encoder/decoder)**: Automatically detects and configures the device as either an encoder or decoder based on system response, with manual override available.
+- **Stream and device monitoring**: Access detailed statistics for decoder and encoder performance analysis.
+- **Flexible polling configuration**: Customize polling intervals for each command or disable unnecessary ones to optimize system performance.
+- **Secure HTTP communication**: Establish secure connections using HTTP with configurable IP, port, and credentials.
+- **Comprehensive stream management**: Monitor and manage video/audio encoders, encoder streams, decoders, and decoder streams through dedicated pages.
 
-| Range   | Supported Firmware                         |
-|---------|--------------------------------------------|
-| 1.0.0.x | - Encoder: 1.7.0-49<br>- Decoder: 1.5.0-35 |
+## Use Case: Deploying Versatile Encoding/Decoding Across a Network
 
-### System Info
+**Challenge**: Gaining centralized visibility and control over a video infrastructure, for instance when streaming live events or managing broadcast feeds.
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 |                     |
+**Solution**: Integrate Makito X4 devices into your DataMiner System.
 
-## Configuration
+**Benefit**: Streamlined operations and enhanced diagnostics through unified monitoring, reducing downtime and improving content delivery quality.
 
-### Connections
+## Technical Reference
 
-#### HTTP Connection
-
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *8443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Initialization
-
-To authenticate the connection to the device, fill in the credentials on the General page of the element.
-
-## How to use
-
-### Device Type Configuration
-
-The connector functions either as an encoder or as a decoder. When credentials have been filled in correctly, system status information will be requested from the device. Based on the response data, the device will be automatically configured as encoder or decoder. However, you can manually override this setting by adjusting the **Device Type** parameter on the **General page**. Based on the configured device type, the connector will send different commands to the device. Additionally, different pages will be shown based on this setting.
-
-### Poll Manager
-
-This connector uses a **Poll Manager** to execute commands on certain configured intervals. You can adjust these intervals for every command by setting the required **Poll Frequency**.
-
-You can also completely disable certain commands if these are not required.
-
-### Debug
-
-This connector has a **DEBUG** page, which can be consulted for more detailed communication or behind-the-scenes settings.
-
-This page is hidden by default. To show or hide the page, use the **Show Debug Page** parameter on the General page.
-
-### Other Parameters
-
-On the **General** page of this connector, you can configure the username and password to access the device. You can also find some system status parameters and some configuration settings for the connector here.
-
-The **Video Encoders** page, **Audio Encoders** page, **Encoder Streams** page, **Decoders** page, and **Decoder Streams** page contain all information related to the configured video encoders, audio encoders, encoder streams, decoders, and decoder streams, respectively. You can perform various actions via the context menu of the tables.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Haivision_Makito_X4_Platform_Technical).

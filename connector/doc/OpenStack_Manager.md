@@ -12,17 +12,17 @@ This connector uses HTTP to monitor and configure any OpenStack cloud. It curren
 
 ### Version Info
 
-| **Range** | **Description**              | **DCF Integration** | **Cassandra Compliant** |
-|------------------|------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version              | No                  | Yes                     |
-| 1.0.1.x          | Multi-tenant support version | No                  | Yes                     |
+| Range   | Description                  | DCF Integration | Cassandra Compliant |
+|---------|------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version              | No              | Yes                 |
+| 1.0.1.x | Multi-tenant support version | No              | Yes                 |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                           |
-|------------------|-----------------------------------------------------------------------|
-| 1.0.0.x          | Nova: v2.x, Neutron: v2.0, Cinder: v3.0, Keystone: v3.0, Glance: v2.0 |
-| 1.0.1.x          | Nova: v2.x, Neutron: v2.0, Cinder: v3.0, Keystone: v3.0, Glance: v2.0 |
+| Range   | Device Firmware Version                                               |
+|---------|-----------------------------------------------------------------------|
+| 1.0.0.x | Nova: v2.x, Neutron: v2.0, Cinder: v3.0, Keystone: v3.0, Glance: v2.0 |
+| 1.0.1.x | Nova: v2.x, Neutron: v2.0, Cinder: v3.0, Keystone: v3.0, Glance: v2.0 |
 
 ## Installation and configuration
 

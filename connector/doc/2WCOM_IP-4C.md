@@ -63,10 +63,6 @@ The connector does not require credentials, so setting it up is rather straightf
 
 The port setting can be found on the General page and is called **Web Interface Port**.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

@@ -12,7 +12,7 @@ This SNMP connector is used to monitor and configure the **Nevion Virtuoso CP440
 
 ### Version Info
 
-| **Range**            | **Key Features**    | **Based on** | **System Impact** |
+| Range                | Key Features        | Based on     | System Impact     |
 |----------------------|---------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version     | -            | -                 |
 | 1.0.1.x              | New HTTP connection | 1.0.0.2      | -                 |
@@ -21,7 +21,7 @@ This SNMP connector is used to monitor and configure the **Nevion Virtuoso CP440
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
+| 1.0.0.x   | TBD                    |
 | 1.0.1.x   | 2.8.70                 |
 
 ### System Info

@@ -16,7 +16,7 @@ The GPS coordinates of each site are tracked and logged in a table. This table c
 
 ### Version Info
 
-| **Range** | **Description** |
+| Range     | Description     |
 |------------------|-----------------|
 | 1.0.0.x          | Initial version |
 

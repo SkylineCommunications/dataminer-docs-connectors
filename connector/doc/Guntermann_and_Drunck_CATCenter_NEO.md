@@ -48,9 +48,9 @@ SNMP Settings:
 This page displays four boxes of information.
 
 - In the top-left corner, the **Status box** displays the parameters **Main Power**, **Redundant Power**, **Temperature**, **Network Interface 0** and **Network Interface 1**.
-- In the lower left corner, the **Device Information** box displays the **Device ID**, **Device Class**, **Device Type**, **Serial Number**, **Ethernet Address 1**, **Ethernet Address 2** and **Firmware Version**.
+- In the lower-left corner, the **Device Information** box displays the **Device ID**, **Device Class**, **Device Type**, **Serial Number**, **Ethernet Address 1**, **Ethernet Address 2** and **Firmware Version**.
 - In the top-right corner, the **System Information** box shows information related to the system, rather than specifically to this device. These parameters are **System Description, System Object ID, System Up Time, System Contact, System Name, System Location** and **System Services.** Unlike most other SNMP connectors, this connector does not allow you to change the System Contact, System Name and System Location parameters directly in DataMiner. This is only possible via the web interface (see below).
-- In the lower right corner, the **Error Status** box shows a **General Error Message** provided by the device and a **General Error Code**.
+- In the lower-right corner, the **Error Status** box shows a **General Error Message** provided by the device and a **General Error Code**.
 
 The Status and Error Status boxes are updated every 5 seconds. The Device and System Information is only updated once per hour.
 

@@ -30,10 +30,6 @@ The tool will try to find a reference value for a selected parameter by finding 
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 Before the tool can start comparing parameters, at least one **configuration** needs to be created:

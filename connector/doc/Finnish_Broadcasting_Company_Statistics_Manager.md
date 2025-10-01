@@ -10,7 +10,7 @@ The Finnish Broadcasting Company Statistics Manager connector retrieves and calc
 
 ### Version Info
 
-| **Range**            | **Key Features**               | **Based on** | **System Impact** |
+| Range                | Key Features                   | Based on     | System Impact     |
 |----------------------|--------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Real-time and daily statistics | -            | -                 |
 
@@ -33,14 +33,6 @@ The Finnish Broadcasting Company Statistics Manager connector retrieves and calc
 #### Virtual connection
 
 This connector uses a virtual connection and does not require any input during element creation.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

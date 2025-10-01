@@ -10,7 +10,7 @@ This connector is intended for use with ETL Systems NGM matrix devices. The ETL 
 
 ### Version Info
 
-| **Range**            | **Key Features**         | **Based on** | **System Impact** |
+| Range                | Key Features             | Based on     | System Impact     |
 |----------------------|--------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Matrix device management | -            | -                 |
 
@@ -67,10 +67,6 @@ SERIAL CONNECTION:
 ### Initialization
 
 Please review the connection settings for elements initialized in version 1.0.0.2 or below. The SNMP connection has become the primary connection to enable sets. This can cause incorrect connection settings when you upgrade an existing element.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

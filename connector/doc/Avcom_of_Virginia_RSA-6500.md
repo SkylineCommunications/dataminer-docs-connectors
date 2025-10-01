@@ -12,9 +12,9 @@ This connector uses a **serial** connection to gather data from the device. Crit
 
 ### Version Info
 
-| **Range** | **Description**                                                       | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version, based on version 1.0.0.4 Avcom of Virginia RSA-2500B | No                  | Yes                     |
+| Range   | Description                                                           | DCF Integration | Cassandra Compliant |
+|---------|-----------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial version, based on version 1.0.0.4 Avcom of Virginia RSA-2500B | No              | Yes                 |
 
 ### Product Info
 

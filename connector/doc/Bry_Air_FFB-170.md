@@ -52,14 +52,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination.
   - **Bus address**: The bus address of the device (default: *1*).
 
-### Initialization
-
-No additional configuration of parameters is necessary in a newly created element.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 You can find all the information you need to monitor the device on the **General** data page.

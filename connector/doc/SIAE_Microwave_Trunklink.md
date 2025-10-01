@@ -12,7 +12,7 @@ This connector connects to the device and allows you to configure and monitor al
 
 ### Version Info
 
-| **Range** | **Description**               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                   | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version               | No                  | Yes                     |
 | 1.0.1.x          | Lite polling, DCF integration | Yes                 | Yes                     |
@@ -64,7 +64,7 @@ This page provides access to the web interface of the device. However, note that
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the **SIAE Microwave TrunkLink** protocol supports the usage of DCF from version **1.0.1.1** onwards, and can only be used on a DMA with **9.0 CU5** as the minimum version.
+The **1.0.0.x** connector range of the **SIAE Microwave TrunkLink** connector supports the usage of DCF from version **1.0.1.1** onwards.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

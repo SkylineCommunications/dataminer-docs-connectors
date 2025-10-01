@@ -16,7 +16,7 @@ The 7881IRD2 series is used to receive, demodulate, and decode digital ATSC/DVB-
 
 ### System Info
 
-| **Range** | **DCF Integration** | **Cassandra Compliant** |
+| Range     | DCF Integration     | Cassandra Compliant     |
 |-----------|---------------------|-------------------------|
 | 1.0.2.x   | No                  | Yes                     |
 
@@ -31,3 +31,4 @@ The web interface is only accessible when the client machine has network access 
 ## How to use
 
 This connector is used by DVE child elements that are **automatically created** by the parent connector [Evertz 7x00 General Platform Group 2](xref:Connector_help_Evertz_7x00_General_Platform_Group_2), from version **1.0.2.x** onwards.
+

@@ -14,7 +14,7 @@ This connector will create **dynamic virtual elements** for each managed element
 
 ### Version Info
 
-| **Range** | **Description**                             | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                 | DCF Integration     | Cassandra Compliant     |
 |------------------|---------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                             | Yes                 | Yes                     |
 | 1.0.1.x          | DVEs are now generated on a per shelf basis | Yes                 | Yes                     |
@@ -113,11 +113,11 @@ The **username** and **password** need to be configured on this page in order to
 
 ## DataMiner Connectivity Framework
 
-The 1.0.0.x connector range of the Huawei iManager U2000 protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5\[DCF\]** as the minimum version.
+The 1.0.0.x connector range of the Huawei iManager U2000 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
-Connectivity for all exported protocols is managed by this protocol.
+Connectivity for all exported connectors is managed by this connector.
 
 ### Interfaces
 

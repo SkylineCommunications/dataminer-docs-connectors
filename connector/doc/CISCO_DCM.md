@@ -20,12 +20,12 @@ Please note the following:
 
 ### Version Info
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x              | Initial version, based on "SA DCM 2.0.0.36" connector.                          | Yes                 | Yes                     |
-| 1.0.1.x              | Added partial tables.                                                           | Yes                 | Yes                     |
-| 1.0.2.x              | Based on 1.0.0.104, but with partial tables.                                    | Yes                 | Yes                     |
-| 1.0.3.x [SLC Main]   | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes                 | Yes                     |
+| Range              | Description                                                                     | DCF Integration | Cassandra Compliant |
+|--------------------|---------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version, based on "SA DCM 2.0.0.36" connector.                          | Yes             | Yes                 |
+| 1.0.1.x            | Added partial tables.                                                           | Yes             | Yes                 |
+| 1.0.2.x            | Based on 1.0.0.104, but with partial tables.                                    | Yes             | Yes                 |
+| 1.0.3.x [SLC Main] | SRM compatible. Major change because of display key change. Based on 1.0.0.107. | Yes             | Yes                 |
 
 > [!NOTE]
 > If you are using a version in the 1.0.3.x range prior to 1.0.3.93, a memory leak can occur when incorrect IIOP credentials are configured on the element. Make sure to upgrade to the latest version of this connector to prevent this.
@@ -86,7 +86,7 @@ The procedure below describes how you can set up your first element. To create f
 1. Click **Create** to finish element creation.
 
 > [!NOTE]
-> In versions before 1.0.0.14, the default port was 5003, but this setting was ignored by the connector. 5003 is the port used for IIOP communication, which is the main communication protocol used to poll the device. However, this setting has always been ignored by the connector and instead the port could be changed inside the connector (though this was not likely to be necessary). When you update a pre-14 version to version 14 or later, the port settings must be updated, otherwise the SNMP traps will not be received by the connector.
+> In versions before 1.0.0.14, the default port is 5003, but this setting is ignored by the connector. 5003 is the port used for IIOP communication, which is the main communication protocol used to poll the device. However, this setting has always been ignored by the connector and instead the port can be changed inside the connector (though this is not likely to be necessary). When you update a pre-14 version to version 14 or later, the port settings must be updated; otherwise the SNMP traps will not be received by the connector.
 
 If communication does not work once the element has been created, follow the steps below to get the connection running. For any of the steps after the initial connection test, always perform this first test again to see if the connection works before moving to the next step.
 
@@ -162,8 +162,7 @@ Check if all files mentioned below are in the correct location in the system.
 
   - CISCO DCM GENERIC CODE 1.0.0.X.dll
 
-    (Where X can be found in the [DataMiner Catalog](https://catalog.dataminer.services/)
-
+    (where X can be found in the [DataMiner Catalog](https://catalog.dataminer.services/)
 
   - IIOPChannel.dll (since version 1.0.0.25)
 
@@ -187,10 +186,10 @@ Check if all files mentioned below are in the correct location in the system.
 
   - Cisco_DCM_OmniOrbProxy_1_0_3_65.dll (For versions 1.0.3.65 or higher)
 
-If a file is missing, run the upgrade package again and verify the DLLs.
-If the problem persists, contact Skyline in order to obtain the required DLLs.
+If a file is missing, run the upgrade package again and verify the DLLs. If the problem persists, contact Skyline in order to obtain the required DLLs.
 
-**Note**: For further DLL updates, after the DLL file is generated, you need to manually modify the **IPS_Ref_t** class variables from *short* to *ushort*.
+> [!NOTE]
+> For further DLL updates, after the DLL file is generated, you need to manually modify the **IPS_Ref_t** class variables from *short* to *ushort*.
 
 #### Verify Network Traffic
 
@@ -220,8 +219,7 @@ Once an element has been created, it is possible to fine-tune the behavior of th
 
 #### Poll Manager
 
-With the poll manager, you can enable or disable polling commands, as well as change the poll interval (within certain limits).
-By default, most commands are disabled, so you will almost certainly need to enable some commands.
+With the poll manager, you can enable or disable polling commands, as well as change the polling interval (within certain limits). By default, most commands are disabled, so you will almost certainly need to enable some commands.
 
 Below, you can find a list of existing commands and the information (tables and parameters) they poll.
 
@@ -387,6 +385,7 @@ Based on the previous example:
 > ![naming5.JPG](~/connector/images/CISCO_DCM_naming5.JPG)
 >
 > - By default, all custom naming will be configured with the same values that were hardcoded before version 1.0.0.83. **No historic data will be lost**.
+> - From version 1.0.3.101 of the connector onwards, there is a toggle button to disable the syncing. By default, the syncing is enabled.
 
 ## Usage
 
@@ -589,6 +588,7 @@ The settings of a group are saved in an .xml file located in the folder *C:\Skyl
 This page currently contains one toggle button to configure if the content of the **Backup Service Table** should be refreshed when an SNMP trap is received that indicates a (possible) change. By default, this is disabled, in order to prevent a heavy load in case of an event storm.
 
 > [!NOTE]
+>
 > - In the future, this parameter could be replaced by a table and multiple traps could be used to refresh some commands in the **Poll Manager**.
 > - If event-based polling is enabled and the command *Get SNMP Settings* is enabled in the **Poll Manager**, then the connector will automatically check and, if necessary, add the IP address of the DMA in the trap destinations table. However, it is still advisable to check if the SNMP settings are properly configured on the DCM itself, especially if the SNMP settings are not polled.
 
@@ -652,13 +652,13 @@ Six columns are displayed in the Poll Manager table:
 - **Last Executed**: Contains a timestamp indicating when the command was last executed.
 - **Actions**: Allows you to poll the command again outside the normal polling cycle.
 
-The status of a command is either *Enabled* or *Disabled.* However, **some commands cannot be disabled by the user**. These are displayed as *\[Enabled\]*. This is for instance the case for **Get Boards** and **Get Ports***.*
+The status of a command is either *Enabled* or *Disabled.* However, **some commands cannot be disabled by the user**. These are displayed as *\[Enabled\]*. This is for instance the case for **Get Boards** and **Get Ports**.
 
 To enable a command, you can set the **Status** column to *Enabled*; however, note that this does not guarantee that the command will actually be enabled. It is possible that other commands also need to be enabled before a particular command can be activated. To see the required commands, check the hidden column **PM - Required Commands** (see "Hidden Columns" section below). If other commands are required, these should either be enabled in the correct order, or the option *Enable (including parents)* should be used.
 
 The same applies for disabling commands: disabling a command will fail if there is at least one other command that requires that command. However, it is also possible to stop all "child commands" using the *Disable (Including Children)* option.
 
-To change the poll interval, simply specify a new timespan in the **PM - Interval** column. The value should be specified as follows: *\[Days\].\[Hours\]:\[Minutes\]:\[Seconds\]* However, please note:
+To change the polling interval, specify a new timespan in the **PM - Interval** column. The value should be specified as follows: *\[Days\].\[Hours\]:\[Minutes\]:\[Seconds\]* However, please note:
 
 - Days and seconds are optional.
 - When a timespan is specified that is less than the minimum or more than the maximum allowed interval, the value will be rounded down or up to respectively the minimum or the maximum interval.

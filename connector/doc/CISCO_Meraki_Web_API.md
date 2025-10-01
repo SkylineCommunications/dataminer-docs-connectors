@@ -10,16 +10,18 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                         | **Based on** | **System Impact** |
-|-----------|----------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version Polling and Monitoring via Meraki API over HTTPS                                         | -            | -                 |
-| 2.0.0.x   | Virtual connector captures and processes webhook notifications automatic clearing of cleared/expired alarms | -            | -                 |
+| Range              | Key Features                                                                                                | Based on | System Impact |
+|--------------------|-------------------------------------------------------------------------------------------------------------|----------|---------------|
+| 1.0.0.x (obsolete) | Initial version Polling and Monitoring via Meraki API over HTTPS                                            | -        | -             |
+| 1.0.1.x            |                                                                                                             | -        | -             |
+| 2.0.0.x            | Virtual connector captures and processes webhook notifications automatic clearing of cleared/expired alarms | -        | -             |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | Not Applicable         |
+| 1.0.1.x   | Not Applicable         |
 | 2.0.0.x   | Not Applicable         |
 
 ### System Info
@@ -27,18 +29,20 @@ CISCO Meraki Web API is used by Kordia to monitor their Meraki devices (Cisco Me
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 | 2.0.0.x   | No                  | No                      | -                     | -                       |
 
-## Configuration 1.0.0.X
+## Configuration 1.0.1.x
 
 ### Cisco Meraki API Key
 
 The connector in version range 1.0.0.x captures alarms through communication with the Meraki API via HTTPS requests.
 
-After filling in the connection details on the element card, the **Authorization Value** on the General page must be filled in.
-This is the API Key used for authorization to access the API.
+Create an element and fill in the connection details in the element settings. Enter `https://api.meraki.com/` in the IP address/host field.
 
-## Configuration 2.0.0.X
+On the General page of the new element, fill in the **Authorization Value** parameter. This is the API key used for authorization to access the API.
+
+## Configuration 2.0.0.x
 
 ### Webhook Connections
 

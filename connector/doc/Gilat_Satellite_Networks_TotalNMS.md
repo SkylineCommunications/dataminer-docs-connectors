@@ -36,7 +36,7 @@ The physical devices of the system are called CPE (Customer Peripheral Equipment
 
 This connector uses a Simple Network Management Protocol (SNMP) connection to be able to retrieve alarm traps and requires the following input during element creation:
 
-SNMP CONNECTION:
+SNMP Connection:
 
 - **SNMP version**: SNMPv2
 - **IP address/host**: The polling IP of the platform.
@@ -51,12 +51,26 @@ SNMP Settings:
 
 This connector uses an HTTP connection to be able to interact with the NBI and requires the following input during element creation:
 
-HTTP CONNECTION:
+HTTP Connection:
 
 - **Type of port:** TCP/IP
 - **IP address/host**: The polling IP of the platform.
 
-TCP/IP settings
+TCP/IP settings:
+
+- **IP port**: 443
+- **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
+
+#### HTTP Connection - Report Polling
+
+This connector uses an HTTP connection to be able to interact with the NBI and requires the following input during element creation:
+
+HTTP Connection:
+
+- **Type of port:** TCP/IP
+- **IP address/host**: The polling IP of the platform.
+
+TCP/IP settings:
 
 - **IP port**: 443
 - **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
@@ -109,6 +123,8 @@ This page contains a table listing the CPE devices that are currently known to t
 
 If a CPE device was known earlier but no longer seems to be present in the **CPEs** table, you should check the **CPE DVEs** table. You can find this table by clicking the **CPE DVEs Configurations** page button at the bottom of this page.
 
+CPE DVEs will be created for devices for which the **DVE Created** parameter is set to *Enabled*. For new CPE devices that are added to the table, this parameter is set to *Disabled* by default. You can change this parameter setting on the **Settings** page.
+
 After startup, the Severity column can indicate the *Unknown* state. This is expected behavior, caused by the fact that the Severity column will only be updated when an alarm trap is received. For example, when a *Major Open* alarm comes in, *Major* will be the severity. When after a number of minutes the same alarm comes in with the *Cleared* state, the new severity will be *Normal*.
 
 To see the **Subscriber Public IPv4 address**, make sure a valid VLAN ID is selected. The VLAN ID can be selected on the Settings page. In case the dropdown list is empty, open Stream Viewer and wait until Group 906 is displayed in the column on the left. When Group 906 has been executed successfully, try again. The dropdown list should now contain the available IDs. There is no need to change the other parameters located on that page.
@@ -139,9 +155,9 @@ Note: The Alarms table will **only show up to 100 alarms**, and all **alarms can
 
 Each row in the **Active Reports** table represents a report that is actively being polled.
 
-If you click the **Add Report** button in the lower right corner of the page, a new entry will be added with a default element type and element name. Once the entry has been added to the table, select a **Name** and a **Graph Type** to start polling the report. For now, only the Element Type CPE is supported. By default, the report will be polled for all CPE devices. You can request a report for a specific CPE instance as well by selecting the corresponding element name.
+If you click the **Add Report** button in the lower-right corner of the page, a new entry will be added with a default element type and element name. Once the entry has been added to the table, select a **Name** and a **Graph Type** to start polling the report. For now, only the Element Type CPE is supported. By default, the report will be polled for all CPE devices. You can request a report for a specific CPE instance as well by selecting the corresponding element name.
 
-All active reports can be removed from the table at any time if needed. You can also clear the entire table in one go with the **Clear Reports** button, located in the lower right corner of the page. When the Active Reports table is completely empty, Group 910 will not be polled.
+All active reports can be removed from the table at any time if needed. You can also clear the entire table in one go with the **Clear Reports** button, located in the lower-right corner of the page. When the Active Reports table is completely empty, Group 910 will not be polled.
 
 Keep in mind that the TotalNMS database itself gets an update regularly. During such an update, it is not possible to poll a report, and the corresponding value will indicate N/A. After the next poll cycle, the value should contain a number again.
 
@@ -164,3 +180,31 @@ A log line will be added to the element log when a ping sync was triggered. A pi
 For each report that is part of the CPEs table, a **Polling toggle button** is available. With these toggle buttons, you can disable or enable the polling of the CPE reports. For instance, if you disable the CPE Forward Data Throughput Polling toggle button, the CPE Forward Data Throughput will not be polled. This means that the Forward Data Throughput column of the CPEs table will show N/A and Group 908 will not be displayed in Stream Viewer.
 
 Note that the **minimum required version of the Generic Ping connector is** **3.1.2.5**.
+
+On the Settings page, you can also find settings related to CPE DVE creation:
+
+- **Automatic CPE DVE Creation**: Allows you to set the **DVE Created** parameter to *Enabled* for all future added CPE devices. By default, is set to *Disabled*.
+- **Enable/Disable All DVEs** Allows you to set the state of all CPE devices in the table to *Enabled* or *Disabled*.
+
+### Reports
+
+The connector is able to poll the following reports. Report responses often contain values for multiple graph types. The Used Graph Type column indicates which graph type is processed and therefore visible in the element.
+
+| Name | Element Type | Used Graph Type | Ignored Graph Type(s) | Description |
+| ---- | ------------ | --------------- | ---------------------- | ----------- |
+| FWD Throughput | CPE | Data | FWD Traffic, C2P | The total CPE FWD throughput. Also, the graph shows the total DATA throughput and total C2P throughput. |
+| RTN Throughput | CPE | Data | RTN Traffic, C2P | The total CPE RTN throughput. Also, the graph shows the total DATA throughput and total C2P throughput (burst traffic/resources only). |
+| FWD Rx Level | CPE | Last FWD received Es/N0 | Minimum FWD received Es/N0, Maximum FWD received Es/N0 | The CPE FWD signal-to-noise measurements as reported by the CPE to the HSP. |
+| RTN Tx Capability C/N0 | CPE | Last Tx Capability C/N0 | Last Tx Continuous Capability C/N0 | The CPE RTN C/N0 capability as measured at the hub by the HSP. |
+| FWD Backbone Retransmissions | Network Segment | FWD Backbone Retransmissions |  | The ratio between the number of retransmitted FWD backbone packets and the total number of transmitted FWD backbone packets (including the retransmitted ones). |
+| RTN Backbone Retransmission | Network Segment | RTN frame loss |  | The ratio between the number of retransmitted RTN backbone packets and the total number of transmitted RTN backbone packets (including the retransmitted ones). |
+| FWD Link Throughput and Limit | Network Segment | Throughput | Throughput Limit | The total forward data transmission rate in Kbps and the theoretical limit as calculated by the integrated performance manager (available bit rate). |
+| RTN Link Throughput Available and Limit | Network Segment | Throughput | Limit, Available | The total return data transmission rate in Kbps and the theoretical limit as calculated by the hub-side processor (burst traffic/resources only). |
+| L2 Online CPEs | Network Segment | Online (L2) |  | The number of CPE devices that are currently logged on to all the network segments in the network/teleport/satellite/RF cluster/single network segment/hub-side processor. |
+| L3 Online CPEs | Network Segment | Online (L3) |  | The number of CPE devices that are currently logged on to the dynamic provisioning system. |
+| VLAN Throughput | Network Segment | FWD Throughput VLAN - VLAN ID, RTN Throughput VLAN - VLAN ID |  | The summed up traffic of all very small aperture terminals in the same virtual local area network per network segment. |
+| CPEs FWD Maximal Capability | Network Segment | ModCod - xPSK x/x |  | The distribution of CPE devices linked to the network segment/hub-side processor according to their maximal forward MODCOD capability. |
+| CPEs RTN Maximal Capability | Network Segment | Slot Type - TRF x xxxKsps QPSK x/x xK |  | The distribution of CPE devices according to their maximal return slot type capability per network segment/hub-side processor. |
+| FWD Link Load per MG | Network Segment | AVG - Managed Group ID |  | The ratio between the demands on the forward link and the actual traffic per managed group in the network overload scenario (per network segment/dynamic provisioning system). |
+| FWD Link Throughput Utilization | Network Segment | Utilization |  | The ratio, in %, between the total transmitted data in the network segment and the total available throughput in the network segment forward channel. |
+| MCR AGC Level | Network Segment | Current: NGMCR 100 | Minimum: NGMCR 100, Maximum: NGMCR 100 | The master control room's automatic gain control attenuator value (current, minimum, and maximum). |

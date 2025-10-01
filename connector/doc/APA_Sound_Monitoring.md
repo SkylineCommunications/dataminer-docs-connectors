@@ -39,10 +39,6 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination, default: *80.*
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to Use
 
 ### General page

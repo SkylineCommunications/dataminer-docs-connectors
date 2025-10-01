@@ -12,10 +12,10 @@ The CEFD CDM-850 connector is used to monitor and control a CEFD CDM-850 device.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                   | **Based on** | **System Impact**                                        |
-|----------------------|--------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------|
-| 1.0.0.x              | Initial version                                                                                                    | -            | -                                                        |
-| 1.0.1.x [SLC Main]   | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.12     | **Old trend data will be lost for the modified tables.** |
+| Range              | Key Features                                                                                                       | Based on | System Impact                                            |
+|--------------------|--------------------------------------------------------------------------------------------------------------------|----------|----------------------------------------------------------|
+| 1.0.0.x            | Initial version                                                                                                    | -        | -                                                        |
+| 1.0.1.x [SLC Main] | Multiple tables now use naming instead of displayColumn to make the database for these tables Cassandra-compliant. | 1.0.0.12 | **Old trend data will be lost for the modified tables.** |
 
 ### System Info
 

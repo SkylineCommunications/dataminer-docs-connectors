@@ -4,64 +4,41 @@ uid: Connector_help_Paradise_SSPA_CO
 
 # Paradise SSPA CO
 
-The **Paradise SSPA CO** connector is used to display and configure information of the Paradise SSPA CO device.
-
 ## About
 
-This connector can be used to monitor and control the **Paradise SSPA CO** device. The connector supports one serial connection to communicate with the device. It also allows alarming and trending of parameters.
+The **Paradise SSPA CO** connector enables monitoring and control of Paradise Compact Outdoor Solid-State Power Amplifiers (SSPAs) via serial communication. The connector provides visibility on key amplifier metrics, health indicators, and operational configuration, helping satellite operators maintain high uplink performance.
 
-## Installation and configuration
+## Key Features
 
-### Creation
+- **RF performance monitoring**: Displays forward and reflected RF power, along with attenuation settings.
+- **Electrical and thermal metrics**: Tracks temperature, SSPA current, and internal voltages.
+- **Fault detection**: Shows alarms for high temperature, low current, BUC issues, and more.
+- **Configurable fault logic**: Allows the setup of logic and handling behavior for auxiliary and spare fault types.
+- **Amplifier control**: Supports remote control of attenuation, mute, calibration, and standby modes.
 
-**SERIAL Connection:**
+## Use Cases
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.245.83.199*.
-- **IP port**: The port of the destination, e.g. *7008*.
-- **Bus address**: The bus address of the connected device, e.g. *1*.
+### Use Case 1
 
-## Usage
+**Challenge**: Operators need to monitor power amplifier performance and environmental metrics remotely in remote uplink facilities.
 
-### Main View Page
+**Solution**: The connector polls the SSPA for RF power levels, temperature, voltage, and current, displaying it clearly on the System Info page.
 
-This page displays general information about the device. It contains for instance the following parameters:
+**Benefit**: Enables proactive maintenance and quick detection of issues before signal degradation occurs.
 
-- **Summary Fault**
-- **Unit Online State**
-- **RF Power level**
-- Etc.
+### Use Case 2
 
-### System Info Page
+**Challenge**: Fault conditions often go undetected until service impact occurs, making troubleshooting reactive and slow.
 
-This page displays information regarding the system state. It contains for instance the following parameters:
+**Solution**: The connector detects and alarms on conditions like over-temperature, low voltage, and BUC faults, with configurable fault thresholds and logic.
 
-- **RF Power level**
-- **Present Attenuation Level**
-- **Power Supply Voltage**
-- Etc.
+**Benefit**: Provides real-time alerts and helps engineers configure appropriate fault handling strategies to reduce downtime.
 
-The page also contains two page buttons:
+## Technical Reference
 
-- **Normalize Alarms. :** Allows the user to set the Normalize RF Power Level.
-- **Comm. Info. :** Displays information regarding the device's current communication configuration.
+### Prerequisites
 
-### Fault Status Page
+- **Minimum required DataMiner version**: 10.3.0
 
-This page displays the status of the device. It contains for instance the following parameters:
-
-- **Summary Fault**
-- **BUC Fault**
-- **RF Switch 1 State**
-- Etc.
-
-The page also contains a page button, **Fault Setup.,** that allows the user to configure the alarms of the device.
-
-### System Setup Page
-
-On this page, the user can configure the device. It contains for instance the following parameters:
-
-- **System Mode**
-- **Mute State**
-- **Attenuation Level**
-- **Standby Mode**
-- Etc.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Paradise_SSPA_CO_Technical).

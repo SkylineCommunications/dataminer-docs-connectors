@@ -16,7 +16,7 @@ There are also different possibilities available for **alarm monitoring** and **
 
 ### Version Info
 
-| **Range** | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                        | DCF Integration     | Cassandra Compliant     |
 |-----------|------------------------------------|---------------------|-------------------------|
 | 1.0.1.x   | Extended parameters.               | No                  | Yes                     |
 | 1.0.2.x   | Change in export rules.            | Yes                 | Yes                     |
@@ -50,7 +50,7 @@ This page displays the event messages of the card, i.e. special messages generat
 
 ## DataMiner Connectivity Framework
 
-The Axon ACP connector supports the usage of DCF and can only be used on a DMA with 8.5.4 as the minimum version.
+The Axon ACP connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and throught DataMiner third-party connectors (for instance a manager).
 

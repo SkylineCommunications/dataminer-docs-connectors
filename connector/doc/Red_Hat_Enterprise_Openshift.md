@@ -12,7 +12,7 @@ Red Hat Enterprise OpenShift allows the full management of enterprise Kubernetes
 
 ### Version Info
 
-| **Range** | **Description**               | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                   | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial Version - Version 3.6 | No                  | True                    |
 | 1.1.0.1          | Initial Version - Version 3.7 | No                  | True                    |

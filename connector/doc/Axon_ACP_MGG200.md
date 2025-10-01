@@ -62,14 +62,6 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP of the destination.
   - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the **General** page of the element, you can find information about the card (**Card Name**, **Card Description**, **SW Revision**, **HW Revision**, etc.).
@@ -78,7 +70,7 @@ After startup, you can adjust settings to fine-tune and customize the multiviewe
 
 - **Clock Settings** page: Allows you to manipulate the look and feel of the clock on the multiviewer.
 - **Notepad Settings** page: Allows you to add a notepad and write lines onto the screen of the multiviewer.
-- **Tally and UMD Settings** Page: Allows you to set up the **UMD** settings per input and their responsible **T**a**llies**.
+- **Tally and UMD Settings** Page: Allows you to set up the **UMD** settings per input and their responsible **Tallies**.
 
 You can customize the layout of the inputs to your preference. These settings are available on the **Layout Input 1-4** and **Layout Input 5-8** pages:
 
@@ -91,4 +83,4 @@ You can customize the layout of the inputs to your preference. These settings ar
 On the **Network** page, you can set up the network settings for the device:
 
 - The **IP Configuration** allows you to set the network polling type of the device (**DHCP**, **Manual** or **Disabled**).
-- Depending on the **IP Configuration** parameter, other parameters such as **Manual IP Address**, **Netmask**, **Manual Gateway**, **Primary** **DNS** and **Secondary** **DNS** can be set.
+- Depending on the **IP Configuration** parameter, other parameters such as **Manual IP Address**, **Netmask**, **Manual Gateway**, **Primary DNS**, and **Secondary DNS** can be set.

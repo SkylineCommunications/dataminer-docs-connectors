@@ -191,7 +191,7 @@ This page allows you to configure horizontal and vertical references.
 
 ## DataMiner Connectivity Framework
 
-The 1.0.1.x connector range of the **Snell Wilcox Alchemist Ph.C - HD3G** protocol supports the usage of DCF and can only be used on a DMA with **8.5.14** as the minimum version.
+The 1.0.1.x connector range of the **Snell Wilcox Alchemist Ph.C - HD3G** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

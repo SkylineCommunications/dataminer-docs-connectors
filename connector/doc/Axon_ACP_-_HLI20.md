@@ -16,19 +16,19 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ### Version Info
 
-| **Range** | **Description**                                                                  | **DCF Integration** | **Cassandra Compliant** |
-|------------------|----------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.2.x          | Change in export rules.                                                          | Yes                 | Yes                     |
-| 1.0.3.x          | Change in discrete display values.                                               | Yes                 | Yes                     |
-| 1.0.1.x          | Changed logo separate parameters into table parameters for firmware version 2911 | Yes                 | Yes                     |
+| Range   | Description                                                                      | DCF Integration | Cassandra Compliant |
+|---------|----------------------------------------------------------------------------------|-----------------|---------------------|
+| 1.0.2.x | Change in export rules.                                                          | Yes             | Yes                 |
+| 1.0.3.x | Change in discrete display values.                                               | Yes             | Yes                 |
+| 1.0.1.x | Changed logo separate parameters into table parameters for firmware version 2911 | Yes             | Yes                 |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                    |
-|------------------|------------------------------------------------------------|
-| 1.0.2.x          | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
-| 1.0.3.x          | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
-| 1.0.1.x          | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
+| Range   | Device Firmware Version                                    |
+|---------|------------------------------------------------------------|
+| 1.0.2.x | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
+| 1.0.3.x | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
+| 1.0.1.x | 2009, 2210, 2310, 2511, 2611, 2711, 2911, 3011, 3111, 3112 |
 
 ## Installation and configuration
 
@@ -56,7 +56,7 @@ This element has the following data pages:
 
 ## DataMiner Connectivity Framework
 
-The Axon ACP protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The Axon ACP connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
@@ -96,3 +96,4 @@ Depending on the state of the **Reference Input**, the following connections are
 
 - Between **REF Input 2** and **SDI Output 1**.
   - Between **REF Input 2** and **SDI Output 2**.
+
