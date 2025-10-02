@@ -73,29 +73,19 @@ Instead, once the element has been created, go to the **General** \> **Configura
 - **Device IP Address**: The polling IP or URL of the destination.
 - **Device Port**: The IP port of the destination.
 
-## How to Use
+## How to Use 
 
 The focus of the connector is on the routing matrices used to connect outputs and inputs. There are two main areas of the connector: physical and device (logical).
 
 In the element, you can find the data pages described below, depending on the connector range used.
-
-### General (1.0.0.x)
+### [1.0.0.x - 1.0.4.x](#tab/version-1-0-0-x)
+### General
 
 This page contains the parameters that need to be configured in order to obtain the necessary information. Physical parameters are displayed on the left and device parameters are displayed on the right.
 
 In order to start the polling for physical crosspoints, you first need to configure which subset of the router control card's outputs will be polled. You can do this by specifying the **Level Number** and configuring the total number of outputs that are retrieved, using the **Number of Outputs** parameter. It is possible to enable or disable displaying the physical matrix UI.
 
 For device crosspoint parameters, the start and stop of the destination and source IDs must be indicated. You need to specify the **Device Level Number** in order to then enable or disable the polling of information.
-
-### General (1.0.1.x - 1.0.5.x)
-
-This page contains the parameters that need to be configured in order to obtain the necessary information.
-
-In order to start the polling for device crosspoints, first you need to configure which subset of the router control card's outputs will be polled, resorting to the **Device Virtual Level**.
-
-Since this is a router connector, a matrix component is also embedded in the connector, but it is disabled by default. To enable it, toggle the **Display Device Matrix UI** parameter.
-
-A **Default Park Input** configuration is also available, which can be overwritten per output in the **Device Destinations** table on the **Device Crosspoints** page.
 
 ### Virtual Levels
 
@@ -143,3 +133,46 @@ You can configure how the element will retrieve device data by setting the **Ope
 
 > [!NOTE]
 > The Manual mode can be used when unexpected ID and/or label changes have a devastating impact on elements or services linked to the Grass Valley Convergent element. The manual retrieval of data, together with the Configuration tables, prevents the escalation of unwanted ID and/or label changes throughout DataMiner without the awareness of the user.
+
+### [1.0.1.x - 1.0.5.x](#tab/version-1-0-1-x)
+## General
+
+This page contains the parameters that need to be configured in order to obtain the necessary information.
+
+In order to start the polling for device crosspoints, first you need to configure which subset of the router control card's outputs will be polled, resorting to the **Device Virtual Level**.
+
+Since this is a router connector, a matrix component is also embedded in the connector, but it is disabled by default. To enable it, toggle the **Display Device Matrix UI** parameter.
+
+A **Default Park Input** configuration is also available, which can be overwritten per output in the **Device Destinations** table on the **Device Crosspoints** page.
+
+
+### [1.0.7.x](#tab/version-1-0-7-x)
+### General
+
+The General page provides configuration options for the device virtual level, user identification,
+take mode for crosspoint and lock operations, and the default input to be parked on outputs. Each setting can be adjusted to match operational requirements.
+
+### Virtual Levels
+
+This page contains a table with an overview of all levels available on the device.
+
+### Device Crosspoints
+
+This page contains the following tables:
+
+- The **Device Sources** table, with information about the sources.
+- The **Device Destinations** table, with information about the destinations.
+
+Changing the labels is not possible, because this is not supported by the device. Locking is possible for **Device Destinations**.
+
+It is possible to set a specific crosspoint by providing a **Source Port Label**, **Destination Port Label**, **Source Level**, and **Destination Level** on the **Custom Take** page.
+
+#### IO Configuration
+
+You can configure how the element will retrieve device data by setting the **Operational Mode**. It is possible also to configure labels and add notes to the sources and destinations via **Device Sources Configuration** and **Device Destinations Configuration** tables.
+
+
+### Crosspoints Errors
+This page contains a **Crosspoint Error Log**  table with an overview of all crosspoint errors available on the device, as well as **Lock Error Table** with information about the lock errors.
+
+
