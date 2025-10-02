@@ -40,13 +40,30 @@ This connection is used to communicate with the underlying Dialog DMA Web Servic
 
 ### Initialization
 
-On the **General** page, specify the **credentials** for user authentication of the REST API in order to collect data from the Dialog platform.
+On the **Configuration** page, specify the **credentials** for user authentication of the REST API in order to collect data from the Dialog platform. 
 
-On the **TSDB Polling** page, add the TSDBs that need to be polled to the **Database Configuration** table.
+- You can enable or disable the **EPM and CMDB**, which will hide or show the EPM and CMDB configuration pages.
+
+On the **Polling Config** page, add the TSDBs that need to be polled to the **Database Configuration** table.
 
 On the **Polling Status** page, enable the Event Config Status parameter and set up the polling interval and event cleanup timer to start retrieving events.
 
 In addition, two toggle buttons need to be enabled to poll both the dialog REST and TSDB API.
+
+#### EPM Configuration
+
+On the **EPM Configuration** page of the Intelsat Flex Platform VSAT element, you can find the controls for the ID Notify mechanism. To be able to see this page, enable the EPM toggle button on the **Configuration page**.
+
+- The **ID Import Settings** section contains controls to enable/disable the process of importing IDs from CSV files, as well as the path where the files are located and the current status of this process.
+- The **ID Export Settings** section is similar to the ID Import Settings section, except that its controls apply to the process of exporting CSV files with ID requests.
+
+#### CMDB Configuration
+
+On the **CMDB Configuration** page of the Intelsat Flex Platform VSAT element, you can configure the settings for the **provisioning files** mechanism. To be able to see this page, enable the CMDB toggle button on the **Configuration page**.
+
+The connector periodically exports configuration data for remotes, by updating an XML provisioning file on the DMA server, and retrieves information from the database contained in another provisioning file in JSON format. These mechanisms can be configured using the controls on this page.
+
+For each process, file path controls allow you to specify the directory where the provisioning files should be located, and a processing timer parameter allows you to configure the interval for automatic processing.
 
 ## How to use
 
