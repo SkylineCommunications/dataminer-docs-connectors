@@ -26,7 +26,7 @@ In addition to polling values, you can configure settings such as the ping funct
 | 5.1.4.x [Obsolete] | Made Cassandra-compliant. | 5.1.3.12 | - |
 | 5.1.5.x [Obsolete] | -  Improvements to IPSec logic. - Merge of all 5.1.X.X versions. | - | - |
 | 5.1.6.x [Obsolete] | Added extra connection for SysLog information. | 5.1.5.1 | - |
-| 5.1.7.x [SLC Main] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly. |
+| 5.1.7.x [SLC Main] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly.<br><br> NOTE: The following parameters are no longer saved to the database:<br>Table "Detailed Interface Info" (11000)<br>- 11291 Daily Tx Total<br>- 11292 Daily Rx Total<br>- 11293 Weekly Tx Total<br>- 11294 Weekly Rx Total<br>- 11295 Monthly Tx Total<br>- 11296 Monthly Rx Total |
 | 6.1.1.x | SNMPv3 version of 5.1.1.x. | - | - |
 | 7.0.0.x [Obsolete] | SNMP2: temporary branch created based on 5.1.1.x to change the element type to "Management System". | - | If you move to this branch, you will need to recreate the element. |
 | 8.0.0.x [Obsolete] | Customer-specific range. **Deprecated as of 2021.** | 5.1.3.12 | - |
