@@ -7527,6 +7527,11 @@
     items:
     - name: Precise Time and Frequency 3207a Technical
       topicUid: Connector_help_Precise_Time_and_Frequency_3207a_Technical
+  - name: Precise Time and Frequency 1226
+    topicUid: Connector_help_Precise_Time_and_Frequency_1226
+    items:
+    - name: Precise Time and Frequency 1226 Technical
+      topicUid: Connector_help_Precise_Time_and_Frequency_1226_Technical
 - name: Pro-Bel
   items:
   - name: Pro-Bel Basic Router SNMP
