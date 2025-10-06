@@ -4,7 +4,7 @@ uid: Connector_help_Precise_Time_and_Frequency_1226_Technical
 
 # Precise Time and Frequency 1226
 
-The Precise Time and Frequency 1226 connector is designed to interface with the Precise Time and Frequency 1226 Time and Frequency System, providing users with access to its high-precision time and frequency signals through SNMP and Telnet protocols. The connector allows the monitoring and configuration of the device's parameters, ensuring accurate and reliable operation.
+This connector is designed to interface with the Precise Time and Frequency 1226 system, providing users with access to its high-precision time and frequency signals through SNMP and Telnet protocols. The connector allows the monitoring and configuration of the system's parameters, ensuring accurate and reliable operation.
 
 ## Configuration
 
@@ -26,7 +26,7 @@ SNMP Settings:
 
 ### Initialization
 
-When you have created a new element, make sure all necessary SNMP settings and Telnet credentials are properly configured.
+When you have created a new element, go to the **Configuration** > **Credentials** page and make sure the Telnet credentials are configured correctly.
 
 ### Web Interface
 
@@ -34,10 +34,8 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-In the **Configuration** page:
+The **Configuration** page includes the following settings:
 
-- **Credentials**: Enter the required Telnet credentials. This is crucial for Telnet functionality.
-- **Module Polling**: Enable polling for each module if the device includes that module.
-- **Telnet Settings**: Adjust polling state, timer, and timeout according to your preferences.
-
-
+- **Credentials**: The Telnet credentials to connect to the system must be specified here. This is crucial for Telnet functionality.
+- **Module Polling**: Allows you to enable polling for each module if the device includes that module.
+- **Telnet Settings**: Allows you to adjust polling state, timer, and timeout according to your preferences.
