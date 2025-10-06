@@ -18,13 +18,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: 192.168.54.41
-- **Device address**: Not required
+- **IP address/host**: The polling IP of the destination, e.g. *192.168.54.41*.
+- **Device address**: Not required.
+
 SNMP Settings:
 
-- **Port number**: 161
-- **Get community string**: public
-- **Set community string**: private
+- **Port number**: The port of the connected device, e.g. *161.*
+- **Get community string**: The community string used when reading values from the device, e.g. *public*.
+- **Set community string**: The community string used when setting values on the device, e.g. *private*.
 
 ### Web Interface
 
@@ -37,7 +38,7 @@ The web interface is only accessible when the client machine has network access 
 This page contains information about the system:
 
 - **Product Name**: The name of the Avid NEXIS product line.
-- **Version**: The version of the AvidNEXIS install.
+- **Version**: The version of the AvidNEXIS installation.
 
 ### Status
 
@@ -55,7 +56,7 @@ This page contains information on the overall system performance:
 - **Read Megabytes Per Second**: Total read megabytes per second for all connected clients.
 - **Write Megabytes Per Second**: Total write megabytes per second for all connected clients.
 - **Messages Per Second**: The number of messages per second the system director is processing.
-- **Open Files**: How many open files are currently open.
+- **Open Files**: The number of currently open files.
 - **Active Client Count**: The active client count.
 - **Maximum Client Count**: The maximum active client count.
 
@@ -64,9 +65,9 @@ This page contains information on the overall system performance:
 This page contains system usage information:
 
 - **Highest Disk Used Percentage**: The highest percent used across all disks.
-- **Total System MB**: How total system megabytes.
-- **Total Allocated MB**: How total allocated megabytes. Allocated size is the sum of all the workspace sizes.
-- **Total Used MB**: How total system usage across all workspaces.
-- **File Count**: How total number of files across all workspaces.
+- **Total System MB**: The total system megabytes.
+- **Total Allocated MB**: The total allocated megabytes. The allocated size is the sum of all the workspace sizes.
+- **Total Used MB**: The total system usage across all workspaces.
+- **File Count**: The total number of files across all workspaces.
 - **Folder Count**: The number of folders across all workspaces.
-- **Workspace Count**: How total number of workspaces.
+- **Workspace Count**: The total number of workspaces.
