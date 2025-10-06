@@ -6,7 +6,7 @@ uid: Connector_help_Precise_Time_and_Frequency_1226
 
 ## About
 
-This connector is designed to interface with the Precise Time and Frequency 1226 Distribution System, enabling users to access and manage its high-stability time and frequency signals. Through SNMP and Telnet protocols, the connector supports monitoring and configuration of device parameters, ensuring precise synchronization and dependable performance for critical applications.
+This connector is designed to interface with the Precise Time and Frequency 1226 system, enabling users to access and manage its high-stability time and frequency signals. Through SNMP and Telnet protocols, the connector supports monitoring and configuration of device parameters, ensuring precise synchronization and dependable performance for critical applications.
 
 ## Technical info
 
