@@ -110,7 +110,9 @@ Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the 
 
 **Solution**
 
-Open a command prompt as Administrator and execute the "lodctr /r" command. This will reconstruct the performance counters.
+Open a command prompt on the server as Administrator and execute the "lodctr /r" command. This will reconstruct the performance counters, and after about 10 minutes the Task Manager in the element should start to contain entries.
+
+However, note that this is not a permanent solution. Each time the server is rebooted, this command will need to be executed again. If you would like to discuss this solution with Skyline Communications or want to propose an alternative solution that persists across server reboots, please get in touch with your Skyline contact person.
 
 ## Contacting Server Failed: Connection to root/cimv2 failed. The RPC server is unavailable
 
