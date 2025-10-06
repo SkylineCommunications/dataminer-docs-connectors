@@ -110,7 +110,7 @@ Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the 
 
 **Solution**
 
-Open a command prompt as Administrator and execute the "lodctr /r" command. This will reconstruct the performance counters.
+Open a command prompt as Administrator on the server and execute the "lodctr /r" command. This will reconstruct the performance counters and after about 10 minutes the Task Manager in the element should start containing entries. Note that this however is not a permanent solution and each time the server is rebooted this command will need to be executed again. If you would know how to make this permanent across server reboots please let us know.
 
 ## Contacting Server Failed: Connection to root/cimv2 failed. The RPC server is unavailable
 
