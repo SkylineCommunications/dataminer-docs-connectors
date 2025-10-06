@@ -24,4 +24,4 @@ This connector uses an HTTP connection and requires the following input during e
 The connector uses API calls to request information from the DYN server.
 
 1. Provide API key.
-2. Enter the period for which you want to view live productions.  
+1. Enter the period for which you want to view live productions.
