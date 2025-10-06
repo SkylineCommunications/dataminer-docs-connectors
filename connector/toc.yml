@@ -8676,6 +8676,11 @@
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
   - name: Skyline EPM Platform VSAT GEO
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
+  - name: Skyline EPM Platform VSAT iDirect
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_iDirect
+    items:
+    - name: Skyline EPM Platform VSAT iDirect Technical
+      topicUid: Connector_help_Skyline_EPM_Platform_VSAT_iDirect_Technical
   - name: Skyline EVS Cerebrum Performance Monitor
     topicUid: Connector_help_Skyline_EVS_Cerebrum_Performance_Monitor
   - name: Skyline Example Serial Client Advanced
