@@ -98,11 +98,13 @@ You can enable LITE mode (only displaying part of the interface table) on the **
 
 ### Polling Settings
 
-Disabling **Interfaces Status** polling will stop sending "show interfaces status" SSH commands. As a result the **Detailed Interface Info** table **IF Status** column will show N/A for every row. Enabling Interfaces Status polling will instruct the connector to send a "show interfaces status" SSH command every time the Interface Table is polled. This means that disabling **Interface Table** polling automatically disables Interfaces Status polling. If no "show interfaces status" SSH command is send even though Interfaces Status polling is enabled, please check if Interface Table polling is enabled. 
+Disabling **Interfaces Status** polling will stop sending "show interfaces status" SSH commands. As a result, the **Detailed Interface Info** table **IF Status** column will show *N/A* for every row.
 
-The Interfaces Status polling **Interval** follows the Interface Table polling interval, no matter what is defined as Interfaces Status polling Interval. The Interface Table polling interval defines how frequent the "show interfaces status" SSH command is send.
+Enabling Interfaces Status polling will instruct the connector to send a "show interfaces status" SSH command every time the Interface Table is polled. This means that **disabling Interface Table polling automatically disables Interfaces Status polling**. If no "show interfaces status" SSH command is sent even though Interfaces Status polling is enabled, check if Interface Table polling is enabled.
 
-Interfaces Status polling will only succeed if the parameters **User Name** and **Password**, located on the **SSH Polling** page, are filled in correctly. Please check the parameters **Connection Status** and **Status Message** on the SSH Polling page if Interfaces Status polling failed.
+The Interfaces Status **polling interval** follows the Interface Table polling interval, no matter what is defined as the Interfaces Status polling interval. The Interface Table polling interval defines how frequently the "show interfaces status" SSH command is sent.
+
+Interfaces Status polling will only succeed if the parameters **User Name** and **Password**, located on the **SSH Polling** page, are filled in correctly. If Interfaces Status polling fails, check the parameters **Connection Status** and **Status Message** on the SSH Polling page.
 
 ### Device Configuration
 
