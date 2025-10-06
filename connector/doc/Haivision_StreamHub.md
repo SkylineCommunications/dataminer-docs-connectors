@@ -59,9 +59,9 @@ HTTP REST calls (GET and POST) are used to retrieve the device information. To s
 
 On the **Poll Settings** page of the element, you can disable polling for certain items if these are not relevant (e.g. Logs). You can also increase or decrease the polling interval for each item.
 
-### Inputs
-Page show available inputs and their parameters. Subpage **Input Profiles** allows overview of channel profiles, as well as overview of input profiles. Note that editing of active profile is not allowed.
+The **Inputs** and **Outputs** page show the available inputs and outputs, respectively, along with their parameters. Each of these pages has a subpage dedicated to profiles:
 
+- The **Input Profiles** subpage provides an overview of both channel profiles and input profiles.
+- The **Output Profiles** subpage provides an overview of output profiles.
 
-### Outputs
-Page show available outputs and their parameters. Subpage **Output Profiles** allows overview of output profiles, note that editing active profile is not allowed.
+Note that editing active profiles is not possible.
