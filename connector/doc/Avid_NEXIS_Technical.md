@@ -37,14 +37,14 @@ The web interface is only accessible when the client machine has network access 
 This page contains information about the system:
 
 - **Product Name**: The name of the Avid NEXIS product line.
-- **Version**: The version of the AvidNEXIS install.
+- **Version**: The version of the Avid NEXIS install.
 
 ### Status
 
 This page contains information regarding the overall status of the system:
 
 - **System Director State**: The state of the System Director.
-- **Check Event Log**: The check event log flag is set.
+- **Check Event Log**:  Information regarding the check event log flag.
 - **Workspace Redistributing Count**: The current number of workspaces currently performing a redistribution.
 
 ### Performance
