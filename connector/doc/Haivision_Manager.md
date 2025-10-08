@@ -4,49 +4,30 @@ uid: Connector_help_Haivision_Manager
 
 # Haivision Manager
 
+## About
 The Haivision Manager connector facilitates integration with Haivision's video streaming and media management solutions. It allows users to monitor, control, and automate workflows involving Haivision devices and services. The data source provides information about video streams, device health, and configuration settings, enabling efficient media management in broadcast, corporate, and live event environments. This integration ensures centralized access to critical operational data, streamlining video delivery processes.
 
-## About
+## Key Features
+- **Centralized Device Management**: Control and monitor multiple devices from a unified dashboard  
+- **Health & Status Monitoring**: Real-time device state (online/offline, error status)  
+- **Telemetry & Metrics Collection**: Network, throughput, stream statistics 
+- **Configuration & Metadata Sync**: Fetch device settings, firmware versions, and other metadata  
+- **Alerts & Events**: Capture logs 
 
-### Version Info
 
-| Range              | Features         | Based on | System Impact |
-|--------------------|------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version. | -        | -             |
+## Key features
 
-### Product Info
+### Monitor devices
+Effortlessly monitor all your connected devices in real time. The Haivision Manager provides a comprehensive overview of every online device, including detailed information such as device identifiers, hardware IDs, product types, versions, encoder counts, mission assignments, and even GPS location. Instantly see which devices are active and access their current operational status, ensuring you have full visibility and control over your network at all times.
+ ![Devices Page](~/connector/images/Haivision_Manager_Devices_Page.png)
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | 4.1.0              |
+### Monitor outputs
+Gain complete control over your media outputs with advanced monitoring capabilities. The Haivision Manager allows you to track the status of all output types—NDI, IP, and SDI—across your infrastructure. For each output, you can view its current state (Play, Pauze or Stop), locking status, input details, and associated device information. With integrated Play and Stop stream commands, you can start or halt media streams directly from the management interface, enabling rapid response and seamless workflow management. You can also Play or Stop a stream on the output.
+![Outputs Page](~/connector/images/Haivision_Manager_Outputs_Page.png)
 
-### System Info
+### Prerequisites
+To deploy this integration, you will need
+- DataMiner version **10.2.0 or higher**
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
-
-## Configuration
-
-### Connections
-
-#### HTTP Connection
-
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-
-### Initialization
-
-Additional configuration is necessary for a newly created Haivision Manager element. Specifically, an **API key** must be configured to enable communication with the Haivision data source. This key allows the connector to authenticate requests and access the required information from the Haivision system. Ensure the API key is obtained from your Haivision platform and entered in the appropriate parameter field on the **General** page of the element.
-
-## How to use
-
-The connector displays Haivision Manager data. API calls are used to retrieve the device information.
-
-On the **General** page of this connector, you can configure the API key to enable communication with the device.
-
-Via the right-click menu of the SDI, NDI, and IP Outputs tables on the **Outputs** page, you can manage the live stream from a connected field unit, using the Play Stream and Stop Stream options.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Haivision_Manager_Technical).
