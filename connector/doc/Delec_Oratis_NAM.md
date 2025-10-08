@@ -139,10 +139,11 @@ To add a test, click the **Add Test** button in the lower-right corner. This wil
 
 ### System Information page
 
-The HTTP requests send by the connector are different for different **Dante Software** version numbers:
-If the version number is at least 4.02.003.013, the connector uses /smartpi/ in the HTTP requests: /smartpi/inputs/updmetering.
-If the version number is between 4.00.008.002 and 4.02.003.013, the connector uses /digpa/ in the HTTP requests: /digpa/inputs/updmetering.
-If the version number is older than 4.00.008.002, the connector uses /delec/ in the HTTP requests: /delec/inputs/updmetering.
+The HTTP requests sent by the connector are different for different **Dante Software** version numbers:
+
+- If the version number is at least 4.02.003.013, the connector uses `/smartpi/` in the HTTP requests: `/smartpi/inputs/updmetering`.
+- If the version number is between 4.00.008.002 and 4.02.003.013, the connector uses `/digpa/` in the HTTP requests: `/digpa/inputs/updmetering`.
+- If the version number is older than 4.00.008.002, the connector uses `/delec/` in the HTTP requests: `/delec/inputs/updmetering`.
 
 ## Notes
 
