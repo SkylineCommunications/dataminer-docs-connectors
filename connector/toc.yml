@@ -1115,6 +1115,12 @@
     topicUid: Connector_help_Avid_Interplay_PAM
   - name: Avid ISIS
     topicUid: Connector_help_Avid_ISIS
+  - name: Avid NEXIS
+    topicUid: Connector_help_Avid_NEXIS
+    items:
+    - name: Avid NEXIS Technical
+      topicUid: Connector_help_Avid_NEXIS_Technical
+  - name: Intel IPMI
   - name: Avid System Monitor
     topicUid: Connector_help_Avid_System_Monitor
 - name: AVIT
