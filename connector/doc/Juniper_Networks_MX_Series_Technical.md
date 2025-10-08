@@ -43,5 +43,3 @@ No redundancy is defined.
 
 The **health** of the different router components such as **Routing Engine**, **PICs**, **Fans**, ... can be monitored on the **Operation** page.
 The basic interface information such as the name, admin and operational states, speed, ... of the interfaces is presented on the **Interface** page whereas the **Juniper-specific enhancements** of the interfaces are presented on the **Interface Extension**, **Policer**, **Media**, **Traffic** and **Accounting** pages.
-
-[In this section, you can provide additional information about the connector that does not fit in the other sections. Remove this section if it does not contain any info.]
