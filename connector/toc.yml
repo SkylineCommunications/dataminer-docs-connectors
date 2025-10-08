@@ -5480,6 +5480,11 @@
     topicUid: Connector_help_Juniper_Networks_Manager
   - name: Juniper Networks Manager CIN Platform
     topicUid: Connector_help_Juniper_Networks_Manager_CIN_Platform
+  - name: Juniper Networks MX Series
+    topicUid: Connector_Juniper_Networks_MX_Series
+    items:
+    - name: Juniper Networks MX Series Technical
+      topicUid: Connector_Juniper_Networks_MX_Series_Technical
   - name: Juniper Networks QFX3x00
     topicUid: Connector_help_Juniper_Networks_QFX3x00
 - name: JVC
