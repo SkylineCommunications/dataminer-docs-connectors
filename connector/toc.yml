@@ -4665,6 +4665,9 @@
       topicUid: Connector_help_Haivision_Makito_X4_Platform_Technical
   - name: Haivision Manager
     topicUid: Connector_help_Haivision_Manager
+    items: 
+    - name: Haivision Manager Technical
+      topicUid: Connector_help_Haivision_Manager_Technical
   - name: Haivision Media Gateway
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
