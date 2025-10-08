@@ -4653,7 +4653,7 @@
   - name: Haivision Manager
     topicUid: Connector_help_Haivision_Manager
     items: 
-    -name: Haivision Manager Technical
+    - name: Haivision Manager Technical
       topicUid: Connector_help_Haivision_Manager_Technical
   - name: Haivision Media Gateway
     topicUid: Connector_help_Haivision_Media_Gateway
