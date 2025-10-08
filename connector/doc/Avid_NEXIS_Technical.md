@@ -45,7 +45,7 @@ This page contains information about the system:
 This page contains information regarding the overall status of the system:
 
 - **System Director State**: The state of the System Director.
-- **Check Event Log**:  Information regarding the check event log flag.
+- **Check Event Log**: Information regarding the check event log flag.
 - **Workspace Redistributing Count**: The current number of workspaces currently performing a redistribution.
 
 ### Performance
@@ -64,7 +64,7 @@ This page contains information on the overall system performance:
 
 This page contains system usage information:
 
-- **Highest Disk Used Percentage**: The highest percent used across all disks.
+- **Highest Disk Used Percentage**: The highest percentage used across all disks.
 - **Total System MB**: The total system megabytes.
 - **Total Allocated MB**: The total allocated megabytes. The allocated size is the sum of all the workspace sizes.
 - **Total Used MB**: The total system usage across all workspaces.
