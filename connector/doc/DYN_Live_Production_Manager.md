@@ -10,8 +10,8 @@ This is a custom DataMiner connector for DYN. The connector is used to visualize
 
 ## Key Features
 
-- **Live Productions**: Overview of all live production events in a specific period.
-- **Clubs and Venues**: Overview of all available venues and clubs from all events.
+- **Live productions**: Overview of all live production events in a specific period.
+- **Clubs and venues**: Overview of all available venues and clubs from all events.
 
 ## Use Case
 

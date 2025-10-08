@@ -23,11 +23,11 @@ This connector uses an HTTP connection and requires the following input during e
 
 The connector uses API calls to request information from the DYN server.
 
-Provide the following on the General page:
+To enable this, specify the following information on the **General** page:
 
-1. Provide API key.
-1. Enter the period for which you want to view live productions.
+- Provide the API key.
+- Enter the period for which you want to view live productions.
 
 ## How to Use
 
-- Open the element and go to the Live Production page to view all live production events. For more details about clubs or venues, visit the Clubs or Venues pages.
+On the **Live Production** page, you can view all live production events. For more details about clubs or venues, visit the **Clubs** or **Venues** pages.
