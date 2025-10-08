@@ -26,4 +26,4 @@ The connector uses API calls to request information from the DYN server.
 Provide the following on the General page:
 
 1. Provide API key.
-2. Enter the period for which you want to view live productions.  
+1. Enter the period for which you want to view live productions.
