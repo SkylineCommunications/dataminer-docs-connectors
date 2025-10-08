@@ -10,13 +10,13 @@ This connector is designed to interface with the Precise Time and Frequency 1226
 
 ## Key Features
 
-- **Comprehensive Operational Status Monitoring**: Provides real-time visibility into the status of all outputs, inputs, and auxiliary channels. Users can quickly identify channel conditions (okay, fault, or inactive) to ensure system reliability and reduce downtime.
+- **Comprehensive operational status monitoring**: Provides real-time visibility on the status of all outputs, inputs, and auxiliary channels. Users can quickly identify channel conditions to ensure system reliability and reduce downtime.
 
-- **Configurable Channel Control**: Supports direct configuration of channels within the Operational Status table. Operators can activate or inactivate specific outputs, inputs, or auxiliary channels as required, enabling flexible system management and streamlined troubleshooting.
+- **Configurable channel control**: Supports direct configuration of channels from within DataMiner. Operators can activate or inactivate specific outputs, inputs, or auxiliary channels as required, enabling flexible system management and streamlined troubleshooting.
 
-- **Voltage Supervision Across All Channels**: Continuously monitors the voltage levels of outputs, inputs, and auxiliary channels. This ensures stable performance, helps detect anomalies early, and supports proactive maintenance to maintain signal accuracy and system integrity.
+- **Voltage supervision across all channels**: Continuously monitors the voltage levels of outputs, inputs, and auxiliary channels. This ensures stable performance, helps detect anomalies early, and supports proactive maintenance to maintain signal accuracy and system integrity.
 
-- **Fault Detection and Alerts**: Able to monitor and alarm abnormal conditions, such as channel faults or voltage irregularities, enabling faster incident response and minimizing system disruption.
+- **Fault detection and alerts**: Alarms triggered for abnormal conditions, such as channel faults or voltage irregularities, enable faster incident response and minimize system disruption.
 
 ## Technical info
 

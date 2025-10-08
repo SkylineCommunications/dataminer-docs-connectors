@@ -28,24 +28,24 @@ SNMP Settings:
 
 When you have created a new element, go to the **Configuration** > **Credentials** page and make sure the Telnet credentials are configured correctly.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product. It provides a comprehensive set of monitoring and configuration options, similar to the command line interface.
+
 ## How to Use
 
-The **Configuration** page includes the following settings:
+The **Configuration** page allows you configure settings related to the DataMiner element:
 
 - **Credentials**: The Telnet credentials to connect to the system must be specified here. This is crucial for Telnet functionality.
 - **Module Polling**: Allows you to enable polling for each module if the device includes that module.
 - **Telnet Settings**: Allows you to adjust polling state, timer, and timeout according to your preferences.
 
-The **Operational Status** page contains three tables:
+On the **Operational Status** page, you can monitor and configure data using a number of tables:
 
-- **Input Config Table**: The table where you can configure the *Role* and the *Source* for the Channels in use. 
-- **Output Channel Status Table**: The table where the output channel statuses can be monitored. You are also able to activate or inactivate individual channels with the *Activate/Inactivate* column.
-- **Input/Aux Channel Status Table**: The table where the input and auxilary channel statuses can be monitored. You are also able to activate or inactivate individual channels with the *Activate/Inactivate* column.
+- **Input Config Table**: Allows you to configure the **Role** and the **Source** for the channels in use.
+- **Output Channel Status Table**: Allows you to monitor the output channel statuses. You can also activate or inactivate individual channels with the *Activate/Inactivate* column.
+- **Input/Aux Channel Status Table**: Allows you to monitor the input and auxiliary channel statuses. You can also activate or inactivate individual channels with the *Activate/Inactivate* column.
 
-The **Analog Readings** page contains three tables to monitor the voltages of each of the output, input and auxilary channels.
+The **Analog Readings** page allows you to monitor the voltages of each of the output, input, and auxiliary channels.
 
-The **Advance Configuration** page constains the overall status of the device and the *Reset* button, to reset the device.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product. It provides a comprehensive set of monitoring and configuration options, similar to the command line interface.
+The **Advanced Configuration** page contains the overall status of the device, as well as a button that can be used to **reset the device**.
