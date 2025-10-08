@@ -27,3 +27,7 @@ Provide the following on the General page:
 
 1. Provide API key.
 1. Enter the period for which you want to view live productions.
+
+## How to Use
+
+- Open the element and go to the Live Production page to view all live production events. For more details about clubs or venues, visit the Clubs or Venues pages.
