@@ -139,11 +139,13 @@ To add a test, click the **Add Test** button in the lower-right corner. This wil
 
 ### System Information page
 
-The HTTP requests sent by the connector are different for different **Dante Software** version numbers:
+The HTTP requests sent by the connector are different for different **Dante Software** versions. The URL to API parameters are built based on the **HTTP URL Source** parameter. The default HTTP URL Source setting depends on the Dante Software version. Digpa is selected if the Dante Software version is at least 4.00.008.002. Delec is selected for older systems.
 
-- If the version number is at least 4.02.003.013, the connector uses `/smartpi/` in the HTTP requests: `/smartpi/inputs/updmetering`.
-- If the version number is between 4.00.008.002 and 4.02.003.013, the connector uses `/digpa/` in the HTTP requests: `/digpa/inputs/updmetering`.
-- If the version number is older than 4.00.008.002, the connector uses `/delec/` in the HTTP requests: `/delec/inputs/updmetering`.
+- *Delec* will instruct the connector to use `/delec/` in the URL's `/delec/inputs/updmetering`.
+- *Digpa* will instruct the connector to use `/digpa/` in the URL's `/digpa/inputs/updmetering`.
+- *Smartpi* will instruct the connector to use `/smartpi/` in the URL's `/smartpi/inputs/updmetering`.
+
+If the element is not able to access the device, please try changing the HTTP URL Source parameter to *Smartpi*. It could be that devices that run newer Dante Software versions provide their information through a *smartpi* interface.
 
 ## Notes
 
