@@ -144,6 +144,8 @@ The HTTP requests sent by the connector are different for different **Dante Soft
 - Digpa will instruct the connector to use `/digpa/` in the URL's `/digpa/inputs/updmetering`.
 - Smartpi will instruct the connector to use `/smartpi/` in the URL's `/smartpi/inputs/updmetering`.
 
+If the element is not able to access the device, please try changing the HTTP URL Source parameter to Smartpi. It could be that devices, which run newer Dante Software versions, provide their information through a smartpi interface.
+
 ## Notes
 
 Regarding the **General** page:
