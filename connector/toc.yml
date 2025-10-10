@@ -1087,7 +1087,7 @@
 - name: Avcom of Virginia
   items:
   - name: Avcom of Virginia EVO-RSA
-    topicUid: onnector_help_Avcom_of_Virginia_EVO-RSA
+    topicUid: Connector_help_Avcom_of_Virginia_EVO-RSA
   - name: Avcom of Virginia RBR-2150A
     topicUid: Connector_help_Avcom_of_Virginia_RBR-2150A
   - name: Avcom of Virginia RSA-2500B
