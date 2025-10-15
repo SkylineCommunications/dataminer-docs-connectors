@@ -27,6 +27,10 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
 
+SOCKET.IO NOTIFICATION CONNECTION (in QAction):
+- **IP address/host**: Extracts it from the configured HTTP connection.
+- **IP port**: Hard coded to use 8896 when HTTP connection uses HTTPS, if it uses HTTP we use port 8889.
+
 ### Initialization
 
 Additional configuration is necessary for a newly created Haivision Manager element. Specifically, an **API key** must be configured to enable communication with the Haivision data source. This key allows the connector to authenticate requests and access the required information from the Haivision system. Ensure the API key is obtained from your Haivision platform and entered in the appropriate parameter field on the **General** page of the element.
