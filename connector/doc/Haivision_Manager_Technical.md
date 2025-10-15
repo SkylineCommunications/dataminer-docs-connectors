@@ -28,8 +28,9 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination.
 
 SOCKET.IO NOTIFICATION CONNECTION (in QAction):
-- **IP address/host**: Extracts it from the configured HTTP connection.
-- **IP port**: Hard coded to use 8896 when HTTP connection uses HTTPS, if it uses HTTP we use port 8889.
+
+- **IP address/host**: The connector will extract this from the configured HTTP connection.
+- **IP port**: The connector is hard-coded to use 8896 when the HTTP connection uses HTTPS; if the connection uses HTTP, port 8889 is used.
 
 ### Initialization
 
