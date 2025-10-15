@@ -86,4 +86,4 @@ Another important difference with the previous range is related to the passive l
 
 This connector requires specific Automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
 
-With larger devices or large data sets, the polling performance may vary.
+With larger devices or large datasets, the polling performance may vary.
