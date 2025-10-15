@@ -94,6 +94,6 @@ You can right-click the rows in the tables to open a context menu that allows yo
 
 This page displays alarms related to the services.
 
-### Web Interface Page
+### Web Interface
 
 This page displays the web interface of the polling IP address. It is only available when the client machine has network access to the product.
