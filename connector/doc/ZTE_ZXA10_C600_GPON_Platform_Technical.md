@@ -99,4 +99,4 @@ This connector requires specific Correlation rules and Automation scripts for co
 
 In range **1.0.1.x** of the connector, the Correlation rules are no longer required.
 
-With larger devices or large data sets, the polling performance may vary.
+With larger devices or large datasets, the polling performance may vary.

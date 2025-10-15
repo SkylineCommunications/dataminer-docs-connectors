@@ -88,7 +88,7 @@ All receivers that are linked with the outgoing flow are listed. This informatio
 - **Tiles**: A quick overview of the receivers is visualized.
 - **Table**: A list of all the receivers is displayed. You can copy values or export the table data via the context menu.
 
-There is a slider control available to toggle the data set between ***All*** and ***Configured Only***. *Configured Only* displays all receivers that are listed in VSM but where no active stream was detected.
+There is a slider control available to toggle the dataset between ***All*** and ***Configured Only***. *Configured Only* displays all receivers that are listed in VSM but where no active stream was detected.
 
 The states are calculated via the IGMP Snooping tables from the linked Arista switches. DCF is used to find the interface link and check if the multicasts are sent to these interfaces.
 
