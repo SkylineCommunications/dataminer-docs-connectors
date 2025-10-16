@@ -16,7 +16,7 @@ There are several versions of the connector. The 1.0.0.x range is used for older
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]     |Draft range. Obsolete - should not be used. | -            | -                 |
 | 1.1.0.x [SLC Main]   | Initial version.                            | -            | -                 |
-| 1.2.0.x [SLC Main]   | Range dedicated to the NAM x03 model.       | -            | Upgrading to 1.2.0.7 causes the historical trend data and alarm history of the GPIO Table Event column to be incorrect. This table is located on the Gpio settings page. You will need to correct the monitoring thresholds for this column in every alarm template.                 |
+| 1.2.0.x [SLC Main]   | Range dedicated to the NAM x03 model.       | -            | Upgrading to 1.2.0.7 causes the historical trend data and alarm history of the GPIO Table Event column to be incorrect. This table is located on the GPIO Settings page. You will need to correct the monitoring thresholds for this column in every alarm template.                 |
 
 ### Product Info
 
