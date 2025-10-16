@@ -9594,6 +9594,9 @@
     topicUid: Connector_help_Tektronix_Prism
   - name: Tektronix Sentry
     topicUid: Connector_help_Tektronix_Sentry
+    items:
+    - name: Tektronix Sentry Technical
+      topicUid: Connector_help_Tektronix_Sentry_Technical
   - name: Tektronix Sentry Edge
     topicUid: Connector_help_Tektronix_Sentry_Edge
   - name: Tektronix Sentry PVQ
