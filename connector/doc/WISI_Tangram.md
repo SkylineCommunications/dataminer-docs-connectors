@@ -92,8 +92,9 @@ UDP/IP CONNECTION:
 - **IP port**: The port of the connected device, by default *514*.
 
 > [!IMPORTANT]
-> When creating an element, it may default the port as "TCP/IP". Make sure to change it to "UDP/IP". 
-> If you are using range 1.2.x, you must set the **IP address** to the value **any** so all SYSLOG messages can be retrieved. The connector will filter the applicable messages.
+>
+> - When you create an element, the port may by default be set to TCP/IP. Make sure to change it to **UDP/IP**. 
+> - If you are using range 1.2.x, you must set the **IP address** to the value **any** so all SYSLOG messages can be retrieved. The connector will filter the applicable messages.
 
 #### HTTP Connection
 
