@@ -16,6 +16,11 @@ The Skyline Lock Manager connector allows the management of locks within a DataM
 | 1.0.1.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.1.X |
 | 1.0.2.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.2.X |
 | 1.0.3.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.3.X |
+| 1.1.0.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 2.0.X |
+
+Connector range 1.0.X.X is compatible with Skyline Lock Manager ConnectorAPI Nuget version 1.X.X, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.1.1.1.
+
+Connector range 1.1.X.X is compatible with Skyline Lock Manager ConnectorAPI Nuget version 2.X.X, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.0.1.1.
 
 ## Configuration
 
