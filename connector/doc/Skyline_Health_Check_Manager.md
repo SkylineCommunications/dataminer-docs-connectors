@@ -137,4 +137,4 @@ The connector contains settings to customize its behavior:
 
 - **Longer Duration Time**: Allows you to specify a duration during which tests will run and get information on their failure rate.
 
-- **Execute Tests**: You can start the execution of any tests even if it is not the scheduled time for the next run. This option will run all enabled tests and send the report emails.
+- **Execute Tests**: You can start the execution of any tests even if it is not the scheduled time for the next run. This option will trigger all currently enabled tests. **Please note that tests executed this way will not send report emails.**
