@@ -7,7 +7,7 @@ uid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 
 ## About
 
-The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner Automation script and hyperlinks that extend the Alarm Console menu to include a "Create Ticket" option, allowing users to initiate ticket creation directly from alarms.
+The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner Automation script and hyperlinks that extend the Alarm Console menu to include a "Create Ticket" and "Go to Ticket" options, allowing users to initiate ticket creation directly from alarms.
 
 ## Configuration
 
@@ -31,7 +31,7 @@ To ensure integration with the Orange Oceane Ticketing System in DataMiner, plea
 
 - **Network access:** The Orange Oceane Ticketing System API must be accessible over the network for API communication.
 - **DataMiner version:** Make sure you are using DataMiner version **10.5 or higher** to fully support the Automation script functionality.
-- **Authentication configuration:** Make sure you have the necessary authentication credentials, including Client ID, Client Secret, and User ID. (See [Initialization](#initialization).)
+- **Authentication configuration:** Make sure you have the necessary authentication credentials, including Client ID and Client Secret. Additionally, DataMiner usernames with ticket creation permissions must be mapped to their corresponding Oceane User IDs. (See [Initialization](#initialization).)
 - **Automation script:** Make sure the "Orange Oceane Ticketing System" Automation script is installed. (See [Automation Scripts](#automation-scripts).)
 
 ### Initialization
@@ -49,11 +49,10 @@ After creating the element, configure the following settings on the **Settings**
 
   - **Client ID:** The client identifier for authentication with the Orange Oceane Ticketing System.
   - **Client Secret:** The secret key for authentication.
-  - **User ID:** The identifier of the user creating the tickets.
 
 When this is done, click the **Authenticate** button in the API Settings section to establish the connection with the Orange Oceane Ticketing System.
 
-Note that the "Client ID" and "Client Secret" are used for authentication, and the "User ID" is used to identify the user creating the tickets but is not used in the authentication process.
+Note that the Client ID and Client Secret are used for authentication. The Oceane User ID for ticket creation is obtained from the DataMiner username configuration (each DataMiner username must be mapped to a corresponding Oceane User ID).
 
 ## Automation Scripts
 
@@ -95,25 +94,28 @@ The hyperlink configuration can also be extended with a "Go To Ticket" option to
 ```xml
 <HyperLinks xmlns="http://www.skyline.be/config/hyperlinks">
   <HyperLink id="1"
-          version="2"
-          name="Create Ticket"
-          menu="root"
-          type="script"
-          alarmColumn="false">
+             version="2"
+             name="Create Ticket"
+             menu="root"
+             type="script"
+             alarmColumn="false"
+             filterElement="AlarmEventMessage.PropertiesDict.&quot;Oceane Ticket ID&quot;[String]==''">
     Orange Oceane Ticketing System||DMA ID=[DMAID];Element ID=[EID];Alarm ID=[ROOTKEY];Element Name=[ENAME];Alarm Value=[VALUE];Root Time=[ROOTTIME:yyyy-MM-ddTHH:mm:ssZ]||Create ticket in Oceane Ticketing Tool|NoConfirmation,CloseWhenFinished
   </HyperLink>
   <HyperLink id="2"
-          version="2"
-          name="Go To Ticket"
-          menu="root"
-          type="url"
-          filterElement="AlarmEventMessage.PropertiesDict.&quot;Oceane Ticket URL&quot;[String]!=''">
-     [PROPERTY:ALARM:Oceane Ticket URL]
-   </HyperLink>
+             version="2"
+             name="Go To Ticket"
+             menu="root"
+             type="url"
+             filterElement="AlarmEventMessage.PropertiesDict.&quot;Oceane Ticket URL&quot;[String]!=''">
+    [PROPERTY:ALARM:Oceane Ticket URL]
+  </HyperLink>
 </HyperLinks>
 ```
 
 The "Go To Ticket" option opens the **Oceane Ticketing System** in your browser. The tool has its own authentication mechanism, so the "Go To Ticket" option expects that you have already logged into Oceane in the same browser session. Once you have been authenticated, Oceane saves your session in the browser cookies. The "Go To Ticket" option does not handle authentication. If you have not previously logged into Oceane in the browser, you will see an "Unauthorized" prompt from Oceane. You will need to authenticate separately before using this feature.
+
+With the provided configuration, only one hyperlink option will be displayed at a time: "Create Ticket" appears when no ticket exists for the alarm, while "Go To Ticket" appears only after a ticket has been created.
 
 > [!NOTE]
 > Two custom alarm properties should be added to the DMA alarm properties to store the ticket ID and URL. They should be named **Oceane Ticket ID** and **Oceane Ticket URL**, respectively. The connector will automatically set these properties when a ticket is created successfully. The **Oceane Ticket ID** property will contain the ticket ID, and the **Oceane Ticket URL** property will contain the URL to access the ticket in the Orange Oceane Ticketing System. For more information on adding custom properties to alarms, see [Adding custom properties to alarms](https://aka.dataminer.services/Changing_custom_alarm_properties).
