@@ -4,42 +4,41 @@ uid: Connector_help_Tektronix_Sentry_Technical
 
 # Tektronix Sentry
 
-The **Tektronix Sentry** connector will display information related to the **Sentry** device.
-
 ## About
 
-The **Tektronix Sentry** connector will display information related to the selected **Sentry** device. This information and details, such as Ports, Transport and Services, are available on different pages, described in the "Usage" section of this document. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the **bitrate**.
+This connector will display information about a Sentry device, including details related to ports, transport, and services. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the bitrate.
 
-**Note: This connector requires the .Net Framework 4.0.**
+> [!IMPORTANT]
+> This connector requires the .NET Framework 4.0.
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                         | **DCF Integration** | **Cassandra Compliant** |
-|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                                                                                         | No                  | Yes                     |
-| 1.1.0.x          | New firmware based on 1.0.0.x (see below)                                                                                                               | No                  | Yes                     |
-| 1.2.0.x          | New firmware based on 1.2.0.x (see below)                                                                                                               | No                  | Yes                     |
-| 1.2.1.x          | Change to display key in Program Trap Table.                                                                                                            | No                  | Yes                     |
-| 1.3.0.x          | Supports firmware version 10.3 Improved communication with Tektronix Config Manager Works with the latest version of Tektronix Config Manager (1.1.0.x) | No                  | Yes                     |
-| 1.4.0.x          | New range for firmware 10.6.6 Add ABR parameters for program statistics                                                                                 | No                  | Yes                     |
-| 1.4.1.x          | Index changed for Service Overview and ABR Statistics tables                                                                                            | No                  | Yes                     |
-| 1.4.2.x          | Changed Program Trap PCR Jitter from string to double.                                                                                                  | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. | No | Yes |
+| 1.1.0.x | New firmware based on 1.0.0.x (see below). | No | Yes |
+| 1.2.0.x | New firmware based on 1.2.0.x (see below). | No | Yes |
+| 1.2.1.x | Change to display key in Program Trap Table. | No | Yes |
+| 1.3.0.x | Supports firmware version 10.3. Improved communication with Tektronix Config Manager. Works with the latest version of Tektronix Config Manager (1.1.0.x). | No | Yes |
+| 1.4.0.x | New range for firmware 10.6.6. ABR parameters added for program statistics. | No | Yes |
+| 1.4.1.x | Index changed for Service Overview and ABR Statistics tables. | No | Yes |
+| 1.4.2.x | Program Trap PCR Jitter changed from string to double. | No | Yes |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                        |
-|------------------|--------------------------------------------------------------------|
-| 1.0.0.x          | Older versions                                                     |
-| 1.1.0.x          | 9.3                                                                |
-| 1.2.0.x          | 9.4                                                                |
-| 1.3.0.x          | 10.3+ (10.4 also works with this connector range; tested with 10.4.3) |
-| 1.4.0.x          | 10.6.6                                                             |
+| Range   | Device Firmware Version                                               |
+|---------|-----------------------------------------------------------------------|
+| 1.0.0.x | Older versions                                                        |
+| 1.1.0.x | 9.3                                                                   |
+| 1.2.0.x | 9.4                                                                   |
+| 1.3.0.x | 10.3+ (10.4 also works with this connector range; tested with 10.4.3) |
+| 1.4.0.x | 10.6.6                                                                |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-SNMP connection
+#### SNMP Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -54,7 +53,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-#### HTTP connection
+#### HTTP Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -64,7 +63,7 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
-### Configuration (Before 1.3.0.x)
+### Initialization (Before 1.3.0.x)
 
 The first time you start a **Tektronix Sentry** element, enter a username and a password in the **Configuration** dialog box.
 
@@ -84,7 +83,7 @@ Note that the connector uses the JSON API, so the username that the element uses
 
 The API password must be the same as the password used to log in on the web interface.
 
-### Configuration (Since 1.3.0.x)
+### Initialization (Since 1.3.0.x)
 
 The first time you start a **Tektronix Sentry** element, enter a username and a password in the **Configuration** dialog box.
 
@@ -103,9 +102,9 @@ Note that the connector uses the JSON API, so the username that the element uses
 The API password must be the same as the password used to log in on the web interface.
 
 > [!NOTE]
-> If you are receiving a large amount of "You must wait until..." errors, you may have to increase the **timeout of a single command (ms)** time in the element settings.
+> If you are receiving a large number of "You must wait until..." errors, you may have to increase the **timeout of a single command (ms)** time in the element settings.
 
-## Usage (Before 1.3.0.x)
+## How to Use (Before 1.3.0.x)
 
 ### General
 
@@ -284,7 +283,7 @@ This page can be used to access the web interface of the device. Note that the c
 
 The **RF Status Overview** information and details are only available on a Sentry Edge II device.
 
-## Usage (Since 1.3.0.x)
+## How to Use (Since 1.3.0.x)
 
 ### General
 
@@ -318,7 +317,7 @@ The page contains page buttons that provide access to the following subpages:
 - **ABR Statistics:** This page contains the **ABR Statistics** table, where you can view the program fragment statistics.
 
 > [!NOTE]
-> If you are receiving a large amount of "You must wait until..." errors, and the **Program Overview** table is not filling in properly, you may have to increase the **timeout of a single command (ms)** time in the element settings.
+> If you are receiving a large number of "You must wait until..." errors, and the **Program Overview** table is not filling in properly, you may have to increase the **timeout of a single command (ms)** time in the element settings.
 
 ### MPEG Input Settings
 
