@@ -215,6 +215,9 @@ The Evertz 7707VR8-HS is an 8x 3G/HD/SDI/DVB-ASI fiber receiver.
 
 ### Evertz BPXRF
 
+[!IMPORTANT]
+> This DVE is deprecated. [Evertz BPXRF](xref:Connector_help_Evertz_BPXRF) should be used instead.
+
 The Evertz BPXRF protection switches provide automatic changeover functionality to provide bypass protection for RF signals.
 
 - Supported types: 7703BPX-LB, 7703BPXA-LB, 7703BPX50-LB, 7703BPXA-LB-50, 7703BPX-IF, 7703BPXA-IF, or 7703BPX50-IF, where LB and IF denote the L-band or IF frequency type.

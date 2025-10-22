@@ -4,6 +4,9 @@ uid: Connector_help_Evertz_7700_General_Platform
 
 # Evertz 7700 General Platform
 
+ [!IMPORTANT]
+> This connector is deprecated. [Evertz 7x00 General Platform](xref:Connector_help_Evertz_7x00_General_Platform) should be used instead.
+
 The **Evertz 7700 General Platform** connector is used to monitor and control an Evertz chassis containing different Evertz 7700 series cards.
 
 ## About

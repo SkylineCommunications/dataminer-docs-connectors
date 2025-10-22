@@ -3325,34 +3325,65 @@
     topicUid: Connector_help_Evertz_5782XPS
   - name: Evertz 670IPG-X19-25G-100G
     topicUid: Connector_help_Evertz_670IPG-X19-25G-100G
-  - name: Evertz 7700ACOHD
-    topicUid: Connector_help_Evertz_7700ACOHD
-  - name: Evertz 7700DA6
-    topicUid: Connector_help_Evertz_7700DA6
   - name: Evertz 7700DA7-3G
     topicUid: Connector_help_Evertz_7700DA7-3G
-  - name: Evertz 7700DA7
-    topicUid: Connector_help_Evertz_7700DA7
   - name: Evertz 7700FC
     topicUid: Connector_help_Evertz_7700FC
-  - name: Evertz 7700R2x2-HD
-    topicUid: Connector_help_Evertz_7700R2x2-HD
   - name: Evertz 7700 General Platform
     topicUid: Connector_help_Evertz_7700_General_Platform
-  - name: Evertz 7700 General Platform Driver - 7700ACO2HD
-    topicUid: Connector_help_Evertz_7700_General_Platform_Driver_-_7700ACO2HD
-  - name: Evertz 7700 General Platform Driver - 7700R2X2-HD
-    topicUid: Connector_help_Evertz_7700_General_Platform_Driver_-_7700R2X2-HD
-  - name: Evertz 7700 General Platform Driver - 7814UDX-2-HD
-    topicUid: Connector_help_Evertz_7700_General_Platform_Driver_-_7814UDX-2-HD
-  - name: Evertz 7700 General Platform Driver - 7881DEC2MP2HD
-    topicUid: Connector_help_Evertz_7700_General_Platform_Driver_-_7881DEC2MP2HD
+    items:
+      - name: Evertz 7700 General Platform - 7700ACO2HD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7700ACO2HD
+      - name: Evertz 7700 General Platform - 7700R2X2-HD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7700R2X2-HD
+      - name: Evertz 7700 General Platform - 7814UDX-2-HD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7814UDX-2-HD
+      - name: Evertz 7700 General Platform - 7881DEC2MP2HD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7881DEC2MP2HD      
+      - name: Evertz 7700 General Platform - 7703PA
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7703PA
+      - name: Evertz 7700 General Platform - 7707VR8-HS
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7707VR8-HS
+      - name: Evertz 7700 General Platform - 7707VT8-HS
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7707VT8-HS  
+      - name: Evertz 7700 General Platform - 7703DA-RFA
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7703DA-RFA
+      - name: Evertz 7700 General Platform - 7707OE
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7707OE
+      - name: Evertz 7700 General Platform - 7707VT8
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7707VT8
+      - name: Evertz 7700 General Platform - 7708LR
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7708LR
+      - name: Evertz 7700 General Platform - 7708LT
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7708LT
+      - name: Evertz 7700 General Platform - 7700DA6
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7700DA6
+      - name: Evertz 7700 General Platform - 7700DA7
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7700DA7
+      - name: Evertz 7700 General Platform - 7700R2x2-HD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7700R2x2-HD
+      - name: Evertz 7700 General Platform - 7880IPASIIP
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7880IPASIIP
+      - name: Evertz 7700 General Platform - 7700ACOHD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7700ACOHD
+      - name: Evertz 7700 General Platform - SWPBRF7700
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_SWPBRF7700
+      - name: Evertz 7700 General Platform - BPXRF
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_BPXRF
+      - name: Evertz 7700 General Platform - 7880IRD-H264
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7880IRD-H264
+      - name: Evertz 7700 General Platform - 7780DMIPLB
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7780DMIPLB
+      - name: Evertz 7700 General Platform - 7881DEC2MPHD
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7881DEC2MPHD
+      - name: Evertz 7700 General Platform - 7812DCDA2Q
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7812DCDA2Q
+      - name: Evertz 7700 General Platform - 7780ASI-B2-DS3
+        topicUid: Connector_help_Evertz_7700_General_Platform_-_7780ASI-B2-DS3
   - name: Evertz 7703BPX-DC-RF
     topicUid: Connector_help_Evertz_7703BPX-DC-RF
   - name: Evertz 7703DA-RFA
     topicUid: Connector_help_Evertz_7703DA-RFA
-  - name: Evertz 7703PA
-    topicUid: Connector_help_Evertz_7703PA
   - name: Evertz 7707CVT
     topicUid: Connector_help_Evertz_7707CVT
   - name: Evertz 7707GPS-DR-F2
@@ -3363,26 +3394,10 @@
     topicUid: Connector_help_Evertz_7707LR
   - name: Evertz 7707LTA
     topicUid: Connector_help_Evertz_7707LTA
-  - name: Evertz 7707OE
-    topicUid: Connector_help_Evertz_7707OE
-  - name: Evertz 7707VR8-HS
-    topicUid: Connector_help_Evertz_7707VR8-HS
-  - name: Evertz 7707VT8-HS
-    topicUid: Connector_help_Evertz_7707VT8-HS
-  - name: Evertz 7707VT8
-    topicUid: Connector_help_Evertz_7707VT8
-  - name: Evertz 7708LR
-    topicUid: Connector_help_Evertz_7708LR
-  - name: Evertz 7708LT
-    topicUid: Connector_help_Evertz_7708LT
   - name: Evertz 7736CEM
     topicUid: Connector_help_Evertz_7736CEM
   - name: Evertz 7760ND-HD
     topicUid: Connector_help_Evertz_7760ND-HD
-  - name: Evertz 7780ASI-B2-DS3
-    topicUid: Connector_help_Evertz_7780ASI-B2-DS3
-  - name: Evertz 7780DMIPLB
-    topicUid: Connector_help_Evertz_7780DMIPLB
   - name: Evertz 7780TSM
     topicUid: Connector_help_Evertz_7780TSM
   - name: Evertz 7800FC
@@ -3408,8 +3423,6 @@
     topicUid: Connector_help_Evertz_7800SW-GE
   - name: Evertz 7801FC
     topicUid: Connector_help_Evertz_7801FC
-  - name: Evertz 7812DCDA2Q
-    topicUid: Connector_help_Evertz_7812DCDA2Q
   - name: Evertz 7814UDX-2-HD
     topicUid: Connector_help_Evertz_7814UDX-2-HD
   - name: Evertz 7825DSK2-LG
@@ -3424,12 +3437,8 @@
     topicUid: Connector_help_Evertz_7880DM4-LB-IP
   - name: Evertz 7880DM4-LB-IP - 7880DM4-LB-IP
     topicUid: Connector_help_Evertz_7880DM4-LB-IP_-_7880DM4-LB-IP
-  - name: Evertz 7880IPASIIP
-    topicUid: Connector_help_Evertz_7880IPASIIP
   - name: Evertz 7880IPG-NAT-6-10GE2
     topicUid: Connector_help_Evertz_7880IPG-NAT-6-10GE2
-  - name: Evertz 7880IRD-H264
-    topicUid: Connector_help_Evertz_7880IRD-H264
   - name: Evertz 7880R2x1-ASI-CS-2
     topicUid: Connector_help_Evertz_7880R2x1-ASI-CS-2
   - name: Evertz 7880TSM
@@ -3448,139 +3457,141 @@
     topicUid: Connector_help_Evertz_7891MG_-_Card
   - name: Evertz 7x00 General Platform
     topicUid: Connector_help_Evertz_7x00_General_Platform
-  - name: Evertz 7x00 General Platform - 7700ACO2HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700ACO2HD
-  - name: Evertz 7x00 General Platform - 7700ACOHD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700ACOHD
-  - name: Evertz 7x00 General Platform - 7700DA6
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700DA6
-  - name: Evertz 7x00 General Platform - 7700DA7-3G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700DA7-3G
-  - name: Evertz 7x00 General Platform - 7700DA7
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700DA7
-  - name: Evertz 7x00 General Platform - 7700R2X2-HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700R2X2-HD
-  - name: Evertz 7x00 General Platform - 7703DA-RFA
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7703DA-RFA
-  - name: Evertz 7x00 General Platform - 7703PA
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7703PA
-  - name: Evertz 7x00 General Platform - 7707EO (DA2EOSD)
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707EO_(DA2EOSD)
-  - name: Evertz 7x00 General Platform - 7707GPS-DR-F2
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707GPS-DR-F2
-  - name: Evertz 7x00 General Platform - 7707GPS-DT-F2
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707GPS-DT-F2
-  - name: Evertz 7x00 General Platform - 7707IFRA
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707IFRA
-  - name: Evertz 7x00 General Platform - 7707IFTA
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707IFTA
-  - name: Evertz 7x00 General Platform - 7707OE
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707OE
-  - name: Evertz 7x00 General Platform - 7707OE (DA2OESD)
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707OE_(DA2OESD)
-  - name: Evertz 7x00 General Platform - 7707VR4
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR4
-  - name: Evertz 7x00 General Platform - 7707VR4HS
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR4HS
-  - name: Evertz 7x00 General Platform - 7707VR8-HS
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR8-HS
-  - name: Evertz 7x00 General Platform - 7707VR8
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR8
-  - name: Evertz 7x00 General Platform - 7707VT4
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT4
-  - name: Evertz 7x00 General Platform - 7707VT4HS
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT4HS
-  - name: Evertz 7x00 General Platform - 7707VT8-HS
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT8-HS
-  - name: Evertz 7x00 General Platform - 7707VT8
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT8
-  - name: Evertz 7x00 General Platform - 7708LR
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7708LR
-  - name: Evertz 7x00 General Platform - 7708LT
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7708LT
-  - name: Evertz 7x00 General Platform - 7712UCHD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7712UCHD
-  - name: Evertz 7x00 General Platform - 7721AE8DEEHD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7721AE8DEEHD
-  - name: Evertz 7x00 General Platform - 7721DE4HDGPISCTE104
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7721DE4HDGPISCTE104
-  - name: Evertz 7x00 General Platform - 7736CDM
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7736CDM
-  - name: Evertz 7x00 General Platform - 7736CEM
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7736CEM
-  - name: Evertz 7x00 General Platform - 7746FSEAES8HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7746FSEAES8HD
-  - name: Evertz 7x00 General Platform - 7746FSHD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7746FSHD
-  - name: Evertz 7x00 General Platform - 7780ASI-B2-DS3
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7780ASI-B2-DS3
-  - name: Evertz 7x00 General Platform - 7780DMIPLB
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7780DMIPLB
-  - name: Evertz 7x00 General Platform - 7781DEC2MP2HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7781DEC2MP2HD
-  - name: Evertz 7x00 General Platform - 7800R4X23G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7800R4X23G
-  - name: Evertz 7x00 General Platform - 7807LT2
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7807LT2
-  - name: Evertz 7x00 General Platform - 7812DCDA2Q
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7812DCDA2Q
-  - name: Evertz 7x00 General Platform - 7812UDXD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7812UDXD
-  - name: Evertz 7x00 General Platform - 7814UDX-2-HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7814UDX-2-HD
-  - name: Evertz 7x00 General Platform - 7825CCE3G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7825CCE3G
-  - name: Evertz 7x00 General Platform - 7847FS-EAES8-3G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7847FS-EAES8-3G
-  - name: Evertz 7x00 General Platform - 7847FSE3G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7847FSE3G
-  - name: Evertz 7x00 General Platform - 7880DM4-LB-IP
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7880DM4-LB-IP
-  - name: Evertz 7x00 General Platform - 7880IPG-ASI8-IP10GE2
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7880IPG-ASI8-IP10GE2
-  - name: Evertz 7x00 General Platform - 7880IRD-H264
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7880IRD-H264
-  - name: Evertz 7x00 General Platform - 7881DEC2MPHD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7881DEC2MPHD
-  - name: Evertz 7x00 General Platform - 7881IRDA
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7881IRDA
-  - name: Evertz 7x00 General Platform - 7882DECH264
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7882DECH264
-  - name: Evertz 7x00 General platform - 7882DM-SAT
-    topicUid: Connector_help_Evertz_7x00_General_platform_-_7882DM-SAT
-  - name: Evertz 7x00 General Platform - 7890MG
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7890MG
-  - name: Evertz 7x00 General Platform - 7891MG-10GE2
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_7891MG-10GE2
-  - name: Evertz 7x00 General Platform - BPXRF
-    topicUid: Connector_help_Evertz_7x00_General_Platform_-_BPXRF
-  - name: Evertz 7x00 General Platform 7707ET
-    topicUid: Connector_help_Evertz_7x00_General_Platform_7707ET
-  - name: Evertz 7x00 General Platform 7807LR2
-    topicUid: Connector_help_Evertz_7x00_General_Platform_7807LR2
+    items: 
+      - name: Evertz 7x00 General Platform - 7700ACO2HD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700ACO2HD
+      - name: Evertz 7x00 General Platform - 7700ACOHD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700ACOHD
+      - name: Evertz 7x00 General Platform - 7700DA6
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700DA6
+      - name: Evertz 7x00 General Platform - 7700DA7-3G
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700DA7-3G
+      - name: Evertz 7x00 General Platform - 7700DA7
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700DA7
+      - name: Evertz 7x00 General Platform - 7700R2X2-HD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7700R2X2-HD    
+      - name: Evertz 7x00 General Platform - 7881DEC2MPHD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7881DEC2MPHD
+      - name: Evertz 7x00 General Platform - 7703DA-RFA
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7703DA-RFA
+      - name: Evertz 7x00 General Platform - 7703PA
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7703PA
+      - name: Evertz 7x00 General Platform - 7707EO (DA2EOSD)
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707EO_(DA2EOSD)
+      - name: Evertz 7x00 General Platform - 7707GPS-DR-F2
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707GPS-DR-F2
+      - name: Evertz 7x00 General Platform - 7707GPS-DT-F2
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707GPS-DT-F2
+      - name: Evertz 7x00 General Platform - 7707IFRA
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707IFRA
+      - name: Evertz 7x00 General Platform - 7707IFTA
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707IFTA
+      - name: Evertz 7x00 General Platform - 7707OE
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707OE
+      - name: Evertz 7x00 General Platform - 7707OE (DA2OESD)
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707OE_(DA2OESD)
+      - name: Evertz 7x00 General Platform - 7707VR4
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR4
+      - name: Evertz 7x00 General Platform - 7707VR4HS
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR4HS
+      - name: Evertz 7x00 General Platform - 7707VR8-HS
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR8-HS
+      - name: Evertz 7x00 General Platform - 7707VR8
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VR8
+      - name: Evertz 7x00 General Platform - 7707VT4
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT4
+      - name: Evertz 7x00 General Platform - 7707VT4HS
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT4HS
+      - name: Evertz 7x00 General Platform - 7707VT8-HS
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT8-HS
+      - name: Evertz 7x00 General Platform - 7707VT8
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7707VT8
+      - name: Evertz 7x00 General Platform - 7708LR
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7708LR
+      - name: Evertz 7x00 General Platform - 7708LT
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7708LT
+      - name: Evertz 7x00 General Platform - 7712UCHD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7712UCHD
+      - name: Evertz 7x00 General Platform - 7721AE8DEEHD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7721AE8DEEHD
+      - name: Evertz 7x00 General Platform - 7721DE4HDGPISCTE104
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7721DE4HDGPISCTE104
+      - name: Evertz 7x00 General Platform - 7736CDM
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7736CDM
+      - name: Evertz 7x00 General Platform - 7736CEM
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7736CEM
+      - name: Evertz 7x00 General Platform - 7746FSEAES8HD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7746FSEAES8HD
+      - name: Evertz 7x00 General Platform - 7746FSHD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7746FSHD
+      - name: Evertz 7x00 General Platform - 7780ASI-B2-DS3
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7780ASI-B2-DS3
+      - name: Evertz 7x00 General Platform - 7780DMIPLB
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7780DMIPLB
+      - name: Evertz 7x00 General Platform - 7781DEC2MP2HD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7781DEC2MP2HD
+      - name: Evertz 7x00 General Platform - 7800R4X23G
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7800R4X23G
+      - name: Evertz 7x00 General Platform - 7807LT2
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7807LT2
+      - name: Evertz 7x00 General Platform - 7812DCDA2Q
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7812DCDA2Q
+      - name: Evertz 7x00 General Platform - 7812UDXD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7812UDXD
+      - name: Evertz 7x00 General Platform - 7814UDX-2-HD
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7814UDX-2-HD
+      - name: Evertz 7x00 General Platform - 7825CCE3G
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7825CCE3G
+      - name: Evertz 7x00 General Platform - 7847FS-EAES8-3G
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7847FS-EAES8-3G
+      - name: Evertz 7x00 General Platform - 7847FSE3G
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7847FSE3G
+      - name: Evertz 7x00 General Platform - 7880DM4-LB-IP
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7880DM4-LB-IP
+      - name: Evertz 7x00 General Platform - 7880IPG-ASI8-IP10GE2
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7880IPG-ASI8-IP10GE2
+      - name: Evertz 7x00 General Platform - 7880IRD-H264
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7880IRD-H264
+      - name: Evertz 7x00 General Platform - 7881IRDA
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7881IRDA
+      - name: Evertz 7x00 General Platform - 7882DECH264
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7882DECH264
+      - name: Evertz 7x00 General platform - 7882DM-SAT
+        topicUid: Connector_help_Evertz_7x00_General_platform_-_7882DM-SAT
+      - name: Evertz 7x00 General Platform - 7890MG
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7890MG
+      - name: Evertz 7x00 General Platform - 7891MG-10GE2
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_7891MG-10GE2
+      - name: Evertz 7x00 General Platform - BPXRF
+        topicUid: Connector_help_Evertz_7x00_General_Platform_-_BPXRF
+      - name: Evertz 7x00 General Platform 7707ET
+        topicUid: Connector_help_Evertz_7x00_General_Platform_7707ET
+      - name: Evertz 7x00 General Platform 7807LR2
+        topicUid: Connector_help_Evertz_7x00_General_Platform_7807LR2
+      - name: Evertz 7x00 General Platform  - 7880IPASIIP
+        topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
+  - name: Evertz 9000RF-Probe
   - name: Evertz 7x00 General Platform Group 2
     topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2
-  - name: Evertz 7x00 General Platform Group 2 - 7700ACO2HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7700ACO2HD
-  - name: Evertz 7x00 General Platform Group 2 - 7707GPS-DR
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DR
-  - name: Evertz 7x00 General Platform Group 2 - 7707GPS-DT
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DT
-  - name: Evertz 7x00 General Platform Group 2 - 7746FSHD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7746FSHD
-  - name: Evertz 7x00 General Platform Group 2 - 7800IDA8-3G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800IDA8-3G
-  - name: Evertz 7x00 General Platform Group 2 - 7800R2x2-ACS
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800R2x2-ACS
-  - name: Evertz 7x00 General Platform Group 2 - 7800TM23G
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800TM23G
-  - name: Evertz 7x00 General Platform Group 2 - 7881DEC2MP2HD
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD
-  - name: Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC
-    topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC
-  - name: Evertz 7x00 General Platform  - 7880IPASIIP
-    topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
-  - name: Evertz 9000RF-Probe
+    items:
+    - name: Evertz 7x00 General Platform Group 2 - 7700ACO2HD
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7700ACO2HD
+    - name: Evertz 7x00 General Platform Group 2 - 7707GPS-DR
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DR
+    - name: Evertz 7x00 General Platform Group 2 - 7707GPS-DT
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7707GPS-DT
+    - name: Evertz 7x00 General Platform Group 2 - 7746FSHD
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7746FSHD
+    - name: Evertz 7x00 General Platform Group 2 - 7800IDA8-3G
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800IDA8-3G
+    - name: Evertz 7x00 General Platform Group 2 - 7800R2x2-ACS
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800R2x2-ACS
+    - name: Evertz 7x00 General Platform Group 2 - 7800TM23G
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800TM23G
+    - name: Evertz 7x00 General Platform Group 2 - 7881DEC2MP2HD
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD
+    - name: Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC
+      topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC
     topicUid: Connector_help_Evertz_9000RF-Probe
   - name: Evertz 9000RF-Probe - RF Input
     topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
@@ -3611,8 +3622,6 @@
     topicUid: Connector_help_Evertz_ev670-X45-HW
   - name: Evertz FC3000
     topicUid: Connector_help_Evertz_FC3000
-  - name: Evertz General Platform BPXRF
-    topicUid: Connector_help_Evertz_General_Platform_BPXRF
   - name: Evertz HD201x Video PassPort
     topicUid: Connector_help_Evertz_HD201x_Video_PassPort
   - name: Evertz HD2020-3G Video Passport
