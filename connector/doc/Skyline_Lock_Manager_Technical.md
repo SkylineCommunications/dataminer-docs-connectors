@@ -18,9 +18,9 @@ The Skyline Lock Manager connector allows the management of locks within a DataM
 | 1.0.3.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.3.X |
 | 1.1.0.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 2.0.X |
 
-Connector range 1.0.X.X is compatible with Skyline Lock Manager ConnectorAPI Nuget version 1.X.X, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.1.1.1.
+Connector range 1.0.x.x is compatible with Skyline Lock Manager ConnectorAPI Nuget version 1.x.x, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.1.1.1.
 
-Connector range 1.1.X.X is compatible with Skyline Lock Manager ConnectorAPI Nuget version 2.X.X, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.0.1.1.
+Connector range 1.1.x.x is compatible with Skyline Lock Manager ConnectorAPI Nuget version 2.x.x, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.0.1.1.
 
 ## Configuration
 
@@ -39,20 +39,19 @@ On the *Element Configuration* page, configure the following parameters:
 
 ### Logging Configuration
 
-As of range 1.0.3.x, the connector support persistent logging. This allows writing logs that persist when the element restarts.
-The files created by the persistent logging have the following name template: `C:\Skyline DataMiner\Logging\[element name]_[suffix].txt`.
+As of range 1.0.3.x, the connector supports persistent logging. This allows logs to be written that persist when the element restarts. The files created by the persistent logging have the following name template: `C:\Skyline DataMiner\Logging\[element name]_[suffix].txt`.
 
-The logging behavior can be configured on the *Logging Configuration* sub-page using the following parameters:
+The logging behavior can be configured on the *Logging Configuration* subpage, with the following parameters:
 
 - **Status**: Enables or disables the persistent logging.
-- **Logging Level**: Defines the minimum level of logs that should be stored persistently. Possible values are: 
-    - *Error*: logs when an error occurs.
-    - *Warning*: no logs at this level are currently implemented.
-    - *Info*: logs when locks are granted and released.
-    - *Debug*: logs InterApp request & response info.
-    - *Trace*: logs when QActions trigger and for which trigger parameter.
-- **Max Log File Size**: Defines the maximum size (in MB) of a single log file. When the size is exceeded, a new log file is created.
-- **Max Log File Count**: Defines the maximum number of log files that are kept. When the number of log files exceeds this value, the oldest log file is re-used and its logs overwritten.
+- **Logging Level**: Defines the minimum level of logging that should be stored persistently. Possible values are:
+  - *Error*: Logs when an error occurs.
+  - *Warning*: No logs at this level are currently implemented.
+  - *Info*: Logs when locks are granted and released.
+  - *Debug*: Logs InterApp request and response info.
+  - *Trace*: Logs when QActions trigger and for which trigger parameter.
+- **Max Log File Size**: Defines the maximum size (in MB) of a single log file. When this size is exceeded, a new log file is created.
+- **Max Log File Count**: Defines the maximum number of log files that are kept. When the number of log files exceeds this value, the oldest log file is re-used and its logs are overwritten.
 - **Log File Name Suffix**: Sets the suffix of the log file name in `C:\Skyline DataMiner\Logging\[element name]_[suffix].txt`.
 
 ## How to use
