@@ -10,9 +10,9 @@ The purpose of this connector is to listen to the ticketing application. When a 
 
 ## Key Features
 
-- **Ticket subscription**: The connector allows you to subscribe to specific ticket types via a configuration table. Only tickets of the selected types will be considered.
+- **External owner registration**: On startup, the connector registers its element name as an external owner within the ticketing application. This allows users to explicitly assign tickets to the connector.
 
-- **Automatic ticket forwarding**: If a ticket matches one of the subscribed types, it will be sent to iPaaS for further processing.
+- **Automatic ticket forwarding**: When a ticket's external owner matches the connector’s element name, it is automatically forwarded to iPaaS. iPaaS then creates the corresponding record in ServiceNow, ensuring that both systems stay in sync.
 
 ## Technical Reference
 

@@ -8413,6 +8413,11 @@
   items:
   - name: ServiceNow Authenticator
     topicUid: Connector_help_ServiceNow_Authenticator
+  - name: ServiceNow Incident Manager
+    topicUid: Connector_help_ServiceNow_Incident_Manager
+    items:
+      - name: ServiceNow Incident Manager Technical
+        topicUid: Connector_help_ServiceNow_Incident_Manager_Technical
   - name: ServiceNow Tables
     topicUid: Connector_help_ServiceNow_Tables
 - name: SES
