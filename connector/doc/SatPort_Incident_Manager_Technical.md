@@ -39,5 +39,4 @@ When you start using this connector, first provide all required input parameters
 
 ## Ticket Forwarding Behavior
 
-When a ticket is created in the ticketing application and its **External Owner** matches the connector’s element name, the connector identifies that the ticket is intended for it and automatically forwards it to **iPaaS**.  
-From there, iPaaS creates the corresponding ticket in **ServiceNow**.
+When a ticket is created in the ticketing application and its **External Owner** matches the connector’s element name, the connector identifies that the ticket is intended for it and automatically forwards it to **iPaaS**. From there, iPaaS creates the corresponding ticket in **ServiceNow**.

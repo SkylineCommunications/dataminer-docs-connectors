@@ -10,12 +10,9 @@ The purpose of this connector is to listen to the ticketing application. When a 
 
 ## Key Features
 
-- **External Owner Registration**  
-  On startup, the connector registers its element name as an *External Owner* within the ticketing application. This allows users to explicitly assign tickets to the connector.
+- **External owner registration**: On startup, the connector registers its element name as an external owner within the ticketing application. This allows users to explicitly assign tickets to the connector.
 
-- **Automatic Ticket Forwarding**  
-  When a ticket’s *External Owner* matches the connector’s element name, it is automatically forwarded to iPaaS.  
-  iPaaS then creates the corresponding record in ServiceNow, ensuring both systems stay in sync.
+- **Automatic ticket forwarding**: When a ticket's external owner matches the connector’s element name, it is automatically forwarded to iPaaS. iPaaS then creates the corresponding record in ServiceNow, ensuring that both systems stay in sync.
 
 ## Technical Reference
 
