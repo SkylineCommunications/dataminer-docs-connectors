@@ -7,7 +7,7 @@ uid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 
 ## About
 
-The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner Automation script and hyperlinks that extend the Alarm Console menu to include a "Create Ticket" and "Go to Ticket" options, allowing users to initiate ticket creation directly from alarms.
+The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner Automation script and hyperlinks that extend the Alarm Console menu to include "Create Ticket" and "Go to Ticket" options, allowing users to initiate ticket creation directly from alarms.
 
 ## Configuration
 
@@ -52,7 +52,7 @@ After creating the element, configure the following settings on the **Settings**
 
 When this is done, click the **Authenticate** button in the API Settings section to establish the connection with the Orange Oceane Ticketing System.
 
-Note that the Client ID and Client Secret are used for authentication. The Oceane User ID for ticket creation is obtained from the DataMiner username configuration (each DataMiner username must be mapped to a corresponding Oceane User ID).
+Note that the Client ID and Client Secret are used for authentication. The Oceane User ID for ticket creation is obtained from the DataMiner username configuration, which means that each DataMiner username must be mapped to a corresponding Oceane User ID.
 
 ## Automation Scripts
 
