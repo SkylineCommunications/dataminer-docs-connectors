@@ -2147,6 +2147,9 @@
   items:
   - name: Ceiton Resource Planning
     topicUid: Connector_help_Ceiton_Resource_Planning
+    items:
+    - name: Ceiton Resource Planning Technical
+      topicUid: Connector_help_Ceiton_Resource_Planning_Technical
 - name: Cellent
   items:
   - name: Cellent EMS
