@@ -128,6 +128,6 @@ On the **Configuration** page, you can configure the following element functiona
 
 For range **1.0.0.x** and **1.0.1.x** of the connector, specific Correlation rules and Automation scripts are required for the communication with auxiliary connectors such as the Generic CM Collector and with EPM connectors such as Skyline Platform EPM and Skyline Platform WM. To get the full functionality of this connector, make sure these Correlation rules and Automation scripts are configured and enabled. In range **1.0.2.x**, the Correlation rules are no longer required.
 
-With larger devices or large data sets, the polling performance may vary.
+With larger devices or large datasets, the polling performance may vary.
 
 In range **1.0.3.x** of the connector, the multi-threaded timer previously used to poll the DOCSIS version of each CM is removed. As a consequence, the DOCSIS version column is removed from the Cable Modems table. The versions are now polled solely by the Generic CM Collector connector.

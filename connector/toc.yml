@@ -1086,6 +1086,8 @@
     topicUid: Connector_help_Avaya_ERS_5000
 - name: Avcom of Virginia
   items:
+  - name: Avcom of Virginia EVO-RSA
+    topicUid: Connector_help_Avcom_of_Virginia_EVO-RSA
   - name: Avcom of Virginia RBR-2150A
     topicUid: Connector_help_Avcom_of_Virginia_RBR-2150A
   - name: Avcom of Virginia RSA-2500B
@@ -1115,6 +1117,12 @@
     topicUid: Connector_help_Avid_Interplay_PAM
   - name: Avid ISIS
     topicUid: Connector_help_Avid_ISIS
+  - name: Avid NEXIS
+    topicUid: Connector_help_Avid_NEXIS
+    items:
+    - name: Avid NEXIS Technical
+      topicUid: Connector_help_Avid_NEXIS_Technical
+  - name: Intel IPMI
   - name: Avid System Monitor
     topicUid: Connector_help_Avid_System_Monitor
 - name: AVIT
@@ -2139,6 +2147,9 @@
   items:
   - name: Ceiton Resource Planning
     topicUid: Connector_help_Ceiton_Resource_Planning
+    items:
+    - name: Ceiton Resource Planning Technical
+      topicUid: Connector_help_Ceiton_Resource_Planning_Technical
 - name: Cellent
   items:
   - name: Cellent EMS
@@ -4363,6 +4374,9 @@
     topicUid: Connector_help_Generic_Sun_Outage
   - name: Generic Syslog Receiver
     topicUid: Connector_help_Generic_Syslog_Receiver
+    items:
+    - name: Generic Syslog Receiver Technical
+      topicUid: Connector_help_Generic_Syslog_Receiver_Technical
   - name: Generic Table
     topicUid: Connector_help_Generic_Table
   - name: Generic Table Offload
@@ -4658,6 +4672,9 @@
       topicUid: Connector_help_Haivision_Makito_X4_Platform_Technical
   - name: Haivision Manager
     topicUid: Connector_help_Haivision_Manager
+    items: 
+    - name: Haivision Manager Technical
+      topicUid: Connector_help_Haivision_Manager_Technical
   - name: Haivision Media Gateway
     topicUid: Connector_help_Haivision_Media_Gateway
   - name: Haivision Media Platform
@@ -5473,6 +5490,11 @@
     topicUid: Connector_help_Juniper_Networks_Manager
   - name: Juniper Networks Manager CIN Platform
     topicUid: Connector_help_Juniper_Networks_Manager_CIN_Platform
+  - name: Juniper Networks MX Series
+    topicUid: Connector_Juniper_Networks_MX_Series
+    items:
+    - name: Juniper Networks MX Series Technical
+      topicUid: Connector_Juniper_Networks_MX_Series_Technical
   - name: Juniper Networks QFX3x00
     topicUid: Connector_help_Juniper_Networks_QFX3x00
 - name: JVC
@@ -7533,6 +7555,11 @@
     items:
     - name: Precise Time and Frequency 3207a Technical
       topicUid: Connector_help_Precise_Time_and_Frequency_3207a_Technical
+  - name: Precise Time and Frequency 1226
+    topicUid: Connector_help_Precise_Time_and_Frequency_1226
+    items:
+    - name: Precise Time and Frequency 1226 Technical
+      topicUid: Connector_help_Precise_Time_and_Frequency_1226_Technical
 - name: Pro-Bel
   items:
   - name: Pro-Bel Basic Router SNMP
@@ -8388,6 +8415,11 @@
   items:
   - name: ServiceNow Authenticator
     topicUid: Connector_help_ServiceNow_Authenticator
+  - name: ServiceNow Incident Manager
+    topicUid: Connector_help_ServiceNow_Incident_Manager
+    items:
+      - name: ServiceNow Incident Manager Technical
+        topicUid: Connector_help_ServiceNow_Incident_Manager_Technical
   - name: ServiceNow Tables
     topicUid: Connector_help_ServiceNow_Tables
 - name: SES
@@ -8682,6 +8714,11 @@
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
   - name: Skyline EPM Platform VSAT GEO
     topicUid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
+  - name: Skyline EPM Platform VSAT iDirect
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_iDirect
+    items:
+    - name: Skyline EPM Platform VSAT iDirect Technical
+      topicUid: Connector_help_Skyline_EPM_Platform_VSAT_iDirect_Technical
   - name: Skyline EVS Cerebrum Performance Monitor
     topicUid: Connector_help_Skyline_EVS_Cerebrum_Performance_Monitor
   - name: Skyline Example Serial Client Advanced
@@ -9567,6 +9604,9 @@
     topicUid: Connector_help_Tektronix_Prism
   - name: Tektronix Sentry
     topicUid: Connector_help_Tektronix_Sentry
+    items:
+    - name: Tektronix Sentry Technical
+      topicUid: Connector_help_Tektronix_Sentry_Technical
   - name: Tektronix Sentry Edge
     topicUid: Connector_help_Tektronix_Sentry_Edge
   - name: Tektronix Sentry PVQ

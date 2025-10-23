@@ -6,7 +6,7 @@ uid: Connector_help_Cisco_NSO_Technical
 
 ## About
 
-The Cisco Network Services Orchestrator (NSO) is an orchestration platform for hybrid networks. It provides comprehensive life cycle service automation to enable you to design and deliver high-quality services faster and more easily.
+The Cisco Network Services Orchestrator (NSO) is an orchestration platform for hybrid networks. It provides comprehensive lifecycle service automation to enable you to design and deliver high-quality services faster and more easily.
 
 ## Configuration
 
@@ -19,7 +19,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. (default: *443*)
+- **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization

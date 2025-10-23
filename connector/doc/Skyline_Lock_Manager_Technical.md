@@ -14,6 +14,13 @@ The Skyline Lock Manager connector allows the management of locks within a DataM
 |--|--|--|--|
 | 1.0.0.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.0.X |
 | 1.0.1.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.1.X |
+| 1.0.2.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.2.X |
+| 1.0.3.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 1.3.X |
+| 1.1.0.x | No | Yes | [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/) 2.0.X |
+
+Connector range 1.0.x.x is compatible with Skyline Lock Manager ConnectorAPI Nuget version 1.x.x, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.1.1.1.
+
+Connector range 1.1.x.x is compatible with Skyline Lock Manager ConnectorAPI Nuget version 2.x.x, which has a dependency on Skyline DataMiner Core InterAppCalls Common Nuget version 1.0.1.1.
 
 ## Configuration
 
@@ -25,10 +32,27 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-On the *Configuration* page, configure the following parameters:
+On the *Element Configuration* page, configure the following parameters:
 
 - **InterApp Timeout**: A time span used by the [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/), indicating when communication with this element should time out.
 - **Default Auto Lock Release Timespan**: When no specific auto unlock timestamp is provided by the API, the value of this parameter will be added to the timestamp of reception of the lock request to define the actual auto unlock timestamp.
+
+### Logging Configuration
+
+As of range 1.0.3.x, the connector supports persistent logging. This allows logs to be written that persist when the element restarts. The files created by the persistent logging have the following name template: `C:\Skyline DataMiner\Logging\[element name]_[suffix].txt`.
+
+The logging behavior can be configured on the *Logging Configuration* subpage, with the following parameters:
+
+- **Status**: Enables or disables the persistent logging.
+- **Logging Level**: Defines the minimum level of logging that should be stored persistently. Possible values are:
+  - *Error*: Logs when an error occurs.
+  - *Warning*: No logs at this level are currently implemented.
+  - *Info*: Logs when locks are granted and released.
+  - *Debug*: Logs InterApp request and response info.
+  - *Trace*: Logs when QActions trigger and for which trigger parameter.
+- **Max Log File Size**: Defines the maximum size (in MB) of a single log file. When this size is exceeded, a new log file is created.
+- **Max Log File Count**: Defines the maximum number of log files that are kept. When the number of log files exceeds this value, the oldest log file is re-used and its logs are overwritten.
+- **Log File Name Suffix**: Sets the suffix of the log file name in `C:\Skyline DataMiner\Logging\[element name]_[suffix].txt`.
 
 ## How to use
 

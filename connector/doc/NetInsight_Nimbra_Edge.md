@@ -14,7 +14,7 @@ The NetInsight Nimbra Edge connector for DataMiner provides full integration wit
 
 - **Group assignment with ownership control**: Assign multiple groups to each input and flag ownership status directly from the UI.
 
-- **Flow Engineering interface**: Visualize and manage the life cycle of media flows using the Flow Logic Engine (FLE) integration.
+- **Flow Engineering interface**: Visualize and manage the lifecycle of media flows using the Flow Logic Engine (FLE) integration.
 
 - **Service and appliance monitoring**: Real-time retrieval of appliance, service, port, and region metadata via REST APIs.
 

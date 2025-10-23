@@ -25,7 +25,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-After configuring the iPaaS URL, the following parameters must be set on the **Configuration** page:
+After configuring the iPaaS URL, the following parameters must be set on the **General** page:
 
 - **Tenant ID**: The GUID of your tenant (provided by the APIM Administrator).
 - **API App ID**: The GUID of the APIM Front registration (provided by the APIM Administrator).
@@ -35,6 +35,8 @@ After configuring the iPaaS URL, the following parameters must be set on the **C
 
 ## How to Use
 
-When you start using this connector, first provide all required input parameters described above, and verify the **Authentication** parameter. Once this parameter shows **OK**, this means that the connector has successfully communicated with iPaaS and retrieved a valid token. This token is automatically used whenever a new ticket is sent to iPaaS.  
+When you start using this connector, first provide all required input parameters described above, and verify the **Authentication** parameter. Once this parameter shows **OK**, this means that the connector has successfully communicated with iPaaS and retrieved a valid token. This token is automatically used whenever a new ticket is sent to iPaaS.
 
-On the **General** page, you will find the **Ticket Subscription Table**, where you can enable or disable forwarding of tickets based on their type. This allows you to control which ticket types are synchronized with iPaaS.
+## Ticket Forwarding Behavior
+
+When a ticket is created in the ticketing application and its **External Owner** matches the connector’s element name, the connector identifies that the ticket is intended for it and automatically forwards it to **iPaaS**. From there, iPaaS creates the corresponding ticket in **ServiceNow**.
