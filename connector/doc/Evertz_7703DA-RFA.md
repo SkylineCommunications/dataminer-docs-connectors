@@ -23,3 +23,6 @@ Data is polled via SNMP.
     - Signal Integrity: Maintains consistent signal levels across all outputs, even over long cable runs.
     - Operational Efficiency: Eliminates the need for multiple passive splitters and amplifiers.
     - Scalability: Easily expands signal distribution as more equipment is added.
+   
+ [!NOTE]
+> For this connector to poll correctly, you must configure the **Bus Address** as the slot number that it occupies in the frame.
