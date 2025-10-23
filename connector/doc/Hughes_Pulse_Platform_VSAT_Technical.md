@@ -138,5 +138,18 @@ The following metrics are displayed:
 
 Each device can report multiple usage categories (e.g. Web Browsing, Entertainment, Network Infrastructure), which are derived from the Hughes API and may vary.
 
-> [!NOTE]
-> The retention period for this data is configured on the **Collector Setup** page, where you can define how many days of usage history should be retained. Rows older than the configured retention period are automatically removed.
+### Configuration Page
+
+This page also contains settings for managing entities, including options for enabling automatic entity removal and configuring the removal period. This feature clears entries in the tables that have not been updated within the specified period.
+
+### EPM Configuration
+
+On the **EPM Configuration** page, you can find the controls for the ID Notify mechanism. To be able to see this page, enable the **EPM** toggle button on the **Configuration page**.
+
+- The **ID Import Settings** section contains controls to enable/disable the process of importing IDs from CSV files, as well as the path where the files are located and the current status of this process.
+- The **ID Export Settings** section is similar to the ID Import Settings section, except that its controls apply to the process of exporting CSV files with ID requests.
+
+### CMDB Configuration
+
+On the **CMDB Configuration** page, you can configure the settings for the **provisioning files** mechanism. To be able to see this page, enable the **CMDB** toggle button on the **Configuration page**.
+
