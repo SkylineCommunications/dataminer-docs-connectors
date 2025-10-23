@@ -4130,6 +4130,8 @@
     topicUid: Connector_help_GatesAir_MSCx_1P1_Main_Alt_Controller
   - name: GatesAir MSCx DD Dual Drive Controller
     topicUid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
+  - name: GatesAir MSCx Np1
+    topicUid: Connector_help_GatesAir_MSCx_Np1
 - name: Geist
   items:
   - name: Geist ATS
