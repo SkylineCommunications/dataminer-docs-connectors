@@ -44,14 +44,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device, e.g. *161*.
   - **Bus address**: The bus address of the device.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.

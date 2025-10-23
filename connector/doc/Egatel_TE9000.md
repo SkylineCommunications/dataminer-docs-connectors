@@ -94,7 +94,7 @@ This page displays the following configurable parameters: **IP Addresses**, **Ga
 
 ### Notifications
 
-This page displays different notification alarms, which can be enabled/disabled by means of the **Setup** page button in the lower right corner. These are for example:
+This page displays different notification alarms, which can be enabled/disabled by means of the **Setup** page button in the lower-right corner. These are for example:
 
 - Exciter Output Power Failure
 - Amplifier Output Power Failure

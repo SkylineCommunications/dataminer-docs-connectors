@@ -81,3 +81,5 @@ The element has the following data pages:
 - **Aggregated Traps**: Aggregates traps by service with a summary listing the errors by site.
 
 - **Counters**: Displays event counters by type.
+  
+- **Remote Data Wall**: Displays the canvases and widgets data. Via the right-click menu of the Widgets table, you can edit the configuration of the selected widget.

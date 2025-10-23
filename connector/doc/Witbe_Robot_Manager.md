@@ -74,7 +74,7 @@ There is no redundancy defined.
 
 ### Robots
 
-This page contains a table listing all available WitBe Robots found in the DMS. This list is automatically updated every hour. To **manually update** the list of available robots and their states, click the **Refresh Robots** button in the lower right corner.
+This page contains a table listing all available WitBe Robots found in the DMS. This list is automatically updated every hour. To **manually update** the list of available robots and their states, click the **Refresh Robots** button in the lower-right corner.
 
 Within this **Robot Table**, you can change the state of a robot. The right-click menu allows you to start, stop, or pause a selected robot. In addition, an **Execute Next** button is available for each robot. Clicking this button will add the next task in line to the queue of the robot. However, note that this will only work if there is a stack or carousel assigned to the robot.
 

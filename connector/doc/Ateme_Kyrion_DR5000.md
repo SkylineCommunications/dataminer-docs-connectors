@@ -151,7 +151,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-The **3.0.0.x** connector range of the protocol supports the usage of DCF, starting at version **3.0.0.14**, and can only be used on a DMA with **8.5.4** as the minimum version.
+The **3.0.0.x** connector range of the connector supports the usage of DCF, starting at version **3.0.0.14**.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

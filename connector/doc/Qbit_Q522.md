@@ -4,7 +4,7 @@ uid: Connector_help_Qbit_Q522
 
 # Qbit Q552
 
-The Q552 UECP processor addresses cable network providers who have to generate valid and complete RDS data sets for their local stations.
+The Q552 UECP processor addresses cable network providers who have to generate valid and complete RDS datasets for their local stations.
 
 ## About
 

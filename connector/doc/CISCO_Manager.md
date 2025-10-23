@@ -26,7 +26,7 @@ In addition to polling values, you can configure settings such as the ping funct
 | 5.1.4.x [Obsolete] | Made Cassandra-compliant. | 5.1.3.12 | - |
 | 5.1.5.x [Obsolete] | -  Improvements to IPSec logic. - Merge of all 5.1.X.X versions. | - | - |
 | 5.1.6.x [Obsolete] | Added extra connection for SysLog information. | 5.1.5.1 | - |
-| 5.1.7.x [SLC Main] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly. |
+| 5.1.7.x [SLC Main] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly.<br><br> NOTE: The following parameters are no longer saved to the database:<br>Table "Detailed Interface Info" (11000)<br>- 11291 Daily Tx Total<br>- 11292 Daily Rx Total<br>- 11293 Weekly Tx Total<br>- 11294 Weekly Rx Total<br>- 11295 Monthly Tx Total<br>- 11296 Monthly Rx Total |
 | 6.1.1.x | SNMPv3 version of 5.1.1.x. | - | - |
 | 7.0.0.x [Obsolete] | SNMP2: temporary branch created based on 5.1.1.x to change the element type to "Management System". | - | If you move to this branch, you will need to recreate the element. |
 | 8.0.0.x [Obsolete] | Customer-specific range. **Deprecated as of 2021.** | 5.1.3.12 | - |
@@ -95,6 +95,16 @@ You also have to go to the **HTTP Polling** subpage of the **General** page and 
 ### Enabling LITE Mode
 
 You can enable LITE mode (only displaying part of the interface table) on the **General** page via the **SNMP Polling** page button.
+
+### Polling Settings
+
+Disabling **Interfaces Status** polling will stop sending "show interfaces status" SSH commands. As a result, the **Detailed Interface Info** table **IF Status** column will show *N/A* for every row.
+
+Enabling Interfaces Status polling will instruct the connector to send a "show interfaces status" SSH command every time the Interface Table is polled. This means that **disabling Interface Table polling automatically disables Interfaces Status polling**. If no "show interfaces status" SSH command is sent even though Interfaces Status polling is enabled, check if Interface Table polling is enabled.
+
+The Interfaces Status **polling interval** follows the Interface Table polling interval, no matter what is defined as the Interfaces Status polling interval. The Interface Table polling interval defines how frequently the "show interfaces status" SSH command is sent.
+
+Interfaces Status polling will only succeed if the parameters **User Name** and **Password**, located on the **SSH Polling** page, are filled in correctly. If Interfaces Status polling fails, check the parameters **Connection Status** and **Status Message** on the SSH Polling page.
 
 ### Device Configuration
 
@@ -205,7 +215,7 @@ This page contains tables used for the management and configuration of voice tel
 
 ## DataMiner Connectivity Framework
 
-The 3.1.1.x, 4.1.1.x, and 5.1.1.x range of the CISCO Manager connector support the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The 3.1.1.x, 4.1.1.x, and 5.1.1.x range of the CISCO Manager connector support the usage of DCF.
 
 Different DCF configurations can be set on the DCF Config page.
 

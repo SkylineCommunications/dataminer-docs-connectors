@@ -132,7 +132,7 @@ This page displays the web interface of the device. Note that the client machine
 
 ## DataMiner Connectivity Framework
 
-DCF is supported in the connector range 1.0.0.x, from the initial version onwards, and can only be used on a DMA with 9.0.0 \[CU6\] as the minimum version.
+DCF is supported in the connector range 1.0.0.x, from the initial version onwards.
 
 ### Interfaces
 

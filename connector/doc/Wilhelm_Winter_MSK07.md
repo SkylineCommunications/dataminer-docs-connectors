@@ -62,7 +62,7 @@ To drive either the **azimuth** or the **elevation** to a previously selected po
 
 In the top-right corner of this page, you can find the **jogging/creeping** functionality of the device.
 
-To ensure monitoring during operations, in the lower right corner, you can find **calculated movement status parameters**. In addition, there is also a button that allows you to interrupt the movement.
+To ensure monitoring during operations, in the lower-right corner, you can find **calculated movement status parameters**. In addition, there is also a button that allows you to interrupt the movement.
 
 There can be a small discrepancy between the **device** reporting **In Position** (on the General page) and the **connector calculation** of when the antenna is **stationary**.
 

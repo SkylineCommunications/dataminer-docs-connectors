@@ -39,3 +39,4 @@ This exported element is defined in the Card 9001 of the parent element **Cobalt
 ## How to use
 
 This dynamic virtual element is created by the SNMP connector Cobalt Digital HPF 9000 via a toggle button. The user can toggle DVE creation for the specific card in the slot which exports the information virtually.
+

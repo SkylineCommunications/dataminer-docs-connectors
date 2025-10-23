@@ -48,9 +48,9 @@ The **Teleste HDC100 TSEMP connector** is an efficient solution for managing and
 
 ### Prerequisites
 
-- **DataMiner version 10.2 or higher** is required for compatibility with the Teleste HDC100 TSEMP connector.
 - **Administrator permissions** are needed to configure Teleste HDC100 modules through the connector.
 - **Network and serial access** to the Teleste HDC100 modules are essential, including IP address, default ports (2500 for main connection, 65535 for modules), and serial communication capabilities.
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Teleste HDC100, refer to the [Technical help page](xref:Connector_help_Teleste_HDC100_TSEMP_Technical).
+

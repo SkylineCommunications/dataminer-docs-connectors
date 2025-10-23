@@ -79,7 +79,33 @@ The focus of the connector is on the routing matrices used to connect outputs an
 
 In the element, you can find the data pages described below, depending on the connector range used.
 
-### General (1.0.0.x)
+### Range 1.0.7.x
+
+On the **General page**, you can find configuration options for the device virtual level, user identification, the take mode for crosspoint and lock operations, and the default input to be parked on outputs. Each setting can be adjusted to match operational requirements.
+
+The **Virtual Levels** page contains a table with an overview of all levels available on the device.
+
+The **Device Crosspoints** page contains the **Device Sources** table, with information about the sources, and the  **Device Destinations** table, with information about the destinations. Changing the labels is not possible, because this is not supported by the device. Locking is possible for **Device Destinations**.
+
+It is possible to set a specific crosspoint by providing a **Source Port Label**, **Destination Port Label**, **Source Level**, and **Destination Level** on the **Custom Take** page.
+
+You can configure how the element will retrieve device data by setting the **Operational Mode**. It is possible also to configure labels and add notes to the sources and destinations via the **Device Sources Configuration** and **Device Destinations Configuration** tables.
+
+The **Crosspoints Errors** page contains an overview of all crosspoint errors and lock errors.
+
+### Range 1.0.1.x - 1.0.5.x
+
+The **General page** contains the parameters that need to be configured in order to obtain the necessary information.
+
+In order to start the polling for device crosspoints, you first need to configure which subset of the router control card's outputs will be polled, resorting to the **Device Virtual Level**.
+
+Since this is a router connector, a matrix component is also embedded in the connector, but it is disabled by default. To enable it, toggle the **Display Device Matrix UI** parameter.
+
+A **Default Park Input** configuration is also available, which can be overwritten per output in the **Device Destinations** table on the **Device Crosspoints** page.
+
+### Range 1.0.0.x - 1.0.4.x
+
+#### General
 
 This page contains the parameters that need to be configured in order to obtain the necessary information. Physical parameters are displayed on the left and device parameters are displayed on the right.
 
@@ -87,21 +113,11 @@ In order to start the polling for physical crosspoints, you first need to config
 
 For device crosspoint parameters, the start and stop of the destination and source IDs must be indicated. You need to specify the **Device Level Number** in order to then enable or disable the polling of information.
 
-### General (1.0.1.x - 1.0.5.x)
-
-This page contains the parameters that need to be configured in order to obtain the necessary information.
-
-In order to start the polling for device crosspoints, first you need to configure which subset of the router control card's outputs will be polled, resorting to the **Device Virtual Level**.
-
-Since this is a router connector, a matrix component is also embedded in the connector, but it is disabled by default. To enable it, toggle the **Display Device Matrix UI** parameter.
-
-A **Default Park Input** configuration is also available, which can be overwritten per output in the **Device Destinations** table on the **Device Crosspoints** page.
-
-### Virtual Levels
+#### Virtual Levels
 
 This page contains a table with an overview of all levels available on the device.
 
-### Physical Crosspoints (1.0.0.x)
+#### Physical Crosspoints (1.0.0.x)
 
 The **Crosspoints Table** displays information about the connected **Destination Ports** and **Source Ports**.
 
@@ -112,11 +128,11 @@ Note:
 - With the **Set Command Mode** parameter on the General page, you can select the command for setting crosspoints: *Take Input to Output* (default) or *Device All Levels Take*.
 - It is possible that the crosspoints are not shown correctly when the port IDs have gaps or start with an offset. This is caused by a bug in the current firmware of the device.
 
-### Physical Matrix (1.0.0.x)
+#### Physical Matrix (1.0.0.x)
 
 This page displays all the connections between physical **inputs** and **outputs**, using a **matrix** representation.
 
-### Device Crosspoints
+#### Device Crosspoints
 
 This page contains the following tables:
 
@@ -127,11 +143,11 @@ Changing the labels is not possible, because this is not supported by the device
 
 It is possible to set a specific crosspoint by providing a **Source Port Label**, **Destination Port Label**, **Source Level**, and **Destination Level** on the **Custom Take** page.
 
-### Device Matrix
+#### Device Matrix
 
 This page displays all the connections between device sources and destinations, using a matrix representation.
 
-### IO Configuration
+#### IO Configuration
 
 You can configure how the element will retrieve device data by setting the **Operational Mode** to one of the following modes:
 

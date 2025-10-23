@@ -35,33 +35,6 @@ jobs:
           name: release
           path: _site.zip
           
-  deploy_job:
-    if: (github.event_name == 'push' && github.repository == 'SkylineCommunications/dataminer-docs-connectors')
-    runs-on: ubuntu-latest
-    needs: build_job
-    name: Deploy Job
-    steps:
-      - uses: actions/download-artifact@v4
-        with:
-          name: release
-          path: .
-      - name: Unzip artifact for deployment
-        run: Expand-Archive -Path _site.zip -DestinationPath ./_site
-        shell: pwsh
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_HAPPY_DUNE_071CBEE03 }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/_site" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
-
   deploy_job_SA_SWA_connectordocs:
     if: (github.event_name == 'push' && github.repository == 'SkylineCommunications/dataminer-docs-connectors')
     runs-on: ubuntu-latest
@@ -82,6 +55,13 @@ jobs:
           wget https://aka.ms/downloadazcopy-v10-linux
           tar -xvf downloadazcopy-v10-linux
           sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+          az version
+          # --- temporary downgrade Azure CLI (START) --- Issue: https://github.com/azure/azure-cli/issues/32048
+          AZ_CLI_DIST=$(lsb_release -cs)
+          AZ_CLI_VER=2.76.0
+          sudo apt-get install azure-cli=${AZ_CLI_VER}-1~${AZ_CLI_DIST} --allow-downgrades
+          az version
+          # --- temporary downgrade Azure CLI (END) ---
           az storage blob sync \
             --source _site \
             --container '$web'
@@ -119,6 +99,13 @@ jobs:
           wget https://aka.ms/downloadazcopy-v10-linux
           tar -xvf downloadazcopy-v10-linux
           sudo cp ./azcopy_linux_amd64_*/azcopy /usr/bin/
+          az version
+          # --- temporary downgrade Azure CLI (START) --- Issue: https://github.com/azure/azure-cli/issues/32048
+          AZ_CLI_DIST=$(lsb_release -cs)
+          AZ_CLI_VER=2.76.0
+          sudo apt-get install azure-cli=${AZ_CLI_VER}-1~${AZ_CLI_DIST} --allow-downgrades
+          az version
+          # --- temporary downgrade Azure CLI (END) ---
           az storage blob sync \
             --source _site \
             --container docs-connectors
@@ -145,6 +132,6 @@ jobs:
         # Name of the Azure Cognitive Search resource.
         azure-search-instance: docs-srch
         # Search indexer to reindex
-        azure-search-indexer: azureblob-indexer-docs-connectors
+        azure-search-indexer: indexer-1745835789148
         # Admin key used to connect to Azure Cognitive Search instance
         azure-search-admin-key: ${{ secrets.AZURE_SEARCH_KEY }}

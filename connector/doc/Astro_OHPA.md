@@ -14,12 +14,6 @@ The **Astro OHP** is an optical high-power amplifier for FttH RF overlay network
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
