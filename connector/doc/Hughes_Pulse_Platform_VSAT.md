@@ -4,27 +4,9 @@ uid: Connector_help_Hughes_Pulse_Platform_VSAT
 
 # Hughes Pulse Platform VSAT
 
-The Hughes Pulse Platform VSAT connector facilitates the integration of Hughes Pulse API data into a DataMiner System. This connector allows users to configure and poll various endpoints from the Hughes Pulse Platform to retrieve and display information about remote devices and their status.
-
 ## About
 
-### Version Info
-
-| Range              | Features                                         | Based on | System Impact |
-|--------------------|--------------------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial release. Supports basic API integration. | -        | -             |
-
-### Product Info
-
-| Range      | Supported Firmware          |
-|------------|-----------------------------|
-| 1.0.0.x    | Hughes Pulse API V1         |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+The Hughes Pulse Platform VSAT connector facilitates the integration of Hughes Pulse API data into a DataMiner System. This connector allows users to configure and poll various endpoints from the Hughes Pulse Platform to retrieve and display information about remote devices and their status.
 
 ## Configuration
 
@@ -51,7 +33,8 @@ The Hughes Pulse Platform VSAT connector primarily communicates with the Hughes 
 
 ### Configuration Page
 
-On the **Configuration** page, users can set the REST API username and password, and configure the maximum login retries. You can use the **Login** button to manually trigger the login process, generating a new token when required.
+On the **Configuration** page, users can set the REST API username and password, and configure the maximum login retries. You can use the **Login** button to manually trigger the login process, generating a new token when required. 
+This page also contains settings for managing entities, including options for enabling automatic entity removal and configuring the removal period. This feature clears entries in the tables that have not been updated within the specified period.
 
 ### REST API Endpoints Page
 
@@ -69,6 +52,13 @@ The **REST API Endpoints Configuration** table, accessible from the REST API End
 
 You can also add other endpoints, which should be categorized as *N/A*. The table also includes options to enable or disable polling and to display the API response for debugging purposes. Each row in the table has a **Poll** button to manually trigger the GET request outside of the defined timer.
 
-### Collector Setup Page
+### EPM Configuration
 
-The **Collector Setup** page contains settings for managing entities, including options for enabling automatic entity removal and configuring the removal period. This feature clears entries in the tables that have not been updated within the specified period.
+On the **EPM Configuration** page, you can find the controls for the ID Notify mechanism. To be able to see this page, enable the **EPM** toggle button on the **Configuration page**.
+
+- The **ID Import Settings** section contains controls to enable/disable the process of importing IDs from CSV files, as well as the path where the files are located and the current status of this process.
+- The **ID Export Settings** section is similar to the ID Import Settings section, except that its controls apply to the process of exporting CSV files with ID requests.
+
+### CMDB Configuration
+
+On the **CMDB Configuration** page, you can configure the settings for the **provisioning files** mechanism. To be able to see this page, enable the **CMDB** toggle button on the **Configuration page**.
