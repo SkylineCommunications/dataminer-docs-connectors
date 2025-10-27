@@ -2558,6 +2558,9 @@
     topicUid: Connector_help_CPI_T02UO
   - name: CPI T07DO
     topicUid: Connector_help_CPI_T07DO
+    items:
+      - name: CPI T07DO Technical
+        topicUid: Connector_help_CPI_T07DO_Technical
   - name: CPI T22C1
     topicUid: Connector_help_CPI_T22C1
   - name: CPI T5DI
