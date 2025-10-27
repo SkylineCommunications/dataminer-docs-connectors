@@ -6,13 +6,11 @@ uid: Connector_help_CPI_T07DO_Technical
 
 ## About
 
-The **CPI T07DO** connector allows DataMiner to monitor and control the **CPI T07DO** outdoor travelling-wave-tube amplifier (TWTA).  
-This amplifier delivers **750 W of output power** for DBS-band satellite uplinks (17.3 – 18.4 GHz) and is designed for reliable operation in harsh outdoor conditions.
+This connector allows DataMiner to monitor and control the CPI T07DO outdoor traveling-wave-tube amplifier (TWTA). This amplifier delivers 750 W of output power for DBS-band satellite uplinks (17.3 – 18.4 GHz) and is designed for reliable operation in harsh outdoor conditions.
 
-The connector communicates with the device using **serial commands** as described in the CPI protocol manual.  
-It provides operators with full access to device health, alarms, and key performance parameters, enabling proactive maintenance and efficient uplink management.
+The connector communicates with the device using **serial commands** as described in the CPI protocol manual. It provides operators with full access to device health, alarms, and key performance parameters, enabling proactive maintenance and efficient uplink management.
 
-For product specifications, see the [CPI T07DO datasheet](https://www.cpii.com/docs/datasheets/818/t07do_mkt282.pdf).
+For product specifications, refer to the [CPI T07DO datasheet](https://www.cpii.com/docs/datasheets/818/t07do_mkt282.pdf).
 
 ### Product Info
 
@@ -47,7 +45,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element has the following data pages:
 
-- **General**: Displays general information about the device. Via the **Set Time** page button, you can set the **Amplifier** **Name and** the **Time** of the device.
+- **General**: Displays general information about the device. Via the **Set Time** page button, you can set the **Amplifier Name** and the **Time** of the device.
 - **Amplifier Status**: Allows you to visualize several measurement points related to the amplifier and configure some important features on the device.
 - **Switch Controller**: Displays information related to the switch controller. You can also change the switch controller settings here.
 - **Set Points**: Use this page to set the fault and alarm trip points. Use the **Limits** page button to check the limits of the device before an alarm or fault is triggered.
