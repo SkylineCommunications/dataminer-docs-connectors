@@ -27,17 +27,20 @@ The following modules are supported by the Moxa ioThinx 4510 Connector (Firmware
 
 ### Connections
 
-#### SNMP Connection - [Name of the connection]
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **Device address**: [Not required.]
+- **IP address/host**: The polling IP or URL of the destination.
 
 SNMP Settings:
 
-- **Port number**: [The port of the connected device, by default 161.]
-- **Get community string**: [The community string used when reading values from the device (default: *public*).]
-- **Set community string**: [The community string used when setting values on the device (default: *private*).]
+- **Port number**: The port of the connected device, by default 161.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+## How to Use
+
+This connector uses SNMP polling to periodically retrieve data from the device and distribute it across the General, System Parameters, Digital I/O, Relay, and Analog I/O pages. Configuration is straightforward and requires only that the SNMP parameters are correctly set in the element’s edit menu. If the element enters a timeout state after configuration, please verify network connectivity to the device and ensure that the SNMP service is enabled under Service Settings on the Security page of the device’s web interface.
