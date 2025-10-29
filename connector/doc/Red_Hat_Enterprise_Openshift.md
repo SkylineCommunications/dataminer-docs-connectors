@@ -15,15 +15,31 @@ Red Hat Enterprise OpenShift allows the full management of enterprise Kubernetes
 | Range     | Description                   | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial Version - Version 3.6 | No                  | True                    |
-| 1.1.0.1          | Initial Version - Version 3.7 | No                  | True                    |
+| 1.1.0.x          | Initial Version - Version 3.7 | No                  | True                    |
+| 1.2.0.x          | API v1.11+                    | No                  | True                    |
+| 1.2.1.x          | API v1.11+, Virtual connection changed to HTTP | No                  | True                    |
 
 ## Installation and configuration
 
 ### Creation
 
+#### Ranges 1.0.0.X, 1.1.0.X & 1.2.0.X
+
 This connector uses a virtual connection and does not require any input during element creation.
 
-Note however, that the connector uses HTTPS connectivity that must be configured in the General page.
+Note however, that the connector uses HTTPS connectivity that must be configured in the General page such as the authentication token.
+
+#### Range 1.2.1.X
+
+This connector uses an HTTP connection and requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The IP port of the device.
+- **Device address**: The device address (default: *ByPassProxy*).
+
+To set up the connection, enter a valid bearer token on the General page. If the token is valid, the Authorization State will change to "Authorized".
 
 ## Usage
 
