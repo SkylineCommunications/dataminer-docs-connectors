@@ -4,33 +4,30 @@ uid: Connector_help_Utah_Scientific_100_UDS_Technical
 
 # Utah Scientific 100 UDS
 
-The **Utah Scientific 100 UDS** is a connector that control and presents the router in a **Matrix** view.
+## About
 
-### Version Info
+With this connector, you can monitor and control the **Utah Scientific 100 UDS** router using a **matrix** view.
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
+## Configuration
 
+### Connections
 
-## Installation and configuration
+#### Serial Connection - Main
 
-This connector uses **Serial**. The Serial communication retrieves and updates the crosspoints for the Matrix.
+This connector uses a **serial** connection to retrieve and update the crosspoints for the matrix. It requires the following input during element creation:
 
-### Serial
 - **Type of port:** TCP/IP
+- **IP address/host**: The IP address of the device.
+- **IP port**: The IP port of the device on which you want to communicate.
+- **Bus address**: The bus address stores the address of the device.
 
-- **IP address/host**: the IP Address of the device
+### Web Interface
 
-- **IP port**: This is the **IP Port** of the device on which you want to communicate.
-
-- **Bus address**: The **Bus address** stores the address of the device.
+The web interface is only accessible when the client machine has network access to the product.
 
 ## Usage
 
-### Main View
+The connector has the following data pages:
 
-The **Main View**, Displays the **Matrix**.
-
-## Web Interface
-Links to the **web interface** of the device
+- **Main View**: Displays the matrix.
+- **Web Interface**: Links to the web interface of the device
