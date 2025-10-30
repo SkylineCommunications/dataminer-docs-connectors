@@ -12,7 +12,8 @@ This connector is used to aggregate and summarize information from the **Telenor
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x [Obselete]   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Tables in the Service Status page were removed.  | -            | -                 |
 
 ### Product Info
 
