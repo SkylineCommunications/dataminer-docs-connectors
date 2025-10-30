@@ -4,32 +4,32 @@ uid: Connector_help_Red_Hat_Enterprise_Openshift
 
 # Red Hat Enterprise OpenShift
 
-Red Had Enterprise OpenShift Manager allows a full monitoring and SRM support of OpenShift instances.
-
 ## About
 
-Red Hat Enterprise OpenShift allows the full management of enterprise Kubernetes deployments. This connector monitors the entire north-south infrastructure. from containers to PODs and Nodes. It also includes real-time statistics of the main elements.
+Red Hat Enterprise OpenShift allows the full management of enterprise Kubernetes deployments. This connector monitors the entire north-south infrastructure, from containers to PODs and nodes. It also includes real-time statistics of the main elements.
+
+This connector allows full monitoring and SRM support of OpenShift instances.
 
 ### Version Info
 
-| Range     | Description                   | DCF Integration     | Cassandra Compliant     |
-|------------------|-------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version - Version 3.6 | No                  | True                    |
-| 1.1.0.x          | Initial Version - Version 3.7 | No                  | True                    |
-| 1.2.0.x          | API v1.11+                    | No                  | True                    |
-| 1.2.1.x          | API v1.11+, Virtual connection changed to HTTP | No                  | True                    |
+| Range   | Description                                    | DCF Integration | Cassandra Compliant |
+|---------|------------------------------------------------|-----------------|---------------------|
+| 1.0.0.x | Initial Version - Version 3.6                  | No              | Yes                 |
+| 1.1.0.x | Initial Version - Version 3.7                  | No              | Yes                 |
+| 1.2.0.x | API v1.11+                                     | No              | Yes                 |
+| 1.2.1.x | API v1.11+, virtual connection changed to HTTP | No              | Yes                 |
 
-## Installation and configuration
+## Configuration
 
-### Creation
-
-#### Ranges 1.0.0.X, 1.1.0.X & 1.2.0.X
+### Connections - Ranges 1.0.0.X, 1.1.0.X & 1.2.0.X
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-Note however, that the connector uses HTTPS connectivity that must be configured in the General page such as the authentication token.
+Note, however, that the connector uses HTTPS connectivity that must be configured after element creation. On the General page, you will need to configure parameters such as the authentication token.
 
-#### Range 1.2.1.X
+### Connections - Range 1.2.1.X
+
+#### HTTP Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -39,40 +39,40 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the device.
 - **Device address**: The device address (default: *ByPassProxy*).
 
-To set up the connection, enter a valid bearer token on the General page. If the token is valid, the Authorization State will change to "Authorized".
+To set up the connection, after element creation, enter a valid bearer token on the **General** page. If the token is valid, the Authorization State will change to "Authorized".
 
-## Usage
+## How to Use
 
 ### General
 
-The General page contains the main connection data. In this page the user must insert the OpenShift URL/IP Address, the username and the password. Openshift uses OAuth authentication method, based on Bearer tokens. By default, the token is retrieved from the implemented Login mechanism, but the user can insert his/her own token. Each Bearer token is valid for 24 hours and renewed accordingly. In this page the user can also verify the authorization state, which refers to the login success. There is also a refresh data button, that allows to poll all data manually at once.
+The General page contains the main connection data. On this page, you will have to specify the **OpenShift URL/IP Address**, the **username** and the **password**. Openshift uses the OAuth authentication method, based on Bearer tokens. By default, the token is retrieved from the implemented login mechanism, but you can insert your own token. Each Bearer token is valid for 24 hours and renewed accordingly. You can also verify the authorization state here, which refers to the login success. With the refresh data button, you can manually trigger the immediate polling of all data.
 
-By default, the Login is done at startup and renewed at every 12 hours.
+By default, the login is done at startup and renewed every 12 hours.
 
-From the General page the user can access to the main information in plain table mode. To do so, there are sub pages listing Nodes, PODs, Containers and their respective statistics.
+From the General page, you can also access the main information in a table. To do so, click the page buttons to the **Nodes**, **PODs**, and **Containers** subpages.
 
 ### Namespaces
 
-The namespaces list, original from Kubernetes, are listed in this page in a table format. This table contains the namespace name, labels, status, age, creation timestamp, resource version and self link.
+The namespaces list, which originates from Kubernetes, is listed on this page in a table. This includes the namespace name, labels, status, age, creation timestamp, resource version, and self link.
 
 ### Nodes
 
-This page presents the list of nodes organized by namespace in a tree control fashion. From each node, the user can navigate to the respective Conditions, Stats and PODs.
+This page contains a list of nodes organized by namespace in a tree control fashion. From each node, you can navigate to the respective Conditions, Stats, and PODs.
 
 ### PODs
 
-This page presents the list of PODs organized by namespace in a tree control fashion. For every POD it is possible to see the Containers, Conditions and Volumes among others.
+This page contains a list of PODs organized by namespace in a tree control fashion. For every POD, you can see the Containers, Conditions, and Volumes, among others.
 
 ### Services
 
-Also in a tree control fashion, this page displays all services organized per namespace.
+This page displays all services, organized per namespace, also shown in a tree control fashion.
 
 ### Replica Controllers
 
-Replica Controllers are also listed and organized per namespace in a tree control structure.
+On this page, replica controllers are listed and organized per namespace in a tree control structure.
 
 > [!NOTE]
-> The pages listed below are exported to SRM DVEs and not visible in the main element
+> The pages listed below are exported to SRM DVEs and not visible in the main element.
 
 ### Node Info
 
@@ -84,16 +84,16 @@ The POD Info page also shows all the information available regarding one specifi
 
 ### POD Container Info
 
-In turn, the POD Container Info page display all data about the selected Container.
+The POD Container Info page display all data about the selected container.
 
 ### Node Stats Info
 
-Node Stats Info is a complementary page that appears in the same element of Node Info page and it is used to show all realtime statistics regarding the chosen node.
+The Node Stats Info page is shown in the same element as the Node Info page. It shows all real-time statistics regarding the chosen node.
 
 ### POD Stats Info
 
-POD Stats Info presents all realtime statistics for the referred node. As above, it appears in the same DVE of POD Info page.
+The POD Stats Info page presents all real-time statistics for the referred node. It is shown for the same DVE as the POD Info page.
 
 ### POD Container Stats Info
 
-Finally, the POD Container Stats Info displays the realtime statistics regarding the selected container. This page is enclosed to POD Container Info.
+The POD Container Stats Info page displays the real-time statistics for the selected container. This page is enclosed with the POD Container Info.
