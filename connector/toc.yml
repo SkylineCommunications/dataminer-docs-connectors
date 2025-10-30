@@ -10243,8 +10243,14 @@
     topicUid: Connector_help_Utah_Scientific_100_Router_RCPv3
   - name: Utah Scientific 100 UDS
     topicUid: Connector_help_Utah_Scientific_100_UDS
+    items:
+    - name: Utah Scientific 100 UDS Technical
+      topicUid: Connector_help_Utah_Scientific_100_UDS_Technical
   - name: Utah Scientific 100 X
     topicUid: Connector_help_Utah_Scientific_100_X
+    items:
+    - name: Utah Scientific 100 X Technical
+      topicUid: Connector_help_Utah_Scientific_100_X_Technical
 - name: Valere Power
   items:
   - name: Valere Power DC Power System

@@ -15,11 +15,16 @@ The **Utah Scientific 100 X** is a connector that control and presents the route
 | 1.0.0.x [SLC Main]   | Initial version | Yes                 | Yes                     |
 
 
-## Installation and configuration
+## Configuration
 
-This connector uses both **Serial** and **SNMP**. The Serial communication retrieves and updates the crosspoints for the Matrix. The SNMP communication is used to poll the **Device Status**.
+### Connections
 
-### Serial
+This connector uses both a **serial** and **SNMP** connection.
+
+#### Serial Connection
+
+The serial communication retrieves and updates the crosspoints for the matrix. It requires the following input during element creation:
+
 - **Type of port:** TCP/IP
 
 - **IP address/host**: the IP Address of the device
@@ -29,23 +34,22 @@ This connector uses both **Serial** and **SNMP**. The Serial communication retri
 - **Bus address**: The **Bus address** is the router level. The Matrix shows the Routing crosspoints of the level specified.
 
 ### SNMP
+
+The SNMP communication is used to poll the device status. It requires the following input during element creation:
+
 - **IP address/host**: The polling IP of the device.
-
 - **Port number**: The port of the connected device, by default *161*.
-
 - **Get community string**: The community string used when reading values from the device, by default *public.*
-
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-## Usage
+### Web Interface
 
-### Main View
+The web interface is only accessible when the client machine has network access to the product.
 
-The **Main View**, Displays the **Matrix**.
+## How to Use
 
-### Device Status
+The connector has the following data pages:
 
-The **Device Status** page shows **General Device Information**.
-
-## Web Interface
-Links to the **web interface** of the device
+- **Main View**: Displays the matrix.
+- **Device Status**: Shows general information about the device.
+- **Web Interface**: Links to the web interface of the device
