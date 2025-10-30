@@ -16,9 +16,9 @@ With this connector, you can monitor and control the router using a **matrix** v
 - **Monitor your routing configuration**: Keep track of the connection between sources and destinations.
 - **Configure routing**: Connect or disconnect crosspoints between sources and destinations of the router.
 
-![Main View](~/connector/images/Utah_Scientific_100_X_Main_View.png)
+<br>
 
-![Device Status](~/connector/images/Utah_Scientific_100_X_Device_Status.png)
+![Main View](~/connector/images/Utah_Scientific_100_X_Main_View.png)
 
 ## Technical Reference
 

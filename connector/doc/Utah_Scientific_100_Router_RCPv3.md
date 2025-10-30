@@ -26,7 +26,7 @@ The serial communication retrieves and updates the crosspoints for the matrix. I
 - **Type of port:** TCP/IP
 - **IP address/host**: The IP address of the device.
 - **IP port**: The IP port of the device on which you want to communicate.
-- **Bus address**: The bus address stores the address of the device.
+- **Bus address**: The router level. The matrix shows the routing crosspoints of the specified level.
 
 #### SNMP Connection
 
