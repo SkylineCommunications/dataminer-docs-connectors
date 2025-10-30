@@ -14,6 +14,7 @@ The Harmonic ProView 8000 is an integrated receiver-decoder (IRD). This connecto
 |---------|-------------------------------------------|
 | 1.0.0.x | Initial version                           |
 | 1.1.0.x | Version supporting FW version 1.3.0.0.25. |
+| 1.2.0.x | Version supporting FW version 1.8.1.0.26. |
 
 ### Product Info
 
@@ -21,6 +22,7 @@ The Harmonic ProView 8000 is an integrated receiver-decoder (IRD). This connecto
 |-----------|------------------------|
 | 1.0.0.x   | 1.0.0.0.35             |
 | 1.1.0.x   | 1.3.0.0.25             |
+| 1.2.0.x   | 1.8.1.0.26             |
 
 ## Configuration
 
