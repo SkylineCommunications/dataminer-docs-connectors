@@ -24,7 +24,7 @@ This connector uses **Serial**. The Serial communication retrieves and updates t
 
 - **IP port**: This is the **IP Port** of the device on which you want to communicate.
 
-- **Bus address**: The **Bus address** stores the address of the device.
+- **Bus address**: The **Bus address** is the router level. The Matrix shows the Routing crosspoints of the level specified.
 
 ## Usage
 
