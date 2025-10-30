@@ -26,11 +26,8 @@ This connector uses both a **serial** and **SNMP** connection.
 The serial communication retrieves and updates the crosspoints for the matrix. It requires the following input during element creation:
 
 - **Type of port:** TCP/IP
-
 - **IP address/host**: the IP Address of the device
-
 - **IP port**: This is the **IP Port** of the device on which you want to communicate.
-
 - **Bus address**: The **Bus address** is the router level. The Matrix shows the Routing crosspoints of the level specified.
 
 ### SNMP

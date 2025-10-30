@@ -19,7 +19,7 @@ This connector uses a **serial** connection to retrieve and update the crosspoin
 - **Type of port:** TCP/IP
 - **IP address/host**: The IP address of the device.
 - **IP port**: The IP port of the device on which you want to communicate.
-- **Bus address**: The bus address stores the address of the device.
+- **Bus address**: The **Bus address** is the router level. The Matrix shows the Routing crosspoints of the level specified.
 
 ### Web Interface
 
