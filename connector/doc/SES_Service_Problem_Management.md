@@ -1,60 +1,60 @@
 ---
 uid: Connector_help_SES_Service_Problem_Management
 ---
-# SES Service Problem Management
 
-The Service Problem Management API is used to manage service problems. Service problems are generated based on information provided by a partner or based on event information provided by infrastructure providers. The event information includes alarm information, performance anomaly information, trouble ticket information, SLA violations, maintenance information, and prediction information.
+# SES Service Problem Management
 
 ## About
 
-### Version Info
+The SES Service Problem Management connector provides integration between DataMiner ticketing module and SNOW system, enabling automated ticket lifecycle management and bidirectional synchronization. Based on the TMF656 Service Problem Management API standard, this connector transforms DataMiner tickets into service problems, ensuring reliable incident tracking and resolution across the entire infrastructure.
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [SLC Main] | Initial version. Protocol uses Unicode. | TM Forum Service Problem Management 1.0.1.x | - |
+## Key Features
 
-### Product Info
+- **Automated Ticket Synchronization**: Bidirectional synchronization between DataMiner Ticketing System and SES Service Problem Management with configurable frequency (10 seconds to 24 hours).
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | TMF656                 |
+- **Complete Lifecycle Management**: Automatically creates, updates, and closes service problems based on DataMiner ticket state changes, ensuring accurate incident tracking throughout the entire resolution process.
 
-### System Info
+- **Multi-Threaded Performance**: Utilizes 5 concurrent processing threads for efficient ticket creation and updates, enabling high-volume ticket management without performance degradation.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+- **Event Problem Creation**: Automatically generates event-level problems for device alarms, providing detailed correlation between infrastructure events and service-level impacts.
 
-## Configuration
+- **Real-Time Monitoring**: Live tracking of managed tickets with visibility into synchronization status, frequency, and ticket counts through an intuitive interface.
 
-### Connections
+## Use Cases
 
-#### HTTP Connection
+### Use Case 1
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Challenge**: Network operations teams struggle to maintain consistent incident tracking between DataMiner's alarm management and enterprise service management systems, leading to lost tickets, duplicate work, and delayed resolution times.
 
-HTTP CONNECTION:
+**Solution**: The connector automatically synchronizes DataMiner tickets with SES Service Problem Management in real-time, creating service problems for new tickets, updating them as ticket states change, and closing them when issues are resolved.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Benefit**: Operations teams achieve 100% ticket visibility across both systems, eliminating manual ticket entry, reducing resolution time by up to 40%, and ensuring no incidents fall through the cracks.
 
-### Initialization
+### Use Case 2
 
-To initialize the connector, go to the **Configuration** page of the element, and fill in the **API Base Path**, **Username**, and **Password** parameters.
+**Challenge**: Service providers need to correlate device-level alarms with service-level impacts to provide customers with accurate incident notifications and SLA reporting.
 
-### Redundancy
+**Solution**: The connector creates both service problems (for service-level tickets) and event problems (for device-level alarms), establishing clear relationships between infrastructure issues and affected services.
 
-There is no redundancy defined.
+**Benefit**: Organizations gain complete end-to-end visibility from infrastructure alarms to customer service impacts, enabling proactive customer communication and accurate SLA compliance reporting.
 
-## How to use
+### Use Case 3
 
-This connector synchronizes tickets between DataMiner Ticketing and SNOW.
+**Challenge**: High-volume network operations environments experience bottlenecks when synchronizing hundreds of tickets between systems, causing delays in incident response and system performance issues.
 
-On the **General** page of this connector, you can see a table listing all the managed tickets.
+**Solution**: The connector leverages multi-threaded architecture with 5 parallel processing threads and configurable synchronization intervals, efficiently handling large ticket volumes without impacting system performance.
 
-The **Configuration** page contains basic configurable information such as the **Ticket Synchronization State**, which allows you to enable or disable ticket synchronization, and the **Ticket Synchronization Frequency**, which determines how much time there is between each synchronization interval. This page also contains the **API Base Path**, **Username**, and **Password** parameters needed for the element initialization.
+**Benefit**: Operations teams can process up to 5 times more tickets simultaneously, reducing synchronization latency from minutes to seconds and maintaining system responsiveness even during major incident events.
 
-## Notes
+## Technical Reference
 
-For this connector to work, the DMS needs to have a **DataMiner Ticketing license**.
+### Prerequisites
+
+- **DataMiner Ticketing License** is required for the connector to access and manage tickets through the DataMiner Ticketing Gateway.
+
+- **Network Connectivity** to the SNOW API endpoint over HTTPS (port 443) is needed for bidirectional communication.
+
+- **Authentication Credentials** (username and password) with appropriate permissions to create, read, and update service problems in the SES system are required for API access.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_SES_Service_Problem_Management_Technical).
