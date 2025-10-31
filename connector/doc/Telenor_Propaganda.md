@@ -4,28 +4,16 @@ uid: Connector_help_Telenor_Propaganda
 
 # Telenor Propaganda
 
-This connector is used to aggregate and summarize information from the **Telenor Channel Correlation Service Protocol**, **Telenor Service Overview Manager** and **Telenor EPM Manager** elements. It summarizes all information related to services, channels and infrastructure components (e.g. devices, households, RHE, etc.) in one single location.
+This connector is used to aggregate and summarize information from the **Telenor Channel Correlation Service Protocol**, **Telenor Service Overview Manager**, and **Telenor EPM Manager** elements. It summarizes all information related to services, channels, and infrastructure components (e.g. devices, households, RHE, etc.) in one single location.
 
 ## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [Obselete]   | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Tables in the Service Status page were removed.  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                                                                                                                                                      | Exported Components     |
 |-----------|---------------------|-------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager)<br>[Telenor Channel Correlation Service Protocol](xref:Connector_help_Telenor_Channel_Correlation_Service_Protocol) (version 1.0.0.3 or higher)<br>[Telenor Service Overview Manager](xref:Connector_help_Telenor_Service_Overview_Manager) | -                       |
+| 1.0.0.x [Obsolete] | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager)<br>[Telenor Channel Correlation Service Protocol](xref:Connector_help_Telenor_Channel_Correlation_Service_Protocol) (version 1.0.0.3 or higher)<br>[Telenor Service Overview Manager](xref:Connector_help_Telenor_Service_Overview_Manager) | -                       |
+| 1.0.1.x [SLC Main] | No                  | Yes                     | [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager)<br>[Telenor Channel Correlation Service Protocol](xref:Connector_help_Telenor_Channel_Correlation_Service_Protocol) (version 1.0.0.3 or higher)<br>[Telenor Service Overview Manager](xref:Connector_help_Telenor_Service_Overview_Manager) | -                       |
 
 ## Configuration
 
@@ -37,10 +25,9 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-To make sure the element can display information, first configure all the parameters on the **Configurations** page: **EPM Manager**, **DVB-C SOM Element ID**, **Provisioning Folder**, **Credentials** and all the **EPM BE Managers** in the Back-End Elements table.
+To make sure the element can display information, first configure all the parameters on the **Configurations** page: **EPM Manager**, **DVB-C SOM Element ID**, **Provisioning Folder**, **Credentials**, and all the **EPM BE Managers** in the Back-End Elements table.
 
-Then go to the **General** page and click **Execute Provisioning**. If the path to the folder contains all the necessary files (County.csv and Municipal.csv) and they are as expected, the **Last Provisioning State** parameter should display OK.
-If the content of the files changes, execute provisioning again.
+Then go to the **General** page and click **Execute Provisioning**. If the path to the folder contains all the necessary files (County.csv and Municipal.csv) and they are as expected, the **Last Provisioning State** parameter should display OK. If the content of the files changes, execute provisioning again.
 
 Finally, in the **Telenor EPM FE Manager** element, specify the DMA ID/element ID of this propaganda element to start receiving updates (see [Telenor EPM Manager](xref:Connector_help_Telenor_EPM_Manager) for more information).
 
@@ -54,7 +41,7 @@ You can also provision the element on this page.
 
 ### Configurations
 
-See "Initialization" section above.
+See [Initialization](#initialization).
 
 ### Service, Device and Infrastructure pages
 
