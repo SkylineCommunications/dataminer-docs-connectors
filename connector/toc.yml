@@ -8434,6 +8434,11 @@
   items:
   - name: SES Astra CDN Monitor
     topicUid: Connector_help_SES_Astra_CDN_Monitor
+  - name: SES Inventory Management
+    topicUid: Connector_help_SES_Inventory_Management
+    items:
+    - name: SES Inventory Management Technical
+      topicUid: Connector_help_SES_Inventory_Management_Technical
   - name: SES Service Problem Management
     topicUid: Connector_help_SES_Service_Problem_Management
     items:
