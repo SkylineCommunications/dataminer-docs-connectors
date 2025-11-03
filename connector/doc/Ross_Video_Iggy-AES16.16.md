@@ -45,9 +45,9 @@ HTTP CONNECTION:
 ### Initialization
 
 The devices need to have NMOS enabled in order to process the requests.
-In the latest version of firmware, there is now a dependency on some of the JSON API and NMOS being enabled.
+In the latest version of the firmware, there is now a dependency on some of the JSON API and NMOS being enabled.
 In order to use some of the commands, like the get_device_info, NMOS must be enabled on IGGY.
-If the customer enables NMOS in the Dashboard UI, it should start working.
+If you enable NMOS in the Dashboard UI, it should start working.
 
 ### Redundancy
 
