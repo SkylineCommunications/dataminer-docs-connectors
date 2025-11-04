@@ -20,3 +20,8 @@ The GatesAir Multi-System Controller (MSCx) manages redundancy in radio and tele
 **Solution**: The connector collects real-time SNMP data from MSCx, including transmitter states, fault conditions, and performance metrics, and displays them in DataMiner.
 
 **Benefit**: Enables unified network management, faster fault detection, and reduced operational overhead.
+
+## Technical Reference
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_GatesAir_MSCx_Np1_Technical).
