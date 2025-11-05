@@ -6,7 +6,7 @@ uid: Connector_help_GatesAir_MSCx_Np1_Technical
 
 ## About
 
-The GatesAir Multi?System Controller (MSCx) manages redundancy in radio and television transmitter systems, offering seamless failover control between main and backup transmitters in N+1 or dual configurations.
+The GatesAir Multi-System Controller (MSCx) manages redundancy in radio and television transmitter systems, offering seamless failover control between main and backup transmitters in N+1 or dual configurations.
 
 ## Configuration
 
