@@ -7021,6 +7021,11 @@
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
     topicUid: Connector_help_Nokia_Altiplano_Consumer
+  - name: Nokia Altiplano REST Interface
+    topicUid: Connector_help_Nokia_Altiplano_REST_Interface
+    items:
+    - name: Nokia Altiplano REST Interface Technical
+      topicUid: Connector_help_Nokia_Altiplano_REST_Interface_Technical
   - name: Nokia ISAM 7300 FX
     topicUid: Connector_help_Nokia_ISAM_7300_FX
   - name: Nokia ISAM 7300 FX GPON Platform
