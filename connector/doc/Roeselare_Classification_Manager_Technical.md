@@ -23,20 +23,21 @@ HTTP CONNECTION:
 
 ### Initialization
 
-After a new element is created, provide the API Authentication credentials **Client ID**, **Client Secret**, **Tenant ID** and **Scope** on the **General** page which are used to genenrate the authentication Bearer Token. The bearer token is used to authenticate the HTTP POST action when sending the request jobs to the classifier.
+After a new element is created, provide the API authentication credentials **Client ID**, **Client Secret**, **Tenant ID**, and **Scope** on the **General** page. These are used to generate the authentication bearer token. The bearer token is used to authenticate the HTTP POST action when sending the request jobs to the classifier.
 
 ## How to use
 
-On the **General** page, configure the parameters that are used to construct the request jobs that will be sent to the classifier.
+On the **General** page, configure the parameters that are used to construct the request jobs that will be sent to the classifier:
 
-- **Classification API Path**: Specify the API path that is used to send the unclassified detections (classification requests). The API endpoint address/IP should not be included here, as the address is configured in the element configuration wizard.
+- **Classification API Path**: Specify the API path that is used to send the unclassified detections (classification requests). The API endpoint address/IP should not be included here, as the address is configured during element setup.
 
 - **Job Retries**: If sending classification requests to the classifier fails, this setting determines how many times the connector will try to send the requests.
 
-- **Maximum Requests Per Job**: The maximum number of detections that should be included in one job. The specified number of detections will be bundled together and forwarded to the classifier once. Detections from the same ride are bundled together. If the number of detections in one ride is greater than the configured maximum requests, the detections will be bundled in subsets and forwarded to the classifier.
+- **Maximum Requests Per Job**: Determines the maximum number of detections that should be included in one job. The specified number of detections will be bundled together and forwarded to the classifier once. Detections from the same ride are bundled together. If the number of detections in one ride is greater than the configured maximum requests, the detections will be bundled in subsets and forwarded to the classifier.
 
 - **Classification Wait Time**: Determines how long the connector will wait to start sending the requests to the classifier after polling the unclassified detections.
-  
+
 - **Image Base URL**: The location of the frames from which the detections are extracted.
 
-If a user wants to alarm the **SAS Token Lifespan**, the threshold values should be specified in minutes.
+> [!NOTE]
+> If you activate alarm monitoring on the **SAS Token Lifespan**, specify the threshold values in minutes.
