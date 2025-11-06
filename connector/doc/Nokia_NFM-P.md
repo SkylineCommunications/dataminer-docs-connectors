@@ -8,26 +8,6 @@ The Nokia NFM-P connector is used by Kordia to track the alarm events in the NFM
 
 The XML API is an NFM-P interface that provides an XML interface for the NFM-P through which an OSS client application can retrieve NFM-P network management information and receive event notifications from the NFM-P server using a persistent or non-persistent JMS connection.
 
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Not applicable         |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
@@ -72,6 +52,16 @@ If the JMS connection is cut off intermittently, a retry mechanism is activated 
 This page contains the list of alarms in the **Alarm Events** table.
 
 With the **Refresh** button on this page, you can retrieve all alarms from the NFM-P main server and refresh the table. However, note that since the volume of the alarms might be high, this can have a performance impact on the system if triggered frequently.
+
+### Server Alarm Page
+
+This page contains the list of alarms which are related the NFM-P server itself.
+
+The **Network Alarm Filter File Path** parameter allows user to provide a CSV file for filtering the server alarms. If the alarm name in an incoming alarm exists in the CSV file, it will be added to the server alarm table. Otherwise, it will be added to **Network Alarm** table.
+
+### Network Alarm Page
+
+Displays the network alarm, filtered from the server alarms.
 
 ### Debug Page
 
