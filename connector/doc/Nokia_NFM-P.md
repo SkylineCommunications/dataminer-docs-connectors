@@ -55,13 +55,13 @@ With the **Refresh** button on this page, you can retrieve all alarms from the N
 
 ### Server Alarm Page
 
-This page contains the list of alarms which are related the NFM-P server itself.
+This page contains the list of alarms related the NFM-P server itself.
 
-The **Network Alarm Filter File Path** parameter allows user to provide a CSV file for filtering the server alarms. If the alarm name in an incoming alarm exists in the CSV file, it will be added to the server alarm table. Otherwise, it will be added to **Network Alarm** table.
+The **Network Alarm Filter File Path** parameter allows you to provide a CSV file for filtering the server alarms. If the alarm name in an incoming alarm exists in the CSV file, it will be added to the server alarm table. Otherwise, it will be added to **Network Alarm** table.
 
 ### Network Alarm Page
 
-Displays the network alarm, filtered from the server alarms.
+This page displays the network alarms, filtered from the server alarms.
 
 ### Debug Page
 
