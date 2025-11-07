@@ -4,9 +4,11 @@ uid: Connector_help_Mediaproxy_Logserver
 
 # Mediaproxy Logserver
 
-This connector monitors the activity of the Mediaproxy LogServer, which is a hardware and software compliance logging and monitoring platform.
+The Mediaproxy Logserver connector monitors and controls the activity of the Mediaproxy LogServer, a hardware and software platform used for broadcast compliance logging, monitoring, and content verification.
 
-The connector uses **SNMP traps** to capture the logging of the device. It uses an **HTTP** connection to retrieve information from the Mediaproxy LogServer REST API. It will show information related to channels, events, and extracts, as well as alarm status information (updated based on traps and events).
+The connector provides full visibility into system performance, channel states, event data, and extract information via both SNMP traps and REST/Push APIs. It ensures continuous monitoring of service status, trap activity, and event-driven notifications in real time.
+
+The connector is Cassandra-compliant and integrates seamlessly with DataMiner 10.3.0.0 - 12752 or higher.
 
 ## About
 
@@ -59,6 +61,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
+Used for REST API communication to retrieve system and channel information.
+
 - **IP address/host**: The polling IP of the device.
 - **IP port**: Default: *443*.
 - **Bus address**: Default: *bypassproxy.*
@@ -82,17 +86,9 @@ Push API:
 
 ### Initialization
 
-Specify the authentication token on the General page. The token will be used for the HTTP communication with the REST API.
+Set the Authentication Token on the General page.
+This token is required for REST API and Push API communication.
 
 ## Usage
 
-The element consists of the following data pages:
-
-- **General**: Used to specify the authentication token. Will also show the device IP configuration.
-- **Channels**: Shows the information from the REST API GET/Channels response.
-- **System Status**: Displays system status information. This information is updated with received traps and events from the REST API.
-- **Channel Status**: Displays channel status information. This information is updated with received traps and events from the REST API.
-- **Traps**: Displays the received traps. Traps will be mapped to status information.
-- **Events**: This page and its subpages display the event-related information retrieved from the REST API. Events will be mapped to status information.
-- **Extracts**: This page and its subpages display the extract-related information retrieved from the REST API.
-- **Push API Status**: This page contains a table that shows the timeout status/configuration for the different Push API channels.
+The Mediaproxy Logserver connector provides a comprehensive view of the system’s operational state through several main data pages. The **General** page allows users to configure essential communication settings such as the authentication token, device IP, and trap IP sources. The **Channels** page displays channel information retrieved from the REST API, including identifiers, names, and analysis parameters. The **System** **Status** and **Channel Status** pages provide real-time monitoring of both overall system health and individual channel conditions, with status indicators for video, audio, captions, and service accessibility. Dedicated **Transport Stream Monitor** and **OTT Stream Monitor** pages show detailed metrics for stream quality and availability, while the **Traps** page lists all SNMP trap activity, timeout configurations, and receiver status. The **Events** and **Extracts** pages display detailed event and extract information retrieved via REST and Push APIs, enabling operators to track event types, subtypes, and their current states. Finally, the Push API Status page summarizes the status and timeout information for all configured push message types, ensuring that all real-time data flows are active and responsive.

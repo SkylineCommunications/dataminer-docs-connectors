@@ -5893,6 +5893,9 @@
   items:
   - name: Mediaproxy Logserver
     topicUid: Connector_help_Mediaproxy_Logserver
+    items:
+    - name: Mediaproxy Logserver Technical
+      topicUid: Connector_help_Mediaproxy_Logserver_Technical
   - name: Mediaproxy Player
     topicUid: Connector_help_Mediaproxy_Player
 - name: MegaTec
@@ -8011,6 +8014,13 @@
     topicUid: Connector_help_Rohde_Schwarz_Venice
   - name: Rohde Schwarz XLX8000
     topicUid: Connector_help_Rohde_Schwarz_XLX8000
+- name: Roku ECP
+  items:
+  - name: Roku ECP
+    topicUid: Connector_help_Roku_ECP
+    items:
+      - name: Roku ECP Technical
+        topicUid: Connector_help_Roku_ECP_Technical
 - name: Romantis
   items:
   - name: Romantis NMS
