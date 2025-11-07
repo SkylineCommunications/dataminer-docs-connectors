@@ -25,3 +25,4 @@ The Site Sentinel® 16 G2 is a robust, full-featured, web-enabled sixteen-channe
 
 > [!NOTE]
 > For detailed technical information, refer to the [Technical help page](xref:Connector_help_Broadcast_Tools_Site_Sentinel_Technical).
+

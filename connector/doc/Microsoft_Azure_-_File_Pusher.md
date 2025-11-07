@@ -44,4 +44,5 @@ To deploy this integration, you will need:
 - DataMiner version **10.2.0 CU15 or higher**
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Microsoft_Azure_-_File_Pusher_Technical).
+

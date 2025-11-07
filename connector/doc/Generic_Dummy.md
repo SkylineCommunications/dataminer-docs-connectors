@@ -30,7 +30,7 @@ Dummy parameters are shown and editable from this page. In range 1.0.2.x, the du
 
 ## DataMiner Connectivity Framework
 
-The 1.0.2.x connector range of the **Generic Dummy** protocol supports the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The 1.0.2.x connector range of the **Generic Dummy** connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

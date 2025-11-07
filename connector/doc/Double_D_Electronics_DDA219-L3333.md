@@ -21,3 +21,4 @@ The **Double D Electronics DDA219-L3333 connector** is an efficient solution for
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Double D Electronics DDA219-L3333, refer to the [technical help page](xref:Connector_help_Double_D_Electronics_DDA219-L3333_Technical).
+

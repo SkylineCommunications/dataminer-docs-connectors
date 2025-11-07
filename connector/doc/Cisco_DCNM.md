@@ -38,7 +38,7 @@ The **Cisco DCNM** monitors and displays the connections between the switches, m
 
 ### Connections
 
-#### HTTP main connection:
+#### HTTP Main Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -51,6 +51,20 @@ HTTP CONNECTION:
 ### Configuration of HTTP Authentication
 
 The credentials of the device must be entered on the **General** page and then applied using the **Apply** button. This will generate a logon token that will be used for all future requests, or until the credentials are changed.
+
+### Cisco DCNM API URL Configuration
+
+The Cisco DCNM API URL for accessing flow status has changed in recent versions of DCNM. By default, this connector uses the "Old" URL. To use the new URL:
+
+1. On the **General** page, select **Compose URLs**.
+
+1. Enter your **Fabric Name** and **VRF Name**.
+
+   The defaults are "Default_LAN" for Fabric, and "default" for the VRF.
+
+1. Click **Set Flow Status**.
+
+   The flow status table will now get populated.
 
 ### Web Interface
 

@@ -14,12 +14,6 @@ This connector is designed for the monitoring of the convert function of the EVS
 |----------------------|------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -51,6 +45,6 @@ You can track the progress of this data retrieval through two loading bars. Thes
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the EVS Neuron NAP - CONVERT connector supports the usage of DCF and can only be used on a DMA with DataMiner version **8.5.4** or higher.
+The **1.0.0.x** range of the EVS Neuron NAP - CONVERT connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).

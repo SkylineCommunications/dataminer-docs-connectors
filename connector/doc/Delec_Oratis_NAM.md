@@ -16,7 +16,7 @@ There are several versions of the connector. The 1.0.0.x range is used for older
 |----------------------|---------------------------------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]     |Draft range. Obsolete - should not be used. | -            | -                 |
 | 1.1.0.x [SLC Main]   | Initial version.                            | -            | -                 |
-| 1.2.0.x [SLC Main]   | Range dedicated to the NAM x03 model.       | -            | -                 |
+| 1.2.0.x [SLC Main]   | Range dedicated to the NAM x03 model.       | -            | Upgrading to 1.2.0.7 causes the historical trend data and alarm history of the GPIO Table Event column to be incorrect. This table is located on the GPIO Settings page. You will need to correct the monitoring thresholds for this column in every alarm template.                 |
 
 ### Product Info
 
@@ -72,7 +72,7 @@ A second group of parameters is related to the internal functioning of the conne
 - **Force Poll**: Button that can be used to force an update of all parameters. If, for instance, the current values might not be correct or up to date, clicking this button will instantly update all parameters.
   The button can also be used after a reboot or backup/restore. However, if a restore was executed by the connector, all data should automatically be polled again.
 
-A last group of parameters, in the lower right corner, is a set of buttons that provide access to functions or settings requiring explicit user interaction:
+A last group of parameters, in the lower-right corner, is a set of buttons that provide access to functions or settings requiring explicit user interaction:
 
 - **Sync FS**: Sends a command to the device to synchronize the file system. It is advisable to do a **Force Repoll** after this.
 - **Reboot:** Sends a command to the device to reboot. It is advisable to do a **Force Repoll** after this.
@@ -135,7 +135,17 @@ The following status parameters are available:
 - **T - Result:** Contains the targeted channel's **Speaker Status** after a test is completed.
 - **T - Last Executed:** Contains a timestamp in UTC time, indicating when the test was last executed.
 
-To add a test, click the **Add Test** button in the lower right corner. This will add a new line in the **Test Table**. Configure the test using the parameters explained above, and then set the **T - Status** field to *Enable* or *Execute Now*.
+To add a test, click the **Add Test** button in the lower-right corner. This will add a new line in the **Test Table**. Configure the test using the parameters explained above, and then set the **T - Status** field to *Enable* or *Execute Now*.
+
+### System Information page
+
+The HTTP requests sent by the connector are different for different **Dante Software** versions. The URL to API parameters are built based on the **HTTP URL Source** parameter. The default HTTP URL Source setting depends on the Dante Software version. Digpa is selected if the Dante Software version is at least 4.00.008.002. Delec is selected for older systems.
+
+- *Delec* will instruct the connector to use `/delec/` in the URL's `/delec/inputs/updmetering`.
+- *Digpa* will instruct the connector to use `/digpa/` in the URL's `/digpa/inputs/updmetering`.
+- *Smartpi* will instruct the connector to use `/smartpi/` in the URL's `/smartpi/inputs/updmetering`.
+
+If the element is not able to access the device, please try changing the HTTP URL Source parameter to *Smartpi*. It could be that devices that run newer Dante Software versions provide their information through a *smartpi* interface.
 
 ## Notes
 

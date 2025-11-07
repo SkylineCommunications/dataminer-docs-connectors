@@ -15,13 +15,6 @@ This connector polls the HP Network Automation API for device configuration info
 | 1.0.0.x            | Initial version       | -        | -                                                                                         |
 | 1.0.1.x [SLC Main] | Supports EPM Solution | 1.0.0.x  | - Layout updates. <br>- Polling functionality changed from Automation to importing files. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -45,10 +38,6 @@ HTTP CONNECTION:
 ### Initialization
 
 To make sure the connector can communicate with the API, fill in the credentials on the Configuration page.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

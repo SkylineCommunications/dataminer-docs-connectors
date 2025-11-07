@@ -8,26 +8,6 @@ The **GIX100** is dual-channel high-performance 3 Gb/s, HD and SD SDI video and 
 
 The Axon ACP GIX100 connector is used to monitor these Axon cards.
 
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 1925                   |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
@@ -62,7 +42,7 @@ The setting of some parameters depends on other parameters' current value. For e
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** connector range of the Axon ACP GIX100 protocol supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.1** connector range of the Axon ACP GIX100 protocol supports the usage of DCF and can only be used on a DMA with **10.2.0** as the minimum version.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

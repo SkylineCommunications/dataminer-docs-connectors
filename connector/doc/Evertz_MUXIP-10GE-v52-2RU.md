@@ -30,3 +30,4 @@ The **Evertz MUXIP-10GE-v52-2RU** is your ultimate solution for seamless video d
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_MUXIP-10GE-v52-2RU).
+

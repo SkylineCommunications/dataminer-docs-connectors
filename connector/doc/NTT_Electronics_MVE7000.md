@@ -17,3 +17,4 @@ The **NTT Electronics MVE7000** is a high-performance HEVC IP encoder designed f
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation page](xref:Connector_help_NTT_Electronics_MVE7000_Technical).
+

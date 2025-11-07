@@ -47,3 +47,4 @@ The **NBCU Amagi Channel Status Connector** provides real-time monitoring and st
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_NBCU_Amagi_Channel_Status_Technical).
+

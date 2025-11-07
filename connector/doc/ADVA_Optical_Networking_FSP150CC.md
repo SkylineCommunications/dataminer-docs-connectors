@@ -223,7 +223,7 @@ On this page, the **IP Info** group displays the **Polling**, **Main** and **Bac
 
 ### IP
 
-This page displays the **IP Address**, **IP Interface** and **IP Management** tables. A page button in the lower right corner displays the information from the **IP Info** group, with the **Switchback Delay** and **Switch Mode** parameters.
+This page displays the **IP Address**, **IP Interface** and **IP Management** tables. A page button in the lower-right corner displays the information from the **IP Info** group, with the **Switchback Delay** and **Switch Mode** parameters.
 
 The **Switchback Delay** is the amount of time the connector should wait before switching back to the main IP in case polling is currently done from the backup IP.
 

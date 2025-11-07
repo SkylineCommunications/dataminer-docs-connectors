@@ -30,3 +30,4 @@ The Warner Bros Discovery Sports DAZN Live Stream API connector can be used to i
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector, refer to the [Technical help page](xref:Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API_Technical).
+

@@ -25,3 +25,4 @@ This virtual connector reads and parses USAGM-specific Excel files representing 
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Skyline Masking Services, refer to the [Technical help page](xref:Connector_help_Skyline_Masking_Services_Technical).
+

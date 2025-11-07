@@ -20,8 +20,6 @@ This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
 | 1.1.0.x   | 3.50.0                 |
 
 ### System Info

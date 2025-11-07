@@ -4,15 +4,9 @@ uid: Connector_help_Huawei_iMaster_NCE
 
 # Huawei iMaster NCE
 
-The Huawei iMaster NCE provides centralized management, control, and analysis of global networks. It is mainly used in data center, enterprise campus, enterprise private line, and carrier network scenarios. It enables resource cloudification, full life cycle automation, and analytics-driven intelligent closed-loop management according to business and service intents. This protocol uses the northbound **REST API** of the iMaster NCE.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+The Huawei iMaster NCE provides centralized management, control, and analysis of global networks. It is mainly used in data center, enterprise campus, enterprise private line, and carrier network scenarios. It enables resource cloudification, full lifecycle automation, and analytics-driven intelligent closed-loop management according to business and service intents. This protocol uses the northbound **REST API** of the iMaster NCE.
 
 ### Product Info
 
@@ -43,10 +37,6 @@ HTTP CONNECTION:
 ### Initialization
 
 To initialize the connector, go to the **Configuration** page of the element, fill in the **Username** and **Password** parameters, and click the **Authentication** button.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ### Web Interface
 

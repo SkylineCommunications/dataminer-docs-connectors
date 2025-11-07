@@ -44,10 +44,6 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the destination.
   - **Bus address**: The bus address of the device.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 On the **Configuration** page, configure the **Server**, **Server Port**, **Database**, **SQL User** and **SQL Password** parameters in order to allow the connector to establish the connection.

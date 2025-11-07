@@ -58,3 +58,10 @@ The web interface is only accessible when the client machine has network access 
 HTTP REST calls (GET and POST) are used to retrieve the device information. To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting View \> Stream Viewer.
 
 On the **Poll Settings** page of the element, you can disable polling for certain items if these are not relevant (e.g. Logs). You can also increase or decrease the polling interval for each item.
+
+The **Inputs** and **Outputs** page show the available inputs and outputs, respectively, along with their parameters. Each of these pages has a subpage dedicated to profiles:
+
+- The **Input Profiles** subpage provides an overview of both channel profiles and input profiles.
+- The **Output Profiles** subpage provides an overview of output profiles.
+
+Note that editing active profiles is not possible.

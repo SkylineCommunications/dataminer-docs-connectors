@@ -30,3 +30,4 @@ Data is polled via SNMP.
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for the Evertz BPXRF, refer to the [Technical help page](xref:Connector_help_Evertz_BPXRF_Technical).
+

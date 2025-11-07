@@ -40,3 +40,4 @@ This connector monitors the Ericsson Service Access Unit (SAU).
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Ericsson_SAU-IP_Technical).
+
