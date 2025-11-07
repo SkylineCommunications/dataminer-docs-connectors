@@ -2,7 +2,7 @@
 uid: Connector_help_Nokia_Altiplano_Manager
 ---
 
-# Nokia_Altiplano_Manager
+# Nokia Altiplano Manager
 
 ## About
 
