@@ -6,7 +6,7 @@ uid: Connector_help_Nokia_Altiplano_REST_Interface_Technical
 
 ## About
 
-The **Nokia Altiplano REST Interface** connector is an integral component of the Nokia Altiplano solution. It is responsible for receiving and executing API requests initiated by the solution. 
+The **Nokia Altiplano REST Interface** connector is an integral component of the Nokia Altiplano solution. It is responsible for receiving and executing API requests initiated by the solution.
 
 This connector serves as the exclusive interface within the platform for directly executing API requests on the target API.
 
@@ -26,26 +26,26 @@ HTTP CONNECTION:
 
 ### Initialization
 
-Upon creation of the element, the user must configure the following parameters located in the **Configuration** page under the **Altiplano REST Endpoint** section:
+Upon creation of the element, configure the following parameters on the **Configuration** page in the **Altiplano REST Endpoint** section:
 
-- **Polling Type**: Specify the HTTP connection protocol to be used as a prefix in request URLs. Supported values are HTTP and HTTPS.
-- **Username**: Enter the device username required for authentication during the login request. 
+- **Polling Type**: Specify the HTTP connection protocol to be used as a prefix in request URLs. Supported values are *HTTP* and *HTTPS*.
+- **Username**: Enter the device username required for authentication during the login request.
 - **Password**: Enter the device password required for authentication during the login request.
-- **Endpoint *(optional)***: - Provide the endpoint IP address or hostname in the format ip:port or hostname:port. If this field is left blank, the element will default to the endpoint specified in its properties.
+- **Endpoint *(optional)***: Provide the endpoint IP address or hostname in the format `ip:port` or `hostname:port`. If this field is left blank, the element will default to the endpoint specified in its properties.
 
-Additionally, users can enable or disable specific API requests that the element is permitted to execute. These options are available in the **Configuration** page under the **Inventory Queries** section.
+Additionally, you can enable or disable specific API requests that the element is permitted to execute. These options are available on the **Configuration** page in the **Inventory Queries** section.
 
 ## How to use
 
 ### Configuration
 
-On this page, the user is able to define essential parameters for the HTTP driver. The following sections are available for setup: 
+On this page, you can define essential parameters for the connector. The following sections are available for setup:
 
-- **Endpoint connection**: Configure the connection parameters used for API communication, including: **Polling Type**, **Endpoint**, **Username** and **Password**.
+- **Endpoint connection**: Configure the connection parameters used for API communication. See [Initialization](#initialization).
 - **Inventory Queries**: Enable or disable specific API queries the element can execute.
-- **System Credentials**: Provide credentials required for system-level access: **System Username** and **System Password** parameters. 
+- **System Credentials**: Provide credentials required for system-level access: **System Username** and **System Password**.
 
-Additionally, users can specify an export folder used to store files generated from API responses. This folder can be configured as either:
+Additionally, you can specify an export folder to store files generated from API responses. This folder can be configured as either:
 
 - **Local Folder**: Accessible directly from the host system.
 - **Remote Folder**: Requires valid system credentials for authentication and access.
@@ -59,9 +59,9 @@ This page displays a table of all queries received and executed by the element. 
 
 ### InterApp Messages
 
-This page provides visibility into the InterApp communication activity of the element. The displayed elements are:
+This page provides visibility into the InterApp communication activity of the element:
 
 - **Last InterApp Message**: Indicates the timestamp of the most recent update to either the Inbound or Outbound table.
 - **Max InterApp Messages Recorded**: Defines the maximum number of records to retain in each table. Once the limit is reached, older entries are automatically removed.
-- **Inbound Table**: Displays messages received by the element via InterApp. 
+- **Inbound Table**: Displays messages received by the element via InterApp.
 - **Outbound Table**: Displays messages sent by the element via InterApp.
