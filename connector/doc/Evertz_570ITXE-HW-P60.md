@@ -163,7 +163,7 @@ It also contains the following page buttons:
 
 - **Dolby Decoder**: Displays the following **Dolby Decoder Controls**: Encoded Audio Source, Audio Source Switch Suppression, Decoder Delay Compensation, AC3 or Digital Plus Dynamic Range, E Stereo DownMix and AC3 or Digital Plus Stereo DownMix.
 
-- **IntelliGain**: IntelliGainr is a technology developed by Evertz to control the loudness of audio programs on the fly. More specifically, it calculates the perceived loudness of the input audio and modifies the audio to ensure that the long-term average loudness level is at the target level. This subpage consists of the following sections:
+- **IntelliGain**: IntelliGain is a technology developed by Evertz to control the loudness of audio programs on the fly. More specifically, it calculates the perceived loudness of the input audio and modifies the audio to ensure that the long-term average loudness level is at the target level. This subpage consists of the following sections:
 
   - **IntelliGain Global Controls**: Includes the Compander Attack Time and Release Time and Leveler Attack Mode and Release Mode.
   - **IntelliGain Mixer** table.

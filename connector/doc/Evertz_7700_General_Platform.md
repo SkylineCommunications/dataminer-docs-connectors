@@ -4,6 +4,9 @@ uid: Connector_help_Evertz_7700_General_Platform
 
 # Evertz 7700 General Platform
 
+> [!IMPORTANT]
+> This connector is deprecated. [Evertz 7x00 General Platform](xref:Connector_help_Evertz_7x00_General_Platform) should be used instead.
+
 The **Evertz 7700 General Platform** connector is used to monitor and control an Evertz chassis containing different Evertz 7700 series cards.
 
 ## About
@@ -158,13 +161,13 @@ The Evertz BPXRF protection switches provide automatic changeover functionality 
 
 ### Evertz 7708LR
 
-The Evertz 7708LR cards accept a fiber optic input from a companion transmitter and provide an electrical output signal.
+The Evertz 7708LR cards accept a fiber-optic input from a companion transmitter and provide an electrical output signal.
 
 - Supported types: 7708LRA, 7708LR-H.
 
 ### Evertz 7708LT
 
-The 7708LT card is a fiber optic transmitter for RF signals in the extended L-Band or wider frequency range. It accepts a single RF input on coaxial cable and provides a single output for optical transmission.
+The 7708LT card is a fiber-optic transmitter for RF signals in the extended L-Band or wider frequency range. It accepts a single RF input on coaxial cable and provides a single output for optical transmission.
 
 - Supported types: 7708LT, 7708LT-LNB, 7708LT-DWDM, 7708LT-DWDM-LNB.
 

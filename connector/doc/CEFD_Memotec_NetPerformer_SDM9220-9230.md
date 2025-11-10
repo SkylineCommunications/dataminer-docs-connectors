@@ -10,7 +10,7 @@ The Memotec Netperformer SDM9220-9230 version is an SNMP connector intended to c
 
 This connector implements the available parameters present in the device's MIB. The connector layout is implemented as much as possible like the device's web interface, although not all menus are exactly the same.
 
-A **SNMP** connection is used in order to successfully retrieve and configure the device's information.
+An **SNMP** connection is used in order to successfully retrieve and configure the device's information.
 
 ## Configuration
 

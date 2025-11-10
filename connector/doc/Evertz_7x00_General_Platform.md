@@ -101,7 +101,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
-## Usage
+## How to Use
 
 This connector displays information about the Frame Controller (**Evertz 7700-FC/Evertz 7800-FC**) and the inserted cards.
 
@@ -214,6 +214,9 @@ The Evertz 7707VR8-HS is an 8x 3G/HD/SDI/DVB-ASI fiber receiver.
 - Supported types: 7707VR-8-HS.
 
 ### Evertz BPXRF
+
+> [!IMPORTANT]
+> This DVE is deprecated. [Evertz BPXRF](xref:Connector_help_Evertz_BPXRF) should be used instead.
 
 The Evertz BPXRF protection switches provide automatic changeover functionality to provide bypass protection for RF signals.
 
