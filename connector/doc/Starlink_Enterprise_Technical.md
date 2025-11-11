@@ -239,6 +239,12 @@ The Configuration page also contains two telemetry request configuration paramet
 > - Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
 > - Telemetry is polled every minute; content is stored using history sets for accurate backpolling.
 
+The Configuration page contains a toggle button which allows the user to enable a filter on the **User Terminals** query:
+- **Poll Only Service Linked Terminals** This is **Off** by default which polls all the User Terminals from the management api whether they have a service line configured or not.  Toggling the button to **On** will poll User Terminals that are only linked to a service line.
+
+> [!IMPORTANT]
+> Enabling this filter will stop updating User Terminals that do not have a service line configured. Those rows in the table will be removed after the specified cleanup time.  If there are DVEs enabled for Terminals that do not have a service line configured, please disable them if you are using this filter.
+
 ### User Terminal DVEs Configuration page
 
 Every row in the **User Terminal DVEs** table represents a DVE.
