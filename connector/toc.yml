@@ -6968,6 +6968,11 @@
     items:
     - name: Nokia Altiplano Manager Technical
       topicUid: Connector_help_Nokia_Altiplano_Manager_Technical
+  - name: Nokia Altiplano OLT
+    topicUid: Connector_help_Nokia_Altiplano_OLT
+    items:
+    - name: Nokia Altiplano OLT Technical
+      topicUid: Connector_help_Nokia_Altiplano_OLT_Technical
   - name: Nokia Altiplano REST Interface
     topicUid: Connector_help_Nokia_Altiplano_REST_Interface
     items:
