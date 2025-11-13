@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array_Technical
+uid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array
 ---
 
 # Lenovo ThinkSystem DE Series Storage Array
