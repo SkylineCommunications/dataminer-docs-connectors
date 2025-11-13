@@ -6,7 +6,7 @@ uid: Connector_help_Roku_ECP
 
 ## About
 
-The Roku ECP (External Control Protocol) connector enables communication between DataMiner and Roku streaming devices through Roku’s native HTTP-based API. This integration allows operators to remotely monitor and control Roku devices—performing operations such as querying device information, launching channels, and managing playback states—all directly from the DataMiner platform.
+The Roku ECP (External Control Protocol) connector enables communication between DataMiner and Roku streaming devices through Roku’s native HTTP-based API. This integration allows operators to remotely monitor and control Roku devices, performing operations such as querying device information, launching channels, and managing playback states, all directly from the DataMiner platform.
 
 ## Key Features
 
@@ -20,7 +20,7 @@ The Roku ECP (External Control Protocol) connector enables communication between
 
 - **Active app tracking**: Monitors the currently active app or channel and provides automatic updates when users switch applications on the device.
 
-- **Remote key input support**: Enables sending virtual keypresses (e.g., Home, Up, Down, Back) to control the Roku interface directly from DataMiner.
+- **Remote key input support**: Enables sending virtual key presses (e.g. Home, Up, Down, Back) to control the Roku interface directly from DataMiner.
 
 ## Use Cases
 
@@ -52,4 +52,3 @@ The Roku ECP (External Control Protocol) connector enables communication between
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for Ross Video MC1, refer to the [Technical help page](xref:Connector_help_Roku_ECP_Technical).
-
