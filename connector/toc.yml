@@ -7024,6 +7024,16 @@
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
     topicUid: Connector_help_Nokia_Altiplano_Consumer
+  - name: Nokia Altiplano Manager
+    topicUid: Connector_help_Nokia_Altiplano_Manager
+    items:
+    - name: Nokia Altiplano Manager Technical
+      topicUid: Connector_help_Nokia_Altiplano_Manager_Technical
+  - name: Nokia Altiplano OLT
+    topicUid: Connector_help_Nokia_Altiplano_OLT
+    items:
+    - name: Nokia Altiplano OLT Technical
+      topicUid: Connector_help_Nokia_Altiplano_OLT_Technical
   - name: Nokia Altiplano REST Interface
     topicUid: Connector_help_Nokia_Altiplano_REST_Interface
     items:
@@ -10793,6 +10803,11 @@
     topicUid: Connector_help_WISI_Tangram_GT31
   - name: WISI Tangram GT41
     topicUid: Connector_help_WISI_Tangram_GT41
+  - name: WISI WISIon IPTV
+    topicUid: Connector_help_WISI_WISIon_IPTV
+    items:
+    - name: WISI WISIon IPTV Technical
+      topicUid: Connector_help_WISI_WISIon_IPTV_Technical
 - name: Witbe
   items:
   - name: Witbe Experience Center
