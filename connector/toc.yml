@@ -5676,6 +5676,8 @@
   items:
   - name: Lenovo ThinkServer System Manager
     topicUid: Connector_help_Lenovo_ThinkServer_System_Manager
+  - name: Lenovo ThinkSystem DE Series Storage Array
+    topicUid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array
 - name: Leyard
   items:
   - name: Leyard RPS220
