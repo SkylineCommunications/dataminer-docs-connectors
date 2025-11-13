@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Mediaproxy_Logserver
+uid: Connector_help_Mediaproxy_Logserver_Technical
 ---
 
 # Mediaproxy Logserver
