@@ -239,11 +239,10 @@ The Configuration page also contains two telemetry request configuration paramet
 > - Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
 > - Telemetry is polled every minute; content is stored using history sets for accurate backpolling.
 
-The Configuration page contains a toggle button which allows the user to enable a filter on the **User Terminals** query:
-- **Poll Only Service Linked Terminals** This is **Off** by default which polls all the User Terminals from the management api whether they have a service line configured or not.  Toggling the button to **On** will poll User Terminals that are only linked to a service line.
+With the **Poll Only Service Linked Terminals** toggle button on the Configuration page, you can enable a filter on the **User Terminals** query. This button is set to *Off* by default, which will poll all the user terminals from the management API whether they have a service line configured or not. Toggling the button to *On* will poll only user terminals that are linked to a service line.
 
 > [!IMPORTANT]
-> Enabling this filter will stop updating User Terminals that do not have a service line configured. Those rows in the table will be removed after the specified cleanup time.  If there are DVEs enabled for Terminals that do not have a service line configured, please disable them if you are using this filter.
+> Enabling the **Poll Only Service Linked Terminals**  filter will stop updating user terminals that do not have a service line configured. Those rows in the table will be removed after the specified cleanup time. If DVEs are enabled for terminals that do not have a service line configured, please disable them if you are using this filter.
 
 ### User Terminal DVEs Configuration page
 
@@ -254,4 +253,3 @@ If the table is empty, this means no DVEs have been generated yet.
 When a user generates a DVE by enabling the **DVE Creation** toggle button in the **User Terminals** table, a new row will appear in this table.
 
 Removing a DVE is only possibly via the **Delete** button in the **User Terminal DVEs** table. See [User Terminal DVEs](#user-terminal-dves).
-
