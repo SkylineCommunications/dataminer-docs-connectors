@@ -51,4 +51,4 @@ The Roku ECP (External Control Protocol) connector enables communication between
 ## Technical info
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector for Ross Video MC1, refer to the [Technical help page](xref:Connector_help_Roku_ECP_Technical).
+> For in-depth information on configuring and using the DataMiner connector for Roku ECP, refer to the [Technical help page](xref:Connector_help_Roku_ECP_Technical).
