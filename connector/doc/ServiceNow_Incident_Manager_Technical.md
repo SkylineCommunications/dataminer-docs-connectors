@@ -25,10 +25,10 @@ HTTP CONNECTION:
 
 ### Initialization
 
-When the element has been created, the following parameters must be set on the **General** page:
+After creating the element, open the **General** page and configure the **Authentication Approach** parameter. Depending on the selected option, an additional page will become available:
 
-- **User Name**: The ServiceNow user name associated with the instance.
-- **Password**: The corresponding password for the ServiceNow user.
+- **For Basic Authentication**, provide the ServiceNow **User Name** and **Password**.
+- **For API Key Authentication**, enter the API Key.
 
 ### Required Properties
 
