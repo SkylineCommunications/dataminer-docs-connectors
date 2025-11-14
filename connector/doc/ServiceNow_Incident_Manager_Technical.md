@@ -25,12 +25,9 @@ HTTP CONNECTION:
 
 ### Initialization
 
-After creating the element, open the General page and configure the **Authentication Approach** parameter.
-
-Depending on the selected option, an additional page will appear:
+After creating the element, open the **General** page and configure the **Authentication Approach** parameter. Depending on the selected option, an additional page will become available:
 
 - **For Basic Authentication**, provide the ServiceNow **User Name** and **Password**.
-
 - **For API Key Authentication**, enter the API Key.
 
 ### Required Properties
