@@ -16,19 +16,19 @@ The **versioning** for the connector is specifically engineered to tie in with t
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
-|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.1.0.x                     | Version number tied in with firmware 1.1                                                                                          | Yes                 | No                      |
-| \<10.0.0.x **\[SLC Main\]** | The **versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
-| 10.0.0.x                    | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.1.0.x | Version number tied in with firmware 1.1 | Yes | No |
+| \<10.0.0.x [SLC Main] | The **versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No | Yes |
+| 10.0.0.x | Replaced "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. | No | Yes |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                                                                           |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| 1.1.0.x          | 1.1. Also tested on version 2.0                                                                                                   |
-| \<10.0.0.x       | The **versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
-| 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware.                           |
+| Range | Device Firmware Version |
+|--|--|
+| 1.1.0.x | 1.1. Also tested on version 2.0 |
+| \<10.0.0.x | The **versioning** for the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
+| 10.0.0.x | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware. |
 
 ## Installation and configuration
 
@@ -53,47 +53,47 @@ SNMP Settings:
 
 ### General
 
-This page contains general information on the device, such as **Slot,** **Card Type, Version, Serial Number, Chassis IP, Custom Chassis Name, Slot State, Slot Temperature, Slot Protection** and **Slot Protection Status.**
+This page contains general information on the device, such as **Slot,** **Card Type, Version, Serial Number, Chassis IP, Custom Chassis Name, Slot State, Slot Temperature, Slot Protection**, and **Slot Protection Status.**
 
 ### Alarming
 
-The page contains a table listing the current active alarms (with the **Alarm Name**, **State** and **Data**).
+The page contains a table listing the current active alarms (with the **Alarm Name**, **State**, and **Data**).
 
 Below the table, you can change the polling speed to 30 seconds or 3 seconds.
 
 ### Module
 
-This page allows you to define the **Module Name**, the **CTR SDI Out Select**, **Fault Alarm Priority**, **IO Configuration** and **Frame Reference**. It also displays the **Reference Standard.**
+This page allows you to define the **Module Name**, the **CTR SDI Out Select**, **Fault Alarm Priority**, **IO Configuration**, and **Frame Reference**. It also displays the **Reference Standard.**
 
 ### Module Status
 
-This page displays information on the module status and versions, such as **CTR SDI Status**, **Software Version**, **ROM Version** and **FPGA Version.**
+This page displays information on the module status and versions, such as **CTR SDI Status**, **Software Version**, **ROM Version**, and **FPGA Version.**
 
 ### IP WAN General
 
 This page displays information on the **TX Packets, RX packets, Payload TX Rate** and **RX Rate** for the **primary** and **secondary** transmitters. It also displays the **Mac Address** of the transmitters.
 
-There is also a subpage with a table that allows you to configure both the primary and secondary **IP Address**, **Subnet Mask** and **Gateway**.
+There is also a subpage with a table that allows you to configure both the primary and secondary **IP Address**, **Subnet Mask**, and **Gateway**.
 
 ### IP WAN Status
 
-This page contains statistics on the **Received Packets**, **Errored Packets** and **Discarded Packets**. There is also a button available to clear those values.
+This page contains statistics on the **Received Packets**, **Errored Packets**, and **Discarded Packets**. There is also a button available to clear those values.
 
 ### SFP Status
 
-On this page, you can check both the primary and secondary **Transmitting Signal**, **Received Power** and **SFP Attributes**. For both, the **Transmit State** can also be set.
+On this page, you can check both the primary and secondary **Transmitting Signal**, **Received Power**, and **SFP Attributes**. For both, the **Transmit State** can also be set.
 
 ### Transmitter General
 
 On this page, you can define the **Transmitter Interface** and check the **Total Allocated BW**.
 
-There is also a table listing the **SDI sources**, where you can configure the **Transmitter Tag**, **Max Rate**, **Destination IP and UDP** and if necessary the **Secondary IP and UDP** for each source.
+There is also a table listing the **SDI sources**, where you can configure the **Transmitter Tag**, **Max Rate**, **Destination IP and UDP**, and if necessary the **Secondary IP and UDP** for each source.
 
 ### Receiver General
 
-This page allows you to configure the **Packet Delay Variation**, **Max Path Differential** and **Playout Delay** for the **receiver**.
+This page allows you to configure the **Packet Delay Variation**, **Max Path Differential**, and **Playout Delay** for the **receiver**.
 
-There is also a table listing the receivers, where you can configure the **Status, Wan, Output Source Debug and Audio Groups for each receiver**. The table also displays general information, such as the **Primary IP and VLAN**, **Secondary IP** and **Switch Status**.
+There is also a table listing the receivers, where you can configure the **Status, Wan, Output Source Debug and Audio Groups for each receiver**. The table also displays general information, such as the **Primary IP and VLAN**, **Secondary IP**, and **Switch Status**.
 
 ### Selenio-Controller
 

@@ -4,27 +4,17 @@ uid: Connector_help_Wildmoka_Digital_Media_Factory
 
 # Wildmoka Digital Media Factory
 
+## About
+
 Wildmoka offers cloud-based solutions to edit and broadcast videos both live and on demand. Its platform makes it possible to create a large variety of content such as live footage, highlights, match summaries, and replays for digital providers.
 
 The Wildmoka Digital Media Factory connector allows you to communicate with the Wildmoka external API.
 
-### Version Info
-
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
-
 ### Product Info
 
-| **Range** | **Supported API**                                                                                                                                                                                                                                            |
-|-----------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | Every action you request is versioned, so you can check which version of the API you are querying at any point in time for any request (for example: https://{{sub_domain}}.wildmoka.com/eapis/**2.0**/event). Most of the API calls follow the 2.0 version. |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+| Range | Supported API |
+|--|--|
+| 1.0.0.x | Every action you request is versioned, so you can check which version of the API you are querying at any point in time for any request (for example: https://{{sub_domain}}.wildmoka.com/eapis/**2.0**/event). Most of the API calls follow the 2.0 version. |
 
 ## Configuration
 
