@@ -69,15 +69,15 @@ The element created with this connector consists of the following data pages:
 
 ### Input
 - This page contains inputs related to the decoder.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### Output
 - This page contains outputs related to the decoder.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### ASI/SDI
 - This page contains ASI/SDI info related to the decoder.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### Decode
 - This page contains decoding related info.
@@ -86,15 +86,15 @@ The element created with this connector consists of the following data pages:
 
 ### Service
 - This page contains decoded services.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### Subtitle Overlays
 - This page contains subtitle overlays related to the decoded services.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### Encryption
 - This page contains encryption/scrambling related to the decoded services.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### Alarms
 - This page contains alarms reported on the decoder.
@@ -105,7 +105,7 @@ The element created with this connector consists of the following data pages:
 
 ### System Conditions
 - This page contains system related info.
-- Device configuration could be done through some of the provided tables.
+- Device configuration can be done through some of the provided tables.
 
 ### Polling
 - You can set polling configurations of the decoder's data.
