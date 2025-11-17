@@ -10,13 +10,18 @@ The Lenovo ThinkSystem DE Series Storage Array is a family of enterprise-grade s
 
 ## Key Features
 
-- **Storage Systems**: Overview of available Storage Systems.
-- **Failures**: Current failures present on the Storage System.
-- **Pools & Volume Groups**: Available Pools and Volume Groups.
-- **Volumes**: Details about the available Volumes.
-- **Hosts**: Displays details about the Hosts, Host Groups, Host Ports and different Host Types.
-- **Drive**: Displays details about the Drives, Shelves, Power Supplies, Fans, Temperature Sensors and SFP's.
-- **Controllers**: Details about the Controllers and Controller (host) interfaces.
+- **Dynamic Polling**: Data sections can be independently configured for flexible management.
+- **24/7 monitoring**: Continuous surveillance ensures real-time status updates.
+- **Unified Overview**: Comprehensive view consolidating all key information and capabilities.
+
+
+## Use Case
+
+**Challenge**: Health and status monitoring of a complex Storage System.
+
+**Solution**: A clean, consolidated overview that brings together all essential details in one place, making it easy to understand the full capabilities and key information at a glance.
+
+**Benefit**: Enables proactive intervention, leading to higher uptime and greater overall availability.
 
 ## Technical Reference
 
