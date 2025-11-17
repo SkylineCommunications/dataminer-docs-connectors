@@ -10364,6 +10364,11 @@
   items:
   - name: Verimatrix CSM
     topicUid: Connector_help_Verimatrix_CSM
+  - name: Verimatrix MDRM Server
+    topicUid: Connector_help_Verimatrix_MDRM_Server
+    items:
+    - name: Verimatrix MDRM Server Technical
+      topicUid: Connector_help_Verimatrix_MDRM_Server_Technical
   - name: Verimatrix OTT
     topicUid: Connector_help_Verimatrix_OTT
   - name: Verimatrix PlayReady
