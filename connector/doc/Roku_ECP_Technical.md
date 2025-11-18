@@ -33,6 +33,10 @@ The Roku ECP (External Control Protocol) connector enables DataMiner to monitor 
 
 This connector communicates with Roku devices using HTTP requests over port 8060, which is the default Roku ECP port.
 
+
+## How to use
+
+No credentials are required, only that the device is enable for remote control using the API.
 The element dynamically uses the IP address configured for the Roku device within the element settings, so the IP entered during element creation is not important.
 On the **General** page, there is a text field named **Device IP** where you can enter the Roku device’s IP address. This automatically adds the entry to the **Devices** table.
 Once the device has been added, the information is refreshed every minute.
