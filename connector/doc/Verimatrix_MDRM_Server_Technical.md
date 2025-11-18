@@ -6,9 +6,7 @@ uid: Connector_help_Verimatrix_MDRM_Server_Technical
 
 ## About
 
-Verimatrix MDRM (Multi-DRM) is a cloud-based digital rights management solution that supports multiple DRM systems. 
-It enables secure content delivery by managing licenses and entitlements across different platforms and devices.
-The protocol integration makes it possible to monitor the service.
+Verimatrix MDRM (Multi-DRM) is a cloud-based digital rights management solution that supports multiple DRM systems. It enables secure content delivery by managing licenses and entitlements across different platforms and devices. The connector integration makes it possible to monitor the service.
 
 ## Configuration
 
@@ -24,9 +22,9 @@ SNMP Connection:
 
 SNMP Settings:
 
-- **IP port**: The IP port of the device, by defualt *161*.
-- **Get community string**: The community string used when reading values from the device. (default: *public*)
-- **Set community string**: The community string used when setting values on the device. (default: *private*)
+- **IP port**: The IP port of the device, by default *161*.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ## How to use
 
