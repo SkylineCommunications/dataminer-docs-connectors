@@ -4996,6 +4996,9 @@
     topicUid: Connector_help_iDirect_Multihub_Manager
   - name: iDirect Platform
     topicUid: Connector_help_iDirect_Platform
+    items:
+      - name: iDirect Platform Technical
+        topicUid: Connector_help_iDirect_Platform_Technical
   - name: iDirect Platform Network Virtual
     topicUid: Connector_help_iDirect_Platform_Network_Virtual
   - name: iDirect Platform Virtual
