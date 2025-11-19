@@ -10891,6 +10891,12 @@
   items:
   - name: XForm Systems HD Pro 40
     topicUid: Connector_help_XForm_Systems_HD_Pro_40
+- name: xFusion
+  items:
+  - name: xFusion iBMC
+    topicUid: Connector_help_xFusion_iBMC
+    - name: xFusion iBMC Technical
+      topicUid: Connector_help_xFusion_iBMC_Technical
 - name: Xicom Technology
   items:
   - name: Xicom Technology XTC-114 VPC
