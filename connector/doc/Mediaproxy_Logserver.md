@@ -4,7 +4,7 @@ uid: Connector_help_Mediaproxy_Logserver
 
 # Mediaproxy Logserver
 
-The Mediaproxy Logserver connector enables comprehensive monitoring and control of the Mediaproxy LogServer platform. Through its integration with SNMP, REST API, and Push API, this connector provides complete visibility into system status, channels, and event-driven notifications, allowing operators to manage compliance logging environments efficiently and reliably from within DataMiner.
+The Mediaproxy Logserver connector enables comprehensive monitoring and control of the Mediaproxy Logserver platform. Through its integration with SNMP, REST API, and Push API, this connector provides complete visibility into system status, channels, and event-driven notifications, allowing operators to manage compliance logging environments efficiently and reliably from within DataMiner.
 
 ## Key Features
 
@@ -16,7 +16,7 @@ The Mediaproxy Logserver connector enables comprehensive monitoring and control 
 
 ### Unified Compliance Monitoring
 
-**Challenge**: Broadcasters operating multiple LogServer instances need a unified platform to supervise compliance logging, event activity, and system alerts across all devices.
+**Challenge**: Broadcasters operating multiple Logserver instances need a unified platform to supervise compliance logging, event activity, and system alerts across all devices.
 
 **Solution**: The DataMiner connector consolidates data from SNMP traps, REST API polling, and Push API feeds into a single view, enabling operators to track channel health and system performance in real time.
 

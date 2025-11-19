@@ -4,7 +4,7 @@ uid: Connector_help_Mediaproxy_Logserver_Technical
 
 # Mediaproxy Logserver
 
-The Mediaproxy Logserver connector monitors and controls the activity of the Mediaproxy LogServer, a hardware and software platform used for broadcast compliance logging, monitoring, and content verification.
+The Mediaproxy Logserver connector monitors and controls the activity of the Mediaproxy Logserver, a hardware and software platform used for broadcast compliance logging, monitoring, and content verification.
 
 The connector provides full visibility into system performance, channel states, event data, and extract information via both SNMP traps and REST/Push APIs. It ensures continuous monitoring of service status, trap activity, and event-driven notifications in real time.
 
