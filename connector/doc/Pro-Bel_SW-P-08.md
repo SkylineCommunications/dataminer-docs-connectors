@@ -4,85 +4,35 @@ uid: Connector_help_Pro-Bel_SW-P-08
 
 # Pro-Bel SW-P-08
 
-The Pro-Bel SW-P-08 connector provides an interface to set or remove connections in the output routing of a controlled device from remote devices. It can be used to monitor and control any router that supports the Pro-Bel SW-P-08 protocol. A serial connection is used in order to successfully retrieve and configure the matrix. A matrix is used in order to easily connect a destination with a source.
-
 ## About
 
-### Version Info
+The Pro-Bel SW-P-08 connector can be used to monitor and control any router that supports the Pro-Bel SW-P-08 protocol. A serial connection is used in order to successfully retrieve and configure the matrix. A matrix is used in order to easily connect a destination with a source.
 
-| Range              | Key Features                                                        | Based on | System Impact                               |
-|--------------------|---------------------------------------------------------------------|----------|---------------------------------------------|
-| 1.0.0.x            | Initial version.                                                    | -        | -                                           |
-| 1.0.1.x            | Hard-coded matrix labels.                                           | -        | -                                           |
-| 1.0.2.x            | DCF implementation.                                                 | -        | -                                           |
-| 1.0.3.x            | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
-| 1.0.4.x            | Additional functionality added.                                     | -        | -                                           |
-| 1.0.5.x            | Dual Controller functionality implemented.                          | -        | Minimum required version: 10.3.11.0 - 13456 |
-| 1.0.6.x [SLC Main] | Full refactoring.                                                   | -        | Minimum required version: 10.3.0.0 - 12752  |
+## Key Features
 
-### Product Info
+- **Monitoring crosspoints**: Provides an overview of current crosspoint connections in form of Sources and Destinations.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.0.2.x   | -                      |
-| 1.0.3.x   | -                      |
-| 1.0.4.x   | -                      |
-| 1.0.5.x   | -                      |
-| 1.0.6.x   | -                      |
+- **Crosspoint management**: Supports setting the crosspoints, allowing the management of connections.
 
-### System Info
+- **Extended support**: Supports use of extended commands, making it easy to utilize routers of any size.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.4.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.5.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.6.x   | No                  | Yes                     | -                     | -                       |
+### Use Case 1
 
-## Configuration
+**Challenge**: Managing routers from different vendors.
 
-### Connections
+**Solution**: Create a dedicated element in DataMiner for all of your routers.
 
-#### Serial Main Connection
+**Benefit**: Pro-Bel SW-P-08's implementation of generic remote control protocol allows user to interact with wide variety of devices, free from limitations of any specific vendor. On top of that, because protocol is implemented at the lowest possible level, the communication is guaranteed to be fast, responsive and light-weight, ensuring smooth operations and easy management of all of your routers.
 
-This connector uses a serial connection and requires the following input during element creation:
+## Technical Reference
 
-SERIAL CONNECTION:
+In order to improve the performance, reliability and to future-proof the connector we are currently in the process of moving to range 2.0.0.X. As this is work in progress not all features available on the previous range are yet implemented in the new one. 
 
-- Direct connection:
+Features that are only available in the previous range are:
+- Matrix view of crosspoints
+- DCF support
+- CSV label import/export
+- Dual controller
 
-  - **Baudrate**: Baudrate specified in the manual of the device (default: 9600).
-  - **Databits**: Databits specified in the manual of the device (default: 8).
-  - **Stopbits**: Stopbits specified in the manual of the device (default: 1).
-  - **Parity**: Parity specified in the manual of the device (default: No).
-  - **FlowControl**: FlowControl specified in the manual of the device (default: No).
-
-- Interface connection:
-
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device.
-
-## Usage
-
-The element has the following data pages: **General** and **Router Control**.
-
-### General
-
-This page contains the following parameters:
-
-- **Matrix Configuration status:** Displays any detected misconfigurations. The status **OK** indicates that the matrix has been successfully configured.
-- **Number of Sources:** Allows you to configure the number of sources for the matrix.
-- **Number of Destinations:** Allows you to configure the number of destinations for the matrix.
-- **Matrix Number:** Allows you to configure the matrix number.
-- **Level Number:** Allows you to configure the level number.
-- **Source Names Length:** Allows you to configure the name length for sources.
-- **Destination Names Length:** Allows you to configure the name length for destinations.
-
-### Router Control
-
-This page contains the **Sources** and **Destinations** tables, which contain information about the respective sources and destinations.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_Pro-Bel_SW-P-08_2.0.0.X). For previous range refer to [technical documentation(1.0.0.X)](xref:Connector_technical_Pro-Bel_SW-P-08_1.0.0.X)
