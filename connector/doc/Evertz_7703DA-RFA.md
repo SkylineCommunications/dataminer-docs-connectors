@@ -12,17 +12,16 @@ Data is polled via SNMP.
 
 ## Key Features
 
-- **Wide Frequency Range**: Supports RF signals from 40 MHz to 3 GHz, ideal for L-Band, 70/140 MHz IF, and off-air DTV signals.
-- **Multiple Output Configurations**: Available in 1x4, 1x8, and 1x16 configurations, providing isolated outputs for flexible signal distribution.
+- **RF Input Control**: Control/monitor the RF Input Power and Low/High Thresholds.
+- **LNB Control**: Control/monitor the LNB Current, Voltage, and Low/High Thresholds.
+- **Polling Configuration**: Adjust all available groups' polling time from as little as 10s.
 
 ## Use Case
 
-- **Challenge**: A satellite uplink facility needs to distribute L-Band signals (950–2150 MHz) from a single source to multiple modulators and monitoring systems. The long cable runs introduce signal loss and slope distortion, risking degraded signal quality and synchronization issues.
+- **Challenge**: Evertz 7703DA-RFA is polling too slowly in the Evertz General Platform connector
 - **Solution**: Deploy the Evertz 7703DA-RFA connector.
 - **Benefit**: 
-    - Signal Integrity: Maintains consistent signal levels across all outputs, even over long cable runs.
-    - Operational Efficiency: Eliminates the need for multiple passive splitters and amplifiers.
-    - Scalability: Easily expands signal distribution as more equipment is added.
+    - Can now monitor the Evertz 7703DA-RFA card without depending on the parent connector, can now control how often to poll the various groups.
    
  [!NOTE]
 > For this connector to poll correctly, you must configure the **Bus Address** as the slot number that it occupies in the frame.
