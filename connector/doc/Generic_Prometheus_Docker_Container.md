@@ -86,3 +86,4 @@ The primary key will be constructed by the mapped label columns. The label value
 When the **Instance Name Filter** is changed, the connector pushes the default queries with all the necessary data to allow the connector to be populated completely by the selected **Generic Prometheus Collector** element. However, if you want to add a new parameter to the connector, you will need to also add the necessary information to a collector element. If you fill in the *additionalUserDefinedQueries* list in QAction 5 (After Startup) with the targeted parameter ID, the poll speed, the query you wish to use and, if necessary, the additional labels, you will be able to push them to the **Generic Prometheus Collector Query Table.**
 
 Examples can be found in the code.
+

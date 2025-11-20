@@ -42,3 +42,4 @@ The **Skyline Station Monitor** standardizes and simplifies the collection of da
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Station_Monitor_Technical).
+

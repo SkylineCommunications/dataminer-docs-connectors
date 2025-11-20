@@ -4,17 +4,9 @@ uid: Connector_help_Vertex_RSC-1200
 
 # Vertex RSC-1200
 
-The **Vertex RSC-1200** connector will display information related to the **Vertex RSC-1200** device.
-
 ## About
 
-The **Vertex RSC-1200** allows monitoring of the **Vertex RSC-1200** SWO device.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | True                    |
+This connector allows you to monitor the **Vertex RSC-1200** SWO device.
 
 ### Product Info
 
@@ -47,7 +39,7 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device.
   - **Bus:** the bus address, in case of any (Range: 0 - 255)
 
-## Usage
+## How o Use
 
 ### General Page
 
@@ -55,7 +47,7 @@ This page contains general information about the device such as **Power Supply**
 
 ### Configuration Page
 
-This page displays configurable parameters such as **Redundancy Mode**, **Remote Control**, **Noise Diode...**
+This page displays configurable parameters such as **Redundancy Mode**, **Remote Control**, **Noise Diode**, etc.
 
 ### Internal/External Input Alarms Page
 

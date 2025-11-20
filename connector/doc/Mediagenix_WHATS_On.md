@@ -20,16 +20,6 @@ The function of this connector is to receive and display data from a Mediagenix 
 | 2.0.4.x            | Publication Events and Resource Groups table set to partial.                    | 2.0.2.20 | -             |
 | 2.0.5.x [SLC Main] | All displayed tables are set to partial. Improved cleanup logic.                | 2.0.4.3  | -             |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | TBD                    |
-| 2.0.2.x   | 2.9.2.r1.588           |
-| 2.0.3.x   | 2.9.2.r1.588           |
-| 2.0.4.x   | 2.9.2.r1.588           |
-| 2.0.5.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
@@ -60,7 +50,7 @@ There is no redundancy defined.
 
 Most of the actions trigger an interaction with an element that is created based on the [BeIN Manager connector](https://catalog.dataminer.services/details/connector/3437). To link the elements, the parameters **Manager DMA ID**, **Manager Element ID**, and **Manager Parameter ID** need to be filled in on the Settings page.
 
-From version 1.0.0.12 onwards, all requests can be stored as [DataMiner Object Model (DOM) instances](https://docs.dataminer.services/user-guide/Advanced_Modules/DOM/DOM.html). For more information, see [Settings Page](#settings-page).
+From version 1.0.0.12 onwards, all requests can be stored as [DataMiner Object Model (DOM) instances](https://aka.dataminer.services/DOM). For more information, see [Settings Page](#settings-page).
 
 ### General Page
 

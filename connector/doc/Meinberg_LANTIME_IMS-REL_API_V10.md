@@ -81,3 +81,4 @@ This makes it possible to follow the communication flow and provides some useful
 
 - **HTTP Sessions State**: If you enable this setting, the active HTTP sessions will be tracked.
 - **HTTP Sessions Max Count**: This determines the maximum number of HTTP sessions that will be tracked.
+

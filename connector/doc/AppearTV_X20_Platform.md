@@ -293,3 +293,4 @@ This page displays the web interface of the device. Note that the client machine
 In **version 1.2.0.29** of the connector, DCF integration has been added for the following tables: Physical Ports Table, IP Encoder Interfaces Table, Dual IP Physical Ports Table, SDI IO Physical Ports Table, ASI Input Table, ASI Output Table, and S2X Input Ports.
 
 Note: For the **SDI IO Physical Ports** table, the extra configuration parameter **SDI IO DCF Interfaces**, which can be found on the same page as the table, must be set to *Enabled*. Setting this parameter to *Enabled* will change the display key format in order to allow the creation of the interfaces. This change can affect trend and alarm data, Automation scripts, Visio drawings, etc. As such, the default setting of the parameter is *Disabled*.
+

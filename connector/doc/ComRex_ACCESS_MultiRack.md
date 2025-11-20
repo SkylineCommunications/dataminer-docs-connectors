@@ -71,4 +71,4 @@ The element has following data pages:
 
 ## Notes
 
-If a WebSocket connection is lost, the only way to recover it is to restart the element.
+If a WebSocket connection is lost, the status on the Login subpage will show the connection as *Closed*. To reconnect, click the **Reconnect** button on the Login subpage.

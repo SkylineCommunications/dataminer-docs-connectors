@@ -4,72 +4,43 @@ uid: Connector_help_Evertz_Magnum_SDVN_Router
 
 # Evertz Magnum SDVN Router
 
-This connector can be used to control the Magnum application. It allows DataMiner to act as any other router panel connected to the Evertz Magnum application.
+The Evertz Magnum SDVN Router connector for DataMiner provides deep integration with the Evertz Magnum control system, enabling operators to manage video and audio routing across distributed matrix configurations. By bridging serial and HTTP-based communication, the connector enables end-to-end routing control, nameset visualization, and system feedback directly from the DataMiner platform.
 
-## About
+## Key Features
 
-### Version Info
+- **Crosspoint management**: Execute source-to-destination routing with support for locking, notes, and Quartz mapping.
 
-| Range              | Key Features                                                                                   | Based on | System Impact |
-|--------------------|------------------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x            | Initial version.                                                                               | -        | -             |
-| 1.0.2.x            | Replaced IDX on Sources and Destinations. Duplicated global names are supported on the device. | -        | -             |
-| 1.0.3.x [SLC Main] | Use of API calls to reduce Quartz polling. Renamed Counter parameters.                         | -        | -             |
+- **OAuth2 and credentials authentication**: Support for secure login using either authorization code or client credentials.
 
-### Product Info
+- **Nameset and salvo retrieval**: Display up to five namesets and retrieve salvos configured in the Magnum application.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 1.1.1                  |
-| 1.0.2.x   | 1.1.1                  |
-| 1.0.3.x   | 1.1.1                  |
+## Use Cases
 
-### System Info
+### Unified Control of Distributed Matrices
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.3.x   | Yes                 | Yes                     | -                     | -                       |
+**Challenge**:Using hardware router panels or Magnum's native UI may be too technical or unfamiliar for broadcast operators.
 
-## Configuration
+**Solution**: Expose only the required sources, destinations, and salvos in the DataMiner interface with intuitive labeling, view filtering, and nameset grouping.
 
-### Connections
+**Benefit**: Lower learning curve and improved operator confidence with tailored views.
 
-#### Serial Main Connection
+### Simplified Operator Training and Workflow
 
-This connector uses a serial connection and requires the following input during element creation:
+**Challenge**: Managing transitions between incoming contribution feeds and outgoing distribution channels across multiple locations requires manual configuration, which is slow and error-prone.
 
-SERIAL CONNECTION:
+**Solution**: Use the connector’s Flow Engineering interface to visualize and manage connections between incoming and outgoing flows. In the background, InterApp messaging ensures real-time updates and logic tracking.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Benefit**: Streamlined flow control, less human error, and improved responsiveness during live broadcast operations.
 
-#### HTTP Connection
+### Audio Breakaway Routing
 
-This connection is only used to obtain namesets and salvos. The connector can work without this connection enabled, but it still needs to be configured.
+**Challenge**: Routing video and audio signals independently or in quad-channel groupings is difficult in generic control systems.
 
-HTTP CONNECTION:
+**Solution**: The connector supports breakaway mode and configurable channel counts, with full Quartz mapping compatibility.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *80*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Benefit**: Simplifies complex audio routing tasks and aligns perfectly with multi-channel workflows.
 
-### Configuration
+## Technical info
 
-In order to use this connector, it is necessary to also **configure the Magnum application** itself, so that an extra router panel can take control over a certain matrix. Inside the Magnum application, this will translate into a virtual router (with x inputs and y outputs) that will be made available on a certain IP/port. It is these IP/port settings that need to be configured during creation of the DataMiner element using the Evertz Magnum Router connector.
-
-On the **General** page of the element, you need to specify the following parameters: the **Username**, **Password**, **Device**, **Breakaway Mode**, **Number of Audio Channels**, **Operation Mode**, and **View Nameset**.
-
-On the **Quartz** page, the **Profile ID** must be specified.
-
-## How to use
-
-The element created with this connector consists of the following data pages:
-
-- **General**: Contains general parameters such as the **Element Poll Status** number of sources and destinations, as well as **Credentials** for the Rest API, a refresh option, and the **default nameset** that will be used for any crosspoint and destination change. The **Device** parameter allows you to specify which device should be considered in quartz. This is used for the mapping of Quartz ports to namesets.
-- **Sources**: Displays the **Sources** table. All the columns in this table are read-only, except for the notes, which can be used for each source.
-- **Destinations**: Displays the **Destination** table, where all crosspoint operations can be done. A destination can also be locked or unlocked.
-- **Debug**: Can be used for debugging purposes. Contains the HTTP responses, status codes and buffers.
-- **Namesets**: Displays a table with the **Namesets**, which are groups of names that can be assigned to reference sources or destinations. You can configure up to 5 namesets to be displayed in the sources and destinations tables.
-- **Audit**: Contains the **Audit** and **Messages** tables. The former contains information regarding crosspoints updates, while the latter lists errors returned by the device, for example in case a lock destination fails
+> [!NOTE]
+> For more information on how to configure and use the DataMiner connector for Evertz Magnum SDVN Router, refer to the [Technical help page](xref:Connector_help_Evertz_Magnum_SDVN_Router_Technical).

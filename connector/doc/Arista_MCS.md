@@ -57,7 +57,7 @@ The following pages are available:
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the Arista MCS connector supports the usage of DCF and can only be used on a DMA with DataMiner version **8.5.4** or higher.
+The **1.0.0.x** range of the Arista MCS connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
 

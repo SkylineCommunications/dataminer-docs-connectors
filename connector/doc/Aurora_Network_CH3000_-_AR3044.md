@@ -60,3 +60,4 @@ Allows to configure the module receivers. Configures **RF Test Point, Rx Inputs 
 ### States
 
 Provides status information about the module.
+

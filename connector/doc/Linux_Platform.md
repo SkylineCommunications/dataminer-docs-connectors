@@ -16,7 +16,8 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 |1.1.0.x|Added version compatibility.| - | - |
 |1.1.1.x|Added SNMP connection.| - | - |
 |2.0.0.x| Changed the layout of the connector. The connector can now poll the data using SSH or SNMP. If one of the connections fails, it will use the other connection to poll the data.| - |After version 1.1.1.x, the connection type changes from serial to SNMP, which means that existing elements will need to be re-created when you update to the latest version.|
-|2.0.1.x [SLC Main] |Added CLI Table.| - | CLI Table uses context menu with NuGet.|
+|2.0.1.x |Added CLI Table.| - | CLI Table uses context menu with NuGet.|
+|2.0.2.x [SLC Main] | - Information from Interfaces table fixed and bit rates updated methods implemented.<br>- Tooltip of parameter Data Type Mode improved.<br>- Available Disk Space % (percentage) added to Disks table.| 2.0.1.15 | - NuGets for rate calculation updated.<br>- Interfaces table layout and content changed.|
 
 ### Product Info
 
@@ -27,6 +28,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 |1.1.1.x| Not applicable     |
 |2.0.0.x| Not applicable     |
 |2.0.1.x| Not applicable     |
+|2.0.2.x| Not applicable     |
 
 ### System Info
 
@@ -37,6 +39,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 |1.1.1.x| Yes                 | Yes                     | -                     | -                       |
 |2.0.0.x| No                  | Yes                     | -                     | -                       |
 |2.0.1.x| No                  | Yes                     | -                     | -                       |
+|2.0.2.x| No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -86,6 +89,8 @@ NOTE: In SSH Mode, the Processor table will use different indexes for each proce
 ### Task Manager
 
 This page contains the **Task Manager** table, which lists the processes that are active on the server.
+
+Note that if the **Communication Type** is *SSH* (on the Configuration page), the **CPU Load** of a process can exceed 100% if the process uses multiple cores. If a process is multi-threaded, it can use multiple cores simultaneously. For example, if you run a multi-threaded application like a video encoder or a scientific computation tool, it might show 300% CPU load on a quad-core system. This means it is using three cores fully. 200% CPU load means two cores are fully utilized, and so on. The **Normalized CPU Load** column shows the CPU load per process in the range of 0% to 100%.
 
 In addition, the **Process Validation** table allows you to validate whether a given process is still running upon each new polling cycle.
 When you add a process to validate, you will be able to select it from a prepopulated list of the current processes.

@@ -78,4 +78,4 @@ The **Decoder** page contains controls related to audio and video decoding.
 
 The **ANC Data Control** page contains controls related to ANC.
 
-The **IntelliGain** page containts tables related to profile audio.
+The **IntelliGain** page contains tables related to profile audio.

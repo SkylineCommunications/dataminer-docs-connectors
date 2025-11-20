@@ -162,7 +162,7 @@ This table contains information about all of the faults present on the device. T
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of this connector supports the usage of DCF and can only be used on a DMA with **9.0.3** as the minimum version.
+The **1.0.0.x** range of this connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

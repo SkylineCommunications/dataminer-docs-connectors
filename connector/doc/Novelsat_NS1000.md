@@ -84,6 +84,10 @@ This page displays the modulator line settings of the device, such as **TX State
 
 This page displays the modulator channel settings for both channel 1 and channel 2, such as **Source**, **Frame size**, **Modulation**, **Stream Format**, etc.
 
+### Device Configuration
+
+This page displays the Database File Name, along with a button **(Save Configuration)** that can be used to save the device configuration in the device's database. 
+
 ### Alarms
 
 This page displays the **Monitor Alarm Table**, which shows information regarding the system alarms, including the Date and Time, Severity, Source, Event and Description.

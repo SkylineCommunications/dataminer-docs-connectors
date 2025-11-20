@@ -101,7 +101,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device. The default value is *public*.
 - **Set community string**: The community string used when setting values on the device. The default value is *private*.
 
-## Usage
+## How to Use
 
 This connector displays information about the Frame Controller (**Evertz 7700-FC/Evertz 7800-FC**) and the inserted cards.
 
@@ -215,7 +215,7 @@ The Evertz 7707VR8-HS is an 8x 3G/HD/SDI/DVB-ASI fiber receiver.
 
 ### Evertz BPXRF
 
-[!IMPORTANT]
+> [!IMPORTANT]
 > This DVE is deprecated. [Evertz BPXRF](xref:Connector_help_Evertz_BPXRF) should be used instead.
 
 The Evertz BPXRF protection switches provide automatic changeover functionality to provide bypass protection for RF signals.
@@ -363,3 +363,4 @@ The 7707IFTA is a VistaLink Pro capable fiber-optic transmitter for 70/140 MHz I
 ### Evertz 7707IFRA
 
 The 7707IFRA is a VistaLink Pro capable fiber-optic receiver for 70/140 MHz IF signals. The 7707IFRA accepts a fiber-optic input from the companion 7707IFTA and provides two 70/140 MHz IF output signals. Monitoring and control of card status and parameters is provided locally at the card edge and remotely via VistaLink Pro capability.
+

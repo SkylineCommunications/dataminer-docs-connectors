@@ -23,8 +23,8 @@ The purpose of this connector is to manage and store a collection of jobs. Jobs 
 ## Use Case
 
 - **Challenge**: Although DataMiner offers ways to manage jobs and scheduled events, many partners use dedicated applications to manage jobs outside of the DataMiner ecosystem.
-- **Solution**: This connector acts as an intermediary between third-party applications and the SRM Booking module, enabling easy integration of job/event management applications with DataMiner's SRM framework by translating jobs/events into services and managing their life cycle.
-- **Benefit**: You get a fully integrated ecosystem that manages and monitors the life cycle of your jobs, events, and services.
+- **Solution**: This connector acts as an intermediary between third-party applications and the SRM Booking module, enabling easy integration of job/event management applications with DataMiner's SRM framework by translating jobs/events into services and managing their lifecycle.
+- **Benefit**: You get a fully integrated ecosystem that manages and monitors the lifecycle of your jobs, events, and services.
 
 ## Technical info
 

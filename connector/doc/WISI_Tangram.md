@@ -22,7 +22,7 @@ This connector will export different connectors based on the retrieved data. A l
 | 1.0.1.x            | Added support for software version 2.3 (Module GT11).                                | No              | No                  |
 | 1.1.0.x            | Added HTTP connection for retrieving QAM outputs and services.                       | No              | No                  |
 | 1.1.1.x            | Included the necessary modifications to ensure the connector is Cassandra compliant. | No              | Yes                 |
-| 1.2.0.x [SLC Main] | Added suppport for firmware version 3.5.2 MIBs.                                      | No              | Yes                 |
+| 1.2.0.x [SLC Main] | The element connection *IP Connection - SYSLOG*, which is used to retrieve the SYSLOG messages, now also checks the IP headers. The address should be set to **any** to correctly retrieve the UDP messages. | No              | Yes                 |
 
 ### Product Info
 
@@ -90,6 +90,11 @@ UDP/IP CONNECTION:
 - **Type of port**: The type of port (UDP).
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The port of the connected device, by default *514*.
+
+> [!IMPORTANT]
+>
+> - When you create an element, the port may by default be set to TCP/IP. Make sure to change it to **UDP/IP**. 
+> - If you are using range 1.2.x, you must set the **IP address** to the value **any** so all SYSLOG messages can be retrieved. The connector will filter the applicable messages.
 
 #### HTTP Connection
 

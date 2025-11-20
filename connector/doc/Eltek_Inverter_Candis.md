@@ -17,12 +17,6 @@ This connector uses an **SNMP** interface to communicate with the Eltek Inverter
 | 1.0.0.x [Obsolete]   | Initial version  | -            | -                 |
 | 1.0.1.x [SLC Main]   | Removed DVEs     | 1.0.0.6      | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

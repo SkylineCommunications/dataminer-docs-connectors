@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical_Page
+uid: Connector_help_Microsoft_Azure_-_File_Pusher_Technical
 ---
 
 # Microsoft Azure - File Pusher
@@ -64,3 +64,4 @@ The **Upload All** button will trigger an upload of all files from the File Path
 ## Notes
 
 For a better user experience, this connector can be used together with the [**Microsoft Azure Cloud Platform**](xref:Connector_help_Microsoft_Azure) connector, which allows you to monitor relevant resource metrics available in Azure.
+

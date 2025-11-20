@@ -75,7 +75,7 @@ The element created with this connector consists of the following data pages:
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** range of the Riedel Communications MediorNet MuoN (FusioN and VirtU) connector supports the usage of DCF and can only be used on a DMA with DataMiner version **8.5.4** or higher.
+The **1.0.1.x** range of the Riedel Communications MediorNet MuoN (FusioN and VirtU) connector supports the usage of DCF.
 
 ### Interfaces
 

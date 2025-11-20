@@ -317,7 +317,7 @@ In the **2.1.0.x** range of the connector, **HEVC** tables and a **License** tab
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** and **1.1.0.x** connector range of the Ateme Kyrion 2 protocol support the usage of DCF and can only be used on a DMA with **8.5.8.5** as the minimum version.
+The **1.0.1.x** and **1.1.0.x** connector range of the Ateme Kyrion 2 connector support the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

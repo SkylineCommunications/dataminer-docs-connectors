@@ -13,38 +13,6 @@ Typically, this connector is used together with the **NetInsight Nimbra Applicat
 > [!IMPORTANT]
 > **From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance.** If the connector is updated from an older version to 4.1.3.1, the DCF connections could be duplicated and remain in the connector. Please update the connector using the latest *NetInsight Nimbra Package*, restart all elements using the connector, and then use the Automation script *DCF Clean Nimbra Connections* to clean up the obsolete DCF links. Alternatively, you can manually install the Automation script *DCF Clean Nimbra Connections* and execute it after updating to version 4.1.3.1.
 
-## About
-
-### Version Info
-
-| Range | Corresponding NetInsight Nimbra Application Manager Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|--|
-| 1.0.0.x [Obsolete] | - | Initial version. | No | Yes |
-| 1.0.1.x [Obsolete] | - | New MIBs. | No | Yes |
-| 2.0.0.x [Obsolete] | - | Branch version based on 1.0.1.x. | No | Yes |
-| 3.0.0.x [Obsolete] | 1.0.0.x [Obsolete] | Branch version based on 2.0.0.x. | No | Yes |
-| 3.0.1.x [Obsolete] | 1.0.1.x [Obsolete] | Based on 3.0.0.x. All bit rates in Mbps for consistency. | No | Yes |
-| 4.0.0.x [Obsolete] | 2.0.0.x [Obsolete] | Based on 3.0.1.x. Uses DCF. | Yes | Yes |
-| 4.1.0.x [Obsolete] | 2.0.1.x [Obsolete] | Based on 4.0.0.x. Improved number of rows retrieved with each SNMP call. Version change required because some devices are unable to handle the bigger load. | Yes | Yes |
-| 4.1.1.x [Obsolete]| 2.0.2.x [SLC Main] | Based on 4.1.0.x. Improved interface for third-party applications (e.g. SRM) **with breaking changes**. Validation on requests is no longer polling-based but is pushed to the manager from the node element. | Yes | Yes |
-| 4.1.2.x [Obsolete] | 2.0.2.x [SLC Main] | Based on 4.1.1.x. Removed HTTP connection (obsolete). Removed page with HTTP parameters. | Yes | Yes |
-| 4.1.3.x [SLC Main] | 2.0.2.x [SLC Main] | Based on 4.1.2.x. Modified DCF interfaces to use the DTM name as the unique identifier instead of the instance. <br>**The history alarms and trend data for the DTM table will be lost because of this major change.**| Yes | Yes |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Gx 4.6-Gx 4.7          |
-| 1.0.1.x   | Gx 4.6-Gx 4.7          |
-| 2.0.0.x   | Gx 4.6-Gx 4.7          |
-| 3.0.0.x   | Gx 4.6-Gx 4.7          |
-| 3.0.1.x   | Gx 4.6-Gx 4.7          |
-| 4.0.0.x   | Gx 4.6-Gx 4.7          |
-| 4.1.0.x   | Gx 4.6-Gx 5.6          |
-| 4.1.1.x   | Gx 4.6-Gx 5.6          |
-| 4.1.2.x   | Gx 4.6-Gx 6.2.0.3      |
-| 4.1.3.x   | Gx 4.6-Gx 6.2.0.3      |
-
 ## Configuration
 
 ### Connections

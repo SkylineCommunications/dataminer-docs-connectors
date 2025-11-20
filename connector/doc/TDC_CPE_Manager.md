@@ -167,116 +167,23 @@ Key Performance Indicators (KPIs) are calculated on different levels. Below, you
 
 ### KQIs
 
-<table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
-<tbody>
-<tr class="odd">
-<td><strong>Description</strong></td>
-<td><strong>Information</strong></td>
-</tr>
-<tr class="even">
-<td>%DM DOCSIS Avail</td>
-<td><p>DM DOCSIS availability [%] = (Aggregated device availability / aggregated subscribers) * 100</p>
-<p><strong>DM device availability</strong></p>
-<p><em>Calculated by DataMiner: status if device is responding (i.e. not in timeout) and has operational status = ON.</em> <em>Operational status = ON if DataMiner element is in active state (i.e. not paused or stopped) and element severity &lt; Major.</em></p>
-<p><strong>Aggregated</strong> <strong>device availability</strong> = DM device availability * (aggregated sum of device availability)</p>
-<p><em>This parameter is the sum of device availability of all equipment available below the current topology level multiplied with the device availability of the current topology level.</em></p>
-<p><em>Note that if no aggregated sum of device availability values is available (NA), the default value 1 is used.</em></p>
-<p><strong>Aggregated subscribers</strong></p>
-<p><em>This parameter is the sum of subscribers (cable modems)</em> <em>of all equipment available below the current topology level.</em></p></td>
-</tr>
-<tr class="odd">
-<td>Exp %DM DOCSIS Avail /Network</td>
-<td>Expected DM DOCSIS availability [%] = Smart baseline value of the %DM DOCSIS availability</td>
-</tr>
-<tr class="even">
-<td>Avg BB Avail /Network</td>
-<td>Broadband availability, average [%] = DM DOCSIS availability / expected DM DOCSIS availability</td>
-</tr>
-<tr class="odd">
-<td>Worst 2% BB Avail /Network</td>
-<td><p>Broadband availability, worst 2% [%] = Average for 2% customers with worst availability</p>
-<p><em>Calculates the weighted average of the DM DOCSIS availability KQI for 2% of the total number of customers above the smart baseline.</em></p></td>
-</tr>
-<tr class="even">
-<td>Avg Current TV Service Avail</td>
-<td><p>Current TV service availability, average [%] = Weighted average availability from AMP up to CMC, OLT, region and TDC network.</p>
-<p><strong><em>Base parameters</em></strong><em>:</em></p>
-<p><em>Result of pre-configured measurements on the amplifier and comparison of the values with pre-defined output level thresholds. In case any of the thresholds is breached, the TV service is unavailable and the Current TV Service Unavailable parameter will be set.</em></p></td>
-</tr>
-<tr class="odd">
-<td>Worst 2% Current TV Service Avail /Network</td>
-<td><p>Current TV service availability, worst 2% [%]</p>
-<p><em>Calculates the weighted average of the current TV service availability KQI for 2% of the total number of subscribers.</em></p></td>
-</tr>
-<tr class="even">
-<td>Avg TV Service Avail</td>
-<td><p>TV service availability, average [%] = Weighted average availability from AMP up to CMC, OLT, region and TDC network.</p>
-<p><strong><em>Base parameters</em></strong><em>:</em></p>
-<p><em>Result of pre-configured measurements on the amplifier and comparison of the values with pre-defined output level thresholds. In case any of the thresholds is breached, the TV service is unavailable and the TV Service Unavailable parameter will be set.</em></p></td>
-</tr>
-<tr class="odd">
-<td>Worst 2% TV Service Avail /Network</td>
-<td><p>TV service availability, worst 2% [%]</p>
-<p><em>Calculates the weighted average of the TV service availability KQI for 2% of the total number of subscribers.</em></p></td>
-</tr>
-<tr class="even">
-<td>Avg Worst 5% Current NQI /Network</td>
-<td><p>Current network quality index, average worst 5% [%] = Average current NQI value of the worst 5% of segments (CMCs)</p>
-<p><strong><em>Base parameters</em></strong><em>:</em></p>
-<p><em>AMP Current NQI = The DataMiner amplifier collector compares the actual value with the expected value after each polling cycle. In case the expected value is breached, the current NQI reduction is set as 0%, otherwise it is set as 100%.</em></p></td>
-</tr>
-<tr class="odd">
-<td>Avg Worst 5% NQI /Network</td>
-<td><p>Network quality index, average worst 5% [%] = Average NQI value of the worst 5% of segments (CMCs)</p>
-<p><em><strong>Base parameters</strong>:</em></p>
-<p><em>AMP NQI = 100 - sum of reductions if no incident available for the current timestamp and amplifier.</em></p>
-<p><em>NQI reduction (penalty score)</em></p>
-<p><em>The DataMiner amplifier collector compares the actual value with the expected value after each polling cycle. In case the expected value is breached, the NQI reduction is increased with the reduction value, otherwise the value will not be changed.</em></p>
-<p><em>Note that DataMiner <em>takes</em> the complete interval <em>into account</em> in case thresholds are breached.</em></p>
-<p><em>At the beginning of each month, the NQI reduction will be reset.</em></p></td>
-</tr>
-<tr class="even">
-<td>Max Cap Load of a Segment - BB</td>
-<td><p>Maximum capacity load of a segment (broadband) [%] = (äSEG<sub>OK</sub> / total segments) * 100</p>
-<p><em>SEG</em><sub><em>OK</em></sub> <em>= 1 if (max capacity of segment - weekly peak hour traffic rate per segment) ò higher class of service</em></p>
-<p><em>Max capacity of segment: Configurable per segment.</em></p>
-<p><em>Weekly peak: Average of daily peaks within the week, excluding the highest and lowest.</em></p>
-<p><em>Daily peak: Maximum of the parameter Bitrate of a segment per day.</em></p>
-<p><em>Higher class of service is configurable.</em></p></td>
-</tr>
-<tr class="odd">
-<td>Max Cap Load of a Segment - VoD</td>
-<td><p>Maximum capacity load of a segment (VoD) [%] = (äSEG<sub>OK</sub> / total segments) * 100</p>
-<p><em>SEG</em><sub><em>OK</em></sub> <em>= 1 if (max capacity of segment - weekly peak hour traffic rate per segment) ò highest quality stream * 5</em></p>
-<p><em>Max capacity of segment: Sum of bandwidth of all active EQAM channels linked to this segment.</em></p>
-<p><em>Weekly peak: Average of daily peaks within the week, excluding the highest and lowest.</em></p>
-<p><em>Daily peak: Maximum of the parameter Bitrate of a segment per day.</em></p>
-<p><em>Highest quality stream: Currently approx. 8 Mbps, but the whole threshold (highest quality stream * 5) is configurable.</em></p></td>
-</tr>
-<tr class="even">
-<td>Speed Success Rate</td>
-<td><p>Speed success rate [%] = 100 - 100 * ( äC<sub>ij</sub> / än<sub>i</sub> )</p>
-<p><em>For every customer, per type of segment (US/DS/QAM/OFDM), this evaluates:</em></p>
-<p><em>C</em><sub><em>ij</em></sub> <em>= 1 if s</em><sub><em>i</em></sub><em>ò p</em><sub><em>j</em></sub> <em>,</em> <em>0 otherwise</em></p>
-<p><em>s</em><sub><em>i</em></sub> <em>=</em> <em>Spare capacity of segment</em></p>
-<p><em>Spare capacity = Max capacity - weekly peak load</em></p>
-<p><em>p</em><sub><em>j</em></sub> <em>=</em> <em>Purchased speed per customer</em></p>
-<p><em>än</em><sub><em>i</em></sub> <em>= Total number of broadband customers (QAM: #2.0CM + #3.0CM, OFDM: #3.1CM)</em></p></td>
-</tr>
-<tr class="odd">
-<td>STB Img Dist Low /Network</td>
-<td>Monthly calculation of total number of STBs with image disturbance low / total number of STBs</td>
-</tr>
-<tr class="even">
-<td>STB Img Dist Very Low /Network</td>
-<td>Monthly calculation of total number of STBs with image disturbance very low / total number of STBs</td>
-</tr>
-</tbody>
-</table>
+| Description | Information                           |
+|-----------------|-------------------------------------------|
+| %DM DOCSIS Avail | DM DOCSIS availability [%] = (Aggregated device availability / aggregated subscribers) * 100<br><br>**DM device availability**<br><br> *Calculated by DataMiner: status if device is responding (i.e. not in timeout) and has operational status = ON. Operational status = ON if DataMiner element is in active state (i.e. not paused or stopped) and element severity &lt; Major.*<br><br>**Aggregated device availability** = DM device availability * (aggregated sum of device availability)<br><br>*This parameter is the sum of device availability of all equipment available below the current topology level multiplied with the device availability of the current topology level.*<br><br>*Note that if no aggregated sum of device availability values is available (NA), the default value 1 is used.*<br><br>**Aggregated subscribers**<br><br>*This parameter is the sum of subscribers (cable modems) of all equipment available below the current topology level.* |
+| Exp %DM DOCSIS Avail /Network | Expected DM DOCSIS availability [%] = Smart baseline value of the %DM DOCSIS availability |
+| Avg BB Avail /Network | Broadband availability, average [%] = DM DOCSIS availability / expected DM DOCSIS availability |
+| Worst 2% BB Avail /Network | Broadband availability, worst 2% [%] = Average for 2% customers with worst availability<br><br>*Calculates the weighted average of the DM DOCSIS availability KQI for 2% of the total number of customers above the smart baseline.* |
+| Avg Current TV Service Avail | Current TV service availability, average [%] = Weighted average availability from AMP up to CMC, OLT, region and TDC network.<br><br>***Base parameters:***<br><br>*Result of pre-configured measurements on the amplifier and comparison of the values with pre-defined output level thresholds. In case any of the thresholds is breached, the TV service is unavailable and the Current TV Service Unavailable parameter will be set.* |
+| Worst 2% Current TV Service Avail /Network | Current TV service availability, worst 2% [%]<br><br>*Calculates the weighted average of the current TV service availability KQI for 2% of the total number of subscribers.* |
+| Avg TV Service Avail | TV service availability, average [%] = Weighted average availability from AMP up to CMC, OLT, region and TDC network.<br><br>***Base parameters:***<br><br>*Result of pre-configured measurements on the amplifier and comparison of the values with pre-defined output level thresholds. In case any of the thresholds is breached, the TV service is unavailable and the TV Service Unavailable parameter will be set.* |
+| Worst 2% TV Service Avail /Network | TV service availability, worst 2% [%]<br><br>*Calculates the weighted average of the TV service availability KQI for 2% of the total number of subscribers.* |
+| Avg Worst 5% Current NQI /Network | Current network quality index, average worst 5% [%] = Average current NQI value of the worst 5% of segments (CMCs)<br><br>**Base parameters:***<br><br>*AMP Current NQI = The DataMiner amplifier collector compares the actual value with the expected value after each polling cycle. In case the expected value is breached, the current NQI reduction is set as 0%, otherwise it is set as 100%.* |
+| Avg Worst 5% NQI /Network | Network quality index, average worst 5% [%] = Average NQI value of the worst 5% of segments (CMCs)<br><br>***Base parameters:***<br><br>*AMP NQI = 100 - sum of reductions if no incident available for the current timestamp and amplifier.*<br><br>*NQI reduction (penalty score)*<br><br>*The DataMiner amplifier collector compares the actual value with the expected value after each polling cycle. In case the expected value is breached, the NQI reduction is increased with the reduction value, otherwise the value will not be changed.*<br><br>*Note that DataMiner takes the complete interval into account in case thresholds are breached.*<br><br>*At the beginning of each month, the NQI reduction will be reset.* |
+| Max Cap Load of a Segment - BB | Maximum capacity load of a segment (broadband) [%] = (äSEG<sub>OK</sub> / total segments) * 100<br><br>*SEG<sub>OK</sub> = 1 if (max capacity of segment - weekly peak hour traffic rate per segment) ò higher class of service*<br><br>*Max capacity of segment: Configurable per segment.*<br><br>*Weekly peak: Average of daily peaks within the week, excluding the highest and lowest.*<br><br>*Daily peak: Maximum of the parameter Bitrate of a segment per day.*<br><br>*Higher class of service is configurable.* |
+| Max Cap Load of a Segment - VoD | Maximum capacity load of a segment (VoD) [%] = (äSEG<sub>OK</sub> / total segments) * 100<br><br>*SEG<sub>OK</sub> = 1 if (max capacity of segment - weekly peak hour traffic rate per segment) ò highest quality stream * 5*<br><br>*Max capacity of segment: Sum of bandwidth of all active EQAM channels linked to this segment.*<br><br>*Weekly peak: Average of daily peaks within the week, excluding the highest and lowest.*<br><br>*Daily peak: Maximum of the parameter Bitrate of a segment per day.*<br><br>*Highest quality stream: Currently approx. 8 Mbps, but the whole threshold (highest quality stream * 5) is configurable.* |
+| Speed Success Rate | Speed success rate [%] = 100 - 100 * ( äC<sub>ij</sub> / än<sub>i</sub> )<br><br>*For every customer, per type of segment (US/DS/QAM/OFDM), this evaluates:*<br><br>*C<sub>ij</sub> = 1 if s<sub>i</sub>ò p<sub>j</sub> , 0 otherwise*<br><br>*s<sub>i</sub> = Spare capacity of segment*<br><br>*Spare capacity = Max capacity - weekly peak load*<br><br>*p<sub>j</sub> = Purchased speed per customer*<br><br>*än<sub>i</sub> = Total number of broadband customers (QAM: #2.0CM + #3.0CM, OFDM: #3.1CM)* |
+| STB Img Dist Low /Network | Monthly calculation of total number of STBs with image disturbance low / total number of STBs |
+| STB Img Dist Very Low /Network | Monthly calculation of total number of STBs with image disturbance very low / total number of STBs |
 
 ## Notes
 

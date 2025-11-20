@@ -44,3 +44,4 @@ With this **PatchAmp Frame Monitor** connector, you can monitor the status of al
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for PathAmp Frame Monitor, refer to the [Technical help page](xref:Connector_help_PatchAmp_Frame_Monitor_Technical).
+

@@ -52,7 +52,7 @@ The connector displays a **Position** parameter with two possible values: *Posit
 
 ## DataMiner Connectivity Framework
 
-All ranges of the **Generic DCF Waveguide Switch** connector supports the usage of DCF and can only be used on a DMA with **8.0.0** as the minimum version.
+All ranges of the **Generic DCF Waveguide Switch** connector supports the usage of DCF.
 
 ### Interfaces
 

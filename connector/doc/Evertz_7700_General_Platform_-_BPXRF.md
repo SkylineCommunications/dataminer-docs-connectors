@@ -1,10 +1,11 @@
 ---
 uid: Connector_help_Evertz_7700_General_Platform_-_BPXRF
 ---
-[!NOTE]
-     > This connector is deprecated. Please use [Evertz BPXRF](xref:Connector_help_Evertz_BPXRF) instead.
 
 # Evertz BPXRF
+
+> [!NOTE]
+> This connector is deprecated. Please use [Evertz BPXRF](xref:Connector_help_Evertz_BPXRF) instead.
 
 ## About
 

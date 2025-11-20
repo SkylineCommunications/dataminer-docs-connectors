@@ -14,12 +14,6 @@ This connector is used to validate JSON content received through HTTPS requests.
 |----------------------|------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | HTTP Request Log Table | -            | -                 |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

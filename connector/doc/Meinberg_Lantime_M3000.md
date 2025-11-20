@@ -148,7 +148,7 @@ Note that the Sync Monitoring Table is only displayed if at least **firmware ver
 
 ## DataMiner Connectivity Framework
 
-The **1.0.0.x** range of the Meinberg Lantime M3000 connector supports the usage of DCF and can only be used on a DMA with **8.5.4** as the minimum version.
+The **1.0.0.x** range of the Meinberg Lantime M3000 connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 

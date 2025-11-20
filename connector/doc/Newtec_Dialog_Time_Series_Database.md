@@ -23,22 +23,6 @@ The connector collects the following metrics:
 
 This connector exports different types of DVEs, representing modems, network (forward), and network (return). Creation of DVEs can be enabled or disabled in the main element. The connector typically connects to a central NMS that monitors several dialog hubs.
 
-### Version Info
-
-| Range              | Description                                                            | DCF Integration | Cassandra Compliant |
-|--------------------|------------------------------------------------------------------------|-----------------|---------------------|
-| 1.0.0.x [Obsolete] | Initial version                                                        | No              | Yes                 |
-| 1.0.1.x [Obsolete] | Connector DVE structure changed.                                       | No              | Yes                 |
-| 1.0.2.x [SLC Main] | Added SNMP connection. New connection has to be configured on startup. | No              | Yes                 |
-
-### Product Info
-
-| Range              | Supported Firmware |
-|--------------------|--------------------|
-| 1.0.0.x [Obsolete] | 2.2.1, 2.2.2       |
-| 1.0.1.x [Obsolete] | 2.2.1, 2.2.2       |
-| 1.0.2.x [SLC Main] | 2.2.1, 2.2.2       |
-
 ### Exported connectors
 
 #### Range 1.0.0.x

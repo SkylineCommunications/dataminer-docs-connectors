@@ -15,3 +15,4 @@ With the **Telenor EPM MAM Offloader** connector, the messages forwarded by **Te
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telenor_EPM_MAM_Offloader_Technical).
+

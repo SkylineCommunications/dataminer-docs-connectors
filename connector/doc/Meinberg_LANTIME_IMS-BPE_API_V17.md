@@ -94,3 +94,4 @@ The state of a communication object indicates whether it is waiting to be proces
 Overview of the inter application handlers of the received events and messages.
 
 Every communication object will be represented by a related handler. The handler is responsible for taking the necessary actions depending on the related communication object.
+

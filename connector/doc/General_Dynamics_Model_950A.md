@@ -63,7 +63,7 @@ The ACU model is detected using RF parameter 21. This is only available for new 
 
 Known issues when the incorrect model is applied:
 
-- Profile mappings to data sets are incorrect. The device info of the new model has a different meaning compared to the old.
+- Profile mappings to datasets are incorrect. The device info of the new model has a different meaning compared to the old.
 - Saving settings can result in a bad or unknown request for the device. Request formats are different between the 2 models.
 
 ### Web Interface
@@ -160,7 +160,7 @@ This page lists the preset LAT/LON positions in the **GEO Preset Position Info**
 
 ### Point Mode - Intelsat
 
-The **Intelsat Information** table shows several Intelsat parameters. If the station computer is not in control of the ACB, the ACB will reject load commands. If the ACB is not in control of the antenna, the ACB will reject load commands. Recall commands are allowed at any time, but they will be rejected if the data set does not exist (i.e. has not been loaded). The following load command allows the data set, including the set in use, to be changed while in Intelsat Mode. Set deletion is not allowed on the set in use.
+The **Intelsat Information** table shows several Intelsat parameters. If the station computer is not in control of the ACB, the ACB will reject load commands. If the ACB is not in control of the antenna, the ACB will reject load commands. Recall commands are allowed at any time, but they will be rejected if the dataset does not exist (i.e. has not been loaded). The following load command allows the dataset, including the set in use, to be changed while in Intelsat Mode. Set deletion is not allowed on the set in use.
 
 This page also allows you to manage the **Ephemeris Number**, as well as to configure the Intelsat parameters **Lm0**, **Lm1**, **Lm2**, **Lonc**, **Lonc1**, **Lons**, **Lons1**, **Latc**, **Latc1**, **Lats**, **Lats1**, **Epoch Time**, **Latitude**, **Longitude**, **Check Time**, **Intelsat Set**, **Configuration**, and **Name**. Finally, you can also **erase** the selected **Ephemeris Number**.
 
@@ -178,7 +178,7 @@ This page displays the **manual offset** of the **azimuth**, **elevation**, and 
 
 ### Point Mode - Optrack
 
-This page allows you to manage the **Optrack Data Set**. You can also load the Optrack parameters **Data Set**, **Recycle**, **Scan Cycle Time**, **Configuration, Track Type**, and **Name**, and charge the Optrack Data **N1** and **N2**. Finally, you can also **clear** the selected **data set**.
+This page allows you to manage the **Optrack Data Set**. You can also load the Optrack parameters **Data Set**, **Recycle**, **Scan Cycle Time**, **Configuration, Track Type**, and **Name**, and charge the Optrack Data **N1** and **N2**. Finally, you can also **clear** the selected dataset.
 
 ### Point Mode - Star Track
 
@@ -243,7 +243,7 @@ You can also load the GEO Preset Position **Number**, **Latitude**, **Longitude*
 
 This page allows you to manage the **Optrack Data Set**. You can also load the Optrack parameters **Data Set**, **Recycle**, **Scan Cycle Time**, **Configuration, Track Type**, and **Name**, and charge the Optrack Data **N1** and **N2**.
 
-Finally, you can also **clear** the selected **data set**.
+Finally, you can also **clear** the selected dataset.
 
 ### Intelsat Pointing Mode
 

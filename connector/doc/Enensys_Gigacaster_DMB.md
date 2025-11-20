@@ -17,13 +17,6 @@ This connector monitors and configures Enensys GigaCaster DMB devices over **SNM
 | 1.0.0.x | Initial version. | - | - |
 | 1.0.1.x [SLC Main] | Compliancies, version history, and new parameters have been added in this version. | 1.0.0.3 | Page name changed. Cassandra compliance added. |
 
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.9.2.r1.588           |
-| 1.0.1.x   | 2.9.2.r1.588           |
-
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |

@@ -4,9 +4,12 @@ uid: Connector_help_Grass_Valley_Biometrics_AP
 
 # Grass Valley Biometrics AP
 
+## About
+
 The Grass Valley Biometrics AP is part of GV's Media Assurance platform, using Media Biometrics. There is a device in the network that generates Biometric data for a piece of media that the AP (Assurance Point) will then use to compare with the media. This device communicates asynchronously using the Rollcall protocol.
 
-## About
+> [!NOTE]
+> The device must be able to provide the service LongStr.
 
 ### Version Info
 
@@ -14,13 +17,6 @@ The Grass Valley Biometrics AP is part of GV's Media Assurance platform, using M
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version | - | - |
 | 1.0.1.x [SLC Main] | Long string commands are supported. | 1.0.0.2 | The parameters are polled via one single command definition, which is initialized by a QAction. The other redundant command definitions and their building blocks (parameters) are removed. The data parameters of each connector page are untouched. |
-
-### Product Info
-
-| Range     | Supported Firmware                                                                    |
-|-----------|---------------------------------------------------------------------------------------|
-| 1.0.0.x   | 2.9.2.r1.588                                                                          |
-| 1.0.1.x   | 2.9.2.r1.588 <br>Please note that the device must be able to provide the service LongStr. |
 
 ### System Info
 
@@ -49,14 +45,6 @@ SERIAL CONNECTION:
 
     - Range 1.0.0.x: The format is equal to *UU.PP*, where UU is the unit address and PP is the unit port. For example: *01.01*.
     - Range 1.0.1.x: The format is equal to *NNNN.UU.PP*, where NNNN is the unit network address, UU is the unit address and PP is the unit port. For example: *1160.01.01*.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 
