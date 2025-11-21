@@ -5681,6 +5681,11 @@
   items:
   - name: Lenovo ThinkServer System Manager
     topicUid: Connector_help_Lenovo_ThinkServer_System_Manager
+  - name: Lenovo ThinkSystem DE Series Storage Array
+    topicUid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array
+    items:
+    - name: Lenovo ThinkSystem DE Series Storage Array Technical
+      topicUid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array_Technical
 - name: Leyard
   items:
   - name: Leyard RPS220
@@ -5898,6 +5903,9 @@
   items:
   - name: Mediaproxy Logserver
     topicUid: Connector_help_Mediaproxy_Logserver
+    items:
+    - name: Mediaproxy Logserver Technical
+      topicUid: Connector_help_Mediaproxy_Logserver_Technical
   - name: Mediaproxy Player
     topicUid: Connector_help_Mediaproxy_Player
 - name: MegaTec
@@ -7026,6 +7034,16 @@
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
     topicUid: Connector_help_Nokia_Altiplano_Consumer
+  - name: Nokia Altiplano Manager
+    topicUid: Connector_help_Nokia_Altiplano_Manager
+    items:
+    - name: Nokia Altiplano Manager Technical
+      topicUid: Connector_help_Nokia_Altiplano_Manager_Technical
+  - name: Nokia Altiplano OLT
+    topicUid: Connector_help_Nokia_Altiplano_OLT
+    items:
+    - name: Nokia Altiplano OLT Technical
+      topicUid: Connector_help_Nokia_Altiplano_OLT_Technical
   - name: Nokia Altiplano REST Interface
     topicUid: Connector_help_Nokia_Altiplano_REST_Interface
     items:
@@ -7588,6 +7606,11 @@
     topicUid: Connector_help_Pro-Bel_SW-P-02
   - name: Pro-Bel SW-P-08
     topicUid: Connector_help_Pro-Bel_SW-P-08
+    items: 
+    - name: Pro-Bel SW-P-08 Technical (2.0.0.x)
+      topicUid: Connector_technical_Pro-Bel_SW-P-08_2.0.0.X
+    - name: Pro-Bel SW-P-08 Technical (1.0.0.x)
+      topicUid: Connector_technical_Pro-Bel_SW-P-08_1.0.0.X
 - name: Prodys
   items:
   - name: Prodys Prontonet
@@ -8016,6 +8039,13 @@
     topicUid: Connector_help_Rohde_Schwarz_Venice
   - name: Rohde Schwarz XLX8000
     topicUid: Connector_help_Rohde_Schwarz_XLX8000
+- name: Roku ECP
+  items:
+  - name: Roku ECP
+    topicUid: Connector_help_Roku_ECP
+    items:
+      - name: Roku ECP Technical
+        topicUid: Connector_help_Roku_ECP_Technical
 - name: Romantis
   items:
   - name: Romantis NMS
@@ -10359,6 +10389,11 @@
   items:
   - name: Verimatrix CSM
     topicUid: Connector_help_Verimatrix_CSM
+  - name: Verimatrix MDRM Server
+    topicUid: Connector_help_Verimatrix_MDRM_Server
+    items:
+    - name: Verimatrix MDRM Server Technical
+      topicUid: Connector_help_Verimatrix_MDRM_Server_Technical
   - name: Verimatrix OTT
     topicUid: Connector_help_Verimatrix_OTT
   - name: Verimatrix PlayReady

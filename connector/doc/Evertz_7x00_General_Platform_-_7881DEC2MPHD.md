@@ -20,11 +20,11 @@ This connector is used by DVEs that are automatically created by the parent elem
 
 ### General
 
-This page contains general information: **Card Type**, **Video Present** and **Video Bitrate**.
+This page contains general information: **Card Type**, **Video Present**, and **Video Bitrate**.
 
 ### PID
 
-This page contains the **Program Tuning Mode** aswell as 3 groups: **Auto**, **Manual** and **Table PID** each grouping everthing related to this group.
+This page contains the **Program Tuning Mode** as well as 3 groups, **Auto**, **Manual**, and **Table PID**, each grouping everything related to this group.
 
 ### Decoder
 
@@ -40,8 +40,8 @@ This page contains the **SDI Output Audio Control Table**.
 
 ### Output
 
-This page contains everthing about the output. **Output Video Mode**, **Levels**, etc.
+This page contains everything related to the output: **Output Video Mode**, **Levels**, etc.
 
 ### Alarms
 
-This page contains the alarms: **Video Present**, **AudioXServiceMissing**, etc.
+This page contains the alarms: **Video Present**, **Audio X Service Missing**, etc.
