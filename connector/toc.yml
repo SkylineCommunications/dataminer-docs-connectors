@@ -9184,6 +9184,11 @@
     topicUid: Connector_help_Specialty_Microwave_Corp_8489-501
   - name: Specialty Microwave Corp 9092-509
     topicUid: Connector_help_Specialty_Microwave_Corp_9092-509
+  - name: Specialty Microwave Corp 8682-500
+    topicUid: Connector_help_Specialty_Microwave_Corp_8682-500
+    items:
+    - name: Specialty Microwave Corp 8682-500 Technical
+      topicUid: Connector_help_Specialty_Microwave_Corp_8682-500_Technical
 - name: Spectracom
   items:
   - name: Spectracom Epsilon Clock EC20S
