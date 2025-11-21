@@ -10,29 +10,34 @@ The Pro-Bel SW-P-08 connector can be used to monitor and control any router that
 
 ## Key Features
 
-- **Monitoring crosspoints**: Provides an overview of current crosspoint connections in form of Sources and Destinations.
+- **Monitoring crosspoints**: Provides an overview of current crosspoint connections in the form of sources and destinations.
 
-- **Crosspoint management**: Supports setting the crosspoints, allowing the management of connections.
+- **Crosspoint management**: Allows you to manage connections by setting crosspoints.
 
-- **Extended support**: Supports use of extended commands, making it easy to utilize routers of any size.
+- **Extended support**: Supports the use of extended commands, making it easy to utilize routers of any size.
 
-### Use Case 1
+### Use Case
 
 **Challenge**: Managing routers from different vendors.
 
-**Solution**: Create a dedicated element in DataMiner for all of your routers.
+**Solution**: Create a dedicated element in DataMiner for all your routers.
 
-**Benefit**: Pro-Bel SW-P-08's implementation of generic remote control protocol allows user to interact with wide variety of devices, free from limitations of any specific vendor. On top of that, because protocol is implemented at the lowest possible level, the communication is guaranteed to be fast, responsive and light-weight, ensuring smooth operations and easy management of all of your routers.
+**Benefit**: Pro-Bel SW-P-08's implementation of generic remote control protocol allows you to interact with wide variety of devices, free from limitations of any specific vendor. On top of that, because the protocol is implemented at the lowest possible level, the communication is guaranteed to be fast, responsive and lightweight, ensuring smooth operations and easy management of all of your routers.
+
+## Prerequisites
+
+The minimum required DataMiner version for range 2.0.0.x of this connector is **10.3.0**.
 
 ## Technical Reference
 
-In order to improve the performance, reliability and to future-proof the connector we are currently in the process of moving to range 2.0.0.X. As this is work in progress not all features available on the previous range are yet implemented in the new one. 
+This connector has two ranges: 1.0.0.x and 2.0.0.x. The 2.0.0.x range is currently still being developed. It will improve the performance and reliability of the connector and make it more future-proof. However, not all features from the 1.0.0.x range are currently already available in the 2.0.0.x range.
 
-Features that are only available in the previous range are:
+At present, the following features are only available in the 1.0.0.x range:
+
 - Matrix view of crosspoints
 - DCF support
 - CSV label import/export
 - Dual controller
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_Pro-Bel_SW-P-08_2.0.0.X). For previous range refer to [technical documentation(1.0.0.X)](xref:Connector_technical_Pro-Bel_SW-P-08_1.0.0.X)
+> For detailed technical information about the 2.0.0.x range, refer to our [technical documentation (2.0.0.x)](xref:Connector_technical_Pro-Bel_SW-P-08_2.0.0.X). For the 1.0.0.x range, refer to the [technical documentation (1.0.0.x)](xref:Connector_technical_Pro-Bel_SW-P-08_1.0.0.X).

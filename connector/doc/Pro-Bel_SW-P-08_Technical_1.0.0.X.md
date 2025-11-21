@@ -4,9 +4,9 @@ uid: Connector_technical_Pro-Bel_SW-P-08_1.0.0.X
 
 # Pro-Bel SW-P-08 (1.0.0.X)
 
-The Pro-Bel SW-P-08 connector provides an interface to set or remove connections in the output routing of a controlled device from remote devices. It can be used to monitor and control any router that supports the Pro-Bel SW-P-08 protocol. A serial connection is used in order to successfully retrieve and configure the matrix. A matrix is used in order to easily connect a destination with a source.
-
 ## About
+
+The Pro-Bel SW-P-08 connector provides an interface to set or remove connections in the output routing of a controlled device from remote devices. It can be used to monitor and control any router that supports the Pro-Bel SW-P-08 protocol. A serial connection is used in order to successfully retrieve and configure the matrix. A matrix is used in order to easily connect a destination with a source.
 
 ### Version Info
 
@@ -18,17 +18,6 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 | 1.0.3.x            | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
 | 1.0.4.x            | Additional functionality added.                                     | -        | -                                           |
 | 1.0.5.x            | Dual Controller functionality implemented.                          | -        | Minimum required version: 10.3.11.0 - 13456 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.0.2.x   | -                      |
-| 1.0.3.x   | -                      |
-| 1.0.4.x   | -                      |
-| 1.0.5.x   | -                      |
 
 ### System Info
 
@@ -65,9 +54,9 @@ SERIAL CONNECTION:
   - **IP port**: The IP port of the device.
   - **Bus address**: The "Matrix Number", "Level Number", "Number of Inputs", and "Number of Outputs" of the matrix, separated by a period ("."). The range of inputs and outputs is 1-1024. For instance: "*1024.1024*".
 
-## Usage
+## How to Use
 
-The element consists of the following pages: **Matrix**, **General**, **Inputs/Outputs** and **Labels**.
+The element consists of the following pages: **Matrix**, **General**, **Inputs/Outputs**, and **Labels**.
 
 ### Matrix
 
