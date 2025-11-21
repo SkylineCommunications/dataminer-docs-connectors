@@ -12,11 +12,11 @@ This connector uses 2 connections, **SNMP** and **HTTP**. It mainly uses HTTP.
 
 ### Version Info
 
-| **Range**      | **Description**                                                         | **DCF Integration** | **Cassandra Compliant** |
-|----------------|-------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.1.0.x        | New connector version compatible with Xiplink v5.0.                     | No                  | No                      |
-| 1.2.0.x        | Token-based authentication is available as well as processing of traps. | No                  | Yes                     |
-| 1.3.0.x (Main) | Removed credential authentication.                                      | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.1.0.x | New connector version compatible with Xiplink v5.0. | No | No |
+| 1.2.0.x | Token-based authentication is available as well as processing of traps. | No | Yes |
+| 1.3.0.x (Main) | Removed credential authentication. | No | Yes |
 
 ### Product Info
 

@@ -2147,6 +2147,9 @@
   items:
   - name: Ceiton Resource Planning
     topicUid: Connector_help_Ceiton_Resource_Planning
+    items:
+    - name: Ceiton Resource Planning Technical
+      topicUid: Connector_help_Ceiton_Resource_Planning_Technical
 - name: Cellent
   items:
   - name: Cellent EMS
@@ -2555,6 +2558,9 @@
     topicUid: Connector_help_CPI_T02UO
   - name: CPI T07DO
     topicUid: Connector_help_CPI_T07DO
+    items:
+      - name: CPI T07DO Technical
+        topicUid: Connector_help_CPI_T07DO_Technical
   - name: CPI T22C1
     topicUid: Connector_help_CPI_T22C1
   - name: CPI T5DI
@@ -4138,6 +4144,8 @@
     topicUid: Connector_help_GatesAir_MSCx_1P1_Main_Alt_Controller
   - name: GatesAir MSCx DD Dual Drive Controller
     topicUid: Connector_help_GatesAir_MSCx_DD_Dual_Drive_Controller
+  - name: GatesAir MSCx Np1
+    topicUid: Connector_help_GatesAir_MSCx_Np1
 - name: Geist
   items:
   - name: Geist ATS
@@ -5668,6 +5676,11 @@
   items:
   - name: Lenovo ThinkServer System Manager
     topicUid: Connector_help_Lenovo_ThinkServer_System_Manager
+  - name: Lenovo ThinkSystem DE Series Storage Array
+    topicUid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array
+    items:
+    - name: Lenovo ThinkSystem DE Series Storage Array Technical
+      topicUid: Connector_help_Lenovo_ThinkSystem_DE_Series_Storage_Array_Technical
 - name: Leyard
   items:
   - name: Leyard RPS220
@@ -5885,6 +5898,9 @@
   items:
   - name: Mediaproxy Logserver
     topicUid: Connector_help_Mediaproxy_Logserver
+    items:
+    - name: Mediaproxy Logserver Technical
+      topicUid: Connector_help_Mediaproxy_Logserver_Technical
   - name: Mediaproxy Player
     topicUid: Connector_help_Mediaproxy_Player
 - name: MegaTec
@@ -6496,7 +6512,12 @@
   - name: Moxa ioLogik E2242
     topicUid: Connector_help_Moxa_ioLogik_E2242
   - name: Moxa ioLogik E4200
-    topicUid: Connector_help_Moxa_ioLogik_E4200
+    topicUid: Connector_help_Moxa_ioLogik_E4200 
+  - name: Moxa ioThinx 4510
+    topicUid: Connector_help_Moxa_ioThinx_4510
+    items:
+    - name:  Moxa ioThinx 4510 Technical
+      topicUid: Connector_help_Moxa_ioThinx_4510_Technical
   - name: Moxa NPort 5000 Series
     topicUid: Connector_help_Moxa_NPort_5000_Series
     items:
@@ -7008,6 +7029,21 @@
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
     topicUid: Connector_help_Nokia_Altiplano_Consumer
+  - name: Nokia Altiplano Manager
+    topicUid: Connector_help_Nokia_Altiplano_Manager
+    items:
+    - name: Nokia Altiplano Manager Technical
+      topicUid: Connector_help_Nokia_Altiplano_Manager_Technical
+  - name: Nokia Altiplano OLT
+    topicUid: Connector_help_Nokia_Altiplano_OLT
+    items:
+    - name: Nokia Altiplano OLT Technical
+      topicUid: Connector_help_Nokia_Altiplano_OLT_Technical
+  - name: Nokia Altiplano REST Interface
+    topicUid: Connector_help_Nokia_Altiplano_REST_Interface
+    items:
+    - name: Nokia Altiplano REST Interface Technical
+      topicUid: Connector_help_Nokia_Altiplano_REST_Interface_Technical
   - name: Nokia ISAM 7300 FX
     topicUid: Connector_help_Nokia_ISAM_7300_FX
   - name: Nokia ISAM 7300 FX GPON Platform
@@ -7565,6 +7601,11 @@
     topicUid: Connector_help_Pro-Bel_SW-P-02
   - name: Pro-Bel SW-P-08
     topicUid: Connector_help_Pro-Bel_SW-P-08
+    items: 
+    - name: Pro-Bel SW-P-08 Technical (2.0.0.x)
+      topicUid: Connector_technical_Pro-Bel_SW-P-08_2.0.0.X
+    - name: Pro-Bel SW-P-08 Technical (1.0.0.x)
+      topicUid: Connector_technical_Pro-Bel_SW-P-08_1.0.0.X
 - name: Prodys
   items:
   - name: Prodys Prontonet
@@ -7993,6 +8034,13 @@
     topicUid: Connector_help_Rohde_Schwarz_Venice
   - name: Rohde Schwarz XLX8000
     topicUid: Connector_help_Rohde_Schwarz_XLX8000
+- name: Roku ECP
+  items:
+  - name: Roku ECP
+    topicUid: Connector_help_Roku_ECP
+    items:
+      - name: Roku ECP Technical
+        topicUid: Connector_help_Roku_ECP_Technical
 - name: Romantis
   items:
   - name: Romantis NMS
@@ -8410,12 +8458,27 @@
   items:
   - name: ServiceNow Authenticator
     topicUid: Connector_help_ServiceNow_Authenticator
+  - name: ServiceNow Incident Manager
+    topicUid: Connector_help_ServiceNow_Incident_Manager
+    items:
+      - name: ServiceNow Incident Manager Technical
+        topicUid: Connector_help_ServiceNow_Incident_Manager_Technical
   - name: ServiceNow Tables
     topicUid: Connector_help_ServiceNow_Tables
 - name: SES
   items:
   - name: SES Astra CDN Monitor
     topicUid: Connector_help_SES_Astra_CDN_Monitor
+  - name: SES Inventory Management
+    topicUid: Connector_help_SES_Inventory_Management
+    items:
+    - name: SES Inventory Management Technical
+      topicUid: Connector_help_SES_Inventory_Management_Technical
+  - name: SES Service Problem Management
+    topicUid: Connector_help_SES_Service_Problem_Management
+    items:
+    - name: SES Service Problem Management Technical
+      topicUid: Connector_help_SES_Service_Problem_Management_Technical
 - name: SES Networks - USA
   items:
   - name: SES Networks - USA CTATMS Configuration Manager
@@ -10275,6 +10338,18 @@
   items:
   - name: Utah Scientific 400 Router RCPv3
     topicUid: Connector_help_Utah_Scientific_400_Router_RCPv3
+  - name: Utah Scientific 100 Router RCPv3
+    topicUid: Connector_help_Utah_Scientific_100_Router_RCPv3
+  - name: Utah Scientific 100 UDS
+    topicUid: Connector_help_Utah_Scientific_100_UDS
+    items:
+    - name: Utah Scientific 100 UDS Technical
+      topicUid: Connector_help_Utah_Scientific_100_UDS_Technical
+  - name: Utah Scientific 100 X
+    topicUid: Connector_help_Utah_Scientific_100_X
+    items:
+    - name: Utah Scientific 100 X Technical
+      topicUid: Connector_help_Utah_Scientific_100_X_Technical
 - name: Valere Power
   items:
   - name: Valere Power DC Power System
@@ -10309,6 +10384,11 @@
   items:
   - name: Verimatrix CSM
     topicUid: Connector_help_Verimatrix_CSM
+  - name: Verimatrix MDRM Server
+    topicUid: Connector_help_Verimatrix_MDRM_Server
+    items:
+    - name: Verimatrix MDRM Server Technical
+      topicUid: Connector_help_Verimatrix_MDRM_Server_Technical
   - name: Verimatrix OTT
     topicUid: Connector_help_Verimatrix_OTT
   - name: Verimatrix PlayReady
@@ -10738,6 +10818,11 @@
     topicUid: Connector_help_WISI_Tangram_GT31
   - name: WISI Tangram GT41
     topicUid: Connector_help_WISI_Tangram_GT41
+  - name: WISI WISIon IPTV
+    topicUid: Connector_help_WISI_WISIon_IPTV
+    items:
+    - name: WISI WISIon IPTV Technical
+      topicUid: Connector_help_WISI_WISIon_IPTV_Technical
 - name: Witbe
   items:
   - name: Witbe Experience Center

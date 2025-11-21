@@ -4,48 +4,39 @@ uid: Connector_help_VPG_TIMS_General
 
 # VPG TIMS General
 
-A passive analyzer of ASI and SDI video signals.
-
 ## About
+
+This connector is used for a passive analyzer of ASI and SDI video signals.
 
 This analyzer uses a combination of SNMP and HTML to pass the information related to the video streams and all services running on them.
 
 ### Version Info
 
-| **Range**     | **Description**                           | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version                           | No                  | No                      |
-| 1.1.0.x              | Release version                           | No                  | No                      |
-| 2.1.0.x              | New OID 13130.6                           | No                  | No                      |
-| 3.1.0.x              | Changed the connector with a tree controller | No                  | No                      |
-| 3.1.1.x              | Changes for GlobeCast France              | no                  | Yes                     |
-| 3.2.1.x [SLC Main]   | Old OID 13130.5                           | No                  | Yes                     |
+| Range              | Description                                  | DCF Integration | Cassandra Compliant |
+|--------------------|----------------------------------------------|-----------------|---------------------|
+| 1.0.0.x            | Initial version                              | No              | No                  |
+| 1.1.0.x            | Release version                              | No              | No                  |
+| 2.1.0.x            | New OID 13130.6                              | No              | No                  |
+| 3.1.0.x            | Changed the connector with a tree controller | No              | No                  |
+| 3.1.1.x            | Changes for GlobeCast France                 | no              | Yes                 |
+| 3.2.1.x [SLC Main] | Old OID 13130.5                              | No              | Yes                 |
 
-### Product Info
+## Configuration
 
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Unknown                     |
-| 1.1.0.x          | Unknown                     |
-| 2.1.0.x          | Unknown                     |
-| 3.1.0.x          | Unknown                     |
-| 3.1.1.x          | Unknown                     |
-| 3.2.1.x          | Unknown                     |
-
-## Installation and configuration
+### Connections
 
 This connector uses an SNMP connection and an HTTP connection and requires the following input during element creation:
 
-**SNMP CONNECTION**:
+SNMP CONNECTION:
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
 - **Device address**: Required in the 3.1.x.x range of this connector, not in the 3.2.x.x range.
 
-**SNMP Settings**:
+SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161.*
 
-**HTTP CONNECTION**:
+HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
 - **IP port**: The port of the destination, by default *8081.*
@@ -65,7 +56,7 @@ On this page, the **Inputs Information Table** displays the name, alarm filter a
 
 This page displays the streams and associated alarms in the **Stream Instance Table** and **Streams Alarm Table**.
 
-To clear the empty stream entries from the **Stream Instance Table**, **ASI Streams Table**, **Normalized Stream Info** and **SDI Streams Table**, click the **Remove Missing Streams** button.
+To clear the empty stream entries from the **Stream Instance Table**, **ASI Streams Table**, **Normalized Stream Info**, and **SDI Streams Table**, click the **Remove Missing Streams** button.
 
 ### ASI Streams
 
