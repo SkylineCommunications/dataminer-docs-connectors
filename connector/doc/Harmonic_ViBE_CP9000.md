@@ -56,7 +56,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the Ciena Blue Planet Operate.
+- **IP address/host**: The polling IP of the device.
 - **IP port**: The port to communicate with the API.
 - **Bus address**: By default *bypassproxy.*
 
