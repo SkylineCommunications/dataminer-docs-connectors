@@ -20,6 +20,6 @@ This connector is used by DVEs that are automatically created by the parent elem
 
 The DVE consists of the following data pages:
 
-- **General**: Contains general information: **Card Type**, **Laser**, **Changing Password** etc.
+- **General**: Contains general information: **Card Type**, **Laser**, **Changing Password**, etc.
 - **Video**: Contains the **Video Monitor Table**.
 - **Alarms**: Contains all the alarm-related information.
