@@ -20,7 +20,7 @@ This connector is used by DVEs that are automatically created by the parent elem
 
 The DVE consists of the following data pages:
 
-- **General**: Contains general information: **Card Type**, **Links Transmit Power**, **Links Wavelength**, **Changing Password** etc.
+- **General**: Contains general information: **Card Type**, **Links Transmit Power**, **Links Wavelength**, **Changing Password**, etc.
 - **Video**: Contains the **Video Control Table**.
-- **MGMT Alarms**: Contains all the **alarming** and **trap** information for the **MGMT** Part.
+- **MGMT Alarms**: Contains all the **alarm** and **trap** information for the **MGMT** part.
 - **Video Alarms**: Contains the **Video Alarms Table**.
