@@ -6,7 +6,7 @@ uid: Connector_help_Evertz_7x00_General_Platform_7707ET
 
 ## About
 
-The Evertz 7707ET card is a VistaLINKr capable Ethernet fiber transceiver that provides an economical method of transmitting two 10BaseT Ethernet channels or one 100Base-TX Ethernet channel over optical fiber.
+The Evertz 7707ET card is a VistaLINK-capable Ethernet fiber transceiver that provides an economical method of transmitting two 10BaseT Ethernet channels or one 100Base-TX Ethernet channel over optical fiber.
 
 An **SNMP** connection is used in order to successfully retrieve and configure the device's information. There are also different possibilities available for **alarm monitoring** and **trending**.
 
