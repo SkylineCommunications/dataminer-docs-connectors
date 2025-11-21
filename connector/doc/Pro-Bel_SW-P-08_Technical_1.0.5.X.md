@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Pro-Bel_SW-P-08_Technical_1.0.0.X
+uid: Connector_help_Pro-Bel_SW-P-08_Technical_1.0.5.X
 ---
 
-# Pro-Bel SW-P-08 (1.0.0.X)
+# Pro-Bel SW-P-08 (1.0.5.X)
 
 ## About
 
@@ -10,14 +10,14 @@ The Pro-Bel SW-P-08 connector provides an interface to set or remove connections
 
 ### Version Info
 
-| Range              | Key Features                                                        | Based on | System Impact                               |
-|--------------------|---------------------------------------------------------------------|----------|---------------------------------------------|
-| 1.0.0.x            | Initial version.                                                    | -        | -                                           |
-| 1.0.1.x            | Hard-coded matrix labels.                                           | -        | -                                           |
-| 1.0.2.x            | DCF implementation.                                                 | -        | -                                           |
-| 1.0.3.x            | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
-| 1.0.4.x            | Additional functionality added.                                     | -        | -                                           |
-| 1.0.5.x            | Dual Controller functionality implemented.                          | -        | Minimum required version: 10.3.11.0 - 13456 |
+| Range                | Key Features                                                        | Based on | System Impact                               |
+|----------------------|---------------------------------------------------------------------|----------|---------------------------------------------|
+| 1.0.0.x (Deprecated) | Initial version.                                                    | -        | -                                           |
+| 1.0.1.x (Deprecated) | Hard-coded matrix labels.                                           | -        | -                                           |
+| 1.0.2.x (Deprecated) | DCF implementation.                                                 | -        | -                                           |
+| 1.0.3.x (Deprecated) | Reviewed connector. Implemented latest Matrix Community Class.      | -        | -                                           |
+| 1.0.4.x (Deprecated) | Additional functionality added.                                     | -        | -                                           |
+| 1.0.5.x (Active)     | Dual Controller functionality implemented.                          | -        | Minimum required version: 10.3.11.0 - 13456 |
 
 ### System Info
 
