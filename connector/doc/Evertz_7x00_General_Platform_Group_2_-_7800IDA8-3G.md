@@ -4,11 +4,14 @@ uid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7800IDA8-3G
 
 # Evertz 7x00 General Platform Group 2 - 7800IDA8-3G
 
+## About
+
 This is a DVE exported by the Evertz General Platform Group 2 connector.
 
 The 7800IDA8-3G reclocking distribution amplifier provides high-quality distribution of facility 3G/HD/SDSDI signals. This module features an autosensing equalized input that generates eight reclocked outputs and is especially useful in projects where long cable runs are encountered.
 
-**Note**: This connector is considered **obsolete**. Refer to the notes below for more information.
+> [!IMPORTANT]
+> This connector is considered **obsolete**. Refer to the notes below for more information.
 
 ### Product Info
 
