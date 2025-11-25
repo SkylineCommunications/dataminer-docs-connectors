@@ -52,11 +52,9 @@ The iDirect Platform connector provides the key data from iDirect Evolution NMS.
 
 ### Prerequisites
 
-- **Access to iDirect Evolution NMS** is needed to retrieve terminal, network, and system-level information.
-
 - **Connectivity to the iDirect NMS server** is required for polling, performance monitoring, and configuration retrieval.
 
 - **Sufficient user permissions** are required to view operational metrics across remotes, networks, and hardware components.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_template).
+> For detailed technical information, refer to our [technical documentation](xref:iDirect_Platform_Technical).
