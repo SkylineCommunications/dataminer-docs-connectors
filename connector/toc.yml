@@ -7034,6 +7034,8 @@
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
     topicUid: Connector_help_Nokia_Altiplano_Consumer
+  - name: Nokia Altiplano Kafka Analyzer
+    topicUid: Connector_help_Nokia_Altiplano_Kafka_Analyzer
   - name: Nokia Altiplano Manager
     topicUid: Connector_help_Nokia_Altiplano_Manager
     items:
