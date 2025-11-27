@@ -124,7 +124,7 @@ This page displays a table with the current status of each chassis, together wit
 
 This page displays a table with all the information about each line card. All the information is also available on the line card DVEs.
 
-Via the page button at the bottom of the page, you can *enable* or *disable* the polling for each line card.
+Via the page button at the bottom of the page, you can enable or disable the polling for each line card.
 
 #### Linecards Enable/Disable Subpage
 
@@ -143,7 +143,7 @@ For GPS and statistics type polling, the time retrieved with the most recent pol
 
 ### Configuration Page
 
-The general configuration needs to be done on this page. For more information, refer to [Installation and configuration](#installation-and-configuration).
+The general configuration needs to be done on this page. For more information, refer to [Installation and Configuration](#installation-and-configuration).
 
 The IDirect Time Offset parameter can be used to correct a time difference (negative or positive) between the DataMiner server and the iDirect server. To calculate the value, use the following formula: \[iDirect time\] - \[DataMiner time\] (in hours).
 
@@ -151,7 +151,7 @@ The IDirect Time Offset parameter can be used to correct a time difference (nega
 
 #### MySql.Data.dll
 
-This connector uses functionality from the MySql.Data.dll file that is only available in relatively recent versions. By default, an older version of this file exists in the folder *C:\Skyline DataMiner\ProtocolScripts\\*, and as such the connector will not work correctly initially. To solve this issue, copy the file *MySql.Data.dll* from the folder *C:\Skyline DataMiner\Files\\* to *C:\Skyline DataMiner\ProtocolScripts\\* and restart the element.
+This connector uses functionality from the MySql.Data.dll file that is only available in relatively recent versions. By default, an older version of this file exists in the folder `C:\Skyline DataMiner\ProtocolScripts\`, and as such the connector will not work correctly initially. To solve this issue, copy the file *MySql.Data.dll* from the folder `C:\Skyline DataMiner\Files\` to `C:\Skyline DataMiner\ProtocolScripts\` and restart the element.
 
 #### DisplayColumn and Cassandra Compliance (10.0.x Ranges)
 
