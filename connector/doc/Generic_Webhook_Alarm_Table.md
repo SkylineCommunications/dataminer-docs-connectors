@@ -42,7 +42,7 @@ On the Table Config page, you can enable or disable the automatic removal of row
 
 ## Notes
 
-Alarm properties that are supported by this connector are **alarm_id**, **severity**, **value**, **alarm_properties** (Property 1 - Property15).
+Alarm properties that are supported by this connector are **alarm_id**, **severity**, **value**, **numericValue**, **alarm_properties** (Property 1 - Property15).
 
 This is an example JSON message:
 
@@ -50,7 +50,8 @@ This is an example JSON message:
 {
 "alarm_id": "alarm_id_error_1345",
 "severity": "critical",
-"value": "Bar"
+"value": "Bar",
+"numericValue": 12,
 "alarm_properties":
 {
 "Property1": "SomeElement",
@@ -68,7 +69,7 @@ This is an example JSON message:
 "Property12": "Network is down",
 "Property13": "",
 "Property14": "",
-"Property15": "",
+"Property15": ""
 }
 }
 ```
