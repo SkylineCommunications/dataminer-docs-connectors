@@ -40,4 +40,4 @@ At present, the following features are only available in the 1.0.0.x range:
 - Dual controller
 
 > [!NOTE]
-> For detailed technical information about the 2.0.0.x range, refer to our [technical documentation (2.0.0.x)](xref:Connector_technical_Pro-Bel_SW-P-08_2.0.0.X). For the 1.0.0.x range, refer to the [technical documentation (1.0.0.x)](xref:Connector_technical_Pro-Bel_SW-P-08_1.0.0.X).
+> For detailed technical information about the 2.0.0.x range, refer to our [technical documentation (2.0.0.x)](xref:Connector_help_Pro-Bel_SW-P-08_Technical_2.0.0.X). For the 1.0.0.x range, refer to the [technical documentation (1.0.0.x)](xref:Connector_help_Pro-Bel_SW-P-08_Technical_1.0.0.X).

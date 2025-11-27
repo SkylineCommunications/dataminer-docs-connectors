@@ -1,5 +1,5 @@
 ---
-uid: Connector_technical_Pro-Bel_SW-P-08_1.0.0.X
+uid: Connector_help_Pro-Bel_SW-P-08_Technical_1.0.0.X
 ---
 
 # Pro-Bel SW-P-08 (1.0.0.X)
