@@ -63,7 +63,6 @@ This is an example JSON message:
 "Property7": "Fubar",
 "Property8": "test",
 "Property9": "yes",
-
 "Property10": "Fubar",
 "Property11": "Some Machine",
 "Property12": "Network is down",
