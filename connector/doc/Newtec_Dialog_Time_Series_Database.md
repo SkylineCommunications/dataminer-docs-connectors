@@ -59,3 +59,5 @@ The connector uses the following APIs:
 
 **Benefit**: Ensures proactive maintenance and minimizes SLA breaches by actively monitoring the metrics related to SLAs.
 
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Newtec_Dialog_Time_Series_Database_Technical).
