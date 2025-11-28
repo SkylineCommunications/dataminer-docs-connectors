@@ -4,129 +4,58 @@ uid: Connector_help_Newtec_Dialog_Time_Series_Database
 
 # Newtec Dialog Time Series Database
 
-The Newtec Dialog Time Series Database connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a Time Series Database (TSDB, i.e. Influx DB).
-
 ## About
 
-The Newtec Dialog monitoring system collects metrics from the Newtec dialog platform and stores them in a Time Series database. The connector retrieves data from the Newtec Dialog Platform via its **REST API** and via the **TSDB API**. Data from both sources is aggregated into the connector.
+The Newtec Dialog NMS (Network Management System) is the unified management interface for the ST Engineering iDirect (formerly Newtec) Dialog satellite communication platform. It uses a Time Series Database (TSDB) to store performance metrics for monitoring and analysis.  
 
-The connector uses the following APIs:
+The Dialog NMS provides a single, unified interface for all configuration, monitoring, and troubleshooting operations across the entire Dialog platform, from small private hubs to large, globally distributed High-Throughput Satellite (HTS) networks. The Newtec Dialog Platform VSAT connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a Time Series Database (TSDB, i.e. Influx DB). 
 
-- Newtec Dialog Restful Standard API (Central Dialog NMS): Configuration data of the Dialog system is retrieved using this API.
-- Newtec Dialog TSDB API (Hub Gateway Database): Statistics, metrics of terminals, and Sat Networks are retrieved using the Time Series Database API.
-- Newtec Dialog Mobility API: This API is used to track terminals moving from one beam to another.
+This connector retrieves data from the Newtec Dialog Platform via its REST API and via the TSDB API. Data from both sources is aggregated into the connector. 
 
-The connector collects the following metrics:
+The connector uses the following APIs: 
 
-- Satnet-specific metrics, grouped into forward and return metrics.
-- Modem-specific metrics.
+- Newtec Dialog Restful Standard API (Central Dialog NMS): Configuration data of the Dialog system is retrieved using this API. 
+- Newtec Dialog TSDB API (Hub Gateway Database): Statistics, metrics of terminals and sat networks are retrieved using the Time Series Database API.
 
-This connector exports different types of DVEs, representing modems, network (forward), and network (return). Creation of DVEs can be enabled or disabled in the main element. The connector typically connects to a central NMS that monitors several dialog hubs.
+## Key Features
 
-### Exported connectors
+- **Monitor the config data from Dialog NMS**: Provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks, Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc.
 
-#### Range 1.0.0.x
+- **Monitors and aggregates the Remote TSDB**
 
-| Exported Connector | Description |
-|--|--|
-| [Newtec Dialog Time Series Database - Remotes](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Remotes) | Represents modem/terminal components. |
-| [Newtec Dialog Time Series Database - Network Forward](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Network_Forward) | Represents network components in the forward direction (VSAT HUB to Terminal) |
-| [Newtec Dialog Time Series Database - Network Return](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Network_Return) | Represents network components in the return direction (Terminal to VSAT HUB) |
+- **Monitors and aggregates the Network TSDB**
 
-#### Range 1.0.1.x
+- **Ability to control the config API and TSDB API polling**
 
-| Exported Connector | Description |
-|--|--|
-| [Newtec Dialog Time Series Database - Remotes](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Remotes) | Represents modem/terminal components. |
-| [Newtec Dialog Time Series Database - Network](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Network) | Represents network components. |
+- **Polling and DVE separation**
+  
+- **Backpolling**
 
-#### Range 1.0.2.x
+- **SNMP and Ping monitoring capabilities**
 
-| Exported Connector | Description |
-|--|--|
-| [Newtec Dialog Time Series Database - Remotes](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Remotes) | Represents modem/terminal components. |
-| [Newtec Dialog Time Series Database - Network](xref:Connector_help_Newtec_Dialog_Time_Series_Database_-_Network) | Represents network components. |
+## Use Cases
 
-## Configuration
+### Use Case 1
 
-### Connections
+**Challenge**: Monitoring Dialog terminal performance across multiple locations.
 
-This connector uses three HTTP connections.
+**Solution**: The connector aggregates configuration and performance data into a single element.
 
-#### HTTP Connection 1, 2 & 3
+**Benefit**: Enables quick identification of issues and ensures consistent service quality.
 
-These are used to communicate with the Newtec Dialog Restful Standard API. The following input is required during element creation:
+### Use Case 2
 
-- **IP address/host**: The IP of the Newtec Central NMS.
-- **IP port**: *80* (default connection 1) & *8086* (default connection 2 & 3)
-- **Device address**: *BypassProxy*
+**Challenge**: Detecting early signs of SatNet degradation before impacting customers.
 
-### Configuration of Main and Backup CNMS
+**Solution**: The connector captures real-time network events and performance statistics. 
 
-Additional settings need to be filled in on the **Standard API Polling** page if a main and backup CNMS are present. On this page, the IP and port of the main and backup should be configured, and polling can be enabled to either main or backup. The IP addresses specified in the element editor will then not matter.
+**Benefit**: Facilitates proactive maintenance and faster problem resolution using the standard features of trend and alarm templates.
 
-Note: If there is only one CNMS, it is enough to simply configure the HTTP connections above only.
+### Use Case 3
 
-- **Polling IP format**: 10.0.0.1:80
+**Challenge**: Monitoring aggregated network statistics that are required for the SLA purposes.
 
-### TSDB configuration
+**Solution**: The connector provides aggregated statistics of a network by combining the network throughput into 95th percentile and max throughput calculations for a defined time period.
 
-All TSDBs that need to be polled need to be added to the **Database Configuration** table on the **TSDB Polling** page.
+**Benefit**: Ensures proactive maintenance and minimizes SLA breaches by actively monitoring the metrics related to SLAs.
 
-## How to use
-
-Below you can find more information on how to use the most important pages of the connector.
-
-### General page
-
-On this page, you can configure and apply the **credentials** for user authentication of the REST API in order to collect data from the Dialog platform.
-
-### Standard API Polling page
-
-On this page, you can:
-
-- **Enable** **polling** of the restful API.
-- **Configure** the main and backup **CNMS IP address and port**.
-- **Switch** **polling** between the main and backup CNMS.
-
-### TSDB Polling page
-
-On this page, you can:
-
-- **Enable** or disable TSDB **polling**.
-- **Configure** **TSDB database details** to be polled in the Database Configuration table.
-- **Configure the timespan** of the queries sent to the databases for each measurement.
-
-### TSDB page
-
-This page displays three tables that contain important information about each remote, forward satellite network and return satellite network. For each row in the tables, a DVE can be created with all relevant information.
-
-The following settings are also available:
-
-- **Auto enable DVEs**: When this is enabled, if the connector detects a new remote or network, a new DVE element will automatically be created
-- **Auto Delete DVEs**: When this is enabled, if a remote or network is deactivated or removed, the corresponding DVE element will automatically be deleted in DataMiner. When this is disabled, you can delete the DVE manually by clicking the **Delete** button in the table.
-
-### Remotes TSDB page
-
-This page displays tables with information about each remote. All the information is available in the "Remotes" DVE.
-
-### Forward Link TSDB page (range 1.0.0.x)
-
-This page displays tables with information about each forward link. All the information is available in the "Network Forward" DVE.
-
-### Return Link TSDB page (range 1.0.0.x)
-
-This page displays tables with information about each return link. All the information is available in the "Network Return" DVE.
-
-### Networks TSDB page (range 1.0.1.x)
-
-This page displays tables with information about each satellite network/beam.
-
-The page contains several tables with info regarding the forward and return links statistics.
-
-## Notes
-
-### Connector flow
-
-The connector is designed around the TSDB as the "master" source of data of remotes and networks. Data from the Dialog API is used to fetch static configuration data of remotes and networks to build the full information.
-For example, a terminal is retrieved from the TSDB and then all associated mapping data is fetched from the Dialog API (like terminal name, MAC address, etc.). All stats and metrics are retrieved from the TSDB.
