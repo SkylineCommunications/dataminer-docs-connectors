@@ -6,16 +6,17 @@ uid: Connector_help_Newtec_Dialog_Time_Series_Database_Technical
 
 ## About
 
-The Newtec Dialog NMS (Network Management System) is the unified management interface for the ST Engineering iDirect (formerly Newtec) Dialog satellite communication platform. It uses a Time Series Database (TSDB) to store performance metrics for monitoring and analysis.  
+The Newtec Dialog NMS (Network Management System) is the unified management interface for the ST Engineering iDirect (formerly Newtec) Dialog satellite communication platform. It uses a Time Series Database (TSDB) to store performance metrics for monitoring and analysis.
 
-The Dialog NMS provides a single, unified interface for all configuration, monitoring, and troubleshooting operations across the entire Dialog platform, from small private hubs to large, globally distributed High-Throughput Satellite (HTS) networks. The Newtec Dialog Platform VSAT connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a Time Series Database (TSDB, i.e. Influx DB). 
+The Dialog NMS provides a single, unified interface for all configuration, monitoring, and troubleshooting operations across the entire Dialog platform, from small private hubs to large, globally distributed High-Throughput Satellite (HTS) networks. The Newtec Dialog Platform VSAT connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a TSDB (i.e. Influx DB).
 
-This connector retrieves data from the Newtec Dialog Platform via its REST API and via the TSDB API. Data from both sources is aggregated into the connector. 
+This connector retrieves data from the Newtec Dialog Platform via its REST API and via the TSDB API. Data from both sources is aggregated into the connector.
 
-The connector uses the following APIs: 
+The connector uses the following APIs:
 
-- Newtec Dialog Restful Standard API (Central Dialog NMS): Configuration data of the Dialog system is retrieved using this API. 
-- Newtec Dialog TSDB API (Hub Gateway Database): Statistics, metrics of terminals and sat networks are retrieved using the Time Series Database API. 
+- Newtec Dialog Restful Standard API (Central Dialog NMS): Configuration data of the Dialog system is retrieved using this API.
+- Newtec Dialog TSDB API (Hub Gateway Database): Statistics, metrics of terminals, and sat networks are retrieved using the TSDB API.
+
 ## Configuration
 
 ### Connections
@@ -27,16 +28,16 @@ This connector uses three HTTP connections.
 These are used to communicate with the Newtec Dialog Restful Standard API. The following input is required during element creation:
 
 - **IP address/host**: The IP of the Newtec Central NMS.
-- **IP port**: *80* (default connection 1) & *8086* (default connection 2 & 3)
+- **IP port**: *80* (default connection 1) and *8086* (default connection 2 and 3)
 - **Device address**: *BypassProxy*
 
 ### Configuration of Main and Backup CNMS
 
-Additional settings need to be filled in on the **Standard API Polling** page if a main and backup CNMS are present. On this page, the IP and port of the main and backup should be configured, and polling can be enabled to either main or backup. The IP addresses specified in the element editor will then not matter.
+If a main and backup CNMS are present, additional settings need to be filled in on the **Standard API Polling** page. On this page, the IP and port of the main and backup should be configured, and polling can be enabled to either main or backup. The IP addresses specified in the element editor will then not matter.
 
-Note: If there is only one CNMS, it is enough to simply configure the HTTP connections above only.
+Note that if there is only one CNMS, it is enough to simply configure the HTTP connections above only.
 
-- **Polling IP format**: 10.0.0.1:80
+**Polling IP format**: 10.0.0.1:80
 
 ### TSDB configuration
 
@@ -54,21 +55,21 @@ On this page, you can configure and apply the **credentials** for user authentic
 
 On this page, you can:
 
-- **Enable** **polling** of the restful API.
+- **Enable polling** of the restful API.
 - **Configure** the main and backup **CNMS IP address and port**.
-- **Switch** **polling** between the main and backup CNMS.
+- **Switch polling** between the main and backup CNMS.
 
 ### TSDB Polling page
 
 On this page, you can:
 
 - **Enable** or disable TSDB **polling**.
-- **Configure** **TSDB database details** to be polled in the Database Configuration table.
-- **Configure the timespan** of the queries sent to the databases for each measurement.
+- **Configure TSDB database details** to be polled in the Database Configuration table.
+- **Configure the time span** of the queries sent to the databases for each measurement.
 
 ### TSDB page
 
-This page displays three tables that contain important information about each remote, forward satellite network and return satellite network. For each row in the tables, a DVE can be created with all relevant information.
+This page displays three tables that contain important information about each remote, forward satellite network, and return satellite network. For each row in the tables, a DVE can be created with all relevant information.
 
 The following settings are also available:
 
@@ -95,4 +96,4 @@ The page contains several tables with info regarding the forward and return link
 
 ## Notes
 
-For more details, visit the DataMiner Catalog or contact your system administrator. 
+For more details, visit the DataMiner Catalog or contact your system administrator.
