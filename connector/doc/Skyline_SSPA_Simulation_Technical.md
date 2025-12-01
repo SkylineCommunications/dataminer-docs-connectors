@@ -7,7 +7,7 @@ uid: Connector_help_Skyline_SSPA_Simulation_Technical
 
 ## About
 
-The Skyline SSPA Simulation connector simulates an SSPA, allowing you to adjust input power, gain, attenuation, and view calculated output values.
+The Skyline SSPA Simulation connector simulates an SSPA, allowing you to adjust input power, gain, and attenuation, and view calculated output values.
 
 ## Configuration
 
@@ -17,6 +17,4 @@ This connector uses a virtual connection and requires no setup during element cr
 
 ## How to Use
 
-### General
-
-The General page provides access to SSPA parameters such as input power, attenuation, and gain, and displays the resulting output power.
+The **General page** provides access to SSPA parameters such as input power, attenuation, and gain, and displays the resulting output power.

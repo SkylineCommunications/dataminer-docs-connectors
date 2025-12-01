@@ -10,12 +10,10 @@ The Skyline SSPA Simulation connector emulates an SSPA device for demo, testing,
 
 ## Key Features
 
-- **Ideal for demos and training**: Show system behavior and teach workflows safely.  
+- **Ideal for demos and training**: Show system behavior and teach workflows safely.
 - **Safe testing**: Experiment with parameter changes without impacting real equipment.
 
 ## Technical Reference
 
-> [!NOTE]  
-> For detailed technical information, refer to our technical documentation: (xref:Connector_help_Skyline_SSPA_Simulation_Technical).
-
----
+> [!NOTE]
+> For technical information, refer to our [technical documentation](xref:Connector_help_Skyline_SSPA_Simulation_Technical).
