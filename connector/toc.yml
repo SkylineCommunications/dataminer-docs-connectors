@@ -8918,6 +8918,11 @@
     topicUid: Connector_help_Skyline_SRM_Service_Manager
   - name: Skyline SSL Certificate Monitor
     topicUid: Connector_help_Skyline_SSL_Certificate_Monitor
+  - name: Skyline SSPA Simulation
+    topicUid: Connector_help_Skyline_SSPA_Simulation
+    items:
+      - name: Skyline SSPA Simulation Technical
+        topicUid: Connector_help_Skyline_SSPA_Simulation_Technical
   - name: Skyline Station Monitor
     topicUid: Connector_help_Skyline_Station_Monitor
     items:
