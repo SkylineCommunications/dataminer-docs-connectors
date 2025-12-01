@@ -934,6 +934,10 @@
   items:
   - name: Aten PE6324
     topicUid: Connector_help_Aten_PE6324
+- name: Atheras Analytics
+  items:
+  - name: Atheras Analytics Tempestas
+    topicUid: Connector_help_Atheras_Analytics_Tempestas
 - name: Atlassian
   items:
   - name: Atlassian Jira
