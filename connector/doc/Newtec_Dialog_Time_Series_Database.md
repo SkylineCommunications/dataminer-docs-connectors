@@ -35,7 +35,7 @@ The connector uses the following APIs:
 
 ## Use Cases
 
-### Use Case 1
+### Centralized Dialog Terminal Performance Monitoring
 
 **Challenge**: Monitoring Dialog terminal performance across multiple locations.
 
@@ -43,7 +43,7 @@ The connector uses the following APIs:
 
 **Benefit**: Enables quick identification of issues and ensures consistent service quality.
 
-### Use Case 2
+### Proactive SatNet Degradation Detection
 
 **Challenge**: Detecting early signs of SatNet degradation before impacting customers.
 
@@ -51,7 +51,7 @@ The connector uses the following APIs:
 
 **Benefit**: Facilitates proactive maintenance and faster problem resolution using the standard features of trend and alarm templates.
 
-### Use Case 3
+### SLA-Driven Aggregated Network Statistics Monitoring
 
 **Challenge**: Monitoring aggregated network statistics that are required for the SLA purposes.
 
