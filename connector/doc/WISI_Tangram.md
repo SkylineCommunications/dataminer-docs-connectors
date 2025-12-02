@@ -41,6 +41,7 @@ This connector will export different connectors based on the retrieved data. A l
 | WISI Tangram GT22  | GT22 table  |
 | WISI Tangram GT23  | GT23 table  |
 | WISI Tangram GT31  | GT31 table  |
+| WISI Tangram GT34  | GT34 table  |
 | WISI Tangram GT41  | GT41 table  |
 
 ### Module Types
@@ -52,6 +53,7 @@ The connector supports the following types:
 - **GT22**
 - **GT23**
 - **GT31**
+- **GT34**
 - **GT41**
 
 ## Configuration
@@ -165,7 +167,7 @@ This page displays every **Input** and **Output** for every card on slots 1 to 6
 
 ### Supported Card Types
 
-This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**, and **GT41**. Each row will generate a DVE.
+This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**,**GT34** and **GT41**. Each row will generate a DVE.
 
 ### Webpage
 
