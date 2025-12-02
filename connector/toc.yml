@@ -6964,6 +6964,11 @@
       topicUid: Connector_help_Newtec_Dialog_Inventory_-_MCD7000_Demodulator
     - name: Newtec Dialog Inventory - PTP Sync
       topicUid: Connector_help_Newtec_Dialog_Inventory_-_PTP_Sync
+  - name: Newtec Dialog Local Infrastructure
+    topicUid: Connector_help_Newtec_Dialog_Local_Infrastructure
+    items:
+    - name: Newtec Dialog Local Infrastructure Technical
+      topicUid: Connector_help_Newtec_Dialog_Local_Infrastructure_Technical
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
   - name: Newtec Dialog Time Series Database - Network
