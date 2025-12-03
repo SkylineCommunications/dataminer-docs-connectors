@@ -6,33 +6,19 @@ uid: Connector_help_Newtec_Dialog_Time_Series_Database
 
 ## About
 
-The Newtec Dialog NMS (Network Management System) is the unified management interface for the ST Engineering iDirect (formerly Newtec) Dialog satellite communication platform. It uses a Time Series Database (TSDB) to store performance metrics for monitoring and analysis.  
+The Newtec Dialog NMS (Network Management System) is the unified management interface for the ST Engineering iDirect (formerly Newtec) Dialog satellite communication platform. It uses a Time Series Database (TSDB) to store performance metrics for monitoring and analysis.
 
-The Dialog NMS provides a single, unified interface for all configuration, monitoring, and troubleshooting operations across the entire Dialog platform, from small private hubs to large, globally distributed High-Throughput Satellite (HTS) networks. The Newtec Dialog Platform VSAT connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a Time Series Database (TSDB, i.e. Influx DB). 
+The Dialog NMS provides a single, unified interface for all configuration, monitoring, and troubleshooting operations across the entire Dialog platform, from small private hubs to large, globally distributed High-Throughput Satellite (HTS) networks. The Newtec Dialog Platform VSAT connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a TSDB (i.e. Influx DB).
 
-This connector retrieves data from the Newtec Dialog Platform via its REST API and via the TSDB API. Data from both sources is aggregated into the connector. 
-
-The connector uses the following APIs: 
-
-- Newtec Dialog Restful Standard API (Central Dialog NMS): Configuration data of the Dialog system is retrieved using this API. 
-
-- Newtec Dialog TSDB API (Hub Gateway Database): Statistics, metrics of terminals and sat networks are retrieved using the Time Series Database API. 
+This connector retrieves data from the Newtec Dialog Platform via its REST API and via the TSDB API. Data from both sources is aggregated into the connector.
 
 ## Key Features
 
-- **Monitor the config data from Dialog NMS**: Provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks (SatNets), Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc.
+- **Monitor the config data from Dialog NMS**: View the configuration for all components of Dialog NMS, i.e. remotes, satellite networks, beams, service profiles, carriers, pools, gateway, transponders, hub modules, etc.
 
-- **Provides the performance monitoring data along with the aggregations for the VSAT terminals using the Remote TSDB data**
+- **Monitor performance data**: Performance data is provided along with aggregated data for the VSAT terminals and satellite networks.
 
-- **Provides the performance monitoring data along with the aggregations for the Satellite Networks using  the Network TSDB**
-
-- **Ability for the user to control the config API and TSDB API polling configuration such as interval time, enable/disable.**
-
-- **Capability on the DataMiner element to enable the polling and DVE creation independently, for Terminal, and SatNets**
-  
-- **Configuration to backfill the trending data during the maintenance and upgrade  scenarios**
-
-- **Configuring and Monitoring SNMP and Ping data for the VSAT terminals**
+- **Control the polling and DVE configuration**: Control the config API and TSDB API polling configuration, including setting an interval time or enabling/disabling a specific type of polling. You can also enable the polling and DVE creation independently for terminal and satellite networks, and backfill trend data during maintenance and upgrade scenarios.
 
 ## Use Cases
 
