@@ -53,6 +53,9 @@ The web interface is only accessible when the client machine has network access 
 
 The element created with this connector consists of the data pages mentioned below.
 
+Within the Decode page's "Decoder Table Display Key Format" parameter, you can set the desired **display key format** for the **Decoder** table.
+This display key format will be propagated across tables that are related to the decoder.
+
 ### General
 
 This page contains basic device information, including information about **Network Adapters** and **CPU Cores**.
@@ -82,8 +85,6 @@ Device configuration can be done through some of the provided tables.
 This page contains decoding-related info.
 
 Device configuration can be done through some of the provided tables.
-
-You can also set the desired **display key format** for the **Decoder** table.
 
 ### Service
 
