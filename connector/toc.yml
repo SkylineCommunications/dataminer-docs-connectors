@@ -10840,6 +10840,8 @@
     topicUid: Connector_help_WISI_Tangram_GT24
   - name: WISI Tangram GT31
     topicUid: Connector_help_WISI_Tangram_GT31
+  - name: WISI Tangram GT34
+    topicUid: Connector_help_WISI_Tangram_GT34
   - name: WISI Tangram GT41
     topicUid: Connector_help_WISI_Tangram_GT41
   - name: WISI WISIon IPTV
