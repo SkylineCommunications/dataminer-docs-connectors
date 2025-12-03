@@ -4775,6 +4775,9 @@
     topicUid: Connector_help_Harmonic_PVR-8140
   - name: Harmonic RD9000 Decoder
     topicUid: Connector_help_Harmonic_RD9000_Decoder
+    items:
+     - name: Harmonic RD9000 Decoder Technical
+       topicUid: Connector_help_Harmonic_RD9000_Decoder_Technical
   - name: Harmonic Spectrum X
     topicUid: Connector_help_Harmonic_Spectrum_X
   - name: Harmonic Spectrum XE
