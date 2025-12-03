@@ -4786,6 +4786,9 @@
     topicUid: Connector_help_Harmonic_System_Manager
   - name: Harmonic ViBE CP9000
     topicUid: Connector_help_Harmonic_ViBE_CP9000
+    items:
+     - name: Harmonic ViBE CP9000 Technical
+       topicUid: Connector_help_Harmonic_ViBE_CP9000_Technical
   - name: Harmonic VOS
     topicUid: Connector_help_Harmonic_VOS
     items:
