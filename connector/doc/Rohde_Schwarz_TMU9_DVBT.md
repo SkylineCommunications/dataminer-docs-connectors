@@ -19,4 +19,4 @@ With this connector, you can monitor the device's data with DataMiner's alarm mo
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Rohde_Schwarz_SCE100_Technical).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Rohde_Schwarz_TMU9_DVBT_Technical).
