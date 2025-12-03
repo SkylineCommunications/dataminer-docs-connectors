@@ -6,7 +6,7 @@ uid: Connector_help_Rohde_Schwarz_TMU9_DVBT
 
 ## About
 
-This is a DataMiner connector for the **Rohde Schwarz TMU9 DVBT**, a rack containing multiple compact-size, efficient and reliable transmitters. Power consumption ranges from 300 W to 3.0 kW for digital standards, going up to 4.75 kW for analog standards. Built-in bandpass filters ensure short delivery times and innovative configurations, such as MultiTX or N+1 systems in a single rack.
+This is a DataMiner connector for the **Rohde Schwarz TMU9 DVBT**, a rack containing multiple compact-size, efficient, and reliable transmitters. Power consumption ranges from 300 W to 3.0 kW for digital standards, going up to 4.75 kW for analog standards. Built-in bandpass filters ensure short delivery times and innovative configurations, such as MultiTX or N+1 systems in a single rack.
 
 With this connector, you can monitor the device's data with DataMiner's alarm monitoring and trending features. Each transmitter on the rack can be displayed as a **Dynamic Virtual Element** (DVE) in the DataMiner user interface, for more intuitive monitoring.
 

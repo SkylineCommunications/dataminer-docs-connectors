@@ -4776,8 +4776,8 @@
   - name: Harmonic RD9000 Decoder
     topicUid: Connector_help_Harmonic_RD9000_Decoder
     items:
-     - name: Harmonic RD9000 Decoder Technical
-       topicUid: Connector_help_Harmonic_RD9000_Decoder_Technical
+    - name: Harmonic RD9000 Decoder Technical
+      topicUid: Connector_help_Harmonic_RD9000_Decoder_Technical
   - name: Harmonic Spectrum X
     topicUid: Connector_help_Harmonic_Spectrum_X
   - name: Harmonic Spectrum XE
@@ -4787,13 +4787,13 @@
   - name: Harmonic ViBE CP9000
     topicUid: Connector_help_Harmonic_ViBE_CP9000
     items:
-     - name: Harmonic ViBE CP9000 Technical
-       topicUid: Connector_help_Harmonic_ViBE_CP9000_Technical
+    - name: Harmonic ViBE CP9000 Technical
+      topicUid: Connector_help_Harmonic_ViBE_CP9000_Technical
   - name: Harmonic VOS
     topicUid: Connector_help_Harmonic_VOS
     items:
-     - name: Harmonic VOS Technical
-       topicUid: Connector_help_Harmonic_VOS_Technical
+    - name: Harmonic VOS Technical
+      topicUid: Connector_help_Harmonic_VOS_Technical
 - name: Harris
   items:
   - name: Harris Falcon III RF-7800W HCLOS Radio

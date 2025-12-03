@@ -12,10 +12,10 @@ This **SNMP** connector is used to monitor and configure the **Rohde Schwarz TMU
 
 ### Version Info
 
-| **Range**            | **Key Features** | **Based on**                            | **System Impact** |
+| Range            | Key Features | Based on                            | System Impact |
 |----------------------|------------------|-----------------------------------------|-------------------|
 | 1.0.0.x    | Initial version  | Rohde Schwarz TMU9 DVBT2, range 2.0.0.x | -                 |
-| 1.0.1.x [SLC Main]   | Replaced old display keys with new ones to give more context to alarms | Rohde Schwarz TMU9 DVBT, range 1.0.0.x | Check if there any dataminer features using the display keys of tables (360, 580, 1160, 1300, 1360, 1520, 1740, 2120) |
+| 1.0.1.x [SLC Main]   | Replaced old display keys with new ones to give more context to alarms | Rohde Schwarz TMU9 DVBT, range 1.0.0.x | Check if any DataMiner features use the display keys of tables (360, 580, 1160, 1300, 1360, 1520, 1740, 2120) |
 
 ### Product Info
 
@@ -23,7 +23,6 @@ This **SNMP** connector is used to monitor and configure the **Rohde Schwarz TMU
 |-----------|------------------------|
 | 1.0.0.x   | 4.4.25                 |
 | 1.0.1.x   | 4.4.25                 |
-
 
 ### System Info
 
@@ -54,7 +53,7 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## Usage
+## How to Use
 
 You can find more information on the data pages of the connector below.
 
@@ -68,7 +67,7 @@ This page contains the **DVB-T State** monitoring table and the **DVB-T2 Status 
 
 ### DVB-T Setup
 
-This page contains a set of monitoring and control tables, related to **configuration**, **localization, and modulation.**
+This page contains a set of monitoring and control tables, related to **configuration**, **localization**, and **modulation**.
 
 ### DVB-T Output
 
@@ -100,7 +99,7 @@ This page contains the **Automatic Notification** and **Automatic Configuration*
 
 ### Tx Frequency Regulation
 
-This page contains the **Notification** and **Setup** tables, allowing you to both monitor and configure the frequency regulation parameters. Additional information is also available in the **Frequency Regulation** **State** **Table**.
+This page contains the **Notification** and **Setup** tables, allowing you to both monitor and configure the frequency regulation parameters. Additional information is also available in the **Frequency Regulation State Table**.
 
 ### Tx SFN
 
@@ -108,7 +107,7 @@ Similar to the Tx Frequency Regulation page, this page contains the **SFN Notifi
 
 ### Tx Precorrection
 
-This page contains a **Notification** table as well as **Linear** and **Non-Linear** **Setup** and **State** tables. It also includes the **Crest Factor Reduction** table for both monitoring and control.
+This page contains a **Notification** table as well as **Linear** and **Non-Linear Setup** and **State** tables. It also includes the **Crest Factor Reduction** table for both monitoring and control.
 
 ### Tx Output Stage
 
@@ -124,11 +123,11 @@ On this page, you can **load and save presets** for every transmitter.
 
 ### Tx RF Sensors
 
-This page contains the **Tx RF Sensors** **Notification** **Table** as well as the general **Tx RF** **Sensors** **Table**. The latter allows you to monitor and configure a large set of sensor-related parameters.
+This page contains the **Tx RF Sensors Notification Table** as well as the general **Tx RF Sensors Table**. The latter allows you to monitor and configure a large set of sensor-related parameters.
 
 ### MTx
 
-This page displays the **MTx** **Notification** **Table**. Via page buttons, you can access information about the **Dual Drive Exciters and DVB Single Transmitter**.
+This page displays the **MTx Notification Table**. Via page buttons, you can access information about the **Dual Drive Exciters and DVB Single Transmitter**.
 
 ### Air Cooling State
 

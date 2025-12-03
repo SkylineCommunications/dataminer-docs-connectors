@@ -6,7 +6,7 @@ uid: Connector_help_Harmonic_RD9000_Decoder
 
 ## About
 
-This is a DataMiner connector for the **Harmonic RD9000 Decoder**, a multiformat professional **single or multi-slice UHD decoder that is HDR ready**.
+This is a DataMiner connector for the **Harmonic RD9000 Decoder**, a multiformat professional **single or multi-slice UHD decoder that is HDR-ready**.
 
 ### Key Features
 
