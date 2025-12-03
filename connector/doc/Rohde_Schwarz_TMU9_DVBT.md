@@ -14,19 +14,23 @@ This **SNMP** connector is used to monitor and configure the **Rohde Schwarz TMU
 
 | **Range**            | **Key Features** | **Based on**                            | **System Impact** |
 |----------------------|------------------|-----------------------------------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | Rohde Schwarz TMU9 DVBT2, range 2.0.0.x | -                 |
+| 1.0.0.x    | Initial version  | Rohde Schwarz TMU9 DVBT2, range 2.0.0.x | -                 |
+| 1.0.1.x [SLC Main]   | Replaced old display keys with new ones to give more context to alarms | Rohde Schwarz TMU9 DVBT, range 1.0.0.x | Check if there any dataminer features using the display keys of tables (360, 580, 1160, 1300, 1360, 1520, 1740, 2120) |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 4.4.25                 |
+| 1.0.1.x   | 4.4.25                 |
+
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                   |
 |-----------|---------------------|-------------------------|-----------------------|---------------------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | Rohde Schwarz TMU9 DVBT - Transmitter |
+| 1.0.1.x   | No                  | Yes                     | -                     | Rohde Schwarz TMU9 DVBT - Transmitter |
 
 ## Configuration
 
