@@ -20,6 +20,8 @@ This connector retrieves data from the Newtec Dialog Platform via its REST API a
 
 - **Control the polling and DVE configuration**: Control the config API and TSDB API polling configuration, including setting an interval time or enabling/disabling a specific type of polling. You can also enable the polling and DVE creation independently for terminal and satellite networks, and backfill trend data during maintenance and upgrade scenarios.
 
+- **Monitor the performance of the VSAT terminals**: Enable SNMP and ping capabilities for the VSAT terminals.
+
 ## Use Cases
 
 ### Centralized Dialog Terminal Performance Monitoring
