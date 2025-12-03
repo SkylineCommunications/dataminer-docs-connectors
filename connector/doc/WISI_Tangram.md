@@ -167,7 +167,7 @@ This page displays every **Input** and **Output** for every card on slots 1 to 6
 
 ### Supported Card Types
 
-This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**,**GT34** and **GT41**. Each row will generate a DVE.
+This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**,**GT34**, and **GT41**. Each row will generate a DVE.
 
 ### Webpage
 
