@@ -4775,6 +4775,9 @@
     topicUid: Connector_help_Harmonic_PVR-8140
   - name: Harmonic RD9000 Decoder
     topicUid: Connector_help_Harmonic_RD9000_Decoder
+    items:
+    - name: Harmonic RD9000 Decoder Technical
+      topicUid: Connector_help_Harmonic_RD9000_Decoder_Technical
   - name: Harmonic Spectrum X
     topicUid: Connector_help_Harmonic_Spectrum_X
   - name: Harmonic Spectrum XE
@@ -4783,11 +4786,14 @@
     topicUid: Connector_help_Harmonic_System_Manager
   - name: Harmonic ViBE CP9000
     topicUid: Connector_help_Harmonic_ViBE_CP9000
+    items:
+    - name: Harmonic ViBE CP9000 Technical
+      topicUid: Connector_help_Harmonic_ViBE_CP9000_Technical
   - name: Harmonic VOS
     topicUid: Connector_help_Harmonic_VOS
     items:
-     - name: Harmonic VOS Technical
-       topicUid: Connector_help_Harmonic_VOS_Technical
+    - name: Harmonic VOS Technical
+      topicUid: Connector_help_Harmonic_VOS_Technical
 - name: Harris
   items:
   - name: Harris Falcon III RF-7800W HCLOS Radio
@@ -8028,12 +8034,15 @@
     topicUid: Connector_help_Rohde_Schwarz_THV9_DAB_N+1_-_Transmitter
   - name: Rohde Schwarz TMU9 DVBT
     topicUid: Connector_help_Rohde_Schwarz_TMU9_DVBT
+    items:
+    - name: Rohde Schwarz TMU9 DVBT Technical
+      topicUid: Connector_help_Rohde_Schwarz_TMU9_DVBT_Technical
+  - name: Rohde Schwarz TMU9 DVBT - Transmitter
+    topicUid: Connector_help_Rohde_Schwarz_TMU9_DVBT_-_Transmitter
   - name: Rohde Schwarz TMU9 DVBT2-Transmitter
     topicUid: Connector_help_Rohde_Schwarz_TMU9_DVBT2-Transmitter
   - name: Rohde Schwarz TMU9 DVBT2
     topicUid: Connector_help_Rohde_Schwarz_TMU9_DVBT2
-  - name: Rohde Schwarz TMU9 DVBT - Transmitter
-    topicUid: Connector_help_Rohde_Schwarz_TMU9_DVBT_-_Transmitter
   - name: Rohde Schwarz TMU9 FM Dual Drive IRT
     topicUid: Connector_help_Rohde_Schwarz_TMU9_FM_Dual_Drive_IRT
   - name: Rohde Schwarz TMV9 DAB Dual Drive
