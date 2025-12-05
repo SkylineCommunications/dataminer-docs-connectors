@@ -10,15 +10,15 @@ The **Arkona Technologies AT300** connector provides centralized monitoring of A
 
 ### Key Features
 
-* **Audio/Video Delay Monitoring**: Track configured delay values, active delay pipelines, and real-time processing status.
-* **Signal Timing Alignment**: Monitor the timing consistency of incoming and outgoing video/audio streams to ensure frame-accurate alignment.
-* **System Resource Telemetry**: View free RAM, FPGA load, CPU usage, and system uptime.
-* **Environmental Metrics**: Monitor temperature sensors, fan RPM, and thermal thresholds.
-* **Optical Interface Monitoring**: Track SFP RX/TX power levels, link stability, and error counters.
+- **Audio/video delay monitoring**: Track configured delay values, active delay pipelines, and real-time processing status.
+- **Signal timing alignment**: Monitor the timing consistency of incoming and outgoing video/audio streams to ensure frame-accurate alignment.
+- **System resource telemetry**: View free RAM, FPGA load, CPU usage, and system uptime.
+- **Environmental metrics**: Monitor temperature sensors, fan RPM, and thermal thresholds.
+- **Optical interface monitoring**: Track SFP RX/TX power levels, link stability, and error counters.
 
 ## Use Cases
 
-### Audio & Video Synchronization Assurance
+### Audio and Video Synchronization Assurance
 
 **Challenge**: Lip‑sync issues, timing mismatches, and variable source latency can degrade broadcast quality.
 
@@ -34,16 +34,16 @@ The **Arkona Technologies AT300** connector provides centralized monitoring of A
 
 **Benefit**: Early detection of hardware issues prevents service interruption.
 
+### Monitoring Performance for Delay Pipelines
+
 **Challenge**: Delay pipelines require predictable processing resources.
 
 **Solution**: The connector provides insight into RAM usage, uptime, and FPGA/system load.
 
 **Benefit**: Ensures delay pipelines run in optimal performance conditions.
 
-## Technical Reference
+## Prerequisites
 
-### Prerequisites
-
-* AT300 PACs installed in a BLADE runner chassis.
-* AT300 management interfaces reachable over the network.
-* DataMiner version **10.5.0** or higher.
+- AT300 PACs installed in a BLADE runner chassis.
+- AT300 management interfaces reachable over the network.
+- DataMiner version **10.5.0** or higher.
