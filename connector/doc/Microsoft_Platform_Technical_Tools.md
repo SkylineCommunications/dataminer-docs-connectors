@@ -14,12 +14,13 @@ When you launch WBEMTEST, this will work slightly differently on different opera
 
 ![WBEMTEST Landing Page](~/connector/images/microsoft_platform_wbemtest_landing_page.png)
 
-On the next page, set `root/cimv2` as namespace if it is not already set, then click **Connect**. When the connection is successful, you will return to the main user interface with full functionality enabled (prior to connecting, most buttons are grayed out).
+On the next page, set `root\cimv2` as namespace if it is not already set, then click **Connect**. When the connection is successful, you will return to the main user interface with full functionality enabled (prior to connecting, most buttons are grayed out).
 
 ![WBEMTEST Connect Page](~/connector/images/microsoft_platform_wbemtest_connect_page.png)
 
 > [!NOTE]
 >
+> - If you want to test if you can access a remote computer's WMI, instead put in the namespace `\\{InsertRemoteComputerIpOrHostnameHere}\root\cimv2`
 > - If you do not provide credentials, the tool will use the credentials of the currently logged-in user.
 > - In case you are unable to connect, you can enter an alternative in the **Connect** window. This is helpful for testing access with different user accounts.
 
