@@ -55,7 +55,12 @@ Using this page, you can:
 
 - **Configure** and apply the credentials for user **authentication** of the **REST API** in order to collect data from the Dialog platform.
 - **Control** the **API polling configuration** such as interval time, enable/disable.
+
+![General Page](~/connector/images/Newtec_Dialog_Time_Series_Database_Technical_GeneralPage.png)
+
 - **Enable** the **polling** and **DVE creation** independently, for Terminal, and SatNets through multiple subpages.
+
+![Remotes Polling Page](~/connector/images/Newtec_Dialog_Time_Series_Database_Technical_RemotesPolling.png)
 
 ### Polling Settings Config page
 
@@ -76,11 +81,15 @@ On this page, you can:
 
 - **Configure backfill** for the trending data during the maintenance and upgrade scenarios.
 
+![Backpolling Page](~/connector/images/Newtec_Dialog_Time_Series_Database_Technical_BackpollingPage.png)
+
 ### Remotes page
 
 On this page, you can: 
 
-- **Monitor the config data from Dialog NMS** which provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks (SatNets), Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc. 
+- **Monitor the config data from Dialog NMS** which provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks (SatNets), Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc.
+
+![Remotes Page](~/connector/images/Newtec_Dialog_Time_Series_Database_Technical_RemotesPage.png)
 
 ### TSDB page
 
@@ -114,7 +123,9 @@ On this subpage of **Remotes TSDB**, you can:
 
 On this page, you can:  
 
-- Track the **performance monitoring data** along with the aggregations for the **Satellite Networks** using the **Network TSDB**. 
+- Track the **performance monitoring data** along with the aggregations for the **Satellite Networks** using the **Network TSDB**.
+
+![Networks TSDB Page](~/connector/images/Newtec_Dialog_Time_Series_Database_Technical_NetworksTSDB.png)
 
 ## Notes
 
