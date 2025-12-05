@@ -41,7 +41,7 @@ Note that if there is only one CNMS, it is enough to simply configure the HTTP c
 
 ### TSDB configuration
 
-All TSDBs that need to be polled need to be added to the **Database Configuration** table on the **TSDB Polling** page.
+All TSDBs that need to be polled need to be added to the **Database Configuration** table which is located on the **TSDB Polling** page and the TSDB Polling Status on **Polling Settings** page should be **enabled**.
 
 ## How to use
 
@@ -49,50 +49,70 @@ Below you can find more information on how to use the most important pages of th
 
 ### General page
 
-On this page, you can configure and apply the **credentials** for user authentication of the REST API in order to collect data from the Dialog platform.
+Using this page, you can:  
+
+- Configure and apply the credentials for user authentication of the REST API in order to collect data from the Dialog platform.
+- Control the config API polling configuration such as interval time, enable/disable.
+- Enable the polling and DVE creation independently, for Terminal, and SatNets through multiple subpages
+
+### Polling Settings Config page
+
+On this page, you can:  
+
+- Enable polling of the restful API. 
 
 ### Standard API Polling page
 
 On this page, you can:
 
-- **Enable polling** of the restful API.
 - **Configure** the main and backup **CNMS IP address and port**.
 - **Switch polling** between the main and backup CNMS.
 
-### TSDB Polling page
+### Backpolling page
 
-On this page, you can:
+On this page, you can: 
 
-- **Enable** or disable TSDB **polling**.
-- **Configure TSDB database details** to be polled in the Database Configuration table.
-- **Configure the time span** of the queries sent to the databases for each measurement.
+- Configure backfill for the trending data during the maintenance and ipgrade scenarios
+
+### Remotes page
+
+On this page, you can: 
+
+- Monitor the config data from Dialog NMS which provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks (SatNets), Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc. 
 
 ### TSDB page
 
-This page displays three tables that contain important information about each remote, forward satellite network, and return satellite network. For each row in the tables, a DVE can be created with all relevant information.
+This page displays two tables that contain information about each remote and network DVE. 
 
-The following settings are also available:
+The following settings are available: 
 
-- **Auto enable DVEs**: When this is enabled, if the connector detects a new remote or network, a new DVE element will automatically be created
-- **Auto Delete DVEs**: When this is enabled, if a remote or network is deactivated or removed, the corresponding DVE element will automatically be deleted in DataMiner. When this is disabled, you can delete the DVE manually by clicking the **Delete** button in the table.
+- Control the TSDB API polling configuration such as interval time, enable/disable 
 
-### Remotes TSDB page
+- Auto enable DVEs: When this is enabled, if the connector detects a new remote or network, a new DVE element will automatically be created 
 
-This page displays tables with information about each remote. All the information is available in the "Remotes" DVE.
+- Auto Delete DVEs: When this is enabled, if a remote or network is deactivated or removed, the corresponding DVE element will automatically be deleted in DataMiner. When this is disabled, you can delete the DVE manually by clicking the Delete button in the table.
 
-### Forward Link TSDB page (range 1.0.0.x)
+### TSDB Polling page
 
-This page displays tables with information about each forward link. All the information is available in the "Network Forward" DVE.
+On this page, you can: 
 
-### Return Link TSDB page (range 1.0.0.x)
+- Define the TSDB polling timeout which determines when polling should automatically restart if it stops due to issues. 
 
-This page displays tables with information about each return link. All the information is available in the "Network Return" DVE.
+- Configure the TSDB HTTP username and password, used for authentication when collecting data. 
 
-### Networks TSDB page (range 1.0.1.x)
+- Enable or disable TSDB polling for the configured databases.
 
-This page displays tables with information about each satellite network/beam.
+### Beams page   
 
-The page contains several tables with info regarding the forward and return links statistics.
+On this subpage of Remotes TSDB, you can: 
+
+- Track the performance monitoring data along with the aggregations for V terminals using the Remote TSDB data.
+
+### Networks TSDB page
+
+On this page, you can:  
+
+- Track the performance monitoring data along with the aggregations for the Satellite Networks using the Network TSDB . 
 
 ## Notes
 
