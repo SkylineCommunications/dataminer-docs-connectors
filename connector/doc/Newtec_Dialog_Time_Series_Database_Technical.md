@@ -37,6 +37,8 @@ If a main and backup CNMS are present, additional settings need to be filled in 
 
 Note that if there is only one CNMS, it is enough to simply configure the HTTP connections above only.
 
+Additionally, the authentication details on the **General** page must be configured.
+
 **Polling IP format**: 10.0.0.1:80
 
 ### TSDB configuration
@@ -51,15 +53,15 @@ Below you can find more information on how to use the most important pages of th
 
 Using this page, you can:  
 
-- Configure and apply the credentials for user authentication of the REST API in order to collect data from the Dialog platform.
-- Control the config API polling configuration such as interval time, enable/disable.
-- Enable the polling and DVE creation independently, for Terminal, and SatNets through multiple subpages
+- **Configure** and apply the credentials for user **authentication** of the **REST API** in order to collect data from the Dialog platform.
+- **Control** the **API polling configuration** such as interval time, enable/disable.
+- **Enable** the **polling** and **DVE creation** independently, for Terminal, and SatNets through multiple subpages.
 
 ### Polling Settings Config page
 
 On this page, you can:  
 
-- Enable polling of the restful API. 
+- **Enable polling of the restful API**. 
 
 ### Standard API Polling page
 
@@ -72,13 +74,13 @@ On this page, you can:
 
 On this page, you can: 
 
-- Configure backfill for the trending data during the maintenance and ipgrade scenarios
+- **Configure backfill** for the trending data during the maintenance and upgrade scenarios.
 
 ### Remotes page
 
 On this page, you can: 
 
-- Monitor the config data from Dialog NMS which provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks (SatNets), Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc. 
+- **Monitor the config data from Dialog NMS** which provides the configuration for all components of Dialog NMS i.e. Remotes, Satellite Networks (SatNets), Beams, Service Profiles, Carriers, Pools, Gateway, Transponders, Hub Modules, etc. 
 
 ### TSDB page
 
@@ -86,33 +88,33 @@ This page displays two tables that contain information about each remote and net
 
 The following settings are available: 
 
-- Control the TSDB API polling configuration such as interval time, enable/disable 
+- **Control** the **TSDB API polling configuration** such as interval time, enable/disable 
 
-- Auto enable DVEs: When this is enabled, if the connector detects a new remote or network, a new DVE element will automatically be created 
+- **Auto enable DVEs**: When this is enabled, if the connector detects a new remote or network, a new DVE element will automatically be created 
 
-- Auto Delete DVEs: When this is enabled, if a remote or network is deactivated or removed, the corresponding DVE element will automatically be deleted in DataMiner. When this is disabled, you can delete the DVE manually by clicking the Delete button in the table.
+- **Auto Delete DVEs**: When this is enabled, if a remote or network is deactivated or removed, the corresponding DVE element will automatically be deleted in DataMiner. When this is disabled, you can delete the DVE manually by clicking the **Delete** button in the table.
 
 ### TSDB Polling page
 
 On this page, you can: 
 
-- Define the TSDB polling timeout which determines when polling should automatically restart if it stops due to issues. 
+- Define the **TSDB polling timeout** which determines when polling should automatically restart if it stops due to issues. 
 
-- Configure the TSDB HTTP username and password, used for authentication when collecting data. 
+- **Configure** the **TSDB HTTP username and password**, used for authentication when collecting data. 
 
-- Enable or disable TSDB polling for the configured databases.
+- **Enable** or **disable** TSDB polling for the configured databases.
 
 ### Beams page   
 
-On this subpage of Remotes TSDB, you can: 
+On this subpage of **Remotes TSDB**, you can: 
 
-- Track the performance monitoring data along with the aggregations for V terminals using the Remote TSDB data.
+- Track the **performance monitoring data** along with the aggregations for **V terminals** using the **Remote TSDB data**.
 
 ### Networks TSDB page
 
 On this page, you can:  
 
-- Track the performance monitoring data along with the aggregations for the Satellite Networks using the Network TSDB . 
+- Track the **performance monitoring data** along with the aggregations for the **Satellite Networks** using the **Network TSDB**. 
 
 ## Notes
 
