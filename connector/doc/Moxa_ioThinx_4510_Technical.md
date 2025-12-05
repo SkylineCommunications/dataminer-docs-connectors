@@ -47,4 +47,12 @@ This connector uses SNMP polling to periodically retrieve data from the device a
 
 Configuration is straightforward and requires only that the SNMP parameters are correctly set during element setup. If the element enters a timeout state after configuration, please verify network connectivity to the device and ensure that the SNMP service is enabled under **Service Settings** on the **Security** page of the device's web interface.
 
-The **Description** column of the **Digital Input Channel Monitor** table can be populated by importing the description from an excel file. This is done on the **Import Config** sub-page under the **Digital I/O** page. For this, a dedicated folder in the DMA Documents folder (*C:\Skyline DataMiner\Documents\Moxa ioThinx 4510*) should be created. Then the excel file from which the description needs to be imported should be stored there. The connector will search for all excel files in that folder and provide the file names as drop-down options in the **Import Input Description Path** parameter. The user can then select the desired file and click the **Import** button.
+The **Description** column of the **Digital Input Channel Monitor** table can be **imported** from an Excel file. To do so:
+
+1. Create a dedicated folder `C:\Skyline DataMiner\Documents\Moxa ioThinx 4510` in the DataMiner Documents folder and add the Excel file with the description in this folder.
+
+1. Go to the **Digital I/O** > **Import Config** page and select the file in the **Import Input Description Path** dropdown.
+
+   This dropdown gets populated with all the Excel files in the folder from the first step.
+
+1. Click **Import**.
