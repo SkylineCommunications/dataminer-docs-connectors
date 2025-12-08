@@ -10,7 +10,7 @@ WBEMTEST is a built-in tool available on all Windows installations. It allows yo
 
 To use this tool, open the Start menu and type `wbemtest` into the search or run dialog box.
 
-When you launch WBEMTEST, this will work slightly differently on different operating systems. Some will automatically connect to connect to a WMI namespace, but others will not. In case you are not connected automatically to a WMI namespace, click the **Connect** button.
+When you launch WBEMTEST, this will work slightly differently on different operating systems. Some will automatically connect to a WMI namespace, but others will not. In case you are not connected automatically to a WMI namespace, click the **Connect** button.
 
 ![WBEMTEST Landing Page](~/connector/images/microsoft_platform_wbemtest_landing_page.png)
 
@@ -20,7 +20,7 @@ On the next page, set `root\cimv2` as namespace if it is not already set, then c
 
 > [!NOTE]
 >
-> - If you want to test if you can access a remote computer's WMI, instead put in the namespace `\\{InsertRemoteComputerIpOrHostnameHere}\root\cimv2`
+> - If you want to test if you can access a remote computer's WMI, instead specify the namespace `\\{InsertRemoteComputerIpOrHostnameHere}\root\cimv2`.
 > - If you do not provide credentials, the tool will use the credentials of the currently logged-in user.
 > - In case you are unable to connect, you can enter an alternative in the **Connect** window. This is helpful for testing access with different user accounts.
 
