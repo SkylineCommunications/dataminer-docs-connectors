@@ -6976,6 +6976,9 @@
       topicUid: Connector_help_Newtec_Dialog_Inventory_-_PTP_Sync
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
+    items:
+    - name: Newtec Dialog Time Series Database Technical
+      topicUid: Connector_help_Newtec_Dialog_Time_Series_Database_Technical
   - name: Newtec Dialog Time Series Database - Network
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database_-_Network
   - name: Newtec Dialog Time Series Database - Network Forward
