@@ -6969,6 +6969,8 @@
     items:
     - name: Newtec Dialog Local Infrastructure Technical
       topicUid: Connector_help_Newtec_Dialog_Local_Infrastructure_Technical
+    - name: Newtec Dialog Local Infrastructure - Host
+      topicUid: Connector_help_Newtec_Dialog_Local_Infrastructure_Host
   - name: Newtec Dialog Time Series Database
     topicUid: Connector_help_Newtec_Dialog_Time_Series_Database
   - name: Newtec Dialog Time Series Database - Network
