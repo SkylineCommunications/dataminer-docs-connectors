@@ -31,3 +31,5 @@ To be able to retrieve data from the API, specify a **Username** and **Password*
 The **Configure DVEs** page button opens a subpage where DVEs can be configured.
 
 On the **General** the **API Endpoint/URL** needed to connect to the device can be configured. On the **Authentication** page you can set the **Username** and **Password** that are used to retrieve data from the API.
+
+To activate the PDU tracking the only host group that needs to be enabeled is the "pdu" host group. Which can be found on the **Hosts** page in the **Hosts Group** table
