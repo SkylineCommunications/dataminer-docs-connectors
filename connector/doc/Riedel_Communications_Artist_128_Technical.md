@@ -1,8 +1,11 @@
 ---
-uid: Connector_help_Riedel_Communications_Artist_128
+uid: Connector_help_Riedel_Communications_Artist_128_Technical
 ---
 
 # Riedel Communications Artist 128
+
+> [!IMPORTANT]
+> This connector is deprecated. [Riedel Communications ARTIST](https://catalog.dataminer.services/details/991cd738-f706-4e58-b5f7-9f1f16dee733) should be used instead.
 
 The Riedel Artist is a network infrastructure based on modular **matrix mainframes**. The individual Artist matrix mainframes can be equipped exactly as needed.
 
