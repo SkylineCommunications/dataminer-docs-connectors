@@ -17,10 +17,9 @@ The Warner Bros Discovery Sports SMPTE 2022-7 Hitless connector can be applied t
 To create a service using this service protocol:
 
 1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol **Warner Bros Discovery Sports SMPTE 2022-7 Hitless Service**, with the latest version or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
-
+1. Specify the name for the service.
+1. Open the advanced options and select the service protocol **Warner Bros Discovery Sports SMPTE 2022-7 Hitless Service**, with the latest version or production version.
+1. Go to the **parameters** tab and include the service you want to monitor.
 
 ## How to use
 
@@ -30,7 +29,7 @@ The **Alarms** page contains a toggle button to retrieve and display all active 
 
 The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
 
-The **General Parameters** page contains the list of parameters with important information regarding the system.
+The **General Parameters** page contains a list of parameters with important information regarding the system.
 
 ## Notes
 
