@@ -26,17 +26,17 @@ uid: Connector_help_Linux_Platform_Memory_Calculation
 
 ## QAction Mapping
 
-| Parameter Name                   | PID | Type | Comment                                                             |
-| -------------------------------- | --- | ---- | ------------------------------------------------------------------- |
-| Total Real Memory                | 114 | SSH  | `MemTotal`                                                          |
-| Available Real Memory            | 120 | SSH  | `MemFree`                                                           |
-| UsedMemoryBuffers                | N/A | SSH  | `Buffers`. Used in `Actual Available Physical Memory`               |
-| UsedMemoryCache                  | N/A | SSH  | `Cached`. Used in `Actual Memory Cache`                             |
-| SReclaimableMemory               | N/A | SSH  | `SReclaimable`. Used in `Actual Memory Cache`                       |
-| TotalRealMemory                  | N/A | SSH  | `MemTotal`. Used in `Real Memory Usage`,`Total Physical Memory`     |
-| AvailableRealMemory              | N/A | SSH  | `MemFree`. Used in `Real Memory Usage`, `Available Physical Memory` |
-| TotalSwapMemory                  | N/A | SSH  | `SwapTotal`. Used in `Swap Usage`, `Total Physical Memory`          |
-| AvailableSwapMemory              | N/A | SSH  | `SwapFree`. Used `Swap Usage`, `Available Physical Memory`          |
+| Parameter Name        | PID | Type | Comment                                                                 |
+|-----------------------|-----|------|-------------------------------------------------------------------------|
+| Total Real Memory     | 114 | SSH  | `MemTotal`.                                                             |
+| Available Real Memory | 120 | SSH  | `MemFree`.                                                              |
+| UsedMemoryBuffers     | N/A | SSH  | `Buffers`. Used in `Actual Available Physical Memory`.                  |
+| UsedMemoryCache       | N/A | SSH  | `Cached`. Used in `Actual Memory Cache`.                                |
+| SReclaimableMemory    | N/A | SSH  | `SReclaimable`. Used in `Actual Memory Cache`.                          |
+| TotalRealMemory       | N/A | SSH  | `MemTotal`. Used in `Real Memory Usage` and `Total Physical Memory`.    |
+| AvailableRealMemory   | N/A | SSH  | `MemFree`. Used in `Real Memory Usage` and `Available Physical Memory`. |
+| TotalSwapMemory       | N/A | SSH  | `SwapTotal`. Used in `Swap Usage` and `Total Physical Memory`.          |
+| AvailableSwapMemory   | N/A | SSH  | `SwapFree`. Used in `Swap Usage` and `Available Physical Memory`.       |
 
 The connector performs the following command to retrieve information related to the memory utilization:
 
@@ -46,21 +46,21 @@ The connector performs the following command to retrieve information related to 
 
 Below you can find a description of the content available in this response:
 
-- **MemTotal**; Total usable RAM (i.e. physical RAM minus a few reserved bits and the kernel binary code).
-- **MemFree**: The sum of *LowFree+HighFree*.
-- **MemAvailable**: An estimate of how much memory is available for starting new applications, without swapping.
-- **Buffers**: Relatively temporary storage for raw disks blocks that shouldn't get tremendously large (20 MB or so).
-- **Cached**: In-memory cache for files read from the disk (the page cache). Doesn't include *SwapCached*.
-- **SwapCached**: memory that once was swapped out, is swapped back in but still also in the swap file. If memory pressure is high, these pages don't need to be swapped out again because they are already in the swap file. This saves I/O.
+- **MemTotal**: Total usable RAM (i.e. physical RAM minus a few reserved bits and the kernel binary code).
+- **MemFree**: The sum of `LowFree` + `HighFree`.
+- **MemAvailable**: An estimate of how much memory is available for starting new applications without swapping.
+- **Buffers**: Relatively temporary storage for raw disk blocks that should not get very large (approximately 20 MB).
+- **Cached**: In-memory cache for files read from the disk (the page cache). Does not include `SwapCached`.
+- **SwapCached**: Memory that once was swapped out, which is swapped back in but still also in the swap file. If memory pressure is high, these pages do not need to be swapped out again because they are already in the swap file. This saves I/O.
 - **SwapTotal**: Total amount of swap space available.
-- **SwapFree**: Amount of swap scape that is currently unused.
-- **SReclaimable**: Part of *Slab*, that might be reclaimed, such as caches.
+- **SwapFree**: Amount of swap space that is currently unused.
+- **SReclaimable**: Part of `Slab`, which might be reclaimed, such as caches.
 - **Slab**: In-kernel data structures cache.
 
-> [!note]
+> [!NOTE]
 >
-> - Even though cache and buffer memory can be freed up when needed and thus are available for use, they are returned as *used* memory by default (this note is available on each parameter).
-> - When comparing with SNMP, we noticed that the values displayed are identical, except `Available Physical Memory`, and `Used Physical Memory`
+> - Even though cache and buffer memory can be freed up when needed and are thus available for use, these are returned as **used** memory by default (this applies for each parameter).
+> - Compared with SNMP, the values displayed are identical, except `Available Physical Memory` and `Used Physical Memory`.
 
 ### Real Memory Usage (SSH)
 
@@ -86,7 +86,7 @@ $$
 
 ### Total Physical Memory (SSH)
 
-Total physical memory on this host (both real and swap memory). Value is divided by 1024.
+Total physical memory on this host (both real and swap memory). The value is divided by 1024.
 
 $$
 \begin{equation}
@@ -99,7 +99,7 @@ $$
 
 ### Available Physical Memory (SSH)
 
-The total amount of memory free or available for use in this host (both real and swap memory).
+The total amount of memory free or available for use on this host (both real and swap memory).
 
 $$
 \begin{equation}

@@ -5733,7 +5733,7 @@
     topicUid: Connector_help_Linux_Platform
     items:
     - name: Linux Platform SNMP Mapping
-      topicUid: Connector_help_Linux_Platform_SNMP_Mapping
+      topicUid: Connector_help_Linux_Platform_snmp_Mapping
     - name: Linux Platform Memory Calculation
       topicUid: Connector_help_Linux_Platform_Memory_Calculation
   - name: Linux Platform SNMP

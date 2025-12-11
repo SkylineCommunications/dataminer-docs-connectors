@@ -1,13 +1,12 @@
 ---
-uid: Connector_help_Linux_Platform_SNMP_Mapping
+uid: Connector_help_Linux_Platform_snmp_Mapping
 ---
 
 # Linux Platform - SNMP Mapping
 
-This document describes the SNMP OIDs mapped into the `Linux Platform` connector.
+The table below lists the SNMP OIDs mapped into the Linux Platform connector.
 
-> [!NOTE]
-> The following list includes OIDs that are monitored by default when the element is created.
+The list includes OIDs that are monitored by default when the element is created.
 
 | Parameter Name                                       | SNMP Parameter Name (MIB File) | SNMP OID                      | MIB File           |
 |------------------------------------------------------|--------------------------------|-------------------------------|--------------------|

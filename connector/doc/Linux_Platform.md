@@ -205,3 +205,7 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 Physical dynamic interfaces:
 
 - The physical dynamic interface is created for the parameter **Network Interface Table** and its interface is **inout**.
+
+## Notes
+
+For additional technical information, refer to [Linux Platform - SNMP Mapping](xref:Connector_help_Linux_Platform_snmp_Mapping) and [Memory Calculation](xref:Connector_help_Linux_Platform_Memory_Calculation).
