@@ -10768,6 +10768,11 @@
       topicUid: Connector_help_Warner_Bros_Discovery_DAZN_Live_Stream_API_Technical
 - name: Warner Bros Discovery Sports
   items:
+  - name: Warner Bros Discovery Sports SMPTE 2022-7 Hitless Service
+    topicUid: Connector_help_Warner_Bros_Discovery_Sports_SMPTE_2022-7_Hitless_Service
+    items:
+    - name: Warner Bros Discovery Sports SMPTE 2022-7 Hitless Service Technical
+      topicUid: Connector_help_Warner_Bros_Discovery_Sports_SMPTE_2022-7_Hitless_Service_Technical
   - name: Warner Bros Discovery Sports Transmission Orders
     topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
 - name: Wavestream
