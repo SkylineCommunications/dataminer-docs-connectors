@@ -177,7 +177,7 @@ Using the **Auto Clear** button, you can configure the following generic paramet
 
 ### Key Management page
 
-This page displays the **Panel Table,** **Key Table**, and **Functions Table** tree view, and a **Keys and Panels** button to display all data tables.
+This page displays the **Panel Table**, **Key Table**, and **Functions Table** tree view, and a **Keys and Panels** button to display all data tables.
 
 There are two ways to add panels and keys:
 
