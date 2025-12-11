@@ -10,19 +10,19 @@ The Qbit Q8V Codec System connector provides status information and configuratio
 
 ## Key Features
 
-- **Device Status Monitoring**: View system parameters, software versions, interfaces, and all operational components.
+- **Device status monitoring**: View system parameters, software versions, interfaces, and all operational components.
 
-- **Input Management**: Configure Web Streams and Transport Streams from the Inputs page.
+- **Input management**: Configure web streams and transport streams from the Inputs page.
 
-- **Input Selector Configuration**: Manage input selector routing and associations.
+- **Input selector configuration**: Manage input selector routing and associations.
 
-- **Encoder Control**: Monitor and configure encoders, linking them to input selectors or audio sources.
+- **Encoder control**: Monitor and configure encoders, linking them to input selectors or audio sources.
 
-- **Transport Stream Management**: Manage MPEG-2 transport streams, including services and destinations.
+- **Transport stream management**: Manage MPEG-2 transport streams, including services and destinations.
 
 ## Use Cases
 
-### Use Case 1
+### Integrating Web Radio Streams in Existing Networks
 
 **Challenge**: Integrating multiple web radio streams into an existing OTT or cable network requires a reliable method for transcoding and packaging streams.
 
@@ -30,7 +30,7 @@ The Qbit Q8V Codec System connector provides status information and configuratio
 
 **Benefit**: Simplifies end-to-end integration of web radio into professional broadcast environments.
 
-### Use Case 2
+### Real-Time Service Monitoring
 
 **Challenge**: Operators need visibility into encoder behavior and input routing to ensure stable service delivery.
 
@@ -38,7 +38,7 @@ The Qbit Q8V Codec System connector provides status information and configuratio
 
 **Benefit**: Faster troubleshooting and optimized signal flow management.
 
-### Use Case 3
+### Managing TS Services when Scaling Distribution
 
 **Challenge**: Managing transport stream services can be complex when scaling distribution.
 
@@ -46,16 +46,10 @@ The Qbit Q8V Codec System connector provides status information and configuratio
 
 **Benefit**: Streamlined distribution configuration with clear destination and service control.
 
-## Technical Reference
+## Prerequisites
 
-### Prerequisites
+- **DataMiner 10.0.0 or higher** is required because of the SLManagedScripting C#7 syntax.
 
-- **HTTP Connection** is needed for device communication, requiring IP address/host and port (default 443).
+- An **HTTP connection** is needed for device communication, for which IP address/host and port (default 443) will need to be filled in.
 
-- **Valid Username and Password** are needed to authenticate on the General page.
-
-- **DataMiner Version 10.0.0.0 – 9118 or higher** is required due to SLManagedScripting C#7 syntax.
-
-
-
-
+- A **valid username and password** will have to be filled in on the General page of the element to authenticate.
