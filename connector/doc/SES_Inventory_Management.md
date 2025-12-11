@@ -8,17 +8,17 @@ uid: Connector_help_SES_Inventory_Management
 
 The SES Inventory Management connector integrates with the SNOW system to retrieve and monitor satellite communication services, carriers, and network resources. It interfaces with the TMF 638 (Service Inventory Management) and TMF 639 (Resource Inventory Management) APIs to provide visibility on the operational status and configuration of communication elements.
 
-Data is stored using DataMiner's **DataMiner Object Model (DOM)** for enhanced scalability, flexibility, and data integrity.
+Data is stored [DataMiner Object Models (DOM)](https://aka.dataminer.services/DOM) for enhanced scalability, flexibility, and data integrity.
 
 ## Key Features
 
 - **Service inventory retrieval**: Retrieves and displays customer-facing services (CFS) with detailed characteristics, supporting resources, and related parties.
 - **Carrier management**: Monitors carrier elements including status, location, service specifications, and hierarchical relationships.
 - **Resource tracking**: Accesses network resources with characteristics, specifications, and relationships through TMF 639 API integration.
-- **DOM-based storage**: Leverages DataMiner Object Model for structured data management with built-in validation.
+- **DOM-based storage**: Leverages DataMiner Object Models for structured data management with built-in validation.
 - **Automated cache management**: Uses periodic cache updates with configurable frequency to maintain synchronized inventory data.
 - **Paginated data retrieval**: Efficiently handles large datasets using pagination with 40 records per page for optimal performance.
-- **Duplicate handling**: Automatically de-duplicates entities based on ExternalId to ensure data integrity.
+- **Duplicate handling**: Automatically de-duplicates entities based on external ID to ensure data integrity.
 
 ## Use Cases
 
@@ -40,7 +40,7 @@ Data is stored using DataMiner's **DataMiner Object Model (DOM)** for enhanced s
 
 ### Resource Lifecycle Management
 
-**Challenge**: Network teams need to track resource status changes while preserving operational context (e.g., modem status during updates).
+**Challenge**: Network teams need to track resource status changes while preserving operational context (e.g. modem status during updates).
 
 **Solution**: The connector implements intelligent update logic that preserves critical operational states (like modem status) during resource updates from the API.
 
