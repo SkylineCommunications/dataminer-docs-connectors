@@ -14,19 +14,15 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 ## Key Features
 
-- **Reclock**: Gb/s, HD, SD-SDI reclocking distribution amplifier.
+- **Audio monitoring**: Detailed monitoring of audio reclocking with the GDR108.
 
-- **Compatibilities**: Support of SD SDI 270 Mbit/s (SMPTE 259M), HD SDI 1485 Mbit/s (SMPTE 292M), 3Gb/s SDI 2970 Mbit/s (SMPTE 424M), ASI/DVB.
+## Use Case
 
-## Use Cases
+**Challenge**: Monitoring of GDR108 parameters regardless of whether the frame is available.
 
-### Use Case 1
+**Solution**: Deploy the Axon ACP GDR108 connector to monitor the GDR108 via DataMiner.
 
-**Challenge**: Device that cleans up, retimes, and regenerates digital audio signals.
-
-**Solution**: Use of Reclocker which emoving timing errors (jitter) and electrical noise.
-
-**Benefit**: To deliver a much purer, more precise audio signal.
+**Benefits**: Reduced load compared to monitoring via the frame.
 
 ## Technical Reference
 
