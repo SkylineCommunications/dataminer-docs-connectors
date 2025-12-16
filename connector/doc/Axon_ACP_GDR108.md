@@ -33,5 +33,5 @@ There are different possibilities available for **alarm monitoring** and **trend
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Axon_ACP_GDR108_technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Axon_ACP_GDR108_Technical).
 
