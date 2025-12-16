@@ -1470,6 +1470,9 @@
     topicUid: Connector_help_Axon_ACP_GDK100
   - name: Axon ACP GDR108
     topicUid: Connector_help_Axon_ACP_GDR108
+    items:
+    - name: Axon ACP GDR108 Technical
+      topicUid: Connector_help_Axon_ACP_GDR108_Technical
   - name: Axon ACP GDR216
     topicUid: Connector_help_Axon_ACP_GDR216
   - name: Axon ACP GDR26
