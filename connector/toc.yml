@@ -6122,6 +6122,8 @@
       topicUid: microsoft_platform_technical_wmi_tools
     - name: Microsoft Platform Troubleshooting
       topicUid: microsoft_platform_technical_troubleshooting
+    - name: Microsoft Platform CPU Load Calculation
+      topicUid: microsoft_platform_technical_cpu_load_calculation
   - name: Microsoft Platform SNMP
     topicUid: Connector_help_Microsoft_Platform_SNMP
   - name: Microsoft SCOM Universal Connector
