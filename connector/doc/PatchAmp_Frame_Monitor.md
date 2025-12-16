@@ -36,6 +36,8 @@ With this **PatchAmp Frame Monitor** connector, you can monitor the status of al
 
 **Benefit**: Reduces complexity in system setup and maintenance, offering flexibility and scalability in broadcast infrastructure.
 
+![PatchAmp Frame Monitor](../images/Patchamp_FrameMonitor.png)
+
 ## Technical info
 
 ### Prerequisites
