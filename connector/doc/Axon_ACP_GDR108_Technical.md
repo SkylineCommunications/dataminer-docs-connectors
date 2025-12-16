@@ -5,7 +5,6 @@ uid: Connector_help_Axon_ACP_GDR108_Technical
 # Axon ACP GDR108
 
 ## About
-
 The GDR108 is a 3 Gb/s, HD and SD dual-input distribution amplifier with 8 reclocked outputs (ASI/DVB compatible).
 
 The **Axon ACP GDR108** connector can be used to display and configure information related to this device.
@@ -46,25 +45,11 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 #### Fixed Interfaces
 
-[Use this section for interfaces that correspond to a single parameter. Add the applicable subsections, with a bulleted list describing the interfaces. Use the "Virtual fixed interfaces" subsection for virtual interfaces configured in the connector, use "Physical fixed interfaces" for physical interfaces of the device.]
-
-Virtual fixed interfaces:
-
-- [Description of the interface: for what parameter is the virtual dynamic interface created and what is the interface type (in / out / inout).]
-
-Physical fixed interfaces:
-
-- [Description of the interface: for what parameter is the physical dynamic interface created and what is the interface type (in / out / inout).]
-
-#### Dynamic Interfaces
-
-[Use this section for interfaces that correspond to a table parameter. Add the applicable subsections, with a bulleted list describing the interfaces. Use the "Virtual dynamic interfaces" subsection for virtual interfaces configured in the connector, use "Physical dynamic interfaces" for physical interfaces of the device.]
-
-Virtual dynamic interfaces:
+Virtual Fixed interfaces:
 
 - **Reclocker**: A single fixed interface of type **inout**
 
-Physical dynamic interfaces:
+Physical Fixed interfaces:
 
 - **SDI Input**: A single fixed interface of type **input**.
 - **SDI Output 1**: A single fixed interface of type **output**.
