@@ -18,7 +18,6 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 - **Compatibilities**: Support of SD SDI 270 Mbit/s (SMPTE 259M), HD SDI 1485 Mbit/s (SMPTE 292M), 3Gb/s SDI 2970 Mbit/s (SMPTE 424M), ASI/DVB.
 
-
 ## Use Cases
 
 ### Use Case 1
@@ -29,9 +28,7 @@ There are different possibilities available for **alarm monitoring** and **trend
 
 **Benefit**: To deliver a much purer, more precise audio signal.
 
-
 ## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Axon_ACP_GDR108_Technical).
-
