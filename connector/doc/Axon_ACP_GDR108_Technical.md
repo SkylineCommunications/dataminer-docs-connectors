@@ -5,6 +5,7 @@ uid: Connector_help_Axon_ACP_GDR108_Technical
 # Axon ACP GDR108
 
 ## About
+
 The GDR108 is a 3 Gb/s, HD and SD dual-input distribution amplifier with 8 reclocked outputs (ASI/DVB compatible).
 
 The **Axon ACP GDR108** connector can be used to display and configure information related to this device.
@@ -33,7 +34,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 ## How to use
 
-All the information that can be useful for monitoring can be found in a tree view on the **Generic** data page and on the pages **Status**, and **Settings**.
+All the information that can be useful for monitoring can be found in a tree view on the **Generic** data page and on the pages **Status** and **Settings**.
 
 ## DataMiner Connectivity Framework
 
