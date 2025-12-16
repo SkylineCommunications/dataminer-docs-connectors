@@ -50,7 +50,7 @@ The performance counter is based on **idle time**, not directly on busy time. Wi
 - Raw counter values ($N_{1}$, $N_{2}$) represent cumulative idle time ticks at two sampling points of `Percent Processor Time`.
 
   $$
-  \Delta\,\,\text{Percentage Processor Time}= N_{2}-N_{1}
+  \Delta\,\,\text{Percent Processor Time}= N_{2}-N_{1}
   $$
 
 - Raw base values ($D_{1}$, $D_{2}$) represent cumulative total ticks at those points (from `Timestamp_Sys100NS`).
@@ -62,14 +62,14 @@ The performance counter is based on **idle time**, not directly on busy time. Wi
 Since the counter type identifies it as inverse, the CPU load is calculated as follows (based on [Using Raw Performance Data Classes](https://learn.microsoft.com/en-us/windows/win32/wmisdk/monitoring-performance-data#using-raw-performance-data-classes)):
 
 $$
-\text{CPU Load}=100\times\left(1-\frac{\Delta\,\,\text{Percentage Processor Time}}{\Delta\,\,\text{Timeticks}}\right)
+\text{CPU Load}=100\times\left(1-\frac{\Delta\,\,\text{Percent Processor Time}}{\Delta\,\,\text{Timeticks}}\right)
 $$
 
 ## Characteristics of the CPU load calculation
 
-- The `Percentage Processor Time` is a time-based metric computed from idle vs. busy time over a sampling interval. It does not depend on the CPU's clock frequency.
+- The `Percent Processor Time` is a time-based metric computed from idle vs. busy time over a sampling interval. It does not depend on the CPU's clock frequency.
 
-- The metric `Percentage Processor Time` is capped at 100%.
+- The metric `Percent Processor Time` is capped at 100%.
 
 - The use of `Current Speed` and `Base Speed` can lead to CPU usage higher than 100%. (See [CPU usage exceeds 100% in Task Manager and Performance Monitor if Intel Turbo Boost is active](https://learn.microsoft.com/en-us/troubleshoot/windows-client/performance/cpu-usage-exceeds-100).)
 
