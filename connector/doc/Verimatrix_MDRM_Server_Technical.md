@@ -37,5 +37,6 @@ The element created with this connector provides several data pages for monitori
 - **Memory**: Reports on memory usage and availability.
 - **Partitions**: Displays disk and partition statistics.
 - **Load**: Shows system load averages and related error indicators.
+- **Net SNMP Extensions**: This page shows Net-SNMP extensions which allow custom scripts or commands to be executed, including their configuration, summary script output and detailed line-by-line output.
 
 Each page is automatically polled at regular intervals. The connector supports SNMP read and write operations for applicable parameters.
