@@ -99,7 +99,7 @@ All the other lines in the file are considered possible data lines. They are spl
 
 The following table provides more information on the different columns:
 
-| **Column** | **Description** |
+| Column | Description |
 |------------|-----------------|
 | **ID**     | A number identifying the device. This must be unique per manager.<br><br>If empty, the line will always create a new element when parsing the file.<br><br>If a number and not already available in the manager, a new element will be created, otherwise the element with that ID will be updated. |
 | **NAME**   | The name of the element. This name will be used to create the DVE element (prefixed with the manager's name.) The alarms will also contain this name. The name must be unique. If it is not, the connector will make it unique by adding a number to the name. |

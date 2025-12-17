@@ -10,7 +10,7 @@ This connector allows you to monitor a configured Moxa ioLogik E1214 device via 
 
 ### Version Info
 
-| **Range** | **Key Features**                 | **Based on** | **System Impact** |
+| Range | Key Features                 | Based on | System Impact |
 |-----------|----------------------------------|--------------|-------------------|
 | 1.0.0.x   | Monitoring of DI and DO channels | -            | -                 |
 

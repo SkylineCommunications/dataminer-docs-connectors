@@ -24,14 +24,14 @@ An outage check will be performed on a polled CPE if the following conditions ar
 
 ### Version Info
 
-| **Range**       | **Description**                                                                        | **DCF Integration** | **Cassandra Compliant** |
+| Range       | Description                                                                        | DCF Integration | Cassandra Compliant |
 |------------------------|----------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x \[Deprecated\] | Initial version.                                                                       | No                  | Yes                     |
 | 1.0.1.x \[SLC Main\]   | Primary and Secondary BGP parameters are now called BGP Neighbor 1 and BGP Neighbor 2. | No                  | Yes                     |
 
 ### Supported modems
 
-| **Range** | **Device**                                                                                                                                                            |
+| Range | Device                                                                                                                                                            |
 |------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | Ciena 3900 series Cisco ME 3400 Cisco 1941 Cisco 887 Cisco ASR920 Cisco ISR1100 series Huawei AR161 Huawei AR169 Telco Systems T-Marc 254 Juniper Networks SRX100/200 |
 

@@ -31,7 +31,7 @@ All data is retrieved over HTTP using the web service API.
 
 ### Exported Connectors
 
-| **Exported Connector**  | **Description**                            |
+| Exported Connector  | Description                            |
 |------------------------|--------------------------------------------|
 | iDirect Pulse Terminal | iDirect Terminals (installation on vessel) |
 

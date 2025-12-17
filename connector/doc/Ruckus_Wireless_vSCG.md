@@ -14,7 +14,7 @@ The different parameters from the device are displayed on multiple pages grouped
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description                                                                                                | DCF Integration | Cassandra Compliant |
 |----------------------|----------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                                                               | No                  | Yes                     |
 | 1.0.1.x              | New range that adds new HTTP connection and creation of DVEs. Supports node redundancy. Supports new firmware. | No                  | Yes                     |
@@ -30,7 +30,7 @@ The different parameters from the device are displayed on multiple pages grouped
 
 ### Exported Connectors
 
-| **Exported Connectors**     | **Description**                                                                                                                                                                        |
+| Exported Connectors     | Description                                                                                                                                                                        |
 |-----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ruckus Wireless vSCG - AP   | Separate connector that represents each individual access point. Shows its general parameters and statistics.                                                                          |
 | Ruckus Wireless vSCG - Zone | Separate connector that represents each individual zone. Shows the general parameters, the access points, and WLANs that belong to that zone along with the data for each one of them. |

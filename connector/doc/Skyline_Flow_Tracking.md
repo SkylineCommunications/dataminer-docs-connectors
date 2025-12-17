@@ -14,7 +14,7 @@ The main goal of the application is to support IP troubleshooting investigations
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                                                                                                                                                               | **Based on** | **System Impact** |
+| Range            | Key Features                                                                                                                                                                                                                                                                               | Based on | System Impact |
 |----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version.<br>- Supported SDNC: Nevion Video iPath.<br>- Supported switch fabric: CISCO Manager.<br>- Supported edge devices: Any connectors that have the "**MC**" property on the physical DCF interfaces populated with a semi-colon-separated list of multicast addresses for that interface. | -            | -                 |
 

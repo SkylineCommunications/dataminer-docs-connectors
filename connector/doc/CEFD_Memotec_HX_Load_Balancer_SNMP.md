@@ -120,7 +120,7 @@ Note: **Traps** **related to load balancer settings are not stored in the table*
 
 The following table displays the traps that are processed by this protocol:
 
-| **Trap**                                                                                      | **OID**                      | **Balancer Setting** |
+| Trap                                                                                      | OID                      | Balancer Setting |
 |-----------------------------------------------------------------------------------------------|------------------------------|----------------------|
 | The unit is starting following power-up or reboot.                                            | 1.3.6.1.4.1.6247.78.10.2.1   | No                   |
 | One or more cores in the unit has exceeded its maximum temperature threshold.                 | 1.3.6.1.4.1.6247.78.10.2.2   | No                   |

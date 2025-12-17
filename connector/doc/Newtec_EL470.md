@@ -21,7 +21,7 @@ The web interface can be accessed if the client machine has access to it.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**            |
+| Range | Device Firmware Version            |
 |------------------|----------------------------------------|
 | 1.7.2.x          | Software version 7.02 software id 6279 |
 | 1.8.25.x         | Software version 8.25 software id 6281 |

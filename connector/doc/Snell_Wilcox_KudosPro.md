@@ -12,7 +12,7 @@ This connector allows the management of the **Snell Wilcox KudosPro** using a se
 
 ### Version Info
 
-| Range     | Description     | **DCF Integration** |
+| Range     | Description     | DCF Integration |
 |------------------|-----------------|---------------------|
 | 1.0.0.x          | Initial version | Yes                 |
 

@@ -12,7 +12,7 @@ This connector monitors the Nevion Ventura VS103 chassis and supported cards thr
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                                                                                                                                               |
+| Range     | Description                                                                                                                                                                                                                                                               |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                                                                                                                                                              |
 | 1.0.1.x              | Added DVE support for VS906 cards.                                                                                                                                                                                                                                            |
@@ -42,7 +42,7 @@ Notes:
 
 ### Exported connectors
 
-| **Exported Connector**        | **Description**                                                 |
+| Exported Connector        | Description                                                 |
 |------------------------------|-----------------------------------------------------------------|
 | Nevion Ventura VS901         | *In range 1.0.0.x* HD-SDI JPEG 2000 compression over GbE        |
 | Nevion Ventura VS902         | *Before range 2.0.1.x* Video router module                      |

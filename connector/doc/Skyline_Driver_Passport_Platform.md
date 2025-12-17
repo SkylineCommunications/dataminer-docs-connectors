@@ -26,7 +26,7 @@ The Skyline Driver Passport Platform uses:
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                 | **Based on** | **System Impact**                                                                                                                                                                      |
+| Range            | Key Features                                                 | Based on | System Impact                                                                                                                                                                      |
 |----------------------|------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                                                 | -            | -                                                                                                                                                                                      |
 | 1.0.1.x [SLC Main]   | Improved scheduling functionality. Supports dynamic simulations. | 1.0.0.9      | Tables Tests (PID 2000) and Simulations (PID 2200) were removed. Check for references to these parameters in the DMS (Visio drawings, Automation scripts, DMS filters, reports, etc.). |
@@ -125,7 +125,7 @@ For each test plan build, test cases are inserted corresponding to each DMAPP us
 
 Below you can find an overview of all execution steps that are executed by the generated TestLink test plan.
 
-| **Execution Step**       | **Category** | **KPI**                                                                                                                                                                    |
+| Execution Step       | Category | KPI                                                                                                                                                                    |
 |--------------------------|--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1\. CPU Info             | Server       | Processor Load Average                                                                                                                                                     |
 | 2\. CPU Info (SL)        | DMA          | Processor Load Average                                                                                                                                                     |

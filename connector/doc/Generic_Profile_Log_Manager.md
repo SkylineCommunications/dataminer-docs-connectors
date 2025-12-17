@@ -42,7 +42,7 @@ A script or connector can write to **parameter 11** of this connector with a ser
 
 For example: \[{ "Timestamp": "2019-02-28T21:18:26.972533+09:00", "ResourceGuid": "2024d578-ea4c-413f-b82e-f61f49ba60e9", "ResourceName": "LSM.1", "FunctionType": "LSM.1", "FunctionDVEName": "Sony LSM PWS-110NM1.LSM.1", "FunctionDVEID": "120302/1709", "ParentElementName": "Sony LSM PWS-110NM1", "ParentElementID": "120302/1708", "ProfileInstanceGuid": "8b1ed2f6-6568-4cca-a774-760981bf1ad9", "ProfileInstanceName": "MyLSM2", "ProfileMetadata": "", "Type": "Manual", "BookingGuid": "-1", "BookingName": "-1", "UserName": "Administrator", "State": "OK", "Custom": "False" }\]
 
-| **Field** | **Description**                                                                                                              |
+| Field | Description                                                                                                              |
 |-----------|------------------------------------------------------------------------------------------------------------------------------|
 | Type      | Can be *Manual* or *Booking,* depending on whether the profile was applied manually or applied from a booking configuration. |
 | State     | Can be *OK* or *Failed*, depending on whether the profile was correctly applied.                                             |

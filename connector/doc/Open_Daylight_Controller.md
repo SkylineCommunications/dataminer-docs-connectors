@@ -18,7 +18,7 @@ The connector communicates through an HTTP protocol.
 
 ### Product Info
 
-| **Range** | **Firmware Version** |
+| Range | Firmware Version |
 |------------------|----------------------|
 | 0.0.0.x          | Unknown              |
 

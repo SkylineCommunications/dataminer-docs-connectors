@@ -23,7 +23,7 @@ When there are changes, data updates are sent by the application using the Signa
 
 ### Product Info
 
-| **Range** | **VICC Application Version** |
+| Range | VICC Application Version |
 |------------------|------------------------------|
 | 1.0.0.x          | V2.0                         |
 | 1.0.1.x          | V2.11.0                      |

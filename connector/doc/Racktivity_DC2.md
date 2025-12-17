@@ -21,7 +21,7 @@ The connector uses **SNMP** to retrieve and update the data of the device. The R
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
+| Range | Device Firmware Version        |
 |------------------|------------------------------------|
 | 1.0.0.x          | RTF0035 v2.1.1.1 Version v0.1.2.67 |
 

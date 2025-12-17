@@ -51,7 +51,7 @@ This page displays the **general status** of the device and **switches**, includ
 
 In order to make the connector functional for BUC and BDC devices, the RF switches are named from 1 to 8 and mapped as follows:
 
-| **BUC**         | **Driver**     | **BDC**         |
+| BUC         | Driver     | BDC         |
 |-----------------|----------------|-----------------|
 | RF Switch \# 14 | RF Switch \# 1 | RF Switch \# 22 |
 | RF Switch \# 15 | RF Switch \# 2 | RF Switch \# 23 |
@@ -62,7 +62,7 @@ In order to make the connector functional for BUC and BDC devices, the RF switch
 | RF Switch \# 20 | RF Switch \# 7 | RF Switch \# 28 |
 | RF Switch \# 21 | RF Switch \# 8 | RF Switch \# 29 |
 
-| **BUC Group 1** | **Driver Group 1** | **BDC Group 1** |
+| BUC Group 1 | Driver Group 1 | BDC Group 1 |
 |-----------------|--------------------|-----------------|
 | RF Switch \# 14 | RF Switch \# 1     | RF Switch \# 22 |
 | RF Switch \# 16 | RF Switch \# 3     | RF Switch \# 24 |

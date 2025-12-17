@@ -12,7 +12,7 @@ The connector is used to monitor a Miravid Telesight.
 
 ### Version Info
 
-| **Range** | **Description**                                   |
+| Range | Description                                   |
 |------------------|---------------------------------------------------|
 | 1.0.0.x          | Initial version                                   |
 | 2.0.0.x          | Review based on 1.0.0.x (table PIDs are the same) |

@@ -14,19 +14,19 @@ The connector will export other connectors depending on the installed racks at t
 
 ### Version Info
 
-| **Range** | **Description**  |
+| Range | Description  |
 |------------------|------------------|
 | 1.0.0.x          | Initial version. |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                |
+| Range | Device Firmware Version                                                                                |
 |------------------|------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | No available information, except for the Network Manager Card version, which is OPVNM-1.0 for the OPV9000. |
 
 ### Exported Connectors
 
-| **Exported Connector** | **Description**                                                       |
+| Exported Connector | Description                                                       |
 |-----------------------|-----------------------------------------------------------------------|
 | opVision OPV9000 Card | Exported connector based on the information from a single opVision card. |
 

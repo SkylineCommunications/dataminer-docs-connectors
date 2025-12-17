@@ -27,7 +27,7 @@ SNMP traps can be retrieved if this is enabled on the device.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                |
+| Range | Device Firmware Version                |
 |------------------|--------------------------------------------|
 | 1.0.0.x          | Compatible with software version 01.05.00. |
 | 1.1.0.x          | Compatible with software version 01.05.00. |

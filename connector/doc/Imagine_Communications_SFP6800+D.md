@@ -36,7 +36,7 @@ The write parameter ranges and discreet values are retrieved from the device and
 
 ### Exported connectors (only available in range 1.2.0.x)
 
-| **Exported Connector**                   | **Description**                                                                                              |
+| Exported Connector                   | Description                                                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Imagine Communications SFP6800+D - Rx1. | Displays HDMI, CMPST, electrical, optical and alarm (signal loss of SFP) information regarding the Rx1 cage. |
 | Imagine Communications SFP6800+D - Rx2. | Displays HDMI, CMPST, electrical, optical and Alarm (signal loss of SFP) information regarding the Rx2 cage. |

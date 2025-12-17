@@ -19,7 +19,7 @@ Every change in the **Service Overview Table** of the probes will be forwarded t
 
 ### Version Info
 
-| **Range**     | **Description** |
+| Range     | Description |
 |----------------------|-----------------|
 | 1.0.0.x [SLC Main]   | Initial version |
 

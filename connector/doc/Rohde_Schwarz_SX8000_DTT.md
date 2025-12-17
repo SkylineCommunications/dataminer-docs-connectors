@@ -12,7 +12,7 @@ With three different timers, all parameters related to the transmitter are polle
 
 ### Version Info
 
-| **Range** | **Description**         | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description         | DCF Integration | Cassandra Compliant |
 |------------------|-------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version         | Yes                 | Yes                     |
 | 2.0.0.x          | Added serial connection | Yes                 | Yes                     |

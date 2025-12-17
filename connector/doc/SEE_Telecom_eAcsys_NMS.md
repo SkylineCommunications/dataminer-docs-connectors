@@ -30,7 +30,7 @@ Finally, this connector will export different connectors based on the retrieved 
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**            |
+| Range | Device Firmware Version            |
 |------------------|----------------------------------------|
 | 1.0.0.x          | Compatible with eAcsys Release R_0.2.6 |
 | 2.0.0.x          | Compatible with eAcsys Release R_0.2.6 |
@@ -39,7 +39,7 @@ Finally, this connector will export different connectors based on the retrieved 
 
 The protocol only supports DVEs for range 2.0.0.x
 
-| **Exported Connector**                      | **Description**                         |
+| Exported Connector                      | Description                         |
 |--------------------------------------------|-----------------------------------------|
 | SEE Telecom eAcsys NMS_X_eACSYS Dual RX US | Dual receiver information for device X. |
 | SEE Telecom eAcsys NMS_X_eACSYS TX DS      | Transmitter information for device X.   |

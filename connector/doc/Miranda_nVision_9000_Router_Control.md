@@ -12,7 +12,7 @@ This connector uses **serial** communication to configure and monitor routers su
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                             | **Based on** | **System Impact**                                                                                                         |
+| Range            | Key Features                                                                             | Based on | System Impact                                                                                                         |
 |----------------------|----------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version                                                                              | -            | -                                                                                                                         |
 | 1.0.1.x [SLC Main]   | Layout adapted and pages renamed.                                                            | -            | Users may not be used to the new layout and existing Visio files may need to be adapted because of the page name changes. |
