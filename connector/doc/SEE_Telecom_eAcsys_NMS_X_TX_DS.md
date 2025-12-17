@@ -10,7 +10,7 @@ This connector is exported by the parent connector [SEE Telecom eAcsys NMS](xref
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**           |
+| Range | Device Firmware Version           |
 |------------------|---------------------------------------|
 | 1.0.0.x          | Compatible with software version 1.5. |
 | 2.0.0.x          | Compatible with software version 1.5. |

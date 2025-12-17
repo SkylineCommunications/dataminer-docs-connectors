@@ -14,7 +14,7 @@ Output options include 4x3G-SDI (two sample interleave & four quadrant), 12G-SDI
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                               | **Based On** | **System Impact** |
+| Range            | Key Features                                                                               | Based On | System Impact |
 |----------------------|------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                                                                                | -            | -                 |
 | 1.0.1.x              | Redundant polling Traps Table SMPTE-2110 Modules Table                                         | 1.0.0.1      |                   |

@@ -43,7 +43,7 @@ There is no redundancy defined.
 
 This connector watches several directories for new files. Once a new file shows up, and based on its location and type, the connector will perform specific actions:
 
-| **Directory**               | **File Type**    | **Action**                                                                                |
+| Directory               | File Type    | Action                                                                                |
 |-----------------------------|------------------|-------------------------------------------------------------------------------------------|
 | ForeTV                      | L2V              | Execute L2V workflow. Create/update asset DOM instance.                                   |
 | ForeTV                      | MAM              | Create/update asset DOM instance. Link files with asset if applicable.                    |

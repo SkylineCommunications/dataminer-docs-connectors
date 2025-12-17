@@ -20,7 +20,7 @@ The data will be offloaded into CSV files and will be aggregated by the CPE Mana
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                               |
+| Range | Device Firmware Version                               |
 |------------------|-----------------------------------------------------------|
 | 1.0.0.x          | Apache Kafka API v1, which is supported since Kafka 0.9.0 |
 

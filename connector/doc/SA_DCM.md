@@ -24,7 +24,7 @@ Note that the two connectors are not compatible.
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                                     | **Based on** | **System Impact**                                                          |
+| Range | Key Features                                                                                     | Based on | System Impact                                                          |
 |-----------|------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------|
 | 1.0.0.x   | Initial SNMP connector. Obsolete.                                                                    | -            | -                                                                          |
 | 2.0.0.x   | IIOP used instead of SNMP.                                                                           | -            | -                                                                          |

@@ -12,7 +12,7 @@ This connector uses SNMP to monitor and configure the Miteq UPB1-XTR.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                                   | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                                                   | No                  | Yes                     |
 | 2.0.0.x [SLC Main]   | **Impacting changes** when moving from another range to this one. Recreated version to match the UX of the Miteq DNB1-XTR 1.0.0.X | No                  | Yes                     |

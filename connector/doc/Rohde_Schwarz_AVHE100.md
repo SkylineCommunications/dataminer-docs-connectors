@@ -19,14 +19,14 @@ This connector was designed to monitor the different properties of the R&S AVHE1
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                 |
+| Range | Device Firmware Version                                                 |
 |------------------|-----------------------------------------------------------------------------|
 | 1.0.0.x          | Dolbyr Digital / Dolbyr Digital Plus Encoder Version 3.10.2 - Build 2971695 |
 | 2.0.0.x          | Dolby Version 1.1.5 - Build 2012-04-09                                      |
 
 ### Exported connectors
 
-| **Exported Protocol - Range 1.0.0.x** | **Description**                                      |
+| Exported Protocol - Range 1.0.0.x | Description                                      |
 |---------------------------------------|------------------------------------------------------|
 | Rohde Schwarz AVHE100 - AVS100        | A separate connector that represents the AVS100 device. |
 | Rohde Schwarz AVHE100 - AVG100        | A separate connector that represents the AVG100 device. |

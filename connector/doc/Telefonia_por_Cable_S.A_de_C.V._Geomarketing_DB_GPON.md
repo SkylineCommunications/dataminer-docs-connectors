@@ -10,7 +10,7 @@ The Telefonica por Cable S.A de C.V. Geomarketing DB GPON connector can be used 
 
 ### Version Info
 
-| **Range** | **Key Features**                                                                      | **Based on** | **System Impact** |
+| Range | Key Features                                                                      | Based on | System Impact |
 |-----------|---------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version. Retrieves information related to the **Splits** and **Subscribers**. | -            | -                 |
 

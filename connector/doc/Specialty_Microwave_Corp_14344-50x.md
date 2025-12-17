@@ -18,7 +18,7 @@ This connector polls the device every five seconds through a serial connection.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                                                            |
+| Range | Device Firmware Version                                                                                                            |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | Information about the device firmware is unavailable. The current implementation is based on Revision 0 of the device's documentation. |
 

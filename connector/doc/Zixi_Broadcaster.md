@@ -20,7 +20,7 @@ The Zixi Broadcaster connector uses HTTP communication to allow users to monitor
 
 ### Product Info
 
-| **Range**        | **Device Firmware Version** |
+| Range        | Device Firmware Version |
 |-------------------------|-----------------------------|
 | 1.0.0.x 1.0.1.x 1.0.2.x | API 1.10                    |
 

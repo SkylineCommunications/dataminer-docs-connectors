@@ -10,7 +10,7 @@ This connector is solely used to switch and monitor the Qligent Vision Linux ser
 
 ### Version Info
 
-| **Range**            | **Key Features**       | **Based on** | **System Impact**    |
+| Range            | Key Features       | Based on | System Impact    |
 |----------------------|------------------------|--------------|----------------------|
 | 1.0.0.x              | Initial version.       | -            | -                    |
 | 1.0.1.x [SLC Main]   | SNMP connection added. | 1.0.0.2      | New SNMP connection. |

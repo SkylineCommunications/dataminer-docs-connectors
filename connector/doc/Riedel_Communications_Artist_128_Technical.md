@@ -15,7 +15,7 @@ This connector uses a **TCP/IP** connection in order to retrieve and configure t
 
 ### Version Info
 
-| **Range**            | **Description**                                                                                                         | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description                                                                                                         | DCF Integration | Cassandra Compliant |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Redundancy for the SERIAL connection is not available. The Serial Redundancy connection does not need to be configured. | No                  | Yes                     |
 | 1.0.1.x              | Redundancy for the SERIAL connection is available. The Serial Redundancy connection will need to be configured.         | No                  | Yes                     |

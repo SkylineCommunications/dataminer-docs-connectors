@@ -20,7 +20,7 @@ The processed data will not be stored on this element but will be forwarded to t
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**    |
+| Range | Device Firmware Version    |
 |------------------|--------------------------------|
 | 1.0.0.x          | RTCP Compound Packet version 4 |
 

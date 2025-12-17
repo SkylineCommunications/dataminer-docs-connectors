@@ -97,7 +97,7 @@ When a KPI item is selected in this diagram view, a pop-up window with parameter
 
 The following Key Point Indicators (KPIs) are calculated on the different levels.
 
-| **KPI**                               | **Description**                                                                                                                                          |
+| KPI                               | Description                                                                                                                                          |
 |---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | PING Status OK                        | The number of DSLAMs with "OK" PING Status.                                                                                                              |
 | PING Status Unreachable               | The number of DSLAMs with "Unreachable" PING Status                                                                                                      |

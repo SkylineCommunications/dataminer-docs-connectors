@@ -12,7 +12,7 @@ With this connector, the FM transmitter device can be monitored via **SNMP** com
 
 ### Version Info
 
-| **Range**     | **Description** |
+| Range     | Description |
 |----------------------|-----------------|
 | 1.0.0.x [SLC Main]   | Initial version |
 
@@ -24,7 +24,7 @@ With this connector, the FM transmitter device can be monitored via **SNMP** com
 
 ### Exported connectors
 
-| **Exported protocol**               | **Description**            |
+| Exported protocol               | Description            |
 |-------------------------------------|----------------------------|
 | Nautel NV5-LT Transmitter Exciter A | Part of controller module. |
 

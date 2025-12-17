@@ -342,14 +342,14 @@ The following example illustrates both options:
 
 ***Inputs***
 
-| **ID** | **Label** |
+| ID | Label |
 |--------|-----------|
 | 1      | Channel 4 |
 | 2      | Film 4    |
 
 ***Outputs***
 
-| **ID** | **Label**       | **Required Tie Line Labels** | **Strict Mode** |
+| ID | Label       | Required Tie Line Labels | Strict Mode |
 |--------|-----------------|------------------------------|-----------------|
 | 10     | PLAYOUT TX 001A | TX                           | False           |
 | 11     | PLAYOUT TX 002A | False                        |                 |
@@ -359,14 +359,14 @@ The following example illustrates both options:
 
 ***Inputs***
 
-| **ID** | **Label**  |
+| ID | Label  |
 |--------|------------|
 | 21     | Film 5     |
 | 22     | Channel 21 |
 
 ***Outputs***
 
-| **ID** | **Label**       | **Required Tie Line Labels** | **Strict Mode** |
+| ID | Label       | Required Tie Line Labels | Strict Mode |
 |--------|-----------------|------------------------------|-----------------|
 | 30     | PLAYOUT TX 001B | TX                           | True            |
 | 31     | PLAYOUT TX 002B | MOD                          | True            |
@@ -374,7 +374,7 @@ The following example illustrates both options:
 
 **Tie Lines**
 
-| **Name**  | **Source Output ID** | **Destination Input ID** | **Priority** | **Label** |
+| Name  | Source Output ID | Destination Input ID | Priority | Label |
 |-----------|----------------------|--------------------------|--------------|-----------|
 | TIELINE 1 | 10                   | 21                       | 1            | TX        |
 | TIELINE 2 | 11                   | 22                       | 2            | TX        |

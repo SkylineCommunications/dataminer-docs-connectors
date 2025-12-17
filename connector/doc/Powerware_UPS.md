@@ -10,7 +10,7 @@ This connector is intended for the monitoring and management of UPS devices from
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based on** | **System Impact**                                              |
+| Range            | Key Features             | Based on | System Impact                                              |
 |----------------------|------------------------------|--------------|----------------------------------------------------------------|
 | 1.0.1.x [SLC Main]   | Added Alarm Page and tables. | 1.0.0.5      | Changed display key to naming to make it Cassandra-compatible. |
 

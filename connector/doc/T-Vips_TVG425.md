@@ -22,7 +22,7 @@ The TVG425 provides gateway functionality to encapsulate MPEG-2 transport stream
 
 ### Product Info
 
-| **Range**        | **Device Firmware Version** |
+| Range        | Device Firmware Version |
 |-------------------------|-----------------------------|
 | 1.0.0.x                 | 1.4.x to 2.6.x              |
 | 1.0.1.x                 |                             |

@@ -8,7 +8,7 @@ The Juniper Networks EX Series connector is an SNMP-based connector used to moni
 
 ### Version Info
 
-| **Range**            | **Key Features**   | **Based on** | **System Impact** |
+| Range            | Key Features   | Based on | System Impact |
 |----------------------|--------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Initial version    | -            | -                 |
 | 1.0.1.x              | New SSH Connection | 1.0.0.2      | -                 |

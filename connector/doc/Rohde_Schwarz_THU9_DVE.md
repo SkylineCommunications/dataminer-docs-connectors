@@ -43,14 +43,14 @@ The information displayed in this connector is divided over seven pages:
 
 ### Product Info
 
-| **Connector Version** | **Device Firmware Version** |
+| Connector Version | Device Firmware Version |
 |--------------------|-----------------------------|
 | 1.0.0.1            | tce900-103250               |
 | 1.1.0.1            | tce900-103250               |
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**                                                                                                                                  |
+| Exported Connector | Description                                                                                                                                  |
 |-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transmitter           | The controller can have multiple transmitters. The necessary transmitters will be exported according to the information the controller receives. |
 
