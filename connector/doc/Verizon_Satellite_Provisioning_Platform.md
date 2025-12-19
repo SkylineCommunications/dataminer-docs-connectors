@@ -12,6 +12,25 @@ The **General** page provides a high-level overview with total item counts per d
 
 ---
 
+## Key Features
+
+- **Automated Data Synchronization**  
+  Keep all Verizon provisioning datasets (e.g., circuits, locations, devices, customers) continuously in sync, ensuring decisions are based on the latest information.
+
+- **Granular Polling Control**  
+  Configure per-dataset polling intervals, enable/disable datasets, and trigger on-demand polls to refresh exactly what you need, when you need it.
+
+- **Actionable Status & Progress Visibility**  
+  Validate data freshness at a glance via total item counts and per-dataset status, reason, and page processing indicators to quickly spot and resolve issues.
+
+- **Reliable File Export Workflow**  
+  Automatically export consolidated datasets to a defined path after polling completes, with manual “Export Now” and clear export status/timestamps for auditability.
+
+- **Secure, Guided Authentication**  
+  Simple login flow with immediate success feedback, reducing setup friction and ensuring the connector only runs when credentials are valid.
+
+---
+
 ## How to Use
 
 ### Creation
