@@ -12,21 +12,6 @@ This connector exports several other connectors based on the information retriev
 
 ## About
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x [Obsolete] | Initial version. | Yes | Yes |
-| 1.0.1.x [Obsolete] | Support for Unicode. **Impact:** Element data and trend data need to be removed entirely. | Yes | Yes |
-| 1.0.2.x [SLC Main] | Support for additional modules. **Impact:** Duplicate description of 2 parameters, very small impact. | Yes | Yes |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 3.08.29                |
-| 1.0.1.x   | 3.08.29                |
-
 ### Exported components
 
 | Exported Connector                                                                                         | Description       |
@@ -63,35 +48,28 @@ SNMP Settings:
 
 ## Usage
 
-### General Information
-
-This is the default page of the connector. It is used for two main purposes: viewing general information about the hardware and controlling the DVE creation process.
-
-To **create DVE** elements, click the buttons for the corresponding cards. You can also create all the viable DVEs with the **Create** button on the **Modules** page. For any card that does not have a DVE connector, no element will be created.
-
-### DVE Pages
-
-Each type of DVE card can be managed on a specific subpage.
-
 ### System
 
 This page contains parameters related to the **Main Control Processor**, such as status, temperature, hardware and software revision.
 
-### Foxcom General
+### General
 
 This page contains parameters related to files and commands, such as IP address, download status, progress and device slot. This information is not exported to the child elements and is only available here. The page contains both the general status and the configuration of system management.
+
+### PSU
+
+This page contains power supply information, specifically the **alarm status** for all the power supplies in the system. You can also check the output information here, specifically the **Voltage**, **Current**, and **Power** output of the system's power supplies. 
+You can also create DVEs for the PSUs per row level or create them all at once or clear them all at once with the *Create All* or *Clear All* buttons respectively.
 
 ### Slots
 
 This page contains all the status and configuration tables for each slot. You can reset the modules on this page. You can also handle the time configuration for the cards and check their **running temperatures**, different channel statuses, **voltages**, and input/output **power**.
-
-### PSU
-
-This page contains power supply information, specifically the **alarm status** for all the power supplies in the system. You can also check the output information here, specifically the **Voltage**, **Current**, and **Power** output of the system's power supplies.
+You can also create DVEs for the slot cards per row level.
 
 ### Modules
 
 This page contains the tables used to export the DVEs.
+You can also create them all at once or clear them all at once with the *Create All* or *Clear All* buttons respectively.
 
 ## DataMiner Connectivity Framework
 
