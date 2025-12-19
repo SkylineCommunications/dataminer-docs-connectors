@@ -4,13 +4,13 @@ uid: Connector_help_Foxcom_Platinum_PL700_Manager
 
 # Foxcom Platinum PL700 Manager
 
-This connector can be used to manage and control fiberoptic cards, redundancy switches, power supplies and communication cards. It uses an SNMP connection to communicate with the device.
+## About
+
+This connector can be used to manage and control fiber-optic cards, redundancy switches, power supplies, and communication cards. It uses an SNMP connection to communicate with the device.
 
 The connector supports alarm logging, including transmitter and receiver RF and optical faults. Monitoring features include ambient temperature and RF/optical input and output power, as well as all the usual general parameters available for this type of hardware, such as the part and device number.
 
 This connector exports several other connectors based on the information retrieved from the hardware. The list of exported connectors can be found in the "Exported components" section of this page.
-
-## About
 
 ### Exported components
 
@@ -54,22 +54,21 @@ This page contains parameters related to the **Main Control Processor**, such as
 
 ### General
 
-This page contains parameters related to files and commands, such as IP address, download status, progress and device slot. This information is not exported to the child elements and is only available here. The page contains both the general status and the configuration of system management.
+This page contains parameters related to files and commands, such as IP address, download status, progress, and device slot. This information is not exported to the child elements and is only available here. The page contains both the general status and the configuration of system management.
 
 ### PSU
 
-This page contains power supply information, specifically the **alarm status** for all the power supplies in the system. You can also check the output information here, specifically the **Voltage**, **Current**, and **Power** output of the system's power supplies. 
-You can also create DVEs for the PSUs per row level or create them all at once or clear them all at once with the *Create All* or *Clear All* buttons respectively.
+This page contains power supply information, specifically the **alarm status** for all the power supplies in the system, as well as output information, specifically the **Voltage**, **Current**, and **Power** output of the system's power supplies.
+
+You can also create DVEs for the PSUs per row level here. With the **Create All** or **Clear All** buttons, you can create all DVEs at once or clear them all at once, respectively.
 
 ### Slots
 
-This page contains all the status and configuration tables for each slot. You can reset the modules on this page. You can also handle the time configuration for the cards and check their **running temperatures**, different channel statuses, **voltages**, and input/output **power**.
-You can also create DVEs for the slot cards per row level.
+This page contains all the status and configuration tables for each slot. You can reset the modules here. You can also handle the time configuration for the cards and check their **running temperatures**, different channel statuses, **voltages**, and input/output **power**. Finally, you can also create DVEs for the slot cards per row level.
 
 ### Modules
 
-This page contains the tables used to export the DVEs.
-You can also create them all at once or clear them all at once with the *Create All* or *Clear All* buttons respectively.
+This page contains the tables used to export the DVEs. With the **Create All** or **Clear All** buttons, you can create all DVEs at once or clear them all at once, respectively.
 
 ## DataMiner Connectivity Framework
 
@@ -93,4 +92,3 @@ Virtual fixed interfaces:
 #### Internal Connections
 
 - Between **Input** and **Output** interfaces, an internal connection is created.
-
