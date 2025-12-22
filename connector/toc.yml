@@ -4021,6 +4021,9 @@
   items:
   - name: Foxcom Platinum PL700 Manager
     topicUid: Connector_help_Foxcom_Platinum_PL700_Manager
+    items:
+    - name: Foxcom Platinum PL700 Manager Technical
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_Technical
   - name: Foxcom Platinum PL700 Manager - PL2 7220R
     topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220R
   - name: Foxcom Platinum PL700 Manager - PL2 7220T
