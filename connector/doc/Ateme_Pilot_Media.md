@@ -8,6 +8,9 @@ The Ateme Pilot Media enables business logic, metadata-driven automation for med
 
 It uses schedule-aware prioritization of workflows to ensure service-level requirements are met while also lowering operational costs.
 
+This driver is compliant only with end of life Ateme Pilot Media from 2022-2023.
+This driver is not compliant with Pilot Media launched in 2024 by Ateme.
+
 ## About
 
 ### Version Info
