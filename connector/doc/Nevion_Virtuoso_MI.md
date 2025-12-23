@@ -25,5 +25,5 @@ This is a DataMiner connector for the Nevion Virtuoso MI, a media server designe
 ### Prerequisites
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Nevion_Virtuoso_MI_technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Nevion_Virtuoso_MI_Technical).
 
