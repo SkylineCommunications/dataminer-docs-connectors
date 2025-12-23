@@ -6920,6 +6920,9 @@
     topicUid: Connector_help_Nevion_Virtuoso_FA
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
+    items:
+    - name: Nevion Virtuoso MI Technical
+      topicUid: Connector_help_Nevion_Virtuoso_MI_Technical
   - name: Nevion Virtuoso RE
     topicUid: Connector_help_Nevion_Virtuoso_RE
 - name: Newtec
