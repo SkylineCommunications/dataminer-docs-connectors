@@ -13,6 +13,13 @@ The Ateme Pilot Manager provides comprehensive monitoring and control for Ateme 
 - **Centralized monitoring**: Monitor all your Ateme products in one place.
 - **Redundancy**: Ensures continuous delivery and minimal service disruption through automatic failure detection and recovery.
 
+### Version Info
+
+| Range              | Key Features                           | Based on | System Impact |
+|--------------------|----------------------------------------|----------|---------------|
+| 1.0.0.x [SLC Main] | Initial version. Firmware version 4.0.0| -        | -             |
+
+
 ## Configuration
 
 ### Connections
