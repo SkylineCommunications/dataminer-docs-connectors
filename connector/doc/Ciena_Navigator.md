@@ -38,8 +38,6 @@ Ciena Navigator is a DataMiner connector that integrates with Ciena platforms to
 
 ### Prerequisites
 
-- **DataMiner version**: Use a currently supported DataMiner Main/Feature Release compatible with HTTP connectors.
-- **Access**: Network access to the device/API endpoint (firewall and routing).
 - **Credentials**: Valid API credentials or tokens if required by the device.
 
 > [!NOTE]
