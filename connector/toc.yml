@@ -5047,7 +5047,10 @@
 - name: IEC 60870
   items:
   - name: IEC 60870 5-104
-    topicUid: Connector_help_IEC_60870_5-104_Technical
+    topicUid: Connector_help_IEC_60870_5-104
+    items:
+    - name: IEC 60870 5-104 Technical
+      topicUid: Connector_help_IEC_60870_5-104_Technical
 - name: IHSE
   items:
   - name: IHSE Draco Tera
