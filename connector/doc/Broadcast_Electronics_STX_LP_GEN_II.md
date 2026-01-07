@@ -21,4 +21,3 @@ The Broadcast Electronics STX LP GEN II is designed for continuous monitoring. W
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Broadcast_Electronics_STX_LP_GEN_II_Technical).
-
