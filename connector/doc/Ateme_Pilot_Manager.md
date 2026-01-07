@@ -8,6 +8,12 @@ uid: Connector_help_Ateme_Pilot_Manager
 
 The Ateme Pilot Manager provides comprehensive monitoring and control for Ateme products and solutions, whether deployed on-premises or in the cloud. It offers intuitive operational views for real-time monitoring and service delivery control, with automatic failure detection and recovery. This guarantees continuous delivery and minimal service disruption. At present, Ateme Pilot Manager supports Titan Live, Titan Edge, and Titan Mux products.
 
+### Product Info
+
+| Range | Supported Firmware |
+| -- | -- |
+| 1.0.0.x | 4.0.0 |
+
 ## Key Features
 
 - **Centralized monitoring**: Monitor all your Ateme products in one place.
@@ -15,13 +21,9 @@ The Ateme Pilot Manager provides comprehensive monitoring and control for Ateme 
 
 ## Configuration
 
-### Connections
+### HTTP Connection
 
-#### HTTP Connection - Main
-
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
+When you create a DataMiner element using this connector in DataMiner Cube, you will need to specify the following details for the HTTP connection:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *80*).
