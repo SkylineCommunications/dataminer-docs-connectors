@@ -4037,26 +4037,29 @@
   items:
   - name: Foxcom Platinum PL700 Manager
     topicUid: Connector_help_Foxcom_Platinum_PL700_Manager
-  - name: Foxcom Platinum PL700 Manager - PL2 7220R
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220R
-  - name: Foxcom Platinum PL700 Manager - PL2 7220T
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220T
-  - name: Foxcom Platinum PL700 Manager - PL7011
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7011
-  - name: Foxcom Platinum PL700 Manager - PL7220R
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220R
-  - name: Foxcom Platinum PL700 Manager - PL7220T
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220T
-  - name: Foxcom Platinum PL700 Manager - PL7230R
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230R
-  - name: Foxcom Platinum PL700 Manager - PL7230T
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230T
-  - name: Foxcom Platinum PL700 Manager - PL7240R
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240R
-  - name: Foxcom Platinum PL700 Manager - PL7240T
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240T
-  - name: Foxcom Platinum PL700 Manager - PL7611
-    topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7611
+    items:
+    - name: Foxcom Platinum PL700 Manager Technical
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_Technical
+    - name: Foxcom Platinum PL700 Manager - PL2 7220R
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220R
+    - name: Foxcom Platinum PL700 Manager - PL2 7220T
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL2_7220T
+    - name: Foxcom Platinum PL700 Manager - PL7011
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7011
+    - name: Foxcom Platinum PL700 Manager - PL7220R
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220R
+    - name: Foxcom Platinum PL700 Manager - PL7220T
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7220T
+    - name: Foxcom Platinum PL700 Manager - PL7230R
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230R
+    - name: Foxcom Platinum PL700 Manager - PL7230T
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7230T
+    - name: Foxcom Platinum PL700 Manager - PL7240R
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240R
+    - name: Foxcom Platinum PL700 Manager - PL7240T
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7240T
+    - name: Foxcom Platinum PL700 Manager - PL7611
+      topicUid: Connector_help_Foxcom_Platinum_PL700_Manager_-_PL7611
   - name: Foxcom Platinum PL72202R
     topicUid: Connector_help_Foxcom_Platinum_PL72202R
   - name: Foxcom Platinum PL72202T
