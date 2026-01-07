@@ -10477,6 +10477,8 @@
     topicUid: Connector_help_Verizon_PLM_Solution
   - name: Verizon Reports and Dashboards Solution
     topicUid: Connector_help_Verizon_Reports_and_Dashboards_Solution
+  - name: Verizon Satellite Provisioning Platform
+    topicUid: Connector_help_Verizon_Satellite_Provisioning_Platform
   - name: Verizon VSat Database Platform
     topicUid: Connector_help_Verizon_VSat_Database_Platform
   - name: Verizon VSat Platform Manager
