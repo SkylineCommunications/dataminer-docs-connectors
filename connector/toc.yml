@@ -1870,6 +1870,13 @@
   items:
   - name: Broadcast Automation Systems Equinox TS
     topicUid: Connector_help_Broadcast_Automation_Systems_Equinox_TS
+- name: Broadcast Electronics
+  items:
+  - name: Broadcast Electronics STX LP GEN II
+    topicUid: Connector_help_Broadcast_Electronics_STX_LP_GEN_II
+    items:
+    - name: Broadcast Electronics STX LP GEN II Technical
+      topicUid: Connector_help_Broadcast_Electronics_STX_LP_GEN_II_Technical
 - name: Broadcast Tools Site Sentinel
   topicUid: Connector_help_Broadcast_Tools_Site_Sentinel
   items:
