@@ -29,10 +29,6 @@ SNMP CONNECTION:
 
 To make sure the connector can retrieve data, fill in the **Login Credentials** of the device on the **Settings** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
