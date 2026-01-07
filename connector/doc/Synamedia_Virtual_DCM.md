@@ -8,16 +8,6 @@ The Synamedia Virtual DCM is a device that represents virtualized and software-b
 
 ## About
 
-### Version Info
-
-| Range                | Key Features                                                                | Based on     | System Impact                   |
-|----------------------|-----------------------------------------------------------------------------|--------------|---------------------------------|
-| 1.0.0.x              | Initial version: SRT and Zixi reads and writes.                             | -            | -                               |
-| 1.0.1.x [SLC Main]   | Changed layout. Added Alarms Table.                                         | 1.0.0.3      | -                               |
-| 1.0.2.x              | Changed protocol option to unicode.                                         | 1.0.1.35     | -                               |
-| 1.0.3.x              | Changed Primary Key formats for PID Tables.                                 | 1.0.2.10     | Potential loss of trending data |
-| 1.0.4.x              | Changed Primary Key format for Output TS Auto Pass Rules TS Auto Pass Rules.| 1.0.3.1      | Potential loss of trending data |
-
 ### Product Info
 
 | Range     | Supported Firmware     |
@@ -28,16 +18,6 @@ The Synamedia Virtual DCM is a device that represents virtualized and software-b
 | 1.0.2.x   | V23_00_01              |
 | 1.0.3.x   | V23_00_01              |
 | 1.0.4.x   | V23_00_01              |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.4.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
