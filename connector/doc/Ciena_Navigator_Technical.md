@@ -34,7 +34,12 @@ HTTP CONNECTION:
 
 ### Initialization
 
-If authentication is required, configure the credentials or tokens on the card immediately after creation. Ensure the device/API endpoint is reachable and any required headers are set via parameters.
+After element creation, configure the API credentials on the **Configuration** page:
+
+- **User Name**: Enter the user name required to authenticate with the Ciena Navigator API.
+- **Password**: Enter the password required to authenticate with the Ciena Navigator API.
+
+Once credentials are configured, the connector automatically acquires and manages authentication tokens. Ensure the device/API endpoint is reachable before enabling polling.
 
 ### Web Interface
 
@@ -44,41 +49,32 @@ The web interface is only accessible when the client machine has network access 
 
 If redundancy is configured, ensure both endpoints are reachable and that failover conditions are defined according to the connector’s parameters. Verify alarms and KPIs continue on failover.
 
-### Automation Scripts
-
-If Automation scripts are used (e.g. provisioning or bulk polling adjustments), configure and link them to the element as required.
-
-### Correlation rules
-
-If Correlation is applicable (e.g. grouping related alarms across devices), configure correlation rules to reflect service impact.
-
-### Visio Files
-
-If customized visualizations are required, attach Visio files to the element to display status and KPIs on shapes.
-
-### Report Templates
-
-If reporting is needed, associate report templates to summarize KPIs and health over time.
-
-### Dashboards
-
-Create dashboards to visualize key metrics, alarms, and states for operations teams.
-
 ## How to use
 
-- **Communication**: HTTP requests are used to retrieve device information and KPIs.
-- **After creation**: Set credentials or tokens if required, verify polling succeeds, and confirm alarms/trending are active.
-- **Monitoring**: Use dashboards to track critical KPIs. Use the Alarm Console for actionable events.
-- **Stream Viewer**: If applicable, verify requests/responses during troubleshooting.
-- **Tips**: Validate firewall, certificates (for HTTPS), and proxy bypass settings (`BypassProxy` as needed).
+### Communication
 
-## DataMiner Connectivity Framework
+HTTP requests are used to retrieve device information and KPIs. Token acquisition occurs automatically when credentials are configured.
 
-If DCF is supported in the connector range, configure interfaces and connections via the DataMiner DCF UI or compatible manager connectors.
+### After creation
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+1. Configure **User Name** and **Password** on the **Configuration** page.
+2. Click the **Polling Config...** button on the Configuration page to access the **Polling Configuration** subpage.
+3. Enable polling for each data set (Network Constructs) by setting the **Admin Status** column to *Enabled*.
+4. Optionally adjust the **Interval** for each data set to control polling frequency.
+5. Use the **Poll** button in the Polling Manager table to manually trigger immediate data retrieval for a specific data set.
+
+### Monitoring
+
+- View the total number of network constructs on the **General** page.
+- Browse detailed network construct information on the **Network Constructs** page.
+- Use the Alarm Console for actionable events.
+
+### Troubleshooting
+
+- Check the **Last Poll Status** and **Last Poll Status Info** columns in the Polling Manager table to diagnose any polling issues.
 
 ## Notes
 
 - Ensure API rate limits and paging are respected if the source enforces them.
 - For secure environments, validate TLS settings and certificate trust.
+- The connector automatically manages authentication tokens. If credentials are changed, the token is automatically refreshed on the next request.
