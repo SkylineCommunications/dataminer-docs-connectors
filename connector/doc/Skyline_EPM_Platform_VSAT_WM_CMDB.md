@@ -63,4 +63,3 @@ This connector reads device inventory data from JSON files, processes mapping co
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_EPM_Platform_VSAT_WM_CMDB_Technical).
-
