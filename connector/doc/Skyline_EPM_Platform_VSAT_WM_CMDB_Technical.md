@@ -6,7 +6,7 @@ uid: Connector_help_Skyline_EPM_Platform_VSAT_WM_CMDB_Technical
 
 ## About
 
-The **Skyline EPM Platform VSAT WM CMDB** connector is a workflow manager that handles file-based provisioning for the CMDB(Customer Management Database) data management within the system. This connector reads device inventory data from JSON files, processes mapping configurations, and generates provisioning output files for connectors.
+The **Skyline EPM Platform VSAT WM CMDB** connector is a workflow manager that handles file-based provisioning for the CMDB (Customer Management Database) data management within the system. This connector reads device inventory data from JSON files, processes mapping configurations, and generates provisioning output files for connectors.
 
 ## Configuration
 
@@ -20,27 +20,23 @@ This connector uses a virtual connection and does not require any input during e
 
 After creating the element, configure the following parameters on the **Configuration** page:
 
-- **File Handling**: Enable this toggle to activate the file provisioning logic.
-
+- **File Handling**: Enable this setting to activate the file provisioning logic.
 - **Provisioning Interval**: Set the interval (in seconds) for how often the provisioning logic should run. The default is 20 seconds, with a range of 10 seconds to 1 day.
-
 - **Mapping File Import Path**: Specify the path to the JSON mapping instruction file that defines how source data fields are transformed to output fields.
-
-- **User Name** and **Password**: If using remote file locations, provide the credentials for network share access. The username can be in the format `DOMAIN\username` or just `username`.
+- **User Name** and **Password**: If remote file locations are used, provide the credentials for network share access. The username can be in the format `DOMAIN\username` or just `username`.
 
 #### Import Configuration
 
-Access the **Import Configuration** subpage via the page button on the Configuration page to configure:
+Go to the **Import Configuration** subpage via the page button on the Configuration page to configure the following parameters:
 
 - **Connector File Import Directory Type**: Select *Local* or *Remote* depending on where the CC (Circuit Configuration) files are located.
 - **Connector File Import Path**: Specify the folder path containing the CC files (XML or CSV format with `_CC` suffix).
-
 - **Global File Import Directory Type**: Select *Local* or *Remote* depending on where the inventory JSON file is located.
 - **Global File Import Path**: Specify the path to the inventory JSON file.
 
 #### Export Configuration
 
-Access the **Export Configuration** subpage via the page button on the Configuration page to configure:
+Access the **Export Configuration** subpage via the page button on the Configuration page to configure the following parameters:
 
 - **File Export Directory Type**: Select *Local* or *Remote* depending on where the output CP (Circuit Provisioning) files should be written.
 - **File Export Path**: Specify the output folder path where generated JSON files will be saved.
@@ -49,9 +45,9 @@ Access the **Export Configuration** subpage via the page button on the Configura
 
 ### General Page
 
-The **General** page displays the current provisioning status and allows manual triggering:
+The **General** page displays the current provisioning status and allows manual triggering of the provisioning:
 
-- **Provisioning Status**: Shows the current state (Idle, Processing, or Error).
+- **Provisioning Status**: Shows the current state (*Idle*, *Processing*, or *Error*).
 - **Provisioning Execution Timer**: Displays how long the last import/export operation took.
 - **Last Execution Time**: Shows when the provisioning logic last ran.
 - **Apply Provisioning**: Button to manually trigger the provisioning process.
@@ -60,11 +56,11 @@ The **General** page displays the current provisioning status and allows manual 
 
 The **Configuration** page contains all settings required for the connector to operate:
 
-- Enable or disable file handling
-- Set the provisioning interval
-- Configure the mapping file path
-- Set up remote access credentials
-- Access Import and Export configuration subpages
+- Enable or disable file handling.
+- Set the provisioning interval.
+- Configure the mapping file path.
+- Set up remote access credentials.
+- Access Import and Export configuration subpages.
 
 ### Automated Processing
 
@@ -76,7 +72,7 @@ When **File Handling** is enabled, the connector automatically:
 1. Applies the mapping rules to transform data fields.
 1. Generates output JSON files with a `_CP` suffix in the export folder.
 
-The process runs at the configured **Provisioning Interval** and can also be triggered manually via the **Apply Provisioning** button.
+The process runs at the configured **provisioning interval** and can also be triggered manually via the **Apply Provisioning** button.
 
 ### File Format Requirements
 
@@ -103,7 +99,7 @@ The connector supports two CC file formats:
 - **XML format**: Must contain `Remotes/Remote/Name` elements with the device names.
 - **CSV format**: Must include a `Name` column header with the device names.
 
-Files must have a `_CC` suffix in the filename (e.g., `DMA_EID_CC.xml` or `ElementName_CC.csv`).
+Files must have a `_CC` suffix in the filename (e.g. `DMA_EID_CC.xml` or `ElementName_CC.csv`).
 
 ### Mapping JSON File
 
@@ -123,7 +119,7 @@ The mapping file is a JSON configuration that transforms source inventory data i
 
 | Property | Type | Description |
 |----------|------|-------------|
-| `emitArray` | string | **Required**. The name of the root array in the output JSON (e.g., `"circuits"`). |
+| `emitArray` | string | **Required**. The name of the root array in the output JSON (e.g. `"circuits"`). |
 | `fields` | array | **Required**. Array of field mapping rules for simple properties. |
 | `arrays` | array | **Required**. Array of mapping rules for nested arrays. |
 
@@ -131,7 +127,7 @@ The mapping file is a JSON configuration that transforms source inventory data i
 
 Each entry in the `fields` array defines how a single output property is populated.
 
-##### Option 1: Using `from` (Copy from Source)
+##### Option 1: Using 'from' (Copy from Source)
 
 Copies a value from the source data to the output:
 
@@ -142,10 +138,10 @@ Copies a value from the source data to the output:
 | Property | Type | Description |
 |----------|------|-------------|
 | `to` | string | **Required**. The output property name. Supports dot notation for nested objects. |
-| `from` | string | **Required** (if no `const`). Path to the source value. Must start with `src.` (e.g., `"src.circuitAlias"`) for circuitAlias|
+| `from` | string | **Required** (if no `const`). Path to the source value. Must start with `src.` (e.g. `"src.circuitAlias"`) for circuitAlias. |
 | `default` | any | Optional. Value to use if the source path returns null or is not found. |
 
-##### Option 2: Using `const` (Constant Value)
+##### Option 2: Using 'const' (Constant Value)
 
 Sets a fixed value in the output:
 
@@ -160,13 +156,13 @@ Sets a fixed value in the output:
 | `const` | any | **Required** (if no `from`). A constant value (`true`, `false`, `null`, string, number, array, or object). |
 
 > [!IMPORTANT]
-> A field rule must have either `from` OR `const`, but **not both**.
+> A field rule must have either `from` or `const`, but **not both**.
 
 #### Path Syntax
 
-##### Source Paths (`src.`)
+##### Source Paths (src.)
 
-Use `src.` prefix to reference the root source record:
+Use the `src.` prefix to reference the root source record:
 
 ```json
 { "to": "customerName", "from": "src.customerName" }
@@ -217,7 +213,7 @@ The `arrays` section transforms source arrays into output arrays:
 | Property | Type | Description |
 |----------|------|-------------|
 | `to` | string | **Required**. Output array property name. |
-| `from` | string | **Required**. Source array path (e.g., `src.devices`). |
+| `from` | string | **Required**. Source array path (e.g. `src.devices`). |
 | `itemFields` | array | **Required**. Field rules applied to each array item. |
 
 ##### Item Field Path Prefixes
@@ -262,14 +258,14 @@ The `arrays` section transforms source arrays into output arrays:
 
 #### Validation Rules
 
-The connector validates the mapping file. The rules must be met:
+The connector validates the mapping file. These rules must be applied:
 
-1. `emitArray` must be a non-empty string
-1. `fields` must be present (can be empty)
-1. `arrays` must be present (can be empty)
-1. Each field rule must have a `to` property
-1. Each field rule must have either `from` OR `const` (not both)
-1. Each array rule must have `to`, `from`, and `itemFields`
+1. `emitArray` must be a non-empty string.
+1. `fields` must be present (can be empty).
+1. `arrays` must be present (can be empty).
+1. Each field rule must have a `to` property.
+1. Each field rule must have either `from` or `const` (not both).
+1. Each array rule must have `to`, `from`, and `itemFields`.
 
 #### Complete Example
 
@@ -316,5 +312,5 @@ The connector validates the mapping file. The rules must be met:
 ## Notes
 
 - The connector requires DataMiner version **10.3.0.0 - 12752** or higher.
-- When using remote file paths, ensure the configured credentials have appropriate read/write permissions on the network shares.
-- Output files are named by replacing the `_CC` suffix with `_CP` (e.g., `Name_CC.xml` generates `Name_CP.json`).
+- When remote file paths are used, ensure the configured credentials have appropriate read/write permissions on the network shares.
+- Output files are named by replacing the `_CC` suffix with `_CP` (e.g. `Name_CC.xml` generates `Name_CP.json`).
