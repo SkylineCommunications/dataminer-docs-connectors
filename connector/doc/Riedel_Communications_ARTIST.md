@@ -22,31 +22,31 @@ uid: Connector_help_Riedel_Communications_ARTIST
 
 **Challenge**: Coordinating complex, fast-paced productions across multiple studios, control rooms, and OB trucks.
 
-**Solution**: ARTIST enables seamless, decentralized communication between camera operators, producers, talent, and technical directors — even across remote locations — using a hybrid of IP and legacy infrastructure. DataMiner enhances this by providing unified control and visibility across modular matrix mainframes.
+**Solution**: The DataMiner connector provides centralized monitoring and control of ARTIST matrix mainframes, allowing broadcast engineers to oversee communications infrastructure across multiple locations from a single operational platform.
 
 ### Use Case 2: Motorsports & Formula 1
 
 **Challenge**: Delivering real-time, interference-free comms across teams, pit crews, race control, and media with zero downtime.
 
-**Solution**: Riedel ARTIST, in combination with Bolero, forms a resilient comms network with encrypted, redundant links and crystal-clear audio under extreme noise conditions. DataMiner ensures real-time monitoring and logging for high reliability.
+**Solution**: DataMiner enables continuous monitoring and logging of ARTIST systems used alongside Bolero, ensuring rapid fault detection and high operational reliability during live events.
 
 ### Use Case 3: Theater & Performing Arts
 
 **Challenge**: Managing scene transitions, lighting, sound, and stage direction with perfect timing.
 
-**Solution**: ARTIST provides reliable wired/wireless comms between FOH, backstage, and technical crews with flexible routing and user roles. DataMiner enhances operational efficiency by streamlining configuration and monitoring.
+**Solution**: The connector allows technical teams to monitor and adjust ARTIST configurations efficiently, supporting smooth coordination between FOH, backstage, and technical crews.
 
 ### Use Case 4: Aerospace & Space Launch Centers
 
 **Challenge**: High-stakes coordination between mission control, engineers, and launch site operators.
 
-**Solution**: ARTIST ensures redundant, high-reliability communication paths with real-time monitoring, logging, and failover to meet strict operational standards. DataMiner provides advanced configuration and troubleshooting capabilities.
+**Solution**: DataMiner delivers centralized visibility, configuration, and troubleshooting for ARTIST systems, supporting redundant communication paths and strict operational requirements.
 
 ### Use Case 5: Esports & Gaming Events
 
 **Challenge**: Handling multilingual comms between production crews, on-air talent, referees, and players.
 
-**Solution**: ARTIST provides scalable audio routing and integrated intercom across broadcast, event, and remote teams, while supporting IP and third-party gear. DataMiner offers enhanced monitoring and configuration for seamless operations.
+**Solution**: The connector integrates ARTIST into a unified DataMiner monitoring environment, ensuring reliable communication management across production, event, and remote teams.
 
 ## Technical Reference
 
