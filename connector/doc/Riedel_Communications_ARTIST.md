@@ -10,11 +10,11 @@ uid: Connector_help_Riedel_Communications_ARTIST
 
 ## Key Features
 
-- **Decentralized & Scalable Architecture**: Connect multiple nodes via fiber or IP together with seamless integration across facilities, regions, or campuses.
-- **Non-Blocking Digital Audio Routing**: Up to 1024 x 1024 full-duplex ports per node with real-time, ultra-low latency routing.
-- **IP-Native Connectivity**: Works with AES67, Dante, ST 2110
-- **Modular Design**: Customize for any scale or use case (AES, MADI, VoIP, analog, Dante, and more)
-- **DataMiner Integration**: Utilize the DataMiner connector, which uses a TCP/IP connection to retrieve and configure the matrix, enhancing management and operational efficiency.
+- **Unified Monitoring & Control via DataMiner**: Provides a single-pane-of-glass view to monitor, control, and configure distributed audio routing matrices across multiple sites and nodes.
+- **Centralized Management for Decentralized Systems**: The connector aggregates status, routing, and configuration data from multiple nodes over IP, enabling efficient operation of large-scale, geographically dispersed deployments.
+- **Real-Time Matrix Visibility & Control**: Exposes full crosspoint status, port utilization, and routing changes in real time within DataMiner, supporting fast troubleshooting and operational confidence.
+- **Protocol-Agnostic Abstraction**: The connector normalizes underlying audio technologies (AES67, Dante, ST 2110, MADI, analog, etc.) into a consistent DataMiner model, simplifying workflows regardless of transport type.
+- **Secure TCP/IP-Based Integration**: Uses a robust TCP/IP interface to retrieve status and apply configuration changes, enabling automation, alarm handling, and integration into broader DataMiner orchestration and analytics workflows.
 
 ## Use Cases
 
