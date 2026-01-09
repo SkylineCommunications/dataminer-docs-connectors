@@ -8839,6 +8839,11 @@
     items:
     - name: Skyline EPM Platform VSAT iDirect Technical
       topicUid: Connector_help_Skyline_EPM_Platform_VSAT_iDirect_Technical
+  - name: Skyline EPM Platform VSAT WM CMDB
+    topicUid: Connector_help_Skyline_EPM_Platform_VSAT_WM_CMDB
+    items:
+    - name: Skyline EPM Platform VSAT WM CMDB Technical
+      topicUid: Connector_help_Skyline_EPM_Platform_VSAT_WM_CMDB_Technical
   - name: Skyline EVS Cerebrum Performance Monitor
     topicUid: Connector_help_Skyline_EVS_Cerebrum_Performance_Monitor
   - name: Skyline Example Serial Client Advanced
