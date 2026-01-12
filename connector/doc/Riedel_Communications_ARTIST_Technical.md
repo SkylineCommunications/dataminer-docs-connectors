@@ -4,27 +4,15 @@ uid: Connector_help_Riedel_Communications_ARTIST_Technical
 
 # Riedel Communications ARTIST
 
-The **Riedel Communications ARTIST** connector can be used to poll and configure the data from a Riedel system.
-
 ## About
 
-### Version Info
-
-| Range | Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [SLC Main] | - Ports<br/>- Virtual Ports<br/>- Keys<br/>- Virtual Keys<br/>- Conferences<br/>- Groups<br/>- Functions | - | - |
+The **Riedel Communications ARTIST** connector can be used to poll and configure the data from a Riedel system.
 
 ### Product Info
 
 | Range   | Supported Firmware |
 |---------|--------------------|
 | 1.0.0.x | 8.8.RR1            |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
@@ -71,7 +59,7 @@ In case your Riedel ARTIST system does not consist of a failover pair, provide t
 
 ## How to use
 
-The Riedel ARTIST system comes with many types of information and data that can be provisioned (create, update and delete). To make the provisioning as user-friendly and straightforward possible, the configuration of these data types is available via designated right-click menus, which are documented in detail below.
+The Riedel ARTIST system comes with many types of information and data that can be provisioned (create, update, and delete). To make the provisioning as user-friendly and straightforward possible, the configuration of these data types is available via designated right-click menus, which are documented in detail below.
 
 ### Ports
 

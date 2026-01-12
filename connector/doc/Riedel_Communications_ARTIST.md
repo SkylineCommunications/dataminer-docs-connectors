@@ -10,11 +10,11 @@ uid: Connector_help_Riedel_Communications_ARTIST
 
 ## Key Features
 
-- **Unified Monitoring & Control via DataMiner**: Provides a single-pane-of-glass view to monitor, control, and configure distributed audio routing matrices across multiple sites and nodes.
-- **Centralized Management for Decentralized Systems**: The connector aggregates status, routing, and configuration data from multiple nodes over IP, enabling efficient operation of large-scale, geographically dispersed deployments.
-- **Real-Time Matrix Visibility & Control**: Exposes full crosspoint status, port utilization, and routing changes in real time within DataMiner, supporting fast troubleshooting and operational confidence.
-- **Protocol-Agnostic Abstraction**: The connector normalizes underlying audio technologies (AES67, Dante, ST 2110, MADI, analog, etc.) into a consistent DataMiner model, simplifying workflows regardless of transport type.
-- **Secure TCP/IP-Based Integration**: Uses a robust TCP/IP interface to retrieve status and apply configuration changes, enabling automation, alarm handling, and integration into broader DataMiner orchestration and analytics workflows.
+- **Unified monitoring and control via DataMiner**: Provides a single-pane-of-glass view to monitor, control, and configure distributed audio routing matrices across multiple sites and nodes.
+- **Centralized management for decentralized systems**: Aggregates status, routing, and configuration data from multiple nodes over IP, enabling efficient operation of large-scale, geographically dispersed deployments.
+- **Real-time matrix visibility and control**: Exposes full crosspoint status, port utilization, and routing changes in real time within DataMiner, supporting fast troubleshooting and operational confidence.
+- **Protocol-agnostic abstraction**: Normalizes underlying audio technologies (AES67, Dante, ST 2110, MADI, analog, etc.) into a consistent DataMiner model, simplifying workflows regardless of transport type.
+- **Secure TCP/IP-based integration**: Uses a robust TCP/IP interface to retrieve status information and apply configuration changes, enabling automation, alarm handling, and integration into broader DataMiner orchestration and analytics workflows.
 
 ## Use Cases
 
