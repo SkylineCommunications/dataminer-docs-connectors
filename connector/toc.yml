@@ -7883,6 +7883,11 @@
     topicUid: Connector_help_RGB_Networks_VMG2
 - name: Riedel Communications
   items:
+  - name: Riedel Communications ARTIST
+    topicUid: Connector_help_Riedel_Communications_ARTIST
+    items:
+    - name: Riedel Communications ARTIST Technical
+      topicUid: Connector_help_Riedel_Communications_ARTIST_Technical
   - name: Riedel Communications Artist 128
     topicUid: Connector_help_Riedel_Communications_Artist_128
   - name: Riedel Communications Artist SNMP
