@@ -8517,6 +8517,9 @@
   items:
   - name: ServersCheck SensorGateway
     topicUid: Connector_help_ServersCheck_SensorGateway
+    items:
+      - name: ServersCheck SensorGateway Technical
+        topicUid: Connector_help_ServersCheck_SensorGateway_Technical
 - name: ServiceHeroes
   items:
   - name: ServiceHeroes ServiceHighway
