@@ -60,7 +60,7 @@ Every 30 minutes, the connector will request the DataMiner **users and user grou
 
 The folder structure that a **specific user** has access to can be retrieved via an **Automation script** by sending a JSON request to the **External Access Rules Request** parameter (PID 1621). An entry is added to the Access Rules Requests table with the status *Pending* when the request is received. When the request is handled by the connector, the status is updated to either *Completed* or *Failed* and the response becomes available in the Response column of the table. The requests and responses should have the following structure:
 
-| **Request**                         | **Response**                                                                                                                                        |
+| Request                         | Response                                                                                                                                        |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | { "Id": string, "Username": string} | { "Id": string, "Folders": \[ { "URL": string, "Children": \[ { "URL": string, "Children": \[ (0 or more folders) \] } (0 or more folders) \] } \]} |
 

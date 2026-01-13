@@ -12,7 +12,7 @@ This connector fetches status information via SNMP and displays it in simple par
 
 ### Version Info
 
-| **Range** | **Description**          | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description          | DCF Integration | Cassandra Compliant |
 |------------------|--------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version          | Yes                 | Yes                     |
 | 1.1.0.x          | New firmware (see below) | Yes                 | Yes                     |

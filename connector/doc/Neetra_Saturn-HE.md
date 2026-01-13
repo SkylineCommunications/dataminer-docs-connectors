@@ -12,14 +12,14 @@ This connector allows you to control the Neetra Saturn-HE via an SNMP connection
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                           | **Based on** | **System Impact**                                                      |
+| Range            | Key Features                                                                                                                           | Based on | System Impact                                                      |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------|
 | 1.0.0.x [Obsolete]     |Initial version.                                                                                                                           | -            | -                                                                      |
 | 1.0.1.x [SLC Main]   | Changed some parameter descriptions (DAB Modulator, on the Main page) to make them more user-friendly after DAB Modulator software update. | 1.0.0.4      | The parameter name change can affect filters, Automation scripts, etc. |
 
 ### Product Info
 
-| **Connector Range** | **Device Firmware Version**                                                                                                                              |
+| Connector Range | Device Firmware Version                                                                                                                              |
 |---------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x             | DAB Modulator = 6.17 DAB Amplifier Control (transmitters with more than 1 amplifier) = 10.14 DAB MPL (DAB transmitters with only 1 amplifier) = 2.18     |
 | 1.0.1.x             | DAB Modulator = **7.12** DAB Amplifier Control (transmitters with more than 1 amplifier) = 10.14 DAB MPL (DAB transmitters with only 1 amplifier) = 2.18 |

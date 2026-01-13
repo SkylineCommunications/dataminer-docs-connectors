@@ -30,7 +30,7 @@ This connector allows you to monitor relevant resource metrics available in Azur
 
 ### Supported Resource Type Elements
 
-| **Connector**                                                                                                                                                     | **Resource Type**                          |
+| Connector                                                                                                                                                     | Resource Type                          |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------|
 | [Microsoft Azure Cloud Platform - Azure DB for PostgreSQL Servers](xref:Connector_help_Microsoft_Azure_-_Azure_DB_for_PostgreSQL_Servers)           | Microsoft.DBforPostgreSQL/servers          |
 | [Microsoft Azure Cloud Platform - Disks](xref:Connector_help_Microsoft_Azure_-_Disks)                                                                       | Microsoft.Compute/disks                    |

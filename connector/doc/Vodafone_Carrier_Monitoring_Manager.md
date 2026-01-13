@@ -8,7 +8,7 @@ This is a virtual connector that is used to manage carrier monitoring (including
 
 ### Version Info
 
-| **Range**            | **Key Features**   | **Based on** | **System Impact**                                                                                              |
+| Range            | Key Features   | Based on | System Impact                                                                                              |
 |----------------------|--------------------|--------------|----------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version    | -            | -                                                                                                              |
 | 1.0.1.x [SLC Main]   | Renamed parameters | 1.0.1.5      | Filters, Automation scripts, Visio drawings, reports, and DataMiner Web API usage may need to be reconfigured. |

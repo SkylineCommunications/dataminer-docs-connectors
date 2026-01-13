@@ -12,7 +12,7 @@ Based on the retrieved data and on the version of the connector, different conne
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                                                                                      | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                                                                                      | DCF Integration | Cassandra Compliant |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                                                                                                                                                                      | No                  | Yes                     |
 | 2.0.0.x          | 2 exported protocols: **Network Electronics Flashlink LB-OE** and **Network Electronics Flashlink LB-EO**.                                                                                                           | No                  | Yes                     |
@@ -20,7 +20,7 @@ Based on the retrieved data and on the version of the connector, different conne
 
 ### Exported connectors
 
-| **Exported Connector**                                                                                            | **Description**               |
+| Exported Connector                                                                                            | Description               |
 |------------------------------------------------------------------------------------------------------------------|-------------------------------|
 | [Network Electronics Flashlink LB-OE](xref:Connector_help_Network_Electronics_Flashlink_LB-OE)             | Only supported in range 2.0.0 |
 | [Network Electronics Flashlink LB-EO](xref:Connector_help_Network_Electronics_Flashlink_LB-EO)             | Only supported in range 2.0.0 |

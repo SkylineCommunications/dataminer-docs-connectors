@@ -34,7 +34,7 @@ Credentials are required for the device to poll data from the VMG2. Those creden
 
 The default credentials are:
 
-| **Clear Value** | **Encrypted Value** |                            |
+| Clear Value | Encrypted Value |                            |
 |-----------------|---------------------|----------------------------|
 | Username        | administrator       | 674e4e4c4743585a54475e4c57 |
 | Password        | Admin               | 674e4e4c47                 |

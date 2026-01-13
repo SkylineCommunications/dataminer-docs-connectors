@@ -13,7 +13,7 @@ The connector only displays the general data once, separately from the data that
 
 ### Version Info
 
-| **Range**            | **Key Features**                           | **Based on** | **System Impact**                                                                         |
+| Range            | Key Features                           | Based on | System Impact                                                                         |
 |----------------------|--------------------------------------------|--------------|-------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                           | -            | -                                                                                         |
 | 1.0.1.x              | Reorganization of the connector.           | 1.0.0.2      | Alarm and trend information lost. Table references lost. New element needs to be created. |

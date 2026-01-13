@@ -42,7 +42,7 @@ In the documents folder for the connector, there is a namespace implementing the
 
 The following actions are possible:
 
-| **Action**                 | **Example request**                                                                                                                                                                                                                                                                                     |
+| Action                 | Example request                                                                                                                                                                                                                                                                                     |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Create recording           | { "**Action**": "Create", "**Object**": "Recording", "**Guid**": "Random guid", "**Data**": { "**Id**": "int", "**Title**": "string", "**Ird**": "string", "**Recorder**": "string", "**StartTime**": "Datetime (as oadate)", "**StopTime**": "Datetime (as oadate)", "**EventId**": "int", }}          |
 | Update recording           | { "**Action**": "Update", "**Object**": "Recording", "**Guid**": "Random guide", "**Data**": { "**Id**": "int", "**Title**": "string", "**Ird**": "string", "**Recorder**": "string", "**StartTime**": "Datetime (as oadate)", "**StopTime**": "Datetime (as oadate)", "**EventId**": "int", }}         |

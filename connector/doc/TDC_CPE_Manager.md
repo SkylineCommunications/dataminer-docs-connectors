@@ -21,7 +21,7 @@ The **TDC CPE Manager** is part of a CPE setup and is responsible for aggregatin
 
 ### Version Info
 
-| **Range**                | **Key Features**                                        | **Based on** | **System Impact**             |
+| Range                | Key Features                                        | Based on | System Impact             |
 |--------------------------|---------------------------------------------------------|--------------|-------------------------------|
 | 1.0.0.x **\[Obsolete\]** | Initial version                                         | -            | -                             |
 | 3.0.1.x **\[Obsolete\]** | New CPE integration                                     | 3.0.0.4      | -                             |
@@ -134,7 +134,7 @@ Key Performance Indicators (KPIs) are calculated on different levels. Below, you
 
 ### Generic KPIs
 
-| **Description**               | **Information**                                                           |
+| Description               | Information                                                           |
 |-------------------------------|---------------------------------------------------------------------------|
 | \#CM                          | Total number of cable modems                                              |
 | \#eMTA                        | Total number of eMTAs                                                     |
@@ -157,7 +157,7 @@ Key Performance Indicators (KPIs) are calculated on different levels. Below, you
 
 ### Generic Channel KPIs
 
-| **Description** | **Information**                           |
+| Description | Information                           |
 |-----------------|-------------------------------------------|
 | \#Act Ch        | Total number of active channels           |
 | Bitrate         | Calculated bitrate \[Mbps\]               |

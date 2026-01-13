@@ -12,7 +12,7 @@ The device converts high-definition video signals with a PH.C motion measurement
 
 ### Version Info
 
-| **Range** | **Key Features**        | **Based on** | **System Impact** |
+| Range | Key Features        | Based on | System Impact |
 |-----------|-------------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version.        | -            | -                 |
 | 2.0.0.x   | New firmware supported. | -            | -                 |

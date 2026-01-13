@@ -26,7 +26,7 @@ When you create the service, you should select the elements and parameters to in
 
 The following table shows the default configuration:
 
-| **Protocol**                                 | **Description**                         | **Subscription Name**           |
+| Protocol                                 | Description                         | Subscription Name           |
 |----------------------------------------------|-----------------------------------------|---------------------------------|
 | Imagine Communications EPIC MV (Primary)     | Audio Low State                         | AudioQuietStatePrimary          |
 | Imagine Communications EPIC MV (Primary)     | Audio Peak State                        | AudioLoudStatePrimary           |
