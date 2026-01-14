@@ -34,12 +34,19 @@ HTTP CONNECTION:
 
 ### Initialization
 
-After element creation, configure the API credentials on the **Configuration** page:
+When you have created an element, configure the following settings:
 
-- **User Name**: Enter the user name required to authenticate with the Ciena Navigator API.
-- **Password**: Enter the password required to authenticate with the Ciena Navigator API.
+1. On the **Configuration** page, enter the **username** and **password** to authenticate with the Ciena Navigator API.
 
-Once credentials are configured, the connector automatically acquires and manages authentication tokens. Ensure the device/API endpoint is reachable before enabling polling.
+   Once these credentials have been configured, the connector automatically acquires and manages authentication tokens. Make sure the device/API endpoint is reachable before you continue.
+
+1. Click the **Polling Config** button on the Configuration page to access the **Polling Configuration** subpage.
+
+1. Enable polling for each data set (Network Constructs) by setting the **Admin Status** column to *Enabled*.
+
+1. Optionally adjust the **Interval** for each data set to control the polling frequency.
+
+1. Use the **Poll** button in the Polling Manager table to manually trigger immediate data retrieval for a specific data set.
 
 ### Web Interface
 
@@ -54,14 +61,6 @@ If redundancy is configured, ensure both endpoints are reachable and that failov
 ### Communication
 
 HTTP requests are used to retrieve device information and KPIs. Token acquisition occurs automatically when credentials are configured.
-
-### After creation
-
-1. Configure **User Name** and **Password** on the **Configuration** page.
-2. Click the **Polling Config...** button on the Configuration page to access the **Polling Configuration** subpage.
-3. Enable polling for each data set (Network Constructs) by setting the **Admin Status** column to *Enabled*.
-4. Optionally adjust the **Interval** for each data set to control polling frequency.
-5. Use the **Poll** button in the Polling Manager table to manually trigger immediate data retrieval for a specific data set.
 
 ### Monitoring
 
