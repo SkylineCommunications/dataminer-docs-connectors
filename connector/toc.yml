@@ -2242,6 +2242,11 @@
     topicUid: Connector_help_Ciena_CN4200_Platform
   - name: Ciena CN6500 Platform
     topicUid: Connector_help_Ciena_CN6500_Platform
+  - name: Ciena Navigator
+    topicUid: Connector_help_Ciena_Navigator
+    items:
+    - name: Ciena Navigator Technical
+      topicUid: Connector_help_Ciena_Navigator_Technical
   - name: Ciena Switch 5100 Series
     topicUid: Connector_help_Ciena_Switch_5100_Series
 - name: CISCO
