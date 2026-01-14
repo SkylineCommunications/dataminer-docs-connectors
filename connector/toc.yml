@@ -7872,8 +7872,8 @@
   - name: RFS MSV Monitoring System
     topicUid: Connector_help_RFS_MSV_Monitoring_System
     items:
-      - name: RFS MSV Monitoring System Technical
-        topicUid: Connector_help_RFS_MSV_Monitoring_System_Technical
+    - name: RFS MSV Monitoring System Technical
+      topicUid: Connector_help_RFS_MSV_Monitoring_System_Technical
 - name: RGB Networks
   items:
   - name: RGB Networks Manager
