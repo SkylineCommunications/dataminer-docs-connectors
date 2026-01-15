@@ -19,8 +19,3 @@ The RFS MSV Monitoring System connector enables data integration and monitoring 
 **Solution**: Use the RFS MSV Monitoring System connector to integrate these systems into DataMiner, enabling centralized monitoring and correlation of RF performance data with other network elements.
 
 **Benefit**: Monitoring the RFS MSV Monitoring System through DataMiner allows operators to detect and address issues prior to customer impact, improving overall network reliability and service quality.
-
-## Technical Reference
-
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_RFS_MSV_Monitoring_System_Technical).
