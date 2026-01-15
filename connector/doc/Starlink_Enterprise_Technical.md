@@ -116,7 +116,7 @@ The User Terminals page contains the **User Terminals** table. This table shows 
 
 The columns **Device ID**, **Account Number**, and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
-The Telemetry API provides the current user terminals. If a terminal is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
+The Telemetry API provides the current user terminals. Telemetry is polled every minute. The content is stored using history sets for accurate backpolling. If a terminal is removed or no longer present in the API response, the connector will retain it in the table for up to one day to ensure data continuity. When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when one or more terminals are still in the table but were not returned by the API.
 
 Terminals that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
@@ -232,17 +232,17 @@ The polling mechanism is triggered after the value of the Client Secret paramete
 The Configuration page also contains two telemetry request configuration parameters:
 
 - **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~65000 records per request (this is the maximum). If the batch does not have that size, it will return less. Keeping it at 65000 allows fast backpolling when needed.
-- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. This duration is recommended by Starlink in order for all the data points to come in accurately.
+- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. This duration is recommended by Starlink to ensure that all data points come in accurately. If the telemetry requests are timing out, please check the **Timeout of a single command (ms)** setting in the element configuration. Preferably, the timeout of a single command should be slightly bigger than the Telemetry Linger Duration.
 
-> [!NOTE]
+> [!IMPORTANT]
+> A Telemetry Linger Duration of 15 000 ms only allows 4 accounts to be polled at maximum. If you want to poll more accounts, please lower the Telemetry Linger Duration but make sure the following applies:
 >
-> - Both the batch size and the linger duration are set to 100 by default to keep the load on the API as low as possible.
-> - Telemetry is polled every minute; content is stored using history sets for accurate backpolling.
+> `60 000 - [amount of accounts] * Telemetry Linger Duration > 0`
 
 With the **Poll Only Service Linked Terminals** toggle button on the Configuration page, you can enable a filter on the **User Terminals** query. This button is set to *Off* by default, which will poll all the user terminals from the management API whether they have a service line configured or not. Toggling the button to *On* will poll only user terminals that are linked to a service line.
 
 > [!IMPORTANT]
-> Enabling the **Poll Only Service Linked Terminals**  filter will stop updating user terminals that do not have a service line configured. Those rows in the table will be removed after the specified cleanup time. If DVEs are enabled for terminals that do not have a service line configured, please disable them if you are using this filter.
+> Enabling the **Poll Only Service Linked Terminals** filter will stop updating user terminals that do not have a service line configured. Those rows in the table will be removed after the specified cleanup time. If DVEs are enabled for terminals that do not have a service line configured, please disable them if you are using this filter.
 
 ### User Terminal DVEs Configuration page
 
