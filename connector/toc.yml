@@ -4101,6 +4101,13 @@
     items:
     - name: Frequentis iRIF Technical
       topicUid: Connector_help_Frequentis_iRIF_Technical
+- name: FS
+  items:
+  - name: FS 3900-R Series
+    topicUid: Connector_help_FS_3900-R_Series
+    items:
+    - name: FS 3900-R Series Technical
+      topicUid: Connector_help_FS_3900-R_Series_Technical
 - name: Fujitsu
   items:
   - name: Fujitsu FLEXR
@@ -8520,6 +8527,9 @@
   items:
   - name: ServersCheck SensorGateway
     topicUid: Connector_help_ServersCheck_SensorGateway
+    items:
+      - name: ServersCheck SensorGateway Technical
+        topicUid: Connector_help_ServersCheck_SensorGateway_Technical
 - name: ServiceHeroes
   items:
   - name: ServiceHeroes ServiceHighway
