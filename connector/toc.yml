@@ -7881,6 +7881,8 @@
     topicUid: Connector_help_RFS_Channel_Combiner
   - name: RFS RF Signal Monitoring Panel
     topicUid: Connector_help_RFS_RF_Signal_Monitoring_Panel
+  - name: RFS MSV Monitoring System
+    topicUid: Connector_help_RFS_MSV_Monitoring_System
 - name: RGB Networks
   items:
   - name: RGB Networks Manager
