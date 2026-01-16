@@ -2179,8 +2179,11 @@
     topicUid: Connector_help_Ceragon_Networks_FibeAir_IP-20
   - name: Ceragon Networks Netmaster
     topicUid: Connector_help_Ceragon_Networks_Netmaster
-  - name: Ceragon Networks Netmaster - Device
-    topicUid: Connector_help_Ceragon_Networks_Netmaster_-_Device
+    items:
+    - name: Ceragon Networks Netmaster Technical
+      topicUid: Connector_help_Ceragon_Networks_Netmaster_Technical
+    - name: Ceragon Networks Netmaster - Device
+      topicUid: Connector_help_Ceragon_Networks_Netmaster_-_Device
 - name: Chatsworth Products
   items:
   - name: Chatsworth Products Switched eConnect PDU
