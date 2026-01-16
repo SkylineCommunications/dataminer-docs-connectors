@@ -30,26 +30,7 @@ Information is polled from the device via SNMP. The connector is also able to pr
 | 1.0.1.x | Adaptation based on change request. | No | Yes |
 | 1.0.2.x (Obsolete) | Added Redundancy Status table. | No | Yes |
 | 1.0.3.x [SLC Main] | Modified Redundancy Status table. | No | Yes |
-| 2.0.0.x [EPM] | Converted DVE logic to create EPM entities. | No | Yes |
-
-### Product Info
-
-| Range | Supported Firmware |
-|--|--|
-| 1.0.0.x | R14 Rev. A04 |
-| 1.0.1.x | R14 Rev. A04 |
-| 1.0.2.x | R14 Rev. A04 |
-| 1.0.3.x | R14 Rev. A04 |
-| 2.0.0.x | R14 Rev. A04 |
-
-### Exported connectors
-
-| Name | Range |
-|--|--|
-| Ceragon Networks Netmaster - Device | 1.0.0.x |
-| Ceragon Networks Netmaster - Device | 1.0.1.x |
-| Ceragon Networks Netmaster - Device | 1.0.2.x |
-| Ceragon Networks Netmaster - Device | 1.0.3.x |
+| 2.0.1.x [EPM] | Converted DVE logic to create EPM entities. | No | Yes |
 
 ## Configuration
 
@@ -82,6 +63,9 @@ The element's custom properties **Client Id** and **MHA Identifier** need to be 
 To create DVEs, go to the **General Information** page. On this page, the **Device Table** lists the devices that were retrieved from the system. To create a DVE corresponding to a particular device, change the **Device View** to an existing view, and change the **Device Name** to a custom name. Then click the toggle button to set **Device Creation State** to *Created*. If the column **Device View** is not filled in, the element will be placed in the root view.
 
 Alternatively, you can also create all DVEs at once, using the **Create All Devices** button.
+
+> [!NOTE]
+> For detailed technical information, refer to [Ceragon Networks Netmaster - Device](xref:Connector_help_Ceragon_Networks_Netmaster_-_Device).
 
 ## Usage
 
@@ -143,7 +127,7 @@ This page contains the following parameters:
 
 - **Import Report:** Displays how many rows are in both the Device Table and the CSV file. Also confirms how many rows have empty values for both the Client Id and MHA Identifier properties, and, in case of a mismatch in the number of rows, displays the rows that are missing in the Device Table and present in the CSV file or vice versa.
 
-### Configuration (range 2.0.0.x)
+### Configuration (range 2.0.x.x)
 
 This page contains the following parameters:
 
