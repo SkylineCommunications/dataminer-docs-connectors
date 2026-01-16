@@ -30,9 +30,9 @@ The minimum required DataMiner version for range 2.0.0.x of this connector is **
 
 ## Technical Reference
 
-This connector has two ranges: 1.0.5.x and 2.0.0.x. The 2.0.0.x range is currently still being developed. It will improve the performance and reliability of the connector and make it more future-proof. However, not all features from the 1.0.5.x range are currently already available in the 2.0.0.x range.
+This connector has two ranges: 1.0.x and 2.0.x. The 2.0.x range is currently still being developed. It will improve the performance and reliability of the connector and make it more future-proof. However, not all features from the 1.0.x range are currently already available in the 2.0.x range.
 
-At present, the following features are only available in the 1.0.5.x range:
+At present, the following features are only available in the 1.0.x range:
 
 - Matrix view of crosspoints
 - DCF support
@@ -40,4 +40,4 @@ At present, the following features are only available in the 1.0.5.x range:
 - Dual controller
 
 > [!NOTE]
-> For detailed technical information about the 2.0.0.x range, refer to our [technical documentation (2.0.0.x)](xref:Connector_help_Pro-Bel_SW-P-08_Technical_2.0.0.X). For the 1.0.5.x range, refer to the [technical documentation (1.0.5.x)](xref:Connector_help_Pro-Bel_SW-P-08_Technical_1.0.5.X).
+> For detailed technical information about the 2.0.x range, refer to our [technical documentation (2.0.x)](xref:Connector_help_Pro-Bel_SW-P-08_Technical_2.0.X). For the 1.0.x range, refer to the [technical documentation (1.0.x)](xref:Connector_help_Pro-Bel_SW-P-08_Technical_1.0.X).
