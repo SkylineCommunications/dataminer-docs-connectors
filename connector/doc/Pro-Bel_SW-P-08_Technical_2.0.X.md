@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Pro-Bel_SW-P-08_Technical_2.0.0.X
+uid: Connector_help_Pro-Bel_SW-P-08_Technical_2.0.X
 ---
 
-# Pro-Bel SW-P-08 (2.0.0.X)
+# Pro-Bel SW-P-08 (2.0.X)
 
 ## About
 
@@ -54,4 +54,4 @@ This page contains the **Sources** and **Destinations** tables, which contain in
 
 ## Notes
 
-The minimum required DataMiner version for this connector is **10.3.0**.
+The minimum required DataMiner version for this connector is **10.3.0.0 - 12752**.
