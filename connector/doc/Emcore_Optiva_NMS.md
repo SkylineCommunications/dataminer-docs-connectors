@@ -28,7 +28,7 @@ This connector also exports several other connectors based on the information re
 
 ### Exported connectors
 
-| **Exported Connector**                                                                          | **Description**   |
+| Exported Connector                                                                          | Description   |
 |------------------------------------------------------------------------------------------------|-------------------|
 | [Emcore Optiva NMS - Transmitter](xref:Connector_help_Emcore_Optiva_NMS_-_Transmitter) | Transmission card |
 | [Emcore Optiva NMS - Receiver](xref:Connector_help_Emcore_Optiva_NMS_-_Receiver)       | Receiver card     |

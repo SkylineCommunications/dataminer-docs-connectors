@@ -14,7 +14,7 @@ The **SNMP** interface is used to receive L4 traps from the iVMS system and to b
 
 ### Version Info
 
-| **Range**            | **Description**                                                | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description                                                | DCF Integration | Cassandra Compliant |
 |----------------------|----------------------------------------------------------------|---------------------|-------------------------|
 | 4.0.0.x              | Current version                                                | No                  | Yes                     |
 | 4.0.1.x [SLC Main]   | Connector revision with fixed format name of virtual elements. | No                  | Yes                     |
@@ -28,7 +28,7 @@ The **SNMP** interface is used to receive L4 traps from the iVMS system and to b
 
 ### Exported connectors
 
-| **Exported Connector**                                                 | **Description**                                                |
+| Exported Connector                                                 | Description                                                |
 |------------------------------------------------------------------------|----------------------------------------------------------------|
 | [IneoQuest iVMS Probe](xref:Connector_help_IneoQuest_iVMS_Probe)   | DVE connector for IneoQuest iVMS Probe \[exported by 4.0.0.x\] |
 | [IneoQuest iVMS - Probe](xref:Connector_help_IneoQuest_iVMS_Probe) | DVE connector for IneoQuest iVMS Probe \[exported by 4.0.1.x\] |

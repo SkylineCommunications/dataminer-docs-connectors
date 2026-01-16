@@ -32,7 +32,7 @@ This connector exports other connectors, each of them representing an Observer R
 
 ### Exported connectors
 
-| **Exported Connector**                                                                                        | **Description** |
+| Exported Connector                                                                                        | Description |
 |--------------------------------------------------------------------------------------------------------------|-----------------|
 | [Volicon Observer RPM - Observer Probe](xref:Connector_help_Volicon_Observer_RPM_-_Observer_Probe) | Observer Probe  |
 

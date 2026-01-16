@@ -45,7 +45,7 @@ This page also contains the **Alarm Traps** table, which displays all alarms tha
 
 The connector processes the following bindings from a trap:
 
-| Binding | **OID** | **Comments** | **Mandatory** | **Column Name in table Alarm Traps** |
+| Binding | OID | Comments | Mandatory | Column Name in table Alarm Traps |
 |--|--|--|--|--|
 | System name | 1.3.6.1.2.1.1.5 | Possible values:<br>- Element name<br>- DataMiner name | Yes | Element Name |
 | Parameter description | 1.3.6.1.4.1.8813.1.1.2.2.1 |  | Yes | Parameter Name |

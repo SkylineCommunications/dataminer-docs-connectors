@@ -10,7 +10,7 @@ With this connector, it is possible to monitor Newtec AZ202 devices with SNMP. T
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                    | **Based on** | **System Impact**                                                                            |
+| Range            | Key Features                                                                                                                    | Based on | System Impact                                                                            |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                    | -            | -                                                                                            |
 | 1.0.1.x              | New range for Cassandra compliancy. Changed displayColumn to naming.                                                                | 1.0.0.9      | Old **trend data will be lost** for the modified table.                                      |

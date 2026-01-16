@@ -26,7 +26,7 @@ The connector monitors the **Thales TDU21K50** device. For each exciter present 
 
 ### Exported connectors
 
-| **Exported protocol**                                                            | **Description**                                          |
+| Exported protocol                                                            | Description                                          |
 |----------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Thales TDU21K50 Exciter A](xref:Connector_help_Thales_TDU21K50_Exciter_A) | DVE protocol for Thales TDU21K50 \[exported by 1.1.0.x\] |
 | [Thales TDU21K50 Exciter B](xref:Connector_help_Thales_TDU21K50_Exciter_B) | DVE protocol for Thales TDU21K50 \[exported by 1.1.0.x\] |

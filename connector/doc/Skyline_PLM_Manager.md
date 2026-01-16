@@ -10,7 +10,7 @@ This manager connector will install the **DataMiner Object Model** application u
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                                          | **Based on** | **System Impact** |
+| Range            | Key Features                                                                                                                                          | Based on | System Impact |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Installation of PLM DOM application. Support for Standard Skyline PLM Approval. Support for configuration capabilities for a default PLM record creation. | -            | -                 |
 

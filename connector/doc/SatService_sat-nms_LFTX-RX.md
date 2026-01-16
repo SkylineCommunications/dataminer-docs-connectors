@@ -12,7 +12,7 @@ Based on the type of unit, extra pages linked to the slave device can be hidden 
 
 ### Version Info
 
-| **Range**            | **Key Features**  | **Based on** | **System Impact** |
+| Range            | Key Features  | Based on | System Impact |
 |----------------------|-------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version   | -            | -                 |
 | 1.0.1.x [SLC Main]   | Added DCF support | -            | -                 |

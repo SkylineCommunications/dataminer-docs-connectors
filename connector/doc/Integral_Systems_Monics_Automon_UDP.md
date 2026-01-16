@@ -12,7 +12,7 @@ This is a smart-serial connector that receives carrier, transponder and beacon s
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                          | DCF Integration | Cassandra Compliant |
 |----------------------|----------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                          | No                  | Yes                     |
 | 2.0.0.x [SLC Main]   | Alarm presets. Communication with SES Channel Manager.                                                   | No                  | Yes                     |

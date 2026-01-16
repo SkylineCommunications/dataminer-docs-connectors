@@ -10,7 +10,7 @@ The TDF TBOX Emetteur Manager is a device that allows the management of up to 6 
 
 ### Version Info
 
-| **Range**            | **Key Features**   | **Based on** | **System Impact** |
+| Range            | Key Features   | Based on | System Impact |
 |----------------------|--------------------|--------------|-------------------|
 | 1.0.0.x [SLC Main]   | Management System. | -            | -                 |
 

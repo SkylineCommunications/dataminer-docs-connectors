@@ -24,7 +24,7 @@ The IBM Tivoli Netcool-OMNIbus SNMP Writer Gateway device is a **monitoring plat
 
 ### Exported connectors
 
-| **Exported Connector**                                    | **Description**                                                   |
+| Exported Connector                                    | Description                                                   |
 |----------------------------------------------------------|-------------------------------------------------------------------|
 | IBM Tivoli Netcool-OMNIbus SNMP Writer Gateway Subdomain | This protocol is used to show the events based on their subdomain |
 | IBM Tivoli Netcool-OMNIbus SNMP Writer Gateway Location  | This protocol is used to show the events based on their location  |

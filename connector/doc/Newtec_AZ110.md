@@ -10,7 +10,7 @@ The AZ110 is a satellite modulator used for broadcast contribution, DSNG and dis
 
 ### Version Info
 
-| **Range** | **Key Features**                        | **Based on** | **System Impact** |
+| Range | Key Features                        | Based on | System Impact |
 |-----------|-----------------------------------------|--------------|-------------------|
 | 1.6.55.x  | Software version 6.55, Software ID 6279 | -            | -                 |
 | 1.7.02.x  | Software version 7.02, Software ID 6279 | -            | -                 |

@@ -17,6 +17,7 @@ This connector can be used for multiple purposes, including the configuration of
 | 1.0.0.x | Initial version | - | - |
 | 1.0.1.x | New connector based | 1.0.0.4 | New improved display look, new features, added data from new MIBs, changed the way the SNMP data is retrieved using snmpSetAndGet. |
 | 1.0.2.x | - | 1.0.1.14 | New MIBs are added. Data linking between several echoes tables. |
+| 1.1.0.x | - | 1.0.2.23 | New MIBs from firmware 6.0.5.3 are added |
 
 ### Product Info
 
@@ -24,6 +25,7 @@ This connector can be used for multiple purposes, including the configuration of
 |-----------|------------------------|
 | 1.0.0.x   | 3.1.3.5                |
 | 1.0.1.x   | 3.5.3.3                |
+| 1.1.0.x   | 3.5.3.3, 6.0.5.3       |
 
 ### System Info
 
@@ -31,6 +33,7 @@ This connector can be used for multiple purposes, including the configuration of
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | No                      | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

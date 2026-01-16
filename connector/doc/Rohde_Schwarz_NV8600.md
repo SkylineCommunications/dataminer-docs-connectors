@@ -14,13 +14,13 @@ SNMP traps can be retrieved, if this is enabled on the device.
 
 ### Version Info
 
-| **Range** | **Description**  |
+| Range | Description  |
 |------------------|------------------|
 | 1.0.0.x          | Initial version. |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                   |
+| Range | Device Firmware Version                                                                   |
 |------------------|-----------------------------------------------------------------------------------------------|
 | 1.0.0.x          | NetCCU800 1.44.1 (could be compatible with later/earlier software versions of the NetCCU800). |
 

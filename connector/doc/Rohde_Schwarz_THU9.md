@@ -12,7 +12,7 @@ This connector allows you to monitor and control the THU9 device.
 
 ### Version Info
 
-| **Range** | **Description**                                           |
+| Range | Description                                           |
 |-----------|-----------------------------------------------------------|
 | 1.0.0.x   | Initial version.                                          |
 | 1.1.0.x   | Branch version based on 1.0.0.x. DVE functionality added. |
@@ -28,7 +28,7 @@ This connector allows you to monitor and control the THU9 device.
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**                                                                                                                                                       |
+| Exported Connector | Description                                                                                                                                                       |
 |------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Transmitter            | In range **1.1.0.x**, the controller can have multiple transmitters. DVEs for the transmitters will be exported according to the information the controller receives. |
 | Exciter                | In range **2.0.0.x**, the transmitter has two exciters. Each exciter is exported as a DVE.                                                                            |
