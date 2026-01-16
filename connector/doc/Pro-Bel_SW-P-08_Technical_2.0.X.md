@@ -54,4 +54,4 @@ This page contains the **Sources** and **Destinations** tables, which contain in
 
 ## Notes
 
-The minimum required DataMiner version for this connector is **10.3.0**.
+The minimum required DataMiner version for this connector is **10.3.0.0 - 12752**.

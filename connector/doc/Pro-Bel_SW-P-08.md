@@ -26,7 +26,7 @@ The Pro-Bel SW-P-08 connector can be used to monitor and control any router that
 
 ## Prerequisites
 
-The minimum required DataMiner version for range 2.0.0.x of this connector is **10.3.0**.
+The minimum required DataMiner version for range 2.0.x of this connector is **10.3.0.0 - 12752**.
 
 ## Technical Reference
 
