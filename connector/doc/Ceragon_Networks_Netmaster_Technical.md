@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Ceragon_Networks_Netmaster
+uid: Connector_help_Ceragon_Networks_Netmaster_Technical
 ---
 
 # Ceragon Networks Netmaster
