@@ -161,6 +161,8 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
   Not specified
 
+- **INPUT DUAL IP**
+
 - **INPUT DVB T2**
 
 - **INPUT ISDB-T**
@@ -188,6 +190,8 @@ To have "Not available" rows automatically removed from the tables, enable the o
 - **OUTPUT COFDMOUT-CABLE**
 
 - **OUTPUT IPSWITCH**
+  
+- **OUTPUT DUAL IP**
 
 - **OUTPUT RADIO**
 
@@ -245,7 +249,7 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
   \*SC/AUDLEV150, \*SC/AUDLEV250
 
-- **DECODER, DESCRAMBLER**
+- **DECODER, DESCRAMBLER, ENCODER**
 
 - **IP-T2GW**
 
