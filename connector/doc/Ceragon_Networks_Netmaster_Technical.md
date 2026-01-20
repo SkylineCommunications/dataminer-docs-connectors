@@ -22,16 +22,6 @@ Information is polled from the device via SNMP. The connector is also able to pr
 
 - netmasterSWInventoryChange (1.3.6.1.4.1.2378.1.2.1.0.5)
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | No | Yes |
-| 1.0.1.x | Adaptation based on change request. | No | Yes |
-| 1.0.2.x (Obsolete) | Added Redundancy Status table. | No | Yes |
-| 1.0.3.x [SLC Main] | Modified Redundancy Status table. | No | Yes |
-| 2.0.1.x [EPM] | Converted DVE logic to create EPM entities. | No | Yes |
-
 ## Configuration
 
 ### Connections
