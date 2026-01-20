@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Linux_Platform
+uid: Connector_help_Linux_Platform_Technical
 ---
 
 # Linux Platform
