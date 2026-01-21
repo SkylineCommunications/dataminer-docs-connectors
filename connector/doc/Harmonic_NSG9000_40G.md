@@ -10,15 +10,12 @@ The Harmonic NSG9000 40G is an HTTP connector that is used to control and monito
 
 This EdgeQAM device supports up to 9 modules, which house 2 RFs with 8 QAMs each. This results in a lot of parameters to monitor. Therefore, an additional page, **Overview**, groups all the parts together in a tree view. Where possible, the web interface is mimicked to provide a low threshold between both interfaces.
 
-### Version Info
+### Range Info
 
 | Range     | Description                                                                  | DCF Integration     | Cassandra Compliant     |
 |------------------|-------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.1          | Initial version                                                               | No                  | Yes                     |
-| 1.0.0.2          | Added MPTS Grooming; fixed issue with treeview                                | No                  | Yes                     |
-| 1.0.0.3          | Changed naming on QAM Overview Table and MPTS Grooming Table                  | No                  | Yes                     |
-| 1.0.0.4          | Third-line connector: Changed Start-Stop timers, debug logging, exception handling | No                  | Yes                     |
-| 1.0.0.5          | Alarm overview table: implemented alarm storm feature                         | No                  | Yes                     |
+| 1.0.0.X          | Initial version                                                               | No                  | Yes                     |
+| 1.0.1.X          | DateTime parameter interpret type is changed from string to numeric. Parameters representing the different components of the DateTime parameter (year, month, day, hour, minute, second) used to change the device time are removed and a single DateTime parameter is used for the configuration.                                | No                  | Yes                     |
 
 ### Product Info
 
