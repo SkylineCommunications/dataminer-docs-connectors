@@ -4,157 +4,39 @@ uid: Connector_help_Ceragon_Networks_Netmaster
 
 # Ceragon Networks Netmaster
 
-Ceragon Netmaster is a Network Management System offering centralized operation and maintenance capability for a range of network elements. This connector focuses on monitoring alarms provided by this NMS.
-
-As this NMS monitors several devices, for a better representation of the alarms per device, this connector can generate a **Dynamic Virtual Element (DVE)** for each device monitored by the NMS. The list of the devices is available in the Entity Physical table (OID: 1.3.6.1.2.1.47.1.1.1). DVEs are not exported automatically; instead, the user can decide for which elements a DVE should be created.
-
 ## About
 
-Information is polled from the device via SNMP. The connector is also able to process the following SNMP traps:
+The Ceragon Networks Netmaster connector serves as a bridge to the Ceragon Netmaster Network Management System (NMS), offering a centralized interface for operation and maintenance. By leveraging SNMP polling and trap processing, this connector provides comprehensive monitoring of alarms, redundancy status, and inventory data for a wide range of network elements managed by the Netmaster system. It is designed to enhance visibility by dynamically modeling individual devices as virtual elements within the DataMiner environment.
 
-- netmasterAlarmTrap (1.3.6.1.4.1.2378.1.2.1.0.1)
+## Key Features
 
-- netmasterHeartBeatTrap (1.3.6.1.4.1.2378.1.2.1.0.2)
+- **DVEs**: Automatically generates Dynamic Virtual Elements (DVEs) for each device monitored by the NMS, allowing for granular control and visualization.
+- **Alarm monitoring**: Retrieves and processes alarms via SNMP polling and supports critical traps such as HeartBeat, Shutdown, and Alarm traps.
+- **Inventory management**: Detailed tracking of hardware and software inventory, including serial numbers, article codes, revisions, and memory bank details.
+- **Redundancy monitoring**: Includes a Connection Redundancy Status table to track the active, standby, or unreachable status of element connections.
+- **EPM provisioning and configuration**: Supports provisioning via CSV file imports and EPM entity integration for automated device configuration and management.
 
-- netmasterShutdownTrap (1.3.6.1.4.1.2378.1.2.1.0.3)
+## Use Cases
 
-- netmasterHWInventoryChange (1.3.6.1.4.1.2378.1.2.1.0.4)
+### Full Visibility on Each Device
 
-- netmasterSWInventoryChange (1.3.6.1.4.1.2378.1.2.1.0.5)
+- **Challenge**: Gaining clear visibility into the status of specific devices within a large network managed by a central NMS can be difficult when data is aggregated.
+- **Solution**: The connector gets the Entity Physical table and creates individual Dynamic Virtual Elements (DVEs) for specific devices based on user selection.
+- **Benefit**: Operators gain a focused view of alarms and status for each specific device, isolating issues effectively without losing the context of the central NMS.
 
-### Version Info
+### Fast Troubleshooting
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | No | Yes |
-| 1.0.1.x | Adaptation based on change request. | No | Yes |
-| 1.0.2.x (Obsolete) | Added Redundancy Status table. | No | Yes |
-| 1.0.3.x [SLC Main] | Modified Redundancy Status table. | No | Yes |
-| 2.0.0.x [EPM] | Converted DVE logic to create EPM entities. | No | Yes |
+- **Challenge**: Ensuring rapid response to critical network faults and hardware changes in real time.
+- **Solution**: The connector actively listens for SNMP traps, including netmasterAlarmTrap and netmasterHWInventoryChange, while simultaneously polling for current alarm states.
+- **Benefit**: Reduces network downtime by providing immediate notifications of outages, hardware changes, or critical errors, facilitating faster troubleshooting.
 
-### Product Info
+### Centralized Inventory Report
 
-| Range | Supported Firmware |
-|--|--|
-| 1.0.0.x | R14 Rev. A04 |
-| 1.0.1.x | R14 Rev. A04 |
-| 1.0.2.x | R14 Rev. A04 |
-| 1.0.3.x | R14 Rev. A04 |
-| 2.0.0.x | R14 Rev. A04 |
+- **Challenge**: Maintaining an accurate and up-to-date record of hardware assets and software versions across a distributed network.
+- **Solution**: The connector automatically populates Hardware and Software Inventory tables, detailing resources, serial numbers, and firmware versions (for example, R14 Rev. A04).
+- **Benefit**: Simplifies asset management and audit processes by providing a centralized, automated inventory report that indicates exactly when data was last updated.
 
-### Exported connectors
+## Technical Reference
 
-| Name | Range |
-|--|--|
-| Ceragon Networks Netmaster - Device | 1.0.0.x |
-| Ceragon Networks Netmaster - Device | 1.0.1.x |
-| Ceragon Networks Netmaster - Device | 1.0.2.x |
-| Ceragon Networks Netmaster - Device | 1.0.3.x |
-
-## Configuration
-
-### Connections
-
-#### SNMP main connection
-
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP of the device.
-
-- **Device Address**: The bus address of the device.
-
-SNMP Settings:
-
-- **Port number**: The port of the connected device, by default *161*.
-
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-
-- **Set community string**: The community string used when setting values on the device, by default *private*.
-
-### Configuration of the element properties (range 1.0.3.x)
-
-The element's custom properties **Client Id** and **MHA Identifier** need to be created as soon as the main element is created, so that the values from the provisioning file can be filled in.
-
-### Configuration of DVEs (range 1.0.3.x)
-
-To create DVEs, go to the **General Information** page. On this page, the **Device Table** lists the devices that were retrieved from the system. To create a DVE corresponding to a particular device, change the **Device View** to an existing view, and change the **Device Name** to a custom name. Then click the toggle button to set **Device Creation State** to *Created*. If the column **Device View** is not filled in, the element will be placed in the root view.
-
-Alternatively, you can also create all DVEs at once, using the **Create All Devices** button.
-
-## Usage
-
-### General
-
-This page displays general information, such as the **Description** of devices found in the NMS.
-
-It displays the **Connection Redundancy Status** table, which shows the current redundancy status of both element connections and gives an overview of what polling address is currently in use, in standby or unreachable.
-
-It also allows you to **create or remove** **DVEs**, or to set the parameters for removal of DVEs for elements that are no longer detected by the system.
-
-### Physical Entities
-
-This page displays information about the **Systems** that are detected in the NMS.
-
-It shows information such as **Description**, **Name**, **Serial Number**, **Alias**, etc.
-
-### Hardware Inventory
-
-This page displays information about the **Hardware** that is detected in the NMS, including **Resource**, **Article Code**, **Serial Number**, **Revision**, etc.
-
-It also displays how long ago the **Hardware Inventory** was last updated.
-
-### Software Inventory
-
-This page displays information about the **Software** that is detected in the NMS, including **Resource**, **Name**, **Memory Bank**, etc.
-
-It also displays how long ago the **Software Inventory** was last updated.
-
-### Alarms (range 1.0.0.x)
-
-This page displays information about the alarms that are detected in the NMS, via traps or via SNMP polling. This includes information such as **Event Alarm Time**, **Object Name**, **Native Probable** **Cause**, etc.
-
-It also displays how long ago the **Software Inventory** was last updated.
-
-### Alarms (range 1.0.1.x)
-
-This page contains two alarm tables:
-
-- **Alarms Table**: Displays information about the alarms detected in the NMS, via traps or via SNMP polling. This includes information such as **Event Alarm Time**, **Object Name**, **Native Probable** **Cause**, etc. The index of this alarm table uses the alarm index from the traps.
-
-- **New Alarms Table**: This table is similar to the Alarms Table; however, the index of this table uses a combination of two bindings from Ceragon alarm traps. The bindings are combined as **\[netmasterAlarmResourceDisplayName/netmasterAlarmNativeProbableCause\]**.
-
-### Debug
-
-This page displays information about which DVEs have been exported, including the **Export Custom DVE Name**, the **DVE View**, etc.
-
-### Provisioning (range 1.0.3.x)
-
-This page contains the following parameters:
-
-- **Provisioning File Format**: Displays the format that should be followed when the structure of the CSV provisioning file is created.
-
-- **CSV File Name Path**: Allows you to enter a valid path for the CSV file.
-
-- **Import File:** Button that can be used to execute the provisioning.
-
-- **Import File Status**: By default, if no operation has been executed, the status is set to *Not Busy*. After the Import File button is clicked, either *Success* or *Failed* will be displayed as the final state for the provisioning operation.
-
-- **Import Report:** Displays how many rows are in both the Device Table and the CSV file. Also confirms how many rows have empty values for both the Client Id and MHA Identifier properties, and, in case of a mismatch in the number of rows, displays the rows that are missing in the Device Table and present in the CSV file or vice versa.
-
-### Configuration (range 2.0.0.x)
-
-This page contains the following parameters:
-
-- **Entity Import Directory**: Directory where the element will import the devices information from EPM.
-
-- **Entity Export Directory**: Directory from which the element will export the devices inventory information to EPM.
-
-- **System Username**: Username used to retrieve files from a remote directory.
-
-- **System Password**: Password used to retrieve files from a remote directory.
-
-### Web Interface (range 1.0.3.x)
-
-This page opens the web interface of the NMS. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Ceragon_Networks_Netmaster_Technical).
