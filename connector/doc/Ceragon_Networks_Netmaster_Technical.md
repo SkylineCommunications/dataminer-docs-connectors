@@ -63,9 +63,9 @@ Alternatively, you can also create all DVEs at once, using the **Create All Devi
 
 This page displays general information, such as the **Description** of devices found in the NMS.
 
-It displays the **Connection Redundancy Status** table, which shows the current redundancy status of both element connections and gives an overview of what polling address is currently in use, in standby or unreachable.
+It displays the **Connection Redundancy Status** table, which shows the current redundancy status of both element connections and gives an overview of what polling address is currently in use, in standby, or unreachable.
 
-It also allows you to **create or remove** **DVEs**, or to set the parameters for removal of DVEs for elements that are no longer detected by the system.
+It also allows you to **create or remove DVEs**, or to set the parameters for removal of DVEs for elements that are no longer detected by the system.
 
 ### Physical Entities
 
@@ -87,7 +87,7 @@ It also displays how long ago the **Software Inventory** was last updated.
 
 ### Alarms (range 1.0.0.x)
 
-This page displays information about the alarms that are detected in the NMS, via traps or via SNMP polling. This includes information such as **Event Alarm Time**, **Object Name**, **Native Probable** **Cause**, etc.
+This page displays information about the alarms that are detected in the NMS, via traps or via SNMP polling. This includes information such as **Event Alarm Time**, **Object Name**, **Native Probable Cause**, etc.
 
 It also displays how long ago the **Software Inventory** was last updated.
 
@@ -95,7 +95,7 @@ It also displays how long ago the **Software Inventory** was last updated.
 
 This page contains two alarm tables:
 
-- **Alarms Table**: Displays information about the alarms detected in the NMS, via traps or via SNMP polling. This includes information such as **Event Alarm Time**, **Object Name**, **Native Probable** **Cause**, etc. The index of this alarm table uses the alarm index from the traps.
+- **Alarms Table**: Displays information about the alarms detected in the NMS, via traps or via SNMP polling. This includes information such as **Event Alarm Time**, **Object Name**, **Native Probable Cause**, etc. The index of this alarm table uses the alarm index from the traps.
 
 - **New Alarms Table**: This table is similar to the Alarms Table; however, the index of this table uses a combination of two bindings from Ceragon alarm traps. The bindings are combined as **\[netmasterAlarmResourceDisplayName/netmasterAlarmNativeProbableCause\]**.
 
