@@ -32,7 +32,7 @@ Harmonic's NMX Digital Service Manager is a video network management solution, e
 | 4.0.1.x   | 6.4                    |
 | 4.1.0.x   | 8                      |
 | 4.1.1.x   | 8                      |
-| 4.2.0.x   | 9.2, 8                 |
+| 4.2.0.x   | 9.13, 9.2, 8           |
 
 ### System Info
 
