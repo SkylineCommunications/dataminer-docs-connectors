@@ -5760,6 +5760,8 @@
   - name: Linux Platform
     topicUid: Connector_help_Linux_Platform
     items:
+    - name: Linux Platform (Obsolete versions)
+      topicUid: Connector_help_Linux_Platform_obsolete_versions
     - name: Linux Platform SNMP Mapping
       topicUid: Connector_help_Linux_Platform_snmp_Mapping
     - name: Linux Platform Memory Calculation
