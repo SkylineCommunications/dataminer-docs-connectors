@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Verimatrix_RTES_Pair
+uid: Connector_help_Verimatrix_RTES_Pair_Technical
 ---
 
 # Verimatrix RTES Pair
