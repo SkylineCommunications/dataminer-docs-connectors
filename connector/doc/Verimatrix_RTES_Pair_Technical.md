@@ -10,26 +10,6 @@ With this connector, you can monitor a redundant pair of **Verimatrix RTES** dev
 
 The Verimatrix RTES Pair connector monitors a redundant pair of Verimatrix RTES devices. The **two SNMP connections** are used to connect to the two RTES devices. Through **HTTP SOAP** communication, the connector also allows the user to retrieve the names and key times of the channels that are defined in an Oracle database.
 
-### Version Info
-
-| Range     | Description                                       | DCF Integration     | Cassandra Compliant     |
-|-----------|---------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x   | Initial version                                   | Yes                 | Yes                     |
-| 2.0.0.x   | Branch version based on 1.0.0.x                   | Yes                 | Yes                     |
-| 2.0.1.x   | New firmware based on 2.0.1.x (see below)         | Yes                 | Yes                     |
-| 2.0.2.x   | Change of index in retrieved tables               | Yes                 | Yes                     |
-| 2.0.3.x   | Small refactor and reorganization of the driver   | Yes                 | Yes                     |
-
-### Product Info
-
-| Range     | Supported Firmware Version |
-|-----------|----------------------------|
-| 1.0.0.x   | Unknown                    |
-| 2.0.0.x   | Unknown                    |
-| 2.0.1.x   | Unknown                    |
-| 2.0.2.x   | Unknown                    |
-| 2.0.3.x   | Unknown                    |
-
 ### Exported connectors
 
 | Exported Connector                                                                   | Description                           |
