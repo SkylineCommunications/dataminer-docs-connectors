@@ -9,18 +9,7 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 >[!IMPORTANT]
 > This documentation covers obsolete versions of the Linux Platform connector (1.0.0.x - 1.1.1.x). For the latest version, refer to [Linux Platform](xref:Connector_help_Linux_Platform).
 
-## About
-
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|-------|--------------|----------|---------------|
-|1.0.0.x|Initial version.| - | - |
-|1.1.0.x|Added version compatibility.| - | - |
-|1.1.1.x|Added SNMP connection.| - | - |
-|2.0.0.x| Changed the layout of the connector. The connector can now poll the data using SSH or SNMP. If one of the connections fails, it will use the other connection to poll the data.| - |After version 1.1.1.x, the connection type changes from serial to SNMP, which means that existing elements will need to be re-created when you update to the latest version.|
-
-### Supported Distributions
+## Supported Distributions
 
 - Debian-based distributions (e.g., Ubuntu, Linux Mint)
 - Red Hat-based distributions (e.g., CentOS, Fedora)

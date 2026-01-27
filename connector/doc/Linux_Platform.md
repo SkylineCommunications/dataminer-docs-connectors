@@ -6,29 +6,13 @@ uid: Connector_help_Linux_Platform
 
 With this connector, you can monitor servers running Linux OS with SSH or with SNMP.
 
-## About
-
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|-------|--------------|----------|---------------|
-|2.0.1.x|Added CLI Table.| - | CLI Table uses context menu with NuGet.|
-|2.0.2.x [SLC Main]| - Information from Interfaces table fixed and bit rates updated methods implemented.<br>- Tooltip of parameter Data Type Mode improved.<br>- Available Disk Space % (percentage) added to Disks table.| 2.0.1.15 | - NuGets for rate calculation updated.<br>- Interfaces table layout and content changed.|
-
-### Supported Distributions
+## Supported Distributions
 
 - Debian-based distributions (e.g., Ubuntu, Linux Mint)
 - Red Hat-based distributions (e.g., CentOS, Fedora)
 
 > [!IMPORTANT]
 > Distributions based on BusyBox (e.g. Alpine Linux) are currently not supported for SSH. However, it is possible to monitor via SNMP if the SNMP agent is properly configured.
-
-### System Info
-
-| Range | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-------|---------------------|-------------------------|-----------------------|-------------------------|
-|2.0.1.x| No                  | Yes                     | -                     | -                       |
-|2.0.2.x| No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -116,6 +100,10 @@ The following page buttons allow access to additional virtual server info:
 
 - **LVS Real Table**
 - **Service Table**
+
+## DataMiner Connectivity Framework (DCF)
+
+Currently, this main connector range doesn't support the DataMiner Connectivity Framework (DCF).
 
 ## Notes
 
