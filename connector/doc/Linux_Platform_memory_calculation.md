@@ -152,7 +152,7 @@ Actual available physical memory on this host (both real and swap memory), where
 $$
 \begin{equation}
 \begin{split}
-\text{Actual Available Physical Memory}&=\frac{\left(\text{Avaialble Physical Memory}+\text{Used Memory Buffers}+\text{Actual Memory Cached}\right)}{1024} \\
+\text{Actual Available Physical Memory}&=\frac{\left(\text{Available Physical Memory}+\text{Used Memory Buffers}+\text{Actual Memory Cached}\right)}{1024} \\
 &=\frac{((\text{MemFree}+\text{SwapFree})+(\text{Buffers})+(\text{Cached}+\text{SReclaimable}))}{1024}
 \end{split}
 \end{equation}
@@ -226,13 +226,13 @@ $$
 ### Physical Memory Usage (SNMP)
 
 $$
-\text{Physical Memory Usage}=\frac{\text{Used Physical Memory}}{\text{Total Phsyical Memory}}\times{100}
+\text{Physical Memory Usage}=\frac{\text{Used Physical Memory}}{\text{Total Physical Memory}}\times{100}
 $$
 
 ### Actual Available Physical Memory (SNMP)
 
 $$
-\text{Actual Available Physical Memory}=\text{Available Phsyical Memory}+\text{Memory Buffer}+\text{Memory Cached}
+\text{Actual Available Physical Memory}=\text{Available Physical Memory}+\text{Memory Buffer}+\text{Memory Cached}
 $$
 
 ### Actual Physical Memory Used (SNMP)
