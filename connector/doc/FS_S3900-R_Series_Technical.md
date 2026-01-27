@@ -37,8 +37,8 @@ The web interface is only accessible when the client machine has network access 
 The element has the following data pages:
 
 - **General**: Displays the device information.
-- **Interfaces**: Displays information about the switch interfaces. The rate calculation method can be adjusted to prioritise speed or accuracy.
-- **Detailed Interfaces Info**: Displays the Rx and Tx rate information about the switch interfaces.
+- **Interfaces**: Displays information about the switch interfaces. The rate calculation method can be adjusted to prioritize speed or accuracy.
+- **Detailed Interfaces Info**: Displays the Rx and Tx rate information for the switch interfaces.
 - **NTP**: Displays the NTP parameters if they are present.
 - **DHCP Server**: Displays availability and IP address information for the DHCP server.
 - **IP Addresses**: Displays the IP addresses and IP routes.
