@@ -16,14 +16,13 @@ The Verimatrix RTES Pair connector monitors a redundant pair of Verimatrix RTES 
 |--------------------------------------------------------------------------------------|---------------------------------------|
 | [Verimatrix RTES Pair - DVE](xref:Connector_help_Verimatrix_RTES_Pair_-_DVE)         | 2 DVE elements, primary and secondary |
 
+## Configuration
 
-## Installation and configuration
-
-### Creation
+### Connections
 
 The **Verimatrix RTES Pair** has two SNMP connections. The first is to connect to the **A RTES** device, the second to connect to the **B RTES** device. The IP for those connections needs to be configured during creation of the element.
 
-The **Verimatrix RTES Pair** also has an optional connection to an Oracle database which is handled outside of the scope of the element's settings. The settings for this communication, if opted for, can be done in the **Channel Performance**'s Sub-Page, **Database Settings**.
+The **Verimatrix RTES Pair** also has an optional connection to an Oracle database which is handled outside of the scope of the element's settings. You can configure the settings for this connection on the **Channel Performance** > **Database Settings** page of the connector.
 
 **SNMP Connection - Server A**:
 
@@ -47,8 +46,7 @@ The **Verimatrix RTES Pair** also has an optional connection to an Oracle databa
 - **Username**: The Username used to access the Oracle database.
 - **Password**: The Password used to access the Oracle database.
 
-
-## Usage (starting from version 2.0.3.X)
+## Usage (starting from version 2.0.3.x)
 
 ### General Page
 
@@ -56,34 +54,30 @@ This page displays system information, current status and general statistics of 
 
 ### RTES Page
 
-This page contains the **RTES Table**, listing the RTES devices' information that will be exported as the two seperate DVEs under the view of the parent element, as well as the **Connection Health** table, which displays the current status and information of the DCF connections with the external Network Switch elements.
+This page contains the **RTES Table**, listing the RTES devices' information, which will be exported to two separate DVEs under the view of the parent element, as well as the **Connection Health** table, which displays the current status and information of the DCF connections with the external network switch elements.
 
 ### Channel Performance Page
 
 This page contains tables with information on the channels of each RTES device.
-In addition, the **Database Settings** and **SNMP Channel Information** buttons open a window where you can, respectively, query additional channel information to an Oracle database, or see the raw SNMP Channel information coming from the SNMP table of the devices.
 
-#### Database Settings Sub-Page
-Here it is possible to query additional information to an Oracle database, including Channel Names and Key Times. For these to be retrieved successfully, you need to specify the IP of the database, the instance of the table, the username and the password before doing any requests to the database.
+In addition, the **Database Settings** and **SNMP Channel Information** buttons open the following subpages:
 
-#### SNMP Channel Information Sub-Page
-In this sub-page it is possible to see the raw SNMP table Channel information from the RTES devices before being processed into the Channel Performance table.
+- **Database Settings**: Allows you to query additional information from an Oracle database, including Channel Names and Key Times. For these to be retrieved successfully, before doing any requests to the database, you need to specify the IP of the database, the instance of the table, the username and the password.
+- **SNMP Channel Information**: Displays the raw SNMP table Channel information from the RTES devices before it is processed into the Channel Performance table.
 
 ### Channel Health Page
 
-This page contains a table with the bit rate of each channel for both devices, and shows whether the channel bitrate is between the **Minimum** and **Maximum Rate** defined on the **Stream Settings** page, if that channel's Stream Type is defined. If the rate of a channel is outside of the expected boundaries for its defined Stream Type, it will be considered as a Faulty channel for that server. If that is the case, it will add its Weight Factor to the total Error Value of that server, which is used to determine the Server Preference used for redundancy.
+This page contains a table with the bit rate of each channel for both devices, and shows whether the channel bitrate is between the **Minimum** and **Maximum Rate** defined on the **Stream Settings** subpage, if that channel's stream type is defined. If the rate of a channel is outside of the expected boundaries for its defined stream type, it will be considered a faulty channel for that server. If that is the case, its weight factor will be added to the total error Value of that server, which is used to determine the server preference used for redundancy.
 
-This page also displays the current server preference, and both health and timeout status of each server. Additionally, there is a Sub-Page button which will open a window to define and configure the Stream Types used to label each channel's expected rates.
+This page also displays the current server preference, and both health and timeout status of each server.
 
-#### Stream Settings Sub-Page
+Additionally, a page button opens the **Stream Settings** subpage, where you can configure the stream types used to label each channel's expected rates. The following parameters can be configured for each stream type:
 
-On this sub-page, you can create, edit and delete information about a Stream Type. The configurable values are the **Minimum Rate**, **Maximum Rate** and **Weight Factor**.
-- Minimum Rate: Defines the expected Minimum Rate for a channel with the declared Stream Type.
-- Maximum Rate: Defines the expected Maximum Rate for a channel with the declared Stream Type.
-- Weight Factor: Defines the Error Value associated to a deviation of the rate for a channel with the declared Stream Type, representing the weight for redundancy to consider for the deviation when evaluating Server Preference.
+- **Minimum Rate**: Determines the expected minimum rate for a channel with the declared stream type.
+- **Maximum Rate**: Determines the expected maximum rate for a channel with the declared stream type.
+- **Weight Factor**: Determines the error value associated with a deviation of the rate for a channel with the declared stream type, representing the weight for redundancy to consider for the deviation when evaluating server preference.
 
-
-## Usage (version 2.0.2.X and below)
+## Usage (version 2.0.2.x and lower)
 
 ### General Page
 
@@ -91,7 +85,7 @@ This page displays general information and system information on both devices.
 
 ### Stream Settings Page
 
-On this page, you can configure the type of stream, and configure some key values, such as the **Minimum Rate**, **Maximum Rate** and **Weight Factor**.
+On this page, you can configure the type of stream, and configure some key values, such as the **Minimum Rate**, **Maximum Rate**, and **Weight Factor**.
 
 ### Channel Performance Page
 
@@ -101,7 +95,7 @@ In addition, the **Channel Names** page button opens a window where you can get 
 
 ### Channel Health Page
 
-This page contains a table with the bit rate of each channel for both devices, and shows whether the channel bitrate is between the **Minimum** and **Maximum Rate** defined on the **Stream Settings** page for that type of stream.
+This page contains a table with the bit rate of each channel for both devices. It shows whether the channel bitrate is between the **Minimum** and **Maximum Rate** defined on the **Stream Settings** page for that type of stream.
 
 The page also includes information about the communication status of each device, and a parameter that indicates which is the preferred device.
 
