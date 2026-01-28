@@ -14,7 +14,7 @@ With this connector, you can monitor a redundant pair of **Verimatrix RTES** dev
 
 - **Channel information and health**: Monitor the state of each individual channel side by side with its redundant counterpart. Channel names and their key times can optionally also be polled from an Oracle database.
 
-- **Configure your redundancy system based on channel health**: You can define stream types and their expected rate intervals, and assign them to the channels of your choosing. Server Preference will dictate which server will have the best conditions for encryption in near real-time, which you can then combine with the redundancy solution of your choosing to redirect the 
+- **Configure your redundancy system based on channel health**: You can define stream types and their expected rate intervals, and assign them to the channels of your choosing. Server Preference will dictate which server will have the best conditions for encryption in near real-time, which you can then combine with the redundancy solution of your choosing to reroute the network automatically and assure optimal uptime from your encryption device pair.
 
 - **Main element and separate DVE elements**: This connector will create two separate DVE elements on the same view as the parent element, each one representing and displaying information of a different Verimatrix RTES device connected to it.
 
@@ -22,9 +22,9 @@ With this connector, you can monitor a redundant pair of **Verimatrix RTES** dev
 
 ## Use Case
 
-**Challenge**: Two redundant devices can display fluctuating behavior over time, while expected or unexpected disconnections can occur at any time, which should be handled as much as possible by their redundant partner at a moment's notice, preferably automatically.
+**Challenge**: Two redundant devices can display fluctuating behavior over time, while expected or unexpected disconnections can occur at a moment's notice and idependently from one another. Preferably, this system should provide optimal uptime for its encryption service, as encryption should be handled as much as possible by the healthiest device at any time, ideally with as little human intervention needed as possible.
 
-**Solution**: By setting up and using the provided connector, you can have data of both devices displayed at the same time so both monitoring and server preference can be provided for the current pair of devices, which can then be completed by their redundancy solution of choice.
+**Solution**: By setting up and using the provided connector, you can have data of both devices displayed at the same time so both monitoring and server preference can be provided for the current pair of devices. These can then be complemented by a redundancy solution of choice, monitoring the current server preference dicteted by the driver, to assure optimal uptime from your pair of encryption devices.
 
 **Benefit**: This solution provides a way to keep a redundant pair of Verimatrix RTES devices in function by analyzing their connection status and channel health states in near real-time, providing the tools necessary for both redundancy and data visualization, unified into a single connector.
 
