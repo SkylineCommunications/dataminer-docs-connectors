@@ -6,13 +6,13 @@ uid: Connector_help_Verimatrix_RTES_Pair
 
 ## About
 
-With this connector, you can monitor a redundant pair of **Verimatrix RTES** devices using SNMP. Two SNMP connections are used to connect to the two RTES devices. Through HTTP SOAP communication, the connector also allows you to retrieve the names and key times of the channels that are defined in an Oracle database.
+With this connector, you can monitor a redundant pair of **Verimatrix RTES** (Real-Time Encryption System) devices using SNMP. Two SNMP connections are used to connect to the two RTES devices. Through HTTP SOAP communication, the connector also allows you to retrieve the names and key times of the channels that are defined in an Oracle database.
 
 ## Key Features
 
 - **Monitor your redundant pair of Verimatrix RTES devices**: Monitor and visualize the state of your two Verimatrix RTES devices side by side.
 
-- **Channel information and health**: Monitor the state of each individual channel side by side with its redundant counterpart. Channel names and their key times can optionally also be polled from an Oracle database.
+- **Channel information and health**: Keep track of the state of each individual channel side by side with its redundant counterpart. Channel names and their key times can optionally also be polled from an Oracle database.
 
 - **Configure your redundancy system based on channel health**: You can define stream types and their expected rate intervals, and assign them to the channels of your choosing. Server Preference will dictate which server will have the best conditions for encryption in near real-time, which you can then combine with the redundancy solution of your choosing to reroute the network automatically and assure optimal uptime from your encryption device pair.
 
@@ -22,9 +22,9 @@ With this connector, you can monitor a redundant pair of **Verimatrix RTES** dev
 
 ## Use Case
 
-**Challenge**: Two redundant devices can display fluctuating behavior over time, while expected or unexpected disconnections can occur at a moment's notice and idependently from one another. Preferably, this system should provide optimal uptime for its encryption service, as encryption should be handled as much as possible by the healthiest device at any time, ideally with as little human intervention needed as possible.
+**Challenge**: Two redundant devices can display fluctuating behavior over time, while expected or unexpected disconnections can occur at a moment's notice and independently from one another. Preferably, this system should provide optimal uptime for its encryption service, as encryption should be handled by the healthiest device at any point in time, ideally with as little human intervention needed as possible.
 
-**Solution**: By setting up and using the provided connector, you can have data of both devices displayed at the same time so both monitoring and server preference can be provided for the current pair of devices. These can then be complemented by a redundancy solution of choice, monitoring the current server preference dicteted by the driver, to assure optimal uptime from your pair of encryption devices.
+**Solution**: By setting up and using the provided connector, you can have data of both devices displayed at the same time so both monitoring and server preference can be provided for the current pair of devices. These can then be complemented by a redundancy solution of choice, monitoring the current server preference dictated by the driver, to ensure seamless availability between your pair of encryption devices.
 
 **Benefit**: This solution provides a way to keep a redundant pair of Verimatrix RTES devices in function by analyzing their connection status and channel health states in near real-time, providing the tools necessary for both redundancy and data visualization, unified into a single connector.
 
