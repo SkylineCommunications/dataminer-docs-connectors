@@ -45,6 +45,8 @@ It is, however required to enable the **SNMP Agent** in **Advanced element setti
 
 The controls page contains the **Operation Status** and **Config Status** parameters.
 
+The DNF Timeout Time has a range of 10s to 60s and its default timeout duration is set to the maximum of 60s. This should be adjusted to a shorter duration if timeouts of the device are not being picked up by the element quickly enough. However, do note that this also increases the risks of false timeouts being caught if there are network connectivity issues.
+
 ### Web Interface
 
 The device's web page. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
