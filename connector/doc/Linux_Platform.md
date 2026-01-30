@@ -4,26 +4,28 @@ uid: Connector_help_Linux_Platform
 
 # Linux Platform
 
+## About
+
 With this connector, you can monitor servers running Linux OS with SSH or with SNMP.
 
-## Supported Distributions
+### Supported Distributions
 
-- Debian-based distributions (e.g., Ubuntu, Linux Mint)
-- Red Hat-based distributions (e.g., CentOS, Fedora)
+- Debian-based distributions (for example, Ubuntu, Linux Mint)
+- Red Hat-based distributions (for example, CentOS, Fedora)
 
 > [!IMPORTANT]
-> Distributions based on BusyBox (e.g. Alpine Linux) are currently not supported for SSH. However, it is possible to monitor via SNMP if the SNMP agent is properly configured.
+> Distributions based on BusyBox (for example, Alpine Linux) are currently not supported for SSH. However, it is possible to monitor via SNMP if the SNMP agent is properly configured.
 
 ## Configuration
 
-### SNMP connection
+### SNMP Connection
 
 - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
 - **Port number:** The port of the connected device, by default 161.
 - **Get community string:** The community string in order to read from the device, by default *public*.
 - **Set community string:** The community string in order to set to the device, by default *private*.
 
-### Serial connection
+### Serial Connection
 
 - **IP address/host:** The polling IP of the Linux platform.
 - **IP port:** The IP port of the device, by default *22* (SSH).
@@ -47,7 +49,7 @@ The page contains several page buttons:
 - **Configuration**: Allows you to specify the SSH username and password and to choose the connection type.
 
 > [!IMPORTANT]
-> When in SSH Mode, the Processor table will use different indexes for each processor, since there is no way to match the indexes with SNMP. This means **switching between SSH and SNMP will lead to loss of alarm and trend data**.
+> When in SSH Mode, the Processor table will use different indexes for each processor, as there is no way to match the indexes with SNMP. This means **switching between SSH and SNMP will lead to loss of alarm and trend data**.
 
 ### Task Manager
 
@@ -87,7 +89,7 @@ This page displays the **Software Installed** table, which lists the software in
 
 ### HP/Dell
 
-In case this connector is monitoring a Linux host running on a physical server, you could enable the HP/Dell monitoring options (depending on the server brand) to get additional information (see parameters **Poll HP Parameters** and **Poll Dell Parameters**).
+In case this connector is monitoring a Linux host running on a physical server, you can enable the HP/Dell monitoring options (depending on the server brand) to get additional information (see parameters **Poll HP Parameters** and **Poll Dell Parameters**).
 
 >[!IMPORTANT]
 > In case you plan to monitor HP/Dell metrics, the SNMP connection of the element must be configured with the IP address assigned to the management interface of the physical server (iLO for HP and iDRAC for Dell).
@@ -103,7 +105,7 @@ The following page buttons allow access to additional virtual server info:
 
 ## DataMiner Connectivity Framework (DCF)
 
-Currently, this main connector range doesn't support the DataMiner Connectivity Framework (DCF).
+Currently, this main connector range does not support the DataMiner Connectivity Framework (DCF).
 
 ## Notes
 
