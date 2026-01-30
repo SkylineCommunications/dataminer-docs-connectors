@@ -22,22 +22,23 @@ Sets can be performed from the connector, and will be updated, depending on the 
 
 | Range | Supported Firmware Version |
 |------------------|-----------------------------|
-| 1.0.0.x          | V 2.2                       |
+| 1.0.0.x          | V 2.33F                       |
 
 ## Installation and configuration
 
 ### Creation
 
-#### Virtual connection
+#### SNMP connection
 
-This connector uses a virtual connection and does not require any input during element creation.
+This connector uses an SNMP connection to do SNMP Sets to the device.
+- IP Address - The IP address you will access with the device.
 
 ### Configuration of ...
 
 It is, however required to enable the **SNMP Agent** in **Advanced element settings** in the **edit** menu.
 
-- Virtual IP Address - The IP address you will access with the device.
-- Subnet Mask - The subnet mask for this IP
+- Port Number - The port number you will access with the device.
+- Include timeout - This setting needs to be **disabled** to prevent unnecessary timeouts on the main connection. The timeouts on the element will still occur when the device stops sending traps.
 
 ## Usage
 
