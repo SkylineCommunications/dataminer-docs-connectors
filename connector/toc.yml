@@ -10499,8 +10499,11 @@
     topicUid: Connector_help_Verimatrix_RTES
   - name: Verimatrix RTES Pair
     topicUid: Connector_help_Verimatrix_RTES_Pair
-  - name: Verimatrix RTES Pair - DVE
-    topicUid: Connector_help_Verimatrix_RTES_Pair_-_DVE
+    items:
+    - name: Verimatrix RTES Pair
+      topicUid: Connector_help_Verimatrix_RTES_Pair_Technical
+    - name: Verimatrix RTES Pair - DVE
+      topicUid: Connector_help_Verimatrix_RTES_Pair_-_DVE
   - name: Verimatrix Video PreProcessor
     topicUid: Connector_help_Verimatrix_Video_PreProcessor
 - name: Verizon
