@@ -4,18 +4,20 @@ uid: Connector_help_Linux_Platform_obsolete_versions
 
 # Linux Platform (Obsolete Versions)
 
+## About
+
 With this connector, you can monitor servers running Linux OS with SSH or with SNMP.
 
 >[!IMPORTANT]
-> This documentation covers obsolete versions of the Linux Platform connector (1.0.0.x - 1.1.1.x). For the latest version, refer to [Linux Platform](xref:Connector_help_Linux_Platform).
+> This documentation covers obsolete versions of the Linux Platform connector (**1.0.0.x - 1.1.1.x**). For the latest version, refer to [Linux Platform](xref:Connector_help_Linux_Platform).
 
-## Supported Distributions
+### Supported Distributions
 
-- Debian-based distributions (e.g., Ubuntu, Linux Mint)
-- Red Hat-based distributions (e.g., CentOS, Fedora)
+- Debian-based distributions (for example, Ubuntu, Linux Mint)
+- Red Hat-based distributions (for example, CentOS, Fedora)
 
 > [!IMPORTANT]
-> Distributions based on BusyBox (e.g. Alpine Linux) are currently not supported for SSH. However, it is possible to monitor via SNMP if the SNMP agent is properly configured.
+> Distributions based on BusyBox (for example, Alpine Linux) are currently not supported for SSH. However, it is possible to monitor via SNMP if the SNMP agent is properly configured.
 
 ## Configuration
 
@@ -69,7 +71,7 @@ This page displays all interfaces and Tx-related data rates.
 
 ### HP/Dell (1.1.1.x only)
 
-From version **1.1.1.x** onwards, in case this connector is monitoring a Linux host running on a physical server, you could enable the HP/Dell monitoring options (depending on the server brand) to get additional information (see parameters **Poll HP Parameters** and **Poll Dell Parameters**).
+From version **1.1.1.x** onwards, in case this connector is monitoring a Linux host running on a physical server, you can enable the HP/Dell monitoring options (depending on the server brand) to get additional information (see parameters **Poll HP Parameters** and **Poll Dell Parameters**).
 
 >[!IMPORTANT]
 > In case you plan to monitor HP/Dell metrics, the SNMP connection of the element must be configured with the IP address assigned to the management interface of the physical server (iLO for HP and iDRAC for Dell).
