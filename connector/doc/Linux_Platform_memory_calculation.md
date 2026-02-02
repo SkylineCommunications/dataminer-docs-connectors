@@ -4,7 +4,7 @@ uid: Connector_help_Linux_Platform_Memory_Calculation
 
 # Memory Calculation
 
-This document describes how the Linux Platform connector calculates memory-related parameters. The connector supports two connection types—SSH and SNMP—each with its own method for retrieving and computing memory metrics such as real memory, swap memory, and physical memory usage.
+Below, you can find how the Linux Platform connector calculates memory-related parameters. The connector supports two connection types (SSH and SNMP), each with its own method for retrieving and computing memory metrics such as real memory, swap memory, and physical memory usage.
 
 The sections below detail the parameters retrieved from the system, the formulas used for calculated values, and the mapping between raw system data and connector parameters.
 
