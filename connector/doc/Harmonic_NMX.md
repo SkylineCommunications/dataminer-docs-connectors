@@ -8,19 +8,6 @@ Harmonic's NMX Digital Service Manager is a video network management solution, e
 
 ## About
 
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | - | - |
-| 2.0.0.x | Initial version SNMP. | - | - |
-| 3.0.0.x | DVE integration. | - | - |
-| 4.0.0.x | Parsing XML with LINQ, streams per device. | - | - |
-| 4.0.1.x | Smart-serial conversion. | - | - |
-| 4.1.0.x [Obsolete] | REST API communication. | 4.0.1.5 | - |
-| 4.1.1.x [Obsolete] | - REST API refactored. <br>- Enhancement of HTTP data relations and organization. | 4.1.0.3 | - Primary/display keys changed. <br>- Possible impact on monitoring and trending. |
-| 4.2.0.x [SLC Main] | Added WebSocket connection. New firmware version support. Possible to select regular HTTP polling or WebSocket communication. | 4.1.1.22 | If you use a range supporting firmware 8, you will need to configure the new WebSocket connection. |
-
 ### Product Info
 
 | Range     | Supported Firmware     |
