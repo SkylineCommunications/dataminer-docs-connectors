@@ -8,7 +8,6 @@ Harmonic's NMX Digital Service Manager is a video network management solution, e
 
 ## About
 
-
 ### Product Info
 
 | Range     | Supported Firmware     |
