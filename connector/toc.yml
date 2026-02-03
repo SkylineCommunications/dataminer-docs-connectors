@@ -1794,6 +1794,11 @@
     topicUid: Connector_help_Blankom_B-Nova
   - name: Blankom HCB-200
     topicUid: Connector_help_Blankom_HCB-200
+  - name: Blankom DRD-700
+    topicUid: Connector_help_Blankom_DRD-700
+    items:
+      - name: Blankom DRD-700 Technical
+        topicUid: Connector_help_Blankom_DRD-700_Technical
 - name: Blue Coat
   items:
   - name: Blue Coat Packet Shaper
