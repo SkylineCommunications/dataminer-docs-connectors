@@ -6,107 +6,50 @@ uid: Connector_help_Linux_Platform
 
 ## About
 
-With this connector, you can monitor servers running Linux OS with SSH or with SNMP.
+The Linux Platform connector allows users to achieve comprehensive, real-time monitoring of their Linux-based servers. Leveraging Linux system tools and commands, this connector provides deep visibility on system performance, health metrics, and operational status, ensuring proactive management and swift issue resolution.
 
-### Supported Distributions
+## Key Benefits
 
-- Debian-based distributions (for example, Ubuntu, Linux Mint)
-- Red Hat-based distributions (for example, CentOS, Fedora)
+- **Broad compatibility**: Supports a wide range of Linux distributions, ensuring seamless integration across diverse server environments.
 
-> [!IMPORTANT]
-> Distributions based on BusyBox (for example, Alpine Linux) are currently not supported for SSH. However, it is possible to monitor via SNMP if the SNMP agent is properly configured.
+- **Comprehensive monitoring**: Captures a wide array of performance indicators, including CPU usage, memory consumption, disk activity, network interfaces, and running processes.
 
-## Configuration
+- **Scalable integration**: Designed to integrate effortlessly within the DataMiner ecosystem, enabling centralized monitoring and management of IT infrastructures.
 
-### SNMP Connection
+- **Security and compliance**: Utilizes secure SSH connections, aligning with organizational security protocols and compliance requirements. Additionally, the connector supports SNMP for environments where SSH access is restricted.
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **Port number:** The port of the connected device, by default 161.
-- **Get community string:** The community string in order to read from the device, by default *public*.
-- **Set community string:** The community string in order to set to the device, by default *private*.
+## Use Cases
 
-### Serial Connection
+### Comprehensive Server Performance Monitoring
 
-- **IP address/host:** The polling IP of the Linux platform.
-- **IP port:** The IP port of the device, by default *22* (SSH).
+The connector utilizes standard Linux commands to collect key performance indicators from servers running various Linux distributions. This includes monitoring CPU usage, memory consumption, disk activity, and network interface statistics.
 
-### Configuration SSH
+![Linux Platform Performance Monitoring](~/connector/images/linux_platform_marketing_performance_monitoring.png)
 
-In the **General page**, click **Configuration** to set up the **SSH configuration** and to select the connection type, **SNMP** or **SSH**.
+### Process and Task Monitoring
 
-## Usage
+Through the process management capabilities, the connector provides a detailed view of all processes running on the monitored server. Administrators can track active processes, monitor their resource usage, and set up alarms for specific process behaviors, such as unexpected terminations or high resource consumption. This facilitates efficient process management and ensures that critical applications remain operational.
 
-### General
+Additionally, the connector supports the tracking of specific processes by name, enabling you to monitor their availability and receive alerts when they stop or fail to start.
 
-This page displays general information regarding the Linux platform, such as **Device info**, **Total Processor Load**, **Memory usage**, etc.
+![Linux Platform Process Management](~/connector/images/linux_platform_marketing_process_monitoring.png)
 
-The page contains several page buttons:
+### Network Interface and Port Monitoring
 
-- **Ping**: Allows you to configure the ping definitions.
-- **Load**: Displays load information.
-- **Raw CPU**: Displays detailed information on CPU usage.
-- **Processor**: Displays processor load information.
-- **Configuration**: Allows you to specify the SSH username and password and to choose the connection type.
+The connector enables monitoring of network adapters, providing data on bandwidth utilization and adapter status. It also offers port monitoring capabilities to verify whether specific ports are open or closed and to measure response delays. This is crucial for ensuring network connectivity and diagnosing potential communication issues.
 
-> [!IMPORTANT]
-> When in SSH Mode, the Processor table will use different indexes for each processor, as there is no way to match the indexes with SNMP. This means **switching between SSH and SNMP will lead to loss of alarm and trend data**.
+![Linux Platform Network Monitoring](~/connector/images/linux_platform_marketing_network_interfaces.png)
 
-### Task Manager
+### Hardware Health Monitoring
 
-This page contains the **Task Manager** table, which lists the processes that are active on the server.
+For servers manufactured by Dell and HP, the connector provides hardware-specific monitoring features. This includes tracking parameters like temperature, power supply status, fan speeds, CPU health, and memory information. Such detailed hardware monitoring helps in maintaining optimal operating conditions and preventing hardware failures.
 
-Note that if the **Communication Type** is *SSH* (on the Configuration page), the **CPU Load** of a process can exceed 100% if the process uses multiple cores. If a process is multi-threaded, it can use multiple cores simultaneously. For example, if you run a multi-threaded application like a video encoder or a scientific computation tool, it might show 300% CPU load on a quad-core system. This means it is using three cores fully. 200% CPU load means two cores are fully utilized, and so on. The **Normalized CPU Load** column shows the CPU load per process in the range of 0% to 100%.
+## Technical Reference
 
-In addition, the **Process Validation** table allows you to validate whether a given process is still running upon each new polling cycle.
-When you add a process to validate, you will be able to select it from a prepopulated list of the current processes.
+### Prerequisites
 
-### Network Info
+- **SSH access**: The connector relies on SSH for data collection, so the target machines must have SSH enabled and accessible.
+- **SNMP access**: If SNMP is used as the communication protocol, ensure that the SNMP agent is properly configured on the target Linux machines.
 
-This page lists the information about the network interfaces.
-
-### Memory Info
-
-This page displays memory information, such as the **Available Physical Memory**, **Total Physical Memory**, and **Memory Usage**.
-
-### Disks Info
-
-This page contains the following tables:
-
-- **Disks**: Displays information on the disks, such as the **Total Size**, **Available Space**, and **Used Percentage**.
-- **Disks IO**: Displays the disks' read/write information.
-
-In case the connector is set to poll the Linux host using SNMP protocol, the **Disks IO** and **Disk** tables will only show data if the configuration setting of the SNMP agent allows it. Please refer to the documentation of the SNMP agent (snmpd.conf man page) for more information on how to enable this setting. For example, in Net-SNMP, it is required to add the following setting to the snmpd.conf file:
-
-```text
-includeAllDisks MINPERCENT%
-```
-
-This setting will configure monitoring of all disks using the specified (percentage) threshold.
-
-### Software Info
-
-This page displays the **Software Installed** table, which lists the software installed on the server.
-
-### HP/Dell
-
-In case this connector is monitoring a Linux host running on a physical server, you can enable the HP/Dell monitoring options (depending on the server brand) to get additional information (see parameters **Poll HP Parameters** and **Poll Dell Parameters**).
-
->[!IMPORTANT]
-> In case you plan to monitor HP/Dell metrics, the SNMP connection of the element must be configured with the IP address assigned to the management interface of the physical server (iLO for HP and iDRAC for Dell).
-
-### Virtual Server
-
-This page displays general information about the virtual server. It also allows you to enable/disable **Poll LVS Parameters** to receive the data in question.
-
-The following page buttons allow access to additional virtual server info:
-
-- **LVS Real Table**
-- **Service Table**
-
-## DataMiner Connectivity Framework (DCF)
-
-Currently, this main connector range does not support the DataMiner Connectivity Framework (DCF).
-
-## Notes
-
-For additional technical information, refer to [Linux Platform - SNMP Mapping](xref:Connector_help_Linux_Platform_snmp_Mapping) and [Memory Calculation](xref:Connector_help_Linux_Platform_Memory_Calculation).
+> [!NOTE]
+> For detailed technical information, refer to out [technical information](xref:Connector_help_Linux_Platform_Technical)
