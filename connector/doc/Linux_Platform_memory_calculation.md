@@ -8,8 +8,8 @@ Below, you can find how the Linux Platform connector calculates memory-related p
 
 The sections below detail the parameters retrieved from the system, the formulas used for calculated values, and the mapping between raw system data and connector parameters.
 
-> [!IMPORTANT]
-> The below calculations are available starting from version 2.0.2.8.
+> [!NOTE]
+> The calculations below are used starting from version 2.0.2.8 (see [Changes in Range 2.0.x Compared to Earlier Ranges](#changes-in-range-20x-compared-to-earlier-ranges)).
 
 | Parameter Name                   | PID | Display              | SSH Command    | SNMP OID                     | Comments                        |
 | -------------------------------- | --- | -------------------- | -------------- | -----------------------------| ------------------------------- |
@@ -122,17 +122,19 @@ $$
 \end{equation}
 $$
 
-## Additional Changes
+## Changes in Range 2.0.x Compared to Earlier Ranges
 
-- The following parameters were renamed to better reflect their purpose:
+- The following parameters have been renamed to better reflect their purpose:
+
   - Total Physical Memory (PID: 172) is now Total Memory.
   - Available Physical Memory (PID: 112) is now Available Memory.
   - Used Physical Memory (PID: 113) is now Memory Used.
 
-- The following parameters were removed as they are no longer necessary due to the updated calculations:
+- The following parameters have been removed as they are no longer necessary due to the updated calculations:
+
   - Actual Available Physical Memory (PID: 173)
   - Actual Used Physical Memory (PID: 123)
   - Actual Physical Memory Usage (PID: 174)
   - Physical Memory Usage (PID: 124)
 
-- For SNMP, the available memory was retrieved initially using the  OID: 1.3.6.1.4.1.2021.4.11.0 (`MemTotalFree`), which has now been replaced with OID: 1.3.6.1.4.1.2021.4.6.0 to align with the SSH command `MemAvailable`.
+- For SNMP, the available memory was retrieved initially using the OID 1.3.6.1.4.1.2021.4.11.0 (`MemTotalFree`), which has now been replaced with OID 1.3.6.1.4.1.2021.4.6.0 to align with the SSH command `MemAvailable`.
