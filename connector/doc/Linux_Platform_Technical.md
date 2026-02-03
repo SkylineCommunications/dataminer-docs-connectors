@@ -91,7 +91,7 @@ This page displays the **Software Installed** table, which lists the software in
 
 In case this connector is monitoring a Linux host running on a physical server, you can enable the HP/Dell monitoring options (depending on the server brand) to get additional information (see parameters **Poll HP Parameters** and **Poll Dell Parameters**).
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > In case you plan to monitor HP/Dell metrics, the SNMP connection of the element must be configured with the IP address assigned to the management interface of the physical server (iLO for HP and iDRAC for Dell).
 
 ### Virtual Server

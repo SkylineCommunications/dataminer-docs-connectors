@@ -16,7 +16,7 @@ The Linux Platform connector allows users to achieve comprehensive, real-time mo
 
 - **Scalable integration**: Designed to integrate effortlessly within the DataMiner ecosystem, enabling centralized monitoring and management of IT infrastructures.
 
-- **Security and compliance**: Utilizes secure SSH connections, aligning with organizational security protocols and compliance requirements. Additionally, it supports SNMP for environments where SSH access is restricted.
+- **Security and compliance**: Utilizes secure SSH connections, aligning with organizational security protocols and compliance requirements. Additionally, the connector supports SNMP for environments where SSH access is restricted.
 
 ## Use Cases
 
@@ -28,15 +28,15 @@ The connector utilizes standard Linux commands to collect key performance indica
 
 ### Process and Task Monitoring
 
-Through the process management capabilities, the connector provides a detailed view of all processes running on the monitored server. Administrators can track active processes, monitor their resource usage, and set up alarms for specific process behaviors, such as unexpected terminations or high resource consumption. This facilitates efficient process management and ensures critical applications remain operational.
+Through the process management capabilities, the connector provides a detailed view of all processes running on the monitored server. Administrators can track active processes, monitor their resource usage, and set up alarms for specific process behaviors, such as unexpected terminations or high resource consumption. This facilitates efficient process management and ensures that critical applications remain operational.
 
-Additionally, the connector supports tracking specific processes by name, enabling you to monitor their availability and receive alerts when they stop or fail to start.
+Additionally, the connector supports the tracking of specific processes by name, enabling you to monitor their availability and receive alerts when they stop or fail to start.
 
 ![Linux Platform Process Management](~/connector/images/linux_platform_marketing_process_monitoring.png)
 
 ### Network Interface and Port Monitoring
 
-The connector enables monitoring of network adapters, providing data on bandwidth utilization and adapter status. Additionally, it offers port monitoring capabilities to verify whether specific ports are open or closed and to measure response delays. This is crucial for ensuring network connectivity and diagnosing potential communication issues.
+The connector enables monitoring of network adapters, providing data on bandwidth utilization and adapter status. It also offers port monitoring capabilities to verify whether specific ports are open or closed and to measure response delays. This is crucial for ensuring network connectivity and diagnosing potential communication issues.
 
 ![Linux Platform Network Monitoring](~/connector/images/linux_platform_marketing_network_interfaces.png)
 

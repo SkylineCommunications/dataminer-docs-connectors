@@ -5762,7 +5762,7 @@
     items:
     - name: Linux Platform Technical
       topicUid: Connector_help_Linux_Platform_Technical
-    - name: Linux Platform (Obsolete versions)
+    - name: Linux Platform (Obsolete Versions)
       topicUid: Connector_help_Linux_Platform_obsolete_versions
     - name: Linux Platform SNMP Mapping
       topicUid: Connector_help_Linux_Platform_snmp_Mapping
