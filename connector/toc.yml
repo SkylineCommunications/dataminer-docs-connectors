@@ -3150,6 +3150,10 @@
     topicUid: Connector_help_Eltek_Smartpack_S
   - name: Eltek WebPower
     topicUid: Connector_help_Eltek_WebPower
+- name: ELTI
+  items:
+  - name: ELTI TERX Series
+    topicUid: Connector_help_ELTI_TERX_Series
 - name: EM Solutions
   items:
   - name: EM Solutions Cobra Maritime Terminal 368B
