@@ -6,7 +6,7 @@ uid: Connector_help_ELTI_TERX_Series
 
 ## About
 
-The ELTI TERX Series connector can be used to monitor an array of ELTI TERX transmitters designed for digital TV networks.
+The ELTI TERX Series connector can be used to monitor an array of ELTI TERX transmitters designed for digital TV networks. The ELTI TERX acts as an agent with information about two transmitters plus a third reserved transmitter.
 
 ## Key Features
 
