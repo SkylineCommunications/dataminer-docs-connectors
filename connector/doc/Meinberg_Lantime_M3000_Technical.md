@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Meinberg_Lantime_M3000
+uid: Connector_help_Meinberg_Lantime_M3000_Technical
 ---
 
 # Meinberg Lantime M3000
