@@ -13,13 +13,15 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 | Range                | Key Features         | Based on     | System Impact                      |
 |----------------------|----------------------|--------------|------------------------------------|
 | 1.0.0.x              | Initial version      | -            | -                                  |
-| 1.0.1.x [SLC Main]   | Outputs table added  | 1.0.0.7      | Columns removed from Assets Table  |
+| 1.0.1.x			   | Outputs table added  | 1.0.0.7      | Columns removed from Assets Table  |
+| 1.0.2.x [SLC Main]   | Volatile Traps table | 1.0.1.2      | No more alarming on traps		  |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.1.x   | v4.20.4                |
+| 1.0.2.x   | v4.20.4                |
 
 ### System Info
 
@@ -27,6 +29,7 @@ The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -40,7 +43,6 @@ SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
-- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
