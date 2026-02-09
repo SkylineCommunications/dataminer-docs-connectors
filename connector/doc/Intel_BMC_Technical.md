@@ -2,7 +2,7 @@
 uid: Connector_help_Intel_BMC_Technical
 ---
 
-# Connector technical documentation
+# Intel BMC
 
 ## About
 
