@@ -8963,6 +8963,11 @@
     topicUid: Connector_help_Skyline_Mediation_IRD
   - name: Skyline Media Asset Management
     topicUid: Connector_help_Skyline_Media_Asset_Management
+  - name: Skyline Mode Configuration Manager
+    topicUid: Connector_help_Skyline_Mode_Configuration_Manager
+    items:
+      - name: Skyline Mode Configuration Manager Technical
+        topicUid: Connector_help_Skyline_Mode_Configuration_Manager_Technical
   - name: Skyline Modulator Simulation
     topicUid: Connector_help_Skyline_Modulator_Simulation
     items:
