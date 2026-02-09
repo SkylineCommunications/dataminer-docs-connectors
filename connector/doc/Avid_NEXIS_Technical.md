@@ -2,7 +2,7 @@
 uid: Connector_help_Avid_NEXIS_Technical
 ---
 
-# Connector technical documentation
+# Avid NEXIS
 
 ## About
 
