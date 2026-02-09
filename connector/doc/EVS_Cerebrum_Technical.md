@@ -17,7 +17,7 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
 | 1.0.1.x [Obsolete] | New version because of invalid connector integration. | - | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
 | 1.0.2.x [Obsolete] | New version because of InterApp update to 1.0.1.x. | - | InterApp communication possibly not backwards compatible. |
-| 1.1.0.x [Main] | Connector is updated to represent a Cerebrum system instead of a Cerebrum server.  | - | Element connections need to be re-configured. |
+| 1.1.0.x [Main] | Connector is updated to represent a Cerebrum system instead of a Cerebrum server.  | - | Element connections need to be reconfigured. |
 
 ### Product Info
 
@@ -181,6 +181,7 @@ This page provides an overview of statistics related to the WebSocket API.
 ### Failover System
 
 Most Cerebrum systems consist of both a primary and a secondary server. At any point in time, only one of these servers will be "active", and the other will be in an "inactive" state.
+
 While a connection can always be made to both servers, the inactive server will only respond to the LOGIN and POLL command.
 The configuration of the WebSocket-related subscription items is only applicable for the Cerebrum server acting as the active server.
 When the **System Controller State** changes to *Enabled*, the Cerebrum server acts as the active server and the WebSocket subscriptions are made.
@@ -192,23 +193,23 @@ However, as this method does not confirm network connectivity from the client to
 
 ## Upgrade Procedures
 
-### Upgrade from connector range 1.0.1.x / 1.0.2.x to connector range 1.1.0.x
+### Upgrade from ranges 1.0.1.x or 1.0.2.x to 1.1.0.x
 
 When upgrading from connector ranges 1.0.1.x or 1.0.2.x to 1.1.0.x, it is important to follow the procedure described below to minimize system impact.
 When the procedure is applied correctly, there should be no significant system impact, and any data loss should be negligible or non-existent.  
 
-If your system uses the **production version** feature and you intend to designate the new connector range as the production version, not that the upgrade procedure described below must be applied to **all elements using the production version**.
+If your system uses the **production version** feature and you intend to designate the new connector range as the production version, note that the upgrade procedure described below must be applied to **all elements using the production version**.
 Additionally, the production version must **not** be changed until explicitly indicated in the procedure.
 
-Procedure
-1. Stop the DataMiner elements that need to be upgraded to connector range 1.1.0.x.
-*\If the production version feature is used, this includes all elements currently running the production version./*
+Procedure:
+1. Stop the DataMiner elements that need to be upgraded to connector range 1.1.0.x.<br/>
+  *If the production version feature is used, this includes all elements currently running the production version.*
 2. If applicable to your system setup, configure connector range 1.1.0.x as the prodution version.
-3. Reconfigure the DataMiner elements to use the connector range by either:
-- Selecting version 1.1.0.x in the Edit Wizard, or
-- Changing the production version (as described in the previous step).
-4. Update the DataMiner elements by reconfiguring the element connections.
-*\Typically, this only requires configuring the secondary server SNMP connection./*
+3. Reconfigure the DataMiner elements to use the connector range by either:<br/>
+Selecting version 1.1.0.x in the Edit Wizard, or<br/>
+Changing the production version (as described in the previous step).
+4. Update the DataMiner elements by reconfiguring the element connections.<br/>
+  *Typically, this only requires configuring the secondary server SNMP connection.*
 5. If applicable, restart the DataMiner elements.
 
-After completing the procedure above, the DataMiner element will have been successfully upgraded from representing a single EVS Cerebrum server to representing an EVS Cerebrum system.
+After completing the procedure above, the DataMiner elements will have been successfully upgraded from representing a single EVS Cerebrum server to representing an EVS Cerebrum system.
