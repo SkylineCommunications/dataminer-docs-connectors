@@ -1799,6 +1799,11 @@
     items:
       - name: Blankom DRD-700 Technical
         topicUid: Connector_help_Blankom_DRD-700_Technical
+  - name: Blankom DRP-393
+    topicUid: Connector_help_Blankom_DRP-393
+    items:
+      - name: Blankom DRP-393 Technical
+        topicUid: Connector_help_Blankom_DRP-393_Technical
 - name: Blue Coat
   items:
   - name: Blue Coat Packet Shaper
