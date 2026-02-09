@@ -204,12 +204,9 @@ Additionally, the production version must **not** be changed until explicitly in
 Procedure:
 1. Stop the DataMiner elements that need to be upgraded to connector range 1.1.0.x.<br/>
   *If the production version feature is used, this includes all elements currently running the production version.*
-2. If applicable to your system setup, configure connector range 1.1.0.x as the prodution version.
-3. Reconfigure the DataMiner elements to use the connector range by either:<br/>
-Selecting version 1.1.0.x in the Edit Wizard, or<br/>
-Changing the production version (as described in the previous step).
-4. Update the DataMiner elements by reconfiguring the element connections.<br/>
+2. Reconfigure the DataMiner elements to use the connector range by either:<br/>
+- Selecting version 1.1.0.x in the Edit Wizard, or<br/>
+- Changing the production version
+3. Update the DataMiner elements by reconfiguring the element connections.<br/>
   *Typically, this only requires configuring the secondary server SNMP connection.*
-5. If applicable, restart the DataMiner elements.
-
-After completing the procedure above, the DataMiner elements will have been successfully upgraded from representing a single EVS Cerebrum server to representing an EVS Cerebrum system.
+4. Restart the DataMiner elements.
