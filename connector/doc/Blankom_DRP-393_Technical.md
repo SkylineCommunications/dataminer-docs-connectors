@@ -2,7 +2,7 @@
 uid: Connector_help_Blankom_DRP-393_Technical
 ---
 
-# Blankom DRD-700
+# Blankom DRP-393
 
 ## About
 
