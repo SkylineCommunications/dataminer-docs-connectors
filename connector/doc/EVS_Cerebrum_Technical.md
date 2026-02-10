@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_EVS_Cerebrum
+uid: Connector_help_EVS_Cerebrum_Technical
 ---
 
 # EVS Cerebrum
@@ -15,8 +15,9 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version. | - | - |
-| 1.0.1.x | New version because of invalid connector integration. | - | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
-| 1.0.2.x | New version because of InterApp update to 1.0.1.x. | - | InterApp communication possibly not backwards compatible. |
+| 1.0.1.x [Obsolete] | New version because of invalid connector integration. | - | Loss of trending, alarming, saved parameters, etc. Creating a new element is recommended. |
+| 1.0.2.x [Obsolete] | New version because of InterApp update to 1.0.1.x. | - | InterApp communication possibly not backwards compatible. |
+| 1.1.0.x [Main] | Connector is updated to represent a Cerebrum system instead of a Cerebrum server.  | - | Element connections need to be reconfigured. |
 
 ### Product Info
 
@@ -25,6 +26,7 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 | 1.0.0.x   | API 0.1                |
 | 1.0.1.x   | API 0.1                |
 | 1.0.2.x   | API 0.1                |
+| 1.1.0.x   | API 0.1                |
 
 ### System Info
 
@@ -33,21 +35,26 @@ The data sent over the WebSocket connection, once initial handshakes are complet
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
 | 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
 ### Connections
 
-#### HTTP Connection
+#### WebSocket Connection
 
-This connector uses an HTTP connection and requires the following input during element creation:
+This connector uses a WebSocket connection and requires the following input during element creation:
 
 WEBSOCKET INTERFACE:
 
-- **IP address/host**: ws://*\[the polling IP or URL of the destination\]*
+- **IP address/host**: ws://*\[The polling IP of the destination]\*
 - **IP port**: The IP port of the destination, default: *40007*.
 
-#### SNMP Connection
+Note:
+If the EVS Cerebrum system is configured with a **virtual IP address**, the virtual IP address is higly recommended to be used as the polling IP.
+If no virtual IP address is configured, use the polling IP address of one of the Cerebrum servers, as the connector will automatically switch the WebSocket connection to the currently active server. 
+
+#### Primary Server SNMP Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -60,6 +67,21 @@ SNMP Settings:
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
+
+#### Secondary Server SNMP Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
 
 ### Initialization
 
@@ -76,24 +98,6 @@ The web interface is only accessible when the client machine has network access 
 ### General Page
 
 This page contains parameters related to the **system** and the **WebSocket** API.
-
-When the **System Controller State** changes to *Enabled*, the Cerebrum server acts as the active server and the WebSocket subscriptions are made.
-
-### Cortex Link Page
-
-This page provides an overview of the Cortex link **Tx**, **Rx**, and **connectivity** parameters.
-
-### Cortex Link Redundancy Page
-
-This page provides an overview of the Cortex link **redundancy** parameters.
-
-### SQL Server Info Page
-
-This page provides an overview of the **primary** and **secondary** server, and **SQL** information.
-
-### Statistics Page
-
-This page provides an overview of statistics related to the WebSocket API.
 
 ### Devices Page
 
@@ -156,10 +160,53 @@ The following options are available in the right-click menu on this page:
 
 On the **Category Sub Categories**, **Category Sources**, **Category Destinations**, and **Category Salvos** subpages, you can also use the **Delete** option in the right-click menu to delete the selected sub category item, source category item, destination category item, or salvo category item, respectively.
 
+### Cortex Link Page
+
+This page provides an overview of the Cortex link **Tx**, **Rx**, and **connectivity** parameters.
+
+### Cortex Link Redundancy Page
+
+This page provides an overview of the Cortex link **redundancy** parameters.
+
+### SQL Server Info Page
+
+This page provides an overview of the **primary** and **secondary** server, and **SQL** information.
+
+### Statistics Page
+
+This page provides an overview of statistics related to the WebSocket API.
+
 ## Notes
 
-Most Cerebrum systems consist of both a primary and a secondary server. At any point in time, only one of these servers will be "active", and the other will be in an "inactive" state. While a connection can always be made to both servers, the inactive server will only respond to the LOGIN and POLL command.
+### Failover System
 
-If a virtual IP address has been enabled within Cerebrum, this can be used to ensure that the client is always connected to the active server. However, as this method does not confirm network connectivity from the client to the currently inactive server, some provisions should be made to ensure that a connection will be available following a switch between the servers.
+Most Cerebrum systems consist of both a primary and a secondary server. At any point in time, only one of these servers will be "active", and the other will be in an "inactive" state.
 
-The configuration of the WebSocket-related subscription items is only applicable when the Cerebrum server acts as the active server.
+While a connection can always be made to both servers, the inactive server will only respond to the LOGIN and POLL command.
+The configuration of the WebSocket-related subscription items is only applicable for the Cerebrum server acting as the active server.
+When the **System Controller State** changes to *Enabled*, the Cerebrum server acts as the active server and the WebSocket subscriptions are made.
+
+### Virtual IP Address
+
+If a virtual IP address has been enabled within Cerebrum, this can be used to ensure that the client is always connected to the active server.
+However, as this method does not confirm network connectivity from the client to the currently inactive server, some provisions should be made to ensure that a connection will be available following a switch between the servers.
+
+## Upgrade Procedures
+
+### Upgrade from ranges 1.0.1.x or 1.0.2.x to 1.1.0.x
+
+When upgrading from connector ranges 1.0.1.x or 1.0.2.x to 1.1.0.x, it is important to follow the procedure described below to minimize system impact.
+When the procedure is applied correctly, there should be no significant system impact, and any data loss should be negligible or non-existent.  
+
+If your system uses the **production version** feature and you intend to designate the new connector range as the production version, note that the upgrade procedure described below must be applied to **all elements using the production version**.
+Additionally, the production version must **not** be changed until explicitly indicated in the procedure.
+
+Procedure:
+1. Stop the DataMiner elements that need to be upgraded to connector range 1.1.0.x.<br/>
+  *If the production version feature is used, this includes all elements currently running the production version.*
+2. Reconfigure the DataMiner elements to use the connector range by either:<br/>
+- Selecting version 1.1.0.x in the Edit Wizard, or<br/>
+- Changing the production version
+3. Update the DataMiner elements by reconfiguring the element connections.<br/>
+  *Typically, this only requires configuring the secondary server SNMP connection.*
+4. Restart the DataMiner elements.
