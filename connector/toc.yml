@@ -10697,6 +10697,8 @@
     topicUid: Connector_help_Vislink_Lynx_Receiver_L2174
 - name: Vitec
   items:
+  - name: Vitec EZ TV
+    topicUid: Connector_help_Vitec_EZ_TV
   - name: Vitec MGW Prism
     topicUid: Connector_help_Vitec_MGW_Prism
   - name: Vitec T9261
