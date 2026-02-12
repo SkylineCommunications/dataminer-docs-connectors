@@ -54,4 +54,4 @@ When the connector has been configured as detailed above, it will run automatica
 
 ## Notes
 
-The connector will only work in a **SAM** system containing extra connectors and **Automation scripts**
+The connector will only work in a **SAM** system containing extra connectors and **automation scripts**

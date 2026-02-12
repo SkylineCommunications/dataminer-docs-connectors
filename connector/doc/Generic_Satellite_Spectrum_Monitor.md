@@ -8,7 +8,7 @@ uid: Connector_help_Generic_Satellite_Spectrum_Monitor
 
 This protocol was created to connect with a particular **database** and with certain elements.
 
-The database contains information that is needed for the protocol to create **presets**, **spectrum scripts** and **spectrum monitors**. The spectrum scripts also do calls to an Automation script, which does sets on the ACU, Beacon Receiver and RF Switch element. The monitor then stores the trace in the history database. This makes it possible to cross reference outages with history spectrum traces.
+The database contains information that is needed for the protocol to create **presets**, **spectrum scripts** and **spectrum monitors**. The spectrum scripts also do calls to an automation script, which does sets on the ACU, Beacon Receiver and RF Switch element. The monitor then stores the trace in the history database. This makes it possible to cross reference outages with history spectrum traces.
 
 ### Version Info
 

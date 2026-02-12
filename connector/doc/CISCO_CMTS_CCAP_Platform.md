@@ -88,10 +88,10 @@ The connector is mostly self-reliant once the initial setup is done, but you can
 
 In range **1.0.3.x**:
 
-- **Script Name**: Specify the Automation script to be executed.
+- **Script Name**: Specify the automation script to be executed.
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as the Generic CM Collector and EPM connectors such as Skyline Platform EPM and Skyline Platform WM. The Correlation rules and Automation scripts must be configured and enabled to get the full functionality of this connector.
+This connector requires specific correlation rules and automation scripts for communication with auxiliary connectors such as the Generic CM Collector and EPM connectors such as Skyline Platform EPM and Skyline Platform WM. The correlation rules and automation scripts must be configured and enabled to get the full functionality of this connector.
 
 For range **1.0.2.x** of the connector, the multi-threaded timer, previously used to poll the DOCSIS version of each cable modem, was removed. As a consequence of this change, the DOCSIS version column was removed from the Cable Modems table. The versions are now polled solely by the Generic CM Collector connector.

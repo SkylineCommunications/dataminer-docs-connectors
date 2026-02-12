@@ -2,9 +2,9 @@
 uid: Connector_help_Broadcast_Automation_Systems_Equinox_TS
 ---
 
-# Broadcast Automation Systems Equinox TS
+# Broadcast automation Systems Equinox TS
 
-The Broadcast Automation Systems Equinox TS connector is capable of remotely controlling recordings by the Equinox system. It is an HTTP REST-based web service, aiming to retrieve all information.
+The Broadcast automation Systems Equinox TS connector is capable of remotely controlling recordings by the Equinox system. It is an HTTP REST-based web service, aiming to retrieve all information.
 
 The Equinox TS is a logger for transmission streams that is mainly used for video capture, media monitoring and media archiving.
 

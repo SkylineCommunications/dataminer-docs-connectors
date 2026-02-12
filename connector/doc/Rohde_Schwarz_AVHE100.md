@@ -101,6 +101,6 @@ This page contains the **Parameters** **Table**.
 
 This page contains additional system parameters, i.e. **System Overall Status**, **Software Version** and **System License and SLA Status**.
 
-### Automation
+### automation
 
-This page contains the **Execution Automation Event** and the **Timestamp Automation Event** parameters.
+This page contains the **Execution automation Event** and the **Timestamp automation Event** parameters.

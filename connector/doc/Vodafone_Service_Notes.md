@@ -48,7 +48,7 @@ The **Notes** table lists all the notes posted on the service. The context menu 
 
 ## Notes
 
-This connector has a Visio file available to allow more user-friendly interactions. The interaction between Visual Overview and the connector is managed using the provided "Edit Note.xml" Automation script.
+This connector has a Visio file available to allow more user-friendly interactions. The interaction between Visual Overview and the connector is managed using the provided "Edit Note.xml" automation script.
 
 Visio icons reference:
 

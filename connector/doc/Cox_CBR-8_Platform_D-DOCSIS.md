@@ -4,7 +4,7 @@ uid: Connector_help_Cox_CBR-8_Platform_D-DOCSIS
 
 # Cox CBR-8 Platform D-DOCSIS
 
-The CBR-8 is designed to support distributed-access architectures, remote PHY, DOCSIS 3.0 and 3.1, all video types, and software-defined networking. This connector allows you to collect all the data for the Cisco CBR-8 from KAFKA using the **Generic KAFKA Consumer** along with complementary data from auxiliary connectors, e.g. Smart PHY, Vecima RPM, HP Network Automation, etc. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
+The CBR-8 is designed to support distributed-access architectures, remote PHY, DOCSIS 3.0 and 3.1, all video types, and software-defined networking. This connector allows you to collect all the data for the Cisco CBR-8 from KAFKA using the **Generic KAFKA Consumer** along with complementary data from auxiliary connectors, e.g. Smart PHY, Vecima RPM, HP Network automation, etc. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
 ## About
 
@@ -101,4 +101,4 @@ Physical dynamic interfaces:
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as **Generic KAFKA Consumer**, **Cisco Smart PHY**, **HP Network Automation**, **Vecima RPM**, and **Cox Ceeview Platform**, and EPM connectors such as **Skyline CCAP Platform EPM** and **Skyline CCAP Platform WM**. The Correlation rules and Automation scripts must be configured and enabled in order to get the full functionality of this connector.
+This connector requires specific correlation rules and automation scripts for communication with auxiliary connectors such as **Generic KAFKA Consumer**, **Cisco Smart PHY**, **HP Network automation**, **Vecima RPM**, and **Cox Ceeview Platform**, and EPM connectors such as **Skyline CCAP Platform EPM** and **Skyline CCAP Platform WM**. The correlation rules and automation scripts must be configured and enabled in order to get the full functionality of this connector.

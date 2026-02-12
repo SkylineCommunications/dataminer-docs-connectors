@@ -50,7 +50,7 @@ The **Link ID Field Name** parameter is used to set a work item field with the l
 
 ### InterApp
 
-You can copy the code below when using this InterApp API in other connectors or Automation scripts:
+You can copy the code below when using this InterApp API in other connectors or automation scripts:
 
 ```csharp
 namespace QAction_1.InterApp.Messages

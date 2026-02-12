@@ -37,7 +37,7 @@ This connector uses a virtual connection and does not require any configuration 
 
 ### General
 
-Any incoming job is registered in the Message Log table where the primary key is the Job Message Correlation ID.
+Any incoming job is registered in the Message Log table where the primary key is the Job Message correlation ID.
 
 ![Capture2.JPG](~/connector/images/Sunrise_UPC_NetCracker_Interface_Capture2.JPG)
 

@@ -26,7 +26,7 @@ All of the info needed by the **WFM** is stored in a custom database. The connec
 
 ### DataMiner Login Info
 
-As multiple specific **DataMiner** items need to be created on the system e.g. **RCA** and **Correlation** **Rules**. A **Login** needs to be defined that will use to add these items. This is done via the **Login Info.** page button.
+As multiple specific **DataMiner** items need to be created on the system e.g. **RCA** and **correlation** **Rules**. A **Login** needs to be defined that will use to add these items. This is done via the **Login Info.** page button.
 
 ## CM Config
 

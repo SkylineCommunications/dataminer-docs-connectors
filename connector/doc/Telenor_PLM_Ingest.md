@@ -46,7 +46,7 @@ There is no redundancy defined.
 
 ## How to use
 
-The Telenor request must be set in the parameter **PLM Ingest JSON** (PID 60). This will initiate the Automation script **Telenor Norway PLM Ingest** via a specific endpoint script. This script will make sure the Standard PLM Solution will handle the request.
+The Telenor request must be set in the parameter **PLM Ingest JSON** (PID 60). This will initiate the automation script **Telenor Norway PLM Ingest** via a specific endpoint script. This script will make sure the Standard PLM Solution will handle the request.
 
 Typically the parameter is set using the **SetParameter SOAP call** available in the DataMiner API: *http://\<host name or IP\>/api/v1/soap.asmx?op=SetParameter*
 
@@ -65,4 +65,4 @@ The target resource must have the **properties** **EPM Level** and **EPM Name**.
 
 ## Notes
 
-This connector requires the **Standard PLM Solution** to be installed and works in combination with the Automation scripts **Telenor Norway PLM Ingest, Telenor Norway PLM Ingest Save EndPoint, Telenor Norway PLM Ingest Edit EndTime EndPoint, Telenor Norway PLM Ingest Cancel EndPoint**. It will translate the ingested JSON request to a **PLM DOM instance**.
+This connector requires the **Standard PLM Solution** to be installed and works in combination with the automation scripts **Telenor Norway PLM Ingest, Telenor Norway PLM Ingest Save EndPoint, Telenor Norway PLM Ingest Edit EndTime EndPoint, Telenor Norway PLM Ingest Cancel EndPoint**. It will translate the ingested JSON request to a **PLM DOM instance**.

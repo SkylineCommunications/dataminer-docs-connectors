@@ -14,7 +14,7 @@ This connector can be used to monitor and control the **Evertz 670IPG-X19-25G-10
 |--------------------|----------------------------------------|----------|-------------------------------------------------------------------|
 | 1.0.0.x [Obsolete] | Initial version.                       | -        | -                                                                 |
 | 1.0.1.x            | Adds redundant polling.                | 1.0.0.1  | Added interface for redundant polling.                            |
-| 1.0.2.x [SLC Main] | Removed some unit tags and thresholds. | 1.0.1.2  | Potentially affects alarms, Visual Overviews, Automation scripts. |
+| 1.0.2.x [SLC Main] | Removed some unit tags and thresholds. | 1.0.1.2  | Potentially affects alarms, Visual Overviews, automation scripts. |
 
 ### System Info
 

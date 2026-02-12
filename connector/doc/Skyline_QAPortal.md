@@ -40,7 +40,7 @@ The API key and client ID will need to be provided by Skyline. The client ID def
 
 ## How to Use
 
-The connector will automatically detect any regression tests available in your DMS. Regression tests are added in the form of an Automation script.
+The connector will automatically detect any regression tests available in your DMS. Regression tests are added in the form of an automation script.
 
 If a regression test requires input parameters, you can add them on the **Input Parameters** page. The connector is designed so that you can add the same test multiple times with different inputs. This way, you can make your regression tests generic and reusable.
 

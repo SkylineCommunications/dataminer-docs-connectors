@@ -156,7 +156,7 @@ Correlated missing event example:
 
 - (A) **Alarm Filter:** Event 1
 - (B) **Alarm Filter B:** Event 2
-- (Correlation) **Interval:** 2 minutes
+- (correlation) **Interval:** 2 minutes
 - **Normal Filter:** Event 3
 
 | Time     | Event   | State  |

@@ -30,7 +30,7 @@ This connector will manage the test tasks that are scheduled for the robot, coll
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
-| 1.2.0.x | No | Yes | - *Witbe Robot Manager* connector <br>- *Schedule Witbe Maintenance* Automation script | - |
+| 1.2.0.x | No | Yes | - *Witbe Robot Manager* connector <br>- *Schedule Witbe Maintenance* automation script | - |
 
 ## Configuration
 

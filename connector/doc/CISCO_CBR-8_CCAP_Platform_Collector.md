@@ -4,7 +4,7 @@ uid: Connector_help_CISCO_CBR-8_CCAP_Platform_Collector
 
 # CISCO CBR-8 CCAP Platform Collector
 
-The CBR-8 is designed to support distributed-access architectures, remote PHY, DOCSIS 3.0 and 3.1, all video types, and software-defined networking. This connector allows you to collect all the data within the Cisco CBR-8 device along with complementary data from auxiliary connectors, e.g. Smart PHY, Vecima RPM, HP Network Automation, etc. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
+The CBR-8 is designed to support distributed-access architectures, remote PHY, DOCSIS 3.0 and 3.1, all video types, and software-defined networking. This connector allows you to collect all the data within the Cisco CBR-8 device along with complementary data from auxiliary connectors, e.g. Smart PHY, Vecima RPM, HP Network automation, etc. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
 ## About
 
@@ -95,7 +95,7 @@ When you first start using this element, navigate to the Configuration page and 
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as Cisco Smart PHY, HP Network Automation, and Vecima RPM and EPM connectors such as Skyline CCAP Platform EPM and Skyline CCAP Platform WM. The Correlation rules and Automation scripts must be configured and enabled in order to get the full functionality of this connector.
+This connector requires specific correlation rules and automation scripts for communication with auxiliary connectors such as Cisco Smart PHY, HP Network automation, and Vecima RPM and EPM connectors such as Skyline CCAP Platform EPM and Skyline CCAP Platform WM. The correlation rules and automation scripts must be configured and enabled in order to get the full functionality of this connector.
 
 With larger devices/large datasets, the polling performance may vary. You can control the number of rows and cells requested for larger tables by navigating to the Configuration page and enabling debug in the other settings section. This will make the debug page visible, where you can then change SNMP Cell Amount and SNMP Row Amount to a value that works optimally for your system. Increasing these values can cause polling issues such as RTEs and missing data, so be careful and always double-check to make sure the system is stable.
 

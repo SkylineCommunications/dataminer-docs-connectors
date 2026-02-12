@@ -40,7 +40,7 @@ REST API calls are used to establish communication with the device. For each API
 The **Page Configuration** page allows you to display two useful debugging pages:
 
 - **Tag Sets**: Displays two tables showing changes made to existing data that are in progress or complete.
-- **InterApp**: Displays external communication (e.g. from Automation scripts) towards the MCS element.
+- **InterApp**: Displays external communication (e.g. from automation scripts) towards the MCS element.
 
 For several of the tables, you can right-click the table to access a context menu that allows data manipulation and changes.
 

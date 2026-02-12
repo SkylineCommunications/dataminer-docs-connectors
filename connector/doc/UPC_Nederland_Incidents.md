@@ -10,8 +10,8 @@ This connector is intended to present in a table incidents where the **Event Pro
 
 This connector will show in the table the information about incidents where the **Property** *Trap* was set to *Yes*. The table will be populated automatically in two occasions:
 
-- Automatically: for each **Alarm** in the system where the the **Alarm** **Property** was set to **Yes** - done via a **Correlation Rule (CR)**/**Automation Script (AS)**;
-- Manually: an **Information Event** created manually that will follow the same flow as explained before - done via a specific **Visio** file that will load an **Interactive Automation Script (IAS)**. It will ask for the event details.
+- Automatically: for each **Alarm** in the system where the the **Alarm** **Property** was set to **Yes** - done via a **correlation Rule (CR)**/**automation Script (AS)**;
+- Manually: an **Information Event** created manually that will follow the same flow as explained before - done via a specific **Visio** file that will load an **Interactive automation Script (IAS)**. It will ask for the event details.
 
 ## Installation and configuration
 

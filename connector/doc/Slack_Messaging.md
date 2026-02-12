@@ -4,9 +4,9 @@ uid: Connector_help_Slack_Messaging
 
 # Slack Messaging
 
-This connector can be used to integrate Skyline DataMiner with a **Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. In order to keep this connector as general as possible, these actions are defined in **Automation scripts**.
+This connector can be used to integrate Skyline DataMiner with a **Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. In order to keep this connector as general as possible, these actions are defined in **automation scripts**.
 
-When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it will execute the Automation script linked to that command.
+When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it will execute the automation script linked to that command.
 
 > [!TIP]
 > To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
@@ -17,16 +17,14 @@ When commands are sent into a Slack channel, these will be picked up by the elem
 
 The connector periodically retrieves the list of users and conversations via the WEB API (using polling), while messages that users send in a channel are pushed to the connector via the web socket interface.
 
-**Access tokens** are used to authenticate on the API. Such a token can be obtained from the app configuration webpage. For more information, refer to the "Installation and configuration" section below.
-
-Automation scripts that can be executed via Slack must have the following **specific dummies and parameters**, as otherwise they will be ignored:
+**Access tokens** are used to authenticate on the API. Such a token can be obtained from the app configuration webpage. For more information, refer to the "Installation and configuration" section below. Automation scripts that can be executed via Slack must have the following **specific dummies and parameters**, as otherwise they will be ignored:
 
 - Dummy "SLACK": The Slack DataMiner element that is executing the script.
 - Parameter "CONVUSERNAME": The other end user name. This can be used by the script to reply with messages referring to the name of the Slack user that invoked a command.
 - Parameter "CONVID": The ID of the Slack conversation in which the command was invoked.
 - Parameter "SLACKARGUMENTS": The plain text after the command name that was provided by the Slack user when the command was invoked.
 
-Users can use the "!list" command to retrieve an overview of all compatible and enabled scripts that can be executed. The command for each script can be customized on the "Automation Scripts" page.
+Users can use the "!list" command to retrieve an overview of all compatible and enabled scripts that can be executed. The command for each script can be customized on the "automation Scripts" page.
 
 ### Version Info
 
@@ -104,9 +102,9 @@ This page contains a table listing all possible conversations (public channels, 
 
 ![Conversations.jpg](~/connector/images/Slack_Messaging_Conversations.jpg)
 
-### Automation Scripts
+### automation Scripts
 
-This page contains a table with all existing Automation scripts in DataMiner that can be executed via commands in Slack.
+This page contains a table with all existing automation scripts in DataMiner that can be executed via commands in Slack.
 
 ![Scripts.jpg](~/connector/images/Slack_Messaging_Scripts.jpg)
 
@@ -114,7 +112,7 @@ To refresh the content of this table, use the **Refresh** button.
 
 The **Description** column contains user-defined text that is presented when the list command is requested from a conversation.
 
-A **Command** can be assigned to each Automation script. When a user sends one of these commands in one of the channels that include the bot, the connector will run the linked Automation script. This allows the administrator to freely configure the name of the commands associated with each Automation script.
+A **Command** can be assigned to each automation script. When a user sends one of these commands in one of the channels that include the bot, the connector will run the linked automation script. This allows the administrator to freely configure the name of the commands associated with each automation script.
 
 The **State** column allows you to enable or disable the possibility to execute a particular script.
 
@@ -151,7 +149,7 @@ This page displays the app configuration page on the Slack API website. Note tha
 
 ### External sets
 
-The connector provides the functionality to send a message from an external source in DataMiner (i.e. an Automation script) to a channel in Slack. This can be done in two different ways:
+The connector provides the functionality to send a message from an external source in DataMiner (i.e. an automation script) to a channel in Slack. This can be done in two different ways:
 
 - Simple XML:
 

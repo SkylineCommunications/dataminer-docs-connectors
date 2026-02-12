@@ -50,7 +50,7 @@ The connector uses the following workflow:
 | Source | Alarm history (GetAlarmDetailsFromDbMessage) |
 | Filter | ParameterID = 64503 |
 | Interval | Hourly timer (Slow Timer) or manual Refresh button |
-| Range | From last processed OLE Automation date (lookupLastDatetime) to Now |
+| Range | From last processed OLE automation date (lookupLastDatetime) to Now |
 | Aggregation | Key = User Name + Normalized Client + Calendar Date |
 
 ## Normalization Logic

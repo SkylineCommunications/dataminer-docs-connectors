@@ -2,11 +2,11 @@
 uid: Connector_help_Telenor_Channel_Correlation_Service_Broadcast
 ---
 
-# Telenor Channel Correlation Service Broadcast
+# Telenor Channel correlation Service Broadcast
 
 ## About
 
-The **Telenor Channel Correlation Service Broadcast** connector generates a single correlated alarm based on the state of all the components of the broadcast service.
+The **Telenor Channel correlation Service Broadcast** connector generates a single correlated alarm based on the state of all the components of the broadcast service.
 
 ## Key Features
 

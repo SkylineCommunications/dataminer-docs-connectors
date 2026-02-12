@@ -70,15 +70,15 @@ On this subpage, you can trigger an import from a CSV/XLSX file or (in range 1.0
 - **Processing Task**: The current processing step.
 - **Metadata Table**: Range **1.1.0.x only**. Displays the imported CSV/XLSX data.
 
-For range **1.0.1.x only**, an **Import Script** section allows you to configure and run an Automation script to import data. The following parameters are used for this:
+For range **1.0.1.x only**, an **Import Script** section allows you to configure and run an automation script to import data. The following parameters are used for this:
 
 - **Import Status**: Shows the import state: *Pending*, *In Progress*, *Completed*, *Failed*.
 - **Device**: Allows you to select "ALL" or any of the available DVEs.
-- **Automation Script**: Allows you to select any Automation script that exposes the input parameters **ImportElementName** and **RequestGuid**.
-- **Import User**: Optional text field for a username used by the Automation script.
-- **Import Password**: Optional password field to securely store credentials for the Automation script.
-- **Refresh List**: Refreshes the available devices and Automation scripts shown in the dropdowns.
-- **Import Script**: Prompts for confirmation and then executes the selected Automation script. If no script is selected, a warning is shown.
+- **automation Script**: Allows you to select any automation script that exposes the input parameters **ImportElementName** and **RequestGuid**.
+- **Import User**: Optional text field for a username used by the automation script.
+- **Import Password**: Optional password field to securely store credentials for the automation script.
+- **Refresh List**: Refreshes the available devices and automation scripts shown in the dropdowns.
+- **Import Script**: Prompts for confirmation and then executes the selected automation script. If no script is selected, a warning is shown.
 
 The selected script is invoked with input parameters **ImportElementName** (the element name), **RequestGuid** (a unique identifier for the request) and **Device** (the DVE's identifier). The script must return the operation result and any returned data via InterApp messages using the same RequestGuid. .
 

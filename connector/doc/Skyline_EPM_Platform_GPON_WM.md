@@ -28,7 +28,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-Before the creation of a **Skyline EPM Platform GPON WM** element it is necessary to install the Automation Scripts **WmGponToOlt** and **OltToGponWm** (without these scripts the element will not function).
+Before the creation of a **Skyline EPM Platform GPON WM** element it is necessary to install the automation Scripts **WmGponToOlt** and **OltToGponWm** (without these scripts the element will not function).
 
 Additionally, all components of the **Skyline EPM Platform Solution** work with a file system for internal communication. Because of this, when a new **Skyline EPM Platform GPON WM** element is created the following parameters must be defined in the **Configuration** page:
 

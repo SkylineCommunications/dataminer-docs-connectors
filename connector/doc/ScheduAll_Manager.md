@@ -77,7 +77,7 @@ This page contains **basic configuration** parameters for both the web and the i
 
 This page includes both the **Task Configuration** and the **Message Fields Configuration**.
 
-The task configuration is used to launch an Automation script when new bookings (or updates) are retrieved.
+The task configuration is used to launch an automation script when new bookings (or updates) are retrieved.
 
 ### Configuration - Web Service
 
@@ -137,7 +137,7 @@ This page contains the **interop-specific configuration** parameters. Via the **
 
 ### Configuration - Parameter Mapping
 
-This page contains a table of **Parameter Mapping Names.** Via the right-click menu, you can add extra mapping lines to this table. This table can be used by Automation scripts to map field names from ScheduAll with field names in DataMiner.
+This page contains a table of **Parameter Mapping Names.** Via the right-click menu, you can add extra mapping lines to this table. This table can be used by automation scripts to map field names from ScheduAll with field names in DataMiner.
 
 ### Work Order Overview
 
@@ -171,45 +171,45 @@ This page indicates the **ScheduAll status** for both the **Web Service** and th
 
 This page contains **Communication Configuration** parameters for both the **Web Service** and the **Interop Services**, allowing you to **enable** or **disable** the referred services.
 
-The page also includes the **Task Configuration,** which allows you to define the validation of the work orders content as well as the the data used to launch the configured Automation script when new or modified work orders are retrieved.
+The page also includes the **Task Configuration,** which allows you to define the validation of the work orders content as well as the the data used to launch the configured automation script when new or modified work orders are retrieved.
 
 ### Configuration Subpage - Ignored DataMiner Resource Pools
 
 On this subpage, you can configure which resource pools from DataMiner should be ignored upon work order creation.
 
-### Configuration Subpage - Task Automation Script
+### Configuration Subpage - Task automation Script
 
-This subpage contains the configuration of the Automation script specified with the **Task Automation Script Name** parameter on the **Configuration** page. You can specify the following settings:
+This subpage contains the configuration of the automation script specified with the **Task automation Script Name** parameter on the **Configuration** page. You can specify the following settings:
 
-- **Startup Trigger**: Defines whether the Automation script is triggered at connector startup (*Enabled*) or not (*Disabled*).
+- **Startup Trigger**: Defines whether the automation script is triggered at connector startup (*Enabled*) or not (*Disabled*).
 
 - **Default Behavior**: Defines whether the default behavior is enabled or disabled:
 
-  - *Enabled*: The Task Automation Script will be triggered with the default input script parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that in case the processing state is set to *Bulk*, the referred input script parameter will have a serialized list of "WO ID \[IDX\]".
+  - *Enabled*: The Task automation Script will be triggered with the default input script parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that in case the processing state is set to *Bulk*, the referred input script parameter will have a serialized list of "WO ID \[IDX\]".
 
-  - *Disabled*: The Task Automation Script will be triggered according to the data present in the Input Script Parameters table.
+  - *Disabled*: The Task automation Script will be triggered according to the data present in the Input Script Parameters table.
 
-- **Processing State**: Defines whether the Task Automation Script processing is *Single* or *Bulk*:
+- **Processing State**: Defines whether the Task automation Script processing is *Single* or *Bulk*:
 
-  - *Single*: The Task Automation Script will be triggered individually for each new/modified work order.
+  - *Single*: The Task automation Script will be triggered individually for each new/modified work order.
 
-  - *Bulk*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
+  - *Bulk*: The Task automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
 - **Pending Script Processing Buffer**: Defines whether there is a buffer holding the pending work orders to be passed as input script parameter (*Enabled*) or not (*Disabled*):
 
-  - *Enabled*: A buffer will be used to hold the work orders that will be passed as input parameter of the Task Automation Script if the script is still processing those same work orders.
+  - *Enabled*: A buffer will be used to hold the work orders that will be passed as input parameter of the Task automation Script if the script is still processing those same work orders.
 
     For example, if there is a running script busy processing "#WO12345", that work order will be stored in the referred buffer.
 
     > [!NOTE]
-    > If this option is selected, the Task Automation Script will be responsible for triggering the script again in order to process the pending work orders that have been added, which can be done by setting the pending work order IDs (separated by ;) in the **Work Order IDs Pending Script Processing** parameter (ID=35). The following example illustrates the format in which the work order IDs should be set: `12345;123456;123457`.
+    > If this option is selected, the Task automation Script will be responsible for triggering the script again in order to process the pending work orders that have been added, which can be done by setting the pending work order IDs (separated by ;) in the **Work Order IDs Pending Script Processing** parameter (ID=35). The following example illustrates the format in which the work order IDs should be set: `12345;123456;123457`.
 
-  - *Disabled*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
+  - *Disabled*: The Task automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
   > [!NOTE]
   > At most five of these scripts can run concurrently. The execution queue can hold up to fifty scripts. These limits cannot be adjusted. These are required to prevent system instability issues.
 
-On this subpage, you can also define the **Input Script Parameters**, which are passed as an argument of the referred Automation script for either new or modified work orders:
+On this subpage, you can also define the **Input Script Parameters**, which are passed as an argument of the referred automation script for either new or modified work orders:
 
 - **\[Full WO w/ Resources in JSON\]**: JSON containing new or modified work orders alongside with their associated resources.
 - **\[Full WO wo/ Resources in JSON\]**: JSON containing new or modified work orders.
@@ -227,12 +227,12 @@ On this subpage, you can also define the **Input Script Parameters**, which are 
 - **LAST_MOD \[WO Last Modified\]**: Last modified date of the work orders.
 - **CL_ID \[WO Client ID\]**: Client record(s), which can either identify an agency or a contact.
 
-It is also possible to configure which **Work Order Status Transitions** will trigger the referred Automation script. Note that if no transition is defined, the Automation script will be triggered for each work order status change.
+It is also possible to configure which **Work Order Status Transitions** will trigger the referred automation script. Note that if no transition is defined, the automation script will be triggered for each work order status change.
 
 - **Previous Status**: Defines the previous work order status for the each configured transition.
 - **Current Status**: Defines the current work order status for the each configured transition.
-- **Valid Status for New Work Orders**: Defines which status is valid to trigger the Automation script for new work orders. Note that this table column is independent from the other columns and is only applied for new work orders.
-- **Valid Status for Existing Work Orders**: Defines which status is valid to trigger the Automation script for existing work orders. Note that this table column is independent from the other columns and is only applied for existing work orders.
+- **Valid Status for New Work Orders**: Defines which status is valid to trigger the automation script for new work orders. Note that this table column is independent from the other columns and is only applied for new work orders.
+- **Valid Status for Existing Work Orders**: Defines which status is valid to trigger the automation script for existing work orders. Note that this table column is independent from the other columns and is only applied for existing work orders.
 
 ### Configuration Subpage - Task Status Definition
 
@@ -280,7 +280,7 @@ This page contains the **interop-specific configuration** parameters. Via the **
 
 ### Configuration - Parameter Mapping
 
-This page contains a table of **Parameter Mapping Names**. Via the right-click menu, you can add extra mapping lines to this table. This table can be used by Automation scripts to map field names from ScheduAll with field names in DataMiner.
+This page contains a table of **Parameter Mapping Names**. Via the right-click menu, you can add extra mapping lines to this table. This table can be used by automation scripts to map field names from ScheduAll with field names in DataMiner.
 
 ### Work Order Overview
 

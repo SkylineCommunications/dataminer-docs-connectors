@@ -107,7 +107,7 @@ This page displays a table with SDI cards information (card name, status, FPGA I
 
 This page displays the Services table. This table displays the service name, service status, streaming status, input information, and output. You can also stop, delete, or start a single service or all services.
 
-From version 4.0.0.8 onwards, a **Manage** button is available for the services, which starts a wizard that allows you to configure some parameters for a service. The wizard uses the Automation script *Ateme_Titan_Live_Manage_Service*.
+From version 4.0.0.8 onwards, a **Manage** button is available for the services, which starts a wizard that allows you to configure some parameters for a service. The wizard uses the automation script *Ateme_Titan_Live_Manage_Service*.
 
 From version 4.0.0.2 onwards, you can change the format of the SDI input port name. For legacy reasons, this cannot be changed automatically. The old format is `sdi-card-x Input y`; the new format is `sdi-card-x/y`.
 

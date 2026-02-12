@@ -14,8 +14,8 @@ With this connector, it is possible to monitor Newtec AZ202 devices with SNMP. T
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                    | -            | -                                                                                            |
 | 1.0.1.x              | New range for Cassandra compliancy. Changed displayColumn to naming.                                                                | 1.0.0.9      | Old **trend data will be lost** for the modified table.                                      |
-| 1.1.0.x              | Changed USS Status discreets and Ctl Group Operation Table Operation State discreets because of new firmware and change in the MIB. | 1.0.1.2      | **Automation scripts and alarm templates** will need to be adapted.                          |
-| 1.1.1.x [SLC Main]   | Changed the discrete display values and descriptions of some parameters.                                                            | 1.1.0.2      | DMS Automation scripts, filters, Visio drawings, reports and web API may need to be adapted. |
+| 1.1.0.x              | Changed USS Status discreets and Ctl Group Operation Table Operation State discreets because of new firmware and change in the MIB. | 1.0.1.2      | **automation scripts and alarm templates** will need to be adapted.                          |
+| 1.1.1.x [SLC Main]   | Changed the discrete display values and descriptions of some parameters.                                                            | 1.1.0.2      | DMS automation scripts, filters, Visio drawings, reports and web API may need to be adapted. |
 
 ### Product Info
 

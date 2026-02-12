@@ -15,7 +15,7 @@ This connector allows you to control the Neetra Saturn-HE via an SNMP connection
 | Range            | Key Features                                                                                                                           | Based on | System Impact                                                      |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|--------------|------------------------------------------------------------------------|
 | 1.0.0.x [Obsolete]     |Initial version.                                                                                                                           | -            | -                                                                      |
-| 1.0.1.x [SLC Main]   | Changed some parameter descriptions (DAB Modulator, on the Main page) to make them more user-friendly after DAB Modulator software update. | 1.0.0.4      | The parameter name change can affect filters, Automation scripts, etc. |
+| 1.0.1.x [SLC Main]   | Changed some parameter descriptions (DAB Modulator, on the Main page) to make them more user-friendly after DAB Modulator software update. | 1.0.0.4      | The parameter name change can affect filters, automation scripts, etc. |
 
 ### Product Info
 

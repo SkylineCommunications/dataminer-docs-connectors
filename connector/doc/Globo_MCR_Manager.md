@@ -6,7 +6,7 @@ uid: Connector_help_Globo_MCR_Manager
 
 With the **Globo MCR Manager** protocol, users can configure signal paths for events and follow up on the activation of the events.
 
-This is a virtual protocol that will maintain the reservations and resource bookings for events. Devices can be reserved into time slots, and will be configured and connected by different Automation scripts.
+This is a virtual protocol that will maintain the reservations and resource bookings for events. Devices can be reserved into time slots, and will be configured and connected by different automation scripts.
 
 ## About
 
@@ -56,4 +56,4 @@ On this page, there are three volatile tables, which contain all the resources p
 
 ## Notes
 
-This Manager connector is used together with a Visio file, Automation scripts and the Resource Manager Module. Please contact your TAM if you need more information about any of these items.
+This Manager connector is used together with a Visio file, automation scripts and the Resource Manager Module. Please contact your TAM if you need more information about any of these items.

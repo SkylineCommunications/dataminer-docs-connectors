@@ -12,7 +12,7 @@ This connector is used in the Synthetic Test Solution and is intended to be the 
 
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
-| 1.0.0.x | - Part of the Synthetic Test Solution. <br>- Ability to perform HTTP tests with Process Automation. | - | - |
+| 1.0.0.x | - Part of the Synthetic Test Solution. <br>- Ability to perform HTTP tests with Process automation. | - | - |
 
 ### Product Info
 

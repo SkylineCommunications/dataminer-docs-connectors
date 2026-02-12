@@ -107,7 +107,7 @@ This page displays the **SRT Input** values and **SRT Status**. It is also possi
 
 This page displays the decoding status, including the **Mode**, **Primary Service**, **Secondary Service**, etc.
 
-It also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered externally** (e.g. via Automation scripts) or from within the connector.
+It also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered externally** (e.g. via automation scripts) or from within the connector.
 
 There is a **Program Stream Table** page button that displays all the input program streams configured in the device. This button opens the page **Stream Status**. The table that displays the streams is a static table, and can take a long time to be polled.
 

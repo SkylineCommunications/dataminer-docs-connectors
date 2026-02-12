@@ -10,7 +10,7 @@ This is a virtual connector that can be used to configure a DataMiner System acc
 
 With this connector, you can select a CSV file saved in the Documents folder of the CEFD NetVue Element in order to provision it. Before provisioning starts, there will be a format and config check of the content of the document. If the content is OK, the views, services and elements defined in the CSV file will be installed on or removed from the system. During provisioning, it is not possible to start another provisioning action. A logging list allows you to keep track of what is being executed at a specific time.
 
-Remote items (connectors, Automation scripts) can also interact with this connector to provision the system.
+Remote items (connectors, automation scripts) can also interact with this connector to provision the system.
 
 ### Version Info
 

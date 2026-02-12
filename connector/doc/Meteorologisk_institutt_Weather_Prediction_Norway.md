@@ -69,7 +69,7 @@ On this page, you can configure the locations based on **Latitude**, **Longitude
 Locations can be added individually with the **Add Location button**. Individual locations can be **Refreshed** or **Deleted**.
 However, please note that it is better to enable or disable **Monitoring** instead of deleting a location, as deleting locations can lead to inconsistent trending.
 
-Several locations can be added in one go with the **AS AddLocations** parameter. This is also the parameter that should be used when adding rows with **Automation scripts**. The parameter expects the following format:
+Several locations can be added in one go with the **AS AddLocations** parameter. This is also the parameter that should be used when adding rows with **automation scripts**. The parameter expects the following format:
 
 - *Location\*Latitude\*Longitude\*Height\*Monitored;Location\*Latitude\*Longitude\*Height\*Monitored; ...*
   If there is no **Height**, leave the value blank (e.g. \*Longitude\*\*Monitored;).
@@ -124,4 +124,4 @@ With the **Configuration** page button, a selection of **text forecast types** c
 
 - For correct usage of the connector, **.NET 4.5** is recommended.
 - Multi-client behavior is not supported. The configuration implemented by one client will be shared by all clients.
-- To add rows via an Automation script, use the **AS AddLocations** parameter.
+- To add rows via an automation script, use the **AS AddLocations** parameter.

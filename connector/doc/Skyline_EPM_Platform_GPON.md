@@ -49,7 +49,7 @@ It supports integration with GPON OLT devices from multiple vendors, including Z
 ### Prerequisites
 
 - **Integration with Skyline EPM Platform front end** for data aggregation and visualization.
-- **Automation scripts** `EpmBeToOlt` and `EpmBeToOltPassives` must be deployed.
+- **automation scripts** `EpmBeToOlt` and `EpmBeToOltPassives` must be deployed.
 - **Correctly configured file import/export paths** for topology and provisioning data.
 - Access credentials for remote directories if using remote import/export.
 

@@ -39,7 +39,7 @@ This connector uses a virtual connection and does not require any input during e
 
 A DataMiner job is a domain-specific description to set up SRM services. DataMiner Domain Orchestrators will be able to convert a DataMiner job into one or multiple DataMiner bookings. Whereas a job is an administrative description of a service that needs to be set up, a DataMiner booking is a detailed definition of the service, the configuration profiles and parameters, the exact resources to be used, the detailed schedule, etc.
 
-The purpose of this connector is to manage and store a collection of jobs. Jobs can be ingested via a REST API that is hosted by a Job Manager element. When possible, jobs are distributed to one or multiple network domains (virtual platforms), which then convert the jobs into full service bookings. Typically, Automation scripts are used to perform the complex operation of converting a job into a booking.
+The purpose of this connector is to manage and store a collection of jobs. Jobs can be ingested via a REST API that is hosted by a Job Manager element. When possible, jobs are distributed to one or multiple network domains (virtual platforms), which then convert the jobs into full service bookings. Typically, automation scripts are used to perform the complex operation of converting a job into a booking.
 
 The following methods are currently supported by the API:
 
@@ -88,13 +88,13 @@ This page contains tables that are used to store the data of each job, along wit
 
 This page provides detailed information about each service associated with the job.
 
-You can also execute the Automation scripts selected on the Configuration page. For more details about configuring these scripts, refer to the Configuration page section below.
+You can also execute the automation scripts selected on the Configuration page. For more details about configuring these scripts, refer to the Configuration page section below.
 
 Use the page button to open a pop-up page with the service details and profiles.
 
 ### Configuration Page
 
-On this page, the **Virtual Platforms Table** provides a mapping between the virtual platform (defined in the job) and Automation scripts. Three scripts must be configured: a script to create a booking, a script to update bookings, and a script to remove bookings. The Booking Manager element on which the booking should be registered must also be specified here for each virtual platform.
+On this page, the **Virtual Platforms Table** provides a mapping between the virtual platform (defined in the job) and automation scripts. Three scripts must be configured: a script to create a booking, a script to update bookings, and a script to remove bookings. The Booking Manager element on which the booking should be registered must also be specified here for each virtual platform.
 
 The **Create Booking Script** will be executed for each virtual platform in a job that is added through the API. When a job is updated via the API, the **Update Booking Script** will be executed. After a job is deleted via the API, the **Delete Booking Script** will be executed.
 
@@ -122,16 +122,16 @@ The Skyline Job Manager connector is used to parse **generic booking info** prov
 
 The connector can be configured to display certain job fields. A job field can be displayed in three ways: as a read-only string, a modifiable string, or a drop-down box. The **Jobs table** contains 20 generic columns for each display option. The field displayed in each column can be configured in the **Configuration table**. **Information templates** can be used to replace the generic column names of the Jobs table and to hide unused columns.
 
-Via the right-click menu of the Jobs table, you can **convert a job into a booking**. This action will launch the **Automation script** defined on the **Script Config** subpage of the **Configurations** page.
+Via the right-click menu of the Jobs table, you can **convert a job into a booking**. This action will launch the **automation script** defined on the **Script Config** subpage of the **Configurations** page.
 
 Note that if the **Default Behavior** is set to *Enabled*, the script needs to be able to accept the following input parameters:
 
 - JobGuid (string): GUID of the selected job.
 - JobManager (string): Element name of the Job Manager (if the **Skyline Job Manager Element Name** is set to *Included*).
 
-Otherwise, the Automation script input parameters will be defined according to the data configured in the Input Script Parameters table.
+Otherwise, the automation script input parameters will be defined according to the data configured in the Input Script Parameters table.
 
-Note also that the Automation script with the name defined in the Booking Script parameter will be triggered according to the configuration defined on the Script Config subpage. If **Run Booking Script on New Job** is set to *Enabled*, the script will be launched whenever there is a change to a job in the Jobs application.
+Note also that the automation script with the name defined in the Booking Script parameter will be triggered according to the configuration defined on the Script Config subpage. If **Run Booking Script on New Job** is set to *Enabled*, the script will be launched whenever there is a change to a job in the Jobs application.
 
 ### 2.0.0.x Range
 
@@ -147,9 +147,9 @@ As a final step, the custom silent booking script that has been launched will tr
 
 ## Notes
 
-### Automation scripts
+### automation scripts
 
-The Automation scripts that create and delete bookings for a specific domain must have the following input parameters:
+The automation scripts that create and delete bookings for a specific domain must have the following input parameters:
 
 Create booking:
 

@@ -4,19 +4,19 @@ uid: Connector_help_ATT_Job_Manager
 
 # ATT Job Manager</h1>
 
-The **ATT Job Manager** protocol is a virtual connector used to execute **Automation Scripts (Jobs)** when certain conditions are met. It works together with the **ATT Channel Manager** protocol (version 1.0.1.9 and later). **The ATT Job Manager** listens for notifications from the **ATT Channel Manager** and executes **Automation Scripts** in response.
+The **ATT Job Manager** protocol is a virtual connector used to execute **automation Scripts (Jobs)** when certain conditions are met. It works together with the **ATT Channel Manager** protocol (version 1.0.1.9 and later). **The ATT Job Manager** listens for notifications from the **ATT Channel Manager** and executes **automation Scripts** in response.
 
 ## About
 
-The **ATT Job Manager** allows registering **Automation Scripts (Jobs)** that accept at least three input parameters: **Command**, **Result** and **Feedback**. It is possible to create a wide variety of jobs and assign them to a specific trigger. The connector will automatically execute the registered **Jobs** when a matching notification is received.
+The **ATT Job Manager** allows registering **automation Scripts (Jobs)** that accept at least three input parameters: **Command**, **Result** and **Feedback**. It is possible to create a wide variety of jobs and assign them to a specific trigger. The connector will automatically execute the registered **Jobs** when a matching notification is received.
 
-The **Command** parameter is used to send information to the Automation Script.
+The **Command** parameter is used to send information to the automation Script.
 
-The **Result** parameter is a numeric value used to notify the ATT Job Manager about execution result of the Automation Script and can be:
+The **Result** parameter is a numeric value used to notify the ATT Job Manager about execution result of the automation Script and can be:
 
 **Failed** = 2, **Succeeded** = 3
 
-The **Feedback** parameter is used to send information from the Script to the ATT Job Manager about the possible cause of the Automation Script failure, and it will be displayed in the Queue Table.
+The **Feedback** parameter is used to send information from the Script to the ATT Job Manager about the possible cause of the automation Script failure, and it will be displayed in the Queue Table.
 
 ### Version Info
 
@@ -64,4 +64,4 @@ The **Failed Jobs** page contains a table with all of the enqueued **Jobs** that
 
 ## Notes
 
-The **ATT Job Manager** works together with the **ATT Channel Manager** protocol and certain **Automation Scripts**, for example: **Script_ATT IPX Update_V2**
+The **ATT Job Manager** works together with the **ATT Channel Manager** protocol and certain **automation Scripts**, for example: **Script_ATT IPX Update_V2**

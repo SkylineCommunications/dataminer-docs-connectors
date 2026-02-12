@@ -8,7 +8,7 @@ The **Telenet Node Switch Manager** is a DataMiner Application that is used to s
 
 ## About
 
-This connector makes it possible to plan jobs containing nodes that need to be switched. Once a task has been planned, a **scheduled** **task** is created. The different nodes that can be switched are retrieved via SOAP messages to a specific headend DMA. The scheduled tasks will execute an **Interactive** **Automation Script,** which in turn will execute another **Automation Script** that takes care of the actual switching of the nodes. Once a job has been completed, another **Automation Script** is activated which creates and emails a **Report** of the job that has been completed.
+This connector makes it possible to plan jobs containing nodes that need to be switched. Once a task has been planned, a **scheduled** **task** is created. The different nodes that can be switched are retrieved via SOAP messages to a specific headend DMA. The scheduled tasks will execute an **Interactive** **automation Script,** which in turn will execute another **automation Script** that takes care of the actual switching of the nodes. Once a job has been completed, another **automation Script** is activated which creates and emails a **Report** of the job that has been completed.
 
 ## Configuration
 
@@ -24,19 +24,19 @@ This connector uses an **HTTP** connection and requires the following input duri
 - **IP port**: The port of the destination e.g. *80.*
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 
-### Automation scripts
+### automation scripts
 
-This connector uses three **Automation Scripts**. These must be added before you can start using the connector:
+This connector uses three **automation Scripts**. These must be added before you can start using the connector:
 
 - CreateReport.xml
 - Switching Nodes AS.xml
 - Switching Nodes IAS.xml
 
-There are two ways to add these Automation Scripts:
+There are two ways to add these automation Scripts:
 
-1. In **System Display**, go to Advanced \> Automation, then select "Insert File" and select the Automation Scripts one by one.
+1. In **System Display**, go to Advanced \> automation, then select "Insert File" and select the automation Scripts one by one.
 
-1. Paste the three **Automation Scripts** into *C:\Skyline DataMiner\Scripts* and then perform a force synchronization as follows:
+1. Paste the three **automation Scripts** into *C:\Skyline DataMiner\Scripts* and then perform a force synchronization as follows:
 
    - In **System Display**, right-click the top banner and select Admin Tools \> Force Synchronization \> File... In the "Force Synchronization" window, paste *C:\Skyline DataMiner\Scripts* and click OK.
 

@@ -39,7 +39,7 @@ This page allows you to configure the severity/state for alarm monitoring on the
 
 With the **Clear** button in the bottom right corner, you can clear the alarm history for the DVE.
 
-Note that because the device reacts slowly when a parameter is set, a delay of 1.5 seconds has been added. In some cases, it could occur that this is not enough, and there is a delay of 30 seconds (i.e. the next polling from the timer). This information can be important for the design of Automation scripts.
+Note that because the device reacts slowly when a parameter is set, a delay of 1.5 seconds has been added. In some cases, it could occur that this is not enough, and there is a delay of 30 seconds (i.e. the next polling from the timer). This information can be important for the design of automation scripts.
 
 ### User Setup Page
 

@@ -56,7 +56,7 @@ The web interface is only accessible when the client machine has network access 
 
 The main function of this connector is to request additional information about a physical device that is monitored by DataMiner through the OpenDCIM system.
 
-This works by writing a serialized ExternalRequest in JSON format to parameter 1221 (IncomingExternalRequest). This can be done from an Automation script. This request contains a unique ID and one or more ElementData instances (containing the DMA ID and Element ID of an element to be retrieved).
+This works by writing a serialized ExternalRequest in JSON format to parameter 1221 (IncomingExternalRequest). This can be done from an automation script. This request contains a unique ID and one or more ElementData instances (containing the DMA ID and Element ID of an element to be retrieved).
 
 When a new request is received, an entry will be created in the External Requests table and the status will be set to "Pending". The connector will then check if the requested elements are available in the DataMiner System. If an element is available, its name will be used to retrieve information about the physical device by polling the OpenDCIM system. This implies that the name of the device in the OpenDCIM system must match the name of the element in DataMiner (case-insensitive).
 

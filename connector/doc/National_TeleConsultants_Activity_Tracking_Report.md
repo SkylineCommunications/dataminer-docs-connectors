@@ -50,7 +50,7 @@ This page shows the results of a manually generated report. You can also see the
 
 Automated Report
 
-Allows you to schedule a new report. Since **its execution is periodic**, there's no a fixed end date, but a placeholder instead and a timespan calculated from that placeholder. You can also choose if the timespan is measured in days or hours. You can customize the configuration parameters of the schedule task that will be created (and you can edit at any time in the **DM's Automation** section). It's important to note that the automation script included with the protocol is installed first, and its name matched with the one provided by the user in this page. The output reports will be created according to the **Automated Report Location** path set in the page **Configuration**.
+Allows you to schedule a new report. Since **its execution is periodic**, there's no a fixed end date, but a placeholder instead and a timespan calculated from that placeholder. You can also choose if the timespan is measured in days or hours. You can customize the configuration parameters of the schedule task that will be created (and you can edit at any time in the **DM's automation** section). It's important to note that the automation script included with the protocol is installed first, and its name matched with the one provided by the user in this page. The output reports will be created according to the **Automated Report Location** path set in the page **Configuration**.
 
 Configuration
 

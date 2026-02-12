@@ -32,7 +32,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-If you use the **EPM Setup Wizard** Automation script in the EPM TOOLS folder, the initialization detailed below is handled automatically.
+If you use the **EPM Setup Wizard** automation script in the EPM TOOLS folder, the initialization detailed below is handled automatically.
 
 If you create the managers manually without the script, follow these steps:
 

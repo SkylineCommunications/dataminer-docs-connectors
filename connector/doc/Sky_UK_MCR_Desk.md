@@ -48,16 +48,16 @@ On the General Page, you need to configure the Linked Output Monitor and the SDI
 
 ### General
 
-This connector shows 6 parameters: The **Monitor Follows IO**, the **Buffer-Trigger Automation Script**, the **Local SD Matrix Element**, the **SDI Monitoring Outputs**, the **Local Audio Matrix Element** and the **Audio Monitoring Outputs**.
+This connector shows 6 parameters: The **Monitor Follows IO**, the **Buffer-Trigger automation Script**, the **Local SD Matrix Element**, the **SDI Monitoring Outputs**, the **Local Audio Matrix Element** and the **Audio Monitoring Outputs**.
 
 The name of the Matrix is shown on the **SDI Matrix Element** parameter.
 
 This connector also shows 2 other parameters: The **Monitor Follows IO** and a **Linked Output Monitor**.
 
-Also the **Buffer - Trigger Automation Script** parameter shows the command that was sent from Visual Overview. The syntax of the command that triggers the launching of the script adheres to a certain standard.The line should start with \[Automation\].
+Also the **Buffer - Trigger automation Script** parameter shows the command that was sent from Visual Overview. The syntax of the command that triggers the launching of the script adheres to a certain standard.The line should start with \[automation\].
 
 Furthermore there are 2 separators: \[NextAtt\] and \[AttData\].
 
 If the line that is sent from Visual Overview to the Sky UK Desk connector contains the word "MONFOLLOW" (case insensitive), the Monitor Follows IO parameter is checked.
 
-The **Automation script** will then run if that parameter is set to Enabled, and set a Crosspoint on the Matrix, or perform another - yet to be defined - function.The part followed by \[NextAtt\] contains the command that needs to run, or the parameter that needs to be set, the part followed by \[AttData\] then contains the data to be set for that parameter, is an attribute for that command.The command set still needs to be completed.
+The **automation script** will then run if that parameter is set to Enabled, and set a Crosspoint on the Matrix, or perform another - yet to be defined - function.The part followed by \[NextAtt\] contains the command that needs to run, or the parameter that needs to be set, the part followed by \[AttData\] then contains the data to be set for that parameter, is an attribute for that command.The command set still needs to be completed.

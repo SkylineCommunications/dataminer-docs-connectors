@@ -21,14 +21,14 @@ For all the equipment, KPIs are retrieved such as the device state, model, firmw
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-----------|---------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     | DataMiner connectors:<br>- [Meinberg LANTIME Modular](xref:Connector_help_Meinberg_LANTIME_Modular)<br>- [Meinberg LANTIME Non-Modular](xref:Connector_help_Meinberg_LANTIME_Non-Modular)<br>DataMiner Automation scripts:<br>- Meinberg_SetupWizard<br>- Meinberg_Manager_ConfigurationRule_Creation<br>- Meinberg_Manager_Coordinates_Configuration<br>- Meinberg_Manager_Coordinates_Clear |
-| 1.0.1.x   | No                  | Yes                     | DataMiner connectors:<br>- [Meinberg LANTIME Modular](xref:Connector_help_Meinberg_LANTIME_Modular)<br>- [Meinberg LANTIME Non-Modular](xref:Connector_help_Meinberg_LANTIME_Non-Modular)<br>DataMiner Automation scripts:<br>- Meinberg_SetupWizard_Run<br>- Meinberg_Manager_ConfigurationRule_Creation<br>- Meinberg_Manager_Coordinates_Configuration<br>- Meinberg_Manager_Coordinates_Clear<br>- Meinberg_Inventory_Manage_ImsModule<br>- Meinberg_Inventory_Unmanage_ImsModule |
+| 1.0.0.x   | No                  | Yes                     | DataMiner connectors:<br>- [Meinberg LANTIME Modular](xref:Connector_help_Meinberg_LANTIME_Modular)<br>- [Meinberg LANTIME Non-Modular](xref:Connector_help_Meinberg_LANTIME_Non-Modular)<br>DataMiner automation scripts:<br>- Meinberg_SetupWizard<br>- Meinberg_Manager_ConfigurationRule_Creation<br>- Meinberg_Manager_Coordinates_Configuration<br>- Meinberg_Manager_Coordinates_Clear |
+| 1.0.1.x   | No                  | Yes                     | DataMiner connectors:<br>- [Meinberg LANTIME Modular](xref:Connector_help_Meinberg_LANTIME_Modular)<br>- [Meinberg LANTIME Non-Modular](xref:Connector_help_Meinberg_LANTIME_Non-Modular)<br>DataMiner automation scripts:<br>- Meinberg_SetupWizard_Run<br>- Meinberg_Manager_ConfigurationRule_Creation<br>- Meinberg_Manager_Coordinates_Configuration<br>- Meinberg_Manager_Coordinates_Clear<br>- Meinberg_Inventory_Manage_ImsModule<br>- Meinberg_Inventory_Unmanage_ImsModule |
 
 ## Configuration
 
 ### Initialization
 
-To install and configure the Meinberg Element Manager, run the *Meinberg_SetupWizard* Automation script.
+To install and configure the Meinberg Element Manager, run the *Meinberg_SetupWizard* automation script.
 
 ## How to Use
 

@@ -8,11 +8,11 @@ For resource-based use cases, it is now possible to create an element to facilit
 
 ## About
 
-With the *Profile Load Script Tester* connector and the associated Automation scripts, you can test the following use cases:
+With the *Profile Load Script Tester* connector and the associated automation scripts, you can test the following use cases:
 
 - **Manual**: a quick profile load execution on a (virtual) function resource that can be selected by the user, next to the profile and state.
 - **Semi-manual**: a test case is predefined by providing a (virtual) function resource. The user needs to select a profile and state.
-- **Script**: a test case is predefined by providing an Automation script, based on SRM_ProfileLoadScriptTesterScriptExample. The (virtual) function resources, profiles and states are hard-coded in the custom script. This will cover basic and advanced use cases. The script can combine several profile load executions.
+- **Script**: a test case is predefined by providing an automation script, based on SRM_ProfileLoadScriptTesterScriptExample. The (virtual) function resources, profiles and states are hard-coded in the custom script. This will cover basic and advanced use cases. The script can combine several profile load executions.
 
 ### Version Info
 
@@ -54,4 +54,4 @@ Note: You can refresh the selection lists by clicking the **Refresh** button.
 
 For a **semi-manual** test case, a resource has to be selected. Select a function to filter the available resources. When you execute the test case, the profile and state will be requested.
 
-For a **script** test case, select the name of the custom Automation Script.
+For a **script** test case, select the name of the custom automation Script.

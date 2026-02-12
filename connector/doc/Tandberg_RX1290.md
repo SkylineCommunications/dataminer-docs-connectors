@@ -117,7 +117,7 @@ The following page buttons are available:
 
 - **Teletext**: Displays the status of and lets you change the parameters for Teletext, such as **Teletext Status, Teletext Reason** and **Teletext PID**.
 
-The page also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered** **externally** (e.g. via Automation scripts) or from within the connector.
+The page also contains a **buffer mechanism** for services that need to be set. This mechanism can be **triggered** **externally** (e.g. via automation scripts) or from within the connector.
 
 ### Video Page
 

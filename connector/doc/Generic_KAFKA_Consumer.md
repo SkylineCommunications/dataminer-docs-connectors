@@ -6,7 +6,7 @@ uid: Connector_help_Generic_KAFKA_Consumer
 
 This connector uses a virtual connection that interfaces with KAFKA using a Confluent DLL that polls information for one or more topics via one or more brokers that can be defined in the DataMiner element.
 
-The data retrieved from the API will be offloaded to a compressed GZ file with JSON data per topic. This file can then be ingested and used in other workflows by connectors, Automation scripts, etc.
+The data retrieved from the API will be offloaded to a compressed GZ file with JSON data per topic. This file can then be ingested and used in other workflows by connectors, automation scripts, etc.
 
 ## About
 
@@ -68,7 +68,7 @@ To configure authentication, go to the **Authentication page** of the element an
 
 ## How to use
 
-After the initialization detailed above is performed, based on a timer, the connector will retrieve data from the **API** for the specified **topic(s)**. This data will be offloaded to the directory path specified in the **Export Directory parameter** in a **GZ** file per topic. These GZ files can then be used in other workflows by connectors, Automation scripts, etc.
+After the initialization detailed above is performed, based on a timer, the connector will retrieve data from the **API** for the specified **topic(s)**. This data will be offloaded to the directory path specified in the **Export Directory parameter** in a **GZ** file per topic. These GZ files can then be used in other workflows by connectors, automation scripts, etc.
 
 The following settings are often of use:
 

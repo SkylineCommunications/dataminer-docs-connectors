@@ -4,7 +4,7 @@ uid: Connector_help_Axon_ACP_ERS11_-_HDB05
 
 # Axon ACP ERS11 - HDB05
 
-The HDB05 is an **HD SDI** and **SD SDI** digital audio de-embedder. It is an audio extractor that outputs 4 **AES/EBU** streams on the board itself and 4 **ADD-ON** audio signals via the local bus to 2 ADD-ON cards. All the selected settings are stored in a total of 8 presets. These presets can be restored via Automation to fire up a salvo with 16 independent audio channels in any combination.
+The HDB05 is an **HD SDI** and **SD SDI** digital audio de-embedder. It is an audio extractor that outputs 4 **AES/EBU** streams on the board itself and 4 **ADD-ON** audio signals via the local bus to 2 ADD-ON cards. All the selected settings are stored in a total of 8 presets. These presets can be restored via automation to fire up a salvo with 16 independent audio channels in any combination.
 
 The **Axon ACP ERS11 - HDB05** connector can be used to display and configure information of the related device.
 

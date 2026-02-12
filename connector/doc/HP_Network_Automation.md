@@ -2,9 +2,9 @@
 uid: Connector_help_HP_Network_Automation
 ---
 
-# HP Network Automation
+# HP Network automation
 
-This connector polls the HP Network Automation API for device configuration information.
+This connector polls the HP Network automation API for device configuration information.
 
 ## About
 
@@ -13,7 +13,7 @@ This connector polls the HP Network Automation API for device configuration info
 | Range              | Key Features          | Based on | System Impact                                                                             |
 |--------------------|-----------------------|----------|-------------------------------------------------------------------------------------------|
 | 1.0.0.x            | Initial version       | -        | -                                                                                         |
-| 1.0.1.x [SLC Main] | Supports EPM Solution | 1.0.0.x  | - Layout updates. <br>- Polling functionality changed from Automation to importing files. |
+| 1.0.1.x [SLC Main] | Supports EPM Solution | 1.0.0.x  | - Layout updates. <br>- Polling functionality changed from automation to importing files. |
 
 ### System Info
 
@@ -43,13 +43,13 @@ To make sure the connector can communicate with the API, fill in the credentials
 
 ### Range 1.0.0.x
 
-The connector polls the HP Network Automation API. To make it fill in the table, set parameter 998 with a list of elements to poll. The elements in the list should be separated by pipe ("\|") characters. You can set the parameter using an Automation script.
+The connector polls the HP Network automation API. To make it fill in the table, set parameter 998 with a list of elements to poll. The elements in the list should be separated by pipe ("\|") characters. You can set the parameter using an automation script.
 
 After you have filled in the correct credentials so the connector can log in to the device, every row in the table will be polled every hour.
 
 ### Range 1.0.1.x
 
-This range of the connector imports files that contain devices name used to poll the HP Network Automation API.
+This range of the connector imports files that contain devices name used to poll the HP Network automation API.
 
 There are three different polling modes:
 

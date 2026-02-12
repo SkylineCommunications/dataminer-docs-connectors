@@ -63,13 +63,13 @@ On the **Maintenance** subpage, the maximum number of entries in the list can be
 
 The **Clear** button will remove all entries. After you confirm this clear action, the entries cannot be restored.
 
-### Automation
+### automation
 
 On this page, you can perform particular actions using a single command:
 
-- **Automation Command Delimiter**: Allows you to define the delimiter that will be used to split up the commands.
-- **Automation Add Entries**: Allows you to add a series of new entries with the specified key names, delimited by the command delimiter.
-- **Automation Add or Update Text Value**: Allows you to add or update the text value of the entry with the specified key. The command must contain the key and text value, delimited by the command delimiter.
-- **Automation Add or Update Numeric Value**: Allows you to add or update the numeric value of the entry with the specified key. The command must contain the key and numeric value, delimited by the command delimiter. Numeric values will be interpreted as a double.
-- **Automation Change Key**: Allows you to change the entry key. The command must contain the current key and the new key, delimited by the command delimiter.
-- **Automation Delete Entries**: Allows you to delete a series of entries with the specified keys, delimited by the command delimiter.
+- **automation Command Delimiter**: Allows you to define the delimiter that will be used to split up the commands.
+- **automation Add Entries**: Allows you to add a series of new entries with the specified key names, delimited by the command delimiter.
+- **automation Add or Update Text Value**: Allows you to add or update the text value of the entry with the specified key. The command must contain the key and text value, delimited by the command delimiter.
+- **automation Add or Update Numeric Value**: Allows you to add or update the numeric value of the entry with the specified key. The command must contain the key and numeric value, delimited by the command delimiter. Numeric values will be interpreted as a double.
+- **automation Change Key**: Allows you to change the entry key. The command must contain the current key and the new key, delimited by the command delimiter.
+- **automation Delete Entries**: Allows you to delete a series of entries with the specified keys, delimited by the command delimiter.

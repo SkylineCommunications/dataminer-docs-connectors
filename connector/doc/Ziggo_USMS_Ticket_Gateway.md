@@ -8,7 +8,7 @@ The **Ziggo USMS Ticket Gateway** creates, updates and queries incident, change 
 
 ## About
 
-The **Ziggo USMS Ticket Gateway** will receive commands from **elements** or **Automation scripts** that need to be sent to USMS via the Oracle MiddleWare (SOAP call).
+The **Ziggo USMS Ticket Gateway** will receive commands from **elements** or **automation scripts** that need to be sent to USMS via the Oracle MiddleWare (SOAP call).
 
 The **initial** version only supports the **creation** of **incident tickets** and returns the **Ticket ID** to the source that sent the request to the Ziggo USMS Ticket Gateway.
 

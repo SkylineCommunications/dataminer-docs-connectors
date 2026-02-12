@@ -4,7 +4,7 @@ uid: Connector_help_RTBF_Nodal_Manager
 
 # RTBF Nodal Manager
 
-This connector interacts with several **Automation** **scripts** and a **WFM**. It allows you to schedule a series of settings, also called **activities**, that need to be performed at a specific date and time on a system. When an activity is scheduled, the connector checks the availability of resources at the time of the execution.
+This connector interacts with several **automation** **scripts** and a **WFM**. It allows you to schedule a series of settings, also called **activities**, that need to be performed at a specific date and time on a system. When an activity is scheduled, the connector checks the availability of resources at the time of the execution.
 
 ## About
 
@@ -36,7 +36,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-The WFM and Automation scripts use pre-defined values or conditions. These need to be configured before any activities can be scheduled.
+The WFM and automation scripts use pre-defined values or conditions. These need to be configured before any activities can be scheduled.
 
 You can do so via the Config pages:
 
@@ -59,7 +59,7 @@ You can do so via the Config pages:
 
 ## How to use
 
-This connector is mainly used via the **WFM**. Below, you can find more information on the items that are used as input to the **WFM** or **Automation scripts**.
+This connector is mainly used via the **WFM**. Below, you can find more information on the items that are used as input to the **WFM** or **automation scripts**.
 
 ### Resources
 
@@ -93,4 +93,4 @@ The **Overview** page displays a summary of the currently available resources fo
 
 ## Notes
 
-This connector is part of a planning/scheduling tool, which also includes a **WFM** and multiple **Automation** **scripts**.
+This connector is part of a planning/scheduling tool, which also includes a **WFM** and multiple **automation** **scripts**.

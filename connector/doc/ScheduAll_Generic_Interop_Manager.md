@@ -79,15 +79,15 @@ To enable communication with ScheduAll through the ScheduAll Interop Listener, t
 
 #### Work Order Settings
 
-Work order updates received from the ScheduAll platform are typically intended for orchestration within the DataMiner System. When new updates are detected, an Automation script can be triggered to initiate the orchestration process:
+Work order updates received from the ScheduAll platform are typically intended for orchestration within the DataMiner System. When new updates are detected, an automation script can be triggered to initiate the orchestration process:
 
 1. On the **Configuration** page, go to the **Work Order Settings** section.
-1. In the **Script Name** parameter, specify the name of the Automation script.
+1. In the **Script Name** parameter, specify the name of the automation script.
 
    This script will be executed whenever work order updates are received, enabling seamless orchestration.
 
    > [!NOTE]
-   > This Automation script must be developed according to the orchestration needs.
+   > This automation script must be developed according to the orchestration needs.
 
 With this configuration, the ScheduAll Generic Interop Manager will be able to efficiently process work orders and execute orchestration workflows within the DataMiner ecosystem.
 

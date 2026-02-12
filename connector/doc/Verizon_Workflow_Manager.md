@@ -4,7 +4,7 @@ uid: Connector_help_Verizon_Workflow_Manager
 
 # Verizon Workflow Manager
 
-The Verizon Workflow Manager protocol is used to handle workflows and data exchange processes between the different DataMiner modules present in the Verizon DMS. These modules include elements, protocols, and the Correlation, Automation and Profile Manager apps.
+The Verizon Workflow Manager protocol is used to handle workflows and data exchange processes between the different DataMiner modules present in the Verizon DMS. These modules include elements, protocols, and the correlation, automation and Profile Manager apps.
 
 ## About
 
@@ -19,11 +19,11 @@ There are two workflows to exchange data between the collectors and the Profile 
 - **OnUpdate**: Used by the collectors to request updated data from Profile Manager.
 - **OnChange**: Used to add/remove/edit data from the collectors in Profile Manager.
 
-Once a workflow is triggered by a collector element, it generates a sequence of actions (information event ---\> Correlation rule ---\> Automation script) that results in an update or change of data. The Correlation engine picks up the info event and passes it to the Automation engine. Automation performs the validation of the data in the information event, and based on the DMA ID of the source collector, it sends such info to the corresponding Workflow Manager element (there should be one manager per DMA). In case there is no such manager on the DMA, the request is sent to the first available manager in the DMS.
+Once a workflow is triggered by a collector element, it generates a sequence of actions (information event ---\> correlation rule ---\> automation script) that results in an update or change of data. The correlation engine picks up the info event and passes it to the automation engine. Automation performs the validation of the data in the information event, and based on the DMA ID of the source collector, it sends such info to the corresponding Workflow Manager element (there should be one manager per DMA). In case there is no such manager on the DMA, the request is sent to the first available manager in the DMS.
 
 #### ETMS Integration
 
-The Correlation engine will listen for and capture information events coming from the collector elements and execute an Automation script. After the Automation engine receives the info message from the Correlation engine, it will select the Workflow Manager element that will continue with the ticketing workflow based on the DMA ID of the collector that triggered the info event in the first place. If no WM element is found that has the same DMA ID as the collector, Automation will send the info message to any active WM element within the DMS. Once a Workflow Manager element has received an event from the Automation engine, this element performs a series of diagnostic activities, which are part of the overall ticketing workflow:
+The correlation engine will listen for and capture information events coming from the collector elements and execute an automation script. After the automation engine receives the info message from the correlation engine, it will select the Workflow Manager element that will continue with the ticketing workflow based on the DMA ID of the collector that triggered the info event in the first place. If no WM element is found that has the same DMA ID as the collector, automation will send the info message to any active WM element within the DMS. Once a Workflow Manager element has received an event from the automation engine, this element performs a series of diagnostic activities, which are part of the overall ticketing workflow:
 
 - PLM Interrogation
 - Sun Outage Interrogation

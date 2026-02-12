@@ -88,7 +88,7 @@ This connector is installed along with the Standard PLM Solution and should only
 
 ### PLM Processes
 
-The solution makes use of 3 **Process Automation flows**, available in the DataMiner module Services:
+The solution makes use of 3 **Process automation flows**, available in the DataMiner module Services:
 
 - SLC PLM Approval Process
 - SLC PLM Start Process

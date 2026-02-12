@@ -24,7 +24,7 @@ The Skyline EPM Platform DOCSIS WF is a configuration manager protocol that conv
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
-| 1.0.0.x | No | Yes | - The *EPMBeToWm* and *WmToEPMBe* Automation scripts <br>- Skyline EPM Platform DOCSIS | - |
+| 1.0.0.x | No | Yes | - The *EPMBeToWm* and *WmToEPMBe* automation scripts <br>- Skyline EPM Platform DOCSIS | - |
 
 ## Configuration
 
@@ -40,13 +40,13 @@ For a **Skyline EPM DOCSIS WM** element to function, the **Skyline EPM Platform*
 
 In addition, the following scripts must be installed: **EPMBeToWm** and **WmToEPMBe.** These are required for the communication between the **Skyline EPM Platform DOCSIS** back end and the **Skyline EPM Platform DOCSIS WF** element.
 
-Two Correlation rules must be created to activate each of these Automation scripts:
+Two correlation rules must be created to activate each of these automation scripts:
 
-- Both Correlation rules must **accept information events**.
-- The first Correlation rule must have the alarm filter **Parameter description (by protocol)** equal to *Skyline EPM Platform DOCSIS* on the parameter *Workflow on change event.* This rule must activate the script **EPMBeToWm**.
-- The second Correlation rule must have the alarm filter **Parameter description (by protocol)** equal to *Skyline EPM Platform DOCSIS WM* on parameter *BE on change event.* This rule must activate the script **WmToEPMBe**.
+- Both correlation rules must **accept information events**.
+- The first correlation rule must have the alarm filter **Parameter description (by protocol)** equal to *Skyline EPM Platform DOCSIS* on the parameter *Workflow on change event.* This rule must activate the script **EPMBeToWm**.
+- The second correlation rule must have the alarm filter **Parameter description (by protocol)** equal to *Skyline EPM Platform DOCSIS WM* on parameter *BE on change event.* This rule must activate the script **WmToEPMBe**.
 
-For more information on how to configure Correlation rules, refer to [DataMiner Correlation](https://aka.dataminer.services/Correlation).
+For more information on how to configure correlation rules, refer to [DataMiner correlation](https://aka.dataminer.services/correlation).
 
 Finally, to begin using the **Skyline EPM Platform DOCSIS WF** element, go to the **Configuration page** of the element and define the file import and export settings. This configuration must be the same as defined in the **Skyline EPM Platform** solution.
 

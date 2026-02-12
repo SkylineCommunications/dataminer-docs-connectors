@@ -130,7 +130,7 @@ Refer to the Configuration section above.
 
 ### Ticket Creation page
 
-This page contains a parameter that can be picked up by an Automation script to automatically create a ticket.
+This page contains a parameter that can be picked up by an automation script to automatically create a ticket.
 
 ### Offline window
 

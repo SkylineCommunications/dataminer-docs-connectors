@@ -4,11 +4,11 @@ uid: Connector_help_Route_Mobile_SmsPlus
 
 # Route Mobile SmsPlus
 
-The **Route Mobile SmsPlus** is used to send text messages using an HTTP request. The connector is mainly used with an Automation script to send certain messages to customer mobile phones.
+The **Route Mobile SmsPlus** is used to send text messages using an HTTP request. The connector is mainly used with an automation script to send certain messages to customer mobile phones.
 
 ## About
 
-The connector needs to be configured with the right username and password so that it can be authorized to deliver text messages. To be able to send a message, you also need to configure the sender ID and message type in the connector options. The receiver mobile number and message need to be combined with a pipe character ("\|") in the Automation text box. The connector will process all this information (username, password, sender ID, message type, recipient number and message) and make a HTTP request to deliver the message.
+The connector needs to be configured with the right username and password so that it can be authorized to deliver text messages. To be able to send a message, you also need to configure the sender ID and message type in the connector options. The receiver mobile number and message need to be combined with a pipe character ("\|") in the automation text box. The connector will process all this information (username, password, sender ID, message type, recipient number and message) and make a HTTP request to deliver the message.
 
 On the General page, all the message information, such as the recipient mobile number, the message and the time stamp of the message are displayed. This page also includes basic statistics such as the logging status, HTTP status code, total SMS messages, number of succeeded SMS messages and number of failed SMS messages.
 
@@ -51,9 +51,9 @@ This section contains the following information:
 - **Sender ID**: The sender ID of the message sender.
 - **Message Type:** The type of message that needs to be sent.
 - **Delivery Report:** Whether a delivery report is required or not.
-- **Automation:** Combination of the recipient mobile number and message, separated by a pipe character ("\|").
-- **Mobile Number:** The mobile number that will be processed by Automation.
-- **Message:** The message that will be processed by Automation.
+- **automation:** Combination of the recipient mobile number and message, separated by a pipe character ("\|").
+- **Mobile Number:** The mobile number that will be processed by automation.
+- **Message:** The message that will be processed by automation.
 - **Date Time**: The date and time when the message is sent.
 - **Logging**: The status of the sent message.
 - **HTTP Status Code:** The status of the HTTP code.

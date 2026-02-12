@@ -7,7 +7,7 @@ uid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 
 ## About
 
-The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner Automation script and hyperlinks that extend the Alarm Console menu to include "Create Ticket" and "Go to Ticket" options, allowing users to initiate ticket creation directly from alarms.
+The Orange Oceane Ticketing System connector integrates DataMiner with the Orange Oceane Ticketing System, enabling automated ticket creation from alarms. This connector streamlines incident management by linking alarms directly to tickets, ensuring issues are addressed promptly and tracked efficiently. It works in conjunction with a DataMiner automation script and hyperlinks that extend the Alarm Console menu to include "Create Ticket" and "Go to Ticket" options, allowing users to initiate ticket creation directly from alarms.
 
 ## Configuration
 
@@ -30,9 +30,9 @@ This connector uses an HTTP connection for the Orange Oceane Ticketing System AP
 To ensure integration with the Orange Oceane Ticketing System in DataMiner, please make sure the following prerequisites are met:
 
 - **Network access:** The Orange Oceane Ticketing System API must be accessible over the network for API communication.
-- **DataMiner version:** Make sure you are using DataMiner version **10.5 or higher** to fully support the Automation script functionality.
+- **DataMiner version:** Make sure you are using DataMiner version **10.5 or higher** to fully support the automation script functionality.
 - **Authentication configuration:** Make sure you have the necessary authentication credentials, including Client ID and Client Secret. Additionally, DataMiner usernames with ticket creation permissions must be mapped to their corresponding Oceane User IDs. (See [Initialization](#initialization).)
-- **Automation script:** Make sure the "Orange Oceane Ticketing System" Automation script is installed. (See [Automation Scripts](#automation-scripts).)
+- **automation script:** Make sure the "Orange Oceane Ticketing System" automation script is installed. (See [automation Scripts](#automation-scripts).)
 
 ### Initialization
 
@@ -54,13 +54,13 @@ When this is done, click the **Authenticate** button in the API Settings section
 
 Note that the Client ID and Client Secret are used for authentication. The Oceane User ID for ticket creation is obtained from the DataMiner username configuration, which means that each DataMiner username must be mapped to a corresponding Oceane User ID.
 
-## Automation Scripts
+## automation Scripts
 
-The connector requires the **Orange Oceane Ticketing System** Automation script to be installed in the DataMiner System. This script is essential for extending the Alarm Console menu with the **Create Ticket** option and handling the logic for ticket creation, including checking for existing tickets and prompting the user for ticket details.
+The connector requires the **Orange Oceane Ticketing System** automation script to be installed in the DataMiner System. This script is essential for extending the Alarm Console menu with the **Create Ticket** option and handling the logic for ticket creation, including checking for existing tickets and prompting the user for ticket details.
 
 ## Hyperlinks
 
-To enable the **Create Ticket** option in the Alarm Console's right-click menu, hyperlinks must be added to the DataMiner System. The following hyperlink configuration is an example of how to extend the menu and link to the Automation script:
+To enable the **Create Ticket** option in the Alarm Console's right-click menu, hyperlinks must be added to the DataMiner System. The following hyperlink configuration is an example of how to extend the menu and link to the automation script:
 
 ```xml
 <HyperLinks xmlns="http://www.skyline.be/config/hyperlinks">
@@ -125,7 +125,7 @@ With the provided configuration, only one hyperlink option will be displayed at 
 >
 > - [Hyperlinks.xml](https://aka.dataminer.services/Hyperlinks_xml).
 > - [Adding a custom command to the Alarm Console shortcut menu](https://aka.dataminer.services/adding-custom-commands-to-the-alarm-console)
-> - [Linking a shape to an Automation script](https://aka.dataminer.services/Linking_a_shape_to_an_Automation_script)
+> - [Linking a shape to an automation script](https://aka.dataminer.services/Linking_a_shape_to_an_Automation_script)
 
 ## How to Use
 

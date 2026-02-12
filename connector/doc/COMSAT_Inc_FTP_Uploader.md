@@ -32,7 +32,7 @@ This connector uses a virtual connection and does not require any input during e
 
 On the **General** page, use the **Linked Element** parameter to specify the name of the ACU element within the DataMiner System.
 
-To make use of the FTP exporting, input the FTP setting information on the **FTP & Email Config** page. Additionally, Automation scripts can be used to send an email on success or failure of the FTP upload using the **Email Automation Scripts** section.
+To make use of the FTP exporting, input the FTP setting information on the **FTP & Email Config** page. Additionally, automation scripts can be used to send an email on success or failure of the FTP upload using the **Email automation Scripts** section.
 
 ## How to use
 

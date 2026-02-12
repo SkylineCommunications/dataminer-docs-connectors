@@ -69,7 +69,7 @@ This connector uses a configuration page that should be set up in order to work 
 > [!NOTE]
 > A **Verizon Reports and Dashboards Solution** element has to be available in the DMS, and it needs to be called "RDS_01". Only then will the DCAT Tool be able to retrieve all profiles. This does not mean that no other elements using the same connector can be created, as there can be multiple RDS elements in the environment.
 
-### Automation Scripts
+### automation Scripts
 
 - **Verizon DCAT OnAccept**: This script is triggered by the acceptance button on live reports, parses the information of a circuit, and passes it to the WM DCAT connector in order to update the DCAT Acceptance Status of the circuit.
 - **Verizon DCAT OnAcceptExecute**: This script is triggered by the acceptance workflow from the DM Tools visual overview. It parses the information for the acceptance execution (circuits) and passes it to WM DCAT to change the acceptance status of the selected circuits.
@@ -80,7 +80,7 @@ This connector uses a configuration page that should be set up in order to work 
 
 ### Low-Code App
 
-- **DCAT**: This app allows users to perform the live and history execution. In addition, circuits can be grouped by NMS, customer, or individual circuit, and users can configure a range of dates for the validation, the report format, the profile, and selected metrics and faults. The low-code app will allow users to trigger the necessary Automation scripts to perform the workflows.
+- **DCAT**: This app allows users to perform the live and history execution. In addition, circuits can be grouped by NMS, customer, or individual circuit, and users can configure a range of dates for the validation, the report format, the profile, and selected metrics and faults. The low-code app will allow users to trigger the necessary automation scripts to perform the workflows.
 
 ## How to use
 

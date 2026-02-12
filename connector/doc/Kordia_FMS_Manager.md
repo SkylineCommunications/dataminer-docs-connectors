@@ -4,7 +4,7 @@ uid: Connector_help_Kordia_FMS_Manager
 
 # Kordia FMS Manager
 
-This connector executes logic for the provisioning of elements and enhanced services. It is intended to be used in combination with a Process Automation setup.
+This connector executes logic for the provisioning of elements and enhanced services. It is intended to be used in combination with a Process automation setup.
 
 ## About
 

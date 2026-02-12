@@ -38,7 +38,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to Use
 
-To use this connector, you will need to install the Skyline Logical Layer package. This package contains the connector and an interactive Automation script (IAS). The script is used to fill in data in the tables of the element. It is an interactive script that helps you to easily select and populate the tables.
+To use this connector, you will need to install the Skyline Logical Layer package. This package contains the connector and an interactive automation script (IAS). The script is used to fill in data in the tables of the element. It is an interactive script that helps you to easily select and populate the tables.
 
 The first thing you will need to do in the script is define parameter value, element alarm, or view alarm monitors. Next to that, you can also define your own user-defined static variables, which can be used to compare against in the conditions. After that, you will need to define conditions using these monitors and static variables.
 
@@ -263,12 +263,12 @@ To **add** a condition:
 
 1. Optionally, set the **Visualize** option to *No*. This option can be used to for example conditionally show or hide the condition in Visual Overview.
 
-1. Set the **Corrective Action Script** to an Automation script that exists in the system. This is the script that will be executed if the condition is evaluated as true.
+1. Set the **Corrective Action Script** to an automation script that exists in the system. This is the script that will be executed if the condition is evaluated as true.
 
    > [!NOTE]
    >
    > - In order for the corrective action script to be executed automatically when the condition is evaluated as true, the **Automatic Correction** parameter needs to be enabled in the Conditions table. This parameter cannot be configured in the pop-up window, but must be configured directly in the table.
-   - A template corrective action script is provided in the Logical Layer install package. You can use this template to start developing your own scripts. The condition name is passed to the Automation script as an argument, so when you set up the corrective action scripts, you can reuse a single script but act differently depending on the provided condition name.
+   - A template corrective action script is provided in the Logical Layer install package. You can use this template to start developing your own scripts. The condition name is passed to the automation script as an argument, so when you set up the corrective action scripts, you can reuse a single script but act differently depending on the provided condition name.
 
 1. Click Add.
 

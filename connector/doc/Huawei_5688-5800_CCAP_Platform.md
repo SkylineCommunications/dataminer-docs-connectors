@@ -119,15 +119,15 @@ Once the initial setup is done, the connector can function without further confi
   - **SNMP Slow Interval**: Define how often the information related to the configuration of the CCAP should be polled. By default, the parameter is set to 4 hours.
   - **Virtual Interval**: Define how often the topology will be synced with EPM. By default, the parameter is set to 2 hours.
 
-- In range **1.0.3.x**, the **Script Name** parameter is added, which allows you to specify the Automation script to be executed.
+- In range **1.0.3.x**, the **Script Name** parameter is added, which allows you to specify the automation script to be executed.
 
 ## Notes
 
-For range **1.0.0.x** of the connector, specific Correlation rules and Automation scripts are required for communication with auxiliary connectors such as the Generic CM Collector and Skyline Platform EPM Solution. The Correlation rules and Automation scripts must be configured and enabled to get the full functionality of this connector:
+For range **1.0.0.x** of the connector, specific correlation rules and automation scripts are required for communication with auxiliary connectors such as the Generic CM Collector and Skyline Platform EPM Solution. The correlation rules and automation scripts must be configured and enabled to get the full functionality of this connector:
 
-- Correlation rule **CcapOltToFe**: The parameter description (by protocol) must be set to **Huawei 5688-5800 CCAP Platform** parameter **Epm On Request**. The rule must **accept information events** and run the Automation script **CcapOltToFe**.
-- Correlation rule **CcapToCollector**: The parameter description (by protocol) must be set to **Huawei 5688-5800 CCAP Platform** parameter **QAM Collector Ready**. The rule must **accept information events** and run the Automation script **CcapToCollector**.
+- Correlation rule **CcapOltToFe**: The parameter description (by protocol) must be set to **Huawei 5688-5800 CCAP Platform** parameter **Epm On Request**. The rule must **accept information events** and run the automation script **CcapOltToFe**.
+- Correlation rule **CcapToCollector**: The parameter description (by protocol) must be set to **Huawei 5688-5800 CCAP Platform** parameter **QAM Collector Ready**. The rule must **accept information events** and run the automation script **CcapToCollector**.
 
-In range **1.0.1.x**, the Correlation rules are no longer required.
+In range **1.0.1.x**, the correlation rules are no longer required.
 
 With larger devices/datasets, the polling performance may vary. You can control the number of rows and cells requested for larger tables by navigating to the **Configuration** page and enabling the **Debug** page in the **Other Settings** section. This will make the Debug page visible, where you can then change SNMP **Cell Amount** and **SNMP Row Amount** to a value that works optimally for your system. Increasing these values can cause polling issues such as RTEs and missing data, so be careful and always double-check to make sure the system is stable.

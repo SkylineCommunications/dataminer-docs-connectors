@@ -16,7 +16,7 @@ This connector can be used to monitor and control the **CEFD Radyne MDX420 SkyWi
 |--|--|--|--|
 | 1.0.0.x | Initial version | - | - |
 | 2.0.0.x | This version uses SNMPv3. | 1.0.0.x | - |
-| 1.0.1.x [SLC Main] | Implemented changes in layout and configuration parameters based on feedback from vendor. | Based on 1.0.0.4 | Parameters listed in the Notes section are no longer available, so please verify any references in the DMS to these parameters (Visio files, Automation scripts, DMS filters, Reports, etc.). |
+| 1.0.1.x [SLC Main] | Implemented changes in layout and configuration parameters based on feedback from vendor. | Based on 1.0.0.4 | Parameters listed in the Notes section are no longer available, so please verify any references in the DMS to these parameters (Visio files, automation scripts, DMS filters, Reports, etc.). |
 
 ### Product Info
 

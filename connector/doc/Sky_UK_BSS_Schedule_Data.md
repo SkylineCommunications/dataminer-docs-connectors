@@ -39,7 +39,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The pooling IP of the device e.g. *bcam.broadcast.bskyb.com*
 - **IP port**: The IP Port of the device e.g. *80*
-- **Bus address**: This should be composed by the **Automation System** to monitor and if proxy server needs to be bypassed, please specify *byPassProxy*. e.g. *byPassProxy;SYSTEM1*
+- **Bus address**: This should be composed by the **automation System** to monitor and if proxy server needs to be bypassed, please specify *byPassProxy*. e.g. *byPassProxy;SYSTEM1*
 
 ### Installation
 

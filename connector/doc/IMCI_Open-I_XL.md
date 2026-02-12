@@ -103,6 +103,6 @@ This page displays a table with the current **serial sessions**.
 
 This page displays a table with the **analog inputs** of the system and configuration settings for the analog inputs.
 
-### Event Correlation Page
+### Event correlation Page
 
 This page displays a table with the **event correlations**. It is also possible to enable or disable event correlation here.

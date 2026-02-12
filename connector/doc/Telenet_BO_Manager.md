@@ -36,9 +36,9 @@ On this page, next to the generic info on the BO customer, two buttons can be fo
 - **Clear Alarms**: Clears the current alarm info in the Lines table.
 - **Recalc. Site Status**: Triggers the calculation of the Line/Service/Site Statuses.
 
-### Alarm Correlation Page
+### Alarm correlation Page
 
-On this page, the path for the Alarm Correlation Matrix can be configured. There are also two buttons that can be used to clear and upload the correlation matrix.
+On this page, the path for the Alarm correlation Matrix can be configured. There are also two buttons that can be used to clear and upload the correlation matrix.
 
 ## Notes
 

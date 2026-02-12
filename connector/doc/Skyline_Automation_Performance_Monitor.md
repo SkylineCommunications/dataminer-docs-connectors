@@ -2,9 +2,9 @@
 uid: Connector_help_Skyline_Automation_Performance_Monitor
 ---
 
-# Skyline Automation Performance Monitor
+# Skyline automation Performance Monitor
 
-This protocol can be used to monitor the performance of Automation scripts on a DMA.
+This protocol can be used to monitor the performance of automation scripts on a DMA.
 
 ## About
 
@@ -38,4 +38,4 @@ There is no redundancy defined.
 
 ## How to use
 
-When you execute an Automation script on your DMA, KPI information about that script will be added to the Automation scripts table.
+When you execute an automation script on your DMA, KPI information about that script will be added to the automation scripts table.

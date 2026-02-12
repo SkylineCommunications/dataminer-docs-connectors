@@ -29,7 +29,7 @@ The AMPP Manager is equipped with the essential functionality to list fabrics, n
 
 **Challenge**: Daily workflows often necessitate a substantial number of workloads to function effectively. However, several factors can impact the availability of these instances, potentially rendering them unusable during critical operations, disrupting the processes and hindering the overall performance.
 
-**Solution**: The **AMPP Manager** can periodically retrieve the workloads, exposing their status and serving as a source to create alarms or proactively react through DataMiner Correlation, which can range from delivering early pertinent notifications to implementing sophisticated recovering mechanisms by triggering restarts via Automation.
+**Solution**: The **AMPP Manager** can periodically retrieve the workloads, exposing their status and serving as a source to create alarms or proactively react through DataMiner correlation, which can range from delivering early pertinent notifications to implementing sophisticated recovering mechanisms by triggering restarts via automation.
 
 **Benefit**: The effectiveness of the workflows is ensured through the timely detection of workload errors, with even a potential automatic recovery.
 

@@ -40,7 +40,7 @@ With the Intel BMC connector, you get access to **smarter server management**. I
 
 **Challenge**: Large server farms require daily health monitoring to detect failures before they impact services.
 
-**Solution**: The Intel BMC connector integrates with DataMiner Automation scripts to query CPU temperatures, fan speeds, and power usage at regular intervals.
+**Solution**: The Intel BMC connector integrates with DataMiner automation scripts to query CPU temperatures, fan speeds, and power usage at regular intervals.
 
 **Benefit**: Proactively detects hardware issues, reducing unplanned outages and improving service reliability.
 

@@ -8,7 +8,7 @@ The **VOO Scheduler** creates and monitors **scheduler tasks**.
 
 ## About
 
-This connector creates **scheduler tasks** based on a CSV file and keeps track of them by using a default **Automation script**.
+This connector creates **scheduler tasks** based on a CSV file and keeps track of them by using a default **automation script**.
 
 ## Installation and configuration
 
@@ -24,7 +24,7 @@ This page displays the general settings and provides an overview of the imported
 
 The **Error Logging File Path** folder contains .txt files in the format *\<CSV File Name\>-Error.txt* with information about why a CSV file has not been imported.
 
-The parameter **Occultation Max Time Duration** determines the maximum timespan between the start and stop Automation script. When the CSV file contains at least one entry that has a greater time span, the file will not be imported and no tasks will be created.
+The parameter **Occultation Max Time Duration** determines the maximum timespan between the start and stop automation script. When the CSV file contains at least one entry that has a greater time span, the file will not be imported and no tasks will be created.
 
 ### Active Tasks
 
@@ -36,7 +36,7 @@ This page shows an overview of all tasks that have been finished or removed.
 
 ## Notes
 
-### Automation Script
+### automation Script
 
 This connector uses **automation script VOO Task Scheduler**.
 
@@ -48,20 +48,20 @@ The CSV file must contain at least 2 lines: a header line and a date line.
 
 RefOccultation;Channel;Date Debut;Heure Debut;Date Fin;Heure Fin;Script Debut;dummy element 1\dummy element 2...;Script Fin;dummy element 1...
 
-The header is fixed, with the exception of the Automation script dummy elements. Those must be equal to the Automation script that contains the most dummy elements.
+The header is fixed, with the exception of the automation script dummy elements. Those must be equal to the automation script that contains the most dummy elements.
 
 #### Data
 
 - **RefOccultation:** Line number starting from 1.
 - **Channel:** Channel name.
-- **Date Debut:** Date when the first Automation script will be executed in format yyyy/MM/dd.
-- **Heure Debut:** Hour when the first Automation script will be executed in format HH:mm:ss.
-- **Date Fin:** Date when the last Automation script will be executed in format yyyy/MM/dd.
-- **Heure Fin:** Hour when the last Automation script will be executed in format HH:mm:ss.
-- **Script Debut:** Name of the first Automation script that needs to be executed.
-- **Dummy element 1\\..:** Name of the dummy elements that the first Automation script will use. Fill in *NA* when there are no elements on a certain position.
-- **Script Fin:** Name of the last Automation script that needs to be executed.
-- **Dummy element 1\\..:** Name of the dummy elements that the last Automation script will use. Fill in *NA* when there are no elements on a certain position.
+- **Date Debut:** Date when the first automation script will be executed in format yyyy/MM/dd.
+- **Heure Debut:** Hour when the first automation script will be executed in format HH:mm:ss.
+- **Date Fin:** Date when the last automation script will be executed in format yyyy/MM/dd.
+- **Heure Fin:** Hour when the last automation script will be executed in format HH:mm:ss.
+- **Script Debut:** Name of the first automation script that needs to be executed.
+- **Dummy element 1\\..:** Name of the dummy elements that the first automation script will use. Fill in *NA* when there are no elements on a certain position.
+- **Script Fin:** Name of the last automation script that needs to be executed.
+- **Dummy element 1\\..:** Name of the dummy elements that the last automation script will use. Fill in *NA* when there are no elements on a certain position.
 
 #### Verification
 

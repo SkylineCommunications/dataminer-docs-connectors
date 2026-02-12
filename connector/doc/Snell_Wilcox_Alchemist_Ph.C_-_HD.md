@@ -155,4 +155,4 @@ Physical fixed interfaces:
 
 ## Notes
 
-When upgrading from connector version 2.0.0.2 to 2.0.1.1, check if all Visio drawings and Automation scripts are still fully functional, as errors may occur with certain implementations.
+When upgrading from connector version 2.0.0.2 to 2.0.1.1, check if all Visio drawings and automation scripts are still fully functional, as errors may occur with certain implementations.

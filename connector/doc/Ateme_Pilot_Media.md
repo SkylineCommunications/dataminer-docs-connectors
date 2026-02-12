@@ -58,7 +58,7 @@ On the recordings page, two sliders allow you to define in which time frame the 
 
 ## API
 
-This connector implements an API that can be used to do certain calls from an Automation script.
+This connector implements an API that can be used to do certain calls from an automation script.
 
 To send a request, set JSON code to parameter ID 49999. The response will be available in parameter ID 49998.
 
