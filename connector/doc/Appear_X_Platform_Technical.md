@@ -109,7 +109,7 @@ To tailor the API requests issued by DataMiner towards the Appear X platform API
 - **[S2X Input Ports]** connection property of type **[in]**.
 - **[S2X Output Ports]** connection property of type **[out]**.
 
-<!-- ### automation
+<!-- ### Automation
 
 It is possible to interface with this connector and all available cards by using the available **Appear-X-ConnectorApi**.
 
