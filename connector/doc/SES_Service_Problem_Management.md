@@ -6,11 +6,11 @@ uid: Connector_help_SES_Service_Problem_Management
 
 ## About
 
-The SES Service Problem Management connector integrates the DataMiner Ticketing module with the SNOW system, enabling automated ticket lifecycle management and bidirectional synchronization. Based on the TMF656 Service Problem Management API standard, this connector transforms DataMiner tickets into service problems, ensuring reliable incident tracking and resolution across the entire infrastructure.
+The SES Service Problem Management connector integrates the DataMiner SDM Ticketing module with the SNOW system, enabling automated ticket lifecycle management and bidirectional synchronization. Based on the TMF656 Service Problem Management API standard, this connector transforms DataMiner tickets into service problems, ensuring reliable incident tracking and resolution across the entire infrastructure.
 
 ## Key Features
 
-- **Automated ticket synchronization**: Bidirectional synchronization between the DataMiner Ticketing system and SES Service Problem Management with configurable frequency (10 seconds to 24 hours).
+- **Automated ticket synchronization**: Bidirectional synchronization between the DataMiner SDM Ticketing system and SES Service Problem Management with configurable frequency (10 seconds to 24 hours).
 
 - **Complete lifecycle management**: Automatically creates, updates, and closes service problems based on DataMiner ticket state changes, ensuring accurate incident tracking throughout the resolution process.
 
@@ -48,10 +48,10 @@ The SES Service Problem Management connector integrates the DataMiner Ticketing 
 
 ## Prerequisites
 
-- This connector requires **DataMiner 10.3.0** or higher.
+This connector requires **DataMiner 10.5.0** or higher because of dependencies on:
 
-- A **DataMiner Ticketing license** is required for the connector to access and manage tickets through the DataMiner Ticketing Gateway.
-
+- SDM Ticketing APIs (`TicketingApiHelper`).
+- The **DataMiner SDM Ticketing** solution must be available on the DataMiner system.
 - **Authentication credentials** (username and password) with appropriate permissions to create, read, and update service problems in the SES system are required for API access.
 
 ## Technical Reference
