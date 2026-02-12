@@ -2,11 +2,11 @@
 uid: Connector_help_ATT_Correlation_Manager
 ---
 
-# ATT correlation Manager
+# ATT Correlation Manager
 
 This is a custom-made connector for AT&T that is responsible for creating custom correlation alarms when certain conditions are met in the system.
 
-When an alarm is raised in one of the monitored parameters, a correlation rule executes an automation script that forward the alarm information to the correlation Manager element. The correlation Manager element places the received alarm information from the automation script in one of the five buffers based on the kind of the alarm. The connector defines five different threads to handle the five different buffers. Depending on the alarm, the connector checks the state of certain parameters in other elements in the system and some custom properties of the impacted services. Based on the value of those parameters and properties, a new correlation alarm with a custom value, severity, and base alarms is raised.
+When an alarm is raised in one of the monitored parameters, a correlation rule executes an automation script that forward the alarm information to the Correlation Manager element. The Correlation Manager element places the received alarm information from the automation script in one of the five buffers based on the kind of the alarm. The connector defines five different threads to handle the five different buffers. Depending on the alarm, the connector checks the state of certain parameters in other elements in the system and some custom properties of the impacted services. Based on the value of those parameters and properties, a new correlation alarm with a custom value, severity, and base alarms is raised.
 
 ## About
 
@@ -34,7 +34,7 @@ From this page the user can access the **Threads** pop-up page by means of a pag
 
 ### History
 
-The **History** page displays the **Alarm History** table. This table includes all the alarm notifications that were processed by the ATT correlation Manager element. Each row in the table represent one processed alarm. For each processed alarm, the table displays the following parameters: **ID**, **Element**, **Parameter**, **Index**, **Severity**, **Value**, **Received Timestamp**, **Processed Timestamp**, **correlation Result**, and **Impact.**
+The **History** page displays the **Alarm History** table. This table includes all the alarm notifications that were processed by the ATT Correlation Manager element. Each row in the table represent one processed alarm. For each processed alarm, the table displays the following parameters: **ID**, **Element**, **Parameter**, **Index**, **Severity**, **Value**, **Received Timestamp**, **Processed Timestamp**, **Correlation Result**, and **Impact.**
 
 The **History** page also includes the **Clear History** button. Clicking this button clears the **Alarm History** table.
 
