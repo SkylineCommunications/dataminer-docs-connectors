@@ -52,4 +52,4 @@ DATE VERSION AUTHOR COMMENTS25/05/2018 1.0.0.1 AIG , Skyline Initial Version
 
 ## Notes
 
-This connector is used in combination with a correlation rule that receives alarm events and an automation script (ATT correlation Alarm Notificator) that forwards the alarm information to the ATT correlation Manager connector.
+This connector is used in combination with a correlation rule that receives alarm events and an automation script (ATT Correlation Alarm Notificator) that forwards the alarm information to the ATT Correlation Manager connector.
