@@ -8,7 +8,7 @@ This connector makes it possible to monitor and gather information from an **ABB
 
 ## About
 
-COMLI (COMmunication LInk) is an ABB automation data transmission system for communication between control systems and between control systems and computers.
+COMLI (COMmunication LInk) is an ABB Automation data transmission system for communication between control systems and between control systems and computers.
 
 To fill in the addresses that must be polled, you must import an Excel file. Such Excel files must be placed in the documents folder of the protocol.
 
