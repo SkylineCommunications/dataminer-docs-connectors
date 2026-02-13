@@ -24,7 +24,7 @@ This connector uses an **HTTP** connection and requires the following input duri
 - **IP port**: The port of the destination e.g. *80.*
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 
-### automation scripts
+### Automation scripts
 
 This connector uses three **automation Scripts**. These must be added before you can start using the connector:
 

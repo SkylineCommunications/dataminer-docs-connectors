@@ -147,7 +147,7 @@ As a final step, the custom silent booking script that has been launched will tr
 
 ## Notes
 
-### automation scripts
+### Automation scripts
 
 The automation scripts that create and delete bookings for a specific domain must have the following input parameters:
 

@@ -34,7 +34,7 @@ This connector manages incoming data received via InterApp. Data is then process
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### automation Scripts
+### Automation Scripts
 
 This connector can be used with a user-defined API, **SIT-UDAPI-UnsolicitedMessageProcessor**, that receives events from the OBM device and then sends the event information to the connector via InterApp.
 

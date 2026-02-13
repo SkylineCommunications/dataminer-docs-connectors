@@ -102,7 +102,7 @@ This page contains a table listing all possible conversations (public channels, 
 
 ![Conversations.jpg](~/connector/images/Slack_Messaging_Conversations.jpg)
 
-### automation Scripts
+### Automation Scripts
 
 This page contains a table with all existing automation scripts in DataMiner that can be executed via commands in Slack.
 

@@ -36,7 +36,7 @@ This page shows an overview of all tasks that have been finished or removed.
 
 ## Notes
 
-### automation Script
+### Automation Script
 
 This connector uses **automation script VOO Task Scheduler**.
 

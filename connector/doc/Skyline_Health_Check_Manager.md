@@ -37,7 +37,7 @@ Skyline Health Check Manager helps users with system checks of resources in a si
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-### automation Scripts
+### Automation Scripts
 
 Make sure the **HealthCheckTableManager** automation script is available in the DMS.
 

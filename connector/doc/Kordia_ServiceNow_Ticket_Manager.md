@@ -45,7 +45,7 @@ When you have created the element, go to the the **Config** page and fill in the
 
 In addition, you will need to fill in the **correlation rule folder**. All correlation rules that can trigger ticket updates must be in the same folder.
 
-### automation Scripts
+### Automation Scripts
 
 While this is not mandatory, in order to facilitate the solution, an automation Script named **KOR-Send-ServiceNow-Request** can be used to send the alarm data from the correlation rule to the element.
 

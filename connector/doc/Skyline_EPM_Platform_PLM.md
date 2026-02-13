@@ -32,7 +32,7 @@ The Skyline EPM Platform PLM connector provides a streamlined and intuitive appr
 
 ## Configuration
 
-### automation Scripts
+### Automation Scripts
 
 Make sure the following EPM PLM scripts are available in the DMS:
 
