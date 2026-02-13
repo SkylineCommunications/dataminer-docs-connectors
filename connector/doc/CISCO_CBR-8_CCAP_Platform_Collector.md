@@ -4,7 +4,7 @@ uid: Connector_help_CISCO_CBR-8_CCAP_Platform_Collector
 
 # CISCO CBR-8 CCAP Platform Collector
 
-The CBR-8 is designed to support distributed-access architectures, remote PHY, DOCSIS 3.0 and 3.1, all video types, and software-defined networking. This connector allows you to collect all the data within the Cisco CBR-8 device along with complementary data from auxiliary connectors, e.g. Smart PHY, Vecima RPM, HP Network automation, etc. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
+The CBR-8 is designed to support distributed-access architectures, remote PHY, DOCSIS 3.0 and 3.1, all video types, and software-defined networking. This connector allows you to collect all the data within the Cisco CBR-8 device along with complementary data from auxiliary connectors, e.g. Smart PHY, Vecima RPM, HP Network Automation, etc. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
 ## About
 
