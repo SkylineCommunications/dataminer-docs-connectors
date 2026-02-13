@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_PLM_Manager
 
 # Skyline PLM Manager
 
-This manager connector will install the **DataMiner Object Model** application used by the **Standard PLM Solution**. This manager is used by the solution to approve or disapprove a planned maintenance request that is triggered by the associated **process automation** flow.
+This manager connector will install the **DataMiner Object Model** application used by the **Standard PLM Solution**. This manager is used by the solution to approve or disapprove a planned maintenance request that is triggered by the associated **Process Automation** flow.
 
 ## About
 
@@ -33,14 +33,6 @@ This manager connector will install the **DataMiner Object Model** application u
 #### Virtual connection
 
 This connector uses a virtual connection and does not require any input during element creation.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 
@@ -88,7 +80,7 @@ This connector is installed along with the Standard PLM Solution and should only
 
 ### PLM Processes
 
-The solution makes use of 3 **Process automation flows**, available in the DataMiner module Services:
+The solution makes use of 3 **Process Automation flows**, available in the DataMiner module Services:
 
 - SLC PLM Approval Process
 - SLC PLM Start Process
