@@ -89,7 +89,7 @@ The protocol has several configuration options that will change its behavior:
 
 - Perform an export or import by clicking the **Apply** button in the relevant section.
 
-This connector depends on correlation rules and automation scripts for communication with auxiliary connectors such as HP Network automation and EPM connectors such as Skyline CCAP Platform EPM and Skyline CCAP Platform WM. To get the full functionality of this connector, make sure these correlation rules and automation scripts are configured and enabled.
+This connector depends on correlation rules and automation scripts for communication with auxiliary connectors such as HP Network Automation and EPM connectors such as Skyline CCAP Platform EPM and Skyline CCAP Platform WM. To get the full functionality of this connector, make sure these correlation rules and automation scripts are configured and enabled.
 
 ## DataMiner Connectivity Framework
 

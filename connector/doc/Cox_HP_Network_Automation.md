@@ -2,9 +2,9 @@
 uid: Connector_help_Cox_HP_Network_Automation
 ---
 
-# COX HP Network automation
+# COX HP Network Automation
 
-The Cox HP Network automation connector communicates with COX's Apigee API to fetch device configuration information. HPNA information is displayed in tables, depending on the configured settings.
+The Cox HP Network Automation connector communicates with COX's Apigee API to fetch device configuration information. HPNA information is displayed in tables, depending on the configured settings.
 
 ## About
 
