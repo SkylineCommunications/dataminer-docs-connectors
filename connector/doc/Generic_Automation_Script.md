@@ -2,23 +2,11 @@
 uid: Connector_help_Generic_Automation_Script
 ---
 
-# Generic automation Script
-
-This connector can be used to launch automation scripts and get status information for those automation scripts.
+# Generic Automation Script
 
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector can be used to launch automation scripts and get status information for those automation scripts.
 
 ## Configuration
 
