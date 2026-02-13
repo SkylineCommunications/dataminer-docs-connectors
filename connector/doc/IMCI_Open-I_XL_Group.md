@@ -35,6 +35,6 @@ This page displays a table with the **Contact Output** states and configuration 
 
 This page displays a table with the **Analog Inputs** of the system and configuration settings for the analog Inputs.
 
-### Event correlation Page
+### Event Correlation Page
 
 This page displays a table with the **Event Correlations** and alows the user to enable or disable event correlation.
