@@ -4,24 +4,18 @@ uid: Connector_help_Globo_MCR_Manager
 
 # Globo MCR Manager
 
-With the **Globo MCR Manager** protocol, users can configure signal paths for events and follow up on the activation of the events.
+## About
+
+With the **Globo MCR Manager** connector, users can configure signal paths for events and follow up on the activation of the events.
 
 This is a virtual protocol that will maintain the reservations and resource bookings for events. Devices can be reserved into time slots, and will be configured and connected by different automation scripts.
-
-## About
 
 The Globo MCR Manager connector is used in conjunction with a Visio file, which is the Visual Overview layer of the corresponding element.
 Commands are sent between the Visio file and the manager element in order to execute actions.
 
-### Version Info
+## Configuration
 
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-## Installation and configuration
-
-### Creation
+### Connections
 
 #### Virtual connection
 
@@ -29,7 +23,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Installation
 
-To install this application, create an element using this protocol, and assign the Visio file "*Globo MCR Manager.vsdx*" to it.
+To install this application, create an element using this protocol, and assign the Visio file **Globo MCR Manager.vsdx** to it.
 
 You must also add a property on the element with the name **Language**, and set the property value either to **English** or to **Portuguese**, depending on which language you wish to see in the labels.
 
@@ -37,7 +31,7 @@ You must also add a property on the element with the name **Language**, and set 
 
 ### Events
 
-On this page, there are two tables with all the event information, and a **Users** table, which logs the actions for all the users. In the event table, you can find the **Event Name**, **Start & Stop Times** and **states**.
+On this page, there are two tables with all the event information, and a **Users** table, which logs the actions for all the users. In the event table, you can find the **Event Name**, **Start & Stop Times**, and **states**.
 
 ### Configuration
 
@@ -52,8 +46,8 @@ On this page, there are two saved tables that contain all the action shapes and 
 
 ### Resources
 
-On this page, there are three volatile tables, which contain all the resources per type: **Sources**, **Processors** and **Destinations**. The UserGUID is added in the tables, so that it is possible to filter on the correct resources for each user in Visual Overview.
+On this page, there are three volatile tables, which contain all the resources per type: **Sources**, **Processors**, and **Destinations**. The UserGUID is added in the tables, so that it is possible to filter on the correct resources for each user in Visual Overview.
 
 ## Notes
 
-This Manager connector is used together with a Visio file, automation scripts and the Resource Manager Module. Please contact your TAM if you need more information about any of these items.
+This manager connector is used together with a Visio file, automation scripts, and the Resource Manager module. Please contact your TAM if you need more information about any of these items.
