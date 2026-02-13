@@ -52,7 +52,7 @@ The NetInsight Nimbra Edge connector for DataMiner provides full integration wit
 
 **Challenge**: Provisioning or editing streams in a cloud-based media platform typically requires switching to the vendor's web interface, slowing down response times.
 
-**Solution**: Operators can create, edit, or delete inputs and outputs directly within DataMiner using Automation scripts or context menu actions powered by the Nimbra Edge connector.
+**Solution**: Operators can create, edit, or delete inputs and outputs directly within DataMiner using automation scripts or context menu actions powered by the Nimbra Edge connector.
 
 **Benefit**: Faster provisioning, fewer tools to manage, and improved workflow automation.
 

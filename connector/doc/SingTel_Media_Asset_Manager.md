@@ -4,7 +4,7 @@ uid: Connector_help_SingTel_Media_Asset_Manager
 
 # SingTel Media Asset Manager
 
-This connector orchestrates the Live-to-VOD and MAM workflows for SingTel using Process Automation.
+This connector orchestrates the Live-to-VOD and MAM workflows for SingTel using Process automation.
 
 ## About
 

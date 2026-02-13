@@ -106,9 +106,9 @@ This page shows four tables in total. Two are mainly used for management purpose
 
 - **Ethernet Ports Table**: This table displays the Ethernet port status information. The status can be *Available*, *Used*, *Booked and Used*, *Booked*, and *Booked and available*. Another column shows the booked bandwidth allocated to each port.
 
-- **E1 Virtual Interfaces Table**: This table displays all the 16 E1 "ports" that can be booked via an Automation script. In this table, each entry has the following information: Port Status, Reference, End Date, Booked Bandwidth, Contact, Metadata, and "Valid", which shows how much time still remains until the booking expires.
+- **E1 Virtual Interfaces Table**: This table displays all the 16 E1 "ports" that can be booked via an automation script. In this table, each entry has the following information: Port Status, Reference, End Date, Booked Bandwidth, Contact, Metadata, and "Valid", which shows how much time still remains until the booking expires.
 
-- **Ethernet Virtual Interfaces Table**: This table displays all 6 Ethernet ports that can be booked via an Automation script. This is similar to the E1 Virtual Interfaces table.
+- **Ethernet Virtual Interfaces Table**: This table displays all 6 Ethernet ports that can be booked via an automation script. This is similar to the E1 Virtual Interfaces table.
 
 ### Web Interface
 

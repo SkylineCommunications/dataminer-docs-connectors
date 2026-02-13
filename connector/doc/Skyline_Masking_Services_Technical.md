@@ -6,7 +6,7 @@ uid: Connector_help_Skyline_Masking_Services_Technical
 
 ## About
 
-This virtual connector reads and parses USAGM-specific Excel files representing a bookings program schedule. In conjunction with a Correlation rule, Automation script, services, and Visio files, this allows you to suppress alarms on a service or program level.
+This virtual connector reads and parses USAGM-specific Excel files representing a bookings program schedule. In conjunction with a correlation rule, automation script, services, and Visio files, this allows you to suppress alarms on a service or program level.
 
 ## Configuration
 

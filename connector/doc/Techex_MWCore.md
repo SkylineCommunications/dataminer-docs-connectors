@@ -115,7 +115,7 @@ The Techex MWCore connector offers management and monitoring capabilities for th
 
 Configuration settings are retrieved through a polling mechanism that integrates with Techex's REST API (available at `<URL>/doc/`). Additionally, a socket connection can be established with each TXCore node to asynchronously receive telemetry data from the TXCore nodes about the attached TXEdges. This connection uses client-certificate authentication.
 
-The Techex MWCore also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Techex_MWCore_ConnectorAPI), enabling a running element to communicate with other DataMiner elements and Automation scripts. This library supports CRUD actions for streams, sources, and outputs.
+The Techex MWCore also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Techex_MWCore_ConnectorAPI), enabling a running element to communicate with other DataMiner elements and automation scripts. This library supports CRUD actions for streams, sources, and outputs.
 
 Below you can find more information about the different data pages available in the element.
 

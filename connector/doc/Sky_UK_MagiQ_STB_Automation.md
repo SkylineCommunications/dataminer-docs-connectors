@@ -2,9 +2,9 @@
 uid: Connector_help_Sky_UK_MagiQ_STB_Automation
 ---
 
-# Sky UK MagiQ STB Automation
+# Sky UK MagiQ STB automation
 
-The Sky UK MagiQ STB Automation connector is used to monitor different set-top boxes.
+The Sky UK MagiQ STB automation connector is used to monitor different set-top boxes.
 
 ## About
 
@@ -60,7 +60,7 @@ There is no redundancy defined.
 
 ## How to use
 
-The **Automation Control** table is used to control and monitor the STB boxes.
+The **automation Control** table is used to control and monitor the STB boxes.
 
 Before you send commands using the **Send** button in the **Send Command** column, make sure to enter a valid remote control command sequence in the **Command Sequence** field. If no command data is provided or if it is not provided in the correct JSON format, a pop-up message will be displayed.
 

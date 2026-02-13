@@ -4,7 +4,7 @@ uid: Connector_help_Atlassian_OpsGenie
 
 # Atlassian Opsgenie
 
-This connector allows the integration of DataMiner with the Atlassian Opsgenie Alert Management Platform. The connector can receive messages formatted as Opsgenie alerts from a combination of a Correlation alarm and Automation script and will process and send these alerts to the Opsgenie platform. The Automation script translates DataMiner alarms into Opsgenie alerts and sends them to the Opsgenie connector for submission to the Opsgenie platform.
+This connector allows the integration of DataMiner with the Atlassian Opsgenie Alert Management Platform. The connector can receive messages formatted as Opsgenie alerts from a combination of a correlation alarm and automation script and will process and send these alerts to the Opsgenie platform. The automation script translates DataMiner alarms into Opsgenie alerts and sends them to the Opsgenie connector for submission to the Opsgenie platform.
 
 The connector will handle the authentication using an Opsgenie integration key. This version is designed to work with the Enterprise version of Opsgenie.
 
@@ -56,7 +56,7 @@ In order to use the connector, first configure the **API Key** in order to enabl
 
 The connector can receive DataMiner-generated Opsgenie alerts, place these in a queue, and send them to the Opsgenie platform. In case there is an error with a particular alert, it will remain in the queue with an error status and a description of the error. Successfully sent alerts, which have received confirmation from the platform, will be set to a completed state and cleared from the queue.
 
-The connector communicates with the Opsgenie platform using JSON APIs, the **Alert API** and the **Team API**. It receives serialized alert messages from DataMiner Automation scripts. A custom Correlation rule is also required.
+The connector communicates with the Opsgenie platform using JSON APIs, the **Alert API** and the **Team API**. It receives serialized alert messages from DataMiner automation scripts. A custom correlation rule is also required.
 
 The element created using this connector has the following data pages:
 

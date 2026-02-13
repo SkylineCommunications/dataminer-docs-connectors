@@ -56,7 +56,7 @@ The logging behavior can be configured on the *Logging Configuration* subpage, w
 
 ## How to use
 
-By using the [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/), other components within the DataMiner System (e.g. Automation scripts, connectors, etc.) can communicate with an element running this connector to **request a lock for any kind of object**.
+By using the [Skyline Lock Manager ConnectorAPI Nuget](https://www.nuget.org/packages/Skyline.DataMiner.ConnectorAPI.SkylineLockManager/), other components within the DataMiner System (e.g. automation scripts, connectors, etc.) can communicate with an element running this connector to **request a lock for any kind of object**.
 
 The connector **keeps track** of which locks are taken, along with some metadata like the timestamp of when the lock was taken, as well as the context that holds the lock. This data is stored in memory. You can view it in the **Locked Objects** table. When you have the element card open in Cube, the table is **populated every 10 seconds**. You can also force an immediate refresh with the **Refresh Table** button. When the element is restarted, this data is lost.
 

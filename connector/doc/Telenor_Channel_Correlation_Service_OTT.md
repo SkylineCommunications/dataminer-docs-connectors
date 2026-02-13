@@ -2,11 +2,11 @@
 uid: Connector_help_Telenor_Channel_Correlation_Service_OTT
 ---
 
-# Telenor Channel Correlation Service OTT
+# Telenor Channel correlation Service OTT
 
 ## About
 
-The **Telenor Channel Correlation Service OTT** connector generates a single correlated alarm based on the state of all the components of the OTT service.
+The **Telenor Channel correlation Service OTT** connector generates a single correlated alarm based on the state of all the components of the OTT service.
 
 ## Key Features
 

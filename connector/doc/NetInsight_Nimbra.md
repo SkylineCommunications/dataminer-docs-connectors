@@ -11,7 +11,7 @@ With this connector, you can monitor and control the different interfaces of a n
 Typically, this connector is used together with the **NetInsight Nimbra Application Manager** for the monitoring and controlling of the services between different Nimbra nodes.
 
 > [!IMPORTANT]
-> **From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance.** If the connector is updated from an older version to 4.1.3.1, the DCF connections could be duplicated and remain in the connector. Please update the connector using the latest *NetInsight Nimbra Package*, restart all elements using the connector, and then use the Automation script *DCF Clean Nimbra Connections* to clean up the obsolete DCF links. Alternatively, you can manually install the Automation script *DCF Clean Nimbra Connections* and execute it after updating to version 4.1.3.1.
+> **From version 4.1.3.1 onwards, the unique identifier of the DCF interfaces will be replaced with the DTM name instead of the instance.** If the connector is updated from an older version to 4.1.3.1, the DCF connections could be duplicated and remain in the connector. Please update the connector using the latest *NetInsight Nimbra Package*, restart all elements using the connector, and then use the automation script *DCF Clean Nimbra Connections* to clean up the obsolete DCF links. Alternatively, you can manually install the automation script *DCF Clean Nimbra Connections* and execute it after updating to version 4.1.3.1.
 
 ## Configuration
 

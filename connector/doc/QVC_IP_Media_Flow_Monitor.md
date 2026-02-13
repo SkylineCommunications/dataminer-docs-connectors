@@ -38,4 +38,4 @@ Specify the names of the Cisco DCNM and Imagine Communications Magellan SDNO ele
 
 The **Last Operation Duration** parameter indicates how long it took to process the information on the last update. The polling frequency can be adjusted if necessary.
 
-You can also enable notifications via information events on the Cisco DCNM and Imagine Communications Magellan SDNO. These information events can be used with a Correlation rule to trigger the polling of the information.
+You can also enable notifications via information events on the Cisco DCNM and Imagine Communications Magellan SDNO. These information events can be used with a correlation rule to trigger the polling of the information.

@@ -8,7 +8,7 @@ The Ziggo IVR Gateway creates entries in the IVR (Interactive Voice Recording) v
 
 ## About
 
-The Ziggo IVR Gateway will receive commands from elements or Automation scripts that need to be sent to IVR via the Oracle MiddleWare (using SOAP calls). Currently this connector creates, updates and closes tickets and receives the **Row ID** when a call succeeded.
+The Ziggo IVR Gateway will receive commands from elements or automation scripts that need to be sent to IVR via the Oracle MiddleWare (using SOAP calls). Currently this connector creates, updates and closes tickets and receives the **Row ID** when a call succeeded.
 
 The **log file** will contain additional logging (e.g. required data is missing, wrong SOAP response format, etc.). There is an **offload mechanism** available to store the created tickets on the local system as a CSV file.
 
@@ -78,7 +78,7 @@ The **Log Config** section allows the user to configure some settings about the 
 
 #### IVR RULES
 
-Pressing the **IVR Rules** page button will open a window with a table where a set of rules are defined. These rules will be read by an Automation script. If they match the intended logic, the Automation script will cause the IVR Gateway to be triggered when the **IVR** column is set to **YES**.
+Pressing the **IVR Rules** page button will open a window with a table where a set of rules are defined. These rules will be read by an automation script. If they match the intended logic, the automation script will cause the IVR Gateway to be triggered when the **IVR** column is set to **YES**.
 
 To create a rule, right-click and select **Add row.** You will then be able to fill in a number of options: **Event Tag \[IDX\]**, **Severity**, **Min Limit Customer**, **Max Limit Customer**, **Level** and **Group.** Rules will be considered correct if they follow the following logic:
 

@@ -63,4 +63,4 @@ There are two workflows to process incoming requests:
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as **Generic Powershell**. The Correlation rules and Automation scripts must be configured and enabled in order to get the full functionality of this connector.
+This connector requires specific correlation rules and automation scripts for communication with auxiliary connectors such as **Generic Powershell**. The correlation rules and automation scripts must be configured and enabled in order to get the full functionality of this connector.

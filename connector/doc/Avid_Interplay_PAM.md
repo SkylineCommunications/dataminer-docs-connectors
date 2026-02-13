@@ -24,7 +24,7 @@ This connector retrieves the folder structure from the Avid Interplay Production
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                      | Exported Components     |
 |-----------|---------------------|-------------------------|----------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Avid Interplay PAM (Automation script) | -                       |
+| 1.0.0.x   | No                  | Yes                     | Avid Interplay PAM (automation script) | -                       |
 
 ## Configuration
 
@@ -58,7 +58,7 @@ With active polling, the connector will request the **folder structure** of the 
 
 Every 30 minutes, the connector will request the DataMiner **users and user groups**. These can be used to **assign access** of a user group to a specific folder in the form of access rules. When a user group has access to a folder, they also have access to all underlying folders.
 
-The folder structure that a **specific user** has access to can be retrieved via an **Automation script** by sending a JSON request to the **External Access Rules Request** parameter (PID 1621). An entry is added to the Access Rules Requests table with the status *Pending* when the request is received. When the request is handled by the connector, the status is updated to either *Completed* or *Failed* and the response becomes available in the Response column of the table. The requests and responses should have the following structure:
+The folder structure that a **specific user** has access to can be retrieved via an **automation script** by sending a JSON request to the **External Access Rules Request** parameter (PID 1621). An entry is added to the Access Rules Requests table with the status *Pending* when the request is received. When the request is handled by the connector, the status is updated to either *Completed* or *Failed* and the response becomes available in the Response column of the table. The requests and responses should have the following structure:
 
 | Request                         | Response                                                                                                                                        |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -66,5 +66,5 @@ The folder structure that a **specific user** has access to can be retrieved via
 
 ### Request Based
 
-The folder structure that a **specific user** has access to (filtering based on the user group the user belongs to) can be retrieved via an **Automation script** by sending a JSON request to the **External Folder Request** parameter (PID 1720). An entry is added to the Folder Requests table with the status *Pending* when the request is received. When the request is handled by the connector, the status is updated to either *Completed* or *Failed* and the response becomes available in the Response column of the table. The requests and responses should have the following structure:
+The folder structure that a **specific user** has access to (filtering based on the user group the user belongs to) can be retrieved via an **automation script** by sending a JSON request to the **External Folder Request** parameter (PID 1720). An entry is added to the Folder Requests table with the status *Pending* when the request is received. When the request is handled by the connector, the status is updated to either *Completed* or *Failed* and the response becomes available in the Response column of the table. The requests and responses should have the following structure:
 

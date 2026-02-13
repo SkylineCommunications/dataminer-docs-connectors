@@ -95,8 +95,8 @@ Another important difference with the previous range is related to the passive l
 
 ## Notes
 
-This connector requires specific Correlation rules and Automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
+This connector requires specific correlation rules and automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
 
-In range **1.0.1.x** of the connector, the Correlation rules are no longer required.
+In range **1.0.1.x** of the connector, the correlation rules are no longer required.
 
 With larger devices or large datasets, the polling performance may vary.

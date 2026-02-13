@@ -130,7 +130,7 @@ Once this is enabled, when a **notification** is received, the linked synopsis o
 
 ### External Requests
 
-The **External** **Requests** page contains a table that lists all the requests sent to the element from an external source (another element or an Automation script, for example).
+The **External** **Requests** page contains a table that lists all the requests sent to the element from an external source (another element or an automation script, for example).
 
 These requests can be used to create bookings at EBU. This table will show an **overview of all requests** (if they have not exceeded the configured time to live) with an indication of whether they succeeded and of the response.
 

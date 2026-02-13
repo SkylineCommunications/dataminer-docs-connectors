@@ -61,4 +61,4 @@ public string ForeignKey { get; set; }
 
 It is also possible to **create event entries** in the Events table by setting **parameter 100** on the element. This parameter receives an array of events in **JSON format**. For example:
 
-\[{"Name":"New Test","StartTime":"2021-10-28T13:09:24.6567087+02:00","StopTime":"2021-10-28T15:09:24.6567087+02:00","Status":"Approved","Source":"Automation","ForeignKey":null}\]
+\[{"Name":"New Test","StartTime":"2021-10-28T13:09:24.6567087+02:00","StopTime":"2021-10-28T15:09:24.6567087+02:00","Status":"Approved","Source":"automation","ForeignKey":null}\]

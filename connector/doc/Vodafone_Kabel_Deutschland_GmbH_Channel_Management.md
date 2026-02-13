@@ -28,7 +28,7 @@ No connections need to be configured for this connector during element creation.
 
 ### Initialization
 
-To use this connector, make sure the following Automation scripts are installed on the DataMiner Agent:
+To use this connector, make sure the following automation scripts are installed on the DataMiner Agent:
 
 - InitializeVodafoneChannelManagementDomDatabase
 - RefreshVodafoneChannelManagementDomTables

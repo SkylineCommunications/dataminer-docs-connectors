@@ -43,7 +43,7 @@ To make sure the connector can communicate with the API, fill in the credentials
 
 ### Range 1.0.0.x
 
-The connector polls the HP Network Automation API. To make it fill in the table, set parameter 998 with a list of elements to poll. The elements in the list should be separated by pipe ("\|") characters. You can set the parameter using an Automation script.
+The connector polls the HP Network Automation API. To make it fill in the table, set parameter 998 with a list of elements to poll. The elements in the list should be separated by pipe ("\|") characters. You can set the parameter using an automation script.
 
 After you have filled in the correct credentials so the connector can log in to the device, every row in the table will be polled every hour.
 

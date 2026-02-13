@@ -4,7 +4,7 @@ uid: Connector_help_British_Telecom_Unified_Streaming_Single_Channel_Failover
 
 # British Telecom Unified Streaming Single Channel Failover
 
-The purpose of this connector is to manage the different Unified Origin Monitoring elements. It can change the streams to a different channel using Automation scripts.
+The purpose of this connector is to manage the different Unified Origin Monitoring elements. It can change the streams to a different channel using automation scripts.
 
 ## About
 

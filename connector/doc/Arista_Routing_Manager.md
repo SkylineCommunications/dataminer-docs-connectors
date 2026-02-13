@@ -32,7 +32,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-In order to aggregate routing information through the linked Automation script, you need to define at least one channel in the **Channels** table. You can do so by right-clicking the table and selecting the relevant option in the context menu.
+In order to aggregate routing information through the linked automation script, you need to define at least one channel in the **Channels** table. You can do so by right-clicking the table and selecting the relevant option in the context menu.
 
 ### Redundancy
 

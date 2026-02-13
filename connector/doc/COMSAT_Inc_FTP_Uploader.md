@@ -4,21 +4,9 @@ uid: Connector_help_COMSAT_Inc_FTP_Uploader
 
 # COMSAT Inc FTP Uploader
 
-This connector takes data from a **General Dynamics ACU 980** element and uploads trending data to an FTP server over time defined within the element.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector takes data from a **General Dynamics ACU 980** element and uploads trending data to an FTP server over time defined within the element.
 
 ## Configuration
 
@@ -32,7 +20,7 @@ This connector uses a virtual connection and does not require any input during e
 
 On the **General** page, use the **Linked Element** parameter to specify the name of the ACU element within the DataMiner System.
 
-To make use of the FTP exporting, input the FTP setting information on the **FTP & Email Config** page. Additionally, Automation scripts can be used to send an email on success or failure of the FTP upload using the **Email Automation Scripts** section.
+To make use of the FTP exporting, input the FTP setting information on the **FTP & Email Config** page. Additionally, automation scripts can be used to send an email on success or failure of the FTP upload using the **Email Automation Scripts** section.
 
 ## How to use
 

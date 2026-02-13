@@ -50,7 +50,7 @@ On the left, you can select the source. There are two ways of narrowing down the
 
 When you have selected the group, you can load the lists of flows by clicking the **Fetch Flows** button at the bottom.
 
-Flow analysis can be started based on the selected group. An interactive Automation script will be launched when the **Flow Analysis button** is clicked. This will allow you to configure PRISM and start live Wireshark captures.
+Flow analysis can be started based on the selected group. An interactive automation script will be launched when the **Flow Analysis button** is clicked. This will allow you to configure PRISM and start live Wireshark captures.
 
 ### Incoming Flows
 

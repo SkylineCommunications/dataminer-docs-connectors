@@ -11,7 +11,7 @@ This is a virtual connector that is used to manage carrier monitoring (including
 | Range            | Key Features   | Based on | System Impact                                                                                              |
 |----------------------|--------------------|--------------|----------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version    | -            | -                                                                                                              |
-| 1.0.1.x [SLC Main]   | Renamed parameters | 1.0.1.5      | Filters, Automation scripts, Visio drawings, reports, and DataMiner Web API usage may need to be reconfigured. |
+| 1.0.1.x [SLC Main]   | Renamed parameters | 1.0.1.5      | Filters, automation scripts, Visio drawings, reports, and DataMiner Web API usage may need to be reconfigured. |
 
 ### Product Info
 
@@ -35,7 +35,7 @@ This connector uses a **virtual** connection and does not require any input duri
 
 ### Initialization
 
-The connector uses an interactive Automation script to perform the "Create" and "Update Carrier" actions. Make sure this **Carrier Configurations** script is installed.
+The connector uses an interactive automation script to perform the "Create" and "Update Carrier" actions. Make sure this **Carrier Configurations** script is installed.
 
 You can also assign the dedicated **Visio drawing** to the element for easy navigation between the configured carriers and their spectrum thumbnails.
 

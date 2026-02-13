@@ -4,41 +4,15 @@ uid: Connector_help_Kordia_FMS_Manager
 
 # Kordia FMS Manager
 
-This connector executes logic for the provisioning of elements and enhanced services. It is intended to be used in combination with a Process Automation setup.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features             | Based on     | System Impact     |
-|----------------------|--------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | FMS element provisioning | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector executes logic for the provisioning of elements and enhanced services. It is intended to be used in combination with a Process Automation setup.
 
 ## Configuration
 
 ### Connections
 
 This connector uses a virtual connection and does not require any input during element creation.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 

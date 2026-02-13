@@ -2,9 +2,9 @@
 uid: Connector_help_Telenor_Channel_Correlation_Service_Protocol
 ---
 
-# Telenor Channel Correlation Service Protocol
+# Telenor Channel correlation Service Protocol
 
-The Telenor Channel Correlation Service Protocol generates a single correlated alarm based on the state of all the components of the service.
+The Telenor Channel correlation Service Protocol generates a single correlated alarm based on the state of all the components of the service.
 
 ## About
 

@@ -38,7 +38,7 @@ SOAP calls are used to retrieve the device information. SNMP traps are used to c
 | 4.1.0.x | SNMP connection added to collect SNMP traps. | No | No |
 | 4.2.0.x | Serial connection replaced by HTTP connection. | No | No |
 | 4.3.0.x | Removal of communicationOptions="redundantPolling". | No | No |
-| 4.4.0.x | Review of the connector (optimization of QActions, removal of unused parameters, etc.) NOTE: The update from 4.4.0.102 to 4.4.0.103 involves a key change that may affect Visio drawings, Automation scripts, etc. The 4.4.1.x version range should be used instead of 4.4.0.103 and onwards. | No | No |
+| 4.4.0.x | Review of the connector (optimization of QActions, removal of unused parameters, etc.) NOTE: The update from 4.4.0.102 to 4.4.0.103 involves a key change that may affect Visio drawings, automation scripts, etc. The 4.4.1.x version range should be used instead of 4.4.0.103 and onwards. | No | No |
 | 4.4.1.x | Based on 4.4.0.107. The Input Redundancy Table (PID 18400) key has been reverted to be as it was in the 4.4.0.102 version. | No | No |
 | 4.4.2.x [SLC Main] | Based on 4.4.1.32. New column for second backup input added in Input Redundancy table (supported in firmware v3.42). | No | No |
 | 5.0.0.x [Obsolete] | Implementation of the class library features - requires DataMiner 9.6.3.0 - 8092. The 5.0.0.x-range is a spin-off based on version 4.4.1.12, because of the increased minimum DataMiner version. Development should still happen in the 4.4.1.x-range. A new spin-off version in the 5.0.0.x-range can be made when needed afterwards. | No | No |

@@ -28,8 +28,8 @@ Besides polling the API for monitoring devices and interfaces parameters, the Ar
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                               | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | InterApp messages via Automation scripts using Flow Engineering | -                       |
+| 1.0.0.x   | Yes                 | Yes                     | InterApp messages via automation scripts using Flow Engineering | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | InterApp messages via automation scripts using Flow Engineering | -                       |
 
 ## Configuration
 
@@ -72,5 +72,5 @@ Physical dynamic interfaces:
 ## Notes
 
 - The connector contains a **hidden Debug page** with parameters for quick debugging and testing. To make this page visible, use the **Debug Page** parameter under the **General** page.
-- The Arista MCS also implements an **InterApp receiver**. This allows the connector to receive messages from external sources, such as Automation scripts or applications.
+- The Arista MCS also implements an **InterApp receiver**. This allows the connector to receive messages from external sources, such as automation scripts or applications.
   Currently, the connector supports the reception of certain **Flow Engineering messages**. These messages will then make use of the connector in order to configure a flow by setting up the configuration of senders and receivers for the MCS.

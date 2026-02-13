@@ -8,11 +8,11 @@ uid: Connector_help_BMC_Remedy
 
 ## About (1.0.0.x and 2.0.0.x)
 
-This connector communicates with the BMC Remedy server via SOAP messages. The connector will create/update fault records on the server. In addition, the connector can mask views in DataMiner. This connector works together with four Automation scripts and with two executables.
+This connector communicates with the BMC Remedy server via SOAP messages. The connector will create/update fault records on the server. In addition, the connector can mask views in DataMiner. This connector works together with four automation scripts and with two executables.
 
 ## About (3.0.0.x)
 
-This connector is used in conjunction with an Automation script to create and update incidents in the Remedy system, through HTTP communication.
+This connector is used in conjunction with an automation script to create and update incidents in the Remedy system, through HTTP communication.
 
 Ranges of the connector
 

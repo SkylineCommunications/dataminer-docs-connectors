@@ -8,7 +8,7 @@ The **Marlink Trouble Ticket Interface** element can create and resolve trouble 
 
 ## About
 
-The **Marlink Trouble Ticket Interface** connector makes it possible to create or resolve tickets by sending queries to the element via Automation, or by manually adding tickets in a table.
+The **Marlink Trouble Ticket Interface** connector makes it possible to create or resolve tickets by sending queries to the element via automation, or by manually adding tickets in a table.
 
 The ticket data is sent via an HTTP POST command and the ticket response ID is parsed by DataMiner. In case ticket creation fails, the entry in question will be entered in the **Failed** table.
 

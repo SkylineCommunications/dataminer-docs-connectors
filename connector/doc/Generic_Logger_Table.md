@@ -36,7 +36,7 @@ With the **Remove Unmodified Entries After** parameter on the **General** page o
 
 ## How to Use
 
-Manipulating the data handled by the element is done using the [Skyline.DataMiner.ConnectorAPI.GenericLoggerTable NuGet package](https://github.com/SkylineCommunications/Skyline.DataMiner.ConnectorAPI.GenericLoggerTable). This package is typically used from Automation scripts, but it can also be used from connectors.
+Manipulating the data handled by the element is done using the [Skyline.DataMiner.ConnectorAPI.GenericLoggerTable NuGet package](https://github.com/SkylineCommunications/Skyline.DataMiner.ConnectorAPI.GenericLoggerTable). This package is typically used from automation scripts, but it can also be used from connectors.
 
 ### Supported Operations
 

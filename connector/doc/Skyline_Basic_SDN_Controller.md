@@ -29,7 +29,7 @@ The Skyline Basic SDN Controller is a generic solution to control and configure 
 ## Solution Components
 
 - **SDN controller:** Based on a generic matrix that allows the interconnecting of inputs and outputs.
-- **Connection script:** Automation script that the SDN controller will execute to create the connections.
+- **Connection script:** automation script that the SDN controller will execute to create the connections.
 - **Metadata definition:** Script that defines the metadata format that will be used by the SDN controller.
 - **Parameter profiles:** A parameter profile must be defined in the Profiles module for each parameter that the SDN controller will use when the Connection or Disconnection script is called.
 

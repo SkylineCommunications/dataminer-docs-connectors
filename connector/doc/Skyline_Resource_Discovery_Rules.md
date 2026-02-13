@@ -40,7 +40,7 @@ No extra configuration is needed.
 
 ## How to use
 
-This connector should be used together with the Automation script **SwitchingApp_ResourcesProvisioningByDiscovery**.
+This connector should be used together with the automation script **SwitchingApp_ResourcesProvisioningByDiscovery**.
 
 At the top, you will find a button to create resources, the status of the script, and the last successful run of the script.
 

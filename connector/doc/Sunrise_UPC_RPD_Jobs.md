@@ -34,7 +34,7 @@ This connector uses a virtual connection and does not require any configuration 
 
 ### General
 
-An incoming job is registered in the Job Events table where the primary key is the Job Message Correlation ID.
+An incoming job is registered in the Job Events table where the primary key is the Job Message correlation ID.
 
 ![Capture.JPG](~/connector/images/Sunrise_UPC_RPD_Jobs_Capture.JPG)
 

@@ -54,7 +54,7 @@ This page displays the **ALPB Table**, besides the the four alarm specified in t
 
 ### Device Data
 
-This page shows the current **Service Key Name**. There is also a configurable table for each VICC in the service, is it also possible to edit some values in each row and also add new rows, such has **Automation/System Name**, **Pub Bus Name** and **Master Bus Name** (this value will be set in the current active VICC Element)
+This page shows the current **Service Key Name**. There is also a configurable table for each VICC in the service, is it also possible to edit some values in each row and also add new rows, such has **automation/System Name**, **Pub Bus Name** and **Master Bus Name** (this value will be set in the current active VICC Element)
 
 ### Router
 

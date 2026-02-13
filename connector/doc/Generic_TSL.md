@@ -120,9 +120,9 @@ This is a subpage of the UMDs page. The parameters are filled in with the defaul
 
 ### UMD Automation
 
-The **Scheduled Time Table** receives its data from the **Sky UK VICC** elements and has columns for the **Channel**, **Start Date Time Next Schedule Item** and **Row** **Status**.
+The **Scheduled Time Table** receives its data from the **Sky UK VICC** elements and has columns for the **Channel**, **Start Date Time Next Schedule Item** and **Row Status**.
 
-The **UMD Automation** **Table** has the same UMD rows as the UMDs Table. The **Connected Services**, **Service Name** and **Service Alarm State** are filled in by an Automation script. The Start Date Time is retrieved from the Scheduled Time Table. The values from the **Count Down** are calculated from the Start Date Time and the current time.
+The **UMD Automation Table** has the same UMD rows as the UMDs Table. The **Connected Services**, **Service Name**, and **Service Alarm State** are filled in by an automation script. The Start Date Time is retrieved from the Scheduled Time Table. The values from the **Count Down** are calculated from the Start Date Time and the current time.
 
 ### Destinations
 

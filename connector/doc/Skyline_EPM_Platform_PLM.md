@@ -54,7 +54,7 @@ In the PLM Overview table, you can create PLM items directly from the connector 
 
 1. Select **Add PLM Item** in the context menu.
 
-1. In the pop-up window (which is an interactive Automation script), enter the following information:
+1. In the pop-up window (which is an interactive automation script), enter the following information:
 
    - **Title**: Provide a descriptive title for the PLM item (reservation).
 

@@ -13,7 +13,7 @@ Ateme Titan Mux is used to interface with the Multiplexer Processing API and Ala
 | Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]  | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main] | Converted the History Alarms table to a partial one and added a configurable maximum number of alarms history to get.  | 1.0.0.7 | Existing custom reports and Automation scripts that use the History Alarms table may no longer work as expected. |
+| 1.0.1.x [SLC Main] | Converted the History Alarms table to a partial one and added a configurable maximum number of alarms history to get.  | 1.0.0.7 | Existing custom reports and automation scripts that use the History Alarms table may no longer work as expected. |
 
 ### Product Info
 

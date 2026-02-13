@@ -103,4 +103,4 @@ This page contains additional system parameters, i.e. **System Overall Status**,
 
 ### Automation
 
-This page contains the **Execution Automation Event** and the **Timestamp Automation Event** parameters.
+This page contains the **Execution automation Event** and the **Timestamp automation Event** parameters.

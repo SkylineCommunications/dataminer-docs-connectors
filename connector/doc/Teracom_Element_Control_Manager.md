@@ -41,12 +41,12 @@ First create the following view structure in the Surveyor:
 
 Then create the following structure in the Automation module:
 
-- Technology Folder: DAB, DTTV or FM \> Automation script linked to specific element
+- Technology Folder: DAB, DTTV or FM \> automation script linked to specific element
 
 To make the protocol process these structures, configure the following parameters:
 
 - If the **view structure** mentioned above is not available directly in the root view of the DMS, define the **root view** in the parameter **View Root**.
-- Define the root folder for the Automation structure in the parameter **Automation Event Folder** (on the **Commands** page).
+- Define the root folder for the automation structure in the parameter **automation Event Folder** (on the **Commands** page).
 
 ## How to use
 

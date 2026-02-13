@@ -30,9 +30,9 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-This connector is designed to work with an Automation script that run every 60 seconds.
+This connector is designed to work with an automation script that run every 60 seconds.
 
-The name of this Automation script needs to be configured on the **Alarm Sync** page.
+The name of this automation script needs to be configured on the **Alarm Sync** page.
 
 ### Redundancy
 
@@ -44,4 +44,4 @@ The main page has a switch position table. You can add an entry to this table wi
 
 ## Notes
 
-This connector is used in combination with an Automation script that reads files for services that are on air and that clears and generates alarms for services that are no longer on air.
+This connector is used in combination with an automation script that reads files for services that are on air and that clears and generates alarms for services that are no longer on air.

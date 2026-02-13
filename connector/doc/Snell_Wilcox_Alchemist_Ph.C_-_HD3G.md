@@ -17,7 +17,7 @@ This connector uses the SNMP protocol to request data from the device.
 | Range | Description                                                                                                                                   | DCF Integration | Cassandra Compliant |
 |------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version                                                                                                                                   | No                  | Yes                     |
-| 1.0.1.x          | Review of 1.0.0.x connector range. Note: It may be necessary to **update Visio drawings and Automation scripts** to match the changes in this range. | Yes                 | Yes                     |
+| 1.0.1.x          | Review of 1.0.0.x connector range. Note: It may be necessary to **update Visio drawings and automation scripts** to match the changes in this range. | Yes                 | Yes                     |
 
 ### Product Info
 
@@ -215,4 +215,4 @@ Physical fixed interfaces:
 
 ## Notes
 
-When upgrading from connector version 1.0.0.5 to 1.0.1.1, check if all Visio drawings and Automation scripts still function correctly, as the changes to the connector may cause errors to appear. Some descriptions and values have been changed (from a numeric value to a string value).
+When upgrading from connector version 1.0.0.5 to 1.0.1.1, check if all Visio drawings and automation scripts still function correctly, as the changes to the connector may cause errors to appear. Some descriptions and values have been changed (from a numeric value to a string value).

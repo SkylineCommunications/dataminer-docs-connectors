@@ -4,11 +4,11 @@ uid: Connector_help_CEFD_Radyne_MDX420_SkyWire
 
 # CEFD Radyne MDX420 SkyWire
 
+## About
+
 The **CEFD Radyne MDX420 SkyWire** connector can be used to display information and configure settings for the **CEFD Radyne MDX420 SkyWire** satellite network gateway.
 
 This connector can be used to monitor and control the **CEFD Radyne MDX420 SkyWire** modem. An SNMP connection is used to retrieve and set the modem's information and configuration data.
-
-## About
 
 ### Version Info
 
@@ -16,7 +16,7 @@ This connector can be used to monitor and control the **CEFD Radyne MDX420 SkyWi
 |--|--|--|--|
 | 1.0.0.x | Initial version | - | - |
 | 2.0.0.x | This version uses SNMPv3. | 1.0.0.x | - |
-| 1.0.1.x [SLC Main] | Implemented changes in layout and configuration parameters based on feedback from vendor. | Based on 1.0.0.4 | Parameters listed in the Notes section are no longer available, so please verify any references in the DMS to these parameters (Visio files, Automation scripts, DMS filters, Reports, etc.). |
+| 1.0.1.x [SLC Main] | Implemented changes in layout and configuration parameters based on feedback from vendor. | Based on 1.0.0.4 | Parameters listed in the Notes section are no longer available, so please verify any references in the DMS to these parameters (Visio files, automation scripts, alarm filters, reports, etc.). |
 
 ### Product Info
 

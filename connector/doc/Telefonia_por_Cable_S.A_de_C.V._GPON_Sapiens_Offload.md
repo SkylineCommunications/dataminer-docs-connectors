@@ -34,6 +34,6 @@ This connector uses a virtual connection and does not require any input during e
 
 The connector is self-sufficient and does not require any configuration.
 
-The topology offload actions are activated by the GQI SAPIENS GPON Offload Automation script, which must be scheduled to be executed through the DataMiner Scheduler module.
+The topology offload actions are activated by the GQI SAPIENS GPON Offload automation script, which must be scheduled to be executed through the DataMiner Scheduler module.
 
 The connector includes a read me on the General page with more information.

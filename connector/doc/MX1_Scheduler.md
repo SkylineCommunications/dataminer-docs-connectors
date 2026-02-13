@@ -18,7 +18,7 @@ The following methods are currently supported by the API:
 
 - /getAutomationScripts
 
-  - GET: Lists all available Automation scripts.
+  - GET: Lists all available automation scripts.
 
 - /getSchedulerTasks
 
@@ -98,7 +98,7 @@ To create or update a task, specific guidelines for the request body must be fol
 
 - **Script:**
 
-  - **Name**: String containing the Automation Script name.
+  - **Name**: String containing the automation script name.
 
   - **Dummies**:
 

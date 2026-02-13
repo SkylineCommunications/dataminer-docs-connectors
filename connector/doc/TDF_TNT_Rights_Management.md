@@ -62,6 +62,6 @@ The **Rights Management** table is updated at startup and can be manually refres
 
 When this table is refreshed, the column descriptions are also updated accordingly. They are ordered based on the order of the **Group Profiles** table
 
-In range 1.0.0.x, when you change the group permissions for a specific service, the element will update the **Group List** property of that service and trigger the Automation script configured with the **Right Management Script Name** parameter. Starting from version 1.0.1.1, this connector no longer requires an Automation script, so the Group List property is no longer needed, and the element itself will be responsible for updating the group permissions.
+In range 1.0.0.x, when you change the group permissions for a specific service, the element will update the **Group List** property of that service and trigger the automation script configured with the **Right Management Script Name** parameter. Starting from version 1.0.1.1, this connector no longer requires an automation script, so the Group List property is no longer needed, and the element itself will be responsible for updating the group permissions.
 
 The **Export to CSV** button exports the **Rights Management** table to a CSV file located in the *Documents \> Elements \> \[ElementName\]* folder. This file is automatically synced in the DMS after the export is completed.

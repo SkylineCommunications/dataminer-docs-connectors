@@ -127,7 +127,7 @@ This page contains an overview of all logs. With the **Log Max Number** paramete
 
 ### Data
 
-This page contains the tables that are used to build the tree control on the General page. If you right-click one of the services in the **Service Table**, you can execute the Automation script to execute the selected service.
+This page contains the tables that are used to build the tree control on the General page. If you right-click one of the services in the **Service Table**, you can execute the automation script to execute the selected service.
 
 ### Data - Log
 
