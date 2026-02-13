@@ -8659,6 +8659,8 @@
     topicUid: Connector_help_Siemens_Desigo_CC
   - name: Siemens Netviewer
     topicUid: Connector_help_Siemens_Netviewer
+  - name: Siemens RUGGEDCOM RSG Series
+    topicUid: Connector_help_Siemens_RUGGEDCOM_RSG_Series
   - name: Siemens Sentron PAC3200
     topicUid: Connector_help_Siemens_Sentron_PAC3200
 - name: Signiant
