@@ -18,7 +18,7 @@ The Site Sentinel® 16 G2 is a robust, full-featured, web-enabled sixteen-channe
 ## Use Cases
 
 - From a single pane of glass, aggregate meter values and relay statuses from multiple sites to control and monitor critical equipment located at broadcast facilities, remote sites, data centers, etc. from your DataMiner System.
-- Integrate meter and relay monitoring and control into your existing monitoring workflow via DataMiner correlation, automation, Dashboards, Low-Code Apps, and Visual Overview.
+- Integrate meter and relay monitoring and control into your existing monitoring workflow via DataMiner Correlation, Automation, Dashboards, Low-Code Apps, and Visual Overview.
 - Use the historical data collection mechanisms within DataMiner to automate the generation of scheduled reports based upon the meter and relay status of various equipment.
 
 ## Technical info
