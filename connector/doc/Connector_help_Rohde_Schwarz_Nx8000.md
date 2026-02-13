@@ -14,7 +14,7 @@ The Rohde & Schwarz Nx8000 connector enables seamless integration and communicat
 
 - **Real-time monitoring and control**: Facilitates continuous status updates and remote configuration to optimize transmitter performance.
 
-- **automation and scalability**: Supports automated workflows and scalable deployments across multiple transmitter sites.
+- **Automation and scalability**: Supports automated workflows and scalable deployments across multiple transmitter sites.
 
 ## Use Cases
 
