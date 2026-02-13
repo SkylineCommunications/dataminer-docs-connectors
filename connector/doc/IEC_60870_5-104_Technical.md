@@ -74,7 +74,7 @@ For range **1.0.1.x only**, an **Import Script** section allows you to configure
 
 - **Import Status**: Shows the import state: *Pending*, *In Progress*, *Completed*, *Failed*.
 - **Device**: Allows you to select "ALL" or any of the available DVEs.
-- **automation Script**: Allows you to select any automation script that exposes the input parameters **ImportElementName** and **RequestGuid**.
+- **Automation Script**: Allows you to select any automation script that exposes the input parameters **ImportElementName** and **RequestGuid**.
 - **Import User**: Optional text field for a username used by the automation script.
 - **Import Password**: Optional password field to securely store credentials for the automation script.
 - **Refresh List**: Refreshes the available devices and automation scripts shown in the dropdowns.

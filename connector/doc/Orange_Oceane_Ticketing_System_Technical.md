@@ -32,7 +32,7 @@ To ensure integration with the Orange Oceane Ticketing System in DataMiner, plea
 - **Network access:** The Orange Oceane Ticketing System API must be accessible over the network for API communication.
 - **DataMiner version:** Make sure you are using DataMiner version **10.5 or higher** to fully support the automation script functionality.
 - **Authentication configuration:** Make sure you have the necessary authentication credentials, including Client ID and Client Secret. Additionally, DataMiner usernames with ticket creation permissions must be mapped to their corresponding Oceane User IDs. (See [Initialization](#initialization).)
-- **automation script:** Make sure the "Orange Oceane Ticketing System" automation script is installed. (See [automation Scripts](#automation-scripts).)
+- **Automation script:** Make sure the "Orange Oceane Ticketing System" automation script is installed. (See [automation Scripts](#automation-scripts).)
 
 ### Initialization
 

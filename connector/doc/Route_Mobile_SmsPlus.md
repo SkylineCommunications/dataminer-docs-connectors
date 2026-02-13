@@ -51,7 +51,7 @@ This section contains the following information:
 - **Sender ID**: The sender ID of the message sender.
 - **Message Type:** The type of message that needs to be sent.
 - **Delivery Report:** Whether a delivery report is required or not.
-- **automation:** Combination of the recipient mobile number and message, separated by a pipe character ("\|").
+- **Automation:** Combination of the recipient mobile number and message, separated by a pipe character ("\|").
 - **Mobile Number:** The mobile number that will be processed by automation.
 - **Message:** The message that will be processed by automation.
 - **Date Time**: The date and time when the message is sent.

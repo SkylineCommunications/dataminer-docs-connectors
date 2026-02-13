@@ -28,7 +28,7 @@ The Orange Oceane Ticketing System connector is a tool that bridges DataMiner al
 
 #### Prerequisites
 
-- **automation script deployment:** The Orange Oceane Ticketing System automation script must be installed and configured in DataMiner.
+- **Automation script deployment:** The Orange Oceane Ticketing System automation script must be installed and configured in DataMiner.
 - **Hyperlinks setup:** Hyperlinks must be set up properly to extend the Alarm Console with the "Create Ticket" and "Go to Ticket" options.
 - **Orange Oceane Ticketing System access:** API credentials (Client ID and Client Secret) are required for system authentication. Additionally, DataMiner usernames with ticket creation permissions must be mapped to their corresponding Oceane User IDs, which the automation script uses when creating tickets.
 
