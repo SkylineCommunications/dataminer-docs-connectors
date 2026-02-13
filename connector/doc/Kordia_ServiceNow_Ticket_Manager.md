@@ -51,7 +51,7 @@ While this is not mandatory, in order to facilitate the solution, an automation 
 
 This automation script contains an input parameter that will be used for the impact description in the ticket creation.
 
-### correlation rules
+### Correlation rules
 
 correlation rules should be created in order to create/update/delete tickets based on DataMiner alarming. Taking into account Kordia's setup of customers and services represented as DataMiner services, and keeping in mind the fact that each customer may have one or more services, the correlation rule should be created to monitor a DataMiner service representative of a Kordia customer.
 
