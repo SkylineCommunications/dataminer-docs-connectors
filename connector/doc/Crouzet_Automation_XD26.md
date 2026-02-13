@@ -2,13 +2,13 @@
 uid: Connector_help_Crouzet_Automation_XD26
 ---
 
-# Crouzet automation XD26
+# Crouzet Automation XD26
 
-The **Crouzet automation XD26** connector is used to configure and display information of the device **Crouzet automation XD26**.
+The **Crouzet Automation XD26** connector is used to configure and display information of the device **Crouzet Automation XD26**.
 
 ## About
 
-This protocol can be used to monitor and control the **Crouzet automation XD26** device. The connector supports one serial connection to communicate with the device.
+This protocol can be used to monitor and control the **Crouzet Automation XD26** device. The connector supports one serial connection to communicate with the device.
 
 **Alarming** and **trending** are enabled for parameters in the protocol.
 
