@@ -38,10 +38,10 @@ The **System** page displays the following tables:
 
 - **Stations**: The list of stations defined in the system. Stations can be added or removed via the right-click menu. Each station can be linked to a preset.
 - **Modems:** The list of modems available in the system. Modems can be added or removed via the right-click menu. Each modem can be associated with at most one station.
-- **correlation Rules**: The list of correlation rules available in the system. Each rule can be associated with one or multiple modems.
+- **Correlation Rules**: The list of correlation rules available in the system. Each rule can be associated with one or multiple modems.
 - **Presets:** The list of spectrum presets defined in the system.
 
-When a correlation rule is triggered, the **Trigger** column in the **correlation Rules** table will be set to *Active* for that rule. All the modems linked to that correlation rule will have their entry in the **Trigger** column set to *Active*, and all the stations managing those modems will also have their entry in the **Trigger** column set to *Active*.
+When a correlation rule is triggered, the **Trigger** column in the **Correlation Rules** table will be set to *Active* for that rule. All the modems linked to that correlation rule will have their entry in the **Trigger** column set to *Active*, and all the stations managing those modems will also have their entry in the **Trigger** column set to *Active*.
 
 In the **Stations** table, the **State column** can be *Active* or *Not Active* for a specific station. When a station is active, the corresponding spectrum preset will be applied to the spectrum analyzer.
 

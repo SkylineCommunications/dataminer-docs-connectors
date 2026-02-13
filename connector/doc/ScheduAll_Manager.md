@@ -177,34 +177,34 @@ The page also includes the **Task Configuration,** which allows you to define th
 
 On this subpage, you can configure which resource pools from DataMiner should be ignored upon work order creation.
 
-### Configuration Subpage - Task automation Script
+### Configuration Subpage - Task Automation Script
 
-This subpage contains the configuration of the automation script specified with the **Task automation Script Name** parameter on the **Configuration** page. You can specify the following settings:
+This subpage contains the configuration of the automation script specified with the **Task Automation Script Name** parameter on the **Configuration** page. You can specify the following settings:
 
 - **Startup Trigger**: Defines whether the automation script is triggered at connector startup (*Enabled*) or not (*Disabled*).
 
 - **Default Behavior**: Defines whether the default behavior is enabled or disabled:
 
-  - *Enabled*: The Task automation Script will be triggered with the default input script parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that in case the processing state is set to *Bulk*, the referred input script parameter will have a serialized list of "WO ID \[IDX\]".
+  - *Enabled*: The Task Automation Script will be triggered with the default input script parameter: `[ "Work Order ID": WO ID [IDX] ]`. Note that in case the processing state is set to *Bulk*, the referred input script parameter will have a serialized list of "WO ID \[IDX\]".
 
-  - *Disabled*: The Task automation Script will be triggered according to the data present in the Input Script Parameters table.
+  - *Disabled*: The Task Automation Script will be triggered according to the data present in the Input Script Parameters table.
 
-- **Processing State**: Defines whether the Task automation Script processing is *Single* or *Bulk*:
+- **Processing State**: Defines whether the Task Automation Script processing is *Single* or *Bulk*:
 
-  - *Single*: The Task automation Script will be triggered individually for each new/modified work order.
+  - *Single*: The Task Automation Script will be triggered individually for each new/modified work order.
 
-  - *Bulk*: The Task automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
+  - *Bulk*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
 - **Pending Script Processing Buffer**: Defines whether there is a buffer holding the pending work orders to be passed as input script parameter (*Enabled*) or not (*Disabled*):
 
-  - *Enabled*: A buffer will be used to hold the work orders that will be passed as input parameter of the Task automation Script if the script is still processing those same work orders.
+  - *Enabled*: A buffer will be used to hold the work orders that will be passed as input parameter of the Task Automation Script if the script is still processing those same work orders.
 
     For example, if there is a running script busy processing "#WO12345", that work order will be stored in the referred buffer.
 
     > [!NOTE]
-    > If this option is selected, the Task automation Script will be responsible for triggering the script again in order to process the pending work orders that have been added, which can be done by setting the pending work order IDs (separated by ;) in the **Work Order IDs Pending Script Processing** parameter (ID=35). The following example illustrates the format in which the work order IDs should be set: `12345;123456;123457`.
+    > If this option is selected, the Task Automation Script will be responsible for triggering the script again in order to process the pending work orders that have been added, which can be done by setting the pending work order IDs (separated by ;) in the **Work Order IDs Pending Script Processing** parameter (ID=35). The following example illustrates the format in which the work order IDs should be set: `12345;123456;123457`.
 
-  - *Disabled*: The Task automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
+  - *Disabled*: The Task Automation Script will be triggered once, receiving as input argument a serialized list of new or modified work orders according to the current configuration of the Input Script Parameters table.
 
   > [!NOTE]
   > At most five of these scripts can run concurrently. The execution queue can hold up to fifty scripts. These limits cannot be adjusted. These are required to prevent system instability issues.

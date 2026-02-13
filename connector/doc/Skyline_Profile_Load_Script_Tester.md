@@ -54,4 +54,4 @@ Note: You can refresh the selection lists by clicking the **Refresh** button.
 
 For a **semi-manual** test case, a resource has to be selected. Select a function to filter the available resources. When you execute the test case, the profile and state will be requested.
 
-For a **script** test case, select the name of the custom automation Script.
+For a **script** test case, select the name of the custom automation script.

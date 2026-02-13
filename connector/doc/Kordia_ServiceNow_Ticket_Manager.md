@@ -47,7 +47,7 @@ In addition, you will need to fill in the **correlation rule folder**. All corre
 
 ### Automation Scripts
 
-While this is not mandatory, in order to facilitate the solution, an automation Script named **KOR-Send-ServiceNow-Request** can be used to send the alarm data from the correlation rule to the element.
+While this is not mandatory, in order to facilitate the solution, an automation script named **KOR-Send-ServiceNow-Request** can be used to send the alarm data from the correlation rule to the element.
 
 This automation script contains an input parameter that will be used for the impact description in the ticket creation.
 

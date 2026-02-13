@@ -24,7 +24,7 @@ The connector periodically retrieves the list of users and conversations via the
 - Parameter "CONVID": The ID of the Slack conversation in which the command was invoked.
 - Parameter "SLACKARGUMENTS": The plain text after the command name that was provided by the Slack user when the command was invoked.
 
-Users can use the "!list" command to retrieve an overview of all compatible and enabled scripts that can be executed. The command for each script can be customized on the "automation Scripts" page.
+Users can use the "!list" command to retrieve an overview of all compatible and enabled scripts that can be executed. The command for each script can be customized on the "Automation Scripts" page.
 
 ### Version Info
 

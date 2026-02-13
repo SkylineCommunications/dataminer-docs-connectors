@@ -98,7 +98,7 @@ To create or update a task, specific guidelines for the request body must be fol
 
 - **Script:**
 
-  - **Name**: String containing the automation Script name.
+  - **Name**: String containing the automation script name.
 
   - **Dummies**:
 

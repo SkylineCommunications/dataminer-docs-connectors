@@ -4,35 +4,17 @@ uid: Connector_help_Sky_UK_MCR_Desk
 
 # Sky UK MCR Desk
 
+## About
+
 The **Sky UK MCR Desk** connector is a **virtual** connector that is used in Sky to run a script.
 
 The data for a particular monitor that is linked to a certain desk is saved in the element data.
 
 A Visio drawing will contain a button that will launch an **automation script**.
 
-## About
-
 The script can be either a generic one, or the one that is linked to the MON FOLLOW function.
 
 It is used in case the MON FOLLOW function is enabled in the Visio that is on the **Atos BNCS** element.
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -48,13 +30,13 @@ On the General Page, you need to configure the Linked Output Monitor and the SDI
 
 ### General
 
-This connector shows 6 parameters: The **Monitor Follows IO**, the **Buffer-Trigger automation Script**, the **Local SD Matrix Element**, the **SDI Monitoring Outputs**, the **Local Audio Matrix Element** and the **Audio Monitoring Outputs**.
+This connector shows 6 parameters: The **Monitor Follows IO**, the **Buffer-Trigger Automation Script**, the **Local SD Matrix Element**, the **SDI Monitoring Outputs**, the **Local Audio Matrix Element** and the **Audio Monitoring Outputs**.
 
 The name of the Matrix is shown on the **SDI Matrix Element** parameter.
 
 This connector also shows 2 other parameters: The **Monitor Follows IO** and a **Linked Output Monitor**.
 
-Also the **Buffer - Trigger automation Script** parameter shows the command that was sent from Visual Overview. The syntax of the command that triggers the launching of the script adheres to a certain standard.The line should start with \[automation\].
+Also the **Buffer - Trigger Automation Script** parameter shows the command that was sent from Visual Overview. The syntax of the command that triggers the launching of the script adheres to a certain standard.The line should start with \[automation\].
 
 Furthermore there are 2 separators: \[NextAtt\] and \[AttData\].
 

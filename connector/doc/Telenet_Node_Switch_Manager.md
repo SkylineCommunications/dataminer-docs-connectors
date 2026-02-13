@@ -8,7 +8,7 @@ The **Telenet Node Switch Manager** is a DataMiner Application that is used to s
 
 ## About
 
-This connector makes it possible to plan jobs containing nodes that need to be switched. Once a task has been planned, a **scheduled** **task** is created. The different nodes that can be switched are retrieved via SOAP messages to a specific headend DMA. The scheduled tasks will execute an **Interactive** **automation Script,** which in turn will execute another **automation Script** that takes care of the actual switching of the nodes. Once a job has been completed, another **automation Script** is activated which creates and emails a **Report** of the job that has been completed.
+This connector makes it possible to plan jobs containing nodes that need to be switched. Once a task has been planned, a **scheduled task** is created. The different nodes that can be switched are retrieved via SOAP messages to a specific headend DMA. The scheduled tasks will execute an **interactive automation script,** which in turn will execute another automation script that takes care of the actual switching of the nodes. Once a job has been completed, another automation script is activated, which creates and emails a **report** of the job that has been completed.
 
 ## Configuration
 
@@ -26,17 +26,17 @@ This connector uses an **HTTP** connection and requires the following input duri
 
 ### Automation scripts
 
-This connector uses three **automation Scripts**. These must be added before you can start using the connector:
+This connector uses three **automation scripts**. These must be added before you can start using the connector:
 
 - CreateReport.xml
 - Switching Nodes AS.xml
 - Switching Nodes IAS.xml
 
-There are two ways to add these automation Scripts:
+There are two ways to add these automation scripts:
 
-1. In **System Display**, go to Advanced \> automation, then select "Insert File" and select the automation Scripts one by one.
+1. In **System Display**, go to Advanced \> automation, then select "Insert File" and select the automation scripts one by one.
 
-1. Paste the three **automation Scripts** into *C:\Skyline DataMiner\Scripts* and then perform a force synchronization as follows:
+1. Paste the three **automation scripts** into *C:\Skyline DataMiner\Scripts* and then perform a force synchronization as follows:
 
    - In **System Display**, right-click the top banner and select Admin Tools \> Force Synchronization \> File... In the "Force Synchronization" window, paste *C:\Skyline DataMiner\Scripts* and click OK.
 
@@ -48,21 +48,21 @@ Finally, you then need to fill in the settings on the **Settings** page of the e
 
 ### Jobs Page
 
-The **Jobs** **Page** displays two tables.
+The **Jobs Page** displays two tables.
 
-The **Job List** table displays all the jobs that are planned, are being executed, or have been executed. It is possible to change the execution time of a job by modifying the **Start** **Time** parameter. This time will only be changed if it occurs in the interval specified on the **Settings** page and if the job has not yet started.
+The **Job List** table displays all the jobs that are planned, are being executed, or have been executed. It is possible to change the execution time of a job by modifying the **Start Time** parameter. This time will only be changed if it occurs in the interval specified on the **Settings** page and if the job has not yet started.
 
-Below, the **Node** **Table** is displayed, which shows all the nodes that are planned, are being executed, or have been executed. Each node is part of a job. A job can have multiple nodes, but a node can only have one job. The **Required** **Switch** **Position** parameter should be filled in. If this cell is left blank, then the inverse of the current **Switch** **Position** will be used.
+Below, the **Node Table** is displayed, which shows all the nodes that are planned, are being executed, or have been executed. Each node is part of a job. A job can have multiple nodes, but a node can only have one job. The **Required Switch Position** parameter should be filled in. If this cell is left blank, then the inverse of the current **Switch Position** will be used.
 
-In addition, three page buttons are available:
+In addition, several page buttons are available:
 
-- **Alarm Table .** : Leads to a page displaying clearable alarms generated when something goes wrong when the nodes are switched, along with extra information.
+- **Alarm Table**: Leads to a page displaying clearable alarms generated when something goes wrong when the nodes are switched, along with extra information.
 
-- **New Job .** : Leads to a page where you can select different nodes that need to be switched.
+- **New Job**: Leads to a page where you can select different nodes that need to be switched.
 
-- Selecting the nodes can be done either by selecting each node in turn via the **Nodes Available** box, or by filling in the names of the nodes, separated by a space, in the **Import CSV** field.
-  - You also have to fill in the **Start** **Time** **Job** parameter with an appropriate start time that lies in the interval defined on the **Settings** page.
-  - The **Duration** **Job** parameter also needs to be filled in.
+  - Selecting the nodes can be done either by selecting each node in turn via the **Nodes Available** box, or by filling in the names of the nodes, separated by a space, in the **Import CSV** field.
+  - You also have to fill in the **Start Time Job** parameter with an appropriate start time that lies in the interval defined on the **Settings** page.
+  - The **Duration Job** parameter also needs to be filled in.
   - The **Status Information** parameter will display an error message if the provided input data is not as expected.
   - Once all the nodes have been added and all the parameters are filled in, you can add the job by pressing the **Add Job** button. The job will then be added to the **Job List** and the selected nodes will be added to the **Node Table**.
 
