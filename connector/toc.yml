@@ -3250,6 +3250,10 @@
     topicUid: Connector_help_Ensemble_Designs_Avenue_9455
   - name: Ensemble Designs Avenue 9455 - Slot
     topicUid: Connector_help_Ensemble_Designs_Avenue_9455_-_Slot
+- name: Entsoe
+  items:
+  - name: Entsoe Transparency Platform
+    topicUid: Connector_help_Entsoe_Transparency_Platfrom
 - name: Envivio
   items:
   - name: Envivio 4Caster C4 2
