@@ -47,6 +47,4 @@ This page displays the **Inputs** Table details, used to periodically poll the I
 Inputs can be added, edited or removed by right clicking on the table and selecting the desired action.
 - **Add input**: By specifying the Type, input number and the polling frequency it add a new Input to read.
 - **Configure input**: It allows for editing the Input configuration and sends the changes to the device.
-- **Delete selected input(s)**: It deletes the selectedInputs from the Inputs table. Does not affect Device
-
-## Notes
+- **Delete selected input(s)**: It deletes the selectedInputs from the Inputs table. Does not affect Device.

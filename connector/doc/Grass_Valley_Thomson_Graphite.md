@@ -6,7 +6,7 @@ uid: Connector_help_Grass_Valley_Thomson_Graphite
 
 ## About
 
-The Grass Valley Thomson Graphite is a Digital TV Receiver designed used for monitoring .
+The Grass Valley Thomson Graphite is a Digital TV Receiver designed used for monitoring.
 
 This connector is used to retrieve Input data information from the Grass Valley Thomson Graphite device using Serial. It allows deep monitoring of the device Input's Sync Statuses, their Configurations and Receiver Status.
 
