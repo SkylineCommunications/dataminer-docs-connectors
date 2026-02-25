@@ -96,6 +96,14 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Streamlines the process of buying extra data directly through DataMiner and provides immediate feedback to the operator.
 
+### Use Case 8
+
+**Challenge**: Terminals can be bonded(2 terminals active on 1 service line) or can swap kits creating a new terminal id on the service line.
+
+**Solution**: The connector aggregates the statistics data up to the service line statistics table.  This data is aggregated for all the terminals linked to a service line. 
+
+**Benefit**: Maintains historical trend data at the service line level in the case of bonded terminals and terminals that are swapped out.
+
 ## Technical Reference
 
 ### Prerequisites
