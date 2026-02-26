@@ -14,12 +14,6 @@ The **OneWeb Enterprise** connector enables the monitoring of key resources and 
 
 This connector is designed for enterprise environments with access to OneWeb's API infrastructure. At present, the connector focuses on monitoring only and does not support device control or provisioning features.
 
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | v3                 |
-
 ## Configuration
 
 ### Connections
@@ -56,6 +50,8 @@ The data retrieved and stored in the different tables can be linked to each othe
 The **User Terminals** page provides comprehensive details about each user terminal. It includes essential information such as IMEI, user terminal name, and operational state. Additionally, it offers insights into network status, firmware version, hardware components, and manufacturer details.
 
 Relational data is also available, including associations with the distribution partner and site connectivity. Location information such as geographic coordinates is also included.
+
+User Terminal components (e.g. "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadata information is displayed in the **User Terminal Components** table.
 
 ### Products
 

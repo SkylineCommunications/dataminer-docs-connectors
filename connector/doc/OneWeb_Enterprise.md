@@ -18,6 +18,12 @@ Monitor every connected user terminal with full transparency. Gain instant acces
 
 ![User Terminals Table](~/connector/images/UT.png)
 
+#### Monitoring of User Terminal Components
+
+Gain granular visibility into the internal elements of each User Terminal by monitoring its key hardware and software components. The connector collects component-level details from OneWeb API making it possible to track operational health and software consistency across the fleet.  
+
+![User Terminals Components Table](~/connector/images/UTC.png)
+
 ### Monitoring of Products
 
 Track and manage service plan inventory with precision. Each product is tied directly to a distribution partner and a deployment site, offering full traceability. Dive deeper into product usage by linking services to specific user terminals and customer accounts, ensuring you always know who is using what, where, and how.
