@@ -69,7 +69,7 @@ This page displays a per-node summary retrieved from `GET /_cat/nodes`:
 - **Name**, **IP Address**.
 - **Heap Usage (%)**, **RAM Usage (%)**, **CPU Load**.
 - **Load Average**: 1-minute, 5-minute, and 15-minute averages.
-- **Node Roles**: *Master*, *Ingest*, *Coordinating Only*, *Remote Cluster Client*, M*achine Learning*, *Cluster Manager*.
+- **Node Roles**: *Master*, *Ingest*, *Coordinating Only*, *Remote Cluster Client*, *Machine Learning*, *Cluster Manager*.
 
 ### Node Stats - General
 
