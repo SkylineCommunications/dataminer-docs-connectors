@@ -38,13 +38,14 @@ Depending on the version of the connector, it can consist of the data pages deta
 
 ### General (v.1.0.0.x+)
 
-On this page, check the device Connection Status and general details (Firmware Version, etc...).
+On this page, you can check the connection status and general details for the device (Firmware Version, etc.).
 
 ### Inputs (v.1.0.0.x+)
 
 This page displays the **Inputs** Table details, used to periodically poll the Input informations and allow for Input configuration.
 
 Inputs can be added, edited or removed by right clicking on the table and selecting the desired action.
+
 - **Add input**: By specifying the Type, input number and the polling frequency it add a new Input to read.
-- **Configure input**: It allows for editing the Input configuration and sends the changes to the device.
-- **Delete selected input(s)**: It deletes the selectedInputs from the Inputs table. Does not affect Device.
+- **Configure input**: Allows you to edit the input configuration and send the changes to the device.
+- **Delete selected input(s)**: Removes the selected inputs from the Inputs table. Note that this does not affect the device.
