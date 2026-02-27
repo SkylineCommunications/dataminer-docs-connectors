@@ -20,7 +20,7 @@ Monitor every connected user terminal with full transparency. Gain instant acces
 
 #### Monitoring of User Terminal Components
 
-Gain granular visibility into the internal elements of each User Terminal by monitoring its key hardware and software components. The connector collects component-level details from OneWeb API making it possible to track operational health and software consistency across the fleet.  
+Gain granular visibility into the internal elements of each user terminal by monitoring its key hardware and software components. The connector collects component-level details from OneWeb API, making it possible to track operational health and software consistency across the fleet.
 
 ![User Terminals Components Table](~/connector/images/UTC.png)
 

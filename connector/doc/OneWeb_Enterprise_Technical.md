@@ -51,7 +51,7 @@ The **User Terminals** page provides comprehensive details about each user termi
 
 Relational data is also available, including associations with the distribution partner and site connectivity. Location information such as geographic coordinates is also included.
 
-User Terminal components (e.g. "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadata information is displayed in the **User Terminal Components** table.
+User terminal components (e.g., "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadata information is displayed in the **User Terminal Components** table.
 
 ### Products
 
