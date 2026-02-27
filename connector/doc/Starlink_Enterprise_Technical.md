@@ -150,7 +150,7 @@ The data retrieved and stored in the different tables can be linked to each othe
 
 ### Service Line Statistics
 
-Each row in the **Service Line Statistics** table represents aggregated kpi data for the terminals that belong to that service line. 
+Each row in the **Service Line Statistics** table represents aggregated KPI data for the terminals that belong to that service line.
 
 ### Alerts Page
 
