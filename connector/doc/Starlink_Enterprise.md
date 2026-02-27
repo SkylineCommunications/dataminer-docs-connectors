@@ -98,9 +98,9 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ### Use Case 8
 
-**Challenge**: Terminals can be bonded(2 terminals active on 1 service line) or can swap kits creating a new terminal id on the service line.
+**Challenge**: Terminals can be bonded (two terminals active on one service line) or can swap kits, creating a new terminal ID on the service line.
 
-**Solution**: The connector aggregates the statistics data up to the service line statistics table.  This data is aggregated for all the terminals linked to a service line. 
+**Solution**: The connector aggregates the statistics data up to the service line statistics table.  This data is aggregated for all the terminals linked to a service line.
 
 **Benefit**: Maintains historical trend data at the service line level in the case of bonded terminals and terminals that are swapped out.
 
