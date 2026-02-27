@@ -17,6 +17,3 @@ In this connector the user can take advantage of the versatility of the TCE900 b
 - **Input and Output Overview**: Provides an overview of multiple input types, such as ATV, DAB, FM and ATSC30. The DVBT, DVBT2, ISDBT, DTM and ATSC30 outputs are also present.
 
 - **Hardware Monitoring**: Monitor the TCE900 rack unit with information about the sensors present, amplifiers, exciter and cooling system.
-
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Rohde_Schwarz_TCE900_(System_9000)_Technical).
