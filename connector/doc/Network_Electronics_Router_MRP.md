@@ -165,7 +165,7 @@ On this page, basic device information is displayed:
 This page contains a table displaying the modules of the modular router of Flashlink. The table has the following columns:
 
 - **Number**: The ID of the module within the bus.
-- **Type**: E.g. *vd128xp*, *aavmux*, *adcsdi*, *rs422,* etc.
+- **Type**: For example, *vd128xp*, *aavmux*, *adcsdi*, *rs422*, etc.
 - **Status**: *Ok*, *Fail* or *Removed.*
 - **Label**: The appointed name at configuration time.
 - **Alarm Status**: The alarm handler for the **ModuleStatus** variable. Read the description for more information.

@@ -34,7 +34,7 @@ Please note the following:
 
 | Range | Supported Firmware |
 |--|--|
-| 1.0.0.x 1.0.2.x 1.0.3.x | Supported firmware depends on each command. To check the minimum version necessary to run a command, refer to the **Minimum Required FW** column on the **Manager** page. If this column has the value "any", there is no information in the document "DCM_IDL.pdf" about the minimum version to run that command, so it is assumed to be compatible with all firmware versions. E.g. Command **Get Boards** requires firmware 6.9 or later. ![versions3.JPG](~/connector/images/CISCO_DCM_versions3.JPG) |
+| 1.0.0.x 1.0.2.x 1.0.3.x | Supported firmware depends on each command. To check the minimum version necessary to run a command, refer to the **Minimum Required FW** column on the **Manager** page. If this column has the value "any", there is no information in the document "DCM_IDL.pdf" about the minimum version to run that command, so it is assumed to be compatible with all firmware versions. For example, Command **Get Boards** requires firmware 6.9 or later. ![versions3.JPG](~/connector/images/CISCO_DCM_versions3.JPG) |
 
 ## Configuration
 
@@ -847,7 +847,7 @@ There are a few rules that the import file must comply with, and some things tha
 
       - The abbreviation of the days: "*Sun*", "*Mon*", "*Thu*", etc. (not case sensitive)
 
-      - If the server is set to the local culture, the day of the week and abbreviated names in your own language (not case sensitive). E.g. if Server Culture is set to "nl" (Dutch): "*Zondag*", "*zo*", "*Maandag*", "*ma*", etc.
+      - If the server is set to the local culture, the day of the week and abbreviated names in your own language (not case sensitive). For example, if Server Culture is set to "nl" (Dutch): "*Zondag*", "*zo*", "*Maandag*", "*ma*", etc.
 
       - *Always On-Air* or *Never On-Air*.
 

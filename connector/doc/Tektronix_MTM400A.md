@@ -80,7 +80,7 @@ On this page, you can configure the scheduler for the device. These settings hav
 
 Note: When you enable the scheduler, it starts on the time and date of the start schedule item. Until that point in time, it may appear as if the scheduler has not started.
 
-There is also a **Scheduler Table**, where you can specify the days of the week when each slot is applicable and the time when the slot should be configured. When you enter the days of the week, separate each day with a space, a pipe character and another space. E.g. "*Mon \| Tue \| Wed \| Thu \| Fri \| Sat \| Sun*". When you add a row, by default the slot will be applied every day at 00:00:00 PM.
+There is also a **Scheduler Table**, where you can specify the days of the week when each slot is applicable and the time when the slot should be configured. When you enter the days of the week, separate each day with a space, a pipe character and another space, e.g., `Mon | Tue | Wed | Thu | Fri | Sat | Sun`. When you add a row, by default the slot will be applied every day at 00:00:00 PM.
 
 #### Slots Configuration subpage
 

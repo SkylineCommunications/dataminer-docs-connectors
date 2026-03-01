@@ -48,9 +48,9 @@ This page displays a tree view with all stored **scenarios** and associated **ev
 
   - *Running*: Events of the scenario are scheduled to be forwarded.
 
-- **Current** **step**: The position, in the scenario, of the last event to be sent.
+- **Current step**: The position, in the scenario, of the last event to be sent.
 
-  - E.g.: "1/5" means the first event of the scenario (with 5 events) was sent.
+  - For example, "1/5" means the first event of the scenario (with 5 events) was sent.
 
   - On the tree view, the last event sent has an arrow icon.
 
@@ -58,7 +58,7 @@ Every **scenario** has 5 buttons/actions available:
 
 - **Next**: Send next **event** in line
 
-  - E.g.: If the **Current Step** is "1/5", by clicking on **Next**, the second event will be sent immediately, and the cell becomes "2/5".
+  - For example, if the **Current Step** is "1/5", by clicking on **Next**, the second event will be sent immediately, and the cell becomes "2/5".
 
   - **Next** actions do not take **Delay** values into account.
 
@@ -66,7 +66,7 @@ Every **scenario** has 5 buttons/actions available:
 
 - **Run**: Initiates a **scenario** run. All **events** of the **scenario** will automatically, and sequentially, be forwarded with a predefined **delay** between each others. The run starts on the position displayed in **Current Step**.
 
-  - E.g.: If **scenario's delay** is set to *500 ms* and the **Current Step** is "2/5", by clicking on **Run**, all the last 3 events are scheduled to be sent with *500 ms* apart.
+  - For example, if **scenario's delay** is set to *500 ms* and the **Current Step** is "2/5", by clicking on **Run**, all the last 3 events are scheduled to be sent with *500 ms* apart.
 
 - **Stop**: Stops a running **scenario**. The **Current Step** is not reset, it remains on the same step when the action **Stop** was performed.
 

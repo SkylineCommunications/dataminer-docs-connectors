@@ -35,7 +35,7 @@ In either case, the SNMP interface collects the traps emitted by the device, so 
 #### HTTP Connection for Direct Communication
 
 - **IP address/host**: The IP address of the U262.
-- **IP port**: The port of the destination e.g., *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 #### SNMP Connection

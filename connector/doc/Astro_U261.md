@@ -35,7 +35,7 @@ In either case, the **SNMP** interface collects the traps sent by the device, so
 #### HTTP Connection for Direct Communication
 
 - **IP address/host**: The IP address of the U261.
-- **IP port**: The port of the destination e.g., *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 #### SNMP Connection
@@ -87,7 +87,7 @@ On this page, you can configure communication settings of the 16 receivers (e.g.
 
 ### IP TX1 Settings
 
-On this page, you can configure the output IP transmitter settings (E.g. **Destination IP/Port**, **TOS**, **TTL**, **FEC** configs, ...).
+On this page, you can configure the output IP transmitter settings (e.g., **Destination IP/Port**, **TOS**, **TTL**, **FEC** configs, ...).
 
 ### Input MUX
 

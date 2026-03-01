@@ -118,7 +118,7 @@ For the following **common issues**, you can find the **probable cause in the Lo
 
 - StoredProcedure
 
-  When inserting data into the DB, the input parameters of storedProcedure must be respected, as otherwise an exception is thrown and the processing of the file is stopped. E.g. "*Incorrect number of arguments for PROCEDURE iam.IngestAMPData; expected 8, got 9*". The DSL file is then also moved to the *Faulty Files* folder.
+  When inserting data into the DB, the input parameters of storedProcedure must be respected, as otherwise an exception is thrown and the processing of the file is stopped, e.g., "*Incorrect number of arguments for PROCEDURE iam.IngestAMPData; expected 8, got 9*". The DSL file is then also moved to the *Faulty Files* folder.
 
 This information will be updated and logged each polling cycle.
 

@@ -26,7 +26,7 @@ This a serial connector combined with smart-serial communication. During the cre
 
 - **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: IP port of the device, fixed value: *4050.*
-- **Bus address**: This is a combination of the frame number and slot number/ID: \<frameNumber\>**.**\<slotID\>. E.g. frame 1 and slot 21 = bus address *1.21*. The ETH Module is always on slot 21.
+- **Bus address**: This is a combination of the frame number and slot number/ID: \<frameNumber\>**.**\<slotID\>. For example, frame 1 and slot 21 = bus address *1.21*. The ETH Module is always on slot 21.
 
 #### SMART-SERIAL PORTDEV CONNECTION
 

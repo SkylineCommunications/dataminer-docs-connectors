@@ -6,13 +6,7 @@ uid: Connector_help_Generic_Dummy
 
 ## About
 
-This connector is a virtual connector developed to store parameter information. From range 1.0.2.x onwards, connections are made between all externally added interfaces (E.g. added by VC4 IMS).
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.2.x          | DCF Integration | Yes                 | Yes                     |
+This connector is a virtual connector developed to store parameter information. From range 1.0.2.x onwards, connections are made between all externally added interfaces (e.g., added by VC4 IMS).
 
 ## Installation and configuration
 
@@ -38,7 +32,7 @@ DCF can also be implemented through the DataMiner DCF user interface and through
 
 #### Dynamic Interfaces
 
-Interfaces are added externally (E.g. added by VC4 IMS)
+Interfaces are added externally (e.g., added by VC4 IMS)
 
 Virtual dynamic interfaces:
 

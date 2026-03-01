@@ -73,7 +73,7 @@ All these settings are done via the **Job Manager.** page button.
 ## Usage
 
 Job Overview Page
-This page shows a list of all the Job requests in the **Job Overview Table**. And keep track of their current state. E.g.: Scheduled, Running, Completed, Failed.
+This page shows a list of all the Job requests in the **Job Overview Table**. And keep track of their current state. For example: Scheduled, Running, Completed, Failed.
 A Job can be linked to a group and these groups are displayed in the **Group Table.** Whenever a group is disabled or enabled, the jobs linked to this group will be disabled or enabled as well.
 
 Resource Overview Page
@@ -86,4 +86,4 @@ Supported resources are **Envivio Halo** using the *Envivio Halo* and **Envivio 
 
 The **Envivio Muse** can be configured in redundancy. In this case the virtual redundant Element will be used as resource. This way the current active, main or backup, will be used on job execution.
 
-The **Envivio Halo** can be configured with a duplicate element. This is an element that needs the same configuration on job execution as its linked element. The link will be provided via an **element** **Property**: **TeamID**. When this property contains the same value the resource will be detected as one but will copy the configuration settings in all of the linked elements as well.
+The **Envivio Halo** can be configured with a duplicate element. This is an element that needs the same configuration on job execution as its linked element. The link will be provided via an **element Property**: **TeamID**. When this property contains the same value the resource will be detected as one but will copy the configuration settings in all of the linked elements as well.

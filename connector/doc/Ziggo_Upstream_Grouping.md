@@ -50,7 +50,7 @@ The **Notifications** page button displays a table with all received notificatio
 
 **Upstream Event Types Affected Devices** is the user-defined list that filters the incoming issues by its **type**. Multiple types have to be separated by pipe characters "\|".
 
-- E.g.: "USSPECTRAL\|USFEC" will only allow *usspectral* and *usfec* issue types to be stored and, therefore, processed.
+- For example, "USSPECTRAL\|USFEC" will only allow *usspectral* and *usfec* issue types to be stored and, therefore, processed.
 
 The **USSegment** **Table** displays all the distinct **USSegments** received and their corresponding **Severity** based on the highest severity of the issues related to that **USSegment**.
 

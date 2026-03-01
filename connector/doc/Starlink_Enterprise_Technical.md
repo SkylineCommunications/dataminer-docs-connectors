@@ -148,6 +148,10 @@ The data retrieved and stored in the different tables can be linked to each othe
 
 ![Relations between tables](~/connector/images/Starlink_Enterprise_UserTerminalsRelationships.drawio.svg)
 
+### Service Line Statistics
+
+Each row in the **Service Line Statistics** table represents aggregated KPI data for the terminals that belong to that service line.
+
 ### Alerts Page
 
 Each row in the **Alerts** table represents an alert that comes from a user terminal (not from a router). Alerts will persist for as long as they are active.

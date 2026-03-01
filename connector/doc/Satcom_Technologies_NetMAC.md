@@ -109,7 +109,7 @@ The **Traps...** page button provides access to parameters related to receiving 
 
 This page provides an overview of the mapping between the system codes and their user-friendly names in the **Friendly Names Table**. You can load this table by setting the location of the naming file in the **Naming File Location** parameter and clicking the **Get Names** button.
 
-The naming file contains the conversion of the database device code to the user-friendly names. In this CSV file, every line must mention a system code and a user-friendly name, separated by a semicolon. E.g.:
+The naming file contains the conversion of the database device code to the user-friendly names. In this CSV file, every line must mention a system code and a user-friendly name, separated by a semicolon. For example:
 
 *ANT1 SYS1 CTRL BRK12\*\*\*;LNA Controller*
 

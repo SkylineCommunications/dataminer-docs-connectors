@@ -10,12 +10,6 @@ The **Marconi Deicer S58** is an anti-icing system.
 
 The **Marconi Deicer S58** will update its monitoring parameters by receiving **Smart-Serial** data.
 
-### Version Info
-
-| Range     | Description     |
-|------------------|-----------------|
-| 1.0.0.x          | Initial version |
-
 ## Installation and configuration
 
 ### Creation
@@ -26,11 +20,11 @@ This connector uses a Smart-Serial connection and requires the following input d
 
 - Direct connection:
 
-- **Baudrate:** Baudrate specified in the manual of the device. E.g. 9600
-  - **Databits:** Databits specified in the manual of the device. E.g. 7
-  - **Stopbits:** Stopbits specified in the manual of the device. E.g. 1
-  - **Parity:** Parity specified in the manual of the device. E.g. No
-  - **FlowControl:** FlowControl specified in the manual of the device. E.g. No
+- **Baudrate:** Baudrate specified in the manual of the device, e.g., 9600
+  - **Databits:** Databits specified in the manual of the device, e.g., 7
+  - **Stopbits:** Stopbits specified in the manual of the device, e.g., 1
+  - **Parity:** Parity specified in the manual of the device, e.g., No
+  - **FlowControl:** FlowControl specified in the manual of the device, e.g., No
 
 - Inteface connection:
 

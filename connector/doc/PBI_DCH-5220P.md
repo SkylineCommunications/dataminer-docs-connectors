@@ -52,6 +52,6 @@ The web interface is only accessible when the client machine has network access 
 
 The connector uses **SNMP** commands to communicate with the device. The connector layout generally corresponds with that of the web interface of the device.
 
-The first part of a page corresponds with the top level of the web interface (Status, Configuration, System). The second part corresponds with the relevant subsection (E.g. Status - Decoder, Configuration - DVB-S2 Tuner, System - Device).
+The first part of a page corresponds with the top level of the web interface (Status, Configuration, System). The second part corresponds with the relevant subsection (e.g., Status - Decoder, Configuration - DVB-S2 Tuner, System - Device).
 
 Note: The settings for the different types of tuner are only displayed when that particular type of tuner is installed. For example, if a **DVB-C tuner** is available instead of a DVB-S2 Tuner, the page for the tuner that will be shown is **Configuration - DVB-C Tuner**.

@@ -13,7 +13,7 @@ All of this is done through a Visio visual overview, which is essential for this
 
 ## About
 
-With the **ARTE Nodal Manager**, you can configure the current device setup. E.g. you can configure that two antennas can be used, one of which is mobile, while the other is fixed.
+With the **ARTE Nodal Manager**, you can configure the current device setup. For example, you can configure that two antennas can be used, one of which is mobile, while the other is fixed.
 
 Once the device chain for each antenna is configured, you can organize specific settings for an antenna through a Visio visual overview. You can for instance connect an output to an input and monitor the signal with specific details.
 
@@ -97,10 +97,9 @@ Each of them needs to be configured using one of the following formats:
 - **Parameter** ID of the **read**
 - **Parameter** ID of the **write** (=**Column** ID) / **parameter** ID of the **read** (= **Table** ID) : **Column** Index : Key
 
-  e.g., 110/100:2:1_A
+  Example: 110/100:2:1_A
 
-When one of the items in the format does not exist it may be left empty.
-E.g.: 110/100
+When one of the items in the format does not exist it may be left empty. For example: 110/100
 
 ### Satellite
 
@@ -137,7 +136,7 @@ This page gives an overview of the configured antennas. These will be available 
 
 The configuration of this table is explained in the section *Installation and configuration*.
 
-The values in the table will result in the correct setting of the actions requested via the Visio visual overview. E.g. when the Vertical Low Backup needs to be used, the connector will select the setting in the **Antenna VLB Input ID** in order to know the **L-Band Matrix Input**.
+The values in the table will result in the correct setting of the actions requested via the Visio visual overview. For example, when the Vertical Low Backup needs to be used, the connector will select the setting in the **Antenna VLB Input ID** in order to know the **L-Band Matrix Input**.
 
 ### L-Band Matrix Antenna Alerts Page
 

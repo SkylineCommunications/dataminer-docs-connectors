@@ -39,8 +39,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 **SERIAL Connection:**
 
-- **IP address/host**: The polling IP or URL of the destination e.g., *220.120.114.99.*
-- **IP port**: The port of the destination e.g., *443*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *220.120.114.99.*
+- **IP port**: The port of the destination, e.g., *443*.
 - **Bus address**: A field that can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 ### Configuration
@@ -56,7 +56,7 @@ The HTTP connection requires authentication. To authenticate yourself:
 
 ### General Page
 
-This page displays some general info about the device. E.g.:
+This page displays some general info about the device. For example:
 
 - Serial Number
 - Firmware Version
@@ -68,7 +68,7 @@ The page also contains several page buttons. The page buttons **Disk Status...**
 
 ### Interface Page
 
-This page displays a table containing information regarding the device **interfaces**. E.g.:
+This page displays a table containing information regarding the device **interfaces**. For example:
 
 - Interface Name
 - Interface Status

@@ -56,7 +56,7 @@ The **Log** will show every action performed by this connector.
 
 ### Multiple Protocol Page
 
-This page follows a similar logic as the previous page. You start by filling in information about the load and configuration parameters on the top-left side, continuing to the bottom left side. The information regarding the save process thould then specified on the right.
+This page follows a similar logic as the previous page. You start by filling in information about the load and configuration parameters on the top-left side, continuing to the bottom left side. The information regarding the save process should then be specified on the right.
 
 A. Load Multiple Protocols:
 
@@ -72,15 +72,15 @@ A. Load Multiple Protocols:
 
    - **Add All**: Will add all the protocol versions for the **Selected Protocol Name** to the **Selected Protocols** table.
 
-1. **Selected Protocol Version**: After selecting **Selected Protocol** **Name**, you can select the desired protocol version from all the valid "protocol.xml" files found in the previously selected folder.
+1. **Selected Protocol Version**: After selecting **Selected Protocol Name**, you can select the desired protocol version from all the valid "protocol.xml" files found in the previously selected folder.
 
-   - **Add** **Version**: Will add a single protocol version to the **Selected Protocols** table.
+   - **Add Version**: Will add a single protocol version to the **Selected Protocols** table.
 
 The **Selected Protocols** table will display all the selected protocols that will be subjected to the changes from the **Timer Ranges** table and the **Add Restart Timer Button** toggle button.
 
 B. Change Multiple Protocols:
 
-   1. **Timers Ranges** table: This table can be filled in by the user. Every row shows one range (min and max timer value) and a **New Timer** value. The preferred order for changing the timers is top-down. This means that if you add overlapping ranges, the first range from the top that matches the timer in the protocol will be used. E.g. in the range example below, any timer with a value of *1m 00s* will be changed to 5*m 00s*. If there are overlapping ranges, the range with the lowest Range \[IDX\] will be chosen.
+   1. **Timers Ranges** table: This table can be filled in by the user. Every row shows one range (min and max timer value) and a **New Timer** value. The preferred order for changing the timers is top-down. This means that if you add overlapping ranges, the first range from the top that matches the timer in the protocol will be used. For example, in the range example below, any timer with a value of *1m 00s* will be changed to 5*m 00s*. If there are overlapping ranges, the range with the lowest Range \[IDX\] will be chosen.
     Example:
 
       - Range 1: **Existing Timer Range Min** *1s* \| **Existing Timer Range Max** *1m 00s* \| **New Timer** *2m 00s*

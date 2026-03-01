@@ -84,15 +84,15 @@ Some important parameters are available at the end of the first column:
 
 ### Status
 
-This page displays the status of the device. E.g.: **Temperature**, **Power Supply**, **CPU Load**, ...
+This page displays the status of the device, e.g., **Temperature**, **Power Supply**, **CPU Load**, etc.
 
 ### Main
 
-On this page, you can access the main configuration of the device. E.g.: **DNS**, **Time Source**, **Interfaces**, ...
+On this page, you can access the main configuration of the device, e.g., **DNS**, **Time Source**, **Interfaces**, etc.
 
 ### Test Gen
 
-On this page, you can configure the test gen parameters. E.g.: **Data Rate**, **Packet ID**, ...
+On this page, you can configure the test gen parameters, e.g., **Data Rate**, **Packet ID**, etc.
 
 ### IP Channel
 

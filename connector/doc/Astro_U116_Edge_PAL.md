@@ -4,19 +4,9 @@ uid: Connector_help_Astro_U116_Edge_PAL
 
 # Astro U116 Edge PAL
 
-Through this connector is possible to gather and view information from the device **Astro U116 Edge PAL**. It also gives the possibility to configure the device.
-
 ## About
 
-HTTP connector to monitor the **Astro U116 Edge PAL** device.
-
-This connector also contains an SNMP interface to receive traps from the device and polls some network information.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
+With this connector, you can gather and view information from the device **Astro U116 Edge PAL**, as well as configure the device. An HTTP connection is used. The connector also contains an SNMP interface to receive traps from the device and polls some network information.
 
 ### Product Info
 
@@ -37,7 +27,7 @@ A\) Communication with U100C as proxy :
 **SERIAL Connection:**
 
 - **IP address/host**: the IP address of the Astro U100 Controller
-- **IP port**: the port of the destination e.g., 80
+- **IP port**: the port of the destination, e.g., 80
 - **Bus address**: The IP address of the U116. Also, we must fill in 'ByPassProxy' to bypass any possible proxy which could block the HTTP communication. Both fields must be separated by a semi-column. e.g : ByPassProxy;10.11.12.13
 
 B\) Direct Communication :
@@ -45,7 +35,7 @@ B\) Direct Communication :
 **SERIAL Connection:**
 
 - **IP address/host**: The IP address of the U116
-- **IP port**: the port of the destination e.g., 80
+- **IP port**: the port of the destination, e.g., 80
 - **Bus address**: this field can be used to bypass the proxy. To do so fill in the value ByPassProxy.
 
 ### SNMP
@@ -72,57 +62,45 @@ The credentials of the device must be filled-in behind the **Login** page button
 
 Some important parameters are available at the end of the first column :
 
-- **Controller Name** : this parameter shows the name of the **Astro Virtual Controller** element which manages this device. If no such element is used, the parameter will show the exception value *No Virtual Controller Found*.
+- **Controller Name** : This parameter shows the name of the **Astro Virtual Controller** element which manages this device. If no such element is used, the parameter will show the exception value *No Virtual Controller Found*.
 
 - **Communication Type** :
 
   - *Direct Communication* : The element sends the requests directly to the Astro module device.
   - *U100C Proxy* : The element sends the requests to the Astro U100 Controller which will forward them to the Astro module. The controller acts as a proxy.
 
-- **Communication Method** : this parameter is only available in *Direct Communication* mode.
+- **Communication Method** : This parameter is only available in *Direct Communication* mode.
 
   - *Login* : The element logs in to the device before every requests (read and write requests).
   - *Anonymous* : The element logs in to the device only for write requests. The device does not login before read requests.
 
 ### Status
 
-This page displays the status of the device. E.g.: **Temperature**, **Power Supply**, **CPU Load**,...
+This page displays the status of the device, e.g., **Temperature**, **Power Supply**, **CPU Load**, etc.
 
 ### Main
 
-This page allows to configure the main configurations of the device. E.g.: **DNS**, **Time Source**, **Interfaces**,...
+This page allows you to configure the main configurations of the device, e.g., **DNS**, **Time Source**, **Interfaces**, etc.
 
 ### Test Gen
 
-This page allows to configure the test gen parameters. E.g.: **Data Rate**, **Packet ID**,...
+This page allows you to configure the test gen parameters, e.g., **Data Rate**, **Packet ID**, etc.
 
 ### IP Channel
 
-This page allows to configure the IP channels, through the IP RX Channel Settings table.
+This page allows you to configure the IP channels, through the IP RX Channel Settings table.
 
-In this page is also present two page buttons: **More Settings .** and IP **Rx Status .**.
+In this page is also present two page buttons: **More Settings** and IP **Rx Status**.
 
 ### RF
 
-This page allows to configure the RF channels, through the RF Channel table.
+This page allows you to configure the RF channels, through the RF Channel table.
 
 This page contains as well several page buttons with more RF configurations and statistics.
 
-### RF1.1
+### RF1.1 - RF2.2
 
-Page with the channel RF1.1 settings.
-
-### RF1.2
-
-Page with the channel RF1.2 settings.
-
-### RF2.1
-
-Page with the channel RF2.1 settings.
-
-### RF2.2
-
-Page with the channel RF2.2 settings.
+These pages contain the settings for the different RF channels.
 
 ### Time Sharing
 

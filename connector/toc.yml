@@ -2331,6 +2331,9 @@
     topicUid: Connector_help_Cisco_DCNM
   - name: CISCO Firepower
     topicUid: Connector_help_CISCO_Firepower
+    items:
+    - name: CISCO Firepower Technical
+      topicUid: Connector_help_CISCO_Firepower_Technical
   - name: CISCO Firepower 2100 Series
     topicUid: Connector_help_Cisco_Firepower_2100_Series
   - name: CISCO Firepower Management Center
@@ -3250,6 +3253,10 @@
     topicUid: Connector_help_Ensemble_Designs_Avenue_9455
   - name: Ensemble Designs Avenue 9455 - Slot
     topicUid: Connector_help_Ensemble_Designs_Avenue_9455_-_Slot
+- name: Entsoe
+  items:
+  - name: Entsoe Transparency Platform
+    topicUid: Connector_help_Entsoe_Transparency_Platform
 - name: Envivio
   items:
   - name: Envivio 4Caster C4 2
@@ -3938,6 +3945,9 @@
   items:
   - name: EVS Cerebrum
     topicUid: Connector_help_EVS_Cerebrum
+    items:
+    - name: EVS Cerebrum Technical
+      topicUid: Connector_help_EVS_Cerebrum_Technical
   - name: EVS IPD-VIA
     topicUid: Connector_help_EVS_IPD-VIA
   - name: EVS IP Director
@@ -5381,6 +5391,11 @@
       topicUid: Connector_help_International_Datacasting_ENC7000_Technical
   - name: International Datacasting IPE-4000
     topicUid: Connector_help_International_Datacasting_IPE-4000
+  - name: International Datacasting SFX3100
+    topicUid: Connector_help_International_Datacasting_SFX3100
+    items:
+    - name: International Datacasting SFX3100 Technical
+      topicUid: Connector_help_International_Datacasting_SFX3100_Technical
   - name: International Datacasting Star3
     topicUid: Connector_help_International_Datacasting_Star3
 - name: Interra
@@ -7401,6 +7416,13 @@
     topicUid: Connector_help_OpenStack_Manager
   - name: OpenStack Manager - Project
     topicUid: Connector_help_OpenStack_Manager_-_Project
+- name: OpenSearch
+  items:
+  - name: OpenSearch Cluster Monitor
+    topicUid: Connector_help_OpenSearch_Cluster_Monitor
+    items:
+    - name: OpenSearch Cluster Monitor Technical
+      topicUid: Connector_help_OpenSearch_Cluster_Monitor_Technical
 - name: OpenTelemetry
   items:
   - name: OpenTelemetry Collector
@@ -7807,6 +7829,13 @@
     topicUid: Connector_help_Radeus_Labs_ACU_8200
   - name: Radeus Labs ACU DL9000
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
+- name: Raisecom
+  items:
+  - name: Raisecom ISCOM 2900
+    topicUid: Connector_help_Raisecom_ISCOM_2900
+    items:
+    - name: Raisecom ISCOM 2900 Technical
+      topicUid: Connector_help_Raisecom_ISCOM_2900_Technical
 - name: Ramiaudio
   items:
   - name: Ramiaudio AUF600
@@ -8025,6 +8054,11 @@
       topicUid: Connector_help_Rohde_Schwarz_ETX-T_Technical
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
+  - name: Rohde Schwarz FPL 1003
+    topicUid: Connector_help_Rohde_Schwarz_FPL_1003
+    items:
+      - name: Rohde Schwarz FPL 1003 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FPL_1003_Technical
   - name: Rohde Schwarz FPL1026
     topicUid: Connector_help_Rohde_Schwarz_FPL1026
   - name: Rohde Schwarz FSC3
@@ -8578,6 +8612,11 @@
   items:
   - name: SES Astra CDN Monitor
     topicUid: Connector_help_SES_Astra_CDN_Monitor
+  - name: SES Event Manager
+    topicUid: Connector_help_SES_Event_Manager
+    items:
+    - name: SES Event Manager Technical
+      topicUid: Connector_help_SES_Event_Manager_Technical
   - name: SES Inventory Management
     topicUid: Connector_help_SES_Inventory_Management
     items:

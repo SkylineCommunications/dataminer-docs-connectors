@@ -56,7 +56,7 @@ There is no redundancy defined.
 
 On the **General** page of this connector, you can find the following parameters:
 
-- **Range OID**: The first OID of the first transmitter in the series of six transmitters. All other OIDs are calculated taking this OID into account. The default value is 51. E.g. if the first OID (for FM1) is 1.3.6.1.4.1.27982.1.7.1.51.0, then the value that should be specified is 51.
+- **Range OID**: The first OID of the first transmitter in the series of six transmitters. All other OIDs are calculated taking this OID into account. The default value is 51. For example, if the first OID (for FM1) is 1.3.6.1.4.1.27982.1.7.1.51.0, then the value that should be specified is 51.
 - **Code Point de Service**: If this is set to *Normal*, then **?tat Operationnel** will be the same as *Marche/Arrˆt*. If this is set to is *Invers‚,* it will be its inverse.
 - **?metteur S‚lectionn‚**: Determines which transmitter information is displayed in the table.
 - **Table ?metteur:** Displays the information for the selected transmitter.

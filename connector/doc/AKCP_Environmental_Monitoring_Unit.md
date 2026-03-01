@@ -166,7 +166,7 @@ It is also possible to do this using a context menu. You can:
 
 ### DVE Naming
 
-Naming occurs in a similar way as in the 1.0.0.x range. It is possible to set the DVE name in the **Sensor DVE Name** column, and when the name already exists, a suffix will be added to it. E.g. "*Temperature Sensor (1)*".
+Naming occurs in a similar way as in the 1.0.0.x range. It is possible to set the DVE name in the **Sensor DVE Name** column, and when the name already exists, a suffix will be added to it. For example: "*Temperature Sensor (1)*".
 
 The default name is the same as the naming key for the row, except that the ": " is replaced by " - " (because colons are not allowed in element names). An example of a default DVE name could be: "*Smoke Sensor - Smoke Detector Port 1 (#30)*".
 

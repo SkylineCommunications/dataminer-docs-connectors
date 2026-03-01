@@ -20,15 +20,15 @@ The protocol also has **alarming** and **trending**.
 
 **SERIAL Connection:**
 
-- **IP address/host**: the polling IP or URL of the destination e.g., 10.15.1.80
-- **IP port**: the port of the destination e.g., 4003.
+- **IP address/host**: the polling IP or URL of the destination, e.g., 10.15.1.80
+- **IP port**: the port of the destination, e.g., 4003.
 - **Bus address**: this field is not necessary to be filled.
 
 ## Usage
 
 ### Main View
 
-This page displays some general info of the device. E.g.:
+This page displays some general info of the device. For example:
 
 - Equipment Type
 - Date
@@ -37,7 +37,7 @@ This page displays some general info of the device. E.g.:
 
 ### Configuration Page
 
-This page displays the device configurations. E.g.:
+This page displays the device configurations. For example:
 
 - Remote Mode
 - Fault Relay Logic

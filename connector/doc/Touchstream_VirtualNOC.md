@@ -34,7 +34,7 @@ This connector uses an HTTPS connection to communicate with the Touchstream API.
 
 HTTP CONNECTION:
 
-- **IP address/host**: E.g. [https://tse.touchstream.global](https://tse.touchstream.global/)
+- **IP address/host**: E.g., [https://tse.touchstream.global](https://tse.touchstream.global/)
 - **IP port**: The IP port of the destination (default: *443*).
 
 ### Initialization

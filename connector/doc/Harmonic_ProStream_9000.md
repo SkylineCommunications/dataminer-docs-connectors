@@ -150,6 +150,7 @@ The set will be done from within a script. It should set a string value on the B
 - Read PID: 12000
 - Write PID:12001
 
-The string should consist of semicolon-separated commands, where a single command is a "\|"-separated string containing the key and its value: *KEY\|value*. The value can be 1 (Primary) or 2 (Backup). E.g. *index_X\|Value;index_Y\|Value;index_Z\|Value;*...
+The string should consist of semicolon-separated commands, where a single command is a "\|"-separated string containing the key and its value: *KEY\|value*. The value can be 1 (Primary) or 2 (Backup). For example: `index_X|Value;index_Y|Value;index_Z|Value;`.
 
-**Important Note**: When you **update** elements that use a connector version **prior to 1.0.0.9** to version 1.0.0.9 or higher, you need to clean the element data of these elements while they are stopped. From version 1.0.0.9 onwards, the option UNICODE is enabled in the connector. Old saved data from an element using an older connector that does not have this option will become unreadable because of this encoding change.
+> [!IMPORTANT]
+> When you **update** elements that use a connector version **prior to 1.0.0.9** to version 1.0.0.9 or higher, you need to clean the element data of these elements while they are stopped. From version 1.0.0.9 onwards, the option UNICODE is enabled in the connector. Old saved data from an element using an older connector that does not have this option will become unreadable because of this encoding change.

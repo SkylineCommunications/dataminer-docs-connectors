@@ -19,8 +19,8 @@ This connector can be used to monitor and control the **CEFD Xicom Generic Seria
 - **Type of port**: *Serial*.
 - **Baud rate**: Baud rate of the device, e.g., *9600*.
 - **Serial port**: The serial port of the device, e.g., *com1*.
-- **Stopbits**: E.g. *1*.
-- **Parity**: E.g. *even*.
+- **Stopbits**: For example, *1*.
+- **Parity**: For example, *even*.
 
 **TCP/IP Settings:**
 

@@ -35,7 +35,7 @@ HTTP Main Connection
 This connector uses an HTTP connection and requires the following input during element creation:
 
 - **IP address/host**: The IP address of the U194.
-- **IP port**: The port of the destination e.g., *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 SNMP Trap Connection
@@ -61,7 +61,7 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The IP address of the Astro U100 Controller.
-- **IP port**: The port of the destination e.g., *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: The IP address of the U194. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g., *ByPassProxy;10.11.12.13.*
 
 SNMP Trap Connection
