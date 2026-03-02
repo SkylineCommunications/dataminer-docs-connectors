@@ -4,7 +4,7 @@ uid: Connector_help_Microsoft_Platform_Technical_7.0.0.x
 
 # Microsoft Platform (Range 7.0.0.x)
 
->[!NOTE]
+> [!NOTE]
 > This connector range will be available soon.
 
 ## About
@@ -20,11 +20,9 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 
 ## Configuration
 
-### Connections
+### Prerequisites
 
-#### Prerequisites
-
-##### WMI configuration
+#### WMI configuration
 
 1. To go to WMI Control Properties, go to **Start** \> **Run** and enter *wmimgmt.msc*.
 1. Right-click **WMI Control (Local)** and select **Properties**.
@@ -32,7 +30,7 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 1. Add the user that will be used to query data from the remote server to the list and give the user all rights.
 1. Apply all.
 
-##### DCOM configuration
+#### DCOM configuration
 
 1. Go to **Start** \> **Run** and enter *dcomcnfg* (Component Services).
 1. Under **Component Services** \> **Computers**, right-click **My Computer** and select **Properties**.
@@ -48,22 +46,24 @@ All versions of Microsoft Windows are supported, as long as the connector is abl
 > - On a Win2K3, the local user must be added to the administrators group.
 > - On a Win2K8, the local user must be added to the administrators group, Distributed COM Users, and Performance Monitor Users.
 
+### Connections
+
 #### Virtual Connection
 
-This connector uses a virtual connection and does not require any input during element creation. However, once the element is created, it is necessary to configure the connection settings (available in the page General -> Connections).
+This connector uses a virtual connection and does not require any input during element creation. However, once the element has been created, you will need to configure the connection settings on the **General** > **Connections** page.
 
-* **Local Connection**: If you are trying to monitor the server where this element is running, you can use a loopback address (localhost or 127.0.0.1) or the IP address assigned to the server as the IP address in the `Host` parameter. For this type of connection, no credentials are needed (`Username` and `Password` parameters can be left empty). Finally, click on `Connect` to start monitoring the server.
+- **Local Connection**: If you are trying to monitor the server where this element is running, you can use a loopback address (localhost or 127.0.0.1) or the IP address assigned to the server as the IP address in the **Host** parameter. For this type of connection, no credentials are needed (the **Username** and **Password** parameters can be left empty). Click **Connect** to start monitoring the server.
 
-* **Remote Connection**: If you are trying to monitor a remote server, you need to provide the IP address (or hostname) of the monitored server in the `Host` parameter. In addition, you need to provide valid credentials (username and password) of an account that has access to the monitored server. Finally, click on `Connect` to start monitoring the server.
+- **Remote Connection**: If you are trying to monitor a remote server, you need to provide the IP address (or hostname) of the monitored server in the **Host** parameter. In addition, you need to provide valid credentials (username and password) of an account that has access to the monitored server. Finally, click **Connect** to start monitoring the server.
 
-If the connection is successful, the parameter `Connection Status` will change to **Connected** and the connector will start polling data from the monitored server. If the connection fails, two possible error messages can be displayed in the parameter `Connection Status`:
+If the connection is successful, the **Connection Status** parameter will change to **Connected**, and the connector will start polling data from the monitored server. If the connection fails, the Connection Status parameter can display the following error messages:
 
-- **Unauthorized**: This error message indicates that the credentials provided in the parameters `Username` and `Password` are not valid. Please verify the credentials and try again.
+- **Unauthorized**: This error message indicates that the credentials provided in the **Username** and **Password** parameters are not valid. Please verify the credentials and try again.
 
-- **Error**: This error message can be caused by different reasons, such as network issues or WMI configuration problems. In this case, please refer to the [Troubleshooting guide](xref:microsoft_platform_technical_troubleshooting).
+- **Error**: This error message can be caused by different reasons, such as network issues or WMI configuration problems. To resolve this, please refer to the [Troubleshooting guide](xref:microsoft_platform_technical_troubleshooting).
 
 > [!IMPORTANT]
-> Since this is a virtual connector, WMI queries sent to the target server are not displayed in the [Stream Viewer](https://aka.dataminer.services/Connecting_to_an_element_using_Stream_Viewer)
+> As this is a virtual connector, WMI queries sent to the target server are not displayed in the [Stream Viewer](https://aka.dataminer.services/Connecting_to_an_element_using_Stream_Viewer)
 
 ## How to use
 
@@ -101,7 +101,7 @@ If the connection is successful, the parameter `Connection Status` will change t
 
   - **Process Instances**: This table provides details about all the processes currently running on the monitored server.
 
-  Additionally, the page **Process Details** displays the **Process Instance Details** table. This table provides more information about the processes related to threads and IO rates.
+  Additionally, the **Process Details** page displays the **Process Instance Details** table. This table provides more information about the processes related to threads and IO rates.
 
 - The **Services** page provides information about the services available on the monitored server.
 
@@ -114,7 +114,7 @@ If the connection is successful, the parameter `Connection Status` will change t
 
 ## Polling Frequencies
 
-Currently the polling frequencies are hard-coded in the connector. Below you can find a summary of the polling frequencies per metric group.
+Currently, the polling frequencies are hard-coded in the connector. Below you can find a summary of the polling frequencies per metric group.
 
 - **Fast Timer (10 seconds)**:
 
