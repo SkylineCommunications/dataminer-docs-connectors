@@ -142,7 +142,7 @@ Currently the polling frequencies are hard-coded in the connector. Below you can
 
   - Default timeout for a single command: 1.5 seconds
 
-<!-->
+<!--
 Hiding the connection states section for now, to bring simplicity to the documentation. We can add it back later if needed.
 ### Connection States
 
