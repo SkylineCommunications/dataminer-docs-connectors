@@ -6,18 +6,6 @@ uid: Connector_help_Grass_Valley_Thomson_Graphite_Technical
 
 ## About
 
-### Version Info
-
-| Range | Key Features | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | No | Yes |
-
-### Product Info
-
-| Range | Supported Firmware | Supported Hardware |
-|--|--|--|
-| 1.0.0.x   | 14.10.X | 6.0 |
-
 ## Configuration
 
 ### Connections
@@ -34,18 +22,17 @@ SERIAL CONNECTION:
 
 ## How to use
 
-Depending on the version of the connector, it can consist of the data pages detailed below.
+### General
 
-### General (v.1.0.0.x+)
+On this page, you can check the **Connection Status** and general details for the device (**Firmware Version**, etc...).
 
-On this page, you can check the connection status and general details for the device (Firmware Version, etc.).
+### Inputs
 
-### Inputs (v.1.0.0.x+)
+This page displays the **Inputs** table, which provides detailed information about all configured inputs. It also enables input configuration and management.
 
-This page displays the **Inputs** Table details, used to periodically poll the Input informations and allow for Input configuration.
+Each Input is periodically polled to retrieve up-to-date status and operational parameters. This polling period can be configured individually for each input.
 
 Inputs can be added, edited or removed by right clicking on the table and selecting the desired action.
-
-- **Add input**: By specifying the Type, input number and the polling frequency it add a new Input to read.
-- **Configure input**: Allows you to edit the input configuration and send the changes to the device.
-- **Delete selected input(s)**: Removes the selected inputs from the Inputs table. Note that this does not affect the device.
+- **Add input**: It adds a new input to the Inputs table by specifying its Type, Input number, Description and Polling frequency. **This action does not affect the device.**
+- **Configure input**: It allows editing the input’s operational parameters. **It sends the changes to the device.**
+- **Delete selected input(s)**: Removes the selected inputs from the Inputs table. **This action does not affect the device.**

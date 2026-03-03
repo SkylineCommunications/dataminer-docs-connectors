@@ -15,10 +15,6 @@ This connector is used to retrieve input data information from the Grass Valley 
 - Configuring and monitoring of inputs.
 - Monitoring of input receiver status.
 
-## Use Case
-
-- Monitoring of input configurations and receiver Status to ensure proper functioning of the device.
-
 ## Prerequisites
 
 - DataMiner version **Main Release** 10.3.0 or higher.
