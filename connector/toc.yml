@@ -2313,6 +2313,9 @@
     topicUid: Connector_help_Cisco_D9094
   - name: CISCO D9800
     topicUid: Connector_help_CISCO_D9800
+    items:
+    - name: CISCO D9800 Technical
+      topicUid: Connector_help_CISCO_D9800_Technical
   - name: Cisco D9828
     topicUid: Connector_help_Cisco_D9828
   - name: Cisco D9844
