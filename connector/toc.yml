@@ -4700,6 +4700,11 @@
     topicUid: Connector_help_Grass_Valley_sQ_1000_Server
   - name: Grass Valley Summit Server
     topicUid: Connector_help_Grass_Valley_Summit_Server
+  - name: Grass Valley Thomson Graphite
+    topicUid: Connector_help_Grass_Valley_Thomson_Graphite
+    items:
+    - name: Grass Valley Thomson Graphite Technical
+      topicUid: Connector_help_Grass_Valley_Thomson_Graphite_Technical
   - name: Grass Valley Trinix
     topicUid: Connector_help_Grass_Valley_Trinix
   - name: Grass Valley Trinix SNMP
