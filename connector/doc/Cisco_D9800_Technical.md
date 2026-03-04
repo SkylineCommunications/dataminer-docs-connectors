@@ -4,6 +4,8 @@ uid: Connector_help_CISCO_D9800_Technical
 
 # CISCO D9800
 
+## About
+
 The Cisco D9800 Network Transport Receiver supports high-efficiency video coding (HEVC) and ultra-high-definition (UHD) delivery over satellite and IP terrestrial content distribution networks requiring DVB-S (Digital Video Broadcasting - Satellite), DVB-S2 (Digital Video Broadcasting - Satellite - Second Generation), and IP reception capabilities. This device can decode an MPEG-2, advanced video coding (AVC), or HEVC video-encoded service, and it can output the serial digital interface (SDI) or composite uncompressed video.
 
 The Cisco D9800 connector polls values in order to display information about the device and allows you to configure certain parameters.
@@ -111,7 +113,9 @@ This page contains information on all the services that could be managed by the 
 - **Caption & VBI**: Includes Closed Caption Mode, Preferred Closed Caption Mode, VBI-VITC Status, VITS PAL Line 17, VITS PAL Line 18, VITS PAL Line 330, and VITS PAL Line 331.
 
 - **Subtitles**: Includes Subtitle Control, Imitext Position, Imitext Foreground Color, Imitext Background Color, Language List, Language Entry, and PMT Order.
+
 - **SDI**: Includes Interlaced, Frames/Second, Lines, Words, First, Last, Switch, Multiline, and the SDI VANC Service Setup & Status Table.
+
 - **Audio 1 to 4 Setup**: Includes Audio Decode, AC3 Compression Mode, DD+Output, Language, Select by, Left Attenuation, Mode, and PMT Source and Right Attenuation.
 
 ### Outputs
