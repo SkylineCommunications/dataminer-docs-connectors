@@ -9502,6 +9502,11 @@
   items:
   - name: Streamlabs Mosaic
     topicUid: Connector_help_Streamlabs_Mosaic
+  - name: Streamlabs MultiProbe
+    topicUid: Connector_help_Streamlabs_MultiProbe
+    items:
+    - name: Streamlabs MultiProbe Technical
+      topicUid: Connector_help_Streamlabs_MultiProbe_Technical
 - name: STS
   items:
   - name: STS LNA Monitor and Control
