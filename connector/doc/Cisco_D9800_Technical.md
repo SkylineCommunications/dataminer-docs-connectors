@@ -12,34 +12,6 @@ The connector retrieves and sets information on the device through HTTP and SNMP
 
 ## About
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x | Initial version. | No | No |
-| 1.1.0.x | Supports firmware 3.01. | No | Yes |
-| 1.2.0.x | Supports firmware 3.75. | No | Yes |
-| 1.3.0.x | Supports firmware 5.50 and possibility to switch between SS (Single-Stream) and MS (Multi-Stream) functionality depending on the device. | No | Yes |
-| 1.3.1.x [Obsolete] | Supports firmware 6.80. | No | Yes |
-| 1.4.0.x [Obsolete] | Supports firmware 6.52. | No | Yes |
-| 1.5.0.x [Obsolete] | Supports firmware 7.0. SNMP connection removed. | No | Yes |
-| 1.5.1.x [SLC Main] | Supports firmware 7.0. SNMP connection removed. | No | Yes |
-
-### Product Info
-
-The table below indicates which device revision is available since a specific range. Every version within the same range also supports the previously implemented revisions.
-
-| Range | Supported Firmware |
-|--|--|
-| 1.0.0.x | N/A |
-| 1.1.0.x | 3.01 |
-| 1.2.0.x | 3.75 & 4.01 |
-| 1.3.0.x | 5.50 |
-| 1.3.1.x | 6.80 |
-| 1.4.0.x | 6.52 |
-| 1.4.0.x | 7.0 |
-| 1.5.0.x | 7.0 |
-
 ## Configuration
 
 ### Connections
