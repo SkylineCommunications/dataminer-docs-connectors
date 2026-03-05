@@ -10800,7 +10800,7 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
   - name: Vodafone Kabel Deutschland GmbH FRR on OpenShift
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift
-     items:
+    items:
     - name: Vodafone Kabel Deutschland GmbH FRR on OpenShift Technical
       topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift_Technical
   - name: Vodafone Kabel Deutschland GmbH IP GW Service
@@ -10827,7 +10827,7 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
   - name: Vodafone Kabel Deutschland GmbH SRT Delivery Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service
-     items:
+    items:
     - name: Vodafone Kabel Deutschland GmbH SRT Delivery Service Technical
       topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service

@@ -11,7 +11,7 @@ The Free Range Routing (*FRR*) is a dedicated network routing suite under the Op
 
 > [!IMPORTANT]
 > To interface with OpenShift, a dedicated CLI tool is utilized which is required to be available and installed on each DataMiner Agent where an element using this protocol is hosted.
-> Refer to the Official Red Hat [Documentation](xref:https://docs.redhat.com/en/documentation/openshift_container_platform/4.21/html/cli_tools/openshift-cli-oc)
+> Refer to the Official Red Hat [Documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.21/html/cli_tools/openshift-cli-oc)
 
 ## Key Features
 
