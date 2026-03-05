@@ -4,44 +4,18 @@ uid: Connector_help_Vecima_RPM
 
 # Vecima RPM
 
-Vecima RPM is a management system for Remote PHY devices.
-
-The Vecima RPM connector fetches information from managed Remote PHY devices. The PHY cores information will be shown in custom requested tables.
-
 ## About
 
-### Version Info
+The Vecima RPM (Remote PHY Manager) connector provides comprehensive management and monitoring capabilities for Remote PHY devices through the Vecima RPM management system.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+## Key Features
 
-### Product Info
+- **24/7 monitoring**: Constant monitoring to support continuous real-time status updates.
+- **Remote PHY device monitoring**: Fetches and displays information from managed Remote PHY devices.
+- **PHY cores visualization**: Shows PHY cores information in custom requested tables for easy analysis.
+- **EPM support**: Integrated Experience and Performance Management for enhanced network visibility.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.5.10                 |
+## Technical Reference
 
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-
-## Configuration
-
-### Connections
-
-#### HTTP Main Connection
-
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-- **Bus address**: The bus address of the device (default: *ByPassProxy).*
-
-## How to use
-
-To communicate with the RPM device, fill in the **Username** and **Password** on the main page. Once this is done, information on the RPD cores will be polled and displayed on the **RPD Cores** page.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Vecima_RPM_Technical).
