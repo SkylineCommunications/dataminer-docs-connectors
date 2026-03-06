@@ -2,6 +2,12 @@
 uid: Connector_help_Juniper_Networks_EX_Series
 ---
 
+> [!IMPORTANT]
+> 
+> This connector is no longer supported by Skyline.
+>
+> - Use [Juniper Networks Manager](https://catalog.dataminer.services/details/7cf35a6b-31e8-4c11-8991-591596a4d81b).
+
 # Juniper Networks EX Series
 
 The Juniper Networks EX Series connector is an SNMP-based connector used to monitor and configure the Juniper Networks with EX series.
