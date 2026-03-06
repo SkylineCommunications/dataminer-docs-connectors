@@ -10544,6 +10544,9 @@
     topicUid: Connector_help_Vecima_CableVista
   - name: Vecima RPM
     topicUid: Connector_help_Vecima_RPM
+    items:
+      - name: Vecima RPM Technical
+        topicUid: Connector_help_Vecima_RPM_Technical
 - name: Vector
   items:
   - name: Vector Beta Pro 60 Manager
