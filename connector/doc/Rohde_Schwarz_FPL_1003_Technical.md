@@ -12,17 +12,12 @@ The Rohde Schwarz FPL 1003 is a compact spectrum analyzer with the functionality
 
 ### Connections
 
-#### GPIB Main Connection
+#### Serial Connection
 
 This connector uses a serial connection and requires the following input during element creation:
 
-GPIB CONNECTION:
-
-- Interface connection:
-
-  - **Device address**: The polling device address of the device.
-  - **I/O API**: The I/O API of the device.
-
+ - **Ip address/host**: The IP Address of the device.
+   
 ## How to Use
 
 On the **Spectrum Analyzer** page, you can find the spectrum analyzer user interface. For more information on how to work with this, refer to [Working with spectrum analyzer elements](https://aka.dataminer.services/Working_with_spectrum_analyzer_elements).
