@@ -16,7 +16,7 @@ The Rohde Schwarz FPL 1003 is a compact spectrum analyzer with the functionality
 
 This connector uses a serial connection and requires the following input during element creation:
 
- - **Ip address/host**: The IP Address of the device.
+ - **IP address/host**: The IP address of the device.
    
 ## How to Use
 
