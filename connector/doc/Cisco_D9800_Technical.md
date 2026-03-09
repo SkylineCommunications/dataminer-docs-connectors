@@ -12,8 +12,6 @@ The Cisco D9800 connector polls values in order to display information about the
 
 The connector retrieves and sets information on the device through HTTP and SNMP.
 
-## About
-
 ## Configuration
 
 ### Connections
