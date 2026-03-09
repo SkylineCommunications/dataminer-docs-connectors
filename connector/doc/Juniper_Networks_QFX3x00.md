@@ -2,13 +2,11 @@
 uid: Connector_help_Juniper_Networks_QFX3x00
 ---
 
+# Juniper Networks QFX3x00
+
 > [!IMPORTANT]
 > 
-> This connector is no longer supported by Skyline.
->
-> - Use [Juniper Networks Manager](https://catalog.dataminer.services/details/7cf35a6b-31e8-4c11-8991-591596a4d81b).
-
-# Juniper Networks QFX3x00
+> This connector is no longer supported by Skyline. Use [Juniper Networks Manager](https://catalog.dataminer.services/details/7cf35a6b-31e8-4c11-8991-591596a4d81b) instead.
 
 This SNMP connector allows monitoring of the chassis and the interfaces for the **Juniper Network QFX3x00** switches.
 
