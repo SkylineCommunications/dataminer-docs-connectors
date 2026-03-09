@@ -34,13 +34,13 @@ The element created with this connector provides several data pages for monitori
 
 - **Cores**: Presents detailed information about PHY cores in a table for easy analysis and monitoring.
 
-- **PTP Status**: Displays Precision Time Protocol operational status of all RPDs.
+- **PTP Status**: Displays the Precision Time Protocol operational status of all RPDs.
 
 - **Ethernet Links**: Shows the status and statistics of Ethernet connections of all RPDs.
 
-- **US RF Channels**: Lists upstream RF channel information, including frequencies, power levels, channel number...
+- **US RF Channels**: Lists upstream RF channel information, including frequencies, power levels, channel number, etc.
 
-- **DS RF Channels**: Lists downstream RF channel information, including frequencies, power levels, channel number...
+- **DS RF Channels**: Lists downstream RF channel information, including frequencies, power levels, channel number, etc.
 
 - **SFPs**: Provides detailed information about Small Form-factor Pluggable transceivers of all RPDs.
 
