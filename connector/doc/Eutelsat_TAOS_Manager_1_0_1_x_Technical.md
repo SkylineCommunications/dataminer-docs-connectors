@@ -101,6 +101,36 @@ Accessible from the General Overview page. Allows restricting database retrieval
 
 An optional **Duration** (in minutes) can be set. When set to 0, the restriction is indefinite.
 
+## Dynamic Threshold Feature
+
+The connector implements a **dynamic threshold** system for all numeric parameter tables (e.g., Derived Input/Output Power TM, ALC Settings, FGM Settings, etc.). This feature enables both automatic and manual alarm threshold management per unit.
+
+### Threshold Mode
+
+Each row in a numeric parameter table has a **Threshold Mode** setting:
+
+| Mode       | Behavior                                                                                                               |
+|------------|------------------------------------------------------------------------------------------------------------------------|
+| **Auto**   | Threshold values (Hard Min, Soft Min, Nominal, Soft Max, Hard Max) are automatically synchronized from the database on every polling cycle. If a database value changes, the connector detects the change and triggers an alarm template update.             |
+| **Manual** | Threshold values are user-defined and **not** overwritten by database updates. The operator has full control over Hard Min, Soft Min, Nominal Value, Soft Max, and Hard Max. Write controls for these fields are disabled when the mode is set to Auto.      |
+
+New rows default to **Auto** mode with **Alarm State** set to **Enabled**.
+
+### Alarm State
+
+Each row also has an **Alarm State** toggle:
+
+- **Enabled**: The row participates in alarm monitoring.
+- **Disabled**: Alarm monitoring is suppressed for that row.
+
+### Severity Offset
+
+Each numeric parameter category provides configurable **Major** and **Critical Severity Offset** values (accessible via page buttons on the sub-pages). These offsets control how far a measured value must deviate from its nominal value before triggering Major or Critical alarms. Default values are 3 (Major) and 6 (Critical).
+
+### Deviation Tracking
+
+Each numeric parameter row calculates a **Deviation** from the nominal value, along with a **Deviation Alarm Property** and **Deviation Alarm State** (Normal, Major, or Critical) that are included as alarm properties for correlation purposes.
+
 ## Exception Values
 
 Same as range 1.0.0.x:
