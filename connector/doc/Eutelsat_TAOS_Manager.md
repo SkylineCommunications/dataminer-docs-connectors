@@ -4,75 +4,79 @@ uid: Connector_help_Eutelsat_TAOS_Manager
 
 # Eutelsat TAOS Manager
 
-Each DataMiner element created with the Eutelsat TAOS Manager connector represents a satellite. These elements collect telemetry from Generic Flexible Payload (GFP) equipment. GFP equipment is built for the Ku-band Fixed Satellite Service (FSS) relying on geostationary satellites positioned at approximately 36,000 kilometers above the equator. It includes the following items:
+## About
 
-- Agile Integrated Down-converter Assembly (AIDA), which converts the frequency of all signals received by the satellite to the required transmit frequency.
-- Routing And Switching Equipment (RASE), a solid-state switch matrix that allows connectivity between any pair of satellite uplink and downlink beams.
-- Single Channel Agile Converter Equipment (SCACE), a variable bandwidth frequency converter that adjusts the transponder center frequency, gain, and bandwidth.
-- Microwave Power Module (MPM), which amplifies the required transmit signal prior to retransmission.
+The **Eutelsat TAOS Manager** connector retrieves satellite transponder telemetry from Eutelsat's TAOS (Telemetry Acquisition and Operations System) MySQL databases. It polls redundant databases on a configurable schedule, merges results based on validity and recency, and presents consolidated per-transponder telemetry.
 
-The element will connect to four external databases to collect telemetry data. In addition to the regular CMRS main and backup databases, the SCC Gateway main and backup databases are also queried. The connector will compare the data and show the telemetry from the database that is most up to date.
+An **Association Table** maps each transponder to its TM_IDs, allowing flexible per-transponder configuration. Custom alarm thresholds with Major/Critical severity offsets provide fine-grained alarming control.
 
-A unique feature of this connector is that users can define alarm thresholds directly through the element, which will update the alarm template XML files.
+### Version Info
+
+| Range   | Description                   | Based on | System Impact                                                                          |
+|---------|-------------------------------|----------|----------------------------------------------------------------------------------------|
+| 1.0.0.x | Standard Eutelsat satellites  | -        | -                                                                                      |
+| 1.0.1.x | Quantum satellite support     | 1.0.0.27 | High — Association Table columns differ; telemetry pages reorganized by equipment type |
 
 ## Configuration
 
 ### Connections
 
-#### Virtual Connection
+This is a **virtual** connector. No connections are configured in the element wizard.
 
-This connector uses a virtual connection and does not require any input during element creation.
+Database connections are configured on the **Setup** page after element creation.
 
 ### Initialization
 
-Additional configuration of parameters is necessary in a newly created element. On the **Setup** page, you will need to configure the **Satellite ID**, as well as the addresses, user names, and passwords for the **main and backup database** and the **SCC Gateway main and backup database**.
-
-You can configure redundant databases in the **Database** table by right-clicking in the table, selecting **Add Database**, and completing the form. Every field in the form must be filled in before you can save the configuration. The context menu also provides a **Remove Database** option to clean up old or unused databases.
+1. Create an element using this connector.
+2. On the **Setup** page, enter the **Satellite ID** matching the target satellite in the TAOS database.
+3. Configure the database connection parameters (address, port, name, username, password) for each database source.
+4. On the **Configuration** page, populate the **Association Table** to map transponders to TM_IDs.
+5. The connector begins polling automatically on a 20-second cycle.
 
 ## How to use
 
-If neither the main database nor the backup database are accessible, the connector will go through the list of redundant databases to try to assign a new main or a new backup.
+This connector is available in two version ranges depending on the **satellite type**.
 
-Every 20 seconds, the main and backup databases are read using a single MySQL query. The content of the backup database is compared to the content of the main database. If a parameter is present in both databases, the value with the latest update time is forwarded to the tables on the pages SCACE, AIDA, ..., BFN. This action should not take longer than 14 minutes.
+### **Range 1.0.0.x**
 
-If the action to read both databases and process their content takes 14 minutes, the extra thread will be interrupted, and a message will be printed in the element log file.
+Use this range for **standard Eutelsat satellites**.
 
-The element will indicate a timeout if both main and backup databases are not accessible. The **General Overview** table is cleared if the element indicates a timeout.
+Telemetry is organized by **parameter type**, such as:
 
-No data traffic will be shown in the Stream Viewer, because all traffic towards the databases starts from within a QAction (C# code).
+- TWTA / Mute / Mode
+- Power
+- Gain Step
+- Voltage / Current
+- Coverage
 
-### General Overview Page
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical).
 
-A healthy element should show the fields `_SCC_HEARTBEAT` and `_SCC_TM_STATUS` in the **General Overview** table.
+---
 
-Grayed-out standalone parameters indicate that not every database could be queried successfully. In this case, check the Force Retrieval page to see if the element settings are correct.
+### **Range 1.0.1.x**
 
-### Force Retrieval Page
+Use this range for **Eutelsat Quantum satellites**.
 
-With the **Force Retrieval** parameter set to *Disabled*, you can instruct the connector to take the four databases into account. This parameter can also be configured to take only the main database or only the backup database into account.
+Telemetry is organized by **equipment type**, including:
 
-You can also configure a duration in minutes to limit the time for which the force retrieval will occur.
+- SCACE
+- AIDA
+- MPM
+- RASE
+- IRASE
+- DRA
+- BFN
 
-### SCACE - BFN Pages
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical).
 
-The **Source DB** column, which is part of every table shown on these pages, will indicate if the field comes from the CMRS main or backup database, or from the SCC Gateway main or backup database. The logic that defines whether the field should be taken from the CMRS or SCC Gateway is hardcoded inside the connector. This logic cannot be changed at runtime.
+---
 
-### Configuration Page
+> [!IMPORTANT]
+> The two ranges are **not interchangeable**. The Association Table schema and telemetry page layout differ between ranges. Select the range that matches your satellite type when creating the element.
 
-A manual database read can be triggered from here as well as a manual alarm template sync.
+## Notes
 
-The **Import CSV File** dropdown is empty by default. To make the options available, use the **Refresh List** button.
-
-The **Association Table** can be exported to a CSV file, which will be stored in the folder *C:\Skyline DataMiner\Documents\Eutelsat TAOS Manager*.
-
-At the bottom of this page, you can add and remove unit IDs.
-
-### Setup Page
-
-If the main or the backup database is not accessible, the connector will try to access one of the redundant databases. The redundant databases are shown in the **Database** table.
-
-### Full Load Page
-
-The **Full Load** tables show all available fields. These tables do not use the Association Table to limit their content. In here, you will find SCACE fields next to MPN fields and BFN fields.
-
-A manual database read can be triggered from here.
+- The connector uses the **MySql.Data** NuGet package (v9.0.0) for database connectivity.
+- The polling timer has a random initial start offset (0–30 s) to prevent multiple elements from querying the database simultaneously.
