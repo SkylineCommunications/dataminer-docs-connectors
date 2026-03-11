@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Eutelsat_TAOS_Manager_Range_1.0.1.x
+uid: Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical
 ---
 
 # Eutelsat TAOS Manager — Range 1.0.1.x
@@ -7,7 +7,7 @@ uid: Connector_help_Eutelsat_TAOS_Manager_Range_1.0.1.x
 This range targets **Eutelsat Quantum satellites**. It extends the 1.0.0.x architecture by adding **SCC Gateway** database support and reorganizing telemetry pages by **equipment type** instead of parameter type.
 
 > [!NOTE]
-> This range was branched from version 1.0.0.27. The Association Table schema and page layout are **not compatible** with range 1.0.0.x due to the different equipment types and additional database sources used by Quantum satellites.
+> This range was branched from version 1.0.0.27. The Association Table schema and page layout are **not compatible** with range 1.0.0.x because of the different equipment types and additional database sources used by Quantum satellites.
 
 ## Element Configuration
 
@@ -27,9 +27,9 @@ On the **Setup** page, configure four MySQL database connections:
 ## How to Use
 
 1. On the **Setup** page, set the **Satellite ID** and database connection details for all four databases.
-2. The connector polls the databases periodically.
-3. On the **Configuration** page, populate the **Association Table** to map each transponder/beam to its TM_IDs for all equipment-specific parameter types.
-4. Transponder data appears on the equipment-type pages.
+1. The connector polls the databases periodically.
+1. On the **Configuration** page, populate the **Association Table** to map each transponder/beam to its TM_IDs for all equipment-specific parameter types.
+1. Transponder data appears on the equipment-type pages.
 
 ### Data Merge Logic
 
@@ -39,14 +39,30 @@ The same redundancy logic as range 1.0.0.x applies, extended across four databas
 
 ### General Overview
 
+These are the main features of this page:
+
 - **Connection Status** for all four database connections.
 - **Last Update** timestamps and **Time Since Last Update** for each database.
 - Overview table with heartbeat and status parameters.
-- **Force Retrieval...** page button.
+- **Force Retrieval** page button.
+
+### Force Retrieval (Subpage)
+
+Accessible from the General Overview page. Allows restricting database retrieval to a specific source:
+
+| Option                      | Behavior                                                |
+|-----------------------------|---------------------------------------------------------|
+| **Disable Force Retrieval** | All configured databases are polled (default)           |
+| **CMRS Main**               | Only the CMRS Main database is polled                   |
+| **CMRS Backup**             | Only the CMRS Backup database is polled                 |
+| **SCC Gateway Main**        | Only the SCC Gateway Main database is polled            |
+| **SCC Gateway Backup**      | Only the SCC Gateway Backup database is polled          |
+
+An optional **Duration** (in minutes) can be set. If this is set to 0, the restriction is indefinite.
 
 ### Parameter Overview
 
-A **tree control** with a hierarchical view from Satellite to Transponders to all related equipment-specific parameter tables.
+This page contains a **tree control** with a hierarchical view from satellite to transponders to all related equipment-specific parameter tables.
 
 ### Equipment Pages
 
@@ -62,44 +78,31 @@ Telemetry is organized by equipment type. Each page contains parameter tables sp
 | **DRA**    | DRA equipment telemetry parameters               |
 | **BFN**    | BFN equipment telemetry parameters               |
 
-Each equipment page displays tables with: Transponder Name, Station Code, Customer, Value, Update Time, Param Age, Sample Time, Sample Age, and Source DB. Threshold management and severity offset features are available where applicable.
+Each equipment page displays tables with the Transponder Name, Station Code, Customer, Value, Update Time, Param Age, Sample Time, Sample Age, and Source DB. Threshold management and severity offset features are available where applicable.
 
 ### Satellite Info
 
-Editable table with satellite metadata: Name, Position, Number of Transponders, Launch Date, Contact Person.
+This page contains a table where you can view and configure satellite metadata: Name, Position, Number of Transponders, Launch Date, and Contact Person.
 
 ### Configuration
 
+These are the main features of this page:
+
 - **Sync Alarm Template** button.
-- **Show Disabled Transponders** toggle.
-- **Import/Export CSV** for the Association Table.
-- **Association Table** — Maps each transponder/beam to its TM_IDs for all equipment-specific parameter types. The column schema differs from range 1.0.0.x to accommodate Quantum equipment types.
+- **Show Disabled Transponders** toggle button.
+- **Import/Export CSV** option for the Association Table.
+- **Association Table**: Maps each transponder/beam to its TM_IDs for all equipment-specific parameter types. The column schema differs from range 1.0.0.x to accommodate Quantum equipment types.
 - **Add/Remove Transponder**.
 
 ### Setup
 
-Database connection parameters for all four databases (CMRS Main/Backup and SCC Gateway Main/Backup), plus the Satellite ID.
+On this page, you can configure the database connection parameters for all four databases (CMRS Main/Backup and SCC Gateway Main/Backup), plus the Satellite ID.
 
-There is also a Database table at the bottom. You can use a context menu (right click) to add or remove extra databases.
-This table is used to check, when a communication fails, if it is possible to retrieve data via another database source.
+There is also a Database table at the bottom. When communication fails, this table is used to check if it is possible to retrieve data via another database source. Right-clicking the table opens a context menu that allows you to add or remove databases.
 
 ### Full Load
 
-Raw database contents for all database sources, with Last Update timestamps and Time Since Last Update.
-
-### Force Retrieval (subpage)
-
-Accessible from the General Overview page. Allows restricting database retrieval to a specific source:
-
-| Option                      | Behavior                                                |
-|-----------------------------|---------------------------------------------------------|
-| **Disable Force Retrieval** | All configured databases are polled (default)           |
-| **CMRS Main**               | Only the CMRS Main database is polled                   |
-| **CMRS Backup**             | Only the CMRS Backup database is polled                 |
-| **SCC Gateway Main**        | Only the SCC Gateway Main database is polled            |
-| **SCC Gateway Backup**      | Only the SCC Gateway Backup database is polled          |
-
-An optional **Duration** (in minutes) can be set. When set to 0, the restriction is indefinite.
+This page displays the raw database contents for all database sources, with Last Update timestamps and the Time Since Last Update.
 
 ## Dynamic Threshold Feature
 
@@ -118,14 +121,14 @@ New rows default to **Auto** mode with **Alarm State** set to **Enabled**.
 
 ### Alarm State
 
-Each row also has an **Alarm State** toggle:
+Each row also has an **Alarm State** toggle option:
 
 - **Enabled**: The row participates in alarm monitoring.
 - **Disabled**: Alarm monitoring is suppressed for that row.
 
 ### Severity Offset
 
-Each numeric parameter category provides configurable **Major** and **Critical Severity Offset** values (accessible via page buttons on the sub-pages). These offsets control how far a measured value must deviate from its nominal value before triggering Major or Critical alarms. Default values are 3 (Major) and 6 (Critical).
+Each numeric parameter category provides configurable **Major** and **Critical Severity Offset** values (accessible via page buttons on the subpages). These offsets control how far a measured value must deviate from its nominal value before triggering Major or Critical alarms. Default values are 3 (Major) and 6 (Critical).
 
 ### Deviation Tracking
 

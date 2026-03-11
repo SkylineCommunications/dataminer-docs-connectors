@@ -28,16 +28,19 @@ Database connections are configured on the **Setup** page after element creation
 ### Initialization
 
 1. Create an element using this connector.
-2. On the **Setup** page, enter the **Satellite ID** matching the target satellite in the TAOS database.
-3. Configure the database connection parameters (address, port, name, username, password) for each database source.
-4. On the **Configuration** page, populate the **Association Table** to map transponders to TM_IDs.
-5. The connector begins polling automatically on a 20-second cycle.
+1. On the **Setup** page, enter the **Satellite ID** matching the target satellite in the TAOS database.
+1. Configure the database connection parameters (address, port, name, username, password) for each database source.
+1. On the **Configuration** page, populate the **Association Table** to map transponders to TM_IDs.
+1. The connector begins polling automatically on a 20-second cycle.
 
 ## How to use
 
 This connector is available in two version ranges depending on the **satellite type**.
 
-### **Range 1.0.0.x**
+> [!IMPORTANT]
+> The two ranges are **not interchangeable**. The Association Table schema and telemetry page layout differ between ranges. Select the range that matches your satellite type when creating the element.
+
+### Range 1.0.0.x
 
 Use this range for **standard Eutelsat satellites**.
 
@@ -52,9 +55,7 @@ Telemetry is organized by **parameter type**, such as:
 > [!NOTE]
 > For detailed technical information, refer to the [technical documentation](xref:Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical).
 
----
-
-### **Range 1.0.1.x**
+### Range 1.0.1.x
 
 Use this range for **Eutelsat Quantum satellites**.
 
@@ -70,11 +71,6 @@ Telemetry is organized by **equipment type**, including:
 
 > [!NOTE]
 > For detailed technical information, refer to the [technical documentation](xref:Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical).
-
----
-
-> [!IMPORTANT]
-> The two ranges are **not interchangeable**. The Association Table schema and telemetry page layout differ between ranges. Select the range that matches your satellite type when creating the element.
 
 ## Notes
 

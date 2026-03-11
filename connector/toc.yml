@@ -3484,9 +3484,9 @@
     topicUid: Connector_help_Eutelsat_TAOS_Manager
     items:
       - name: Eutelsat TAOS Manager_Range_1.0.0.x_Technical
-        topicUid: Connector_help_Eutelsat_TAOS_Manager_Range_1.0.0.x
+        topicUid: Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical
       - name: Eutelsat TAOS Manager_Range_1.0.1.x_Technical
-        topicUid: Connector_help_Eutelsat_TAOS_Manager_Range_1.0.1.x
+        topicUid: Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
