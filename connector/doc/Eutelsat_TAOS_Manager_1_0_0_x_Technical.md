@@ -30,9 +30,9 @@ On the **Setup** page, configure two MySQL database connections:
 
 For each parameter, Main and Backup database results are compared:
 
-- If both return valid data → the **most recent** value (by `Update_Time`) is used.
-- If only one has valid data → that value is used.
-- If neither has valid data → the most recent invalid value is shown.
+- If both return valid data, the **most recent** value (by `Update_Time`) is used.
+- If only one has valid data, that value is used.
+- If neither has valid data, the most recent invalid value is shown.
 - The **Source DB** column on every table indicates which database supplied the displayed value.
 
 ## Pages
