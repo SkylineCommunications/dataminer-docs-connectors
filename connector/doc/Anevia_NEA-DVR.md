@@ -4,29 +4,9 @@ uid: Connector_help_Anevia_NEA-DVR
 
 # Anevia NEA-DVR
 
-The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare and deliver cloud DVR, catch-up, time-shifted and live channels to a range of targeted devices such as smartphones, tablets, personal computers and set-top boxes, according to distribution policy.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features         | Based on     | System Impact                      |
-|----------------------|----------------------|--------------|------------------------------------|
-| 1.0.0.x              | Initial version      | -            | -                                  |
-| 1.0.1.x [SLC Main]   | Outputs table added  | 1.0.0.7      | Columns removed from Assets Table  |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.1.x   | v4.20.4                |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+The Anevia NEA-DVR handles all the packaging, streaming and recording to prepare and deliver cloud DVR, catch-up, time-shifted and live channels to a range of targeted devices such as smartphones, tablets, personal computers and set-top boxes, according to distribution policy.
 
 ## Configuration
 
@@ -40,7 +20,6 @@ SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
-- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 

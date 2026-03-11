@@ -4,25 +4,11 @@ uid: Connector_help_TDF_TNT_Rights_Management
 
 # TDF TNT Rights Management
 
-This connector is part of the views, services, and elements provisioning mechanism of TDF DVB-T monitoring platform.
-
-Its goal is to manage the DMS permissions of multiple groups of users. This includes the write and config rights of the services.
-
 ## About
 
-### Version Info
+This connector is part of the views, services, and elements provisioning mechanism of the TDF DVB-T monitoring platform.
 
-| Range                | Key Features                                                                           | Based on   | System Impact                       |
-|----------------------|--------------------------------------------------------------------------------------- |------------|-------------------------------------|
-| 1.0.0.x [Obsolete]   | Initial version.                                                                       | -          | -                                   |
-| 1.0.1.x [SLC Main]   | Assign rights directly.<br>Group Profiles table only allows existing DMS user groups. | 1.0.0.5    | Loss of Group Profiles table data.  |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+Its goal is to manage the DMS permissions of multiple groups of users. This includes the write and config rights of the services.
 
 ## Configuration
 
@@ -36,13 +22,9 @@ This connector uses a virtual connection and does not require any input during e
 
 Configure the **Right Management Script Name** parameter with the name of the script responsible for changing the permissions of user groups.
 
-This script is stored in Skyline's GitHub repository called **TDF-AS-TNTRightsManagement**.
+This script is stored in a Skyline GitHub repository called **TDF-AS-TNTRightsManagement**.
 
 Starting from version 1.0.1.1, this parameter is no longer available because the connector will perform the permission changes by itself, making the script unnecessary.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 
