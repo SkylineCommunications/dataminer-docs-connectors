@@ -2313,6 +2313,9 @@
     topicUid: Connector_help_Cisco_D9094
   - name: CISCO D9800
     topicUid: Connector_help_CISCO_D9800
+    items:
+    - name: CISCO D9800 Technical
+      topicUid: Connector_help_CISCO_D9800_Technical
   - name: Cisco D9828
     topicUid: Connector_help_Cisco_D9828
   - name: Cisco D9844
@@ -2331,6 +2334,9 @@
     topicUid: Connector_help_Cisco_DCNM
   - name: CISCO Firepower
     topicUid: Connector_help_CISCO_Firepower
+    items:
+    - name: CISCO Firepower Technical
+      topicUid: Connector_help_CISCO_Firepower_Technical
   - name: CISCO Firepower 2100 Series
     topicUid: Connector_help_Cisco_Firepower_2100_Series
   - name: CISCO Firepower Management Center
@@ -4697,6 +4703,11 @@
     topicUid: Connector_help_Grass_Valley_sQ_1000_Server
   - name: Grass Valley Summit Server
     topicUid: Connector_help_Grass_Valley_Summit_Server
+  - name: Grass Valley Thomson Graphite
+    topicUid: Connector_help_Grass_Valley_Thomson_Graphite
+    items:
+    - name: Grass Valley Thomson Graphite Technical
+      topicUid: Connector_help_Grass_Valley_Thomson_Graphite_Technical
   - name: Grass Valley Trinix
     topicUid: Connector_help_Grass_Valley_Trinix
   - name: Grass Valley Trinix SNMP
@@ -7413,6 +7424,13 @@
     topicUid: Connector_help_OpenStack_Manager
   - name: OpenStack Manager - Project
     topicUid: Connector_help_OpenStack_Manager_-_Project
+- name: OpenSearch
+  items:
+  - name: OpenSearch Cluster Monitor
+    topicUid: Connector_help_OpenSearch_Cluster_Monitor
+    items:
+    - name: OpenSearch Cluster Monitor Technical
+      topicUid: Connector_help_OpenSearch_Cluster_Monitor_Technical
 - name: OpenTelemetry
   items:
   - name: OpenTelemetry Collector
@@ -7819,6 +7837,13 @@
     topicUid: Connector_help_Radeus_Labs_ACU_8200
   - name: Radeus Labs ACU DL9000
     topicUid: Connector_help_Radeus_Labs_ACU_DL9000
+- name: Raisecom
+  items:
+  - name: Raisecom ISCOM 2900
+    topicUid: Connector_help_Raisecom_ISCOM_2900
+    items:
+    - name: Raisecom ISCOM 2900 Technical
+      topicUid: Connector_help_Raisecom_ISCOM_2900_Technical
 - name: Ramiaudio
   items:
   - name: Ramiaudio AUF600
@@ -8037,6 +8062,11 @@
       topicUid: Connector_help_Rohde_Schwarz_ETX-T_Technical
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
+  - name: Rohde Schwarz FPL 1003
+    topicUid: Connector_help_Rohde_Schwarz_FPL_1003
+    items:
+      - name: Rohde Schwarz FPL 1003 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FPL_1003_Technical
   - name: Rohde Schwarz FPL1026
     topicUid: Connector_help_Rohde_Schwarz_FPL1026
   - name: Rohde Schwarz FSC3
@@ -8107,6 +8137,8 @@
     topicUid: Connector_help_Rohde_Schwarz_SR8100_N+1
   - name: Rohde Schwarz SX8000 DTT
     topicUid: Connector_help_Rohde_Schwarz_SX8000_DTT
+  - name: Rohde Schwarz TCE900 (System 9000)
+    topicUid: Connector_help_Rohde_Schwarz_TCE900_(System_9000)
   - name: Rohde Schwarz THR9 FM Dual Drive
     topicUid: Connector_help_Rohde_Schwarz_THR9_FM_Dual_Drive
   - name: Rohde Schwarz THR9 FM N+1
@@ -9478,6 +9510,11 @@
   items:
   - name: Streamlabs Mosaic
     topicUid: Connector_help_Streamlabs_Mosaic
+  - name: Streamlabs MultiProbe
+    topicUid: Connector_help_Streamlabs_MultiProbe
+    items:
+    - name: Streamlabs MultiProbe Technical
+      topicUid: Connector_help_Streamlabs_MultiProbe_Technical
 - name: STS
   items:
   - name: STS LNA Monitor and Control
@@ -10510,6 +10547,9 @@
     topicUid: Connector_help_Vecima_CableVista
   - name: Vecima RPM
     topicUid: Connector_help_Vecima_RPM
+    items:
+      - name: Vecima RPM Technical
+        topicUid: Connector_help_Vecima_RPM_Technical
 - name: Vector
   items:
   - name: Vector Beta Pro 60 Manager
@@ -10764,6 +10804,11 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Descrambling_Service
   - name: Vodafone Kabel Deutschland GmbH DVB-T2 Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_DVB-T2_Service
+  - name: Vodafone Kabel Deutschland GmbH FRR on OpenShift
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift
+    items:
+    - name: Vodafone Kabel Deutschland GmbH FRR on OpenShift Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift_Technical
   - name: Vodafone Kabel Deutschland GmbH IP GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service
   - name: Vodafone Kabel Deutschland GmbH IP PEER DS Service
@@ -10786,6 +10831,11 @@
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
   - name: Vodafone Kabel Deutschland GmbH Site Switchover
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Site_Switchover
+  - name: Vodafone Kabel Deutschland GmbH SRT Delivery Service
+    topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service
+    items:
+    - name: Vodafone Kabel Deutschland GmbH SRT Delivery Service Technical
+      topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_Delivery_Service_Technical
   - name: Vodafone Kabel Deutschland GmbH SRT GW Service
     topicUid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SRT_GW_Service
   - name: Vodafone Kabel Deutschland GmbH POC Tally

@@ -161,6 +161,15 @@ The **History Data** page button (in range 3.1.0.x and 5.1.1.x) leads to an over
 
 The **Alarm Settings** page displays the settings for consecutive and non-consecutive behavior on the interface utilization (%). With the **Threshold** you can specify a baseline in percent. The **Period** defines the amount of time that the threshold will be surpassed (consecutive) or the sum of the amounts of time that the threshold is surpassed (non-consecutive). The **Days** defines the number of days this behavior is active before an alarm is set. The alarm is set on **IF Util. Consecutive/Non-Consecutive** in the **Detailed Interface Info** table. With the **Status Period Alarms** toggle button, you can enable/disable this feature.
 
+### Syslog page
+
+From version 5.1.6.x onwards, an extra connection is used to collect the Syslog information.
+
+In version 5.1.9.x, the following changes are also introduced:
+
+- It is no longer possible to save Syslog messages in the database with this connector. To save your Syslog messages in the database, you will need to have an indexing database (Elasticsearch/OpenSearch) and an element using the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985).
+- The **Syslog Advanced Search** page has been removed. This feature is instead available in the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985) version 1.0.3.x.
+
 ### Trunk Info page
 
 On the **Trunk Info** page you can have the trunk ports table polled automatically by enabling **Get Trunk Data.** To request the table, just click the **Load** button once. The columns **Trunk Allowed** and **Trunk Pruning** will display the VLANs in the following formats:
@@ -334,5 +343,3 @@ The configuration is stored in two locations, RAM and NVRAM. The running configu
     - Copy Config Destination File Type: Network File
     - Copy Config Server Address: The IP address of the server to which to copy the IOS file (e.g., 192.168.1.1)
     - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-ios)
-
-From version 5.1.6.x onwards, an extra connection is used to collect the Syslog information.
