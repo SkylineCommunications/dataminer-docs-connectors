@@ -92,7 +92,7 @@ These are the main features of this page:
 - **Show Disabled Transponders** toggle button.
 - **Import/Export CSV** option for the Association Table.
 - **Association Table**: Maps each transponder/beam to its TM_IDs for all equipment-specific parameter types. The column schema differs from range 1.0.0.x to accommodate Quantum equipment types.
-- **Add/Remove Transponder**.
+- **Add/Remove Transponder** buttons.
 
 ### Setup
 

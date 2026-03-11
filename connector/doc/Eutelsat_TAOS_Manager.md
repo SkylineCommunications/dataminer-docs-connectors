@@ -10,12 +10,15 @@ The **Eutelsat TAOS Manager** connector retrieves satellite transponder telemetr
 
 An **Association Table** maps each transponder to its TM_IDs, allowing flexible per-transponder configuration. Custom alarm thresholds with Major/Critical severity offsets provide fine-grained alarming control.
 
-### Version Info
+This connector has two separate ranges:
 
-| Range   | Description                   | Based on | System Impact                                                                          |
-|---------|-------------------------------|----------|----------------------------------------------------------------------------------------|
-| 1.0.0.x | Standard Eutelsat satellites  | -        | -                                                                                      |
-| 1.0.1.x | Quantum satellite support     | 1.0.0.27 | High — Association Table columns differ; telemetry pages reorganized by equipment type |
+- **1.0.0.x**: Intended for Standard Eutelsat satellites
+- **1.0.1.x**: Targets Eutelsat Quantum satellites support. Because of the different equipment types and additional database sources used by Quantum satellites, this range is very different from the 1.0.0.x range. As such, you should not upgrade existing elements that use the 1.0.0.x range to this range.
+
+## Key Features
+
+- **Monitor satellite telemetry**: The connector polls different databases on a configurable schedule and displays consolidated telemetry per transponder.
+- **Fine-tune alarm thresholds**: Manually adjust alarm thresholds to match your preferences, or use automatically configured thresholds (in range 1.0.1.x only).
 
 ## Configuration
 
