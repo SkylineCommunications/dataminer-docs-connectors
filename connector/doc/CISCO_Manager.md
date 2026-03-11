@@ -33,7 +33,7 @@ In addition to polling values, you can configure settings such as the ping funct
 | 8.0.0.x [Obsolete] | Customer-specific range. **Deprecated as of 2021.** | 5.1.3.12 | - |
 
 > [!NOTE]
-> The main version to use for **new elements** is **5.1.7.x**.
+> The main version to use for **new elements** is **5.1.8.x**.
 
 ## Configuration
 
