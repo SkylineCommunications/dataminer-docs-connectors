@@ -5973,6 +5973,13 @@
   items:
   - name: Media Excel Hero Management System
     topicUid: Connector_help_Media_Excel_Hero_Management_System
+- name: Media Links
+  items:
+  - name: Media Links Xscend Manager
+    topicUid: Connector_Media_Links_Xscend_Manager
+    items:
+    - name: Media Links Xscend Manager Technical
+      topicUid: Connector_Media_Links_Xscend_Manager_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
