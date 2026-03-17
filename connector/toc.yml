@@ -3967,6 +3967,11 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
+  - name: EVS XT Access
+    topicUid: Connector_help_EVS_XT_Access
+    items:
+    - name: EVS XT Access Technical
+      topicUid: Connector_help_EVS_XT_Access_Technical
   - name: EVS Neuron NAP - BRIDGE
     topicUid: Connector_help_EVS_Neuron_NAP_-_BRIDGE
     items:
