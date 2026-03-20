@@ -1,5 +1,5 @@
 ---
-uid: Connector_Media_Links_Xscend_Manager
+uid: Connector_help_Media_Links_Xscend_Manager
 ---
 
 # Media Links Xscend Manager
