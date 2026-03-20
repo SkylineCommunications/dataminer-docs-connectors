@@ -1,5 +1,5 @@
 ---
-uid:  Connector_help_EVS_XT_Access
+uid: Connector_help_EVS_XT_Access
 ---
 
 # EVS XT Access

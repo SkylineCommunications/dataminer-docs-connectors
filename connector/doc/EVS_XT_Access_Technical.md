@@ -12,7 +12,7 @@ The EVS XT Access connector enables comprehensive monitoring of media processing
 
 ### Connections
 
-#### HTTP Connection – IP Connection
+#### HTTP Connection - IP Connection
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
@@ -21,12 +21,12 @@ This connector uses an HTTP connection and requires the following input during e
 
 ### Initialization
 
-To enable data polling from the source, the user must provide valid username and password credentials on the **General** page.
+To enable data polling from the source, you must provide valid username and password credentials on the *General* page.
 
 ### Web Interface
 
-The web interface is accessible only when the client machine has network connectivity to the product, and the web interface port can be configured on the **General** page.
+The web interface is accessible only when the client machine has network connectivity to the product, and the web interface port can be configured on the *General* page.
 
 ## How to Use
 
-Once the user has provided valid credentials, the connector will automatically begin polling data. Retrieving information on running and historical jobs, including general job information and detailed job destination data.
+Once you have provided valid credentials, the connector will automatically begin polling data and retrieve information on running and historical jobs, including general job information and detailed job destination data.
