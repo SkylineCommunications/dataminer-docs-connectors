@@ -44,6 +44,6 @@ SNMP Settings:
 
 ### Initialization
 
-To start retrieving data with the Raisecom SNMP Connector, you will first need to validate the Device Type parameter. By default, the connector is configured for the ISCOM 29XX series; however, this setting can be modified to support devices from the RAX 27XX series when required.
+To start retrieving data with the Raisecom SNMP Connector, you first have to validate the Device Type parameter. By default, the connector is configured for the *ISCOM 29XX* series; however, this setting can be modified to support devices from the *RAX 27XX* series when required.
 
 Once configured, the connector automatically populates the relevant parameters and tables, providing a consolidated view of device performance and health metrics.
