@@ -8,7 +8,7 @@ uid: Connector_help_Eutelsat_TAOS_Manager
 
 The **Eutelsat TAOS Manager** connector retrieves satellite transponder telemetry from Eutelsat's TAOS (Telemetry Acquisition and Operations System) MySQL databases. It polls redundant databases on a configurable schedule, merges results based on validity and recency, and presents consolidated per-transponder telemetry.
 
-An **Association Table** maps each transponder to its TM_IDs, allowing flexible per-transponder configuration. Custom alarm thresholds with Major/Critical severity offsets provide fine-grained alarming control.
+An **Association Table** maps each transponder to its TM_IDs, allowing flexible per-transponder configuration. Custom alarm thresholds with major/critical severity offsets provide fine-grained alarm control.
 
 This connector has two separate ranges:
 
@@ -34,7 +34,8 @@ Database connections are configured on the **Setup** page after element creation
 1. On the **Setup** page, enter the **Satellite ID** matching the target satellite in the TAOS database.
 1. Configure the database connection parameters (address, port, name, username, password) for each database source.
 1. On the **Configuration** page, populate the **Association Table** to map transponders to TM_IDs.
-1. The connector begins polling automatically on a 20-second cycle.
+
+The connector will begin polling automatically on a 20-second cycle.
 
 ## How to use
 

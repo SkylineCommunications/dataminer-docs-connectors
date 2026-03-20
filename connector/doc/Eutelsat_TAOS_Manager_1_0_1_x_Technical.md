@@ -4,6 +4,8 @@ uid: Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical
 
 # Eutelsat TAOS Manager — Range 1.0.1.x
 
+## About
+
 This range targets **Eutelsat Quantum satellites**. It extends the 1.0.0.x architecture by adding **SCC Gateway** database support and reorganizing telemetry pages by **equipment type** instead of parameter type.
 
 > [!NOTE]
@@ -13,27 +15,28 @@ This range targets **Eutelsat Quantum satellites**. It extends the 1.0.0.x archi
 
 ### Connections
 
-This is a virtual connector — no connections are configured in the element wizard.
+This is a virtual connector. No connections need to be configured during element creation.
 
-On the **Setup** page, configure four MySQL database connections:
-
-| Database                | Parameters                                                           |
-|-------------------------|----------------------------------------------------------------------|
-| **CMRS Main**           | Address, Port (default 3306), Database Name, Username, Password      |
-| **CMRS Backup**         | Address, Port (default 3306), Database Name, Username, Password      |
-| **SCC Gateway Main**    | Address, Port (default 3306), Database Name, Username, Password      |
-| **SCC Gateway Backup**  | Address, Port (default 3306), Database Name, Username, Password      |
-
-## How to Use
+### Initialization
 
 1. On the **Setup** page, set the **Satellite ID** and database connection details for all four databases.
-1. The connector polls the databases periodically.
+
+   | Database            | Parameters                                                           |
+   |---------------------|----------------------------------------------------------------------|
+   | CMRS Main           | Address, Port (default 3306), Database Name, Username, Password      |
+   | CMRS Backup         | Address, Port (default 3306), Database Name, Username, Password      |
+   | SCC Gateway Main    | Address, Port (default 3306), Database Name, Username, Password      |
+   | SCC Gateway Backup  | Address, Port (default 3306), Database Name, Username, Password      |
+
+   The connector will poll the databases periodically.
+
 1. On the **Configuration** page, populate the **Association Table** to map each transponder/beam to its TM_IDs for all equipment-specific parameter types.
-1. Transponder data appears on the equipment-type pages.
 
-### Data Merge Logic
+   Transponder data will be shown on the equipment type pages.
 
-The same redundancy logic as range 1.0.0.x applies, extended across four databases. The **Source DB** column indicates the origin: *CMRS Main*, *CMRS Backup*, *SCC Gateway Main*, or *SCC Gateway Backup*.
+## Data Merge Logic
+
+The same redundancy logic as [for range 1.0.0.x](xref:Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical#data-merge-logic) applies, but extended across four databases. The **Source DB** column indicates the origin: *CMRS Main*, *CMRS Backup*, *SCC Gateway Main*, or *SCC Gateway Backup*.
 
 ## Pages
 
@@ -50,13 +53,13 @@ These are the main features of this page:
 
 Accessible from the General Overview page. Allows restricting database retrieval to a specific source:
 
-| Option                      | Behavior                                                |
-|-----------------------------|---------------------------------------------------------|
-| **Disable Force Retrieval** | All configured databases are polled (default)           |
-| **CMRS Main**               | Only the CMRS Main database is polled                   |
-| **CMRS Backup**             | Only the CMRS Backup database is polled                 |
-| **SCC Gateway Main**        | Only the SCC Gateway Main database is polled            |
-| **SCC Gateway Backup**      | Only the SCC Gateway Backup database is polled          |
+| Option                  | Behavior                                                |
+|-------------------------|---------------------------------------------------------|
+| Disable Force Retrieval | All configured databases are polled (default)           |
+| CMRS Main               | Only the CMRS Main database is polled                   |
+| CMRS Backup             | Only the CMRS Backup database is polled                 |
+| SCC Gateway Main        | Only the SCC Gateway Main database is polled            |
+| SCC Gateway Backup      | Only the SCC Gateway Backup database is polled          |
 
 An optional **Duration** (in minutes) can be set. If this is set to 0, the restriction is indefinite.
 
@@ -68,15 +71,15 @@ This page contains a **tree control** with a hierarchical view from satellite to
 
 Telemetry is organized by equipment type. Each page contains parameter tables specific to that Quantum satellite equipment:
 
-| Page       | Description                                      |
-|------------|--------------------------------------------------|
-| **SCACE**  | SCACE equipment telemetry parameters             |
-| **AIDA**   | AIDA equipment telemetry parameters              |
-| **MPM**    | MPM equipment telemetry parameters               |
-| **RASE**   | RASE equipment telemetry parameters              |
-| **IRASE**  | IRASE equipment telemetry parameters             |
-| **DRA**    | DRA equipment telemetry parameters               |
-| **BFN**    | BFN equipment telemetry parameters               |
+| Page   | Description                                      |
+|--------|--------------------------------------------------|
+| SCACE  | SCACE equipment telemetry parameters             |
+| AIDA   | AIDA equipment telemetry parameters              |
+| MPM    | MPM equipment telemetry parameters               |
+| RASE   | RASE equipment telemetry parameters              |
+| IRASE  | IRASE equipment telemetry parameters             |
+| DRA    | DRA equipment telemetry parameters               |
+| BFN    | BFN equipment telemetry parameters               |
 
 Each equipment page displays tables with the Transponder Name, Station Code, Customer, Value, Update Time, Param Age, Sample Time, Sample Age, and Source DB. Threshold management and severity offset features are available where applicable.
 
@@ -112,39 +115,39 @@ The connector implements a **dynamic threshold** system for all numeric paramete
 
 Each row in a numeric parameter table has a **Threshold Mode** setting:
 
-| Mode       | Behavior                                                                                                               |
-|------------|------------------------------------------------------------------------------------------------------------------------|
-| **Auto**   | Threshold values (Hard Min, Soft Min, Nominal, Soft Max, Hard Max) are automatically synchronized from the database on every polling cycle. If a database value changes, the connector detects the change and triggers an alarm template update.             |
-| **Manual** | Threshold values are user-defined and **not** overwritten by database updates. The operator has full control over Hard Min, Soft Min, Nominal Value, Soft Max, and Hard Max. Write controls for these fields are disabled when the mode is set to Auto.      |
+| Mode   | Behavior                                                                                                               |
+|--------|------------------------------------------------------------------------------------------------------------------------|
+| Auto   | Threshold values (Hard Min, Soft Min, Nominal, Soft Max, Hard Max) are automatically synchronized from the database on every polling cycle. If a database value changes, the connector detects the change and triggers an alarm template update.             |
+| Manual | Threshold values are user-defined and **not** overwritten by database updates. The operator has full control over the Hard Min, Soft Min, Nominal Value, Soft Max, and Hard Max thresholds. Write controls for these fields are disabled when the mode is set to Auto.      |
 
 New rows default to **Auto** mode with **Alarm State** set to **Enabled**.
 
 ### Alarm State
 
-Each row also has an **Alarm State** toggle option:
+Each row has an **Alarm State** toggle option:
 
 - **Enabled**: The row participates in alarm monitoring.
 - **Disabled**: Alarm monitoring is suppressed for that row.
 
 ### Severity Offset
 
-Each numeric parameter category provides configurable **Major** and **Critical Severity Offset** values (accessible via page buttons on the subpages). These offsets control how far a measured value must deviate from its nominal value before triggering Major or Critical alarms. Default values are 3 (Major) and 6 (Critical).
+Each numeric parameter category provides configurable **Major** and **Critical Severity Offset** values (accessible via page buttons on the subpages). These offsets control how far a measured value must deviate from its nominal value before triggering major or critical alarms. Default values are 3 (Major) and 6 (Critical).
 
 ### Deviation Tracking
 
-Each numeric parameter row calculates a **Deviation** from the nominal value, along with a **Deviation Alarm Property** and **Deviation Alarm State** (Normal, Major, or Critical) that are included as alarm properties for correlation purposes.
+Each numeric parameter row calculates a **Deviation** from the nominal value, along with a **Deviation Alarm Property** and **Deviation Alarm State** (Normal, Major, or Critical), which are included as alarm properties for correlation purposes.
 
 ## Exception Values
 
-Same as range 1.0.0.x:
+Like in range 1.0.0.x, the following exception values are used across all parameter tables:
 
-| Value     | Display               | Meaning                                              |
-|-----------|-----------------------|------------------------------------------------------|
-| **-9999** | NOT VALID             | Data exists in DB but validity flag is false         |
-| **-9998** | NOT PRESENT IN DB     | TM_ID not found in the database                      |
-| **-9997** | TRANSPONDER DISABLED  | Transponder is disabled in the Association Table     |
+| Value | Display               | Meaning                                              |
+|-------|-----------------------|------------------------------------------------------|
+| -9999 | NOT VALID             | Data exists in DB but validity flag is false         |
+| -9998 | NOT PRESENT IN DB     | TM_ID not found in the database                      |
+| -9997 | TRANSPONDER DISABLED  | Transponder is disabled in the Association Table     |
 
 ## Notes
 
-- The Quantum satellite architecture uses different equipment types (SCACE, AIDA, RASE, MPM, IRASE, DRA, BFN) compared to the standard GFP parameter types in range 1.0.0.x, which is why a separate range was required.
+- The Quantum satellite architecture uses different equipment types (SCACE, AIDA, RASE, MPM, IRASE, DRA, BFN) compared to the standard GFP parameter types in range 1.0.0.x, which is why a separate range is required.
 - The additional SCC Gateway databases provide an extra source of telemetry data specific to the Quantum platform.

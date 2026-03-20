@@ -4,36 +4,39 @@ uid: Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical
 
 # Eutelsat TAOS Manager — Range 1.0.0.x
 
+## About
+
 This range targets **standard Eutelsat satellites**. It polls two redundant CMRS MySQL databases, merges the results, and presents consolidated transponder telemetry organized by **parameter type**.
 
 ## Element Configuration
 
 ### Connections
 
-This is a virtual connector — no connections are configured in the element wizard.
+This is a virtual connector. No connections need to be configured during element creation.
 
-On the **Setup** page, configure two MySQL database connections:
+### Initialization
 
-| Database        | Parameters                                                          |
-|-----------------|---------------------------------------------------------------------|
-| **CMRS Main**   | Address, Port (default 3306), Database Name, Username, Password     |
-| **CMRS Backup** | Address, Port (default 3306), Database Name, Username, Password     |
+1. On the **Setup** page, set the **Satellite ID** and database connection details for both the Main and Backup databases.
 
-## How to Use
+   | Database    | Parameters                                                          |
+   |-------------|---------------------------------------------------------------------|
+   | CMRS Main   | Address, Port (default 3306), Database Name, Username, Password     |
+   | CMRS Backup | Address, Port (default 3306), Database Name, Username, Password     |
 
-1. On the **Setup** page, set the **Satellite ID** and database connection details for both Main and Backup databases.
-1. The connector polls the databases every **20 seconds** (with a random initial offset of 0–30 s).
+   The connector will poll the databases every **20 seconds** (with a random initial offset of 0–30 s).
+
 1. On the **Configuration** page, populate the **Association Table** to map each transponder to its TM_IDs for all 14 parameter types.
-1. Transponder data appears on the parameter pages, grouped by category.
 
-### Data Merge Logic
+   Transponder data will be shown on the parameter pages, grouped by category.
+
+## Data Merge Logic
 
 For each parameter, Main and Backup database results are compared:
 
 - If both return valid data, the **most recent** value (by `Update_Time`) is used.
 - If only one has valid data, that value is used.
 - If neither has valid data, the most recent invalid value is shown.
-- The **Source DB** column on every table indicates which database supplied the displayed value.
+- The **Source DB** column of every table indicates which database supplied the displayed value.
 
 ## Pages
 
@@ -43,7 +46,7 @@ These are the main features of this page:
 
 - **General Overview table**: Displays SCC Heartbeat and SCC TM Status parameters from the merged result (columns: TM_ID, Update_Time, Description, Units, Type, Value, Validity, Sample_Time, Spare 1–3).
 - **Connection Status MAIN / BACKUP**: Status can be *OK* or *CONNECTION FAILED*. Shows *Disabled (Force Retrieval)* when force retrieval excludes that database.
-- **Main/Backup DB Last Update**: Timestamp of the last successful poll for each database.
+- **Main/Backup DB Last Update**: Timestamp of the last successful polling for each database.
 - **Main/Backup DB Time Since Last Update**: Elapsed seconds since each database was last polled.
 - **Force Retrieval**: Page button opening the Force Retrieval subpage.
 
@@ -51,11 +54,11 @@ These are the main features of this page:
 
 Accessible via a page button on the General Overview page. Restricts database polling to a single source:
 
-| Option                      | Behavior                                              |
-|-----------------------------|-------------------------------------------------------|
-| **Disable Force Retrieval** | Both main and backup databases are polled (default).  |
-| **Main**                    | Only the main database is polled.                     |
-| **Backup**                  | Only the backup database is polled.                   |
+| Option                  | Behavior                                              |
+|-------------------------|-------------------------------------------------------|
+| Disable Force Retrieval | Both main and backup databases are polled (default).  |
+| Main                    | Only the main database is polled.                     |
+| Backup                  | Only the backup database is polled.                   |
 
 - **Duration** (minutes): When set to 0, the restriction is indefinite (max: 525600 minutes / 1 year).
 - **Apply** button: Activates the selected force retrieval configuration.
@@ -69,11 +72,11 @@ This page contains a **tree control** providing a hierarchical view: **Satellite
 
 This page contains three tables with status values:
 
-| Table              | Accepted Raw Values                                   | Discrete values    |
-|--------------------|-------------------------------------------------------|--------------------|
-| **TWTA Status**    | ON, OFF, HV_ON                                        | 1 = ON, 0 = OFF    |
-| **Mute Status**    | ON, OFF, MUTE, RF_ON, MUTE_ON, MUTE_OFF               | 1 = ON, 0 = OFF    |
-| **Mode (FGM/ALC)** | FGM, ALC, FG_MODE, ALC_MODE                           | 0 = FGM, 1 = ALC   |
+| Table          | Accepted Raw Values                                   | Discrete values    |
+|----------------|-------------------------------------------------------|--------------------|
+| TWTA Status    | ON, OFF, HV_ON                                        | 1 = ON, 0 = OFF    |
+| Mute Status    | ON, OFF, MUTE, RF_ON, MUTE_ON, MUTE_OFF               | 1 = ON, 0 = OFF    |
+| Mode (FGM/ALC) | FGM, ALC, FG_MODE, ALC_MODE                           | 0 = FGM, 1 = ALC   |
 
 Each table includes the Transponder Name, Station Code, Customer, Status/Value, Update Time, Param Age, Sample Time, Sample Age, and Source DB.
 
@@ -81,10 +84,10 @@ Each table includes the Transponder Name, Station Code, Customer, Status/Value, 
 
 This page contains two tables with **threshold-based alarming** and **deviation tracking**:
 
-- **ALC Input Power** (dBm): Min/Max Threshold, Nominal Value, Deviation (dB), Deviation Alarm State (Normal/Major/Critical), Alarm State (Enabled/Disabled). Linked to Mode (FGM/ALC) table via foreign key.
+- **ALC Input Power** (dBm): Min/Max Threshold, Nominal Value, Deviation (dB), Deviation Alarm State (Normal/Major/Critical), Alarm State (Enabled/Disabled). Linked to the Mode (FGM/ALC) table via foreign key.
 - **FGM Output Power** (dBm): Same threshold and deviation features.
 
-Each table has a **Severity Offset** subpage (page button) where Major and Critical offsets can be configured. Default offsets: Major = 3, Critical = 6.
+Each table has a **Severity Offset** subpage (available via page button) where major and critical offsets can be configured. Default offsets: Major = 3, Critical = 6.
 
 ### Params Gain Step
 
@@ -136,23 +139,25 @@ On this page, you can configure the database connection parameters for Main and 
 
 This page displays raw unprocessed database contents:
 
-- **Full Load Main** table: All rows from the Main database for the configured satellite (columns: TM_ID, Update_Time, Description, Units, Type, Value, Validity, Sample_Time, Spare 1–5).
+- **Full Load Main** table: Contains all rows from the Main database for the configured satellite (columns: TM_ID, Update_Time, Description, Units, Type, Value, Validity, Sample_Time, Spare 1–5).
 - **Full Load Backup** table: Same structure as above, but for the Backup database.
-- **Last Update** timestamps and **Time Since Last Update** for each database.
-- **Refresh All** button: Manually triggers a full database reload.
+
+In addition, the **Last Update** timestamps and **Time Since Last Update** are shown for each database.
+
+The **Refresh All** button manually triggers a full database reload.
 
 ## Exception Values
 
 The following exception values are used across all parameter tables:
 
-| Value     | Display               | Description                                          |
-|-----------|-----------------------|------------------------------------------------------|
-| **-9999** | NOT VALID             | Data exists in database but validity flag is false.  |
-| **-9998** | NOT PRESENT IN DB     | TM_ID not found in the database.                     |
-| **-9997** | TRANSPONDER DISABLED  | Transponder is disabled in the Association Table.    |
+| Value | Display               | Description                                          |
+|-------|-----------------------|------------------------------------------------------|
+| -9999 | NOT VALID             | Data exists in database but validity flag is false.  |
+| -9998 | NOT PRESENT IN DB     | TM_ID not found in the database.                     |
+| -9997 | TRANSPONDER DISABLED  | Transponder is disabled in the Association Table.    |
 
 ## Notes
 
-- Alarm templates are auto-synced when a Transponder Name (display key) changes in the Association Table.
+- Alarm templates are auto-synced when a transponder name (display key) changes in the Association Table.
 - The ALC Input Power table has a foreign key relation to the Mode (FGM/ALC) table, enabling alarm correlation based on the current operating mode.
 - Station Code and Customer are included as alarm properties on monitored parameters.
