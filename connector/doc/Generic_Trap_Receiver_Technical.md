@@ -21,7 +21,7 @@ SNMP CONNECTION:
 - **IP address/host**: The IP address where the traps should be received.
 
 >[!NOTE]
-> The IP address defined in the SNMP connection will be set in the parameter **Trap IP Sources** by default, but you can change it to any other IP address if needed.
+> The IP address defined in the SNMP connection will be set in the parameter **Trap IP Sources** by default, but you can change it to any other IP address if needed (see [General](xref:Connector_help_Generic_Trap_Receiver_Technical#General), Trap IP Sources).
 
 SNMP Settings:
 
@@ -29,7 +29,8 @@ SNMP Settings:
 
 >[!IMPORTANT]
 > Although this setting can be configured, this will not change the port used by the DataMiner agent to retrieve parts. The default port for SNMP traps is *162*.
-> In case a different port is needed, make sure to change the `trapPort` attribute in the `SNMPv3` tag of the *DataMiner.xml* file
+> In case a different port is needed, make sure to change the `trapPort` attribute in the `SNMPv1`, `SNMPv2`, or `SNMPv3` tag of the *DataMiner.xml* file (depending of the SNMP protocol version is used).
+> More information in DataMiner Docs [DataMiner.xml](https://docs.dataminer.services/dataminer/Reference/Skyline_DataMiner_Folder/More_information_on_certain_files_and_folders/DataMiner_xml.html).
 
 ## Usage
 
@@ -130,7 +131,7 @@ By right-clicking in the **Trap OID Update** table, you can add a new update rul
 
 - Trap OID Updated: The OID of the trap that should be updated. Regular expressions are supported.
 - Trap OID Updating: The OID of the trap that should update the trap defined in the previous column. Regular expressions are supported.
-- Binding Alarm Index: The bindings that will be used 
+- Binding Alarm Index: The bindings that will be used.
 
 #### Automatic Provisioning
 
