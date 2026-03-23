@@ -14,7 +14,7 @@ The **SYes SILM5-03** is a VHF DAB transmitter designed for digital audio broadc
 
 - **Dual exciter oversight**: Monitor both exciters simultaneously — including output power, temperature, connection status, fan health, and firmware integrity — ensuring redundancy readiness at all times.
 
-- **Automatic input switching with hitless support**: Configure manual or automatic input switching policies with adjustable delay timers and preferred-input selection, minimizing on-air interruptions during source failovers.
+- **Automatic input switching with hitless support**: Configure manual or automatic input switching policies with adjustable delay timers and preferred-input selection, minimizing on-air interruptions during source failover switches.
 
 - **Centralized alarm management**: Surface critical transmitter alarms — PSU faults, interlock failures, lockout states, low-power warnings, and reflected-power threshold breaches — directly within DataMiner for immediate operator awareness.
 
@@ -26,9 +26,9 @@ The **SYes SILM5-03** is a VHF DAB transmitter designed for digital audio broadc
 
 **Challenge**: DAB transmitter sites are often located at remote hilltop or tower locations with no permanent staff, making it difficult to detect RF performance issues or equipment faults before they impact broadcast coverage.
 
-**Solution**: The connector polls power metrics every 10 seconds and alarm states every 30 seconds, immediately surfacing conditions such as low forward power, excessive reflected power, PSU failures, or interlock alarms within the DataMiner alarm console.
+**Solution**: The connector polls power metrics every 10 seconds and alarm states every 30 seconds, immediately surfacing conditions such as low forward power, excessive reflected power, PSU failures, or interlock alarms within the DataMiner Alarm Console.
 
-**Benefit**: Operations teams gain 24/7 visibility from a central NOC, enabling faster fault response, reduced truck rolls, and improved transmitter uptime.
+**Benefit**: Operations teams gain 24/7 visibility from a central NOC, enabling faster fault responses, reduced truck rolls, and improved transmitter uptime.
 
 ### Exciter Redundancy Assurance
 
@@ -52,7 +52,7 @@ The **SYes SILM5-03** is a VHF DAB transmitter designed for digital audio broadc
 
 - **SNMPv2 network access** is required between the DataMiner Agent and the SYes SILM5-03 transmitter (default port: 161).
 
-- **DataMiner version 10.3.0.0 - 12752 or higher** is required as the minimum platform version for this connector.
+- **DataMiner version 10.3.0.0 - 12752 or higher** is required for this connector.
 
 ### Polling Configuration
 
@@ -60,9 +60,6 @@ The connector uses three polling timers to balance responsiveness with network e
 
 | Timer | Interval | Data |
 |--|--|--|
-| Fast | 10 seconds | System uptime, antenna and load forward/reflected power (mW, dBm, %) |
+| Fast | 10 seconds | System uptime, antenna, and load forward/reflected power (mW, dBm, %) |
 | Medium | 30 seconds | Exciter table, input status, switch configuration, PSU and switch alarms, transmitter warnings |
 | Slow | 1 hour | System identification, nominal power, power thresholds, amplifier information |
-
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_SYes_SILM5-03_DAB_TX-PCM_Development_Technical).
