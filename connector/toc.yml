@@ -2987,6 +2987,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA70-87
   - name: Double D Electronics DDA75
     topicUid : Connector_help_Double_D_Electronics_DDA75
+  - name: Double D Electronics DDA86-35
+    topicUid: Connector_help_Double_D_Electronics_DDA86-35
+    items:
+      - name: Double_D_Electronics_DDA86-35 Technical
+        topicUid: Connector_help_Double_D_Electronics_DDA86-35_Technical
   - name: Double D Electronics DDA89-02
     topicUid: Connector_help_Double_D_Electronics_DDA89-02
   - name: Double D Electronics DDA89-12
