@@ -3804,7 +3804,6 @@
         topicUid: Connector_help_Evertz_7x00_General_Platform_7807LR2
       - name: Evertz 7x00 General Platform  - 7880IPASIIP
         topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
-  - name: Evertz 9000RF-Probe
   - name: Evertz 7x00 General Platform Group 2
     topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2
     items:
@@ -3826,6 +3825,7 @@
       topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD
     - name: Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC
       topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC
+  - name: Evertz 9000RF-Probe
     topicUid: Connector_help_Evertz_9000RF-Probe
   - name: Evertz 9000RF-Probe - RF Input
     topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
