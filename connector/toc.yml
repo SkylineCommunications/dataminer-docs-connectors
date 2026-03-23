@@ -9508,6 +9508,11 @@
     items:
     - name: Starlink Enterprise Technical
       topicUid: Connector_help_Starlink_Enterprise_Technical
+  - name: Starlink Enterprise Account
+    topicUid: Connector_help_Starlink_Enterprise_Account
+    items:
+    - name: Starlink Enterprise Account Technical
+      topicUid: Connector_help_Starlink_Enterprise_Account_Technical
   - name: Starlink Enterprise - User Terminal
     topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
 - name: Stormshield
