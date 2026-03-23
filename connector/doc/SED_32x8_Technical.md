@@ -19,7 +19,7 @@ This connector uses a GPIB connection and requires the following input during el
 GPIB CONNECTION:
 
 - **I/O API**: Choose between SICL or VISA.
-- **Device address**: Specify the IP address and GPIB address. For example: `lan[192.168.122.19]:gpib0,30`
+- **Device address**: Specify the IP address and GPIB bus address of the device. Default: `lan[machinename]:gpib0,1`
 
   - For SICL communication, use the format `lan[machineName]:gpib0,<busAddress>`, where:
     - `lan` is the SICL Interface name in the IO configuration.
@@ -32,10 +32,26 @@ GPIB CONNECTION:
     - `INSTR` is a fixed string.
     - Alternatively, you can use an alias defined in the Keysight Connection Expert application.
 
+The following serial communication settings are used by default:
+
+| Setting      | Value |
+|--------------|-------|
+| Baud rate    | 19200 |
+| Data bits    | 8     |
+| Stop bits    | 1     |
+| Parity       | None  |
+| Flow control | None  |
+
 ## How to Use
 
 The following pages are available in an element created with this connector:
 
-- **General**: Displays the device **Application Information**, **Temperature Status**, and **Power Status**.
-- **Matrix View**: Displays the 32x8 routing matrix.
-- **Table View**: Displays the **Inputs** table and the **Outputs** table.
+- **General**: Displays the device **Application Information** (firmware version, board type, and manager health), **Temperature Status**, and **Power Status**.
+
+- **Matrix View**: Displays the full 32x8 signal routing matrix, allowing crosspoint connections to be viewed and set.
+
+- **Table View**: Displays the **Inputs** and **Outputs** tables. Labels for inputs and outputs can be edited directly from the tables. Note that label changes are stored at the DataMiner level only, as the device does not support label configuration via the protocol.
+
+## Notes
+
+The connector exposes serialized matrix parameters (`MatrixConnectionsBuffer` and `MatrixSerialized`) that can be used by a virtual router control driver to aggregate multiple SED 32x8 elements into a single combined routing topology.
