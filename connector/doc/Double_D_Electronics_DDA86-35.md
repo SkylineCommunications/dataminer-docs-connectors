@@ -12,9 +12,9 @@ The Double D Electronics DDA86‑35 connector provides comprehensive monitoring 
 
 - **Modular system overview**: Displays the status of the DDA86‑35 chassis and its installed plug‑in modules, including power supplies, controller cards, and switch interface modules.
 
-- **Switch position monitoring & control**: View and configure the position of connected coaxial or waveguide switches, supporting both manual and automatic changeover modes.
+- **Switch position monitoring and control**: View and configure the position of connected coaxial or waveguide switches, supporting both manual and automatic changeover modes.
 
-- **LNA/LNB power supervision**: Monitor and control DC power feeds to front‑end amplifiers or LNBs, including fault detection and automatic switchover logic.
+- **LNA/LNB power supervision**: Monitor and control DC power feeds to frontend amplifiers or LNBs, including fault detection and automatic switchover logic.
 
 - **Alarm and health indicators**: Provides real‑time alarms for module faults, power issues, switch errors, and signal‑path failures.
 
