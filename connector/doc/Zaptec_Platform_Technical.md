@@ -21,9 +21,10 @@ This connector uses an HTTP connection and requires the following input during e
 
 ### Initialization
 
-To enable data polling from the source, valid username and password credentials must be provided on the *Element Settings* page.
+To enable data polling from the source, valid username and password credentials must be provided on the **Element Settings** page.
 
 ## How to Use
 
 Once valid credentials have been provided, the connector will automatically begin polling data from the Zaptec cloud API, retrieving information on installations and chargers, including charger status and session activity.
-Data polling configuration table is available to adjust the polling intervals and control which data sets are retrieved, allowing operators to balance data retrival against API fair use limits.
+
+A data polling configuration table is available that allows you to adjust the polling intervals and control which data sets are retrieved. You can use this to balance data retrieval against API fair use limits.
