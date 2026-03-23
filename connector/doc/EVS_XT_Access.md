@@ -13,5 +13,7 @@ The EVS XT Access connector provides monitoring of XT Access media processing op
 - **Job status monitoring**: Track the complete lifecycle of transfer and transcoding jobs, including state transitions, execution timing, and outcomes.
 - **Detailed job destination insights**: Access information about job destinations, providing better understanding and traceability of where content is delivered.
 
+## Technical Reference
+
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_EVS_XT_Access_Technical).
