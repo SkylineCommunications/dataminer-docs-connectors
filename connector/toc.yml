@@ -3488,6 +3488,11 @@
     topicUid: Connector_help_Eutelsat_TAOS_Calculation
   - name: Eutelsat TAOS Manager
     topicUid: Connector_help_Eutelsat_TAOS_Manager
+    items:
+      - name: Eutelsat TAOS Manager_Range_1.0.0.x_Technical
+        topicUid: Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical
+      - name: Eutelsat TAOS Manager_Range_1.0.1.x_Technical
+        topicUid: Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
@@ -3973,6 +3978,11 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
     topicUid: Connector_help_EVS_XS
+  - name: EVS XT Access
+    topicUid: Connector_help_EVS_XT_Access
+    items:
+    - name: EVS XT Access Technical
+      topicUid: Connector_help_EVS_XT_Access_Technical
   - name: EVS Neuron NAP - BRIDGE
     topicUid: Connector_help_EVS_Neuron_NAP_-_BRIDGE
     items:
@@ -5979,6 +5989,13 @@
   items:
   - name: Media Excel Hero Management System
     topicUid: Connector_help_Media_Excel_Hero_Management_System
+- name: Media Links
+  items:
+  - name: Media Links Xscend Manager
+    topicUid: Connector_help_Media_Links_Xscend_Manager
+    items:
+    - name: Media Links Xscend Manager Technical
+      topicUid: Connector_help_Media_Links_Xscend_Manager_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
