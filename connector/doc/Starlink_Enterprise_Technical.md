@@ -4,6 +4,8 @@ uid: Connector_help_Starlink_Enterprise_Technical
 
 # Starlink Enterprise
 
+## About
+
 The purpose of this connector is to monitor Starlink devices through the Telemetry API and the Management API over HTTP using JSON files.
 
 Starlink is an internet service that uses a satellite constellation in a low Earth orbit to deliver high-speed low-latency broadband internet. Because Starlink satellites are in a low orbit, at about 550 km from Earth, the round-trip data time between the user and a satellite is significantly lower compared to internet services that make use of single geostationary satellites.
@@ -12,7 +14,9 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector.
+From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) to be available on the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account element(s) to poll the information.
+
+The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector. This means that a Starlink Enterprise Account element has to be created for every account that was polled before.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
@@ -20,99 +24,53 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 > [!TIP]
 > To optimize your use of this connector, we recommend deploying our **Standard Product Solution** [Starlink Enterprise](https://catalog.dataminer.services/details/66a4c259-0fb1-4c27-aede-8bbd3a4925d0) via the Catalog. This way, you will also be able to use the complementary low-code app and standard available dashboards.
 
-## About
-
-### Version Info
-
-| Range              | Key Features    | Based on                       | System Impact |
-|--------------------|-----------------|--------------------------------|---------------|
-| 1.0.0.x [Obsolete] | Initial version | Starlink Telemetry API 1.0.0.4 | -             |
-| 1.0.1.x [Obsolete] | Version with standardized foreign keys | Starlink Enterprise 1.0.0.16 | Foreign key parameters have been renamed, which impacts automation scripts that retrieve a parameter of this protocol by name. |
-| 1.0.2.x [Obsolete] | Telemetry Data is set using history sets for accurate backpolling. Partial table option implemented for large tables. | Starlink Enterprise 1.0.1.2 | Pagination for large tables (User Terminal, Services, Daily Data Usage, Monthly Data Usage, Overage Lines). History sets can cause alarm storms if hysteresis is not enabled on alarm templates. |
-| 1.0.3.x [SLC Main] | Implemented multi-threading to poll management data and telemetry data on different threads. This will keep tables up to date with proper mapping of services and keep unconfigured terminals from persisting on tables. Updated display keys of User Terminal Table and Alerts Table to be unique using the device name and kit number | Starlink Enterprise 1.0.2.10  | Element needs to be reconfigured with a new connection using the Starlink API as the endpoint configured. Display keys changed on Alerts and User Terminal Tables.|
-
 ### Product Info
 
 | Range   | Supported Firmware |
 |---------|--------------------|
-| 1.0.0.x | v1                 |
+| 1.0.0.x | API V1             |
+| 1.0.1.x | API V1             |
+| 1.0.2.x | API V1             |
+| 1.0.3.x | API V1             |
+| 1.0.4.x | API V2             |
 
 ### System Info
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components                                                                            |
-|---------|-----------------|---------------------|-------------------|----------------------------------------------------------------------------------------------- |
-| 1.0.0.x | No              | Yes                 | -                 | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| Range   | DCF Integration | Cassandra Compliant | Linked Components                                                              | Exported Components                                                                            |
+|---------|-----------------|---------------------|--------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------- |
+| 1.0.0.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| 1.0.1.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| 1.0.2.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| 1.0.3.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| 1.0.4.x | No              | Yes                 | [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 
 ## Configuration
 
-### Connections
+Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered in a Starlink Enterprise Account element which name equals the **account name**. Next to this, the name of the Starlink Enterprise element has to be entered in there as well.
 
-#### HTTP Connection - Main
+If the Starlink Enterprise Account element is available with valid credentials but the tables of the Starlink Enterprise element are still empty after several minutes, please check the **Starlink Enterprise Element Name** parameter of the Starlink Enterprise Account element. The element log file will show the name of the data element it tried to reach.
 
-This connector uses an HTTP connection to be able to interact with the API and requires the following input during element creation:
+If changing one of the parameters doesn't seem to work (like topping up a service line), please compare the name of the accounts on the Starlink web interface with the name of the Starlink Enterprise Account elements. The name of each Starlink Enterprise Account element has to match the account name for the parameter set logic to work.
 
-HTTP CONNECTION:
-
-- **Type of port:** TCP/IP
-- **IP address/host**: api.starlink.com
-
-TCP/IP settings
-
-- **IP port**: 443
-- **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
-
-> [!NOTE]
-> Using *ByPassProxy* may result in `Error : 12002. ERROR_WINHTTP_TIMEOUT` if the server requires routing through a security-enforcing proxy. In such cases, remove the *ByPassProxy* entry from *Bus address* to restore connectivity.
-
-#### HTTP Connection - Config Data
-
-This connector uses a second HTTP connection thread to poll management data in parallel with telemetry data and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **Type of port:** TCP/IP
-- **IP address/host**: api.starlink.com
-
-TCP/IP settings
-
-- **IP port**: 443
-- **Bus address**: *ByPassProxy*. This must be filled in to bypass any possible proxy that could block the HTTP communication.
-
-> [!NOTE]
-> Using *ByPassProxy* may result in `Error : 12002. ERROR_WINHTTP_TIMEOUT` if the server requires routing through a security-enforcing proxy. In such cases, remove the *ByPassProxy* entry from *Bus address* to restore connectivity.
+![Element Structure](~/connector/images/StarlinkEnterpriseElementStructure.png)
 
 ### Initialization
 
-A newly created element will only start polling data when both the **Client ID** and **Client Secret** are filled in on the **Configuration** page.
+Upon element creation, a simulation becomes active which utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The **Demo Mode** of the element is now *Enabled*. History simulation data was added for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
 
-It is possible to install the Starlink Enterprise connector using the **Starlink Enterprise** application package, which provides a **simulation extension**. The simulation extension is installed alongside the application package. Upon installation, the simulation becomes available and utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The simulation is enabled during the creation of the element. Simulation files are stored within the application's designated directory. History simulation data was added for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
+The simulation will run until you enter the Client ID and Client Secret on the **Configuration** page of a Starlink Enterprise Account element. After that, Demo Mode gets *Disabled* which stops the simulation. At this point, the Starlink Enterprise Account element(s) start(s) polling real data.
 
-In case you make use of this package, the **simulation will run until you enter the Client ID and Client Secret** on the **Configuration** page. After that, the simulation stops, and the element begins polling data with real values from the device if the credentials are valid.
+The Starlink Enterprise Account element(s) offload their information by setting the raw response content on a hidden parameter of the Starlink Enterpise element. Writing to these hidden parameters saves the content in a buffer, part of the SLScripting process. Every minute, the Starlink Enterpise element checks the buffer and pushes the received content to the correct tables.
 
-> [!IMPORTANT]
-> No information will be polled by default. To enable polling, go to the **Accounts** table on the **Accounts** page, and use the toggle button of the relevant row(s) in the **Polling** column.
+Because of this buffer mechanism, it can take a minute or two for the tables of the Starlink Enterpise element to show information, after starting a Starlink Enterprise Account element with valid credentials.
 
 ## How to Use
 
-The connector uses JSON over HTTP to retrieve its data.
-
-To see the actual traffic between the element and the device, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**. A healthy element will show groups 700-705 in the Stream Viewer.
-
-If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
-
-If you only see groups 700 and 701 in the Stream Viewer, check the **Polling** column of the **Accounts** table, as probably none of the toggle buttons will be set to enabled.
-
-Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**. However, note that lines in the element log file indicating *token_expired* can be safely ignored, as these are also added when nothing is wrong with the element.
-
-> [!NOTE]
-> Keep in mind that the tables User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage can be empty even if polling is enabled for at least one account, the Authentication parameter indicates *Successful*, and groups 700-705 are shown in the Stream Viewer.
-
-> [!TIP]
-> In case you notice that a large number of user terminals are not shown in the User Terminals table, restart the element. This will trigger a new access token request and a new poll cycle.
+To see the actual traffic between the Starlink Enterpise element and a Starlink Enterprise Account element, please check the element log file. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
 
 ### User Terminals Page
 
-The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which polling is enabled.
+The User Terminals page contains the **User Terminals** table. This table shows the Starlink terminals that are linked to the accounts for which a Starlink Enterprise Account element is actively querying the Starlink API.
 
 The columns **Device ID**, **Account Number**, and **Service Line Number** in this table are hidden by default. You can show them by right-clicking the table column header, selecting **Columns**, and then selecting the columns you want to show.
 
@@ -135,18 +93,16 @@ User terminals can be converted to dynamic virtual elements (DVEs). To **generat
 To **remove a DVE**:
 
 1. Make sure that the **DVE Creation** toggle button for the corresponding terminal is set to *Disabled* in the **User Terminals** table.
-1. Navigate to the **User Terminal DVEs Configuration** page via the page button on the **Configuration** page or by clicking the downwards arrow next to Configuration.
-1. Click the **Delete** button for the corresponding terminal.
-1. Read the warning message carefully.
-1. If you are sure that the DVE can be removed, click **Yes** to confirm.
+2. Navigate to the **User Terminal DVEs Configuration** page via the page button on the **Configuration** page or by clicking the downwards arrow next to Configuration.
+3. Click the **Delete** button for the corresponding terminal.
+4. Read the warning message carefully.
+5. If you are sure that the DVE can be removed, click **Yes** to confirm.
 
 User terminal DVEs can only be removed if the DVE Creation column contains a value other than *Enabled*. User terminals for which a dynamic virtual element was created will not be removed automatically if they are no longer returned by the API for more than one day and have DVE Creation set to *Enabled*.
 
-#### Relations to other tables
+![Disable User Terminal DVE](~/connector/images/StarlinkEnterpriseDisableUserTerminalDve.png)
 
-The data retrieved and stored in the different tables can be linked to each other. For the hardware-related information, this is with the column **User Terminal Device ID**, while for the more service-related data, the **Service Line Number** is used.
-
-![Relations between tables](~/connector/images/Starlink_Enterprise_UserTerminalsRelationships.drawio.svg)
+![Delete User Terminal DVE](~/connector/images/StarlinkEnterpriseDeleteUserTerminalDve.png)
 
 ### Service Line Statistics
 
@@ -154,7 +110,7 @@ Each row in the **Service Line Statistics** table represents aggregated KPI data
 
 ### Alerts Page
 
-Each row in the **Alerts** table represents an alert that comes from a user terminal (not from a router). Alerts will persist for as long as they are active.
+Each row in the **Alerts** table represents an alert that comes from a user terminal or from a router. Alerts will persist for as long as they are active.
 
 The **User Terminal Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
 
@@ -168,15 +124,11 @@ The Telemetry API provides the current routers. If a router is removed or no lon
 
 Routers that are no longer returned by the API for more than one day will be removed from the table. This action can also be logged in the element log file. The **Timestamp** column is used to determine the latest timestamp of when a row was updated.
 
-The **User Terminal Device ID** column contains the reference to the Device ID of the user terminal. In the API, this is referred to as the **Router Dish ID**.
-
 ### IP Allocations Page
 
 Information related to IP allocations is stored in the **IP Allocations** table.
 
 The **IP Allocation Device ID** column in this table is hidden by default. You can show it by right-clicking the table column header, selecting **Columns**, and then selecting this column.
-
-The **User Terminal Device ID** column contains the reference to the device ID of the user terminal.
 
 ### Services Page
 
@@ -186,14 +138,18 @@ The **Account Number** column in this table is hidden by default. You can show i
 
 When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when no services are active for a specific account.
 
-#### One-Time Top-Up
+#### Top Up
 
-If you need to purchase additional data beyond the included monthly allocation, you can can trigger a top-up from within the Services table.
+If you need to purchase additional data beyond the included monthly allocation, you can can trigger a top up from within the Services table.
 
-To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top-Up** button in the row. This will execute a one-time top-up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
+To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top Up** button in the row. This will execute a one-time top up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
 
 > [!TIP]
-> The top-up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
+> The top up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
+
+![Automatic Top Up](~/connector/images/StarlinkEnterpriseAutomaticTopUp.png)
+
+![Manual Top Up](~/connector/images/StarlinkEnterpriseManualTopUp.png)
 
 ### Overage Lines Page
 
@@ -217,36 +173,11 @@ The **Service** column in the **Daily Data Usage** table is hidden by default. Y
 
 ### Accounts Page
 
-All known accounts are listed in the Accounts table. Each row in this table contains a polling toggle button. No information will be polled by default. The toggle button of every row will indicate *Disabled* after element creation. You will need to enable polling for the relevant accounts to be able to see data in the following tables: User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage.
-
-> [!NOTE]
-> Keep in mind that after you enable polling for one or more accounts, it can take some time before data is visible in the tables User Terminals, Alerts, Routers, Services, Overage Lines, and Monthly and Daily Data Usage. There is no trigger after changing one or more toggle buttons. Every timer cycle, the connector checks for which accounts polling is enabled.
+All known accounts are listed in the Accounts table. Each row in this table contains a **Polling** toggle button. Switching the toggle button to *Disabled* doesn't impact the polling behavior.
 
 ### Configuration Page
 
-The Configuration page contains the **Client ID**, the **Client Secret**, and the **Authentication** field. When the specified client ID and client secret have both been accepted by the API, the Authentication field will indicate *Successful*, and the element will start to display data. The connector will update its access token every 15 minutes, just before it expires.
-
-In case the element **does not show any data**, and traffic inside the Stream Viewer seems minimal, check if the Authentication parameter indicates *Successful*. If it instead indicates *Failed*, most likely the client ID or the client secret is not correct.
-
-The polling mechanism is triggered after the value of the Client Secret parameter changes. This means that a Client Secret value change is required to trigger a new poll cycle after an incorrect Client ID is corrected.
-
-> [!CAUTION]
-> Changing the client secret will also remove all dynamic virtual elements.
-
-The Configuration page also contains two telemetry request configuration parameters:
-
-- **Telemetry Batch Size** represents the maximum number of telemetry entries to return in the response. The recommended batch size is ~65000 records per request (this is the maximum). If the batch does not have that size, it will return less. Keeping it at 65000 allows fast backpolling when needed.
-- **Telemetry Linger Duration** represents the maximum number of milliseconds to collect telemetry entries. The recommended linger duration is ~15000 ms. This duration is recommended by Starlink to ensure that all data points come in accurately. If the telemetry requests are timing out, please check the **Timeout of a single command (ms)** setting in the element configuration. Preferably, the timeout of a single command should be slightly bigger than the Telemetry Linger Duration.
-
-> [!IMPORTANT]
-> A Telemetry Linger Duration of 15 000 ms only allows 4 accounts to be polled at maximum. If you want to poll more accounts, please lower the Telemetry Linger Duration but make sure the following applies:
->
-> `60 000 - [amount of accounts] * Telemetry Linger Duration > 0`
-
-With the **Poll Only Service Linked Terminals** toggle button on the Configuration page, you can enable a filter on the **User Terminals** query. This button is set to *Off* by default, which will poll all the user terminals from the management API whether they have a service line configured or not. Toggling the button to *On* will poll only user terminals that are linked to a service line.
-
-> [!IMPORTANT]
-> Enabling the **Poll Only Service Linked Terminals** filter will stop updating user terminals that do not have a service line configured. Those rows in the table will be removed after the specified cleanup time. If DVEs are enabled for terminals that do not have a service line configured, please disable them if you are using this filter.
+In case the element **does not show any data**, and traffic inside the element log file seems minimal, check if the **Authentication** parameter of the Starlink Enterprise Account elements all indicate *Successful*. If one of them instead indicates *Failed*, most likely the client ID or the client secret is not correct.
 
 ### User Terminal DVEs Configuration page
 
@@ -257,3 +188,11 @@ If the table is empty, this means no DVEs have been generated yet.
 When a user generates a DVE by enabling the **DVE Creation** toggle button in the **User Terminals** table, a new row will appear in this table.
 
 Removing a DVE is only possibly via the **Delete** button in the **User Terminal DVEs** table. See [User Terminal DVEs](#user-terminal-dves).
+
+![Enable User Terminal DVE](~/connector/images/StarlinkEnterpriseEnableUserTerminalDve.png)
+
+### Table Cleanup Mechanism
+
+The table cleanup mechanism can be triggered per table.
+
+![Manual Table Cleanup Mechanism](~/connector/images/StarlinkEnterpriseManualTableCleanupMechanism.png)

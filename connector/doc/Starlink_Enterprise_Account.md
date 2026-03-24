@@ -6,7 +6,7 @@ uid: Connector_help_Starlink_Enterprise_Account
 
 ## About
 
-The purpose of this connector is to poll Starlink devices through the Telemetry API and the Management API over HTTP using JSON files. The polled information gets offloaded to an element which was created based on the [Starlink Enterprise connector](https://catalog.dataminer.services/details/d1dc1fae-0902-4cc3-9ae6-d1983d9596a3).
+The purpose of this connector is to poll Starlink devices through the Telemetry API and the Management API over HTTP using JSON files.
 
 Starlink is an internet service that uses a satellite constellation in a low Earth orbit to deliver high-speed low-latency broadband internet. Because Starlink satellites are in a low orbit, at about 550 km from Earth, the round-trip data time between the user and a satellite is significantly lower compared to internet services that make use of single geostationary satellites.
 
@@ -14,9 +14,9 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-Elements that are created based on this connector don't show anything. The connector was designed for querying the Starlink API V2 only. A [Starlink Enterprise element](https://catalog.dataminer.services/details/d1dc1fae-0902-4cc3-9ae6-d1983d9596a3) with name **Starlink Enterprise** is required to make the polled information visible, alarmable and trendable.
+Elements that are created based on this connector don't show anything. The connector was designed for querying the Starlink API V2 only. A [Starlink Enterprise element](https://catalog.dataminer.services/details/d1dc1fae-0902-4cc3-9ae6-d1983d9596a3) is required on the DMS to make the polled information visible, alarmable and trendable.
 
-Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered on the **General** page of a Starlink Enterprise Account element. The name of the Starlink Enterprise Account element has to match the **account name**.
+Since the introduction of the Starlink API V2, credentials are needed per account. These credentials have to be entered in the Starlink Enterprise Account element. The name of the Starlink Enterprise Account element has to match the **account name**.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
@@ -44,7 +44,7 @@ Since the introduction of the Starlink API V2, credentials are required per acco
 
 ### Prerequisites
 
-- **DataMiner Feature Release 10.4.2** or higher.
+- **DataMiner Main Release 10.4.0** or higher.
 
 - **Starlink API access**: API V2 credentials per account (Client ID, Client Secret) are required for authentication.
 

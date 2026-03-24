@@ -14,7 +14,9 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector.
+From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) element to be available on the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account element(s) to poll the information.
+
+The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector. This means that a Starlink Enterprise Account element has to be created for every account that was polled before.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
@@ -24,7 +26,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ## Key Features
 
-- **Conditional telemetry polling**: Configure telemetry polling per account.
+- **Conditional polling**: Configure telemetry and management information polling per account.
 
 - **User terminal details**: View details on user terminals and service lines.
 
@@ -38,9 +40,9 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ## Use Cases
 
-### Use Case 1
+### Offline User Terminals
 
-**Challenge**: Marking terminals as offline.
+**Challenge**: Marking user terminals as offline.
 
 **Solution**: The connector compares the telemetry data with the management data to distinguish the offline terminals from other terminals.
 
@@ -48,7 +50,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ![User Terminals](~/connector/images/StarlinkEnterpriseUserTerminals.png)
 
-### Use Case 2
+### Data Usage Bar Graph
 
 **Challenge**: Showing data usage as a stacked bar graph.
 
@@ -56,7 +58,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Shows the data usage similar to the web interface.
 
-### Use Case 3
+### User Terminal DVEs
 
 **Challenge**: Creating services with parameters from a subset of terminals.
 
@@ -64,7 +66,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Monitor the KPIs of the most relevant terminals only.
 
-### Use Case 4
+### Load Balancing
 
 **Challenge**: Too many requests sent from the same IP address.
 
@@ -72,7 +74,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Multiple elements can be created on different hosts. For example, accounts A and B can be polled from server Y, and accounts C and D can be polled from server Z. The overarching dashboard or low-code app can combine this data to show the info of every account.
 
-### Use Case 5
+### Telemetry API Changes
 
 **Challenge**: New column names and changing alert names.
 
@@ -80,7 +82,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: The element will indicate by itself when the connector needs to be extended.
 
-### Use Case 6
+### Alerts
 
 **Challenge**: Monitoring based on alerts.
 
@@ -88,15 +90,15 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Web interface alerts are visible in the DataMiner Alarm Console.
 
-### Use Case 7
+### Service Line Top Up
 
 **Challenge**: Accounts may occasionally need to purchase additional data beyond the included monthly allocation.
 
-**Solution**: The connector integrates with the Starlink Management API to provide a **one-time top-up feature**. Users can trigger a top-up from within the services table, and the system validates product availability, executes the request, and confirms whether the top-up succeeded or failed.
+**Solution**: The connector integrates with the Starlink Management API to provide the features **Automatic Top Up** and **One-Time Top Up**. Users can trigger a recurring or a single top up from within the services table. The connector validates product availability, executes the request, and confirms whether the top up succeeded or failed.
 
 **Benefit**: Streamlines the process of buying extra data directly through DataMiner and provides immediate feedback to the operator.
 
-### Use Case 8
+### Service Line Statistics
 
 **Challenge**: Terminals can be bonded (two terminals active on one service line) or can swap kits, creating a new terminal ID on the service line.
 
@@ -110,7 +112,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 - **DataMiner Feature Release 10.4.2** or higher.
 
-- **Starlink API access**: API credentials (Client ID, Client Secret) are required for authentication to enable polling.
+- **Starlink API access**: API V2 credentials per account (Client ID, Client Secret) are required for authentication.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Starlink_Enterprise_Technical).
