@@ -2987,6 +2987,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA70-87
   - name: Double D Electronics DDA75
     topicUid : Connector_help_Double_D_Electronics_DDA75
+  - name: Double D Electronics DDA86-35
+    topicUid: Connector_help_Double_D_Electronics_DDA86-35
+    items:
+      - name: Double_D_Electronics_DDA86-35 Technical
+        topicUid: Connector_help_Double_D_Electronics_DDA86-35_Technical
   - name: Double D Electronics DDA89-02
     topicUid: Connector_help_Double_D_Electronics_DDA89-02
   - name: Double D Electronics DDA89-12
@@ -3810,7 +3815,6 @@
         topicUid: Connector_help_Evertz_7x00_General_Platform_7807LR2
       - name: Evertz 7x00 General Platform  - 7880IPASIIP
         topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
-  - name: Evertz 9000RF-Probe
   - name: Evertz 7x00 General Platform Group 2
     topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2
     items:
@@ -3832,6 +3836,7 @@
       topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD
     - name: Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC
       topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC
+  - name: Evertz 9000RF-Probe
     topicUid: Connector_help_Evertz_9000RF-Probe
   - name: Evertz 9000RF-Probe - RF Input
     topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
@@ -9619,6 +9624,8 @@
     topicUid: Connector_help_SYes_P75-04_UHF_Transmitter
   - name: SYes PCM Television
     topicUid: Connector_help_SYes_PCM_Television
+  - name: SYes SILM5-03 DAB TX-PCM
+    topicUid: Connector_help_SYes_SILM5-03_DAB_TX-PCM
   - name: SYes SYSTEM LOGIC N+1
     topicUid: Connector_help_SYes_SYSTEM_LOGIC_N+1
 - name: Symetrix
@@ -11187,6 +11194,13 @@
   items:
   - name: Zamil Industries HVAC AC
     topicUid: Connector_help_Zamil_Industries_HVAC_AC
+- name: Zaptec
+  items:
+  - name: Zaptec Platform
+    topicUid: Connector_help_Zaptec_Platform
+    items:
+    - name: Zaptec Platform Technical
+      topicUid: Connector_help_Zaptec_Platform_Technical
 - name: Zenoss
   items:
   - name: Zenoss Database
