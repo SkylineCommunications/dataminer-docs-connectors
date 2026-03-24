@@ -8514,6 +8514,9 @@
   items:
   - name: SED 32x8
     topicUid: Connector_help_SED_32x8
+    items:
+    - name: SED 32x8 Technical
+      topicUid: Connector_help_SED_32x8_Technical
   - name: SED Decimator 16 port
     topicUid: Connector_help_SED_Decimator_16_port
   - name: SED Decimator 8 port
