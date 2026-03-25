@@ -3062,9 +3062,8 @@
   - name: EATON SC300
     topicUid: Connector_help_EATON_SC300
     items:
-    - name: EATON SC300
+    - name: EATON SC300 Technical
       topicUid: Connector_help_EATON_SC300_Technical
-- name: EndRun Technologies
   - name: EATON Supervisory Module
     topicUid: Connector_help_EATON_Supervisory_Module
 - name: EBU

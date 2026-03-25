@@ -4,13 +4,13 @@ uid: Connector_help_EATON_SC300_Technical
 
 # EATON SC300
 
-The SC300 System Controller is an advanced control and monitoring solution for the EATON Enterprise, Access, Metro, and Core Solutions.
-
 ## About
+
+The SC300 System Controller is an advanced control and monitoring solution for the EATON Enterprise, Access, Metro, and Core Solutions.
 
 The EATON SC300 connector can be used to monitor and control an EATON SC300 device. SNMP is used to communicate with the device. The information of the device is displayed on multiple pages, similar to the way it is displayed on the web interface of the device.
 
-This driver is designed to be similar to the SC200 driver, which is from the same family of SC devices.
+This connector is designed to be similar to the SC200 connector, which is used with the same family of SC devices.
 
 ## Configuration
 
@@ -22,18 +22,18 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **Bus address**: [The bus address of the device.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **Bus address**: The bus address of the device.
 
 SNMP Settings:
 
-- **IP port**: [The IP port of the destination. (default: *161*)]
-- **Get community string**: [The community string used when reading values from the device. (default: *public*)]
-- **Set community string**: [The community string used when setting values on the device. (default: *private*)]
+- **IP port**: The IP port of the destination (default: *161*).
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Initialization
 
-On startup, the polling manager will automatically populate with suggested intervals to poll the different groups of parameters. The user should define polling intervals and to enable/disable specific groups for polling.
+On startup, the polling manager will automatically populate with suggested intervals to poll the different groups of parameters. You will need to define polling intervals and enable specific groups for polling according to your preferences.
 
 ### Web Interface
 
@@ -41,7 +41,7 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-The connector does not use the traditional timer threads to poll the SNMP groups from the device, but uses a priority buffer and a polling manager instead due to significantly long poll times for certain SNMP groups.
+The connector does not use the traditional timer threads to poll the SNMP groups from the device, but uses a priority buffer and a polling manager instead because of significantly long poll times for certain SNMP groups.
 
 The element created with this connector consists of the data pages detailed below.
 
@@ -73,5 +73,7 @@ The element created with this connector consists of the data pages detailed belo
 
 - **Web Interface**: Displays the web interface of the device. The web interface is only accessible when the client machine has network access to the product.
 
-#### !!! NOTE
-The polling groups for Smart Alarm table and Source Alarm table take significantly longer than others. 
+## Notes
+
+> [!IMPORTANT]
+> The polling groups for the Smart Alarm table and Source Alarm table can take significantly longer than others.
