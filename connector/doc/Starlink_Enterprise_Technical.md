@@ -14,7 +14,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) to be available on the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account element(s) to poll the information.
+From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) in the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account elements to poll the information.
 
 The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector. This means that a Starlink Enterprise Account element has to be created for every account that was polled before.
 
@@ -46,27 +46,29 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ## Configuration
 
-Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered in a Starlink Enterprise Account element which name equals the **account name**. Next to this, the name of the Starlink Enterprise element has to be entered in there as well.
+Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered in a [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) element of which the name equals the **account name**. The name of the Starlink Enterprise element has to be specified there as well.
 
 If the Starlink Enterprise Account element is available with valid credentials but the tables of the Starlink Enterprise element are still empty after several minutes, please check the **Starlink Enterprise Element Name** parameter of the Starlink Enterprise Account element. The element log file will show the name of the data element it tried to reach.
 
-If changing one of the parameters doesn't seem to work (like topping up a service line), please compare the name of the accounts on the Starlink web interface with the name of the Starlink Enterprise Account elements. The name of each Starlink Enterprise Account element has to match the account name for the parameter set logic to work.
+If changing one of the parameters does not seem to work (like topping up a service line), compare the name of the accounts on the Starlink web interface with the name of the Starlink Enterprise Account elements. The name of each Starlink Enterprise Account element has to match the account name for the parameter set logic to work.
 
 ![Element Structure](~/connector/images/StarlinkEnterpriseElementStructure.png)
 
 ### Initialization
 
-Upon element creation, a simulation becomes active which utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. The **Demo Mode** of the element is now *Enabled*. History simulation data was added for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
+Upon element creation, the **Demo Mode** of the element is enabled by default. This means that a simulation becomes active that utilizes built-in logic based on mock accounts and user terminals to replicate real-world scenarios. It uses history simulation data for the demo terminal "Skyline demo cruise_UT*74d101" to allow location tracking.
 
-The simulation will run until you enter the Client ID and Client Secret on the **Configuration** page of a Starlink Enterprise Account element. After that, Demo Mode gets *Disabled* which stops the simulation. At this point, the Starlink Enterprise Account element(s) start(s) polling real data.
+The simulation will run until you enter the Client ID and Client Secret on the **Configuration** page of one or more **Starlink Enterprise Account** elements. After that, Demo Mode gets disabled, which stops the simulation. At this point, the Starlink Enterprise Account elements start polling real data.
 
-The Starlink Enterprise Account element(s) offload their information by setting the raw response content on a hidden parameter of the Starlink Enterpise element. Writing to these hidden parameters saves the content in a buffer, part of the SLScripting process. Every minute, the Starlink Enterpise element checks the buffer and pushes the received content to the correct tables.
+The Starlink Enterprise Account elements offload their information by setting the raw response content on a hidden parameter of the Starlink Enterprise element. Writing to these hidden parameters saves the content in a buffer, which is part of the SLScripting process. Every minute, the Starlink Enterprise element checks the buffer and pushes the received content to the correct tables.
 
-Because of this buffer mechanism, it can take a minute or two for the tables of the Starlink Enterpise element to show information, after starting a Starlink Enterprise Account element with valid credentials.
+Because of this **buffer mechanism**, after you start a Starlink Enterprise Account element with valid credentials, it **can take a minute or two** for the tables of the Starlink Enterprise element to show information.
 
 ## How to Use
 
-To see the actual traffic between the Starlink Enterpise element and a Starlink Enterprise Account element, please check the element log file. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
+### Communication Logging
+
+To see the actual traffic between the Starlink Enterprise element and a Starlink Enterprise Account element, please check the element log file. You can open the element log file by right-clicking the element in the Surveyor and selecting **View** > **Log**.
 
 ### User Terminals Page
 
@@ -93,10 +95,10 @@ User terminals can be converted to dynamic virtual elements (DVEs). To **generat
 To **remove a DVE**:
 
 1. Make sure that the **DVE Creation** toggle button for the corresponding terminal is set to *Disabled* in the **User Terminals** table.
-2. Navigate to the **User Terminal DVEs Configuration** page via the page button on the **Configuration** page or by clicking the downwards arrow next to Configuration.
-3. Click the **Delete** button for the corresponding terminal.
-4. Read the warning message carefully.
-5. If you are sure that the DVE can be removed, click **Yes** to confirm.
+1. Navigate to the **User Terminal DVEs Configuration** page via the page button on the **Configuration** page or by clicking the downwards arrow next to Configuration.
+1. Click the **Delete** button for the corresponding terminal.
+1. Read the warning message carefully.
+1. If you are sure that the DVE can be removed, click **Yes** to confirm.
 
 User terminal DVEs can only be removed if the DVE Creation column contains a value other than *Enabled*. User terminals for which a dynamic virtual element was created will not be removed automatically if they are no longer returned by the API for more than one day and have DVE Creation set to *Enabled*.
 
@@ -138,14 +140,14 @@ The **Account Number** column in this table is hidden by default. You can show i
 
 When the **Info Logging Level** of the element log file is raised to *Level 1* or higher, you will see a line in the log file when no services are active for a specific account.
 
-#### Top Up
+#### Triggering a Top-Up
 
-If you need to purchase additional data beyond the included monthly allocation, you can can trigger a top up from within the Services table.
+If you need to purchase additional data beyond the included monthly allocation, you can can trigger a top-up from within the Services table.
 
-To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top Up** button in the row. This will execute a one-time top up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
+To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top Up** button in the row. This will execute a one-time top-up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
 
 > [!TIP]
-> The top up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
+> The top-up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
 
 ![Automatic Top Up](~/connector/images/StarlinkEnterpriseAutomaticTopUp.png)
 
@@ -173,11 +175,11 @@ The **Service** column in the **Daily Data Usage** table is hidden by default. Y
 
 ### Accounts Page
 
-All known accounts are listed in the Accounts table. Each row in this table contains a **Polling** toggle button. Switching the toggle button to *Disabled* doesn't impact the polling behavior.
+All known accounts are listed in the Accounts table. Each row in this table contains a **Polling** toggle button. Switching the toggle button to *Disabled* does not impact the polling behavior.
 
 ### Configuration Page
 
-In case the element **does not show any data**, and traffic inside the element log file seems minimal, check if the **Authentication** parameter of the Starlink Enterprise Account elements all indicate *Successful*. If one of them instead indicates *Failed*, most likely the client ID or the client secret is not correct.
+In case the element **does not show any data**, and traffic inside the element log file seems minimal, check if the **Authentication** parameters of the **Starlink Enterprise Account** elements all indicate *Successful*. If one of them instead indicates *Failed*, most likely the client ID or the client secret is not correct.
 
 ### User Terminal DVEs Configuration page
 

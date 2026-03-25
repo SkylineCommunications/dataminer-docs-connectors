@@ -14,7 +14,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) element to be available on the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account element(s) to poll the information.
+From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) in the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account elements to poll the information.
 
 The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector. This means that a Starlink Enterprise Account element has to be created for every account that was polled before.
 
@@ -90,11 +90,11 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 **Benefit**: Web interface alerts are visible in the DataMiner Alarm Console.
 
-### Service Line Top Up
+### Service Line Top-Up
 
 **Challenge**: Accounts may occasionally need to purchase additional data beyond the included monthly allocation.
 
-**Solution**: The connector integrates with the Starlink Management API to provide the features **Automatic Top Up** and **One-Time Top Up**. Users can trigger a recurring or a single top up from within the services table. The connector validates product availability, executes the request, and confirms whether the top up succeeded or failed.
+**Solution**: The connector integrates with the Starlink Management API to provide the features **Automatic Top-Up** and **One-Time Top-Up**. Users can trigger a recurring or a single top-up from within the services table. The connector validates product availability, executes the request, and confirms whether the top-up succeeded or failed.
 
 **Benefit**: Streamlines the process of buying extra data directly through DataMiner and provides immediate feedback to the operator.
 
