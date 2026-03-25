@@ -4,57 +4,30 @@ uid: Connector_help_Zabbix_Platform
 
 # Zabbix Platform
 
-Zabbix is software that monitors numerous parameters of a network as well as the health and integrity of servers.
-
-This HTTP connector connects to the Zabbix API to retrieve data from the Zabbix platform. The Zabbix API is a web-based API that is shipped as part of the web front end. It uses the JSON-RPC 2.0 protocol. This connector will export different connectors based on the retrieved hosts from the API. For more information on the device, refer to <https://www.zabbix.com/documentation/3.0/manual/api>.
-
 ## About
+Zabbix is an monitoring platform that provides visibility into the health, performance, and availability of IT infrastructure, such as servers, networks, applications, services, and cloud resources. 
 
-### Version Info
+The Zabbix Platform DataMiner connector leverages Zabbix's API to retrieve data from the Zabbix platform. This API is a web-based API that is shipped as part of the web front end and uses the JSON-RPC 2.0 protocol. 
 
-| Range                | Key Features                            | Based on     | System Impact     |
-|----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                        | -            | -                 |
-| 1.1.0.x [SLC Main]   | API 4.0: new features were implemented. | -            | -                 |
+This connector will export different connectors based on the retrieved hosts from the API. 
 
-### Product Info
+## Key Features
+- Uses Zabbix API (JSON-RPC 2.0) through the HTTP connector.
+- Supports Zabbix API versions 7.0 and later (as of connector version 1.3.0.x).
+- Exports connectors for discovered Zabbix hosts (per-host DVE).
+- Provides host inventory and metadata (host groups, proxies, IPMI, maintenance status).
+- Exposes monitoring elements such as Triggers, Items, Events, Correlations, and Problems.
+- Filtering and navigation by host group and tag.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.1.0.x   | 4.0                    |
+## Use Case
+This connector is used to integrate Zabbix infrastructure monitoring into DataMiner:
+- Centralize Zabbix host and health data in DataMiner management and dashboards.
+- Drive automation or alerting workflows from Zabbix-triggered events/problems.
+- Enable operations teams to inspect host status, triggers, items, and historical events from one interface.
+- Migrate or augment existing Zabbix infrastructure visibility using DataMiner exported connectors.
 
-### System Info
+## Technical Info
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                        |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     |                       |                                                                            |
-| 1.1.0.x   | No                  | Yes                     | -                     | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host) |
-
-## Configuration
-
-### Connections
-
-#### HTTP Connection
-
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Initialization
-
-To be able to retrieve data from the API, specify a **Username** and **Password** on the **Configuration** page.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to use
-
-On the **General** page, a tree view is displayed that allows you to drill down from a **Host Group** to a single **Host**. The **Configure DVEs** page button opens a subpage where DVEs can be configured.
-
-The **Configuration** page displays the **API Info**. On this page, you can also set the **Username** and **Password** that are used to retrieve data from the API, and configure the **URL** needed to connect to the device.
+### Prerequisites
+- Zabbix server with API enabled and reachable from DataMiner/connector host.
+- DataMiner version 10.3 or higher is required for compatibility with the NetInsight Nimbra Vision connector.
