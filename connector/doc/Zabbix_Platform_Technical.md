@@ -6,7 +6,7 @@ uid: Connector_help_Zabbix_Platform_Technical
 
 Zabbix is software that monitors numerous parameters of a network as well as the health and integrity of servers.
 
-This HTTP connector connects to the Zabbix API to retrieve data from the Zabbix platform. The Zabbix API is a web-based API that is shipped as part of the web front end. It uses the JSON-RPC 2.0 protocol. This connector will export different connectors based on the retrieved hosts from the API. For more information on the device, refer to [Zabbix's documentation](https://www.zabbix.com/documentation/3.0/manual/api).
+This HTTP connector connects to the Zabbix API to retrieve data from the Zabbix platform. The Zabbix API is a web-based API that is shipped as part of the web front end. It uses the JSON-RPC 2.0 protocol. This connector will export different connectors based on the retrieved hosts from the API. For more information on the device, refer to [Zabbix's documentation](https://www.zabbix.com/documentation/current/en/manual/api).
 
 ## About
 
@@ -72,7 +72,7 @@ The **Host Group** table shows a list of host groups, identifying the group ID a
 The **Host** table shows the hosts belonging to the enabled groups, providing the operator with a consolidated view of all relevant host metadata. For each host, the table displays the host ID, name, status and group. Other properties such as Proxy Host, IPMI and Maintenance fields are also present.
 
 
-Finally, this page also includes a button that opens the **Configure DVEs** subpage, allowing users to enable or disable DVE instantiation per host.
+Finally, this page also includes a button that opens the **Configure DVEs** subpage, allowing users to enable or disable [DVE](xref:Connector_help_Zabbix_Platform_-_Host) instantiation per host.
 
 ### Triggers
 This page provides a comprehensive view of active triggers within the monitored environment. 

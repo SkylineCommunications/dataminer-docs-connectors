@@ -9,12 +9,12 @@ Zabbix is an monitoring platform that provides visibility into the health, perfo
 
 The Zabbix Platform DataMiner connector leverages Zabbix's API to retrieve data from the Zabbix platform. This API is a web-based API that is shipped as part of the web front end and uses the JSON-RPC 2.0 protocol. 
 
-This connector will export different connectors based on the retrieved hosts from the API. 
+This connector will export different [connectors](xref:Connector_help_Zabbix_Platform_-_Host) based on the retrieved hosts from the API. 
 
 ## Key Features
 - Uses Zabbix API (JSON-RPC 2.0) through the HTTP connector.
 - Supports Zabbix API versions 7.0 and later (as of connector version 1.3.0.x).
-- Exports connectors for discovered Zabbix hosts (per-host DVE).
+- Exports connectors for discovered Zabbix hosts (per-host [DVE](xref:Connector_help_Zabbix_Platform_-_Host)).
 - Provides host inventory and metadata (host groups, proxies, IPMI, maintenance status).
 - Exposes monitoring elements such as Triggers, Items, Events, Correlations, and Problems.
 - Filtering and navigation by host group and tag.
@@ -31,3 +31,8 @@ This connector is used to integrate Zabbix infrastructure monitoring into DataMi
 ### Prerequisites
 - Zabbix server with API enabled and reachable from DataMiner/connector host.
 - DataMiner version 10.3 or higher is required for compatibility with the NetInsight Nimbra Vision connector.
+
+## Technical Reference
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Zabbix_Platform_Technical)
