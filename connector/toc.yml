@@ -3059,6 +3059,11 @@
     topicUid: Connector_help_Eaton_Remote_Power_Panel
   - name: Eaton SC200
     topicUid: Connector_help_Eaton_SC200
+  - name: EATON SC300
+    topicUid: Connector_help_EATON_SC300
+    items:
+    - name: EATON SC300 Technical
+      topicUid: Connector_help_EATON_SC300_Technical
   - name: EATON Supervisory Module
     topicUid: Connector_help_EATON_Supervisory_Module
 - name: EBU
