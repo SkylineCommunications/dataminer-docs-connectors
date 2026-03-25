@@ -72,29 +72,37 @@ HTTP CONNECTION:
 
 ### Initialization
 
-The DASDEC-III requires various pre-requistes to be met for full communication with DataMiner.
+For full communication with DataMiner, various prerequisites must be met, as detailed below.
 
 #### Licenses
 
 On the DASDEC-III, navigate to **Setup** > **Main** > **Main/License** and ensure that the following licenses are installed:
+
 - **Master**: This is required for the DASDEC-III for users to operate and configure the device.
 - **V5.0 Enabling Key**: This is required for the DASDEC-III for users to operate and configure the device.
-- **EAS_NET (includes DVS169)**: Under the Net Alert Licenses, this is required for the Smart-Serial Connection and DataMiner to receive EAS alerts from the device.
+- **EAS_NET (includes DVS169)**: Under the Net Alert Licenses, this is required for the smart-serial connection and to ensure that DataMiner will receive EAS alerts from the device.
 
 #### EAS NET Setup
 
 With the **EAS_NET** license installed, the DASDEC-III can send data over TCP/IP networks. To set this up, follow these steps:
 
 1. On the DASDEC-III, navigate to **Setup** > **Net Alerts**.
+
 1. In the EAS NET Client section, enable all options under **Master Switches**.
+
 1. Add a new EAS NET Client with the following settings:
-	- **Client Name**: Any name.
-	- **Remote IP**: The IP address of the DataMiner server.
-	- **Port**: The port specified in the Smart-Serial connection during element creation (default 20002).
-	- **Event Transfer Protocol**: TCP Event Notification.
-	- **Local Network Device**: First (Main) Ethernet.
+
+   - **Client Name**: Any name.
+   - **Remote IP**: The IP address of the DataMiner server.
+   - **Port**: The port specified for the smart-serial connection during element creation (default: 20002).
+   - **Event Transfer Protocol**: TCP event notification.
+   - **Local Network Device**: First (main) Ethernet.
+
 1. Accept the changes.
-1. Test the connection by clicking the **Test Connection** button. The device should be able to connect to the DataMiner server. If the connection fails, check the network settings and firewall rules.
+
+1. Test the connection by clicking the **Test Connection** button.
+
+   The device should be able to connect to the DataMiner server. If the connection fails, check the network settings and firewall rules.
 
 #### Public-Private Key Initialization
 
@@ -114,7 +122,7 @@ To perform the public-private key initialization, follow these steps:
 
 1. Click **Accept SSH Authorization Change**.
 
-1. Ensure the DataMiner IP address is included in the **SSHD Whitelist Configuration**.
+1. Ensure that the DataMiner IP address is included in the **SSHD Whitelist Configuration**.
 
 You can now approve mandatory/voluntary open alerts. If an alert is not forwarded, check the element logging for errors.
 
@@ -123,6 +131,7 @@ You can now approve mandatory/voluntary open alerts. If an alert is not forwarde
 SNMP on the DASDEC-III requires a package to be installed. To set this up, follow these steps:
 
 1. Reach out to Digital Alert Systems support to obtain the SNMP package.
+
 1. Navigate to **Setup** > **Main** > **Upgrade** and install the SNMP package.
 
 ### Web Interface
