@@ -31,8 +31,10 @@ The element created with this connector has the following data pages:
 
 - **General**: Contains the **Modules** table which will give you an overview of all the 32 possible cards with their status.
 
-![PatchAmp Frame Monitor Module Table](~/connector/images/Patchamp_FrameMonitor_ModuleTable.png)
+  ![PatchAmp Frame Monitor Module Table](~/connector/images/Patchamp_FrameMonitor_ModuleTable.png)
+
 - **Status**: Contains information about the five LEDs for each card.
+
 - **Temperature**: Contains the **Temperature** table for the current value for each card.
 
 The element will also have other pages such as **Supply Voltage**, **Optical Power**, **Data Rate**, and more, which each contain a table with the current value for each card in the frame.
