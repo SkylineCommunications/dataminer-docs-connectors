@@ -2,7 +2,7 @@
 uid: Connector_help_Kymeta_U8_Technical
 ---
 
-# Kymeta U8 Antenna
+# Kymeta U8
 
 ## About
 
@@ -23,76 +23,76 @@ HTTP CONNECTION:
 
 ### Initialization
 
-After creating the element, users must configure authentication credentials (username and password) to enable communication with the device.
+After creating the element, configure the authentication credentials (username and password) on the Authentication page of the element to enable communication with the device.
 
 ## How to Use
 
-The connector is structured into multiple pages, each focusing on a specific aspect of the antenna:
+The connector is structured into multiple pages, each focusing on a specific aspect of the antenna.
 
-### General
+### General Page
 
-Provides an overview of system and RF-related parameters:
+The General page provides an overview of system and RF-related parameters:
 
-- System time  
-- BUC status  
-- Model and serial number  
-- Firmware version  
-- HPA status  
-- Output power and attenuation  
-- Mute status  
-- Temperature and alarms  
-- Input voltage and power consumption  
-- Reference settings (10 MHz source)  
-- Redundancy mode  
-- Active RF object  
-- Modem, Multi-WAN, and XDG status  
+- System time
+- BUC status
+- Model and serial number
+- Firmware version
+- HPA status
+- Output power and attenuation
+- Mute status
+- Temperature and alarms
+- Input voltage and power consumption
+- Reference settings (10 MHz source)
+- Redundancy mode
+- Active RF object
+- Modem, Multi-WAN, and XDG status
 
 ### Authentication
 
-Handles access control:
+This page handles access control:
 
-- Username  
-- Password  
-- Authentication status  
+- Username
+- Password
+- Authentication status
 
 ### Orientation
 
-Displays antenna alignment:
+This page displays the antenna alignment:
 
-- Pitch  
-- Yaw  
-- Roll  
+- Pitch
+- Yaw
+- Roll
 
 ### Position
 
-Provides GPS-based location data:
+This page provides GPS-based location data:
 
-- Last update timestamp  
-- Speed and direction  
-- Longitude and latitude  
-- Altitude  
+- Last update timestamp
+- Speed and direction
+- Longitude and latitude
+- Altitude
 
 ### Hardware Sensors
 
-Monitors detailed hardware metrics:
+On the Hardware Sensors page, you can monitor detailed hardware metrics:
 
-- Input voltage and current  
-- Aperture voltage and current  
-- Quadrant temperatures (1–4)  
-- Internal device temperature  
-- Terminal power  
-- Heater mode and status  
-- LED lights mode, status, and off timer  
+- Input voltage and current
+- Aperture voltage and current
+- Quadrant temperatures (1–4)
+- Internal device temperature
+- Terminal power
+- Heater mode and status
+- LED lights mode, status, and off timer
 
 ### Antenna Setup
 
-Allows configuration of key RF parameters:
+This page allows you to configure key RF parameters:
 
 - RX frequency
-- TX frequency  
-- Polarization type  
+- TX frequency
+- Polarization type
 
 ## Notes
 
-- Ensure HTTPS access is not blocked by firewalls or network policies.  
-- Incorrect authentication credentials will prevent data retrieval.  
+- Ensure HTTPS access is not blocked by firewalls or network policies.
+- Incorrect authentication credentials will prevent data retrieval.
