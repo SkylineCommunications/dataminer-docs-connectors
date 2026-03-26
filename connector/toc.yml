@@ -10375,6 +10375,8 @@
     topicUid: Connector_help_Thomson_Nextream_Vibe_VS7000
 - name: Thomson Video Networks
   items:
+  - name: Thomson Video Networks Elite 100 - 1000 Digital TX
+    topicUid: Connector_help_Thomson_Video_Networks_Elite_100_-_1000_Digital_TX
   - name: Thomson Video Networks Fuze-1 Playout System
     topicUid: Connector_help_Thomson_Video_Networks_Fuze-1_Playout_System
   - name: Thomson Video Networks MD4000
