@@ -8046,6 +8046,10 @@
     topicUid: Connector_help_Riverbed_Steelhead
   - name: Riverbed Stingray
     topicUid: Connector_help_Riverbed_Stingray
+- name: RME Sensors
+  items:
+  - name: RME Sensors IP TH Sensor
+    topicUid: Connector_help_RME_Sensors_IP_TH_Sensor
 - name: Robustel
   items:
   - name: Robustel R2000
