@@ -11,7 +11,7 @@ This is a DataMiner connector for the Nevion Virtuoso FA, a media server designe
 ## Key Features
 
 - **Centralized monitoring**: Provides unified visibility of device information, IP interfaces, Ethernet ports, ASI/IP inputs and outputs, transport streams, services, and alarms from within DataMiner.
-- **DataMiner integration**: Allows control of interface states, ASI labels and enable flags, transport stream modes, IP input flow selection (Auto/A/B), and buffer/FEC settings directly from DataMiner.
+- **DataMiner integration**: Allows control of interface states, ASI I/Os, transport stream modes, IP input flow selection (Auto/A/B), and buffer/FEC settings directly from DataMiner.
 
 ## Use Cases
 
