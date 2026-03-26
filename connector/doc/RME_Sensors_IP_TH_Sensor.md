@@ -10,6 +10,6 @@ The RME Sensors IP TH Sensor connector can be used to monitor climate data in di
 
 ## Key Features
 
-- **Temperature Monitoring**: Monitor the room temperarture values and the extreme values.
+- **Temperature monitoring**: Monitor the room temperature values and the extreme values.
 
-- **Humidity Monitoring**: Monitor the room humidity values and the extreme values.
+- **Humidity monitoring**: Monitor the room humidity values and the extreme values.
