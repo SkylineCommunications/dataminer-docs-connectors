@@ -13,19 +13,26 @@ The Zabbix Platform DataMiner connector leverages Zabbix's API to retrieve data 
 This connector will export different [connectors](xref:Connector_help_Zabbix_Platform_-_Host) based on the retrieved hosts from the API.
 
 ## Key Features
-
-- Provides host inventory and metadata (host groups, proxies, IPMI, maintenance status).
-- Exposes monitoring elements such as Triggers, Items, Events, Correlations, and Problems.
-- Filtering and navigation by host group and tag.
+- Discover and import Zabbix hosts automatically into DataMiner as managed elements.
+- View host status, uptime, and monitoring health from the DataMiner UI.
+- Drill into host groups, triggers, items, events, correlations, and problem records.
+- Enable/disable host polling and configure per-host DVE behavior.
+- Apply host-group and tag filters for fast navigation and operational focus.
+- Link Zabbix-generated issues into DataMiner automation workflows and alerting.
 
 ## Use Case
 
-This connector is used to integrate Zabbix infrastructure monitoring into DataMiner:
+### Unified Monitoring Visibility
+- **Challenge:** siloed Zabbix monitoring data separated from remaining network and workflows.
+- **Solution:** export Zabbix monitoring data to DataMiner as elements.
+- **Benefit:** unified visibility for NOC teams and reduced context switching.
 
-- Centralize Zabbix host and health data in DataMiner management and dashboards.
-- Drive automation or alerting workflows from Zabbix-triggered events/problems.
-- Enable operations teams to inspect host status, triggers, items, and historical events from one interface.
-- Migrate or augment existing Zabbix infrastructure visibility using DataMiner exported connectors.
+### Automation and Event Correlation
+- **Challenge:** manual correlation of Zabbix events and automated workflows.
+- **Solution:** map Zabbix Triggers/Events into DataMiner and route to automation/alert pipelines.
+- **Benefit:** faster incident response and fewer missed issues.
+
+
 
 ## Technical Info
 

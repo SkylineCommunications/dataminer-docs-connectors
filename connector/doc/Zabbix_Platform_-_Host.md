@@ -10,33 +10,6 @@ Zabbix is software that monitors numerous parameters of a network as well as the
 
 This is an **HTTP** connector that connects to the Zabbix API to retrieve data from the Zabbix platform. The Zabbix API is a web-based API and is shipped as part of the web frontend. It uses the JSON-RPC 2.0 protocol. This connector is created by the **Zabbix platform** connector. For more information on the device, refer to [Zabbix's documentation](https://www.zabbix.com/documentation/current/en/manual/api).
 
-### Version Info
-
-| Range                | Key Features                            | Based on     | System Impact     |
-|----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x [Obsolete]   | Initial version.                        | -            | -                 |
-| 1.1.0.x [Obsolete]   | API 4.0: new features were implemented. | -            | -                 |
-| 1.2.0.x [Obsolete]   | API 6.0: added support.                 | -            | -                 |
-| 1.3.0.x [SLC Main]   | API 7.0: added support.                 | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.1.0.x   | 4.0                    |
-| 1.2.0.x   | 6.0                    |
-| 1.3.0.x   | 7.0                    |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                        |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     |                       |                                                                            |
-| 1.1.0.x   | No                  | Yes                     | -                     | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host)       |
-| 1.2.0.x   | No                  | Yes                     | -                     | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host)       |
-| 1.3.0.x   | No                  | Yes                     | -                     | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host)       |
-
 ## Installation and configuration
 
 ### Creation
