@@ -10,8 +10,8 @@ The Thomson Video Networks 100 - 1000 Digital TX can be used to monitor and conf
 
 ## Key Features
 
-- **Transmitter Status Monitoring and Configuration**: Monitor and configure key transmitter parameters and status indicators, including temperature, power supply, and operating frequency.
+- **Transmitter status monitoring and configuration**: Monitor and configure key transmitter parameters and status indicators, including temperature, power supply, and operating frequency.
 
-- **Dual Exciter Monitoring**: Control exciter operation by monitoring the status of both Exciter A and Exciter B.
+- **Dual exciter monitoring**: Control exciter operation by monitoring the status of both Exciter A and Exciter B.
 
-- **Hardware Monitoring**: Monitor overall hardware status, including cabinets, power supplies, amplifiers, and cooling systems.
+- **Hardware monitoring**: Monitor overall hardware status, including cabinets, power supplies, amplifiers, and cooling systems.
