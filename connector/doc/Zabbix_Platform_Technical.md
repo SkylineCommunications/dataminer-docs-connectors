@@ -38,7 +38,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-The General page presents a tree view that allows you to drill down from a **Host Group** to an individual host, and then inspect not only the host properties but also its **Triggers** and **Items**.
+The General page presents a tree view that allows you to drill down from a **Host Group** to an individual host and then inspect not only the host properties but also its **Triggers** and **Items**.
 
 ### Hosts
 
