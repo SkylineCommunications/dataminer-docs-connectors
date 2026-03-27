@@ -6,7 +6,9 @@ uid: Connector_help_Nevion_Virtuoso_FA_Technical
 
 ## About
 
-This is a DataMiner connector for the Nevion Virtuoso FA, a media server designed for broadcast carrier-class applications. The connector uses an HTTP connection to allow monitoring of the Nevion Virtuoso FA.
+This is a DataMiner connector for the Nevion Virtuoso FA, a media server designed for broadcast carrier-class applications.
+
+The connector uses an HTTP connection to allow monitoring of the Nevion Virtuoso FA.
 
 ## Configuration
 
@@ -26,13 +28,9 @@ HTTP CONNECTION:
 
 To make sure the connector can retrieve data, fill in the **Login Credentials** of the device on the **Settings** page.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
-The web interface is only accessible when the client machine has network access to the product. It's also important to note that the web interface currently requires flash player support which may cause issues.
+The web interface is only accessible when the client machine has network access to the product. Note also that the web interface currently requires flash player support, which may cause issues.
 
 ## How to use
 
@@ -54,21 +52,21 @@ This page displays information about the IP Interfaces, e.g., **State**, **IPv4 
 
 ### Ethernet
 
-This page displays information about the Ethernet, e.g., State, Rx Bitrate and Load
+This page displays Ethernet-related information, e.g., State, Rx Bitrate, and Load.
 
 The page also contains page buttons to the following subpages:
 
-- **Sync Input**: Lists the sync input for the ethernet ports.
-- **Status**: Lists the status, received status, transmit status, and errors for the ethernet ports.
-- **Routing**: Lists receiver and transmitter routing for the ethernet ports.
+- **Sync Input**: Lists the sync input for the Ethernet ports.
+- **Status**: Lists the status, received status, transmit status, and errors for the Ethernet ports.
+- **Routing**: Lists receiver and transmitter routing for the Ethernet ports.
 
 ### ASI Input
 
-This page displays information about the ASI Inputs on each of the ethernet ports, e.g., **Packet Length,** **Destination Formats**.
+This page displays information about the ASI inputs on each of the Ethernet ports, e.g., **Packet Length**, **Destination Formats**.
 
 ### ASI Output
 
-This page displays information about the ASI Outputs on each of the ethernet ports, e.g., **Ts Mode,** **Stream Mode**.
+This page displays information about the ASI outputs on each of the Ethernet ports, e.g., **Ts Mode**, **Stream Mode**.
 
 ### IP Input
 
@@ -78,16 +76,16 @@ The page also contains page buttons to the following subpages:
 
 - **Flow A**: Lists the Rx Status for the Flow A values.
 - **Flow B**: Lists the Rx Status for the Flow B values.
-- **FEC**: Lists fecs for the Ethernet ports.
-- **Buffer Regulator**: Lists the buffer regulators for the ethernet ports.
+- **FEC**: Lists FECs for the Ethernet ports.
+- **Buffer Regulator**: Lists the buffer regulators for the Ethernet ports.
 
 ### TS Input Switch
 
-This page displays information about the TS Input Switches, e.g., **Switch and Return Delay**, **Selected Input GID**.
+This page displays information about the TS input switches, e.g., **Switch and Return Delay**, **Selected Input GID**.
 
 ### Transport Streams
 
-This page displays information about the Transport Streams, e.g., **Source Interface**, **Multicast Address**.
+This page displays information about the transport streams, e.g., **Source Interface**, **Multicast Address**.
 
 ### Services
 
@@ -95,4 +93,4 @@ This page displays information about the services, e.g., **Service Provider**, *
 
 ### Alarms
 
-This page displays information about the alarms, e.g., **Desriptions**, **Severity**.
+This page displays information about the alarms, e.g., **Descriptions**, **Severity**.
