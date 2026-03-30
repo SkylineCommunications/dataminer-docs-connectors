@@ -4,56 +4,17 @@ uid: Connector_help_Alpha_Combi_UPS_AC_DC
 
 # Alpha Combi UPS AC DC
 
-The Alpha Combi UPS AC DC is an uninterruptible power supply.
-
-This connector uses **SNMP** to poll information from the device.
-
 ## About
 
-### Version Info
+The Alpha Combi UPS AC DC connector enables centralized monitoring of an uninterruptible power supply system. This connector provides operators with full visibility into the power system, including rectifier performance, battery health, inverter status, and network interface data.
 
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x [SLC Main] | - General system parameters<br> - Network Interface Table<br> - Rectifier system data | - | - |
+## Key Features
 
-### Product Info
+- **General system monitoring**: Monitoring of the overall system status and controller information.
+- **Rectifier and inverter overview**: Observation and monitoring the key parameters of both the rectifier and inverter modules.
+- **Battery health monitoring**: Monitor battery voltage, current, temperature, and capacity to proactively identify issues before they affect system availability.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | v6.20                  |
+## Technical Reference
 
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-
-## Configuration
-
-### Connections
-
-#### SNMP Connection
-
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-
-SNMP Settings:
-
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to use
-
-The general **system** and **controller** data can be found on the **General** page.
-
-Data on the network interface and utilization can be found on the **Network** page.
-
-All rectifier-related data can be found on the **Rectifier** page
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Alpha_Combi_UPS_AC_DC_Technical).
