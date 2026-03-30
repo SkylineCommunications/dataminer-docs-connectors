@@ -146,8 +146,7 @@ If you need to purchase additional data beyond the included monthly allocation, 
 
 To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top Up** button in the row. This will execute a one-time top-up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
 
-> [!TIP]
-> The top-up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
+Because the Starlink Enterprise element relies on a Starlink Enterprise Account element to send the Opt In/Out request to the Starlink API, it may take a minute or two for the **Automatic Top Up** toggle button to update after it is used. This is due to the [buffer mechanism](#initialization) that was added to allow inter-element communication. Please keep these background actions in mind when toggling that button.
 
 ![Automatic Top Up](~/connector/images/StarlinkEnterpriseAutomaticTopUp.png)
 
