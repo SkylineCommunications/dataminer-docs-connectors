@@ -3062,6 +3062,11 @@
     topicUid: Connector_help_Eaton_Remote_Power_Panel
   - name: Eaton SC200
     topicUid: Connector_help_Eaton_SC200
+  - name: EATON SC300
+    topicUid: Connector_help_EATON_SC300
+    items:
+    - name: EATON SC300 Technical
+      topicUid: Connector_help_EATON_SC300_Technical
   - name: EATON Supervisory Module
     topicUid: Connector_help_EATON_Supervisory_Module
 - name: EBU
@@ -5711,6 +5716,13 @@
   items:
   - name: KWS-Electronic AMA 310
     topicUid: Connector_help_KWS-Electronic_AMA_310
+- name: Kymeta
+  items:
+  - name: Kymeta U8
+    topicUid: Connector_help_Kymeta_U8
+    items:
+      - name: Kymeta U8 Technical
+        topicUid: Connector_help_Kymeta_U8_Technical
 - name: L-3 Communications
   items:
   - name: L-3 Communications MPM-1000
@@ -7015,6 +7027,9 @@
     topicUid: Connector_help_Nevion_Virtuoso_CP4400
   - name: Nevion Virtuoso FA
     topicUid: Connector_help_Nevion_Virtuoso_FA
+    items:
+    - name: Nevion Virtuoso FA Technical
+      topicUid: Connector_help_Nevion_Virtuoso_FA_Technical
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
     items:
@@ -8037,6 +8052,10 @@
     topicUid: Connector_help_Riverbed_Steelhead
   - name: Riverbed Stingray
     topicUid: Connector_help_Riverbed_Stingray
+- name: RME Sensors
+  items:
+  - name: RME Sensors IP TH Sensor
+    topicUid: Connector_help_RME_Sensors_IP_TH_Sensor
 - name: Robustel
   items:
   - name: Robustel R2000
@@ -8517,6 +8536,9 @@
   items:
   - name: SED 32x8
     topicUid: Connector_help_SED_32x8
+    items:
+    - name: SED 32x8 Technical
+      topicUid: Connector_help_SED_32x8_Technical
   - name: SED Decimator 16 port
     topicUid: Connector_help_SED_Decimator_16_port
   - name: SED Decimator 8 port
@@ -9521,6 +9543,11 @@
     items:
     - name: Starlink Enterprise Technical
       topicUid: Connector_help_Starlink_Enterprise_Technical
+  - name: Starlink Enterprise Account
+    topicUid: Connector_help_Starlink_Enterprise_Account
+    items:
+    - name: Starlink Enterprise Account Technical
+      topicUid: Connector_help_Starlink_Enterprise_Account_Technical
   - name: Starlink Enterprise - User Terminal
     topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
 - name: Stormshield
@@ -10354,6 +10381,8 @@
     topicUid: Connector_help_Thomson_Nextream_Vibe_VS7000
 - name: Thomson Video Networks
   items:
+  - name: Thomson Video Networks Elite 100 - 1000 Digital TX
+    topicUid: Connector_help_Thomson_Video_Networks_Elite_100_-_1000_Digital_TX
   - name: Thomson Video Networks Fuze-1 Playout System
     topicUid: Connector_help_Thomson_Video_Networks_Fuze-1_Playout_System
   - name: Thomson Video Networks MD4000
@@ -11185,6 +11214,9 @@
   items:
   - name: Zabbix Platform
     topicUid: Connector_help_Zabbix_Platform
+    items:
+    - name: Zabbix Platform Technical
+      topicUid: Connector_help_Zabbix_Platform_Technical
   - name: Zabbix Platform - Host
     topicUid: Connector_help_Zabbix_Platform_-_Host
 - name: Zamil Industries
