@@ -398,6 +398,9 @@
     topicUid: Connector_help_Alpha_CMD-N_Arris_SG4000
   - name: Alpha Combi UPS AC DC
     topicUid: Connector_help_Alpha_Combi_UPS_AC_DC
+    items:
+    - name: Alpha Combi UPS AC DC Technical
+      topicUid: Connector_help_Alpha_Combi_UPS_AC_DC_Technical
   - name: Alpha Cordex CXC HP
     topicUid: Connector_help_Alpha_Cordex_CXC_HP
   - name: Alpha XM-2-300HP DPM
