@@ -6,7 +6,7 @@ uid: Connector_help_Generic_Modbus
 
 ## About
 
-The Generic Modbus connector enables seamless integration and monitoring of any Modbus-compatible device through the powerful DataMiner platform. Leveraging the widely adopted Modbus TCP protocol, this universal connector provides a flexible, configuration-driven approach to collect and manage data from industrial equipment, sensors, and other Modbus devices.
+The Generic Modbus connector enables seamless integration and monitoring of any Modbus-compatible device through the DataMiner platform. Leveraging the widely adopted Modbus TCP protocol, this universal connector provides a flexible, configuration-driven approach to collect and manage data from industrial equipment, sensors, and other Modbus devices.
 
 ## Key Features
 
