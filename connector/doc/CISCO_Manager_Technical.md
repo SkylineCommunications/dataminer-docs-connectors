@@ -11,31 +11,6 @@ With the CISCO Manager, it is possible to configure and monitor CISCO switches, 
 The CISCO Manager connector can retrieve information from different device types. This makes it possible to limit the retrieval of parameter values to what is needed or available on the device at hand.
 In addition to polling values, you can configure settings such as the ping function as if doing so on the device itself.
 
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 2.1.0.x [Obsolete] | SNMPv1, display key Detailed Interface Info: "IF Custom Description". | - | - |
-| 2.1.1.x [Obsolete] | SNMPv1, display key Detailed Interface Info: "IF Name:IF Custom Description". | - | - |
-| 3.1.0.x [Obsolete] | SNMPv2, display key Detailed Interface Info: "IF Custom Description". | - | - |
-| 3.1.1.x [Obsolete] | SNMPv2, display key Detailed Interface Info: "IF Name:IF Custom Description". | - | - |
-| 4.1.1.x [Obsolete] | SNMPv3, display key Detailed Interface Info: "IF Name:IF Custom Description". | - | - |
-| 5.1.1.x [Obsolete] | SNMPv2: Uses naming. For the display key, the user can choose between "IF Name:IF Custom Description" or "IF Custom Description". For a new element, the default display key is "IF Name:IF Custom Description". | - | It is possible to switch from a 3.x.x.x version to a 5.1.1.x version. The old display key format is automatically detected, but the PID of the tables Multicast Next Hop and Switch Info has changed, so keep this in mind when these tables are used in templates, Visual Overview, etc. |
-| 5.1.2.x [Obsolete] | SNMPv2: Replaces 5.1.1.x. This range fixes the IF Utilization Range that was off with 100 since version 5.1.1.78. | 5.1.1.83 | No element recreation needed; just be aware that trending/alarm monitoring on IF Utilization can show spikes between versions. |
-| 5.1.3.x [Obsolete] | SNMPv2: replaces 5.1.2.x. This range adds a new HTTP interface. This interface is hidden and does not require that the element is recreated. | - | - |
-| 5.1.4.x [Obsolete] | Made Cassandra-compliant. | 5.1.3.12 | - |
-| 5.1.5.x [Obsolete] | -  Improvements to IPSec logic. - Merge of all 5.1.X.X versions. | - | - |
-| 5.1.6.x [Obsolete] | Added extra connection for SysLog information. | 5.1.5.1 | - |
-| 5.1.7.x [Obsolete] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly.<br><br> NOTE: The following parameters are no longer saved to the database:<br>Table "Detailed Interface Info" (11000)<br>- 11291 Daily Tx Total<br>- 11292 Daily Rx Total<br>- 11293 Weekly Tx Total<br>- 11294 Weekly Rx Total<br>- 11295 Monthly Tx Total<br>- 11296 Monthly Rx Total |
-| 5.1.8.x [Obsolete]| Fix index of BGP Peer Table of 5.1.7.x. | 5.1.7.47 | - |
-| 5.1.9.x [SLC Main] | Removed the hidden Syslog Messages Logger table. | 5.1.8.5 | From now on, the Generic Syslog Receiver connector should be used to save Syslog messages in database. |
-| 6.1.1.x | SNMPv3 version of 5.1.1.x. | - | - |
-| 7.0.0.x [Obsolete] | SNMP2: temporary branch created based on 5.1.1.x to change the element type to "Management System". | - | If you move to this branch, you will need to recreate the element. |
-| 8.0.0.x [Obsolete] | Customer-specific range. **Deprecated as of 2021.** | 5.1.3.12 | - |
-
-> [!NOTE]
-> The main version to use for **new elements** is **5.1.9.x**.
-
 ## Configuration
 
 ### Enabling SNMPv3
