@@ -8,19 +8,12 @@ uid: Connector_help_SES_Event_Manager_Technical
 
 The SES Event Manager is a DataMiner connector that automates event and ticket management for SES satellite operations. It polls active alarms from DataMiner elements, processes them as events, and manages the full ticket lifecycle through the DataMiner Ticketing module.
 
-### Version Info
-
-| Range              | Key Features                                                                                                                                                                                                                                  | Based on | System Impact                                       |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| 1.0.0.x            | Initial version. Virtual connector with alarm polling, event processing, and automated ticket lifecycle management. Properties enrichment, CMDB system mapping, and Support NOC assignment.<br>**Requires DataMiner Ticketing license**.      | -        | -                                                   |
-| 2.0.0.x [SLC Main] | Migration to SDM Ticketing (`TicketingApiHelper`). Uses `TicketType` with `FieldDefinition` for schema definition and `TicketField` for custom field management. Auto-initializes "SES" TicketType and "ServiceNow" ExternalOwner on startup. | 1.0.0.x  | Requires `DataMiner SDM Ticketing Module` solution. |
-
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components              | Exported Components |
 | ------- | --------------- | ------------------- | ------------------------------ | ------------------- |
 | 1.0.0.x | No              | Yes                 | DataMiner Ticketing module     | -                   |
-| 2.0.0.x | No              | Yes                 | DataMiner SDM Ticketing module | -                   |
+| 1.1.0.x | No              | Yes                 | DataMiner SDM Ticketing module | -                   |
 
 ## Configuration
 
@@ -40,7 +33,7 @@ When the element has been created, the following configuration steps are require
 1. On the **Support NOC** page, add your support NOC entries and set a default NOC for ticket assignment.
 1. On the **General** page, set **Poll Active Alarms** to _Enabled_ to start monitoring alarms.
 
-On first startup (2.0.0.x only), the connector will automatically initialize the following:
+On first startup (1.1.0.x only), the connector will automatically initialize the following:
 
 - A **TicketType** named "SES" with all required `FieldDefinition` objects for ticket schema definition.
 - An **ExternalOwner** named "ServiceNow" with the appropriate `VisualizationEndpoint` and `ApiEndpoint`.
@@ -92,15 +85,15 @@ The connector uses three internal timers:
 
 ### SDM Ticketing Dependency
 
-The 2.0.0.x range requires the **DataMiner SDM Ticketing** solution to function. The connector uses the `TicketingApiHelper` class to retrieve, create, and update tickets through the SDM Ticketing API.
+The 1.1.0.x range requires the **DataMiner SDM Ticketing** solution to function. The connector uses the `TicketingApiHelper` class to retrieve, create, and update tickets through the SDM Ticketing API.
 
 ### Ticket Schema
 
-In the 2.0.0.x range, the connector defines an "SES" `TicketType` on startup with all required `FieldDefinition` objects. Custom ticket fields are managed through `TicketField` instances. Fields are accessed and updated using the `SetTicketFieldValue` helper pattern.
+In the 1.1.0.x range, the connector defines an "SES" `TicketType` on startup with all required `FieldDefinition` objects. Custom ticket fields are managed through `TicketField` instances. Fields are accessed and updated using the `SetTicketFieldValue` helper pattern.
 
 ### Migration to New Ticketing Module
 
-Version 2.0.0.x introduces a migration from the legacy ticketing system to the DataMiner Ticketing module built on DOM (DataMiner Object Models). If upgrading from the 1.0.0.x range, ensure your DataMiner System supports the DOM-based ticketing module before deploying this version.
+Version 1.1.0.x introduces a migration from the legacy ticketing system to the DataMiner Ticketing module built on DOM (DataMiner Object Models). If upgrading from the 1.0.0.x range, ensure your DataMiner System supports the DOM-based ticketing module before deploying this version.
 
 ### Minimum DataMiner Version
 
