@@ -10,10 +10,10 @@ The SES Event Manager is a DataMiner connector that automates event and ticket m
 
 ### System Info
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components              | Exported Components |
-| ------- | --------------- | ------------------- | ------------------------------ | ------------------- |
-| 1.0.0.x | No              | Yes                 | DataMiner Ticketing module     | -                   |
-| 1.1.0.x | No              | Yes                 | DataMiner SDM Ticketing module | -                   |
+| Range   | Linked Components              | Exported Components |
+| ------- | ------------------------------ | ------------------- |
+| 1.0.0.x | DataMiner Ticketing module     | -                   |
+| 1.1.0.x | DataMiner SDM Ticketing module | -                   |
 
 ## Configuration
 
@@ -28,10 +28,14 @@ This connector uses a virtual connection and does not require any input during e
 When the element has been created, the following configuration steps are required:
 
 1. Navigate to the **Ticket Automation** page and configure at least one automation rule by specifying an automation name and the corresponding DataMiner automation script name.
+
 1. On the **CMDB Systems** page, add the relevant CMDB system mappings for your environment.
+
    Only alarms from elements that have a matching CMDB system property configured will be processed by the connector.
+
 1. On the **Support NOC** page, add your support NOC entries and set a default NOC for ticket assignment.
-1. On the **General** page, set **Poll Active Alarms** to _Enabled_ to start monitoring alarms.
+
+1. On the **General** page, set **Poll Active Alarms** to *Enabled* to start monitoring alarms.
 
 On first startup (1.1.0.x only), the connector will automatically initialize the following:
 
@@ -46,7 +50,7 @@ The following parameters can be configured on the **General Configurations** pag
 - **Ticket Escalation Time** (10–600 seconds, default: 30s): The time before an event is escalated to a ticket.
 - **Ticket Lookup Frequency**: Determines how often the connector checks for ticket status updates.
 - **Ticket Follow-up Delay**: The delay for handling events that clear before a ticket is created.
-- **Cleanup Method**: Determines whether resolved events are cleaned up based on _Max Number_ or _Max Duration_.
+- **Cleanup Method**: Determines whether resolved events are cleaned up based on *Max Number* or *Max Duration*.
 
 ## How to Use
 
