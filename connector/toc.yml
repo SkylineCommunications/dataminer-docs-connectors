@@ -9675,6 +9675,9 @@
   items:
   - name: Synamedia Virtual DCM
     topicUid: Connector_help_Synamedia_Virtual_DCM
+      items:
+        - name: Synamedia Virtual DCM Technical
+          topicUid: Connector_help_Synamedia_Virtual_DCM_Technical
   - name: Synamedia VSM
     topicUid: Connector_help_Synamedia_VSM
   - name: Synamedia VSM License Usage Monitor
