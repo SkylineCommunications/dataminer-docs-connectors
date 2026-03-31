@@ -124,3 +124,18 @@ With the **Poll Only Service Linked Terminals** toggle button, you can enable a 
 The automatic table cleanup mechanism is triggered once a day.
 
 ![Automatic Table Cleanup Mechanism](~/connector/images/StarlinkEnterpriseAutomaticTableCleanupMechanism.png)
+
+### Protocol XML ID Ranges
+
+| ID Range   | Parameter                 | Trigger                   | Action                                 | Group        |
+|------------|---------------------------|---------------------------|----------------------------------------|--------------|
+| 1 - 99     | Hidden Standalone         |                           |                                        |              |
+| 100 - 199  | Visible Standalone Read   |                           |                                        |              |
+| 200 - 299  | Visible Standalone Write  |                           |                                        |              |
+| 300 - 399  | Prepare Request Dummy     | Start Poll Cycle          | Prepare Request URL and Body           |              |
+| 400 - 499  | HTTP Request URL          |                           |                                        |              |
+| 500 - 599  | HTTP Request Body         |                           |                                        |              |
+| 600 - 699  | HTTP Response Status Code |                           |                                        |              |
+| 700 - 799  | HTTP Response Content     | Send Request From QAction | Execute Request Group                  | Poll Session |
+| 800 - 898  | After Request Dummy       | After Request Group       | Try Get Next Page or Finish Poll Cycle |              |
+| 1000 - ... | Table                     |                           |                                        |              |
