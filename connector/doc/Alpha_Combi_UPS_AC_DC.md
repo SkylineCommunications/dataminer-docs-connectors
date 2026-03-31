@@ -10,8 +10,8 @@ The Alpha Combi UPS AC DC connector enables centralized monitoring of an uninter
 
 ## Key Features
 
-- **General system monitoring**: Monitoring of the overall system status and controller information.
-- **Rectifier and inverter overview**: Observation and monitoring the key parameters of both the rectifier and inverter modules.
+- **General system monitoring**: Monitor the overall system status and controller information.
+- **Rectifier and inverter overview**: Keep an eye on the key parameters of both the rectifier and inverter modules.
 - **Battery health monitoring**: Monitor battery voltage, current, temperature, and capacity to proactively identify issues before they affect system availability.
 
 ## Technical Reference

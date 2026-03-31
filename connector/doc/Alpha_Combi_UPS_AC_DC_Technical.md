@@ -34,14 +34,11 @@ The web interface is only accessible when the client machine has network access 
 
 Once the element has been configured, the connector will automatically begin polling data from the device via SNMP. It retrieves information on the power system status, network interfaces, rectifier and inverter modules, and battery health.
 
-Overview of the UPS system, including the controller information, is provided on the **General** page.
+On the data pages, you can find the following information:
 
-All the network interfaces, along with the overall status and traffic information, are present on the **Interfaces** page.
-
-Information regarding the voltage and current levels and the overall status of the rectifier module is provided on the **Rectifier** page.
-
-The **Battery** page provides the overview of all the battery parameters, including voltage, current, temperature, and capacity.
-
-The **Inverter** page provides the general, output and input parameters of the inverter module.
-
-Comprehensive view of all the parameters available from the device controller is present on the **Cordex HP Controller** page. Providing complete information regarding the UPS system.
+- **General**: Overview of the UPS system, including the controller information.
+- **Interfaces**: Overview of the network interfaces, along with the overall status and traffic information.
+- **Rectifier**: Information regarding the voltage and current levels and the overall status of the rectifier module.
+- **Battery**: Overview of all the battery parameters, including voltage, current, temperature, and capacity
+- **Inverter**: The general, output, and input parameters of the inverter module.
+- **Cordex HP Controller**: Comprehensive view of all the parameters available from the device controller.

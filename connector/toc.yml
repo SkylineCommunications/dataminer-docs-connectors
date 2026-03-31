@@ -4394,6 +4394,11 @@
     topicUid: Connector_help_Generic_MIB-II
   - name: Generic MIB II
     topicUid: Connector_help_Generic_MIB_II
+  - name: Generic Modbus
+    topicUid: Connector_help_Generic_Modbus
+    items:
+    - name: Generic Modbus Technical
+      topicUid: Connector_help_Generic_Modbus_Technical
   - name: Generic Modbus PLC
     topicUid: Connector_help_Generic_Modbus_PLC
   - name: Generic Move Files
