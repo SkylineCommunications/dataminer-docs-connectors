@@ -18,7 +18,7 @@ This connector uses an HTTPS connection and requires the following input during 
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, starting with `https://IP`.
+- **IP address/host**: The polling IP or URL of the destination, starting with `https://`.
 - **IP port**: The IP port of the destination (default: *8443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
