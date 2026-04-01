@@ -18,7 +18,7 @@ This connector uses an HTTPS connection and requires the following input during 
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination. Start with *https://IP*.
+- **IP address/host**: The polling IP or URL of the destination, starting with `https://IP`.
 - **IP port**: The IP port of the destination (default: *8443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
@@ -34,16 +34,18 @@ HTTP CONNECTION:
 
 ### Initialization
 
-On the **Credntials** sub-page under **General** page, you need to provide the credentials to log in to the device.
+On the **Credentials** subpage of the **General** page, you need to provide the credentials to log in to the device.
 
-If you want to make use of the performance data in Prometheus, you may need to enable this on the device. To do so, in the device GUI, go to Status \> Diagnostics. For example, to enable Zixi performance data, set the value for "diag.zixi.log_to_prometheus" to "true".
+If you want to make use of the performance data in Prometheus, you may need to enable this on the device. To do so, in the device GUI, go to Status > Diagnostics. For example, to enable Zixi performance data, set the value for "diag.zixi.log_to_prometheus" to "true".
 
 ## How to use
 
-When the correct credentials have been specified on the **Credntials** page, the connector can retrieve information from the device. You can speed up or slow down **polling** in the poll manager table. You can also disable polling to reduce the load on the device and on DataMiner.
+When the correct credentials have been specified on the **Credentials** page, the connector can retrieve information from the device. You can speed up or slow down **polling** in the Poll Manager table. You can also disable polling to reduce the load on the device and on DataMiner.
 
 All the calls except those related to Prometheus data are REST calls. The Prometheus data is retrieved with a GET request to the correct IP and port.
 
 To be able to change parameters on the device, the polling mode must be set to **Edit Mode**. You can do this in the main table of each section. For example, on the Source SRT Settings page, the first table contains the generic information regarding the SRT source. In this table you can enable the Edit Mode. This will highlight the rows related to that source in all the tables and enable edit controls. When you are done configuring the source, click **Save Changes** to push the data to the device.
 
-While **Edit Mode** is active, **no updates** will be shown from the device. In addition, after a specific amount of time, Edit Mode will **automatically switch back to Polling Mode**. You can configure this amount of time on the **Configuration** page. The DVB-S/S2 Settings don't have this Edit/Polling modes. The user can simply set the parameters without the need to set first the edit Mode.
+While **Edit Mode** is active, **no updates** will be shown from the device. In addition, after a specific amount of time, Edit Mode will **automatically switch back to Polling Mode**. You can configure this amount of time on the **Configuration** page.
+
+The **DVB-S/S2 settings** do not use this Edit/Polling Mode. You can simply set the parameters without first having to switch to Edit Mode.
