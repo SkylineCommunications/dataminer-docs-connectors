@@ -7463,6 +7463,13 @@
   items:
   - name: OpenHeadend Content Management Platform
     topicUid: Connector_help_OpenHeadend_Content_Management_Platform
+- name: Open-Meteo
+  items:
+  - name: Open-Meteo Weather
+    topicUid: Connector_help_OpenMeteo_Weather
+    items:
+    - name: Open-Meteo Weather Technical
+      topicUid: Connector_help_OpenMeteo_Weather_Technical
 - name: OpenStack
   items:
   - name: OpenStack Manager
