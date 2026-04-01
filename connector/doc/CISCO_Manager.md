@@ -11,10 +11,10 @@ This connector enables flexible access to device data and control functions, all
 
 ### Key Features
 
-* **Multi-protocol monitoring**: Collect data using SNMP, SSH, and HTTP, depending on device capabilities, ensuring broad compatibility across different Cisco platforms.
-* **Flexible polling configuration**: Enable or disable specific parameter groups per device, allowing tailored monitoring while minimizing unnecessary load.
-* **Interface performance tracking**: Monitor interface status, traffic, errors, and utilization to maintain optimal network performance.
-* **Configuration and control operations**: Execute actions such as configuration backup/restore, ping diagnostics, and counter resets directly from DataMiner.
+- **Multi-protocol monitoring**: Collect data using SNMP, SSH, and HTTP, depending on device capabilities, ensuring broad compatibility across different Cisco platforms.
+- **Flexible polling configuration**: Enable or disable specific parameter groups per device, allowing tailored monitoring while minimizing unnecessary load.
+- **Interface performance tracking**: Monitor interface status, traffic, errors, and utilization to maintain optimal network performance.
+- **Configuration and control operations**: Execute actions such as configuration backup/restore, ping diagnostics, and counter resets directly from DataMiner.
 
 ## Use Cases
 
@@ -26,7 +26,7 @@ This connector enables flexible access to device data and control functions, all
 
 **Benefit**: Detect early signs of degradation or failures and take action before services are affected, reducing outages and improving overall uptime.
 
-![FAN & PSU Status](~/connector/images/CISCO_Manager_FAN.png)
+![FAN and PSU status information shown in a Cisco Manager element in DataMiner Cube](~/connector/images/CISCO_Manager_FAN.png)
 
 ### Optimize Network Traffic and Port Utilization
 
@@ -36,7 +36,7 @@ This connector enables flexible access to device data and control functions, all
 
 **Benefit**: Make informed decisions about load balancing, link upgrades, or port decommissioning, improving efficiency and performance without overprovisioning.
 
-![Interfaces](~/connector/images/CISCO_Manager_InterfaceOverview.png)
+![Detailed interface information shown in a Cisco Manager element in DataMiner Cube](~/connector/images/CISCO_Manager_InterfaceOverview.png)
 
 ### Simplify VLAN and Trunk Configuration Management
 
@@ -44,17 +44,17 @@ This connector enables flexible access to device data and control functions, all
 
 **Solution**: Streamline VLAN management, reduce configuration errors, and maintain consistent network segmentation across your infrastructure.
 
-**Benefit**: Reduce time-to-resolution and restore services faster.
+**Benefit**: Reduce time to resolution and restore services faster.
 
-![Interfaces](~/connector/images/CISCO_Manager_VLAN.png)
+![VLAN information shown in a Cisco Manager element in DataMiner Cube](~/connector/images/CISCO_Manager_VLAN.png)
 
 ## Technical Reference
 
 ### Prerequisites
 
-* SNMP (v2 or v3) enabled on target devices
-* Optional: SSH and HTTP enabled for extended functionality
-* Proper credentials configured for each protocol
+- SNMP (v2 or v3) enabled on target devices.
+- Optional: SSH and HTTP enabled for extended functionality.
+- Proper credentials configured for each protocol.
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector for CISCO Manager, refer to the [Technical help page](xref:Connector_help_CISCO_Manager_Technical).
+> For in-depth information on configuring and using the DataMiner connector for CISCO Manager, refer to the [technical help page](xref:Connector_help_CISCO_Manager_Technical).

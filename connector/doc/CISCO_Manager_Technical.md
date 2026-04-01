@@ -4,11 +4,12 @@ uid: Connector_help_CISCO_Manager_Technical
 
 # CISCO Manager
 
-With the CISCO Manager, it is possible to configure and monitor CISCO switches, for example the CISCO Catalyst 3750. Because multiple device types are supported, monitoring can be enabled or disabled for a specific type.
-
 ## About
 
+With the CISCO Manager, it is possible to configure and monitor CISCO switches, for example the CISCO Catalyst 3750. Because multiple device types are supported, monitoring can be enabled or disabled for a specific type.
+
 The CISCO Manager connector can retrieve information from different device types. This makes it possible to limit the retrieval of parameter values to what is needed or available on the device at hand.
+
 In addition to polling values, you can configure settings such as the ping function as if doing so on the device itself.
 
 ## Configuration
@@ -60,13 +61,15 @@ Version range 2.1.x.x, 3.1.x.x, and 5.x.x.x do not require any extra settings.
 ### SNMP Polling
 
 As this connector supports different types of devices, all polling of parameters is disabled by default. The needed parameter sections have to be explicitly enabled.
-You can do so on the **General** page via the **SNMP Polling** page button.
+
+You can enable polling on the **General** page via the **SNMP Polling** page button.
 
 ### HTTP Polling
 
 Some tables are not accessible through SNMP, so an interface was added in order to make some data available for display.
 
 You cannot configure this interface during element creation; however, **you must configure the device's HTTP interface in the device CLI** in order for DataMiner to be able to access data via HTTP.
+
 You also have to go to the **HTTP Polling** subpage of the **General** page and set up the connection with CLI **username**, **password**, **privilege level**, and **operation mode**. The connector will start polling HTTP data when the username and password are configured and when any of the toggle buttons present on the HTTP Polling page are set to "Enable".
 
 ### Enabling LITE Mode
@@ -115,7 +118,7 @@ Note: The **Chassis Model** and **Chassis Serial Number** parameters are linked 
 
 The Detailed Interface Info page displays the interface info.
 
-The column **IF Counter Type** displays if the bitrates are calculated with 32-bit or 64-bit counters. The bitrates are refreshed every 30s with the 32-bit counters. This is also the maximum allowed timespan to avoid a counter wraparound. With 64-bit, the bitrates are refreshed every minute to avoid drops to 0 Mbps for devices with a very high load.
+The column **IF Counter Type** displays if the bit rates are calculated with 32-bit or 64-bit counters. The bit rates are refreshed every 30s with the 32-bit counters. This is also the maximum allowed time span to avoid a counter wraparound. With 64-bit, the bit rates are refreshed every minute to avoid drops to 0 Mbps for devices with a very high load.
 
 **XMPL RPC** is an option to retrieve data that is not available on the CISCO device itself, e.g., **IF Speed** from a server. It will be retrieved via calls to a customized platform.
 
@@ -133,7 +136,7 @@ In the **3.1.1.x** and **4.1.1.x** ranges, you can temporarily activate the **hi
 
 More detailed information about the incoming and outgoing information can be found on the **Detailed Information Info - Rx** and **Detailed Information Info - Tx** pages.
 
-The **History Data** page button (in range 3.1.0.x and 5.1.1.x) leads to an overview of the **Monthly traffic statistics.** These statistics are calculated each month. More detailed info (per day/week or month) can be found in the **Detailed Interface Info** table.
+The **History Data** page button (in range 3.1.0.x and 5.1.1.x) leads to an overview of the **Monthly traffic statistics**. These statistics are calculated each month. More detailed info (per day/week or month) can be found in the **Detailed Interface Info** table.
 
 The **Alarm Settings** page displays the settings for consecutive and non-consecutive behavior on the interface utilization (%). With the **Threshold** you can specify a baseline in percent. The **Period** defines the amount of time that the threshold will be surpassed (consecutive) or the sum of the amounts of time that the threshold is surpassed (non-consecutive). The **Days** defines the number of days this behavior is active before an alarm is set. The alarm is set on **IF Util. Consecutive/Non-Consecutive** in the **Detailed Interface Info** table. With the **Status Period Alarms** toggle button, you can enable/disable this feature.
 
@@ -150,8 +153,8 @@ In version 5.1.9.x, the following changes are also introduced:
 
 On the **Trunk Info** page you can have the trunk ports table polled automatically by enabling **Get Trunk Data.** To request the table, just click the **Load** button once. The columns **Trunk Allowed** and **Trunk Pruning** will display the VLANs in the following formats:
 
-- *All:* All VLANs are included.
-- *None:* No VLANs are included.
+- *All*: All VLANs are included.
+- *None*: No VLANs are included.
 - A range, e.g., *2,5,100-200*: VLAN 2 and VLAN 5 and VLANs 100 to 200 (including 200) are included.
 
 There are several possibilities to change these columns (the explanation below focuses on **Trunk Allowed**; however, **Trunk Pruning** is similar):
@@ -177,9 +180,9 @@ In the **3.1.1.x** and **4.1.1.x** ranges, you can use the **Measurement Configu
 
   - **SCP Port**: The port to be used for SCP connections.
 
-  - **SCP Username**: The username used to login.
+  - **SCP Username**: The username used to log in.
 
-  - **SCP Password**: The password used to login.
+  - **SCP Password**: The password used to log in.
 
   - **SCP Known Host File**: This parameter defines the name that should be given to the known host file, or the file that needs to be used. (If no file exists with the specified name, a new file with that name will be created.)
 
@@ -223,7 +226,7 @@ Physical dynamic interfaces:
 
 #### Internal Connections
 
-On the DCF Config page, you can select 2 different sources for creating internal connections:
+On the DCF Config page, you can select two different sources for creating internal connections:
 
 1. VLAN
 
