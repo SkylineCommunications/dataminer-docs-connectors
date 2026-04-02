@@ -37,7 +37,7 @@ The **Skyline EPM Platform VSAT iDirect** connector enables end‑to‑end monit
 
 **Challenge**: Navigating large topologies and keeping provisioning data consistent across multiple systems.
 
-**Solution**: Utilize the connector's export/import capabilities to synchronize topology and provisioning data between the front-end and back-end elements.
+**Solution**: Utilize the connector's export/import capabilities to synchronize topology and provisioning data between the frontend and backend elements.
 
 **Benefit**: Reduces configuration errors and ensures data accuracy across the network
 

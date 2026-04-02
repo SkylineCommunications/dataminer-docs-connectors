@@ -4,25 +4,13 @@ uid: Connector_help_British_Telecom_Strobe
 
 # British Telecom Strobe
 
-This connector is designed to monitor a custom transport stream monitoring device from British Telecom.
-
 ## About
+
+This connector is designed to monitor a custom transport stream monitoring device from British Telecom.
 
 This is a **serial** connector, which communicates with the device via **SSH commands**.
 
 The connector uses a second TCP connection to receive syslog messages. These messages are used as traps, to immediately update the Channels table when there is a status change.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

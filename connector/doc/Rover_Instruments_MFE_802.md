@@ -4,7 +4,7 @@ uid: Connector_help_Rover_Instruments_MFE_802
 
 # Rover Instruments MFE 802
 
-The **Rover Instruments MFE 802** is a digital multi-front end DVB device, specifically developed for broadcasters, to give them flexible and multi-task functionality thanks to its modular and cutting-edge design.
+The **Rover Instruments MFE 802** is a digital multi-frontend DVB device, specifically developed for broadcasters, to give them flexible and multi-task functionality thanks to its modular and cutting-edge design.
 
 ## About
 

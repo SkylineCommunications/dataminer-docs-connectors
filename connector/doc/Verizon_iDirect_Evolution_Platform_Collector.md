@@ -14,7 +14,7 @@ The connector also uses data from the Verizon VSat Database, which contains prop
 
 The connector supports the triggering and clearing of tickets from the Verizon system by generating DataMiner information events. This mechanism follows Verizon's proprietary SLA (Service Level Agreement) settings, and such settings stay synchronized with other elements in the DMS through the use of information stored in the DataMiner **Profile Manager** app. In addition to being able to perform bulk updates from the Profile Manager app, the solution includes the possibility of adding/editing/removing entries of the different SLA protocol parameters.
 
-The protocol contains a mechanism to obtain unique numeric IDs for entities used in the CPE aggregation solution. In order to do so, it exports CSV files for each type of entity that needs to have IDs assigned, and imports the corresponding CSV files with the responses from the back-end manager elements.
+The protocol contains a mechanism to obtain unique numeric IDs for entities used in the CPE aggregation solution. In order to do so, it exports CSV files for each type of entity that needs to have IDs assigned, and imports the corresponding CSV files with the responses from the backend manager elements.
 
 As this is a virtual connector, **no data traffic** will be shown in the Stream Viewer.
 
@@ -47,7 +47,7 @@ Additional settings need to be specified in the **Database Configuration** table
 In order to obtain unique numeric IDs for entities used in the CPE aggregation process, the following settings need to be specified:
 
 - On the **Collector Setup** page, a **path** must be provided for the import/export of CSV files with ID requests, and **toggle buttons** for both processes must be enabled.
-- On the **Notify Registration** subpage, in the **Frontend Registration** table, an entry must be added with the DMA ID/Element ID of the CPE manager (front-end) element handling the ID requests from collectors.
+- On the **Notify Registration** subpage, in the **Frontend Registration** table, an entry must be added with the DMA ID/Element ID of the CPE manager (frontend) element handling the ID requests from collectors.
 
 ## Usage
 
@@ -147,5 +147,5 @@ On the right-hand side of the page, you can find the controls for the ID Notify 
 
 The page contains page buttons to the following subpages:
 
-- **Notify Registration**: This page contains the **Frontend Registration** table, where you should add an entry with the DMA ID/Element ID of the front-end element in the CPE solution. This is the element in charge of handling the requests for ID assignment coming from all the collectors.
+- **Notify Registration**: This page contains the **Frontend Registration** table, where you should add an entry with the DMA ID/Element ID of the frontend element in the CPE solution. This is the element in charge of handling the requests for ID assignment coming from all the collectors.
 - **Notify Settings**: This page contains parameters that allow you to manage and monitor the ID Notify process. **Time Out Timer** allows you to set the maximum time the collector should wait for a response from the CPE manager before it sends another ID Notify request. The **Reset** button performs a full ID Notify request for all the entities in the collector.

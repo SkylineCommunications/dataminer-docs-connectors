@@ -4,9 +4,9 @@ uid: Connector_help_ZTE_ZXDU
 
 # ZTE ZXDU
 
-## Overview
+## About
 
-The ZTE ZXDU is a Centralized System Management Unit (CSU501B) designed for front-end monitoring of the communication DC power supply system. It plays a crucial role in tracking and managing the operational status of the system, ensuring efficient and reliable power management.
+The ZTE ZXDU is a Centralized System Management Unit (CSU501B) designed for frontend monitoring of the communication DC power supply system. It plays a crucial role in tracking and managing the operational status of the system, ensuring efficient and reliable power management.
 
 The CSU501B features an RJ45 Ethernet interface for network connectivity, a USB interface for data export, indicators for system status, an LCD for display, and buttons for navigation and settings.
 
@@ -23,24 +23,6 @@ It includes multiple functions:
 - **Web Functions**: With network connectivity, users can access the CSU501B using Chrome to read data in real time and configure the unit.
 
 - **SNMP**: When connected to a network, SNMP software can be used for real-time data reading and configuration of the CSU501B.
-
-### Version Info
-
-| Range   | Key Features                                                      | Based on | System Impact |
-|---------|-------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution. | -        | -             |
-
-### Product Info
-
-| Range    | Supported Firmware |
-|----------|--------------------|
-| 1.0.0.0x | V1.20.03.02        |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

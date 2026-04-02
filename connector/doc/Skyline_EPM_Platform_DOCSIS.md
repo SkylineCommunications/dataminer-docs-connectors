@@ -8,7 +8,7 @@ The Skyline EPM Platform DOCSIS connector allows the aggregation of KPIs from di
 
 This is an Experience and Performance Management connector, and as such it is designed to handle large amounts of data from DOCSIS infrastructures.
 
-**Skyline EPM Platform DOCSIS** is a **back-end** connector compatible with the **EPM Solution**. A deployed EPM Solution contains one [Skyline EPM Platform](xref:Connector_help_Skyline_EPM_Platform) **front-end** element, but it can have one or multiple Skyline EPM Platform DOCSIS back-end elements. While the Skyline EPM Platform front-end element is responsible for the top-level data aggregation from different back-end elements, each back-end element is responsible for the aggregation of the data from the collectors.
+**Skyline EPM Platform DOCSIS** is a **backend** connector compatible with the **EPM Solution**. A deployed EPM Solution contains one [Skyline EPM Platform](xref:Connector_help_Skyline_EPM_Platform) **frontend** element, but it can have one or multiple Skyline EPM Platform DOCSIS backend elements. While the Skyline EPM Platform frontend element is responsible for the top-level data aggregation from different backend elements, each backend element is responsible for the aggregation of the data from the collectors.
 
 Different topologies are presented in the Skyline EPM Platform. For the DOCSIS infrastructure, the following chains are present:
 
@@ -41,7 +41,7 @@ Different topologies are presented in the Skyline EPM Platform. For the DOCSIS i
 
   - Allows you to place Visual Overview layouts on a separate chain.
 
-The KPIs present in the topologies are the result of aggregation performed in the Skyline EPM Platform DOCSIS back-end elements.
+The KPIs present in the topologies are the result of aggregation performed in the Skyline EPM Platform DOCSIS backend elements.
 
 ## About
 
@@ -53,10 +53,10 @@ The KPIs present in the topologies are the result of aggregation performed in th
 | 1.0.1.x | Decoupling and enhancements. | - | - |
 | 1.0.2.x | Remote view tables retrieve information from multiple source elements. | - | - |
 | 1.0.3.x | Adjusted CM QAM US/DS CM COL view tables to match with the source and added a status parameter to the CM QAM US/DS tables. | - | - |
-| 1.0.4.x | - Partial table option enabled on several tables to improve loading time of the filter box on EPM topology. <br>- Parameter added that lets the user change the name of the automation script that notifies the back-end element of new data to be ingested. | - | - |
+| 1.0.4.x | - Partial table option enabled on several tables to improve loading time of the filter box on EPM topology. <br>- Parameter added that lets the user change the name of the automation script that notifies the backend element of new data to be ingested. | - | - |
 | 1.0.5.x | New exceptions added for the correction of the default value for average percentage US and DS utilization. | - | - |
 | 1.0.6.x | Removed lower level view tables (i.e., CM table) for increased performance. | - | - |
-| 1.0.7.x [SLC Main]   | Added front-end logic so now the connector can support both front-end and back-end elements, compatible with the multi-FE feature. | - | - |
+| 1.0.7.x [SLC Main]   | Added frontend logic so now the connector can support both frontend and backend elements, compatible with the multi-FE feature. | - | - |
 
 ### System Info
 
@@ -100,7 +100,7 @@ On the **Configuration Passives** page, the **Load Time** parameter allows you t
 
 In range **1.0.4.x**, the **Script Name** is added, which allows you to change the automation script to be executed. This parameter is available on the **Configuration** page.
 
-In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the back-end element.
+In range **1.0.11.4**, the **Automatic CMTS Removal** toggle button is added on the **Configuration** page and on the **Visual** page of the element. It allows you to enable or disable automatic CMTS removal on the backend element.
 
 ### Inner workflow of the EPM Solution
 
@@ -114,15 +114,14 @@ The provisioning of the EPM Solution is sequential and involves the following co
 
 The solution is based on the usage of CSV files and the DataMiner messaging system using information events.
 
-First, the **CCAP Platform** elements export the necessary files containing the resources that need to be assigned DataMiner IDs. These elements notify the **Skyline EPM Platform front-end** element, which in turn initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests. The front-end element will import the CSV files in order to perform the necessary steps of the provisioning.
+First, the **CCAP Platform** elements export the necessary files containing the resources that need to be assigned DataMiner IDs. These elements notify the **Skyline EPM Platform frontend** element, which in turn initiates the ID assignment process. The ID request notifications will be handled in a FIFO (First-In-First-Out) fashion to ensure the sequential processing of requests. The frontend element will import the CSV files in order to perform the necessary steps of the provisioning.
 
-Once the ID assignment is completed, the front-end element will export a series of CSV files for the **Skyline** **EPM** **Platform DOCSIS back end,** **CCAP Platform**, and **Generic DOCSIS CM Collector** elements to import. For this, the front-end element notifies the respective back-end element to process these files. The back-end element imports the resources with their assigned IDs and notifies the respective **CCAP Platform** and **Generic DOCSIS CM Collector** elements of ID assignment completion (these elements will import the new files).
+Once the ID assignment is completed, the frontend element will export a series of CSV files for the **Skyline EPM Platform DOCSIS backend**, **CCAP Platform**, and **Generic DOCSIS CM Collector** elements to import. For this, the frontend element notifies the respective backend element to process these files. The backend element imports the resources with their assigned IDs and notifies the respective **CCAP Platform** and **Generic DOCSIS CM Collector** elements of ID assignment completion (these elements will import the new files).
 
-The back-end elements are in charge of requesting the **passives** from the CMTS devices that they have assigned. For this, each back-end element sends a request every 24 hours to their respective **Skyline EPM Platform DOCSIS WM** element. This second element receives the request, creates the required passive CSV files, and notifies the back-end element. The back-end element then notifies the front-end element that its passive files are available and requests the ID assignment. Once this process is finished, the front-end element informs the back-end element, and it imports the passive resources with their assigned IDs.
+The backend elements are in charge of requesting the **passives** from the CMTS devices that they have assigned. For this, each backend element sends a request every 24 hours to their respective **Skyline EPM Platform DOCSIS WM** element. This second element receives the request, creates the required passive CSV files, and notifies the backend element. The backend element then notifies the frontend element that its passive files are available and requests the ID assignment. Once this process is finished, the frontend element informs the backend element, and it imports the passive resources with their assigned IDs.
 
 ## Notes
 
 The messaging system integration requires the use of correlation rules and automation scripts that will pick up on the information events and send the corresponding message to a message listener to begin the logical flow.
 
 Only CCAP elements that are active and registered in the Registration table are used to filter out passive and non-passive files.
-

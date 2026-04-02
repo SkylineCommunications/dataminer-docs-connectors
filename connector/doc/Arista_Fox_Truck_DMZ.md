@@ -4,23 +4,11 @@ uid: Connector_help_Arista_Fox_Truck_DMZ
 
 # Arista Fox Truck DMZ
 
-The Arista Fox Truck DMZ is a custom connector that is designed to interact with FOX Arista Switches in a **demilitarized zone** (DMZ).
-
 ## About
 
+The Arista Fox Truck DMZ is a custom connector that is designed to interact with FOX Arista Switches in a **demilitarized zone** (DMZ).
+
 The DMZ switches (Arista Manager) have been provided with **custom scripts by FOX**. These scripts have different functions and are unique to FOX. The goal of this connector is to allow the execution of these scripts from DataMiner via JSON and then process the response.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 
