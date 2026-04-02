@@ -30,13 +30,13 @@ The **Imagine Communications VSI6800+** connector combines **serial** and **smar
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP address of the device, e.g. *192.168.2.17.*
+- **IP address/host**: The polling IP address of the device, e.g., *192.168.2.17.*
 - **IP port**: The IP port of the device, by default *4050.*
-- **Bus address**: This is a combination of the frame number and slot number/ID: \<frameNumber **.** slotID\>. E.g. frame 1 & slot 12 corresponds to the following bus address: *1.12*.
+- **Bus address**: This is a combination of the frame number and slot number/ID: `<frameNumber>.<slotID>`, e.g., frame 1 & slot 12 corresponds to the following bus address: *1.12*.
 
 SMART-SERIAL CONNECTION:
 
-- **IP address/host**: The local DataMiner IP address to receive responses (e.g. *192.168.2.1*)
+- **IP address/host**: The local DataMiner IP address to receive responses (e.g., *192.168.2.1*)
 - **IP port**: The IP port of the DMA, by default *4000.*
 
 ## Usage

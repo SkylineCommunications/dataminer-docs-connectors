@@ -4,7 +4,7 @@ uid: Connector_help_EVS_Live_Production_Server
 
 # EVS Live Production Server
 
-The EVS Live Production Server is designed to monitor a wide range of EVS live production server products (e.g. EVS XT Via, XS Via, XT-Go, etc.).
+The EVS Live Production Server is designed to monitor a wide range of EVS live production server products (e.g., EVS XT Via, XS Via, XT-Go, etc.).
 
 These live production servers provide precise control over live broadcast production scenarios, integrating formats and protocols from HD to 8K, SDR to HDR, and SDI to IP.
 
@@ -65,4 +65,4 @@ The element consists of the following data pages:
 - **Server Monitoring**: Mainly displays the modules table, with information about errors and channels per module.
 - **Server Administration**: Displays administrative data that can be used for alarm monitoring.
 - **Server State**: Displays information about the current state of the server with respect to tasks and processes.
-- **Storage**: Displays storage information, i.e. mainly capacity and capacity warning values. Via page buttons, you can get a detailed overview of the current state of all disks, the RAID configuration, and enclosures information.
+- **Storage**: Displays storage information, i.e., mainly capacity and capacity warning values. Via page buttons, you can get a detailed overview of the current state of all disks, the RAID configuration, and enclosures information.

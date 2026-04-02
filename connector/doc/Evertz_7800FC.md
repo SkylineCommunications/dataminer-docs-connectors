@@ -4,29 +4,11 @@ uid: Connector_help_Evertz_7800FC
 
 # Evertz 7800FC
 
-The 7800FC VistaLINKr Frame Controller handles all SNMP communication between the frame (7800) and the network manager (NMS), and serves as a gateway to individual cards in the frame.
-
-This connector can be used to monitor and configure the Evertz 7800FC VistaLINKr Frame Controller card.
-
 ## About
 
-### Version Info
+The 7800FC VistaLINK Frame Controller handles all SNMP communication between the frame (7800) and the network manager (NMS), and serves as a gateway to individual cards in the frame.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector can be used to monitor and configure the Evertz 7800FC VistaLINK Frame Controller card.
 
 ## Configuration
 
@@ -56,7 +38,7 @@ This connector displays product location information in a table on the **General
 
 On the **Product Location** page, you can see which slots are used in the system.
 
-On the **Hardware** page, you can find general information about the status parameters, and on the **Hardware LED** page you can find information about the status of the LEDs in the system.
+On the **Hardware** page, you can find general information about the status parameters, and on the **Hardware LED** page, you can find information about the status of the LEDs in the system.
 
 On the **Time Management** page, you can indicate how the real-time clock should be synced to an external source.
 

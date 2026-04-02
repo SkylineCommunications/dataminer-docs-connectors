@@ -16,7 +16,7 @@ This connector is intended to communicate with the DVBLoudness toolset using SNM
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 - **Device address**: not used
 
 **SNMP Settings**:

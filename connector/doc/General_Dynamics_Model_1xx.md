@@ -112,4 +112,4 @@ Note that the parameters **Unsupported Fault Messages** and **Unsupported Status
 
 ### Point Mode - Intelsat
 
-INTELSAT is a fixed formatted definition. When there is no data available the table will remain empty even when device allows a set of items. (e.g. max 10 entries) To add INTELSAT records use the **Store Intelsat** page button.
+INTELSAT is a fixed formatted definition. When there is no data available the table will remain empty even when device allows a set of items. (e.g., max 10 entries) To add INTELSAT records use the **Store Intelsat** page button.

@@ -33,22 +33,22 @@ This connection requires the following input during element creation:
 SNMP First Connection:
 
 - **IP address/host**: The polling IP of the device, e.g.10.255.110.14.
-- **Device address**: The device location at the specified IP, e.g. *172.16.0.10:x1-6-00-90-EA-A0-A5-94.pl.hms.aorta.net*.
+- **Device address**: The device location at the specified IP, e.g., *172.16.0.10:x1-6-00-90-EA-A0-A5-94.pl.hms.aorta.net*.
 
 SNMP First Connection Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *mo2cpe12*. Default value: *public.*
-- **Set community string**: The community string used when setting values on the device, e.g. *mo2cpe12*. Default value: *private*.
+- **Get community string**: The community string used when reading values from the device, e.g., *mo2cpe12*. Default value: *public.*
+- **Set community string**: The community string used when setting values on the device, e.g., *mo2cpe12*. Default value: *private*.
 
 #### HTTP Connection
 
-Note that this is not a declared connection inside the protocol. This connection exists through a QAction and is established via a SOAP call, e.g. soap:Envelope.
+Note that this is not a declared connection inside the protocol. This connection exists through a QAction and is established via a SOAP call, e.g., soap:Envelope.
 
 HTTP Connection:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. <http://172.16.24.xxx/AlphaWebservice/alpha.asmx>
-- **IP port**: The IP port of the destination, e.g. 80
+- **IP address/host**: The polling IP or URL of the destination, e.g., <http://172.16.24.xxx/AlphaWebservice/alpha.asmx>
+- **IP port**: The IP port of the destination, e.g., 80
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
 #### SNMP Second Connection
@@ -59,7 +59,7 @@ If there is a timeout on the first SNMP connection, this second connection will 
 
 SNMP Second Connection:
 
-- **IP address/host**: The polling IP of the device received in the body of the POST response, e.g. *\<GetAlphaCmIpbyCpeResult\>10.215.46.158\</GetAlphaCmIpbyCpeResult\>.*
+- **IP address/host**: The polling IP of the device received in the body of the POST response, e.g., *\<GetAlphaCmIpbyCpeResult\>10.215.46.158\</GetAlphaCmIpbyCpeResult\>.*
 
 ### Configuration
 
@@ -120,7 +120,7 @@ This page displays the history for the different types of tests. You can delete 
 
 ### Scheduler Page
 
-This page displays the frequency at which certain tests are run, e.g. the self test intervals.
+This page displays the frequency at which certain tests are run, e.g., the self test intervals.
 
 ### Input Failure Page
 

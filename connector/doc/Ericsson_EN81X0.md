@@ -22,7 +22,7 @@ This connector uses a serial connection (HTTP) and requires the following input 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not required.
 - **Port**: Default port *80.*
 

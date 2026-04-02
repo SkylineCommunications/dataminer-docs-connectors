@@ -96,7 +96,7 @@ The page contains two tables:
 
 - **Metrics:**
 
-- **Metric Name**: The type of metric to display, e.g. attempts, plays, etc.
+- **Metric Name**: The type of metric to display, e.g., attempts, plays, etc.
 
   - **Filter Name**: Allows you to specify a filter to see only specific data.
 

@@ -36,7 +36,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device e.g., *10.11.12.13*.
 - **IP port**: The IP port of the device.
 - **Bus address**: The address used by the serial interface. The default bus address is 64 (range: 64-95).
 

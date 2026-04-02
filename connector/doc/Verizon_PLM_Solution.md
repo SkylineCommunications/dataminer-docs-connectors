@@ -8,7 +8,7 @@ The Verizon PLM Solution is a DataMiner connector used to manage resource reserv
 
 ## About
 
-The Verizon System contains a series of platform resources (i.e. Circuit, NMS, Hub Network, Line Card, Chassis, etc.) that require the systematic scheduling of maintenance activities. For this purpose, the DataMiner SRM module is used, specifically to create resource reservations.
+The Verizon System contains a series of platform resources (i.e., Circuit, NMS, Hub Network, Line Card, Chassis, etc.) that require the systematic scheduling of maintenance activities. For this purpose, the DataMiner SRM module is used, specifically to create resource reservations.
 
 This Solution allows interaction with planned maintenance (PLM) activities associated with platform resources. Each resource with at least one PLM item (activity) scheduled is placed in the PLM-POOL and treated as a PLM resource. All scheduled PLM items are linked to this one PLM resource. The scheduling of PLM items is done using the SRM resource reservation capabilities.
 

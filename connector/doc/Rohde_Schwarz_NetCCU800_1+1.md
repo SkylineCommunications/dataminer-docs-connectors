@@ -24,7 +24,7 @@ This connector polls information about the **Rohde Schwarz NetCCU800 1+1** in ge
 
 ### Exported connectors
 
-| **Exported Connector**                                                                          | **Description**                                     |
+| Exported Connector                                                                          | Description                                     |
 |------------------------------------------------------------------------------------------------|-----------------------------------------------------|
 | [Rohde Schwarz NetCCU800 1+1 TxA](xref:Connector_help_Rohde_Schwarz_NetCCU800_1%2B1_TxA) | Exported connector containing info about transmitter A |
 | [Rohde Schwarz NetCCU800 1+1 TxB](xref:Connector_help_Rohde_Schwarz_NetCCU800_1%2B1_TxB) | Exported connector containing info about transmitter B |
@@ -39,7 +39,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.17.250.16*.
+- **IP address/host**: The polling IP of the device, e.g., *10.17.250.16*.
 
 SNMP Settings:
 

@@ -19,7 +19,7 @@ This is a **modbus** connector. The following input is required during element c
 **Serial CONNECTION**:
 
 - **Type of port**: TCP/IP
-- **IP address**: The IP of the device, e.g. *10.11.12.13*.
+- **IP address**: The IP of the device, e.g., *10.11.12.13*.
 - **IP Port**: The IP port of the device, *8080*.
 - **Bus Address**: The bus connecting to the device.
 

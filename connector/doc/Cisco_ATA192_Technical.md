@@ -3,7 +3,7 @@ uid: Connector_help_CISCO_ATA192_Technical
 ---
 
 
-# Connector Technical Documentation – CISCO ATA192
+# CISCO ATA192
 
 ## About
 

@@ -18,7 +18,7 @@ This connector uses an SNMP connection and requires the following input during e
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 **SNMP Settings:**
 

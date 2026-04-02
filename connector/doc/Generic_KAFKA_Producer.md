@@ -4,7 +4,7 @@ uid: Connector_help_Generic_KAFKA_Producer
 
 # Generic KAFKA Producer
 
-Kafka is a distributed system consisting of servers and clients that communicate via a high-performance TCP network protocol. Kafka is run as a cluster of one or more servers that can span multiple data centers or cloud regions. Some of these servers form the storage layer; these are called the **brokers**. **Producers** are client applications that publish (i.e. write) events to Kafka, and **consumers** are those that subscribe (i.e. read and process) to these events. Producers and consumers are fully decoupled and agnostic of each other.
+Kafka is a distributed system consisting of servers and clients that communicate via a high-performance TCP network protocol. Kafka is run as a cluster of one or more servers that can span multiple data centers or cloud regions. Some of these servers form the storage layer; these are called the **brokers**. **Producers** are client applications that publish (i.e., write) events to Kafka, and **consumers** are those that subscribe (i.e., read and process) to these events. Producers and consumers are fully decoupled and agnostic of each other.
 
 The **Generic KAFKA Producer** is a generic solution to send alarms and parameters values to a specific **topic** in the broker, where DataMiner acts as a Producer.
 
@@ -130,7 +130,7 @@ With the parameters on this subpage, you can then execute and monitor the import
 
 - **Forward Alarm Import Status**: Displays the status of the file import.
 
-- **Processing Forward Alarms**: Displays the current processing type, i.e. *Not Processing*, *Reading File* or *Filling Tables*.
+- **Processing Forward Alarms**: Displays the current processing type, i.e., *Not Processing*, *Reading File* or *Filling Tables*.
 
 - **Console Alarms Folder Path**: Indicates the folder path where the CSV file to import is located.
 
@@ -150,7 +150,7 @@ Via the Import Bindings page button, you can import a CSV file with predefined O
 
 - **Alarm Import Status**: Displays the status of the file import.
 
-- **Processing Alarms**: Displays the current processing type, i.e. *Not Processing*, *Reading File* or *Filling Tables*.
+- **Processing Alarms**: Displays the current processing type, i.e., *Not Processing*, *Reading File* or *Filling Tables*.
 
 - **Import**: Click this button to import the CSV file into the table.
 
@@ -228,10 +228,10 @@ You can then use this template to create a file to import. The following paramet
 
 - **Parameters Import Status**: Displays the status of the file import.
 
-- **Processing Parameters**: Displays the current processing type, i.e. *Not Processing*, *Reading File* or *Filling Tables*.
+- **Processing Parameters**: Displays the current processing type, i.e., *Not Processing*, *Reading File* or *Filling Tables*.
 
 - **Import**: Click this button to import the parameters CSV file into the table.
 
 ## Notes
 
-The forwarding alarms feature allows you to forward information about impacted services (e.g. OID 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.1, 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.2). While in an SNMP message, the information is received in a table (in case the alarm affects more than 1 service), in the forwarded JSON message, information will be concatenated commas (per OID).
+The forwarding alarms feature allows you to forward information about impacted services (e.g., OID 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.1, 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.2). While in an SNMP message, the information is received in a table (in case the alarm affects more than 1 service), in the forwarded JSON message, information will be concatenated commas (per OID).

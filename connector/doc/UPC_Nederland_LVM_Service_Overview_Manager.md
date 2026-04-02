@@ -19,7 +19,7 @@ Every change in the **Service Overview Table** of the probes will be forwarded t
 
 ### Version Info
 
-| **Range**     | **Description** |
+| Range     | Description |
 |----------------------|-----------------|
 | 1.0.0.x [SLC Main]   | Initial version |
 
@@ -50,7 +50,7 @@ The first row of the CSV file needs to contain the following headers:
 
 The probes that are available on the DMS will be retrieved automatically by the SOM. After the logical groups have been configured, **link the probes** to the correct logical group. This is necessary to make sure that the SOM correctly aggregates the received data.
 
-When a probe element is removed, it will **not automatically be removed from the Probes table**. This prevents loss of logical group configuration when an element cannot be found (e.g. because it is on another DMA in the cluster that is stopped). The only way to remove a probe from the Probes table is to manually remove it using the **Delete Probe** button.
+When a probe element is removed, it will **not automatically be removed from the Probes table**. This prevents loss of logical group configuration when an element cannot be found (e.g., because it is on another DMA in the cluster that is stopped). The only way to remove a probe from the Probes table is to manually remove it using the **Delete Probe** button.
 
 ### Configuration of priorities and channels
 
@@ -106,7 +106,7 @@ For more information, refer to the "Configuration of priorities and channels" se
 
 ## Notes
 
-It is important to note that when part of the **configuration** (e.g. the logical groups) is updated using a **CSV import**, the current configuration will be **overwritten**. The configuration is kept in memory to update the alarm table as quickly as possible. When you update the configuration, you should also **manually** **update the subscriptions**. This can be done by *enabling* and *disabling* the subscriptions again (**Configuration page \> Subscriptions Enabled**).
+It is important to note that when part of the **configuration** (e.g., the logical groups) is updated using a **CSV import**, the current configuration will be **overwritten**. The configuration is kept in memory to update the alarm table as quickly as possible. When you update the configuration, you should also **manually** **update the subscriptions**. This can be done by *enabling* and *disabling* the subscriptions again (**Configuration page \> Subscriptions Enabled**).
 
 Note that the aggregated severity also takes into account the Highest Possible Customer Impact (and the Highest Possible Customer Impact in case of redundancy if applicable) of the logical group of a probe. **For example:** Imagine a certain probe P1 with logical group G1 sending a critical trap for channel C1, a probe P2 with logical group G2 sending a major trap for channel C1, and a probe P3 with logical group G2 sending a warning trap for channel C1. The logical group G2 also has a Redundancy Highest Possible Customer Impact set to *Warning*. The aggregated severity then also depends on the Highest Possible Customer Impact (in case of redundancy if applicable) of G1 and G2. The table below indicates that then the aggregated severity is the maximum of the last column, and therefore *Minor*.
 

@@ -4,29 +4,11 @@ uid: Connector_help_Evertz_7801FC
 
 # Evertz 7801FC
 
-The 7801FC VistaLINKr Frame Controller handles all SNMP communication between the frame (7801FR) and the network manager (NMS), and serves as a gateway to individual cards in the frame.
-
-This connector can be used to monitor and configure the Evertz 7801FC VistaLINKr Frame Controller card.
-
 ## About
 
-### Version Info
+The 7801FC VistaLINK Frame Controller handles all SNMP communication between the frame (7801FR) and the network manager (NMS), and serves as a gateway to individual cards in the frame.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector can be used to monitor and configure the Evertz 7801FC VistaLINK Frame Controller card.
 
 ## Configuration
 
@@ -52,4 +34,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to use
 
-This connector displays product location information in a table on the General page. On the Status page, you can find status parameters, while on the Configuration page, you can configure the device.
+This connector displays product location information in a table on the **General** page. On the **Status** page, you can find status parameters, while on the **Configuration** page, you can configure the device.

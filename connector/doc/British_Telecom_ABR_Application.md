@@ -32,7 +32,7 @@ This connector uses a TCP/IP connection and requires the following input during 
 
 TCP/IP CONNECTION:
 
-- **IP address/host**: The IP of the remote server, e.g. *10.11.12.13*.
+- **IP address/host**: The IP of the remote server, e.g., *10.11.12.13*.
 - **IP port**: *4444*.
 
 The connector also uses the **WebDriver.dll** and **WebDriverSupport.dll** files from the Selenium software.

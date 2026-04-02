@@ -81,7 +81,7 @@ It also contains the following page buttons:
 
 - **Audio**: Displays the following tables:
 
-  - **Decoder Audio Status** table: Contains statistics on each audio PID, i.e. the detected Audio PID, the audio codec type and the associated bitrate.
+  - **Decoder Audio Status** table: Contains statistics on each audio PID, i.e., the detected Audio PID, the audio codec type and the associated bitrate.
   - **Decoder Output Control** table: Allows you to configure the audio delay and the Dolby downmix mode. The Dolby downmix mode options include stereo downmix and full decode.
   - **Audio Decoder Output Mixer** table: Allows you to configure the mapping of decoded audio channels to the audio embedder.
 
@@ -163,7 +163,7 @@ It also contains the following page buttons:
 
 - **Dolby Decoder**: Displays the following **Dolby Decoder Controls**: Encoded Audio Source, Audio Source Switch Suppression, Decoder Delay Compensation, AC3 or Digital Plus Dynamic Range, E Stereo DownMix and AC3 or Digital Plus Stereo DownMix.
 
-- **IntelliGain**: IntelliGainr is a technology developed by Evertz to control the loudness of audio programs on the fly. More specifically, it calculates the perceived loudness of the input audio and modifies the audio to ensure that the long-term average loudness level is at the target level. This subpage consists of the following sections:
+- **IntelliGain**: IntelliGain is a technology developed by Evertz to control the loudness of audio programs on the fly. More specifically, it calculates the perceived loudness of the input audio and modifies the audio to ensure that the long-term average loudness level is at the target level. This subpage consists of the following sections:
 
   - **IntelliGain Global Controls**: Includes the Compander Attack Time and Release Time and Leveler Attack Mode and Release Mode.
   - **IntelliGain Mixer** table.

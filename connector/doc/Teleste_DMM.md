@@ -10,7 +10,7 @@ This connector monitors and manages controller devices like the Teleste DMM and 
 
 Several parameters of the controller itself are polled with a timer. With a separate timer, all of the modules are polled one after another. When a set occurs on one of the attached modules, this polling cycle is interrupted (as soon as the current polling of the current module is finished) in order to give priority to the set.
 
-Every module has its own interface (i.e. IP address and port). This is the reason why 2 serial connections are used in the connector, one for the controller device and one for the modules. The modules connection changes for every module that needs to be polled/set.
+Every module has its own interface (i.e., IP address and port). This is the reason why 2 serial connections are used in the connector, one for the controller device and one for the modules. The modules connection changes for every module that needs to be polled/set.
 
 This connector exports different connectors based on the retrieved data. A list can be found in the section "Exported connectors" below.
 

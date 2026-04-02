@@ -12,7 +12,7 @@ The connector polls information from the Tektronix SPG8000 via an SNMP connectio
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                        | **Based on** | **System Impact** |
+| Range            | Key Features                                                                                        | Based on | System Impact |
 |----------------------|---------------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                                                                                         | -            | -                 |
 | 1.0.1.x              | Second connection for serial API polling                                                                | -            | -                 |
@@ -20,7 +20,7 @@ The connector polls information from the Tektronix SPG8000 via an SNMP connectio
 
 ### Product Info
 
-| **Range** | **Firmware Version** |
+| Range | Firmware Version |
 |-----------|----------------------|
 | 1.0.0.x   | 2.2                  |
 | 1.0.1.x   | 3.0                  |

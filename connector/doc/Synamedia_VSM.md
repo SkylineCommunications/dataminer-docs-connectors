@@ -59,6 +59,6 @@ The element shows all alarms on the **Messages** page, and the **Overview** page
 
 Service configuration and lineup management are available on the **Lineups** and **Service Flow** pages. These can be used by service providers and operators who manage linear-live content that must be processed to fit into the appropriate delivery network.
 
-The **Resources** page contains information related to DCM resources (e.g. name, software version, model, responding, alarm and device states, etc.).
+The **Resources** page contains information related to DCM resources (e.g., name, software version, model, responding, alarm and device states, etc.).
 
 License information related to availability and usage per resource and function is available under **License Usage**, **License Function Usage**, and **License Central**.

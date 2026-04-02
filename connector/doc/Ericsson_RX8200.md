@@ -50,7 +50,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not needed.
 
 SNMP Settings:
@@ -65,7 +65,7 @@ Ranges 2.0.1.x and 3.0.0.x require a second, TCP/IP connection.
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port**: The port used by the device for its web interface, normally this is *80.*
 
 ### Configuration

@@ -26,13 +26,15 @@ In addition to polling values, you can configure settings such as the ping funct
 | 5.1.4.x [Obsolete] | Made Cassandra-compliant. | 5.1.3.12 | - |
 | 5.1.5.x [Obsolete] | -  Improvements to IPSec logic. - Merge of all 5.1.X.X versions. | - | - |
 | 5.1.6.x [Obsolete] | Added extra connection for SysLog information. | 5.1.5.1 | - |
-| 5.1.7.x [SLC Main] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly.<br><br> NOTE: The following parameters are no longer saved to the database:<br>Table "Detailed Interface Info" (11000)<br>- 11291 Daily Tx Total<br>- 11292 Daily Rx Total<br>- 11293 Weekly Tx Total<br>- 11294 Weekly Rx Total<br>- 11295 Monthly Tx Total<br>- 11296 Monthly Rx Total |
+| 5.1.7.x [Obsolete] | Added rate exceptions on device timeout/restart | 5.1.6.19 | No impact as long as "Handle SNMP Rates on Timeout" is disabled. It is disabled by default. Otherwise, any dashboards or filters using rate values may need to be updated slightly.<br><br> NOTE: The following parameters are no longer saved to the database:<br>Table "Detailed Interface Info" (11000)<br>- 11291 Daily Tx Total<br>- 11292 Daily Rx Total<br>- 11293 Weekly Tx Total<br>- 11294 Weekly Rx Total<br>- 11295 Monthly Tx Total<br>- 11296 Monthly Rx Total |
+| 5.1.8.x [Obsolete]| Fix index of BGP Peer Table of 5.1.7.x. | 5.1.7.47 | - |
+| 5.1.9.x [SLC Main] | Removed the hidden Syslog Messages Logger table. | 5.1.8.5 | From now on, the Generic Syslog Receiver connector should be used to save Syslog messages in database. |
 | 6.1.1.x | SNMPv3 version of 5.1.1.x. | - | - |
 | 7.0.0.x [Obsolete] | SNMP2: temporary branch created based on 5.1.1.x to change the element type to "Management System". | - | If you move to this branch, you will need to recreate the element. |
 | 8.0.0.x [Obsolete] | Customer-specific range. **Deprecated as of 2021.** | 5.1.3.12 | - |
 
 > [!NOTE]
-> The main version to use for **new elements** is **5.1.7.x**.
+> The main version to use for **new elements** is **5.1.9.x**.
 
 ## Configuration
 
@@ -114,7 +116,7 @@ Because of the way SSH connections are created, we recommend limiting the SSH us
 
 ### General page
 
-On the General page, an overview of general device settings is displayed, e.g. **Model**, **Software Description**, etc.
+On the General page, an overview of general device settings is displayed, e.g., **Model**, **Software Description**, etc.
 
 Multiple page buttons are also available that provide access to more specific information:
 
@@ -140,7 +142,7 @@ The Detailed Interface Info page displays the interface info.
 
 The column **IF Counter Type** displays if the bitrates are calculated with 32-bit or 64-bit counters. The bitrates are refreshed every 30s with the 32-bit counters. This is also the maximum allowed timespan to avoid a counter wraparound. With 64-bit, the bitrates are refreshed every minute to avoid drops to 0 Mbps for devices with a very high load.
 
-**XMPL RPC** is an option to retrieve data that is not available on the CISCO device itself, e.g. **IF Speed** from a server. It will be retrieved via calls to a customized platform.
+**XMPL RPC** is an option to retrieve data that is not available on the CISCO device itself, e.g., **IF Speed** from a server. It will be retrieved via calls to a customized platform.
 
 Via **Measurement Configuration**, you can enable or disable the display and calculation of the interface communication KPIs. Range 2.1.x.x uses subtables, which limits the polling (disabled rows are not polled). Range 3.1.x.x uses "multiplegetbulk", because when some cells were empty, the complete interface table was empty when polled with range 2.1.x.x. Multiplegetbulk does not support subtables, so disabled rows will still be polled.
 
@@ -160,13 +162,22 @@ The **History Data** page button (in range 3.1.0.x and 5.1.1.x) leads to an over
 
 The **Alarm Settings** page displays the settings for consecutive and non-consecutive behavior on the interface utilization (%). With the **Threshold** you can specify a baseline in percent. The **Period** defines the amount of time that the threshold will be surpassed (consecutive) or the sum of the amounts of time that the threshold is surpassed (non-consecutive). The **Days** defines the number of days this behavior is active before an alarm is set. The alarm is set on **IF Util. Consecutive/Non-Consecutive** in the **Detailed Interface Info** table. With the **Status Period Alarms** toggle button, you can enable/disable this feature.
 
+### Syslog page
+
+From version 5.1.6.x onwards, an extra connection is used to collect the Syslog information.
+
+In version 5.1.9.x, the following changes are also introduced:
+
+- It is no longer possible to save Syslog messages in the database with this connector. To save your Syslog messages in the database, you will need to have an indexing database (Elasticsearch/OpenSearch) and an element using the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985).
+- The **Syslog Advanced Search** page has been removed. This feature is instead available in the [Generic Syslog Receiver connector](https://catalog.dataminer.services/details/bd910005-30e6-4bd2-a785-2ae2276da985) version 1.0.3.x.
+
 ### Trunk Info page
 
 On the **Trunk Info** page you can have the trunk ports table polled automatically by enabling **Get Trunk Data.** To request the table, just click the **Load** button once. The columns **Trunk Allowed** and **Trunk Pruning** will display the VLANs in the following formats:
 
 - *All:* All VLANs are included.
 - *None:* No VLANs are included.
-- A range, e.g. *2,5,100-200*: VLAN 2 and VLAN 5 and VLANs 100 to 200 (including 200) are included.
+- A range, e.g., *2,5,100-200*: VLAN 2 and VLAN 5 and VLANs 100 to 200 (including 200) are included.
 
 There are several possibilities to change these columns (the explanation below focuses on **Trunk Allowed**; however, **Trunk Pruning** is similar):
 
@@ -267,16 +278,16 @@ The configuration is stored in two locations, RAM and NVRAM. The running configu
     - Copy Config Protocol: TFTP
     - Copy Config Source File Type: Network File
     - Copy Config Destination File Type: Startup Config
-    - Copy Config Server Address: The IP address of the server from which to copy the configuration file (e.g. 192.168.1.1)
-    - Copy Config File Name: The file name (including the file path, if applicable) (e.g. cisco-cfg)
+    - Copy Config Server Address: The IP address of the server from which to copy the configuration file (e.g., 192.168.1.1)
+    - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-cfg)
 
   - Network\>NVRAM
 
     - Copy Config Protocol: TFTP
     - Copy Config Source File Type: Network File
     - Copy Config Destination File Type: Running Config
-    - Copy Config Server Address: The IP address of the server from which to copy the configuration file (e.g. 192.168.1.1)
-    - Copy Config File Name: The file name (including the file path, if applicable) (e.g. cisco-cfg)
+    - Copy Config Server Address: The IP address of the server from which to copy the configuration file (e.g., 192.168.1.1)
+    - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-cfg)
 
   - RAM\>NVRAM
 
@@ -303,16 +314,16 @@ The configuration is stored in two locations, RAM and NVRAM. The running configu
     - Copy Config Protocol: TFTP
     - Copy Config Source File Type: Startup Config
     - Copy Config Destination File Type: Network File
-    - Copy Config Server Address: The IP address of the server to which to copy the configuration file (e.g. 192.168.1.1)
-    - Copy Config File Name: The file name (including the file path, if applicable) (e.g. cisco-cfg)
+    - Copy Config Server Address: The IP address of the server to which to copy the configuration file (e.g., 192.168.1.1)
+    - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-cfg)
 
   - NVRAM\>Network
 
     - Copy Config Protocol: TFTP
     - Copy Config Source File Type: Running Config
     - Copy Config Destination File Type: Network File
-    - Copy Config Server Address: The IP address of the server to which to copy the configuration file (e.g. 192.168.1.1)
-    - Copy Config File Name: The file name (including the file path, if applicable) (e.g. cisco-cfg)
+    - Copy Config Server Address: The IP address of the server to which to copy the configuration file (e.g., 192.168.1.1)
+    - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-cfg)
 
 - Load IOS
 
@@ -321,8 +332,8 @@ The configuration is stored in two locations, RAM and NVRAM. The running configu
     - Copy Config Protocol: TFTP
     - Copy Config Source File Type: Network File
     - Copy Config Destination File Type: IOS File
-    - Copy Config Server Address: The IP address of the server from which to copy the IOS file (e.g. 192.168.1.1)
-    - Copy Config File Name: The file name (including the file path, if applicable) (e.g. cisco-ios)
+    - Copy Config Server Address: The IP address of the server from which to copy the IOS file (e.g., 192.168.1.1)
+    - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-ios)
 
 - Backup IOS
 
@@ -331,7 +342,5 @@ The configuration is stored in two locations, RAM and NVRAM. The running configu
     - Copy Config Protocol: TFTP
     - Copy Config Source File Type: IOS File
     - Copy Config Destination File Type: Network File
-    - Copy Config Server Address: The IP address of the server to which to copy the IOS file (e.g. 192.168.1.1)
-    - Copy Config File Name: The file name (including the file path, if applicable) (e.g. cisco-ios)
-
-From version 5.1.6.x onwards, an extra connection is used to collect the Syslog information.
+    - Copy Config Server Address: The IP address of the server to which to copy the IOS file (e.g., 192.168.1.1)
+    - Copy Config File Name: The file name (including the file path, if applicable) (e.g., cisco-ios)

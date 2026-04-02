@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.150.3.3*.
+- **IP address/host**: The polling IP of the device, e.g., *10.150.3.3*.
 
 SNMP Settings:
 
@@ -56,7 +56,7 @@ This page contains 7 parameters for each of the two receivers: **Frequency**, **
 
 ### Event
 
-This page displays all the parameters that are related to events, i.e. the **ID**, **Description**, **Type**, **Severity**, **Time**, **Root** **Time**, **Unit** **Name**, **Unit** **Address**, **Node** **Name** and **Node** **Value**.
+This page displays all the parameters that are related to events, i.e., the **ID**, **Description**, **Type**, **Severity**, **Time**, **Root** **Time**, **Unit** **Name**, **Unit** **Address**, **Node** **Name** and **Node** **Value**.
 
 ### Web Interface
 

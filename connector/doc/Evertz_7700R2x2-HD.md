@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the Evertz 7x00 Frame containing the card, e.g. *192.168.100.161*.
+- **IP address/host**: The polling IP or URL of the Evertz 7x00 Frame containing the card, e.g., *192.168.100.161*.
 - **IP port**: The IP port of the destination. Default: *161*.
 - **Bus address**: The frame card slot number for the device. Default: *15*. Range: *1* - *100.*
 

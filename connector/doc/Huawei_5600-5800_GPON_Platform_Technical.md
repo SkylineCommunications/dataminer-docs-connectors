@@ -61,7 +61,7 @@ The EPM Solution works with a file system for internal element communication in 
 
 ## How to Use - Range 1.0.0.x
 
-The OLT connectors are used as links in the EPM GPON solution chain. These represent the lower layer in the GPON topology, where the information of ONTs is retrieved to then be processed/aggregated by the upper layers. It is important to take into account that some of the ONT KPIs come from an external source (e.g. KAFKA). You therefore need to make sure communication with that source is functioning properly. In addition, the number of updates received determines the efficiency, so the more updates, the longer processing will take.
+The OLT connectors are used as links in the EPM GPON solution chain. These represent the lower layer in the GPON topology, where the information of ONTs is retrieved to then be processed/aggregated by the upper layers. It is important to take into account that some of the ONT KPIs come from an external source (e.g., KAFKA). You therefore need to make sure communication with that source is functioning properly. In addition, the number of updates received determines the efficiency, so the more updates, the longer processing will take.
 
 Another important thing is to set the **Reset ONT Interval** parameter (on the Configuration page) according to the retrieval speed of the information from the ONTs.
 
@@ -78,12 +78,12 @@ Once the initial setup is done, the connector can function without further confi
 
 ## How to Use - Range 1.0.1.x
 
-In this range, the OLT is no longer responsible for information retrieval from the external source (e.g. KAFKA). The OLT Interval parameter has therefore been removed.
+In this range, the OLT is no longer responsible for information retrieval from the external source (e.g., KAFKA). The OLT Interval parameter has therefore been removed.
 
 Another important difference with the previous range is related to the passive logic: Split information is now divided over three tables to allow a better understanding and segmentation of the data in the topology. The Split page now contains the **Split Route Overview**, **Split Distribution Overview**, and **Split FAT Overview** tables.
 
 ## Notes
 
-This connector requires specific Automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
+This connector requires specific automation scripts for communication with auxiliary connectors such as the Skyline EPM Platform GPON WM and with the DataMiner EPM Solution.
 
 With larger devices or large datasets, the polling performance may vary.

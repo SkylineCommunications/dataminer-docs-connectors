@@ -61,4 +61,4 @@ The element created with this connector has the following data pages:
 
 ## Notes
 
-In the initial version of this protocol, only a subset of the information available in the device is implemented, i.e. the Summary, Input 1, Input 2, Output, Genlock and Delay pages.
+In the initial version of this protocol, only a subset of the information available in the device is implemented, i.e., the Summary, Input 1, Input 2, Output, Genlock and Delay pages.

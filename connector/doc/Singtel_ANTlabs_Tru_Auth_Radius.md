@@ -16,8 +16,8 @@ The ANTlabs Tru Auth Radius connector makes it possible to monitor the usage of 
 
 **HTTP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *27.96.104.57.*
-- **IP Port**: The polling IP port of the device, e.g. *443*.
+- **IP address/host**: The polling IP of the device, e.g., *27.96.104.57.*
+- **IP Port**: The polling IP port of the device, e.g., *443*.
 - **Bus Address**: If there are problems with the proxy server on the DMA, specify "*byPassProxy*".
 
 **SNMP Settings**:

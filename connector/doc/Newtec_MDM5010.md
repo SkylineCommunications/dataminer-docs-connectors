@@ -66,7 +66,7 @@ This page allows you to configure the data interface, routes, and IP interfaces.
 
 This page allows you to monitor and control the Ethernet settings associated with the system.
 
-The **Ethernet Alarms** subpage displays the alarm status information for the Ethernet interface, as well as various settings, e.g. related to redundancy and VLANs.
+The **Ethernet Alarms** subpage displays the alarm status information for the Ethernet interface, as well as various settings, e.g., related to redundancy and VLANs.
 
 ### Config
 

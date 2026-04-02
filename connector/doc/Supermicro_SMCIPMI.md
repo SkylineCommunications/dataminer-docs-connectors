@@ -10,7 +10,7 @@ The Supermicro IPMI (Intelligent Platform Management Interface) standard is used
 
 This connector integrates the Intel IPMI connector and Supermicro. It is developed to manage and retrieve the data from both types of hard disk with a single connector. The connector can be used to display all available sensor values, to monitor fan speeds, temperatures, power, voltage and current sensors, and to view the event log, the user list, the list of FRUs of Intel and the Supermicro hard disk information.
 
-To do this, the connector uses a third-party tool (i.e. IPMItool, which can be found at <http://sourceforge.net/projects/ipmitool/>). As a consequence, no communication will be visible in Stream Viewer.
+To do this, the connector uses a third-party tool (i.e., IPMItool, which can be found at <http://sourceforge.net/projects/ipmitool/>). As a consequence, no communication will be visible in Stream Viewer.
 
 ### Version Info
 
@@ -122,7 +122,7 @@ Note: Keep in mind that these are actual processes. If there are for instance ju
 
 ### Sensors
 
-On this page, you can see the current value, type, units and status of all sensors in the system. However, trending and alarm monitoring are not possible on these values, because the type of sensor reading is not known and not the same for all sensors (e.g. string, number, discrete).
+On this page, you can see the current value, type, units and status of all sensors in the system. However, trending and alarm monitoring are not possible on these values, because the type of sensor reading is not known and not the same for all sensors (e.g., string, number, discrete).
 
 Reading the sensor values happens in two stages. In the first stage, all sensor IDs and values are retrieved and set in the table. In a second stage, the extra information is retrieved sensor by sensor. This step takes considerably more time than the first step, and it is the last step in the standard polling cycle.
 

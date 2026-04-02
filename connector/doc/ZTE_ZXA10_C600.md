@@ -83,7 +83,7 @@ For example, imagine the If identifiers have the following values:
 
 The table below shows the possible display key format, depending on the selected options:
 
-| **Separator (Quotes are ignored)** | **Alias**   | **Name**    | **Alias+Name**            | **Description+Alias**        | **Name+Alias**            |
+| Separator (Quotes are ignored) | Alias   | Name    | Alias+Name            | Description+Alias        | Name+Alias            |
 |------------------------------------|-------------|-------------|---------------------------|------------------------------|---------------------------|
 | "-"                                | MyInterface | Interface01 | MyInterface-Interface01   | Test Interface-MyInterface   | Interface01-MyInterface   |
 | " - "                              | MyInterface | Interface01 | MyInterface - Interface01 | Test Interface - MyInterface | Interface01 - MyInterface |

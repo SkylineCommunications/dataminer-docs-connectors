@@ -10,7 +10,7 @@ This is an SNMP connector that is used to monitor and configure the SpacePath Co
 
 ### Version Info
 
-| **Range**           | **Key Features** | **Based on** | **System Impact** |
+| Range           | Key Features | Based on | System Impact |
 |---------------------|------------------|--------------|-------------------|
 | 1.0.0.x \[SL Main\] | Initial version  | -            | -                 |
 

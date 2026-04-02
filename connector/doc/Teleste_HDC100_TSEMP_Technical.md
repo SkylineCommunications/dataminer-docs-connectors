@@ -294,7 +294,7 @@ This page displays identification information and statistics for the device.
 
 #### Overview Page
 
-For every card type, an entry is created in the **Modules** table. Different configurations are possible (e.g. **Automatic Removal**) in order to delete the modules with status **Missing**.
+For every card type, an entry is created in the **Modules** table. Different configurations are possible (e.g., **Automatic Removal**) in order to delete the modules with status **Missing**.
 
 ##### Configuration
 

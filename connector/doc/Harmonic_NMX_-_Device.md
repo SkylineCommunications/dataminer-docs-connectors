@@ -71,7 +71,7 @@ The **Data Tables** page button provides access to the tables used in the **Stre
 
 ### Page Matrix
 
-This page displays **which output is connected to which input** if the device is a matrix. For other devices (e.g. encoders), this table is empty.
+This page displays **which output is connected to which input** if the device is a matrix. For other devices (e.g., encoders), this table is empty.
 
 ### Page Stream Overview
 

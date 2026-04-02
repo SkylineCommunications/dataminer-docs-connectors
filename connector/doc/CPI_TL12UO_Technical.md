@@ -16,14 +16,14 @@ This connector uses serial and HTTP connections and requires the following input
 SERIAL CONNECTION:
 
 - **Type of port:** TCP/IP
-- **IP address/host**: e.g. *10.11.12.13.*
+- **IP address/host**: e.g., *10.11.12.13.*
 - **IP port**: default: *50000*
 - **Bus address**: default: *48*
 
 HTTP CONNECTION:
 
 - **Type of port:** TCP/IP
-- **IP address/host**: e.g. *10.11.12.13.*
+- **IP address/host**: e.g., *10.11.12.13.*
 - **IP port**: default: *80*
 
 ## How to Use

@@ -80,7 +80,7 @@ SNMP Settings:
 
 This page displays general information about the device: **system information**, **contact information** and several **device status parameters**.
 
-These status parameters include **status alarms** (e.g. Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
+These status parameters include **status alarms** (e.g., Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
 
 ### Admin
 
@@ -155,7 +155,7 @@ The page contains the following page buttons:
 - **Add New Route** (below the Routing Table): Allows you to preconfigure the parameters for a new entry in the **Routing Table** and add the entry by clicking the **Create** button.
 - **Add Static ARP** (below the ARP Table): Allows you to preconfigure the parameters for a new entry in the **ARP Table** and add the entry by clicking the **Create** button.
 - **DHCP**: Displays the DHCP (Dynamic Host Configuration Protocol) configuration parameters (Feature State and Relay Address).
-- **IGMP**: Displays the IGMP (Internet Group Management Protocol) configuration parameters (e.g. IGMP Version, Query/Response Interval, etc.) and the IGMP Multicast Table, which displays information regarding the currently established multicast membership groups.
+- **IGMP**: Displays the IGMP (Internet Group Management Protocol) configuration parameters (e.g., IGMP Version, Query/Response Interval, etc.) and the IGMP Multicast Table, which displays information regarding the currently established multicast membership groups.
 
 ### Configuration - ECM
 
@@ -165,7 +165,7 @@ The page also contains the **ECM Rid** page button, which displays the ECM Rid s
 
 ### Configuration - dSCPC
 
-This page contains dSCPC (**Dynamic Single Channel per Carrier**) system configuration parameters, based on **Load Switching** (e.g. Load Switching State, Excess Capacity, etc.) and **ToS (Type of Service) Switching**, used to dynamically resize the carrier based on the amount of data sent over the link.
+This page contains dSCPC (**Dynamic Single Channel per Carrier**) system configuration parameters, based on **Load Switching** (e.g., Load Switching State, Excess Capacity, etc.) and **ToS (Type of Service) Switching**, used to dynamically resize the carrier based on the amount of data sent over the link.
 
 At the bottom of the page, the **ToS Switch Table** displays information regarding the different service types.
 
@@ -183,7 +183,7 @@ The right side of the page displays the ACU (**Antenna Control Unit**) status an
 
 ### Configuration - Roaming Service
 
-This page contains two tables with roaming service information. The first table lists the specifications of the different **Roaming Service Areas** (e.g. Frequency, Bandwidth, etc.), the second contains the **Roaming Service Bound** info (Beam Offset, ID, Area ID).
+This page contains two tables with roaming service information. The first table lists the specifications of the different **Roaming Service Areas** (e.g., Frequency, Bandwidth, etc.), the second contains the **Roaming Service Bound** info (Beam Offset, ID, Area ID).
 
 ### Status - Statistics - Network
 
@@ -217,11 +217,11 @@ This page displays general, header and payload **compression**/**decompression**
 
 ### Status - Statistics - QoS
 
-This page displays **statistics** regarding both the implemented **QoS Rules** (e.g. Rule Tx/Dropped Packets, etc.) and **QoS Groups** (e.g. Group Total Dropped Packets, Committed/Maximum Information Rate and Tx Data Rate, etc.).
+This page displays **statistics** regarding both the implemented **QoS Rules** (e.g., Rule Tx/Dropped Packets, etc.) and **QoS Groups** (e.g., Group Total Dropped Packets, Committed/Maximum Information Rate and Tx Data Rate, etc.).
 
 ### Status - Monitor
 
-This page contains information on the **Unit Temperature** and on the different **Alarm Statuses** (e.g. Unit Alarm, Ethernet Traffic Alarm, etc.).
+This page contains information on the **Unit Temperature** and on the different **Alarm Statuses** (e.g., Unit Alarm, Ethernet Traffic Alarm, etc.).
 
 ### Status - Monitor - Events
 
@@ -276,7 +276,7 @@ This page displays the web interface of the device. Note that the client machine
 
 This page displays general information about the device: **system information**, **contact information** and several **device status parameters.**
 
-These status parameters include **status alarms** (e.g. Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
+These status parameters include **status alarms** (e.g., Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
 
 ### Admin
 
@@ -350,7 +350,7 @@ The page contains the following page buttons:
 - **Add New Route** (below the Routing Table): Allows you to preconfigure the parameters for a new entry in the **Routing Table** and add the entry by clicking the **Create** button.
 - **Add Static ARP** (below the ARP Table): Allows you to preconfigure the parameters for a new entry in the **ARP Table** and add the entry by clicking the **Create** button.
 - **DHCP**: Contains the DHCP (Dynamic Host Configuration Protocol) configuration parameters (Feature State and Relay Address).
-- **IGMP**: Contains the IGMP (Internet Group Management Protocol) configuration parameters (e.g. IGMP Version, Query/Response Interval, etc.) and the IGMP Multicast Table, which displays information regarding the currently established multicast membership groups.
+- **IGMP**: Contains the IGMP (Internet Group Management Protocol) configuration parameters (e.g., IGMP Version, Query/Response Interval, etc.) and the IGMP Multicast Table, which displays information regarding the currently established multicast membership groups.
 
 ### Configuration - ECM
 
@@ -360,7 +360,7 @@ The page also contains the **ECM Rid** page button, which displays the ECM Rid s
 
 ### Configuration - dSCPC
 
-This page contains dSCPC (**Dynamic Single Channel per Carrier**) system configuration parameters, based on **Load Switching** (e.g. Load Switching State, Excess Capacity, etc.) and **ToS (Type of Service) Switching**, used to dynamically resize the carrier based on the amount of data sent over the link.
+This page contains dSCPC (**Dynamic Single Channel per Carrier**) system configuration parameters, based on **Load Switching** (e.g., Load Switching State, Excess Capacity, etc.) and **ToS (Type of Service) Switching**, used to dynamically resize the carrier based on the amount of data sent over the link.
 
 At the bottom of the page, the **ToS Switch Table** displays information regarding the different service types.
 
@@ -378,7 +378,7 @@ The right side of the page displays the ACU (**Antenna Control Unit**) status an
 
 ### Configuration - Roaming Service
 
-This page contains two tables with roaming service information. The first table lists the specifications of the different **Roaming Service Areas** (e.g. Frequency, Bandwidth, etc.), the second contains the **Roaming Service Bound** info (e.g. Beam Offset, ID, Area ID).
+This page contains two tables with roaming service information. The first table lists the specifications of the different **Roaming Service Areas** (e.g., Frequency, Bandwidth, etc.), the second contains the **Roaming Service Bound** info (e.g., Beam Offset, ID, Area ID).
 
 ### Status - Stats - Traffic
 
@@ -410,11 +410,11 @@ This page displays general, header and payload **compression**/**decompression**
 
 ### Status - Stats - QoS
 
-This page displays **statistics** regarding both the implemented **QoS Rules** (e.g. Rule Tx/Dropped Packets, etc.) and **QoS Groups** (e.g. Group Total Dropped Packets, Committed/Maximum Information Rate and Tx Data Rate, etc.).
+This page displays **statistics** regarding both the implemented **QoS Rules** (e.g., Rule Tx/Dropped Packets, etc.) and **QoS Groups** (e.g., Group Total Dropped Packets, Committed/Maximum Information Rate and Tx Data Rate, etc.).
 
 ### Status - Monitor
 
-This page contains information on the **Unit Temperature** and on the different **Alarm Statuses** (e.g. Unit Alarm, Ethernet Traffic Alarm, etc.).
+This page contains information on the **Unit Temperature** and on the different **Alarm Statuses** (e.g., Unit Alarm, Ethernet Traffic Alarm, etc.).
 
 ### Status - Monitor - Events
 

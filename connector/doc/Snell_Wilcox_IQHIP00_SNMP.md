@@ -18,7 +18,7 @@ The **Snell Wilcox IQHIP00 SNMP** is an SNMP connector. The IP has to be configu
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings:**
 

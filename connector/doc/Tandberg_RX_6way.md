@@ -18,7 +18,7 @@ The connector implements most of the monitoring functions available in the proto
 
 ### Creation
 
-Follow the standard procedure for serial devices. The serial interface can normally be reached through a terminal server device (i.e. Moxa equipment). The IP address and port are defined directly by the configuration of the terminal server, while the bus address is defined directly on the RX 6way receiver.
+Follow the standard procedure for serial devices. The serial interface can normally be reached through a terminal server device (i.e., Moxa equipment). The IP address and port are defined directly by the configuration of the terminal server, while the bus address is defined directly on the RX 6way receiver.
 
 **SERIAL CONNECTION:**
 
@@ -65,6 +65,6 @@ This connector version was coded with the following assumptions:
 - In the above directory, a file called *Grid.jpg* must exist, as this is the image template (the general aspect of the resulting spectrum image). As explained above, a sample of that image can be available as part of the protocol files in Source Safe.
 - The resulting JPG image has a name format *spec\_\<id\>.jpg* where \<id\> corresponds to the element ID. As such, each element on the same DMA will have its own resulting spectrum image.
 
-The image template is nothing more than a base image that the QAction uses to render the resulting graph, the frequency tuned and the configured channel. This file (*Grid.jpg)* can be changed (i.e. change the background color) but the code in the QAction assumes certain dimensions in order to correctly position the rendered part of the spectrum.
+The image template is nothing more than a base image that the QAction uses to render the resulting graph, the frequency tuned and the configured channel. This file (*Grid.jpg)* can be changed (i.e., change the background color) but the code in the QAction assumes certain dimensions in order to correctly position the rendered part of the spectrum.
 
 The resulting JPG image can be presented on protocol view, by using Generic Image thumbnail. A sample of this view can also be found in the protocol folder in Source Safe.

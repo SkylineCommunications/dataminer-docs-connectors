@@ -4,7 +4,7 @@ uid: Connector_help_Fox_Corp_Booking_Manager
 
 # Fox Corp Booking Manager
 
-This connector is used to manage bookings. It interacts with the Jobs and SRM modules via Automation scripts for the creation of bookings. It allows operators to interact with bookings in the pre-roll and post-roll phases, and it provides information on the status of existing bookings.
+This connector is used to manage bookings. It interacts with the Jobs and SRM modules via automation scripts for the creation of bookings. It allows operators to interact with bookings in the pre-roll and post-roll phases, and it provides information on the status of existing bookings.
 
 ### Version Info
 

@@ -81,7 +81,7 @@ The element has the following data pages:
 - **WHP296 Options**
 - **GPIO Options**
 - **Network**
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 The setting of some parameters depends on another parameter's current value. For example, on the Network page, in order to set the Netmask, Network Mask Prefix, the Standard Gateway, etc., the IP Configuration has to be in Manual mode. To obtain more detailed information about certain dependencies between parameters, double-click the parameter to view the parameter details. In certain cases, a pop-up window will appear with a reminder about how to set a parameter to the appropriate value before you set other parameters.
 

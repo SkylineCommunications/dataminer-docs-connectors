@@ -74,4 +74,4 @@ NOTE: There is a delay between the manual set for **Group ID** and **Unit ID** a
 
 ### Status
 
-This page displays status information of the device, e.g. **Aspect Ratio**, **Power**, **Audio Level**, etc.
+This page displays status information of the device, e.g., **Aspect Ratio**, **Power**, **Audio Level**, etc.

@@ -40,8 +40,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device. e.g. 192.168.1.2.
-  - **IP port**: The IP port of the device. e.g. 4006.
+  - **IP address/host**: The polling IP of the device. e.g., 192.168.1.2.
+  - **IP port**: The IP port of the device. e.g., 4006.
   - **Bus address**: Not required.
 
 ### Initialization

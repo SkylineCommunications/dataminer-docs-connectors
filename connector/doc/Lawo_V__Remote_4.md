@@ -6,7 +6,7 @@ uid: Connector_help_Lawo_V__Remote_4
 
 ## About
 
-This connector displays information related to the V__Remote 4 device. This information, including audio/video input and output, bandwidth statistics, and PTP info, is available on different pages. Alarm monitoring and trending are possible for some of the parameters, e.g. the bitrate.
+This connector displays information related to the V__Remote 4 device. This information, including audio/video input and output, bandwidth statistics, and PTP info, is available on different pages. Alarm monitoring and trending are possible for some of the parameters, e.g., the bitrate.
 
 ### Product Info
 

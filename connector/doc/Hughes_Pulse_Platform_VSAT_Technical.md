@@ -65,7 +65,7 @@ The following configuration options are available for each entry:
 > [!NOTE]
 > The **Batch Size** defines how many devices are included in each separate POST request. Batching is used to:
 >
-> - Prevent timeout or server errors (e.g. 504 or 500) on large payloads.
+> - Prevent timeout or server errors (e.g., 504 or 500) on large payloads.
 > - Avoid paginating API responses.
 > - Ensure that partial failures do not block polling (failed batches are retried individually).
 
@@ -136,7 +136,7 @@ The following metrics are displayed:
 - **Total**: Sum of inbound and outbound in MB.
 - **Timestamp**: Date of the measurement.
 
-Each device can report multiple usage categories (e.g. Web Browsing, Entertainment, Network Infrastructure), which are derived from the Hughes API and may vary.
+Each device can report multiple usage categories (e.g., Web Browsing, Entertainment, Network Infrastructure), which are derived from the Hughes API and may vary.
 
 #### Configuration Page
 

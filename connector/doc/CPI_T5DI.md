@@ -50,15 +50,15 @@ The web interface is only accessible when the client machine has network access 
 
 On this page, general parameters are displayed, such as the **System State**, **Control Point**, and **ALC**.
 
-The page also displays the software version of different components (e.g. **RF Supply Main Program Software Version**), the set time and the time that certain components have been running (e.g. **Heater On Time**).
+The page also displays the software version of different components (e.g., **RF Supply Main Program Software Version**), the set time and the time that certain components have been running (e.g., **Heater On Time**).
 
-The **Inhibit** page button displays a page with the inhibit parameters, e.g. **Local Inhibit**, **Ethernet Inhibit**.
+The **Inhibit** page button displays a page with the inhibit parameters, e.g., **Local Inhibit**, **Ethernet Inhibit**.
 
 The **Reset Faults** button can be used to reset the faults.
 
 ### Measurements Page
 
-This page displays an overview of parameters monitoring voltages (**Helix Voltage**, **Heater Voltage**), currents (**Helix Current**, **Heater Current**), power (e.g. **Reflected RF Output Power**) and temperatures (e.g. **Cabinet Temperature**)
+This page displays an overview of parameters monitoring voltages (**Helix Voltage**, **Heater Voltage**), currents (**Helix Current**, **Heater Current**), power (e.g., **Reflected RF Output Power**) and temperatures (e.g., **Cabinet Temperature**)
 
 ### Switch Controller Page
 
@@ -66,7 +66,7 @@ On this page, you can configure the switch positions and amplifier priorities.
 
 ### Switch System Status Page
 
-This page displays an overview of the comm state (e.g. **Switch \#1 Comm State**) and stall state (e.g. **Switch \#1 Stall State**) of the switches.
+This page displays an overview of the comm state (e.g., **Switch \#1 Comm State**) and stall state (e.g., **Switch \#1 Stall State**) of the switches.
 
 ### Settings Page
 
@@ -74,4 +74,4 @@ This page contains the configurable parameters of the device, such as the **ALC 
 
 ### Alarms Page
 
-This page displays an overview of the alarm and fault states the device can generate, e.g. **High RF Driver State**, **High RF Driver Fault**.
+This page displays an overview of the alarm and fault states the device can generate, e.g., **High RF Driver State**, **High RF Driver Fault**.

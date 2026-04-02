@@ -91,7 +91,7 @@ The web interface is only accessible when the client machine has network access 
 
 The **1.0.0.x** range of the Sony MLS-X1 connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
 ### Interfaces
 

@@ -18,7 +18,7 @@ This connector uses a **serial** connection and needs the following input during
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 - **IP port**: the port of the connected device, default value: *22*
 - **Bus address**: the bus address of the connected device
 

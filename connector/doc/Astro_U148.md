@@ -45,18 +45,18 @@ In either case, the **SNMP** interface collects the traps emitted by the device,
 HTTP Connection for Communication with U100C as Proxy
 
 - **IP address/host**: The IP address of the Astro U100 Controller.
-- **IP port**: The port of the destination, e.g. *80*.
-- **Bus address**: The IP address of the U148. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g. *ByPassProxy;10.11.12.13.*
+- **IP port**: The port of the destination, e.g., *80*.
+- **Bus address**: The IP address of the U148. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g., *ByPassProxy;10.11.12.13.*
 
 #### HTTP Connection for Direct Communication
 
 - **IP address/host**: The IP address of the U148.
-- **IP port**: The port of the destination e.g. *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 #### SNMP Connection
 
-- **IP Address/host**: The polling IP of the U148, e.g. *10.11.12.13*.
+- **IP Address/host**: The polling IP of the U148, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private*.
@@ -96,11 +96,11 @@ Some important parameters are available at the end of the first column:
 
 ### Status
 
-This page displays the status of the device, e.g. **Temperature**, **Power Supply**, **CPU Load**, etc.
+This page displays the status of the device, e.g., **Temperature**, **Power Supply**, **CPU Load**, etc.
 
 ### Main
 
-On this page, you can access the main configuration of the device, e.g. **DNS**, **Time Source**, **Interfaces**, etc.
+On this page, you can access the main configuration of the device, e.g., **DNS**, **Time Source**, **Interfaces**, etc.
 
 ### Input Settings
 

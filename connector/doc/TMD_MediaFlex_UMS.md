@@ -4,7 +4,7 @@ uid: Connector_help_TMD_MediaFlex_UMS
 
 # TMD MediaFlex UMS
 
-The TMD MediaFlex UMS connector integrates the Mediaflex Unified Media Services Cloud platform into DataMiner. This platform pushes the list of scheduled events to the DataMiner connector, which in turn will display the events in a table and trigger an Automation script, automatically or manually, to create the corresponding SRM bookings.
+The TMD MediaFlex UMS connector integrates the Mediaflex Unified Media Services Cloud platform into DataMiner. This platform pushes the list of scheduled events to the DataMiner connector, which in turn will display the events in a table and trigger an automation script, automatically or manually, to create the corresponding SRM bookings.
 
 ## About
 

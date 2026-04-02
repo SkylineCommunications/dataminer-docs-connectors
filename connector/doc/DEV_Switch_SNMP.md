@@ -36,7 +36,7 @@ The information displayed in the connector is divided over seven pages:
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**                                                                      |
+| Exported Connector | Description                                                                      |
 |-----------------------|--------------------------------------------------------------------------------------|
 | DEV Switch Module     | 2 port modules are only supported in range 3.0.0.x and only accurate for DEV7113 1:1 |
 
@@ -50,7 +50,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:
@@ -69,11 +69,11 @@ Note: It is only possible to change settings via SNMP through DataMiner if the s
 
 ### Switch Configuration Page
 
-This page contains two additional tables that can be found in the application folder in the dev-switch MIB. For some types of devices (e.g. DEV 7113 1:1), these tables are not relevant. In that case, the tables are not polled, to avoid needless bandwidth use.
+This page contains two additional tables that can be found in the application folder in the dev-switch MIB. For some types of devices (e.g., DEV 7113 1:1), these tables are not relevant. In that case, the tables are not polled, to avoid needless bandwidth use.
 
 The **Switch Group** table is shown on the left. This table is used for the definition of the assignment of switch modules to configured groups, which are used for simultaneous switching applications.
 
-The **Switch Units** table is shown on the right. With this table, the switching status of a switch unit (i.e. switch module) can be checked or altered using the column **Switch Position**. Additionally, the column **Switch Members** indicates which port of the Port Table is part of which switch module. If you double-click a cell, more information on the column in question is displayed.
+The **Switch Units** table is shown on the right. With this table, the switching status of a switch unit (i.e., switch module) can be checked or altered using the column **Switch Position**. Additionally, the column **Switch Members** indicates which port of the Port Table is part of which switch module. If you double-click a cell, more information on the column in question is displayed.
 
 ### Ports Page
 

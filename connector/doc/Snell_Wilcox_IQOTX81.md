@@ -40,9 +40,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.14.10*.
-  - **IP port**: The IP port of the device, e.g. *2050*.
-  - **Bus address**: Used to fill in the Unit Address and the Unit Port, e.g. *26.02* is for Unit Address *0x26* and Unit Port *0x02*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.14.10*.
+  - **IP port**: The IP port of the device, e.g., *2050*.
+  - **Bus address**: Used to fill in the Unit Address and the Unit Port, e.g., *26.02* is for Unit Address *0x26* and Unit Port *0x02*.
 
 ## Usage
 
@@ -108,7 +108,7 @@ The log settings for the parameters can be configured via the **Log Config...** 
 
 ### System Setup Page
 
-This page contains information about the card, e.g. Product, Software Version, Build.
+This page contains information about the card, e.g., Product, Software Version, Build.
 
 The page also contains buttons that allow you to restart the device (**Restart**), and set the device back to the factory settings **(Factory Default**) or default settings (**Default Settings**).
 

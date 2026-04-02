@@ -12,7 +12,7 @@ This is an **SNMP** connector for the SYes PCM Television device.
 
 ### Version Info
 
-| **Range** | **Description**         | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description         | DCF Integration | Cassandra Compliant |
 |------------------|-------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version         | No                  | Yes                     |
 | 1.1.0.x          | New firmware version 40 | No                  | Yes                     |
@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 SNMP Settings:
 

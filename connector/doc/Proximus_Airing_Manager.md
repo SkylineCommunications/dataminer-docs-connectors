@@ -53,7 +53,7 @@ On this page, the **Synopses** table displays all synopses that were received (v
 
 All synopses are stored in the **Documents** folder of the DMA, and when a new synopsis is received, the **Proximus Airing Manager** will read out the **synopsis XML** to extract the necessary information.
 
-Synopses have a specific **ID** and **version**. When a synopsis is received in the Proximus Airing Manager, it will only be processed when it is a **new synopsis**, i.e. a synopsis with a new ID or an updated version.
+Synopses have a specific **ID** and **version**. When a synopsis is received in the Proximus Airing Manager, it will only be processed when it is a **new synopsis**, i.e., a synopsis with a new ID or an updated version.
 
 When a change is done to one of the filters (see "Filters" section below), this change will only be used for newly received synopses. However, if you want a synopsis to be reprocessed, click the **Reprocess** button in the **Synopses** table and the updated filters will be used.
 

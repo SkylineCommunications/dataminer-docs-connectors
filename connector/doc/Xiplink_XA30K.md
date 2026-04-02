@@ -66,7 +66,7 @@ From range **1.2.0.x** onwards, the login subpage offers **token-based authentic
 
 This is the default page of the connector. It displays general data such as the **Device Name**, **Version**, **Uptime**, etc.
 
-In the **Optimization Monitoring** section of the page, you can find some important performance optimization parameters, on which trending can be enabled, i.e. **CPU Load, Memory Usage, Optimized TCP Connections** and **Up/Downlink Savings**.
+In the **Optimization Monitoring** section of the page, you can find some important performance optimization parameters, on which trending can be enabled, i.e., **CPU Load, Memory Usage, Optimized TCP Connections** and **Up/Downlink Savings**.
 
 A page button is available that provides access to the **Login** subpage, where you can log in and connect to the device. For more information, refer to the "Configuration of Login" section above.
 

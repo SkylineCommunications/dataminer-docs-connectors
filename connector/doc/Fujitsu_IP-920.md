@@ -12,7 +12,7 @@ By utilizing sophisticated MPEG-4 AVC (H.264) compression algorithms, the stream
 
 The IP-920 has an analog video (NTSC/PAL) interface. The existing CCTV camera can reduce your beginning investment for your system. When the camera is replaced to HD camera, you can easily add the HD option software to the IP-920. Utilizing the optional 16GB internal storage function, the IP-920 can also be used for file transmissions across IP networks. Encoded video can be recorded in the encoder and remotely downloaded. Therefore, the video data can be transferred even when network bandwidth is too narrow to support real-time transmission.
 
-An enhanced IP-920 can stream video more smoothly by supporting Ultra low latency of approx. 99ms. These new feature is especially useful for decoding video from remote site. (e.g. Video transmission among different countries, broadcasters and global companies) The new feature enables to decode video seamlessly and simultaneously and the operator in decoding site would not have to feel any stresses for waiting the process.
+An enhanced IP-920 can stream video more smoothly by supporting Ultra low latency of approx. 99ms. These new feature is especially useful for decoding video from remote site. (e.g., Video transmission among different countries, broadcasters and global companies) The new feature enables to decode video seamlessly and simultaneously and the operator in decoding site would not have to feel any stresses for waiting the process.
 
 The information displayed in this connector is delivered in different pages and are described in the **Usage** section of this document.
 

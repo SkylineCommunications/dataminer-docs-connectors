@@ -65,7 +65,7 @@ The **Round Robin Table** is then filled in. You can edit the fields and save th
 
 When you click the **Apply RR Plan** button, the content of the file selected with the **RR Plan** parameter is applied to all the probes found in the region displayed by the **Region** parameter. As such, if you want the manual changes you made in the **Round Robin Table** to be applied to the probes, click **Save RR Plan** and then click **Apply RR Plan**.
 
-If you have manually added a file with a Round Robin plan in the directory *C:\Skyline DataMiner\Documents\Hirschmann Multimedia Rover TAB7 Manager*, you can use the **Refresh List** parameter after you have selected the corresponding **Region**. However, keep in mind that the name of the files must follow a specific syntax, as otherwise they are ignored: *RRPlan_Region_timestamp.csv* (e.g. *RRPlan_Amsterdam_11082016100633.csv*).
+If you have manually added a file with a Round Robin plan in the directory *C:\Skyline DataMiner\Documents\Hirschmann Multimedia Rover TAB7 Manager*, you can use the **Refresh List** parameter after you have selected the corresponding **Region**. However, keep in mind that the name of the files must follow a specific syntax, as otherwise they are ignored: *RRPlan_Region_timestamp.csv* (e.g., *RRPlan_Amsterdam_11082016100633.csv*).
 
 The **Round Robin Table** provides the following information for each channel: **Service Name**, **Channel Mode**, **Type**, **Frequency**, **RF Matrix**, **Audio Frequency**, **Master Channel**, **Channel** and **QAM Symbol Rate.**
 

@@ -46,7 +46,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### Inputs Page
 
-The Inputs page gives an overview of the physical inputs of the Harmonic ProView 8000 device. The Harmonic ProView 8000 supports three input types: DVB-S/S2, GbE and ASI. For each input type, a table is included containing monitored parameters (e.g. the DVB-S/S2 Input Table contains parameters such as Symbol Rate, Attenuation, C/N, Eb/N0, BER, PER, Carrier Frequency, etc.).
+The Inputs page gives an overview of the physical inputs of the Harmonic ProView 8000 device. The Harmonic ProView 8000 supports three input types: DVB-S/S2, GbE and ASI. For each input type, a table is included containing monitored parameters (e.g., the DVB-S/S2 Input Table contains parameters such as Symbol Rate, Attenuation, C/N, Eb/N0, BER, PER, Carrier Frequency, etc.).
 
 #### Inputs \> LNB
 

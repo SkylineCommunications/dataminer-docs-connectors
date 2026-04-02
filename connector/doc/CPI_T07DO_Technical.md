@@ -33,7 +33,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **Type of Port**: TCP/IP
-  - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+  - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
   - **IP port**: The IP port of the device, by default *50000*.
   - **Bus address**: The bus address of the device, by default *48*.
 

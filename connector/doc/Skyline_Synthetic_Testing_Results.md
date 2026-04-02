@@ -10,7 +10,7 @@ This connector is used in the Synthetic Test Solution and is intended to be the 
 
 ### Version Info
 
-| **Range**            | **Key Features**                | **Based on**                               | **System Impact** |
+| Range            | Key Features                | Based on                               | System Impact |
 |----------------------|---------------------------------|--------------------------------------------|-------------------|
 | 1.0.0.x [SLC Main]   | Synthetic Testing Results table | Skyline Service Definition Basic (1.0.0.9) | -                 |
 

@@ -40,7 +40,7 @@ This connector supports visibility on the OLT's performance, connected optical n
 
 **Challenge**: Efficiently processing ONT performance data from multiple sources.
 
-**Solution**: Integrate the connector with external data feeds (e.g. KAFKA) to centralize ONT KPI collection and analysis.
+**Solution**: Integrate the connector with external data feeds (e.g., KAFKA) to centralize ONT KPI collection and analysis.
 
 **Benefit**: Provides a unified view of ONT health and performance across the GPON network.
 

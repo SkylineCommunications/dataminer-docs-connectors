@@ -48,7 +48,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *172.16.21.50*.
+- **IP Address/host**: The polling IP of the device, e.g., *172.16.21.50*.
 
 **SNMP Settings:**
 
@@ -102,6 +102,6 @@ Since this connector creates a large number of DVEs, you must keep the following
 
 - The button **Delete All DVEs** will delete all DVEs, so when using this button you should take the same precautions as when importing a new .csv file.
 
-- After a restart of the main element, you have to wait some time before applying any configuration, such as importing a .csv file. This is necessary because the polling of the HTMS Device Table can take a while, depending on the number of rows present in that table. If, for some reason, e.g. because of network failure, the HMTS Device Table failed to poll, you can refresh it using the refresh button. The polling of the amplifiers will only start after this table has been polled.
+- After a restart of the main element, you have to wait some time before applying any configuration, such as importing a .csv file. This is necessary because the polling of the HTMS Device Table can take a while, depending on the number of rows present in that table. If, for some reason, e.g., because of network failure, the HMTS Device Table failed to poll, you can refresh it using the refresh button. The polling of the amplifiers will only start after this table has been polled.
 
 - Assigning an alarm or trend template to the DVEs can take some time, depending on the number of DVEs. During this operation, you must avoid doing any other configuration, such as deleting DVEs, restarting the main element, importing a new .csv file, etc.

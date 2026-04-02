@@ -42,7 +42,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### General
 
-This page contains general information related to the device, i.e. **Number ONT**.
+This page contains general information related to the device, i.e., **Number ONT**.
 
 ### Configuration
 
@@ -56,7 +56,7 @@ This page contains general information related to the device, i.e. **Number ONT*
 
 - **Import Directory Type**: Specifies the type of directory used for importing files. It can be either local or remote. In case it is set to *Remote*, files are imported from a network location.
 
-- **Structured Files Directory**: This field indicates the network path where structured files are located for import, e.g. `\10.10.10.10\c$\FE Structured Files`. This refers to a shared folder on a remote machine that contains these files.
+- **Structured Files Directory**: This field indicates the network path where structured files are located for import, e.g., `\10.10.10.10\c$\FE Structured Files`. This refers to a shared folder on a remote machine that contains these files.
 
 #### Offload Settings
 
@@ -64,7 +64,7 @@ This page contains general information related to the device, i.e. **Number ONT*
 
 - **Offloading Directory Type**: Specifies the type of directory for offloading. *Remote* means the offloaded files are stored on a network-shared folder, as opposed to a local folder.
 
-- **Offloading Folder Path**: The network path where the system will offload files (e.g. `\10.10.10.10\c$\WM\Offload`). This directory serves as the destination for offloading structured files after processing.
+- **Offloading Folder Path**: The network path where the system will offload files (e.g., `\10.10.10.10\c$\WM\Offload`). This directory serves as the destination for offloading structured files after processing.
 
 #### Debugging Option
 

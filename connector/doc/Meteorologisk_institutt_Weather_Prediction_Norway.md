@@ -69,17 +69,17 @@ On this page, you can configure the locations based on **Latitude**, **Longitude
 Locations can be added individually with the **Add Location button**. Individual locations can be **Refreshed** or **Deleted**.
 However, please note that it is better to enable or disable **Monitoring** instead of deleting a location, as deleting locations can lead to inconsistent trending.
 
-Several locations can be added in one go with the **AS AddLocations** parameter. This is also the parameter that should be used when adding rows with **Automation scripts**. The parameter expects the following format:
+Several locations can be added in one go with the **AS AddLocations** parameter. This is also the parameter that should be used when adding rows with **automation scripts**. The parameter expects the following format:
 
 - *Location\*Latitude\*Longitude\*Height\*Monitored;Location\*Latitude\*Longitude\*Height\*Monitored; ...*
-  If there is no **Height**, leave the value blank (e.g. \*Longitude\*\*Monitored;).
+  If there is no **Height**, leave the value blank (e.g., \*Longitude\*\*Monitored;).
   **Monitored** should be set to 0 for false or to 1 for true.
   Locations must be unique!
   Example: *TestLocation 1\*60.10\*9.58\*\*1;TestLocation 2\*60.10\*9.58\*\*1;TestLocation 3\*60.10\*9.58\*\*1*
 
 ### Summary
 
-This page contains all **weather data averaged per day**. The number of days shown can be defined with the **Predicted Days** parameter. Please note that the data for every predicted day will be contained in an **extra row for each** **location** (e.g. 200 locations showing 5 days will result in 1000 rows).
+This page contains all **weather data averaged per day**. The number of days shown can be defined with the **Predicted Days** parameter. Please note that the data for every predicted day will be contained in an **extra row for each** **location** (e.g., 200 locations showing 5 days will result in 1000 rows).
 
 The display key of each row consists of the following information: **Location - Time**, where Time = *Today, Tomorrow, 1 Day From Now, 2 Days From Now*, etc.
 
@@ -106,7 +106,7 @@ The following data is available for each location:
 - **Prevalent Symbol Probability:** Probability of the provided symbol being correct.
 - **Forecast:** Textual forecast for this day.
 
-With the **URL Extension** parameter, you can add an extension to the URL that is used to request the forecast information (e.g. "[https://api.met.no](http://api.met.no/)/**abcd**/weatherapi/errornotifications/1.0/").
+With the **URL Extension** parameter, you can add an extension to the URL that is used to request the forecast information (e.g., "[https://api.met.no](http://api.met.no/)/**abcd**/weatherapi/errornotifications/1.0/").
 
 With the **X IBM Client ID** parameter, you can add a header to the API weather forecast requests. The header has the following format: "*x-ibm-client-id*". The header value will be the input parameter value. If you set *None*, the header will not be added.
 
@@ -124,4 +124,4 @@ With the **Configuration** page button, a selection of **text forecast types** c
 
 - For correct usage of the connector, **.NET 4.5** is recommended.
 - Multi-client behavior is not supported. The configuration implemented by one client will be shared by all clients.
-- To add rows via an Automation script, use the **AS AddLocations** parameter.
+- To add rows via an automation script, use the **AS AddLocations** parameter.

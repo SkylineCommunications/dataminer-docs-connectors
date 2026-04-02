@@ -14,7 +14,7 @@ This connector allows DataMiner to communicate with the Baton QC server and obta
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                          | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                          | DCF Integration | Cassandra Compliant |
 |-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x   | Initial version Not all the attributes for each task are currently being used/pulled. Only the ones common to all the task types are used at the moment. | No                  | Yes                     |
 | 1.1.0.x   | New firmware version.                                                                                                                                    | No                  | Yes                     |

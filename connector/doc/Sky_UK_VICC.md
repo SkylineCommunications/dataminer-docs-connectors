@@ -23,7 +23,7 @@ When there are changes, data updates are sent by the application using the Signa
 
 ### Product Info
 
-| **Range** | **VICC Application Version** |
+| Range | VICC Application Version |
 |------------------|------------------------------|
 | 1.0.0.x          | V2.0                         |
 | 1.0.1.x          | V2.11.0                      |
@@ -39,9 +39,9 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or hostname of the server e.g. *bcam.broadcast.bskyb.com.*
+- **IP address/host**: The polling IP or hostname of the server e.g., *bcam.broadcast.bskyb.com.*
 
-- **IP port**: The IP port of the device, e.g. *80.*
+- **IP port**: The IP port of the device, e.g., *80.*
 
 - **Bus address**: This consists of the automation system and the channel to monitor, separated by a forward slash. If a proxy server needs to be bypassed, also specify *byPassProxy*. You can use a comma (",") or a semicolon (";") as a separator.
   For example: *byPassProxy;SYSTEM1/LVH* or *byPassProxy,SYSTEM1/LVH*.
@@ -53,8 +53,8 @@ This connector uses a WebSocket connection to receive the data from the SignalR 
 WEBSOCKET CONNECTION:
 
 - **Type of port:** TCP/IP
-- **IP address/host**: The polling IP of the device, e.g. *bcam.broadcast.bskyb.com.*
-- **IP port**: The IP port of the device, e.g. *80*.
+- **IP address/host**: The polling IP of the device, e.g., *bcam.broadcast.bskyb.com.*
+- **IP port**: The IP port of the device, e.g., *80*.
 - **Timeout of a single command (ms):** The timeout value for SignalR KeepAlive messages. The default value is 30 seconds.
 - **Number of retries:** The number of retries when a timeout is detected in the SignalR connection, with the SignalR Normal Retry Interval configured on the SignalR Configuration page. After this number of retries, the connector will retry indefinitely with the SignalR Max Retry Interval defined on the SignalR Configuration page. The default value is 10 retries.
 
@@ -69,7 +69,7 @@ This page contains numerous settings and parameters related to the configuration
 - With a toggle button, you can set the **Polling Mode** to either *Fast* or *Slow*. In **fast** polling mode, this connector polls the application **every minute**; in **slow** polling mode, this connector polls the device every hour. This page also displays the **URL** that is being polled and the **Polling HTTP Status Code** received from that request.
 - From version 1.0.1.1 of this connector onwards, the parameters **Maximum Number of Future Events** and **Maximum Number of Past Events** are also available on this page. These parameters allow you to specify how many events the element should poll from the API. To poll all 500 events, set Maximum Number of Future Events to *-1*.
 - With the **Debug Logging** toggle button, you can determine whether additional debug logging information should be added in the log file of the element. In case you encounter difficulties establishing a SignalR connection, we highly recommend enabling this setting.
-- The **Expected Follow Bus** parameter allows you to either define the full Follow Bus name or use a wildcard (e.g. LV\* refers to all Follow Buses that start with "LV"; \*VH refers to all Follow Buses that end with "VH"). Any events that do not match the specified name will be displayed in the **Follow Bus Mismatches Table**.
+- The **Expected Follow Bus** parameter allows you to either define the full Follow Bus name or use a wildcard (e.g., LV\* refers to all Follow Buses that start with "LV"; \*VH refers to all Follow Buses that end with "VH"). Any events that do not match the specified name will be displayed in the **Follow Bus Mismatches Table**.
 - Finally, this page also contains the **Duplicated Events Table**, which displays all detected scheduled items with the same start date/time. These duplicate events are **not included** in the Future Events table.
 
 ### SignalR Configuration

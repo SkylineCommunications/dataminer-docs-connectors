@@ -6,7 +6,7 @@ uid: Connector_help_Avcom_of_Virginia_RSA-2500B
 
 The **Avcom of Virginia RSA-2500B** is used as a **spectrum analyzer** that measures the magnitude of an input signal versus the frequency within the full frequency range of the instrument. Its primary use is to measure the power of the spectrum of known and unknown signals.
 
-This connector uses a **serial** connection to gather data from the device. Critical information related to the **spectrum analyzer** is displayed on a dedicated Spectrum Analyzer page, where advanced configuration is possible, e.g. adjusting the **Center Frequency** and **Resolution Bandwidth**.
+This connector uses a **serial** connection to gather data from the device. Critical information related to the **spectrum analyzer** is displayed on a dedicated Spectrum Analyzer page, where advanced configuration is possible, e.g., adjusting the **Center Frequency** and **Resolution Bandwidth**.
 
 ## About
 

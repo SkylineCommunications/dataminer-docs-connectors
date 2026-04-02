@@ -34,7 +34,7 @@ Range **1.0.0.x** of this connector uses a Simple Network Management Protocol (S
 
 SNMP CONNECTION:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 SNMP Settings:
 
@@ -221,7 +221,7 @@ With four buttons at the bottom of the page, you can execute the following actio
 
 ### Tools
 
-This page displays the **License Status Table** and the **License Options**, i.e. *Generate License Request*, *Apply License File* or *Revoke License File.*
+This page displays the **License Status Table** and the **License Options**, i.e., *Generate License Request*, *Apply License File* or *Revoke License File.*
 
 ### Alarms
 

@@ -134,6 +134,8 @@ The connector is built to allow multiple firmware versions. If a firmware versio
 
 The most adequate version is the closest and lowest version compared to the current firmware version.
 
-E.g. Current Firmware Version 1.6.58 - the most adequate version will be 1.6.57b.
+For example:
 
-E.g. Current Firmware Version 1.6.79 - the most adequate version will be 1.6.74.
+- Current firmware version 1.6.58: the most adequate version will be 1.6.57b.
+
+- Current firmware version 1.6.79: the most adequate version will be 1.6.74.

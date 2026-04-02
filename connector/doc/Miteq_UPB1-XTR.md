@@ -12,7 +12,7 @@ This connector uses SNMP to monitor and configure the Miteq UPB1-XTR.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                   | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                                   | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                                                   | No                  | Yes                     |
 | 2.0.0.x [SLC Main]   | **Impacting changes** when moving from another range to this one. Recreated version to match the UX of the Miteq DNB1-XTR 1.0.0.X | No                  | Yes                     |
@@ -50,7 +50,7 @@ The connector contains 5 pages.
 
 This page displays information regarding the **Device Number**, **Serial Number** and **Firmware**, as well as the current **Voltage** and **Temperature** of the unit.
 
-In addition, it allows you to change the **Device Name**, permit or prohibit the **Firmware Upgrade**, and configure the **Password**, **System Clock**, **Logout** **Time** due to inactivity, and **Frequency of Web Alarm** (i.e. the frequency with which the web alarm status is refreshed).
+In addition, it allows you to change the **Device Name**, permit or prohibit the **Firmware Upgrade**, and configure the **Password**, **System Clock**, **Logout** **Time** due to inactivity, and **Frequency of Web Alarm** (i.e., the frequency with which the web alarm status is refreshed).
 
 The page contains one page button, **Network**, which opens a subpage where you can change **Network and SNMP settings**.
 

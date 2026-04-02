@@ -34,7 +34,7 @@ This connector uses **SNMP** commands to get information from or set information
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: (Not used)
 
 **SNMP Settings**:

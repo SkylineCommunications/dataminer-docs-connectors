@@ -4,7 +4,7 @@ uid: Connector_help_Verizon_WM_Ticketing
 
 # Verizon WM Ticketing
 
-The Verizon WM Ticketing connector is used to handle the Verizon VSAT business logic towards the automation of the ticketing workflow. The connector interacts, directly or indirectly, with collector elements, Correlation rules, and Automation scripts.
+The Verizon WM Ticketing connector is used to handle the Verizon VSAT business logic towards the automation of the ticketing workflow. The connector interacts, directly or indirectly, with collector elements, correlation rules, and automation scripts.
 
 ## About
 
@@ -14,9 +14,9 @@ As this is a virtual connector, **no data traffic** will be shown **in the Strea
 
 1. The Correlation engine listens for and captures **information events** from collector elements.
 
-1. The Correlation engine triggers an **Automation script**, passing along the ticketing message.
+1. The Correlation engine triggers an **automation script**, passing along the ticketing message.
 
-1. The Automation script selects the **Verizon WM Ticketing (WMT) element** responsible for handling the ticketing workflow and forwards the message via a parameter set.
+1. The automation script selects the **Verizon WM Ticketing (WMT) element** responsible for handling the ticketing workflow and forwards the message via a parameter set.
 
    The WMT element is selected based on the **DMA ID** of the triggering collector. The goal is to process the ticket on the same DMA when possible. If no WMT element is found, the message is sent to any active WMT element within the DMS.
 

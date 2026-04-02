@@ -125,9 +125,9 @@ The **TVA Files Monitoring Table** displays how many files have been successfull
 
 The parameter **TVA Files Downloaded** counts how many files have been downloaded during the period specified by the parameter **TVA Monitoring Period**.
 
-The **Last Processed File Timestamp** indicates when a file was last successfully processed. This timestamp is extracted from the file name, e.g. *20150530170117upc\_.xml*.
+The **Last Processed File Timestamp** indicates when a file was last successfully processed. This timestamp is extracted from the file name, e.g., *20150530170117upc\_.xml*.
 
-The **TVA Files Issues** table lists all the files that were not successfully processed, e.g. because of a parsing error. The content of those files will be ignored. You can manually acknowledge a file by setting **TVA Error Status** to *Acknowledge*. Acknowledged files will be deleted after the number of days specified by the parameter **Keep Acknowledged Files for ...**.
+The **TVA Files Issues** table lists all the files that were not successfully processed, e.g., because of a parsing error. The content of those files will be ignored. You can manually acknowledge a file by setting **TVA Error Status** to *Acknowledge*. Acknowledged files will be deleted after the number of days specified by the parameter **Keep Acknowledged Files for ...**.
 
 ### 3.3 Channels
 

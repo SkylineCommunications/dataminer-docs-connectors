@@ -36,7 +36,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination. Format: "*\<bucket name\>.s3.\<region\>.amazonaws.com*", e.g. "mybucket*.s3.eu-west-2.amazonaws.com*".
+- **IP address/host**: The polling IP or URL of the destination. Format: "*\<bucket name\>.s3.\<region\>.amazonaws.com*", e.g., "mybucket*.s3.eu-west-2.amazonaws.com*".
 - **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 

@@ -50,7 +50,7 @@ On the **General** page, configure the **County ID** for which this collector wi
 
 In the **Provisioning Share Location** parameters, fill in the location of the LPI and SDP folders along with the credentials to access these.
 
-With the **Starting Period Minute**, indicate when the first new period with Agama data after the hour starts (e.g. if a new period starts every xx:01, set the parameter to 1). Indicate in **Period Length** how long a period takes (e.g. 4 minutes). After a period window is closed, it will take some time before the Agama files are created and transferred to the collector. With **Period Margin**, you can configure how long the connector should wait for these files before filling in default N/A values. After the period margin has passed, data will be written into the parameter tables within 10 seconds.
+With the **Starting Period Minute**, indicate when the first new period with Agama data after the hour starts (e.g., if a new period starts every xx:01, set the parameter to 1). Indicate in **Period Length** how long a period takes (e.g., 4 minutes). After a period window is closed, it will take some time before the Agama files are created and transferred to the collector. With **Period Margin**, you can configure how long the connector should wait for these files before filling in default N/A values. After the period margin has passed, data will be written into the parameter tables within 10 seconds.
 
 The consumer elements could be located on a different server and the collector element has the *any* IP configured on the connection settings. As a server could have different network cards, it is not easy to automatically detect which IP the consumers should use to reach the collector. This can be configured in the appropriate **Listening Socket** parameters. Fill in the socket that the consumers need to use to reach the collector in the format *IP:Port*. The port needs to be exactly the same as defined in the connections configured during element creation.
 
@@ -120,7 +120,7 @@ The **Log Result** table will display the logging in case the **Log** **Request 
 
 ### Other pages
 
-The other pages contain the raw data, e.g. all devices, households, channels, etc. These pages are not meant to be consulted. To view this data, use the manager UI instead.
+The other pages contain the raw data, e.g., all devices, households, channels, etc. These pages are not meant to be consulted. To view this data, use the manager UI instead.
 
 ## Notes
 

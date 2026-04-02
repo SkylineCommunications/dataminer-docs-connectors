@@ -40,10 +40,10 @@ This connector uses an SNMP connection and requires the following input during e
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *62.245.205.52.*
+- **IP address/host**: The polling IP of the device, e.g., *62.245.205.52.*
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 #### Serial secondary connection
 

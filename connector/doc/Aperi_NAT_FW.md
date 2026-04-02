@@ -16,7 +16,7 @@ This connector is used to monitor Aperi's Network Address Translator (NAT) Firew
 | 2.0.0.x | Connector re-write for SRM. New API. | - | All statistical data will be lost when you upgrade from the previous version. Visio drawings for the 1.0.0.x branch are incompatible with this branch. |
 | 2.0.1.x [Obsolete] | Redesign of Manage Device pages. Included device table and changed FK relation to map this. | 2.0.0.7 | Automation needs to be configured to use the right parameter IDs. Function resources have changed. |
 | 2.0.2.x [Obsolete] | Changed parameter descriptions of parameters 2010 and 2013. Added new table columns on Senders and Create Device Table. | 2.0.1.5 | All statistical data will be lost for parameters 2010 and 2013 when you upgrade from the previous version. Visio drawings for the 2.0.1.x branch may be incompatible. |
-| 2.0.3.x [SLC Main] | Added exception values to parameters 638 and 639. Changed parameter description of parameter 2803. Added new table columns + changed display order of the tables 430, 460, 610, 630, 650, 670, 690, 840, 860 and 1250. | 2.0.2.4 | Visio drawings and Automation scripts for the 2.0.2.x branch (and previous) may be incompatible. |
+| 2.0.3.x [SLC Main] | Added exception values to parameters 638 and 639. Changed parameter description of parameter 2803. Added new table columns + changed display order of the tables 430, 460, 610, 630, 650, 670, 690, 840, 860 and 1250. | 2.0.2.4 | Visio drawings and automation scripts for the 2.0.2.x branch (and previous) may be incompatible. |
 
 ### Product Info
 
@@ -74,13 +74,13 @@ This page displays a table with information related to the Ethernet port.
 
 ### TX Interfaces
 
-This page displays the tables relates to the TX interfaces, i.e. **TX Interfaces VLANS** and **TX Interfaces Host**.
+This page displays the tables relates to the TX interfaces, i.e., **TX Interfaces VLANS** and **TX Interfaces Host**.
 
 This page has a subpage called **Statistics**, which contains information related to **TX Interface Statistics**, including **TX Session**, **TX PDV Statistics**, **TX Session Payload** and **TX Session Monitored PIDs**.
 
 ### RX Interfaces
 
-This page displays the tables related to the RX interfaces, i.e. **RX Interfaces VLANS** and **RX Interfaces Host**.
+This page displays the tables related to the RX interfaces, i.e., **RX Interfaces VLANS** and **RX Interfaces Host**.
 
 This page has a subpage called **Statistics**, which contains information related to **RX Interface Statistics**, including **RX Session**, **RX PDV Statistics**, **RX Session Payload** and **RX Session Monitored PIDs**.
 

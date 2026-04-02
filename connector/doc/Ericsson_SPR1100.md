@@ -36,7 +36,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
 - **IP port**: The port of the destination. This is set to *80.*
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
@@ -49,7 +49,7 @@ The connector has **6** **timers**:
 - **Cisco Parameters**: Every 2 seconds, all switching parameters of Cisco elements in the DMS are retrieved.
 - **Boosted Status Timer**: This timer is only run when the device is rebooted. It polls for the device status every 7 seconds to see whether the device is up again.
 - **Alarm/Status Timer**: Every 30 seconds, the active alarms and status are polled.
-- **Fast Timer**: Every minute, all fast data is polled, e.g. bit rates.
+- **Fast Timer**: Every minute, all fast data is polled, e.g., bit rates.
 - **Medium Timer**: Every 10 minutes, all generic data concerning services, streams and components is polled.
 - **Slow Timer**: Every hour, slowly updating data such as the build, firmware and software versions is updated.
 

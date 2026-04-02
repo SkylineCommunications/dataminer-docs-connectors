@@ -63,7 +63,7 @@ SNMP Settings:
 
 ### General
 
-This page displays general system information (e.g. System Up Time, System CPU Usage, System Memory Available, etc.).
+This page displays general system information (e.g., System Up Time, System CPU Usage, System Memory Available, etc.).
 
 The following subpages are available:
 
@@ -120,7 +120,7 @@ From version **2.0.1.2** onwards, the layout of the data pages has changed to ac
 
 ### General
 
-This page is similar to the General page in previous ranges but shows additional general information (e.g. System Software Version, System Memory Used, etc.).
+This page is similar to the General page in previous ranges but shows additional general information (e.g., System Software Version, System Memory Used, etc.).
 
 It also allows you to save the SSI config.
 
@@ -204,13 +204,13 @@ The page displays an overview of the RIP statistics.
 
 ### Accounting
 
-This page displays the **SAA and SAP Monitoring** tables from both devices with newer firmware and devices with older (i.e. legacy) firmware. It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
+This page displays the **SAA and SAP Monitoring** tables from both devices with newer firmware and devices with older (i.e., legacy) firmware. It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
 
 This page contains the following buttons:
 
 - **Refresh Table**: Forces a refresh of the table using the current settings on the **Table Configuration** page.
 - **Get Files:** Tries to get XML files before the next timer.
-- **Table Configuration:** Opens a subpage that allows you to define how the SAA Statistics table should be cleaned up, i.e. by number of rows or by entry age, how many rows should be cleaned up each time, and the time window for the first poll.
+- **Table Configuration:** Opens a subpage that allows you to define how the SAA Statistics table should be cleaned up, i.e., by number of rows or by entry age, how many rows should be cleaned up each time, and the time window for the first poll.
 - **SAA Accounting Files**: Opens a subpage with the statistics tables for the SAA accounting files.
 - **SAP Accounting Files**: Opens a subpage with the statistics tables for the SAP accounting files.
 - **FTP Configuration:** Opens a subpage where you can define the credentials to access the FTP server as well as the folder where the files should be found. Also contains status information on the connection.
@@ -223,7 +223,7 @@ This page contains the following buttons:
 
 ### General
 
-This page displays general system information (e.g. System Up Time, System CPU Usage, System Memory Available, etc.).
+This page displays general system information (e.g., System Up Time, System CPU Usage, System Memory Available, etc.).
 
 The following subpages are available:
 
@@ -366,7 +366,7 @@ This page displays NGE key group bindings and statistics.
 
 Accounting files contain SAA, SAP, and SDP statistics for a 5-minute interval. Accounting files are retrieved every 2.5 minutes.
 
-This page displays the **SAA, SAP, and SDP Monitoring** tables from both devices with newer firmware and devices with older (i.e. legacy) firmware (72xx). It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
+This page displays the **SAA, SAP, and SDP Monitoring** tables from both devices with newer firmware and devices with older (i.e., legacy) firmware (72xx). It also shows the **Last Check Date** and **Last Entry Date**, which indicate the last time XML files were requested and the most recent date of the parsed XML files, respectively. The monitoring table uses the data parsed from XML files that fills the statistics table. It groups the tests by name and allows trending.
 
 This page contains the following buttons:
 

@@ -32,7 +32,7 @@ This connector exports other connectors, each of them representing an Observer R
 
 ### Exported connectors
 
-| **Exported Connector**                                                                                        | **Description** |
+| Exported Connector                                                                                        | Description |
 |--------------------------------------------------------------------------------------------------------------|-----------------|
 | [Volicon Observer RPM - Observer Probe](xref:Connector_help_Volicon_Observer_RPM_-_Observer_Probe) | Observer Probe  |
 
@@ -46,7 +46,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. 10.17.3.4
+- **IP address/host**: The polling IP of the device, e.g., 10.17.3.4
 
 SNMP Settings:
 
@@ -68,7 +68,7 @@ This page is used to **import video channels from a CSV file.** To do so, select
 
 This page displays the **Trap Overview** table. When a **trap is received**, when necessary, an entry is added in this table for the corresponding **video channel**. For each entry, a possible alarm can be set either by a user or by a trap.
 
-At the bottom of the page, you can choose one of the channels and **clear the alarms** of this channel. Alarms can also be **cleared manually** in the table (e.g. in case a 'clear alarm' trap was missed).
+At the bottom of the page, you can choose one of the channels and **clear the alarms** of this channel. Alarms can also be **cleared manually** in the table (e.g., in case a 'clear alarm' trap was missed).
 
 Finally, you can also **delete channels** from the table by selecting them in the drop-down menu at the bottom of the page. This drop-down menu displays all channels except those that have been imported via a CSV file.
 

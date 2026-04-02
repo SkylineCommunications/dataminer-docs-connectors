@@ -108,7 +108,7 @@ Final note: Keep in mind that these are actual processes. If there are for insta
 
 ### Sensors
 
-On this page you can see the current value, type, units and status of all sensors in the system. However, trending and alarm monitoring are not possible on these values, because the type of sensor reading is not known and not the same for all sensors (e.g. string, number, discreet).
+On this page you can see the current value, type, units and status of all sensors in the system. However, trending and alarm monitoring are not possible on these values, because the type of sensor reading is not known and not the same for all sensors (e.g., string, number, discreet).
 
 Reading the sensor values happens in two stages. In the first stage, all sensor IDs and values are retrieved and set in the table. In a second stage, the extra information is retrieved sensor by sensor. This step is considerable slower than the first step, and it is the last step in the standard poll cycle.
 

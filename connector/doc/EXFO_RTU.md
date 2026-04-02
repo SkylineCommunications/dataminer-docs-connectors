@@ -65,7 +65,7 @@ Via a page button, you can also access the **Security** subpage, where you can s
 
 ### Sensors
 
-This page contains sensor data, i.e. **LED sensors, Temperature sensors, Relays and Voltage sensors.**
+This page contains sensor data, i.e., **LED sensors, Temperature sensors, Relays and Voltage sensors.**
 
 ### Network
 

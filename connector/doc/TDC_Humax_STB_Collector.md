@@ -8,7 +8,7 @@ This connector can be used to retrieve information from managed set-top boxes (S
 
 ## About
 
-The STB collectors are grouped per region (i.e. per back-end manager), which means that all the STBs from a specific region will be managed by a collector that is in turn managed by the back-end manager for that region.
+The STB collectors are grouped per region (i.e., per back-end manager), which means that all the STBs from a specific region will be managed by a collector that is in turn managed by the back-end manager for that region.
 
 One collector will first need to collect the STB MACs that will be inserted into the IAM database, in order to provision the other collectors.
 
@@ -96,7 +96,7 @@ On this page, you can find and configure extra information regarding the STBs:
 
 ### Debug
 
-This page contains a summary of information that can also be found on other pages, i.e. **STB Timestamp**, **STB Period**, **STB Month Trigger Time**, **STB BER Threshold**, **STB LQ Threshold**, **STB VLQ Threshold**.
+This page contains a summary of information that can also be found on other pages, i.e., **STB Timestamp**, **STB Period**, **STB Month Trigger Time**, **STB BER Threshold**, **STB LQ Threshold**, **STB VLQ Threshold**.
 
 You can also find the following additional information:
 

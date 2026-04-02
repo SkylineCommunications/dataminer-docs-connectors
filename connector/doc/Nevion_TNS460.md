@@ -14,7 +14,7 @@ The layout of the connector mirrors the web interface of the device as much as p
 
 ### Version Info
 
-| **Range**            | **Description**                                                        | **DCF Integration** | **Cassandra Compliant** |
+| Range            | Description                                                        | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version.                                                       | No                  | Yes                     |
 | 1.0.1.x [SLC Main]   | Tables using naming and display key.                                   | No                  | Yes                     |

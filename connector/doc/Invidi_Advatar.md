@@ -56,6 +56,6 @@ The element consists of the following data pages:
 - **Service Mux**: Lists the muxes communicating with the BDS, along with the services advertised by each of them.
 - **SCTE35 Connection**: Displays the status of the connection to the SCTE35 receivers configured in the system.
 - **Cue Connection Statistics**: Displays a statistics table for the received cues.
-- **In-band Connection Statistics**: Displays a statistics table for in-band data (i.e. cues/view list/break descriptor/vote now) sent to the set-top boxes.
+- **In-band Connection Statistics**: Displays a statistics table for in-band data (i.e., cues/view list/break descriptor/vote now) sent to the set-top boxes.
 - **BDS Errors**: Lists the problems encountered by viewers, which may or may not affect operations.
 - **Trap Table**: Lists the traps received from the device. An automatic cleanup mechanism is available that prevents endlessly growing tables.

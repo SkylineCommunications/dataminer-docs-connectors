@@ -106,7 +106,7 @@ Query WMI failed. Retrieving the data failed. (hr = 0x80041017) for numerous WQL
 
 **Cause**
 
-Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the *Win32_PerfRawData_PerfProc_Process* class seems to be incomplete (i.e. it misses for example the IDProcess property, but also many others).
+Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the *Win32_PerfRawData_PerfProc_Process* class seems to be incomplete (i.e., it misses for example the IDProcess property, but also many others).
 
 **Solution**
 

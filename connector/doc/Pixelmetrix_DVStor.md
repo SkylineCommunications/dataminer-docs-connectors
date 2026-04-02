@@ -20,21 +20,21 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.244*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.244*.
 - **Device address**: Not required.
 
 **SNMP Settings:**
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 This connector also uses a serial connection and requires the following input during element creation:
 
 **SERIAL CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.244.*
-- **IP port**: The IP port of the device, e.g. *80*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.244.*
+- **IP port**: The IP port of the device, e.g., *80*.
 - **Bus address**: The bus address of the device. Not required.
 
 ## Usage

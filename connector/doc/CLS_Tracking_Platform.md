@@ -18,7 +18,7 @@ This connector reads TXT files in CSV format from an FTP drive with geographic c
 
 ### Exported connectors
 
-| **Exported Connector**                                                                          | **Description**                                                                                                               |
+| Exported Connector                                                                          | Description                                                                                                               |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
 | [CLS Tracking Platform - Tracker](xref:Connector_help_CLS_Tracking_Platform_-_Tracker) | Exported protocol for each tracker, showing the last known position coordinates, the timestamp and other general information. |
 
@@ -48,7 +48,7 @@ The **GPS Table** is a logger table with all the valid information retrieved fro
 
 ### Trackers
 
-This page contains the **Trackers Table**, which contains the most recent value from the **GPS Table**, i.e. the last known position and message timestamp for each tracker. This is an export table that generates a DVE for each of those trackers.
+This page contains the **Trackers Table**, which contains the most recent value from the **GPS Table**, i.e., the last known position and message timestamp for each tracker. This is an export table that generates a DVE for each of those trackers.
 
 Manual removal of individual DVEs or of all DVEs is possible, as well as automatic removal of deleted DVEs.
 

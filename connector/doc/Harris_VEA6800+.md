@@ -32,9 +32,9 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: The IP port of the device, by default *161.*
-- **Bus address**: This is a combination of the frame number, slot number and card type (ETH or ICE): "*\<frameNumber\>.\<slotID\>.\<cardType\>*" (e.g. frame 1, slot 12, ETH Card = bus address *1.12.ETH).*
+- **Bus address**: This is a combination of the frame number, slot number and card type (ETH or ICE): "*\<frameNumber\>.\<slotID\>.\<cardType\>*" (e.g., frame 1, slot 12, ETH Card = bus address *1.12.ETH).*
 
 ## Usage
 

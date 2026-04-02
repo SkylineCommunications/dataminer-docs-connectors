@@ -64,7 +64,7 @@ The element has the following pages:
 - **I/O:** Contains the input and output settings and status information.
 - **Down Converter A**: Contains down conversion setting parameters of Channel A.
 - **Down Converter B**: Contains down conversion setting parameters of Channel B.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 > [!NOTE]
 > If the setting of a parameter depends on another parameter, when the user tries to set the second parameter before the first parameter is set, a pop-up window will be displayed indicating what to do first. In this case, the user must set the first parameter according to the information in the pop-up window before setting the second parameter. For example, in order to set Coring Level (on the Down Converter pages), the Coring has to be set to *Level_dep*.

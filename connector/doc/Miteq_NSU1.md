@@ -4,7 +4,7 @@ uid: Connector_help_Miteq_NSU1
 
 # Miteq NSU1
 
-This is a New Switchover Unit (NSU) redundant switchover system with a fixed 1:1 configuration. This means that one backup unit is present for one primary unit. Other models can have other (non-)fixed configurations (e.g. NSU2 = 1:2 and NSUN = 1:1 to 1:12). If a primary unit fails, the backup unit will take over, on the condition that **Redundancy Mode** is set to *Automatic*.
+This is a New Switchover Unit (NSU) redundant switchover system with a fixed 1:1 configuration. This means that one backup unit is present for one primary unit. Other models can have other (non-)fixed configurations (e.g., NSU2 = 1:2 and NSUN = 1:1 to 1:12). If a primary unit fails, the backup unit will take over, on the condition that **Redundancy Mode** is set to *Automatic*.
 
 If a primary unit fails, the backup unit will take over, on the condition that **Redundancy Mode** is set to *Automatic*.
 
@@ -48,7 +48,7 @@ This 2.0.0.x range of this connector uses a Simple Network Management Protocol (
 
 The 1.0.0.x range of this connector uses a serial connection and requires the following input during element creation:
 
-- **IP address/host**: The polling IP of the device e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device. The range is defined from *64* to *95.*
 

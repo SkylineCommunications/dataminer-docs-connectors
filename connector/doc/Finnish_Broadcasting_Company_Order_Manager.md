@@ -76,7 +76,7 @@ This is information that is available but should not be updated manually in the 
 
 The **User Groups** table contains a list of all user groups in the DMS.
 
-This table can be used to indicate if a user group is *internal* (i.e. an YLE user group) or *external* (i.e. a group from another company).
+This table can be used to indicate if a user group is *internal* (i.e., an YLE user group) or *external* (i.e., a group from another company).
 
 As external companies can have their own dedicated **EBU** element, this can also be configured in the **User Groups** table.
 

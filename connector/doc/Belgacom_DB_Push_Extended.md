@@ -30,7 +30,7 @@ To configure the element:
 
    - **Table Name** should contain the name of the database table that the data will be offloaded to.
    - **SQLLDR Arguments** are arguments that can be used to pass to SQLLDR (example *BINDSIZE=5242880*).
-   - **Oracle Folder** is the folder where sqlldr.exe is located (e.g. *C:\oracle\product\10.2.0\client_1\BIN\\*). The element will create the Oracle control files, which describe the offload CSV structures, and will place these control files in this folder.
+   - **Oracle Folder** is the folder where sqlldr.exe is located (e.g., *C:\oracle\product\10.2.0\client_1\BIN\\*). The element will create the Oracle control files, which describe the offload CSV structures, and will place these control files in this folder.
    - **Data Folder** is the folder where the extended offload CSV files are located. These files will be placed into the database table configured in **Table Name**.
    - **HDD Failures Data Folder** is the folder where the HDD Failures offload CSV files are located. These files will be placed into the OFFL_HDD database table (not configurable).
 

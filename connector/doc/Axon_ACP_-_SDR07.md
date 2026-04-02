@@ -46,7 +46,7 @@ On this page, you can find the status and settings related to the amplifier.
 
 ### Alarm Priority
 
-This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

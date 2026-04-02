@@ -145,7 +145,7 @@ If you want to change the value of both Rx Frequency and Local Oscillator, you c
 
 1. Set the active Local Oscillator to the desired value.
 
-In case both Local Oscillator 1 and 2 are in use, you need to set both to 0. Note also that the procedure above only applies when you want to change both values while keeping a valid range, e.g. changing RX Frequency from 3 GHz to 7 GHz while also changing the Local Oscillator from 5 GHz to 8 GHz.
+In case both Local Oscillator 1 and 2 are in use, you need to set both to 0. Note also that the procedure above only applies when you want to change both values while keeping a valid range, e.g., changing RX Frequency from 3 GHz to 7 GHz while also changing the Local Oscillator from 5 GHz to 8 GHz.
 You can also configure an alternative RF Input to the desired values and then switch the active input over to the new configuration, as depicted below.
 ![2020-12-17 16_15_29-DataMiner - Internet Explorer.png](~/connector/images/CISCO_D9854_2020-12-17_16_15_29-DataMiner_-_Internet_Explorer.png)
 

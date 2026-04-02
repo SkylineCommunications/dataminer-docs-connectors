@@ -45,7 +45,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP of the device.
   - **IP port**: Required. Default: *2050*.
-  - **Bus address**: Required. Uses the format UU:PP, where UU is the unit address of the IP server on RollNet network (e.g. 06), and PP is the unique port address assigned by the server (e.g. 01).
+  - **Bus address**: Required. Uses the format UU:PP, where UU is the unit address of the IP server on RollNet network (e.g., 06), and PP is the unique port address assigned by the server (e.g., 01).
 
 ### Web Interface
 

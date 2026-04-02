@@ -34,7 +34,7 @@ This connector uses an HTTPS connection to communicate with the Telenor adaptati
 
 HTTP CONNECTION:
 
-- **IP address/host**: E.g. [https://869nz3tq3l.execute-api.eu-west-1.amazonaws.com](https://869nz3tq3l.execute-api.eu-west-1.amazonaws.com/)
+- **IP address/host**: E.g., [https://869nz3tq3l.execute-api.eu-west-1.amazonaws.com](https://869nz3tq3l.execute-api.eu-west-1.amazonaws.com/)
 - **IP port**: The IP port of the destination (default: *443*).
 
 ### Initialization

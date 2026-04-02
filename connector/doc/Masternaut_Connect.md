@@ -40,8 +40,8 @@ HTTP CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling URL. e.g. <https://api.masternautconnect.com/connect-webservices/services/public/v1/customer/>.
-  - **IP port**: The IP port of the device. e.g. *80*, *443*.
+  - **IP address/host**: The polling URL. e.g., <https://api.masternautconnect.com/connect-webservices/services/public/v1/customer/>.
+  - **IP port**: The IP port of the device. e.g., *80*, *443*.
   - **Bus address**: Not required.
 
 ### Initialization

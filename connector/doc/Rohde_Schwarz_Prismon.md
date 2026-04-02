@@ -69,7 +69,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### General
 
-This page allows you to monitor the system parameters, as well as configure specific system parameters (e.g. System Name, System Contact, System Location, etc.).
+This page allows you to monitor the system parameters, as well as configure specific system parameters (e.g., System Name, System Contact, System Location, etc.).
 
 The page also contains information regarding the **Polling State**, the last obtained **Status Code** and the **URL** used in the latest request. You can also disable the device polling by changing the **Polling State**.
 
@@ -81,7 +81,7 @@ This page allows you to monitor the **service status** of the **SPU sources**. T
 
 The page also contains page buttons to the following pages:
 
-- **Input Mode:** Contains the table used to configure all the input information for the SPU sources (e.g. Input Mode, Input Address, Input Port).
+- **Input Mode:** Contains the table used to configure all the input information for the SPU sources (e.g., Input Mode, Input Address, Input Port).
 - **Main Configuration**: Contains the configuration information regarding the source **Aspect Ratio** and **Audio Filters**.
 - **T2MIParameter:** Contains the **PID** and **PLP** configured for each module.
 - **Analyzing**: Contains the configuration of the error analysis for each module.

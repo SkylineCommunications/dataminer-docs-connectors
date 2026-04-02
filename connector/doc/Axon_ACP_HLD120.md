@@ -68,7 +68,7 @@ This element has the following data pages:
 - **Marker**: Contains the marker preset settings and status parameters.
 - **Settings**: Contains different configuration parameters.
 - **Network**: Displays network settings and status parameters.
-- **Alarm Priority**: Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

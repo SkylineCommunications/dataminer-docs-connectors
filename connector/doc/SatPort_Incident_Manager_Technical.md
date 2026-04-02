@@ -20,8 +20,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The iPaaS endpoint URL (e.g. `https://apim-integration-dev-weu.azure-api.net/itsm/tickets`).
-- **IP port**: The port of the destination (e.g. `443`).
+- **IP address/host**: The iPaaS endpoint URL (e.g., `https://apim-integration-dev-weu.azure-api.net/itsm/tickets`).
+- **IP port**: The port of the destination (e.g., `443`).
 
 ### Initialization
 

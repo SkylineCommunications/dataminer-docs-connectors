@@ -44,7 +44,7 @@ You can add data to the table **HTTP Queries** by:
 
 - Adding data row by row via the right-click menu of the table:
 
-  1. Right-click the **HTTP Queries** table, and select the VERB, e.g. Add GET, or add a new header to the query.
+  1. Right-click the **HTTP Queries** table, and select the VERB, e.g., Add GET, or add a new header to the query.
   1. Fill in the **URI**, **Interval**, and **Timeout** values. The URI has to have the following structure: *http://\<address\>*.
   1. After you have successfully added a row, you can define a **User Name**, a **Password**, and a **Request Body**. You can also edit the **URI**, **Verb**, **Interval**, and **Timeout**.
 

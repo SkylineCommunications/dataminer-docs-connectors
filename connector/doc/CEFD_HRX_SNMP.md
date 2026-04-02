@@ -105,16 +105,16 @@ The page contains several page buttons:
 
 - Below the Routing Table, the **Add New Route** page button allows you to preconfigure the parameters for a new entry in the **Routing Table** and then add the entry by clicking the **Create** button.
 - Below the **ARP Table**, the **Add Static ARP** page button allows you to preconfigure the parameters for a new entry in the **ARP Table** and then add the entry by clicking the **Create** button.
-- The **Other Configs** page button displays settings related to **other network configurations** (e.g. Associated CEFD HTO static and dynamic IPs, etc.).
+- The **Other Configs** page button displays settings related to **other network configurations** (e.g., Associated CEFD HTO static and dynamic IPs, etc.).
 
 ### Configuration - ECM
 
 This page contains the following tables:
 
-- The **ECM** **Channel Table**, which contains the configuration parameters of each ECM (**Ethernet Control Module**) channel (e.g. state, type, etc.).
+- The **ECM** **Channel Table**, which contains the configuration parameters of each ECM (**Ethernet Control Module**) channel (e.g., state, type, etc.).
 - The **ECM Remotes Table**, which displays status information regarding the remote units connected to the hub.
 
-A page button at the top allows you to set the **ECM Hub configuration** parameters (e.g. ECM Multicast IP, ECM Guard Band, etc.).
+A page button at the top allows you to set the **ECM Hub configuration** parameters (e.g., ECM Multicast IP, ECM Guard Band, etc.).
 
 ### Status - Statistics - Ethernet
 
@@ -195,7 +195,7 @@ This page displays the **Interface Table**, which contains information on the ne
 
 This page displays the **Demodulator Configuration Table**, containing the configuration values of the available tuners in the demodulator unit.
 
-At the bottom of the page, the **global demodulator settings** can be configured (e.g. **Local Oscillator Mix type** and **frequency**).
+At the bottom of the page, the **global demodulator settings** can be configured (e.g., **Local Oscillator Mix type** and **frequency**).
 
 ### Configuration - WAN - ACM
 
@@ -207,7 +207,7 @@ This page allows you to configure the **Low-Noise Block** **Downconverter (LNB)*
 
 ### Configuration - Network
 
-On the right side of this page, you can find several parameters related to the HTO-1 and Working Mode configuration and parameters related to **other network configurations** (e.g. associated CEFD HTO static and dynamic IPs).
+On the right side of this page, you can find several parameters related to the HTO-1 and Working Mode configuration and parameters related to **other network configurations** (e.g., associated CEFD HTO static and dynamic IPs).
 
 On the left side of the page, you can find the **ARP Table**, which is used for network mapping.
 

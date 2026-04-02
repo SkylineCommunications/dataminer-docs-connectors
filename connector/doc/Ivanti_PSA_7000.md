@@ -42,9 +42,9 @@ SNMP CONNECTION:
 
 SNMPv2 settings:
 
-- **Port number**: The port of the connected device, e.g. *161.*
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161.*
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 ## Usage
 

@@ -4,7 +4,7 @@ uid: Connector_help_Starlink_Enterprise_-_User_Terminal
 
 # Starlink Enterprise - User Terminal
 
-The Starlink Enterprise - User Terminal connector is exported by the parent connector [Starlink Enterprise](xref:Connector_help_Starlink_Enterprise). For each known user terminal, a separate child element (or "DVE", i.e. dynamic virtual element) using this connector will automatically be created. These DVEs contain only data related to the user terminal.
+The Starlink Enterprise - User Terminal connector is exported by the parent connector [Starlink Enterprise](xref:Connector_help_Starlink_Enterprise). For each known user terminal, a separate child element (or "DVE", i.e., dynamic virtual element) using this connector will automatically be created. These DVEs contain only data related to the user terminal.
 
 ## About
 

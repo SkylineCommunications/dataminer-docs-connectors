@@ -14,9 +14,9 @@ The **WISI LX61** connector is an SNMP based connector used to monitor and confi
 
 **SNMP CONNECTION**:
 
-\- **IP address/host**: the polling IP of the device e.g. *172.27.64.56*
+\- **IP address/host**: the polling IP of the device e.g., *172.27.64.56*
 
-\- **Device address**: is used by the connector e.g. *0*
+\- **Device address**: is used by the connector e.g., *0*
 
 **SNMP Settings**:
 

@@ -12,7 +12,7 @@ This connector interacts with the ETMS Platform via Apigee endpoints.
 
 ### Version Info
 
-| **Range**     | **Description**                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                    | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------------------|---------------------|-------------------------|
 | 1.0.0.x [SLC Main]   | Initial version                    | No                  | Yes                     |
 | 1.1.0.x              | New proxy DLL integrated           | No                  | Yes                     |
@@ -20,7 +20,7 @@ This connector interacts with the ETMS Platform via Apigee endpoints.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                    |
+| Range | Device Firmware Version                    |
 |------------------|------------------------------------------------|
 | 1.0.0.x          | 18.8.1.1.August18 (Wed, Aug 08 2018 20:09 GMT) |
 | 1.1.0.x          | 19.7.1.3.July19 (Wed, Jul 10 2019 23:32 GMT)   |

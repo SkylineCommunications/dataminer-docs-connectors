@@ -76,4 +76,4 @@ On the **Resources** subpage, you can view the polled Net Modem, Network, Group 
 
 ### Notes
 
-This connector is part of the VSAT Broadband Manager package, which also comes with low-code apps, dashboards, and Automation scripts.
+This connector is part of the VSAT Broadband Manager package, which also comes with low-code apps, dashboards, and automation scripts.

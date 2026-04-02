@@ -36,7 +36,7 @@ This is a serial connector that will send HTTP commands (default HTTP on port 80
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: The IP port of the device, set to default value port *80.*
 
 ## Usage

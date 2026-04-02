@@ -18,7 +18,7 @@ With this connector, you can search through all the elements in your DataMiner S
 
 ### Proactive System Monitoring
 
-**Challenge:** Ensuring that critical table entries (e.g. device status, service configurations) exist and remain updated.
+**Challenge:** Ensuring that critical table entries (e.g., device status, service configurations) exist and remain updated.
 
 **Solution:** The connector automatically checks specified tables at a set interval, verifying if key entries are present and up to date.
 

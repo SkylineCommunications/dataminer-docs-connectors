@@ -55,7 +55,7 @@ This page has several subpages:
 
 - **Date Time**: Configuration page where you can change the **system time** (available in multiple formats), **NTP settings**, **time zone**, etc.
 - **Network**: Displays the **Network Interfaces** table, where you can access and modify various information, **IPv4 address/netmask/gateway**, **Link Speed, Link Mode**, etc.
-- **IPV2**: Displays two tables, i.e. **IP Statistics** and **IP Configuration**.
+- **IPV2**: Displays two tables, i.e., **IP Statistics** and **IP Configuration**.
 
 ### Transport Stream
 

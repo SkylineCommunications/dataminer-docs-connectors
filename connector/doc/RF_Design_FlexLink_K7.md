@@ -12,7 +12,7 @@ The RF Design FlexLink K7 is a scalable L-Band switch matrix system in a 6RU/19"
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                     | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                                     | DCF Integration | Cassandra Compliant |
 |----------------------|---------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                                     | Yes                 | Yes                     |
 | 1.0.1.x [SLC Main]   | MatrixHelper class updated. Alarm Status and Threshold Alarm traps implemented. Changes in parameters descriptions. | Yes                 | Yes                     |
@@ -52,7 +52,7 @@ This page displays information about the device hardware, the **Unit** **Status*
 
 ### Input
 
-This page contains the **Inputs** table, with the name of each input and related info, e.g. **RF Power**, **Gain**, Failure Alarms, Thresholds, etc.
+This page contains the **Inputs** table, with the name of each input and related info, e.g., **RF Power**, **Gain**, Failure Alarms, Thresholds, etc.
 
 ### Output
 

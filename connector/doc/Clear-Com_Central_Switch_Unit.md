@@ -105,7 +105,7 @@ This page displays general-purpose information such as status of the **CPU** and
 
 ### Configurations
 
-On this page, you can change the configuration of the connector itself, e.g. **dynamic polling**.
+On this page, you can change the configuration of the connector itself, e.g., **dynamic polling**.
 
 ### Crosspoints
 

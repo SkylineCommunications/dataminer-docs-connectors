@@ -38,7 +38,7 @@ The web interface is only accessible when the client machine has network access 
 
 This page contains general information about the device. This includes the **LAN Status** and the list of **VM Guests**.
 
-It also shows the **Alarm Update Status**, i.e. if the alarm page is being updated or not.
+It also shows the **Alarm Update Status**, i.e., if the alarm page is being updated or not.
 
 ### HW Resources
 

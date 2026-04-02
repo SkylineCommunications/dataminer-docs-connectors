@@ -46,7 +46,7 @@ To run a flow, a **script** is started. This flow could take some time. To keep 
 
 To keep track of the lifecycle of the connector, you can add the **DMA/Element ID** of the **heartbeat element**.
 
-There is a limit on the number of tickets that can be created or scheduled, i.e. the **Max Trouble Ticket Count**. This needs to be configured via the **Event Storm** page button.
+There is a limit on the number of tickets that can be created or scheduled, i.e., the **Max Trouble Ticket Count**. This needs to be configured via the **Event Storm** page button.
 
 ## How to Use
 
@@ -54,4 +54,4 @@ When the connector has been configured as detailed above, it will run automatica
 
 ## Notes
 
-The connector will only work in a **SAM** system containing extra connectors and **Automation scripts**
+The connector will only work in a **SAM** system containing extra connectors and **automation scripts**

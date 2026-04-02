@@ -128,4 +128,4 @@ This page allows to define which tables the connector should retrieve from the d
 
 In version 1.0.2.2, DCF interfaces are generated for each stream in order to facilitate DCF connections.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).

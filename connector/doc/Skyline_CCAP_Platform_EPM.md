@@ -141,4 +141,4 @@ You can use the **Reset** button to remove existing data from tables and perform
 
 ## Notes
 
-The messaging system integration requires two Correlation rules and two Automation scripts that will pick up on the information events and send the corresponding message to a message listener to begin the logical flow.
+The messaging system integration requires two correlation rules and two automation scripts that will pick up on the information events and send the corresponding message to a message listener to begin the logical flow.

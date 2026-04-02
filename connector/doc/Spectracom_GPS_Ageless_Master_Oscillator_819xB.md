@@ -17,8 +17,8 @@ This connector uses a serial connection and requires the following input during 
 **SERIAL Connection:**
 
 - **Type of port:** TCP/IP.
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.145.1.12*.
-- **IP port**: The port of the destination, e.g. *13000*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.145.1.12*.
+- **IP port**: The port of the destination, e.g., *13000*.
 - **Timeout of a single command:** *1500 ms* (minimum).
 
 ## Usage

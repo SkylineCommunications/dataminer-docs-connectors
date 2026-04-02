@@ -14,7 +14,7 @@ This connector can be used to monitor parameters of the transmitter and configur
 
 ### Version Info
 
-| **Range**     | **Description**                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                    | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.1.x              | New MIB implementation. Cooling page added                                         | No                  | Yes                     |
 | 1.1.1.x [SLC Main]   | Based on version 1.0.1.5 Parameter sequence changed. Analog mode parameters added. | No                  | Yes                     |

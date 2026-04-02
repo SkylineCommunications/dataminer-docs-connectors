@@ -19,7 +19,7 @@ This connector uses a serial connection and requires the following input during 
 **SERIAL Connection:**
 
 - **Type of port:** The type of port of the connection, by default *TCP/IP*.
-- **IP address/host**: The polling IP of the device, e.g. *10.1.48.70*.
+- **IP address/host**: The polling IP of the device, e.g., *10.1.48.70*.
 - **IP port**: The IP port of the connection device, by default *22*.
 
 ## Usage

@@ -29,8 +29,8 @@ The UMG96 RM is suited for fixed mounting and can measure voltage, current, powe
 The Janitza Electronics UMG 96 RM protocol contains the following pages:
 
 - **General:** System information (**Description**, **Up Time**, **Name**).
-- **Power:** All power-related settings (e.g. **Voltage Phase**, **Current Phase**, **Real Power**, etc.).
+- **Power:** All power-related settings (e.g., **Voltage Phase**, **Current Phase**, **Real Power**, etc.).
 - **Energy:** The **Active Energy** and **Reactive Energy** settings.
 - **Total Harmonic Distortion:** The different **THD Voltage Phase** and **THD Current Phase** settings.
-- **Miscellaneous:** Additional information about the device (e.g. **frequence**, **temperature**).
+- **Miscellaneous:** Additional information about the device (e.g., **frequence**, **temperature**).
 - **User:** The **Jasic User Variable** settings.

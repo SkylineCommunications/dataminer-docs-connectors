@@ -12,7 +12,7 @@ The connector displays information about the different patches in a table and in
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                                    | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description                                                                                                                                    | DCF Integration | Cassandra Compliant |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.1          | Initial version.                                                                                                                                   | No                  | Yes                     |
 | 1.0.0.2          | Renamed ISDN 1 to Channel 1 and ISDN 2 to Channel 2. Added extra ISDN status values. Fixed remote addresses starting with 0. Reduced polling rate. | No                  | Yes                     |

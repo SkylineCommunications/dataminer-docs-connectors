@@ -20,7 +20,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 
@@ -40,7 +40,7 @@ The **Status** page displays the status parameters for the **Argus Alpha** devic
 
 ### Signals
 
-The **Signals** page only displays the **Controller Signals** parameters on the page itself. These are the general signal parameters for the device. To view the other signal parameters, you must use the page buttons on this page to access the pages in question. Some of the pages display tables (e.g. **Digital Inputs**), others display single parameters only (e.g. **Rectifier Signals**, **Converter Signals**).
+The **Signals** page only displays the **Controller Signals** parameters on the page itself. These are the general signal parameters for the device. To view the other signal parameters, you must use the page buttons on this page to access the pages in question. Some of the pages display tables (e.g., **Digital Inputs**), others display single parameters only (e.g., **Rectifier Signals**, **Converter Signals**).
 
 ### Alarms
 
@@ -54,4 +54,4 @@ This page can be used to access the web interface for the device. Note that the 
 
 ## Notes
 
-There are also some information and general alarm traps (e.g. **Communication Error**) that are implemented. These traps will not update the **Alarms** table, but will immediately generate an alarm in DataMiner itself.
+There are also some information and general alarm traps (e.g., **Communication Error**) that are implemented. These traps will not update the **Alarms** table, but will immediately generate an alarm in DataMiner itself.

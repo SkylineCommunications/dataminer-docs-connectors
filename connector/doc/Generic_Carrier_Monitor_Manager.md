@@ -61,7 +61,7 @@ To configure the .csv file:
 
    - If this parameter is empty, the default path is *C:\Skyline DataMiner\Documents\Generic Carrier Monitor Manager\\*
 
-   - If only a name is entered, e.g. *Test,* the path will be *C:\Skyline DataMiner\Documents\Generic Carrier Monitor Manager\Test\\*.
+   - If only a name is entered, e.g., *Test,* the path will be *C:\Skyline DataMiner\Documents\Generic Carrier Monitor Manager\Test\\*.
 
    - A full path can also be specified.
 

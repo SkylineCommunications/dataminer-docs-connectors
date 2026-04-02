@@ -38,9 +38,9 @@ This connector uses a serial connection over TCP/IP and requires the following i
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The terminal server that the KHPA device is connected to, e.g. 10.10.11.1.
-- **IP port**: The corresponding port on the terminal server configured to relay messages to the TMS4 device, e.g. 4003.
-- **Bus address**: This field is used to specify the "Address Byte" configured on the KHPA device. The KHPA device supports values 48 to 111 (base 10) corresponding to a printable ASCII character (e.g. 53).
+- **IP address/host**: The terminal server that the KHPA device is connected to, e.g., 10.10.11.1.
+- **IP port**: The corresponding port on the terminal server configured to relay messages to the TMS4 device, e.g., 4003.
+- **Bus address**: This field is used to specify the "Address Byte" configured on the KHPA device. The KHPA device supports values 48 to 111 (base 10) corresponding to a printable ASCII character (e.g., 53).
 
 ## How to Use
 
@@ -56,7 +56,7 @@ This page displays all software versions of software components as well as the t
 
 ### Measurements/Inhibit
 
-This page displays information related to the meter readings/measurements of the device (e.g. current, voltage, and other power information) and inhibit states.
+This page displays information related to the meter readings/measurements of the device (e.g., current, voltage, and other power information) and inhibit states.
 
 ### Trip Points
 

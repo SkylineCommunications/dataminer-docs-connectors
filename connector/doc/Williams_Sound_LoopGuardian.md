@@ -31,7 +31,7 @@ This connector uses a HTTP connection and requires the following input during el
 **HTTP CONNECTION**:
 
 - **Type of Port:** TCP/IP
-- **IP address/host**: e.g. *10.218.128.12*
+- **IP address/host**: e.g., *10.218.128.12*
 - **IP port**: default: *8080*
 - **Bus address***: Enabled,* default*: ByPassProxy*
 

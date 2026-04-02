@@ -62,7 +62,7 @@ The **CM** will also add the name of the **Alarm** and **Trend** **Template** th
 
 The **Digital Input**, **Digital Output** and **Analog Input** pages provide an overview of all the connected contacts with their current states.
 
-Via the **CM** it is possible to provide an alias for 0 or 1 value of Digital contacts. e.g. *Alarm* and *Normal* and optional to invert these.
+Via the **CM** it is possible to provide an alias for 0 or 1 value of Digital contacts. e.g., *Alarm* and *Normal* and optional to invert these.
 
 On **Analog** contacts it is possible to add a calculation that will be performed on the received value.
 
@@ -70,7 +70,7 @@ These **Point Tables** will also display the **Service** that contains the Equip
 
 ### RTU Communication
 
-The **RTU Communication** are settings done in the **CM** to indicate the communication details of this **TBox**. It will display e.g. the **IP Address** and the **Port**.
+The **RTU Communication** are settings done in the **CM** to indicate the communication details of this **TBox**. It will display e.g., the **IP Address** and the **Port**.
 
 ### RTU Point Summary
 

@@ -4,7 +4,7 @@ uid: Connector_help_Telenor_Propaganda
 
 # Telenor Propaganda
 
-This connector is used to aggregate and summarize information from the **Telenor Channel Correlation Service Protocol**, **Telenor Service Overview Manager**, and **Telenor EPM Manager** elements. It summarizes all information related to services, channels, and infrastructure components (e.g. devices, households, RHE, etc.) in one single location.
+This connector is used to aggregate and summarize information from the **Telenor Channel Correlation Service Protocol**, **Telenor Service Overview Manager**, and **Telenor EPM Manager** elements. It summarizes all information related to services, channels, and infrastructure components (e.g., devices, households, RHE, etc.) in one single location.
 
 ## About
 

@@ -18,7 +18,7 @@ SNMP connector for the **Blue Coat Packet Shaper.**
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 SNMP Settings:
 

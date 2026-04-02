@@ -76,7 +76,7 @@ The element has the following data pages:
 - **GPI:** Contains parameters used to configure the GPI contacts and pools.
 - **Network:** Contains the **IP Configuration** and **Network Status** information.
 - **Status:** Contains status information of the card.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

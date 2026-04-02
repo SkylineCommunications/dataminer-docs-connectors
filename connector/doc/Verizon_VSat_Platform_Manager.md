@@ -126,7 +126,7 @@ When a KPI item is selected in this diagram view, a pop-up window with parameter
 
 The following Key Point Indicators (**KPIs**) are calculated on the different levels, in addition to other KPIs for specific levels.
 
-| **KPI**                                               | **Description**                                                                              |
+| KPI                                               | Description                                                                              |
 |-------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | OTA Traffic *(for both forward and return streams)*   | Sum of Over the Air Traffic values for included entities.                                    |
 | Traffic *(for both forward and return streams)*       | Sum of data Traffic values for included entities.                                            |

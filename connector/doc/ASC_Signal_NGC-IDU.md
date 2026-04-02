@@ -32,9 +32,9 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.100.20.15*.
+- **IP address/host**: The polling IP of the device, e.g., *10.100.20.15*.
 
-- **Device address**: Indicates the used port, e.g. *1*.
+- **Device address**: Indicates the used port, e.g., *1*.
 
   - The bus address will be checked after startup and before the element polls the device. An **invalid bus address** will result in an error message in the system log.
   - You can change the bus address when editing the element. Note that this will result in a restart of the element.

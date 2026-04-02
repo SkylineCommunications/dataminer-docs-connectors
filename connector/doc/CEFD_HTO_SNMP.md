@@ -75,7 +75,7 @@ SNMP Settings:
 
 This page displays general information about the device: **system information**, **contact information** and several **device status parameters.**
 
-These status parameters include **status alarms** (e.g. Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
+These status parameters include **status alarms** (e.g., Tx/Rx Alarms) and **signal quality** parameters (Es/No, BER). In addition, the device **Working Mode**, **WAN Operational State** and **Encryption Feature** can be configured.
 
 ### Admin
 
@@ -129,7 +129,7 @@ Via the **Encryption/Decryption Keys** page button, you can preconfigure the enc
 
 This page contains the following tables:
 
-- The **Remote Site List table**, which contains information on the device communication with the associated remote sites (e.g. Remote Site IP Address, currently assigned MODCOD, last Es/No, etc.).
+- The **Remote Site List table**, which contains information on the device communication with the associated remote sites (e.g., Remote Site IP Address, currently assigned MODCOD, last Es/No, etc.).
 - The **ACM Events log table**.
 
 ### Config - WAN - BUC

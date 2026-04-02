@@ -4,18 +4,18 @@ uid: Connector_help_Newtec_AZ202
 
 # Newtec AZ202
 
-With this connector, it is possible to monitor Newtec AZ202 devices with SNMP. Traps received from the device are used to update the alarm tables.
-
 ## About
+
+With this connector, it is possible to monitor Newtec AZ202 devices with SNMP. Traps received from the device are used to update the alarm tables.
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                                                    | **Based on** | **System Impact**                                                                            |
+| Range            | Key Features                                                                                                                    | Based on | System Impact                                                                            |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                    | -            | -                                                                                            |
 | 1.0.1.x              | New range for Cassandra compliancy. Changed displayColumn to naming.                                                                | 1.0.0.9      | Old **trend data will be lost** for the modified table.                                      |
 | 1.1.0.x              | Changed USS Status discreets and Ctl Group Operation Table Operation State discreets because of new firmware and change in the MIB. | 1.0.1.2      | **Automation scripts and alarm templates** will need to be adapted.                          |
-| 1.1.1.x [SLC Main]   | Changed the discrete display values and descriptions of some parameters.                                                            | 1.1.0.2      | DMS Automation scripts, filters, Visio drawings, reports and web API may need to be adapted. |
+| 1.1.1.x [SLC Main]   | Changed the discrete display values and descriptions of some parameters.                                                            | 1.1.0.2      | Automation scripts, filters, Visio drawings, reports, and web API may need to be adapted. |
 
 ### Product Info
 
@@ -45,7 +45,7 @@ This is an SNMP connector. The IP needs to be configured during creation of the 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

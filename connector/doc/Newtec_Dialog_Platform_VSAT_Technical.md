@@ -4,7 +4,7 @@ uid: Connector_help_Newtec_Dialog_Platform_VSAT_Technical
 
 # Newtec Dialog Platform VSAT
 
-The **Newtec Dialog Platform VSAT** connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a Time Series Database (TSDB, i.e. Influx DB). This connector can work as a standalone collector or alongside the DataMiner EPM Solution.
+The **Newtec Dialog Platform VSAT** connector collects and organizes data from a Newtec Dialog platform that stores its metrics in a Time Series Database (TSDB, i.e., Influx DB). This connector can work as a standalone collector or alongside the DataMiner EPM Solution.
 
 ## About
 

@@ -23,13 +23,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Settings:**
 
-- **Port number**: The port of the connected device (e.g. *161*).
-- **Get community string**: The community string used when reading values from the device (e.g. *public*).
-- **Set community string**: The community string used when setting values on the device (e.g. *private*).
-- **Security level and protocol:** The security level and privacy settings (e.g. *authNoPriv* \[Authentification/No privacy\]).
-- **Username:** The SNMPv3 user name (e.g. *DataMiner*).
-- **Authentification password:** Passphrase to connect to the SNMPv3 agent (e.g. *password*).
-- **Authentification algorithm:** The encryption algorithm used for authentification (e.g. *HMAC-MD5*).
+- **Port number**: The port of the connected device (e.g., *161*).
+- **Get community string**: The community string used when reading values from the device (e.g., *public*).
+- **Set community string**: The community string used when setting values on the device (e.g., *private*).
+- **Security level and protocol:** The security level and privacy settings (e.g., *authNoPriv* \[Authentification/No privacy\]).
+- **Username:** The SNMPv3 user name (e.g., *DataMiner*).
+- **Authentification password:** Passphrase to connect to the SNMPv3 agent (e.g., *password*).
+- **Authentification algorithm:** The encryption algorithm used for authentification (e.g., *HMAC-MD5*).
 
 ## Usage
 

@@ -40,9 +40,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.14.11*.
-  - **IP port**: The IP port of the device, e.g. *2050*.
-  - **Bus address**: Used to fill in the unit address and the unit port, e.g. *10.04* is for unit address *0x10* and unit port *0x04.*
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.14.11*.
+  - **IP port**: The IP port of the device, e.g., *2050*.
+  - **Bus address**: Used to fill in the unit address and the unit port, e.g., *10.04* is for unit address *0x10* and unit port *0x04.*
 
 ## Usage
 
@@ -64,7 +64,7 @@ This page contains information about video.
 
 ### Procamp Page
 
-This page contains information about the processing amplifier, e.g. **ProcAmp Enable**, **Black Level**, **Hue Adjust**, **Master Video Gain**, **Y Gain**, **Cb/Cr Gain**, **Y/C Timing**, etc.
+This page contains information about the processing amplifier, e.g., **ProcAmp Enable**, **Black Level**, **Hue Adjust**, **Master Video Gain**, **Y Gain**, **Cb/Cr Gain**, **Y/C Timing**, etc.
 
 ### Video Delay Page
 
@@ -92,7 +92,7 @@ This page contains the audio controls for the groups.
 
 ### Audio Page
 
-This page contains information about the audio, e.g. **Frequency**, **Channel ident**, **Internal Status**, **Silence Level**, **Overload Level**, **Warning Timer**, etc.
+This page contains information about the audio, e.g., **Frequency**, **Channel ident**, **Internal Status**, **Silence Level**, **Overload Level**, **Warning Timer**, etc.
 
 ### Pattern & Caption Page
 

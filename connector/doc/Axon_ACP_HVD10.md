@@ -65,7 +65,7 @@ The element has the following pages:
 - **I/O**: This page contains input/output control parameters that are used to configure the I/O settings of the card.
 - **Video**: This page contains control parameters used to configure the video settings of the card.
 - **Audio**: This page contains audio status information for each individual channel, as well as control parameters to configure the audio settings of the card.
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

@@ -189,7 +189,7 @@ This page contains the tables with physical interfaces used in the network tree:
 
 ### Queue
 
-On this page, the **Poll Queue** table contains the fragments and other commands to keep track of communication. The flow of the communication is explained in the "Notes" section below. To decide which fragments need to be polled separately to reduce the device's response delay, there is a threshold that can be set, i.e. the **Fragment Separation Threshold Load**. The **Fragment Load (Queue)** holds the current load of each fragment, and needs to be below the threshold in order to be combined with other fragments into a single request.
+On this page, the **Poll Queue** table contains the fragments and other commands to keep track of communication. The flow of the communication is explained in the "Notes" section below. To decide which fragments need to be polled separately to reduce the device's response delay, there is a threshold that can be set, i.e., the **Fragment Separation Threshold Load**. The **Fragment Load (Queue)** holds the current load of each fragment, and needs to be below the threshold in order to be combined with other fragments into a single request.
 
 It is possible to enqueue a single fragment using the **Enqueue** button, or to trigger a **Force Refresh** using the button below the table.
 

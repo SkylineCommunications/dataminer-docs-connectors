@@ -22,7 +22,7 @@ This is an SNMP connector. The IP has to be configured during creation of the el
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP Address/host**: The polling IP of the device, e.g., *10.11.12.13*
 
 **SNMP Settings:**
 

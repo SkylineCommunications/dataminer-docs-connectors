@@ -36,7 +36,7 @@ The directory path needs to be configured before an element can start offloading
 
 There is only one page in this connector. This page is used for the configuration and to check the amount of data still in the buffer awaiting execution.
 
-The **Directory Path Name** should contain the directory where the CSV file(s) you want to import are located. For example, if this is the Downloads folder of your local C:\\ drive, specify *C:\Downloads*. If the directory containing the files is accessed remotely (e.g. if you specify '*\\80.62.121.234'*), you also need to specify a **Network Share User Name** (can contain a domain name, but not always needed) and a **Network Share Password**.
+The **Directory Path Name** should contain the directory where the CSV file(s) you want to import are located. For example, if this is the Downloads folder of your local C:\\ drive, specify *C:\Downloads*. If the directory containing the files is accessed remotely (e.g., if you specify '*\\80.62.121.234'*), you also need to specify a **Network Share User Name** (can contain a domain name, but not always needed) and a **Network Share Password**.
 
 Offload issues can have two main causes:
 

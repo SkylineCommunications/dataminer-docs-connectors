@@ -35,5 +35,5 @@ For each converter page, set the **Frequency**, **Attenuation**, **Equalization*
 
 ## Alarms
 
-- Discrete statuses (e.g. Controller Alarm Status, Unit Status, Downlink Fade Alarm) and numeric thresholds generate alarms based on protocol definitions.
+- Discrete statuses (e.g., Controller Alarm Status, Unit Status, Downlink Fade Alarm) and numeric thresholds generate alarms based on protocol definitions.
 - "Address Not Configured", communication issues, warmup, and frequency limit violations are explicitly indicated.

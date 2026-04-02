@@ -41,15 +41,15 @@ This connector can communicate directly with the **U125 module**, but it can als
 > SERIAL Connection:
 >
 > - **IP address/host**: The IP address of the Astro U100 Controller.
-> - **IP port**: The port of the destination, e.g. *80*.
-> - **Bus address**: The IP address of the U125. To bypass any possible proxy that could block the HTTP communcation, also add *ByPassProxy*, using a semicolon as separator, e.g. *ByPassProxy;10.11.12.13*.
+> - **IP port**: The port of the destination, e.g., *80*.
+> - **Bus address**: The IP address of the U125. To bypass any possible proxy that could block the HTTP communcation, also add *ByPassProxy*, using a semicolon as separator, e.g., *ByPassProxy;10.11.12.13*.
 
 - **B) Direct communication**
 
 > SERIAL Connection:
 >
 > - **IP address/host**: The IP address of the U125.
-> - **IP port**: The port of the destination, e.g. *80*.
+> - **IP port**: The port of the destination, e.g., *80*.
 > - **Bus address**: This field can be used to bypass a possible proxy. To do so, fill in the value *ByPassProxy*.
 
 #### SNMP connection
@@ -58,7 +58,7 @@ Regardless of which serial connection is used, the SNMP interface collects the t
 
 SNMP Connection:
 
-- **IP address/host**: The polling IP of the U125, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the U125, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -90,15 +90,15 @@ The page also contains the following important parameters:
 
 ### Status
 
-This page displays status information for the device, e.g. **Temperature**, **Power Supply**, **CPU Load**, etc.
+This page displays status information for the device, e.g., **Temperature**, **Power Supply**, **CPU Load**, etc.
 
 ### Main
 
-On this page, you can configure the main settings of the device, e.g. **DNS**, **Time Source**, **Interfaces**, etc.
+On this page, you can configure the main settings of the device, e.g., **DNS**, **Time Source**, **Interfaces**, etc.
 
 ### Test Gen
 
-On this page, you can configure the test gen parameters, e.g. **Data Rate**, **Packet ID**, etc.
+On this page, you can configure the test gen parameters, e.g., **Data Rate**, **Packet ID**, etc.
 
 ### IP Channel
 

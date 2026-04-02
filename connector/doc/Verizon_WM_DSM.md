@@ -34,4 +34,4 @@ This connector uses a virtual connection and does not require any input during e
 
 ## Notes
 
-An **Automation script** is needed to trigger this connector. The connector will process information events, perform the correct actions in the workflow with the **Profile Manager** and update the **Verizon DSM SO**.
+An **automation script** is needed to trigger this connector. The connector will process information events, perform the correct actions in the workflow with the **Profile Manager** and update the **Verizon DSM SO**.

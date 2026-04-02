@@ -42,4 +42,4 @@ This element has the following data pages:
 - **Status**
 - **Audio**
 - **Settings**
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.

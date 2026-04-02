@@ -2,7 +2,7 @@
 uid: Connector_help_GeoSync_Microwave_1+2_RCU_LNB_Series_Technical
 ---
 
-# Connector Technical Documentation – GeoSync Microwave 1+2 RCU LNB
+# GeoSync Microwave 1+2 RCU LNB
 
 ## About
 

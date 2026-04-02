@@ -24,7 +24,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: The type of chassis for this device (SMP100 or DMP900, *default:* *SMP100* ). Case must be respected. If nothing is specified, no data will be polled from the device.
 
 **SNMP Settings:**

@@ -10,7 +10,7 @@ This is an SNMP connector that can be used to obtain information from the T-Vips
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                                | **Based on** | **System Impact** |
+| Range            | Key Features                                                                                | Based on | System Impact |
 |----------------------|-------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                                                                                 | -            | -                 |
 | 1.0.2.x [SLC Main]   | Added IDX column in the naming for the following tables: 7000, 9000, 15000, 16000, 21000, 42400 | 1.0.1.6      | -                 |

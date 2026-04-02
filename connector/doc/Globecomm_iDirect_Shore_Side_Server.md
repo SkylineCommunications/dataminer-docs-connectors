@@ -117,4 +117,4 @@ This page contains general configuration settings. The settings are saved in the
   > [!NOTE]
   > This could affect Visio drawings. A shape can be linked to an alarm state and it can be used to display the entire page in a dashboard.
 
-- Parameters associated to static data were removed. As a consequence, it may be necessary to reconfigure DataMiner filters, Automation scripts, Visio files, reports, web API usage, etc. using these parameters.
+- Parameters associated to static data were removed. As a consequence, it may be necessary to reconfigure DataMiner filters, automation scripts, Visio files, reports, web API usage, etc. using these parameters.

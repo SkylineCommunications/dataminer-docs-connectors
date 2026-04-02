@@ -6,7 +6,7 @@ uid: Connector_help_Tektronix_Sentry_Technical
 
 ## About
 
-This connector will display information about a Sentry device, including details related to ports, transport, and services. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the bitrate.
+This connector will display information about a Sentry device, including details related to ports, transport, and services. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g., the bitrate.
 
 > [!IMPORTANT]
 > This connector requires the .NET Framework 4.0.
@@ -476,7 +476,7 @@ The **Debug Logging** option can be used to enable additional element logging. H
 
 If any of the API calls return an error message, this will be displayed in the **Error Message Table**. Alarm monitoring can be enabled on the **Number of Error Messages** parameter, so that users are warned when a large number of errors occur at the same time. Every hour, this parameter will be reset and the table will be cleared.
 
-Below this, the **Communication Buffer Table** and the **State of Communication Buffer** parameter are displayed, which show all the calls that are in the queue to be sent to the device. Alarm monitoring can be enabled on the state parameter, so that users are warned when a call takes too long (i.e. remains "Busy" for a long time).
+Below this, the **Communication Buffer Table** and the **State of Communication Buffer** parameter are displayed, which show all the calls that are in the queue to be sent to the device. Alarm monitoring can be enabled on the state parameter, so that users are warned when a call takes too long (i.e., remains "Busy" for a long time).
 
 ## Notes
 

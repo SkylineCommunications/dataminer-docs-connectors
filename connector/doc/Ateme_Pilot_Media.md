@@ -8,6 +8,9 @@ The Ateme Pilot Media enables business logic, metadata-driven automation for med
 
 It uses schedule-aware prioritization of workflows to ensure service-level requirements are met while also lowering operational costs.
 
+> [!IMPORTANT]
+> This connector is compliant only with end-of-life Ateme Pilot Media from 2022-2023. It is not compliant with Pilot Media launched in 2024 by Ateme.
+
 ## About
 
 ### Version Info
@@ -55,7 +58,7 @@ On the recordings page, two sliders allow you to define in which time frame the 
 
 ## API
 
-This connector implements an API that can be used to do certain calls from an Automation script.
+This connector implements an API that can be used to do certain calls from an automation script.
 
 To send a request, set JSON code to parameter ID 49999. The response will be available in parameter ID 49998.
 

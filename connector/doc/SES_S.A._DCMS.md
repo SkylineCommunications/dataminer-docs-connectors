@@ -36,7 +36,7 @@ This connector uses a virtual connection and does not require any input during e
 
 For each type of file, this page indicates the number of files that exist for the current month. This information is displayed for **EIRP**, **System Gain**, **Database** and **Housekeeping Files**. In addition, this page displays the **Directory Path** (Windows path) used by the connector to retrieve all data files, and it also shows the **Status** of this directory.
 
-Note: The **Directory Path** must contain the **DCMS ID** (e.g. *C:\Skyline DataMiner\Documents\SES S.A. DCMS\DCMS Files\dcms3-data*).
+Note: The **Directory Path** must contain the **DCMS ID** (e.g., *C:\Skyline DataMiner\Documents\SES S.A. DCMS\DCMS Files\dcms3-data*).
 
 ### Channels
 

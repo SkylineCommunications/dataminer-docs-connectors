@@ -13,7 +13,7 @@ Skyline Health Check Manager helps with these checks, with features to schedule 
 Skyline Health Check Manager helps users with system checks of resources in a single window pane, with predefined threshold, element, and index filtering. It includes the following features:
 
 - Map standalone and table column parameters of any protocol and any protocol version to a subscription.
-- Add, edit, or delete tests based on Automation scripts or subscriptions, which need to meet certain thresholds based on a set of available operations.
+- Add, edit, or delete tests based on automation scripts or subscriptions, which need to meet certain thresholds based on a set of available operations.
 - View all test results in a single pane of information in a table with details about failures.
 - Configure a schedule to run the tests with daily, weekly, and monthly options.
 
@@ -39,7 +39,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Automation Scripts
 
-Make sure the **HealthCheckTableManager** Automation script is available in the DMS.
+Make sure the **HealthCheckTableManager** automation script is available in the DMS.
 
 ## How to use
 
@@ -51,13 +51,13 @@ This page displays an overview of the test results over time, including the **To
 
 #### Test Configuration Table
 
-In the Test Configuration Table, you can create tests based on **Automation scripts** or **subscriptions** based on the Parameter Subscription table:
+In the Test Configuration Table, you can create tests based on **automation scripts** or **subscriptions** based on the Parameter Subscription table:
 
 1. Right-click the Test Configuration Table.
 
 1. Select **Add Test** in the context menu.
 
-1. In the pop-up window (which is an interactive Automation script), enter the following information:
+1. In the pop-up window (which is an interactive automation script), enter the following information:
 
    - **Test Type**: Select if the test is a script-based test or a subscription-based test.
 
@@ -101,7 +101,7 @@ In the Parameter Subscription Table, you can create subscriptions based on stand
 
 1. Select **Add Subscription** in the context menu.
 
-1. In the pop-up window (which is an interactive Automation script), enter the following information:
+1. In the pop-up window (which is an interactive automation script), enter the following information:
 
    - **Subscription Name**: Provide the name the subscription will have, which will be displayed during test creation.
 

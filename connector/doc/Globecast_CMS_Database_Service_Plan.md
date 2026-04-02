@@ -18,7 +18,7 @@ This connector uses a **virtual** connection and does not require any input duri
 
 ### Configuration of FTP Connection
 
-For the connector to work correctly, you must fill in the following information on the "Configuration" page: the **FTP Server** **IP address** (e.g. *127.0.0.1*), the **FTP Server Login**, the **FTP Server Password**, the **Client File Name** (e.g. *Client.xml*), the **Service File Name** (e.g. *Service.xml*) and the **Service Line-Up File Name** (e.g. *ServiceLine-up.xml*).
+For the connector to work correctly, you must fill in the following information on the "Configuration" page: the **FTP Server** **IP address** (e.g., *127.0.0.1*), the **FTP Server Login**, the **FTP Server Password**, the **Client File Name** (e.g., *Client.xml*), the **Service File Name** (e.g., *Service.xml*) and the **Service Line-Up File Name** (e.g., *ServiceLine-up.xml*).
 
 ## Usage
 

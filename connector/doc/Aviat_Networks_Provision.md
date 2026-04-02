@@ -80,7 +80,7 @@ It is also possible to delete a single device in the Devices Table, using the **
 
 The **Number of Known IP Addresses** parameter at the top of this page displays the number of rows in the Devices Table. Below this, you can find the **Number of DVEs** enabled.
 
-To manage the devices further, e.g. to delete multiple devices or create or delete all DVEs at once, refer to the Configuration page (see below).
+To manage the devices further, e.g., to delete multiple devices or create or delete all DVEs at once, refer to the Configuration page (see below).
 
 ### Configuration Page
 
@@ -109,7 +109,7 @@ This section displays the **Number of Known IP Addresses** and allows you to man
 
 The **Delete All** button allows you to manually delete all known IP addresses. Note that this button will not only delete all known IP addresses in the relevant table, but also the DVEs corresponding to these addresses and the stored traps coming from these addresses. However, to avoid that DVEs are deleted, you can set the toggle button **Automatic Removal** (in the Dynamic Virtual Elements section) to *Disabled*.
 
-Finally, the section also contains a page button **Import IP Addresses**, which opens a subpage containing all parameters to import IP addresses in the connector. The imported file must be a CSV file with a particular format, specified on this subpage. You can specify if the connector should try to create DVEs when a file is imported or not, using the toggle button **Create DVEs on Adding/Updating IP Addresses**. On the right-hand side of the subpage, a report of the import is displayed, mentioning which rows were imported and which were considered invalid (e.g. if the IP address had already been imported earlier, the IP address was not a valid IP address, there was already a previous row mentioning that IP address, etc.). You can also change the Device Name related to a certain IP address by means of an import.
+Finally, the section also contains a page button **Import IP Addresses**, which opens a subpage containing all parameters to import IP addresses in the connector. The imported file must be a CSV file with a particular format, specified on this subpage. You can specify if the connector should try to create DVEs when a file is imported or not, using the toggle button **Create DVEs on Adding/Updating IP Addresses**. On the right-hand side of the subpage, a report of the import is displayed, mentioning which rows were imported and which were considered invalid (e.g., if the IP address had already been imported earlier, the IP address was not a valid IP address, there was already a previous row mentioning that IP address, etc.). You can also change the Device Name related to a certain IP address by means of an import.
 
 #### Dynamic Virtual Elements
 
@@ -140,7 +140,7 @@ This page displays the **Deleted Traps Table**, which lists the stored deleted t
 
 ### Traps Page
 
-On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e. within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
+On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e., within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
 
 The **display key** of the traps table is obtained by concatenating the **Service ID** and **Event Name** column parameters.
 
@@ -175,7 +175,7 @@ If a provision file is imported and a mismatch is detected between one of the en
 
 ### Traps Page
 
-On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e. within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
+On this page, the **NorthBound Status** parameter will display an error if the Northbound Status Trap (heartbeat) is not received in time, i.e., within the heartbeat interval, which has to be the same as the value set in the **Heartbeat Time Interval** parameter.
 
 The **primary key** of the traps table is obtained by concatenating the **Service ID** and **Event Name** column parameters.
 

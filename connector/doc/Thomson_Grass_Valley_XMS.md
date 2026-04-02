@@ -8,7 +8,7 @@ The **Thomson Grass Valley XMS** is used to control/manage the XMS Manager. This
 
 ## About
 
-The Thomson Grass Valley XMS is used to manage and control the devices connected to the network, and to see their state. You can easily see how devices are configured (e.g. redundant devices). All the data is polled by **SNMP**. For each device, it is possible to create a DVE, which provides an overview of all information connected to this device.
+The Thomson Grass Valley XMS is used to manage and control the devices connected to the network, and to see their state. You can easily see how devices are configured (e.g., redundant devices). All the data is polled by **SNMP**. For each device, it is possible to create a DVE, which provides an overview of all information connected to this device.
 
 ## Installation and configuration
 

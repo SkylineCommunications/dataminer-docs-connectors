@@ -153,7 +153,7 @@ Since the content of the **IM feed** contains enrichment data that is also suppl
 
 Based on whether or not the HTTP POST succeeds or fails, the following result codes will return. Only when result code 100 returns, can the action be considered to have succeeded. In all other cases, something went wrong.
 
-| **Result Code** | **Result Message**                                                            |
+| Result Code | Result Message                                                            |
 |-----------------|-------------------------------------------------------------------------------|
 | 100             | Successful action                                                             |
 | 201             | *xxx* is a mandatory field and is not provided                                |

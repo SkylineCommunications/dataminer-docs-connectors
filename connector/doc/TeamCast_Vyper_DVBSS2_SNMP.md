@@ -12,7 +12,7 @@ With the **TeamCast Vyper DVBS/S2 SNMP** connector, you can retrieve status info
 
 ### Version info
 
-| **Range** | **Key Features**         | **Based on** | **System Impact**               |
+| Range | Key Features         | Based on | System Impact               |
 |-----------|--------------------------|--------------|---------------------------------|
 | 1.0.0.x   | Initial version          | -            | -                               |
 | 1.1.0.x   | New firmware (see below) | 1.0.0.1      | Unknown                         |
@@ -47,13 +47,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The IP address of the device, e.g. *194.206.71.180.*
+- **IP address/host**: The IP address of the device, e.g., *194.206.71.180.*
 
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public.*
-- **Set community string**: The community string used when setting values on the device, e.g. *private.*
+- **Get community string**: The community string used when reading values from the device, e.g., *public.*
+- **Set community string**: The community string used when setting values on the device, e.g., *private.*
 
 ## How to Use (1.0.0.x - 1.2.0.x)
 

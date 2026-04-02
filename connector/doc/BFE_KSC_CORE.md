@@ -52,7 +52,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element created with this connector consists of the following data pages:
 
-- **General**: Allows you to monitor and configure basic information about the device, e.g. **System Description, Controller Status**.
+- **General**: Allows you to monitor and configure basic information about the device, e.g., **System Description, Controller Status**.
 - **Interfaces**: Displays the Interfaces table.
 - **Processes**: Displays the Processes table.
 - **Devices**: Displays the Devices table.

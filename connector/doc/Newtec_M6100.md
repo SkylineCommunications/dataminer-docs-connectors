@@ -12,7 +12,7 @@ The transport stream analyzer makes it possible to monitor the incoming transpor
 
 ### Version Info
 
-| **Range**            | **Description**                                                     | **Based on** | **System Impact** |
+| Range            | Description                                                     | Based on | System Impact |
 |----------------------|---------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                                                     | -            | -                 |
 | 1.0.1.x              | New range for Cassandra compliancy, changed displayColumn to naming | -            | -                 |
@@ -21,7 +21,7 @@ The transport stream analyzer makes it possible to monitor the incoming transpor
 
 ### Product Info
 
-| **Range**       | **Supported Firmware** |
+| Range       | Supported Firmware |
 |-----------------|------------------------|
 | 1.0.0.x 1.0.1.x | -                      |
 | 1.1.0.x         | 2.5.3                  |
@@ -46,7 +46,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

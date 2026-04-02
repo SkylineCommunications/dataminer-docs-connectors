@@ -64,7 +64,7 @@ The element has the following pages:
 - **Status:** Displays the status information of different parameters of the card.
 - **I/O:** This page contains control parameters used to configure the input and output settings.
 - **Probing:** This page contains control parameters used to configure the different detection settings such as **Carrier**, **TRS**, **EDH** and **Monochrome**.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

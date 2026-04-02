@@ -48,7 +48,7 @@ This element has the following data pages:
 - **Clock**
 - **NTP**
 - **Network**
-- **Alarm Priority**: Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 - **Logo Generator A**: For firmware versions that support this, this page displays the logo presets A in table form. For other firmware versions, this page is hidden.
 - **Logo Generator B**: For firmware versions that support this, this page displays the logo presets B in table form. For other firmware versions, this page is hidden.
 - **Logo Scheduler A**: Allows you to alternate the A preset logos in a round-robin scheme.

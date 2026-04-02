@@ -52,7 +52,7 @@ This connector uses an **SNMP** and/or **serial** and/or **HTTP** connection, de
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -71,7 +71,7 @@ SERIAL CONNECTION:
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port number**: The port of the connected device, by default *80*.
 - **Bus address**: If the proxy server has to be bypassed, by default *bypassproxy*.
 
@@ -192,4 +192,4 @@ This page provides access to the web interface of the device. However, note that
 
 ## Notes
 
-In version 4.0.1.x, a timeout issue can occur where the device responses are not fully received. To solve this, edit the element and change the timeout of a single command (ms) to a higher value, e.g. 30000 instead of the typical 10000.
+In version 4.0.1.x, a timeout issue can occur where the device responses are not fully received. To solve this, edit the element and change the timeout of a single command (ms) to a higher value, e.g., 30000 instead of the typical 10000.

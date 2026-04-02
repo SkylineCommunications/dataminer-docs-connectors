@@ -280,9 +280,9 @@ The default behavior of the virtual matrix is to only send the crosspoint change
 
 #### Tie Lines
 
-This page contains the **Tie Lines - Usage** table. This represents the tie lines between the source matrices. It shows statistics on how many tie lines there are and how many are available. A tie line is considered in use when it is part of a valid path, i.e. a virtual input is connected to a virtual output using the tie line. The Tie Lines - Usage table does not take into account whether a tie line has its Operational State set to Disabled (see "Creating tie lines" in the range 4.0.0.x configuration section above).
+This page contains the **Tie Lines - Usage** table. This represents the tie lines between the source matrices. It shows statistics on how many tie lines there are and how many are available. A tie line is considered in use when it is part of a valid path, i.e., a virtual input is connected to a virtual output using the tie line. The Tie Lines - Usage table does not take into account whether a tie line has its Operational State set to Disabled (see "Creating tie lines" in the range 4.0.0.x configuration section above).
 
-The **Tie Lines - Connections** table shows a line for each tie line, the GUID of the connected input, and whether it is in use or not (Usage State). A tie line is considered in use when it is part of a valid path, i.e. a virtual input is connected to a virtual output using the tie line. The Tie Lines - Connections table does not take into account whether a tie line has its Operational State set to Disabled (see "Creating tie lines" in the range 4.0.0.x configuration section above).
+The **Tie Lines - Connections** table shows a line for each tie line, the GUID of the connected input, and whether it is in use or not (Usage State). A tie line is considered in use when it is part of a valid path, i.e., a virtual input is connected to a virtual output using the tie line. The Tie Lines - Connections table does not take into account whether a tie line has its Operational State set to Disabled (see "Creating tie lines" in the range 4.0.0.x configuration section above).
 
 #### SRM Configuration
 
@@ -294,7 +294,7 @@ If you use an [information template](https://aka.dataminer.services/Information_
 
 The **Routing Preference** indicates whether tie line reuse is preferred, or the shortest possible path should always be used.
 
-Linked to the virtual inputs and virtual outputs are **Actions**. This table contains the possible actions that can be executed when a column value changes. The **Triggers** column represent the column IDs that can trigger the action. These can be multiple IDs separated by a semicolon. The supported columns are Label, Label01, Label02, Label03, Label04, Label05, Label06, Notes, IsEnabled, IsLocked, and ConnectedInput (only for Outputs). In the **Description** column, you should use the same syntax as to execute an Automation script in Visual Overview (See [Linking a shape to an Automation script](https://aka.dataminer.services/Linking_a_shape_to_an_Automation_script)). Placeholders are supported in this syntax.
+Linked to the virtual inputs and virtual outputs are **Actions**. This table contains the possible actions that can be executed when a column value changes. The **Triggers** column represent the column IDs that can trigger the action. These can be multiple IDs separated by a semicolon. The supported columns are Label, Label01, Label02, Label03, Label04, Label05, Label06, Notes, IsEnabled, IsLocked, and ConnectedInput (only for Outputs). In the **Description** column, you should use the same syntax as to execute an automation script in Visual Overview (See [Linking a shape to an automation script](https://aka.dataminer.services/Linking_a_shape_to_an_Automation_script)). Placeholders are supported in this syntax.
 
 Example: `Script:TestScript||TriggerId=[TRIGGER];VirtualId=[ID];CellValue=[VALUE]|||`
 
@@ -342,14 +342,14 @@ The following example illustrates both options:
 
 ***Inputs***
 
-| **ID** | **Label** |
+| ID | Label |
 |--------|-----------|
 | 1      | Channel 4 |
 | 2      | Film 4    |
 
 ***Outputs***
 
-| **ID** | **Label**       | **Required Tie Line Labels** | **Strict Mode** |
+| ID | Label       | Required Tie Line Labels | Strict Mode |
 |--------|-----------------|------------------------------|-----------------|
 | 10     | PLAYOUT TX 001A | TX                           | False           |
 | 11     | PLAYOUT TX 002A | False                        |                 |
@@ -359,14 +359,14 @@ The following example illustrates both options:
 
 ***Inputs***
 
-| **ID** | **Label**  |
+| ID | Label  |
 |--------|------------|
 | 21     | Film 5     |
 | 22     | Channel 21 |
 
 ***Outputs***
 
-| **ID** | **Label**       | **Required Tie Line Labels** | **Strict Mode** |
+| ID | Label       | Required Tie Line Labels | Strict Mode |
 |--------|-----------------|------------------------------|-----------------|
 | 30     | PLAYOUT TX 001B | TX                           | True            |
 | 31     | PLAYOUT TX 002B | MOD                          | True            |
@@ -374,7 +374,7 @@ The following example illustrates both options:
 
 **Tie Lines**
 
-| **Name**  | **Source Output ID** | **Destination Input ID** | **Priority** | **Label** |
+| Name  | Source Output ID | Destination Input ID | Priority | Label |
 |-----------|----------------------|--------------------------|--------------|-----------|
 | TIELINE 1 | 10                   | 21                       | 1            | TX        |
 | TIELINE 2 | 11                   | 22                       | 2            | TX        |

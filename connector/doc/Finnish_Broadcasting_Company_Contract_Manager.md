@@ -64,7 +64,7 @@ The page contains page buttons to the following subpages:
 
 - **Scripts**: Contains the Event Scripts, Order Scripts and Icons tables.
 
-- The **Event Scripts table** allows you to define a list of scripts that can be linked to a user group from the User Groups table. Once a script is linked to a user group, a button will be available in the Event Details in the Media Services app. The text and icon of this button are defined in the Event Scripts table. Clicking this button will cause the linked interactive Automation script to be launched. This feature can be used for example to display additional details for a specific event.
+- The **Event Scripts table** allows you to define a list of scripts that can be linked to a user group from the User Groups table. Once a script is linked to a user group, a button will be available in the Event Details in the Media Services app. The text and icon of this button are defined in the Event Scripts table. Clicking this button will cause the linked interactive automation script to be launched. This feature can be used for example to display additional details for a specific event.
   - The **Order Scripts table** works exactly the same as the Event Scripts table, except that it applies to orders instead of events.
   - The **Icons table** allows you to define which icons are available to be linked to an event or order script from the respective tables. As the Media Services app is only able to display icons that are part of the FabricMDL2Icons font, you will need to check a list of available icons. To make an icon available for use by the event and order scripts, you will need to add its name to the Icons table. A list of available icons can be found [here](https://uifabricicons.azurewebsites.net/).
 

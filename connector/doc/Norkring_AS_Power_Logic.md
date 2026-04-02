@@ -12,7 +12,7 @@ The **Norkring AS Power Logic** connector provides information on each different
 
 ### Version Info
 
-| **Range**     | **Description**              | **DCP Integration** | **Cassandra Compliant** |
+| Range     | Description              | DCP Integration | Cassandra Compliant |
 |----------------------|------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version              | No                  | No                      |
 | 2.0.0.x [SLC Main]   | Version 2 station monitoring | No                  | Yes                     |
@@ -120,9 +120,9 @@ This page displays buttons to force the retrieval of the power info and the prot
 The **Power Info Table** allows you to add, edit and remove power info configuration by adding protocols and linking parameters to a power status. Protocols can also be excluded from the power logic:
 
 - **Protocol:** Protocol of the Power Info element.
-- **Parameter:** Optionally, one or multiple parameters of which the alarm state should be taken into account (comma-separated, e.g. "*104,105*").
+- **Parameter:** Optionally, one or multiple parameters of which the alarm state should be taken into account (comma-separated, e.g., "*104,105*").
 - **Filter:** Optionally, specify a mask in the Filter column to apply the calculation only to a filtered selection of available rows of the dynamic table.
-- **Parameter Type:** Optionally, specify a parameter type used in the power logic, e.g. Nettutfall, Nettfeil, Generator Running and Rectifier.
+- **Parameter Type:** Optionally, specify a parameter type used in the power logic, e.g., Nettutfall, Nettfeil, Generator Running and Rectifier.
 - **Power Source:** Exclude a power source linked to the selection (*230VAC*, *48VDC UPS*, *230VAC UPS*, *Internal Battery* or *Exclude*).
 
 ## Usage (Range 2.0.0.x)

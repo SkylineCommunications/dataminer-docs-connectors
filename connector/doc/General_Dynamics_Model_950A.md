@@ -78,7 +78,7 @@ The web interface is only accessible when the client machine has network access 
 
 This page displays the **Tracking Signal Level** and the **Current** **Azimuth**, **Elevation**, and **Polarization** **Position** of the antenna, as well as the values of the monitored **Power Supplies**.
 
-It also displays the current ACB operational mode, i.e. the **Fundamental Mode**, the **Fundamental Submode**, the **Enhanced Mode**, the **Enhanced Submode**, the **Polarization Mode**, and the **Polarization Submode**.
+It also displays the current ACB operational mode, i.e., the **Fundamental Mode**, the **Fundamental Submode**, the **Enhanced Mode**, the **Enhanced Submode**, the **Polarization Mode**, and the **Polarization Submode**.
 
 Control buttons allow you to adjust the **Requested Azimuth**, **Elevation**, and **Polarization Position**. After you store the requested value locally by clicking the green check mark, click the **Apply Fine-Tune** button to set the value on the device.
 
@@ -87,7 +87,7 @@ Below this, a number of buttons allow further configuration of the tracking mode
 - **Preset Position:** Allows you to set the preset position to one of the 40 preset positions in the ACU. To do so, specify the preset position number and use the **Preset Position** button to move the antenna to the configured preset angles.
 - **Stow:** Allows you to set the stow position. To do so, set the **stow position number** to "1" or "2" (corresponding with the two possible stow positions) and use the **Stow Position** button to make the ACB go into Stow Mode.
 
-The page also allows you to load the **Box Limits** (i.e. **Box Limit Status**, **Configuration Location**, **Box Width**, **Box Length**, **Command Type**, **Azimuth Box Center**, and **Elevation Box Center**), as well as to enable or disable the **Axis**.
+The page also allows you to load the **Box Limits** (i.e., **Box Limit Status**, **Configuration Location**, **Box Width**, **Box Length**, **Command Type**, **Azimuth Box Center**, and **Elevation Box Center**), as well as to enable or disable the **Axis**.
 
 ### Info Messages
 
@@ -160,7 +160,7 @@ This page lists the preset LAT/LON positions in the **GEO Preset Position Info**
 
 ### Point Mode - Intelsat
 
-The **Intelsat Information** table shows several Intelsat parameters. If the station computer is not in control of the ACB, the ACB will reject load commands. If the ACB is not in control of the antenna, the ACB will reject load commands. Recall commands are allowed at any time, but they will be rejected if the dataset does not exist (i.e. has not been loaded). The following load command allows the dataset, including the set in use, to be changed while in Intelsat Mode. Set deletion is not allowed on the set in use.
+The **Intelsat Information** table shows several Intelsat parameters. If the station computer is not in control of the ACB, the ACB will reject load commands. If the ACB is not in control of the antenna, the ACB will reject load commands. Recall commands are allowed at any time, but they will be rejected if the dataset does not exist (i.e., has not been loaded). The following load command allows the dataset, including the set in use, to be changed while in Intelsat Mode. Set deletion is not allowed on the set in use.
 
 This page also allows you to manage the **Ephemeris Number**, as well as to configure the Intelsat parameters **Lm0**, **Lm1**, **Lm2**, **Lonc**, **Lonc1**, **Lons**, **Lons1**, **Latc**, **Latc1**, **Lats**, **Lats1**, **Epoch Time**, **Latitude**, **Longitude**, **Check Time**, **Intelsat Set**, **Configuration**, and **Name**. Finally, you can also **erase** the selected **Ephemeris Number**.
 
@@ -192,7 +192,7 @@ From here, you can also cancel the enhanced mode using the **Cancel Enh. Mode** 
 
 ### RF Parameters
 
-This page allows you to load the **RF Parameters**, i.e. **Parameter Number**, **Center Frequency**, **Bandwidth**, **Slope**, **Offset**, **Active Search**, **Feed Offset Elevation**, **Feed Offset in Cross Elevation**, **Path**, **Sweep Width**, **Name**, **Secondary Path**, and **Block Downconverter Frequency**.
+This page allows you to load the **RF Parameters**, i.e., **Parameter Number**, **Center Frequency**, **Bandwidth**, **Slope**, **Offset**, **Active Search**, **Feed Offset Elevation**, **Feed Offset in Cross Elevation**, **Path**, **Sweep Width**, **Name**, **Secondary Path**, and **Block Downconverter Frequency**.
 
 You can also select the **Beacon Frequency** here.
 
@@ -210,14 +210,14 @@ This page allows you to set the **Polarization Position**, **Polarization Veloci
 
 This page displays the **Tracking Signal Level** and the **Current** **Azimuth**, **Elevation**, and **Polarization** **Position** of the antenna, as well as the values of the monitored **Power Supplies**.
 
-It also displays the current ACB operational mode, i.e. the **Fundamental Mode**, the **Fundamental Submode**, the **Enhanced Mode**, the **Enhanced Submode**, the **Polarization Mode**, and the **Polarization Submode**.
+It also displays the current ACB operational mode, i.e., the **Fundamental Mode**, the **Fundamental Submode**, the **Enhanced Mode**, the **Enhanced Submode**, the **Polarization Mode**, and the **Polarization Submode**.
 
 Control buttons allow you to adjust the **Current Azimuth**, **Elevation** and **Polarization Position**. Below this, a number of buttons allow further configuration of the tracking mode: **Cancel Enhanced Mode**, **Manual Position**, **Stop Tracking**, **Moon**, and **Sun**. This section also contains two page buttons:
 
 - **Preset Position**: Allows you to set the preset position to one of the 40 preset positions in the ACU. To do so, specify the preset position number and click the **Preset Position** button to move the antenna to the configured preset angles.
 - **Stow**: Allows you to set the stow position. To do so, set the **stow position number** to "1" or "2" (corresponding with the two possible stow positions) and click the **Stow Position** button to make the ACB go into Stow Mode.
 
-The page also allows you to load the **Box Limits** (i.e. **Box Limit Status**, **Configuration Location**, **Box Width**, **Box Length**, **Command Type**, **Azimuth Box Center**, and **Elevation Box Center**), as well as to enable or disable the **Axis**.
+The page also allows you to load the **Box Limits** (i.e., **Box Limit Status**, **Configuration Location**, **Box Width**, **Box Length**, **Command Type**, **Azimuth Box Center**, and **Elevation Box Center**), as well as to enable or disable the **Axis**.
 
 ### Alarming
 
@@ -263,7 +263,7 @@ This page allows you to manage the **Data Set**, **Scan Pattern** and **Scan Num
 
 ### RF Parameters
 
-This page allows you to load the **RF Parameters**, i.e. Parameter Number, Center Frequency, Bandwidth, Slope, Offset, Active Search, Feed Offset Elevation, Feed Offset in Cross Elevation, Path, Sweep Width, Name, Secondary Path, and Block Downconverter Frequency.
+This page allows you to load the **RF Parameters**, i.e., Parameter Number, Center Frequency, Bandwidth, Slope, Offset, Active Search, Feed Offset Elevation, Feed Offset in Cross Elevation, Path, Sweep Width, Name, Secondary Path, and Block Downconverter Frequency.
 
 You can also select the **Beacon Frequency** here.
 

@@ -47,7 +47,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -119,7 +119,7 @@ This page contains a table with the current values of the **CPEs**.
 
 ### Interfaces
 
-This page displays the interfaces contained in the CMTS, as well as page buttons that display additional information related to interfaces, i.e. **Extended Information**, **Interface Errors**, **Interface Utilization**, **Cable Modems per Bounding Group** and **Cable Modems per MAC Domain**.
+This page displays the interfaces contained in the CMTS, as well as page buttons that display additional information related to interfaces, i.e., **Extended Information**, **Interface Errors**, **Interface Utilization**, **Cable Modems per Bounding Group** and **Cable Modems per MAC Domain**.
 
 From version 3.0.0.2 onwards, SNMP polling is not enabled by default. It can be managed on the **Polling Control** page. However, the Interface table is always enabled.
 
@@ -157,7 +157,7 @@ Finally, you can also force an update of the device interfaces on this page.
 
 On this page, the interface info is displayed.
 
-Click **XMPL RPC** to retrieve data that is not available on the CISCO device itself, e.g. to retrieve the **IF Speed** from a server. The data will be retrieved via calls to a customized platform.
+Click **XMPL RPC** to retrieve data that is not available on the CISCO device itself, e.g., to retrieve the **IF Speed** from a server. The data will be retrieved via calls to a customized platform.
 
 Via **Measurement Configuration**, you can configure a more detailed Interface.
 

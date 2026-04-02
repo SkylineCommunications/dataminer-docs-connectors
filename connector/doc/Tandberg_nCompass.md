@@ -67,7 +67,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not needed.
 
 SNMP Settings:
@@ -82,7 +82,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device, by default *80*.
 - **Bus address**: Not used.
 
@@ -137,7 +137,7 @@ The profile name has to be constructed as follows: "\<HEADEND\>-\<PROFILECONTENT
 - The \<PROFILE DESCRIPTION\> value can be:
 
 - *OnAir*: A regular running profile.
-  - In case of a bypass mode, a description of the system/location being bypassed (e.g. *RADIONT*, *MHA*, *MHADST*, *ULTIMO*).
+  - In case of a bypass mode, a description of the system/location being bypassed (e.g., *RADIONT*, *MHA*, *MHADST*, *ULTIMO*).
 
 There are also two page buttons available that allow you to activate certain profiles for a chosen period of time, and to clear the schedule from a certain point in time. In addition, there is also a refresh button available that will refresh the profile table.
 

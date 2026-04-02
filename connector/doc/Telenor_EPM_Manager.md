@@ -9,7 +9,7 @@ This connector is used to aggregate information coming from one or more collecto
 The connector has two levels of complexity:
 
 - On the back-end (BE) level, the **BE Manager** is responsible for a specific **county**. At this level, you can define how many collectors there are. The BE Manager is responsible for managing the load balance between these elements, as well as aggregating information from the county to the front-end level.
-- On the front-end (FE) level, the **FE Manager** is responsible for aggregating the information from all BE Managers (i.e. from all the counties) and presenting the result to the end user. It is the FE Manager that creates and controls the BE Manager elements.
+- On the front-end (FE) level, the **FE Manager** is responsible for aggregating the information from all BE Managers (i.e., from all the counties) and presenting the result to the end user. It is the FE Manager that creates and controls the BE Manager elements.
 
 ## About
 
@@ -51,9 +51,9 @@ First you need to configure an **FE Manager**. To do this, follow these steps:
 
    - The time configuration settings:
 
-     - **Starting Period Minute**: Indicates when the first new period with collector data after the hour starts (e.g. if a new period starts each time at xx:01, set the parameter to 1).
+     - **Starting Period Minute**: Indicates when the first new period with collector data after the hour starts (e.g., if a new period starts each time at xx:01, set the parameter to 1).
 
-     - **Period Length**: Indicates how long a period takes (e.g. 4 minutes). This period should be seen as the periodicity for the generation of Agama files.
+     - **Period Length**: Indicates how long a period takes (e.g., 4 minutes). This period should be seen as the periodicity for the generation of Agama files.
 
      - **Period Margin**: Indicates how long the connector should wait before starting the aggregation cycle. There are two different margins, depending on the type of the element you are configuring (FE or BE). After the period margin has passed, data will be written into the parameter tables.
 

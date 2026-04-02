@@ -113,7 +113,7 @@ On the **Operators** page, you can use the right-click menu of the Operators tab
 
 ### Provisioning
 
-There are several general (i.e. common to all operators) provisioning settings available on the **Provisioning** page.
+There are several general (i.e., common to all operators) provisioning settings available on the **Provisioning** page.
 
 In the **DMA Departments Allocation** table, which contains a row per DMA available in the DMS, you can define DMA allocation, which determines to which DMA the elements from several departments are going to be assigned.
 

@@ -26,7 +26,7 @@ The chassis must include an **Evertz** **7800-FC** card in order to be functiona
 
 ### Exported connectors
 
-| **Exported Connector** | **Description**     |
+| Exported Connector | Description     |
 |-----------------------|---------------------|
 | Evertz 7891MG - Card  | Used for the 7891MG |
 

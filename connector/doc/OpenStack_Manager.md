@@ -91,7 +91,7 @@ This page contains all existing **Key Pairs** for all projects. It allows you to
 
 This page contains a tree control where you can monitor all existing volumes for all authenticated projects.
 
-Selecting a volume allows you to both monitor and manage it, e.g. by **editing** the **name**, **description, bootable option** and **size**. Additional available actions are **Manage Attachment**, **Create Snapshots**, **Change Volume Type**, **Backup**, **Upload to Image**, **Create Transfer**, **Update Metadata** and **Delete**.
+Selecting a volume allows you to both monitor and manage it, e.g., by **editing** the **name**, **description, bootable option** and **size**. Additional available actions are **Manage Attachment**, **Create Snapshots**, **Change Volume Type**, **Backup**, **Upload to Image**, **Create Transfer**, **Update Metadata** and **Delete**.
 
 Further down in the tree control, you can also access the **Attachments** list, with the **detach** option, the **Metadata** list, with the options to **edit** the value or **delete** it, and the **Transfers** list, with the option to **delete** it.
 

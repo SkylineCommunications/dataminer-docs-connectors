@@ -29,7 +29,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### General
 
-This page allows you to set certain general parameters, such as the database connection details (e.g. **Username**, **Password**, etc.).
+This page allows you to set certain general parameters, such as the database connection details (e.g., **Username**, **Password**, etc.).
 
 ### Overview
 

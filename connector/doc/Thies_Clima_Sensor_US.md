@@ -8,7 +8,7 @@ uid: Connector_help_Thies_Clima_Sensor_US
 
 The **Thies Clima Sensor US** is a weather station. It captures real-time information about wind, temperature, humidity, precipitation, pressure, brightness, and system status.
 
-Originally supporting a serial Modbus RTU implementation, the connector (from version 1.1.0.x onwards) has been refactored to use **SNMP (v2c)**. The former Modbus-specific functionality and configuration workflow (e.g. switching device mode) have been removed. This connector now implements the **SNMP** interface only.
+Originally supporting a serial Modbus RTU implementation, the connector (from version 1.1.0.x onwards) has been refactored to use **SNMP (v2c)**. The former Modbus-specific functionality and configuration workflow (e.g., switching device mode) have been removed. This connector now implements the **SNMP** interface only.
 
 ### Version Info
 

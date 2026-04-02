@@ -86,8 +86,8 @@ This page can be used for the **TS over IP** configuration, including the **inpu
 
 The page contains page buttons that open the following subpages:
 
-- **DVB**: Allows you to configure **Uni/Multicast** parameters, i.e. the **IP address**, **UDP Port** and **MAC Address**.
-- **IPTV**: Allows you to configure the **IPTV** channels, including the **Channel Status**, **IP address**, **UDP Port**, **Target MAC address**, **EIT** and **TDT/TOT**. You can also check the lists of **Programs** that are running on each **IPTV** channel. However, it is not possible to edit these lists (i.e. to add or remove programs).
+- **DVB**: Allows you to configure **Uni/Multicast** parameters, i.e., the **IP address**, **UDP Port** and **MAC Address**.
+- **IPTV**: Allows you to configure the **IPTV** channels, including the **Channel Status**, **IP address**, **UDP Port**, **Target MAC address**, **EIT** and **TDT/TOT**. You can also check the lists of **Programs** that are running on each **IPTV** channel. However, it is not possible to edit these lists (i.e., to add or remove programs).
 
 ### Backup
 
@@ -97,9 +97,9 @@ This page contains **Backup** configuration parameters.
 
 This page contains page buttons that open the following subpages:
 
-- **Device**: Contains device configuration parameters, e.g. **Board Type**, **Mux** **Function**, **Backup** **Function**, **Reboot** Command, **Default** settings, etc.
+- **Device**: Contains device configuration parameters, e.g., **Board Type**, **Mux** **Function**, **Backup** **Function**, **Reboot** Command, **Default** settings, etc.
 - **Version**: Displays the software version.
-- **Network**: Allows you to configure the network parameters, e.g. **Device** **IP**, **Subnet** **Mask**, etc.
+- **Network**: Allows you to configure the network parameters, e.g., **Device** **IP**, **Subnet** **Mask**, etc.
 
 ### Traps
 

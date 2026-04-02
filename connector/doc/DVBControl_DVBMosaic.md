@@ -137,7 +137,7 @@ Configuring presets in the **Alarm Preset Table** can be done by importing an XM
 
 You can also add a preset in the table by selecting **Create Preset** in the table's context menu. This way, you can add the presets one by one. To delete a preset, right-click the entry in the table and select **Delete Preset**. The **Remove All** button can be used to delete all the entries from the table at once. To save an alarm preset in an XML file, click the button **Export Alarm Preset**.
 
-Once an alarm preset has been assigned to a certain input, channel or PID, this preset name can be used as a filter when you create alarm templates in DataMiner. This will allow you to configure different thresholds for the same parameter (e.g. PID bitrate), depending on the alarm preset filter.
+Once an alarm preset has been assigned to a certain input, channel or PID, this preset name can be used as a filter when you create alarm templates in DataMiner. This will allow you to configure different thresholds for the same parameter (e.g., PID bitrate), depending on the alarm preset filter.
 
 ### Tallys
 

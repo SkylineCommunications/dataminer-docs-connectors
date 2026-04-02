@@ -14,7 +14,7 @@ The Castlerock SNMPc is a device that monitors and catches events from connected
 
 - Regarding **range 1.0.x.x**:
 
-  This connector makes an SQL connection with the SNMPc database of the device. It reads the **Node Table** and **EventLog Table** in the SNMPc database, processes the information, and displays the processed information on three pages. The **Devices page** shows the available information concerning the connected devices, the **Events** **page** shows the events captured by the device, and the **Info Events page** shows the information events. With the settings on the **Configuration page**, you can clean the database to e.g. only keep records that are less than one year old.
+  This connector makes an SQL connection with the SNMPc database of the device. It reads the **Node Table** and **EventLog Table** in the SNMPc database, processes the information, and displays the processed information on three pages. The **Devices page** shows the available information concerning the connected devices, the **Events** **page** shows the events captured by the device, and the **Info Events page** shows the information events. With the settings on the **Configuration page**, you can clean the database to e.g., only keep records that are less than one year old.
 
 - Regarding **range 2.0.0.x**:
 
@@ -233,7 +233,7 @@ In the one but last column of the table, **Create DVE**, you can enable or disab
 
 To delete a single device from the Devices Table, use the **Delete Device** button in the relevant row. Note that the traps originating from that device will also immediately be deleted, as the connector only stores traps originating from known IP addresses.
 
-The **Number of** **Known IP Addresses** parameter at the top of the page shows the total number of rows in the Device Table. The **Number of DVEs** parameter below it shows how many DVEs are currently enabled. To further manage devices, e.g. to delete multiple devices or to create or delete all DVEs at once, go to the Configuration page (see below).
+The **Number of** **Known IP Addresses** parameter at the top of the page shows the total number of rows in the Device Table. The **Number of DVEs** parameter below it shows how many DVEs are currently enabled. To further manage devices, e.g., to delete multiple devices or to create or delete all DVEs at once, go to the Configuration page (see below).
 
 ### Configuration
 
@@ -261,7 +261,7 @@ The button **Delete All Rules** can be used to manually delete all old rules.
 
 The **Import Rules** and **Show Rules** page buttons are used to manage update rules. (Refer to the Notes section for more information on how these rules work.)
 
-- **Import Rules**: This subpage contains the necessary parameters to import custom rules. The imported files must be CSV files with a specific format, as detailed in the Notes section below. Two kinds of rules are separated in the file with the keywords 'TRIM RULES' and 'UPDATE RULES'. It is also possible to specify if you want to delete the old rules on importing, or keep the old rules and just add the new rules, with the toggle button **Clear Old Rules on Importing**. At the right side of the page, you can also find a report of the import, mentioning which rows were imported and which were considered invalid (e.g. the severity was not recognized or the row did not contain the expected number of values).
+- **Import Rules**: This subpage contains the necessary parameters to import custom rules. The imported files must be CSV files with a specific format, as detailed in the Notes section below. Two kinds of rules are separated in the file with the keywords 'TRIM RULES' and 'UPDATE RULES'. It is also possible to specify if you want to delete the old rules on importing, or keep the old rules and just add the new rules, with the toggle button **Clear Old Rules on Importing**. At the right side of the page, you can also find a report of the import, mentioning which rows were imported and which were considered invalid (e.g., the severity was not recognized or the row did not contain the expected number of values).
 - **Show Rules**: This page displays an overview of all trim rules and update rules that are currently imported in the connector, in the **Trim Rules Table** and **Update Rules Table**. The total **Number of Trim Rules** and the **Number of Update Rules** are also specified. Please also note that the order of the rules matters, as the rules are executed in that specific order (see Notes below).
 
 Finally, the button **Apply Rules in History** can be used to apply all current rules on the full content of the Traps Table. This can for example be useful when you notice that an older trap was not updated by a new trap because the update rule was not correct. In that case, you can adjust the update rule and apply the rules in history. This mechanism will start from the oldest traps, and will check for every trap if the current rules require the update of an older trap. Note that this mechanism can take more time if the number of rules and the number of stored traps are high.
@@ -272,7 +272,7 @@ In this section, you can manage the known IP addresses shown on the Known IP Add
 
 With the **Delete All** button, you can manually delete all known IP addresses. Please note that this button will not only delete the known IP addresses in the table, but also the DVEs made for these addresses and the stored traps coming from the addresses. This means that, in essence, this button resets all stored information except for the rules.
 
-The page button **Import IP Addresses** opens a subpage where you can import IP addresses into the connector, using a CSV file with a specific format (detailed on this subpage). With the toggle button **Create DVEs on Adding/Updating IP Addresses**, you can specify whether the connector should by default try to create DVEs when importing. A report of the import is displayed on the right-hand side of the subpage, mentioning which rows were imported and which were considered invalid (e.g. the IP address had already been imported before, the IP address was not a valid IP address, there was already a previous row mentioning that IP address, etc.). If you want to change the Device Name related to a certain IP address, it is also possible to do this via importing. However, unlike with the importing of rules, you cannot delete old addresses by importing, as this would delete all stored traps as well (similar to if the IP addresses were removed with the Delete All button).
+The page button **Import IP Addresses** opens a subpage where you can import IP addresses into the connector, using a CSV file with a specific format (detailed on this subpage). With the toggle button **Create DVEs on Adding/Updating IP Addresses**, you can specify whether the connector should by default try to create DVEs when importing. A report of the import is displayed on the right-hand side of the subpage, mentioning which rows were imported and which were considered invalid (e.g., the IP address had already been imported before, the IP address was not a valid IP address, there was already a previous row mentioning that IP address, etc.). If you want to change the Device Name related to a certain IP address, it is also possible to do this via importing. However, unlike with the importing of rules, you cannot delete old addresses by importing, as this would delete all stored traps as well (similar to if the IP addresses were removed with the Delete All button).
 
 #### Dynamic Virtual Elements
 
@@ -310,7 +310,7 @@ The traps collected by this connector need to have a particular format for the c
       1. Normal
       1. Info
 
-  - Binding 3: IP address (real source IP of the trap, i.e. the IP address of the connected trap)
+  - Binding 3: IP address (real source IP of the trap, i.e., the IP address of the connected trap)
 
   - Binding 4: TrapOID (always equal to 1.3.6.1.4.1.56.12.1.7.0.1.0.1)
 

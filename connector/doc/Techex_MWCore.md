@@ -90,7 +90,7 @@ In order to initialize the connector, you need to specify the following input co
 
 > [!NOTE]
 >
-> - If the public and private key certificates are in the .pem format, they have to be exported to a .pfx file, as documented in [OpenSSL](https://www.openssl.org/docs/man1.0.2/man1/pkcs12.html) (e.g. openssl pkcs12 -inkey private_key.pem -in public_key.pem -export -out client_certificate.pfx).
+> - If the public and private key certificates are in the .pem format, they have to be exported to a .pfx file, as documented in [OpenSSL](https://www.openssl.org/docs/man1.0.2/man1/pkcs12.html) (e.g., openssl pkcs12 -inkey private_key.pem -in public_key.pem -export -out client_certificate.pfx).
 > - *openssl.exe* comes alongside a [Git](https://git-scm.com/) installation.
 
 ### Redundancy
@@ -115,7 +115,7 @@ The Techex MWCore connector offers management and monitoring capabilities for th
 
 Configuration settings are retrieved through a polling mechanism that integrates with Techex's REST API (available at `<URL>/doc/`). Additionally, a socket connection can be established with each TXCore node to asynchronously receive telemetry data from the TXCore nodes about the attached TXEdges. This connection uses client-certificate authentication.
 
-The Techex MWCore also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Techex_MWCore_ConnectorAPI), enabling a running element to communicate with other DataMiner elements and Automation scripts. This library supports CRUD actions for streams, sources, and outputs.
+The Techex MWCore also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Techex_MWCore_ConnectorAPI), enabling a running element to communicate with other DataMiner elements and automation scripts. This library supports CRUD actions for streams, sources, and outputs.
 
 Below you can find more information about the different data pages available in the element.
 
@@ -167,9 +167,9 @@ The information for the monitored TXEdges is further detailed on the following s
 
 - **ETR 290**: When the statistics connection is enabled, the table on this subpage lists ETR messages related to the sources.
 
-- **Sources States**: The table on this subpage lists the source states (e.g. error caused by zero bitrate detected in the last 10 seconds). You can choose to include all sources or only the active ones.
+- **Sources States**: The table on this subpage lists the source states (e.g., error caused by zero bitrate detected in the last 10 seconds). You can choose to include all sources or only the active ones.
 
-- **Outputs States**: The table on this subpage lists the output states (e.g. error caused by an invalid passphrase). You can choose to include all outputs or only the active ones.
+- **Outputs States**: The table on this subpage lists the output states (e.g., error caused by an invalid passphrase). You can choose to include all outputs or only the active ones.
 
 ### Cluster Members
 

@@ -44,7 +44,7 @@ SNMP Settings:
 
 ### General
 
-On this page, general information related to the device is displayed (e.g. **Server Product Name**, **Server System Up Time**, ...) together with some monitoring data (e.g. **Available Physical Memory**, **Available Virtual Memory**, ...).
+On this page, general information related to the device is displayed (e.g., **Server Product Name**, **Server System Up Time**, ...) together with some monitoring data (e.g., **Available Physical Memory**, **Available Virtual Memory**, ...).
 
 ### Network
 

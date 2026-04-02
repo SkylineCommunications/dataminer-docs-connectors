@@ -20,8 +20,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The ServiceNow incident table endpoint URL (e.g. `https://{instance}.service-now.com/api/now/table/incident`).
-- **IP port**: The port of the destination (e.g. *443*).
+- **IP address/host**: The ServiceNow incident table endpoint URL (e.g., `https://{instance}.service-now.com/api/now/table/incident`).
+- **IP port**: The port of the destination (e.g., *443*).
 
 ### Initialization
 

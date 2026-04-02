@@ -64,7 +64,7 @@ The element has the following pages:
 - **I/O**: This page contains input/output control parameters that are used to configure the I/O settings of the card.
 - **Settings**: This page contains control parameters other than I/O parameters, such as synchronization or delay mode of the card, and settings related to video freeze.
 - **Status**: This page contains status parameters.
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

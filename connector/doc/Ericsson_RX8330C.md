@@ -48,12 +48,12 @@ This page displays all the parameters related to **Device Info**, including:
 
 - The overall status (**Product Name**, **Current Time**, **Uptime** and **Front Panel Lockout**)
 - The **Build** (including the **SW Version**, **PS Version** and **Hardware ID**)
-- The **Environment** (e.g. Temperature and Fan Speeds)
+- The **Environment** (e.g., Temperature and Fan Speeds)
 - The **Network Settings**, including the MAC Addresses and Link Status.
 
 It also contains two page buttons:
 
-- **Login**: Opens a page where you can specify the login credentials, i.e. the username and password.
+- **Login**: Opens a page where you can specify the login credentials, i.e., the username and password.
 - **Modules**: Displays the Modules table.
 
 ### Status
@@ -76,13 +76,13 @@ This page displays the **CA Status** parameter, as well as the **CA Service Stat
 
 ### Input
 
-This page displays the input parameters (e.g. **Current Input**, **TS Lock** and **Packet Length**) and **Satellite Input** parameters.
+This page displays the input parameters (e.g., **Current Input**, **TS Lock** and **Packet Length**) and **Satellite Input** parameters.
 
 There are also four page buttons (**Configuration RF1 - 4**) that open subpages with the current RF configuration.
 
 ### Decode - Service
 
-This page displays the overall decode service parameters (e.g. **Service**, **Current SI Mode** and **TS ID**).
+This page displays the overall decode service parameters (e.g., **Service**, **Current SI Mode** and **TS ID**).
 
 It also contains a number of page buttons:
 

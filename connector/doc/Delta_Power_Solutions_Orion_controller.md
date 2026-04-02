@@ -63,7 +63,7 @@ HTTP CONNECTION:
 
 ### Access configuration
 
-In range **1.0.1.x** of the connector, you need to specify the necessary information in the **Access Configuration** section on the **General** page, so that the connector can connect with the device and retrieve data stored in a log file. You need to specify the credentials (username and password), the exact name of the log file (e.g. LOG_Data20Log\_ ) and the number of the log file (e.g. 15).
+In range **1.0.1.x** of the connector, you need to specify the necessary information in the **Access Configuration** section on the **General** page, so that the connector can connect with the device and retrieve data stored in a log file. You need to specify the credentials (username and password), the exact name of the log file (e.g., LOG_Data20Log\_ ) and the number of the log file (e.g., 15).
 
 ### Web Interface
 

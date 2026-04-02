@@ -24,7 +24,7 @@ This connector uses a **serial** connection and requires the following input dur
 SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP, should be set to 127.0.0.1 or "any".
-- **IP port**: The port of the connected device, e.g. 2222*.
+- **IP port**: The port of the connected device, e.g., 2222*.
 
 ## Usage
 

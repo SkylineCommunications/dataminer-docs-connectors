@@ -43,7 +43,7 @@ This connector uses a **serial** connection and requires the following input dur
 Serial connection:
 
 - Type of port: TCP/IP
-- IP address/host: The polling IP of the device, e.g. 10.11.12.13.
+- IP address/host: The polling IP of the device, e.g., 10.11.12.13.
 - IP port: The port designated to be used for serial communication.
 - Bus address: A value between 0x21 (33) to 0x7F (127).
 

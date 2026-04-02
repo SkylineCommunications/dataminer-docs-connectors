@@ -21,7 +21,7 @@ The **TDC CPE Manager** is part of a CPE setup and is responsible for aggregatin
 
 ### Version Info
 
-| **Range**                | **Key Features**                                        | **Based on** | **System Impact**             |
+| Range                | Key Features                                        | Based on | System Impact             |
 |--------------------------|---------------------------------------------------------|--------------|-------------------------------|
 | 1.0.0.x **\[Obsolete\]** | Initial version                                         | -            | -                             |
 | 3.0.1.x **\[Obsolete\]** | New CPE integration                                     | 3.0.0.4      | -                             |
@@ -134,7 +134,7 @@ Key Performance Indicators (KPIs) are calculated on different levels. Below, you
 
 ### Generic KPIs
 
-| **Description**               | **Information**                                                           |
+| Description               | Information                                                           |
 |-------------------------------|---------------------------------------------------------------------------|
 | \#CM                          | Total number of cable modems                                              |
 | \#eMTA                        | Total number of eMTAs                                                     |
@@ -157,7 +157,7 @@ Key Performance Indicators (KPIs) are calculated on different levels. Below, you
 
 ### Generic Channel KPIs
 
-| **Description** | **Information**                           |
+| Description | Information                           |
 |-----------------|-------------------------------------------|
 | \#Act Ch        | Total number of active channels           |
 | Bitrate         | Calculated bitrate \[Mbps\]               |
@@ -169,7 +169,7 @@ Key Performance Indicators (KPIs) are calculated on different levels. Below, you
 
 | Description | Information                           |
 |-----------------|-------------------------------------------|
-| %DM DOCSIS Avail | DM DOCSIS availability [%] = (Aggregated device availability / aggregated subscribers) * 100<br><br>**DM device availability**<br><br> *Calculated by DataMiner: status if device is responding (i.e. not in timeout) and has operational status = ON. Operational status = ON if DataMiner element is in active state (i.e. not paused or stopped) and element severity &lt; Major.*<br><br>**Aggregated device availability** = DM device availability * (aggregated sum of device availability)<br><br>*This parameter is the sum of device availability of all equipment available below the current topology level multiplied with the device availability of the current topology level.*<br><br>*Note that if no aggregated sum of device availability values is available (NA), the default value 1 is used.*<br><br>**Aggregated subscribers**<br><br>*This parameter is the sum of subscribers (cable modems) of all equipment available below the current topology level.* |
+| %DM DOCSIS Avail | DM DOCSIS availability [%] = (Aggregated device availability / aggregated subscribers) * 100<br><br>**DM device availability**<br><br> *Calculated by DataMiner: status if device is responding (i.e., not in timeout) and has operational status = ON. Operational status = ON if DataMiner element is in active state (i.e., not paused or stopped) and element severity &lt; Major.*<br><br>**Aggregated device availability** = DM device availability * (aggregated sum of device availability)<br><br>*This parameter is the sum of device availability of all equipment available below the current topology level multiplied with the device availability of the current topology level.*<br><br>*Note that if no aggregated sum of device availability values is available (NA), the default value 1 is used.*<br><br>**Aggregated subscribers**<br><br>*This parameter is the sum of subscribers (cable modems) of all equipment available below the current topology level.* |
 | Exp %DM DOCSIS Avail /Network | Expected DM DOCSIS availability [%] = Smart baseline value of the %DM DOCSIS availability |
 | Avg BB Avail /Network | Broadband availability, average [%] = DM DOCSIS availability / expected DM DOCSIS availability |
 | Worst 2% BB Avail /Network | Broadband availability, worst 2% [%] = Average for 2% customers with worst availability<br><br>*Calculates the weighted average of the DM DOCSIS availability KQI for 2% of the total number of customers above the smart baseline.* |

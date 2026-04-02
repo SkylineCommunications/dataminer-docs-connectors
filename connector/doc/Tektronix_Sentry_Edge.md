@@ -8,7 +8,7 @@ The **Tektronix Sentry Edge** connector is used to display information related t
 
 ## About
 
-This connector will display information related to the selected **Sentry Edge** device. This information and details related to ports, transport and services, are available on different pages, described in the "Usage" section of this document. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the **bitrate**.
+This connector will display information related to the selected **Sentry Edge** device. This information and details related to ports, transport and services, are available on different pages, described in the "Usage" section of this document. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g., the **bitrate**.
 
 **Note: This connector requires the .Net Framework 4.0.**
 

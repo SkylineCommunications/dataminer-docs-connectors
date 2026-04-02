@@ -49,7 +49,7 @@ For example:
 
 The **Parameter ID** is a numerical identifier representing the specific attribute being monitored within an element. It defines what data will be polled from the specified **Element ID**.
 
-- Each parameter ID corresponds to a predefined metric (e.g. CPU usage, voltage, temperature).
+- Each parameter ID corresponds to a predefined metric (e.g., CPU usage, voltage, temperature).
 - The polling frequency determines how often the parameter value is retrieved.
 
 For example:

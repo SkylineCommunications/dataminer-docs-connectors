@@ -54,17 +54,17 @@ This page includes general information from the standard MIB-2, such as the devi
 
 ### Transmitter
 
-On this page, you can configure transmitter behavior, such as the operation mode or the input. You can also monitor the state of the transmitter, e.g. the state of the inputs, and check for the presence of alarms and warnings.
+On this page, you can configure transmitter behavior, such as the operation mode or the input. You can also monitor the state of the transmitter, e.g., the state of the inputs, and check for the presence of alarms and warnings.
 
 ### Exciter A
 
-On this page, you can configure the exciter A behavior, e.g. the input signal state. You can also monitor the state of the exciter, e.g. the state of the inputs, and check for the presence of alarms and warnings.
+On this page, you can configure the exciter A behavior, e.g., the input signal state. You can also monitor the state of the exciter, e.g., the state of the inputs, and check for the presence of alarms and warnings.
 
 The value *Undefined* in any of the possible states is considered to be an **exception** and is grayed out.
 
 ### Exciter B
 
-On this page, you can configure the exciter B behavior, e.g. the input signal state. You can also monitor the state of the exciter, e.g. the state of the inputs, and check for the presence of alarms and warnings.
+On this page, you can configure the exciter B behavior, e.g., the input signal state. You can also monitor the state of the exciter, e.g., the state of the inputs, and check for the presence of alarms and warnings.
 
 The value *Undefined* in any of the possible states is considered to be an **exception** and is grayed out.
 

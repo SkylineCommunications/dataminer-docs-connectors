@@ -111,4 +111,4 @@ Once all parameters are configured and applied, it should be possible to send an
 
 ## Notes
 
-This connector can be used in combination with an Automation script that fills in the message and phone number to initiate SMS notifications.
+This connector can be used in combination with an automation script that fills in the message and phone number to initiate SMS notifications.

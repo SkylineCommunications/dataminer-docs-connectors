@@ -130,4 +130,4 @@ These **Alarm boxes** contain three values and are the result of dividing the by
     - Previously active, not confirmed yet. (2)
     - Active, not confirmed yet. (3)
 
-These alarm parameters are enabled for monitoring and trending. If the default alarm template is applied, each non-regular value (i.e. not *Inactive*) will cause the operator to be notified via the Alarm Console.
+These alarm parameters are enabled for monitoring and trending. If the default alarm template is applied, each non-regular value (i.e., not *Inactive*) will cause the operator to be notified via the Alarm Console.

@@ -122,11 +122,11 @@ On the **Configuration** page, you can configure the following element functiona
 
 - In range **1.0.4.x**:
 
-  - **Script Name**: Specify the Automation script to be executed.
+  - **Script Name**: Specify the automation script to be executed.
 
 ## Notes
 
-For range **1.0.0.x** and **1.0.1.x** of the connector, specific Correlation rules and Automation scripts are required for the communication with auxiliary connectors such as the Generic CM Collector and with EPM connectors such as Skyline Platform EPM and Skyline Platform WM. To get the full functionality of this connector, make sure these Correlation rules and Automation scripts are configured and enabled. In range **1.0.2.x**, the Correlation rules are no longer required.
+For range **1.0.0.x** and **1.0.1.x** of the connector, specific correlation rules and automation scripts are required for the communication with auxiliary connectors such as the Generic CM Collector and with EPM connectors such as Skyline Platform EPM and Skyline Platform WM. To get the full functionality of this connector, make sure these correlation rules and automation scripts are configured and enabled. In range **1.0.2.x**, the correlation rules are no longer required.
 
 With larger devices or large datasets, the polling performance may vary.
 

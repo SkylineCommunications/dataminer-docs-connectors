@@ -34,8 +34,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *100.99.98.97*.
-- **Device address**: The slot the card is in, e.g. *7*.
+- **IP address/host**: The polling IP of the device, e.g., *100.99.98.97*.
+- **Device address**: The slot the card is in, e.g., *7*.
 
 SNMP Settings:
 

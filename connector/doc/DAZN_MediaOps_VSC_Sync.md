@@ -50,7 +50,7 @@ When a job is created, an InterApp call is performed on the connector. The conne
 
 ### Notes
 
-This connector is designed to work with the DZN-UDAPI-AVOS Automation script.
+This connector is designed to work with the DZN-UDAPI-AVOS automation script.
 
 In the background, there are two buffers: pending and live requests. When a pending request changes to a live request, the connector first checks if it is a patch request. If it is, the data of the patch request will be used to send a get request first, because the API expects the "LastModified" tag to be the same. For this reason, this "LastModified" value is retrieved first and then used to complete the patch request and transmit it.
 

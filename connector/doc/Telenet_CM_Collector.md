@@ -67,7 +67,7 @@ The **Classification** table contains the definitions of all the classes. You ca
 - **Product Type** is the internet product.
 - **Flow Direction** determines if it is a classification for upstream or downstream.
 - **Class** determines the class.
-- **Byte Count Delta** contains the maximum delta between this polling and previous polling to suffice for this class. E.g. if byte count delta class 1 is 1,000,000 and byte count delta class 2 is 5,000,000, this means that if there is a delta of 3,000,000, this will be a class 2 modem at this moment.
+- **Byte Count Delta** contains the maximum delta between this polling and previous polling to suffice for this class. For example, if byte count delta class 1 is 1,000,000 and byte count delta class 2 is 5,000,000, this means that if there is a delta of 3,000,000, this will be a class 2 modem at this moment.
 
 ## Usage
 

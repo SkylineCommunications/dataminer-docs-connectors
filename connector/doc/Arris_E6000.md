@@ -42,7 +42,7 @@ This connector uses two Simple Network Management Protocol version 3 (**SNMPv3**
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2*.
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2*.
 
 SNMP Settings:
 
@@ -51,14 +51,14 @@ SNMP Settings:
 - **User name**: The SNMPv3 username as configured on the Arris E6000 device.
 - **Authentication password**: The SNMPv3 authentication password as configured on the Arris E6000 device.
 - **Encryption password**: The SNMPv3 encryption password as configured on the Arris E6000 device.
-- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g. *HMAC-MD5*.
-- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g. *DES*.
+- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g., *HMAC-MD5*.
+- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g., *DES*.
 
 #### SNMP traps connection
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -67,12 +67,12 @@ SNMP Settings:
 - **User name**: The SNMPv3 username as configured on the Arris E6000 device.
 - **Authentication password**: The SNMPv3 authentication password as configured on the Arris E6000 device.
 - **Encryption password**: The SNMPv3 encryption password as configured on the Arris E6000 device.
-- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g. *HMAC-MD5*.
-- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g. *DES*.
+- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g., *HMAC-MD5*.
+- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g., *DES*.
 
 #### Serial connection
 
-- **IP address/host**: The IP address of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The IP address of the device, e.g., *192.168.10.2.*
 - **IP port**: The port of the connected device, by default *22*.
 
 ### Creation (Range 2.0.0.x)
@@ -81,7 +81,7 @@ This connector uses a Simple Network Management Protocol version 2 (**SNMPv2**) 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -95,7 +95,7 @@ This connector uses a Simple Network Management Protocol version 3 (**SNMPv3**) 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -104,8 +104,8 @@ SNMP Settings:
 - **User name:** The SNMPv3 username as configured on the Arris E6000 device.
 - **Authentication password**: The SNMPv3 authentication password as configured on the Arris E6000 device.
 - **Encryption password**: The SNMPv3 encryption password as configured on the Arris E6000 device.
-- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g. *HMAC-MD5*.
-- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g. *DES*.
+- **Authentication algorithm**: The SNMPv3 authentication algorithm as configured on the Arris E6000 device, e.g., *HMAC-MD5*.
+- **Encryption algorithm**: The SNMPv3 encryption algorithm as configured on the Arris E6000 device, e.g., *DES*.
 
 ### Creation (Range 3.0.0.x)
 
@@ -113,7 +113,7 @@ This connector uses a Simple Network Management Protocol version 2 (**SNMPv2**) 
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The polling IP of the device, e.g., *192.168.10.2.*
 
 SNMP Settings:
 
@@ -138,7 +138,7 @@ On the right-hand side of this page, several page buttons are displayed, which d
 - **Linecard Status**: Displays a table with the status of the linecards on the Arris E6000 device. The table contains status parameters, the serial number, the hardware version, and the type.
 - **Transceivers**: Displays a table with the status of the transceivers per slot and port.
 - **PIC Table**: Displays a table that shows the link between a PIC (connector) and RF segment (ifAlias). Aside from the PIC and alias, it also shows the PIC MAC Index. The **Port Information** page button displays the indexes, consisting of the Card ID and Port ID, the PortConnector ID, and the MAC Interface Index.
-- **Login**: Here you can provide the credentials (**User Name** and **Password**) used for SSH communication with the Arris E6000 device. The **Connection Status** parameter indicates the status of the connection. When you set the credentials, **Connection Status** is set to *Unknown*. When a CLI command is sent and succeeds, **Connection Status** is set to *Connected*. When the SSH connection could not be set up and a timeout occurs (e.g. because of invalid credentials), **Connection Status** is set to *Session Timeout*.
+- **Login**: Here you can provide the credentials (**User Name** and **Password**) used for SSH communication with the Arris E6000 device. The **Connection Status** parameter indicates the status of the connection. When you set the credentials, **Connection Status** is set to *Unknown*. When a CLI command is sent and succeeds, **Connection Status** is set to *Connected*. When the SSH connection could not be set up and a timeout occurs (e.g., because of invalid credentials), **Connection Status** is set to *Session Timeout*.
 
 ### Interfaces Page
 
@@ -169,7 +169,7 @@ With the **Auto Clear** page button, the number of notifications that should be 
 
 You can remove individual notifications from the table with the **Delete** button in the corresponding row. For each notification, the table provides the following information (when available): the timestamp, description, severity, OID, and event ID.
 
-The **Alarms Table** contains entries for alarms. When a new alarm is received (e.g. card overload alarm), a new row is added to the table. Any subsequent alarms that are related to this alarm will update the row in the table. When a trap is received that indicates that the alarm is cleared, the row is removed from the table. An individual row can be deleted with the **Delete** button displayed in the row. As the expected number of entries in this table is small, the table has no auto-clearing configuration options.
+The **Alarms Table** contains entries for alarms. When a new alarm is received (e.g., card overload alarm), a new row is added to the table. Any subsequent alarms that are related to this alarm will update the row in the table. When a trap is received that indicates that the alarm is cleared, the row is removed from the table. An individual row can be deleted with the **Delete** button displayed in the row. As the expected number of entries in this table is small, the table has no auto-clearing configuration options.
 
 Note that some traps will not appear in the table but will immediately update the corresponding value in the table.
 
@@ -217,7 +217,7 @@ This section allows you to create a backup of the running configuration. To do s
 1. First provide a folder where the running configuration will be transferred after it has been created on the device.
 1. Click the **Create Backup** button to trigger the creation of a backup file for the running configuration on the Arris E6000 device (in the directory "/system/cfgfiles/").
 
-The name of the backup file has the following format: "ELEMENTNAME_YYYYMMDD_HHMMSS.cfg". Once a backup file has been created, the connector will check for the presence of old configuration files on the device (i.e. files that were created more than 48 hours before the new .cfg file was created). If such files are found, the connector will delete them. Note that an element will only manage the backup files that start with the name of that element (i.e. backup files that start with ELEMENTNAME\_, where ELEMENTNAME is the name of the element).
+The name of the backup file has the following format: "ELEMENTNAME_YYYYMMDD_HHMMSS.cfg". Once a backup file has been created, the connector will check for the presence of old configuration files on the device (i.e., files that were created more than 48 hours before the new .cfg file was created). If such files are found, the connector will delete them. Note that an element will only manage the backup files that start with the name of that element (i.e., backup files that start with ELEMENTNAME\_, where ELEMENTNAME is the name of the element).
 
 Note: It is advisable to limit the number of backup files to manage in the device.
 

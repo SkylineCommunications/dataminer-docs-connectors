@@ -11,7 +11,7 @@ This connector allows you to monitor and control the Actia Sodielec SDVB100 devi
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x [obsolete] | Initial version. | - | - |
-| 2.0.0.x [SLC Main] | Changed connector name to the correct name "Actia Sodielec" instead of "Sodielec". | 1.0.0.9 | Live Update will be broken. Elements will need to use the new connector, which means that existing configuration for monitoring, reports, filters, and Automation scripts may need to be modified. If you are using an "allowed connectors" license, your license may need to be adjusted. |
+| 2.0.0.x [SLC Main] | Changed connector name to the correct name "Actia Sodielec" instead of "Sodielec". | 1.0.0.9 | Live Update will be broken. Elements will need to use the new connector, which means that existing configuration for monitoring, reports, filters, and automation scripts may need to be modified. If you are using an "allowed connectors" license, your license may need to be adjusted. |
 
 ### Product Info
 

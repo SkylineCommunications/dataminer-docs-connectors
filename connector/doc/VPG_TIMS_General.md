@@ -29,7 +29,7 @@ This connector uses an SNMP connection and an HTTP connection and requires the f
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Required in the 3.1.x.x range of this connector, not in the 3.2.x.x range.
 
 SNMP Settings:
@@ -38,7 +38,7 @@ SNMP Settings:
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
 - **IP port**: The port of the destination, by default *8081.*
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *bypassproxy*.
 

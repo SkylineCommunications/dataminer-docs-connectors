@@ -20,20 +20,20 @@ This a serial connector combined with smart-serial communication. During the cre
 
 #### SERIAL MAIN CONNECTION
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: The IP port of the device, fixed value: *4050.*
-- **Bus address**: This is a combination of the frame number and slot number/ID: \<frameNumber\>**.**\<slotID\>. E.g. frame 1 and slot 12 = bus address *1.12.*
+- **Bus address**: This is a combination of the frame number and slot number/ID: `<frameNumber>.<slotID>`, e.g., frame 1 and slot 12 = bus address *1.12.*
 
 #### SMART-SERIAL PORTDEV CONNECTION
 
-- **IP address/host**: The local DataMiner IP used to receive responses, e.g. *172.0.0.50* or keyword "*any".*
+- **IP address/host**: The local DataMiner IP used to receive responses, e.g., *172.0.0.50* or keyword "*any".*
 - **IP port**: The IP port of the DMA, fixed value: *4000.*
 
 ## Usage
 
 ### Alarms Page
 
-On this page, several alarm parameters are displayed, e.g. **Loss of Signal**. The state of the alarms can be: '*Alarm Inactive'* or '*Alarm Active'*. Alarm monitoring is available on these parameters.
+On this page, several alarm parameters are displayed, e.g., **Loss of Signal**. The state of the alarms can be: '*Alarm Inactive'* or '*Alarm Active'*. Alarm monitoring is available on these parameters.
 
 For each alarm parameter, there are also two write buttons to **Enable** or **Disable** the alarm on the device.
 

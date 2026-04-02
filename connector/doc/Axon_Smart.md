@@ -82,7 +82,7 @@ Alternatively, you can also import and export a CSV file to update the table. Th
 > [!NOTE]
 > In version 1.0.0.9, the file type is changed from CSV to XML.
 
-Once an alarm preset has been assigned to a certain TS, Service or PID, this preset name can be used as a filter when creating alarm templates in DataMiner. This way, different thresholds can be configured for one and the same parameter (e.g. PID bitrate), depending on the selected alarm preset filter.
+Once an alarm preset has been assigned to a certain TS, Service or PID, this preset name can be used as a filter when creating alarm templates in DataMiner. This way, different thresholds can be configured for one and the same parameter (e.g., PID bitrate), depending on the selected alarm preset filter.
 
 ### Debug
 

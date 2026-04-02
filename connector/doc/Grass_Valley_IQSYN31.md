@@ -40,8 +40,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.56.201*.
-  - **IP port**: The IP port of the device, e.g. *161*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.56.201*.
+  - **IP port**: The IP port of the device, e.g., *161*.
   - **Bus address**: The bus address of the device.
 
 ### Web Interface

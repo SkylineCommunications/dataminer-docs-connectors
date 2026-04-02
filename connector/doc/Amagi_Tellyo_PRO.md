@@ -47,14 +47,14 @@ Specify the **Tellyo-token** on the **General** page. The connector will automat
 > [!NOTE]
 > - The Tellyo Open API is a JSON-based REST API that allows external applications to manage basic tasks within their Tellyo account.
 > - All Open API requests require a **Tellyo-Token** header, provided by Tellyo, to uniquely identify the integrating application.
-> - The access token can only access one organization. Object IDs (e.g. channels, sources, recordings) are unique within a single region.
+> - The access token can only access one organization. Object IDs (e.g., channels, sources, recordings) are unique within a single region.
 > - The same ID can be assigned to different channels in Europe and Australia, but you need a different access token to access those regions.
 
 ## How to use
 
 This DataMiner connector offers management and monitoring capabilities for the Amagi Tellyo PRO Platform. Monitoring and configuration settings are retrieved through a polling mechanism that integrates with Tellyo's REST API.
 
-The Tellyo PRO also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Amagi-Tellyo-PRO-ConnectorAPI), enabling a running element to communicate with other DataMiner elements and Automation scripts. This library supports create, update, and delete actions for recordings.
+The Tellyo PRO also integrates an [InterApp library](https://github.com/SkylineCommunications/SLC-S-Amagi-Tellyo-PRO-ConnectorAPI), enabling a running element to communicate with other DataMiner elements and automation scripts. This library supports create, update, and delete actions for recordings.
 
 Below you can find more information about the different data pages available in the element.
 

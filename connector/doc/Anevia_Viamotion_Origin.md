@@ -27,7 +27,7 @@ This is a serial connector. The IP and port have to be configured during element
 SERIAL CONNECTION:
 
 - **Type of port**: TCP/IP
-- **IP address**: The IP of the device, e.g. *10.11.12.13*.
+- **IP address**: The IP of the device, e.g., *10.11.12.13*.
 - **IP Port**: The IP port of the device, *8080*.
 
 ### Initialization

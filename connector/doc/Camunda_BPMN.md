@@ -49,13 +49,13 @@ For the external tasks, the topic name and lock duration should be set on the **
 
 External tasks, with the topic defined with the **External Tasks Topic Name** parameter, will be fetched and locked every minute. They will be requested for locking for the duration defined with the **External Tasks Lock Duration** parameter, for the specified **Worker ID**.
 
-When external tasks are locked, the Automation script defined with the **External Tasks Handler Automation Script** parameter will be launched with their IDs (the key of the external task). Unless the script confirms the handling of the external task, it will be launched again when the time defined in the **External Tasks Relaunch Handler Timeout** parameter has passed since the last launch.
+When external tasks are locked, the automation script defined with the **External Tasks Handler Automation Script** parameter will be launched with their IDs (the key of the external task). Unless the script confirms the handling of the external task, it will be launched again when the time defined in the **External Tasks Relaunch Handler Timeout** parameter has passed since the last launch.
 
 ## Notes
 
 ### External Tasks Handler Automation Script
 
-The Automation script specified with the **External Tasks Handler Automation Script** parameter requires the following parameters:
+The automation script specified with the **External Tasks Handler Automation Script** parameter requires the following parameters:
 
 - **Worker Element Name**: The name of the Camunda BPMN element that started the script.
 - **External Task IDs**: The IDs (table keys) of the external tasks that need handling, separated by semicolons (";").

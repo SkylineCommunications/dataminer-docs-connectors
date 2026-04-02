@@ -108,4 +108,4 @@ On this page you can access the web interface of the device. Note that the clien
 
 In version 1.0.1.9, DCF interfaces are generated for each stream in order to facilitate DCF connections.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).

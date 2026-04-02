@@ -14,13 +14,13 @@ SNMP traps can be retrieved, if this is enabled on the device.
 
 ### Version Info
 
-| **Range** | **Description**  |
+| Range | Description  |
 |------------------|------------------|
 | 1.0.0.x          | Initial version. |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                   |
+| Range | Device Firmware Version                                                                   |
 |------------------|-----------------------------------------------------------------------------------------------|
 | 1.0.0.x          | NetCCU800 1.44.1 (could be compatible with later/earlier software versions of the NetCCU800). |
 
@@ -125,7 +125,7 @@ Via the **Tx/Ost Commands** page button, you can configure general parameters de
 
 ### TX Unit/Rack/RF Probes Status Page
 
-This page displays the status of the TX Unit in the **Status TX Unit** table. You can also find status information for its subcomponents, i.e. the device's rack and RF probes, in the **Rack Table** and the **RF Probes Table** respectively.
+This page displays the status of the TX Unit in the **Status TX Unit** table. You can also find status information for its subcomponents, i.e., the device's rack and RF probes, in the **Rack Table** and the **RF Probes Table** respectively.
 
 The RF Probes Table, in contrast to other tables, also allows you to configure the behavior of the RF Probe(s).
 

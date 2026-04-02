@@ -80,7 +80,7 @@ The **REST**ful interface is used to retrieve and configure the device informati
 
 For example, to **retrieve a list of satellites**, an HTTP GET would be issued to <http://vms-server:5150/rf/satellites>. This would return an XML document containing the URLs of each satellite.
 
-A query string appended to the URL, i.e. subset=\*, could be used to request additional details per satellite, or filter the results.
+A query string appended to the URL, i.e., subset=\*, could be used to request additional details per satellite, or filter the results.
 
 An **HTTP GET request** to the URL <http://vms-server:5150/rf/satellite/1> would return an **XML** document containing the details of the satellite with identifier of 1.
 

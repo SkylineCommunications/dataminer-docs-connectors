@@ -48,8 +48,8 @@ This page displays general information about the device, including the **Time** 
 
 This page contains the following tables:
 
-- **Internal Sensor Table**: For each sensor measurement, this table lists the **Type** of measurement, the **Description** (i.e. user-editable information about the items measured by the sensor), the measured **Value**, the **Unit Name** that applies for this value, and the **Status** of the sensor value.
-- **External Sensor Table**: For each sensor measurement, this table lists the **Type** of measurement, the **Description** (i.e. user-editable information about the items measured by the sensor), the **Connector**, and the **Value** measured by the sensor.
+- **Internal Sensor Table**: For each sensor measurement, this table lists the **Type** of measurement, the **Description** (i.e., user-editable information about the items measured by the sensor), the measured **Value**, the **Unit Name** that applies for this value, and the **Status** of the sensor value.
+- **External Sensor Table**: For each sensor measurement, this table lists the **Type** of measurement, the **Description** (i.e., user-editable information about the items measured by the sensor), the **Connector**, and the **Value** measured by the sensor.
 - **External Sensor ACLM Table**: This table displays the maximum **Peak Value** registered from the sensor, **Frequency** values, **Current**, **Spikes**, **Swells**, **Sags** and **Relay**.
 
 ### I/O

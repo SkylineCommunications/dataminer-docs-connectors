@@ -40,8 +40,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-  - **IP port**: The IP port of the device, e.g. 4009
+  - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+  - **IP port**: The IP port of the device, e.g., 4009
   - **Bus address**: The bus address of the device. Range: 0 to 9.
 
 ## How to use

@@ -32,7 +32,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings:**
@@ -49,7 +49,7 @@ This page displays basic SNMP information, such as **System Description**, **Sys
 
 ### System Page
 
-This page displays basic **System Information** about the transmitter, i.e. the **Device Name**, **Model Number** and measured **Transmitter Temperature**.
+This page displays basic **System Information** about the transmitter, i.e., the **Device Name**, **Model Number** and measured **Transmitter Temperature**.
 
 In the **Transmitter Controls** section, you can increase or decrease the transmitter power by first setting **Transmitter Control** to *Total Power Raise* or *Total Power Lower* respectively, and entering a value in mW for **Transmitter Control Value**. Also in this section, the **Transmitter Frequency** can be set.
 

@@ -89,5 +89,5 @@ Virtual dynamic interfaces:
 
 #### Internal Connections
 
-- All **GbE** interfaces are connected to the **4** interfaces of the corresponding **Gesw** Card. (E.g. if **Gp1 P** is a GbE card, the interface **GbE 1** is created and connected to **Gesw1-1, Gesw1-2, Gesw1-3, Gesw1-4.**)
-- Every **STM-1-in** interface is connected to the corresponding **STM-1-out** interface**.**
+- All **GbE** interfaces are connected to the **4** interfaces of the corresponding **Gesw** Card (e.g., if **Gp1 P** is a GbE card, the interface **GbE 1** is created and connected to **Gesw1-1, Gesw1-2, Gesw1-3, Gesw1-4**).
+- Every **STM-1-in** interface is connected to the corresponding **STM-1-out** interface.

@@ -50,7 +50,7 @@ It provides visual topologies for DOCSIS and GPON networks, showing the hierarch
 
 - **Integration with Skyline EPM back-end elements** for DOCSIS and GPON data collection.
 - **Correctly configured file import/export paths** for topology and provisioning data sharing.
-- **Automation scripts and Correlation rules** for handling message-based data exchange.
+- **Automation scripts and correlation rules** for handling message-based data exchange.
 - Access credentials for remote directories if using remote export/import functionality.
 
 > [!NOTE]

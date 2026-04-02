@@ -10,7 +10,7 @@ The GatesAir Multi-System Controller (MSCx) manages redundancy in radio and tele
 
 ## Key Features
 
-- **Redundancy mode tracking**: Displays the current redundancy setup (e.g. N+1, 1+1), including transmitter assignments and switch positions.
+- **Redundancy mode tracking**: Displays the current redundancy setup (e.g., N+1, 1+1), including transmitter assignments and switch positions.
 - **Trap processing**: Receives and processes SNMP traps related to power supply faults, enabling timely alarm propagation in DataMiner.
 
 ## Use Case

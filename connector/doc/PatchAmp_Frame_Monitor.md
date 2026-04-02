@@ -10,8 +10,6 @@ The **PatchAmp Frame Monitoring System** (RMS) integrates standard distribution 
 
 With this **PatchAmp Frame Monitor** connector, you can monitor the status of all 32 possible cards. For active cards, you can access metrics such as temperature, supply voltage, optical power, and more.
 
-### Version Info
-
 ### Key Features
 
 - **Real-time parameter extraction**: The connector continuously retrieves and displays critical signal metrics, including loss of signal, lock status, module temperature, fiber transmit/receive levels, and laser diagnostics, enabling proactive monitoring and alarm generation.
@@ -36,6 +34,8 @@ With this **PatchAmp Frame Monitor** connector, you can monitor the status of al
 
 **Benefit**: Reduces complexity in system setup and maintenance, offering flexibility and scalability in broadcast infrastructure.
 
+![PatchAmp Frame Monitor](~/connector/images/Patchamp_FrameMonitor.png)
+
 ## Technical info
 
 ### Prerequisites
@@ -44,4 +44,3 @@ With this **PatchAmp Frame Monitor** connector, you can monitor the status of al
 
 > [!NOTE]
 > For in-depth information on configuring and using the DataMiner connector for PathAmp Frame Monitor, refer to the [Technical help page](xref:Connector_help_PatchAmp_Frame_Monitor_Technical).
-

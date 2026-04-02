@@ -36,7 +36,7 @@ The write parameter ranges and discreet values are retrieved from the device and
 
 ### Exported connectors (only available in range 1.2.0.x)
 
-| **Exported Connector**                   | **Description**                                                                                              |
+| Exported Connector                   | Description                                                                                              |
 |-----------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | Imagine Communications SFP6800+D - Rx1. | Displays HDMI, CMPST, electrical, optical and alarm (signal loss of SFP) information regarding the Rx1 cage. |
 | Imagine Communications SFP6800+D - Rx2. | Displays HDMI, CMPST, electrical, optical and Alarm (signal loss of SFP) information regarding the Rx2 cage. |
@@ -51,13 +51,13 @@ This is a serial connector combined with smart-serial communication. During the 
 
 #### SERIAL MAIN CONNECTION
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: The IP port of the device, set to the fixed value *4050.*
-- **Bus address**: This is a combination of the frame number and slot number/ID: "\<frameNumber\>**.\<**slotID\>" (e.g. frame 1, slot 12 = bus address *1.12).*
+- **Bus address**: This is a combination of the frame number and slot number/ID: "\<frameNumber\>**.\<**slotID\>" (e.g., frame 1, slot 12 = bus address *1.12).*
 
 #### SMART-SERIAL PORTDEV CONNECTION
 
-- **IP address/host**: The local DataMiner IP to receive responses, e.g. *172.0.0.50*.
+- **IP address/host**: The local DataMiner IP to receive responses, e.g., *172.0.0.50*.
 - **IP port**: The IP port of the DMA, set to the fixed value *4000.*
 
 ## Usage

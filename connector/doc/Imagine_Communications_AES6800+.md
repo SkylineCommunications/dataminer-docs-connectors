@@ -20,13 +20,13 @@ This is a serial connector combined with smart-serial communication. During the 
 
 #### SERIAL MAIN CONNECTION
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: The IP port of the device, set to the fixed value *4050.*
-- **Bus address**: This is a combination of the frame number and slot number/ID: "\<frameNumber\>**.**\<slotID\>" (e.g. frame 1 and slot 12 = bus address *1.12).*
+- **Bus address**: This is a combination of the frame number and slot number/ID: "\<frameNumber\>**.**\<slotID\>" (e.g., frame 1 and slot 12 = bus address *1.12).*
 
 #### SMART-SERIAL PORTDEV CONNECTION
 
-- **IP address/host**: The local DataMiner IP to receive responses, e.g. *172.0.0.50 or keyword "any".*
+- **IP address/host**: The local DataMiner IP to receive responses, e.g., *172.0.0.50 or keyword "any".*
 - **IP port**: The IP port of the DMA, set to the fixed value *4000.*
 
 ## Usage

@@ -38,8 +38,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling URL. e.g. [https://tdfprod.service-now.com/](https://tdfprod.service-now.com/api/now/).
-- **IP port**: The IP port of the API. e.g. *443*.
+- **IP address/host**: The polling URL. e.g., [https://tdfprod.service-now.com/](https://tdfprod.service-now.com/api/now/).
+- **IP port**: The IP port of the API. e.g., *443*.
 
 ### Initialization
 
@@ -53,7 +53,7 @@ At element startup, the information is automatically retrieved. A button is also
 
 On the **General** page, you can define filters for retrieving the information:
 
-- **Sub Domains Filter:** The connector will only load tickets belonging to these domains. The domains must be separated by a comma. e.g. *DIFFUSION TNT,HEBERGEMENT TNT.*
+- **Sub Domains Filter:** The connector will only load tickets belonging to these domains. The domains must be separated by a comma. e.g., *DIFFUSION TNT,HEBERGEMENT TNT.*
 - **Ticket Opened Time**: The maximum opened date and time of the tickets to be retrieved. At element startup, this will automatically be set to tomorrow at 6:00.
 - **Ticket End Time**: The minimum closed date and time of the tickets to be retrieved. At element startup, this will be automatically set to today at 6:00.
 

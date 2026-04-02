@@ -30,7 +30,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to use
 
-Select the action that you want to execute (Move, Copy, or Delete) and specify the source paths, destination paths, and file names for the operation. You can specify multiple sources, destinations, and file names, separating the different values with semicolons (";"), e.g. *X.doc;Y.jpg;Z.vtt*.
+Select the action that you want to execute (Move, Copy, or Delete) and specify the source paths, destination paths, and file names for the operation. You can specify multiple sources, destinations, and file names, separating the different values with semicolons (";"), e.g., *X.doc;Y.jpg;Z.vtt*.
 
 ## Notes
 

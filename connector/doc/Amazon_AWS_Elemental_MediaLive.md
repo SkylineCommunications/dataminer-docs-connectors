@@ -6,7 +6,7 @@ uid: Connector_help_Amazon_AWS_Elemental_MediaLive
 
 AWS Elemental MediaLive is a video service that allows easy creation of live outputs for broadcast and streaming delivery.
 
-This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon CloudWatch. It is intended to only work for **a single region at a time**. This means that each element created with this connector will only support one region. For multiple regions, you will have to create multiple elements using this connector.
+This connector communicates with 2 AWS APIs, i.e., Amazon MediaLive and Amazon CloudWatch. It is intended to only work for **a single region at a time**. This means that each element created with this connector will only support one region. For multiple regions, you will have to create multiple elements using this connector.
 
 ## About
 
@@ -32,7 +32,7 @@ This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon Cl
 
 ### Connections
 
-This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon CloudWatch. Both connections must be configured for the same region.
+This connector communicates with 2 AWS APIs, i.e., Amazon MediaLive and Amazon CloudWatch. Both connections must be configured for the same region.
 
 The region is specified in the IP address/host field of each connection, as described below.
 

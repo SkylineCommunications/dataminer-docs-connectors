@@ -30,7 +30,7 @@ Now that we have configured the **SNMP Port** of the DataMiner Agent that will b
 
 1. In the **Menu**, go to *Admin* -\> *DataMiner Agents*
 
-1. The IP Address of the DataMiner Agent can be found in the **DataMiner Configuration** pane (e.g. "*10.12.0.158*").
+1. The IP Address of the DataMiner Agent can be found in the **DataMiner Configuration** pane (e.g., "*10.12.0.158*").
 
 The configured SNMP Port and the IP Address of the DataMiner Agent will be used in the configuration of the **DataMiner Element** that will receive the cluster's active alarms, so make sure you remember them.
 
@@ -46,11 +46,11 @@ On the **DataMiner Agent** in the cluster that you have chosen for the communica
 
 1. On the second page, specify the following properties, and click *Next*.
 
-   - **Name**: The name of the SNMP manager (e.g. "*Core Snmp Manager*"). This name is needed for the configuration of the DataMiner Element that will receive the active alarms from the cluster. Make sure you remember it!
+   - **Name**: The name of the SNMP manager (e.g., "*Core Snmp Manager*"). This name is needed for the configuration of the DataMiner Element that will receive the active alarms from the cluster. Make sure you remember it!
 
-   - **IP Address**: The IP address of the SNMP manager, i.e. the address to which the SNMP traps will be sent. In this case this will be the IP Address of the DataMiner Agent of the other cluster on which the DataMiner Element is configured that will receive the active alarms.
+   - **IP Address**: The IP address of the SNMP manager, i.e., the address to which the SNMP traps will be sent. In this case this will be the IP Address of the DataMiner Agent of the other cluster on which the DataMiner Element is configured that will receive the active alarms.
 
-   - **Community String**: The community string to be used in all SNMP traps toward the SNMP manager you are configuring (e.g. "*public*").
+   - **Community String**: The community string to be used in all SNMP traps toward the SNMP manager you are configuring (e.g., "*public*").
 
    - **SNMP Version**: Select the *Inform messages* option. By selecting this option, you also need to specify the following settings:
 
@@ -138,7 +138,7 @@ The SNMP Port that was configured on the DataMiner Agent needs to be added to th
    - **Protocol and Ports:**
 
      - **TCP or UDP:** Select *UDP.*
-     - **Specific local ports:** Enter the SNMP Port number that was configured (e.g. "*461*").
+     - **Specific local ports:** Enter the SNMP Port number that was configured (e.g., "*461*").
      - Click *Next*
 
    - **Action:** Make sure you select the correct connection that matches your system specified conditions (e.g., "*Allow the connection***"**) and click *Next***.**
@@ -161,11 +161,11 @@ When creating the DataMiner Element, you must specify the following properties:
 
 - **SNMP Connection:** This SNMP connection contains the settings which are needed for the communication between the DataMiner Element and the cluster from which you wish to receive the active alarms.
 
-  - **IP address/host**: The IP address of the **DataMiner Agent** you selected on the cluster that's responsible for the communication between clusters (e.g. "*10.12.0.158*").
+  - **IP address/host**: The IP address of the **DataMiner Agent** you selected on the cluster that's responsible for the communication between clusters (e.g., "*10.12.0.158*").
 
-  - **Device address**: The name of the **SNMP Manager**, which is configured on the cluster's DataMiner Agent that's responsible for the communication between clusters (e.g. "*Core Snmp Manager*").
+  - **Device address**: The name of the **SNMP Manager**, which is configured on the cluster's DataMiner Agent that's responsible for the communication between clusters (e.g., "*Core Snmp Manager*").
 
-  - **More SNMP settings:** In the **Port number** text field, make sure you enter the SNMP Port number that you've configured on the cluster's DataMiner Agent which is responsible for the communication between clusters (e.g. "*461*").
+  - **More SNMP settings:** In the **Port number** text field, make sure you enter the SNMP Port number that you've configured on the cluster's DataMiner Agent which is responsible for the communication between clusters (e.g., "*461*").
 
 ## Usage
 

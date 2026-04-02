@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.64.7.11*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.64.7.11*.
 
 SNMP Settings:
 

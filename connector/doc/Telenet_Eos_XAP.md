@@ -36,8 +36,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *xxx.yyy.zzz.com*.
-- **IP port**: The IP port of the device, e.g. *8080*.
+- **IP address/host**: The polling IP of the device, e.g., *xxx.yyy.zzz.com*.
+- **IP port**: The IP port of the device, e.g., *8080*.
 - **Device address**: The device address (default: *ByPassProxy*).
 
 ## How to Use

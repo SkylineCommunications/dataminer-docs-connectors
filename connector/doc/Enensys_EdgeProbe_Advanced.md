@@ -8,7 +8,7 @@ With this connector, you can configure and monitor an **Enensys EdgeProbe Advanc
 
 ## About
 
-This connector can be used for multiple purposes, including the configuration of the device. You can configure overall settings like the device name or the location of the device, but also network settings, trap settings and alarm settings. It is also possible to monitor different channels on the device (e.g. DVB-T, DVB-C, ETR, Multiplex).
+This connector can be used for multiple purposes, including the configuration of the device. You can configure overall settings like the device name or the location of the device, but also network settings, trap settings and alarm settings. It is also possible to monitor different channels on the device (e.g., DVB-T, DVB-C, ETR, Multiplex).
 
 ### Version info
 
@@ -17,6 +17,7 @@ This connector can be used for multiple purposes, including the configuration of
 | 1.0.0.x | Initial version | - | - |
 | 1.0.1.x | New connector based | 1.0.0.4 | New improved display look, new features, added data from new MIBs, changed the way the SNMP data is retrieved using snmpSetAndGet. |
 | 1.0.2.x | - | 1.0.1.14 | New MIBs are added. Data linking between several echoes tables. |
+| 1.1.0.x | - | 1.0.2.23 | New MIBs from firmware 6.0.5.3 are added |
 
 ### Product Info
 
@@ -24,6 +25,7 @@ This connector can be used for multiple purposes, including the configuration of
 |-----------|------------------------|
 | 1.0.0.x   | 3.1.3.5                |
 | 1.0.1.x   | 3.5.3.3                |
+| 1.1.0.x   | 3.5.3.3, 6.0.5.3       |
 
 ### System Info
 
@@ -31,6 +33,7 @@ This connector can be used for multiple purposes, including the configuration of
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | No                      | -                     | -                       |
 | 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -42,7 +45,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *109.7.68.68*.
+- **IP address/host**: The polling IP of the device, e.g., *109.7.68.68*.
 - **Device address**: Not required.
 
 SNMP Settings:
@@ -76,7 +79,7 @@ The page also contains page buttons, which open the following subpages:
 
 - GPS Status: Displays the status of the **GPS Satellites**.
 
-- Time Config: Allows you to change the time settings, e.g. **Date Time**, **Time Source**, **Time Zone**, etc.
+- Time Config: Allows you to change the time settings, e.g., **Date Time**, **Time Source**, **Time Zone**, etc.
 
   Note: The **Time Zone** can only be configured when the **Time Source** is configured as *System*.
 
@@ -115,7 +118,7 @@ Several subpages are available:
 - Mute Configuration: Channel mute settings, such as **Mode**, **Post Vit Ber** settings and **Post Ldpc Ber** settings.
 - ETR Configuration: Contains three tables that allow you to configure **ETR1**, **ETR2** and **ETR3** respectively.
 - ETR QOS Configuration: This page is related to the ETR Configuration page. It contains two tables, for **SAE Configuration** and **SDE Configuration** respectively. The parameters on this page are mainly of importance for error processing and to maintain the **Quality Of Service of the ETR** channels.
-- Multiplex Configuration Table: This page consists of four sections. The top-left section allows you to **add and remove services and PIDs** in the table in the lower-left corner and in the lower-right corner respectively. The most important table, i.e. the Multiplex Configuration Table, is in the top right corner. It allows you to adapt the multiplex **channel Names**, the **Ts Id Presence** settings, and **Delays** to check if services or PIDs are missing.
+- Multiplex Configuration Table: This page consists of four sections. The top-left section allows you to **add and remove services and PIDs** in the table in the lower-left corner and in the lower-right corner respectively. The most important table, i.e., the Multiplex Configuration Table, is in the top right corner. It allows you to adapt the multiplex **channel Names**, the **Ts Id Presence** settings, and **Delays** to check if services or PIDs are missing.
 
 Note: For the subpages that allow you to change the profile name, note that the profile has to exist on the device for this. Changing the profile name will change the profile name on the device, but it will not create a new profile.
 

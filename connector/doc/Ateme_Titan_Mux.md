@@ -13,7 +13,7 @@ Ateme Titan Mux is used to interface with the Multiplexer Processing API and Ala
 | Range     | Key Features     | Based on     | System Impact     |
 |-----------|------------------|--------------|-------------------|
 | 1.0.0.x [Obsolete]  | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main] | Converted the History Alarms table to a partial one and added a configurable maximum number of alarms history to get.  | 1.0.0.7 | Existing custom reports and Automation scripts that use the History Alarms table may no longer work as expected. |
+| 1.0.1.x [SLC Main] | Converted the History Alarms table to a partial one and added a configurable maximum number of alarms history to get.  | 1.0.0.7 | Existing custom reports and automation scripts that use the History Alarms table may no longer work as expected. |
 
 ### Product Info
 
@@ -39,7 +39,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. `http://127.0.0.1:8002/api/v1/mux/inputs`
+- **IP address/host**: The polling IP or URL of the destination, e.g., `http://127.0.0.1:8002/api/v1/mux/inputs`
 - **IP port**: The IP port of the destination.
 - **Bus address**: *ByPassProxy*
 

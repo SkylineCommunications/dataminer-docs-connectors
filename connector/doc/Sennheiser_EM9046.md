@@ -42,7 +42,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.56.201*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.56.201*.
   - **Type of port**: By default *UDP/IP*.
   - **IP Port**: By default *45*.
 
@@ -67,5 +67,5 @@ There is no redundancy defined.
 
 - **Detachable Components**:
 
-- The detachable devices table contains information about connected external devices, i.e. antenna boosters and RF transmitters.
+- The detachable devices table contains information about connected external devices, i.e., antenna boosters and RF transmitters.
   - The RF transmitters table contains up to 8 transmitters.

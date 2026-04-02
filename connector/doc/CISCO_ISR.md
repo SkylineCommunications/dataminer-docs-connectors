@@ -45,7 +45,7 @@ SNMP Settings:
 
 ### General
 
-On this page, an overview of general device settings is displayed, e.g. **Model**, **Software Description**, etc. **Memory Usage** is only calculated when polling of **Memory Details** is enabled.
+On this page, an overview of general device settings is displayed, e.g., **Model**, **Software Description**, etc. **Memory Usage** is only calculated when polling of **Memory Details** is enabled.
 
 The **Availability** will show a percentage of the device online time. This value will decrease if the element is in timeout state or was not active. The **Availability - Last Month** shows the availability from the previous month.
 

@@ -51,7 +51,7 @@ When you have created an element with this connector, you will need to configure
 
 - eFiles settings:
 
-  - **eFiles Endpoint**: Define the eFiles endpoint (e.g. *efiles_demo* or *efiles*).
+  - **eFiles Endpoint**: Define the eFiles endpoint (e.g., *efiles_demo* or *efiles*).
   - **eFiles Polling Timer**: Set the interval at which the connector polls for new files.
   - **Download Files URL**: Input the URL to download files from.
 

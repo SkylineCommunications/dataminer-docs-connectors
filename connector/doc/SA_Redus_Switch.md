@@ -56,11 +56,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
-  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
-  - **Parity**: Parity specified in the manual of the device, e.g. *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600*.
+  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1*.
+  - **Parity**: Parity specified in the manual of the device, e.g., *No*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.
 
 - Interface connection:
 
@@ -84,13 +84,13 @@ Via the **Hardware Info** page button, you can also view the **FPGA Type** and *
 
 On this page, you can configure the device. The page consists of three main sections:
 
-- **Input and Channel Settings:** Consists of the parameters **Source Selection**, **Priority**, **Switch Delay**, **Check on Stuffing**, **Stuffing Limit**, **Check on PAT**, **PAT Interval**, **Hard Contact Control** and **Restore Input 1**. Some of these parameters are mutually dependent, e.g. when HCC is enabled, Source Selection allows you to select the related option.
+- **Input and Channel Settings:** Consists of the parameters **Source Selection**, **Priority**, **Switch Delay**, **Check on Stuffing**, **Stuffing Limit**, **Check on PAT**, **PAT Interval**, **Hard Contact Control** and **Restore Input 1**. Some of these parameters are mutually dependent, e.g., when HCC is enabled, Source Selection allows you to select the related option.
 - **Input Toggling:** Allows input toggling via the toggle button **Selected Source**, which can only be used when **Toggling Input** is enabled.
 - **Device Measurements**: Displays parameters such as the **Input Signal Status**, **Data Format**, **Lock Status**, **BitRate**, **BitRate Status** and **Stuffing BitRate**.
 
 ### Alarms
 
-This page displays the critical **Device Messages** of the device, i.e. the **ASI Output Signal**, **Input Synchronization**, **Temperature**, **Main** **Power Supply**, **PAT** and **Stuffing** statuses.
+This page displays the critical **Device Messages** of the device, i.e., the **ASI Output Signal**, **Input Synchronization**, **Temperature**, **Main** **Power Supply**, **PAT** and **Stuffing** statuses.
 
 ## DataMiner Connectivity Framework
 

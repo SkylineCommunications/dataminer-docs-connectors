@@ -16,8 +16,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, *e.g. 10.67.7.206*
-- **Device address**: The bus address of the device, e.g. *4*
+- **IP address/host**: The polling IP of the device, *e.g., 10.67.7.206*
+- **Device address**: The bus address of the device, e.g., *4*
 
 **SNMP Settings:**
 

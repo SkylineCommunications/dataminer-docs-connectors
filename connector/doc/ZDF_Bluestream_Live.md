@@ -10,7 +10,7 @@ In short, Bluestream-Live is the **middleware** that receives all status changes
 
 The **coyonet_api** and **coyonet247_api** are the REST interfaces of Bluestream-Live and Bluestream24/7, which are contacted every 1-30 seconds via GET queries by the CoyoNet scheduler, which is today a ScadaMon scheduler called Bluestream Importer (Daemon).
 
-This connector provides access to the planning data for the 24/7 streams so that the exclusions technically realized in the SAWs (i.e. sending "cardboard" instead of live video content) can be displayed in a scheduler view in DataMiner and thus checked.
+This connector provides access to the planning data for the 24/7 streams so that the exclusions technically realized in the SAWs (i.e., sending "cardboard" instead of live video content) can be displayed in a scheduler view in DataMiner and thus checked.
 
 ## About
 

@@ -40,9 +40,9 @@ This connector uses a serial connection and requires the following input during 
 
 - **Interface connection:**
 
-- **IP address/host**: The polling IP of the device/serial gateway (e.g. *127.0.0.1*)
-- **IP port**: The IP port of the device/serial gateway (required, e.g. *7000*)
-- **Bus address**: The bus address of the device/serial gateway (required, e.g. *1.1.1, \<Network Address Used For Bridging\>.\<Unit Address\>.\<Port Address\>*)
+- **IP address/host**: The polling IP of the device/serial gateway (e.g., *127.0.0.1*)
+- **IP port**: The IP port of the device/serial gateway (required, e.g., *7000*)
+- **Bus address**: The bus address of the device/serial gateway (required, e.g., *1.1.1, \<Network Address Used For Bridging\>.\<Unit Address\>.\<Port Address\>*)
 
 ## Usage
 

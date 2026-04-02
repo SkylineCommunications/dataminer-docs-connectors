@@ -35,7 +35,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-For this element and parameters to show relevant data, you need to connect the 11 parameters (which serve as destinations) with sources. This can be done via [Element Connections](https://aka.dataminer.services/virtual-elements-used-for-element-connections). An element running the protocol *Advantech ADAM5050* could e.g. provide parameters that can serve as sources.
+For this element and parameters to show relevant data, you need to connect the 11 parameters (which serve as destinations) with sources. This can be done via [Element Connections](https://aka.dataminer.services/virtual-elements-used-for-element-connections). An element running the protocol *Advantech ADAM5050* could e.g., provide parameters that can serve as sources.
 
 ## How to use
 

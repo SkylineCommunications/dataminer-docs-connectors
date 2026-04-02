@@ -22,7 +22,7 @@ Once you have taken care of the configuration above, you can create an element w
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 - **Device address**: the card number eg. 11
 
 **SNMP Settings**:

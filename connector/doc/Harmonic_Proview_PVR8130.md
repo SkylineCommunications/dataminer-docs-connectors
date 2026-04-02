@@ -71,7 +71,7 @@ The page also contains a page button that provides access to the **Embedded Audi
 
 ### General
 
-This page allows you to configure the **HTTP Login**, i.e. the username and password that will be used in HTTP requests. Please note that in order to use the **HTTP API**, these parameters must be filled in.
+This page allows you to configure the **HTTP Login**, i.e., the username and password that will be used in HTTP requests. Please note that in order to use the **HTTP API**, these parameters must be filled in.
 
 This page also contains the general device information and the **Active alarms** and **Alarm Log** table.
 

@@ -40,4 +40,4 @@ This page provides access to general configuration and actions, such as the **Mo
 
 The page also contains specific card configuration options, such as **Firmware Download**, **Download Configuration Files** and **USB Mode**.
 
-From version 1.0.0.3 onwards, you can also change some system settings, i.e. the **Date/Time** and **Alarm Detection**, as well as do a **Software Reset**.
+From version 1.0.0.3 onwards, you can also change some system settings, i.e., the **Date/Time** and **Alarm Detection**, as well as do a **Software Reset**.

@@ -40,7 +40,7 @@ SERIAL CONNECTION:
 
   - **IP address/host**: The polling IP or URL of the destination.
   - **IP port**: The IP port of the destination (fixed value: *4050*).
-  - **Bus address**: The bus address of the device, in the format *frameNumber.slotID*, e.g. *1.0* (the default value) represents frame 1 and slot 0. Range: *0* - *100* (0 because this is a frame controller card).
+  - **Bus address**: The bus address of the device, in the format *frameNumber.slotID*, e.g., *1.0* (the default value) represents frame 1 and slot 0. Range: *0* - *100* (0 because this is a frame controller card).
 
 #### Serial PortDev Connection
 
@@ -48,7 +48,7 @@ This connector uses a serial connection and requires the following input during 
 
 SMART-SERIAL CONNECTION:
 
-- **IP address/host**: The local DataMiner IP to receive responses (e.g. *172.0.0.50 or keyword "any"*).
+- **IP address/host**: The local DataMiner IP to receive responses (e.g., *172.0.0.50 or keyword "any"*).
 - **IP port**: The IP port of the DMA (fixed value: *4000*).
 
 ### Web Interface

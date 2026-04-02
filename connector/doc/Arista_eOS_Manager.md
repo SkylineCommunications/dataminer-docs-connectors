@@ -70,7 +70,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### Communication Settings
 
-On the **Communication Manager** page, you can adjust how the data is retrieved. If it is possible to retrieve the data from different connections, you can configure this using the **Type** parameter (e.g. gNMI, HTTP, etc.).
+On the **Communication Manager** page, you can adjust how the data is retrieved. If it is possible to retrieve the data from different connections, you can configure this using the **Type** parameter (e.g., gNMI, HTTP, etc.).
 
 When gNMI is used, you can choose to "Subscribe" or to "poll" the data. You can change this using the **Method** parameter. For "Subscribe", you can configure an **Interval** of *0* or *On Change*. The latter will push the data to the connecter whenever it changes. For other values, it will send the data every configured interval.
 
@@ -78,7 +78,7 @@ You can delete a selected custom subscription from the table by right-clicking i
 
 ### Explorer
 
-On the Explorer page, you can execute a command through the command API. This includes configuration commands. To do so, fill in the command in the **API Commands** box and click the **Send** button. You can execute multiple commands with one call, using a semicolon as separator, e.g. *show interfaces;show clock*.
+On the Explorer page, you can execute a command through the command API. This includes configuration commands. To do so, fill in the command in the **API Commands** box and click the **Send** button. You can execute multiple commands with one call, using a semicolon as separator, e.g., *show interfaces;show clock*.
 
 The result will be displayed in the **API Response** box.
 
@@ -88,7 +88,7 @@ The **Request Viewer** button displays the standalone parameter **API Request**,
 
 The **1.0.0.x** range of the Arista eOS Manager connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
 ### Interfaces
 

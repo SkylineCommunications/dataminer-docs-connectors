@@ -21,7 +21,7 @@ The connector uses **SNMP** to retrieve and update the data of the device. The R
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
+| Range | Device Firmware Version        |
 |------------------|------------------------------------|
 | 1.0.0.x          | RTF0035 v2.1.1.1 Version v0.1.2.67 |
 
@@ -35,7 +35,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: Not used
 
 SNMP Settings:

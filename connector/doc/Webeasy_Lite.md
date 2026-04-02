@@ -8,7 +8,7 @@ The **Webeasy** **Lite** connector is a serial connector used to monitor the **W
 
 ## About
 
-The information that is retrieved from the **Webeasy** **Lite** can be divided into 2 groups. The first group are measurements. Since the Webeasy Lite is an airco unit, these measurements are temperatures, measurements of pressure, etc. The second group of parameters that is polled contains alarming parameters. These will indicate an interruption or alarm in the system, e.g. when the temperature is too high or low.
+The information that is retrieved from the **Webeasy** **Lite** can be divided into 2 groups. The first group are measurements. Since the Webeasy Lite is an airco unit, these measurements are temperatures, measurements of pressure, etc. The second group of parameters that is polled contains alarming parameters. These will indicate an interruption or alarm in the system, e.g., when the temperature is too high or low.
 
 This connector also makes it possible to change certain settings for the Webeasy Lite.
 

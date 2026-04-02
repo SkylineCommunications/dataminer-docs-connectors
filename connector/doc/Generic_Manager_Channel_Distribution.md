@@ -37,7 +37,7 @@ Note: You can optionally override the group filter by specifying a filter in the
 
 ### Installing the WFM
 
-The WFM comes as a separate DLL (SLChannelSubstitutionWfm.dll) and should be provided together with the connector. It must be installed in the same folder as where the protocol is stored (which typically will be the Production version folder), e.g. *C:\Skyline DataMiner\Protocols\Generic Manager Channel Distribution\1.0.0.7\\*
+The WFM comes as a separate DLL (SLChannelSubstitutionWfm.dll) and should be provided together with the connector. It must be installed in the same folder as where the protocol is stored (which typically will be the Production version folder), e.g., *C:\Skyline DataMiner\Protocols\Generic Manager Channel Distribution\1.0.0.7\\*
 
 There should be an upgrade package available that will automatically install the DLL on all DMAs. If this is not the case, it may be necessary to do this manually.
 
@@ -72,7 +72,7 @@ Supported since version 1.0.0.7.
 To add or remove redundancy groups in the system, use the **Add Redundancy Group** and **Remove Redundancy Group** parameters. A drop-down list containing all valid options will be available after you click the **Refresh** button at the bottom of the page. The **Remove All** button will remove all entries from the table.
 
 There is a table, **DCM Redundancy Groups**, listing all selected redundancy groups.
-For each redundancy group, it shows the name, the description, the group filter and the type of redundancy used. (However, currently only one type of redundancy is supported, i.e. "one on one". With this type of redundancy, the connector assumes that each service on the main has exactly one equivalent service on the backup.) The default value for the group filter used to be *Not implemented,* excluding all ports until otherwise defined, but this has changed to *\*.\** in version 1.0.0.12, including all ports on the targeted devices.
+For each redundancy group, it shows the name, the description, the group filter and the type of redundancy used. (However, currently only one type of redundancy is supported, i.e., "one on one". With this type of redundancy, the connector assumes that each service on the main has exactly one equivalent service on the backup.) The default value for the group filter used to be *Not implemented,* excluding all ports until otherwise defined, but this has changed to *\*.\** in version 1.0.0.12, including all ports on the targeted devices.
 
 There is also a second table, **DCM Elements**, listing all DCM elements found in the imported redundancy groups.
 For each element, the name and the element active status are shown, as well as their role in the redundancy group (primary or backup) and the ID of the redundancy group they belong to. The most important column in this table is the **DCM Filter**, which by default is set to *Inherited.* In most cases, this is fine, but it is possible to have another filter depending on the element in the redundancy group.

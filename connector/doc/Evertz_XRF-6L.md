@@ -48,7 +48,7 @@ SNMP Settings:
 
 #### SNMP Secondary connection
 
-This connection will be used for redundant polling, i.e. if the Main connection is not responding (timeout), the connector will automatically switch to the Secondary connection. The following input is required during element creation:
+This connection will be used for redundant polling, i.e., if the Main connection is not responding (timeout), the connector will automatically switch to the Secondary connection. The following input is required during element creation:
 
 SECONDARY SNMP CONNECTION:
 

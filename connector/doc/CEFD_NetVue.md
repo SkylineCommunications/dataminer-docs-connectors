@@ -10,7 +10,7 @@ This is a virtual connector that can be used to configure a DataMiner System acc
 
 With this connector, you can select a CSV file saved in the Documents folder of the CEFD NetVue Element in order to provision it. Before provisioning starts, there will be a format and config check of the content of the document. If the content is OK, the views, services and elements defined in the CSV file will be installed on or removed from the system. During provisioning, it is not possible to start another provisioning action. A logging list allows you to keep track of what is being executed at a specific time.
 
-Remote items (connectors, Automation scripts) can also interact with this connector to provision the system.
+Remote items (connectors, automation scripts) can also interact with this connector to provision the system.
 
 ### Version Info
 
@@ -38,13 +38,13 @@ To enable the clustering of elements during provisioning, the **DMAs** in the sy
 
 ### General
 
-To start the provisioning, select the CSV file containing the configuration of the system. Then press the *Start* *provisioning* button. In the **Logging Table**, information will be added on the current actions of the connector, e.g. *NetVue Provisioning Started*. The table will also contain the name of the selected file. During provisioning, the progress bars **Provisioning Total Progress** and **Provisioning Task Progress** will display the progress of the system installation.
+To start the provisioning, select the CSV file containing the configuration of the system. Then press the *Start* *provisioning* button. In the **Logging Table**, information will be added on the current actions of the connector, e.g., *NetVue Provisioning Started*. The table will also contain the name of the selected file. During provisioning, the progress bars **Provisioning Total Progress** and **Provisioning Task Progress** will display the progress of the system installation.
 
 When **spectrum elements** are configured in the CSV file, all the **spectrum monitoring** items are generated as well. **Monitor scripts,** **preset measurements** and **point details** are retrieved where necessary to allow spectrum monitoring. For example, if on "Equipment A", a Tx and Rx frequency are filled in, spectrum monitoring items will be created using this information. When the information is removed from the file, the spectrum monitoring items will be removed from the system again. When the spectrum equipment itself is removed from the file, all of the spectrum monitoring items are deleted before the element itself is deleted.
 
 ### High Level Stats
 
-This page displays statistics of items managed by the connector in the system, such as Number of Networks, Number of Circuits, Managed Elements (i.e. active equipment), etc.
+This page displays statistics of items managed by the connector in the system, such as Number of Networks, Number of Circuits, Managed Elements (i.e., active equipment), etc.
 
 ### Network
 

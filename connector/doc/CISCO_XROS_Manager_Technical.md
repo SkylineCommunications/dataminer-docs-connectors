@@ -29,7 +29,7 @@ This connector uses a virtual connection and does not require any input during e
 
 On the **Element Settings** page, fill in the **gNMI settings** and click **Connect** to establish the gNMI communication.
 
-Make sure to fill in the full address in the **gNMI IP Address** parameter, e.g. `https://x.x.x.x`. The **Client Certificate** parameter is optional.
+Make sure to fill in the full address in the **gNMI IP Address** parameter, e.g., `https://x.x.x.x`. The **Client Certificate** parameter is optional.
 
 ## How to Use
 
@@ -62,7 +62,7 @@ The **LLDP** page displays how devices are interconnected across the network.
 
 The **1.0.0.x** range of the CISCO XROS Manager connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
 ### Interfaces
 

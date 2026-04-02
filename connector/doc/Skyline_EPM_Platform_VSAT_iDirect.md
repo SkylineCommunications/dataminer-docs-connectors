@@ -10,7 +10,7 @@ The **Skyline EPM Platform VSAT iDirect** connector enables end‑to‑end monit
 
 ## Key Features
 
-- **Centralized KPI aggregation**: Aggregates key remote and service metrics (e.g. Rx/Tx power, carrier utilization, errors) from collectors.
+- **Centralized KPI aggregation**: Aggregates key remote and service metrics (e.g., Rx/Tx power, carrier utilization, errors) from collectors.
 - **Visual network topologies**: Displays total network topology views, including trending and alarming at the topology level.
 - **Scalable operations**: Designed for large fleets with bulk updates, provisioning helpers, and efficient polling.
 - **Trending & reporting**: Supports long‑term trending as well as dashboards and scheduled reports.

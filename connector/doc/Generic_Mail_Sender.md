@@ -25,7 +25,7 @@ To be able to use this connector, you must first fill in the parameters **SMTP M
 
 ### General Page
 
-This page contains the parameters that you must configure in order to use this connector, i.e. the SMTP server and retry configuration. The **Number of Mail Retries** is the number of times the connector will try to send an email, the **Frequency of Mail Retries** is the frequency at which the retries will occur.
+This page contains the parameters that you must configure in order to use this connector, i.e., the SMTP server and retry configuration. The **Number of Mail Retries** is the number of times the connector will try to send an email, the **Frequency of Mail Retries** is the frequency at which the retries will occur.
 
 With the **Max. Number of Mails in Overview Table** parameter, you can configure the maximum number of emails that will be kept in the **Mail Overview Table** (see "Mail Page" section below)
 

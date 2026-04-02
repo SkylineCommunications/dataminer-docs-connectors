@@ -12,7 +12,7 @@ This connector uses SNMP to retrieve data from the device. Multiple UPS systems 
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                               | **Based on** | **System Impact** |
+| Range            | Key Features                                                                               | Based on | System Impact |
 |----------------------|------------------------------------------------------------------------------------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version                                                                                | -            | -                 |
 | 1.0.1.x              | Connector review                                                                               | -            | -                 |
@@ -230,7 +230,7 @@ In an ideal case, if a collector has for example 250 UPS devices, it will poll e
 
 For this ideal scenario, the processing of each UPS would have to take less than 1 second, but this is not always the case. Suppose that a collector again has 250 UPS devices that need to be processed within 45 seconds, but this time it takes 2 seconds to process each UPS. The collector will need to use a thread pool of (250 UPSs/45s) \* 2s/UPS = 11.11, so approximately 12 threads.
 
-It is also important to consider that the time it takes to process a UPS (the thread duration) not only depends on the time it takes to poll and process information from a UPS, but also on the load of the system, e.g. how much CPU power is available.
+It is also important to consider that the time it takes to process a UPS (the thread duration) not only depends on the time it takes to poll and process information from a UPS, but also on the load of the system, e.g., how much CPU power is available.
 
 By looking at the thread statistics on the System Overview page, you can check if the load on one collector is too large. For example, if Threadpool Usage has reached 50 threads (= the maximum threads allowed) and Threadpool Waiting constantly reaches high values, it is likely that the UPS devices are not being processed every 45 seconds. This could be an indication that the number of UPS devices for the collector needs to be reduced. In other words, there must be a balance between the duration of each thread (Threadpool Duration) and the number of UPS devices.
 

@@ -6,7 +6,7 @@ uid: Connector_help_Tektronix_Sentry
 
 ## About
 
-This connector will display information about a Sentry device, including details related to ports, transport, and services. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g. the bitrate.
+This connector will display information about a Sentry device, including details related to ports, transport, and services. Alarm monitoring and trending are possible for some of the parameters in the connector, e.g., the bitrate.
 
 ## Key Features
 

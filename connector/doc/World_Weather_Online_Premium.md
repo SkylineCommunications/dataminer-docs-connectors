@@ -12,7 +12,7 @@ The **World Weather Online Premium** connector retrieves the current and forecas
 
 ### Version Info
 
-| **Range**     | **Description**                                                 | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                 | DCF Integration | Cassandra Compliant |
 |----------------------|-----------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial range.                                                  | No                  | Yes                     |
 | 1.0.1.x [SLC Main]   | Tables associated with the tree control now are partial tables. | No                  | Yes                     |

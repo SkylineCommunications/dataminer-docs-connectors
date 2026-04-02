@@ -18,7 +18,7 @@ The **EVS IP Director** is an SNMP and serial connector. The SNMP connection is 
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 **SNMP Settings:**
 
@@ -28,7 +28,7 @@ The **EVS IP Director** is an SNMP and serial connector. The SNMP connection is 
 
 **SERIAL CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **IP port**: The port of the connected device, default value: *9002*.
 
 ## Usage

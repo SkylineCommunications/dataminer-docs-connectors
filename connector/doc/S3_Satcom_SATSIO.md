@@ -58,7 +58,7 @@ The web interface is only accessible when the client machine has network access 
 The element created using this protocol has the following data pages:
 
 - **General**: Displays general information such as the **Current Satellite** being tracked, the **Beacon Receiver Level** and the satellite position.
-- **Antenna Controller**: Allows you to configure the antenna controller, e.g. set the **Tracking Mode** or select the **Satellite**.
+- **Antenna Controller**: Allows you to configure the antenna controller, e.g., set the **Tracking Mode** or select the **Satellite**.
 - **Setup-1**: Allows you to set the **Site Coordinates**, and configure the **Beacon Options** and **Tracking Options**.
 - **Setup-2**: Displays the **Motors** and **Polarisation Options** and **Encoder Offsets and Soft Limits**.
 - **Parallel I-O**: Displays the **Opto-Isolated Inputs** and the **Relay Outputs** Tables.

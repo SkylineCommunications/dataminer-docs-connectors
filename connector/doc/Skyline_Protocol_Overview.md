@@ -135,7 +135,7 @@ Features:
 
   - Usage of Search Type:
 
-    - Think about which search type you could use for which search location (e.g. greater than only with numeric search locations)
+    - Think about which search type you could use for which search location (e.g., greater than only with numeric search locations)
 
     - XPath:
 

@@ -12,14 +12,14 @@ The connector periodically polls relevant information from the device for every 
 
 ### Version Info
 
-| **Range**     | **Description**                 |
+| Range     | Description                 |
 |----------------------|---------------------------------|
 | 1.0.0.x              | Initial Version                 |
 | 1.0.1.x [SLC Main]   | Fixed channel source discreets. |
 
 ### Product Info
 
-| **Range**     | **Device Firmware Version**                                         |
+| Range     | Device Firmware Version                                         |
 |----------------------|---------------------------------------------------------------------|
 | 1.0.0.x              | Not related to firmware, but compatible with software version 5.2.6 |
 | 1.0.1.x [SLC Main]   | Not related to firmware, but compatible with software version 5.2.6 |

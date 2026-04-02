@@ -37,7 +37,7 @@ Note: Upgrading **from range 1.0.0.x to range 1.1.0.x** or higher will cause the
 
 ### Exported connectors
 
-| **Exported Connector**                                                        | **Description** |
+| Exported Connector                                                        | Description |
 |------------------------------------------------------------------------------|-----------------|
 | [Nevion NX4600 - Encoder](xref:Connector_help_Nevion_NX4600_-_Encoder) | Encoders        |
 | [Nevion NX4600 - Decoder](xref:Connector_help_Nevion_NX4600_-_Decoder) | Decoders        |
@@ -86,13 +86,13 @@ Note: From version 1.1.2.6 onwards, the IDX for all the input tables can be chan
 
 This page contains an overview of all transport streams in the **Transport Streams** **table**. For each transport stream, this table shows the **Status**, **Mode**, **Total Rate**, **Effective Rate**, **TS ID**, and **ON ID**.
 
-In addition, a number of columns in the table indicate whether a specific alarm is present for a particular transport stream (e.g. **Sync Byte Error**, **PAT Repetition Interval**, etc.).
+In addition, a number of columns in the table indicate whether a specific alarm is present for a particular transport stream (e.g., **Sync Byte Error**, **PAT Repetition Interval**, etc.).
 
 ### Services Page
 
 This page provides an overview of all services in the **Services** **table**. For each service, this table shows the **Provider**, **Type**, **EIT Schedule Signaled**, **Scrambling Signaled**, **PMT PID**, **PCR PID**, and **Total Rate**.
 
-In addition, a number of columns in the table indicate whether a specific alarm is present for a particular service (e.g. **PMT Missing**, **Too Many PIDs**, etc.).
+In addition, a number of columns in the table indicate whether a specific alarm is present for a particular service (e.g., **PMT Missing**, **Too Many PIDs**, etc.).
 
 ### PIDS Page
 
@@ -100,7 +100,7 @@ This page contains information related to the PIDs. Two tables are displayed: th
 
 The PIDs table displays an overview of all PIDs, showing among others which service each PID is part of (**Ref. by service**), and the **Type**, **Rate**, **Continuity Error Counter**, etc.
 
-In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular PID (e.g. **Unreferenced PID**, **PID Rate** **Too High**, etc.).
+In addition, the table contains a number of columns indicating whether a specific alarm is present for a particular PID (e.g., **Unreferenced PID**, **PID Rate** **Too High**, etc.).
 
 The PCR PIDs table contains information about the PCR PIDs, such as **Clock**, **Local Clock**, **Max Jitter**, etc.
 

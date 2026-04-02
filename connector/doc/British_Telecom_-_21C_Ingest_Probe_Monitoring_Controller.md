@@ -131,5 +131,5 @@ Note that for all averages, only the last completed set of data and the availabi
 
 ## Notes
 
-This application requires a custom-designed Visio file. In addition, an Automation script is needed to control the probes (script name: *British Telecom 21C Probe Manager*).
+This application requires a custom-designed Visio file. In addition, an automation script is needed to control the probes (script name: *British Telecom 21C Probe Manager*).
 

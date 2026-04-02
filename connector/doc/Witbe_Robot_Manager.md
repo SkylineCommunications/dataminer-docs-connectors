@@ -25,7 +25,7 @@ A wide variety of tasks can be created and assigned to their parent. The connect
 
 The manager is a virtual element and uses JSON messages to communicate with the WitBe Robot and Skyline SmartRec Application connectors. This means that no data will be seen in the Stream Viewer.
 
-The manager is accompanied by an Automation script that makes it easier for the end user to configure and create the carousel/stacks and attached tasks.
+The manager is accompanied by an automation script that makes it easier for the end user to configure and create the carousel/stacks and attached tasks.
 
 ### Version Info
 
@@ -45,8 +45,8 @@ The manager is accompanied by an Automation script that makes it easier for the 
 
 | Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |--|--|--|--|--|
-| 1.0.0.x | No | Yes | - *WitBe Robot* connector <br>- *Skyline SmartRec Application* connector <br>- *Ericsson Redbee EPG* connector <br>- *WitBe Manager Wizard* Automation script <br>- *End of Program* Automation script | - |
-| 1.1.0.x | No | Yes | - *WitBe Robot* connector <br>- *Skyline SmartRec Application* connector <br>- *Ericsson Redbee EPG* connector <br>- *WitBe Manager Wizard* Automation script <br>- *End of Program* Automation script <br>- *Schedule WitBe Maintenance* Automation script | - |
+| 1.0.0.x | No | Yes | - *WitBe Robot* connector <br>- *Skyline SmartRec Application* connector <br>- *Ericsson Redbee EPG* connector <br>- *WitBe Manager Wizard* automation script <br>- *End of Program* automation script | - |
+| 1.1.0.x | No | Yes | - *WitBe Robot* connector <br>- *Skyline SmartRec Application* connector <br>- *Ericsson Redbee EPG* connector <br>- *WitBe Manager Wizard* automation script <br>- *End of Program* automation script <br>- *Schedule WitBe Maintenance* automation script | - |
 
 ## Configuration
 
@@ -84,7 +84,7 @@ The **Delete** button next to each robot can only be used in case the robot elem
 
 This page is used to monitor the health of the robots. It has a **Maintenance table** that keeps track of all the failures of the robots. The Maintenance table also allows you to configure a maintenance task for each robot. When you notice that a robot is failing more than is allowed, you can manually schedule this task on the robot using the **Execute button**.
 
-It is also possible to automatically schedule a maintenance task once a day using the **Maintenance Window column**. An hourly task needs to be created using the **DataMiner Scheduler** for this functionality to work. The **Schedule WitBe Maintenance Automation script** needs to be configured as the **action** of the scheduler task. When this is correctly configured, Scheduler will run the Automation script every hour, and the script will then schedule a maintenance task on the robots that allow it.
+It is also possible to automatically schedule a maintenance task once a day using the **Maintenance Window column**. An hourly task needs to be created using the **DataMiner Scheduler** for this functionality to work. The **Schedule WitBe Maintenance automation script** needs to be configured as the **action** of the scheduler task. When this is correctly configured, Scheduler will run the automation script every hour, and the script will then schedule a maintenance task on the robots that allow it.
 
 All failures within the last hour are stored in the **Failures table**. You can access this table via the **Failures** **button**.
 
@@ -94,7 +94,7 @@ This page displays a table listing all available configured carousels. A carouse
 
 ### Carousel Tasks
 
-This page contains a table listing all carousel tasks. These tasks can be configured by the user, either via the context menu of this table or via an interactive Automation script. For each carousel task, the table contains the name of the script that should execute it, the name of the task, and a collection of parameters that will be translated by the Replay application.
+This page contains a table listing all carousel tasks. These tasks can be configured by the user, either via the context menu of this table or via an interactive automation script. For each carousel task, the table contains the name of the script that should execute it, the name of the task, and a collection of parameters that will be translated by the Replay application.
 
 Based on the execution numbers of the tasks, the WitBe Manager chooses the next task to be executed by the robots. If the robot does not run the script that was assigned to the task, it will ignore the task and try another one.
 
@@ -110,7 +110,7 @@ This page is similar to the Carousels page but contains an additional **Matching
 
 ### Stack Tasks
 
-This page lists all the stack tasks. These stack tasks **cannot be created manually** but are instead created by the Redbee EPG connector via an Automation script.
+This page lists all the stack tasks. These stack tasks **cannot be created manually** but are instead created by the Redbee EPG connector via an automation script.
 
 The tasks contain information for the WitBe Robots so they know which program exactly they should test. This works differently for stack tasks than for carousel tasks. When a stack task is picked up by the robot, it will be **removed** from the stack. Because of this, stacks will not go into an infinite loop. The **priority system** is also slightly different. When a stack task enters the system, it will increment the counter of the **other tasks assigned to the same channel** by one. The manager always gives priority to the tasks with the **lowest** counter.
 
@@ -128,4 +128,4 @@ Every day, the stack tasks from the day before are automatically cleaned up, at 
 
 ## Notes
 
-The manager comes with an Automation script that makes it easy to create and configure tasks. There are many filters available in the Automation script that interact with the Resource Manager module. If there is no data available in the EPG Redbee connector and Resource Manager module, the Automation script will not be usable.
+The manager comes with an automation script that makes it easy to create and configure tasks. There are many filters available in the automation script that interact with the Resource Manager module. If there is no data available in the EPG Redbee connector and Resource Manager module, the automation script will not be usable.

@@ -10,7 +10,7 @@ The **ADVA Optical Networking FSP3000** is an optical data transport solution. T
 
 The **ADVA Optical Networking FSP3000** is an extensible chassis with multiple slots. Each slot can contain a different type of extension card. This connector is especially meant for the **10TCC** card.
 
-This connector requires an element of protocol "**ADVA Optical Networking FSP3000**" with the same polling IP to function. The purpose of that element is to retrieve the entity IDs of the different components on this card, i.e. channels. The entity ID is used in the SNMP OID in order to successfully retrieve data from this card.
+This connector requires an element of protocol "**ADVA Optical Networking FSP3000**" with the same polling IP to function. The purpose of that element is to retrieve the entity IDs of the different components on this card, i.e., channels. The entity ID is used in the SNMP OID in order to successfully retrieve data from this card.
 
 All information is retrieved using the SNMP protocol.
 
@@ -46,7 +46,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP of the device.
-- **Device address**: Required. Format: "\<chassis id\>.\<slot id\>", e.g. "1.19".
+- **Device address**: Required. Format: "\<chassis id\>.\<slot id\>", e.g., "1.19".
 
 SNMP Settings:
 

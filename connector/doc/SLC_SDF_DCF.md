@@ -54,4 +54,4 @@ Displays a matrix that is connected to the DCF module in DataMiner. Every input 
 
 The **1.0.0.x** range of the SLC SDF DCF connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).

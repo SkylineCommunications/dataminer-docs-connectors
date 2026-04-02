@@ -16,7 +16,7 @@ The Teracue ENC-300 connector is used to monitor and control a Teracue ENC-300 d
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not used.
 
 **SNMP Settings**:

@@ -8,7 +8,7 @@ With the **Microsoft Platform** connector, it is possible to monitor a Microsoft
 
 ## About
 
-The Microsoft Platform connector retrieves basic information from a Microsoft server. Extra information can be enabled or disabled, e.g. Task Manager, Service List, etc.
+The Microsoft Platform connector retrieves basic information from a Microsoft server. Extra information can be enabled or disabled, e.g., Task Manager, Service List, etc.
 On the Task Manager page, a button allows you to normalize alarms in order to set the current values as normal.
 
 ### Version Info
@@ -166,6 +166,6 @@ To be able to poll using SNMP, the client Microsoft machine needs the SNMP servi
 In order to correctly configure the SNMP service on devices running a Windows Server OS, make sure the following features are enabled:
 
 - SNMP Service
-- Remote Server Administration Tools -> Feature Administration Tools -> SNMP Tools. This feature allows additional settings in the SNMP agent (e.g. setting the community string, defining hosts that can monitor the server, etc.)
+- Remote Server Administration Tools -> Feature Administration Tools -> SNMP Tools. This feature allows additional settings in the SNMP agent (e.g., setting the community string, defining hosts that can monitor the server, etc.)
 
 For more information on how to enable features on Windows Server, refer to [Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/administration/server-manager/install-or-uninstall-roles-role-services-or-features#install-roles-role-services-and-features-by-using-the-add-roles-and-features-wizard).

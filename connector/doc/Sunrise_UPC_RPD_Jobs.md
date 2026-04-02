@@ -4,23 +4,11 @@ uid: Connector_help_Sunrise_UPC_RPD_Jobs
 
 # Sunrise UPC RPD Jobs
 
-The RPD Job element is a DataMiner element that will be used to register the jobs retrieved by the Netcracker application. This element will register messages coming to DataMiner and also from the CCAP (Converged Cable Access Platform) element. Messages sent back to the Netcracker application will not be registered.
-
 ## About
 
-In order to configure an RPD (Remote PHY Device), different Netconf messages are loaded into the CCAP. A Netconf message is built based on an incoming job - a generic object in DataMiner that can be used to represent an external activity or event.
+The RPD Job element is a DataMiner element that will be used to register the jobs retrieved by the Netcracker application. This element will register messages coming to DataMiner and also from the CCAP (Converged Cable Access Platform) element. Messages sent back to the Netcracker application will not be registered.
 
-### Version Info
-
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial Version | -        | -             |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+In order to configure an RPD (Remote PHY Device), different Netconf messages are loaded into the CCAP. A Netconf message is built based on an incoming job, which is a generic object in DataMiner that can be used to represent an external activity or event.
 
 ## Configuration
 
@@ -34,7 +22,7 @@ This connector uses a virtual connection and does not require any configuration 
 
 ### General
 
-An incoming job is registered in the Job Events table where the primary key is the Job Message Correlation ID.
+An incoming job is registered in the Job Events table, where the primary key is the Job Message Correlation ID.
 
 ![Capture.JPG](~/connector/images/Sunrise_UPC_RPD_Jobs_Capture.JPG)
 

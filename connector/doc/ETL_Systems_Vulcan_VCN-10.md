@@ -46,8 +46,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *81.144.135.46.*
-- **IP port**: The port of the destination e.g. *4000*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *81.144.135.46.*
+- **IP port**: The port of the destination e.g., *4000*.
 - **Bus address**: This field is optional.
 
 ### Web Interface
@@ -105,9 +105,9 @@ Finally, the page contains two page buttons:
 
 This page is divided in three different sections:
 
-- **Matrix Configuration:** Allows you to configure parameters related to the matrix, e.g. Number of Outputs, Control Mode.
-- **Ethernet Configuration:** Allows you to configure the Ethernet, e.g. Speed.
-- **Network Configuration:** Allows you to configure the network, e.g. Matrix IP Address, Default Gateway, etc.
+- **Matrix Configuration:** Allows you to configure parameters related to the matrix, e.g., Number of Outputs, Control Mode.
+- **Ethernet Configuration:** Allows you to configure the Ethernet, e.g., Speed.
+- **Network Configuration:** Allows you to configure the network, e.g., Matrix IP Address, Default Gateway, etc.
 
 The page also contains two different page buttons:
 

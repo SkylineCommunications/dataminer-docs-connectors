@@ -10,7 +10,7 @@ The connector can be configured to poll several devices. For each device, it wil
 
 The parameters are divided into three groups, a fast, a medium and a slow group:
 
-- The fast group is polled every time the timer ticks, i.e. every 10 seconds. This value is hard-coded in the connector and may change depending on the connector version. However, it is possible to alter the tick speed by overriding the **Timer Base** parameter (on the **General Parameters** page).
+- The fast group is polled every time the timer ticks, i.e., every 10 seconds. This value is hard-coded in the connector and may change depending on the connector version. However, it is possible to alter the tick speed by overriding the **Timer Base** parameter (on the **General Parameters** page).
 - The medium and slow poll group are polled every 30 seconds and every 12 hours, respectively. These values are hard-coded in the connector, and changing the timer base will have no effect on them, except if you make the timer so slow that it ticks less than the defined time. This is because the groups are polled whenever their **Last Poll Time** is more than 30 seconds or 12 hours ago compared to the current time. This check is performed during the fast poll loop, so there is no separate timer for the medium or slow group.
 
 The connector in fact polls two separate devices, which is why two IP addresses must be provided. However, these are considered to be one and the same device, so all parameters are shown by the same DVE.
@@ -66,7 +66,7 @@ Note: Below the **Parse** button, there is an output field where the element dis
 
 On the **Setup** page, there is a parameter **Selected Import File**, which can be used to configure the connector. The file can be selected from a drop-down list that lists all .csv files from the root documentation folder of the protocol or the element. The files found under the protocol root folder start with "*\[P\]:*", the files found in the element folder start with "*\[E\]:*".
 
-Even though only files with the extension ".csv" from the two mentioned folders are shown, other files can also be selected. However, they have to be on the DMA where the element is running. To select such a file, specify the full path instead of selecting a drop-down item, e.g. *C:\Temp\MyFile.txt.*
+Even though only files with the extension ".csv" from the two mentioned folders are shown, other files can also be selected. However, they have to be on the DMA where the element is running. To select such a file, specify the full path instead of selecting a drop-down item, e.g., *C:\Temp\MyFile.txt.*
 
 ### Configuring the CSV file
 

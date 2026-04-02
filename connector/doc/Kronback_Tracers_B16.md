@@ -51,4 +51,4 @@ On this page, the parameter **SW Offset** can be used to specify a security leve
 
 ### Spectrum Analyzer
 
-This page displays the spectrum trace according to the configured settings, i.e. the **Reference Level**, **Start Frequency**, **Stop Frequency**, **Frequency Span**, **Center Frequency**, **Input Attenuation** and **\# Trace Points**.
+This page displays the spectrum trace according to the configured settings, i.e., the **Reference Level**, **Start Frequency**, **Stop Frequency**, **Frequency Span**, **Center Frequency**, **Input Attenuation** and **\# Trace Points**.

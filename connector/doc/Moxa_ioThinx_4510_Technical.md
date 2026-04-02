@@ -46,3 +46,13 @@ SNMP Settings:
 This connector uses SNMP polling to periodically retrieve data from the device and distribute it across the General, System Parameters, Digital I/O, Relay, and Analog I/O pages of the element.
 
 Configuration is straightforward and requires only that the SNMP parameters are correctly set during element setup. If the element enters a timeout state after configuration, please verify network connectivity to the device and ensure that the SNMP service is enabled under **Service Settings** on the **Security** page of the device's web interface.
+
+The **Description** column of the **Digital Input Channel Monitor** table can be **imported** from an Excel file. To do so:
+
+1. Create a dedicated folder `C:\Skyline DataMiner\Documents\Moxa ioThinx 4510` in the DataMiner Documents folder and add the Excel file with the description in this folder.
+
+1. Go to the **Digital I/O** > **Import Config** page and select the file in the **Import Input Description Path** dropdown.
+
+   This dropdown gets populated with all the Excel files in the folder from the first step.
+
+1. Click **Import**.

@@ -13,7 +13,7 @@ The connector provides insight into the health and status of the OLT, connected 
 ## Key Features
 
 - **OLT monitoring**: Tracks operational status, configuration parameters, and key performance metrics of Huawei 5600/5800 OLTs.
-- **ONT management**: Displays ONT status information and retrieves KPIs from internal or external sources (e.g. KAFKA).
+- **ONT management**: Displays ONT status information and retrieves KPIs from internal or external sources (e.g., KAFKA).
 - **Topology export/import**: Synchronizes GPON topology data with the Skyline EPM GPON solution.
 - **Enhanced split topology**: Separates GPON split information into route, distribution, and FAT segments for clearer network visualization.
 - **Customizable polling**: Configurable intervals for fast, slow, and virtual polling to optimize performance.

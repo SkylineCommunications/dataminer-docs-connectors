@@ -8,7 +8,7 @@ This protocol provides a management application with booking, scheduling and res
 
 ## About
 
-This connector is used together with Automation scripts and a Visual Overview, allowing the creation, viewing, checking, and editing of bookings.
+This connector is used together with automation scripts and a Visual Overview, allowing the creation, viewing, checking, and editing of bookings.
 
 ### Version Info
 

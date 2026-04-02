@@ -18,7 +18,7 @@ This connector uses a serial (UDP) connection and requires the following input d
 
 **SERIAL CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *172.32.65.38.*
+- **IP address/host**: The polling IP of the device, e.g., *172.32.65.38.*
 - **IP port**: The IP port of the device, by default *8560.*
 
 ## Usage

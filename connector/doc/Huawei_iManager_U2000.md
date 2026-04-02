@@ -27,7 +27,7 @@ This connector will create **dynamic virtual elements** for each managed element
 
 ### Exported connectors
 
-| **Exported Connector**         | **Description** |
+| Exported Connector         | Description |
 |-------------------------------|-----------------|
 | Huawei iManager U2000 Element | Managed element |
 

@@ -6,7 +6,7 @@ uid: Connector_help_Roeselare_Classification_Manager_Technical
 
 ## About
 
-Vehicles on which cameras are mounted are used to take captures/pictures of the traffic signs in the city. These are called "Rides". The connector collects the rides data and the captured detections. It collects detections that are not classified, i.e. instances where the meaning and category of the traffic sign cannot be interpreted. The connector then forwards the unclassified detections to the Classifier module/API endpoint.
+Vehicles on which cameras are mounted are used to take captures/pictures of the traffic signs in the city. These are called "Rides". The connector collects the rides data and the captured detections. It collects detections that are not classified, i.e., instances where the meaning and category of the traffic sign cannot be interpreted. The connector then forwards the unclassified detections to the Classifier module/API endpoint.
 
 ## Configuration
 

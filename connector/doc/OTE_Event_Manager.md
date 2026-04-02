@@ -6,7 +6,7 @@ uid: Connector_help_OTE_Event_Manager
 
 This connector is used for the creation and management of events. For each event, one or more bookings are made in the SRM Booking Manager, which will also be monitored via this connector.
 
-Note that this connector is **designed to be used together with the SRM Booking Manager** and with the required Automation scripts.
+Note that this connector is **designed to be used together with the SRM Booking Manager** and with the required automation scripts.
 
 ## About
 

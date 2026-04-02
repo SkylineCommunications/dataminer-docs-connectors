@@ -41,7 +41,7 @@ This connector uses a Simple Network Management Protocol version 2 connection an
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -141,7 +141,7 @@ It also contains several page buttons leading to tables with the **System** **St
 
 On this page, the **Interface Table** displays information for each interface, such as the **Description**, **Type**, **Bandwidth**, status information (**Admin Status** and **Operational Status**) and information about errors and discarded packets (**Inbound Discards**, **Inbound Errors**, **Outbound Discards**, **Outbound Errors**).
 
-The page displays the **Number of Displayed Interfaces**, i.e. the number of interfaces that are currently being displayed in the table.
+The page displays the **Number of Displayed Interfaces**, i.e., the number of interfaces that are currently being displayed in the table.
 
 It also contains a number of page buttons:
 

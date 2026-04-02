@@ -52,8 +52,8 @@ There is no redundancy defined.
 
 The Ticketing solution for the TDF Shortwave Radio Project uses the ServiceNow Ticketing feature.
 
-Each time an alarm appears in the DataMiner Alarm Console, you can right-click it and select the option **ServiceNow** \> **Create Ticket** to trigger the **TDFServiceNowCreate** Automation script (for this feature, the Hyperlinks.xml file must be edited).
+Each time an alarm appears in the DataMiner Alarm Console, you can right-click it and select the option **ServiceNow** \> **Create Ticket** to trigger the **TDFServiceNowCreate** automation script (for this feature, the Hyperlinks.xml file must be edited).
 
-This Automation script will try to link the selected alarm to the corresponding booking. If the booking is not found, the script will list the bookings for that day and give the option to select the booking.
+This automation script will try to link the selected alarm to the corresponding booking. If the booking is not found, the script will list the bookings for that day and give the option to select the booking.
 
 You can then edit some parameters, and when you confirm the ticket creation, the **TDF Incident Ticketing** will create a new ticket in ServiceNow by sending a POST action (Incident Query). The reply will contain the ticket number, which will be added in the alarm property **ServiceNow Ticket**.

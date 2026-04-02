@@ -30,7 +30,7 @@ On this page, the **Alarm History Table** displays a history of the alarms on th
 
 ### Alarm Active page
 
-On this page the **Alarm Active Table** displays the active alarms on the Hambisana Appear TV Analyzer software, i.e. the alarms that have not been resolved.
+On this page the **Alarm Active Table** displays the active alarms on the Hambisana Appear TV Analyzer software, i.e., the alarms that have not been resolved.
 
 ### Configuration page
 

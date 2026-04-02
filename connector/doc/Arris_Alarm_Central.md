@@ -29,8 +29,8 @@ This connector uses a virtual connection and does not require any input during e
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-- **IP address/host**: IP of the server that receives the forwarded HTTP posts. If HTTP post forwarding is disabled, this setting is not used, and any value can be specified, e.g. *localhost*.
-- **IP Port**: Port of the web server at the server that receives the forwarded HTTP posts. If HTTP post forwarding is disabled, this setting is not used, and any value can be specified, e.g. *8080*. Default value: *8080*.
+- **IP address/host**: IP of the server that receives the forwarded HTTP posts. If HTTP post forwarding is disabled, this setting is not used, and any value can be specified, e.g., *localhost*.
+- **IP Port**: Port of the web server at the server that receives the forwarded HTTP posts. If HTTP post forwarding is disabled, this setting is not used, and any value can be specified, e.g., *8080*. Default value: *8080*.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*. Default value: *bypassproxy*.
 
 ## Usage

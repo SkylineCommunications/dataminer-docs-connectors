@@ -42,7 +42,7 @@ This element has the following pages:
 - **Video**
 - **Aspect Ratio**
 - **Audio**
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

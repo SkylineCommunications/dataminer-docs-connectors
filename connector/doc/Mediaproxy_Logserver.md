@@ -4,95 +4,41 @@ uid: Connector_help_Mediaproxy_Logserver
 
 # Mediaproxy Logserver
 
-This connector monitors the activity of the Mediaproxy LogServer, which is a hardware and software compliance logging and monitoring platform.
+The Mediaproxy Logserver connector enables comprehensive monitoring and control of the Mediaproxy Logserver platform. Through its integration with SNMP, REST API, and Push API, this connector provides complete visibility into system status, channels, and event-driven notifications, allowing operators to manage compliance logging environments efficiently and reliably from within DataMiner.
 
-The connector uses **SNMP traps** to capture the logging of the device. It uses an **HTTP** connection to retrieve information from the Mediaproxy LogServer REST API. It will show information related to channels, events, and extracts, as well as alarm status information (updated based on traps and events).
+## Key Features
 
-## About
+- **Real-time status monitoring**: Displays live information about the system, channels, and extracts while automatically updating alarm conditions and health indicators based on traps and event messages.
 
-### Version Info
+- **Event and extract integration**: Retrieves and displays event types, subtypes, and extracts directly from the REST and Push APIs, ensuring operators can easily track system events and content extraction processes.
 
-| Range                | Key Features                  | Based On     | System Impact     |
-|----------------------|-------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.              | -            | -                 |
-| 1.0.1.x              | REST API communication added. | -            | -                 |
-| 1.0.2.x              | Added push  API.              | -            | -                 |
-| 1.0.3.x [SLC Main]   | Traps table turned volatile.  | -            | -                 |
+## Use Cases
 
-### Product Info
+### Unified Compliance Monitoring
 
-| Range     | Supported Firmware          |
-|-----------|-----------------------------|
-| 1.0.0.x   | -                           |
-| 1.0.1.x   | Mediaproxy LogServer API v1 |
-| 1.0.2.x   | Mediaproxy LogServer API v1 |
-| 1.0.3.x   | Mediaproxy LogServer API v1 |
+**Challenge**: Broadcasters operating multiple Logserver instances need a unified platform to supervise compliance logging, event activity, and system alerts across all devices.
 
-### System Info
+**Solution**: The DataMiner connector consolidates data from SNMP traps, REST API polling, and Push API feeds into a single view, enabling operators to track channel health and system performance in real time.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.3.x   | No                  | Yes                     | -                     | -                       |
+**Benefit**: Centralized compliance monitoring with real-time alerts ensures operational consistency and faster incident resolution across distributed logging environments.
 
-## Configuration
+### Real-Time Event Intelligence
 
-### Connections
+**Challenge**: Operators require instant awareness of critical broadcast events such as SCTE-35 triggers, caption failures, or transport interruptions.
 
-#### SNMP connection
+**Solution**: The connector’s Push API and event pages provide immediate updates from incoming event messages, automatically mapping them to DataMiner alarms.
 
-This connector uses an SNMP connection and requires the following input during element creation:
+**Benefit**: Allows proactive detection and response to on-air issues, improving service reliability and reducing downtime during live broadcasts.
 
-SNMP CONNECTION:
+### Streamlined Maintenance and Troubleshooting
 
-- **IP address/host**: Set this to "any".
+**Challenge**: Identifying and recovering from network or device issues across multiple channels and transport streams can be time-consuming.
 
-SNMP Settings:
+**Solution**: The connector’s system and channel status pages highlight any service degradation, license warnings, or proxy accessibility issues, while offering reset controls to restore default values quickly.
 
-- **Port number**: The port of the connected device, by default *161*.
+**Benefit**: Simplifies root cause analysis and ensures faster recovery through actionable system insights and built-in reset functionality.
 
-#### HTTP Connection
+## Technical info
 
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP of the device.
-- **IP port**: Default: *443*.
-- **Bus address**: Default: *bypassproxy.*
-
-SERIAL CONNECTION:
-
-- Interface connection:
-
-  - **IP address/host**: Set this to "any".
-  - **IP port**: Set this to "any".
-
-Push API:
-
-- When setting up the push API URLs on the device, be sure to use the following formats:
-
-- **http://\<ip of device\>/events** for event messages.
-  - **http://\<ip of device\>/dpi** for DPI/SCTE messages.
-  - **http://\<ip of device\>/nave** for NAVE event messages.
-  - **http://\<ip of device\>/captions** for closed caption messages.
-  - **http://\<ip of device\>/eas** for EAS messages.
-
-### Initialization
-
-Specify the authentication token on the General page. The token will be used for the HTTP communication with the REST API.
-
-## Usage
-
-The element consists of the following data pages:
-
-- **General**: Used to specify the authentication token. Will also show the device IP configuration.
-- **Channels**: Shows the information from the REST API GET/Channels response.
-- **System Status**: Displays system status information. This information is updated with received traps and events from the REST API.
-- **Channel Status**: Displays channel status information. This information is updated with received traps and events from the REST API.
-- **Traps**: Displays the received traps. Traps will be mapped to status information.
-- **Events**: This page and its subpages display the event-related information retrieved from the REST API. Events will be mapped to status information.
-- **Extracts**: This page and its subpages display the extract-related information retrieved from the REST API.
-- **Push API Status**: This page contains a table that shows the timeout status/configuration for the different Push API channels.
+> [!NOTE]
+> For more information on how to configure and use the DataMiner connector for Mediaproxy Logserver, refer to the [Technical help page](xref:Connector_help_Mediaproxy_Logserver_Technical).

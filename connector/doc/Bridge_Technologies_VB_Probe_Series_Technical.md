@@ -58,7 +58,7 @@ SNMP Settings:
 Once the element has been created in DataMiner, the **Element Configuration** page allows you to configure different aspects of the element behavior:
 
 - Configuring credentials for **HTTP Authentication** (if HTTP authentication is enabled on the probe).
-- Enabling/disabling part of the polling (e.g. polling of data source alarms is disabled by default).
+- Enabling/disabling part of the polling (e.g., polling of data source alarms is disabled by default).
 - Configuring how to handle probe alarms.
 - Configuring how to handle old entries in the different tables.
 - etc.

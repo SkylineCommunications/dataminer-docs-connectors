@@ -22,7 +22,7 @@ The connector contains information related to the current configuration of the N
 
 ### Creation
 
-The element using this connector is created by the connector CEFD NetVue Provisioning, by means of an Automation script. In the script, you will need to fill in the name of the element.
+The element using this connector is created by the connector CEFD NetVue Provisioning, by means of an automation script. In the script, you will need to fill in the name of the element.
 
 This is a virtual connector, which does not require any further configuration to function correctly.
 

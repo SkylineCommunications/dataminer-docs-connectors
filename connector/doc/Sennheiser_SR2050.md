@@ -39,7 +39,7 @@ The following input is required during element creation:
 - *Serial Connection:*
 
 - **Type of port:** By default UDP/IP.
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.56.201.*
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.56.201.*
   - **IP port**: The IP port of the destination (default: *53212*).
 
 - *IP Connection - Listener:*

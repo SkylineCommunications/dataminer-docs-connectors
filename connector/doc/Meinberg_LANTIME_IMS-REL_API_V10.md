@@ -4,10 +4,10 @@ uid: Connector_help_Meinberg_LANTIME_IMS-REL_API_V10
 
 # Meinberg LANTIME IMS-REL API V10
 
-The **REL** error relay module can be switched by various operating states (e.g. Clock Not Sync). If the internal hardware clock is synchronous to the source, the relay is switched to NO (Normally Open) mode.
+The **REL** error relay module can be switched by various operating states (e.g., Clock Not Sync). If the internal hardware clock is synchronous to the source, the relay is switched to NO (Normally Open) mode.
 In case of an error, the relay switches to NC (Normally Closed) mode.
 
-Depending on the hardware configuration of the IMS system, e.g. redundant with RSC module and two integrated reference clocks, or with SPT module and only one reference clock, different relay states can be switched.
+Depending on the hardware configuration of the IMS system, e.g., redundant with RSC module and two integrated reference clocks, or with SPT module and only one reference clock, different relay states can be switched.
 
 In redundant operation, the two clocks and the changeover unit are monitored by default (CLK1 - relay A, CLK2 - relay B, RSC - relay C). Optionally, other signals can also be monitored (10 MHz, PPS). The relays A + C can also be switched based on notifications (events).
 
@@ -77,7 +77,7 @@ REST (Representational State Transfer) calls are used to retrieve the device inf
 
 On the **HTTP Communication** page, you can track the HTTP sessions used for communicating with the device.
 
-This makes it possible to follow the communication flow and provides some useful statistics, e.g. request time, response time, time span (RTT), etc.
+This makes it possible to follow the communication flow and provides some useful statistics, e.g., request time, response time, time span (RTT), etc.
 
 - **HTTP Sessions State**: If you enable this setting, the active HTTP sessions will be tracked.
 - **HTTP Sessions Max Count**: This determines the maximum number of HTTP sessions that will be tracked.

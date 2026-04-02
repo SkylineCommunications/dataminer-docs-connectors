@@ -20,13 +20,13 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1*.
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1*.
 
 SNMP Settings:
 
-- **Port number**: The port of the connected device, e.g. *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 ## Usage
 
@@ -91,7 +91,7 @@ In addition, the **Set Alarm Table** allows you to adjust the alarm level and th
 
 ### Reference
 
-This page contains all reference parameters: **Reference Clock** (e.g. *Clock A*), **Reference Input**, **Reference Bypass**, **Reference Clock Switch**, **Reference Input Switch**, and **Reference Input Selection**.
+This page contains all reference parameters: **Reference Clock** (e.g., *Clock A*), **Reference Input**, **Reference Bypass**, **Reference Clock Switch**, **Reference Input Switch**, and **Reference Input Selection**.
 
 ### Phase
 
