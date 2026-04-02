@@ -147,11 +147,11 @@ This page contains parameters related to redundancy parameters, such as **CA Det
 
 ### Embedded Web Server
 
-This page contains a link to the web page of the actual device.
+This page contains a link to the webpage of the actual device.
 
 ### Web Interface
 
-This page shows the web page of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page shows the webpage of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## Notes
 
