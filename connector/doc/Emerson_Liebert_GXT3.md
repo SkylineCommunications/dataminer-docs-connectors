@@ -34,7 +34,7 @@ It is possible that some settings need to be configured on the device before the
 
 1. Select the folder **SNMP** in the left section of the web interface.
 
-1. Enable all check boxes on this page and set the *Heartbeat Trap Interval* to 1 minute.
+1. Enable all checkboxes on this page and set the *Heartbeat Trap Interval* to 1 minute.
 
    Note: you may need to click an *Edit* button first, before you will be able to change any settings.
 
