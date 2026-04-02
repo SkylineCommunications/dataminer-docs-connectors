@@ -111,7 +111,7 @@ This page allows you to set up predefined actions and combinations of actions us
 
 ### Web Interface
 
-This page shows the web page of the device. The web interface is only accessible when the client machine has network access to the product.
+This page shows the webpage of the device. The web interface is only accessible when the client machine has network access to the product.
 
 ## DCF Implementation
 

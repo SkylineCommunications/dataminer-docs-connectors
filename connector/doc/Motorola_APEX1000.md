@@ -17,13 +17,6 @@ The **1.0.1.x** version of the **Motorola APEX1000** connector implements the la
 | 1.0.0.x          | Initial version            | No                  | Yes                     |
 | 1.0.1.x          | New range based on 1.0.0.x | No                  | Yes                     |
 
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
-| 1.0.1.x          | N/A                         |
-
 ## Installation and configuration
 
 ### Creation

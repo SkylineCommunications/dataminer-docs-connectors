@@ -4,25 +4,13 @@ uid: Connector_help_TDC_Humax_STB_Collector
 
 # TDC Humax STB Collector
 
-This connector can be used to retrieve information from managed set-top boxes (STBs). For this purpose, it will query the Humax database.
-
 ## About
 
-The STB collectors are grouped per region (i.e., per back-end manager), which means that all the STBs from a specific region will be managed by a collector that is in turn managed by the back-end manager for that region.
+This connector can be used to retrieve information from managed set-top boxes (STBs). For this purpose, it will query the Humax database.
+
+The STB collectors are grouped per region (i.e., per backend manager), which means that all the STBs from a specific region will be managed by a collector that is in turn managed by the backend manager for that region.
 
 One collector will first need to collect the STB MACs that will be inserted into the IAM database, in order to provision the other collectors.
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -31,14 +19,6 @@ One collector will first need to collect the STB MACs that will be inserted into
 #### Virtual connection
 
 This connector uses a virtual connection and does not require any input during element creation.
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
 
 ## How to use
 
