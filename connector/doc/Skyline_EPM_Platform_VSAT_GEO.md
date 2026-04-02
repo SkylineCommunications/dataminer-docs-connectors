@@ -4,23 +4,11 @@ uid: Connector_help_Skyline_EPM_Platform_VSAT_GEO
 
 # Skyline EPM Platform VSAT GEO
 
-The **Skyline EPM Platform VSAT GEO** is an Experience and Performance Management (EPM) Manager for VSAT circuits. It aggregates data from **iDirect Evolution Platform VSAT** and **Newtec Dialog Platform VSAT** collectors, providing centralized monitoring and management through the DataMiner Topology app.
-
-A deployed EPM VSAT Solution contains one front-end element and can have one or multiple back-end elements. The front-end element is responsible for top-level data aggregation from different back-end elements. Each back-end element is responsible for the aggregation of data from the collectors.
-
 ## About
 
-### Version Info
+The **Skyline EPM Platform VSAT GEO** is an Experience and Performance Management (EPM) Manager for VSAT circuits. It aggregates data from **iDirect Evolution Platform VSAT** and **Newtec Dialog Platform VSAT** collectors, providing centralized monitoring and management through the DataMiner Topology app.
 
-| Range              | Features                                                        | Based on | System Impact |
-|--------------------|-----------------------------------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version, supports iDirect and Newtec Dialog collectors. | -        | -             |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+A deployed EPM VSAT Solution contains one frontend element and can have one or multiple backend elements. The frontend element is responsible for top-level data aggregation from different backend elements. Each backend element is responsible for the aggregation of data from the collectors.
 
 ## Configuration
 
@@ -32,26 +20,26 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-1. **Front-end element**:
+1. **Frontend element**:
 
    - Set **Element Manager Type** to *Frontend*.
    - Configure the **Import** and **Export** directories for data files.
 
-1. **Back-end elements**:
+1. **Backend elements**:
 
-   - Set directories for importing data from the front end and exporting data to the collectors.
+   - Set directories for importing data from the frontend and exporting data to the collectors.
 
 1. **Register IDs**:
 
-   - Enter the necessary DMA IDs and Element IDs in the registration tables of front-end and back-end elements.
+   - Enter the necessary DMA IDs and Element IDs in the registration tables of frontend and backend elements.
 
 ## How to Use
 
-Once the front-end and back-end elements are created and configured, you can:
+Once the frontend and backend elements are created and configured, you can:
 
 - Use the **Topology App** in DataMiner Cube to display the EPM VSAT topology chains and fields defined in the connector.
 - Adjust configurations as needed using the settings on the **Configuration** page.
-- Trigger the **Provision** button to start the import and export of all data files and add any new entities, notifying the back-end elements.
+- Trigger the **Provision** button to start the import and export of all data files and add any new entities, notifying the backend elements.
 - Use the **Reset** button to clear existing data from tables and execute provisioning logic to correct any erroneous data.
 
 ## Topologies
@@ -65,6 +53,6 @@ Once the front-end and back-end elements are created and configured, you can:
 
 ## Notes
 
-The workflow involves collecting data files from the collectors, assigning IDs to entities, and then distributing this data to the back-end elements for further processing. Back-end elements use the imported data to update their datasets with the assigned IDs, enabling detailed monitoring and analysis of the VSAT network.
+The workflow involves collecting data files from the collectors, assigning IDs to entities, and then distributing this data to the backend elements for further processing. Backend elements use the imported data to update their datasets with the assigned IDs, enabling detailed monitoring and analysis of the VSAT network.
 
 Ensure that import/export directories are set correctly to avoid data flow issues.

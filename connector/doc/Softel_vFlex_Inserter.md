@@ -98,7 +98,7 @@ This page contains information for both the **loggers** and the **appenders**. T
 
 ### Web page
 
-This page displays the web page provided by the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page displays the webpage provided by the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## Notes
 

@@ -68,7 +68,7 @@ This page displays the **Model**, **Serial Number** and other general parameters
 
 It also allows you to **switch input** **signal**. Since the buttons on the actual device can be customized, an option is available to set up different switch input values according to the assigned button. This can be done via the **Switch Input** page button.
 
-The **Group ID** and **Unit ID** to include in the command packets can also be modified. If you want to go to **All Connection** mode, you can set the Group ID and Unit ID to this mode using the check box. This mode assumes simultaneous control of all monitors in a LAN consisting of a client and multiple monitors. An operation request is issued to all monitors in the LAN using the UDP broadcast. No information acquisition request can be issued.
+The **Group ID** and **Unit ID** to include in the command packets can also be modified. If you want to go to **All Connection** mode, you can set the Group ID and Unit ID to this mode using the checkbox. This mode assumes simultaneous control of all monitors in a LAN consisting of a client and multiple monitors. An operation request is issued to all monitors in the LAN using the UDP broadcast. No information acquisition request can be issued.
 
 NOTE: There is a delay between the manual set for **Group ID** and **Unit ID** and the actual change in the packets.
 

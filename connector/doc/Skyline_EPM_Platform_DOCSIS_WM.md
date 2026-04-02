@@ -38,7 +38,7 @@ This connector uses a virtual connection and does not require any input during e
 
 For a **Skyline EPM DOCSIS WM** element to function, the **Skyline EPM Platform** solution and a **Passive Retrieval** element (e.g., Telefonica por Cable S.A de C.V. Geomarketing DB) must be installed in the DMS. The EPM solution and Passive Retrieval elements create the necessary input CSV files.
 
-In addition, the following scripts must be installed: **EPMBeToWm** and **WmToEPMBe.** These are required for the communication between the **Skyline EPM Platform DOCSIS** back end and the **Skyline EPM Platform DOCSIS WF** element.
+In addition, the following scripts must be installed: **EPMBeToWm** and **WmToEPMBe.** These are required for the communication between the **Skyline EPM Platform DOCSIS** backend and the **Skyline EPM Platform DOCSIS WF** element.
 
 Two correlation rules must be created to activate each of these automation scripts:
 
@@ -52,9 +52,9 @@ Finally, to begin using the **Skyline EPM Platform DOCSIS WF** element, go to th
 
 ## How to use
 
-When everything has been configured correctly as described in the "Initialization" section above, the Skyline EPM DOCSIS WM element will be able to receive requests to create the compatible passives CSV files from a back-end element of the **Skyline EPM Platform** solution.
+When everything has been configured correctly as described in the "Initialization" section above, the Skyline EPM DOCSIS WM element will be able to receive requests to create the compatible passives CSV files from a backend element of the **Skyline EPM Platform** solution.
 It can create compatible node, amplifier, tap and subscriber CSV files.
 
-On the **General** page, the **Workflow Table** is displayed. This table contains the latest workflow requests that have been made by the **back-end** element with their results.
+On the **General** page, the **Workflow Table** is displayed. This table contains the latest workflow requests that have been made by the **backend** element with their results.
 
 The compatible CSV files can be found in the subfolder **CCAP Platform WM** of the folder that is defined in the import/export settings.
