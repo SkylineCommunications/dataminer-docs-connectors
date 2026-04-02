@@ -14,7 +14,7 @@ This connector brings full operational visibility and control of the ME-7000 int
 
 - **Real-time encoder and mux visibility**: Keeps a live picture of all encoders, multiplexers, GigE and BNC interfaces, output programs, and signal routing updated every 60 seconds, giving operators instant awareness of the device state.
 
-- **Integrated alarm management**: Surfaces active alarms directly in the DataMiner alarm console and supports acknowledgment and clearing without leaving DataMiner, reducing the need to access individual device web interfaces.
+- **Integrated alarm management**: Surfaces active alarms directly in the DataMiner Alarm Console and supports acknowledgment and clearing without leaving DataMiner, reducing the need to access individual device web interfaces.
 
 - **Chassis redundancy monitoring**: Tracks the redundancy mode, failback configuration, and primary/backup device relationships, so operators always know the protection state of each unit and can trigger failover or failback actions when needed.
 
@@ -24,7 +24,7 @@ This connector brings full operational visibility and control of the ME-7000 int
 
 ## Use Cases
 
-### Use Case 1 — Centralized headend monitoring
+### Centralized headend monitoring
 
 **Challenge**: A broadcast operator runs a large headend with many ME-7000 encoders. Engineers need a single view of encoder health, alarm state, and mux configuration without switching between individual device web interfaces.
 
@@ -32,15 +32,15 @@ This connector brings full operational visibility and control of the ME-7000 int
 
 **Benefit**: Faster fault detection, reduced time-to-repair, and a unified operational view that scales across the entire encoder fleet.
 
-### Use Case 2 — Proactive fault response
+### Proactive fault response
 
 **Challenge**: When encoding or multiplexing faults occur, the time between detection and resolution directly affects service quality. Manual monitoring of individual units is too slow and inconsistent.
 
-**Solution**: DataMiner raises alarms the moment the connector detects a fault condition on any ME-7000. Operators can acknowledge and clear alarms directly from the DataMiner alarm console, and automated workflows can be configured to escalate or resolve known fault patterns without manual intervention.
+**Solution**: DataMiner raises alarms the moment the connector detects a fault condition on any ME-7000. Operators can acknowledge and clear alarms directly from the DataMiner Alarm Console, and automated workflows can be configured to escalate or resolve known fault patterns without manual intervention.
 
 **Benefit**: Shorter mean time to detect and resolve faults, consistent handling across all units, and a full audit trail of alarm activity.
 
-### Use Case 3 — Service continuity assurance during redundancy events
+### Service continuity assurance during redundancy events
 
 **Challenge**: Headend operators rely on the ME-7000's chassis redundancy (CRED) to protect service delivery, but knowing when a switchover has occurred and whether the backup unit is healthy requires visibility that the device web interface alone does not easily provide at scale.
 
@@ -54,9 +54,9 @@ This connector brings full operational visibility and control of the ME-7000 int
 
 - **Network connectivity** on port 443 (default) between the DataMiner Agent and the ME-7000 device is required.
 
-- **Valid ME-7000 user credentials** (username and password) must be configured on the connector's General page before polling starts.
+- **Valid ME-7000 user credentials** (username and password) must be configured on the connector's General page before polling can begin.
 
-- **DataMiner 10.4.0.0 [CU14]** or higher is required to run this connector version.
+- **DataMiner 10.4.0 [CU14]** or higher is required to run this connector version.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Arris_ME-7000_Technical).
