@@ -47,7 +47,14 @@ All TSDBs that need to be polled need to be added to the **Database Configuratio
 
 ## How to use
 
-Below you can find more information on how to use the most important pages of the connector.
+Create the element and fill in the correct IP address and port.
+Enable/Disable verify SSL if your device supports it or not.
+
+When the element is created you can enable the backpolling feature in the Backpolling subpage under General.
+The backpolling is just for the TSDB data as the config data doesn't support backpolling.
+For getting TSDB data you have to configure the TSDB database on the TSDB Polling subpage under TSDB, don't forget to enable the polling for the databases that you want to be polled.
+on the Polling Settings subpage under TSDB you have a toggle button at the top to enable the overall polling of the TSDB.
+You can apply for more finetuning with the polling table which commands you want or don't, changing the polling interval.
 
 ### General Page
 
