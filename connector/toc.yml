@@ -801,6 +801,9 @@
     topicUid: Connector_help_Arris_GT-3
   - name: Arris ME-7000
     topicUid: Connector_help_Arris_ME-7000
+    items:
+    - name: Arris ME-7000 Technical
+      topicUid: Connector_help_Arris_ME-7000_Technical
   - name: Arris ST-6000 Series
     topicUid: Connector_help_Arris_ST-6000_Series
   - name: Arris VTN244
