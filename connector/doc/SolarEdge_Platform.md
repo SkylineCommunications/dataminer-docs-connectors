@@ -2,18 +2,18 @@
 uid: Connector_help_SolarEdge_Platform
 ---
 
-# SolarEdge Platfrom
+# SolarEdge Platform
 
 ## About
 
-The SolarEdge Platform connector enables centralized monitoring of SolarEdge systems by integrating with the SolarEdge API. It provides users with access to real-time site solar data and Inverter for linked locations directly within DataMiner.
+The SolarEdge Platform connector enables centralized monitoring of SolarEdge systems by integrating with the SolarEdge API. It provides users with access to real-time solar site data and inverter data for linked locations directly within DataMiner.
 
 ## Key Features
 
-- **Sites data**: Retrieve and monitor real-time site information linked with the Account Id.
-- **Inverter data**: Analysis and monitoring for all inverters linked to all sites linked with the Account Id.
-- **Meters data**: Monitors the meters linked with the inverters.
-- **Environment benefit data**: For each site it indicates the environment benefits it generated so far.
+- **Site data**: Retrieve and monitor real-time site information linked to the Account ID.
+- **Inverter data**: Access analysis and monitoring data for all inverters for the sites linked to the Account ID.
+- **Meter data**: Monitor the meters linked with the inverters.
+- **Environment benefit data**: Get an overview of environment benefits generated so far for each site.
 
 ## Technical Reference
 
