@@ -95,6 +95,13 @@
     topicUid: Connector_help_Actia_Sodielec_DTM20MKII
   - name: Actia Sodielec SDVB100
     topicUid: Connector_help_Actia_Sodielec_SDVB100
+- name: Active Power
+  items:
+  - name: Active Power CleanSource XT MMS
+    topicUid: Connector_help_Active_Power_CleanSource_XT_MMS
+    items:
+      - name: Active Power CleanSource XT MMS Technical
+        topicUid: Connector_help_Active_Power_CleanSource_XT_MMS_Technical
 - name: Actus
   items:
   - name: Actus Broadcast Compliance (View)
