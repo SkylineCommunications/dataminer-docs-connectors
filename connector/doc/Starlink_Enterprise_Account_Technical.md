@@ -84,7 +84,7 @@ To see the actual traffic between the Starlink Enterprise Account element and th
 
 To see the actual traffic between the Starlink Enterprise Account element and the Starlink API, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**.
 
-A healthy element will show groups 700, 701, 702, 703, 704, 705 and 709 in the Stream Viewer. If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
+A healthy element will show groups 700, 701, 702, 703, 704, 705, and 709 in the Stream Viewer. If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
 
 Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. However, note that lines in the element log file indicating **token_expired** can be safely ignored, as these are also added when nothing is wrong with the element.
 
@@ -127,7 +127,7 @@ The automatic table cleanup mechanism is triggered once a day.
 
 ### Protocol XML ID Ranges
 
-When contributing to this connector, please use the following ID ranges for the Protocol XML file. For readability purposes, it was decided to use the last two digits of the ID to indicate the API call. Components used for polling the Telemetry have an ID that ends with 02. Components used for polling the Products have an ID that ends with 09.
+When contributing to this connector, please use the ID ranges in the table below for the Protocol XML file. For readability purposes, the last two digits of the ID should indicate the API call. Components used for polling the telemetry have an ID that ends with 02. Components used for polling the products have an ID that ends with 09.
 
 | ID Range   | Parameter                 | Trigger                   | Action                                 | Group        |
 |------------|---------------------------|---------------------------|----------------------------------------|--------------|
