@@ -84,7 +84,7 @@ To see the actual traffic between the Starlink Enterprise Account element and th
 
 To see the actual traffic between the Starlink Enterprise Account element and the Starlink API, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**.
 
-A healthy element will show groups 700, 701, 702, 703, 704, 705 and 972 in the Stream Viewer. If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
+A healthy element will show groups 700, 701, 702, 703, 704, 705 and 709 in the Stream Viewer. If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
 
 Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. However, note that lines in the element log file indicating **token_expired** can be safely ignored, as these are also added when nothing is wrong with the element.
 
