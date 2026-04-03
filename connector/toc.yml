@@ -405,6 +405,9 @@
     topicUid: Connector_help_Alpha_CMD-N_Arris_SG4000
   - name: Alpha Combi UPS AC DC
     topicUid: Connector_help_Alpha_Combi_UPS_AC_DC
+    items:
+    - name: Alpha Combi UPS AC DC Technical
+      topicUid: Connector_help_Alpha_Combi_UPS_AC_DC_Technical
   - name: Alpha Cordex CXC HP
     topicUid: Connector_help_Alpha_Cordex_CXC_HP
   - name: Alpha XM-2-300HP DPM
@@ -805,6 +808,9 @@
     topicUid: Connector_help_Arris_GT-3
   - name: Arris ME-7000
     topicUid: Connector_help_Arris_ME-7000
+    items:
+    - name: Arris ME-7000 Technical
+      topicUid: Connector_help_Arris_ME-7000_Technical
   - name: Arris ST-6000 Series
     topicUid: Connector_help_Arris_ST-6000_Series
   - name: Arris VTN244
@@ -3497,13 +3503,6 @@
     topicUid: Connector_help_Eutelsat_Siecams_Manager
   - name: Eutelsat TAOS Calculation
     topicUid: Connector_help_Eutelsat_TAOS_Calculation
-  - name: Eutelsat TAOS Manager
-    topicUid: Connector_help_Eutelsat_TAOS_Manager
-    items:
-      - name: Eutelsat TAOS Manager_Range_1.0.0.x_Technical
-        topicUid: Connector_help_Eutelsat_TAOS_Manager_1_0_0_x_Technical
-      - name: Eutelsat TAOS Manager_Range_1.0.1.x_Technical
-        topicUid: Connector_help_Eutelsat_TAOS_Manager_1_0_1_x_Technical
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
@@ -4398,6 +4397,11 @@
     topicUid: Connector_help_Generic_MIB-II
   - name: Generic MIB II
     topicUid: Connector_help_Generic_MIB_II
+  - name: Generic Modbus
+    topicUid: Connector_help_Generic_Modbus
+    items:
+    - name: Generic Modbus Technical
+      topicUid: Connector_help_Generic_Modbus_Technical
   - name: Generic Modbus PLC
     topicUid: Connector_help_Generic_Modbus_PLC
   - name: Generic Move Files
@@ -7462,6 +7466,13 @@
   items:
   - name: OpenHeadend Content Management Platform
     topicUid: Connector_help_OpenHeadend_Content_Management_Platform
+- name: Open-Meteo
+  items:
+  - name: Open-Meteo Weather
+    topicUid: Connector_help_OpenMeteo_Weather
+    items:
+    - name: Open-Meteo Weather Technical
+      topicUid: Connector_help_OpenMeteo_Weather_Technical
 - name: OpenStack
   items:
   - name: OpenStack Manager
@@ -9317,6 +9328,13 @@
   items:
   - name: Softel vFlex Inserter
     topicUid: Connector_help_Softel_vFlex_Inserter
+- name: SolarEdge
+  items:
+  - name: SolarEdge Platform
+    topicUid: Connector_help_SolarEdge_Platform
+    items:
+    - name: SolarEdge Platform Technical
+      topicUid: Connector_help_SolarEdge_Platform_Technical
 - name: Solarwinds
   items:
   - name: Solarwinds NPM Event Agent
@@ -9674,6 +9692,9 @@
   items:
   - name: Synamedia Virtual DCM
     topicUid: Connector_help_Synamedia_Virtual_DCM
+    items:
+    - name: Synamedia Virtual DCM Technical
+      topicUid: Connector_help_Synamedia_Virtual_DCM_Technical
   - name: Synamedia VSM
     topicUid: Connector_help_Synamedia_VSM
   - name: Synamedia VSM License Usage Monitor
@@ -11218,6 +11239,9 @@
   items:
   - name: Zabbix Platform
     topicUid: Connector_help_Zabbix_Platform
+    items:
+    - name: Zabbix Platform Technical
+      topicUid: Connector_help_Zabbix_Platform_Technical
   - name: Zabbix Platform - Host
     topicUid: Connector_help_Zabbix_Platform_-_Host
 - name: Zamil Industries

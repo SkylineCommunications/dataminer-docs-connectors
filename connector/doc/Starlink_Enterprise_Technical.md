@@ -14,7 +14,7 @@ The Starlink Telemetry API is a low-latency API for accessing the telemetry data
 
 The Starlink Management API is used to activate, deactivate, and otherwise manage Starlink user terminals. Next to this, it can return paginated results containing data usage for the current and previous billing cycles for service lines on an account. Similar to the Telemetry API, this API is only available for enterprise accounts with an account manager.
 
-From version 1.0.4.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) in the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account elements to poll the information.
+From version 1.1.0.1 onwards, the connector requires at least one [Starlink Enterprise Account element](xref:Connector_help_Starlink_Enterprise_Account) in the DMS. This is because Starlink Enterprise elements are no longer able to poll the information on their own. Since the introduction of the Starlink API V2, a Starlink Enterprise element collaborates with one or more Starlink Enterprise Account elements to poll the information.
 
 The Starlink Enterprise connector was previously known as the Starlink Telemetry API connector. The name was changed to Starlink Enterprise when calls towards the Management API were added. The Starlink Enterprise 1.0.0.1 is the same connector as the Starlink Telemetry API 1.0.0.4. If you have any elements that are still using the Starlink Telemetry API, we recommend upgrading these to the latest version of the Starlink Enterprise connector. This means that a Starlink Enterprise Account element has to be created for every account that was polled before.
 
@@ -32,7 +32,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 | 1.0.1.x | API V1             |
 | 1.0.2.x | API V1             |
 | 1.0.3.x | API V1             |
-| 1.0.4.x | API V2             |
+| 1.1.0.x | API V2             |
 
 ### System Info
 
@@ -42,7 +42,7 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 | 1.0.1.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 | 1.0.2.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 | 1.0.3.x | No              | Yes                 | -                                                                              | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
-| 1.0.4.x | No              | Yes                 | [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
+| 1.1.0.x | No              | Yes                 | [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) | [Starlink Enterprise - User Terminal](xref:Connector_help_Starlink_Enterprise_-_User_Terminal) |
 
 ## Configuration
 
@@ -146,8 +146,7 @@ If you need to purchase additional data beyond the included monthly allocation, 
 
 To do so, specify the number of data blocks you want to top up for a specific account in the **Data Blocks to Add** column of the Services table, and then click the **Top Up** button in the row. This will execute a one-time top-up request via the Starlink Management API. The connector will validate the product availability and confirm whether the top-up succeeded or failed.
 
-> [!TIP]
-> The top-up feature allows operators to quickly add extra data without leaving the connector interface, providing immediate feedback in the element log or table.
+Because the Starlink Enterprise element relies on a Starlink Enterprise Account element to send the Opt In/Out request to the Starlink API, it may take a minute or two for the **Automatic Top Up** toggle button to update after it is used. This is due to the [buffer mechanism](#initialization) that was added to allow inter-element communication. Please keep these background actions in mind when toggling that button.
 
 ![Automatic Top Up](~/connector/images/StarlinkEnterpriseAutomaticTopUp.png)
 

@@ -4,23 +4,11 @@ uid: Connector_help_SES_S.A._DCMS
 
 # SES S.A. DCMS
 
-The Dedicated Carrier Monitoring System (**DCMS**) permanently measures the downlink Equivalent Isotropically Radiated Power (**EIRP**) of the European SES satellite. Aside from EIRP values, it also measures **System Gain** and **Radiometer** **Data**, and keeps track of some **Housekeeping Data Values**, such as **Outside Temperature** and **Voltages**.
-
 ## About
 
+The Dedicated Carrier Monitoring System (**DCMS**) permanently measures the downlink Equivalent Isotropically Radiated Power (**EIRP**) of the European SES satellite. Aside from EIRP values, it also measures **System Gain** and **Radiometer** **Data**, and keeps track of some **Housekeeping Data Values**, such as **Outside Temperature** and **Voltages**.
+
 The **SES S.A. DCMS** connector is used by DataMiner to access, process, and display relevant information about some of the DCMS data files, such as **EIRP Data**, **System Gain** and **Housekeeping** (**Outer Temperature**, **Hub Temperature**, **Noise Source 1 Temperature**, **Noise Source 2 Temperature**, **Voltage -15V Supply**, **Voltage 5V Supply**, **Voltage 15V Supply** and **Voltage 28V Supply**). The data, accessed from a Windows share, is treated as one independent file for each of the above parameters. In the case of the satellite database file, multiple pieces of data are retrieved, such as **Original** and **Backup Satellite Name**, **Frequency**, and **Nominal**, **Low**, and **High EIRP.** All files, excluding the satellite database file, also return **Date Time** information about the retrieval of data.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

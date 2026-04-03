@@ -10,8 +10,8 @@ The **Telenet CPE Manager** is part of the CPE setup, and works together with th
 
 Different elements will be needed:
 
-- One front-end element, responsible for provisioning and distribution of the syslog messages The CPE interface of this element allows the operator to see the data of all the headends.
-- Multiple back-end elements, each responsible for one headend. This element will perform the aggregation of the data coming from the collector elements and the distribution of the online/offline traps from the CMTS. The CPE interface of this element allows the operator to only see the data of the headend that this element is responsible for.
+- One frontend element, responsible for provisioning and distribution of the syslog messages The CPE interface of this element allows the operator to see the data of all the headends.
+- Multiple backend elements, each responsible for one headend. This element will perform the aggregation of the data coming from the collector elements and the distribution of the online/offline traps from the CMTS. The CPE interface of this element allows the operator to only see the data of the headend that this element is responsible for.
 
 ### Version Info
 
@@ -24,7 +24,7 @@ Different elements will be needed:
 | 3.0.0.x [Obsolete] | Based on 2.2.2.0. Feature 58 forward node name to CPE collectors. | No | No |
 | 4.0.0.x [Obsolete] | Based on 3.0.0.1. Baseline changed. | No | No |
 | 5.0.0.x [Obsolete] | Based on 4.0.0.0 Added ratings and VoD check in provisioning | No | No |
-| 6.0.0.x | Complete redesign of the connector. In previous versions, the front end contained all topology information, including all CPE MAC addresses. This was too much for one element to handle. All tables and their provisioning needed to be changed so it was possible to shift the topology from front-end to back-end elements. Because of this redesign, this version is not compatible with previous versions. | No | No |
+| 6.0.0.x | Complete redesign of the connector. In previous versions, the frontend contained all topology information, including all CPE MAC addresses. This was too much for one element to handle. All tables and their provisioning needed to be changed so it was possible to shift the topology from frontend to backend elements. Because of this redesign, this version is not compatible with previous versions. | No | No |
 | 6.0.1.x | Based on 6.0.0.18. The SFR cluster only contains cable modems. The connector had to be adapted so the STB and eMTA were removed from the tables, the provisioning, and the collector elements. Only parameters were removed, so switching to this version with an existing element using the 6.0.0.x range is possible if necessary. | No | No |
 | 6.0.2.x [SLC Main] | Based on 6.0.0.19. Removed VoD, BCQ and BO chains. Street level has been changed to Amplifier level and some KPIs have been removed from different levels. | No | No |
 
@@ -63,67 +63,67 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to re
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: Not needed, because the connector will not perform sets.
 
-### Configuration of the front-end offload parameters
+### Configuration of the frontend offload parameters
 
 The CPE Manager's data display pages are not intended to be opened. Instead the configuration should be performed either through a multiple set or via a Visio file.
 
-The **CPE Manager Type** should be set to *Front-end* for the front-end element.
+The **CPE Manager Type** should be set to *Front-end* for the frontend element.
 
 **Ratings Offload Folder** contains the location of the offload files with the view ratings. **PROV Source Folder** contains the location of the provisioning files.
 
-### Configuration of the front-end aggregation parameters
+### Configuration of the frontend aggregation parameters
 
-**CPE Manager Chassis Aggregation**, **CPE Manager Street Aggregation** and **CPE Manager UAU Aggregation** should always be set to *Off* because the front end does not contain data for these levels.
+**CPE Manager Chassis Aggregation**, **CPE Manager Street Aggregation** and **CPE Manager UAU Aggregation** should always be set to *Off* because the frontend does not contain data for these levels.
 
 **CPE Manager Aggregation State** can be set to *Active* to enable all aggregation. This parameter is automatically changed and set to *Hold* when provisioning is going on.
 
 **CPE Manager Region Aggregation** can be set to *On* to enable the aggregation on Telenet level.
 
-**Ratings Aggregation Timer State** can be set to *On* to enable the aggregation of the view ratings. The front-end manager will offload the view ratings every 15 minutes.
+**Ratings Aggregation Timer State** can be set to *On* to enable the aggregation of the view ratings. The frontend manager will offload the view ratings every 15 minutes.
 
-### Configuration of the front-end provisioning parameters
+### Configuration of the frontend provisioning parameters
 
-When the provisioning files are processed, new data files will be available that the back-end CPE manager elements can use to provision. These files will be retrieved through a shared folder. **Frontend Agent** contains the IP address, **Frontend Share Username**, **Frontend Share Password** and **Frontend Share Domain** contain the credentials of the shared folder.
+When the provisioning files are processed, new data files will be available that the backend CPE manager elements can use to provision. These files will be retrieved through a shared folder. **Frontend Agent** contains the IP address, **Frontend Share Username**, **Frontend Share Password** and **Frontend Share Domain** contain the credentials of the shared folder.
 
-You can start provisioning by setting the button **Start Provisioning** to *Now*. The back-end elements and collectors will also provision. With **Allow Error in Provisioning Files**, you can define whether provisioning should continue when there are errors in the provisioning files. You can check if the provisioning files contain errors without actually provisioning by setting **Start Provisioning Check** to *Now*.
+You can start provisioning by setting the button **Start Provisioning** to *Now*. The backend elements and collectors will also provision. With **Allow Error in Provisioning Files**, you can define whether provisioning should continue when there are errors in the provisioning files. You can check if the provisioning files contain errors without actually provisioning by setting **Start Provisioning Check** to *Now*.
 
 PROV Result Table and PROV Logging are both tables that contain more info about the provisioning. You can clear these tables by setting the buttons **PROV Clear Result Table** and **PROV Clear Logging Table** to *Now.*
 
-### Configuration of the back-end offload parameters
+### Configuration of the backend offload parameters
 
-The **CPE Manager Type** should be set to *Back-end* for the back-end elements.
+The **CPE Manager Type** should be set to *Back-end* for the backend elements.
 
 The parameter **Data Offload Folder** contains the location of the offload files with aggregation results.
 
 To enable sending traps to Adlex Nouveau per chassis, set the parameter **Chassis AN Enabled** to *Enabled*.
 
-### Configuration of the back-end aggregation parameters
+### Configuration of the backend aggregation parameters
 
-**CPE Manager RegionAggregation** should always be set to *off* because the back end does not contain data for these levels.
+**CPE Manager RegionAggregation** should always be set to *off* because the backend does not contain data for these levels.
 
 To enable the aggregation that is executed every 5 minutes on different levels, set the parameters **CPE Manager UAU Aggregation**, **CPE Manager Chassis Aggregation** and **CPE Manager Street Aggregation** to *On*.
 
 To enable the OOS aggregation that is executed every minute, set the parameter **BE OOS Aggregation Timer State** to *On*.
 
-To enable the aggregation of the view ratings from the STB collectors every 5 minutes, set the **Ratings Aggregation Timer State** to *On*. These view ratings of all the back-end managers will then be merged by the front-end manager every 15 minutes.
+To enable the aggregation of the view ratings from the STB collectors every 5 minutes, set the **Ratings Aggregation Timer State** to *On*. These view ratings of all the backend managers will then be merged by the frontend manager every 15 minutes.
 
 To enable the offload of the node and the node frequency data every 15 minutes, set **Node-Offload Timer State** to *On*.
 
 To enable the calculation of the OOS rate every 2 minutes, set the **Change Rate Timer State** to *On*. This calculation is done on the Street and Node level for the OOS of CM, eMTA and STB.
 
-### Configuration of the back-end headend parameters
+### Configuration of the backend headend parameters
 
-Fill in the headend name that the back-end manager will be responsible for in the parameter **Backend Responsible for Headend**.
+Fill in the headend name that the backend manager will be responsible for in the parameter **Backend Responsible for Headend**.
 
 Add the DMAID/EID of the collectors in the parameters **Add Backend CM Collector**, **Add Backend STB Collector** and **Add Backend EMTA Collector**. This will add rows to the tables **Backend CM Collector Table**, **Backend STB Collector Table** and **Backend EMTA Collector Table**. You can remove these rows again with the **Remove Backend Collector** column in the table.
 
-During provisioning, the back-end manager will divide the number of CMTSs equally over the collector elements. The **Rearrange Collector Spreading** parameter should be used with extreme care, as this will reassign all MAC addresses, which could cause a huge load to remove and add everything to the collector elements. Once this configuration is done, the button **Send Config To Frontend** should be set to *Send*.
+During provisioning, the backend manager will divide the number of CMTSs equally over the collector elements. The **Rearrange Collector Spreading** parameter should be used with extreme care, as this will reassign all MAC addresses, which could cause a huge load to remove and add everything to the collector elements. Once this configuration is done, the button **Send Config To Frontend** should be set to *Send*.
 
-When the collector elements are not located on the same DMA as the back-end manager element, they must be able to retrieve the provisioning data through a share folder. You can configure the credentials for this share folder with the parameters **Backend Share Username**, **Backend Share Password** and **Backend Share Domain**.
+When the collector elements are not located on the same DMA as the backend manager element, they must be able to retrieve the provisioning data through a share folder. You can configure the credentials for this share folder with the parameters **Backend Share Username**, **Backend Share Password** and **Backend Share Domain**.
 
-The **Frontend Agent ID** parameter needs to be filled in with the DMAID/EID of the front-end manager element, so that the back-end manager knows to which front end to send its configuration.
+The **Frontend Agent ID** parameter needs to be filled in with the DMAID/EID of the frontend manager element, so that the backend manager knows to which frontend to send its configuration.
 
-### Configuration of the back-end alarm parameters
+### Configuration of the backend alarm parameters
 
 You can configure certain settings to influence the alarms.
 
@@ -131,7 +131,7 @@ With **Minimum \# CM Monitoring Threshold**, **Minimum \# MTA Monitoring Thresho
 
 With the **Correction Factor** parameters, you can adjust the normalization value per type of CPE and per level. This way, the normalization value can be adjusted throughout the day, because the load in the morning can be different (generate no alarm with this value) from the load in the evening (generate an alarm with this value).
 
-### Configuration of the back-end normalization parameters
+### Configuration of the backend normalization parameters
 
 The baseline values used for normalization are based on the trending values of the past days. The way the normalization is calculated is defined in the **Baseline Lookup Table**. You can fill in this table by setting the **Baseline** button either to the value *Import* to load the data from a CSV file, or to the value *Add* to manually add a row. This CSV file must have the name *BaselineInfo.csv* and must be stored in the folder *C:\Skyline DataMiner\Protocols\Telenet CPE Manager\Production*.
 
@@ -164,7 +164,7 @@ You can also right-click an alarm in Cube and select **Open** \>*CPE Manager ele
 
 ## Provisioning csv files
 
-The front-end manager needs the following files and format (semicolon-separated) to be able to perform provisioning. It will analyze these files and will create new CSV files per headend, which the back-end manager can pick up and use for provisioning.
+The frontend manager needs the following files and format (semicolon-separated) to be able to perform provisioning. It will analyze these files and will create new CSV files per headend, which the backend manager can pick up and use for provisioning.
 
 ### hfc_cpe_iaa.csv
 
@@ -235,7 +235,7 @@ The front-end manager needs the following files and format (semicolon-separated)
 
 ## Generated node offload csv files
 
-In one file, the back-end manager will offload the node data as well as the frequency data. Depending on the type, there will be a different number of offloaded fields (tab-separated).
+In one file, the backend manager will offload the node data as well as the frequency data. Depending on the type, there will be a different number of offloaded fields (tab-separated).
 
 ### Node data structure
 
@@ -281,7 +281,7 @@ In one file, the back-end manager will offload the node data as well as the freq
 
 ## Generated view ratings offload CSV files
 
-The front-end manager will offload the view ratings in two files. State offload will contain the number of STBs that are not watching a channel. View offload will contain the number of STBs that are watching a channel, as well as the exact channel and type. These files are semicolon-separated.
+The frontend manager will offload the view ratings in two files. State offload will contain the number of STBs that are not watching a channel. View offload will contain the number of STBs that are watching a channel, as well as the exact channel and type. These files are semicolon-separated.
 
 ### State offload structure
 
