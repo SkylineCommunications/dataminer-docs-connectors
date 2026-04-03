@@ -31,6 +31,8 @@ These are used to communicate with the Newtec Dialog Restful Standard API. The f
 - **IP port**: *80* (default connection 1) and *8086* (default connection 2 and 3)
 - **Device address**: *BypassProxy*
 
+For connection 2, select the checkbox *Skip SSL/TLS certificate verification* in case this verification is not supported for your setup.
+
 ### Configuration of Main and Backup CNMS
 
 If a main and backup CNMS are present, additional settings need to be filled in on the **Standard API Polling** page. On this page, the IP and port of the main and backup should be configured, and polling can be enabled to either main or backup. The IP addresses specified in the element editor will then not matter.
@@ -45,16 +47,15 @@ Additionally, the authentication details on the **General** page must be configu
 
 All TSDBs that need to be polled need to be added to the **Database Configuration** table, which is located on the **TSDB Polling** page. In addition, the TSDB Polling Status on the **Polling Settings** page must be **enabled**.
 
+### Enabling Polling
+
+When the element has been created, you can enable the backpolling feature on the **General** > **Backpolling** page. This is intended for the TSDB data only, as the config data does not support backpolling.
+
+To retrieve TSDB data, configure the TSDB database on the **TSDB** > **TSDB Polling** page. Remember to enable the polling for the databases that you want to be polled.
+
+On the **TSDB** > **Polling Settings** page, you can use the toggle button at the top to enable the overall polling of the TSDB. With the polling table below this, you can fine-tune which data should or should not be polled.
+
 ## How to use
-
-Create the element and fill in the correct IP address and port.
-Enable/Disable verify SSL if your device supports it or not.
-
-When the element is created you can enable the backpolling feature in the Backpolling subpage under General.
-The backpolling is just for the TSDB data as the config data doesn't support backpolling.
-For getting TSDB data you have to configure the TSDB database on the TSDB Polling subpage under TSDB, don't forget to enable the polling for the databases that you want to be polled.
-on the Polling Settings subpage under TSDB you have a toggle button at the top to enable the overall polling of the TSDB.
-You can apply for more finetuning with the polling table which commands you want or don't, changing the polling interval.
 
 ### General Page
 
