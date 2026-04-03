@@ -127,6 +127,8 @@ The automatic table cleanup mechanism is triggered once a day.
 
 ### Protocol XML ID Ranges
 
+When contributing to this connector, please use the following ID ranges for the Protocol XML file. For readability purposes, it was decided to use the last two digits of the ID to indicate the API call. Components used for polling the Telemetry have an ID that ends with 02. Components used for polling the Products have an ID that ends with 09.
+
 | ID Range   | Parameter                 | Trigger                   | Action                                 | Group        |
 |------------|---------------------------|---------------------------|----------------------------------------|--------------|
 | 1 - 99     | Hidden Standalone         |                           |                                        |              |
