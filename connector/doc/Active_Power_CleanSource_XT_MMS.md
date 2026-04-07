@@ -10,9 +10,9 @@ The Active Power CleanSource XT MMS connector enables DataMiner integration and 
 
 ## Key Features
 
-- **DataMiner Integration**: Enables communication between DataMiner and any Active Power CleanSource XT MMS.
-
-- **Trending and Alarming**: Supports trending and alarming of all retrieved data, allowing for proactive monitoring and issue detection.
+- **Remote monitoring**: Monitor the Active Power CleanSource XT MMS remotely via DataMiner.
+- **Trending**: Configure trending to keep track of the trends in the retrieved data.
+- **Alarming**: Get notified of any issues or potential issues through proactive monitoring and issue detection.
 
 ## Use Case
 

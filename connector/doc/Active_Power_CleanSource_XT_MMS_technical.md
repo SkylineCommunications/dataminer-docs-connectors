@@ -14,11 +14,11 @@ The Active Power CleanSource XT MMS connector enables DataMiner integration and 
 
 #### SNMP Connection
 
-This connector uses a Simple Network Management Protocol (SNMP) Version 3 connection and requires the following input during element creation:
+This connector uses an SNMPv3 connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination.
+- **IP address/host**: The Babel Buster IP address (see [Notes](#notes)).
 
 SNMP Settings:
 
@@ -35,6 +35,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## Notes
 
-For this connector to be able to poll data, a `Control Solutions Minnesota Babel Buster BB3-6101-V3 Modbus to SNMP Gateway` must be connected to the device and properly configured and the connector must connect to the Babel Buster IP Address.
-
-
+For this connector to be able to poll data, a **Control Solutions Minnesota Babel Buster BB3-6101-V3 Modbus to SNMP Gateway** must be connected to the device and properly configured, and the connector must connect to the Babel Buster IP address.
