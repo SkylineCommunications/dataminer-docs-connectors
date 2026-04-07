@@ -8,26 +8,19 @@ uid: Connector_help_SES_Service_Problem_Management_Technical
 
 The SES Service Problem Management connector implements bidirectional integration with SNOW systems using the TMF656 Service Problem Management API and TMF642 Alarm Management API standards. The connector synchronizes DataMiner tickets with external service problems, automating ticket lifecycle management through RESTful API communications over HTTPS.
 
-### Version Info
-
-| Range              | Key Features                                                                                                                                                                             | Based on | System Impact                                       |
-| ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------- |
-| 1.0.0.x            | Initial version. Protocol uses Unicode. Multi-threaded ticket creation with 5 concurrent processing threads. TMF656/TMF642 API integration.<br>**Requires DataMiner Ticketing license**. | -        | -                                                   |
-| 2.0.0.x [SLC Main] | Migration to SDM Ticketing (`TicketingApiHelper`). Uses `TicketType` with `FieldDefinition` for schema definition and `TicketField` for custom field management.                         | 1.0.0.x  | Requires `DataMiner SDM Ticketing Module` solution. |
-
 ### Product Info
 
 | Range   | Supported Firmware       |
 | ------- | ------------------------ |
 | 1.0.0.x | TMF656 v1.0, TMF642 v1.0 |
-| 2.0.0.x | TMF656 v1.0, TMF642 v1.0 |
+| 1.1.0.x | TMF656 v1.0, TMF642 v1.0 |
 
 ### System Info
 
 | Range   | DCF Integration | Cassandra Compliant | Linked Components              | Exported Components |
 | ------- | --------------- | ------------------- | ------------------------------ | ------------------- |
 | 1.0.0.x | No              | Yes                 | DataMiner Ticketing module     | -                   |
-| 2.0.0.x | No              | Yes                 | DataMiner SDM Ticketing module | -                   |
+| 1.1.0.x | No              | Yes                 | DataMiner SDM Ticketing module | -                   |
 
 ## Configuration
 
@@ -40,8 +33,8 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the SES Service Problem Management API destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+- **IP port**: The IP port of the destination (default: _443_).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify _BypassProxy_.
 
 ### Initialization
 
@@ -50,7 +43,7 @@ To initialize the connector, navigate to the **Configuration** page of the eleme
 - **API Base Path**: The base REST API endpoint path (default: `gstm/dataminer/tmf/api/v1/tmf656/`).
 - **Username**: The authentication username for API access.
 - **Password**: The authentication password (masked field).
-- **Ticket Synchronization State**: Enable or disable ticket synchronization (default: *Enabled*).
+- **Ticket Synchronization State**: Enable or disable ticket synchronization (default: _Enabled_).
 - **Tickets Synchronization Frequency**: Set the interval between synchronization cycles (range: 10-86400 seconds, default: 60 seconds).
 
 On first startup, the connector will automatically initialize the following:
@@ -90,7 +83,7 @@ The **Configuration** page contains all configurable parameters for connector op
 
 The connector executes a comprehensive synchronization workflow at each interval:
 
-1. **Update table entries**: Retrieves active DataMiner tickets using the `TicketingApiHelper` (filtering by status: *New*, *Assigned*, *In Progress*, *On Hold*) and updates the local table with current ticket information.
+1. **Update table entries**: Retrieves active DataMiner tickets using the `TicketingApiHelper` (filtering by status: _New_, _Assigned_, _In Progress_, _On Hold_) and updates the local table with current ticket information.
 
 1. **Create new service problems**: Identifies tickets without an associated Service Problem ID and creates new service problems via POST requests to the `serviceProblem` endpoint using multithreaded processing (5 concurrent threads).
 
