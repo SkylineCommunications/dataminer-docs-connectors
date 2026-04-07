@@ -45,7 +45,7 @@ The connector automatically creates the following DOM definitions on first run:
 
 The connector operates in two modes:
 
-- **Initial cache buildup**: On element startup, the connector performs paginated retrieval of all inventory items (50 records per page) for services, carriers, and resources. This process continues until all pages have been retrieved. During cache buildup, the connector tracks entity IDs across pages and performs filtering of deprecated items before they are added to the DOM.
+- **Initial cache buildup**: On element startup, the connector performs paginated retrieval of all inventory items (50 records per page) for services, carriers, and resources. This process continues until all pages have been retrieved. During cache buildup, the connector tracks entity IDs across pages and performs filtering of deprecated items before they are added to the DOM module.
 
 - **Periodic cache updates**: After initial buildup, the connector periodically polls for items updated in the last 24 hours (`updatedDaysAgo=0`) based on the configured Cache Update Frequency. For services, cleanup of non-operational services runs every time data are polled after the initial cache buildup is completed.
 
