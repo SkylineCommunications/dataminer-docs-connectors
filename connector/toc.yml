@@ -1160,6 +1160,11 @@
     items:
     - name: AvL Technologies AAQ Controller Technical
       topicUid: Connector_help_AvL_Technologies_AAQ_Controller_Technical
+  - name: AvL Technologies Intelligent Terminal Controller Explorer
+    topicUid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer
+    items:
+    - name: AvL Technologies Intelligent Terminal Controller Explorer Technical
+      topicUid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer_Technical
 - name: AVT
   items:
   - name: AVT MAGIC AD1 ETI
