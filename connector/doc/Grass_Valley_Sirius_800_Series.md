@@ -27,9 +27,9 @@ SNMP Settings:
 
 #### IP Connection
 
-  Type: UDP.
-  IP address/host: amy.
-  Port: 514.
+  Type: "UDP/IP".
+  IP address/host: "any".
+  Port: "514".
 
 ### Initialization
 
