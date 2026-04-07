@@ -69,7 +69,7 @@ The connector operates in two modes:
 
 - **Entity ID**: Uses `carrier.ExternalId` as the unique identifier.
 - **Deduplication**: Filters out carriers with null/empty external IDs and removes duplicates.
-- **Cleanup Logic**: Filters out deprecated carriers before the data has been added to the DOM.
+- **Cleanup Logic**: Filters out deprecated carriers before the data is added to the DOM module.
 - **Field Mapping**:
   - Basic fields: ID, Name, Operational Status
   - Location fields: Gateway, Terminal
@@ -82,7 +82,7 @@ The connector operates in two modes:
 - **Entity ID**: Uses `resource.Id` as the unique identifier.
 - **Type Filtering**: Excludes the following resource types before DOM processing: Card, BandwidthSegment, LogicalPort, Multicast, Slot, Port, Circuit
 - **Status Preservation**: For modem resources, preserves existing operational status during updates to maintain continuity.
-- **Cleanup Logic**: Filters out deprecated resources before the data has been added to the DOM.
+- **Cleanup Logic**: Filters out deprecated resources before the data is added to the DOM module.
 - **Field Mapping**:
   - Basic fields: ID, Name, Description, Status (preserved for modems)
   - Resource Specification: Type and specification details
@@ -138,7 +138,7 @@ The connector implements a two-phase approach:
 - **Duplicate IDs**: The first occurrence is kept; duplicates are logged and skipped.
 - **Batch Processing**: DOM operations are batched (100 instances per batch) for optimal performance.
 - **Failure Tracking**: Failed operations are logged with success/failure counts.
-- **SNOW Timeouts**: As the SNOW API sometimes returns 504 Gateway Timeout for specific pages during initial cache buildup, those pages are skipped and pagination continues with the next page. Other error responses (e.g. 502 Bad Gateway) advance to the next type in the poll flow instead.
+- **SNOW Timeouts**: As the SNOW API sometimes returns a 504 Gateway Timeout for specific pages during initial cache buildup, those pages are skipped, and pagination continues with the next page. Other error responses (e.g., 502 Bad Gateway) advance to the next type in the poll flow instead.
 
 ## Notes
 
