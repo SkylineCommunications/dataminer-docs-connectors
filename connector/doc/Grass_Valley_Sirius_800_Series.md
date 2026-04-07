@@ -4,27 +4,8 @@ uid: Connector_help_Grass_Valley_Sirius_800_Series
 
 # Grass Valley Sirius 800 Series
 
-The Grass Valley Sirius 800 Series products are hybrid video, audio, IP and 12G-SDI routers with integrated multi-viewers and four chassis options, from 288x288 to 1152x1152 I/O interfaces.
-
 ## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Unknown                |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+The Grass Valley Sirius 800 Series products are hybrid video, audio, IP and 12G-SDI routers with integrated multi-viewers and four chassis options, from 288x288 to 1152x1152 I/O interfaces.
 
 ## Configuration
 
@@ -44,6 +25,12 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
+#### IP Connection
+
+  Type: "UDP/IP".
+  IP address/host: "any".
+  Port: "514".
+
 ### Initialization
 
 To use this element, you need to configure the matrix level monitored by the element and the primary and secondary polling IPs.
@@ -60,3 +47,4 @@ The element created with this connector consists of the following data pages:
 - **Routing**: Displays the **Inputs** and **Outputs** tables of the matrix.
 - **Controller**: Displays the current device controller(s) status.
 - **Alarms**: Contains a table where the device alarm events are logged.
+- **Syslog**: Displays configuration parameters for Syslog messages parsing and also displays incoming messages.
