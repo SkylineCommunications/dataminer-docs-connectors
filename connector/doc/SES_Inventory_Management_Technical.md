@@ -21,8 +21,8 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the SES inventory management API endpoint.
-- **IP port**: The IP port of the destination (default: _443_).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify _BypassProxy_.
+- **IP port**: The IP port of the destination (default: *443*).
+- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
 ### Initialization
 
