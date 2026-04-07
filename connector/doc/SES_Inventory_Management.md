@@ -40,7 +40,7 @@ Data is stored [DataMiner Object Models (DOM)](https://aka.dataminer.services/DO
 
 ### Resource Lifecycle Management
 
-**Challenge**: Network teams need to track resource status changes while preserving operational context (e.g. modem status during updates).
+**Challenge**: Network teams need to track resource status changes while preserving operational context (e.g., modem status during updates).
 
 **Solution**: The connector implements intelligent update logic that preserves critical operational states (like modem status) during resource updates from the API.
 
