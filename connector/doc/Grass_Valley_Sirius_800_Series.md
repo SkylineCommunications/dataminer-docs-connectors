@@ -4,32 +4,8 @@ uid: Connector_help_Grass_Valley_Sirius_800_Series
 
 # Grass Valley Sirius 800 Series
 
-The Grass Valley Sirius 800 Series products are hybrid video, audio, IP and 12G-SDI routers with integrated multi-viewers and four chassis options, from 288x288 to 1152x1152 I/O interfaces.
-
 ## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
-| 1.0.1.x [SLC Main]   | Added Smart-Serial connection  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Unknown                |
-| 1.0.1.x   | Unknown                |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
-
-## Configuration
+The Grass Valley Sirius 800 Series products are hybrid video, audio, IP and 12G-SDI routers with integrated multi-viewers and four chassis options, from 288x288 to 1152x1152 I/O interfaces.
 
 ### Connections
 
