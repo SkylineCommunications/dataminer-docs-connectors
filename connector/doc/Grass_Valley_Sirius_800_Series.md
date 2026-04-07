@@ -12,19 +12,22 @@ The Grass Valley Sirius 800 Series products are hybrid video, audio, IP and 12G-
 
 | Range                | Key Features     | Based on     | System Impact     |
 |----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+| 1.0.0.x   | Initial version  | -            | -                 |
+| 1.0.1.x [SLC Main]   | Added Smart-Serial connection  | -            | -                 |
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | Unknown                |
+| 1.0.1.x   | Unknown                |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -44,6 +47,12 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
+#### IP Connection
+
+  Type: UDP.
+  IP address/host: amy.
+  Port: 514.
+
 ### Initialization
 
 To use this element, you need to configure the matrix level monitored by the element and the primary and secondary polling IPs.
@@ -60,3 +69,4 @@ The element created with this connector consists of the following data pages:
 - **Routing**: Displays the **Inputs** and **Outputs** tables of the matrix.
 - **Controller**: Displays the current device controller(s) status.
 - **Alarms**: Contains a table where the device alarm events are logged.
+- **Syslog**: Displays configuration parameters for Syslog messages parsing and also displays incoming messages.
