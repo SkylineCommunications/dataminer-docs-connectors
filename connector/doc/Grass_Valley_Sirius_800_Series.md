@@ -7,6 +7,8 @@ uid: Connector_help_Grass_Valley_Sirius_800_Series
 ## About
 The Grass Valley Sirius 800 Series products are hybrid video, audio, IP and 12G-SDI routers with integrated multi-viewers and four chassis options, from 288x288 to 1152x1152 I/O interfaces.
 
+## Configuration
+
 ### Connections
 
 #### SNMP Main Connection
