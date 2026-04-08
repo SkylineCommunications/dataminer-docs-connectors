@@ -23,7 +23,7 @@ The connector uses the following APIs:
 
 This connector uses three HTTP connections.
 
-#### HTTP Connection 1, 2, and 3
+#### HTTP Connection 1 and 2
 
 These are used to communicate with the Newtec Dialog Restful Standard API. The following input is required during element creation:
 
@@ -31,7 +31,12 @@ These are used to communicate with the Newtec Dialog Restful Standard API. The f
 - **IP port**: *80* (default connection 1) and *8086* (default connection 2 and 3)
 - **Device address**: *BypassProxy*
 
-For connection 2, select the checkbox *Skip SSL/TLS certificate verification* in case this verification is not supported for your setup.
+#### SNMP Connection
+
+These are used for the ping feature. The following input is required during element creation:
+
+- **IP address/host**: The IP of the Newtec Central NMS.
+- **Port number**: *161*
 
 ### Configuration of Main and Backup CNMS
 
