@@ -66,6 +66,7 @@ The **General** page provides operational visibility on ticket management:
   - **Service Problem ID**: Corresponding service problem ID in the SNOW system.
   - **Service Problem Incident Number**: Human-readable incident number for reference.
   - **Service Problem Incident Link**: Direct URL link to the service problem in the SNOW interface.
+  - **Creation Status**: Tracks the ticket's SNOW creation lifecycle (`None`, `Buffered`, `Created`). Set to *Buffered* when the ticket is received and awaiting SNOW creation, *Created* when confirmed by SNOW, and reset to *None* on failure for retry.
 
 The table supports filtering, sorting, and pagination (25 rows per page), with partial loading for performance optimization.
 
@@ -79,13 +80,24 @@ The **Configuration** page contains all configurable parameters for connector op
 - **Username**: Text field for API authentication username.
 - **Password**: Masked password field for API authentication.
 
+### Ticket Creation Subscription
+
+The connector subscribes to the DataMiner SDM Ticketing module's `OnCreated` event at startup (when synchronization is enabled). When a new SES ticket is created anywhere in the DMS:
+
+1. The subscription callback fires in real time.
+2. The ticket is validated against the "SES" `TicketType` — non-SES tickets are ignored.
+3. The ticket is added to the Tickets Table with a **Buffered** creation status.
+4. The ticket ID is appended to the creation buffer, and SNOW service problem creation is triggered immediately.
+
+The subscription is automatically enabled or disabled based on the **Ticket Synchronization State** toggle. A periodic refresh (every hour, with a 10-minute minimum interval) ensures the internal `SLProtocol` reference and `TicketingApiHelper` connection remain valid. All table access during subscription callbacks is synchronized via a shared lock to prevent race conditions with the polling-based synchronization path.
+
 ### Synchronization Workflow
 
 The connector executes a comprehensive synchronization workflow at each interval:
 
 1. **Update table entries**: Retrieves active DataMiner tickets using the `TicketingApiHelper` (filtering by status: _New_, _Assigned_, _In Progress_, _On Hold_) and updates the local table with current ticket information.
 
-1. **Create new service problems**: Identifies tickets without an associated Service Problem ID and creates new service problems via POST requests to the `serviceProblem` endpoint using multithreaded processing (5 concurrent threads).
+1. **Create new service problems**: Identifies tickets in the creation buffer without an associated Service Problem ID and creates new service problems via POST requests to the `serviceProblem` endpoint using multithreaded processing (5 concurrent threads). Buffer access is synchronized with the ticket creation subscription using a shared lock to prevent race conditions. Each thread tracks its assigned ticket ID, and on failure the ticket's Creation Status is reset to *None* for retry.
 
 1. **Create new event problems**: Detects tickets with cleared Device IP Address fields and creates corresponding event problems via POST requests to the TMF642 alarm endpoint for device-level correlation.
 
@@ -137,6 +149,7 @@ The connector employs a sophisticated multithreading strategy for optimal perfor
 - **Request buffering**: Queues ticket creation requests when all threads are occupied.
 - **Connection pooling**: Utilizes 5 HTTP connections (default + 1001-1004) for parallel POST operations.
 - **Thread safety**: Implements proper locking and synchronization mechanisms to prevent race conditions.
+- **Thread tracking**: Each processing slot tracks the ticket ID it is handling via a `ConcurrentDictionary`. On failure, the tracked ticket ID is used to reset the Creation Status, ensuring the ticket is retried. The tracking entry is cleaned up in the `finally` block after thread release.
 
 ## Notes
 
@@ -170,6 +183,15 @@ The connector sets alarm properties on the originating alarms to establish bidir
 - **SNOW Ticket UID**: Links alarm to DataMiner ticket.
 - **SNOW Incident Number**: Provides human-readable incident reference.
 - **SNOW Incident Link**: Offers direct navigation to service problem.
+
+### Event-Based Ticket Ingestion
+
+The 1.1.0.x range introduces an event-based ticket ingestion path alongside the existing polling mechanism. Key implementation details:
+
+- **Subscription lifecycle**: Managed via dedicated dummy parameters (PIDs 6, 7, 8) for refresh, enable, and disable operations. The subscription is enabled at startup when synchronization is active and disabled when synchronization is turned off.
+- **Thread safety**: A `TableSynchronizationLock` ensures that the subscription callback and the polling-based synchronization do not concurrently modify the Tickets Table or creation buffer. Buffer reads and writes inside `BuildCreateServiceProblem` now operate under the same lock.
+- **Creation Status tracking**: A new column (PID 1006) tracks each ticket's state through the creation pipeline: `None` (0) → `Buffered` (1) → `Created` (2). On SNOW creation failure, the status is reset to `None` so the ticket is retried on the next synchronization cycle.
+- **Batched alarm property updates**: The `SetAlarmProperties` method replaces individual `SetAlarmProperty` calls, batching all property updates for a ticket (SNOW Ticket UID, Incident Number, Incident Link) into a single `SendMessages` SLNet call for improved performance.
 
 ### Minimum DataMiner Version
 
