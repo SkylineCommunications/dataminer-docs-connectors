@@ -1160,6 +1160,11 @@
     items:
     - name: AvL Technologies AAQ Controller Technical
       topicUid: Connector_help_AvL_Technologies_AAQ_Controller_Technical
+  - name: AvL Technologies Intelligent Terminal Controller Explorer
+    topicUid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer
+    items:
+    - name: AvL Technologies Intelligent Terminal Controller Explorer Technical
+      topicUid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer_Technical
 - name: AVT
   items:
   - name: AVT MAGIC AD1 ETI
@@ -7693,6 +7698,13 @@
     topicUid: Connector_help_Pebble_Beach_Dolphin
   - name: Pebble Beach EMS
     topicUid: Connector_help_Pebble_Beach_EMS
+- name: Peplink
+  items:
+  - name: Peplink Balance 2500 EC
+    topicUid: Connector_help_Peplink_Balance_2500_EC
+    items:
+    - name: Peplink Balance 2500 EC Technical
+      topicUid: Connector_help_Peplink_Balance_2500_EC_Technical
 - name: PHABRIX
   items:
   - name: PHABRIX Sx TAG
