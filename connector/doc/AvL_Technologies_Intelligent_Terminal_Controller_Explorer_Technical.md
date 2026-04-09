@@ -6,7 +6,8 @@ uid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer_Te
 
 ## About
 
-The AvL Technologies Intelligent Terminal Controller (ITC) Explorer is a control system designed for satellite communication antennas. It manages antenna positioning, signal acquisition, and RF chain components such as receivers and modems. The device provides real-time telemetry, fault monitoring, and system diagnostics through a web-based interface and WebSocket communication, enabling precise control and reliable operation of satellite terminals in both fixed and mobile environments.
+The AvL Technologies Intelligent Terminal Controller Explorer is a control system designed for satellite communication antennas. It manages antenna positioning, signal acquisition, and RF chain components such as receivers and modems. The device provides real-time telemetry, fault monitoring, and system diagnostics through a web-based interface and WebSocket communication, enabling precise control and reliable operation of satellite terminals in both fixed and mobile environments.
+
 This connector integrates the AvL Technologies Intelligent Terminal Controller (ITC) Explorer into DataMiner using an HTTP connection with WebSocket-based communication for real-time data exchange.
 
 ## Configuration
@@ -20,16 +21,15 @@ This connector uses an HTTP connection combined with WebSocket communication and
 HTTP CONNECTION:
 
 - **IP address/host**: The IP address or hostname of the ITC Explorer device.
-- **IP port**: The port used by the web interface (typically 80 or 443).
+- **IP port**: The port used by the web interface (typically *80* or *443*).
 - **Bus address**: Not required.
 
 ### Initialization
 
 After element creation:
 
-- Configure authentication credentials (username and password).
-- Verify that the WebSocket connection status is established.
-- Ensure the device is reachable and responding.
+1. Configure authentication credentials (username and password).
+1. Verify that the WebSocket connection is established.
 
 ### Web Interface
 
@@ -37,11 +37,9 @@ The web interface is only accessible when the client machine has network access 
 
 ### How to Use
 
-The connector organizes data across multiple pages:
-
 #### General Page
 
-Provides high-level system and antenna information:
+This page provides high-level system and antenna information:
 
 - Active Signal Source
 - Antenna Name
@@ -59,28 +57,19 @@ Provides high-level system and antenna information:
 
 #### Authentication Page
 
-Handles connection and login status:
-
-- Username
-- Password
-- Login Status
-- WebSocket Status
+On this page, you can specify the username and password for the WebSocket connection and view the login and connection status.
 
 #### Alarms Page
 
-Displays system faults and warnings:
+This page displays system faults and warnings:
 
 - Fault Summary
 - Warning Summary
-- Detailed reasons for:
-  - Azimuth motor
-  - Elevation motor
-  - Polarization motor
-  - Transmit modules
+- Detailed reasons for Azimuth motor, Elevation motor, Polarization motor, and Transmit modules
 
 #### Receiver Page
 
-Monitors multiple receiver types:
+On this page, you can monitor multiple receiver types:
 
 - AVL Receiver:
   - Fault status and reason
@@ -101,7 +90,7 @@ Monitors multiple receiver types:
 
 #### Modems Page
 
-Provides modem-related information:
+This page provides modem-related information:
 
 - Power Modem:
   - Fault status
@@ -123,7 +112,7 @@ Provides modem-related information:
 
 #### License Information
 
-Displays license status and version details for:
+This page displays license status and version details for:
 
 - AHRS
 - Geo acquisition

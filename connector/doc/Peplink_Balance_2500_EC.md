@@ -10,15 +10,15 @@ The Peplink Balance 2500 EC connector enables comprehensive monitoring of enterp
 
 ## Key Features
 
-- **Dual Protocol Support (HTTP & SNMP)**: Combines API-level access with SNMP polling for reliable and flexible monitoring.
+- **Dual protocol support (HTTP & SNMP)**: Combines API-level access with SNMP polling for reliable and flexible monitoring.
 
-- **System Health Monitoring**: Tracks uptime, memory usage, firmware versions, and traffic statistics.
+- **System health monitoring**: Tracks uptime, memory usage, firmware versions, and traffic statistics.
 
-- **WAN Connectivity Overview**: Displays detailed WAN interface status, IP configuration, and traffic metrics.
+- **WAN connectivity overview**: Displays detailed WAN interface status, IP configuration, and traffic metrics.
 
-- **Client Activity Tracking**: Monitors connected clients including bandwidth usage, activity, and connection type.
+- **Client activity tracking**: Monitors connected clients including bandwidth usage, activity, and connection type.
 
-- **Authentication Monitoring**: Provides visibility into login and connection status.
+- **Authentication monitoring**: Provides visibility into login and connection status.
 
 ## Use Cases
 
@@ -50,7 +50,6 @@ The Peplink Balance 2500 EC connector enables comprehensive monitoring of enterp
 
 ### Prerequisites
 
-- **Network connectivity** to the device via HTTP and SNMP.
 - **Valid credentials** for HTTP authentication.
 - **SNMP configuration** enabled on the device.
 

@@ -6,7 +6,7 @@ uid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer
 
 ## About
 
-The AvL Technologies Intelligent Terminal Controller (ITC) Explorer connector enables seamless monitoring and management of satellite communication terminals via HTTP and WebSocket communication. It provides real-time visibility into antenna positioning, signal metrics, modem performance, alarms, and licensing information, allowing operators to maintain optimal system performance and quickly respond to issues.
+The AvL Technologies Intelligent Terminal Controller Explorer connector enables seamless monitoring and management of satellite communication terminals via HTTP and WebSocket communication. It provides real-time visibility into antenna positioning, signal metrics, modem performance, alarms, and licensing information, allowing operators to maintain optimal system performance and to quickly respond to issues.
 
 ## Key Features
 
@@ -49,8 +49,6 @@ The AvL Technologies Intelligent Terminal Controller (ITC) Explorer connector en
 ## Technical Reference
 
 ### Prerequisites
-
-- **Network connectivity** is required to access the device via HTTP/WebSocket.
 
 - **Valid credentials** are required for authentication.
 

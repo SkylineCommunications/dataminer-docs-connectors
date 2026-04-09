@@ -6,7 +6,7 @@ uid: Connector_help_Peplink_Balance_2500_EC_Technical
 
 ## About
 
-This connector integrates the Peplink Balance 2500 EC device into DataMiner using both HTTP and SNMP communication. It provides monitoring of system performance, WAN connectivity, and client activity.
+This connector integrates the Peplink Balance 2500 EC device into DataMiner using both HTTP and SNMP communication. It monitors system performance, WAN connectivity, and client activity.
 
 ## Configuration
 
@@ -14,16 +14,16 @@ This connector integrates the Peplink Balance 2500 EC device into DataMiner usin
 
 #### HTTP Connection – Peplink API
 
-This connector uses an HTTP and SNMP connections and requires the following input during element creation:
+This connector uses an HTTP connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
 - **IP address/host**: The IP address or hostname of the device.
-- **IP port**: The web interface port (typically 80 or 443).
+- **IP port**: The web interface port (typically *80* or *443*).
 
 #### SNMP Connection – Peplink SNMP
 
-This connector uses SNMP and requires the following input:
+This connector also uses an SNMP connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
@@ -31,7 +31,7 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port number**: Default 161.
+- **Port number**: Default: *161*.
 - **Get community string**: Typically *public*.
 - **Set community string**: Typically *public*.
 
@@ -39,66 +39,60 @@ SNMP Settings:
 
 After element creation:
 
-- Configure username and password.
-- Verify HTTP login status.
-- Ensure SNMP connectivity is operational.
+1. Configure username and password.
+1. Verify HTTP login status.
+1. Ensure SNMP connectivity is operational.
 
 ## How to Use
 
-The connector organizes data into multiple pages:
-
 ### General Page
 
-Provides system-level information:
+This page provides system-level information:
 
-- Firmware Version (Primary and Secondary)  
-- System Description  
-- Uptime  
-- Device Name  
-- TX Since Last Reboot  
-- RX Since Last Reboot  
-- TX Since Installation  
-- RX Since Installation  
-- Device Total Memory  
-- Device Memory Usage  
-- Memory Usage (%)  
+- Firmware Version (Primary and Secondary)
+- System Description
+- Uptime
+- Device Name
+- TX Since Last Reboot
+- RX Since Last Reboot
+- TX Since Installation
+- RX Since Installation
+- Device Total Memory
+- Device Memory Usage
+- Memory Usage (%)
 
 ### Authentication Page
 
-Displays authentication status:
-
-- Username  
-- Password  
-- Login Status  
+On this page, you can specify the username and password for the HTTP connection and view the login status.
 
 ### WAN Page
 
-Displays WAN connections in a table:
+This page displays the WAN connections in a table, with the following information:
 
-- Instance  
-- Interface Name  
-- Enabled/Disabled  
-- Status Message  
-- IP Address  
-- IP Method  
-- Gateway  
-- DNS Server  
-- Type  
-- RX  
-- TX  
+- Instance
+- Interface Name
+- Enabled/Disabled
+- Status Message
+- IP Address
+- IP Method
+- Gateway
+- DNS Server
+- Type
+- RX
+- TX
 
 ### Clients Page
 
-Displays connected clients:
+This page displays the following information for the connected clients:
 
-- Instance  
-- IP Address  
-- Connection Type  
-- Name  
-- MAC Address  
-- Activity  
-- Download Speed  
-- Upload Speed  
+- Instance
+- IP Address
+- Connection Type
+- Name
+- MAC Address
+- Activity
+- Download Speed
+- Upload Speed
 
 ## Notes
 
