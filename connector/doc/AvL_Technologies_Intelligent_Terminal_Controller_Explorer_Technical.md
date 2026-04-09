@@ -5,7 +5,6 @@ uid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer_Te
 # AvL Technologies Intelligent Terminal Controller Explorer
 
 ## About
-## About the Device
 
 The AvL Technologies Intelligent Terminal Controller (ITC) Explorer is a control system designed for satellite communication antennas. It manages antenna positioning, signal acquisition, and RF chain components such as receivers and modems. The device provides real-time telemetry, fault monitoring, and system diagnostics through a web-based interface and WebSocket communication, enabling precise control and reliable operation of satellite terminals in both fixed and mobile environments.
 This connector integrates the AvL Technologies Intelligent Terminal Controller (ITC) Explorer into DataMiner using an HTTP connection with WebSocket-based communication for real-time data exchange.
@@ -44,100 +43,97 @@ The connector organizes data across multiple pages:
 
 Provides high-level system and antenna information:
 
-- Active Signal Source  
-- Antenna Name  
-- Bandwidth Units  
-- Core Version  
-- Effective Isotropic Radiated Power (EIRP)  
-- Maximum Spectral Density  
-- Gain-to-Noise Ratio (G/T)  
-- Local Oscillator Frequency  
-- Reflector Size  
-- Azimuth, Elevation, Polarization  
-- BUC Transmit Frequency  
-- BUC Temperature  
-- Position  
+- Active Signal Source
+- Antenna Name
+- Bandwidth Units
+- Core Version
+- Effective Isotropic Radiated Power (EIRP)
+- Maximum Spectral Density
+- Gain-to-Noise Ratio (G/T)
+- Local Oscillator Frequency
+- Reflector Size
+- Azimuth, Elevation, Polarization
+- BUC Transmit Frequency
+- BUC Temperature
+- Position
 
 #### Authentication Page
 
 Handles connection and login status:
 
-- Username  
-- Password  
-- Login Status  
-- WebSocket Status  
+- Username
+- Password
+- Login Status
+- WebSocket Status
 
 #### Alarms Page
 
 Displays system faults and warnings:
 
-- Fault Summary  
-- Warning Summary  
+- Fault Summary
+- Warning Summary
 - Detailed reasons for:
-  - Azimuth motor  
-  - Elevation motor  
-  - Polarization motor  
-  - Transmit modules  
+  - Azimuth motor
+  - Elevation motor
+  - Polarization motor
+  - Transmit modules
 
 #### Receiver Page
 
 Monitors multiple receiver types:
 
 - AVL Receiver:
-  - Fault status and reason  
-  - Lock status  
-  - Frequency  
-  - Signal strength  
+  - Fault status and reason
+  - Lock status
+  - Frequency
+  - Signal strength
 
 - Virtual Receiver:
-  - Lock status  
-  - Frequency  
-  - Signal strength  
+  - Lock status
+  - Frequency
+  - Signal strength
 
 - Power Receiver:
-  - Fault status  
-  - Lock status  
-  - Frequency  
-  - Signal strength  
+  - Fault status
+  - Lock status
+  - Frequency
+  - Signal strength
 
 #### Modems Page
 
 Provides modem-related information:
 
 - Power Modem:
-  - Fault status  
-  - Lock status  
-  - Signal strength  
-  - Frequency  
-  - Manufacturer  
-  - Model  
-  - Serial number  
-  - Software revision  
+  - Fault status
+  - Lock status
+  - Signal strength
+  - Frequency
+  - Manufacturer
+  - Model
+  - Serial number
+  - Software revision
 
 - Direct Modem:
-  - Fault status  
-  - Lock status  
-  - Frequency  
-  - Signal strength  
-  - Manufacturer  
-  - Model  
+  - Fault status
+  - Lock status
+  - Frequency
+  - Signal strength
+  - Manufacturer
+  - Model
 
 #### License Information
 
 Displays license status and version details for:
 
-- AHRS  
-- Geo acquisition  
-- Generic motors  
-- O3b  
-- Peaking methods  
-- TLE package  
-- Web server  
-- Power receiver  
-- AVL receiver  
-
-### Interfaces
-
+- AHRS
+- Geo acquisition
+- Generic motors
+- O3b
+- Peaking methods
+- TLE package
+- Web server
+- Power receiver
+- AVL receiver
 
 ## Notes
 
