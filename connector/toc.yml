@@ -7707,6 +7707,13 @@
     topicUid: Connector_help_Pebble_Beach_Dolphin
   - name: Pebble Beach EMS
     topicUid: Connector_help_Pebble_Beach_EMS
+- name: Peplink
+  items:
+  - name: Peplink Balance 2500 EC
+    topicUid: Connector_help_Peplink_Balance_2500_EC
+    items:
+    - name: Peplink Balance 2500 EC Technical
+      topicUid: Connector_help_Peplink_Balance_2500_EC_Technical
 - name: PHABRIX
   items:
   - name: PHABRIX Sx TAG
