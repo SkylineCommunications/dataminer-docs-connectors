@@ -31,9 +31,11 @@ These are used to communicate with the Newtec Dialog Restful Standard API. The f
 - **IP port**: *80* (default connection 1) and *8086* (default connection 2 and 3)
 - **Device address**: *BypassProxy*
 
+For connection 2, select the checkbox *Skip SSL/TLS certificate verification* in case this verification is not supported for your setup.
+
 #### SNMP Connection
 
-These are used for the ping feature. The following input is required during element creation:
+An SNMP connection is used for the ping feature, requiring the following input during element creation:
 
 - **IP address/host**: The IP of the Newtec Central NMS.
 - **Port number**: *161*
