@@ -100,20 +100,6 @@ Displays connected clients:
 - Download Speed  
 - Upload Speed  
 
-## DataMiner Connectivity Framework
-
-This connector supports the usage of DCF.
-
-### Interfaces
-
-#### Dynamic Interfaces
-
-Physical dynamic interfaces:
-
-- WAN interfaces representing each WAN connection (in/out).
-- Client interfaces representing connected devices (in/out).
-
-
 ## Notes
 
 - HTTP is used for structured data retrieval and authentication.
