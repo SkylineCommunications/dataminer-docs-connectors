@@ -46,8 +46,6 @@ The RevGo BUC connector provides monitoring and management capabilities for RevG
 
 **Benefit**: Faster troubleshooting and resolution.
 
-## Technical Reference
-
 ### Prerequisites
 
 - **Network connectivity** to the device.
