@@ -44,7 +44,7 @@ The element created with this connector consists of the following data pages:
   Via the **Configurations** page button, you can configure connector polling settings such as the matrix level and the active polling IP.
 - **Matrix**: Displays the matrix.
 - **Router Control**: Displays the tables used by the connector to communicate with the Router Control application.
-- **Routing**: Displays the **Inputs** and **Outputs** tables of the matrix. Changing custom names for Source or Destination labels does not apply any changes to the actual device. This functionality only affects how labels are displayed in the Matrix on the Matrix page.
+- **Routing**: Displays the **Inputs** and **Outputs** tables of the matrix. Customizing the names for source or destination labels does not apply any changes to the actual device. This functionality only affects how labels are displayed in the matrix on the Matrix page.
 - **Controller**: Displays the current device controller(s) status.
 - **Alarms**: Contains a table where the device alarm events are logged.
 - **Syslog**: Displays configuration parameters for Syslog messages parsing and also displays incoming messages.
