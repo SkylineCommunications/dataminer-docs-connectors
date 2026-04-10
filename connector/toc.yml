@@ -7977,6 +7977,13 @@
   items:
   - name: Resolve Systems Resolve Platform
     topicUid: Connector_help_Resolve_Systems_Resolve_Platform
+- name: RevGo
+  items:
+  - name: RevGo BUC
+    topicUid: Connector_help_RevGo_BUC
+    items:
+    - name: RevGo BUC Technical
+      topicUid: Connector_help_RevGo_BUC_Technical
 - name: RF Design
   items:
   - name: RF Design FlexLink C2
