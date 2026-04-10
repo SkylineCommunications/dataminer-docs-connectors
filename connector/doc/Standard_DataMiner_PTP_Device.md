@@ -20,6 +20,7 @@ The following connectors are currently mediated with the latest version:
 - Generic Switch
 - Hirschmann - a Belden Brand MAR 1040
 - Imagine Communications Selenio Network Processor
+- Juniper Networks Manager
 - Lawo HD Core Ravenna
 - Lawo Power Core
 - Lawo V__matrix
