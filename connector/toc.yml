@@ -6023,6 +6023,11 @@
     items:
     - name: Media Links Xscend Manager Technical
       topicUid: Connector_help_Media_Links_Xscend_Manager_Technical
+  - name: Media Links MPU HDBNC
+    topicUid: Connector_help_Media_Links_MPU_HDBNC
+    items:
+    - name: Media Links MPU HDBNC Technical
+      topicUid: Connector_help_Media_Links_MPU_HDBNC_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
