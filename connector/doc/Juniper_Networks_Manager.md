@@ -49,7 +49,7 @@ The Juniper Networks Manager connector enables DataMiner to monitor and configur
 - **SNMP access** (v2 or v3 depending on range) is required for all monitoring functionality.
 - **SSH credentials** are required for interface state changes, backup, restore, and firmware upgrade operations.
 - **HTTP credentials** are required for polling PTP and API information.
-- **Network reachability** from the DataMiner Agent to the Juniper device is required for device communication over ports 22 (SSH), 161 (SNMP) and 80/443 (HTTP).
+- **Network reachability** from the DataMiner Agent to the Juniper device is required for device communication over ports 22 (SSH), 161 (SNMP) and 3000 for HTTP or 3443 for HTTPS.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Juniper_Networks_Manager_Technical).
