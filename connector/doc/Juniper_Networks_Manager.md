@@ -52,4 +52,4 @@ The Juniper Networks Manager connector enables DataMiner to monitor and configur
 - **Network reachability** from the DataMiner Agent to the Juniper device is required for device communication over ports 22 (SSH), 161 (SNMP) and 80/443 (HTTP).
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_Juniper_Networks_Manager).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Juniper_Networks_Manager_Technical).
