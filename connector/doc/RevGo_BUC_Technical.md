@@ -26,21 +26,11 @@ SNMP Settings:
 - **Get community string**: Typically *public*.
 - **Set community string**: Typically *private*.
 
-### Initialization
-
-After element creation:
-
-- Verify SNMP connectivity.
-- Ensure the correct community strings are configured.
-- Confirm that parameters are updating correctly.
-
 ## How to Use
-
-The connector organizes data into multiple pages:
 
 ### General Page
 
-Provides system and network information:
+This page provides system and network information:
 
 - Firmware Version
 - Hardware Version
@@ -56,7 +46,7 @@ Provides system and network information:
 
 ### Device Status Page
 
-Provides real-time operational metrics:
+This page provides real-time operational metrics:
 
 - Input Power
 - RF Power
@@ -71,11 +61,12 @@ Provides real-time operational metrics:
 - Device Clock Reference
 - ALC Offset
 - Redundancy Type
-- Device Restart Button
+
+The **Restart** button on this page triggers a device reboot. Use this button with caution.
 
 ### Alarms Page
 
-Displays alarm statuses:
+This page displays alarm status information:
 
 - PLL Alarm
 - Fans Alarm
@@ -87,7 +78,7 @@ Displays alarm statuses:
 
 ### Interface Setup Page
 
-Provides configuration-related parameters:
+This page contains configuration-related parameters:
 
 - LED State
 - Serial Port
@@ -95,11 +86,10 @@ Provides configuration-related parameters:
 
 ### Web Interface Page
 
-Provides direct access to the device’s web interface.
+This page provides direct access to the web interface of the device.
 
 ## Notes
 
 - SNMP must be enabled on the device.
 - RF-related parameters depend on active transmission conditions.
 - Alarm states should be monitored continuously for safe operation.
-- The restart button triggers a device reboot and should be used with caution.

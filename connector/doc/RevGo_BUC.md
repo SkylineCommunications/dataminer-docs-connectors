@@ -6,19 +6,19 @@ uid: Connector_help_RevGo_BUC
 
 ## About
 
-The RevGo BUC connector provides monitoring and management capabilities for RevGo Block Upconverter (BUC) device used in satellite communication systems. Using snmp communication, it delivers real-time insights into RF performance, device status, alarms, and configuration parameters, enabling reliable and efficient uplink operations.
+The RevGo BUC connector provides monitoring and management capabilities for RevGo Block Up-Converters (BUC) used in satellite communication systems. Using SNMP communication, it delivers real-time insights into RF performance, device status, alarms, and configuration parameters, enabling reliable and efficient uplink operations.
 
 ## Key Features
 
-- **RF Performance Monitoring**: Tracks key metrics such as RF power, gain, and input power.
+- **RF performance monitoring**: Tracks key metrics such as RF power, gain, and input power.
 
-- **Comprehensive Device Status**: Provides visibility into temperature, fan speeds, redundancy state, and ALC operation.
+- **Comprehensive device status information**: Provides visibility into temperature, fan speeds, redundancy state, and ALC operation.
 
-- **Alarm Management**: Detects and reports critical alarms including PLL, HPA, temperature, and RF issues.
+- **Alarm management**: Detects and reports critical alarms including PLL, HPA, temperature, and RF issues.
 
-- **Network Configuration Visibility**: Displays IP configuration and system identification details.
+- **Network configuration visibility**: Displays IP configuration and system identification details.
 
-- **Web Interface Access**: Direct access to the device’s web interface for advanced configuration.
+- **Web interface access**: Allows direct access to the device's web interface for advanced configuration.
 
 ## Use Cases
 
