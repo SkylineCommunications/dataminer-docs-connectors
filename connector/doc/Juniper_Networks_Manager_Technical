@@ -2,7 +2,7 @@
 uid: Connector_help_Juniper_Networks_Manager_Technical
 ---
 
-# Juniper Networks Manager - Technical Documentation
+# Juniper Networks Manager
 
 ## About
 
@@ -40,13 +40,11 @@ From version 1.0.10.x onwards, an HTTP connection is available and requires the 
 HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the device.
-- **IP port**: The IP port of the device.
-
-The **User Name** and **Password** for the HTTP connection can be filled out directly on the **General** page.
+- **IP port**: The IP port of the device (default: *3000*).
 
 ### Initialization
 
-For SSH communication, a **User Name** and **Password** must be configured. Go to the **General** page and click the **Credentials** page button to set these.
+For SSH and HTTP communication, a **User Name** and **Password** must be configured. SSH credentials can be configured on the **SSH Settings** pagebutton under the **General**, while **HTTP Credentials** are configured under the page buttons.
 
 By default, all tables are polled. To reduce polling:
 
@@ -56,7 +54,7 @@ By default, all tables are polled. To reduce polling:
 
 Version range 1.0.2.x includes additional polling and measurement controls:
 
-- **Polling Config** (General page): The **Polling Configuration Table** allows configuring the polling speed per table. Setting **PCT - Polling Time** to *disabled (-1)* stops polling for those parameters. A **Refresh** button allows manual polling. In range 1.0.9.x, each row has an individual toggle; the column initially shows *Not Initialized* and defaults to a 5-minute polling interval when enabled.
+- **Polling Config** (General page): The **Polling Configuration Table** allows configuring the polling speed per table. Setting **PCT - Polling Time** to *disabled (-1)* stops polling for those parameters. A **Refresh** button allows manual polling. In range 1.0.9.x, each row has an individual toggle and defaults to a 5-minute polling interval when enabled.
 
 - **Measurement Config** (Interfaces page): The **Measurement Configuration Table** allows disabling individual interfaces to remove them from polling and all interface tables. The **Enable/Disable Interface [Description Filter]** field applies bulk enable/disable based on a string match. The **Disable All**, **Enable All**, and **Enable Oper. Up** buttons allow bulk actions. The **MCT - Filter Table** (via right-click to add entries) auto-enables matched interfaces and disables all others; manual editing of the Measurement Configuration Table is only available when this filter table is empty.
 
