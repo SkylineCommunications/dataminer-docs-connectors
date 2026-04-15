@@ -7195,6 +7195,11 @@
     items:
     - name: Nokia 1830 PSD Technical
       topicUid: Connector_help_Nokia_1830_PSD_Technical
+  - name: Nokia 7750 SR VSA
+    topicUid: Connector_help_Nokia_7750_SR_VSA
+    items:
+    - name: Nokia 7750 SR VSA Technical
+      topicUid: Connector_help_Nokia_7750_SR_VSA_Technical
   - name: Nokia Altiplano Collector
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
