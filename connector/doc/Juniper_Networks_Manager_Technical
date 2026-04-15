@@ -42,6 +42,8 @@ HTTP CONNECTION:
 - **IP address/host**: The polling IP or URL of the device.
 - **IP port**: The IP port of the device (default: *3000*).
 
+**Note**: For HTTPS, the default configured Juniper port is 3443 and will have to be updated in the connector settings.
+
 ### Initialization
 
 For SSH and HTTP communication, a **User Name** and **Password** must be configured. SSH credentials can be configured on the **SSH Settings** pagebutton under the **General**, while **HTTP Credentials** are configured under the page buttons.
