@@ -6756,7 +6756,7 @@
   items:
   - name: ND Satcom HPA 3412A
     topicUid: Connector_help_ND_Satcom_HPA_3412A
-  - name: ND Satcom RCU 6000  
+  - name: ND Satcom RCU 6000
     topicUid: Connector_help_ND_Satcom_RCU_6000
   - name: ND Satcom RCU5000
     topicUid: Connector_help_ND_Satcom_RCU5000
