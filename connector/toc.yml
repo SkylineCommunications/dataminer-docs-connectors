@@ -5614,6 +5614,9 @@
     topicUid: Connector_help_Juniper_Networks_EX_Series
   - name: Juniper Networks Manager
     topicUid: Connector_help_Juniper_Networks_Manager
+    items:
+    - name: Juniper Networks Manager Technical
+      topicUid: Connector_help_Juniper_Networks_Manager_Technical
   - name: Juniper Networks Manager CIN Platform
     topicUid: Connector_help_Juniper_Networks_Manager_CIN_Platform
   - name: Juniper Networks MX Series
