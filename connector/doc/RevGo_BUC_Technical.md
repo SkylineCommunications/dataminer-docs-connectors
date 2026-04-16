@@ -92,4 +92,3 @@ This page provides direct access to the web interface of the device.
 
 - SNMP must be enabled on the device.
 - RF-related parameters depend on active transmission conditions.
-- Alarm states should be monitored continuously for safe operation.

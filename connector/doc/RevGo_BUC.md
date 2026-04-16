@@ -48,8 +48,7 @@ The RevGo BUC connector provides monitoring and management capabilities for RevG
 
 ### Prerequisites
 
-- **Network connectivity** to the device.
-- **Proper device configuration** to allow monitoring.
+**SNMP** must be enabled on the device.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_RevGo_BUC_Technical).
