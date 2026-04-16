@@ -4,29 +4,11 @@ uid: Connector_help_Stormshield_Network_Security_S-Series_Technical
 
 # Stormshield Network Security S-Series
 
+## About
+
 This connector is used to collect SNMP data from any **Stormshield Network Security S-Series** equipment.
 
 The **Stormshield Network Security S-Series** is a range of next-generation firewalls offering advanced threat protection, unified security features, and high performance. It supports scalable deployment, secure VPN connections, and centralized management.
-
-## About
-
-### Version Info
-
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
-
-### Product Info
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | 4.3.25             |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
