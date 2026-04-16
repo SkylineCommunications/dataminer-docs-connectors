@@ -44,7 +44,6 @@ The Nokia 7750 SR VSA connector provides monitoring capabilities for Video Servi
 ## Prerequisites
 
 - Nokia 7750 SR device with VSA (v-ISA) functionality enabled.
-- SNMP access configured with valid credentials.
 - ESA infrastructure deployed for video processing.
 
 > [!NOTE]
