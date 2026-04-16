@@ -8,7 +8,7 @@ uid: Connector_help_Media_Links_MPU_HDBNC_Technical
 
 The Media Links MPU (Media Processing Unit) with HD-BNC interfaces is a hot-swappable modular card designed for the Xscend IP Media Platform. It is used to process, transport, and convert high-density video signals between traditional baseband SDI formats and IP networks (SMPTE ST 2110/2022).
 
-The *Media Links MPU HDBNC* connector is used to monitor MPU modules installed in the Xscend chassis.
+This connector is used to monitor MPU modules installed in the Xscend chassis.
 
 ## Configuration
 
@@ -25,7 +25,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-Fot the connector to start polling data from the data source, you need to provide the user name and password credentials. In addition, the user needs to set the slot index of the MPU module on the *General* page.
+For the connector to start polling data from the data source, you need to provide the user name and password credentials. In addition, on the **General** page, you will need to set the slot index of the MPU module.
 
 ### Web Interface
 
@@ -33,4 +33,4 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-You can choose to display all alarms or only active alarms by setting the *Display Alarms* parameter on the *Alarms* page.
+By setting the **Display Alarms** parameter on the **Alarms** page, you can choose to display all alarms or only active alarms.
