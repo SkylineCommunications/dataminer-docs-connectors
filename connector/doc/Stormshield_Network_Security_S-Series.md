@@ -6,21 +6,21 @@ uid: Connector_help_Stormshield_Network_Security_S-Series
 
 ## About
 
-This connector is used to collect SNMP data from any **Stormshield Network Security S-Series** equipment.
+This connector is used to collect SNMP data from any Stormshield Network Security S-Series equipment.
 
-The **Stormshield Network Security S-Series** is a range of next-generation firewalls offering advanced threat protection, unified security features, and high performance. It supports scalable deployment, secure VPN connections, and centralized management.
+The Stormshield Network Security S-Series is a range of next-generation firewalls offering advanced threat protection, unified security features, and high performance. It supports scalable deployment, secure VPN connections, and centralized management.
 
 ## Key Features
 
-- **System Monitoring**: Including general information of the device itself, firewall health, services, QOS statistics...
+- **System monitoring**: Displays general information about the device itself, firewall health, services, QOS statistics, and more.
 
-- **Alarm Visualization**: Visual representation of the Alarms going in the system through an Alarms table.
+- **Alarm visualization**: Monitor all the alarms in the system via a dedicated table.
 
-- **Keep Track of your Configurations**: Many features are available, from Security Policies and VPN Policies to Host Packets Tracking and ASQ Statistics.
+- **Keep track of your configurations**: Many features are available, from security policies and VPN policies to host packets tracking and ASQ statistics.
 
-- **Configurable Data Polling**: Configurable data polling from the device depending on the user's needs.
+- **Configurable data polling**: Adjust the data polling from the device according to your needs.
 
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to out [technical information](xref:Connector_help_Stormshield_Network_Security_S-Series_Technical)
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Stormshield_Network_Security_S-Series_Technical)
