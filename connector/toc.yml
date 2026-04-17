@@ -9589,6 +9589,9 @@
   items:
   - name: Stormshield Network Security S-Series
     topicUid: Connector_help_Stormshield_Network_Security_S-Series
+    items:
+    - name: Stormshield Network Security S-Series Technical
+      topicUid: Connector_help_Stormshield_Network_Security_S-Series_Technical
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
