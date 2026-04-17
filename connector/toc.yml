@@ -5256,6 +5256,9 @@
     topicUid: Connector_help_Imagine_Communications_Selenio_MDX2
   - name: Imagine Communications Selenio Network Processor
     topicUid: Connector_help_Imagine_Communications_Selenio_Network_Processor
+    items:
+      - name: Imagine Communications Selenio Network Processor Technical
+        topicUid: Connector_help_Imagine_Communications_Selenio_Network_Processor_Technical
   - name: Imagine Communications Selenio TCIP1
     topicUid: Connector_help_Imagine_Communications_Selenio_TCIP1
   - name: Imagine Communications Selenio UCIP1

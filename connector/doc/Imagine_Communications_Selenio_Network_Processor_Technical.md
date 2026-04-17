@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Imagine_Communications_Selenio_Network_Processor
+uid: Connector_help_Imagine_Communications_Selenio_Network_Processor_Technical
 ---
 
 # Imagine Communications Selenio Network Processor
