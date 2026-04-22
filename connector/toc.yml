@@ -6031,6 +6031,11 @@
     items:
     - name: Media Links MPU HDBNC Technical
       topicUid: Connector_help_Media_Links_MPU_HDBNC_Technical
+  - name: Media Links Trunk
+    topicUid: Connector_help_Media_Links_Trunk
+    items:
+    - name: Media Links Trunk Technical
+      topicUid: Connector_help_Media_Links_Trunk_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
