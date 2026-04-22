@@ -4,77 +4,56 @@ uid: Connector_help_EEG_Alta-2110_Caption_Encoder
 
 # EEG Alta-2110 Caption Encoder
 
-This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2110 suite of standards. The iCap Alta software is packaged on a virtual machine for placement inside a customer video facility. The virtual machine "guest" operating system is 64-bit Debian 8 Linux. The VM can be hosted on VirtualBox, Cisco, or Microsoft HyperV controllers. The default distribution format is an "OVA" file, though alternative disk image formats can often be provided on request. Once the iCap Alta virtual machine is running and reachable on a local network, all interaction with the software can be performed over HTTP on the network, as a web service, or in a browser.
-
 ## About
 
-### Version Info
+The EEG Alta-2110 connector allows for the comprehensive monitoring and management of the EEG Alta-2110 captioning system. This solution is specifically designed to integrate with the SMPTE 2110 suite of standards, bridging the gap between cloud-based captioning services and local IP-based video production environments. By interfacing with the iCap Alta software via HTTP, this connector provides a centralized window into virtualized captioning workflows.
 
-| Range              | Key Features                                           | Based on | System Impact |
-|--------------------|--------------------------------------------------------|----------|---------------|
-| 1.0.0.x            | Initial version.                                       | -        | -             |
-| 1.0.1.x            | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5  | -             |
-| 1.1.0.x [SLC Main] | Fixed iCap Status parameter.                           | 1.0.1.5  | -             |
+## Key Features
 
-### Product Info
+- **Virtualized SMPTE 2110 Integration**: Seamlessly monitor software-defined captioning tailored for 2110-30 (audio) and 2110-40 (ancillary) media streams.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.1.0.x   | 3.50.0                 |
+- **Automated NMOS Support**: Full visibility and control over NMOS IS-04 and IS-05 protocols for automatic registration and connection management of media streams.
 
-### System Info
+- **Dynamic Instance Management**: Easily create, edit, and track multiple encoder instances, each with unique stream, iCap, and Telnet settings.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+- **Flexible Output Formatting**: Switch between SMPTE 334 CEA-708 VANC and OP 47 EBU Teletext packets to meet diverse regional broadcasting requirements.
 
-## Configuration
+- **Comprehensive Health Monitoring**: Track real-time iCap connection status, PTP grandmaster synchronization, and detailed logging for every encoder instance.
 
-### Connections
+## Use Cases
 
-#### HTTP Main Connection
+### IP-Based Closed Captioning Workflow
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Challenge**: Transitioning from traditional SDI hardware to an IP-centric SMPTE 2110 environment while maintaining reliable closed captioning.
 
-HTTP CONNECTION:
+**Solution**: The EEG Alta-2110 connector integrates the virtualized encoder into the management platform, allowing operators to route 2110-40 ancillary data and manage cloud-based captioning through a single interface.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *80*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Benefit**: Reduces physical hardware footprint and simplifies the transition to ST 2110 infrastructure.
 
-## How to use
+### Multi-Language International Broadcasting
 
-The **General** page of this connector contains the username and password to access the device.
+**Challenge**: Managing different captioning standards (CEA-708 vs. OP 47) and multiple languages across various global regions.
 
-The **Instance Settings** page contains a table with basic information about the existing instances, as well as specific logs for every instance. This page has multiple subpages, which can among others be used to add new instances or edit existing instances:
+**Solution**: Use the connector to configure DVB Text settings and toggle output formats per instance, supporting up to 6 language services and specific Teletext magazine/page numbers.
 
-- **New Instance Settings**: Allows you to create a new instance with the necessary basic information.
+**Benefit**: Streamlines global content distribution by allowing rapid reconfiguration of output standards via software.
 
-- **Stream Settings:** Allows you to edit the stream settings for existing instances.
+### Legacy Bridge Integration
 
-  - **Device Label:** The name to be used for this instance within the Alta interface and as a device label in NMOS registration.
-  - **Use NMOS IS-05:** Select this option to make this device responsive to changes in the input and output parameters made by NMOS IS-05 HTTP requests.
-  - **ANC Multicast Destination:** The UDP unicast or multicast address and port to be used for the 2110-40 output transmissions. This parameter may be changed from its initial value by NMOS IS-05 once the device is active.
-  - **Audio Multicast Source:** The UDP port to listen to or the multicast address and port to receive a 2110-30 audio stream for iCap reference. This parameter may be changed from its initial value by NMOS IS-05 once the device is active.
-  - **Audio Sample Frequency, Sample Size, and Number of Channels:** Required information (as from an SDP file) on the sample rate and the number of channels expected from the audio input stream. These parameters may be changed from their initial value by NMOS IS-05 once the device is active.
-  - **ANC Multicast Source:** The UDP port to listen to or the multicast address and port to receive a 2110-40 ancillary stream as a source of upstream captioning. Upstream captioning from this stream will be multiplexed with any new captioning that is locally inserted according to priority rules as documented in EEG Smart Encoder protocol documentation. This parameter may be changed from its initial value by NMOS IS-05 once the device is active.
-  - **Media Network Interface:** If multiple NICs are available on the Alta VM, specify one of the NIC IP addresses in this field to control which interface is used to send and listen for media multicasts associated with this instance.
+**Challenge**: The need to synchronize modern IP-based captioning data with legacy SDI encoders or older downstream devices.
 
-- **iCap Settings**: Allows you to edit the iCap settings for existing instances.
+**Solution**: Leverage the Telnet Settings management to clone "CTRL+A" style caption data from an iCap IP connection and route it to legacy hardware.
 
-- **iCap Company, Username, and Password:** iCap account information will be provided to you by EEG with your purchase or demo or will be accessible from your company's admin account at [https://www.eegicap.com](https://www.eegicap.com/). Each iCap account has a company namespace, a username, and a password. This account will be used to allow unique identification of your stream by your contracted real-time captioner over iCap, so you must use a different username for each simultaneously operating Alta encoder instance. You do not need an iCap account to perform certain non-cloud functions such as caption bridging between input sources or SCTE-35 cue insertion.
+**Benefit**: Protects existing investments in SDI hardware while modernizing the core captioning workflow.
 
-- **Telnet Settings**: Allows you to edit the Telnet settings for existing instances.
+## Technical Reference
 
-- The Telnet Settings menu provides functionality to clone "CTRL+A" style caption data from the iCap connection over to a legacy SDI closed captioning encoder or other similar devices/systems. The IP address and port number of the receiving device must be provided, and if the receiving device requires a username and password to open a connection, fill in these fields as well. This is the sole output mode of the "Alta Bridge" license option.
+### Prerequisites
 
-- **Other Settings:** Allows you to edit the following other settings for existing instances:
+- **iCap Alta Virtual Machine** must be deployed on a supported host (VirtualBox, Cisco, or Microsoft Hyper-V).
+- **Network Connectivity** between the system and the Alta VM via HTTP (Default Port 80).
+- **iCap Account Credentials** (Company, Username, Password) are required for cloud-based captioning functionality.
+- **SMPTE 2059 PTP Grandmaster** is recommended for accurate video frame rate interpretation and VITC timecode generation.
 
-  - **Warnlevel:** This value can be set from 0-5 to control how much information is sent to the logs for this instance. Lower number settings may be more useful when debugging a problem but can make logs harder to read and increase resource usage per stream.
-  - **Caption Output Format:** Choose between SMPTE 334 CEA-708 VANC packets (DID/SDID 6101) and OP 47 EBU Teletext packets (DID/SDID 4302).
-  - **DVB Text Config:** If OP 47 Teletext output is used, specify how many languages to include by listing the language code and Teletext magazine and page number desired for each service. Up to 6 language services are supported.
-  - **Video Frame Rate:** This option allows you to force the selection of a specific frame rate for the interpretation of input and output 2110-40 ancillary streams. The default option relies on data from the SMPTE 2059 TLV transmitted by the current PTP grandmaster to obtain this information.
-  - **Send VITC:** Select this option to add VITC packets in DID/SDID 6060 into the output 2110-40 stream. The VITC time code is derived from the PTP grandmaster's signals as described in SMPTE 2059.
-  - **Test Captions:** Select this option to have a looping test message of single language scrolling captions created on the 2110-40 output, beginning when the instance is activated, and ending when a live captioner begins sending data to the instance. After a live captioner connects, the test caption message will not resume unless the instance is stopped and then restarted.
+> [!NOTE]
+> For detailed technical information regarding parameter IDs, polling cycles, and specific configuration steps, refer to our [technical documentation](xref:Connector_help_EEG_Alta-2110_Caption_Encoder_Technical).
