@@ -46,11 +46,11 @@ The Starlink Enterprise connector was previously known as the Starlink Telemetry
 
 ## Configuration
 
-Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered in a [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) element of which the name equals the **account name**. The name of the Starlink Enterprise element has to be specified there as well.
+Since the introduction of the Starlink API V2, credentials are required per account. These credentials have to be entered in a [Starlink Enterprise Account](xref:Connector_help_Starlink_Enterprise_Account) element of which the name equals **Starlink Account [account name]**. The name of the Starlink Enterprise element has to be specified there as well.
 
 If the Starlink Enterprise Account element is available with valid credentials but the tables of the Starlink Enterprise element are still empty after several minutes, please check the **Starlink Enterprise Element Name** parameter of the Starlink Enterprise Account element. The element log file will show the name of the data element it tried to reach.
 
-If changing one of the parameters does not seem to work (like topping up a service line), compare the name of the accounts on the Starlink web interface with the name of the Starlink Enterprise Account elements. The name of each Starlink Enterprise Account element has to match the account name for the parameter set logic to work.
+If changing one of the parameters does not seem to work (like topping up a service line), compare the name of the accounts on the Starlink web interface with the name of the Starlink Enterprise Account elements. The name of each Starlink Enterprise Account element has to be Starlink Account [account name] for the parameter set logic to work.
 
 ![Element Structure](~/connector/images/StarlinkEnterpriseElementStructure.png)
 

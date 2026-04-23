@@ -16,7 +16,7 @@ The Starlink Management API is used to activate, deactivate, and otherwise manag
 
 Elements that are created based on this connector do not show anything. This connector is designed for querying the Starlink API V2 only. A [Starlink Enterprise element](https://catalog.dataminer.services/details/d1dc1fae-0902-4cc3-9ae6-d1983d9596a3) is required on the DMS to make the polled information visible, and available for alarm monitoring and trending.
 
-Since the introduction of the Starlink API V2, credentials are needed per account. These credentials have to be entered in the Starlink Enterprise Account element. The name of the Starlink Enterprise Account element has to match the **account name**.
+Since the introduction of the Starlink API V2, credentials are needed per account. These credentials have to be entered in the Starlink Enterprise Account element. The name of the Starlink Enterprise Account element has to be **Starlink Account [account name]**.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
