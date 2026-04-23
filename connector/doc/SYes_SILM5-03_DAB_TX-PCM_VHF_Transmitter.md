@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_SYes_SILM5-03_DAB_TX-PCM
+uid: Connector_help_SYes_SILM5-03_DAB_TX-PCM_VHF_Transmitter
 ---
 
 # SYes SILM5-03 DAB TX-PCM VHF Transmitter
