@@ -6,6 +6,11 @@ uid: Connector_help_CISCO_Manager_CIN_Platform
 
 With the CISCO Manager CIN Platform it is possible to configure and monitor CISCO switches, for example, the CISCO Catalyst 3750. The CISCO Manager CIN Platform connector can retrieve information from different device types. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
+> [!NOTE]
+> This variant of the CISCO Manager is to be used with the [EPM D-DOCSIS solution](https://docs.dataminer.services/solutions/standard_solutions/EPM/EPM_D-DOCSIS/D-DOCSIS_architecture.html).
+>
+>If you would like the standalone variant, use the [CISCO Manager](https://catalog.dataminer.services/details/1418b934-6f38-4c73-b27e-f21667fb64b4) instead.
+
 ## About
 
 ### Version Info

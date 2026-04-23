@@ -6,6 +6,11 @@ uid: Connector_help_Juniper_Networks_Manager_CIN_Platform
 
 This is an SNMP-based connector used to monitor and configure the Juniper Networks Manager. It allows you to monitor and change the device settings. The connector also uses an SSH connection to change the interface state of some ports. The data collected is centralized within the connector and used by DataMiner EPM for aggregation actions.
 
+> [!NOTE]
+> This variant of the Juniper Networks Manager is to be used with the [EPM D-DOCSIS solution](https://docs.dataminer.services/solutions/standard_solutions/EPM/EPM_D-DOCSIS/D-DOCSIS_architecture.html).
+>
+>If you would like the standalone variant, use the [Juniper Networks Manager](https://catalog.dataminer.services/details/7cf35a6b-31e8-4c11-8991-591596a4d81b) instead.
+
 ## About
 
 ### Version Info
