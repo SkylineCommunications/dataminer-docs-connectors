@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Harmonic_NSG9000_40G_Technical
+uid: Connector_Harmonic_NSG9000_40G_Technical
 ---
 
 # Harmonic NSG9000 40G Technical
