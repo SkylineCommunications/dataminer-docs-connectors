@@ -6,7 +6,7 @@ uid: Connector_help_Media_Links_Trunk_Technical
 
 ## About
 
-The Media Links Xscend Trunk module is the interface module that connects a Media Links Xscend chassis to an IP media network. It acts as a high-density gateway, multiplexing signals from various media processing cards and transporting them across the network.
+The Media Links Xscend Trunk module is an interface module that connects a Media Links Xscend chassis to an IP media network. It acts as a high-density gateway, multiplexing signals from various media processing cards and transporting them across the network.
 
 This connector is used to monitor Trunk modules installed in the Xscend chassis.
 
@@ -25,7 +25,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-For the connector to start polling data from the data source, the user needs to provide the user name and password credentials. In addition, on the **General** page, the user will need to set the slot index of the Trunk module.
+For the connector to start polling data from the data source, you will need to provide the user name and password credentials. In addition, on the **General** page, you will need to set the slot index of the Trunk module.
 
 ### Web Interface
 
