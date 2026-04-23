@@ -34,13 +34,13 @@ This integration allows you to monitor and control **Imagine Communications Sele
 
 ### Prerequisites
 
-- **HTTPS connectivity**: DataMiner requires network access to the SNP Manager via HTTPS (default port 9089) to establish API communication.
+- **HTTPS connectivity**: DataMiner requires network access to the SNP Manager via HTTPS (default port 9089) to establish API communication. The IP address needs to have "https://" in front of it (ex: the IP "192.168.0.1" would have "https://192.168.0.1" inputted.)
 
-- **Web Socket connectivity**: Modern SNP systems use web socket connections (port 9089) for real-time status and configuration updates.
+- **Web Socket connectivity (Version 1.0.7.1 and above)**: The SNP uses web socket connections (port 9089) for real-time status and configuration updates.
 
-- **Valid credentials**: User authentication credentials are required to connect to the SNP Manager for monitoring and control operations.
+- **Serial Connection (Versions before 1.0.7.1)**: This connector uses a serial connection (port 4517) for real-time status and configuration updates.
+
+- **Valid credentials**: User authentication credentials are required to connect to the SNP Manager for monitoring and control operations. The "username" and "password" can be put on the "Security" page. 
 
 - **SNP Manager access**: The SNP must be managed by an SNP Manager system to enable API communication and remote monitoring capabilities.
 
-> [!NOTE]
-> For detailed technical information including version compatibility, connection parameters, and advanced configuration options, refer to our [technical documentation](xref:Connector_help_Imagine_Communications_Selenio_Network_Processor_Technical).
