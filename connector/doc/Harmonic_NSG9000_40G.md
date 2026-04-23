@@ -25,4 +25,4 @@ The **Harmonic NSG9000 40G** is an HTTP connector designed to provide comprehens
 - **CAS and Encryption**: provides features to manage DVB (Session-based and Tier-based) and Privacy Mode settings, alongside an ECM Group Table for managing encryption groups.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_Harmonic_NSG9000_40G_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Harmonic_NSG9000_40G_Technical).
