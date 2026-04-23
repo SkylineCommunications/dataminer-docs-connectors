@@ -9693,8 +9693,8 @@
     topicUid: Connector_help_SYes_P75-04_UHF_Transmitter
   - name: SYes PCM Television
     topicUid: Connector_help_SYes_PCM_Television
-  - name: SYes SILM5-03 DAB TX-PCM
-    topicUid: Connector_help_SYes_SILM5-03_DAB_TX-PCM
+  - name: SYes SILM5-03 DAB TX-PCM VHF Transmitter
+    topicUid: Connector_help_SYes_SILM5-03_DAB_TX-PCM_VHF_Transmitter
   - name: SYes SYSTEM LOGIC N+1
     topicUid: Connector_help_SYes_SYSTEM_LOGIC_N+1
 - name: Symetrix
