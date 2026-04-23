@@ -2371,6 +2371,9 @@
     topicUid: Connector_help_CISCO_ISR
   - name: CISCO Manager
     topicUid: Connector_help_CISCO_Manager
+    items:
+    - name: CISCO Manager Technical
+      topicUid: Connector_help_CISCO_Manager_Technical
   - name: CISCO Manager CIN Platform
     topicUid: Connector_help_CISCO_Manager_CIN_Platform
   - name: Cisco Meraki
