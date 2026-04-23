@@ -4848,6 +4848,9 @@
     topicUid: Connector_help_Harmonic_NMX_-_Switch
   - name: Harmonic NSG9000 40G
     topicUid: Connector_help_Harmonic_NSG9000_40G
+    items:
+    - name: Harmonic NSG9000 40G Technical
+      topicUid: Connector_help_Harmonic_NSG9000_40G_Technical
   - name: Harmonic NSG9000 6G
     topicUid: Connector_help_Harmonic_NSG9000_6G
   - name: Harmonic NSG 9000
