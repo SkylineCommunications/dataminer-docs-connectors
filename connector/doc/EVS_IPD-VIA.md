@@ -4,66 +4,50 @@ uid: Connector_help_EVS_IPD-VIA
 
 # EVS IPD-VIA
 
-The EVS IPD-VIA connector is used to collect data from the EVS IPD-VIA API and integrates with the **RabbitMQ** queues to get live updates.
-
-**IPD-VIA** is the web-based asset management component of EVS's VIA ecosystem, which allows access to and management, editing, and sharing of live production assets.
-
 ## About
 
-### Version Info
+**EVS IPD-VIA** is the web-based asset management component of EVS's VIA ecosystem, enabling access to, management, editing, and sharing of live production assets. The EVS IPD-VIA connector integrates DataMiner with the EVS OpenGate v2 API and RabbitMQ message queues, giving operators a centralized view of recording sessions and enabling automated recording workflow orchestration from within the DataMiner ecosystem.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+## Key Features
 
-### Product Info
+- **Live recording session monitoring**: Track all ongoing and scheduled recording sessions in real time, with immediate updates delivered via RabbitMQ subscriptions — no polling delay.
+- **Full recording session lifecycle management**: Create, update, and delete recording sessions programmatically through the DataMiner InterApp framework, using the `Skyline.DataMiner.ConnectorAPI.EVS.IPD-VIA` NuGet package.
+- **Recorder and target discovery**: Automatically retrieve all available recorders and targets from the EVS system, keeping the connector's reference data in sync with the platform.
+- **Metadata and profile support**: Retrieve and display recording session metadata, profiles, and profile fields, enabling rich context for each session.
+- **Configurable session retention**: Define how long completed recording sessions are kept in DataMiner before automatic removal, reducing clutter without losing operational visibility.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | RabbitMQ 3.8.5         |
+## Use Cases
 
-### System Info
+### No Unified View of Recording Activity
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: In a busy live production environment, recording sessions span multiple recorders and targets. Without a central view, operators must check the EVS platform directly to understand what is recording, what is scheduled, and what has failed.
 
-## Configuration
+**Solution**: DataMiner aggregates all recording sessions from EVS IPD-VIA into a single table, continuously updated via RabbitMQ. Operators get an instant, unified overview of every active and scheduled session across the entire EVS infrastructure — without leaving the DataMiner interface.
 
-### Connections
+### Reactive Instead of Proactive Fault Management
 
-#### HTTP Connection - Main
+**Challenge**: Recording failures or unexpected status changes in EVS IPD-VIA are only discovered after the fact, when content is found to be missing or incomplete.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Solution**: DataMiner's alarm and trending engine monitors recording session statuses in real time. Operators can configure alarms on session state changes — for example, when a session moves to *InError* — enabling proactive intervention before content loss occurs.
 
-HTTP CONNECTION:
+### Manual, Script-Driven Recording Orchestration
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *80*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Challenge**: Scheduling and managing recording sessions requires direct interaction with the EVS platform, making it difficult to integrate recording workflows into broader automation pipelines.
 
-### Initialization
+**Solution**: Through the InterApp framework, any DataMiner Automation script can send create, update, and delete requests to the connector, which translates them into the correct OpenGate v2 API calls. This allows recording orchestration to be embedded in larger broadcast workflows — such as live event rundowns or ingest pipelines — without manual operator steps.
 
-The element will only start requesting data via the **API** once the **user name** and **password** have been configured. These need to be configured on the **Configuration** page.
+### Difficulty Correlating Recording Issues with Infrastructure Problems
 
-The **Configuration** page also contains all the required configuration parameters to set up the connection with the **RabbitMQ** queues.
+**Challenge**: When a recording session fails, it is not immediately clear whether the cause is an EVS platform issue, a network problem, or a configuration error elsewhere in the infrastructure.
 
-A **Status** parameter is available both for the API and the RabbitMQ connection to indicate if the connection was successful using the provided details.
+**Solution**: DataMiner's cross-domain correlation engine can link recording session alarms from EVS IPD-VIA with alerts from network devices, servers, and other broadcast systems. This gives operators root-cause visibility across the full infrastructure stack, speeding up diagnosis and resolution.
 
-## How to use
+## Technical Reference
 
-The current version is mainly intended to monitor and create recording sessions.
+### Prerequisites
 
-The **Recording Sessions** table on the **General** page contains an overview of all the ongoing and future recording sessions and their targets. Recording sessions are automatically removed from the element after a configurable time. The element will regularly retrieve recording sessions through the API, and it will also subscribe to the recording session queue (RabbitMQ) to receive updates immediately.
+- EVS VIA MAP **1.1** or higher (OpenGate API v2).
+- RabbitMQ **3.8.5** or higher.
 
-The different available recorders and targets are also retrieved using the API.
-
-### InterApp
-
-Recording sessions can be created, updated, and removed using the InterApp framework. This means there is no functionality to create recording sessions directly using the element card, but a dedicated script can be created to do so. The required DLLs to construct the messages are installed in the DataMiner System with the connector.
-
-When a message is received, it will send the required API requests towards EVS IPD-VIA, and the response will be sent to the original source of the InterApp message.
-
-## Notes
-
-Currently, the connector only supports subscriptions to the RabbitMQ "**recording-session**" queue.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_EVS_IPD-VIA_Technical).
