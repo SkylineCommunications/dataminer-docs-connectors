@@ -26,6 +26,10 @@ SNMP Settings:
 - **Get community string**: Typically *public*.
 - **Set community string**: Typically *private*.
 
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to Use
 
 ### General Page
@@ -83,10 +87,6 @@ This page contains configuration-related parameters:
 - LED State
 - Serial Port
 - OpenBMIP Support
-
-### Web Interface Page
-
-This page provides direct access to the web interface of the device.
 
 ## Notes
 
