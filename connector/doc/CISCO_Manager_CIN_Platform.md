@@ -4,21 +4,14 @@ uid: Connector_help_CISCO_Manager_CIN_Platform
 
 # CISCO Manager CIN Platform
 
-With the CISCO Manager CIN Platform it is possible to configure and monitor CISCO switches, for example, the CISCO Catalyst 3750. The CISCO Manager CIN Platform connector can retrieve information from different device types. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
-
-> [!NOTE]
-> This variant of the CISCO Manager is to be used with the [EPM D-DOCSIS solution](https://docs.dataminer.services/solutions/standard_solutions/EPM/EPM_D-DOCSIS/D-DOCSIS_architecture.html).
->
->If you would like the standalone variant, use the [CISCO Manager](https://catalog.dataminer.services/details/1418b934-6f38-4c73-b27e-f21667fb64b4) instead.
-
 ## About
 
-### Version Info
+With the CISCO Manager CIN Platform it is possible to configure and monitor CISCO switches, for example, the CISCO Catalyst 3750. The CISCO Manager CIN Platform connector can retrieve information from different device types. This data is then centralized within the connector and used by DataMiner EPM for aggregation actions.
 
-| Range              | Key Features                 | Based on | System Impact |
-|----------------------|------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.             | -            | -                 |
-| 1.0.1.x [SLC Main]   | Updated Temperature section. | -            | -                 |
+> [!IMPORTANT]
+> This variant of the CISCO Manager is to be used with the [EPM D-DOCSIS solution](https://aka.dataminer.services/d-docsis-architecture).
+>
+> If you would like the standalone variant, use the [CISCO Manager](https://catalog.dataminer.services/details/1418b934-6f38-4c73-b27e-f21667fb64b4) connector instead.
 
 ### Product Info
 
@@ -26,13 +19,6 @@ With the CISCO Manager CIN Platform it is possible to configure and monitor CISC
 |-----------|------------------------|
 | 1.0.0.x   | 6.3.3                  |
 | 1.0.1.x   | 6.3.3                  |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -82,14 +68,14 @@ The following configuration options allow you to change the behavior of the conn
 - **Interface Settings**: This allows you to enable or disable polling from an interface (SNMP, CLI) via a toggle button. You can also specify how frequently the interface should be polled.
   This section also contains the following buttons:
 
-- **Update All:** Polls from both interfaces.
+  - **Update All:** Polls from both interfaces.
   - **Update SNMP**: Polls from SNMP only.
   - **Update CLI**: Polls from CLI only.
   - **Update Virtual**: Polls Virtual Custom table data.
 
 - **Entity Export/Import Settings**: These sections allow the exporting of configuration files and importing of provisioning files. You can:
 
-- **Enable or disable** the exporting and importing feature with toggle buttons (Entity Export and Entity Import, respectively).
+  - **Enable or disable** the exporting and importing feature with toggle buttons (Entity Export and Entity Import, respectively).
   - Specify the **file paths** where files can be exported and imported (with the Entity Export Directory and Entity Import Directory, respectively).
   - Specify whether to export/import to/from a **local or remote** location via a toggle button (Entity Export Directory Type and Entity Import Directory Type, respectively). Note that for the remote file handling to work, you must enter the credentials for the system in the System Credentials section and enter the path to the remote directory in the Entity Export or Import Directory parameter. The path must be shared/accessible, or this feature will not work.
   - Start the export or import by clicking the **Apply** button in the relevant section.

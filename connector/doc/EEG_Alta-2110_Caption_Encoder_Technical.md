@@ -4,9 +4,9 @@ uid: Connector_help_EEG_Alta-2110_Caption_Encoder_Technical
 
 # EEG Alta-2110 Caption Encoder
 
-This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2110 suite of standards. The iCap Alta software is packaged on a virtual machine for placement inside a customer video facility. The virtual machine "guest" operating system is 64-bit Debian 8 Linux. The VM can be hosted on VirtualBox, Cisco, or Microsoft HyperV controllers. The default distribution format is an "OVA" file, though alternative disk image formats can often be provided on request. Once the iCap Alta virtual machine is running and reachable on a local network, all interaction with the software can be performed over HTTP on the network, as a web service, or in a browser.
-
 ## About
+
+This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2110 suite of standards. The iCap Alta software is packaged on a virtual machine for placement inside a customer video facility. The virtual machine "guest" operating system is 64-bit Debian 8 Linux. The VM can be hosted on VirtualBox, Cisco, or Microsoft HyperV controllers. The default distribution format is an "OVA" file, though alternative disk image formats can often be provided on request. Once the iCap Alta virtual machine is running and reachable on a local network, all interaction with the software can be performed over HTTP on the network, as a web service, or in a browser.
 
 ### Version Info
 
