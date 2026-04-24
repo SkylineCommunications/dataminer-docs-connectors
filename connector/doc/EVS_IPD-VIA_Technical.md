@@ -82,7 +82,7 @@ Recording sessions can be created, updated, and deleted by external DataMiner Au
 
 Two message types are supported:
 
-- **AddOrUpdateRecordingSession**: Creates a new scheduled recording session or updates an existing one. The connector routes the request to the correct OpenGate v2 endpoint based on the current session status — scheduled sessions are managed via `/schedules`, while ongoing sessions are managed via `/recording-sessions`.
+- **AddOrUpdateRecordingSession**: Creates a new scheduled recording session or updates an existing one. The connector routes the request to the correct OpenGate v2 endpoint based on the current session status. Scheduled sessions are managed via `/schedules`, while ongoing sessions are managed via `/recording-sessions`.
 - **DeleteRecordingSession**: Deletes an existing recording session. As with updates, the correct endpoint is selected automatically based on the session's current status.
 
 When the API responds, the connector sends the result back to the originating source of the InterApp message, including a success flag and, in case of failure, an error message.
