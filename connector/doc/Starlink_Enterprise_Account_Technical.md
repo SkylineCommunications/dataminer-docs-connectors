@@ -68,7 +68,7 @@ A newly created element will only start polling data if an active [Starlink Ente
 
 ![Element Structure](~/connector/images/StarlinkEnterpriseElementStructure.png)
 
-If the name of the Starlink Enterprise Account element does not equals Starlink Account [account name], the parameter set logic will not work.
+If the name of the Starlink Enterprise Account element does not equal **Starlink Account [account name]**, the parameter set logic will not work.
 
 A heartbeat check is implemented before the Starlink API is queried to confirm that the Starlink Enterprise element is able to receive the response content. If the Starlink Enterprise element is busy, the API request is postponed.
 
