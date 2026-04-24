@@ -6,11 +6,11 @@ uid: Connector_help_Imagine_Communications_Selenio_Network_Processor
 
 ## About
 
-This integration allows you to monitor and control **Imagine Communications Selenio Network Processor** (SNP) devices. 
+This integration allows you to monitor and control **Imagine Communications Selenio Network Processor** (SNP) devices.
 
 ## Key Features
 
-- **Monitor signal quality in real-time**: Gain comprehensive visibility into video, audio, and metadata streams with instant detection of issues to ensure seamless content delivery across your entire infrastructure.
+- **Monitor signal quality in real time**: Gain comprehensive visibility into video, audio, and metadata streams with instant detection of issues to ensure seamless content delivery across your entire infrastructure.
 
 - **Control media processing workflows**: Manage synchronization, conversion, format processing, and routing operations across four independent processing blocks with precision control and monitoring.
 
@@ -34,13 +34,12 @@ This integration allows you to monitor and control **Imagine Communications Sele
 
 ### Prerequisites
 
-- **HTTPS connectivity**: DataMiner requires network access to the SNP Manager via HTTPS (default port 9089) to establish API communication. The IP address needs to have "https://" in front of it (ex: the IP "192.168.0.1" would have "https://192.168.0.1" inputted.)
+- **HTTPS connectivity**: DataMiner requires network access to the SNP Manager via HTTPS (default port 9089) to establish API communication. The IP address needs to be preceded by `https://` (e.g., enter the IP "192.168.0.1" as `https://192.168.0.1`).
 
-- **Web Socket connectivity (Version 1.0.7.1 and above)**: The SNP uses web socket connections (port 9089) for real-time status and configuration updates.
+- **Web Socket connectivity (version 1.0.7.1 and above)**: The SNP uses Web Socket connections (port 9089) for real-time status and configuration updates.
 
-- **Serial Connection (Versions before 1.0.7.1)**: This connector uses a serial connection (port 4517) for real-time status and configuration updates.
+- **Serial connection (versions before 1.0.7.1)**: Earlier versions of this connector use a serial connection (port 4517) for real-time status and configuration updates.
 
-- **Valid credentials**: User authentication credentials are required to connect to the SNP Manager for monitoring and control operations. The "username" and "password" can be put on the "Security" page. 
+- **Valid credentials**: User authentication credentials are required to connect to the SNP Manager for monitoring and control operations. The username and password can be specified on the **Security** page.
 
 - **SNP Manager access**: The SNP must be managed by an SNP Manager system to enable API communication and remote monitoring capabilities.
-
