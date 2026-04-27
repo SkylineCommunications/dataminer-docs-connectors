@@ -8,28 +8,6 @@ uid: Connector_help_EEG_Alta-2110_Caption_Encoder_Technical
 
 This connector is designed to monitor the EEG Alta-2110 for use with the SMPTE 2110 suite of standards. The iCap Alta software is packaged on a virtual machine for placement inside a customer video facility. The virtual machine "guest" operating system is 64-bit Debian 8 Linux. The VM can be hosted on VirtualBox, Cisco, or Microsoft HyperV controllers. The default distribution format is an "OVA" file, though alternative disk image formats can often be provided on request. Once the iCap Alta virtual machine is running and reachable on a local network, all interaction with the software can be performed over HTTP on the network, as a web service, or in a browser.
 
-### Version Info
-
-| Range              | Key Features                                           | Based on | System Impact |
-|--------------------|--------------------------------------------------------|----------|---------------|
-| 1.0.0.x            | Initial version.                                       | -        | -             |
-| 1.0.1.x            | Changed NamingFormat/display key to retrieved columns. | 1.0.0.5  | -             |
-| 1.1.0.x [SLC Main] | Fixed iCap Status parameter.                           | 1.0.1.5  | -             |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.1.0.x   | 3.50.0                 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
