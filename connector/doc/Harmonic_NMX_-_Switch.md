@@ -21,6 +21,7 @@ The device information is retrieved via an SNMP connection and a serial connecti
 | 4.0.1.x | Smart serial. | - | - |
 | 4.1.0.x | REST API communication. | 4.0.1.5 | - |
 | 4.1.1.x **\[SLC Main\]** | REST API refactored. Enhancement of HTTP data relations and organization. | 4.1.0.3 | Primary/display keys changed. Monitoring and trending can be impacted. |
+| 4.3.0.x | Replaced deprecated API call | 4.2.0.25 | - |
 
 ### Product Info
 
@@ -33,6 +34,8 @@ The device information is retrieved via an SNMP connection and a serial connecti
 | 4.0.1.x   | 6.4                    |
 | 4.1.0.x   | 8                      |
 | 4.1.1.x   | 8                      |
+| 4.2.0.x   | 9.13, 9.2, 8           |
+| 4.3.0.x   | 9.10, 9.14, 9.15       |
 
 ## Configuration
 

@@ -20,6 +20,7 @@ Harmonic's NMX Digital Service Manager is a video network management solution, e
 | 4.1.0.x   | 8                      |
 | 4.1.1.x   | 8                      |
 | 4.2.0.x   | 9.13, 9.2, 8           |
+| 4.3.0.x   | 9.10, 9.14, 9.15       |
 
 ### System Info
 
@@ -33,6 +34,7 @@ Harmonic's NMX Digital Service Manager is a video network management solution, e
 | 4.1.0.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device                         |
 | 4.1.1.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device <br>- Harmonic NMX - Switch |
 | 4.2.0.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device <br>- Harmonic NMX - Switch |
+| 4.3.0.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device <br>- Harmonic NMX - Switch |
 
 ## Configuration
 
