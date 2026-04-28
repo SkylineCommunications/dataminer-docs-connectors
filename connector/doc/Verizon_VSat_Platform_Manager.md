@@ -4,11 +4,11 @@ uid: Connector_help_Verizon_VSat_Platform_Manager
 
 # Verizon VSat Platform Manager
 
-The **Verizon VSat Platform Manager** allows the aggregation of KPIs from different collector elements deployed in the Verizon infrastructure (**Verizon iDirect Evolution Platform Collector**, **Verizon iDirect Pulse Platform Collector** and **Verizon VSat Platform Manager**).
-
 ## About
 
-This is a **CPE** (Customer Premises Equipment) connector, and as such it is designed to poll large amounts of data from the deployed infrastructure, using **front-end** CPE Manager elements and **back-end** CPE Manager elements. Both of these types of elements use the same CPE Manager connector. The Verizon system contains one front-end and several back-end elements. The front-end element is responsible for the top-level data aggregation from different back-end elements. Each back-end element is responsible for the aggregation of a section of the data from the collectors.
+The **Verizon VSat Platform Manager** allows the aggregation of KPIs from different collector elements deployed in the Verizon infrastructure (**Verizon iDirect Evolution Platform Collector**, **Verizon iDirect Pulse Platform Collector** and **Verizon VSat Platform Manager**).
+
+This is a **CPE** (Customer Premises Equipment) connector, and as such it is designed to poll large amounts of data from the deployed infrastructure, using **frontend** CPE Manager elements and **backend** CPE Manager elements. Both of these types of elements use the same CPE Manager connector. The Verizon system contains one frontend and several backend elements. The frontend element is responsible for the top-level data aggregation from different backend elements. Each backend element is responsible for the aggregation of a section of the data from the collectors.
 
 Topologies describe the connections in the diagram shown in the visual interface. The current implementation integrates 5 different topologies: **Network**, **Service**, **NMS**, **Map** and **Quick**. Each topology represents a connected entity from top to bottom. Chains are mainly used to display topology views. In this case, the following chains are present:
 
@@ -48,18 +48,6 @@ Topologies describe the connections in the diagram shown in the visual interface
 
 - Allows you to place Visio layouts on a separate chain.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|----------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x [SLC Main]   | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
-
 ## Installation and configuration
 
 ### Creation
@@ -72,45 +60,45 @@ This connector uses a virtual connection and does not require any input during e
 
 For each manager, the following data should be configured on the Configuration page:
 
-For back-end managers:
+For backend managers:
 
-- **Role** (back-end)
+- **Role** (backend)
 - **File Import Path**
 - **List of registered collectors** (**Collector Registration** table Backend Information page)
 
-For front-end managers:
+For frontend managers:
 
-- **Role** (front-end)
+- **Role** (frontend)
 - **File Import Path**
-- **List of registered back-end elements** (**Backend Registration** table on Frontend page)
+- **List of registered backend elements** (**Backend Registration** table on Frontend page)
 - **List of all the collectors in the system** (**All Collectors Registration** table on Frontend page)
 
 ### Provisioning
 
-The provisioning of the entire solution happens sequentially and involves platform collector elements as well as the front-end and back-end elements. The solution is based on the usage of .CSV files as well as inter-element sets.
+The provisioning of the entire solution happens sequentially and involves platform collector elements as well as the frontend and backend elements. The solution is based on the usage of .CSV files as well as inter-element sets.
 
-After the collector has exported the necessary files containing the resources that need to be assigned DMS IDs, it will notify the assigned front-end element, which in turn initiates the ID assignment process. ID request notifications will be handled in a FIFO (First-In -First-Out) fashion to ensure the sequential processing of requests.
+After the collector has exported the necessary files containing the resources that need to be assigned DMS IDs, it will notify the assigned frontend element, which in turn initiates the ID assignment process. ID request notifications will be handled in a FIFO (First-In -First-Out) fashion to ensure the sequential processing of requests.
 
-The front-end element will import a series of CSV files in order to perform the necessary steps of the provisioning. The ID assignment will be done through the DataMiner SRM module. For each resource within the files, the following will happen:
+The frontend element will import a series of CSV files in order to perform the necessary steps of the provisioning. The ID assignment will be done through the DataMiner SRM module. For each resource within the files, the following will happen:
 
 1. The SRM module will determine if the resource already exists and check if its "RESOURCE TYPE" property matches the requested resource type.
-2. If no matching resource exists, the connector will notify the assigned SRM subscriber (Verizon Data Subscription Manager element) in order to create the required resources.
+1. If no matching resource exists, the connector will notify the assigned SRM subscriber (Verizon Data Subscription Manager element) in order to create the required resources.
 
-Once the ID assignment is completed, the front-end element will export a series of CSV files for the back-end(s) and collector(s) to import. It will then notify the respective back-end element(s) to process these files.
+Once the ID assignment is completed, the frontend element will export a series of CSV files for the backend(s) and collector(s) to import. It will then notify the respective backend element(s) to process these files.
 
-Back-end elements import info on the resources with their assigned IDs, and notify the respective collector elements of ID assignment completion
+Backend elements import info on the resources with their assigned IDs, and notify the respective collector elements of ID assignment completion
 
 **Provisioning Workflow Overview:**
 
 1. Collector elements export info on resources without IDs.
-2. Collector elements interrogate the assigned front-end manager for ID assignment.
-3. Front-end element imports info on resources without IDs.
-4. Front-end element interrogates the DataMiner SRM module for resource IDs.
-5. Front-end element exports info on resources with assigned IDs.
-6. Front-end element notifies handling back-end element.
-7. Handling back-end element imports info on resources with IDs.
-8. Handling back-end element notifies the assigned collector elements that the ID request has been fulfilled.
-9. Collector element imports info on resources with the assigned IDs.
+1. Collector elements interrogate the assigned frontend manager for ID assignment.
+1. Frontend element imports info on resources without IDs.
+1. Frontend element interrogates the DataMiner SRM module for resource IDs.
+1. Frontend element exports info on resources with assigned IDs.
+1. Frontend element notifies handling backend element.
+1. Handling backend element imports info on resources with IDs.
+1. Handling backend element notifies the assigned collector elements that the ID request has been fulfilled.
+1. Collector element imports info on resources with the assigned IDs.
 
 ## Usage
 
@@ -158,11 +146,6 @@ The following Key Point Indicators (**KPIs**) are calculated on the different le
 | Eth2 GigE Out Rate                                    | DSLAM Eth2 GigE out bitrate in Mbps.                                                         |
 | Polling Mask Enabled                                  | Number of polling masked DSLAMs.                                                             |
 | Polling Mask Disabled                                 | Number of polling unmasked DSLAMs.                                                           |
-
-## Revision History
-
-DATE VERSION AUTHOR COMMENTS
-04/12/2018 1.0.0.1 HPE Skyline Initial version
 
 ## Notes
 

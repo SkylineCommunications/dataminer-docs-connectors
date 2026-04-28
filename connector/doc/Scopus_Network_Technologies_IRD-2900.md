@@ -4,7 +4,7 @@ uid: Connector_help_Scopus_Network_Technologies_IRD-2900
 
 # Scopus Network Technologies IRD-2900
 
-The IRD-2900 is a broadcast-quality decoder, decryptor and interface converter that provides MPEG-2 and AVC SD decoding, advanced transport stream processing, cutting-edge IP processing technologies and a variety of front ends, including DVB-S2, MPEG over IP and more.
+The IRD-2900 is a broadcast-quality decoder, decryptor and interface converter that provides MPEG-2 and AVC SD decoding, advanced transport stream processing, cutting-edge IP processing technologies and a variety of frontends, including DVB-S2, MPEG over IP and more.
 
 ## About
 

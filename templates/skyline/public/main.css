@@ -778,3 +778,17 @@ a.backtotoplink:hover
     max-width: 100%;
   }
 }
+
+body.embed {
+  footer,
+  header {
+    display: none !important;
+  }
+
+  #search-results-new {
+    margin-top: 16px !important;
+    #search-box, #filters {
+      display: none !important;
+    }
+  }
+}

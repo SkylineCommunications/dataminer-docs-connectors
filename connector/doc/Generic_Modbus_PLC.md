@@ -4,15 +4,11 @@ uid: Connector_help_Generic_Modbus_PLC
 
 # Generic Modbus PLC
 
-The **Generic Modbus PLC** connector displays an overview of all the inputs and outputs provided by an Excel file.
-
 ## About
 
+The **Generic Modbus PLC** connector displays an overview of all the inputs and outputs provided by an Excel file.
+
 The connector will poll all the inputs and outputs with the bus address configured for the element.
-
-To import or export Excel files, the Microsoft.ACE.OLEDB.12.0 is necessary on the server. You can download this from the following page: <https://www.microsoft.com/en-us/download/details.aspx?id=23734>
-
-If you want to use the export function, you need to provide an empty Excel file with or without headers. When an export is created, the tables will then be placed on the sheets of the Excel file.
 
 ### Version Info
 
@@ -22,13 +18,6 @@ If you want to use the export function, you need to provide an empty Excel file 
 | 1.0.1.x          | Major change by QA (DisplayKey).       | No                  | Yes                     |
 | 1.0.2.x          | Major change: Changed naming.          | No                  | Yes                     |
 | 1.0.4.x          | Major change: The slave address is now dynamically retrieved from the registers table. Alarm Page: Functions similarly to the register pages, with alarm-specific registers added as per the device documentation.          | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | Any                         |
-| 1.0.4.x          | Any                         |
 
 ## Configuration
 
@@ -45,6 +34,12 @@ SERIAL CONNECTION:
   - **IP address/host**: The polling IP of the device.
   - **IP port**: 502
   - **Bus address**: The bus address of the device. Range: *0* to *255*.
+
+### Import/Export Setup
+
+To import or export Excel files, the Microsoft.ACE.OLEDB.12.0 is necessary on the server. You can download this from the following page: <https://www.microsoft.com/en-us/download/details.aspx?id=23734>
+
+If you want to use the export function, you need to provide an empty Excel file with or without headers. When an export is created, the tables will then be placed on the sheets of the Excel file.
 
 ### Configuration File
 
@@ -63,7 +58,7 @@ To complete the configuration file, refer to the device documentation, which def
 
 Below is an example of how to fill in the file with dummy data:
 
-![Overview](../images/Generic_Modbus_PLC_Configfile_Template.png)
+![Overview](~/connector/images/Generic_Modbus_PLC_Configfile_Template.png)
 
 **Required fields** for retrieving registers:
 

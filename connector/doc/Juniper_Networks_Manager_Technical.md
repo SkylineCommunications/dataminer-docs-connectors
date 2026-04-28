@@ -1,0 +1,156 @@
+---
+uid: Connector_help_Juniper_Networks_Manager_Technical
+---
+
+# Juniper Networks Manager
+
+## About
+
+The Juniper Networks Manager is an SNMP-based connector used to monitor and configure Juniper Networks devices. It also uses an SSH connection to change the interface state of some ports and to perform backup, restore, and firmware upgrade operations.
+
+Some devices have large tables, so polling can be disabled for specific tables to limit unnecessary load.
+
+## Configuration
+
+### Connections
+
+#### SNMP Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device, by default *161*.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+#### SSH Connection
+
+For its SSH connection, the connector requires the following input during element creation:
+
+- **IP address**: The polling IP of the device, e.g., *10.11.12.13*.
+- **Port number**: The SSH port of the connected device, by default *23* or *22* (version 1.0.3.x).
+
+#### HTTP Connection [1.0.10.x]
+
+From version 1.0.10.x onwards, an HTTP connection is available, which requires the following input during element creation:
+
+HTTP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the device.
+- **IP port**: The IP port of the device. Default: *3000*. Note that for **HTTPS**, the default configured Juniper port is **3443**, so this will have to be updated in the element settings.
+
+### Initialization
+
+For SSH and HTTP communication, a **User Name** and **Password** must be configured. On the **General** page of the element, you can configure HTTP credentials, while the SSH credentials can be configured via the **SSH Settings** page button.
+
+By default, all tables are polled. To reduce polling:
+
+- On the **General** page, open the **Redundancy Table** subpage and set **Poll Redundancy Table** to *Disabled*.
+- On the **General** page, open the **Operating Table** subpage and set **Poll Operating Table** to *Disabled*.
+- On the **Interface Stats** page, set **Poll Optional Interface Stats** to *Disabled* to stop polling the following columns: **IF Type**, **IF Protocol Error**, **IF Discontinuity**, **IF Link Traps**, **IF Promiscuous Mode**, **IF Connector**, and **IF Speed**.
+
+Version range 1.0.2.x includes additional polling and measurement controls:
+
+- **Polling Config** (General page): The **Polling Configuration Table** allows you to configure the polling speed per table. Setting **PCT - Polling Time** to *disabled (-1)* stops polling for those parameters. A **Refresh** button allows manual polling. In range 1.0.9.x, each row has an individual toggle button and defaults to a 5-minute polling interval when enabled.
+
+- **Measurement Config** (Interfaces page): The **Measurement Configuration Table** allows you to disable individual interfaces to remove them from polling and from all interface tables. The **Enable/Disable Interface [Description Filter]** field enables or disables interfaces in bulk based on a string match. The **Disable All**, **Enable All**, and **Enable Oper. Up** buttons also allow bulk actions. The **MCT - Filter Table** (via right-click to add entries) auto-enables matched interfaces and disables all others; manual editing of the Measurement Configuration Table is only available when this filter table is empty.
+
+Version range 3.0.0.x adds the following to the Polling Configuration Table:
+
+- A **Lock State** column (*Locked*/*Unlocked*) that prevents changes to polling time, polling state, and the Refresh button when locked. Locked rows are displayed in dark gray. Locking and unlocking can be applied via the right-click context menu.
+- When **Real-Time Performance Monitoring: Ping Results** is disabled, no action is taken on the row. If dependent tables are enabled, the row is automatically re-enabled and a message is shown.
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
+## How to Use
+
+### General Page
+
+This page displays general device information including **System Name**, **System Uptime**, **CPU Usage**, and **Memory Usage**.
+
+From version 1.0.10.x onwards, the **User Name** and **Password** for the HTTP connection can be configured directly on this page.
+
+Page buttons provide access to:
+
+- **Credentials**: Configure the SSH username and password used for SSH connections, backup, restore, and firmware upgrade.
+- **Redundancy Table**: Displays redundancy status. Polling can be disabled.
+- **Services**: Displays OSI layer status (Physical, Network, etc.).
+- **Operating Table**: Displays hardware information. Polling can be disabled.
+- **Conditional Monitoring**: Parameters for importing and exporting files.
+- **Storage Table**: Displays storage utilization.
+- **TCP/UDP Stats**: TCP/UDP statistics including **TCP Connection Table** and **UDP Listener Information**.
+- **ICMP Stats**: ICMP statistics such as **ICMP Received Messages** and **ICMP Sent Echo Reply**.
+- **IP Stats**: IP statistics such as **IP Forwarding** and **IP Datagrams Received**.
+
+Prior to range 1.0.2.x, input fields in the lower-right corner allow the importing or exporting of current values to a file.
+
+### Interface Stats Page
+
+This page displays **Interface Statistics**. The **IF State Custom Change** column allows you to force the state of ge or xe type interfaces to *up* or *down*. This is applied when the **Commit IF Changes** button is clicked.
+
+The **More Stats** page button opens the **More Interface Stats** page, which contains two tables: **More IN Interface Stats** (IN Octets, IN Ucast Pck 32, etc.) and **More Interface Stats OUT** (OUT Errors 32, Out Mcast Pck, etc.). Polling can be disabled for one or both tables.
+
+In range 1.0.3.x, the **Measurement Configuration** page button is also available here.
+
+### RSVP-MPLS Page
+
+This page displays the **RSVP Session Table**, along with standalone parameters for **Active LSP Ingress**, **Transit**, and **Egress**.
+
+### DOM Page
+
+This page displays **Digital Optical Monitoring** data. From range 1.0.6.x onwards, power data is converted to the appropriate units (mA, dBm).
+
+### RPM Metrics Page [1.0.3.x]
+
+This page displays RPM (**Real-Time Performance Monitoring**) metrics including **RTT** (minimum, maximum, average, and standard deviation round-trip time) and sent/received probe counts and percentages between network nodes.
+
+The **Description** column in all tables on the **RPM Metrics**, **Ping Probe**, and **RPM History** pages is based on the **Ping Results Table** (ID 24000 in Ping Probe).
+
+### Ping Function Page
+
+This page displays parameters to configure and retrieve statistics for the **Ping Functionality**.
+
+### Backup / Restore
+
+- **Backup**: The **Backup File Name** is copied via SCP from the **Backup Device Directory** to the **Backup Remote Directory**.
+
+  Example: `scp /config/juniper.gz user@10.10.132.18:~/juniper.conf.gz`
+
+- **Restore**: The **Restore File Name** is copied via SCP from the **Restore Remote Directory** to the **Restore Device Directory**, then committed to the device.
+
+  Example: `scp user@10.10.132.18:~/juniper.conf.gz /tmp/juniper.conf.gz`
+
+The **Restore Timeout** parameter configures how long to wait before the restore commit is considered timed out.
+
+### Firmware Upgrade
+
+The **Upgrade File Name** is copied via SCP from the **Upgrade Remote Directory** to the **Upgrade Device Directory**. After the copy, a load override with validation is performed. When this is successful, the file is committed and the device reboots.
+
+Example: `scp user@192.168.10.1:~/jinstall-xxx.nnn-domestic-signed.tgz /tmp/`
+
+The **Upgrade Timeout** parameter configures how long to wait before the upgrade is considered timed out.
+
+From version 1.0.3.7 onwards, a **Software Rollback** button is available.
+
+### Web Interface
+
+This page accesses the device web interface. The client machine must have network access to the device.
+
+## DataMiner Connectivity Framework
+
+The 1.0.5.x through 1.0.10.x ranges of the Juniper Networks Manager connector support the usage of DCF.
+
+### Interfaces
+
+#### Dynamic Interfaces
+
+Physical dynamic interfaces:
+
+- Interfaces from the Interface Stats table are exposed as physical dynamic interfaces of type inout.

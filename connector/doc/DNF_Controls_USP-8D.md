@@ -47,7 +47,7 @@ The **DNF Timeout Time** has a range of 10s to 60s, and its default timeout dura
 
 ### Web Interface
 
-The device's web page. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+The device's webpage. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## Notes
 

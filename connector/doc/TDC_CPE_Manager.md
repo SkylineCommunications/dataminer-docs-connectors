@@ -41,8 +41,8 @@ The **TDC CPE Manager** is part of a CPE setup and is responsible for aggregatin
 
 Two types of elements are needed for this setup:
 
-- A single front-end element (CPE FE), responsible for aggregating data at the top levels.
-- Multiple back-end elements (CPE BE), each responsible for some OLT devices. These elements will perform the aggregation of the data coming from the collector elements.
+- A single frontend element (CPE FE), responsible for aggregating data at the top levels.
+- Multiple backend elements (CPE BE), each responsible for some OLT devices. These elements will perform the aggregation of the data coming from the collector elements.
 
 ### Configuration of parameters
 
@@ -89,7 +89,7 @@ The following parameters can be set via **multiple set** in order to configure t
   - The primary key will always be offloaded as the first column.
   - Information template column names are not supported.
 
-The offload will not occur to front-end managers.
+The offload will not occur to frontend managers.
 
 The offload files will always contain the primary key of the tables and a column with the **OLT Name** linked to each entry.
 

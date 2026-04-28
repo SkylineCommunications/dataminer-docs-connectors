@@ -24,7 +24,7 @@ As this is a virtual connector, **no data traffic** will be shown **in the Strea
 
    For details on each diagnostic type, refer to [Diagnostics](#diagnostics) below.
 
-1. Once diagnostics are completed, the WMT element sends the final ticketing message to the ETMS back end operating on the current DMA.
+1. Once diagnostics are completed, the WMT element sends the final ticketing message to the ETMS backend operating on the current DMA.
 
 ### Version Info
 
@@ -53,12 +53,12 @@ The **Configuration** section allows you to adjust the behavior of the connector
 
 - **System Credentials**: Stores authentication details for system access.
 
-- **Subscriptions Configuration**: Defines the **front-end DMA** and **subscription file locations**.
+- **Subscriptions Configuration**: Defines the **frontend DMA** and **subscription file locations**.
 
 - **Subscriptions Folder Path**: The path where **subscription tables** will be stored.
 
   > [!NOTE]
-  > This must be written like a local path but applies to the **front-end Agent**, not the hosting Agent.
+  > This must be written like a local path but applies to the **frontend Agent**, not the hosting Agent.
 
 ## Diagnostics
 

@@ -95,6 +95,13 @@
     topicUid: Connector_help_Actia_Sodielec_DTM20MKII
   - name: Actia Sodielec SDVB100
     topicUid: Connector_help_Actia_Sodielec_SDVB100
+- name: Active Power
+  items:
+  - name: Active Power CleanSource XT MMS
+    topicUid: Connector_help_Active_Power_CleanSource_XT_MMS
+    items:
+      - name: Active Power CleanSource XT MMS Technical
+        topicUid: Connector_help_Active_Power_CleanSource_XT_MMS_Technical
 - name: Actus
   items:
   - name: Actus Broadcast Compliance (View)
@@ -398,6 +405,9 @@
     topicUid: Connector_help_Alpha_CMD-N_Arris_SG4000
   - name: Alpha Combi UPS AC DC
     topicUid: Connector_help_Alpha_Combi_UPS_AC_DC
+    items:
+    - name: Alpha Combi UPS AC DC Technical
+      topicUid: Connector_help_Alpha_Combi_UPS_AC_DC_Technical
   - name: Alpha Cordex CXC HP
     topicUid: Connector_help_Alpha_Cordex_CXC_HP
   - name: Alpha XM-2-300HP DPM
@@ -798,6 +808,9 @@
     topicUid: Connector_help_Arris_GT-3
   - name: Arris ME-7000
     topicUid: Connector_help_Arris_ME-7000
+    items:
+    - name: Arris ME-7000 Technical
+      topicUid: Connector_help_Arris_ME-7000_Technical
   - name: Arris ST-6000 Series
     topicUid: Connector_help_Arris_ST-6000_Series
   - name: Arris VTN244
@@ -1147,6 +1160,11 @@
     items:
     - name: AvL Technologies AAQ Controller Technical
       topicUid: Connector_help_AvL_Technologies_AAQ_Controller_Technical
+  - name: AvL Technologies Intelligent Terminal Controller Explorer
+    topicUid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer
+    items:
+    - name: AvL Technologies Intelligent Terminal Controller Explorer Technical
+      topicUid: Connector_help_AvL_Technologies_Intelligent_Terminal_Controller_Explorer_Technical
 - name: AVT
   items:
   - name: AVT MAGIC AD1 ETI
@@ -2987,6 +3005,11 @@
     topicUid: Connector_help_Double_D_Electronics_DDA70-87
   - name: Double D Electronics DDA75
     topicUid : Connector_help_Double_D_Electronics_DDA75
+  - name: Double D Electronics DDA86-35
+    topicUid: Connector_help_Double_D_Electronics_DDA86-35
+    items:
+      - name: Double_D_Electronics_DDA86-35 Technical
+        topicUid: Connector_help_Double_D_Electronics_DDA86-35_Technical
   - name: Double D Electronics DDA89-02
     topicUid: Connector_help_Double_D_Electronics_DDA89-02
   - name: Double D Electronics DDA89-12
@@ -3054,6 +3077,11 @@
     topicUid: Connector_help_Eaton_Remote_Power_Panel
   - name: Eaton SC200
     topicUid: Connector_help_Eaton_SC200
+  - name: EATON SC300
+    topicUid: Connector_help_EATON_SC300
+    items:
+    - name: EATON SC300 Technical
+      topicUid: Connector_help_EATON_SC300_Technical
   - name: EATON Supervisory Module
     topicUid: Connector_help_EATON_Supervisory_Module
 - name: EBU
@@ -3480,8 +3508,6 @@
     topicUid: Connector_help_Eutelsat_Siecams_Manager
   - name: Eutelsat TAOS Calculation
     topicUid: Connector_help_Eutelsat_TAOS_Calculation
-  - name: Eutelsat TAOS Manager
-    topicUid: Connector_help_Eutelsat_TAOS_Manager
   - name: Eutelsat Uplink Auto Swap Manager
     topicUid: Connector_help_Eutelsat_Uplink_Auto_Swap_Manager
   - name: Eutelsat Uplink Manager
@@ -3799,7 +3825,6 @@
         topicUid: Connector_help_Evertz_7x00_General_Platform_7807LR2
       - name: Evertz 7x00 General Platform  - 7880IPASIIP
         topicUid: Connector_help_Evertz_7x00_General_Platform__-_7880IPASIIP
-  - name: Evertz 9000RF-Probe
   - name: Evertz 7x00 General Platform Group 2
     topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2
     items:
@@ -3821,6 +3846,7 @@
       topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881DEC2MP2HD
     - name: Evertz 7x00 General Platform Group 2 - 7881IRD2-ATSC
       topicUid: Connector_help_Evertz_7x00_General_Platform_Group_2_-_7881IRD2-ATSC
+  - name: Evertz 9000RF-Probe
     topicUid: Connector_help_Evertz_9000RF-Probe
   - name: Evertz 9000RF-Probe - RF Input
     topicUid: Connector_help_Evertz_9000RF-Probe_-_RF_Input
@@ -4376,6 +4402,11 @@
     topicUid: Connector_help_Generic_MIB-II
   - name: Generic MIB II
     topicUid: Connector_help_Generic_MIB_II
+  - name: Generic Modbus
+    topicUid: Connector_help_Generic_Modbus
+    items:
+    - name: Generic Modbus Technical
+      topicUid: Connector_help_Generic_Modbus_Technical
   - name: Generic Modbus PLC
     topicUid: Connector_help_Generic_Modbus_PLC
   - name: Generic Move Files
@@ -4817,6 +4848,9 @@
     topicUid: Connector_help_Harmonic_NMX_-_Switch
   - name: Harmonic NSG9000 40G
     topicUid: Connector_help_Harmonic_NSG9000_40G
+    items:
+    - name: Harmonic NSG9000 40G Technical
+      topicUid: Connector_help_Harmonic_NSG9000_40G_Technical
   - name: Harmonic NSG9000 6G
     topicUid: Connector_help_Harmonic_NSG9000_6G
   - name: Harmonic NSG 9000
@@ -5583,6 +5617,9 @@
     topicUid: Connector_help_Juniper_Networks_EX_Series
   - name: Juniper Networks Manager
     topicUid: Connector_help_Juniper_Networks_Manager
+    items:
+    - name: Juniper Networks Manager Technical
+      topicUid: Connector_help_Juniper_Networks_Manager_Technical
   - name: Juniper Networks Manager CIN Platform
     topicUid: Connector_help_Juniper_Networks_Manager_CIN_Platform
   - name: Juniper Networks MX Series
@@ -5698,6 +5735,13 @@
   items:
   - name: KWS-Electronic AMA 310
     topicUid: Connector_help_KWS-Electronic_AMA_310
+- name: Kymeta
+  items:
+  - name: Kymeta U8
+    topicUid: Connector_help_Kymeta_U8
+    items:
+      - name: Kymeta U8 Technical
+        topicUid: Connector_help_Kymeta_U8_Technical
 - name: L-3 Communications
   items:
   - name: L-3 Communications MPM-1000
@@ -5985,6 +6029,16 @@
     items:
     - name: Media Links Xscend Manager Technical
       topicUid: Connector_help_Media_Links_Xscend_Manager_Technical
+  - name: Media Links MPU HDBNC
+    topicUid: Connector_help_Media_Links_MPU_HDBNC
+    items:
+    - name: Media Links MPU HDBNC Technical
+      topicUid: Connector_help_Media_Links_MPU_HDBNC_Technical
+  - name: Media Links Trunk
+    topicUid: Connector_help_Media_Links_Trunk
+    items:
+    - name: Media Links Trunk Technical
+      topicUid: Connector_help_Media_Links_Trunk_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
@@ -6718,6 +6772,8 @@
   items:
   - name: ND Satcom HPA 3412A
     topicUid: Connector_help_ND_Satcom_HPA_3412A
+  - name: ND Satcom RCU 6000
+    topicUid: Connector_help_ND_Satcom_RCU_6000
   - name: ND Satcom RCU5000
     topicUid: Connector_help_ND_Satcom_RCU5000
   - name: ND Satcom SKYWAN
@@ -7002,6 +7058,9 @@
     topicUid: Connector_help_Nevion_Virtuoso_CP4400
   - name: Nevion Virtuoso FA
     topicUid: Connector_help_Nevion_Virtuoso_FA
+    items:
+    - name: Nevion Virtuoso FA Technical
+      topicUid: Connector_help_Nevion_Virtuoso_FA_Technical
   - name: Nevion Virtuoso MI
     topicUid: Connector_help_Nevion_Virtuoso_MI
     items:
@@ -7154,6 +7213,11 @@
     items:
     - name: Nokia 1830 PSD Technical
       topicUid: Connector_help_Nokia_1830_PSD_Technical
+  - name: Nokia 7750 SR VSA
+    topicUid: Connector_help_Nokia_7750_SR_VSA
+    items:
+    - name: Nokia 7750 SR VSA Technical
+      topicUid: Connector_help_Nokia_7750_SR_VSA_Technical
   - name: Nokia Altiplano Collector
     topicUid: Connector_help_Nokia_Altiplano_Collector
   - name: Nokia Altiplano Consumer
@@ -7430,6 +7494,13 @@
   items:
   - name: OpenHeadend Content Management Platform
     topicUid: Connector_help_OpenHeadend_Content_Management_Platform
+- name: Open-Meteo
+  items:
+  - name: Open-Meteo Weather
+    topicUid: Connector_help_OpenMeteo_Weather
+    items:
+    - name: Open-Meteo Weather Technical
+      topicUid: Connector_help_OpenMeteo_Weather_Technical
 - name: OpenStack
   items:
   - name: OpenStack Manager
@@ -7471,15 +7542,6 @@
     topicUid: Connector_help_Oracle_Database_Node
   - name: Oracle DIVArchive
     topicUid: Connector_help_Oracle_DIVArchive
-- name: Orange
-  items:
-  - name: Orange Orion
-    topicUid: Connector_help_Orange_Orion
-  - name: Orange Oceane Ticketing System
-    topicUid: Connector_help_Orange_Oceane_Ticketing_System
-    items:
-    - name: Orange Oceane Ticketing System Technical
-      topicUid: Connector_help_Orange_Oceane_Ticketing_System_Technical
 - name: Orban
   items:
   - name: Orban Optimod 8685
@@ -7659,6 +7721,13 @@
     topicUid: Connector_help_Pebble_Beach_Dolphin
   - name: Pebble Beach EMS
     topicUid: Connector_help_Pebble_Beach_EMS
+- name: Peplink
+  items:
+  - name: Peplink Balance 2500 EC
+    topicUid: Connector_help_Peplink_Balance_2500_EC
+    items:
+    - name: Peplink Balance 2500 EC Technical
+      topicUid: Connector_help_Peplink_Balance_2500_EC_Technical
 - name: PHABRIX
   items:
   - name: PHABRIX Sx TAG
@@ -7931,6 +8000,13 @@
   items:
   - name: Resolve Systems Resolve Platform
     topicUid: Connector_help_Resolve_Systems_Resolve_Platform
+- name: RevGo
+  items:
+  - name: RevGo BUC
+    topicUid: Connector_help_RevGo_BUC
+    items:
+    - name: RevGo BUC Technical
+      topicUid: Connector_help_RevGo_BUC_Technical
 - name: RF Design
   items:
   - name: RF Design FlexLink C2
@@ -8024,6 +8100,10 @@
     topicUid: Connector_help_Riverbed_Steelhead
   - name: Riverbed Stingray
     topicUid: Connector_help_Riverbed_Stingray
+- name: RME Sensors
+  items:
+  - name: RME Sensors IP TH Sensor
+    topicUid: Connector_help_RME_Sensors_IP_TH_Sensor
 - name: Robustel
   items:
   - name: Robustel R2000
@@ -8121,10 +8201,10 @@
     topicUid: Connector_help_Rohde_Schwarz_NSU_-_Transmitter
   - name: Rohde Schwarz NV8600
     topicUid: Connector_help_Rohde_Schwarz_NV8600
-  - name: Rohde Schawrz Nx8000
+  - name: Rohde Schwarz Nx8000
     topicUid: Connector_help_Rohde_Schwarz_Nx8000
     items:
-      - name: Rohde Schawrz Nx8000 Technical
+      - name: Rohde Schwarz Nx8000 Technical
         topicUid: Connector_help_Rohde_Schwarz_Nx8000_Technical
   - name: Rohde Schwarz OSP 120
     topicUid: Connector_help_Rohde_Schwarz_OSP_120
@@ -8504,6 +8584,9 @@
   items:
   - name: SED 32x8
     topicUid: Connector_help_SED_32x8
+    items:
+    - name: SED 32x8 Technical
+      topicUid: Connector_help_SED_32x8_Technical
   - name: SED Decimator 16 port
     topicUid: Connector_help_SED_Decimator_16_port
   - name: SED Decimator 8 port
@@ -9278,6 +9361,13 @@
   items:
   - name: Softel vFlex Inserter
     topicUid: Connector_help_Softel_vFlex_Inserter
+- name: SolarEdge
+  items:
+  - name: SolarEdge Platform
+    topicUid: Connector_help_SolarEdge_Platform
+    items:
+    - name: SolarEdge Platform Technical
+      topicUid: Connector_help_SolarEdge_Platform_Technical
 - name: Solarwinds
   items:
   - name: Solarwinds NPM Event Agent
@@ -9508,12 +9598,22 @@
     items:
     - name: Starlink Enterprise Technical
       topicUid: Connector_help_Starlink_Enterprise_Technical
+  - name: Starlink Enterprise Account
+    topicUid: Connector_help_Starlink_Enterprise_Account
+    items:
+    - name: Starlink Enterprise Account Technical
+      topicUid: Connector_help_Starlink_Enterprise_Account_Technical
   - name: Starlink Enterprise - User Terminal
     topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
+  - name: Starlink Enterprise - API V2 Migration
+    topicUid: Connector_help_Starlink_Enterprise_API_V2_Migration
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
     topicUid: Connector_help_Stormshield_Network_Security_S-Series
+    items:
+    - name: Stormshield Network Security S-Series Technical
+      topicUid: Connector_help_Stormshield_Network_Security_S-Series_Technical
 - name: Stratos
   items:
   - name: Stratos AmosConnect Connect Monitoring
@@ -9608,6 +9708,8 @@
     topicUid: Connector_help_SYes_P75-04_UHF_Transmitter
   - name: SYes PCM Television
     topicUid: Connector_help_SYes_PCM_Television
+  - name: SYes SILM5-03 DAB TX-PCM VHF Transmitter
+    topicUid: Connector_help_SYes_SILM5-03_DAB_TX-PCM_VHF_Transmitter
   - name: SYes SYSTEM LOGIC N+1
     topicUid: Connector_help_SYes_SYSTEM_LOGIC_N+1
 - name: Symetrix
@@ -9628,6 +9730,9 @@
   items:
   - name: Synamedia Virtual DCM
     topicUid: Connector_help_Synamedia_Virtual_DCM
+    items:
+    - name: Synamedia Virtual DCM Technical
+      topicUid: Connector_help_Synamedia_Virtual_DCM_Technical
   - name: Synamedia VSM
     topicUid: Connector_help_Synamedia_VSM
   - name: Synamedia VSM License Usage Monitor
@@ -10339,6 +10444,8 @@
     topicUid: Connector_help_Thomson_Nextream_Vibe_VS7000
 - name: Thomson Video Networks
   items:
+  - name: Thomson Video Networks Elite 100 - 1000 Digital TX
+    topicUid: Connector_help_Thomson_Video_Networks_Elite_100_-_1000_Digital_TX
   - name: Thomson Video Networks Fuze-1 Playout System
     topicUid: Connector_help_Thomson_Video_Networks_Fuze-1_Playout_System
   - name: Thomson Video Networks MD4000
@@ -11170,12 +11277,22 @@
   items:
   - name: Zabbix Platform
     topicUid: Connector_help_Zabbix_Platform
+    items:
+    - name: Zabbix Platform Technical
+      topicUid: Connector_help_Zabbix_Platform_Technical
   - name: Zabbix Platform - Host
     topicUid: Connector_help_Zabbix_Platform_-_Host
 - name: Zamil Industries
   items:
   - name: Zamil Industries HVAC AC
     topicUid: Connector_help_Zamil_Industries_HVAC_AC
+- name: Zaptec
+  items:
+  - name: Zaptec Platform
+    topicUid: Connector_help_Zaptec_Platform
+    items:
+    - name: Zaptec Platform Technical
+      topicUid: Connector_help_Zaptec_Platform_Technical
 - name: Zenoss
   items:
   - name: Zenoss Database

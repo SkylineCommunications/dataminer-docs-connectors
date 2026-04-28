@@ -4,57 +4,45 @@ uid: Connector_help_Zabbix_Platform
 
 # Zabbix Platform
 
-Zabbix is software that monitors numerous parameters of a network as well as the health and integrity of servers.
-
-This HTTP connector connects to the Zabbix API to retrieve data from the Zabbix platform. The Zabbix API is a web-based API that is shipped as part of the web front end. It uses the JSON-RPC 2.0 protocol. This connector will export different connectors based on the retrieved hosts from the API. For more information on the device, refer to <https://www.zabbix.com/documentation/3.0/manual/api>.
-
 ## About
 
-### Version Info
+Zabbix is a monitoring platform that provides visibility into the health, performance, and availability of IT infrastructure, such as servers, networks, applications, services, and cloud resources.
 
-| Range                | Key Features                            | Based on     | System Impact     |
-|----------------------|-----------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version.                        | -            | -                 |
-| 1.1.0.x [SLC Main]   | API 4.0: new features were implemented. | -            | -                 |
+The Zabbix Platform DataMiner connector leverages Zabbix's API to retrieve data from the Zabbix platform. This API is a web-based API that is shipped as part of the web frontend and uses the JSON-RPC 2.0 protocol.
 
-### Product Info
+This connector will export different [connectors based on the retrieved hosts](xref:Connector_help_Zabbix_Platform_-_Host) from the API.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.1.0.x   | 4.0                    |
+## Key Features
 
-### System Info
+- Automatically discover Zabbix hosts to add them in DataMiner as managed elements.
+- View host status, uptime, and monitoring health from the DataMiner UI.
+- Drill down to host groups, triggers, items, events, correlations, and problem records.
+- Enable/disable host polling and configure per-host DVE behavior.
+- Apply host-group and tag filters for fast navigation and operational focus.
+- Link Zabbix-generated issues into DataMiner automation workflows and alerting.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                                                        |
-|-----------|---------------------|-------------------------|-----------------------|----------------------------------------------------------------------------|
-| 1.0.0.x   | No                  | Yes                     |                       |                                                                            |
-| 1.1.0.x   | No                  | Yes                     | -                     | [Zabbix Platform - Host](xref:Connector_help_Zabbix_Platform_-_Host) |
+## Use Case
 
-## Configuration
+### Unified Monitoring Visibility
 
-### Connections
+- **Challenge:** Siloed Zabbix monitoring data is separated from remaining network and workflows.
+- **Solution:** Export Zabbix monitoring data to DataMiner as elements.
+- **Benefit:** Unified visibility for NOC teams and reduced context switching.
 
-#### HTTP Connection
+### Automation and Event Correlation
 
-This connector uses an HTTP connection and requires the following input during element creation:
+- **Challenge:** Zabbix events and automated workflows require manual correlation.
+- **Solution:** Map Zabbix triggers/events into DataMiner and route to automation/alert pipelines.
+- **Benefit:** Faster incident response and fewer missed issues.
 
-HTTP CONNECTION:
+## Technical Info
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+### Prerequisites
 
-### Initialization
+- Zabbix server with API enabled and reachable from DataMiner.
+- **DataMiner 10.3 or higher** is required for compatibility with the NetInsight Nimbra Vision connector.
 
-To be able to retrieve data from the API, specify a **Username** and **Password** on the **Configuration** page.
+## Technical Reference
 
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to use
-
-On the **General** page, a tree view is displayed that allows you to drill down from a **Host Group** to a single **Host**. The **Configure DVEs** page button opens a subpage where DVEs can be configured.
-
-The **Configuration** page displays the **API Info**. On this page, you can also set the **Username** and **Password** that are used to retrieve data from the API, and configure the **URL** needed to connect to the device.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Zabbix_Platform_Technical)
