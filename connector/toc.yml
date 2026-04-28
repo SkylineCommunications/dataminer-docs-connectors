@@ -3110,6 +3110,9 @@
   items:
   - name: EEG Alta-2110 Caption Encoder
     topicUid: Connector_help_EEG_Alta-2110_Caption_Encoder
+    items:
+    - name: EEG Alta-2110 Caption Encoder Technical
+      topicUid: Connector_help_EEG_Alta-2110_Caption_Encoder_Technical
   - name: EEG Alta-TS Caption Encoder
     topicUid: Connector_help_EEG_Alta-TS_Caption_Encoder
   - name: EEG HD-492 CC Encoder
