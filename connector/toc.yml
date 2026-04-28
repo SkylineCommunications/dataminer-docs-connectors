@@ -4848,6 +4848,9 @@
     topicUid: Connector_help_Harmonic_NMX_-_Switch
   - name: Harmonic NSG9000 40G
     topicUid: Connector_help_Harmonic_NSG9000_40G
+    items:
+    - name: Harmonic NSG9000 40G Technical
+      topicUid: Connector_help_Harmonic_NSG9000_40G_Technical
   - name: Harmonic NSG9000 6G
     topicUid: Connector_help_Harmonic_NSG9000_6G
   - name: Harmonic NSG 9000
@@ -6031,6 +6034,11 @@
     items:
     - name: Media Links MPU HDBNC Technical
       topicUid: Connector_help_Media_Links_MPU_HDBNC_Technical
+  - name: Media Links Trunk
+    topicUid: Connector_help_Media_Links_Trunk
+    items:
+    - name: Media Links Trunk Technical
+      topicUid: Connector_help_Media_Links_Trunk_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
@@ -7992,6 +8000,13 @@
   items:
   - name: Resolve Systems Resolve Platform
     topicUid: Connector_help_Resolve_Systems_Resolve_Platform
+- name: RevGo
+  items:
+  - name: RevGo BUC
+    topicUid: Connector_help_RevGo_BUC
+    items:
+    - name: RevGo BUC Technical
+      topicUid: Connector_help_RevGo_BUC_Technical
 - name: RF Design
   items:
   - name: RF Design FlexLink C2
