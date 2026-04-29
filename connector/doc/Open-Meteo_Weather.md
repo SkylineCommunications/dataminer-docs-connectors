@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_OpenMeteo_Weather
+uid: Connector_help_Open-Meteo_Weather
 ---
 
 # Open-Meteo Weather
@@ -17,4 +17,4 @@ The Open-Meteo Weather connector enables centralized monitoring of weather condi
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_OpenMeteo_Weather_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Open-Meteo_Weather_Technical).

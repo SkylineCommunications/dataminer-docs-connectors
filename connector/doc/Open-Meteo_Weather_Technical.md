@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_OpenMeteo_Weather_Technical
+uid: Connector_help_Open-Meteo_Weather_Technical
 ---
 
 # Open-Meteo Weather
