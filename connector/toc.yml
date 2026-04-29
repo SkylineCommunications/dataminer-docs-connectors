@@ -3982,6 +3982,9 @@
       topicUid: Connector_help_EVS_Cerebrum_Technical
   - name: EVS IPD-VIA
     topicUid: Connector_help_EVS_IPD-VIA
+    items:
+    - name: EVS IPD-VIA Technical
+      topicUid: Connector_help_EVS_IPD-VIA_Technical
   - name: EVS IP Director
     topicUid: Connector_help_EVS_IP_Director
   - name: EVS Live Production Server
