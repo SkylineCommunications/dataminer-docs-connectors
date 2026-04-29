@@ -7610,6 +7610,9 @@
   items:
   - name: Paneda DAB Head-End
     topicUid: Connector_help_Paneda_DAB_Head-End
+    items:
+      - name: Paneda DAB Head-End Technical
+        topicUid: Connector_help_Paneda_DAB_Head-End_Technical
   - name: Paneda DAB Monitor
     topicUid: Connector_help_Paneda_DAB_Monitor
   - name: Paneda DAB Monitor Orchestration
