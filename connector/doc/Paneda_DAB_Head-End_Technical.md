@@ -4,10 +4,11 @@ uid: Connector_help_Paneda_DAB_Head-End_Technical
 
 # Paneda DAB Head-End
 
+## About
+
 This connector retrieves the status information from four URLs (General System, Devices, Audio Services, and Data Services) for each provider configured in the system.
 
-The data returned by the calls for each provider consists of data specific for that provider as well as general data on the overall system, which is identical for all the providers.
-The connector only displays the general data once, separately from the data that is unique for each provider. As such, if no provider is mentioned, this means the data relates to the overall system.
+The data returned by the calls for each provider consists of data specific for that provider as well as general data on the overall system, which is identical for all the providers. The connector only displays the general data once, separately from the data that is unique for each provider. As such, if no provider is mentioned, this means the data relates to the overall system.
 
 ## Configuration
 
@@ -38,10 +39,9 @@ SNMP Settings:
 
 ### Initialization
 
-On the **General** page, the correct authorization token must be filled in the **Paneda Access Token** parameter.
+On the **General** page, the correct authorization token must be specified with the **Paneda Access Token** parameter.
 
-
-## How to use
+## How to Use
 
 This connector retrieves information from the Paneda via HTTPS for each provider configured on the device.
 
