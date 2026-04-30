@@ -4,56 +4,20 @@ uid: Connector_help_T-Vips_CP525
 
 # T-Vips CP525
 
-This connector is used for the CP525 multiplexer model from T-Vips and allows SNMP monitoring and configuration of this device.
-
 ## About
 
-### Version Info
+This is a DataMiner connector for the **CP525 multiplexer** model from T-Vips and allows SNMP monitoring and configuration of this device.
 
-| Range                | Key Features                                                             | Based on     | System Impact                                         |
-|----------------------|--------------------------------------------------------------------------|--------------|-------------------------------------------------------|
-| 1.0.0.x (Obsolete)   | SNMP monitoring.                                                         | -            | -                                                     |
-| 1.0.1.x [SLC Main]   | Reworked PIDs table. (Changed display column to display key.)            | 1.0.0.x      | Possible loss in alarm/trend data for PIDs table.     |
+### Key Features
 
-### System Info
+- **Alarm monitoring on key metrics**: Monitor on device components such as Inputs and Outputs to quickly identify potential issues.
+- **Configuration file management**: Upload and download configuration files to easily manage the device settings.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                       |
-| 1.0.1.x   | No                  | No                      | -                     | -                       |
+## Prerequisites
 
-## Configuration
+- The Get/Set community strings are required for reading and setting values onto the device.
 
-### Connections
+## Technical Information
 
-#### SNMP Main Connection
-
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-
-SNMP Settings:
-
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
-
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to use
-
-The connector contains parameters for monitoring **alarms**, **input**, **outputs**, and **transport streams** on the corresponding (sub)pages.
-
-On the **Configuration** page, configuration files can be both uploaded and downloaded.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_T-Vips_CP525_Technical).

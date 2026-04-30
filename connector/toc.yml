@@ -9756,6 +9756,9 @@
     topicUid: Connector_help_T-Vips_CP510
   - name: T-Vips CP525
     topicUid: Connector_help_T-Vips_CP525
+    items:
+    - name: T-Vips CP525 Technical
+      topicUid: Connector_help_T-Vips_CP525_Technical
   - name: T-Vips CP540
     topicUid: Connector_help_T-Vips_CP540
   - name: T-Vips CP541
