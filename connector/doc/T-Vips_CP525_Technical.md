@@ -6,7 +6,7 @@ uid: Connector_help_T-Vips_CP525_Technical
 
 ## About
 
-This connector is used for the CP525 multiplexer model from T-Vips and allows SNMP monitoring and configuration of this device.
+This connector is used for the CP525 multiplexer model from T-Vips. It allows SNMP monitoring and configuration of this device.
 
 ## Configuration
 
@@ -26,19 +26,11 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device (default: *public*).
 - **Set community string**: The community string used when setting values on the device (default: *private*).
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to Use
 
 The connector contains parameters for monitoring **alarms**, **input**, **outputs**, and **transport streams** on the corresponding (sub)pages.
 

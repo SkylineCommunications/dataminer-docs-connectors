@@ -4,11 +4,11 @@ uid: Connector_help_Rohde_Schwarz_NetCCU800_Technical
 
 # Rohde & Schwarz NetCCU800
 
-The **Rohde & Schwarz NetCCU800** is a common control unit for FM and TV transmitters.
-
 ## About
 
-This connector allows you to access various information on the device. It is possible to **get and set** **data** on the many modules listed below. In addition, the connector also acts as an event receiver for **SNMP** **traps**.
+The **Rohde & Schwarz NetCCU800** is a common control unit for FM and TV transmitters.
+
+This connector allows you to access various information on the device. It is possible to **get and set data** on the many modules listed below. In addition, the connector also acts as an event receiver for **SNMP traps**.
 
 ## Installation and configuration
 
@@ -20,7 +20,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device e.g., *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -28,7 +28,7 @@ SNMP Settings:
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private.*
 
-## Usage
+## How to Use
 
 ### General Page
 
@@ -56,9 +56,9 @@ These two pages display specific information for each DVB receiver, and allow yo
 
 ### Transmitter Page
 
-This page displays information regarding the transmitter status, and separate summary information for **Exciter A** and **Exciter B**.
+This page displays information regarding the transmitter status and separate summary information for **Exciter A** and **Exciter B**.
 
-The **Tx Events Table** page button displays the **Tx Events Table**, which contains a list of all existing events on the device. This table is polled from the device on startup and the values are refreshed every time a trap is received. You can set the **Event Tx Mask** value for the event as well as the **Event Priority.**
+The **Tx Events Table** page button displays the **Tx Events Table**, which contains a list of all existing events on the device. This table is polled from the device on startup, and the values are refreshed every time a trap is received. You can set the **Event Tx Mask** value for the event as well as the **Event Priority.**
 
 ### Transmitter Settings Page
 
@@ -77,7 +77,7 @@ In addition, the **SFN Delay** page button displays the calculated SFN delay par
 
 ### Exciter Settings Page
 
-This page displays two tables, the **Exciter Pre-Correction Table** and the **ISDBT Transmission** **and** **Multiplexing Configuration Control Table**. Both tables provide useful information about the exciters and allow you to set various parameters for each exciter.
+This page displays two tables, the **Exciter Pre-Correction Table** and the **ISDBT Transmission and Multiplexing Configuration Control Table**. Both tables provide useful information about the exciters and allow you to set various parameters for each exciter.
 
 ### Exciter 1/2 Status Pages
 
