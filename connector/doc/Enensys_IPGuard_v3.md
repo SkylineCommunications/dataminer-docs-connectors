@@ -1,8 +1,12 @@
+---
+uid: Connector_help_Enensys_IPGuard_v3
+---
+
 # Enensys IPGuard v3
 
 ## About
 
-The Enensys IPGuard v3 connector gives operators clear visibility into broadcast stream redundancy on devices that protect IP-based television services. It helps teams quickly understand which path is on-air, whether the redundant streams are synchronized, and when switching events or transport issues could affect service continuity.
+The Enensys IPGuard v3 connector gives operators clear visibility into broadcast stream redundancy on devices that protect IP-based television services. It helps teams quickly understand which path is on air, whether the redundant streams are synchronized, and when switching events or transport issues could affect service continuity.
 
 By exposing the operational state of the IPGuard v3 in DataMiner, the connector supports faster fault isolation and more confident supervision of critical contribution and distribution paths.
 
@@ -16,7 +20,7 @@ By exposing the operational state of the IPGuard v3 in DataMiner, the connector 
 ## Use Cases
 
 - **Supervise redundant IP delivery paths** for contribution or distribution services where uninterrupted output is critical.
-- **Investigate intermittent failovers** by correlating switch activity, synchronization state, and stream-health indicators.
+- **Investigate intermittent failover** by correlating switch activity, synchronization state, and stream health indicators.
 - **Validate backup readiness** by confirming that primary and secondary streams remain aligned and available for seamless switching.
 
 ## Technical Reference
