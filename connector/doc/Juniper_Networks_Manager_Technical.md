@@ -77,7 +77,6 @@ This page displays general device information including **System Name**, **Syste
 
 Page buttons provide access to:
 
-- **Element Settings**: Configure the HTTP and SSH credentials used for HTTP Polling and SSH connections, backup, restore, and firmware upgrade.
 - **Redundancy Table**: Displays redundancy status. Polling can be disabled.
 - **Services**: Displays OSI layer status (Physical, Network, etc.).
 - **Operating Table**: Displays hardware information. Polling can be disabled.
@@ -114,6 +113,10 @@ The **Description** column in all tables on the **RPM Metrics**, **Ping Probe**,
 ### Ping Function Page
 
 This page displays parameters to configure and retrieve statistics for the **Ping Functionality**.
+
+### Element Settings Page
+
+This page displays parameters to configure the HTTP and SSH credentials used for HTTP Polling and SSH connections, backup, restore, and firmware upgrade.
 
 ### Backup / Restore
 
