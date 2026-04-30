@@ -63,3 +63,13 @@ It also allows you to manually delete the series from the DVE configuration tabl
 This page displays the Alarms table. Which is a collection of all the alarms that are currently active in this connector.
 The alarms shown are the latest alarms that has been triggered.
 Some alarm codes do not carry alarm values such as "No ACK". In this case, the alarm value will be shown as "N/A".
+
+
+# DVE Schneider Electric Trio TVIEW+ E Series
+
+## Usage
+### General
+The General Page consists of general information of the Series such as operational status, frequency error, transmit power forward, transmit power reverse, location and more.
+
+### Alarms
+This page displays the latest active alarm for this Series. If set to N/A, then it means that there is no active alarms for this Series.
