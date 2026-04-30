@@ -8181,6 +8181,9 @@
     topicUid: Connector_help_Rohde_Schwarz_NETCCU700
   - name: Rohde Schwarz NetCCU800
     topicUid: Connector_help_Rohde_Schwarz_NetCCU800
+    items:
+      - name: Rohde Schwarz NetCCU800 Technical
+        topicUid: Connector_help_Rohde_Schwarz_NetCCU800_Technical
   - name: Rohde Schwarz NetCCU800 1+1
     topicUid: Connector_help_Rohde_Schwarz_NetCCU800_1+1
   - name: Rohde Schwarz NetCCU800 1+1 TxA
@@ -9761,6 +9764,9 @@
     topicUid: Connector_help_T-Vips_CP510
   - name: T-Vips CP525
     topicUid: Connector_help_T-Vips_CP525
+    items:
+    - name: T-Vips CP525 Technical
+      topicUid: Connector_help_T-Vips_CP525_Technical
   - name: T-Vips CP540
     topicUid: Connector_help_T-Vips_CP540
   - name: T-Vips CP541
