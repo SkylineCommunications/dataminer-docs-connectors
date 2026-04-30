@@ -46,7 +46,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-For SSH and HTTP communication, a **User Name** and **Password** must be configured. On the **General** page of the element, you can configure HTTP credentials, while the SSH credentials can be configured via the **SSH Settings** page button.
+For SSH and HTTP communication, a **User Name** and **Password** must be configured. On the **Element Settings** page of the element, you can configure HTTP credentials and the SSH credentials.
 
 By default, all tables are polled. To reduce polling:
 
@@ -75,11 +75,9 @@ The web interface is only accessible when the client machine has network access 
 
 This page displays general device information including **System Name**, **System Uptime**, **CPU Usage**, and **Memory Usage**.
 
-From version 1.0.10.x onwards, the **User Name** and **Password** for the HTTP connection can be configured directly on this page.
-
 Page buttons provide access to:
 
-- **Credentials**: Configure the SSH username and password used for SSH connections, backup, restore, and firmware upgrade.
+- **Element Settings**: Configure the HTTP and SSH credentials used for HTTP Polling and SSH connections, backup, restore, and firmware upgrade.
 - **Redundancy Table**: Displays redundancy status. Polling can be disabled.
 - **Services**: Displays OSI layer status (Physical, Network, etc.).
 - **Operating Table**: Displays hardware information. Polling can be disabled.
