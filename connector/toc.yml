@@ -3265,6 +3265,8 @@
     topicUid: Connector_help_Enensys_InverTS
   - name: Enensys IPGuard v2
     topicUid: Connector_help_Enensys_IPGuard_v2
+  - name: Enensys IPGuard v3
+    topicUid: Connector_help_Enensys_IPGuard_v3
   - name: Enensys NetMod DVBT2
     topicUid: Connector_help_Enensys_NetMod_DVBT2
   - name: Enensys SafeSplitter
