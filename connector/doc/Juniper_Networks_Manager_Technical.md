@@ -46,7 +46,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-For SSH and HTTP communication, a **User Name** and **Password** must be configured. On the **Element Settings** page of the element, you can configure HTTP credentials and the SSH credentials.
+For **SSH and HTTP communication**, credentials must be configured on the **Element Settings** page of the element.
 
 By default, all tables are polled. To reduce polling:
 
@@ -116,7 +116,7 @@ This page displays parameters to configure and retrieve statistics for the **Pin
 
 ### Element Settings Page
 
-This page displays parameters to configure the HTTP and SSH credentials used for HTTP Polling and SSH connections, backup, restore, and firmware upgrade.
+On this page, you can configure the HTTP and SSH credentials used for HTTP polling and SSH connections, backup, restore, and firmware upgrade.
 
 ### Backup / Restore
 
