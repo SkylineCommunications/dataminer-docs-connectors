@@ -3997,6 +3997,9 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_COMPRESS
   - name: EVS Neuron NAP - CONVERT
     topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT
+    items:
+      - name: EVS Neuron NAP - CONVERT Technical
+        topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT_Technical
   - name: EVS Neuron NAP - PROTECT
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
