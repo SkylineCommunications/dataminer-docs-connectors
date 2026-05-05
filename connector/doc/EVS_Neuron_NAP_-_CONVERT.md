@@ -4,47 +4,33 @@ uid: Connector_help_EVS_Neuron_NAP_-_CONVERT
 
 # EVS Neuron NAP - CONVERT
 
-This connector is designed for the monitoring of the convert function of the EVS Neuron.
-
 ## About
 
-### Version Info
+The EVS Neuron NAP - CONVERT connector enables real-time monitoring and control of Neuron Convert devices, which provide high-density video and audio format conversion. This connector allows broadcast operators to manage and supervise conversion operations efficiently within their broadcast environments.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+## Key Features
 
-### System Info
+- **Comprehensive device monitoring**: Access detailed device identity, firmware version, and API information for Neuron Convert devices.
+- **Video path and channel monitoring**: Gain full visibility into video processing paths and their associated channels, including input selection, lock status, output format, and deinterlacing settings.
+- **Input format tracking**: Monitor the active, main, and backup input formats per video channel to quickly detect and respond to format mismatches or failovers.
+- **Advanced video processing configuration**: Configure and monitor delay and frame sync settings, audio embedders, RGB gain and color correction, HDR color space conversion, and scaling per video channel.
+- **Flexible polling management**: Use the built-in Polling Manager to control how frequently each data group is retrieved from the device, with support for on-demand polling.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
+## Use Case
 
-## Configuration
+**Challenge**: Managing and monitoring complex video format conversion operations across multiple channels in a broadcast environment, where format mismatches or misconfigured processing settings can lead to on-air issues.
 
-### Connections
+**Solution**: The connector provides centralized monitoring and configuration of Neuron Convert devices, offering a structured overview of video processing paths, channels, and their detailed settings — all from within DataMiner.
 
-#### IP Connection
+**Benefit**: Reduces operational overhead and accelerates fault detection by consolidating all conversion device data into a single element, enabling operators to quickly identify misconfigurations or format issues across all channels.
 
-This connector uses a serial connection and requires the following input during element creation:
+## Technical Reference
 
-SERIAL CONNECTION:
+### Prerequisites
 
-- Interface connection:
+- **Network connectivity** is required for IP-based monitoring and control.
+- **Firmware version 6.x** is required.
+- **DataMiner version 10.4.0** or higher is required.
 
-  - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination (fixed value: *2072*).
-
-## How to use
-
-The connector does not have a polling timer. It only polls the data at element startup; however, there is also a button available that allows you to trigger the polling manually.
-
-After element startup, the connector can also receive events (unsolicited messages).
-
-You can track the progress of this data retrieval through two loading bars. These bars indicate the polling status for the device's functionalities.
-
-## DataMiner Connectivity Framework
-
-The **1.0.0.x** range of the EVS Neuron NAP - CONVERT connector supports the usage of DCF.
-
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_EVS_Neuron_NAP_-_CONVERT_Technical).
