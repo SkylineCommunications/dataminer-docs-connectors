@@ -2823,10 +2823,10 @@
     topicUid: Connector_help_Delta_Electronics_HEC_1004
 - name: Delta Power Solutions
   items:
-  - name: Delta Power Solutions Orion controller
+  - name: Delta Power Solutions Orion Controller
     topicUid: Connector_help_Delta_Power_Solutions_Orion_Controller
     items:
-    - name: Delta Power Solutions Orion controller Technical
+    - name: Delta Power Solutions Orion Controller Technical
       topicUid: Connector_help_Delta_Power_Solutions_Orion_Controller_Technical
 - name: DEV
   items:

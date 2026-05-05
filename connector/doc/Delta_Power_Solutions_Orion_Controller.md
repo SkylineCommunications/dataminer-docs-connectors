@@ -25,4 +25,4 @@ With structured views for system inventory, load monitoring, battery management,
 ## Technical Reference
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Delta_Power_Solutions_Orion_controller_Technical).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_Delta_Power_Solutions_Orion_Controller_Technical).
