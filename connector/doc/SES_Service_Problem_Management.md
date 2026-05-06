@@ -20,9 +20,7 @@ The SES Service Problem Management connector integrates the DataMiner SDM Ticket
 
 - **Real-time monitoring**: Live tracking of managed tickets with visibility on synchronization status, frequency, and ticket counts through an intuitive interface.
 
-- **Event-based ticket ingestion**: The connector subscribes to the DataMiner SDM Ticketing module's creation events. When a new SES ticket is created, the connector is notified in real time, immediately adds the ticket to its internal table, and triggers SNOW service problem creation — without waiting for the next synchronization cycle.
-
-- **Creation status tracking**: Each ticket row tracks its lifecycle state through a Creation Status field (`None`, `Buffered`, `Created`), giving operators visibility into whether a ticket is awaiting SNOW creation, in progress, or confirmed.
+- **Event-based ticket ingestion**: The connector supports near-real-time ticket processing, allowing newly created tickets to be detected and handled immediately. This helps teams accelerate incident response and reduce delays caused by synchronization intervals.
 
 ## Use Cases
 
