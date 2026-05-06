@@ -35,7 +35,7 @@ When the element has been created, the following configuration steps are require
 
 1. On the **Support NOC** page, add your support NOC entries and set a default NOC for ticket assignment.
 
-1. On the **General** page, set **Poll Active Alarms** to _Enabled_ to start monitoring alarms.
+1. On the **General** page, set **Poll Active Alarms** to *Enabled* to start monitoring alarms.
 
 On first startup (1.1.0.x only), the connector will automatically initialize the following:
 
@@ -50,7 +50,7 @@ The following parameters can be configured on the **General Configurations** pag
 - **Ticket Escalation Time** (10–600 seconds, default: 30s): The time before an event is escalated to a ticket.
 - **Ticket Lookup Frequency**: Determines how often the connector checks for ticket status updates.
 - **Ticket Follow-up Delay**: The delay for handling events that clear before a ticket is created.
-- **Cleanup Method**: Determines whether resolved events are cleaned up based on _Max Number_ or _Max Duration_.
+- **Cleanup Method**: Determines whether resolved events are cleaned up based on *Max Number* or *Max Duration*.
 - **Event-Based Alarm Ingestion** (Enabled/Disabled, default: Enabled): Enables or disables event-based alarm ingestion. When enabled, the connector automatically creates and manages a correlation rule that triggers the Alarm Forwarder automation script on qualifying alarm changes across all DMAs. The correlation rule is managed by the DMA hosting this connector. The script executes in parallel for different alarms.
 - **Alarm Forwarder Correlation Rule** (string, default: "Alarm Forwarder"): The name of the correlation rule created and managed by the connector. Changing this value disables the current rule and creates a new one with the updated name.
 - **Alarm Forwarder Automation Script** (string, default: "Alarm Forwarder"): The name of the automation script executed by the correlation rule. Changing this value updates the script reference in the active rule.

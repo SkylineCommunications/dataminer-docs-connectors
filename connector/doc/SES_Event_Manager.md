@@ -14,7 +14,7 @@ By bridging the gap between alarm monitoring and ticket management, this connect
 
 - **Automated event detection and tracking**: The connector polls active alarms at configurable intervals and processes them into structured events. Each event captures essential metadata such as severity, source element, and associated services, giving your team immediate visibility into operational issues. Optionally, event-based ingestion can be enabled for near-real-time processing without waiting for the next polling cycle.
 
-- **Event-based alarm ingestion**: In addition to polling, the connector supports near-real-time event processing. It automatically creates and manages a correlation rule that triggers the Alarm Forwarder automation script on qualifying alarm changes across all DMAs in the cluster. The script runs in parallel for different alarms, collecting alarm details, properties, parent services, and table severity, and pushes the data directly to the connector's buffer table — bypassing the polling interval entirely.
+- **Event-based alarm ingestion**: In addition to polling, the connector supports near-real-time alarm processing, enabling faster detection and handling of alarm changes as they occur. This helps reduce response delays and improves operational responsiveness without waiting for the next polling cycle.
 
 - **Intelligent ticket management**: Events are automatically evaluated and escalated into tickets based on configurable rules. The connector handles the complete ticket lifecycle, including creation, status updates, and automatic resolution when underlying alarms clear.
 
