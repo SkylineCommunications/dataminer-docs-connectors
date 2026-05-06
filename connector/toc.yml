@@ -4949,6 +4949,10 @@
   items:
   - name: Hewtech Hirakawa HS-600MA
     topicUid: Connector_help_Hewtech_Hirakawa_HS-600MA
+- name: Hikvision
+  items:
+  - name: Hikvision DS-9664NI-M8 NVR
+    topicUid: Connector_help_Hikvision_DS-9664NI-M8_NVR
 - name: Hiltron
   items:
   - name: Hiltron HACU
