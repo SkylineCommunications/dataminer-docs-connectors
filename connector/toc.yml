@@ -74,6 +74,10 @@
   items:
   - name: Accedian Skylight Performance Element GT
     topicUid: Connector_help_Accedian_Skylight_Performance_Element_GT
+- name: ACE
+  items:
+  - name: ACE Media Tool INES
+    topicUid: Connector_help_ACE_Media_Tool_INES 
 - name: Acorde
   items:
   - name: Acorde ACTX-KA
