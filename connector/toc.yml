@@ -9923,6 +9923,11 @@
     topicUid: Connector_help_TDF_Plan_Maintenance
   - name: TDF Securisation FM
     topicUid: Connector_help_TDF_Securisation_FM
+  - name: TDF Site Activities
+    topicUid: Connector_help_TDF_Site_Activities
+    items:
+    - name: TDF Site Activities Technical
+      topicUid: Connector_help_TDF_Site_Activities_Technical
   - name: TDF SSDD
     topicUid: Connector_help_TDF_SSDD
   - name: TDF SSDD Mobidarc
