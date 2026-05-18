@@ -5,6 +5,7 @@ uid: Connector_help_Generic_KAFKA_Consumer
 # Generic KAFKA Consumer
 
 ## About
+
 This connector uses a virtual connection that interfaces with KAFKA using a Confluent DLL that polls information for one or more topics via one or more brokers that can be defined in the DataMiner element.
 
 The data retrieved from the API will be offloaded to a compressed GZ file with JSON data per topic. This file can then be ingested and used in other workflows by connectors, automation scripts, etc.
@@ -65,39 +66,35 @@ The following settings are often of use:
 
 ## OAuth Bearer authentication
 
-When the **SASL Mechanism** on the **Authentication** page is set to **OAuth Bearer**, configure the parameters on the dedicated **OAuth** page. The page is split into two sections.
+When the **SASL Mechanism** on the **Authentication** page is set to **OAuth Bearer**, configure the parameters on the dedicated **OAuth** page. You can find more information about these parameters below.
 
 ### OAuth Configuration
 
 These parameters control the general OAuth Bearer behavior:
 
-| Parameter | Description |
-|-----------|-------------|
-| SASL OAuth Bearer Method | The token retrieval method. Select **Default** for a static token or **OIDC** for OpenID Connect token endpoint flow. |
-| Enable SASL OAuth Bearer Unsecure JWT | Enables use of an unsigned JWT. Should only be used for testing purposes. |
-| SASL OAuth Bearer Client ID | The client ID used for OAuth Bearer authentication. |
-| SASL OAuth Bearer Client Secret | The client secret used for OAuth Bearer authentication. |
-| SASL OAuth Bearer Scope | The OAuth scope requested for the token. |
-| SASL OAuth Bearer Extensions | Additional key=value pairs passed to the broker during authentication. |
-| SASL OAuth Bearer Token Endpoint URL | The OAuth/OIDC token endpoint URL used when the method is set to **OIDC**. |
-| SASL OAuth Bearer Grant Type | The OAuth grant type. Choose **Client Credentials** for service-to-service authentication or **JWT Bearer** for assertion-based flows. |
-| SASL OAuth Bearer Metadata Authentication Type | The authentication type used when fetching OIDC metadata from the broker. Set to **Azure IMDS** when running on Azure infrastructure. |
+- **SASL OAuth Bearer Method**: The token retrieval method. Select **Default** for a static token or **OIDC** for OpenID Connect token endpoint flow.
+- **Enable SASL OAuth Bearer Unsecure JWT**: Enables use of an unsigned JWT. Should only be used for testing purposes.
+- **SASL OAuth Bearer Client ID**: The client ID used for OAuth Bearer authentication.
+- **SASL OAuth Bearer Client Secret**: The client secret used for OAuth Bearer authentication.
+- **SASL OAuth Bearer Scope**: The OAuth scope requested for the token.
+- **SASL OAuth Bearer Extensions**: Additional key=value pairs passed to the broker during authentication.
+- **SASL OAuth Bearer Token Endpoint URL**: The OAuth/OIDC token endpoint URL used when the method is set to **OIDC**.
+- **SASL OAuth Bearer Grant Type**: The OAuth grant type. Choose **Client Credentials** for service-to-service authentication or **JWT Bearer** for assertion-based flows.
+- **SASL OAuth Bearer Metadata Authentication Type**: The authentication type used when fetching OIDC metadata from the broker. Set to **Azure IMDS** when running on Azure infrastructure.
 
 ### JWT Assertion
 
 These parameters are used when the grant type is set to **JWT Bearer** and control how the JWT assertion is built and signed:
 
-| Parameter | Description |
-|-----------|-------------|
-| SASL OAuth Bearer Assertion Algorithm | The algorithm used to sign the JWT assertion (e.g. RS256, ES512). |
-| SASL OAuth Bearer Assertion Private Key File | Path to the PEM file containing the private key used to sign the assertion. |
-| SASL OAuth Bearer Assertion Private Key Passphrase | Passphrase protecting the private key file, if applicable. |
-| SASL OAuth Bearer Assertion Private Key PEM | PEM-encoded private key provided inline as an alternative to specifying a file path. |
-| SASL OAuth Bearer Assertion File | Path to a file containing a pre-built JWT assertion, used instead of having the connector build one. |
-| SASL OAuth Bearer Assertion Claim Aud | The audience (`aud`) claim value embedded in the JWT assertion. |
-| SASL OAuth Bearer Assertion Claim Exp Seconds | Lifetime of the JWT assertion in seconds from the time it is created. |
-| SASL OAuth Bearer Assertion Claim Iss | The issuer (`iss`) claim value embedded in the JWT assertion. |
-| SASL OAuth Bearer Assertion Claim JTI Include | When enabled, a unique JWT ID (`jti`) claim is added to the assertion to prevent replay attacks. |
-| SASL OAuth Bearer Assertion Claim Nbf Seconds | The not-before (`nbf`) offset in seconds relative to the current time. |
-| SASL OAuth Bearer Assertion Claim Sub | The subject (`sub`) claim value embedded in the JWT assertion. |
-| SASL OAuth Bearer Assertion JWT Template File | Path to a JSON file containing additional claim templates merged into the assertion. |
+- **SASL OAuth Bearer Assertion Algorithm**: The algorithm used to sign the JWT assertion (e.g., RS256, ES512).
+- **SASL OAuth Bearer Assertion Private Key File**: Path to the PEM file containing the private key used to sign the assertion.
+- **SASL OAuth Bearer Assertion Private Key Passphrase**: Passphrase protecting the private key file, if applicable.
+- **SASL OAuth Bearer Assertion Private Key PEM**: PEM-encoded private key provided inline as an alternative to specifying a file path.
+- **SASL OAuth Bearer Assertion File**: Path to a file containing a pre-built JWT assertion, used instead of having the connector build one.
+- **SASL OAuth Bearer Assertion Claim Aud**: The audience (`aud`) claim value embedded in the JWT assertion.
+- **SASL OAuth Bearer Assertion Claim Exp Seconds**: Lifetime of the JWT assertion in seconds from the time it is created.
+- **SASL OAuth Bearer Assertion Claim Iss**: The issuer (`iss`) claim value embedded in the JWT assertion.
+- **SASL OAuth Bearer Assertion Claim JTI Include**: When enabled, a unique JWT ID (`jti`) claim is added to the assertion to prevent replay attacks.
+- **SASL OAuth Bearer Assertion Claim Nbf Seconds**: The not-before (`nbf`) offset in seconds relative to the current time.
+- **SASL OAuth Bearer Assertion Claim Sub**: The subject (`sub`) claim value embedded in the JWT assertion.
+- **SASL OAuth Bearer Assertion JWT Template File**: Path to a JSON file containing additional claim templates merged into the assertion.
