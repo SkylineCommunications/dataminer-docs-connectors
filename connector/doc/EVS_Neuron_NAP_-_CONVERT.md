@@ -12,7 +12,7 @@ The EVS Neuron NAP - CONVERT connector enables real-time monitoring and control 
 
 - **Comprehensive device monitoring**: Access detailed device identity, firmware version, and API information for Neuron Convert devices.
 - **Video path and channel monitoring**: Gain full visibility into video processing paths and their associated channels, including input selection, lock status, output format, and deinterlacing settings.
-- **Input format tracking**: Monitor the active, main, and backup input formats per video channel to quickly detect and respond to format mismatches or failovers.
+- **Input format tracking**: Monitor the active, main, and backup input formats per video channel to quickly detect and respond to format mismatches or failover switches.
 - **Advanced video processing configuration**: Configure and monitor delay and frame sync settings, audio embedders, RGB gain and color correction, HDR color space conversion, and scaling per video channel.
 - **Flexible polling management**: Use the built-in Polling Manager to control how frequently each data group is retrieved from the device, with support for on-demand polling.
 

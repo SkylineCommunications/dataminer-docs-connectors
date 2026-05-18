@@ -55,7 +55,7 @@ The **Polling Settings** page contains the **Polling Manager** table, which list
 
 ### Protocol Queue Page
 
-The **Protocol Queue** page provides insight into the connector's internal request handling. When changes are made, the connector builds and queues HTTP requests accordingly, and may bundle multiple updates into a single request where possible. This page shows the item currently being processed and the full queue of pending requests, which is useful for understanding connector behavior or diagnosing unexpected communication patterns.
+The **Protocol Queue** page provides insight into the connector's internal request handling. When changes are made, the connector builds and queues HTTP requests accordingly, and it may bundle multiple updates into a single request where possible. This page shows the item currently being processed and the full queue of pending requests, which is useful for understanding connector behavior or diagnosing unexpected communication patterns.
 
 ### Video Processing Page
 
@@ -69,7 +69,7 @@ The **Video Path Processing** page contains a table listing all video paths on t
 
 The **Video Channel Processing** page contains a table listing all video processing channels, including their **assigned path**, **input selection**, **lock status**, **output format**, and **deinterlacer settings**. From this page you can navigate to the following sub-pages:
 
-- **Input Formats**: Lists the **active**, **main**, and **backup input formats** per channel. This allows you to detect format mismatches or active failovers.
+- **Input Formats**: Lists the **active**, **main**, and **backup input formats** per channel. This allows you to detect format mismatches or active failover switches.
 - **Delay & Frame Sync**: Shows the **frame delay**, **vertical and horizontal delay**, **IO delay**, and **frame sync alignment** settings per channel.
 - **Embedders**: Displays and allows configuration of the **audio and data embedder mode** and **audio group selection** per channel.
 - **RGB Gain**: Shows the **RGB gain**, **black levels**, **clipping**, and **hue shift** color correction settings per channel.
