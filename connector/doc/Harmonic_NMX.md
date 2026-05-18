@@ -233,3 +233,12 @@ The ObjectModifiedNotification/ObjectCreatedNotification service plan request is
 ## Notes
 
 As range 4.1.0.x/4.1.1.x and 4.2.0.x use the REST API introduced in firmware 8, there are some parameters and metrics that are not available compared to previous ranges, where the connector communication used the XML SAPI.
+
+### Exported components
+
+The following exported components are available depending on the connector range:
+
+| Connector range    | Exported components                            |
+|--------------------|------------------------------------------------|
+| 4.1.0.x            | Harmonic NMX - Device                          |
+| 4.1.1.x - 4.2.0.x  | Harmonic NMX - Device<br>Harmonic NMX - Switch |
