@@ -21,7 +21,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 ### Initialization
 
-Smappee is an open API, so the connector will begin fetching data from the moment the **Client Id**, **Client Secret**, **Username**, **Password** is provided on the **Element Settings** page.
+Smappee is an open API, so the connector will begin fetching data from the moment the **Client ID**, **Client Secret**, **Username**, and **Password** are provided on the **Element Settings** page.
 
 ## How to Use
 

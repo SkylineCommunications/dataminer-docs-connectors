@@ -9167,6 +9167,13 @@
   items:
   - name: Slack Messaging
     topicUid: Connector_help_Slack_Messaging
+- name: Smappee
+  items:
+  - name: Smappee Platform
+    topicUid: Connector_help_Smappee_Platform
+    items:
+    - name: Smappee Platform Technical
+      topicUid: Connector_help_Smappee_Platform_Technical
 - name: Smartgrid
   items:
   - name: Smartgrid PDU General

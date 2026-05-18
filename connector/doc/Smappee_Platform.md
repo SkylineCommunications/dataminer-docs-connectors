@@ -10,9 +10,9 @@ The Smappee Platform connector enables centralized monitoring of Smappee devices
 
 ## Key Features
 
-- **Charging Station**: Retrieve and monitor real-time Charging information.
-- **Charging Session Data**: Access analysis and monitoring data for all charging sessions for the charging stations.
-- **Cost Analysis data**: Monitor the cost of each location.
+- **Charging station**: Retrieve and monitor real-time charging information.
+- **Charging session data**: Access analysis and monitoring data for all charging sessions for the charging stations.
+- **Cost analysis data**: Monitor the cost of each location.
 
 ## Technical Reference
 
