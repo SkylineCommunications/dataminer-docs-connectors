@@ -14,14 +14,14 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 
 #### SNMP Main Connection
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+This connector uses a SNMP protocol connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
 - **IP address/host**: The IP address where the traps should be received.
 
 >[!NOTE]
-> The IP address defined in the SNMP connection will be set in the parameter **Trap IP Sources** by default, but you can change it to any other IP address if needed (see [General](xref:Connector_help_Generic_Trap_Receiver_Technical#General), Trap IP Sources).
+> The IP address defined in the SNMP connection will be set by default in the parameter **Trap IP Sources**. The IP address defined in the parameter can be set to a different IP address if required. (see [General](xref:Connector_help_Generic_Trap_Receiver_Technical#General), Trap IP Sources). Updated values on the parameter **Trap IP Sources** will not be synchronized with the one defined in the SNMP connection.
 
 SNMP Settings:
 
