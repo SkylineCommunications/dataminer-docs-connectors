@@ -47,23 +47,25 @@ Add one or more **topics** to the element:
 #### Optional Configuration
 
 To configure authentication, go to the **Authentication page** of the element and fill out the parameters with the necessary information. The following authentication methods are supported:
+
 - **SSL**
   - SSL Certificate
   - SSL CA with Public/Private Key
 - **SASL SSL**
-  - Mechanisms supported: Plain, SCRAM 256, SCRAM 512, OAuth Bearer
+  - Supported mechanisms: Plain, SCRAM 256, SCRAM 512, OAuth Bearer
   - SASL Credentials
   - Same SSL Certificate authentication
 - **None**
 
 To configure OAuth Bearer authentication, go to the **OAuth page** of the element. See [OAuth Bearer authentication](#oauth-bearer-authentication) for details.
 
-To configure data format, go to **Consumer** page of the element and you may update the **Data Format** parameter to the message format in the Kafka broker. The following formats are supported:
+To configure the data format, go to the **Consumer** page of the element and update the **Data Format** parameter to the message format in the Kafka broker. The following formats are supported:
+
 - **String**
 - **AVRO**
 
 > [!NOTE]
-> If consuming AVRO messages, the exported messages will need to be deserialized using the AVRO schema in an external method
+> If AVRO messages are consumed, the exported messages will need to be deserialized using the AVRO schema in an external method.
 
 ## How to use
 
