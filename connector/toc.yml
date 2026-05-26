@@ -8007,8 +8007,8 @@
   items:
   - name: Red Hat Enterprise Cluster Suite
     topicUid: Connector_help_Red_Hat_Enterprise_Cluster_Suite
-  - name: Red Hat Enterprise Openshift
-    topicUid: Connector_help_Red_Hat_Enterprise_Openshift
+  - name: Red Hat Enterprise OpenShift
+    topicUid: Connector_help_Red_Hat_Enterprise_OpenShift
 - name: RedRat
   items:
   - name: RedRat irNetBox
