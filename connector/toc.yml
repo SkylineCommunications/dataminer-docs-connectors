@@ -11091,6 +11091,10 @@
       topicUid: Connector_help_Warner_Bros_Discovery_Sports_SMPTE_2022-7_Hitless_Service_Technical
   - name: Warner Bros Discovery Sports Transmission Orders
     topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
+- name: Waterkotte
+  items:
+  - name: Waterkotte Heatpump
+    topicUid: Connector_help_Waterkotte_Heatpump
 - name: Wavestream
   items:
   - name: Wavestream BUC POB-KAN120-HW24

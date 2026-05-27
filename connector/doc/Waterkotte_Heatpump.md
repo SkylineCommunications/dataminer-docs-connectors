@@ -10,11 +10,12 @@ The Waterkotte Heatpump connector enables monitoring of the heatpump of Waterkot
 
 ## Key Features
 
-- **Compressors**: Retrieve and monitor real-time compressor information.
+- **Compressor information**: Retrieve and monitor real-time compressor information.
 - **Alround info heatpump**: Access analysis and monitoring data for all .
 - **Slave unit**: Retrieve data from the slave unit.
 
-## Technical Reference
+## Technical Information
 
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Waterkotte_Heatpump_Technical).
+When you configure a DataMiner element using this connector, specify the IP address linked to the modbus and the port used to connect to the modbus (default: 503).
+
+Once an element is configured, the connector will automatically start polling data from the Waterkotte Heatpump API.
