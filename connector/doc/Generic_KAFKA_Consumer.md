@@ -46,9 +46,26 @@ Add one or more **topics** to the element:
 
 #### Optional Configuration
 
-To configure authentication, go to the **Authentication page** of the element and fill out the parameters with the necessary information.
+To configure authentication, go to the **Authentication page** of the element and fill out the parameters with the necessary information. The following authentication methods are supported:
+
+- **SSL**
+  - SSL Certificate
+  - SSL CA with Public/Private Key
+- **SASL SSL**
+  - Supported mechanisms: Plain, SCRAM 256, SCRAM 512, OAuth Bearer
+  - SASL Credentials
+  - Same SSL Certificate authentication
+- **None**
 
 To configure OAuth Bearer authentication, go to the **OAuth page** of the element. See [OAuth Bearer authentication](#oauth-bearer-authentication) for details.
+
+To configure the data format, go to the **Consumer** page of the element and update the **Data Format** parameter to the message format in the Kafka broker. The following formats are supported:
+
+- **String**
+- **AVRO**
+
+> [!NOTE]
+> If AVRO messages are consumed, the exported messages will need to be deserialized using the AVRO schema in an external method.
 
 ## How to use
 
@@ -91,10 +108,10 @@ These parameters are used when the grant type is set to **JWT Bearer** and contr
 - **SASL OAuth Bearer Assertion Private Key Passphrase**: Passphrase protecting the private key file, if applicable.
 - **SASL OAuth Bearer Assertion Private Key PEM**: PEM-encoded private key provided inline as an alternative to specifying a file path.
 - **SASL OAuth Bearer Assertion File**: Path to a file containing a pre-built JWT assertion, used instead of having the connector build one.
-- **SASL OAuth Bearer Assertion Claim Aud**: The audience (`aud`) claim value embedded in the JWT assertion.
+- **SASL OAuth Bearer Assertion Claim Aud**: The audience (**aud**) claim value embedded in the JWT assertion.
 - **SASL OAuth Bearer Assertion Claim Exp Seconds**: Lifetime of the JWT assertion in seconds from the time it is created.
-- **SASL OAuth Bearer Assertion Claim Iss**: The issuer (`iss`) claim value embedded in the JWT assertion.
-- **SASL OAuth Bearer Assertion Claim JTI Include**: When enabled, a unique JWT ID (`jti`) claim is added to the assertion to prevent replay attacks.
-- **SASL OAuth Bearer Assertion Claim Nbf Seconds**: The not-before (`nbf`) offset in seconds relative to the current time.
-- **SASL OAuth Bearer Assertion Claim Sub**: The subject (`sub`) claim value embedded in the JWT assertion.
+- **SASL OAuth Bearer Assertion Claim Iss**: The issuer (**iss**) claim value embedded in the JWT assertion.
+- **SASL OAuth Bearer Assertion Claim JTI Include**: When enabled, a unique JWT ID (**jti**) claim is added to the assertion to prevent replay attacks.
+- **SASL OAuth Bearer Assertion Claim Nbf Seconds**: The not-before (**nbf**) offset in seconds relative to the current time.
+- **SASL OAuth Bearer Assertion Claim Sub**: The subject (**sub**) claim value embedded in the JWT assertion.
 - **SASL OAuth Bearer Assertion JWT Template File**: Path to a JSON file containing additional claim templates merged into the assertion.
