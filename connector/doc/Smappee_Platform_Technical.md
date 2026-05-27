@@ -27,4 +27,4 @@ Smappee is an open API, so the connector will begin fetching data from the momen
 
 Once an element is configured, the connector automatically starts polling data from the Smappee API, retrieving current linked sites, real-time inverter data, and real-time meter data for all linked sites.
 
-On the **API Configuration** page, you can adjust polling parameters and select which weather variables to retrieve from the API.
+On the **Communication Settings** page, you can adjust polling parameters and select which weather variables to retrieve from the API.
