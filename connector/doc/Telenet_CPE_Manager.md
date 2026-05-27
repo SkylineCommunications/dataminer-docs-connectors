@@ -40,46 +40,44 @@ Different elements will be needed:
 
 #### Serial connection
 
-This connector uses a serial connection to receive the syslog messages, and requires the following input during element creation:
+This connector uses a serial connection to receive the SYSLOG messages, and requires the following input during element creation:
 
 **Serial Connection:**
 
-- **IP address/host**: The IP of the DMA where the syslog messages are received.
+- **IP address/host**: The IP of the DMA where the SYSLOG messages are received.
 - **IP Port**: The port that the connector will be listening to, by default *514*.
-- **Bus address**: Not needed.
 
 #### SNMP connection
 
-This connector uses a Simple Network Management Protocol (SNMP) connection to receive the traps coming from the CMTSs, and requires the following input during element creation:
+This connector uses a Simple Network Management Protocol (SNMP) connection to receive SNMP traps coming from the CMTSs, and requires the following input during element creation:
 
 **SNMP Connection:**
 
 - **IP address/host**: 127.0.0.1.
-- **Device address**: Not needed.
 
 **SNMP Settings:**
 
 - **Port Number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: Not needed, because the connector will not perform sets.
+- **Set community string**: Not required since the connector doesn't perform sets.
 
 ### Configuration of the frontend offload parameters
 
-The CPE Manager's data display pages are not intended to be opened. Instead the configuration should be performed either through a multiple set or via a Visio file.
+- The CPE Manager's data pages are not intended to be displayed in DataMiner Cube. Instead, any configuration should be performed either through [multiple set](https://docs.dataminer.services/dataminer/Operator_guide/Elements/Working_with_elements/Updating_elements.html#setting-a-parameter-value-in-multiple-elements) or via a Visio file linked to the element.
 
-The **CPE Manager Type** should be set to *Front-end* for the frontend element.
+- The **CPE Manager Type** should be set to *Front-end* for the frontend element.
 
-**Ratings Offload Folder** contains the location of the offload files with the view ratings. **PROV Source Folder** contains the location of the provisioning files.
+- **Ratings Offload Folder** contains the location of the offload files with the view ratings. **PROV Source Folder** contains the location of the provisioning files.
 
 ### Configuration of the frontend aggregation parameters
 
-**CPE Manager Chassis Aggregation**, **CPE Manager Street Aggregation** and **CPE Manager UAU Aggregation** should always be set to *Off* because the frontend does not contain data for these levels.
+- **CPE Manager Chassis Aggregation**, **CPE Manager Street Aggregation** and **CPE Manager UAU Aggregation** should always be set to *Off* because the frontend does not contain data for these levels.
 
-**CPE Manager Aggregation State** can be set to *Active* to enable all aggregation. This parameter is automatically changed and set to *Hold* when provisioning is going on.
+- **CPE Manager Aggregation State** can be set to *Active* to enable all aggregation. This parameter is automatically changed and set to *Hold* when provisioning is going on.
 
-**CPE Manager Region Aggregation** can be set to *On* to enable the aggregation on Telenet level.
+- **CPE Manager Region Aggregation** can be set to *On* to enable the aggregation on Telenet level.
 
-**Ratings Aggregation Timer State** can be set to *On* to enable the aggregation of the view ratings. The frontend manager will offload the view ratings every 15 minutes.
+- **Ratings Aggregation Timer State** can be set to *On* to enable the aggregation of the view ratings. The frontend manager will offload the view ratings every 15 minutes.
 
 ### Configuration of the frontend provisioning parameters
 
@@ -91,25 +89,25 @@ PROV Result Table and PROV Logging are both tables that contain more info about 
 
 ### Configuration of the backend offload parameters
 
-The **CPE Manager Type** should be set to *Back-end* for the backend elements.
+- The **CPE Manager Type** should be set to *Back-end* for the backend elements.
 
-The parameter **Data Offload Folder** contains the location of the offload files with aggregation results.
+- The parameter **Data Offload Folder** contains the location of the offload files with aggregation results.
 
-To enable sending traps to Adlex Nouveau per chassis, set the parameter **Chassis AN Enabled** to *Enabled*.
+- To enable sending traps to `Adlex Nouveau` per chassis, set the parameter **Chassis AN Enabled** to *Enabled*.
 
 ### Configuration of the backend aggregation parameters
 
-**CPE Manager RegionAggregation** should always be set to *off* because the backend does not contain data for these levels.
+- **CPE Manager RegionAggregation** should always be set to *off* because the backend does not contain data for these levels.
 
-To enable the aggregation that is executed every 5 minutes on different levels, set the parameters **CPE Manager UAU Aggregation**, **CPE Manager Chassis Aggregation** and **CPE Manager Street Aggregation** to *On*.
+- To enable the aggregation that is executed every 5 minutes on different levels, set the parameters **CPE Manager UAU Aggregation**, **CPE Manager Chassis Aggregation** and **CPE Manager Street Aggregation** to *On*.
 
-To enable the OOS aggregation that is executed every minute, set the parameter **BE OOS Aggregation Timer State** to *On*.
+- To enable the OOS aggregation that is executed every minute, set the parameter **BE OOS Aggregation Timer State** to *On*.
 
-To enable the aggregation of the view ratings from the STB collectors every 5 minutes, set the **Ratings Aggregation Timer State** to *On*. These view ratings of all the backend managers will then be merged by the frontend manager every 15 minutes.
+- To enable the aggregation of the view ratings from the STB collectors every 5 minutes, set the **Ratings Aggregation Timer State** to *On*. These view ratings of all the backend managers will then be merged by the frontend manager every 15 minutes.
 
-To enable the offload of the node and the node frequency data every 15 minutes, set **Node-Offload Timer State** to *On*.
+- To enable the offload of the node and the node frequency data every 15 minutes, set **Node-Offload Timer State** to *On*.
 
-To enable the calculation of the OOS rate every 2 minutes, set the **Change Rate Timer State** to *On*. This calculation is done on the Street and Node level for the OOS of CM, eMTA and STB.
+- To enable the calculation of the OOS rate every 2 minutes, set the **Change Rate Timer State** to *On*. This calculation is done on the Street and Node level for the OOS of CM, eMTA and STB.
 
 ### Configuration of the backend headend parameters
 
@@ -139,16 +137,16 @@ For most of the calculations, the trending database is queried. Out of these val
 
 The rows in the CSV file need to have the following format (semicolon-separated):
 
-1\. **PID**: PID of the parameter for which the normalization should be calculated.
-2. **Table**: The table ID where the parameter is located.
-3. **Nominal Column**: 1-based index where the nominal column is located.
-4. **Total Column**: 1-based index where the total number of CPEs column is located (only used with OOS type).
-5. **Multiplier/Default**: Default value when no trending found: Multiplier \* Total if OOS type or default value.
-6. **Type**: Value 1 if OOS, otherwise other value.
-7. **Description**: A description for this line.
-8. **Pct Limit Jump**: Used in frequency calculations.
-9. **Lower Limit**: Used in frequency calculations.
-10. **Upper Limit**: Used in frequency calculations.
+1. **PID**: PID of the parameter for which the normalization should be calculated.
+1. **Table**: The table ID where the parameter is located.
+1. **Nominal Column**: 1-based index where the nominal column is located.
+1. **Total Column**: 1-based index where the total number of CPEs column is located (only used with OOS type).
+1. **Multiplier/Default**: Default value when no trending found: Multiplier \* Total if OOS type or default value.
+1. **Type**: Value 1 if OOS, otherwise other value.
+1. **Description**: A description for this line.
+1. **Pct Limit Jump**: Used in frequency calculations.
+1. **Lower Limit**: Used in frequency calculations.
+1. **Upper Limit**: Used in frequency calculations.
 
 Because the frequency tables contain too much data in the database to be processed, a different approach is taken. Cumulative average values will be calculated during runtime without looking at the database. As long as the value is between "current baseline - Lower Limit" and "current baseline + Upper Limit", the average is calculated as the baseline value for the next day. If the value is outside these limits, then the baseline will increase or decrease once per day with a percentage of the upper or lower limit. Suppose, for example, that the baseline is 15, the Pct Limit Jump is 20 and the Upper Limit is 3. When the value is 19, then this is higher than 15+3, so the new baseline will increase with 20% of 3, or 0.6, which makes the new baseline value 15.6. If the next value is 20, this will have no effect on the baseline because there was already one jump this day. This way, we avoid that exceptional high values have too much influence on the average baseline calculation. When Upper Limit is not filled in, the same value as Lower Limit is taken.
 
@@ -162,76 +160,78 @@ If you fill in one of the filters (on the left side), the topology diagram view 
 
 You can also right-click an alarm in Cube and select **Open** \>*CPE Manager element name*. This will open the CPE Manager with the filter already filled in at the right position, so the topology is immediately shown.
 
-## Provisioning csv files
+## Provisioning
 
-The frontend manager needs the following files and format (semicolon-separated) to be able to perform provisioning. It will analyze these files and will create new CSV files per headend, which the backend manager can pick up and use for provisioning.
+The `Front-End Manager` element using this connector requires the below CSV files. The format of the CSV files must be semicolon separated. The connector will analyze these files and create new CSV files per headend, which the backend manager can pick up and use for provisioning.
 
 ### hfc_cpe_iaa.csv
 
-1\. Node
-2. DS Group
-3. US Group
-4. House number
-5. House letter
-6. Letter box
-7. Street
-8. Postal
-9. City
-10. SAP ID
-11. Another Operator
-12. CM Mac
-13. INT line
-14. CM HW Type
-15. eMTA MAC
-16. eMTA lines
-17. \# of STB
-18. 18 + \# of STB; STB MAC
+- Node
+- DS Group
+- US Group
+- House number
+- House letter
+- Letter box
+- Street
+- Postal
+- City
+- SAP ID
+- Another Operator
+- CM Mac
+- INT line
+- CM HW Type
+- eMTA MAC
+- eMTA lines
+- \# of STB
+- 18 + \# of STB; STB MAC
 
 ### GIGIntf.csv
 
-1\. Chassis Name
-2. Chassis Public IP
-3. Chassis Private IP
+- Chassis Name: The name of the chassis (CCAP/CMTS). 
+- Chassis Public IP: The public IP address of the chassis, which is used for the traps coming from the CMTS.
+- Chassis Private IP: The private IP address of the chassis, which is used for the provisioning.
 
 ### Channel.csv
 
-1\. Headend Name
-2. Packet
-3. Program
-4. Frequency
-5. Port
-6. Slot
-7. Ring
+- Headend Name
+- Packet
+- Program
+- Frequency
+- Port
+- Slot
+- Ring
 
 ### Network.csv
 
-1\. Headend Name
-2. Service
-3. Service element
-4. Chassis Name
-5. RF Card Name
-6. RF Port Name
-7. DS/US RF Channel
-8. DS/US RF Spectrum map
-9. DS/US group
-10. Node-ID1.Node-IDn
+File Name: `NetworkBSR1.csv`
+
+- Headend Name: The name of the headend (e.g. GENT, AALS, ...).
+- Service: The type of service (e.g. DOCSIS)
+- Service element: the service specification (e.g. DOCSIS-3.0, DOCSIS-3.1, ...)
+- Chassis Name: The name of the chassis (e.g. `CAP70AALS01`, `CAP70AALS02`, ...)
+- RF Card Name: The name of the line card in the chassis (e.g. `CRDCAP70AALS01-09`)
+- RF Port Name: The name of the RF port on the line card (e.g. `PRTCAP70AALS01-09-0U3-03`)
+- DS/US RF Channel: The downstream or upstream RF channel on which the service is provided (e.g. `UChCAP70AALS01-09-CHID41`)
+- DS/US RF Spectrum map: Spectrum map of the downstream or upstream RF channel on which the service is provided (e.g. `UCM-CAP70AALS01-09-U4`)
+- DS/US group: The service group on which the service is provided (e.g. `UH70AALS193`)
+- Node-ID1.Node-IDn: The nodes on which the service is provided, separated by a dot (`.`) (e.g. `H70GA01AAC0`)
 
 ### UAUInfo.csv
 
-1\. Node
-2. Sub UAU
-3. Main UAU
-4. Packet
+- Node
+- Sub UAU
+- Main UAU
+- Packet
 
 ### vod_buildout.csv
 
-1\. Headend Name
-2. Node Name
-3. Frequency
-4. Vod RF Port
-5. Vod RF Card
-6. Vod Chassis Name
-7. Vod SG Group
+- Headend Name
+- Node Name
+- Frequency
+- VOD RF Port
+- VOD RF Card
+- VOD Chassis Name
+- VOD SG Group
 
 ## Generated node offload csv files
 
@@ -239,45 +239,45 @@ In one file, the backend manager will offload the node data as well as the frequ
 
 ### Node data structure
 
-1\. Timestamp
-2. Node Name
-3. \#CM OOS
-4. \#eMTA OOS
-5. \#STB OOS
-6. %CM With DS CR \> T
-7. %CM With DS UR \> T
-8. %CM With US CR \> T
-9. %CM With US UR \> T
-10. %MTA Not In Pass
-11. %MTA Not In Operational
-12. %STB With Restart
-13. %CM With US Level \> T
-14. CM Avg RTT
-15. {INFO_ID++} *(fixed)*
+- Timestamp
+- Node Name
+- \#CM OOS
+- \#eMTA OOS
+- \#STB OOS
+- %CM With DS CR \> T
+- %CM With DS UR \> T
+- %CM With US CR \> T
+- %CM With US UR \> T
+- %MTA Not In Pass
+- %MTA Not In Operational
+- %STB With Restart
+- %CM With US Level \> T
+- CM Avg RTT
+- {INFO_ID++} *(fixed)*
 
 ### Node CM DS frequency data structure
 
-1\. {REF_ID++} *(fixed)
-*2. {INFO_ID} *(fixed)
-*3. 5 or 6 or 11 or 12
-4. Frequency
-5. Avg Level or Avg SNR or %CM With DS CR \> T or %CM With DS UR \> T
+- {REF_ID++} *(fixed)*
+- {INFO_ID} *(fixed)*
+- 5 or 6 or 11 or 12
+- Frequency
+- Avg Level or Avg SNR or %CM With DS CR \> T or %CM With DS UR \> T
 
 ### Node CM US frequency data structure
 
-1\. {REF_ID++} *(fixed)*
-2. {INFO_ID} *(fixed)
-*3. 9 or 10 or 13 or 14
-4. Frequency
-5. Avg Level or Avg SNR or %CM With US CR \> T or %CM With US UR \> T
+- {REF_ID++} *(fixed)*
+- {INFO_ID} *(fixed)*
+- 9 or 10 or 13 or 14
+- Frequency
+- Avg Level or Avg SNR or %CM With US CR \> T or %CM With US UR \> T
 
 ### Node STB frequency data structure
 
-1\. {REF_ID++} *(fixed)
-*2. {INFO_ID} *(fixed)
-*3. 1 or 2 or 3 or 7
-4. Frequency
-5. Avg Level or Avg SNR or Avg BER or %STB With Errors
+- {REF_ID++} *(fixed)*
+- {INFO_ID} *(fixed)*
+- 1 or 2 or 3 or 7
+- Frequency
+- Avg Level or Avg SNR or Avg BER or %STB With Errors
 
 ## Generated view ratings offload CSV files
 
@@ -285,16 +285,16 @@ The frontend manager will offload the view ratings in two files. State offload w
 
 ### State offload structure
 
-1\. Timestamp
-2. Region
-3. \#STB Unknown State
-4. \#STB Standby State
-5. \#STB VOD State
+- Timestamp
+- Region
+- \#STB Unknown State
+- \#STB Standby State
+- \#STB VOD State
 
 ### View offload structure
 
-1\. Timestamp
-2. Region
-3. LIVE or TSB or REC
-4. Channel
-5. \#STB
+- Timestamp
+- Region
+- LIVE or TSB or REC
+- Channel
+- \#STB
