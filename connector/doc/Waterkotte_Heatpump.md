@@ -11,7 +11,7 @@ The Waterkotte Heatpump connector enables monitoring of the heatpump of Waterkot
 ## Key Features
 
 - **Compressor information**: Retrieve and monitor real-time compressor information.
-- **Alround info heatpump**: Access analysis and monitoring data for all .
+- **Alround info heatpump**: Access analysis and monitoring data for all performance info linked to the heatpump.
 - **Slave unit**: Retrieve data from the slave unit.
 
 ## Technical Information
