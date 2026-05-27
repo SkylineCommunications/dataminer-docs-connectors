@@ -40,12 +40,13 @@ The same authorization applies to this connection as the main HTTP connection. S
 
 ### General
 
-The **General** page contains the main connection data. OpenShift uses the OAuth authentication method, based on bearer tokens. The provided token should be retrieved from a Service Account secret in OpenShift that does not expire. If other secrets are used, it is required to manually enter the newly generated secret each day; otherwise, the element will go into timeout and into the *Unauthorized* state.  
-You can also verify the authorization state here, which reflects the login status. Using the refresh data button, you can manually trigger immediate polling of all data.
+The **General** page contains the main connection data. OpenShift uses the OAuth authentication method, based on bearer tokens. The provided token should be retrieved from a Service Account secret in OpenShift that does not expire. If other secrets are used, you will need to manually enter the newly generated secret each day; otherwise, the element will go into timeout and into the *Unauthorized* state.
+
+You can also verify the authorization state on this page, which reflects the login status. Using the refresh data button, you can manually trigger immediate polling of all data.
 
 ### Alerts
 
-The OpenShift cluster exposes an Alertmanager endpoint to manage all active alerts in the system. An overview of all alerts, including their severity, reason, linked POD, and linked node, can be consulted here.
+The OpenShift cluster exposes an "Alertmanager" endpoint to manage all active alerts in the system. An overview of all alerts, including their severity, reason, linked POD, and linked node, can be consulted here.
 
 ### Namespaces
 
@@ -65,4 +66,4 @@ This page displays all services, organized per namespace and node.
 
 ### Labels
 
-An overview of all available labels per node and POD.
+This page shows an overview of all available labels per node and POD.
