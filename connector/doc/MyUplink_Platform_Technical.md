@@ -1,6 +1,7 @@
 ---
 uid: Connector_help_MyUplink_Platform_Technical
 ---
+# MyUplink Platform
 
 ## About
 
@@ -40,5 +41,7 @@ Once you fill in valid Client ID, Client Secret and Authorization Code, click th
 ## How to Use
 
 You can configure the polling of the parameters on the **Communications Settings** sub-page under **Element Settings** page. When adjusting the polling intervals, keep in mind that the API is rate limited.
+
+You can enable/disable the polling of each device in the Devices table using the Polling column. This gives flexibility on which devices to actively monitor and also to comply with the rate limit by disabling the polling of devices which are not going to be actively monitored.
 
 When changing the **Numeric Value** of a parameter on the **Parameters** page, make sure the provided values are within the allowed range of the paraemters with the correct step size.
