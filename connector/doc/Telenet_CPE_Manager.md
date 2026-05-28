@@ -59,11 +59,11 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to re
 
 - **Port Number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: Not required since the connector doesn't perform sets.
+- **Set community string**: Not required as the connector does not perform sets.
 
 ### Configuration of the frontend offload parameters
 
-- The CPE Manager's data pages are not intended to be displayed in DataMiner Cube. Instead, any configuration should be performed either through [multiple set](https://docs.dataminer.services/dataminer/Operator_guide/Elements/Working_with_elements/Updating_elements.html#setting-a-parameter-value-in-multiple-elements) or via a Visio file linked to the element.
+- The CPE Manager's data pages are not intended to be displayed in DataMiner Cube. Instead, any configuration should be performed either through [multiple set](https://aka.dataminer.services/multiple-set) or via a Visio file linked to the element.
 
 - The **CPE Manager Type** should be set to *Front-end* for the frontend element.
 
@@ -162,7 +162,7 @@ You can also right-click an alarm in Cube and select **Open** \>*CPE Manager ele
 
 ## Provisioning
 
-The `Front-End Manager` element using this connector requires the below CSV files. The format of the CSV files must be semicolon separated. The connector will analyze these files and create new CSV files per headend, which the backend manager can pick up and use for provisioning.
+The **frontend** manager element using this connector requires the CSV files mentioned below. The CSV files must be **semicolon-separated**. The connector will analyze these files and create new CSV files per headend, which the backend manager can pick up and use for provisioning.
 
 ### hfc_cpe_iaa.csv
 
@@ -187,7 +187,7 @@ The `Front-End Manager` element using this connector requires the below CSV file
 
 ### GIGIntf.csv
 
-- Chassis Name: The name of the chassis (CCAP/CMTS). 
+- Chassis Name: The name of the chassis (CCAP/CMTS).
 - Chassis Public IP: The public IP address of the chassis, which is used for the traps coming from the CMTS.
 - Chassis Private IP: The private IP address of the chassis, which is used for the provisioning.
 
@@ -203,18 +203,18 @@ The `Front-End Manager` element using this connector requires the below CSV file
 
 ### Network.csv
 
-File Name: `NetworkBSR1.csv`
+File name: `NetworkBSR1.csv`
 
-- Headend Name: The name of the headend (e.g. GENT, AALS, ...).
-- Service: The type of service (e.g. DOCSIS)
-- Service element: the service specification (e.g. DOCSIS-3.0, DOCSIS-3.1, ...)
-- Chassis Name: The name of the chassis (e.g. `CAP70AALS01`, `CAP70AALS02`, ...)
-- RF Card Name: The name of the line card in the chassis (e.g. `CRDCAP70AALS01-09`)
-- RF Port Name: The name of the RF port on the line card (e.g. `PRTCAP70AALS01-09-0U3-03`)
-- DS/US RF Channel: The downstream or upstream RF channel on which the service is provided (e.g. `UChCAP70AALS01-09-CHID41`)
-- DS/US RF Spectrum map: Spectrum map of the downstream or upstream RF channel on which the service is provided (e.g. `UCM-CAP70AALS01-09-U4`)
-- DS/US group: The service group on which the service is provided (e.g. `UH70AALS193`)
-- Node-ID1.Node-IDn: The nodes on which the service is provided, separated by a dot (`.`) (e.g. `H70GA01AAC0`)
+- Headend Name: The name of the headend (e.g., GENT, AALS, etc.).
+- Service: The type of service (e.g., DOCSIS).
+- Service element: The service specification (e.g., DOCSIS-3.0, DOCSIS-3.1, etc.).
+- Chassis Name: The name of the chassis (e.g., `CAP70AALS01`, `CAP70AALS02`, etc.).
+- RF Card Name: The name of the line card in the chassis (e.g., `CRDCAP70AALS01-09`).
+- RF Port Name: The name of the RF port on the line card (e.g., `PRTCAP70AALS01-09-0U3-03`).
+- DS/US RF Channel: The downstream or upstream RF channel on which the service is provided (e.g., `UChCAP70AALS01-09-CHID41`).
+- DS/US RF Spectrum map: The spectrum map of the downstream or upstream RF channel on which the service is provided (e.g., `UCM-CAP70AALS01-09-U4`).
+- DS/US group: The service group on which the service is provided (e.g., `UH70AALS193`).
+- Node-ID1.Node-IDn: The nodes on which the service is provided, separated by a period (`.`) (e.g., `H70GA01AAC0`).
 
 ### UAUInfo.csv
 
