@@ -16,6 +16,6 @@ The Waterkotte Heatpump connector enables monitoring of the heatpump of Waterkot
 
 ## Technical Information
 
-When you configure a DataMiner element using this connector, specify the IP address linked to the modbus and the port used to connect to the modbus (default: 503).
+When you configure a DataMiner element using this connector, specify the IP address linked to the modbus and the port used to connect to the modbus (default: 502).
 
 Once an element is configured, the connector will automatically start polling data from the Waterkotte Heatpump API.
