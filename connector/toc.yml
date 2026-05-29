@@ -870,6 +870,9 @@
     topicUid: Connector_help_Astro_U125_Edge_FM
   - name: Astro U148
     topicUid: Connector_help_Astro_U148
+    items:
+    - name: Astro U148 Technical
+      topicUid: Connector_help_Astro_U148_Technical
   - name: Astro U154 Edge QAM
     topicUid: Connector_help_Astro_U154_Edge_QAM
   - name: Astro U158 Edge QAM
@@ -2823,8 +2826,11 @@
     topicUid: Connector_help_Delta_Electronics_HEC_1004
 - name: Delta Power Solutions
   items:
-  - name: Delta Power Solutions Orion controller
-    topicUid: Connector_help_Delta_Power_Solutions_Orion_controller
+  - name: Delta Power Solutions Orion Controller
+    topicUid: Connector_help_Delta_Power_Solutions_Orion_Controller
+    items:
+    - name: Delta Power Solutions Orion Controller Technical
+      topicUid: Connector_help_Delta_Power_Solutions_Orion_Controller_Technical
 - name: DEV
   items:
   - name: DEV 1985
@@ -3110,6 +3116,9 @@
   items:
   - name: EEG Alta-2110 Caption Encoder
     topicUid: Connector_help_EEG_Alta-2110_Caption_Encoder
+    items:
+    - name: EEG Alta-2110 Caption Encoder Technical
+      topicUid: Connector_help_EEG_Alta-2110_Caption_Encoder_Technical
   - name: EEG Alta-TS Caption Encoder
     topicUid: Connector_help_EEG_Alta-TS_Caption_Encoder
   - name: EEG HD-492 CC Encoder
@@ -3262,6 +3271,8 @@
     topicUid: Connector_help_Enensys_InverTS
   - name: Enensys IPGuard v2
     topicUid: Connector_help_Enensys_IPGuard_v2
+  - name: Enensys IPGuard v3
+    topicUid: Connector_help_Enensys_IPGuard_v3
   - name: Enensys NetMod DVBT2
     topicUid: Connector_help_Enensys_NetMod_DVBT2
   - name: Enensys SafeSplitter
@@ -4411,6 +4422,11 @@
     topicUid: Connector_help_Generic_Modbus_PLC
   - name: Generic Move Files
     topicUid: Connector_help_Generic_Move_Files
+  - name: Generic MQTT Client
+    topicUid: Connector_help_Generic_MQTT_Client
+    items:
+      - name: Generic MQTT Client Technical
+        topicUid: Connector_help_Generic_MQTT_Client_Technical
   - name: Generic Network Services Monitor
     topicUid: Connector_help_Generic_Network_Services_Monitor
   - name: Generic OPC Data Access
@@ -4848,6 +4864,9 @@
     topicUid: Connector_help_Harmonic_NMX_-_Switch
   - name: Harmonic NSG9000 40G
     topicUid: Connector_help_Harmonic_NSG9000_40G
+    items:
+    - name: Harmonic NSG9000 40G Technical
+      topicUid: Connector_help_Harmonic_NSG9000_40G_Technical
   - name: Harmonic NSG9000 6G
     topicUid: Connector_help_Harmonic_NSG9000_6G
   - name: Harmonic NSG 9000
@@ -4938,6 +4957,10 @@
   items:
   - name: Hewtech Hirakawa HS-600MA
     topicUid: Connector_help_Hewtech_Hirakawa_HS-600MA
+- name: Hikvision
+  items:
+  - name: Hikvision DS-9664NI-M8 NVR
+    topicUid: Connector_help_Hikvision_DS-9664NI-M8_NVR
 - name: Hiltron
   items:
   - name: Hiltron HACU
@@ -6031,6 +6054,11 @@
     items:
     - name: Media Links MPU HDBNC Technical
       topicUid: Connector_help_Media_Links_MPU_HDBNC_Technical
+  - name: Media Links Trunk
+    topicUid: Connector_help_Media_Links_Trunk
+    items:
+    - name: Media Links Trunk Technical
+      topicUid: Connector_help_Media_Links_Trunk_Technical
 - name: Mediagenix
   items:
   - name: Mediagenix WHATS On
@@ -7489,10 +7517,10 @@
 - name: Open-Meteo
   items:
   - name: Open-Meteo Weather
-    topicUid: Connector_help_OpenMeteo_Weather
+    topicUid: Connector_help_Open-Meteo_Weather
     items:
     - name: Open-Meteo Weather Technical
-      topicUid: Connector_help_OpenMeteo_Weather_Technical
+      topicUid: Connector_help_Open-Meteo_Weather_Technical
 - name: OpenStack
   items:
   - name: OpenStack Manager
@@ -7610,6 +7638,9 @@
   items:
   - name: Paneda DAB Head-End
     topicUid: Connector_help_Paneda_DAB_Head-End
+    items:
+      - name: Paneda DAB Head-End Technical
+        topicUid: Connector_help_Paneda_DAB_Head-End_Technical
   - name: Paneda DAB Monitor
     topicUid: Connector_help_Paneda_DAB_Monitor
   - name: Paneda DAB Monitor Orchestration
@@ -7976,8 +8007,8 @@
   items:
   - name: Red Hat Enterprise Cluster Suite
     topicUid: Connector_help_Red_Hat_Enterprise_Cluster_Suite
-  - name: Red Hat Enterprise Openshift
-    topicUid: Connector_help_Red_Hat_Enterprise_Openshift
+  - name: Red Hat Enterprise OpenShift
+    topicUid: Connector_help_Red_Hat_Enterprise_OpenShift
 - name: RedRat
   items:
   - name: RedRat irNetBox
@@ -7992,6 +8023,13 @@
   items:
   - name: Resolve Systems Resolve Platform
     topicUid: Connector_help_Resolve_Systems_Resolve_Platform
+- name: RevGo
+  items:
+  - name: RevGo BUC
+    topicUid: Connector_help_RevGo_BUC
+    items:
+    - name: RevGo BUC Technical
+      topicUid: Connector_help_RevGo_BUC_Technical
 - name: RF Design
   items:
   - name: RF Design FlexLink C2
@@ -8158,6 +8196,9 @@
     topicUid: Connector_help_Rohde_Schwarz_NETCCU700
   - name: Rohde Schwarz NetCCU800
     topicUid: Connector_help_Rohde_Schwarz_NetCCU800
+    items:
+      - name: Rohde Schwarz NetCCU800 Technical
+        topicUid: Connector_help_Rohde_Schwarz_NetCCU800_Technical
   - name: Rohde Schwarz NetCCU800 1+1
     topicUid: Connector_help_Rohde_Schwarz_NetCCU800_1+1
   - name: Rohde Schwarz NetCCU800 1+1 TxA
@@ -8507,6 +8548,8 @@
     topicUid: Connector_help_Schneider_Electric_StruxureWare
   - name: Schneider Electric StruxureWare - Device
     topicUid: Connector_help_Schneider_Electric_StruxureWare_-_Device
+  - name: Schneider Electric Trio TVIEW+
+    topicUid: Connector_help_Schneider_Electric_Trio_TVIEW+
 - name: Scientific Atlanta
   items:
   - name: Scientific Atlanta Indus
@@ -9192,6 +9235,16 @@
   items:
   - name: Slack Messaging
     topicUid: Connector_help_Slack_Messaging
+    items:
+     - name: Slack Messaging Technical
+       topicUid: Connector_help_Slack_Messaging_technical
+- name: Smappee
+  items:
+  - name: Smappee Platform
+    topicUid: Connector_help_Smappee_Platform
+    items:
+    - name: Smappee Platform Technical
+      topicUid: Connector_help_Smappee_Platform_Technical
 - name: Smartgrid
   items:
   - name: Smartgrid PDU General
@@ -9590,6 +9643,8 @@
       topicUid: Connector_help_Starlink_Enterprise_Account_Technical
   - name: Starlink Enterprise - User Terminal
     topicUid: Connector_help_Starlink_Enterprise_-_User_Terminal
+  - name: Starlink Enterprise - API V2 Migration
+    topicUid: Connector_help_Starlink_Enterprise_API_V2_Migration
 - name: Stormshield
   items:
   - name: Stormshield Network Security S-Series
@@ -9691,8 +9746,8 @@
     topicUid: Connector_help_SYes_P75-04_UHF_Transmitter
   - name: SYes PCM Television
     topicUid: Connector_help_SYes_PCM_Television
-  - name: SYes SILM5-03 DAB TX-PCM
-    topicUid: Connector_help_SYes_SILM5-03_DAB_TX-PCM
+  - name: SYes SILM5-03 DAB TX-PCM VHF Transmitter
+    topicUid: Connector_help_SYes_SILM5-03_DAB_TX-PCM_VHF_Transmitter
   - name: SYes SYSTEM LOGIC N+1
     topicUid: Connector_help_SYes_SYSTEM_LOGIC_N+1
 - name: Symetrix
@@ -9736,6 +9791,9 @@
     topicUid: Connector_help_T-Vips_CP510
   - name: T-Vips CP525
     topicUid: Connector_help_T-Vips_CP525
+    items:
+    - name: T-Vips CP525 Technical
+      topicUid: Connector_help_T-Vips_CP525_Technical
   - name: T-Vips CP540
     topicUid: Connector_help_T-Vips_CP540
   - name: T-Vips CP541
@@ -9865,6 +9923,11 @@
     topicUid: Connector_help_TDF_Plan_Maintenance
   - name: TDF Securisation FM
     topicUid: Connector_help_TDF_Securisation_FM
+  - name: TDF Site Activities
+    topicUid: Connector_help_TDF_Site_Activities
+    items:
+    - name: TDF Site Activities Technical
+      topicUid: Connector_help_TDF_Site_Activities_Technical
   - name: TDF SSDD
     topicUid: Connector_help_TDF_SSDD
   - name: TDF SSDD Mobidarc
@@ -11028,6 +11091,10 @@
       topicUid: Connector_help_Warner_Bros_Discovery_Sports_SMPTE_2022-7_Hitless_Service_Technical
   - name: Warner Bros Discovery Sports Transmission Orders
     topicUid: Connector_help_Warner_Bros_Discovery_Sports_Transmission_Orders
+- name: Waterkotte
+  items:
+  - name: Waterkotte Heatpump
+    topicUid: Connector_help_Waterkotte_Heatpump
 - name: Wavestream
   items:
   - name: Wavestream BUC POB-KAN120-HW24
