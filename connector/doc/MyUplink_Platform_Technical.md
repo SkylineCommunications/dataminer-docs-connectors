@@ -5,8 +5,6 @@ uid: Connector_help_MyUplink_Platform_Technical
 
 ## About
 
-The **myUplink API** is a RESTful cloud API that lets developers and systems interact with connected devices via the myUplink platform.
-
 The **MyUplink Platform** Connector integrates the MyUplink cloud platform into DataMiner, enabling monitoring, control, and data aggregation of connected HVAC and energy systems (e.g., heat pumps, indoor climate systems).
 The connector communicates with the MyUplink REST API, retrieves device and parameter data, and maps this information into DataMiner elements and parameters.
 
@@ -29,7 +27,9 @@ The myUplink PRO API uses OAuth 2.0 (Client Credentials and Authorization Grant 
 The **Authorization Code** is generated as follows:
 - The user usually starts in the user interface (UI) of the application consuming the integration.
 - The application redirects the user to the APIs login page api-pro.myuplink.com/oauth/login. This endpoint is part of the Identity section of the API.
-- The user logins in with his user and password details.
+- To go to the APIs login page, the user can also use the following URL: https://api-pro.myuplink.com/oauth/authorize?response_type=code&client_id={clientId}&scope=READSYSTEM%20WRITESYSTEM%20offline_access&redirect_uri={redirectUri}&state=x
+  where **{clientId}** must be replaced with your **Client ID** and **{redirectUri}** must be replaced by a valid URL which should match the field **Callback URL** during client registration
+- The user logins with his user and password details.
 - The user selects the service partner they want to login with.
 - The user grants permission to associate his account to the client and permissions.
 - The user is redirected back to the UI of the application consuming the integration.
