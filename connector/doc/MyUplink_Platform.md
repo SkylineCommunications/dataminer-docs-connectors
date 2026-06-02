@@ -6,8 +6,6 @@ uid: Connector_help_MyUplink_Platform
 
 ## About
 
-The **myUplink API** is a RESTful cloud API that lets developers and systems interact with connected devices via the myUplink platform.
-
 The **MyUplink Platform** Connector integrates the MyUplink cloud platform into DataMiner, enabling monitoring, control, and data aggregation of connected HVAC and energy systems (e.g., heat pumps, indoor climate systems).
 The connector communicates with the MyUplink REST API, retrieves device and parameter data, and maps this information into DataMiner elements and parameters.
 
