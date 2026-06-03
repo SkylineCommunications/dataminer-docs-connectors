@@ -9,7 +9,7 @@ uid: Connector_help_Evertz_DreamCatcher
 Evertz DreamCatcher is a scheduling system designed for generating "growing files". It organizes operations through a hierarchy of schedules, events, tasks, and resources, enabling efficient workflow and data handling in media production environments.
 
 > [!IMPORTANT]
-> This connector can only be used with Evertz DreamCatcher Manager devices. It is not supported on Evertz DreamCatcher Playback devices.
+> This connector can only be used with **Evertz DreamCatcher Manager** devices. It does not support Evertz DreamCatcher Playback devices.
 
 ## Key Features
 
