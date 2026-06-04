@@ -14,23 +14,23 @@ The collected data provides visibility into video delivery services implemented 
 
 ### Connections
 
-#### SNMP Main Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-**SNMP CONNECTION:**
+SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or hostname of the device.
 - **IP port**: The SNMP port of the device.
-
-**SNMP CONNECTION -  REDUNDANCY:**
-
-This will serve as an alternative connection to be used in the event that the main SNMP connection experiences an issue. The configuration is identical to the primary one.
 
 SNMP Settings:
 
 - **Get community string**: Used to retrieve data from the device (default: *public*).
 - **Set community string**: Not used by this connector (default: *private*).
+
+#### SNMP Connection - Redundancy
+
+This will serve as an alternative connection to be used in the event that the main SNMP connection experiences an issue. The configuration is identical to that of the main connection.
 
 ## How to Use
 
