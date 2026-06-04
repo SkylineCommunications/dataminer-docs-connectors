@@ -11183,6 +11183,9 @@
     topicUid: Connector_help_WISI_Optopus_Us_Receiver
   - name: WISI Tangram
     topicUid: Connector_help_WISI_Tangram
+    items:
+     - name: WISI Tangram Technical
+       topicUid: Connector_help_WISI_Tangram_Technical
   - name: WISI Tangram GT21
     topicUid: Connector_help_WISI_Tangram_GT21
   - name: WISI Tangram GT22
