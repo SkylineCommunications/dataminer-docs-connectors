@@ -5012,10 +5012,10 @@
     - name: HP Aruba Network Switch Technical
       topicUid: Connector_help_HP_Aruba_Network_Switch_Technical
   - name: HP Aruba Wireless LAN Controller
-    topicUid: HP_Aruba_Wireless_LAN_Controller
+    topicUid: Connector_help_HP_Aruba_Wireless_LAN_Controller
     items:
     - name: HP Aruba Wireless LAN Controller Technical
-      topicUid: HP_Aruba_Wireless_LAN_Controller_Technical
+      topicUid: Connector_help_HP_Aruba_Wireless_LAN_Controller_Technical
   - name: HP BladeSystem c7000
     topicUid: Connector_help_HP_BladeSystem_c7000
   - name: HP Fibre Channel Switch
