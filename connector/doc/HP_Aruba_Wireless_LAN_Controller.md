@@ -56,6 +56,6 @@ By consolidating operational and performance data into a single DataMiner elemen
 
 - SNMP connectivity between DataMiner and the Aruba Wireless LAN Controller.
 - Valid SNMP community strings configured on the controller.
-
+- 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:HP_Aruba_Wireless_LAN_Controller_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_HP_Aruba_Wireless_LAN_Controller_Technical).
