@@ -1,5 +1,5 @@
 ---
-uid: HP_Aruba_Wireless_LAN_Controller_Technical
+uid: Connector_help_HP_Aruba_Wireless_LAN_Controller_Technical
 ---
 
 # HP Aruba Wireless LAN Controller Technical Documentation
