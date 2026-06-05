@@ -76,7 +76,10 @@ The Interfaces page displays interface-related information and statistics for al
 ### License
 
 The License page contains the Switch Licenses table, displaying license information and status for the controller.
-### Wwb Interface Page
+
+### Web Interface Page
+
+Direct access to the Web Interface via Cube.
 
 ## Notes
 
