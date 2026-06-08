@@ -2,7 +2,7 @@
 uid: Connector_technical_Anywave_PA-8D-C-FA
 ---
 
-# Anywave PA-8D-C-FA — Technical Documentation
+# Anywave PA-8D-C-FA
 
 ## About
 
