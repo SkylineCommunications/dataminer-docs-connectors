@@ -49,7 +49,7 @@ The AMPP Manager is equipped with the essential functionality to list fabrics, n
 
 ### Prerequisites
 
-- **DataMiner version 10.6.6 or higher**
+- **DataMiner version 10.6.0/10.6.6 or higher**
 - **SignalR Forwarder 3.4 or higher**
 
 > [!NOTE]
