@@ -12,17 +12,17 @@ By consolidating operational and performance data into a single DataMiner elemen
 
 ## Key Features
 
-- **Controller Health Monitoring**: Monitor controller status, uptime, temperature, CPU usage, memory usage, and storage utilization.
+- **Controller health monitoring**: Monitor controller status, uptime, temperature, CPU usage, memory usage, and storage utilization.
 
-- **Access Point Visibility**: View detailed information about all managed wireless access points from a centralized interface.
+- **Access point visibility**: View detailed information about all managed wireless access points from a centralized interface.
 
-- **Wireless Client Monitoring**: Track connected wireless stations and client-related statistics.
+- **Wireless client monitoring**: Track connected wireless stations and client-related statistics.
 
-- **Resource Utilization Monitoring**: Monitor CPU and memory consumption to identify performance bottlenecks and capacity issues.
+- **Resource utilization monitoring**: Monitor CPU and memory consumption to identify performance bottlenecks and capacity issues.
 
-- **Network Interface Monitoring**: Track interface operational status, traffic statistics, and interface-related metrics.
+- **Network interface monitoring**: Track interface operational status, traffic statistics, and interface-related metrics.
 
-- **License Management Visibility**: Monitor installed licenses and license utilization information.
+- **License management visibility**: Monitor installed licenses and license utilization information.
 
 ## Use Cases
 
@@ -32,7 +32,7 @@ By consolidating operational and performance data into a single DataMiner elemen
 
 **Solution**: The connector provides controller-level monitoring including uptime, CPU, memory, storage, and environmental information.
 
-**Benefit**: Faster detection and resolution of infrastructure issues before they impact wireless services.
+**Benefit**: Faster detection and resolution of infrastructure issues before they affect wireless services.
 
 ### Wireless Client Capacity Management
 
@@ -56,6 +56,6 @@ By consolidating operational and performance data into a single DataMiner elemen
 
 - SNMP connectivity between DataMiner and the Aruba Wireless LAN Controller.
 - Valid SNMP community strings configured on the controller.
-  
+
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_HP_Aruba_Wireless_LAN_Controller_Technical).

@@ -27,13 +27,13 @@ SNMP Settings:
 - **Get community string**: Community string used to retrieve monitoring data from the controller.
 - **Set community string**: Not used by this connector.
 
-### Initialization
+### Web Interface
 
-No additional configuration is required after element creation. Once SNMP connectivity is established, the connector automatically retrieves and displays the available controller information.
+The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
 
-The connector organizes monitoring information across the following pages: **General**, **Access Points**, **Clients**, **Memory**, **CPU**, **Interfaces**, **License**, and **Web Interface**.
+The connector organizes monitoring information across the following pages of the element: [General](#general), [Access Points](#access-points), [Clients](#clients), [Memory](#memory), [CPU](#cpu), [Interfaces](#interfaces), and [License](#license).
 
 ### General
 
@@ -48,7 +48,7 @@ The General page provides high-level controller health and identification inform
 - RAM Memory Usage
 - Flash Memory Usage
 
-### Access
+### Access Points
 
 The Access Points page contains detailed information about all wireless access points managed by the controller.
 
@@ -71,15 +71,11 @@ The CPU page contains the CPU Usage table, displaying processor utilization stat
 
 ### Interfaces
 
-The Interfaces page displays interface-related information and statistics for all monitored interfaces on the controller.
+The Interfaces page displays interface-related information and statistics for all monitored interfaces of the controller.
 
 ### License
 
 The License page contains the Switch Licenses table, displaying license information and status for the controller.
-
-### Web Interface Page
-
-Direct access to the Web Interface via Cube.
 
 ## Notes
 
