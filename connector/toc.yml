@@ -4295,6 +4295,11 @@
     topicUid: Connector_help_General_Dynamics_Model_930A
   - name: General Dynamics Model 950A
     topicUid: Connector_help_General_Dynamics_Model_950A
+  - name: General Dynamics Model 820A
+    topicUid: Connector_help_General_Dynamics_Model_820A
+    items:
+    - name: General Dynamics Model 820A Technical
+      topicUid: Connector_help_General_Dynamics_Model_820A_Technical
   - name: General Dynamics ModuMAX
     topicUid: Connector_help_General_Dynamics_ModuMAX
   - name: General Dynamics RSC1111
