@@ -100,7 +100,7 @@ This page displays the **Modules** table, which contains a list of all SFM/MFM m
 
 For each entry of type GT21, GT22, GT23, and GT41, the **IP Address** and the **DVE Name** can be configured.
 
-The visibility of the Module pages, containing specific information about the modules, can be set here as well. These allow users to see information about the modules without the need to create DVEs for each module.
+The **Show Module Pages** dropdown controls the visibility of the module pages in the main element (Module Networking, Module SNMP, Module HMS, Module Date and Time, Module Input/Output). These pages are always visible by default, but admins can set this to *Visible When Present* to only display pages that are populated, or to *Hidden* to hide all module pages from the main element if they only want to interact with the module data through the DVEs.
 
 ### Switch Page
 
@@ -138,3 +138,29 @@ This page displays every **Input** and **Output** for every card on slots 1 to 6
 ### Supported Card Types Page
 
 This page contains several tables, one for each card type **GT21**, **GT22**, **GT23**, **GT31**,**GT34**, and **GT41**. Each row will generate a DVE.
+
+### Module Networking Page
+
+This page displays the network interface and DNS configuration for all installed modules. The **Interface Table** lists per-interface settings (IP address, VLAN, IGMP version) for each module, identified by the **Module** column (e.g., *M1 (GT41)*). The **DNS Table** shows the DNS configuration per module.
+
+### Module SNMP Page
+
+This page displays the SNMP agent configuration and trap destinations for all installed modules. Each row in the SNMP and Trap Destination tables includes a **Module** column for filtering by card type (e.g., filter on *GT41* to see only GT41 SNMP settings).
+
+### Module HMS Page
+
+This page shows the HMS group configuration per module. HMS groups allow modules to share PSI/SI information for DVB network-wide PSI/SI structure.
+
+### Module Date and Time Page
+
+This page shows the NTP server configuration and date/time settings for all installed modules, including UTC time, timezone, and NTP source per card slot.
+
+### Module Input/Output Page
+
+This page provides access to input and output tables for all installed modules. Use the **Show I/O Pages** toggle button to control visibility of the I/O subpages. Which subpages are displayed depends on the installed card types:
+
+- **QAM**: QAM output data for GT23 cards.
+- **IPv4**: IPv4 output data for GT41 cards.
+- **PAL**, **FM**, **DVB-C**, **DVB-T**, **DVB-S**, **DVB-S2**, **DVB-S2X**: Additional output subpages shown automatically when the corresponding card types are present.
+
+All tables include a **Module** column that identifies the source card (e.g., *M3 (GT23)*), enabling filtering and cross-card comparisons within a single view.
