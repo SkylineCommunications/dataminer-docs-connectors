@@ -10,17 +10,17 @@ The General Dynamics Model 820A connector enables comprehensive monitoring and c
 
 ## Key Features
 
-- **Controller Monitoring**: Track controller type, software version, and system status information.
+- **Controller monitoring**: Track controller type, software version, and system status information.
 
-- **Live Device Display Monitoring**: View real-time device display output.
+- **Live device display monitoring**: View real-time device display output.
 
-- **Antenna Position Tracking**: Monitor azimuth, elevation, and polarization positions with limit awareness.
+- **Antenna position tracking**: Monitor azimuth, elevation, and polarization positions with limit awareness.
 
-- **Signal Control Monitoring**: Track AGC levels, channel selection, and tracking mode status.
+- **Signal control monitoring**: Track AGC levels, channel selection, and tracking mode status.
 
-- **Alarm Management**: Monitor azimuth, elevation, and polarization alarms and movement status.
+- **Alarm management**: Monitor azimuth, elevation, and polarization alarms and movement status.
 
-- **Navigation Data Monitoring**: Track GPS or user-entered coordinates, heading, and magnetic variation data.
+- **Navigation data monitoring**: Track GPS or user-entered coordinates, heading, and magnetic variation data.
 
 ## Use Cases
 

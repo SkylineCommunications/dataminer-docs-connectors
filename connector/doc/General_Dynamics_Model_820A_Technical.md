@@ -19,15 +19,11 @@ This connector uses a serial connection and requires the following input during 
 COMMUNICATION SETTINGS:
 
 - **IP address/host**: IP address or hostname of the Model 820A controller.
-- **IP Port**: 6767 default.
-
-### Initialization
-
-No additional configuration is required after element creation. Once communication is established, the connector automatically retrieves all available telemetry data.
+- **IP Port**: 6767 (default).
 
 ## How to Use
 
-The connector organizes monitoring information across the following pages: **General**, **Device Status**, **Alarm**, and **Navigation Data**.
+The connector organizes monitoring information across the following pages of the element: [General](#general), [Device Status](#device-status), [Alarm](#alarm), and [Navigation Data](#navigation-data).
 
 ### General
 
