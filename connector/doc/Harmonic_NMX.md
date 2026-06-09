@@ -6,34 +6,6 @@ uid: Connector_help_Harmonic_NMX
 
 Harmonic's NMX Digital Service Manager is a video network management solution, encompassing a set of tools to monitor and manage Harmonic compressed digital video and audio systems.
 
-## About
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Unknown                |
-| 2.0.0.x   | Unknown                |
-| 3.0.0.x   | Unknown                |
-| 4.0.0.x   | Unknown                |
-| 4.0.1.x   | 6.4                    |
-| 4.1.0.x   | 8                      |
-| 4.1.1.x   | 8                      |
-| 4.2.0.x   | 9.13, 9.2, 8           |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components                              |
-|-----------|---------------------|-------------------------|-----------------------|--------------------------------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                                                |
-| 2.0.0.x   | No                  | No                      | -                     | -                                                |
-| 3.0.0.x   | No                  | No                      | -                     | -                                                |
-| 4.0.0.x   | No                  | No                      | -                     | -                                                |
-| 4.0.1.x   | No                  | No                      | -                     | -                                                |
-| 4.1.0.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device                         |
-| 4.1.1.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device <br>- Harmonic NMX - Switch |
-| 4.2.0.x   | No                  | Yes                     | -                     | - Harmonic NMX - Device <br>- Harmonic NMX - Switch |
-
 ## Configuration
 
 ### Connections - Range 1.0.0.x - 4.0.0.x
@@ -261,3 +233,12 @@ The ObjectModifiedNotification/ObjectCreatedNotification service plan request is
 ## Notes
 
 As range 4.1.0.x/4.1.1.x and 4.2.0.x use the REST API introduced in firmware 8, there are some parameters and metrics that are not available compared to previous ranges, where the connector communication used the XML SAPI.
+
+### Exported components
+
+The following exported components are available depending on the connector range:
+
+| Connector range    | Exported components                            |
+|--------------------|------------------------------------------------|
+| 4.1.0.x            | Harmonic NMX - Device                          |
+| 4.1.1.x - 4.2.0.x  | Harmonic NMX - Device<br>Harmonic NMX - Switch |

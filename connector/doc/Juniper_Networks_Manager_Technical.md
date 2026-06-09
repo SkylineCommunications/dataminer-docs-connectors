@@ -46,7 +46,7 @@ HTTP CONNECTION:
 
 ### Initialization
 
-For SSH and HTTP communication, a **User Name** and **Password** must be configured. On the **General** page of the element, you can configure HTTP credentials, while the SSH credentials can be configured via the **SSH Settings** page button.
+For **SSH and HTTP communication**, credentials must be configured on the **Element Settings** page of the element.
 
 By default, all tables are polled. To reduce polling:
 
@@ -75,11 +75,8 @@ The web interface is only accessible when the client machine has network access 
 
 This page displays general device information including **System Name**, **System Uptime**, **CPU Usage**, and **Memory Usage**.
 
-From version 1.0.10.x onwards, the **User Name** and **Password** for the HTTP connection can be configured directly on this page.
-
 Page buttons provide access to:
 
-- **Credentials**: Configure the SSH username and password used for SSH connections, backup, restore, and firmware upgrade.
 - **Redundancy Table**: Displays redundancy status. Polling can be disabled.
 - **Services**: Displays OSI layer status (Physical, Network, etc.).
 - **Operating Table**: Displays hardware information. Polling can be disabled.
@@ -116,6 +113,10 @@ The **Description** column in all tables on the **RPM Metrics**, **Ping Probe**,
 ### Ping Function Page
 
 This page displays parameters to configure and retrieve statistics for the **Ping Functionality**.
+
+### Element Settings Page
+
+On this page, you can configure the HTTP and SSH credentials used for HTTP polling and SSH connections, as well as run SSH commands to back up, restore, or upgrade the device.
 
 ### Backup / Restore
 

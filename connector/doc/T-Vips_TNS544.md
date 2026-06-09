@@ -4,30 +4,9 @@ uid: Connector_help_T-Vips_TNS544
 
 # T-Vips TNS544
 
-This is an SNMP connector that can be used to obtain information from the T-Vips TNS544 switch. It polls the device periodically and also implements traps to display updated states. The connector can also be used to configure the device.
-
 ## About
 
-### Version Info
-
-| Range            | Key Features                                                                                | Based on | System Impact |
-|----------------------|-------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                 | -            | -                 |
-| 1.0.2.x [SLC Main]   | Added IDX column in the naming for the following tables: 7000, 9000, 15000, 16000, 21000, 42400 | 1.0.1.6      | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.8.0                  |
-| 1.0.2.x   | 2.8.0                  |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+This is an SNMP connector that can be used to obtain information from the T-Vips TNS544 switch. It polls the device periodically and also implements traps to display updated states. The connector can also be used to configure the device.
 
 ## Configuration
 

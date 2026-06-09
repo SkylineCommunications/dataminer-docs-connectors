@@ -17,6 +17,8 @@ The AMPP Manager is equipped with the essential functionality to list fabrics, n
 - **Workloads**: Presents a detailed list of all existing workloads. Each instance includes the application, package, status, and dedicated action buttons, allowing users to efficiently manage operations.
 - **Fabrics and Nodes**: Shows the collected fabrics, their nodes, and the relations between them.
 - **Snapshots**: Displays a table listing all available snapshots, including relevant information about associated workloads. The interface also provides action buttons, allowing users to start or stop them as needed. This functionality helps facilitate the management of workload instances and their corresponding workloads.
+- **Subscriptions**: Shows a table of existing subscriptions (active, historic, and future), along with a table listing the associated applications, with each application's name, quantity, and monthly token usage.
+- **Billing**: Displays the Application Costs table as reported by the GV AMPP Store. The table includes the Product Code, Name, and both per-usage and per-subscription rates. It lists applications that have been used by workloads on the AMPP platform.
 
 > [!NOTE]
 > Supported through the Workloads representation, productions offer a modern alternative to traditional snapshots. This approach allows users to manage production environments with the ability to start or stop workloads directly associated with a specific production.
@@ -47,7 +49,7 @@ The AMPP Manager is equipped with the essential functionality to list fabrics, n
 
 ### Prerequisites
 
-- **DataMiner version 10.2 or higher**
+- **DataMiner version 10.6.0/10.6.6 or higher**
 - **SignalR Forwarder 3.4 or higher**
 
 > [!NOTE]
