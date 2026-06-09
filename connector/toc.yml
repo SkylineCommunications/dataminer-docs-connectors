@@ -4291,6 +4291,11 @@
     topicUid: Connector_help_General_Dynamics_LRK-1200
   - name: General Dynamics Model 1xx
     topicUid: Connector_help_General_Dynamics_Model_1xx
+  - name: General Dynamics Model 820A
+    topicUid: Connector_help_General_Dynamics_Model_820A
+    items:
+    - name: General Dynamics Model 820A Technical
+      topicUid: Connector_help_General_Dynamics_Model_820A_Technical
   - name: General Dynamics Model 930A
     topicUid: Connector_help_General_Dynamics_Model_930A
   - name: General Dynamics Model 950A
