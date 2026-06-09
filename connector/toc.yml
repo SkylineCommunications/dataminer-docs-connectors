@@ -565,9 +565,6 @@
       topicUid: Connector_help_Anywave_MHPTV_Technical
   - name: Anywave PA-8D-C-FA
     topicUid: Connector_help_Anywave_PA-8D-C-FA
-    items:
-    - name: Anywave PA-8D-C-FA Technical
-      topicUid: Connector_technical_Anywave_PA-8D-C-FA
 - name: APA
   items:
   - name: APA Sound Monitoring
