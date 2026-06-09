@@ -116,6 +116,10 @@
   items:
   - name: ADB 3000
     topicUid: Connector_help_ADB_3000
+- name: ADLINK
+  items:
+  - name: ADLINK NuDAM-6053
+    topicUid: Connector_help_ADLINK_NuDAM-6053
 - name: Adtec
   items:
   - name: Adtec EN Manager
