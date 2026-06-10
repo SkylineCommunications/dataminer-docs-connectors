@@ -95,4 +95,4 @@ This is a **virtual connector** — it does not establish a direct device connec
 | `Newtonsoft.Json` | JSON serialization for control manifests |
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_Skyline_Custom_Offload).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_Custom_Offload_Technical).
