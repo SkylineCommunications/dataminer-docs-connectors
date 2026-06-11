@@ -51,7 +51,7 @@ This connector uses a virtual connection and does not require any input during e
    - **S3 Access Key ID**: AWS Access Key ID for authentication.
    - **S3 Secret Access Key**: AWS Secret Access Key for authentication.
 
-1. Click **Apply and Test** to save the configuration and verify connectivity.
+1. Open **Configuration** page again and click **Apply and Test** to save the configuration and verify connectivity.
 
 ## How to Use
 
