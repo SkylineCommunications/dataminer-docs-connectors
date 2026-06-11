@@ -53,6 +53,8 @@ HTTP CONNECTION:
 
 ### Setting up the Slack Application and Bot User (Version 1.1.0.X and above)
 
+#### Authentication Setup
+
 
 1. Go to <https://api.slack.com/apps>.
 
@@ -76,8 +78,11 @@ HTTP CONNECTION:
   - **im:read** 
   - **mpim:read** 
   - **users:read**
-  - **app_mentions:read** (For use with the **Automation Scripts** table from channels)
+  - **channels:history** (For Websocket data)
+  - **im:history** (For Websocket data)
+  - **app_mentions:read** (For Websocket Data)
   - **im:history** (For use with the **Automation Scripts** table from direct messages with the bot)
+  
 
 ![Slack_Messaging_AppConfig_Step5_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step5_Pt1.png)
 
@@ -93,23 +98,38 @@ HTTP CONNECTION:
 
 ![Slack_Messaging_AppConfig_Step7_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step7_Pt2.png)
 
-1. Go to **Socket Mode**, click on the toggle next to **Enable Socket Mode**, assign it a name (i.e., DataMiner Socket), and keep the scope **connection:write**
+#### Web Socket Setup
 
-![Slack_Messaging_AppConfig_Step8_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step8_Pt1.png)
+If you want to utilize Tracked Messages and active Automation Scripts through Slack, you will need to follow the Web Socket setup steps below:
 
-![Slack_Messaging_AppConfig_Step8_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step8_Pt2.png)
+1. Go to **Event Subscriptions**, go to **Subscribe to bot events** and add the following 3 events:
+- **app_mention**
+- **messages.channels**
+- **message.im**
 
-1. Copy the Socket Token and put it on the **App Level Token** parameter on the **Websocket** page for the Slack Messaging Element. 
+![Slack_Messaging_AppConfig_Step8.png](~/connector/images/Slack_Messaging_AppConfig_Step8.png)
 
-![Slack_Messaging_AppConfig_Step9.png](~/connector/images/Slack_Messaging_AppConfig_Step9.png)
 
-1. On the Slack channels within your Workspace that you want the bot present in, go to the **Channel's Settings**, go to **Integrations**, then click on **Add Apps** and select it. 
+1. Go to **Socket Mode**, click on the toggle next to **Enable Socket Mode**, assign it a name (i.e., DataMiner Socket), and keep the scope **connection:write**. If you want to configure elements of the **App-Level Token** later, you can go to the **Basic Information** section on the Slack API to configure it. 
+
+![Slack_Messaging_AppConfig_Step9_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step9_Pt1.png)
+
+![Slack_Messaging_AppConfig_Step9_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step9_Pt2.png)
+
+1. Copy the Socket Token and put it on the **App-Level Token** parameter on the **Websocket** page for the Slack Messaging Element. 
 
 ![Slack_Messaging_AppConfig_Step10.png](~/connector/images/Slack_Messaging_AppConfig_Step10.png)
 
+1. On the Slack channels within your Workspace that you want the bot present in, go to the **Channel's Settings**, go to **Integrations**, then click on **Add Apps** and select it. 
 
-The Slack Messaging Element will now connect to the Slack API and the bot user will come online on your workspace. 
+![Slack_Messaging_AppConfig_Step11.png](~/connector/images/Slack_Messaging_AppConfig_Step11.png)
 
+
+1. Finally, go to **Install App** and click the **Reinstall to {Workspace Name}** button for your Websocket changes to take affect. 
+
+![Slack_Messaging_AppConfig_Step12.png](~/connector/images/Slack_Messaging_AppConfig_Step12.png)
+
+The Slack Messaging Element will now connect to the Slack API and the bot user will come online on your workspace.
 
 ## How to Use
 
@@ -177,72 +197,9 @@ On this page, the **App-Level Token** that should be used to connect to the Slac
 
 This page displays the app configuration page on the Slack API website which you can log into with the account that created the app. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
-## Notes
+## Additional Resources
 
-> [!TIP]
-> To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
+-  To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
 
-### External sets
+- If you want to send Slack messages or files through Automation Scripts, refer to [Slack Messaging - External Sets](xref:Connector_help_Slack_Messaging_external_sets)
 
-The connector provides the functionality to send a message from an external source in DataMiner (i.e., an automation script) to a channel in Slack. This can be done in two different ways:
-
-- Simple XML:
-
-  - Set to parameter with **ID 50**.
-
-  - Only basic formatting.
-
-  - Format is XML:
-
-    ```xml
-    <Message>
-       <Channel>name or ID of the channel</Channel>
-       <Text>the text to send to the channel</Text>
-       <Tag>unique identifier</Tag>
-    </Message>
-    ```
-
-  - The tag can be chosen by the sender to be able to uniquely identify the message. This can be used later to send an update of this message to the Slack channel.
-
-- Raw JSON string:
-
-  - Set to parameter with **ID 51**.
-
-  - Allows more advanced formatting and attachments.
-
-  - Format: see <https://api.slack.com/methods/chat.postMessage>.
-
-  - JSON is sent directly to the chat.postMessage WEB API method, without modifications.
-
-From version 1.0.0.3 onwards, it is also possible to update a message that was previously sent to a Slack channel with a unique tag assigned:
-
-- Set to parameter with **ID 52**
-
-- Format is XML:
-
-  ```xml
-  <Message>
-     <Tag>unique identifier of the message</Tag>
-     <Text>new message</Text>
-  </Message>
-    ```
-
-From version 1.1.0.1 onward, there is a new method of sending any file (i.e. images, documents) to Slack: 
-
-- Sending a File to Slack: 
-
-  - Set to parameter with **ID 40**.
-
-  - Format is a serialized JSON with this class:
-
-    ```c#
-     public class SlackFileRequest
-    {
-        // The path to your file. Please note that this path is specific to the DMA that's running your automation script
-        public string FilePath { get; set; }
-        // The name of your file
-        public string FileName { get; set; }
-        // The channel ID of the specific channel of the workspace you want to send the file to. This can be found from the "ID" column in the "Conversations" page on the Slack Messaging element or by viewing the Channel Details on Slack.
-        public string ChannelId { get; set; }
-    }
-    ```
