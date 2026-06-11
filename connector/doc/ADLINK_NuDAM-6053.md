@@ -28,6 +28,6 @@ With this connector, you can monitor an ADLINK NuDAM-6053 device through its ser
 
 ### Prerequisites
 
-- **DataMiner Main Release 10.4** or higher.
+- **DataMiner 10.4** or higher.
 
 - **Address ID**: When you configure the element, enter the module's address ID in the **Bus address** field. This 2-character hexadecimal value must be in the range of 00 - FF.
