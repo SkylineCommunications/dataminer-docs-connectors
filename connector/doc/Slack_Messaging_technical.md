@@ -14,7 +14,7 @@ When commands are sent into a Slack channel, these will be picked up by the elem
 
 The connector periodically retrieves the list of users and conversations via the WEB API (using polling), while messages that users send in a channel are pushed to the connector via the web socket interface.
 
-**Access tokens** are used to authenticate on the API. Such a token can be obtained from the app configuration webpage (see [Installation and configuration](#installation-and-configuration)).
+**Access tokens** are used to authenticate on the API. Such a token can be obtained from the app configuration webpage (see [Initialization](#initialization)).
 
 **WebSocket** communication requires that Socket Mode is enabled for the Slack app and an **app-level token** is configured. **App-level tokens** can be obtained from the app configuration webpage. These must have the `connections:write` scope.
 
