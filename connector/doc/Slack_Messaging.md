@@ -23,6 +23,9 @@ When commands are sent into a Slack channel, these will be picked up by the elem
 
 ### Receive Real-Time Notifications in Slack from DataMiner
 
+![Slack Messaging Alarms in Slack](/connector/images/Slack_Messaging_AlarmsInSlack.png)
+
+
 **Challenge**: Operators want to receive real-time notifications in Slack when certain events occur in DataMiner, such as alarms or performance thresholds being breached.
 
 **Solution**: Use the Slack Messaging connector to send automated messages to a designated Slack channel whenever specific conditions are met in DataMiner.

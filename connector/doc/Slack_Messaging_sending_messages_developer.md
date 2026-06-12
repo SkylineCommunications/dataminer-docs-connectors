@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_Slack_Messaging_external_sets
+uid: Connector_help_Slack_Messaging_sending_messages_developer
 ---
 
-# External sets
+# Sending Messages to Slack | Developer Guide
 
 It's possible to utilize Automation Scripts to send messages, update previous messages, or send files to Slack. Below are the requirements for each of the types of sets. 
 
@@ -53,7 +53,7 @@ From version 1.0.0.3 onwards, it is also possible to update a message that was p
   </Message>
     ```
 
-## Send a File
+## Sending a File
 
 From version 1.1.0.1 onward, there is a new method of sending any file (i.e. images, documents) to Slack: 
 
