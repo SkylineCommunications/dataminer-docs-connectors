@@ -58,17 +58,17 @@ HTTP CONNECTION:
 
 1. Go to <https://api.slack.com/apps>.
 
-![Slack_Messaging_AppConfig_Step1.png](/connector/images/Slack_Messaging_AppConfig_Step1.png)
+![Slack_Messaging_AppConfig_Step1.png](~/connector/images/Slack_Messaging_AppConfig_Step1.png)
 
 1. Click **Create New App** and select to create it "**From scratch**".
 
-![Slack_Messaging_AppConfig_Step2.png](/connector/images/Slack_Messaging_AppConfig_Step2.png)
+![Slack_Messaging_AppConfig_Step2.png](~/connector/images/Slack_Messaging_AppConfig_Step2.png)
 
 1. Provide a name for the app (i.e., DataMiner), and select the workspace in which you want to integrate the app.
 
 1. Click **Create App**.
 
-![Slack_Messaging_AppConfig_Step3.png](/connector/images/Slack_Messaging_AppConfig_Step3.png)
+![Slack_Messaging_AppConfig_Step3.png](~/connector/images/Slack_Messaging_AppConfig_Step3.png)
 
 1. Go to **OAuth & Permissions**, scroll down to **Bot Token Scopes**, and add the following OAuth Scopes:
   - **channels:read**
@@ -84,19 +84,19 @@ HTTP CONNECTION:
   - **im:history** (For use with the **Automation Scripts** table from direct messages with the bot)
   
 
-![Slack_Messaging_AppConfig_Step5_Pt1.png](/connector/images/Slack_Messaging_AppConfig_Step5_Pt1.png)
+![Slack_Messaging_AppConfig_Step5_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step5_Pt1.png)
 
-![Slack_Messaging_AppConfig_Step5_Pt2.png](/connector/images/Slack_Messaging_AppConfig_Step5_Pt2.png)
+![Slack_Messaging_AppConfig_Step5_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step5_Pt2.png)
 
 1. On the **OAuth & Permissions** page, scroll to the **OAuth Tokens** section and click on the **Install to {Insert your Workspace Name here}** button in green. Make sure to allow whatever app permissions it shows you on the next page. 
 
-![Slack_Messaging_AppConfig_Step6.png](/connector/images/Slack_Messaging_AppConfig_Step6.png)
+![Slack_Messaging_AppConfig_Step6.png](~/connector/images/Slack_Messaging_AppConfig_Step6.png)
 
 1. Copy the **Bot User OAuth Token** that now appears underneath **OAuth Token**, and put it under the **OAuth Access Token** parameter on the **Authentication** page for the Slack Messaging element. 
 
-![Slack_Messaging_AppConfig_Step7_Pt1.png](/connector/images/Slack_Messaging_AppConfig_Step7_Pt1.png)
+![Slack_Messaging_AppConfig_Step7_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step7_Pt1.png)
 
-![Slack_Messaging_AppConfig_Step7_Pt2.png](/connector/images/Slack_Messaging_AppConfig_Step7_Pt2.png)
+![Slack_Messaging_AppConfig_Step7_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step7_Pt2.png)
 
 #### Web Socket Setup
 
@@ -107,27 +107,27 @@ If you want to utilize Tracked Messages and active Automation Scripts through Sl
 - **messages.channels**
 - **message.im**
 
-![Slack_Messaging_AppConfig_Step8.png](/connector/images/Slack_Messaging_AppConfig_Step8.png)
+![Slack_Messaging_AppConfig_Step8.png](~/connector/images/Slack_Messaging_AppConfig_Step8.png)
 
 
 1. Go to **Socket Mode**, click on the toggle next to **Enable Socket Mode**, assign it a name (i.e., DataMiner Socket), and keep the scope **connection:write**. If you want to configure elements of the **App-Level Token** later, you can go to the **Basic Information** section on the Slack API to configure it. 
 
-![Slack_Messaging_AppConfig_Step9_Pt1.png](/connector/images/Slack_Messaging_AppConfig_Step9_Pt1.png)
+![Slack_Messaging_AppConfig_Step9_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step9_Pt1.png)
 
-![Slack_Messaging_AppConfig_Step9_Pt2.png](/connector/images/Slack_Messaging_AppConfig_Step9_Pt2.png)
+![Slack_Messaging_AppConfig_Step9_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step9_Pt2.png)
 
 1. Copy the Socket Token and put it on the **App-Level Token** parameter on the **Websocket** page for the Slack Messaging Element. 
 
-![Slack_Messaging_AppConfig_Step10.png](/connector/images/Slack_Messaging_AppConfig_Step10.png)
+![Slack_Messaging_AppConfig_Step10.png](~/connector/images/Slack_Messaging_AppConfig_Step10.png)
 
 1. On the Slack channels within your Workspace that you want the bot present in, go to the **Channel's Settings**, go to **Integrations**, then click on **Add Apps** and select it. 
 
-![Slack_Messaging_AppConfig_Step11.png](/connector/images/Slack_Messaging_AppConfig_Step11.png)
+![Slack_Messaging_AppConfig_Step11.png](~/connector/images/Slack_Messaging_AppConfig_Step11.png)
 
 
 1. Finally, go to **Install App** and click the **Reinstall to {Workspace Name}** button for your Websocket changes to take affect. 
 
-![Slack_Messaging_AppConfig_Step12.png](/connector/images/Slack_Messaging_AppConfig_Step12.png)
+![Slack_Messaging_AppConfig_Step12.png](~/connector/images/Slack_Messaging_AppConfig_Step12.png)
 
 The Slack Messaging Element will now connect to the Slack API and the bot user will come online on your workspace.
 
