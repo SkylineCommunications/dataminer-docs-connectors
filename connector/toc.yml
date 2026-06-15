@@ -6105,6 +6105,13 @@
   items:
   - name: MegaTec NetAgent9
     topicUid: Connector_help_Megatec_NetAgent9
+- name: MEGMEET
+  items:
+  - name: MEGMEET MegaPower MC2600
+    topicUid: Connector_help_MEGMEET_MegaPower_MC2600
+    items:
+    - name: MEGMEET MegaPower MC2600 Technical
+      topicUid: Connector_help_MEGMEET_MegaPower_MC2600_Technical
 - name: Meinberg
   items:
   - name: Meinberg Element Manager
