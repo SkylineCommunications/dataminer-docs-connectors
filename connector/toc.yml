@@ -9520,6 +9520,13 @@
     topicUid: Connector_help_Sony_XVS-G1
   - name: Sony XVS Control
     topicUid: Connector_help_Sony_XVS_Control
+- name: Space DOTS
+  items:
+  - name: Space DOTS DD1
+    topicUid: Connector_help_Space_DOTS_DD1
+    items:
+    - name: Space DOTS DD1 Technical
+      topicUid: Connector_help_Space_DOTS_DD1_Technical 
 - name: SpacePath Communications
   items:
   - name: SpacePath Communications N6143 Controller Series
