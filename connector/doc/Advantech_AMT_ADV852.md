@@ -1,77 +1,57 @@
 ---
-uid: Connector_help_Advantech_AMT_2200K
+uid: Connector_Advantech_AMT_ADV852
 ---
 
-# Advantech AMT 2200K
-
-The AMT 2200K is an Advantech Solid State Power Amplifier (SSPAs), from the range from UHF to Ka Bands.
+# Advantech AMT ADV852
 
 ## About
 
-This connector is intended to get information from and set information to the device through an element in a DataMiner System, using SNMP commands.
+The Advantech AMT ADV852 is a multi-channel Block Up Converter (BUC) controller used in satellite earth station uplink systems. This DataMiner connector enables centralized monitoring and control of the ADV852 via SNMPv2, providing real-time visibility into BUC operational status, RF power levels, thermal conditions, redundancy configuration, and gain settings — all from within the DataMiner platform.
 
-To get more detailed information on the device, consult the website [http://www.advantechwireless.com/](http://www.advantechwireless.com/amt-division-rf-products/)
+## Key Features
 
-## Installation and configuration
+- **Real-Time BUC Status Monitoring**: Tracks TX status (muted/unmuted), forward power output, TX gain, and attenuation for each BUC module in a continuously updated tabular view.
 
-### Creation
+- **Thermal Monitoring with Alarm Support**: Continuously polls shroud and per-BUC hot spot temperatures with built-in alarm thresholds (warning at 75 °C, critical at 85 °C) to prevent equipment damage.
 
-**SNMP CONNECTION**:
+- **Redundancy Configuration and Control**: Supports 1:1, 1:2 redundant, and phase combiner configurations — including manual and automatic (Auto A/Auto B) redundancy switching for RF paths.
 
-- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
-- **Device address**: Not used.
+- **Power Supply Supervision**: Monitors dual power supply voltages (PS1 and PS2) to detect supply degradation before it impacts transmission.
 
-**SNMP Settings**:
+- **Remote BUC Control**: Allows operators to mute/unmute RF output, adjust TX gain, switch online/standby states, and reset faults — all remotely via DataMiner.
 
-- **Port number**: The port of the connected device, by default *161.*
-- **Get community string**: The community string in order to read from the device. The default value is *public*.
-- **Set community string**: The community string in order to set to the device. The default value is *private.*
+## Use Cases
 
-## Usage
+### Satellite Uplink Continuity Assurance
 
-### General
+**Challenge**: Earth station operators need constant awareness of BUC RF output and forward power levels to prevent signal outages. Manual checks are impractical when managing multiple BUC units across remote sites.
 
-On this page, you can find information about:
+**Solution**: The ADV852 connector polls BUC status every 10 seconds, providing live forward power readings (dBm), TX gain, attenuation, and mute state for each unit. DataMiner trending and alarm monitoring ensure operators are immediately alerted to any deviation.
 
-- the device, with the **Product Information** page button.
-- the interfaces of the device, in the **Interface Type** and **Interface Tables.**
+**Benefit**: Reduced risk of undetected outages, faster response times, and reliable uplink service continuity for satellite broadcast and data services.
 
-There is also an option to **Reset Device**, choosing one of the options available in the dropbox.
+### Automated Redundancy Switching Management
 
-Control Panel
+**Challenge**: Managing redundant BUC systems (1:1 and 1:2 configurations) manually is error-prone and time-consuming, especially during faults when rapid switchover is critical.
 
-On this page, you can find all relevant Control Panel Configurations and Statuses:
+**Solution**: The connector exposes redundancy configuration parameters — including redundancy mode (Manual, Auto A, Auto B), unit position (A/B), and TX switch position — enabling DataMiner Automation scripts to monitor and act on redundancy state changes in real time.
 
-- **Control Panel Identification Table**
-- **Control Panel Configuration Table**
-- **Control Panel Status Table**
-- **Control Panel Alarms Table**
+**Benefit**: Faster fault recovery, reduced operator intervention, and improved system availability through automated and auditable redundancy management.
 
-### Transceiver
+### Proactive Thermal Alarm Management
 
-On this page, you can find all relevant Transceiver Configurations and Statuses:
+**Challenge**: BUC units operating at high power levels generate significant heat. Sustained over-temperature conditions can permanently damage RF hardware if not caught early.
 
-- **Transceiver Identification Table**
-- **Transceiver Configuration Table**
-- **Transceiver Status Table**
-- **Transceiver Alarms Table**
+**Solution**: The connector continuously monitors both the system-level shroud temperature and per-BUC hot spot temperature, with alarm thresholds pre-configured at warning (75 °C) and critical (85 °C) levels. DataMiner alarm escalation and notifications keep maintenance teams informed before thermal limits are exceeded.
 
-### SSPA Ident / Conf
+**Benefit**: Extended hardware lifespan, reduced risk of thermal damage, and proactive maintenance scheduling based on real temperature trends.
 
-On this page, you can find the **SSPA Identification** and **SSPA Config Tables**. Use the **SSPA Config Table** to set the configurations.
+## Technical Reference
 
-### SSPA Status / Alarms
+### Prerequisites
 
-Use this page to have access to the **SSPA Status** and **Alarm Tables**.
+- **DataMiner version 10.4.0.0 (build 14003) or higher** is required for this connector to function correctly.
 
-### Alarm Configuration
+- **SNMPv2 network connectivity** on UDP port 161 is required between the DataMiner Agent and the Advantech AMT ADV852 device.
 
-On this page, you can set the alarm configurations using the **Alarm Config Table**. The **Alarms Group Config** and **Combined Alarm Module View Tables** cannot be edited.
-
-### Traps
-
-On this page, traps sent from the device are shown, if the option is enabled in the **Alarm Config Table**.
-
-### Web Interface
-
-This page provides access the device's web interface.
+- **SNMP read/write community strings** are needed for both monitoring and remote control operations (muting, gain adjustment, fault reset, redundancy switching).
