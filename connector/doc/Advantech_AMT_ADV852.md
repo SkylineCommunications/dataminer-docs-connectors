@@ -10,15 +10,15 @@ The Advantech AMT ADV852 is a multi-channel Block Up Converter (BUC) controller 
 
 ## Key Features
 
-- **Real-Time BUC Status Monitoring**: Tracks TX status (muted/unmuted), forward power output, TX gain, and attenuation for each BUC module in a continuously updated tabular view.
+- **Real-time BUC status monitoring**: Tracks TX status (muted/unmuted), forward power output, TX gain, and attenuation for each BUC module in a continuously updated tabular view.
 
-- **Thermal Monitoring with Alarm Support**: Continuously polls shroud and per-BUC hot spot temperatures with built-in alarm thresholds (warning at 75 °C, critical at 85 °C) to prevent equipment damage.
+- **Thermal monitoring with alarm support**: Continuously polls shroud and per-BUC hot spot temperatures with built-in alarm thresholds (warning at 75 °C, critical at 85 °C) to prevent equipment damage.
 
-- **Redundancy Configuration and Control**: Supports 1:1, 1:2 redundant, and phase combiner configurations — including manual and automatic (Auto A/Auto B) redundancy switching for RF paths.
+- **Redundancy configuration and control**: Supports 1:1, 1:2 redundant, and phase combiner configurations — including manual and automatic (Auto A/Auto B) redundancy switching for RF paths.
 
-- **Power Supply Supervision**: Monitors dual power supply voltages (PS1 and PS2) to detect supply degradation before it impacts transmission.
+- **Power supply supervision**: Monitors dual power supply voltages (PS1 and PS2) to detect supply degradation before it impacts transmission.
 
-- **Remote BUC Control**: Allows operators to mute/unmute RF output, adjust TX gain, switch online/standby states, and reset faults — all remotely via DataMiner.
+- **Remote BUC control**: Allows operators to mute/unmute RF output, adjust TX gain, switch online/standby states, and reset faults — all remotely via DataMiner.
 
 ## Use Cases
 
