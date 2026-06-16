@@ -55,4 +55,4 @@ The EATON 9PX UPS is an online uninterruptible power supply with ABM technology,
 - **Network access to the device web interface** is required if operators intend to use the embedded Web Interface or HTTPS Web Interface pages within the connector.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_EATON_9PX_UPS).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_EATON_9PX_UPS_Technical).
