@@ -94,14 +94,6 @@ This connector does not support the DataMiner Connectivity Framework (DCF).
 
 ## Notes
 
-### Version 1.1.0.5
-
-- Added battery configuration threshold parameters (Battery Capacity Threshold, Battery Time Remaining Threshold, Battery Safe Restart Threshold), displayed on the new Battery Threshold Configurations / Battery Thresholds pages and added to polling.
-- Added EMP Remote Communication Status, displayed on the Environment page and added to polling.
-- Added Audible Alarm Control, displayed on the Configurations page and added to polling.
-- Added a fourth value ("Powered - No Continuity") to the Output Status parameter.
-- Added 11 new alarm condition descriptions to the active alarms lookup table.
-
 ### Outstanding follow-up items
 
 - **Alarm Template for EMP Communication Status**: severity mapping (Communication Lost = Critical, Unknown = Warning, Communication OK = Normal) needs to be configured via DataMiner Alarm Templates.

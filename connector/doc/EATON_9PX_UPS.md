@@ -4,87 +4,55 @@ uid: Connector_help_EATON_9PX_UPS
 
 # EATON 9PX UPS
 
-This connector is used to monitor the EATON 9PX UPS device.
-
-The Eaton 9PX is an online UPS featuring ABM technology, which extends battery service life up to 50 percent. It is used in IT, edge networks, healthcare, universities, K-12, industrial automation and harsh electrical environments.
-
 ## About
 
-### Version Info
+The EATON 9PX UPS is an online uninterruptible power supply with ABM technology, extending battery lifespan by up to 50%. This connector enables DataMiner to monitor and control the device via SNMP, giving operators real-time visibility into power health, battery status, environmental conditions, and active alarms — all from a single pane of glass.
 
-| Range                | Key Features                                                                                                                                                                                                                                              | Based on             | System Impact |
-|----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------|---------------|
-| 1.0.0.x [SLC Main]   | Initial version                                                                                                                                                                                                                                            | -                    | -             |
-| 1.1.0.x [Main]       | Gives operators direct control over the UPS's battery protection behavior, early-warning visibility into environment probe connectivity, control over the audible alarm, and richer, more readable alarm reporting.                                    | 1.0.0.x [SLC Main]   | -             |
+## Key Features
 
-### Product Info
+- **Complete power chain visibility**: Monitor input and output voltage, current, power, frequency, and bypass status across all phases, so you always know the state of your power infrastructure.
 
-| Range     | Supported Firmware     |
-|-----------|-------------------------|
-| 1.0.0.x   | 01.22.6523              |
-| 1.1.0.x   | 01.22.6523              |
+- **Battery health and protection control**: View battery charge, runtime, and status in real time, and configure the thresholds that protect the battery from over-discharge, trigger low-battery warnings, and control when the UPS safely restarts after a power event.
 
-### System Info
+- **Environmental monitoring**: Track temperature and humidity from both the built-in probe and any attached Environment Monitoring Probe (EMP), with clear alerts if the EMP connection itself is lost.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+- **Remote alarm and control**: Acknowledge active alarms with human-readable descriptions, trigger UPS self-tests, and adjust device settings — including the audible alarm — directly from DataMiner without physical access to the unit.
 
-## Configuration
+- **Comprehensive alarm reporting**: The active alarms table resolves all UPS fault conditions into clear, readable descriptions, covering charger faults, short circuits, thermal overloads, battery communication issues, and more.
 
-### Connections
+## Use Cases
 
-#### SNMP Main Connection
+### Preventing unplanned shutdowns due to battery over-discharge
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+**Challenge**: In environments with frequent short power events, the UPS battery can deplete faster than expected, risking an uncontrolled shutdown before the protected load is safely powered down.
 
-SNMP CONNECTION:
+**Solution**: Operators can configure the Battery Capacity Threshold and Battery Time Remaining Threshold directly from DataMiner. When either threshold is breached, a monitored alarm fires, giving the operations team time to react before the UPS shuts down.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Benefit**: Reduces the risk of unexpected load loss by ensuring the UPS acts at the right charge level, and that operators are alerted early enough to take corrective action.
 
-SNMP Settings:
+### Detecting silent sensor failures before they cause blind spots
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+**Challenge**: If an Environment Monitoring Probe (EMP) loses its connection to the UPS, temperature and humidity readings may go stale without any visible indication, leaving operators unaware of potentially unsafe environmental conditions.
 
-### Web Interface
+**Solution**: The EMP Remote Communication Status parameter actively monitors the link between the UPS agent and the probe. A dedicated monitored alarm immediately flags when communication is lost, unknown, or restored.
 
-The web interface is only accessible when the client machine has network access to the product.
+**Benefit**: Ensures environmental monitoring gaps are detected and escalated immediately, preventing situations where hazardous conditions go unnoticed due to a failed sensor connection.
 
-## How to use
+### Remotely managing UPS behavior across distributed sites
 
-This connector gives you a complete picture of your Eaton 9PX UPS at a glance — system and battery health, power input/output, bypass status, environmental conditions (temperature and humidity), and digital inputs — all from a single dashboard.
+**Challenge**: In distributed or unmanned sites, adjusting UPS settings — such as silencing nuisance alarms or initiating a battery test — normally requires a physical visit or direct device access.
 
-Beyond monitoring, you can also keep a close eye on alarms and fine-tune key device settings remotely, without needing to walk up to the unit.
+**Solution**: The connector exposes full read/write control over key settings (audible alarm behavior, battery thresholds) and UPS test initiation, all accessible from the DataMiner Cube interface or automatable via scripts.
 
-### Take control of your battery's protection settings
+**Benefit**: Reduces truck rolls and on-site interventions, enabling NOC teams to manage and verify UPS health remotely across all sites from a central platform.
 
-Stay ahead of power issues with full visibility and control over the thresholds that protect your battery's lifespan and your equipment's uptime:
+## Technical Reference
 
-- **Battery Capacity Threshold**: Decide exactly how low the battery charge can go before the UPS shuts down to protect it from over-discharge.
-- **Battery Time Remaining Threshold**: Set the runtime cutoff (in seconds) that triggers a low-battery warning, so you get the heads-up you need, when you need it.
-- **Battery Safe Restart Threshold**: Make sure your UPS only powers back on once the battery has recovered to a safe charge level, protecting your equipment from repeated power cycling.
+### Prerequisites
 
-These settings are fully adjustable from the connector's Battery Thresholds page.
+- **SNMP access** to the EATON 9PX UPS is required (default port 161). Ensure the device is reachable from the DataMiner Agent and that SNMP community strings are correctly configured.
 
-### Never miss a disconnected sensor
+- **Network access to the device web interface** is required if operators intend to use the embedded Web Interface or HTTPS Web Interface pages within the connector.
 
-If the connection between the UPS and its Environment Monitoring Probe (EMP) drops, your temperature and humidity readings could silently go stale — without this update, you'd have no way of knowing. Now, the connector clearly reports whether the EMP is communicating normally, has lost communication, or is in an unknown state, so you can act before it becomes a problem.
-
-### Configure the audible alarm to suit your environment
-
-Whether you want the UPS buzzer always on, silenced while running on battery, or completely off, you're now in control — directly from DataMiner:
-
-- **Enabled**: the audible alarm sounds for every alarm condition.
-- **Disabled On Battery**: the alarm stays quiet while the UPS is running on battery power.
-- **Disabled Always**: the alarm is permanently muted.
-
-### Clearer insight into your output status
-
-The Output Status parameter now also reports *Powered - No Continuity*, giving you a precise picture when the output is powered but the continuity feature is turned off.
-
-### Richer, more readable alarms
-
-The active alarms table now translates even more alarm conditions into clear, human-readable descriptions — covering charger voltage issues, short circuits, emergency switch-offs, missing batteries, thermal overloads, input wiring faults, lost battery communication, on buck/boost/high-efficiency operation, and degraded mode — so you immediately understand what's happening, without needing to decode raw OIDs.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_EATON_9PX_UPS).
