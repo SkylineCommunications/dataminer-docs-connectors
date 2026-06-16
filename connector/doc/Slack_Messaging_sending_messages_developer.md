@@ -4,7 +4,7 @@ uid: Connector_help_Slack_Messaging_sending_messages_developer
 
 # Sending Messages to Slack | Developer Guide
 
-It's possible to utilize Automation Scripts to send messages, update previous messages, or send files to Slack. Below are the requirements for each of the types of sets. 
+It's possible to utilize Automation Scripts to send messages, update previous messages, or send files to Slack. The message format is customizable using the rich Slack API. Below are the requirements for each set type.
 
 ## Sending a Message
 
@@ -34,7 +34,9 @@ The connector provides the functionality to send a message from an external sour
 
   - Allows more advanced formatting and attachments.
 
-  - Format: see <https://api.slack.com/methods/chat.postMessage>.
+  - JSON Format: see <https://api.slack.com/methods/chat.postMessage>.
+
+  - Message Format: see <https://docs.slack.dev/messaging/formatting-message-text/>
 
   - JSON is sent directly to the chat.postMessage WEB API method, without modifications.
 
