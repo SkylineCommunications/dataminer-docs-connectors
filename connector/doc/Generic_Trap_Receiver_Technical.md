@@ -14,7 +14,7 @@ The Generic Trap Receiver is used to capture and display all the traps for a spe
 
 #### SNMP Main Connection
 
-This connector uses a SNMP protocol connection and requires the following input during element creation:
+This connector uses an SNMP protocol connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
@@ -28,8 +28,8 @@ SNMP Settings:
 - **Port number**: The port of the connection device (default: *161*).
 
 >[!IMPORTANT]
-> Although this setting can be configured, this will not change the port used by the DataMiner agent to retrieve parts. The default port for SNMP traps is *162*.
-> In case a different port is needed, make sure to change the `trapPort` attribute in the `SNMPv1`, `SNMPv2`, or `SNMPv3` tag of the *DataMiner.xml* file (depending of the SNMP protocol version is used).
+> Although the port can be configured in the element settings, this will not change the port used by the DataMiner Agent to receive SNMP traps. The default port for SNMP traps is *162*.
+> If a different port is needed, make sure to change the `trapPort` attribute in the `SNMPv1`, `SNMPv2`, or `SNMPv3` tag of the *DataMiner.xml* file (depending on which SNMP protocol version is used).
 > More information in DataMiner Docs [DataMiner.xml](https://docs.dataminer.services/dataminer/Reference/Skyline_DataMiner_Folder/More_information_on_certain_files_and_folders/DataMiner_xml.html).
 
 ## Usage
@@ -41,7 +41,7 @@ To capture traps, specify the IP address(es) for which traps should be captured 
 The **Traps** table will display an overview of the captured traps with their information (OID, Source IP, and Bindings).
 
 >[!NOTE]
-> - Connector range 1.0.1.x defines a column in the **Traps** table for each binding. Currenltly, up to 20 bindings are supported.
+> - Connector range 1.0.1.x defines a column in the **Traps** table for each binding. Currently, up to 20 bindings are supported.
 > - Connector range 1.0.2.x bindings are stored in a different table (see **Trap Bindings** table). This allows more than 20 bindings if needed.
 
 The **Traps Number** will show the number of traps in the table.
@@ -51,15 +51,43 @@ The **Traps Number** will show the number of traps in the table.
 
 If you also want an information event to be created on the DMA every time a trap is received, enable the **Information Events** parameter.
 
-The **Auto Clear...** page button contain settings that allows to clean the table based on number of traps or age. 
+The **Auto Clear...** page button contains settings that allow cleaning the table based on the number of traps or their age.
 
-Additionally, connector range 1.0.1.x includes the parameter **Information Events** that allows to create an information event on the DMA for every trap received. 
+Additionally, connector range 1.0.1.x includes the parameter **Information Events**, which allows you to create an information event on the DMA for every trap received.
+
+#### Trap Table Naming Suffix
+
+This setting can be used to define the content of the display key of the **Traps** table. By default, the key is set as follows:
+
+```text
+Incremental Counter: Source IP Address: OID
+```
+
+- Incremental counter: Internal counter that is incremented for each new trap received. This allows to have a unique key for each trap, even if they have the same source IP and OID.
+- Source IP Address: The IP address from which the trap was received.
+- OID: The OID of the trap.
+
+To update the display key, you can use the index (0 based) of the column between curly brackets. For example, if you want to include the source IP address and the first binding in the display key, you can set the parameter as follows:
+
+```text
+{3}-{5}
+```
+
+Where `{1}` corresponds to the source IP address column and `{3}` corresponds to the first binding column. The separator between the columns can be defined as desired (in this example, a dash is used).
+
+> [!IMPORTANT]
+> The display key will always contain the incremental counter as the first column to ensure that each trap has a unique key.
+
+For example, if the naming suffix parameter is set to `{3}-{5}`, the actual display key will be set as follows:
+
+```text
+{0}:{3}-{5}
+```
 
 ### Lookup Configuration
 
-On this page, you can use the **Lookup Table** to have incoming trap OIDs replaced with an alias name. For this purpose, the parameter **Lookup Table State** must be enabled.
-
-With the **Add Raw Value** parameter, you can add an OID to the lookup table. The **Clear Table** button can be used to delete all the raw values from the lookup table, except for some well-known values.
+On this page, you can use the **Lookup Table** to replace the incoming trap OID with a custom description. For this purpose, the parameter **Lookup Table State** must be enabled. By default, the lookup table contains some pre-defined OIDs (from SNMPv2-MIB), but you can add more OIDs as needed.
+Using the **Add Raw Value** button, you can add an OID to the lookup table. The **Clear Table** button can be used to delete all custom values added from the lookup table, except the pre-defined values.
 
 ### Filter Trap
 
@@ -76,7 +104,7 @@ By right-clicking in the **Trap OID Filter Trap** table, you can add a new filte
 >[!NOTE]
 > Make sure that the IP address(es) are defined in the **Trap IP Sources** parameter, otherwise the filter rule will not be applied.
 
-- Trap OID FIlter: The OID of the trap that should be filtered. You can use wildcards to specify a range of OIDs. For example, `1.3.6.*` will filter all traps with an OID starting with `1.3.6`.
+- Trap OID Filter: The OID of the trap that should be filtered. You can use wildcards to specify a range of OIDs. For example, `1.3.6.*` will filter all traps with an OID starting with `1.3.6`.
 - State: The state of the filter rule, which can be either enabled or disabled (default: *enabled*). Only enabled filter rules will be applied.
 - Delete: The delete button can be used to delete a filter rule.
 
@@ -85,7 +113,7 @@ By right-clicking in the **Trap OID Filter Trap** table, you can add a new filte
 
 #### Automatic Provisioning
 
-The parameters available on the **Filter Provisioning...** page button offers the possibility to provision filter rules based on a CSV file.
+The parameters available on the **Filter Provisioning...** page button allow you to provision filter rules based on a CSV file.
 
 - The parameter **Trap OID Filter Format** defines the format of the CSV file, which should include the following columns:
 
@@ -93,7 +121,7 @@ The parameters available on the **Filter Provisioning...** page button offers th
 Trap IP Source; Trap OID Filter
 ```
 
-This format is harcoded in the connector and cannot be changed. The **Trap OID Filter Format** parameter is only used to display the expected format of the CSV file.
+This format is hardcoded in the connector and cannot be changed. The **Trap OID Filter Format** parameter is only used to display the expected format of the CSV file.
 
 Below an example of the content of the CSV file:
 
@@ -102,18 +130,19 @@ Trap IP Source; Trap OID Filter
 192.168.1.1;1.3.6.1.4.1.8813.1.1.2.3.2
 ```
 
-- The **Export** button can be used to export the filter rules currently in the table to a CSV file. The exported file will follow the format defined in the parameter **Trap OID Filter Format**.
-Before to export the filters to a file, it is required to define a file name in the parameter **File Name**.
+- The **Export** button can be used to export the filter rules currently available in the table to a CSV file. The exported file will follow the format defined in the parameter **Trap OID Filter Format**.
+Before exporting the filters to a file, you must define a file name in the parameter **File Name**.
   - If the file already exists, the exported filter rules will be overwritten in the file (previous rules will be deleted).
   - If the file does not exist, a new file will be created with the exported filter rules.
     - It is not required to create the file beforehand.
-    - It is not required to specify the file path, only the file name. The file will be created in the protocol folder `C:\Skyline DataMiner\Documents\Generic Trap Receiver`.
+    - It is not required to specify the file path, only the file name. The file will be created in the protocol folder `Generic Trap Receiver`.
 
-- The **Import** button can be used to import filter rules from a CSV file. To import filter rules, first it is required to upload the file to the protocol folder `C:\Skyline DataMiner\Documents\Generic Trap Receiver` (see Documents). The format of the CSV file must follow the format defined in the parameter **Trap OID Filter Format**.
-  - In the parameter  **File Name**, select the file with the filter rules to import. If the file is not available, you can click on the **Refresh** button to update the list of available files.
-
+- The **Import** button can be used to import filter rules from a CSV file. To import filter rules, you first need to upload the file to the protocol folder `Generic Trap Receiver` (see [Documents](https://docs.dataminer.services/dataminer/Operator_guide/Documents/About_the_Documents_module.html)). The format of the CSV file must follow the format defined in the parameter **Trap OID Filter Format**.
+  - In the parameter **File Name**, select the file with the filter rules to import. If the file is not available, you can click the **Refresh** button to update the list of available files.
   - If the file does not exist or if the content of the file does not follow the expected format, an error message will be logged and no filter rules will be imported.
   - If the file exists and the content follows the expected format, the filter rules in the file will be added to the table. The existing filter rules in the table will be deleted before importing the new ones.
+
+The parameter **Trap OID Provisioning Import Report** can be used to track the result of the import of the filter rules. The parameter will show the number of rules successfully imported, the number of rules that failed to be imported, and a message with details of the errors encountered during the import.
 
 ### Update Trap
 
@@ -135,10 +164,50 @@ By right-clicking in the **Trap OID Update** table, you can add a new update rul
 
 #### Automatic Provisioning
 
+The parameters available on the **Update Provisioning...** page button allow you to provision update rules based on a CSV file.
+
+- The parameter **Trap Update File Format** defines the format of the CSV file, which should include the following columns:
+
+```text
+Trap OID Updated; Trap OID Updating; Binding Alarm Index
+```
+
+This format is hardcoded in the connector and cannot be changed. The **Trap Update File Format** parameter is only used to display the expected format of the CSV file.
+
+Below an example of the content of the CSV file:
+
+```text
+Trap OID Updated;Trap OID Updating;Binding Alarm Index
+1.3.6.1.4.1.8813.1.1.2.3.2;1.3.6.1.4.1.8813.1.1.2.3.3;/1
+```
+
+where the Trap OID Updated is the OID of the trap (available in the Trap table) that should be updated, the Trap OID Updating is the OID of the trap that should update the first trap, and the Binding Alarm Index is the binding that should be used to link these two traps. In this example, the value of the first binding will be used as alarm reference.
+
+- The **Export** button can be used to export the update rules currently available in the table to a CSV file. The exported file will follow the format defined in the parameter **Trap Update File Format**.
+Before exporting the update rules to a file, you must define a file name in the parameter **Update File Name**.
+  - If the file already exists, the exported update rules will be overwritten in the file (previous rules will be deleted).
+  - If the file does not exist, a new file will be created with the exported update rules.
+    - It is not required to create the file beforehand.
+    - It is not required to specify the file path, only the file name. The file will be created in the protocol folder `Generic Trap Receiver`.
+
+- The **Import** button can be used to import update rules from a CSV file. To import update rules, you first need to upload the file to the protocol folder `Generic Trap Receiver` (see [Documents](https://docs.dataminer.services/dataminer/Operator_guide/Documents/About_the_Documents_module.html)). The format of the CSV file must follow the format defined in the parameter **Trap Update File Format**.
+  - In the parameter **File Name**, select the file with the update rules to import. If the file is not available, you can click the **Refresh** button to update the list of available files.
+  - If the file does not exist or if the content of the file does not follow the expected format, an error message will be logged and no update rules will be imported.
+  - If the file exists and the content follows the expected format, the update rules in the file will be added to the table. The existing update rules in the table will be deleted before importing the new ones.
+
+The parameter **Provisioning Import Report** can be used to track the result of the import of the provisioning rules. The parameter will show the number of rules successfully imported, the number of rules that failed to be imported, and a message with details of the errors encountered during the import.
+
 ### Heartbeat Trap
 
 This page allows you to set up sending and receiving of heartbeat traps. These traps can be used to test and monitor the DataMiner SNMP forwarding function.
 
-## Notes
+#### Receive Heartbeat Trap
 
-If you are using this connector with **SNMPv3** traps, make sure that the `trapPort` attribute in the `SNMPv3` tag of the *DataMiner.xml* file is correctly configured. This value should match the port number where SNMPv3 traps are expected to arrive.
+By default, this function is disabled. To enable it, set the parameter **Heartbeat OID** to the OID of the trap that should be used as heartbeat trap. Once enabled, the parameter **Time Since Last Heartbeat** will show the time since the last heartbeat trap was received. It is possible to reset the counter of this parameter by clicking the **Reset** button.
+
+#### Send Heartbeat Trap
+
+By default, this function is disabled. To enable it, set the parameter **Heartbeat Interval** to the required interval for sending the heartbeat trap. The parameter **Next Heartbeat Counter** will show the time until the next heartbeat trap is sent. It is possible to manually send a trap by clicking the **Send Heartbeat** button.
+
+> [!NOTE]
+> The *Send Heartbeat Trap* function is currently under revision and might not work as expected. If you want to use this function, please contact Skyline support to check the current status of this feature.
