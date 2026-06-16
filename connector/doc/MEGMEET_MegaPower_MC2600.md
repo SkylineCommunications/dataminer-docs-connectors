@@ -12,12 +12,12 @@ It delivers visibility into system-level identity and uptime metrics, device inf
 
 ## Key Features
 
-- **System Monitoring**: Tracks system identity, uptime, and SNMP capability information.
-- **Device Information**: Exposes product name/model, firmware version, site name, and system rectifier/solar values.
-- **Battery Supervision**: Monitors battery current to support power health tracking.
-- **Modules Table**: Provides per-module telemetry including input/output voltage, output current, power, temperature, and status.
+- **System monitoring**: Tracks system identity, uptime, and SNMP capability information.
+- **Device information**: Exposes product name/model, firmware version, site name, and system rectifier/solar values.
+- **Battery supervision**: Monitors battery current to support power health tracking.
+- **Modules table**: Provides per-module telemetry including input/output voltage, output current, power, temperature, and status.
 
 ## Technical Reference
 
 > [!NOTE]
-> For setup details and page-level usage guidance, see the [technical documentation page](xref:Connector_help_MEGMEET_MegaPower_MC2600_Technical).
+> For setup details and page-level usage information, refer to the [technical documentation page](xref:Connector_help_MEGMEET_MegaPower_MC2600_Technical).
