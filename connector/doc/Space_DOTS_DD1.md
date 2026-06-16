@@ -29,5 +29,7 @@ It helps operators monitor platform health, authentication state, orbital positi
 - Thermal summary statistics and per-sensor temperatures
 - Magnetometer field components (X/Y/Z)
 
+## Technical Reference
+
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Space_DOTS_DD1_Technical).

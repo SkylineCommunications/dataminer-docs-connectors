@@ -9,11 +9,6 @@ The **Space DOTS DD1** connector monitors Space DOTS DD1 telemetry through an HT
 
 It includes an authentication flow, periodic public/protected health checks, raw frame polling, and dataset-driven table population for power/radiation and thermal telemetry.
 
-### Version Info
-
-> [!NOTE]
-> Version info is maintained via `<VersionHistory>` tags in `protocol.xml`.
-
 ## Configuration
 
 ### Connections
@@ -22,20 +17,19 @@ It includes an authentication flow, periodic public/protected health checks, raw
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-| Setting | Value |
-|---------|-------|
-| **IP address/host** | API host of the Space DOTS DD1 service |
-| **IP port** | Destination IP port (default: *443*) |
-| **Bus address** | Not required |
+- **IP address/host**: The API host of the Space DOTS DD1 service.
+- **IP port**: The destination IP port (default: *443*).
+- **Bus address**: Not required.
 
 ### Initialization
 
 After creating the element:
 
-1. On **General**, set **Client ID** and **Client Secret**.
-2. Click **Authenticate** to request a bearer token.
-3. Confirm **Authentication** is `Successful` and verify **Public Health Status** is `ok`.
-4. Allow timers to populate position and table telemetry:
+1. On the **General** page, specify the **Client ID** and **Client Secret**.
+1. Click **Authenticate** to request a bearer token.
+1. Confirm whether **Authentication** is *Successful* and verify if the **Public Health Status** displays *ok*.
+1. Allow timers to populate position and table telemetry:
+
    - Raw frame polling every ~30 seconds.
    - Public health and token watchdog checks every ~60 seconds.
    - Last execution validation every ~10 seconds.
@@ -46,7 +40,7 @@ After creating the element:
 
 Use this page to configure API credentials and validate connector/API health.
 
-Key usage points:
+Key parameters:
 
 - **Client ID** / **Client Secret**: Credential pair used by `/token`.
 - **Authenticate**: Manual trigger to force token retrieval.
@@ -83,10 +77,6 @@ Contains three complementary telemetry views:
 - **Magnetometer Sensors**: Per-sensor temperature and magnetic field components (X/Y/Z), with customizable labels.
 
 Use display keys (dataset/sensor context) and labels to make fleet operations and troubleshooting faster.
-
-## DataMiner Connectivity Framework
-
-This connector does not define DCF interfaces in `protocol.xml`.
 
 ## Notes
 
