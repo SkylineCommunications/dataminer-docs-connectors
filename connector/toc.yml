@@ -198,6 +198,8 @@
   items:
   - name: Advantech AMT 2200K
     topicUid: Connector_help_Advantech_AMT_2200K
+  - name: Advantech AMT ADV852
+    topicUid: Connector_Advantech_AMT_ADV852
   - name: Advantech AMT ARUD-ARDD RS485
     topicUid: Connector_help_Advantech_AMT_ARUD-ARDD_RS485
   - name: Advantech AMT Intrac 405
