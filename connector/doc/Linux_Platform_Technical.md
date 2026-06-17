@@ -33,6 +33,10 @@ With this connector, you can monitor servers running Linux OS with SSH or with S
 ### Configuration SSH
 
 In the **General page**, click **Configuration** to set up the **SSH configuration** and to select the connection type, **SNMP** or **SSH**.
+When SSH is selected, choose the desired Authentication Method:
+
+- **Password Authentication**: Enter the SSH password in the **SSH Password** field.
+- **Public Key Authentication**: Specify the **Private Key Path** and, if required, enter the **Private Key Passphrase**.
 
 ## Usage
 
