@@ -1,7 +1,7 @@
 ---
-uid: Connector_help_MyUplink_Platform_Technical
+uid: Connector_help_Proemion_Platform_Technical
 ---
-# MyUplink Platform
+# Proemion Platform
 
 ## About
 
