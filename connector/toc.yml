@@ -4600,6 +4600,13 @@
     topicUid: Connector_help_Gilat_Satellite_Networks_TotalNMS
   - name: Gilat Satellite Networks TotalNMS - CPE
     topicUid: Connector_help_Gilat_Satellite_Networks_TotalNMS_-_CPE
+- name: GitHub
+  items:
+  - name: GitHub Repositories
+    topicUid: Connector_help_GitHub_Repositories
+    items:
+    - name: GitHub Repositories Technical
+      topicUid: Connector_help_GitHub_Repositories_Technical
 - name: GlenSound
   items:
   - name: GlenSound Atomic Copper 29S
