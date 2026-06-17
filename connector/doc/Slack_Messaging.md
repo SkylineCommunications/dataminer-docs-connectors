@@ -6,25 +6,24 @@ uid: Connector_help_Slack_Messaging
 
 ## About
 
-Slack is a cloud-based team messaging and collaboration platform widely used for real-time communication across organizations. This connector can be used to integrate DataMiner with a **Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. To keep this connector as general as possible, these actions are defined in **automation scripts**.
+Slack is a cloud-based team messaging and collaboration platform widely used for real-time communication across organizations. This connector can be used to **integrate DataMiner with a Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. To keep this connector as general as possible, these actions are defined in **automation scripts**.
 
 When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it executes the automation script associated with that command.
 
-> [!WARNING]
-> Only versions 1.1.0.X and above are supported by Slack due to the deprecation of legacy bots and classic apps. You can read more about it [here](https://docs.slack.dev/changelog/2024-09-legacy-custom-bots-classic-apps-deprecation/).
+> [!IMPORTANT]
+> Only versions 1.1.0.x and above are supported by Slack because of the deprecation of legacy bots and classic apps. For more information, refer to the [Slack developer changelog](https://docs.slack.dev/changelog/2024-09-legacy-custom-bots-classic-apps-deprecation/).
 
 ## Key Features
 
 - **Slack DataMiner integration**: Allows for DataMiner to interact with Slack, enabling users to execute DataMiner automation scripts directly from Slack channels.
 - **Automated Slack messages**: Enables DataMiner to send messages to Slack channels or users based on certain events or conditions defined in correlation rules.
-- **Activate Automation Scripts in Slack**: Allows users in Slack to activate automation scripts specially designed for this integration.
+- **Activate automation scripts in Slack**: Allows users in Slack to activate automation scripts designed for this integration.
 
 ## Use Cases
 
 ### Receive Real-Time Notifications in Slack from DataMiner
 
 ![Slack Messaging Alarms in Slack](/connector/images/Slack_Messaging_AlarmsInSlack.png)
-
 
 **Challenge**: Operators want to receive real-time notifications in Slack when certain events occur in DataMiner, such as alarms or performance thresholds being breached.
 
@@ -40,17 +39,17 @@ When commands are sent into a Slack channel, these will be picked up by the elem
 
 **Benefit**: Enhances productivity and streamlines workflows by enabling users to interact with DataMiner directly from Slack, reducing the need to switch between applications.
 
-### Track and Update Previously Sent Messages in Slack 
+### Track and Update Previously Sent Messages in Slack
 
-**Challenge**: Operators need to update status messages or notification in Slack as situations evolve rather than sending new messages that clutter the slack channels.
+**Challenge**: Operators need to update status messages or notification in Slack as situations evolve rather than send new messages that clutter the Slack channels.
 
-**Solution**: Use the Slack Messaging connector's Tracked Messages table to tag sent messages and later update them with new information. 
+**Solution**: Use the Slack Messaging connector's Tracked Messages table to tag sent messages and later update them with new information.
 
 **Benefit**: Keeps Slack channels organized and reduces notification fatigue.
 
 ## Technical Reference
 
-### Prerequisites 
+### Prerequisites
 
 - **A Slack Account** with full administration permissions to the workspace is needed to create and configure a new (DataMiner) app in Slack.
 

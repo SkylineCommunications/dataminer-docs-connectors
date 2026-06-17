@@ -2,51 +2,51 @@
 uid: Connector_help_Slack_Messaging_sending_messages_developer
 ---
 
-# Sending Messages to Slack | Developer Guide
+# Sending Messages to Slack — Developer Guide
 
-It's possible to utilize Automation Scripts to send messages, update previous messages, or send files to Slack. The message format is customizable using the rich Slack API. Below are the requirements for each set type.
+You can use automation scripts to send messages, update previous messages, or send files to Slack. The message format is customizable using the rich Slack API. Below are the requirements for each set type.
 
 ## Sending a Message
 
-The connector provides the functionality to send a message from an external source in DataMiner (i.e., an automation script) to a channel in Slack. This can be done in two different ways:
+The connector provides the functionality to send a message from an external source in DataMiner (i.e., an automation script) to a channel in Slack. This can be done in two different ways, as explained below.
 
 ### Simple XML
 
-  - Perform a Set to the parameter with **ID 50** on a Slack Messaging Element.
+- Perform a set on the parameter with **ID 50** of a Slack Messaging element.
 
-  - Only basic formatting.
+- Use only basic formatting.
 
-  - Format is XML:
+- Use XML format:
 
-    ```xml
-    <Message>
-       <Channel>name or ID of the channel</Channel>
-       <Text>the text to send to the channel</Text>
-       <Tag>unique identifier</Tag>
-    </Message>
-    ```
+  ```xml
+  <Message>
+     <Channel>name or ID of the channel</Channel>
+     <Text>the text to send to the channel</Text>
+     <Tag>unique identifier</Tag>
+  </Message>
+  ```
 
-  - The tag can be chosen by the sender to be able to uniquely identify the message. This can be used later to send an update of this message to the Slack channel.
+- Choose a tag to make sure the message can be uniquely identified. This can be used later to send an update of this message to the Slack channel.
 
 ### Raw JSON string
 
-  - Perform a Set to the parameter with **ID 51** on a Slack Messaging Element.
+- Perform a set on the parameter with **ID 51** of a Slack Messaging element.
 
-  - Allows more advanced formatting and attachments.
+- Allows more advanced formatting and attachments.
 
-  - JSON Format: see <https://api.slack.com/methods/chat.postMessage>.
+- JSON Format: see <https://api.slack.com/methods/chat.postMessage>.
 
-  - Message Format: see <https://docs.slack.dev/messaging/formatting-message-text/>
+- Message Format: see <https://docs.slack.dev/messaging/formatting-message-text/>
 
-  - JSON is sent directly to the chat.postMessage WEB API method, without modifications.
+- JSON is sent directly to the chat.postMessage WEB API method, without modifications.
 
-## Update Previous Messages
+## Updating Previous Messages
 
-From version 1.0.0.3 onwards, it is also possible to update a message that was previously sent to a Slack channel with a unique tag assigned:
+From version 1.0.0.3 onwards, you can update a message that was previously sent to a Slack channel with a unique tag assigned:
 
-  - Perform a Set to the parameter with **ID 52** on a Slack Messaging Element.
+- Perform a set on the parameter with **ID 52** of a Slack Messaging element.
 
-- Format is XML:
+- Use XML format:
 
   ```xml
   <Message>
@@ -57,16 +57,16 @@ From version 1.0.0.3 onwards, it is also possible to update a message that was p
 
 ## Sending a File
 
-From version 1.1.0.1 onward, there is a new method of sending any file (i.e. images, documents) to Slack: 
+From version 1.1.0.1 onward, you can send any file (i.e., images, documents) to Slack:
 
-  - Perform a Set to the parameter with **ID 40** on a Slack Messaging Element.
+- Perform a set on the parameter with **ID 40** of a Slack Messaging element.
 
-  - Format is a serialized JSON with this class:
+- Use serialized JSON format with the following class:
 
     ```c#
      public class SlackFileRequest
     {
-        // The path to your file. Please note that this path is specific to the DMA that's running your automation script
+        // The path to your file. Please note that this path is specific to the DMA that is running your automation script
         public string FilePath { get; set; }
 
         // The name of your file
