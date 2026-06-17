@@ -78,7 +78,11 @@ To update the display key, you can use the index (0-based) of the column between
 {3}-{5}
 ```
 
+<<<<<<< HEAD
 `{1}` corresponds to the source IP address column and `{3}` corresponds to the first binding column. The separator between the columns can be defined as desired (in this example, a hyphen is used).
+=======
+Where `{3}` corresponds to the source IP address column and `{5}` corresponds to the first binding column. The separator between the columns can be defined as desired (in this example, a dash is used).
+>>>>>>> 783b8b82 (Fix indexing on Trap Table Naming Suffix)
 
 > [!NOTE]
 > The display key will always contain the incremental counter as the first column to ensure that each trap has a unique key.
