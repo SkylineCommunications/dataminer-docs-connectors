@@ -4,16 +4,14 @@ uid: Connector_help_GitHub_Repositories
 
 # GitHub Repositories
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=SkylineCommunications_SLC-C-Github-Repositories&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=SkylineCommunications_SLC-C-Github-Repositories)
-
 ## About
 
-This DataMiner connector allows you to monitor and control GitHub repositories. It uses the GitHub API to poll the repos and execute actions on them.
+This DataMiner connector allows you to monitor and control GitHub repositories. It uses the GitHub API to poll the repositories and execute actions on them.
 
 ## Key Features
 
-- **Repository Monitoring**: Provides Monitoring of GitHub repositories, including issues, pull requests, and releases, allowing users to stay informed about repository activity.
-- **GitHub Action Execution**: Enables users to trigger GitHub Actions workflows directly from DataMiner using InterApp Messages, facilitating seamless integration between development and operations.
+- **Repository monitoring**: Allows you to monitor GitHub repositories, including issues, pull requests, and releases, so you can easily stay informed about repository activity.
+- **GitHub Actions execution**: Allows the triggering of GitHub Actions workflows directly from DataMiner using InterApp messages, facilitating seamless integration between development and operations.
 
 ## Use Cases
 
@@ -29,7 +27,7 @@ This DataMiner connector allows you to monitor and control GitHub repositories. 
 
 **Challenge**: Users want to trigger GitHub Actions as part of their operational workflows in DataMiner without having to switch to GitHub.
 
-**Solution**: The GitHub Repositories connector allows users to trigger GitHub Actions workflows directly from DataMiner using InterApp Messages. This enables seamless integration between development and operations, allowing users to automate tasks such as deployments, testing, or notifications based on events in DataMiner.
+**Solution**: The GitHub Repositories connector allows users to trigger GitHub Actions workflows directly from DataMiner using InterApp messages. This enables seamless integration between development and operations, allowing users to automate tasks such as deployments, testing, or notifications based on events in DataMiner.
 
 **Benefit**: Enhances productivity and streamlines workflows by enabling users to interact with GitHub directly from DataMiner, reducing the need to switch between applications and allowing for more efficient automation of development and operational tasks.
 
