@@ -17,17 +17,17 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **IP port**: [The IP port of the destination.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
 
 ### Initialization
 
-The Proemion Platform uses OAuth 2.0 (Client Credentials) for authentication. For the connector to start polling data from the data source, you will need to provide the **Client ID**, and **CLient Secret** on the **Element Settings** page.
+The Proemion Platform uses OAuth 2.0 (Client Credentials) for authentication. For the connector to start polling data from the data source, you will need to provide the **Client ID** and **Client Secret** on the **Element Settings** page.
 
-Once you fill in valid Client ID and Client Secret, click the **Connect** button for the connector to authomatically generate the access token used for the polling of data from the API.
+Once you fill in a valid Client ID and Client Secret, click the **Connect** button for the connector to automatically generate the access token used to poll data from the API.
 
 ## How to Use
 
-You can configure the polling of the parameters on the **Communications Settings** sub-page under **Element Settings** page. When adjusting the polling intervals, keep in mind that the API is rate limited.
+You can configure the polling of the parameters on the **Communications Settings** subpage of the **Element Settings** page. When adjusting the polling intervals, keep in mind that the API is rate-limited.
 
-You can enable/disable the polling of each machine in the Machines table using the Polling column. This gives flexibility on which machines to actively monitor and also to comply with the rate limit by disabling the polling of machines which are not going to be actively monitored.
+You can enable or disable the polling of each machine in the **Machines** table using the **Polling** column. This gives flexibility as to which machines should be actively monitored, making it easier to comply with the rate limit by disabling the polling of machines that are not actively monitored.
