@@ -9027,6 +9027,11 @@
     topicUid: Connector_help_Skyline_Configuration_Manager_DMA
   - name: Skyline CRM Simulator
     topicUid: Connector_help_Skyline_CRM_Simulator
+  - name: Skyline Custom Offload
+    topicUid: Connector_help_Skyline_Custom_Offload
+    items:
+      - name: Skyline Custom Offload Technical
+        topicUid: Connector_help_Skyline_Custom_Offload_Technical
   - name: Skyline Data Aggregator Monitor
     topicUid: Connector_help_Skyline_Data_Aggregator_Monitor
   - name: Skyline DataMiner IT Tools
