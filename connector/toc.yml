@@ -6775,6 +6775,13 @@
     topicUid: Connector_help_MySql_Stratos_Global_CDIS
   - name: MySql Stratos Perth CDIS
     topicUid: Connector_help_MySql_Stratos_Perth_CDIS
+- name: MyUplink
+  items:
+  - name: MyUplink Platform
+    topicUid: Connector_help_MyUplink_Platform
+    items:
+    - name: MyUplink Platform Technical
+      topicUid: Connector_help_MyUplink_Platform_Technical
 - name: Nagios
   items:
   - name: Nagios Connector
