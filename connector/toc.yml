@@ -3075,6 +3075,9 @@
     topicUid: Connector_help_Eaton_93PM_UPS
   - name: EATON 9PX UPS
     topicUid: Connector_help_EATON_9PX_UPS
+    items:
+      - name: EATON 9PX UPS Technical
+        topicUid: Connector_help_EATON_9PX_UPS_Technical
   - name: EATON ATS
     topicUid: Connector_help_EATON_ATS
   - name: Eaton Blade UPS
