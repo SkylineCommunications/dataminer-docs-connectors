@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Amazon_AWS_CloudWatch
+uid: Connector_help_Amazon_AWS_CloudWatch_Technical
 ---
 
 # Amazon AWS CloudWatch
