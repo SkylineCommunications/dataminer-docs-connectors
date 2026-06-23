@@ -10,8 +10,8 @@ The **Telenet CM Collector** is part of the EPM solution deployed at Telenet, an
 
 This connector will poll all the CMs in two poll cycles:
 
-- one fast poll cycle that will poll all CMs over a 15-minute period.
-- one slow poll cycle that will poll all CMs over a 24-hour period.
+- Fast Poll: Polling CMs over a 15-minute period.
+- Slow Poll: Polling CMs over a 24-hour period.
 
 In addition, there is another poll cycle that will poll the CMTS to request the US data of all the CMs over a 15-minute period. The polled data will be offloaded into CSV files and will be aggregated by the CPE Manager element. The CPE Manager element will provision the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector will send traps towards Adlex Nouveau.
 
@@ -111,9 +111,9 @@ The CM Collector will generate tab-separated CSV files. For more information on 
 |4|Node|Node to which the CM is connected|N/A|N/A|
 |5|Timestamp|Time of polling|N/A|N/A|
 |6|Chassis|Chassis reference|N/A|N/A|
-|7|HardwareVersion|Hardware version of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Hardware version of the CM|
-|8|ModelType|Model type of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Model type of the CM|
-|9|HardwareClass|Hardware class of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Hardware class of the CM|
+|7|Hardware Version|Hardware version of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Hardware version of the CM|
+|8|Model Type|Model type of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Model type of the CM|
+|9|Hardware Class|Hardware class of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Hardware class of the CM|
 |10|DOCSIS Version|DOCSIS version of the CM|1.3.6.1.2.1.10.127.1.1.5.0|`docsIfCmStatusDocsisVersion.0`, DOCSIS version of the CM|
 |11|SW Version|Software version of the CM|1.3.6.1.2.1.69.1.3.5.0|`docsIfCmSwVersion.0`, Software version of the CM|
 |12|Last Change Datetime|Datetime of the last change|1.3.6.1.2.1.2.2.1.9.1, 1.3.6.1.2.1.1.3.0|`ifLastChange.1`, `sysUpTime.0`, Datetime of the last change|
@@ -122,9 +122,9 @@ The CM Collector will generate tab-separated CSV files. For more information on 
 |15|Upstream MaxTrafficrate|Maximum upstream traffic rate|See below|
 |16|Physical Address \[Media\]|Physical address of the media|1.3.6.1.2.1.2.2.1.6.2|`ifPhysAddress.2`, Physical address of the media|
 |17|System Contact|Contact information of the system|1.3.6.1.2.1.1.4.0|`sysContact.0`, Contact information of the system|
-|18|Homegateway RouterMAC|MAC address of the home gateway router|See below||
-|19|Homegateway ChannelNumber|Channel number of the home gateway|See below||
-|20|Homegateway ChannelWidth|Channel width of the home gateway|See below||
+|18|Homegateway Router MAC|MAC address of the home gateway router|See below||
+|19|Homegateway Channel Number|Channel number of the home gateway|See below||
+|20|Homegateway Channel Width|Channel width of the home gateway|See below||
 |21|DynamicOID1|Dynamic OID 1|N/A|N/A|
 |22|DynamicOID2|Dynamic OID 2|N/A|N/A|
 |23|DynamicOID3|Dynamic OID 3|N/A|N/A|
@@ -135,9 +135,69 @@ Calculated from the difference between the current system uptime and the last ch
 
 #### Downstream Max Traffic Rate
 
-|DOCSIS Type|CM OID|CMTS OID|
-|-----------|------|--------|
-|DOCSIS 2.0|
+Maximum traffic rate for the downstream direction. The OID depends on the DOCSIS version of the CM and the source of the data (CM or CMTS). The table below gives an overview of the OIDs used for this parameter:
+
+|DOCSIS Type|CM OID|CMTS OID|OID Description|
+|-----------|------|--------|---------------|
+|DOCSIS 1.0|1.3.6.1.2.1.10.127.7.1.2.1.6|N/A|`docsQosParamSetMaxTrafficRate`, DOCS-QOS-MIB|
+|DOCSIS 2.0|N/A|1.3.6.1.2.1.10.127.7.1.2.1.6|`docsQosParamSetMaxTrafficRate`, DOCS-QOS-MIB|
+|DOCSIS 3.0|1.3.6.1.4.1.4491.2.1.21.1.2.1.6|N/A|`docsQosParamSetMaxTrafficRate`, DOCS-QOS3-MIB|
+
+#### Upstream Max Traffic Rate
+
+Maximum traffic rate for the upstream direction. The OID depends on the DOCSIS version of the CM and the source of the data (CM or CMTS). The table below gives an overview of the OIDs used for this parameter:
+
+|DOCSIS Type|CM OID|CMTS OID|OID Description|
+|-----------|------|--------|---------------|
+|DOCSIS 1.0|1.3.6.1.2.1.10.127.7.1.2.1.6|N/A|`docsQosParamSetMaxTrafficRate`, DOCS-QOS-MIB|
+|DOCSIS 2.0|N/A|1.3.6.1.2.1.10.127.7.1.2.1.6|`docsQosParamSetMaxTrafficRate`, DOCS-QOS-MIB|
+|DOCSIS 3.0|1.3.6.1.4.1.4491.2.1.21.1.2.1.6|N/A|`docsQosParamSetMaxTrafficRate`, DOCS-QOS3-MIB|
+
+> [!NOTE]
+> The direction of the traffic rate cannot be determined from the OID, so the same OID is used for both downstream and upstream.
+
+#### Home Gateway Router MAC
+
+|Vendor|OID|Description|
+|------|---|-----------|
+|Motorola 2.0|1.3.6.1.2.1.2.2.1.6.1|MAC address of the first interface,`ifPhysAddress.1`|
+|Motorola 3.0|1.3.6.1.2.1.2.2.1.6.20|MAC address of the 20th interface,`ifPhysAddress.20`|
+|CBN 3.0|1.3.6.1.2.1.2.2.1.6.20|MAC address of the 20th interface,`ifPhysAddress.20`|
+|UBEE 3.0|1.3.6.1.2.1.2.2.1.6.20|MAC address of the 20th interface,`ifPhysAddress.20`|
+
+#### Home Gateway Channel Number
+
+|Vendor|OID|Description|
+|------|---|-----------|
+|Motorola 2.0|1.3.6.1.4.1.1166.1.19.51.1.5.1.2.0|Home Gateway Channel Number|
+|Motorola 3.0|1.3.6.1.4.1.1166.1.19.51.1.5.1.2.0|Home Gateway Channel Number|
+|CBN 3.0|1.3.6.1.4.1.35604.1.19.51.1.5.1.2.0|Home Gateway Channel Number|
+|UBEE 3.0|1.3.6.1.4.1.4684.54.1.1.4.1.32.1|Home Gateway Channel Number|
+
+#### Home Gateway Channel Width
+
+|Vendor|OID|Description|
+|------|---|-----------|
+|Motorola 2.0|1.3.6.1.4.1.1166.1.19.51.1.5.1.19.0|Home Gateway Channel Width|
+|Motorola 3.0|1.3.6.1.4.1.1166.1.19.51.1.5.1.19.0|Home Gateway Channel Width|
+|CBN 3.0|1.3.6.1.4.1.35604.1.19.51.1.5.1.19.0|Home Gateway Channel Width|
+|UBEE 3.0|1.3.6.1.4.1.4684.54.1.1.4.1.7.1|Home Gateway Channel Width|
+
+#### Dynamic OIDs
+
+The Dynamic OIDs are OIDs that can be configured in the page **Dynamic OIDs**. This means that the user can choose which OIDs to offload in the slow offload file. Additional settings for these OIDs are the following (available per Dynamic OID):
+
+- Dynamic OID Description: This is a description of the OID that will be used in the offload file. It is not mandatory to fill in this field, but it can be useful to have a clear description of the OID in the offload file.
+
+- Dynamic OID Offload: If this is set to *Yes*, the value of the OID will be offloaded in the slow offload file. If it is set to *No*, the value of the OID will not be offloaded.
+
+- Dynamic OID Offload Cycle: This setting determines the frequency at which the OID will be offloaded. There are two possible values: *Slow* and *Fast*. If it is set to *Slow*, the value of the OID will be offloaded in the slow offload file, which is generated once per day. If it is set to *Fast*, the value of the OID will be offloaded in the fast offload file, which is generated every 15 minutes.
+
+- Dynamic OID Fixed Values: If this field is filled in, the value of the OID will be fixed to the value in this field in the slow offload file. This can be useful if the OID is not supported by all CMs, but you still want to have a value in the offload file.
+
+- Dynamic OID Low Range: If the value of the OID is a number, and this field is filled in, the value of the OID will only be offloaded if it is lower than the value in this field. This can be useful to only offload values that are below a certain threshold.
+
+- Dynamic OID High Range: If the value of the OID is a number, and this field is filled in, the value of the OID will only be offloaded if it is higher than the value in this field. This can be useful to only offload values that are above a certain threshold.
 
 ### Fast offload structure
 
