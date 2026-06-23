@@ -2906,6 +2906,11 @@
     topicUid: Connector_help_Digicast_DMB-8804
 - name: Digidia
   items:
+  - name: Digidia EasyWay
+    topicUid: Connector_help_Digidia_EasyWay
+    items:
+    - name: Digidia EasyWay Technical
+      topicUid: Connector_help_Digidia_EasyWay_Technical
   - name: Digidia EasySplice
     topicUid: Connector_help_Digidia_EasySplice
   - name: Digidia FlexiDAB
