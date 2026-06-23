@@ -116,6 +116,10 @@
   items:
   - name: ADB 3000
     topicUid: Connector_help_ADB_3000
+- name: ADLINK
+  items:
+  - name: ADLINK NuDAM-6053
+    topicUid: Connector_help_ADLINK_NuDAM-6053
 - name: Adtec
   items:
   - name: Adtec EN Manager
@@ -194,6 +198,8 @@
   items:
   - name: Advantech AMT 2200K
     topicUid: Connector_help_Advantech_AMT_2200K
+  - name: Advantech AMT ADV852
+    topicUid: Connector_Advantech_AMT_ADV852
   - name: Advantech AMT ARUD-ARDD RS485
     topicUid: Connector_help_Advantech_AMT_ARUD-ARDD_RS485
   - name: Advantech AMT Intrac 405
@@ -4599,6 +4605,13 @@
     topicUid: Connector_help_Gilat_Satellite_Networks_TotalNMS
   - name: Gilat Satellite Networks TotalNMS - CPE
     topicUid: Connector_help_Gilat_Satellite_Networks_TotalNMS_-_CPE
+- name: GitHub
+  items:
+  - name: GitHub Repositories
+    topicUid: Connector_help_GitHub_Repositories
+    items:
+    - name: GitHub Repositories Technical
+      topicUid: Connector_help_GitHub_Repositories_Technical
 - name: GlenSound
   items:
   - name: GlenSound Atomic Copper 29S
@@ -6106,6 +6119,13 @@
   items:
   - name: MegaTec NetAgent9
     topicUid: Connector_help_Megatec_NetAgent9
+- name: MEGMEET
+  items:
+  - name: MEGMEET MegaPower MC2600
+    topicUid: Connector_help_MEGMEET_MegaPower_MC2600
+    items:
+    - name: MEGMEET MegaPower MC2600 Technical
+      topicUid: Connector_help_MEGMEET_MegaPower_MC2600_Technical
 - name: Meinberg
   items:
   - name: Meinberg Element Manager
@@ -6760,6 +6780,13 @@
     topicUid: Connector_help_MySql_Stratos_Global_CDIS
   - name: MySql Stratos Perth CDIS
     topicUid: Connector_help_MySql_Stratos_Perth_CDIS
+- name: MyUplink
+  items:
+  - name: MyUplink Platform
+    topicUid: Connector_help_MyUplink_Platform
+    items:
+    - name: MyUplink Platform Technical
+      topicUid: Connector_help_MyUplink_Platform_Technical
 - name: Nagios
   items:
   - name: Nagios Connector
@@ -7859,6 +7886,13 @@
     topicUid: Connector_help_Prodys_Prontonet
   - name: Prodys Quantum
     topicUid: Connector_help_Prodys_Quantum
+- name: Proemion
+  items:
+  - name: Proemion Platform
+    topicUid: Connector_help_Proemion_Platform
+    items:
+    - name: Proemion Platform Technical
+      topicUid: Connector_help_Proemion_Platform_Technical
 - name: Promax
   items:
   - name: Promax Neo
@@ -9255,6 +9289,8 @@
     items:
      - name: Slack Messaging Technical
        topicUid: Connector_help_Slack_Messaging_technical
+     - name: Slack Messaging Sending Messages Developer Guide
+       topicUid: Connector_help_Slack_Messaging_sending_messages_developer
 - name: Smappee
   items:
   - name: Smappee Platform
@@ -9521,6 +9557,13 @@
     topicUid: Connector_help_Sony_XVS-G1
   - name: Sony XVS Control
     topicUid: Connector_help_Sony_XVS_Control
+- name: Space DOTS
+  items:
+  - name: Space DOTS DD1
+    topicUid: Connector_help_Space_DOTS_DD1
+    items:
+    - name: Space DOTS DD1 Technical
+      topicUid: Connector_help_Space_DOTS_DD1_Technical 
 - name: SpacePath Communications
   items:
   - name: SpacePath Communications N6143 Controller Series

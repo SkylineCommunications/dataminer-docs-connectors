@@ -6,21 +6,24 @@ uid: Connector_help_Slack_Messaging
 
 ## About
 
-This connector can be used to integrate DataMiner with a **Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. In order to keep this connector as general as possible, these actions are defined in **automation scripts**.
+Slack is a cloud-based team messaging and collaboration platform widely used for real-time communication across organizations. This connector can be used to **integrate DataMiner with a Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. To keep this connector as general as possible, these actions are defined in **automation scripts**.
 
-When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it will execute the automation script linked to that command.
+When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it executes the automation script associated with that command.
 
-> [!TIP]
-> To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
+> [!IMPORTANT]
+> Only versions 1.1.0.x and above are supported by Slack because of the deprecation of legacy bots and classic apps. For more information, refer to the [Slack developer changelog](https://docs.slack.dev/changelog/2024-09-legacy-custom-bots-classic-apps-deprecation/).
 
 ## Key Features
 
 - **Slack DataMiner integration**: Allows for DataMiner to interact with Slack, enabling users to execute DataMiner automation scripts directly from Slack channels.
-- **Automated Slack messages**: Enables DataMiner to send messages to Slack channels or users based on certain events or conditions defined in automation scripts.
+- **Automated Slack messages**: Enables DataMiner to send messages to Slack channels or users based on certain events or conditions defined in correlation rules.
+- **Activate automation scripts in Slack**: Allows users in Slack to activate automation scripts designed for this integration.
 
 ## Use Cases
 
 ### Receive Real-Time Notifications in Slack from DataMiner
+
+![Slack Messaging Alarms in Slack](/connector/images/Slack_Messaging_AlarmsInSlack.png)
 
 **Challenge**: Operators want to receive real-time notifications in Slack when certain events occur in DataMiner, such as alarms or performance thresholds being breached.
 
@@ -32,11 +35,23 @@ When commands are sent into a Slack channel, these will be picked up by the elem
 
 **Challenge**: Users want to execute DataMiner automation scripts without leaving their Slack workspace.
 
-**Solution**: Use the Slack Messaging connector to allow users to trigger DataMiner automation scripts by sending specific commands in Slack channels.
+**Solution**: Use the Slack Messaging connector to allow users to trigger DataMiner automation scripts by sending predefined commands in Slack channels.
 
 **Benefit**: Enhances productivity and streamlines workflows by enabling users to interact with DataMiner directly from Slack, reducing the need to switch between applications.
 
+### Track and Update Previously Sent Messages in Slack
+
+**Challenge**: Operators need to update status messages or notification in Slack as situations evolve rather than send new messages that clutter the Slack channels.
+
+**Solution**: Use the Slack Messaging connector's Tracked Messages table to tag sent messages and later update them with new information.
+
+**Benefit**: Keeps Slack channels organized and reduces notification fatigue.
+
 ## Technical Reference
+
+### Prerequisites
+
+- **A Slack Account** with full administration permissions to the workspace is needed to create and configure a new (DataMiner) app in Slack.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Slack_Messaging_technical).

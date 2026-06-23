@@ -6,26 +6,20 @@ uid: Connector_help_Slack_Messaging_technical
 
 ## About
 
-This connector can be used to integrate Skyline DataMiner with a **Slack workspace**. It will communicate with Slack and ensure that the configured list of actions is executed. In order to keep this connector as general as possible, these actions are defined in **automation scripts**.
+This connector links DataMiner with a Slack workspace through two HTTP connections: a **Web API** to the Slack Web API (polling) and a **WebSocket API** for real-time message delivery via Socket Mode. This allows two-way communication between DataMiner and Slack; DataMiner can send messages to Slack channels, while Slack users can message DataMiner to request information and trigger entire workflows.
 
-When commands are sent into a Slack channel, these will be picked up by the element running this connector. When the element detects a known command, it will execute the automation script linked to that command.
+**HTTP Web API** is used to communicate with the Slack API ([http://api.slack.com](http://api.slack.com/)), retrieving the list of users and conversations.
 
-**HTTP communication** is used to communicate with the Slack API ([http://api.slack.com](http://api.slack.com/)). Two separate connections are made: one connection to the WEB API, and a second Web Socket connection.
+**Access tokens** are used to authenticate on the API. Such a token can be obtained from the app configuration webpage (see [Slack Application and Bot User Setup](#slack-application-and-bot-user-setup-version-110x-and-above)).
 
-The connector periodically retrieves the list of users and conversations via the WEB API (using polling), while messages that users send in a channel are pushed to the connector via the web socket interface.
+**HTTP WebSocket API** communication requires that Socket Mode is enabled for the Slack app and an **app-level token** is configured. **App-level tokens** can be obtained from the app configuration webpage. These must have the `connections:write` scope.
 
-**Access tokens** are used to authenticate on the API. Such a token can be obtained from the app configuration webpage (see [Installation and configuration](#installation-and-configuration)).
-
-**WebSocket** communication requires that Socket Mode is enabled for the Slack app and an **app-level token** is configured. **App-level tokens** can be obtained from the app configuration webpage. These must have the `connections:write` scope.
-
-Automation scripts that can be executed via Slack must have specific dummies and parameters (see [Automation Scripts](#automation-scripts)).
-
-Users can use the `!list` command to retrieve an overview of all compatible and enabled scripts that can be executed. The command for each script can be customized on the **Automation Scripts** page.
+The WebSocket connection is used to notify DataMiner when users send messages using any of the built-in commands (e.g., **!list, !help**) or custom commands that have been configured in the element. Each of these custom commands will trigger the execution of a predefined script in DataMiner (see [Automation Scripts](#automation-scripts)).
 
 > [!TIP]
 > To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
 
-## Installation and configuration
+## Configuration
 
 ### Creation
 
@@ -39,47 +33,95 @@ HTTP CONNECTION:
 - **IP port**: The IP port of the destination, by default *443*.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
-#### HTTP Web Socket API connection
+#### HTTP WebSocket API connection
 
-This connector uses an HTTP (web socket) connection and requires the following input during element creation:
+This connector uses an HTTP (WebSocket) connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination. Must be slack.com.
+- **IP address/host**: The polling IP or URL of the destination. Must be `slack.com`.
 - **IP port**: The IP port of the destination. Default: 443
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
-### Configuration of the Slack application and bot user
+### Slack Application and Bot User Setup (Version 1.1.0.X and Above)
 
-This integration works based on a Slack bot that must be preconfigured via the Slack API website. You can configure this as follows:
+#### Authentication Setup
 
-1. Go to <https://api.slack.com/apps>.
+1. Go to <https://api.slack.com/apps> and click **Create New App**.
 
-1. Click **Create New App**.
+   ![Slack_Messaging_AppConfig_Step1.png](~/connector/images/Slack_Messaging_AppConfig_Step1.png)
+
+1. Select to create your new app **From scratch**.
+
+   ![Slack_Messaging_AppConfig_Step2.png](~/connector/images/Slack_Messaging_AppConfig_Step2.png)
 
 1. Provide a name for the app (i.e., DataMiner), and select the workspace in which you want to integrate the app.
 
 1. Click **Create App**.
 
-1. Go to the **Bot Users** page and select **Add Bot User**.
+   ![Slack_Messaging_AppConfig_Step3.png](~/connector/images/Slack_Messaging_AppConfig_Step3.png)
 
-1. Give the bot user a name (i.e., DataMiner), and make sure that **Always Show My Bot as Online** is disabled.
+1. Go to **OAuth & Permissions**, scroll down to **Bot Token Scopes**, and add the following OAuth Scopes:
 
-   The bot user will automatically be online when the connector is connected to the web socket connection.
+   - **channels:read**
+   - **chat:write**
+   - **files:write**
+   - **groups:read**
+   - **im:read**
+   - **mpim:read**
+   - **users:read**
+   - **channels:history** (for WebSocket data)
+   - **im:history** (for WebSocket data)
+   - **app_mentions:read** (for WebSocket data)
+   - **im:history** (for use with the **Automation Scripts** table from direct messages with the bot)
 
-1. Click **Add Bot User**.
+   ![Slack_Messaging_AppConfig_Step5_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step5_Pt1.png)
 
-1. Install the application in your workspace in order to receive the bot authentication token that can be used in the element.
+   ![Slack_Messaging_AppConfig_Step5_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step5_Pt2.png)
 
-1. Copy the **Bot User Oauth Access Token**, and paste it in the **OAuth Access Token** parameter on the **Authentication** page of the Slack element in DataMiner.
+1. On the **OAuth & Permissions** page, scroll to the **OAuth Tokens** section and click the **Install to {Insert your Workspace Name here}** button in green. Make sure to allow whatever app permissions it shows you on the next page.
 
-1. Go to the **Socket Mode** page, and enable Socket Mode.
+   ![Slack_Messaging_AppConfig_Step6.png](~/connector/images/Slack_Messaging_AppConfig_Step6.png)
 
-1. Go to the **App-Level Tokens** section under the **Basic Information** page, and create a new token with the `connections:write` scope.
+1. Copy the **Bot User OAuth Token** that now appears underneath **OAuth Token**, and put it under the **OAuth Access Token** parameter on the **Authentication** page of the Slack Messaging element.
 
-1. Copy the new app-level token, and paste it in the **App-Level Token** parameter on the **Websocket** page of the Slack element in DataMiner.
+   ![Slack_Messaging_AppConfig_Step7_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step7_Pt1.png)
 
-The connector will now connect to the Slack API, and shortly afterwards the bot user will come online.
+   ![Slack_Messaging_AppConfig_Step7_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step7_Pt2.png)
+
+#### WebSocket Setup
+
+If you want to utilize tracked messages and run DataMiner automation scripts through Slack, you will need to follow the WebSocket setup steps below:
+
+1. Go to **Event Subscriptions** > **Subscribe to bot events** and add the following events:
+
+   - **app_mention**
+   - **messages.channels**
+   - **message.im**
+
+   ![Slack_Messaging_AppConfig_Step8.png](~/connector/images/Slack_Messaging_AppConfig_Step8.png)
+
+1. Go to **Socket Mode**, click the toggle button next to **Enable Socket Mode**, specify a token name (i.e., DataMiner Socket), and keep the scope set to **connections:write**.
+
+   If you want to configure elements of the **App-Level Token** later, you can go to the **Basic Information** section on the Slack API to configure it.
+
+   ![Slack_Messaging_AppConfig_Step9_Pt1.png](~/connector/images/Slack_Messaging_AppConfig_Step9_Pt1.png)
+
+   ![Slack_Messaging_AppConfig_Step9_Pt2.png](~/connector/images/Slack_Messaging_AppConfig_Step9_Pt2.png)
+
+1. Copy the Socket Token, go to the **Websocket** page of the Slack Messaging element in DataMiner, and enter the token under the **App-Level Token** parameter.
+
+   ![Slack_Messaging_AppConfig_Step10.png](~/connector/images/Slack_Messaging_AppConfig_Step10.png)
+
+1. On the Slack channels within your workspace where you want the bot to be present, go to the **channel settings**, select the **Integrations** tab, click **Add Apps**, and select the bot.
+
+   ![Slack_Messaging_AppConfig_Step11.png](/connector/images/Slack_Messaging_AppConfig_Step11.png)
+
+1. Finally, go to **Install App** and click the **Reinstall to {Workspace Name}** button for your WebSocket changes to take effect.
+
+   ![Slack_Messaging_AppConfig_Step12.png](~/connector/images/Slack_Messaging_AppConfig_Step12.png)
+
+The Slack Messaging element will now connect to the Slack API and the bot user will come online on your workspace.
 
 ## How to Use
 
@@ -97,9 +139,15 @@ This page contains a table with all users that are part of the Slack team.
 
 ### Conversations
 
-This page contains a table listing all possible conversations (public channels, private channels, instant messaging) that messages can be sent to. The "Send Message" column allows you to quickly send a message to a specific conversation. The last received message is shown in the "Last Message" column.
+This page contains a table listing all possible conversations (public channels, private channels, instant messaging) that messages can be sent to. The **Send Message** column allows you to quickly send a message to a specific conversation. The last message received is shown in the **Last Message** column.
 
 ![Conversations.jpg](~/connector/images/Slack_Messaging_Conversations.jpg)
+
+### Tracked Messages
+
+This page contains a table with all tracked messages. These messages are linked with a unique tag (identifier), which can be used to update the message inside the Slack channel.
+
+The number of days that messages should remain in the table can be customized.
 
 ### Automation Scripts
 
@@ -122,14 +170,6 @@ Only scripts that were adapted to be compatible with this Slack integration are 
 - Parameter `CONVID`: The ID of the Slack conversation in which the command was invoked.
 - Parameter `SLACKARGUMENTS`: The plain text after the command name that was provided by the Slack user when the command was invoked.
 
-### Tracked Messages
-
-Added in version 1.0.0.3.
-
-This page contains a table with all tracked messages. These messages are linked with a unique tag (identifier), which can be used to update the message inside the Slack channel.
-
-The number of days that messages should remain in the table can be customized.
-
 ### Authentication
 
 On this page, the **OAuth access token** that should be used to communicate with the Slack API must be configured. The page also contains some parameters that display the current status of the authentication.
@@ -138,57 +178,16 @@ On this page, the **OAuth access token** that should be used to communicate with
 
 ### Websocket
 
-On this page, the **App-Level Token** that should be used to connect to the Slack Web Socket must be configured. The page also contains some parameters that display the current status of the web socket connection.
+On this page, the **App-Level Token** that should be used to connect to the Slack WebSocket must be configured. The page also contains some parameters that display the current status of the WebSocket connection.
 
 ![websocket.png](~/connector/images/Slack_Messaging_websocket.png)
 
 ### Web Interface
 
-This page displays the app configuration page on the Slack API website. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page displays the app configuration page on the Slack API website, where you can log in with the account that created the app. Note that the web interface is only accessible when the client machine has network access to the product.
 
-## Notes
+## Additional Resources
 
-### External sets
+- To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
 
-The connector provides the functionality to send a message from an external source in DataMiner (i.e., an automation script) to a channel in Slack. This can be done in two different ways:
-
-- Simple XML:
-
-  - Set to parameter with **ID 50**.
-
-  - Only basic formatting.
-
-  - Format is XML:
-
-    ```xml
-    <Message>
-       <Channel>name or ID of the channel</Channel>
-       <Text>the text to send to the channel</Text>
-       <Tag>unique identifier</Tag>
-    </Message>
-    ```
-
-  - The tag can be chosen by the sender to be able to uniquely identify the message. This can be used later to send an update of this message to the Slack channel.
-
-- Raw JSON string:
-
-  - Set to parameter with **ID 51**.
-
-  - Allows more advanced formatting and attachments.
-
-  - Format: see <https://api.slack.com/methods/chat.postMessage>.
-
-  - JSON is sent directly to the chat.postMessage WEB API method, without modifications.
-
-From version 1.0.0.3 onwards, it is also possible to update a message that was previously sent to a Slack channel with a unique tag assigned:
-
-- Set to parameter with **ID 52**
-
-- Format is XML:
-
-  ```xml
-  <Message>
-     <Tag>unique identifier of the message</Tag>
-     <Text>new message</Text>
-  </Message>
-    ```
+- If you want to send Slack messages or files through automation scripts, refer to [Sending Messages to Slack — Developer Guide](xref:Connector_help_Slack_Messaging_sending_messages_developer)
