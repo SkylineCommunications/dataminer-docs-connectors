@@ -7941,6 +7941,11 @@
     topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
+  - name: Qbit QAMOS
+    topicUid: Connector_help_Qbit_QAMOS
+    items:
+      - name: Qbit QAMOS Technical
+        topicUid: Connector_help_Qbit_QAMOS_Technical
   - name: Qbit SIMux
     topicUid: Connector_help_Qbit_SIMux
 - name: Qligent
