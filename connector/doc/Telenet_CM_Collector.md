@@ -369,7 +369,97 @@ $$
 1. Encryption 1.3.6.1.4.1.35604.1.19.51.5.1.1.10 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.10 (5G)
 1. Another Operator
 
-### Channeloading offload structure
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|5|BSS|Basic Service Set of the connected client|N/A|N/A|
+|6|MAC Address Client|See [MAC Address Client](#mac-address-client)|N/A|N/A|
+|7|RSSI|See [RSSI (Received Signal Strength Indicator)](#rssi-received-signal-strength-indicator)|N/A|N/A|
+|8|Tx|See [Transmit (Tx)](#transmit-tx)|N/A|N/A|
+|9|Rx|See [Receive (Rx)](#receive-rx)|N/A|N/A|
+|10|Mode|See [Mode](#mode)|N/A|N/A|
+|11|Authentication|See [Authentication](#authentication)|N/A|N/A|
+|12|Encryption|See [Encryption](#encryption)|N/A|N/A|
+|13|Another Operator|Field used to distinguish between different operators|N/A|N/A|
+
+#### MAC Address Client
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.2|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.2|N/A|
+
+#### RSSI (Received Signal Strength Indicator)
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.5|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.5|N/A|
+
+#### Transmit (Tx)
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.6|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.6|N/A|
+
+#### Receive (Rx)
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.7|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.7|N/A|
+
+#### Mode
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.8|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.8|N/A|
+
+#### Authentication
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.9|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.9|N/A|
+
+#### Encryption
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.10|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.10|N/A|
+
+### Channel Loading Offload Structure
+
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|5|Channel Nr|Channel number|N/A|N/A|
+|6|Channel Loading|See [Channel Loading](#channel-loading)|N/A|N/A|
+|7|Channel AP Count|See [Channel AP Count](#channel-ap-count)|N/A|N/A|
+|8|Another Operator|Field used to distinguish between different operators|N/A|N/A|
+
+#### Channel Loading
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.1.7.1.1.2|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.3.3.1.1.2|N/A|
+
+#### Channel AP Count
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.1.7.1.1.3|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.3.3.1.1.3|N/A|
 
 1. SAPID
 1. Timestamp
@@ -380,7 +470,56 @@ $$
 1. Channel AP Count 1.3.6.1.4.1.35604.1.19.51.1.7.1.1.3 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.3.3.1.1.3 (5G)
 1. Another Operator
 
-### Connectedclients offload structure
+### Connected Clients Offload Structure
+
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|5|BSS|Basic Service Set of the connected client|N/A|N/A|
+|6|Time Interval|See [Time Interval](#time-interval)|N/A|N/A|
+|7|Connected Clients|See [Connected Clients](#connected-clients)|N/A|N/A|
+|8|Max Simultaneous Clients|See [Max Simultaneous Clients](#max-simultaneous-clients)|N/A|N/A|
+|9|Max Simultaneous Clients Timestamp|See [Max Simultaneous Clients Timestamp](#max-simultaneous-clients-timestamp)|N/A|N/A|
+|10|Rejected Clients|See [Rejected Clients](#rejected-clients)|N/A|N/A|
+|11|Another Operator|Field used to distinguish between different operators|N/A|N/A|
+
+#### Time Interval
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.3|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.3|N/A|
+
+#### Connected Clients
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.4|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.4|N/A|
+
+#### Max Simultaneous Clients
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.5|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.5|N/A|
+
+#### Max Simultaneous Clients Timestamp
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.6|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.6|N/A|
+
+#### Rejected Clients
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.7|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.7|N/A|
 
 1. SAPID
 1. Timestamp
@@ -394,7 +533,25 @@ $$
 1. Rejected Clients 1.3.6.1.4.1.35604.1.19.51.5.3.1.7 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.4.1.7 (5G)
 1. Another Operator
 
-### Clienterrors offload structure
+### Client Errors Offload Structure
+
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|5|BSS|Basic Service Set of the connected client|N/A|N/A|
+|6|Error Type|Specific error type encountered|N/A|N/A|
+|7|Rejected Clients|See [Rejected Clients](#rejected-clients-client-errors)|N/A|N/A|
+|8|Another Operator|Field used to distinguish between different operators|N/A|N/A|
+
+#### Rejected Clients (Client Errors)
+
+|Wifi Frequency|SNMP OID|OID Description|
+|--------------|--------|---------------|
+|2.4G|1.3.6.1.4.1.35604.1.19.51.5.5.2.1.2|N/A|
+|5G|1.3.6.1.4.1.35604.1.19.51.5.6.2.1.2|N/A|
 
 1. SAPID
 1. Timestamp
@@ -405,7 +562,13 @@ $$
 1. Rejected Clients 1.3.6.1.4.1.35604.1.19.51.5.5.2.1.2 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.6.2.1.2 (5G)
 1. Another Operator
 
-### Connectedpowerline offload structure
+### Connected Powerline Offload Structure
+
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
 
 1. SAPID
 1. Timestamp
@@ -420,7 +583,13 @@ $$
 1. Another Operator
 1. n CPE Client 1.n Mac 1.3.6.1.4.1.35604.1.19.62.1.1.7.1.2
 
-### Lanuser offload structure
+### LAN User Offload Structure
+
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
 
 1. SAPID
 1. Timestamp
@@ -429,7 +598,13 @@ $$
 1. LAN Interface 1.3.6.1.4.1.35604.1.19.201.1.1.1.4
 1. Another Operator
 
-### Powerlinenetwork offload structure
+### Powerline Network Offload Structure
+
+|Item|Field|Description|SNMP OID|SNMP OID Description|
+|----|-----|-----------|--------|--------------------|
+|1|SAPID|Service Access Point ID|N/A|N/A|
+|2|Timestamp|Time of polling|N/A|N/A|
+|3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
 
 1. SAPID
 1. Timestamp
