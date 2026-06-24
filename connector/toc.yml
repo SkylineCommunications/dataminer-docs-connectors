@@ -2388,6 +2388,9 @@
     topicUid: Connector_help_Cisco_Meraki
   - name: CISCO Meraki Web API
     topicUid: Connector_help_CISCO_Meraki_Web_API
+    items:
+    - name: CISCO Meraki Web API Technical
+    topicUid: Connector_help_CISCO_Meraki_Web_API_Technical
   - name: Cisco Monitor+
     topicUid: Connector_help_Cisco_Monitor+
   - name: Cisco Netflow
