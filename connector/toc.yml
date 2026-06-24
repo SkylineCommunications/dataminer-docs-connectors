@@ -11464,6 +11464,11 @@
     topicUid: Connector_help_Ziggo_IVR_Gateway
   - name: Ziggo IVR Gateway K2View
     topicUid: Connector_help_Ziggo_IVR_Gateway_K2View
+  - name: Ziggo Kafka Producer
+    topicUid: Connector_help_Ziggo_Kafka_Producer
+    items:
+    - name: Ziggo Kafka Producer Technical
+      topicUid: Connector_help_Ziggo_Kafka_Producer_Technical
   - name: Ziggo Modem Outage Check
     topicUid: Connector_help_Ziggo_Modem_Outage_Check
   - name: Ziggo SAM Event Combiner
