@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_MIT_xperts_iSims
+uid: Connector_help_MiT_Xperts_iSIMS
 ---
 
-# MIT xperts iSims
+# MiT Xperts iSIMS
 
 ## About
 
