@@ -82,30 +82,7 @@ Recording sessions can be created, updated, and deleted by external DataMiner Au
 
 Two message types are supported:
 
-- **AddOrUpdateRecordingSession**: Creates a new scheduled recording session or updates an existing one. The connector routes the request to the correct OpenGate v2 endpoint based on the current session status — scheduled sessions are managed via `/schedules`, while ongoing sessions are managed via `/recording-sessions`.
+- **AddOrUpdateRecordingSession**: Creates a new scheduled recording session or updates an existing one. The connector routes the request to the correct OpenGate v2 endpoint based on the current session status ï¿½ scheduled sessions are managed via `/schedules`, while ongoing sessions are managed via `/recording-sessions`.
 - **DeleteRecordingSession**: Deletes an existing recording session. As with updates, the correct endpoint is selected automatically based on the session's current status.
 
 When the API responds, the connector sends the result back to the originating source of the InterApp message, including a success flag and, in case of failure, an error message.
-
-## Notes
-
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|---|---|---|---|
-| 1.0.0.x | Initial version. OpenGate v1 API. | - | - |
-| 2.2.0.x [SLC Main] | Migrated to OpenGate v2 API. Scheduled and ongoing sessions are routed to separate endpoints based on session status. | 1.0.0.x | Requires EVS VIA MAP 1.1 or higher. |
-
-### Product Info
-
-| Range | Supported Firmware |
-|---|---|
-| 1.0.0.x | RabbitMQ 3.8.5 |
-| 2.2.0.x | OpenGate API v2 (EVS VIA MAP 1.1+), RabbitMQ 3.8.5 |
-
-### System Info
-
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---|---|---|---|---|
-| 1.0.0.x | No | Yes | - | - |
-| 2.2.0.x | No | Yes | - | - |
