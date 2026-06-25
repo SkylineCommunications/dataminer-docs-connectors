@@ -89,7 +89,8 @@ As described above, the CM Collector is not intended to be used separately. The 
 
 ## Generated CSV files
 
-The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to the Configuration chapter above.
+- The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to the Configuration chapter above.
+- There will be a CSV file generated per operator.
 
 ### Slow offload structure
 
@@ -202,6 +203,11 @@ The Dynamic OIDs are a set of parameters that can be configured in the page **Dy
 |7|DynamicOID1|Dynamic OID 1 (see [Dynamic OIDs](#dynamic-oids))|N/A|N/A|
 |8|DynamicOID2|Dynamic OID 2 (see [Dynamic OIDs](#dynamic-oids))|N/A|N/A|
 |9|DynamicOID3|Dynamic OID 3 (see [Dynamic OIDs](#dynamic-oids))|N/A|N/A|
+|10|Partial Service State|Partial service state of the CM|1.3.6.1.4.1.4491.2.1.28.1.3.1.9|`docsIf31CmtsCmRegStatusPartialSvcState`. Type of *bondingGroup* issue that the CM experiences|
+|11|Partial Channel State|Partial channel state of the CM|1.3.6.1.4.1.4491.2.1.28.1.3.1.10|`docsIf31CmtsCmRegStatusPartialChanState`. Type of OFDM *channel* issue that the CM experiences|
+
+> [!NOTE]
+> *Partial service state* and *Partial channel state* are only available for DOCSIS 3.1 CMs. For DOCSIS 3.0 and lower, these fields will be empty.
 
 ### Fast DS tuner offload structure
 
