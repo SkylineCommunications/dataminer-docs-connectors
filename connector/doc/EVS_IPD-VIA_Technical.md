@@ -78,7 +78,7 @@ This page contains all connection and authentication settings for both the API a
 
 ### InterApp
 
-Recording sessions can be created, updated, and deleted by external DataMiner Automation scripts using the InterApp framework. The required message types are provided by the `Skyline.DataMiner.ConnectorAPI.EVS.IPD-VIA` NuGet package, which must be referenced by any script that sends messages to this connector.
+Recording sessions can be created, updated, and deleted by external DataMiner automation scripts using the InterApp framework. The required message types are provided by the `Skyline.DataMiner.ConnectorAPI.EVS.IPD-VIA` NuGet package, which must be referenced by any script that sends messages to this connector.
 
 Two message types are supported:
 

@@ -6,7 +6,7 @@ uid: Connector_help_EVS_IPD-VIA
 
 ## About
 
-**EVS IPD-VIA** is the web-based asset management component of EVS's VIA ecosystem, enabling access to, management, editing, and sharing of live production assets. The EVS IPD-VIA connector integrates DataMiner with the EVS OpenGate v2 API and RabbitMQ message queues, giving operators a centralized view of recording sessions and enabling automated recording workflow orchestration from within the DataMiner ecosystem.
+**EVS IPD-VIA** is the web-based asset management component of EVS's VIA ecosystem, enabling access to, and management, editing, and sharing of live production assets. The EVS IPD-VIA connector integrates DataMiner with the EVS OpenGate v2 API and RabbitMQ message queues, giving operators a centralized view of recording sessions and enabling automated recording workflow orchestration from within the DataMiner ecosystem.
 
 ## Key Features
 
