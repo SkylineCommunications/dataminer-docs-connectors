@@ -5057,6 +5057,9 @@
     topicUid: Connector_help_HP_Storageworks_MSA
   - name: HP Synergy
     topicUid: Connector_help_HP_Synergy
+    items:
+    - name: HP Synergy Technical
+      topicUid: Connector_help_HP_Synergy_Technical
   - name: HP V1910
     topicUid: Connector_help_HP_V1910
   - name: HP Virtual Connect Flex-10

@@ -15,8 +15,8 @@ This connector supports two operating models:
 
 ### Version Info
 
-| Range              | Features                                                                                                    | Based on | System Impact |
-|--------------------|-------------------------------------------------------------------------------------------------------------|----------|---------------|
+| Range              | Features                                                                                                   | Based on | System Impact |
+|--------------------|------------------------------------------------------------------------------------------------------------|----------|---------------|
 | 1.0.0.x (obsolete) | Initial version. Polling and monitoring via Meraki API over HTTPS.                                         | -        | -             |
 | 1.0.1.x            | Maintenance release in the 1.0.x polling track.                                                            | -        | -             |
 | 2.0.0.x (obsolete) | Virtual connector captures and processes webhook notifications, including auto-clearing of stale alarms.   | -        | -             |
