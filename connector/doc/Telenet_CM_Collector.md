@@ -4,7 +4,7 @@ uid: Connector_help_Telenet_CM_Collector
 
 # Telenet CM Collector
 
-The **Telenet CM Collector** is part of the EPM solution deployed at Telenet, and works together with the **Telenet CPE Manager**, **Telenet STB Collector** and **Telenet eMTA Collector** connector. This connector is responsible for the polling cable modems.
+The **Telenet CM Collector** is part of the EPM solution deployed at Telenet and works together with the **Telenet CPE Manager**, **Telenet STB Collector**, and **Telenet eMTA Collector** connectors. This connector is responsible for polling cable modems.
 
 ## About
 
@@ -13,7 +13,7 @@ This connector will poll all the CMs in two poll cycles:
 - Fast Poll: Polling CMs over a 15-minute period.
 - Slow Poll: Polling CMs over a 24-hour period.
 
-In addition, there is another poll cycle that will poll the CMTS to request the US data of all the CMs over a 15-minute period. The polled data will be offloaded into CSV files and will be aggregated by the CPE Manager element. The CPE Manager element will provision the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector will send traps towards Adlex Nouveau.
+In addition, there is another poll cycle that polls the CMTS to request the US data of all CMs over a 15-minute period. The polled data is offloaded into CSV files and aggregated by the CPE Manager element. The CPE Manager element provisions the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector sends traps to `Adlex Nouveau`.
 
 ## Installation and configuration
 
@@ -25,16 +25,17 @@ The following input is required during element creation:
 
 **SNMP Connection:**
 
-- **IP address/host**: 127.0.0.1 (IP addresses will be dynamically filled in).
-- **Device address**: Not needed.
+- **IP address/host**: 127.0.0.1 (IP addresses will be dynamically set by the connector when polling a specific cable modem).
+- **Device address**: Not required.
 
 **SNMP Settings:**
 
 - **Port Number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: Not needed, because the connector will not perform sets.
+- **Get Community String**: The community string used when reading values from the device, by default *public*.
+- **Set Community String**: Not required, because the connector will not perform sets.
 
-Note: All polled CMs will share the same settings, and all polled CMTSs will share the same settings.
+> [!NOTE]
+> All polled CMs share the same settings, and all polled CMTS devices share the same settings.
 
 ### Configuration of the offload parameters
 
@@ -44,23 +45,36 @@ The parameter **Data Offload Folder** contains the location of the fast and slow
 
 ### Configuration of the threshold parameters
 
-The threshold parameters are used during aggregation. If the parameter in the CPE manager is %CM With DS SNR \< T, then the DS SNR parameter is compared with the DS SNR Low Threshold. If the SNR is below the value in the configuration parameter, then the CM is taken into account.
+The threshold parameters are used during aggregation. If the parameter in the CPE Manager is `%CM With DS SNR < T`, then the DS SNR parameter is compared with the **DS SNR Low Threshold**. If the SNR is below the value in the configuration parameter, then the CM is taken into account for the aggregation. The same applies for the other threshold parameters.
 
-The following parameters can be configured: **DS CR High Threshold, DS CS High Threshold**, **DS Level High Threshold**, **DS Level Low Threshold**, **DS SNR Low Threshold, DS UR High Threshold**, **US CR High Threshold**, **US CS High Threshold**, **US Level High Threshold**, **US Level Low Threshold**, **US SNR Low Threshold** and **US UR High Threshold**.
+The following parameters can be configured:
+
+- DS CR High Threshold
+- DS CS High Threshold
+- DS Level High Threshold
+- DS Level Low Threshold
+- DS SNR Low Threshold
+- DS UR High Threshold
+- US CR High Threshold
+- US CS High Threshold
+- US Level High Threshold
+- US Level Low Threshold
+- US SNR Low Threshold
+- US UR High Threshold
 
 Other threshold parameters are used to determine whether or not to offload a value. With the **Minimum Variation DS SNR** and **Minimum Variation US SNR** parameters, you can make sure that there will only be a change of the parameter value if the difference between the polled value and the previous value is larger than the setting in this minimum variation parameter. The **CR Offload Threshold, CS Offload Threshold** and **UR Offload Threshold** parameter are used to ensure that there will always be an offload if the polled value is larger than or equal to the configured value.
 
 ### Configuration of the home gateway parameters
 
-**Homestatistics Polling** enables the polling of the home gateway statistics. These statistics are polled once per day per modem. The client stats are polled between 7 p.m. and 9 p.m. in order to get the stats during the internet peak. With the parameter **Poll Clientstats 15 Min**, this polling interval can be changed, so that the client stats are then polled every 15 minutes. Polling of other statistics (channel loading, connected clients, client errors, connected power line, lan user, powerline network) is always spread over the entire day.
+**Homestatistics Polling** enables the polling of the home gateway statistics. These statistics are polled once per day per modem. The client stats are polled between 7 p.m. and 9 p.m. in order to get the stats during the internet peak. With the parameter **Poll Clientstats 15 Min**, this polling interval can be changed, so that the client stats are then polled every 15 minutes. Polling of other statistics (channel loading, connected clients, client errors, connected power line, LAN user, powerline network) is always spread over the entire day.
 
 ### Configuration of the Adlex Nouveau parameters
 
-The CM Collector checks the current internet usage of the cable modem to determine the class to which it belongs. This info is then sent towards Adlex Nouveau in a trap. Adlex Nouveau will perform tests on modems that are not in use, in order to determine the maximum upload and download speed that can be reached. You can enable this functionality by setting the **Poll Classification** parameter to *Enabled*.
+The CM Collector checks the current internet usage of the cable modem to determine the class to which it belongs. This information is then sent to `Adlex Nouveau` in a trap. `Adlex Nouveau` will perform tests on modems that are not in use, in order to determine the maximum upload and download speed that can be reached. You can enable this functionality by setting the **Poll Classification** parameter to *Enabled*.
 
 The **Trap Table** contains the IP addresses of the Adlex DMAs to which the traps can be sent. You can add IP addresses to this table by setting the parameter **Add Trap IP**. You can remove them again with the **Delete Trap IP** parameter.
 
-The **Hardware Table** contains all the types of modems for which traps may be sent towards Adlex. You can add hardware types by setting the parameter **Add Hardware Type**, and remove them again with the **Delete Hardware Type** parameter.
+The **Hardware Table** contains all the types of modems for which traps may be sent to `Adlex Nouveau`. You can add hardware types by setting the parameter **Add Hardware Type**, and remove them again with the **Delete Hardware Type** parameter.
 
 The **Classification** table contains the definitions of all the classes. You can add rows to this table by clicking the **Add Class** button, and remove them again with the **Delete Class** parameter.
 
@@ -71,37 +85,13 @@ The **Classification** table contains the definitions of all the classes. You ca
 
 ## Usage
 
-As described above, the CM Collector is not intended to be used separately. The resulting data should be consulted with the CPE Manager interface of the CPE Manager elements.
+As described above, the CM Collector is not intended to be used separately. The resulting data should be consulted in the CPE Manager interface of the CPE Manager elements.
 
 ## Generated CSV files
 
 The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to the Configuration chapter above.
 
 ### Slow offload structure
-
-1. MAC Address 1.3.6.1.2.1.2.2.1.6.2
-1. SAPID
-1. Another Operator
-1. Node
-1. Timestamp
-1. Chassis
-1. HardwareVersion 1.3.6.1.2.1.1.1.0
-1. ModelType 1.3.6.1.2.1.1.1.0
-1. HardwareClass 1.3.6.1.2.1.1.1.0
-1. DocsisType 1.3.6.1.2.1.10.127.1.1.5.0
-1. SW Version 1.3.6.1.2.1.69.1.3.5.0
-1. Last Change Datetime Calculated out of itf last change 1.3.6.1.2.1.2.2.1.9.1 and System Uptime 1.3.6.1.2.1.1.3.0
-1. System Uptime 1.3.6.1.2.1.1.3.0
-1. Downstream Maxtrafficrate 1.3.6.1.2.1.10.127.7.1.2.2.6, Docsis 2.0 from CMTS 1.3.6.1.2.1.10.127.7.1.2.2.6, Docsis 3.0 1.3.6.1.4.1.4491.2.1.21.1.2.1.6
-1. Upstream MaxTrafficrate 1.3.6.1.2.1.10.127.7.1.2.2.6, Docsis 2.0 from CMTS 1.3.6.1.2.1.10.127.7.1.2.2.6, Docsis 3.0 1.3.6.1.4.1.4491.2.1.21.1.2.1.6
-1. Physical Address \[Media\] 1.3.6.1.2.1.4.22.1.2
-1. System Contact 1.3.6.1.2.1.1.4.0
-1. Homegateway RouterMAC 1.3.6.1.2.1.2.2.1.6.1 (Motorola 2.0) or 1.3.6.1.2.1.2.2.1.6.20 (Motorola 3.0) or 1.3.6.1.2.1.2.2.1.6.20 (CBN 3.0) or 1.3.6.1.2.1.2.2.1.6.20 (UBEE 3.0)
-1. Homegateway ChannelNumber 1.3.6.1.4.1.1166.1.19.51.1.5.1.2.0 (Motorola 2.0) or 1.3.6.1.4.1.1166.1.19.51.1.5.1.2.0 (Motorola 3.0) or 1.3.6.1.4.1.35604.1.19.51.1.5.1.2.0 (CBN 3.0) or 1.3.6.1.4.1.4684.54.1.1.4.1.32.1 (UBEE 3.0)
-1. Homegateway ChannelWidth 1.3.6.1.4.1.1166.1.19.51.1.5.1.19.0 (Motorola 2.0) or 1.3.6.1.4.1.1166.1.19.51.1.5.1.19.0 (Motorola 3.0) or 1.3.6.1.4.1.35604.1.19.51.1.5.1.19.0 (CBN 3.0) or 1.3.6.1.4.1.4684.54.1.1.4.1.7.1 (UBEE 3.0)
-1. DynamicOID1
-1. DynamicOID2
-1. DynamicOID3
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -233,8 +223,8 @@ The Dynamic OIDs are a set of parameters that can be configured in the page **Dy
 |14|UR|Uncorrectable Ratio (UR) (see [DS Correctable and Uncorrectable Ratios](#ds-correctable-and-uncorrectable-ratios))|N/A|N/A|
 |15|DS Main Frequency|Primary Downstream Channel Indicator|1.3.6.1.4.1.4491.2.1.20.1.9.1.3|`docsIf3RxChStatusPrimaryDsIndicator`. If set to `true`, it indicates the Receive channel is set to be the primary-capable downstream channel for the CM receiving this RCC|
 
->[!NOTE]
-> RCC refers to the *Receive Channel Configuration* TLV that the CMTS sents to the CM during the registration to describe the downstream channel set the CM must receive, including which channel is the primary downstream. A CM has exactly one primary DS at any time; if it loses lock on it (Lost Sync, T4), it must reinitialize the MAC.
+> [!NOTE]
+> RCC refers to the *Receive Channel Configuration* TLV that the CMTS sends to the CM during the registration to describe the downstream channel set the CM must receive, including which channel is the primary downstream. A CM has exactly one primary DS at any time; if it loses lock on it (Lost Sync, T4), it must reinitialize the MAC.
 
 #### DS Correctable and Uncorrectable Ratios
 
@@ -254,22 +244,6 @@ $$
 \text{Uncorrected Ratio}=\frac{\text{Uncorrectables}}{\text{Unerroreds}+\text{Correcteds}+\text{Uncorrectables}}\times{1000000}
 $$
 
-1. MAC Address 1.3.6.1.2.1.2.2.1.6.2
-1. SAPID
-1. Another Operator
-1. Node
-1. Timestamp
-1. Chassis
-1. Tuner ID Instance of 1.3.6.1.2.1.10.127.1.1.1.1
-1. DS Frequency 1.3.6.1.2.1.10.127.1.1.1.1.2
-1. DS SNR 1.3.6.1.2.1.10.127.1.1.4.1.5
-1. DS Rx Power 1.3.6.1.2.1.10.127.1.1.1.1.6
-1. DS Microreflections 1.3.6.1.2.1.10.127.1.1.4.1.6
-1. Modulation Type 1.3.6.1.2.1.10.127.1.1.1.1.4
-1. CR Calculated out of Unerroreds 1.3.6.1.2.1.10.127.1.1.4.1.2, Correcteds 1.3.6.1.2.1.10.127.1.1.4.1.3, Uncorrectables 1.3.6.1.2.1.10.127.1.1.4.1.4
-1. UR Calculated out of Unerroreds 1.3.6.1.2.1.10.127.1.1.4.1.2, Correcteds 1.3.6.1.2.1.10.127.1.1.4.1.3, Uncorrectables 1.3.6.1.2.1.10.127.1.1.4.1.4
-1. DS Main Frequency 1.3.6.1.4.1.4491.2.1.20.1.9.1.3
-
 ### Fast US tuner offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
@@ -288,7 +262,7 @@ $$
 |12|US SNR|Upstream SNR|1.3.6.1.4.1.4491.2.1.20.1.4.1.4| `docsIf3CmtsCmUsStatusSignalNoise`. The signal-to-noise ratio of the upstream channel (polled from the CMTS)|
 |13|Correctable Ratio (CR)|See [US Correctable and Uncorrectable Ratios](#us-correctable-and-uncorrectable-ratios). Polled from the CMTS|N/A|N/A|
 |14|Uncorrectable Ratio (UR)|See [US Correctable and Uncorrectable Ratios](#us-correctable-and-uncorrectable-ratios). Polled from the CMTS|N/A|N/A|
-|15|Status Resets|Status Resets|1.3.6.1.4.1.4491.2.1.20.1.1.1.3|`docsIf3CmStatusResets`. The number of times the cable modem has reset or initializes this interface|
+|15|Status Resets|Status Resets|1.3.6.1.4.1.4491.2.1.20.1.1.1.3|`docsIf3CmStatusResets`. The number of times the cable modem has reset or initialized this interface|
 |16|Lost Syncs|Lost Syncs|1.3.6.1.4.1.4491.2.1.20.1.1.1.4|`docsIf3CmStatusLostSyncs`. The number of times the cable modem has lost synchronization on the downstream channel|
 |17|T1 timeouts|T1 timeouts|1.3.6.1.4.1.4491.2.1.20.1.1.1.9|`docsIf3CmStatusT1Timeouts`. The number of times counter T1 expired in the CM|
 |18|T2 timeouts|T2 timeouts|1.3.6.1.4.1.4491.2.1.20.1.1.1.10|`docsIf3CmStatusT2Timeouts`. The number of times counter T2 expired in the CM|
@@ -321,22 +295,6 @@ $$
 \text{Uncorrected Ratio}=\frac{\text{Uncorrectables}}{\text{Unerroreds}+\text{Correcteds}+\text{Uncorrectables}}\times{1000000}
 $$
 
-1. MAC Address 1.3.6.1.2.1.2.2.1.6.2
-1. SAPID
-1. Another Operator
-1. Node
-1. Timestamp
-1. Chassis
-1. Tuner ID 1.3.6.1.2.1.10.127.1.1.2.1.1
-1. US Frequency 1.3.6.1.2.1.10.127.1.1.2.1.2
-1. US Channel Width 1.3.6.1.2.1.10.127.1.1.2.1.3
-1. US Channel Modulation 1.3.6.1.2.1.10.127.1.1.2.1.15
-1. US Tx 1.3.6.1.4.1.4491.2.1.20.1.2.1.1 or 1.3.6.1.2.1.10.127.1.2.2.1.3.2 (Docsis 2.0)
-1. US SNR Polled from CMTS 1.3.6.1.4.1.4491.2.1.20.1.4.1.4
-1. CR Polled from CMTS, calculated out of Unerroreds 1.3.6.1.4.1.4491.2.1.20.1.4.1.7, Correcteds 1.3.6.1.4.1.4491.2.1.20.1.4.1.8, Uncorrectables 1.3.6.1.4.1.4491.2.1.20.1.4.1.9
-1. UR Polled from CMTS, calculated out of Unerroreds 1.3.6.1.4.1.4491.2.1.20.1.4.1.7, Correcteds 1.3.6.1.4.1.4491.2.1.20.1.4.1.8, Uncorrectables 1.3.6.1.4.1.4491.2.1.20.1.4.1.9
-1. CS Calculated out of Status Resets 1.3.6.1.4.1.4491.2.1.20.1.1.1.3, Lost Syncs 1.3.6.1.4.1.4491.2.1.20.1.1.1.4, T1 timeouts 1.3.6.1.4.1.4491.2.1.20.1.1.1.9, T2 timeouts 1.3.6.1.4.1.4491.2.1.20.1.1.1.10, T3 timeouts 1.3.6.1.4.1.4491.2.1.20.1.2.1.2, T4 timeouts 1.3.6.1.4.1.4491.2.1.20.1.2.1.3, Rangings aborted 1.3.6.1.4.1.4491.2.1.20.1.2.1.4
-
 ### IVR offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
@@ -347,34 +305,14 @@ $$
 |4|SAPID|Service Access Point ID|N/A|N/A|
 |5|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 
-1. MAC Address
-1. State
-1. Timestamp
-1. SAPID
-1. Another Operator
-
-### Clientstats offload structure
-
-1. SAPID
-1. Timestamp
-1. MAC Address CM
-1. 2.4 G or 5 G
-1. BSS
-1. MAC Address Client 1.3.6.1.4.1.35604.1.19.51.5.1.1.2 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.2 (5G)
-1. RSSI 1.3.6.1.4.1.35604.1.19.51.5.1.1.5 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.5 (5G)
-1. Tx 1.3.6.1.4.1.35604.1.19.51.5.1.1.6 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.6 (5G)
-1. Rx 1.3.6.1.4.1.35604.1.19.51.5.1.1.7 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.7 (5G)
-1. Mode 1.3.6.1.4.1.35604.1.19.51.5.1.1.8 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.8 (5G)
-1. Authentication 1.3.6.1.4.1.35604.1.19.51.5.1.1.9 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.9 (5G)
-1. Encryption 1.3.6.1.4.1.35604.1.19.51.5.1.1.10 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.2.1.10 (5G)
-1. Another Operator
+### Client stats offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
-|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2.4G or 5G|N/A|N/A|
 |5|BSS|Basic Service Set of the connected client|N/A|N/A|
 |6|MAC Address Client|See [MAC Address Client](#mac-address-client)|N/A|N/A|
 |7|RSSI|See [RSSI (Received Signal Strength Indicator)](#rssi-received-signal-strength-indicator)|N/A|N/A|
@@ -434,14 +372,14 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.10|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.10|N/A|
 
-### Channel Loading Offload Structure
+### Channel loading offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
-|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2.4G or 5G|N/A|N/A|
 |5|Channel Nr|Channel number|N/A|N/A|
 |6|Channel Loading|See [Channel Loading](#channel-loading)|N/A|N/A|
 |7|Channel AP Count|See [Channel AP Count](#channel-ap-count)|N/A|N/A|
@@ -461,23 +399,14 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.1.7.1.1.3|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.3.3.1.1.3|N/A|
 
-1. SAPID
-1. Timestamp
-1. Mac Address CM
-1. 2.4 G or 5 G
-1. Channel Nr
-1. Channel Loading 1.3.6.1.4.1.35604.1.19.51.1.7.1.1.2 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.3.3.1.1.2 (5G)
-1. Channel AP Count 1.3.6.1.4.1.35604.1.19.51.1.7.1.1.3 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.3.3.1.1.3 (5G)
-1. Another Operator
-
-### Connected Clients Offload Structure
+### Connected clients offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
-|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2.4G or 5G|N/A|N/A|
 |5|BSS|Basic Service Set of the connected client|N/A|N/A|
 |6|Time Interval|See [Time Interval](#time-interval)|N/A|N/A|
 |7|Connected Clients|See [Connected Clients](#connected-clients)|N/A|N/A|
@@ -521,26 +450,14 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.7|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.7|N/A|
 
-1. SAPID
-1. Timestamp
-1. MAC Address CM
-1. 2.4 G or 5 G
-1. BSS
-1. Time Interval 1.3.6.1.4.1.35604.1.19.51.5.3.1.3 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.4.1.3 (5G)
-1. Connected Clients 1.3.6.1.4.1.35604.1.19.51.5.3.1.4 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.4.1.4 (5G)
-1. Max Simultaneous Clients 1.3.6.1.4.1.35604.1.19.51.5.3.1.5 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.4.1.5 (5G)
-1. Max Simul Clients Timestamp 1.3.6.1.4.1.35604.1.19.51.5.3.1.6 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.4.1.6 (5G)
-1. Rejected Clients 1.3.6.1.4.1.35604.1.19.51.5.3.1.7 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.4.1.7 (5G)
-1. Another Operator
-
-### Client Errors Offload Structure
+### Client errors offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
-|4|Frequency Access Point|Possible values: 2,4G or 5G|N/A|N/A|
+|4|Frequency Access Point|Possible values: 2.4G or 5G|N/A|N/A|
 |5|BSS|Basic Service Set of the connected client|N/A|N/A|
 |6|Error Type|Specific error type encountered|N/A|N/A|
 |7|Rejected Clients|See [Rejected Clients](#rejected-clients-client-errors)|N/A|N/A|
@@ -553,63 +470,42 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.5.5.2.1.2|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.5.6.2.1.2|N/A|
 
-1. SAPID
-1. Timestamp
-1. MAC Address CM
-1. 2.4 G or 5 G
-1. BSS
-1. Error Type
-1. Rejected Clients 1.3.6.1.4.1.35604.1.19.51.5.5.2.1.2 (2,4G) or 1.3.6.1.4.1.35604.1.19.51.5.6.2.1.2 (5G)
-1. Another Operator
-
-### Connected Powerline Offload Structure
+### Connected powerline offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
+|4|MAC Address Powerline|MAC address of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.2|N/A|
+|5|Location|Location of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.3|N/A|
+|6|Vendor|Vendor of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.4|N/A|
+|7|Firmware|Firmware version of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.5|N/A|
+|8|Chipset|Chipset of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.6|N/A|
+|9|Tx|Transmit power of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.10|N/A|
+|10|Rx|Receive power of the connected powerline device|1.3.6.1.4.1.35604.1.19.62.1.1.6.1.11|N/A|
+|11|Another Operator|Field used to distinguish between different operators|N/A|N/A|
+|12|n CPE Client|Number of connected CPE clients (1.n Mac)|1.3.6.1.4.1.35604.1.19.62.1.1.7.1.2|N/A|
 
-1. SAPID
-1. Timestamp
-1. MAC Address CM
-1. MAC Address Powerline 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.2
-1. Location 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.3
-1. Vendor 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.4
-1. Firmware 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.5
-1. Chipset 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.6
-1. Tx 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.10
-1. Rx 1.3.6.1.4.1.35604.1.19.62.1.1.6.1.11
-1. Another Operator
-1. n CPE Client 1.n Mac 1.3.6.1.4.1.35604.1.19.62.1.1.7.1.2
-
-### LAN User Offload Structure
+### LAN user offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
+|4|MAC Address LAN|MAC address of the connected LAN device|1.3.6.1.4.1.35604.1.19.201.1.1.1.3|N/A|
+|5|LAN Interface|Interface of the connected LAN device|1.3.6.1.4.1.35604.1.19.201.1.1.1.4|N/A|
+|6|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 
-1. SAPID
-1. Timestamp
-1. MAC Address CM
-1. MAC Address LAN 1.3.6.1.4.1.35604.1.19.201.1.1.1.3
-1. LAN Interface 1.3.6.1.4.1.35604.1.19.201.1.1.1.4
-1. Another Operator
-
-### Powerline Network Offload Structure
+### Powerline network offload structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
 |2|Timestamp|Time of polling|N/A|N/A|
 |3|MAC Address CM|Cable Modem MAC address|N/A|N/A|
-
-1. SAPID
-1. Timestamp
-1. MAC Address CM
-1. Polling Interval 1.3.6.1.4.1.35604.1.19.62.1.1.2.0
-1. HPAV Network 1.3.6.1.4.1.35604.1.19.62.1.1.4.0
-1. HPAV CCO 1.3.6.1.4.1.35604.1.19.62.1.1.5.0
-1. Another Operator
+|4|Polling Interval|Interval at which the data is polled|1.3.6.1.4.1.35604.1.19.62.1.1.2.0|N/A|
+|5|HPAV Network|Status of the HPAV network|1.3.6.1.4.1.35604.1.19.62.1.1.4.0|N/A|
+|6|HPAV CCO|Status of the HPAV CCO|1.3.6.1.4.1.35604.1.19.62.1.1.5.0|N/A|
+|7|Another Operator|Field used to distinguish between different operators|N/A|N/A|
