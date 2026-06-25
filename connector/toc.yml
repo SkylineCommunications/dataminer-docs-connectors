@@ -6480,7 +6480,7 @@
   - name: MIT-XPERTS iMux
     topicUid: Connector_help_MIT-XPERTS_iMux
   - name: MIT-xperts iSIMS
-    topicUid: Connector_help_MIT-xperts_iSIMS
+    topicUid: Connector_help_MiT_Xperts_iSIMS
 - name: Mitec
   items:
   - name: Mitec 12125 Transmit Switching Controller
