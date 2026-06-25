@@ -36,7 +36,7 @@ The connector has been used to monitor Meraki devices including Cisco Meraki MX6
 | Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
 |---------|-----------------|---------------------|-------------------|---------------------|
 | 1.0.x   | No              | Yes                 | -                 | -                   |
-| 2.0.x   | No              | No                  | -                 | -                   |
+| 2.0.x   | No              | Yes                 | -                 | -                   |
 
 ## Configuration
 
