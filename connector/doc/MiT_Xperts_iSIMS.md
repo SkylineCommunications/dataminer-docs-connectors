@@ -6,15 +6,17 @@ uid: Connector_help_MiT_Xperts_iSIMS
 
 ## About
 
-The **MIT xperts iSIMS** is a DVB Service Information Management System used to generate, multiplex, and distribute PSI/SI tables (PAT, PMT, SDT, EIT, NIT, RST) across digital television and broadcast networks. This DataMiner connector communicates with the iSIMS server via **SNMP**, providing centralized monitoring of server health, configuration elements, input services, output transponders, data flows, and IP inputs — giving broadcast and playout engineers full operational visibility from a single pane of glass.
+MIT-xperts iSIMS is a DVB Service Information Management System used to generate, multiplex, and distribute PSI/SI tables (PAT, PMT, SDT, EIT, NIT, RST) across digital television and broadcast networks.
+
+This DataMiner connector communicates with the iSIMS server via **SNMP**, providing centralized monitoring of server health, configuration elements, input services, output transponders, data flows, and IP inputs — giving broadcast and playout engineers full operational visibility from a single pane of glass.
 
 ## Key Features
 
-- **Server and element health monitoring**: Track the overall iSIMS server state, the combined state of all configuration elements, the running software version, and the count of erroneous elements, so operators can instantly assess platform health.
+- **Server and element health monitoring**: Track the overall iSIMS server state, the combined state of all configuration elements, the running software version, and the count of erroneous elements — and instantly assess platform health.
 
-- **Configuration element oversight**: Monitor every configuration element in a dedicated table — including internal element ID, name, per-element state (Ok/Warn/Error), and XML configuration — with the ability to push updated element configuration back to the system.
+- **Configuration element oversight**: Monitor every configuration element in a dedicated table — including internal element ID, name, per-element state (OK, Warn, Error), and XML configuration — with the ability to push updated element configuration back to the system.
 
-- **Input service surveillance**: Watch DVB input services with full ONID/TSID/SID identification, owning element details, EIT schedule depth, update-timeout detection, and a detailed service state (Ok, Missing, TS No Signal, XML Warning, XML Error, Update Timeout).
+- **Input service surveillance**: Watch DVB input services with full ONID/TSID/SID identification, owning element details, EIT schedule depth, update timeout detection, and a detailed service state (OK, Missing, TS No Signal, XML Warning, XML Error, Update Timeout).
 
 - **Output transponder assurance**: Keep transponder outputs healthy by tracking ONID/TSID, owning element, and transponder state (Ok, Missing, Bitrate Too Low, Problem, Error), with custom user descriptions for easier identification.
 
@@ -40,7 +42,7 @@ The **MIT xperts iSIMS** is a DVB Service Information Management System used to 
 
 **Challenge**: Maintaining a reliable Electronic Program Guide and service signaling requires that every input service keeps delivering up-to-date EIT data; missing services, lost transport-stream signal, or stalled EIT updates can quietly break the on-screen guide.
 
-**Solution**: The connector monitors the Input Service table in detail — exposing service state, EIT update timeouts, scheduled-event depth in days, and full DVB identification — so degraded or silent services are flagged the moment they deviate from normal.
+**Solution**: The connector monitors the Input Service table in detail — exposing service state, EIT update timeouts, scheduled-event depth in days, and full DVB identification — so that degraded or silent services are flagged the moment they deviate from normal.
 
 **Benefit**: Broadcast engineers can proactively detect and resolve input-side issues, ensuring continuous, accurate EPG and service information for end viewers and reducing guide-related support tickets.
 
@@ -56,7 +58,7 @@ The **MIT xperts iSIMS** is a DVB Service Information Management System used to 
 
 ### Prerequisites
 
-- **SNMP network access** is required between the DataMiner Agent and the MIT xperts iSIMS server (default SNMP port: 161).
+- **SNMP network access** is required between the DataMiner Agent and the MIT-xperts iSIMS server (default SNMP port: 161).
 
 - **DataMiner version 10.4.0.0 - 14003 or higher** is required as the minimum platform version for this connector.
 
