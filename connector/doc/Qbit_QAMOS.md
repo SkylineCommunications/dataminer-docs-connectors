@@ -6,21 +6,21 @@ uid: Connector_help_Qbit_QAMOS
 
 ## About
 
-The Qbit QAMOS connector integrates with QAMOS, Qbit's broadcast monitoring system for modern, IP-based workflows. QAMOS offers browser-based control room views with intuitive visualization of audio levels and signal metrics, supports end-to-end monitoring across multiple signal types, and enables multi-input recording of audio and bitstreams for detailed post-event analysis and troubleshooting.
+The Qbit QAMOS connector integrates with QAMOS, Qbit's broadcast monitoring system for modern, IP-based workflows. QAMOS offers browser-based control room views with intuitive visualization of audio levels and signal metrics. It supports end-to-end monitoring across multiple signal types and enables multi-input recording of audio and bitstreams for detailed post-event analysis and troubleshooting.
 
-This connector uses the QAMOS REST API to monitor and configure the device from DataMiner.
+This connector uses the QAMOS REST API to monitor and configure the system from DataMiner.
 
 ## Key Features
 
 - **Multi-source input monitoring**: Monitor Icecast, HLS, MPEG-2 TS, EDI, and AES67 inputs side by side from a single element.
 
-- **Stream insights**: Retrieve per-stream metrics such as codec, bitrate, audio buffer fill, channel count, sample rate, and HLS/Icecast specific information.
+- **Stream insights**: Retrieve per-stream metrics such as codec, bitrate, audio buffer fill, channel count, sample rate, and HLS/Icecast-specific information.
 
 - **Measurement profile management**: View and configure measurement profiles, including loudness, input loss, silence detection, AES67 invalid SDP, HLS playlist, and EDI superframe sync checks.
 
 - **Alarm management**: List, acknowledge, and review active and past alarms, with controls to limit and clear historical entries.
 
-- **System and network visibility**: Track system info, system health (CPU, memory, up time), and the status and configuration of the device's network interfaces.
+- **System and network visibility**: Track system info, system health (CPU, memory, uptime), and the status and configuration of the device's network interfaces.
 
 ## Use Case
 
