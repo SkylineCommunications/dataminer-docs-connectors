@@ -24,7 +24,7 @@ With this connector, you can monitor a device connected to an ADLINK NuDAM-6053 
 
 **Benefit**: The Digital Inputs table contains the byte sequences for which a DataMiner alarm has to be generated. If the received bytes match the defined bytes, the alarm is generated.
 
-![Digital Inputs](~/connector/images/AdlinkNudam6053DigitalInputs.png)
+![Digital Inputs table on the General page of an ADLINK NuDAM-6053 element](~/connector/images/AdlinkNudam6053DigitalInputs.png)
 
 ## Technical Reference
 
