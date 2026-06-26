@@ -37,13 +37,19 @@ The following input is required during element creation:
 > [!NOTE]
 > All polled CMs share the same settings, and all polled CMTS devices share the same settings.
 
-### Configuration of the Offload Parameters
+### Offload Parameters
 
-The CM Collector's data display pages are not intended to be opened. Instead the configuration should be performed either through a multiple set or via a Visio file.
+By default, the CM collector hide the display pages. Configuration parameters are available through:
+
+- A Visio file assigned ot the CM Collector element.
+- Multiple set operations on the CM Collector element (see [Setting a parameter value in multiple elements](https://docs.dataminer.services/dataminer/Operator_guide/Elements/Working_with_elements/Updating_elements.html#setting-a-parameter-value-in-multiple-elements)).
+
+> [!NOTE]
+> When creating a CM Collector element, a Visio will automatically be assigned to the element.
 
 The parameter **Data Offload Folder** contains the location of the fast and slow offload files. To find the location where the HGW files are offloaded, go one level higher in the folder structure, and check the HGW directory. The parameter **RCCV Data Offload Folder** contains the location of the IVR files.
 
-### Configuration of the Threshold Parameters
+### Threshold Parameters
 
 The threshold parameters are used during aggregation. If the parameter in the CPE Manager is `%CM With DS SNR < T`, then the DS SNR parameter is compared with the **DS SNR Low Threshold**. If the SNR is below the value in the configuration parameter, then the CM is taken into account for the aggregation. The same applies for the other threshold parameters.
 
@@ -64,11 +70,11 @@ The following parameters can be configured:
 
 Other threshold parameters are used to determine whether or not to offload a value. With the **Minimum Variation DS SNR** and **Minimum Variation US SNR** parameters, you can make sure that there will only be a change of the parameter value if the difference between the polled value and the previous value is larger than the setting in this minimum variation parameter. The **CR Offload Threshold**, **CS Offload Threshold**, and **UR Offload Threshold** parameters are used to ensure that there will always be an offload if the polled value is larger than or equal to the configured value.
 
-### Configuration of the Home Gateway Parameters
+### Home Gateway Parameters
 
 **Homestatistics Polling** enables the polling of the home gateway statistics. These statistics are polled once per day per modem. The client stats are polled between 7 p.m. and 9 p.m. in order to get the stats during the internet peak. With the parameter **Poll Clientstats 15 Min**, this polling interval can be changed, so that the client stats are then polled every 15 minutes. Polling of other statistics (channel loading, connected clients, client errors, connected power line, LAN user, powerline network) is always spread over the entire day.
 
-### Configuration of the Adlex Nouveau Parameters
+### Adlex Nouveau Parameters
 
 The CM Collector checks the current internet usage of the cable modem to determine the class to which it belongs. This information is then sent to `Adlex Nouveau` in a trap. `Adlex Nouveau` will perform tests on modems that are not in use, in order to determine the maximum upload and download speed that can be reached. You can enable this functionality by setting the **Poll Classification** parameter to *Enabled*.
 
@@ -89,7 +95,7 @@ As described above, the CM Collector is not intended to be used separately. The 
 
 ## Generated CSV Files
 
-- The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to the Configuration chapter above.
+- The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to [Offload Parameters](#offload-parameters).
 - There will be a CSV file generated per operator.
 
 ### Slow Offload Structure
