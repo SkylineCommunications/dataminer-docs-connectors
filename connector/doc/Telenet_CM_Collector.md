@@ -4,20 +4,20 @@ uid: Connector_help_Telenet_CM_Collector
 
 # Telenet CM Collector
 
-The **Telenet CM Collector** is part of the EPM solution deployed at Telenet and works together with the **Telenet CPE Manager**, **Telenet STB Collector**, and **Telenet eMTA Collector** connectors. This connector is responsible for polling cable modems.
-
 ## About
+
+The **Telenet CM Collector** is part of the EPM Solution deployed at Telenet and works together with the **Telenet CPE Manager**, **Telenet STB Collector**, and **Telenet eMTA Collector** connectors. This connector is responsible for polling cable modems.
 
 This connector will poll all the CMs in two poll cycles:
 
-- Fast Poll: Polling CMs over a 15-minute period.
-- Slow Poll: Polling CMs over a 24-hour period.
+- **Fast Poll**: Polling CMs over a 15-minute period.
+- **Slow Poll**: Polling CMs over a 24-hour period.
 
-In addition, there is another poll cycle that polls the CMTS to request the US data of all CMs over a 15-minute period. The polled data is offloaded into CSV files and aggregated by the CPE Manager element. The CPE Manager element provisions the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector sends traps to `Adlex Nouveau`.
+In addition, there is another poll cycle that polls the **CMTS** to request the US data of all CMs over a 15-minute period. The polled data is offloaded into CSV files and aggregated by the CPE Manager element. The CPE Manager element provisions the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector sends traps to `Adlex Nouveau`.
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 This connector uses two Simple Network Management Protocol (SNMP) connections. The first SNMP connection is used to connect to the CM and the second one to connect to the CMTS.
 
@@ -37,13 +37,13 @@ The following input is required during element creation:
 > [!NOTE]
 > All polled CMs share the same settings, and all polled CMTS devices share the same settings.
 
-### Configuration of the offload parameters
+### Configuration of the Offload Parameters
 
 The CM Collector's data display pages are not intended to be opened. Instead the configuration should be performed either through a multiple set or via a Visio file.
 
 The parameter **Data Offload Folder** contains the location of the fast and slow offload files. To find the location where the HGW files are offloaded, go one level higher in the folder structure, and check the HGW directory. The parameter **RCCV Data Offload Folder** contains the location of the IVR files.
 
-### Configuration of the threshold parameters
+### Configuration of the Threshold Parameters
 
 The threshold parameters are used during aggregation. If the parameter in the CPE Manager is `%CM With DS SNR < T`, then the DS SNR parameter is compared with the **DS SNR Low Threshold**. If the SNR is below the value in the configuration parameter, then the CM is taken into account for the aggregation. The same applies for the other threshold parameters.
 
@@ -62,13 +62,13 @@ The following parameters can be configured:
 - US SNR Low Threshold
 - US UR High Threshold
 
-Other threshold parameters are used to determine whether or not to offload a value. With the **Minimum Variation DS SNR** and **Minimum Variation US SNR** parameters, you can make sure that there will only be a change of the parameter value if the difference between the polled value and the previous value is larger than the setting in this minimum variation parameter. The **CR Offload Threshold, CS Offload Threshold** and **UR Offload Threshold** parameter are used to ensure that there will always be an offload if the polled value is larger than or equal to the configured value.
+Other threshold parameters are used to determine whether or not to offload a value. With the **Minimum Variation DS SNR** and **Minimum Variation US SNR** parameters, you can make sure that there will only be a change of the parameter value if the difference between the polled value and the previous value is larger than the setting in this minimum variation parameter. The **CR Offload Threshold**, **CS Offload Threshold**, and **UR Offload Threshold** parameters are used to ensure that there will always be an offload if the polled value is larger than or equal to the configured value.
 
-### Configuration of the home gateway parameters
+### Configuration of the Home Gateway Parameters
 
 **Homestatistics Polling** enables the polling of the home gateway statistics. These statistics are polled once per day per modem. The client stats are polled between 7 p.m. and 9 p.m. in order to get the stats during the internet peak. With the parameter **Poll Clientstats 15 Min**, this polling interval can be changed, so that the client stats are then polled every 15 minutes. Polling of other statistics (channel loading, connected clients, client errors, connected power line, LAN user, powerline network) is always spread over the entire day.
 
-### Configuration of the Adlex Nouveau parameters
+### Configuration of the Adlex Nouveau Parameters
 
 The CM Collector checks the current internet usage of the cable modem to determine the class to which it belongs. This information is then sent to `Adlex Nouveau` in a trap. `Adlex Nouveau` will perform tests on modems that are not in use, in order to determine the maximum upload and download speed that can be reached. You can enable this functionality by setting the **Poll Classification** parameter to *Enabled*.
 
@@ -87,12 +87,12 @@ The **Classification** table contains the definitions of all the classes. You ca
 
 As described above, the CM Collector is not intended to be used separately. The resulting data should be consulted in the CPE Manager interface of the CPE Manager elements.
 
-## Generated CSV files
+## Generated CSV Files
 
 - The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to the Configuration chapter above.
 - There will be a CSV file generated per operator.
 
-### Slow offload structure
+### Slow Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -102,17 +102,17 @@ As described above, the CM Collector is not intended to be used separately. The 
 |4|Node|Node to which the CM is connected|N/A|N/A|
 |5|Timestamp|Time of polling|N/A|N/A|
 |6|Chassis|Chassis reference|N/A|N/A|
-|7|Hardware Version|Hardware version of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Hardware version of the CM|
-|8|Model Type|Model type of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Model type of the CM|
-|9|Hardware Class|Hardware class of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, Hardware class of the CM|
+|7|Hardware Version|Hardware version of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, hardware version of the CM|
+|8|Model Type|Model type of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, model type of the CM|
+|9|Hardware Class|Hardware class of the CM|1.3.6.1.2.1.1.1.0|`sysDescr.0`, hardware class of the CM|
 |10|DOCSIS Version|DOCSIS version of the CM|1.3.6.1.2.1.10.127.1.1.5.0|`docsIfCmStatusDocsisVersion.0`, DOCSIS version of the CM|
-|11|SW Version|Software version of the CM|1.3.6.1.2.1.69.1.3.5.0|`docsIfCmSwVersion.0`, Software version of the CM|
-|12|Last Change Datetime|Datetime of the last change|1.3.6.1.2.1.2.2.1.9.1, 1.3.6.1.2.1.1.3.0|`ifLastChange.1`, `sysUpTime.0`, Datetime of the last change|
-|13|System Uptime|Uptime of the system|1.3.6.1.2.1.1.3.0|`sysUpTime.0`, Uptime of the system|
+|11|SW Version|Software version of the CM|1.3.6.1.2.1.69.1.3.5.0|`docsIfCmSwVersion.0`, software version of the CM|
+|12|Last Change Datetime|Datetime of the last change|1.3.6.1.2.1.2.2.1.9.1, 1.3.6.1.2.1.1.3.0|`ifLastChange.1`, `sysUpTime.0`, datetime of the last change|
+|13|System Uptime|Uptime of the system|1.3.6.1.2.1.1.3.0|`sysUpTime.0`, uptime of the system|
 |14|Downstream Max Traffic Rate|Maximum downstream traffic rate (see [Downstream Max Traffic Rate](#downstream-max-traffic-rate))|N/A|N/A|
 |15|Upstream Max Traffic Rate|Maximum upstream traffic rate (see [Upstream Max Traffic Rate](#upstream-max-traffic-rate))|N/A|N/A|
-|16|Physical Address \[Media\]|Physical address of the media|1.3.6.1.2.1.2.2.1.6.2|`ifPhysAddress.2`, Physical address of the media|
-|17|System Contact|Contact information of the system|1.3.6.1.2.1.1.4.0|`sysContact.0`, Contact information of the system|
+|16|Physical Address \[Media\]|Physical address of the media|1.3.6.1.2.1.2.2.1.6.2|`ifPhysAddress.2`, physical address of the media|
+|17|System Contact|Contact information of the system|1.3.6.1.2.1.1.4.0|`sysContact.0`, contact information of the system|
 |18|Home Gateway Router MAC|MAC address of the home gateway router (see [Home Gateway Router MAC](#home-gateway-router-mac))|N/A|N/A|
 |19|Home Gateway Channel Number|Channel number of the home gateway (see [Home Gateway Channel Number](#home-gateway-channel-number))|N/A|N/A|
 |20|Home Gateway Channel Width|Channel width of the home gateway (see [Home Gateway Channel Width](#home-gateway-channel-width))|N/A|N/A|
@@ -176,13 +176,13 @@ Maximum traffic rate for the upstream direction. The OID depends on the DOCSIS v
 
 #### Dynamic OIDs
 
-The Dynamic OIDs are a set of parameters that can be configured in the page **Dynamic OIDs**. These parameters allow you to set custom OIDs so they can be included in the offload files. The connector supports up to 3 dynamic OIDs. Additional settings for these OIDs are the following (available per Dynamic OID):
+The Dynamic OIDs are a set of parameters that can be configured on the page **Dynamic OIDs**. These parameters allow you to set custom OIDs so they can be included in the offload files. The connector supports up to 3 dynamic OIDs. The following additional settings are available for each dynamic OID:
 
-- **Dynamic OID Description**: This is a description of the OID that will be used in the offload file. It is not mandatory to fill in this field, but it can be useful to have a clear description of the OID in the offload file.
+- **Dynamic OID Description**: Description of the OID that will be used in the offload file. While filling in this field is not mandatory, it can be useful to have a clear description of the OID in the offload file.
 
 - **Dynamic OID Offload**: If this is set to *Yes*, the value of the OID will be offloaded in the slow offload file. If it is set to *No*, the value of the OID will not be offloaded.
 
-- **Dynamic OID Offload Cycle**: This setting determines the frequency at which the OID will be offloaded. There are two possible values: *Slow* and *Fast*. If it is set to *Slow*, the value of the OID will be offloaded in the slow offload file, which is generated once per day. If it is set to *Fast*, the value of the OID will be offloaded in the fast offload file, which is generated every 15 minutes.
+- **Dynamic OID Offload Cycle**: Determines the frequency at which the OID will be offloaded. There are two possible values: *Slow* and *Fast*. If it is set to *Slow*, the value of the OID will be offloaded in the slow offload file, which is generated once per day. If it is set to *Fast*, the value of the OID will be offloaded in the fast offload file, which is generated every 15 minutes.
 
 - **Dynamic OID Fixed Values**: If this field is filled in, the value of the OID will be fixed to the value in this field in the slow offload file. This can be useful if the OID is not supported by all CMs, but you still want to have a value in the offload file.
 
@@ -190,7 +190,7 @@ The Dynamic OIDs are a set of parameters that can be configured in the page **Dy
 
 - **Dynamic OID High Range**: If the value of the OID is a number, and this field is filled in, the value of the OID will only be offloaded if it is higher than the value in this field. This can be useful to only offload values that are above a certain threshold.
 
-### Fast offload structure
+### Fast Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -207,9 +207,9 @@ The Dynamic OIDs are a set of parameters that can be configured in the page **Dy
 |11|Partial Channel State|Partial channel state of the CM|1.3.6.1.4.1.4491.2.1.28.1.3.1.10|`docsIf31CmtsCmRegStatusPartialChanState`. Type of OFDM *channel* issue that the CM experiences|
 
 > [!NOTE]
-> *Partial service state* and *Partial channel state* are only available for DOCSIS 3.1 CMs. For DOCSIS 3.0 and lower, these fields will be empty.
+> **Partial service state** and **Partial channel state** are only available for DOCSIS 3.1 CMs. For DOCSIS 3.0 and lower, these fields will be empty.
 
-### Fast DS tuner offload structure
+### Fast DS Tuner Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -219,18 +219,18 @@ The Dynamic OIDs are a set of parameters that can be configured in the page **Dy
 |4|Node|Node to which the CM is connected|N/A|N/A|
 |5|Timestamp|Time of polling|N/A|N/A|
 |6|Chassis|Chassis reference|N/A|N/A|
-|7|Tuner ID Instance|Tuner ID instance|1.3.6.1.2.1.10.127.1.1.1.1.1|`docsIfDownChannelId`. The CMTS identification of the downstream channel|
-|8|DS Frequency|Downstream frequency|1.3.6.1.2.1.10.127.1.1.1.1.2|`docsIfDownChannelFrequency`. The center of the frequency band associated with this downstream interface|
-|9|DS SNR|Downstream SNR|1.3.6.1.2.1.10.127.1.1.4.1.5|`docsIfDownChannelSNR`. The signal-to-noise ratio of the downstream channel|
-|10|DS Rx Power|Downstream Rx Power|1.3.6.1.2.1.10.127.1.1.1.1.6|`docsIfDownChannelPower`. The received power level of the downstream channel|
-|11|DS Microreflections|Downstream Microreflections|1.3.6.1.2.1.10.127.1.1.4.1.6|`docsIfDownChannelMicroreflections`. Total microreflections including in-channel response as perceived on this interface, measured in dBc below the signal level|
-|12|Modulation Type|Downstream modulation type|1.3.6.1.2.1.10.127.1.1.1.1.4|`docsIfDownChannelModulation`. The modulation type of the downstream channel|
+|7|Tuner ID Instance|Tuner ID instance|1.3.6.1.2.1.10.127.1.1.1.1.1|`docsIfDownChannelId`, the CMTS identification of the downstream channel|
+|8|DS Frequency|Downstream frequency|1.3.6.1.2.1.10.127.1.1.1.1.2|`docsIfDownChannelFrequency`, the center of the frequency band associated with this downstream interface|
+|9|DS SNR|Downstream SNR|1.3.6.1.2.1.10.127.1.1.4.1.5|`docsIfDownChannelSNR`, the signal-to-noise ratio of the downstream channel|
+|10|DS Rx Power|Downstream Rx Power|1.3.6.1.2.1.10.127.1.1.1.1.6|`docsIfDownChannelPower`, the received power level of the downstream channel|
+|11|DS Microreflections|Downstream Microreflections|1.3.6.1.2.1.10.127.1.1.4.1.6|`docsIfDownChannelMicroreflections`, the total microreflections including in-channel response as perceived on this interface, measured in dBc below the signal level|
+|12|Modulation Type|Downstream modulation type|1.3.6.1.2.1.10.127.1.1.1.1.4|`docsIfDownChannelModulation`, the modulation type of the downstream channel|
 |13|CR|Correctable Ratio (CR) (see [DS Correctable and Uncorrectable Ratios](#ds-correctable-and-uncorrectable-ratios))|N/A|N/A|
 |14|UR|Uncorrectable Ratio (UR) (see [DS Correctable and Uncorrectable Ratios](#ds-correctable-and-uncorrectable-ratios))|N/A|N/A|
-|15|DS Main Frequency|Primary Downstream Channel Indicator|1.3.6.1.4.1.4491.2.1.20.1.9.1.3|`docsIf3RxChStatusPrimaryDsIndicator`. If set to `true`, it indicates the Receive channel is set to be the primary-capable downstream channel for the CM receiving this RCC|
+|15|DS Main Frequency|Primary Downstream Channel Indicator|1.3.6.1.4.1.4491.2.1.20.1.9.1.3|`docsIf3RxChStatusPrimaryDsIndicator`. If set to `true`, this indicates that the Receive channel is set to be the primary-capable downstream channel for the CM receiving this RCC.|
 
 > [!NOTE]
-> RCC refers to the *Receive Channel Configuration* TLV that the CMTS sends to the CM during the registration to describe the downstream channel set the CM must receive, including which channel is the primary downstream. A CM has exactly one primary DS at any time; if it loses lock on it (Lost Sync, T4), it must reinitialize the MAC.
+> RCC refers to the **Receive Channel Configuration** TLV that the CMTS sends to the CM during the registration to describe the downstream channel set the CM must receive, including which channel is the primary downstream. A CM has exactly one primary DS at any time; if it loses lock on it (Lost Sync, T4), it must reinitialize the MAC.
 
 #### DS Correctable and Uncorrectable Ratios
 
@@ -238,9 +238,9 @@ These ratios are calculated from the number of uncorrectable, correctable, and u
 
 |Name|SNMP OID|OID Description|
 |----|--------|---------------|
-|Unerroreds|1.3.6.1.2.1.10.127.1.1.4.1.2|`docsIfSigQUnerroreds`. The codewords that were received without any errors from this interface|
-|Correcteds|1.3.6.1.2.1.10.127.1.1.4.1.3|`docsIfSigQCorrecteds`. The codewords that were received with correctable errors from this interface|
-|Uncorrectables|1.3.6.1.2.1.10.127.1.1.4.1.4|`docsIfSigQUncorrectables`. The codewords that were received with uncorrectable errors from this interface|
+|Unerroreds|1.3.6.1.2.1.10.127.1.1.4.1.2|`docsIfSigQUnerroreds`, the codewords that were received without any errors from this interface|
+|Correcteds|1.3.6.1.2.1.10.127.1.1.4.1.3|`docsIfSigQCorrecteds`, the codewords that were received with correctable errors from this interface|
+|Uncorrectables|1.3.6.1.2.1.10.127.1.1.4.1.4|`docsIfSigQUncorrectables`, the codewords that were received with uncorrectable errors from this interface|
 
 $$
 \text{Corrected Ratio}=\frac{\text{Correcteds}}{\text{Unerroreds}+\text{Correcteds}+\text{Uncorrectables}}\times{100}
@@ -250,7 +250,7 @@ $$
 \text{Uncorrected Ratio}=\frac{\text{Uncorrectables}}{\text{Unerroreds}+\text{Correcteds}+\text{Uncorrectables}}\times{1000000}
 $$
 
-### Fast US tuner offload structure
+### Fast US Tuner Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -260,28 +260,28 @@ $$
 |4|Node|Node to which the CM is connected|N/A|N/A|
 |5|Timestamp|Time of polling|N/A|N/A|
 |6|Chassis|Chassis reference|N/A|N/A|
-|7|Tuner ID Instance|Tuner ID instance|1.3.6.1.2.1.10.127.1.1.2.1.1|`docsIfUpChannelId`. The CMTS identification of the upstream channel|
-|8|US Frequency|Upstream frequency|1.3.6.1.2.1.10.127.1.1.2.1.2|`docsIfUpChannelFrequency`. The center of the frequency band associated with this upstream interface|
-|9|US Channel Width|Upstream channel width|1.3.6.1.2.1.10.127.1.1.2.1.3|`docsIfUpChannelWidth`. The bandwidth of the upstream interface|
-|10|US Channel Modulation|Upstream channel modulation type|1.3.6.1.2.1.10.127.1.1.2.1.15|`docsIfUpChannelType`. The upstream channel type|
+|7|Tuner ID Instance|Tuner ID instance|1.3.6.1.2.1.10.127.1.1.2.1.1|`docsIfUpChannelId`, the CMTS identification of the upstream channel|
+|8|US Frequency|Upstream frequency|1.3.6.1.2.1.10.127.1.1.2.1.2|`docsIfUpChannelFrequency`, the center of the frequency band associated with this upstream interface|
+|9|US Channel Width|Upstream channel width|1.3.6.1.2.1.10.127.1.1.2.1.3|`docsIfUpChannelWidth`, the bandwidth of the upstream interface|
+|10|US Channel Modulation|Upstream channel modulation type|1.3.6.1.2.1.10.127.1.1.2.1.15|`docsIfUpChannelType`, the upstream channel type|
 |11|US Tx Power|Upstream transmit power|See [Upstream Transmit Power](#upstream-transmit-power)|N/A|
-|12|US SNR|Upstream SNR|1.3.6.1.4.1.4491.2.1.20.1.4.1.4| `docsIf3CmtsCmUsStatusSignalNoise`. The signal-to-noise ratio of the upstream channel (polled from the CMTS)|
+|12|US SNR|Upstream SNR|1.3.6.1.4.1.4491.2.1.20.1.4.1.4| `docsIf3CmtsCmUsStatusSignalNoise`, the signal-to-noise ratio of the upstream channel (polled from the CMTS)|
 |13|Correctable Ratio (CR)|See [US Correctable and Uncorrectable Ratios](#us-correctable-and-uncorrectable-ratios). Polled from the CMTS|N/A|N/A|
 |14|Uncorrectable Ratio (UR)|See [US Correctable and Uncorrectable Ratios](#us-correctable-and-uncorrectable-ratios). Polled from the CMTS|N/A|N/A|
-|15|Status Resets|Status Resets|1.3.6.1.4.1.4491.2.1.20.1.1.1.3|`docsIf3CmStatusResets`. The number of times the cable modem has reset or initialized this interface|
-|16|Lost Syncs|Lost Syncs|1.3.6.1.4.1.4491.2.1.20.1.1.1.4|`docsIf3CmStatusLostSyncs`. The number of times the cable modem has lost synchronization on the downstream channel|
-|17|T1 timeouts|T1 timeouts|1.3.6.1.4.1.4491.2.1.20.1.1.1.9|`docsIf3CmStatusT1Timeouts`. The number of times counter T1 expired in the CM|
-|18|T2 timeouts|T2 timeouts|1.3.6.1.4.1.4491.2.1.20.1.1.1.10|`docsIf3CmStatusT2Timeouts`. The number of times counter T2 expired in the CM|
-|19|T3 timeouts|T3 timeouts|1.3.6.1.4.1.4491.2.1.20.1.2.1.2|`docsIf3CmStatusUsT3Timeouts`. The number of times counter T3 expired in the CM for this upstream channel|
-|20|T4 timeouts|T4 timeouts|1.3.6.1.4.1.4491.2.1.20.1.2.1.3|`docsIf3CmStatusUsT4Timeouts`. The number of times counter T4 expired in the CM for this upstream channel|
-|21|Rangings aborted|Rangings aborted|1.3.6.1.4.1.4491.2.1.20.1.2.1.4|`docsIf3CmStatusUsRangingsAborted`. The number of times the ranging process was aborted by the CMTS|
+|15|Status Resets|Status Resets|1.3.6.1.4.1.4491.2.1.20.1.1.1.3|`docsIf3CmStatusResets`, the number of times the cable modem has reset or initialized this interface|
+|16|Lost Syncs|Lost Syncs|1.3.6.1.4.1.4491.2.1.20.1.1.1.4|`docsIf3CmStatusLostSyncs`, the number of times the cable modem has lost synchronization on the downstream channel|
+|17|T1 timeouts|T1 timeouts|1.3.6.1.4.1.4491.2.1.20.1.1.1.9|`docsIf3CmStatusT1Timeouts`, the number of times counter T1 expired in the CM|
+|18|T2 timeouts|T2 timeouts|1.3.6.1.4.1.4491.2.1.20.1.1.1.10|`docsIf3CmStatusT2Timeouts`, the number of times counter T2 expired in the CM|
+|19|T3 timeouts|T3 timeouts|1.3.6.1.4.1.4491.2.1.20.1.2.1.2|`docsIf3CmStatusUsT3Timeouts`, the number of times counter T3 expired in the CM for this upstream channel|
+|20|T4 timeouts|T4 timeouts|1.3.6.1.4.1.4491.2.1.20.1.2.1.3|`docsIf3CmStatusUsT4Timeouts`, the number of times counter T4 expired in the CM for this upstream channel|
+|21|Rangings aborted|Rangings aborted|1.3.6.1.4.1.4491.2.1.20.1.2.1.4|`docsIf3CmStatusUsRangingsAborted`, the number of times the ranging process was aborted by the CMTS|
 
 #### Upstream Transmit Power
 
 |DOCSIS Type|CM OID|CMTS OID|OID Description|
 |-----------|------|--------|---------------|
-|Default|1.3.6.1.4.1.4491.2.1.20.1.2.1.1|N/A|`docsIf3CmStatusUsTxPower`. The operational transmit CM transmit power for this SC-QAM upstream channel.|
-|DOCSIS 2.0|1.3.6.1.2.1.10.127.1.2.2.1.3.2|N/A|`docsIfCmStatusTxPower`. The operational transmit power of the upstream channel|
+|Default|1.3.6.1.4.1.4491.2.1.20.1.2.1.1|N/A|`docsIf3CmStatusUsTxPower`, the operational transmit CM transmit power for this SC-QAM upstream channel|
+|DOCSIS 2.0|1.3.6.1.2.1.10.127.1.2.2.1.3.2|N/A|`docsIfCmStatusTxPower`, the operational transmit power of the upstream channel|
 
 #### US Correctable and Uncorrectable Ratios
 
@@ -289,9 +289,9 @@ These ratios are calculated from the number of uncorrectable, correctable, and u
 
 |Name|SNMP OID|OID Description|
 |----|--------|---------------|
-|Unerroreds|1.3.6.1.4.1.4491.2.1.20.1.4.1.7|`docsIf3CmtsCmUsStatusUnerroreds`. The codewords that were received without any errors from this interface|
-|Correcteds|1.3.6.1.4.1.4491.2.1.20.1.4.1.8|`docsIf3CmtsCmUsStatusCorrecteds`. The codewords that were received with correctable errors from this interface|
-|Uncorrectables|1.3.6.1.4.1.4491.2.1.20.1.4.1.9|`docsIf3CmtsCmUsStatusUncorrectables`. The codewords that were received with uncorrectable errors from this interface|
+|Unerroreds|1.3.6.1.4.1.4491.2.1.20.1.4.1.7|`docsIf3CmtsCmUsStatusUnerroreds`, the codewords that were received without any errors from this interface|
+|Correcteds|1.3.6.1.4.1.4491.2.1.20.1.4.1.8|`docsIf3CmtsCmUsStatusCorrecteds`, the codewords that were received with correctable errors from this interface|
+|Uncorrectables|1.3.6.1.4.1.4491.2.1.20.1.4.1.9|`docsIf3CmtsCmUsStatusUncorrectables`, the codewords that were received with uncorrectable errors from this interface|
 
 $$
 \text{Corrected Ratio}=\frac{\text{Correcteds}}{\text{Unerroreds}+\text{Correcteds}+\text{Uncorrectables}}\times{100}
@@ -301,7 +301,7 @@ $$
 \text{Uncorrected Ratio}=\frac{\text{Uncorrectables}}{\text{Unerroreds}+\text{Correcteds}+\text{Uncorrectables}}\times{1000000}
 $$
 
-### IVR offload structure
+### IVR Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -311,7 +311,7 @@ $$
 |4|SAPID|Service Access Point ID|N/A|N/A|
 |5|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 
-### Client stats offload structure
+### Client Stats Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -378,7 +378,7 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.5.1.1.10|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.5.2.1.10|N/A|
 
-### Channel loading offload structure
+### Channel Loading Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -405,7 +405,7 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.1.7.1.1.3|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.3.3.1.1.3|N/A|
 
-### Connected clients offload structure
+### Connected Clients Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -456,7 +456,7 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.5.3.1.7|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.5.4.1.7|N/A|
 
-### Client errors offload structure
+### Client Errors Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -476,7 +476,7 @@ $$
 |2.4G|1.3.6.1.4.1.35604.1.19.51.5.5.2.1.2|N/A|
 |5G|1.3.6.1.4.1.35604.1.19.51.5.6.2.1.2|N/A|
 
-### Connected powerline offload structure
+### Connected Powerline Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -493,7 +493,7 @@ $$
 |11|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 |12|n CPE Client|Number of connected CPE clients (1.n Mac)|1.3.6.1.4.1.35604.1.19.62.1.1.7.1.2|N/A|
 
-### LAN user offload structure
+### LAN User Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -504,7 +504,7 @@ $$
 |5|LAN Interface|Interface of the connected LAN device|1.3.6.1.4.1.35604.1.19.201.1.1.1.4|N/A|
 |6|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 
-### Powerline network offload structure
+### Powerline Network Offload Structure
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
