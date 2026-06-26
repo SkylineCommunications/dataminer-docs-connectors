@@ -126,10 +126,6 @@ SNMP on the DASDEC-III requires a package to be installed. To set this up, follo
 
 ![Package Installation](../images/DASDEC-III_Package_Upgrade.png)
 
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
 ## How to Use
 
 ### General
@@ -164,4 +160,4 @@ This page contains the last message received.
 
 ### Web Interface
 
-This page displays the web GUI.
+This page displays the web GUI. The web interface is only accessible when the client machine has network access to the product. 
