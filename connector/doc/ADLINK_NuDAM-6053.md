@@ -8,7 +8,7 @@ uid: Connector_help_ADLINK_NuDAM-6053
 
 ADLINK NuDAM provides a series of digital input or output (DIO) modules to sense the digital signal or to control the remote devices. The NuDAM-6053 provides 16 digital input channels for dry contact or wet contact signals.
 
-With this connector, you can monitor a device, connected to an ADLINK NuDAM-6053 through its serial interface.
+With this connector, you can monitor a device connected to an ADLINK NuDAM-6053 through its serial interface.
 
 ## Key Features
 
@@ -20,7 +20,7 @@ With this connector, you can monitor a device, connected to an ADLINK NuDAM-6053
 
 **Challenge**: DEV 2185 L-band distribution amplifiers provide alarm indication via LED and via dry contacts only.
 
-**Solution**: The contacts of the DEV 2185 can be connected to the digital inputs of the ADLINK NuDAM-6053. This connector allows reading these contacts and comparing them with predefined byte sequences.
+**Solution**: The contacts of the DEV 2185 can be connected to the digital inputs of the ADLINK NuDAM-6053. With this connector, these contacts can be read and compared with predefined byte sequences.
 
 **Benefit**: The Digital Inputs table contains the byte sequences for which a DataMiner alarm has to be generated. If the received bytes match the defined bytes, the alarm is generated.
 
