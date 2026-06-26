@@ -2906,6 +2906,11 @@
     topicUid: Connector_help_Digicast_DMB-8804
 - name: Digidia
   items:
+  - name: Digidia EasyWay
+    topicUid: Connector_help_Digidia_EasyWay
+    items:
+    - name: Digidia EasyWay Technical
+      topicUid: Connector_help_Digidia_EasyWay_Technical
   - name: Digidia EasySplice
     topicUid: Connector_help_Digidia_EasySplice
   - name: Digidia FlexiDAB
@@ -3998,6 +4003,9 @@
       topicUid: Connector_help_EVS_Cerebrum_Technical
   - name: EVS IPD-VIA
     topicUid: Connector_help_EVS_IPD-VIA
+    items:
+    - name: EVS IPD-VIA Technical
+      topicUid: Connector_help_EVS_IPD-VIA_Technical
   - name: EVS IP Director
     topicUid: Connector_help_EVS_IP_Director
   - name: EVS Live Production Server
@@ -4600,6 +4608,13 @@
     topicUid: Connector_help_Gilat_Satellite_Networks_TotalNMS
   - name: Gilat Satellite Networks TotalNMS - CPE
     topicUid: Connector_help_Gilat_Satellite_Networks_TotalNMS_-_CPE
+- name: GitHub
+  items:
+  - name: GitHub Repositories
+    topicUid: Connector_help_GitHub_Repositories
+    items:
+    - name: GitHub Repositories Technical
+      topicUid: Connector_help_GitHub_Repositories_Technical
 - name: GlenSound
   items:
   - name: GlenSound Atomic Copper 29S
@@ -6107,6 +6122,13 @@
   items:
   - name: MegaTec NetAgent9
     topicUid: Connector_help_Megatec_NetAgent9
+- name: MEGMEET
+  items:
+  - name: MEGMEET MegaPower MC2600
+    topicUid: Connector_help_MEGMEET_MegaPower_MC2600
+    items:
+    - name: MEGMEET MegaPower MC2600 Technical
+      topicUid: Connector_help_MEGMEET_MegaPower_MC2600_Technical
 - name: Meinberg
   items:
   - name: Meinberg Element Manager
@@ -6463,7 +6485,7 @@
   - name: MIT-XPERTS iMux
     topicUid: Connector_help_MIT-XPERTS_iMux
   - name: MIT-xperts iSIMS
-    topicUid: Connector_help_MIT-xperts_iSIMS
+    topicUid: Connector_help_MiT_Xperts_iSIMS
 - name: Mitec
   items:
   - name: Mitec 12125 Transmit Switching Controller
@@ -6761,6 +6783,13 @@
     topicUid: Connector_help_MySql_Stratos_Global_CDIS
   - name: MySql Stratos Perth CDIS
     topicUid: Connector_help_MySql_Stratos_Perth_CDIS
+- name: MyUplink
+  items:
+  - name: MyUplink Platform
+    topicUid: Connector_help_MyUplink_Platform
+    items:
+    - name: MyUplink Platform Technical
+      topicUid: Connector_help_MyUplink_Platform_Technical
 - name: Nagios
   items:
   - name: Nagios Connector
@@ -7860,6 +7889,13 @@
     topicUid: Connector_help_Prodys_Prontonet
   - name: Prodys Quantum
     topicUid: Connector_help_Prodys_Quantum
+- name: Proemion
+  items:
+  - name: Proemion Platform
+    topicUid: Connector_help_Proemion_Platform
+    items:
+    - name: Proemion Platform Technical
+      topicUid: Connector_help_Proemion_Platform_Technical
 - name: Promax
   items:
   - name: Promax Neo
@@ -7913,6 +7949,11 @@
     topicUid: Connector_help_Qbit_Q820
   - name: Qbit Q8V Codec System
     topicUid: Connector_help_Qbit_Q8V_Codec_System
+  - name: Qbit QAMOS
+    topicUid: Connector_help_Qbit_QAMOS
+    items:
+      - name: Qbit QAMOS Technical
+        topicUid: Connector_help_Qbit_QAMOS_Technical
   - name: Qbit SIMux
     topicUid: Connector_help_Qbit_SIMux
 - name: Qligent
@@ -9256,6 +9297,8 @@
     items:
      - name: Slack Messaging Technical
        topicUid: Connector_help_Slack_Messaging_technical
+     - name: Slack Messaging Sending Messages Developer Guide
+       topicUid: Connector_help_Slack_Messaging_sending_messages_developer
 - name: Smappee
   items:
   - name: Smappee Platform
@@ -9522,6 +9565,13 @@
     topicUid: Connector_help_Sony_XVS-G1
   - name: Sony XVS Control
     topicUid: Connector_help_Sony_XVS_Control
+- name: Space DOTS
+  items:
+  - name: Space DOTS DD1
+    topicUid: Connector_help_Space_DOTS_DD1
+    items:
+    - name: Space DOTS DD1 Technical
+      topicUid: Connector_help_Space_DOTS_DD1_Technical 
 - name: SpacePath Communications
   items:
   - name: SpacePath Communications N6143 Controller Series
@@ -11416,6 +11466,11 @@
     topicUid: Connector_help_Ziggo_IVR_Gateway
   - name: Ziggo IVR Gateway K2View
     topicUid: Connector_help_Ziggo_IVR_Gateway_K2View
+  - name: Ziggo Kafka Producer
+    topicUid: Connector_help_Ziggo_Kafka_Producer
+    items:
+    - name: Ziggo Kafka Producer Technical
+      topicUid: Connector_help_Ziggo_Kafka_Producer_Technical
   - name: Ziggo Modem Outage Check
     topicUid: Connector_help_Ziggo_Modem_Outage_Check
   - name: Ziggo SAM Event Combiner
