@@ -4881,6 +4881,9 @@
     topicUid: Connector_help_Harmonic_HOS7100
   - name: Harmonic NMX
     topicUid: Connector_help_Harmonic_NMX
+    items:
+    - name: Harmonic NMX Technical
+      topicUid: Connector_help_Harmonic_NMX_Technical
   - name: Harmonic NMX - Device
     topicUid: Connector_help_Harmonic_NMX_-_Device
   - name: Harmonic NMX - Switch
