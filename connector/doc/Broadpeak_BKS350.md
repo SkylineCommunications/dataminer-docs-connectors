@@ -79,4 +79,6 @@ The element created with this connector consists of the following data pages:
 
 ## Notes
 
-When you upgrade from range 1.0.0.x to 1.0.1.x or 1.0.2.x, existing elements need to be reconfigured before the new connection will be taken in use.
+When you upgrade from range 1.0.0.x to 1.0.1.x, existing elements need to be reconfigured before the new connection will be taken in use.
+
+When you upgrade to range 1.0.2.x, alarm and trending history will be lost due to the changed primary key (PK) format.
