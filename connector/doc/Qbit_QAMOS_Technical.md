@@ -38,7 +38,7 @@ The connector polls the QAMOS REST API to retrieve device information and to app
 
 The element has the following data pages:
 
-- **General**: Shows system information (name, location, contact, hostname, firmware version, and build) and system health (CPU load, memory usage, uptime, boot time). The **Authentication** subpage is used to log in to the device.
+- **General**: Shows system information (name, location, contact, hostname, firmware version and build) and system health (CPU load, memory usage, uptime, boot time). The **Authentication** subpage is used to log in to the device.
 - **Interfaces**: Shows the status of the network interfaces (address, netmask, gateway, link, state, speed, TX/RX rate) and allows the network interface configuration (DHCP, IP, DNS, HTTP proxy, role assignment) to be changed.
 - **Inputs**: Lists all configured inputs with their source type, enabled state, and the linked measurement profile. Dedicated subpages are available per source type:
   - **Inputs - Icecast**
