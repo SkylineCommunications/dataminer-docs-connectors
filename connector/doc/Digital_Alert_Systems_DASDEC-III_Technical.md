@@ -22,7 +22,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The connector will act as a server. Set this field to "*Any*".
-  - **IP port**: By default *20002*. A different port can be specified.
+  - **IP port**: By default, *20002*. A different port can be specified.
 
 #### SNMP Connection
 
@@ -61,6 +61,9 @@ On the DASDEC-III, navigate to **Setup** > **Main** > **Main/License** and ensur
 - **V5.0 Enabling Key**: This is required for the DASDEC-III for users to operate and configure the device.
 - **EAS_NET (includes DVS169)**: Under the Net Alert Licenses, this is required for the smart-serial connection and to ensure that DataMiner will receive EAS alerts from the device.
 
+![Main Licenses](../images/DASDEC-III_Main_License.png)
+![Net Alert Licenses](../images/DASDEC-III_Net_Alert_License.png)
+
 #### EAS NET Setup
 
 With the **EAS_NET** license installed, the DASDEC-III can send data over TCP/IP networks. To set this up, follow these steps:
@@ -83,25 +86,33 @@ With the **EAS_NET** license installed, the DASDEC-III can send data over TCP/IP
 
    The device should be able to connect to the DataMiner server. If the connection fails, check the network settings and firewall rules.
 
+![EAS NET Client Setup](../images/DASDEC-III_EAS_NET_Client.png)
+
 #### Public-Private Key Initialization
 
 To perform the public-private key initialization, follow these steps:
 
 1. On the **General** page, fill in the "Host" as the host IP of the DASDEC.
 
-1. On the **General** page, click the **Generate Keys** button.
+2. On the **General** page, click the **Generate Keys** button.
+
+![SSH Key Generation](../images/DASDEC-III_SSH_Key_Generation.png)
 
    This will generate a private key file in `C:\Skyline DataMiner\Documents\DASDEC\privatekey` as well as a public key in the **Public Key** parameter.
 
-1. In the DASDEC web GUI, navigate to **Setup** > **Network** > **Security**, and change the **SSH Key Type** in the dropdown list to RSA.
+3. In the DASDEC web GUI, navigate to **Setup** > **Network** > **Security**, and change the **SSH Key Type** in the dropdown list to RSA.
 
-1. Copy the public key from the parameter and paste it into the box next to the **Add Public Key** button.
+4. Copy the public key from the parameter and paste it into the box next to the **Add Public Key** button.
 
-1. Click the **Add Public Key** button.
+5. Click the **Add Public Key** button.
 
-1. Click **Accept SSH Authorization Change**.
+![SSH Key Setup](../images/DASDEC-III_SSH_Key_Setup.png)
 
-1. Ensure that the DataMiner IP address is included in the **SSHD Whitelist Configuration**.
+6. Click **Accept SSH Authorization Change**.
+
+7. Ensure that the DataMiner IP address is included in the **SSHD Whitelist Configuration**.
+
+![SSH Key Whitelist](../images/DASDEC-III_SSHD_Whitelist.png)
 
 You can now approve mandatory/voluntary open alerts. If an alert is not forwarded, check the element logging for errors.
 
@@ -112,6 +123,8 @@ SNMP on the DASDEC-III requires a package to be installed. To set this up, follo
 1. Reach out to Digital Alert Systems support to obtain the SNMP package.
 
 1. Navigate to **Setup** > **Main** > **Upgrade** and install the SNMP package.
+
+![Package Installation](../images/DASDEC-III_Package_Upgrade.png)
 
 ### Web Interface
 
@@ -147,7 +160,7 @@ Via the **Alert Automation** page button, you can set up the DataMiner connector
 
 ### Debug
 
-This page contains the last received message.
+This page contains the last message received.
 
 ### Web Interface
 
