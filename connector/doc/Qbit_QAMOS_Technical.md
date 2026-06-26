@@ -32,13 +32,13 @@ Once the element has been created, go to the **General** page and open the **Aut
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to Use
 
-The connector polls the QAMOS REST API to retrieve device information and to apply user changes. Data traffic can be inspected on the **HTTP DEBUG** page when this page is enabled.
+The connector polls the QAMOS REST API to retrieve device information and to apply user changes. To inspect data traffic, you can enable and consult the **HTTP DEBUG** page.
 
-The element is organized in the following pages:
+The element has the following data pages:
 
-- **General**: Shows system information (name, location, contact, hostname, firmware version and build) and system health (CPU load, memory usage, up time, boot time). The **Authentication** subpage is used to log in to the device.
+- **General**: Shows system information (name, location, contact, hostname, firmware version, and build) and system health (CPU load, memory usage, uptime, boot time). The **Authentication** subpage is used to log in to the device.
 - **Interfaces**: Shows the status of the network interfaces (address, netmask, gateway, link, state, speed, TX/RX rate) and allows the network interface configuration (DHCP, IP, DNS, HTTP proxy, role assignment) to be changed.
 - **Inputs**: Lists all configured inputs with their source type, enabled state, and the linked measurement profile. Dedicated subpages are available per source type:
   - **Inputs - Icecast**
@@ -46,7 +46,7 @@ The element is organized in the following pages:
   - **Inputs - MPEG-2 TS** (with an MPEG-2 TS service list subpage)
   - **Inputs - EDI** (with an EDI service list subpage)
   - **Inputs - AES67**
-- **Streams**: Lists the streams derived from the inputs, including codec, bitrate, audio buffer fill, channel count, sample rate, and HLS/Icecast specific metrics.
+- **Streams**: Lists the streams derived from the inputs, including codec, bitrate, audio buffer fill, channel count, sample rate, and HLS/Icecast-specific metrics.
 - **Measurement Profiles**: Lists the measurement profiles and exposes the configuration of loudness, input loss, silence detection, AES67 invalid SDP, HLS invalid playlist, HLS playlist size, HLS playlist update interval, and EDI no superframe sync alarms.
 - **Taps**: Shows the Icecast and HLS taps that are exposed by the device for monitoring outputs.
 - **Active Alarms**: Lists the currently firing alarms with priority, type, source, message, and start/ack/end times. Each entry can be acknowledged from the table.
