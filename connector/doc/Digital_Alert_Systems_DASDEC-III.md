@@ -2,7 +2,6 @@
 uid: Connector_help_Digital_Alert_Systems_DASDEC-III
 ---
 
-
 # Digital Alert Systems DASDEC-III
 
 ## About
@@ -11,11 +10,11 @@ The Digital Alert Systems DASDEC-III is a professional Emergency Alert System (E
 
 ## Key Features
 
-- **Alert Triage and Operator Decision Control:**: Presents incoming EAS alerts in DataMiner categorized as mandatory or voluntary, and lets operators approve, hold, deny, or ignore each alert from the DataMiner interface, eliminating the need to interact with the DASDEC device's web interface.
-- **Automated Compliance Safeguards**: Starts a countdown timer when a mandatory alert such as an RMT arrives and automatically forwards the alert to the DASDEC-III before the FCC deadline expires, ensuring compliance even when no operator is available to act.
-- **Compliance Deadline Tracking**: Exposes RMT and RWT countdown parameters that feed the DataMiner Alarm Console with escalating severity alarms as deadlines approach, replacing manual checks and email-based reminders with automated alarm escalation.
-- **Complete EAS Audit Trail:**: Logs every alert event and operator action — with the DataMiner username, timestamp, and outcome — to the indexing database or a local file path, producing the searchable record that FCC audits require.
-- **Connection Health Monitoring**:  Raises a DataMiner alarm when no EAS-NET message is received within a configurable time window, alerting operators to potential communication issues with the DASDEC-III before a missed alert creates a compliance risk.
+- **Alert triage and operator decision control**: Presents incoming EAS alerts in DataMiner categorized as mandatory or voluntary, and lets operators approve, hold, deny, or ignore each alert from the DataMiner interface, eliminating the need to interact with the DASDEC device's web interface.
+- **Automated compliance safeguards**: Starts a countdown timer when a mandatory alert such as an RMT arrives and automatically forwards the alert to the DASDEC-III before the FCC deadline expires, ensuring compliance even when no operator is available to act.
+- **Compliance deadline tracking**: Exposes RMT and RWT countdown parameters that feed the DataMiner Alarm Console with escalating severity alarms as deadlines approach, replacing manual checks and email-based reminders with automated alarm escalation.
+- **Complete EAS audit trail**: Logs every alert event and operator action — with the DataMiner username, timestamp, and outcome — to the indexing database or a local file path, producing the searchable record that FCC audits require.
+- **Connection health monitoring**: Raises a DataMiner alarm when no EAS-NET message is received within a configurable time window, alerting operators to potential communication issues with the DASDEC-III before a missed alert creates a compliance risk.
 
 ## Use Cases
 
@@ -46,10 +45,11 @@ The Digital Alert Systems DASDEC-III is a professional Emergency Alert System (E
 ## Technical Reference
 
 ### Prerequisites
- - **EAS-NET connectivity**: Network access between the DataMiner Agent and the DASDEC-III on the EAS-NET TCP port is required for alert reception in DataMiner.
- - **SSH/SCP connectivity**: The DataMiner Agent must reach the DASDEC-III over SSH to send alert forwarding commands. An SSH key pair must be generated within the connector and installed on the DASDEC-III during initial setup.
- - **DASDEC software**: The DASDEC-III running v5 software with EAS-NET and Plus Package licenses is required.
- - **SNMP aux pass package (optional)**: Basic device health monitoring via SNMP requires the aux pass package to be installed on the DASDEC unit.
+
+- **EAS-NET connectivity**: Network access between the DataMiner Agent and the DASDEC-III on the EAS-NET TCP port is required for alert reception in DataMiner.
+- **SSH/SCP connectivity**: The DataMiner Agent must reach the DASDEC-III over SSH to send alert forwarding commands. An SSH key pair must be generated within the connector and installed on the DASDEC-III during initial setup.
+- **DASDEC software**: The DASDEC-III running v5 software with EAS-NET and Plus Package licenses is required.
+- **SNMP aux pass package (optional)**: Basic device health monitoring via SNMP requires the aux pass package to be installed on the DASDEC unit.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Digital_Alert_Systems_DASDEC-III_Technical).
