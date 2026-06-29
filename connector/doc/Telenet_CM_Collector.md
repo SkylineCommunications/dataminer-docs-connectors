@@ -13,7 +13,7 @@ This connector will poll all the CMs in two poll cycles:
 - **Fast Poll**: Polling CMs over a 15-minute period.
 - **Slow Poll**: Polling CMs over a 24-hour period.
 
-In addition, there is another poll cycle that polls the **CMTS** to request the US data of all CMs over a 15-minute period. The polled data is offloaded into CSV files and aggregated by the CPE Manager element. The CPE Manager element provisions the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector sends traps to `Adlex Nouveau`.
+In addition, there is another poll cycle that polls the **CMTS** to request the US data of all CMs over a 15-minute period. The polled data is offloaded into CSV files and aggregated by the CPE Manager element. The CPE Manager element provisions the CM Collector with the CMs that need to be polled and their IP addresses. The CM Collector sends traps to *Adlex Nouveau*.
 
 ## Configuration
 
@@ -76,11 +76,11 @@ Other threshold parameters are used to determine whether or not to offload a val
 
 ### Adlex Nouveau Parameters
 
-The CM Collector checks the current internet usage of the cable modem to determine the class to which it belongs. This information is then sent to `Adlex Nouveau` in a trap. `Adlex Nouveau` will perform tests on modems that are not in use, in order to determine the maximum upload and download speed that can be reached. You can enable this functionality by setting the **Poll Classification** parameter to *Enabled*.
+The CM Collector checks the current internet usage of the cable modem to determine the class to which it belongs. This information is then sent to *Adlex Nouveau* in a trap. *Adlex Nouveau* will perform tests on modems that are not in use, in order to determine the maximum upload and download speed that can be reached. You can enable this functionality by setting the **Poll Classification** parameter to *Enabled*.
 
 The **Trap Table** contains the IP addresses of the Adlex DMAs to which the traps can be sent. You can add IP addresses to this table by setting the parameter **Add Trap IP**. You can remove them again with the **Delete Trap IP** parameter.
 
-The **Hardware Table** contains all the types of modems for which traps may be sent to `Adlex Nouveau`. You can add hardware types by setting the parameter **Add Hardware Type**, and remove them again with the **Delete Hardware Type** parameter.
+The **Hardware Table** contains all the types of modems for which traps may be sent to *Adlex Nouveau*. You can add hardware types by setting the parameter **Add Hardware Type**, and remove them again with the **Delete Hardware Type** parameter.
 
 The **Classification** table contains the definitions of all the classes. You can add rows to this table by clicking the **Add Class** button, and remove them again with the **Delete Class** parameter.
 
