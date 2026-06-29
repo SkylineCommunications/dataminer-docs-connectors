@@ -2933,6 +2933,9 @@
   items:
   - name: Digital Alert Systems DASDEC-III
     topicUid: Connector_help_Digital_Alert_Systems_DASDEC-III
+    items:
+      - name: Digital Alert Systems DASDEC-III Technical
+        topicUid: Connector_help_Digital_Alert_Systems_DASDEC-III_Technical
 - name: Dimetis
   items:
   - name: Dimetis BOSS Stream Viewer
