@@ -14,6 +14,7 @@ The Nokia ISAM 7300 FX GPON Platform connector uses an SNMP connection to commun
 |---------|-------------------------------------------------------------------------------------|----------|---------------|
 | 1.0.0.x | - Initial version. <br>- Compatibility with Skyline EPM Solution.                   | -        | -             |
 | 1.0.1.x | - Modified passive logic. Now it is compatible with routes, distributions and FATs. | 1.0.0.6  | -             |
+| 1.0.2.x | - Modified parameters and aggregations to latest Skyline EPM solution process.      | 1.0.1.9  | -             |
 
 ### Product Info
 
@@ -21,6 +22,7 @@ The Nokia ISAM 7300 FX GPON Platform connector uses an SNMP connection to commun
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
 | 1.0.1.x   | -                      |
+| 1.0.2.x   | -                      |
 
 ### System Info
 
@@ -28,6 +30,7 @@ The Nokia ISAM 7300 FX GPON Platform connector uses an SNMP connection to commun
 |---------|-----------------|---------------------|-----------------------------------------------------------|---------------------|
 | 1.0.0.x | No              | Yes                 | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                   |
 | 1.0.1.x | No              | Yes                 | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                   |
+| 1.0.2.x | No              | Yes                 | - Skyline EPM Solution <br>- Skyline EPM Platform GPON WM | -                   |
 
 ## Configuration
 
@@ -90,6 +93,15 @@ Once the initial setup is done, the connector can function without further confi
 In this range, the OLT is no longer responsible for information retrieval from the external source (e.g., KAFKA). The OLT Interval parameter has therefore been removed.
 
 Another important difference with the previous range is related to the passive logic: Split information is now divided over three tables to allow a better understanding and segmentation of the data in the topology. The Split page now contains the **Split Route Overview**, **Split Distribution Overview** and **Split FAT** **Overview** tables.
+
+## How to Use - Range 1.0.2.x
+
+In this range, the OLT is capable of retrieving information either through File Import (e.g., via remote connection) or by means of the SNMP process. This functionality incorporates an additional EPM Registration Configuration, which enables the import of a file containing the ONT Registration data. By leveraging this mechanism, the system avoids duplicate polling across different environments, a scenario that could otherwise impose a significant performance impact on Nokia devices.
+
+By default, the parameter SNMP Information Polling Method is set to File Import. To ensure proper operation, the user must update the EPM Import Settings, which include the following elements:
+- Import Directory path
+- Import Directory type
+- System credentials
 
 ## Notes
 
