@@ -8,27 +8,6 @@ uid: Connector_help_HP_Synergy_Technical
 
 The HP Synergy connector enables DataMiner integration and monitoring of HP Synergy devices via the HP OneView management platform. The connector uses the RESTful API to communicate with the device.
 
-### Version Info
-
-| Range              | Key Features             | Based on | System Impact                                       |
-|--------------------|--------------------------|----------|-----------------------------------------------------|
-| 1.0.0.x            | Initial version          | -        | -                                                   |
-| 1.0.1.x [SLC Main] | Add support for Unicode. | 1.0.0.3  | Element must be recreated. Saved data will be lost. |
-
-### Product Info
-
-| Range     | Supported Firmware       |
-|-----------|--------------------------|
-| 1.0.0.x   | OneView API Version 1000 |
-| 1.0.1.x   | OneView API Version 1000 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections

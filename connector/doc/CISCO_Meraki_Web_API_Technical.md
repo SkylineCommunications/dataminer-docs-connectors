@@ -13,31 +13,6 @@ This connector supports two operating models:
 - **1.0.x**: Polling and monitoring via HTTPS requests to the Meraki Dashboard API.
 - **2.0.x**: Event-driven alarm capture using webhook notifications.
 
-### Version Info
-
-| Range              | Features                                                                                                   | Based on | System Impact |
-|--------------------|------------------------------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x (obsolete) | Initial version. Polling and monitoring via Meraki API over HTTPS.                                         | -        | -             |
-| 1.0.1.x            | Maintenance release in the 1.0.x polling track.                                                            | -        | -             |
-| 2.0.0.x (obsolete) | Virtual connector captures and processes webhook notifications, including auto-clearing of stale alarms.   | -        | -             |
-| 2.0.1.x [SLC Main] | Current 2.0.x track with webhook-based alarm ingestion and automatic clearing of cleared or expired alarms.| -        | -             |
-
-### Product Info
-
-The connector has been used to monitor Meraki devices including Cisco Meraki MX64, MX67, MX84, MX100, MS120-8, MS120-8FP, and vMX100.
-
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.x   | Not applicable     |
-| 2.0.x   | Not applicable     |
-
-### System Info
-
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.x   | No              | Yes                 | -                 | -                   |
-| 2.0.x   | No              | Yes                 | -                 | -                   |
-
 ## Configuration
 
 ### Connections

@@ -8,29 +8,15 @@ uid: Connector_help_Harmonic_NMX_Technical
 
 Harmonic's NMX Digital Service Manager is a video network management solution, encompassing a set of tools to monitor and manage Harmonic compressed digital video and audio systems.
 
-The connector communicates with the NMX system using different protocols depending on the range: serial (XML SAPI) for older ranges and HTTP REST API with WebSocket notifications for newer ranges (4.1.0.x and later).
+The connector communicates with the NMX system using different protocols depending on the range:
+- Serial (XML SAPI) for older ranges 1.0.0.x - 4.0.0.x
+- HTTP REST API with WebSocket notifications for newer ranges 4.1.0.x and later
 
-### Product Info
+## Exported Dynamic Virtual Elements
 
-| Range              | Supported Firmware |
-|--------------------|--------------------|
-| 1.0.0.x - 4.0.0.x  | N/A                |
-| 4.0.1.x            | N/A                |
-| 4.1.0.x            | 8 - 9.13           |
-| 4.1.1.x            | 8 - 9.13           |
-| 4.2.0.x            | 8 - 9.13           |
-| 4.3.0.x            | 9.10 - 9.15        |
-
-### System Info
-
-| Range              | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--------------------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x - 4.0.0.x  | No              | Yes                 | -                 | [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device) |
-| 4.0.1.x            | No              | Yes                 | -                 | [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device) |
-| 4.1.0.x            | No              | Yes                 | -                 | [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device) |
-| 4.1.1.x            | No              | Yes                 | -                 | [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device)<br>[Harmonic NMX - Switch](xref:Connector_help_Harmonic_NMX_-_Switch) |
-| 4.2.0.x            | No              | Yes                 | -                 | [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device)<br>[Harmonic NMX - Switch](xref:Connector_help_Harmonic_NMX_-_Switch) |
-| 4.3.0.x [SLC Main] | No              | Yes                 | -                 | [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device)<br>[Harmonic NMX - Switch](xref:Connector_help_Harmonic_NMX_-_Switch) |
+The connector supports the following types:
+- [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device)
+- [Harmonic NMX - Switch](xref:Connector_help_Harmonic_NMX_-_Switch)
 
 ## Configuration
 
