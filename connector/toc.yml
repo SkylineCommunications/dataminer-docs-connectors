@@ -9178,7 +9178,7 @@
     topicUid: Connector_help_Skyline_Labs_ACU
     items:
       - name: Skyline Labs ACU Technical
-        topicUid: Connector_help_Skyline_Labs_ACU_Technical  
+        topicUid: Connector_help_Skyline_Labs_ACU_Technical
   - name: Skyline Lock Manager
     topicUid: Connector_help_Skyline_Lock_Manager
     items:
