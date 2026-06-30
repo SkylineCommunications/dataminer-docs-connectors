@@ -8,7 +8,7 @@ uid: Connector_help_Amazon_AWS_CloudWatch
 
 Amazon CloudWatch is a **monitoring and management service** built for developers, system operators, site reliability engineers (SRE), and IT managers.
 
-CloudWatch provides you with data and actionable insights to monitor your applications, understand and respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications and services that run on AWS, and on-premises servers. You can use CloudWatch to set high-resolution alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to optimize your applications and ensure they are running smoothly.
+CloudWatch provides you with data and actionable insights to monitor your applications, understand and respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data as logs, metrics, and events. This gives you a unified view of your AWS resources, the applications and services running on AWS, and your on-premises servers. You can use CloudWatch to set high-resolution alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to optimize your applications and ensure they are running smoothly.
 
 ## Key Features
 
@@ -42,7 +42,7 @@ CloudWatch provides you with data and actionable insights to monitor your applic
 
 **Challenge**: Managing both cloud and on-premises systems with disparate tools.
 
-**Solution**: Leverage DataMiner’s unified view to monitor all environments from a single platform.
+**Solution**: Leverage DataMiner's unified view to monitor all environments from a single platform.
 
 **Benefit**: Simplified operations and improved efficiency.
 

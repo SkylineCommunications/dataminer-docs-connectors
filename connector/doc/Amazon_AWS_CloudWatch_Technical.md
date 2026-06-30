@@ -8,7 +8,7 @@ uid: Connector_help_Amazon_AWS_CloudWatch_Technical
 
 Amazon CloudWatch is a **monitoring and management service** built for developers, system operators, site reliability engineers (SRE), and IT managers.
 
-CloudWatch provides you with data and actionable insights to monitor your applications, understand and respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data in the form of logs, metrics, and events, providing you with a unified view of AWS resources, applications and services that run on AWS, and on-premises servers. You can use CloudWatch to set high-resolution alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to optimize your applications and ensure they are running smoothly.
+CloudWatch provides you with data and actionable insights to monitor your applications, understand and respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health. CloudWatch collects monitoring and operational data as logs, metrics, and events. This gives you a unified view of your AWS resources, the applications and services running on AWS, and your on-premises servers. You can use CloudWatch to set high-resolution alarms, visualize logs and metrics side by side, take automated actions, troubleshoot issues, and discover insights to optimize your applications and ensure they are running smoothly.
 
 ## Configuration
 
@@ -59,6 +59,14 @@ HTTP POST messages are used to communicate with the Amazon AWS CloudWatch. This 
 
 This page contains **Login** options, as well as information on which services should be polled with this element. To make sure that the connector can work properly, you **must first provide login information** (see [Initialization](#initialization) section above).
 
+Three subpages are available to configure the connector:
+- SNS Debug: This page contains **Account** information. If a received message does not match the account, it will not be processed. The page also contains information about the currently subscribed topic and the SNS service that is sending the notifications. It also displays information on the last received notification.
+- Configuration: This page contains configurations to include the Instance Name Suffix (which, if enabled, appends the instance name as a suffix to the service entry name). The Force No Data option sets the value of the metric to "No Data" when the response of a "get metrics" call is a missing entry. Finally, the "Get Service Entries" option forces an update/repoll of the data.
+- Monitoring Account: This page allows you to indicate whether the configured account is a monitoring account. If it is, the connector will use the monitoring account to retrieve data from other accounts. In addition, it also allows you to define the ID of the source account for which metrics/data needs to be polled. If disabled, data for all accounts will be polled.
+
+> [!NOTE]
+> By default, the connector retrieves the data from the latest 15 minutes. If there is no update in AWS, the API will not report any value.
+
 ### Amazon Services
 
 First, specify the **Default Polling Interval** and **Default Poll All Metrics** column values of the **Amazon Services** table. These are the values that will be applied when a new service entry has been added. Changing these values will have no impact on existing **Service Entries**.
@@ -74,11 +82,8 @@ Specify which services should be polled with the **Poll** column of the **Amazon
 > [!IMPORTANT]
 > Setting a service row to *Disabled* will remove existing DVE elements of this service.
 
-### SNS Debug
-
-This page contains **Account** information. If a received message does not match the account, it will not be processed. The page also contains information about the currently subscribed topic and the SNS service that is sending the notifications.
-
-It also displays information on the last received notification.
+> [!NOTE]
+> If the default polling is set to *Disabled* in the *Amazon Services* table, no DVEs will be created, which means no metrics can be enabled. To enable metrics, go to the *Service Entries* table and enable the desired entries. These will then be reflected on the page of the enabled service.
 
 ### Service Entries
 
