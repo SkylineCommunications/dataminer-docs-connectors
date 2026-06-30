@@ -47,7 +47,15 @@ By default, the CM collector hide the display pages. Configuration parameters ar
 > [!NOTE]
 > When creating a CM Collector element, a Visio will automatically be assigned to the element.
 
-The parameter **Data Offload Folder** contains the location of the fast and slow offload files. To find the location where the HGW files are offloaded, go one level higher in the folder structure, and check the HGW directory. The parameter **RCCV Data Offload Folder** contains the location of the IVR files.
+The following parameters can be configured:
+
+- **Data Offload Folder**: Location of the fast and slow offload files. Default value is *D:\ConfiguratieData\Offload\Modem_Info*.
+
+- **RCCV Data Offload Folder**: Location of the IVR files. Default value is *D:\ConfiguratieData\Offload\rccv_info*.
+
+Certain offload paths are hardcoded in the CM Collector:
+
+- **HGW Data Offload Folder**: Location of the HGW files. Default value is *D:\ConfiguratieData\Offload\HGW*.
 
 ### Threshold Parameters
 
@@ -99,6 +107,12 @@ As described above, the CM Collector is not intended to be used separately. The 
 - There will be a CSV file generated per operator.
 
 ### Slow Offload Structure
+
+- Offload folder: **HGW Data Offload Folder**
+- Offload file structure: `<DMAID>_<EID>_CMS.ClientStats.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -198,6 +212,12 @@ The Dynamic OIDs are a set of parameters that can be configured on the page **Dy
 
 ### Fast Offload Structure
 
+- Offload folder: **Data Offload Folder**
+- Offload file structure: `<DMAID>_<EID>_CMS.fast.dataoffload.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
+
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|MAC Address|Cable Modem MAC address|1.3.6.1.2.1.2.2.1.6.2|`ifPhysAddress.2`, MAC address of the second interface|
@@ -216,6 +236,12 @@ The Dynamic OIDs are a set of parameters that can be configured on the page **Dy
 > **Partial service state** and **Partial channel state** are only available for DOCSIS 3.1 CMs. For DOCSIS 3.0 and lower, these fields will be empty.
 
 ### Fast DS Tuner Offload Structure
+
+- Offload folder: **Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.DS.Tuner.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -257,6 +283,12 @@ $$
 $$
 
 ### Fast US Tuner Offload Structure
+
+- Offload folder: **Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.US.Tuner.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -309,6 +341,12 @@ $$
 
 ### IVR Offload Structure
 
+- Offload folder: **RCCV Data Offload Folder**
+- Offload file structure: `ivr.cm.offload.<DMAID>_<EID>.<OPERATOR>.current.dat`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
+
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|MAC Address|Cable Modem MAC address|N/A|N/A|
@@ -318,6 +356,12 @@ $$
 |5|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 
 ### Client Stats Offload Structure
+
+- Offload folder: **HGW Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.CMS.ClientStats.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -386,6 +430,12 @@ $$
 
 ### Channel Loading Offload Structure
 
+- Offload folder: **HGW Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.CMS.ChannelLoading.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
+
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
@@ -412,6 +462,12 @@ $$
 |5G|1.3.6.1.4.1.35604.1.19.51.3.3.1.1.3|N/A|
 
 ### Connected Clients Offload Structure
+
+- Offload folder: **HGW Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.CMS.ConnectedClients.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -464,6 +520,12 @@ $$
 
 ### Client Errors Offload Structure
 
+- Offload folder: **RCCV Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.CMS.ClientErrors.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
+
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
@@ -501,6 +563,12 @@ $$
 
 ### LAN User Offload Structure
 
+- Offload folder: **RCCV Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.CMS.LanUser.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
+
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
 |1|SAPID|Service Access Point ID|N/A|N/A|
@@ -511,6 +579,12 @@ $$
 |6|Another Operator|Field used to distinguish between different operators|N/A|N/A|
 
 ### Powerline Network Offload Structure
+
+- Offload folder: **HGW Data Offload Folder**
+- Offload file structure: `<DMAID>.<EID>.CMS.PowerlineNetwork.<OPERATOR>.current.csv`
+  - DMAID: DMA ID where the CM collector element is located.
+  - EID: Element ID of the CM collector element.
+  - OPERATOR: Operator assigned to the CMs available if the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
