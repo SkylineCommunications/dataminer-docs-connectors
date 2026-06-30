@@ -452,44 +452,47 @@
     topicUid: Connector_help_Amazon_AWS_CloudFormation
   - name: Amazon AWS CloudWatch
     topicUid: Connector_help_Amazon_AWS_CloudWatch
-  - name: Amazon AWS CloudWatch - Amazon ECS
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Amazon_ECS
-  - name: Amazon AWS CloudWatch - API Gateway
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_API_Gateway
-  - name: Amazon AWS CloudWatch - Direct Connect
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Direct_Connect
-  - name: Amazon AWS CloudWatch - DynamoDB
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_DynamoDB
-  - name: Amazon AWS CloudWatch - EC2
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2
-  - name: Amazon AWS CloudWatch - EC2 Spot Fleet
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2_Spot_Fleet
-  - name: Amazon AWS CloudWatch - EFS
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EFS
-  - name: Amazon AWS CloudWatch - ElastiCache
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElastiCache
-  - name: Amazon AWS CloudWatch - ElasticSearch
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElasticSearch
-  - name: Amazon AWS CloudWatch - Elemental MediaTailor
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Elemental_MediaTailor
-  - name: Amazon AWS CloudWatch - Kinesis Data Streams
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Kinesis_Data_Streams
-  - name: Amazon AWS CloudWatch - Lambda
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Lambda
-  - name: Amazon AWS CloudWatch - MediaConvert
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaConvert
-  - name: Amazon AWS CloudWatch - MediaPackage
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaPackage
-  - name: Amazon AWS CloudWatch - RDS
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_RDS
-  - name: Amazon AWS CloudWatch - Redshift
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Redshift
-  - name: Amazon AWS CloudWatch - S3
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_S3
-  - name: Amazon AWS CloudWatch - Transfer Family
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transfer_Family
-  - name: Amazon AWS CloudWatch - Transit Gateway
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transit_Gateway
+    items:
+    - name: Amazon AWS CloudWatch Technical
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_Technical
+    - name: Amazon AWS CloudWatch - Amazon ECS
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Amazon_ECS
+    - name: Amazon AWS CloudWatch - API Gateway
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_API_Gateway
+    - name: Amazon AWS CloudWatch - Direct Connect
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Direct_Connect
+    - name: Amazon AWS CloudWatch - DynamoDB
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_DynamoDB
+    - name: Amazon AWS CloudWatch - EC2
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2
+    - name: Amazon AWS CloudWatch - EC2 Spot Fleet
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2_Spot_Fleet
+    - name: Amazon AWS CloudWatch - EFS
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EFS
+    - name: Amazon AWS CloudWatch - ElastiCache
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElastiCache
+    - name: Amazon AWS CloudWatch - ElasticSearch
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElasticSearch
+    - name: Amazon AWS CloudWatch - Elemental MediaTailor
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Elemental_MediaTailor
+    - name: Amazon AWS CloudWatch - Kinesis Data Streams
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Kinesis_Data_Streams
+    - name: Amazon AWS CloudWatch - Lambda
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Lambda
+    - name: Amazon AWS CloudWatch - MediaConvert
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaConvert
+    - name: Amazon AWS CloudWatch - MediaPackage
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaPackage
+    - name: Amazon AWS CloudWatch - RDS
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_RDS
+    - name: Amazon AWS CloudWatch - Redshift
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Redshift
+    - name: Amazon AWS CloudWatch - S3
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_S3
+    - name: Amazon AWS CloudWatch - Transfer Family
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transfer_Family
+    - name: Amazon AWS CloudWatch - Transit Gateway
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transit_Gateway
   - name: Amazon AWS EC2
     topicUid: Connector_help_Amazon_AWS_EC2
   - name: Amazon AWS Elemental MediaLive
