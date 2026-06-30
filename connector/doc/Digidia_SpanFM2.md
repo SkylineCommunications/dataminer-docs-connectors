@@ -14,7 +14,7 @@ Through an SNMP connection, the connector retrieves the operational status of th
 
 - **Multiplex service monitoring**: Continuous monitoring of the multiplex audio service status, including the audio input, data mailbox input, wave file input, PIMS over RS-232 input, UECP input, synchronization, and redundancy states.
 
-- **Centralized alarm monitoring**: The global alarm table and multiplex alarm notifications are collected and exposed as DataMiner alarms, so issues on the device are visible in a single overview.
+- **Centralized alarm monitoring**: The global alarm table and multiplex alarm notifications are collected and exposed as DataMiner alarms, so that issues on the device are visible in a single overview.
 
 - **Device and network configuration**: Read and set the device network parameters (IP address, subnet mask, gateway, and port speed/duplex) for both Ethernet interfaces, as well as the equipment name, comment, and real-time clock.
 

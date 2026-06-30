@@ -31,7 +31,7 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-The **Website** page opens the device web interface at `http://[Polling IP]/`, where the Polling IP is the IP address configured for the SNMP connection.
+The **Website** page opens the device web interface at `http://[polling IP]/`, where the polling IP is the IP address configured for the SNMP connection.
 
 ## How to Use
 
@@ -46,11 +46,11 @@ SNMP polling is used to retrieve all device information. Values are read on the 
 
 ### Configuration and control
 
-- **System** page: Allows setting the equipment name, comment, real-time clock, serial number, and license keys, and triggering an equipment reset.
-- **Communication** page: Allows reviewing and setting the network configuration of both Ethernet interfaces (IP address, subnet mask, gateway, and port speed/duplex).
-- **Synchronisation** page: Allows configuring the two NTP server addresses used by the device.
-- **Session** page: Allows configuring public access and managing the user table (name, password, and access level).
-- **Trap** page: Allows configuring the SNMP trap community and enabling up to two trap targets, including the IP address of each manager that should receive traps from the device.
+- **System** page: Allows you to set the equipment name, comment, real-time clock, serial number, and license keys, and to trigger an equipment reset.
+- **Communication** page: Allows you to review and set the network configuration of both Ethernet interfaces (IP address, subnet mask, gateway, and port speed/duplex).
+- **Synchronisation** page: Allows you to configure the two NTP server addresses used by the device.
+- **Session** page: Allows you to configure public access and manage the user table (name, password, and access level).
+- **Trap** page: Allows you to configure the SNMP trap community and enable up to two trap targets, including the IP address of each manager that should receive traps from the device.
 
 ## Notes
 
