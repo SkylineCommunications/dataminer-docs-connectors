@@ -33,7 +33,7 @@ HTTP CONNECTION:
 
 This connector uses a smart-serial connection and requires the following input during element creation:
 
-HTTP CONNECTION:
+SMART-SERIAL CONNECTION:
 
 - **IP address/host**: Any.
 
