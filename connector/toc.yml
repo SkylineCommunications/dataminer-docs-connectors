@@ -9852,6 +9852,8 @@
     topicUid: Connector_help_Symmetricom_XL-GPS
 - name: Synamedia
   items:
+  - name: Synamedia MEG
+    topicUid: Connector_help_Synamedia_MEG
   - name: Synamedia Virtual DCM
     topicUid: Connector_help_Synamedia_Virtual_DCM
     items:

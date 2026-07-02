@@ -39,23 +39,23 @@ The following input is required during element creation:
 
 ### Offload Parameters
 
-By default, the CM collector hide the display pages. Configuration parameters are available through:
+By default, the CM collector hides the display pages. Configuration parameters are available through:
 
-- A Visio file assigned ot the CM Collector element.
-- Multiple set operations on the CM Collector element (see [Setting a parameter value in multiple elements](https://docs.dataminer.services/dataminer/Operator_guide/Elements/Working_with_elements/Updating_elements.html#setting-a-parameter-value-in-multiple-elements)).
+- A Visio file assigned to the CM Collector element.
+- Multiple set operations on the CM Collector element (see [Setting a parameter value in multiple elements](https://aka.dataminer.services/multiple-set)).
 
 > [!NOTE]
-> When creating a CM Collector element, a Visio will automatically be assigned to the element.
+> When a CM Collector element is created, a Visio file will automatically be assigned to the element.
 
 The following parameters can be configured:
 
-- **Data Offload Folder**: Location of the fast and slow offload files. Default value is *D:\ConfiguratieData\Offload\Modem_Info*.
+- **Data Offload Folder**: Location of the fast and slow offload files. Default value: `D:\ConfiguratieData\Offload\Modem_Info`.
 
-- **RCCV Data Offload Folder**: Location of the IVR files. Default value is *D:\ConfiguratieData\Offload\rccv_info*.
+- **RCCV Data Offload Folder**: Location of the IVR files. Default value: `D:\ConfiguratieData\Offload\rccv_info`.
 
 Certain offload paths are hardcoded in the CM Collector:
 
-- **HGW Data Offload Folder**: Location of the HGW files. Default value is *D:\ConfiguratieData\Offload\HGW*.
+- **HGW Data Offload Folder**: Location of the HGW files. Default value: `D:\ConfiguratieData\Offload\HGW`.
 
 ### Threshold Parameters
 
@@ -80,7 +80,7 @@ Other threshold parameters are used to determine whether or not to offload a val
 
 ### Home Gateway Parameters
 
-**Homestatistics Polling** enables the polling of the home gateway statistics. These statistics are polled once per day per modem. The client stats are polled between 7 p.m. and 9 p.m. in order to get the stats during the internet peak. With the parameter **Poll Clientstats 15 Min**, this polling interval can be changed, so that the client stats are then polled every 15 minutes. Polling of other statistics (channel loading, connected clients, client errors, connected power line, LAN user, powerline network) is always spread over the entire day.
+**Homestatistics Polling** enables the polling of the home gateway statistics. These statistics are polled once per day per modem. The client stats are polled between 7 PM and 9 PM in order to get the stats during the internet peak. With the parameter **Poll Clientstats 15 Min**, this polling interval can be changed, so that the client stats are then polled every 15 minutes. Polling of other statistics (channel loading, connected clients, client errors, connected power line, LAN user, powerline network) is always spread over the entire day.
 
 ### Adlex Nouveau Parameters
 
@@ -113,7 +113,7 @@ As described above, the CM Collector is not intended to be used separately. The 
 - Offload file structure: `<DMAID>_<EID>_CMS.ClientStats.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -218,7 +218,7 @@ The Dynamic OIDs are a set of parameters that can be configured on the page **Dy
 - Offload file structure: `<DMAID>_<EID>_CMS.fast.dataoffload.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -244,7 +244,7 @@ The Dynamic OIDs are a set of parameters that can be configured on the page **Dy
 - Offload file structure: `<DMAID>.<EID>.DS.Tuner.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -292,7 +292,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.US.Tuner.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -350,7 +350,7 @@ $$
 - Offload file structure: `ivr.cm.offload.<DMAID>_<EID>.<OPERATOR>.current.dat`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -367,7 +367,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.CMS.ClientStats.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -441,7 +441,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.CMS.ChannelLoading.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -475,7 +475,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.CMS.ConnectedClients.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -533,7 +533,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.CMS.ClientErrors.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -577,7 +577,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.CMS.LanUser.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
@@ -595,7 +595,7 @@ $$
 - Offload file structure: `<DMAID>.<EID>.CMS.PowerlineNetwork.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
   - EID: Element ID of the CM collector element.
-  - OPERATOR: Operator assigned to the CMs available if the offload file.
+  - OPERATOR: Operator assigned to the CMs available in the offload file.
 
 |Item|Field|Description|SNMP OID|SNMP OID Description|
 |----|-----|-----------|--------|--------------------|
