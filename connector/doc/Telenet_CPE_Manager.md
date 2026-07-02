@@ -257,6 +257,31 @@ File name struture: `<DMAID>.<EID>.nodeoffload_<COUNTER>.csv`
 
 Below is a description of the different entry types and their data structure.
 
+### Offload Type
+
+|Offload Type|Description|
+|------------|-----------|
+|1|Average STB Rx Level|
+|2|Average STB Rx SNR|
+|3|Average STB Rx BER|
+|5|Average CM Rx Level|
+|6|Average CM Rx SNR|
+|7|Percentage of STBs with Rx Errors|
+|9|Average CM Tx Level|
+|10|Average CM Tx SNR|
+|11|Percentage of CMs with DS CR > T|
+|12|Percentage of CMs with DS UR > T|
+|13|Percentage of CMs with US CR > T|
+|14|Percentage of CMs with US UR > T|
+|15|US DOCSIS 3.1 Profile Stats|
+|16|OFDM Profile Stats Total|
+|17|OFDM Profile Stats UR|
+|18|US OFDMA US per Profile|
+|19|DS OFDM Frequency Stats (DS OFDM Frequency Stats)|
+|20|US OFDMA Tx Power per channel (OFDMA Channel Stats)|
+|21|DS OFDM Channel Amplifier Stats (DS OFDM Channel Amplifier Stats)|
+|22|US OFDMA IUC Changes per channel (US OFDMA Channel Amplifier Stats)|
+
 ### Node Data Structure
 
 - **Timestamp**: Timestamp when the entry was added to the offload file (format: YYYY-MM-DD HH:MM:SS)
