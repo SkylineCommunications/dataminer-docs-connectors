@@ -31,7 +31,7 @@ The Synamedia MEG (Media Edge Gateway) is a software-based platform for professi
 
 **Challenge**: Provisioning new transport streams or output services on the MEG is time-consuming when done manually, and error-prone when repeated across multiple nodes in a network.
 
-**Solution**: The connector's InterApp interface exposes typed request/response messages for creating, editing, and deleting sources, output transport streams, and output services. DataMiner Automation scripts or Orchestration workflows can call these operations directly and receive structured confirmation responses.
+**Solution**: The connector's InterApp interface exposes typed request/response messages for creating, editing, and deleting sources, output transport streams, and output services. DataMiner automation scripts or orchestration workflows can call these operations directly and receive structured confirmation responses.
 
 **Benefit**: Provisioning workflows that previously required manual configuration steps can be fully automated, reducing operational overhead and ensuring consistent configuration across all MEG instances.
 
@@ -73,7 +73,7 @@ The connector supports monitoring and configuration of transport streams using t
 
 The connector uses two connections:
 
-- **HTTP Connection** — Primary REST API connection to the MEG management interface.
-- **HTTP Connection - Prometheus** — Secondary connection to the Prometheus metrics scrape endpoint for real-time performance data.
+- **HTTP Connection**: Primary REST API connection to the MEG management interface.
+- **HTTP Connection - Prometheus**: Secondary connection to the Prometheus metrics scrape endpoint for real-time performance data.
 
-Both connection addresses, ports, and credentials are configured at element creation time in DataMiner.
+The addresses, ports, and credentials for both connections must be configured when the element is created in DataMiner.
