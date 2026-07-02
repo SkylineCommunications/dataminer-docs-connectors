@@ -8,21 +8,18 @@ The **Telenet CPE Manager** is part of the EPM (CPE) solution, and works togethe
 
 ## About
 
-This connector can be used in two different roles: a **frontend** role and a **backend** role. When creating an element using this connector, the role of the element must be defined.
-
-In a typical EPM solution, there will be one frontend element and multiple backend elements deployed across the DMS:
+This connector supports two different roles: **frontend** role and a **backend** role. When creating an element using this connector, the role of the element must be defined.
+In a typical EPM solution, one frontend element and multiple backend elements are deployed across the DMS.
 
 ### Backend
 
-- A backend element is responsible for one specific headend (city).
-- The backend element aggregates data coming from the collector elements and distributes the online/offline traps from the CMTS. The backend elements are deployed per headend.
-nd they are deployed per DMA.
+- Each backend element is responsible for one specific headend (city).
+- The backend element aggregates data from the collector elements and distributes online/offline traps from the CMTS. Backend elements are deployed per headend.
 
 ### Frontend
 
-- The frontend role is responsible for provisioning and distribution of the syslog messages, while the backend role is responsible for one headend and performs the aggregation of the data coming from the collector elements and the distribution of the online/offline traps from the CMTS.
-
-- There is only one frontend element deployed across the DMS, which is responsible for retrieving information from all the backend elements and providing a complete overview of the topology.
+- The frontend element is responsible for provisioning and distribution of syslog messages.
+- There is only one frontend element deployed across the DMS. It retrieves information from all backend elements and provides a complete overview of the topology.
 
 ### Version Info
 
@@ -43,26 +40,22 @@ nd they are deployed per DMA.
 
 | Range | Device Firmware Version |
 |--|--|
-| x.x.x.x | This connector listens to incoming syslog messages. These do not have a firmware version. The incoming traps are from the generic MIB and also do not rely on a firmware version. |
+| x.x.x.x | This connector listens to incoming syslog messages. These dont' have a firmware version. The incoming traps are from the generic MIB and also do not rely on a firmware version. |
 
 ## Installation and configuration
 
 ### Creation
 
-#### Serial connection
+#### Serial Connection
 
 This connector uses a serial connection to receive the SYSLOG messages, and requires the following input during element creation:
-
-**Serial Connection:**
 
 - **IP address/host**: The IP of the DMA where the SYSLOG messages are received.
 - **IP Port**: The port that the connector will be listening to, by default *514*.
 
-#### SNMP connection
+#### SNMP Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection to receive SNMP traps coming from the CMTSs, and requires the following input during element creation:
-
-**SNMP Connection:**
 
 - **IP address/host**: 127.0.0.1.
 
