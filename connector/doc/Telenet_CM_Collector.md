@@ -101,13 +101,14 @@ The **Classification** table contains the definitions of all the classes. You ca
 
 As described above, the CM Collector is not intended to be used separately. The resulting data should be consulted in the CPE Manager interface of the CPE Manager elements.
 
-## Generated CSV Files
+## Generated Offload Files
 
-- The CM Collector will generate tab-separated CSV files. For more information on the location of these files, refer to [Offload Parameters](#offload-parameters).
+- The CM Collector will generate offload files including information from the monitored cable modems and relevant information about the infrastructure that provides services to the cable modems. For more information on the location of these files, refer to [Offload Parameters](#offload-parameters).
 - There will be a CSV file generated per operator.
 
 ### Slow Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **HGW Data Offload Folder**
 - Offload file structure: `<DMAID>_<EID>_CMS.ClientStats.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -212,6 +213,7 @@ The Dynamic OIDs are a set of parameters that can be configured on the page **Dy
 
 ### Fast Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **Data Offload Folder**
 - Offload file structure: `<DMAID>_<EID>_CMS.fast.dataoffload.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -237,6 +239,7 @@ The Dynamic OIDs are a set of parameters that can be configured on the page **Dy
 
 ### Fast DS Tuner Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.DS.Tuner.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -284,6 +287,7 @@ $$
 
 ### Fast US Tuner Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.US.Tuner.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -341,6 +345,7 @@ $$
 
 ### IVR Offload Structure
 
+- Offload format: Binary format (DAT extension).
 - Offload folder: **RCCV Data Offload Folder**
 - Offload file structure: `ivr.cm.offload.<DMAID>_<EID>.<OPERATOR>.current.dat`
   - DMAID: DMA ID where the CM collector element is located.
@@ -357,6 +362,7 @@ $$
 
 ### Client Stats Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **HGW Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.CMS.ClientStats.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -430,6 +436,7 @@ $$
 
 ### Channel Loading Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **HGW Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.CMS.ChannelLoading.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -463,6 +470,7 @@ $$
 
 ### Connected Clients Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **HGW Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.CMS.ConnectedClients.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -520,6 +528,7 @@ $$
 
 ### Client Errors Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **RCCV Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.CMS.ClientErrors.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -563,6 +572,7 @@ $$
 
 ### LAN User Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **RCCV Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.CMS.LanUser.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
@@ -580,6 +590,7 @@ $$
 
 ### Powerline Network Offload Structure
 
+- Offload format: Tab-separated CSV file
 - Offload folder: **HGW Data Offload Folder**
 - Offload file structure: `<DMAID>.<EID>.CMS.PowerlineNetwork.<OPERATOR>.current.csv`
   - DMAID: DMA ID where the CM collector element is located.
