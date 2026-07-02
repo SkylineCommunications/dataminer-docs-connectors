@@ -102,7 +102,6 @@ Once the webhook web service is configured, the element is ready to receive and 
 
 Notifications are processed and displayed on the following pages:
 
-- **General**: Displays the last notification captured as a string (removed in 2.0.x).
 - **Alarms**: Saves and displays notifications in an alarm table.
 - **Alarm Settings**: Allows configuration of automatic clearing behavior and alarm lifetime.
 
