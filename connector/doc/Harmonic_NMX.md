@@ -14,7 +14,7 @@ The connector integrates with the NMX system to provide end-to-end visibility of
 
 - **Comprehensive alarm monitoring**: Collects alarms via SNMP polling, SNMP traps, and (from range 4.2.0.x onwards) real-time WebSocket notifications, providing immediate visibility into device health.
 
-- **Device Virtual Elements (DVEs)**: Automatically generates child elements per device and per switch, allowing operators to monitor individual hardware units in isolation with their own alarm and trending views.
+- **Dynamic Virtual Elements (DVEs)**: Automatically generates child elements per device and per switch, allowing operators to monitor individual hardware units in isolation with their own alarm and trending views.
 
 - **Input and output service management**: Displays and manages input sources, services, streams, and output transports with full port-level enable/disable control.
 
@@ -48,7 +48,7 @@ The connector integrates with the NMX system to provide end-to-end visibility of
 
 **Solution**: The Redundancy Overview page provides a tree control showing the active/standby status of every device in each redundancy group, updated automatically as switchovers occur.
 
-**Benefit**: Operators can quickly identify unexpected failovers, investigate root causes, and confirm that the system has returned to its primary configuration.
+**Benefit**: Operators can quickly identify unexpected failover switches, investigate root causes, and confirm that the system has returned to its primary configuration.
 
 ## Technical Reference
 

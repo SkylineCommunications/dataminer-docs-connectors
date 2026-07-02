@@ -9,12 +9,14 @@ uid: Connector_help_Harmonic_NMX_Technical
 Harmonic's NMX Digital Service Manager is a video network management solution, encompassing a set of tools to monitor and manage Harmonic compressed digital video and audio systems.
 
 The connector communicates with the NMX system using different protocols depending on the range:
+
 - Serial (XML SAPI) for older ranges 1.0.0.x - 4.0.0.x
 - HTTP REST API with WebSocket notifications for newer ranges 4.1.0.x and later
 
 ## Exported Dynamic Virtual Elements
 
 The connector supports the following types:
+
 - [Harmonic NMX - Device](xref:Connector_help_Harmonic_NMX_-_Device)
 - [Harmonic NMX - Switch](xref:Connector_help_Harmonic_NMX_-_Switch)
 
@@ -167,7 +169,9 @@ WEBSOCKET CONNECTION:
 
 ### Initialization - Range 4.1.0.x - 4.1.1.x and 4.2.0.x - 4.3.0.x
 
-In order to start polling data from the device, go to the **General** page of the element and fill in the **Username** and **Password** (and optionally the **Domain**). If you have filled in the correct credentials, the **Login Status** will be set to *OK*, and the data in the element will be filled in. We advise the use of a dedicated API user to manage this connection.
+In order to start polling data from the device, go to the **General** page of the element and fill in the **Username** and **Password** (and optionally the **Domain**). If you have filled in the correct credentials, the **Login Status** will be set to *OK*, and the data in the element will be filled in.
+
+We advise the use of a dedicated API user to manage this connection.
 
 ## How to Use
 
@@ -194,7 +198,7 @@ From version 4.1.1.7 onwards, you can change the Alarm table display key by sele
 
 ### Ports Table
 
-The **Ports** table allows users to enable or disable individual input and output ports within the Harmonic NMX element.
+The **Ports** table allows you to enable or disable individual input and output ports within the Harmonic NMX element.
 
 Each port entry in the table includes an **Enable/Disable** setting:
 
