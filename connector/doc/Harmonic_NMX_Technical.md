@@ -142,7 +142,7 @@ WEBSOCKET CONNECTION:
 > [!NOTE]
 > In the **IP address/host** field, you must specify the **prefix *ws://* or *wss://***, depending on whether an HTTP or HTTPS connection is used.
 
-### Initialization - Range 4.1.0.x - 4.1.1.x and 4.2.0.x - 4.3.0.x
+### Initialization - Range 4.1.0.x - 4.1.1.x - 4.2.0.x - 4.3.0.x
 
 In order to start polling data from the device, go to the **General** page of the element and fill in the **Username** and **Password** (and optionally the **Domain**). If you have filled in the correct credentials, the **Login Status** will be set to *OK*, and the data in the element will be filled in.
 
@@ -150,15 +150,11 @@ We advise the use of a dedicated API user to manage this connection.
 
 ## How to Use
 
-Depending on the connector range, the element created with this connector can have the data pages detailed below.
-
 ### General Page
 
-The General page displays an overview of all general parameters.
+The General page displays an overview of the credential parameters, **Login Status** and **Websocket status**.
 
-On the left-hand side, you can find the **Alarm Server Version**, the **ID of the last alarm**, the maximal **number of alarm entries**, and a toggle button to change the **trap state of the AFA mode**.
-
-On the right-hand side, the primary and backup **IP addresses** and the **Redundancy Status** are displayed, as well as the **Poll SAPI Interface** parameter, which can be used to enable or disable the polling of serial commands. The latter is used for a redundancy feature in this connector that allows dynamic polling between primary and backup IP addresses to keep track of socket errors in SAPI registration processes in slow or fast serial connections.
+On the right-hand side, the primary and backup **IP addresses** and the **Redundancy Status** are displayed.
 
 ### Alarm Page
 
