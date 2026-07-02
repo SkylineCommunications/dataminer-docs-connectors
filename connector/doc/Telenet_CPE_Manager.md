@@ -247,6 +247,11 @@ The CPE Manager (backend role) generates offload files containing metrics that t
 
 These files are tab-separated CSV files. In a single file, the backend manager offloads different types of entries. Depending on the entry type, there is a different number of offloaded fields (tab-separated).
 
+File name struture: `<DMAID>.<EID>.nodeoffload_<COUNTER>.csv`
+- DMAID: DMA ID where the backend element is located.
+- EID: Element ID of the backend element.
+- COUNTER: Number of backup files that have been created. The counter is incremented every time a new offload file is created. After 96, the counter will be reset to 0.
+
 >[!NOTE]
 > Most of the aggregated information offloaded is related to node level.
 
