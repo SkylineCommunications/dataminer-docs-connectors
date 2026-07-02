@@ -4,7 +4,9 @@ uid: Connector_help_CISCO_Meraki_Web_API
 
 # CISCO Meraki Web API
 
-CISCO Meraki Web API enables monitoring of Cisco Meraki environments through the Meraki Dashboard API and webhook notifications.
+## About
+
+The CISCO Meraki Web API connector enables the monitoring of Cisco Meraki environments through the Meraki Dashboard API and webhook notifications.
 
 ## Key Features
 
@@ -13,8 +15,8 @@ CISCO Meraki Web API enables monitoring of Cisco Meraki environments through the
 - **Alarm lifecycle handling**: Store incoming alerts and optionally clear alarms automatically when they expire.
 - **Operational visibility**: Track network and device alerts from a central DataMiner element.
 
-> [!NOTE]
-> Detailed setup and behavior for each version range are available on the [Technical help page](xref:Connector_help_CISCO_Meraki_Web_API_Technical).
+> [!TIP]
+> For detailed setup and behavior information for each version range, refer to the [technical help page](xref:Connector_help_CISCO_Meraki_Web_API_Technical).
 
 ## Use Cases
 
@@ -44,4 +46,4 @@ CISCO Meraki Web API enables monitoring of Cisco Meraki environments through the
 - **Certificate configuration** is required when HTTPS is used for webhook reception.
 
 > [!NOTE]
-> For in-depth information on configuring and using the DataMiner connector, refer to the [Technical help page](xref:Connector_help_CISCO_Meraki_Web_API_Technical).
+> For in-depth information on configuring and using the DataMiner connector, refer to the [technical help page](xref:Connector_help_CISCO_Meraki_Web_API_Technical).

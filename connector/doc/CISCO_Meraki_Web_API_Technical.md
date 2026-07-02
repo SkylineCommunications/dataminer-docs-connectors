@@ -46,7 +46,7 @@ The connector in the 2.0.x range captures alarms through webhook notifications.
 
 Configure the **Configuration** page to define where the connector listens for webhook notifications.
 
-The user is required to set the following parameters:
+The following parameters must be set:
 
 - **Webhooks Status**: Toggle to determine whether the connector is receptive to webhook notifications.
 - **Webhooks URI**: URI where webhook notifications are caught.
@@ -54,7 +54,7 @@ The user is required to set the following parameters:
 - **Webhooks Protocol**: Select HTTP or HTTPS.
 - **Webhooks Certificate**: Certificate used by the connector (HTTPS only).
 
-The status of the webhook service is shown in **Webhooks Web Service Status**. If configured correctly, it should display **Opened**.
+The status of the webhook service is shown by the parameter **Webhooks Web Service Status**. If everything has been configured correctly, it should display *Opened*.
 
 > [!IMPORTANT]
 > Notifications sent by Meraki include a **sharedSecret** property. Add the expected value to the **Shared Secrets Table** to accept only authorized webhook payloads.
