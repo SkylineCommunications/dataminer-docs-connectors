@@ -26,7 +26,7 @@ HP Synergy is a composable infrastructure platform that enables IT teams to prov
 
 ### Centralized Composable Infrastructure Management
 
-**Challenge**: Large data centers running HP Synergy need a single pane of glass to track the health and configuration of hundreds of compute, network, and storage resources spread across multiple enclosures and frames.
+**Challenge**: Large data centers running HP Synergy need to be able to track the health and configuration of hundreds of compute, network, and storage resources, spread across multiple enclosures and frames, from a single pane of glass.
 
 **Solution**: The HP Synergy connector pulls all resource data from the HP OneView API into DataMiner, making enclosures, servers, networks, storage, and facilities available in one consolidated view with trending and alarm monitoring.
 
@@ -36,7 +36,7 @@ HP Synergy is a composable infrastructure platform that enables IT teams to prov
 
 **Challenge**: Hardware faults in blade servers, drive enclosures, or power supplies can go unnoticed until they cause service-impacting outages.
 
-**Solution**: The connector continuously polls the HP OneView API for device bay status, drive enclosure health, power supply bay information, and appliance health data. DataMiner alarm thresholds and trending surface degradation trends before they escalate.
+**Solution**: The connector continuously polls the HP OneView API for device bay status, drive enclosure health, power supply bay information, and appliance health data. DataMiner alarm thresholds and trending ensure degradation trends are detected before they escalate.
 
 **Benefit**: Earlier detection of hardware issues, faster response times, and reduced risk of unplanned downtime caused by undetected component failures.
 
