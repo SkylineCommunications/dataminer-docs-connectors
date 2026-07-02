@@ -41,7 +41,7 @@ This connector uses a virtual connection and does not require any input during e
       - **Interval mode**: Configure the **Offload Interval** (range: 1 min–60 min, default: 60 min).
       - **Recurrence mode**: Use the **Edit** button to configure the **Recurrence Details**, **Recurrence Time of the Day**, and **Next Execution Time**.
 
-   - **Offload Enabled**: Enable or disable the offload operation.
+   - **Offload Enabled**: Enable the offload operation. You can disable this again at any time to stop the offload, for example in case you want to change the credentials or the interval, or if you just want to see the current data without processing more files.
 
 1. Open the **S3 Configuration** subpage and configure the following parameters:
 
