@@ -16,8 +16,8 @@ CloudWatch provides you with data and actionable insights to monitor your applic
 
 - **Unified operational view**: Provides a single dashboard for both AWS and on-premises infrastructure.
 
-- **Customizable polling**: Configure polling intervals and select specific AWS services and metrics to monitor.
-  
+- **Customizable polling**: Allows you to customize polling intervals and select specific AWS services and metrics to monitor.
+
 - **Central Monitoring Account (cross-account observability)**: Supports AWS's Central Monitoring Account feature, enabling cross-account observability. This allows you to monitor and aggregate metrics and logs from multiple AWS accounts into a single, unified view for streamlined operations and enhanced visibility.
 
 ## Use Cases

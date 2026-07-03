@@ -60,9 +60,10 @@ HTTP POST messages are used to communicate with the Amazon AWS CloudWatch. This 
 This page contains **Login** options, as well as information on which services should be polled with this element. To make sure that the connector can work properly, you **must first provide login information** (see [Initialization](#initialization) section above).
 
 Three subpages are available to configure the connector:
-- SNS Debug: This page contains **Account** information. If a received message does not match the account, it will not be processed. The page also contains information about the currently subscribed topic and the SNS service that is sending the notifications. It also displays information on the last received notification.
-- Configuration: This page contains configurations to include the Instance Name Suffix (which, if enabled, appends the instance name as a suffix to the service entry name). The Force No Data option sets the value of the metric to "No Data" when the response of a "get metrics" call is a missing entry. Finally, the "Get Service Entries" option forces an update/repoll of the data.
-- Monitoring Account: This page allows you to indicate whether the configured account is a monitoring account. If it is, the connector will use the monitoring account to retrieve data from other accounts. In addition, it also allows you to define the ID of the source account for which metrics/data needs to be polled. If disabled, data for all accounts will be polled.
+
+- **SNS Debug**: This page contains **Account** information. If a received message does not match the account, it will not be processed. The page also contains information about the currently subscribed topic and the SNS service that is sending the notifications. It also displays information on the last received notification.
+- **Configuration**: This page contains configurations to include the **Instance Name Suffix** (which, if enabled, appends the instance name as a suffix to the service entry name). The **Force No Data** option sets the value of the metric to "No Data" when the response of a "get metrics" call is a missing entry. Finally, the **Get Service Entries** option forces an update/repoll of the data.
+- **Monitoring Account**: This page allows you to indicate whether the configured account is a monitoring account. If it is, the connector will use the monitoring account to retrieve data from other accounts. In addition, it allows you to define the ID of the source account for which metrics/data needs to be polled. If disabled, data for all accounts will be polled.
 
 > [!NOTE]
 > By default, the connector retrieves the data from the latest 15 minutes. If there is no update in AWS, the API will not report any value.
@@ -83,7 +84,7 @@ Specify which services should be polled with the **Poll** column of the **Amazon
 > Setting a service row to *Disabled* will remove existing DVE elements of this service.
 
 > [!NOTE]
-> If the default polling is set to *Disabled* in the *Amazon Services* table, no DVEs will be created, which means no metrics can be enabled. To enable metrics, go to the *Service Entries* table and enable the desired entries. These will then be reflected on the page of the enabled service.
+> If the default polling is set to *Disabled* in the **Amazon Services** table, no DVEs will be created, which means no metrics can be enabled. To enable metrics, go to the **Service Entries** table and enable the desired entries. These will then be reflected on the page of the enabled service.
 
 ### Service Entries
 
