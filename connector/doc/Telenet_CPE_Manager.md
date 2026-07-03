@@ -303,27 +303,31 @@ Below is a description of the different entry types and their data structure.
 
 ### Node CM DS Frequency Data Structure
 
+Possible values avaiable for this entry type are: 5, 6, 11, or 12. The data structure is as follows:
+
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
-- Offload Type: Possible values: 5, 6, 11, or 12
+- Offload Type
 - Frequency: Value in KHz
-- Value: One of `Avg Level`, `Avg SNR`, `%CM With DS CR > T`, or `%CM With DS UR > T`
+- Value: See [Offload Type](#offload-type).
 
 ### Node CM US Frequency Data Structure
 
+Possible values avaiable for this entry type are: 9, 10, 13, or 14. The data structure is as follows:
+
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
-- Offload Type: Possible values: 9, 10, 13, or 14
+- Offload Type
 - Frequency: Value in KHz
-- Value: One of `Avg Level`, `Avg SNR`, `%CM With US CR > T`, or `%CM With US UR > T`
+- Value: See [Offload Type](#offload-type).
 
 ### Node STB Frequency Data Structure
 
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
-- Offload Type: Possible values: 1, 2, 3, or 7
+- Offload Type
 - Frequency: Value in KHz
-- Value: One of `Avg Level`, `Avg SNR`, `Avg BER`, or `%STB With Errors`
+- Value: See [Offload Type](#offload-type).
 
 ## Generated View Ratings Offload CSV Files
 
