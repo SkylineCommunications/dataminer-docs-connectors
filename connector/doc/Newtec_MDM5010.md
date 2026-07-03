@@ -6,15 +6,6 @@ uid: Connector_help_Newtec_MDM5010
 
 This connector allows you to monitor and manage the Newtec MDM5010 equipment.
 
-## About
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
