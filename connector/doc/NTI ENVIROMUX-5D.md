@@ -41,7 +41,7 @@ This connector uses SNMPv2 communication to monitor the NTI ENVIROMUX-5D Enterpr
 
 **Challenge**: Data centers must maintain temperature and humidity within strict operating ranges to protect equipment and meet compliance requirements.
 
-**Solution**: The connector continuously polls internal and external sensors, comparing readings against configurable min/max and warning thresholds.
+**Solution**: The connector continuously polls internal and external sensors, comparing readings against configurable minimum, maximum, and warning thresholds.
 
 **Benefit**: Enables proactive alerting before environmental conditions reach critical levels, supporting SLA compliance and reducing the risk of heat-related equipment failures.
 
@@ -57,7 +57,7 @@ This connector uses SNMPv2 communication to monitor the NTI ENVIROMUX-5D Enterpr
 
 **Challenge**: Organizations managing multiple sites need centralized visibility into distributed environmental monitoring units without on-site presence.
 
-**Solution**: The connector exposes IP device reachability, remote input/relay state, and all sensor data via SNMP polling into DataMiner, enabling centralized dashboards and alarm workflows.
+**Solution**: The connector exposes IP device reachability, remote input/relay state, and all sensor data into DataMiner via SNMP polling, enabling centralized dashboards and alarm workflows.
 
 **Benefit**: Reduces the need for on-site visits and enables faster response to environmental incidents across distributed infrastructure.
 

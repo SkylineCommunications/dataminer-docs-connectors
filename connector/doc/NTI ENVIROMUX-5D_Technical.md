@@ -34,9 +34,10 @@ This page displays general system and device information, including:
 - **System Enterprise Name**, **Location**, **Branch**, **Rack**, **Contact**, and **Phone**
 - **System Firmware Version**
 - **Device Model**, **Serial Number**, **Hardware Revision**, and **Manufacturer**
-- **System Reset**: Allows initiating a device reboot.
 
-This page also provides access to the following sub-pages via page buttons:
+With the **System Reset** option, you can initiate a device reboot.
+
+In addition, several subpages are available via page buttons:
 
 - **Message Registers**: Displays the **Message Registers Table** with the description and status of each configured message register.
 - **Siren Beacons**: Displays the **Siren Beacons Table** with the current status of each siren beacon output.
@@ -51,7 +52,7 @@ This page displays sensor data across three tables:
 - **Auxiliary Sensors Table**: Lists auxiliary port sensors with columns for **Type**, **Description**, **Connector**, **Group**, **Value**, **Unit**, **Status**, and configurable **Min/Max** and **Warning Thresholds**.
 - **External Sensors Table**: Lists the external configurable sensors with columns for **Type**, **Description**, **Connector**, **Group**, **Value**, **Unit**, **Status**, **Min/Max Thresholds**, **Warning Thresholds**, and **Offset**.
 
-This page also provides access to the following sub-pages via page buttons:
+This page also provides access to the following subpages via page buttons:
 
 - **Auxiliary 2 Sensors**: Displays additional auxiliary sensor data including **Type**, **Description**, **Value**, **Unit**, **Status**, and threshold settings.
 - **TAC Sensors**: Displays TAC sensor readings including **Type**, **Description**, **Value**, **Unit**, **Status**, and threshold settings.
@@ -60,21 +61,15 @@ This page also provides access to the following sub-pages via page buttons:
 
 ### Digital Inputs Page
 
-This page displays the **Digital Inputs Table**, which contains the following columns:
-
-- **Index**, **Type**, **Description**, **Connector**, **Group Number**, **Group**, **Value**, **Status**, **Normal Value**
+This page displays the **Digital Inputs Table**, which contains the following columns: **Index**, **Type**, **Description**, **Connector**, **Group Number**, **Group**, **Value**, **Status**, and **Normal Value**.
 
 ### IP Devices Page
 
-This page displays the **IP Devices Table**, which allows monitoring of network-reachable devices. Columns include:
-
-- **Index**, **Address**, **Description**, **Group Number**, **Group**, **Timeout**, **Retries**, **Value**, **Status**
+This page displays the **IP Devices Table**, which allows monitoring of network-reachable devices. Columns include **Index**, **Address**, **Description**, **Group Number**, **Group**, **Timeout**, **Retries**, **Value**, and **Status**.
 
 ### IP Sensors Page
 
-This page displays the **IP Sensors Table** for sensors accessed over the network. Columns include:
-
-- **Micro Unit**, **Type**, **Description**, **Connector**, **Group Number**, **Group**, **Value**, **Unit**, **Unit Name**, **Status**, **Min Threshold**, **Max Threshold**, **Offset**
+This page displays the **IP Sensors Table** for sensors accessed over the network. Columns include **Micro Unit**, **Type**, **Description**, **Connector**, **Group Number**, **Group**, **Value**, **Unit**, **Unit Name**, **Status**, **Min Threshold**, **Max Threshold**, and **Offset**.
 
 ### Output Relays Page
 
@@ -95,9 +90,9 @@ This page displays two tables:
 
 This page provides read and write access to the device's network settings, organized in three sections:
 
-- **IPv4 Settings**: **IPv4 Mode** (DHCP or Static), **IPv4 Address**, **Mask**, **Gateway**, **Preferred DNS**, **Alternate DNS**, **DNS Timeout**
-- **IPv6 Settings**: **IPv6 Mode**, **IPv6 Address**, **Gateway**, **IPv6 to IPv4 Tunnel**, **Local IP Address**, **Remote IPv4 Address**
-- **VLAN Settings**: **Enable 802.1Q VLAN**, **VLAN ID**
+- **IPv4 Settings**: **IPv4 Mode** (DHCP or Static), **IPv4 Address**, **Mask**, **Gateway**, **Preferred DNS**, **Alternate DNS**, and **DNS Timeout**.
+- **IPv6 Settings**: **IPv6 Mode**, **IPv6 Address**, **Gateway**, **IPv6 to IPv4 Tunnel**, **Local IP Address**, and **Remote IPv4 Address**.
+- **VLAN Settings**: **Enable 802.1Q VLAN** and **VLAN ID**.
 
 Additional controls include **Save Network Configuration** and **Enable Network Security**.
 
