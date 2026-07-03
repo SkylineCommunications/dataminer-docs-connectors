@@ -4,10 +4,11 @@ uid: Connector_help_NPC_System_ACU550
 
 # NPC System ACU550
 
-The NEYRPIC® ACU550 is a microprocessor-based Antenna Control Unit (ACU) for the tracking of geostationary and low-orbit satellites. 
-This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna position and status in real time, drive the antenna through its operating and tracking modes, and surface ACU, motor, and per-axis alarms directly in DataMiner.
-
 ## About
+
+The NEYRPIC® ACU550 is a microprocessor-based Antenna Control Unit (ACU) for the tracking of geostationary and low-orbit satellites.
+
+This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna position and status in real time, drive the antenna through its operating and tracking modes, and surface ACU, motor, and per-axis alarms directly in DataMiner.
 
 ### Version Info
 
@@ -30,7 +31,7 @@ This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna
 
 ## Use Cases
 
-### Keeping geostationary antennas locked on target
+### Keeping Geostationary Antennas Locked on Target
 
 **Challenge**: Pointing drift and signal degradation on a geostationary link can go unnoticed until the service is impacted.
 
@@ -38,7 +39,7 @@ This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna
 
 **Benefit**: Faster detection and correction of pointing errors, resulting in more stable links and reduced signal loss.
 
-### Automating low-orbit satellite tracking
+### Automating Low-Orbit Satellite Tracking
 
 **Challenge**: Low-orbit satellites move quickly and require frequent mode changes and preset loading that are error-prone when handled manually per antenna.
 
@@ -46,7 +47,7 @@ This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna
 
 **Benefit**: Reliable, repeatable acquisition and tracking with less manual intervention.
 
-### Centralized fault management across an antenna fleet
+### Centralized Fault Management Across an Antenna Fleet
 
 **Challenge**: Monitoring ACU, motor, and per-axis faults on multiple antennas from separate local interfaces slows down response times.
 
@@ -60,29 +61,16 @@ This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna
 
 - **Network connectivity** to the ACU is required so DataMiner can open the TCP/ONC-RPC session used to poll status and send commands.
 
-- **DataMiner 10.4.0.0 (build 14003) or higher** is required, as declared in the connector compliancies.
+- **DataMiner 10.4.0.0 (build 14003) or higher** is required.
 
-- **The polling IP and IP port of the ACU** are required during element creation (see Connections).
-
-## Configuration
-
-### Connections
-
-#### Serial Connection
-
-This connector uses a TCP/IP connection and requires the following input during element creation:
-
-SERIAL CONNECTION:
-
-- **IP address/host**: The polling IP of the device.
-- **IP port**: The IP port of the device (by default 645).
+- **The polling IP and IP port of the ACU** are required during element creation.
 
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## Notes on Usage
 
-This connector will allow monitoring and control of the ACU. No special actions are required to use it.
+Create a DataMiner element using this connector to monitor and control the ACU. No special actions are required to use the element.
 
 The connector creates a TCP client to retrieve all data from the ACU, so no data will be available in Stream Viewer.
