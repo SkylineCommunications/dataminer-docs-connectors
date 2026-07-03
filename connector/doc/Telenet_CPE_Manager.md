@@ -323,6 +323,8 @@ Possible values avaiable for this entry type are: 9, 10, 13, or 14. The data str
 
 ### Node STB Frequency Data Structure
 
+Possible values avaiable for this entry type are: 1, 2, 3, or 7. The data structure is as follows:
+
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
 - Offload Type
