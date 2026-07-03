@@ -321,6 +321,62 @@ Possible values avaiable for this entry type are: 9, 10, 13, or 14. The data str
 - Frequency: Value in KHz
 - Value: See [Offload Type](#offload-type).
 
+### Node CM OFDMA Profile Stats Data Structure
+
+Possible values avaiable for this entry type are: 15, or 18. The data structure is as follows: 
+
+- `{REF_ID++}` *(fixed string)*
+- Offload Type
+- Profile ID: The profile ID of the OFDMA profile on which the profile is located.
+- Value: See [Offload Type](#offload-type).
+- OFDMA Channel ID: The channel ID of the OFDMA channel.
+
+### Node CM OFDM Profile Stats Data Structure
+
+Possible values avaiable for this entry type are: 16, or 17. The data structure is as follows: 
+
+- `{REF_ID++}` *(fixed string)*
+- Offload Type
+- Profile ID: The profile ID of the OFDMA profile on which the profile is located.
+- Value: See [Offload Type](#offload-type).
+- OFDMA Channel ID: The channel ID of the OFDMA channel.
+
+### Node DS OFDM Frequency Stats Data Structure
+
+Primarily used for offload type 19. The data structure is as follows:
+
+- `{REF_ID++}` *(fixed string)*
+- Offload Type
+- Frequency: Value in KHz
+- Value: See [Offload Type](#offload-type).
+
+### Node US OFDMA Channel Stats Data Structure
+
+Primarily used for offload type 20. The data structure is as follows:
+
+- `{REF_ID++}` *(fixed string)*
+- Offload Type
+- OFDMA Channel ID: The channel ID of the OFDMA channel.
+- Value: See [Offload Type](#offload-type).
+
+### Node DS OFDM Channel Amplifier Stats Data Structure
+
+Primarily used for offload type 21. The data structure is as follows:
+
+- `{REF_ID++}` *(fixed string)*
+- Offload Type
+- Channel ID: The channel ID of the OFDM channel.
+- Value: See [Offload Type](#offload-type).
+
+### Node US OFDMA Channel Amplifier Stats Data Structure
+
+Primarily used for offload type 22. The data structure is as follows:
+
+- `{REF_ID++}` *(fixed string)*
+- Offload Type
+- Channel ID: The channel ID of the OFDMA channel.
+- Value: See [Offload Type](#offload-type).
+
 ### Node STB Frequency Data Structure
 
 Possible values avaiable for this entry type are: 1, 2, 3, or 7. The data structure is as follows:
