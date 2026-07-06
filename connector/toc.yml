@@ -11425,6 +11425,8 @@
   items:
   - name: Xiplink XA30K
     topicUid: Connector_help_Xiplink_XA30K
+  - name: Xiplink XA100K
+    topicUid: Connector_help_Xiplink_XA100K
 - name: Yaesu
   items:
   - name: Yaesu G-800DXA
