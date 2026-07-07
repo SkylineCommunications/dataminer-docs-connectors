@@ -39,7 +39,7 @@ Through SNMP polling and SNMP trap handling, this connector surfaces the full op
 
 **Solution**: DataMiner aggregates alarm status for each device (IP input, synchronization, control process, and system) and enriches it with notifications sent through SNMP traps.
 
-**Benefit**: You get a single pane of glass for the entire network and can detect and localize faults at unmanned sites faster.
+**Benefit**: You can view the entire network from a single pane of glass and detect and localize faults at unmanned sites faster.
 
 ### Verifying and Adjusting Audio Distribution Configuration
 

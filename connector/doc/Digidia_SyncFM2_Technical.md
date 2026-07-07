@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Digidia_SyncFM2_Technical
-description: Technical reference for configuring and operating the Digidia SyncFM2 connector over SNMP, including polling, traps, pages, and writable settings.
+description: Learn how to configure and operate the Digidia SyncFM2 SNMP connector, including polling, traps, pages, and writable settings.
 ---
 
 # Digidia SyncFM2
@@ -30,7 +30,7 @@ SNMP Settings:
 - **Get community string**: Community string used when reading values from the device (default: public).
 - **Set community string**: Community string used when setting values on the device (default: private).
 
-The device also sends SNMP traps that this connector processes for alarm notifications. To receive them, the device must be configured to send traps to the DataMiner Agent (see the Trap page and the Initialization section below).
+The device also sends SNMP traps that this connector processes for alarm notifications. To receive them, the device must be configured to send traps to the DataMiner Agent (see [Initialization](#initialization) below).
 
 ### Initialization
 
@@ -48,7 +48,7 @@ The web interface is only accessible when your client machine has network access
 
 ## How to Use
 
-Once the element is created and polling is active, the connector organizes device information across these pages:
+Once the element is created and polling is active, the connector organizes device information across the following pages:
 
 - **General** / **Version** / **System**: General system information (system description, object ID, uptime, contact, name, location), MIB and firmware version details, and system data such as equipment name, type, serial number, real-time clock (RTC), last error, and equipment state. The **System** page also provides the **Reset Equipment** command.
 
@@ -73,8 +73,6 @@ Once the element is created and polling is active, the connector organizes devic
 - **Polling Settings**: Polling Manager, where polling of each parameter group can be enabled, disabled, and scheduled.
 
 Writable parameters (for example, synchronization mode, IP input settings, output auxiliary clock frequency, and external relay command) can be set directly from the corresponding pages when the device permits it.
-
-For more information on connector documentation, see <https://aka.dataminer.services/writing-connector-documentation>.
 
 ## Notes
 
