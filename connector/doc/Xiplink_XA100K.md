@@ -12,17 +12,17 @@ The connector consolidates operational and protocol-level performance metrics in
 
 ## Key Features
 
-- **System Health Monitoring**: Track system description, uptime, OS version, and device identity information.
+- **System health monitoring**: Track system description, uptime, OS version, and device identity information.
 
-- **Connection Performance Monitoring**: Monitor SCPS and non-SCPS connection behavior, retransmission metrics, and congestion control statistics.
+- **Connection performance monitoring**: Monitor SCPS and non-SCPS connection behavior, retransmission metrics, and congestion control statistics.
 
-- **CPU Performance Tracking**: Observe CPU usage trends over 1, 5, and 15-minute intervals.
+- **CPU performance tracking**: Observe CPU usage trends over 1, 5, and 15-minute intervals.
 
-- **Service Monitoring**: Track service health, service count, and quality of service metrics.
+- **Service monitoring**: Track service health, service count, and quality of service metrics.
 
-- **Tunnel Visibility**: Monitor tunnel status, peer state, and uptime information.
+- **Tunnel visibility**: Monitor tunnel status, peer state, and uptime information.
 
-- **Redundancy Awareness**: View redundancy and failover-related operational parameters.
+- **Redundancy awareness**: View redundancy and failover-related operational parameters.
 
 ## Use Cases
 
