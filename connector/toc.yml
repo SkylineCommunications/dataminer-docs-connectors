@@ -11430,6 +11430,11 @@
   items:
   - name: Xiplink XA30K
     topicUid: Connector_help_Xiplink_XA30K
+  - name: Xiplink XA100K
+    topicUid: Connector_help_Xiplink_XA100K
+    items:
+    - name: Xiplink XA100K Technical
+      topicUid: Connector_help_Xiplink_XA100K_Technical
 - name: Yaesu
   items:
   - name: Yaesu G-800DXA
