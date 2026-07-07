@@ -4,11 +4,12 @@ uid: Connector_help_Telenet_CPE_Manager
 
 # Telenet CPE Manager
 
-The **Telenet CPE Manager** is part of the EPM (CPE) solution, and works together with the **Telenet CM Collector**, **Telenet STB Collector** and **Telenet eMTA Collector** connectors. This connector is responsible for aggregating the data and exposing the topology overview in Cube to end users.
-
 ## About
 
-This connector supports two different roles: **frontend** role and a **backend** role. When creating an element using this connector, the role of the element must be defined.
+The **Telenet CPE Manager** is part of the EPM (CPE) solution, and works together with the **Telenet CM Collector**, **Telenet STB Collector** and **Telenet eMTA Collector** connectors. This connector is responsible for aggregating the data and exposing the topology overview in Cube to end users.
+
+This connector supports two different roles: a **frontend** role and a **backend** role. When you create an element using this connector, you must define the role of the element.
+
 In a typical EPM solution, one frontend element and multiple backend elements are deployed across the DMS.
 
 ### Backend
@@ -40,9 +41,9 @@ In a typical EPM solution, one frontend element and multiple backend elements ar
 
 | Range | Device Firmware Version |
 |--|--|
-| x.x.x.x | This connector listens to incoming syslog messages. These dont' have a firmware version. The incoming traps are from the generic MIB and also do not rely on a firmware version. |
+| x.x.x.x | This connector listens to incoming syslog messages. These do not have a firmware version. The incoming traps are from the generic MIB and also do not rely on a firmware version. |
 
-## Installation and configuration
+## Installation and Configuration
 
 ### Creation
 
@@ -67,7 +68,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to re
 
 ### Frontend Configuration
 
-#### Frontend offload parameters
+#### Frontend Offload Parameters
 
 - The CPE Manager's data pages are not intended to be displayed in DataMiner Cube. Instead, any configuration should be performed either through [multiple set](https://aka.dataminer.services/multiple-set) or via a Visio file linked to the element.
 
@@ -75,7 +76,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to re
 
 - **Ratings Offload Folder** contains the location of the offload files with the view ratings. **PROV Source Folder** contains the location of the provisioning files.
 
-#### Frontend aggregation parameters
+#### Frontend Aggregation Parameters
 
 - **CPE Manager Chassis Aggregation**, **CPE Manager Street Aggregation** and **CPE Manager UAU Aggregation** should always be set to *Off* because the frontend does not contain data for these levels.
 
@@ -85,7 +86,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection to re
 
 - **Ratings Aggregation Timer State** can be set to *On* to enable the aggregation of the view ratings. The frontend manager will offload the view ratings every 15 minutes.
 
-### Frontend provisioning parameters
+### Frontend Provisioning Parameters
 
 When the provisioning files are processed, new data files will be available that the backend CPE manager elements can use to provision. These files will be retrieved through a shared folder. **Frontend Agent** contains the IP address, **Frontend Share Username**, **Frontend Share Password** and **Frontend Share Domain** contain the credentials of the shared folder.
 
@@ -95,7 +96,7 @@ PROV Result Table and PROV Logging are both tables that contain more info about 
 
 ### Backend Configuration
 
-#### Backend offload parameters
+#### Backend Offload Parameters
 
 - The **CPE Manager Type** should be set to *Back-end* for the backend elements.
 
@@ -103,9 +104,9 @@ PROV Result Table and PROV Logging are both tables that contain more info about 
 
 - To enable sending traps to `Adlex Nouveau` per chassis, set the parameter **Chassis AN Enabled** to *Enabled*.
 
-#### Backend aggregation parameters
+#### Backend Aggregation Parameters
 
-- **CPE Manager RegionAggregation** should always be set to *off* because the backend does not contain data for these levels.
+- **CPE Manager Region Aggregation** should always be set to *off* because the backend does not contain data for these levels.
 
 - To enable the aggregation that is executed every 5 minutes on different levels, set the parameters **CPE Manager UAU Aggregation**, **CPE Manager Chassis Aggregation** and **CPE Manager Street Aggregation** to *On*.
 
@@ -117,7 +118,7 @@ PROV Result Table and PROV Logging are both tables that contain more info about 
 
 - To enable the calculation of the OOS rate every 2 minutes, set the **Change Rate Timer State** to *On*. This calculation is done on the Street and Node level for the OOS of CM, eMTA and STB.
 
-#### Backend headend parameters
+#### Backend Headend Parameters
 
 Fill in the headend name that the backend manager will be responsible for in the parameter **Backend Responsible for Headend**.
 
@@ -129,17 +130,17 @@ When the collector elements are not located on the same DMA as the backend manag
 
 The **Frontend Agent ID** parameter needs to be filled in with the DMAID/EID of the frontend manager element, so that the backend manager knows to which frontend to send its configuration.
 
-#### Backend alarm parameters
+#### Backend Alarm Parameters
 
 You can configure certain settings to influence the alarms.
 
-With **Minimum \# CM Monitoring Threshold**, **Minimum \# MTA Monitoring Threshold**, **Minimum \# STB Monitoring Threshold** and **Minimum \# STB VoD Monitoring Threshold**, you can configure that there will only be an alarm if the parameter represents a minimum amount of CPEs.
+With **Minimum \# CM Monitoring Threshold**, **Minimum \# MTA Monitoring Threshold**, **Minimum \# STB Monitoring Threshold** and **Minimum \# STB VoD Monitoring Threshold**, you can configure that there will only be an alarm if the parameter represents a minimum number of CPEs.
 
 With the **Correction Factor** parameters, you can adjust the normalization value per type of CPE and per level. This way, the normalization value can be adjusted throughout the day, because the load in the morning can be different (generate no alarm with this value) from the load in the evening (generate an alarm with this value).
 
-#### Backend normalization parameters
+#### Backend Normalization Parameters
 
-The baseline values used for normalization are based on the trending values of the past days. The way the normalization is calculated is defined in the **Baseline Lookup Table**. You can fill in this table by setting the **Baseline** button either to the value *Import* to load the data from a CSV file, or to the value *Add* to manually add a row. This CSV file must have the name *BaselineInfo.csv* and must be stored in the folder *C:\Skyline DataMiner\Protocols\Telenet CPE Manager\Production*.
+The baseline values used for normalization are based on the trending values of the past days. The way the normalization is calculated is defined in the **Baseline Lookup Table**. You can fill in this table by setting the **Baseline** button either to the value *Import* to load the data from a CSV file, or to the value *Add* to manually add a row. This CSV file must have the name *BaselineInfo.csv* and must be stored in the folder `C:\Skyline DataMiner\Protocols\Telenet CPE Manager\Production`.
 
 For most of the calculations, the trending database is queried. Out of these values, the median value is taken as baseline value. The OOS type will take the data of yesterday, and the other types will take the data of the past week.
 
@@ -164,7 +165,7 @@ As described above, the data pages of the CPE Manager are not intended to be use
 
 If you open the card in Cube, the CPE interface will be displayed, with different chains/branches providing a different topology view.
 
-If you fill in one of the filters (on the left side), the topology diagram view is displayed. If you click a KPI item in this diagram view, a pop-up window with parameters opens. In most of the cases, you can also click next to the diagram tab and display all the CMs/STBs or eMTAs that are under this topology level.
+If you fill in one of the filters (on the left side), the topology diagram view is displayed. If you click a KPI item in this diagram view, a pop-up window with parameters opens. In most cases, you can also click next to the diagram tab and display all the CMs/STBs or eMTAs that are under this topology level.
 
 You can also right-click an alarm in Cube and select **Open** \>*CPE Manager element name*. This will open the CPE Manager with the filter already filled in at the right position, so the topology is immediately shown.
 
@@ -247,15 +248,16 @@ The CPE Manager (backend role) generates offload files containing metrics that t
 
 These files are tab-separated CSV files. In a single file, the backend manager offloads different types of entries. Depending on the entry type, there is a different number of offloaded fields (tab-separated).
 
-File name struture: `<DMAID>.<EID>.nodeoffload_<COUNTER>.csv`
+File name structure: `<DMAID>.<EID>.nodeoffload_<COUNTER>.csv`
+
 - DMAID: DMA ID where the backend element is located.
 - EID: Element ID of the backend element.
 - COUNTER: Number of backup files that have been created. The counter is incremented every time a new offload file is created. After 96, the counter will be reset to 0.
 
 >[!NOTE]
-> Most of the aggregated information offloaded is related to node level.
+> Most of the offloaded aggregated information is related to node level.
 
-Below is a description of the different entry types and their data structure.
+Below you can find detailed information about the different entry types and their data structure.
 
 ### Offload Type
 
@@ -284,7 +286,7 @@ Below is a description of the different entry types and their data structure.
 
 ### Node Data Structure
 
-- **Timestamp**: Timestamp when the entry was added to the offload file (format: YYYY-MM-DD HH:MM:SS)
+- **Timestamp**: Timestamp when the entry was added to the offload file (format: YYYY-MM-DD HH:MM:SS).
 - **Node Name**: Name of the node.
 - `#CM OOS`: Number of CMs that are out of service.
 - `#MTA OOS`: Number of MTAs that are out of service.
@@ -303,7 +305,9 @@ Below is a description of the different entry types and their data structure.
 
 ### Node CM DS Frequency Data Structure
 
-Possible values avaiable for this entry type are: 5, 6, 11, or 12. The data structure is as follows:
+The following values are possible for this entry type: 5, 6, 11, or 12.
+
+The data structure is as follows:
 
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
@@ -313,7 +317,9 @@ Possible values avaiable for this entry type are: 5, 6, 11, or 12. The data stru
 
 ### Node CM US Frequency Data Structure
 
-Possible values avaiable for this entry type are: 9, 10, 13, or 14. The data structure is as follows:
+The following values are possible for this entry type: 9, 10, 13, or 14.
+
+The data structure is as follows:
 
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
@@ -323,7 +329,9 @@ Possible values avaiable for this entry type are: 9, 10, 13, or 14. The data str
 
 ### Node CM OFDMA Profile Stats Data Structure
 
-Possible values avaiable for this entry type are: 15, or 18. The data structure is as follows: 
+The following values are possible for this entry type: 15 or 18.
+
+The data structure is as follows:
 
 - `{REF_ID++}` *(fixed string)*
 - Offload Type
@@ -333,7 +341,9 @@ Possible values avaiable for this entry type are: 15, or 18. The data structure 
 
 ### Node CM OFDM Profile Stats Data Structure
 
-Possible values avaiable for this entry type are: 16, or 17. The data structure is as follows: 
+The following values are possible for this entry type: 16 or 17.
+
+The data structure is as follows:
 
 - `{REF_ID++}` *(fixed string)*
 - Offload Type
@@ -379,7 +389,9 @@ Primarily used for offload type 22. The data structure is as follows:
 
 ### Node STB Frequency Data Structure
 
-Possible values avaiable for this entry type are: 1, 2, 3, or 7. The data structure is as follows:
+The following values are possible for this entry type: 1, 2, 3, or 7.
+
+The data structure is as follows:
 
 - `{REF_ID++}` *(fixed string)*
 - `{INFO_ID}` *(fixed string)*
@@ -391,8 +403,8 @@ Possible values avaiable for this entry type are: 1, 2, 3, or 7. The data struct
 
 The frontend manager offloads the view ratings in two semicolon-separated files:
 
-- State offload: Contains the number of STBs that are not watching a channel.
-- View offload: Contains the number of STBs that are watching a channel, as well as the exact channel and type.
+- **State offload**: Contains the number of STBs that are not watching a channel.
+- **View offload**: Contains the number of STBs that are watching a channel, as well as the exact channel and type.
 
 ### State Offload Structure
 

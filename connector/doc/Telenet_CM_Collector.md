@@ -104,7 +104,7 @@ As described above, the CM Collector is not intended to be used separately. The 
 ## Generated Offload Files
 
 - The CM Collector will generate offload files including information from the monitored cable modems and relevant information about the infrastructure that provides services to the cable modems. For more information on the location of these files, refer to [Offload Parameters](#offload-parameters).
-- There will be a CSV file generated per operator.
+- Per operator, a CSV file will be generated.
 
 ### Slow Offload Structure
 
@@ -345,7 +345,7 @@ $$
 
 ### IVR Offload Structure
 
-- Offload format: Binary format (DAT extension).
+- Offload format: Binary format (DAT extension)
 - Offload folder: **RCCV Data Offload Folder**
 - Offload file structure: `ivr.cm.offload.<DMAID>_<EID>.<OPERATOR>.current.dat`
   - DMAID: DMA ID where the CM collector element is located.
