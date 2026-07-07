@@ -4,6 +4,8 @@ uid: Connector_help_Newtec_MDM5010
 
 # Newtec MDM5010
 
+## About
+
 This connector allows you to monitor and manage the Newtec MDM5010 equipment.
 
 ## Configuration
