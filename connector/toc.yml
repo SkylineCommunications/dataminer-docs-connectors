@@ -452,44 +452,47 @@
     topicUid: Connector_help_Amazon_AWS_CloudFormation
   - name: Amazon AWS CloudWatch
     topicUid: Connector_help_Amazon_AWS_CloudWatch
-  - name: Amazon AWS CloudWatch - Amazon ECS
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Amazon_ECS
-  - name: Amazon AWS CloudWatch - API Gateway
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_API_Gateway
-  - name: Amazon AWS CloudWatch - Direct Connect
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Direct_Connect
-  - name: Amazon AWS CloudWatch - DynamoDB
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_DynamoDB
-  - name: Amazon AWS CloudWatch - EC2
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2
-  - name: Amazon AWS CloudWatch - EC2 Spot Fleet
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2_Spot_Fleet
-  - name: Amazon AWS CloudWatch - EFS
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EFS
-  - name: Amazon AWS CloudWatch - ElastiCache
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElastiCache
-  - name: Amazon AWS CloudWatch - ElasticSearch
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElasticSearch
-  - name: Amazon AWS CloudWatch - Elemental MediaTailor
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Elemental_MediaTailor
-  - name: Amazon AWS CloudWatch - Kinesis Data Streams
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Kinesis_Data_Streams
-  - name: Amazon AWS CloudWatch - Lambda
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Lambda
-  - name: Amazon AWS CloudWatch - MediaConvert
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaConvert
-  - name: Amazon AWS CloudWatch - MediaPackage
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaPackage
-  - name: Amazon AWS CloudWatch - RDS
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_RDS
-  - name: Amazon AWS CloudWatch - Redshift
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Redshift
-  - name: Amazon AWS CloudWatch - S3
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_S3
-  - name: Amazon AWS CloudWatch - Transfer Family
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transfer_Family
-  - name: Amazon AWS CloudWatch - Transit Gateway
-    topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transit_Gateway
+    items:
+    - name: Amazon AWS CloudWatch Technical
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_Technical
+    - name: Amazon AWS CloudWatch - Amazon ECS
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Amazon_ECS
+    - name: Amazon AWS CloudWatch - API Gateway
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_API_Gateway
+    - name: Amazon AWS CloudWatch - Direct Connect
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Direct_Connect
+    - name: Amazon AWS CloudWatch - DynamoDB
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_DynamoDB
+    - name: Amazon AWS CloudWatch - EC2
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2
+    - name: Amazon AWS CloudWatch - EC2 Spot Fleet
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EC2_Spot_Fleet
+    - name: Amazon AWS CloudWatch - EFS
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_EFS
+    - name: Amazon AWS CloudWatch - ElastiCache
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElastiCache
+    - name: Amazon AWS CloudWatch - ElasticSearch
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_ElasticSearch
+    - name: Amazon AWS CloudWatch - Elemental MediaTailor
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Elemental_MediaTailor
+    - name: Amazon AWS CloudWatch - Kinesis Data Streams
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Kinesis_Data_Streams
+    - name: Amazon AWS CloudWatch - Lambda
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Lambda
+    - name: Amazon AWS CloudWatch - MediaConvert
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaConvert
+    - name: Amazon AWS CloudWatch - MediaPackage
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_MediaPackage
+    - name: Amazon AWS CloudWatch - RDS
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_RDS
+    - name: Amazon AWS CloudWatch - Redshift
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Redshift
+    - name: Amazon AWS CloudWatch - S3
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_S3
+    - name: Amazon AWS CloudWatch - Transfer Family
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transfer_Family
+    - name: Amazon AWS CloudWatch - Transit Gateway
+      topicUid: Connector_help_Amazon_AWS_CloudWatch_-_Transit_Gateway
   - name: Amazon AWS EC2
     topicUid: Connector_help_Amazon_AWS_EC2
   - name: Amazon AWS Elemental MediaLive
@@ -2388,6 +2391,9 @@
     topicUid: Connector_help_Cisco_Meraki
   - name: CISCO Meraki Web API
     topicUid: Connector_help_CISCO_Meraki_Web_API
+    items:
+    - name: CISCO Meraki Web API Technical
+    topicUid: Connector_help_CISCO_Meraki_Web_API_Technical
   - name: Cisco Monitor+
     topicUid: Connector_help_Cisco_Monitor+
   - name: Cisco Netflow
@@ -2915,6 +2921,16 @@
     topicUid: Connector_help_Digidia_EasySplice
   - name: Digidia FlexiDAB
     topicUid: Connector_help_Digidia_FlexiDAB
+  - name: Digidia SpanFM2
+    topicUid: Connector_help_Digidia_SpanFM2
+    items:
+    - name: Digidia SpanFM2 Technical
+      topicUid: Connector_help_Digidia_SpanFM2_Technical
+  - name: Digidia SyncFM2
+    topicUid: Connector_help_Digidia_SyncFM2
+    items:
+    - name: Digidia SyncFM2 Technical
+      topicUid: Connector_help_Digidia_SyncFM2_Technical
   - name: Digidia Tunell
     topicUid: Connector_help_Digidia_Tunell
 - name: Digigram
@@ -2933,6 +2949,9 @@
   items:
   - name: Digital Alert Systems DASDEC-III
     topicUid: Connector_help_Digital_Alert_Systems_DASDEC-III
+    items:
+      - name: Digital Alert Systems DASDEC-III Technical
+        topicUid: Connector_help_Digital_Alert_Systems_DASDEC-III_Technical
 - name: Dimetis
   items:
   - name: Dimetis BOSS Stream Viewer
@@ -4018,6 +4037,9 @@
     topicUid: Connector_help_EVS_Neuron_NAP_-_COMPRESS
   - name: EVS Neuron NAP - CONVERT
     topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT
+    items:
+      - name: EVS Neuron NAP - CONVERT Technical
+        topicUid: Connector_help_EVS_Neuron_NAP_-_CONVERT_Technical
   - name: EVS Neuron NAP - PROTECT
     topicUid: Connector_help_EVS_Neuron_NAP_-_PROTECT
   - name: EVS XS
@@ -4888,10 +4910,13 @@
     topicUid: Connector_help_Harmonic_HOS7100
   - name: Harmonic NMX
     topicUid: Connector_help_Harmonic_NMX
-  - name: Harmonic NMX - Device
-    topicUid: Connector_help_Harmonic_NMX_-_Device
-  - name: Harmonic NMX - Switch
-    topicUid: Connector_help_Harmonic_NMX_-_Switch
+    items:
+    - name: Harmonic NMX Technical
+      topicUid: Connector_help_Harmonic_NMX_Technical
+    - name: Harmonic NMX - Device
+      topicUid: Connector_help_Harmonic_NMX_-_Device
+    - name: Harmonic NMX - Switch
+      topicUid: Connector_help_Harmonic_NMX_-_Switch
   - name: Harmonic NSG9000 40G
     topicUid: Connector_help_Harmonic_NSG9000_40G
     items:
@@ -5064,6 +5089,9 @@
     topicUid: Connector_help_HP_Storageworks_MSA
   - name: HP Synergy
     topicUid: Connector_help_HP_Synergy
+    items:
+    - name: HP Synergy Technical
+      topicUid: Connector_help_HP_Synergy_Technical
   - name: HP V1910
     topicUid: Connector_help_HP_V1910
   - name: HP Virtual Connect Flex-10
@@ -7428,6 +7456,11 @@
   items:
   - name: NTI ENVIROMUX MINI LXO
     topicUid: Connector_help_NTI_ENVIROMUX_MINI_LXO
+  - name: NTI ENVIROMUX-5D
+    topicUid: Connector_help_NTI_ENVIROMUX_5D
+    items:
+    - name: NTI ENVIROMUX-5D Technical
+      topicUid: Connector_help_NTI_ENVIROMUX_5D_Technical
 - name: NTP
   items:
   - name: NTP RCP
@@ -9049,6 +9082,11 @@
     topicUid: Connector_help_Skyline_Configuration_Manager_DMA
   - name: Skyline CRM Simulator
     topicUid: Connector_help_Skyline_CRM_Simulator
+  - name: Skyline Custom Offload
+    topicUid: Connector_help_Skyline_Custom_Offload
+    items:
+      - name: Skyline Custom Offload Technical
+        topicUid: Connector_help_Skyline_Custom_Offload_Technical
   - name: Skyline Data Aggregator Monitor
     topicUid: Connector_help_Skyline_Data_Aggregator_Monitor
   - name: Skyline DataMiner IT Tools
@@ -9176,6 +9214,11 @@
         topicUid: Connector_help_Skyline_Job_Manager_Technical
   - name: Skyline KPI and KQI Editor
     topicUid: Connector_help_Skyline_KPI_and_KQI_Editor
+  - name: Skyline Labs ACU
+    topicUid: Connector_help_Skyline_Labs_ACU
+    items:
+      - name: Skyline Labs ACU Technical
+        topicUid: Connector_help_Skyline_Labs_ACU_Technical
   - name: Skyline Lock Manager
     topicUid: Connector_help_Skyline_Lock_Manager
     items:
@@ -11392,6 +11435,11 @@
   items:
   - name: Xiplink XA30K
     topicUid: Connector_help_Xiplink_XA30K
+  - name: Xiplink XA100K
+    topicUid: Connector_help_Xiplink_XA100K
+    items:
+    - name: Xiplink XA100K Technical
+      topicUid: Connector_help_Xiplink_XA100K_Technical
 - name: Yaesu
   items:
   - name: Yaesu G-800DXA
