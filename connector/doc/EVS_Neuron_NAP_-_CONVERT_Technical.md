@@ -10,20 +10,6 @@ The EVS Neuron NAP - CONVERT connector enables monitoring and control of Neuron 
 
 This connector communicates with the device using the **REST API (v1.0.0)** over **HTTP**. Firmware version **6.x** is required.
 
-### Version Info
-
-| Range | Key Features | Based on | System Impact |
-|--|--|--|--|
-| 1.0.0.x | Initial version. Uses a smart-serial connection with support for unsolicited messages. | - | - |
-| 2.0.0.x [SLC Main] | Redesigned to use REST API over HTTP. No longer supports unsolicited messages. | - | - |
-
-### System Info
-
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | Yes | Yes | - | - |
-| 2.0.0.x | No | Yes | - | - |
-
 ## Configuration
 
 ### Connections
@@ -51,7 +37,7 @@ The **General** page provides essential device identity information, including t
 
 ### Polling Settings Page
 
-The **Polling Settings** page contains the **Polling Manager** table, which lists all configurable polling groups. For each group you can view and adjust the **polling interval**, **admin status**, and the **last poll result**. This page gives you full control over how frequently each data set is retrieved from the device.
+The **Polling Settings** page contains the **Polling Manager** table, which lists all configurable polling groups. For each group, you can view and adjust the **polling interval**, **admin status**, and the **last poll result**. This page gives you full control over how frequently each data set is retrieved from the device.
 
 ### Protocol Queue Page
 
