@@ -1,13 +1,13 @@
 ---
 uid: Connector_help_Digidia_SyncFM2_Technical
-description: Learn how to configure and operate the Digidia SyncFM2 SNMP connector, including polling, traps, pages, and writable settings.
+description: Learn how to configure and operate the Digidia SyncFM SNMP connector for SyncFM2 and SyncFM4, including polling and traps.
 ---
 
-# Digidia SyncFM2
+# Digidia SyncFM
 
 ## About
 
-The Digidia SyncFM2 connector monitors and controls the Digidia SyncFM2 audio processor over SNMP. The device provides GPS-locked synchronization for FM broadcast networks, distributing time-aligned audio and user-channel (RDS) data to transmitter sites so a Single Frequency Network (SFN) can operate without interference in overlap zones.
+The Digidia SyncFM connector monitors and controls Digidia SyncFM devices over SNMP, including SyncFM2 and SyncFM4 audio processors. These devices provide GPS-locked synchronization for FM broadcast networks, distributing time-aligned audio and user-channel (RDS) data to transmitter sites so a Single Frequency Network (SFN) can operate without interference in overlap zones.
 
 The connector polls the device for GPS reception, synchronization, IP audio input, user-channel, system, and alarm information, and processes SNMP traps sent by the device for real-time alarm notifications.
 
@@ -15,13 +15,13 @@ The connector polls the device for GPS reception, synchronization, IP audio inpu
 
 ### Connections
 
-#### SNMP Connection - Digidia SyncFM2
+#### SNMP Connection - Digidia SyncFM
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
 SNMP CONNECTION:
 
-- **IP address/host**: Polling IP address or host name of the Digidia SyncFM2 device.
+- **IP address/host**: Polling IP address or host name of the Digidia SyncFM device.
 - **Device address**: Not required.
 
 SNMP Settings:

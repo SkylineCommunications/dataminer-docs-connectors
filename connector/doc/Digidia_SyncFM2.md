@@ -1,13 +1,13 @@
 ---
 uid: Connector_help_Digidia_SyncFM2
-description: Monitor and control the Digidia SyncFM2 in DataMiner with GPS sync visibility, SFN/MFN status, IP input health, and SNMP alarm handling.
+description: Monitor and control Digidia SyncFM devices in DataMiner, including SyncFM2 and SyncFM4, with GPS sync visibility and SNMP alarms.
 ---
 
-# Digidia SyncFM2
+# Digidia SyncFM
 
 ## About
 
-The Digidia SyncFM2 connector monitors and controls the Digidia SyncFM2 audio processor, a broadcast device used to synchronize FM radio networks. In a Single Frequency Network (SFN), multiple transmitters share the same frequency, so the audio they emit must be time-aligned to avoid interference in overlap zones. The SyncFM2 uses a GPS time reference to lock audio and RDS/user-channel data distributed over IP to each transmitter site, helping you maintain sample-accurate synchronization across the network.
+The Digidia SyncFM connector monitors and controls Digidia SyncFM devices, including SyncFM2 and SyncFM4 audio processors, used to synchronize FM radio networks. In a Single Frequency Network (SFN), multiple transmitters share the same frequency, so the audio they emit must be time-aligned to avoid interference in overlap zones. SyncFM devices use a GPS time reference to lock audio and RDS/user-channel data distributed over IP to each transmitter site, helping you maintain sample-accurate synchronization across the network.
 
 Through SNMP polling and SNMP trap handling, this connector surfaces the full operational state of the device in DataMiner: GPS reception quality, synchronization mode and status, IP audio input health, user-channel data distribution, and hardware, software, and process alarms.
 
@@ -35,7 +35,7 @@ Through SNMP polling and SNMP trap handling, this connector surfaces the full op
 
 ### Centralized Health Monitoring of Distributed Transmitter Sites
 
-**Challenge**: SyncFM2 devices are typically deployed across many remote transmitter sites, each with its own GPS antenna, IP feed, and hardware, making manual supervision impractical.
+**Challenge**: SyncFM devices are typically deployed across many remote transmitter sites, each with its own GPS antenna, IP feed, and hardware, making manual supervision impractical.
 
 **Solution**: DataMiner aggregates alarm status for each device (IP input, synchronization, control process, and system) and enriches it with notifications sent through SNMP traps.
 
