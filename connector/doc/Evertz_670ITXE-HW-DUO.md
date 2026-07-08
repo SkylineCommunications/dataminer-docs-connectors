@@ -12,13 +12,13 @@ The Evertz 670ITXE-HW-DUO is a professional broadcast encoder/decoder designed f
 
 - **Comprehensive system monitoring**: Tracks system time, temperature thresholds, product identity, and slot assignment so operators can quickly assess device state without logging into the device web interface.
 
-- **NMOS IS-04/IS-09 integration**: Exposes full NMOS node configuration — enable/disable, DNS mode (unicast/multicast), device naming, SDP session alias, fallback registry settings, and ST 2110 vs. ST 2022 model selection — enabling seamless participation in software-defined media networks.
+- **NMOS IS-04/IS-09 integration**: Exposes full NMOS node configuration, including DNS mode (unicast/multicast), device naming, SDP session alias, fallback registry settings, and ST 2110 vs. ST 2022 model selection — enabling seamless participation in software-defined media networks.
 
 - **Reference and timing control**: Allows selection of the timing reference source (PTP, Genlock, or Free-run) and master data port assignment, which is critical for maintaining frame-accurate synchronization in live production environments.
 
 - **IP input quality monitoring**: Provides per-stream monitoring of S2110 IP inputs including RTP error counters for video, audio, and ANC, plus IP input and decoder notification tables (H.264, MPEG-2, HEVC, JPEG, J2K) to detect signal degradation before it reaches air.
 
-- **UDX video and audio processing visibility**: Surfaces UDX video group faults, payload ID faults, PGM video faults, and audio group faults so engineering teams can pinpoint up/down-convert or audio routing problems at a glance.
+- **UDX video and audio processing visibility**: Surfaces UDX video group faults, payload ID faults, PGM video faults, and audio group faults so engineering teams can pinpoint up/down-conversion or audio routing problems at a glance.
 
 - **Breakaway audio IP input management**: Monitors breakaway audio IP input faults, giving operators a dedicated view for independent audio routing issues separate from the main video path.
 
@@ -34,7 +34,7 @@ The Evertz 670ITXE-HW-DUO is a professional broadcast encoder/decoder designed f
 
 ### Centralized IP Media Network Management
 
-**Challenge**: Managing NMOS node registration, SDP session naming, and ST 2110/ST 2022 mode across dozens of encode/decode devices is error-prone when done device-by-device through individual web interfaces.
+**Challenge**: Managing NMOS node registration, SDP session naming, and ST 2110/ST 2022 mode across dozens of encode/decode devices is error-prone when done device by device through individual web interfaces.
 
 **Solution**: The connector exposes all NMOS and network configuration parameters as read/write DataMiner parameters. Operators can view and update NMOS node enable state, DNS mode, registry addresses, and transport model from a single DataMiner element card or automation script.
 
