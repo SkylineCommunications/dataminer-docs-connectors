@@ -120,6 +120,9 @@
   items:
   - name: ADLINK NuDAM-6053
     topicUid: Connector_help_ADLINK_NuDAM-6053
+    items:
+    - name: ADLINK NuDAM-6053 Technical
+      topicUid: Connector_help_ADLINK_NuDAM-6053_Technical
 - name: Adtec
   items:
   - name: Adtec EN Manager
