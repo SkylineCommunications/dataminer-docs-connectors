@@ -14,9 +14,9 @@ With this connector, you can monitor a device connected to an ADLINK NuDAM-6053 
 
 - **Input monitoring**: Monitor the 16 digital inputs of the NuDAM-6053 to get notified of any issues with the connected device.
 
-- **Configurable alarm conditions**: Each row in the Digital Inputs table defines an independent alarm condition. You choose which input channels matter and whether they need to be On or Off to trigger the alarm.
+- **Configurable alarm conditions**: Each row in the Digital Inputs table defines an independent alarm condition. You choose which input channels matter and whether an alarm should be triggered for them.
 
-- **Flexible bit masking**: Input channels that are irrelevant to a condition can be set to **Ignore**, so only the bits you care about are evaluated.
+- **Flexible bit masking**: Set input channels that are irrelevant to a condition to be ignored, so only the bits you care about are evaluated.
 
 ## Use Cases
 
@@ -38,7 +38,9 @@ With this connector, you can monitor a device connected to an ADLINK NuDAM-6053 
 
 - **Address ID**: When you configure the element, enter the module's address ID in the **Bus address** field. This 2-character hexadecimal value must be in the range of 00 - FF.
 
-- **At least one row in the Digital Inputs table**: The connector does not poll the device until at least one row is added to the Digital Inputs table. See the technical documentation for configuration details.
+### Configuration
+
+When you configure the DataMiner element using this connector, make sure **at least one row** is added in the **Digital Inputs table**. The connector will only start polling the device when at least one row has been added.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_ADLINK_NuDAM-6053_Technical).
