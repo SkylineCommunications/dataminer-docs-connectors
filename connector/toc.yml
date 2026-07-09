@@ -2932,11 +2932,11 @@
     items:
     - name: Digidia SpanFM2 Technical
       topicUid: Connector_help_Digidia_SpanFM2_Technical
-  - name: Digidia SyncFM2
-    topicUid: Connector_help_Digidia_SyncFM2
+  - name: Digidia SyncFM
+    topicUid: Connector_help_Digidia_SyncFM
     items:
-    - name: Digidia SyncFM2 Technical
-      topicUid: Connector_help_Digidia_SyncFM2_Technical
+    - name: Digidia SyncFM Technical
+      topicUid: Connector_help_Digidia_SyncFM_Technical
   - name: Digidia Tunell
     topicUid: Connector_help_Digidia_Tunell
 - name: Digigram
