@@ -10181,6 +10181,8 @@
     topicUid: Connector_help_Telenet_BGP_Trap_Receiver
   - name: Telenet BO Manager
     topicUid: Connector_help_Telenet_BO_Manager
+  - name: Telenet B2B Inventory Manager
+    topicUid: Connector_help_Telenet_B2B_Inventory_Manager
   - name: Telenet CIM
     topicUid: Connector_help_Telenet_CIM
   - name: Telenet CMTS Collector
@@ -10217,6 +10219,8 @@
     topicUid: Connector_help_Telenet_Ticket_Table
   - name: Telenet Topology Database
     topicUid: Connector_help_Telenet_Topology_Database
+  - name: Telenet B2B Inventory Manager
+    topicUid: Connector_help_Telenet_B2B_Inventory_Manager
 - name: Telenor
   items:
   - name: Telenor Adaptation Engine
