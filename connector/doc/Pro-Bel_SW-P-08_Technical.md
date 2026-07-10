@@ -146,8 +146,8 @@ The element has the following data pages: **General** and **Router Control**.
 - **Matrix Configuration status:** Displays any detected misconfigurations. The status **OK** indicates that the matrix has been successfully configured.
 - **Number of Sources:** Allows you to configure the number of sources for the matrix.
 - **Number of Destinations:** Allows you to configure the number of destinations for the matrix.
-- **Matrix Number:** Allows you to configure the matrix number. Must be set to a value of 15 or lower.
-- **Level Number:** Allows you to configure the level number. Must be set to a value of 15 or lower.
+- **Matrix Number:** Allows you to configure the matrix number.
+- **Level Number:** Allows you to configure the level number.
 - **Source Names Length:** Allows you to configure the name length for sources.
 - **Destination Names Length:** Allows you to configure the name length for destinations.
 
@@ -159,6 +159,6 @@ This page contains the **Sources** and **Destinations** tables, which contain in
 
 The minimum required DataMiner version for this range is **10.3.0.0 - 12752**.
 
-This range is intended for devices that do not support the extended command format for retrieving matrix labels. The short command format is always used, regardless of matrix size. As a result, the **Matrix Number** and **Level Number** must be set to a value of 15 or lower.
+This range is intended for the EVS Neuron NAP Shuffle. Because of the limitations of this device, the **Matrix Number** and **Level Number** must be set to a value of 15 or lower.
 
 ***
