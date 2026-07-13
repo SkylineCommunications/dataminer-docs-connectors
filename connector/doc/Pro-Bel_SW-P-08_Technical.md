@@ -58,6 +58,8 @@ The following values are defined by the protocol documentation and are set as de
 
 #### [2.1.x](#tab/version-2-1-x)
 
+This range is intended for the EVS Neuron NAP Shuffle.
+
 ##### Smart-Serial Connection
 
 This connector uses a smart-serial connection and requires the following input during element creation:
@@ -139,6 +141,8 @@ The minimum required DataMiner version for this range is **10.3.0.0 - 12752**.
 
 ### [2.1.x](#tab/version-2-1-x)
 
+This range is intended for the EVS Neuron NAP Shuffle.
+
 The element has the following data pages: **General** and **Router Control**.
 
 #### General
@@ -159,6 +163,6 @@ This page contains the **Sources** and **Destinations** tables, which contain in
 
 The minimum required DataMiner version for this range is **10.3.0.0 - 12752**.
 
-This range is intended for the EVS Neuron NAP Shuffle. Because of the limitations of this device, the **Matrix Number** and **Level Number** must be set to a value of 15 or lower.
+Because of the limitations of this device, the **Matrix Number** and **Level Number** must be set to a value of 15 or lower.
 
 ***
