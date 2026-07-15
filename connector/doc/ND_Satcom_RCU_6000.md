@@ -10,15 +10,15 @@ The **ND Satcom RCU 6000** is a Redundancy Controller Unit used in satellite gro
 
 ## Key Features
 
-- **HPA Monitoring**: Real-time tracking of all HPA operational parameters including TX mode, RF output power (dBm/W), attenuation, helix voltage/current, heater current, temperature, and linearizer gain.
+- **HPA monitoring**: Real-time tracking of all HPA operational parameters including TX mode, RF output power (dBm/W), attenuation, helix voltage/current, heater current, temperature, and linearizer gain.
 
-- **HPA Alarm Surveillance**: Comprehensive alarm monitoring across 18 alarm indicators per HPA, covering RF inhibit, power supply faults, interlock conditions, temperature warnings, and EEPROM errors.
+- **HPA alarm surveillance**: Comprehensive alarm monitoring across 18 alarm indicators per HPA, covering RF inhibit, power supply faults, interlock conditions, temperature warnings, and EEPROM errors.
 
-- **Redundancy Management**: Full visibility into the redundancy chain setup, including redundancy mode (Active/Blocked/Manual), switch status, last switched chain, and per-chain priority and mode configuration.
+- **Redundancy management**: Full visibility into the redundancy chain setup, including redundancy mode (Active/Blocked/Manual), switch status, last switched chain, and per-chain priority and mode configuration.
 
-- **Transmit Chain Status**: At-a-glance operational status overview of all transmit chains, enabling quick identification of degraded or alarmed chains.
+- **Transmit chain status**: At-a-glance operational status overview of all transmit chains, enabling quick identification of degraded or alarmed chains.
 
-- **Notification Tracking**: Centralized event log capturing alarms, warnings, and informational messages from all managed devices with timestamps for historical analysis.
+- **Notification tracking**: Centralized event log capturing alarms, warnings, and informational messages from all managed devices with timestamps for historical analysis.
 
 ## Use Cases
 
@@ -44,15 +44,15 @@ The **ND Satcom RCU 6000** is a Redundancy Controller Unit used in satellite gro
 
 **Solution**: The connector maps the complete station topology — HPAs, switches, power supplies, and transmit chains — into a cohesive DataMiner element. The Station Configurator provides a high-level view of installed HPA types, while individual device tables offer drill-down detail.
 
-**Benefit**: A single DataMiner element provides complete station visibility, simplifying operations and enabling cross-device alarm correlation through DataMiner's built-in correlation engine.
+**Benefit**: A single DataMiner element provides complete station visibility, simplifying operations and enabling cross-device alarm correlation through DataMiner's built-in Correlation engine.
 
 ## Technical Reference
 
 ### Prerequisites
 
-- **Network Connectivity**: HTTP access to the RCU 6000 REST API on the configured port (default: 9876).
+- **Network connectivity**: HTTP access to the RCU 6000 REST API on the configured port (default: 9876).
 
-- **DataMiner Version**: Minimum DataMiner version 10.4.0.0 - 14003 is required.
+- **DataMiner version**: DataMiner version 10.4.0.0 - 14003 or higher is required.
 
 ### Connections
 

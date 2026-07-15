@@ -71,7 +71,7 @@ The **Sites** page retrieves a list of sites that can be associated with product
 
 The **Performance Monitoring** page provides insights from two key tables: **User Terminal Performance** and **Products Performance**.
 
-- The **User Terminal Performance** table retrieves metrics such as Link Availability, Signal Quality, Resource State, and Traffic. These metrics are subject to varying delays depending on the report definitions in the API documentations.
+- The **User Terminal Performance** table retrieves metrics such as Link Availability, Signal Quality, Resource State, Traffic, and Link Metrics. These metrics are subject to varying delays depending on the report definitions in the API documentations.
 
 - The **Products Performance** table focuses on throughput metrics, also retrieved with a delay.
 
