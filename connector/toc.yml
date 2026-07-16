@@ -4459,6 +4459,9 @@
     topicUid: Connector_help_Generic_KAFKA_Consumer
   - name: Generic KAFKA Producer
     topicUid: Connector_help_Generic_KAFKA_Producer
+    items:
+      - name: Generic KAFKA Producer Technical
+        topicUid: Connector_help_Generic_KAFKA_Producer_Technical
   - name: Generic Logger Table
     topicUid: Connector_help_Generic_Logger_Table
   - name: Generic Mail Sender
