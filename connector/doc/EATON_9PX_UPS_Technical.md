@@ -87,10 +87,3 @@ Starting from 1.1.0.x, the active alarms table on the **Alarms** page translates
 ## DataMiner Connectivity Framework
 
 This connector does not support the DataMiner Connectivity Framework (DCF).
-
-## Notes
-
-### Outstanding follow-up items
-
-- **Alarm template for EMP communication status**: Severity mapping (Communication Lost = Critical, Unknown = Warning, Communication OK = Normal) needs to be configured via DataMiner alarm templates.
-- **Battery test verification**: The existing Test Battery functionality should be exercised on a live element to confirm it remains functional, ideally during a low-risk window.
