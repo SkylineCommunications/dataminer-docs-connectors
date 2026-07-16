@@ -54,11 +54,11 @@ The SES Service Problem Management connector integrates the DataMiner SDM Ticket
   - SDM Ticketing APIs (`TicketingApiHelper`).
   - The **DataMiner SDM Ticketing** solution, which must be available on the DataMiner System.
 
-- This connector is **swarming-compatible** — it can be hosted on any DataMiner Agent in a swarming-enabled cluster.
-
 - **Authentication credentials** (username and password) with appropriate permissions are required to create, read, and update service problems in the SES system are required for API access.
 
 ## Technical Reference
+
+This connector is **swarming-compatible**. It can be hosted on any DataMiner Agent in a swarming-enabled cluster.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_SES_Service_Problem_Management_Technical).

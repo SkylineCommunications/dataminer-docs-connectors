@@ -39,7 +39,7 @@ By bridging the gap between alarm monitoring and ticket management, this connect
 - This connector requires **DataMiner 10.6.0** or higher.
 - **DOM** is required for creating and managing DOM definitions and instances.
 - The DOM-based **Ticketing module** is required for ticket creation, updates, and resolution.
-- When using event-based alarm ingestion, the **SES Alarm Forwarder** automation script must be deployed on your DataMiner system. The connector automatically creates and manages the required correlation rule — no manual rule setup is needed.
+- When event-based alarm ingestion is used, the **SES Alarm Forwarder** automation script must be deployed on the DataMiner System. For the correlation rule, no manual setup is needed, as this is automatically created and managed by the connector.
 
 ## Technical Reference
 
