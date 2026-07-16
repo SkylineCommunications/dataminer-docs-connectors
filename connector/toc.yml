@@ -10564,6 +10564,8 @@
   items:
   - name: Terrasat Communications IBUC
     topicUid: Connector_help_Terrasat_Communications_IBUC
+  - name: Terrasat Communications IBUC 1+2 Tx Redundant System
+    topicUid: Connector_help_Terrasat_Communications_IBUC_1+2_Tx_Redundant_System
 - name: TestTree
   items:
   - name: TestTree StreamProbe
