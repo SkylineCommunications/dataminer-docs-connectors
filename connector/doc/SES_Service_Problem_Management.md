@@ -50,9 +50,11 @@ The SES Service Problem Management connector integrates the DataMiner SDM Ticket
 
 ## Prerequisites
 
-- This connector requires **DataMiner 10.5.0** or higher because of dependencies on:
+- This connector requires **DataMiner 10.6.0** or higher because of dependencies on:
   - SDM Ticketing APIs (`TicketingApiHelper`).
   - The **DataMiner SDM Ticketing** solution, which must be available on the DataMiner System.
+
+- This connector is **swarming-compatible** — it can be hosted on any DataMiner Agent in a swarming-enabled cluster.
 
 - **Authentication credentials** (username and password) with appropriate permissions are required to create, read, and update service problems in the SES system are required for API access.
 
