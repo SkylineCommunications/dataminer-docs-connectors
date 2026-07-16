@@ -10,13 +10,6 @@ The NEYRPIC® ACU550 is a microprocessor-based Antenna Control Unit (ACU) for th
 
 This connector establishes a TCP/ONC-RPC session with the ACU to monitor antenna position and status in real time, drive the antenna through its operating and tracking modes, and surface ACU, motor, and per-axis alarms directly in DataMiner.
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact                                        |
-|----------------------|------------------|--------------|------------------------------------------------------|
-| 1.0.0.x              | Initial version  | -            | -                                                    |
-| 1.0.1.x [SLC Main]   | Initial version  | 1.0.0.3      | Some parameters were relocated, renamed, or updated. |
-
 ## Key Features
 
 - **Real-time antenna status**: Continuously monitors current azimuth, elevation, and polarization positions, along with their targets, offsets, position errors, and drive speeds.
