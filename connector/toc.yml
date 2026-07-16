@@ -2485,8 +2485,17 @@
     topicUid: Connector_help_Cobalt_Digital_BBG-1300-FR_-_9940-ACO
   - name: Cobalt Digital HPF 9000
     topicUid: Connector_help_Cobalt_Digital_HPF_9000
-  - name: Cobalt Digital HPF 9000 - Cobalt Digital 9001
-    topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001
+    items:
+    - name: Cobalt Digital HPF 9000 Technical
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_Technical
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9001
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9121
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9121
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9410DA
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9410DA
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9220
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9220
 - name: Cobham
   items:
   - name: Cobham PRORXB
