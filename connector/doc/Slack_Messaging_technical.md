@@ -192,7 +192,7 @@ List of native commands that are available in Slack when the bot is present in a
 
 ### !List
 
-Sends a list of all available commands to the Slack channel where the command was invoked.
+Sends a list of all configured automation scripts on the Slack Element and their commands to the Slack channel where the command was invoked. This command can be disabled from the General page on the Element.
 
 ## Additional Resources
 
