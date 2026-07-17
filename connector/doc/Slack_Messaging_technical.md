@@ -186,6 +186,14 @@ On this page, the **App-Level Token** that should be used to connect to the Slac
 
 This page displays the app configuration page on the Slack API website, where you can log in with the account that created the app. Note that the web interface is only accessible when the client machine has network access to the product.
 
+## Native Commands
+
+List of native commands that are available in Slack when the bot is present in a channel. These commands can be invoked to interact with the bot and perform various actions.
+
+### !List
+
+Sends a list of all available commands to the Slack channel where the command was invoked.
+
 ## Additional Resources
 
 - To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
