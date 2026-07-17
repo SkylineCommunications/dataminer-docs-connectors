@@ -6,15 +6,21 @@ uid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer
 
 ## About
 
-The **Telenor MAM Event Aggregator and Analyzer** connector queries an OpenSearch database for MAM error events offloaded by the **Telenor EPM MAM Offloader**. It supports a configurable aggregation period and provides two key aggregations: one by **Device Class Type** and another by **Asset ID**.
+The **Telenor MAM Event Aggregator and Analyzer** connector queries an OpenSearch database for MAM events and performance data offloaded from the TV platform. Because the raw data in OpenSearch is retained for only a short period, the connector aggregates it into DataMiner tables for long-term trending, analysis, and alerting.
 
-This enables effective trending and alerting based on MAM error event counts, helping to identify issues with specific devices or assets in the field.
+It produces multiple aggregations, including error events (per device class, per device model, and per asset), MAM events per device class, ContentWise API usage, NPVR statistics, playback sessions, player statistics, and unique devices in use. Each aggregation has its own configurable aggregation period and retention window, and can be filtered per operator.
 
 ## Key Features
 
-- **Error statistics from offloaded data**: Easily analyze error trends over time and identify periods with elevated error counts.
+- **Broad set of aggregations**: Analyze error events, MAM events, ContentWise API usage, NPVR statistics, playback sessions, player statistics, and unique device usage from a single element.
 
-- **Customizable aggregation period**: Adjust the aggregation window to test different configurations and optimize results.
+- **Error statistics from offloaded data**: Analyze error trends over time and identify periods with elevated error counts, broken down by device class, device model, and asset.
+
+- **Long-term retention**: Store short-lived OpenSearch data in DataMiner tables with a configurable retention period per aggregation.
+
+- **Customizable aggregation periods**: Adjust each aggregation window independently to optimize resolution and system load.
+
+- **Operator filtering**: Scope the data to all operators or to a specific operator (Norway or Sweden).
 
 ## Technical Reference
 
