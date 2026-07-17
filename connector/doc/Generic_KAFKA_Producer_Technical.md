@@ -8,7 +8,7 @@ uid: Connector_help_Generic_KAFKA_Producer_Technical
 
 Kafka is a distributed system consisting of servers and clients that communicate via a high-performance TCP network protocol. Kafka is run as a cluster of one or more servers that can span multiple data centers or cloud regions. Some of these servers form the storage layer; these are called the **brokers**. **Producers** are client applications that publish (i.e., write) events to Kafka, and **consumers** are those that subscribe (i.e., read and process) to these events. Producers and consumers are fully decoupled and agnostic of each other.
 
-The **Generic KAFKA Producer** is a generic solution to send alarms and parameter values to a specific **topic** in the broker, where DataMiner acts as a Producer.
+The **Generic KAFKA Producer** is a generic solution for sending alarms and parameter values to a specific **topic** in the broker, where DataMiner acts as a Producer.
 
 ## Configuration
 
@@ -16,11 +16,11 @@ The **Generic KAFKA Producer** is a generic solution to send alarms and paramete
 
 #### Virtual Connection
 
-This connector uses a virtual connection and does not require any input during element creation.
+This connector uses a virtual connection, which does not require any input during element creation.
 
 #### SNMP Connection
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+This connector uses a Simple Network Management Protocol (SNMP) connection, which requires the following input during element creation:
 
 SNMP CONNECTION:
 
@@ -33,29 +33,31 @@ SNMP Settings:
 
 ### Initialization
 
-On the **General** page of the element, you configure how the connector authenticates and connects to the Kafka broker. The **Security Protocol** parameter determines which authentication mechanism is used:
+On the **General** page of the element, you need to configure how the connector authenticates and connects to the Kafka broker.
+
+The **Security Protocol** parameter determines which authentication mechanism is used:
 
 - **Sasl**: SASL over SSL (`SASL_SSL`). Authenticates using SASL/PLAIN (Simple Authentication Security Layer), a username/password mechanism used together with TLS for encryption.
 - **Ssl**: Mutual TLS (`SSL`) using a keystore and CA certificate, without SASL credentials.
 - **Sasl_Plain Text**: SASL/PLAIN over an unencrypted connection (`SASL_PLAINTEXT`). Use this only on trusted networks, as credentials are not encrypted in transit.
 - **SASL OAuth Bearer**: OAuth 2.0 / OIDC bearer-token authentication (`SASL_SSL` with `OAUTHBEARER`). The token settings are configured on the [OAuth Configuration](#oauth-configuration) page.
 
-The following parameters are available on the General page:
+In addition, the following parameters can be configured on the General page:
 
-- **Broker:** The server's address.
-- **SASL User:** The username for use with SASL/PLAIN (used with the *Sasl* and *Sasl_Plain Text* security protocols).
-- **SASL Password:** The password for use with SASL/PLAIN.
-- **Keystore Location:** The path to the client keystore, used with the *Ssl* security protocol for mutual TLS.
-- **Keystore Password:** The password protecting the keystore.
-- **CA Certificate Location:** The path to the CA certificate used to validate the broker's certificate.
-- **Idempotence:** When enabled, the producer guarantees that messages are delivered exactly once and in order, preventing duplicate records.
-- **Connect:** This button allows you to force the connection to a broker. By default, the connector tries to establish the connection by polling metadata from the broker in order to check the connectivity.
+- **Broker**: The server's address.
+- **SASL User**: The username for use with SASL/PLAIN (used with the *Sasl* and *Sasl_Plain Text* security protocols).
+- **SASL Password**: The password for use with SASL/PLAIN.
+- **Keystore Location**: The path to the client keystore, used with the *Ssl* security protocol for mutual TLS.
+- **Keystore Password**: The password protecting the keystore.
+- **CA Certificate Location**: The path to the CA certificate used to validate the broker's certificate.
+- **Idempotence**: When enabled, the producer guarantees that messages are delivered exactly once and in order, preventing duplicate records.
+- **Connect**: This button allows you to force the connection to a broker. By default, the connector tries to establish the connection by polling metadata from the broker in order to check the connectivity.
 
 ## How to Use
 
 ### General
 
-For more information about the General page, see the "Initialization" section above.
+For more information about the General page, see [Initialization](#initialization).
 
 ### Alarms
 
@@ -71,7 +73,7 @@ DataMiner receives the alarm information in the incoming SNMP inform messages/tr
 
 You can also select the "Send the extra starting ping notification during resend" and "Send the extra ending ping notification during resend" options. For more information, refer to [Configuring an SNMP manager in DataMiner Cube](https://aka.dataminer.services/Configuring_an_SNMP_manager_in_DataMiner_Cube).
 
-Each message forwarded to the topic contains a key string and a JSON value, where the key is known as the partition key and the value as a JSON of bindings.
+Each message forwarded to the topic contains a key string and a JSON value, where the key is known as the partition key and the value as a JSON object containing bindings.
 
 #### Alarms Configuration
 
@@ -81,7 +83,7 @@ On the Alarms page, the following parameters are available:
 
 - **Alarms Partition Key**: If a partition key is defined, the data is always stored in the same partition. Otherwise, the data is spread over the partitions. The partition key definition is relevant for the consumer to know which partition to consume the data from.
 
-- **Pending Alarms Range**: Displays the range of pending alarms to be sent to a non-reachable broker. An internal queue holds pending alarms and resends them once the broker's connection is established. The size of the queue is limited.
+- **Pending Alarms Range**: Displays the range of pending alarms to be sent to an unreachable broker. An internal queue holds pending alarms and resends them once the broker's connection is established. The size of the queue is limited.
 
 - **Bindings Configuration** table: This table lists the inform/trap bindings that will be sent in a JSON-format message to the topic.
 
@@ -105,9 +107,9 @@ Via the More Configurations page button, you can access a subpage with the follo
 
 - **Custom Bindings Object ID**: This parameter value defines the inform/trap OID and should match the Notification OID in the SNMP Manager. If the OIDs do not match, the received alarm is not processed.
 
-- **Send Messages To Broker**: By default, this is disabled. When the configuration is complete, change this to enabled to allow forwarding of alarm messages to the Kafka broker.
+- **Send Messages To Broker**: By default, this is disabled. When the configuration is complete, set this to enabled to allow forwarding of alarm messages to the Kafka broker.
 
-- **Forward System Messages**: If this is disabled, system messages are discarded and not sent to the topic. These are for example ping messages, messages after a DMA restart, or alarm storm events.
+- **Forward System Messages**: If this is disabled, system messages are discarded and not sent to the topic. These include, for example, ping messages, messages after a DMA restart, or alarm storm events.
 
 - **Resend Messages**: If this is enabled, when alarms are manually resent by SNMP Manager with the "Resend" option, and the options "Send the extra starting ping notification during resend" and "Send the extra ending ping notification during resend" are enabled, each resent alarm will have the additional "Is Resent Alarm" binding name with the value "true". In all other cases, the flag is not sent.
 
@@ -166,18 +168,18 @@ Each configurable row in the table represents a Kafka message that contains a ke
 In addition to the fields used to select the source parameter, each row exposes the following behavioral columns:
 
 - **Forwarding Time**: The polling interval (in seconds) at which the parameter value is retrieved and evaluated for forwarding.
-- **On Change**: Determines whether the value is forwarded on every poll or only when it changes compared to the previous value.
+- **On Change**: Determines whether the value is forwarded each it gets polled or only when it changes compared to the previous value.
 - **Send Data**: Enables or disables forwarding for the row.
-- **Topic**: The Kafka topic that this specific row is forwarded to. This allows different parameter rows to target different topics, independently of the global Parameters Topic.
+- **Topic**: The Kafka topic that this specific row is forwarded to. This allows different parameter rows to target different topics, independently of the global Parameters Topic setting.
 - **Send Value Only**: When enabled, only the parameter value is sent instead of the full JSON object.
 - **Delete on Success**: When enabled, the row is automatically removed from the table once its message has been successfully forwarded to the broker.
 - **Throughput**: Displays the number of messages forwarded for the row.
 
 Kafka message example:
 
-- Key: *Skyline DMP Replication_DMP test*
+- Key: `Skyline DMP Replication_DMP test`
 
-- Value: *{"Timestamp":"2021-08-31T14:34:20.7669751+01:00","DataMiner ID":"404","Element Name":"DMP test","Parameter Name":"Total Amount of Active Elements","Parameter ID":1406,"Parameter Value":"24","Protocol Name":"Skyline DMP Replication"}*
+- Value: `{"Timestamp":"2021-08-31T14:34:20.7669751+01:00","DataMiner ID":"404","Element Name":"DMP test","Parameter Name":"Total Amount of Active Elements","Parameter ID":1406,"Parameter Value":"24","Protocol Name":"Skyline DMP Replication"}`
 
 Row configuration example:
 
@@ -227,11 +229,11 @@ You can then use this template to create a file to import. The following paramet
 
 - **Parameters Folder Path**: Indicates the folder path where the CSV file to import is located.
 
-- **Parameters Files**: Lists all the files present in the Parameters Folder Path.
+- **Parameters Files**: Lists all the files present at the specified folder path.
 
 - **Parameters Import Status**: Displays the status of the file import.
 
-- **Processing Parameters**: Displays the current processing type, i.e., *Not Processing*, *Reading File* or *Filling Tables*.
+- **Processing Parameters**: Displays the current processing type, i.e., *Not Processing*, *Reading File*, or *Filling Tables*.
 
 - **Import**: Click this button to import the parameters CSV file into the table.
 
@@ -281,7 +283,7 @@ The following parameters are available:
 
 When the Schema Registry requires OAuth bearer authentication, the following parameters configure it (mapping to the Confluent `bearer.auth.*` settings):
 
-- **Bearer Credentials Source**: The credentials source, e.g. *OAUTHBEARER*.
+- **Bearer Credentials Source**: The credentials source, e.g., *OAUTHBEARER*.
 - **Bearer Issuer Endpoint URL**: The OAuth/OIDC issuer token endpoint URL.
 - **Bearer Client ID** / **Bearer Client Secret**: The client credentials used to obtain a bearer token.
 - **Bearer Scope**: The requested OAuth scope.
@@ -290,4 +292,4 @@ When the Schema Registry requires OAuth bearer authentication, the following par
 
 ## Notes
 
-The forwarding alarms feature allows you to forward information about impacted services (e.g., OID 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.1, 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.2). While in an SNMP message, the information is received in a table (in case the alarm affects more than 1 service), in the forwarded JSON message, information will be concatenated with commas (per OID).
+The forwarding alarms feature allows you to forward information about impacted services (e.g., OID 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.1, 1.3.6.1.4.1.8813.1.1.2.5.1.2.1.2). While in an SNMP message the information is received in a table (in case the alarm affects more than 1 service), in the forwarded JSON message information will be concatenated with commas (per OID).
