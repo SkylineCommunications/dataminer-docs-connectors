@@ -14,7 +14,7 @@ This connector links DataMiner with a Slack workspace through two HTTP connectio
 
 **HTTP WebSocket API** communication requires that Socket Mode is enabled for the Slack app and an **app-level token** is configured. **App-level tokens** can be obtained from the app configuration webpage. These must have the `connections:write` scope.
 
-The WebSocket connection is used to notify DataMiner when users send messages using any of the built-in commands (e.g., **!list, !help**) or custom commands that have been configured in the element. Each of these custom commands will trigger the execution of a predefined script in DataMiner (see [Automation Scripts](#automation-scripts)).
+The WebSocket connection is used to notify DataMiner when users send messages using any of the built-in commands (e.g., **!list**) or custom commands that have been configured in the element. Each of these custom commands will trigger the execution of a predefined script in DataMiner (see [Automation Scripts](#automation-scripts)).
 
 > [!TIP]
 > To find out more about how this connector can be used to unify your team's communication between DataMiner and Slack, check out the [Slack Messaging use case](https://community.dataminer.services/use-case/slack-messaging/) on DataMiner Dojo.
