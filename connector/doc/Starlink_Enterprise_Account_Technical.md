@@ -16,7 +16,7 @@ The Starlink Management API is used to activate, deactivate, and otherwise manag
 
 Elements that are created based on this connector do not show anything. This connector is designed for querying the Starlink API V2 only. A [Starlink Enterprise element](https://catalog.dataminer.services/details/d1dc1fae-0902-4cc3-9ae6-d1983d9596a3) is required on the DMS to make the polled information visible, and available for alarm monitoring and trending.
 
-Since the introduction of the Starlink API V2, credentials are needed per account. These credentials have to be entered in the Starlink Enterprise Account element. The name of the Starlink Enterprise Account element has to match the **account name**.
+Since the introduction of the Starlink API V2, credentials are needed per account. These credentials have to be entered in the Starlink Enterprise Account element. The name of the Starlink Enterprise Account element has to be **Starlink Account [account name]**.
 
 > [!NOTE]
 > **LEGAL NOTE**: This connector (or package) is intended solely for use in production with Skyline's usage-based services model. Any other use is prohibited. For more detailed information, see [Usage-based services](https://aka.dataminer.services/usage-based-services-docs). For inquiries regarding commercial production usage, contact Skyline Sales at <sales@skyline.be>.
@@ -68,7 +68,7 @@ A newly created element will only start polling data if an active [Starlink Ente
 
 ![Element Structure](~/connector/images/StarlinkEnterpriseElementStructure.png)
 
-If the name of the Starlink Enterprise Account element does not fully match the account name as shown on the Starlink web interface, the parameter set logic will not work.
+If the name of the Starlink Enterprise Account element does not equal **Starlink Account [account name]**, the parameter set logic will not work.
 
 A heartbeat check is implemented before the Starlink API is queried to confirm that the Starlink Enterprise element is able to receive the response content. If the Starlink Enterprise element is busy, the API request is postponed.
 
@@ -84,7 +84,7 @@ To see the actual traffic between the Starlink Enterprise Account element and th
 
 To see the actual traffic between the Starlink Enterprise Account element and the Starlink API, a built-in DataMiner tool called Stream Viewer can be used. You can access it by right-clicking the element in the Surveyor and selecting **View** > **Stream Viewer**.
 
-A healthy element will show groups 700, 701, 702, 703, 704, 705 and 972 in the Stream Viewer. If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
+A healthy element will show groups 700, 701, 702, 703, 704, 705, and 709 in the Stream Viewer. If you only see group 700 in the Stream Viewer, check the **Authentication** parameter and re-enter the client ID and client secret if the authentication failed.
 
 Unexpected column names and user terminal alerts will be logged in the element log file. If you encounter these, please contact Skyline so that the connector can be corrected or extended. However, note that lines in the element log file indicating **token_expired** can be safely ignored, as these are also added when nothing is wrong with the element.
 
@@ -124,3 +124,20 @@ With the **Poll Only Service Linked Terminals** toggle button, you can enable a 
 The automatic table cleanup mechanism is triggered once a day.
 
 ![Automatic Table Cleanup Mechanism](~/connector/images/StarlinkEnterpriseAutomaticTableCleanupMechanism.png)
+
+### Protocol XML ID Ranges
+
+When contributing to this connector, please use the ID ranges in the table below for the Protocol XML file. For readability purposes, the last two digits of the ID should indicate the API call. Components used for polling the telemetry have an ID that ends with 02. Components used for polling the products have an ID that ends with 09.
+
+| ID Range   | Parameter                 | Trigger                   | Action                                 | Group        |
+|------------|---------------------------|---------------------------|----------------------------------------|--------------|
+| 1 - 99     | Hidden Standalone         |                           |                                        |              |
+| 100 - 199  | Visible Standalone Read   |                           |                                        |              |
+| 200 - 299  | Visible Standalone Write  |                           |                                        |              |
+| 300 - 399  | Prepare Request Dummy     | Start Poll Cycle          | Prepare Request URL and Body           |              |
+| 400 - 499  | HTTP Request URL          |                           |                                        |              |
+| 500 - 599  | HTTP Request Body         |                           |                                        |              |
+| 600 - 699  | HTTP Response Status Code |                           |                                        |              |
+| 700 - 799  | HTTP Response Content     | Send Request From QAction | Execute Request Group                  | Poll Session |
+| 800 - 898  | After Request Dummy       | After Request Group       | Try Get Next Page or Finish Poll Cycle |              |
+| 1000 - ... | Table                     |                           |                                        |              |

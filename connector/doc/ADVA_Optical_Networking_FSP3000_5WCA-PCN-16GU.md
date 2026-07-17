@@ -4,27 +4,15 @@ uid: Connector_help_ADVA_Optical_Networking_FSP3000_5WCA-PCN-16GU
 
 # ADVA Optical Networking FSP3000 5WCA-PCN-16GU
 
-The **ADVA Optical Networking FSP3000** is an optical data transport solution. This connector can be used to monitor and control a **5WCA-PCN-16GU** card.
-
 ## About
 
-The **ADVA Optical Networking FSP3000** is an extensible chassis with multiple slots. Each slot can contain a different type of extension card. This connector is especially meant for the **5WCA-PCN-16GU** card.
+The **ADVA Optical Networking FSP3000** is an optical data transport solution. This connector can be used to monitor and control a **5WCA-PCN-16GU** card.
+
+The ADVA Optical Networking FSP3000 is an extensible chassis with multiple slots. Each slot can contain a different type of extension card. This connector is especially meant for the **5WCA-PCN-16GU** card.
 
 This connector requires an element of protocol "**ADVA Optical Networking FSP3000**" with the same polling IP to function. The purpose of that element is to retrieve the entity IDs of the different components on this card, i.e., channels. The entity ID is used in the SNMP OID in order to successfully retrieve data from this card.
 
 All information is retrieved using the SNMP protocol.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Ok                      |
-
-Supported firmware versions
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

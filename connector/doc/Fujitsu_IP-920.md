@@ -4,9 +4,9 @@ uid: Connector_help_Fujitsu_IP-920
 
 # Fujitsu IP-920
 
-The **Fujitsu IP-920** connector has been designed to monitor IP-920D HD/SD compact video decoder or IP-920E HD/SD compact video encoder devices. The IP-920 is an audio/video codec that utilizes advanced MPEG-4 AVC (H.264) encoding to perform real-time transmission of SDTV and HDTV at low bit rates over IP network.
-
 ## About
+
+The **Fujitsu IP-920** connector has been designed to monitor IP-920D HD/SD compact video decoder or IP-920E HD/SD compact video encoder devices. The IP-920 is an audio/video codec that utilizes advanced MPEG-4 AVC (H.264) encoding to perform real-time transmission of SDTV and HDTV at low bit rates over IP network.
 
 By utilizing sophisticated MPEG-4 AVC (H.264) compression algorithms, the streaming bit rates are reduced more than half compared to MPEG-2 encoding while achieving the same video fidelity. HDTV contents can be transmitted over existing enterprise IP networks. Robust error correction ensures high fidelity service over IP networks by preventing the distortion of decoded video, even when network packet losses occur. IP-920 reduces the transmission cost for communication among remote locations that demand SDTV and HDTV video fidelity with the compact size and rugged construction.
 
@@ -16,19 +16,7 @@ An enhanced IP-920 can stream video more smoothly by supporting Ultra low latenc
 
 The information displayed in this connector is delivered in different pages and are described in the **Usage** section of this document.
 
-The connector manages independent counters, and a reset button is available to clear the content of these values as well as the internal counters of web page device.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial Version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 1.0                         |
+The connector manages independent counters, and a reset button is available to clear the content of these values as well as the internal counters of the webpage of the device.
 
 ## Installation and Timing
 
@@ -92,7 +80,7 @@ The Encoder Management Page displays the encoder status values and general contr
 
 ### Decoder Overview
 
-The Decoder Overview Page displays decoder general information, and handles internal counters, the page has a Reset button that clears the internal counters as well as the device web page internal counters.
+The Decoder Overview Page displays decoder general information, and handles internal counters, the page has a Reset button that clears the internal counters as well as the device webpage internal counters.
 
 ### Decoder Management
 

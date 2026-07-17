@@ -6,7 +6,7 @@ uid: Connector_help_Mitec_ALGA
 
 ## About
 
-This connector is used to monitor and configure a **Mitec ALGA** device.The device is designed specifically for VSAT (Very Small Aperture Terminal) applications. This SSPA (Solid-State Power Amplifier) features built-in redundancy, web page hosting, and SNMP support.
+This connector is used to monitor and configure a **Mitec ALGA** device.The device is designed specifically for VSAT (Very Small Aperture Terminal) applications. This SSPA (Solid-State Power Amplifier) features built-in redundancy, webpage hosting, and SNMP support.
 
 ## Key Features
 

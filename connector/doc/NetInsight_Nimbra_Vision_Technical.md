@@ -2,7 +2,7 @@
 uid: Connector_help_NetInsight_Nimbra_Vision_Technical
 ---
 
-# NetInsight_Nimbra_Vision
+# NetInsight Nimbra Vision
 
 ## About
 

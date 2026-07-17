@@ -4,57 +4,27 @@ uid: Connector_help_Synamedia_Virtual_DCM
 
 # Synamedia Virtual DCM
 
-The Synamedia Virtual DCM is a device that represents virtualized and software-based video processing, providing advanced video, audio, and metadata processing for live multiformat video delivery. It enables broadcasters, content providers, and service providers to deliver viewing experiences that meet their service requirements for picture quality, bandwidth efficiency, and multiscreen transcoding.
-
 ## About
 
-### Product Info
+The Synamedia Virtual DCM is a device that represents virtualized and software-based video processing, providing advanced video, audio, and metadata processing for live multiformat video delivery. It enables broadcasters, content providers, and service providers to deliver viewing experiences that meet their service requirements for picture quality, bandwidth efficiency, and multiscreen transcoding.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | V21_00_01              |
-| 1.0.1.x   | V21_00_01              |
-| 1.0.1.10+   | V23_00_01              |
-| 1.0.2.x   | V23_00_01              |
-| 1.0.3.x   | V23_00_01              |
-| 1.0.4.x   | V23_00_01              |
+## Key Features
 
-## Configuration
+- **Comprehensive monitoring**: The Synamedia Virtual DCM connector manages all inputs and outputs and presents them in an intuitive tree view, enabling rapid visualization of complex video workflows.
 
-### Connections
+- **Real-time metrics and reporting**: With the help of the Poll Manager feature, the most important and rapidly changing metrics can be polled more frequently to make sure real-time data is presented and monitored.
 
-#### HTTP Connection
+## Use Cases
 
-This connector uses an HTTPS connection and requires the following input during element creation:
+### Managing Modern Streaming Ingest
 
-HTTP CONNECTION:
+**Challenge**: Legacy systems that use the IIOP interface cannot configure or monitor modern low-latency internet protocols such as SRT and Zixi.
 
-- **IP address/host**: The polling IP or URL of the destination. Start with *https://IP*.
-- **IP port**: The IP port of the destination (default: *8443*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Solution**: This connector uses a RESTful API that allows both the configuration and monitoring of such modern technologies.
 
-#### HTTP Connection - Prometheus
+**Benefit**: Operators can fully configure and monitor these cloud-native input transport systems.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+## Technical Reference
 
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *9123*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Initialization
-
-On the HTTP page, you need to provide the credentials to log in to the device.
-
-If you want to make use of the performance data in Prometheus, you may need to enable this on the device. To do so, in the device GUI, go to Status \> Diagnostics. For example, to enable Zixi performance data, set the value for "diag.zixi.log_to_prometheus" to "true".
-
-## How to use
-
-When the correct credentials have been specified on the HTTP page, the connector can retrieve information from the device. You can speed up or slow down **polling** in the poll manager table. You can also disable polling to reduce the load on the device and on DataMiner.
-
-All the calls except those related to Prometheus data are REST calls. The Prometheus data is retrieved with a GET request to the correct IP and port.
-
-To be able to change parameters on the device, the polling mode must be set to **Edit Mode**. You can do this in the main table of each section. For example, on the Source SRT Settings page, the first table contains the generic information regarding the SRT source. In this table you can enable the Edit Mode. This will highlight the rows related to that source in all the tables and enable edit controls. When you are done configuring the source, click **Save Changes** to push the data to the device.
-
-While **Edit Mode** is active, **no updates** will be shown from the device. In addition, after a specific amount of time, Edit Mode will **automatically switch back to Polling Mode**. You can configure this amount of time on the **Configuration** page.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Synamedia_Virtual_DCM_Technical).

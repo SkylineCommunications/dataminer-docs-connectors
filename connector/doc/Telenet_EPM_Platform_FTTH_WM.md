@@ -4,23 +4,11 @@ uid: Connector_help_Telenet_EPM_Platform_FTTH_WM
 
 # Telenet EPM Platform FTTH WM
 
+## About
+
 This is a configuration manager connector designed to process a single provisioning file per DMS (Device Management System) for passive components, generating unique IDs for entities within the file.
 
 The connector is responsible for generating a CSV file for each ONT (Optical Network Terminal) change after reading from a Kafka stream topic.
-
-## About
-
-### Version Info
-
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version. | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
 
 ## Configuration
 
@@ -59,8 +47,8 @@ When you have created a new Telenet EPM Platform FTTH WM element, define the fol
 
 The provisioning of the EPM Solution is sequential and involves the following components:
 
-- **Skyline EPM Platform FTTH** as front-end element: Responsible for the top-level data aggregation and for displaying the topologies.
-- **Skyline EPM Platform FTTH** as back-end element: In charge of the data aggregation from the collectors.
+- **Skyline EPM Platform FTTH** as frontend element: Responsible for the top-level data aggregation and for displaying the topologies.
+- **Skyline EPM Platform FTTH** as backend element: In charge of the data aggregation from the collectors.
 - **Skyline EPM Platform FTTH Collector**: In charge of the ONT data aggregation from an OLT.
 - **Telenet EPM Platform FTTH WM**: Creates compatible files regarding the passives available within the GPON infrastructure and the KAFKA OLT KPIs.
 

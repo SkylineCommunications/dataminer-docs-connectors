@@ -8,6 +8,7 @@ The Standard DataMiner PTP Device is a **mediation** protocol used by the **PTP 
 
 The following connectors are currently mediated with the latest version:
 
+- ADVA Optical Networking OSA 5422
 - Arista Manager
 - Arista eOS Manager
 - Bridge Technologies VB Probe Series
@@ -20,6 +21,7 @@ The following connectors are currently mediated with the latest version:
 - Generic Switch
 - Hirschmann - a Belden Brand MAR 1040
 - Imagine Communications Selenio Network Processor
+- Juniper Networks Manager
 - Lawo HD Core Ravenna
 - Lawo Power Core
 - Lawo V__matrix
