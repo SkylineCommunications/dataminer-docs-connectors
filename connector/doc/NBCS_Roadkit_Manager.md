@@ -44,9 +44,9 @@ On the **General** page, a table lists the events known by the connector. This t
 
 - **Event State Details**: Displays more details in case the Event State is *Fail*.
 
-- **Job State**: Reflects the state of the job, if any. Possible values are *N/A* (i.e. Not Applicable), *Not Created* (if a job could not be created), and *Created* (if a job has been created).
+- **Job State**: Reflects the state of the job, if any. Possible values are *N/A* (i.e., Not Applicable), *Not Created* (if a job could not be created), and *Created* (if a job has been created).
 
-- **Booking State**: Reflects the state of the booking, if any. If there is **no booking**, the possible values are *N/A* (i.e. Not Applicable) or *Not Created* (if the booking could not be created). When there **is a booking**, the values fall back to the same values as the booking status (i.e. *Undefined*, *Pending*, *Confirmed*, *Completed*, *Disconnected*, *Interrupted*, or *Canceled*). The booking state is updated based on a timer.
+- **Booking State**: Reflects the state of the booking, if any. If there is **no booking**, the possible values are *N/A* (i.e., Not Applicable) or *Not Created* (if the booking could not be created). When there **is a booking**, the values fall back to the same values as the booking status (i.e., *Undefined*, *Pending*, *Confirmed*, *Completed*, *Disconnected*, *Interrupted*, or *Canceled*). The booking state is updated based on a timer.
 
 - **Start Proximity**
 

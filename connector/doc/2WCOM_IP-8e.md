@@ -62,7 +62,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### Redundancy
 
-The element is configured with a redundant connection. When the primary connection is no longer responding (i.e. a timeout occurs on this connection), DataMiner will automatically switch to the secondary connection (and vice versa).
+The element is configured with a redundant connection. When the primary connection is no longer responding (i.e., a timeout occurs on this connection), DataMiner will automatically switch to the secondary connection (and vice versa).
 
 ## How to use
 

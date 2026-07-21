@@ -34,8 +34,8 @@ With this connector, you can gather and view information from the device **Media
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.220.224.16*.
-- **IP port**: The port of the destination, e.g. *8080*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.220.224.16*.
+- **IP port**: The port of the destination, e.g., *8080*.
 
 ### Initialization
 

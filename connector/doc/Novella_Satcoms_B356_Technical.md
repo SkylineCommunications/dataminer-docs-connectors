@@ -20,10 +20,10 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600* (range: *300* - *9600*).
-  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits**: topbits specified in the manual of the device, e.g. *1*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600* (range: *300* - *9600*).
+  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
+  - **Stopbits**: topbits specified in the manual of the device, e.g., *1*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.
 
 - Interface connection:
 

@@ -16,7 +16,7 @@ This connector is intended to communicate with the device using SNMP commands.
 
 **SNMP CONNECTION**:
 
-\- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+\- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 
 \- **Device address**: not used
 
@@ -40,4 +40,4 @@ Here it's available the **Interface Details** table where is possible to have in
 
 ### Web Interface
 
-To have access to the device's configuration web page.
+To have access to the device's configuration webpage.

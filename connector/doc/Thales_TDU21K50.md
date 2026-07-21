@@ -26,7 +26,7 @@ The connector monitors the **Thales TDU21K50** device. For each exciter present 
 
 ### Exported connectors
 
-| **Exported protocol**                                                            | **Description**                                          |
+| Exported protocol                                                            | Description                                          |
 |----------------------------------------------------------------------------------|----------------------------------------------------------|
 | [Thales TDU21K50 Exciter A](xref:Connector_help_Thales_TDU21K50_Exciter_A) | DVE protocol for Thales TDU21K50 \[exported by 1.1.0.x\] |
 | [Thales TDU21K50 Exciter B](xref:Connector_help_Thales_TDU21K50_Exciter_B) | DVE protocol for Thales TDU21K50 \[exported by 1.1.0.x\] |
@@ -41,7 +41,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.220.224.16*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.220.224.16*.
 
 SNMP Settings:
 
@@ -69,7 +69,7 @@ It also contains five page buttons, **Amplifier**, **Transistor**, **Supply**, *
 
 ### Alarms Page
 
-This page displays the main alarms of the device, e.g. **Major Fault**, **Temperature Fault**, etc.
+This page displays the main alarms of the device, e.g., **Major Fault**, **Temperature Fault**, etc.
 
 ### Amplifiers Page (not available in range 1.1.0.x)
 
@@ -91,7 +91,7 @@ This page contains a table with the status of the cabinets present on the device
 
 ### Commands Page (not available in range 1.1.0.x)
 
-This page displays the commands of the device, e.g. **Transmitter Control**, **Reserve Exciter Control**, etc.
+This page displays the commands of the device, e.g., **Transmitter Control**, **Reserve Exciter Control**, etc.
 
 ### Configuration Page (not available in range 1.1.0.x)
 

@@ -62,4 +62,4 @@ Finally, DVEs can also be generated for the I30 DC power supply measurement modu
 
 ## Notes
 
-Every 5 minutes, the product information will be polled from the meter (e.g. I-30 DC) configured in the Modbus Addresses table. "ProductInformation 2" is polled first in order to retrieve the vendor and product name. This is necessary for the connector to know the type of device, so that it can send the correct commands.
+Every 5 minutes, the product information will be polled from the meter (e.g., I-30 DC) configured in the Modbus Addresses table. "ProductInformation 2" is polled first in order to retrieve the vendor and product name. This is necessary for the connector to know the type of device, so that it can send the correct commands.

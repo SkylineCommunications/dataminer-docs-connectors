@@ -30,6 +30,6 @@ There is no redundancy defined.
 
 ## How to use
 
-A DVE child element is created for each row in the **PTP** table unless the port status for that particular module is either *Disabled* or *Deleted*. All columns from the element running the **Meinberg Lantime M3000** connector are exported as single parameters to the subpage corresponding with the table name (e.g. the columns from the **Basic Networking table** in the parent connector are exported to the **Basic Networking page** in the child element).
+A DVE child element is created for each row in the **PTP** table unless the port status for that particular module is either *Disabled* or *Deleted*. All columns from the element running the **Meinberg Lantime M3000** connector are exported as single parameters to the subpage corresponding with the table name (e.g., the columns from the **Basic Networking table** in the parent connector are exported to the **Basic Networking page** in the child element).
 
 DCF connections are exported to the child element as a physical dynamic interface.

@@ -4,13 +4,17 @@ uid: Connector_help_Juniper_Networks_QFX3x00
 
 # Juniper Networks QFX3x00
 
+> [!IMPORTANT]
+> 
+> This connector is no longer supported by Skyline. Use [Juniper Networks Manager](https://catalog.dataminer.services/details/7cf35a6b-31e8-4c11-8991-591596a4d81b) instead.
+
 This SNMP connector allows monitoring of the chassis and the interfaces for the **Juniper Network QFX3x00** switches.
 
 ## About
 
 This connector is a standard SNMP connector that generally does not need any specific user interaction in order to work. After creation, various information is polled from the device and presented on different pages.
 
-However, the connector does have one extra feature that requires user interaction, i.e. the conditional monitoring. With conditional monitoring, the user can set which rows should be monitored or not in certain tables. These settings can be imported or exported (see Configuration section below). Of course, conditional monitoring will only work if an alarm template has been assigned to the element.
+However, the connector does have one extra feature that requires user interaction, i.e., the conditional monitoring. With conditional monitoring, the user can set which rows should be monitored or not in certain tables. These settings can be imported or exported (see Configuration section below). Of course, conditional monitoring will only work if an alarm template has been assigned to the element.
 
 ## Installation and Configuration
 

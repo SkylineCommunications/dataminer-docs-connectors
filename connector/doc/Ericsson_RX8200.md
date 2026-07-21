@@ -50,7 +50,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not needed.
 
 SNMP Settings:
@@ -65,7 +65,7 @@ Ranges 2.0.1.x and 3.0.0.x require a second, TCP/IP connection.
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port**: The port used by the device for its web interface, normally this is *80.*
 
 ### Configuration
@@ -194,7 +194,7 @@ This page allows you to set the timer intervals. It is only available in the **3
 
 ### Web Interface Page
 
-This page contains a link to the web page of the actual device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page contains a link to the webpage of the actual device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## DataMiner Connectivity Framework
 

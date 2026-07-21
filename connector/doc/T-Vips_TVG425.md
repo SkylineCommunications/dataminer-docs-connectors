@@ -22,7 +22,7 @@ The TVG425 provides gateway functionality to encapsulate MPEG-2 transport stream
 
 ### Product Info
 
-| **Range**        | **Device Firmware Version** |
+| Range        | Device Firmware Version |
 |-------------------------|-----------------------------|
 | 1.0.0.x                 | 1.4.x to 2.6.x              |
 | 1.0.1.x                 |                             |
@@ -38,7 +38,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 

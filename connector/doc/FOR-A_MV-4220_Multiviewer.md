@@ -54,7 +54,7 @@ This connector uses a serial connection and requires the following input during 
 SERIAL CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination. The IP port is **always 51000 + the last octet of the IP address** (e.g. if the IP address is *192.168.0.112*, the IP port is *51112*).
+- **IP port**: The IP port of the destination. The IP port is **always 51000 + the last octet of the IP address** (e.g., if the IP address is *192.168.0.112*, the IP port is *51112*).
 
 ### Web Interface
 

@@ -18,7 +18,7 @@ To get more detailed information consult the website <http://www.comtechefdata.c
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 - **Device address**: not used
 
 **SNMP Settings**:

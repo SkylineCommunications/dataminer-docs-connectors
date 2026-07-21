@@ -14,7 +14,7 @@ The connector displays several tables with general information for each device t
 
 ### Version Info
 
-| **Range**     | **Description**        | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description        | DCF Integration | Cassandra Compliant |
 |----------------------|------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version        | No                  | Yes                     |
 | 1.0.1.x [SLC Main]   | New range without DVEs | No                  | Yes                     |
@@ -28,7 +28,7 @@ The connector displays several tables with general information for each device t
 
 ### Exported connectors (only for range 1.0.0.x)
 
-| **Exported Connector**                           | **Description**               |
+| Exported Connector                           | Description               |
 |-------------------------------------------------|-------------------------------|
 | SatService sat-nms MNC - Antenna Controllers    | Antenna controller devices    |
 | SatService sat-nms MNC - Tracking Receiver      | Tracking receiver devices     |

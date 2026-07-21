@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device. e.g. *10.10.12.3*.
+- **IP address/host**: The polling IP of the device. e.g., *10.10.12.3*.
 
 SNMP Settings:
 
@@ -52,7 +52,7 @@ This page contains general information, such as **Control Mode**, **Input Module
 
 ### Input
 
-On this page, information is displayed regarding the device itself, e.g. **Asynchronous Serial Interface Delays**, **Transport Stream over IP and RF Delays**, **Transport Stream Commutation**, **Input Impedance**, **Frequency**, **Lost Mute Time**, **Input Selection**.
+On this page, information is displayed regarding the device itself, e.g., **Asynchronous Serial Interface Delays**, **Transport Stream over IP and RF Delays**, **Transport Stream Commutation**, **Input Impedance**, **Frequency**, **Lost Mute Time**, **Input Selection**.
 
 ### GPS
 

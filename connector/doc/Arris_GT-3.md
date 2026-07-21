@@ -18,7 +18,7 @@ This is an HTTP connector. The IP and port need to be configured during creation
 
 **HTTP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *8000*.
 
 ## Usage

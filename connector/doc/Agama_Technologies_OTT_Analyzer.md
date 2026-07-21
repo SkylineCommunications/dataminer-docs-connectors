@@ -21,7 +21,7 @@ This is an SSH connector. The IP address needs to be configured during creation 
 **SSH CONNECTION**:
 
 - **Type of port**: TCP/IP
-- **IP address**: The IP of the device, e.g. *10.11.12.13*.
+- **IP address**: The IP of the device, e.g., *10.11.12.13*.
 - **IP Port**: The IP port of the device, by default *22*.
 
 ### Configuration

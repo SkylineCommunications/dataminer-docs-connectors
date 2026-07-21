@@ -62,7 +62,7 @@ This page displays information on the interfaces, such as the operational state 
 
 ### Storage
 
-On this page, you can monitor the status of the storage (e.g. the size available per partition).
+On this page, you can monitor the status of the storage (e.g., the size available per partition).
 
 ### NTP
 

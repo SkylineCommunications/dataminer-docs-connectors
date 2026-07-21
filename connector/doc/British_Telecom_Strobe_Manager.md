@@ -47,7 +47,7 @@ When the element has been created, you need to configure several things on its *
 In addition, on the **MIP** page, you need to provide the references to the primary keys of the Cisco Nexus switches in order to have cross checking on the expectations vs. the actual routes and joins being made:
 
 - **API Ref Routes**, **Static Join Interface 1 API Ref**, and **Static Join Interface 2 API Ref**: These should point to the *Primary Key* *(PID:17201) as GUID values* of the **API Polling** table (see **CLI** page on the CISCO Nexus element that is configured per probe).
-- Via the context menu on the MIP tables you can add, update or remove trackers. Note that typically, linked Automation scripts ("*Control Path Nexus Auto*" or "*Control Path Nexus Manual*") take care of adding/updating the trackers list instead, which means that no manual configuration is needed.
+- Via the context menu on the MIP tables you can add, update or remove trackers. Note that typically, linked automation scripts ("*Control Path Nexus Auto*" or "*Control Path Nexus Manual*") take care of adding/updating the trackers list instead, which means that no manual configuration is needed.
 
 ## How to Use
 

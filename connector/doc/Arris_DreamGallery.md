@@ -20,7 +20,7 @@ This connector uses a **Serial** connection and needs following user information
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 - **IP port**: the port of the connected device, default value: *22*
 - **Bus address**: the bus address of the connected device
 
@@ -36,7 +36,7 @@ On the TomCat DreamGallery page the the status of the TomCat, DreamGallery and t
 
 The **Connected Clients** group box displays the number of connected clients for the Comet Registry and the Comet server.
 
-On the bottom of the page there is a page button available that will open up a pop-up page where the IP+port (e.g. *172.16.1:29:8080*) can be filled in for each of the servers on the **TomCat DreamGallery** page.
+On the bottom of the page there is a page button available that will open up a pop-up page where the IP+port (e.g., *172.16.1:29:8080*) can be filled in for each of the servers on the **TomCat DreamGallery** page.
 
 ### Varnish page
 

@@ -10,7 +10,7 @@ This connector allows you to monitor a configured Moxa ioLogik E1210 device via 
 
 ### Version Info
 
-| **Range** | **Key Features**                | **Based on** | **System Impact**              |
+| Range | Key Features                | Based on | System Impact              |
 |-----------|---------------------------------|--------------|--------------------------------|
 | 1.0.0.x   | Monitoring of DI channels       | -            | -                              |
 | 1.0.1.x   | Improved DI channel display key | 1.0.0.x      | Display keys have been updated |
@@ -39,7 +39,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 

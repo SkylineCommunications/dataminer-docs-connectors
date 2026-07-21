@@ -20,7 +20,7 @@ This connector uses an **SNMP** and **HTTP** connection. The following informati
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 
@@ -30,7 +30,7 @@ This connector uses an **SNMP** and **HTTP** connection. The following informati
 
 **HTTP CONNECTION**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port number**: The port of the connected device, by default *80* (HTTP).
 
 ### Configuration HTTP

@@ -6,7 +6,7 @@ uid: Connector_help_Telenor_InHome_Status
 
 This connector is used to process the incoming messages from EKOM HUB.
 
-The incoming messages are being forwarded by an Automation script that is specifically designed to relay them from the DataMiner API deployment feature.
+The incoming messages are being forwarded by an automation script that is specifically designed to relay them from the DataMiner API deployment feature.
 
 ## About
 
@@ -26,7 +26,7 @@ The incoming messages are being forwarded by an Automation script that is specif
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                        | Exported Components     |
 |-----------|---------------------|-------------------------|------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | TLRN-AS-InHomeStatus (Automation script) | -                       |
+| 1.0.0.x   | No                  | Yes                     | TLRN-AS-InHomeStatus (automation script) | -                       |
 
 ## Configuration
 

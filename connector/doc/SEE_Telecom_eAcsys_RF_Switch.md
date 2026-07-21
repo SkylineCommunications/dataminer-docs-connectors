@@ -32,14 +32,14 @@ This connector uses a Simple Network Management Protocol (**SNMP**) connection a
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device (e.g. *127.0.0.1*).
+- **IP address/host**: The polling IP of the device (e.g., *127.0.0.1*).
 - **Device address**: Not required.
 
 SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device (e.g. *public*).
-- **Set community string**: The community string used when setting values on the device (e.g. *private*).
+- **Get community string**: The community string used when reading values from the device (e.g., *public*).
+- **Set community string**: The community string used when setting values on the device (e.g., *private*).
 
 #### HTTP Control connection
 
@@ -47,8 +47,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination (e.g. *127.0.0.1*).
-- **IP port**: The IP port of the destination (e.g. *80*).
+- **IP address/host**: The polling IP or URL of the destination (e.g., *127.0.0.1*).
+- **IP port**: The IP port of the destination (e.g., *80*).
 - **Bus address**: *bypassproxy.*
 
 ## Usage

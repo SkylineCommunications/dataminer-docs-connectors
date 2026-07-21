@@ -21,7 +21,7 @@ This connector uses a **virtual connection** and does not need any user input du
 ### Extra Configuration
 
 In order to poll the databases, the **primary and secondary HADB Connection String** must be filled in. These can be found on the **General** page.
-(e.g. Server=*192.168.XX.XX;Database=HAdb;User Id=XXXX;Password=XXXX;*)
+(e.g., Server=*192.168.XX.XX;Database=HAdb;User Id=XXXX;Password=XXXX;*)
 
 ## Usage
 

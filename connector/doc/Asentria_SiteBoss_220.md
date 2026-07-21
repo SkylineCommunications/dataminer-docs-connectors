@@ -54,7 +54,7 @@ There are also configurable time-related parameters such as **Device Date** and 
 
 ### Events Page
 
-On this page, you can find the **Event Sensor Points** table, which organizes four basic attributes of points. A point is a particular sensor on an event sensor (e.g. temperature, humidity, contact closure 2, relay 5, etc.). The four point attributes are its name, whether it is in its event state, the point's value as a number, and its value as a string.
+On this page, you can find the **Event Sensor Points** table, which organizes four basic attributes of points. A point is a particular sensor on an event sensor (e.g., temperature, humidity, contact closure 2, relay 5, etc.). The four point attributes are its name, whether it is in its event state, the point's value as a number, and its value as a string.
 
 On this page you can also find page buttons to the sensor configuration pages regarding **Temperature**, **Humidity**, **Analog Input** and **Relay**.
 
@@ -62,7 +62,7 @@ On this page you can also find page buttons to the sensor configuration pages re
 
 On this subpage, you can find the **Event Sensor Temperature Configuration**. This table displays three basic attributes of temperature sensor points:
 
-- The configuration item (e.g. enable, name, etc.).
+- The configuration item (e.g., enable, name, etc.).
 - The event sensor on which this point resides.
 - The point number (always 1 for temperature sensors).
 
@@ -70,7 +70,7 @@ On this subpage, you can find the **Event Sensor Temperature Configuration**. Th
 
 On this subpage, you can find the **Event Sensor Humidity Configuration**. This table displays three basic attributes of humidity points:
 
-- The configuration item (e.g. enable, name, etc.).
+- The configuration item (e.g., enable, name, etc.).
 - The event sensor on which this point resides.
 - The point number (always 1 for humidity sensors).
 
@@ -78,7 +78,7 @@ On this subpage, you can find the **Event Sensor Humidity Configuration**. This 
 
 On this subpage, you can find the **Event Sensor Analog Input Configuration Table**. This table displays three basic attributes of analog input points:
 
-- The configuration item (e.g. enable, name, etc.).
+- The configuration item (e.g., enable, name, etc.).
 - The event sensor on which this point resides.
 - The point number.
 
@@ -106,7 +106,7 @@ Finally, there is also the **SNMP Alerts** configuration, where you can check wh
 
 ### Traps Page
 
-On this page, you can find **Traps table** with the received traps from the device (e.g. PowerUp Trap, Contact Trap, Temperature Trap, Humidity Trap, and Test Trap).
+On this page, you can find **Traps table** with the received traps from the device (e.g., PowerUp Trap, Contact Trap, Temperature Trap, Humidity Trap, and Test Trap).
 
 ### Web Interface Page
 

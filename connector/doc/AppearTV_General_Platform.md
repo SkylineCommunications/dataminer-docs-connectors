@@ -38,7 +38,7 @@ SOAP calls are used to retrieve the device information. SNMP traps are used to c
 | 4.1.0.x | SNMP connection added to collect SNMP traps. | No | No |
 | 4.2.0.x | Serial connection replaced by HTTP connection. | No | No |
 | 4.3.0.x | Removal of communicationOptions="redundantPolling". | No | No |
-| 4.4.0.x | Review of the connector (optimization of QActions, removal of unused parameters, etc.) NOTE: The update from 4.4.0.102 to 4.4.0.103 involves a key change that may affect Visio drawings, Automation scripts, etc. The 4.4.1.x version range should be used instead of 4.4.0.103 and onwards. | No | No |
+| 4.4.0.x | Review of the connector (optimization of QActions, removal of unused parameters, etc.) NOTE: The update from 4.4.0.102 to 4.4.0.103 involves a key change that may affect Visio drawings, automation scripts, etc. The 4.4.1.x version range should be used instead of 4.4.0.103 and onwards. | No | No |
 | 4.4.1.x | Based on 4.4.0.107. The Input Redundancy Table (PID 18400) key has been reverted to be as it was in the 4.4.0.102 version. | No | No |
 | 4.4.2.x [SLC Main] | Based on 4.4.1.32. New column for second backup input added in Input Redundancy table (supported in firmware v3.42). | No | No |
 | 5.0.0.x [Obsolete] | Implementation of the class library features - requires DataMiner 9.6.3.0 - 8092. The 5.0.0.x-range is a spin-off based on version 4.4.1.12, because of the increased minimum DataMiner version. Development should still happen in the 4.4.1.x-range. A new spin-off version in the 5.0.0.x-range can be made when needed afterwards. | No | No |
@@ -114,7 +114,7 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
 - **If the status for a row is disabled in the configuration table, there will be no corresponding row in the status table.**
 
-  If there is no status data for a certain module (i.e. the status table is empty), check in the configuration table of that module if the status parameter for the corresponding row has been set to enabled.
+  If there is no status data for a certain module (i.e., the status table is empty), check in the configuration table of that module if the status parameter for the corresponding row has been set to enabled.
 
 - **When the element has just been restarted, it is possible that the settings are carried out with a delay.**
 
@@ -126,7 +126,7 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
 - Old history log files in *C:\Skyline DataMiner\Logging\AppearTV\\element name\]\\History* are removed automatically when they are older than one week.
 
-- **SOAP responses** are only logged in *C:\Skyline DataMiner\Logging\AppearTV\\element name\]\\SOAP Responses\get\[\].xml* if the parameter **Log SOAP Responses** is **Enabled** on the General page. The number after the underscore in the name of the command refers to the controller card (1: main controller card, 2: backup controller card), e.g. *getService\_**1**.xml*.
+- **SOAP responses** are only logged in *C:\Skyline DataMiner\Logging\AppearTV\\element name\]\\SOAP Responses\get\[\].xml* if the parameter **Log SOAP Responses** is **Enabled** on the General page. The number after the underscore in the name of the command refers to the controller card (1: main controller card, 2: backup controller card), e.g., *getService\_**1**.xml*.
 
 - **SOAP set commands** are always logged in *C:\Skyline DataMiner\Logging\AppearTV\\element name\]\\SOAP SetCommands\set\[\].xml*.
 
@@ -161,6 +161,8 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
   Not specified
 
+- **INPUT DUAL IP**
+
 - **INPUT DVB T2**
 
 - **INPUT ISDB-T**
@@ -188,6 +190,8 @@ To have "Not available" rows automatically removed from the tables, enable the o
 - **OUTPUT COFDMOUT-CABLE**
 
 - **OUTPUT IPSWITCH**
+  
+- **OUTPUT DUAL IP**
 
 - **OUTPUT RADIO**
 
@@ -245,7 +249,7 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
   \*SC/AUDLEV150, \*SC/AUDLEV250
 
-- **DECODER, DESCRAMBLER**
+- **DECODER, DESCRAMBLER, ENCODER**
 
 - **IP-T2GW**
 

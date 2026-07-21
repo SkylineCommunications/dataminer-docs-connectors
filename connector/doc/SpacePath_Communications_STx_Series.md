@@ -56,7 +56,7 @@ SNMP Settings:
 
 This connector uses a serial connection and requires the following input during element creation:
 
-- **IP address/host**: The polling IP of the device e.g. 10.11.12.13.
+- **IP address/host**: The polling IP of the device e.g., 10.11.12.13.
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device.
 
@@ -116,7 +116,7 @@ This page is used for the **configuration** of the device **IP communication**.
 
 ### Configuration
 
-This page contains parameters used for the **configuration of several device functionalities** (e.g. Device Control Mode, Bus Address, and Serial COM and CLI communication options).
+This page contains parameters used for the **configuration of several device functionalities** (e.g., Device Control Mode, Bus Address, and Serial COM and CLI communication options).
 
 ### Web Interface
 

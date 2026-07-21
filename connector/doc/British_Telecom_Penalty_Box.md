@@ -4,11 +4,11 @@ uid: Connector_help_British_Telecom_Penalty_Box
 
 # British Telecom Penalty Box
 
-The British Telecom Penalty Box groups service-impacting alarms in the DMS and triggers the Penalty Box Configuration Automation script to display the affected service with the highest priority on the screen.
+The British Telecom Penalty Box groups service-impacting alarms in the DMS and triggers the Penalty Box Configuration automation script to display the affected service with the highest priority on the screen.
 
 ## About
 
-The British Telecom Penalty Box retrieves a string of combined alarm information from the Penalty Box Configuration Automation script. The alarm data is extracted from this string and the alarms are individually stored in the Alarm Table. This table is periodically checked and the alarms are grouped per service in the Service Table. If a change occurs to the service with the highest priority in the Service Table, the Penalty Box Configuration Automation script is triggered for this service.
+The British Telecom Penalty Box retrieves a string of combined alarm information from the Penalty Box Configuration automation script. The alarm data is extracted from this string and the alarms are individually stored in the Alarm Table. This table is periodically checked and the alarms are grouped per service in the Service Table. If a change occurs to the service with the highest priority in the Service Table, the Penalty Box Configuration automation script is triggered for this service.
 
 ### Version Info
 
@@ -52,7 +52,7 @@ The **Display Duration** defines the amount of time the services will be display
 
 ## Notes
 
-This connector should be used together with the following Automation scripts:
+This connector should be used together with the following automation scripts:
 
 - Penalty Box Alarms
 - Penalty Box Configuration

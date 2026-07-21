@@ -14,7 +14,7 @@ The XRF4 is a non-blocking, high-density wideband RF router for signals from 40 
 |--------------------|----------------------------------|----------|-------------------------------------------------------------------|
 | 1.0.0.x [Obsolete] | Initial version.                 | -        | -                                                                 |
 | 1.0.1.x            | Redundant polling.               | 1.0.0.1  | Connection setting.                                               |
-| 1.0.2.x [SLC Main] | Display discrete values changed. | 1.0.1.1  | Potentially affects alarms, Visual Overviews, Automation scripts. |
+| 1.0.2.x [SLC Main] | Display discrete values changed. | 1.0.1.1  | Potentially affects alarms, Visual Overviews, automation scripts. |
 
 ### Product Info
 

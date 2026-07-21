@@ -58,11 +58,11 @@ To add a location, this connector currently supports two methods:
 
 - **Add Location**: The following fields are required:
 
-  - **ISO Country Code**: Weather Underground uses custom ISO country codes (e.g. BE). You can find the custom codes on the following page: <https://www.wunderground.com/weather/api/d/docs?d=resources/country-to-iso-matching>.
+  - **ISO Country Code**: Weather Underground uses custom ISO country codes (e.g., BE). You can find the custom codes on the following page: <https://www.wunderground.com/weather/api/d/docs?d=resources/country-to-iso-matching>.
 
-  - **Weather Station Location Code**: The location name (e.g. Gent).
+  - **Weather Station Location Code**: The location name (e.g., Gent).
 
-    It could be that when you select this option, multiple responses (for different locations) are possible, e.g. when the same location name is available for more than one country. If this is the case, the results will be stored in the **Multiple Results** table. In this table, you can select the correct location in order to add it to the Locations table.
+    It could be that when you select this option, multiple responses (for different locations) are possible, e.g., when the same location name is available for more than one country. If this is the case, the results will be stored in the **Multiple Results** table. In this table, you can select the correct location in order to add it to the Locations table.
 
 - **Location ZMW**: The following fields are required:
 

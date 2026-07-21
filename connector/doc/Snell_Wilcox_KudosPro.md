@@ -12,7 +12,7 @@ This connector allows the management of the **Snell Wilcox KudosPro** using a se
 
 ### Version Info
 
-| Range     | Description     | **DCF Integration** |
+| Range     | Description     | DCF Integration |
 |------------------|-----------------|---------------------|
 | 1.0.0.x          | Initial version | Yes                 |
 
@@ -32,8 +32,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *172.16.61.11*.
-- **IP port**: The IP port of the device, e.g. *2050*.
+- **IP address/host**: The polling IP of the device, e.g., *172.16.61.11*.
+- **IP port**: The IP port of the device, e.g., *2050*.
 - **Bus address**: Used to fill in the Unit Address and the Unit Port. For example, if *26.02* is filled in, this represents the Unit Address *0x26* and Unit Port *0x02*.
 
 ## Usage
@@ -52,9 +52,9 @@ This page allows you to specify a video input source using the **Input Select** 
 
 ### Output Page
 
-This page allows you to apply various settings and adjustments to the video output signal (e.g. Output Standard, Current Output Standard and Output Format)
+This page allows you to apply various settings and adjustments to the video output signal (e.g., Output Standard, Current Output Standard and Output Format)
 
-It also contains parameters related to the **Scrolling Caption Generator** (e.g. Caption Entry), **Blanking** (e.g. Embedded Audio), and **Logo Control** (e.g. Current Selected Logo, H Position and V Position).
+It also contains parameters related to the **Scrolling Caption Generator** (e.g., Caption Entry), **Blanking** (e.g., Embedded Audio), and **Logo Control** (e.g., Current Selected Logo, H Position and V Position).
 
 ### Video Page
 
@@ -70,7 +70,7 @@ This page contains parameters related to the Aspect Ratio Control (ARC). It allo
 
 ### Audio Routing Page
 
-This page contains the audio routing parameters (e.g. **AES 1** to **AES4**).
+This page contains the audio routing parameters (e.g., **AES 1** to **AES4**).
 
 ### Audio Shuffle Page
 

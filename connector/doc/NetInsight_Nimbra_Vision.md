@@ -24,7 +24,7 @@ The DataMiner Nimbra Vision connector provides not only a comprehensive view of 
 
 - **Challenge**: Traditionally, device products have focused on managing their specific configurations, which makes it challenging for third-party platforms to integrate all features of each specific device product while providing and holistic view.
 - **Solution**: This connector provides management and orchestration functionalities for Nimbra MSR networks. This allows DataMiner to act as an orchestrator of orchestrators, leveraging Vision's computational and routing algorithms while maintaining a comprehensive view of the infrastructure and enabling end-to-end service orchestration across the Nimbra network.
-- **Benefit**: You get a fully integrated ecosystem that manages and monitors the life cycle of your services on your Nimbra network.
+- **Benefit**: You get a fully integrated ecosystem that manages and monitors the lifecycle of your services on your Nimbra network.
 
 ## Technical info
 

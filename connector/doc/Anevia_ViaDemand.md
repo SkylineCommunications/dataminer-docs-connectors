@@ -16,8 +16,8 @@ This connector uses an **HTTP** connection and requires the following input duri
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.24.5.10*.
-- **IP port**: The port of the destination, e.g. *80*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.24.5.10*.
+- **IP port**: The port of the destination, e.g., *80*.
 
 ### Initialization
 
@@ -47,7 +47,7 @@ It also allows you to create a new task to play.
 
 In the table, you can see the **task ID**, which is used to edit a task.
 
-Via the parameter **Select Task**, you can choose a task and then click **Edit** to edit that task. On the **Edit** page, you can fill in all the settings for the task and then choose to either create a new task or edit this task. Some task parameters cannot be edited, e.g. **source** and **destination**, so editing these will automatically result in a new task.
+Via the parameter **Select Task**, you can choose a task and then click **Edit** to edit that task. On the **Edit** page, you can fill in all the settings for the task and then choose to either create a new task or edit this task. Some task parameters cannot be edited, e.g., **source** and **destination**, so editing these will automatically result in a new task.
 
 ### Disk Overview
 

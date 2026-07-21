@@ -48,17 +48,17 @@ It is important to note that many of the tables show historical statistics infor
 
 ### General
 
-This page displays general information regarding the device, e.g. **System Description**, **System Up Time**, etc.
+This page displays general information regarding the device, e.g., **System Description**, **System Up Time**, etc.
 
 The **Interfaces** button provides access to additional information about the different interfaces of the device. For each interface, some information is available, such as the **IF Speed**, **IF Physical Address**, **IF Operational Status** and statistics of the **inbound**/**outbound** **packets**.
 
 ### Chassis
 
-This page contains important information about the chassis itself, e.g. the **Chassis Type**, **Chassis Hw Version**, **Chassis Number of Slots**, etc.
+This page contains important information about the chassis itself, e.g., the **Chassis Type**, **Chassis Hw Version**, **Chassis Number of Slots**, etc.
 
 ### Card
 
-This page displays information about the cards installed in the platform and the interfaces available in each card, e.g. the **Card Type**, **Card Operational Status**, etc.
+This page displays information about the cards installed in the platform and the interfaces available in each card, e.g., the **Card Type**, **Card Operational Status**, etc.
 
 ### Sensor
 

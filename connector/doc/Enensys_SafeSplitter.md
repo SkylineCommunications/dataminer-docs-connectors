@@ -4,7 +4,7 @@ uid: Connector_help_Enensys_SafeSplitter
 
 # Enensys SafeSplitter
 
-SafeSplitter is a dual-channel splitter that outputs two incoming ASI signals over 3 ASI outputs each. In case of power failure or equipment breakdown, SafeSplitter maintains service continuity and outputs the input signals on the first output of each channel. SafeSplitter also provides advanced monitoring of the incoming MPEG-2 transport streams, and it can detect and raise any errors related to ASI synchronization loss, ETR290 level, T2-MI, or MPEG-2 TS. In addition, it monitors MPEG-2 TS QoS, i.e. the service availability error ratio and the service degradation error ratio.
+SafeSplitter is a dual-channel splitter that outputs two incoming ASI signals over 3 ASI outputs each. In case of power failure or equipment breakdown, SafeSplitter maintains service continuity and outputs the input signals on the first output of each channel. SafeSplitter also provides advanced monitoring of the incoming MPEG-2 transport streams, and it can detect and raise any errors related to ASI synchronization loss, ETR290 level, T2-MI, or MPEG-2 TS. In addition, it monitors MPEG-2 TS QoS, i.e., the service availability error ratio and the service degradation error ratio.
 
 ## About
 

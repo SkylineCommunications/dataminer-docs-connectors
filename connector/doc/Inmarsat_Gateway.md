@@ -106,7 +106,7 @@ To request information from the terminal devices via **SSH**, the following info
 
 ### Configuration
 
-This page can be used to configure the **Maintenance Method** for events, i.e. depending on the **number** **of days**, depending on the **number** **of lines** or **none**. The **last update timestamp** of the events is also displayed here.
+This page can be used to configure the **Maintenance Method** for events, i.e., depending on the **number** **of days**, depending on the **number** **of lines** or **none**. The **last update timestamp** of the events is also displayed here.
 
 Finally, you can also **enable/disable** the **SSH** communication by toggling the **NSD Info Retrieval** toggle button.
 

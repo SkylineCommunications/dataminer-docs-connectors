@@ -29,7 +29,7 @@ This protocol is created by the **Evertz MVP OV** connector. For each bus addres
 ### Configuration
 
 The DVE is created by the parent connector protocol (**Evertz MVP OV**). It uses the name of the parent connector + the bus addres + the bus name.
-e.g. **ParentName.1_BusName**
+e.g., **ParentName.1_BusName**
 
 You can change the bus name in the HardwareControl Table on the parent connector.
 

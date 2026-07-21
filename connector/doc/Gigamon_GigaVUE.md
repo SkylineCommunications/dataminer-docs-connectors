@@ -15,7 +15,7 @@ The connector communicates with the device by using SNMP requests and it also al
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version | - | - |
-| 1.0.1.x [SLC Main] | Parameters listed in the Notes section were modified and some pages were added | 1.0.0.x | Any references in the DMS to the changed parameters need to be checked (Visio files, Automation scripts, DMS filters, reports, etc.) |
+| 1.0.1.x [SLC Main] | Parameters listed in the Notes section were modified and some pages were added | 1.0.0.x | Any references in the DMS to the changed parameters need to be checked (Visio files, automation scripts, DMS filters, reports, etc.) |
 
 ### Product Info
 

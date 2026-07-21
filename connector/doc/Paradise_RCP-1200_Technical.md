@@ -30,7 +30,7 @@ The following fault status information is shown for the device:
 - **RF Switch**: Displays whether the position of the switch is set to *POS1* or *POS2*.
 - **Fault Monitoring**
 - **(External) Amplifier Power**: Displays whether the external amplifier is *Faulted* or *Normal*.
-- **External UID**: Displays the status of external user-defined inputs (e.g. *Normal* or *Fault*).
+- **External UID**: Displays the status of external user-defined inputs (e.g., *Normal* or *Fault*).
 
 ### System Setup
 

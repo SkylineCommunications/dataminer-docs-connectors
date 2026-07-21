@@ -53,7 +53,7 @@ Here is how you can upload and process a Log Collector package:
 
 1. **Run *SL_LogCollector.exe*** on the target (customer) DMA. For more information, see [SLLogCollector](https://aka.dataminer.services/sllogcollector).
 
-1. **Copy the resulting package** to a location with a short path, e.g. a personal root directory.
+1. **Copy the resulting package** to a location with a short path, e.g., a personal root directory.
 
    Note that the SLC CDMR LogCollector suffers from the Windows limitation that a path may only have 255 characters. If the path is longer than that, it may not work correctly and log an error.
 
@@ -65,13 +65,13 @@ Here is how you can upload and process a Log Collector package:
 
 1. Fill in the **path** of the package and select its **customer acronym**.
 
-   As mentioned above, it is important that you keep the path short (e.g. *\\SLC-NAS-01.skyline.local\Users\LaurensVC*). It is also important that the customer acronym is selected at this point
+   As mentioned above, it is important that you keep the path short (e.g., *\\SLC-NAS-01.skyline.local\Users\LaurensVC*). It is also important that the customer acronym is selected at this point
 
 1. Click **Retrieve Packages**. This will retrieve all Log Collector zip files from the specified location.
 
 1. Optionally, to create a new element for a customer that does not yet exist on CDMR, fill in a **New Customer Mail Domain**, and click **Add Customer Element***.*
 
-   If the customer already exists, the customer view with the corresponding element will have the format *\[CustomerAcronym\] \[CustomerName\]*, e.g. *SLC Skyline Communications*.
+   If the customer already exists, the customer view with the corresponding element will have the format *\[CustomerAcronym\] \[CustomerName\]*, e.g., *SLC Skyline Communications*.
 
 1. Select the **DMA Name**, then select the **Filename** for that DMA. If you have several different packages for one DMA, make sure to select the correct one.
 
@@ -81,7 +81,7 @@ Here is how you can upload and process a Log Collector package:
 
 ### Clean Up
 
-This page is obsolete but is kept for the purpose of backwards compatibility. It used to list any temporary directories that were not deleted because of interruptions, e.g. a DMA restart or connection problems.
+This page is obsolete but is kept for the purpose of backwards compatibility. It used to list any temporary directories that were not deleted because of interruptions, e.g., a DMA restart or connection problems.
 
 However, in case such temporary directories that have not removed exist, we recommend to remove them manually instead of using this page.
 

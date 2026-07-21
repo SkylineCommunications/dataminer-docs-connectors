@@ -4,7 +4,7 @@ uid: Connector_help_APA_Sound_Monitoring
 
 # APA Sound Monitoring
 
-This connector can be used to interact with a media monitoring solution from APA-Comm. Test results of radio streams, podcasts, and audio streams are available for each different test device. Current audio streams, e.g. podcasts, are available for each channel.
+This connector can be used to interact with a media monitoring solution from APA-Comm. Test results of radio streams, podcasts, and audio streams are available for each different test device. Current audio streams, e.g., podcasts, are available for each channel.
 
 ## About
 

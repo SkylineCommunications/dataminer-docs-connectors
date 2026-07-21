@@ -16,7 +16,7 @@ The different parameters from the device are displayed on multiple pages. Specif
 
 This connector uses a **Serial** connection and requires the following input during element creation:
 
-- **IP address/host**: The IP address of the device, e.g. *192.168.10.2.*
+- **IP address/host**: The IP address of the device, e.g., *192.168.10.2.*
 - **IP port**: The port of the connected device, by default *22*.
 
 ### Version Info

@@ -44,7 +44,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *8676*.
 - **Bus address**: By default, this field is filled in with "*ByPassProxy*". This is necessary to avoid network issues.
 
@@ -54,7 +54,7 @@ This connector has a secondary connection and requires the following input durin
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *8676*.
 - **Bus Address**: By default, this field is filled in with "*ByPassProxy*". This is necessary to avoid network issues.
 

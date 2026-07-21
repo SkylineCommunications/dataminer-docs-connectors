@@ -75,7 +75,7 @@ This element has the following data pages:
 - **Channel 05/08**
 - **Channel 09/12**
 - **Channel 13/16**
-- **Alarm Priority**: This page displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: This page displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

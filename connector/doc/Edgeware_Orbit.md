@@ -122,6 +122,7 @@ On this page, you can configure custom commands to send to the device. There are
 For the configuration of custom CLI commands, please note the following:
 
 - The .csv file used to import custom CLI commands should have the following format: *Polling Interval,Result Type,Command Name,Command*.
-  E.g. *10,string,Uname,uname -a*
+
+  Example: *10,string,Uname,uname -a*
 
 - The field 'Command Name' in the .csv file must not contain commas.

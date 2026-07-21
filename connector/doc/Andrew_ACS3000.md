@@ -27,7 +27,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the Andrew ACS3000 connected to the network, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the Andrew ACS3000 connected to the network, e.g., *10.11.12.13.*
 - **IP port**: The port of the local TCP connection used by the Andrew ACS3000 (default: *6192*).
 
 ## Usage

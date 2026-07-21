@@ -20,7 +20,7 @@ This is an SNMP connector. The IP and Bus Address need to be configured during c
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: The bus address of the device. The default value is *1.*
 
 **SNMP Settings**:

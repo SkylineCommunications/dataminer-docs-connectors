@@ -122,7 +122,7 @@ In the table, for each Amplifier/Frequency pair, you can set the **Expected Valu
 Via the **Import Expected Values** page button, you can import a CSV file containing the **Expected Value** and the **Margin** per Amplifier/Frequency pair:
 
 - The CSV file needs to adhere to the following naming convention: *\<DMA_ID\>\_\<Element_ID\>\_ExpectedValues.csv* (eg. *192_9322_ExpectedValues.csv*).
-- The rows of the file must have the following format: *\<Name\>,\<Frequency\>(MHz),\<Expected Value\>(dB),\<Margin\>(dB)* (e.g. "*id=70307,450,11,2"*).
+- The rows of the file must have the following format: *\<Name\>,\<Frequency\>(MHz),\<Expected Value\>(dB),\<Margin\>(dB)* (e.g., "*id=70307,450,11,2"*).
 
 #### Reductions Table
 
@@ -183,9 +183,9 @@ This page contains all the parameters needed to configure the provisioning via C
 
 - The left side of the page displays the **Import via CSV section**.
 
-> In this section, the **Directory Path Name** should contain the directory where the CSV file(s) you want to import are located. For example, if your files are in the Downloads folder of your local C:\\ drive, specify *C:\Downloads*. If the directory containing the files is accessed remotely (e.g. if you specify '*\\80.62.121.234'*), you also need to specify a **Network Share User Name** (can contain a domain name, but not always needed) and a **Network Share Password**.
+> In this section, the **Directory Path Name** should contain the directory where the CSV file(s) you want to import are located. For example, if your files are in the Downloads folder of your local C:\\ drive, specify *C:\Downloads*. If the directory containing the files is accessed remotely (e.g., if you specify '*\\80.62.121.234'*), you also need to specify a **Network Share User Name** (can contain a domain name, but not always needed) and a **Network Share Password**.
 >
-> With this provisioning tool, the connector can immediately synchronize with the amplifier configuration that the Huawei iManager U2000 dumped in the specified directory. The **Expected File Name** and **Expected File Format** indicate the kind of files the connector expects. This way, the connector is adapted to the way the Huawei iManager U2000 dumps the information that this connector needs. It can synchronize the configuration daily, if you enable this via the toggle button **Automatic Refresh of the Amplifier CSV Provisioning**. You can also force a refresh by clicking the button **Force Refresh** or by setting this parameter (with ID 3101) via an Automation script.
+> With this provisioning tool, the connector can immediately synchronize with the amplifier configuration that the Huawei iManager U2000 dumped in the specified directory. The **Expected File Name** and **Expected File Format** indicate the kind of files the connector expects. This way, the connector is adapted to the way the Huawei iManager U2000 dumps the information that this connector needs. It can synchronize the configuration daily, if you enable this via the toggle button **Automatic Refresh of the Amplifier CSV Provisioning**. You can also force a refresh by clicking the button **Force Refresh** or by setting this parameter (with ID 3101) via an automation script.
 >
 > All imported data will be used to populate the **Main Poll Table**: The first two columns will be imported in the first two columns of the Main Table (**Amplifier Name** and **IP Address**) and are the most important for polling. The other 11 columns contain additional information (such as the hardware or software version of the amplifier), which is added to the table after the Table Instances. The IP addresses are the addresses that DataMiner will use to communicate with the amplifiers.
 
@@ -195,7 +195,7 @@ Note:
 
 - **Not all files** that pass the **Expected File Name** check will be **imported**. In the files that pass the first check and are considered valid, the algorithm searches for the **most recent timestamp**. It will then only import the files that contain this most recent timestamp and ignore the other, older files. This way, when the Huawei iManager U2000 dumps a new CSV file with a more recent timestamp, that file will be prioritized and updates of the IP addresses will be detected correctly. You can see which files have been imported and what their timestamp was in the CSV Response Message.
 - The **Amplifier Name** is the **unique key** used. The connector will therefore not allow the import of two amplifiers with the same Amplifier Name. Note that when the iManager U2000 element detects that an amplifier has changed IP addresses, it can dump a new CSV file in the directory with the same Amplifier Name and another IP address. The connector will then detect this and adjust the IP address. As a consequence, this collector connector will dynamically adapt to the new IP address.
-- The validity of every row of the CSV file is checked before it is processed, e.g. a check if the IP address is a valid IPv4 address.
+- The validity of every row of the CSV file is checked before it is processed, e.g., a check if the IP address is a valid IPv4 address.
 - Each primary key will be unique, but the IP address does not have to be unique. Two amplifiers with another primary key can have the same IP address at the same time.
 
 ### Configure Provisioning via DB Page (from version 1.0.0.2 onwards)

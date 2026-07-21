@@ -4,11 +4,9 @@ uid: Connector_help_Harris_Flexiva10KW_IRTFM_Np1
 
 # Harris Flexiva10KW IRTFM Np1
 
-With this connector, information can be gathered and viewed from the device **Harris Flexiva10KW IRTFM Np1**. The connector also makes it possible to set values on the device.
-
 ## About
 
-This connector is used to gather information from the **Harris Flexiva10KW IRTFM Np1** device.
+With this connector, information can be gathered and viewed from the device **Harris Flexiva10KW IRTFM Np1**. The connector also makes it possible to set values on the device.
 
 ### Version Info
 
@@ -16,13 +14,6 @@ This connector is used to gather information from the **Harris Flexiva10KW IRTFM
 |---------|------------------------|
 | 1.0.0.x | Initial version        |
 | 1.0.1.x | Added support for DVEs |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
-| 1.0.1.x          | N/A                         |
 
 ## Installation and configuration
 

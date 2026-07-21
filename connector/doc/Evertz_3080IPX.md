@@ -47,7 +47,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -150,4 +150,4 @@ This page contains the routing matrix control.
 
 ### Web Interface Page
 
-On this page you can directly connect to the web page of the device itself. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+On this page you can directly connect to the webpage of the device itself. However, note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

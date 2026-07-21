@@ -50,7 +50,7 @@ The element created with this connector consists of the following data pages:
 - **Interfaces:** Contains information about the interfaces that the device uses.
 - **Reference Clock:** Contains information about the status and controls of the device reference clocks.
 - **Flows:** Contains information about each flow type (video, audio, or ancillary).
-- **LLDP:** Contains Link Layer Discovery Protocol (LLDP) information (i.e. chassis, port, and TTL).
+- **LLDP:** Contains Link Layer Discovery Protocol (LLDP) information (i.e., chassis, port, and TTL).
 - **Devices:** Contains devices information (label, type, node ID, etc.) and each device type table (Sources, Senders, and Receivers).
 - **Devices Flows:** Contains device flow communication data (engine ID, type, packet counter, and sequence error counter).
 - **Ports:** Contains port configuration data and ports telemetry (temperature, Tx power, and Rx power).

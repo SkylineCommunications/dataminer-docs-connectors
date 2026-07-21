@@ -17,16 +17,16 @@ This connector can be used to monitor and control the **CEFD Xicom Generic Seria
 **SERIAL CONNECTION:**
 
 - **Type of port**: *Serial*.
-- **Baud rate**: Baud rate of the device, e.g. *9600*.
-- **Serial port**: The serial port of the device, e.g. *com1*.
-- **Stopbits**: E.g. *1*.
-- **Parity**: E.g. *even*.
+- **Baud rate**: Baud rate of the device, e.g., *9600*.
+- **Serial port**: The serial port of the device, e.g., *com1*.
+- **Stopbits**: For example, *1*.
+- **Parity**: For example, *even*.
 
 **TCP/IP Settings:**
 
 - **Type of port**: *TCP/IP*.
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
-- **IP port**: The IP port of the device, e.g. *4001*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
+- **IP port**: The IP port of the device, e.g., *4001*.
 - **Bus address**: Range 64 to 255.
 
 ## Usage
@@ -45,4 +45,4 @@ This page contains all amplifier-related readings and settings of the controller
 
 This page contains the controller's alarm readings, with parameters such as **Summary Alarm**, **Current Alarm Status**, etc.
 
-The **Alarm Control** subpage contains the controller's alarm settings, e.g. **Power High**, **Power Low**, and **Reverse Power**.
+The **Alarm Control** subpage contains the controller's alarm settings, e.g., **Power High**, **Power Low**, and **Reverse Power**.

@@ -12,7 +12,7 @@ This connector uses **serial** communication to configure and monitor routers su
 
 ### Version Info
 
-| **Range**            | **Key Features**                                                                             | **Based on** | **System Impact**                                                                                                         |
+| Range            | Key Features                                                                             | Based on | System Impact                                                                                                         |
 |----------------------|----------------------------------------------------------------------------------------------|--------------|---------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version                                                                              | -            | -                                                                                                                         |
 | 1.0.1.x [SLC Main]   | Layout adapted and pages renamed.                                                            | -            | Users may not be used to the new layout and existing Visio files may need to be adapted because of the page name changes. |
@@ -52,8 +52,8 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-  - **IP port**: The IP port of the device, e.g. *9193*.
+  - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+  - **IP port**: The IP port of the device, e.g., *9193*.
 
 ## Usage (Range 1.0.0.x)
 

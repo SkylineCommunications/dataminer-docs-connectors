@@ -30,7 +30,7 @@ This **Google Maps Platform connector** interacts with the Google Maps Platform 
 
 **Challenge**: Getting real-time, localized, and detailed pollen data for allergy management and environmental awareness.
 
-**Solution**: Provides current pollen conditions for a specific location including pollen levels/index for specific plant types (grass, trees, weeds). It also provides detailed information about the major allergenic species (e.g. alder, birch, oak, etc.).
+**Solution**: Provides current pollen conditions for a specific location including pollen levels/index for specific plant types (grass, trees, weeds). It also provides detailed information about the major allergenic species (e.g., alder, birch, oak, etc.).
 
 **Benefit**: Helps users avoid high-exposure areas and helps to understand which specific plants are triggering allergies.
 

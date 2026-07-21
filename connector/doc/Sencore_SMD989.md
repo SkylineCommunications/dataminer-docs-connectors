@@ -179,7 +179,7 @@ This subpage contains the following parameters:
 
 #### PRBS subpage
 
-On this subpage, you can set the **PRBS Mode**, i.e. the mode to use when PRBS (pseudo-random binary sequence) is enabled (Possible values: *PN 23 Normal* or *PN 23 Inverted*).
+On this subpage, you can set the **PRBS Mode**, i.e., the mode to use when PRBS (pseudo-random binary sequence) is enabled (Possible values: *PN 23 Normal* or *PN 23 Inverted*).
 
 #### TS Analysis subpage
 

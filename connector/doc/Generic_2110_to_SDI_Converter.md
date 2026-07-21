@@ -20,6 +20,6 @@ Use this connector if you need to:
 
 - Represent a **converter node** in your DataMiner System without requiring a real device.
 - Model and manage **DCF connections** for 2110 ↔ SDI routing.
-- Integrate with external routing control systems (e.g. VSM) by exposing consistent DCF endpoints.
+- Integrate with external routing control systems (e.g., VSM) by exposing consistent DCF endpoints.
 
 This connector is essential for scenarios where you need a placeholder element to define and manage signal flow, but no actual device polling or data retrieval is required.

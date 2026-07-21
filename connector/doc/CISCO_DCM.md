@@ -34,7 +34,7 @@ Please note the following:
 
 | Range | Supported Firmware |
 |--|--|
-| 1.0.0.x 1.0.2.x 1.0.3.x | Supported firmware depends on each command. To check the minimum version necessary to run a command, refer to the **Minimum Required FW** column on the **Manager** page. If this column has the value "any", there is no information in the document "DCM_IDL.pdf" about the minimum version to run that command, so it is assumed to be compatible with all firmware versions. E.g. Command **Get Boards** requires firmware 6.9 or later. ![versions3.JPG](~/connector/images/CISCO_DCM_versions3.JPG) |
+| 1.0.0.x 1.0.2.x 1.0.3.x | Supported firmware depends on each command. To check the minimum version necessary to run a command, refer to the **Minimum Required FW** column on the **Manager** page. If this column has the value "any", there is no information in the document "DCM_IDL.pdf" about the minimum version to run that command, so it is assumed to be compatible with all firmware versions. For example, Command **Get Boards** requires firmware 6.9 or later. ![versions3.JPG](~/connector/images/CISCO_DCM_versions3.JPG) |
 
 ## Configuration
 
@@ -434,7 +434,7 @@ A backup contains the complete configuration of a device. When you take a backup
 Backups are usually stored on the local DataMiner Agent. The default folder is the Windows %Temp% folder.
 
 > [!IMPORTANT]
-> While you are taking a backup, **all other polling is set on hold**. Taking a backup should only take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an Automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to test this after the DCM is fully (re)configured.
+> While you are taking a backup, **all other polling is set on hold**. Taking a backup should only take at most 30 seconds in most circumstances; however, it is possible that it takes up to several minutes. Keep this in mind if you decide to take regular backups using the Poll Manager or an automation script. Usually, the time it takes to complete a backup does not change, so you can first take a backup manually and see how long it takes, and then decide if this is acceptable. However, the duration can change if you modify many streams and settings, so it is best to test this after the DCM is fully (re)configured.
 
 #### Export/Import File
 
@@ -714,7 +714,7 @@ On this page, you can access several tables using page buttons. You can also vie
 
 At the request of customers, Skyline can add customer-specific features in this connector, which may result in extra tables, polling, a higher CPU load, etc. However, to minimize the impact of such customizations, by default, these extra features are disabled and hidden. They are numbered as follows: "HF1", "HF2", etc. This is short for "Hidden Feature N". You can find these features on the **Table Data** page by clicking a page button displaying the HF number. It is assumed that the customer who ordered the feature will know where to find it or will use a custom visual overview to make it more easily accessible.
 
-It is usually not possible to request a change to a hidden feature that was not ordered by your company. This is because those features are usually very specific and are used by Automation scripts, visual overviews, other connectors, etc., so that changing even a small detail could potentially break the system of another user. However, the company that ordered a feature can request changes to that feature and other customers will not be considered when the change is implemented.
+It is usually not possible to request a change to a hidden feature that was not ordered by your company. This is because those features are usually very specific and are used by automation scripts, visual overviews, other connectors, etc., so that changing even a small detail could potentially break the system of another user. However, the company that ordered a feature can request changes to that feature and other customers will not be considered when the change is implemented.
 
 The currently implemented customizations are listed below.
 
@@ -756,7 +756,7 @@ This feature adds an extra table in which a row is added for each port on the DC
 - **Connected Device Name**: Set by the connector when a valid element ID is set and refreshed on element startup.
 - **Connected Device Port**: A custom string. No checks are done by the connector. (Saved)
 
-These parameters are used by Automation scripts. Records in this table are not deleted, even if boards or ports disappear from the system.
+These parameters are used by automation scripts. Records in this table are not deleted, even if boards or ports disappear from the system.
 
 ### HF3 - Service Info
 
@@ -847,7 +847,7 @@ There are a few rules that the import file must comply with, and some things tha
 
       - The abbreviation of the days: "*Sun*", "*Mon*", "*Thu*", etc. (not case sensitive)
 
-      - If the server is set to the local culture, the day of the week and abbreviated names in your own language (not case sensitive). E.g. if Server Culture is set to "nl" (Dutch): "*Zondag*", "*zo*", "*Maandag*", "*ma*", etc.
+      - If the server is set to the local culture, the day of the week and abbreviated names in your own language (not case sensitive). For example, if Server Culture is set to "nl" (Dutch): "*Zondag*", "*zo*", "*Maandag*", "*ma*", etc.
 
       - *Always On-Air* or *Never On-Air*.
 
@@ -961,7 +961,7 @@ The connections between a port and a transport stream will have the following pr
 
 When alternate sources are included, extra connections will be created between an output service and a "source" service. This is done by adding a connection between the source interface and the alternate interface and from the alternate interface to the output interface. This first connection has an attribute "IsBackup=False" and the second connection (from alternate to output) has no attributes.
 
-Depending on the nature of the source service (processing stream or input stream), the signal will be linked to an interface of the output or input service table. Alternating sources can e.g. be used for outputs containing signal X during the day and signal Y during the night. You can find them in the web interface by right-clicking an output service in the "Service" tab and selecting "Advanced Configuration". The alternate sources are especially important because merged services and backup services are linked to alternate sources instead of directly to output services.
+Depending on the nature of the source service (processing stream or input stream), the signal will be linked to an interface of the output or input service table. Alternating sources can e.g., be used for outputs containing signal X during the day and signal Y during the night. You can find them in the web interface by right-clicking an output service in the "Service" tab and selecting "Advanced Configuration". The alternate sources are especially important because merged services and backup services are linked to alternate sources instead of directly to output services.
 
 #### Merged Services
 

@@ -102,7 +102,7 @@ The page contains the following page buttons:
   - Huawei VLAN Table
 
 > [!NOTE]
-> It is possible to **configure the bitrate polling time** on this page. For device firmware version 5.1, 10 seconds is used as the default value. If the connector is used with **newer firmware versions (e.g. 8.190), a 1-minute timer should be used to avoid spikes in bitrates**, as the counters (IfTable and IfXTable) are only updated every minute.
+> It is possible to **configure the bitrate polling time** on this page. For device firmware version 5.1, 10 seconds is used as the default value. If the connector is used with **newer firmware versions (e.g., 8.190), a 1-minute timer should be used to avoid spikes in bitrates**, as the counters (IfTable and IfXTable) are only updated every minute.
 >
 > In range 1.0.2.x, the parameter **Counter Type Mode** has been added, which allows you to select to *Always use 64 bits*. When you do so, 64 bits will be used for bitrate calculations. You should consider using this option with firmware version 8.1.90 or higher.
 

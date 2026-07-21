@@ -18,7 +18,7 @@ This connector can be used to monitor and control the **ETL Systems VTR-10** dev
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *172.27.64.111*.
+- **IP Address/host**: The polling IP of the device, e.g., *172.27.64.111*.
 
 **SNMP Settings:**
 
@@ -28,7 +28,7 @@ This connector can be used to monitor and control the **ETL Systems VTR-10** dev
 
 **Serial connection using TCP:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Port number**: The port of the connected device, by default 4000.
 - **Device address**: By default 65
 

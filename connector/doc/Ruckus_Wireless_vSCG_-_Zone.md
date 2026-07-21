@@ -20,7 +20,7 @@ This connector is generated automatically by the connector **Ruckus Wireless vSC
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**        |
+| Range | Device Firmware Version        |
 |------------------|------------------------------------|
 | 1.0.1.x          | 3.4.1.0.329 (backwards compatible) |
 

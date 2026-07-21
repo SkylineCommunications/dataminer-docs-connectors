@@ -18,7 +18,7 @@ The **Foxcom Platinum PL7611** is an SNMP connector. The IP needs to be configur
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the main device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the main device, e.g., *10.11.12.13.*
 - **Device Address**: The slot of the chassis that contains the device. The default value is *1*.
 
 **SNMP Settings**:

@@ -37,7 +37,7 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the Moxa connected to the DVX Bus, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the Moxa connected to the DVX Bus, e.g., *10.11.12.13.*
 - **IP port**: The port of the Local TCP connection used by the Moxa.
 
 ### Configuration

@@ -35,7 +35,7 @@ Each test has its own page in the element. You can configure the **Interval Time
 
 Create a new element with this connector and give it a unique name.
 
-- In **range 1.0.0.x**, the polling IP is used as the main address for each test, and it is also possible to enter a hostname as polling IP (e.g. "google.com").
+- In **range 1.0.0.x**, the polling IP is used as the main address for each test, and it is also possible to enter a hostname as polling IP (e.g., "google.com").
 - In **range** **2.0.0.x**, no IP address is configured in the element editor, as the connector retrieves information from several devices for the same element. Instead, a new device can be added to the **General page** with the context menu option **Add new device**. (To access the context menu, right-click the table.)
 
 ## Usage
@@ -124,7 +124,7 @@ This test provides file access, file transfer, and file management over a secure
 
 This test will invoke a web service method with the provided input data.
 
-To define arrays in the input table, C# syntax should be used, e.g. `new [] {"1", "2", "3"}`.
+To define arrays in the input table, C# syntax should be used, e.g., `new [] {"1", "2", "3"}`.
 
 The different parts of the response object are displayed in the output table.
 

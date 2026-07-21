@@ -49,8 +49,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 **HTTP CONNECTION**:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
-- **IP port**: The port of the destination, e.g. *80.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
+- **IP port**: The port of the destination, e.g., *80.*
 
 **HTTP Settings:**
 
@@ -122,7 +122,7 @@ The tables containing the polled data are added on separate pages. The following
 
 ### Alarms
 
-On this page, an **Alarm Table** is displayed with general and detailed information, e.g. **Description**, **State**, **Threshold Value**, etc.
+On this page, an **Alarm Table** is displayed with general and detailed information, e.g., **Description**, **State**, **Threshold Value**, etc.
 
 To refresh the table, click the **Refresh** button. This will clear the table and query all the alarms again.
 
@@ -134,7 +134,7 @@ This page displays the web interface. However, the client machine has to be able
 
 ## Notes
 
-After every startup, the System Tree is polled. It contains the necessary information to retrieve all other data, i.e. the headend name needed for the alarm table, and the components available in the device. Whenever a new component is detected, it will be added to the **Components Table** with the **Enable** parameters set to *Awaiting Response*. As soon as the component has been polled, the availability can be determined for the data tables. The data groups that have at least one value will then be enabled, and everything else will be disabled. Afterwards, you can make changes using the toggle buttons.
+After every startup, the System Tree is polled. It contains the necessary information to retrieve all other data, i.e., the headend name needed for the alarm table, and the components available in the device. Whenever a new component is detected, it will be added to the **Components Table** with the **Enable** parameters set to *Awaiting Response*. As soon as the component has been polled, the availability can be determined for the data tables. The data groups that have at least one value will then be enabled, and everything else will be disabled. Afterwards, you can make changes using the toggle buttons.
 
 Behavioral traits:
 

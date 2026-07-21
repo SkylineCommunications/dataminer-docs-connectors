@@ -52,6 +52,6 @@ The following data pages are available in an element created with this connector
 
 - **General**: Contains the **Overview** and **States** tables. The Overview table shows the workloads for the Clip Player HD Input type, and the States table allows you to send *Start*, *Stop*, *GoToStart*, *GoToEnd*, and *HTTP* commands, as well as change the file name of each workload.
 
-  Note that as the file name is retrieved using InterApp messages, but the start of the path is not, you will also have to configure the file path (i.e. the beginning part of the file name) for the file name change command to work.
+  Note that as the file name is retrieved using InterApp messages, but the start of the path is not, you will also have to configure the file path (i.e., the beginning part of the file name) for the file name change command to work.
 
 - **Debug**: Enabled by a toggle button at the bottom of **General** page, this page includes the Last Login Time, Token Expiration, Response Status Code, and Manager Element Name.

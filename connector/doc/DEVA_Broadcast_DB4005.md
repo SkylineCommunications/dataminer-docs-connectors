@@ -73,7 +73,7 @@ The page provides control over tuner and audio processing and the two RF antenna
 
 ### Alarms Settings
 
-This page contains page buttons to subpages with settings related to alarms, i.e. **Left/Right Audio Settings**, **MPX Settings**, **RF Settings**, **Fand and Temp Settings**, **RDS Settings**, and **Pilot Settings**.
+This page contains page buttons to subpages with settings related to alarms, i.e., **Left/Right Audio Settings**, **MPX Settings**, **RF Settings**, **Fand and Temp Settings**, **RDS Settings**, and **Pilot Settings**.
 
 Each page displays several **alarm triggers** for the following parameters: **Left/Right Audio**, **RF**, **MPX**, **MPX Power**, **RDS Group**, **Pilot**, **RDS Levels**, **Temperature**, and **Fan**. In case a parameter exceeds the limits, the device will initiate the sending of an alarm notification via the selected communication path, which can be via **email**, **SMS**, **SNMP trap**, or **GPO**.
 

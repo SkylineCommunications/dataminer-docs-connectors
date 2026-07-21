@@ -38,7 +38,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to Use
 
-To use this connector, you will need to install the Skyline Logical Layer package. This package contains the connector and an interactive Automation script (IAS). The script is used to fill in data in the tables of the element. It is an interactive script that helps you to easily select and populate the tables.
+To use this connector, you will need to install the Skyline Logical Layer package. This package contains the connector and an interactive automation script (IAS). The script is used to fill in data in the tables of the element. It is an interactive script that helps you to easily select and populate the tables.
 
 The first thing you will need to do in the script is define parameter value, element alarm, or view alarm monitors. Next to that, you can also define your own user-defined static variables, which can be used to compare against in the conditions. After that, you will need to define conditions using these monitors and static variables.
 
@@ -68,11 +68,11 @@ To **add** a parameter monitor:
 
 1. Click **Add**.
 
-   The monitor will be added and its value and (if applicable, i.e. for discrete parameters) display value will be displayed.
+   The monitor will be added and its value and (if applicable, i.e., for discrete parameters) display value will be displayed.
 
 > [!NOTE]
 >
-> - You cannot add a parameter monitor that is already present (i.e. an element/parameter/index combination that already exists as a parameter monitor).
+> - You cannot add a parameter monitor that is already present (i.e., an element/parameter/index combination that already exists as a parameter monitor).
 > - Each monitor name (across all monitor tables) needs to be unique. If the monitor name already exists in any of the three tables, it will not be added.
 
 In the **Documentation** column, you can describe the particular usage of this monitor.
@@ -121,7 +121,7 @@ To **add** an element alarm monitor:
 
    - If you want to create an element alarm monitor for a single parameter alarm state, select one of the parameters.
 
-     The list will only contain monitored parameters (i.e. parameters that are monitored based on an alarm template).
+     The list will only contain monitored parameters (i.e., parameters that are monitored based on an alarm template).
 
 1. If you have selected a table column parameter, in the **Index** dropdown list, select the required index.
 
@@ -131,7 +131,7 @@ To **add** an element alarm monitor:
 
 > [!NOTE]
 >
-> - It is not possible to add an element alarm monitor that is already present (i.e. an element alarm level or parameter/index combination that already exists as an element alarm monitor).
+> - It is not possible to add an element alarm monitor that is already present (i.e., an element alarm level or parameter/index combination that already exists as an element alarm monitor).
 > - Each monitor name (across all monitor tables) needs to be unique. If a monitor name already exists in any of the three tables, it will not be added.
 
 In the **Documentation** column, you can describe the particular usage of this monitor.
@@ -182,7 +182,7 @@ To **add** a view alarm monitor:
 
 > [!NOTE]
 >
-> - It is not possible to add a view alarm monitor that is already present (i.e. a view that already exists as a view alarm monitor).
+> - It is not possible to add a view alarm monitor that is already present (i.e., a view that already exists as a view alarm monitor).
 > - Each monitor name (across all monitor tables) needs to be unique. If a monitor name already exists in any of the three tables, it will not be added.
 
 In the **Documentation** column, you can describe the particular usage of this monitor.
@@ -263,12 +263,12 @@ To **add** a condition:
 
 1. Optionally, set the **Visualize** option to *No*. This option can be used to for example conditionally show or hide the condition in Visual Overview.
 
-1. Set the **Corrective Action Script** to an Automation script that exists in the system. This is the script that will be executed if the condition is evaluated as true.
+1. Set the **Corrective Action Script** to an automation script that exists in the system. This is the script that will be executed if the condition is evaluated as true.
 
    > [!NOTE]
    >
    > - In order for the corrective action script to be executed automatically when the condition is evaluated as true, the **Automatic Correction** parameter needs to be enabled in the Conditions table. This parameter cannot be configured in the pop-up window, but must be configured directly in the table.
-   - A template corrective action script is provided in the Logical Layer install package. You can use this template to start developing your own scripts. The condition name is passed to the Automation script as an argument, so when you set up the corrective action scripts, you can reuse a single script but act differently depending on the provided condition name.
+   - A template corrective action script is provided in the Logical Layer install package. You can use this template to start developing your own scripts. The condition name is passed to the automation script as an argument, so when you set up the corrective action scripts, you can reuse a single script but act differently depending on the provided condition name.
 
 1. Click Add.
 
@@ -358,7 +358,7 @@ By importing parameter monitors, you can easily create a large number of new par
 
 1. Right-click an entry in the **Parameter Value Monitors** table and select **Other** > **Export table**.
 
-1. Select an export location by browsing to a folder and defining a file name (e.g. *TheMonitors.csv*).
+1. Select an export location by browsing to a folder and defining a file name (e.g., *TheMonitors.csv*).
 
 1. Click **Save**.
 
@@ -385,14 +385,14 @@ By importing parameter monitors, you can easily create a large number of new par
 
 1. On the **Monitors** page, click **Import Parameters**.
 
-1. In the **Parameter CSV File Path** box, enter the full path of the file, e.g. `C:\Skyline DataMiner\Documents\Skyline Logical Layer\TheMonitors.csv`.
+1. In the **Parameter CSV File Path** box, enter the full path of the file, e.g., `C:\Skyline DataMiner\Documents\Skyline Logical Layer\TheMonitors.csv`.
 
 1. Click the **Import Parameters** button.
 
    This should add all the defined monitors.
 
 > [!NOTE]
-> When parameter monitors are imported, checks will be performed to verify for each parameter monitor if the element, parameter, and (if applicable) index exist. If any of the to be imported parameter monitors is invalid, a pop-up message will be shown indicating the reason why it is invalid, and none of the to be imported parameter monitors will be imported or added. On top of that, checks are done to prevent that existing monitors could get corrupted (i.e. changed or duplicated). In any case, when importing monitors it is good practice to always check the element logging and verify if no errors are reported. Also check in the Parameter Value Monitors table if all expected monitors have been added, and if they have obtained a valid value. This is the only way to be sure an import has been fully successful.
+> When parameter monitors are imported, checks will be performed to verify for each parameter monitor if the element, parameter, and (if applicable) index exist. If any of the to be imported parameter monitors is invalid, a pop-up message will be shown indicating the reason why it is invalid, and none of the to be imported parameter monitors will be imported or added. On top of that, checks are done to prevent that existing monitors could get corrupted (i.e., changed or duplicated). In any case, when importing monitors it is good practice to always check the element logging and verify if no errors are reported. Also check in the Parameter Value Monitors table if all expected monitors have been added, and if they have obtained a valid value. This is the only way to be sure an import has been fully successful.
 
 ### Importing Condition Monitors
 

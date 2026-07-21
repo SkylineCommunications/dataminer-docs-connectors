@@ -40,8 +40,8 @@ The connector uses an HTTP connection and requires the following input during el
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. 10.10.10.10
-- **IP port**: The IP port of the device, e.g. 2375.
+- **IP address/host**: The polling IP of the device, e.g., 10.10.10.10
+- **IP port**: The IP port of the device, e.g., 2375.
 
 ## Usage
 

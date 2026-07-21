@@ -106,11 +106,13 @@ Query WMI failed. Retrieving the data failed. (hr = 0x80041017) for numerous WQL
 
 **Cause**
 
-Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the *Win32_PerfRawData_PerfProc_Process* class seems to be incomplete (i.e. it misses for example the IDProcess property, but also many others).
+Unclear, but one of the symptoms is that, when viewed in the wbemtest tool, the *Win32_PerfRawData_PerfProc_Process* class seems to be incomplete (i.e., it misses for example the IDProcess property, but also many others).
 
 **Solution**
 
-Open a command prompt as Administrator and execute the "lodctr /r" command. This will reconstruct the performance counters.
+Open a command prompt on the server as Administrator and execute the "lodctr /r" command. This will reconstruct the performance counters, and after about 10 minutes the Task Manager in the element should start to contain entries.
+
+However, note that this is not a permanent solution. Each time the server is rebooted, this command will need to be executed again. If you would like to discuss this solution with Skyline Communications or want to propose an alternative solution that persists across server reboots, please get in touch with your Skyline contact person.
 
 ## Contacting Server Failed: Connection to root/cimv2 failed. The RPC server is unavailable
 

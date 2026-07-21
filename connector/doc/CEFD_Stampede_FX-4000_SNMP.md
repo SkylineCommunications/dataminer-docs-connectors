@@ -42,7 +42,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -76,7 +76,7 @@ There are also parameters related to the **LAN(eth2)/WAN(eth3) Data Interfaces**
 
 ### Redundancy
 
-This page displays the **Redundancy State**, as well as the **Primary Appliance**, **Secondary Appliance** and **Authentication Key**. You can also enable or disable the parameter **Automatically Synchronize Configuration Changes**. Finally, a button is also available to synchronize the configuration, i.e. the **Sync Config** button.
+This page displays the **Redundancy State**, as well as the **Primary Appliance**, **Secondary Appliance** and **Authentication Key**. You can also enable or disable the parameter **Automatically Synchronize Configuration Changes**. Finally, a button is also available to synchronize the configuration, i.e., the **Sync Config** button.
 
 ### Advanced - Path Redundancy
 

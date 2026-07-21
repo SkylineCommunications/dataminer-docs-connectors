@@ -10,7 +10,7 @@ The Rohde Schwarz FSL3 is a lightweight and compact spectrum analyzer with the f
 
 ### Version Info
 
-| **Range** | **Key Features**                                                             | **Based on** | **System Impact** |
+| Range | Key Features                                                             | Based on | System Impact |
 |-----------|------------------------------------------------------------------------------|--------------|-------------------|
 | 1.1.0.x   | Initial version. Version **1.1.0.8** supports a maximum frequency of 18 GHz. | -            | -                 |
 

@@ -15,8 +15,8 @@ The chassis must include an **Evertz 7700-FC, Evertz 7800-FC, or Evertz 7801-FC*
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 1.0.0.x [Obsolete] | Initial version. | Range 1.0.2.x of the Evertz 7x00 General Platform | - |
-| 1.0.1.x [Obsolete] | Discrete changes. | 1.0.0.2 | Alarm templates, Visual Overview, Automation scripts |
-| 1.0.2.x [Obsolete] | Discrete changes. | 1.0.1.4 | Alarm templates, Visual Overview, Automation scripts |
+| 1.0.1.x [Obsolete] | Discrete changes. | 1.0.0.2 | Alarm templates, Visual Overview, automation scripts |
+| 1.0.2.x [Obsolete] | Discrete changes. | 1.0.1.4 | Alarm templates, Visual Overview, automation scripts |
 | 1.0.3.x [Obsolete] | - | 1.0.2.11 | - |
 | 1.0.4.x [SLC Main] | Removed columns from fault polling configuration. | 1.0.3.3 | - |
 | 2.0.0.x | Removed 7700ACO2HD and 7800R2X2-ACS-3G cards. | 1.0.4.2 | The removed cards can no longer be polled using this connector. Standalone connectors are available for this instead. |

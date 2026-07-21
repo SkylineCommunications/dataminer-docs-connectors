@@ -41,10 +41,10 @@ SNMP CONNECTION:
 SNMP Settings:
 
 - **Username**: The SNMPv3 username.
-- **Security level**: The SNMPv3 security level, e.g. *authPriv*.
-- **Authentication type**: The SNMPv3 authentication type, e.g. *HMAC-SHA*.
+- **Security level**: The SNMPv3 security level, e.g., *authPriv*.
+- **Authentication type**: The SNMPv3 authentication type, e.g., *HMAC-SHA*.
 - **Authentication password**: The SNMPv3 authentication password.
-- **Privacy type**: The SNMPv3 privacy type, e.g. *AES-128*.
+- **Privacy type**: The SNMPv3 privacy type, e.g., *AES-128*.
 - **Privacy password**: The SNMPv3 privacy password.
 
 ## Usage
@@ -99,7 +99,7 @@ Several page buttons are available**:**
 
 ### LLDPs
 
-This page displays the **LLDP** Information of the system. There is one page button, i.e. **LLDP Port**.
+This page displays the **LLDP** Information of the system. There is one page button, i.e., **LLDP Port**.
 
 ### Web Interface
 

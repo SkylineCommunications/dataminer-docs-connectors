@@ -18,7 +18,7 @@ The following methods are currently supported by the API:
 
 - /getAutomationScripts
 
-  - GET: Lists all available Automation scripts.
+  - GET: Lists all available automation scripts.
 
 - /getSchedulerTasks
 
@@ -94,11 +94,11 @@ To create or update a task, specific guidelines for the request body must be fol
 
 - **Enabled**: "True" or "False".
 
-- **DmaId**: String containing the ID of the DMA where the task will be scheduled. This field can be omitted, in which case the default DMA ID will be used (i.e. the DMA ID of the connector).
+- **DmaId**: String containing the ID of the DMA where the task will be scheduled. This field can be omitted, in which case the default DMA ID will be used (i.e., the DMA ID of the connector).
 
 - **Script:**
 
-  - **Name**: String containing the Automation Script name.
+  - **Name**: String containing the automation script name.
 
   - **Dummies**:
 

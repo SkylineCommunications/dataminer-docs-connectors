@@ -17,9 +17,9 @@ This connector is used to monitor and control compact outdoor solid-state power 
 This connector uses a serial connection and requires the following input during element creation:
 
 - **Type of port**: The type of port of the connection. By default: *TCP/IP*.
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.245.83.199*.
-- **IP port**: The port of the destination, e.g. *7008*.
-- **Bus address**: The bus address of the connected device, e.g. *1*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.245.83.199*.
+- **IP port**: The port of the destination, e.g., *7008*.
+- **Bus address**: The bus address of the connected device, e.g., *1*.
 
 ## Usage
 

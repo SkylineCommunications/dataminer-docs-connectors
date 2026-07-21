@@ -19,14 +19,14 @@ This connector was designed to monitor the different properties of the R&S AVHE1
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                 |
+| Range | Device Firmware Version                                                 |
 |------------------|-----------------------------------------------------------------------------|
 | 1.0.0.x          | Dolbyr Digital / Dolbyr Digital Plus Encoder Version 3.10.2 - Build 2971695 |
 | 2.0.0.x          | Dolby Version 1.1.5 - Build 2012-04-09                                      |
 
 ### Exported connectors
 
-| **Exported Protocol - Range 1.0.0.x** | **Description**                                      |
+| Exported Protocol - Range 1.0.0.x | Description                                      |
 |---------------------------------------|------------------------------------------------------|
 | Rohde Schwarz AVHE100 - AVS100        | A separate connector that represents the AVS100 device. |
 | Rohde Schwarz AVHE100 - AVG100        | A separate connector that represents the AVG100 device. |
@@ -87,7 +87,7 @@ This page contains the parameters related to the configured NTP, including clien
 
 ### General
 
-This page contains system and DMA information parameters, i.e. **System Name**, **Element ID**, **Element Name** and **IP Address**.
+This page contains system and DMA information parameters, i.e., **System Name**, **Element ID**, **Element Name** and **IP Address**.
 
 ### Configurations
 
@@ -99,7 +99,7 @@ This page contains the **Parameters** **Table**.
 
 ### System
 
-This page contains additional system parameters, i.e. **System Overall Status**, **Software Version** and **System License and SLA Status**.
+This page contains additional system parameters, i.e., **System Overall Status**, **Software Version** and **System License and SLA Status**.
 
 ### Automation
 

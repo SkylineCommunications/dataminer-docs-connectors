@@ -12,7 +12,7 @@ This connector can be used to monitor an exciter of the device. From version **1
 
 ### Version Info
 
-| **Range** | **Description**       | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description       | DCF Integration | Cassandra Compliant |
 |------------------|-----------------------|---------------------|-------------------------|
 | 1.1.0.x          | DVEs for each exciter | No                  | Yes                     |
 

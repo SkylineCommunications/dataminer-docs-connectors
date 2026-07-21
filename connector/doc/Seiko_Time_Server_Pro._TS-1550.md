@@ -67,7 +67,7 @@ The **General** page contains the overview of the device info including **System
 
 Several pages are available with parameters related to PTP.
 
-The PTP 1 and PTP 2 pages contain parameters from the default, current, parent, port, and time properties data set, daemon counters, and sync metadata for PTP 1 and 2, respectively. Both pages also have a subpage with information regarding the foreign master data set.
+The PTP 1 and PTP 2 pages contain parameters from the default, current, parent, port, and time properties dataset, daemon counters, and sync metadata for PTP 1 and 2, respectively. Both pages also have a subpage with information regarding the foreign master dataset.
 
 The other PTP pages contain clock and profile settings, and tables with information related to the base clock and base clock port.
 

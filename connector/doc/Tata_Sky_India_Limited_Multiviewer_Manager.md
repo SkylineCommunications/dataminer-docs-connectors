@@ -32,7 +32,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-Make sure the **TSK-AS-Multiviewer Automation script** (Solution available on GitHub) is imported in the system.
+Make sure the **TSK-AS-Multiviewer automation script** (Solution available on GitHub) is imported in the system.
 
 A **Visio file** is also available that allows you to check the VLC video streams.
 
@@ -44,4 +44,4 @@ To start the iteration process, click the **Play** button. To pause the process,
 
 The iteration process consists of sending the desired channel and values to be set for each channel of the list, one by one, to the IRD device, the Mtx (matrix), or the STB.
 
-The multiviewer sends the channel and respective information to the different Automation scripts that are responsible for the sets on the devices.
+The multiviewer sends the channel and respective information to the different automation scripts that are responsible for the sets on the devices.

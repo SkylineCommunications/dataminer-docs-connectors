@@ -82,7 +82,7 @@ From version 1.0.0.6 onwards, you can also configure the IP Stream display key f
 
 ### TS Streams
 
-Similar to the IP Streams page, this page contains a tree control that can be used to visualize and modify any stream on the device. When you select a TS stream, the main parameters are displayed, such as **IP1 and IP2 bitrates**, **delay between IP1 and IP2**, **delay applied to IP1 and IP2**, **selected input**, **number of switches from IP1 to IP2** and vice versa, IP1 and IP2 **total packets**, **packets recovered**, **protocol type**, **packets lost**, **TS packets**, and **FEC matrix**. Below these parameters, there are three tabs displaying configurable information, i.e. **general**, **FEC management**, and **switching conditions**.
+Similar to the IP Streams page, this page contains a tree control that can be used to visualize and modify any stream on the device. When you select a TS stream, the main parameters are displayed, such as **IP1 and IP2 bitrates**, **delay between IP1 and IP2**, **delay applied to IP1 and IP2**, **selected input**, **number of switches from IP1 to IP2** and vice versa, IP1 and IP2 **total packets**, **packets recovered**, **protocol type**, **packets lost**, **TS packets**, and **FEC matrix**. Below these parameters, there are three tabs displaying configurable information, i.e., **general**, **FEC management**, and **switching conditions**.
 
 You can navigate through the tree control to directly access each page. Selecting the **Switching Conditions** node also displays a set of tabs, which provide a faster and more personalized access to **ETR1**, **ETR2**, **ETR3**, **MIP**, **T2MI**, **Bit Rate**, and **Advanced** configuration.
 

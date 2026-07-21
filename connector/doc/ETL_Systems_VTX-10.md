@@ -20,7 +20,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.19.93.5*.
+- **IP address/host**: The polling IP of the device, e.g., *10.19.93.5*.
 
 SNMP Settings:
 
@@ -34,8 +34,8 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.19.93.5*.
-- **IP port**: The IP port of the device., e.g. 4000.
+- **IP address/host**: The polling IP of the device, e.g., *10.19.93.5*.
+- **IP port**: The IP port of the device., e.g., 4000.
 
 > [!NOTE]
 > The 2.0.0.x range is obsolete; the current main range is 2.0.1.x, which supports both a serial and an SNMP connection (SNMP interface to enable polling/locking outputs).

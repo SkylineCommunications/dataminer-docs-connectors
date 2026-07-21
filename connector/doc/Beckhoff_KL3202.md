@@ -34,9 +34,9 @@ The **Beckhoff KL3202** is a serial connector that is used to monitor two resist
 
 This connector uses a serial connection and requires the following input during element creation:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
-- **IP port**: The port of the connected device, e.g. *4001*.
-- **Bus address**: The bus address set in the device, e.g. *1* (range: *1* to *9999*).
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
+- **IP port**: The port of the connected device, e.g., *4001*.
+- **Bus address**: The bus address set in the device, e.g., *1* (range: *1* to *9999*).
 
 ### Configuration of Virtual Connection
 

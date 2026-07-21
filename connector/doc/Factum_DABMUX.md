@@ -18,7 +18,7 @@ This device uses an SNMP connection and requires the following user information:
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. *10.145.1.12*.
+- **IP Address/host**: The polling IP of the device, e.g., *10.145.1.12*.
 
 **SNMP Settings:**
 

@@ -21,7 +21,7 @@ This connector uses a serial connection and requires the following input during 
 - **Type of port:** *Serial.*
 - **Baud rate**: 57*600*
 - ***Databits:** 8*
-- **Serial port:** The serial port of the device, e.g. *com1.*
+- **Serial port:** The serial port of the device, e.g., *com1.*
 - ***Stopbits**: 2*
 - ***Parity**: none*
 

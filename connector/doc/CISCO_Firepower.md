@@ -4,128 +4,66 @@ uid: Connector_help_CISCO_Firepower
 
 # CISCO Firepower
 
-This connector uses SNMP or HTTP communication in order to monitor a CISCO Firepower device. It retrieves fan statistics, monitor statistics, power supply statistics and more. It also provides an overview of how all these components are behaving. It displays the average, maximum and minimum values for specific parameters such as the fan speed and the motherboard input and output current.
-
 ## About
 
-### Version Info
+This connector uses SNMP or HTTP communication in order to monitor a CISCO Firepower device. It retrieves fan statistics, monitor statistics, power supply statistics, and more. It also provides an overview of how all these components are behaving, and it displays the average, maximum, and minimum values for specific parameters such as the fan speed and the motherboard input and output current.
 
-| Range              | Key Features          | Based on | System Impact |
-|--------------------|-----------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | SNMP initial version. | -        | -             |
-| 2.0.0.x [SLC Main] | HTTP initial version. | -        | -             |
+![Interfaces](~/connector/images/Cisco_Firepower.png)
 
-### Product Info
+## Key Features
 
-| Range     | Device Firmware Version     |
-|-----------|-----------------------------|
-| 1.0.0.x   | N/A                         |
-| 2.0.0.x   | N/A                         |
+- **Network interface monitoring**:
 
-### System Info
+  - Real-time tracking of interface bit rates and bandwidth utilization.
+  - Octet and packet statistics for detailed traffic analysis.
+  - Per-interface performance visibility.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | No                      | -                     | -                       |
-| 2.0.0.x   | No                  | No                      | -                     | -                       |
+- **Hardware health monitoring**:
 
-## Configuration
+  - Fan operation statistics, speed measurements, and status tracking.
+  - Power supply monitoring with voltage and current measurements.
+  - Temperature and thermal management system oversight.
 
-### Connections - Range 1.0.0.x
+- **Alert and threshold management**:
 
-#### SNMP connection - Main
+  - Customizable alert configuration.
+  - Threshold-based monitoring and notifications.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+## Use Cases
 
-SNMP CONNECTION:
+### Interface and Throughput Health Monitoring
 
-- **IP address/host**: The polling IP of the device.
+**Challenge**: Firepower devices often act as critical traffic choke points, where performance degradation directly affects services.
 
-SNMP Settings:
+**Solution**: The connector tracks interface status, throughput, errors, drops, CPU, memory, and failover state.
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: The community string used when setting values on the device, by default *private*.
+**Benefit**: Improves service reliability by correlating firewall performance with upstream and downstream network elements and supporting SLA monitoring.
 
-### Connections - Range 2.0.0.x
+### VPN Health – Site-to-Site and Remote Access
 
-#### HTTP Connection - Main
+**Challenge**: VPN failures can disrupt entire sites or remote users without immediate visibility into the root cause.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Solution**: The connector monitors tunnel states, negotiation failures, rekey events, and remote access user counts.
 
-HTTP CONNECTION:
+**Benefit**: Enables rapid correlation between VPN issues and service outages, while providing historical insights for capacity planning.
 
-- **IP address/host**: The polling IP or URL of the destination.
+### Security Posture and Threat Visibility
 
-## Usage
+**Challenge**: Security events are scattered across Firepower dashboards, making it difficult to correlate threats with network or service impact.
 
-### General Page
+**Solution**: The connector centralizes intrusion counters, blocked connections, threat statistics, and top talkers, correlating Firepower security telemetry with network and service data.
 
-This page displays general system information, including the **System Description**, **Model**, **System Up Time**, **System Contact**, **System Name**, **System Location**, **CPU Usage**, and **Memory Usage**.
+**Benefit**: Provides single-pane-of-glass visibility, enabling faster root cause analysis and targeted alarms when security events impact service quality.
 
-The **System Services** page button displays a subpage with the status (*Active* or *Not Active*) for the following layers:
+### Firewall and NAT Session Capacity Monitoring
 
-- Physical
-- Data Link
-- Network
-- Transport
-- Session
-- Presentation
-- Application
+**Challenge**: Firewall and NAT session tables can silently approach capacity, leading to sudden service outages.
 
-### SM Monitor Page
+**Solution**: The connector continuously monitors active sessions, session rates, NAT translations, and peak utilization.
 
-This page contains the **SM Monitor Statistics Table**, which contains information such as **CPU Total Load Average**, **Disk File System Count**, **Memory Free**, **Memory Total**, **OS Version**, etc.
+**Benefit**: Enables proactive alarms, capacity forecasting, and data-driven decisions on when to scale or upgrade firewall infrastructure.
 
-### Chassis Page
+## Technical Reference
 
-This page displays the following statistics tables:
-
-- **Fan Statistics Table**: Includes information such as the current, average, maximum and minimum value of the fan speed.
-- **Fan Module Statistics**: Includes information such as the current, average, maximum and minimum value of the ambient temperature.
-- **Chassis Statistics**: Includes information such as the current, average, maximum and minimum value of the input and output power.
-- **Power Supply Statistics**: Includes information such as Ambient Temperature, Input Volts, Output Volts, Output Current, Output Power and PSU Temperature.
-- **IO Card Statistics**: Includes information such as Ambient Temperature, DIMM Temperature and Processor Temperature.
-
-### Motherboard Page
-
-This page displays the following tables with motherboard statistics:
-
-- **Motherboard Power Statistics Table**: Includes information such as the Consumed Power, Input Current and Input Voltage.
-- **Motherboard Temperature Statistics Table**: Includes information such as Temperature Sensor IO, Temperature Sensor Rear, Temperature Sensor Rear L and Temperature Sensor Rear R.
-
-### Processor Page
-
-This page displays the **Processor Environment Statistics Table**, which for example includes the **current, average, max and min** value of the **input current and temperature**.
-
-### Ethernet Statistics Page
-
-This page displays several Ethernet statistics tables, for example:
-
-- **Error Statistics Table**: Includes the columns Align, Deferred Tx, Frame Check Sequence, Internal MAC Rx, Internal MAC Tx and Out Discard.
-- **Loss Statistics Table**: Includes the columns SQE Test Delta, Carrier Sense, Excess Collision, Giants and Late Collision.
-- **Pause Statistics Table**: Includes the columns Receive Pause, Resets and Transmit Pause.
-
-### Interface Detailed Page
-
-This page displays the Interface Details Table, in which you can among others find the following information:
-
-- **Name**
-- **Bandwidth**
-- **Utilization**
-- **Utilization Percentage**
-- **Type**
-- **MTU**
-- **Duplex**
-- **Physical Address**
-- **Administrator Status**
-
-## Revision History
-
-| DATE       | VERSION | AUTHOR        | COMMENTS                                                              |
-|------------|---------|---------------|-----------------------------------------------------------------------|
-| 02/10/2017 | 1.0.0.1 | RSA , Skyline | Initial version                                                       |
-| 04/30/2018 | 1.0.0.2 | JGA , Skyline | Fixed MultipleGetNext option                                          |
-| 05/23/2018 | 1.0.0.3 | JGA , Skyline | Added System Information, System Services and Network Interface Table |
-| 27/06/2018 | 1.0.0.4 | AIG, Skyline  | Quick protocol review                                                 |
-| 20/10/2021 | 2.0.0.1 | MFR, Skyline  | NF: HTTP initial version.                                             |
+> [!NOTE]
+> For setup and configuration instructions, refer to the [technical documentation](xref:Connector_help_CISCO_Firepower_Technical).

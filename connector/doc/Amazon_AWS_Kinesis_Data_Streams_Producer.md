@@ -36,7 +36,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination. Format: "*kinesis.\<region\>.amazonaws.com*", e.g. "*kinesis.eu-west-2.amazonaws.com*".
+- **IP address/host**: The polling IP or URL of the destination. Format: "*kinesis.\<region\>.amazonaws.com*", e.g., "*kinesis.eu-west-2.amazonaws.com*".
 - **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: If the proxy server has to be bypassed, specify *BypassProxy*.
 
@@ -66,7 +66,7 @@ Two types of input data are supported by the connector:
 
 - Custom offload files
 
-  - Custom files from another source (i.e. other element). Data is already in the correct format for a PutRecords request.
+  - Custom files from another source (i.e., other element). Data is already in the correct format for a PutRecords request.
   - The path can be configured on the Configuration page.
   - Not yet implemented in v1.0.0.1.
 
@@ -680,7 +680,7 @@ You can find the JSON schema definitions of these objects below.
       "$id": "#/properties/RCALEVEL",
       "type": "number",
       "title": "The Rcalevel Schema",
-      "description": "The proximity of the alarm to the root cause of the problem, i.e. the position of the alarm in the Root Cause Analysis connectivity chain.",
+      "description": "The proximity of the alarm to the root cause of the problem, i.e., the position of the alarm in the Root Cause Analysis connectivity chain.",
       "default": "",
       "examples": [
         "-1"
@@ -719,7 +719,7 @@ You can find the JSON schema definitions of these objects below.
       "$id": "#/properties/DISPLAY_VALUE",
       "type": "string",
       "title": "The Display_value Schema",
-      "description": "Value in text format.  Example: If, in case of a discrete parameter, Value is 0, then chDisplayValue could contain “False”, i.e. the meaning of that value in text for­mat.",
+      "description": "Value in text format.  Example: If, in case of a discrete parameter, Value is 0, then chDisplayValue could contain “False”, i.e., the meaning of that value in text for­mat.",
       "examples": [
         "259"
       ]

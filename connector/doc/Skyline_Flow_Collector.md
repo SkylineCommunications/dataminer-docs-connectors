@@ -12,7 +12,7 @@ Cisco Netflow services provide network administrators with access to IP flow inf
 
 The connector uses a smart-serial connection to receive Netflow data packets from the devices.
 
-Flows that fall within the same time frame and have the same key properties (i.e. the same source IP, source port, destination IP, destination port, etc.) are combined in one single summarized flow. The flows are then aggregated and stored in the database with three levels of detail:
+Flows that fall within the same time frame and have the same key properties (i.e., the same source IP, source port, destination IP, destination port, etc.) are combined in one single summarized flow. The flows are then aggregated and stored in the database with three levels of detail:
 
 - Detail 1: Flows are aggregated with a 1-minute granularity and kept in the database for at most 1 hour.
 - Detail 2: Flows are aggregated with a 10-minute granularity (configurable) and kept in the database for at most 1 day

@@ -42,7 +42,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device (e.g. *127.0.0.1*).
+  - **IP address/host**: The polling IP of the device (e.g., *127.0.0.1*).
   - **IP port**: The IP port of the device. Required (default: *2050*).
   - **Bus address**: The bus address of the device. Required (format: '\*.\*.\*'; for example: *0000.47.03*).
 
@@ -54,7 +54,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device (e.g. *127.0.0.2*).
+  - **IP address/host**: The polling IP of the device (e.g., *127.0.0.2*).
   - **IP port**: The IP port of the device. Required (default: *2050*).
   - **Bus address**: The bus address of the device. Required (format: '\*.\*.\*'; for example: *0000.47.04*).
 

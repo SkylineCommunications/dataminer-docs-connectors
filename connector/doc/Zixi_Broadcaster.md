@@ -20,7 +20,7 @@ The Zixi Broadcaster connector uses HTTP communication to allow users to monitor
 
 ### Product Info
 
-| **Range**        | **Device Firmware Version** |
+| Range        | Device Firmware Version |
 |-------------------------|-----------------------------|
 | 1.0.0.x 1.0.1.x 1.0.2.x | API 1.10                    |
 
@@ -155,7 +155,7 @@ Creating and editing outputs can be done on the **Output New/Edit** page, which 
 
 **Note**:
 
-- For outputs with multiple hosts (e.g. a push output), separate the fields with commas (",") without adding spaces. For example: "*213.222.10.15,213.222.10.16,213.222.10.17*".
+- For outputs with multiple hosts (e.g., a push output), separate the fields with commas (",") without adding spaces. For example: "*213.222.10.15,213.222.10.16,213.222.10.17*".
 - For **NICs/Devices**, it is possible to specify "*Any"*. **Backup** streams can be selected by specifying *Disabled* or *Enabled*.
 - For the **Max Bitrate**, specify the desired number (in kbps) and then "*kbps*", separated by a space. You can also specify *Unlimited* for unlimited bitrates. For example, a 3-host system could be specified as follows: "*13 kbps,Unlimited,14 kbps"*.
 

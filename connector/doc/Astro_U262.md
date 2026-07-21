@@ -35,12 +35,12 @@ In either case, the SNMP interface collects the traps emitted by the device, so 
 #### HTTP Connection for Direct Communication
 
 - **IP address/host**: The IP address of the U262.
-- **IP port**: The port of the destination e.g. *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 #### SNMP Connection
 
-- **IP Address/host**: The polling IP of the U262, e.g. *10.11.12.13*.
+- **IP Address/host**: The polling IP of the U262, e.g., *10.11.12.13*.
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private*.
@@ -70,23 +70,23 @@ This page displays the status of the device, including the **Memory** and **CPU 
 
 ### Main
 
-On this page, you can access the main configuration of the device. This includes the **IP Management Settings** (e.g. **DNS**, **Time Source**, **Management Channels configurations**, etc.) and **IP Data Settings** (**Data Channels configurations** and **status**).
+On this page, you can access the main configuration of the device. This includes the **IP Management Settings** (e.g., **DNS**, **Time Source**, **Management Channels configurations**, etc.) and **IP Data Settings** (**Data Channels configurations** and **status**).
 
 ### TestGen
 
-On this page, the test generator settings can be configured (e.g. **Data Rate** and **Packet ID**).
+On this page, the test generator settings can be configured (e.g., **Data Rate** and **Packet ID**).
 
 ### IP Rx1 Status
 
-On this page, you can find information on the current configuration as well as statistics for the IP receiver input (e.g. **Selected Port**, **Service Info**, **Data Rate**, etc.).
+On this page, you can find information on the current configuration as well as statistics for the IP receiver input (e.g., **Selected Port**, **Service Info**, **Data Rate**, etc.).
 
 ### IP Rx1 Settings
 
-On this page, you can configure the IP receiver input settings (e.g. **Source IP/Port**, **Encapsulation**, **Priority**, **Reception IP/Port**, etc.).
+On this page, you can configure the IP receiver input settings (e.g., **Source IP/Port**, **Encapsulation**, **Priority**, **Reception IP/Port**, etc.).
 
 ### DVB ASI Settings
 
-On this page, the ASI inputs can be configured (e.g. **State**, **Inversion**, **Alias**, etc.).
+On this page, the ASI inputs can be configured (e.g., **State**, **Inversion**, **Alias**, etc.).
 
 ### Input MUX
 
@@ -94,11 +94,11 @@ On this page, you can route one of the ASI input signals, the IP Rx input or the
 
 ### IP Tx Eth Settings
 
-On this page, you can configure the settings of the available IP output Ethernet channels (e.g. **Destination IP/Port**, **TOS**, **TTL**, **FEC** configs, etc.). Each IP transmitter can be enabled to transmit to one or both the Ethernet data channels.
+On this page, you can configure the settings of the available IP output Ethernet channels (e.g., **Destination IP/Port**, **TOS**, **TTL**, **FEC** configs, etc.). Each IP transmitter can be enabled to transmit to one or both the Ethernet data channels.
 
 ### IP Tx Settings
 
-On this page, you can configure the settings of the 16 IP transmitters (e.g. **Packets**, **Frame Encapsulation**, **FEC** configs, etc.).
+On this page, you can configure the settings of the 16 IP transmitters (e.g., **Packets**, **Frame Encapsulation**, **FEC** configs, etc.).
 
 ### Output MUX
 

@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) and a smart-seri
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*
 - **Device address**: Not needed.
 
 **SNMP Settings**:
@@ -47,13 +47,13 @@ This connector uses a Simple Network Management Protocol (SNMP) and a smart-seri
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device. By default, this is *4737*.
 - **Bus address**: The **Collector Name** should be filled in here. By default, this is *DMA-COL-01*.
 
 **SSH CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: Default is 22.
 
 ## Usage

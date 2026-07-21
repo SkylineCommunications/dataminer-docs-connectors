@@ -65,12 +65,12 @@ This page contains additional configuration parameters.
 
 On the left side of the page, you can find the **Update Settings** and **Log Settings**. These settings do not necessarily have to be specified, but they can be used to manage certain aspects of the connector.
 
-- The **Update settings** are only used for tickets that are **updated automatically** with the **Advanced** parameter, for example from an Automation script. These settings make sure that there are **not too many ticket updates** in the specified period of time. When the **maximum is reached**, the ticket updates will be updated later once the interval has passed.
+- The **Update settings** are only used for tickets that are **updated automatically** with the **Advanced** parameter, for example from an automation script. These settings make sure that there are **not too many ticket updates** in the specified period of time. When the **maximum is reached**, the ticket updates will be updated later once the interval has passed.
 - The **Log Settings** can be used to manage the **number of entries** in the **Ticket Log Table**.
 
 On the right side of the page, you can find the settings **necessary to create tickets**. The **Ticket Location URL** is used in the commands that **create** and **update tickets**. This parameter should contain the ticket URL, by default *rest/api/latest/issue*. The **Authentication** button can be used to set the basic authorization settings for the Atlassian Jira environment. This can be either the **Authorization Key** or a **Username** and **Password** combination.
 
-The **Advanced** button can be used to immediately set certain values in the JSON command and send the command to the Atlassian Jira interface. The syntax for the Advanced parameter must be **\<GUID\>\|\<Action\>(*CREATE* or *UPDATE*)\|field;value\|field n;value n\|.** The fields specified in this parameter will be added to the existing fields in the **Ticket Creation Table** and the command will be sent immediately. This parameter can for example be used in combination with an Automation script that **generates tickets automatically**.
+The **Advanced** button can be used to immediately set certain values in the JSON command and send the command to the Atlassian Jira interface. The syntax for the Advanced parameter must be **\<GUID\>\|\<Action\>(*CREATE* or *UPDATE*)\|field;value\|field n;value n\|.** The fields specified in this parameter will be added to the existing fields in the **Ticket Creation Table** and the command will be sent immediately. This parameter can for example be used in combination with an automation script that **generates tickets automatically**.
 
 In range 3.0.0.x of the connector, the following features are added on this page:
 

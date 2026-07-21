@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 
@@ -56,7 +56,7 @@ This page provides a summary of all possible alarming, both analog and discrete,
 
 ### Server Properties
 
-This page displays some general properties (e.g. **Server Model, Serial Number, Date & Time,** .). It is possible to reset the chassis and configure the **Location City** and **Street**.
+This page displays some general properties (e.g., **Server Model, Serial Number, Date & Time,** .). It is possible to reset the chassis and configure the **Location City** and **Street**.
 
 The complete set of modifiable parameters is present in the **NEC-E module.**
 
@@ -94,7 +94,7 @@ The following pages are available:
 - **Status**: Displays whether or not there are alarms, warnings or notifications. Some of these are not available through SNMP, so there might be some differences with the statuses visible in the web interface.
 - **Parameters**: Monitors **RF Input** and **Output** and **Device Temperature.**
 - **Voltages**: Monitors the supply voltages.
-- **Settings:** Allows settings of different modes and parameters (e.g. **Laser Frequency, RF gain,.**). If **Redundancy Mode** is not supported, you cannot set to this mode.
+- **Settings:** Allows settings of different modes and parameters (e.g., **Laser Frequency, RF gain,.**). If **Redundancy Mode** is not supported, you cannot set to this mode.
 - **Limits 1**: Allows the configuration of the alarming of all parameters from the **Parameters** page.
 - **Limits 2**: Allows the configuration of the alarming of all parameters from the **Voltages** page.
 - **Event Mask:** Handles the (de-)activation of alarms, warnings and notifications for both analog and discrete values. Changing these values might take some time, because some rather large table transformations are involved.
@@ -168,7 +168,7 @@ The following pages are available:
 
 - **Status**: Displays whether or not there are alarms, warnings or notifications. Some of these are not available through SNMP, so there might be some differences with the statuses visible in the web interface.
 - **Parameters**: Allows the monitoring of supply voltages and **In-/Output Power, Gain** and **Device Temperature**.
-- **Laser(s)**: Displays the major laser parameters (e.g. **Pump Power, Current, Temperature,** ...).
+- **Laser(s)**: Displays the major laser parameters (e.g., **Pump Power, Current, Temperature,** ...).
 - **Settings**: Allows the user to toggle the **Optical Power** (the laser(s)) on or off. The **Regulation Mode** can be used to switch the device mode to *Gain* or *Output Power.*
 - **Limits 1**: Allows the configuration of alarming limits of the parameters on the **Parameters** page.
 - **Limits 2**: Allows the configuration of alarming limits of the supply voltages.
@@ -189,7 +189,7 @@ The following pages are available:
 - **Status**: Displays whether or not there are alarms, warnings or notifications. Some of these are not available through SNMP, so there might be some differences with the statuses visible in the web interface.
 - **Parameters - Common**: Allows the monitoring of the supply voltages, **Input Voltage** and **Device Temperature**.
 - **Parameters - Transmit 1&2**: Allows the monitoring of the **Activity, Laser Current, OMI, RF Input, RF Gain** and **Output Power.**
-- **Settings - Transmit 1&2**: Allows the configuration of different modes and parameters (e.g. **AGC mode, desired output power,** .).
+- **Settings - Transmit 1&2**: Allows the configuration of different modes and parameters (e.g., **AGC mode, desired output power,** .).
 - **Limits - Common**: Allows the configuration of the alarming limits of the **Device Temperature** and **Input Voltage**.
 - **Limits - Transmit 1&2**: Allows the configuration of the alarming limits of **RF Input, OMI, RF Gain and Output Power**. Hysteresis of the output power is not available.
 - **Event Mask**: Handles the (de-)activation of alarms, warnings and notifications for both analog and discrete values. Changing these values might take some time, because some rather large table transformations are involved.
@@ -209,9 +209,9 @@ These are direct modulated optical transmitters. Example devices: SSO### and BOT
 The following pages are available:
 
 - **Status**: Displays whether or not there are alarms, warnings or notifications. Some of these are not available through SNMP, so there might be some differences with the statuses visible in the web interface.
-- **Parameters**: Allows the monitoring of different parameters (e.g. **RF Input, RF Gain, TEC Current, Laser Temp. Offset**,.).
+- **Parameters**: Allows the monitoring of different parameters (e.g., **RF Input, RF Gain, TEC Current, Laser Temp. Offset**,.).
 - **Voltages**: Allows the monitoring of the supply voltages and the **TEC voltage.**
-- **Settings**: Allows settings of different modes and parameters (e.g. **Slope, RF Gain,.**). If **Redundancy Mode** is not supported, you cannot set to this mode. Setting **Desired Output Power** and **Laser Frequency** is not supported by the MIBs.
+- **Settings**: Allows settings of different modes and parameters (e.g., **Slope, RF Gain,.**). If **Redundancy Mode** is not supported, you cannot set to this mode. Setting **Desired Output Power** and **Laser Frequency** is not supported by the MIBs.
 - **Limits 1**: Allows the configuration of alarming limits of the parameters on the **Parameters** page.
 - **Limits 2**: Allows the configuration of the alarming of all parameters from the **Voltages** page.
 - **Event Mask**: Handles the (de-)activation of alarms, warnings and notifications for both analog and discrete values. Changing these values might take some time, because some rather large table transformations are involved.
@@ -236,7 +236,7 @@ The following pages are available:
 
 - **Status**: Displays whether or not there are alarms, warnings or notifications. Some of these are not available through SNMP, so there might be some differences with the statuses visible in the web interface.
 - **Parameters**: Visualizes the **Input Power, Output Power** or the **Gain,** the supply voltages and the **Device Temperature.**
-- **Laser(s)**: Displays the major laser parameters (e.g. **Pump Power, Current, Temperature,** ...).
+- **Laser(s)**: Displays the major laser parameters (e.g., **Pump Power, Current, Temperature,** ...).
 - **Settings**: Allows the user to toggle the **Optical Power** (the laser(s)) on or off. The **Regulation Mode** can be used to switch the device mode to *Gain* or *Output Power*.
 - **Limits 1**: Allows the configuration of the alarming of all parameters from the **Parameters** page.
 - **Limits 2**: Allows the configuration of alarming limits of the supply voltages.

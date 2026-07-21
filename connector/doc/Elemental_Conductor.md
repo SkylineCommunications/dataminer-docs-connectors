@@ -58,7 +58,7 @@ When the **Force Fail** button is clicked in the table, a command is sent to the
 
 ### Events/Jobs Page
 
-On this page, there are two tables. The first table is the **Events/Jobs table**. Depending on the **conductor type (Live or File)**, this table will be filled either with events or jobs. This table is linked to the Nodes table. There are multiple buttons in the table to execute a specific command on an event or job, i.e. **Start**, **Stop/Cancel**, **Reset** and **Archive**.
+On this page, there are two tables. The first table is the **Events/Jobs table**. Depending on the **conductor type (Live or File)**, this table will be filled either with events or jobs. This table is linked to the Nodes table. There are multiple buttons in the table to execute a specific command on an event or job, i.e., **Start**, **Stop/Cancel**, **Reset** and **Archive**.
 
 The second table on this page is the **Outputs table**. In this table, all outputs are listed that are included in the events or jobs. For each entry, there is a link with an event or job. This table also allows users to execute commands individually for each output, with the **Start**, **Pause**, **Unpause** and **Archive** buttons.
 

@@ -36,4 +36,4 @@ This connector uses a virtual connection and does not require any input during e
 The element consists of the following data pages:
 
 - **Summary**: Displays summary information related to the Virtual Machine (VM) present in the system.
-- **Settings**: Contains security settings such as **Username** and **Password**, as well as network settings, i.e. **Domain** and **IP Address**.
+- **Settings**: Contains security settings such as **Username** and **Password**, as well as network settings, i.e., **Domain** and **IP Address**.

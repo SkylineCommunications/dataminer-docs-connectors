@@ -45,7 +45,7 @@ The following threshold items can be set for the categories **CPU**, **VM Size**
 - **Level Difference**: Has 3 configurable threshold levels: *Minor*, *Major*, and *Critical*. When the analytics module detects a level shift with a value that breaches one of the thresholds, a matching \<*severity\>* *Level Shift* result will be set. As not all level differences can be detected by the analytics module, there is a backup functionality that calculates the average value of the first 3 hours, compares this with the average value of the last 3 hours, and verifies if there is a level difference. When this is the case, a matching *\<severity\> Level Difference* result will be set.
 - **Rate**: Has 3 configurable threshold levels: *Minor*, *Major*, and *Critical*. When the analytics module detects a rate increase that breaches one of the thresholds, a matching *\<severity\> Leak* result will be set.
 
-As there is only one result value per category and different issues can be detected (e.g. *Minor Leak* and *Major Level Difference*), the result value will contain the one with the highest severity.
+As there is only one result value per category and different issues can be detected (e.g., *Minor Leak* and *Major Level Difference*), the result value will contain the one with the highest severity.
 
 #### Server Specs page
 

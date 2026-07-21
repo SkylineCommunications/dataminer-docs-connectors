@@ -78,7 +78,7 @@ On this page, you can configure the **Encoding Control Sampling Structure** and 
 
 Four sections contain all settings and statuses for each unique encoder.
 
-- **Encoder Control**: Generic settings and statuses for this particular encoder, e.g. **Enable/Disable Encoder Function**.
+- **Encoder Control**: Generic settings and statuses for this particular encoder, e.g., **Enable/Disable Encoder Function**.
 - **Encoder Video:** Video input and video compression settings.
 - **Encoder Audio**: De-Embedded Audio and Encoder Audio Pairs 1 to 8.
 - **Encoder Data:** Encoder Ancillary Data and VBI Data.

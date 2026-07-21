@@ -6,7 +6,7 @@ uid: Connector_help_Amazon_AWS_Elemental_MediaLive
 
 AWS Elemental MediaLive is a video service that allows easy creation of live outputs for broadcast and streaming delivery.
 
-This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon CloudWatch. It is intended to only work for **a single region at a time**. This means that each element created with this connector will only support one region. For multiple regions, you will have to create multiple elements using this connector.
+This connector communicates with 2 AWS APIs, i.e., Amazon MediaLive and Amazon CloudWatch. It is intended to only work for **a single region at a time**. This means that each element created with this connector will only support one region. For multiple regions, you will have to create multiple elements using this connector.
 
 ## About
 
@@ -32,7 +32,7 @@ This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon Cl
 
 ### Connections
 
-This connector communicates with 2 AWS APIs, i.e. Amazon MediaLive and Amazon CloudWatch. Both connections must be configured for the same region.
+This connector communicates with 2 AWS APIs, i.e., Amazon MediaLive and Amazon CloudWatch. Both connections must be configured for the same region.
 
 The region is specified in the IP address/host field of each connection, as described below.
 
@@ -64,28 +64,32 @@ HTTP CONNECTION:
 
 ### Initialization
 
-To securely interact with the AWS APIs, go to the General page and fill in the **Access Key ID** and the **Secret Access Key.**
+To securely interact with the AWS APIs, go to the **General** page and fill in the **Access Key ID** and the **Secret Access Key.**
 
 It is advised to create a dedicated IAM account user to use with DataMiner. To do so, follow these steps in your Amazon account:
 
 1. Log in to your Amazon AWS account and access the IAM Management Console.
-1. Go to Users and click Add User.
+1. Go to **Users** and click **Add User**.
 1. Create a user with a name of your choosing. We recommend the name *DataminerMediaLiveProtocol*.
-1. Make sure to grant Programmatic Access to the user account.
+1. Make sure to grant **Programmatic Access** to the user account.
 1. Make sure to grant policies for accessing the MediaLive and CloudWatch APIs.
-1. Copy the **Access Key** and the **Secret Key** and paste them on the **General page** of the element.
+1. Copy the **Access Key** and the **Secret Key** and paste them on the **General** page of the element.
 
    Note that these keys are only **generated once**, so you will not be able to recover them if you lose them. Make sure to store them in a safe location, as Skyline or Amazon cannot trace them back.
+
+Alternatively, you can use the **Assume Role** option as the credentials source. In this case, specify the **Role ARN ID** and the **Role Session Name** on the **General** page. Optionally, you can also provide a custom **Endpoint URL**. When these values are set, the **Access Key ID**, **Secret Access Key**, **Expiration Date**, and **Amazon Security Token** will be automatically retrieved.
 
 ## How to Use
 
 The element consists of the following data pages:
 
-- **General**: Features the Account ID, Access Key ID and Secret Key. Apart from the Account ID, all keys are securely stored in DataMiner.
+- **General**: Features the Account ID, Access Key ID, Secret Key, and Assume Role options (Role ARN ID, Role Session Name, and optional Endpoint URL). Apart from the Account ID, all keys are securely stored in DataMiner.
 - **Inputs**: Displays the inputs available in the configured MediaLive region.
 - **Channels**: Displays the channels available in the configured MediaLive region.
 - **Channels Health**: Relies on the CloudWatch API and will only display values when a channel is in a running state. Note that it can take up to 59 seconds to retrieve the data on this page.
 
 ## Notes
 
-The connector will only work as expected if both connections are configured in the same region. Configuring different regions for the two connections is not supported. To monitor multiple regions, create a different element for each region using this same connector. You can also create multiple elements to monitor the same regions but apply different alarm, trend or information templates.
+The connector will only work as expected if both connections are configured in the same region. Configuring different regions for the two connections is not supported.
+
+To monitor multiple regions, create a different element for each region using this same connector. You can also create multiple elements to monitor the same regions but apply different alarm, trend, or information templates.

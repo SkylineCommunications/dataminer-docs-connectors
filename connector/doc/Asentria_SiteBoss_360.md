@@ -19,7 +19,7 @@ This is a DataMiner connector for the **Asentria SiteBoss 360**. Using this conn
 
 **Challenge**: The **Asentria SiteBoss 360** returns all event sensor points in a single table, regardless of type. Configuration options are not clearly explained.
 
-**Solution**: With this connector, each type of event sensor point, i.e. analog inputs, contact closures, humidity sensors, outputs, and temperature sensors, has its own dedicated page to better categorize the different sensors and their states. The configuration table is also enhanced with better explanations to aid in alarm configuration.
+**Solution**: With this connector, each type of event sensor point, i.e., analog inputs, contact closures, humidity sensors, outputs, and temperature sensors, has its own dedicated page to better categorize the different sensors and their states. The configuration table is also enhanced with better explanations to aid in alarm configuration.
 
 ## Technical Information
 

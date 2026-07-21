@@ -18,8 +18,8 @@ This is an HTTP connector that will be connected to the CMDB. Through queries to
 
 **SERIAL Connection:**
 
-- **IP address/host**: the polling IP or URL of the destination e.g. 10.47.23.70
-- **IP port**: the port of the destination e.g. 8080
+- **IP address/host**: the polling IP or URL of the destination e.g., 10.47.23.70
+- **IP port**: the port of the destination e.g., 8080
 - **Bus address**: this field can be used to bypass the proxy. To do so fill in the value ByPassProxy.
 
 ## Usage

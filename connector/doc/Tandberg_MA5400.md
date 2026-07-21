@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device e.g. *10.11.12.13*
+- **IP address/host**: The polling IP of the device e.g., *10.11.12.13*
 
 **SNMP Settings**:
 
@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### Main View
 
-**General Info** displays general parameters, e.g. **IP Address, Subnet Mask, Router, MAC, name**, .
+**General Info** displays general parameters, e.g., **IP Address, Subnet Mask, Router, MAC, name**, .
 
 **Alarm Status** displays the status of all possible alarms.
 

@@ -33,10 +33,10 @@ This connector uses a virtual connection and does not require any input during e
 
 Once the element has been created, fill in the following information on its **General** page.
 
-- **Server**: The URL or IP address of the database server, e.g. *localhost.*
-- **UserName**: The username of an account with sufficient access rights, e.g. *guest.*
-- **Password**: The password for the account specified above, e.g. *guestPassword.*
-- **Database** **Name**: The name of the database to access, e.g. *SCDB.*
+- **Server**: The URL or IP address of the database server, e.g., *localhost.*
+- **UserName**: The username of an account with sufficient access rights, e.g., *guest.*
+- **Password**: The password for the account specified above, e.g., *guestPassword.*
+- **Database** **Name**: The name of the database to access, e.g., *SCDB.*
 
 When all information has been filled in, click the **Connect** button.
 

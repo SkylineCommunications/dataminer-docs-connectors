@@ -24,9 +24,9 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **Type of port**: The type of port used for communication with the device, e.g. *TCP/IP*.
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1*.
-- **IP port**: The polling port of the device, e.g. *12345*.
+- **Type of port**: The type of port used for communication with the device, e.g., *TCP/IP*.
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1*.
+- **IP port**: The polling port of the device, e.g., *12345*.
 
 ### Configuration
 

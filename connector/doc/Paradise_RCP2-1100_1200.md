@@ -18,9 +18,9 @@ This protocol can be used to monitor and control the **Paradise RCP2-1100/1200**
 
 **SERIAL Connection:**
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.245.83.193*.
-- **IP port**: The port of the destination, e.g. *2104*.
-- **Bus address**: The bus address of the device, e.g. *0*. Valid values range from 0 to 255.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.245.83.193*.
+- **IP port**: The port of the destination, e.g., *2104*.
+- **Bus address**: The bus address of the device, e.g., *0*. Valid values range from 0 to 255.
 
 ## Usage
 

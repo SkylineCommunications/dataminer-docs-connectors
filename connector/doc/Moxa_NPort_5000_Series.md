@@ -10,7 +10,7 @@ The Moxa NPort 5000 Series connector enables comprehensive monitoring and contro
 
 ## Key Features
 
-- **Multi-protocol communication**: Leverages both SNMP for polling and Telnet for command execution (e.g. soft reset), maximizing control capabilities.
+- **Multi-protocol communication**: Leverages both SNMP for polling and Telnet for command execution (e.g., soft reset), maximizing control capabilities.
 
 - **Comprehensive parameter coverage**: Provides detailed data on system, interface, IP, ICMP, UDP, TCP, and SNMP performance.
 

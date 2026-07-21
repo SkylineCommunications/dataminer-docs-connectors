@@ -22,7 +22,7 @@ This connector uses two SNMP connections and an SSH connection and requires the 
 
 **SNMP CONNECTION (MTA)**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -32,7 +32,7 @@ SNMP Settings:
 
 **SNMP CONNECTION (CMTS)**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -42,7 +42,7 @@ SNMP Settings:
 
 **SERIAL CONNECTION (CMTS)**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **IP port**: The port of the connected device, by default *22*.
 
 ### Initialization

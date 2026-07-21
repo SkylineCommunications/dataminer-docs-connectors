@@ -21,7 +21,7 @@ The web interface can be accessed if the client machine has access to it.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**            |
+| Range | Device Firmware Version            |
 |------------------|----------------------------------------|
 | 1.7.2.x          | Software version 7.02 software id 6279 |
 | 1.8.25.x         | Software version 8.25 software id 6281 |
@@ -36,11 +36,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600.*
-  - **Databits**: Databits specified in the manual of the device, e.g. *7.*
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1.*
-  - **Parity**: Parity specified in the manual of the device, e.g. *No.*
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No.*
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600.*
+  - **Databits**: Databits specified in the manual of the device, e.g., *7.*
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1.*
+  - **Parity**: Parity specified in the manual of the device, e.g., *No.*
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No.*
 
 - Interface connection:
 

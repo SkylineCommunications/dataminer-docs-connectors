@@ -32,6 +32,6 @@ SNMP Settings:
 
 The connector is designed to monitor the device's network interfaces, raise alarms when necessary, and enable a timely response to network events.
 
-The General page provides basic information about the device (e.g. name, model, and IP address).
+The General page provides basic information about the device (e.g., name, model, and IP address).
 
 The other three pages present detailed interface metrics, including input/output bit rate, packet rate, operational status, and other relevant parameters.

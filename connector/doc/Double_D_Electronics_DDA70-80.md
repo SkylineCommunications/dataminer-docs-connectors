@@ -18,10 +18,10 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **TCP**: Connection is selected automatically.
 - **Port**: The port to connect to the device.
-- **Local Port**: The local IP port to be used, e.g. *8000.*
+- **Local Port**: The local IP port to be used, e.g., *8000.*
 - **Bus Address**: The bus address of the device. The default value is *65.*
 
 ## Usage

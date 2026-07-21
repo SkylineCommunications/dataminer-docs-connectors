@@ -18,14 +18,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.220.250.93*.
+- **IP address/host**: The polling IP of the device, e.g., *10.220.250.93*.
 - **Device address**: Not required.
 
 **SNMP Settings:**
 
-- **Port number**: The port of the connected device, e.g. *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 ## Usage
 
@@ -73,7 +73,7 @@ The four tables on this page, the **Mgmt RX Optical Power High Table**, **Mgmt R
 This page contains three tables:
 
 - The **Mgmt No Input Detected Faults Table** and **Mgmt Reclocker Loss Faults Table** display the same information as the tables on the Notify 1 page, but for their respective fault types.
-- The **FC Faults Table** displays the **FC Fault Index** (e.g. *PSU 1 Fail*, *Fan Fail*, ...), **FC Send Traps** (to turn trap sending off/on) and **FC Fault Present**.
+- The **FC Faults Table** displays the **FC Fault Index** (e.g., *PSU 1 Fail*, *Fan Fail*, ...), **FC Send Traps** (to turn trap sending off/on) and **FC Fault Present**.
 
 ### Web Interface
 

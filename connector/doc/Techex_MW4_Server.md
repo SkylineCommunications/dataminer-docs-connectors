@@ -28,7 +28,7 @@ REST API calls are used to retrieve/send information from/to the server. The con
 
 ### Exported connectors
 
-| **Exported Connector**              | **Description**           |
+| Exported Connector              | Description           |
 |------------------------------------|---------------------------|
 | Techex MW4 Server - Generic Device | Techex MW4 Server Device. |
 
@@ -42,7 +42,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The server URL (e.g. *[https://middleware.techex.co.uk](https://middleware.techex.co.uk/))*
+- **IP address/host**: The server URL (e.g., *[https://middleware.techex.co.uk](https://middleware.techex.co.uk/))*
 
 ## Usage
 

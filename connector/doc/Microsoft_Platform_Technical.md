@@ -86,7 +86,7 @@ To enable this feature:
 
 1. On the **Performance** page, click the **Ping monitoring** button.
 1. Click the toggle button next to **Ping Query** to execute the ping.
-1. Configure the **Ping Cycle**, i.e. the interval between each ping. The default value is *60 s*.
+1. Configure the **Ping Cycle**, i.e., the interval between each ping. The default value is *60 s*.
 1. Configure the **Ping Timeout** and **Ping Number**. The default values are *1500 ms* and *4* respectively.
 
 ### Task Manager
@@ -139,7 +139,7 @@ Clicking the button **Measurement Config** will open the **Task Measurement Conf
 
 In addition, the buttons **Disable All**, **Enable All**, **Clear**, and **Refresh** allow you to manually perform the actions covered by the parameters listed above.
 
-To disable or enable the monitoring of a specific process in the Task Manager table (i.e. remove or add the process from/to the Task Manager table), proceed as follows:
+To disable or enable the monitoring of a specific process in the Task Manager table (i.e., remove or add the process from/to the Task Manager table), proceed as follows:
 
 1. Locate the process to be removed in the **Task Manager Measurement Config** table.
 1. In the column **Task Polling**, set the value to *Disable* or *Enable* accordingly.
@@ -152,7 +152,7 @@ To disable or enable the monitoring of a specific process in the Task Manager ta
 This page displays the **Network Adapter** table. This table monitors the network adapters available in the server.
 
 > [!NOTE]
-> The bandwidth of an adapter can be very high (e.g. 10 GB/s). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if Total Speed \< 0.005 \* Bandwidth.
+> The bandwidth of an adapter can be very high (e.g., 10 GB/s). Therefore, as the utilization gets calculated as the total speed divided by the bandwidth, the utilization value can be extremely low. It can even be rounded down to 0.00 % if Total Speed \< 0.005 \* Bandwidth.
 
 By default, the column **Adapter Description** will contain the name of the adapter as retrieved by [WMI](https://learn.microsoft.com/en-us/previous-versions/aa394293(v=vs.85)). However, in some cases, the connector will not be able to retrieve the name. If this is the case, it is possible to customize this name of the adapter.
 
@@ -179,7 +179,7 @@ Once an adapter is disconnected and not found by the connector, its status will 
 This page provides information about local storage devices on a server running Windows.
 
 > [!TIP]
-> A sign that could indicate that the disk is busy is the *Latency*, i.e. how long it takes before it can process something. This metric can be tracked with the parameter **Avg Disk sec/Transfer Rate**.
+> A sign that could indicate that the disk is busy is the *Latency*, i.e., how long it takes before it can process something. This metric can be tracked with the parameter **Avg Disk sec/Transfer Rate**.
 
 ### Event Viewer
 

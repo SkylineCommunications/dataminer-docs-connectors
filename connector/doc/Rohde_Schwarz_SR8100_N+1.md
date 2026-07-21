@@ -18,7 +18,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Connection:**
 
-- **IP Address/host**: The polling IP of the device, e.g. 10.220.224.16
+- **IP Address/host**: The polling IP of the device, e.g., 10.220.224.16
 
 **SNMP Settings:**
 
@@ -30,7 +30,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 ### General Page
 
-This page displays general information about the device, e.g. **System Description**, **Up Time**, **Software Version**.
+This page displays general information about the device, e.g., **System Description**, **Up Time**, **Software Version**.
 
 The page also contains two page buttons:
 
@@ -57,7 +57,7 @@ On this page, you can configure the transmitter.
 
 ### Transmitter Status
 
-This page displays the transmitter general status, e.g. **Summary Fault**, **Power Supply.**
+This page displays the transmitter general status, e.g., **Summary Fault**, **Power Supply.**
 
 ### Program Page
 
@@ -71,7 +71,7 @@ This page displays the device's web interface. Note that the client machine has 
 
 Each DVE has the following pages:
 
-- **General Page**: Displays general parameters of the transmitter, e.g. Transmitter Name, Transmitter Mode.
+- **General Page**: Displays general parameters of the transmitter, e.g., Transmitter Name, Transmitter Mode.
 - **Tx Configuration Page**: Allows the configuration of the transmitter.
 - **Tx Status Page**: Displays the transmitter status. With the **Exciter A** and **Exciter B** page buttons, you can also view the status of the corresponding Exciter.
 - **Input Status Page**: Displays the input status of the transmitters.

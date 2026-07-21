@@ -58,7 +58,7 @@ This page displays **general information** about the device, like its name, loca
 
 ### Storage
 
-This page displays information related to the **storage group**, i.e. the information of each group, compatibilities, and status.
+This page displays information related to the **storage group**, i.e., the information of each group, compatibilities, and status.
 
 ### Member
 

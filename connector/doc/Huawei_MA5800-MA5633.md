@@ -447,7 +447,7 @@ The 2.0.x branch of the Huawei MA5800-MA5633 connector introduces a series of im
 #### Polling and Flow Optimization (v2.0.0.24)
 
 - **QAction-based polling**: Polling now uses QActions, which are custom scripts designed to execute specific tasks more efficiently. This change improves the speed and reliability of polling operations.
-- **Flow adjustments to avoid RTEs**: Changes have been made to the polling flows to reduce the occurrence of run-time errors (RTEs), enhancing the stability and performance of the connector.
+- **Flow adjustments to avoid RTEs**: Changes have been made to the polling flows to reduce the occurrence of runtime errors (RTEs), enhancing the stability and performance of the connector.
 
 #### Uplink Optical Table Enhancements (v2.0.0.21)
 

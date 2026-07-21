@@ -81,16 +81,16 @@ The connector provides the following pages:
 
 - **Modulator:** DVB-T2 modulator overview (presence of 1PPS, 10MHz and TX frequency signals).
 
-- **Modulator Configuration:** Displays a table with DVB-T2 settings, i.e. the channel number, country, channel offset and channel frequency.
+- **Modulator Configuration:** Displays a table with DVB-T2 settings, i.e., the channel number, country, channel offset and channel frequency.
 
-- **Modulator Alarms:** Displays a table with DVB-T2 alarms (e.g. temperature, 1PPS, 10MHz and TS presence, etc.).
+- **Modulator Alarms:** Displays a table with DVB-T2 alarms (e.g., temperature, 1PPS, 10MHz and TS presence, etc.).
 
 - **Input:** Provides information related to the inputs (GbE1/2 and ASI1/2) TS status (locked, bitrate, ASI format and selected input) in table format.
 
-- **Input Alarms:** Contains a table with input-related alarms (e.g. seamless inputs, 10MHz, 1PPS, hitless, etc.).
+- **Input Alarms:** Contains a table with input-related alarms (e.g., seamless inputs, 10MHz, 1PPS, hitless, etc.).
 
 - **GbE:** Provides an overview of the GbE (source 1/2 status and selected source), as well as data related to the GbE status (TS, ASI format, TS bitrate, delay and alignment, etc.) and GbE Alarms (GbE1/2 lock and ASI1/2 Lock).
 
   - **GbE Configuration Seamless:** Contains settings related to the GbE seamless (enable, input 1/2, forced input, source switch command and TS ID control).
   - **GbE Control Seamless:** Contains seamless control settings (enable mask, enabled alarm mask, user PID and interval).
-  - **GbE Status Seamless:** Displays a table with seamless stream error counters (e.g. continuity, CRC, PAR, PMT, Sync Byte, Sync Loss, etc.).
+  - **GbE Status Seamless:** Displays a table with seamless stream error counters (e.g., continuity, CRC, PAR, PMT, Sync Byte, Sync Loss, etc.).

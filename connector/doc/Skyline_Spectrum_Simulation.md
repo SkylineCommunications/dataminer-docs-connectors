@@ -42,7 +42,7 @@ This page contains the spectrum analyzer, allowing you to view the simulated tra
 
 This page contains general information, as well as the following parameters:
 
-- **Track Parameter Sets**: Open the button next to this parameter to open a tracking window. This window allows you to trace which parameter sets were done. In the window, sets will only be logged if the **Track Sets** parameter is enabled. If **Track Status Sets** is also enabled, status sets (communication between SLSpectrum and the protocol, e.g. requesting a new trace) are also logged.
+- **Track Parameter Sets**: Open the button next to this parameter to open a tracking window. This window allows you to trace which parameter sets were done. In the window, sets will only be logged if the **Track Sets** parameter is enabled. If **Track Status Sets** is also enabled, status sets (communication between SLSpectrum and the protocol, e.g., requesting a new trace) are also logged.
 
 - **Simulation Mode**: Allows you to switch between the two different modes of the connector:
 
@@ -54,9 +54,9 @@ This page contains general information, as well as the following parameters:
 
   - *Default*: A single flat line at the center of the trace window, simulating no available signals or carriers.
 
-  - *Jump Up*: A single spike at the center of the window, wider than the channel pattern. This can be used to simulate e.g. a band pass filter.
+  - *Jump Up*: A single spike at the center of the window, wider than the channel pattern. This can be used to simulate e.g., a band pass filter.
 
-  - *Jump Down*: Inverse pattern of *Jump Up*. This can be used to simulate e.g. a notch filter.
+  - *Jump Down*: Inverse pattern of *Jump Up*. This can be used to simulate e.g., a notch filter.
 
   - *Channel*: A single spike in the center of the trace window, simulating a typical view of one channel.
 

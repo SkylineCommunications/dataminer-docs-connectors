@@ -58,7 +58,7 @@ The element created with this connector consists of the following data pages:
 - **Secure Virtual Network**: Provides an overview of the **Secure Virtual Network**, **OS information**, **SVN Appliance** and **SVN Routing Modification** details. Also contains three page buttons that provide access to more details about **SVN Performance, SVN Network Interfaces** and **VS Routing.**
 - **High Availability**: Provides information on the High Availability product.
 - **Firewall**: Displays the firewall status, with details related to the firewall **Network Interfaces.**
-- **Firewall Statistics**: Contains several page buttons that display information related to various firewall statistics, e.g. **SMTP**, **FTP**, **HTTP**, **Cookies**, **AV Total**, etc.
+- **Firewall Statistics**: Contains several page buttons that display information related to various firewall statistics, e.g., **SMTP**, **FTP**, **HTTP**, **Cookies**, **AV Total**, etc.
 - **Policy Statistics**: Contains information related to policy statistics.
 - **Interface Statistics**: This page contains the Interfaces table.
 - **LS Connectivity**: This page contains information related to LS connectivity.

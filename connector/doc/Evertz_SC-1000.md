@@ -36,7 +36,7 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device (e.g. *172.23.40.205*).
+  - **IP address/host**: The polling IP of the device (e.g., *172.23.40.205*).
   - **IP port**: The IP port of the device. Required, default value: *23*.
   - **Bus address**: The bus address of the device. Required, range: *1* to *16*.
 
@@ -51,9 +51,9 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Port number**: The port of the connected device (e.g. *161*).
-- **Get community string**: The community string used when reading values from the device (e.g. *public*).
-- **Set community string**: The community string used when setting values on the device (e.g. *private*).
+- **Port number**: The port of the connected device (e.g., *161*).
+- **Get community string**: The community string used when reading values from the device (e.g., *public*).
+- **Set community string**: The community string used when setting values on the device (e.g., *private*).
 
 ## Usage
 

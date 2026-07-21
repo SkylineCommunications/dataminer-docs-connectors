@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not required.
 
 SNMP Settings:
@@ -47,7 +47,7 @@ SNMP Settings:
 
 ### General
 
-On this page, you can find information about the received **traps**, i.e. the message and the last time the trap was received.
+On this page, you can find information about the received **traps**, i.e., the message and the last time the trap was received.
 
 There is also a **Configuration** page button, which allows you to set:
 
@@ -71,4 +71,4 @@ In addition, on this page you can also retrieve information about the status of 
 
 ### Encoder
 
-On this page, you can find information about the received **traps** for the Encoder, i.e. the message, the state, and the last time the trap was received.
+On this page, you can find information about the received **traps** for the Encoder, i.e., the message, the state, and the last time the trap was received.

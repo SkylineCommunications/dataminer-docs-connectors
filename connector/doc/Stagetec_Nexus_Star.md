@@ -13,7 +13,7 @@ This connector retrieves data via **Smart-Serial Communication** over **UDP**.
 
 ### Version Info
 
-| **Range**      | **Description**                                                                                       | **DCF Integration** | **Cassandra Compliant** |
+| Range      | Description                                                                                       | DCF Integration | Cassandra Compliant |
 |-----------------------|-------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x               | Initial version                                                                                       | No                  | Yes                     |
 | 1.0.1.x               | RedundantPolling IP Address (warning, needs a new element)                                            | No                  | Yes                     |

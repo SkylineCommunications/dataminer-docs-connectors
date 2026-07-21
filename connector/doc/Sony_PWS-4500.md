@@ -12,7 +12,7 @@ The information on the parameters is retrieved via **SNMP** communication.
 
 ### Version Info
 
-| **Range**            | **Key Features**                             | **Based on** | **System Impact**                                                                                                                                                  |
+| Range            | Key Features                             | Based on | System Impact                                                                                                                                                  |
 |----------------------|----------------------------------------------|--------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                             | -            | -                                                                                                                                                                  |
 | 1.0.1.x              | Support for monitoring of Sony 2110 devices. | 1.0.0.18     | Renamed NMI table to IP AV Interfaces table. Parameters related to NMI logic were renamed to a more generic name to provide support for other cards in the future. |
@@ -61,7 +61,7 @@ SERIAL CONNECTION: (see "Initialization")
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device, e.g. *port 21.*
+  - **IP port**: The IP port of the device, e.g., *port 21.*
 
 ### Initialization
 

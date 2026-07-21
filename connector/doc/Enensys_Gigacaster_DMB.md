@@ -32,7 +32,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -52,8 +52,8 @@ The element created with this connector consists of the data pages described bel
 
 This page contains information about the device itself:
 
-- Identification, e.g. **Device Name**, **Device Type**, **Device Serial Number**, etc.
-- Hardware status, e.g. **Product Mode**, **Current Temperature**, etc.
+- Identification, e.g., **Device Name**, **Device Type**, **Device Serial Number**, etc.
+- Hardware status, e.g., **Product Mode**, **Current Temperature**, etc.
 - Generic alarm information: **Current Status**, **Alarm Current Count**.
 - Date and time: **Date Time ISO**, **Date Time Unix**.
 - Options: **Device Option Table**.

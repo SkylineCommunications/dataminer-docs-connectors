@@ -32,7 +32,7 @@ This SNMP connector is a **DVE manager** that will create a Dynamic Virtual Elem
 
 ### Exported Connectors
 
-| **Exported Connectors**                                                                                              | **Description**  |
+| Exported Connectors                                                                                              | Description  |
 |----------------------------------------------------------------------------------------------------------------------|------------------|
 | [Nevion Flashlink Frame - GYDA](xref:Connector_help_Nevion_Flashlink_Frame_-_GYDA)                           | Flashlink Module |
 | [Nevion Flashlink Frame - ETH100](xref:Connector_help_Nevion_Flashlink_Frame_-_ETH100)                       | Flashlink Module |

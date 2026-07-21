@@ -26,7 +26,7 @@ A **Visio** file is provided along with this connector and provides full access 
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                            | Exported Components     |
 |-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Standard DataMiner PTP Device (mediation protocol) PTP_SetupWizard (configuration Automation script) PTP_SetupWizard_Roles (configuration Automation script) | -                       |
+| 1.0.0.x   | No                  | Yes                     | Standard DataMiner PTP Device (mediation protocol) PTP_SetupWizard (configuration automation script) PTP_SetupWizard_Roles (configuration automation script) | -                       |
 
 ## Configuration
 
@@ -36,18 +36,18 @@ A **Visio** file is provided along with this connector and provides full access 
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-Note that this element should not be created manually, but should instead be created using the **PTP_SetupWizard** Automation script. For more information, refer to the Initialization section below.
+Note that this element should not be created manually, but should instead be created using the **PTP_SetupWizard** automation script. For more information, refer to the Initialization section below.
 
 ### Initialization
 
-The configuration of the Skyline PTP application and the full DataMiner PTP Solution must be done using the PTP_SetupWizard and PTP_SetupWizard_Roles Automation scripts.
+The configuration of the Skyline PTP application and the full DataMiner PTP Solution must be done using the PTP_SetupWizard and PTP_SetupWizard_Roles automation scripts.
 
 The **PTP_SetupWizard** script must be executed initially to configure the DataMiner PTP Solution. This script will:
 
 - Create the Top view for the PTP Solution items.
 - Create the Skyline PTP element.
 - Execute the initial configuration of the Skyline PTP element.
-- Execute the PTP_SetupWizard_Roles Automation script.
+- Execute the PTP_SetupWizard_Roles automation script.
 
 The **PTP_SetupWizard_Roles** script is used to configure the PTP devices and update this in the Skyline PTP element. This script is executed from the PTP_SetupWizard script once the initial configuration is done. However, it can also be manually executed later to update the PTP devices managed by the Skyline PTP application. The PTP_SetupWizard_Roles script will:
 

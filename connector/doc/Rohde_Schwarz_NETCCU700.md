@@ -20,7 +20,7 @@ With three timers, all parameters of the device are polled. The parameters are d
 
 ### Exported connectors
 
-| **Exported Connector**                  | **Description**    |
+| Exported Connector                  | Description    |
 |----------------------------------------|--------------------|
 | Rohde Schwarz NETCCU 700 Transmitter 1 | Transmitter 1      |
 | Rohde Schwarz NETCCU 700 Transmitter 2 | Transmitter 2      |
@@ -37,7 +37,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.17.3.3*.
+- **IP address/host**: The polling IP of the device, e.g., *10.17.3.3*.
 
 SNMP Settings:
 

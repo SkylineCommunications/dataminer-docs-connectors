@@ -10,7 +10,7 @@ This connector is intended for the monitoring and management of UPS devices from
 
 ### Version Info
 
-| **Range**            | **Key Features**             | **Based on** | **System Impact**                                              |
+| Range            | Key Features             | Based on | System Impact                                              |
 |----------------------|------------------------------|--------------|----------------------------------------------------------------|
 | 1.0.1.x [SLC Main]   | Added Alarm Page and tables. | 1.0.0.5      | Changed display key to naming to make it Cassandra-compatible. |
 
@@ -60,7 +60,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element has the following data pages:
 
-- **General**: Contains general information such as Model, Up Time, Software version, Type, and others. Via a page button, you can check environmental information for the device, if available, i.e. the humidity and temperature.
+- **General**: Contains general information such as Model, Up Time, Software version, Type, and others. Via a page button, you can check environmental information for the device, if available, i.e., the humidity and temperature.
 - **Input**: Contains information regarding the inputs of the device, such as Input Frequency, Number of Input Phases, and Nominal Input Voltage. The Input Table lists all the inputs of the UPS.
 - **Output**: Contains information regarding the outputs of the device, such as Output Frequency, Number of Output Phases, Nominal Output Voltage, Output Frequency, and Output Power. The Output Table lists all the outputs of the UPS.
 - **Battery**: Contains information regarding the battery state of the device, such as Remaining Battery Time, Voltage, Battery Current, Battery Capacity, Battery Status, and Battery Last Replaced date.

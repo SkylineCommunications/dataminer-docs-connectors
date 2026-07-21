@@ -40,7 +40,7 @@ You can find all the information related to the device general parameters on thi
 
 The Sync table on this page has the following columns:
 
-- **Mode**: Sets the sync output mode (e.g. black burst, tri-level sync, CW signals).
+- **Mode**: Sets the sync output mode (e.g., black burst, tri-level sync, CW signals).
 - **VITC Control**: Enables Vertical Interval Timecode (VITC) on PAL or NTSC outputs.
 - **VITC Line \<1-2>**: Defines the VITC insertion lines (PAL: 6-31, NTSC: 10-30).
 - **Drop Frame Control**: Enables the drop frame bit for NTSC timecode.

@@ -66,7 +66,7 @@ The element has the following pages:
 - **Config:** This page contains input and output control/configuration parameters.
 - **Probing:** This page contains **TRS**, **EDH**, **ANC** and **IO Delay** status information for probe A and B.
 - **Network:** This page contains network configuration and status parameters.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## DataMiner Connectivity Framework
 

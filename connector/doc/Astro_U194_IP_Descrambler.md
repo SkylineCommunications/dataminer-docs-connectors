@@ -35,7 +35,7 @@ HTTP Main Connection
 This connector uses an HTTP connection and requires the following input during element creation:
 
 - **IP address/host**: The IP address of the U194.
-- **IP port**: The port of the destination e.g. *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 SNMP Trap Connection
@@ -44,7 +44,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP Address/host**: The polling IP of the U194, e.g. *10.11.12.13*.
+- **IP Address/host**: The polling IP of the U194, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -61,8 +61,8 @@ This connector uses an HTTP connection and requires the following input during e
 HTTP CONNECTION:
 
 - **IP address/host**: The IP address of the Astro U100 Controller.
-- **IP port**: The port of the destination e.g. *80*.
-- **Bus address**: The IP address of the U194. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g. *ByPassProxy;10.11.12.13.*
+- **IP port**: The port of the destination, e.g., *80*.
+- **Bus address**: The IP address of the U194. In addition, "*ByPassProxy*" must be filled in to bypass any possible proxy that could block the HTTP communication. The two fields must be separated by a semicolon, e.g., *ByPassProxy;10.11.12.13.*
 
 SNMP Trap Connection
 
@@ -70,7 +70,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP Address/host**: The polling IP of the U194, e.g. *10.11.12.13*.
+- **IP Address/host**: The polling IP of the U194, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -90,11 +90,11 @@ This page displays the status of the device, with parameters such as **Temperatu
 
 ### Main Page
 
-On this page, the main configuration of the device can be updated, e.g. **DNS**, **Time Source**, **Interfaces**.
+On this page, the main configuration of the device can be updated, e.g., **DNS**, **Time Source**, **Interfaces**.
 
 ### Test Gen Page
 
-On this page, you can configure the test gen parameters, e.g. **Data Rate**, **Packet ID.**
+On this page, you can configure the test gen parameters, e.g., **Data Rate**, **Packet ID.**
 
 ### IP TX
 

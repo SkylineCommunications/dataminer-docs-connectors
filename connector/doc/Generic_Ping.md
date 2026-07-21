@@ -4,7 +4,7 @@ uid: Connector_help_Generic_Ping
 
 # Generic Ping
 
-This connector can be used to send ping commands to a number of IP addresses in the network. It serves as a utility to test connectivity and also calculates multiple metrics and statistics based on the results of the ping, e.g. round-trip time (RTT), ping success rate, jitter, etc.
+This connector can be used to send ping commands to a number of IP addresses in the network. It serves as a utility to test connectivity and also calculates multiple metrics and statistics based on the results of the ping, e.g., round-trip time (RTT), ping success rate, jitter, etc.
 
 The connector can perform multiple ping requests at once. The IP addresses/hostnames can be added manually or imported with a .csv file. For each IP address/hostname that has been added, ping requests will be performed if the status is *enabled*. The result of the ping commands and some other statistical data will be shown for each IP address/hostname.
 

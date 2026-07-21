@@ -4,33 +4,33 @@ uid: Connector_help_Verizon_Newtec_Dialog_Platform_Collector
 
 # Verizon Newtec Dialog Platform Collector
 
-The **Verizon Newtec Dialog Platform Collector** collects and organizes the data from the Newtec Dialog Platform.
-
 ## About
 
-This is an **HTTP** connector that communicates with the **Newtec Dialog System** via the **Restful API** provided by the system and via the native **SOAP API** provided by DataMiner. The data collected from both sources are placed strategically within the connector, allowing users to easily monitor the different systems controlled by the **Newtec Dialog Platform**.
+The **Verizon Newtec Dialog Platform Collector** collects and organizes the data from the Newtec Dialog Platform.
+
+This **HTTP** connector communicates with the **Newtec Dialog System** via the **Restful API** provided by the system and via the native **SOAP API** provided by DataMiner. The data collected from both sources are placed strategically within the connector, allowing users to easily monitor the different systems controlled by the **Newtec Dialog Platform**.
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                 | **DCF Integration** | **Cassandra Compliant** |
-|----------------------|-----------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x              | Initial version The initial version in this range is deprecated. Use version **1.0.0.2** of this range instead. | No                  | Yes                     |
-| 1.0.1.x              | Improvements to the faults functionality                                                                        | No                  | Yes                     |
-| 1.1.1.x              | Adapted to new firmware version 2.1.2.                                                          | No                  | Yes                     |
-| 1.1.2.x [SLC Main]   | Adapted to work with DMS.                                                                       | No                  | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| 1.0.0.x | Initial version. The initial version in this range is deprecated. Use version **1.0.0.2** of this range instead. | No | Yes |
+| 1.0.1.x | Improvements to the faults functionality | No | Yes |
+| 1.1.1.x | Adapted to new firmware version 2.1.2. | No | Yes |
+| 1.1.2.x [SLC Main] | Adapted to work with DMS. | No | Yes |
 
 ### Product Info
 
 | Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | 2.1.1                       |
-| 1.0.1.x          | 2.1.1                       |
-| 1.1.1.x          | 2.1.2                       |
-| 1.1.2.x          | 2.1.2                       |
+|--|--|
+| 1.0.0.x | 2.1.1 |
+| 1.0.1.x | 2.1.1 |
+| 1.1.1.x | 2.1.2 |
+| 1.1.2.x | 2.1.2 |
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
 #### HTTP Main Connection
 
@@ -62,7 +62,7 @@ Note: In **version 1.1.2.x** of this protocol, the **IP address specified in the
 
 ### General
 
-This page contains basic information on what is going on in the connector, such as **Active Remotes**, **Networks** and **Hub Forward**.
+This page contains basic information on what is going on in the connector, such as **Active Remotes**, **Networks**, and **Hub Forward**.
 
 ### Remotes
 
@@ -70,19 +70,19 @@ This page contains critical information regarding the **Remotes** within the **C
 
 Remotes are important as they are used in the connector's **import/export** feature, which populates some of the fields in the Circuits Overview Table. They are the main part of the Circuits.
 
-The overview table on this page contains among others the **Modem Type**, **Monitoring Type** and **Lock State** columns.
+The overview table on this page contains among others the **Modem Type**, **Monitoring Type**, and **Lock State** columns.
 
 ### Advanced Remotes Instance
 
 This page contains critical information regarding the **Advanced Remotes** within the **Circuits**. This information is retrieved via the **SOAP API**.
 
-The overview table on this page contains among others the **Modem Operational Mode**, **Active Beam**, **Latitude** and **Longitude** columns.
+The overview table on this page contains among others the **Modem Operational Mode**, **Active Beam**, **Latitude**, and **Longitude** columns.
 
 ### Standard Remotes Instance
 
 This page contains critical information regarding the **Standard Remotes** within the **Circuits**. This information is retrieved via the **SOAP API**.
 
-The overview table on this page contains among others the **Operational State**, **Critical Data Forward Throughput** and **Real-Time Return Throughput** columns.
+The overview table on this page contains among others the **Operational State**, **Critical Data Forward Throughput**, and **Real-Time Return Throughput** columns.
 
 ### RI Alarms
 
@@ -102,7 +102,7 @@ This page contains a table listing all the alarms related to the **Remotes Certi
 
 This page contains critical information regarding the **Remotes Mobility** corresponding with the **Remotes** within the connector. This information is retrieved via the **SOAP API**.
 
-The page contains the **Remotes Mobility**, **Remotes Mobility Terminal** and **Remotes Mobility Satellite Network** tables, which include parameters such as **Accessible**, **Ongoing** and **Located**.
+The page contains the **Remotes Mobility**, **Remotes Mobility Terminal**, and **Remotes Mobility Satellite Network** tables, which include parameters such as **Accessible**, **Ongoing** and **Located**.
 
 ### RM Alarms
 
@@ -114,7 +114,7 @@ This page contains a table that collects information from different tables in th
 
 ### Hub Forward
 
-This page contains a table that collects information from different tables in the connector such as **Forward Link**, **Forward Carrier** and **Forward Pool.** The collected information is then used in calculations that are placed in a table that provides an overview of the **Hub Forward** within the connector. The table on this page displays the **Symbol Rate**, **Uplink Center Frequency**, **Power**, etc.
+This page contains a table that collects information from different tables in the connector such as **Forward Link**, **Forward Carrier**, and **Forward Pool**. The collected information is then used in calculations that are placed in a table that provides an overview of the **Hub Forward** within the connector. The table on this page displays the **Symbol Rate**, **Uplink Center Frequency**, **Power**, etc.
 
 ### Hub Return
 
@@ -124,7 +124,7 @@ This page contains a table that collects information from different tables in th
 
 This page contains a table that collects information from the **import/export** feature, which exports a configuration file with a list of **Remotes** present in the connector to the **VSAT Database** and imports a provisioning file from the **VSAT Database** based on the exported file.
 
-This table also collects information from different tables within the connector such as **Hub Forward**, **Hub Return** and **Hub Network**, which provides an overview of the **Circuits** within the connector.
+This table also collects information from different tables within the connector such as **Hub Forward**, **Hub Return**, and **Hub Network**, which provides an overview of the **Circuits** within the connector.
 
 The table on this page displays the **Hub Forward Traffic**, **Hub Return C/No**, **Antenna Size**, etc.
 
@@ -208,87 +208,87 @@ This page contains a table listing all the alarms related to the **Forward Pool 
 
 This page contains critical information regarding the **Return Pool** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **PIR**, **Weight** and **Return Technology** columns.
+The overview table on this page contains among others the **PIR**, **Weight**, and **Return Technology** columns.
 
 ### Return Pool Instance
 
 This page contains critical information regarding the **Return Pool** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **CPM Return Class Pools** and **HRC MXDMA Class Pools tables**, which include parameters such as **Real-Time CIR**, **Real-Time EIR Shaping Ratio** and **Critical Data CIR Congestion.**
+The page contains the **CPM Return Class Pools** and **HRC MXDMA Class Pools tables**, which include parameters such as **Real-Time CIR**, **Real-Time EIR Shaping Ratio**, and **Critical Data CIR Congestion.**
 
 ### RPI Alarms
 
-This page contains a table listing all the alarms related to the **Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### CPM RPI Alarms
 
-This page contains a table listing all the alarms related to the **CPM Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **CPM Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### HRC MXDMA RPI Alarms
 
-This page contains a table listing all the alarms related to the **HRC MXDMA Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **HRC MXDMA Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### HRC SCPC RPI Alarms
 
-This page contains a table listing all the alarms related to the **HRC SCPC Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **HRC SCPC Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### S2 RPI Alarms
 
-This page contains a table listing all the alarms related to the **S2 Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **S2 Return Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Forward Link
 
 This page contains critical information regarding the **Forward Link** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Linear Predistortion**, **Max Symbol Rate** and **Merging Slicing Mode** columns.
+The overview table on this page contains among others the **Linear Predistortion**, **Max Symbol Rate**, and **Merging Slicing Mode** columns.
 
 ### Forward Link Instance
 
 This page contains critical information regarding the **Forward Link** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-In the table on this page, you can among others find the **Control Symbol Rate**, **Unicast Send Bitrate** and **Unicast Dropped Bitrate** columns.
+In the table on this page, you can among others find the **Control Symbol Rate**, **Unicast Send Bitrate**, and **Unicast Dropped Bitrate** columns.
 
 ### FLI Alarms
 
-This page contains a table listing all the alarms related to the **Forward Link** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Forward Link** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### RLI Alarms
 
-This page contains a table listing all the alarms related to the **Return Link** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Return Link** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Service Profile
 
 This page contains critical information regarding the **Service Profile** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Type**, **Forward Acceleration Best Effort** and **Locked** columns.
+The overview table on this page contains among others the **Type**, **Forward Acceleration Best Effort**, and **Locked** columns.
 
 ### Classification Profile
 
 This page contains critical information regarding the **Classification Profile** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-This page contains the **Classification Profile** and **Classification Rules** tables, which include parameters such as **Packing Marking Mode**, **Remote Side QoS Classification** and **Traffic Class.**
+This page contains the **Classification Profile** and **Classification Rules** tables, which include parameters such as **Packing Marking Mode**, **Remote Side QoS Classification**, and **Traffic Class.**
 
 ### Calibration
 
 This page contains critical information regarding the **Calibration** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **CO Mean**, **NO Mean** and **Locked** columns.
+The overview table on this page contains among others the **CO Mean**, **NO Mean**, and **Locked** columns.
 
 ### HRC MCD Frequency Slot
 
 This page contains critical information regarding the **HRC MCD Frequency Slot** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Start Frequency**, **Stop Frequency** and **Locked** columns.
+The overview table on this page contains among others the **Start Frequency**, **Stop Frequency**, and **Locked** columns.
 
 ### Accounting
 
 This page contains critical information regarding the **Accounting** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **Terminals Unicast Traffic**, **Terminal Multicast Circuits** and **Producers** tables, which includes parameters such as **Forward Volume**, **Return Packet** and **Active.**
+The page contains the **Terminals Unicast Traffic**, **Terminal Multicast Circuits**, and **Producers** tables, which includes parameters such as **Forward Volume**, **Return Packet**, and **Active.**
 
 ### Accounting Alarms
 
-This page contains a table listing all the alarms related to the **Accounting** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Accounting** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Accounting Aggregator
 
@@ -298,29 +298,29 @@ In the table on this page, you can among others find the **File Name**, **Status
 
 ### AA Alarms
 
-This page contains a table listing all the alarms related to the **Accounting Aggregator** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Accounting Aggregator** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Redundancy Controller
 
 This page contains critical information regarding the **Redundancy Controller** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **Single Device** and **Server Redundancy** tables, which include parameters such as **Server Status**, **HPS,** and **Virtual Machine.**
+The page contains the **Single Device** and **Server Redundancy** tables, which include parameters such as **Server Status**, **HPS**, and **Virtual Machine.**
 
 ### RC Alarms
 
-This page contains a table listing all the alarms related to the **Redundancy Controller** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Redundancy Controller** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Hub Module
 
 This page contains critical information regarding the **Hub Module** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Version**, **Type,** and **Locked** columns.
+The overview table on this page contains among others the **Version**, **Type**, and **Locked** columns.
 
 ### Enclosure Device
 
 This page contains critical information regarding the **Enclosure Device** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-In the table on this page, you can among others find the **Asset Tag**, **Spare Part Number** and **Server Blade Presence** columns.
+In the table on this page, you can among others find the **Asset Tag**, **Spare Part Number**, and **Server Blade Presence** columns.
 
 ### Enclosure Device Alarms
 
@@ -330,11 +330,11 @@ This page contains a table listing all the alarms related to the **Enclosure Dev
 
 This page contains critical information regarding the **Microsoft Server** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **MS Server**, **Processors**, and **Ports List tables**, which include parameters such as **Total Handles**, **Total Threads,** and **Last Time Sync.**
+The page contains the **MS Server**, **Processors**, and **Ports List tables**, which include parameters such as **Total Handles**, **Total Threads**, and **Last Time Sync.**
 
 ### MSS Alarms
 
-This page contains a table listing all the alarms related to the **Microsoft Server** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Microsoft Server** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### LX Servers
 
@@ -344,221 +344,221 @@ The page contains the **Linux Server** and **Storage Table** tables, which inclu
 
 ### LXS Alarms
 
-This page contains a table listing all the alarms related to the **Linux Server** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Linux Server** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Modulator
 
 This page contains critical information regarding the **Modulator** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The overview table on this page contains among others the **Data Active Interface**, **Data Link Redundancy** and **Power Supply** columns.
+The overview table on this page contains among others the **Data Active Interface**, **Data Link Redundancy**, and **Power Supply** columns.
 
 ### Modulator Alarms
 
-This page contains a table listing all the alarms related to the **Modulator** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Modulator** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### MCD6000 Demodulator
 
 This page contains critical information regarding the **MCD6000 Demodulator** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The overview table on this page contains among others the **Data Active Interface**, **Data Link Redundancy** and **Power Supply** columns.
+The overview table on this page contains among others the **Data Active Interface**, **Data Link Redundancy**, and **Power Supply** columns.
 
 ### MCD7000 Demodulator
 
 This page contains critical information regarding the **MCD7000 Demodulator** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The overview table on this page contains among others the **Product**, **CPU Load** and **Memory Use** columns.
+The overview table on this page contains among others the **Product**, **CPU Load**, and **Memory Use** columns.
 
 ### Demodulator Alarms
 
-This page contains a table listing all the alarms related to the **Demodulator** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Demodulator** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value**.
 
 ### Switch
 
 This page contains critical information regarding the **Switch** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The overview table on this page contains among others the **CPU Usage**, **Memory Size,** and **Total RX** columns.
+The overview table on this page contains among others the **CPU Usage**, **Memory Size**, and **Total RX** columns.
 
 ### Switch Alarms
 
-This page contains a table listing all the alarms related to the **Switch** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Switch** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### RF Switch
 
 This page contains critical information regarding the **RF Switch** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **RF Switch Overview**, **Network Interface Settings** and **Raw Mode** tables, which include parameters such as **Bucket Name**, **Redundancy Mode**, **IP Address**, **Full Switch** and **Switch Position.**
+The page contains the **RF Switch Overview**, **Network Interface Settings**, and **Raw Mode** tables, which include parameters such as **Bucket Name**, **Redundancy Mode**, **IP Address**, **Full Switch**, and **Switch Position**.
 
 ### RF Switch Alarms
 
-This page contains a table listing all the alarms related to the **RF Switch** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **RF Switch** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value**.
 
 ### CSE Shaper
 
 This page contains critical information regarding the **CSE Shaper** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-In the table on this page, you can among others find the **Receive Bitrate**, **Drop Bitrate** and **Average Delay** columns.
+In the table on this page, you can among others find the **Receive Bitrate**, **Drop Bitrate**, and **Average Delay** columns.
 
 ### CSES Alarms
 
-This page contains a table listing all the alarms related to the **CSE Shaper** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **CSE Shaper** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### CPMCTL Controller
 
 This page contains critical information regarding the **CPMCTL Controller** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **CPMCTL Controller**, **Shaping Nodes** and **Slot Pool Container** tables, which include parameters such as **Input Counter**, **Total OK Slots**, **Outstanding Volume**, **EIR Shaping,** and **Average Lost Volume.**
+The page contains the **CPMCTL Controller**, **Shaping Nodes**, and **Slot Pool Container** tables, which include parameters such as **Input Counter**, **Total OK Slots**, **Outstanding Volume**, **EIR Shaping**, and **Average Lost Volume.**
 
 ### CPMCTLC Alarms
 
-This page contains a table listing all the alarms related to the **CPMCTL Controller** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **CPMCTL Controller** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### HRCCTL Controller
 
 This page contains critical information regarding the **HRCCTL Controller** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **HRCCTL Controller** and **HRCCTL Shaping Nodes** tables, which include parameters such as **System Noise Too Low**, **PTP Out of Lock**, **EIR Shaping Ratio** and **Requested Rate.**
+The page contains the **HRCCTL Controller** and **HRCCTL Shaping Nodes** tables, which include parameters such as **System Noise Too Low**, **PTP Out of Lock**, **EIR Shaping Ratio**, and **Requested Rate.**
 
 ### HRCCTLC Alarms
 
-This page contains a table listing all the alarms related to the **HRCCTL Controller** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **HRCCTL Controller** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### DCP Decapsulator
 
 This page contains critical information regarding the **DCP Decapsulator** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-In the table on this page, you can among others find the **Receive Bitrate**, **Receive Packet Rate** and **Send Bitrate** columns.
+In the table on this page, you can among others find the **Receive Bitrate**, **Receive Packet Rate**, and **Send Bitrate** columns.
 
 ### DCPD Alarms
 
-This page contains a table listing all the alarms related to the **DCP Decapsulator** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **DCP Decapsulator** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### DEM Application
 
 This page contains critical information regarding the **DEM Application** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **DEM Application**, **External Interface Statistics**, **TAS Interface Statistics,** and **Neighbors Information** tables, which include parameters such as the **External RTN Rate**, **External FWD Rate**, **Interface**, **FWD Data Rate**, **RTN Data Rate**, **FWD Packet Rate**, **Number of Learned Routes** and **Neighbor IP.**
+The page contains the **DEM Application**, **External Interface Statistics**, **TAS Interface Statistics**, and **Neighbors Information** tables, which include parameters such as the **External RTN Rate**, **External FWD Rate**, **Interface**, **FWD Data Rate**, **RTN Data Rate**, **FWD Packet Rate**, **Number of Learned Routes**, and **Neighbor IP.**
 
 ### DEMA Alarms
 
-This page contains a table listing all the alarms related to the **DEM Application** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **DEM Application** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Tellinet
 
 This page contains critical information regarding the **Tellinet** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **Tellinet** and **Tellinet Statistics** tables, which include parameters such as **Running on Server**, **Number of TCP Connection**, **Number of Associations** and **Tellinet Instance ID.**
+The page contains the **Tellinet** and **Tellinet Statistics** tables, which include parameters such as **Running on Server**, **Number of TCP Connection**, **Number of Associations**, and **Tellinet Instance ID.**
 
 ### Tellinet Alarms
 
-This page contains a table listing all the alarms related to the **Tellinet** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Tellinet** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value**.
 
 ### TCS Monitoring
 
 This page contains critical information regarding the **TCS Monitoring** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-In the table on this page, you can among others find the **Protobuf Version**, **First Request Config Time** and **Terminal Name** columns.
+In the table on this page, you can among others find the **Protobuf Version**, **First Request Config Time**, and **Terminal Name** columns.
 
 ### TCSM Alarms
 
-This page contains a table listing all the alarms related to the **TCS Monitoring** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **TCS Monitoring** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value**.
 
 ### Hub Multicast Circuit
 
 This page contains critical information regarding the **Hub Multicast Circuit** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-This page contains the **Hub Multicast Circuit** and **Satellite Network Hub Multicast Circuit** tables, which include parameters such as **Locked**, **Multicast Address** and **Name.**
+This page contains the **Hub Multicast Circuit** and **Satellite Network Hub Multicast Circuit** tables, which include parameters such as **Locked**, **Multicast Address**, and **Name.**
 
 ### Satellite Network
 
 This page contains critical information regarding the **Satellite Network** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Authentication**, **Beam Name** and **RF Terminal Position Altitude** columns.
+The overview table on this page contains among others the **Authentication**, **Beam Name**, and **RF Terminal Position Altitude** columns.
 
 ### Tellinet Instance
 
 This page contains critical information regarding the **Tellinet Instance** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Server Address**, **Satellite Network Name** and **TAS Role** columns.
+The overview table on this page contains among others the **Server Address**, **Satellite Network Name**, and **TAS Role** columns.
 
 ### Transponder
 
 This page contains critical information regarding the **Transponder** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Transponder Delta Frequency**, **Name** and **Locked** columns.
+The overview table on this page contains among others the **Transponder Delta Frequency**, **Name**, and **Locked** columns.
 
 ### Device Role
 
 This page contains critical information regarding the **Device Role** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Free**, **Consumer Name** and **Type** columns.
+The overview table on this page contains among others the **Free**, **Consumer Name**, and **Type** columns.
 
 ### Firmware Multicast
 
 This page contains critical information regarding the **Firmware Multicast** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Data Port**, **Data Speed** and **In The Air** columns.
+The overview table on this page contains among others the **Data Port**, **Data Speed**, and **In The Air** columns.
 
 ### Network
 
 This page contains critical information regarding the **Network** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **MTU**, **Routing Protocol** and **Name** columns.
+The overview table on this page contains among others the **MTU**, **Routing Protocol**, and **Name** columns.
 
 ### Network Alarms
 
-This page contains a table listing all the alarms related to the **Network** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **Network** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### Domain
 
 This page contains critical information regarding the **Domain** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Type**, **Skip Certification** and **Locked** columns.
+The overview table on this page contains among others the **Type**, **Skip Certification**, and **Locked** columns.
 
 ### Gateway
 
 This page contains critical information regarding the **Gateway** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Location**, **Name** and **Locked** columns.
+The overview table on this page contains among others the **Location**, **Name**, and **Locked** columns.
 
 ### Firewall Profile
 
 This page contains critical information regarding the **Firewall Profile** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Type**, **Start** and **Limit** columns.
+The overview table on this page contains among others the **Type**, **Start**, and **Limit** columns.
 
 ### IPv4 Address Pool
 
 This page contains critical information regarding the **IPv4 Address Pool** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Locked**, **Service Label** and **Name** columns.
+The overview table on this page contains among others the **Locked**, **Service Label**, and **Name** columns.
 
 ### IPv4 API Alarms
 
-This page contains a table listing all the alarms related to the **IPv4 Address Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value.**
+This page contains a table listing all the alarms related to the **IPv4 Address Pool** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value.**
 
 ### IPv6 Address Pool
 
 This page contains critical information regarding the **IPv6 Address Pool** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **LAN Prefixes**, **Name** and **Service Label** columns.
+The overview table on this page contains among others the **LAN Prefixes**, **Name**, and **Service Label** columns.
 
 ### Multicast Circuit
 
 This page contains critical information regarding the **Multicast Circuit** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Capacity Request Margin**, **CIR** and **Hub Forwarding** columns.
+The overview table on this page contains among others the **Capacity Request Margin**, **CIR**, and **Hub Forwarding** columns.
 
 ### Multicast VLAN
 
 This page contains critical information regarding the **Multicast VLAN** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **IP Address**, **Prefix Length** and **Locked** columns.
+The overview table on this page contains among others the **IP Address**, **Prefix Length**, and **Locked** columns.
 
 ### User
 
 This page contains critical information regarding the **User** of the **Newtec Dialog System**. This information is retrieved via the **Restful API**.
 
-The overview table on this page contains among others the **Max Advanced Modems**, **Credentials Domain Locked** and **Credentials Domain Type** columns.
+The overview table on this page contains among others the **Max Advanced Modems**, **Credentials Domain Locked**, and **Credentials Domain Type** columns.
 
 ### Dialog Integration
 
@@ -578,8 +578,8 @@ This page contains a table listing all the alarms related to the **dialog config
 
 This page contains critical information regarding the **dialog provisioning** of the **Newtec Dialog System**. This information is retrieved via the **SOAP API**.
 
-The page contains the **Functionality Overview**, **DMA**, **Provisioning Progress** and **Provisioning Queue** tables, which include parameters such as **Name**, **Connection Type**, **Agent Name**, **Agent IP**, **Status**, **Times Processed**, **Message Queue Data** and **Message Queue Type**.
+The page contains the **Functionality Overview**, **DMA**, **Provisioning Progress**, and **Provisioning Queue** tables, which include parameters such as **Name**, **Connection Type**, **Agent Name**, **Agent IP**, **Status**, **Times Processed**, **Message Queue Data**, and **Message Queue Type**.
 
 ### DPI Alarms
 
-This page contains a table listing all the alarms related to the **dialog provisioning** within the connector. The information in this table includes the **Element Name**, **Parameter ID** and **Display Value**.
+This page contains a table listing all the alarms related to the **dialog provisioning** within the connector. The information in this table includes the **Element Name**, **Parameter ID**, and **Display Value**.

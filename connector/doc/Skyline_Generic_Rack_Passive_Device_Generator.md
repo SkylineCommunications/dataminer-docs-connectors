@@ -4,7 +4,7 @@ uid: Connector_help_Skyline_Generic_Rack_Passive_Device_Generator
 
 # Skyline Generic Rack Passive Device Generator
 
-The purpose of this virtual connector is to list devices not monitored by DataMiner (i.e. passive devices) that will be used in a rack overview representation (Visio file).
+The purpose of this virtual connector is to list devices not monitored by DataMiner (i.e., passive devices) that will be used in a rack overview representation (Visio file).
 
 ## About
 

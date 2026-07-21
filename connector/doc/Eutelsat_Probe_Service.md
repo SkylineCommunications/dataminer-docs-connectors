@@ -46,7 +46,7 @@ Alarms will be generated based on the following conditions for two inputs (**A**
 
 When the **Compare Alarms** option is used, you will receive alarms based on the following table:
 
-| **Output 1** | **Output 2** | **Input 1** | **Input 2** | **Alarm Severity** | **Alarm Description**        |
+| Output 1 | Output 2 | Input 1 | Input 2 | Alarm Severity | Alarm Description        |
 |--------------|--------------|-------------|-------------|--------------------|------------------------------|
 | Critical     | Critical     | Critical    | Critical    | Critical           | Loss of outputs and inputs   |
 | Critical     | Critical     | Critical    | Normal      | Critical           | Loss of outputs and input 1  |

@@ -39,7 +39,7 @@ This connector can communicate directly with the **U168** but it can also be con
 **SERIAL connection:**
 
 - **IP address/host**: The IP address of the Astro U100 Controller.
-- **IP port**: The port of the destination, e.g. *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: The IP address of the U168. Also, fill in "ByPassProxy" to bypass any possible proxy that could block the HTTP communication. Both fields must be separated by a semicolon. For example: *ByPassProxy;10.11.12.13*.
 
 #### B) Direct Communication:
@@ -47,7 +47,7 @@ This connector can communicate directly with the **U168** but it can also be con
 **SERIAL connection:**
 
 - **IP address/host**: The IP address of the U168.
-- **IP port**: The port of the destination, e.g. *80*.
+- **IP port**: The port of the destination, e.g., *80*.
 - **Bus address**: This field can be used to bypass the proxy. To do so, fill in the value *ByPassProxy*.
 
 #### SNMP connection
@@ -56,7 +56,7 @@ Regardless of the HTTP connection configuration, the SNMP interface collects the
 
 **SNMP connection:**
 
-- **IP address/host**: The polling IP of the U168, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the U168, e.g., *10.11.12.13*.
 
 **SNMP settings:**
 
@@ -88,15 +88,15 @@ Some important parameters are available at the end of the first column:
 
 ### Status
 
-This page displays status information for the device, e.g. **Temperature**, **Power Supply**, **CPU Load**, etc.
+This page displays status information for the device, e.g., **Temperature**, **Power Supply**, **CPU Load**, etc.
 
 ### Main
 
-This page allows you to configure the main device configuration, e.g. **DNS**, **Time Source**, **Interfaces**, etc.
+This page allows you to configure the main device configuration, e.g., **DNS**, **Time Source**, **Interfaces**, etc.
 
 ### Test Gen
 
-This page allows you to configure the test gen parameters, e.g. **Data Rate**, **Packet ID**, etc.
+This page allows you to configure the test gen parameters, e.g., **Data Rate**, **Packet ID**, etc.
 
 ### Channels
 

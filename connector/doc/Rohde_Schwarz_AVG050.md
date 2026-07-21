@@ -62,7 +62,7 @@ It also contains subpages with information about the **boards** and the **hardwa
 
 ### IP Network
 
-On this page, you can configure and monitor the **ethernet interfaces** of the device, i.e. **Ethernet Rear**, **Ethernet Front 1** and **Ethernet Front 2**.
+On this page, you can configure and monitor the **ethernet interfaces** of the device, i.e., **Ethernet Rear**, **Ethernet Front 1** and **Ethernet Front 2**.
 
 ### Reference Time
 
@@ -114,7 +114,7 @@ This page includes the **TS ID**, **Nit Pid** and **Input Service List** of inte
 
 ### Logbook
 
-This page contains all logging information for the device, and allows you to control the log information, e.g. by clearing the log. This page is only polled on startup and must be manually refreshed afterwards.
+This page contains all logging information for the device, and allows you to control the log information, e.g., by clearing the log. This page is only polled on startup and must be manually refreshed afterwards.
 
 ### Web page
 

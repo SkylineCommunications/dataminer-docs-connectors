@@ -36,7 +36,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 
@@ -117,7 +117,7 @@ This page displays the main parameters regarding the status of the:
 
 ### Input
 
-This page displays the configuration of the **Receiver**, i.e. the type of **Source**, **LNB** (**Frequency**, **Voltage** and **22KHz**), **Satellite Frequency**, **Symbol Rate** and **CI MultiDecryption mode. Tuner Type**, **QAM** and **COFDM** information are also displayed.
+This page displays the configuration of the **Receiver**, i.e., the type of **Source**, **LNB** (**Frequency**, **Voltage** and **22KHz**), **Satellite Frequency**, **Symbol Rate** and **CI MultiDecryption mode. Tuner Type**, **QAM** and **COFDM** information are also displayed.
 
 The page button at the bottom of the page displays the **Program List** table, which contains information regarding all the available received programs.
 
@@ -125,9 +125,9 @@ The page button at the bottom of the page displays the **Program List** table, w
 
 This page displays the configuration of:
 
-- **Video**, i.e. **Standard**, **Screen Mode**, **Fail Mode**, **DVB Subtitle** and **EBU Subtitle**
-- **Audio,** i.e. **Level, Mode** and **Language**
-- **SDI/HDMI**, i.e. the **Video Format**
+- **Video**, i.e., **Standard**, **Screen Mode**, **Fail Mode**, **DVB Subtitle** and **EBU Subtitle**
+- **Audio,** i.e., **Level, Mode** and **Language**
+- **SDI/HDMI**, i.e., the **Video Format**
 
 In addition, the name of the **Playing Program** is displayed at the top of the page.
 
@@ -141,7 +141,7 @@ This page displays a table with information about the **Channels** in transmissi
 
 ### System
 
-This page displays the setup of the **Local** device (i.e. **IP Address**, **Network Mask**, **Gateway**, **MAC Address**, **HW** and **SW Versions** etc.) and the **BISS settings**.
+This page displays the setup of the **Local** device (i.e., **IP Address**, **Network Mask**, **Gateway**, **MAC Address**, **HW** and **SW Versions** etc.) and the **BISS settings**.
 
 ### Web Interface
 

@@ -45,11 +45,11 @@ SERIAL CONNECTION:
 
 - Direct connection:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600* (default: *9600*).
-  - **Databits**: Databits specified in the manual of the device, e.g. *7* (default: *7*).
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1* (default: *1*).
-  - **Parity**: Parity specified in the manual of the device, e.g. *No* (default: *even*).
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No* (default: *no*).
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600* (default: *9600*).
+  - **Databits**: Databits specified in the manual of the device, e.g., *7* (default: *7*).
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1* (default: *1*).
+  - **Parity**: Parity specified in the manual of the device, e.g., *No* (default: *even*).
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No* (default: *no*).
 
 - Interface connection (applies when communicating over **serial gateway**, the serial settings will be applied in the gateway itself):
 

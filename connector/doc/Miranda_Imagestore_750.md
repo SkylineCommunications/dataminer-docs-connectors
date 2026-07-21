@@ -12,7 +12,7 @@ The connector is used to monitor the audio and video input and to set the transi
 
 ### Version Info
 
-| **Range** | **Key Features**   | **Based on** | **System Impact** |
+| Range | Key Features   | Based on | System Impact |
 |-----------|--------------------|--------------|-------------------|
 | 1.0.0.x   | Initial version    | -            | -                 |
 | 1.0.1.x   | Serial interface   | -            | -                 |
@@ -111,7 +111,7 @@ This page allows you to set up predefined actions and combinations of actions us
 
 ### Web Interface
 
-This page shows the web page of the device. The web interface is only accessible when the client machine has network access to the product.
+This page shows the webpage of the device. The web interface is only accessible when the client machine has network access to the product.
 
 ## DCF Implementation
 

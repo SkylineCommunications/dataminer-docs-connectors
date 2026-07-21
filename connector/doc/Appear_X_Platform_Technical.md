@@ -114,7 +114,7 @@ To tailor the API requests issued by DataMiner towards the Appear X platform API
 It is possible to interface with this connector and all available cards by using the available **Appear-X-ConnectorApi**.
 
 > [!NOTE]
-> To make use of the Inter Application Framework (InterApp) from any Automation script, install the Appear X application, which can be downloaded from the DataMiner Catalog. -->
+> To make use of the Inter Application Framework (InterApp) from any automation script, install the Appear X application, which can be downloaded from the DataMiner Catalog. -->
 
 ## How to use
 

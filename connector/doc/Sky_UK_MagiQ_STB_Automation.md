@@ -4,27 +4,15 @@ uid: Connector_help_Sky_UK_MagiQ_STB_Automation
 
 # Sky UK MagiQ STB Automation
 
-The Sky UK MagiQ STB Automation connector is used to monitor different set-top boxes.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+The Sky UK MagiQ STB Automation connector is used to monitor different set-top boxes.
 
 ### Product Info
 
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | API revision 20        |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -50,17 +38,9 @@ WEBSOCKET CONNECTION:
 - **IP port**: The IP port of the destination.
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
-The **Automation Control** table is used to control and monitor the STB boxes.
+The **Automation Control** table is used to control and monitor the set-top boxes.
 
 Before you send commands using the **Send** button in the **Send Command** column, make sure to enter a valid remote control command sequence in the **Command Sequence** field. If no command data is provided or if it is not provided in the correct JSON format, a pop-up message will be displayed.
 

@@ -10,7 +10,7 @@ The Arista Manager connector can monitor all Arista systems running the **Arista
 
 This connector can be used to monitor **interfaces**. Statistics are available for **TCP/UDP**, **ICMP**, and **IP**. Some settings can be configured for **sFlow** and **OSPF**. **Environment Control** parameters are available for **Cooling**, **Power**, **Temperature**, and **Hardware**. On the **Explorer** page, you can fill in one or more API commands and immediately view the response.
 
-- **SNMP** is used to retrieve device information (e.g. **System Name**, **System Description**, **Detailed Interface Info tables**, etc.) and to receive the **traps**.
+- **SNMP** is used to retrieve device information (e.g., **System Name**, **System Description**, **Detailed Interface Info tables**, etc.) and to receive the **traps**.
 - **HTTP** is used to retrieve information that is available in the Arista Command API.
 - **Smart-serial** communication is used to receive the **Syslog Messages**.
 
@@ -126,7 +126,7 @@ The **Copy Run Start** button can be used to save the content of the running con
 
 On this page, you can execute a command through the command API. This includes configuration commands. To do so, fill in the command in the **Commands** box and click the **Submit** button.
 
-You can execute multiple commands with one call, e.g. by filling in *sflow run;show sflow*.
+You can execute multiple commands with one call, e.g., by filling in *sflow run;show sflow*.
 
 The result will be displayed in the **Response Viewer** box.
 
@@ -138,7 +138,7 @@ The **Detailed Interface Info** table contains a column with the **Uptime** of t
 
 The **Detailed Interface Info - Rx** table contains Rx parameters: **Rx (Non) Unicast Packets**, **Rx (Non) Unicast Rate**, **Rx Errors**, **Rx Errors Rate**, etc. Similarly, the **Detailed Interface Info - Tx** table contains Tx parameters: **Tx (Non) Unicast Packets**, **Tx (Non) Unicast Rate**, **Tx Errors**, **Tx Errors Rate**, etc.
 
-From version 2.0.5.2 of the connector onwards, the **Detailed Interface Queue Info** table contains the result of the "get interfaces counters queue" command. It includes the **Interface Queue Interfaces** text box, which allows you to specify which interfaces you would like to queue. To specify multiple interfaces, use a comma as separator, e.g. "1,2,3" for interfaces 1, 2 and 3. Click the **Submit If Request** button to send the request so that the table is filled up.
+From version 2.0.5.2 of the connector onwards, the **Detailed Interface Queue Info** table contains the result of the "get interfaces counters queue" command. It includes the **Interface Queue Interfaces** text box, which allows you to specify which interfaces you would like to queue. To specify multiple interfaces, use a comma as separator, e.g., "1,2,3" for interfaces 1, 2 and 3. Click the **Submit If Request** button to send the request so that the table is filled up.
 
 You can disable/enable interfaces to show in the **Measurement Configuration** table, which can be opened from the **Detailed Interface Queue Info page**. When the measure port parameter is disabled, the interface will not be shown in the **detailed interface info** and **detailed interface info - Rx/Tx** tables.
 

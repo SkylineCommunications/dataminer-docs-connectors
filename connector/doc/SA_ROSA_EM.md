@@ -60,7 +60,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP Address**: The polling IP of the Rosa device, e.g. *10.55.48.31*.
+- **IP Address**: The polling IP of the Rosa device, e.g., *10.55.48.31*.
 - **Device address**: Not needed.
 
 SNMP Settings:

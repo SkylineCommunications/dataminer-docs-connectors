@@ -74,7 +74,7 @@ This page has multiple subpages with basic information about each mode that can 
 - **RTP/RTSP**: T-RAX encoder cards are configured to stream via RTSP by default. RTSP is used for local streaming to computers and Teradek decoders. The URL for a standard RTSP stream is *rtsp://ip.address:port/stream1*, where *ip.address* is T-RAX's Ethernet IP address. Port is 255x, where x corresponds to the T-RAX card slot.
 - **RTP Push**
 - **RTSP Announce**
-- **Live Internet Streaming**: T-RAX features native integration with some of the most popular streaming platforms, i.e. Facebook, Twitch, Ustream, New Livestream, YouTube Live, and Livestream (Original).
+- **Live Internet Streaming**: T-RAX features native integration with some of the most popular streaming platforms, i.e., Facebook, Twitch, Ustream, New Livestream, YouTube Live, and Livestream (Original).
 - **Live:Air**: Live:Air is a video production suite that can receive feeds from any of T-RAX's encoder cards for real-time video mixing, switching, and even transitions.
   Once you've configured an encoder card to stream to Live:Air, you can manage it from the Live:Air app.
 
@@ -85,8 +85,8 @@ On the **Encoder** page, T-RAX allows you to control various characteristics of 
 Keep the following things in mind when configuring the encoder settings:
 
 - Encoder settings will vary based on the bandwidth available and the platform used.
-- Always select a video bitrate that is less than 70% of the total upload bandwidth available on the internet connection (e.g. if 5 Mbps is available, set the video to 3.5 Mbps or lower).
-- Some platforms (e.g. YouTube) will automatically generate lower-quality streams from a high-quality input (transcoding), so the highest possible quality can be used. If the streaming platform does not transcode the video, keep in mind that your viewers must have the available download bandwidth to view the stream.
+- Always select a video bitrate that is less than 70% of the total upload bandwidth available on the internet connection (e.g., if 5 Mbps is available, set the video to 3.5 Mbps or lower).
+- Some platforms (e.g., YouTube) will automatically generate lower-quality streams from a high-quality input (transcoding), so the highest possible quality can be used. If the streaming platform does not transcode the video, keep in mind that your viewers must have the available download bandwidth to view the stream.
 
 ### Input
 

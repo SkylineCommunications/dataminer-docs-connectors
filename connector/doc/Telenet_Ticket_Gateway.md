@@ -8,7 +8,7 @@ The Telenet Ticket Gateway connector is part of the Telenet SAM Ticketing projec
 
 ## About
 
-This connector will receive commands that need to be sent to a custom web service of Telenet, i.e. **OSB**. These commands will **Create**, **Update**, **Close**, and **Search** **Tickets** or **Edit Ninas Counters** in a custom database of Telenet. The tickets are called **'MO'** or **'PLM'** depending on the request.
+This connector will receive commands that need to be sent to a custom web service of Telenet, i.e., **OSB**. These commands will **Create**, **Update**, **Close**, and **Search** **Tickets** or **Edit Ninas Counters** in a custom database of Telenet. The tickets are called **'MO'** or **'PLM'** depending on the request.
 
 The commands will receive a response from OSB: *ACK*/*NACK* or *search* *result.* Create, Update, and Close commands will also receive an *Async* response. This is received by a custom SAMSERVICE web service created by Skyline to receive this response and put it in the correct cell in the communication table, which is a list of all requests sent to OSB. Each error returned from OSB will be logged in an Offload file, though this can be disabled if necessary*.*
 
@@ -52,13 +52,13 @@ This connector uses a **Serial** connection and requires the following input dur
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device: fixed to *8650.*
 
 **RFC**:
 
-- **IP address/host**: The polling IP of the device, e.g. *at.inet.telenet.be.*
-- **IP port**: The port of the connected device, e.g. *8126*.
+- **IP address/host**: The polling IP of the device, e.g., *at.inet.telenet.be.*
+- **IP port**: The port of the connected device, e.g., *8126*.
 
 ### Configuration
 

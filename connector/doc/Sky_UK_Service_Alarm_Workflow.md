@@ -26,7 +26,7 @@ When you create the service, you should select the elements and parameters to in
 
 The following table shows the default configuration:
 
-| **Protocol**                                 | **Description**                         | **Subscription Name**           |
+| Protocol                                 | Description                         | Subscription Name           |
 |----------------------------------------------|-----------------------------------------|---------------------------------|
 | Imagine Communications EPIC MV (Primary)     | Audio Low State                         | AudioQuietStatePrimary          |
 | Imagine Communications EPIC MV (Primary)     | Audio Peak State                        | AudioLoudStatePrimary           |
@@ -59,7 +59,7 @@ The following table shows the default configuration:
 | Sky UK SSR                                   | Sound Type (Current Events)             | CurrentEventScheduledSoundType  |
 | Axon ACP - GDR26                             | Active A (GDR26)                        | MainReserveSwitchActiveA        |
 
-Note that when a different parameter is included, the connector will set a generic subscription name (e.g. S1).
+Note that when a different parameter is included, the connector will set a generic subscription name (e.g., S1).
 
 If the Service Status parameter from BSS Schedule Data - Bus is included, this workflow will not trigger any alarms when this is *Off-Air*. If the parameter has a different value (*NA* or *On-Air*), or if this parameter is not included, the workflow will run as expected.
 
@@ -108,7 +108,7 @@ This page contains **Workflow Logic Table** and **Refresh Logic Values** action 
 The **Workflow Logic Table** has the following columns:
 
 - **Process**: Description of the condition defined for this workflow.
-- **Condition**: The logical expression that will determine the condition value. The logical expressions used in this column need to respect the format "\<A\>or\<B\>or\<C\>;A\|S1=12;B-\|S2=3;C\|S1=5", where A, B and C are groups, which are defined with simple logical conditions. The allowed logical operators for groups are AND, OR and NOT. For conditions, the following operators are allowed: Equal "=", Not Equal "!=", Greater "\>", Minor "\<", Greater and Equal "\>=", and Minor and Equal "\<=". You can also make a condition based on another subscription value, e.g. "\<A\>;A\|S1=S2".
+- **Condition**: The logical expression that will determine the condition value. The logical expressions used in this column need to respect the format "\<A\>or\<B\>or\<C\>;A\|S1=12;B-\|S2=3;C\|S1=5", where A, B and C are groups, which are defined with simple logical conditions. The allowed logical operators for groups are AND, OR and NOT. For conditions, the following operators are allowed: Equal "=", Not Equal "!=", Greater "\>", Minor "\<", Greater and Equal "\>=", and Minor and Equal "\<=". You can also make a condition based on another subscription value, e.g., "\<A\>;A\|S1=S2".
 - **Value**: The value of the current condition (*Yes* or *No*).
 
 ### General Parameters

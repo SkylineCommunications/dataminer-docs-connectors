@@ -12,7 +12,7 @@ The information on the parameters is retrieved via **SNMP** communication.
 
 ### Version Info
 
-| **Range**            | **Key Features**  | **Based on** | **System Impact** |
+| Range            | Key Features  | Based on | System Impact |
 |----------------------|-------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version   | -            | -                 |
 | 1.0.1.x [SLC Main]   | Added DCF support | 1.0.0.9      | -                 |
@@ -58,7 +58,7 @@ SERIAL CONNECTION:
 - Interface connection:
 
   - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device, e.g. port *50001*.
+  - **IP port**: The IP port of the device, e.g., port *50001*.
 
 ### Initialization
 
@@ -94,7 +94,7 @@ This page displays the **Error Status** table. This table is both polled and upd
 
 ### Configuration File
 
-This page allows you to get or set configuration files (i.e. presets) of the Sony PWS-110PR1.
+This page allows you to get or set configuration files (i.e., presets) of the Sony PWS-110PR1.
 
 These configuration files are:
 

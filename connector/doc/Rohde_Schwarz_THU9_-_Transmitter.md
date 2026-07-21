@@ -24,7 +24,7 @@ The following pages are available in the connector:
 
 ### Product Info
 
-| **Connector Version** | **Device Firmware Version** |
+| Connector Version | Device Firmware Version |
 |--------------------|-----------------------------|
 | 1.0.0.1            | tce900-103250               |
 

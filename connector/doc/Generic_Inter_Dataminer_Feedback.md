@@ -34,7 +34,7 @@ The **Number of Read Messages** represents the number of messages with status *R
 
 ## Usage
 
-There are two **parameters** that can be **set** from **another element** or from an **Automation script**:
+There are two **parameters** that can be **set** from **another element** or from an **automation script**:
 
 - Parameter ID: 60 - EXTERNAL_InconingMessages
 

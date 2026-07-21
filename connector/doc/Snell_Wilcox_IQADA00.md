@@ -15,7 +15,7 @@ This connector provides status data for input 1 and input 2. It is also possible
 | Range   | Description                                                                                                                    | DCF Integration | Cassandra Compliant |
 |---------|--------------------------------------------------------------------------------------------------------------------------------|-----------------|---------------------|
 | 1.0.0.x | This version treats the boards contained within the chassis as DVEs.                                                           | No              | Yes                 |
-| 2.0.0.x | This version should be used to monitor each board separately (i.e. each board is represented by a single independent element). | No              | Yes                 |
+| 2.0.0.x | This version should be used to monitor each board separately (i.e., each board is represented by a single independent element). | No              | Yes                 |
 
 ### Product Info
 

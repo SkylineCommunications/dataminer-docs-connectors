@@ -71,7 +71,7 @@ This element has the following data pages:
 - **Preset**
 - **Mixer**
 - **Metadata:** Displays the status of the metadata parameters.
-- **Alarm Priority**: Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority**: Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 ## Notes
 

@@ -14,7 +14,7 @@ The **Andrew APC100** makes it possible to monitor the current status of the dev
 
 The list of satellites can be configured one by one or in bulk using the memory.
 
-In order to control the positioning of the **APC100**, it is possible to set small steps with fixed values, e.g. 0.1 degrees.
+In order to control the positioning of the **APC100**, it is possible to set small steps with fixed values, e.g., 0.1 degrees.
 
 ## Installation and configuration
 
@@ -70,7 +70,7 @@ Here the **Angle Polling** can be set to *Movement* in order to poll only during
 
 On this page, the position can be monitored and changed.
 
-The position can be set to a known satellite using the name, with **Position Name (Requested)**, or using the number, with **Position Number (Requested)**. It is also possible to set it through the **Requested Azimuth**, **Requested Elevation** or **Requested Polarization** both in degrees and in units or with the fixed step buttons, e.g. -5.0 deg, -1.0 deg, etc.
+The position can be set to a known satellite using the name, with **Position Name (Requested)**, or using the number, with **Position Number (Requested)**. It is also possible to set it through the **Requested Azimuth**, **Requested Elevation** or **Requested Polarization** both in degrees and in units or with the fixed step buttons, e.g., -5.0 deg, -1.0 deg, etc.
 
 The **Angle Polling** can be set to *Movement* in order to poll only during movement, or to *Auto* to poll during movement and otherwise each minute.
 

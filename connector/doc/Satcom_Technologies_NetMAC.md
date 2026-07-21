@@ -33,9 +33,9 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP Settings:**
 
-- **Port number**: The port of the connected device, e.g. *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 ### Creation: Range 2.0.1.x
 
@@ -48,9 +48,9 @@ This connector uses 2 Simple Network Management Protocol (SNMP) connections (one
 
 **SNMP Settings:**
 
-- **Port number**: The port of the connected device, e.g. *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 **SNMP CONNECTION FEP B:**
 
@@ -59,9 +59,9 @@ This connector uses 2 Simple Network Management Protocol (SNMP) connections (one
 
 **SNMP Settings:**
 
-- **Port number**: The port of the connected device, e.g. *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 ## Usage: Range 1.0.0.1
 
@@ -100,7 +100,7 @@ To parse the MIB file, set the location in the **MIB Location** parameter and cl
 
 The **Traps...** page button provides access to parameters related to receiving traps:
 
-- The Trap **IP Sources** will typically contain a value that includes both the IP addresses of the primary and backup FEP (e.g. 192.168.10.\*).
+- The Trap **IP Sources** will typically contain a value that includes both the IP addresses of the primary and backup FEP (e.g., 192.168.10.\*).
 - The parameters **FEP A IP** and **FEP B IP** contain the IP address of FEP A and FEP B respectively.
 - The parameter **Primary FEP** indicates which FEP is the primary one. This value will change automatically when a trap is received denoting a switch of the primary FEP. Note that only traps that are sent from the primary FEP will be processed (with the exception of traps denoting a primary FEP switch).
 - The **Traps** table provides an overview of the last 100 traps that were received.
@@ -109,7 +109,7 @@ The **Traps...** page button provides access to parameters related to receiving 
 
 This page provides an overview of the mapping between the system codes and their user-friendly names in the **Friendly Names Table**. You can load this table by setting the location of the naming file in the **Naming File Location** parameter and clicking the **Get Names** button.
 
-The naming file contains the conversion of the database device code to the user-friendly names. In this CSV file, every line must mention a system code and a user-friendly name, separated by a semicolon. E.g.:
+The naming file contains the conversion of the database device code to the user-friendly names. In this CSV file, every line must mention a system code and a user-friendly name, separated by a semicolon. For example:
 
 *ANT1 SYS1 CTRL BRK12\*\*\*;LNA Controller*
 

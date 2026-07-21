@@ -55,7 +55,7 @@ This page contains general device information such as its **Name**, **Location**
 
 ### SNMP
 
-On this page, you can configure the network information for the SNMP protocol, i.e. the **IP** and **Port** configuration.
+On this page, you can configure the network information for the SNMP protocol, i.e., the **IP** and **Port** configuration.
 
 ### Monitoring
 

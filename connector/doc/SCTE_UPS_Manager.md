@@ -6,7 +6,7 @@ uid: Connector_help_SCTE_UPS_Manager
 
 The **SCTE UPS Manager** is an application designed to work with power supplies that comply with the SCTE standard communication protocol for transponders. It serves as the main point of administration for the **SCTE UPS Collector** elements that are in charge of the polling and monitoring of these elements, represented by **SCTE UPS** DVEs.
 
-It is also possible to group and analyze the traps that the DMA receives from these UPS devices to either provision (i.e. create) a new element or to update some values inside an existing element. For this provisioning and update process, the SCTE UPS Manager has to work in tandem with the SCTE UPS Collectors. This process can be either manual or automatic, according to preference.
+It is also possible to group and analyze the traps that the DMA receives from these UPS devices to either provision (i.e., create) a new element or to update some values inside an existing element. For this provisioning and update process, the SCTE UPS Manager has to work in tandem with the SCTE UPS Collectors. This process can be either manual or automatic, according to preference.
 
 ## About
 
@@ -130,7 +130,7 @@ If a device has not been provisioned, the manager will determine if **Automatic 
 
   ![Detected devices.jpg](~/connector/images/SCTE_UPS_Manager_Detected_devices.jpg)
 
-  This table displays basic information about the detected device, such as the **System Name**, **System Location**, **Serial Number** and the reason why the device was not automatically provisioned (e.g. because Manual mode was active, like in the image above).
+  This table displays basic information about the detected device, such as the **System Name**, **System Location**, **Serial Number** and the reason why the device was not automatically provisioned (e.g., because Manual mode was active, like in the image above).
 
   You can manually provision the devices in this table by right-clicking a specific entry and selecting **Provision**. A pop-up window will then be displayed where you can fill in the basic information of the device. The **DMS View** and **Collector** must always be specified.
 

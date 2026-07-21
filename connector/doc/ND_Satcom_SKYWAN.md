@@ -19,7 +19,7 @@ This is an **SNMP-based connector** for the ND Satcom Skywan.
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                        |
+| Range | Device Firmware Version                                        |
 |------------------|--------------------------------------------------------------------|
 | 1.0.0.x          | IDU7000 (hardware version) / 7.200.73 (software version)           |
 | 1.1.0.x          | Release 5G-IDU-1.3x / 1.3.83.85-full-1502181226 (software version) |

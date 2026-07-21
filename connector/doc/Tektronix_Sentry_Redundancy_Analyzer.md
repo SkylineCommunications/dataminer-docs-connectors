@@ -29,7 +29,7 @@ If there are multiple elements using this connector on the same DMA, there may b
 
 ### Configuration of Probe Groups
 
-On the **Probe Groups** page, you can add probe groups via the right-click menu of the table. You can then add probe elements (i.e. Tektronix Sentry or Tektronix Sentry PVQ elements) via the **Add Probe** column.
+On the **Probe Groups** page, you can add probe groups via the right-click menu of the table. You can then add probe elements (i.e., Tektronix Sentry or Tektronix Sentry PVQ elements) via the **Add Probe** column.
 
 ## Usage
 

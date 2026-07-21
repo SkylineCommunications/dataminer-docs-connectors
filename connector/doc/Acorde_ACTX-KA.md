@@ -66,8 +66,8 @@ These settings are dong in the communication interface that links the data sourc
 
 - Serial settings:
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g. *9600*.
-  - **Databits**: Databits specified in the manual of the device, e.g. *7*.
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g. *1*.
-  - **Parity**: Parity specified in the manual of the device, e.g. *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g. *No*.
+  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600*.
+  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
+  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1*.
+  - **Parity**: Parity specified in the manual of the device, e.g., *No*.
+  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.

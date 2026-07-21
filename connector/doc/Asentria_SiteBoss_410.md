@@ -6,7 +6,7 @@ uid: Connector_help_Asentria_SiteBoss_410
 
 The Asentria SiteBoss 410 connector is used to monitor models **410** and **412.** The main difference between these two devices is the number of contacts (6 in the 412 and 8 in the 410) and the presence of a humidity sensor (only in the 410).
 
-The connector allows you to monitor general parameters (e.g. system uptime, location, tech support details, etc.) as well as input and output interfaces such as contacts, relays, sensors, and analog inputs.
+The connector allows you to monitor general parameters (e.g., system uptime, location, tech support details, etc.) as well as input and output interfaces such as contacts, relays, sensors, and analog inputs.
 
 ## About
 
@@ -100,8 +100,8 @@ This page displays information obtained from trap processing.
 
 It contains a table with a fixed number of rows (1 per type) and the following columns:
 
-- **Instance**: The origin of an alarm/trap, e.g. *Analog 1*, *Contact 5*, *Humidity*.
+- **Instance**: The origin of an alarm/trap, e.g., *Analog 1*, *Contact 5*, *Humidity*.
 - **Sensor Name**: The name assigned to the sensor.
 - **Time**: The time when the trap was received.
-- **Trap Description**: The description of the trap, e.g. *Active*/*Normal* for contact sensors, *Very Low*/*Low*/*High*/*Very High*/*Normal* for non-contact sensors.
+- **Trap Description**: The description of the trap, e.g., *Active*/*Normal* for contact sensors, *Very Low*/*Low*/*High*/*Very High*/*Normal* for non-contact sensors.
 - **OID**: The OID of the trap.

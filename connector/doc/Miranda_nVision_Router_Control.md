@@ -51,7 +51,7 @@ SERIAL CONNECTION:
 
 In version 1.0.0.1 of the connector, the General page contains the parameters that must be configured to obtain the status of a given partition of the router: **Level Number**, **Number of Outputs** and **Starting Output**.
 
-To be able to start the polling, you first need to configure which subset of the router control card's outputs will be polled. You can do so by specifying the **Level Number** (i.e. bus address). The first output that is retrieved can be configured in the **Starting Output** parameter, and the total number of outputs that are retrieved, beginning from the **Starting Output**, can be configured in **Number of Outputs**. For example, if **Level Number** is set to *2*, **Starting Output** to *8* and **Number of Outputs** to *4,* the connector will poll the outputs 8, 9, 10 and 11 of level 2.
+To be able to start the polling, you first need to configure which subset of the router control card's outputs will be polled. You can do so by specifying the **Level Number** (i.e., bus address). The first output that is retrieved can be configured in the **Starting Output** parameter, and the total number of outputs that are retrieved, beginning from the **Starting Output**, can be configured in **Number of Outputs**. For example, if **Level Number** is set to *2*, **Starting Output** to *8* and **Number of Outputs** to *4,* the connector will poll the outputs 8, 9, 10 and 11 of level 2.
 
 The parameter **Admin State** can be set to *Disabled* to prevent configuration of the router device from the connector.
 
@@ -65,7 +65,7 @@ An overview of all the partitions defined on the router can be obtained via the 
 
 ### Status
 
-This page provides an overview of the status of the device. Note that depending on the type of router (e.g. compact router), some parameters may not be available on the device. These parameters will then indicate *NA* (Not Available).
+This page provides an overview of the status of the device. Note that depending on the type of router (e.g., compact router), some parameters may not be available on the device. These parameters will then indicate *NA* (Not Available).
 
 ### Partition (version 1.0.0.1)
 
@@ -79,7 +79,7 @@ This page displays an overview of the matrix configuration.
 
 This page displays an overview of the selected crosspoints (on the General page). In the **Crosspoints Table**, an output can be connected to an input and the LPR state can be changed.
 
-Note that depending on the device type, some commands may not be supported (e.g. on compact routers, the Protected action is not available.).
+Note that depending on the device type, some commands may not be supported (e.g., on compact routers, the Protected action is not available.).
 
 In case the **Automatic Polling** parameter is set to *Enabled*, the crosspoints table will automatically be polled every 5 minutes.
 

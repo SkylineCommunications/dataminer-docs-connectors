@@ -19,7 +19,7 @@ It includes the following features:
   - Ports, Services, Users, Regions
 - Group Assignment functionality
 - Flow Engineering interface with provisioned/incoming/outgoing flow topology
-- Create/Edit/Delete inputs and outputs via context menus or Automation scripts
+- Create/Edit/Delete inputs and outputs via context menus or automation scripts
 - Alarm monitoring with duplicate filtering
 
 ## Configuration

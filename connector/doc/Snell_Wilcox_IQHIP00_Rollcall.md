@@ -38,9 +38,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.56.201*.
-  - **IP port**: The IP port of the device, e.g. *2050*.
-  - **Bus address**: Fill in the unit address and the unit port, e.g. *10.0D* for unit address *0x10* and unit port *0x0D*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.56.201*.
+  - **IP port**: The IP port of the device, e.g., *2050*.
+  - **Bus address**: Fill in the unit address and the unit port, e.g., *10.0D* for unit address *0x10* and unit port *0x0D*.
 
 ### Web interface
 
@@ -50,7 +50,7 @@ The web interface is only accessible when the client machine has network access 
 
 The element consists of the pages detailed below. For each page, you can **enable or disable polling**.
 
-- **General**: Displays general information about the device, e.g. Hardware and Software Versions, System Uptime, etc.
+- **General**: Displays general information about the device, e.g., Hardware and Software Versions, System Uptime, etc.
 - **Black/Blackish**: Allows you to configure the black and blackish levels.
 - **Freeze**: Allows you to monitor and configure the freeze and stillish state.
 - **Video Monitor**: Contains information related to the video state.

@@ -12,7 +12,7 @@ The AC8810 connector provides a way to interface with the AC8810 ONU module. It 
 
 ### Product Info
 
-| **Range** | **Device Revision** |
+| Range | Device Revision |
 |------------------|---------------------|
 | 1.0.1.x          | 4.4.5               |
 

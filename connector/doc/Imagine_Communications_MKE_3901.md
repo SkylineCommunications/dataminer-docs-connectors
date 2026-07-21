@@ -51,7 +51,7 @@ SNMP Settings:
 
 ### General
 
-This page contains information such as the **Slot Number**, **Unit Name**, **Software Version** and **Operation Standard**. It also allows you to configure the network settings, i.e. **IP Address**, **Subnet Mask** and **Gateway**.
+This page contains information such as the **Slot Number**, **Unit Name**, **Software Version** and **Operation Standard**. It also allows you to configure the network settings, i.e., **IP Address**, **Subnet Mask** and **Gateway**.
 
 ### Source
 

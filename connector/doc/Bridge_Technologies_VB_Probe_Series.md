@@ -40,7 +40,7 @@ This integration allows you to monitor and control **Bridge Technologies probe**
 
 - **EII access**: This is needed to allow DataMiner to communicate with the probes.
 
-- **Probe licenses**: Some of the features available in the connector require an active license on the probe, e.g. ETR, OTT, etc.
+- **Probe licenses**: Some of the features available in the connector require an active license on the probe, e.g., ETR, OTT, etc.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Bridge_Technologies_VB_Probe_Series_Technical).

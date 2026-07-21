@@ -16,7 +16,7 @@ Switched eConnect PDUs provide remote monitoring of power at the rack level as w
 
 - **Sensor status monitoring**: Monitor the temperature and humidity of specific sensors.
 
-- **PDU branch monitoring**: Monitor the status of different branches in the PDU (e.g. voltage, current, power).
+- **PDU branch monitoring**: Monitor the status of different branches in the PDU (e.g., voltage, current, power).
 
 ## Use Cases
 

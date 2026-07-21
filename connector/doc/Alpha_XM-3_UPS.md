@@ -27,7 +27,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: A unique address used by the XM to communicate with the system controller. The format of the bus address is "*\<DNS server\>:\<hostname\>*".
 
 Note:

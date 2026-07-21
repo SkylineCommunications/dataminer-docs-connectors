@@ -33,7 +33,7 @@ On the **General** page, the authentication parameters and storage URL should be
 - **Tenant ID**: A unique identifier associated with an Azure Active Directory (Azure AD) instance that represents a specific organization or tenant in Azure's directory structure. It can be found in the Overview section of Azure Active Directory under the Tenant Information.
 - **Client ID**: A unique identifier, also known as Application ID, assigned to an application registered in Azure Active Directory (Azure AD). It is linked to the application registered in Azure and can be found in the application overview.
 - **Client Secret**: A password-like credential used by applications registered in Azure Active Directory (Azure AD) to securely authenticate.
-- **Blob Storage URL**: The endpoint used to access resources within an Azure Storage account (e.g. `https://dataminer.blob.core.windows.net`).
+- **Blob Storage URL**: The endpoint used to access resources within an Azure Storage account (e.g., `https://dataminer.blob.core.windows.net`).
 
 The **Test Authentication** button can be used to test whether the provided credentials can retrieve the valid token used to access the blob storage. The **Authentication Test** parameter will indicate whether the authentication test was successful (*OK*) or unsuccessful (*Error*).
 

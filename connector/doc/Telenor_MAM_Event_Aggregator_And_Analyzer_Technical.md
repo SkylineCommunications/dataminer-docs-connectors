@@ -54,4 +54,4 @@ Aggregated data is displayed on two pages:
 
   - **Devices Count**: The number of distinct devices that generated errors during the aggregation period.
 
-- **Errors Per Asset**, which shows the **Events Count**, i.e. the total number of errors during the aggregation period, grouped by Error Code and Asset ID.
+- **Errors Per Asset**, which shows the **Events Count**, i.e., the total number of errors during the aggregation period, grouped by Error Code and Asset ID.

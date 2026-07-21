@@ -16,7 +16,7 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL Connection**:
 
-- **IP address/host**: The polling IP of the device e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device e.g., *10.11.12.13.*
 - **IP port**: The Telnet port of the connected device, by default *23.*
 - **Retries:** Set to zero by default, as the login is required when the connection is lost.
 

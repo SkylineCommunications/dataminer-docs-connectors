@@ -12,7 +12,7 @@ This connector uses an HTTPS connection to retrieve data from Touchstream Stream
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description                                                                                  | DCF Integration | Cassandra Compliant |
 |----------------------|--------------------------------------------------------------------------------------------------|---------------------|-------------------------|
 | 1.0.0.x              | Initial version                                                                                  | No                  | Yes                     |
 | 1.0.1.x [SLC Main]   | Restructured Live Status Detail table (2200) to support unlimited Stream Status Detail elements. | No                  | Yes                     |

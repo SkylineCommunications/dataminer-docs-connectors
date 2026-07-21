@@ -40,8 +40,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
-- **Device address**: Slot number of the module in the chassis, e.g. *1.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
+- **Device address**: Slot number of the module in the chassis, e.g., *1.*
 
 SNMP Settings:
 

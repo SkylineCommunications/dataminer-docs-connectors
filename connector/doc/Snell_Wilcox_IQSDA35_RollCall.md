@@ -40,9 +40,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.56.201*.
-  - **IP port**: The IP port of the device, e.g. *2050*.
-  - **Bus address**: Used to fill in the unit address and the unit port, e.g. *10.0D* is for unit address *0x10* and unit port *0x0D*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.56.201*.
+  - **IP port**: The IP port of the device, e.g., *2050*.
+  - **Bus address**: Used to fill in the unit address and the unit port, e.g., *10.0D* is for unit address *0x10* and unit port *0x0D*.
 
 ## Usage
 
@@ -70,7 +70,7 @@ This page provides a simple command interface that can be used to send unconnect
 
 ### Setup Page
 
-This page contains information about the card, e.g. **Input 1 Name**, **Input 2 Name**, etc. In addition, buttons allow you to restart the device (**Restart**), set back the factory settings **(Factory Default**), or set back the default settings (**Default Settings**).
+This page contains information about the card, e.g., **Input 1 Name**, **Input 2 Name**, etc. In addition, buttons allow you to restart the device (**Restart**), set back the factory settings **(Factory Default**), or set back the default settings (**Default Settings**).
 
 ### Web Interface Page
 

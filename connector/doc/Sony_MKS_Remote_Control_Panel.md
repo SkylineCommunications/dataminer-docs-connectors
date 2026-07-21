@@ -10,7 +10,7 @@ This is an SNMP connector that is used to monitor and configure the **Sony MKS-R
 
 ### Version Info
 
-| **Range**            | **Key Features**  | **Based on** | **System Impact** |
+| Range            | Key Features  | Based on | System Impact |
 |----------------------|-------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version   | -            | -                 |
 | 1.0.1.x [SLC Main]   | Added DCF support | 1.0.0.4      | -                 |

@@ -46,7 +46,7 @@ The **General** page contains the **Destinations Table**. To add or remove rows,
 
 The **1.0.0.x** range of the Sky UK Generic Destination connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
 ### Interfaces
 

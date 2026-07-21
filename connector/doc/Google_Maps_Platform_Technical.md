@@ -20,7 +20,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The Google Maps Platform API endpoint, e.g. *pollen.googleapis.com*.
+- **IP address/host**: The Google Maps Platform API endpoint, e.g., *pollen.googleapis.com*.
 - **IP port**: The IP port of the destination (default: *443*).
 - **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
 
@@ -52,7 +52,7 @@ To retrieve air quality and pollen data, ensure the **Pollen** and **Air Quality
 
 ### Air Quality
 
-On this page, you can monitor the Air Quality Index (AQI) for each designated location. The AQI category (e.g. good, moderate, unhealthy) and the main pollutant are also clearly identified.
+On this page, you can monitor the Air Quality Index (AQI) for each designated location. The AQI category (e.g., good, moderate, unhealthy) and the main pollutant are also clearly identified.
 
 ### Pollutants
 
@@ -60,11 +60,11 @@ This page provides a comprehensive list of pollutants for each designated locati
 
 ### Health Recommendations
 
-This page allows you to select a location and view the latest health recommendations for different population groups (e.g. children, the elderly, the general population).
+This page allows you to select a location and view the latest health recommendations for different population groups (e.g., children, the elderly, the general population).
 
 ### Pollen
 
-The Pollen page provides detailed information about the Universal Pollen Index (UPI) for each designated location and pollen type. It includes the UPI categorization (e.g. low, moderate, high) and relevant health recommendations.
+The Pollen page provides detailed information about the Universal Pollen Index (UPI) for each designated location and pollen type. It includes the UPI categorization (e.g., low, moderate, high) and relevant health recommendations.
 
 ### Plant Info
 

@@ -32,13 +32,13 @@ The **Imagine Communications DA-HR6802+** is a **serial** connector combined wit
 
 **SERIAL CONNECTION:**
 
-- **IP address/host**: The polling IP of the device (e.g. *172.32.65.38*)
+- **IP address/host**: The polling IP of the device (e.g., *172.32.65.38*)
 - **IP port**: IP port of the device (fixed value: *4050*)
-- **Bus address**: This is a combination of the frame number and slot number/id \<frameNumber **.** slotID\> (e.g. frame 1 & slot 12 at bus address: *1.12*)
+- **Bus address**: This is a combination of the frame number and slot number/id \<frameNumber **.** slotID\> (e.g., frame 1 & slot 12 at bus address: *1.12*)
 
 **SMART-SERIAL CONNECTION:**
 
-- **IP address/host**: The local DataMiner IP to receive responses (e.g. *172.0.0.50*)
+- **IP address/host**: The local DataMiner IP to receive responses (e.g., *172.0.0.50*)
 - **IP port**: IP port of the DMA (fixed value: *4000*)
 
 ## Usage (Range 1.0.0.x)

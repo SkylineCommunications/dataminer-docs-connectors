@@ -57,4 +57,4 @@ For troubleshooting and advanced operations, the **Debug** page offers controls 
 
 The **1.0.0.x** range of the EVS Neuron NAP - BRIDGE connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).

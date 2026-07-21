@@ -12,7 +12,7 @@ The information on the device parameters is retrieved via **SNMP** communication
 
 ### Version Info
 
-| **Range**            | **Key Features**  | **Based on** | **System Impact** |
+| Range            | Key Features  | Based on | System Impact |
 |----------------------|-------------------|--------------|-------------------|
 | 1.0.0.x              | Initial version   | -            | -                 |
 | 1.0.1.x              | QA version        | 1.0.0.20     | -                 |
@@ -93,7 +93,7 @@ The element created using this connector consists of the data pages detailed bel
 This page displays system information, including the **System Time**, **System Description**, **System Location**, **System Contact**, **System Up Time**, and other general parameters.
 This page has page buttons that open the following subpages:
 
-- **General Status**: Displays status information concerning the **IP Live System Manager**, i.e. **Status**, **General Status Description**, **System Stat Status**, and **Module Status table**.
+- **General Status**: Displays status information concerning the **IP Live System Manager**, i.e., **Status**, **General Status Description**, **System Stat Status**, and **Module Status table**.
 - **NMI Gateway Status**: Displays the **NMI Module Gateway Status**, **NMI Module Status Description**, and **NMI Module Gateway Status Code**.
 - **Gen Lock Status**: Displays the **Gen Lock Module Status**, **Gen Lock Module Description**, and **Gen Lock Status Code**.
 - **NS-BUS Controller Status**: Displays the NS-BUS Controller table, listing the **Name**, **Status**, **Description**, and **Code**.

@@ -6,7 +6,7 @@ uid: Connector_help_Cisco_NSO
 
 ## About
 
-The Cisco Network Services Orchestrator (NSO) is an orchestration platform for hybrid networks. It provides comprehensive life cycle service automation to enable you to design and deliver high-quality services faster and more easily.
+The Cisco Network Services Orchestrator (NSO) is an orchestration platform for hybrid networks. It provides comprehensive lifecycle service automation to enable you to design and deliver high-quality services faster and more easily.
 
 ## Key Features
 
@@ -21,4 +21,3 @@ The Cisco Network Services Orchestrator (NSO) is an orchestration platform for h
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Cisco_NSO_Technical).
-

@@ -20,7 +20,7 @@ This connector retrieves information from the device via SNMP. When you create a
 
 **SNMP Connection:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 **SNMP Settings:**
 

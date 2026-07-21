@@ -19,7 +19,7 @@ This connector uses a serial connection and requires the following input during 
 **SERIAL CONNECTION**:
 
 - **Type of Port:** TCP/IP
-- **IP address/host**: e.g. *10.11.12.13*
+- **IP address/host**: e.g., *10.11.12.13*
 - **IP port**: eg. *10039*
 - **Bus address***:* *48*
 

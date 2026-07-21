@@ -32,7 +32,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device. (Between *48* and *111*.)
 
@@ -40,7 +40,7 @@ SERIAL CONNECTION:
 
 ### General
 
-This page displays general information about the device, e.g. the **CMPA** **Model** and **Computer** **Information** **Version**. With the page buttons, you can also display extra information about the **Time** and **ALC**. The **Transmit** and **Reset to Defaults** buttons can be used to respectively transmit and reset the device.
+This page displays general information about the device, e.g., the **CMPA** **Model** and **Computer** **Information** **Version**. With the page buttons, you can also display extra information about the **Time** and **ALC**. The **Transmit** and **Reset to Defaults** buttons can be used to respectively transmit and reset the device.
 
 ### Amplifier
 

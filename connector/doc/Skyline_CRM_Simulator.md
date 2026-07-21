@@ -48,7 +48,7 @@ Only the first row of the CMTS location data will be used!
 
 ### Configurations
 
-Here you can import and export the "simulated data" to XML file. To do this you need to set a file location, e.g. D:\file.xml and push one of the 2 buttons (Import XML or Export XML).
+Here you can import and export the "simulated data" to XML file. To do this you need to set a file location, e.g., D:\file.xml and push one of the 2 buttons (Import XML or Export XML).
 
 The other import is trough the Topology Data, this exists of csv files which contains the CTMS, node and CM data. The folder structure for the Topology must be like mainFolder/CMCollector/... and mainFolder/ManagerID/...
 

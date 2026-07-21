@@ -38,8 +38,8 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. [*http://demo.robustperception.io*](http://demo.robustperception.io/).
-- **IP port**: The IP port of the destination, e.g. 9090.
+- **IP address/host**: The polling IP or URL of the destination, e.g., [*http://demo.robustperception.io*](http://demo.robustperception.io/).
+- **IP port**: The IP port of the destination, e.g., 9090.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy.*
 
 ### Initialization
@@ -58,9 +58,9 @@ To manually add a row to the **Query Table**, click the **Add Row** button and f
 
 - Insert the query in the **Query** column. The value is the part that comes after "*query="* in the URL.
 
-- **Destination Element** should contain the name of the target element to which the query result should be forwarded. This is an element that is running a connector derived from the **Generic Prometheus Base Component** connector. The value can be hard-coded, referring to the name of the element, or can contain placeholders that can be dynamically filled in with the content of the labels. Labels can be referred to using the *\[label:\<labelName\>\]* placeholder and can be combined with hard-coded text, e.g. "*prefix \[label:labelName1\] second \[label:labelName2\] suffix*".
+- **Destination Element** should contain the name of the target element to which the query result should be forwarded. This is an element that is running a connector derived from the **Generic Prometheus Base Component** connector. The value can be hard-coded, referring to the name of the element, or can contain placeholders that can be dynamically filled in with the content of the labels. Labels can be referred to using the *\[label:\<labelName\>\]* placeholder and can be combined with hard-coded text, e.g., "*prefix \[label:labelName1\] second \[label:labelName2\] suffix*".
   RegexReplace can also be executed on the label value. Use *\[RegexReplace:x,y,z\]* with x being the regular expression, y being the input, and z containing the string that will replace each of the matches. RegexReplace can contain *\[label:\]* placeholders and can contain nested RegexReplace definitions. Note that a label placeholder cannot contain a RegexReplace. For example, for a label with content "*test (info) data that will be removed*", using "*\[RegexReplace:^(?\<start\>\[^\\\\\]+\\\[^()\]+\\)\[^()\]+\$,\[label:labelName\],\${start}\]\_some suffix*" will result in "*test (info)\_some suffix*".
-  You can prefix RegexReplace with *\[Sep:,\<new_separator\>\]* to replace the comma separator with a different separator in case the label value were to contain spaces, e.g. "*\[Sep:,\]\[RegexReplace:xyz\]*".
+  You can prefix RegexReplace with *\[Sep:,\<new_separator\>\]* to replace the comma separator with a different separator in case the label value were to contain spaces, e.g., "*\[Sep:,\]\[RegexReplace:xyz\]*".
 
 - **Destination Parameter Name** should contain the parameter name of the destination element where the value of the query will be displayed.
 

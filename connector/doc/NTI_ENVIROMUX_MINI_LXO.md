@@ -57,7 +57,7 @@ This page displays the general information of the device including **DNS, Name, 
 This page displays the **Summary** table, which contains critical information about the sensors, including:
 
 - **Sensor Name**: The name configured on the device for the sensor.
-- **Sensor Type**: The type of the sensor, i.e. *Temperature*, *Humidity*, *Dry Contact*, or *Water*.
+- **Sensor Type**: The type of the sensor, i.e., *Temperature*, *Humidity*, *Dry Contact*, or *Water*.
 - **Sensor Value (Reading)**: The current value read out from the sensor.
 - **Sensor Status**: Indicates if the sensor is in alert state or not.
 

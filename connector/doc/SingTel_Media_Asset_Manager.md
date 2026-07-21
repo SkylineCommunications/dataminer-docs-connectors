@@ -4,9 +4,9 @@ uid: Connector_help_SingTel_Media_Asset_Manager
 
 # SingTel Media Asset Manager
 
-This connector orchestrates the Live-to-VOD and MAM workflows for SingTel using Process Automation.
-
 ## About
+
+This connector orchestrates the Live-to-VOD and MAM workflows for SingTel using Process Automation.
 
 ### Version Info
 
@@ -35,15 +35,11 @@ When you have created the element, you will still need to:
 - Configure the workflow needed for the VOD and MAM.
 - Configure the **Configuration subpages** of the **General** page to have all the credentials, workflows, and logic needed for the VOD and MAM to work.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ## How to use
 
 This connector watches several directories for new files. Once a new file shows up, and based on its location and type, the connector will perform specific actions:
 
-| **Directory**               | **File Type**    | **Action**                                                                                |
+| Directory               | File Type    | Action                                                                                |
 |-----------------------------|------------------|-------------------------------------------------------------------------------------------|
 | ForeTV                      | L2V              | Execute L2V workflow. Create/update asset DOM instance.                                   |
 | ForeTV                      | MAM              | Create/update asset DOM instance. Link files with asset if applicable.                    |

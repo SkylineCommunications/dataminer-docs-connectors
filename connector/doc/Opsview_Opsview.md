@@ -52,7 +52,7 @@ This connector uses **stored procedure** calls to retrieve the data that is stor
 
 - On the **Overview** page, all the hosts are displayed in an **overview table**. For each host, the creation of a DVE element can be disabled or enabled. Such an element contains all the information on the different checks performed on that host.
   By default, the DVE export setting is disabled, so that the DMA is not overloaded with DVE creations.
-- On the **Hosts** page, you can find the DVE table, which contains all elements for which DVE creation is enabled. To change the DVE creation settings (e.g. to disable a DVE), you first need to change the DVE export setting in the Overview table. This will enable the reflect button. If you click that button for a specific host, the connector will try to remove the relevant DVE.
+- On the **Hosts** page, you can find the DVE table, which contains all elements for which DVE creation is enabled. To change the DVE creation settings (e.g., to disable a DVE), you first need to change the DVE export setting in the Overview table. This will enable the reflect button. If you click that button for a specific host, the connector will try to remove the relevant DVE.
 - The **Database Settings** page is the configuration page for all database settings.
 
 ## DVE Reflection

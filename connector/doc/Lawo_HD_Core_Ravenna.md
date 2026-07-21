@@ -4,7 +4,7 @@ uid: Connector_help_Lawo_HD_Core_Ravenna
 
 # Lawo HD Core Ravenna
 
-This connector is used to monitor a Lawo HD Core Ravenna module. This module is an I/O card for the HD Core. These modules are placed in a Lawo chassis, e.g. Lawo Nova73, and offer real-time distribution of audio and other media content within IP-based network environments.
+This connector is used to monitor a Lawo HD Core Ravenna module. This module is an I/O card for the HD Core. These modules are placed in a Lawo chassis, e.g., Lawo Nova73, and offer real-time distribution of audio and other media content within IP-based network environments.
 
 ## About
 

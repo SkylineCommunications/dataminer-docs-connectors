@@ -134,11 +134,11 @@ The comparison of the configuration lines within the files can either result in 
 
 - Mismatch: Can be one of the following cases:
 
-  - Only the last word is different, e.g. "configure interface cable-mac 1 cable dynamic-secret mark" vs. "configure interface cable-mac 1 cable dynamic-secret reject".
-  - Negated configuration, e.g. "configure interface cable-downstream 12/0/22 cable shutdown" vs. "configure interface cable-downstream 12/0/22 cable no shutdown".
+  - Only the last word is different, e.g., "configure interface cable-mac 1 cable dynamic-secret mark" vs. "configure interface cable-mac 1 cable dynamic-secret reject".
+  - Negated configuration, e.g., "configure interface cable-downstream 12/0/22 cable shutdown" vs. "configure interface cable-downstream 12/0/22 cable no shutdown".
   - The line is only found in one of the files.
 
-Some lines can be repeated in both files, e.g. 4 lines repeated in one file and 8 repeated in the other. Only the first 4 lines will be considered matches.
+Some lines can be repeated in both files, e.g., 4 lines repeated in one file and 8 repeated in the other. Only the first 4 lines will be considered matches.
 
 The comparison results will be shown in the **Matching Lines** table. Matches and mismatches will be displayed differently, with the mismatches shown in bold.
 

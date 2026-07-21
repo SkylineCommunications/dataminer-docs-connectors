@@ -12,7 +12,7 @@ The Kaleido IP X320 is an IP Video Multiviewer that is used to monitor and view 
 
 ### Version Info
 
-| **Range**     | **Based on** | **Description** |
+| Range     | Based on | Description |
 |----------------------|--------------|-----------------|
 | 1.0.0.x [SLC Main]   | -            | Initial version |
 
@@ -28,7 +28,7 @@ This connector uses Simple Network Management Protocol (SNMP) connections and re
 
 SNMP CONNECTION (KaleidoK3):
 
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1.*
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1.*
 
 SNMP Settings:
 
@@ -38,7 +38,7 @@ SNMP Settings:
 
 SNMP CONNECTION (IPMI):
 
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1.*
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1.*
 
 SNMP Settings:
 
@@ -62,7 +62,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *127.0.0.1.*
+- **IP address/host**: The polling IP of the device, e.g., *127.0.0.1.*
 - **IP port**: The port of the connected device, by default *13000*.
 - **Timeout time**: The timeout of a single command in ms, by default *10000*.
 

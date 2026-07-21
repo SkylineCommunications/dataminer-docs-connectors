@@ -33,7 +33,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.10.15.1*.
+- **IP address/host**: The polling IP of the device, e.g., *10.10.15.1*.
 
 SNMP Settings:
 
@@ -53,7 +53,7 @@ This page contains the **Modules Info** Table. This table contains all the cards
 
 #### Controller
 
-This page contains the parameters for the controller. This page is divided in the **status** parameters, the **alarm** parameters, the **configuration** parameters, and the **network configuration** parameters, e.g. PSU 1 Voltage, Date Time, IP Address, etc.
+This page contains the parameters for the controller. This page is divided in the **status** parameters, the **alarm** parameters, the **configuration** parameters, and the **network configuration** parameters, e.g., PSU 1 Voltage, Date Time, IP Address, etc.
 
 #### RFSW04
 
@@ -69,7 +69,7 @@ This page contains configuration, status, and alarm information for the ESSPx on
 
 #### SNMP
 
-This page contains the general and SNMP parameters, e.g. **Customer Name**, **Customer Location**, etc.
+This page contains the general and SNMP parameters, e.g., **Customer Name**, **Customer Location**, etc.
 
 ## How to Use - Range 1.0.1.x and Older
 
@@ -81,11 +81,11 @@ From 1.0.1.x onwards, the **Modules \[DEL\]** table is removed, and this logic i
 
 ### General
 
-This page contains the general parameters, e.g. **Customer Name**, **Customer Location**, etc.
+This page contains the general parameters, e.g., **Customer Name**, **Customer Location**, etc.
 
 ### Controller
 
-This page contains the parameters for the controller. This page is divided in the **status** parameters, the **alarm** parameters, the **configuration** parameters, and the **network configuration** parameters, e.g. Controller Status PSU 1 Voltage, Controller Config Date Time, Controller Config Network Ip Address, etc.
+This page contains the parameters for the controller. This page is divided in the **status** parameters, the **alarm** parameters, the **configuration** parameters, and the **network configuration** parameters, e.g., Controller Status PSU 1 Voltage, Controller Config Date Time, Controller Config Network Ip Address, etc.
 
 ### Traps
 

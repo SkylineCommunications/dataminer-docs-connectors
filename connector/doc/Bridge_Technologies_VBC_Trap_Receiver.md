@@ -58,7 +58,7 @@ SNMP Settings:
 
 This connector uses the Bridge Technologies External Integration Interface over HTTP to get additional information from the VBC.
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. `http://10.24.4.138`.
+- **IP address/host**: The polling IP or URL of the destination, e.g., `http://10.24.4.138`.
 - **IP port**: The IP port of the destination.
 - **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 

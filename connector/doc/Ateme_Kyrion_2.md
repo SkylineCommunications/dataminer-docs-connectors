@@ -82,7 +82,7 @@ The following subpages are available:
 - **Hardware Extension Slot**: Displays the **Extension Slot** table.
 - **Hardware Power Supply**: Displays the **Power Supply** table, which allows monitoring of the PSU status.
 - **Hardware Fan**: Displays the **Fan** table, which allows monitoring of the fan status.
-- **Hardware Ethernet**: Displays the **Ethernet** table. In this table, the **State** column indicates the status of a connection, e.g. if it has been deleted from the table. A **Delete** button allows you to remove a row when its state is "*deleted*".
+- **Hardware Ethernet**: Displays the **Ethernet** table. In this table, the **State** column indicates the status of a connection, e.g., if it has been deleted from the table. A **Delete** button allows you to remove a row when its state is "*deleted*".
 - **Hardware Modulator**: Displays the **Modulator** table, which allows monitoring of the alarm and mute status of the modulators.
 - **License**: Displays the **License Table** with available licenses.
 - **Configurations**: Allows you to download and upload configurations per slot to one or more files on the DMA.
@@ -193,7 +193,7 @@ The following subpages are available:
 - **Hardware Extension Slot**: Displays the **Extension Slot** table.
 - **Hardware Power Supply**: Displays the **Power Supply** table, which allows monitoring of the PSU status.
 - **Hardware Fan**: Displays the **Fan** table, which allows monitoring of the fan status.
-- **Hardware Ethernet**: Displays the **Ethernet** table. In this table, the **State** column indicates the status of a connection, e.g. if it has been deleted from the table. A **Delete** button allows you to remove a row when its state is "*deleted*".
+- **Hardware Ethernet**: Displays the **Ethernet** table. In this table, the **State** column indicates the status of a connection, e.g., if it has been deleted from the table. A **Delete** button allows you to remove a row when its state is "*deleted*".
 - **Hardware Modulator**: Displays the **Modulator** table, which allows monitoring of the alarm and mute status of the modulators.
 - **License**: Displays the **License Table** with available licenses.
 
@@ -287,7 +287,7 @@ This page opens the web interface of the device. Note that the client machine ha
 
 ### General page
 
-This page contains general information about the device, such as the unit name and model. However, you can also find important parameters here that are not related to specific functions of the device, e.g. the fan speeds and temperature.
+This page contains general information about the device, such as the unit name and model. However, you can also find important parameters here that are not related to specific functions of the device, e.g., the fan speeds and temperature.
 
 ### TS Overview page
 
@@ -303,7 +303,7 @@ This page displays all the configuration parameters of the device, using a simil
 
 ### Channel Command page
 
-This page contains actions that can be done on a channel, e.g. starting or stopping the streams.
+This page contains actions that can be done on a channel, e.g., starting or stopping the streams.
 
 ### Polling Control page
 

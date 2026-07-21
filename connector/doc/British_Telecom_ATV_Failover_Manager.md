@@ -114,5 +114,5 @@ When you select the history log icon on the main Visual Overview page, a pop-up 
 
 ## Notes
 
-A custom Visio file is needed in order for the application to work. In addition, an Automation script (with script name *British Telecom ATV Failover Manager*) is needed to execute the actual routings on the AppearTV X20 devices.
+A custom Visio file is needed in order for the application to work. In addition, an automation script (with script name *British Telecom ATV Failover Manager*) is needed to execute the actual routings on the AppearTV X20 devices.
 

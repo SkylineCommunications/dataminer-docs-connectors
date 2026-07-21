@@ -4,7 +4,7 @@ uid: Connector_help_Generic_Columns_Update_Tool
 
 # Generic Columns Update Tool
 
-This connector is used to run an application. However, all logic for the application can be found in the associated Visio drawing and Automation script.
+This connector is used to run an application. However, all logic for the application can be found in the associated Visio drawing and automation script.
 
 ## About
 
@@ -36,4 +36,4 @@ This connector uses a virtual connection and does not require any input during e
 
 ## How to use
 
-In order to work with this connector, you need specific Visio drawings and Automation scripts. The Visio drawing contains directions on how to use the connector.
+In order to work with this connector, you need specific Visio drawings and automation scripts. The Visio drawing contains directions on how to use the connector.

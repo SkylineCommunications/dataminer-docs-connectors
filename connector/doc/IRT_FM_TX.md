@@ -6,7 +6,7 @@ uid: Connector_help_IRT_FM_TX
 
 ## About
 
-With this connector, you can monitor and configure your IRT FM transmitter. The connector supports several IRT FM transmitter types, i.e. Single Transmitter, Active Reserve, Passive Reserve, Dual Drive, and N+1.
+With this connector, you can monitor and configure your IRT FM transmitter. The connector supports several IRT FM transmitter types, i.e., Single Transmitter, Active Reserve, Passive Reserve, Dual Drive, and N+1.
 
 ## Key Features
 

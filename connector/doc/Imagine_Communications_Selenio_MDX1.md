@@ -14,19 +14,19 @@ The **versioning** for the connector is specifically engineered to tie in with t
 
 ### Version Info
 
-| **Range** | **Description**                                                                                                                               | **DCF Integration** | **Cassandra Compliant** |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|---------------------|-------------------------|
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No                  | Yes                     |
-| 10.0.0.x         | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag.                                                        | No                  | Yes                     |
-| 5.5.0.x          | Based on 5.4.9.4 DCF implementation.                                                                                                          | Yes                 | Yes                     |
+| Range | Description | DCF Integration | Cassandra Compliant |
+|--|--|--|--|
+| \<10.0.0.x [Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. | No | Yes |
+| 10.0.0.x | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. | No | Yes |
+| 5.5.0.x | Based on 5.4.9.4 DCF implementation. | Yes | Yes |
 
 ### Product Info
 
-| Range     | Device Firmware Version                                                                                                                       |
-|------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
-| \<10.0.0.x       | **\[Main\]** The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
-| 10.0.0.x         | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware.                                       |
-| 5.5.0.x          | Requires controller firmware 5.4.9                                                                                                            |
+| Range | Device Firmware Version |
+|--|--|
+| \<10.0.0.x [Main] | The **versioning** of the connector is specifically engineered to tie in with the firmware version of the card the connector supports. |
+| 10.0.0.x | Requires controller firmware "S/W=7.0-38, H/W= rev 02" or higher and will not work with older firmware. |
+| 5.5.0.x | Requires controller firmware 5.4.9 |
 
 ## Installation and configuration
 
@@ -86,19 +86,19 @@ This section contains only the **Function** page, which displays two tables that
 
 ### Multiplexer Functions section
 
-This section consists of the following pages: **Multiplexers**, **Input Channels**, **DVBT SFN Transmitter**, **Output Program Status** and **Output Elementary Streams.**
+This section consists of the following pages: **Multiplexers**, **Input Channels**, **DVBT SFN Transmitter**, **Output Program Status**, and **Output Elementary Streams.**
 
 They contain all data concerning the multiplexing of transport streams.
 
 ### De-Multiplexer Functions section
 
-This section consists of the following pages: **Demultiplexer PID Map**, **Demultiplexers**, **Output Channels**, **Input Program Status** and **Input Elementary Streams.**
+This section consists of the following pages: **Demultiplexer PID Map**, **Demultiplexers**, **Output Channels**, **Input Program Status**, and **Input Elementary Streams.**
 
 They contain all data concerning the de-multiplexing of transport streams.
 
 ### Conditional Access section
 
-This section consists of the following pages: **Conditional Access**, **CA Systems**, **ECMG**, **EMMG**, **Access Criteria**, **Scrambling Control Groups**, **ECM** and **ISDBT SFN Transmitter.**
+This section consists of the following pages: **Conditional Access**, **CA Systems**, **ECMG**, **EMMG**, **Access Criteria**, **Scrambling Control Groups**, **ECM**, and **ISDBT SFN Transmitter.**
 
 They allow you to configure the **External Conditional Access Systems**. Different **Access Criteria** can be applied. This section also allows you to control **Encryption Modes**.
 

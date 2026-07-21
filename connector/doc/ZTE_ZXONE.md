@@ -55,7 +55,7 @@ The ZTE ZXONE connector is used for detailed device monitoring. Parameters can b
 - **Platform Version**: Displays the platform version of the device.
 - **Software Version**: Shows the software version installed on the device.
 - **Uptime**: Indicates the total uptime of the device.
-- **Service Layers**: Displays the availability of each OSI layer (e.g. Physical Layer, Data Link Layer).
+- **Service Layers**: Displays the availability of each OSI layer (e.g., Physical Layer, Data Link Layer).
 
 #### Interface Parameters
 
@@ -75,6 +75,6 @@ The ZTE ZXONE connector is used for detailed device monitoring. Parameters can b
 #### Alarms
 
 - **Code**: Unique identifier for the alarm.
-- **Level**: Indicates the severity of the alarm (e.g. Alert, Warning).
+- **Level**: Indicates the severity of the alarm (e.g., Alert, Warning).
 - **Description**: Provides details about the alarm, including port, channel, and type.
 - **Timestamp**: Logs when the alarm occurred.

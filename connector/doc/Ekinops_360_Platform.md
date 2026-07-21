@@ -25,7 +25,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 **SNMP CONNECTION:**
 
-- **IP address/host**: The polling IP of the device, e.g. *10.36.18.36*.
+- **IP address/host**: The polling IP of the device, e.g., *10.36.18.36*.
 
 **SNMP Settings:**
 

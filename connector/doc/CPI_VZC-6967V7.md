@@ -18,7 +18,7 @@ This connector uses a serial connection and requires the following input during 
 
 **SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device.
 - **Bus address**: The bus address of the connected device. *(Between 48 and 111.)*
 
@@ -26,7 +26,7 @@ This connector uses a serial connection and requires the following input during 
 
 ### Main View Page
 
-This page displays the general information about the device, e.g. the **Helix Voltage, Helix Current, RF Output Power...**
+This page displays the general information about the device, e.g., the **Helix Voltage, Helix Current, RF Output Power...**
 
 ### General Control Page
 

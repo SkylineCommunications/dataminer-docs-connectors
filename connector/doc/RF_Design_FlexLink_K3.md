@@ -56,7 +56,7 @@ This page displays information about the device hardware, the **Unit** **Status*
 
 ### Input
 
-This page contains the **Inputs** table, with the name of each input and related info, e.g. **RF Power**, **Gain**, Failure Alarms, Thresholds, etc.
+This page contains the **Inputs** table, with the name of each input and related info, e.g., **RF Power**, **Gain**, Failure Alarms, Thresholds, etc.
 
 ### Output
 

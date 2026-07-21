@@ -6,7 +6,7 @@ uid: Connector_help_Skyline_DOM_Backup_Manager
 
 This is a generic connector that ingests all of the available **DOM modules in the DMS** and takes a backup of each module based on user requirements.
 
-It is intended for users that depend a lot on DOM for their day-to-day operations, so they can have the peace of mind of knowing that if something goes wrong with their system, all their DOM modules will be backed up. This connector offers the ability to include DOM instances in the backups along with some quality-of-life configuration for e.g. frequency of backups, maximum backups, etc.
+It is intended for users that depend a lot on DOM for their day-to-day operations, so they can have the peace of mind of knowing that if something goes wrong with their system, all their DOM modules will be backed up. This connector offers the ability to include DOM instances in the backups along with some quality-of-life configuration for e.g., frequency of backups, maximum backups, etc.
 
 Furthermore, it is possible to restore previous backups. This gives the user the possibility to easily go back to an earlier point in time.
 

@@ -29,7 +29,7 @@ The **versioning** for the connector is specifically engineered to tie in with t
 | Range | Key Features | Based on | System Impact |
 |--|--|--|--|
 | 5.1.24.x | Initial range | - | - |
-| 5.4.9.x [SLC Main] | Implemented support for new firmware (see [Product Info](#product-info)). | Based on 5.1.24.2 | Changes have been implemented to parameters (see [Notes](#notes)). Verify any references in DMS to these parameters.(Visio, Automation Scripts, DMS Filters, Reports ...) |
+| 5.4.9.x [SLC Main] | Implemented support for new firmware (see [Product Info](#product-info)). | Based on 5.1.24.2 | Changes have been implemented to parameters (see [Notes](#notes)). Verify any references in DMS to these parameters. (Visio, automation scripts, Filters, dashboards, etc.) |
 | 10.0.0.x | Replaced the "dynamic snmp get" with "dynamicSnmpGet="true"" under parameter type tag. **Not used until vendor releases new firmware that completely supports it.** | - | - |
 
 ### Product Info

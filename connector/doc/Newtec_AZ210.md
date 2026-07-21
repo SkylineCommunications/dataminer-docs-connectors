@@ -51,7 +51,7 @@ This connector uses a serial connection and requires the following input during 
 
 SERIAL CONNECTION:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
 - **IP port**: The port of the destination, default: *5933.*
 - **Bus address**: The bus address of the device, default: 100.
 

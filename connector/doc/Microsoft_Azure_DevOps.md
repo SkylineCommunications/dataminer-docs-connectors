@@ -4,7 +4,7 @@ uid: Connector_help_Microsoft_Azure_DevOps
 
 # Microsoft Azure DevOps
 
-This connector facilitates seamless integration with **Azure DevOps** via the REST API, enabling efficient management of work items. You can leverage this connector to manage a system where Azure DevOps is used alongside other task systems (e.g. JIRA, GitHub, etc.).
+This connector facilitates seamless integration with **Azure DevOps** via the REST API, enabling efficient management of work items. You can leverage this connector to manage a system where Azure DevOps is used alongside other task systems (e.g., JIRA, GitHub, etc.).
 
 ## About
 
@@ -50,7 +50,7 @@ The **Link ID Field Name** parameter is used to set a work item field with the l
 
 ### InterApp
 
-You can copy the code below when using this InterApp API in other connectors or Automation scripts:
+You can copy the code below when using this InterApp API in other connectors or automation scripts:
 
 ```csharp
 namespace QAction_1.InterApp.Messages

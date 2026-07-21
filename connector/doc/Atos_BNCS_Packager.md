@@ -6,7 +6,7 @@ uid: Connector_help_Atos_BNCS_Packager
 
 This connector allows you to monitor and manage router and packager instances of BNCS, using the API developed by Atos.
 
-The router can be used to switch several SDI signals. The packager can be used to logically route signals in different qualities from a source (e.g. grouped per booking) to the required destination.
+The router can be used to switch several SDI signals. The packager can be used to logically route signals in different qualities from a source (e.g., grouped per booking) to the required destination.
 
 ## About
 

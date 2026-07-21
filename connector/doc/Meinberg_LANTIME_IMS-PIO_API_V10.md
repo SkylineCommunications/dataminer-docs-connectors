@@ -4,7 +4,7 @@ uid: Connector_help_Meinberg_LANTIME_IMS-PIO_API_V10
 
 # Meinberg LANTIME IMS-PIO API V10
 
-The four I/O ports of the **PIO** (Programmable Input/Output) can be used as inputs as well as outputs. This module is primarily intended to perform measurements of e.g. PPS signals of external systems against the internal reference time.
+The four I/O ports of the **PIO** (Programmable Input/Output) can be used as inputs as well as outputs. This module is primarily intended to perform measurements of e.g., PPS signals of external systems against the internal reference time.
 
 The offset from the external reference against the high-precision time of the internal oscillator is measured with an accuracy of 5 ns (measurement resolution 1 ns). With the **SyncMon** in the LANTIME web interface, these measurements can be logged and analyzed.
 
@@ -74,7 +74,7 @@ REST (Representational State Transfer) calls are used to retrieve the device inf
 
 On the **HTTP Communication** page, you can track the HTTP sessions used for communicating with the device.
 
-This makes it possible to follow the communication flow and provides some useful statistics, e.g. request time, response time, time span (RTT), etc.
+This makes it possible to follow the communication flow and provides some useful statistics, e.g., request time, response time, time span (RTT), etc.
 
 - **HTTP Sessions State**: If you enable this setting, the active HTTP sessions will be tracked.
 - **HTTP Sessions Max Count**: This determines the maximum number of HTTP sessions that will be tracked.

@@ -14,7 +14,7 @@ The protocol uses **SNMP** to poll and control the current matrix connections, t
 
 ### Version Info
 
-| **Range** | **Description**         | **DCF Integration** | **Cassandra Compliant** |
+| Range | Description         | DCF Integration | Cassandra Compliant |
 |------------------|-------------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version, SNMPv1 | No                  | Yes                     |
 | 1.0.1.x          | SNMPv2                  | No                  | Yes                     |

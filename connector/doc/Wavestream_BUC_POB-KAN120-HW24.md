@@ -45,7 +45,7 @@ This SNMP connection is used for traps.
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device. e.g. 10.11.12.123.
+- **IP address/host**: The polling IP of the device. e.g., 10.11.12.123.
 - **Port:** 162.
 
 #### SNMP Connection - Device
@@ -54,7 +54,7 @@ This connection is used to poll device parameters.
 
 SNMP CONNECTION - DEVICE:
 
-- **IP address/host**: The polling IP of the device. e.g. 10.11.12.123.
+- **IP address/host**: The polling IP of the device. e.g., 10.11.12.123.
 - **Port:** 161.
 
 NOTE: For the connector to be able to poll information from the device, you will also need to fill in the **security level and protocol, user name, authentication password and algorithm, and encryption password and algorithm** in the **More SNMP Settings** section during element creation.

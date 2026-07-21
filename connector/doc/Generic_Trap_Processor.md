@@ -16,7 +16,7 @@ The **Generic Trap Processor** is a powerful tool that allows you to define rule
 ## Key Features
 
 - **Flexible processing rules**: Customizable rules that can be tailored to suit any system or device sending SNMP traps.
-- **Intelligent analytics**: Integration of intelligence and analytics into data sets that typically lack enhanced monitoring capabilities.
+- **Intelligent analytics**: Integration of intelligence and analytics into datasets that typically lack enhanced monitoring capabilities.
 - **Automated alarm generation and clearance**: Automatically generating and clearing DataMiner alarms for incoming traps based on Set and Clear OIDs.
 - **Centralized monitoring and configuration**: Configuring processing logic and monitoring all processed traps for an entire DataMiner System via a single, user-friendly connector.
 

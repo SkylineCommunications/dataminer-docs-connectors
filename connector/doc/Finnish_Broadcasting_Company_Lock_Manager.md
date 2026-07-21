@@ -36,7 +36,7 @@ No additional configuration of parameters is required in a newly created element
 
 ## How to use
 
-The connector only works in conjunction with the *Skyline.DataMiner.ConnectorAPI.FinnishBroadcastingCompanyLockManager* NuGet package. This package is used from an Automation script or connector to lock and unlock orders and events. Internally, InterApp messages are used to facilitate the communication.
+The connector only works in conjunction with the *Skyline.DataMiner.ConnectorAPI.FinnishBroadcastingCompanyLockManager* NuGet package. This package is used from an automation script or connector to lock and unlock orders and events. Internally, InterApp messages are used to facilitate the communication.
 
 The locks are stored in memory by an element using this connector.
 

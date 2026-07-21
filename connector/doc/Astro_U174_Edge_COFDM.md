@@ -64,8 +64,8 @@ The element created with this connector has the following data pages:
 
 - **General**: Displays general information about the device, such as the Device Manufacturer, Uptime and Physical Location.
 - **Status**: Displays the status of the device, with parameters such as Temperature, Power Supply and CPU Load.
-- **Main**: Allows you to update the main configuration of the device, e.g. DNS, Time Source and Interfaces.
-- **Test Gen**: Allows you to configure the test gen parameters, e.g. Data Rate and Packet ID.
+- **Main**: Allows you to update the main configuration of the device, e.g., DNS, Time Source and Interfaces.
+- **Test Gen**: Allows you to configure the test gen parameters, e.g., Data Rate and Packet ID.
 - **IP RX**: Displays information about the input IP channels.
 - **RF**: Displays information about the output RF channels.
 - **System Log**: Allows you to configure the system log settings.

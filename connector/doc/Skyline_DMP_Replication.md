@@ -47,7 +47,7 @@ The probe is subscribed to all element states, so the moment an alarm state chan
 
 The table is updated every hour and the states are directly updated based on incoming subscription updates. At the bottom of the page, there is also a button to force a **manual Refresh**.
 
-Finally, the page allows you to modify the element state of the remote elements, i.e. Start, Stop, Pause and Restart.
+Finally, the page allows you to modify the element state of the remote elements, i.e., Start, Stop, Pause and Restart.
 
 ### DMP Parameters
 
@@ -103,6 +103,6 @@ When a command is set on either "**Command DMP to HQ**" or "**Command HQ to DMP*
 
 If it is a set on the replicated element (Command HQ to DMP), the element will process the message and do the actual set described in the message.
 
-In case of a "DMP to HQ" command, the message will appear in the table, and DataMiner replication will push this data to the replicated HQ element. In the HQ DMS, a Correlation rule will be triggered by an alarm on the **Message Time Stamp**. An Automation script will be triggered in order to process the command.
+In case of a "DMP to HQ" command, the message will appear in the table, and DataMiner replication will push this data to the replicated HQ element. In the HQ DMS, a correlation rule will be triggered by an alarm on the **Message Time Stamp**. An automation script will be triggered in order to process the command.
 
 There is a cleaning mechanism to keep the table from becoming too big (**Time to Live for Finished Messages**, which can be set to *1 to 30 days*). There are also two parameters that display the current count of pending messages and executing messages. (Alarm monitoring and trending are enabled on these parameters).

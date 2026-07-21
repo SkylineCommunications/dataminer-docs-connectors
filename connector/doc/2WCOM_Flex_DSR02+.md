@@ -90,7 +90,7 @@ The page contains six page buttons that display more detailed information:
 
 ### Events
 
-This page gives an overview of the event parameters related to the tuner (e.g.Tuner RF Power Event Value, Tuner RF TS Sync Event T1), ASI (e.g. ASI TS Sync Event T1) and IP TS (e.g. IP TS Sync Event T1).
+This page gives an overview of the event parameters related to the tuner (e.g., Tuner RF Power Event Value, Tuner RF TS Sync Event T1), ASI (e.g., ASI TS Sync Event T1) and IP TS (e.g., IP TS Sync Event T1).
 
 In addition, the following page buttons display more detailed event information:
 
@@ -100,7 +100,7 @@ In addition, the following page buttons display more detailed event information:
 - **Flexsource Event**: Displays settings in the Flex Source Event Table.
 - **DTE Event**: Displays settings in the DTE Event Table.
 - **Audio Level Event**: Displays settings in the Audio Level Event Table.
-- **Other Events**: Contains settings for the case temperature events (e.g. Case Temperature Event Max Value) and internal storage (Internal Storage Event Enabled).
+- **Other Events**: Contains settings for the case temperature events (e.g., Case Temperature Event Max Value) and internal storage (Internal Storage Event Enabled).
 
 ### Alarms
 

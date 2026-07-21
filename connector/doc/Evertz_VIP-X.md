@@ -27,7 +27,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP Connection:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 SNMP Settings:
 
@@ -45,7 +45,7 @@ This page displays the **Card Type** and the number of **Video Inputs**.
 
 This page contains general information about the different video inputs, such as the **Video standard**.
 
-Via the page buttons, e.g. **SCTE 104**, additional information is available.
+Via the page buttons, e.g., **SCTE 104**, additional information is available.
 
 ### Video monitoring
 

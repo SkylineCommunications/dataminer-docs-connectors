@@ -61,7 +61,7 @@ You can find two parameters on this page, **Username** and **Password**. This us
 
 ### Session Overview
 
-This page contains configuration parameters for **Session Timeout** and the maximum number of user sessions (i.e. **Session Maximum**). At the bottom of the page, the **Session Overview** table, displays current sessions and allows you to delete a session.
+This page contains configuration parameters for **Session Timeout** and the maximum number of user sessions (i.e., **Session Maximum**). At the bottom of the page, the **Session Overview** table, displays current sessions and allows you to delete a session.
 
 ### Visio
 

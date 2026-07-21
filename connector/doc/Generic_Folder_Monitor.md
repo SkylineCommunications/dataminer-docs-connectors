@@ -46,8 +46,8 @@ This page displays the **Folder Table**, which contains all the files that are c
 - The **File Extension** is the suffix of the Full Path Name. This parameter is also available for alarm monitoring, so that for example an alarm can be raised if a certain file type is inserted in the directory.
 - The **Created On** parameter indicates the date and time when the file was created.
 - The **Modified On** parameter indicates the date and time when the file was last modified.
-- The **Time Since Creation** parameter displays how much time has passed since this file was created, i.e. "the age of the file".
-- The **Time Since Last Modification** parameter displays how much time has passed since this file was last modified, i.e. "the age of the last version of the file".
+- The **Time Since Creation** parameter displays how much time has passed since this file was created, i.e., "the age of the file".
+- The **Time Since Last Modification** parameter displays how much time has passed since this file was last modified, i.e., "the age of the last version of the file".
 
 In addition to this table, this page also contains the parameter **Last Modification Or Creation**, indicating the date and time when a file was last created or modified in the folder. This is the most recent datetime that can be found in the column **Modified On** in the Folder Table.
 

@@ -40,7 +40,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: e.g. *10.253.116.62*
+- **IP address/host**: e.g., *10.253.116.62*
 - **Device address**: not required
 
 SNMP settings:

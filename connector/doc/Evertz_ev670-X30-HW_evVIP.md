@@ -15,7 +15,7 @@ This connector can be used to monitor and configure the Evertz ev670-X30-HW evVI
 | 1.0.0.x | Initial implementation. | - | - |
 | 1.0.1.x [SLC Main] | Only allows SNMPv2 and SNMPv3. | 1.0.0.4 | Removes support for SNMPv1. |
 | 1.1.1.x | New firmware support. | 1.0.2.2 | Various changes to parameter descriptions, discrete values, and layout. |
-| 1.1.2.x | Removed parameters. | 1.1.1.1 | You may need to reconfigure filters, Automation scripts, visual overviews, reports, Web API applications, etc. |
+| 1.1.2.x | Removed parameters. | 1.1.1.1 | You may need to reconfigure filters, automation scripts, visual overviews, reports, Web API applications, etc. |
 
 ### Product Info
 

@@ -71,7 +71,7 @@ The element has the following pages:
 - **Embedder/AddOn Status:** This page displays Embedder Channels and Quad Speed Add On Input Status information.
 - **Monitoring:** This page displays status information of the monitoring parameters.
 - **Debug:** This page contains debug information.
-- **Alarm Priority:** Displays the event messages of the card, i.e. special messages generated asynchronously on the card.
+- **Alarm Priority:** Displays the event messages of the card, i.e., special messages generated asynchronously on the card.
 
 Note: If the setting of a parameter depends on another parameter, when you try to set the first of these parameters before the other parameter is set, a message box is displayed that explains what to do first. Follow the instructions in the message box and set the required parameter before you set the other parameter.
 

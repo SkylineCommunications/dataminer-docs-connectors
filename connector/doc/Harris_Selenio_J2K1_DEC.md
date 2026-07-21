@@ -77,7 +77,7 @@ On this page, you can configure the **Encoding Control Sampling Structure** and 
 
 Four sections contain all settings and statuses for each unique decoder.
 
-- **Decoder Control**: Generic settings and statuses for this particular decoder, e.g. **Enable/Disable Encoder Function**.
+- **Decoder Control**: Generic settings and statuses for this particular decoder, e.g., **Enable/Disable Encoder Function**.
 - **Decoder Video**: Video control and status including **Video Rate**.
 - **Decoder Audio**: Control and status and decoder Audio EMB Pair 1 to 8.
 - **Decoder Data Services**: SMPT-2038 settings.

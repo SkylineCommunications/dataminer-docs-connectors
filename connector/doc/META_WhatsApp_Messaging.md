@@ -56,4 +56,4 @@ When you install the package as described under [Installing the META WhatsApp Me
 
 ## How to Use
 
-If everything went well during the installation and configuration, and an alarm occurs that matches the filtering criteria defined in the Correlation rule, the people in the Contacts table will receive an alarm message in their WhatsApp apps, informing them about the generated alarm.
+If everything went well during the installation and configuration, and an alarm occurs that matches the filtering criteria defined in the correlation rule, the people in the Contacts table will receive an alarm message in their WhatsApp apps, informing them about the generated alarm.

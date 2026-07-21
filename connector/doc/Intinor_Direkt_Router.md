@@ -38,7 +38,7 @@ HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination.
-- **Bus address**: The polling device serial number, e.g. D00369.
+- **Bus address**: The polling device serial number, e.g., D00369.
 
 ### Initialization
 

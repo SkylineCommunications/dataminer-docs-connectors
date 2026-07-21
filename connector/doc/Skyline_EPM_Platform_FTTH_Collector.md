@@ -4,31 +4,12 @@ uid: Connector_help_Skyline_EPM_Platform_FTTH_Collector
 
 # Skyline EPM Platform FTTH Collector
 
-The **Skyline EPM Platform FTTH Collector** is in charge of ingesting data towards the integration with EPM platform back-end and front-end elements.
+## About
+The **Skyline EPM Platform FTTH Collector** is in charge of ingesting data towards the integration with EPM platform backend and frontend elements.
 
 This collector represents an OLT (Optical Line Terminal) in the system, where all the ONTs (Optical Network Terminal) connected to it are displayed.
 
 The connector receives Kafka messages via the InterApp framework, sent by the **Telenet EPM Platform FTTH WM** connector. Depending on the [type of event data](#kafka-event-types) received, it offloads [different files](#types-of-offloaded-files).
-
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -42,7 +23,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### General
 
-This page contains general information related to the device, i.e. **Number ONT**.
+This page contains general information related to the device, i.e., **Number ONT**.
 
 ### Configuration
 
@@ -52,11 +33,11 @@ This page contains general information related to the device, i.e. **Number ONT*
 
 - **Network Share Password**: The password corresponding to the network share username.
 
-#### Front-End Import Settings
+#### Frontend Import Settings
 
 - **Import Directory Type**: Specifies the type of directory used for importing files. It can be either local or remote. In case it is set to *Remote*, files are imported from a network location.
 
-- **Structured Files Directory**: This field indicates the network path where structured files are located for import, e.g. `\10.10.10.10\c$\FE Structured Files`. This refers to a shared folder on a remote machine that contains these files.
+- **Structured Files Directory**: This field indicates the network path where structured files are located for import, e.g., `\10.10.10.10\c$\FE Structured Files`. This refers to a shared folder on a remote machine that contains these files.
 
 #### Offload Settings
 
@@ -64,7 +45,7 @@ This page contains general information related to the device, i.e. **Number ONT*
 
 - **Offloading Directory Type**: Specifies the type of directory for offloading. *Remote* means the offloaded files are stored on a network-shared folder, as opposed to a local folder.
 
-- **Offloading Folder Path**: The network path where the system will offload files (e.g. `\10.10.10.10\c$\WM\Offload`). This directory serves as the destination for offloading structured files after processing.
+- **Offloading Folder Path**: The network path where the system will offload files (e.g., `\10.10.10.10\c$\WM\Offload`). This directory serves as the destination for offloading structured files after processing.
 
 #### Debugging Option
 

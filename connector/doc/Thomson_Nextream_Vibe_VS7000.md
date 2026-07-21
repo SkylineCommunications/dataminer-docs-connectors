@@ -34,7 +34,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and a
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 
 **SNMP Settings**:
 
@@ -44,8 +44,8 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and a
 
 **HTTP CONNECTION**:
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *10.11.12.13.*
-- **IP port**: The port of the destination, e.g. *80.*
+- **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13.*
+- **IP port**: The port of the destination, e.g., *80.*
 
 ### Configuration
 
@@ -82,9 +82,9 @@ Via the **Job Information** page button, you can find more detailed information 
 
 In version **1.1.0.x**, there is a **Custom Display Key** parameter that allows you to customize the Job Table's display key.
 
-From version **1.1.1.5** onwards, a **Create Job** button is available, which starts a wizard that allows you to create and configure the WorkFlow that will be used for the job. The wizard uses the Automation script *Thomson_Nextream_Vibe_VS7000_New_Job.*
+From version **1.1.1.5** onwards, a **Create Job** button is available, which starts a wizard that allows you to create and configure the WorkFlow that will be used for the job. The wizard uses the automation script *Thomson_Nextream_Vibe_VS7000_New_Job.*
 
-From version **1.1.1.6** onwards, a **Manage** button is available in the **Job Table**, which starts a wizard that allows you to configure the WorkFlow parameters that will be used for the job. The wizard uses the Automation script *Thomson_Nextream_Vibe_VS7000_Manage_Job.*
+From version **1.1.1.6** onwards, a **Manage** button is available in the **Job Table**, which starts a wizard that allows you to configure the WorkFlow parameters that will be used for the job. The wizard uses the automation script *Thomson_Nextream_Vibe_VS7000_Manage_Job.*
 
 ### Alarms
 

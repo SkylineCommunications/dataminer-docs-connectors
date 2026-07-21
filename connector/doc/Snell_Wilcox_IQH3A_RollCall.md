@@ -40,9 +40,9 @@ SERIAL CONNECTION:
 
 - Interface connection:
 
-  - **IP address/host**: The polling IP of the device, e.g. *192.168.14.11*.
-  - **IP Port**: The IP port of the device, e.g. *2050*.
-  - **Bus address**: Used to fill in the unit address and the unit port, e.g. *20.00* for unit address *0x20* and unit port *0x00*.
+  - **IP address/host**: The polling IP of the device, e.g., *192.168.14.11*.
+  - **IP Port**: The IP port of the device, e.g., *2050*.
+  - **Bus address**: Used to fill in the unit address and the unit port, e.g., *20.00* for unit address *0x20* and unit port *0x00*.
 
 ## Usage
 
@@ -52,7 +52,7 @@ This page contains the **Display** parameter, as well as parameters of the outpu
 
 ### Setup Page
 
-This page contains information about the chassis, e.g. **Product**, **Software Version**, **Build**. Buttons allow you to restart the device (**Restart**), to **En**able**/Disable** the module, or to save and clear memory.
+This page contains information about the chassis, e.g., **Product**, **Software Version**, **Build**. Buttons allow you to restart the device (**Restart**), to **En**able**/Disable** the module, or to save and clear memory.
 
 Finally, you can also name the different inputs.
 

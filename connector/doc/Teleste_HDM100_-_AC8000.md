@@ -12,7 +12,7 @@ The AC8000 connector provides a way to interface with the AC8000 module. It is a
 
 ### Product Info
 
-| **Range** | **Device Revision** |
+| Range | Device Revision |
 |------------------|---------------------|
 | 1.0.1.x          | Unknown             |
 

@@ -21,7 +21,7 @@ The TV2 Norway Sumo Monotoring protocol is an **HTTP** connector. The **hostname
 **HTTP CONNECTION**:
 
 - **Type of port**: TCP/IP.
-- **IP address**: The hostname of the device (e.g. *sumo.tv2.no*).
+- **IP address**: The hostname of the device (e.g., *sumo.tv2.no*).
 - **IP Port**: The IP port of the device (default: *443* for HTTPS).
 
 Configuration

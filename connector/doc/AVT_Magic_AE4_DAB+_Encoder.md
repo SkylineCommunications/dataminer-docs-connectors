@@ -63,7 +63,7 @@ The other pages describe the functionality of the connector and device and conta
 
 The **1.0.0.x** range of the AVT Magic AE4 DAB+ Encoder connector supports the usage of DCF.
 
-DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g. a manager).
+DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
 ### Interfaces
 

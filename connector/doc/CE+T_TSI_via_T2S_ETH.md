@@ -56,7 +56,7 @@ The element has the following data pages:
 - **UPS**: Displays the DC voltage and current of the battery.
 - **Phases**: Displays voltage, current and power for each available phase.
 - **AC-in and DC**: Displays the power, current and voltage for each DC and AC group.
-- **Modules**: Contains general information for each active module (e.g. state, address, phase number, etc.).
+- **Modules**: Contains general information for each active module (e.g., state, address, phase number, etc.).
 - **AC Input/DC/AC Output**: The pages display AC or DC voltage, current and power information for each active module.
 - **Temperature**: Displays the temperature for each active module.
 - **Alarms**: Contains a list of alarms.

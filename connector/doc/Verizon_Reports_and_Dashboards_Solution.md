@@ -37,7 +37,7 @@ This page contains the following parameters:
 - **Entity Levels**: Displays how many different entities are present in the **Entity Subscribers Table**. These entities are for example Hub Networks, Hub Forward, Circuits, NMS, Customers, etc.
 - **KPI Levels**: Contains the different key performance indicators present in the **KPI Entry Subscribers Table**.
 - **Last Update**: Displays the date and time of the last update.
-- **Processing Status**: Displays the processing status, i.e. *Processing* while an update is being processed or *Idle* when the update process has finished. If the logic was somehow interrupted, the status is *Interrupted*.
+- **Processing Status**: Displays the processing status, i.e., *Processing* while an update is being processed or *Idle* when the update process has finished. If the logic was somehow interrupted, the status is *Interrupted*.
 - **Update**: This button will execute a global refresh, which means that it executes an update of the KPI Entry Subscribers, Entity Subscribers, and Config Entry Subscribers.
 
 The **Debugging** subpage contains the parameter **Debugging Log Message State**, which can be used to enable or disable the log messages present in the connector to help the debugging process when needed. By default, it is set to disabled. When it is enabled, an additional page is also available for debugging purposes.
@@ -82,7 +82,7 @@ This page contains the **Profile DCAT Metric** and **Profile DCAT Fault** tables
 
   - For the "Value" column, depending on the "Operator" column selection, many different entries are possible:
 
-    - Equal to (==): The logic will return "OK" if this value equals that of the corresponding metric (i.e. FWD C/N) for the given entity (i.e. Circuit x). Otherwise, "Failed" will be returned.
+    - Equal to (==): The logic will return "OK" if this value equals that of the corresponding metric (i.e., FWD C/N) for the given entity (i.e., Circuit x). Otherwise, "Failed" will be returned.
 
     - Not Equal to (!=): The logic will return "OK" if this value does not equal that of the corresponding metric for the given entity. Otherwise, "Failed" will be returned.
 
@@ -189,5 +189,5 @@ The **Export Configuration** section contains the following parameters:
 
 The **Subscriptions Configuration** section contains the following parameters:
 
-- **FE DMA ID**: DataMiner Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed.
-- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but it will not be a local path to the hosting Agent but to the front-end Agent.
+- **FE DMA ID**: DataMiner Agent ID of the frontend DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed.
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but it will not be a local path to the hosting Agent but to the frontend Agent.

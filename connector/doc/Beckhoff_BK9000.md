@@ -20,7 +20,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Configuration
 
-The **PositionInfo** of the **Module Table** entries needs to be configured with a virtual connection to the **PositionInfo from BK9000** parameter of the relevant module connectors, e.g. the KL2622 connector.
+The **PositionInfo** of the **Module Table** entries needs to be configured with a virtual connection to the **PositionInfo from BK9000** parameter of the relevant module connectors, e.g., the KL2622 connector.
 
 ## Usage
 

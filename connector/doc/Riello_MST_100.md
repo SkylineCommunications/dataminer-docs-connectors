@@ -14,14 +14,14 @@ The connector communicates with the device via **SNMP** to retrieve parameter va
 
 ### Version Info
 
-| **Range**     | **Description**  | **DCF Integration** | **Cassandra Compliant** |
+| Range     | Description  | DCF Integration | Cassandra Compliant |
 |----------------------|------------------|---------------------|-------------------------|
 | 1.0.0.x [SLC Main]   | Initial version  | Yes                 | Yes                     |
 | 1.1.0.x              | Firmware upgrade | Yes                 | Yes                     |
 
 ### Product Info
 
-| **Range** | **Device Firmware Version**                                                                           |
+| Range | Device Firmware Version                                                                           |
 |------------------|-------------------------------------------------------------------------------------------------------|
 | 1.0.0.x          | UPS software version: SWM022-02-21/ Agent software version: AppVer. 01.04.000 Firmware version: S14-1 |
 | 1.1.0.x          | Firmware version: S16-1                                                                               |
@@ -36,14 +36,14 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *172.16.101.4*.
+- **IP address/host**: The polling IP of the device, e.g., *172.16.101.4*.
 - **Device address**: Not required.
 
 SNMP Settings:
 
-- **Port number**: The port of the connected device, e.g. *161*.
-- **Get community string**: The community string used when reading values from the device, e.g. *public*.
-- **Set community string**: The community string used when setting values on the device, e.g. *private*.
+- **Port number**: The port of the connected device, e.g., *161*.
+- **Get community string**: The community string used when reading values from the device, e.g., *public*.
+- **Set community string**: The community string used when setting values on the device, e.g., *private*.
 
 ## Usage
 

@@ -99,7 +99,7 @@ The **Network Interfaces** table displays the probe and interface names, IPV4 an
 
 These pages include two tables each, with the live tasks and completed tasks, respectively. The **Completed Tasks Info** table displays all tasks, regardless of the protocol.
 
-The tables display the probe name, task name, task state (*Started*, *Stalled*, etc.), protocol (*HLS*, *DASH*, *IPTV*, etc.), URI, task start time, interface name, and streaming interface. In addition, the **Node Type** column shows whether the task is independent (i.e. it does not contain subtasks — SINGLE or ROOT) or it has subtasks (ROOT, CHILD). You can stop or resume tasks with the **Action** field.
+The tables display the probe name, task name, task state (*Started*, *Stalled*, etc.), protocol (*HLS*, *DASH*, *IPTV*, etc.), URI, task start time, interface name, and streaming interface. In addition, the **Node Type** column shows whether the task is independent (i.e., it does not contain subtasks — SINGLE or ROOT) or it has subtasks (ROOT, CHILD). You can stop or resume tasks with the **Action** field.
 
 ### Active Alarms Page
 

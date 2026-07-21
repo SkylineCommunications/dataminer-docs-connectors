@@ -41,7 +41,7 @@ First create the following view structure in the Surveyor:
 
 Then create the following structure in the Automation module:
 
-- Technology Folder: DAB, DTTV or FM \> Automation script linked to specific element
+- Technology Folder: DAB, DTTV or FM \> automation script linked to specific element
 
 To make the protocol process these structures, configure the following parameters:
 

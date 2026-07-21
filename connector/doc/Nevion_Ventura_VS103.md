@@ -12,7 +12,7 @@ This connector monitors the Nevion Ventura VS103 chassis and supported cards thr
 
 ### Version Info
 
-| **Range**     | **Description**                                                                                                                                                                                                                                                               |
+| Range     | Description                                                                                                                                                                                                                                                               |
 |----------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 1.0.0.x              | Initial version.                                                                                                                                                                                                                                                              |
 | 1.0.1.x              | Added DVE support for VS906 cards.                                                                                                                                                                                                                                            |
@@ -42,7 +42,7 @@ Notes:
 
 ### Exported connectors
 
-| **Exported Connector**        | **Description**                                                 |
+| Exported Connector        | Description                                                 |
 |------------------------------|-----------------------------------------------------------------|
 | Nevion Ventura VS901         | *In range 1.0.0.x* HD-SDI JPEG 2000 compression over GbE        |
 | Nevion Ventura VS902         | *Before range 2.0.1.x* Video router module                      |
@@ -62,7 +62,7 @@ The Nevion Ventura VS103 is an SNMP connector. The IP needs to be configured dur
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 - **Device address**: This is not required. If the value is 1, all the pages are shown. If the value is not filled in or other than 1, some pages are hidden (Interfaces, In-Band Management, Input Status and Output Status). The default value is *1*.
 
 SNMP Settings:

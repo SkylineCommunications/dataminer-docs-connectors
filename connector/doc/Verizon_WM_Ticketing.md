@@ -4,7 +4,7 @@ uid: Connector_help_Verizon_WM_Ticketing
 
 # Verizon WM Ticketing
 
-The Verizon WM Ticketing connector is used to handle the Verizon VSAT business logic towards the automation of the ticketing workflow. The connector interacts, directly or indirectly, with collector elements, Correlation rules, and Automation scripts.
+The Verizon WM Ticketing connector is used to handle the Verizon VSAT business logic towards the automation of the ticketing workflow. The connector interacts, directly or indirectly, with collector elements, correlation rules, and automation scripts.
 
 ## About
 
@@ -14,9 +14,9 @@ As this is a virtual connector, **no data traffic** will be shown **in the Strea
 
 1. The Correlation engine listens for and captures **information events** from collector elements.
 
-1. The Correlation engine triggers an **Automation script**, passing along the ticketing message.
+1. The Correlation engine triggers an **automation script**, passing along the ticketing message.
 
-1. The Automation script selects the **Verizon WM Ticketing (WMT) element** responsible for handling the ticketing workflow and forwards the message via a parameter set.
+1. The automation script selects the **Verizon WM Ticketing (WMT) element** responsible for handling the ticketing workflow and forwards the message via a parameter set.
 
    The WMT element is selected based on the **DMA ID** of the triggering collector. The goal is to process the ticket on the same DMA when possible. If no WMT element is found, the message is sent to any active WMT element within the DMS.
 
@@ -24,7 +24,7 @@ As this is a virtual connector, **no data traffic** will be shown **in the Strea
 
    For details on each diagnostic type, refer to [Diagnostics](#diagnostics) below.
 
-1. Once diagnostics are completed, the WMT element sends the final ticketing message to the ETMS back end operating on the current DMA.
+1. Once diagnostics are completed, the WMT element sends the final ticketing message to the ETMS backend operating on the current DMA.
 
 ### Version Info
 
@@ -53,12 +53,12 @@ The **Configuration** section allows you to adjust the behavior of the connector
 
 - **System Credentials**: Stores authentication details for system access.
 
-- **Subscriptions Configuration**: Defines the **front-end DMA** and **subscription file locations**.
+- **Subscriptions Configuration**: Defines the **frontend DMA** and **subscription file locations**.
 
 - **Subscriptions Folder Path**: The path where **subscription tables** will be stored.
 
   > [!NOTE]
-  > This must be written like a local path but applies to the **front-end Agent**, not the hosting Agent.
+  > This must be written like a local path but applies to the **frontend Agent**, not the hosting Agent.
 
 ## Diagnostics
 

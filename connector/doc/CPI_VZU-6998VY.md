@@ -49,7 +49,7 @@ The element consists of the data pages detailed below.
 
 ### Main View
 
-Contains important information related to the device itself, e.g. High Reflected RF Fault, RF Output Power (dBm), Helix Voltage, System State.
+Contains important information related to the device itself, e.g., High Reflected RF Fault, RF Output Power (dBm), Helix Voltage, System State.
 
 ### General Control
 

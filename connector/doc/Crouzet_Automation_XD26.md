@@ -18,8 +18,8 @@ This protocol can be used to monitor and control the **Crouzet Automation XD26**
 
 **SERIAL Connection:**
 
-- **IP address/host**: The polling IP or URL of the destination, e.g. *192.168.1.45*.
-- **IP port**: The port of the destination, e.g. *502*.
+- **IP address/host**: The polling IP or URL of the destination, e.g., *192.168.1.45*.
+- **IP port**: The port of the destination, e.g., *502*.
 - **Bus address**: This field does not need to be filled in.
 
 ## Usage

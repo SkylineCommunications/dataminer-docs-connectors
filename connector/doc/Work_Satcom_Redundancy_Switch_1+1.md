@@ -69,13 +69,13 @@ Up to version 1.0.0.3 of the connector, this page contains three sections.
   - **Alarm of Inactive Unit**: Allows you to configure if alarms from the inactive unit have to be ignored or processed normally.
   - **Command Forwarding:** Allows you to enable or disable command forwarding for both units.
 
-- The **Network Settings** section allows you to monitor the configuration of the network, e.g. **IP Address**, **Subnet Mask**, **Gateway** and **TCP Port**.
+- The **Network Settings** section allows you to monitor the configuration of the network, e.g., **IP Address**, **Subnet Mask**, **Gateway** and **TCP Port**.
 
 - The final section contains information about the **Date and Time** internal setting of the device, and displays the **Software Version**.
 
 From version 1.0.0.4 onwards, there are five sections: **Switch Configuration, Switch Behavior, System Information, Status,** and **Network Information.**
 
-- The **Switch Configuration** section contains information to configure the status of the switches, e.g. **Auto Switching**, **Active Unit** and **Alarm of Inactive Unit**.
+- The **Switch Configuration** section contains information to configure the status of the switches, e.g., **Auto Switching**, **Active Unit** and **Alarm of Inactive Unit**.
 
 - The **Switch Behavior** section contains the **Auto Switching Behavior** and **Reactivation Delay Time** information and configuration.
 
@@ -92,7 +92,7 @@ From version 1.0.0.4 onwards, there are five sections: **Switch Configuration, S
   - **Command Forwarding:** Allows you to enable or disable command forwarding for both units.
   - **Front Panel Lock State:** Allows you to lock or unlock the front panel of the switch.
 
-- The **Network Settings** section allows you to monitor the configuration of the network, e.g. **IP Address**, **Subnet Mask**, **Gateway** and **TCP Port**.
+- The **Network Settings** section allows you to monitor the configuration of the network, e.g., **IP Address**, **Subnet Mask**, **Gateway** and **TCP Port**.
 
 ### Web Interface
 

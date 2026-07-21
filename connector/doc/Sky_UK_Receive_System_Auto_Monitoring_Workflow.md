@@ -50,4 +50,4 @@ The alarm statuses for each chain can be found in the **Chain Monitoring Results
 
 The **Errors** page contains a table with all the issues that have occurred related to the uplink flow. You can follow the proposed actions and acknowledge the issues.
 
-For DataMiner-related issues (e.g. stopped elements, invalid naming convention, etc.), you will find information on the **Log** page. You can disable these logs if needed.
+For DataMiner-related issues (e.g., stopped elements, invalid naming convention, etc.), you will find information on the **Log** page. You can disable these logs if needed.

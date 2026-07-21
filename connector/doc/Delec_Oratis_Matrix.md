@@ -26,7 +26,7 @@ It requires the following input during element creation:
 
 **SNMP CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **Device address**: Not needed.
 
 **SNMP Settings**:
@@ -37,7 +37,7 @@ It requires the following input during element creation:
 
 **SMART-SERIAL CONNECTION**:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13.*
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
 - **IP port**: The port of the connected device, by default *6550*.
 - **Bus address**: Not needed.
 

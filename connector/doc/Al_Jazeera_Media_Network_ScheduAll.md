@@ -38,7 +38,7 @@ This connector uses an HTTP connection and requires the following input during e
 
 HTTP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *127.1.2.3*.
+- **IP address/host**: The polling IP of the device, e.g., *127.1.2.3*.
 - **IP port**: The IP port of the device, with value *80*.
 
 ## How to use

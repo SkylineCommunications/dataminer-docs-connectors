@@ -30,7 +30,7 @@ This connector will export different connectors based on the retrieved data. A l
 
 ### Exported connectors
 
-| **Exported Connector**            | **Description**                    |
+| Exported Connector            | Description                    |
 |----------------------------------|------------------------------------|
 | Concurrent Mediahawk 4500 - Host | A Concurrent Mediahawk 4500 device |
 
@@ -44,7 +44,7 @@ This connector uses a Simple Network Management Protocol (SNMPv2) connection and
 
 SNMP CONNECTION:
 
-- **IP address/host**: The polling IP of the device, e.g. *10.11.12.13*.
+- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
 
 SNMP Settings:
 

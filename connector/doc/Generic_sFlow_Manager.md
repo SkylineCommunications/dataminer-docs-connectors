@@ -48,7 +48,7 @@ The sFlow packets sent by an Agent are not processed by the sFlow Collector as l
 When a new Agent is **detected**, it will be added to the **Detected Agents** table, along with the sFlow collector that received data from this Agent. To start processing this Agent, it needs to be **confirmed** and then the linked sFlow collector will start processing the packets.
 Note, however, that if an Agent sends sFlow data to multiple sFlow collectors, only one of these sFlow collectors can be used to process this data.
 
-When an Agent is confirmed, it will be removed from the **Detected Agents** table and will be available in the **Agents** table. In the **Agents** table, several **configuration** options are available for the Agent, e.g. assigning it to a different collector, **pausing** the Agent, or **decommissioning** it.
+When an Agent is confirmed, it will be removed from the **Detected Agents** table and will be available in the **Agents** table. In the **Agents** table, several **configuration** options are available for the Agent, e.g., assigning it to a different collector, **pausing** the Agent, or **decommissioning** it.
 
 ### Configuration of Filters
 
