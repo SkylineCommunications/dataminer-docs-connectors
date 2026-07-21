@@ -7361,6 +7361,9 @@
     topicUid: Connector_help_Nokia_ISAM_7300_FX
   - name: Nokia ISAM 7300 FX GPON Platform
     topicUid: Connector_help_Nokia_ISAM_7300_FX_GPON_Platform
+    items:
+    - name: Nokia ISAM 7300 FX GPON Platform Technical
+      topicUid: Connector_help_Nokia_ISAM_7300_FX_GPON_Platform_Technical
   - name: Nokia MSS-8
     topicUid: Connector_help_Nokia_MSS-8
   - name: Nokia MSS-8 - CorEvo-1G
@@ -9160,6 +9163,9 @@
       topicUid: Connector_help_Skyline_EPM_Platform_GPON_Technical
   - name: Skyline EPM Platform GPON WM
     topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM
+    items:
+    - name: Skyline EPM Platform GPON WM Technical
+      topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM_Technical
   - name: Skyline EPM Platform PLM
     topicUid: Connector_help_Skyline_EPM_Platform_PLM
   - name: Skyline EPM Platform VSAT DSM SO
