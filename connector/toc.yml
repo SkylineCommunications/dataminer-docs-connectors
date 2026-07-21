@@ -6982,6 +6982,9 @@
     topicUid: Connector_help_Nokia_ISAM_7300_FX
   - name: Nokia ISAM 7300 FX GPON Platform
     topicUid: Connector_help_Nokia_ISAM_7300_FX_GPON_Platform
+    items:
+    - name: Nokia ISAM 7300 FX GPON Platform Technical
+      topicUid: Connector_help_Nokia_ISAM_7300_FX_GPON_Platform_Technical
   - name: Nokia MSS-8
     topicUid: Connector_help_Nokia_MSS-8
   - name: Nokia MSS-8 - CorEvo-1G
