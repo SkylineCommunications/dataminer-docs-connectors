@@ -4293,6 +4293,8 @@
     topicUid: Connector_help_GatesAir_Maxiva_ULX-OP_Logic
   - name: GatesAir Maxiva ULX-OP Switch
     topicUid: Connector_help_GatesAir_Maxiva_ULX-OP_Switch
+  - name: GatesAir Maxiva VAX Transmitter
+    topicUid: Connector_help_GatesAir_Maxiva_VAX_Transmitter  
   - name: GatesAir Maxiva XTE DVBT2 Transmitter
     topicUid: Connector_help_GatesAir_Maxiva_XTE_DVBT2_Transmitter
   - name: GatesAir Maxiva XTE Exciter
