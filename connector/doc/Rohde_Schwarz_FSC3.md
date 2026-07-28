@@ -4,48 +4,45 @@ uid: Connector_help_Rohde_Schwarz_FSC3
 
 # Rohde Schwarz FSC3
 
-The Rohde Schwarz FSC3 is a spectrum analyzer device.
-
-This connector interfaces with the spectrum analyzer and allows you to monitor the spectrum of any connected signal. It also allows for basic configuration of the device.
-
-The connector communicates with the spectrum analyzer using the VISA (Virtual Instrument Software Architecture) API.
-
 ## About
 
-### Version Info
+The Rohde Schwarz FSC3 connector allows seamless integration of the R&S FSC3 spectrum analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument information over a virtual connection driven by the Rohde & Schwarz RsInstrument (VISA) library, making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from a single interface. The device connection is configured through the element's Device IP Address, Device Port and connection type (VXI-11, Raw Socket or HiSLIP).
 
-| Range     | Key Features     | Based on     | System Impact     |
-|-----------|------------------|--------------|-------------------|
-| 1.0.0.x   | Initial version  | -            | -                 |
+## Key Features
 
-### Product Info
+- **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
+- **Instrument identification**: Read the Manufacturer, Model, Serial Number, and Firmware Version of the connected device.
+- **Measurement control**: Configure start/stop/center frequency, span, reference level and scale, sweep time and points, resolution bandwidth (RBW), video bandwidth (VBW), and input attenuation.
+- **Trace monitoring toggle**: Enable or disable trace monitoring to reduce load when only identity and settings are needed.
+- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025) or HiSLIP.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.40                   |
+## Use Cases
 
-### System Info
+### RF Monitoring
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: Operators need to keep an eye on RF spectrum measurements without standing at the instrument front panel.
 
-## Configuration
+**Solution**: Integrate the FSC3 into DataMiner to stream live trace data and instrument status to a central interface.
 
-### Connections
+**Benefit**: Enables continuous, remote spectrum monitoring alongside the rest of the monitored infrastructure.
 
-#### Virtual Connection
+### Remote Measurement Setup
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Challenge**: Engineers need to change measurement parameters (frequency, span, bandwidths, reference level) on a remote analyzer.
 
-### Initialization
+**Solution**: Use the connector's write settings to push measurement configuration to the device and read the applied values back on the next poll.
 
-This connector requires that the VISA library is installed on the DataMiner Agent. The installer for the library can be downloaded from the [Rohde-Schwarz website](https://www.rohde-schwarz.com/us/driver-pages/remote-control/3-visa-and-tools_231388.html).
+**Benefit**: Removes the need for physical access and speeds up measurement reconfiguration.
 
-In addition, the *RsInstrument.dll* must also be present in the *C:\Skyline DataMiner\ProtocolScripts\DllImport* folder of the DataMiner Agent. If you deploy the connector from the Catalog to a cloud-connected DataMiner System, this DLL will be automatically stored there. If you install the connector via a .dmprotocol package, the DLL will also be included and added in the correct location.
+### Automated Signal Analysis
 
-## How to Use
+**Challenge**: Repetitive sweeps and trace capture are time-consuming to run manually.
 
-On the **General** page, the **IP Address** parameter must be filled in order for the polling to start. That page also displays generic information like the **Serial Number** and the **Firmware**.
+**Solution**: Drive the analyzer from DataMiner to automate sweep acquisition and collect trace data.
 
-The spectrum can be observed on the **Spectrum** **Analyzer** page.
+**Benefit**: Increases efficiency and ensures consistent, repeatable data collection.
+
+## Technical Reference
+
+> [!NOTE]
+> For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Rohde_Schwarz_FSC3_Technical).
