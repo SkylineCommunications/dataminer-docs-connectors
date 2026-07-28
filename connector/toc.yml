@@ -7735,6 +7735,8 @@
   items:
   - name: Panasonic AW-HE40
     topicUid: Connector_help_Panasonic_AW-HE40
+  - name: Panasonic KAIROS
+    topicUid: Connector_help_Panasonic_KAIROS
   - name: Panasonic Super Hi-Vision Recorder
     topicUid: Connector_help_Panasonic_Super_Hi-Vision_Recorder
 - name: Paneda

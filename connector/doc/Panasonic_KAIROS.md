@@ -1,5 +1,5 @@
 ---
-uid: Panasonic_KAIROS
+uid: Connector_help_Panasonic_KAIROS
 ---
 
 # Panasonic KAIROS
@@ -151,20 +151,20 @@ Historical trending and alarming allow operations teams to identify developing i
 
 ## Supported Monitoring Areas
 
-| Area               | Description                                          |
-| ------------------ | ---------------------------------------------------- |
-| System Information | Model, version, manufacturer, system details, uptime |
-| System Health      | GPU load and hardware sensor monitoring              |
-| PTP                | Grandmaster and synchronization status               |
-| Genlock            | Genlock state, source selection, lock status         |
-| Media Resources    | Resource utilization and capacity information        |
-| Network Statistics | Network performance and throughput metrics           |
-| IP Flows           | Input and output flow monitoring                     |
-| SDI Flows          | Input and output flow monitoring                     |
-| NDI Flows          | Input and output flow monitoring                     |
-| HDMI Flows         | Input and output flow monitoring                     |
-| Stream Flows       | RTP, SRT, RTMP and other stream monitoring           |
-| Hardware Inventory | Installed module serial numbers                      |
+| Area               | Description                                                                   |
+| ------------------ | ----------------------------------------------------------------------------- |
+| System Information | Model, version, manufacturer, system details, uptime                          |
+| System Health      | GPU load and hardware sensor monitoring                                       |
+| PTP                | Grandmaster and synchronization status                                        |
+| Genlock            | Genlock state, source selection, lock statuljdalsdjaljdslajsdkajsldjaksdjasds |
+| Media Resources    | Resource utilization and capacity information                                 |
+| Network Statistics | Network performance and throughput metrics                                    |
+| IP Flows           | Input and output flow monitoring                                              |
+| SDI Flows          | Input and output flow monitoring                                              |
+| NDI Flows          | Input and output flow monitoring                                              |
+| HDMI Flows         | Input and output flow monitoring                                              |
+| Stream Flows       | RTP, SRT, RTMP and other stream monitoring                                    |
+| Hardware Inventory | Installed module serial numbers                                               |
 
 ## Typical Use Cases
 
