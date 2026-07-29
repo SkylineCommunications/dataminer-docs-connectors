@@ -10,11 +10,11 @@ Observium is a network monitoring platform with auto-discovery that supports a w
 
 ## Key Features
 
-- **Devices Overview**: Inventory of all devices known to Observium, keyed by hostname, including vendor, hardware, operating system, location, status, and uptime.
+- **Devices Overview**: Inventory of all devices known to Observium, displayed by hostname, including vendor, hardware, operating system, location, status, and uptime.
 
-- **Fleet KPIs**: Total device count and live API connection state, with alarm monitoring.
+- **Fleet KPIs**: Total device count and API connection state, refreshed on every poll cycle. The connection state raises an alarm by default when communication with the Observium server fails; the device count can be monitored with user-defined alarm thresholds.
 
-- **Flexible authentication**: Supports both username/password (Basic) and API token authentication.
+- **Flexible authentication**: Supports both username/password (HTTP Basic) and API token authentication.
 
 - **Polling Manager**: Per-poll enable/disable, configurable polling intervals, on-demand manual polling, and per-poll health status.
 
@@ -32,7 +32,7 @@ Observium is a network monitoring platform with auto-discovery that supports a w
 
 **Challenge**: When the monitoring platform itself becomes unreachable, this can go unnoticed, creating a blind spot.
 
-**Solution**: The connector continuously reports the API connection state and raises alarms when communication with the Observium server fails.
+**Solution**: The connector reports the API connection state on every poll cycle and raises alarms when communication with the Observium server fails. The polling interval is configurable, so the detection time can be tuned to the desired responsiveness.
 
 **Benefit**: Issues with the Observium platform itself are detected and escalated like any other fault in the network.
 
@@ -40,8 +40,8 @@ Observium is a network monitoring platform with auto-discovery that supports a w
 
 ### Prerequisites
 
-- **Observium instance with the REST API enabled** is needed for the connector to retrieve data.
-- **An Observium user account or API token with API access** is required for authentication.
+- **Observium Subscription Edition (Professional or Enterprise)** is required. The Observium REST API is only included in the paid Subscription Editions; it is not available in the free Community Edition.
+- **An Observium user account or API token with API access** is required for authentication. To retrieve the complete device inventory, the account (or the account backing the token) needs at least user level 5 (*Global Read*). Accounts with a lower level will only return the devices explicitly permitted to them, resulting in an incomplete inventory.
 - **Network access from the DataMiner Agent to the Observium web server** is required for polling.
 
 > [!NOTE]
