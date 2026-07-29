@@ -188,11 +188,13 @@ This page displays the app configuration page on the Slack API website, where yo
 
 ## Native Commands
 
-List of native commands that are available in Slack when the bot is present in a channel. These commands can be invoked to interact with the bot and perform various actions.
+The following native commands are available when the bot is present in a Slack channel. These commands can be used to perform various actions.
 
-### !List
+### !list
 
-Sends a list of all configured automation scripts on the Slack Element and their commands to the Slack channel where the command was invoked. This command can be disabled from the General page on the Element.
+Sends a list of all automation scripts configured on the Slack Messaging element and their associated commands to the Slack channel where the command was invoked.
+
+This command can be disabled from the **General** page of the element.
 
 ## Additional Resources
 
