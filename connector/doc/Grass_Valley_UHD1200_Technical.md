@@ -30,7 +30,7 @@ SNMP SETTINGS:
 
 ### Web Interface
 
-The web interface is available when the client machine has network connectivity to the UHD1200 device.
+The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
 

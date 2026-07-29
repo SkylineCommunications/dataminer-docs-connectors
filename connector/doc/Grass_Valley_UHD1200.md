@@ -17,4 +17,4 @@ The Grass Valley UHD1200 connector enables comprehensive monitoring and control 
 ## Technical Reference
 
 > [!NOTE]
-> For detailed information about connector versions, supported firmware, configuration, connections, and all available functionality, refer to the [technical help page](xref:Connector_help_Grass_Valley_UHD1200_Technical).
+> For detailed technical information about connector versions, supported firmware, configuration, connections, and all available functionality, refer to our [technical documentation](xref:Connector_help_Grass_Valley_UHD1200_Technical).
