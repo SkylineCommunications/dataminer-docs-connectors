@@ -15,9 +15,13 @@ The connector communicates with Alta-TS over HTTP(S) and provides visibility int
 ## Key Features
 
 - **Centralized monitoring of Alta-TS encoder instances**: Provides visibility into all configured encoder instances, including operational status, instance configuration, and runtime information from a single DataMiner element.
+
 - **Transport stream workflow monitoring**: Monitors MPEG-TS transport stream inputs and outputs, including RTP, UDP unicast, and UDP multicast stream configurations used by caption encoding workflows.
+
 - **Caption workflow visibility**: Tracks caption insertion and caption bridging configurations to help operators verify that caption services are correctly configured and operational.
+
 - **Operational logging and diagnostics**: Provides access to instance-specific logs and status information, enabling faster root cause analysis of stream, captioning, and service-related issues.
+
 - **Configuration awareness across multiple channels**: Monitors key instance settings, including primary streams, source streams, and output destinations, allowing operators to validate channel configurations from a centralized platform.
 
 ## Use Cases
@@ -61,3 +65,8 @@ The connector communicates with Alta-TS over HTTP(S) and provides visibility int
 **Solution**: The connector exposes stream configuration information for each Alta-TS instance, allowing operators to validate channel setups directly from DataMiner.
 
 **Benefit**: Configuration issues can be identified proactively, reducing service interruptions and operational errors.
+
+## Technical Reference
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_EEG_Alta-TS_Caption_Encoder_Technical).
