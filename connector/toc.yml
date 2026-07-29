@@ -8290,6 +8290,8 @@
       topicUid: Connector_help_Rohde_Schwarz_ETX-T_Technical
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
+  - name: Rohde Schwarz FPC1000
+    topicUid: Connector_help_Rohde_Schwarz_FPC1000
   - name: Rohde Schwarz FPL 1003
     topicUid: Connector_help_Rohde_Schwarz_FPL_1003
     items:
