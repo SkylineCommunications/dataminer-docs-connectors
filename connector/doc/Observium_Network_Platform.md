@@ -6,13 +6,13 @@ uid: Connector_help_Observium_Network_Platform
 
 ## About
 
-Observium is a network monitoring platform with auto-discovery that supports a wide range of device types, vendors, and operating systems. This connector integrates an Observium server into DataMiner through its REST API, providing a consolidated overview of the entire discovered device fleet.
+Observium is a network monitoring platform with auto-discovery that supports a wide range of device types, vendors, and operating systems. This connector integrates an Observium server into DataMiner through its REST API, providing a consolidated overview of the entire discovered device inventory.
 
 ## Key Features
 
 - **Devices Overview**: Inventory of all devices known to Observium, displayed by hostname, including vendor, hardware, operating system, location, status, and uptime.
 
-- **Fleet KPIs**: Total device count and API connection state, refreshed on every poll cycle. The connection state raises an alarm by default when communication with the Observium server fails; the device count can be monitored with user-defined alarm thresholds.
+- **Platform KPIs**: Total device count and API connection state, refreshed on every poll cycle. The connection state raises an alarm by default when communication with the Observium server fails; the device count can be monitored with user-defined alarm thresholds.
 
 - **Flexible authentication**: Supports both username/password (HTTP Basic) and API token authentication.
 
@@ -26,7 +26,7 @@ Observium is a network monitoring platform with auto-discovery that supports a w
 
 **Solution**: The connector retrieves the full device inventory from the Observium API and presents it in DataMiner, where it can be used in dashboards, alarming, and reporting.
 
-**Benefit**: Operators get a single pane of glass covering the Observium-discovered fleet alongside the rest of their DataMiner-monitored infrastructure.
+**Benefit**: Operators get a single pane of glass covering the Observium-discovered inventory alongside the rest of their DataMiner-monitored infrastructure.
 
 ### Health Surveillance of the Monitoring Platform
 
