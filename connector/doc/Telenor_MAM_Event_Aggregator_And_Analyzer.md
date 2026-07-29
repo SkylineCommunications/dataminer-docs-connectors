@@ -8,7 +8,7 @@ uid: Connector_help_Telenor_MAM_Event_Aggregator_And_Analyzer
 
 The **Telenor MAM Event Aggregator and Analyzer** connector queries an OpenSearch database for MAM events and performance data offloaded from the TV platform. Because the raw data in OpenSearch is retained for only a short period, the connector aggregates it into DataMiner tables for long-term trending, analysis, and alerting.
 
-It produces multiple aggregations, including error events (per device class, per device model, and per asset), MAM events per device class, ContentWise API usage, NPVR statistics, playback sessions, player statistics, and unique devices in use. Each aggregation has its own configurable aggregation period and retention window, and can be filtered per operator.
+It produces multiple aggregations, including error events (per device class, device model, and asset), MAM events per device class, ContentWise API usage, NPVR statistics, playback sessions, player statistics, and unique devices in use. Each aggregation has its own configurable aggregation period and retention window, and can be filtered by operator.
 
 ## Key Features
 

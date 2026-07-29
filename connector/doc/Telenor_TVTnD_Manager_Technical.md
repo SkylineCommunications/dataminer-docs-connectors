@@ -28,14 +28,14 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-Before running diagnoses, configure the diagnosis definitions in the **TVTnD Manager Configurator** low-code app. The automated nightly diagnosis additionally relies on **Telenor EPM Collector** elements being present in the system; these are enumerated to determine which customer devices to diagnose.
+Before running diagnoses, configure the diagnosis definitions in the **TVTnD Manager Configurator** low-code app. The automated nightly diagnosis additionally requires **Telenor EPM Collector** elements to be present in the system. These elements are enumerated to determine which customer devices should be diagnosed.
 
 ## How to Use
 
-Diagnosis can be started in three ways:
+A diagnosis can be started in three ways:
 
 - **On demand** from the **General** page, for a single customer and time range.
-- **Automatically** through the nightly diagnosis, which diagnoses all customer devices per collector element.
+- **Automatically** through the nightly diagnosis, which diagnoses all customer devices associated with each collector element.
 - **Externally** through Inter-App Calls: other systems send a `StartDiagnosis` message that the connector processes to run a diagnosis.
 
 As this is a virtual connector, it does not poll a device directly, so **no traffic appears in the Stream Viewer**. Data is retrieved from the EPM infrastructure, trend information, and MAM events (via OpenSearch), and results are persisted as DOM instances.
@@ -51,11 +51,11 @@ On the **General** page, you can:
 
 ### Nightly Diagnosis Run
 
-The nightly diagnosis is a scheduled batch that diagnoses all customer devices, per collector element, for the previous day.
+The nightly diagnosis is a scheduled batch that diagnoses associated with each collector element, for the previous day.
 
 On the **Nightly Diagnosis Run** page, you can:
 
-- Enable or disable the nightly check with **Nightly Check Enabled**.
+- Enable or disable the nightly diagnosis with **Nightly Check Enabled**.
 - Start a nightly run manually with the **Run Nightly Check** button.
 - Follow progress through **Nightly Check Diagnosed Customers** (the number of customers diagnosed so far) and **Nightly Diagnosis Status**, which reflects the current state of the run (for example, *Running* or *Completed*).
 
@@ -63,7 +63,7 @@ When a nightly run starts, the diagnosis log, diagnosis, and detected issue tabl
 
 ### Nightly Run Collectors
 
-The **Nightly Run Collectors** page shows the **Nightly Diagnosed Collectors** table, which lists the collector elements (of the **Telenor EPM Collector** protocol) processed during the last nightly diagnosis batch. For each collector, it shows the ID, name, county, and household count.
+The **Nightly Run Collectors** page shows the **Nightly Diagnosed Collectors** table, which lists the collector elements (using the **Telenor EPM Collector** protocol) processed during the last nightly diagnosis batch. For each collector, it shows the ID, name, county, and household count.
 
 Because the nightly diagnosis can be distributed across multiple manager elements, this table also indicates whether a collector was already diagnosed by another element during the nightly run. This filtering ensures each collector is diagnosed only once, so the workload can be shared between elements without duplicating diagnoses.
 

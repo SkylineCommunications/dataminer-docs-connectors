@@ -8,14 +8,14 @@ uid: Connector_help_Telenor_TVTnD_Manager
 
 In the Telenor DMS, the **Telenor TVTnD Manager** is in charge of customer device diagnosis. It automates the troubleshooting and diagnosis (TVTnD) of customer devices by combining device data, trend information, and MAM events into actionable detected issues and diagnoses.
 
-Diagnosis can be triggered **on demand** for a single customer, run automatically as a **nightly batch** across all customer devices, or started **externally** by other systems through Inter-App Calls. Results are consolidated into log, diagnosis, and detected-issue tables that feed statistics and reporting.
+A diagnosis can be triggered **on demand** for a single customer, run automatically as a **nightly batch** across all customer devices, or started **externally** by other systems through Inter-App Calls. Results are consolidated into log, diagnosis, and detected-issue tables that feed statistics and reporting.
 
 ## Key Features
 
 - **On-demand customer diagnosis**: Diagnose a specific customer over a chosen time range and in a chosen response language, using the configurable diagnosis definitions from the **TVTnD Manager Configurator** low-code app.
-- **Automated nightly diagnosis**: Run a scheduled batch that diagnoses all customer devices per collector element for the previous day, with progress tracking and a clear run status.
+- **Automated nightly diagnosis**: Run a scheduled batch that diagnoses all customer devices associated with each collector element for the previous day, with progress tracking and a clear run status.
 - **Detected issues and diagnoses**: Automatically translate device, infrastructure, and service data into linked detected issues and diagnoses that are easy to analyze.
-- **Statistics and duration insights**: Track error counts per detected issue and diagnosis (last hour and last day) aggregated by device class, and monitor how long each diagnosis phase takes.
+- **Statistics and duration insights**: Track error counts per detected issue and diagnosis (for the last hour and the last day), aggregated by device class, and monitor the duration of each diagnosis phase.
 - **External triggering**: Let other systems start a diagnosis through Inter-App Calls, integrating the manager into automated troubleshooting workflows.
 
 ## Use Cases

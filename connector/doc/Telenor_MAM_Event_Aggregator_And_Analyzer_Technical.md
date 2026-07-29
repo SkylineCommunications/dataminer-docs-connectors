@@ -12,11 +12,11 @@ Since the raw data in OpenSearch is retained for only 21 days, the primary purpo
 
 The element performs several independent aggregations, each with its own configurable aggregation period and retention window:
 
-- **Error events** grouped by device class, by device model, and by asset.
+- **Error events** grouped by device class, device model, and asset.
 - **MAM events** grouped by device class.
 - **ContentWise API usage** (recommendation service performance).
 - **NPVR statistics**.
-- **Playback sessions** (per category and per model).
+- **Playback sessions** grouped by category and model.
 - **Player statistics**.
 - **Unique devices in use** and **unique devices per firmware version**.
 - **App system events**.
@@ -37,10 +37,10 @@ This connector uses a virtual connection and does not require any input during e
 
 On the **General** page, you can:
 
-- View statistics from the latest aggregation, including the last aggregation duration and the last aggregation end time of each aggregation type.
-- Select the **Operator** the element aggregates for: **All**, **Norway**, or **Sweden**.
-- Configure, per aggregation type, the **aggregation period** (in minutes) and, where applicable, the **retention period** (in days) that controls how long aggregated data is kept.
-- Enable or disable the individual aggregation processes (for example, unique devices, app system events, NPVR statistics, player stats, and playback session aggregation).
+- View statistics from the latest aggregation run, including the duration and end time of each aggregation type.
+- Select the **Operator** for which the element aggregates data: **All**, **Norway**, or **Sweden**.
+- Configure, for each aggregation type, the **aggregation period** (in minutes) and, where applicable, the **retention period** (in days), which determines how long aggregated data is kept.
+- Enable or disable the individual aggregation processes (for example, unique devices, app system events, NPVR statistics, player stats, and playback session aggregations).
 
 ### Aggregation Period
 
@@ -66,13 +66,13 @@ The aggregated data is displayed on several pages. The main ones are:
 
 - **MAM Events Per Device Class**: The total number of MAM events during the aggregation period, grouped by device class.
 
-- **Contentwise API Usage**: Request counts by status (200/400/500), cache hit/miss counts, and response-time statistics (average, 95th and 99th percentile) for the ContentWise recommendation API, per tenant and overall.
+- **Contentwise API Usage**: Request counts by status (200/400/500), cache hit/miss counts, and response-time statistics (average, 95th and 99th percentile) for the ContentWise recommendation API, for each tenant and overall.
 
 - **NPVR Statistics**: Aggregated network PVR statistics.
 
 - **Playback Per Category** and **Playback Per Model**: Aggregated playback session statistics grouped by category and by device model.
 
-- **Player Stats** and **OTT Live SO** pages: Player and streaming statistics broken down per device platform (for example, STB, Smartphone, Tablet, PC Portal, Apple TV, Android TV, Chromecast).
+- **Player Stats** and **OTT Live SO** pages: Player and streaming statistics broken down for each device platform (for example, STB, Smartphone, Tablet, PC Portal, Apple TV, Android TV, Chromecast).
 
 - **Unique Devices in Use** and **Unique Devices FW Version**: Counts of distinct devices actively using the service over several time windows, grouped by operator, device class, device model, platform, and firmware version.
 
