@@ -57,11 +57,13 @@ This page contains the **Slots Overview** table. This is the master inventory li
 This page controls which card types are shown and polled:
 
 - **Card Display Auto-Detect** (master, default *Enabled*): This option automatically enables only the card types present in the frame, based on the slot scan, and locks the manual toggles. Set it to *Disabled* to control the per-card toggles manually.
-- **Per-card toggles** (9001, 9121, 9410DA, 9220): With these toggle options per card you can show or hide the corresponding card page, keeping cards from being polled when this is not necessary. When a card is disabled, its page is hidden and its polling stops (no SNMP requests are sent for it).
+- **Per-card toggles** (9001, 9121, 9410DA, 9220, 9911, 9902, 9934): With these toggle options per card you can show or hide the corresponding card page, keeping cards from being polled when this is not necessary. When a card is disabled, its page is hidden and its polling stops (no SNMP requests are sent for it).
 
-### 9001 / 9121 / 9410DA / 9220
+### 9001 / 9121 / 9410DA / 9220 / 9911 / 9902-UDX / 9934
 
-These pages display the data of each detected card type. The 9410DA page contains page buttons to **9410DA Routing**, **9410DA Coax Routing**, and **9410DA Fiber Routing** subpages; the 9220 page contains page buttons to **IP**, **Connectivity**, **Licensing**, and **Admin** subpages.
+These pages display the data of each detected card type. The 9410DA page contains page buttons to **9410DA Routing**, **9410DA Coax Routing**, and **9410DA Fiber Routing** subpages; the 9220 page contains page buttons to **IP**, **Connectivity**, **Licensing**, and **Admin** subpages; the 9902-UDX and 9934 pages contain page buttons to their audio input, output, and status subpages.
+
+On the 9902-UDX and 9934 audio pages, the per-group SNMP audio array tables are consolidated into single per-function tables, and the source, gain, mute, invert, flex bus, and delay offset columns are writable; changes are written back to the card over SNMP.
 
 ## Exported DVE cards
 
@@ -71,3 +73,7 @@ Each active card can be exported as a DVE child element. Each exported card type
 - [Cobalt Digital 9121](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9121)
 - [Cobalt Digital 9410DA](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9410DA)
 - [Cobalt Digital 9220](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9220)
+- [Cobalt Digital 9911DA-8-BPX](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9911DA-8-BPX)
+- [Cobalt Digital 9902-UDX](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9902-UDX)
+- [Cobalt Digital 9934-AUD-PRO-DSP](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9934-AUD-PRO-DSP)
+

@@ -2496,6 +2496,12 @@
       topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9410DA
     - name: Cobalt Digital HPF 9000 - Cobalt Digital 9220
       topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9220
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9902-UDX
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9902-UDX
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9911DA-8-BPX
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9911DA-8-BPX
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9934-AUD-PRO-DSP
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9934-AUD-PRO-DSP
 - name: Cobham
   items:
   - name: Cobham PRORXB
