@@ -71,6 +71,9 @@ The connector was developed and verified against the following device software r
 | Cobalt Digital 9902-UDX | 2.098 |
 | Cobalt Digital 9934-AUD-PRO-DSP | 2.116 |
 
+> [!NOTE]
+> From version 1.1.0.1 onwards, this connector requires DataMiner version **10.4.0.0 - 14003** or higher.
+
 ## Technical Reference
 
 > [!NOTE]
