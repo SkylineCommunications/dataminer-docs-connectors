@@ -4,55 +4,45 @@ uid: Connector_help_Rohde_Schwarz_FSV
 
 # Rohde Schwarz FSV
 
-The **Rohde Schwarz FSV** is a spectrum analyzer connector.
-
 ## About
 
-The **Rohde Schwarz FSV** connector interfaces with the spectrum analyzer using serial commands implementing the SCPI protocol.
+The Rohde Schwarz FSV connector allows seamless integration of the R&S FSV signal and spectrum analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument information over a virtual connection driven by the Rohde & Schwarz RsInstrument (VISA) library, making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from a single interface. The device connection is configured through the element's Device IP Address, Device Port and connection type (VXI-11, Raw Socket or HiSLIP).
 
-### Version Info
+## Key Features
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+- **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
+- **Instrument identification**: Read the Manufacturer, Model, Serial Number, and Firmware Version of the connected device.
+- **Measurement control**: Configure start/stop/center frequency, span, reference level and scale, sweep time and points, resolution bandwidth (RBW), video bandwidth (VBW), and input attenuation.
+- **Trace monitoring toggle**: Enable or disable trace monitoring to reduce load when only identity and settings are needed.
+- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025) or HiSLIP.
 
-### Product Info
+## Use Cases
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 2.30                   |
+### RF Monitoring
 
-### System Info
+**Challenge**: Operators need to keep an eye on RF spectrum measurements without standing at the instrument front panel.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+**Solution**: Integrate the FSV into DataMiner to stream live trace data and instrument status to a central interface.
 
-## Installation and configuration
+**Benefit**: Enables continuous, remote spectrum monitoring alongside the rest of the monitored infrastructure.
 
-### Creation
+### Remote Measurement Setup
 
-#### Serial Main connection
+**Challenge**: Engineers need to change measurement parameters (frequency, span, bandwidths, reference level) on a remote analyzer.
 
-This connector uses a serial connection and requires the following input during element creation:
+**Solution**: Use the connector's write settings to push measurement configuration to the device and read the applied values back on the next poll.
 
-SERIAL CONNECTION:
+**Benefit**: Removes the need for physical access and speeds up measurement reconfiguration.
 
-- Interface connection:
+### Automated Signal Analysis
 
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device, by default *5025*.
+**Challenge**: Repetitive sweeps and trace capture are time-consuming to run manually.
 
-## Usage
+**Solution**: Drive the analyzer from DataMiner to automate sweep acquisition and collect trace data.
 
-### Spectrum Analyzer
+**Benefit**: Increases efficiency and ensures consistent, repeatable data collection.
 
-This page contains DataMiner's default **Spectrum Analysis** component.
+## Technical Reference
 
-### General
-
-This page contains basic device information such as the **Manufacturer**, **Model**, **Serial Number** and **Firmware Version** of the device.
-
-### Web Interface
-
-This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+> [!NOTE]
+> For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Rohde_Schwarz_FSV_Technical).
