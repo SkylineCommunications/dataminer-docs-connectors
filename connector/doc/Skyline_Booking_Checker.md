@@ -10,12 +10,12 @@ The **Skyline Booking Checker** connector counts the number of concurrent SRM bo
 
 ## Key Features
 
-- **SRM license tracking**: Monitors whether a SRM license is available and reports the maximum number of concurrent bookings allowed by that license.
+- **SRM license tracking**: Monitors whether an SRM license is available and reports the maximum number of concurrent bookings allowed by that license.
 - **Real-time booking load**: Displays the number of bookings currently ongoing.
 - **Bookings timeline**: Provides a table displaying how the count of concurrent bookings varies over time.
-
 
 ## Use Cases
 
 - Trend SRM utilization over time.
+
 - Proactively alert operations teams before an SRM license limit is breached.
