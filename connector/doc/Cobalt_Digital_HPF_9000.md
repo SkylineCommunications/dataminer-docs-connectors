@@ -20,7 +20,12 @@ This connector uses SNMP communication to monitor the Cobalt Digital HPF 9000, a
   - Automatic detection of installed cards from the slot inventory.
   - One DVE child element per active card, exposing that card's detailed parameters and tables.
   - On-demand DVE creation and deletion per slot, with a clear-all control.
-  - Supported card families: **9001**, **9121**, **9410DA** (product information, status, routing, SFP, and crosspoint routing), and **9220 (MVN-MX260)**.
+  - Supported card families: **9001**, **9121**, **9410DA** (product information, status, routing, SFP, and crosspoint routing), **9220 (MVN-MX260)**, **9911DA-8-BPX** (dual input 1x8 reclocking distribution amplifier), **9902-UDX** (up/down/cross converter audio processing), and **9934-AUD-PRO-DSP** (audio processor with DSP).
+
+- **Audio processing control (9902-UDX and 9934-AUD-PRO-DSP)**:
+
+  - Per-group SNMP audio array tables consolidated into single per-function tables.
+  - Writable source routing, gain, mute, invert, flex bus, and delay offset controls written back to the card over SNMP.
 
 - **Adaptive polling and display**:
 
@@ -52,6 +57,22 @@ This connector uses SNMP communication to monitor the Cobalt Digital HPF 9000, a
 **Solution**: The auto-detect feature derives the installed card types from the slot scan and conditionally enables the matching card pages and polling groups. Absent card types are hidden and skipped entirely.
 
 **Benefit**: Unnecessary SNMP traffic is prevented, and the interface remains focused on the cards that actually exist in each frame, with no manual configuration required.
+
+## Supported Device Versions
+
+The connector was developed and verified against the following device software revisions:
+
+| Device | Software revision |
+|---|---|
+| HPF-9000 Frame Controller (HPF-FC) | 4.0 |
+| Cobalt Digital 9410DA | 1.2.11 |
+| Cobalt Digital 9220 (MVN-MX260) | 1.3.3 |
+| Cobalt Digital 9911DA-8-BPX | 1.151 |
+| Cobalt Digital 9902-UDX | 2.098 |
+| Cobalt Digital 9934-AUD-PRO-DSP | 2.116 |
+
+> [!NOTE]
+> From version 1.1.0.1 onwards, this connector requires DataMiner version **10.4.0.0 - 14003** or higher.
 
 ## Technical Reference
 
