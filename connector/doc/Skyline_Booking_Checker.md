@@ -16,6 +16,10 @@ The **Skyline Booking Checker** connector counts the number of concurrent SRM bo
 
 ## Use Cases
 
-- Trend SRM utilization over time.
+### Prevent SRM License Breach
 
-- Proactively alert operations teams before an SRM license limit is breached.
+**Challenge**: During periods of high activity, it might not be possible to schedule new booking because the system reached the maximum amount of bookings allowed by the license.
+
+**Solution**: Use the connector to count the number of current and incoming bookings. The connector will indicate if the current number of booking is close to the maximum allowed amount. It will also detect when the license might be breached.
+
+**Benefit**: Using this connector will reduce SRM license errors when scheduling many bookings.
