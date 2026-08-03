@@ -9075,6 +9075,8 @@
     topicUid: Connector_help_Skyline_Basic_SDN_Controller
   - name: Skyline Bookings Monitoring
     topicUid: Connector_help_Skyline_Bookings_Monitoring
+  - name: Skyline Booking Checker
+    topicUid: Connector_help_Skyline_Booking_Checker
   - name: Skyline Booking Manager
     topicUid: Connector_help_Skyline_Booking_Manager
   - name: Skyline Bulk Validator Overview
