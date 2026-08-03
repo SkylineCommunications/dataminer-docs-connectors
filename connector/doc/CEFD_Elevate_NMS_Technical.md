@@ -8,20 +8,6 @@ uid: Connector_help_CEFD_Elevate_NMS_Technical
 
 The CEFD Elevate NMS connector integrates with Comtech’s ELEVATE platform to monitor and manage VSAT network infrastructure. The ELEVATE platform is a software-defined solution that supports both MF-TDMA and H-DNA waveforms, enabling flexible and dynamic switching between transmission modes. It allows the deployment of scalable and customizable private VSAT networks, supporting complex topologies and hybrid satellite bandwidth configurations. This connector retrieves operational data from the ELEVATE system, providing visibility into key performance and configuration parameters within the DataMiner environment.
 
-## Version Info
-
-| Range              | Key Features                          | Based on | System Impact         |
-|--------------------|---------------------------------------|----------|-----------------------|
-| 1.0.0.x            | Initial version.                      | -        | -                     |
-| 1.0.1.x            | Added SNMP trap support.              | 1.0.0.6  | Element reconfiguration: Existing elements need to be reconfigured before the new connection(s) will be taken in use. |
-
-## Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | Up till 1.0.1.23       |
-| 1.0.1.x   | 1.0.1.24               |
-
 ## Configuration
 
 ### Connections
