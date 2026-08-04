@@ -11578,6 +11578,16 @@
     topicUid: Connector_help_ZTE_ZXDUPA-BCUA
   - name: ZTE ZXONE 9700
     topicUid: Connector_help_ZTE_ZXONE_9700
+  - name: ZTE ZENIC ONE R22
+    topicUid: Connector_help_ZTE_ZENIC_ONE_R22
+    items:
+    - name: ZTE ZENIC ONE R22 Technical
+      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_Technical
+  - name: ZTE ZENIC ONE R22 ZXONE 9700E
+    topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E
+    items:
+    - name: ZTE ZENIC ONE R22 ZXONE 9700E Technical
+      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E_Technical
   - name: ZTE ZXR10
     topicUid: Connector_help_ZTE_ZXR10
     items:
