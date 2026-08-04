@@ -10680,6 +10680,9 @@
   items:
   - name: Touchstream StreamCAM
     topicUid: Connector_help_Touchstream_StreamCAM
+    items:
+    - name: Touchstream StreamCAM Technical
+      topicUid: Connector_help_Touchstream_StreamCAM_Technical
   - name: Touchstream VirtualNOC
     topicUid: Connector_help_Touchstream_VirtualNOC
 - name: TPC
