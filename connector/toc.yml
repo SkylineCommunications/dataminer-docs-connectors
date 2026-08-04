@@ -7305,6 +7305,7 @@
     topicUid: Connector_help_Newtec_MDM6000
   - name: Newtec MDM6100
     topicUid: Connector_help_Newtec_MDM6100
+    topicUid: Connector_help_Newtec_MDM6100_Technical
   - name: Newtec MNT Satlink Manager
     topicUid: Connector_help_Newtec_MNT_Satlink_Manager
   - name: Newtec NOP1760
