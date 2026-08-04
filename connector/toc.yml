@@ -4841,6 +4841,9 @@
     topicUid: Connector_help_Grass_Valley_Trinix_SNMP
   - name: Grass Valley UHD1200
     topicUid: Connector_help_Grass_Valley_UHD1200
+    items:
+    - name: Grass Valley UHD1200 Technical
+      topicUid: Connector_help_Grass_Valley_UHD1200_Technical
   - name: Grass Valley Vega
     topicUid: Connector_help_Grass_Valley_Vega
 - name: Gsertel
