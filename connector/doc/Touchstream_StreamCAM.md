@@ -6,10 +6,11 @@ uid: Connector_help_Touchstream_StreamCAM
 
 ## About
 
-The **Touchstream StreamCAM** connector provides HTTPS-based integration between DataMiner and the Touchstream StreamCAM cloud stream monitoring platform. It enables DataMiner to monitor the health and availability of live and VOD streams, provision the channels, products, stream types and streams that are being monitored, and schedule planned outages and events, all from within DataMiner dashboards and low-code apps.
+The **Touchstream StreamCAM** connector provides HTTPS-based integration between DataMiner and the Touchstream StreamCAM cloud stream monitoring platform. It enables DataMiner to monitor the health and availability of live and VOD streams, automatically provision monitoring for short-lived events, and schedule planned outages, all from within DataMiner dashboards and low-code apps.
 
 ## Key Features
 
+- **Dynamic stream provisioning**: Monitoring for an event is created automatically from a reusable **template**. When an event or channel is received, the connector expands the assigned template into the full set of streams to monitor and provisions them in StreamCAM, then deactivates and cleans them up when the event ends. Provisioning can be driven entirely from an external system, such as an automation script or a booking platform, so no manual configuration is needed per event.
 - **Cloud-based stream monitoring**: Retrieves live stream status, per-bitrate detail and manifest health from the Touchstream StreamCAM API over HTTPS.
 - **Availability and reliability metrics**: Exposes availability percentages, outage counts, outage duration, MTBF and MTTR for any configured time period.
 - **End-to-end provisioning**: Allows you to add, edit and delete channels, products, stream types and streams directly from DataMiner, without switching to the StreamCAM web interface.
@@ -35,6 +36,14 @@ The **Touchstream StreamCAM** connector provides HTTPS-based integration between
 **Benefit**: SLA and availability reporting is automated and always current, and the same data can feed DataMiner dashboards and reports.
 
 ### Use Case 3
+
+**Challenge**: Every short-lived event needed its streams configured for monitoring by hand before the event and torn down afterwards, which did not scale and left orphaned streams behind.
+
+**Solution**: Define a template once per event type, then have the booking or scheduling system hand the connector an event with its assigned template. The connector creates the streams, tracks them for the duration of the event, and deactivates and removes them automatically when it ends.
+
+**Benefit**: Event monitoring is provisioned in seconds with no manual setup, coverage is consistent across events of the same type, and stale streams do not accumulate.
+
+### Use Case 4
 
 **Challenge**: Planned maintenance on a stream generated alarm noise, and provisioning changes required work in a separate portal.
 
