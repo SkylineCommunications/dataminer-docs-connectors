@@ -8649,6 +8649,7 @@
   items:
   - name: ScheduAll Generic Interop Manager
     topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
