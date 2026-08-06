@@ -53,7 +53,7 @@ The **User Terminals** page provides comprehensive details about each user termi
 
 Relational data is also available, including associations with the distribution partner and site connectivity. Location information such as geographic coordinates is also included.
 
-User Terminal components (e.g. "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadata information is displayed in the **User Terminal Components** table.
+User terminal components (e.g., "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadata information is displayed in the **User Terminal Components** table.
 
 ### Products
 
@@ -73,7 +73,7 @@ The **Sites** page retrieves a list of sites that can be associated with product
 
 The **Performance Monitoring** page provides insights from two key tables: **User Terminal Performance** and **Products Performance**.
 
-- The **User Terminal Performance** table retrieves metrics such as Link Availability, Signal Quality, Resource State, and Traffic. These metrics are subject to varying delays depending on the report definitions in the API documentations.
+- The **User Terminal Performance** table retrieves metrics such as Link Availability, Signal Quality, Resource State, Traffic, and Link Metrics. These metrics are subject to varying delays depending on the report definitions in the API documentations.
 
 - The **Products Performance** table focuses on throughput metrics, also retrieved with a delay.
 
@@ -83,7 +83,7 @@ All performance parameters support trending, enabling continuous tracking and hi
 
 The **Usage Consumption** page provides a near real-time snapshot of data usage for site connectivity products. It includes details such as monthly entitlement, remaining allowance, consumed overage blocks, and current balance. The report reflects cumulative usage starting from the bill cycle reference date — typically the first of the month — offering a progressively increasing usage view throughout the billing period.
 
-Each usage record is linked to a **Product ID**, which allows further association with a user terminal via the terminal's **IMEI**, as defined in the **Products** table.
+Each usage record is linked to a **Product ID**, which allows further association with a user terminal via the terminal's **IMEI**, as defined in the **Products** table. Usage consumption reports can also be linked to a shared allowance (**sub-pool**).
 
 ### Polling Settings
 

@@ -4,13 +4,13 @@ uid: Connector_help_Telenet_Topology_Database
 
 # Telenet Topology Database
 
-This connector creates a MySQL database table containing the provisioning data, based on the provisioning files of SKIPI.
-
 ## About
+
+This connector creates a MySQL database table containing the provisioning data, based on the provisioning files of SKIPI.
 
 The table created by this connector contains address and network information on the different NEs. The connector is used by the Telenet BO and Telenet SAM system.
 
-Telenet provides these files via shared folders on the SKIPI Platform (different files per front-end CPE). To configure these folders, go to the General page of the "Telenet Topology Table" element. The processing of the files is executed timer-based every hour and can also be triggered manually by means of the "Execute Now" button.
+Telenet provides these files via shared folders on the SKIPI Platform (different files per frontend CPE). To configure these folders, go to the General page of the "Telenet Topology Table" element. The processing of the files is executed timer-based every hour and can also be triggered manually by means of the "Execute Now" button.
 
 ## Installation and configuration
 

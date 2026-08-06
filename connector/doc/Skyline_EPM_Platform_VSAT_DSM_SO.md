@@ -4,27 +4,9 @@ uid: Connector_help_Skyline_EPM_Platform_VSAT_DSM_SO
 
 # Skyline EPM Platform VSAT DSM SO
 
-This connector is used to gather information **via inter-element communication** that will be exported to a location used by the **Generic Sun Outage** connector. The information gathered consists of key parameters used during the calculation of sun outages. This connector is purely a system connector with this sole responsibility.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware            |
-|-----------|-------------------------------|
-| 1.0.0.x   | Not available (system connector) |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector is used to gather information **via inter-element communication** that will be exported to a location used by the **Generic Sun Outage** connector. The information gathered consists of key parameters used during the calculation of sun outages. This connector is purely a system connector with this sole responsibility.
 
 ## Configuration
 
@@ -63,8 +45,8 @@ The following functionalities are available within this section:
 
 - **Update Subscribers**: Allows you to control the update of the subscribers table from the EPM VSAT Subscription Manager.
 - **Subscribers Timer**: Allows you to control how **frequently** the system will get updates from the EPM VSAT Subscription Manager.
-- **FE DMA ID**: DataMiner Agent ID of the front-end DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed.
-- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but it will not be a local path to the hosting Agent but to the front-end Agent.
+- **FE DMA ID**: DataMiner Agent ID of the frontend DMA where the files will be located and where the EPM VSAT Subscription Manager script needs to be executed.
+- **Subscriptions Folder Path**: The path where the files for the subscriptions tables will be stored. Note that this folder path needs to be written like a local path, but it will not be a local path to the hosting Agent but to the frontend Agent.
 
 ### ES Subscribers
 

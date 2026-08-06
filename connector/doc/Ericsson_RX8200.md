@@ -194,7 +194,7 @@ This page allows you to set the timer intervals. It is only available in the **3
 
 ### Web Interface Page
 
-This page contains a link to the web page of the actual device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page contains a link to the webpage of the actual device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## DataMiner Connectivity Framework
 

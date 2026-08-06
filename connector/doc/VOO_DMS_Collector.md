@@ -121,7 +121,7 @@ On the **DataMiner Agent** in the cluster that you have chosen for the communica
 
 1. On the sixth and last page, click *Finish*.
 
-**Note:** By default, DataMiner will forward SNMP Traps to all enabled SNMP managers (using a separate thread per SNMP manager). If, in the list, the check box in front of an SNMP manager is selected, this means that the SNMP manager is enabled.
+**Note:** By default, DataMiner will forward SNMP Traps to all enabled SNMP managers (using a separate thread per SNMP manager). If, in the list, the checkbox in front of an SNMP manager is selected, this means that the SNMP manager is enabled.
 
 ### Configuring the Windows Firewall
 

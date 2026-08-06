@@ -4,23 +4,11 @@ uid: Connector_help_Generic_sFlow_Agent
 
 # Generic sFlow Agent
 
-The purpose of this connector is to analyze the information received via **sFlow** packets to give network operators a better understanding of the flows of **data crossing the network**.
-
 ## About
 
+The purpose of this connector is to analyze the information received via **sFlow** packets to give network operators a better understanding of the flows of **data crossing the network**.
+
 **Every minute**, the connector reads the files from the **Collector connector**. It then processes these packets and writes the information to a table.
-
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|------------------|-----------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version | No                  | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
 
 ## Installation and configuration
 

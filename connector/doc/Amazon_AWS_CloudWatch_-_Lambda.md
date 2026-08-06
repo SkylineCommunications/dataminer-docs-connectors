@@ -4,7 +4,7 @@ uid: Connector_help_Amazon_AWS_CloudWatch_-_Lambda
 
 # Amazon AWS CloudWatch - Lambda
 
-CloudWatch can be used to monitor AWS Lambda. Lambda can be used to run code (virtually any type of application or back-end service) without provisioning or managing servers, paying only for the compute time that is consumed.
+CloudWatch can be used to monitor AWS Lambda. Lambda can be used to run code (virtually any type of application or backend service) without provisioning or managing servers, paying only for the compute time that is consumed.
 
 ## About
 
@@ -13,12 +13,6 @@ CloudWatch can be used to monitor AWS Lambda. Lambda can be used to run code (vi
 | Range     | Supported Firmware     |
 |-----------|------------------------|
 | 1.0.0.x   | 20100801               |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 

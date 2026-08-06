@@ -2,130 +2,54 @@
 uid: Connector_help_Digital_Alert_Systems_DASDEC-III
 ---
 
-
 # Digital Alert Systems DASDEC-III
-
-The purpose of this connector is to receive alerts from the DASDEC-III. It will act as a server using the smart-serial protocol. It can log received messages to an Elasticsearch database. To forward alerts, SCP via public-private key authentication must be used.
 
 ## About
 
-### Version Info
+The Digital Alert Systems DASDEC-III is a professional Emergency Alert System (EAS) encoder/decoder used by FCC-licensed TV and radio broadcasters to receive, decode, and forward mandatory and voluntary emergency alerts, including Required Monthly Tests (RMT), Required Weekly Tests (RWT), Amber Alerts, and severe weather warnings. The DASDEC-III connector integrates the device into DataMiner over EAS-NET (TCP), SSH/SCP, HTTP, and SNMP, giving operators a unified place to review incoming alerts, enforce FCC compliance deadlines, and maintain a complete, searchable audit trail — without logging into the DASDEC device directly.
 
-| Range              | Key Features                | Based on | System Impact                          |
-|--------------------|-----------------------------|----------|----------------------------------------|
-| 1.0.0.x            | Initial version             | -        | -                                      |
-| 1.0.1.x [SLC Main] | Added HTTP/SNMP connections | 1.0.0.2  | Element configuration must be adapted. |
+## Key Features
 
-### Product Info
+- **Alert triage and operator decision control**: Presents incoming EAS alerts in DataMiner categorized as mandatory or voluntary, and lets operators approve, hold, deny, or ignore each alert from the DataMiner interface, eliminating the need to interact with the DASDEC device's web interface.
+- **Automated compliance safeguards**: Starts a countdown timer when a mandatory alert such as an RMT arrives and automatically forwards the alert to the DASDEC-III before the FCC deadline expires, ensuring compliance even when no operator is available to act.
+- **Compliance deadline tracking**: Exposes RMT and RWT countdown parameters that feed the DataMiner Alarm Console with escalating severity alarms as deadlines approach, replacing manual checks and email-based reminders with automated alarm escalation.
+- **Complete EAS audit trail**: Logs every alert event and operator action — with the DataMiner username, timestamp, and outcome — to the indexing database or a local file path, producing the searchable record that FCC audits require.
+- **Connection health monitoring**: Raises a DataMiner alarm when no EAS-NET message is received within a configurable time window, alerting operators to potential communication issues with the DASDEC-III before a missed alert creates a compliance risk.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 5.2.2                  |
-| 1.0.1.x   | 5.2.2                  |
+## Use Cases
 
-### System Info
+### Preventing EAS Alerts from Interrupting Paid Programming
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: Broadcasters using the DASDEC-III for voluntary alert forwarding face unpredictable on-air interruptions. Non-critical EAS alerts — such as coastal flood advisories or winter storm watches — can go to air automatically over paid advertising spots. When that happens, the station typically owes a make-good, returning the revenue from that spot. Mandatory alert types, by contrast, carry strict FCC time windows that cannot be missed.
 
-## Configuration
+**Solution**: The connector receives every incoming EAS-NET alert and holds voluntary alerts in a pending queue surfaced in the DataMiner Alarm Console, where operators can approve or deny each one before it reaches air. Mandatory alerts, such as RMT messages, receive a built-in countdown and are automatically forwarded by the DataMiner element if the operator has not acted before the FCC deadline. The DASDEC-III can be configured to bypass the DataMiner queue entirely for specific alert types — tornado warnings and Emergency Action Notifications, for example — so those forward to air immediately regardless of DataMiner state.
 
-### Connections
+**Benefit**: Operators control the timing of voluntary alerts to protect high-value programming and advertising spots. Mandatory alerts always meet their FCC deadlines, with or without operator intervention.
 
-#### Serial Main Connection
+### Replacing Manual FCC Compliance Logging
 
-This connector uses a serial connection and requires the following input during element creation:
+**Challenge**: FCC-licensed broadcasters must maintain records of all received and forwarded EAS alerts — including alert type, timestamp, and how each alert was handled — to demonstrate compliance during regulatory audits. At many stations, this record is built manually from DASDEC-generated email notifications copied into spreadsheets, a process that is inconsistent, time-consuming, and difficult to maintain across multiple stations or call signs.
 
-SERIAL CONNECTION:
+**Solution**: The connector logs every alert event and operator action automatically as alerts move through the DataMiner element. Each log entry captures the DataMiner username of the operator who acted, the timestamp, and the full alert payload. System-initiated actions — such as auto-forwarding an alert before its deadline — are logged under a separate system identity so they are distinguishable from human decisions. Logs can be stored on the DataMiner Agent, written to a network file path, or offloaded to Elasticsearch/OpenSearch with configurable retention. DataMiner's scheduling and reporting tools can generate PDF summaries on a recurring schedule and distribute them by email.
 
-- Interface connection:
+**Benefit**: Stations replace email tracking and manual spreadsheet entries with an automatic, structured log that grows with every alert event. Responding to an FCC audit request becomes a database query rather than a manual document assembly task.
 
-  - **IP address/host**: The connector will act as a server. Set this field to "*Any*".
-  - **IP port**: By default *20002*. A different port can be specified.
+### Automating Required Weekly Test Management
 
-#### SNMP Connection
+**Challenge**: FCC regulations require broadcasters to conduct a Required Weekly Test (RWT) every seven days — unless a qualifying EAS alert has already aired within that period, in which case the test can be skipped. Tracking this window manually across multiple DASDEC units and station call signs creates scheduling complexity and leaves stations exposed to missed tests or unnecessary ones run in error.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+**Solution**: The connector maintains two countdown parameters: time since the last RWT was run, and time since any qualifying alert aired. Operators configure which countdown drives automatic test execution. When the selected countdown reaches zero, the DataMiner element sends an RWT command directly to the DASDEC-III via SSH/SCP without requiring any operator action. Stations that configure the "last alert aired" countdown source benefit from intelligent test suppression: the connector skips the weekly test automatically when FCC rules permit, because a recent alert already satisfies the requirement.
 
-SNMP CONNECTION:
+**Benefit**: Weekly test compliance runs without manual scheduling or operator action. Stations that see frequent alert activity avoid running redundant tests, reducing unnecessary interruptions to programming.
 
-- **IP address/host**: The polling IP of the device.
-- **Device address**: This is not required.
+## Technical Reference
 
-SNMP Settings:
+### Prerequisites
 
-- **Port number**: *161*
-- **Get community string**: *public*
-- **Set community string**: *private*
+- **EAS-NET connectivity**: Network access between the DataMiner Agent and the DASDEC-III on the EAS-NET TCP port is required for alert reception in DataMiner.
+- **SSH/SCP connectivity**: The DataMiner Agent must reach the DASDEC-III over SSH to send alert forwarding commands. An SSH key pair must be generated within the connector and installed on the DASDEC-III during initial setup.
+- **DASDEC software**: The DASDEC-III running v5 software with EAS-NET and Plus Package licenses is required.
+- **SNMP aux pass package (optional)**: Basic device health monitoring via SNMP requires the aux pass package to be installed on the DASDEC unit.
 
-#### HTTP Connection
-
-This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: *80*
-- **Bus address**: *ByPassProxy*
-
-### Initialization
-
-To perform the public-private key initialization, follow these steps:
-
-1. On the **General** page, fill in the "Host" as the host IP of the DASDEC.
-
-1. On the **General** page, click the **Generate Keys** button.
-
-   This will generate a private key file in `C:\Skyline DataMiner\Documents\DASDEC\privatekey` as well as a public key in the **Public Key** parameter.
-
-1. In the DASDEC web GUI, navigate to **Setup** > **Security**, and change the **SSH Key Type** in the dropdown list to RSA.
-
-1. Copy the public key from the parameter and paste it into the box next to the **Add Public Key** button.
-
-1. Click the **Add Public Key** button.
-
-1. Click **Accept SSH Authorization Change**.
-
-You can now approve mandatory/voluntary open alerts. If an alert is not forwarded, check the element logging for errors.
-
-### Web Interface
-
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to Use
-
-### General
-
-On this page, you can generate the **SSH public/private key pair** and configure the **Elastic Storage Period**.
-
-This page also contains the following page buttons:
-
-- **Driver Configuration**: Here you can view and clear the error counter.
-- **Display Key Configuration**: Here you can configure the display key across all message-related tables.
-- **Authentication**: Here you can configure the authentication for the HTTP connection.
-
-### Alerts
-
-This page contains the **Mandatory Open Alerts** and the **Voluntary Open Alerts** tables.
-
-Each alert contains a countdown. Once the countdown reaches zero, different actions can occur depending on the type of alert:
-
-- EAN, NPT, RMT: The message will be forwarded to DASDEC/sent to the **Alert Logging** table
-- RWT: The message will be forwarded to DASDEC based on the last message countdown and then moved to the **Alert Logging** table
-- All other messages: The message will not be forwarded to DASDEC, and it will be moved to the **Alert Logging** table with the status "expired".
-
-Note that the operator can manually forward a message at any time using the **Approve** button.
-
-Via the **Alert Logging** page button, you can access the Alert Logging table as well as various configuration parameters.
-
-### Debug
-
-This page contains the last received message.
-
-You can also trigger an RWT here by filling in all required Net parameters. You can also trigger an Automatic RWT, which will automatically send an RWT every 7 days.
-
-### Web Interface
-
-This page displays the web GUI.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Digital_Alert_Systems_DASDEC-III_Technical).

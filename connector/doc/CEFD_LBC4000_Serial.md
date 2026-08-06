@@ -4,9 +4,9 @@ uid: Connector_help_CEFD_LBC4000_Serial
 
 # CEFD LBC-4000 Serial
 
-Comtech EF Data's LBC-4000 L-band up-/down-converter system is designed to interface legacy 70 MHz or 140 MHz equipment with tri-band or quadband block converters.
-
 ## About
+
+Comtech EF Data's LBC-4000 L-band up-/down-converter system is designed to interface legacy 70 MHz or 140 MHz equipment with tri-band or quadband block converters.
 
 With this connector, it is possible to monitor and configure **CEFD MBT-5000** devices with a **serial** connection.
 
@@ -18,13 +18,6 @@ The different parameters of the device are displayed on multiple pages, similar 
 |------------------|----------------------|---------------------|-------------------------|
 | 1.0.0.x          | Initial version      | Yes                 | Yes                     |
 | 2.0.0.x          | Protocol name change | Yes                 | Yes                     |
-
-### Product Info
-
-| Range | Supported Firmware Version |
-|------------------|-----------------------------|
-| 1.0.0.x          | N/A                         |
-| 2.2.0.x          | N/A                         |
 
 ## Installation and configuration
 

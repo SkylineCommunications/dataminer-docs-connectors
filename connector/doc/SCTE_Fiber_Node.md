@@ -108,4 +108,4 @@ This page displays the **Power Supply Output Table** and **Power Supply Temperat
 
 ### Web Interface
 
-This page shows the web page of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+This page shows the webpage of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.

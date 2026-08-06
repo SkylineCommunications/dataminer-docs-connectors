@@ -6,17 +6,17 @@ uid: Connector_help_Skyline_EPM_Platform_GPON
 
 ## About
 
-The Skyline EPM Platform GPON connector is the back-end component of the Skyline EPM Solution for GPON infrastructures. It aggregates KPIs from multiple OLT platform elements, consolidating data for higher-level visualization and analysis in the Skyline EPM Platform front end.
+The Skyline EPM Platform GPON connector is the backend component of the Skyline EPM Solution for GPON infrastructures. It aggregates KPIs from multiple OLT platform elements, consolidating data for higher-level visualization and analysis in the Skyline EPM Platform frontend.
 
 It supports integration with GPON OLT devices from multiple vendors, including ZTE, Huawei, and Nokia, and organizes the data into visual topologies for network navigation. This connector is designed to handle large volumes of GPON performance and topology data, making it suitable for large-scale deployments.
 
 ## Key Features
 
-- **Back-end KPI aggregation**: Collects and processes KPIs from GPON OLT platform elements for central aggregation.
+- **Backend KPI aggregation**: Collects and processes KPIs from GPON OLT platform elements for central aggregation.
 - **Multi-vendor OLT support**: Compatible with ZTE ZXA10 C600, Huawei 5600-5800, and Nokia ISAM 7300 FX GPON platforms.
 - **Visual GPON topologies**: Displays GPON service hierarchy from network level down to ONTs, including Split Route, Split Distribution, and Split FAT.
-- **Topology provisioning**: Handles GPON topology and provisioning file exchange with the Skyline EPM Platform front end.
-- **Automated workflow**: Supports automated data flow between OLTs, the GPON back end, and the EPM front end.
+- **Topology provisioning**: Handles GPON topology and provisioning file exchange with the Skyline EPM Platform frontend.
+- **Automated workflow**: Supports automated data flow between OLTs, the GPON backend, and the EPM frontend.
 
 ## Use Cases
 
@@ -24,7 +24,7 @@ It supports integration with GPON OLT devices from multiple vendors, including Z
 
 **Challenge**: Aggregating performance and topology data from multiple GPON OLT vendors.
 
-**Solution**: Deploy the Skyline EPM Platform GPON connector as the GPON back-end component to collect and standardize KPI data.
+**Solution**: Deploy the Skyline EPM Platform GPON connector as the GPON backend component to collect and standardize KPI data.
 
 **Benefit**: Provides a unified, vendor-agnostic performance view for GPON networks.
 
@@ -48,7 +48,7 @@ It supports integration with GPON OLT devices from multiple vendors, including Z
 
 ### Prerequisites
 
-- **Integration with Skyline EPM Platform front end** for data aggregation and visualization.
+- **Integration with Skyline EPM Platform frontend** for data aggregation and visualization.
 - **Automation scripts** `EpmBeToOlt` and `EpmBeToOltPassives` must be deployed.
 - **Correctly configured file import/export paths** for topology and provisioning data.
 - Access credentials for remote directories if using remote import/export.

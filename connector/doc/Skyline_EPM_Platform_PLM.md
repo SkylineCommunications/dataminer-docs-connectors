@@ -4,9 +4,9 @@ uid: Connector_help_Skyline_EPM_Platform_PLM
 
 # Skyline EPM Platform PLM
 
-The EPM system encompasses various resources such as Circuit, NMS, Hub Network, Line Card, Chassis, and more. These resources require systematic scheduling of maintenance activities to ensure their optimal performance. To streamline this process, the Skyline EPM Platform PLM connector is used.
-
 ## About
+
+The EPM system encompasses various resources such as Circuit, NMS, Hub Network, Line Card, Chassis, and more. These resources require systematic scheduling of maintenance activities to ensure their optimal performance. To streamline this process, the Skyline EPM Platform PLM connector is used.
 
 The EPM PLM Solution facilitates seamless interaction with planned maintenance (PLM) activities associated with platform resources. With the internal connector logic, both one-time and recurrent PLM activities can be efficiently scheduled.
 
@@ -17,18 +17,6 @@ With this solution, users can perform the following actions directly from the co
 - Delete PLM items
 
 The Skyline EPM Platform PLM connector provides a streamlined and intuitive approach to manage and coordinate PLM activities, ensuring the optimal performance and maintenance of the EPM system.
-
-### Version Info
-
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -113,7 +101,7 @@ The connector contains several configuration sections to customize its behavior:
 
 The EPM PLM Solution contains two configuration tables that are necessary to validate if the entered resource is a valid EPM entity during the creation operation.
 
-- **Resource Subscribers Table**: Allows the EPM PLM Solution to reference the EPM back-end elements.
+- **Resource Subscribers Table**: Allows the EPM PLM Solution to reference the EPM backend elements.
 
 - **Resource Types**: Delimits the supported EPM resources.
 

@@ -73,9 +73,9 @@ Most tables in the connector contain the following buttons:
 
 - **Save**: After you have made changes to a table, it is important that you click the "Save" button. This process is linked to the inner workings of the device:
 
-  - Every change you make in the table will be sent to the device. The device will save this change in its front-end SNMP table.
-  - After the changes are done, the device requires a signal, telling it to save and deploy all front-end changes.
-  - As long as the save button has not been clicked, the changes will only reside in the front-end table and they will not be deployed.
+  - Every change you make in the table will be sent to the device. The device will save this change in its frontend SNMP table.
+  - After the changes are done, the device requires a signal, telling it to save and deploy all frontend changes.
+  - As long as the save button has not been clicked, the changes will only reside in the frontend table and they will not be deployed.
 
 - **Add**: This will duplicate the selected row.
 

@@ -4,27 +4,20 @@ uid: Connector_help_Juniper_Networks_Manager_CIN_Platform
 
 # Juniper Networks Manager CIN Platform
 
-This is an SNMP-based connector used to monitor and configure the Juniper Networks Manager. It allows you to monitor and change the device settings. The connector also uses an SSH connection to change the interface state of some ports. The data collected is centralized within the connector and used by DataMiner EPM for aggregation actions.
-
 ## About
 
-### Version Info
+This is an SNMP-based connector used to monitor and configure the Juniper Networks Manager. It allows you to monitor and change the device settings. The connector also uses an SSH connection to change the interface state of some ports. The data collected is centralized within the connector and used by DataMiner EPM for aggregation actions.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+> [!IMPORTANT]
+> This variant of the Juniper Networks Manager is to be used with the [EPM D-DOCSIS solution](https://aka.dataminer.services/d-docsis-architecture).
+>
+> If you would like the standalone variant, use the [Juniper Networks Manager](https://catalog.dataminer.services/details/7cf35a6b-31e8-4c11-8991-591596a4d81b) connector instead.
 
 ### Product Info
 
 | Range     | Supported Firmware                           |
 |-----------|----------------------------------------------|
 | 1.0.0.x   | JUNOS Base OS Software Suite \[18.3R2-S3.1\] |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -37,12 +30,12 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination. (default: *161*)
+- **IP port**: The IP port of the destination. (default: *161*)
 
 SNMP Settings:
 
 - **Get community string**: The community string used when reading values from the device (default: *public*).
-  - **Set community string**: The community string used when setting values on the device (default: *private*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 #### Serial SSH Connection
 
@@ -59,10 +52,6 @@ SERIAL CONNECTION:
 
 Once you have created the element, on the Configuration page, enter the CLI/Serial credentials so the CLI polling can work properly. Once this is done, the element will start regular polling.
 
-### Redundancy
-
-There is no redundancy defined.
-
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
@@ -75,14 +64,14 @@ The protocol has several configuration options that will change its behavior:
 
 - **Interface Settings**: With these settings, you can **enable/disable polling** **from an interface (SNMP, CLI)** and also configure the **frequency** of the polling. This section also contains four buttons:
 
-- **Update All:** Polls from all interfaces.
+  - **Update All:** Polls from all interfaces.
   - **Update SNMP**: Polls from SNMP only.
   - **Update CLI**: Polls from CLI only.
   - **Update Virtual**: Polls Virtual Custom table data.
 
 - **Entity Export/Import Settings:** These settings handle the **export of** **configuration files** and **import of provisioning files**. You can:
 
-- **Enable/disable** the export and import feature with the **Entity Export** and **Entity Import** toggle button, respectively.
+  - **Enable/disable** the export and import feature with the **Entity Export** and **Entity Import** toggle button, respectively.
   - Specify the **path** where files will be exported and imported, with the **Entity Export Directory** and **Entity Import Directory** parameters, respectively.
   - Switch between exporting/importing to a **local or remote location** by using the toggle button **Entity Export Directory Type** or **Entity Import Directory Type**, respectively.
     Note that for the remote file handling feature to work, you must enter the credentials for the system in the **System Credentials** section and enter the path to the remote directory in the **Entity Export/Import Directory** parameter. The **path** **must be shared/accessible**.

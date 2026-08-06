@@ -55,6 +55,6 @@ The web interface is only accessible when the client machine has network access 
 
 The **General** page displays the system information and the device status information.
 
-The **Frontend** page displays the front-end information.
+The **Frontend** page displays the frontend information.
 
 On the **Polling** page, you can define the polling groups frequency.

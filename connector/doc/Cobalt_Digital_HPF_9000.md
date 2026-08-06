@@ -4,45 +4,56 @@ uid: Connector_help_Cobalt_Digital_HPF_9000
 
 # Cobalt Digital HPF 9000
 
-The Cobalt Digital HPF 9000 is an SNMP connector for a modular frame. This frame consists of twenty slots for compatible cards. The function of the connector is to detect cards inserted into the various slots and display the information fetched via SNMP. The information can be exported to a DVE table if requested by the user, displaying detailed information of the card inserted into the specific slot.
-
 ## About
 
-### Version Info
+This connector uses SNMP communication to monitor the Cobalt Digital HPF 9000, a modular openGear frame controller. It monitors the frame chassis (including power supplies, network configuration, and overall frame status) and detects the openGear cards installed across the frame's slots. For each active card, a Dynamic Virtual Element (DVE) can be generated. This creates one dedicated child element per physical card, showing that card's detailed data alongside a single unified view of the whole frame.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+## Key Features
 
-### Product Info
+- **Frame chassis monitoring**:
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   |                        |
+  - Real-time frame status, power supply, and network configuration monitoring.
+  - Slot inventory overview showing which openGear card occupies each frame slot.
 
-### System Info
+- **Per-card monitoring via DVEs**:
 
-| Range | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|--|--|--|--|--|
-| 1.0.0.x | No | Yes |  | [Cobalt Digital HPF 9000 - Cobalt Digital 9001](xref:Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9001) |
+  - Automatic detection of installed cards from the slot inventory.
+  - One DVE child element per active card, exposing that card's detailed parameters and tables.
+  - On-demand DVE creation and deletion per slot, with a clear-all control.
+  - Supported card families: **9001**, **9121**, **9410DA** (product information, status, routing, SFP, and crosspoint routing), and **9220 (MVN-MX260)**.
 
-## Configuration
+- **Adaptive polling and display**:
 
-### Connections
+  - A Card Display page with an auto-detect setting that shows and polls only the card types actually present in the frame.
+  - Per-card show/hide and polling controls, so that absent or irrelevant cards add no SNMP load and never clutter the UI.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+## Use Cases
 
-SNMP CONNECTION:
+### Centralized openGear Frame Monitoring
 
-- **IP address/host**: The polling IP of the device.
+**Challenge**: An openGear frame hosts many independent processing cards, each with its own data, but operators need a single, consistent view of the whole chassis and its health.
 
-SNMP Settings:
+**Solution**: The connector polls the frame controller for power, network, and frame status, and builds a slot inventory that identifies every installed card in one element.
 
-- **Port number**: 183
-- **Get community string**: The community string used when reading values from the device. The default value is *public*.
-- **Set community string**: The community string used when setting values on the device. The default value is *private*.
+**Benefit**: Full information on frame health and slot occupancy is available from a single pane of glass, making it easy to spot power or connectivity issues affecting the entire chassis.
 
-## How to use
+### Card-Level Visibility Without Clutter
 
-The element created with this SNMP connector consists of the data pulled from the individual cards inserted into the slots on the frame. A dynamic virtual element can be created by the SNMP connector via a toggle button. You can toggle DVE creation for a specific card in a slot, which exports the information virtually. In order to delete the virtual elements, there are buttons to delete each individual DVE and a clear all button.
+**Challenge**: Operators responsible for a specific processing card need detailed, card-focused monitoring without wading through data for every other slot in the frame.
 
+**Solution**: Each active card is exported as its own DVE child element keyed to its slot, presenting that card's parameters and tables on a clean, dedicated element.
+
+**Benefit**: Teams can monitor alarms and build workflows for individual cards independently, while the parent element retains the full frame overview.
+
+### Efficient Monitoring of Mixed-Card Frames
+
+**Challenge**: Frames are rarely fully populated or uniform, and polling data for card types that are not present wastes bandwidth and adds noise.
+
+**Solution**: The auto-detect feature derives the installed card types from the slot scan and conditionally enables the matching card pages and polling groups. Absent card types are hidden and skipped entirely.
+
+**Benefit**: Unnecessary SNMP traffic is prevented, and the interface remains focused on the cards that actually exist in each frame, with no manual configuration required.
+
+## Technical Reference
+
+> [!NOTE]
+> For setup and configuration instructions, refer to the [technical documentation](xref:Connector_help_Cobalt_Digital_HPF_9000_Technical).

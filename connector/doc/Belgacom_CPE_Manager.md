@@ -10,8 +10,8 @@ The **Belgacom CPE Manager** is part of a CPE setup, where it works together wit
 
 Different elements are needed for this setup:
 
-- One front-end element, responsible for provisioning and aggregating data at the top levels. This data comes from the back-end elements.
-- Multiple back-end elements, each responsible for some rings of a POP. These elements will perform the aggregation of the data coming from the collector elements.
+- One frontend element, responsible for provisioning and aggregating data at the top levels. This data comes from the backend elements.
+- Multiple backend elements, each responsible for some rings of a POP. These elements will perform the aggregation of the data coming from the collector elements.
 
 All elements provide access to the CPE UI. It does not matter which element is opened, they all show the same data.
 
@@ -37,21 +37,21 @@ The CPE Manager's Data Display pages are not intended to be opened. Instead, the
 
 This page contains 3 sections:
 
-- Front-end DMA credentials that can be used to access the share files.
+- Frontend DMA credentials that can be used to access the share files.
 - The location where the local files can be stored.
 - Provisioning ability and feedback if there were any errors present.
 
 ### Configuration of the FE1 parameters
 
-On this page, you can fill in the credentials for the **LT Port Config**, **Eth Lag Alifc FTP**, **Procodac** and **SDH Ring** source location settings. These sources are used by the front-end element during provisioning.
+On this page, you can fill in the credentials for the **LT Port Config**, **Eth Lag Alifc FTP**, **Procodac** and **SDH Ring** source location settings. These sources are used by the frontend element during provisioning.
 
 ### Configuration of the FE2 parameters
 
-On this page, you can fill in the credentials for the **Physical Device** and **Eth Ring FTP** source location settings. These sources are used by the front-end element during provisioning.
+On this page, you can fill in the credentials for the **Physical Device** and **Eth Ring FTP** source location settings. These sources are used by the frontend element during provisioning.
 
 ### Configuration of the FE3 parameters
 
-On this page, you can fill in the credentials for the **AI Oracle** and **STB Oracle** source location settings. These sources are used by the front-end element during provisioning.
+On this page, you can fill in the credentials for the **AI Oracle** and **STB Oracle** source location settings. These sources are used by the frontend element during provisioning.
 
 ### Configuration of the POP parameters
 
@@ -67,11 +67,11 @@ The **Belgacom RTCP Collector** elements will offload their data, which can be u
 
 ### Configuration of the FE Ring parameters
 
-This page will display if the front-end element found new rings during provisioning. If a new ring was found, the page will suggest to which back-end element it can be assigned. This suggestion can be changed or removed. If the suggestion is approved, you can click the **Manual Fill Rings** button. This is not done automatically, because it could be that a back-end DMA is down during provisioning, so that the front-end element would then automatically assign these rings to other back-end DMAs, which would lead to duplicate data when the first back-end DMA is activated again.
+This page will display if the frontend element found new rings during provisioning. If a new ring was found, the page will suggest to which backend element it can be assigned. This suggestion can be changed or removed. If the suggestion is approved, you can click the **Manual Fill Rings** button. This is not done automatically, because it could be that a backend DMA is down during provisioning, so that the frontend element would then automatically assign these rings to other backend DMAs, which would lead to duplicate data when the first backend DMA is activated again.
 
 ### Configuration of the BE Ring parameters
 
-On this page, you can configure for which POP a back-end element is responsible, by filling in **Backend Responsible for POP**. The front-end element will then assign rings that belong to this POP to this element during provisioning.
+On this page, you can configure for which POP a backend element is responsible, by filling in **Backend Responsible for POP**. The frontend element will then assign rings that belong to this POP to this element during provisioning.
 
 ## Usage
 

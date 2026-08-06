@@ -4,21 +4,9 @@ uid: Connector_help_Oi_Brazil_DSLAM_Record_Handler
 
 # Oi Brazil DSLAM Record Handler
 
-This connector is intended to add, update or delete DSLAMs, to update front-end and back-end collectors after the operation, and to verify if the appropriate changes were successfully completed.
-
 ## About
 
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+This connector is intended to add, update or delete DSLAMs, to update frontend and backend collectors after the operation, and to verify if the appropriate changes were successfully completed.
 
 ## Configuration
 

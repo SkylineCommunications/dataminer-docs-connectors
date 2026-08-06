@@ -14,7 +14,7 @@ This is an **SNMP** connector that is used to display the status of the differen
 
 | Range | Description | DCF Integration | Cassandra Compliant |
 |--|--|--|--|
-| 1.1.0.x | Release version. Added embedded web page. Enabled backup on all parameters. | No | Yes |
+| 1.1.0.x | Release version. Added embedded webpage. Enabled backup on all parameters. | No | Yes |
 | 1.1.1.x | Dynamic table used for the audio params. New MIBs implemented. **DCF** form version 1.1.1.20 implemented. | Yes | Yes |
 
 ## Configuration

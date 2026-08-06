@@ -58,7 +58,7 @@ This first parameter, **Last Sync Time**, contains the date when the alarms were
 Next, there are two parameters that can be used to configure the export settings:
 
 - With **Export Files Folder**, you can select the folder where the export files will be stored. The default value is: *C:\Skyline DataMiner\Documents\Teracom Service Performance Export Manager*.
-- With **Export Period**, you can select the period of time when the exports are done. If you select a large period, the export files will be larger, but there will be fewer export files in total. If a shorter period is selected, the export files will be smaller, but there will be more of them. You can select a value between 1 and 48 hours (default value: 48 hours). You can also disable the export by clicking the **Disabled** check box for the **Export Period** parameter.
+- With **Export Period**, you can select the period of time when the exports are done. If you select a large period, the export files will be larger, but there will be fewer export files in total. If a shorter period is selected, the export files will be smaller, but there will be more of them. You can select a value between 1 and 48 hours (default value: 48 hours). You can also disable the export by clicking the **Disabled** checkbox for the **Export Period** parameter.
 
 If alarms are being processed, the parameters **Processing Task** and **Processing Alarms Percentage** indicate what is being processed and the actual status of the processing task. This operation can take some time (minutes) depending on the number of alarms present in the system.
 
