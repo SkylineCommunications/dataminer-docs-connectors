@@ -81,7 +81,7 @@ All performance parameters support trending, enabling continuous tracking and hi
 
 The **Usage Consumption** page provides a near real-time snapshot of data usage for site connectivity products. It includes details such as monthly entitlement, remaining allowance, consumed overage blocks, and current balance. The report reflects cumulative usage starting from the bill cycle reference date — typically the first of the month — offering a progressively increasing usage view throughout the billing period.
 
-Each usage record is linked to a **Product ID**, which allows further association with a user terminal via the terminal's **IMEI**, as defined in the **Products** table.
+Each usage record is linked to a **Product ID**, which allows further association with a user terminal via the terminal's **IMEI**, as defined in the **Products** table. Usage consumption reports can also be linked to a shared allowance (**sub-pool**).
 
 ### Polling Settings
 
