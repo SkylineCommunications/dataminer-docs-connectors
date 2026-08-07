@@ -14,7 +14,9 @@ By bridging the gap between alarm monitoring and ticket management, this connect
 
 - **Automated event detection and tracking**: The connector polls active alarms at configurable intervals and processes them into structured events. Each event captures essential metadata such as severity, source element, and associated services, giving your team immediate visibility into operational issues. Optionally, event-based ingestion can be enabled for near-real-time processing without waiting for the next polling cycle.
 
-- **Event-based alarm ingestion**: In addition to polling, the connector supports near-real-time alarm processing, enabling faster detection and handling of alarm changes as they occur. This helps reduce response delays and improves operational responsiveness without waiting for the next polling cycle.
+- **Event-based alarm ingestion**: In addition to polling, the connector supports near-real-time alarm processing via an Alarm Forwarder automation script and a DataMiner correlation rule. When an alarm matching a configured CMDB System is raised or updated, the correlation rule triggers the forwarder script, which pushes the alarm data directly into the connector for immediate processing. This reduces response delays and improves operational responsiveness. Polling continues to run in parallel as a safety net.
+
+- **Automated correlation rule management**: The connector automatically creates and maintains the SES Alarm Forwarder correlation rule in DataMiner. It builds the rule's alarm filter from the configured CMDB Systems table and keeps the filter in sync whenever CMDB Systems are added or removed. The handling DMA is resolved dynamically, so no manual rule configuration is required. The rule can be enabled or disabled directly from the connector's configuration page.
 
 - **Intelligent ticket management**: Events are automatically evaluated and escalated into tickets based on configurable rules. The connector handles the complete ticket lifecycle, including creation, status updates, and automatic resolution when underlying alarms clear.
 
@@ -34,10 +36,10 @@ By bridging the gap between alarm monitoring and ticket management, this connect
 
 ## Prerequisites
 
-- This connector requires **DataMiner 10.5.0** or higher.
+- This connector requires **DataMiner 10.6.0** or higher.
 - **DOM** is required for creating and managing DOM definitions and instances.
 - The DOM-based **Ticketing module** is required for ticket creation, updates, and resolution.
-- The **Alarm Forwarder** automation script is required when using event-based alarm ingestion.
+- When event-based alarm ingestion is used, the **SES Alarm Forwarder** automation script must be deployed on the DataMiner System. For the correlation rule, no manual setup is needed, as this is automatically created and managed by the connector.
 
 ## Technical Reference
 
