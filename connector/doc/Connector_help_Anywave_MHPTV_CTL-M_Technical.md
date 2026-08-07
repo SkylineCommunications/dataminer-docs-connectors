@@ -2,87 +2,44 @@
 uid: Connector_help_Anywave_MHPTV_CTL-M_Technical
 ---
 
-# Anywave MHPTV CTL-M Technical
+# Anywave MHPTV CTL-M
 
 ## About
 
-The **Anywave MHPTV CTL-M** connector monitors and manages Anywave MHPTV transmitters equipped with a CTL-M controller via SNMP. It provides real-time visibility into RF performance metrics, alarm states, and system configuration for transmitters with more than three post amplifiers.
-
-> [!NOTE]
-> Version info is maintained via `<VersionHistory>` tags in protocol.xml. See the connector's version history for range details.
+The Anywave MHPTV CTL-M connector enables monitoring and control of Anywave MHPTV transmitters equipped with a CTL-M controller. This connector is capable of retrieving and setting data using SNMP to communicate with the transmitter.
 
 ## Configuration
 
 ### Connections
 
-#### SNMP Connection — Main
+#### SNMP Connection
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-| Setting | Value |
-|--|--|
-| **IP address/host** | The polling IP of the device |
-| **IP port** | The IP port of the device (default: *161*) |
-| **Get community string** | The community string used for reading values (default: *public*) |
-| **Set community string** | The community string used for writing values (default: *private*) |
-| **Bus address** | Not required |
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP or URL of the destination.
+
+SNMP Settings:
+
+- **IP port**: The IP port of the destination.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Web Interface
 
-The web interface is accessible directly from DataMiner via the **Web Interface** page. The client machine must have network access to the device for the web interface to load.
+The web interface is only accessible when the client machine has network access to the product.
 
 ## How to Use
 
 ### General Page
 
-The General page displays system identity and network configuration.
-
-- **System Description**: Description string reported by the device.
-- **System Uptime**: Time elapsed since the last device restart.
-- **System Name**: Configured name of the device.
-- **Controller Version**: Firmware version of the CTL-M controller.
-- **Post Amplifier Version**: Firmware version of the post amplifier module.
-- **Network IP Address**: Current IP address of the device.
-- **Network Subnet Mask**: Subnet mask of the device network interface.
-- **Network Gateway**: Default gateway configured on the device.
+This page displays system identity information such as the System Name, System Description, and System Uptime, as well as network configuration (IP Address, Subnet Mask, Gateway) and firmware versions for the CTL-M controller and post amplifier modules.
 
 ### Transmitter Page
 
-The Transmitter page displays live RF performance metrics and the corresponding alarm state for each measurement.
-
-**Run Information:**
-
-- **Forward Power**: Output power measured at the transmitter forward port (mW).
-- **Reflective Power**: Reflected power at the transmitter output (mW).
-- **Voltage Standing Wave Ratio (VSWR)**: Impedance mismatch ratio between transmitter and antenna.
-- **Rejected 1–4 Power**: Power rejected by each of the up to four post amplifier stages (mW).
-- **Attenuator Current**: Current through the attenuator stage.
-
-**Alarm Status:**
-
-- **Forward Alarm**, **Reflective Alarm**, **VSWR Alarm**: Alarm state for the main RF metrics.
-- **Rejected 1–4 Power Alarm**: Per-amplifier alarm state.
-- **Input Power Alarm**: Alarm state for the input power level.
+This page provides a comprehensive overview of the transmitter's operational status and key parameters such as *Forward Power*, *Reflective Power*, and *VSWR*, as well as the alarm status of these parameters.
 
 ### System Configuration Page
 
-The System Configuration page provides read/write access to transmitter operating parameters and exciter settings.
-
-**System Configuration:**
-
-- **Automatic Gain Control Switch**: Enables or disables AGC on the transmitter.
-- **Post Amplifier Number**: Number of active post amplifier stages.
-- **AGC Forward Standard**: AGC reference power level (W).
-- **Transmit Switch**: Toggles the transmit output on or off.
-- **Control Status**: Current operational control state.
-- **Boot Set**: Triggers a device boot sequence.
-- **Repeat Boot Times**: Number of boot repetitions (1–3).
-- **Clear System Alarm**: Button that clears all active system alarms. A confirmation dialog is shown before the command is sent.
-
-**Exciter Configuration:**
-
-- **Exciter Type**: Type of exciter module installed.
-- **Exciter Mode**: Operating mode of the exciter.
-- **Exciter Used**: Selects the active exciter.
-- **Exciter Band**: Frequency band of the exciter.
-- **Exciter Frequency**: Carrier frequency of the exciter (MHz/GHz).
+On this page, you can manage the transmitter as well as the exciter. Configuration options include AGC settings, transmit switch, boot controls, and exciter type, mode, band, and frequency.
