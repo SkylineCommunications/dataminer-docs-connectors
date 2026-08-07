@@ -4,29 +4,11 @@ uid: Connector_help_Generic_Powershell
 
 # Generic Powershell
 
+## About
+
 The Generic Powershell connector allows you to send commands to your command line shell and monitor the responses.
 
 PowerShell is a task-based command line shell and scripting language built on .Net. PowerShell, which helps system administrators and power users to rapidly automate tasks that manage operating systems (Linux, MacOS, and Windows) and processes. PowerShell commands allow you to you manage computers from the command line.
-
-## About
-
-### Version Info
-
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
