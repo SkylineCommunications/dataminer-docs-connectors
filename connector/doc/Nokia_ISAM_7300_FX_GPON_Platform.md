@@ -9,8 +9,8 @@ The **Nokia ISAM 7300 FX GPON Platform** connector uses SNMP to collect and cent
 ## Key Features
 
 - **SNMP-based OLT monitoring**: Retrieves status and configuration data from Nokia ISAM 7300 FX devices.
-- **EPM topology integration**: Exchanges provisioning and topology files with Skyline EPM Solution and related connectors.
-- **Flexible data ingestion model**: Supports SNMP polling and file-import based ONT registration workflows (range 1.0.2.x).
+- **EPM topology integration**: Exchanges provisioning and topology files with the DataMiner EPM Solution and related connectors.
+- **Flexible data ingestion model**: Supports SNMP polling and file import based ONT registration workflows (range 1.0.2.x).
 - **Operational segmentation**: Provides split data views for routes, distributions, and FAT contexts (range 1.0.1.x and later).
 
 ## Technical Reference
