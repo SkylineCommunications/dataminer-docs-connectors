@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_ZTE_ZENIC_ONE_R22_Technical
-description: "Configure and operate the ZTE ZENIC ONE R22 connector in DataMiner, including connections, polling controls, redundancy, and alarm handling."
+description: "Configure and operate the ZTE ZENIC ONE R22 connector in DataMiner, including connections, polling controls, and alarm handling."
 ---
 
 # ZTE ZENIC ONE R22 Technical
@@ -81,5 +81,4 @@ Depending on the data available from your deployment, the connector provides add
 ## Operational Notes
 
 - The connector is primarily used for monitoring and synchronization.
-- Most writes are local connector control settings in DataMiner.
 - Starting alarm synchronization triggers a device-facing synchronization action.

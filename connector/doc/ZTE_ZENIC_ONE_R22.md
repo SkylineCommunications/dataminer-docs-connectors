@@ -7,23 +7,21 @@ description: "Monitor ZTE ZENIC ONE R22 transport domains in DataMiner with SNMP
 
 ## About
 
-The ZTE ZENIC ONE R22 is an intelligent transport network management and control system.
+The ZTE ZENIC ONE R22 is an intelligent transport network management and control system. It is designed for SDN/NFV-oriented transport operations and can support scenarios such as WAN/LAN, DCI, data center, MAN, access, and backbone domains.
 
 This connector monitors ZENIC ONE R22 domains in DataMiner by combining SNMP and MTOSI-based polling. It provides visibility into managed nodes, optical performance metrics, alarms, and operational status for transport network environments.
 
-ZENIC ONE R22 is designed for SDN/NFV-oriented transport operations and can support scenarios such as WAN/LAN, DCI, data center, MAN, access, and backbone domains.
-
 ## Key Features
 
-- Monitoring of managed elements and node inventories.
-- Monitoring of optical and interface performance metrics.
-- Monitoring of current and consolidated alarm information.
-- Monitoring of fan, slot, and termination point status.
-- Configurable polling domains, polling intervals, and primary/backup polling targets.
+- **Monitor managed elements**: View managed elements and node inventories.
+- **Track performance metrics**: View optical and interface performance metrics.
+- **Review alarms**: View current and consolidated alarm information.
+- **Check hardware status**: View fan, slot, and termination point status.
+- **Fine-tune polling**: Configure polling domains, polling intervals, and primary/backup polling targets.
 
 ## Prerequisites
 
-- DataMiner version **Main Release** 10.4.0 or higher.
+- DataMiner **Main Release 10.4.0** or higher.
 - Reachable SNMP and MTOSI endpoints on the ZENIC ONE R22 platform.
 
 ## Technical References
