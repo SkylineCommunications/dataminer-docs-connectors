@@ -7307,6 +7307,7 @@
     topicUid: Connector_help_Newtec_MDM6000
   - name: Newtec MDM6100
     topicUid: Connector_help_Newtec_MDM6100
+    topicUid: Connector_help_Newtec_MDM6100_Technical
   - name: Newtec MNT Satlink Manager
     topicUid: Connector_help_Newtec_MNT_Satlink_Manager
   - name: Newtec NOP1760
@@ -8653,6 +8654,7 @@
   items:
   - name: ScheduAll Generic Interop Manager
     topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
