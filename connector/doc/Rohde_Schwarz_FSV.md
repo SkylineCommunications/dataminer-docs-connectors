@@ -6,15 +6,14 @@ uid: Connector_help_Rohde_Schwarz_FSV
 
 ## About
 
-The Rohde Schwarz FSV connector allows seamless integration of the R&S FSV signal and spectrum analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument information over a virtual connection driven by the Rohde & Schwarz RsInstrument (VISA) library, making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from a single interface. The device connection is configured through the element's Device IP Address, Device Port and connection type (VXI-11, Raw Socket or HiSLIP).
+The Rohde Schwarz FSV connector allows seamless integration of the R&S FSV signal and spectrum analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument information over a virtual connection driven by the Rohde & Schwarz RsInstrument (VISA) library, making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from a single interface.
 
 ## Key Features
 
 - **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
-- **Instrument identification**: Read the Manufacturer, Model, Serial Number, and Firmware Version of the connected device.
-- **Measurement control**: Configure start/stop/center frequency, span, reference level and scale, sweep time and points, resolution bandwidth (RBW), video bandwidth (VBW), and input attenuation.
+- **Instrument identification**: View key device details to verify the connected analyzer and its current software state.
+- **Measurement control**: Remotely adjust core analyzer settings to quickly adapt the device to changing operational needs.
 - **Trace monitoring toggle**: Enable or disable trace monitoring to reduce load when only identity and settings are needed.
-- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025) or HiSLIP.
 
 ## Use Cases
 
@@ -30,7 +29,7 @@ The Rohde Schwarz FSV connector allows seamless integration of the R&S FSV signa
 
 **Challenge**: Engineers need to change measurement parameters (frequency, span, bandwidths, reference level) on a remote analyzer.
 
-**Solution**: Use the connector's write settings to push measurement configuration to the device and read the applied values back on the next poll.
+**Solution**: Use the connector's write settings to push measurement configuration to the device and read the applied values when data is next polled.
 
 **Benefit**: Removes the need for physical access and speeds up measurement reconfiguration.
 
@@ -43,6 +42,8 @@ The Rohde Schwarz FSV connector allows seamless integration of the R&S FSV signa
 **Benefit**: Increases efficiency and ensures consistent, repeatable data collection.
 
 ## Technical Reference
+
+The device connection is configured through the element's IP address, port, and connection type (VXI-11, Raw Socket (default, port 5025), or HiSLIP).
 
 > [!NOTE]
 > For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Rohde_Schwarz_FSV_Technical).
