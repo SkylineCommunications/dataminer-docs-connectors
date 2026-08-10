@@ -8309,12 +8309,18 @@
     topicUid: Connector_help_Rohde_Schwarz_FPL1026
   - name: Rohde Schwarz FSC3
     topicUid: Connector_help_Rohde_Schwarz_FSC3
+    items:
+      - name: Rohde Schwarz FSC3 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSC3_Technical
   - name: Rohde Schwarz FSH3
     topicUid: Connector_help_Rohde_Schwarz_FSH3
   - name: Rohde Schwarz FSL3
     topicUid: Connector_help_Rohde_Schwarz_FSL3
   - name: Rohde Schwarz FSV
     topicUid: Connector_help_Rohde_Schwarz_FSV
+    items:
+      - name: Rohde Schwarz FSV Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSV_Technical
   - name: Rohde Schwarz NETCCU700
     topicUid: Connector_help_Rohde_Schwarz_NETCCU700
   - name: Rohde Schwarz NetCCU800
