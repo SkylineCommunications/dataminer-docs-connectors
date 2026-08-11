@@ -10,8 +10,6 @@ This connector allows DataMiner to monitor and manage the EEG / AI-Media Alta-TS
 
 Alta-TS is a software-based caption encoder designed for MPEG Transport Stream (MPEG-TS) workflows. It enables insertion, transport, and monitoring of closed captions and subtitles in IP video environments and can integrate with the AI-Media iCap cloud captioning platform. Alta-TS is typically deployed as a virtual machine.
 
-The connector communicates with Alta-TS over HTTP(S) and provides visibility into encoder instances, stream configuration, captioning status, system alarms, logs, and operational statistics.
-
 ## Key Features
 
 - **Centralized monitoring of Alta-TS encoder instances**: Provides visibility into all configured encoder instances, including operational status, instance configuration, and runtime information from a single DataMiner element.

@@ -2,6 +2,8 @@
 uid: Connector_help_EEG_Alta-TS_Caption_Encoder_Technical
 ---
 
+# EEG Alta-TS Caption Encoder
+
 ## About
 
 This connector allows DataMiner to monitor and manage the EEG / AI-Media Alta-TS Caption Encoder.
@@ -14,21 +16,22 @@ The connector communicates with Alta-TS over HTTP(S) and provides visibility int
 
 ### Connections
 
-#### HTTP Main Connection
+#### HTTP Connection - Main
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
 HTTP CONNECTION:
 
-- **IP address/host**: [The polling IP or URL of the destination.]
-- **IP port**: [The IP port of the destination.]
-- **Bus address**: [If the proxy server has to be bypassed, specify *bypassproxy*.]
+- **IP address/host**: The polling IP or URL of the destination.
+- **IP port**: The IP port of the destination.
+- **Bus address**: If the proxy server has to be bypassed, specify *bypassproxy*.
 
 ### Initialization
 
-You need to fill in the **username** and **password** on the **General** page in order for the connector to start communicating with the Encoder endpoint.
+Enter the **username** and **password** on the **General** page before the connector can start communicating with the Encoder endpoint.
 
 ## How to Use
 
 The **Instance Settings** page contains a table with basic information about the existing instances, as well as logs for every instance. You can monitor and configure the different instance components in the corresponding subpages under the **Instance Settings** page.
+
 You can create new encoder instances on the **New Instance** subpage.
