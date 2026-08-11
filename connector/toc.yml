@@ -3178,6 +3178,9 @@
       topicUid: Connector_help_EEG_Alta-2110_Caption_Encoder_Technical
   - name: EEG Alta-TS Caption Encoder
     topicUid: Connector_help_EEG_Alta-TS_Caption_Encoder
+    items:
+    - name: EEG Alta-TS Caption Encoder Technical
+      topicUid: Connector_help_EEG_Alta-TS_Caption_Encoder_Technical
   - name: EEG HD-492 CC Encoder
     topicUid: Connector_help_EEG_HD-492_CC_Encoder
   - name: EEG iCap Caption Server
