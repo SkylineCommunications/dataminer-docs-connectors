@@ -12,7 +12,7 @@ The **Advantech Wireless Genesis-HP Ku SSPA/SSPB** connector monitors Advantech 
 
 - **RF unit monitoring**: Tracks attenuation, temperature, mute status, and RF switch status for each RF unit.
 - **Device-level monitoring**: Monitors the individual devices (e.g., controllers, sensors) that make up each RF unit, including temperature and fault status.
-- **Redundancy Configuration**: Allows for configuration of 1:1 and N+1 redundancy configurations, including switch position and redundancy hierarchy.
+- **Redundancy configuration**: Allows configuration of 1:1 and N+1 redundancy configurations, including switch position and redundancy hierarchy.
 
 ## Use Cases
 
@@ -39,4 +39,4 @@ The **Advantech Wireless Genesis-HP Ku SSPA/SSPB** connector monitors Advantech 
 - **SNMPv3 access** to the Genesis-HP Ku SSPA/SSPB system, with read credentials configured on the device.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_Technical).

@@ -227,7 +227,7 @@
     topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB
     items:
      - name: Advantech Wireless Genesis-HP Ku SSPA/SSPB Technical
-       topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_technical
+       topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_Technical
   - name: Advantech Wireless Remote Monitor and Control Panel 1-2 Redundant SSPB (BUC) System
     topicUid: Connector_help_Advantech_Wireless_Remote_Monitor_and_Control_Panel_1-2_Redundant_SSPB_(BUC)_System
   - name: Advantech Wireless SBD75e Demodulator
