@@ -7561,8 +7561,8 @@
   - name: Observium Network Platform
     topicUid: Connector_help_Observium_Network_Platform
     items:
-      - name: Observium Network Platform Technical
-        topicUid: Connector_help_Observium_Network_Platform_Technical
+    - name: Observium Network Platform Technical
+      topicUid: Connector_help_Observium_Network_Platform_Technical
 - name: Ocean Controls
   items:
   - name: Ocean Controls KTA-282 Weather Station Gateway
