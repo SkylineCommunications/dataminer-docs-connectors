@@ -35,10 +35,3 @@ Accelerate root-cause analysis by making key platform and resource information r
 ### Multi-System Visibility
 
 Consolidate monitoring of KAIROS deployments alongside the rest of the media infrastructure managed by DataMiner, creating a unified operational view.
-
-## Prerequisites
-
-- A supported Panasonic KAIROS system.
-- Network connectivity between DataMiner and the monitored KAIROS environment.
-- Appropriate access credentials and permissions required by the monitored platform.
-- A supported DataMiner version.
