@@ -1,9 +1,9 @@
 ---
-uid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E
+uid: Connector_help_ZTE_ZENIC_ONE_R22_-_ZXONE_9700E
 description: "Monitor per-node ZXONE 9700E data in DataMiner through the exported ZTE ZENIC ONE R22 DVE, including optics, alarms, and hardware status."
 ---
 
-# ZTE ZENIC ONE R22 ZXONE 9700E
+# ZTE ZENIC ONE R22 - ZXONE 9700E
 
 ## About
 

@@ -3,7 +3,7 @@ uid: Connector_help_ZTE_ZENIC_ONE_R22_-_ZXONE_9700E_Technical
 description: "Explore technical details for the exported ZTE ZENIC ONE R22 ZXONE 9700E DVE connector, including export mapping, pages, and operational scope."
 ---
 
-# ZTE ZENIC ONE R22 ZXONE 9700E Technical
+# ZTE ZENIC ONE R22 - ZXONE 9700E Technical
 
 ## About
 
