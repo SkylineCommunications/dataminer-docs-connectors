@@ -11654,11 +11654,11 @@
     items:
     - name: ZTE ZENIC ONE R22 Technical
       topicUid: Connector_help_ZTE_ZENIC_ONE_R22_Technical
-  - name: ZTE ZENIC ONE R22 ZXONE 9700E
-    topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E
+  - name: ZTE ZENIC ONE - R22 ZXONE 9700E
+    topicUid: Connector_help_ZTE_ZENIC_ONE_-_R22_ZXONE_9700E
     items:
-    - name: ZTE ZENIC ONE R22 ZXONE 9700E Technical
-      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E_Technical
+    - name: ZTE ZENIC ONE - R22 ZXONE 9700E Technical
+      topicUid: Connector_help_ZTE_ZENIC_ONE_-_R22_ZXONE_9700E_Technical
   - name: ZTE ZXR10
     topicUid: Connector_help_ZTE_ZXR10
     items:

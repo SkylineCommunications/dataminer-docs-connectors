@@ -26,4 +26,4 @@ It provides node-centric monitoring for discovered ZXONE 9700E managed elements,
 ## Technical References
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E_Technical).
+> For detailed technical information, refer to our [technical documentation page](xref:Connector_help_ZTE_ZENIC_ONE_R22_-_ZXONE_9700E_Technical).
