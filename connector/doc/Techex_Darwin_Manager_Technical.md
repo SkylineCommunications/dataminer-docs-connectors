@@ -41,7 +41,7 @@ The web interface is only accessible when the client machine has network access 
 
 ### Automation Scripts
 
-The connector launches an interactive automation script to instantiate blueprints. For the blueprint instantiation feature to work, you need to install the [Techex Darwin Blueprint Instantiate](xref:https://github.com/SkylineCommunications/SLC-AS-TechexDarwin) automation script.
+The connector launches an interactive automation script to instantiate blueprints. For the blueprint instantiation feature to work, you need to install the [Techex Darwin Blueprint Instantiate](https://github.com/SkylineCommunications/SLC-AS-TechexDarwin) automation script.
 
 ## How to Use
 
