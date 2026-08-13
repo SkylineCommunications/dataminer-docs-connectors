@@ -9417,6 +9417,10 @@
        topicUid: Connector_help_Slack_Messaging_technical
      - name: Slack Messaging Sending Messages Developer Guide
        topicUid: Connector_help_Slack_Messaging_sending_messages_developer
+- name: SMA
+  items:
+  - name: SMA Sunny Tripower
+    topicUid: Connector_help_SMA_Sunny_Tripower
 - name: Smappee
   items:
   - name: Smappee Platform
