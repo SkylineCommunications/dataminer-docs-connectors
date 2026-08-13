@@ -1,21 +1,22 @@
 ---
-uid: Connector_help_Waterkotte_Heatpump
+uid: Connector_help_SMA_Sunny_Tripower
 ---
 
-# Waterkotte Heatpump
+# SMA Sunny Tripower
 
 ## About
 
-The Waterkotte Heatpump connector enables monitoring of the heatpump of Waterkotte devices via modbus. It provides users with access to real-time data directly within DataMiner.
+The SMA Sunny Tripower connector enables monitoring of the SMA Sunny Tripower linked to a solar environment via modbus. It provides users with access to real-time data directly within DataMiner.
 
 ## Key Features
 
-- **Compressor information**: Retrieve and monitor real-time compressor information.
-- **Performance monitoring and analysis**: Access analysis and monitoring data for all performance information linked to the heatpump.
-- **Slave unit monitoring**: Retrieve data from the slave unit.
+- **Solar information**: Retrieve and monitor real-time active, apparent, reactive power information.
+- **Performance monitoring and analysis**: Access analysis and monitoring data for all performance information linked to the solar enviroment.
+- **Inverter Information**: Retrieve data from the inverter. This intales configuration and monitoring of the inverter unit.
+- **Device Information**: Access and monitoring of the device configuration. 
 
 ## Technical Information
 
-When you configure a DataMiner element using this connector, specify the IP address linked to the modbus and the port used to connect to the modbus (default: 502).
+When you configure a DataMiner element using this connector, specify the IP address linked to the modbus and the port used to connect to the modbus (default: 502) and the slave ID needs to be placed in bussAddress (default:3).
 
-Once an element is configured, the connector will automatically start polling data from the Waterkotte Heatpump API.
+Once an element is configured, the connector will automatically start polling data from the SMA Sunny Tripower.
