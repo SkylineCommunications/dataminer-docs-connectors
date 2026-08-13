@@ -4025,6 +4025,7 @@
     topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
+    topicUid: Connector_technical_Evertz_Xenon_Switch
   - name: Evertz XPRF14
     topicUid: Connector_help_Evertz_XPRF14
   - name: Evertz XPS-EDGE
@@ -7304,8 +7305,8 @@
   - name: Newtec MDM6000
     topicUid: Connector_help_Newtec_MDM6000
   - name: Newtec MDM6100
-    topicUid: Connector_help_Newtec_MDM6100
-    topicUid: Connector_help_Newtec_MDM6100_Technical
+    topicUid: Connector_help_Newtec_M6100
+    topicUid: Connector_help_Newtec_M6100_Technical
   - name: Newtec MNT Satlink Manager
     topicUid: Connector_help_Newtec_MNT_Satlink_Manager
   - name: Newtec NOP1760
