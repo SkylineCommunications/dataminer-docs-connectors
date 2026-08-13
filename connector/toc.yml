@@ -81,6 +81,13 @@
   items:
   - name: Accedian Skylight Performance Element GT
     topicUid: Connector_help_Accedian_Skylight_Performance_Element_GT
+- name: ACE Medias Tools
+  items:
+  - name: ACE Medias Tools INES
+    topicUid: Connector_help_ACE_Medias_Tools_INES
+    items:
+      - name: ACE Medias Tools INES Technical
+        topicUid: Connector_help_ACE_Medias_Tools_INES_Technical
 - name: Acorde
   items:
   - name: Acorde ACTX-KA
@@ -223,6 +230,11 @@
     topicUid: Connector_help_Advantech_AMT_VSAT_BUC_Redundancy_Controller
 - name: Advantech Wireless
   items:
+  - name: Advantech Wireless Genesis-HP Ku SSPA/SSPB
+    topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB
+    items:
+     - name: Advantech Wireless Genesis-HP Ku SSPA/SSPB Technical
+       topicUid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_Technical
   - name: Advantech Wireless Remote Monitor and Control Panel 1-2 Redundant SSPB (BUC) System
     topicUid: Connector_help_Advantech_Wireless_Remote_Monitor_and_Control_Panel_1-2_Redundant_SSPB_(BUC)_System
   - name: Advantech Wireless SBD75e Demodulator
@@ -2496,6 +2508,12 @@
       topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9410DA
     - name: Cobalt Digital HPF 9000 - Cobalt Digital 9220
       topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9220
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9902-UDX
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9902-UDX
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9911DA-8-BPX
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9911DA-8-BPX
+    - name: Cobalt Digital HPF 9000 - Cobalt Digital 9934-AUD-PRO-DSP
+      topicUid: Connector_help_Cobalt_Digital_HPF_9000_-_Cobalt_Digital_9934-AUD-PRO-DSP
 - name: Cobham
   items:
   - name: Cobham PRORXB
@@ -3171,6 +3189,9 @@
       topicUid: Connector_help_EEG_Alta-2110_Caption_Encoder_Technical
   - name: EEG Alta-TS Caption Encoder
     topicUid: Connector_help_EEG_Alta-TS_Caption_Encoder
+    items:
+    - name: EEG Alta-TS Caption Encoder Technical
+      topicUid: Connector_help_EEG_Alta-TS_Caption_Encoder_Technical
   - name: EEG HD-492 CC Encoder
     topicUid: Connector_help_EEG_HD-492_CC_Encoder
   - name: EEG iCap Caption Server
@@ -3989,6 +4010,8 @@
       topicUid: Connector_help_Evertz_NATX_Technical
   - name: Evertz NATX-NAT-32
     topicUid: Connector_help_Evertz_NATX-NAT-32
+  - name: Evertz PREFEX Media Processing Edge
+    topicUid: Connector_help_Evertz_PREFEX_Media_Processing_Edge
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000 
   - name: Evertz Scorpion 18
@@ -7368,6 +7391,9 @@
     topicUid: Connector_help_Nokia_ISAM_7300_FX
   - name: Nokia ISAM 7300 FX GPON Platform
     topicUid: Connector_help_Nokia_ISAM_7300_FX_GPON_Platform
+    items:
+    - name: Nokia ISAM 7300 FX GPON Platform Technical
+      topicUid: Connector_help_Nokia_ISAM_7300_FX_GPON_Platform_Technical
   - name: Nokia MSS-8
     topicUid: Connector_help_Nokia_MSS-8
   - name: Nokia MSS-8 - CorEvo-1G
@@ -7543,6 +7569,13 @@
   items:
   - name: NVIDIA Onyx Manager
     topicUid: Connector_help_NVIDIA_Onyx_Manager
+- name: Observium
+  items:
+  - name: Observium Network Platform
+    topicUid: Connector_help_Observium_Network_Platform
+    items:
+    - name: Observium Network Platform Technical
+      topicUid: Connector_help_Observium_Network_Platform_Technical
 - name: Ocean Controls
   items:
   - name: Ocean Controls KTA-282 Weather Station Gateway
@@ -8297,6 +8330,8 @@
       topicUid: Connector_help_Rohde_Schwarz_ETX-T_Technical
   - name: Rohde Schwarz FM N+1 Nx8000
     topicUid: Connector_help_Rohde_Schwarz_FM_N+1_Nx8000
+  - name: Rohde Schwarz FPC1000
+    topicUid: Connector_help_Rohde_Schwarz_FPC1000
   - name: Rohde Schwarz FPL 1003
     topicUid: Connector_help_Rohde_Schwarz_FPL_1003
     items:
@@ -8306,12 +8341,18 @@
     topicUid: Connector_help_Rohde_Schwarz_FPL1026
   - name: Rohde Schwarz FSC3
     topicUid: Connector_help_Rohde_Schwarz_FSC3
+    items:
+      - name: Rohde Schwarz FSC3 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSC3_Technical
   - name: Rohde Schwarz FSH3
     topicUid: Connector_help_Rohde_Schwarz_FSH3
   - name: Rohde Schwarz FSL3
     topicUid: Connector_help_Rohde_Schwarz_FSL3
   - name: Rohde Schwarz FSV
     topicUid: Connector_help_Rohde_Schwarz_FSV
+    items:
+      - name: Rohde Schwarz FSV Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSV_Technical
   - name: Rohde Schwarz NETCCU700
     topicUid: Connector_help_Rohde_Schwarz_NETCCU700
   - name: Rohde Schwarz NetCCU800
@@ -8826,6 +8867,9 @@
     topicUid: Connector_help_Sencore_SDI2X
   - name: Sencore SMD989
     topicUid: Connector_help_Sencore_SMD989
+    items:
+    - name: Sencore SMD989 Technical
+      topicUid: Connector_help_Sencore_SMD989_Technical
   - name: Sencore TSS 6220
     topicUid: Connector_help_Sencore_TSS_6220
 - name: Sennheiser
@@ -9170,6 +9214,9 @@
       topicUid: Connector_help_Skyline_EPM_Platform_GPON_Technical
   - name: Skyline EPM Platform GPON WM
     topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM
+    items:
+    - name: Skyline EPM Platform GPON WM Technical
+      topicUid: Connector_help_Skyline_EPM_Platform_GPON_WM_Technical
   - name: Skyline EPM Platform PLM
     topicUid: Connector_help_Skyline_EPM_Platform_PLM
   - name: Skyline EPM Platform VSAT DSM SO
@@ -11605,6 +11652,16 @@
     topicUid: Connector_help_ZTE_ZXDUPA-BCUA
   - name: ZTE ZXONE 9700
     topicUid: Connector_help_ZTE_ZXONE_9700
+  - name: ZTE ZENIC ONE R22
+    topicUid: Connector_help_ZTE_ZENIC_ONE_R22
+    items:
+    - name: ZTE ZENIC ONE R22 Technical
+      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_Technical
+  - name: ZTE ZENIC ONE R22 ZXONE 9700E
+    topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E
+    items:
+    - name: ZTE ZENIC ONE R22 ZXONE 9700E Technical
+      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E_Technical
   - name: ZTE ZXR10
     topicUid: Connector_help_ZTE_ZXR10
     items:
