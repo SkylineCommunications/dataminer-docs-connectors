@@ -8346,6 +8346,9 @@
     topicUid: Connector_help_Rohde_Schwarz_FSH3
   - name: Rohde Schwarz FSL3
     topicUid: Connector_help_Rohde_Schwarz_FSL3
+    items:
+      - name: Rohde Schwarz FSL3 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSL3_Technical
   - name: Rohde Schwarz FSV
     topicUid: Connector_help_Rohde_Schwarz_FSV
     items:
