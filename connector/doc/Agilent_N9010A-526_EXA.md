@@ -4,66 +4,56 @@ uid: Connector_help_Agilent_N9010A-526_EXA
 
 # Agilent N9010A-526 EXA
 
-The **Agilent N9010A-526 EXA** is a spectrum analyzer device.
-
-This connector interfaces with the spectrum analyzer and allows you to monitor the spectrum of any connected signal.
-
 ## About
 
-### Version Info
+The Agilent N9010A-526 EXA connector allows seamless integration of the Agilent (Keysight) N9010A EXA
+signal analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument
+information over a **virtual (VISA) connection** driven by the Rohde & Schwarz RsInstrument library,
+making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from
+a single interface. The N9010A-526 option covers a **9 kHz to 26.5 GHz** frequency range. The device
+connection is configured through the element's **Device IP Address**, **Device Port** and
+**connection type** (VXI-11, Raw Socket or HiSLIP).
 
-| Range              | Features                            | Based on | System Impact |
-|--------------------|-------------------------------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version (serial connector). | -        | -             |
-| 1.1.0.x            | Version based on the VISA library.  | -        | -             |
+## Key Features
 
-### Product Info
+- **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
+- **Instrument identification**: Read the Manufacturer, Model, Serial Number, and Firmware Version of the connected device.
+- **Measurement control**: Configure start/stop/center frequency, span, reference level and scale, sweep time and points, resolution bandwidth (RBW), video bandwidth (VBW), and input attenuation — including their AUTO modes.
+- **Sweep mode**: Select Single or Continuous sweep directly from DataMiner.
+- **Zero-span sweep**: Start a zero-span, time-adjusted rolling trace acquisition on demand.
+- **Preset**: Restore the instrument's default settings from DataMiner with a confirmation-guarded button.
+- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025) or HiSLIP.
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | C.04.56            |
-| 1.1.0.x | C.04.56            |
+## Use Cases
 
-### System Info
+### RF Monitoring
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
-| 1.1.0.x | No              | Yes                 | -                 | -                   |
+**Challenge**: Operators need to keep an eye on RF spectrum measurements without standing at the instrument front panel.
 
-## Configuration
+**Solution**: Integrate the N9010A EXA into DataMiner to stream live trace data and instrument status to a central interface.
 
-### Connections
+**Benefit**: Enables continuous, remote spectrum monitoring alongside the rest of the monitored infrastructure.
 
-#### Serial Connection — Main — 1.0.0.x only
+### Remote Measurement Setup
 
-This connector uses a serial connection and requires the following input during element creation:
+**Challenge**: Engineers need to change measurement parameters (frequency, span, bandwidths, reference level, sweep time, attenuation) on a remote analyzer.
 
-SERIAL CONNECTION:
+**Solution**: Use the connector's write settings to push measurement configuration to the device over the VISA connection and read the applied values back on the next poll.
 
-- Interface connection:
+**Benefit**: Removes the need for physical access and speeds up measurement reconfiguration.
 
-  - **IP address/host**: The polling IP of the device.
-  - **IP port**: The IP port of the device.
+### Automated Signal Analysis
 
-#### Virtual Connection — Main — 1.1.0.x only
+**Challenge**: Repetitive sweeps and trace capture are time-consuming to run manually.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Solution**: Drive the analyzer from DataMiner to automate sweep acquisition and collect trace data.
 
-### Initialization
+**Benefit**: Increases efficiency and ensures consistent, repeatable data collection.
 
-No initialization is needed for range **1.0.0.x**.
+## Technical Reference
 
-For the **1.1.0.x range**, several things are needed:
+The device connection is configured through the element's IP address, port, and connection type (VXI-11, Raw Socket (default, port 5025), or HiSLIP).
 
-1. Make sure the VISA library is installed on the DataMiner Agent.
+> [!NOTE]
+> For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Agilent_N9010A-526_EXA_Technical).
 
-   You can download the installer for the library from the [Rohde-Schwarz website](https://www.rohde-schwarz.com/us/driver-pages/remote-control/3-visa-and-tools_231388.html).
-
-1. Make sure the DLL *RsInstrument.dll* is present in the *ProtocolScripts* folder.
-
-1. Set the IP address of the device on the **General** page of the element.
-
-## How to use
-
-You can observe the spectrum on the **Spectrum Analyzer** page.

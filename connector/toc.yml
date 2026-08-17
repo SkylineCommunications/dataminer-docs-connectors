@@ -275,6 +275,9 @@
     topicUid: Connector_help_Agilent_N1996A
   - name: Agilent N9010A-526 EXA
     topicUid: Connector_help_Agilent_N9010A-526_EXA
+    items:
+    - name: Agilent N9010A-526 EXA Technical
+      topicUid: Connector_help_Agilent_N9010A-526_EXA_Technical
   - name: Agilent N9320B
     topicUid: Connector_help_Agilent_N9320B
 - name: Agilis
@@ -8346,6 +8349,9 @@
     topicUid: Connector_help_Rohde_Schwarz_FSH3
   - name: Rohde Schwarz FSL3
     topicUid: Connector_help_Rohde_Schwarz_FSL3
+    items:
+      - name: Rohde Schwarz FSL3 Technical
+        topicUid: Connector_help_Rohde_Schwarz_FSL3_Technical
   - name: Rohde Schwarz FSV
     topicUid: Connector_help_Rohde_Schwarz_FSV
     items:
