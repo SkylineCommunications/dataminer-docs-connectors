@@ -20,6 +20,7 @@ When creating or editing connector documentation pages, apply the following rule
 - For cross-references to pages within this repository, use DocFX `xref` links instead of hard links to local Markdown files.
 - Use backticks for references to code, file paths, and user input, but not for emphasis.
 - Do not place two note blocks immediately after one another. When that would occur, combine the content into a single note block that uses a bulleted list.
+- HTML comments must never be used.
 
 ## Procedure formatting
 
