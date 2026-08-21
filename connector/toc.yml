@@ -10146,6 +10146,11 @@
   items:
   - name: Techex Darwin
     topicUid: Connector_help_Techex_Darwin
+  - name: Techex Darwin I-Frame Switch
+    topicUid: Connector_help_Techex_Darwin_I-Frame_Switch
+    items:
+    - name: Techex Darwin I-Frame Switch Technical
+      topicUid: Connector_help_Techex_Darwin_I-Frame_Switch_Technical
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
