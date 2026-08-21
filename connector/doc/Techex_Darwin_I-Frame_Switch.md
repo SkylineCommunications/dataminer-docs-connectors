@@ -6,7 +6,9 @@ uid: Connector_help_Techex_Darwin_I-Frame_Switch
 
 ## About
 
-The **Techex Darwin I-Frame Switch** is a professional transport stream processor designed for broadcast and video distribution environments. This DataMiner connector enables comprehensive monitoring and control of Techex Darwin I-Frame Switch devices, providing real-time visibility into module configurations, input/output streams, and performance statistics through seamless integration with DataMiner's monitoring ecosystem.
+The **I-Frame Switch** module is a broadcast-grade source switcher that performs frame-accurate switching between I-frame-only video streams such as JPEG XS and I-frame-only H.264/HEVC, typically for redundancy, protection, and contribution workflows.
+
+The **Techex Darwin I-Frame Switch** connector allows DataMiner to monitor and control Techex Darwin I-Frame Switch devices. This connector provides comprehensive monitoring of transport stream processing modules, including configuration management, input/output monitoring, and real-time statistics collection through both HTTP API polling and Kafka message subscriptions.
 
 ## Key Features
 
