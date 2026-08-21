@@ -10146,6 +10146,10 @@
   items:
   - name: Techex Darwin
     topicUid: Connector_help_Techex_Darwin
+  - name: Techex Darwin SRT Input
+    topicUid: Connector_help_Techex_Darwin_SRT_Input
+  - name: Techex Darwin SRT Output
+    topicUid: Connector_help_Techex_Darwin_SRT_Output
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
