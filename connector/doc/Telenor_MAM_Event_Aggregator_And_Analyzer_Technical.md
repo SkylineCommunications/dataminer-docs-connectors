@@ -47,7 +47,9 @@ On the **General** page, you can:
 
 ### Aggregation Period
 
-Each aggregation period is configurable, except for the **Total MAM Errors** and **Connection - Link** aggregations, which run every 15 minutes on a fixed internal timer. The start and end times are calculated as follows:
+Each aggregation period is configurable, except for the **Total MAM Errors** and **Connection - Link** aggregations, which run every 15 minutes on a fixed internal timer.
+
+The start and end times are calculated as follows:
 
 - **End Time**:
   - Day: `current day`
@@ -69,9 +71,9 @@ The aggregated data is displayed on several pages. The main ones are:
 
 - **MAM Events Per Device Class**: The total number of MAM events during the aggregation period, grouped by device class.
 
-- **Total MAM Errors**: Per device class, the number of **Playback Errors**, **Notifications Shown**, and **Playback Warnings** events aggregated from the errors stream, together with the number of **Unique Devices** reporting these events and the **Total Events** sum. Three tables are available, covering the last **15 minutes**, **1 hour**, and **1 day**. The values are refreshed every 15 minutes and trending is enabled.
+- **Total MAM Errors**: Per device class, the number of **Playback Errors**, **Notifications Shown**, and **Playback Warnings** events aggregated from the errors stream, together with the number of **Unique Devices** reporting these events and the **Total Events** count. Three tables are available, covering the last **15 minutes**, **1 hour**, and **1 day**. The values are refreshed every 15 minutes and trending is enabled.
 
-- **Contentwise API Usage**: Request counts by status (200/400/500), cache hit/miss counts, and response-time statistics (average, 95th and 99th percentile) for the ContentWise recommendation API, for each tenant and overall.
+- **ContentWise API Usage**: Request counts by status (200/400/500), cache hit/miss counts, and response-time statistics (average, 95th and 99th percentile) for the ContentWise recommendation API, for each tenant and overall.
 
 - **NPVR Statistics**: Aggregated network PVR statistics.
 
@@ -79,7 +81,7 @@ The aggregated data is displayed on several pages. The main ones are:
 
 - **Player Stats** and **OTT Live SO** pages: Player and streaming statistics broken down for each device platform (for example, STB, Smartphone, Tablet, PC Portal, Apple TV, Android TV, Chromecast).
 
-- **OTT Live Playback Sessions**: Combined OTT Live channel statistics per **channel and device class**, in one table per time period (last **15 minutes**, **1 hour**, and **1 day**). Each table shows the number of devices **Watching** the channel, together with average playback metrics: **SPI**, **Stalled**, **Profile Change**, **Bit Rate**, **Setup Error Events**, **Playback Error Events**, **Time to Video Start**, and **DRM Error Events**.
+- **OTT Live Playback Sessions**: Combined OTT Live channel statistics by **channel and device class**, with separate tables for the last **15 minutes**, **1 hour**, and **1 day**. Each table shows the number of devices **watching** the channel, together with average playback metrics such as **SPI**, **Stalled**, **Profile Change**, **Bit Rate**, **Setup Error Events**, **Playback Error Events**, **Time to Video Start**, and **DRM Error Events**.
 
 - **Connection - Link**: For every device class, link type, and country, the number of devices with that link type active and the percentage this represents within the device class. Unlike the other aggregations, this data is not retrieved from OpenSearch: every 15 minutes, the connector reads the Device table of the **Telenor EPM Collector** elements in the DMS through SLNet. Which collector elements are queried depends on the configured **Operator**: *All* queries every collector, while *Norway* or *Sweden* only queries the collectors of the matching country.
 
