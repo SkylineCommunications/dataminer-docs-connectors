@@ -10,7 +10,7 @@ The Thales S7HP is a high-power shortwave radio transmitter. With this connector
 
 ## Key Features
 
-- **Transmitter monitoring**: Monitor the key transmitter functions, such as frequency, measured power, modulation mode, and operating status.
+- **Transmitter monitoring**: Monitor the key transmitter functions, such as frequency, measured power, modulation mode, and operating status. 
 - **Modulator monitoring**: Monitor the full set of modulator parameters, including audio, MDI, DRM, GPS timing, and version information.
 - **Alarm and fault management**: Keep track of the device alarms, faults, and module states, including status tables with date information.
 - **Transmitter control**: Send commands to the transmitter, such as power on/off, rearm, frequency, and audio configuration changes.
