@@ -44,6 +44,10 @@ Track data usage in near real-time to stay in control of monthly allowances. Vis
 
 ![Usage Consumption Table](~/connector/images/UsageConsumption.png)
 
+### API Version Tracking
+
+Use the API Version page to track which API versions are currently used by the application for each module. This helps you verify version alignment across modules, detect version differences quickly, and support troubleshooting when behavior changes between API versions.
+
 ## Use Case: Real-Time Monitoring and Troubleshooting for Remote Connectivity Sites
 
 A company with operations in remote or infrastructure-limited locations relies on satellite connectivity to ensure stable internet access and continuous monitoring of field sites. Each location is equipped with user terminals connected to the OneWeb LEO satellite network to support essential communication and operational needs. The company faces challenges in **maintaining real-time visibility** on terminal status, performance, and data usage, making it difficult to respond quickly to issues or manage bandwidth efficiently.
