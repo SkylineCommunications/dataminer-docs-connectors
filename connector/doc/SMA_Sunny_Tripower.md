@@ -6,17 +6,17 @@ uid: Connector_help_SMA_Sunny_Tripower
 
 ## About
 
-The SMA Sunny Tripower connector enables monitoring of the SMA Sunny Tripower linked to a solar environment via modbus. It provides users with access to real-time data directly within DataMiner.
+The SMA Sunny Tripower connector monitors SMA Sunny Tripower inverters linked to solar environments via Modbus. It provides real-time data directly within DataMiner.
 
 ## Key Features
 
-- **Solar information**: Retrieve and monitor real-time active, apparent, reactive power information.
-- **Performance monitoring and analysis**: Access analysis and monitoring data for all performance information linked to the solar enviroment.
-- **Inverter Information**: Retrieve data from the inverter. This intales configuration and monitoring of the inverter unit.
-- **Device Information**: Access and monitoring of the device configuration. 
+- **Solar information**: Retrieve and monitor real-time active, apparent, and reactive power information.
+- **Performance monitoring and analysis**: Access analysis and monitoring data for all performance information linked to the solar environment.
+- **Inverter information**: Retrieve inverter data, including configuration and monitoring information.
+- **Device information**: Access and monitor the device configuration.
 
-## Technical Information
+## Technical Reference
 
-When you configure a DataMiner element using this connector, specify the IP address linked to the modbus and the port used to connect to the modbus (default: 502) and the slave ID needs to be placed in bussAddress (default:3).
+When you configure a DataMiner element using this connector, specify the IP address of the Modbus device, the port used to connect to the Modbus device (default: 502), and the slave ID. Set the slave ID in the busAddress field (default: 3).
 
-Once an element is configured, the connector will automatically start polling data from the SMA Sunny Tripower.
+Once an element is configured, the connector automatically starts polling data from the SMA Sunny Tripower.
