@@ -54,4 +54,3 @@ By implementing the OneWeb Enterprise connector, the organization **integrates O
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_OneWeb_Enterprise_Technical).
-
