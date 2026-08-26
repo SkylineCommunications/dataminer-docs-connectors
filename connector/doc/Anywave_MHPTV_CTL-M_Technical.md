@@ -12,7 +12,7 @@ The Anywave MHPTV CTL-M connector enables monitoring and control of Anywave MHPT
 
 ### Connections
 
-#### SNMP Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
