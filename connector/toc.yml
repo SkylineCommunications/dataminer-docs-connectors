@@ -3396,6 +3396,9 @@
   items:
   - name: Ericsson AVP-2000
     topicUid: Connector_help_Ericsson_AVP-2000
+    items:
+    - name: Ericsson AVP-2000 Technical
+      topicUid: Connector_help_Ericsson_AVP-2000_Technical
   - name: Ericsson AVP-4000
     topicUid: Connector_help_Ericsson_AVP-4000
   - name: Ericsson AVP3000
