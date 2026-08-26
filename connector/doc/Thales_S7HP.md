@@ -18,7 +18,7 @@ The Thales S7HP is a high-power shortwave radio transmitter. With this connector
 - **Customizable polling**: Fine-tune the polling frequency of each data group via the Polling Manager.
 - **Web interface**: Access the device's web interface directly from the element.
 
-## Technical Info
+## Technical Reference
 
 ### Prerequisites
 
