@@ -12,7 +12,7 @@ The Thales S7HP is a high-power shortwave radio transmitter. This connector uses
 
 ### Connections
 
-#### SNMP Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -23,14 +23,14 @@ SNMP CONNECTION:
 
 SNMP Settings:
 
-- **Get community string**: The community string used when reading values from the device. (default: *public*)
-- **Set community string**: The community string used when setting values on the device. (default: *private*)
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ### Web Interface
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to Use
 
 The element has the following data pages:
 
