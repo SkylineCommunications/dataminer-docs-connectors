@@ -6,7 +6,7 @@ uid: Connector_help_Huawei_iMaster_MAE
 
 ## About
 
-The Huawei iMaster MAE connector integrates the Huawei iMaster MAE-Access management system into DataMiner. It ingests SNMPv3 alarm and heartbeat traps forwarded by the iMaster MAE northbound interface and enriches the picture with a daily network element (NE) inventory retrieved over SFTP.
+The Huawei iMaster MAE connector integrates the Huawei iMaster MAE-Access management system into DataMiner.
 
 This connector gives operators a real-time view of alarms raised across the managed access network, tracks the availability of the northbound feed through a heartbeat watchdog, and maintains an up-to-date inventory of all network elements.
 

@@ -30,20 +30,20 @@ SNMP Settings:
 
 ### Initialization
 
-After the element has been created, configure the following on the *Configuration* page before the connector can be fully used:
+After you have created the element, configure the following settings on the *Configuration* page before you start using the connector:
 
-- **SFTP Host**: The host name or IP address of the SFTP server hosting the daily inventory CSV export.
+- **SFTP Host**: The hostname or IP address of the SFTP server hosting the daily inventory CSV export.
 - **SFTP Username** and **SFTP Password**: The credentials used to authenticate to the SFTP server.
-- **SFTP Remote Directory**: The remote directory containing the daily inventory CSV export (for example, `/opt/oss/server/var/fileint/cm/Report/`).
+- **SFTP Remote Directory**: The remote directory containing the daily inventory CSV export, for example, `/opt/oss/server/var/fileint/cm/Report/`.
 - **Heartbeat Timeout**: The number of seconds without a heartbeat trap after which the device is considered *Unavailable* (default: 180s).
 
-Until the SFTP settings are filled in, the inventory table is not populated and the *Last Inventory Result* parameter indicates that the connector is not yet configured.
+Until you configure the SFTP settings, the inventory table is not populated, and the *Last Inventory Result* parameter indicates that the connector is not yet configured.
 
-To monitor alarm states, attach an alarm template to the monitored parameters (for example *Device Availability* and the alarm trap severity), so severities are assigned through the template.
+To monitor alarm states, assign an alarm template to the monitored parameters, for example *Device Availability* and the alarm trap severity. The alarm template determines the severity assigned to these parameters.
 
 ## How to Use
 
-The connector is trap-driven: no active polling of the device takes place for alarms and heartbeats. Alarm and heartbeat traps must be forwarded from the iMaster MAE northbound interface to the DataMiner Agent. Because there is no active polling for these, no request/response traffic is visible in the Stream Viewer for the trap flows.
+The connector is trap-driven. No active polling of the device takes place for alarms and heartbeats. Alarm and heartbeat traps must be forwarded from the iMaster MAE northbound interface to the DataMiner Agent. Because these traps are not actively polled, no request/response traffic is visible in the Stream Viewer for the trap flows.
 
 ### General Page
 
@@ -55,15 +55,15 @@ Displays the network element inventory loaded from the daily CSV export, keyed o
 
 ### Alarms Page
 
-Displays the Alarms Overview table populated from received alarm traps, including severity (Alarm State), Alarm Status (Active/Cleared), and timestamps.
+Displays the Alarms Overview table populated with received alarm traps, including severity (Alarm State), alarm status (Active or Cleared), and timestamps.
 
 ### Configuration Page
 
 Contains the device status parameters (last heartbeat received, time since last trap, device availability, heartbeat timeout), the SNMP trap section, the SFTP configuration, and the inventory status.
 
-- **Force Update Inventory**: Triggers an immediate download and refresh of the inventory CSV, bypassing the once-per-day guard used by the automatic hourly polling.
+- **Force Update Inventory**: Triggers an immediate download and refresh of the inventory CSV, bypassing the once-per-day guard applied during automatic hourly polling.
 
 ## Notes
 
-- The inventory refresh is guarded to run once per day; the automatic hourly poll keeps retrying until the file dated for the current day has been loaded.
-- The Alarms Overview table currently holds trap-sourced alarms only and is cleared on element restart.
+- Inventory refreshes are limited to once per day. The automatic hourly poll continues retrying until the file for the current day has been loaded.
+- The Alarms Overview table currently contains only trap-sourced alarms and is cleared when the element is restarted.
