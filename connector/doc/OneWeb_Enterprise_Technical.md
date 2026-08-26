@@ -55,7 +55,7 @@ User terminal components (e.g., "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadat
 
 ### Products
 
-The **Products** page retrieves the inventory of service plan products. It displays a list of available products, each identified by a unique identifier and name. Each product is linked to a distribution partner and a specific site, establishing its deployment context.
+The **Products** page retrieves the inventory of service plan products. It displays a list of available products, each identified by a unique identifier and name. Parent pooled plans use IDs in the format POOL-XXXX, while sub-plans and standard Site Connectivity plans use IDs in the format SC-XXXX. Each product is linked to a distribution partner and a specific site, establishing its deployment context.
 
 A key aspect of this page is the relationship between products and user terminals — each product is associated with the IMEI of the terminal utilizing the service. Additionally, products are connected to end customer accounts and sites, providing a complete view of ownership and location.
 
@@ -81,7 +81,7 @@ All performance parameters support trending, enabling continuous tracking and hi
 
 The **Usage Consumption** page provides a near real-time snapshot of data usage for site connectivity products. It includes details such as monthly entitlement, remaining allowance, consumed overage blocks, and current balance. The report reflects cumulative usage starting from the bill cycle reference date — typically the first of the month — offering a progressively increasing usage view throughout the billing period.
 
-Each usage record is linked to a **Product ID**, which allows further association with a user terminal via the terminal's **IMEI**, as defined in the **Products** table.
+Each usage record is linked to a **Product ID**, which allows further association with a user terminal via the terminal's **IMEI**, as defined in the **Products** table. Usage consumption reports can also be linked to a shared allowance (**sub-pool**).
 
 ### Polling Settings
 
