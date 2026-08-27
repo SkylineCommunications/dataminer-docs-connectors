@@ -14,17 +14,6 @@ To avoid issues because of excessive polling, the device is polled at startup an
 
 Between requests, there is a pause of 0.5 seconds. This prevents the loop from going too fast and keeps the device from going into error state. Note, however, that this does mean that it will take a while for the element to load the entire matrix (since version 1.0.0.7).
 
-### Version Info
-
-| Range     | Description                                                                   | DCF Integration     | Cassandra Compliant     |
-|------------------|--------------------------------------------------------------------------------|---------------------|-------------------------|
-| 1.0.0.x          | Initial version                                                                | No                  | Yes                     |
-| 2.0.0.x          | Initial version (connector review)                                                | No                  | Yes                     |
-| 2.0.2.x          | Updates pushed from the device for the crosspoints (smart-serial) - to be used | Yes                 | Yes                     |
-| 2.1.0.x          | Hardware update SNMP v1                                                        | No                  | Yes                     |
-| 2.1.1.x          | DCF updated from matrix to tables                                              | Yes                 | Yes                     |
-| 2.1.2.x          | Improved tables for Router Control and Visio (smart-serial) - to be used       | Yes                 | Yes                     |
-
 ## Installation and configuration
 
 ### Creation
