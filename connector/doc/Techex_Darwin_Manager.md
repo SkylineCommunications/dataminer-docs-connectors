@@ -14,7 +14,7 @@ The **Techex Darwin Manager** connector enables seamless integration between Dat
 
 - **Comprehensive Module Management**: Monitor all configured modules including license status and version.
 
-- **Blueprint Management & Instantiation**: Automatically retrieve all available workflow blueprints and deploy complex video workflows instantly .
+- **Blueprint Management & Instantiation**: Automatically retrieve all available workflow blueprints and deploy complex video workflows instantly.
 
 - **Integration Monitoring**: Monitor all external system integrations connected to Tx Darwin.
 
@@ -35,6 +35,8 @@ The **Techex Darwin Manager** connector enables seamless integration between Dat
 **Solution**: The connector enables operators to instantiate workflow blueprints in an interactive configuration window which automatically presents all parameters defined by the blueprint, allowing users to enter the required values before the workflow is activated. This guided experience ensures that all relevant deployment-specific settings are captured in a single, user-friendly interface while preserving the integrity and reusability of the underlying blueprint.
 
 **Benefit**: The guided parameter entry process improves configuration accuracy, reduces deployment errors, and eliminates the need for post-deployment workflow modifications. As a result, organizations benefit from greater consistency, improved operational efficiency, and the ability to reuse a single blueprint across numerous deployment scenarios.
+
+## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Techex_Darwin_Manager_Technical).
