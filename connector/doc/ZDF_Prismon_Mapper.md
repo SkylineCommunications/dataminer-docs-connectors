@@ -21,7 +21,7 @@ The mapper uses the stream discovery data from the configured Prismon elements a
 
 - **Flexible matching rules**: Supports HLS and DASH streams, with optional backup and geo criteria.
 
-- **CSV mapping import**: Imports service mapping rules from CSV files, with merge and synchronize options for managing larger configurations.
+- **CSV mapping import**: Imports service mapping rules from CSV files, with merge and synchronization options for managing larger configurations.
 
 - **Reduced service churn**: Prevents duplicate updates when a service already references the active TAP stream object.
 
