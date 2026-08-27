@@ -10660,6 +10660,8 @@
     topicUid: Connector_help_Tetronik_DAKS_-_Department
 - name: Thales
   items:
+  - name: Thales S7HP
+    topicUid: Connector_help_Thales_S7HP
   - name: Thales TDU21K50
     topicUid: Connector_help_Thales_TDU21K50
   - name: Thales TDU21K50 Exciter A
