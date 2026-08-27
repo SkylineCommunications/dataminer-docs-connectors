@@ -10160,6 +10160,11 @@
   items:
   - name: Techex Darwin
     topicUid: Connector_help_Techex_Darwin
+  - name: Techex Darwin Manager
+    topicUid: Connector_help_Techex_Darwin_Manager
+    items:
+    - name: Techex Darwin Manager Technical
+      topicUid: Connector_help_Techex_Darwin_Manager_Technical
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
