@@ -6,23 +6,17 @@ uid: Connector_help_Agilent_N9010A-526_EXA
 
 ## About
 
-The Agilent N9010A-526 EXA connector allows seamless integration of the Agilent (Keysight) N9010A EXA
-signal analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument
-information over a **virtual (VISA) connection** driven by the Rohde & Schwarz RsInstrument library,
-making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from
-a single interface. The N9010A-526 option covers a **9 kHz to 26.5 GHz** frequency range. The device
-connection is configured through the element's **Device IP Address**, **Device Port** and
-**connection type** (VXI-11, Raw Socket or HiSLIP).
+The Agilent N9010A-526 EXA connector allows seamless integration of the Agilent (Keysight) N9010A EXA signal analyzer into DataMiner. It provides real-time access to spectrum trace data and instrument information over a **virtual (VISA) connection** driven by the Rohde & Schwarz RsInstrument library, making it easy to monitor measurements, adjust analyzer settings, and automate RF signal workflows from a single interface.
 
 ## Key Features
 
 - **Real-time spectrum analysis**: View live trace data from the analyzer directly in DataMiner's spectrum analysis component.
-- **Instrument identification**: Read the Manufacturer, Model, Serial Number, and Firmware Version of the connected device.
-- **Measurement control**: Configure start/stop/center frequency, span, reference level and scale, sweep time and points, resolution bandwidth (RBW), video bandwidth (VBW), and input attenuation — including their AUTO modes.
-- **Sweep mode**: Select Single or Continuous sweep directly from DataMiner.
+- **Instrument identification**: View information about the connected device, such as the manufacturer and model.
+- **Measurement control**: Adjust analyzer settings directly from DataMiner, including frequency, bandwidth, sweep, attenuation, and reference-level parameters.
+- **Sweep mode**: Choose your preferred mode of sweep acquisition: *Single* or *Continuous*.
 - **Zero-span sweep**: Start a zero-span, time-adjusted rolling trace acquisition on demand.
-- **Preset**: Restore the instrument's default settings from DataMiner with a confirmation-guarded button.
-- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025) or HiSLIP.
+- **Preset**: Restore the instrument to its default configuration directly from DataMiner.
+- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025), or HiSLIP.
 
 ## Use Cases
 
@@ -56,4 +50,3 @@ The device connection is configured through the element's IP address, port, and 
 
 > [!NOTE]
 > For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Agilent_N9010A-526_EXA_Technical).
-
