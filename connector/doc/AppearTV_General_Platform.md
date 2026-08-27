@@ -89,7 +89,15 @@ The element should be configured as follows (for the first IP address, use the I
 
 ### Configuration
 
+#### Web Interface
+
 If authentication is enabled on the web interface of the device, the **User Name** and **Password** can be set via the **Credentials** page button on the **General** page.
+
+#### HTTP Polling
+
+HTTP polling is batched by default. Some devices cannot process this many requests at once and may time out due to dropped connections. For such devices, the polling mode should be set to **Interval** on the **General - Polling Config** page.
+
+The **Polling Interval** can then be set to a low value, like _5 s_, then increased until the element timeouts have stopped.
 
 ## Usage
 
