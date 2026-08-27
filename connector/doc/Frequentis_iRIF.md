@@ -16,4 +16,4 @@ This is a DataMiner connector for the **Frequentis iRIF**, an IP-based radio gat
 ## Technical Information
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Frequentis_iRIF_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Frequentis_iRIF_Technical).
