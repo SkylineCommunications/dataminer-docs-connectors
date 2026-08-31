@@ -18,8 +18,9 @@ The **Casa Systems C100G** is a chassis that has separate modules for downstream
 | 2.0.0.x [Obsolete] | Changed the "Display Column" into the Measurement Upstream and Downstream tables.                                                                 | No              | No                  |
 | 2.0.1.x            | Display key and namingFormat option in Docs If Signal Quality Table.                                                                              | No              | No                  |
 | 2.1.0.x            | Spectrum analyzer functionality for logical and physical upstream interfaces.                                                                     | No              | No                  |
-| 3.0.0.x [SLC Main] | Specific layout focusing on Edge QAM functionalities.                                                                                             | No              | Yes                 |
+| 3.0.0.x            | Specific layout focusing on Edge QAM functionalities.                                                                                             | No              | Yes                 |
 | 4.0.1.x            | Supports VCCAPs                                                                                                                                   | No              | Yes                 |
+| 4.0.2.x [SLC Main] | New Video Overview and Video Sessions pages with per-interface video QAM port, channel and input-port statistics and video session details.       | No              | Yes                 |
 | 5.0.0.x            | Specific Lite version, focused on performance. Polling of big tables is filtered and performed by QActions.                                       | No              | Yes                 |
 | 5.0.1.x            | DCF feature added.                                                                                                                                | Yes             | Yes                 |
 | 6.0.0.x            | Custom version developed for Unity Media. Lite version of Casa Systems C100G version 3.0.0.x polling interfaces, QAM streams, and QAM interfaces. | No              | Yes                 |
@@ -205,6 +206,38 @@ This page displays different tables with information regarding the video streams
 ### Video Control Page
 
 This page contains several parameters that allow you to define certain values for the SimulCrypt-related parameters. It is possible to define the **Video SimulCrypt Crypto Period**, the **ECMG Timeout** and **Retries** time and the **SimulCrypt Load Balancing**.
+
+## Usage (Range 4.0.2.x)
+
+This range extends range 4.0.1.x with Video KPIs, which provide insight into the
+video processing of the Casa Systems C100G through two additional pages. The video
+data is retrieved via SNMPv2.
+
+### Video Overview
+
+This page provides an aggregated view of the video processing per interface and
+contains the following tables:
+
+- **Casa Video QAM Port**: Displays the total bandwidth, the used bitrate and the
+  bitrate utilization per video QAM port.
+- **Casa Video Channel Stats**: Displays the number of active video sessions per
+  channel.
+- **Casa Video Input Port Stats**: Displays the number of active video sessions
+  per input port.
+
+Each of these tables includes an interface description, which is resolved from the
+Interface table so the video statistics can be easily correlated with the
+corresponding interface.
+
+### Video Sessions
+
+This page displays the Casa Video Session table, which contains detailed
+information about the active video sessions. For each session it shows, among
+other things, the QAM Channel, the source and destination IP addresses and UDP
+ports, the input and output program numbers, detected and requested bitrates,
+detected jitter, the input and output state, and detailed input/output transport
+stream statistics (such as detected packets, PSI, PAT version, TSID and various
+packet counters). The Session ID is displayed in decimal format.
 
 ## Usage (Range 5.0.0.x)
 
