@@ -5427,6 +5427,9 @@
     topicUid: Connector_help_Imagine_Communications_SFP6800+D_-_Tx2
   - name: Imagine Communications SX Pro Multiviewer
     topicUid: Connector_help_Imagine_Communications_SX_Pro_Multiviewer
+    items:
+    - name: Imagine Communications SX Pro Multiviewer Technical
+      topicUid: Connector_help_Imagine_Communications_SX_Pro_Multiviewer_Technical
   - name: Imagine Communications VAX SD DMB IRTDAB Np1
     topicUid: Connector_help_Imagine_Communications_VAX_SD_DMB_IRTDAB_Np1
   - name: Imagine Communications VDA6800+
