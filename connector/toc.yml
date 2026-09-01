@@ -5279,6 +5279,8 @@
     topicUid: Connector_help_iDirect_X5_Satellite_Router
   - name: iDirect X7 Satellite Router
     topicUid: Connector_help_iDirect_X7_Satellite_Router
+  - name: iDirect Intuition
+    topicUid: Connector_help_iDirect_Intuition
 - name: IEC 60870
   items:
   - name: IEC 60870 5-104
