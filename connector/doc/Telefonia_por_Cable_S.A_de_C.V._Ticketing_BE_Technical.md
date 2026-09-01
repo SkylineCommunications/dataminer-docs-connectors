@@ -29,6 +29,7 @@ When you have created the element, configure the following parameters:
 - **Ticketing Processing**: If enabled, all tickets received will be processed and sent to the respective API. If disabled, no tickets will be processed, but all tickets will still be received.
 - **Max Retries**: Specifies how many retries a ticket has for each operation, so if a ticket fails the connector will try again. If the maximum number of retries is reached, the ticket will be marked as *Error* and will not be processed further.
 - **Max Tickets Per Request**: Specifies how many tickets are sent in each operation request to avoid sending all tickets in one single request. This means that it can take multiple requests to fulfill an operation for all available tickets.
+- **Ticket Retention Time**: Specifies how long (in seconds) a completed ticket remains in the Ticket Overview table before being automatically removed (default: *3600*, i.e. 1 hour; set to *0* for *Real Time*, meaning tickets are not retained after completion).
 
 ## How to Use
 
