@@ -11020,6 +11020,9 @@
     topicUid: Connector_help_Vertex_1230
   - name: Vertex 7134
     topicUid: Connector_help_Vertex_7134
+    items:
+      - name: Vertex 7134 Technical
+        topicUid: Connector_help_Vertex_7134_Technical
   - name: Vertex 7200
     topicUid: Connector_help_Vertex_7200
   - name: ACU Vertex 7200 DTR
