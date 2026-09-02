@@ -4,89 +4,74 @@ uid: Connector_help_ZTE_ZXA10_C600
 
 # ZTE ZXA10 C600
 
-The ZXA10 C600 is large-capacity optical access equipment. It supports ultra-high bandwidth, big video, FMC, and network re-architecture, as well as carrier-class QoS and security.
-
-This connector monitors the complete device and has several configuration options for data display and setup. Different possibilities are available for alarm monitoring and trending.
-
 ## About
 
-### Version Info
+The **ZTE ZXA10 C600** connector monitors ZTE ZXA10 C600 GPON OLT chassis via SNMPv2. It provides
+visibility into chassis health, board and power status, uplink optical (SFP) status, and the
+GPON/XGS-PON and Ethernet interfaces that deliver subscriber services — all from within DataMiner,
+without relying on the vendor's own element management system.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [obsolete]   | Initial version. | -            | -                 |
-| 1.0.1.x [obsolete]   | Removed deprecated OLTs. | 1.0.0.10        | -                 |
-| 1.0.2.x [SLC Main]   | Update Rates NuGets. | 1.0.1.2        | -                 |
+## Key Features
 
-### Product Info
+- **Chassis & board health monitoring**: tracks board temperature, board power, power module, and
+  CPU/system status so hardware issues are caught early.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | -                      |
-| 1.0.2.x   | -                      |
+- **Uplink optical monitoring**: reports Rx/Tx optical power on uplink SFPs, plus configurable SFP
+  power thresholds, to catch optical degradation before it causes an outage.
 
-### System Info
+- **GPON & XGS-PON service visibility**: models GPON interfaces, GPON channels, XGS-PON channels,
+  and PON interface status, giving operators insight into subscriber-facing service health.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
+- **Ethernet interface monitoring**: standard and vendor-specific Ethernet interface status, rates,
+  and bandwidth utilization.
 
-## Configuration
+- **LLDP neighbor discovery**: local port and remote-neighbor LLDP tables for topology awareness.
 
-### Connections
+- **Configurable polling**: individual polling groups can be enabled or disabled to tune load on
+  large deployments.
 
-#### SNMP Main Connection
+## Use Cases
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Proactive optical-link degradation detection
 
-SNMP CONNECTION:
+**Challenge**: Optical uplinks degrade gradually, and by the time a customer notices, service has
+already been impacted.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Solution**: The connector continuously polls Rx/Tx optical power and SFP power thresholds on the
+Uplink Optical table.
 
-SNMP Settings:
+**Benefit**: NOC operators can spot a degrading uplink and dispatch a technician before it causes a
+customer-facing outage.
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+### Centralized GPON access-network monitoring
 
-### Initialization
+**Challenge**: GPON access infrastructure from multiple vendors is hard to monitor consistently
+from a single pane of glass.
 
-No extra configuration is needed.
+**Solution**: The connector exposes GPON/XGS-PON channels and PON interface status as standard
+DataMiner tables, alongside chassis health.
 
-### Redundancy
+**Benefit**: Operators get a consistent, vendor-agnostic view of GPON access health inside
+DataMiner, without switching to the vendor's own EMS.
 
-There is no redundancy defined.
+### Hardware-health early warning
 
-## How to use
+**Challenge**: Board or power-module failures on an OLT chassis can take down service for many
+subscribers at once.
 
-### General page
+**Solution**: The connector polls board temperature, board power, and power module tables on a
+regular timer.
 
-Two key parameters are included on this page:
+**Benefit**: Hardware issues are surfaced early, reducing the blast radius of an unplanned chassis
+failure.
 
-- **DisplayKey Config**: If you have write permission, this parameter allows you to select the format for the Display Key column in the following tables: Ethernet Interfaces, PON Interfaces, PON Interfaces Status and Optic Status. The available options use the information extracted from the Iftable and IfXTable (ifDescription, IfName, IfAlias) and combine these in different ways:
+## Technical Reference
 
-- Alias
-  - Name
-  - Alias + Name
-  - Name + Alias
+### Prerequisites
 
-- **DisplayKey Separator:** Works together with the DisplayKey Config parameter to fully customize the row identifier.
+- **DataMiner** version `10.3.0.0 - 12752` or higher is required.
+- **SNMPv2 connectivity** to the ZXA10 C600 chassis (community strings configured on the DataMiner
+  element) is required.
 
-For example, imagine the If identifiers have the following values:
-
-- Alias: My Interface
-- Description: Test Interface
-- Name: Interface01
-
-The table below shows the possible display key format, depending on the selected options:
-
-| Separator (Quotes are ignored) | Alias   | Name    | Alias+Name            | Description+Alias        | Name+Alias            |
-|------------------------------------|-------------|-------------|---------------------------|------------------------------|---------------------------|
-| "-"                                | MyInterface | Interface01 | MyInterface-Interface01   | Test Interface-MyInterface   | Interface01-MyInterface   |
-| " - "                              | MyInterface | Interface01 | MyInterface - Interface01 | Test Interface - MyInterface | Interface01 - MyInterface |
-| "/"                                | MyInterface | Interface01 | MyInterface/Interface01   | Test Interface/MyInterface   | Interface01/MyInterface   |
-
-Note: Try to use separators that are not included in any of the interface identification fields. This will allow easier searching for alarm or trend information.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_ZTE_ZXA10_C600_Technical).
