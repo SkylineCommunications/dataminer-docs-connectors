@@ -11669,6 +11669,9 @@
     topicUid: Connector_help_ZTE_ZMC
   - name: ZTE ZXA10 C600
     topicUid: Connector_help_ZTE_ZXA10_C600
+    items:
+    - name: ZTE ZXA10 C600 Technical
+      topicUid: Connector_help_ZTE_ZXA10_C600_Technical
   - name: ZTE ZXA10 C600 GPON Platform
     topicUid: Connector_help_ZTE_ZXA10_C600_GPON_Platform
     items:
