@@ -5245,6 +5245,8 @@
     items:
       - name: iDirect Evolution Platform VSAT Technical
         topicUid: Connector_help_iDirect_Evolution_Platform_VSAT_Technical
+  - name: iDirect Intuition
+    topicUid: Connector_help_iDirect_Intuition
   - name: iDirect iQ200
     topicUid: Connector_help_iDirect_iQ200
   - name: iDirect LineCard Virtual
@@ -5279,8 +5281,6 @@
     topicUid: Connector_help_iDirect_X5_Satellite_Router
   - name: iDirect X7 Satellite Router
     topicUid: Connector_help_iDirect_X7_Satellite_Router
-  - name: iDirect Intuition
-    topicUid: Connector_help_iDirect_Intuition
 - name: IEC 60870
   items:
   - name: IEC 60870 5-104

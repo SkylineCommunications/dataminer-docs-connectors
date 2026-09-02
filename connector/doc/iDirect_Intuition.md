@@ -10,7 +10,7 @@ The ST Engineering iDirect Intuition connector delivers comprehensive visibility
 
 The connector provides access to configuration, inventory, alarms, events, topology, and performance data across the Intuition ecosystem. By consolidating this information within DataMiner, operations teams gain a unified view of network health, service status, and infrastructure availability while maintaining clear relationships between managed entities.
 
-Designed for modern satellite operations, the Intuition connector helps organisations improve situational awareness, accelerate troubleshooting, and streamline operational workflows.
+Designed for modern satellite operations, the Intuition connector helps organizations improve situational awareness, accelerate troubleshooting, and streamline operational workflows.
 
 ## Key Features
 
@@ -35,27 +35,27 @@ Gain a consolidated view of operational assets and managed objects across the sa
 
 ### Alarm and Event Monitoring
 
-Centralise alarms and events within DataMiner to enable faster fault detection, improved incident management, and proactive service assurance.
+Centralize alarms and events within DataMiner to enable faster fault detection, improved incident management, and proactive service assurance.
 
 ### Relationship-Aware Topology
 
-Visualise relationships between infrastructure, network resources, services, terminals, and iNets to better understand dependencies and accelerate root-cause analysis.
+Visualize relationships between infrastructure, network resources, services, terminals, and iNets to better understand dependencies and accelerate root-cause analysis.
 
 ### Performance Monitoring and Analytics
 
-Track operational KPIs, service performance, utilisation trends, and infrastructure health through DataMiner dashboards, reports, and analytics tools.
+Track operational KPIs, service performance, utilization trends, and infrastructure health through DataMiner dashboards, reports, and analytics tools.
 
 ### Scalable Monitoring Platform
 
-Support large-scale satellite environments with efficient data collection, inventory synchronisation, object-based monitoring, and performance monitoring capabilities.
+Support large-scale satellite environments with efficient data collection, inventory synchronization, object-based monitoring, and performance monitoring capabilities.
 
 ## Benefits
 
 - Improved operational visibility across satellite networks and ground infrastructure.
 - Scalable monitoring of terminals and iNets as individual managed objects.
 - Faster identification and resolution of service-impacting issues.
-- Enhanced service assurance through centralised monitoring and alarm management.
-- Better capacity planning and resource optimisation using historical performance data.
+- Enhanced service assurance through centralized monitoring and alarm management.
+- Better capacity planning and resource optimization using historical performance data.
 - Reduced operational complexity by consolidating monitoring into a single platform.
 - Increased operational efficiency through automation, analytics, and topology awareness.
 
@@ -79,7 +79,7 @@ Track the health and status of critical ground-system components and supporting 
 
 ### Capacity Planning
 
-Analyse utilisation trends and performance metrics to support growth planning and network optimisation initiatives.
+Analyze utilization trends and performance metrics to support growth planning and network optimization initiatives.
 
 ### Operational Troubleshooting
 
@@ -87,7 +87,7 @@ Leverage object relationships, topology, alarms, and performance insights to acc
 
 ## Short Marketing Description
 
-**Monitor and manage the ST Engineering iDirect Intuition satellite ground system through DataMiner, providing centralised visibility into infrastructure, terminals, iNets, services, alarms, events, topology, and performance analytics for efficient operations and service assurance.**
+**Monitor and manage the ST Engineering iDirect Intuition satellite ground system through DataMiner, providing centralized visibility into infrastructure, terminals, iNets, services, alarms, events, topology, and performance analytics for efficient operations and service assurance.**
 
 ## One-Line Catalogue Tagline
 
