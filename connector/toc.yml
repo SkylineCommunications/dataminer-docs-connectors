@@ -9258,6 +9258,11 @@
     topicUid: Connector_help_Skyline_Flow_Tracking
   - name: Skyline Generic Clock Wall
     topicUid: Connector_help_Skyline_Generic_Clock_Wall
+  - name: Skyline Generic OpenSearch Query Manager
+    topicUid: Connector_help_Skyline_Generic_OpenSearch_Query_Manager
+    items:
+      - name: Skyline Generic OpenSearch Query Manager Technical
+        topicUid: Connector_help_Skyline_Generic_OpenSearch_Query_Manager_Technical
   - name: Skyline Generic Provisioning
     topicUid: Connector_help_Skyline_Generic_Provisioning
   - name: Skyline Generic Rack Passive Device Generator
@@ -10255,6 +10260,9 @@
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._SPA_CPE_Indexer
   - name: Telefonia por Cable S.A de C.V. Ticketing WM
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM
+    items:
+    - name: Telefonia por Cable S.A de C.V. Ticketing WM Technical
+      topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_WM_Technical
   - name: Telefonia por Cable S.A. de C.V. Ticketing BE
     topicUid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE
     items:
