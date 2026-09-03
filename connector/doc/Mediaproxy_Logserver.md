@@ -12,6 +12,8 @@ The Mediaproxy Logserver connector enables comprehensive monitoring and control 
 
 - **Event and extract integration**: Retrieves and displays event types, subtypes, and extracts directly from the REST and Push APIs, ensuring operators can easily track system events and content extraction processes.
 
+- **Automated channel thumbnail visualization**: The connector retrieves channel thumbnails, stores them in a configured folder, and exposes the file references so the images can be used for visualization workflows.
+
 ## Use Cases
 
 ### Unified Compliance Monitoring
