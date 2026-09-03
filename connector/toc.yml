@@ -4487,6 +4487,9 @@
     topicUid: Connector_help_Generic_JMS_Producer
   - name: Generic KAFKA Consumer
     topicUid: Connector_help_Generic_KAFKA_Consumer
+    items:
+      - name: Generic KAFKA Consumer Technical
+        topicUid: Connector_help_Generic_KAFKA_Consumer_Technical
   - name: Generic KAFKA Producer
     topicUid: Connector_help_Generic_KAFKA_Producer
     items:
