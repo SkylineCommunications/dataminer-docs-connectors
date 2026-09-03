@@ -4,40 +4,64 @@ uid: Connector_help_LTN_Transport_Portal
 
 # LTN Transport Portal
 
-The LTN transport portal is a platform for live video transmission solutions. It uses a global network of Points of Presence (PoPs) to ensure efficient and low-latency video delivery. With intelligent adaptive bit rate (ABR) encoding and dynamic stream routing, it optimizes video quality and routing paths based on real-time network conditions.
-
 ## About
 
-### Version Info
+The **LTN Transport Portal** connector provides DataMiner with centralized monitoring of LTN Transport Portal booking and distribution data. It retrieves booking information, endpoint details, endpoint statuses, distribution groups, and API health through the LTN Transport Portal HTTP API, giving operators a consolidated view of transport activity and service status.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version. | -            | -                 |
+## Key Features
 
-### System Info
+- **Booking lifecycle monitoring**: Monitor scheduled, running, past, cancelled, and unknown bookings, including booking status, timing, source and destination endpoints, rate, resolution, and work order information.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+- **Endpoint visibility**: Track source, destination, standard converter, and unknown booking endpoints with connector state, endpoint status, channel information, and traffic rates in packets per second and bits per second.
 
-## Configuration
+- **Distribution group monitoring**: Retrieve distribution groups and their associated endpoints to provide visibility into how transport paths are organized.
 
-### Connections
+- **API health monitoring**: Expose the status and response information of the main API calls so operators can quickly identify communication or data retrieval issues.
 
-#### HTTP Connection
+- **Configurable polling**: Configure API-specific polling intervals, pagination, page sizes, and polling history to balance data freshness with API load.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+- **Secure API authentication**: Authenticate through the portal's token endpoint using configured credentials and an API key.
 
-HTTP CONNECTION:
+- **Multithreaded HTTP requests**: Support parallel HTTP request handling for active-source and polling operations, with runtime statistics for thread usage, waiting threads, and command duration.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+- **Web interface access**: Provide a configurable link to the LTN Transport Portal web interface directly from the element.
 
-### Initialization
+## Use Cases
 
-When the element has been created, specify the username, password, and API key to establish a connection with the portal. You will need to request an API key from the vendor.
+### Monitor transport bookings
 
-## How to use
+**Challenge**: Operators need to follow transport activity across multiple booking states and quickly identify bookings that require attention.
 
-After you have configured the credentials, and the connector has obtained the token, the connector will send requests to retrieve the endpoints, bookings, and distribution groups every minute.
+**Solution**: Use the booking pages to monitor scheduled, running, past, cancelled, and unknown bookings, together with their timing, status, endpoints, rates, and API status.
+
+**Benefit**: Operations teams gain a single operational view of booking activity and can more quickly investigate missing, failed, or unexpected bookings.
+
+### Verify endpoint and distribution health
+
+**Challenge**: Transport issues can originate from an endpoint or from the way endpoints are organized into distribution groups.
+
+**Solution**: Monitor source and destination endpoint status, connector state, traffic rates, and distribution group membership from DataMiner.
+
+**Benefit**: Operators can identify endpoint-related problems and assess their impact on transport paths without switching between multiple interfaces.
+
+
+## Technical Reference
+
+### Prerequisites
+
+- **DataMiner version 10.3.0.0 or higher** is required.
+
+### Connection
+
+The connector uses an **HTTP connection** to communicate with the LTN Transport Portal API. During element creation, provide the portal host or polling IP. The HTTP connection uses a default timeout of *20s*.
+
+### Supported API data
+
+The connector uses the LTN Transport Portal API to retrieve:
+
+- Bookings and booking endpoints.
+- Booking endpoint statuses.
+- Distribution groups and distribution group endpoints.
+- An authentication token through the portal token endpoint.
+
+The connector exposes the resulting data on the **Booking Endpoints**, **Bookings**, **Distribution Group**, **Polling Configurations**, and **Multi-Threading** pages, with separate booking views for scheduled, running, past, cancelled, and unknown bookings.

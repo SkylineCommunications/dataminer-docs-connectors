@@ -4053,6 +4053,7 @@
     topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
+    topicUid: Connector_technical_Evertz_Xenon_Switch
   - name: Evertz XPRF14
     topicUid: Connector_help_Evertz_XPRF14
   - name: Evertz XPS-EDGE
@@ -6044,6 +6045,9 @@
   items:
   - name: LTN Transport Portal
     topicUid: Connector_help_LTN_Transport_Portal
+    items:
+    - name: LTN Transport Portal Technical
+      topicUid: Connector_help_LTN_Transport_Portal_Technical
 - name: Lumen
   items:
   - name: Lumen VYVX Media Portal
@@ -7337,7 +7341,8 @@
   - name: Newtec MDM6000
     topicUid: Connector_help_Newtec_MDM6000
   - name: Newtec MDM6100
-    topicUid: Connector_help_Newtec_MDM6100
+    topicUid: Connector_help_Newtec_M6100
+    topicUid: Connector_help_Newtec_M6100_Technical
   - name: Newtec MNT Satlink Manager
     topicUid: Connector_help_Newtec_MNT_Satlink_Manager
   - name: Newtec NOP1760
@@ -8701,6 +8706,7 @@
   items:
   - name: ScheduAll Generic Interop Manager
     topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
+    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator
@@ -10225,6 +10231,9 @@
     topicUid: Connector_help_Tektronix_SignalVu
   - name: Tektronix SPG8000
     topicUid: Connector_help_Tektronix_SPG8000
+    items:
+    - name: Tektronix SPG8000 Technical
+      topicUid: Connector_help_Tektronix_SPG8000_Technical
   - name: Tektronix SPG8000 PTP Interface
     topicUid: Connector_help_Tektronix_SPG8000_PTP_Interface
   - name: Tektronix TG700
