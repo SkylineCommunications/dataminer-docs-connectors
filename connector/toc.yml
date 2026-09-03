@@ -6035,6 +6035,9 @@
   items:
   - name: LTN Transport Portal
     topicUid: Connector_help_LTN_Transport_Portal
+    items:
+    - name: LTN Transport Portal Technical
+      topicUid: Connector_help_LTN_Transport_Portal_Technical
 - name: Lumen
   items:
   - name: Lumen VYVX Media Portal
