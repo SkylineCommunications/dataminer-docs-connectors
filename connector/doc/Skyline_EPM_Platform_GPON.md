@@ -6,52 +6,36 @@ uid: Connector_help_Skyline_EPM_Platform_GPON
 
 ## About
 
-The Skyline EPM Platform GPON connector is the backend component of the Skyline EPM Solution for GPON infrastructures. It aggregates KPIs from multiple OLT platform elements, consolidating data for higher-level visualization and analysis in the Skyline EPM Platform frontend.
-
-It supports integration with GPON OLT devices from multiple vendors, including ZTE, Huawei, and Nokia, and organizes the data into visual topologies for network navigation. This connector is designed to handle large volumes of GPON performance and topology data, making it suitable for large-scale deployments.
+Skyline EPM Platform GPON is a virtual DataMiner connector that manages GPON EPM topology and CPE data. It turns collector-provided provisioning data into a consistent hierarchy of networks, markets, hubs, OLTs, slots, ports, ONTs, subscribers, and passive split entities.
 
 ## Key Features
 
-- **Backend KPI aggregation**: Collects and processes KPIs from GPON OLT platform elements for central aggregation.
-- **Multi-vendor OLT support**: Compatible with ZTE ZXA10 C600, Huawei 5600-5800, and Nokia ISAM 7300 FX GPON platforms.
-- **Visual GPON topologies**: Displays GPON service hierarchy from network level down to ONTs, including Split Route, Split Distribution, and Split FAT.
-- **Topology provisioning**: Handles GPON topology and provisioning file exchange with the Skyline EPM Platform frontend.
-- **Automated workflow**: Supports automated data flow between OLTs, the GPON backend, and the EPM frontend.
+- Deploys as either a Backend data-import element or a Frontend CPE-view element from the same connector.
+- Imports GPON topology through configured CSV import and export paths.
+- Coordinates provisioning work between elements through InterApp calls and a Frontend messaging buffer.
+- Maintains reset state to remove stale topology data after a successful provisioning cycle.
+- Calculates overview KPI percentages for GPON topology and passive entities.
 
 ## Use Cases
 
-### Use Case 1
+### Maintain a CPE-facing GPON topology view
 
-**Challenge**: Aggregating performance and topology data from multiple GPON OLT vendors.
+**Challenge:** GPON provisioning data originates from multiple collector elements and must be presented as one navigable topology.
 
-**Solution**: Deploy the Skyline EPM Platform GPON connector as the GPON backend component to collect and standardize KPI data.
+**Solution:** Deploy a Frontend element to coordinate requests and expose the CPE hierarchy.
 
-**Benefit**: Provides a unified, vendor-agnostic performance view for GPON networks.
+**Benefit:** Operators can navigate from network to subscriber and passive-split data in a consistent EPM view.
 
-### Use Case 2
+### Consolidate collector provisioning data
 
-**Challenge**: Navigating and managing complex GPON network structures.
+**Challenge:** Raw provisioning data must be imported and retained before it can drive CPE topology views.
 
-**Solution**: Use the connector's visual topologies to explore the network hierarchy and understand the relationships between network, OLT, ports, and ONTs.
+**Solution:** Deploy a Backend element to process collector data and populate backend topology tables.
 
-**Benefit**: Improves operational efficiency and accelerates troubleshooting.
-
-### Use Case 3
-
-**Challenge**: Keeping provisioning data synchronized across multiple systems.
-
-**Solution**: Utilize the connector's import/export functionality to manage GPON topology and provisioning file exchange between EPM components.
-
-**Benefit**: Reduces configuration errors and ensures accurate, consistent network data.
+**Benefit:** The provisioning workflow is separated from the Frontend presentation role while using one connector package.
 
 ## Technical Reference
 
-### Prerequisites
+This connector requires DataMiner `10.3.0.0 - 12752` or later and a GPON EPM deployment with the required collector, Backend, and Frontend elements. The technical reference describes configuration and operation: <xref:Connector_help_Skyline_EPM_Platform_GPON_Technical>.
 
-- **Integration with Skyline EPM Platform frontend** for data aggregation and visualization.
-- **Automation scripts** `EpmBeToOlt` and `EpmBeToOltPassives` must be deployed.
-- **Correctly configured file import/export paths** for topology and provisioning data.
-- Access credentials for remote directories if using remote import/export.
-
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Skyline_EPM_Platform_GPON_Technical).
+The published technical page is maintained in the `dataminer-docs-connectors` repository and must be kept synchronized with this README's marketing content.
