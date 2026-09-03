@@ -4,125 +4,49 @@ uid: Connector_help_Tektronix_SPG8000
 
 # Tektronix SPG8000
 
-The SPG8000 is a precision multiformat video signal generator, suitable for master synchronization and reference applications. It provides multiple video reference signals, such as black burst, HD tri-level sync, and serial digital and composite analog test patterns. It also provides time reference signals such as time code and NTP (Network Time Protocol).
-
 ## About
 
-The connector polls information from the Tektronix SPG8000 via an SNMP connection. Traps are also implemented; the necessary data will be refreshed as soon as a trap is received.
+The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 master clock systems in DataMiner. It combines SNMP monitoring with the device's API to provide visibility into timing references, synchronization status, signal outputs, hardware health, and alarms.
 
-### Version Info
+## Key Features
 
-| Range            | Key Features                                                                                        | Based on | System Impact |
-|----------------------|---------------------------------------------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                                                         | -            | -                 |
-| 1.0.1.x              | Second connection for serial API polling                                                                | -            | -                 |
-| 1.0.2.x [SLC Main]   | Modified exports in PTP table. Some of the PTP parameters can now be exported as standalone parameters. | -            | -                 |
+- **Master clock health monitoring**: Monitor overall device status, uptime, firmware information, temperature, battery status, and front-panel LED states.
 
-### Product Info
+- **Reference and synchronization visibility**: Monitor GPS, genlock, time status, signal quality, satellites, and loss-of-lock conditions.
 
-| Range | Firmware Version |
-|-----------|----------------------|
-| 1.0.0.x   | 2.2                  |
-| 1.0.1.x   | 3.0                  |
-| 1.0.2.x   | 3.0                  |
+- **PTP monitoring**: Track Precision Time Protocol status, including clock identity, domain, priorities, clock class, clock accuracy, steps removed, and time offset information.
 
-### System Info
+- **Signal and output monitoring**: Monitor LTC, black, SDI, AES, embedded audio, and Dolby E interfaces, including video, ancillary data, timecode, and metadata information.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components             |
-|-----------|---------------------|-------------------------|-----------------------|---------------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                               |
-| 1.0.1.x   | No                  | Yes                     | -                     | Tektronix SPG8000 PTP Interface |
-| 1.0.2.x   | Yes                 | Yes                     | -                     | Tektronix SPG8000 PTP Interface |
+- **Hardware and alarm supervision**: Monitor board voltages, fan speeds, power supply status and test history, as well as device alarms received through traps.
 
-## Configuration
+## Use Cases
 
-### Connections
+### Broadcast timing infrastructure monitoring
 
-#### SNMP Main connection
+**Challenge**: Timing and synchronization issues can affect multiple downstream broadcast systems, while device status may otherwise require separate access to each master clock.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+**Solution**: Use the connector to centralize SPG8000 status, reference information, synchronization indicators, and alarm conditions in DataMiner.
 
-SNMP CONNECTION:
+**Benefit**: Operators can identify timing problems earlier and correlate them with other monitored broadcast infrastructure.
 
-- **IP address/host**: The polling IP of the device.
+### PTP grandmaster supervision
 
-SNMP Settings:
+**Challenge**: PTP deployments require visibility into the active clock state and synchronization quality across the timing network.
 
-- **Port number**: The IP port of the device, by default *161*.
-- **Get community string**: The community string used when reading values from the device, by default *public*.
-- **Set community string**: The community string used when setting values on the device, by default *private*.
+**Solution**: Use the PTP status data to monitor clock identity, domain, priorities, clock quality, steps removed, and offset-related information.
 
-#### Serial API connection \[1.0.1.x\]
+**Benefit**: Network operators gain the information needed to verify grandmaster operation and investigate synchronization changes.
 
-In range 1.0.1.x, this connector also uses a serial connection to poll the API.
+### Signal-path and hardware health checks
 
-SERIAL CONNECTION:
+**Challenge**: Faulty fans, power supplies, voltages, or output interfaces can compromise timing and reference distribution.
 
-- **IP address/host**: The polling IP of the device.
+**Solution**: Monitor hardware health, power supply test history, voltage levels, fan speeds, reference inputs, and SDI/audio-related status from the DataMiner element.
 
-SERIAL Settings:
+**Benefit**: Maintenance teams can detect developing hardware issues and troubleshoot signal or reference failures from a single operational view.
 
-- **Port number**: 5000
-- **Bus address**: None/disabled by default.
 
-### Web Interface
+### Exported connector
 
-The web interface is only accessible when the client machine has network access to the product.
-
-## How to use
-
-The element created with this connector consists of the data pages detailed below.
-
-### General
-
-This page contains general information that is retrieved from the device, such as **Firmware Version**, **Hardware Status**, **Main** and **CPU temperature** and **Battery Status.**
-
-### LEDs
-
-This page contains information about the status of the LEDs on the front panel of the device: **Interior LED**, **Exterior LED**, **Time LED** and **Fault LED**.
-
-### Voltage
-
-This page contains information about the different voltages from the different sections of the device, such as **Main Board +5.0V**, **Main Board +3.3V**, **Slot 1 +5.0V**, **Slot 2 +3.3V**, **Slot 3 +8.0AV**, **Slot 4 +5.0AV**, etc.
-
-### Fan
-
-This page displays the speed of the different fans: the **main fan**, **power supply 1(PS1) fan** and **power supply 2(PS2) fan.**
-
-### Power Supply
-
-This page contains critical information about each power supply of the device, such as **Active Hours**, **Standby Hours**, **FOM Status (TWH)** and **12V Status**. It also allows you to **Load Test History.**
-
-### Alarm Status
-
-This page contains status parameters that are associated with each trap the device sends. Based on the received traps, these parameters display *Alarm* or *OK*.
-
-This page also contains a configurable parameter, **Alarm Time-Slot**, which allows you to configure the interval to update the status parameters with incoming traps.
-
-### Status
-
-This page contains general parameters related to the **sources** and **time**.
-
-### Reference
-
-This page allows you to configure or check the status of the **input source** and **antenna**.
-
-### PTP
-
-This page contains a table where you can edit and monitor the PTP values.
-
-### LTC
-
-This page contains a table where you can edit and monitor the values for the 4 LTCs.
-
-### Black
-
-This page contains a table where you can edit and monitor the 3 Black entries.
-
-### AES
-
-This page contains **global parameters settings**, as well as a table with the **8 AES channels**.
-
-### Web Interface
-
-This page contains the web interface for the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
+The connector exports a **Tektronix SPG8000 - PTP Interface** child connector for PTP-related monitoring. Connectivity for the exported connector is managed by the parent connector.

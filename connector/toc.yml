@@ -10231,6 +10231,9 @@
     topicUid: Connector_help_Tektronix_SignalVu
   - name: Tektronix SPG8000
     topicUid: Connector_help_Tektronix_SPG8000
+    items:
+    - name: Tektronix SPG8000 Technical
+      topicUid: Connector_help_Tektronix_SPG8000_Technical
   - name: Tektronix SPG8000 PTP Interface
     topicUid: Connector_help_Tektronix_SPG8000_PTP_Interface
   - name: Tektronix TG700
