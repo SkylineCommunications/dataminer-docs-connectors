@@ -29,13 +29,21 @@ HTTP CONNECTION:
 After creating the element, the following configuration steps are required:
 
 1. Navigate to the **Communication Settings** page.
-2. Configure the **Username** and **Password** used to authenticate with the Techex Darwin.
-3. Navigate to the **Kafka Settings** page.
-4. Configure the Kafka connection parameters for real-time event/statistics streaming. Make sure the **Client ID** and **Group ID** are unique in the Darwin system for the messages to properly arrive at the intended DataMiner element.
-  The default kafka topics for each module are added automatically when the module data is polled if the correct **Topic Suffix** is configured. You can add other topics using the Context Menu of the **Kafka Topics** table.
+
+1. Configure the **Username** and **Password** used to authenticate with the Techex Darwin.
+
+1. Navigate to the **Kafka Settings** page.
+
+1. Configure the Kafka connection parameters for real-time event/statistics streaming.
+
+  Make sure the **Client ID** and **Group ID** are unique in the Darwin system for the messages to properly arrive at the intended DataMiner element.
+
+  The default kafka topics for each module are added automatically when the module data is polled if the correct **Topic Suffix** is configured. You can add other topics using the context menu of the **Kafka Topics** table.
 
 ## How to Use
 
-To reduce the system load, you can control the polling of each module from the **Modules** table on the **General** page. Disabling the polling of a module will disable the polling of data through the HTTP connection and disable the kafka topic subscription. The corresponding data will also be removed from the Module I/O and Statistics tables.
-
 Real-time statistics and performance metrics for modules, inputs, and outputs are updated through the Kafka subscription system for real-time monitoring and displayed on the Statistics page.
+
+To reduce the system load, you can control the polling of each module from the **Modules** table on the **General** page.
+
+Disabling the polling of a module will disable the polling of data through the HTTP connection and disable the Kafka topic subscription. The corresponding data will also be removed from the Module I/O and Statistics tables.

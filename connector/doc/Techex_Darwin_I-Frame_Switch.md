@@ -12,13 +12,13 @@ The **Techex Darwin I-Frame Switch** connector allows DataMiner to monitor and c
 
 ## Key Features
 
-- **Comprehensive Module Management**: Monitor and manage multiple processing modules with granular control over polling states, configuration parameters, and operational status for each module instance.
+- **Comprehensive module management**: Monitor and manage multiple processing modules with granular control over polling states, configuration parameters, and operational status for each module instance.
 
-- **Real-Time Kafka Integration**: Subscribe to Kafka topics for instant event streaming and statistics updates, enabling rapid response to changes in transport stream processing and immediate alerting on critical events.
+- **Real-time Kafka integration**: Subscribe to Kafka topics for instant event streaming and statistics updates, enabling rapid response to changes in transport stream processing and immediate alerting on critical events.
 
-- **Advanced Input/Output Monitoring**: Track all input and output streams with detailed visibility into source information, PID (Program Identifier) values, video status, and timing data for comprehensive stream management.
+- **Advanced input/output monitoring**: Track all input and output streams with detailed visibility into source information, PID (Program Identifier) values, video status, and timing data for comprehensive stream management.
 
-- **Flexible Configuration Control**: Manage advanced module settings including Linux process priorities, scheduler priorities, core affinity assignments, and seamless switching timeouts to optimize performance for specific operational requirements.
+- **Flexible configuration control**: Manage advanced module settings including Linux process priorities, scheduler priorities, core affinity assignments, and seamless switching timeouts to optimize performance for specific operational requirements.
 
 ## Use Cases
 
@@ -46,14 +46,13 @@ The **Techex Darwin I-Frame Switch** connector allows DataMiner to monitor and c
 
 **Benefit**: Accelerates troubleshooting workflows, enables proactive maintenance through trend analysis, and provides comprehensive audit trails for compliance and quality assurance purposes.
 
-## Technical Reference
-
-### Prerequisites
+## Prerequisites
 
 - **Kafka broker configuration** is required for real-time event streaming integration.
 
 - **DataMiner version 10.4.0.0 - 14003 or higher** is required for full compatibility with this connector's features.
 
+## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, configuration procedures, and page-by-page documentation, refer to our [technical documentation](xref:Connector_help_Techex_Darwin_I-Frame_Switch_Technical).
