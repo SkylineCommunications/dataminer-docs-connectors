@@ -589,6 +589,11 @@
       topicUid: Connector_help_Anywave_MHPTV_Technical
   - name: Anywave PA-8D-C-FA
     topicUid: Connector_help_Anywave_PA-8D-C-FA
+  - name: Anywave MHPTV CTL-M
+    topicUid: Connector_help_Anywave_MHPTV_CTL-M
+    items:
+    - name: Anywave MHPTV CTL-M Technical
+      topicUid: Connector_help_Anywave_MHPTV_CTL-M_Technical
 - name: APA
   items:
   - name: APA Sound Monitoring
@@ -5168,6 +5173,11 @@
     topicUid: Connector_help_Huawei_iManager_U2000_Element
   - name: Huawei iManager U2000 SNMP
     topicUid: Connector_help_Huawei_iManager_U2000_SNMP
+  - name: Huawei iMaster MAE
+    topicUid: Connector_help_Huawei_iMaster_MAE
+    items:
+    - name: Huawei iMaster MAE Technical
+      topicUid: Connector_help_Huawei_iMaster_MAE_Technical
   - name: Huawei iMaster NCE
     topicUid: Connector_help_Huawei_iMaster_NCE
   - name: Huawei iMaster NCE - Network Element
@@ -9419,6 +9429,10 @@
        topicUid: Connector_help_Slack_Messaging_technical
      - name: Slack Messaging Sending Messages Developer Guide
        topicUid: Connector_help_Slack_Messaging_sending_messages_developer
+- name: SMA
+  items:
+  - name: SMA Sunny Tripower
+    topicUid: Connector_help_SMA_Sunny_Tripower
 - name: Smappee
   items:
   - name: Smappee Platform
@@ -10151,6 +10165,11 @@
     items:
     - name: Techex Darwin I-Frame Switch Technical
       topicUid: Connector_help_Techex_Darwin_I-Frame_Switch_Technical
+  - name: Techex Darwin Manager
+    topicUid: Connector_help_Techex_Darwin_Manager
+    items:
+    - name: Techex Darwin Manager Technical
+      topicUid: Connector_help_Techex_Darwin_Manager_Technical
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
@@ -10651,6 +10670,8 @@
     topicUid: Connector_help_Tetronik_DAKS_-_Department
 - name: Thales
   items:
+  - name: Thales S7HP
+    topicUid: Connector_help_Thales_S7HP
   - name: Thales TDU21K50
     topicUid: Connector_help_Thales_TDU21K50
   - name: Thales TDU21K50 Exciter A
@@ -11573,6 +11594,11 @@
     items:
      - name: ZDF Paradigma Technical
        topicUid: Connector_help_ZDF_Paradigma_Technical
+  - name: ZDF Prismon Mapper
+    topicUid: Connector_help_ZDF_Prismon_Mapper
+    items:
+    - name: ZDF Prismon Mapper Technical
+      topicUid: Connector_help_ZDF_Prismon_Mapper_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
@@ -11664,11 +11690,11 @@
     items:
     - name: ZTE ZENIC ONE R22 Technical
       topicUid: Connector_help_ZTE_ZENIC_ONE_R22_Technical
-  - name: ZTE ZENIC ONE R22 ZXONE 9700E
-    topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E
+  - name: ZTE ZENIC ONE R22 - ZXONE 9700E
+    topicUid: Connector_help_ZTE_ZENIC_ONE_R22_-_ZXONE_9700E
     items:
-    - name: ZTE ZENIC ONE R22 ZXONE 9700E Technical
-      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_ZXONE_9700E_Technical
+    - name: ZTE ZENIC ONE R22 - ZXONE 9700E Technical
+      topicUid: Connector_help_ZTE_ZENIC_ONE_R22_-_ZXONE_9700E_Technical
   - name: ZTE ZXR10
     topicUid: Connector_help_ZTE_ZXR10
     items:
