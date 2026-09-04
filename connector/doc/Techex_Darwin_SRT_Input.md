@@ -11,9 +11,9 @@ The Techex Darwin SRT Input connector enables monitoring of the subtypes SRT Inp
 
 ## Key Features
 
-- **Module information**: Retrieve and monitor general information about the SRT Input modules.
-- **Real-time statistics**: View statistics updated in real time for each subscribed module thanks to Kafka subscriptions.
-- **Reliability and recovery monitoring**: Retrieve data from each SRT Input Module.
+- **Module information**: Retrieve and monitor general information about the SRT Input modules. Including network and transport configuration, FEC configuration. 
+- **Real-time statistics**: View statistics updated in real time for each subscribed module thanks to Kafka subscriptions. These include stream, traffic, latency statistics for each module. This helps to know direct after event happens the current status of the statistics.
+- **Reliability and recovery monitoring**: Retrieve data from each SRT Input Module. It indicates the network status and recovery of the network clear.
 
 ## Technical Information
 
