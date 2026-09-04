@@ -10010,6 +10010,11 @@
     topicUid: Connector_help_Telenet_BGP_Trap_Receiver
   - name: Telenet BO Manager
     topicUid: Connector_help_Telenet_BO_Manager
+  - name: Telenet B2B Inventory Manager
+    topicUid: Connector_help_Telenet_B2B_Inventory_Manager
+    items:
+    - name: Telenet B2B Inventory Manager Technical
+      topicUid: Connector_help_Telenet_B2B_Inventory_Manager_Technical
   - name: Telenet CIM
     topicUid: Connector_help_Telenet_CIM
   - name: Telenet CMTS Collector
