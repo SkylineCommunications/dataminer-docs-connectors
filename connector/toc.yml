@@ -10160,6 +10160,11 @@
   items:
   - name: Techex Darwin
     topicUid: Connector_help_Techex_Darwin
+  - name: Techex Darwin I-Frame Switch
+    topicUid: Connector_help_Techex_Darwin_I-Frame_Switch
+    items:
+    - name: Techex Darwin I-Frame Switch Technical
+      topicUid: Connector_help_Techex_Darwin_I-Frame_Switch_Technical
   - name: Techex Darwin Manager
     topicUid: Connector_help_Techex_Darwin_Manager
     items:
