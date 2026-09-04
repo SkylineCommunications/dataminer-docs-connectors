@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Techex_Darwin_SRT_Output
+description: "Learn how the Techex Darwin SRT Output connector monitors module information, real-time statistics, and listeners."
 ---
 
 # Techex Darwin SRT Output
@@ -11,16 +12,15 @@ The Techex Darwin SRT Output connector enables monitoring of the subtypes SRT Ou
 ## Key Features
 
 - **Module information**: Retrieve and monitor all generic information of the SRT Output modules.
-- **Real time Statistics**: By subscription of kafka each subscripted module contains direct updates of the statistics.
+- **Real-time statistics**: View statistics updated in real time for each subscribed module thanks to Kafka subscriptions.
 - **Listener monitoring**: Retrieve data from the linked listeners.
 
 ## Technical Information
 
-When you configure a DataMiner element using this connector, specify the IP address linked to the HTTP connection.
+When you configure a DataMiner element using this connector, specify the **IP address** linked to the HTTP connection.
 
-Once an element is configured, the connector will need to have credentials being configured in the "Communication Settings" page to start the polling for the HTTP connection. 
-Next to this, you will need to complete the full configuration of the Kafka Settings page. Make sure that the Client ID and Group ID are unique for the full DataMiner System for the specific Techex Darwin device.
-Conflicting IDs will make it so the subscription will not be correctly establish.
+Once the element is configured, you will need to configure credentials on its **Communication Settings** page to start the polling for the HTTP connection, and you will have to complete the Kafka configuration on the **Kafka Settings** page.
 
+When you configure the element, make sure that the **Client ID** and **Group ID** are **unique** across the entire DataMiner System for that specific Techex Darwin device. Conflicting IDs will make it impossible to correctly establish the subscription.
 
-After this the connector will poll generic information of the SRT Output module via the HTTP connection and real-time updates via Kafka subscription.
+When everything has been correctly configured, the connector polls the SRT Output module for general information over HTTP and receives real-time updates through a Kafka subscription.
