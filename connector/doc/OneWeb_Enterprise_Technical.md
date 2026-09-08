@@ -55,7 +55,7 @@ User terminal components (e.g., "AIM","CNX", "EGR", "MDM", "MIM", "SSM") metadat
 
 ### Products
 
-The **Products** page retrieves the inventory of service plan products. It displays a list of available products, each identified by a unique identifier and name. Each product is linked to a distribution partner and a specific site, establishing its deployment context.
+The **Products** page retrieves the inventory of service plan products. It displays a list of available products, each identified by a unique identifier and name. Parent pooled plans use IDs in the format POOL-XXXX, while sub-plans and standard Site Connectivity plans use IDs in the format SC-XXXX. Each product is linked to a distribution partner and a specific site, establishing its deployment context.
 
 A key aspect of this page is the relationship between products and user terminals — each product is associated with the IMEI of the terminal utilizing the service. Additionally, products are connected to end customer accounts and sites, providing a complete view of ownership and location.
 
