@@ -6567,6 +6567,13 @@
     topicUid: Connector_help_Mist_WLAN_Platform
   - name: Mist WLAN Platform - Site
     topicUid: Connector_help_Mist_WLAN_Platform_-_Site
+- name: Mitel
+  items:
+  - name: Mitel MX-One
+    topicUid: Connector_help_Mitel_MX-One
+    items:
+    -  name: Mitel MX-One - Extension Element
+       topicUid: Connector_help_Mitel MX-One_-_Extension
 - name: MIT-xperts
   items:
   - name: MIT-xperts iAnalyzer EIT
@@ -10160,11 +10167,20 @@
   items:
   - name: Techex Darwin
     topicUid: Connector_help_Techex_Darwin
+  - name: Techex Darwin I-Frame Switch
+    topicUid: Connector_help_Techex_Darwin_I-Frame_Switch
+    items:
+    - name: Techex Darwin I-Frame Switch Technical
+      topicUid: Connector_help_Techex_Darwin_I-Frame_Switch_Technical
   - name: Techex Darwin Manager
     topicUid: Connector_help_Techex_Darwin_Manager
     items:
     - name: Techex Darwin Manager Technical
       topicUid: Connector_help_Techex_Darwin_Manager_Technical
+  - name: Techex Darwin SRT Input
+    topicUid: Connector_help_Techex_Darwin_SRT_Input
+  - name: Techex Darwin SRT Output
+    topicUid: Connector_help_Techex_Darwin_SRT_Output
   - name: Techex MW4 Server
     topicUid: Connector_help_Techex_MW4_Server
   - name: Techex MW4 Server - Generic Device
