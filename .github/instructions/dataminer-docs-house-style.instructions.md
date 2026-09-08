@@ -17,6 +17,7 @@ When creating or editing connector documentation pages, apply the following rule
 - For cross-references to pages within this repository, use DocFX `xref` links instead of hard links to local Markdown files.
 - Only use backticks for references to code, file paths, or user input, not for emphasis. File names (without file path) can also be written in italics.
 - Use plain text in headers, avoiding italics, bold, and backticks.
+- Use bold text for exact references to UI text, such as buttons, menus, and labels, but italics for values that can be selected by the user, e.g., in a dropdown box.
 - HTML comments must never be used.
 
 ## Procedure Formatting
@@ -50,4 +51,4 @@ When creating or editing connector documentation pages, apply the following rule
 
 - Use single quotation marks in headers, as double quotation marks can cause formatting issues there.
 - Use single quotation marks to indicate quoted material within a quotation (i.e., a nested quote); otherwise, use double quotation marks.
-- Avoid em dashes on technical pages.
+- Em dashes are only allowed on marketing pages.
