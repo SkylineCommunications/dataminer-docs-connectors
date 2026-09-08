@@ -7,13 +7,15 @@ applyTo: "**/*.md"
 
 When creating or editing connector documentation pages, apply the following rules.
 
-- Use US English.
-- Follow Markdown conventions from <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html>.
+## General
+
+- Fetch the Markdown conventions from <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html> and make sure these are followed.
+- Fetch the house style instructions from <https://docs.dataminer.services/contributing/CTB_Docs_house_style.md> and make sure these are followed, except if this conflicts with the guidelines provided in this instructions file.
 - Use title case in headers.
 - Use a formal but simple technical style that helps users find information quickly.
 - Address the reader directly as `you` and avoid third-person references to the user, unless describing a different user role (e.g., an operator).
 - For cross-references to pages within this repository, use DocFX `xref` links instead of hard links to local Markdown files.
-- Only use backticks for references to code, file paths, or user input, not for emphasis.
+- Only use backticks for references to code, file paths, or user input, not for emphasis. File names (without file path) can also be written in italics.
 - Use plain text in headers, avoiding italics, bold, and backticks.
 - HTML comments must never be used.
 
@@ -21,9 +23,12 @@ When creating or editing connector documentation pages, apply the following rule
 
 - Write procedures as numbered lists.
 - Use one logical action per numbered step.
+- An exception to the above is procedures consisting of a single step, which do not require numbering.
 - Keep instruction lines short and easy to scan.
-- Put the result of a step on an indented line below that step.
+- Put any additional information about a step in a separate, indented paragraph below that step.
+- Put the result of a step in an indented paragraph below that step, and use future tense (e.g., "A new window will open" instead of "A new window opens").
 - If a step contains an image, indent it correctly so list numbering does not restart.
+- For complex procedures that include indented lines, place a blank line between each paragraph or list item. This prevents possible spacing issues.
 
 ## Alert Blocks
 
@@ -37,15 +42,12 @@ When creating or editing connector documentation pages, apply the following rule
 
 ## AI-Friendly Writing
 
-- Keep a logical structure with meaningful headers.
 - Use descriptive alt text for images.
 - Ensure each page has a `description` value in its metadata/front matter, and ensure it is between 100 and 155 characters.
-- Make content as future-proof as possible, for instance by adding DataMiner version info where relevant, or by rephrasing text about new features to make sure it doesn't become outdated almost immediately.
+- Always make sure the text is structured logically, with meaningful headers that clearly indicate what each subsection is about.
 
 ## Punctuation
 
 - Use single quotation marks in headers, as double quotation marks can cause formatting issues there.
 - Use single quotation marks to indicate quoted material within a quotation (i.e., a nested quote); otherwise, use double quotation marks.
-- Use `e.g.,` instead of `e.g.`.
-- Use `i.e.,` instead of `i.e.`.
-- When referring to a menu option in the UI that contains an ellipsis (`...`) at the end, leave out the ellipsis.
+- Avoid em dashes on technical pages.
