@@ -1,12 +1,12 @@
 ---
-uid: Connector_help_Mitel MX-One - Extension
+uid: Connector_help_Mitel MX-One_-_Extension
 ---
 
 # Mitel MX-One - Extension Element
 
 ## About
 
-This connector is used to monitor extensions of the **Mitel_MX-One** PBX System.
+This connector is used to monitor extensions of the **Mitel MX-One** PBX system.
 
 It creates an Extension DVE as a virtual representation of a managed extension.
 
@@ -20,7 +20,7 @@ This connector uses a virtual connection and does not require any input during e
 
 ### Initialization
 
-The exported element is defined in the **Extension Dves** table on the Extension DVE page of the main element.
+The exported element is defined in the **Extension DVEs** table on the Extension DVE page of the main element.
 
 ### Web Interface
 
