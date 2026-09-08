@@ -6567,6 +6567,13 @@
     topicUid: Connector_help_Mist_WLAN_Platform
   - name: Mist WLAN Platform - Site
     topicUid: Connector_help_Mist_WLAN_Platform_-_Site
+- name: Mitel
+  items:
+  - name: Mitel MX-One
+    topicUid: Connector_help_Mitel_MX-One
+    items:
+    -  name: Mitel MX-One - Extension Element
+       topicUid: Connector_help_Mitel MX-One_-_Extension
 - name: MIT-xperts
   items:
   - name: MIT-xperts iAnalyzer EIT
