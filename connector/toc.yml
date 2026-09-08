@@ -10812,6 +10812,11 @@
     topicUid: Connector_help_Tredess_CS_-_Transmitter
   - name: Tredess FS
     topicUid: Connector_help_Tredess_FS
+  - name: Tredess MultiTX
+    topicUid: Connector_help_Tredess_MultiTX
+    items:
+    - name: Tredess MultiTX Technical
+      topicUid: Connector_help_Tredess_MultiTX_Technical
   - name: Tredess Redundant Clock Reference
     topicUid: Connector_help_Tredess_Redundant_Clock_Reference
 - name: Trilithic
