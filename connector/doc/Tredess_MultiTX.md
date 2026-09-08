@@ -1,28 +1,29 @@
 ---
 uid: Connector_help_Tredess_MultiTX
+description: "Learn how the Tredess MultiTX connector monitors and controls transmitter, redundancy, power, cooling, and synchronization modules."
 ---
 
 # Tredess MultiTX
 
 ## About
 
-The **Tredess MultiTX** is a multi-module digital terrestrial television (DTT) transmitter platform from Tredess, supporting DVB-T and DVB-T2 modulation. A single chassis can host transmitter (TX) modules together with a redundancy switching unit (NP1), power supply units (PSU), and synchronization (SYNC/GNSS) modules.
+The **Tredess MultiTX** is a multi-module digital terrestrial television (DTT) transmitter platform from Tredess, supporting DVB-T and DVB-T2 modulation. A single chassis can host transmitter (TX) modules together with a redundancy switching unit (NP1), power supply units (PSUs), and synchronization (SYNC/GNSS) modules.
 
 This connector allows DataMiner to monitor and control the Tredess MultiTX platform over SNMP, providing full visibility of all modules in the chassis, from RF output power and modulation settings down to power supplies, cooling, and GNSS synchronization.
 
 ## Key Features
 
-- **Complete TX module monitoring and control**: Input levels, forward power, RF input/output configuration, IF processor, echo canceller, precorrector, modulator, and amplifier status for every transmitter module.
+- **Complete TX module monitoring and control**: Monitor detailed information for every transmitter module, including input levels, forward power, RF input/output configuration, IF processor, echo canceller, precorrector, modulator, and amplifier status.
 
-- **DVB-T and DVB-T2 configuration**: System, network, modulation, frame, and PLP settings, including per-PLP values, all accessible and configurable from DataMiner.
+- **DVB-T and DVB-T2 configuration**: Access and configure a multitude of settings from DataMiner, including system, network, modulation, frame, and PLP settings.
 
-- **Input redundancy and switching**: ASI 1/2 and IP socket inputs with input switching configuration and status, plus 1+1 redundancy management through the NP1 unit, including switching causes and automatic verifications.
+- **Input redundancy and switching**: Configure ASI 1/2 and IP socket input switching, and manage 1+1 redundancy through the NP1 unit, including monitoring switching causes and automatic verifications.
 
-- **Infrastructure health**: Power supply units, cooling and fan tables, battery, modem, and network status, ensuring the complete transmission chain is monitored.
+- **Infrastructure health**: Monitor the complete transmission chain, including power supply units, cooling and fan tables, battery, modem, and network status.
 
-- **Alarming, trending, and trap processing**: Hundreds of monitored and trended parameters, combined with real-time SNMP trap processing for immediate fault awareness.
+- **Alarming, trending, and trap processing**: Get notified instantly in case of faults thanks to hundreds of monitored and trended parameters, combined with real-time SNMP trap processing.
 
-- **Flexible polling**: A built-in Polling Manager lets operators enable, disable, and tune the polling rate of each data group individually, optimizing SNMP load per element.
+- **Flexible polling**: Use the built-in polling manager to tune the polling rate of each data group individually, optimizing SNMP load per element.
 
 ## Use Cases
 
@@ -36,7 +37,7 @@ This connector allows DataMiner to monitor and control the Tredess MultiTX platf
 
 ### Redundancy Assurance
 
-**Challenge**: 1+1 transmitter redundancy is only useful if the reserve chain is genuinely healthy and switching logic is correctly configured — something that is hard to verify manually.
+**Challenge**: 1+1 transmitter redundancy is only useful if the reserve chain is genuinely healthy and switching logic is correctly configured, which is hard to verify manually.
 
 **Solution**: The connector exposes the NP1 redundancy unit's configuration, switching causes, automatic verifications, and live status, so redundancy readiness is always visible in DataMiner.
 
@@ -50,13 +51,13 @@ This connector allows DataMiner to monitor and control the Tredess MultiTX platf
 
 **Benefit**: Faster, centralized, and auditable configuration changes across the whole transmitter network.
 
-## Technical Reference
-
-### Prerequisites
+## Prerequisites
 
 - **DataMiner 10.4.0.0 or higher** is required to run this connector.
 - **SNMP network access** from the DataMiner Agent to the Tredess MultiTX device is needed for polling and configuration.
-- **SNMP trap forwarding** must be configured on the device towards the DataMiner Agent to receive real-time event notifications.
+- **SNMP trap forwarding** must be configured on the device toward the DataMiner Agent to receive real-time event notifications.
+
+## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Tredess_MultiTX_Technical).
