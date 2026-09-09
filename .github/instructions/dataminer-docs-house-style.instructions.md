@@ -10,13 +10,14 @@ When creating or editing connector documentation pages, apply the following rule
 ## General
 
 - Fetch the Markdown conventions from <https://docs.dataminer.services/contributing/CTB_Markdown_Syntax.html> and make sure these are followed.
-- Fetch the house style instructions from <https://docs.dataminer.services/contributing/CTB_Docs_house_style.md> and make sure these are followed, except if this conflicts with the guidelines provided in this instructions file.
+- Fetch the house style instructions from <https://docs.dataminer.services/contributing/CTB_Docs_house_style.html> and make sure these are followed, except if this conflicts with the guidelines provided in this instructions file.
 - Use title case in headers.
 - Use a formal but simple technical style that helps users find information quickly.
 - Address the reader directly as `you` and avoid third-person references to the user, unless describing a different user role (e.g., an operator).
 - For cross-references to pages within this repository, use DocFX `xref` links instead of hard links to local Markdown files.
 - Only use backticks for references to code, file paths, or user input, not for emphasis. File names (without file path) can also be written in italics.
 - Use plain text in headers, avoiding italics, bold, and backticks.
+- Use bold text for exact references to UI text, such as buttons, menus, and labels, but italics for values that can be selected by the user, e.g., in a dropdown box.
 - HTML comments must never be used.
 
 ## Procedure Formatting
@@ -50,4 +51,4 @@ When creating or editing connector documentation pages, apply the following rule
 
 - Use single quotation marks in headers, as double quotation marks can cause formatting issues there.
 - Use single quotation marks to indicate quoted material within a quotation (i.e., a nested quote); otherwise, use double quotation marks.
-- Avoid em dashes on technical pages.
+- Em dashes are only allowed on marketing pages.
