@@ -97,7 +97,7 @@ If authentication is enabled on the web interface of the device, the **User Name
 
 HTTP polling is batched by default. Some devices cannot process this many requests at once and may time out due to dropped connections. For such devices, the polling mode should be set to **Interval** on the **General - Polling Config** page.
 
-The **Polling Interval** can then be set to a low value, like _5 s_, then increased until the element timeouts have stopped.
+The **Polling Interval** can then be set to a low value, like 5 s, and increased until the element timeouts have stopped.
 
 ## Usage
 
@@ -118,7 +118,7 @@ To have "Not available" rows automatically removed from the tables, enable the o
 
 ## Notes
 
-### Important remarks
+### Important Remarks
 
 - **If the status for a row is disabled in the configuration table, there will be no corresponding row in the status table.**
 
