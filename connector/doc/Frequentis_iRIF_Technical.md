@@ -42,7 +42,7 @@ On the **Software** subpage, you can find the available software images. If give
 
 ### Interfaces
 
-This page displays a table containing useful metrics (In Bit Rate, Out Bit Rate, etc.) for the interfaces fo the device. You can also configure settings of the interfaces.
+This page displays a table containing useful metrics (In Bit Rate, Out Bit Rate, etc.) for the interfaces of the device. You can also configure settings of the interfaces.
 
 ### Interface Details
 
