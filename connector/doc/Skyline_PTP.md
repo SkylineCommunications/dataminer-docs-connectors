@@ -51,7 +51,7 @@ For more information, refer to the [Initialization](#initialization) section bel
 
 The initialization process depends on the connector range:
 
-- **Range 2.0.0.x**: Configuration and domain setup are handled directly through the **PTP Monitor** custom web application (via the **Admin** page, using the **Add Domain** and **Role Assignment** wizards). The legacy `PTP_SetupWizard` and `PTP_SetupWizard_Roles` automation scripts and Visio visual pages are removed in range 2.0.0.x.
+- **Range 2.0.0.x**: Configuration and domain setup are handled directly through the **PTP Monitor** custom web application (via the **Admin** page, using the **Add Domain** and **Role Assignment** wizards).
 - **Range 1.0.0.x**: The configuration of the Skyline PTP application and the full DataMiner PTP Solution must be done using the PTP_SetupWizard and PTP_SetupWizard_Roles automation scripts.
 
 For range 1.0.0.x, the **PTP_SetupWizard** script must be executed initially to configure the DataMiner PTP Solution. This script will:
