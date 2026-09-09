@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_Ericsson_AVP-2000_Technical
-description: Technical reference for the Ericsson AVP-2000 connector, covering version info, HTTP connection setup, page-by-page usage, polling, and keys.
+description: "Technical reference for the Ericsson AVP-2000 connector, covering version info, HTTP connection setup, page-by-page usage, polling, and keys."
 ---
 
 # Ericsson AVP-2000
@@ -169,11 +169,11 @@ Ericsson advises a polling scheme where the active alarms are polled every 6 sec
 1. Poll parameters
 1. ...
 
-However, since the entire data XML is quite large and causes a lot of delay and load for the device, we split it into sections. Every parameter cycle, the queue is checked for sections that are waiting to be polled. Those that are larger than the threshold will be polled separately, smaller ones will be combined. The items waiting in the queue will have a counter to indicate their wait time, giving them a higher priority over time.
+However, since the entire data XML is quite large and causes a lot of delay and load for the device, it has been split into sections. Every parameter cycle, the queue is checked for sections that are waiting to be polled. Those that are larger than the threshold will be polled separately, smaller ones will be combined. The items waiting in the queue will have a counter to indicate their wait time, giving them a higher priority over time.
 
 #### Keys
 
-The polled XML file does not provide a unique identifier that is persistent when the XML changes. Because of this, the Xpath is considered to be the unique identifier. It is translated into a 10-digit key that serves as the PK in tables. If an object is removed from a list, it is possible that the IDs of sibling objects shift.
+The polled XML file does not provide a unique identifier that persists when the XML changes. Because of this, the Xpath is considered to be the unique identifier. It is translated into a 10-digit key that serves as the PK in tables. If an object is removed from a list, it is possible that the IDs of sibling objects shift.
 
 #### Alarms
 
@@ -317,11 +317,11 @@ This page contains the tables with physical interfaces used in the network tree.
 
 #### Queue
 
-The **Poll Queue** table contains the fragments and other commands to keep track of communication. The flow of the communication is explained in the introduction of this "Usage" section. To decide which fragments need to be polled separately to reduce the device's response delay, there is a threshold that can be set: **Fragment Separation Threshold Load**. The **Fragment Load (Queue)** holds the current load of each fragment, and needs to be below the threshold in order to be combined with other fragments into a single request.
+The **Poll Queue** table contains the fragments and other commands to keep track of communication (see [Polling](#polling) for more info on the flow of communication). To decide which fragments need to be polled separately to reduce the device's response delay, there is a threshold that can be set: **Fragment Separation Threshold Load**. The **Fragment Load (Queue)** holds the current load of each fragment, and needs to be below the threshold in order to be combined with other fragments into a single request.
 
 It is possible to enqueue a single fragment using the **Enqueue** button or hit **Force Refresh** below the table.
 
-**Write Comm...** opens the **Write Communication** pop-up page.
+The **Write Comm** page button opens the **Write Communication** subpage.
 
 #### Write Communication
 

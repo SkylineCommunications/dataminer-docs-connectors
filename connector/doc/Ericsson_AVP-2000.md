@@ -1,11 +1,9 @@
 ---
 uid: Connector_help_Ericsson_AVP-2000
-description: Monitor, configure, and back up the Ericsson AVP-2000 Advanced Video Processor in DataMiner, with full input, output, and network stream visibility.
+description: "Monitor, configure, and back up the Ericsson AVP-2000 Advanced Video Processor in DataMiner, with full input, output, and network stream visibility."
 ---
 
 # Ericsson AVP-2000
-
-The **Ericsson AVP-2000** connector integrates the Ericsson AVP-2000 Advanced Video Processor into DataMiner over HTTP, giving you a single interface to monitor and manage the device.
 
 ## About
 
@@ -19,7 +17,7 @@ The connector organizes the device data into clear tree views and tables for inp
 - **Configure** input, output, video, audio, and network settings directly from DataMiner.
 - **Back up and restore** device configurations, both to a file and to the device internal memory.
 - **Manage** input and output transport streams, services, and components across the signal chain.
-- **Track** active alarms with a dedicated current-alarms overview.
+- **Track** active alarms with a dedicated current alarms overview.
 
 ## Technical Reference
 
