@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_CISCO_Nexus_Technical
+description: Configure and use the CISCO Nexus connector, including SNMP, SSH, NX API, gNMI, APIC API polling, automation, and DCF.
 ---
 
 # CISCO Nexus
@@ -10,7 +11,7 @@ The Cisco Nexus switches are modular and fixed-port network switches designed fo
 
 This help page only applies from range **1.0.2.x onwards**, except the section on the IGMP page, which was included in range 1.0.4.x. Sections describing the **Element Settings** page, the **Interactive CLI** page, the **GNMI Settings** page, and the **Debug Page** apply from version **3.0.9.x onwards**.
 
-The connector uses an **SNMP** main connection to monitor the device. In addition, depending on the configuration, it can communicate with the device via **SSH**, **NX API** (HTTPS), **gNMI**, and **APIC** (HTTPS). The connector also supports the **DataMiner Connectivity Framework (DCF)**.
+The connector uses an **SNMP** main connection to monitor the device. Depending on the configuration, it can also communicate with the device via **SSH**, **NX API** (HTTPS), and **gNMI**. For NBM flow statistics, it can use the **APIC API** over HTTPS to the element's polling IP. This APIC API communication is handled internally by the connector and is not configured as a separate element connection. The connector also supports the **DataMiner Connectivity Framework (DCF)**.
 
 From version **3.0.0.3 onwards**, this connector uses an external DLL, **Renci.SshNet.dll**, to be able to communicate via SSH.
 
@@ -37,9 +38,9 @@ SNMP Settings:
 
 ### Initialization
 
-To use the SSH, NX API, gNMI, and interactive CLI functionality of the connector, configure the following settings on the **Element Settings** page, in the **SSH/NX API Configuration** section:
+To use the SSH, NX API, gNMI, APIC API, and interactive CLI functionality of the connector, configure the following settings on the **Element Settings** page, in the **SSH/NX API Configuration** section:
 
-- **User Name** and **Password**: The SSH credentials of the device. These shared credentials are used for all SSH, NX API, gNMI, and CLI operations.
+- **User Name** and **Password**: The device credentials used for SSH, NX API, gNMI, APIC API, and interactive CLI operations.
 - **NX API Version**: The NX API version, by default *1.0*. This could change after firmware updates.
 - **Command Timeout Time**: The maximum wait time (in milliseconds) for a command response.
 - **NX API Use Cookie**: Determines whether a session cookie is reused for NX API requests.
@@ -73,7 +74,7 @@ With the interactive Command Line Interface (CLI), commands can be sent to the d
 This page contains the following parameters:
 
 - **CLI Communication Type**: Allows you to select either *CLI (SSH)* or *NX API*. Based on the selection, the CLI commands will be sent via SSH or via HTTPS.
-- **Communication Status**: The result of the last communication attempt for all communication based on the SSH credentials (SSH, NX API, gNMI, and CLI). Possible values: *Disconnected*, *Connected*, *Server Timeout*, and *Authentication Failed*.
+- **Communication Status**: The result of the last communication attempt using the configured device credentials (SSH, NX API, gNMI, and CLI). Possible values: *Disconnected*, *Connected*, *Server Timeout*, and *Authentication Failed*.
 - **Add Command**: Adds a new command to be executed.
 - **Command History**: Table containing all the recently executed commands and their output.
 - **Command Entries to Keep**: Allows you to set the maximum number of rows visible in the Command History table.
@@ -81,13 +82,23 @@ This page contains the following parameters:
 - **Clear Command History**: Clears the Command History table entries.
 
 > [!NOTE]
-> On systems where authentication is handled by a slow AAA/TACACS setup (e.g. when configured TACACS servers are unreachable), the authentication verdict from the device can take longer than the configured **Command Timeout Time**. In that case, the connector will report *Server Timeout* instead of *Authentication Failed*.
+> On systems where authentication is handled by a slow AAA/TACACS setup (e.g., when configured TACACS servers are unreachable), the authentication verdict from the device can take longer than the configured **Command Timeout Time**. In that case, the connector will report *Server Timeout* instead of *Authentication Failed*.
+
+### Sending NX API Commands from Automation Scripts
+
+From version **3.0.9.1 onwards**, a DataMiner Automation script can send one or more CLI commands to the connector using an InterApp call. Send an `NxApiRequest` message to parameter `9000000` and specify the commands in its `Commands` property.
+
+The connector rejects requests that do not contain at least one non-empty command. It sends accepted commands to the element's polling IP through NX API, using the **User Name**, **Password**, **Command Timeout Time**, **NX API Version**, and **NX API Use Cookie** settings configured on the **Element Settings** page.
+
+The connector returns an `NxApiResponse` message with the same message GUID. Its `Results` collection contains one result per command, in the same order as the commands in the request. Each result provides the `Command`, `Body`, `Message`, and `StatusCode` properties. The `Success` property is set to `true` only when every command returns HTTP status code 200.
+
+For general information about creating and sending InterApp calls, see [Sending a call](xref:InterAppCalls_GettingStarted_SendingCall).
 
 ### Element Settings page
 
 This page centralizes the communication configuration of the connector:
 
-- The **SSH/NX API Configuration** section contains the shared SSH credentials and related settings (see [Initialization](#initialization)).
+- The **SSH/NX API Configuration** section contains the shared device credentials and related settings (see [Initialization](#initialization)).
 - The **Debug Page Visibility** toggle (*Disabled*/*Enabled*) controls whether the hidden [Debug Page](#debug-page) is displayed.
 
 The page also contains the following page buttons:
@@ -111,10 +122,10 @@ The **GNMI Settings** page can be accessed via the **GNMI Settings...** page but
 - **Data Source Port**: The port used for the gNMI connection.
 - **Client Certificate** (optional): The client certificate used for the gNMI connection.
 
-The gNMI connection uses the polling IP of the element and the SSH credentials configured on the **Element Settings** page.
+The gNMI connection uses the element's polling IP and the device credentials configured on the **Element Settings** page.
 
 > [!NOTE]
-> gNMI should only be used with CISCO Nexus devices running version 10.2(7)/10.3(4) or higher. When gNMI is used in a DataMiner System with multiple Agents, you currently have to make sure you only have one Communication Gateway DxM active in the system (pending a fix to avoid that every Communication Gateway will make a connection).
+> gNMI should only be used with CISCO Nexus devices running version **10.2(7)/10.3(4) or higher**. When multiple Communication Gateway DxM nodes are deployed, make sure each node is running version **3.2.0 or higher**.
 
 ### Sensor page
 
@@ -125,13 +136,13 @@ This page contains the **Sensor** table, which lists the type, scale, and presen
 This page contains the following tables:
 
 - **Fan**: Displays the operational status of all the fans.
-- **Power Status**: Lists the power-related administrative status and operational status of the manageable components in the system.
+- **Supply Status**: Lists the power-related administrative status and operational status of the manageable components in the system.
 - **CPU Memory Pool**: Displays overall CPU statistics.
 - **NV Memory Pool**: Displays information regarding the RAM.
 
 ### PTP page
 
-The Precision Time Protocol (PTP) pages display information regarding this functionality (from version 3.0.0.10 onwards). PTP polling uses the SSH credentials configured on the **Element Settings** page.
+The Precision Time Protocol (PTP) pages display information regarding this functionality (from version 3.0.0.10 onwards). PTP polling uses the device credentials configured on the **Element Settings** page.
 
 The **PTP Feature - Operational Status** parameter indicates the state of the PTP feature on the device, as reported by the "show feature" command. Possible values: *Enabled*, *Disabled*, *Unknown*, *Installed*, *Uninstalled*, and *Enabled (Not Running)*.
 
@@ -209,7 +220,10 @@ From version **3.0.9.x onwards**, the "show ip igmp snooping groups" command (di
 
 This page contains the **NBM Interfaces Bandwidth** table.
 
-NBM flow statistics are retrieved via the **APIC** controller, using HTTPS communication.
+Use the **NBM Flows Statistics Polling Type** parameter to select how NBM flow statistics are retrieved:
+
+- **Default**: Executes the `show nbm flows statistics` command through NX API.
+- **APIC**: Retrieves the statistics through the APIC API over HTTPS, using the element's polling IP and the device credentials configured on the **Element Settings** page.
 
 > [!NOTE]
 > Because of rounding issues in the device itself, bit rates may be slightly inaccurate. Because of this, bandwidth utilization can exceed 100% without dropped bytes indication. Keep this in mind when configuring alarm templates.
@@ -246,4 +260,3 @@ Physical dynamic interfaces:
 ## Notes
 
 - From version 3.0.9.x onwards, an **NX API cache** is available for all NX API-related operations, reducing the number of requests towards the device.
-- From version 3.0.9.x onwards, an **InterApp message** is available that allows DataMiner Automation scripts to send NX API requests through the connector.

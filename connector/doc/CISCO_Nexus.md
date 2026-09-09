@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_CISCO_Nexus
+description: Monitor Cisco Nexus switches in DataMiner using SNMP, SSH, NX API, gNMI, APIC API polling, automation, and DCF integration.
 ---
 
 # CISCO Nexus
@@ -8,7 +9,7 @@ uid: Connector_help_CISCO_Nexus
 
 The Cisco Nexus switches are modular and fixed-port network switches designed for data centers. With this connector, you can monitor and control these switches in DataMiner.
 
-The connector combines an **SNMP** main connection with **SSH**, **NX API** (HTTPS), **gNMI**, and **APIC** (HTTPS) communication to provide deep, real-time visibility into your Cisco Nexus data center switches, from environmental sensors all the way up to routing protocols and media flows.
+The connector uses an **SNMP** main connection and can also communicate with the device via **SSH**, **NX API** (HTTPS), and **gNMI**. For NBM flow statistics, the connector can send **APIC API** requests over HTTPS to the element's polling IP.
 
 ## Key Features
 
@@ -28,7 +29,7 @@ The connector combines an **SNMP** main connection with **SSH**, **NX API** (HTT
 
 - **Streaming telemetry**: gNMI (OpenConfig) data collection for interface statistics.
 
-- **Automation integration**: An InterApp message allows DataMiner Automation scripts to send NX API requests through the connector.
+- **Automation integration**: From version **3.0.9.1 onwards**, DataMiner Automation scripts can send one or more CLI commands to the connector using an InterApp call. The connector executes the commands through NX API and returns a result for each command. For more information, see [Sending NX API Commands from Automation Scripts](xref:Connector_help_CISCO_Nexus_Technical#sending-nx-api-commands-from-automation-scripts).
 
 - **DCF support**: Ethernet interfaces and VLANs are automatically available as DCF interfaces.
 
@@ -46,7 +47,7 @@ The connector combines an **SNMP** main connection with **SSH**, **NX API** (HTT
 
 **Challenge**: In ST 2110 and other IP media networks, operators must track NBM flow bandwidth, IGMP state, and PTP synchronization to guarantee uninterrupted media transport.
 
-**Solution**: The connector retrieves NBM flow statistics via the APIC controller, monitors IGMP and PTP state, and exposes RTP flow information.
+**Solution**: The connector can retrieve NBM flow statistics through the APIC API, monitors IGMP and PTP state, and exposes RTP flow information.
 
 **Benefit**: Media-critical network behavior is monitored in the same platform as the rest of the media chain, enabling fast root-cause analysis.
 
@@ -63,7 +64,7 @@ The connector combines an **SNMP** main connection with **SSH**, **NX API** (HTT
 ### Prerequisites
 
 - **DataMiner 10.4.0.0 (build 14003) or higher** is required for the main connector range.
-- **SSH credentials** with the necessary privileges are needed for SSH, NX API, gNMI, and interactive CLI functionality.
+- **Credentials** with the necessary privileges are required for SSH, NX API, gNMI, APIC API, and interactive CLI functionality.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_CISCO_Nexus_Technical).
