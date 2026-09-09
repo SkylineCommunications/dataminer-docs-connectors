@@ -92,7 +92,7 @@ The connector rejects requests that do not contain at least one non-empty comman
 
 The connector returns an `NxApiResponse` message with the same message GUID. Its `Results` collection contains one result per command, in the same order as the commands in the request. Each result provides the `Command`, `Body`, `Message`, and `StatusCode` properties. The `Success` property is set to `true` only when every command returns HTTP status code 200.
 
-For general information about creating and sending InterApp calls, see [Sending a call](xref:InterAppCalls_GettingStarted_SendingCall).
+For general information about creating and sending InterApp calls, see [Sending a call](https://docs.dataminer.services/develop/devguide/Core.InterAppCalls/InterAppCalls_GettingStarted_SendingCall.html).
 
 ### Element Settings page
 
