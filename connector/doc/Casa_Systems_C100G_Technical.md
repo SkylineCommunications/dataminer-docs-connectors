@@ -10,12 +10,12 @@ This connector monitors and controls the Casa Systems C100G Converged Cable Acce
 
 | Range | Focus |
 |-------|-------|
-| **1.0.0.x / 2.0.0.x** | Core CCAP monitoring: general info, DOCSIS upstream/downstream configuration and measurements, performance, cable modems, Offload and Ping. |
-| **2.1.0.x** | Adds full upstream **spectrum analysis** (Spectrum Analyzer) on top of the core monitoring. |
-| **3.0.0.x** | Adds **edge QAM / video** functionality (QAM streams, service groups, virtual edge, CAS/EIS/MPEG, video streams). |
-| **4.0.2.x** | Extends 4.0.1.x with the reworked **Video KPIs** (Video Overview and Video Sessions pages). |
-| **5.0.1.x** | Custom range with a redesigned layout (General, Fan, Temperature, Power, Ethernet, Upstream, Downstream), later extended with **DCF** and **LLDP** support. |
-| **6.0.0.x** | Lightweight customer-specific range polling only interfaces, QAM streams and QAM interfaces. |
+| [1.0.0.x/2.0.0.x](#usage-range-100x-and-200x) | Core CCAP monitoring: general info, DOCSIS upstream/downstream configuration and measurements, performance, cable modems, Offload and Ping. |
+| 2.1.0.x | Adds full upstream **spectrum analysis** (Spectrum Analyzer) on top of the core monitoring. |
+| [3.0.0.x](#usage-range-300x) | Adds **edge QAM/video** functionality (QAM streams, service groups, virtual edge, CAS/EIS/MPEG, video streams). |
+| [4.0.2.x](#usage-range-402x) | Extends 4.0.1.x with the reworked **Video KPIs** (Video Overview and Video Sessions pages). |
+| [5.0.1.x](#usage-range-500x) | Custom range with a redesigned layout (General, Fan, Temperature, Power, Ethernet, Upstream, Downstream), later extended with **DCF** and **LLDP** support. |
+| [6.0.0.x](#usage-range-600x) | Lightweight customer-specific range polling only interfaces, QAM streams, and QAM interfaces. |
 
 > [!NOTE]
 > Not every range is available for every deployment. Some ranges are customer-specific. Contact Skyline Communications if you are unsure which range applies to your setup.
@@ -76,16 +76,16 @@ Below this, you can select an interface based on what is selected for the Trace 
 
 This section contains two pages: one for the upstream and one for the downstream channel configuration:
 
-- The **Configuration -- Upstream Channels** page displays the **Configuration - Upstream Channels table**. This table contains the configuration data for the different upstream channels of the Casa Systems C100G, for example the **US Frequency**, **US Width**, etc.
-- The **Configuration -- Downstream Channels** page is similar to the Configuration -- Upstream Channels page but displays the **Configuration - Downstream Channels table**. This table contains all configuration data for the downstream channels on the Casa Systems C100G.
+- The **Configuration -- Upstream Channels** page displays a table with configuration data for the different upstream channels of the Casa Systems C100G, for example the **US Frequency**, **US Width**, etc.
+- The **Configuration -- Downstream Channels** page displays a table with all configuration data for the downstream channels on the Casa Systems C100G, similar to the page for the upstream channels.
 
 ### Measurements
 
 This section also contains a page for the downstream channels and one for the upstream channels:
 
-- The **Measurements -- Upstream Channels** page displays the **Measurements - Upstream Channels** **table**. This table contains the measurement information for the upstream channels. The table has an entry for each upstream channel. The **US CM Total** column will for example display how many cable modems use that particular interface.
-- The **Measurements -- Downstream Channels** page is very similar to the Measurements -- Upstream Channels page, but this page displays the **Measurements - Downstream Channels table**, which displays the downstream measurements.
-- The **Measurements -- Ethernet and Configuration -- Ethernet** page displays the **Gigabit Interface Table.** This table contains the Ethernet interfaces to monitor the traffic used.
+- The **Measurements -- Upstream Channels** page displays a table with the measurement information for the upstream channels. The table has an entry for each upstream channel. The **US CM Total** column for example displays how many cable modems use that particular interface.
+- The **Measurements -- Downstream Channels** page displays the downstream measurements, similar to the page for the upstream channels.
+- The **Measurements -- Ethernet and Configuration -- Ethernet** page displays the **Gigabit Interface Table**, which table lists the Ethernet interfaces to monitor the traffic used.
 
 ### Performance
 
@@ -98,21 +98,47 @@ This section has several tables distributed over different pages:
 
 ### Extra
 
-This section consists of several pages: **Cable Modems**, **Service Flow**, **Ping Function** and **Flap List**.
+This section consists of several pages, for which you can find more information below.
 
-- The **Cable Modems** page can be used to access information about the cable modems managed by the **Casa Systems C100G**. This page displays the **CM Table** and **CM Registration Table**. You can find more detailed information by clicking the **CM CPE** or **CM Status Ext** page buttons.
+#### Cable Modems Page
 
-- The **Service Flow** page displays the **Service Flow Table**. This table describes the set of **DOCSIS-QOS Service Flows** in the managed device.
+This page can be used to access information about the cable modems managed by the **Casa Systems C100G**. It displays the information in two tables, i.e., the **CM Table** and **CM Registration Table**.
 
-- The **Offload US/DS Channels** page can be used to offload the **interface data** to a semicolon-separated text file. The **location** and the **interval** to create these files can be specified on this page. This page also contains page buttons that can be used to access more detailed information about the **interfaces**, **modules**, etc. The **Redetect Config** button can be used to clear the upstream or downstream information from the different tables.
+You can find more detailed information by clicking the **CM CPE** or **CM Status Ext** page buttons.
 
-- The **Offload Topology** page can be used to offload 6 topology files: CM.csv, CMTS.csv, DSSG.csv, FNCMTS.csv, SG.csv and USSG.csv. These topology files contain information about the Cable Modems (CM.csv), Fiber Nodes (FNCMTS.csv), Service Groups (SG.csv) and DS/US Service Groups (USSG.csv and DSSG.csv) managed by the **Cable Systems C100G**. When the button **Get Topology** is pressed, the 6 files are created and stored in a folder with the name of the CMTS, inside the directory specified in the parameter **Local Location.**
+#### Service Flow Page
 
-- The **Ping Function** page can be used to ping devices. If **Ping Query** is *Enabled* and the **IP addresses** are filled in, the devices will be pinged and the **status** and **RTT** of the ping will be displayed. You can also provide a file containing the IP addresses of the devices you want to ping. In that case, the connector will ping the IP addresses in the **provisioning file**.
+This page contains a table describing the set of **DOCSIS-QOS Service Flows** in the managed device.
 
-- The **Flap List** page displays the **Flap List Table**. This table displays more information about some of the cable modems managed by the **Cable Systems C100G**. The **Flap List Table** displays for example the number of **Flap Hits**, **Flap Misses**, etc.
+#### Offload US/DS Channels PAge
 
-- By default, the **Flap List** table is not polled by the connector, but polling can be enabled via the **Flap List Control** page. To access this page, click the **Flap List Control** page button. The **Flap List Control** subpage will also display extra information about the Flap List, like the **Flap List Current Size** and some **Thresholds**. You can also **reset** or **clear** the Flap List. If you only want the table polled once, click the **Refresh Flap List** button above the Flap List Table.
+This page can be used to offload the **interface data** to a semicolon-separated text file. The **location** and the **interval** to create these files can be specified on this page.
+
+This page also contains page buttons that lead to more detailed information about the **interfaces**, **modules**, etc.
+
+The **Redetect Config** button can be used to clear the upstream or downstream information from the different tables.
+
+#### Offload Topology Page
+
+This page can be used to offload 6 topology files: *CM.csv*, *CMTS.csv*, *DSSG.csv*, *FNCMTS.csv*, *SG.csv*, and *USSG.csv*.
+
+These topology files contain information about the Cable Modems (*CM.csv*), Fiber Nodes (*FNCMTS.csv*), Service Groups (*SG.csv*), and DS/US Service Groups (*USSG.csv* and *DSSG.csv*) managed by the Cable Systems C100G.
+
+When the button **Get Topology** is pressed, the 6 files are created and stored in a folder with the name of the CMTS, inside the directory specified in the parameter **Local Location**.
+
+#### Ping Function Page
+
+This page can be used to ping devices.
+
+If **Ping Query** is *Enabled* and the **IP addresses** are filled in, the devices will be pinged and the **status** and **RTT** of the ping will be displayed.
+
+You can also provide a file containing the IP addresses of the devices you want to ping. In that case, the connector will ping the IP addresses in the **provisioning file**.
+
+#### Flap List Page
+
+This page displays a table with information about some of the cable modems managed by the **Cable Systems C100G**, including the number of **Flap Hits**, **Flap Misses**, etc.
+
+By default, the **Flap List** table is not polled by the connector, but polling can be enabled via the **Flap List Control** page. To access this page, click the **Flap List Control** page button. The **Flap List Control** subpage will also display extra information about the Flap List, like the **Flap List Current Size** and some **Thresholds**. You can also **reset** or **clear** the Flap List. If you only want the table polled once, click the **Refresh Flap List** button above the Flap List Table.
 
 ### Web Interface
 
@@ -124,23 +150,23 @@ This page displays the web interface of the device. Note that the client machine
 
 This page contains general information about the device. It displays the **System Description**, **System Name**, **System Location** and **System Contact**.
 
-It also contains several page buttons leading to tables with the **System** **Status** (**Power** **Modules**, **Power** and **Fan** **Status**), **System** **Monitoring** (**Power**, **Fan** and **Temperature** **Monitoring**) and **CPU Utilization.**
+It also contains several page buttons to subpages where you can monitor power modules, power, fans, temperature, and CPU utilization.
 
 ### Interface Overview
 
-On this page, the **Interface Table** displays information for each interface, such as the **Description**, **Type**, **Bandwidth**, status information (**Admin Status** and **Operational Status**) and information about errors and discarded packets (**Inbound Discards**, **Inbound Errors**, **Outbound Discards**, **Outbound Errors**).
+This page displays a table with information on each interface, including bandwidth, status information, and information about errors and discarded packets.
 
-The page displays the **Number of Displayed Interfaces**, i.e., the number of interfaces that are currently being displayed in the table.
+The **Number of Displayed Interfaces** parameter indicates how many interfaces are currently displayed in the table.
 
-It also contains a number of page buttons:
+The page also contains several page buttons:
 
-- **Interface Selection**: Displays the **Interface Selection Table**, which determines which interfaces are displayed in the **Interface Table**. You can filter the interfaces that are displayed using the **Description Filter** and **Type Filter**, and use the toggle buttons in the **Displayed** column of the Interface Selection table to enable or disable displaying particular interfaces in the Interface Table. Interfaces can also be enabled or disabled for display via the table's context menu.
+- **Interface Selection**: Contains a table that determines which interfaces are displayed in the **Interface Table**. You can filter the interfaces that are displayed using the **Description Filter** and **Type Filter**, and use the toggle buttons in the **Displayed** column or the table's context menu to show or hide particular interfaces in the Interface Table.
 - **IF Mapping**: Displays the **Interface Mapping Table**.
 - **Eth Port Mng**: Displays the **Gigabit Ethernet Ports Management Table**.
 
 ### Video QAM Interfaces
 
-This page contains the **Video Downstream Channels** table, with information about the characteristics of the channels, such as the frequency (**Channel Frequency**), the used modulation (**Channel Modulation**) and the power (**Channel Power**) in dBm.
+This page contains the **Video Downstream Channels** table, with information about the characteristics of the channels, such as the frequency, the used modulation, and the power in dBm.
 
 ### Physical Interfaces
 
@@ -148,7 +174,7 @@ This page contains the **Physical Entities Table**, with information regarding t
 
 ### RF Ports
 
-This page contains the **RF Port Table**, which displays a counter for interfaces that are down, as well as the administrator status per RF port (**Interfaces Down** and **Admin Status**). Like previous tables, this table displays bit rates, the total maximum bandwidth, and the usage percentage per RF port (**Bit Rate**, **Total Max Bandwidth** and **Utilization**). The table also displays information regarding the number of **DTV Subscribers** and contains a column where you can set a customizable description for the RF port (**Custom Description**).
+This page contains the **RF Port Table**, which displays a counter for interfaces that are down, as well as the administrator status per RF port. Like previous tables, this table displays bit rates, the total maximum bandwidth, and the usage percentage per RF port. The table also displays information regarding the number of **DTV Subscribers** and contains a column where you can set a **customizable description** for the RF port.
 
 ### QAM Streams
 
