@@ -2,93 +2,56 @@
 uid: Connector_help_iDirect_Intuition
 ---
 
-# Intuition
+# iDirect Intuition
 
 ## About
 
-The ST Engineering iDirect Intuition connector delivers comprehensive visibility into the Intuition satellite ground system, enabling operators to monitor infrastructure, services, network resources, and operational performance from a single DataMiner platform.
+The **ST Engineering iDirect Intuition connector** provides centralised visibility into an Intuition satellite ground system. It brings configuration, inventory, operational status, alarms, events, topology, and performance information together in DataMiner, helping operations teams understand service health and the relationships between managed entities.
 
-The connector provides access to configuration, inventory, alarms, events, topology, and performance data across the Intuition ecosystem. By consolidating this information within DataMiner, operations teams gain a unified view of network health, service status, and infrastructure availability while maintaining clear relationships between managed entities.
-
-Designed for modern satellite operations, the Intuition connector helps organisations improve situational awareness, accelerate troubleshooting, and streamline operational workflows.
+By presenting Intuition resources in an organised, object-based structure, the connector helps operators navigate large environments, identify affected services, and investigate issues at the relevant terminal, network, or infrastructure level.
 
 ## Key Features
 
-### End-to-End Ground System Visibility
+### Monitor the Intuition ground system
 
-Monitor the complete Intuition environment, including terminals, iNets, networks, satellites, service plans, infrastructure components, and supporting platform resources from a centralised interface.
+Monitor terminals, iNets, satellites, service plans, network resources, and supporting infrastructure from a centralised interface.
 
-### Terminal and iNet Object Modelling
+### Work with dedicated Terminal and iNet DVEs
 
-The connector uses DataMiner Dynamic Virtual Elements (DVEs) to represent Intuition terminals and iNets as individual managed objects. This provides a scalable monitoring architecture that enables operators to navigate large environments, isolate issues quickly, and gain visibility into specific network entities.
+Represent terminals and iNets as DataMiner Dynamic Virtual Elements (DVEs), providing object-specific monitoring and navigation across large satellite environments.
 
-Benefits include:
+### Understand service and infrastructure relationships
 
-- Simplified management of large deployments.
-- Improved operational visibility.
-- Easier troubleshooting and root-cause analysis.
-- Native DataMiner object-oriented monitoring.
+Visualise relationships between terminals, network resources, services, satellites, and infrastructure components to assess dependencies and support root-cause investigation.
 
-### Unified Inventory Management
+### Track configuration and operational state
 
-Gain a consolidated view of operational assets and managed objects across the satellite ground system, helping teams maintain accurate inventories and improve operational consistency.
+Maintain visibility into managed-object inventory, configuration state, operational state, and associated status information across the Intuition environment.
 
-### Alarm and Event Monitoring
+### Review events, alarms, and performance data
 
-Centralise alarms and events within DataMiner to enable faster fault detection, improved incident management, and proactive service assurance.
+Bring Intuition events, alarms, and operational metrics into a unified view to support service assurance and performance analysis.
 
-### Relationship-Aware Topology
+## Use Cases
 
-Visualise relationships between infrastructure, network resources, services, terminals, and iNets to better understand dependencies and accelerate root-cause analysis.
+### Monitor remote satellite terminals
 
-### Performance Monitoring and Analytics
+Operations teams can review the state and performance of individual terminals through dedicated Terminal DVEs, while retaining visibility of the wider Intuition environment.
 
-Track operational KPIs, service performance, utilisation trends, and infrastructure health through DataMiner dashboards, reports, and analytics tools.
+### Assess iNet health and dependencies
 
-### Scalable Monitoring Platform
+Teams can use iNet DVEs and relationship-aware views to understand how terminals, services, satellites, and network resources are connected when investigating service-impacting issues.
 
-Support large-scale satellite environments with efficient data collection, inventory synchronisation, object-based monitoring, and performance monitoring capabilities.
+### Maintain an accurate operational inventory
 
-## Benefits
+Configuration and inventory data can be consolidated in DataMiner to provide a consistent view of the Intuition objects managed across the ground system.
 
-- Improved operational visibility across satellite networks and ground infrastructure.
-- Scalable monitoring of terminals and iNets as individual managed objects.
-- Faster identification and resolution of service-impacting issues.
-- Enhanced service assurance through centralised monitoring and alarm management.
-- Better capacity planning and resource optimisation using historical performance data.
-- Reduced operational complexity by consolidating monitoring into a single platform.
-- Increased operational efficiency through automation, analytics, and topology awareness.
+### Investigate service-impacting events
 
-## Typical Use Cases
+Operators can correlate object relationships, operational status, alarms, events, and performance information to narrow down the potential source and impact of an issue.
 
-### Satellite Network Operations
+## Prerequisites
 
-Provide operations teams with a unified view of network status, service availability, infrastructure health, and operational performance.
-
-### Terminal and iNet Monitoring
-
-Monitor terminals and iNets as dedicated managed objects, providing entity-specific status, alarms, configuration, and performance visibility within DataMiner.
-
-### Service Assurance
-
-Monitor alarms, events, and service indicators to proactively identify issues and maintain service quality.
-
-### Infrastructure Monitoring
-
-Track the health and status of critical ground-system components and supporting infrastructure.
-
-### Capacity Planning
-
-Analyse utilisation trends and performance metrics to support growth planning and network optimisation initiatives.
-
-### Operational Troubleshooting
-
-Leverage object relationships, topology, alarms, and performance insights to accelerate fault isolation and root-cause analysis.
-
-## Short Marketing Description
-
-**Monitor and manage the ST Engineering iDirect Intuition satellite ground system through DataMiner, providing centralised visibility into infrastructure, terminals, iNets, services, alarms, events, topology, and performance analytics for efficient operations and service assurance.**
-
-## One-Line Catalogue Tagline
-
-**Scalable monitoring and operational visibility for ST Engineering iDirect Intuition satellite ground systems.**
+- Access to an ST Engineering iDirect Intuition deployment.
+- Access to the Intuition GraphQL API.
+- Appropriate API credentials and permissions for the information monitored by the connector.
