@@ -9355,6 +9355,9 @@
     topicUid: Connector_help_Skyline_Protocol_Overview
   - name: Skyline PTP
     topicUid: Connector_help_Skyline_PTP
+    items:
+    - name: Skyline PTP Technical
+      topicUid: Connector_help_Skyline_PTP_Technical
   - name: Skyline QA_DVE_Subtables
     topicUid: Connector_help_Skyline_QA_DVE_Subtables
   - name: Skyline QAPortal
