@@ -6,8 +6,6 @@ uid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
 
 This connector is designed to interact with the **ScheduAll** platform, a Windows-based application for managing bookings (also referred to as work orders). Through the **ScheduAll Interop Service**, the connector receives notifications regarding new, updated, or canceled work orders, enabling their use in orchestration within a DataMiner System. Using the **ScheduAll Interop Listener**, it sends status updates back to ScheduAll, providing real-time feedback on the orchestration processes tied to these work orders.
 
-
-
 ## Configuration
 
 ### Connections
