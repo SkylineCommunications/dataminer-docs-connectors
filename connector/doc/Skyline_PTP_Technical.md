@@ -58,7 +58,7 @@ The Skyline PTP connector includes several data pages and tables that ingest, pr
 
 ## Supported PTP Connectors
 
-This section is the **single definitive source of truth** for all vendor connectors supported by the DataMiner PTP Solution and the Skyline PTP in-connector mediation engine.
+This section is the **single definitive source of truth** for all vendor connectors supported by the [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) and the Skyline PTP in-connector mediation engine.
 
 The following table lists all supported vendor connectors:
 

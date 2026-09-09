@@ -5,7 +5,7 @@ description: Discover how to use the Skyline PTP connector to monitor PTP networ
 
 # Skyline PTP
 
-The **Skyline PTP** connector is used as an application in the **DataMiner PTP Solution** to monitor the different PTP devices in a network.
+The **Skyline PTP** connector is used as an application in the [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) to monitor the different PTP devices in a network.
 
 For range 2.0.0.x, monitoring and configuration are handled via the **PTP Monitor** custom web application. For range 1.0.0.x, a Visio file provides access to the functionality of the PTP Solution.
 
@@ -75,6 +75,6 @@ There is no redundancy defined.
 
 ## How to use
 
-For range 2.0.0.x, monitoring is done through the **PTP Monitor** web application. Refer to the [Skyline PTP Technical](xref:Connector_help_Skyline_PTP_Technical) page for technical parameters and the supported connectors list.
+For range 2.0.0.x, monitoring is done through the **PTP Monitor** web application. Refer to the [Skyline PTP Technical](xref:Connector_help_Skyline_PTP_Technical) page for technical parameters and the supported connectors list, and to the [DataMiner PTP Solution Help](https://aka.dataminer.services/PTPHelp) for more information on the solution.
 
-For range 1.0.0.x, the data pages of the Skyline PTP element are not intended to be used directly. All the necessary data can be found on the Visual pages. For more information on how to use these pages, refer to the DataMiner PTP section in the DataMiner Help.
+For range 1.0.0.x, the data pages of the Skyline PTP element are not intended to be used directly. All the necessary data can be found on the Visual pages. For more information on how to use these pages, refer to the [DataMiner PTP Solution Help](https://aka.dataminer.services/PTPHelp).

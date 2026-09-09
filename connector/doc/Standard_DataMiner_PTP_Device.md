@@ -6,7 +6,7 @@ description: Mediation protocol for DataMiner PTP Solution 1.0.0.x. Retired in f
 # Standard DataMiner PTP Device
 
 > [!IMPORTANT]
-> As of DataMiner PTP Solution 2.0.0 and Skyline PTP 2.0.0.X, the Standard DataMiner PTP Device mediation protocol is retired. In-connector mediation within Skyline PTP is used instead.
+> As of [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) 2.0.0 and Skyline PTP 2.0.0.X, the Standard DataMiner PTP Device mediation protocol is retired. In-connector mediation within Skyline PTP is used instead.
 >
 > Refer to the [Skyline PTP Technical](xref:Connector_help_Skyline_PTP_Technical) page for the current single source of truth for supported connectors.
 
