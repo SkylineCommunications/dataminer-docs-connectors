@@ -4,114 +4,55 @@ uid: Connector_help_ScheduAll_Generic_Interop_Manager
 
 # ScheduAll Generic Interop Manager
 
-This connector is designed to interact with the **ScheduAll** platform, a Windows-based application for managing bookings (also referred to as work orders). Through the **ScheduAll Interop Service**, the connector receives notifications regarding new, updated, or canceled work orders, enabling their use in orchestration within a DataMiner System. Using the **ScheduAll Interop Listener**, it sends status updates back to ScheduAll, providing real-time feedback on the orchestration processes tied to these work orders.
-
 ## About
 
-### Version Info
+The **ScheduAll Generic Interop Manager** connector integrates DataMiner with the ScheduAll Interop Listener web service.
+It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work order and booking information between ScheduAll and other systems, allowing scheduling data to be automated and orchestrated directly from DataMiner.
 
-| Range              | Features        | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
+## Key Features
 
-### Product Info
+- **Interop session management**: Automatically logs in to and out of the ScheduAll Interop Listener, keeps track of the session cookie, and continuously validates the login status so the connection stays available.
 
-| Range   | Supported Firmware |
-|---------|--------------------|
-| 1.0.0.x | N/A                |
+- **Live work order tracking**: Maintains a Work Orders table with instance, chain, start/end time, message type, booking status, and custom field data, and automatically cleans up expired work orders.
 
-### System Info
+- **Message buffering and orchestration**: Buffers incoming and outgoing interop and booking messages, and triggers a configurable Orchestration Script once a maximum number of messages or a maximum wait time is reached.
 
-| Range   | DCF Integration | Cassandra Compliant | Linked Components | Exported Components |
-|---------|-----------------|---------------------|-------------------|---------------------|
-| 1.0.0.x | No              | Yes                 | -                 | -                   |
+- **Configurable field mapping**: Offers a Field Mapping table that lets users map ScheduAll custom tags to specific columns, allowing the connector to be adapted to different downstream data models without code changes.
 
-### DataMiner Compliancy
+- **InterApp command support**: Exposes InterApp Receiver/Return parameters so other DataMiner elements or Automation scripts can send interop commands to ScheduAll and receive responses programmatically.
 
-| Range   | Minimum required DataMiner version |
-|---------|------------------------------------|
-| 1.0.0.x | 10.2.0.0 - 12603                   |
+## Use Cases
 
-## Configuration
+### Automated Booking Orchestration
 
-### Connections
+**Challenge**: Confirming and acting on ScheduAll bookings manually slows down resource allocation for media operations.
 
-#### HTTP Connection
+**Solution**: The connector receives interop and booking messages from ScheduAll and buffers them until a configured threshold or wait time is reached, then triggers an Orchestration Script to act on them automatically.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+**Benefit**: Faster response to new or changed bookings, less manual intervention, and fewer missed updates.
 
-HTTP CONNECTION:
+### Centralized Scheduling Visibility
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *80*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
+**Challenge**: Operations teams need a single place to see the status of ScheduAll work orders without opening the ScheduAll application itself.
 
-#### Smart-Serial Connection
+**Solution**: The connector's Work Orders table surfaces booking status, start/end times, message type, and custom fields in real time within DataMiner.
 
-This connector uses a serial connection and requires the following input during element creation:
+**Benefit**: Unified, real-time visibility into scheduling data alongside other monitored systems.
 
-SERIAL CONNECTION:
+### Flexible Integration with Downstream Systems
 
-- Direct connection:
+**Challenge**: ScheduAll custom tags don't always line up with the fields expected by other systems that need the booking data.
 
-  - **Baudrate**: Baudrate specified in the manual of the device, e.g., *9600*.
-  - **Databits**: Databits specified in the manual of the device, e.g., *7*.
-  - **Stopbits**: Stopbits specified in the manual of the device, e.g., *1*.
-  - **Parity**: Parity specified in the manual of the device, e.g., *No*.
-  - **FlowControl**: FlowControl specified in the manual of the device, e.g., *No*.
+**Solution**: The Field Mapping table lets users map ScheduAll custom tags to the columns required by downstream integrations, and InterApp calls expose this data to other DataMiner elements or scripts.
 
-- Interface connection:
+**Benefit**: The connector can be adapted to new integrations purely through configuration, without requiring driver changes.
 
-  - **IP address/host**: The polling IP or URL of the destination.
-  - **IP port**: The IP port of the destination.
-  
-### Initialization
+## Technical Reference
 
-To begin using the **ScheduAll Generic Interop Manager**, some initial configuration is required. The settings detailed below ensure proper communication with the ScheduAll platform and can define how work order updates are handled for orchestration within the DataMiner System.
+### Prerequisites
 
-#### Interop Listener Settings
+- **Network access to the ScheduAll Interop Listener web service** is needed so the connector can log in, send commands, and receive responses over HTTP.
 
-To enable communication with ScheduAll through the ScheduAll Interop Listener, the corresponding user credentials must be configured:
+- **A valid ScheduAll interop user name and password** are needed for the connector to authenticate and maintain a login session.
 
-1. On the **Configuration** page, go to the **Interop Listener Settings** section.
-1. Enter the required user and password.
-1. Test the credentials by clicking the **Log In** button to ensure successful authentication.
-
-#### Work Order Settings
-
-Work order updates received from the ScheduAll platform are typically intended for orchestration within the DataMiner System. When new updates are detected, an automation script can be triggered to initiate the orchestration process:
-
-1. On the **Configuration** page, go to the **Work Order Settings** section.
-1. In the **Script Name** parameter, specify the name of the automation script.
-
-   This script will be executed whenever work order updates are received, enabling seamless orchestration.
-
-   > [!NOTE]
-   > This automation script must be developed according to the orchestration needs.
-
-With this configuration, the ScheduAll Generic Interop Manager will be able to efficiently process work orders and execute orchestration workflows within the DataMiner ecosystem.
-
-#### Field Mapping
-
-The **ScheduAll Interop Service** sends work order updates to the connector in the form of XML messages. These messages can be customized in ScheduAll to include unique XML tags. To ensure the connector can correctly process and save these updates, the **Field Mapping Table** must be configured:
-
-1. Go to the **Configuration** > **Field Mapping** page.
-
-   In the **Field Mapping Table**, you will see the list of the columns available in the Work Orders Table.
-
-1. For each item in the **Map** column, specify the corresponding custom XML tag from the ScheduAll updates.
-
-## How to use
-
-Once the initial configuration of the ScheduAll Generic Interop Manager is complete, the element will be ready to:
-
-- Receive work order updates from the ScheduAll platform.
-- Send orchestration updates back to ScheduAll, if required.
-
-### Orchestration Script Execution
-
-You can define when the orchestration script should be executed by configuring the following parameters:
-
-- **Maximum Work Order Messages**: This parameter specifies the maximum number of work order messages to accumulate before activating the orchestration script. When the threshold is reached, the script will be triggered.
-
-- **Maximum Work Order Wait Time**: This parameter defines the maximum time to wait for updates from ScheduAll. If no new updates are received within this period, the orchestration script will be activated.
+- **DataMiner 10.3.0.0 (build 12752) or higher** is required to run this connector.
