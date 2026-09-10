@@ -10,11 +10,9 @@ This connector is designed to interact with the **ScheduAll** platform, a Window
 
 ### Connections
 
-#### HTTP Connection
+#### HTTP Connection - Main
 
 This connector uses an HTTP connection and requires the following input during element creation:
-
-HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *80*).

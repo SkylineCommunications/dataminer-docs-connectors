@@ -10,32 +10,6 @@ The **Newtec M6100** is a high-performance satellite modulator used to transmit 
 
 This connector uses SNMP to monitor and control the M6100, giving operators a consolidated view of its modulation settings, input/output interfaces, redundancy status, and alarms directly from DataMiner.
 
-### Version Info
-
-| Range            | Description                                                     | Based on | System Impact |
-|----------------------|---------------------------------------------------------------------|--------------|-------------------|
-| 1.0.0.x              | Initial version                                                     | -            | -                 |
-| 1.0.1.x              | New range for Cassandra compliancy, changed displayColumn to naming | -            | -                 |
-| 1.1.0.x              | New firmware                                                        | -            | -                 |
-| 1.1.1.x [SLC Main]   | Removed single parameter alarms.                                    | -            | -                 |
-
-### Product Info
-
-| Range       | Supported Firmware |
-|-----------------|------------------------|
-| 1.0.0.x 1.0.1.x | -                      |
-| 1.1.0.x         | 2.5.3                  |
-| 1.1.1.x         | 2.5.3                  |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | Yes                 | No                      | -                     | -                       |
-| 1.0.1.x   | Yes                 | Yes                     | -                     | -                       |
-| 1.1.0.x   | Yes                 | No                      | -                     | -                       |
-| 1.1.1.x   | Yes                 | No                      | -                     | -                       |
-
 ## Configuration
 
 ### Connections

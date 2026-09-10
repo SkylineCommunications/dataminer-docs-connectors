@@ -10,15 +10,11 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 
 ## Key Features
 
-- **Master clock health monitoring**: Monitor overall device status, uptime, firmware information, temperature, battery status, and front-panel LED states.
+- **Know your clock is healthy at a glance**: Monitor the overall status, uptime, and hardware health of your master clock so problems are caught early.
 
-- **Reference and synchronization visibility**: Monitor GPS, genlock, time status, signal quality, satellites, and loss-of-lock conditions.
+- **Verify PTP synchronization at a glance**: Monitor grandmaster status and timing accuracy to confirm your PTP network is operating correctly.
 
-- **PTP monitoring**: Track Precision Time Protocol status, including clock identity, domain, priorities, clock class, clock accuracy, steps removed, and time offset information.
-
-- **Signal and output monitoring**: Monitor LTC, black, SDI, AES, embedded audio, and Dolby E interfaces, including video, ancillary data, timecode, and metadata information.
-
-- **Hardware and alarm supervision**: Monitor board voltages, fan speeds, power supply status and test history, as well as device alarms received through traps.
+- **Monitor every output from one place**: Keep an eye on all your signal outputs to make sure timing and reference distribution stays reliable.
 
 ## Use Cases
 

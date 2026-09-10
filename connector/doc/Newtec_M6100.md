@@ -12,15 +12,11 @@ The transport stream analyzer makes it possible to monitor the incoming transpor
 
 ## Key Features
 
-- **DVB-S/DVB-S2 modulation control**: Monitor and configure carrier modulation, symbol rate, roll-off, ModCod, frame type, and output frequency/level of the modulator.
+- **Configure and verify transmission from one place**: Monitor and adjust carrier settings and output quality without logging into the device's own interface.
 
-- **Multiple transport stream inputs**: Supports ASI input/output, TS over IP, and TS multiplexing, so you can manage the incoming and outgoing transport stream sources from a single element.
+- **Manage every transport stream source in one view**: Keep track of incoming and outgoing streams across all supported connection types from a single element.
 
-- **Redundancy monitoring**: Tracks the redundancy state of the device, allowing operators to quickly identify failover events and protection status.
-
-- **BISS scrambling management**: Monitor and configure BISS scrambling mode, key parity, and session words to secure transport stream content.
-
-- **Comprehensive alarm reporting**: Surfaces device, interface, and buffer alarms (e.g. frame sync loss, synth failure, buffer under-/overflow) in a unified alarms table for fast troubleshooting.
+- **Stay ahead of failover events**: Instantly see when redundancy protection kicks in, so operators are never caught off guard by a switchover.
 
 ## Use Cases
 

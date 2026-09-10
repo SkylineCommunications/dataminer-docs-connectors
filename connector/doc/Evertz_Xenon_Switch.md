@@ -10,15 +10,13 @@ The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon ser
 
 ## Key Features
 
-- **Up to 128×128 matrix control**: View and set crosspoints through a native DataMiner matrix UI, with per-level routing and manual refresh options.
+- **Simplify routing operations**: Set and manage crosspoints across your entire matrix from a single, unified DataMiner interface, without needing to rely on vendor-specific tools.
 
-- **Redundant controller management**: Monitors which controller (main or redundant) is currently active and allows seamless switching between them directly from the element.
+- **Keep operations running during failover**: Stay in control when a controller switchover happens, so routing operations continue uninterrupted.
 
-- **Card and reference card status**: Tracks the operational state of all installed cards and reference cards in a dedicated table, enabling proactive hardware health monitoring.
+- **Catch hardware problems before they impact viewers**: Get a clear, proactive view of the health of every installed card, so failing hardware can be replaced before it affects on-air signals.
 
-- **Fault monitoring with SNMP trap support**: Displays active faults from the device in a structured table, including individual fault status and trap-sending configuration, for immediate notification of hardware issues.
-
-- **End-to-end signal path tracing**: Exposes all inputs and outputs as DataMiner Connectivity Framework (DCF) interfaces, so you can trace signal paths across the full routing topology.
+- **Trace your signal path end to end**: Visualize how signals travel across your infrastructure, making it easier to verify connectivity and troubleshoot issues.
 
 ## Use Cases
 

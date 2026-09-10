@@ -12,15 +12,13 @@ It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work o
 
 ## Key Features
 
-- **Interop session management**: Automatically logs in to and out of the ScheduAll Interop Listener, keeps track of the session cookie, and continuously validates the login status so the connection stays available.
+- **Keep your integration reliably connected**: Automatically maintain a live connection to ScheduAll, so scheduling data keeps flowing without manual intervention.
 
-- **Live work order tracking**: Maintains a Work Orders table with instance, chain, start/end time, message type, booking status, and custom field data, and automatically cleans up expired work orders.
+- **Track bookings in real time**: Follow work orders as they progress, giving your team an always up-to-date view of scheduling activity.
 
-- **Message buffering and orchestration**: Buffers incoming and outgoing interop and booking messages, and triggers a configurable Orchestration Script once a maximum number of messages or a maximum wait time is reached.
+- **Automate your response to booking changes**: Trigger downstream actions automatically once new or updated bookings come in, speeding up resource allocation.
 
-- **Configurable field mapping**: Offers a Field Mapping table that lets users map ScheduAll custom tags to specific columns, allowing the connector to be adapted to different downstream data models without code changes.
-
-- **Programmatic command integration**: Exposes InterApp Receiver/Return parameters so other DataMiner elements or Automation scripts can send interop commands to ScheduAll and receive responses.
+- **Connect scheduling to the rest of your workflow**: Let other DataMiner elements and Automation scripts send commands to and receive responses from ScheduAll.
 
 ## Use Cases
 
