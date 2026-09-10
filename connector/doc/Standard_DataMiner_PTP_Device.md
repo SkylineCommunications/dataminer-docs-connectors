@@ -16,6 +16,7 @@ The following connectors are currently mediated with the latest version:
 - directOut montone.42
 - Evertz 5700MSC
 - Evertz 5700MSC - PTP Interface
+- Evertz DreamCatcher
 - Generic Edge Chassis
 - Generic Edge Chassis - PTP Card
 - Generic Switch
@@ -27,6 +28,7 @@ The following connectors are currently mediated with the latest version:
 - Lawo V__matrix
 - Meinberg LANTIME IMS-HPS - PTPv2 Instance
 - Meinberg LANTIME IMS-HPS API V10 - PTPv2 Instance
+- Meinberg LANTIME IMS-PSX API V17 - PTPv2 Instance
 - Meinberg Lantime M3000 - PTPv2 Module
 - Mellanox Technologies MLNX-OS Manager
 - Pebble Beach Dolphin
