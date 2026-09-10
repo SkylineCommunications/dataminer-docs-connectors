@@ -91,10 +91,14 @@ To display only active alarms, specify the filter below:
 `"AT : Visible":yes "AT - Active":true`
 
 Note that it is also possible to only trigger alarms on active parameters by using conditional monitoring.
-To do so, use:
+To do so, use one of these filters:
 
-> *Is**Alarm Table (AT).AT : Visible**ValueNot equal to**Yes***
-> *Or**Alarm Table (AT).AT - Active**ValueNot equal to**true***
+```text
+*Is**Alarm Table (AT).AT : Visible**ValueNot equal to**Yes***
+```
+```text
+*Or**Alarm Table (AT).AT - Active**ValueNot equal to**true***
+```
 
 #### Licenses Page
 
