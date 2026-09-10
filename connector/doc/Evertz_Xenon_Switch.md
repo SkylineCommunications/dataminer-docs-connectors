@@ -6,7 +6,7 @@ uid: Connector_help_Evertz_Xenon_Switch
 
 ## About
 
-The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon series routing switcher. It provides real-time visibility into the state of the routing matrix, installed cards, and active faults, while enabling full crosspoint control directly from DataMiner. The connector communicates over SNMP for status and fault data, and over the Evertz Q-Link serial protocol for matrix routing control, with optional redundant controller support.
+The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon series routing switcher. It provides real-time visibility into the state of the routing matrix, installed cards, and active faults, while enabling full crosspoint control directly from DataMiner.
 
 ## Key Features
 
@@ -22,7 +22,7 @@ The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon ser
 
 ## Use Cases
 
-### Centralised Routing Control in a Broadcast Facility
+### Centralized Routing Control in a Broadcast Facility
 
 **Challenge**: Operators need to manage signal routing on an Evertz Xenon switcher from a unified control interface, without relying on vendor-specific tools.
 
@@ -57,4 +57,4 @@ The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon ser
 - **A secondary IP address** for the redundant controller is required if redundant controller failover monitoring and switching are needed.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_technical_Evertz_Xenon_Switch).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Evertz_Xenon_Switch_Technical).

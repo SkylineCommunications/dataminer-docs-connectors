@@ -4053,7 +4053,9 @@
     topicUid: Connector_help_Evertz_X1202-HX_HDSDI
   - name: Evertz Xenon Switch
     topicUid: Connector_help_Evertz_Xenon_Switch
-    topicUid: Connector_technical_Evertz_Xenon_Switch
+    items:
+    - name: Evertz Xenon Switch Technical
+      topicUid: Connector_help_Evertz_Xenon_Switch_Technical
   - name: Evertz XPRF14
     topicUid: Connector_help_Evertz_XPRF14
   - name: Evertz XPS-EDGE
@@ -7328,6 +7330,9 @@
     topicUid: Connector_help_Newtec_HZ914
   - name: Newtec M6100
     topicUid: Connector_help_Newtec_M6100
+    items:
+    - name: Newtec M6100 Technical
+      topicUid: Connector_help_Newtec_M6100_Technical
   - name: Newtec M6100R2
     topicUid: Connector_help_Newtec_M6100R2
   - name: Newtec MCD6000
@@ -7341,8 +7346,7 @@
   - name: Newtec MDM6000
     topicUid: Connector_help_Newtec_MDM6000
   - name: Newtec MDM6100
-    topicUid: Connector_help_Newtec_M6100
-    topicUid: Connector_help_Newtec_M6100_Technical
+    topicUid: Connector_help_Newtec_MDM6100
   - name: Newtec MNT Satlink Manager
     topicUid: Connector_help_Newtec_MNT_Satlink_Manager
   - name: Newtec NOP1760
@@ -8706,7 +8710,9 @@
   items:
   - name: ScheduAll Generic Interop Manager
     topicUid: Connector_help_ScheduAll_Generic_Interop_Manager
-    topicUid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
+    items:
+    - name: ScheduAll Generic Interop Manager Technical
+      topicUid: Connector_help_ScheduAll_Generic_Interop_Manager_Technical
   - name: ScheduAll Manager
     topicUid: Connector_help_ScheduAll_Manager
   - name: ScheduAll Simulator

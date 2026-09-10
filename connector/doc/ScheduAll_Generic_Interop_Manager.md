@@ -7,6 +7,7 @@ uid: Connector_help_ScheduAll_Generic_Interop_Manager
 ## About
 
 The **ScheduAll Generic Interop Manager** connector integrates DataMiner with the ScheduAll Interop Listener web service.
+
 It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work order and booking information between ScheduAll and other systems, allowing scheduling data to be automated and orchestrated directly from DataMiner.
 
 ## Key Features
@@ -53,6 +54,9 @@ It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work o
 
 - **Network access to the ScheduAll Interop Listener web service** is needed so the connector can log in, send commands, and receive responses over HTTP.
 
-- **A valid ScheduAll interop user name and password** are needed for the connector to authenticate and maintain a login session.
+- **A valid ScheduAll interop username and password** are needed for the connector to authenticate and maintain a login session.
 
-- **DataMiner 10.3.0.0 (build 12752) or higher** is required to run this connector.
+- **DataMiner 10.3.0.0 - 12752 or higher** is required to run this connector.
+
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_ScheduAll_Generic_Interop_Manager_Technical).

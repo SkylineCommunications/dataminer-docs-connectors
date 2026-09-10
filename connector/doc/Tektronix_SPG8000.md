@@ -22,7 +22,7 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 
 ## Use Cases
 
-### Broadcast timing infrastructure monitoring
+### Broadcast Timing Infrastructure Monitoring
 
 **Challenge**: Timing and synchronization issues can affect multiple downstream broadcast systems, while device status may otherwise require separate access to each master clock.
 
@@ -30,7 +30,7 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 
 **Benefit**: Operators can identify timing problems earlier and correlate them with other monitored broadcast infrastructure.
 
-### PTP grandmaster supervision
+### PTP Grandmaster Supervision
 
 **Challenge**: PTP deployments require visibility into the active clock state and synchronization quality across the timing network.
 
@@ -38,7 +38,7 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 
 **Benefit**: Network operators gain the information needed to verify grandmaster operation and investigate synchronization changes.
 
-### Signal-path and hardware health checks
+### Signal-Path and Hardware Health Checks
 
 **Challenge**: Faulty fans, power supplies, voltages, or output interfaces can compromise timing and reference distribution.
 
@@ -46,7 +46,6 @@ The **Tektronix SPG8000** connector monitors and manages Tektronix SPG8000 maste
 
 **Benefit**: Maintenance teams can detect developing hardware issues and troubleshoot signal or reference failures from a single operational view.
 
-
-### Exported connector
+### Exported Connector
 
 The connector exports a **Tektronix SPG8000 - PTP Interface** child connector for PTP-related monitoring. Connectivity for the exported connector is managed by the parent connector.

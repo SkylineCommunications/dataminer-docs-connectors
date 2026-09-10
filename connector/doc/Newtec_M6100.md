@@ -6,9 +6,9 @@ uid: Connector_help_Newtec_M6100
 
 ## About
 
-The **Newtec M6100** is a high-performance satellite modulator used to transmit DVB-S and DVB-S2 (including ACM) carriers for broadcast and data distribution over satellite.
+This connector is used to monitor the M6100 broadcast satellite modulator.
 
-This connector uses SNMP to monitor and control the M6100, giving operators a consolidated view of its modulation settings, input/output interfaces, redundancy status, and alarms directly from DataMiner.
+The transport stream analyzer makes it possible to monitor the incoming transport stream. The purpose of this feature is to help determine if a problem seen at the output of a satellite receiver is due to a problem on the satellite link or to a problem in the headend before the modulator. Consequently, it provides the possibility to identify the root cause of service outages that happened in the video headend or on the transmission path between the video MUX and the satellite modulator. Because the analyzer is built into the modulator, inserting it does not change the behavior of the signal or the topology of the network, making troubleshooting easier. This leads to a shorter defect resolution time.
 
 ## Key Features
 
@@ -28,7 +28,7 @@ This connector uses SNMP to monitor and control the M6100, giving operators a co
 
 **Challenge**: Operators need a quick, reliable way to verify the modulation, output, and streaming parameters of each M6100 in the field without logging into the device's own web interface.
 
-**Solution**: The connector polls the modulator's SNMP MIB to expose modulation mode, symbol rate, output frequency/level, and TS Over IP/ASI interface status directly in DataMiner.
+**Solution**: The connector polls the modulator's SNMP MIB to expose modulation mode, symbol rate, output frequency/level, and TS over IP/ASI interface status directly in DataMiner.
 
 **Benefit**: Reduces the time needed to verify carrier configuration and interface health, enabling faster diagnosis of transmission issues.
 
@@ -38,7 +38,7 @@ This connector uses SNMP to monitor and control the M6100, giving operators a co
 
 **Solution**: The connector continuously monitors device, interface, and buffer alarms as well as the redundancy status of the modulator, and reports these directly in DataMiner.
 
-**Benefit**: Enables operators to react immediately to failures or failovers, minimizing downtime on live satellite transmissions.
+**Benefit**: Enables operators to react immediately to failures or failover switches, minimizing downtime on live satellite transmissions.
 
 ### Secure Content Delivery
 

@@ -1,5 +1,5 @@
 ---
-uid: Connector_technical_Evertz_Xenon_Switch
+uid: Connector_help_Evertz_Xenon_Switch_Technical
 ---
 
 # Evertz Xenon Switch
@@ -14,11 +14,11 @@ To avoid issues because of excessive polling, the device is polled at startup an
 
 Between requests, there is a pause of 0.5 seconds. This prevents the loop from going too fast and keeps the device from going into error state. Note, however, that this does mean that it will take a while for the element to load the entire matrix (since version 1.0.0.7).
 
-## Installation and configuration
+## Configuration
 
-### Creation
+### Connections
 
-#### SNMP Main Connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -32,7 +32,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-#### Serial SerialPort Connection
+#### Serial Connection - SerialPort
 
 This connector uses a serial connection and requires the following input during element creation:
 
@@ -71,7 +71,7 @@ SERIAL CONNECTION (**TCP/IP**):
     | 15                 | N            |
     | 16                 | O            |
 
-#### Serial SerialPortBackup Connection (2.0.2.x and 2.1.2.x)
+#### Serial Connection - SerialPortBackup (2.0.2.x and 2.1.2.x)
 
 This connector uses a second serial connection to configure the redundant controller and requires the following input during element creation:
 
@@ -90,7 +90,7 @@ SERIAL CONNECTION (**TCP/IP**):
   - **IP address/host**: The polling IP of the device.
   - **IP port**: The IP port of the device (port *23*).
 
-## Usage
+## How to Use
 
 ### General Page
 

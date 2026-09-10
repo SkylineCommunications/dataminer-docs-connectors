@@ -75,7 +75,7 @@ The **ScheduAll Interop Service** sends work order updates to the connector in t
 
 1. For each item in the **Map** column, specify the corresponding custom XML tag from the ScheduAll updates.
 
-## How to use
+## How to Use
 
 Once the initial configuration of the ScheduAll Generic Interop Manager is complete, the element will be ready to:
 

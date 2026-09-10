@@ -4,17 +4,17 @@ uid: Connector_help_Tektronix_SPG8000_Technical
 
 # Tektronix SPG8000
 
-The SPG8000 is a precision multiformat video signal generator, suitable for master synchronization and reference applications. It provides multiple video reference signals, such as black burst, HD tri-level sync, and serial digital and composite analog test patterns. It also provides time reference signals such as time code and NTP (Network Time Protocol).
-
 ## About
 
-The connector polls information from the Tektronix SPG8000 via an SNMP connection. Traps are also implemented; the necessary data will be refreshed as soon as a trap is received.
+The SPG8000 is a precision multiformat video signal generator, suitable for master synchronization and reference applications. It provides multiple video reference signals, such as black burst, HD tri-level sync, and serial digital and composite analog test patterns. It also provides time reference signals such as time code and NTP (Network Time Protocol).
+
+This connector polls information from the Tektronix SPG8000 via an SNMP connection. Traps are also implemented; the necessary data will be refreshed as soon as a trap is received.
 
 ## Configuration
 
 ### Connections
 
-#### SNMP Main connection
+#### SNMP Connection - Main
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
@@ -28,7 +28,7 @@ SNMP Settings:
 - **Get community string**: The community string used when reading values from the device, by default *public*.
 - **Set community string**: The community string used when setting values on the device, by default *private*.
 
-#### Serial API connection \[1.0.1.x\]
+#### Serial Connection - API (1.0.1.x)
 
 In range 1.0.1.x, this connector also uses a serial connection to poll the API.
 
@@ -45,7 +45,7 @@ SERIAL Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to Use
 
 The element created with this connector consists of the data pages detailed below.
 
