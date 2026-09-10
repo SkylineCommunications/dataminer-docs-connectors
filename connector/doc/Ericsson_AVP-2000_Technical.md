@@ -11,25 +11,6 @@ This is an HTTP connector for the Ericsson AVP-2000 Advanced Video Processor. Wi
 
 Range 3.0.0.x contains the most important or requested parameters and displays them in an orderly fashion. This means that not every parameter is implemented. Parameters found in the newest firmware version are added to the implemented tables.
 
-### Version Info
-
-| Range | Description | DCF Integration | Cassandra Compliant |
-|--|--|--|--|
-| 1.0.0.x | Initial version | No | Yes |
-| 2.0.0.x | The connector was made for version 10.13.3.0.0 (xmlVersion attribute on the XML config file of the device). Contains the config XML as one large tree view. Focuses on the following cards:<br>- CE-x Analogue<br>- CE-x Encoder | No | Yes |
-| 3.0.0.x | The default range. Polling and parameters have been completely redesigned based on knowledge from previous ranges. | No | Yes |
-| 3.1.0.x | Started from 3.0.0.4; supports new firmware. | No | Yes |
-| 3.1.1.1 | Added DCF; only external connections implemented. | Partial | Yes |
-
-### Product Info
-
-| Range     | Device Firmware Version            |
-|------------------|------------------------------------|
-| 1.0.0.x          | Prior to 10.13.3.0.0               |
-| 2.0.0.x          | 10.13.3.0.0                        |
-| 3.0.0.x          | 10.3.0.0.0 10.10.1.0.0 10.13.3.0.0 |
-| 3.1.0.x          | 10.30.4.0.0                        |
-
 ## Configuration
 
 ### Connections
