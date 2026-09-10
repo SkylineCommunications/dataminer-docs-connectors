@@ -16,9 +16,9 @@ The **Evertz Xenon Switch** connector monitors and controls the Evertz Xenon ser
 
 - **Card and reference card status**: Tracks the operational state of all installed cards and reference cards in a dedicated table, enabling proactive hardware health monitoring.
 
-- **Fault monitoring with SNMP trap support**: Displays active faults from the device in a structured table, including individual fault status and trap-sending configuration, ensuring alarm visibility in DataMiner.
+- **Fault monitoring with SNMP trap support**: Displays active faults from the device in a structured table, including individual fault status and trap-sending configuration, for immediate notification of hardware issues.
 
-- **DCF integration**: Exposes all inputs and outputs as DataMiner Connectivity Framework (DCF) interfaces, enabling end-to-end signal path tracing across the DataMiner topology.
+- **End-to-end signal path tracing**: Exposes all inputs and outputs as DataMiner Connectivity Framework (DCF) interfaces, so you can trace signal paths across the full routing topology.
 
 ## Use Cases
 

@@ -14,7 +14,7 @@ The **LTN Transport Portal** connector provides DataMiner with centralized monit
 
 - **Endpoint visibility**: Verify endpoint status, channel information, and traffic rates.
 
-- **Distribution group monitoring**: Retrieve distribution groups and their associated endpoints to provide visibility into how transport paths are organized.
+- **Distribution group monitoring**: Monitor distribution groups and their associated endpoints to see how transport paths are organized.
 
 - **API health monitoring**: Expose the status and response information of the main API calls so operators can quickly identify communication or data retrieval issues.
 

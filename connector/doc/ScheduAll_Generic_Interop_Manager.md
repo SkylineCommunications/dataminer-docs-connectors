@@ -20,7 +20,7 @@ It logs in to ScheduAll over HTTP, keeps the session alive, and exchanges work o
 
 - **Configurable field mapping**: Offers a Field Mapping table that lets users map ScheduAll custom tags to specific columns, allowing the connector to be adapted to different downstream data models without code changes.
 
-- **InterApp command support**: Exposes InterApp Receiver/Return parameters so other DataMiner elements or Automation scripts can send interop commands to ScheduAll and receive responses programmatically.
+- **Programmatic command integration**: Exposes InterApp Receiver/Return parameters so other DataMiner elements or Automation scripts can send interop commands to ScheduAll and receive responses.
 
 ## Use Cases
 
