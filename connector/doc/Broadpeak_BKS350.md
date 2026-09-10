@@ -12,10 +12,11 @@ This connector allows the real-time monitoring of BKS350 general information, se
 
 ### Version Info
 
-| Range              | Key Features           | Based on | System Impact                                                             |
-|--------------------|------------------------|----------|---------------------------------------------------------------------------|
-| 1.0.0.x [Obsolete] | Initial version.       | -        | -                                                                         |
-| 1.0.1.x [SLC Main] | HTTP connection added. | -        | Existing elements will need to be reconfigured to use the new connection. |
+| Range              | Key Features           | Based on | System Impact                                                                           |
+|--------------------|------------------------|----------|-----------------------------------------------------------------------------------------|
+| 1.0.0.x [Obsolete] | Initial version.       | -        | -                                                                                       |
+| 1.0.1.x [Obsolete] | HTTP connection added. | -        | Existing elements will need to be reconfigured to use the new connection.               |
+| 1.0.2.x [SLC Main] | Alarms table fix.      | -        | Alarm and trending history will be lost because of the changed primary key (PK) format. |
 
 ### Product Info
 
@@ -23,13 +24,15 @@ This connector allows the real-time monitoring of BKS350 general information, se
 |-----------|------------------------|
 | 1.0.0.x   | -                      |
 | 1.0.1.x   | 03.07.09.10076         |
+| 1.0.2.x   | 03.16.01.506800732     |
 
 ### System Info
 
 | Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
 |-----------|---------------------|-------------------------|-----------------------|-------------------------|
 | 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.01x   | No                  | Yes                     | -                     | -                       |
+| 1.0.1.x   | No                  | Yes                     | -                     | -                       |
+| 1.0.2.x   | No                  | Yes                     | -                     | -                       |
 
 ## Configuration
 
@@ -68,6 +71,7 @@ Note that the client machine has to be able to access the device, as otherwise i
 The element created with this connector consists of the following data pages:
 
 - **General**: Contains general information, such as the current date and time, and the up time. Also shows the overall status of the equipment.
+- **Statistics**: Contains service performance statistics.
 - **Live**: Contains a table with all live status parameters.
 - **Alarm**: Shows the alarms that have occurred while the device was operational.
 - **Output**: Contains a table that shows the output status along with the template name and output format.
@@ -76,3 +80,5 @@ The element created with this connector consists of the following data pages:
 ## Notes
 
 When you upgrade from range 1.0.0.x to 1.0.1.x, existing elements need to be reconfigured before the new connection will be taken in use.
+
+When you upgrade to range 1.0.2.x, alarm and trending history will be lost due to the changed primary key (PK) format.
