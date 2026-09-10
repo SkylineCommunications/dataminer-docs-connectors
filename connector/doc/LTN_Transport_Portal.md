@@ -18,12 +18,6 @@ The **LTN Transport Portal** connector provides DataMiner with centralized monit
 
 - **API health monitoring**: Expose the status and response information of the main API calls so operators can quickly identify communication or data retrieval issues.
 
-- **Configurable polling**: Configure API-specific polling intervals, pagination, page sizes, and polling history to balance data freshness with API load.
-
-- **Secure API authentication**: Authenticate through the portal's token endpoint using configured credentials and an API key.
-
-- **Multithreaded HTTP requests**: Support parallel HTTP request handling for active-source and polling operations, with runtime statistics for thread usage, waiting threads, and command duration.
-
 - **Web interface access**: Provide a configurable link to the LTN Transport Portal web interface directly from the element.
 
 ## Use Cases
