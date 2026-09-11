@@ -105,6 +105,8 @@ The page also contains two page buttons:
 
 - **Load File**: Opens the configuration file import window.
 
+The **Baseboard Connection State** parameter on this page periodically checks the connection to the baseboard. If the connection cannot be established, the **System**, **Processor**, **Power**, **Voltage**, **Memory**, **Cooling**, **Temperature**, and **Drive Slot** pages are hidden, and polling of the baseboard parameters is stopped.
+
 > To load the services that need to be monitored, an Excel file is required with a fixed format (.xls or .xlsx). Go to the **General** page and open the pop-up page **Load File**. Then specify the **File Path** and **File Name** of the file, and finally click **Import**.
 >
 > The Excel file should contain columns with the following headers (example values refer to the image below):
