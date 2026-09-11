@@ -86,19 +86,16 @@ Note that this includes all possible alarms, and not only the active alarms.
 When an entire row is grayed out, it means that the alarm cannot currently occur.
 Other alarms can occur, but are only active if the column **AT - Active** contains the value *true.*
 
-To display only active alarms, specify the filter below:
+To display only active alarms, put this filter below on the table's search bar:
 
 `"AT : Visible":yes "AT - Active":true`
 
-Note that it is also possible to only trigger alarms on active parameters by using conditional monitoring.
-To do so, use one of these filters:
+Note that it is also possible to only trigger alarms on active alarms by using conditional monitoring.
+To do so, on the Alarm template, use these condition filters as the condition for any of the "Alarm Table" columns you'd want to alarm on:
 
-```text
-*Is**Alarm Table (AT).AT : Visible**ValueNot equal to**Yes***
-```
-```text
-*Or**Alarm Table (AT).AT - Active**ValueNot equal to**true***
-```
+> Is → Alarm Table (AT): AT : Visible → All rows → Value → Not equal to → Value → Yes
+
+> Or → Alarm Table (AT): AT : Visible → All rows → Value → Not equal to → Value → true
 
 #### Licenses Page
 
