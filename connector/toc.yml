@@ -2040,6 +2040,9 @@
   items:
   - name: Casa Systems C100G
     topicUid: Connector_help_Casa_Systems_C100G
+    items:
+    - name: Casa Systems C100G Technical
+      topicUid: Connector_help_Casa_Systems_C100G_Technical
   - name: Casa Systems CCAP Platform
     topicUid: Connector_help_Casa_Systems_CCAP_Platform
   - name: Casa Systems Platform D-DOCSIS
