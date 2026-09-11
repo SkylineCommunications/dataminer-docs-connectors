@@ -1,53 +1,26 @@
 ---
 uid: Connector_help_Vertex_7134
+description: Monitor and control the Vertex 7134 antenna control unit in DataMiner, with manual and preset positioning, step tracking, and memory tracking.
 ---
 
 # Vertex 7134
 
-The **Vertex 7134** connector is a serial connector that is used for antenna control. It allows alarm monitoring and trending of many important parameters.
+The **Vertex 7134** connector integrates the Vertex 7134 antenna control unit (ACU) into DataMiner, giving you a single interface to position, track, and monitor your antenna.
 
 ## About
 
-This is an antenna control unit, with support for step tracking and memory tracking. Positioning of the antenna can be set manually, or through a predefined value saved in a table as a preset.
+The Vertex 7134 is an antenna control unit that supports **step tracking** and **memory tracking** to keep an antenna accurately aligned with its target. With this connector, you can position the antenna manually or recall a preset stored in the target and program tables, so operators can move between known positions quickly and consistently.
 
-## Installation and configuration
+The connector also surfaces a large set of device statuses and alarms, allowing you to keep a close eye on the health and behavior of the antenna from within DataMiner.
 
-### Creation
+## Key Features
 
-The **Vertex 7134** is a serial connector. The IP address and port need to be configured during creation of the element. These communication settings will be used to send and receive commands and responses to and from the device.
+- **Position** the antenna manually or through predefined presets stored in the target and program tables.
+- **Track** targets automatically using step tracking to maintain optimal antenna alignment.
+- **Track** targets with enhanced memory tracking on the 7134 EMT device.
+- **Monitor** azimuth, elevation, polarization, and other key operational parameters in real time.
 
-## Usage
+## Technical Reference
 
-### Main View
-
-On this page, you can find general information about the unit.
-
-### General Page
-
-On this page, you can find more detailed information about the unit, along with a large number of statuses.
-
-### Positions Page
-
-On this page, you can set manual positioning of the antenna and target and program tables.
-
-### Step Track Page
-
-On this page, **Step Track** parameters and sets are available.
-
-### Memory Track Page
-
-On this page, enhanced memory track parameters and sets are available.
-
-### Alarms Page
-
-On this page, all alarms that can be present on the unit are displayed. Monitoring is enabled for these parameters.
-
-## Notes
-
-As this is a serial connector, this means that there has to be a connection to a real device.
-
-Step track and enhanced memory track are only supported on the 7134 EMT device. Before the memory track can be started, the correct track parameters have to be set. The targets (A, B, C) used when setting the track parameters have to be present in the target table.
-
-To be able to control the device from DataMiner, the device needs to be in **Remote Control Mode** (RS-232/422 Remote Control or Remote Mode), not in **Local** mode.
-
-If the serial gateway is configured at a slow 1.2 kbaud rate (RS-232), is it possible that Target Azimuth, Polarization or Elevation settings do not work correctly in the **Target** table. If the serial gateway is configured to RS-428, these settings will work correctly.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation page](xref:Connector_help_Vertex_7134_Technical).
