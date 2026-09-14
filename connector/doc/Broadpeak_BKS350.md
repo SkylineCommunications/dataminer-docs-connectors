@@ -1,4 +1,4 @@
-﻿---
+---
 uid: Connector_help_Broadpeak_BKS350
 description: Monitor the Broadpeak BKS350 packager streamer in DataMiner, with real-time visibility of server status, live streaming, outputs, and device alarms.
 ---
