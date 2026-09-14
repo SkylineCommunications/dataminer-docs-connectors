@@ -86,12 +86,11 @@ Note that this includes all possible alarms, and not only the active alarms.
 When an entire row is grayed out, it means that the alarm cannot currently occur.
 Other alarms can occur, but are only active if the column **AT - Active** contains the value *true.*
 
-To display only active alarms, put this filter below on the table's search bar:
+To display only active alarms, put the filter below on the table's search bar:
 
 `"AT : Visible":yes "AT - Active":true`
 
-Note that it is also possible to only trigger alarms on active alarms by using conditional monitoring.
-To do so, on the Alarm template, use these condition filters as the condition for any of the "Alarm Table" columns you'd want to alarm on:
+Note that it is also possible to only trigger DataMiner alarms on active alarms by using conditional monitoring. To do so, in the alarm template, use these condition filters as the condition for any of the Alarm Table columns for which you want DataMiner alarms to be triggered:
 
 > Is → Alarm Table (AT): AT : Visible → All rows → Value → Not equal to → Value → Yes
 
