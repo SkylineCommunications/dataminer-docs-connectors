@@ -6,20 +6,20 @@ uid: Connector_help_Telenet_EPM_Platform_FTTH_WM
 
 ## About
 
-The Telenet EPM Platform FTTH WM connector is the workflow manager for ONT event distribution in the Telenet FTTH EPM Solution.
+The Telenet EPM Platform FTTH WM connector takes care of routing events retrieved by consumers.
 
 The connector reads GZIP event files created by the Kafka consumer, identifies the FTTH Collector element responsible for each ONT, and forwards the events to that collector. It supports ONT status changes, periodic status synchronization, and optional RX/TX measurements.
 
-The connector does not connect directly to Kafka and does not create a separate CSV file for each ONT change. Kafka access and the creation of the event files are handled outside this connector.
+The connector does not connect directly to Kafka and does not create a separate CSV file for each ONT change. Access to the stream from the Kafka brokers is handled by elements running the [Generic Kafka Consumer](https://catalog.dataminer.services/details/ed00ca53-7d1a-4bf0-88f8-7bb2a457f697) connector, which creates the event files.
 
 ## Role in the FTTH EPM Solution
 
-The solution uses the following elements:
+The FTTH WM connector has the following role alongside the related connectors:
 
-- **Telenet EPM Platform FTTH WM**: Imports the routing information, processes Kafka event files, and distributes ONT events to the correct collector elements.
-- **Skyline EPM Platform FTTH Collector**: Receives and processes the events for the ONTs assigned to it.
-- **Skyline EPM Platform FTTH backend**: Aggregates information received from the collector elements.
-- **Skyline EPM Platform FTTH frontend**: Provides the main user view of the FTTH topology and its aggregated information.
+- **Workflow manager** (Telenet EPM Platform FTTH WM connector): Imports the routing information, processes Kafka event files, and distributes ONT events to the correct collector elements.
+- **Collector** ([Skyline EPM Platform FTTH Collector](Skyline_EPM_Platform_FTTH_Collector.md) connector): Receives and processes the events for the ONTs assigned to it.
+- **Backend** ([Skyline EPM Platform FTTH](Skyline_EPM_Platform_FTTH.md) connector): Aggregates information received from the collector elements.
+- **Frontend** ([Skyline EPM Platform FTTH](Skyline_EPM_Platform_FTTH.md) connector): Provides the main user view of the FTTH topology and its aggregated information.
 
 ### How events are forwarded to collector elements
 
