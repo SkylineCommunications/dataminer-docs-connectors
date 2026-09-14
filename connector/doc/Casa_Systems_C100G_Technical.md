@@ -174,11 +174,11 @@ This page contains the **Physical Entities Table**, with information regarding t
 
 ### RF Ports
 
-This page contains the **RF Port Table**, which displays a counter for interfaces that are down, as well as the administrator status per RF port. Like previous tables, this table displays bit rates, the total maximum bandwidth, and the usage percentage per RF port. The table also displays information regarding the number of **DTV Subscribers** and contains a column where you can set a **customizable description** for the RF port.
+This page contains the **RF Port Table**, which displays a counter for interfaces that are down, the administrator status per RF port, bit rates, the total maximum bandwidth, and the usage percentage per RF port, as well as information regarding the number of DTV subscribers. It also contains a column where you can set a **customizable description** for the RF port.
 
 ### QAM Streams
 
-This page contains the **QAM Streams** table. This table contains information regarding the Network identifier (**Network ID**), the transport stream identifier (**Transport ID**), etc. It also contains four columns that are filled in by another element: **HFC-Segment**, **QAM VOD Cluster**, **DTV Subscribers** and **HFC-Segment Group**.
+This page contains the **QAM Streams** table. This table contains information regarding the Network identifier (**Network ID**), the transport stream identifier (**Transport ID**), etc. It also contains four columns that are filled in by another element: **HFC-Segment**, **QAM VOD Cluster**, **DTV Subscribers**, and **HFC-Segment Group**.
 
 ### Service Groups
 
@@ -186,7 +186,7 @@ This page contains a table with information such as the **Bit Rates** and **Maxi
 
 ### Virtual Edge
 
-This page displays information about the virtual edges present on the Casa Systems C100G device. The **Virtual Edge** table contains information about each virtual edge, such as the **Operational Status** and **IP Addresses**. It also includes information regarding the bit rates and the total maximum bandwidth per virtual edge (**In Bit Rate**, **Out Bit Rate** and **Bandwidth**).
+This page displays information about the virtual edges present on the Casa Systems C100G device. The **Virtual Edge** table contains information about each virtual edge, such as the **Operational Status** and **IP Addresses**. It also includes information regarding the bit rates and the total maximum bandwidth per virtual edge.
 
 ### CAS
 
@@ -197,7 +197,7 @@ This page contains the following tables:
 
 ### EIS
 
-This page contains the **SimulCrypt EIS** table. This table contains the textual **Description** of the module that the SimulCrypt EIS connects to, the **IP Address** and **TCP Port**, the amount of time since the EIS connection was established (**Uptime**) and each connection's **Status**.
+This page contains the **SimulCrypt EIS** table. For each connection, this table contains a description of the module that the SimulCrypt EIS connects to, the IP address and TCP port, the amount of time since the EIS connection was established, and the connection status.
 
 ### MPEG
 
@@ -219,39 +219,25 @@ This page displays different tables with information regarding the video streams
 
 ### Video Control Page
 
-This page contains several parameters that allow you to define certain values for the SimulCrypt-related parameters. It is possible to define the **Video SimulCrypt Crypto Period**, the **ECMG Timeout** and **Retries** time and the **SimulCrypt Load Balancing**.
+This page contains several parameters that allow you to define certain values for the SimulCrypt-related parameters. It is possible to define the **Video SimulCrypt Crypto Period**, the **ECMG Timeout** and **Retries** time, and the **SimulCrypt Load Balancing**.
 
 ## Usage (Range 4.0.2.x)
 
-This range extends range 4.0.1.x with Video KPIs, which provide insight into the
-video processing of the Casa Systems C100G through two additional pages. The video
-data is retrieved via SNMPv2.
+This range extends range 4.0.1.x with Video KPIs, which provide insight into the video processing of the Casa Systems C100G through two additional pages. The video data is retrieved via SNMPv2.
 
 ### Video Overview
 
-This page provides an aggregated view of the video processing per interface and
-contains the following tables:
+This page provides an aggregated view of the video processing per interface and contains the following tables:
 
-- **Casa Video QAM Port**: Displays the total bandwidth, the used bitrate and the
-  bitrate utilization per video QAM port.
-- **Casa Video Channel Stats**: Displays the number of active video sessions per
-  channel.
-- **Casa Video Input Port Stats**: Displays the number of active video sessions
-  per input port.
+- **Casa Video QAM Port**: Displays the total bandwidth, the used bitrate and the bitrate utilization per video QAM port.
+- **Casa Video Channel Stats**: Displays the number of active video sessions per channel.
+- **Casa Video Input Port Stats**: Displays the number of active video sessions per input port.
 
-Each of these tables includes an interface description, which is resolved from the
-Interface table so the video statistics can be easily correlated with the
-corresponding interface.
+Each of these tables includes an interface description, which is resolved from the Interface table so the video statistics can be easily correlated with the corresponding interface.
 
 ### Video Sessions
 
-This page displays the Casa Video Session table, which contains detailed
-information about the active video sessions. For each session it shows, among
-other things, the QAM Channel, the source and destination IP addresses and UDP
-ports, the input and output program numbers, detected and requested bitrates,
-detected jitter, the input and output state, and detailed input/output transport
-stream statistics (such as detected packets, PSI, PAT version, TSID and various
-packet counters). The Session ID is displayed in decimal format.
+This page displays the Casa Video Session table, which contains detailed information about the active video sessions. For each session, it shows among others the QAM Channel, source and destination IP addresses and UDP ports, input and output program numbers, detected and requested bit rates, detected jitter, input and output state, and detailed input/output transport stream statistics (such as detected packets, PSI, PAT version, TSID, and various packet counters). The session ID is displayed in decimal format.
 
 ## Usage (Range 5.0.0.x)
 
@@ -262,41 +248,41 @@ This is a customer-specific range with a redesigned layout. Later minor versions
 
 ### General
 
-This page contains general information about the device. It displays the **System Chassis Serial**, **System Name**, **Current Running Flash**, **IP Address** and **System Contact**.
+This page contains general information about the device. It displays the **System Chassis Serial**, **System Name**, **Current Running Flash**, **IP Address**, and **System Contact**.
 
 Via a page button on this page, you can delete all custom tables in the element.
 
 ### Fan
 
-This page contains information about the fan status and configuration. **Speed**, **Threshold** and **Slot** can be monitored.
+This page contains information about the fan status and configuration. **Speed**, **Threshold**, and **Slot** can be monitored.
 
 ### Temperature
 
-This page contains relevant information about the temperature. **Threshold High, Threshold Low** and **Status** can be monitored, in addition to the current **Temperature.**
+This page contains relevant information about the temperature. **Threshold High**, **Threshold Low**, and **Status** can be monitored, in addition to the current **Temperature**.
 
 ### Power
 
-This page contains a table that allows you to monitor the system power supply. **State**, **Source** and **Slot** can be monitored.
+This page contains a table that allows you to monitor the system power supply. **State**, **Source**, and **Slot** can be monitored.
 
 ### Ethernet
 
-This page contains the **Ethernet Table**, which allows you to monitor Ethernet interfaces, with general and specific information such as **Interface Name, Bandwidth, Utilization, Port Link Status, In Bitrate** and **Out Bitrate.**
+This page contains the **Ethernet Table**, which allows you to monitor Ethernet interfaces, with general and specific information such as **Interface Name**, **Bandwidth**, **Utilization**, **Port Link Status**, **In Bitrate**, and **Out Bitrate**.
 
 ### Upstream
 
-This page contains the **Upstream Channel Table**, which allows you to monitor upstream interfaces, with general and specific information from different sources, such as **Cable Modem Online, Cable Modem Offline, Cable Modem Registered, Cable Modem Unregistered, Rate Uncorrectable, SNR, Bitrates, Utilization, Channel Status, Modulation, Capacity** and more
+This page contains the **Upstream Channel Table**, which allows you to monitor upstream interfaces, with general and specific information from different sources, such as **Cable Modem Online**, **Cable Modem Offline**, **Cable Modem Registered**, **Cable Modem Unregistered**, **Rate Uncorrectable**, **SNR**, **Bitrates**, **Utilization**, **Channel Status**, **Modulation**, **Capacity**, and more.
 
 ### Downstream
 
-This page contains the **Downstream Channel Table**, which allows you to monitor downstream interfaces, with general and specific information from different sources, such as **Cable Modem Online, Cable Modem Offline, Cable Modem Registered, Cable Modem Unregistered, Rate Uncorrectable, SNR, Bitrates, Utilization, Channel Status, Modulation, Capacity** and more.
+This page contains the **Downstream Channel Table**, which allows you to monitor downstream interfaces, with general and specific information from different sources, such as **Cable Modem Online**, **Cable Modem Offline**, **Cable Modem Registered**, **Cable Modem Unregistered**, **Rate Uncorrectable**, **SNR**, **Bitrates**, **Utilization**, **Channel Status**, **Modulation**, **Capacity**, and more.
 
 ## Usage (Range 6.0.0.x)
 
-This is a lightweight, customer-specific range derived from range 3.0.0.x. It focuses on a reduced set of data, polling only the interfaces, QAM streams and QAM interfaces.
+This is a lightweight, customer-specific range derived from range 3.0.0.x. It focuses on a reduced set of data, polling only the interfaces, QAM streams, and QAM interfaces.
 
 ### General Page
 
-This page contains general information about the device. It displays the **System Description**, **System Name**, **System Location** and **System Contact**.
+This page contains general information about the device. It displays the **System Description**, **System Name**, **System Location**, and **System Contact**.
 
 ### Interfaces Page
 
