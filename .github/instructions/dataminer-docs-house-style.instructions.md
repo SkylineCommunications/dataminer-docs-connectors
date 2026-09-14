@@ -17,7 +17,8 @@ When creating or editing connector documentation pages, apply the following rule
 - For cross-references to pages within this repository, use DocFX `xref` links instead of hard links to local Markdown files.
 - Only use backticks for references to code, file paths, or user input, not for emphasis. File names (without file path) can also be written in italics.
 - Use plain text in headers, avoiding italics, bold, and backticks.
-- Use bold text for exact references to UI text, such as buttons, menus, and labels, but italics for values that can be selected by the user, e.g., in a dropdown box.
+- Use bold text to emphasize specific words or passages when necessary, but make sure not to overuse it.
+- Use bold text for exact references to UI text, such as buttons, menus, and labels, but use italics for values that can be selected by the user, e.g., `In the **Mode** box, select *Enabled*`.
 - HTML comments must never be used.
 
 ## Procedure Formatting
