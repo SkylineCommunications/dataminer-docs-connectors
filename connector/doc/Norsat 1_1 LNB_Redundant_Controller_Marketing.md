@@ -1,3 +1,7 @@
+---
+uid: Connector_help_Norsat_1_1_LNB_Redundant_Controller
+---
+
 # Norsat 1:1 LNB Redundant Controller
 ### Intelligent LNB Redundancy, Monitoring and Protection
 

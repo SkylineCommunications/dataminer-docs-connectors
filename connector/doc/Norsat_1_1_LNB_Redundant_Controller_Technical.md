@@ -1,3 +1,38 @@
+---
+uid: Connector_help_Norsat_1_1_LNB_Redundant_Controller_Technical
+---
+## About
+
+The **Norsat 1:1 LNB Redundant Controller** connector provides monitoring and configuration capabilities for Norsat redundant LNB switching equipment using SNMP.
+
+The connector provides visibility into the controller and connected LNBs, including device information, network settings, active and standby LNB status, LNB frequency band, and LNB current measurements.
+
+It also provides configuration capabilities for device settings and LNB alarm thresholds. Configurable current thresholds can be used to monitor LNB operating conditions and identify over-current and under-current fault or warning conditions.
+
+The connector communicates with the Norsat device using SNMP GET and SET operations. Configuration changes made through the DataMiner element are written to the device using SNMP SET operations.
+
+## Configuration
+
+### Connections
+
+#### SNMP Main Connection
+
+This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+
+SNMP CONNECTION:
+
+- **IP address/host**: The polling IP of the device.
+
+SNMP Settings:
+
+- **Port number**: The port of the connected device (default: *161*).
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
+
+### Web Interface
+
+The web interface is only accessible when the client machine has network access to the product.
+
 ## How to use
 
 The element consists of the data pages detailed below.
