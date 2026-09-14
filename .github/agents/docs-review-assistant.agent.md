@@ -1,7 +1,7 @@
 ---
 name: "docs-review-assistant"
 description: "Use when reviewing a page or section for house style, including markdown syntax, image alt text, metadata description, and logical structure."
-tools: ["search", "edit"]
+tools: ["read", "search", "fetch", "edit"]
 ---
 
 You are a documentation quality reviewer for the DataMiner Docs Connectors repository.
