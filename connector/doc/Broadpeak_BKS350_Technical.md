@@ -17,11 +17,11 @@ The **Broadpeak BKS350** connector monitors a BKS350 packager streamer over SNMP
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-**SNMP CONNECTION**:
+SNMP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 
-**SNMP Settings**:
+SNMP Settings:
 
 - **Port number**: The port of the connected device, by default *161*.
 - **Get community string**: The community string used when reading values from the device (default: *public*).
@@ -31,7 +31,7 @@ This connector uses a Simple Network Management Protocol (SNMP) connection and r
 
 This connector uses an HTTP connection and requires the following input during element creation:
 
-**HTTP CONNECTION**:
+HTTP CONNECTION:
 
 - **IP address/host**: The polling IP or URL of the destination.
 - **IP port**: The IP port of the destination (default: *8091*).
@@ -43,7 +43,7 @@ The HTTP sessions authenticate with credentials. To configure these after you ha
 
 1. Go to the **General** page.
 
-1. Click **API Credentials...**.
+1. Click **API Credentials**.
 
 1. Fill in the **User** and **Password** of the BKS350 REST API.
 
@@ -72,7 +72,7 @@ In the **CSV Files Config** section, you can enrich the Lives Status, Alarms, an
    The data from the CSV file will be added to the Lives Status, Alarms, and Output Status tables.
 
 > [!NOTE]
-> The CSV file must contain at least four columns, in the order Name, Service Name, Region, and Multicast IP, optionally followed by Origin URL and CDN URL.
+> The CSV file must contain at least the following four columns, in specified order: **Name**, **Service Name**, **Region**, and **Multicast IP**, optionally followed by **Origin URL** and **CDN URL**.
 
 ### Statistics
 
@@ -99,4 +99,4 @@ This page displays the **Publisher Installation Status**, the number of publishi
 ## Notes
 
 - When you upgrade from range 1.0.0.x to 1.0.1.x, existing elements need to be reconfigured before the new connection will be taken in use.
-- When you upgrade to range 1.0.2.x, alarm and trending history will be lost due to the changed primary key (PK) format.
+- When you upgrade to range 1.0.2.x, alarm and trending history will be lost because of the changed primary key (PK) format.

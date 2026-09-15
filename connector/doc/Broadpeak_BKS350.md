@@ -33,7 +33,7 @@ This connector brings the operational state of the BKS350 into DataMiner, so tha
 
 **Challenge**: Checking the health of a packager streamer on its own web interface keeps it separate from the rest of the video delivery monitoring.
 
-**Solution**: Bring server status, uptime, and service performance statistics of the BKS350 into the same DataMiner system used for the surrounding equipment.
+**Solution**: Bring server status, uptime, and service performance statistics of the BKS350 into the same DataMiner System used for the surrounding equipment.
 
 **Benefit**: Teams assess delivery performance from a single platform, without having to log in to the device to establish its state.
 
