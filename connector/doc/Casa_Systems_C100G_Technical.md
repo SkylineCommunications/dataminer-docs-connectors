@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Casa_Systems_C100G_Technical
+description: "Configure and use the Casa Systems C100G DataMiner connector to monitor CCAP devices, interfaces, video services, and network performance."
 ---
 
 # Casa Systems C100G
@@ -24,7 +25,7 @@ This connector monitors and controls the Casa Systems C100G Converged Cable Acce
 
 ### Connections
 
-#### SNMPv2 main connection
+#### SNMPv2 Main Connection
 
 This connector uses a Simple Network Management Protocol version 2 connection and requires the following input during element creation:
 
@@ -38,11 +39,11 @@ SNMP Settings:
 - **Get community string**: The community string in order to read from the device. The default value is *public*.
 - **Set community string**: The community string in order to set to the device. The default value is *private.*
 
-#### SNMPv2 spectrum analyzer connection (range 2.1.0.1)
+#### SNMPv2 Spectrum Analyzer Connection (Range 2.1.0.1)
 
 To use the spectrum analyzer (range 2.1.0.1), configure a second SNMP connection using the same values as for the primary SNMP connection.
 
-#### SNMPv2 connection (range 5.0.0.1)
+#### SNMPv2 Connection (Range 5.0.0.1)
 
 When you use the custom version, you should set the timeout of the element to 10 seconds in order to avoid unnecessary timeouts.
 
@@ -76,7 +77,7 @@ Below this, you can select an interface based on what is selected for the Trace 
 
 This section contains two pages: one for the upstream and one for the downstream channel configuration:
 
-- The **Configuration -- Upstream Channels** page displays a table with configuration data for the different upstream channels of the Casa Systems C100G, for example the **US Frequency**, **US Width**, etc.
+- The **Configuration -- Upstream Channels** page displays a table with configuration data for the different upstream channels of the Casa Systems C100G, for example, the **US Frequency**, **US Width**, etc.
 - The **Configuration -- Downstream Channels** page displays a table with all configuration data for the downstream channels on the Casa Systems C100G, similar to the page for the upstream channels.
 
 ### Measurements
@@ -110,7 +111,7 @@ You can find more detailed information by clicking the **CM CPE** or **CM Status
 
 This page contains a table describing the set of **DOCSIS-QOS Service Flows** in the managed device.
 
-#### Offload US/DS Channels PAge
+#### Offload US/DS Channels Page
 
 This page can be used to offload the **interface data** to a semicolon-separated text file. The **location** and the **interval** to create these files can be specified on this page.
 
@@ -122,7 +123,7 @@ The **Redetect Config** button can be used to clear the upstream or downstream i
 
 This page can be used to offload 6 topology files: *CM.csv*, *CMTS.csv*, *DSSG.csv*, *FNCMTS.csv*, *SG.csv*, and *USSG.csv*.
 
-These topology files contain information about the Cable Modems (*CM.csv*), Fiber Nodes (*FNCMTS.csv*), Service Groups (*SG.csv*), and DS/US Service Groups (*USSG.csv* and *DSSG.csv*) managed by the Cable Systems C100G.
+These topology files contain information about the Cable Modems (*CM.csv*), Fiber Nodes (*FNCMTS.csv*), Service Groups (*SG.csv*), and DS/US Service Groups (*USSG.csv* and *DSSG.csv*) managed by the Casa Systems C100G.
 
 When the button **Get Topology** is pressed, the 6 files are created and stored in a folder with the name of the CMTS, inside the directory specified in the parameter **Local Location**.
 
@@ -136,19 +137,19 @@ You can also provide a file containing the IP addresses of the devices you want 
 
 #### Flap List Page
 
-This page displays a table with information about some of the cable modems managed by the **Cable Systems C100G**, including the number of **Flap Hits**, **Flap Misses**, etc.
+This page displays a table with information about some of the cable modems managed by the Casa Systems C100G, including the number of **Flap Hits**, **Flap Misses**, etc.
 
 By default, the **Flap List** table is not polled by the connector, but polling can be enabled via the **Flap List Control** page. To access this page, click the **Flap List Control** page button. The **Flap List Control** subpage will also display extra information about the Flap List, like the **Flap List Current Size** and some **Thresholds**. You can also **reset** or **clear** the Flap List. If you only want the table polled once, click the **Refresh Flap List** button above the Flap List Table.
 
 ### Web Interface
 
-This page displays the web interface of the device. Note that the client machine has to be able to access to the device, as otherwise it will not be possible to open the web interface.
+This page displays the web interface of the device. Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
 
 ## Usage (Range 3.0.0.x)
 
 ### General
 
-This page contains general information about the device. It displays the **System Description**, **System Name**, **System Location** and **System Contact**.
+This page contains general information about the device. It displays the **System Description**, **System Name**, **System Location**, and **System Contact**.
 
 It also contains several page buttons to subpages where you can monitor power modules, power, fans, temperature, and CPU utilization.
 
@@ -166,7 +167,7 @@ The page also contains several page buttons:
 
 ### Video QAM Interfaces
 
-This page contains the **Video Downstream Channels** table, with information about the characteristics of the channels, such as the frequency, the used modulation, and the power in dBm.
+This page contains the **Video Downstream Channels** table, with information about the characteristics of the channels, such as the frequency, the modulation used, and the power (in dBm).
 
 ### Physical Interfaces
 
@@ -178,7 +179,7 @@ This page contains the **RF Port Table**, which displays a counter for interface
 
 ### QAM Streams
 
-This page contains the **QAM Streams** table. This table contains information regarding the Network identifier (**Network ID**), the transport stream identifier (**Transport ID**), etc. It also contains four columns that are filled in by another element: **HFC-Segment**, **QAM VOD Cluster**, **DTV Subscribers**, and **HFC-Segment Group**.
+This page contains the **QAM Streams** table. This table contains information regarding the network identifier, the transport stream identifier, etc. It also contains four columns that are filled in by another element: **HFC-Segment**, **QAM VOD Cluster**, **DTV Subscribers**, and **HFC-Segment Group**.
 
 ### Service Groups
 
@@ -192,8 +193,8 @@ This page displays information about the virtual edges present on the Casa Syste
 
 This page contains the following tables:
 
-- The **ECMG Status** table, with all the active sessions and CW message counter.
-- The **Video SimulCrypt Connections** table, listing the simulCrypt ECMG instances.
+- The **ECMG Status** table, with all the active sessions and a CW message counter.
+- The **Video SimulCrypt Connections** table, listing the SimulCrypt ECMG instances.
 
 ### EIS
 
@@ -229,11 +230,11 @@ This range extends range 4.0.1.x with Video KPIs, which provide insight into the
 
 This page provides an aggregated view of the video processing per interface and contains the following tables:
 
-- **Casa Video QAM Port**: Displays the total bandwidth, the used bitrate and the bitrate utilization per video QAM port.
+- **Casa Video QAM Port**: Displays the total bandwidth, the used bitrate, and the bitrate utilization per video QAM port.
 - **Casa Video Channel Stats**: Displays the number of active video sessions per channel.
 - **Casa Video Input Port Stats**: Displays the number of active video sessions per input port.
 
-Each of these tables includes an interface description, which is resolved from the Interface table so the video statistics can be easily correlated with the corresponding interface.
+Each of these tables includes an interface description, which is resolved from the Interface Table so the video statistics can be easily correlated with the corresponding interface.
 
 ### Video Sessions
 
@@ -288,7 +289,7 @@ This page contains general information about the device. It displays the **Syste
 
 This page contains information on the interfaces of the Casa Systems C100G device.
 
-The **Interface Table** shows information for each interface, such as the **Description**, **Type**, **MTU**, **Speed**, **Physical Address**, status information (**Admin Status** and **Operational Status**), information about errors and discarded packets (**Inbound Discards**, **Inbound Errors**, **Outbound Discards**, **Outbound Errors**) and interface utilization (**Utilization In** and **Utilization Out**).
+The **Interface Table** shows information for each interface, such as the **Description**, **Type**, **MTU**, **Speed**, **Physical Address**, status information, information about errors and discarded packets, and interface utilization.
 
 The **Number of Displayed Interfaces** parameter indicates how many interfaces are currently displayed in the table.
 
@@ -301,16 +302,17 @@ Via the **Interface Selection** page button, you can configure which interfaces 
 
 This page contains two tables, the **QAM Streams** table and the **QAM Streams Status** table, which both use the **QAM Channel Name** as an identifier.
 
-- The **QAM Streams** table contains information regarding the MPEG transport stream identifier (**MPEG TS ID**), the index of the outgoing transport stream (**Out TS ID**), the retransmission interval for PAT and PMT tables (**PAT Interval** and **PMT Interval**), the associated service groups and virtual edges of each QAM Channel (**Service Group Name** and **VE Name**), etc. This table also contains four columns that are filled in by another element: **HFC-Segment**, **QAM VOD Cluster**, **DTV Subscribers** and **HFC-Segment Group**.
-- The **QAM Streams Status** table contains information regarding the total number of unique PAT tables that have been generated per QAM channel (**Total PATs Tx**), as well as the current, the maximum and the total number of programs transmitted (**Current Programs Tx**, **Peak Programs Tx** and **Total Programs Tx**). Information related to the requested and the peak bandwidth (**Requested Bandwidth** and **Peak Bandwidth**) is also displayed.
+- The **QAM Streams** table contains information regarding the MPEG transport stream identifier, the index of the outgoing transport stream, the retransmission interval for PAT and PMT tables, the associated service groups, and virtual edges of each QAM Channel, etc. This table also contains four columns that are filled in by another element: **HFC-Segment**, **QAM VOD Cluster**, **DTV Subscribers** and **HFC-Segment Group**.
+
+- The **QAM Streams Status** table contains information regarding the total number of unique PAT tables that have been generated per QAM channel, and the current, maximum, and total number of programs transmitted. Information related to the requested and the peak bandwidth is also displayed.
 
 ### QAM Interfaces Page
 
-This page contains the **Video Downstream Channels** table, with information about the characteristics of the channels, such as the frequency (**Channel Frequency**), the used modulation (**Channel Modulation**) and the power (**Channel Power**) in dBm.
+This page contains the **Video Downstream Channels** table, with information about the characteristics of the channels, such as the frequency, the modulation used, and the power (in dBm).
 
 ### RF Ports Page
 
-This page contains the **RF Port Table**, which displays a counter for interfaces that are down, as well as the administrator status per RF port (**Interfaces Down** and **Admin Status**). This table displays bit rates, the total maximum bandwidth, and the usage percentage per RF port (**Bit Rate**, **Total Max Bandwidth** and **Utilization**). The table also displays information regarding the number of **DTV Subscribers** and contains a column where you can set a customizable description for the RF port (**Custom Description**).
+This page contains the **RF Port Table**, which displays a counter for interfaces that are down, as well as the administrator status per RF port, bit rates, the total maximum bandwidth, and the usage percentage per RF port. The table also displays information regarding the number of **DTV Subscribers** and contains a column where you can set a **customizable description** for the RF port.
 
 ## DataMiner Connectivity Framework (DCF)
 
@@ -318,6 +320,6 @@ DCF is supported starting from range 5.0.1.x (version 5.0.1.1). In the other ran
 
 ## Notes
 
-- The connector uses a second, virtual connection to poll large data sets (such as cable modems, channels and spectrum traces) on a separate thread. This keeps the spectrum measurements and interactive actions responsive while heavy tables are collected in the background.
+- The connector uses a second, virtual connection to poll large data sets (such as cable modems, channels, and spectrum traces) on a separate thread. This keeps the spectrum measurements and interactive actions responsive while heavy tables are collected in the background.
 - To use the spectrum analyzer (range 2.1.0.x and later), a second SNMP connection must be configured with the same values as the primary SNMP connection.
 - Some ranges are customer-specific (for example, ranges 5.0.x and 6.0.x). Contact Skyline Communications if you are unsure which range applies to your deployment.
