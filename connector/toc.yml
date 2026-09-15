@@ -1952,6 +1952,9 @@
   items:
   - name: Broadpeak BKS350
     topicUid: Connector_help_Broadpeak_BKS350
+    items:
+    - name: Broadpeak BKS350 Technical
+      topicUid: Connector_help_Broadpeak_BKS350_Technical
   - name: Broadpeak CDN Mediator BkM100
     topicUid: Connector_help_Broadpeak_CDN_Mediator_BkM100
 - name: BroadV
