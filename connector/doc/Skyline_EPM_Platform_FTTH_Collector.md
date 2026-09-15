@@ -5,123 +5,188 @@ uid: Connector_help_Skyline_EPM_Platform_FTTH_Collector
 # Skyline EPM Platform FTTH Collector
 
 ## About
-The **Skyline EPM Platform FTTH Collector** is in charge of ingesting data towards the integration with EPM platform backend and frontend elements.
 
-This collector represents an OLT (Optical Line Terminal) in the system, where all the ONTs (Optical Network Terminal) connected to it are displayed.
+FTTH (Fiber to the Home) networks use optical fiber to provide connectivity to customer locations. At each location, an ONT (Optical Network Terminal) connects the customer to the fiber network.
 
-The connector receives Kafka messages via the InterApp framework, sent by the **Telenet EPM Platform FTTH WM** connector. Depending on the [type of event data](#kafka-event-types) received, it offloads [different files](#types-of-offloaded-files).
+DataMiner Experience and Performance Management (EPM) organizes and monitors large numbers of ONTs. It allows operators to navigate through the FTTH network structure, from a network location down to an individual ONT, and to view the operational and optical condition of the network.
+
+The **Skyline EPM Platform FTTH Collector** maintains the information for the ONTs assigned to it. This includes:
+
+- Where each ONT is located in the network.
+- Whether each ONT is **In Service** or **Out of Service**.
+- Whether power loss or loss of signal has been reported.
+- The latest received (Rx) and transmitted (Tx) optical power measurements.
+
+A POP (Point of Presence) represents a network location and groups the ONTs served from that location. Each collector must be assigned one or more complete POPs. All ONTs belonging to the same POP must be assigned to the same collector. Do not divide a POP across multiple collectors.
+
+## How the connector fits into the FTTH EPM Solution
+
+The solution uses the following components:
+
+- **Telenet EPM Platform FTTH WM**: Sends each ONT status or optical measurement to the collector responsible for that ONT. It identifies an ONT by its NCPID (NetCo Connectivity Product ID). For more information, see [Telenet EPM Platform FTTH WM](xref:Connector_help_Telenet_EPM_Platform_FTTH_WM).
+- **Skyline EPM Platform FTTH Collector**: Stores the assigned ONT inventory and keeps the status and optical measurements of those ONTs up to date.
+- **Skyline EPM Platform FTTH backend**: Combines information from multiple collectors and calculates summary values for different parts of the network.
+- **Skyline EPM Platform FTTH frontend**: Provides the main operational view of the FTTH network and coordinates the distribution of inventory across the collectors. For more information, see [Skyline EPM Platform FTTH](xref:Connector_help_Skyline_EPM_Platform_FTTH).
+
+The operational flow is as follows:
+
+1. The FTTH frontend assigns one or more complete POPs to each collector and generates an inventory file for that collector.
+1. The collector imports the file and displays the assigned ONTs in the **ONT Overview** table.
+1. The workflow manager sends new ONT statuses and optical measurements to the collector responsible for each ONT.
+1. The collector updates the ONT information. The backend and frontend then use this information to present detailed and summarized network views.
 
 ## Configuration
 
 ### Connections
 
-#### Virtual connection
+#### Virtual Connection - Main
 
 This connector uses a virtual connection and does not require any input during element creation.
 
+The connector does not connect directly to an ONT or another network device. It receives its inventory and ONT updates from the other components of the FTTH EPM Solution.
+
+### Prerequisites
+
+- DataMiner version **10.4.0.0 - 16516** or later is required.
+- The collector must be added to the FTTH EPM Solution.
+- One or more complete POPs must be assigned to the collector. A POP must not be divided across multiple collectors.
+- The FTTH frontend and workflow manager must be configured to send the correct inventory and ONT updates to this collector.
+- The configured DataMiner Agent must be able to access the inventory directory.
+
+### Initialization
+
+After creating the element:
+
+1. Open the **Configuration** page and select **Frontend Inventory File**.
+1. Configure the inventory directory type and path.
+1. If the directory is remote, configure an account that can access the share.
+1. Open **Optical Thresholds** and configure the accepted ranges and reporting thresholds for the Rx and Tx optical measurements.
+1. Verify that the collector has been assigned one or more complete POPs and that the FTTH frontend and workflow manager refer to the correct collector.
+1. Start the inventory generation and import process from the FTTH frontend.
+1. On the collector's **General** page, verify that the inventory was imported successfully.
+
+### Frontend Inventory File
+
+- **Import Directory Type**: Select **Local** when the inventory directory is on the same DataMiner Agent as the collector element. Select **Remote** when the directory is on another server.
+- **Inventory File Directory**: Enter the directory containing the structured inventory file generated for this collector.
+- **Network Share Username** and **Network Share Password**: For a remote directory, enter an account that can access the share. The username can be entered as `DOMAIN\username` or `username`. These credentials are not used for a local directory.
+
+Example paths:
+
+```text
+Local: C:\FTTH\Inventory
+Remote: \\RemoteServer\FTTH\Inventory
+```
+
+### Optical Thresholds
+
+- **Rx Threshold**: The received optical power level used to group ONTs above and below that level.
+- **Tx Threshold**: The transmitted optical power level used to group ONTs above and below that level.
+- **Rx Boundary Min** and **Rx Boundary Max**: The lowest and highest accepted Rx values. The defaults are -28 dBm and -8 dBm.
+- **Tx Boundary Min** and **Tx Boundary Max**: The lowest and highest accepted Tx values. The defaults are 0.5 dBm and 5 dBm.
+
+If either value in an incoming Rx/Tx measurement is outside the accepted range, the collector rejects the complete measurement. Configure the thresholds before using the summarized optical information in the EPM views.
+
+### Debug Mode
+
+Enable **Debug Mode** on the **Configuration** page to write additional diagnostic information to the element log. Enabling it also makes the **Debug** page visible.
+
 ## How to use
 
-### General
+### Loading the ONT inventory
 
-This page contains general information related to the device, i.e., **Number ONT**.
+The FTTH frontend generates a separate inventory file for each collector. The file contains the ONTs belonging to the complete POPs assigned to that collector. The file name identifies the DataMiner Agent (DMA) hosting the collector and the collector element that must import it:
 
-### Configuration
+```text
+inventory_<collector DMA ID>_<collector element ID>.csv
+```
 
-#### System Credentials
+The inventory file represents the complete inventory that the collector must manage; it is not a list of only the latest changes. After a successful import, the collector adds new ONTs, refreshes existing ONTs, and removes ONTs that are no longer present in the file.
 
-- **Network Share Username**: The username that is used to authenticate and access the remote network share.
+All ONTs belonging to the same POP must be included in the inventory of the same collector. Do not distribute the ONTs of one POP across different collectors.
 
-- **Network Share Password**: The password corresponding to the network share username.
+If the file is empty or invalid, the import fails and the previously loaded inventory remains available. Use **Last Inventory Load Result** and **Last Inventory Load Message** to verify the outcome.
 
-#### Frontend Import Settings
+### Supported ONT events
 
-- **Import Directory Type**: Specifies the type of directory used for importing files. It can be either local or remote. In case it is set to *Remote*, files are imported from a network location.
+| Event | Purpose |
+|---|---|
+| Status change | Reports that an ONT changed to **In Service** or **Out of Service**, optionally because of power loss or loss of signal. |
+| Status synchronization | Periodically confirms whether an ONT is currently **In Service** or **Out of Service**. |
+| Optical measurement | Provides the latest received (Rx) and transmitted (Tx) optical power measurements. |
 
-- **Structured Files Directory**: This field indicates the network path where structured files are located for import, e.g., `\10.10.10.10\c$\FE Structured Files`. This refers to a shared folder on a remote machine that contains these files.
+Only ONTs present in the imported inventory are updated. Invalid or unknown events are logged and ignored.
 
-#### Offload Settings
+### ONT operational status
 
-- **Offloading Status**: Indicates whether offloading is currently enabled or disabled. If this is enabled, the system offloads files from a source directory to a designated offloading location.
+When an ONT reports **In Service**, the collector clears its Power Loss and Loss of Signal indications. When an ONT reports **Out of Service**, the update can identify power loss or loss of signal as the reason.
 
-- **Offloading Directory Type**: Specifies the type of directory for offloading. *Remote* means the offloaded files are stored on a network-shared folder, as opposed to a local folder.
+The collector also checks the ONT information every hour. If it has not received a status update for an ONT in more than 48 hours, it marks that ONT **Out of Service**.
 
-- **Offloading Folder Path**: The network path where the system will offload files (e.g., `\10.10.10.10\c$\WM\Offload`). This directory serves as the destination for offloading structured files after processing.
+### Optical measurements and reference values
 
-#### Debugging Option
+The collector processes the received (Rx) and transmitted (Tx) optical power as one measurement. If either value is outside its accepted range, neither value is stored.
 
-With the Debugging option, you can enable debugging mode, which is typically used to gather more detailed logs for troubleshooting purposes.
+The collector uses a *birth certificate* as the reference measurement for an ONT. It compares later measurements with this reference so that operators can see how much the optical levels have changed. The first accepted measurement after a birth certificate is cleared becomes the new reference:
 
-### PNM Thresholds
+- **Birth Certificate Rx** and **Birth Certificate Tx** store the reference measurements.
+- **Birth Certificate Created** stores the event timestamp of the reference pair.
+- **Birth Certificate Rx Delta** is the current Rx minus the reference Rx.
+- **Birth Certificate Tx Delta** is the current Tx minus the reference Tx.
 
-The following parameters are used to restrict the offloading of PNM data. A new CSV file is generated for each ONT if the delta Rx or delta Tx exceeds an adjustable threshold.
+Use the **Birth Certificate** configuration page to:
 
-- Rx Threshold
-- Tx Threshold
+- Clear the certificate for one ONT by entering the exact NCPID and selecting **Clear Selected Birth Certificate**.
+- Clear the certificates for every ONT managed by the collector by selecting **Clear Birth Certificates**.
 
-### ONT
+Clearing a birth certificate does not remove the current Rx or Tx measurement. The next accepted Rx/Tx measurement becomes the new reference.
 
-This page contains a table with an overview of all the ONTs. The following columns are displayed:
+## Operation and monitoring
 
-- **Name**: Displays the ONT name.
+### General page
 
-- **Rx Power (dBm)**: Refers to the optical signal power received by the ONT from the OLT. This is an indicator of the quality of the optical link between the OLT and the ONT.
+Use the following parameters to verify inventory provisioning:
 
-- **Tx Power (dBm)**: Refers to the optical signal power transmitted by the ONT to the OLT. This power level is important for ensuring that the OLT can accurately receive and process the upstream data.
+- **Inventory File Import Status**: Indicates whether an import is idle or processing.
+- **Loaded Inventory File Name**: Shows the file used by the last successful import.
+- **Last Inventory Load**: Shows when the last successful import completed.
+- **Last ONT Count**: Shows the number of ONTs loaded by the last successful import.
+- **Last Inventory Load Result**: Shows whether the latest import attempt succeeded or failed.
+- **Last Inventory Load Message**: Provides the result details or failure reason.
 
-- **Time**: The date and time of the last received event.
+A failed import updates the result and message but does not overwrite the file name, timestamp, or ONT count from the last successful import.
 
-- **Status**: Indicates whether the ONT is *In Service* or *Out of Service*.
+### ONT page
 
-- **PowerLoss**: Possible values are *Active* and *Inactive*. If *Active*, it refers to a decrease in the strength of the optical signal as it travels through the fiber.
+The **ONT Overview** table contains:
 
-- **Loss of Signal**: Possible values are *Active* and *Inactive*. If *Active*, the ONT is no longer receiving any signal at all from the optical network.
+- Identity and topology: NCPID, AAP, Headend/HUB, POP, splitter, POC, label, and operator.
+- Address information: House number, street, postal code, and town.
+- Operational status: In Service or Out of Service, Power Loss, and Loss of Signal.
+- Optical measurements: Rx, Tx, birth-certificate reference values, and the difference between the current and reference values.
+- Event timing: Last Seen, Last Event, Last Metrics Time, and Birth Certificate Created.
 
-## Notes
+**Last Stale ONT Offline Check** shows when the most recent hourly status check completed.
 
-### Kafka Event Types
+### Summarized EPM information
 
-The following Kafka event types are supported:
+The collector provides summary information to the FTTH EPM backend and frontend. This allows an operator to assess a complete network area instead of checking every ONT individually. Depending on the selected level of the network, this information includes:
 
-- **Status** event
+- Total ONT counts.
+- Out-of-service counts and percentages.
+- Power Loss and Loss of Signal counts or percentages.
+- Average Rx and Tx levels.
+- Percentages above and below the configured Rx/Tx thresholds.
+- Average difference between current Rx/Tx measurements and the birth-certificate reference values.
 
-  Read from both alarm and IPFIX topics, this event indicates whether the ONT is online or offline. Status changes can be triggered by network issues, alarms, or performance data.
+The available grouping scopes are Headend/HUB, POP, splitter, label, operator, and supported combinations with operator.
 
-- **PNM** (Proactive Network Maintenance) event
+## Troubleshooting
 
-  Read from the IPFIX topic, this event provides the current optical Rx and Tx power levels of the ONT, measured in dBm. These values help monitor the physical health of the network for proactive maintenance and early detection of potential issues.
-
-- **Dying Gasp** event
-
-  Read from the alarm topic, this event indicates the stability of communication between the OLT and ONT. It captures power-related events, such as **PowerLoss**, which signals a loss of electrical power at the ONT, and **LossSignal**, which reflects a loss of optical signal, both affecting the communication between the two devices.
-
-### Types of Offloaded Files
-
-#### Status Offloading Files
-
-- Ivr.ont.offload.[DMA_ID].[ELEMENT_ID].[INDEX].[OPERATOR].dat
-
-  Offloading occurs per collector within a one-minute time window, during which the status changes of the ONTs are recorded. If no changes occur within that time window, no file is created.
-
-- Ivr.ont.sync.offload.[DMA_ID].[ELEMENT_ID].[INDEX].[OPERATOR].dat
-
-  A daily file is generated for each ONT, recording its status at that time, with offloading spread throughout the day by generating a new file every minute.
-
-#### Dying Gasp and Loss of Signal Files
-
-- [DMA_ID].[ELEMENT_ID].PowerLoss.[INDEX].[OPERATOR].dat
-
-  A file is generated for each collector, recording changes in the PowerLoss status of the ONTs within a one-minute time window, but only when a "PowerLoss" clear event is received. If no changes occur during that time window, no file is created.
-
-- [DMA_ID].[ELEMENT_ID].SignalLoss.[INDEX].[OPERATOR].dat
-
-  A file is generated for each collector, recording changes in the SignalLoss status of the ONTs within a one-minute time window, but only when a "SignalLoss" clear event is received. If no changes occur during that time window, no file is created.
-
-#### PNM Offloading File
-
-- basicnetwork.ont.offload.[DMA_ID].[ELEMENT_ID].[INDEX].[OPERATOR].dat
-
-  A file is generated for each collector, recording changes in the Rx or Tx of the ONTs during a one-minute time window, but only if the incoming value exceeds the predefined Tx/Rx threshold.
-
-- basicnetwork.sync.ont.offload.[DMA_ID].[ELEMENT_ID].[INDEX].[OPERATOR].dat
-
-  A daily file is generated for each ONT, recording the Rx and Tx values at that time, with offloading spread throughout the day by generating a new file every minute.
+1. Check **Inventory File Import Status**, **Last Inventory Load Result**, and **Last Inventory Load Message**.
+1. Confirm that the requested file name exactly matches the collector's DataMiner Agent ID and element ID.
+1. Confirm that **Inventory File Directory** points to the directory containing that file.
+1. For a remote directory, verify the share permissions and configured credentials from the DataMiner Agent hosting the collector.
+1. If events are not updating an ONT, confirm that the NCPID exists in **ONT Overview** and in the workflow manager's routing table.
+1. For missing optical updates, verify that both Rx and Tx are present and within the configured validity boundaries.
+1. Enable **Debug Mode** and inspect the collector element log for rejected inventory rows, invalid events, unknown NCPIDs, or ignored measurements.
