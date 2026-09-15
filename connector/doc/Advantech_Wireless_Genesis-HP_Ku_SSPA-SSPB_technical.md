@@ -1,5 +1,5 @@
 ---
-uid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_Technical
+uid: Connector_help_Advantech_Wireless_Genesis-HP_Ku_SSPA-SSPB_technical
 ---
 
 # Advantech Wireless Genesis-HP Ku SSPA/SSPB
