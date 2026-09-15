@@ -22,6 +22,8 @@ SNMP CONNECTION:
 
 ## How to Use
 
+### For All Versions
+
 The element created with this connector has the following data pages:
 
 - **General**: Contains several tables and allows you to import from CSV:
@@ -42,3 +44,19 @@ The element created with this connector has the following data pages:
   - **Event Cleanup Timer**: Allows you to configure the timespan for the cleanup logic.
   - **Maximum Age of Events**: Allows you to select a maximum age of events before these are removed from the tables.
   - **Max Processed Messages**: Allows you to configure the maximum number of entries to keep in the Processed Messages Table.
+
+### From Version 1.1.0.1 Onwards
+
+#### Rules Table
+
+- **Binding Normalization** columns were added, which allow you to define a regular expression (regex) to transform and normalize binding trap data.
+
+- The **Binding Value Set** and **Binding Value Clear** columns now support:
+
+  - Multiple filters separated by commas (,).
+
+  - A single filter that matches against multiple criteria.
+
+#### Processed Messages Table
+
+- **Binding Normalization** columns were added, which display the normalized value of each binding when a corresponding **Binding Normalization** rule is configured in the **Rules** table.
