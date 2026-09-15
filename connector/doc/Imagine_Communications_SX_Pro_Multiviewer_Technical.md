@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Imagine_Communications_SX_Pro_Multiviewer_Technical
+description: "Configure the Imagine Communications SX Pro Multiviewer connector in DataMiner for SNMP monitoring and trap-based alarm capture."
 ---
 
 # Imagine Communications SX Pro Multiviewer
@@ -16,12 +17,10 @@ This connector uses the **SNMP** protocol to gather status information from the 
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-| Setting | Value |
-|---------|-------|
-| **IP address/host** | The polling IP of the device |
-| **IP port** | The port of the connected device (default: *161*) |
-| **Get community string** | The community string used when reading values from the device (default: *public*) |
-| **Set community string** | The community string used when setting values on the device (default: *private*) |
+- **IP address/host**: The polling IP of the device.
+- **IP port**: The port of the connected device (default: *161*).
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
 
 ## How to Use
 
@@ -36,4 +35,4 @@ In order to receive SNMP traps with this element, it is necessary to make the fo
 - **Hardware Configuration\SNMP**: Set **Trap Destination** to the **DMA IP** or the **Virtual IP** when using a 1:1 Failover DMA configuration.
 - **Time Code: Trap Timestamps** are affected by this setting and care should be taken to select a proper time sync reference.
 - **PC**: Allows you to set the **DMA IP** as the time source or the **Virtual IP** when using a 1:1 Failover DMA configuration.
-  - **NTP**: Allows you to set **any NTP Server** in the network as the time source.
+- **NTP**: Allows you to set **any NTP Server** in the network as the time source.

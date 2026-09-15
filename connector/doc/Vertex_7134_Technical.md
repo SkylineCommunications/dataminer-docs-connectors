@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Vertex_7134_Technical
+description: "Configure and use the Vertex 7134 antenna control unit connector in DataMiner for tracking, positioning, and alarm monitoring."
 ---
 
 # Vertex 7134
@@ -49,7 +50,6 @@ This page displays all alarms that can be present on the unit. Monitoring is ena
 
 ## Notes
 
-- As this is a serial connector, a connection to a real device is required.
 - Step track and enhanced memory track are only supported on the 7134 EMT device. Before you start memory tracking, set the correct track parameters. The targets (A, B, C) used when setting the track parameters must be present in the target table.
 - To control the device from DataMiner, the device must be in **Remote Control Mode** (RS-232/422 Remote Control or Remote Mode), not in **Local** mode.
 - If the serial gateway is configured at a slow 1.2 kbaud rate (RS-232), the Target Azimuth, Polarization, or Elevation settings may not work correctly in the **Target** table. If the serial gateway is configured to RS-428, these settings work correctly.
