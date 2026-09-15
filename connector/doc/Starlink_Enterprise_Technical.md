@@ -122,6 +122,8 @@ Terminals that are no longer returned by the API for more than one day will be r
 
 User terminals for which the Timestamp column shows **N/A** are returned by the Management API and not by the Telemetry API. This means no telemetry (Signal Quality, Downlink Throughput, etc.) can be shown for these.
 
+A user terminal can be rebooted by clicking on the **Reboot** button. If successful, it will be reflected through the **Uptime** value being reset to 0.
+
 The **Device Name** column will show the service nickname if a service is active on the user terminal. The device ID is used as device name if no service is active. Changing the device name from the User Terminals table is currently not possible. To change it, you will need to use the Starlink web interface instead. The new name will then appear in the table after the next poll cycle.
 
 The **Latitude** and **Longitude** combination represents a coordinate near the user terminal, but this is not the exact location. The longitude is calculated based on the H3 cell that is returned by the API (H3 geospatial indexing system). This H3 cell ID represents the center point of a hexagonal area, not the exact coordinates of a specific location within that area. If the exact location of the terminal is somewhere else within the hexagon, the latitude and longitude will differ.
