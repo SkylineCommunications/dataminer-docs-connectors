@@ -9,11 +9,11 @@ The Cisco Nexus switches are modular and fixed-port network switches designed fo
 
 ## About
 
-This help page only applies from range **1.0.2.x onwards**, except the section on the IGMP page, which was included in range 1.0.4.x. Sections describing the **Element Settings** page, the **Interactive CLI** page, the **GNMI Settings** page, and the **Debug Page** apply from version **3.0.9.x onwards**.
+This help page only applies from range **1.0.2.x onward**, except the section on the IGMP page, which was included in range 1.0.4.x. Sections describing the **Element Settings** page, the **Interactive CLI** page, the **GNMI Settings** page, and the **Debug Page** apply from version **3.0.9.x onward**.
 
 The connector uses an **SNMP** main connection to monitor the device. Depending on the configuration, it can also communicate with the device via **SSH**, **NX API** (HTTPS), and **gNMI**. For NBM flow statistics, it can use the **APIC API** over HTTPS to the element's polling IP. This APIC API communication is handled internally by the connector and is not configured as a separate element connection. The connector also supports the **DataMiner Connectivity Framework (DCF)**.
 
-From version **3.0.0.3 onwards**, this connector uses an external DLL, **Renci.SshNet.dll**, to be able to communicate via SSH.
+From version **3.0.0.3 onward**, this connector uses an external DLL, **Renci.SshNet.dll**, to be able to communicate via SSH.
 
 ## Configuration
 
@@ -23,7 +23,7 @@ From version **3.0.0.3 onwards**, this connector uses an external DLL, **Renci.S
 
 This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
 
-SNMP CONNECTION:
+SNMP Connection:
 
 - **IP address/host**: The polling IP of the device.
 
@@ -54,22 +54,22 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-### General page
+### General Page
 
 This page displays general information about the device, such as the **Name**, **Location**, **CPU Usage**, and **Memory Usage**.
 
 It also contains the **Reset Device** button, which resets the Cisco Nexus device, and the following page buttons:
 
-- **ICMP...**: Displays a page with all ICMP statistics.
-- **TCP...**: Displays a page with all TCP statistics.
-- **UDP...**: Displays a page with all UDP statistics.
-- **System Services...**: Displays a page listing the state of the services of each OSI layer.
-- **Copy Configuration...**: Displays a page that allows you to generate a CISCO configuration copy.
-- **DCF Settings...**: Displays a page with the DCF-related settings.
+- **ICMP**: Displays a page with all ICMP statistics.
+- **TCP**: Displays a page with all TCP statistics.
+- **UDP**: Displays a page with all UDP statistics.
+- **System Services**: Displays a page listing the state of the services of each OSI layer.
+- **Copy Configuration**: Displays a page that allows you to generate a CISCO configuration copy.
+- **DCF Settings**: Displays a page with the DCF-related settings.
 
-### Interactive CLI page
+### Interactive CLI Page
 
-With the interactive Command Line Interface (CLI), commands can be sent to the device through SSH or via the NX API (from version 3.0.0.4 onwards). The credentials configured on the **Element Settings** page are used for this.
+With the interactive command-line interface (CLI), commands can be sent to the device through SSH or via the NX API (from version 3.0.0.4 onward). The credentials configured on the **Element Settings** page are used for this.
 
 This page contains the following parameters:
 
@@ -86,15 +86,15 @@ This page contains the following parameters:
 
 ### Sending NX API Commands from Automation Scripts
 
-From version **3.0.9.1 onwards**, a DataMiner Automation script can send one or more CLI commands to the connector using an InterApp call. Send an `NxApiRequest` message to parameter `9000000` and specify the commands in its `Commands` property.
+From version **3.0.9.1 onward**, a DataMiner automation script can send one or more CLI commands to the connector using an InterApp call. Send an `NxApiRequest` message to parameter `9000000` and specify the commands in its `Commands` property.
 
 The connector rejects requests that do not contain at least one non-empty command. It sends accepted commands to the element's polling IP through NX API, using the **User Name**, **Password**, **Command Timeout Time**, **NX API Version**, and **NX API Use Cookie** settings configured on the **Element Settings** page.
 
 The connector returns an `NxApiResponse` message with the same message GUID. Its `Results` collection contains one result per command, in the same order as the commands in the request. Each result provides the `Command`, `Body`, `Message`, and `StatusCode` properties. The `Success` property is set to `true` only when every command returns HTTP status code 200.
 
-For general information about creating and sending InterApp calls, see [Sending a call](https://docs.dataminer.services/develop/devguide/Core.InterAppCalls/InterAppCalls_GettingStarted_SendingCall.html).
+For general information about creating and sending InterApp calls, see [Sending a call](https://aka.dataminer.services/InterAppCalls_GettingStarted_SendingCall).
 
-### Element Settings page
+### Element Settings Page
 
 This page centralizes the communication configuration of the connector:
 
@@ -103,21 +103,21 @@ This page centralizes the communication configuration of the connector:
 
 The page also contains the following page buttons:
 
-- **Polling Configuration...**: Displays a page where you can enable or disable the polling of the different device features.
-- **GNMI Settings...**: Displays the [GNMI Settings page](#gnmi-settings-page).
-- **SSH Configurations Saver...**: Displays a page where you can configure the automatic saving of the device configuration via SSH.
+- **Polling Configuration**: Displays a page where you can enable or disable the polling of the different device features.
+- **GNMI Settings**: Displays the [GNMI Settings page](#gnmi-settings-page).
+- **SSH Configurations Saver**: Displays a page where you can configure the automatic saving of the device configuration via SSH.
 
 ### Debug Page
 
 This page is hidden by default. To make it visible, enable the **Debug Page Visibility** toggle on the **Element Settings** page.
 
-The page contains debug functionality, including the **Traps...** page button, which displays a page with the trap debug information.
+The page contains debug functionality, including the **Traps** page button, which displays a page with the trap debug information.
 
-### GNMI Settings page
+### GNMI Settings Page
 
 Version 3.0.5.x of the connector introduces support for **OpenConfig** data collection via **gNMI**. This can be used to update some columns of the **Detailed Interface**, **Interface Rx**, and **Interface Tx** tables. When this is used, the data from SNMP will be removed in those tables and filled in with the values retrieved via gNMI.
 
-The **GNMI Settings** page can be accessed via the **GNMI Settings...** page button on the **Element Settings** page. It contains the following parameters:
+The **GNMI Settings** page can be accessed via the **GNMI Settings** page button on the **Element Settings** page. It contains the following parameters:
 
 - **Data Source Port**: The port used for the gNMI connection.
 - **Client Certificate** (optional): The client certificate used for the gNMI connection.
@@ -125,13 +125,13 @@ The **GNMI Settings** page can be accessed via the **GNMI Settings...** page but
 The gNMI connection uses the element's polling IP and the device credentials configured on the **Element Settings** page.
 
 > [!NOTE]
-> gNMI should only be used with CISCO Nexus devices running version **10.2(7)/10.3(4) or higher**. When multiple Communication Gateway DxM nodes are deployed, make sure each node is running version **3.2.0 or higher**.
+> gNMI should only be used with Cisco Nexus devices running version **10.2(7)/10.3(4) or higher**. When multiple Communication Gateway DxM nodes are deployed, make sure each node is running version **3.2.0 or higher**.
 
-### Sensor page
+### Sensor Page
 
 This page contains the **Sensor** table, which lists the type, scale, and present value of each sensor.
 
-### System Health page
+### System Health Page
 
 This page contains the following tables:
 
@@ -140,9 +140,9 @@ This page contains the following tables:
 - **CPU Memory Pool**: Displays overall CPU statistics.
 - **NV Memory Pool**: Displays information regarding the RAM.
 
-### PTP page
+### PTP Page
 
-The Precision Time Protocol (PTP) pages display information regarding this functionality (from version 3.0.0.10 onwards). PTP polling uses the device credentials configured on the **Element Settings** page.
+The Precision Time Protocol (PTP) pages display information regarding this functionality (from version 3.0.0.10 onward). PTP polling uses the device credentials configured on the **Element Settings** page.
 
 The **PTP Feature - Operational Status** parameter indicates the state of the PTP feature on the device, as reported by the "show feature" command. Possible values: *Enabled*, *Disabled*, *Unknown*, *Installed*, *Uninstalled*, and *Enabled (Not Running)*.
 
@@ -155,39 +155,39 @@ This page contains the following subpages:
 - **PTP VLAN**: Displays the VLAN table.
 - **PTP Corrections**: Displays the PTP Corrections table.
 
-### Interface Detailed page
+### Interface Detailed Page
 
 This page contains the **Detailed Interface** table. This table provides general information about each interface.
 
-From version **1.0.3.7 onwards**, the polling period of the **Detailed Interface** table (as well as the **Interface Rx** and **Interface Tx** tables) can be configured using the **Detailed Interface Polling Interval** parameter. The default value of this parameter is *2 minutes*. Its possible values range between 30 seconds and 1 hour.
+From version **1.0.3.7 onward**, the polling period of the **Detailed Interface** table (as well as the **Interface Rx** and **Interface Tx** tables) can be configured using the **Detailed Interface Polling Interval** parameter. The default value of this parameter is *2 minutes*. Its possible values range from 30 seconds to 1 hour.
 
-From version **3.0.3.1 onwards**, you can add or delete VLANs from an interface via the right-click menu.
+From version **3.0.3.1 onward**, you can add or delete VLANs from an interface via the right-click menu.
 
-### Interface Rx page
+### Interface Rx Page
 
 This page contains the **Interface Rx** table, which contains the input statistics of each interface.
 
-### Interface Tx page
+### Interface Tx Page
 
 This page contains the **Interface Tx** table, which contains the output statistics of each interface.
 
-### L2 L3 Interface page
+### L2 L3 Interface Page
 
 This page contains the **L2 L3 Interface** table. The table shows the administratively requested and actual operating configuration for switch port interfaces.
 
-### PoE page
+### PoE Page
 
 This page displays the **PoE** table. This table contains information about power Ethernet ports on a Powered Sourcing Equipment (PSE) device. Some settings can be configured in this table, such as the maximum amount of power that the PSE will make available for the powered device.
 
-### BGP page
+### BGP Page
 
 This page displays the **BGP Peer** table. This table contains information about the connections with BGP peers. Some settings can be configured in this table, such as the time intervals for the ConnectRetry and KeepAlive timer.
 
-### HSRP page
+### HSRP Page
 
 This page contains the **HSRP Group** table, which displays information about each HSRP group for each interface.
 
-### OSPF page
+### OSPF Page
 
 This page contains general information regarding the Open Shortest Path First protocol.
 
@@ -199,7 +199,7 @@ The page also contains the following page buttons:
 - **Host**: Displays a page containing the **Host** table, which displays the metrics of the hosts that the router will advertise as host routes.
 - **Neighbor**: Displays a page with the **Virtual Neighbor** and **Non Virtual Neighbor** tables.
 
-### IP page
+### IP Page
 
 This page displays general IP statistics such as **requests**, **discards**, and **fragment fails**.
 
@@ -208,15 +208,15 @@ The page also contains the following page buttons:
 - **IP Route**: Displays a page containing the **IP Route** table.
 - **IP Statistics**: Displays a page with the **IP System Statistic Input** and **IP System Statistic Output** tables.
 - **ARP**: Displays a page containing the **ARP** table.
-- **IP Multicast**: Displays a page containing the **IP Multicast Interface** and **IP Multicast SSM Range** tables. The first table can be used to manage the multicast protocol active on an interface. The second table can be used to create and manage the range(s) of group addresses to which SSM semantics should be applied.
+- **IP Multicast**: Displays a page containing the **IP Multicast Interface** and **IP Multicast SSM Range** tables. The first table can be used to manage the multicast protocol active on an interface. The second table can be used to create and manage the ranges of group addresses to which SSM semantics should be applied.
 
-### IGMP page
+### IGMP Page
 
-This page contains two tables, the **IGMP Interface** and **IGMP Cache** tables. Both tables display the interface description in the index column.
+This page contains two tables: **IGMP Interface** and **IGMP Cache**. Both tables display the interface description in the index column.
 
-From version **3.0.9.x onwards**, the "show ip igmp snooping groups" command (disabled by default) can be used to fully populate the **IP IGMP Snooping** table.
+From version **3.0.9.x onward**, the "show ip igmp snooping groups" command (disabled by default) can be used to fully populate the **IP IGMP Snooping** table.
 
-### NBM page
+### NBM Page
 
 This page contains the **NBM Interfaces Bandwidth** table.
 
@@ -228,7 +228,7 @@ Use the **NBM Flows Statistics Polling Type** parameter to select how NBM flow s
 > [!NOTE]
 > Because of rounding issues in the device itself, bit rates may be slightly inaccurate. Because of this, bandwidth utilization can exceed 100% without dropped bytes indication. Keep this in mind when configuring alarm templates.
 
-### VTP VLAN page
+### VTP VLAN Page
 
 This page displays the **VTP VLAN** and **VTP Internal VLAN** tables.
 
@@ -244,7 +244,7 @@ The page also contains the following page buttons:
 
 ## DataMiner Connectivity Framework
 
-From version **1.0.2.1** onwards, the CISCO Nexus connector supports the usage of DCF.
+From version **1.0.2.1** onward, the CISCO Nexus connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through third-party DataMiner connectors (e.g., a manager).
 
@@ -259,4 +259,4 @@ Physical dynamic interfaces:
 
 ## Notes
 
-- From version 3.0.9.x onwards, an **NX API cache** is available for all NX API-related operations, reducing the number of requests towards the device.
+- From version 3.0.9.x onward, an **NX API cache** is available for all NX API-related operations, reducing the number of requests towards the device.

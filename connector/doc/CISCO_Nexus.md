@@ -7,7 +7,7 @@ description: Monitor Cisco Nexus switches in DataMiner using SNMP, SSH, NX API, 
 
 ## About
 
-The Cisco Nexus switches are modular and fixed-port network switches designed for data centers. With this connector, you can monitor and control these switches in DataMiner.
+Cisco Nexus switches are modular and fixed-port network switches designed for data centers. With this connector, you can monitor and control these switches in DataMiner.
 
 The connector uses an **SNMP** main connection and can also communicate with the device via **SSH**, **NX API** (HTTPS), and **gNMI**. For NBM flow statistics, the connector can send **APIC API** requests over HTTPS to the element's polling IP.
 
@@ -29,7 +29,7 @@ The connector uses an **SNMP** main connection and can also communicate with the
 
 - **Streaming telemetry**: gNMI (OpenConfig) data collection for interface statistics.
 
-- **Automation integration**: From version **3.0.9.1 onwards**, DataMiner Automation scripts can send one or more CLI commands to the connector using an InterApp call. The connector executes the commands through NX API and returns a result for each command. For more information, see [Sending NX API Commands from Automation Scripts](xref:Connector_help_CISCO_Nexus_Technical#sending-nx-api-commands-from-automation-scripts).
+- **Automation integration**: From version **3.0.9.1 onward**, automation scripts can send one or more CLI commands to the connector using an InterApp call. The connector executes the commands through NX API and returns a result for each command. For more information, see [Sending NX API Commands from Automation Scripts](xref:Connector_help_CISCO_Nexus_Technical#sending-nx-api-commands-from-automation-scripts).
 
 - **DCF support**: Ethernet interfaces and VLANs are automatically available as DCF interfaces.
 
@@ -41,15 +41,15 @@ The connector uses an **SNMP** main connection and can also communicate with the
 
 **Solution**: The connector polls interface statistics, system health, sensors, and routing protocol state via SNMP, enriched with NX API and gNMI data where available.
 
-**Benefit**: A single element per switch provides complete fabric visibility, with alarming and trending on all key metrics.
+**Benefit**: A single element per switch provides complete fabric visibility, with alarm monitoring and trending of all key metrics.
 
 ### IP Media Network Operations
 
 **Challenge**: In ST 2110 and other IP media networks, operators must track NBM flow bandwidth, IGMP state, and PTP synchronization to guarantee uninterrupted media transport.
 
-**Solution**: The connector can retrieve NBM flow statistics through the APIC API, monitors IGMP and PTP state, and exposes RTP flow information.
+**Solution**: The connector retrieves NBM flow statistics through the APIC API, monitors IGMP and PTP state, and exposes RTP flow information.
 
-**Benefit**: Media-critical network behavior is monitored in the same platform as the rest of the media chain, enabling fast root-cause analysis.
+**Benefit**: Media-critical network behavior is monitored in the same platform as the rest of the media chain, enabling fast root cause analysis.
 
 ### Remote Switch Management
 
