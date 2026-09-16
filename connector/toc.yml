@@ -4443,6 +4443,9 @@
     topicUid: Connector_help_Generic_Comparison_Tool
   - name: Generic Database
     topicUid: Connector_help_Generic_Database
+    items:
+      - name: Generic Database Technical
+        topicUid: Connector_help_Generic_Database_Technical
   - name: Generic DataMiner Log Reader
     topicUid: Connector_help_Generic_DataMiner_Log_Reader
   - name: Generic Data Burst Logger
