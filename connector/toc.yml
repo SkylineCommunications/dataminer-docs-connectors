@@ -9156,8 +9156,8 @@
     topicUid: Connector_help_Skyline_Availability_Platform
   - name: Skyline Basic SDN Controller
     topicUid: Connector_help_Skyline_Basic_SDN_Controller
-  - name: Skyline Bookings Monitoring
-    topicUid: Connector_help_Skyline_Bookings_Monitoring
+  - name: Skyline Booking Monitoring
+    topicUid: Connector_help_Skyline_Booking_Monitoring
   - name: Skyline Booking Checker
     topicUid: Connector_help_Skyline_Booking_Checker
   - name: Skyline Booking Manager
