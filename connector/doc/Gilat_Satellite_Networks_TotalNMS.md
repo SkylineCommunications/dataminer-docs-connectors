@@ -209,3 +209,8 @@ The connector is able to poll the following reports. Report responses often cont
 | FWD Link Throughput Utilization         | Network Segment | Utilization                                                  |                                         | The ratio, in %, between the total transmitted data in the network segment and the total available throughput in the network segment forward channel.|
 | RTN Link Throughput Utilization         | Network Segment | Utilization                                                  | | The ratio, in %, between the total received data in the network segment and the total theoretical available throughput in the network segment return channels (burst traffic/resources only).|
 | MCR AGC Level                           | Network Segment | Current: NGMCR 100                                           | Minimum: NGMCR 100, Maximum: NGMCR 100                 | The master control room's automatic gain control attenuator value (current, minimum, and maximum).                                    |
+
+#### Unexpected Graph Type
+The unexpected graph type log lines are written in the element log file by the AllGraphTypeReportProcessor class when a graph type is received which is different from the ones hardcoded in the connector. Extending the lists of supported graph types prevents the log lines from appearing. The lists are available in the classes CpesRtnMaximalCapabilityProcessor and CpesFwdMaximalCapabilityProcessor.
+
+> 2026/06/15 12:56:08.690|SLManagedScripting.exe|ManagedInterop|ERR|0|33044|1|QA524|AllGraphTypeReportProcessor|StoreDataPoint|Values are not processed because of the unexpected graph type Slot Type - TRF 1 512 Ksps 16QAM 1/2 4 K
