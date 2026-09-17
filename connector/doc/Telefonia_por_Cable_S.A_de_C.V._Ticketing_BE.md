@@ -2,48 +2,59 @@
 uid: Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE
 ---
 
-# Telefonia por Cable S.A. de C.V. Ticketing BE
+# Telefonia por Cable S.A de C.V. Ticketing BE
 
 ## About
 
-The Telefonia por Cable S.A. de C.V. Ticketing BE connector facilitates the sending and updating of tickets processed by the Telefonia por Cable S.A. de C.V. Ticketing WM connector to the Cherwell and SFyC Platforms via their APIs.
+The Telefonia por Cable S.A de C.V. Ticketing BE connector automates the trouble ticket workflow between DataMiner and Telefonia por Cable S.A de C.V.'s (Sky Cable) **Cherwell** ticketing platform and **SFyC** work order (OT) system. It receives ticket entities from other DataMiner elements over InterApp communication, checks Cherwell for an existing ticket before creating a duplicate, creates a new ticket or adds a note to an existing one, creates the corresponding work order (OT), and links the OT number back to the Cherwell ticket — all without manual operator intervention.
 
 ## Key Features
 
-- **Ticket sending and updating**: Sends and updates tickets processed by the Telefonia por Cable S.A. de C.V. Ticketing WM connector.
-- **Cherwell and SFyC Platform integration**: Communicates with Cherwell and SFyC Platforms via their APIs.
-- **Ticket processing control**: Enables or disables ticket processing.
-- **Retry mechanism**: Configures the number of retries for failed ticket operations.
-- **Batch sending**: Sends tickets in batches to optimize API requests.
+- **Automatic ticket deduplication**: Searches Cherwell (by FDL and SNR) for an existing ticket before creating a new one, avoiding duplicate tickets for the same entity.
+
+- **End-to-end ticket lifecycle automation**: Drives a ticket entity all the way from "received" through ticket creation or an added note, OT creation, and OT linkage to "completed", exposed as a clear per-row status in the Tickets overview table.
+
+- **Configurable retries**: Automatically retries a failed processing step up to a configurable maximum before marking the ticket as an error, with details available for troubleshooting.
+
+- **Batch processing controls**: Configurable maximum tickets per request and automatic or manual cleanup of completed or expired rows via a configurable retention time.
+
+- **InterApp-driven intake**: Integrates with upstream DataMiner elements and scripts that raise ticket entities via InterApp communication, requiring no manual data entry.
 
 ## Use Cases
 
-### Synchronizing Tickets with External Platforms
+### Avoiding duplicate trouble tickets
 
-**Challenge**: Tickets processed in the internal system of Telefonia por Cable S.A. de C.V. must be accurately reflected in external platforms like Cherwell and SFyC.
+**Challenge**: Multiple alarms for the same underlying issue can result in duplicate tickets being raised on the Cherwell platform, creating noise and confusion for operations teams.
 
-**Solution**: The Telefonia por Cable S.A. de C.V. Ticketing BE connector automatically sends and updates ticket information to these external platforms via their APIs.
+**Solution**: The connector searches Cherwell for an existing open ticket matching the entity before creating a new one, adding a note to the existing ticket instead when found.
 
-**Benefit**: Maintains data consistency across systems, avoids manual data entry, and ensures that external platforms have the most up-to-date ticket information.
+**Benefit**: Operations teams see a single, up-to-date ticket per issue instead of a growing pile of duplicates.
 
-### Handling Ticket Processing Errors
+### Linking work orders to tickets automatically
 
-**Challenge**: Network issues or API downtime can cause failures when tickets are sent or updated, potentially leading to data loss or inconsistencies.
+**Challenge**: Once a customer issue requires field work, someone has to manually create a work order (OT) in SFyC and remember to link it back to the originating Cherwell ticket.
 
-**Solution**: The connector includes a configurable retry mechanism that attempts to resend failed ticket operations. Tickets that exceed the maximum number of retries are marked as errors for later review.
+**Solution**: The connector automatically creates the OT on SFyC once a ticket is created, and updates the Cherwell ticket with the resulting OT number.
 
-**Benefit**: Improves the reliability of ticket processing, minimizes data loss, and provides a mechanism for handling and recovering from errors.
+**Benefit**: Field teams and support agents always have an up-to-date, correctly linked record between the ticket and the work order, without manual follow-up.
 
-### Optimizing Ticket Transmission
+### Hands-off ticket processing at scale
 
-**Challenge**: Sending a large number of tickets individually to external platforms can be inefficient and may overload the API.
+**Challenge**: Manually processing every alarm into a ticket does not scale as alarm volume grows.
 
-**Solution**: The connector can batch multiple tickets into a single API request.
+**Solution**: Ticket entities are queued and processed automatically, with configurable batch size, retry count, and retention time so the pipeline can be tuned to the customer's volume.
 
-**Benefit**: Optimizes the transmission of tickets, reduces the number of API calls, and improves overall performance.
+**Benefit**: NOC operators only need to intervene on tickets that reach an error state, instead of manually creating every ticket.
 
 ## Technical Reference
 
+### Prerequisites
+
+- **Cherwell platform access** (`skylineApi` HTTP endpoint) is required to search, create, and update tickets.
+
+- **SFyC OT (work order) platform access** (via the same `skylineApi` HTTP endpoint) is required to create work orders linked to tickets.
+
+- **An upstream DataMiner element or script** is required that is capable of sending ticket entities to this connector via InterApp communication to feed the pipeline.
+
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Telefonia_por_Cable_S.A_de_C.V._Ticketing_BE_Technical).
-
