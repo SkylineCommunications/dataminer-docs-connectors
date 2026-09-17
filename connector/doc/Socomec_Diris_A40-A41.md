@@ -16,18 +16,13 @@ The connector itself is used to monitor the device.
 
 ### Creation
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+This connector uses a serial connection and requires the following input during element creation:
 
-**SNMP CONNECTION**:
+**Serial CONNECTION**:
 
 - **IP address/host**: The polling IP of the device, e.g., *10.11.12.13.*
-- **Device address**: Not used.
-
-**SNMP Settings**:
-
+- **Device address**: The bus address (unit ID), in the range 1–247.
 - **Port number**: The port of the connected device, by default *502.*
-- **Get community string**: The community string in order to read from the device. The default value is *public*.
-- **Set community string**: The community string in order to set to the device. The default value is *private.*
 
 ## Usage
 
