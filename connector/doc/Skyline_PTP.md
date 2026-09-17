@@ -1,80 +1,30 @@
 ---
 uid: Connector_help_Skyline_PTP
-description: Discover how to use the Skyline PTP connector to monitor PTP network topologies, grandmasters, and clock synchronization in DataMiner.
+description: "Discover how to use the Skyline PTP connector to monitor PTP network topologies, grandmasters, and clock synchronization in DataMiner."
 ---
 
 # Skyline PTP
 
-The **Skyline PTP** connector is used as an application in the [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) to monitor the different PTP devices in a network.
-
-For range 2.0.0.x, monitoring and configuration are handled via the **PTP Monitor** custom web application. For range 1.0.0.x, a Visio file provides access to the functionality of the PTP Solution.
-
 ## About
 
-### Version Info
+The **Skyline PTP** connector is used as part of the [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) to monitor the different PTP devices in a network.
 
-| Range                | Key Features                                                                                                                                                                     | Based on   | System Impact   |
-|----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------|
-| 1.0.0.x              | Overview of PTP devices. Monitoring of active grandmaster.                                                                                                                       | -          | -               |
-| 2.0.0.x [SLC Main]   | In-connector mediation replacing Standard DataMiner PTP Device. Integration with PTP Monitor custom web application. Removal of Visio file and legacy setup automation scripts. | -          | -               |
+## Key Features
 
-### Product Info
+- **Real-time synchronization health**: Instant tracking of active grandmaster status, BMCA parameters, lock states, and probe metrics (Offset from Master and Mean Path Delay).
+- **Focused dual-scope alarm triage**: Distinct filtering between general device hardware alarms and dedicated PTP timing alarms for rapid root cause isolation.
+- **Proactive configuration comparison**: Side-by-side node parameter comparisons that immediately highlight drift and mismatches.
+- **Interactive DCF network topology**: Dynamic visualization of PTP hierarchy and DataMiner Connectivity Framework (DCF) signal paths with live drag-and-drop node positioning.
+- **Multi-domain operational agility**: Seamless switching and independent tracking across multiple PTP domains from a single interface.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
-| 2.0.0.x   | N/A                    |
+## Use Case: End-to-End Timing and Synchronization Observability
 
-### System Info
+- **Challenge**: In all-IP broadcast production environments, clock synchronization is mission-critical. Modern PTP infrastructures face major operational hurdles, such as architectures spanning devices from diverse vendors, each with proprietary management tools, general hardware alarms obscuring critical PTP timing issues, subtle configuration mismatches, and dependency on desktop client installations, limiting accessibility for distributed engineering and NOC teams.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                            | Exported Components     |
-|-----------|---------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | Standard DataMiner PTP Device (mediation protocol) PTP_SetupWizard (configuration automation script) PTP_SetupWizard_Roles (configuration automation script) | -                       |
-| 2.0.0.x   | No                  | Yes                     | PTP Monitor Web Application (DataMiner PTP Solution 2.0.0)                                                                                                   | -                       |
+- **Solution**: DataMiner PTP addresses these challenges by replacing legacy client-bound setups with a browser-native web application deployed directly on DataMiner. Supported by in-connector mediation, the solution monitors devices out of the box without requiring intermediate mediation connectors.
 
-## Configuration
+## Technical Reference
 
-### Connections
+For technical parameters and the supported connectors list, refer to the [Skyline PTP Technical](xref:Connector_help_Skyline_PTP_Technical) page.
 
-#### Virtual connection
-
-This connector uses a virtual connection and does not require any input during element creation.
-
-This element should not be created manually:
-
-- For range 2.0.0.x, creation is handled through the **PTP Monitor** custom web application.
-- For range 1.0.0.x, creation is handled using the **PTP_SetupWizard** automation script.
-
-For more information, refer to the [Initialization](#initialization) section below.
-
-### Initialization
-
-The initialization process depends on the connector range:
-
-- **Range 2.0.0.x**: Configuration and domain setup are handled directly through the **PTP Monitor** custom web application (via the **Admin** page, using the **Add Domain** and **Role Assignment** wizards).
-- **Range 1.0.0.x**: The configuration of the Skyline PTP application and the full DataMiner PTP Solution must be done using the PTP_SetupWizard and PTP_SetupWizard_Roles automation scripts.
-
-For range 1.0.0.x, the **PTP_SetupWizard** script must be executed initially to configure the DataMiner PTP Solution. This script will:
-
-- Create the Top view for the PTP Solution items.
-- Create the Skyline PTP element.
-- Execute the initial configuration of the Skyline PTP element.
-- Execute the PTP_SetupWizard_Roles automation script.
-
-The **PTP_SetupWizard_Roles** script is used to configure the PTP devices and update this in the Skyline PTP element. This script is executed from the PTP_SetupWizard script once the initial configuration is done. However, it can also be manually executed later to update the PTP devices managed by the Skyline PTP application. The PTP_SetupWizard_Roles script will:
-
-- Configure the PTP devices in the Skyline PTP application with their respective roles.
-- Update the PTP Role element property on each PTP device added to the PTP Solution.
-- Create a PTP information template for each protocol that has at least 1 element added as PTP device in the Solution.
-
-When both of these scripts have been executed, the PTP Solution should be fully configured and the Skyline PTP element will start monitoring the PTP topology.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-For range 2.0.0.x, monitoring is done through the **PTP Monitor** web application. Refer to the [Skyline PTP Technical](xref:Connector_help_Skyline_PTP_Technical) page for technical parameters and the supported connectors list, and to the [DataMiner PTP Solution Help](https://aka.dataminer.services/PTPHelp) for more information on the solution.
-
-For range 1.0.0.x, the data pages of the Skyline PTP element are not intended to be used directly. All the necessary data can be found on the Visual pages. For more information on how to use these pages, refer to the [DataMiner PTP Solution Help](https://aka.dataminer.services/PTPHelp).
+For more information on the PTP Solution, refer to the [DataMiner PTP Solution](https://aka.dataminer.services/PTPHelp) documentation.
