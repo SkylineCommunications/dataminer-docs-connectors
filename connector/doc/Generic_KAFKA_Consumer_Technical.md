@@ -1,18 +1,19 @@
 ---
 uid: Connector_help_Generic_KAFKA_Consumer_Technical
+description: "Configure and use the Generic Kafka Consumer connector to consume Kafka topics, export messages, and manage authentication and schema settings."
 ---
 
 # Generic KAFKA Consumer - Technical Reference
 
 ## About
 
-This connector uses a virtual connection that interfaces with Kafka using a Confluent .NET client. It polls one or more configured topics via one or more brokers defined on the element, buffers received messages, and offloads them to a compressed GZ file containing JSON data per topic. This file can then be ingested and used in other workflows by connectors, Automation scripts, etc.
+This connector uses a virtual connection that interfaces with Kafka using a Confluent .NET client. It polls one or more configured topics via one or more brokers defined on the element, buffers received messages, and offloads them to a compressed GZ file containing JSON data per topic. This file can then be ingested and used in other workflows by connectors, automation scripts, etc.
 
 ## Configuration
 
 ### Connections
 
-#### Virtual connection
+#### Virtual Connection
 
 This connector uses a virtual connection and does not require any input during element creation. All connectivity (broker addresses, ports, authentication) is configured after element creation, from the element's Brokers, Authentication, OAuth, and Schema Registry pages.
 
@@ -20,7 +21,7 @@ This connector uses a virtual connection and does not require any input during e
 
 When you have created an element, you still need to configure several things based on your Kafka system.
 
-#### Mandatory configuration
+#### Mandatory Configuration
 
 Add one or more **brokers** to the element:
 
@@ -36,7 +37,7 @@ Add one or more **topics** to the element:
    - **Subscription Interval**: Determines how frequently the topic is polled. Default: 5 minutes.
    - **Poll Duration**: Used in the Kafka consume call to determine how long it polls before the call ends. Default: 1 minute.
 
-#### Optional configuration
+#### Optional Configuration
 
 To configure authentication, go to the **Authentication** page of the element and fill out the parameters with the necessary information. The following authentication methods are supported:
 
@@ -60,24 +61,33 @@ To configure the data format, go to the **Consumer** page of the element and upd
 > [!NOTE]
 > If AVRO messages are consumed, the exported messages need to be deserialized using the AVRO schema in an external method.
 
-## How to use
+## How to Use
 
-After the initialization detailed above is performed, on a timer, the connector retrieves data for the specified topic(s) from the configured broker(s) via the Confluent Kafka client. This data is offloaded to the directory path specified in the **Export Directory** parameter, as a GZ file per topic. These GZ files can then be used in other workflows by connectors, Automation scripts, etc.
+After the initialization detailed above is performed, on a timer, the connector retrieves data for the specified topics from the configured brokers via the Confluent Kafka client. This data is offloaded to the directory path specified in the **Export Directory** parameter, as a GZ file per topic. These GZ files can then be used in other workflows by connectors, automation scripts, etc.
 
 The following settings are often of use:
 
 - **Brokers**: Via the right-click menu of the Brokers table, you can add, edit, or delete brokers. Multiple delete is possible by highlighting multiple rows and selecting the delete option in the context menu.
+
 - **Topics**: Via the right-click menu of the Topics table, you can add, edit, or delete topics. Multiple delete is possible by highlighting multiple rows and selecting the delete option in the context menu.
+
 - **Consumer & Authentication**: These pages allow you to configure the Kafka consumer settings.
-  Note: Double-check your Kafka settings against the parameters on these pages, because these parameters directly affect the polling of data from Kafka.
+
+  > [!NOTE]
+  > Double-check your Kafka settings against the parameters on these pages, because these parameters directly affect the polling of data from Kafka.
+
 - **Export Settings**: These settings allow you to toggle the export functionality of the connector and choose whether a local or remote directory should be used.
-  Note: For the remote file handling feature to work, you must enter a local directory in the **Local Export Directory**. The connector writes to this location and then copies it over to the remote location. You must also provide the credentials for the system in the **System Credentials** section and enter the path to the remote directory in the **Export Directory** parameter. The path must be shared/accessible.
+
+  > [!NOTE]
+  > For the remote file handling feature to work, you must enter a local directory as the **Local Export Directory**. The connector writes to this location and then copies it over to the remote location. You must also provide the credentials for the system in the **System Credentials** section and enter the path to the remote directory in the **Export Directory** parameter. The path must be shared/accessible.
+
 - **Housekeeping Settings**: Configure file retention on the **Configuration** page so exported GZ files are automatically cleaned up after the configured retention period.
-- **Debug**: To reduce file-reading latency, enable the **Enable Interapp** parameter and specify the DMA ID/Element ID that will receive a notification as soon as a new Kafka export file is available for processing. Additional logging of the Kafka connection is also available when the **Kafka Logging** parameter is enabled; this logging is written to the element logging with the information level set to 1.
+
+- **Debug**: To reduce file-reading latency, enable the **Enable Interapp** parameter and specify the DMA ID/element ID that will receive a notification as soon as a new Kafka export file is available for processing. Additional logging of the Kafka connection is also available when the **Kafka Logging** parameter is enabled; this logging is written to the element logging with the information level set to 1.
 
 ### Monitoring
 
-- The **General** page shows the **Kafka Connection Status** parameter (Error / OK / No Data), which is monitored and alarmed.
+- The **General** page shows the **Kafka Connection Status** parameter (*Error*/*OK*/*No Data*), for which alarm monitoring is enabled.
 - The **Polling Buffer** page shows a visual representation of the buffer-to-export pipeline: one row per in-flight or recently processed topic poll, with its status, received time, completed time, and topic partitions. Use this page to verify that topics are being consumed and exported as expected.
 
 ## Schema Registry
@@ -89,16 +99,16 @@ When consuming **AVRO** messages (Consumer page, **Data Format** = AVRO), config
 - **Schema Registry Bearer Auth Issuer Endpoint URL**: OAuth/OIDC issuer token endpoint URL for Schema Registry bearer authentication (`bearer.auth.issuer.endpoint.url`).
 - **Schema Registry Bearer Auth Client ID** / **Schema Registry Bearer Auth Client Secret**: Client credentials for Schema Registry bearer authentication (`bearer.auth.client.id` / `bearer.auth.client.secret`).
 
-## OAuth Bearer configuration
+## OAuth Bearer Configuration
 
 When the **SASL Mechanism** on the **Authentication** page is set to **OAuth Bearer**, configure the parameters on the dedicated **OAuth** page. More information about these parameters can be found below.
 
-### OAuth Bearer settings
+### OAuth Bearer Settings
 
 These parameters control the general OAuth Bearer behavior:
 
 - **SASL OAuth Bearer Method**: The token retrieval method. Select **Default** for a static token or **OIDC** for OpenID Connect token endpoint flow.
-- **Enable SASL OAuth Bearer JWT**: Enables use of an unsigned JWT. Should only be used for testing purposes.
+- **Enable SASL OAuth Bearer JWT**: Enables use of an unsigned JWT. This should only be used for testing purposes.
 - **SASL OAuth Bearer Client ID**: The client ID used for OAuth Bearer authentication.
 - **SASL OAuth Bearer Client Secret**: The client secret used for OAuth Bearer authentication.
 - **SASL OAuth Bearer Scope**: The client-credentials scope requested for the token.
@@ -107,7 +117,7 @@ These parameters control the general OAuth Bearer behavior:
 - **SASL OAuth Bearer Grant Type**: The OAuth grant type. Choose **Client Credentials** for service-to-service authentication or **JWT Bearer** for assertion-based flows.
 - **SASL OAuth Bearer Metadata Authentication Type**: The authentication type used when fetching OIDC metadata from the broker. Set to **Azure IMDS** when running on Azure infrastructure.
 
-### JWT assertion
+### JWT Assertion
 
 These parameters are used when the grant type is set to **JWT Bearer** and control how the JWT assertion is built and signed:
 
