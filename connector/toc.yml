@@ -1732,6 +1732,10 @@
   items:
   - name: BA CM
     topicUid: Connector_help_BA_CM
+- name: Bachmann
+  items:
+  - name: Bachmann BlueNet PDU
+    topicUid: Connector_help_Bachmann_BlueNet_PDU
 - name: Bard
   items:
   - name: Bard MC4000 Series
