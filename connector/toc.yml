@@ -3989,6 +3989,8 @@
       topicUid: Connector_help_Evertz_NATX_Technical
   - name: Evertz NATX-NAT-32
     topicUid: Connector_help_Evertz_NATX-NAT-32
+  - name: Evertz PREFEX Media Processing Edge
+    topicUid: Connector_help_Evertz_PREFEX_Media_Processing_Edge
   - name: Evertz SC-1000
     topicUid: Connector_help_Evertz_SC-1000 
   - name: Evertz Scorpion 18

@@ -19,7 +19,7 @@ control actions such as clearing error counters and adjusting IP output settings
   including per-group audio mapping and IP output configuration.
 - **ANC (ST 2110-40) IP Input/Output monitoring and control**: Tracks ancillary data IP streams (including
   per-audio-group status) and supports control of ANC IP inputs and outputs.
-- **Subtable filtering**: Table polling can be scoped to specific data-port/SDI index combinations via a
+- **Subtable filtering**: Table polling can be scoped to specific data port/SDI index combinations via a
   configurable subtable filter, reducing SNMP polling overhead on large deployments.
 - **Error and statistics management**: RTP sequence error counters and other statistics can be cleared directly
   from DataMiner using dedicated clear buttons.
@@ -58,5 +58,3 @@ output directly from DataMiner, without needing local device access.
 
 **Benefit**: Simplifies fault isolation and recovery, letting engineers quickly re-baseline stream statistics after
 resolving an issue.
-
-
