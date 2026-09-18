@@ -8107,6 +8107,8 @@
     topicUid: Connector_help_Quintech_Matrix_SNMP
   - name: Quintech QRM Matrix SNMP
     topicUid: Connector_help_Quintech_QRM_Matrix_SNMP
+  - name: Quintech SRR1000
+    topicUid: Connector_help_Quintech_SRR1000
   - name: Quintech Xtreme 256
     topicUid: Connector_help_Quintech_Xtreme_256
   - name: Quintech Xtreme 32
