@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Bachmann_BlueNet_PDU
+description: "Monitor Bachmann BlueNet PDUs in DataMiner, tracking power, energy, environmental sensors, alarms, and remote device configuration."
 ---
 
 # Bachmann BlueNet PDU
@@ -37,4 +38,3 @@ Typical use cases include:
 
 - **SNMP connectivity**: The device must be reachable via SNMP from the DataMiner Agent.
 - **Web interface access**: To use the **web interface** feature, the client machine must have network access to the device.
-
