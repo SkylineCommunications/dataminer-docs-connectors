@@ -1,14 +1,15 @@
 ---
 uid: Connector_help_Skyline_EPM_Platform_GPON_Technical
+description: "Learn how to configure and operate the Skyline EPM Platform GPON connector for topology provisioning, CPE data, and workflow management."
 ---
 
 # Skyline EPM Platform GPON
 
 ## About
 
-Skyline EPM Platform GPON is a virtual DataMiner connector for GPON Experience and Performance Management (EPM) topology and CPE data. A single connector package is deployed as a Backend element, a Frontend element, or both, depending on the configured element role.
+Skyline EPM Platform GPON is a virtual DataMiner connector for GPON Experience and Performance Management (EPM) topology and CPE data. A single connector package is deployed as a backend element, a frontend element, or both, depending on the configured element role.
 
-The Backend imports and retains collector provisioning data. The Frontend coordinates provisioning requests and presents the CPE-facing hierarchy. The topology includes networks, markets, hubs, OLTs, slots, ports, ONTs, subscribers, and passive split route, distribution, and FAT entities.
+The backend imports and retains collector provisioning data. The frontend coordinates provisioning requests and presents the CPE-facing hierarchy. The topology includes networks, markets, hubs, OLTs, slots, ports, ONTs, subscribers, and passive split route, distribution, and FAT entities.
 
 ## Configuration
 
@@ -35,19 +36,19 @@ This connector uses a virtual connection and does not require connection input w
 
 1. Register the elements that participate in the workflow using the `DMA_ID/Element_ID` format.
 
-   - On a Backend element, register the GPON OLT collector elements.
-   - On a Frontend element, register the GPON Backend elements, GPON OLT collector elements, and the Frontend element.
+   - On a backend element, register the GPON OLT collector elements.
+   - On a frontend element, register the GPON backend elements, GPON OLT collector elements, and the frontend element.
 
-> [!WARNING]
+> [!IMPORTANT]
 > Do not use production CSV exports or credentials as documentation or test fixtures. Use only sanitized provisioning data.
 
 ## How to Use
 
 ### Provisioning
 
-Use the **Provision** control to queue a provisioning cycle. The Backend processes its ID Buffer entries. The Frontend processes received requests in its Messaging Buffer and imports the configured CSV data to populate the GPON hierarchy.
+Use the **Provision** control to queue a provisioning cycle. The backend processes its ID Buffer entries. The frontend processes received requests in its messaging buffer and imports the configured CSV data to populate the GPON hierarchy.
 
-The Frontend communicates through InterApp calls and processes the following workflows:
+The frontend communicates through InterApp calls and processes the following workflows:
 
 - `EPM` for the main GPON topology.
 - `EPM GPON Passives` for passive split entities.
@@ -59,12 +60,11 @@ Use the **Reset** control to start a reset provisioning cycle. Imported keys are
 > [!NOTE]
 > Avoid clearing buffer rows during an active provisioning or reset cycle unless recovering from a known failure. Premature removal can prevent completion and stale-row cleanup.
 
-### Operational pages
+### Operational Pages
 
-Use the Backend and Frontend configuration pages to inspect and configure the role-specific settings. The Messaging Buffer and ID Buffer views help diagnose queued work. The network, market, hub, OLT, slot, port, ONT, subscriber, and split pages expose the provisioned topology.
+Use the backend and frontend configuration pages to inspect and configure the role-specific settings. The Messaging Buffer and ID Buffer views help diagnose queued work. The network, market, hub, OLT, slot, port, ONT, subscriber, and split pages expose the provisioned topology.
 
 ## Notes
 
 - This connector does not directly poll GPON hardware. It depends on the GPON EPM collectors and their supplied provisioning data.
-- The minimum supported DataMiner version is `10.3.0.0 - 12752`.
-- The connector does not export child connectors.
+- The minimum supported DataMiner version is **10.3.0.0 - 12752**.
