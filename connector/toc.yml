@@ -8899,6 +8899,9 @@
     topicUid: Connector_help_Sencore_MRD_6000
   - name: Sencore MRD 7000
     topicUid: Connector_help_Sencore_MRD_7000
+    items:
+    - name: Sencore MRD 7000 Technical
+      topicUid: Connector_help_Sencore_MRD_7000_Technical
   - name: Sencore OmniHub 6-16
     topicUid: Connector_help_Sencore_OmniHub_6-16
   - name: Sencore OmniHub OHP6-EAS
