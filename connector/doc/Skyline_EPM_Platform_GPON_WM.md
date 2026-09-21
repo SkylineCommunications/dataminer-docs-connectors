@@ -1,23 +1,29 @@
 ---
 uid: Connector_help_Skyline_EPM_Platform_GPON_WM
+description: "Learn how to use the Skyline EPM Platform GPON WM connector to orchestrate GPON workflows, distribute jobs, and process ONT and subscriber data."
 ---
 
 # Skyline EPM Platform GPON WM
 
 ## About
 
-The **Skyline EPM Platform GPON WM** connector is a distributed workflow manager for the **DataMiner EPM xPON** Solution. It supports a **Master/Slave** operating model to orchestrate and execute GPON data workflows at scale.
-
-The connector coordinates **KAFKA ONT DATA**, **Subscriber**, and **Split** workflows using InterApp messaging, role-based processing, and file-based exchange across the platform.
+The Skyline EPM Platform GPON WM connector is a virtual DataMiner element that acts as the **master/slave orchestration layer** for GPON-related workflows inside the Skyline EPM Platform. It distributes work across slave elements via InterApp messaging, tracks job and workflow status, and coordinates KAFKA-based ONT/subscriber data processing without requiring direct device communication.
 
 ## Key Features
 
-- **Distributed processing model**: Uses a Master to register and dispatch jobs, and Slaves to execute workflow processing.
-- **Three workflow types**: Handles **KAFKA ONT DATA**, **Subscriber**, and **Split** requests.
-- **Operational visibility**: Includes dedicated **Jobs**, **Slaves**, **Workflows**, and **InterApp Messages** pages.
-- **Lifecycle management**: Adds processed file and table housekeeping controls for long-running operation.
+- **Master/slave orchestration**: Automatic master-slave discovery and health/status validation of connected slave elements.
+- **Workflow management**: Tracks requested workflows end to end (request, response, retries, processing time) via the Workflow Overview table.
+- **Job distribution & tracking**: Creates, assigns, and monitors jobs across slaves, including job file grouping and per-slave job reporting.
+- **KAFKA integration**: Configurable import/export directories, polling interval, and streams for processing KAFKA ONT and subscriber data.
+- **InterApp messaging**: Slave job completions and workflow results are exchanged with the master exclusively through InterApp messages, with configurable auto-delete/housekeeping of processed messages and jobs.
+- **File and table housekeeping**: Scheduled cleanup of processed files and stale table entries.
+
+## Use Case
+
+- **Challenge**: Processing GPON ONT/subscriber data at scale requires distributing work across multiple slave elements while keeping a consistent, centralized view of workflow and job status.
+- **Solution**: The connector's master element automatically discovers slaves, assigns jobs, and tracks their lifecycle (requested → in progress → completed) through dedicated Workflow and Job Overview tables, while all cross-element communication is handled through InterApp messaging.
+- **Benefit**: Operators get a single-pane-of-glass view of GPON workflow and job processing across the entire slave fleet, with automatic housekeeping of completed jobs, messages, and files to safeguard the system's performance over time.
 
 ## Technical Reference
 
-> [!NOTE]
-> For detailed setup and operational guidance, refer to the [technical documentation page](xref:Connector_help_Skyline_EPM_Platform_GPON_WM_Technical).
+For configuration details and page-by-page usage instructions, refer to the [technical documentation page](xref:Connector_help_Skyline_EPM_Platform_GPON_WM_Technical).

@@ -4447,6 +4447,9 @@
     topicUid: Connector_help_Generic_Comparison_Tool
   - name: Generic Database
     topicUid: Connector_help_Generic_Database
+    items:
+      - name: Generic Database Technical
+        topicUid: Connector_help_Generic_Database_Technical
   - name: Generic DataMiner Log Reader
     topicUid: Connector_help_Generic_DataMiner_Log_Reader
   - name: Generic Data Burst Logger
@@ -8107,6 +8110,8 @@
     topicUid: Connector_help_Quintech_Matrix_SNMP
   - name: Quintech QRM Matrix SNMP
     topicUid: Connector_help_Quintech_QRM_Matrix_SNMP
+  - name: Quintech SRR1000
+    topicUid: Connector_help_Quintech_SRR1000
   - name: Quintech Xtreme 256
     topicUid: Connector_help_Quintech_Xtreme_256
   - name: Quintech Xtreme 32
