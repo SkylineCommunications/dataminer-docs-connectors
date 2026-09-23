@@ -3581,6 +3581,11 @@
     topicUid: Connector_help_ETL_Systems_SRY-C2xx_-_SRY-TX-Y-281
   - name: ETL Systems VTR-10
     topicUid: Connector_help_ETL_Systems_VTR-10
+  - name: ETL Systems VTR-101
+    topicUid: Connector_help_ETL_Systems_VTR-101
+    items:
+    - name: ETL Systems VTR-101 Technical
+      topicUid: Connector_help_ETL_Systems_VTR-101_Technical
   - name: ETL Systems VTRC-56
     topicUid: Connector_help_ETL_Systems_VTRC-56
   - name: ETL Systems VTX-10
