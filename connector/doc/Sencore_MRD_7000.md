@@ -1,24 +1,22 @@
 ---
 uid: Connector_help_Sencore_MRD_7000
+description: "Monitor the Sencore MRD 7000 in DataMiner and track multichannel audio processing and HD/UHD broadcast decoding."
+
 ---
 
 # Sencore MRD 7000
 
 ## About
 
-Overview The Sencore MRD 7000 is a high-performance receiver decoder designed for professional broadcast environments. It delivers robust audio and video processing capabilities, supporting up to 8 services (16 channels) of audio for MPEG1/2, AAC, and Dolby AC3/AC3+, Dolby E, and ATMOS formats. Its multichannel decoding allows seamless handling of up to 4x HD services or a single UHD service, all within a compact 1RU chassis.
+The Sencore MRD 7000 is a high-performance receiver decoder designed for professional broadcast environments. It delivers robust audio and video processing capabilities, supporting up to 8 services (16 channels) of audio for MPEG1/2, AAC, and Dolby AC3/AC3+, Dolby E, and ATMOS formats. Its multichannel decoding allows seamless handling of up to 4x HD services or a single UHD service, all within a compact 1RU chassis.
 
 ## Key Features
 
-- **Multichannel Audio Support**: Handles up to 8 services (16 audio channels) for MPEG1/2, AAC, Dolby AC3/AC3+, Dolby E, and ATMOS.
-
-- **Professional Broadcast Integration**: Designed for demanding environments and workflows.
-
-- **Flexible Video Decoding**: Supports 4x HD or 1x UHD service decoding.
-
-- **Compact Design**: Space-saving 1RU chassis for efficient rack integration.
-
-- **Reliable Performance**: Ensures consistent decoding and processing for high-volume feeds.
+- **Multichannel audio support**: Handles up to 8 services (16 audio channels) for MPEG1/2, AAC, Dolby AC3/AC3+, Dolby E, and ATMOS.
+- **Professional broadcast integration**: Designed for demanding environments and workflows.
+- **Flexible video decoding**: Supports 4x HD or 1x UHD service decoding.
+- **Compact design**: Space-saving 1RU chassis for efficient rack integration.
+- **Reliable performance**: Ensures consistent decoding and processing for high-volume feeds.
 
 ## Use Cases
 
@@ -48,5 +46,7 @@ Overview The Sencore MRD 7000 is a high-performance receiver decoder designed fo
 
 ## Technical Reference
 
-> [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Sencore_MRD_7000_Technical).
+### Prerequisites
+
+- **SNMP connectivity**: The device must be reachable via SNMP from the DataMiner Agent.
+- **Web interface access**: To use the **web interface** feature, the client machine must have network access to the device.
