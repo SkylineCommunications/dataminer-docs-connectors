@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_ETL_Systems_VTR-101_Technical
+description: "Configure the ETL Systems VTR-101 in DataMiner to route L-band signals, manage labels and locks, adjust module gain, and monitor alarms."
 ---
 
 # ETL Systems VTR-101
@@ -48,7 +49,7 @@ The **Label** and **Lock State** columns of both tables, and the **Connected Inp
 
 This page displays the matrix containing the connections present on the device.
 
-The matrix interface allows you to do the following actions:
+The matrix interface allows you to perform the following actions:
 
 - Set a new connection, by clicking the desired crosspoint. Note that setting a new connection disconnects the connection that was previously active on that output.
 - Lock an input or output, so that its connections can no longer be modified from the matrix.
@@ -59,4 +60,5 @@ This page contains the **Vtr 101 Gain Settings** table, which allows you to conf
 
 ## Notes
 
-- The routing, locking and gain information is polled every 10 seconds. The input and output alias information is polled every 15 minutes.
+- The routing, locking and gain information is polled every 10 seconds.
+- The input and output alias information is polled every 15 minutes.
