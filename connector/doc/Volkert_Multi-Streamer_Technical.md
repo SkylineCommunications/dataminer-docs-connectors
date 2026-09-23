@@ -36,3 +36,7 @@ External remote control must be enabled in the Volkert Multi-Streamer applicatio
 ## How to use
 
 This connector monitors all configured media sources and their stream details such as bitrates, codec parameters, etc.
+
+### Flow routers
+
+Media sources that share the same **Router ID** belong to the same flow router, i.e. a group of alternate sources for the same flow. In the Media Sources table, you can see the Router ID of each source, activate a specific source as the flow router's current input, set its priority, and enable automatic deactivation once it reaches end-of-input so another source can take over. To add a new input as an alternate source to an existing flow router, fill in the router's ID in the **Router ID** field on the "Add URL Input" page.
