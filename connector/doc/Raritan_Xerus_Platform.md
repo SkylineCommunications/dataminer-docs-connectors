@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Raritan_Xerus_Platform
+description: "Monitor Raritan Xerus devices in DataMiner, including PDU power, environmental sensors, transfer switches, reliability data, and server reachability."
 ---
 
 # Raritan Xerus Platform
@@ -27,21 +28,21 @@ The connector supports the following Raritan device types:
 
 ## Key Features
 
-- **Power and environmental monitoring**: track real-time values and status for inlets, outlets, overcurrent protectors, and external sensors.
+- **Power and environmental monitoring**: Track real-time values and status for inlets, outlets, overcurrent protectors, and external sensors.
 
-- **Configuration control**: change the operating configuration of inlet, outlet, overcurrent protector, and external sensor entries directly from DataMiner.
+- **Configuration control**: Change the operating configuration of inlet, outlet, overcurrent protector, and external sensor entries directly from DataMiner.
 
-- **Transfer switch management**: monitor and configure the transfer switches of the connected device.
+- **Transfer switch management**: Monitor and configure the transfer switches of the connected device.
 
-- **Historical sensor logging**: automatically log the state, maximum, minimum, and average value for every sensor, with 120 entries covering the last two hours.
+- **Historical sensor logging**: Automatically log the state, maximum, minimum, and average value for every sensor, with 120 entries covering the last two hours.
 
-- **Reliability tracking**: collect PDU reliability data and error log entries to support proactive maintenance.
+- **Reliability tracking**: Collect PDU reliability data and error log entries to support proactive maintenance.
 
-- **Server reachability monitoring**: track which servers connected to the device are reachable, and from which IP.
+- **Server reachability monitoring**: Track which servers connected to the device are reachable, and from which IP address.
 
 ## Use Cases
 
-### Centralized PDU monitoring across a diverse Raritan fleet
+### Centralized PDU Monitoring Across a Diverse Raritan Fleet
 
 **Challenge**: Data centers and broadcast facilities often run a mix of Raritan PDU models (PX2, PX3, PXC, BCM2, and others), making it hard to monitor power and environmental data consistently across the fleet.
 
@@ -49,7 +50,7 @@ The connector supports the following Raritan device types:
 
 **Benefit**: Simplified fleet management and a consistent monitoring experience, without needing a separate connector per PDU model.
 
-### Early detection of power and environmental issues
+### Early Detection of Power and Environmental Issues
 
 **Challenge**: Power anomalies or sensor faults on a PDU can go unnoticed until they cause downstream equipment failures.
 
@@ -57,7 +58,7 @@ The connector supports the following Raritan device types:
 
 **Benefit**: Operators can spot abnormal trends quickly and act before a fault escalates into an outage.
 
-### Proactive maintenance through reliability data
+### Proactive Maintenance Through Reliability Data
 
 **Challenge**: Identifying recurring hardware issues on a PDU typically requires manually querying the device or reviewing vendor tools.
 
@@ -75,7 +76,7 @@ The connector supports the following Raritan device types:
 
 This connector uses an SNMP connection and requires the following input during element creation:
 
-- **IP address/host**: the polling IP or URL of the device.
-- **IP port**: the IP port of the device.
-- **Get community string**: the community string used when reading values from the device (default: *public*).
-- **Set community string**: the community string used when setting values on the device (default: *private*).
+- **IP address/host**: The polling IP or URL of the device.
+- **IP port**: The IP port of the device.
+- **Get community string**: The community string used when reading values from the device (default: *public*).
+- **Set community string**: The community string used when setting values on the device (default: *private*).
