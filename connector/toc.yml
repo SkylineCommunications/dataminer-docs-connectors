@@ -6015,6 +6015,9 @@
   items:
   - name: Linear Acoustic Aero 2000
     topicUid: Connector_help_Linear_Acoustic_Aero_2000
+    items:
+    - name: Linear Acoustic Aero 2000 Technical
+      topicUid: Connector_help_Linear_Acoustic_Aero_2000_Technical
 - name: Linux
   items:
   - name: Linux Platform

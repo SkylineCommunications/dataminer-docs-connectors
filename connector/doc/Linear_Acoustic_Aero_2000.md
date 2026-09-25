@@ -2,81 +2,56 @@
 uid: Connector_help_Linear_Acoustic_Aero_2000
 ---
 
-# Linear Acoustic AERO.2000
-
-This is an SNMP connector that shows the status of the different parameters of a Linear Acoustic Aero 2000 System Controller.
-
-The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of hosting one or two AEROMAXr processing instances (at least one is required) providing real-time adaptive wideband and/or multiband processing including an advanced ITU limiter.
+# Linear Acoustic Aero 2000
 
 ## About
 
-### Version Info
+The Linear Acoustic AERO.2000 connector enables seamless integration of the AERO.2000 loudness management platform with DataMiner. It provides real-time monitoring and control of audio processing parameters, hardware status, and SNMP trap management, ensuring broadcasters maintain optimal audio quality and system reliability.
 
-| Range   | Key Features                                                                            | Based on | System Impact |
-|---------|-----------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x | Initial version. Polls SNMP data from the device and reacts to incoming trap messages.  | N/A      | N/A           |
-| 1.1.0.x | Added new Nielsen codes and upmix parameters. Introduced new and updated trap mappings. | 1.0.0.x  | N/A           |
+## Key Features
 
-### Product Info
+- **Real-time Adaptive Processing**: Monitors wideband and multiband audio processing, including advanced ITU limiting.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 3.19.85                |
-| 1.1.0.x   | 3.32.27                |
+- **SNMP Integration**: Polls device data and reacts to incoming SNMP trap messages for proactive system management.
 
-### System Info
+- **Comprehensive Hardware Monitoring**: Tracks CPU, RAM, temperature, fan speed, and redundant power supply status.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+- **Input Status Monitoring**: Provides visibility into video, audio, and audio reference inputs.
 
-## Configuration
+- **Loudness and Silence Alarms**: Alerts for out-of-range loudness values and silence states per program instance.
 
-### Connections
+## Use Cases
 
-#### SNMP connection
+### Broadcast Audio Quality Assurance
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+**Challenge**: Maintaining consistent audio loudness and quality across multiple broadcast channels.
 
-SNMP CONNECTION:
+**Solution**: Real-time monitoring and adaptive processing via DataMiner integration.
 
-- **SNMP Version:** The version of the Simple Network Management Protocol to be used for communication with the device.
-- **IP address/host**: The polling IP of the device, e.g., *10.11.12.13*.
+**Benefit**: Ensures compliance with loudness standards and delivers a superior listener experience.
 
-SNMP Settings:
+### Proactive System Health Monitoring
 
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string in order to read from the device. The default value is *public*.
-- **Set community string**: The community string in order to set to the device. The default value is *private*.
+**Challenge**: Detecting hardware failures or performance issues before they impact operations.
 
-### Web Interface
+**Solution**: Comprehensive hardware and input monitoring with SNMP trap alerts.
 
-The web interface is only accessible when the client machine has network access to the product.
+**Benefit**: Minimizes downtime and enables rapid troubleshooting.
 
-## How to Use
+### Efficient Device Management
 
-You can find more information about the data pages of the element below.
+**Challenge**: Managing multiple AERO.2000 devices in a complex broadcast environment.
 
-### General
+**Solution**: Centralized control and status visibility through DataMiner.
 
-This page contains information about the connection status of the device's SNMP internal link. It also contains system information, including the device's model name, software version, and FPGA version.
+**Benefit**: Streamlines operations and reduces management overhead.
 
-### Status
+## Technical Reference
 
-This page can be used to quickly gather information about the state of the device. The page is subdivided into the following categories:
+### Prerequisites
 
-- **Hardware**: Displays information about the device's CPU and RAM usage, as well as indicators that show if these resources are overloaded or depleted.
-- **Temperature**: Provides temperature readings for the device's CPU and chassis, as well as fan speed measurements. Should the CPU fan fail, or should the CPU or chassis become too hot, that state will be displayed here.
-- **Inputs**: Allows you to monitor the status of video and audio inputs, as well as the status of the audio reference.
-- **Other**: Displays information about the state of the redundant power supply, as well as the engine status and the state of the Cn 2000.
+- **SNMP connectivity**: The device must be reachable via SNMP from the DataMiner Agent.
+- **Web interface access**: To use the **web interface** feature, the client machine must have network access to the device.
 
-### Instance 1 and 2
-
-These pages display the various programs that belong to instance 1 and 2, respectively, as well as the silence state and loudness of each one of these programs.
-
-Should the loudness value fall out of range, the loudness alarm will be shown.
-
-### Traps
-
-This page displays a log of incoming SNMP traps. It also contains settings to configure how these traps should be logged and when they should be removed from the log.
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Linear_Acoustic_Aero_2000_Technical).
