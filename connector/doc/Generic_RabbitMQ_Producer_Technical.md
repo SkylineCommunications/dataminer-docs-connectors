@@ -7,7 +7,7 @@ description: Technical reference for the Generic RabbitMQ Producer connector, co
 
 ## About
 
-The Generic RabbitMQ Producer connector facilitates sending messages to a RabbitMQ queue from any source within the DataMiner system. Messages can be read from files in a specified directory or received from other DataMiner elements via the [InterApp framework](https://docs.dataminer.services/develop/devguide/Core.InterAppCalls/InterAppCalls_Introduction.html), and are then published to the configured queue.
+The Generic RabbitMQ Producer connector facilitates sending messages to a RabbitMQ queue from any source within the DataMiner System. Messages can be read from files in a specified directory or received from other DataMiner elements via the [InterApp framework](https://aka.dataminer.services/InterApp), and are then published to the configured queue.
 
 ## Configuration
 
@@ -39,7 +39,7 @@ After configuring the required parameters described above, click the **Connect**
 
 ## How to Use
 
-There are two processing methods available: file-based processing (*File Mode*) and InterApp framework-based processing (*Inter-Element Mode*). This setting is available in the **Processing Mode** parameter on the **Configuration** page.
+There are two processing methods available: file-based processing (*File Mode*) and InterApp framework-based processing (*Inter-Element Mode*). The **Processing Mode** parameter on the **Configuration** page allows you to choose which processing method is used.
 
 Depending on the chosen processing method, the connector will either process files from the specified directory or receive messages from other DataMiner elements using the InterApp framework.
 
@@ -55,4 +55,6 @@ The table **Messages** on the **File Processing History** page will display all 
 
 The connector can also receive messages from other DataMiner elements using the InterApp framework and publish them to the specified RabbitMQ queue. This allows for real-time, in-memory integration without relying on intermediate files.
 
-To enable InterApp framework-based processing, configure the necessary parameters on the **Configuration** page and ensure that the connection to the RabbitMQ broker is established. Currently, it is only possible to troubleshoot issues related to InterApp framework-based processing through the element log file.
+To enable InterApp framework-based processing, configure the necessary parameters on the **Configuration** page and ensure that the connection to the RabbitMQ broker is established.
+
+Note that currently it is only possible to troubleshoot issues related to InterApp framework-based processing through the element log file.

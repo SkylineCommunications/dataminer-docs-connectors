@@ -6,7 +6,7 @@ uid: Connector_help_Generic_RabbitMQ_Producer
 
 ## About
 
-The Generic RabbitMQ Producer connector facilitates sending messages to a RabbitMQ queue from any source within the DataMiner system. These messages can be available in files or retrieved from other DataMiner elements via [InterApp framework](https://docs.dataminer.services/develop/devguide/Core.InterAppCalls/InterAppCalls_Introduction.html).
+The Generic RabbitMQ Producer connector facilitates sending messages to a RabbitMQ queue from any source within the DataMiner System. These messages can be available in files or retrieved from other DataMiner elements via the [InterApp framework](https://aka.dataminer.services/InterApp).
 
 ## Key Features
 
@@ -18,15 +18,15 @@ The Generic RabbitMQ Producer connector facilitates sending messages to a Rabbit
 
 ### Integrating File-Based Data into RabbitMQ Workflows
 
-**Challenge**: It can be difficult to incorporate data from various file formats into a RabbitMQ message queuing system.
-**Solution**: The Generic RabbitMQ Producer connector automates the process of reading files from a directory and sending their contents as messages to a RabbitMQ queue.
-**Benefit**: This connector streamlines the integration of file-based data sources into RabbitMQ workflows, enabling efficient message processing and distribution.
+- **Challenge**: It can be difficult to incorporate data from various file formats into a RabbitMQ message queuing system.
+- **Solution**: The Generic RabbitMQ Producer connector automates the process of reading files from a directory and sending their contents as messages to a RabbitMQ queue.
+- **Benefit**: This connector streamlines the integration of file-based data sources into RabbitMQ workflows, enabling efficient message processing and distribution.
 
 ### Forwarding DataMiner Element Data to RabbitMQ
 
-**Challenge**: Data generated or collected by other DataMiner elements needs to be exposed to external systems through a messaging platform, without relying on intermediate files.
-**Solution**: Using the InterApp framework, this connector can receive messages directly from other DataMiner elements and publish them to the configured RabbitMQ queue.
-**Benefit**: This enables real-time, in-memory integration between DataMiner and RabbitMQ-based systems, eliminating the overhead of file-based transfers and simplifying end-to-end data flows.
+- **Challenge**: Data generated or collected by other DataMiner elements needs to be exposed to external systems through a messaging platform, without relying on intermediate files.
+- **Solution**: Using the InterApp framework, this connector can receive messages directly from other DataMiner elements and publish them to the configured RabbitMQ queue.
+- **Benefit**: This enables real-time, in-memory integration between DataMiner and RabbitMQ-based systems, eliminating the overhead of file-based transfers and simplifying end-to-end data flows.
 
 ## Technical Reference
 
