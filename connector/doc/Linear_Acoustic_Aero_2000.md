@@ -6,19 +6,19 @@ uid: Connector_help_Linear_Acoustic_Aero_2000
 
 ## About
 
-The Linear Acoustic AERO.2000 connector enables seamless integration of the AERO.2000 loudness management platform with DataMiner. It provides real-time monitoring and control of audio processing parameters, hardware status, and SNMP trap management, ensuring broadcasters maintain optimal audio quality and system reliability.
+The Linear Acoustic AERO 2000 connector enables seamless integration of the AERO.2000 loudness management platform with DataMiner. It provides real-time monitoring and control of audio processing parameters, hardware status, and SNMP trap management, ensuring broadcasters maintain optimal audio quality and system reliability.
 
 ## Key Features
 
-- **Real-time Adaptive Processing**: Monitors wideband and multiband audio processing, including advanced ITU limiting.
+- **Real-time adaptive processing**: Monitors wideband and multiband audio processing, including advanced ITU limiting.
 
-- **SNMP Integration**: Polls device data and reacts to incoming SNMP trap messages for proactive system management.
+- **SNMP integration**: Polls device data and reacts to incoming SNMP trap messages for proactive system management.
 
-- **Comprehensive Hardware Monitoring**: Tracks CPU, RAM, temperature, fan speed, and redundant power supply status.
+- **Comprehensive hardware monitoring**: Tracks CPU, RAM, temperature, fan speed, and redundant power supply status.
 
-- **Input Status Monitoring**: Provides visibility into video, audio, and audio reference inputs.
+- **Input status monitoring**: Provides visibility into video, audio, and audio reference inputs.
 
-- **Loudness and Silence Alarms**: Alerts for out-of-range loudness values and silence states per program instance.
+- **Loudness and silence alarms**: Alerts for out-of-range loudness values and silence states per program instance.
 
 ## Use Cases
 

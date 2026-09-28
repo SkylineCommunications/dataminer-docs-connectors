@@ -2,13 +2,13 @@
 uid: Connector_help_Linear_Acoustic_Aero_2000_Technical
 ---
 
-# Linear Acoustic AERO.2000
-
-This is an SNMP connector that shows the status of the different parameters of a Linear Acoustic Aero 2000 System Controller.
-
-The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of hosting one or two AEROMAXr processing instances (at least one is required) providing real-time adaptive wideband and/or multiband processing including an advanced ITU limiter.
+# Linear Acoustic AERO 2000
 
 ## About
+
+This is an SNMP connector that shows the status of the different parameters of a Linear Acoustic Aero.2000 system controller.
+
+The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of hosting one or two AEROMAX® processing instances (at least one is required) providing real-time adaptive wideband and/or multiband processing including an advanced ITU limiter.
 
 ### Version Info
 
