@@ -7499,6 +7499,13 @@
     topicUid: Connector_help_Norkring_AS_Wonderware_Type2_DVE
   - name: Norkring Modulation Robot
     topicUid: Connector_help_Norkring_Modulation_Robot
+- name: Norsat
+  items:
+  - name: Norsat 1:1 LNB Redundant Controller
+    topicUid: Connector_help_Norsat_1_1_LNB_Redundant_Controller
+    items:
+    - name: Norsat 1:1 LNB Redundant Controller Technical
+      topicUid: Connector_help_Norsat_1_1_LNB_Redundant_Controller_Technical
 - name: Nortel
   items:
   - name: Nortel iEMS Log
