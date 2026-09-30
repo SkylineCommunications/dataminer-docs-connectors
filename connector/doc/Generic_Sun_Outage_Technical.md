@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Generic_Sun_Outage_Technical
+description: "Configure the Generic Sun Outage connector, import earth stations and satellites, and review calculated outage predictions and their status."
 ---
 
 # Generic Sun Outage
@@ -8,9 +9,9 @@ uid: Connector_help_Generic_Sun_Outage_Technical
 
 The **Generic Sun Outage** connector predicts when the sun will interfere with the link between a satellite earth station and a geostationary satellite. For each earth station, it calculates:
 
-- The **outage angle**: the angle between the sun and the satellite, seen from the dish, below which interference can occur. It is derived from the frequency band and the dish size: 11 / (frequency in GHz × dish size in m) + 0.25 degrees.
+- The **outage angle**: The angle between the sun and the satellite, seen from the dish, below which interference can occur. It is derived from the frequency band and the dish size: 11 / (frequency in GHz × dish size in m) + 0.25 degrees.
 - The **current status**: *Active* while an outage window is in progress, *Inactive* otherwise.
-- The **future outages**: every window in which the sun is inside the outage angle, for the configured number of equinox cycles.
+- The **future outages**: Every window in which the sun is inside the outage angle, for the configured number of equinox cycles.
 
 All times are in **UTC**. The results are best-effort estimates based on astronomical calculations, not measurements.
 
@@ -49,7 +50,7 @@ A new element starts empty. Follow these steps to get the first predictions:
 
 ## How to Use
 
-### Adding satellites
+### Adding Satellites
 
 Fixed earth stations need the orbital longitude of their satellite.
 
@@ -59,13 +60,15 @@ Fixed earth stations need the orbital longitude of their satellite.
 
 1. Enter the **Satellite Name**, the **Satellite Longitude**, and the **Satellite Longitude Units** (*deg E* or *deg W*).
 
+   The satellite name must match the **Satellite** value of the earth stations exactly.
+
 1. Click the button at the bottom of the page to add the satellite.
 
    The satellite will be added to the **Satellites Table**.
 
-The satellite name must match the **Satellite** value of the earth stations exactly. To remove a satellite, click the **Delete** button in its row.
+To remove a satellite, click the **Delete** button in its row.
 
-### Registering a controller protocol for steerable antennas
+### Registering a Controller Protocol for Steerable Antennas
 
 A steerable antenna changes its orientation, so the connector reads the azimuth, elevation, and satellite from the element that controls the antenna (e.g., an antenna control unit or a modem). The controller element must be part of the same DataMiner System.
 
@@ -73,9 +76,9 @@ A steerable antenna changes its orientation, so the connector reads the azimuth,
 
 1. Click **New ES Subscriber**.
 
-1. Enter the **Earth Station Subscriber Name** and **Earth Station Subscriber Version**: the protocol name and version of the controller element, exactly as used by that element.
+1. Enter the **Earth Station Subscriber Name** and **Earth Station Subscriber Version**, i.e., the protocol name and version of the controller element, exactly as used by that element.
 
-1. Enter the **Earth Station Subscriber Azimuth PID**, **Earth Station Subscriber Elevation PID**, and **Earth Station Subscriber Satellite PID**: the parameter IDs in the controller protocol.
+1. Enter the **Earth Station Subscriber Azimuth PID**, **Earth Station Subscriber Elevation PID**, and **Earth Station Subscriber Satellite PID**, i.e., the parameter IDs in the controller protocol.
 
    These can be standalone parameters or columns of a table. If they are table columns, each steerable earth station must also specify the row key of the controller table (see **Earth Station Element Key** below).
 
@@ -83,9 +86,9 @@ A steerable antenna changes its orientation, so the connector reads the azimuth,
 
    The protocol will be listed in the **Earth Station Subscribers** table and will become available when you add steerable earth stations.
 
-The connector monitors the controller element and its parameters. When the controller reports a new orientation, the outage values of the earth station are recalculated. When the controller element is stopped, deleted, or cannot be reached, the orientation of the earth station is shown as *N/A*, and the connector retries automatically.
+The connector monitors the controller element and its parameters. When the controller reports a new orientation, the outage values of the earth station are recalculated. When the controller element is stopped, is deleted, or cannot be reached, the orientation of the earth station is shown as *N/A*, and the connector retries automatically.
 
-### Adding earth stations manually
+### Adding Earth Stations Manually
 
 1. Go to the **Earth Stations** page.
 
@@ -97,7 +100,7 @@ The connector monitors the controller element and its parameters. When the contr
    - **Earth Station Location**: A free-text location.
    - **Earth Station Latitude** and **Earth Station Latitude Units**: A positive value with *deg N* or *deg S*.
    - **Earth Station Longitude** and **Earth Station Longitude Units**: A positive value with *deg E* or *deg W*.
-   - **Earth Station Frequency Band**: *C*, *X*, *Ku*, or *kA*.
+   - **Earth Station Frequency Band**: *C*, *X*, *Ku*, or *Ka*.
    - **Earth Station Dish Size**: The diameter of the dish in meters.
    - **Earth Station Type**: *Fixed* or *Steerable*.
    - **Earth Station Outage Overview**: *Enabled* to show the earth station in the tree view on the **Outage Overview** page.
@@ -105,7 +108,7 @@ The connector monitors the controller element and its parameters. When the contr
 1. Fill in the fields for the type of earth station:
 
    - For a **Fixed** earth station, select the **Earth Station Satellite**.
-   - For a **Steerable** earth station, select the **Earth Station Protocol**, and enter the **Earth Station Element ID** of the controller element in the format *DataMinerID/ElementID* (e.g., *346/1203*). If the orientation parameters are table columns, also enter the **Earth Station Element Key**: the primary key of the row for this antenna in the controller table.
+   - For a **Steerable** earth station, select the **Earth Station Protocol**, and enter the **Earth Station Element ID** of the controller element in the format *DataMinerID/ElementID* (e.g., *346/1203*). If the orientation parameters are table columns, also enter the **Earth Station Element Key**, i.e., the primary key of the row for this antenna in the controller table.
 
 1. Click the button at the bottom of the page to add the earth station.
 
@@ -113,11 +116,11 @@ The connector monitors the controller element and its parameters. When the contr
 
 To delete earth stations, select them in the **Earth Station** table, right-click, and select **Delete selected item(s)**. Deleting an earth station also deletes its predicted outages.
 
-### Importing earth stations and satellites from files
+### Importing Earth Stations and Satellites from Files
 
 For large networks, the connector can import earth stations and satellites from provisioning files. These files are typically generated by an inventory system or by another connector, such as **Skyline EPM Platform VSAT DSM SO**.
 
-#### Step 1: Show the import settings
+#### Step 1: Ensure the Import Settings Are Shown
 
 The import settings are on pages that are hidden by default.
 
@@ -127,7 +130,7 @@ The import settings are on pages that are hidden by default.
 
    The **ES Config** and **Sat Config** page buttons will open the import settings.
 
-#### Step 2: Prepare the files
+#### Step 2: Prepare the Files
 
 Place the files in a folder on the DataMiner Agent that hosts the element. The default folder is `C:\Skyline DataMiner\Documents\Generic Sun Outage\PD`. When the folder is inside `C:\Skyline DataMiner\Documents`, file changes made by the connector are synchronized in the DataMiner System.
 
@@ -184,7 +187,7 @@ The following rows are skipped:
 
 If the file does not contain a single valid earth station, the import stops and the table is left unchanged.
 
-#### Step 3: Configure and run the import
+#### Step 3: Configure and Run the Import
 
 Import the satellites first, and then the earth stations.
 
@@ -208,7 +211,7 @@ Import the satellites first, and then the earth stations.
 
 The import runs in the background. The outages of a large import are calculated in batches, so it can take a moment before the **Outages** page is complete.
 
-#### Choosing a reflection mode
+#### Choosing a Reflection Mode
 
 The reflection mode determines how a table follows its file. The earth stations and the satellites each have their own mode.
 
@@ -221,7 +224,7 @@ The following buttons perform a one-time action, in any mode:
 - **ES Delete All Removed** and **Sat Delete All Removed**: Delete every row that is not in the file.
 - **ES Sync All Data** and **Sat Sync All Data**: Make the table and the file mirror each other once.
 
-#### Imported and manual earth stations
+#### Imported and Manual Earth Stations
 
 The **Origin** column of the **Earth Station** table shows who owns each earth station:
 
@@ -237,7 +240,7 @@ If the file contains an earth station with the same name as a manual earth stati
 
 To keep an earth station out of the import, give it a name that does not appear in the file.
 
-### Configuring the outage calculation
+### Configuring the Outage Calculation
 
 On the **Configuration** page, click **Outage Config** to open the prediction settings:
 
@@ -249,13 +252,13 @@ On the **Configuration** page, click **Outage Config** to open the prediction se
 
 The status of each earth station is re-evaluated every 10 seconds, regardless of the **Execution Timer**.
 
-### Reading the results
+### Reading the Results
 
-#### General page
+#### General Page
 
 This page shows the number of **Monitored Stations**, the number of **Active Outages**, and the number of **Satellites**.
 
-#### Earth Stations page
+#### Earth Stations Page
 
 The **Earth Station** table contains one row per earth station. The most important columns are:
 
@@ -272,11 +275,11 @@ The **Earth Station** table contains one row per earth station. The most importa
 
 To be alerted when an outage starts, configure an alarm template on the **Status** column, e.g., with a minor alarm when the value is *Active*.
 
-#### Outages page
+#### Outages Page
 
 The **Outages Table** lists every predicted outage window of every earth station, with the **Start**, **Peak**, **End**, **Duration**, **Season**, and **Time to Outage** in days. The rows are recalculated based on the **Execution Timer**, when you click **Calculate Outages**, and when an earth station changes.
 
-#### Outage Overview page
+#### Outage Overview Page
 
 This page shows a tree view with one entry per earth station, including its future outages. Only earth stations with the **Outage Overview** column set to *Enabled* are included.
 
@@ -294,7 +297,7 @@ To see the data behind the tree view, set **Tree Overview Info** to *Enabled* in
 - **Nothing is imported**: Check that the file name starts with the ID of the DataMiner Agent that hosts the element and ends with `_ESO.csv` or `_SO.csv`, and that the import path points to an existing folder on that Agent. Paths that contain `..` are rejected.
 - **The Azimuth and Elevation of a steerable earth station are N/A**: Check that the controller element is active, that its ID is entered as *DataMinerID/ElementID*, that the protocol name and version match the **ES Subscribers** entry, and that the **Earth Station Element Key** is filled in when the orientation parameters are table columns.
 - **A manual earth station was renamed with [manual-conflict]**: An imported earth station now uses the same name. Rename the manual earth station, or remove the name from the file.
-- **The satellite longitude is wrong after an import**: Use a point as the decimal separator in the satellites file, and do not use thousands separators.
+- **The satellite longitude is wrong after an import**: Use a period as the decimal separator in the satellites file, and do not use thousands separators.
 
 ## Notes
 

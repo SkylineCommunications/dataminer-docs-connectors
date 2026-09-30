@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Generic_Sun_Outage
+description: "The Generic Sun Outage connector predicts sun outages for satellite earth stations and imports station and satellite data from provisioning files."
 ---
 
 # Generic Sun Outage
@@ -28,7 +29,7 @@ This is a virtual connector: all calculations run inside DataMiner, and no devic
 
 ## Use Cases
 
-### Warning operators before a sun outage
+### Warning Operators Before a Sun Outage
 
 **Challenge**: Sun outages are predictable, but without a per-site forecast, operators only notice them when links start to fail and customers call in.
 
@@ -36,15 +37,15 @@ This is a virtual connector: all calculations run inside DataMiner, and no devic
 
 **Benefit**: Operators can plan around the outage windows, inform customers in advance, and avoid unnecessary troubleshooting.
 
-### Suppressing false alarms during a sun outage
+### Suppressing False Alarms During a Sun Outage
 
 **Challenge**: During a sun outage, link and modem alarms are expected. They flood the Alarm Console and can create unnecessary trouble tickets.
 
-**Solution**: Alarm monitoring, correlation rules, or ticketing workflows can check the **Status** of an earth station and its outage windows to recognize alarms caused by sun transit.
+**Solution**: Alarm monitoring, correlation rules, or ticketing workflows can check the status of an earth station and its outage windows to recognize alarms caused by sun transit.
 
 **Benefit**: Fewer false alarms and tickets, and faster attention for the real issues.
 
-### Keeping large earth station inventories up to date
+### Keeping Large Earth Station Inventories Up to Date
 
 **Challenge**: Networks with hundreds or thousands of remote terminals change every day, and maintaining the earth station list by hand is error-prone.
 
@@ -56,7 +57,7 @@ This is a virtual connector: all calculations run inside DataMiner, and no devic
 
 ### Prerequisites
 
-- **DataMiner 10.4.0 [CU0]** or higher is required for range 1.3.0.x of the connector.
+- **DataMiner 10.4.0** or higher is required for range 1.3.0.x of the connector.
 
 - **Satellite longitudes** are needed for fixed earth stations. They can be added manually or imported from a satellites file.
 
