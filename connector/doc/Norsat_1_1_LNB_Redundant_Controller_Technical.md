@@ -1,6 +1,10 @@
 ---
 uid: Connector_help_Norsat_1_1_LNB_Redundant_Controller_Technical
+description: "Use the Norsat 1:1 LNB Redundant Controller connector over SNMP to view LNB status, measurements, settings, and alarm thresholds."
 ---
+
+# Norsat 1:1 LNB Redundant Controller
+
 ## About
 
 The **Norsat 1:1 LNB Redundant Controller** connector provides monitoring and configuration capabilities for Norsat redundant LNB switching equipment using SNMP.
@@ -33,13 +37,13 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-## How to use
+## How to Use
 
 The element consists of the data pages detailed below.
 
-### General
+### General Page
 
-This page provides general information and network configuration details for the Norsat 1:1 LNB redundant controller.
+This page provides general information and network configuration details.
 
 #### Device Information
 
@@ -49,7 +53,7 @@ This section provides general information about the connected Norsat device, inc
 
 This section provides information about the network configuration of the device, including its network-related settings.
 
-### Device Status
+### Device Status Page
 
 This page provides an overview of the current operating status of the Norsat 1:1 LNB redundant controller and the connected LNBs.
 
@@ -57,7 +61,7 @@ This page provides an overview of the current operating status of the Norsat 1:1
 
 This section provides information about the currently active and standby LNB devices and the redundancy operating mode.
 
-- **Active Device**: Displays the device(s) currently selected as the active LNB and allows the selection of a different active device.
+- **Active Device**: Displays the device currently selected as the active LNB and allows the selection of a different active device.
 - **Standby Device**: Displays the standby LNB device.
 - **Automatic Mode Override**: Displays the current override status and allows the setting of override mode.
 
@@ -67,23 +71,23 @@ This section provides measurement information for the connected LNBs.
 
 It displays the current LNB frequency band and the measured current for each LNB:
 
-- **LNB Frequency Band**: Displays the frequency band currently in use and allows the user to select a different frequency band.
+- **LNB Frequency Band**: Displays the frequency band currently in use and allows you to select a different frequency band.
 - **LNB 1 Current**: Displays the measured current of LNB 1 in mA.
 - **LNB 2 Current**: Displays the measured current of LNB 2 in mA.
 - **LNB 3 Current**: Displays the measured current of LNB 3 in mA.
 
-### Device Config
+### Device Config Page
 
 This page provides configuration options for the Norsat 1:1 LNB redundant controller.
 
 The following device configuration parameters can be viewed and modified through the DataMiner element:
 
-- **ULC Status**: Displays the current ULC status and allows the user to enable or disable ULC.
-- **Number of Supported Multiband LNB Bands**: Displays the number of multiband LNB bands supported by the device and allows the user to configure this value.
+- **ULC Status**: Displays the current ULC status and allows you to enable or disable ULC.
+- **Number of Supported Multiband LNB Bands**: Displays the number of multiband LNB bands supported by the device and allows you to configure this value.
 
 #### Alarm Thresholds
 
-The Alarm Thresholds subpage allows configuration of the current warning and fault thresholds used to monitor the LNBs.
+The Alarm Thresholds subpage allows you to configure the current warning and fault thresholds used to monitor the LNBs.
 
 The following thresholds can be configured:
 
@@ -94,7 +98,7 @@ The following thresholds can be configured:
 
 The configured thresholds are validated to ensure that the maximum thresholds are greater than or equal to their corresponding minimum thresholds before they are applied to the device.
 
-### Alarms
+### Alarms Page
 
 This page provides an overview of the active LNB alarms and warnings reported by the device.
 
