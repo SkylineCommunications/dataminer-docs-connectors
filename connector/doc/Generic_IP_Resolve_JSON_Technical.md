@@ -1,5 +1,5 @@
 ---
-uid: Generic_IP_Resolve_JSON_Technical
+uid: Connector_help_Generic_IP_Resolve_JSON_Technical
 ---
 
 # Generic IP Resolve JSON
