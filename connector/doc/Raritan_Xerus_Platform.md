@@ -68,15 +68,5 @@ The connector supports the following Raritan device types:
 
 ## Technical Reference
 
-### Prerequisites
-
-- **SNMP access** to the Raritan device is needed, with the get and set community strings configured on the device matching those used by the connector.
-
-### Connection
-
-This connector uses an SNMP connection and requires the following input during element creation:
-
-- **IP address/host**: The polling IP or URL of the device.
-- **IP port**: The IP port of the device.
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+> [!NOTE]
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_Raritan_Xerus_Platform_technical).
