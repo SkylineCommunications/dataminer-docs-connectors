@@ -58,3 +58,10 @@ On this page, you can find the communication parameters sent to the ECMG. Up to 
 ### Overview
 
 A tree view sorts all the **QAMs** by **RF** and **Module**. If you select an element, the status parameters are shown on the right. A list of the sub-elements and their information is shown at the bottom.
+
+### SNMP Traps
+
+> [!NOTE]
+> SNMP Traps are supported starting from version 1.0.2.1
+
+SNMP traps can be configured on the device to allow DataMiner to receive alarms in real-time. No additional configuration is required on DataMiner. The connector will automatically listen for traps from the same IP as the HTTP Connection.
