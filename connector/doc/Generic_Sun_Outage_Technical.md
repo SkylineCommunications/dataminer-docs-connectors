@@ -231,7 +231,7 @@ The **Origin** column of the **Earth Station** table shows who owns each earth s
 - **Imported** earth stations come from the file. The import creates, updates, and deletes them.
 - **Manual** earth stations were added with **New Earth Station**. The import never deletes them, in any reflection mode.
 
-Earth stations created with a connector version older than 1.3.0.1 are treated as imported.
+Earth stations created with a connector version older than 1.1.0.1 are treated as imported.
 
 If the file contains an earth station with the same name as a manual earth station, the file wins:
 
@@ -290,6 +290,131 @@ On the **Configuration** page, you can configure the tree view in the **Tree Con
 - **Overview Limit**: The maximum number of earth stations in the tree view (default: *100*, maximum: *500*).
 
 To see the data behind the tree view, set **Tree Overview Info** to *Enabled* in the **General Settings** section.
+
+### Running a Quick Calculation
+
+From version 1.1.0.1 onwards, you can calculate the outages of a site on demand, e.g., to check a planned installation or a different satellite, band, or dish size. A Quick Calculation does not add an earth station and does not affect the **Earth Station** and **Outages** tables. To monitor a site permanently, add it as an earth station instead.
+
+1. Go to the **Quick Calculation** page.
+
+1. Click **New Quick Calculation**.
+
+1. To start from an existing earth station, select it in **Quick Calculation Source Earth Station**.
+
+   Its location, satellite, band, and dish size are copied into the form. You can then change any value. Select *None* to stop using the earth station. The values in the form are kept.
+
+1. Fill in or check the following fields:
+
+   - **Quick Calculation Name**: A name for the calculation, used to group its results.
+   - **Quick Calculation Location**: A free-text location.
+   - **Quick Calculation Latitude** and **Quick Calculation Latitude Units**: A positive value with *deg N* or *deg S*.
+   - **Quick Calculation Longitude** and **Quick Calculation Longitude Units**: A positive value with *deg E* or *deg W*.
+   - **Quick Calculation Satellite**: A satellite from the **Satellites Table**. Only geostationary satellites are supported.
+   - **Quick Calculation Band**: *C*, *X*, *Ku*, or *Ka*. If you change **Quick Calculation Frequency**, the band changes to *Custom*. Custom frequencies range from 1 to 60 GHz.
+   - **Quick Calculation Dish Size**: The diameter of the dish in meters.
+   - **Quick Calculation Outage Angle Override**: *Auto* to derive the outage angle from the frequency and the dish size, or a fixed angle in degrees.
+   - **Quick Calculation Cycles**: The number of outage seasons to calculate, from 1 to 4.
+
+1. Click **Calculate**.
+
+   The calculation is queued and **Quick Calculation Status** shows *Queued* and then *Calculating*. When it is done, the **Results** section shows the azimuth, elevation, outage angle, and next outage start and end, and the outage windows are added to the **Quick Calculation Outages** table.
+
+If the satellite is below the **Visibility Threshold** for the site, no outages are calculated. If the calculation fails, **Quick Calculation Status** shows *Failed*, and **Quick Calculation Last Error** shows the reason.
+
+The **Quick Calculation Outages** table lists the **Start**, **Peak**, **End**, **Duration**, **Season**, and **Time to Outage** of each outage window, in UTC. The **Calculated** column shows when the calculation ran, in UTC. When you run a calculation again with the same name and satellite, its previous rows are replaced.
+
+#### Configuring the Quick Calculation Limits
+
+On the **Configuration** page, click **Quick Calc Config** to open the following settings:
+
+- **Quick Calculation Maximum Queue Length**: The maximum number of calculations that can wait in the queue (default: *20*). Requests are rejected while the queue is full.
+- **Quick Calculation Maximum Items Per Run**: The maximum number of calculations processed in one run (default: *5*). The remaining calculations are processed in the next run.
+- **Quick Calculation Auto Delete**: How long the rows in the **Quick Calculation Outages** table are kept after their calculation (default: *3 days*, range: 1 hour to 365 days).
+
+### InterApp Support
+
+From version 1.1.0.1 onwards, other DataMiner applications, such as Automation scripts, can request a Quick Calculation through the InterApp framework. The connector receives the messages on parameter 9000000 and replies to the sender. The results of InterApp requests are returned in the reply only. They are not added to the **Quick Calculation Outages** table.
+
+The messages are based on the `Skyline.DataMiner.Core.InterAppCalls.Common` NuGet package. No separate ConnectorAPI package is available, so the sender must define the message classes with the same names, namespace (`Skyline.DataMiner.ConnectorAPI.GenericSunOutage.Messages`), and properties as the connector. Pass the following known types, in this order:
+
+1. `QuickCalculationRequest`
+1. `QuickCalculationResponse`
+1. `QuickCalculationSiteData`
+1. `QuickCalculationOutageData`
+
+#### Request
+
+A **QuickCalculationRequest** contains the following properties:
+
+- **ContractVersion**: The version of the message contract. The current version is *1*.
+- **RequestId**: An ID chosen by the sender. The connector copies it into the response, so use it to match the response with the request.
+- **User**: The user on whose behalf the request is made.
+- **Site**: A **QuickCalculationSiteData** object with the following input values:
+  - **Name** and **Location**: The name and location of the site.
+  - **Latitude** and **Longitude**: Signed decimal degrees, negative for south and west.
+  - **Satellite**: The satellite name as listed in the **Satellites Table**. If the satellite is not in the table, also fill in **SatelliteLongitude** in signed decimal degrees.
+  - **Band**: *C*, *X*, *Ku*, *Ka*, or *Custom*.
+  - **FrequencyGHz**, **DishSizeM**, **OutageAngleOverride**, and **Cycles**: Optional. If they are empty, the band frequency, the **Default Dish Size**, the automatic outage angle, and 2 cycles are used.
+  - **SourceEarthStationKey**: Optional. The key of the earth station the values were copied from.
+
+#### Response
+
+A **QuickCalculationResponse** contains the following properties:
+
+- **Success** and **ErrorCode**: Whether the request succeeded, and one of the following codes:
+  - *OK*: The outages are calculated.
+  - *BUSY*: The queue is full. Try again later.
+  - *INVALID_INPUT*: The request contains invalid values. **ErrorMessage** explains which.
+  - *NOT_AUTHORIZED*: The user is not allowed to make the request.
+  - *UNSUPPORTED_VERSION*: The connector does not support the **ContractVersion** of the request.
+  - *FAILED*: The calculation failed. **ErrorMessage** contains the reason.
+- **RequestId**: The ID of the request.
+- **AgentId**, **ElementId**, and **ElementName**: The element that answered.
+- **Site**: The input values, completed with the calculated **Status** (*Ok*, *NotVisible*, or *Failed*), **Azimuth**, **Elevation**, **OutageAngle**, **NextOutageStart**, and **NextOutageEnd**.
+- **Outages**: A list of **QuickCalculationOutageData** objects, each with the **Start**, **Peak**, **End**, **DurationSeconds**, **DaysToGo**, and **Season** of an outage window.
+
+All dates are in UTC.
+
+#### Example
+
+The following Automation script snippet requests a Quick Calculation and reads the response:
+
+```csharp
+var request = new QuickCalculationRequest
+{
+    ContractVersion = 1,
+    RequestId = Guid.NewGuid().ToString(),
+    User = engine.UserLoginName,
+    Site = new QuickCalculationSiteData
+    {
+        Name = "Planned Site",
+        Location = "Denver",
+        Latitude = 39.74,
+        Longitude = -104.99,
+        Satellite = "SES-4",
+        Band = "Ku",
+        DishSizeM = 1.2,
+    },
+};
+
+var knownTypes = new List<Type>
+{
+    typeof(QuickCalculationRequest),
+    typeof(QuickCalculationResponse),
+    typeof(QuickCalculationSiteData),
+    typeof(QuickCalculationOutageData),
+};
+
+IInterAppCall call = InterAppCallFactory.CreateNew();
+call.Messages.Add(request);
+
+var response = call
+    .Send(engine.GetUserConnection(), agentId, elementId, 9000000, TimeSpan.FromSeconds(60), knownTypes, true)
+    .OfType<QuickCalculationResponse>()
+    .FirstOrDefault(r => r.RequestId == request.RequestId);
+```
+
+Requests are queued with the calculations of the **Quick Calculation** page, so use a timeout that allows for a full queue. If several Generic Sun Outage elements exist in the DataMiner System, each element calculates independently. Send the request to the element you want to use.
 
 ### Troubleshooting
 
