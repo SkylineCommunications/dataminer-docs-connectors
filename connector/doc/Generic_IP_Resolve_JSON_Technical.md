@@ -1,12 +1,13 @@
 ---
 uid: Connector_help_Generic_IP_Resolve_JSON_Technical
+description: "Technical reference for the Generic IP Resolve JSON connector, covering HTTP connection setup, authentication, caching, CSV offload, and data pages."
 ---
 
 # Generic IP Resolve JSON
 
 ## About
 
-Generic IP Resolve JSON receives MAC-address lookup requests from compatible DataMiner collectors, retrieves the corresponding IP addresses from an OSSI service through an authenticated HTTP API, and returns resolved mappings to the requesting collectors.
+The Generic IP Resolve JSON connector receives MAC address lookup requests from compatible DataMiner collectors, retrieves the corresponding IP addresses from an OSSI service through an authenticated HTTP API, and returns resolved mappings to the requesting collectors.
 
 The connector queues incoming requests, caches lookup results, and can export resolved mappings to CSV files.
 
@@ -18,7 +19,7 @@ The connector queues incoming requests, caches lookup results, and can export re
 
 This connector uses an HTTP connection to an OSSI service and requires the following input during element creation:
 
-HTTP CONNECTION:
+HTTP connection:
 
 - **IP address/host**: The hostname or base URL of the OSSI service. The connector constructs HTTPS lookup URLs from this setting.
 - **IP port**: The HTTPS port exposed by the service, typically *443*. Use the port required by your deployment.
@@ -31,21 +32,26 @@ The service must support these endpoints:
 | Obtain an authentication token | POST | `oauth/oauth/token` |
 | Look up an IP address by MAC address | GET | `accessnet/api/v2/accessnet/ip/{MAC}` |
 
-The lookup response is JSON containing an `ip` field. This connector is designed for these OSSI endpoints; it is not a configurable integration for arbitrary DHCP or JSON APIs.
+The lookup response is JSON code containing an `ip` field. This connector is designed for these OSSI endpoints; it is not a configurable integration for arbitrary DHCP or JSON APIs.
 
 ### Initialization
 
-1. On the **General** page, select **Credentials...**.
-2. Configure **Username** and **Password** for the OSSI service.
-3. Configure **Internal Username** for the authentication request.
-4. After configuring the internal username, restart the element so that the connector rebuilds the authentication header using that value.
-5. In connector version **1.0.0.12** and later, configure **Token Refresh Interval** to suit the service's token lifetime.
-6. Verify that **Token Last Time Refresh** updates after a token is retrieved. This parameter is available from version **1.0.0.12**.
-7. On the **General** page, review the request limit and cache settings before connecting collectors.
+1. On the **General** page, select **Credentials**.
 
-The token request uses the password grant with the configured username and password. Its Basic authorization header is constructed from the internal username and an empty password. The returned token type and access token are used to authorize lookup requests.
+1. Configure the **Username** and **Password** for the OSSI service.
 
-From version **1.0.0.12**, **Token Refresh Interval** accepts values from **1 to 24 hours**, with a default of **2 hours**. Choose an interval shorter than the token's validity period.
+1. Configure the **Internal Username** for the authentication request.
+
+1. After configuring the internal username, restart the element so that the connector rebuilds the authentication header using that value.
+
+1. If you are using connector version **1.0.0.12** or later:
+
+   - Configure **Token Refresh Interval** to suit the service's token lifetime. This parameter accepts values from **1 to 24 hours**, with a default of **2 hours**. Choose an interval shorter than the token's validity period.
+   - Verify that **Token Last Time Refresh** updates after a token is retrieved.
+
+1. On the **General** page, review the request limit and cache settings before connecting collectors.
+
+The token request uses the password grant with the configured username and password. Its basic authorization header is constructed from the internal username and an empty password. The returned token type and access token are used to authorize lookup requests.
 
 ## How to Use
 
@@ -55,19 +61,21 @@ On the **General** page, configure **Maximum Number of Requests** to limit exter
 
 The default is **10 requests per minute**, and the configurable range is **1 to 65535**. Cached results can be returned without consuming this external-request allowance.
 
-Incoming requests are stored in the **Stack Table** and processed oldest first. Requests that require a fresh lookup wait when the request allowance has been reached.
+Incoming requests are stored in the **Stack Table**. The oldest requests are processed first. Requests that require a fresh lookup wait when the request allowance has been reached.
 
-The queue is keyed by MAC address. If another request arrives for a MAC address already queued, the connector updates the existing entry rather than creating a separate row. The collector information is replaced by that of the latest request, while the original queue timestamp is retained.
+The queue is keyed by MAC address. If another request arrives for a MAC address that is already queued, the connector updates the existing entry rather than creating a separate row. The collector information is replaced by that of the latest request, while the original queue timestamp is retained.
 
 ### Configure Caching and Retry Eligibility
 
 The **General** page contains the following settings:
 
-| Setting | Purpose | Default |
-| --------- | --------- | --------- |
-| **Cache Time** | Retention time for cached lookup results, in minutes. Configurable from 1 to 1440 minutes, or *Disabled*. | 60 minutes |
-| **Resend Time (Not Found / 0.0.0.0)** | Minimum age of an unresolved cached result before another normal collector request can trigger a fresh lookup. Configurable from 1 to 1440 minutes, or *Disabled*. | 60 minutes |
-| **Maximum Cached Items** | Maximum number of cached entries retained during cache maintenance. Configurable from 0 to 65535. | 1000 |
+- **Cache Time**: Retention time for cached lookup results, in minutes. Configurable from 1 to 1440 minutes, or *Disabled*. Default: 60 minutes.
+
+- **Resend Time (Not Found / 0.0.0.0)**: Minimum age of an unresolved cached result before another normal collector request can trigger a fresh lookup. Configurable from 1 to 1440 minutes, or *Disabled*. Default: 60 minutes.
+
+  Note that this does not create an autonomous retry schedule. A subsequent collector request is required to trigger another lookup.
+
+- **Maximum Cached Items**: Maximum number of cached entries retained during cache maintenance. Configurable from 0 to 65535. Default: 1000.
 
 > [!IMPORTANT]
 > When caching and resend handling are enabled, **Cache Time must be longer than Resend Time**. The connector validates changes to these settings and rejects invalid combinations. Both values initially default to 60 minutes, so review them during initialization. For example, use a Cache Time of 60 minutes and a Resend Time of 15 minutes.
@@ -81,9 +89,6 @@ For a normal lookup request:
 
 A forced lookup bypasses these cache checks, but remains subject to the external request limit.
 
-> [!NOTE]
-> Resend Time does not create an autonomous retry schedule. A subsequent collector request is required to trigger another lookup.
-
 Cache maintenance removes expired entries and, when the configured capacity is exceeded, retains the newest entries.
 
 Disabling **Cache Time** also disables **Resend Time**. Setting **Maximum Cached Items** to **0** causes cache maintenance to clear the cache. Lookup responses can still be inserted between maintenance cycles, so these settings should not be treated as a guarantee that no temporary cache entries exist.
@@ -93,9 +98,9 @@ Disabling **Cache Time** also disables **Resend Time**. Setting **Maximum Cached
 On the **Tables** page:
 
 - Use the **Stack Table** to inspect pending MAC addresses, collector destinations, request timestamps, and whether a lookup is forced.
-- Review the per-minute counters for requested, resolved, unresolved, timed-out, and server-error queries.
+- Review the per-minute counters for requested, resolved, unresolved, timed-out, and server error queries.
 - Review **Number of Cached Entries** and **Number of Stacked Entries** to monitor cache and queue size.
-- Select **Advanced Metrics...** to inspect external lookup requests, distinct requested MAC addresses, and resend requests over 15-minute and one-hour periods.
+- Select **Advanced Metrics** to inspect external lookup requests, distinct requested MAC addresses, and resend requests over 15-minute and one-hour periods.
 
 The advanced metrics are updated every 15 minutes. The one-hour values are calculated from the latest four 15-minute samples.
 
@@ -107,9 +112,9 @@ The advanced metrics are updated every 15 minutes. The one-hour values are calcu
 On the **General** page:
 
 1. Configure **DSL Path** with an output directory accessible to the DataMiner Agent.
-2. Configure **DSL File Name** with the filename prefix.
-3. Configure **DSL Offload Frequency** in minutes.
-4. Enable **DSL Offload**.
+1. Configure **DSL File Name** with the filename prefix.
+1. Configure **DSL Offload Frequency** in minutes.
+1. Enable **DSL Offload**.
 
 When offload is enabled, resolved mappings from service responses and cache hits are added to the internal buffer. The buffer is keyed by MAC address, so later results for the same MAC replace earlier buffered results.
 
@@ -135,4 +140,4 @@ The timestamp uses the DataMiner Agent's local time.
 
 This documentation describes the current **1.0.0.12** implementation. Configurable token refresh and the token refresh timestamp were introduced in **1.0.0.12**. Advanced request metrics were introduced in **1.0.0.9**.
 
-The following information is retained from the previous documentation because it is not fully represented in the connector's version-history metadata:
+The following information is retained from the previous documentation because it is not fully represented in the connector's version history metadata:
