@@ -39,7 +39,11 @@ The web interface is only accessible when the client machine has network access 
 
 ### Alarm
 
-On the **Alarm Storm Prevention** subpage, you can configure the parameters for alarm storm prevention.
+The Alarm Overview table is a live mirror of what the chassis itself is reporting, one row per active fault, showing when the device raised it, which module is complaining, the severity, and the device's own description. Sorting by Alarm Module is the fastest way to tell a single failing card from a chassis-wide problem. If SNMP traps are enabled, the alarm severity updates immediately. For example, when a fault recovers, the row briefly shows Cleared before disappearing on the next polling cycle. How often the table refreshes is set in the Poll Manager table, row Status/Alarms, 60 seconds by default, but worth raising to 5–10 minutes if the device is sending traps to your DMA, since traps already deliver changes within seconds.
+ 
+Alarm Storm Prevention exists because one real fault can produce hundreds of alarms in seconds, burying the actual cause under its own symptoms. It runs automatically in the background, there's nothing to enable, and sets Alarm Storm State (parameter 8000) to Active, Active (Only Warning Alarms), or Inactive. 
+ 
+On the Alarm Storm Prevention subpage, you can configure the parameters for alarm storm prevention. It comes down to four saved settings: a storm is declared when the device is either loud  (more than 50 concurrent alarms), or suddenly loud (more than 100 new alarms in 60 seconds). Setting Rate Amount to 0 disables the rate check and leaves only the concurrent-alarm limits in play.
 
 ### CAS Settings
 

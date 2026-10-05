@@ -26,6 +26,8 @@ The **Harmonic NSG9000 40G** is an HTTP connector designed to provide comprehens
 
 - **Real-time Alarm monitoring**: Through SNMP traps, the connector can monitor and report alarms in real-time, allowing for immediate response to any issues.
 
+- **Alarm storm prevention**: Protects operators from being overwhelmed when a single device fault cascades into hundreds of simultaneous alarms, automatically flagging the flood so the noise can be contained and the team stays focused on the real problem instead of scrolling through pages of symptoms. 
+
 ## Technical Reference
 
 > [!NOTE]
