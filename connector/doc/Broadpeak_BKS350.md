@@ -1,78 +1,49 @@
 ---
 uid: Connector_help_Broadpeak_BKS350
+description: Monitor the Broadpeak BKS350 packager streamer in DataMiner, with real-time visibility of server status, live streaming, outputs, and device alarms.
 ---
 
 # Broadpeak BKS350
 
-Broadpeak BKS350 is a packager streamer that improves multi-screen video delivery on managed or open internet networks.
-
-This connector allows the real-time monitoring of BKS350 general information, server status, live streaming status and alarm information.
-
 ## About
 
-### Version Info
+Broadpeak BKS350 is a packager streamer that improves multi-screen video delivery on managed or open internet networks. It prepares and publishes live and on-demand content in the formats required by the various client devices in a video delivery chain.
 
-| Range              | Key Features           | Based on | System Impact                                                             |
-|--------------------|------------------------|----------|---------------------------------------------------------------------------|
-| 1.0.0.x [Obsolete] | Initial version.       | -        | -                                                                         |
-| 1.0.1.x [SLC Main] | HTTP connection added. | -        | Existing elements will need to be reconfigured to use the new connection. |
+This connector brings the operational state of the BKS350 into DataMiner, so that you can follow server health, live streaming activity, and delivery performance from the same platform you use for the rest of your video chain.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
-| 1.0.1.x   | 03.07.09.10076         |
+- **Server status monitoring**: Follow general device information, such as the current date and time and the uptime, together with the overall status of the equipment.
+- **Live streaming visibility**: Track all live status parameters to confirm that streams are being packaged and delivered as expected.
+- **Output and publishing insight**: Monitor output status with the associated template name and output format, along with all publishing status parameters.
+- **Service performance statistics**: Consult the statistics collected by the device to assess delivery performance over time.
+- **Device-reported alarm surfacing**: Retrieve the alarms raised by the BKS350 itself, including the ones logged while the device was operational, without having to open its own interface.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.0.01x   | No                  | Yes                     | -                     | -                       |
+### Detecting Live Streaming Issues Before Viewers Do
 
-## Configuration
+**Challenge**: In a multi-screen delivery chain, a packager streamer problem can degrade playback for a large group of viewers before anyone reports it.
 
-### Connections
+**Solution**: Monitor the live, output, and publishing status of the BKS350 in DataMiner, combined with the alarms reported by the device.
 
-#### SNMP Main Connection
+**Benefit**: Operators see a stream that stops being packaged or published correctly straight away, so they can react while the issue is still limited to a single component.
 
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
+### Centralizing Packager Monitoring Across the Video Chain
 
-SNMP CONNECTION:
+**Challenge**: Checking the health of a packager streamer on its own web interface keeps it separate from the rest of the video delivery monitoring.
 
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination.
+**Solution**: Bring server status, uptime, and service performance statistics of the BKS350 into the same DataMiner System used for the surrounding equipment.
 
-SNMP Settings:
+**Benefit**: Teams assess delivery performance from a single platform, without having to log in to the device to establish its state.
 
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
+## Technical Reference
 
-#### HTTP Connection
+### Prerequisites
 
-This connector uses an HTTP connection and requires the following input during element creation:
+- This connector requires **DataMiner version 10.4.0.0 - 14003** or higher.
+- **SNMP access** to the BKS350 is required, including the get and set community strings configured on the device.
+- **HTTP access** to the BKS350 is required for the polling IP or URL and the IP port of the device.
 
-HTTP CONNECTION:
-
-- **IP address/host**: The polling IP or URL of the destination.
-- **IP port**: The IP port of the destination (default: *8091*).
-- **Device address**: The bus address of the device. If the proxy server has to be bypassed, specify *BypassProxy*.
-
-### Web Interface
-
-Note that the client machine has to be able to access the device, as otherwise it will not be possible to open the web interface.
-
-## How to use
-
-The element created with this connector consists of the following data pages:
-
-- **General**: Contains general information, such as the current date and time, and the up time. Also shows the overall status of the equipment.
-- **Live**: Contains a table with all live status parameters.
-- **Alarm**: Shows the alarms that have occurred while the device was operational.
-- **Output**: Contains a table that shows the output status along with the template name and output format.
-- **Publishing**: Contains a table with all publishing status parameters.
-
-## Notes
-
-When you upgrade from range 1.0.0.x to 1.0.1.x, existing elements need to be reconfigured before the new connection will be taken in use.
+> [!NOTE]
+> For detailed technical information, refer to the [Broadpeak BKS350 Technical](xref:Connector_help_Broadpeak_BKS350_Technical) page.
