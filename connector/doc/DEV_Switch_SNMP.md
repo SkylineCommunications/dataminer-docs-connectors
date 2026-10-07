@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_DEV_Switch_SNMP
+description: "Monitor and control dev-switch MIB devices in DataMiner with the DEV Switch SNMP connector, including port monitoring, module DVEs, and alarm traps."
 ---
 
 # DEV Switch SNMP
@@ -18,7 +19,7 @@ The **DEV Switch SNMP** connector monitors and controls devices that support the
 
 ## Use Cases
 
-### Monitoring switch ports
+### Monitoring Switch Ports
 
 **Challenge**: Operators need a clear overview of the state of every port of a switch, but the raw information is spread over many MIB columns.
 
@@ -26,7 +27,7 @@ The **DEV Switch SNMP** connector monitors and controls devices that support the
 
 **Benefit**: Operators can check port information from a single place and use DataMiner alarming on the monitored values.
 
-### Per-module visibility with DVEs
+### Per-Module Visibility with DVEs
 
 **Challenge**: In devices where two ports together form a module, operators want to follow up on each module separately.
 
@@ -34,7 +35,7 @@ The **DEV Switch SNMP** connector monitors and controls devices that support the
 
 **Benefit**: Each module can be followed up on its own, and trending data is preserved when a module is removed from the device and installed again.
 
-### Controlling switching and alarm traps
+### Controlling Switching and Alarm Traps
 
 **Challenge**: Operators want to check or change switching status and decide which alarm traps the device sends, without logging in to the device itself.
 
@@ -50,25 +51,8 @@ The **DEV Switch SNMP** connector monitors and controls devices that support the
 - **Remote mode** on the device is needed to change settings via SNMP through DataMiner.
 - **Network access** from the client machine to the device is needed to open the web interface of the manufacturer.
 
-### Connection
-
-This connector uses a Simple Network Management Protocol (SNMP) connection and requires the following input during element creation:
-
-SNMP CONNECTION:
-
-- **IP address/host**: The polling IP of the device.
-- **Device address**: Not used.
-
-SNMP Settings:
-
-- **Port number**: The port of the connected device, by default *161*.
-- **Get community string**: The community string used when reading values from the device (default: *public*).
-- **Set community string**: The community string used when setting values on the device (default: *private*).
-
-## Notes
-
-### DVEs
+### Notes on DVEs
 
 - DVEs are not deleted automatically when a port disappears, so that trending data is kept if the module is reinstalled. Modules marked as removed can be deleted manually.
 - DVEs can be hidden or shown in the Surveyor without being deleted.
-- Two-port modules are only supported from range 3.0.0.x and are only accurate for the DEV7113 1:1.
+- Two-port modules are only supported from range 3.0.0.x onward and are only accurate for the DEV7113 1:1.
