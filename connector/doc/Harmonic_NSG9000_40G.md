@@ -24,6 +24,10 @@ The **Harmonic NSG9000 40G** is an HTTP connector designed to provide comprehens
 
 - **CAS and encryption**: Provides features to manage DVB (Session-based and Tier-based) and Privacy Mode settings, alongside an ECM Group Table for managing encryption groups.
 
+- **Real-time alarm monitoring**: Monitors and reports alarms in real time through SNMP traps, allowing an immediate response to any issues.
+
+- **Alarm storm prevention**: Protects operators from being overwhelmed when a single device fault cascades into hundreds of simultaneous alarms, automatically flagging the flood so the noise can be contained and the team stays focused on the real problem instead of scrolling through pages of symptoms.
+
 ## Technical Reference
 
 > [!NOTE]
