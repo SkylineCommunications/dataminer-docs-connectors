@@ -41,13 +41,13 @@ This connector uses an SNMP connection and requires the following input during e
 
 ## DataMiner Connectivity Framework
 
-The **1.0.1.x** range of the Smartgrid PDU General connector supports the usage of DCF.
+The **1.0.1.x** range of the Raritan Xerus Platform connector supports the usage of DCF.
 
 DCF can also be implemented through the DataMiner DCF user interface and through DataMiner third-party connectors (for instance a manager).
 
 ### Interfaces
 
-#### Dynamic interfaces
+#### Dynamic Interfaces
 
 Physical dynamic interfaces:
 
