@@ -33,7 +33,7 @@ This connector uses an **HTTP** connection (for the JSON commands) and requires 
 **SERIAL CONNECTION**:
 
 - **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13*.
-- **IP port**: The port of the destination, e.g., *80*.
+- **IP port**: The port of the destination, e.g., *443*.
 - **Bus address**: This field can be used to bypass the proxy, if the value *bypassproxy* is filled in (filled in by default).
 
 This connector also uses a Simple Network Management Protocol (**SNMP**) connection (for traps) and requires the following input during element creation:
