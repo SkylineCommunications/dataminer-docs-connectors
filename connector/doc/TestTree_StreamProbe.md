@@ -15,7 +15,7 @@ This connector allows the user to monitor the TestTree StreamProbe via DataMiner
 | Range              | Key Features                                                            | Based on                              | System Impact |
 |--------------------|-------------------------------------------------------------------------|---------------------------------------|---------------|
 | 1.0.0.x [Obsolete] | Initial version **Automatic Removal Delay** - \[see Usage -\> General\] | 1.0.0.24 (AJIMI TSAFT Live connector) | -             |
-| 1.0.1.x [SLC Main] | DCF                                                                     | 1.0.1.6                               | -             |
+| 1.0.1.x [SLC Main] | DCF, Service Provisioning (ST 2110), Groups and Macro Services polling  | 1.0.1.6                               | -             |
 
 ### Product Info
 
@@ -33,7 +33,7 @@ This connector uses an **HTTP** connection (for the JSON commands) and requires 
 **SERIAL CONNECTION**:
 
 - **IP address/host**: The polling IP or URL of the destination, e.g., *10.11.12.13*.
-- **IP port**: The port of the destination, e.g., *80*.
+- **IP port**: The port of the destination, e.g., *443*.
 - **Bus address**: This field can be used to bypass the proxy, if the value *bypassproxy* is filled in (filled in by default).
 
 This connector also uses a Simple Network Management Protocol (**SNMP**) connection (for traps) and requires the following input during element creation:
@@ -98,6 +98,30 @@ This page contains information about **Configuration** and **Status RF** table, 
 ### Alarms
 
 This page contains information about the alarms found by the probe, either when the alarms are polled from the device or when a trap is received. It displays information such as the **Channel Name**, the **Program ID**, **Stream ID**, the **Alarm Description**, the **Alarm Severity**, etc. The composed index on this page is based on that on the **Programs Page**, and it is the same as on the **PIDs Status Page**.
+
+### OTT Services
+
+This page displays the OTT services monitored by the probe.
+
+### Probes
+
+This page displays information about the probes managed by the system.
+
+### ABR Probe Provisioning
+
+This page and the related **ABR Provisioning Tree** and **ABR Profiles** pages contain the ABR provisioning data of the system.
+
+### Service Provisioning
+
+This page displays the **Service Provisioning Table**,
+
+### Groups
+
+This page displays the **Groups Table**, which contains the **ID** and **Name** of the groups defined on the system. The table is polled via the Polling Manager.
+
+### Macros
+
+This page displays the **Macro Services Table**, which contains the macro services defined on the system. Columns include the macro service **ID**, **Name** and **Description**. The table is polled via the Polling Manager.
 
 ### Overview
 
