@@ -293,13 +293,13 @@ To see the data behind the tree view, set **Tree Overview Info** to *Enabled* in
 
 ### Running a Quick Calculation
 
-From version 1.1.0.1 onwards, you can calculate the outages of a site on demand, e.g., to check a planned installation or a different satellite, band, or dish size. A Quick Calculation does not add an earth station and does not affect the **Earth Station** and **Outages** tables. To monitor a site permanently, add it as an earth station instead.
+From version 1.1.0.1 onwards, you can calculate the outages of a site on demand, e.g., to check a planned installation or a different satellite, band, or dish size. Such a quick calculation does not add an earth station and does not affect the **Earth Station** and **Outages** tables. To monitor a site permanently, add it as an earth station instead.
 
 1. Go to the **Quick Calculation** page.
 
 1. Click **New Quick Calculation**.
 
-1. To start from an existing earth station, select it in **Quick Calculation Source Earth Station**.
+1. To start from an existing earth station, select it in the **Quick Calculation Source Earth Station** box.
 
    Its location, satellite, band, and dish size are copied into the form. You can then change any value. Select *None* to stop using the earth station. The values in the form are kept.
 
@@ -317,7 +317,7 @@ From version 1.1.0.1 onwards, you can calculate the outages of a site on demand,
 
 1. Click **Calculate**.
 
-   The calculation is queued and **Quick Calculation Status** shows *Queued* and then *Calculating*. When it is done, the **Results** section shows the azimuth, elevation, outage angle, and next outage start and end, and the outage windows are added to the **Quick Calculation Outages** table.
+   The calculation is queued, and **Quick Calculation Status** shows *Queued* and then *Calculating*. When it is done, the **Results** section shows the azimuth, elevation, outage angle, and next outage start and end, and the outage windows are added to the **Quick Calculation Outages** table.
 
 If the satellite is below the **Visibility Threshold** for the site, no outages are calculated. If the calculation fails, **Quick Calculation Status** shows *Failed*, and **Quick Calculation Last Error** shows the reason.
 
@@ -333,7 +333,7 @@ On the **Configuration** page, click **Quick Calc Config** to open the following
 
 ### InterApp Support
 
-From version 1.1.0.1 onwards, other DataMiner applications, such as Automation scripts, can request a Quick Calculation through the InterApp framework. The connector receives the messages on parameter 9000000 and replies to the sender. The results of InterApp requests are returned in the reply only. They are not added to the **Quick Calculation Outages** table.
+From version 1.1.0.1 onwards, other DataMiner applications, such as automation scripts, can request a quick calculation through the InterApp framework. The connector receives the messages on parameter 9000000 and replies to the sender. The results of InterApp requests are returned in the reply only. They are not added to the **Quick Calculation Outages** table.
 
 The messages are based on the `Skyline.DataMiner.Core.InterAppCalls.Common` NuGet package. No separate ConnectorAPI package is available, so the sender must define the message classes with the same names, namespace (`Skyline.DataMiner.ConnectorAPI.GenericSunOutage.Messages`), and properties as the connector. Pass the following known types, in this order:
 
@@ -377,7 +377,7 @@ All dates are in UTC.
 
 #### Example
 
-The following Automation script snippet requests a Quick Calculation and reads the response:
+The following automation script snippet requests a quick calculation and reads the response:
 
 ```csharp
 var request = new QuickCalculationRequest

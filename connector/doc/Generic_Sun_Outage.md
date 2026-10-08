@@ -27,7 +27,7 @@ This is a virtual connector: all calculations run inside DataMiner, and no devic
 
 - **Outage overview**: A tree view groups each selected earth station with its predicted outages for quick review by operators.
 
-- **Quick Calculation**: Operators can calculate the outages of any location, satellite, and band on demand, without adding an earth station. Other DataMiner applications can request the same calculation through InterApp messages.
+- **Quick calculation**: Operators can calculate the outages of any location, satellite, and band on demand, without adding an earth station. Other DataMiner applications can request the same calculation through InterApp messages.
 
 ## Use Cases
 
