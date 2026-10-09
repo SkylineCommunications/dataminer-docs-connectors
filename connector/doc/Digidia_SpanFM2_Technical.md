@@ -31,7 +31,7 @@ SNMP Settings:
 
 The web interface is only accessible when the client machine has network access to the product.
 
-The **Website** page opens the device web interface at `http://[polling IP]/`, where the polling IP is the IP address configured for the SNMP connection.
+The **Website** page opens the device web interface at `http://[Polling IP]/`, where the Polling IP is the IP address configured for the SNMP connection.
 
 ## How to Use
 
@@ -40,17 +40,21 @@ SNMP polling is used to retrieve all device information. Values are read on the 
 ### Monitoring
 
 - **Multiplex** page: Shows the multiplex audio service status, including the system, synchronization, audio input, data mailbox input, wave file input, PIMS over RS-232 input, redundancy, and UECP input states. Each state is monitored and raises a DataMiner alarm when active. The multiplex alarm notification table and the multiplex redundancy status are also displayed here.
-- **Alarm** page: Shows the global alarm table reported by the device, including the description, type, status, and additional info for each alarm.
+- **Alarm** page: Shows the global alarm table reported by the device, including the description, type, status, and additional info for each alarm. Each alarm can be given a custom description, which must be unique: a value already used by another alarm, as its custom description or as its *Description/Info*, is rejected with a pop-up message. Custom descriptions are kept when the Global Alarm Table polling is disabled in the Polling Manager. The **Global Alarm Display Key Format** parameter selects whether alarms are identified by *Description/Info* (default) or by their *Custom Description*. Alarms without a custom description fall back to *Description/Info*.
 - **Version** page: Reports the MIB, software, hardware, and code software versions.
 - **Logs** page: Shows the device event log (Elog) entries. The raw hexadecimal time values reported by the device are converted to a readable date/time.
 
 ### Configuration and control
 
-- **System** page: Allows you to set the equipment name, comment, real-time clock, serial number, and license keys, and to trigger an equipment reset.
-- **Communication** page: Allows you to review and set the network configuration of both Ethernet interfaces (IP address, subnet mask, gateway, and port speed/duplex).
-- **Synchronisation** page: Allows you to configure the two NTP server addresses used by the device.
-- **Session** page: Allows you to configure public access and manage the user table (name, password, and access level).
-- **Trap** page: Allows you to configure the SNMP trap community and enable up to two trap targets, including the IP address of each manager that should receive traps from the device.
+- **System** page: Allows setting the equipment name, comment, real-time clock, serial number, and license keys, and triggering an equipment reset.
+- **Communication** page: Allows reviewing and setting the network configuration of both Ethernet interfaces (IP address, subnet mask, gateway, and port speed/duplex).
+- **Synchronisation** page: Allows configuring the two NTP server addresses used by the device.
+- **Session** page: Allows configuring public access and managing the user table (name, password, and access level).
+- **Trap** page: Allows configuring the SNMP trap community and enabling up to two trap targets, including the IP address of each manager that should receive traps from the device.
+
+### Polling Settings
+
+On the **Polling Settings** page, the **Multiplex Audio Service Type** row in the **Polling Manager** controls polling for PIDs 500-507 and **FM Default Indication by PIMS to Spanfm2** (PID 800). They share the same configurable polling interval (default: *30 seconds*), enable/disable state, and manual poll controls. Disabling this row resets PID 800 and PIDs 500-507 to `-1`. There is no separate FM polling row.
 
 ## Notes
 
