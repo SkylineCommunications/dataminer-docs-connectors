@@ -1,70 +1,59 @@
 ---
 uid: Connector_help_Generic_IP_Resolve_JSON
+description: "Explore key features and use cases of the Generic IP Resolve JSON connector, which enables DataMiner collectors to resolve MAC addresses to IP addresses."
 ---
 
 # Generic IP Resolve JSON
 
-This device behaves like a backup DHCP. It retrieves MAC addresses that are not resolved and periodically tries to ask the DHCP for an IP.
-
-The connector receives the MAC addresses from the collectors and asks the DHCP for an existing or new corresponding IP. It will then send the IPs back to the collectors.
-
 ## About
 
-### Version Info
+This connector helps DataMiner collectors retrieve IP addresses when they only have a device's MAC address. It connects collectors to an OSSI service that exposes MAC-to-IP mappings through an authenticated HTTP API.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+By centralizing these lookups, the connector helps collectors maintain their address information while controlling the number of requests sent to the external service.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+- **Collector integration**: Receive MAC address lookup requests from compatible DataMiner collectors and return resolved IP addresses to the requesting elements.
+- **Controlled API usage**: Limit external lookup requests per minute and process queued requests in order of arrival.
+- **Reusable lookup results**: Cache MAC-to-IP mappings to answer repeated requests without querying the external service again.
+- **Lookup activity insights**: Track request volumes, resolved and unresolved queries, timeouts, server errors, and retry activity.
+- **CSV offload**: Export resolved MAC-to-IP mappings for downstream processing.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+### Complete Collector Address Information
 
-## Configuration
+**Challenge**: A collector knows a device's MAC address but lacks the IP address needed to complete its address information.
 
-### Connections
+**Solution**: The collector submits a lookup request to the Generic IP Resolve JSON connector, which queries the OSSI service and returns the resolved mapping.
 
-#### HTTP Main Connection - Main
+**Benefit**: Collectors can retrieve address information through a shared integration instead of each implementing its own API connection.
 
-This connector uses an HTTP connection and requires the following input during element creation:
+### Manage Repeated Lookup Requests
 
-HTTP CONNECTION:
+**Challenge**: Repeated requests for the same MAC addresses increase traffic to the external lookup service.
 
-- **IP address/host**: The polling IP/address of the DHCP device.
-- **IP port**: The IP port of the device.
-- **Device address**: The device address, by default *ByPassProxy*.
+**Solution**: The connector reuses cached results and applies a configurable limit to external requests.
 
-## How to Use
+**Benefit**: Reduce unnecessary lookups and keep request volumes within the configured operational limit.
 
-### General
+### Supply Mappings to Downstream Processing
 
-On the **General** page, you can define the configuration for the request flow and offloading.
+**Challenge**: Another processing workflow needs the MAC-to-IP mappings resolved for collectors.
 
-Via the **Credentials** page button, you can define the **Username**, **Password**, and **Internal Username**.
+**Solution**: Enable CSV offload to periodically write resolved mappings to a configured directory.
 
-#### Inner flow
+**Benefit**: Make lookup results available to file-based integrations without requiring those integrations to query the OSSI service themselves.
 
-There are four important parameters that influence the inner flow for the IP requests:
+## Technical Reference
 
-- *Maximum Number of Requests*: The maximum number of IP lookup requests that will be sent to the DHCP per minute.
-- *Cache Time*: The time that IP lookup results will be stored in the Cache Table until they are expired and removed from that table. In case the Cache Time is disabled, the Cache Table will be cleared, new entries will not be stored in the Cache Table, and a resend can never happen.
-- *Resend Time*: The time that need to have passed when the MAC address from the Cache Table cannot be resolved (IP: 0.0.0.0). Only when this time has passed, will a new request be sent to the DHCP. Because this applies only to entries in the Cache Table, the Cache Time should always be longer than the Resend Time. Otherwise the entry would be removed from the Cache Table before a resend could occur.
-- *Maximum Cached Items*: The maximum number of items allowed in the Cache Table.
+### Prerequisites
 
-The Stack Table stores new requests from the collectors. The oldest request from this table will be processed first. The MAC address for this request will be looked up in the Cache Table, which contains temporary IP lookup results.
+- **A compatible OSSI service** exposing the authentication and MAC-to-IP lookup endpoints used by the connector.
+- **Valid service credentials**, including the username, password, and internal username required for authentication.
+- **Network access from the DataMiner Agent** to the service over HTTPS.
+- **Compatible DataMiner collector elements** that use the connector's request and response message format.
+- **A writable output directory** if CSV offload is required.
 
-- If no result for this MAC address exists in the Cache Table, and the Maximum Number of Requests for this minute has not been reached yet, a new IP lookup request will be sent to the DHCP. Once the result for the lookup is received, it will be sent to the collector, it will be added to the Cache Table, and the request will be removed from the Stack Table.
-- If the Cache Table contains a successful result for the MAC address, the result will be sent to the collector, and the request will be removed from the Stack Table.
-- If the Cache Table contains a failed result for the MAC address, and the Maximum Number of Requests for this minute has not been reached yet, the request will be removed from the Stack Table, and a new IP lookup request will be sent to the DHCP. Once the result for the lookup is received, it will be sent to the collector and added to the Cache Table.
-
-### Tables
-
-This page contains the **Stack Table**, which displays the MAC addresses with their collector info.
+> [!NOTE]
+> For connection settings, authentication, request handling, caching, and CSV offload configuration, refer to the [technical documentation](xref:Connector_help_Generic_IP_Resolve_JSON_Technical).

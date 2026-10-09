@@ -4503,6 +4503,9 @@
     topicUid: Connector_help_Generic_Inter_Dataminer_Feedback
   - name: Generic IP Resolve JSON
     topicUid: Connector_help_Generic_IP_Resolve_JSON
+    items:
+      - name: Generic IP Resolve JSON Technical
+        topicUid: Connector_help_Generic_IP_Resolve_JSON_Technical
   - name: Generic IRD Key Manager
     topicUid: Connector_help_Generic_IRD_Key_Manager
   - name: Generic JMS Consumer
