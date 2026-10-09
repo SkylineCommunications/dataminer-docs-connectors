@@ -139,5 +139,3 @@ The timestamp uses the DataMiner Agent's local time.
 ### Version and Compatibility Information
 
 This documentation describes the current **1.0.0.12** implementation. Configurable token refresh and the token refresh timestamp were introduced in **1.0.0.12**. Advanced request metrics were introduced in **1.0.0.9**.
-
-The following information is retained from the previous documentation because it is not fully represented in the connector's version history metadata:
