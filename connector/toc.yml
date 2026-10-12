@@ -10899,6 +10899,8 @@
     topicUid: Connector_help_TSL_MDU12-PM
   - name: TSL PAM2-IP AMU
     topicUid: Connector_help_TSL_PAM2-IP_AMU
+  - name: TSL PD14PMiD
+    topicUid: Connector_help_TSL_PD14PMiD
 - name: TV2 Norway
   items:
   - name: TV2 Norway Sumo Monitoring
