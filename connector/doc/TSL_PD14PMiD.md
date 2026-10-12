@@ -1,13 +1,13 @@
 ---
-uid: Connector_help_TSL_PD14MiD
-description: Learn how to configure and use the TSL PD14MiD connector to monitor information.
+uid: Connector_help_TSL_PD14PMiD
+description: Learn how to configure and use the TSL PD14PMiD connector to monitor information.
 ---
 
-# TSL PD14MiD
+# TSL PD14PMiD
 
 ## About
 
-The TSL PD14MiD connector enables monitoring. It provides users with access to real-time data directly within DataMiner.
+The TSL PD14PMiD connector enables monitoring. It provides users with access to real-time data directly within DataMiner.
 
 ## Key Features
 
