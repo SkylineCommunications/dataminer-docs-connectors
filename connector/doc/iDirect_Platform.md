@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_iDirect_Platform
+uid: Connector_help_iDirect-Platform
 ---
 
-# iDirect Platform
+# iDirect-Platform
 
 ## About
 
