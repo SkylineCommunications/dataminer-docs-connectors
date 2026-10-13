@@ -41,33 +41,39 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-The element data is organized in the following main page groups:
+The element provides comprehensive monitoring and configuration for all modules in the MultiTX chassis using SNMP polling and real-time trap processing.
 
-- **General**: High-level device identification and status overview.
+### Transmitter (TX) Module Monitoring and Control
 
-- **Management**: Chassis management data, including System, Network, Modem, Battery, Date & Time, Device Info, I/O Interface, RF Monitor, Service, Status, Web, and Alarm/Event Configuration pages.
+On the **TX Module** pages, you can supervise the operation of each transmitter module and configure its transmission parameters:
 
-- **NP1**: The redundancy switching unit, with Device, Service, Setup (general settings, switching causes, 1+1 redundancy, automatic verifications), and Status pages.
+- **RF and Power**: Monitor forward power, amplifier status, and input levels. You can mute or enable the RF output, configure input/output settings, and adjust precorrection and echo cancellation parameters.
+- **Modulation and Transmission Standards**: Configure DVB-T and DVB-T2 parameters, including system, network, frame, and modulation settings, as well as per-PLP (Physical Layer Pipe) configurations.
+- **Input Switching**: Monitor the ASI 1/2 and IP socket inputs, review the active input status, and configure automatic or manual input switching behavior.
 
-- **PSU**: Power supply units, with Device, Service (power intake, cooling, fans), Setup, and Status pages.
+### Redundancy Management (NP1)
 
-- **SYNC**: Synchronization modules, with Device, GNSS 1, GNSS 2, Service, Setup, and Status pages.
+The **NP1** pages allow you to manage 1+1 transmitter redundancy:
 
-- **TX Module**: Transmitter modules, with:
+- View active redundancy status and verify that the backup transmission chain is operational before an incident occurs.
+- Check switching causes and configure automatic verification settings to ensure seamless switchover during input or transmitter failures.
 
-  - **Device**: Device info, alarms/events configuration, reset, software install, and DVB-T/DVB-T2 subpages (system, network, modulation, frame, and PLP settings).
-  - **Input**: ASI 1/2 inputs, IP sockets, input switching configuration, and input switching status.
-  - **IF Processor**: General, system, echo canceller, and precorrector settings.
-  - **Modulator**: General modulator settings and precorrection.
-  - **RF Output**: RF input/output configuration, output mutes, forward power, and amplifier data.
-  - **Service**: Input level, power supply, cooling, and reference data.
-  - **Status**: Module status overview.
+### Synchronization and Chassis Health
 
-- **Trap**: Received SNMP traps are processed and displayed on this page.
+- **Synchronization (SYNC)**: On the **SYNC** pages, monitor the GNSS 1 and GNSS 2 receivers to verify satellite lock, reference clocks, and timing status for Single Frequency Network (SFN) and Multi-Frequency Network (MFN) operations.
+- **Power and Cooling (PSU)**: On the **PSU** pages, track power intake, power supply health, and fan speeds to detect cooling or power degradation early.
+- **Chassis Management**: On the **Management** pages, configure and monitor chassis-level settings, including network interfaces, modem, battery status, and date and time.
 
-- **Polling Settings**: The Polling Manager table, where each poll group can be enabled/disabled and its polling interval adjusted. A context menu allows refreshing groups on demand.
+### Traps and Alarming
 
-Many parameters are monitored for alarming and trended, so historical data and alarm templates can be applied out of the box.
+Incoming SNMP traps are received in real time and displayed on the **Trap** page, updating alarm states immediately. Key parameters across all modules are enabled for alarming and trending out of the box.
+
+### Polling Settings
+
+The **Polling Settings** page contains a Polling Manager table that lets you optimize SNMP communication:
+
+- Adjust the polling interval or disable polling for individual groups (such as slow-changing configuration tables) to reduce network load.
+- Use the table context menu to refresh specific groups on demand.
 
 ## Notes
 
