@@ -1,5 +1,7 @@
 ---
 uid: Connector_help_TestTree_StreamProbe
+description: "Learn how the TestTree StreamProbe connector helps investigate broadcast delivery issues using stream, program, PID, RF, OTT, and provisioning data."
+
 ---
 
 # TestTree StreamProbe
@@ -64,4 +66,4 @@ The **TestTree StreamProbe** connector brings broadcast and streaming probe data
 Documented firmware support is **5.0.6i-a**. Support for other firmware versions is not established by the existing documentation.
 
 > [!NOTE]
-> See the [technical documentation](TestTree_StreamProbe_Technical.md) for connection settings, monitoring and provisioning workflows, polling controls, and cleanup limitations.
+> See the [technical documentation](xref:Connector_help_TestTree_StreamProbe_Technical) for connection settings, monitoring and provisioning workflows, polling controls, and cleanup limitations.

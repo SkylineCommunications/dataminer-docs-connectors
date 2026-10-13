@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_TestTree_StreamProbe_Technical
+description: "Learn how to configure the TestTree StreamProbe connector to monitor transport streams, RF reception, OTT services, and provisioning over HTTP and SNMP."
 ---
 
 # TestTree StreamProbe
@@ -8,7 +9,7 @@ uid: Connector_help_TestTree_StreamProbe_Technical
 
 The **TestTree StreamProbe** connector monitors transport streams, programs, PIDs, RF reception, and OTT services using HTTP data and SNMP traps. It also exposes provisioning information and stream provisioning controls.
 
-See the [connector overview](TestTree_StreamProbe.md) for key capabilities and supported firmware. This page describes connector version **1.0.1.20**, which requires DataMiner **10.3.0.0 - 12752** or higher.
+See the [connector overview](xref:Connector_help_TestTree_StreamProbe) for key capabilities and supported firmware. This page describes connector version **1.0.1.20**, which requires DataMiner **10.3.0.0 - 12752** or higher.
 
 ## Configuration
 
@@ -16,38 +17,31 @@ See the [connector overview](TestTree_StreamProbe.md) for key capabilities and s
 
 #### HTTP Connection
 
-The HTTP connection retrieves monitoring and provisioning data and sends stream provisioning commands.
+The HTTP connection retrieves monitoring and provisioning data and sends stream provisioning commands. The following settings need to be configured during element creation:
 
-| Setting             | Value                                                                                |
-| ------------------- | ------------------------------------------------------------------------------------ |
-| **IP address/host** | The polling IP address or host of the StreamProbe server.                            |
-| **IP port**         | The destination port, default: _433_. Set this to the port configured on the server. |
-| **Bus address**     | Default: _ByPassProxy_, to bypass the proxy.                                         |
+- **IP address/host**: The polling IP address or host of the StreamProbe server.
+- **IP port**: The destination port. Default: *433*. Set this to the port configured on the server.
+- **Bus address**: Default: *ByPassProxy*, to bypass the proxy.
 
 #### SNMP Connection
 
 The SNMP connection handles probe traps. The probe ID also identifies the probe used by HTTP commands.
 
-| Setting                  | Value                                               |
-| ------------------------ | --------------------------------------------------- |
-| **IP address/host**      | The IP address of the probe.                        |
-| **Device address**       | The probe ID, for example, _1_.                     |
-| **Port number**          | Default: _161_.                                     |
-| **Get community string** | Default: _public_. Match the device configuration.  |
-| **Set community string** | Default: _private_. Match the device configuration. |
+- **IP address/host**: The IP address of the probe.
+- **Device address**: The probe ID, for example, *1*.
+- **Port number**: Default: *161*.
+- **Get community string**: Default: *public*. Match the device configuration.
+- **Set community string**: Default: *private*. Match the device configuration.
 
 ### Initialization
 
 1. Check **Probes** to confirm that the expected probe is listed.
-2. Check **General** to confirm the selected probe's identity and software version.
-3. Review **Polling Settings** and enable the datasets needed for your monitoring workflow.
+1. Check **General** to confirm the selected probe's identity and software version.
+1. Review **Polling Settings** and enable the datasets needed for your monitoring workflow.
 
 ### Web Interface
 
-The **Web Interface** page opens the product interface at the HTTP polling IP address.
-
-> [!NOTE]
-> The web interface is only accessible when the client machine has network access to the product.
+The **Web Interface** page opens the product interface at the HTTP polling IP address. It is only accessible when the client machine has network access to the product.
 
 ## How to Use
 
@@ -55,7 +49,7 @@ The **Web Interface** page opens the product interface at the HTTP polling IP ad
 
 Use **Probe Status**, CPU and memory usage, and **Total Bitrate** to distinguish probe availability or resource issues from a problem affecting individual content. Compare declared and active stream and program counts to identify missing monitored content.
 
-**Automatic Removal Delay** exposes a retention setting with a default of _5 days_; _0_ is displayed as **N/A**. The current source does not register the legacy delayed-cleanup actions, so do not rely on this setting alone to remove unavailable entries. See [Notes](#notes).
+**Automatic Removal Delay** exposes a retention setting with a default of *5 days*; *0* is displayed as **N/A**. The current source does not register the legacy delayed-cleanup actions, so do not rely on this setting alone to remove unavailable entries. See [Notes](#notes).
 
 ### Streams
 
@@ -81,7 +75,7 @@ Use the **PIDs Status Table** to check the coding and status of individual PIDs 
 
 ### Programs QOE
 
-Use the **Programs QOE Table** to relate viewer symptoms to program-level indicators. Video black or freeze indicators help investigate picture problems, while missing audio or silence indicators help investigate sound problems. Compare these with **ETR** and **PID Status** to distinguish transport errors from content-quality symptoms. Audio measurements cover up to four audio PIDs per program.
+Use the **Programs QOE Table** to relate viewer symptoms to program-level indicators. Video black or freeze indicators help investigate picture problems, while missing audio or silence indicators help investigate sound problems. Compare these with **ETR** and **PID Status** to distinguish transport errors from content quality symptoms. Audio measurements cover up to four audio PIDs per program.
 
 ### RF
 
@@ -117,9 +111,11 @@ Open **ABR Profiles** from **ABR Probe Provisioning** to inspect the component d
 
 The **Transport Stream Provisioning** page displays the **Stream Provisioning Table**. The same configuration is accessible by selecting a stream in **Overview** and opening its **Stream Provision** tab.
 
-The table has editable settings for stream configuration. Verify addressing, input selection, monitoring state, and media format before applying changes to the probe. Its context menu provides **Add item ST2022-6**, **Add item ST2110-20**, **Add item ST2110-30**, and **Add item MPEG-2 Transport Stream**. Choose the format matching the intended input and supply the corresponding configuration.
+The table has editable settings for stream configuration. Verify addressing, input selection, monitoring state, and media format before applying changes to the probe.
 
-> [!WARNING]
+The context menu of the table has the options **Add item ST2022-6**, **Add item ST2110-20**, **Add item ST2110-30**, and **Add item MPEG-2 Transport Stream**. Choose the format matching the intended input and supply the corresponding configuration.
+
+> [!CAUTION]
 > **Delete selected item** permanently deletes the selected provisioning item. Disable its monitoring before deleting it, and verify that you selected the intended stream.
 
 ### Service Provisioning
@@ -127,13 +123,13 @@ The table has editable settings for stream configuration. Verify addressing, inp
 The **Service Provisioning Table** is a read-only view of configured SMPTE ST 2110 services. Each row represents one constituent stream of a service on the **Blue** or **Red** network. This page is not a service creation editor.
 
 1. Filter the table by **Service ID** to collect the rows belonging to the service.
-2. Compare **Network** and **Type** to verify the intended constituent media streams on each network.
-3. Check **Service State** and **Stream State** against the intended Enabled/Disabled configuration.
-4. Compare **Multicast IP**, **Port**, **Source IP**, **Interface IP**, **VLAN ID**, and **Input Link** with the expected routing.
-5. Compare video or audio format settings with the intended media format.
-6. Use **Stream ID** to correlate the configured stream with monitoring data; distinguish it from **Stream ID NMS** when comparing external identifiers.
+1. Compare **Network** and **Type** to verify the intended constituent media streams on each network.
+1. Check **Service State** and **Stream State** against the intended enabled/disabled configuration.
+1. Compare **Multicast IP**, **Port**, **Source IP**, **Interface IP**, **VLAN ID**, and **Input Link** with the expected routing.
+1. Compare video or audio format settings with the intended media format.
+1. Use **Stream ID** to correlate the configured stream with monitoring data; distinguish it from **Stream ID NMS** when comparing external identifiers.
 
-Enabled/Disabled states describe configuration, not service health. Blank or **N/A** media fields can be inapplicable to that stream type and are not, by themselves, evidence of a fault.
+Enabled/disabled states describe configuration, not service health. Blank or **N/A** media fields can be inapplicable to that stream type and are not, by themselves, evidence of a fault.
 
 ### Groups
 
@@ -149,11 +145,11 @@ The tree links streams to programs, PIDs, and alarms. Expand the affected stream
 
 ### Polling Settings
 
-The **Polling Manager** controls dataset intervals and administrative states. All datasets default to _1 minute_: **Probe List**, **Stream List**, **Stream ETR List**, **Stream Programs List**, **PID List**, **Alarm List**, **Stream Provisioning**, **Probe Provisioning**, **Service Provisioning**, **Groups**, and **Macro Services**. **Probe List** is mandatory. **Stream Programs List** updates both **Program Status** and **Programs QOE**.
+The **Polling Manager** controls dataset intervals and administrative states. All datasets default to *1 minute*: **Probe List**, **Stream List**, **Stream ETR List**, **Stream Programs List**, **PID List**, **Alarm List**, **Stream Provisioning**, **Probe Provisioning**, **Service Provisioning**, **Groups**, and **Macro Services**. **Probe List** is mandatory. **Stream Programs List** updates both **Program Status** and **Programs QOE**.
 
 1. Ensure the dataset relevant to the affected page is enabled using **Admin Status** or the context menu's **Enable** action.
-2. Use the row's **Poll** control or the context menu's **Poll** action to request a manual poll.
-3. Check **Last Poll Time**, **Last Poll Status**, and **Last Poll Status Info** before assuming a device fault.
+1. Use the row's **Poll** control or the context menu's **Poll** action to request a manual poll.
+1. Check **Last Poll Time**, **Last Poll Status**, and **Last Poll Status Info** before assuming a device fault.
 
 The context menu also provides **Enable (Forced)**, **Disable**, **Disable (Forced)**, **Enable All**, **Disable All**, **Poll All**, and **Reset to Default**. The page's **Refresh All** button requests a refresh of all datasets. Mandatory polling constraints still apply.
 
@@ -172,4 +168,4 @@ The connector declares two fixed, external, bidirectional DCF interfaces: **IP 1
 - Provisioning changes and device-side removal affect monitored content. Use an account authorized to make these changes and confirm the selected probe and content before applying them.
 - Table cleanup and device-side deletion are different operations. Cleanup can remove monitoring history from the element without removing content from the probe.
 - Qualified missing entries can be retained for investigation, but qualification is not a guarantee against removal. In particular, the SNMP no-packet cleanup path does not check PID qualification.
-- This version does not expose the older **Automatically Remove Missing Streams**, **Remove Missing Stream**, **Automatically Remove Missing Programs**, or **Remove Missing Program** controls described in earlier help.
+- This version does not expose the older **Automatically Remove Missing Streams**, **Remove Missing Stream**, **Automatically Remove Missing Programs**, and **Remove Missing Program** controls included in previous versions of the connector.
