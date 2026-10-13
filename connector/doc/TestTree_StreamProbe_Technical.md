@@ -122,6 +122,8 @@ The context menu of the table has the options **Add item ST2022-6**, **Add item 
 
 The **Service Provisioning Table** is a read-only view of configured SMPTE ST 2110 services. Each row represents one constituent stream of a service on the **Blue** or **Red** network. This page is not a service creation editor.
 
+To inspect and verify the configuration of a specific ST 2110 service:
+
 1. Filter the table by **Service ID** to collect the rows belonging to the service.
 1. Compare **Network** and **Type** to verify the intended constituent media streams on each network.
 1. Check **Service State** and **Stream State** against the intended enabled/disabled configuration.
@@ -147,6 +149,8 @@ The tree links streams to programs, PIDs, and alarms. Expand the affected stream
 
 The **Polling Manager** controls dataset intervals and administrative states. All datasets default to *1 minute*: **Probe List**, **Stream List**, **Stream ETR List**, **Stream Programs List**, **PID List**, **Alarm List**, **Stream Provisioning**, **Probe Provisioning**, **Service Provisioning**, **Groups**, and **Macro Services**. **Probe List** is mandatory. **Stream Programs List** updates both **Program Status** and **Programs QOE**.
 
+To troubleshoot missing data or manually trigger polling for a dataset:
+
 1. Ensure the dataset relevant to the affected page is enabled using **Admin Status** or the context menu's **Enable** action.
 1. Use the row's **Poll** control or the context menu's **Poll** action to request a manual poll.
 1. Check **Last Poll Time**, **Last Poll Status**, and **Last Poll Status Info** before assuming a device fault.
@@ -155,7 +159,7 @@ The context menu also provides **Enable (Forced)**, **Disable**, **Disable (Forc
 
 ### Normalization Subpages
 
-Open **Normalization** from **Streams**, **Program Status**, or **PID Status** to access **Transport Stream Normalization**, **Program Status Normalization**, or **Pids Status Normalization**, respectively.
+Open **Normalization** from **Streams**, **Program Status**, or **PID Status** to access **Transport Stream Normalization**, **Program Status Normalization**, or **PIDs Status Normalization**, respectively.
 
 These tables store reference measurements used for DataMiner normalization. The bulk controls copy current measurements into normalized references, while editable cells update individual references. Establish references only when the monitored content is in the intended operating state; these changes affect DataMiner references, not probe provisioning.
 
