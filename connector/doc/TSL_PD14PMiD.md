@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_TSL_PD14PMiD
-description: Learn how to configure and use the TSL PD14PMiD connector to monitor information.
+description: "Learn how to configure the TSL PD14PMiD connector and use it to monitor voltage, current, and input/output status over an SNMP connection."
 ---
 
 # TSL PD14PMiD
@@ -11,12 +11,12 @@ The TSL PD14PMiD connector enables monitoring. It provides users with access to 
 
 ## Key Features
 
-- **Voltage Configuration**: Retrieve and monitor Voltage information. Indicates overal usage, calibration and upper limit.
-- **Current Configuration**: Retrieve and monitor Current information. Indicates overal usage, calibration and upper limit.
-- **I/O monitoring**: Retrieve data from each input or output. Indicates status, delay, current and voltage.
+- **Voltage configuration**: Retrieve and monitor voltage information, including overall usage, calibration, and upper limit.
+- **Current configuration**: Retrieve and monitor current information, including overall usage, calibration, and upper limit.
+- **I/O monitoring**: Retrieve data from each input or output, including status, delay, current, and voltage.
 
 ## Technical Information
 
-When you configure a DataMiner element using this connector, specify the **IP address**, **Community string** linked to the SNMP connection.
+When you configure a DataMiner element using this connector, specify the **IP address** and **community string** for the SNMP connection.
 
-When everything has been correctly configured, the connector polls the all information through SNMP connection.
+When everything has been correctly configured, the connector will poll all information through the SNMP connection.
