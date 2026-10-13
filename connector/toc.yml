@@ -5286,11 +5286,11 @@
     topicUid: Connector_help_iDirect_LineCard_Virtual
   - name: iDirect Multihub Manager
     topicUid: Connector_help_iDirect_Multihub_Manager
-  - name: iDirect Platform
-    topicUid: Connector_help_iDirect_Platform
+  - name: iDirect-Platform
+    topicUid: Connector_help_iDirect-Platform
     items:
-      - name: iDirect Platform Technical
-        topicUid: Connector_help_iDirect_Platform_Technical
+      - name: iDirect-Platform Technical
+        topicUid: Connector_help_iDirect-Platform_Technical
   - name: iDirect Platform Network Virtual
     topicUid: Connector_help_iDirect_Platform_Network_Virtual
   - name: iDirect Platform Virtual
