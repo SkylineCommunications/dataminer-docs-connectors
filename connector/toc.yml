@@ -11692,6 +11692,9 @@
     topicUid: Connector_help_Zixi_Broadcaster
   - name: Zixi Zen Master
     topicUid: Connector_help_Zixi_Zen_Master
+    items:
+    - name: Zixi Zen Master Technical
+      topicUid: Connector_help_Zixi_Zen_Master_Technical
 - name: ZNV
   items:
   - name: ZNV PEIM
