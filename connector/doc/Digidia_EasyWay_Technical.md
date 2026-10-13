@@ -43,6 +43,8 @@ Alarm notifications are received as SNMP traps. To receive them, enable trap gen
 
 The device event log is retrieved on the **Log** page. The raw log time is converted to a human-readable value based on the current locale, and a table lists the logged events. The log can be cleared from the same page.
 
+On the **Alarm** page, the Global Alarm table shows the alarms reported by the device. Use **Global Alarm Display Key Format** to choose whether each row is identified by its `Description/Info` values or by a custom description. Enter a value in a row's **Custom Description** cell to set a custom display key. Custom descriptions must be unique, ignoring case, and cannot match another alarm's `Description/Info` key. If the custom description is blank, the display key falls back to `Description/Info`; clearing the cell removes the saved custom description. Custom descriptions are retained separately and reapplied when the Global Alarm table is refreshed.
+
 ### Polling Manager
 
 The **Polling Settings** page contains a Polling Manager table that lets you control how often each data set is polled:

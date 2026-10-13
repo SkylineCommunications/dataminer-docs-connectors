@@ -16,6 +16,7 @@ This connector monitors and configures a Digidia EasyWay gateway over SNMP, givi
 - **IP input and ETI output configuration**: Reads and configures the IP input connection mode (unicast/multicast), the used protocol (EDI or Digidia proprietary), the ETI output type, and the auxiliary output clock frequency.
 - **Synchronization insight**: Monitors the synchronization mode (SFN/MFN) and the synchro source, including detailed GPS status such as lock state, visible satellites, position, SNR, leap seconds, and cable delay.
 - **Alarm and event handling**: Processes SNMP trap alarm notifications, exposes the alarm relay status, and converts the device event log into a human-readable table.
+- **Global Alarm display keys**: Choose Description/Info keys or define unique custom descriptions for global alarms.
 - **Customizable polling**: Includes a Polling Manager that lets you enable, disable, and fine-tune the polling interval of each data set independently.
 
 ## Use Cases
