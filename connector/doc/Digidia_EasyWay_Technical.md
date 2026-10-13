@@ -35,11 +35,13 @@ The web interface is only accessible when the client machine has network access 
 
 ## How to Use
 
-Once the element has been created, the device data is organized across dedicated pages such as General, Version, System, Session, Ethernet, SNMP Settings, Traps, Log, Alarm, Options, Device Settings, GPS, Resend, and Relay.
+Once the element has been created, the device data is organized across dedicated pages such as General, Version, System, Session, Ethernet, SNMP Settings, Traps, Log, Alarm, Options, Device Settings, GPS, Resend and Relay.
 
-SNMP polling is used to retrieve the device information shown on these pages. Configuration parameters (e.g., IP input settings, synchronization mode, NTP servers, and SNMP trap targets) can be written back to the device over SNMP using the writable parameters on the corresponding pages.
+SNMP polling is used to retrieve the device information shown on these pages. Configuration parameters (e.g., IP input settings, synchronization mode, NTP servers and SNMP trap targets) can be written back to the device over SNMP using the writable parameters on the corresponding pages.
 
-Alarm notifications are received as SNMP traps. To receive them, enable trap generation on the device and configure the DataMiner System as a trap target on the **SNMP Settings** page. Incoming traps update the Trap Alarm Notification table on the **Traps** page.
+Alarm notifications are received as SNMP traps. To receive them, enable trap generation on the device and configure the DataMiner system as a trap target on the **SNMP Settings** page (trap target address and enable). Incoming traps update the Trap Alarm Notification table on the **Traps** page.
+
+On the **Alarm** page, the Global Alarm table shows the alarms reported by the device. Use **Global Alarm Display Key Format** to choose whether each row is identified by its `Description/Info` values or by a custom description. Enter a value in a row's **Custom Description** cell to set a custom display key. Custom descriptions must be unique, ignoring case, and cannot match another alarm's `Description/Info` key. If the custom description is blank, the display key falls back to `Description/Info`; clearing the cell removes the saved custom description. Custom descriptions are retained separately and reapplied when the Global Alarm table is refreshed.
 
 The device event log is retrieved on the **Log** page. The raw log time is converted to a human-readable value based on the current locale, and a table lists the logged events. The log can be cleared from the same page.
 
