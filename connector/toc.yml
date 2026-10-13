@@ -4503,6 +4503,9 @@
     topicUid: Connector_help_Generic_Inter_Dataminer_Feedback
   - name: Generic IP Resolve JSON
     topicUid: Connector_help_Generic_IP_Resolve_JSON
+    items:
+      - name: Generic IP Resolve JSON Technical
+        topicUid: Connector_help_Generic_IP_Resolve_JSON_Technical
   - name: Generic IRD Key Manager
     topicUid: Connector_help_Generic_IRD_Key_Manager
   - name: Generic JMS Consumer
@@ -5283,11 +5286,11 @@
     topicUid: Connector_help_iDirect_LineCard_Virtual
   - name: iDirect Multihub Manager
     topicUid: Connector_help_iDirect_Multihub_Manager
-  - name: iDirect Platform
-    topicUid: Connector_help_iDirect_Platform
+  - name: iDirect-Platform
+    topicUid: Connector_help_iDirect-Platform
     items:
-      - name: iDirect Platform Technical
-        topicUid: Connector_help_iDirect_Platform_Technical
+      - name: iDirect-Platform Technical
+        topicUid: Connector_help_iDirect-Platform_Technical
   - name: iDirect Platform Network Virtual
     topicUid: Connector_help_iDirect_Platform_Network_Virtual
   - name: iDirect Platform Virtual
@@ -8191,6 +8194,9 @@
     topicUid: Connector_help_Raritan_Dominion_PXG2
   - name: Raritan Xerus Platform
     topicUid: Connector_help_Raritan_Xerus_Platform
+    items:
+      - name: Raritan Xerus Platform Technical
+        topicUid: Connector_help_Raritan_Xerus_Platform_technical
 - name: RCI
   items:
   - name: RCI RC2000
@@ -10898,6 +10904,8 @@
     topicUid: Connector_help_TSL_MDU12-PM
   - name: TSL PAM2-IP AMU
     topicUid: Connector_help_TSL_PAM2-IP_AMU
+  - name: TSL PD14PMiD
+    topicUid: Connector_help_TSL_PD14PMiD
 - name: TV2 Norway
   items:
   - name: TV2 Norway Sumo Monitoring

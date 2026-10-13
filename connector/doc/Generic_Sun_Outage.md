@@ -27,6 +27,8 @@ This is a virtual connector: all calculations run inside DataMiner, and no devic
 
 - **Outage overview**: A tree view groups each selected earth station with its predicted outages for quick review by operators.
 
+- **Quick calculation**: Operators can calculate the outages of any location, satellite, and band on demand, without adding an earth station. Other DataMiner applications can request the same calculation through InterApp messages.
+
 ## Use Cases
 
 ### Warning Operators Before a Sun Outage
@@ -57,7 +59,7 @@ This is a virtual connector: all calculations run inside DataMiner, and no devic
 
 ### Prerequisites
 
-- **DataMiner 10.4.0** or higher is required for range 1.3.0.x of the connector.
+- **DataMiner 10.4.0** or higher is required for range 1.1.0.x of the connector.
 
 - **Satellite longitudes** are needed for fixed earth stations. They can be added manually or imported from a satellites file.
 

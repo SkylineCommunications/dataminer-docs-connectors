@@ -1,8 +1,8 @@
 ---
-uid: Connector_help_iDirect_Platform
+uid: Connector_help_iDirect-Platform
 ---
 
-# iDirect Platform
+# iDirect-Platform
 
 ## About
 
@@ -63,4 +63,4 @@ The iDirect Platform connector provides the key data from iDirect Evolution NMS.
 **Sufficient user permissions** are required to view operational metrics across remotes, networks, and hardware components.
 
 > [!NOTE]
-> For detailed technical information, refer to our [technical documentation](xref:Connector_help_iDirect_Platform_Technical).
+> For detailed technical information, refer to our [technical documentation](xref:Connector_help_iDirect-Platform_Technical).
