@@ -10726,6 +10726,9 @@
   items:
   - name: TestTree StreamProbe
     topicUid: Connector_help_TestTree_StreamProbe
+    items:
+    - name: TestTree StreamProbe Technical
+      topicUid: Connector_help_TestTree_StreamProbe_Technical
 - name: Tetronik
   items:
   - name: Tetronik DAKS
