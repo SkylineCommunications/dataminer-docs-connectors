@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Tredess_MultiTX_Technical
+description: "Learn how to configure the Tredess MultiTX DataMiner connector for transmitter monitoring, redundancy, synchronization, SNMP traps, and polling."
 ---
 
 # Tredess MultiTX
