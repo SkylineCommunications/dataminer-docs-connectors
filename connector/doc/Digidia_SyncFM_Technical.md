@@ -60,7 +60,9 @@ Once the element is created and polling is active, the connector organizes devic
 
 - **Alarm**: Aggregated alarm status for IP input, synchronization, control process, and system, plus granular alarms such as IP input underflow/overflow, uncorrected IP input packets, system clock unlock, SFN error, GPS receiver unlocked, empty user-channel database, missing user-channel sub-stream, missing sub-channel to decode, and system hardware/software faults. The Sync Alarm Notification table and the Alarms Bool Setting table are also available here.
 
+**Global Alarms**: Edit **Custom Description** to assign a local alarm name. **Global Alarm Display Key Format** selects `Index/Description` (default) or `Custom Description`; empty names fall back to `Index/Description`. Changing the selector rebuilds the displayed keys immediately without waiting for the next poll. Names are preserved across polls, disabled polling, and element restarts. Duplicate custom names and names matching another alarm's `Index/Description` key are rejected. Supported alarm traps request an immediate refresh of the Global Alarm table through the Polling Manager; disabled polling remains disabled.
 - **External IOs**: State of external inputs and external relay command, together with the alarm relay status table.
+
 
 - **Communication**: Network (Ethernet) configuration of the device.
 
