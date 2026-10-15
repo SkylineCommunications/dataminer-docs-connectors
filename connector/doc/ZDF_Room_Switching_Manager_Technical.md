@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_ZDF_Room_Switching_Manager_Technical
-description: High-level configuration and operation overview for the ZDF Room Switching Manager.
+description: "Use the ZDF Room Switching Manager to configure two DataMiner-managed rooms, select a mode, and track sequence progress, step status, retries, and errors."
 ---
 
 # ZDF Room Switching Manager
@@ -17,7 +17,7 @@ Configure the remote room's **host**, **port**, and **API token** on the element
 
 Select a switching mode to start its configured sequence:
 
-- **Maintenance** and **BaseConfig** pause when a blocking step fails; an operator can continue the sequence after addressing the issue.
+- **Maintenance** and **BaseConfig** pause when a blocking step fails. An operator can continue the sequence after addressing the issue.
 - **Force** continues to the next step after a failure.
 
 The element reports the sequence state and step progress. Its execution table shows each step's status, retries, and any error message.

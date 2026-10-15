@@ -1,6 +1,6 @@
 ---
 uid: Connector_help_ZDF_Room_Switching_Manager
-description: Coordinates room switching between active and passive ZDF broadcast rooms.
+description: "Use the ZDF Room Switching Manager to coordinate switching between active and passive broadcast rooms, run workflows, and track progress in DataMiner."
 ---
 
 # ZDF Room Switching Manager
@@ -12,8 +12,8 @@ The ZDF Room Switching Manager coordinates switching workflows between active an
 ## Key Features
 
 - **Coordinated switching**: Execute switching steps across the active and passive rooms.
-- **Multiple modes**: Run Maintenance, Force, or BaseConfig workflows.
-- **Progress visibility**: Follow sequence state and step results in DataMiner.
+- **Multiple modes**: Run different modes to deal with changing circumstances, such as maintenance.
+- **Progress visibility**: Follow the results of each step in sequence in DataMiner.
 
 ## Technical Reference
 
