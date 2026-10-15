@@ -4,45 +4,55 @@ uid: Connector_help_Rohde_Schwarz_FSL3
 
 # Rohde Schwarz FSL3
 
-The Rohde Schwarz FSL3 is a lightweight and compact spectrum analyzer with the functionality of high-end instruments. It features a tracking generator up to 18 GHz and can analyze signals with a bandwidth of 28 MHz., operating at frequencies up to 18 GHz, and supporting applications in the microwave range. This connector communicates with the spectrum analyzer using serial communication (TCP/IP).
-
 ## About
 
-### Version Info
+The Rohde Schwarz FSL3 connector integrates the R&S FSL3 spectrum analyzer into DataMiner over a
+**virtual (VISA) connection** driven by the Rohde & Schwarz RsInstrument library. It provides
+real-time access to the analyzer's primary spectrum trace and instrument settings, making it easy to
+monitor measurements, adjust analyzer parameters, and automate RF signal workflows from a single
+interface. The device connection is configured through the element's **Device IP Address**,
+**Device Port** and **connection type** (VXI-11, Raw Socket or HiSLIP).
 
-| Range | Key Features                                                             | Based on | System Impact |
-|-----------|------------------------------------------------------------------------------|--------------|-------------------|
-| 1.1.0.x   | Initial version. Version **1.1.0.8** supports a maximum frequency of 18 GHz. | -            | -                 |
+## Key Features
 
-### Product Info
+- **Real-time spectrum analysis**: Decode the analyzer's primary trace (IEEE-754 float block) into a level series and surface it as a DataMiner spectrum measurement.
+- **Instrument identification**: Read the Manufacturer, Model, Serial Number, and Firmware Version of the connected device.
+- **Measurement control**: Configure center/start/stop frequency and span, reference level and scale, resolution bandwidth (RBW), video bandwidth (VBW), sweep time, input attenuation, detection mode, scale type, and amplitude units — including their AUTO modes.
+- **Flexible connectivity**: Connect over VISA using VXI-11, Raw Socket (default, port 5025) or HiSLIP.
+- **Sweep mode**: Select Single or Continuous sweep (`:INIT:CONT`) directly from DataMiner.
+- **Zero-span sweep**: Start a zero-span, time-adjusted rolling trace acquisition on demand (ported from the R&S FSV/FSC3 connectors).
+- **Preset**: Restore the instrument's default settings from DataMiner with a confirmation-guarded button (`*RST`, ported from the R&S FSV/FSC3 connectors).
+- **Sweep & timeout safeguards**: Single-sweep and timeout coordination prevents a stalled instrument from hanging the poll chain.
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.1.0.x   | -                      |
+## Use Cases
 
-### System Info
+### RF Monitoring
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
+**Challenge**: Operators need to keep an eye on RF spectrum measurements without standing at the instrument front panel.
 
-## Installation and configuration
+**Solution**: Integrate the FSL3 into DataMiner to stream the live primary trace and instrument status to a central interface.
 
-### Creation
+**Benefit**: Enables continuous, remote spectrum monitoring alongside the rest of the monitored infrastructure.
 
-#### GPIB main connection
+### Remote Measurement Setup
 
-This connector uses a serial connection and requires the following input during element creation:
+**Challenge**: Engineers need to change measurement parameters (frequency, span, bandwidths, reference level, sweep time, attenuation) on a remote analyzer.
 
-GPIB CONNECTION:
+**Solution**: Use the connector's write settings to push measurement configuration to the device over the VISA connection and read the applied values back on the next poll.
 
-- Interface connection:
+**Benefit**: Removes the need for physical access and speeds up measurement reconfiguration.
 
-  - **Device address**: The polling device address of the device.
-  - **I/O API**: The I/O API of the device.
+### Automated Signal Analysis
 
-## Usage
+**Challenge**: Repetitive sweeps and trace capture are time-consuming to run manually.
 
-On the **Spectrum Analyzer** page, you can find the spectrum analyzer user interface. For more information on how to work with this, refer to [Working with spectrum analyzer elements](https://aka.dataminer.services/Working_with_spectrum_analyzer_elements).
+**Solution**: Drive the analyzer from DataMiner to automate sweep acquisition and collect decoded trace data.
 
-On the **General** page, you can find device information such as the Manufacturer, Model, Serial Number, Firmware Version and Display Status. The **DMS Spectrum Measurements** toggle button allows you to put the spectrum analyzer in automatic sweep mode.
+**Benefit**: Increases efficiency and ensures consistent, repeatable data collection.
+
+## Technical Reference
+
+The device connection is configured through the element's IP address, port, and connection type (VXI-11, Raw Socket (default, port 5025), or HiSLIP).
+
+> [!NOTE]
+> For detailed configuration and usage instructions, refer to the [technical documentation](xref:Connector_help_Rohde_Schwarz_FSL3_Technical).
