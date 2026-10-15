@@ -6,9 +6,9 @@ uid: Connector_help_Digidia_EasyWay
 
 ## About
 
-The Digidia EasyWay is an IP-to-ETI gateway used in DAB/DMB (Digital Audio/Multimedia Broadcasting) distribution networks. It receives an Ensemble Transport Interface (ETI) stream over IP — using either the EDI protocol or the Digidia proprietary protocol — and delivers a synchronized ETI output toward DAB/DMB modulators.
+The Digidia EasyWay is an IP-to-ETI gateway used in DAB/DMB (Digital Audio/Multimedia Broadcasting) distribution networks. It receives an Ensemble Transport Interface (ETI) stream over IP, using either the EDI protocol or the Digidia proprietary protocol, and delivers a synchronized ETI output toward DAB/DMB modulators.
 
-This connector monitors and configures a Digidia EasyWay gateway over SNMP, giving operators full visibility on the device status, the IP input, GPS/NTP synchronization, alarms and the event log from within DataMiner.
+This connector monitors and configures a Digidia EasyWay gateway over SNMP, giving operators full visibility on the device status, the IP input, GPS/NTP synchronization, alarms, and the event log from within DataMiner.
 
 ## Key Features
 
@@ -21,23 +21,23 @@ This connector monitors and configures a Digidia EasyWay gateway over SNMP, givi
 
 ## Use Cases
 
-### Centralized monitoring of DAB/DMB head-end gateways
+### Centralized Monitoring of DAB/DMB Head-End Gateways
 
-**Challenge**: Broadcast operators run multiple EasyWay gateways across different sites and need a single pane of glass to follow their health and synchronization status.
+**Challenge**: Broadcast operators run multiple EasyWay gateways across different sites and need to be able to follow their health and synchronization status from a single pane of glass.
 
-**Solution**: The connector polls every gateway over SNMP and surfaces system state, GPS lock and input status in DataMiner, while SNMP traps raise alarms in real time.
+**Solution**: The connector polls every gateway over SNMP and surfaces system state, GPS lock, and input status in DataMiner, while SNMP traps raise alarms in real time.
 
 **Benefit**: Faster detection of synchronization or input issues and reduced time to resolution.
 
-### Verifying SFN synchronization
+### Verifying SFN Synchronization
 
 **Challenge**: Single Frequency Network operation requires correct GPS synchronization and consistent timing across all transmitters.
 
-**Solution**: The connector exposes the GPS status, number of visible satellites, SNR, leap seconds, cable delay and the gateway-to-modulator maximum delay.
+**Solution**: The connector exposes the GPS status, number of visible satellites, SNR, leap seconds, cable delay, and the gateway-to-modulator maximum delay.
 
 **Benefit**: Operators can confirm that timing is correct before and during transmission, preventing on-air degradation.
 
-### Reducing maintenance effort with adaptive polling
+### Reducing Maintenance Effort with Adaptive Polling
 
 **Challenge**: Polling every parameter at the same rate generates unnecessary load for slow-changing configuration data.
 
@@ -51,7 +51,7 @@ This connector monitors and configures a Digidia EasyWay gateway over SNMP, givi
 
 - **SNMP access** to the Digidia EasyWay gateway is required for the connector to poll and configure the device.
 
-- **SNMP traps** must be enabled on the device, with the DataMiner system configured as a trap target, in order to receive alarm notifications.
+- **SNMP traps** must be enabled on the device, with the DataMiner System configured as a trap target, in order to receive alarm notifications.
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Digidia_EasyWay_Technical).
