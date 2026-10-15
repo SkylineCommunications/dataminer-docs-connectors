@@ -11676,6 +11676,11 @@
     items:
     - name: ZDF Prismon Mapper Technical
       topicUid: Connector_help_ZDF_Prismon_Mapper_Technical
+  - name: ZDF Room Switching Manager
+    topicUid: Connector_help_ZDF_Room_Switching_Manager
+    items:
+    - name: ZDF Room Switching Manager Technical
+      topicUid: Connector_help_ZDF_Room_Switching_Manager_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator
