@@ -41,7 +41,7 @@ Once the element has been created, the device data is organized across dedicated
 
 SNMP polling is used to retrieve the device information shown on these pages. Configuration parameters (e.g., IP input settings, synchronization mode, NTP servers, and SNMP trap targets) can be written back to the device over SNMP using the writable parameters on the corresponding pages.
 
-Alarm notifications are received as SNMP traps. To receive them, enable trap generation on the device and configure the DataMiner System as a trap target on the **SNMP Settings** page (trap target address and enable). Incoming traps update the Trap Alarm Notification table on the **Traps** page.
+Alarm notifications are received as SNMP traps. To receive them, enable trap generation on the device and configure the DataMiner System as a trap target on the **SNMP Settings** page. Incoming traps update the Trap Alarm Notification table on the **Traps** page.
 
 ### Alarm Page
 
