@@ -1,5 +1,6 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_POC_Tally_Technical
+description: Configure and use the POC Tally connector in DataMiner, with connection settings and operational guidance.
 ---
 
 # Vodafone Kabel Deutschland GmbH POC Tally
@@ -18,7 +19,7 @@ The POC tally status is determined for each SI stream, so its status can be show
 
 This connector uses a virtual connection and does not require any input during element creation.
 
-## How to use
+## How to Use
 
 ### General Page
 
@@ -26,9 +27,9 @@ The **General** page displays the aggregated tally status information per lineup
 
 On the following pages, you can see the status of each lineup or system individually:
 
-- iSIMS System
-- National MUX
-- Catweazle RegioMUX
+- **iSIMS System**
+- **National MUX**
+- **Catweazle RegioMUX**
 
 You can interface with each table by right-clicking it to access the context menu.
 

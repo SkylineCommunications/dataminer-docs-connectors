@@ -1,39 +1,31 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping
+description: Explore SI Stream Mapping in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH SI Stream Mapping
 
-This is a dedicated connector intended to store the links between DataMiner reservations, input transport stream information, and outgoing SDT/EIT PID information.
-
-The saved data tables within the connector are required by the SRM (Service and Resource Management) framework to correctly set up the SI streams for the IP Gateway, IP Peering, and SRT Gateway use cases.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH SI Stream Mapping connector stores links between DataMiner reservations, input transport stream information, and outgoing SDT/EIT PID information. These mappings are used by the Service and Resource Management (SRM) framework to configure SI streams for IP Gateway, IP Peering, and SRT Gateway use cases.
 
-| Range              | Key Features    | Based on | System Impact |
-|--------------------|-----------------|----------|---------------|
-| 1.0.0.x [SLC Main] | Initial version | -        | -             |
+## Key Features
 
-### System Info
+- **Reservation Mapping**: Store links between reservations and transport stream information.
+- **SI Output Mapping**: Associate reservations with outgoing SDT/EIT PID information.
+- **Use Case Views**: Review mappings on dedicated IP GW, IP Peering, and SRT pages.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Use Cases
 
-## Configuration
+### Maintaining SI Stream Configuration Mappings
 
-### Connections
+**Challenge**: SRM needs reservation-to-stream mappings to configure SI streams for different gateway and peering use cases.
 
-#### Virtual Connection
+**Solution**: The connector stores the required associations and exposes them in use-case-specific tables.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Benefit**: You can review and maintain the mappings used for SI stream setup.
 
-### Redundancy
+## Technical Reference
 
-There is no redundancy defined.
-
-## How to use
-
-The **IP GW**, **IP Peering**, and **SRT** pages display the linked configurations between DataMiner reservations and SDT/EIT information. You can perform several actions on this table via its right-click menu.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_SI_Stream_Mapping_Technical).

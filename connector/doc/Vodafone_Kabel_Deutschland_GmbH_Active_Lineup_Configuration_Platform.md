@@ -1,43 +1,31 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Lineup_Configuration_Platform
+description: Explore Active Lineup Configuration Platform in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform
 
-The Vodafone Deutschland GmbH Active Lineup Configuration Platform connector collects all active lineup configurations from every enhanced service protocol present in the DataMiner System.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH Active Lineup Configuration Platform connector collects active lineup configurations from enhanced services throughout the DataMiner System.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+## Key Features
 
-### System Info
+- **Centralized Lineup View**: Collect active lineup configurations from enhanced services.
+- **Service Discovery**: Configure how frequently the connector searches for new enhanced services.
+- **Configurable Collection**: Set the heartbeat interval used to collect lineup data.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                  | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH RegioMUX Lineup Service](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_RegioMUX_Lineup_Service) | -                       |
+## Use Cases
 
-## Configuration
+### Reviewing Active Lineup Configurations
 
-### Connections
+**Challenge**: Lineup configuration information is distributed across enhanced services in the DataMiner System.
 
-#### Virtual Connection
+**Solution**: The connector discovers enhanced services and collects their active lineup configurations into a central overview.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Benefit**: You can review lineup information without opening each enhanced service individually.
 
-### Initialization
+## Technical Reference
 
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-You can find all the information you need to monitor on the General data page.
-
-On the **Configuration** page of this connector, you can configure the discovery and heartbeat intervals. The **discovery interval** determines how frequently the connector will search for new enhanced services. The **heartbeat interval** determines how frequently the connector will collect the data from the enhanced services.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Lineup_Configuration_Platform_Technical).

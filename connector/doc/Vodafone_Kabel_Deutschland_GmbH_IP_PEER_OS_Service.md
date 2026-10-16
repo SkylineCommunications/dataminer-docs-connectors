@@ -1,56 +1,33 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_OS_Service
+description: Explore IP PEER OS Service in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH IP PEER OS Service
 
-The Vodafone Deutschland GmbH IP PEER OS service protocol monitors the active configuration of the IP Peering DCM element per service.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH IP PEER OS Service connector monitors the active configuration of the IP Peering DCM element per service.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | N/A                    |
+- **Peering Configuration**: Monitor the active configuration of the IP Peering DCM element.
+- **Site-Level Status**: View active stream states per site.
+- **Service Diagnostics**: Retrieve active alarms and enable debug logging for included elements.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
+### Reviewing IP Peering Service Health
 
-## Configuration
+**Challenge**: IP Peering DCM configuration and streaming status need to be reviewed in their service context.
 
-To create a service using this service protocol:
+**Solution**: The connector monitors the active configuration and displays site-level stream states with access to service alarms.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select **Create service**.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol **Vodafone Kabel Deutschland GmbH IP PEER OS Service**, with the latest version or production version.
-4. Go to the **parameters** tab and include the service you want to monitor.
+**Benefit**: You can assess the service and investigate issues from a dedicated overview.
 
-### Initialization
+## Technical Reference
 
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-The **General** page contains the overview of the active stream states per site.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_PEER_OS_Service_Technical).
