@@ -1,58 +1,33 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service
+description: Explore IP GW Service in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH IP GW Service
 
-The Vodafone Deutschland GmbH IP Gateway service protocol monitors the streaming states of the last XSwitches per site included in the service.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH IP GW Service connector monitors the streaming states of the last XSwitches per site included in an enhanced service.
 
-| Range                | Key Features     | Based on     | System Impact     |
-|----------------------|------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version  | -            | -                 |
+This connector is an enhanced service connector designed for a specific project and is not intended for general reuse.
 
-### Product Info
+## Key Features
 
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | -                      |
+- **Site-Level Stream Status**: View active stream states for the included sites.
+- **Alarm Visibility**: Retrieve active alarms for included services and elements.
+- **Debug Logging**: Enable logging for element monitoring and data retrieval.
 
-### System Info
+## Use Cases
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components                                                                                                                                                                | Exported Components     |
-|-----------|---------------------|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | [Vodafone Kabel Deutschland GmbH Active Service Configuration Platform](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Active_Service_Configuration_Platform) | -                       |
+### Monitoring IP Gateway Stream Delivery
 
-## Configuration
+**Challenge**: Operators need to review the final XSwitch streaming states across the sites in an IP Gateway service.
 
-### Connections
+**Solution**: The connector presents these states per site and provides access to related alarms and diagnostic logging.
 
-This connector is a service protocol and only requires the following input during service creation:
+**Benefit**: You can investigate gateway streaming issues from the service overview.
 
-1. In DataMiner Cube, right-click a view in the Surveyor and select *Create service*.
-2. Specify the name for the service.
-3. Open the advanced options and select the service protocol, *Vodafone Kabel Deutschland GmbH *IP GW Service*,* with the latest version or production version.
-4. Go to the *parameters* tab and include the service you want to monitor.
+## Technical Reference
 
-### Initialization
-
-No extra configuration is needed.
-
-### Redundancy
-
-There is no redundancy defined.
-
-## How to use
-
-The **General** page contains the overview of the active stream states per site.
-
-The **Alarms** page contains a toggle button to retrieve and display all active alarms for the included services and elements.
-
-The **Elements** page contains a toggle button to enable any debug logging related to the elements or retrieval of the data.
-
-## Notes
-
-This enhanced service protocol was designed for a specific project and is not expected to be reused in general.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_IP_GW_Service_Technical).

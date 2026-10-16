@@ -1,43 +1,32 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transportstream_Discovery
+description: Explore Transportstream Discovery in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH Transportstream Discovery
 
-The Vodafone Kabel Deutschland GmbH Transportstream Discovery connector is used to discover information about transport streams, services, and PIDs of all supported protocol types.
-
 ## About
 
-### Version Info
+The Vodafone Kabel Deutschland GmbH Transportstream Discovery connector discovers transport streams, services, and PIDs from elements using supported connector types, including CISCO DCM.
 
-| Range                | Key Features                          | Based on     | System Impact     |
-|----------------------|---------------------------------------|--------------|-------------------|
-| 1.0.0.x [SLC Main]   | Initial version (CISCO DCM Discovery) | -            | -                 |
+## Key Features
 
-### System Info
+- **Element Discovery**: List supported connector types and discovered elements in the DataMiner System.
+- **Selective Polling**: Choose which discovered elements to include in data polling.
+- **Aggregated Stream Data**: Review transport stream, service, and PID information in dedicated database pages.
+- **Configurable Frequency**: Adjust polling frequency for enabled elements.
 
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
+## Use Cases
 
-## Configuration
+### Building a Transport Stream Inventory
 
-### Connections
+**Challenge**: Transport stream, service, and PID information is distributed across individual elements.
 
-#### Virtual Connection
+**Solution**: The connector discovers supported elements and aggregates data from those selected for polling.
 
-This connector uses a virtual connection and does not require any input during element creation.
+**Benefit**: You can consult a consolidated inventory instead of inspecting each element separately.
 
-## How to use
+## Technical Reference
 
-On initialization of the connector, the number of elements for the supported discovery protocols will be displayed in the **Discovered Protocols** table.
-
-In the **Discovered Elements** table, all individual elements found in the DMS will be listed. By default, **data polling** will be **disabled.**
-
-To enable polling of an element, click the **Include** button.
-
-On the **Settings page**, you can configure the polling frequency of all enabled elements. By default, the **Discover Frequency** is set to **6 hours**.
-
-All polled information for every individual element will be aggregated in an overview table.
-
-Data related to transport streams, services, and PIDs can be found on the **TS Database**, **Service Database**, and **PID Database** pages, respectively.
+> [!NOTE]
+> For detailed technical information, refer to the [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_Transportstream_Discovery_Technical).

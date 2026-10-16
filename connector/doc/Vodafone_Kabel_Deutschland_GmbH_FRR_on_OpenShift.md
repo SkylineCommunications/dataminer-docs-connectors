@@ -1,35 +1,39 @@
 ---
 uid: Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift
+description: Explore FRR on OpenShift in DataMiner, including connector capabilities, operational benefits, and use cases.
 ---
 
 # Vodafone Kabel Deutschland GmbH FRR on OpenShift
 
 ## About
 
-This is a dedicated connector to interface with a Red Hat OpenShift cluster and underlying PODs by utilizing the OpenShift CLI Tooling (OC Tool).
-The Free Range Routing (FRR) is a dedicated network routing suite under the OpenShift cluster hosting all instances to manage and deploy the network routes within the cluster.
+The Vodafone Kabel Deutschland GmbH FRR on OpenShift connector monitors pods and manages FRRouting (FRR) routes in a Red Hat OpenShift cluster using the OpenShift CLI (`oc`).
+
+FRRouting is a network routing suite used to manage and deploy routes within the cluster.
 
 ## Key Features
 
-- **Status overview**: Aggregated and individual status data per POD and all available FR routes.
+- **Status overview**: View aggregated and individual status data per pod and all available FRR routes.
 - **24/7 monitoring**: Constant monitoring to support continuous status updates.
-- **Real-time configuration**: The connector comes with an interface to add, manage, and remove FR routes.
+- **Real-time configuration**: Add, manage, and remove FRR routes from DataMiner.
 
-## Use Case
+## Use Cases
 
-**Challenge**: Specific control and monitoring is required to manage the FRR instance within an OpenShift cluster.
+### Managing FRR Routes in OpenShift
 
-**Solution**: The aggregated status indicates which PODs are up to date with the FRR, and the table actions provided in the connector allow users to activate or remove certain routes.
+**Challenge**: Managing FRR within an OpenShift cluster requires visibility into route configuration and deployment status across pods.
 
-**Benefit**: Improves uptime and reliability next to the routing management that is now available from within DataMiner.
+**Solution**: The aggregated status shows which pods are up to date with the FRR route configuration. Table actions allow you to activate or remove routes.
 
-## Prerequisites
+**Benefit**: You can manage routes and review their deployment status directly in DataMiner.
+
+## Technical Reference
+
+### Prerequisites
 
 To interface with OpenShift, a dedicated CLI tool is utilized, which must be available and installed on each DataMiner Agent where an element using this protocol is hosted.
 
 For more information, refer to the official [Red Hat documentation](https://docs.redhat.com/en/documentation/openshift_container_platform/4.21/html/cli_tools/openshift-cli-oc).
-
-## Technical Reference
 
 > [!NOTE]
 > For detailed technical information, refer to our [technical documentation](xref:Connector_help_Vodafone_Kabel_Deutschland_GmbH_FRR_on_OpenShift_Technical).
