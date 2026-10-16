@@ -10,27 +10,6 @@ This is an SNMP connector that shows the status of the different parameters of a
 
 The Linear Acoustic AERO.2000 is a 2RU loudness management platform capable of hosting one or two AEROMAX® processing instances (at least one is required) providing real-time adaptive wideband and/or multiband processing including an advanced ITU limiter.
 
-### Version Info
-
-| Range   | Key Features                                                                            | Based on | System Impact |
-|---------|-----------------------------------------------------------------------------------------|----------|---------------|
-| 1.0.0.x | Initial version. Polls SNMP data from the device and reacts to incoming trap messages.  | N/A      | N/A           |
-| 1.1.0.x | Added new Nielsen codes and upmix parameters. Introduced new and updated trap mappings. | 1.0.0.x  | N/A           |
-
-### Product Info
-
-| Range     | Supported Firmware     |
-|-----------|------------------------|
-| 1.0.0.x   | 3.19.85                |
-| 1.1.0.x   | 3.32.27                |
-
-### System Info
-
-| Range     | DCF Integration     | Cassandra Compliant     | Linked Components     | Exported Components     |
-|-----------|---------------------|-------------------------|-----------------------|-------------------------|
-| 1.0.0.x   | No                  | Yes                     | -                     | -                       |
-| 1.1.0.x   | No                  | Yes                     | -                     | -                       |
-
 ## Configuration
 
 ### Connections
