@@ -4503,6 +4503,9 @@
     topicUid: Connector_help_Generic_Inter_Dataminer_Feedback
   - name: Generic IP Resolve JSON
     topicUid: Connector_help_Generic_IP_Resolve_JSON
+    items:
+      - name: Generic IP Resolve JSON Technical
+        topicUid: Connector_help_Generic_IP_Resolve_JSON_Technical
   - name: Generic IRD Key Manager
     topicUid: Connector_help_Generic_IRD_Key_Manager
   - name: Generic JMS Consumer
@@ -4615,6 +4618,9 @@
     topicUid: Connector_help_Generic_SQL_Query
   - name: Generic Sun Outage
     topicUid: Connector_help_Generic_Sun_Outage
+    items:
+    - name: Generic Sun Outage Technical
+      topicUid: Connector_help_Generic_Sun_Outage_Technical
   - name: Generic Syslog Receiver
     topicUid: Connector_help_Generic_Syslog_Receiver
     items:
@@ -5280,11 +5286,11 @@
     topicUid: Connector_help_iDirect_LineCard_Virtual
   - name: iDirect Multihub Manager
     topicUid: Connector_help_iDirect_Multihub_Manager
-  - name: iDirect Platform
-    topicUid: Connector_help_iDirect_Platform
+  - name: iDirect-Platform
+    topicUid: Connector_help_iDirect-Platform
     items:
-      - name: iDirect Platform Technical
-        topicUid: Connector_help_iDirect_Platform_Technical
+      - name: iDirect-Platform Technical
+        topicUid: Connector_help_iDirect-Platform_Technical
   - name: iDirect Platform Network Virtual
     topicUid: Connector_help_iDirect_Platform_Network_Virtual
   - name: iDirect Platform Virtual
@@ -7499,6 +7505,13 @@
     topicUid: Connector_help_Norkring_AS_Wonderware_Type2_DVE
   - name: Norkring Modulation Robot
     topicUid: Connector_help_Norkring_Modulation_Robot
+- name: Norsat
+  items:
+  - name: Norsat 1:1 LNB Redundant Controller
+    topicUid: Connector_help_Norsat_1_1_LNB_Redundant_Controller
+    items:
+    - name: Norsat 1:1 LNB Redundant Controller Technical
+      topicUid: Connector_help_Norsat_1_1_LNB_Redundant_Controller_Technical
 - name: Nortel
   items:
   - name: Nortel iEMS Log
@@ -8184,6 +8197,9 @@
     topicUid: Connector_help_Raritan_Dominion_PXG2
   - name: Raritan Xerus Platform
     topicUid: Connector_help_Raritan_Xerus_Platform
+    items:
+      - name: Raritan Xerus Platform Technical
+        topicUid: Connector_help_Raritan_Xerus_Platform_technical
 - name: RCI
   items:
   - name: RCI RC2000
@@ -10713,6 +10729,9 @@
   items:
   - name: TestTree StreamProbe
     topicUid: Connector_help_TestTree_StreamProbe
+    items:
+    - name: TestTree StreamProbe Technical
+      topicUid: Connector_help_TestTree_StreamProbe_Technical
 - name: Tetronik
   items:
   - name: Tetronik DAKS
@@ -10852,6 +10871,11 @@
     topicUid: Connector_help_Tredess_CS_-_Transmitter
   - name: Tredess FS
     topicUid: Connector_help_Tredess_FS
+  - name: Tredess MultiTX
+    topicUid: Connector_help_Tredess_MultiTX
+    items:
+    - name: Tredess MultiTX Technical
+      topicUid: Connector_help_Tredess_MultiTX_Technical
   - name: Tredess Redundant Clock Reference
     topicUid: Connector_help_Tredess_Redundant_Clock_Reference
 - name: Trilithic
@@ -10886,6 +10910,8 @@
     topicUid: Connector_help_TSL_MDU12-PM
   - name: TSL PAM2-IP AMU
     topicUid: Connector_help_TSL_PAM2-IP_AMU
+  - name: TSL PD14PMiD
+    topicUid: Connector_help_TSL_PD14PMiD
 - name: TV2 Norway
   items:
   - name: TV2 Norway Sumo Monitoring
@@ -11653,6 +11679,11 @@
     items:
     - name: ZDF Prismon Mapper Technical
       topicUid: Connector_help_ZDF_Prismon_Mapper_Technical
+  - name: ZDF Room Switching Manager
+    topicUid: Connector_help_ZDF_Room_Switching_Manager
+    items:
+    - name: ZDF Room Switching Manager Technical
+      topicUid: Connector_help_ZDF_Room_Switching_Manager_Technical
 - name: Ziggo
   items:
   - name: Ziggo Arris Alarm Central Simulator

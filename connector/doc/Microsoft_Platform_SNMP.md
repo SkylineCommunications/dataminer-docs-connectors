@@ -4,7 +4,8 @@ uid: Connector_help_Microsoft_Platform_SNMP
 
 # Microsoft Platform SNMP
 
-With the **Microsoft Platform** connector, it is possible to monitor a Microsoft server.
+> [!IMPORTANT]
+> Unless your integration requires SNMP, we strongly recommend using the [Microsoft Platform](https://catalog.dataminer.services/details/4abcf220-c001-4ffd-bab8-559dee47088f) connector instead, which communicates via WMI and complies with our latest quality standards. If your integration requires SNMP, you can use this connector until SNMP communication becomes available in the **Microsoft Platform** connector.
 
 ## About
 
