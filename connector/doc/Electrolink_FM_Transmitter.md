@@ -1,11 +1,11 @@
 ---
 uid: connector_Electrolink_FM_Transmitter
 ---
-# Electrolink FM Transmitter 100W
+# Electrolink FM Transmitter
 
 ## About
 
-The **Electrolink FM Transmitter 100W** connector gives operators a consolidated view of transmitter operation through SNMP. Monitor RF output and reflected power, thermal and supply measurements, and key transmitter states in DataMiner, with alarming and trending for operational follow-up.
+The **Electrolink FM Transmitter** connector gives operators a consolidated view of transmitter operation through SNMP. Monitor RF output and reflected power, thermal and supply measurements, and key transmitter states in DataMiner, with alarming and trending for operational follow-up.
 
 ## Key Features
 

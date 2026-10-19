@@ -1,11 +1,11 @@
 ---
 uid: connector_Electrolink_FM_Transmitter_Technical
 ---
-# Electrolink FM Transmitter 100W
+# Electrolink FM Transmitter
 
 ## About
 
-The **Electrolink FM Transmitter 100W** connector monitors and manages the transmitter over SNMPv2. It provides operational measurements, status monitoring, and controls for transmitter configuration.
+The **Electrolink FM Transmitter** connector monitors and manages the transmitter over SNMPv2. It provides operational measurements, status monitoring, and controls for transmitter configuration.
 
 The connector requires DataMiner 10.4.0.0 build 14003 or later.
 
